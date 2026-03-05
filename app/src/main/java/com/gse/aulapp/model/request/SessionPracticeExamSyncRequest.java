@@ -92,18 +92,6 @@ public final /* data */ class SessionPracticeExamSyncRequest implements Parcelab
         return Intrinsics.areEqual(this.session, sessionPracticeExamSyncRequest.session) && Intrinsics.areEqual(this.assist, sessionPracticeExamSyncRequest.assist) && Intrinsics.areEqual(this.exam, sessionPracticeExamSyncRequest.exam);
     }
 
-    public final AssistSyncRequest getAssist() {
-        return this.assist;
-    }
-
-    public final PracticeExamRequest getExam() {
-        return this.exam;
-    }
-
-    public final SessionSyncRequest getSession() {
-        return this.session;
-    }
-
     public int hashCode() {
         SessionSyncRequest sessionSyncRequest = this.session;
         int hashCode = (sessionSyncRequest == null ? 0 : sessionSyncRequest.hashCode()) * 31;

@@ -88,18 +88,6 @@ public final /* data */ class GpsCalculateDataDto implements Parcelable {
         return Double.compare(this.totalDistance, gpsCalculateDataDto.totalDistance) == 0 && this.stoppedTime == gpsCalculateDataDto.stoppedTime && this.movingTime == gpsCalculateDataDto.movingTime;
     }
 
-    public final long getMovingTime() {
-        return this.movingTime;
-    }
-
-    public final long getStoppedTime() {
-        return this.stoppedTime;
-    }
-
-    public final double getTotalDistance() {
-        return this.totalDistance;
-    }
-
     public int hashCode() {
         return Long.hashCode(this.movingTime) + ((Long.hashCode(this.stoppedTime) + (Double.hashCode(this.totalDistance) * 31)) * 31);
     }

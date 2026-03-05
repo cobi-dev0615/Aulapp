@@ -68,10 +68,6 @@ public final /* data */ class GetUserByQueryRequest implements Parcelable {
         return (other instanceof GetUserByQueryRequest) && Intrinsics.areEqual(this.query, ((GetUserByQueryRequest) other).query);
     }
 
-    public final String getQuery() {
-        return this.query;
-    }
-
     public int hashCode() {
         String str = this.query;
         if (str == null) {

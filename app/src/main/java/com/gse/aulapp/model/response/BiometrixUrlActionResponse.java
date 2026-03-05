@@ -132,18 +132,8 @@ public final /* data */ class BiometrixUrlActionResponse implements Parcelable {
         }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
-
-        public final String getRedirectUrl() {
-            return this.redirectUrl;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
 
         public int hashCode() {
             Boolean bool = this.success;
@@ -241,18 +231,6 @@ public final /* data */ class BiometrixUrlActionResponse implements Parcelable {
         }
         BiometrixUrlActionResponse biometrixUrlActionResponse = (BiometrixUrlActionResponse) other;
         return Intrinsics.areEqual(this.statusCode, biometrixUrlActionResponse.statusCode) && Intrinsics.areEqual(this.result, biometrixUrlActionResponse.result) && Intrinsics.areEqual(this.url, biometrixUrlActionResponse.url);
-    }
-
-    public final Result getResult() {
-        return this.result;
-    }
-
-    public final Integer getStatusCode() {
-        return this.statusCode;
-    }
-
-    public final String getUrl() {
-        return this.url;
     }
 
     public int hashCode() {

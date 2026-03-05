@@ -117,26 +117,6 @@ public final /* data */ class HistoricRecordPermissionsChangeEntity implements P
         return Intrinsics.areEqual(this.id, historicRecordPermissionsChangeEntity.id) && Intrinsics.areEqual(this.sessionID, historicRecordPermissionsChangeEntity.sessionID) && Intrinsics.areEqual(this.date, historicRecordPermissionsChangeEntity.date) && this.active == historicRecordPermissionsChangeEntity.active && Intrinsics.areEqual(this.permission, historicRecordPermissionsChangeEntity.permission);
     }
 
-    public final boolean getActive() {
-        return this.active;
-    }
-
-    public final String getDate() {
-        return this.date;
-    }
-
-    public final Integer getId() {
-        return this.id;
-    }
-
-    public final String getPermission() {
-        return this.permission;
-    }
-
-    public final String getSessionID() {
-        return this.sessionID;
-    }
-
     public int hashCode() {
         Integer num = this.id;
         return this.permission.hashCode() + a.g(this.active, x5.d(this.date, x5.d(this.sessionID, (num == null ? 0 : num.hashCode()) * 31, 31), 31), 31);

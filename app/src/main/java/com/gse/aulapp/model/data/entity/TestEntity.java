@@ -81,14 +81,6 @@ public final /* data */ class TestEntity implements Parcelable {
         return Intrinsics.areEqual(this.testID, testEntity.testID) && Intrinsics.areEqual(this.sessionID, testEntity.sessionID);
     }
 
-    public final String getSessionID() {
-        return this.sessionID;
-    }
-
-    public final String getTestID() {
-        return this.testID;
-    }
-
     public int hashCode() {
         return this.sessionID.hashCode() + (this.testID.hashCode() * 31);
     }

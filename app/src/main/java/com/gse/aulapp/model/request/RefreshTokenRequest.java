@@ -68,10 +68,6 @@ public final /* data */ class RefreshTokenRequest implements Parcelable {
         return (other instanceof RefreshTokenRequest) && Intrinsics.areEqual(this.email, ((RefreshTokenRequest) other).email);
     }
 
-    public final String getEmail() {
-        return this.email;
-    }
-
     public int hashCode() {
         return this.email.hashCode();
     }

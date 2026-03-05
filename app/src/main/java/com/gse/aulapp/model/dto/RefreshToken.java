@@ -355,72 +355,12 @@ public final /* data */ class RefreshToken implements Parcelable {
         return Intrinsics.areEqual(this.id, refreshToken.id) && Intrinsics.areEqual(this.fullName, refreshToken.fullName) && Intrinsics.areEqual(this.role, refreshToken.role) && Intrinsics.areEqual(this.email, refreshToken.email) && Intrinsics.areEqual(this.docNumber, refreshToken.docNumber) && Intrinsics.areEqual(this.docType, refreshToken.docType) && this.changePass == refreshToken.changePass && Intrinsics.areEqual(this.courses, refreshToken.courses) && Intrinsics.areEqual(this.schedulingCategories, refreshToken.schedulingCategories) && Intrinsics.areEqual(this.preferredHand, refreshToken.preferredHand) && Intrinsics.areEqual(this.workedHors, refreshToken.workedHors) && this.biometricValidationRNEC == refreshToken.biometricValidationRNEC && this.usingIdenty == refreshToken.usingIdenty && Intrinsics.areEqual(this.phone, refreshToken.phone) && Intrinsics.areEqual(this.mobile, refreshToken.mobile) && Intrinsics.areEqual(this.center, refreshToken.center) && Intrinsics.areEqual(this.userDemo, refreshToken.userDemo);
     }
 
-    public final boolean getBiometricValidationRNEC() {
-        return this.biometricValidationRNEC;
-    }
-
-    public final CenterDto getCenter() {
-        return this.center;
-    }
-
-    public final boolean getChangePass() {
-        return this.changePass;
-    }
-
     public final List<CoursesDto> getCourses() {
         return this.courses;
     }
 
-    public final String getDocNumber() {
-        return this.docNumber;
-    }
-
-    public final String getDocType() {
-        return this.docType;
-    }
-
-    public final String getEmail() {
-        return this.email;
-    }
-
-    public final String getFullName() {
-        return this.fullName;
-    }
-
-    public final String getId() {
-        return this.id;
-    }
-
-    public final String getMobile() {
-        return this.mobile;
-    }
-
-    public final String getPhone() {
-        return this.phone;
-    }
-
-    public final String getPreferredHand() {
-        return this.preferredHand;
-    }
-
-    public final String getRole() {
-        return this.role;
-    }
-
     public final List<String> getSchedulingCategories() {
         return this.schedulingCategories;
-    }
-
-    public final Boolean getUserDemo() {
-        return this.userDemo;
-    }
-
-    public final boolean getUsingIdenty() {
-        return this.usingIdenty;
-    }
-
-    public final WorkedHorsDto getWorkedHors() {
-        return this.workedHors;
     }
 
     public int hashCode() {

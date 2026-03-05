@@ -137,26 +137,6 @@ public final /* data */ class ClassRoomResponse implements Parcelable {
         return Intrinsics.areEqual(this.classroomID, classRoomResponse.classroomID) && Intrinsics.areEqual(this.nomenclature, classRoomResponse.nomenclature) && Intrinsics.areEqual(this.location, classRoomResponse.location) && Intrinsics.areEqual(this.type, classRoomResponse.type) && Intrinsics.areEqual(this.address, classRoomResponse.address);
     }
 
-    public final String getAddress() {
-        return this.address;
-    }
-
-    public final String getClassroomID() {
-        return this.classroomID;
-    }
-
-    public final String getLocation() {
-        return this.location;
-    }
-
-    public final String getNomenclature() {
-        return this.nomenclature;
-    }
-
-    public final String getType() {
-        return this.type;
-    }
-
     public int hashCode() {
         return this.address.hashCode() + x5.d(this.type, x5.d(this.location, x5.d(this.nomenclature, this.classroomID.hashCode() * 31, 31), 31), 31);
     }

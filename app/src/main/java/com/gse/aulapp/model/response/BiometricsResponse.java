@@ -104,18 +104,6 @@ public final /* data */ class BiometricsResponse implements Parcelable {
         return Intrinsics.areEqual(this.left, biometricsResponse.left) && Intrinsics.areEqual(this.right, biometricsResponse.right) && Intrinsics.areEqual(this.exception, biometricsResponse.exception);
     }
 
-    public final String getException() {
-        return this.exception;
-    }
-
-    public final Boolean getLeft() {
-        return this.left;
-    }
-
-    public final Boolean getRight() {
-        return this.right;
-    }
-
     public int hashCode() {
         Boolean bool = this.left;
         int hashCode = (bool == null ? 0 : bool.hashCode()) * 31;

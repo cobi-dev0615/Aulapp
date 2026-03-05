@@ -82,14 +82,6 @@ public final /* data */ class SessionRouteCoordinatesResponse implements Parcela
         return Intrinsics.areEqual((Object) this.latitude, (Object) sessionRouteCoordinatesResponse.latitude) && Intrinsics.areEqual((Object) this.longitude, (Object) sessionRouteCoordinatesResponse.longitude);
     }
 
-    public final Double getLatitude() {
-        return this.latitude;
-    }
-
-    public final Double getLongitude() {
-        return this.longitude;
-    }
-
     public int hashCode() {
         Double d = this.latitude;
         int hashCode = (d == null ? 0 : d.hashCode()) * 31;

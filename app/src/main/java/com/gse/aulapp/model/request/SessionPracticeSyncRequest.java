@@ -82,14 +82,6 @@ public final /* data */ class SessionPracticeSyncRequest implements Parcelable {
         return Intrinsics.areEqual(this.session, sessionPracticeSyncRequest.session) && Intrinsics.areEqual(this.assist, sessionPracticeSyncRequest.assist);
     }
 
-    public final AssistSyncRequest getAssist() {
-        return this.assist;
-    }
-
-    public final SessionSyncRequest getSession() {
-        return this.session;
-    }
-
     public int hashCode() {
         SessionSyncRequest sessionSyncRequest = this.session;
         int hashCode = (sessionSyncRequest == null ? 0 : sessionSyncRequest.hashCode()) * 31;

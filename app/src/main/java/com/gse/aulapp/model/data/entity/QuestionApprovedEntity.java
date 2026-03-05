@@ -91,18 +91,6 @@ public final /* data */ class QuestionApprovedEntity implements Parcelable {
         return Intrinsics.areEqual(this.sessionID, questionApprovedEntity.sessionID) && Intrinsics.areEqual(this.questionID, questionApprovedEntity.questionID) && this.approved == questionApprovedEntity.approved;
     }
 
-    public final boolean getApproved() {
-        return this.approved;
-    }
-
-    public final String getQuestionID() {
-        return this.questionID;
-    }
-
-    public final String getSessionID() {
-        return this.sessionID;
-    }
-
     public int hashCode() {
         return Boolean.hashCode(this.approved) + x5.d(this.questionID, this.sessionID.hashCode() * 31, 31);
     }

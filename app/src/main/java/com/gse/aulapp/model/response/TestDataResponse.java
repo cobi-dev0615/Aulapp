@@ -82,14 +82,6 @@ public final /* data */ class TestDataResponse implements Parcelable {
         return Intrinsics.areEqual(this.test, testDataResponse.test) && Intrinsics.areEqual(this.config, testDataResponse.config);
     }
 
-    public final ConfigResponse getConfig() {
-        return this.config;
-    }
-
-    public final TestResponse getTest() {
-        return this.test;
-    }
-
     public int hashCode() {
         TestResponse testResponse = this.test;
         int hashCode = (testResponse == null ? 0 : testResponse.hashCode()) * 31;

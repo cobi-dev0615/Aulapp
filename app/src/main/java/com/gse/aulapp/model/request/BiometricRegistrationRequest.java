@@ -101,18 +101,6 @@ public final /* data */ class BiometricRegistrationRequest implements Parcelable
         return Intrinsics.areEqual(this.username, biometricRegistrationRequest.username) && Intrinsics.areEqual(this.enrollRightHand, biometricRegistrationRequest.enrollRightHand) && Intrinsics.areEqual(this.vector, biometricRegistrationRequest.vector);
     }
 
-    public final Boolean getEnrollRightHand() {
-        return this.enrollRightHand;
-    }
-
-    public final String getUsername() {
-        return this.username;
-    }
-
-    public final String getVector() {
-        return this.vector;
-    }
-
     public int hashCode() {
         String str = this.username;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

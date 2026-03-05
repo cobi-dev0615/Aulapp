@@ -83,14 +83,6 @@ public final /* data */ class HoursScheduledCollectionTypeResponse implements Pa
         return this.hoursDay == hoursScheduledCollectionTypeResponse.hoursDay && Intrinsics.areEqual(this.type, hoursScheduledCollectionTypeResponse.type);
     }
 
-    public final int getHoursDay() {
-        return this.hoursDay;
-    }
-
-    public final String getType() {
-        return this.type;
-    }
-
     public int hashCode() {
         return this.type.hashCode() + (Integer.hashCode(this.hoursDay) * 31);
     }

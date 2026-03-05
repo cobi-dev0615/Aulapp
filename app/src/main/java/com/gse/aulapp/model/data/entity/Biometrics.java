@@ -136,26 +136,6 @@ public final /* data */ class Biometrics implements Parcelable {
         return this.id == biometrics.id && Intrinsics.areEqual(this.idUser, biometrics.idUser) && this.left == biometrics.left && this.right == biometrics.right && Intrinsics.areEqual(this.exception, biometrics.exception);
     }
 
-    public final String getException() {
-        return this.exception;
-    }
-
-    public final long getId() {
-        return this.id;
-    }
-
-    public final String getIdUser() {
-        return this.idUser;
-    }
-
-    public final boolean getLeft() {
-        return this.left;
-    }
-
-    public final boolean getRight() {
-        return this.right;
-    }
-
     public int hashCode() {
         int g = a.g(this.right, a.g(this.left, x5.d(this.idUser, Long.hashCode(this.id) * 31, 31), 31), 31);
         String str = this.exception;

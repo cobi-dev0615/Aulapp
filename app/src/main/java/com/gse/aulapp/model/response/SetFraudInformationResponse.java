@@ -139,19 +139,10 @@ public final /* data */ class SetFraudInformationResponse extends GeneralRespons
         }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
 
         public int hashCode() {
             Boolean bool = this.success;
@@ -289,27 +280,10 @@ public final /* data */ class SetFraudInformationResponse extends GeneralRespons
     }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getGeneralMessage() {
-        return this.generalMessage;
-    }
-
-    public final Result getResult() {
-        return this.result;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public Integer getStatusCode() {
-        return this.statusCode;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getStatusMessage() {
-        return this.statusMessage;
-    }
-
-    public final String getUrl() {
-        return this.url;
-    }
 
     public int hashCode() {
         Integer num = this.statusCode;

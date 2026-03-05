@@ -83,14 +83,7 @@ public final /* data */ class ExamVerifyInfoRequest extends ExamRequestGeneral {
         return Intrinsics.areEqual(this.email, examVerifyInfoRequest.email) && Intrinsics.areEqual(this.action, examVerifyInfoRequest.action);
     }
 
-    public final String getAction() {
-        return this.action;
-    }
-
     @Override // com.gse.aulapp.model.request.ExamRequestGeneral
-    public String getEmail() {
-        return this.email;
-    }
 
     public int hashCode() {
         String str = this.email;

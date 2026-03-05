@@ -185,42 +185,6 @@ public final /* data */ class ConfigurationSessionEntity implements Parcelable {
         return Intrinsics.areEqual(this.typeConfiguration, configurationSessionEntity.typeConfiguration) && this.minToleranceEntryBefore == configurationSessionEntity.minToleranceEntryBefore && this.minToleranceEntryAfter == configurationSessionEntity.minToleranceEntryAfter && this.minToleranceDepartureAfter == configurationSessionEntity.minToleranceDepartureAfter && this.durationForHour == configurationSessionEntity.durationForHour && this.durationForHourShow == configurationSessionEntity.durationForHourShow && this.alertEndSession == configurationSessionEntity.alertEndSession && this.alertDepartureAfter == configurationSessionEntity.alertDepartureAfter && this.minuteForHour == configurationSessionEntity.minuteForHour;
     }
 
-    public final int getAlertDepartureAfter() {
-        return this.alertDepartureAfter;
-    }
-
-    public final int getAlertEndSession() {
-        return this.alertEndSession;
-    }
-
-    public final int getDurationForHour() {
-        return this.durationForHour;
-    }
-
-    public final int getDurationForHourShow() {
-        return this.durationForHourShow;
-    }
-
-    public final int getMinToleranceDepartureAfter() {
-        return this.minToleranceDepartureAfter;
-    }
-
-    public final int getMinToleranceEntryAfter() {
-        return this.minToleranceEntryAfter;
-    }
-
-    public final int getMinToleranceEntryBefore() {
-        return this.minToleranceEntryBefore;
-    }
-
-    public final int getMinuteForHour() {
-        return this.minuteForHour;
-    }
-
-    public final String getTypeConfiguration() {
-        return this.typeConfiguration;
-    }
-
     public int hashCode() {
         return Integer.hashCode(this.minuteForHour) + x5.a(this.alertDepartureAfter, x5.a(this.alertEndSession, x5.a(this.durationForHourShow, x5.a(this.durationForHour, x5.a(this.minToleranceDepartureAfter, x5.a(this.minToleranceEntryAfter, x5.a(this.minToleranceEntryBefore, this.typeConfiguration.hashCode() * 31, 31), 31), 31), 31), 31), 31), 31);
     }

@@ -96,10 +96,6 @@ public final /* data */ class TestResponse implements Parcelable {
         return this.questions;
     }
 
-    public final String getTestID() {
-        return this.testID;
-    }
-
     public int hashCode() {
         String str = this.testID;
         return this.questions.hashCode() + ((str == null ? 0 : str.hashCode()) * 31);

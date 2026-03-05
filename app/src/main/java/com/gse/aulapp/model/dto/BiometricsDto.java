@@ -81,14 +81,6 @@ public final /* data */ class BiometricsDto implements Parcelable {
         return this.left == biometricsDto.left && this.right == biometricsDto.right;
     }
 
-    public final boolean getLeft() {
-        return this.left;
-    }
-
-    public final boolean getRight() {
-        return this.right;
-    }
-
     public int hashCode() {
         return Boolean.hashCode(this.right) + (Boolean.hashCode(this.left) * 31);
     }

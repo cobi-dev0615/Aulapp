@@ -204,50 +204,6 @@ public final /* data */ class BiometricRegistrationV4Request implements Parcelab
         return Intrinsics.areEqual(this.username, biometricRegistrationV4Request.username) && this.enrollRightHand == biometricRegistrationV4Request.enrollRightHand && Intrinsics.areEqual(this.identy, biometricRegistrationV4Request.identy) && Intrinsics.areEqual(this.rightLittle, biometricRegistrationV4Request.rightLittle) && Intrinsics.areEqual(this.rightMiddle, biometricRegistrationV4Request.rightMiddle) && Intrinsics.areEqual(this.rightIndex, biometricRegistrationV4Request.rightIndex) && Intrinsics.areEqual(this.rightRing, biometricRegistrationV4Request.rightRing) && Intrinsics.areEqual(this.leftLittle, biometricRegistrationV4Request.leftLittle) && Intrinsics.areEqual(this.leftMiddle, biometricRegistrationV4Request.leftMiddle) && Intrinsics.areEqual(this.leftIndex, biometricRegistrationV4Request.leftIndex) && Intrinsics.areEqual(this.leftRing, biometricRegistrationV4Request.leftRing);
     }
 
-    public final boolean getEnrollRightHand() {
-        return this.enrollRightHand;
-    }
-
-    public final String getIdenty() {
-        return this.identy;
-    }
-
-    public final String getLeftIndex() {
-        return this.leftIndex;
-    }
-
-    public final String getLeftLittle() {
-        return this.leftLittle;
-    }
-
-    public final String getLeftMiddle() {
-        return this.leftMiddle;
-    }
-
-    public final String getLeftRing() {
-        return this.leftRing;
-    }
-
-    public final String getRightIndex() {
-        return this.rightIndex;
-    }
-
-    public final String getRightLittle() {
-        return this.rightLittle;
-    }
-
-    public final String getRightMiddle() {
-        return this.rightMiddle;
-    }
-
-    public final String getRightRing() {
-        return this.rightRing;
-    }
-
-    public final String getUsername() {
-        return this.username;
-    }
-
     public int hashCode() {
         String str = this.username;
         int d = x5.d(this.identy, a.g(this.enrollRightHand, (str == null ? 0 : str.hashCode()) * 31, 31), 31);

@@ -239,40 +239,16 @@ public final /* data */ class SessionInstructorResponse extends GeneralResponseD
         }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
 
         public final List<SessionInstructorObjectResponse> getData() {
             return this.data;
         }
 
-        public final String getDate() {
-            return this.date;
-        }
-
-        public final ExamPracticalConfigurationResponse getExamPracticalConfiguration() {
-            return this.examPracticalConfiguration;
-        }
+        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
-
-        public final PracticalConfigurationResponse getPracticalConfiguration() {
-            return this.practicalConfiguration;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Integer getStatus() {
-            return this.status;
-        }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
 
         public int hashCode() {
             Boolean bool = this.success;
@@ -483,27 +459,10 @@ public final /* data */ class SessionInstructorResponse extends GeneralResponseD
     }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getGeneralMessage() {
-        return this.generalMessage;
-    }
-
-    public final Result getResult() {
-        return this.result;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public Integer getStatusCode() {
-        return this.statusCode;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getStatusMessage() {
-        return this.statusMessage;
-    }
-
-    public final String getUrl() {
-        return this.url;
-    }
 
     public int hashCode() {
         Integer num = this.statusCode;

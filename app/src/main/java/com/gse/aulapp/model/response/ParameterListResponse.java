@@ -132,18 +132,6 @@ public final class ParameterListResponse extends GeneralResponseDecrypt {
             return Intrinsics.areEqual(this.validationsPercentage, data.validationsPercentage) && Intrinsics.areEqual(this.entryValidation, data.entryValidation) && Intrinsics.areEqual(this.scheduleExamsURL, data.scheduleExamsURL);
         }
 
-        public final String getEntryValidation() {
-            return this.entryValidation;
-        }
-
-        public final String getScheduleExamsURL() {
-            return this.scheduleExamsURL;
-        }
-
-        public final Integer getValidationsPercentage() {
-            return this.validationsPercentage;
-        }
-
         public int hashCode() {
             Integer num = this.validationsPercentage;
             int hashCode = (num == null ? 0 : num.hashCode()) * 31;
@@ -294,28 +282,12 @@ public final class ParameterListResponse extends GeneralResponseDecrypt {
         }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
-
-        public final Data getData() {
-            return this.data;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Integer getStatus() {
-            return this.status;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
 
         public int hashCode() {
             Boolean bool = this.success;

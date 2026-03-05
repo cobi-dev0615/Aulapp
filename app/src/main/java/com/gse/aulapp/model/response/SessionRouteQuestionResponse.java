@@ -104,22 +104,6 @@ public final /* data */ class SessionRouteQuestionResponse implements Parcelable
         return Intrinsics.areEqual(this.description, sessionRouteQuestionResponse.description) && Intrinsics.areEqual(this.answer, sessionRouteQuestionResponse.answer) && Intrinsics.areEqual(this.level, sessionRouteQuestionResponse.level) && Intrinsics.areEqual(this.coordinates, sessionRouteQuestionResponse.coordinates);
     }
 
-    public final String getAnswer() {
-        return this.answer;
-    }
-
-    public final SessionRouteCoordinatesResponse getCoordinates() {
-        return this.coordinates;
-    }
-
-    public final String getDescription() {
-        return this.description;
-    }
-
-    public final String getLevel() {
-        return this.level;
-    }
-
     public int hashCode() {
         String str = this.description;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

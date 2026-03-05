@@ -203,46 +203,6 @@ public final /* data */ class FraudCredentialsDto implements Parcelable {
         return Intrinsics.areEqual(this.fraudId, fraudCredentialsDto.fraudId) && Intrinsics.areEqual(this.documentNumber, fraudCredentialsDto.documentNumber) && this.stepFraud == fraudCredentialsDto.stepFraud && Intrinsics.areEqual(this.userId, fraudCredentialsDto.userId) && Intrinsics.areEqual(this.fullName, fraudCredentialsDto.fullName) && this.role == fraudCredentialsDto.role && Intrinsics.areEqual(this.docType, fraudCredentialsDto.docType) && this.fullEnrolment == fraudCredentialsDto.fullEnrolment && Intrinsics.areEqual(this.userEmail, fraudCredentialsDto.userEmail) && this.destinyExamOrClass == fraudCredentialsDto.destinyExamOrClass;
     }
 
-    public final boolean getDestinyExamOrClass() {
-        return this.destinyExamOrClass;
-    }
-
-    public final String getDocType() {
-        return this.docType;
-    }
-
-    public final String getDocumentNumber() {
-        return this.documentNumber;
-    }
-
-    public final String getFraudId() {
-        return this.fraudId;
-    }
-
-    public final boolean getFullEnrolment() {
-        return this.fullEnrolment;
-    }
-
-    public final String getFullName() {
-        return this.fullName;
-    }
-
-    public final EnumUserProfile getRole() {
-        return this.role;
-    }
-
-    public final EnumFraudStep getStepFraud() {
-        return this.stepFraud;
-    }
-
-    public final String getUserEmail() {
-        return this.userEmail;
-    }
-
-    public final String getUserId() {
-        return this.userId;
-    }
-
     public int hashCode() {
         int hashCode = (this.stepFraud.hashCode() + x5.d(this.documentNumber, this.fraudId.hashCode() * 31, 31)) * 31;
         String str = this.userId;

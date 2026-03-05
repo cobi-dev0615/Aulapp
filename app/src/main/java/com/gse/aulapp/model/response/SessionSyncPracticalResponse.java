@@ -139,19 +139,10 @@ public final class SessionSyncPracticalResponse extends GeneralResponseDecrypt {
         }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
 
         public int hashCode() {
             Boolean bool = this.success;

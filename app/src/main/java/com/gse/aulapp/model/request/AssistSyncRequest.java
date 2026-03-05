@@ -101,14 +101,6 @@ public final /* data */ class AssistSyncRequest implements Parcelable {
         return Intrinsics.areEqual(this.route, assistSyncRequest.route) && Intrinsics.areEqual(this.initClassTime, assistSyncRequest.initClassTime) && Intrinsics.areEqual(this.endClassTime, assistSyncRequest.endClassTime);
     }
 
-    public final String getEndClassTime() {
-        return this.endClassTime;
-    }
-
-    public final String getInitClassTime() {
-        return this.initClassTime;
-    }
-
     public final ArrayList<RouteSyncRequest> getRoute() {
         return this.route;
     }

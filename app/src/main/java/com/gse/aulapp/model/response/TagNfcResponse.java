@@ -113,22 +113,6 @@ public final /* data */ class TagNfcResponse implements Parcelable {
         return Intrinsics.areEqual(this.Id, tagNfcResponse.Id) && Intrinsics.areEqual(this.tagCode, tagNfcResponse.tagCode) && Intrinsics.areEqual(this.status, tagNfcResponse.status) && Intrinsics.areEqual(this.encrypted, tagNfcResponse.encrypted);
     }
 
-    public final Boolean getEncrypted() {
-        return this.encrypted;
-    }
-
-    public final String getId() {
-        return this.Id;
-    }
-
-    public final String getStatus() {
-        return this.status;
-    }
-
-    public final String getTagCode() {
-        return this.tagCode;
-    }
-
     public int hashCode() {
         String str = this.Id;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

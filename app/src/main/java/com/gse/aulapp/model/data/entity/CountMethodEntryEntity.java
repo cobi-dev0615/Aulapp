@@ -101,22 +101,6 @@ public final /* data */ class CountMethodEntryEntity implements Parcelable {
         return Intrinsics.areEqual(this.userID, countMethodEntryEntity.userID) && Intrinsics.areEqual(this.date, countMethodEntryEntity.date) && this.fraudCount == countMethodEntryEntity.fraudCount && this.fingerPrintsCount == countMethodEntryEntity.fingerPrintsCount;
     }
 
-    public final String getDate() {
-        return this.date;
-    }
-
-    public final int getFingerPrintsCount() {
-        return this.fingerPrintsCount;
-    }
-
-    public final int getFraudCount() {
-        return this.fraudCount;
-    }
-
-    public final String getUserID() {
-        return this.userID;
-    }
-
     public int hashCode() {
         return Integer.hashCode(this.fingerPrintsCount) + x5.a(this.fraudCount, x5.d(this.date, this.userID.hashCode() * 31, 31), 31);
     }

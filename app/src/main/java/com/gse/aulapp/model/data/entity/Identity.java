@@ -121,22 +121,6 @@ public final /* data */ class Identity implements Parcelable {
         return this.id == identity.id && Intrinsics.areEqual(this.idUser, identity.idUser) && this.completed == identity.completed && this.toValidate == identity.toValidate;
     }
 
-    public final boolean getCompleted() {
-        return this.completed;
-    }
-
-    public final long getId() {
-        return this.id;
-    }
-
-    public final String getIdUser() {
-        return this.idUser;
-    }
-
-    public final boolean getToValidate() {
-        return this.toValidate;
-    }
-
     public int hashCode() {
         return Boolean.hashCode(this.toValidate) + a.g(this.completed, x5.d(this.idUser, Long.hashCode(this.id) * 31, 31), 31);
     }

@@ -86,14 +86,6 @@ public final /* data */ class OcrInformation implements Parcelable {
         return Intrinsics.areEqual(this.name, ocrInformation.name) && Intrinsics.areEqual(this.documentNumber, ocrInformation.documentNumber);
     }
 
-    public final String getDocumentNumber() {
-        return this.documentNumber;
-    }
-
-    public final String getName() {
-        return this.name;
-    }
-
     public int hashCode() {
         return this.documentNumber.hashCode() + (this.name.hashCode() * 31);
     }

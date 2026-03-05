@@ -88,10 +88,6 @@ public final /* data */ class ExamValidateRequest implements Parcelable {
         return this.appointmentsId;
     }
 
-    public final String getRole() {
-        return this.role;
-    }
-
     public int hashCode() {
         String[] strArr = this.appointmentsId;
         int hashCode = (strArr == null ? 0 : Arrays.hashCode(strArr)) * 31;

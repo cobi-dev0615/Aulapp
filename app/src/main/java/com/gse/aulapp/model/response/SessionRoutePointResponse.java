@@ -103,22 +103,6 @@ public final /* data */ class SessionRoutePointResponse implements Parcelable {
         return Intrinsics.areEqual((Object) this.latitude, (Object) sessionRoutePointResponse.latitude) && Intrinsics.areEqual((Object) this.longitude, (Object) sessionRoutePointResponse.longitude) && Intrinsics.areEqual(this.time, sessionRoutePointResponse.time) && Intrinsics.areEqual(this._id, sessionRoutePointResponse._id);
     }
 
-    public final Double getLatitude() {
-        return this.latitude;
-    }
-
-    public final Double getLongitude() {
-        return this.longitude;
-    }
-
-    public final String getTime() {
-        return this.time;
-    }
-
-    public final String get_id() {
-        return this._id;
-    }
-
     public int hashCode() {
         Double d = this.latitude;
         int hashCode = (d == null ? 0 : d.hashCode()) * 31;

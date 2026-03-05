@@ -177,46 +177,6 @@ public final /* data */ class SessionSyncRequest implements Parcelable {
         return Intrinsics.areEqual(this.Id, sessionSyncRequest.Id) && Intrinsics.areEqual(this.classroomID, sessionSyncRequest.classroomID) && Intrinsics.areEqual(this.vehicleID, sessionSyncRequest.vehicleID) && Intrinsics.areEqual(this.apprenticeID, sessionSyncRequest.apprenticeID) && Intrinsics.areEqual(this.instructorID, sessionSyncRequest.instructorID) && Intrinsics.areEqual(this.endTime, sessionSyncRequest.endTime) && Intrinsics.areEqual(this.startTime, sessionSyncRequest.startTime) && Intrinsics.areEqual(this.date, sessionSyncRequest.date) && Intrinsics.areEqual(this.statusAppointment, sessionSyncRequest.statusAppointment) && Intrinsics.areEqual(this.systemNotification, sessionSyncRequest.systemNotification);
     }
 
-    public final String getApprenticeID() {
-        return this.apprenticeID;
-    }
-
-    public final String getClassroomID() {
-        return this.classroomID;
-    }
-
-    public final String getDate() {
-        return this.date;
-    }
-
-    public final String getEndTime() {
-        return this.endTime;
-    }
-
-    public final String getId() {
-        return this.Id;
-    }
-
-    public final String getInstructorID() {
-        return this.instructorID;
-    }
-
-    public final String getStartTime() {
-        return this.startTime;
-    }
-
-    public final String getStatusAppointment() {
-        return this.statusAppointment;
-    }
-
-    public final String getSystemNotification() {
-        return this.systemNotification;
-    }
-
-    public final String getVehicleID() {
-        return this.vehicleID;
-    }
-
     public int hashCode() {
         String str = this.Id;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

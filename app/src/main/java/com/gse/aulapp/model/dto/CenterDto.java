@@ -104,22 +104,6 @@ public final /* data */ class CenterDto implements Parcelable {
         return Intrinsics.areEqual(this.name, centerDto.name) && Intrinsics.areEqual(this.centerID, centerDto.centerID) && Intrinsics.areEqual(this.phoneNumber, centerDto.phoneNumber) && Intrinsics.areEqual(this.address, centerDto.address);
     }
 
-    public final String getAddress() {
-        return this.address;
-    }
-
-    public final String getCenterID() {
-        return this.centerID;
-    }
-
-    public final String getName() {
-        return this.name;
-    }
-
-    public final String getPhoneNumber() {
-        return this.phoneNumber;
-    }
-
     public int hashCode() {
         String str = this.name;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

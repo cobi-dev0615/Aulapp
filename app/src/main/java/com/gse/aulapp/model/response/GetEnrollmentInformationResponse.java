@@ -206,40 +206,11 @@ public final /* data */ class GetEnrollmentInformationResponse extends GeneralRe
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.userID, result.userID) && Intrinsics.areEqual(this.fullEnrollment, result.fullEnrollment) && Intrinsics.areEqual(this.fraudInformationID, result.fraudInformationID) && Intrinsics.areEqual(this.biometrixInformationID, result.biometrixInformationID) && Intrinsics.areEqual(this.fourFingersIdentyID, result.fourFingersIdentyID);
         }
 
-        public final String getBiometrixInformationID() {
-            return this.biometrixInformationID;
-        }
+        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
-
-        public final FourFingersIdenty getFourFingersIdentyID() {
-            return this.fourFingersIdentyID;
-        }
-
-        public final String getFraudInformationID() {
-            return this.fraudInformationID;
-        }
-
-        public final Boolean getFullEnrollment() {
-            return this.fullEnrollment;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
-
-        public final String getUserID() {
-            return this.userID;
-        }
 
         public int hashCode() {
             Boolean bool = this.success;
@@ -426,27 +397,10 @@ public final /* data */ class GetEnrollmentInformationResponse extends GeneralRe
     }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getGeneralMessage() {
-        return this.generalMessage;
-    }
-
-    public final Result getResult() {
-        return this.result;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public Integer getStatusCode() {
-        return this.statusCode;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getStatusMessage() {
-        return this.statusMessage;
-    }
-
-    public final String getUrl() {
-        return this.url;
-    }
 
     public int hashCode() {
         Integer num = this.statusCode;

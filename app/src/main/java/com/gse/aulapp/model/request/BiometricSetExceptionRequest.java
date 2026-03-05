@@ -83,14 +83,6 @@ public final /* data */ class BiometricSetExceptionRequest implements Parcelable
         return Intrinsics.areEqual(this.username, biometricSetExceptionRequest.username) && Intrinsics.areEqual(this.hand, biometricSetExceptionRequest.hand);
     }
 
-    public final String getHand() {
-        return this.hand;
-    }
-
-    public final String getUsername() {
-        return this.username;
-    }
-
     public int hashCode() {
         String str = this.username;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

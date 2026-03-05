@@ -101,22 +101,6 @@ public final /* data */ class UserEntity implements Parcelable {
         return Intrinsics.areEqual(this.userID, userEntity.userID) && Intrinsics.areEqual(this.role, userEntity.role) && Intrinsics.areEqual(this.leftHand, userEntity.leftHand) && Intrinsics.areEqual(this.rightHand, userEntity.rightHand);
     }
 
-    public final Integer getLeftHand() {
-        return this.leftHand;
-    }
-
-    public final Integer getRightHand() {
-        return this.rightHand;
-    }
-
-    public final String getRole() {
-        return this.role;
-    }
-
-    public final String getUserID() {
-        return this.userID;
-    }
-
     public int hashCode() {
         int d = x5.d(this.role, this.userID.hashCode() * 31, 31);
         Integer num = this.leftHand;

@@ -104,22 +104,6 @@ public final /* data */ class FallBackRequest implements Parcelable {
         return Intrinsics.areEqual(this.action, fallBackRequest.action) && Intrinsics.areEqual(this.sessionID, fallBackRequest.sessionID) && Intrinsics.areEqual(this.userID, fallBackRequest.userID) && Intrinsics.areEqual(this.photo, fallBackRequest.photo);
     }
 
-    public final String getAction() {
-        return this.action;
-    }
-
-    public final String getPhoto() {
-        return this.photo;
-    }
-
-    public final String getSessionID() {
-        return this.sessionID;
-    }
-
-    public final String getUserID() {
-        return this.userID;
-    }
-
     public int hashCode() {
         String str = this.action;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

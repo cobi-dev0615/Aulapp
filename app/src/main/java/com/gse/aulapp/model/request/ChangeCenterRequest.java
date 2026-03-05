@@ -86,14 +86,6 @@ public final /* data */ class ChangeCenterRequest implements Parcelable {
         return Intrinsics.areEqual(this.centerID, changeCenterRequest.centerID) && Intrinsics.areEqual(this.documentNumber, changeCenterRequest.documentNumber);
     }
 
-    public final String getCenterID() {
-        return this.centerID;
-    }
-
-    public final String getDocumentNumber() {
-        return this.documentNumber;
-    }
-
     public int hashCode() {
         return this.documentNumber.hashCode() + (this.centerID.hashCode() * 31);
     }

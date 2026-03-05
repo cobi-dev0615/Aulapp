@@ -68,10 +68,6 @@ public final /* data */ class SessionExamRequest implements Parcelable {
         return (other instanceof SessionExamRequest) && Intrinsics.areEqual(this.sessionID, ((SessionExamRequest) other).sessionID);
     }
 
-    public final String getSessionID() {
-        return this.sessionID;
-    }
-
     public int hashCode() {
         return this.sessionID.hashCode();
     }

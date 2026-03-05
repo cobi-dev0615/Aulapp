@@ -72,10 +72,6 @@ public final /* data */ class DatetimeRequest implements Parcelable {
         return (other instanceof DatetimeRequest) && Intrinsics.areEqual(this.success, ((DatetimeRequest) other).success);
     }
 
-    public final Boolean getSuccess() {
-        return this.success;
-    }
-
     public int hashCode() {
         Boolean bool = this.success;
         if (bool == null) {

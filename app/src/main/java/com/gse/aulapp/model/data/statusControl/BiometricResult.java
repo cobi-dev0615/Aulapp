@@ -67,10 +67,6 @@ public abstract class BiometricResult {
             return (other instanceof Error) && Intrinsics.areEqual(this.data, ((Error) other).data);
         }
 
-        public final Object getData() {
-            return this.data;
-        }
-
         public int hashCode() {
             return this.data.hashCode();
         }

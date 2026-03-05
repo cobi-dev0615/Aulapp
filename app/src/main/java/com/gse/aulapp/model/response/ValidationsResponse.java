@@ -109,18 +109,6 @@ public final /* data */ class ValidationsResponse implements Parcelable {
         return Intrinsics.areEqual(this.instructor, validationsResponse.instructor) && Intrinsics.areEqual(this.apprentice, validationsResponse.apprentice) && Intrinsics.areEqual(this.vehicle, validationsResponse.vehicle);
     }
 
-    public final Boolean getApprentice() {
-        return this.apprentice;
-    }
-
-    public final Boolean getInstructor() {
-        return this.instructor;
-    }
-
-    public final Boolean getVehicle() {
-        return this.vehicle;
-    }
-
     public int hashCode() {
         Boolean bool = this.instructor;
         int hashCode = (bool == null ? 0 : bool.hashCode()) * 31;

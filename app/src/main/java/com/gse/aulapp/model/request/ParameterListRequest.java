@@ -68,10 +68,6 @@ public final /* data */ class ParameterListRequest implements Parcelable {
         return (other instanceof ParameterListRequest) && Intrinsics.areEqual(this.dummy, ((ParameterListRequest) other).dummy);
     }
 
-    public final String getDummy() {
-        return this.dummy;
-    }
-
     public int hashCode() {
         String str = this.dummy;
         if (str == null) {

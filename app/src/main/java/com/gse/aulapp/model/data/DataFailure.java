@@ -79,14 +79,6 @@ public final /* data */ class DataFailure implements Parcelable {
         return this.internalCode == dataFailure.internalCode && Intrinsics.areEqual(this.message, dataFailure.message);
     }
 
-    public final int getInternalCode() {
-        return this.internalCode;
-    }
-
-    public final String getMessage() {
-        return this.message;
-    }
-
     public int hashCode() {
         return this.message.hashCode() + (Integer.hashCode(this.internalCode) * 31);
     }

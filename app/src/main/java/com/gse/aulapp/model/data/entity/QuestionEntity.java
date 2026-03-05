@@ -167,38 +167,6 @@ public final /* data */ class QuestionEntity implements Parcelable {
         return Intrinsics.areEqual(this.questionID, questionEntity.questionID) && Intrinsics.areEqual(this.testID, questionEntity.testID) && Intrinsics.areEqual(this.itemID, questionEntity.itemID) && Intrinsics.areEqual(this.answer, questionEntity.answer) && Intrinsics.areEqual(this.description, questionEntity.description) && Intrinsics.areEqual(this.level, questionEntity.level) && Intrinsics.areEqual(this.approved, questionEntity.approved) && Intrinsics.areEqual(this.replied, questionEntity.replied);
     }
 
-    public final String getAnswer() {
-        return this.answer;
-    }
-
-    public final Boolean getApproved() {
-        return this.approved;
-    }
-
-    public final String getDescription() {
-        return this.description;
-    }
-
-    public final String getItemID() {
-        return this.itemID;
-    }
-
-    public final String getLevel() {
-        return this.level;
-    }
-
-    public final String getQuestionID() {
-        return this.questionID;
-    }
-
-    public final Boolean getReplied() {
-        return this.replied;
-    }
-
-    public final String getTestID() {
-        return this.testID;
-    }
-
     public int hashCode() {
         int d = x5.d(this.description, x5.d(this.answer, x5.d(this.itemID, x5.d(this.testID, this.questionID.hashCode() * 31, 31), 31), 31), 31);
         String str = this.level;

@@ -110,26 +110,6 @@ public final /* data */ class GpsTraceEntity implements Parcelable {
         return Intrinsics.areEqual(this.sessionID, gpsTraceEntity.sessionID) && Double.compare(this.latitude, gpsTraceEntity.latitude) == 0 && Double.compare(this.longitude, gpsTraceEntity.longitude) == 0 && this.date == gpsTraceEntity.date && Double.compare(this.speed, gpsTraceEntity.speed) == 0;
     }
 
-    public final long getDate() {
-        return this.date;
-    }
-
-    public final double getLatitude() {
-        return this.latitude;
-    }
-
-    public final double getLongitude() {
-        return this.longitude;
-    }
-
-    public final String getSessionID() {
-        return this.sessionID;
-    }
-
-    public final double getSpeed() {
-        return this.speed;
-    }
-
     public int hashCode() {
         return Double.hashCode(this.speed) + ((Long.hashCode(this.date) + ((Double.hashCode(this.longitude) + ((Double.hashCode(this.latitude) + (this.sessionID.hashCode() * 31)) * 31)) * 31)) * 31);
     }

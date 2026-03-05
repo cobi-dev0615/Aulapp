@@ -88,18 +88,6 @@ public final /* data */ class RealtimeClassDataDto implements Parcelable {
         return Intrinsics.areEqual(this.gpsCalculateDataDto, realtimeClassDataDto.gpsCalculateDataDto) && Double.compare(this.averageSpeed, realtimeClassDataDto.averageSpeed) == 0 && Double.compare(this.maxSpeed, realtimeClassDataDto.maxSpeed) == 0;
     }
 
-    public final double getAverageSpeed() {
-        return this.averageSpeed;
-    }
-
-    public final GpsCalculateDataDto getGpsCalculateDataDto() {
-        return this.gpsCalculateDataDto;
-    }
-
-    public final double getMaxSpeed() {
-        return this.maxSpeed;
-    }
-
     public int hashCode() {
         return Double.hashCode(this.maxSpeed) + ((Double.hashCode(this.averageSpeed) + (this.gpsCalculateDataDto.hashCode() * 31)) * 31);
     }

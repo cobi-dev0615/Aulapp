@@ -208,56 +208,12 @@ public final /* data */ class SessionRoutesDataResponse implements Parcelable {
         return Intrinsics.areEqual(this.date, sessionRoutesDataResponse.date) && Intrinsics.areEqual(this.start, sessionRoutesDataResponse.start) && Intrinsics.areEqual(this.end, sessionRoutesDataResponse.end) && Intrinsics.areEqual(this.type, sessionRoutesDataResponse.type) && Intrinsics.areEqual(this.apprentice, sessionRoutesDataResponse.apprentice) && Intrinsics.areEqual(this.instructor, sessionRoutesDataResponse.instructor) && Intrinsics.areEqual(this.vehicle, sessionRoutesDataResponse.vehicle) && Intrinsics.areEqual(this.category, sessionRoutesDataResponse.category) && Intrinsics.areEqual(this.classroom, sessionRoutesDataResponse.classroom) && Intrinsics.areEqual(this.cellphoneNumber, sessionRoutesDataResponse.cellphoneNumber) && Intrinsics.areEqual(this.diff, sessionRoutesDataResponse.diff) && Intrinsics.areEqual(this.points, sessionRoutesDataResponse.points) && Intrinsics.areEqual(this.questions, sessionRoutesDataResponse.questions);
     }
 
-    public final String getApprentice() {
-        return this.apprentice;
-    }
-
-    public final String getCategory() {
-        return this.category;
-    }
-
-    public final String getCellphoneNumber() {
-        return this.cellphoneNumber;
-    }
-
-    public final String getClassroom() {
-        return this.classroom;
-    }
-
-    public final String getDate() {
-        return this.date;
-    }
-
-    public final String getDiff() {
-        return this.diff;
-    }
-
-    public final String getEnd() {
-        return this.end;
-    }
-
-    public final String getInstructor() {
-        return this.instructor;
-    }
-
     public final List<SessionRoutePointResponse> getPoints() {
         return this.points;
     }
 
     public final List<SessionRouteQuestionResponse> getQuestions() {
         return this.questions;
-    }
-
-    public final String getStart() {
-        return this.start;
-    }
-
-    public final String getType() {
-        return this.type;
-    }
-
-    public final String getVehicle() {
-        return this.vehicle;
     }
 
     public int hashCode() {

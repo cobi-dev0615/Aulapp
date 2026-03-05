@@ -101,18 +101,6 @@ public final /* data */ class SetFraudInformationRequest implements Parcelable {
         return Intrinsics.areEqual(this.fraudID, setFraudInformationRequest.fraudID) && Intrinsics.areEqual(this.ocrInformation, setFraudInformationRequest.ocrInformation) && Intrinsics.areEqual(this.userID, setFraudInformationRequest.userID);
     }
 
-    public final String getFraudID() {
-        return this.fraudID;
-    }
-
-    public final OcrInformation getOcrInformation() {
-        return this.ocrInformation;
-    }
-
-    public final String getUserID() {
-        return this.userID;
-    }
-
     public int hashCode() {
         return this.userID.hashCode() + ((this.ocrInformation.hashCode() + (this.fraudID.hashCode() * 31)) * 31);
     }

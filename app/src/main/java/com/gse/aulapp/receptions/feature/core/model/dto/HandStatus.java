@@ -81,14 +81,6 @@ public final /* data */ class HandStatus implements Parcelable {
         return this.enroll == handStatus.enroll && this.verify == handStatus.verify;
     }
 
-    public final boolean getEnroll() {
-        return this.enroll;
-    }
-
-    public final boolean getVerify() {
-        return this.verify;
-    }
-
     public int hashCode() {
         return Boolean.hashCode(this.verify) + (Boolean.hashCode(this.enroll) * 31);
     }

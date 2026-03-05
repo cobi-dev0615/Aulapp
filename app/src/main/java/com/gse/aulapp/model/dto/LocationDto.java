@@ -115,26 +115,7 @@ public final /* data */ class LocationDto extends GeneralSessionDto {
         return Intrinsics.areEqual(this.id, locationDto.id) && this.date == locationDto.date && Double.compare(this.latitude, locationDto.latitude) == 0 && Double.compare(this.longitude, locationDto.longitude) == 0 && Double.compare(this.speed, locationDto.speed) == 0;
     }
 
-    public final long getDate() {
-        return this.date;
-    }
-
     @Override // com.gse.aulapp.model.dto.GeneralSessionDto
-    public String getId() {
-        return this.id;
-    }
-
-    public final double getLatitude() {
-        return this.latitude;
-    }
-
-    public final double getLongitude() {
-        return this.longitude;
-    }
-
-    public final double getSpeed() {
-        return this.speed;
-    }
 
     public int hashCode() {
         return Double.hashCode(this.speed) + ((Double.hashCode(this.longitude) + ((Double.hashCode(this.latitude) + ((Long.hashCode(this.date) + (this.id.hashCode() * 31)) * 31)) * 31)) * 31);

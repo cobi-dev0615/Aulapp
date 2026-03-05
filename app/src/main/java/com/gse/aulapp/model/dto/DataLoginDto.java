@@ -297,76 +297,12 @@ public final /* data */ class DataLoginDto implements Parcelable {
         return Intrinsics.areEqual(this.id, dataLoginDto.id) && Intrinsics.areEqual(this.fullName, dataLoginDto.fullName) && Intrinsics.areEqual(this.role, dataLoginDto.role) && Intrinsics.areEqual(this.email, dataLoginDto.email) && Intrinsics.areEqual(this.docNumber, dataLoginDto.docNumber) && Intrinsics.areEqual(this.docType, dataLoginDto.docType) && this.changePass == dataLoginDto.changePass && this.demoUser == dataLoginDto.demoUser && Intrinsics.areEqual(this.courses, dataLoginDto.courses) && Intrinsics.areEqual(this.schedulingCategories, dataLoginDto.schedulingCategories) && Intrinsics.areEqual(this.preferredHand, dataLoginDto.preferredHand) && Intrinsics.areEqual(this.workedHors, dataLoginDto.workedHors) && this.biometricValidationRNEC == dataLoginDto.biometricValidationRNEC && this.usingIdenty == dataLoginDto.usingIdenty && Intrinsics.areEqual(this.phone, dataLoginDto.phone) && Intrinsics.areEqual(this.mobile, dataLoginDto.mobile) && Intrinsics.areEqual(this.center, dataLoginDto.center) && Intrinsics.areEqual(this.biometricException, dataLoginDto.biometricException);
     }
 
-    public final Boolean getBiometricException() {
-        return this.biometricException;
-    }
-
-    public final boolean getBiometricValidationRNEC() {
-        return this.biometricValidationRNEC;
-    }
-
-    public final String getCenter() {
-        return this.center;
-    }
-
-    public final boolean getChangePass() {
-        return this.changePass;
-    }
-
     public final List<CoursesDto> getCourses() {
         return this.courses;
     }
 
-    public final boolean getDemoUser() {
-        return this.demoUser;
-    }
-
-    public final String getDocNumber() {
-        return this.docNumber;
-    }
-
-    public final String getDocType() {
-        return this.docType;
-    }
-
-    public final String getEmail() {
-        return this.email;
-    }
-
-    public final String getFullName() {
-        return this.fullName;
-    }
-
-    public final String getId() {
-        return this.id;
-    }
-
-    public final String getMobile() {
-        return this.mobile;
-    }
-
-    public final String getPhone() {
-        return this.phone;
-    }
-
-    public final String getPreferredHand() {
-        return this.preferredHand;
-    }
-
-    public final String getRole() {
-        return this.role;
-    }
-
     public final List<String> getSchedulingCategories() {
         return this.schedulingCategories;
-    }
-
-    public final boolean getUsingIdenty() {
-        return this.usingIdenty;
-    }
-
-    public final WorkedHorsDto getWorkedHors() {
-        return this.workedHors;
     }
 
     public int hashCode() {

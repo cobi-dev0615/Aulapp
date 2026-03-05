@@ -131,10 +131,6 @@ public abstract class Status {
             return (other instanceof Success) && Intrinsics.areEqual(this.data, ((Success) other).data);
         }
 
-        public final Object getData() {
-            return this.data;
-        }
-
         public int hashCode() {
             return this.data.hashCode();
         }

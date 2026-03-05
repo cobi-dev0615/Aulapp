@@ -86,14 +86,6 @@ public final /* data */ class TimezoneResponse implements Parcelable {
         return Intrinsics.areEqual(this.datetime, timezoneResponse.datetime) && Intrinsics.areEqual(this.timezone, timezoneResponse.timezone);
     }
 
-    public final String getDatetime() {
-        return this.datetime;
-    }
-
-    public final String getTimezone() {
-        return this.timezone;
-    }
-
     public int hashCode() {
         String str = this.datetime;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

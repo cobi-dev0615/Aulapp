@@ -93,18 +93,6 @@ public final /* data */ class RouteSyncRequest implements Parcelable {
         return Intrinsics.areEqual((Object) this.latitude, (Object) routeSyncRequest.latitude) && Intrinsics.areEqual((Object) this.longitude, (Object) routeSyncRequest.longitude) && Intrinsics.areEqual(this.time, routeSyncRequest.time);
     }
 
-    public final Double getLatitude() {
-        return this.latitude;
-    }
-
-    public final Double getLongitude() {
-        return this.longitude;
-    }
-
-    public final String getTime() {
-        return this.time;
-    }
-
     public int hashCode() {
         Double d = this.latitude;
         int hashCode = (d == null ? 0 : d.hashCode()) * 31;

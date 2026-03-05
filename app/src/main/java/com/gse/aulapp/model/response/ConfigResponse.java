@@ -93,18 +93,6 @@ public final /* data */ class ConfigResponse implements Parcelable {
         return Intrinsics.areEqual(this.averagePercentage, configResponse.averagePercentage) && Intrinsics.areEqual(this.lowPercentage, configResponse.lowPercentage) && Intrinsics.areEqual(this.approvedPercentage, configResponse.approvedPercentage);
     }
 
-    public final Integer getApprovedPercentage() {
-        return this.approvedPercentage;
-    }
-
-    public final Integer getAveragePercentage() {
-        return this.averagePercentage;
-    }
-
-    public final Integer getLowPercentage() {
-        return this.lowPercentage;
-    }
-
     public int hashCode() {
         Integer num = this.averagePercentage;
         int hashCode = (num == null ? 0 : num.hashCode()) * 31;

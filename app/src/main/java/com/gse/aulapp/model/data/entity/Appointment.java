@@ -99,16 +99,8 @@ public final /* data */ class Appointment implements Parcelable {
         return this.id == appointment.id && Intrinsics.areEqual(this.appointment, appointment.appointment) && Intrinsics.areEqual(this.appointmentsId, appointment.appointmentsId);
     }
 
-    public final ExamsInfo getAppointment() {
-        return this.appointment;
-    }
-
     public final String[] getAppointmentsId() {
         return this.appointmentsId;
-    }
-
-    public final long getId() {
-        return this.id;
     }
 
     public int hashCode() {

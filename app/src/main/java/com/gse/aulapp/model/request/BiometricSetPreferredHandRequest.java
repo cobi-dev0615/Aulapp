@@ -83,14 +83,6 @@ public final /* data */ class BiometricSetPreferredHandRequest implements Parcel
         return Intrinsics.areEqual(this.username, biometricSetPreferredHandRequest.username) && Intrinsics.areEqual(this.hand, biometricSetPreferredHandRequest.hand);
     }
 
-    public final String getHand() {
-        return this.hand;
-    }
-
-    public final String getUsername() {
-        return this.username;
-    }
-
     public int hashCode() {
         String str = this.username;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

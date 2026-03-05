@@ -119,22 +119,6 @@ public final /* data */ class BiometrixResult implements Parcelable {
         return this.status == biometrixResult.status && this.method == biometrixResult.method && Intrinsics.areEqual(this.code, biometrixResult.code) && Intrinsics.areEqual(this.message, biometrixResult.message) && this.isActiveException == biometrixResult.isActiveException;
     }
 
-    public final String getCode() {
-        return this.code;
-    }
-
-    public final String getMessage() {
-        return this.message;
-    }
-
-    public final EnumMethodBiometrix getMethod() {
-        return this.method;
-    }
-
-    public final EnumBiometrixStatus getStatus() {
-        return this.status;
-    }
-
     public int hashCode() {
         return Boolean.hashCode(this.isActiveException) + x5.d(this.message, x5.d(this.code, (this.method.hashCode() + (this.status.hashCode() * 31)) * 31, 31), 31);
     }

@@ -106,22 +106,6 @@ public final /* data */ class PracticesDto implements Parcelable {
         return this.enrollApprentice == practicesDto.enrollApprentice && this.enrollInstructor == practicesDto.enrollInstructor && this.verifyCar == practicesDto.verifyCar && this.complete == practicesDto.complete;
     }
 
-    public final boolean getComplete() {
-        return this.complete;
-    }
-
-    public final boolean getEnrollApprentice() {
-        return this.enrollApprentice;
-    }
-
-    public final boolean getEnrollInstructor() {
-        return this.enrollInstructor;
-    }
-
-    public final boolean getVerifyCar() {
-        return this.verifyCar;
-    }
-
     public int hashCode() {
         return Boolean.hashCode(this.complete) + a.g(this.verifyCar, a.g(this.enrollInstructor, Boolean.hashCode(this.enrollApprentice) * 31, 31), 31);
     }

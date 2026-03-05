@@ -220,65 +220,13 @@ public final /* data */ class ChangeCenterResponse extends GeneralResponseDecryp
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.status, result.status) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.token, result.token) && Intrinsics.areEqual(this.centerID, result.centerID) && this.fullEnrollment == result.fullEnrollment && Intrinsics.areEqual(this.date, result.date) && Intrinsics.areEqual(this.userEmail, result.userEmail) && Intrinsics.areEqual(this.fullName, result.fullName) && Intrinsics.areEqual(this.biometrixInformationID, result.biometrixInformationID) && Intrinsics.areEqual(this.fraudInformationID, result.fraudInformationID) && Intrinsics.areEqual(this.fourFingersIdentyID, result.fourFingersIdentyID) && Intrinsics.areEqual(this.data, result.data);
         }
 
-        public final String getBiometrixInformationID() {
-            return this.biometrixInformationID;
-        }
-
-        public final String getCenterID() {
-            return this.centerID;
-        }
+        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
-
-        public final DataCenterDto getData() {
-            return this.data;
-        }
-
-        public final String getDate() {
-            return this.date;
-        }
-
-        public final FourFingersIdenty getFourFingersIdentyID() {
-            return this.fourFingersIdentyID;
-        }
-
-        public final String getFraudInformationID() {
-            return this.fraudInformationID;
-        }
-
-        public final boolean getFullEnrollment() {
-            return this.fullEnrollment;
-        }
-
-        public final String getFullName() {
-            return this.fullName;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Integer getStatus() {
-            return this.status;
-        }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
-
-        public final String getToken() {
-            return this.token;
-        }
-
-        public final String getUserEmail() {
-            return this.userEmail;
-        }
 
         public int hashCode() {
             Boolean bool = this.success;
@@ -506,27 +454,10 @@ public final /* data */ class ChangeCenterResponse extends GeneralResponseDecryp
     }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getGeneralMessage() {
-        return this.generalMessage;
-    }
-
-    public final Result getResult() {
-        return this.result;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public Integer getStatusCode() {
-        return this.statusCode;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getStatusMessage() {
-        return this.statusMessage;
-    }
-
-    public final String getUrl() {
-        return this.url;
-    }
 
     public int hashCode() {
         Integer num = this.statusCode;

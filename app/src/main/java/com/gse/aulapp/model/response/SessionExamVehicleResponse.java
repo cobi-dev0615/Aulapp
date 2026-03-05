@@ -128,30 +128,6 @@ public final /* data */ class SessionExamVehicleResponse implements Parcelable {
         return Intrinsics.areEqual(this.Id, sessionExamVehicleResponse.Id) && Intrinsics.areEqual(this.brand, sessionExamVehicleResponse.brand) && Intrinsics.areEqual(this.line, sessionExamVehicleResponse.line) && Intrinsics.areEqual(this.plates, sessionExamVehicleResponse.plates) && Intrinsics.areEqual(this.model, sessionExamVehicleResponse.model) && Intrinsics.areEqual(this.tagnfc, sessionExamVehicleResponse.tagnfc);
     }
 
-    public final String getBrand() {
-        return this.brand;
-    }
-
-    public final String getId() {
-        return this.Id;
-    }
-
-    public final String getLine() {
-        return this.line;
-    }
-
-    public final Integer getModel() {
-        return this.model;
-    }
-
-    public final String getPlates() {
-        return this.plates;
-    }
-
-    public final TagNfcResponse getTagnfc() {
-        return this.tagnfc;
-    }
-
     public int hashCode() {
         String str = this.Id;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

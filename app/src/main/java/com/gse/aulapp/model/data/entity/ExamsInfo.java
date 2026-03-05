@@ -169,30 +169,6 @@ public final /* data */ class ExamsInfo implements Parcelable {
         return this.apprentices;
     }
 
-    public final Computer getComputerID() {
-        return this.computerID;
-    }
-
-    public final Date getDate() {
-        return this.date;
-    }
-
-    public final String getEndTime() {
-        return this.endTime;
-    }
-
-    public final String getInstructorID() {
-        return this.instructorID;
-    }
-
-    public final String getStartTime() {
-        return this.startTime;
-    }
-
-    public final String get_id() {
-        return this._id;
-    }
-
     public int hashCode() {
         int d = x5.d(this.endTime, x5.d(this.startTime, x5.d(this.instructorID, this._id.hashCode() * 31, 31), 31), 31);
         Date date = this.date;

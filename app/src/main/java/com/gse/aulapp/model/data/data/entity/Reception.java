@@ -88,14 +88,6 @@ public final /* data */ class Reception implements Parcelable {
         return Intrinsics.areEqual(this.id, reception.id) && Intrinsics.areEqual(this.name, reception.name);
     }
 
-    public final String getId() {
-        return this.id;
-    }
-
-    public final String getName() {
-        return this.name;
-    }
-
     public int hashCode() {
         int hashCode = this.id.hashCode() * 31;
         String str = this.name;

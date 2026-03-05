@@ -136,22 +136,6 @@ public final /* data */ class HoursScheduledMonthInformationResponse implements 
         return Intrinsics.areEqual(this.centerID, hoursScheduledMonthInformationResponse.centerID) && Intrinsics.areEqual(this.centerName, hoursScheduledMonthInformationResponse.centerName) && Intrinsics.areEqual(this.centerAddress, hoursScheduledMonthInformationResponse.centerAddress) && Intrinsics.areEqual(this.centerPhoneNumber, hoursScheduledMonthInformationResponse.centerPhoneNumber) && Intrinsics.areEqual(this.collectionType, hoursScheduledMonthInformationResponse.collectionType);
     }
 
-    public final String getCenterAddress() {
-        return this.centerAddress;
-    }
-
-    public final String getCenterID() {
-        return this.centerID;
-    }
-
-    public final String getCenterName() {
-        return this.centerName;
-    }
-
-    public final String getCenterPhoneNumber() {
-        return this.centerPhoneNumber;
-    }
-
     public final List<HoursScheduledCollectionTypeResponse> getCollectionType() {
         return this.collectionType;
     }

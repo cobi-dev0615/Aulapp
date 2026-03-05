@@ -353,77 +353,17 @@ public final /* data */ class LoginResponse extends GeneralResponseDecrypt {
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.status, result.status) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.token, result.token) && Intrinsics.areEqual(this.useLiveness, result.useLiveness) && Intrinsics.areEqual(this.data, result.data) && Intrinsics.areEqual(this.fullEnrollment, result.fullEnrollment) && Intrinsics.areEqual(this.userEmail, result.userEmail) && Intrinsics.areEqual(this.documentNumber, result.documentNumber) && Intrinsics.areEqual(this.userID, result.userID) && Intrinsics.areEqual(this.fraudInformationID, result.fraudInformationID) && Intrinsics.areEqual(this.biometrixInformationID, result.biometrixInformationID) && Intrinsics.areEqual(this.fourFingersIdentyID, result.fourFingersIdentyID) && Intrinsics.areEqual(this.centerList, result.centerList) && Intrinsics.areEqual(this.centerID, result.centerID) && Intrinsics.areEqual(this.date, result.date);
         }
 
-        public final String getBiometrixInformationID() {
-            return this.biometrixInformationID;
-        }
-
-        public final String getCenterID() {
-            return this.centerID;
-        }
-
         public final List<CenterDto> getCenterList() {
             return this.centerList;
         }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
-
-        public final DataLoginDto getData() {
-            return this.data;
-        }
-
-        public final String getDate() {
-            return this.date;
-        }
-
-        public final String getDocumentNumber() {
-            return this.documentNumber;
-        }
-
-        public final FourFingersIdenty getFourFingersIdentyID() {
-            return this.fourFingersIdentyID;
-        }
-
-        public final String getFraudInformationID() {
-            return this.fraudInformationID;
-        }
-
-        public final Boolean getFullEnrollment() {
-            return this.fullEnrollment;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Integer getStatus() {
-            return this.status;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
-
-        public final String getToken() {
-            return this.token;
-        }
-
-        public final Boolean getUseLiveness() {
-            return this.useLiveness;
-        }
-
-        public final String getUserEmail() {
-            return this.userEmail;
-        }
-
-        public final String getUserID() {
-            return this.userID;
-        }
 
         public int hashCode() {
             Boolean bool = this.success;
@@ -703,27 +643,10 @@ public final /* data */ class LoginResponse extends GeneralResponseDecrypt {
     }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getGeneralMessage() {
-        return this.generalMessage;
-    }
-
-    public final Result getResult() {
-        return this.result;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public Integer getStatusCode() {
-        return this.statusCode;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getStatusMessage() {
-        return this.statusMessage;
-    }
-
-    public final String getUrl() {
-        return this.url;
-    }
 
     public int hashCode() {
         Integer num = this.statusCode;

@@ -129,30 +129,6 @@ public final /* data */ class HandEntity implements Parcelable {
         return this.id == handEntity.id && Intrinsics.areEqual(this.type, handEntity.type) && Intrinsics.areEqual(this.indexFinger, handEntity.indexFinger) && Intrinsics.areEqual(this.middleFinger, handEntity.middleFinger) && Intrinsics.areEqual(this.ringFinger, handEntity.ringFinger) && Intrinsics.areEqual(this.littleFinger, handEntity.littleFinger);
     }
 
-    public final int getId() {
-        return this.id;
-    }
-
-    public final String getIndexFinger() {
-        return this.indexFinger;
-    }
-
-    public final String getLittleFinger() {
-        return this.littleFinger;
-    }
-
-    public final String getMiddleFinger() {
-        return this.middleFinger;
-    }
-
-    public final String getRingFinger() {
-        return this.ringFinger;
-    }
-
-    public final String getType() {
-        return this.type;
-    }
-
     public int hashCode() {
         return this.littleFinger.hashCode() + x5.d(this.ringFinger, x5.d(this.middleFinger, x5.d(this.indexFinger, x5.d(this.type, Integer.hashCode(this.id) * 31, 31), 31), 31), 31);
     }

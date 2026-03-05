@@ -87,14 +87,6 @@ public final /* data */ class Computer implements Parcelable {
         return Intrinsics.areEqual(this._id, computer._id) && Intrinsics.areEqual(this.nameItem, computer.nameItem);
     }
 
-    public final String getNameItem() {
-        return this.nameItem;
-    }
-
-    public final String get_id() {
-        return this._id;
-    }
-
     public int hashCode() {
         String str = this._id;
         return this.nameItem.hashCode() + ((str == null ? 0 : str.hashCode()) * 31);

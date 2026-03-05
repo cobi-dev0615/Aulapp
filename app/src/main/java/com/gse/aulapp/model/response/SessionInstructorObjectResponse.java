@@ -104,10 +104,6 @@ public final /* data */ class SessionInstructorObjectResponse implements Parcela
         return Intrinsics.areEqual(this.date, sessionInstructorObjectResponse.date) && Intrinsics.areEqual(this.sessions, sessionInstructorObjectResponse.sessions);
     }
 
-    public final String getDate() {
-        return this.date;
-    }
-
     public final List<SessionResponse> getSessions() {
         return this.sessions;
     }

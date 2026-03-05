@@ -235,9 +235,6 @@ public final /* data */ class HoursScheduledResponse extends GeneralResponseDecr
         }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
 
         public final List<HoursScheduledMonthInformationResponse> getDayInformation() {
             return this.dayInformation;
@@ -247,26 +244,11 @@ public final /* data */ class HoursScheduledResponse extends GeneralResponseDecr
             return this.hoursDayByCEA;
         }
 
-        public final Integer getHoursMonth() {
-            return this.hoursMonth;
-        }
-
-        public final Integer getInstructorDay() {
-            return this.instructorDay;
-        }
-
-        public final Integer getInstructorMonth() {
-            return this.instructorMonth;
-        }
-
         public final List<HoursScheduledMonthInformationResponse> getMonthInformation() {
             return this.monthInformation;
         }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
 
         public int hashCode() {
             String str = this.code;
@@ -464,27 +446,10 @@ public final /* data */ class HoursScheduledResponse extends GeneralResponseDecr
     }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getGeneralMessage() {
-        return this.generalMessage;
-    }
-
-    public final Result getResult() {
-        return this.result;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public Integer getStatusCode() {
-        return this.statusCode;
-    }
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getStatusMessage() {
-        return this.statusMessage;
-    }
-
-    public final String getUrl() {
-        return this.url;
-    }
 
     public int hashCode() {
         Integer num = this.statusCode;

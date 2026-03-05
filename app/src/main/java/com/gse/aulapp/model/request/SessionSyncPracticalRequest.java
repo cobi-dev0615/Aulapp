@@ -68,10 +68,6 @@ public final /* data */ class SessionSyncPracticalRequest implements Parcelable 
         return (other instanceof SessionSyncPracticalRequest) && Intrinsics.areEqual(this.dataID, ((SessionSyncPracticalRequest) other).dataID);
     }
 
-    public final String getDataID() {
-        return this.dataID;
-    }
-
     public int hashCode() {
         String str = this.dataID;
         if (str == null) {

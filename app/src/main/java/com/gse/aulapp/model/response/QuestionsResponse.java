@@ -129,26 +129,6 @@ public final /* data */ class QuestionsResponse implements Parcelable {
         return Intrinsics.areEqual(this.level, questionsResponse.level) && Intrinsics.areEqual(this.answer, questionsResponse.answer) && Intrinsics.areEqual(this.description, questionsResponse.description) && Intrinsics.areEqual(this.itemID, questionsResponse.itemID) && Intrinsics.areEqual(this.Id, questionsResponse.Id);
     }
 
-    public final String getAnswer() {
-        return this.answer;
-    }
-
-    public final String getDescription() {
-        return this.description;
-    }
-
-    public final String getId() {
-        return this.Id;
-    }
-
-    public final String getItemID() {
-        return this.itemID;
-    }
-
-    public final String getLevel() {
-        return this.level;
-    }
-
     public int hashCode() {
         String str = this.level;
         return this.Id.hashCode() + x5.d(this.itemID, x5.d(this.description, x5.d(this.answer, (str == null ? 0 : str.hashCode()) * 31, 31), 31), 31);

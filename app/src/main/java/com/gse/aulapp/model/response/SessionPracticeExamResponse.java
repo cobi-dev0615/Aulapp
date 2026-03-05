@@ -163,27 +163,10 @@ public final class SessionPracticeExamResponse extends GeneralResponseDecrypt {
         }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
-
-        public final String getDataID() {
-            return this.dataID;
-        }
-
-        public final String getExamResult() {
-            return this.examResult;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
 
         public int hashCode() {
             Boolean bool = this.success;

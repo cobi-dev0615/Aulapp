@@ -68,10 +68,6 @@ public final /* data */ class PasswordRecoveryRequest implements Parcelable {
         return (other instanceof PasswordRecoveryRequest) && Intrinsics.areEqual(this.username, ((PasswordRecoveryRequest) other).username);
     }
 
-    public final String getUsername() {
-        return this.username;
-    }
-
     public int hashCode() {
         String str = this.username;
         if (str == null) {

@@ -196,46 +196,6 @@ public final /* data */ class ApprenticeResponse implements Parcelable {
         return Intrinsics.areEqual(this.id, apprenticeResponse.id) && Intrinsics.areEqual(this.fullName, apprenticeResponse.fullName) && Intrinsics.areEqual(this.docNumber, apprenticeResponse.docNumber) && Intrinsics.areEqual(this.docType, apprenticeResponse.docType) && Intrinsics.areEqual(this.email, apprenticeResponse.email) && Intrinsics.areEqual(this.role, apprenticeResponse.role) && Intrinsics.areEqual(this.preferredHand, apprenticeResponse.preferredHand) && Intrinsics.areEqual(this.biometricValidationRNEC, apprenticeResponse.biometricValidationRNEC) && Intrinsics.areEqual(this.usingIdenty, apprenticeResponse.usingIdenty) && Intrinsics.areEqual(this.biometrics, apprenticeResponse.biometrics);
     }
 
-    public final Boolean getBiometricValidationRNEC() {
-        return this.biometricValidationRNEC;
-    }
-
-    public final BiometricsResponse getBiometrics() {
-        return this.biometrics;
-    }
-
-    public final String getDocNumber() {
-        return this.docNumber;
-    }
-
-    public final String getDocType() {
-        return this.docType;
-    }
-
-    public final String getEmail() {
-        return this.email;
-    }
-
-    public final String getFullName() {
-        return this.fullName;
-    }
-
-    public final String getId() {
-        return this.id;
-    }
-
-    public final String getPreferredHand() {
-        return this.preferredHand;
-    }
-
-    public final String getRole() {
-        return this.role;
-    }
-
-    public final Boolean getUsingIdenty() {
-        return this.usingIdenty;
-    }
-
     public int hashCode() {
         String str = this.id;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

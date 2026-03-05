@@ -83,14 +83,6 @@ public final /* data */ class WorkedHorsDto implements Parcelable {
         return Intrinsics.areEqual(this.hoursDay, workedHorsDto.hoursDay) && Intrinsics.areEqual(this.hoursMonth, workedHorsDto.hoursMonth);
     }
 
-    public final Integer getHoursDay() {
-        return this.hoursDay;
-    }
-
-    public final Integer getHoursMonth() {
-        return this.hoursMonth;
-    }
-
     public int hashCode() {
         Integer num = this.hoursDay;
         int hashCode = (num == null ? 0 : num.hashCode()) * 31;

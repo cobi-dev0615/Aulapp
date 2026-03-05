@@ -167,30 +167,6 @@ public final /* data */ class Exams implements Parcelable {
         return this.id == exams.id && Intrinsics.areEqual(this.idUser, exams.idUser) && this.completed == exams.completed && this.started == exams.started && this.toStart == exams.toStart && this.toClose == exams.toClose;
     }
 
-    public final boolean getCompleted() {
-        return this.completed;
-    }
-
-    public final long getId() {
-        return this.id;
-    }
-
-    public final String getIdUser() {
-        return this.idUser;
-    }
-
-    public final boolean getStarted() {
-        return this.started;
-    }
-
-    public final boolean getToClose() {
-        return this.toClose;
-    }
-
-    public final boolean getToStart() {
-        return this.toStart;
-    }
-
     public int hashCode() {
         return Boolean.hashCode(this.toClose) + a.g(this.toStart, a.g(this.started, a.g(this.completed, x5.d(this.idUser, Long.hashCode(this.id) * 31, 31), 31), 31), 31);
     }

@@ -110,20 +110,8 @@ public final /* data */ class CoursesDto implements Parcelable {
         return Intrinsics.areEqual(this.moduleID, coursesDto.moduleID) && Intrinsics.areEqual(this.id, coursesDto.id) && Intrinsics.areEqual(this.name, coursesDto.name) && Intrinsics.areEqual(this.duration, coursesDto.duration);
     }
 
-    public final Integer getDuration() {
-        return this.duration;
-    }
-
-    public final String getId() {
-        return this.id;
-    }
-
     public final String[] getModuleID() {
         return this.moduleID;
-    }
-
-    public final String getName() {
-        return this.name;
     }
 
     public int hashCode() {

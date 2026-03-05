@@ -83,14 +83,6 @@ public final /* data */ class LoginRequest implements Parcelable {
         return Intrinsics.areEqual(this.username, loginRequest.username) && Intrinsics.areEqual(this.password, loginRequest.password);
     }
 
-    public final String getPassword() {
-        return this.password;
-    }
-
-    public final String getUsername() {
-        return this.username;
-    }
-
     public int hashCode() {
         String str = this.username;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;
