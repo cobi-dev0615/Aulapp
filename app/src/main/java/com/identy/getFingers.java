@@ -1119,7 +1119,7 @@ final class getFingers extends e1 {
         int i = pfkrolGetQuality + 101;
         resetAttempt = i % Uuid.SIZE_BITS;
         int i2 = i % 2;
-        super.PngjBadCrcException(bArr, booleanValue, list, list2, floatValue, l);
+        getfingers.PngjBadCrcException(bArr, booleanValue, list, list2, floatValue, l);
         if (i2 == 0) {
             return null;
         }
@@ -1129,7 +1129,7 @@ final class getFingers extends e1 {
 
     private static /* synthetic */ Object values(Object[] objArr) {
         getFingers getfingers = (getFingers) objArr[0];
-        super.a();
+        getfingers.a();
         int i = getfingers.a.equals(Hand.LEFT) ? R.string.id_searching_left_thumb : R.string.id_searching_right_thumb;
         com.identy.d.PngjBadSignature pngjBadSignature = getfingers.Attempt;
         if (pngjBadSignature != null) {
