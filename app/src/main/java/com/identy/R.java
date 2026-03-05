@@ -1,0 +1,865 @@
+package com.identy;
+
+/* loaded from: classes2.dex */
+public final class R {
+
+    public static final class anim {
+        public static final int identy_left_to_rights_slide = 0x7f01001f;
+        public static final int identy_right_to_left_slide = 0x7f010020;
+
+        private anim() {
+        }
+    }
+
+    public static final class array {
+        public static final int flash_entries = 0x7f030004;
+        public static final int flash_icons = 0x7f030005;
+        public static final int flash_values = 0x7f030006;
+        public static final int focus_mode_entries = 0x7f030007;
+        public static final int focus_mode_icons = 0x7f030008;
+        public static final int focus_mode_values = 0x7f030009;
+        public static final int preference_angle_highlight_color_entries = 0x7f03000a;
+        public static final int preference_angle_highlight_color_values = 0x7f03000b;
+        public static final int preference_burst_interval_entries = 0x7f03000c;
+        public static final int preference_burst_interval_values = 0x7f03000d;
+        public static final int preference_burst_mode_entries = 0x7f03000e;
+        public static final int preference_burst_mode_values = 0x7f03000f;
+        public static final int preference_crop_guide_entries = 0x7f030010;
+        public static final int preference_crop_guide_values = 0x7f030011;
+        public static final int preference_expo_bracketing_n_images_entries = 0x7f030012;
+        public static final int preference_expo_bracketing_n_images_values = 0x7f030013;
+        public static final int preference_expo_bracketing_stops_entries = 0x7f030014;
+        public static final int preference_expo_bracketing_stops_values = 0x7f030015;
+        public static final int preference_front_camera_mirror_entries = 0x7f030016;
+        public static final int preference_front_camera_mirror_values = 0x7f030017;
+        public static final int preference_grid_entries = 0x7f030018;
+        public static final int preference_grid_values = 0x7f030019;
+        public static final int preference_immersive_mode_entries = 0x7f03001a;
+        public static final int preference_immersive_mode_values = 0x7f03001b;
+        public static final int preference_lock_orientation_entries = 0x7f03001c;
+        public static final int preference_lock_orientation_values = 0x7f03001d;
+        public static final int preference_preview_size_entries = 0x7f03001e;
+        public static final int preference_preview_size_values = 0x7f03001f;
+        public static final int preference_raw_entries = 0x7f030020;
+        public static final int preference_raw_values = 0x7f030021;
+        public static final int preference_rotate_preview_entries = 0x7f030022;
+        public static final int preference_rotate_preview_values = 0x7f030023;
+        public static final int preference_save_zulu_time_entries = 0x7f030024;
+        public static final int preference_save_zulu_time_values = 0x7f030025;
+        public static final int preference_stamp_dateformat_entries = 0x7f030026;
+        public static final int preference_stamp_dateformat_values = 0x7f030027;
+        public static final int preference_stamp_entries = 0x7f030028;
+        public static final int preference_stamp_fontsize_entries = 0x7f030029;
+        public static final int preference_stamp_fontsize_values = 0x7f03002a;
+        public static final int preference_stamp_gpsformat_entries = 0x7f03002b;
+        public static final int preference_stamp_gpsformat_values = 0x7f03002c;
+        public static final int preference_stamp_style_entries = 0x7f03002d;
+        public static final int preference_stamp_style_values = 0x7f03002e;
+        public static final int preference_stamp_timeformat_entries = 0x7f03002f;
+        public static final int preference_stamp_timeformat_values = 0x7f030030;
+        public static final int preference_stamp_values = 0x7f030031;
+        public static final int preference_timer_entries = 0x7f030032;
+        public static final int preference_timer_values = 0x7f030033;
+        public static final int preference_touch_capture_entries = 0x7f030034;
+        public static final int preference_touch_capture_values = 0x7f030035;
+        public static final int preference_ui_placement_entries = 0x7f030036;
+        public static final int preference_ui_placement_values = 0x7f030037;
+        public static final int preference_video_bitrate_entries = 0x7f030038;
+        public static final int preference_video_bitrate_values = 0x7f030039;
+        public static final int preference_volume_keys_entries = 0x7f03003a;
+        public static final int preference_volume_keys_values = 0x7f03003b;
+
+        private array() {
+        }
+    }
+
+    public static final class bool {
+        public static final int isTablet = 0x7f050005;
+
+        private bool() {
+        }
+    }
+
+    public static final class color {
+        public static final int boxes = 0x7f060028;
+        public static final int boxes_transparent = 0x7f060029;
+        public static final int colorA1 = 0x7f06003a;
+        public static final int colorA2 = 0x7f06003b;
+        public static final int colorA3 = 0x7f06003c;
+        public static final int colorAccent = 0x7f06003d;
+        public static final int colorError = 0x7f060040;
+        public static final int colorPrimary = 0x7f060041;
+        public static final int colorPrimaryDark = 0x7f060042;
+        public static final int colorPrimarytransparent = 0x7f060043;
+        public static final int colorSecondary = 0x7f060045;
+        public static final int id_button_center = 0x7f0600a4;
+        public static final int id_button_end = 0x7f0600a5;
+        public static final int id_button_start = 0x7f0600a6;
+        public static final int id_change_hand_text_color = 0x7f0600a7;
+        public static final int id_error = 0x7f0600a9;
+        public static final int id_fin_boxes = 0x7f0600c5;
+        public static final int id_location_error_bg = 0x7f0600c8;
+        public static final int id_result_center = 0x7f0600cb;
+        public static final int id_result_end = 0x7f0600cc;
+        public static final int id_result_start = 0x7f0600cd;
+        public static final int id_retake = 0x7f0600ce;
+        public static final int id_scanning_bar = 0x7f0600cf;
+        public static final int id_success = 0x7f0600d0;
+        public static final int identy_fin_alert_bg = 0x7f0600d8;
+        public static final int identy_fin_alert_button_color = 0x7f0600d9;
+        public static final int identy_fin_alert_button_text_color = 0x7f0600da;
+        public static final int identy_fin_alert_text_color = 0x7f0600db;
+
+        private color() {
+        }
+    }
+
+    public static final class dimen {
+        public static final int fab_margin = 0x7f0700b3;
+        public static final int id_h1 = 0x7f0700c5;
+        public static final int id_h2 = 0x7f0700c6;
+        public static final int id_h3 = 0x7f0700c7;
+        public static final int id_h4 = 0x7f0700c8;
+        public static final int id_h5 = 0x7f0700c9;
+        public static final int id_h6 = 0x7f0700ca;
+        public static final int id_img_qc_messages = 0x7f0700cb;
+
+        private dimen() {
+        }
+    }
+
+    public static final class drawable {
+        public static final int border = 0x7f08007f;
+        public static final int ff_animation = 0x7f0800b5;
+        public static final int icon = 0x7f080136;
+        public static final int id_bad_quality_finger = 0x7f080138;
+        public static final int id_change_hand = 0x7f08013b;
+        public static final int id_fin_green_tick_front = 0x7f08013d;
+        public static final int id_fin_inline_msg_rounded_corner = 0x7f08013e;
+        public static final int id_left_thumb_animation = 0x7f080141;
+        public static final int id_right_ff_animation = 0x7f080147;
+        public static final int id_right_thumb_animation = 0x7f080148;
+        public static final int id_rol_left_capture_first_side = 0x7f080149;
+        public static final int id_rol_left_capture_second_side = 0x7f08014a;
+        public static final int id_rol_left_capture_third_side = 0x7f08014b;
+        public static final int id_rol_left_finger = 0x7f08014c;
+        public static final int id_rol_right_capture_first_side = 0x7f08014d;
+        public static final int id_rol_right_finger = 0x7f08014e;
+        public static final int id_rol_thumb = 0x7f08014f;
+        public static final int id_rol_thumb_capture_first_side = 0x7f080150;
+        public static final int id_rol_thumb_capture_second_side = 0x7f080151;
+        public static final int id_rol_thumb_capture_third_side = 0x7f080152;
+        public static final int id_spoof_finger = 0x7f080153;
+        public static final int id_two_thumb_animation = 0x7f080154;
+        public static final int identy_button = 0x7f080155;
+        public static final int identy_cam = 0x7f080156;
+        public static final int identy_close = 0x7f080157;
+        public static final int identy_fin_back = 0x7f08015e;
+        public static final int identy_fin_rounded_corner = 0x7f08015f;
+        public static final int identy_guide = 0x7f080160;
+        public static final int identy_location_error_rounded_corner = 0x7f080161;
+        public static final int identy_msg = 0x7f080162;
+        public static final int identy_pop_up_dialog = 0x7f080163;
+        public static final int identy_single_finger_guide = 0x7f080164;
+        public static final int identy_thumb_guide = 0x7f080165;
+        public static final int identy_tick = 0x7f080166;
+        public static final int identy_tick_big = 0x7f080167;
+        public static final int identy_two_finger_guide = 0x7f080168;
+        public static final int identy_verify_retake = 0x7f080169;
+        public static final int identy_verify_unsuccessful = 0x7f08016a;
+        public static final int identy_vertical_single_finger_guide = 0x7f08016b;
+        public static final int intro_bg = 0x7f08016d;
+        public static final int left_4f_small_icon = 0x7f08016e;
+        public static final int right_4f_small_icon = 0x7f0801bb;
+        public static final int ro_all = 0x7f0801bc;
+        public static final int ro_arrow_bottom = 0x7f0801bd;
+        public static final int ro_arrow_right = 0x7f0801be;
+        public static final int ro_center = 0x7f0801bf;
+        public static final int ro_left_center = 0x7f0801c0;
+        public static final int rol_noside = 0x7f0801c1;
+        public static final int splash_logo = 0x7f0801c8;
+        public static final int two_thumb_small_icon = 0x7f0801ce;
+        public static final int twothumb_inline_guide = 0x7f0801cf;
+        public static final int user = 0x7f0801d0;
+
+        private drawable() {
+        }
+    }
+
+    public static final class font {
+        public static final int montserrat_regular = 0x7f090005;
+
+        private font() {
+        }
+    }
+
+    public static final class id {
+        public static final int Ok = 0x7f0a0007;
+        public static final int capture_alert_ui = 0x7f0a00a6;
+        public static final int capture_inline_ui = 0x7f0a00a7;
+        public static final int change_hand = 0x7f0a00b7;
+        public static final int closePopupBtn = 0x7f0a00d5;
+        public static final int close_alert = 0x7f0a00d6;
+        public static final int close_sep = 0x7f0a00d8;
+        public static final int container = 0x7f0a00eb;
+        public static final int enroll_inline_ui = 0x7f0a0155;
+        public static final int eula_web = 0x7f0a0159;
+        public static final int finger = 0x7f0a016c;
+        public static final int full_image = 0x7f0a0184;
+        public static final int id_back_button = 0x7f0a01ae;
+        public static final int id_back_left = 0x7f0a01af;
+        public static final int id_back_right = 0x7f0a01b0;
+        public static final int id_change_hand_button = 0x7f0a01b2;
+        public static final int id_fin_capture_next = 0x7f0a01b3;
+        public static final int id_fin_capture_success = 0x7f0a01b4;
+        public static final int id_fin_enroll_next = 0x7f0a01b5;
+        public static final int id_fin_enroll_success = 0x7f0a01b6;
+        public static final int id_front_success = 0x7f0a01b7;
+        public static final int id_header_title = 0x7f0a01b8;
+        public static final int identy_alert_message = 0x7f0a01bb;
+        public static final int identy_sed_img = 0x7f0a01bd;
+        public static final int identy_sed_message = 0x7f0a01be;
+        public static final int image = 0x7f0a01c2;
+        public static final int index_finger = 0x7f0a01ff;
+        public static final int index_finger_nfig_score = 0x7f0a0200;
+        public static final int index_finger_score = 0x7f0a0201;
+        public static final int index_layout = 0x7f0a0202;
+        public static final int info_layout = 0x7f0a0204;
+        public static final int info_layout_rol = 0x7f0a0205;
+        public static final int info_text = 0x7f0a0206;
+        public static final int inline_guide = 0x7f0a0207;
+        public static final int intro_gif = 0x7f0a0209;
+        public static final int intro_no_repeat = 0x7f0a020a;
+        public static final int intro_skip = 0x7f0a020b;
+        public static final int ivStep1Animation = 0x7f0a0212;
+        public static final int ivStep2Animation = 0x7f0a0213;
+        public static final int ivStep3Animation = 0x7f0a0214;
+        public static final int left_hand_icon = 0x7f0a023d;
+        public static final int left_index_finger = 0x7f0a023e;
+        public static final int left_index_finger_score = 0x7f0a023f;
+        public static final int left_index_layout = 0x7f0a0240;
+        public static final int left_index_nfig_score = 0x7f0a0241;
+        public static final int left_thumb_finger = 0x7f0a0242;
+        public static final int left_thumb_finger_score = 0x7f0a0243;
+        public static final int left_thumb_layout = 0x7f0a0244;
+        public static final int left_thumb_nfig_score = 0x7f0a0245;
+        public static final int little_finger = 0x7f0a0255;
+        public static final int little_finger_nfig_score = 0x7f0a0256;
+        public static final int little_finger_score = 0x7f0a0257;
+        public static final int little_layout = 0x7f0a0258;
+        public static final int location_error_layout = 0x7f0a0261;
+        public static final int middle_finger = 0x7f0a0284;
+        public static final int middle_finger_nfig_score = 0x7f0a0285;
+        public static final int middle_finger_score = 0x7f0a0286;
+        public static final int middle_info_image = 0x7f0a0287;
+        public static final int middle_info_text = 0x7f0a0288;
+        public static final int middle_layout = 0x7f0a0289;
+        public static final int no_alert = 0x7f0a02c3;
+        public static final int ok = 0x7f0a02cb;
+        public static final int p_finger = 0x7f0a02df;
+        public static final int popup_information_bar = 0x7f0a02ef;
+        public static final int preview = 0x7f0a02f4;
+        public static final int retake_continue = 0x7f0a0304;
+        public static final int retake_lay = 0x7f0a0308;
+        public static final int retake_layout_component = 0x7f0a0309;
+        public static final int retake_sep = 0x7f0a030a;
+        public static final int retake_yes = 0x7f0a030b;
+        public static final int retry = 0x7f0a030c;
+        public static final int right_hand_icon = 0x7f0a0312;
+        public static final int right_index_finger = 0x7f0a0314;
+        public static final int right_index_finger_score = 0x7f0a0315;
+        public static final int right_index_layout = 0x7f0a0316;
+        public static final int right_index_nfig_score = 0x7f0a0317;
+        public static final int right_thumb_finger = 0x7f0a0319;
+        public static final int right_thumb_finger_score = 0x7f0a031a;
+        public static final int right_thumb_layout = 0x7f0a031b;
+        public static final int right_thumb_nfig_score = 0x7f0a031c;
+        public static final int ring_finger = 0x7f0a031d;
+        public static final int ring_finger_nfig_score = 0x7f0a031e;
+        public static final int ring_finger_score = 0x7f0a031f;
+        public static final int ring_layout = 0x7f0a0320;
+        public static final int rol_twist_info_image = 0x7f0a0322;
+        public static final int rol_twist_info_image_thumb = 0x7f0a0323;
+        public static final int rol_twist_info_msg = 0x7f0a0324;
+        public static final int scanner_overlay = 0x7f0a0336;
+        public static final int spoof_continue = 0x7f0a0363;
+        public static final int spoof_layout = 0x7f0a0364;
+        public static final int take = 0x7f0a038f;
+        public static final int thumb_finger = 0x7f0a03b5;
+        public static final int thumb_finger_nfig_score = 0x7f0a03b6;
+        public static final int thumb_finger_score = 0x7f0a03b7;
+        public static final int top_info_text = 0x7f0a03cf;
+        public static final int tracking_overlay = 0x7f0a03d3;
+        public static final int tvStep1Description = 0x7f0a03e0;
+        public static final int tvStep1Title = 0x7f0a03e1;
+        public static final int tvStep2Description = 0x7f0a03e2;
+        public static final int tvStep2Title = 0x7f0a03e3;
+        public static final int tvStep3Description = 0x7f0a03e4;
+        public static final int tvStep3Title = 0x7f0a03e5;
+        public static final int tvTutorialTitle = 0x7f0a03e6;
+        public static final int two_thumb_hand_icon = 0x7f0a041e;
+        public static final int verify_inline_ui = 0x7f0a042d;
+        public static final int yes_alert = 0x7f0a0447;
+
+        private id() {
+        }
+    }
+
+    public static final class layout {
+        public static final int id_capture_success_inline = 0x7f0d0060;
+        public static final int id_enroll_success_inline = 0x7f0d0061;
+        public static final int id_verify_success_inline = 0x7f0d0068;
+        public static final int identy_activity_camera = 0x7f0d0069;
+        public static final int identy_activity_intro = 0x7f0d006a;
+        public static final int identy_activity_intro_four_fingers = 0x7f0d006b;
+        public static final int identy_activity_intro_thumb = 0x7f0d006c;
+        public static final int identy_activity_open_camera = 0x7f0d006d;
+        public static final int identy_dialog = 0x7f0d006e;
+        public static final int identy_fin_rol_img_info = 0x7f0d0079;
+        public static final int identy_fin_s_main_header = 0x7f0d007a;
+        public static final int identy_fin_support_below_preview = 0x7f0d007b;
+        public static final int identy_fin_support_centered_location_error_view = 0x7f0d007c;
+        public static final int identy_fin_support_centered_spoof_view = 0x7f0d007d;
+        public static final int identy_fin_support_centered_text_view = 0x7f0d007e;
+        public static final int identy_main_below_preview = 0x7f0d007f;
+        public static final int identy_main_centered_location_error_view = 0x7f0d0080;
+        public static final int identy_main_centered_spoof_view = 0x7f0d0081;
+        public static final int identy_main_centered_text_view = 0x7f0d0082;
+        public static final int identy_main_change_hand = 0x7f0d0083;
+        public static final int identy_main_header = 0x7f0d0084;
+        public static final int identy_popup_authenticate_fingers = 0x7f0d0085;
+        public static final int identy_popup_capture_success = 0x7f0d0086;
+        public static final int identy_popup_enroll_finger = 0x7f0d0087;
+        public static final int identy_popup_enroll_fingers = 0x7f0d0088;
+        public static final int identy_popup_enroll_success = 0x7f0d0089;
+        public static final int identy_popup_enroll_thumb_finger = 0x7f0d008a;
+        public static final int identy_popup_enroll_twothumb = 0x7f0d008b;
+        public static final int identy_popup_error_success = 0x7f0d008c;
+        public static final int identy_popup_verify_error = 0x7f0d008d;
+        public static final int identy_popup_verify_retake = 0x7f0d008e;
+        public static final int identy_popup_verify_success = 0x7f0d008f;
+        public static final int identy_retake = 0x7f0d0090;
+        public static final int identy_retake_demo = 0x7f0d0091;
+        public static final int layout_component = 0x7f0d00a2;
+        public static final int popup_eula = 0x7f0d00ec;
+        public static final int send_log = 0x7f0d00f6;
+        public static final int touchless_activity_camera = 0x7f0d00fc;
+        public static final int touchless_activity_intro = 0x7f0d00fd;
+        public static final int touchless_activity_intro_four_fingers = 0x7f0d00fe;
+        public static final int touchless_activity_intro_rol = 0x7f0d00ff;
+        public static final int touchless_activity_intro_rol_option_two = 0x7f0d0100;
+        public static final int touchless_activity_intro_thumb = 0x7f0d0101;
+        public static final int touchless_activity_intro_two_thumb = 0x7f0d0102;
+        public static final int touchless_activity_open_camera = 0x7f0d0103;
+        public static final int touchless_dialog = 0x7f0d0104;
+        public static final int touchless_finger_alert_default = 0x7f0d0109;
+        public static final int touchless_finger_confirmation_default = 0x7f0d010a;
+        public static final int touchless_main_back_button = 0x7f0d010b;
+        public static final int touchless_main_below_preview = 0x7f0d010c;
+        public static final int touchless_main_centered_location_error_view = 0x7f0d010d;
+        public static final int touchless_main_centered_spoof_view = 0x7f0d010e;
+        public static final int touchless_main_centered_text_view = 0x7f0d010f;
+        public static final int touchless_main_change_hand = 0x7f0d0110;
+        public static final int touchless_main_header = 0x7f0d0111;
+        public static final int touchless_popup_authenticate_fingers = 0x7f0d0112;
+        public static final int touchless_popup_capture_success = 0x7f0d0113;
+        public static final int touchless_popup_enroll_finger = 0x7f0d0114;
+        public static final int touchless_popup_enroll_fingers = 0x7f0d0115;
+        public static final int touchless_popup_enroll_success = 0x7f0d0116;
+        public static final int touchless_popup_enroll_thumb_finger = 0x7f0d0117;
+        public static final int touchless_popup_enroll_twoindex = 0x7f0d0118;
+        public static final int touchless_popup_enroll_twothumb = 0x7f0d0119;
+        public static final int touchless_popup_error_success = 0x7f0d011a;
+        public static final int touchless_popup_verify_error = 0x7f0d011b;
+        public static final int touchless_popup_verify_retake = 0x7f0d011c;
+        public static final int touchless_popup_verify_success = 0x7f0d011d;
+        public static final int touchless_retake = 0x7f0d011e;
+        public static final int touchless_retake_demo = 0x7f0d011f;
+        public static final int touchless_spoof_dialog = 0x7f0d0120;
+
+        private layout() {
+        }
+    }
+
+    public static final class mipmap {
+        public static final int icon = 0x7f100005;
+
+        private mipmap() {
+        }
+    }
+
+    public static final class string {
+        public static final int about_available = 0x7f14002c;
+        public static final int about_copy_to_clipboard = 0x7f14002d;
+        public static final int about_not_available = 0x7f14002e;
+        public static final int action_popup = 0x7f14002f;
+        public static final int action_settings = 0x7f140030;
+        public static final int angle = 0x7f140034;
+        public static final int answer_no = 0x7f140035;
+        public static final int answer_yes = 0x7f140036;
+        public static final int auto_stabilise_info = 0x7f14003a;
+        public static final int auto_stabilise_not_supported = 0x7f14003b;
+        public static final int back_camera = 0x7f14003c;
+        public static final int bright = 0x7f140043;
+        public static final int camera = 0x7f140053;
+        public static final int camera_error = 0x7f140054;
+        public static final int cancelled_burst_mode = 0x7f14006c;
+        public static final int cancelled_timer = 0x7f14006d;
+        public static final int cant_access_folder = 0x7f14006e;
+        public static final int cant_write_folder = 0x7f14006f;
+        public static final int capturing = 0x7f140070;
+        public static final int choose_another_folder = 0x7f140076;
+        public static final int clear_folder_history = 0x7f140077;
+        public static final int clear_folder_history_question = 0x7f140078;
+        public static final int color_effect = 0x7f14007c;
+        public static final int dark = 0x7f14009b;
+        public static final int direction = 0x7f140131;
+        public static final int dont_show_again = 0x7f140132;
+        public static final int enter_new_folder = 0x7f14013a;
+        public static final int exposure = 0x7f140159;
+        public static final int exposure_compensation = 0x7f14015a;
+        public static final int exposure_lock = 0x7f14015b;
+        public static final int exposure_locked = 0x7f14015c;
+        public static final int exposure_shutter_speed = 0x7f14015d;
+        public static final int exposure_unlocked = 0x7f14015e;
+        public static final int failed_create_folder = 0x7f140162;
+        public static final int failed_to_auto_stabilise = 0x7f140163;
+        public static final int failed_to_open_camera_1 = 0x7f140164;
+        public static final int failed_to_open_camera_2 = 0x7f140165;
+        public static final int failed_to_open_camera_3 = 0x7f140166;
+        public static final int failed_to_process_hdr = 0x7f140167;
+        public static final int failed_to_reconnect_camera = 0x7f140168;
+        public static final int failed_to_save_photo = 0x7f140169;
+        public static final int failed_to_save_photo_raw = 0x7f14016a;
+        public static final int failed_to_stamp = 0x7f14016b;
+        public static final int failed_to_start_camera_preview = 0x7f14016c;
+        public static final int failed_to_take_picture = 0x7f14016d;
+        public static final int flash_mode = 0x7f14016f;
+        public static final int focus_distance = 0x7f140170;
+        public static final int focus_mode = 0x7f140171;
+        public static final int folder_exists = 0x7f140172;
+        public static final int fps = 0x7f140174;
+        public static final int free_memory = 0x7f140175;
+        public static final int front_camera = 0x7f140176;
+        public static final int gallery = 0x7f140178;
+        public static final int gb_abbreviation = 0x7f140179;
+        public static final int grid = 0x7f140181;
+        public static final int hdr_info = 0x7f140182;
+        public static final int id_EXIT = 0x7f14018c;
+        public static final int id_attempt_reached_next_detection = 0x7f14018e;
+        public static final int id_attempt_reached_next_detection_no_retries = 0x7f14018f;
+        public static final int id_attempt_reached_next_detection_no_skip = 0x7f140190;
+        public static final int id_attempt_reached_no_next_detection = 0x7f140191;
+        public static final int id_attempt_reached_no_next_detection_no_skip = 0x7f140192;
+        public static final int id_authentication_retake = 0x7f140193;
+        public static final int id_authentication_successful = 0x7f140194;
+        public static final int id_authentication_unsuccessful = 0x7f140195;
+        public static final int id_capture_completed = 0x7f140196;
+        public static final int id_captured = 0x7f140197;
+        public static final int id_capturing = 0x7f140198;
+        public static final int id_change_hand_button = 0x7f140199;
+        public static final int id_close = 0x7f14019c;
+        public static final int id_confirm_exit = 0x7f14019d;
+        public static final int id_continue = 0x7f14019e;
+        public static final int id_done = 0x7f14019f;
+        public static final int id_dshow_again = 0x7f1401a0;
+        public static final int id_enroll_next_2I_1_OK = 0x7f1401a1;
+        public static final int id_enroll_next_2I_2_OK = 0x7f1401a2;
+        public static final int id_enroll_next_2T_1_OK = 0x7f1401a3;
+        public static final int id_enroll_next_2T_2_OK = 0x7f1401a4;
+        public static final int id_enroll_next_4L_1_OK = 0x7f1401a5;
+        public static final int id_enroll_next_4L_2_OK = 0x7f1401a6;
+        public static final int id_enroll_next_4R_1_OK = 0x7f1401a7;
+        public static final int id_enroll_next_4R_2_OK = 0x7f1401a8;
+        public static final int id_enroll_next_LT_1_OK = 0x7f1401a9;
+        public static final int id_enroll_next_LT_2_OK = 0x7f1401aa;
+        public static final int id_enroll_next_RT_1_OK = 0x7f1401ab;
+        public static final int id_enroll_next_RT_2_OK = 0x7f1401ac;
+        public static final int id_enroll_no_next = 0x7f1401ad;
+        public static final int id_enrollment_completed = 0x7f1401ae;
+        public static final int id_exit_text = 0x7f1401af;
+        public static final int id_fin_capture_success_1 = 0x7f1401e7;
+        public static final int id_fin_capture_success_2 = 0x7f1401e8;
+        public static final int id_fin_initializing = 0x7f1401e9;
+        public static final int id_fin_show_center = 0x7f1401ea;
+        public static final int id_fin_show_left = 0x7f1401eb;
+        public static final int id_fin_show_right = 0x7f1401ec;
+        public static final int id_finger_matching = 0x7f1401ed;
+        public static final int id_good_quality = 0x7f1401ee;
+        public static final int id_hand_closer = 0x7f1401ef;
+        public static final int id_hand_further_away = 0x7f1401f0;
+        public static final int id_hold = 0x7f1401f2;
+        public static final int id_hold_0 = 0x7f1401f3;
+        public static final int id_hold_1 = 0x7f1401f4;
+        public static final int id_hold_2 = 0x7f1401f5;
+        public static final int id_hold_3 = 0x7f1401f6;
+        public static final int id_hold_4 = 0x7f1401f7;
+        public static final int id_hold_5 = 0x7f1401f8;
+        public static final int id_hold_6 = 0x7f1401f9;
+        public static final int id_hold_still = 0x7f1401fa;
+        public static final int id_identy_template_format = 0x7f1401fb;
+        public static final int id_image_cd_todo = 0x7f1401fc;
+        public static final int id_in_front_camera = 0x7f1401fd;
+        public static final int id_index = 0x7f1401fe;
+        public static final int id_index_finger = 0x7f1401ff;
+        public static final int id_inside_guide = 0x7f140201;
+        public static final int id_intro_roll_front_camera = 0x7f140202;
+        public static final int id_intro_roll_stay_still_blue = 0x7f140203;
+        public static final int id_intro_roll_twist_down = 0x7f140204;
+        public static final int id_intro_roll_twist_up = 0x7f140205;
+        public static final int id_intro_thumb_front_camera = 0x7f140206;
+        public static final int id_intro_thumb_stay_still_blue = 0x7f140207;
+        public static final int id_intro_thumb_wait_auto = 0x7f140208;
+        public static final int id_keep_fingers = 0x7f140209;
+        public static final int id_keep_fingers_together = 0x7f14020a;
+        public static final int id_left_index = 0x7f14020b;
+        public static final int id_left_thumb = 0x7f14020c;
+        public static final int id_little = 0x7f14020d;
+        public static final int id_little_finger = 0x7f14020e;
+        public static final int id_location_error_1 = 0x7f14020f;
+        public static final int id_location_error_2 = 0x7f140210;
+        public static final int id_location_error_3 = 0x7f140211;
+        public static final int id_maximum_attempt_reached = 0x7f140213;
+        public static final int id_middle = 0x7f140214;
+        public static final int id_middle_finger = 0x7f140215;
+        public static final int id_next = 0x7f140216;
+        public static final int id_next_2I_1_OK = 0x7f140217;
+        public static final int id_next_2I_2_OK = 0x7f140218;
+        public static final int id_next_2T_1_OK = 0x7f140219;
+        public static final int id_next_2T_2_OK = 0x7f14021a;
+        public static final int id_next_4L_1_OK = 0x7f14021b;
+        public static final int id_next_4L_2_OK = 0x7f14021c;
+        public static final int id_next_4R_1_OK = 0x7f14021d;
+        public static final int id_next_4R_2_OK = 0x7f14021e;
+        public static final int id_next_LT_1_OK = 0x7f14021f;
+        public static final int id_next_LT_2_OK = 0x7f140220;
+        public static final int id_next_RT_1_OK = 0x7f140221;
+        public static final int id_next_RT_2_OK = 0x7f140222;
+        public static final int id_next_detection = 0x7f140223;
+        public static final int id_next_hand_confirm = 0x7f140224;
+        public static final int id_no = 0x7f140226;
+        public static final int id_no_fingers = 0x7f140227;
+        public static final int id_no_match = 0x7f140228;
+        public static final int id_no_msg = 0x7f140229;
+        public static final int id_no_next = 0x7f14022a;
+        public static final int id_not_good_quality = 0x7f14022b;
+        public static final int id_ok = 0x7f1402c1;
+        public static final int id_pic_qc_title = 0x7f1402c3;
+        public static final int id_pic_spoof_title = 0x7f1402c4;
+        public static final int id_process = 0x7f1402c5;
+        public static final int id_processing = 0x7f1402c6;
+        public static final int id_qc = 0x7f1402c7;
+        public static final int id_qc_retake = 0x7f1402c8;
+        public static final int id_quality_failed = 0x7f1402c9;
+        public static final int id_r_status_bad_quality = 0x7f1402ca;
+        public static final int id_r_status_ok = 0x7f1402cb;
+        public static final int id_r_status_pre_capture_erro = 0x7f1402cc;
+        public static final int id_r_status_twist_less = 0x7f1402cd;
+        public static final int id_r_status_twist_more = 0x7f1402ce;
+        public static final int id_retake_additional_tip = 0x7f1402d0;
+        public static final int id_retake_as_tip_1 = 0x7f1402d1;
+        public static final int id_retake_as_tip_2 = 0x7f1402d2;
+        public static final int id_retake_as_tip_3 = 0x7f1402d3;
+        public static final int id_retake_match = 0x7f1402d4;
+        public static final int id_retake_q = 0x7f1402d5;
+        public static final int id_retake_string = 0x7f1402d6;
+        public static final int id_retake_tip_1 = 0x7f1402d7;
+        public static final int id_retake_tip_2 = 0x7f1402d8;
+        public static final int id_retake_tip_3 = 0x7f1402d9;
+        public static final int id_retry = 0x7f1402da;
+        public static final int id_right_index = 0x7f1402db;
+        public static final int id_right_thumb = 0x7f1402dc;
+        public static final int id_ring = 0x7f1402dd;
+        public static final int id_ring_finger = 0x7f1402de;
+        public static final int id_searching_index = 0x7f1402df;
+        public static final int id_searching_left = 0x7f1402e0;
+        public static final int id_searching_left_index = 0x7f1402e1;
+        public static final int id_searching_left_index_middle = 0x7f1402e2;
+        public static final int id_searching_left_little = 0x7f1402e3;
+        public static final int id_searching_left_middle = 0x7f1402e4;
+        public static final int id_searching_left_ring = 0x7f1402e5;
+        public static final int id_searching_left_thumb = 0x7f1402e6;
+        public static final int id_searching_right = 0x7f1402e7;
+        public static final int id_searching_right_index = 0x7f1402e8;
+        public static final int id_searching_right_index_middle = 0x7f1402e9;
+        public static final int id_searching_right_little = 0x7f1402ea;
+        public static final int id_searching_right_middle = 0x7f1402eb;
+        public static final int id_searching_right_ring = 0x7f1402ec;
+        public static final int id_searching_right_thumb = 0x7f1402ed;
+        public static final int id_searching_thumb = 0x7f1402ee;
+        public static final int id_select_hand = 0x7f1402ef;
+        public static final int id_spoof = 0x7f1402f0;
+        public static final int id_spoof_additional_tip = 0x7f1402f1;
+        public static final int id_spoof_final_message = 0x7f1402f2;
+        public static final int id_spoof_question = 0x7f1402f3;
+        public static final int id_spoof_tip_1 = 0x7f1402f4;
+        public static final int id_spoof_tip_2 = 0x7f1402f5;
+        public static final int id_spoof_tip_3 = 0x7f1402f6;
+        public static final int id_spoof_title = 0x7f1402f7;
+        public static final int id_stable = 0x7f1402f8;
+        public static final int id_stay_still_blue = 0x7f1402f9;
+        public static final int id_success_match = 0x7f1402fb;
+        public static final int id_success_string = 0x7f1402fc;
+        public static final int id_thumb = 0x7f1402fd;
+        public static final int id_thumb_finger = 0x7f1402fe;
+        public static final int id_timed_out = 0x7f1402ff;
+        public static final int id_timed_out_next_detection = 0x7f140300;
+        public static final int id_timed_out_next_detection_no_retries = 0x7f140301;
+        public static final int id_timed_out_next_detection_no_skip = 0x7f140302;
+        public static final int id_timed_out_no_next_detection = 0x7f140303;
+        public static final int id_timed_out_no_next_detection_no_skip = 0x7f140304;
+        public static final int id_try_again = 0x7f140305;
+        public static final int id_try_again_in = 0x7f140306;
+        public static final int id_verify_next_2I_1_OK = 0x7f140307;
+        public static final int id_verify_next_2I_2_OK = 0x7f140308;
+        public static final int id_verify_next_2T_1_OK = 0x7f140309;
+        public static final int id_verify_next_2T_2_OK = 0x7f14030a;
+        public static final int id_verify_next_4L_1_OK = 0x7f14030b;
+        public static final int id_verify_next_4L_2_OK = 0x7f14030c;
+        public static final int id_verify_next_4R_1_OK = 0x7f14030d;
+        public static final int id_verify_next_4R_2_OK = 0x7f14030e;
+        public static final int id_verify_next_LT_1_OK = 0x7f14030f;
+        public static final int id_verify_next_LT_2_OK = 0x7f140310;
+        public static final int id_verify_next_RT_1_OK = 0x7f140311;
+        public static final int id_verify_next_RT_2_OK = 0x7f140312;
+        public static final int id_verify_no_next = 0x7f140313;
+        public static final int id_wait_auto = 0x7f140314;
+        public static final int id_wsq_compression = 0x7f140315;
+        public static final int id_yes = 0x7f140316;
+        public static final int id_zero = 0x7f140317;
+        public static final int infinite = 0x7f14031a;
+        public static final int intro_ok = 0x7f14031b;
+        public static final int intro_text = 0x7f14031c;
+        public static final int iso = 0x7f14031d;
+        public static final int max_duration = 0x7f140352;
+        public static final int max_filesize = 0x7f140353;
+        public static final int mb_abbreviation = 0x7f140354;
+        public static final int metres_abbreviation = 0x7f140364;
+        public static final int new_folder = 0x7f1403ab;
+        public static final int no_gallery_app = 0x7f1403ad;
+        public static final int no_permission = 0x7f1403ae;
+        public static final int not_supported = 0x7f1403b1;
+        public static final int off = 0x7f1403b2;
+        public static final int on = 0x7f1403b3;
+        public static final int parent_folder = 0x7f1403b4;
+        public static final int permission_rationale_camera = 0x7f1403be;
+        public static final int permission_rationale_storage = 0x7f1403bf;
+        public static final int permission_rationale_title = 0x7f1403c0;
+        public static final int photo = 0x7f1403ca;
+        public static final int photo_deleted = 0x7f1403cb;
+        public static final int photo_mode = 0x7f1403cc;
+        public static final int photo_mode_dro = 0x7f1403cd;
+        public static final int photo_mode_expo_bracketing = 0x7f1403ce;
+        public static final int photo_mode_expo_bracketing_full = 0x7f1403cf;
+        public static final int photo_mode_hdr = 0x7f1403d0;
+        public static final int photo_mode_noise_reduction = 0x7f1403d1;
+        public static final int photo_mode_standard = 0x7f1403d2;
+        public static final int preference_about = 0x7f1403d3;
+        public static final int preference_about_summary = 0x7f1403d4;
+        public static final int preference_angle_highlight_color = 0x7f1403d5;
+        public static final int preference_angle_highlight_color_summary = 0x7f1403d6;
+        public static final int preference_auto_stabilise = 0x7f1403d7;
+        public static final int preference_auto_stabilise_summary = 0x7f1403d8;
+        public static final int preference_background_photo_saving = 0x7f1403d9;
+        public static final int preference_background_photo_saving_summary = 0x7f1403da;
+        public static final int preference_burst_interval = 0x7f1403db;
+        public static final int preference_burst_interval_summary = 0x7f1403dc;
+        public static final int preference_burst_mode = 0x7f1403dd;
+        public static final int preference_burst_mode_summary = 0x7f1403de;
+        public static final int preference_calibrate_level = 0x7f1403df;
+        public static final int preference_calibrate_level_calibrate = 0x7f1403e0;
+        public static final int preference_calibrate_level_calibrated = 0x7f1403e1;
+        public static final int preference_calibrate_level_calibration_reset = 0x7f1403e2;
+        public static final int preference_calibrate_level_dialog = 0x7f1403e3;
+        public static final int preference_calibrate_level_reset = 0x7f1403e4;
+        public static final int preference_calibrate_level_summary = 0x7f1403e5;
+        public static final int preference_camera2_fake_flash = 0x7f1403e6;
+        public static final int preference_camera2_fake_flash_summary = 0x7f1403e7;
+        public static final int preference_camera2_fast_burst = 0x7f1403e8;
+        public static final int preference_camera2_fast_burst_summary = 0x7f1403e9;
+        public static final int preference_category_camera_controls = 0x7f1403ea;
+        public static final int preference_category_camera_effects = 0x7f1403eb;
+        public static final int preference_category_camera_quality = 0x7f1403ec;
+        public static final int preference_category_online = 0x7f1403ed;
+        public static final int preference_category_photo_debugging = 0x7f1403ee;
+        public static final int preference_category_stamp = 0x7f1403ef;
+        public static final int preference_category_video_debugging = 0x7f1403f0;
+        public static final int preference_color_effect = 0x7f1403f1;
+        public static final int preference_color_effect_summary = 0x7f1403f2;
+        public static final int preference_crop_guide = 0x7f1403f3;
+        public static final int preference_crop_guide_summary = 0x7f1403f4;
+        public static final int preference_donate = 0x7f1403f5;
+        public static final int preference_donate_summary = 0x7f1403f6;
+        public static final int preference_expo_bracketing_n_images = 0x7f1403f7;
+        public static final int preference_expo_bracketing_n_images_summary = 0x7f1403f8;
+        public static final int preference_expo_bracketing_stops = 0x7f1403f9;
+        public static final int preference_expo_bracketing_stops_summary = 0x7f1403fa;
+        public static final int preference_exposure = 0x7f1403fb;
+        public static final int preference_exposure_summary = 0x7f1403fc;
+        public static final int preference_face_detection = 0x7f1403fd;
+        public static final int preference_face_detection_summary = 0x7f1403fe;
+        public static final int preference_free_memory = 0x7f140400;
+        public static final int preference_free_memory_summary = 0x7f140401;
+        public static final int preference_grid = 0x7f140402;
+        public static final int preference_grid_summary = 0x7f140403;
+        public static final int preference_hdr_save_expo = 0x7f140404;
+        public static final int preference_hdr_save_expo_summary = 0x7f140405;
+        public static final int preference_immersive_mode = 0x7f140406;
+        public static final int preference_immersive_mode_summary = 0x7f140407;
+        public static final int preference_iso = 0x7f140408;
+        public static final int preference_iso_summary = 0x7f140409;
+        public static final int preference_keep_display_on = 0x7f14040a;
+        public static final int preference_keep_display_on_summary = 0x7f14040b;
+        public static final int preference_lock_orientation = 0x7f14040c;
+        public static final int preference_lock_orientation_summary = 0x7f14040d;
+        public static final int preference_max_brightness = 0x7f14040e;
+        public static final int preference_max_brightness_summary = 0x7f14040f;
+        public static final int preference_nr_save = 0x7f140410;
+        public static final int preference_nr_save_all = 0x7f140411;
+        public static final int preference_nr_save_no = 0x7f140412;
+        public static final int preference_nr_save_single = 0x7f140413;
+        public static final int preference_nr_save_summary = 0x7f140414;
+        public static final int preference_online_help = 0x7f140415;
+        public static final int preference_online_help_summary = 0x7f140416;
+        public static final int preference_pause_preview = 0x7f140417;
+        public static final int preference_pause_preview_summary = 0x7f140418;
+        public static final int preference_preview_size = 0x7f140419;
+        public static final int preference_preview_size_summary = 0x7f14041a;
+        public static final int preference_quality = 0x7f14041b;
+        public static final int preference_quality_summary = 0x7f14041c;
+        public static final int preference_raw = 0x7f14041d;
+        public static final int preference_raw_summary = 0x7f14041e;
+        public static final int preference_reset = 0x7f14041f;
+        public static final int preference_reset_question = 0x7f140420;
+        public static final int preference_reset_summary = 0x7f140421;
+        public static final int preference_resolution = 0x7f140422;
+        public static final int preference_resolution_summary = 0x7f140423;
+        public static final int preference_rotate_preview = 0x7f140424;
+        public static final int preference_rotate_preview_summary = 0x7f140425;
+        public static final int preference_save_photo_prefix = 0x7f140426;
+        public static final int preference_save_photo_prefix_summary = 0x7f140427;
+        public static final int preference_save_zulu_time = 0x7f140428;
+        public static final int preference_save_zulu_time_summary = 0x7f140429;
+        public static final int preference_scene_mode = 0x7f14042a;
+        public static final int preference_scene_mode_summary = 0x7f14042b;
+        public static final int preference_screen_camera_controls_more = 0x7f14042c;
+        public static final int preference_screen_gui = 0x7f14042d;
+        public static final int preference_screen_photo_settings = 0x7f14042e;
+        public static final int preference_show_angle = 0x7f14042f;
+        public static final int preference_show_angle_line = 0x7f140430;
+        public static final int preference_show_angle_line_summary = 0x7f140431;
+        public static final int preference_show_angle_summary = 0x7f140432;
+        public static final int preference_show_battery = 0x7f140433;
+        public static final int preference_show_battery_summary = 0x7f140434;
+        public static final int preference_show_geo_direction = 0x7f140435;
+        public static final int preference_show_geo_direction_summary = 0x7f140436;
+        public static final int preference_show_iso = 0x7f140437;
+        public static final int preference_show_iso_summary = 0x7f140438;
+        public static final int preference_show_time = 0x7f140439;
+        public static final int preference_show_time_summary = 0x7f14043a;
+        public static final int preference_show_toasts = 0x7f14043b;
+        public static final int preference_show_toasts_summary = 0x7f14043c;
+        public static final int preference_show_when_locked = 0x7f14043d;
+        public static final int preference_show_when_locked_summary = 0x7f14043e;
+        public static final int preference_show_zoom = 0x7f14043f;
+        public static final int preference_show_zoom_controls = 0x7f140440;
+        public static final int preference_show_zoom_controls_summary = 0x7f140441;
+        public static final int preference_show_zoom_slider_controls = 0x7f140442;
+        public static final int preference_show_zoom_slider_controls_summary = 0x7f140443;
+        public static final int preference_show_zoom_summary = 0x7f140444;
+        public static final int preference_shutter_sound = 0x7f140445;
+        public static final int preference_shutter_sound_summary = 0x7f140446;
+        public static final int preference_stamp = 0x7f140447;
+        public static final int preference_stamp_dateformat = 0x7f140448;
+        public static final int preference_stamp_dateformat_summary = 0x7f140449;
+        public static final int preference_stamp_font_color = 0x7f14044a;
+        public static final int preference_stamp_font_color_summary = 0x7f14044b;
+        public static final int preference_stamp_fontsize = 0x7f14044c;
+        public static final int preference_stamp_fontsize_summary = 0x7f14044d;
+        public static final int preference_stamp_gpsformat = 0x7f14044e;
+        public static final int preference_stamp_gpsformat_summary = 0x7f14044f;
+        public static final int preference_stamp_style = 0x7f140450;
+        public static final int preference_stamp_style_summary = 0x7f140451;
+        public static final int preference_stamp_timeformat = 0x7f140452;
+        public static final int preference_stamp_timeformat_summary = 0x7f140453;
+        public static final int preference_startup_focus = 0x7f140454;
+        public static final int preference_startup_focus_summary = 0x7f140455;
+        public static final int preference_take_photo_border = 0x7f140456;
+        public static final int preference_take_photo_border_summary = 0x7f140457;
+        public static final int preference_textstamp = 0x7f140458;
+        public static final int preference_textstamp_summary = 0x7f140459;
+        public static final int preference_thumbnail_animation = 0x7f14045a;
+        public static final int preference_thumbnail_animation_summary = 0x7f14045b;
+        public static final int preference_timer = 0x7f14045c;
+        public static final int preference_timer_beep = 0x7f14045d;
+        public static final int preference_timer_beep_summary = 0x7f14045e;
+        public static final int preference_timer_speak = 0x7f14045f;
+        public static final int preference_timer_speak_summary = 0x7f140460;
+        public static final int preference_timer_summary = 0x7f140461;
+        public static final int preference_touch_capture = 0x7f140462;
+        public static final int preference_touch_capture_summary = 0x7f140463;
+        public static final int preference_ui_placement = 0x7f140464;
+        public static final int preference_ui_placement_summary = 0x7f140465;
+        public static final int preference_use_camera2 = 0x7f140466;
+        public static final int preference_use_camera2_summary = 0x7f140467;
+        public static final int preference_using_saf = 0x7f140468;
+        public static final int preference_using_saf_summary = 0x7f140469;
+        public static final int preference_volume_keys = 0x7f14046a;
+        public static final int preference_volume_keys_summary = 0x7f14046b;
+        public static final int preference_white_balance = 0x7f14046c;
+        public static final int preference_white_balance_summary = 0x7f14046d;
+        public static final int raw_info = 0x7f140477;
+        public static final int repeats_to_go = 0x7f140479;
+        public static final int request_permission = 0x7f14047a;
+        public static final int saf_cancelled = 0x7f14047f;
+        public static final int saf_permission_failed = 0x7f140480;
+        public static final int scene_mode = 0x7f140481;
+        public static final int screen_is_locked = 0x7f140482;
+        public static final int screen_lock_message_1 = 0x7f140483;
+        public static final int screen_lock_message_2 = 0x7f140484;
+        public static final int seconds_abbreviation = 0x7f14048b;
+        public static final int share = 0x7f14048d;
+        public static final int sorry = 0x7f140490;
+        public static final int speech_recognizer_started = 0x7f140491;
+        public static final int started_timer = 0x7f140493;
+        public static final int strLeft = 0x7f140495;
+        public static final int strRight = 0x7f140496;
+        public static final int strSnap = 0x7f140497;
+        public static final int switch_to_back_camera = 0x7f14049e;
+        public static final int switch_to_front_camera = 0x7f14049f;
+        public static final int switch_to_photo = 0x7f1404a0;
+        public static final int take_photo = 0x7f1404a6;
+        public static final int taking_photo = 0x7f1404a7;
+        public static final int template_type_is_not_valid = 0x7f1404a9;
+        public static final int template_type_is_unknown = 0x7f1404aa;
+        public static final int title_activity_img_view = 0x7f1404b2;
+        public static final int trash = 0x7f1404eb;
+        public static final int unlocked = 0x7f140530;
+        public static final int white_balance = 0x7f140536;
+        public static final int zoom = 0x7f140538;
+
+        private string() {
+        }
+    }
+
+    public static final class style {
+        public static final int AppTheme = 0x7f15000b;
+        public static final int AppTheme_AppBarOverlay = 0x7f15000c;
+        public static final int AppTheme_NoActionBar = 0x7f15000d;
+        public static final int AppTheme_PopupOverlay = 0x7f15000e;
+        public static final int full_screen_dialog = 0x7f1504a9;
+
+        private style() {
+        }
+    }
+
+    public static final class xml {
+        public static final int provider_paths = 0x7f170003;
+
+        private xml() {
+        }
+    }
+
+    private R() {
+    }
+}

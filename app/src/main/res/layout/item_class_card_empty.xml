@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_container_class_card_empty"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rl_container_class_card_empty_height"
+    android:layout_marginVertical="@dimen/cv_container_class_card_margin_vertical"
+    app:cardBackgroundColor="@color/cv_container_class_card_background_color"
+    app:cardCornerRadius="@dimen/cv_container_class_card_corner_radius"
+    app:cardElevation="@dimen/cv_container_class_card_elevation"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_container_class_card_empty"
+        android:padding="@dimen/cl_container_class_card_empty_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textAppearance="@style/tv_class_card_empty_title"
+            android:gravity="center"
+            android:id="@+id/tv_class_card_empty_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tv_class_empty_description_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

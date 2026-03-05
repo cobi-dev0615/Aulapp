@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/til"
+    android:background="@drawable/dropdown_background"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    app:boxBackgroundColor="@color/background_ceas"
+    app:boxCornerRadiusBottomEnd="20dp"
+    app:boxCornerRadiusBottomStart="20dp"
+    app:boxCornerRadiusTopEnd="20dp"
+    app:boxCornerRadiusTopStart="20dp"
+    app:boxStrokeWidth="0dp"
+    app:boxStrokeWidthFocused="0dp"
+    app:endIconDrawable="@drawable/ic_arrow_down"
+    app:endIconTint="@color/dark_blue"
+    app:startIconDrawable="@drawable/ic_item_ceas"
+    app:startIconTint="@color/grey"
+    style="@style/Widget.App.ExposedDropdownMenu_instructores">
+    <AutoCompleteTextView
+        android:textColor="@color/dark_blue"
+        android:ellipsize="end"
+        android:id="@+id/actv"
+        android:background="@null"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="none"/>
+</com.google.android.material.textfield.TextInputLayout>

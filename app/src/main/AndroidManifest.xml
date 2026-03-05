@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Hardware features -->
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:glEsVersion="0x20000" android:required="true" />
+
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+    <application
+        android:name="com.gse.aulapp.GeneralApp"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_instructor"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_instructor_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AULAPPRECEPCIONISTA"
+        android:usesCleartextTraffic="false"
+        tools:targetApi="31">
+
+        <!-- Main Activity (Launcher) -->
+        <activity
+            android:name="com.gse.aulapp.view.activity.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AULAPPRECEPCIONISTA"
+            android:windowSoftInputMode="adjustResize|stateUnchanged">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Principal Activity -->
+        <activity
+            android:name="com.gse.aulapp.view.activity.PrincipalActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AULAPPRECEPCIONISTA"
+            android:windowSoftInputMode="adjustResize|stateUnchanged" />
+
+        <!-- Services -->
+        <service
+            android:name="com.gse.aulapp.service.TimerService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <service
+            android:name="com.gse.aulapp.service.LocationService"
+            android:foregroundServiceType="location" />
+
+        <!-- Identy SDK Activities -->
+        <activity android:name="com.identy.Enroll4FActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.Enroll2TActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.EnrollFingersActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.Verify4FActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.Verify2TActivity" android:resizeableActivity="false" />
+        <activity android:name="com.identy.VerifyFingersActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.Capture4FActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.CaptureFingersActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.CaptureThumbActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.EnrollThumbActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.VerifyThumbActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.Capture2TActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.Capture2IndexActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.Enroll2IndexActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.Verify2IndexActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.CaptureRolledFingersActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.CaptureRolledThumbActivity" android:configChanges="orientation" android:resizeableActivity="false" />
+        <activity android:name="com.identy.IntroActivity" android:hardwareAccelerated="false" android:resizeableActivity="false" />
+
+        <!-- Firebase Crashlytics -->
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+</manifest>

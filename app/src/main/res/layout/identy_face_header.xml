@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/identy_face_header"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/face_header_back"
+        android:background="@drawable/face_back"
+        android:visibility="gone"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/face_header_close"
+        android:background="@drawable/face_back"
+        android:visibility="gone"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="23sp"
+        android:textColor="#bf1818"
+        android:gravity="center"
+        android:id="@+id/id_header_title"
+        android:background="@color/header_background"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Aloooooooooo"/>
+</LinearLayout>

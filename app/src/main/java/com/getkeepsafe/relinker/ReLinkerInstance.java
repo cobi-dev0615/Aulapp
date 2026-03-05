@@ -1,0 +1,184 @@
+package com.getkeepsafe.relinker;
+
+import android.content.Context;
+import android.util.Log;
+import com.getkeepsafe.relinker.ReLinker;
+import com.getkeepsafe.relinker.elf.ElfParser;
+import defpackage.a;
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
+
+/* loaded from: classes.dex */
+public class ReLinkerInstance {
+    protected boolean force;
+    protected final ReLinker.LibraryInstaller libraryInstaller;
+    protected final ReLinker.LibraryLoader libraryLoader;
+    protected final Set<String> loadedLibraries;
+    protected boolean recursive;
+
+    public ReLinkerInstance() {
+        this(new SystemLibraryLoader(), new ApkLibraryInstaller());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void loadLibraryInternal(Context context, String str, String str2) {
+        ReLinkerInstance reLinkerInstance;
+        Context context2;
+        ElfParser elfParser;
+        if (this.loadedLibraries.contains(str) && !this.force) {
+            log("%s already loaded previously!", str);
+            return;
+        }
+        try {
+            this.libraryLoader.loadLibrary(str);
+            this.loadedLibraries.add(str);
+            log("%s (%s) was loaded normally!", str, str2);
+        } catch (UnsatisfiedLinkError e) {
+            log("Loading the library normally failed: %s", Log.getStackTraceString(e));
+            log("%s (%s) was not loaded normally, re-linking...", str, str2);
+            File workaroundLibFile = getWorkaroundLibFile(context, str, str2);
+            if (!workaroundLibFile.exists() || this.force) {
+                if (this.force) {
+                    log("Forcing a re-link of %s (%s)...", str, str2);
+                }
+                cleanupOldLibFiles(context, str, str2);
+                reLinkerInstance = this;
+                context2 = context;
+                this.libraryInstaller.installLibrary(context2, this.libraryLoader.supportedAbis(), this.libraryLoader.mapLibraryName(str), workaroundLibFile, reLinkerInstance);
+            } else {
+                reLinkerInstance = this;
+                context2 = context;
+            }
+            try {
+                if (reLinkerInstance.recursive) {
+                    try {
+                        elfParser = new ElfParser(workaroundLibFile);
+                        try {
+                            List<String> parseNeededDependencies = elfParser.parseNeededDependencies();
+                            elfParser.close();
+                            Iterator<String> it = parseNeededDependencies.iterator();
+                            while (it.hasNext()) {
+                                loadLibrary(context2, reLinkerInstance.libraryLoader.unmapLibraryName(it.next()));
+                            }
+                        } catch (Throwable th) {
+                            th = th;
+                            Throwable th2 = th;
+                            if (elfParser == null) {
+                                throw th2;
+                            }
+                            elfParser.close();
+                            throw th2;
+                        }
+                    } catch (Throwable th3) {
+                        th = th3;
+                        elfParser = null;
+                    }
+                }
+            } catch (IOException unused) {
+            }
+            reLinkerInstance.libraryLoader.loadPath(workaroundLibFile.getAbsolutePath());
+            reLinkerInstance.loadedLibraries.add(str);
+            log("%s (%s) was re-linked!", str, str2);
+        }
+    }
+
+    public void cleanupOldLibFiles(Context context, String str, String str2) {
+        File workaroundLibDir = getWorkaroundLibDir(context);
+        File workaroundLibFile = getWorkaroundLibFile(context, str, str2);
+        final String mapLibraryName = this.libraryLoader.mapLibraryName(str);
+        File[] listFiles = workaroundLibDir.listFiles(new FilenameFilter() { // from class: com.getkeepsafe.relinker.ReLinkerInstance.2
+            @Override // java.io.FilenameFilter
+            public boolean accept(File file, String str3) {
+                return str3.startsWith(mapLibraryName);
+            }
+        });
+        if (listFiles == null) {
+            return;
+        }
+        for (File file : listFiles) {
+            if (this.force || !file.getAbsolutePath().equals(workaroundLibFile.getAbsolutePath())) {
+                file.delete();
+            }
+        }
+    }
+
+    public File getWorkaroundLibDir(Context context) {
+        return context.getDir("lib", 0);
+    }
+
+    public File getWorkaroundLibFile(Context context, String str, String str2) {
+        String mapLibraryName = this.libraryLoader.mapLibraryName(str);
+        return TextUtils.isEmpty(str2) ? new File(getWorkaroundLibDir(context), mapLibraryName) : new File(getWorkaroundLibDir(context), a.B(mapLibraryName, ".", str2));
+    }
+
+    public void loadLibrary(Context context, String str) {
+        loadLibrary(context, str, null, null);
+    }
+
+    public void log(String str) {
+    }
+
+    public ReLinkerInstance(ReLinker.LibraryLoader libraryLoader, ReLinker.LibraryInstaller libraryInstaller) {
+        this.loadedLibraries = new HashSet();
+        if (libraryLoader == null) {
+            throw new IllegalArgumentException("Cannot pass null library loader");
+        }
+        if (libraryInstaller == null) {
+            throw new IllegalArgumentException("Cannot pass null library installer");
+        }
+        this.libraryLoader = libraryLoader;
+        this.libraryInstaller = libraryInstaller;
+    }
+
+    public void loadLibrary(Context context, String str, String str2, ReLinker.LoadListener loadListener) {
+        if (context == null) {
+            throw new IllegalArgumentException("Given context is null");
+        }
+        if (TextUtils.isEmpty(str)) {
+            throw new IllegalArgumentException("Given library is either null or empty");
+        }
+        log("Beginning load of %s...", str);
+        if (loadListener == null) {
+            loadLibraryInternal(context, str, str2);
+        } else {
+            new Thread(new Runnable(context, str, str2, loadListener) { // from class: com.getkeepsafe.relinker.ReLinkerInstance.1
+                final /* synthetic */ Context val$context;
+                final /* synthetic */ String val$library;
+                final /* synthetic */ String val$version;
+
+                /* JADX WARN: Code restructure failed: missing block: B:7:?, code lost:
+                
+                    throw null;
+                 */
+                /* JADX WARN: Code restructure failed: missing block: B:8:?, code lost:
+                
+                    throw null;
+                 */
+                @Override // java.lang.Runnable
+                /*
+                    Code decompiled incorrectly, please refer to instructions dump.
+                */
+                public void run() {
+                    try {
+                        ReLinkerInstance.this.loadLibraryInternal(this.val$context, this.val$library, this.val$version);
+                        throw null;
+                    } catch (MissingLibraryException unused) {
+                        throw null;
+                    } catch (UnsatisfiedLinkError unused2) {
+                        throw null;
+                    }
+                }
+            }).start();
+        }
+    }
+
+    public void log(String str, Object... objArr) {
+        log(String.format(Locale.US, str, objArr));
+    }
+}

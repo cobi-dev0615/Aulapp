@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="right"
+    android:layout_gravity="right"
+    android:orientation="horizontal"
+    android:id="@+id/retake_lay"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+    <TextView
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/id_retake_q"
+        android:maxLines="3"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/retake_yes"
+        android:padding="10dp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="0dp"
+        android:text="@string/id_retake_string"/>
+</LinearLayout>

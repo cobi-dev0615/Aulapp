@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spoof_layout"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/identy_fin_rounded_corner"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true">
+        <TextView
+            android:textSize="23sp"
+            android:textColor="@color/id_location_error_bg"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/id_spoof_tip_1"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+</RelativeLayout>

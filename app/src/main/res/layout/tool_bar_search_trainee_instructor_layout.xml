@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_icon_row_tool_bar_search_trainee_instructor"
+        android:background="@drawable/ic_arrow_back"
+        android:layout_width="18dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"/>
+    <include
+        android:id="@+id/search_bar_custom"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        layout="@layout/search_bar_custom_layout"/>
+</LinearLayout>

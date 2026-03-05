@@ -1,0 +1,67 @@
+package com.nimbusds.jose.jwk;
+
+import java.text.ParseException;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+/* loaded from: classes2.dex */
+public enum KeyOperation {
+    SIGN("sign"),
+    VERIFY("verify"),
+    ENCRYPT("encrypt"),
+    DECRYPT("decrypt"),
+    WRAP_KEY("wrapKey"),
+    UNWRAP_KEY("unwrapKey"),
+    DERIVE_KEY("deriveKey"),
+    DERIVE_BITS("deriveBits");
+
+    private final String identifier;
+
+    KeyOperation(String str) {
+        if (str == null) {
+            throw new IllegalArgumentException("The key operation identifier must not be null");
+        }
+        this.identifier = str;
+    }
+
+    public static Set<KeyOperation> parse(List<String> list) {
+        KeyOperation keyOperation;
+        if (list == null) {
+            return null;
+        }
+        LinkedHashSet linkedHashSet = new LinkedHashSet();
+        for (String str : list) {
+            if (str != null) {
+                KeyOperation[] values = values();
+                int length = values.length;
+                int i = 0;
+                while (true) {
+                    if (i >= length) {
+                        keyOperation = null;
+                        break;
+                    }
+                    keyOperation = values[i];
+                    if (str.equals(keyOperation.identifier())) {
+                        break;
+                    }
+                    i++;
+                }
+                if (keyOperation == null) {
+                    throw new ParseException("Invalid JWK operation: ".concat(str), 0);
+                }
+                linkedHashSet.add(keyOperation);
+            }
+        }
+        return linkedHashSet;
+    }
+
+    public String identifier() {
+        return this.identifier;
+    }
+
+    @Override // java.lang.Enum
+    public String toString() {
+        return identifier();
+    }
+}

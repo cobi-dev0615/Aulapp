@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_qr_instructions">
+        <item>Ingrese a Aulapp web.</item>
+        <item>Diríjase a la opción Procesos.</item>
+        <item>Ingrese al detalle del proceso del aprendiz.</item>
+        <item>Haga clic en la opción Validar identidad.</item>
+        <item>Cuando se presente el código QR presione el botón leer QR.</item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs_dev">
+        <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs_prod">
+        <item>MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK</item>
+    </array>
+    <array name="flash_entries">
+        <item>Flash Off</item>
+        <item>Flash Auto</item>
+        <item>Flash On</item>
+        <item>Torch</item>
+        <item>Red Eye</item>
+        <item>Screen Flash Auto</item>
+        <item>Screen Flash On</item>
+    </array>
+    <array name="flash_icons">
+        <item>drawable/flash_off</item>
+        <item>drawable/flash_auto</item>
+        <item>drawable/flash_on</item>
+        <item>drawable/flash_torch</item>
+        <item>drawable/flash_red_eye</item>
+        <item>drawable/flash_auto</item>
+        <item>drawable/flash_on</item>
+    </array>
+    <array name="flash_values">
+        <item>flash_off</item>
+        <item>flash_auto</item>
+        <item>flash_on</item>
+        <item>flash_torch</item>
+        <item>flash_red_eye</item>
+        <item>flash_frontscreen_auto</item>
+        <item>flash_frontscreen_on</item>
+    </array>
+    <array name="focus_mode_entries">
+        <item>Focus Auto</item>
+        <item>Focus Infinity</item>
+        <item>Focus Macro</item>
+        <item>Focus Locked</item>
+        <item>Focus Manual</item>
+        <item>Focus Fixed</item>
+        <item>Focus EDOF</item>
+        <item>Focus Continuous Picture</item>
+        <item>Focus Continuous Video</item>
+    </array>
+    <array name="focus_mode_icons">
+        <item>drawable/focus_mode_auto</item>
+        <item>drawable/focus_mode_infinity</item>
+        <item>drawable/focus_mode_macro</item>
+        <item>drawable/focus_mode_locked</item>
+        <item>drawable/focus_mode_manual</item>
+        <item>drawable/focus_mode_fixed</item>
+        <item>drawable/focus_mode_edof</item>
+        <item>drawable/focus_mode_continuous_picture</item>
+        <item>drawable/focus_mode_continuous_video</item>
+    </array>
+    <array name="focus_mode_values">
+        <item>focus_mode_auto</item>
+        <item>focus_mode_infinity</item>
+        <item>focus_mode_macro</item>
+        <item>focus_mode_locked</item>
+        <item>focus_mode_manual2</item>
+        <item>focus_mode_fixed</item>
+        <item>focus_mode_edof</item>
+        <item>focus_mode_continuous_picture</item>
+        <item>focus_mode_continuous_video</item>
+    </array>
+    <array name="preference_angle_highlight_color_entries">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Purple</item>
+        <item>White</item>
+    </array>
+    <array name="preference_angle_highlight_color_values">
+        <item>#f44336</item>
+        <item>#14e715</item>
+        <item>#2196f3</item>
+        <item>#ffeb3b</item>
+        <item>#9c27b0</item>
+        <item>#ffffff</item>
+    </array>
+    <array name="preference_burst_interval_entries">
+        <item>No delay</item>
+        <item>1s</item>
+        <item>2s</item>
+        <item>3s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>20s</item>
+        <item>30s</item>
+        <item>1m</item>
+        <item>2m</item>
+        <item>5m</item>
+        <item>10m</item>
+        <item>20m</item>
+        <item>30m</item>
+        <item>1h</item>
+        <item>2h</item>
+    </array>
+    <array name="preference_burst_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>3600</item>
+        <item>7200</item>
+    </array>
+    <array name="preference_burst_mode_entries">
+        <item>Off</item>
+        <item>2x</item>
+        <item>3x</item>
+        <item>4x</item>
+        <item>5x</item>
+        <item>10x</item>
+        <item>Unlimited</item>
+    </array>
+    <array name="preference_burst_mode_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>unlimited</item>
+    </array>
+    <array name="preference_crop_guide_entries">
+        <item>None</item>
+        <item>1 (1:1)</item>
+        <item>1.25 (5:4)</item>
+        <item>1.33 (4:3)</item>
+        <item>1.4 (7:4)</item>
+        <item>1.5 (3:2)</item>
+        <item>1.78 (16:9)</item>
+        <item>1.85 (37:20)</item>
+        <item>2.33 (21:9)</item>
+        <item>2.35 (47:20)</item>
+        <item>2.4 (12:5)</item>
+    </array>
+    <array name="preference_crop_guide_values">
+        <item>crop_guide_none</item>
+        <item>crop_guide_1</item>
+        <item>crop_guide_1.25</item>
+        <item>crop_guide_1.33</item>
+        <item>crop_guide_1.4</item>
+        <item>crop_guide_1.5</item>
+        <item>crop_guide_1.78</item>
+        <item>crop_guide_1.85</item>
+        <item>crop_guide_2.33</item>
+        <item>crop_guide_2.35</item>
+        <item>crop_guide_2.4</item>
+    </array>
+    <array name="preference_expo_bracketing_n_images_entries">
+        <item>3</item>
+        <item>5</item>
+    </array>
+    <array name="preference_expo_bracketing_n_images_values">
+        <item>3</item>
+        <item>5</item>
+    </array>
+    <array name="preference_expo_bracketing_stops_entries">
+        <item>0.5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="preference_expo_bracketing_stops_values">
+        <item>0.5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="preference_front_camera_mirror_entries">
+        <item>No mirror</item>
+        <item>Mirror photo</item>
+    </array>
+    <array name="preference_front_camera_mirror_values">
+        <item>preference_front_camera_mirror_no</item>
+        <item>preference_front_camera_mirror_photo</item>
+    </array>
+    <array name="preference_grid_entries">
+        <item>None</item>
+        <item>3x3</item>
+        <item>Phi 3x3</item>
+        <item>4x2</item>
+        <item>Crosshair</item>
+        <item>Golden (1)</item>
+        <item>Golden (2)</item>
+        <item>Golden (3)</item>
+        <item>Golden (4)</item>
+        <item>Triangle (1)</item>
+        <item>Triangle (2)</item>
+        <item>Diagonals</item>
+    </array>
+    <array name="preference_grid_values">
+        <item>preference_grid_none</item>
+        <item>preference_grid_3x3</item>
+        <item>preference_grid_phi_3x3</item>
+        <item>preference_grid_4x2</item>
+        <item>preference_grid_crosshair</item>
+        <item>preference_grid_golden_spiral_right</item>
+        <item>preference_grid_golden_spiral_left</item>
+        <item>preference_grid_golden_spiral_upside_down_right</item>
+        <item>preference_grid_golden_spiral_upside_down_left</item>
+        <item>preference_grid_golden_triangle_1</item>
+        <item>preference_grid_golden_triangle_2</item>
+        <item>preference_grid_diagonals</item>
+    </array>
+    <array name="preference_immersive_mode_entries">
+        <item>Off</item>
+        <item>Only hide on-screen virtual navigation buttons</item>
+        <item>Hide GUI</item>
+        <item>Hide everything</item>
+    </array>
+    <array name="preference_immersive_mode_values">
+        <item>immersive_mode_off</item>
+        <item>immersive_mode_low_profile</item>
+        <item>immersive_mode_gui</item>
+        <item>immersive_mode_everything</item>
+    </array>
+    <array name="preference_lock_orientation_entries">
+        <item>No lock</item>
+        <item>Lock to landscape</item>
+        <item>Lock to portrait</item>
+    </array>
+    <array name="preference_lock_orientation_values">
+        <item>none</item>
+        <item>landscape</item>
+        <item>portrait</item>
+    </array>
+    <array name="preference_preview_size_entries">
+        <item>Maximise preview size</item>
+        <item>Match photo size (WYSIWYG)</item>
+    </array>
+    <array name="preference_preview_size_values">
+        <item>preference_preview_size_display</item>
+        <item>preference_preview_size_wysiwyg</item>
+    </array>
+    <array name="preference_raw_entries">
+        <item>JPEG only</item>
+        <item>JPEG and DNG (RAW)</item>
+    </array>
+    <array name="preference_raw_values">
+        <item>preference_raw_no</item>
+        <item>preference_raw_yes</item>
+    </array>
+    <array name="preference_rotate_preview_entries">
+        <item>Don\'t rotate</item>
+        <item>Rotate 180 degrees</item>
+    </array>
+    <array name="preference_rotate_preview_values">
+        <item>0</item>
+        <item>180</item>
+    </array>
+    <array name="preference_save_zulu_time_entries">
+        <item>Local Time</item>
+        <item>UTC (Zulu)</item>
+    </array>
+    <array name="preference_save_zulu_time_values">
+        <item>local</item>
+        <item>zulu</item>
+    </array>
+    <array name="preference_stamp_dateformat_entries">
+        <item>Default</item>
+        <item>yyyy/mm/dd</item>
+        <item>dd/mm/yyyy</item>
+        <item>mm/dd/yyyy</item>
+        <item>None</item>
+    </array>
+    <array name="preference_stamp_dateformat_values">
+        <item>preference_stamp_dateformat_default</item>
+        <item>preference_stamp_dateformat_yyyymmdd</item>
+        <item>preference_stamp_dateformat_ddmmyyyy</item>
+        <item>preference_stamp_dateformat_mmddyyyy</item>
+        <item>preference_stamp_dateformat_none</item>
+    </array>
+    <array name="preference_stamp_entries">
+        <item>No stamp</item>
+        <item>Stamp photos</item>
+    </array>
+    <array name="preference_stamp_fontsize_entries">
+        <item>6</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+    </array>
+    <array name="preference_stamp_fontsize_values">
+        <item>6</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+    </array>
+    <array name="preference_stamp_gpsformat_entries">
+        <item>Default</item>
+        <item>Degrees/minutes/seconds</item>
+        <item>None</item>
+    </array>
+    <array name="preference_stamp_gpsformat_values">
+        <item>preference_stamp_gpsformat_default</item>
+        <item>preference_stamp_gpsformat_dms</item>
+        <item>preference_stamp_gpsformat_none</item>
+    </array>
+    <array name="preference_stamp_style_entries">
+        <item>Shadowed text</item>
+        <item>Plain text</item>
+    </array>
+    <array name="preference_stamp_style_values">
+        <item>preference_stamp_style_shadowed</item>
+        <item>preference_stamp_style_plain</item>
+    </array>
+    <array name="preference_stamp_timeformat_entries">
+        <item>Default</item>
+        <item>12 hour</item>
+        <item>24 hour</item>
+        <item>None</item>
+    </array>
+    <array name="preference_stamp_timeformat_values">
+        <item>preference_stamp_timeformat_default</item>
+        <item>preference_stamp_timeformat_12hour</item>
+        <item>preference_stamp_timeformat_24hour</item>
+        <item>preference_stamp_timeformat_none</item>
+    </array>
+    <array name="preference_stamp_values">
+        <item>preference_stamp_no</item>
+        <item>preference_stamp_yes</item>
+    </array>
+    <array name="preference_timer_entries">
+        <item>Off</item>
+        <item>1s</item>
+        <item>2s</item>
+        <item>3s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>20s</item>
+        <item>30s</item>
+        <item>1m</item>
+        <item>2m</item>
+        <item>5m</item>
+    </array>
+    <array name="preference_timer_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+    </array>
+    <array name="preference_touch_capture_entries">
+        <item>None</item>
+        <item>Single touch</item>
+        <item>Double tap</item>
+    </array>
+    <array name="preference_touch_capture_values">
+        <item>none</item>
+        <item>single</item>
+        <item>double</item>
+    </array>
+    <array name="preference_ui_placement_entries">
+        <item>Left-handed user interface</item>
+        <item>Right-handed user interface</item>
+    </array>
+    <array name="preference_ui_placement_values">
+        <item>ui_left</item>
+        <item>ui_right</item>
+    </array>
+    <array name="preference_video_bitrate_entries">
+        <item>Default</item>
+        <item>100kbps</item>
+        <item>200kbps</item>
+        <item>500kbps</item>
+        <item>1Mbps</item>
+        <item>2Mbps</item>
+        <item>3Mbps</item>
+        <item>4Mbps</item>
+        <item>5Mbps</item>
+        <item>6Mbps</item>
+        <item>7Mbps</item>
+        <item>8Mbps</item>
+        <item>9Mbps</item>
+        <item>10Mbps</item>
+        <item>15Mbps</item>
+        <item>20Mbps</item>
+        <item>30Mbps</item>
+        <item>40Mbps</item>
+        <item>50Mbps</item>
+        <item>60Mbps</item>
+        <item>70Mbps</item>
+        <item>80Mbps</item>
+        <item>90Mbps</item>
+        <item>100Mbps</item>
+    </array>
+    <array name="preference_video_bitrate_values">
+        <item>default</item>
+        <item>100000</item>
+        <item>200000</item>
+        <item>500000</item>
+        <item>1000000</item>
+        <item>2000000</item>
+        <item>3000000</item>
+        <item>4000000</item>
+        <item>5000000</item>
+        <item>6000000</item>
+        <item>7000000</item>
+        <item>8000000</item>
+        <item>9000000</item>
+        <item>10000000</item>
+        <item>15000000</item>
+        <item>20000000</item>
+        <item>30000000</item>
+        <item>40000000</item>
+        <item>50000000</item>
+        <item>60000000</item>
+        <item>70000000</item>
+        <item>80000000</item>
+        <item>90000000</item>
+        <item>100000000</item>
+    </array>
+    <array name="preference_volume_keys_entries">
+        <item>Take photo (or start/stop video recording)</item>
+        <item>Focus</item>
+        <item>Zoom in/out</item>
+        <item>Change exposure level</item>
+        <item>Switch auto-level on/off</item>
+        <item>Change device volume</item>
+        <item>Do nothing</item>
+    </array>
+    <array name="preference_volume_keys_values">
+        <item>volume_take_photo</item>
+        <item>volume_focus</item>
+        <item>volume_zoom</item>
+        <item>volume_exposure</item>
+        <item>volume_auto_stabilise</item>
+        <item>volume_nothing</item>
+        <item>volume_really_nothing</item>
+    </array>
+    <array name="preloaded_fonts">
+        <item>@font/montserrat</item>
+    </array>
+</resources>

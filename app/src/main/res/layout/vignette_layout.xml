@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/qr_instruction_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textview_number_vignette"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="1."
+        android:layout_weight="20"
+        style="@style/style_message_qr_instructions_normal"/>
+    <TextView
+        android:id="@+id/textview_content_vignette"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Contenido del enumerado de cada uno de los elementos que se incluyen en el  arregloe las cosas de esto"
+        android:layout_weight="1"
+        style="@style/style_message_qr_instructions_normal"/>
+</LinearLayout>

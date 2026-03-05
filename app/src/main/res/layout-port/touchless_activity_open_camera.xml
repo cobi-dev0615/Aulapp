@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/identy_fin_s_main_header"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+        <org.c.a.PngjBadCrcException
+            android:id="@+id/tracking_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+        <com.identy.ui.PngjBadCrcException
+            android:id="@+id/scanner_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/inline_guide"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-32dp"
+            android:src="@drawable/identy_guide"
+            android:layout_centerHorizontal="true"/>
+        <include layout="@layout/identy_fin_support_centered_text_view"/>
+        <include layout="@layout/identy_fin_support_centered_location_error_view"/>
+        <include layout="@layout/identy_fin_support_centered_spoof_view"/>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/preview"
+            layout="@layout/identy_fin_support_below_preview"/>
+        <include
+            android:id="@+id/change_hand"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            layout="@layout/identy_main_change_hand"/>
+        <include
+            android:id="@+id/id_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            layout="@layout/touchless_main_back_button"/>
+    </RelativeLayout>
+</LinearLayout>

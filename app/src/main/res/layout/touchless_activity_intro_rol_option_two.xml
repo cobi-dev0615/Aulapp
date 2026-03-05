@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#ffffff"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#00409e"
+                android:gravity="center"
+                android:id="@+id/tvTutorialTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Finger Rotation Capture"/>
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#00409e"
+                android:id="@+id/tvStep1Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="1. Front Capture"
+                android:layout_below="@+id/tvTutorialTitle"/>
+            <ImageView
+                android:id="@+id/ivStep1Animation"
+                android:background="#f5f5f5"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/id_rol_left_capture_first_side"
+                android:layout_below="@+id/tvStep1Title"
+                android:contentDescription="GIF showing finger in horizontal position"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:id="@+id/tvStep1Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Place your finger in front of the camera."
+                android:layout_below="@+id/ivStep1Animation"/>
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#00409e"
+                android:id="@+id/tvStep2Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="2. Rotate 45º Down"
+                android:layout_below="@+id/tvStep1Description"/>
+            <ImageView
+                android:id="@+id/ivStep2Animation"
+                android:background="#f5f5f5"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/id_rol_left_capture_second_side"
+                android:layout_below="@+id/tvStep2Title"
+                android:contentDescription="GIF showing finger rotating 45 degrees downward"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:id="@+id/tvStep2Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Rotate your finger 45º downward (clockwise, as if turning a key to the right), keeping it in front of the camera."
+                android:layout_below="@+id/ivStep2Animation"/>
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#00409e"
+                android:id="@+id/tvStep3Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="3. Rotate 45º Up"
+                android:layout_below="@+id/tvStep2Description"/>
+            <ImageView
+                android:id="@+id/ivStep3Animation"
+                android:background="#f5f5f5"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/id_rol_left_capture_third_side"
+                android:layout_below="@+id/tvStep3Title"
+                android:contentDescription="GIF showing finger rotating 45 degrees upward"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:id="@+id/tvStep3Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="From the front position, rotate your finger 45º upward (counterclockwise, as if turning a key to the left)."
+                android:layout_below="@+id/ivStep3Animation"/>
+        </RelativeLayout>
+    </ScrollView>
+    <CheckBox
+        android:gravity="center"
+        android:id="@+id/intro_no_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:checked="false"
+        android:text="@string/id_dshow_again"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/montserrat_regular"/>
+    <Button
+        android:textColor="#ffffff"
+        android:id="@+id/intro_skip"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Start Capture"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#00409e"/>
+</RelativeLayout>

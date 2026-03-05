@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_details_aprrentices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomCardViewWithoutStroke">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_apprentices_gray"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textAppearance="@style/text_small_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/profile_trainee"
+                    android:layout_marginHorizontal="@dimen/card_info_user_margin_horizontal_profile_user"/>
+                <TextView
+                    android:textAppearance="@style/body_item_instructor_user_query"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_aprrentice_name_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/enum_user_profile_apprentice"
+                    android:layout_marginHorizontal="@dimen/card_info_user_margin_horizontal_profile_user"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

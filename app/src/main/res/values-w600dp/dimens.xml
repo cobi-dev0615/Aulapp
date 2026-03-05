@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_margin_bottom_version_app">40dp</dimen>
+    <dimen name="dimen_margin_top_button_login">20dp</dimen>
+    <dimen name="dimen_margin_top_image_login">68dp</dimen>
+    <dimen name="dimen_margin_top_logo_login">47dp</dimen>
+    <dimen name="dimen_margin_top_recovery_password_login">30dp</dimen>
+    <dimen name="dimen_margin_top_version_app">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="layout_margin_top_profile_user">50dp</dimen>
+    <dimen name="margin_bottom_recycler_view_step_profile_user">60dp</dimen>
+    <dimen name="margin_top_button_help_profile_user">37dp</dimen>
+    <dimen name="margin_top_recycler_view_step_profile_user">52dp</dimen>
+</resources>

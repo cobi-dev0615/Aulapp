@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btn_show_ride"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/primary_button_show_ride"
+    android:fontFamily="@font/montserrat_regular"
+    android:paddingHorizontal="@dimen/dimen_padding_horizontal_button_login"
+    android:paddingVertical="@dimen/dimen_padding_vertical_button_login"
+    style="@style/button_show_histori_ride"/>

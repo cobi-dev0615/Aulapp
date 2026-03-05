@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_cloud_green"
+        android:id="@+id/action_sync"
+        android:orderInCategory="100"
+        android:title="@string/action_sync"
+        android:contentDescription="@string/action_sync"
+        android:tooltipText="@string/action_sync"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_logout"
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/content_item_title_menu_instructor_trainee_query"
+        android:contentDescription="@string/content_item_logout_menu_instructor_trainee_query"
+        android:tooltipText="@string/tooltip_text_item_menu_instructor_trainee_query"
+        app:showAsAction="ifRoom"/>
+</menu>

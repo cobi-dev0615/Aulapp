@@ -1,0 +1,43 @@
+package co.ceduladigital.sdk;
+
+import androidx.collection.ArrayMap;
+import androidx.fragment.app.DefaultSpecialEffectsController;
+import androidx.fragment.app.SpecialEffectsController;
+import com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator;
+import com.google.firebase.crashlytics.internal.metadata.EventMetadata;
+import com.google.firebase.crashlytics.internal.model.CrashlyticsReport;
+
+/* loaded from: classes.dex */
+public final /* synthetic */ class t3 implements Runnable {
+    public final /* synthetic */ int a = 0;
+    public final /* synthetic */ boolean b;
+    public final /* synthetic */ Object c;
+    public final /* synthetic */ Object d;
+    public final /* synthetic */ Object e;
+
+    public /* synthetic */ t3(SpecialEffectsController.Operation operation, SpecialEffectsController.Operation operation2, boolean z, ArrayMap arrayMap) {
+        this.c = operation;
+        this.d = operation2;
+        this.b = z;
+        this.e = arrayMap;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        switch (this.a) {
+            case 0:
+                DefaultSpecialEffectsController.startTransitions$lambda$9((SpecialEffectsController.Operation) this.c, (SpecialEffectsController.Operation) this.d, this.b, (ArrayMap) this.e);
+                break;
+            default:
+                ((SessionReportingCoordinator) this.c).lambda$persistEvent$0((CrashlyticsReport.Session.Event) this.d, (EventMetadata) this.e, this.b);
+                break;
+        }
+    }
+
+    public /* synthetic */ t3(SessionReportingCoordinator sessionReportingCoordinator, CrashlyticsReport.Session.Event event, EventMetadata eventMetadata, boolean z) {
+        this.c = sessionReportingCoordinator;
+        this.d = event;
+        this.e = eventMetadata;
+        this.b = z;
+    }
+}

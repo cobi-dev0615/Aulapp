@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_container_class_card_section"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/cl_container_class_card_section_marginHorizontal"
+    android:layout_marginVertical="@dimen/cl_container_class_card_section_marginVertical">
+    <TextView
+        android:textAppearance="@style/tv_class_date_appearance"
+        android:id="@+id/tv_class_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_class_date_text"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toStartOf="@+id/tv_class_day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textAppearance="@style/tv_class_day_appearance"
+        android:id="@+id/tv_class_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_class_day_text"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_class_date"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_class_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rv_class_card_section_marginTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_class_date"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
