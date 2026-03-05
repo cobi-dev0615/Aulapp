@@ -32,7 +32,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class Enroll2TActivity extends FingerActivity {
@@ -252,7 +251,7 @@ public class Enroll2TActivity extends FingerActivity {
         long j;
         char c7 = '\t';
         int i5 = $10 + 9;
-        $11 = i5 % Uuid.SIZE_BITS;
+        $11 = i5 % 128;
         char c8 = 2;
         if (i5 % 2 == 0) {
             throw null;
@@ -265,7 +264,7 @@ public class Enroll2TActivity extends FingerActivity {
         long j2 = 0;
         if (cArr2 != null) {
             int i7 = $10 + 21;
-            $11 = i7 % Uuid.SIZE_BITS;
+            $11 = i7 % 128;
             if (i7 % 2 == 0) {
                 length = cArr2.length;
                 cArr = new char[length];
@@ -294,7 +293,7 @@ public class Enroll2TActivity extends FingerActivity {
                     }
                     cArr[i8] = ((Character) ((Method) PngjBadSignature).invoke(null, objArr2)).charValue();
                     i8++;
-                    $10 = ($11 + 71) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 71) % 128;
                     i6 = i4;
                     c7 = c5;
                     c8 = c6;
@@ -336,7 +335,7 @@ public class Enroll2TActivity extends FingerActivity {
                 if (i11 >= i2) {
                     break;
                 }
-                $11 = ($10 + 29) % Uuid.SIZE_BITS;
+                $11 = ($10 + 29) % 128;
                 char c11 = charArray[i11];
                 pngjInputException.valueOf = c11;
                 char c12 = charArray[i11 + 1];
@@ -444,7 +443,7 @@ public class Enroll2TActivity extends FingerActivity {
         int i25 = 0;
         while (i25 < i) {
             int i26 = $11 + 49;
-            $10 = i26 % Uuid.SIZE_BITS;
+            $10 = i26 % 128;
             if (i26 % 2 != 0) {
                 cArr3[i25] = (char) (cArr3[i25] ^ 26054);
                 i25 += 38;
@@ -468,12 +467,12 @@ public class Enroll2TActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
     public final void PngjBadSignature(List<HashMap<Pair<Hand, Finger>, a>> list, boolean z, boolean z2, HashMap<Pair<Hand, Finger>, Float> hashMap) {
-        getOveralTimetaken = (getScore + 53) % Uuid.SIZE_BITS;
+        getOveralTimetaken = (getScore + 53) % 128;
         this.valueOf = 0;
         if (!z) {
             super.PngjBadSignature(list, z, z2, hashMap);
             int i = getOveralTimetaken + 63;
-            getScore = i % Uuid.SIZE_BITS;
+            getScore = i % 128;
             if (i % 2 != 0) {
                 throw null;
             }
@@ -482,7 +481,7 @@ public class Enroll2TActivity extends FingerActivity {
         this.valueOf = 1;
         super.PngjBadSignature(list, z, z2, hashMap);
         int i2 = getOveralTimetaken + 9;
-        getScore = i2 % Uuid.SIZE_BITS;
+        getScore = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
@@ -503,7 +502,7 @@ public class Enroll2TActivity extends FingerActivity {
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0026, code lost:
     
         r6 = com.identy.Enroll2TActivity.getOveralTimetaken + 91;
-        com.identy.Enroll2TActivity.getScore = r6 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.Enroll2TActivity.getScore = r6 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0030, code lost:
     
@@ -540,7 +539,7 @@ public class Enroll2TActivity extends FingerActivity {
         r5.onErrorResponse.PngjException(com.identy.R.string.id_processing);
         new com.identy.getAsHighestSecurityLevelReached(r4, new com.identy.Enroll2TActivity.PngjException(r4, r6, r7)).PngjException(r5.values, com.identy.e1.PngjInputException);
         r6 = com.identy.Enroll2TActivity.getScore + 15;
-        com.identy.Enroll2TActivity.getOveralTimetaken = r6 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.Enroll2TActivity.getOveralTimetaken = r6 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0067, code lost:
     
@@ -559,7 +558,7 @@ public class Enroll2TActivity extends FingerActivity {
         HashMap<Pair<Hand, Finger>, a> hashMap4;
         Enroll2TActivity enroll2TActivity;
         int i = getScore + 49;
-        getOveralTimetaken = i % Uuid.SIZE_BITS;
+        getOveralTimetaken = i % 128;
         if (i % 2 == 0) {
             this.valueOf = 1;
             super.PngjException(hashMap, hashMap2, bitmap, z, z2);
@@ -614,7 +613,7 @@ public class Enroll2TActivity extends FingerActivity {
                     Object[] objArr4 = new Object[1];
                     c("\b\n\u0006\u0012\b\u0006\u0018\u0011\u0006\t\f\u0012\u0006\u000b㘁", 16 - (Process.getElapsedCpuTime() > 0L ? 1 : (Process.getElapsedCpuTime() == 0L ? 0 : -1)), (byte) (2 - (TypedValue.complexToFloat(0) > 0.0f ? 1 : (TypedValue.complexToFloat(0) == 0.0f ? 0 : -1))), objArr4);
                     if (j2 >= ((Long) cls.getDeclaredMethod((String) objArr4[0], null).invoke(null, null)).longValue()) {
-                        getScore = (getOveralTimetaken + 59) % Uuid.SIZE_BITS;
+                        getScore = (getOveralTimetaken + 59) % 128;
                         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                         if (PngjBadSignature2 == null) {
                             char doubleTapTimeout = (char) (14830 - (ViewConfiguration.getDoubleTapTimeout() >> 16));
@@ -659,11 +658,11 @@ public class Enroll2TActivity extends FingerActivity {
                         ArrayList arrayList = new ArrayList();
                         String[] strArr3 = (String[]) objArr[2];
                         if (strArr3 != null) {
-                            getScore = (getOveralTimetaken + 31) % Uuid.SIZE_BITS;
+                            getScore = (getOveralTimetaken + 31) % 128;
                             int i18 = 0;
                             while (i18 < strArr3.length) {
                                 int i19 = getOveralTimetaken + 75;
-                                getScore = i19 % Uuid.SIZE_BITS;
+                                getScore = i19 % 128;
                                 if (i19 % 2 != 0) {
                                     arrayList.add(strArr3[i18]);
                                     i18 += 40;
@@ -753,11 +752,11 @@ public class Enroll2TActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
-        getScore = (getOveralTimetaken + 89) % Uuid.SIZE_BITS;
+        getScore = (getOveralTimetaken + 89) % 128;
         super.onCreate(bundle);
         this.valueOf = 0;
         int i = getScore + 67;
-        getOveralTimetaken = i % Uuid.SIZE_BITS;
+        getOveralTimetaken = i % 128;
         if (i % 2 == 0) {
             int i2 = 75 / 0;
         }
@@ -765,22 +764,22 @@ public class Enroll2TActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
-        getOveralTimetaken = (getScore + 51) % Uuid.SIZE_BITS;
+        getOveralTimetaken = (getScore + 51) % 128;
         super.onPause();
-        getScore = (getOveralTimetaken + 25) % Uuid.SIZE_BITS;
+        getScore = (getOveralTimetaken + 25) % 128;
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
         int i = getScore + 27;
-        getOveralTimetaken = i % Uuid.SIZE_BITS;
+        getOveralTimetaken = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 == 0) {
             throw null;
         }
         int i3 = getOveralTimetaken + 101;
-        getScore = i3 % Uuid.SIZE_BITS;
+        getScore = i3 % 128;
         if (i3 % 2 != 0) {
             throw null;
         }
@@ -788,10 +787,10 @@ public class Enroll2TActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
-        getScore = (getOveralTimetaken + 9) % Uuid.SIZE_BITS;
+        getScore = (getOveralTimetaken + 9) % 128;
         super.onStart();
         int i = getOveralTimetaken + 95;
-        getScore = i % Uuid.SIZE_BITS;
+        getScore = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -803,7 +802,7 @@ public class Enroll2TActivity extends FingerActivity {
         try {
             try {
                 this.onErrorResponse = new isFoundMatchingTemplates(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
-                getOveralTimetaken = (getScore + 21) % Uuid.SIZE_BITS;
+                getOveralTimetaken = (getScore + 21) % 128;
             } catch (Exception unused) {
             }
         } catch (Exception unused2) {

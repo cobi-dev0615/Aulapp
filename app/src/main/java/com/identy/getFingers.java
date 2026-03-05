@@ -43,7 +43,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
-import kotlin.uuid.Uuid;
 import org.c.a.PngjBadCrcException;
 import org.identy.nativealgo.NativeAlgoUtils;
 import org.identy.opencv.core.Mat;
@@ -419,7 +418,7 @@ final class getFingers extends e1 {
                 if (i4 >= i) {
                     break;
                 }
-                $10 = ($11 + 99) % Uuid.SIZE_BITS;
+                $10 = ($11 + 99) % 128;
                 try {
                     Object[] objArr2 = {Integer.valueOf(PngjException[i2 + i4])};
                     Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1678178881);
@@ -464,7 +463,7 @@ final class getFingers extends e1 {
                         PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (Process.getGidForName(BuildConfig.FLAVOR) + 1), 35 - (ViewConfiguration.getMaximumFlingVelocity() >> 16), 155 - (ViewConfiguration.getMaximumDrawingCacheSize() >> 24), -868232591, false, "p", new Class[]{Object.class, Object.class});
                     }
                     ((Method) PngjBadSignature4).invoke(null, objArr4);
-                    $11 = ($10 + 31) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 31) % 128;
                 } catch (Throwable th) {
                     cause = th.getCause();
                     if (cause != null) {
@@ -482,7 +481,7 @@ final class getFingers extends e1 {
                 int i6 = onerrorresponse.PngjBadSignature;
                 if (i6 >= i) {
                     String str = new String(cArr);
-                    $10 = ($11 + 5) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 5) % 128;
                     objArr[0] = str;
                     return;
                 } else {
@@ -509,7 +508,7 @@ final class getFingers extends e1 {
             long j;
             int i4;
             if (str != null) {
-                $11 = ($10 + 67) % Uuid.SIZE_BITS;
+                $11 = ($10 + 67) % 128;
                 cArr = str.toCharArray();
             } else {
                 cArr = str;
@@ -568,7 +567,7 @@ final class getFingers extends e1 {
                 throw cause;
             }
             if (i2 > 0) {
-                $10 = ($11 + 55) % Uuid.SIZE_BITS;
+                $10 = ($11 + 55) % 128;
                 action.PngjException = i2;
                 char[] cArr4 = new char[i];
                 System.arraycopy(cArr3, 0, cArr4, 0, i);
@@ -578,17 +577,17 @@ final class getFingers extends e1 {
                 System.arraycopy(cArr4, i7, cArr3, 0, i - i7);
             }
             if (z) {
-                int i8 = ($11 + 51) % Uuid.SIZE_BITS;
+                int i8 = ($11 + 51) % 128;
                 $10 = i8;
                 char[] cArr5 = new char[i];
                 action.valueOf = 0;
-                $11 = (i8 + 11) % Uuid.SIZE_BITS;
+                $11 = (i8 + 11) % 128;
                 while (true) {
                     int i9 = action.valueOf;
                     if (i9 >= i) {
                         break;
                     }
-                    $10 = ($11 + 23) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 23) % 128;
                     cArr5[i9] = cArr3[(i - i9) - 1];
                     Object[] objArr4 = {action, action};
                     Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
@@ -682,7 +681,7 @@ final class getFingers extends e1 {
             try {
                 if (!getFingers.this.getL3Score) {
                     int i = PngjOutputException + 15;
-                    valueOf = i % Uuid.SIZE_BITS;
+                    valueOf = i % 128;
                     if (i % 2 != 0) {
                         IdentySdk.getInstance().getFingerPrintDrawable();
                         throw null;
@@ -696,7 +695,7 @@ final class getFingers extends e1 {
             } catch (Exception unused) {
             }
             int i2 = PngjOutputException + 47;
-            valueOf = i2 % Uuid.SIZE_BITS;
+            valueOf = i2 % 128;
             if (i2 % 2 != 0) {
                 throw null;
             }
@@ -833,7 +832,7 @@ final class getFingers extends e1 {
         int i5 = 0;
         if (iArr4 != null) {
             int i6 = $10 + 39;
-            $11 = i6 % Uuid.SIZE_BITS;
+            $11 = i6 % 128;
             if (i6 % 2 == 0) {
                 length = iArr4.length;
                 iArr3 = new int[length];
@@ -845,7 +844,7 @@ final class getFingers extends e1 {
             while (i7 < length) {
                 int i8 = $10 + 25;
                 int i9 = i3;
-                $11 = i8 % Uuid.SIZE_BITS;
+                $11 = i8 % 128;
                 if (i8 % 2 == 0) {
                     try {
                         Object[] objArr2 = {Integer.valueOf(iArr4[i7])};
@@ -913,7 +912,7 @@ final class getFingers extends e1 {
                 iArr6 = iArr2;
             }
             cArr = cArr3;
-            $10 = ($11 + 15) % Uuid.SIZE_BITS;
+            $10 = ($11 + 15) % 128;
             iArr6 = iArr7;
         } else {
             cArr = cArr3;
@@ -926,7 +925,7 @@ final class getFingers extends e1 {
                 objArr[0] = new String(cArr4, 0, i);
                 return;
             }
-            $11 = ($10 + 91) % Uuid.SIZE_BITS;
+            $11 = ($10 + 91) % 128;
             int i14 = iArr[i13];
             char c2 = (char) (i14 >> 16);
             cArr[0] = c2;
@@ -963,7 +962,7 @@ final class getFingers extends e1 {
                 pngBadCharsetException.PngjException = pngBadCharsetException.PngjBadCrcException;
                 pngBadCharsetException.PngjBadCrcException = intValue;
                 i15++;
-                $10 = ($11 + 51) % Uuid.SIZE_BITS;
+                $10 = ($11 + 51) % 128;
                 c4 = c;
                 i11 = 16;
             }
@@ -1117,7 +1116,7 @@ final class getFingers extends e1 {
         float floatValue = ((Number) objArr[5]).floatValue();
         Long l = (Long) objArr[6];
         int i = pfkrolGetQuality + 101;
-        resetAttempt = i % Uuid.SIZE_BITS;
+        resetAttempt = i % 128;
         int i2 = i % 2;
         getfingers.PngjBadCrcException(bArr, booleanValue, list, list2, floatValue, l);
         if (i2 == 0) {
@@ -1144,7 +1143,7 @@ final class getFingers extends e1 {
         com.identy.d.PngjBadSignature pngjBadSignature2 = getfingers.Attempt;
         if (pngjBadSignature2 != null) {
             int i2 = pfkrolGetQuality + 105;
-            resetAttempt = i2 % Uuid.SIZE_BITS;
+            resetAttempt = i2 % 128;
             if (i2 % 2 != 0) {
                 pngjBadSignature2.getData();
                 int i3 = 0 / 0;
@@ -1152,16 +1151,16 @@ final class getFingers extends e1 {
                 pngjBadSignature2.getData();
             }
         }
-        resetAttempt = (pfkrolGetQuality + 123) % Uuid.SIZE_BITS;
+        resetAttempt = (pfkrolGetQuality + 123) % 128;
         return null;
     }
 
     @Override // com.identy.e1
     public final RectF Action() {
-        pfkrolGetQuality = (resetAttempt + 21) % Uuid.SIZE_BITS;
+        pfkrolGetQuality = (resetAttempt + 21) % 128;
         RectF rectF = PngjException().get(0);
         int i = pfkrolGetQuality + 1;
-        resetAttempt = i % Uuid.SIZE_BITS;
+        resetAttempt = i % 128;
         if (i % 2 == 0) {
             return rectF;
         }
@@ -1171,7 +1170,7 @@ final class getFingers extends e1 {
     @Override // com.identy.e1
     public final void PngjBadCrcException() {
         int i = pfkrolGetQuality + 107;
-        resetAttempt = i % Uuid.SIZE_BITS;
+        resetAttempt = i % 128;
         int i2 = i % 2;
         this.getMatchingTime = false;
     }
@@ -1180,10 +1179,10 @@ final class getFingers extends e1 {
     public final Pair[] PngjExceptionInternal() {
         int i = pfkrolGetQuality;
         int i2 = i + 31;
-        resetAttempt = i2 % Uuid.SIZE_BITS;
+        resetAttempt = i2 % 128;
         Pair[] pairArr = i2 % 2 != 0 ? new Pair[]{this.pfkrol} : new Pair[]{this.pfkrol};
         int i3 = i + 7;
-        resetAttempt = i3 % Uuid.SIZE_BITS;
+        resetAttempt = i3 % 128;
         if (i3 % 2 != 0) {
             int i4 = 45 / 0;
         }
@@ -1200,11 +1199,11 @@ final class getFingers extends e1 {
         if (this.PngBadCharsetException || this.onErrorResponse || !PngjUnsupportedException) {
             return false;
         }
-        int i = (pfkrolGetQuality + 89) % Uuid.SIZE_BITS;
+        int i = (pfkrolGetQuality + 89) % 128;
         resetAttempt = i;
         this.getQualityScore++;
         if (this.CaptureThumbActivity) {
-            pfkrolGetQuality = (i + 9) % Uuid.SIZE_BITS;
+            pfkrolGetQuality = (i + 9) % 128;
             this.getL2Score.values(this.getPadSub3, this.getPadSub2, this.getData.intValue(), this.CaptureRolledFingersActivity);
         } else {
             this.getL2Score.values(this.getPadSub2, this.getPadSub3, this.getData.intValue(), this.CaptureRolledFingersActivity);
@@ -1219,7 +1218,7 @@ final class getFingers extends e1 {
             return true;
         }
         int i2 = pfkrolGetQuality + 47;
-        int i3 = i2 % Uuid.SIZE_BITS;
+        int i3 = i2 % 128;
         resetAttempt = i3;
         if (i2 % 2 != 0) {
             throw null;
@@ -1227,7 +1226,7 @@ final class getFingers extends e1 {
         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
         if (pngjBadSignature != null) {
             int i4 = i3 + 15;
-            pfkrolGetQuality = i4 % Uuid.SIZE_BITS;
+            pfkrolGetQuality = i4 % 128;
             if (i4 % 2 == 0) {
                 pngjBadSignature.getData();
                 throw null;
@@ -1246,13 +1245,13 @@ final class getFingers extends e1 {
     @Override // com.identy.e1
     public final void e1() {
         int i;
-        resetAttempt = (pfkrolGetQuality + 37) % Uuid.SIZE_BITS;
+        resetAttempt = (pfkrolGetQuality + 37) % 128;
         super.e1();
         FingerDetectionMode fingerDetectionMode = this.CapturePosition;
         FingerDetectionMode fingerDetectionMode2 = FingerDetectionMode.LEFT_THUMB;
         if (fingerDetectionMode.equals(fingerDetectionMode2)) {
             int i2 = pfkrolGetQuality + 53;
-            resetAttempt = i2 % Uuid.SIZE_BITS;
+            resetAttempt = i2 % 128;
             if (i2 % 2 != 0) {
                 this.CapturePosition = FingerDetectionMode.RIGHT_THUMB;
                 throw null;
@@ -1268,30 +1267,30 @@ final class getFingers extends e1 {
             e.printStackTrace();
         }
         if (this.a.equals(Hand.LEFT)) {
-            pfkrolGetQuality = (resetAttempt + 67) % Uuid.SIZE_BITS;
+            pfkrolGetQuality = (resetAttempt + 67) % 128;
             i = R.string.id_searching_left_thumb;
         } else {
             i = R.string.id_searching_right_thumb;
         }
         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
         if (pngjBadSignature != null) {
-            resetAttempt = (pfkrolGetQuality + 87) % Uuid.SIZE_BITS;
+            resetAttempt = (pfkrolGetQuality + 87) % 128;
             pngjBadSignature.PngjBadSignature(i, false);
         }
     }
 
     @Override // com.identy.e1
     public final void getPadSub1() {
-        pfkrolGetQuality = (resetAttempt + 111) % Uuid.SIZE_BITS;
+        pfkrolGetQuality = (resetAttempt + 111) % 128;
         super.getPadSub1();
         if (this.getL1Score != null) {
             int i = pfkrolGetQuality;
             this.getL1Score = null;
-            resetAttempt = (i + 63) % Uuid.SIZE_BITS;
+            resetAttempt = (i + 63) % 128;
         }
         if (this.Capture2TActivity != null) {
             int i2 = resetAttempt + 65;
-            pfkrolGetQuality = i2 % Uuid.SIZE_BITS;
+            pfkrolGetQuality = i2 % 128;
             int i3 = i2 % 2;
             this.Capture2TActivity = null;
             if (i3 == 0) {
@@ -1362,7 +1361,7 @@ final class getFingers extends e1 {
             Object[] objArr7 = new Object[1];
             e(new int[]{-526629029, -295923446, -204638643, -1270275452, -1100282735, -474133330, 1272240934, -2086630726}, 16 - Color.alpha(0), objArr7);
             int intValue = ((Integer) cls.getMethod((String) objArr7[0], Object.class).invoke(null, this)).intValue();
-            pfkrolGetQuality = (resetAttempt + 23) % Uuid.SIZE_BITS;
+            pfkrolGetQuality = (resetAttempt + 23) % 128;
             try {
                 Object[] objArr8 = {applicationContext, Integer.valueOf(intValue), 0, -1810509524};
                 byte[] bArr = $$g;
@@ -1381,7 +1380,7 @@ final class getFingers extends e1 {
                 objArr = (Object[]) cls2.getMethod(str3, Context.class, cls3, cls3, cls3).invoke(null, objArr8);
                 if (applicationContext != null) {
                     int i8 = pfkrolGetQuality + 57;
-                    resetAttempt = i8 % Uuid.SIZE_BITS;
+                    resetAttempt = i8 % 128;
                     try {
                         if (i8 % 2 != 0) {
                             Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i2);
@@ -1432,7 +1431,7 @@ final class getFingers extends e1 {
                                 int i15 = i14 ^ (i14 >>> 17);
                                 ((int[]) objArr13[i6])[0] = i15 ^ (i15 << 5);
                                 int i16 = resetAttempt + 5;
-                                pfkrolGetQuality = i16 % Uuid.SIZE_BITS;
+                                pfkrolGetQuality = i16 % 128;
                                 if (i16 % 2 == 0) {
                                     Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
                                     if (PngjBadSignature5 == null) {
@@ -1570,7 +1569,7 @@ final class getFingers extends e1 {
                                     }
                                     throw new RuntimeException(String.valueOf(i28));
                                 }
-                                resetAttempt = (pfkrolGetQuality + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+                                resetAttempt = (pfkrolGetQuality + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
                                 Object[] objArr23 = new Object[4];
                                 objArr23[0] = new int[]{r14};
                                 objArr23[1] = new int[1];
@@ -1646,7 +1645,7 @@ final class getFingers extends e1 {
                                         throw new RuntimeException();
                                     }
                                 } else {
-                                    pfkrolGetQuality = (resetAttempt + 27) % Uuid.SIZE_BITS;
+                                    pfkrolGetQuality = (resetAttempt + 27) % 128;
                                     Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
                                     if (PngjBadSignature15 == null) {
                                         char c11 = (char) (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1));
@@ -1751,7 +1750,7 @@ final class getFingers extends e1 {
                 throw cause2;
             }
         } else {
-            resetAttempt = (pfkrolGetQuality + 123) % Uuid.SIZE_BITS;
+            resetAttempt = (pfkrolGetQuality + 123) % 128;
             Object PngjBadSignature17 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i2);
             if (PngjBadSignature17 == null) {
                 char rgb = (char) ((-16746139) - Color.rgb(0, 0, 0));
@@ -1817,7 +1816,7 @@ final class getFingers extends e1 {
                 r1 = 4613712638259704627L;
                 d = 3.9000000953674316d;
                 this.getL2Score = new com.identy.ui.d.values(this.Action, 2.9d, 3.9000000953674316d, 2.9d, 2.740000009536743d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), -90, true, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);
-                resetAttempt = (pfkrolGetQuality + 11) % Uuid.SIZE_BITS;
+                resetAttempt = (pfkrolGetQuality + 11) % 128;
             } else {
                 r1 = 4612811918334230528L;
                 d = 3.2d;
@@ -1828,7 +1827,7 @@ final class getFingers extends e1 {
         this.getL1Score = (com.identy.ui.PngjBadCrcException) this.Action.findViewById(R.id.scanner_overlay);
         try {
             if (!this.getL3Score && IdentySdk.getInstance().getFingerPrintDrawable() == 0) {
-                resetAttempt = (pfkrolGetQuality + 63) % Uuid.SIZE_BITS;
+                resetAttempt = (pfkrolGetQuality + 63) % 128;
                 this.getL1Score.PngjBadSignature(this.a, 3.2d, 3.2d, 3.2d);
             }
         } catch (Exception unused2) {
@@ -1849,7 +1848,7 @@ final class getFingers extends e1 {
             this.getScore = (i4 - (i4 / 5)) / 6;
             if (z) {
                 this.isQualityFailed = (int) (r6.height() * 0.93d);
-                resetAttempt = (pfkrolGetQuality + 83) % Uuid.SIZE_BITS;
+                resetAttempt = (pfkrolGetQuality + 83) % 128;
             } else {
                 this.isQualityFailed = (int) (((i4 - (i4 / 5)) / 3) * 1.03d);
             }

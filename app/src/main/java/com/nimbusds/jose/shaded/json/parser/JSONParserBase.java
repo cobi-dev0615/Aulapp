@@ -7,7 +7,6 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import kotlin.io.ConstantsKt;
 import kotlin.text.Typography;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 abstract class JSONParserBase {
@@ -100,7 +99,7 @@ abstract class JSONParserBase {
         this.useIntegerStorage = (i & 16) > 0;
         this.acceptLeadinZero = (i & 32) > 0;
         this.acceptUselessComma = (i & 64) > 0;
-        this.useHiPrecisionFloat = (i & Uuid.SIZE_BITS) > 0;
+        this.useHiPrecisionFloat = (i & 128) > 0;
         this.checkTaillingData = (i & 768) != 768;
         this.checkTaillingSpace = (i & ConstantsKt.MINIMUM_BLOCK_SIZE) == 0;
         this.reject127 = (i & 1024) > 0;

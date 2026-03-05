@@ -40,7 +40,6 @@ import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
 import kotlin.jvm.internal.ByteCompanionObject;
-import kotlin.uuid.Uuid;
 import org.c.a.PngjBadCrcException;
 import org.identy.nativealgo.NativeAlgoUtils;
 import org.identy.opencv.core.Mat;
@@ -263,7 +262,7 @@ final class isFoundMatchingTemplates extends e1 {
                 }
                 int intValue = ((Integer) ((Method) PngjBadSignature).invoke(null, objArr2)).intValue();
                 if (intValue == -1) {
-                    $11 = ($10 + 43) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 43) % 128;
                     z = true;
                 } else {
                     z = false;
@@ -338,14 +337,14 @@ final class isFoundMatchingTemplates extends e1 {
                     pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;
                     byte[] bArr4 = valueOf;
                     if (bArr4 != null) {
-                        $11 = ($10 + 21) % Uuid.SIZE_BITS;
+                        $11 = ($10 + 21) % 128;
                         int length3 = bArr4.length;
                         byte[] bArr5 = new byte[length3];
                         int i9 = 0;
                         while (i9 < length3) {
                             bArr5[i9] = (byte) (bArr4[i9] ^ j2);
                             i9++;
-                            $11 = ($10 + 121) % Uuid.SIZE_BITS;
+                            $11 = ($10 + 121) % 128;
                         }
                         bArr4 = bArr5;
                     }
@@ -379,9 +378,9 @@ final class isFoundMatchingTemplates extends e1 {
         private static void c(String str, int i, Object[] objArr) {
             char[] cArr;
             if (str != null) {
-                $11 = ($10 + 45) % Uuid.SIZE_BITS;
+                $11 = ($10 + 45) % 128;
                 cArr = str.toCharArray();
-                $10 = ($11 + 47) % Uuid.SIZE_BITS;
+                $10 = ($11 + 47) % 128;
             } else {
                 cArr = str;
             }
@@ -394,7 +393,7 @@ final class isFoundMatchingTemplates extends e1 {
                     objArr[0] = new String(values2, 4, values2.length - 4);
                     return;
                 }
-                $11 = ($10 + 93) % Uuid.SIZE_BITS;
+                $11 = ($10 + 93) % 128;
                 int i3 = i2 - 4;
                 aVar.PngjBadCrcException = i3;
                 try {
@@ -441,10 +440,10 @@ final class isFoundMatchingTemplates extends e1 {
 
         @Override // java.lang.Runnable
         public final void run() {
-            PngjOutputException = (PngjInputException + 121) % Uuid.SIZE_BITS;
+            PngjOutputException = (PngjInputException + 121) % 128;
             try {
                 isFoundMatchingTemplates.this.Attempt();
-                PngjOutputException = (PngjInputException + 27) % Uuid.SIZE_BITS;
+                PngjOutputException = (PngjInputException + 27) % 128;
             } catch (Exception unused) {
             }
         }
@@ -790,10 +789,10 @@ final class isFoundMatchingTemplates extends e1 {
         isFoundMatchingTemplates isfoundmatchingtemplates = (isFoundMatchingTemplates) objArr[0];
         int i22 = getServerRequest;
         int i23 = i22 + 31;
-        destroy = i23 % Uuid.SIZE_BITS;
+        destroy = i23 % 128;
         int i24 = i23 % 2;
         isfoundmatchingtemplates.getMatchingTime = false;
-        destroy = (i22 + 13) % Uuid.SIZE_BITS;
+        destroy = (i22 + 13) % 128;
         return null;
     }
 
@@ -808,7 +807,7 @@ final class isFoundMatchingTemplates extends e1 {
         char c;
         int i2;
         if (str != null) {
-            $10 = ($11 + 83) % Uuid.SIZE_BITS;
+            $10 = ($11 + 83) % 128;
             cArr = str.toCharArray();
         } else {
             cArr = str;
@@ -819,7 +818,7 @@ final class isFoundMatchingTemplates extends e1 {
         int length = cArr2.length;
         long[] jArr = new long[length];
         pngjUnsupportedException.valueOf = 0;
-        $11 = ($10 + 111) % Uuid.SIZE_BITS;
+        $11 = ($10 + 111) % 128;
         while (true) {
             int i3 = pngjUnsupportedException.valueOf;
             if (i3 >= cArr2.length) {
@@ -868,7 +867,7 @@ final class isFoundMatchingTemplates extends e1 {
                 objArr[0] = new String(cArr3);
                 return;
             }
-            $11 = ($10 + 59) % Uuid.SIZE_BITS;
+            $11 = ($10 + 59) % 128;
             cArr3[i4] = (char) jArr[i4];
             Object[] objArr4 = {pngjUnsupportedException, pngjUnsupportedException};
             Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-125632871);
@@ -1015,7 +1014,7 @@ final class isFoundMatchingTemplates extends e1 {
         RectF rectF2 = PngjException2.get(1);
         RectF rectF3 = new RectF(rectF2.left, rectF2.top, rectF.right, rectF.bottom);
         int i = destroy + 59;
-        getServerRequest = i % Uuid.SIZE_BITS;
+        getServerRequest = i % 128;
         if (i % 2 != 0) {
             int i2 = 27 / 0;
         }
@@ -1023,13 +1022,13 @@ final class isFoundMatchingTemplates extends e1 {
     }
 
     public final void Attempt() {
-        int i = (destroy + 39) % Uuid.SIZE_BITS;
+        int i = (destroy + 39) % 128;
         getServerRequest = i;
         try {
             if (!this.getL3Score) {
-                destroy = (i + 121) % Uuid.SIZE_BITS;
+                destroy = (i + 121) % 128;
                 if (IdentySdk.getInstance().getFingerPrintDrawable() == 0) {
-                    getServerRequest = (destroy + 77) % Uuid.SIZE_BITS;
+                    getServerRequest = (destroy + 77) % 128;
                     this.getL1Score.PngjBadSignature(this.a, 8.0d, 6.0d, 3.0d);
                 }
             }
@@ -1039,9 +1038,9 @@ final class isFoundMatchingTemplates extends e1 {
 
     @Override // com.identy.e1
     public final void PngjBadCrcException(byte[] bArr, boolean z, List list, List list2, float f, Long l) {
-        getServerRequest = (destroy + 11) % Uuid.SIZE_BITS;
+        getServerRequest = (destroy + 11) % 128;
         super.PngjBadCrcException(bArr, z, list, list2, f, l);
-        getServerRequest = (destroy + 41) % Uuid.SIZE_BITS;
+        getServerRequest = (destroy + 41) % 128;
     }
 
     @Override // com.identy.e1
@@ -1050,7 +1049,7 @@ final class isFoundMatchingTemplates extends e1 {
         Finger finger = Finger.THUMB;
         Pair[] pairArr = {new Pair(hand, finger), new Pair(Hand.RIGHT, finger)};
         int i = getServerRequest + 39;
-        destroy = i % Uuid.SIZE_BITS;
+        destroy = i % 128;
         if (i % 2 != 0) {
             return pairArr;
         }
@@ -1060,16 +1059,16 @@ final class isFoundMatchingTemplates extends e1 {
     @Override // com.identy.e1
     public final boolean PngjUnsupportedException() {
         boolean PngjUnsupportedException;
-        destroy = (getServerRequest + 79) % Uuid.SIZE_BITS;
+        destroy = (getServerRequest + 79) % 128;
         try {
             PngjUnsupportedException = super.PngjUnsupportedException();
         } catch (Exception unused) {
         }
         if (!this.PngBadCharsetException) {
             int i = destroy;
-            getServerRequest = (i + 1) % Uuid.SIZE_BITS;
+            getServerRequest = (i + 1) % 128;
             if (!this.onErrorResponse) {
-                getServerRequest = (i + 1) % Uuid.SIZE_BITS;
+                getServerRequest = (i + 1) % 128;
                 if (PngjUnsupportedException) {
                     this.getQualityScore++;
                     this.getL2Score.values(this.getPadSub3, this.getPadSub2, this.getData.intValue(), this.CaptureRolledFingersActivity);
@@ -1094,12 +1093,12 @@ final class isFoundMatchingTemplates extends e1 {
 
     @Override // com.identy.e1
     public final void a() {
-        getServerRequest = (destroy + 33) % Uuid.SIZE_BITS;
+        getServerRequest = (destroy + 33) % 128;
         super.a();
         int i = R.string.id_searching_thumb;
         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
         if (pngjBadSignature != null) {
-            getServerRequest = (destroy + 53) % Uuid.SIZE_BITS;
+            getServerRequest = (destroy + 53) % 128;
             pngjBadSignature.PngjBadSignature(i, false);
         }
         new Message().what = 0;
@@ -1119,7 +1118,7 @@ final class isFoundMatchingTemplates extends e1 {
         super.getPadSub1();
         if (this.getL1Score != null) {
             int i = destroy + 35;
-            getServerRequest = i % Uuid.SIZE_BITS;
+            getServerRequest = i % 128;
             if (i % 2 != 0) {
                 this.getL1Score = null;
                 int i2 = 60 / 0;
@@ -1130,14 +1129,14 @@ final class isFoundMatchingTemplates extends e1 {
         if (this.Capture2TActivity != null) {
             this.Capture2TActivity = null;
         }
-        destroy = (getServerRequest + 61) % Uuid.SIZE_BITS;
+        destroy = (getServerRequest + 61) % 128;
     }
 
     @Override // com.identy.e1
     public final RectF onErrorResponse() {
-        destroy = (getServerRequest + 121) % Uuid.SIZE_BITS;
+        destroy = (getServerRequest + 121) % 128;
         RectF Action = Action();
-        destroy = (getServerRequest + 53) % Uuid.SIZE_BITS;
+        destroy = (getServerRequest + 53) % 128;
         return Action;
     }
 
@@ -1151,7 +1150,7 @@ final class isFoundMatchingTemplates extends e1 {
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0022, code lost:
     
         r1 = com.identy.isFoundMatchingTemplates.getServerRequest + 7;
-        com.identy.isFoundMatchingTemplates.destroy = r1 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.isFoundMatchingTemplates.destroy = r1 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x002c, code lost:
     
@@ -1196,7 +1195,7 @@ final class isFoundMatchingTemplates extends e1 {
     */
     public final void valueOf(int i, int i2, int i3, boolean z) {
         int i4 = getServerRequest + 77;
-        destroy = i4 % Uuid.SIZE_BITS;
+        destroy = i4 % 128;
         if (i4 % 2 == 0) {
             super.valueOf(i, i2, i3, z);
             int i5 = 96 / 0;
@@ -1236,7 +1235,7 @@ final class isFoundMatchingTemplates extends e1 {
         isFoundMatchingTemplates isfoundmatchingtemplates = (isFoundMatchingTemplates) objArr[0];
         Context context2 = (Context) objArr[1];
         Intent intent = (Intent) objArr[2];
-        getServerRequest = (destroy + 113) % Uuid.SIZE_BITS;
+        getServerRequest = (destroy + 113) % 128;
         Object[] objArr5 = new Object[1];
         e("䇝펣攺\uf69dࠗ鷠⽾䂅퉛搶笠\u0b34鲉\u2e72䏦핆曁\uf87eਢ龰ㄋ䊒", 37489 - TextUtils.getTrimmedLength(BuildConfig.FLAVOR), objArr5);
         String str = (String) objArr5[0];
@@ -1428,7 +1427,7 @@ final class isFoundMatchingTemplates extends e1 {
             } else {
                 if (context2 != null) {
                     int i26 = getServerRequest + 11;
-                    destroy = i26 % Uuid.SIZE_BITS;
+                    destroy = i26 % 128;
                     if (i26 % 2 != 0) {
                         context = ((context2 instanceof ContextWrapper) && ((ContextWrapper) context2).getBaseContext() == null) ? null : context2.getApplicationContext();
                     } else {
@@ -1465,7 +1464,7 @@ final class isFoundMatchingTemplates extends e1 {
                     Class cls5 = Integer.TYPE;
                     objArr3 = (Object[]) cls4.getMethod(str6, Context.class, cls5, cls5, cls5).invoke(null, objArr22);
                     if (context != null) {
-                        getServerRequest = (destroy + 79) % Uuid.SIZE_BITS;
+                        getServerRequest = (destroy + 79) % 128;
                         Object PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
                         if (PngjBadSignature9 == null) {
                             char indexOf2 = (char) (31076 - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0'));
@@ -1525,7 +1524,7 @@ final class isFoundMatchingTemplates extends e1 {
                 int i34 = c10 ^ (c10 << 13);
                 int i35 = i34 ^ (i34 >>> 17);
                 ((int[]) objArr27[i2])[0] = i35 ^ (i35 << 5);
-                getServerRequest = (destroy + 5) % Uuid.SIZE_BITS;
+                getServerRequest = (destroy + 5) % 128;
                 Object PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
                 if (PngjBadSignature11 == null) {
                     char c11 = (char) ((PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 14830);
@@ -1540,7 +1539,7 @@ final class isFoundMatchingTemplates extends e1 {
                 }
                 long j4 = ((Field) PngjBadSignature11).getLong(null);
                 if (j4 != -1 && j4 + 4611686018427387760L >= ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
-                    destroy = (getServerRequest + 87) % Uuid.SIZE_BITS;
+                    destroy = (getServerRequest + 87) % 128;
                     Object PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                     if (PngjBadSignature12 == null) {
                         char c12 = (char) (14830 - (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)));

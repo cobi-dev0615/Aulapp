@@ -40,7 +40,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import kotlin.time.DurationKt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 final class getL2Score extends getL3Score {
@@ -190,7 +189,7 @@ final class getL2Score extends getL3Score {
         org.c.a.PngjBadCrcException pngjBadCrcException;
         d dVar;
         int i = rgenerate + 9;
-        ppk = i % Uuid.SIZE_BITS;
+        ppk = i % 128;
         if (i % 2 == 0) {
             org.c.a.PngjBadCrcException pngjBadCrcException2 = (org.c.a.PngjBadCrcException) this.Action.findViewById(R.id.tracking_overlay);
             this.Capture2TActivity = pngjBadCrcException2;
@@ -207,25 +206,25 @@ final class getL2Score extends getL3Score {
             dVar = new d(this, 0);
         }
         pngjBadCrcException.valueOf = dVar;
-        rgenerate = (ppk + 43) % Uuid.SIZE_BITS;
+        rgenerate = (ppk + 43) % 128;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void PngjException(Canvas canvas) {
         int i = ppk + 87;
-        rgenerate = i % Uuid.SIZE_BITS;
+        rgenerate = i % 128;
         if (i % 2 != 0) {
             this.getL2Score.values(canvas, this.getL3Score);
             int i2 = 53 / 0;
         } else {
             this.getL2Score.values(canvas, this.getL3Score);
         }
-        ppk = (rgenerate + 87) % Uuid.SIZE_BITS;
+        ppk = (rgenerate + 87) % 128;
     }
 
     private void getData() {
         int i = rgenerate + 109;
-        ppk = i % Uuid.SIZE_BITS;
+        ppk = i % 128;
         try {
             if (i % 2 != 0) {
                 this.Action.runOnUiThread(new c(this, 2));
@@ -237,7 +236,7 @@ final class getL2Score extends getL3Score {
             try {
                 if (LibSettings.isSaveCaptured()) {
                     e.getMessage();
-                    rgenerate = (ppk + 39) % Uuid.SIZE_BITS;
+                    rgenerate = (ppk + 39) % 128;
                 }
             } catch (Exception e2) {
                 e2.printStackTrace();
@@ -248,7 +247,7 @@ final class getL2Score extends getL3Score {
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void getFingerPrintQualityScore() {
         int i = ppk + 89;
-        rgenerate = i % Uuid.SIZE_BITS;
+        rgenerate = i % 128;
         if (i % 2 == 0) {
             this.getL1Score = (com.identy.ui.PngjBadCrcException) this.Action.findViewById(R.id.scanner_overlay);
             getPadSub3();
@@ -262,7 +261,7 @@ final class getL2Score extends getL3Score {
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void getProcessingTime() {
         int i = ppk + 91;
-        rgenerate = i % Uuid.SIZE_BITS;
+        rgenerate = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -270,7 +269,7 @@ final class getL2Score extends getL3Score {
             getScore();
             try {
                 if (IdentySdk.getInstance().isInlineGuide()) {
-                    ppk = (rgenerate + 87) % Uuid.SIZE_BITS;
+                    ppk = (rgenerate + 87) % 128;
                     InlineGuideOption guideOption = IdentySdk.getInstance().getGuideOption();
                     ImageView imageView = (ImageView) this.Action.findViewById(R.id.inline_guide);
                     imageView.setImageResource(R.drawable.identy_thumb_guide);
@@ -278,7 +277,7 @@ final class getL2Score extends getL3Score {
                     int height = findViewById.getHeight();
                     int width = findViewById.getWidth();
                     int i2 = rgenerate + 35;
-                    ppk = i2 % Uuid.SIZE_BITS;
+                    ppk = i2 % 128;
                     if (i2 % 2 == 0) {
                         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
                         layoutParams.height = height;
@@ -308,14 +307,14 @@ final class getL2Score extends getL3Score {
                 return;
             }
             int i = rgenerate + 103;
-            ppk = i % Uuid.SIZE_BITS;
+            ppk = i % 128;
             if (i % 2 == 0) {
                 this.getL1Score.PngjBadSignature(this.a, 3.2d, 3.2d, 3.2d);
                 throw null;
             }
             this.getL1Score.PngjBadSignature(this.a, 3.2d, 3.2d, 3.2d);
             int i2 = rgenerate + 81;
-            ppk = i2 % Uuid.SIZE_BITS;
+            ppk = i2 % 128;
             if (i2 % 2 == 0) {
                 int i3 = 63 / 0;
             }
@@ -350,7 +349,7 @@ final class getL2Score extends getL3Score {
         }
         View findViewById4 = this.Action.findViewById(R.id.scanner_overlay);
         if (findViewById4 != null) {
-            ppk = (rgenerate + 25) % Uuid.SIZE_BITS;
+            ppk = (rgenerate + 25) % 128;
             ViewGroup.LayoutParams layoutParams4 = findViewById4.getLayoutParams();
             layoutParams4.height = height;
             layoutParams4.width = width;
@@ -363,7 +362,7 @@ final class getL2Score extends getL3Score {
             layoutParams5.width = width;
             findViewById5.setLayoutParams(layoutParams5);
         }
-        rgenerate = (ppk + 55) % Uuid.SIZE_BITS;
+        rgenerate = (ppk + 55) % 128;
     }
 
     public static void init$0() {
@@ -392,7 +391,7 @@ final class getL2Score extends getL3Score {
         try {
             getl2score.getL2Score = new com.identy.ui.d.values(getl2score.Action, doubleValue, ((Number) objArr[2]).doubleValue(), doubleValue, 2.5d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), -90, true, getl2score.a.equals(Hand.LEFT), true, getl2score.uxd565jk, getl2score.cvtyuv2bgr);
             int i = ppk + 81;
-            rgenerate = i % Uuid.SIZE_BITS;
+            rgenerate = i % 128;
             if (i % 2 == 0) {
                 return null;
             }
@@ -648,7 +647,7 @@ final class getL2Score extends getL3Score {
             if (strArr == null) {
                 throw null;
             }
-            ppk = (rgenerate + 39) % Uuid.SIZE_BITS;
+            ppk = (rgenerate + 39) % 128;
             for (String str4 : strArr) {
                 arrayList.add(str4);
             }
@@ -682,7 +681,7 @@ final class getL2Score extends getL3Score {
         if (j4 == -1 || j4 + 4611686018427387939L < ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
             if (context2 != null) {
                 int i34 = ppk + 77;
-                rgenerate = i34 % Uuid.SIZE_BITS;
+                rgenerate = i34 % 128;
                 if (i34 % 2 != 0) {
                     boolean z = context2 instanceof ContextWrapper;
                     throw null;
@@ -782,7 +781,7 @@ final class getL2Score extends getL3Score {
         int i41 = ((int[]) objArr2[2])[0];
         int i42 = ((int[]) objArr2[c4])[0];
         if (i42 == i41) {
-            rgenerate = (ppk + 125) % Uuid.SIZE_BITS;
+            rgenerate = (ppk + 125) % 128;
             Object[] objArr36 = new Object[5];
             objArr36[2] = new int[]{r8};
             objArr36[c4] = new int[]{r7};
@@ -829,12 +828,12 @@ final class getL2Score extends getL3Score {
             return;
         }
         if (!(!this.uxd566jk.getScore.equals(CapturePosition.VERTICAL_FROM_BOTTOM))) {
-            ppk = (rgenerate + 71) % Uuid.SIZE_BITS;
+            ppk = (rgenerate + 71) % 128;
             double d2 = 3.2d;
             if (this.CaptureThumbActivity) {
                 d = 4.699999809265137d;
                 PngjBadCrcException(new Object[]{this, Double.valueOf(3.2d), Double.valueOf(4.699999809265137d)}, Enroll2IndexActivity.PngjBadSignature.PngjException(), Enroll2IndexActivity.PngjBadSignature.PngjException(), Enroll2IndexActivity.PngjBadSignature.PngjException(), -5471382, 5471382, Enroll2IndexActivity.PngjBadSignature.PngjException());
-                ppk = (rgenerate + 69) % Uuid.SIZE_BITS;
+                ppk = (rgenerate + 69) % 128;
             } else {
                 PngjBadCrcException(new Object[]{this, Double.valueOf(2.5d), Double.valueOf(3.2d)}, Enroll2IndexActivity.PngjBadSignature.PngjException(), Enroll2IndexActivity.PngjBadSignature.PngjException(), Enroll2IndexActivity.PngjBadSignature.PngjException(), -5471382, 5471382, Enroll2IndexActivity.PngjBadSignature.PngjException());
                 d = 3.2d;
@@ -849,7 +848,7 @@ final class getL2Score extends getL3Score {
             this.getScore = 0;
             this.isQualityFailed = DurationKt.NANOS_IN_MILLIS;
             PngjBadSignature(new c(this, 0));
-            rgenerate = (ppk + 97) % Uuid.SIZE_BITS;
+            rgenerate = (ppk + 97) % 128;
         } else {
             this.getData = Integer.valueOf(this.Action.getWindowManager().getDefaultDisplay().getRotation() + i3);
             org.c.a.PngjBadCrcException pngjBadCrcException = (org.c.a.PngjBadCrcException) this.Action.findViewById(R.id.tracking_overlay);
@@ -892,7 +891,7 @@ final class getL2Score extends getL3Score {
         alphaAnimation.setInterpolator(new LinearInterpolator());
         alphaAnimation.setRepeatCount(inlineGuideOption.getNumberOfRepeats());
         alphaAnimation.setRepeatMode(2);
-        ppk = (rgenerate + 85) % Uuid.SIZE_BITS;
+        ppk = (rgenerate + 85) % 128;
         return alphaAnimation;
     }
 
@@ -951,7 +950,7 @@ final class getL2Score extends getL3Score {
                 float f = 0.0f;
                 if (bArr4 != null) {
                     int i17 = $10 + 75;
-                    $11 = i17 % Uuid.SIZE_BITS;
+                    $11 = i17 % 128;
                     if (i17 % 2 == 0) {
                         length = bArr4.length;
                         bArr2 = new byte[length];
@@ -1023,7 +1022,7 @@ final class getL2Score extends getL3Score {
                 int i22 = ((i2 + intValue) - 2) + ((int) (pfkrolfinalize ^ j2));
                 if (z) {
                     int i23 = $10 + 83;
-                    $11 = i23 % Uuid.SIZE_BITS;
+                    $11 = i23 % 128;
                     if (i23 % 2 != 0) {
                         i6 = i5;
                         pngjPrematureEnding.values = i22 + i6;
@@ -1052,7 +1051,7 @@ final class getL2Score extends getL3Score {
                                 int i26 = 0;
                                 while (i26 < length4) {
                                     int i27 = $10 + 89;
-                                    $11 = i27 % Uuid.SIZE_BITS;
+                                    $11 = i27 % 128;
                                     if (i27 % 2 == 0) {
                                         break;
                                     }
@@ -1076,12 +1075,12 @@ final class getL2Score extends getL3Score {
                                 break;
                             }
                             if (i8 != 0) {
-                                int i28 = ($10 + 49) % Uuid.SIZE_BITS;
+                                int i28 = ($10 + 49) % 128;
                                 $11 = i28;
                                 byte[] bArr8 = destroy;
                                 pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
                                 pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr8[r4] ^ j2)) + s)) ^ b));
-                                $10 = (i28 + 13) % Uuid.SIZE_BITS;
+                                $10 = (i28 + 13) % 128;
                             } else {
                                 short[] sArr = getServerRequest;
                                 pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
@@ -1229,9 +1228,9 @@ final class getL2Score extends getL3Score {
             boolean equals = hand2.equals(hand3);
             imageView.setRotation(!equals ? 270.0f : 90.0f);
             if (!equals) {
-                rgenerate = (ppk + 63) % Uuid.SIZE_BITS;
+                rgenerate = (ppk + 63) % 128;
                 imageView.setRotationX(180.0f);
-                rgenerate = (ppk + 97) % Uuid.SIZE_BITS;
+                rgenerate = (ppk + 97) % 128;
             }
             Activity activity = this.Action;
             int i = R.id.preview;
@@ -1245,7 +1244,7 @@ final class getL2Score extends getL3Score {
                 layoutParams.addRule(9);
                 layoutParams.setMargins(10, ((int) (height / f)) + 50, 0, 0);
                 this.Action.findViewById(i2).setLayoutParams(layoutParams);
-                ppk = (rgenerate + 27) % Uuid.SIZE_BITS;
+                ppk = (rgenerate + 27) % 128;
             } else {
                 this.Action.findViewById(i2).setScaleY(-1.0f);
             }
@@ -1264,7 +1263,7 @@ final class getL2Score extends getL3Score {
                     imageView2.setImageResource(R.drawable.identy_single_finger_guide);
                     Hand hand5 = this.a;
                     if (hand5 != null) {
-                        ppk = (rgenerate + 35) % Uuid.SIZE_BITS;
+                        ppk = (rgenerate + 35) % 128;
                         if (hand5.equals(hand3)) {
                             imageView2.setRotation(0.0f);
                             View findViewById = this.Action.findViewById(i);
@@ -1277,7 +1276,7 @@ final class getL2Score extends getL3Score {
                             hand = this.a;
                             if (hand != null) {
                                 int i4 = ppk + 49;
-                                rgenerate = i4 % Uuid.SIZE_BITS;
+                                rgenerate = i4 % 128;
                                 if (i4 % 2 == 0) {
                                     if (hand.equals(hand3)) {
                                         loadAnimation = AnimationUtils.loadAnimation(this.Action, R.anim.identy_left_to_rights_slide);

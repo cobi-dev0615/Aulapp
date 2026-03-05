@@ -27,7 +27,6 @@ import com.identy.enums.FingerDetectionMode;
 import com.karumi.dexter.BuildConfig;
 import java.lang.reflect.Method;
 import kotlin.io.encoding.Base64;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public final class getFingerPrintQualityScore extends Dialog {
@@ -200,7 +199,7 @@ public final class getFingerPrintQualityScore extends Dialog {
             int i2;
             char c;
             String str3 = str2;
-            $11 = ($10 + 55) % Uuid.SIZE_BITS;
+            $11 = ($10 + 55) % 128;
             byte[] bArr = str3;
             if (str3 != null) {
                 bArr = str3.getBytes("ISO-8859-1");
@@ -209,7 +208,7 @@ public final class getFingerPrintQualityScore extends Dialog {
             int i3 = 2;
             if (str != null) {
                 int i4 = $11 + 39;
-                $10 = i4 % Uuid.SIZE_BITS;
+                $10 = i4 % 128;
                 if (i4 % 2 != 0) {
                     str.toCharArray();
                     throw null;
@@ -241,7 +240,7 @@ public final class getFingerPrintQualityScore extends Dialog {
                         throw cause;
                     }
                 }
-                $10 = ($11 + 41) % Uuid.SIZE_BITS;
+                $10 = ($11 + 41) % 128;
                 cArr3 = cArr4;
             }
             Object[] objArr3 = {Integer.valueOf(PngjBadSignature)};
@@ -259,7 +258,7 @@ public final class getFingerPrintQualityScore extends Dialog {
             char c2 = 1;
             if (values) {
                 int i8 = $11 + 51;
-                $10 = i8 % Uuid.SIZE_BITS;
+                $10 = i8 % 128;
                 int i9 = i8 % 2;
                 int length3 = bArr2.length;
                 pngjExceptionInternal.PngjException = length3;
@@ -335,7 +334,7 @@ public final class getFingerPrintQualityScore extends Dialog {
 
         /* JADX WARN: Code restructure failed: missing block: B:43:0x0015, code lost:
         
-            com.identy.ui.c.getFingerPrintQualityScore.PngjBadSignature.$10 = (r0 + 45) % kotlin.uuid.Uuid.SIZE_BITS;
+            com.identy.ui.c.getFingerPrintQualityScore.PngjBadSignature.$10 = (r0 + 45) % 128;
             r0 = r26.toCharArray();
          */
         /* JADX WARN: Code restructure failed: missing block: B:44:0x0013, code lost:
@@ -363,7 +362,7 @@ public final class getFingerPrintQualityScore extends Dialog {
             int i3;
             int i4 = $11;
             int i5 = i4 + 59;
-            $10 = i5 % Uuid.SIZE_BITS;
+            $10 = i5 % 128;
             if (i5 % 2 != 0) {
                 int i6 = 58 / 0;
             }
@@ -415,7 +414,7 @@ public final class getFingerPrintQualityScore extends Dialog {
             }
             char[] cArr2 = new char[length];
             pngjUnsupportedException.valueOf = 0;
-            $11 = ($10 + 11) % Uuid.SIZE_BITS;
+            $11 = ($10 + 11) % 128;
             while (true) {
                 int i8 = pngjUnsupportedException.valueOf;
                 if (i8 >= cArr.length) {
@@ -430,7 +429,7 @@ public final class getFingerPrintQualityScore extends Dialog {
                     PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (KeyEvent.keyCodeFromString(BuildConfig.FLAVOR) + 35511), ExpandableListView.getPackedPositionChild(0L) + 43, 507 - Color.green(0), 74289954, false, $$e((byte) 23, b3, b3), new Class[]{Object.class, Object.class});
                 }
                 ((Method) PngjBadSignature4).invoke(null, objArr4);
-                $10 = ($11 + 19) % Uuid.SIZE_BITS;
+                $10 = ($11 + 19) % 128;
             }
         }
 
@@ -446,10 +445,10 @@ public final class getFingerPrintQualityScore extends Dialog {
 
         @Override // java.lang.Runnable
         public final void run() {
-            PngjUnsupportedException = (PngjOutputException + 99) % Uuid.SIZE_BITS;
+            PngjUnsupportedException = (PngjOutputException + 99) % 128;
             getFingerPrintQualityScore.this.dismiss();
             int i = PngjUnsupportedException + 87;
-            PngjOutputException = i % Uuid.SIZE_BITS;
+            PngjOutputException = i % 128;
             if (i % 2 == 0) {
                 int i2 = 10 / 0;
             }

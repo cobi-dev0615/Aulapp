@@ -3,7 +3,6 @@ package com.nimbusds.jose.shaded.ow2asm;
 import com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor;
 import com.karumi.dexter.BuildConfig;
 import com.karumi.dexter.R;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 class Frame {
@@ -636,7 +635,7 @@ class Frame {
                                     case 122:
                                     case 124:
                                     case 126:
-                                    case Uuid.SIZE_BITS /* 128 */:
+                                    case 128 /* 128 */:
                                     case 130:
                                     case 136:
                                     case 142:

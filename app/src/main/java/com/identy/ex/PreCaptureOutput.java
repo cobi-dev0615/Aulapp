@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 import org.c.a.values$values;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -199,7 +198,7 @@ public class PreCaptureOutput {
                         int i11 = (((i10 ^ (-16383)) + ((i10 & (-16383)) << 1)) / ConstantsKt.DEFAULT_BUFFER_SIZE) + 1;
                         int i12 = (i9 ^ i11) + ((i11 & i9) << 1);
                         int i13 = i9 >> 25;
-                        int i14 = ((i13 & (-255)) + (i13 | (-255))) / Uuid.SIZE_BITS;
+                        int i14 = ((i13 & (-255)) + (i13 | (-255))) / 128;
                         int i15 = -((((i14 | 1) << 1) - (i14 ^ 1)) ^ i12);
                         int i16 = (i15 ^ 1) + ((i15 & 1) << 1);
                         int i17 = ((i16 >> 21) - 4095) / 2048;
@@ -222,7 +221,7 @@ public class PreCaptureOutput {
                 int i112 = (((i102 ^ (-16383)) + ((i102 & (-16383)) << 1)) / ConstantsKt.DEFAULT_BUFFER_SIZE) + 1;
                 int i122 = (i92 ^ i112) + ((i112 & i92) << 1);
                 int i132 = i92 >> 25;
-                int i142 = ((i132 & (-255)) + (i132 | (-255))) / Uuid.SIZE_BITS;
+                int i142 = ((i132 & (-255)) + (i132 | (-255))) / 128;
                 int i152 = -((((i142 | 1) << 1) - (i142 ^ 1)) ^ i122);
                 int i162 = (i152 ^ 1) + ((i152 & 1) << 1);
                 int i172 = ((i162 >> 21) - 4095) / 2048;

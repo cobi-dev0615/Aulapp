@@ -37,7 +37,6 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class IntroActivity extends Activity {
@@ -151,7 +150,7 @@ public class IntroActivity extends Activity {
         char c3;
         int i4;
         if (str != null) {
-            $10 = ($11 + 41) % Uuid.SIZE_BITS;
+            $10 = ($11 + 41) % 128;
             cArr = str.toCharArray();
         } else {
             cArr = str;
@@ -219,7 +218,7 @@ public class IntroActivity extends Activity {
                 if (i10 >= i2) {
                     break;
                 }
-                int i11 = ($10 + 21) % Uuid.SIZE_BITS;
+                int i11 = ($10 + 21) % 128;
                 $11 = i11;
                 char c4 = cArr2[i10];
                 pngjInputException.valueOf = c4;
@@ -227,7 +226,7 @@ public class IntroActivity extends Activity {
                 pngjInputException.PngjException = c5;
                 if (c4 == c5) {
                     int i12 = i11 + 1;
-                    $10 = i12 % Uuid.SIZE_BITS;
+                    $10 = i12 % 128;
                     if (i12 % 2 != 0) {
                         cArr5[i10] = (char) (c4 >>> b);
                         cArr5[i10 - 1] = (char) (c5 >>> b);
@@ -274,7 +273,7 @@ public class IntroActivity extends Activity {
                     int intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
                     int i13 = pngjInputException.PngjUnsupportedException;
                     if (intValue == i13) {
-                        $11 = ($10 + 71) % Uuid.SIZE_BITS;
+                        $11 = ($10 + 71) % 128;
                         Object[] objArr5 = new Object[11];
                         objArr5[10] = pngjInputException;
                         objArr5[c] = Integer.valueOf(charValue);
@@ -303,7 +302,7 @@ public class IntroActivity extends Activity {
                         int i15 = pngjInputException.values;
                         cArr5[i15] = cArr3[intValue2];
                         cArr5[i15 + 1] = cArr3[i14];
-                        $10 = ($11 + 9) % Uuid.SIZE_BITS;
+                        $10 = ($11 + 9) % 128;
                     } else {
                         int i16 = pngjInputException.PngjBadSignature;
                         int i17 = pngjInputException.PngjBadCrcException;
@@ -462,7 +461,7 @@ public class IntroActivity extends Activity {
         char c2;
         int i2;
         int i3;
-        PngjException = (PngjBadCrcException + 15) % Uuid.SIZE_BITS;
+        PngjException = (PngjBadCrcException + 15) % 128;
         super.attachBaseContext(context);
         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature2 == null) {
@@ -521,7 +520,7 @@ public class IntroActivity extends Activity {
                             int i13 = c4 ^ (c4 << 13);
                             int i14 = i13 ^ (i13 >>> 17);
                             ((int[]) objArr6[1])[0] = i14 ^ (i14 << 5);
-                            PngjBadCrcException = (PngjException + 83) % Uuid.SIZE_BITS;
+                            PngjBadCrcException = (PngjException + 83) % 128;
                             return;
                         }
                         ArrayList arrayList = new ArrayList();
@@ -610,7 +609,7 @@ public class IntroActivity extends Activity {
     @Override // android.app.Activity
     public void onBackPressed() {
         int i = PngjException + 57;
-        PngjBadCrcException = i % Uuid.SIZE_BITS;
+        PngjBadCrcException = i % 128;
         try {
             if (i % 2 != 0) {
                 super.onBackPressed();
@@ -658,7 +657,7 @@ public class IntroActivity extends Activity {
      */
     /* JADX WARN: Code restructure failed: missing block: B:205:0x011a, code lost:
     
-        com.identy.IntroActivity.PngjException = (com.identy.IntroActivity.PngjBadCrcException + 109) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IntroActivity.PngjException = (com.identy.IntroActivity.PngjBadCrcException + 109) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:207:0x00e3, code lost:
     
@@ -721,13 +720,13 @@ public class IntroActivity extends Activity {
                         c = ',';
                         if (fingerDetectionModeArr[0].getFinger().equals(Finger.THUMB)) {
                             int i7 = PngjException + 107;
-                            PngjBadCrcException = i7 % Uuid.SIZE_BITS;
+                            PngjBadCrcException = i7 % 128;
                             if (i7 % 2 == 0) {
                                 z = false;
                                 if (fingerDetectionModeArr[0].getHand() != null) {
                                     int i8 = PngjBadCrcException + 119;
                                     c2 = '\r';
-                                    PngjException = i8 % Uuid.SIZE_BITS;
+                                    PngjException = i8 % 128;
                                     if (i8 % 2 == 0) {
                                         Hand hand2 = Hand.LEFT;
                                         throw null;
@@ -753,13 +752,13 @@ public class IntroActivity extends Activity {
                                     if (findViewById != null) {
                                         int i9 = PngjBadCrcException;
                                         int i10 = i9 + 103;
-                                        PngjException = i10 % Uuid.SIZE_BITS;
+                                        PngjException = i10 % 128;
                                         if (i10 % 2 == 0) {
                                             boolean z2 = findViewById instanceof PlayGifView;
                                             throw null;
                                         }
                                         if (findViewById instanceof PlayGifView) {
-                                            PngjException = (i9 + 121) % Uuid.SIZE_BITS;
+                                            PngjException = (i9 + 121) % 128;
                                             PlayGifView playGifView = (PlayGifView) findViewById;
                                             if (fingerDetectionModeArr[0].equals(FingerDetectionMode.TWO_THUMB)) {
                                                 playGifView.setImageResource(R.drawable.id_two_thumb_animation);
@@ -788,7 +787,7 @@ public class IntroActivity extends Activity {
                                             if (fingerDetectionModeArr[0].getFinger() != null) {
                                                 i3 = 0;
                                                 if (fingerDetectionModeArr[0].getFinger().equals(Finger.THUMB)) {
-                                                    PngjException = (PngjBadCrcException + 83) % Uuid.SIZE_BITS;
+                                                    PngjException = (PngjBadCrcException + 83) % 128;
                                                     imageView.setImageResource(R.drawable.id_rol_thumb_capture_first_side);
                                                     imageView2.setImageResource(R.drawable.id_rol_thumb_capture_second_side);
                                                     imageView3.setImageResource(R.drawable.id_rol_thumb_capture_third_side);
@@ -808,7 +807,7 @@ public class IntroActivity extends Activity {
                                                 i = 2;
                                                 int i11 = PngjException + 61;
                                                 i2 = 5;
-                                                PngjBadCrcException = i11 % Uuid.SIZE_BITS;
+                                                PngjBadCrcException = i11 % 128;
                                                 if (i11 % 2 != 0) {
                                                     int i12 = 60 / 0;
                                                 }
@@ -945,7 +944,7 @@ public class IntroActivity extends Activity {
                                 int i27 = c8 ^ (c8 << 13);
                                 int i28 = i27 ^ (i27 >>> 17);
                                 ((int[]) objArr14[1])[0] = i28 ^ (i28 << 5);
-                                PngjException = (PngjBadCrcException + 63) % Uuid.SIZE_BITS;
+                                PngjException = (PngjBadCrcException + 63) % 128;
                                 Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
                                 if (PngjBadSignature7 == null) {
                                     char c9 = (char) ((PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 31077);
@@ -977,7 +976,7 @@ public class IntroActivity extends Activity {
                                     Object[] objArr19 = new Object[1];
                                     a("\n\"\u001a\u001e\u0016\u0000\u0013\u0000\u001f\u000b\u001e\n\u001c\u0007\u001d\u0019", 16 - ExpandableListView.getPackedPositionType(j), (byte) ((ViewConfiguration.getMinimumFlingVelocity() >> 16) + 113), objArr19);
                                     int intValue2 = ((Integer) cls5.getMethod((String) objArr19[0], cls).invoke(null, this)).intValue();
-                                    PngjException = (PngjBadCrcException + 19) % Uuid.SIZE_BITS;
+                                    PngjException = (PngjBadCrcException + 19) % 128;
                                     try {
                                         Object[] objArr20 = new Object[4];
                                         objArr20[3] = 1786026783;
@@ -1160,7 +1159,7 @@ public class IntroActivity extends Activity {
                                         throw new RuntimeException();
                                     }
                                 } else {
-                                    PngjBadCrcException = (PngjException + 77) % Uuid.SIZE_BITS;
+                                    PngjBadCrcException = (PngjException + 77) % 128;
                                     Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
                                     if (PngjBadSignature15 == null) {
                                         char touchSlop = (char) (ViewConfiguration.getTouchSlop() >> 8);
@@ -1285,19 +1284,19 @@ public class IntroActivity extends Activity {
     @Override // android.app.Activity
     public void onPause() {
         int i = PngjBadCrcException + 33;
-        PngjException = i % Uuid.SIZE_BITS;
+        PngjException = i % 128;
         int i2 = i % 2;
         super.onPause();
         if (i2 == 0) {
             throw null;
         }
-        PngjException = (PngjBadCrcException + 77) % Uuid.SIZE_BITS;
+        PngjException = (PngjBadCrcException + 77) % 128;
     }
 
     @Override // android.app.Activity
     public void onResume() {
         int i = PngjException + 23;
-        PngjBadCrcException = i % Uuid.SIZE_BITS;
+        PngjBadCrcException = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 != 0) {
@@ -1307,8 +1306,8 @@ public class IntroActivity extends Activity {
 
     @Override // android.app.Activity
     public void onStart() {
-        PngjException = (PngjBadCrcException + 89) % Uuid.SIZE_BITS;
+        PngjException = (PngjBadCrcException + 89) % 128;
         super.onStart();
-        PngjBadCrcException = (PngjException + 63) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (PngjException + 63) % 128;
     }
 }

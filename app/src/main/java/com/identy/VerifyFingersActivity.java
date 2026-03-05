@@ -34,7 +34,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class VerifyFingersActivity extends FingerActivity {
@@ -356,7 +355,7 @@ public class VerifyFingersActivity extends FingerActivity {
             }
             int intValue = ((Integer) ((Method) PngjBadSignature).invoke(null, objArr2)).intValue();
             if (intValue == -1) {
-                $11 = ($10 + 21) % Uuid.SIZE_BITS;
+                $11 = ($10 + 21) % 128;
                 i4 = 1;
             } else {
                 i4 = 0;
@@ -370,7 +369,7 @@ public class VerifyFingersActivity extends FingerActivity {
                     int i13 = 0;
                     while (i13 < length) {
                         int i14 = $11 + 65;
-                        $10 = i14 % Uuid.SIZE_BITS;
+                        $10 = i14 % 128;
                         if (i14 % i10 != 0) {
                             Object[] objArr3 = {Integer.valueOf(bArr[i13])};
                             Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1053815139);
@@ -426,7 +425,7 @@ public class VerifyFingersActivity extends FingerActivity {
                 j = -6165791747575875761L;
             }
             if (intValue > 0) {
-                $10 = ($11 + 13) % Uuid.SIZE_BITS;
+                $10 = ($11 + 13) % 128;
                 pngjPrematureEnding.values = ((i2 + intValue) - 2) + ((int) (valueOf ^ j)) + i4;
                 int i16 = getScore;
                 Object[] objArr6 = new Object[4];
@@ -444,7 +443,7 @@ public class VerifyFingersActivity extends FingerActivity {
                 pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;
                 byte[] bArr4 = getCaptureTime;
                 if (bArr4 != null) {
-                    $10 = ($11 + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+                    $10 = ($11 + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
                     int length2 = bArr4.length;
                     byte[] bArr5 = new byte[length2];
                     for (int i17 = 0; i17 < length2; i17++) {
@@ -466,7 +465,7 @@ public class VerifyFingersActivity extends FingerActivity {
                     }
                     if (i7 != 0) {
                         int i18 = $11 + 43;
-                        $10 = i18 % Uuid.SIZE_BITS;
+                        $10 = i18 % 128;
                         if (i18 % 2 != 0) {
                             byte[] bArr6 = getCaptureTime;
                             pngjPrematureEnding.values = pngjPrematureEnding.values;
@@ -492,7 +491,7 @@ public class VerifyFingersActivity extends FingerActivity {
                 }
             }
             String sb2 = sb.toString();
-            $11 = ($10 + 123) % Uuid.SIZE_BITS;
+            $11 = ($10 + 123) % 128;
             objArr[0] = sb2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -543,7 +542,7 @@ public class VerifyFingersActivity extends FingerActivity {
                         j = timeInMillis;
                         try {
                             new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjBadCrcException(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
-                            getNfiq1Score = (getOveralTimetaken + 45) % Uuid.SIZE_BITS;
+                            getNfiq1Score = (getOveralTimetaken + 45) % 128;
                         } catch (Exception unused2) {
                             try {
                                 this.onErrorResponse.valueOf();
@@ -560,7 +559,7 @@ public class VerifyFingersActivity extends FingerActivity {
                     fingerMatchSecLevel2 = fingerMatchSecLevel;
                     timeInMillis = j;
                 }
-                getOveralTimetaken = (getNfiq1Score + 85) % Uuid.SIZE_BITS;
+                getOveralTimetaken = (getNfiq1Score + 85) % 128;
             } catch (Exception e2) {
                 throw new RuntimeException(e2);
             }
@@ -595,7 +594,7 @@ public class VerifyFingersActivity extends FingerActivity {
         try {
             try {
                 if (j != -1) {
-                    getOveralTimetaken = (getNfiq1Score + 123) % Uuid.SIZE_BITS;
+                    getOveralTimetaken = (getNfiq1Score + 123) % 128;
                     long j2 = j + 4611686018427387888L;
                     i = 864471691;
                     Object[] objArr2 = new Object[1];
@@ -646,13 +645,13 @@ public class VerifyFingersActivity extends FingerActivity {
                             throw null;
                         }
                         int i12 = getNfiq1Score + 25;
-                        getOveralTimetaken = i12 % Uuid.SIZE_BITS;
+                        getOveralTimetaken = i12 % 128;
                         int i13 = i12 % 2 == 0 ? 0 : 1;
                         while (i13 < strArr3.length) {
-                            getNfiq1Score = (getOveralTimetaken + 25) % Uuid.SIZE_BITS;
+                            getNfiq1Score = (getOveralTimetaken + 25) % 128;
                             arrayList.add(strArr3[i13]);
                             i13++;
-                            getNfiq1Score = (getOveralTimetaken + 107) % Uuid.SIZE_BITS;
+                            getNfiq1Score = (getOveralTimetaken + 107) % 128;
                         }
                         throw null;
                     }
@@ -727,16 +726,16 @@ public class VerifyFingersActivity extends FingerActivity {
             this.values = com.identy.f.PngjBadSignature.PngjException(IdentySdk.getInstance().getData, (FingerDetectionMode[]) arrayList.toArray(new FingerDetectionMode[arrayList.size()]), B);
             if (!isEnrolled) {
                 int i = getNfiq1Score + 113;
-                getOveralTimetaken = i % Uuid.SIZE_BITS;
+                getOveralTimetaken = i % 128;
                 (i % 2 != 0 ? Toast.makeText(this, "Fingers not registered .. please register first", 1) : Toast.makeText(this, "Fingers not registered .. please register first", 1)).show();
                 finish();
-                getOveralTimetaken = (getNfiq1Score + 125) % Uuid.SIZE_BITS;
+                getOveralTimetaken = (getNfiq1Score + 125) % 128;
                 return;
             }
         } catch (Exception unused) {
         }
         int i2 = getOveralTimetaken + 21;
-        getNfiq1Score = i2 % Uuid.SIZE_BITS;
+        getNfiq1Score = i2 % 128;
         if (i2 % 2 == 0) {
             throw null;
         }
@@ -744,10 +743,10 @@ public class VerifyFingersActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
-        getOveralTimetaken = (getNfiq1Score + 89) % Uuid.SIZE_BITS;
+        getOveralTimetaken = (getNfiq1Score + 89) % 128;
         super.onCreate(bundle);
         int i = getOveralTimetaken + 75;
-        getNfiq1Score = i % Uuid.SIZE_BITS;
+        getNfiq1Score = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -755,10 +754,10 @@ public class VerifyFingersActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
-        getOveralTimetaken = (getNfiq1Score + 75) % Uuid.SIZE_BITS;
+        getOveralTimetaken = (getNfiq1Score + 75) % 128;
         super.onPause();
         int i = getOveralTimetaken + 39;
-        getNfiq1Score = i % Uuid.SIZE_BITS;
+        getNfiq1Score = i % 128;
         if (i % 2 == 0) {
             int i2 = 2 / 0;
         }
@@ -767,7 +766,7 @@ public class VerifyFingersActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
         int i = getNfiq1Score + 83;
-        getOveralTimetaken = i % Uuid.SIZE_BITS;
+        getOveralTimetaken = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 != 0) {
@@ -778,7 +777,7 @@ public class VerifyFingersActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
         int i = getNfiq1Score + 49;
-        getOveralTimetaken = i % Uuid.SIZE_BITS;
+        getOveralTimetaken = i % 128;
         int i2 = i % 2;
         super.onStart();
         if (i2 != 0) {
@@ -792,7 +791,7 @@ public class VerifyFingersActivity extends FingerActivity {
         try {
             try {
                 this.onErrorResponse = new isAuthSucess(this, this, this.PngjExceptionInternal, this.a, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
-                getNfiq1Score = (getOveralTimetaken + 99) % Uuid.SIZE_BITS;
+                getNfiq1Score = (getOveralTimetaken + 99) % 128;
             } catch (Exception unused) {
             }
         } catch (Exception unused2) {

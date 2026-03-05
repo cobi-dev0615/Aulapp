@@ -26,7 +26,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import kotlin.UInt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class CaptureFingersActivity extends FingerActivity {
@@ -229,7 +228,7 @@ public class CaptureFingersActivity extends FingerActivity {
     private static void d(String str, int i, Object[] objArr) {
         char[] cArr;
         if (str != null) {
-            $11 = ($10 + 59) % Uuid.SIZE_BITS;
+            $11 = ($10 + 59) % 128;
             cArr = str.toCharArray();
         } else {
             cArr = str;
@@ -243,7 +242,7 @@ public class CaptureFingersActivity extends FingerActivity {
                 objArr[0] = new String(values2, 4, values2.length - 4);
                 return;
             }
-            $11 = ($10 + 105) % Uuid.SIZE_BITS;
+            $11 = ($10 + 105) % 128;
             int i3 = i2 - 4;
             aVar.PngjBadCrcException = i3;
             try {
@@ -265,7 +264,7 @@ public class CaptureFingersActivity extends FingerActivity {
                     PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1)) + 14830), 27 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), (-16776495) - Color.rgb(0, 0, 0), -1356718115, false, $$i(b, b2, (byte) (b2 + 1)), new Class[]{Object.class, Object.class});
                 }
                 ((Method) PngjBadSignature2).invoke(null, objArr3);
-                $11 = ($10 + 121) % Uuid.SIZE_BITS;
+                $11 = ($10 + 121) % 128;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause == null) {
@@ -288,11 +287,11 @@ public class CaptureFingersActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
     public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
-        valueOf = (values + 61) % Uuid.SIZE_BITS;
+        valueOf = (values + 61) % 128;
         super.PngjException(hashMap, hashMap2, bitmap, z, z2);
         if (!z) {
             int i = values + 37;
-            valueOf = i % Uuid.SIZE_BITS;
+            valueOf = i % 128;
             if (i % 2 == 0) {
                 throw null;
             }
@@ -377,7 +376,7 @@ public class CaptureFingersActivity extends FingerActivity {
         try {
             try {
                 if (j2 != -1) {
-                    valueOf = (values + 39) % Uuid.SIZE_BITS;
+                    valueOf = (values + 39) % 128;
                     long j3 = j2 + 4611686018427387806L;
                     i = 864471691;
                     Object[] objArr2 = new Object[1];
@@ -387,7 +386,7 @@ public class CaptureFingersActivity extends FingerActivity {
                     Object[] objArr3 = new Object[1];
                     d("\ued90\uedf5\u1cff旖ꮛũ奰ࣷ櫖䋃躊㩧⟝忳\ue5ae录䋅㐓\uf8d3", -TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0), objArr3);
                     if (j3 >= ((Long) cls.getDeclaredMethod((String) objArr3[0], null).invoke(null, null)).longValue()) {
-                        valueOf = (values + 81) % Uuid.SIZE_BITS;
+                        valueOf = (values + 81) % 128;
                         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                         if (PngjBadSignature2 == null) {
                             char indexOf = (char) (14830 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0));
@@ -432,7 +431,7 @@ public class CaptureFingersActivity extends FingerActivity {
                             throw null;
                         }
                         int i15 = values + 75;
-                        valueOf = i15 % Uuid.SIZE_BITS;
+                        valueOf = i15 % 128;
                         for (int i16 = i15 % 2 != 0 ? 0 : 1; i16 < strArr3.length; i16++) {
                             arrayList.add(strArr3[i16]);
                         }
@@ -664,7 +663,7 @@ public class CaptureFingersActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
         int i = values + 49;
-        valueOf = i % Uuid.SIZE_BITS;
+        valueOf = i % 128;
         int i2 = i % 2;
         super.onPause();
         if (i2 == 0) {
@@ -674,16 +673,16 @@ public class CaptureFingersActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
-        values = (valueOf + 13) % Uuid.SIZE_BITS;
+        values = (valueOf + 13) % 128;
         super.onResume();
-        valueOf = (values + 43) % Uuid.SIZE_BITS;
+        valueOf = (values + 43) % 128;
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
-        values = (valueOf + 93) % Uuid.SIZE_BITS;
+        values = (valueOf + 93) % 128;
         super.onStart();
-        values = (valueOf + 121) % Uuid.SIZE_BITS;
+        values = (valueOf + 121) % 128;
     }
 
     @Override // com.identy.FingerActivity

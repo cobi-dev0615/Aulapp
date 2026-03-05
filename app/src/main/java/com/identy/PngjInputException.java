@@ -34,7 +34,6 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import kotlin.text.Typography;
-import kotlin.uuid.Uuid;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -199,7 +198,7 @@ public final class PngjInputException {
             char c;
             int i2;
             String str3 = str2;
-            $11 = ($10 + 45) % Uuid.SIZE_BITS;
+            $11 = ($10 + 45) % 128;
             byte[] bArr = str3;
             if (str3 != null) {
                 bArr = str3.getBytes("ISO-8859-1");
@@ -216,7 +215,7 @@ public final class PngjInputException {
                 int i4 = 0;
                 while (i4 < length) {
                     int i5 = $11 + 89;
-                    $10 = i5 % Uuid.SIZE_BITS;
+                    $10 = i5 % 128;
                     if (i5 % 2 != 0) {
                         try {
                             Object[] objArr2 = {Integer.valueOf(cArr[i4])};
@@ -254,7 +253,7 @@ public final class PngjInputException {
             char c2 = 1;
             int i6 = -528960794;
             if (!(!PngjExceptionInternal)) {
-                $10 = ($11 + 51) % Uuid.SIZE_BITS;
+                $10 = ($11 + 51) % 128;
                 int length2 = bArr2.length;
                 pngjExceptionInternal.PngjException = length2;
                 char[] cArr3 = new char[length2];
@@ -264,7 +263,7 @@ public final class PngjInputException {
                     int i8 = pngjExceptionInternal.PngjException;
                     if (i7 >= i8) {
                         String str4 = new String(cArr3);
-                        $11 = ($10 + 31) % Uuid.SIZE_BITS;
+                        $11 = ($10 + 31) % 128;
                         objArr[0] = str4;
                         return;
                     }
@@ -289,7 +288,7 @@ public final class PngjInputException {
                     i3 = 2;
                 }
             } else if (valueOf) {
-                $11 = ($10 + 37) % Uuid.SIZE_BITS;
+                $11 = ($10 + 37) % 128;
                 int length3 = charArray.length;
                 pngjExceptionInternal.PngjException = length3;
                 char[] cArr4 = new char[length3];
@@ -340,7 +339,7 @@ public final class PngjInputException {
             char c;
             int i2;
             int i3;
-            $11 = ($10 + 35) % Uuid.SIZE_BITS;
+            $11 = ($10 + 35) % 128;
             char[] charArray = str != null ? str.toCharArray() : str;
             com.d.e.PngjUnsupportedException pngjUnsupportedException = new com.d.e.PngjUnsupportedException();
             pngjUnsupportedException.PngjBadCrcException = i;
@@ -352,7 +351,7 @@ public final class PngjInputException {
                 if (i4 >= charArray.length) {
                     break;
                 }
-                $11 = ($10 + 55) % Uuid.SIZE_BITS;
+                $11 = ($10 + 55) % 128;
                 try {
                     Object[] objArr2 = {Integer.valueOf(charArray[i4]), pngjUnsupportedException, pngjUnsupportedException};
                     Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-930920279);
@@ -395,12 +394,12 @@ public final class PngjInputException {
                 int i5 = pngjUnsupportedException.valueOf;
                 if (i5 >= charArray.length) {
                     String str2 = new String(cArr);
-                    $11 = ($10 + 19) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 19) % 128;
                     objArr[0] = str2;
                     return;
                 }
                 int i6 = $10 + 21;
-                $11 = i6 % Uuid.SIZE_BITS;
+                $11 = i6 % 128;
                 if (i6 % 2 == 0) {
                     cArr[i5] = (char) jArr[i5];
                     Object[] objArr4 = {pngjUnsupportedException, pngjUnsupportedException};
@@ -440,7 +439,7 @@ public final class PngjInputException {
         
             r4 = r42[r0];
             r6 = -(android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1));
-            r8 = (r6 ^ kotlin.uuid.Uuid.SIZE_BITS) + ((r6 & kotlin.uuid.Uuid.SIZE_BITS) << 1);
+            r8 = (r6 ^ 128) + ((r6 & 128) << 1);
             r6 = new java.lang.Object[1];
             b(null, r8, null, "\u0095\u0089\u008f\u0098\u0095\u0094\u0088\u0092\u0090\u0093\u0090\u0095", r6);
          */
@@ -557,7 +556,7 @@ public final class PngjInputException {
         /* JADX WARN: Code restructure failed: missing block: B:48:0x07c5, code lost:
         
             r0 = -(-android.os.Process.getGidForName(com.karumi.dexter.BuildConfig.FLAVOR));
-            r3 = ((r0 | kotlin.uuid.Uuid.SIZE_BITS) << 1) - (r0 ^ kotlin.uuid.Uuid.SIZE_BITS);
+            r3 = ((r0 | 128) << 1) - (r0 ^ 128);
             r0 = new java.lang.Object[1];
             b(null, r3, null, "\u008a\u0081\u0083\u0088\u008d\u0098\u0085\u008c\u008c\u008b\u0098\u0088\u0086\u0097\u0086\u0096\u008d\u008d\u0095\u0092\u008f\u0089\u008f\u0095\u008a\u0092\u0088\u0095", r0);
          */
@@ -664,7 +663,7 @@ public final class PngjInputException {
         /* JADX WARN: Code restructure failed: missing block: B:567:0x092a, code lost:
         
             r3 = new java.lang.Object[1];
-            b(null, android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0', 0) + kotlin.uuid.Uuid.SIZE_BITS, null, "\u0099", r3);
+            b(null, android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0', 0) + 128, null, "\u0099", r3);
             r0 = r0.equals((java.lang.String) r3[0]);
          */
         /* JADX WARN: Code restructure failed: missing block: B:56:0x0943, code lost:
@@ -677,7 +676,7 @@ public final class PngjInputException {
          */
         /* JADX WARN: Code restructure failed: missing block: B:57:0x0945, code lost:
         
-            com.identy.PngjInputException.PngjBadSignature.PngjOutputException = (com.identy.PngjInputException.PngjBadSignature.PngjUnsupportedException + 83) % kotlin.uuid.Uuid.SIZE_BITS;
+            com.identy.PngjInputException.PngjBadSignature.PngjOutputException = (com.identy.PngjInputException.PngjBadSignature.PngjUnsupportedException + 83) % 128;
             r0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:583:0x0697, code lost:
@@ -879,7 +878,7 @@ public final class PngjInputException {
                             break;
                         }
                         if (str.contains(strArr4[i40])) {
-                            PngjUnsupportedException = (PngjOutputException + 89) % Uuid.SIZE_BITS;
+                            PngjUnsupportedException = (PngjOutputException + 89) % 128;
                             int i41 = -(-TextUtils.getTrimmedLength(BuildConfig.FLAVOR));
                             int i42 = ((i41 | 27883) << 1) - (i41 ^ 27883);
                             Object[] objArr10 = new Object[1];
@@ -919,7 +918,7 @@ public final class PngjInputException {
                             }
                             Object invoke2 = ((Method) PngjBadSignature5).invoke(null, objArr14);
                             if (obj4 != null) {
-                                PngjOutputException = (PngjUnsupportedException + 111) % Uuid.SIZE_BITS;
+                                PngjOutputException = (PngjUnsupportedException + 111) % 128;
                                 Object[] objArr16 = {obj4, Integer.valueOf(i3)};
                                 Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(989703296);
                                 if (PngjBadSignature6 == null) {
@@ -955,7 +954,7 @@ public final class PngjInputException {
                             }
                             if (obj5 != null) {
                                 int i54 = PngjOutputException;
-                                PngjUnsupportedException = ((i54 & 49) + (i54 | 49)) % Uuid.SIZE_BITS;
+                                PngjUnsupportedException = ((i54 & 49) + (i54 | 49)) % 128;
                                 Object[] objArr18 = {obj5, Integer.valueOf(i3)};
                                 Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(989703296);
                                 if (PngjBadSignature7 == null) {
@@ -1081,7 +1080,7 @@ public final class PngjInputException {
                 c("輿\uf865憈\ue920剙\udb97䌸챒㗢", 30553 - View.MeasureSpec.getSize(0), objArr28);
                 String str6 = (String) objArr28[0];
                 int i77 = -(ViewConfiguration.getZoomControlsTimeout() > j3 ? 1 : (ViewConfiguration.getZoomControlsTimeout() == j3 ? 0 : -1));
-                int i78 = (i77 ^ Uuid.SIZE_BITS) + ((i77 & Uuid.SIZE_BITS) << 1);
+                int i78 = (i77 ^ 128) + ((i77 & 128) << 1);
                 Object[] objArr29 = new Object[1];
                 b(null, i78, null, "\u008f\u008d\u008a\u008d\u0086\u008f", objArr29);
                 String str7 = (String) objArr29[0];
@@ -1256,7 +1255,7 @@ public final class PngjInputException {
                         i140 = ((i140 | 1) << 1) - (i140 ^ 1);
                     }
                     if (z5) {
-                        PngjUnsupportedException = (PngjOutputException + 43) % Uuid.SIZE_BITS;
+                        PngjUnsupportedException = (PngjOutputException + 43) % 128;
                         int i141 = (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1));
                         int i142 = (i141 & 27883) + (i141 | 27883);
                         Object[] objArr58 = new Object[1];
@@ -1337,7 +1336,7 @@ public final class PngjInputException {
                         }
                         if (obj3 != null) {
                             int i151 = PngjUnsupportedException + 7;
-                            PngjOutputException = i151 % Uuid.SIZE_BITS;
+                            PngjOutputException = i151 % 128;
                             if ((i151 % 2 == 0 ? '(' : 'Y') != 'Y') {
                                 Object[] objArr66 = {obj3, 86};
                                 Object PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(989703296);
@@ -1405,7 +1404,7 @@ public final class PngjInputException {
                         z = false;
                         if (!z) {
                             int i163 = PngjUnsupportedException;
-                            PngjOutputException = (((i163 | 81) << 1) - (i163 ^ 81)) % Uuid.SIZE_BITS;
+                            PngjOutputException = (((i163 | 81) << 1) - (i163 ^ 81)) % 128;
                             Object[] objArr70 = {new int[]{r5}, new int[1], null, new int[]{i}};
                             int i164 = (i & (-262)) | ((~i) & 261);
                             int a3 = defpackage.a.a();
@@ -1581,11 +1580,11 @@ public final class PngjInputException {
                                 long j110 = i207 | (((int) j109) & (((i208 | 1093053088) * 970) + ((536871936 | i208) * (-970)) + 232935445));
                                 if (j6 > j3) {
                                     int i209 = PngjOutputException;
-                                    int i210 = (((i209 | 29) << 1) - (i209 ^ 29)) % Uuid.SIZE_BITS;
+                                    int i210 = (((i209 | 29) << 1) - (i209 ^ 29)) % 128;
                                     PngjUnsupportedException = i210;
                                     if (j110 > j3) {
                                         if ((j110 + 100 < j6 ? c : '6') != '6') {
-                                            PngjOutputException = ((i210 & 59) + (i210 | 59)) % Uuid.SIZE_BITS;
+                                            PngjOutputException = ((i210 & 59) + (i210 | 59)) % 128;
                                             z3 = true;
                                             if ((!z3 ? '3' : '8') == '8') {
                                                 Object[] objArr84 = {new int[]{(i & (-249)) | (i178 & 248)}, new int[1], null, new int[]{i}};
@@ -1650,7 +1649,7 @@ public final class PngjInputException {
                                                     break;
                                                 }
                                                 int i239 = PngjUnsupportedException;
-                                                PngjOutputException = ((i239 ^ 15) + ((i239 & 15) << 1)) % Uuid.SIZE_BITS;
+                                                PngjOutputException = ((i239 ^ 15) + ((i239 & 15) << 1)) % 128;
                                                 Object[] objArr92 = {strArr7[i238]};
                                                 Object PngjBadSignature20 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1492900309);
                                                 if (PngjBadSignature20 == null) {
@@ -1683,7 +1682,7 @@ public final class PngjInputException {
                                                 int startElapsedRealtime3 = (int) Process.getStartElapsedRealtime();
                                                 if (((((int) (j119 >> 32)) & (((startElapsedRealtime3 | (-604241985)) * 668) + ((416546613 | (~((-1020679798) | startElapsedRealtime3))) * 1336) + (((~(416546613 | startElapsedRealtime3)) | (-1020679798)) * (-668)) + 67428294)) | (((int) j119) & ((((~(((int) Process.getStartUptimeMillis()) | 1372008377)) | 1350970008) * 196) + (((21038369 | r4) * (-196)) - 110822599)))) != 0) {
                                                     int i241 = PngjOutputException;
-                                                    PngjUnsupportedException = ((i241 ^ 101) + ((i241 & 101) << 1)) % Uuid.SIZE_BITS;
+                                                    PngjUnsupportedException = ((i241 ^ 101) + ((i241 & 101) << 1)) % 128;
                                                     i8 = (i17 ^ 90) + ((i17 & 90) << 1);
                                                     break;
                                                 }
@@ -1724,7 +1723,7 @@ public final class PngjInputException {
                                                     Object invoke5 = ((Method) PngjBadSignature21).invoke(null, objArr96);
                                                     if (invoke5 != null) {
                                                         int i250 = PngjOutputException;
-                                                        PngjUnsupportedException = ((i250 & 29) + (i250 | 29)) % Uuid.SIZE_BITS;
+                                                        PngjUnsupportedException = ((i250 & 29) + (i250 | 29)) % 128;
                                                         Object[] objArr98 = new Object[1];
                                                         c("輻␠\ud93b踵⌳\ud83a贻∱휽谾ℶ", 43777 - (~(-(-TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0)))), objArr98);
                                                         try {
@@ -2066,7 +2065,7 @@ public final class PngjInputException {
                                                                         int read = bufferedInputStream2.read();
                                                                         if (read != -1) {
                                                                             int i370 = PngjUnsupportedException + 25;
-                                                                            PngjOutputException = i370 % Uuid.SIZE_BITS;
+                                                                            PngjOutputException = i370 % 128;
                                                                             if (i370 % 2 == 0) {
                                                                                 j8 = ((j8 >> 2) ^ read) / 1073741823;
                                                                                 i16 = 1;
@@ -2109,7 +2108,7 @@ public final class PngjInputException {
                                                                 }
                                                                 if (i12 == 0) {
                                                                     int i371 = PngjOutputException;
-                                                                    PngjUnsupportedException = ((i371 & 123) + (i371 | 123)) % Uuid.SIZE_BITS;
+                                                                    PngjUnsupportedException = ((i371 & 123) + (i371 | 123)) % 128;
                                                                     i13 = 240;
                                                                 } else {
                                                                     i13 = 0;
@@ -2184,7 +2183,7 @@ public final class PngjInputException {
                                                                 int i395 = ~elapsedCpuTime2;
                                                                 int i396 = ((int) j148) & ((((~(elapsedCpuTime2 | (-67109154))) | (~((-962153545) | i395)) | 554189832) * 140) + ((67109153 | (~((-475072866) | i395))) * (-280)) + (((-475072866) | elapsedCpuTime2) * 140) + 1176647065);
                                                                 if (((i394 & i396) | (i394 ^ i396)) != 0) {
-                                                                    PngjOutputException = (PngjUnsupportedException + 81) % Uuid.SIZE_BITS;
+                                                                    PngjOutputException = (PngjUnsupportedException + 81) % 128;
                                                                     Object[] objArr135 = {new int[]{r5}, new int[1], null, new int[]{i}};
                                                                     int i397 = (~(i & 242)) & (i | 242);
                                                                     int A = defpackage.a.A(~(Process.myTid() | (-153991)), 566, (((~((-218323408) | r1)) | 218169417) * (-566)) - 35595589, -16);
@@ -2281,7 +2280,7 @@ public final class PngjInputException {
                                                                         i15 = (i & (-282)) | (i14 & 281);
                                                                     }
                                                                     if (i15 != i) {
-                                                                        PngjUnsupportedException = (PngjOutputException + 51) % Uuid.SIZE_BITS;
+                                                                        PngjUnsupportedException = (PngjOutputException + 51) % 128;
                                                                         Object[] objArr138 = {new int[]{i15}, new int[1], null, new int[]{i}};
                                                                         int startUptimeMillis3 = (int) Process.getStartUptimeMillis();
                                                                         int c15 = defpackage.a.c((~(startUptimeMillis3 | 738658453)) | (~(295907520 | startUptimeMillis3)) | (-1034369238), -1444, (((~startUptimeMillis3) | (-1034172502)) * 1444) + 1402242971, -651763782);
@@ -2420,7 +2419,7 @@ public final class PngjInputException {
                                                                 }
                                                                 if ((((int[]) objArr[3])[c5] != ((int[]) objArr[c5])[c5] ? ':' : '\b') == ':') {
                                                                     int i479 = PngjUnsupportedException;
-                                                                    PngjOutputException = ((i479 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + (i479 | com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground)) % Uuid.SIZE_BITS;
+                                                                    PngjOutputException = ((i479 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + (i479 | com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground)) % 128;
                                                                     return objArr;
                                                                 }
                                                                 Object[] objArr142 = {2};
@@ -2445,7 +2444,7 @@ public final class PngjInputException {
                                                                 int i481 = ((int) (j187 >> 32)) & ((((~((~freeMemory6) | 1060489865)) | 1412044098) * 262) + (((~(1060489865 | freeMemory6)) | 1412044098) * 262) + 1256578394);
                                                                 int i482 = ((int) j187) & ((((~((~((int) Process.getElapsedCpuTime())) | (-776006153))) | (-795470762)) * 970) + (((19464609 | r6) * (-970)) - 1223899005));
                                                                 if (((i481 & i482) | (i481 ^ i482)) == 2) {
-                                                                    PngjOutputException = (PngjUnsupportedException + 9) % Uuid.SIZE_BITS;
+                                                                    PngjOutputException = (PngjUnsupportedException + 9) % 128;
                                                                     Object[] objArr144 = {new int[]{i ^ 270}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{i}};
                                                                     int i483 = (((~(190728840 | i14)) | 805413957) * 191) + (((~(i | 190728840)) | 843837133) * 191) + 844933785;
                                                                     int i484 = ((i483 | 16) << 1) - (i483 ^ 16);
@@ -2539,7 +2538,7 @@ public final class PngjInputException {
                                                                     z4 = true;
                                                                 } else {
                                                                     int i524 = PngjOutputException;
-                                                                    PngjUnsupportedException = ((i524 & 67) + (i524 | 67)) % Uuid.SIZE_BITS;
+                                                                    PngjUnsupportedException = ((i524 & 67) + (i524 | 67)) % 128;
                                                                     z4 = false;
                                                                 }
                                                                 if (z4) {
@@ -2654,7 +2653,7 @@ public final class PngjInputException {
                                                                     PngjBadSignature40 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Gravity.getAbsoluteGravity(0, 0), 26 - TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0), 1224 - KeyEvent.keyCodeFromString(BuildConfig.FLAVOR), 1335773997, false, null, new Class[]{cls2, (Class) com.d.e.a.PngjBadCrcException.values((char) (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), 26 - (SystemClock.uptimeMillis() > j3 ? 1 : (SystemClock.uptimeMillis() == j3 ? 0 : -1)), 1199 - Color.argb(0, 0, 0, 0)), cls2, cls2});
                                                                 }
                                                                 Object newInstance = ((Constructor) PngjBadSignature40).newInstance(objArr159);
-                                                                PngjOutputException = (PngjUnsupportedException + 1) % Uuid.SIZE_BITS;
+                                                                PngjOutputException = (PngjUnsupportedException + 1) % 128;
                                                                 try {
                                                                     int i561 = -((byte) KeyEvent.getModifierMetaStateMask());
                                                                     int i562 = (i561 & 60916) + (i561 | 60916);
@@ -2713,7 +2712,7 @@ public final class PngjInputException {
                             }
                         }
                         i6 = 1;
-                        PngjUnsupportedException = (PngjOutputException + 1) % Uuid.SIZE_BITS;
+                        PngjUnsupportedException = (PngjOutputException + 1) % 128;
                         z2 = false;
                         if (!z2) {
                         }
@@ -2742,10 +2741,10 @@ public final class PngjInputException {
 
         @Override // com.android.volley.Request
         public final byte[] getBody() {
-            PngjOutputException = (PngjUnsupportedException + 61) % Uuid.SIZE_BITS;
+            PngjOutputException = (PngjUnsupportedException + 61) % 128;
             byte[] bytes = this.PngjException.toString().getBytes();
             int i = PngjOutputException + 17;
-            PngjUnsupportedException = i % Uuid.SIZE_BITS;
+            PngjUnsupportedException = i % 128;
             if (i % 2 == 0) {
                 return bytes;
             }
@@ -2754,9 +2753,9 @@ public final class PngjInputException {
 
         @Override // com.android.volley.Request
         public final String getBodyContentType() {
-            int i = (PngjOutputException + 81) % Uuid.SIZE_BITS;
+            int i = (PngjOutputException + 81) % 128;
             PngjUnsupportedException = i;
-            PngjOutputException = (i + 59) % Uuid.SIZE_BITS;
+            PngjOutputException = (i + 59) % 128;
             return "application/json";
         }
     }
@@ -2939,7 +2938,7 @@ public final class PngjInputException {
                 int i8 = 0;
                 while (i8 < length) {
                     int i9 = i5;
-                    $10 = ($11 + 1) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 1) % 128;
                     try {
                         Object[] objArr2 = {Integer.valueOf(cArr2[i8])};
                         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
@@ -2985,10 +2984,10 @@ public final class PngjInputException {
                         break;
                     }
                     int i12 = $11;
-                    $10 = (i12 + 95) % Uuid.SIZE_BITS;
+                    $10 = (i12 + 95) % 128;
                     if (bArr4[i11] == b5) {
                         int i13 = i12 + 91;
-                        $10 = i13 % Uuid.SIZE_BITS;
+                        $10 = i13 % 128;
                         if (i13 % 2 != 0) {
                             break;
                         }
@@ -3017,14 +3016,14 @@ public final class PngjInputException {
                         PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (((byte) KeyEvent.getModifierMetaStateMask()) + 1), TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0') + 36, Color.green(0) + ModuleDescriptor.MODULE_VERSION, -1010806406, false, "g", new Class[]{Object.class, Object.class});
                     }
                     ((Method) PngjBadSignature4).invoke(null, objArr5);
-                    $11 = ($10 + 1) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 1) % 128;
                     i10 = 2;
                     b5 = 1;
                 }
             }
             if (i7 > 0) {
                 int i14 = $11 + 41;
-                $10 = i14 % Uuid.SIZE_BITS;
+                $10 = i14 % 128;
                 if (i14 % 2 != 0) {
                     char[] cArr6 = new char[i4];
                     System.arraycopy(cArr4, 0, cArr6, 1, i4);
@@ -3040,7 +3039,7 @@ public final class PngjInputException {
             }
             if (z) {
                 int i16 = $10 + 71;
-                $11 = i16 % Uuid.SIZE_BITS;
+                $11 = i16 % 128;
                 if (i16 % 2 == 0) {
                     cArr = new char[i4];
                     i = 1;
@@ -3126,9 +3125,9 @@ public final class PngjInputException {
         private static void c(String str, int i, Object[] objArr) {
             char[] cArr;
             if (str != null) {
-                $10 = ($11 + 25) % Uuid.SIZE_BITS;
+                $10 = ($11 + 25) % 128;
                 cArr = str.toCharArray();
-                $11 = ($10 + 57) % Uuid.SIZE_BITS;
+                $11 = ($10 + 57) % 128;
             } else {
                 cArr = str;
             }
@@ -3348,7 +3347,7 @@ public final class PngjInputException {
          */
         /* JADX WARN: Code restructure failed: missing block: B:134:0x1668, code lost:
         
-            com.identy.PngjInputException.values.PngjUnsupportedException = (com.identy.PngjInputException.values.PngjOutputException + 91) % kotlin.uuid.Uuid.SIZE_BITS;
+            com.identy.PngjInputException.values.PngjUnsupportedException = (com.identy.PngjInputException.values.PngjOutputException + 91) % 128;
             r0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:136:0x1673, code lost:
@@ -3371,7 +3370,7 @@ public final class PngjInputException {
         /* JADX WARN: Code restructure failed: missing block: B:143:0x168e, code lost:
         
             r0 = com.identy.PngjInputException.values.PngjUnsupportedException;
-            com.identy.PngjInputException.values.PngjOutputException = ((r0 & 85) + (r0 | 85)) % kotlin.uuid.Uuid.SIZE_BITS;
+            com.identy.PngjInputException.values.PngjOutputException = ((r0 & 85) + (r0 | 85)) % 128;
             r0 = new java.lang.Object[]{new int[]{r75 ^ 261}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{r75}};
             r1 = (r77 - (~defpackage.a.A((~(r75 | 434817350)) | 599748623, 519, (((~(r6 | (-571813898))) | (~(1006631247 | r75))) * (-519)) + ((((~((-599748624) | r6)) | 434817350) * 519) + 965737986), -16))) - 1;
             r2 = r1 << 13;
@@ -3460,7 +3459,7 @@ public final class PngjInputException {
         /* JADX WARN: Code restructure failed: missing block: B:353:0x429f, code lost:
         
             r0 = com.identy.PngjInputException.values.PngjUnsupportedException;
-            com.identy.PngjInputException.values.PngjOutputException = (((r0 | 7) << 1) - (r0 ^ 7)) % kotlin.uuid.Uuid.SIZE_BITS;
+            com.identy.PngjInputException.values.PngjOutputException = (((r0 | 7) << 1) - (r0 ^ 7)) % 128;
             r0 = new java.lang.Object[]{new int[]{r75 ^ 279}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{r75}};
             r1 = (((((~(r75 | (-272639042))) | 705692168) * 235) + ((((~((-300756424) | r75)) | 733809550) * (-470)) + ((((~((-300756424) | r6)) | 733809550) * (-235)) - 9013834))) + 16) + r77;
             r2 = r1 << 13;
@@ -3603,7 +3602,7 @@ public final class PngjInputException {
         /* JADX WARN: Code restructure failed: missing block: B:55:0x0a44, code lost:
         
             r0 = com.identy.PngjInputException.values.PngjOutputException;
-            com.identy.PngjInputException.values.PngjUnsupportedException = ((r0 & 27) + (r0 | 27)) % kotlin.uuid.Uuid.SIZE_BITS;
+            com.identy.PngjInputException.values.PngjUnsupportedException = ((r0 & 27) + (r0 | 27)) % 128;
             r0 = new java.lang.Object[]{new int[]{r5}, new int[1], null, new int[]{r75}};
             r5 = (r75 & (-261)) | ((~r75) & 260);
             r1 = (int) android.os.Process.getStartElapsedRealtime();
@@ -3846,7 +3845,7 @@ public final class PngjInputException {
                 int b7 = defpackage.a.b(1855735996);
                 int i41 = ((int) j16) & (((b7 | (-1250034775)) * 591) + (((~((-1250034775) | (~b7))) | (-1607706112)) * (-591)) + 1927378222);
                 if (((i40 & i41) | (i40 ^ i41)) != 0) {
-                    PngjOutputException = (PngjUnsupportedException + 29) % Uuid.SIZE_BITS;
+                    PngjOutputException = (PngjUnsupportedException + 29) % 128;
                     Object[] objArr12 = new Object[1];
                     c("弴ꎮꛐ낷", (-794579362) - (~Drawable.resolveOpacity(0, 0)), (char) (47 - (~(-AndroidCharacter.getMirror('0')))), "\ue5a3䢥꡷鵥", "\u0be4吸ண➚ྦ贕ꉒ䕯缵\uf866䗾䣰\uf7bc⋍櫢奼㸔뵑肸₤富땰᭔", objArr12);
                     Object[] objArr13 = {(String) objArr12[0]};
@@ -4197,7 +4196,7 @@ public final class PngjInputException {
             }
             String str30 = (String) ((Method) PngjBadSignature11).invoke(null, objArr55);
             if (str30 != null) {
-                PngjOutputException = (PngjUnsupportedException + 39) % Uuid.SIZE_BITS;
+                PngjOutputException = (PngjUnsupportedException + 39) % 128;
                 Object[] objArr57 = new Object[1];
                 c("뭝엛દ裛", View.MeasureSpec.makeMeasureSpec(0, 0), (char) (56073 - (~(-(-(ExpandableListView.getPackedPositionForGroup(0) > j2 ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j2 ? 0 : -1)))))), "\ue5a3䢥꡷鵥", "扃枖씳츲㐲ݜ", objArr57);
                 String str31 = (String) objArr57[0];
@@ -4231,7 +4230,7 @@ public final class PngjInputException {
                         int i155 = -(-(((i154 & i152) | (i152 ^ i154)) * 979));
                         if (i149 <= (i151 ^ i155) + ((i155 & i151) << 1)) {
                             int i156 = PngjOutputException;
-                            PngjUnsupportedException = (((i156 | 39) << 1) - (i156 ^ 39)) % Uuid.SIZE_BITS;
+                            PngjUnsupportedException = (((i156 | 39) << 1) - (i156 ^ 39)) % 128;
                             int i157 = -TextUtils.indexOf((CharSequence) str, '0');
                             Object[] objArr59 = new Object[1];
                             c("弴ꎮꛐ낷", (i157 & (-794579362)) + (i157 | (-794579362)), (char) (Process.myPid() >> 22), "\ue5a3䢥꡷鵥", "\u0be4吸ண➚ྦ贕ꉒ䕯缵\uf866䗾䣰\uf7bc⋍櫢奼㸔뵑肸₤富땰᭔", objArr59);
@@ -4400,10 +4399,10 @@ public final class PngjInputException {
             int i177 = ((int) j83) & (((~((-174084761) | i)) * 345) + (((~(1955573063 | i66)) | 344261893) * 345) + (((~(1955573063 | i)) | 174084760) * 345) + 484646344);
             long j84 = (i176 & i177) | (i176 ^ i177);
             if (j3 > j2) {
-                int i178 = (PngjUnsupportedException + 97) % Uuid.SIZE_BITS;
+                int i178 = (PngjUnsupportedException + 97) % 128;
                 PngjOutputException = i178;
                 if (j84 > j2 && j84 - 3 < j3) {
-                    PngjUnsupportedException = (((i178 | 17) << 1) - (i178 ^ 17)) % Uuid.SIZE_BITS;
+                    PngjUnsupportedException = (((i178 | 17) << 1) - (i178 ^ 17)) % 128;
                     Object[] objArr75 = {new int[]{r7}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{i}};
                     int i179 = (~(i & 247)) & (i | 247);
                     int i180 = (((~(i | (-907752458))) | 25428292 | (~(126813516 | i66))) * 904) + (((~((-101385225) | i)) | (~(i66 | 933180749))) * 904) + ((((~((-126813517) | i)) | (~(907752457 | i66))) * (-1808)) - 559600147);
@@ -4494,7 +4493,7 @@ public final class PngjInputException {
             int i213 = ((int) j97) & ((((~((~startElapsedRealtime3) | 663527718)) | 42467622) * 420) + ((~(663527718 | startElapsedRealtime3)) * 420) + 1709976569);
             long j98 = (i212 & i213) | (i212 ^ i213);
             if (j4 > j2 && j98 > j2 && j98 + 100 < j4) {
-                PngjOutputException = (PngjUnsupportedException + 93) % Uuid.SIZE_BITS;
+                PngjOutputException = (PngjUnsupportedException + 93) % 128;
                 Object[] objArr82 = {new int[]{i ^ 248}, new int[]{((~r1) & r2) | ((~r2) & r1)}, null, new int[]{i}};
                 int i214 = (((~(i | 544103778)) | (~(490462195 | i66))) * 627) + (((~((-490462196) | i)) | 544103778) * (-627)) + (((-541328385) | i) * (-627)) + 1167369348;
                 int i215 = (i214 & 16) + (i214 | 16) + i2;
@@ -4611,7 +4610,7 @@ public final class PngjInputException {
                 i258 = 7;
             }
             if (i12 != 0) {
-                PngjUnsupportedException = (PngjOutputException + 39) % Uuid.SIZE_BITS;
+                PngjUnsupportedException = (PngjOutputException + 39) % 128;
                 Object[] objArr92 = {new int[]{(i12 & i66) | ((~i12) & i)}, new int[1], null, new int[]{i}};
                 int i261 = ~defpackage.a.a();
                 int i262 = (((~(i261 | (-940572678))) | 16920576) * 241) + (((~((-979109038) | i261)) | 38536360) * (-241)) + 1949002621;
@@ -4696,10 +4695,10 @@ public final class PngjInputException {
                         int elapsedRealtime2 = (int) SystemClock.elapsedRealtime();
                         if (((i285 & defpackage.a.c((~(elapsedRealtime2 | (-1797955253))) | (~((-1059785633) | elapsedRealtime2)), -1324, (((~elapsedRealtime2) | (-2133565365)) * 1324) - 818884594, 1008173496)) | (((int) j112) & defpackage.a.c(2135686965 | i66, -828, (((~(2135686965 | i66)) | 722053920) * (-828)) - 1754753727, 1177718104))) == 0) {
                             int i286 = PngjOutputException;
-                            PngjUnsupportedException = ((i286 ^ 13) + ((i286 & 13) << 1)) % Uuid.SIZE_BITS;
+                            PngjUnsupportedException = ((i286 ^ 13) + ((i286 & 13) << 1)) % 128;
                             i13 = 0;
                             if (i13 != 0) {
-                                PngjOutputException = (PngjUnsupportedException + 107) % Uuid.SIZE_BITS;
+                                PngjOutputException = (PngjUnsupportedException + 107) % 128;
                                 Object[] objArr99 = {new int[]{i13 ^ i}, new int[1], null, new int[]{i}};
                                 int myUid = Process.myUid();
                                 int i287 = ~myUid;
@@ -4731,7 +4730,7 @@ public final class PngjInputException {
                                 int i312 = (i310 | i311) & (~(i310 & i311));
                                 int i313 = i312 << 5;
                                 ((int[]) objArr99[1])[0] = (i312 | i313) & (~(i312 & i313));
-                                PngjOutputException = (PngjUnsupportedException + 55) % Uuid.SIZE_BITS;
+                                PngjOutputException = (PngjUnsupportedException + 55) % 128;
                                 return objArr99;
                             }
                             Object[] objArr100 = new Object[1];
@@ -4929,7 +4928,7 @@ public final class PngjInputException {
                                         int c13 = ((int) j125) & defpackage.a.c((~((~maxMemory3) | (-84025382))) | (-1601697408), 576, (((~((-124248190) | maxMemory3)) | 40222808) * 576) + 1771465493, 1693500928);
                                         if (((i393 & c13) | (i393 ^ c13)) != 0) {
                                             int i394 = PngjUnsupportedException;
-                                            PngjOutputException = (((i394 | 23) << 1) - (i394 ^ 23)) % Uuid.SIZE_BITS;
+                                            PngjOutputException = (((i394 | 23) << 1) - (i394 ^ 23)) % 128;
                                             i15 = ((i18 | 110) << 1) - (i18 ^ 110);
                                             i14 = 1;
                                             break;
@@ -4941,7 +4940,7 @@ public final class PngjInputException {
                             }
                             int i395 = PngjOutputException;
                             i14 = 1;
-                            PngjUnsupportedException = (((i395 | 19) << 1) - (i395 ^ 19)) % Uuid.SIZE_BITS;
+                            PngjUnsupportedException = (((i395 | 19) << 1) - (i395 ^ 19)) % 128;
                             i15 = 0;
                             if (i15 != 0) {
                                 Object[] objArr121 = new Object[4];
@@ -5021,7 +5020,7 @@ public final class PngjInputException {
                             } else {
                                 int i431 = PngjOutputException;
                                 i16 = 1;
-                                PngjUnsupportedException = ((i431 ^ 43) + ((i431 & 43) << 1)) % Uuid.SIZE_BITS;
+                                PngjUnsupportedException = ((i431 ^ 43) + ((i431 & 43) << 1)) % 128;
                                 i17 = 0;
                             }
                             if (i17 != 0) {
@@ -5246,7 +5245,7 @@ public final class PngjInputException {
                                             long j166 = ((longValue23 | ((j164 | elapsedCpuTime4) ^ j)) * j163) + ((-376) * ((((elapsedCpuTime4 ^ j) | j160) ^ j) | j165)) + ((elapsedCpuTime4 | ((j164 | (longValue23 ^ j)) ^ j) | j165) * j163) + j162 + 636961842;
                                             if (((((int) (j166 >> c)) & ((((~(1600318462 | i66)) | 9442304 | (~((-352338345) | i))) * 168) + ((~(1609760766 | i)) * 168) + (((~(1257422422 | i66)) | (-1609760767)) * 168) + 501358106)) | (((int) j166) & ((((~(1125889337 | i)) | 277086272 | (~((-311337073) | i))) * 407) + (((~((-1125889338) | i)) | (~(311337072 | i66)) | 277086272) * 407) + (((1091638537 | r4) * (-814)) - 1951476454)))) != 0) {
                                                 int i496 = PngjUnsupportedException;
-                                                PngjOutputException = ((i496 ^ 95) + ((i496 & 95) << 1)) % Uuid.SIZE_BITS;
+                                                PngjOutputException = ((i496 ^ 95) + ((i496 & 95) << 1)) % 128;
                                                 objArr = new Object[]{new int[]{r5}, new int[1], null, new int[]{i}};
                                                 int i497 = (~(i & 280)) & (i | 280);
                                                 int i498 = ~(107317974 | i66);
@@ -5297,7 +5296,7 @@ public final class PngjInputException {
                                         if (((int[]) objArr[3])[c2] == ((int[]) objArr[c2])[c2]) {
                                             int i532 = PngjUnsupportedException;
                                             int i533 = (i532 & 37) + (i532 | 37);
-                                            PngjOutputException = i533 % Uuid.SIZE_BITS;
+                                            PngjOutputException = i533 % 128;
                                             if (i533 % 2 != 0) {
                                                 int i534 = i10 / 0;
                                             }
@@ -5493,7 +5492,7 @@ public final class PngjInputException {
                                         }
                                         int i607 = PngjOutputException;
                                         int i608 = (i607 & 103) + (i607 | 103);
-                                        PngjUnsupportedException = i608 % Uuid.SIZE_BITS;
+                                        PngjUnsupportedException = i608 % 128;
                                         if (i608 % 2 == 0) {
                                             Object PngjBadSignature37 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1617763359);
                                             if (PngjBadSignature37 == null) {
@@ -5711,7 +5710,7 @@ public final class PngjInputException {
             char c;
             int i6;
             int i7 = $10 + 11;
-            $11 = i7 % Uuid.SIZE_BITS;
+            $11 = i7 % 128;
             int i8 = 0;
             if (i7 % 2 == 0) {
                 int i9 = 87 / 0;
@@ -5788,13 +5787,13 @@ public final class PngjInputException {
             if (z) {
                 char[] cArr4 = new char[i];
                 action.valueOf = i4;
-                $11 = ($10 + 91) % Uuid.SIZE_BITS;
+                $11 = ($10 + 91) % 128;
                 while (true) {
                     int i14 = action.valueOf;
                     if (i14 >= i) {
                         break;
                     }
-                    $11 = ($10 + 99) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 99) % 128;
                     cArr4[i14] = cArr2[(i - i14) - 1];
                     Object[] objArr4 = {action, action};
                     Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
@@ -5816,12 +5815,12 @@ public final class PngjInputException {
             char[] cArr2;
             int i3;
             char c2;
-            $11 = ($10 + 125) % Uuid.SIZE_BITS;
+            $11 = ($10 + 125) % 128;
             char[] charArray = str3 != 0 ? str3.toCharArray() : str3;
             if (str2 != null) {
-                $11 = ($10 + 33) % Uuid.SIZE_BITS;
+                $11 = ($10 + 33) % 128;
                 cArr = str2.toCharArray();
-                $10 = ($11 + 63) % Uuid.SIZE_BITS;
+                $10 = ($11 + 63) % 128;
             } else {
                 cArr = str2;
             }
@@ -5929,10 +5928,10 @@ public final class PngjInputException {
 
         @Override // com.android.volley.RetryPolicy
         public final int getCurrentRetryCount() {
-            int i = (PngjUnsupportedException + 41) % Uuid.SIZE_BITS;
+            int i = (PngjUnsupportedException + 41) % 128;
             PngjOutputException = i;
             int i2 = i + 107;
-            PngjUnsupportedException = i2 % Uuid.SIZE_BITS;
+            PngjUnsupportedException = i2 % 128;
             if (i2 % 2 == 0) {
                 int i3 = 66 / 0;
             }
@@ -5941,15 +5940,15 @@ public final class PngjInputException {
 
         @Override // com.android.volley.RetryPolicy
         public final int getCurrentTimeout() {
-            int i = (PngjOutputException + 123) % Uuid.SIZE_BITS;
+            int i = (PngjOutputException + 123) % 128;
             PngjUnsupportedException = i;
-            PngjOutputException = (i + 111) % Uuid.SIZE_BITS;
+            PngjOutputException = (i + 111) % 128;
             return 0;
         }
 
         @Override // com.android.volley.RetryPolicy
         public final void retry(VolleyError volleyError) {
-            PngjOutputException = (PngjUnsupportedException + 1) % Uuid.SIZE_BITS;
+            PngjOutputException = (PngjUnsupportedException + 1) % 128;
         }
     }
 

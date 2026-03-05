@@ -94,7 +94,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import kotlin.io.ConstantsKt;
 import kotlin.jvm.internal.ByteCompanionObject;
-import kotlin.uuid.Uuid;
 import org.camera.a.valueOf.PngjBadCrcException;
 import org.camera.preview.PngjBadCrcException;
 import org.camera.preview.PngjBadCrcException.valueOf;
@@ -314,17 +313,17 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i4;
             int i5;
             String str3 = str2;
-            int i6 = ($10 + 1) % Uuid.SIZE_BITS;
+            int i6 = ($10 + 1) % 128;
             $11 = i6;
             byte[] bArr = str3;
             if (str3 != null) {
-                $10 = (i6 + 109) % Uuid.SIZE_BITS;
+                $10 = (i6 + 109) % 128;
                 bArr = str3.getBytes("ISO-8859-1");
             }
             byte[] bArr2 = bArr;
             if (str != null) {
                 cArr = str.toCharArray();
-                $11 = ($10 + 21) % Uuid.SIZE_BITS;
+                $11 = ($10 + 21) % 128;
             } else {
                 cArr = str;
             }
@@ -339,7 +338,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 int i8 = 0;
                 while (i8 < length) {
                     int i9 = $11 + 21;
-                    $10 = i9 % Uuid.SIZE_BITS;
+                    $10 = i9 % 128;
                     if (i9 % 2 != 0) {
                         try {
                             Object[] objArr2 = {Integer.valueOf(cArr4[i8])};
@@ -410,7 +409,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
             } else if (PngjExceptionInternal) {
                 int i14 = $10 + 11;
-                $11 = i14 % Uuid.SIZE_BITS;
+                $11 = i14 % 128;
                 if (i14 % 2 == 0) {
                     int length3 = cArr3.length;
                     pngjExceptionInternal.PngjException = length3;
@@ -457,7 +456,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         return;
                     }
                     int i19 = $11 + 7;
-                    $10 = i19 % Uuid.SIZE_BITS;
+                    $10 = i19 % 128;
                     if (i19 % 2 != 0) {
                         cArr7[i17] = (char) (cArr4[iArr[i18 >> i17] << i] << intValue);
                         i3 = i17 << 1;
@@ -492,7 +491,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i9 = 0;
             if (cArr2 != null) {
                 int i10 = $11 + 113;
-                $10 = i10 % Uuid.SIZE_BITS;
+                $10 = i10 % 128;
                 if (i10 % 2 != 0) {
                     length = cArr2.length;
                     cArr = new char[length];
@@ -557,7 +556,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i15 = 1;
             if (i2 > 1) {
                 int i16 = $10 + 31;
-                $11 = i16 % Uuid.SIZE_BITS;
+                $11 = i16 % 128;
                 if (i16 % 2 == 0) {
                     pngjInputException.values = 1;
                 } else {
@@ -568,7 +567,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     if (i17 >= i2) {
                         break;
                     }
-                    $10 = ($11 + 55) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 55) % 128;
                     char c7 = charArray[i17];
                     pngjInputException.valueOf = c7;
                     char c8 = charArray[i17 + 1];
@@ -656,7 +655,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 int i25 = pngjInputException.values;
                                 cArr3[i25] = cArr2[(i21 * charValue) + C];
                                 cArr3[i25 + i23] = cArr2[i24];
-                                $11 = ($10 + 109) % Uuid.SIZE_BITS;
+                                $11 = ($10 + 109) % 128;
                                 i3 = 1;
                             } else {
                                 int i26 = (i21 * charValue) + i18;
@@ -676,7 +675,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i29 = 0;
             while (i29 < i) {
                 int i30 = $10 + 39;
-                $11 = i30 % Uuid.SIZE_BITS;
+                $11 = i30 % 128;
                 if (i30 % 2 == 0) {
                     cArr3[i29] = (char) (cArr3[i29] ^ 16821);
                     i29 += 48;
@@ -1112,7 +1111,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     b("\u0001 \u000b\"\u001d#*\"\u0001 *#\b\u001c", i166, (byte) ((i167 & 69) + (i167 | 69)), objArr27);
                     String str9 = (String) cls.getMethod((String) objArr27[0], null).invoke(context, null);
                     Object[] objArr28 = new Object[1];
-                    a(null, null, ExpandableListView.getPackedPositionChild(0L) + Uuid.SIZE_BITS, "\u0084\u0094\u0085\u0084\u008b\u008a\u0093\u0092\u0084\u008b\u0085\u0084\u008b\u008a\u008e\u0092\u008f\u0091\u008a\u0090\u008f\u008b\u008d", objArr28);
+                    a(null, null, ExpandableListView.getPackedPositionChild(0L) + 128, "\u0084\u0094\u0085\u0084\u008b\u008a\u0093\u0092\u0084\u008b\u0085\u0084\u008b\u008a\u008e\u0092\u008f\u0091\u008a\u0090\u008f\u008b\u008d", objArr28);
                     Class<?> cls2 = Class.forName((String) objArr28[0]);
                     Object[] objArr29 = new Object[1];
                     a(null, null, 127 - Gravity.getAbsoluteGravity(0, 0), "\u008a\u0099\u008b\u0098\u008b\u008a\u0091\u0084\u008d\u008e\u0091\u0097\u0088\u0088\u0096\u0084\u0085\u0095", objArr29);
@@ -2027,7 +2026,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         try {
                             int lastIndexOf5 = TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0);
                             Object[] objArr80 = new Object[1];
-                            a(null, null, ((lastIndexOf5 | Uuid.SIZE_BITS) << 1) - (lastIndexOf5 ^ Uuid.SIZE_BITS), "\u009c", objArr80);
+                            a(null, null, ((lastIndexOf5 | 128) << 1) - (lastIndexOf5 ^ 128), "\u009c", objArr80);
                             String[] split2 = obj3.split((String) objArr80[0]);
                             length2 = split2.length;
                             i10 = 0;
@@ -2128,7 +2127,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 String obj32 = sb22.toString();
                 int lastIndexOf52 = TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0);
                 Object[] objArr802 = new Object[1];
-                a(null, null, ((lastIndexOf52 | Uuid.SIZE_BITS) << 1) - (lastIndexOf52 ^ Uuid.SIZE_BITS), "\u009c", objArr802);
+                a(null, null, ((lastIndexOf52 | 128) << 1) - (lastIndexOf52 ^ 128), "\u009c", objArr802);
                 String[] split22 = obj32.split((String) objArr802[0]);
                 length2 = split22.length;
                 i10 = 0;
@@ -2157,12 +2156,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
         @Override // java.lang.Runnable
         public void run() {
-            PngjInputException = (PngjOutputException + 77) % Uuid.SIZE_BITS;
+            PngjInputException = (PngjOutputException + 77) % 128;
             org.camera.preview.PngjBadCrcException pngjBadCrcException = FingerActivity.this.Action;
             if (pngjBadCrcException != null) {
                 pngjBadCrcException.valueOf();
             }
-            PngjInputException = (PngjOutputException + 43) % Uuid.SIZE_BITS;
+            PngjInputException = (PngjOutputException + 43) % 128;
         }
     }
 
@@ -2354,7 +2353,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         /* JADX WARN: Code restructure failed: missing block: B:48:0x07fb, code lost:
         
             r0 = com.identy.FingerActivity.PngjUnsupportedException.PngjPrematureEnding;
-            com.identy.FingerActivity.PngjUnsupportedException.PngjOutputException = ((r0 & 29) + (r0 | 29)) % kotlin.uuid.Uuid.SIZE_BITS;
+            com.identy.FingerActivity.PngjUnsupportedException.PngjOutputException = ((r0 & 29) + (r0 | 29)) % 128;
             r4 = new java.lang.Object[1];
             c("オ\uf484ゅ냭ꬅ셐⍩ഗ₵ꃑ㌣ᵭႾ郇̑ⶸQ聼ᎀ㶀瀏瀪推췓怽怙牯\udc28凯円䉏\uec77", android.view.Gravity.getAbsoluteGravity(0, 0), r4);
          */
@@ -2398,7 +2397,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
          */
         /* JADX WARN: Code restructure failed: missing block: B:55:0x0900, code lost:
         
-            com.identy.FingerActivity.PngjUnsupportedException.PngjPrematureEnding = (com.identy.FingerActivity.PngjUnsupportedException.PngjOutputException + 87) % kotlin.uuid.Uuid.SIZE_BITS;
+            com.identy.FingerActivity.PngjUnsupportedException.PngjPrematureEnding = (com.identy.FingerActivity.PngjUnsupportedException.PngjOutputException + 87) % 128;
             r0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:561:0x1394, code lost:
@@ -2573,7 +2572,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     return objArr4;
                 }
                 Object[] objArr5 = new Object[1];
-                b(null, TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0, 0) + Uuid.SIZE_BITS, null, "\u0088\u0081\u0085\u0087\u0086\u0081\u0085\u0084\u0083\u0082\u0081", objArr5);
+                b(null, TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0, 0) + 128, null, "\u0088\u0081\u0085\u0087\u0086\u0081\u0085\u0084\u0083\u0082\u0081", objArr5);
                 Object[] objArr6 = {(String) objArr5[0]};
                 Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(547370249);
                 if (PngjBadSignature3 == null) {
@@ -2659,7 +2658,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         }
                         Object invoke3 = ((Method) PngjBadSignature6).invoke(null, objArr16);
                         if (invoke2 != null) {
-                            PngjPrematureEnding = (PngjOutputException + 65) % Uuid.SIZE_BITS;
+                            PngjPrematureEnding = (PngjOutputException + 65) % 128;
                             Object[] objArr18 = {invoke2, 42};
                             Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i3);
                             if (PngjBadSignature7 == null) {
@@ -2919,10 +2918,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 int i112 = ~(i111 | (-129));
                 int i113 = ~i109;
                 int i114 = (i112 | (~((i113 & i20) | (i113 ^ i20)))) * (-241);
-                int i115 = (((i109 ^ Uuid.SIZE_BITS) | (i109 & Uuid.SIZE_BITS)) * (-482)) + (i110 & i114) + (i110 | i114);
+                int i115 = (((i109 ^ 128) | (i109 & 128)) * (-482)) + (i110 & i114) + (i110 | i114);
                 int i116 = ~((i109 & (-129)) | ((-129) ^ i109));
                 int i117 = (i111 & i20) | (i111 ^ i20);
-                int i118 = ~((i117 & Uuid.SIZE_BITS) | (i117 ^ Uuid.SIZE_BITS));
+                int i118 = ~((i117 & 128) | (i117 ^ 128));
                 int i119 = -(-(((i116 & i118) | (i116 ^ i118)) * 241));
                 int i120 = (i115 & i119) + (i119 | i115);
                 Object[] objArr52 = new Object[1];
@@ -2957,7 +2956,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
                 Object invoke4 = ((Method) PngjBadSignature11).invoke(null, objArr56);
                 if (invoke4 != null) {
-                    PngjOutputException = (PngjPrematureEnding + 1) % Uuid.SIZE_BITS;
+                    PngjOutputException = (PngjPrematureEnding + 1) % 128;
                     Object[] objArr58 = new Object[1];
                     c("İ\u0ba0ł俍溄卑\ue6f2鼖ᅨ忩", ViewConfiguration.getLongPressTimeout() >> 16, objArr58);
                     String str29 = (String) objArr58[0];
@@ -3082,7 +3081,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         if (obj3 != null) {
                             int i153 = PngjPrematureEnding;
                             int i154 = (i153 ^ 69) + ((i153 & 69) << 1);
-                            PngjOutputException = i154 % Uuid.SIZE_BITS;
+                            PngjOutputException = i154 % 128;
                             if (i154 % 2 == 0) {
                                 Object[] objArr70 = {obj3, 63};
                                 Object PngjBadSignature16 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i3);
@@ -3168,7 +3167,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         if (((i183 & i185) | (i183 ^ i185)) != 0) {
                                             i16 = 1;
                                         } else {
-                                            PngjPrematureEnding = (PngjOutputException + 11) % Uuid.SIZE_BITS;
+                                            PngjPrematureEnding = (PngjOutputException + 11) % 128;
                                             i16 = 0;
                                         }
                                         int i186 = -(-i16);
@@ -3177,7 +3176,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                     }
                                     if (i160 >= 25.2d) {
                                         int i187 = PngjPrematureEnding;
-                                        PngjOutputException = ((i187 & 43) + (i187 | 43)) % Uuid.SIZE_BITS;
+                                        PngjOutputException = ((i187 & 43) + (i187 | 43)) % 128;
                                         z = true;
                                     }
                                 }
@@ -3211,7 +3210,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             }
                             if (!z) {
                                 int i193 = PngjOutputException;
-                                PngjPrematureEnding = ((i193 ^ 105) + ((i193 & 105) << 1)) % Uuid.SIZE_BITS;
+                                PngjPrematureEnding = ((i193 ^ 105) + ((i193 & 105) << 1)) % 128;
                                 Object[] objArr77 = {new int[]{i ^ 261}, new int[1], null, new int[]{i}};
                                 int elapsedRealtime = (int) SystemClock.elapsedRealtime();
                                 int i194 = ~elapsedRealtime;
@@ -3357,14 +3356,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             int i214 = ((int) j110) & ((((~(201548192 | i20)) | 1168479657) * 262) + ((((~(201548192 | i)) | 1168479657) * 262) - 1790132123));
                             long j111 = (c8 & i214) | (c8 ^ i214);
                             if (j2 > 0 && j111 > 0) {
-                                int i215 = (PngjPrematureEnding + 119) % Uuid.SIZE_BITS;
+                                int i215 = (PngjPrematureEnding + 119) % 128;
                                 PngjOutputException = i215;
                                 if (j111 + 100 < j2) {
-                                    PngjPrematureEnding = (i215 + 1) % Uuid.SIZE_BITS;
+                                    PngjPrematureEnding = (i215 + 1) % 128;
                                     z2 = true;
                                     if (!z2) {
                                         int i216 = PngjOutputException;
-                                        PngjPrematureEnding = ((i216 & 15) + (i216 | 15)) % Uuid.SIZE_BITS;
+                                        PngjPrematureEnding = ((i216 & 15) + (i216 | 15)) % 128;
                                         Object[] objArr91 = {new int[]{i ^ 248}, new int[1], null, new int[]{i}};
                                         int i217 = (((~(i | 1029175029)) | (~((-621057026) | i20))) * 318) + (((~((-626447970) | i)) | (~(1029175029 | i20))) * 318) + (((~((-408118005) | i)) | (-626447970)) * (-318)) + 325113839;
                                         int PngjBadCrcException7 = IdentySdk.valueOf.PngjBadCrcException();
@@ -3434,7 +3433,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         }
                                         int i250 = PngjOutputException;
                                         int i251 = (i250 & 121) + (i250 | 121);
-                                        PngjPrematureEnding = i251 % Uuid.SIZE_BITS;
+                                        PngjPrematureEnding = i251 % 128;
                                         if (i251 % 2 != 0) {
                                             Object[] objArr99 = {strArr6[i249]};
                                             Object PngjBadSignature23 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1492900309);
@@ -3548,7 +3547,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                 for (int i269 = 0; i269 <= 0; i269++) {
                                                     int i270 = PngjPrematureEnding;
                                                     int i271 = ((i270 | 99) << 1) - (i270 ^ 99);
-                                                    PngjOutputException = i271 % Uuid.SIZE_BITS;
+                                                    PngjOutputException = i271 % 128;
                                                     if (i271 % 2 != 0) {
                                                         if ((str37.contains(strArr7[i269]) ? 'X' : 'D') == 'X') {
                                                             z3 = true;
@@ -3566,7 +3565,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                             }
                                             int indexOf10 = TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0');
                                             objArr2 = new Object[1];
-                                            b(null, ((indexOf10 | Uuid.SIZE_BITS) << 1) - (indexOf10 ^ Uuid.SIZE_BITS), null, "\u0093\u0082\u0092\u0088\u0085\u0086\u0098\u008f\u008d\u0083\u0090\u0096\u008d\u0083\u0091\u008c\u0093\u008c", objArr2);
+                                            b(null, ((indexOf10 | 128) << 1) - (indexOf10 ^ 128), null, "\u0093\u0082\u0092\u0088\u0085\u0086\u0098\u008f\u008d\u0083\u0090\u0096\u008d\u0083\u0091\u008c\u0093\u008c", objArr2);
                                         } catch (Throwable th) {
                                             Throwable cause = th.getCause();
                                             if (cause != null) {
@@ -3926,7 +3925,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                         } else {
                                                                             i379 = (i379 | 1) + (i379 & 1);
                                                                             int i391 = PngjPrematureEnding;
-                                                                            PngjOutputException = (((i391 | 77) << 1) - (i391 ^ 77)) % Uuid.SIZE_BITS;
+                                                                            PngjOutputException = (((i391 | 77) << 1) - (i391 ^ 77)) % 128;
                                                                         }
                                                                     }
                                                                     i18 = -1;
@@ -4016,10 +4015,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                             long a2 = defpackage.a.a();
                                                             long j151 = ((j149 * (((j150 | a2) ^ j9) | ((j147 | longValue22) ^ j9))) + ((j103 * (j150 | (((longValue22 ^ j9) | a2) ^ j9))) + (((((j150 | (a2 ^ j9)) | longValue22) ^ j9) * j149) + j148))) - 1370955165;
                                                             if (!(((((int) (j151 >> 32)) & ((((~(2024250979 | i20)) | ((~(587024568 | i20)) | (-2063589116))) * 50) + ((((~((-1476564548) | i)) | (~(2063589115 | i20))) * 50) + (((2024250979 | i) * (-50)) + (-1142982366))))) | (((int) j151) & (((2028041493 | (~(829699392 | i20))) * 56) + ((((~(2028041493 | i)) | 829699392) * 56) + 357175949)))) == 0)) {
-                                                                int i406 = (PngjOutputException + 89) % Uuid.SIZE_BITS;
+                                                                int i406 = (PngjOutputException + 89) % 128;
                                                                 PngjPrematureEnding = i406;
                                                                 i13 = i ^ 281;
-                                                                PngjOutputException = (((i406 | 101) << 1) - (i406 ^ 101)) % Uuid.SIZE_BITS;
+                                                                PngjOutputException = (((i406 | 101) << 1) - (i406 ^ 101)) % 128;
                                                             } else {
                                                                 i13 = i;
                                                             }
@@ -4077,7 +4076,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                     int i413 = (~((-1438102715) | i)) | (~(1419638171 | i20));
                                                                     int i414 = ((int) j167) & (((540929 | (~(1438102714 | i20))) * 516) + (((~((-1419097243) | i)) | (~((-540930) | i20))) * 516) + (((i413 | r5) * (-516)) - 499456815));
                                                                     if (((i412 & i414) | (i412 ^ i414)) != 0) {
-                                                                        PngjOutputException = (PngjPrematureEnding + 45) % Uuid.SIZE_BITS;
+                                                                        PngjOutputException = (PngjPrematureEnding + 45) % 128;
                                                                         objArr = new Object[]{new int[]{r5}, new int[1], null, new int[]{i}};
                                                                         int i415 = (~(i & 266)) & (i | 266);
                                                                         int c13 = defpackage.a.c((~((~((int) Process.getStartElapsedRealtime())) | 392189072)) | 642376901, 56, (((~(r3 | 642376901)) | 392189072) * 56) - 543474291, i5);
@@ -4163,7 +4162,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                 }
                                                                 i14 = 0;
                                                             } else {
-                                                                PngjPrematureEnding = (PngjOutputException + 59) % Uuid.SIZE_BITS;
+                                                                PngjPrematureEnding = (PngjOutputException + 59) % 128;
                                                                 objArr = new Object[]{new int[]{i13}, new int[]{r3}, null, new int[]{i}};
                                                                 int i459 = (i2 - (~defpackage.a.c((~(1065746611 | i)) | (-1046333423), 70, ((~((-5883725) | i)) * 70) + ((((~((-31180638) | i)) | 25296913) * (-140)) + 510062075), 16))) - 1;
                                                                 int i460 = i459 << 13;
@@ -4342,7 +4341,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         int i520 = ~((-984741630) | i20);
                                                         if (((((int) (j201 >> 32)) & (((i520 | (-2142500864)) * 374) + (((1157759234 | i520) * (-374)) + (-1216078186)))) | (((int) j201) & ((((~(1720870518 | i20)) | 1712481842) * 564) + (((~(1996125950 | i)) * 1128) + (((((~((-283644109) | i20)) | 1720870518) | (~(283644108 | i))) * (-564)) + (-467375631)))))) != 0) {
                                                             int i521 = PngjOutputException;
-                                                            PngjPrematureEnding = ((i521 ^ 49) + ((i521 & 49) << 1)) % Uuid.SIZE_BITS;
+                                                            PngjPrematureEnding = ((i521 ^ 49) + ((i521 & 49) << 1)) % 128;
                                                             Object[] objArr160 = {new int[]{(i & (-277)) | (i20 & 276)}, new int[1], null, new int[]{i}};
                                                             int c14 = defpackage.a.c(~((-101335585) | i20), -948, (((~((-655345445) | i)) | (-379220530)) * (-948)) + 807980337, -1215338116);
                                                             int PngjBadCrcException14 = IdentySdk.valueOf.PngjBadCrcException();
@@ -4406,7 +4405,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         int i560 = ~myUid10;
                                                         if (!((i558 | (i559 & ((((~(myUid10 | (-18891050))) | ((~(i560 | (-1591687319))) | 344524800)) * 168) + (((~((-1247162519) | myUid10)) * 168) + ((((~((-1266053568) | i560)) | 1247162518) * 168) + (-501357939)))))) == 0)) {
                                                             int i561 = PngjOutputException;
-                                                            PngjPrematureEnding = ((i561 & 49) + (i561 | 49)) % Uuid.SIZE_BITS;
+                                                            PngjPrematureEnding = ((i561 & 49) + (i561 | 49)) % 128;
                                                             Object[] objArr162 = {new int[]{(i & (-274)) | (i20 & 273)}, new int[]{(r1 | r2) & (~(r1 & r2))}, null, new int[]{i}};
                                                             int d2 = defpackage.a.d((~(1012287885 | i20)) | 5392776, 495, (r1 * 495) - 1634857652, 16, i2);
                                                             int i562 = d2 << 13;
@@ -4471,7 +4470,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         }
                                                     }
                                                     int i578 = PngjPrematureEnding;
-                                                    PngjOutputException = ((i578 & 49) + (i578 | 49)) % Uuid.SIZE_BITS;
+                                                    PngjOutputException = ((i578 & 49) + (i578 | 49)) % 128;
                                                 } catch (Throwable th5) {
                                                     Throwable cause3 = th5.getCause();
                                                     if (cause3 != null) {
@@ -4576,7 +4575,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             byte[] bArr2 = bArr;
             if (str != null) {
                 int i5 = $11 + 51;
-                $10 = i5 % Uuid.SIZE_BITS;
+                $10 = i5 % 128;
                 if (i5 % 2 != 0) {
                     str.toCharArray();
                     throw null;
@@ -4626,7 +4625,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             char c2 = '0';
             int i8 = 1;
             if (PngjException) {
-                $10 = ($11 + 39) % Uuid.SIZE_BITS;
+                $10 = ($11 + 39) % 128;
                 int length2 = bArr2.length;
                 pngjExceptionInternal.PngjException = length2;
                 char[] cArr5 = new char[length2];
@@ -4698,7 +4697,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     pngjExceptionInternal.PngjException = length4;
                     char[] cArr7 = new char[length4];
                     pngjExceptionInternal.values = 0;
-                    $10 = ($11 + 25) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 25) % 128;
                     while (true) {
                         int i13 = pngjExceptionInternal.values;
                         int i14 = pngjExceptionInternal.PngjException;
@@ -4707,7 +4706,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             return;
                         }
                         int i15 = $11 + 105;
-                        $10 = i15 % Uuid.SIZE_BITS;
+                        $10 = i15 % 128;
                         if (i15 % 2 != 0) {
                             cArr7[i13] = (char) (cArr3[iArr[i14 / i13] % i] + intValue);
                             i2 = i13 / 0;
@@ -4722,7 +4721,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
 
         private static void c(String str, int i, Object[] objArr) {
-            $11 = ($10 + 87) % Uuid.SIZE_BITS;
+            $11 = ($10 + 87) % 128;
             char[] charArray = str != null ? str.toCharArray() : str;
             com.d.e.a aVar = new com.d.e.a();
             char[] values2 = com.d.e.a.values(PngjInputException ^ 8332534422373704609L, charArray, i);
@@ -4733,7 +4732,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     objArr[0] = new String(values2, 4, values2.length - 4);
                     return;
                 }
-                $11 = ($10 + 25) % Uuid.SIZE_BITS;
+                $11 = ($10 + 25) % 128;
                 int i3 = i2 - 4;
                 aVar.PngjBadCrcException = i3;
                 try {
@@ -4759,7 +4758,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(scrollBarSize, alpha, myTid, -1356718115, false, $$e(b2, b3, (byte) (b3 & 5)), new Class[]{Object.class, Object.class});
                     }
                     ((Method) PngjBadSignature3).invoke(null, objArr3);
-                    $10 = ($11 + 9) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 9) % 128;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
                     if (cause == null) {
@@ -4782,7 +4781,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
         @Override // java.lang.Runnable
         public final void run() {
-            PngjPrematureEnding = (PngjOutputException + 7) % Uuid.SIZE_BITS;
+            PngjPrematureEnding = (PngjOutputException + 7) % 128;
         }
     }
 
@@ -4918,9 +4917,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i2;
             int i3;
             if (str != null) {
-                $11 = ($10 + 59) % Uuid.SIZE_BITS;
+                $11 = ($10 + 59) % 128;
                 cArr = str.toCharArray();
-                $10 = ($11 + 101) % Uuid.SIZE_BITS;
+                $10 = ($11 + 101) % 128;
             } else {
                 cArr = str;
             }
@@ -4930,7 +4929,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int length = cArr2.length;
             long[] jArr = new long[length];
             pngjUnsupportedException.valueOf = 0;
-            $11 = ($10 + 41) % Uuid.SIZE_BITS;
+            $11 = ($10 + 41) % 128;
             while (true) {
                 int i4 = pngjUnsupportedException.valueOf;
                 if (i4 >= cArr2.length) {
@@ -4982,7 +4981,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             }
             char[] cArr3 = new char[length];
             pngjUnsupportedException.valueOf = 0;
-            $10 = ($11 + 109) % Uuid.SIZE_BITS;
+            $10 = ($11 + 109) % 128;
             while (true) {
                 int i5 = pngjUnsupportedException.valueOf;
                 if (i5 >= cArr2.length) {
@@ -5003,7 +5002,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             }
             String str2 = new String(cArr3);
             int i6 = $11 + 71;
-            $10 = i6 % Uuid.SIZE_BITS;
+            $10 = i6 % 128;
             if (i6 % 2 != 0) {
                 throw null;
             }
@@ -5159,7 +5158,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             boolean z;
             int i5;
             Context context2 = context;
-            PngjBadSignature = (PngjException + 45) % Uuid.SIZE_BITS;
+            PngjBadSignature = (PngjException + 45) % 128;
             Object[] objArr3 = new Object[1];
             a("㉍ꗧᴂ\uf4b1泗쑼뾖ខ轫暒\ude70뙨⧩脾神탢䠑⎚鯚獼\ueaab䋎", 38821 - (ViewConfiguration.getScrollDefaultDelay() >> 16), objArr3);
             String str = (String) objArr3[0];
@@ -5186,7 +5185,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 i2 = 3;
                 if (context2 != null) {
                     int i6 = PngjException + 23;
-                    PngjBadSignature = i6 % Uuid.SIZE_BITS;
+                    PngjBadSignature = i6 % 128;
                     if (i6 % 2 == 0) {
                         int i7 = 8 / 0;
                     }
@@ -5322,7 +5321,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i19 = c4 ^ (c4 << 13);
             int i20 = i19 ^ (i19 >>> 17);
             ((int[]) objArr15[i3])[i4] = i20 ^ (i20 << 5);
-            PngjBadSignature = (PngjException + 123) % Uuid.SIZE_BITS;
+            PngjBadSignature = (PngjException + 123) % 128;
             Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
             if (PngjBadSignature6 == null) {
                 char minimumFlingVelocity = (char) (14830 - (ViewConfiguration.getMinimumFlingVelocity() >> 16));
@@ -5339,7 +5338,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             try {
                 try {
                     if (j2 != -1) {
-                        PngjBadSignature = (PngjException + 109) % Uuid.SIZE_BITS;
+                        PngjBadSignature = (PngjException + 109) % 128;
                         if (j2 + 4611686018427387820L >= ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
                             Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                             if (PngjBadSignature7 == null) {
@@ -5373,12 +5372,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                     throw null;
                                 }
                                 int i30 = PngjException + 77;
-                                PngjBadSignature = i30 % Uuid.SIZE_BITS;
+                                PngjBadSignature = i30 % 128;
                                 int i31 = i30 % 2 != 0 ? 0 : 1;
                                 while (i31 < strArr.length) {
                                     arrayList2.add(strArr[i31]);
                                     i31++;
-                                    PngjBadSignature = (PngjException + 123) % Uuid.SIZE_BITS;
+                                    PngjBadSignature = (PngjException + 123) % 128;
                                 }
                                 throw null;
                             }
@@ -5464,7 +5463,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                     throw new RuntimeException();
                                 }
                             } else {
-                                PngjBadSignature = (PngjException + 105) % Uuid.SIZE_BITS;
+                                PngjBadSignature = (PngjException + 105) % 128;
                                 Object PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
                                 if (PngjBadSignature12 == null) {
                                     int capsMode = 37 - TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0);
@@ -5553,7 +5552,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             }
                             if (FingerActivity.this.PngjExceptionInternal.equals(FingerDetectionMode.L4F) || FingerActivity.this.PngjExceptionInternal.equals(FingerDetectionMode.R4F)) {
                                 Build.MANUFACTURER.contains("motorola");
-                                PngjBadSignature = (PngjException + 89) % Uuid.SIZE_BITS;
+                                PngjBadSignature = (PngjException + 89) % 128;
                                 i5 = 35;
                             }
                             if (!(!FingerActivity.this.PngjExceptionInternal.equals(FingerDetectionMode.TWO_THUMB))) {
@@ -5563,7 +5562,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             if (fingerActivity2.Action == null || fingerActivity2.onErrorResponse == null) {
                                 return;
                             }
-                            PngjException = (PngjBadSignature + 55) % Uuid.SIZE_BITS;
+                            PngjException = (PngjBadSignature + 55) % 128;
                             FingerActivity.PngjException = Calendar.getInstance().getTimeInMillis();
                             FingerActivity fingerActivity3 = FingerActivity.this;
                             org.camera.preview.PngjBadCrcException pngjBadCrcException = fingerActivity3.Action;
@@ -5604,7 +5603,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             pngjBadCrcException.e1 = hashMap;
                             org.cameracontroller.PngjBadSignature pngjBadSignature = pngjBadCrcException.getQualityScore;
                             if (pngjBadSignature instanceof org.cameracontroller.valueOf) {
-                                PngjException = (PngjBadSignature + 61) % Uuid.SIZE_BITS;
+                                PngjException = (PngjBadSignature + 61) % 128;
                                 int i95 = ((org.cameracontroller.valueOf) pngjBadSignature).getShortform;
                             }
                             Calendar.getInstance().getTimeInMillis();
@@ -5881,9 +5880,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         private static void a(String str, int i, Object[] objArr) {
             char[] cArr;
             int i2 = $10;
-            $11 = (i2 + 53) % Uuid.SIZE_BITS;
+            $11 = (i2 + 53) % 128;
             if (str != null) {
-                $11 = (i2 + 87) % Uuid.SIZE_BITS;
+                $11 = (i2 + 87) % 128;
                 cArr = str.toCharArray();
             } else {
                 cArr = str;
@@ -5917,7 +5916,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (14830 - (CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1))), (ViewConfiguration.getMaximumFlingVelocity() >> 16) + 28, 721 - TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0), -1356718115, false, $$g(b, b2, b2), new Class[]{Object.class, Object.class});
                     }
                     ((Method) PngjBadSignature2).invoke(null, objArr3);
-                    $10 = ($11 + 51) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 51) % 128;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
                     if (cause == null) {
@@ -5928,7 +5927,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             }
             String str2 = new String(values2, 4, values2.length - 4);
             int i6 = $11 + 5;
-            $10 = i6 % Uuid.SIZE_BITS;
+            $10 = i6 % 128;
             if (i6 % 2 != 0) {
                 throw null;
             }
@@ -6076,7 +6075,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i5;
             Object obj2;
             int i6;
-            valueOf = (values + 81) % Uuid.SIZE_BITS;
+            valueOf = (values + 81) % 128;
             Object[] objArr3 = new Object[1];
             a("\uf3dbʥ\uf3ba蹧눎ꬲ嫢ﲔ섄붐﹢艸雔\uf0da처凕殲♪̒撓㥶喊噺⩉່裒", Color.argb(0, 0, 0, 0), objArr3);
             String str = (String) objArr3[0];
@@ -6121,7 +6120,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             Object[] objArr7 = new Object[1];
                             a("綈\ue947緡斏隒辯큊瘠佌噲\udaee\u0887ᢠᬪ\ue859\udb46\ue5db추➞\uee3b", (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1)), objArr7);
                             int intValue = ((Integer) cls.getMethod((String) objArr7[0], Object.class).invoke(null, this)).intValue();
-                            valueOf = (values + 111) % Uuid.SIZE_BITS;
+                            valueOf = (values + 111) % 128;
                             try {
                                 Object[] objArr8 = {applicationContext, Integer.valueOf(intValue), 0, -561598680};
                                 byte[] bArr = $$d;
@@ -6205,7 +6204,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 Object[] objArr72 = new Object[1];
                                 a("綈\ue947緡斏隒辯큊瘠佌噲\udaee\u0887ᢠᬪ\ue859\udb46\ue5db추➞\uee3b", (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1)), objArr72);
                                 int intValue3 = ((Integer) cls5.getMethod((String) objArr72[0], Object.class).invoke(null, this)).intValue();
-                                valueOf = (values + 111) % Uuid.SIZE_BITS;
+                                valueOf = (values + 111) % 128;
                                 Object[] objArr82 = {applicationContext, Integer.valueOf(intValue3), 0, -561598680};
                                 byte[] bArr3 = $$d;
                                 byte b32 = bArr3[8];
@@ -6305,16 +6304,16 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     int i18 = c4 ^ (c4 << 13);
                     int i19 = i18 ^ (i18 >>> 17);
                     ((int[]) objArr18[1])[i4] = i19 ^ (i19 << 5);
-                    values = (valueOf + 111) % Uuid.SIZE_BITS;
+                    values = (valueOf + 111) % 128;
                 } else {
                     ArrayList arrayList = new ArrayList();
                     String[] strArr2 = (String[]) valueOf$1eba2e16[i3];
                     if (strArr2 != null) {
-                        valueOf = (values + 109) % Uuid.SIZE_BITS;
+                        valueOf = (values + 109) % 128;
                         int i20 = i4;
                         while (i20 < strArr2.length) {
                             int i21 = values + 63;
-                            valueOf = i21 % Uuid.SIZE_BITS;
+                            valueOf = i21 % 128;
                             if (i21 % 2 == 0) {
                                 arrayList.add(strArr2[i20]);
                                 i20 += 92;
@@ -6466,7 +6465,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i40 = i39 ^ (i39 >>> 17);
             ((int[]) objArr29[0])[0] = i40 ^ (i40 << 5);
             int i41 = values + 31;
-            valueOf = i41 % Uuid.SIZE_BITS;
+            valueOf = i41 % 128;
             if (i41 % 2 == 0) {
                 FingerActivity fingerActivity = FingerActivity.this;
                 fingerActivity.PngjBadSignature(fingerActivity.onErrorResponse.onErrorResponse());
@@ -6494,7 +6493,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 Object[] objArr722 = new Object[1];
                 a("綈\ue947緡斏隒辯큊瘠佌噲\udaee\u0887ᢠᬪ\ue859\udb46\ue5db추➞\uee3b", (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1)), objArr722);
                 int intValue32 = ((Integer) cls52.getMethod((String) objArr722[0], Object.class).invoke(null, this)).intValue();
-                valueOf = (values + 111) % Uuid.SIZE_BITS;
+                valueOf = (values + 111) % 128;
                 Object[] objArr822 = {applicationContext, Integer.valueOf(intValue32), 0, -561598680};
                 byte[] bArr32 = $$d;
                 byte b322 = bArr32[8];
@@ -6564,7 +6563,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 int i47 = c11 ^ (c11 << 13);
                 int i48 = i47 ^ (i47 >>> 17);
                 ((int[]) objArr[4])[0] = i48 ^ (i48 << 5);
-                valueOf = (values + 105) % Uuid.SIZE_BITS;
+                valueOf = (values + 105) % 128;
             }
             i = ((int[]) objArr[2])[0];
             i2 = ((int[]) objArr[3])[0];
@@ -6800,7 +6799,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         PngjBadSignature = false;
         PngjPrematureEnding = false;
         int i = getFingers + 75;
-        isFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+        isFoundMatchingTemplates = i % 128;
         if (i % 2 == 0) {
             int i2 = 11 / 0;
         }
@@ -6811,16 +6810,16 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (!Build.BRAND.startsWith("generic") || !Build.DEVICE.startsWith("generic")) {
             String str2 = Build.FINGERPRINT;
             if (!str2.startsWith("generic")) {
-                setFoundMatchingTemplates = (toJson + 3) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (toJson + 3) % 128;
                 if (!str2.startsWith("unknown")) {
                     String str3 = Build.HARDWARE;
                     if (!str3.contains("goldfish")) {
                         int i = setFoundMatchingTemplates;
-                        toJson = ((i ^ 63) + ((i & 63) << 1)) % Uuid.SIZE_BITS;
+                        toJson = ((i ^ 63) + ((i & 63) << 1)) % 128;
                         if (!str3.contains("ranchu")) {
                             int i2 = setFoundMatchingTemplates;
                             int i3 = ((i2 | 3) << 1) - (i2 ^ 3);
-                            toJson = i3 % Uuid.SIZE_BITS;
+                            toJson = i3 % 128;
                             if (i3 % 2 != 0) {
                                 str.contains("google_sdk");
                                 throw null;
@@ -6828,29 +6827,29 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             if (!str.contains("google_sdk") && !str.contains("Emulator")) {
                                 int i4 = toJson;
                                 int i5 = (i4 & 35) + (i4 | 35);
-                                setFoundMatchingTemplates = i5 % Uuid.SIZE_BITS;
+                                setFoundMatchingTemplates = i5 % 128;
                                 if (i5 % 2 == 0) {
                                     str.contains("Android SDK built for x86");
                                     throw null;
                                 }
                                 if (!str.contains("Android SDK built for x86") && !Build.MANUFACTURER.contains("Genymotion")) {
                                     int i6 = toJson;
-                                    setFoundMatchingTemplates = ((i6 ^ 103) + ((i6 & 103) << 1)) % Uuid.SIZE_BITS;
+                                    setFoundMatchingTemplates = ((i6 ^ 103) + ((i6 & 103) << 1)) % 128;
                                     String str4 = Build.PRODUCT;
                                     if (!str4.contains("sdk_google")) {
                                         int i7 = toJson;
-                                        setFoundMatchingTemplates = ((i7 & 101) + (i7 | 101)) % Uuid.SIZE_BITS;
+                                        setFoundMatchingTemplates = ((i7 & 101) + (i7 | 101)) % 128;
                                         if (!str4.contains("google_sdk")) {
                                             int i8 = setFoundMatchingTemplates;
-                                            toJson = ((i8 ^ 85) + ((i8 & 85) << 1)) % Uuid.SIZE_BITS;
+                                            toJson = ((i8 ^ 85) + ((i8 & 85) << 1)) % 128;
                                             if (!str4.contains("sdk") && !str4.contains("sdk_x86")) {
                                                 int i9 = toJson;
-                                                setFoundMatchingTemplates = ((i9 & 121) + (i9 | 121)) % Uuid.SIZE_BITS;
+                                                setFoundMatchingTemplates = ((i9 & 121) + (i9 | 121)) % 128;
                                                 if (!str4.contains("sdk_gphone64_arm64")) {
-                                                    toJson = (setFoundMatchingTemplates + 61) % Uuid.SIZE_BITS;
+                                                    toJson = (setFoundMatchingTemplates + 61) % 128;
                                                     if (!str4.contains("vbox86p") && !str4.contains("emulator") && !str4.contains("simulator")) {
                                                         int i10 = setFoundMatchingTemplates + 17;
-                                                        toJson = i10 % Uuid.SIZE_BITS;
+                                                        toJson = i10 % 128;
                                                         if (i10 % 2 == 0) {
                                                             return Boolean.FALSE;
                                                         }
@@ -6877,7 +6876,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Code restructure failed: missing block: B:65:0x01f1, code lost:
     
         r0 = com.identy.FingerActivity.toJson;
-        com.identy.FingerActivity.setFoundMatchingTemplates = (r0 + 21) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = (r0 + 21) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:66:0x01f9, code lost:
     
@@ -6886,7 +6885,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Code restructure failed: missing block: B:67:0x01fb, code lost:
     
         r2 = (r0 ^ 67) + ((r0 & 67) << 1);
-        com.identy.FingerActivity.setFoundMatchingTemplates = r2 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = r2 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:68:0x0207, code lost:
     
@@ -6914,7 +6913,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     
         r0 = com.identy.FingerActivity.toJson;
         r2 = ((r0 | 49) << 1) - (r0 ^ 49);
-        com.identy.FingerActivity.setFoundMatchingTemplates = r2 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = r2 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:72:0x023b, code lost:
     
@@ -6951,7 +6950,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         boolean z3;
         int i;
         int i2 = setFoundMatchingTemplates + 89;
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         try {
             if (i2 % 2 != 0) {
                 IdentySdk.getInstance();
@@ -6972,7 +6971,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             boolean z4 = false;
             if (e1Var.PngjExceptionInternal.size() > 0) {
                 int i3 = setFoundMatchingTemplates;
-                toJson = ((i3 ^ com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + ((i3 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) << 1)) % Uuid.SIZE_BITS;
+                toJson = ((i3 ^ com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + ((i3 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) << 1)) % 128;
                 z = e1Var.PngjExceptionInternal.contains(e1.getPadSub2.AS);
             } else {
                 z = false;
@@ -6982,7 +6981,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (identySdk.isEnableSkip()) {
                 int i4 = setFoundMatchingTemplates;
                 int i5 = (i4 ^ 77) + ((i4 & 77) << 1);
-                toJson = i5 % Uuid.SIZE_BITS;
+                toJson = i5 % 128;
                 if (i5 % 2 != 0) {
                     throw null;
                 }
@@ -6992,22 +6991,22 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     }
                 } else if (intValue2 >= identySdk.getSpoofMinRetries()) {
                     int i6 = setFoundMatchingTemplates;
-                    toJson = ((i6 & 121) + (i6 | 121)) % Uuid.SIZE_BITS;
+                    toJson = ((i6 & 121) + (i6 | 121)) % 128;
                     z2 = true;
                 }
                 if (z) {
                     if (intValue >= identySdk.getQualityMaxRetries()) {
                         z3 = true;
                     }
-                    toJson = (setFoundMatchingTemplates + 119) % Uuid.SIZE_BITS;
+                    toJson = (setFoundMatchingTemplates + 119) % 128;
                     z3 = false;
                 } else {
                     if (intValue2 >= identySdk.getSpoofMaxRetries()) {
                         int i7 = toJson;
-                        setFoundMatchingTemplates = ((i7 ^ 59) + ((i7 & 59) << 1)) % Uuid.SIZE_BITS;
+                        setFoundMatchingTemplates = ((i7 ^ 59) + ((i7 & 59) << 1)) % 128;
                         z3 = true;
                     }
-                    toJson = (setFoundMatchingTemplates + 119) % Uuid.SIZE_BITS;
+                    toJson = (setFoundMatchingTemplates + 119) % 128;
                     z3 = false;
                 }
                 if (z) {
@@ -7015,7 +7014,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 } else {
                     int i8 = setFoundMatchingTemplates;
                     int i9 = ((i8 | 5) << 1) - (i8 ^ 5);
-                    toJson = i9 % Uuid.SIZE_BITS;
+                    toJson = i9 % 128;
                     if (i9 % 2 != 0) {
                         identySdk.e(this.PngjExceptionInternal);
                         int i10 = 57 / 0;
@@ -7025,16 +7024,16 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
                 boolean booleanValue = ((Boolean) PngjException(com.identy.a.PngjException.values(), -1456071114, new Object[]{this}, com.identy.a.PngjException.values(), 1456071122, com.identy.a.PngjException.values(), com.identy.a.PngjException.values())).booleanValue();
                 if (z3 && (!com.identy.e1.valueOf(false))) {
-                    toJson = (setFoundMatchingTemplates + 123) % Uuid.SIZE_BITS;
+                    toJson = (setFoundMatchingTemplates + 123) % 128;
                     z4 = true;
                 } else {
                     int i11 = setFoundMatchingTemplates;
-                    toJson = (((i11 | 67) << 1) - (i11 ^ 67)) % Uuid.SIZE_BITS;
+                    toJson = (((i11 | 67) << 1) - (i11 ^ 67)) % 128;
                 }
                 if (!z4) {
                     int i12 = setFoundMatchingTemplates;
                     int i13 = ((i12 | 69) << 1) - (i12 ^ 69);
-                    toJson = i13 % Uuid.SIZE_BITS;
+                    toJson = i13 % 128;
                     if (i13 % 2 != 0) {
                         identySdk.isEnableAllFingerNistTemplate();
                         throw null;
@@ -7044,13 +7043,13 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         this.getPadSub1 = pngjUnsupportedException;
                         pngjUnsupportedException.show();
                         int i14 = setFoundMatchingTemplates;
-                        toJson = ((i14 ^ 125) + ((i14 & 125) << 1)) % Uuid.SIZE_BITS;
+                        toJson = ((i14 ^ 125) + ((i14 & 125) << 1)) % 128;
                         return;
                     }
                 }
                 if (z4) {
                     int i15 = toJson;
-                    setFoundMatchingTemplates = ((i15 ^ 27) + ((i15 & 27) << 1)) % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = ((i15 ^ 27) + ((i15 & 27) << 1)) % 128;
                     if (booleanValue) {
                         com.identy.ui.c.getPadSub2 getpadsub2 = new com.identy.ui.c.getPadSub2(this);
                         getpadsub2.PngjException = R.string.id_attempt_reached_next_detection;
@@ -7093,7 +7092,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 aVar2.PngjException = R.string.id_done;
                 aVar2.values(new getScore()).show();
                 i = setFoundMatchingTemplates + 97;
-                toJson = i % Uuid.SIZE_BITS;
+                toJson = i % 128;
                 if (i % 2 == 0) {
                     throw null;
                 }
@@ -7108,7 +7107,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (z3) {
             }
             int i112 = setFoundMatchingTemplates;
-            toJson = (((i112 | 67) << 1) - (i112 ^ 67)) % Uuid.SIZE_BITS;
+            toJson = (((i112 | 67) << 1) - (i112 ^ 67)) % 128;
             if (!z4) {
             }
             if (z4) {
@@ -7130,38 +7129,38 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             aVar22.PngjException = R.string.id_done;
             aVar22.values(new getScore()).show();
             i = setFoundMatchingTemplates + 97;
-            toJson = i % Uuid.SIZE_BITS;
+            toJson = i % 128;
             if (i % 2 == 0) {
             }
         } catch (Exception e2) {
             e2.printStackTrace();
-            toJson = (setFoundMatchingTemplates + 65) % Uuid.SIZE_BITS;
+            toJson = (setFoundMatchingTemplates + 65) % 128;
         }
     }
 
     private void Capture4FActivity() {
         int i = setFoundMatchingTemplates;
-        toJson = ((i & 53) + (i | 53)) % Uuid.SIZE_BITS;
+        toJson = ((i & 53) + (i | 53)) % 128;
         com.identy.e1 e1Var = this.onErrorResponse;
         if (e1Var != null) {
             int i2 = i + 11;
-            toJson = i2 % Uuid.SIZE_BITS;
+            toJson = i2 % 128;
             int i3 = i2 % 2;
             e1Var.PngjUnsupportedException();
             if (i3 != 0) {
                 int i4 = 69 / 0;
             }
-            toJson = (setFoundMatchingTemplates + 95) % Uuid.SIZE_BITS;
+            toJson = (setFoundMatchingTemplates + 95) % 128;
         }
     }
 
     private void CaptureFingersActivity() {
         int i = setFoundMatchingTemplates;
-        toJson = ((i ^ 101) + ((i & 101) << 1)) % Uuid.SIZE_BITS;
+        toJson = ((i ^ 101) + ((i & 101) << 1)) % 128;
         this.PngjExceptionInternal = this.CapturePosition[this.CaptureThumbActivity];
         getPadSub2();
         int i2 = toJson;
-        setFoundMatchingTemplates = (((i2 | 53) << 1) - (i2 ^ 53)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (((i2 | 53) << 1) - (i2 ^ 53)) % 128;
     }
 
     private void CaptureMode() {
@@ -7175,7 +7174,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0021, code lost:
     
         r0 = com.identy.FingerActivity.setFoundMatchingTemplates;
-        com.identy.FingerActivity.toJson = ((r0 ^ 91) + ((r0 & 91) << 1)) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.toJson = ((r0 ^ 91) + ((r0 & 91) << 1)) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x001c, code lost:
     
@@ -7193,7 +7192,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Code restructure failed: missing block: B:8:0x003c, code lost:
     
         r4 = com.identy.FingerActivity.toJson;
-        com.identy.FingerActivity.setFoundMatchingTemplates = ((r4 & 89) + (r4 | 89)) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = ((r4 & 89) + (r4 | 89)) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7202,7 +7201,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         ObjectAnimator objectAnimator;
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = toJson + 65;
-        setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i % 128;
         try {
             if (i % 2 == 0) {
                 objectAnimator = fingerActivity.isAuthSucess;
@@ -7218,20 +7217,20 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     private static /* synthetic */ Object PngjBadCrcException(Object[] objArr) {
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = setFoundMatchingTemplates;
-        toJson = (i + 95) % Uuid.SIZE_BITS;
+        toJson = (i + 95) % 128;
         if (fingerActivity.CaptureThumbActivity + 1 >= fingerActivity.CapturePosition.length) {
             int i2 = ((i | 53) << 1) - (i ^ 53);
-            toJson = i2 % Uuid.SIZE_BITS;
+            toJson = i2 % 128;
             if (i2 % 2 == 0) {
                 return Boolean.FALSE;
             }
             int i3 = 68 / 0;
             return Boolean.FALSE;
         }
-        int i4 = (i + 67) % Uuid.SIZE_BITS;
+        int i4 = (i + 67) % 128;
         toJson = i4;
         int i5 = (i4 & 27) + (i4 | 27);
-        setFoundMatchingTemplates = i5 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i5 % 128;
         if (i5 % 2 != 0) {
             return Boolean.TRUE;
         }
@@ -7241,7 +7240,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     private static boolean PngjBadSignature(Context context) {
         int i = toJson;
         int i2 = (i ^ 93) + ((i & 93) << 1);
-        setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i2 % 128;
         int i3 = i2 % 2;
         boolean z = context.getResources().getBoolean(R.bool.isTablet);
         if (i3 == 0) {
@@ -7256,7 +7255,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x01f0, code lost:
     
-        com.identy.FingerActivity.toJson = (r11 + 87) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.toJson = (r11 + 87) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x01f6, code lost:
     
@@ -7272,7 +7271,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         r0 = ~(r10 | r11);
         r10 = ~((r10 & 1) | (r10 ^ 1));
         r6 = r7[(((~((r6 & (-2)) | ((-2) ^ r6))) | (~(((-2) ^ r11) | (r11 & (-2))))) * 52) + ((((~((~r8) | 1)) | ((r10 & r0) | (r0 ^ r10))) * (-52)) + r12)];
-        com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 15) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 15) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:52:0x01ef, code lost:
     
@@ -7310,23 +7309,23 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 return PngjBadSignature(objArr);
             case 2:
                 FingerActivity fingerActivity = (FingerActivity) objArr[0];
-                toJson = (setFoundMatchingTemplates + 89) % Uuid.SIZE_BITS;
+                toJson = (setFoundMatchingTemplates + 89) % 128;
                 super.onBackPressed();
                 int i25 = setFoundMatchingTemplates;
-                toJson = ((i25 & 55) + (i25 | 55)) % Uuid.SIZE_BITS;
+                toJson = ((i25 & 55) + (i25 | 55)) % 128;
                 return null;
             case 3:
                 FingerActivity fingerActivity2 = (FingerActivity) objArr[0];
                 fingerActivity2.runOnUiThread(fingerActivity2.new isAuthSucess(((Number) objArr[1]).intValue()));
                 int i26 = setFoundMatchingTemplates;
-                toJson = ((i26 & 77) + (i26 | 77)) % Uuid.SIZE_BITS;
+                toJson = ((i26 & 77) + (i26 | 77)) % 128;
                 return null;
             case 4:
                 ActivityManager activityManager = (ActivityManager) ((FingerActivity) objArr[0]).getSystemService("activity");
                 ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
                 activityManager.getMemoryInfo(memoryInfo);
                 long j = memoryInfo.totalMem;
-                toJson = (setFoundMatchingTemplates + 125) % Uuid.SIZE_BITS;
+                toJson = (setFoundMatchingTemplates + 125) % 128;
                 return Long.valueOf(j);
             case 5:
                 return values(objArr);
@@ -7335,19 +7334,19 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 int intValue = ((Number) objArr[1]).intValue();
                 boolean booleanValue = ((Boolean) objArr[2]).booleanValue();
                 int i27 = toJson;
-                setFoundMatchingTemplates = ((i27 & 7) + (i27 | 7)) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = ((i27 & 7) + (i27 | 7)) % 128;
                 if (booleanValue) {
                     fingerActivity3.runOnUiThread(fingerActivity3.new Capture2TActivity(intValue));
                     return null;
                 }
                 fingerActivity3.PngjBadSignature(intValue);
                 fingerActivity3.runOnUiThread(fingerActivity3.new getL2Score());
-                setFoundMatchingTemplates = (toJson + 67) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (toJson + 67) % 128;
                 return null;
             case 7:
                 FingerActivity fingerActivity4 = (FingerActivity) objArr[0];
                 int i28 = toJson + 63;
-                int i29 = i28 % Uuid.SIZE_BITS;
+                int i29 = i28 % 128;
                 setFoundMatchingTemplates = i29;
                 if (i28 % 2 != 0) {
                     i7 = fingerActivity4.CaptureThumbActivity;
@@ -7375,27 +7374,27 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             case 14:
                 FingerActivity fingerActivity5 = (FingerActivity) objArr[0];
                 int i32 = toJson;
-                setFoundMatchingTemplates = (((i32 | 43) << 1) - (i32 ^ 43)) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (((i32 | 43) << 1) - (i32 ^ 43)) % 128;
                 org.camera.a.valueOf valueof = fingerActivity5.isQualityFailed;
-                setFoundMatchingTemplates = (i32 + 83) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (i32 + 83) % 128;
                 return valueof;
             case 15:
                 FingerActivity fingerActivity6 = (FingerActivity) objArr[0];
                 int i33 = setFoundMatchingTemplates;
-                toJson = (i33 + 51) % Uuid.SIZE_BITS;
+                toJson = (i33 + 51) % 128;
                 Runnable runnable = fingerActivity6.DeduplicationIdentyResponse;
                 if (runnable != null) {
-                    toJson = ((i33 ^ 89) + ((i33 & 89) << 1)) % Uuid.SIZE_BITS;
+                    toJson = ((i33 ^ 89) + ((i33 & 89) << 1)) % 128;
                     runnable.run();
                 }
                 int i34 = setFoundMatchingTemplates;
-                toJson = ((i34 ^ 23) + ((i34 & 23) << 1)) % Uuid.SIZE_BITS;
+                toJson = ((i34 ^ 23) + ((i34 & 23) << 1)) % 128;
                 return null;
             case 16:
                 FingerActivity fingerActivity7 = (FingerActivity) objArr[0];
                 fingerActivity7.runOnUiThread(fingerActivity7.new getSpoofScore(((Boolean) objArr[2]).booleanValue(), ((Number) objArr[1]).intValue()));
                 int i35 = toJson;
-                setFoundMatchingTemplates = (((i35 | 81) << 1) - (i35 ^ 81)) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (((i35 | 81) << 1) - (i35 ^ 81)) % 128;
                 return null;
             case 17:
                 return PngjUnsupportedException(objArr);
@@ -7411,18 +7410,18 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 Locale locale = new Locale(str);
                 Locale.setDefault(locale);
                 int i36 = setFoundMatchingTemplates;
-                toJson = (((i36 | 73) << 1) - (i36 ^ 73)) % Uuid.SIZE_BITS;
+                toJson = (((i36 | 73) << 1) - (i36 ^ 73)) % 128;
                 configuration.setLocale(locale);
                 resources.updateConfiguration(configuration, resources.getDisplayMetrics());
                 int i37 = setFoundMatchingTemplates;
-                toJson = (((i37 | 3) << 1) - (i37 ^ 3)) % Uuid.SIZE_BITS;
-                toJson = (setFoundMatchingTemplates + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+                toJson = (((i37 | 3) << 1) - (i37 ^ 3)) % 128;
+                toJson = (setFoundMatchingTemplates + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
                 return null;
             case 21:
                 FingerActivity fingerActivity9 = (FingerActivity) objArr[0];
-                setFoundMatchingTemplates = (toJson + 41) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (toJson + 41) % 128;
                 fingerActivity9.getL3Score();
-                toJson = (setFoundMatchingTemplates + 95) % Uuid.SIZE_BITS;
+                toJson = (setFoundMatchingTemplates + 95) % 128;
                 return null;
             case 22:
                 return a(objArr);
@@ -7440,21 +7439,21 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     private static /* synthetic */ Object PngjExceptionInternal(Object[] objArr) {
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = setFoundMatchingTemplates;
-        toJson = ((i & 21) + (i | 21)) % Uuid.SIZE_BITS;
+        toJson = ((i & 21) + (i | 21)) % 128;
         Handler handler = fingerActivity.Capture4FActivity;
         if (handler != null) {
             int i2 = ((i | 55) << 1) - (i ^ 55);
-            int i3 = i2 % Uuid.SIZE_BITS;
+            int i3 = i2 % 128;
             toJson = i3;
             if (i2 % 2 != 0) {
                 throw null;
             }
             Runnable runnable = fingerActivity.CaptureRolledThumbActivity;
             if (runnable != null) {
-                setFoundMatchingTemplates = (i3 + 59) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (i3 + 59) % 128;
                 handler.removeCallbacks(runnable);
                 int i4 = toJson;
-                setFoundMatchingTemplates = ((i4 ^ 11) + ((i4 & 11) << 1)) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = ((i4 ^ 11) + ((i4 & 11) << 1)) % 128;
             }
         }
         Handler handler2 = new Handler();
@@ -7502,9 +7501,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0028, code lost:
     
-        com.identy.FingerActivity.toJson = ((r1 & 91) + (r1 | 91)) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.toJson = ((r1 & 91) + (r1 | 91)) % 128;
         r4 = ((r1 | 41) << 1) - (r1 ^ 41);
-        com.identy.FingerActivity.toJson = r4 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.toJson = r4 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x003d, code lost:
     
@@ -7516,7 +7515,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     private static /* synthetic */ Object PngjInputException(Object[] objArr) {
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = toJson + 105;
-        int i2 = i % Uuid.SIZE_BITS;
+        int i2 = i % 128;
         setFoundMatchingTemplates = i2;
         if (i % 2 != 0) {
             int i3 = fingerActivity.CaptureThumbActivity;
@@ -7530,7 +7529,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x009a, code lost:
     
         r5 = com.identy.FingerActivity.toJson;
-        com.identy.FingerActivity.setFoundMatchingTemplates = ((r5 & 83) + (r5 | 83)) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = ((r5 & 83) + (r5 | 83)) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x00af, code lost:
     
@@ -7547,7 +7546,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Code restructure failed: missing block: B:26:0x014a, code lost:
     
         r11 = com.identy.FingerActivity.toJson + 1;
-        com.identy.FingerActivity.setFoundMatchingTemplates = r11 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = r11 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0154, code lost:
     
@@ -7577,21 +7576,21 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         boolean contains;
         int i;
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
-        setFoundMatchingTemplates = (toJson + 121) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (toJson + 121) % 128;
         SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(fingerActivity);
         String str = Build.MANUFACTURER;
         Locale locale = Locale.US;
         boolean contains2 = str.toLowerCase(locale).contains("samsung");
         String str2 = Build.MODEL;
         if (str2.toLowerCase(locale).contains("redmi")) {
-            toJson = (setFoundMatchingTemplates + 33) % Uuid.SIZE_BITS;
+            toJson = (setFoundMatchingTemplates + 33) % 128;
             if (!str2.toLowerCase(locale).contains("note 4")) {
                 int i2 = setFoundMatchingTemplates;
-                toJson = ((i2 & 113) + (i2 | 113)) % Uuid.SIZE_BITS;
+                toJson = ((i2 & 113) + (i2 | 113)) % 128;
                 if (!str2.toLowerCase(locale).contains("5") && !str2.toLowerCase(locale).contains("4") && !str2.toLowerCase(locale).contains("3")) {
                     int i3 = setFoundMatchingTemplates;
                     int i4 = (i3 & 47) + (i3 | 47);
-                    toJson = i4 % Uuid.SIZE_BITS;
+                    toJson = i4 % 128;
                     if (i4 % 2 != 0) {
                         int i5 = 34 / 0;
                     }
@@ -7619,7 +7618,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         }
                         if (contains) {
                             int i22 = setFoundMatchingTemplates + 113;
-                            toJson = i22 % Uuid.SIZE_BITS;
+                            toJson = i22 % 128;
                             int i23 = i22 % 2;
                             SharedPreferences.Editor edit = defaultSharedPreferences.edit();
                             edit.putBoolean("identy_app_preference_camera2_fast_burst", false);
@@ -7627,7 +7626,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         }
                         int i24 = setFoundMatchingTemplates;
                         i = ((i24 | 83) << 1) - (i24 ^ 83);
-                        toJson = i % Uuid.SIZE_BITS;
+                        toJson = i % 128;
                         if (i % 2 != 0) {
                             return null;
                         }
@@ -7640,7 +7639,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     }
                     int i242 = setFoundMatchingTemplates;
                     i = ((i242 | 83) << 1) - (i242 ^ 83);
-                    toJson = i % Uuid.SIZE_BITS;
+                    toJson = i % 128;
                     if (i % 2 != 0) {
                     }
                 }
@@ -7656,11 +7655,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             }
             int i2422 = setFoundMatchingTemplates;
             i = ((i2422 | 83) << 1) - (i2422 ^ 83);
-            toJson = i % Uuid.SIZE_BITS;
+            toJson = i % 128;
             if (i % 2 != 0) {
             }
         }
-        setFoundMatchingTemplates = (toJson + 47) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (toJson + 47) % 128;
         z = false;
         contains = str2.toLowerCase(locale).contains("nexus 6");
         if (!contains2) {
@@ -7672,7 +7671,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
         int i24222 = setFoundMatchingTemplates;
         i = ((i24222 | 83) << 1) - (i24222 ^ 83);
-        toJson = i % Uuid.SIZE_BITS;
+        toJson = i % 128;
         if (i % 2 != 0) {
         }
     }
@@ -7681,7 +7680,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = setFoundMatchingTemplates;
         int i2 = (i ^ 39) + ((i & 39) << 1);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         try {
         } catch (Exception e) {
             e.printStackTrace();
@@ -7699,14 +7698,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         IdentySdk.getInstance().a(errors2, null);
         fingerActivity.finish();
         int i3 = setFoundMatchingTemplates;
-        toJson = (((i3 | 31) << 1) - (i3 ^ 31)) % Uuid.SIZE_BITS;
+        toJson = (((i3 | 31) << 1) - (i3 ^ 31)) % 128;
         return null;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:32:0x0018, code lost:
     
         r2 = r2 + 67;
-        com.identy.FingerActivity.$10 = r2 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.$10 = r2 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x001f, code lost:
     
@@ -7742,7 +7741,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     private static void e(String str, int i, Object[] objArr) {
         char[] charArray;
         int i2 = $10 + 107;
-        int i3 = i2 % Uuid.SIZE_BITS;
+        int i3 = i2 % 128;
         $11 = i3;
         if (i2 % 2 == 0) {
             int i4 = 93 / 0;
@@ -7884,7 +7883,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         fingerActivity.isAuthSucess.start();
         int i = toJson;
         int i2 = (i ^ 73) + ((i & 73) << 1);
-        setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i2 % 128;
         if (i2 % 2 != 0) {
             return null;
         }
@@ -7897,10 +7896,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             try {
                 if (LibSettings.isSaveCaptured()) {
                     int i = setFoundMatchingTemplates;
-                    int i2 = ((i ^ 13) + ((i & 13) << 1)) % Uuid.SIZE_BITS;
+                    int i2 = ((i ^ 13) + ((i & 13) << 1)) % 128;
                     toJson = i2;
                     int i3 = ((i2 | 65) << 1) - (i2 ^ 65);
-                    setFoundMatchingTemplates = i3 % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = i3 % 128;
                     if (i3 % 2 == 0) {
                         throw null;
                     }
@@ -7911,7 +7910,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             }
             int i4 = setFoundMatchingTemplates;
             int i5 = (i4 & 119) + (i4 | 119);
-            toJson = i5 % Uuid.SIZE_BITS;
+            toJson = i5 % 128;
             if (i5 % 2 != 0) {
                 throw null;
             }
@@ -7922,7 +7921,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0042, code lost:
     
-        getWindow().clearFlags(kotlin.uuid.Uuid.SIZE_BITS);
+        getWindow().clearFlags(128);
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x002a, code lost:
     
@@ -7934,9 +7933,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x002c, code lost:
     
-        com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 39) % kotlin.uuid.Uuid.SIZE_BITS;
-        getWindow().addFlags(kotlin.uuid.Uuid.SIZE_BITS);
-        com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 111) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 39) % 128;
+        getWindow().addFlags(128);
+        com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 111) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7945,7 +7944,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         SharedPreferences defaultSharedPreferences;
         int i = toJson;
         int i2 = ((i | 83) << 1) - (i ^ 83);
-        setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i2 % 128;
         if (i2 % 2 == 0) {
             defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         } else {
@@ -7953,7 +7952,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
         if (defaultSharedPreferences.getBoolean("identy_app_preference_show_when_locked", true)) {
             getWindow().addFlags(524288);
-            setFoundMatchingTemplates = (toJson + 29) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = (toJson + 29) % 128;
         } else {
             getWindow().clearFlags(524288);
         }
@@ -7961,7 +7960,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         PngjExceptionInternal();
         this.Capture2IndexActivity = false;
         int i3 = setFoundMatchingTemplates + 29;
-        toJson = i3 % Uuid.SIZE_BITS;
+        toJson = i3 % 128;
         if (i3 % 2 != 0) {
             throw null;
         }
@@ -7979,7 +7978,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         PngjBadSignature(R.string.id_hold);
         int i = setFoundMatchingTemplates;
         int i2 = ((i | 113) << 1) - (i ^ 113);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
@@ -7987,13 +7986,13 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     private void getMatchingTime() {
         int i = setFoundMatchingTemplates;
-        toJson = (((i | 125) << 1) - (i ^ 125)) % Uuid.SIZE_BITS;
+        toJson = (((i | 125) << 1) - (i ^ 125)) % 128;
         SharedPreferences.Editor edit = PreferenceManager.getDefaultSharedPreferences(this).edit();
         edit.putBoolean("identy_app_done_first_time", true);
         edit.apply();
         int i2 = setFoundMatchingTemplates;
         int i3 = ((i2 | 25) << 1) - (i2 ^ 25);
-        toJson = i3 % Uuid.SIZE_BITS;
+        toJson = i3 % 128;
         if (i3 % 2 != 0) {
             throw null;
         }
@@ -8015,7 +8014,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             bufferedReader = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(new String[]{"logcat", "-d"}).getInputStream()), ConstantsKt.DEFAULT_BLOCK_SIZE);
             property = System.getProperty("line.separator");
             int i = setFoundMatchingTemplates;
-            toJson = (((i | 35) << 1) - (i ^ 35)) % Uuid.SIZE_BITS;
+            toJson = (((i | 35) << 1) - (i ^ 35)) % 128;
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -8023,7 +8022,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             String readLine = bufferedReader.readLine();
             if (readLine != null) {
                 int i2 = setFoundMatchingTemplates + 11;
-                toJson = i2 % Uuid.SIZE_BITS;
+                toJson = i2 % 128;
                 if (i2 % 2 != 0) {
                     sb.append(readLine);
                     sb.append(property);
@@ -8038,7 +8037,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 e2.printStackTrace();
             }
             String obj = sb.toString();
-            setFoundMatchingTemplates = (toJson + 57) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = (toJson + 57) % 128;
             return obj;
         }
     }
@@ -8065,7 +8064,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     private static /* synthetic */ Object onErrorResponse(Object[] objArr) {
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = toJson + 61;
-        setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i % 128;
         int i2 = i % 2;
         super.onBackPressed();
         if (i2 == 0) {
@@ -8073,7 +8072,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
         int i3 = setFoundMatchingTemplates;
         int i4 = (i3 ^ 5) + ((i3 & 5) << 1);
-        toJson = i4 % Uuid.SIZE_BITS;
+        toJson = i4 % 128;
         if (i4 % 2 != 0) {
             int i5 = 86 / 0;
         }
@@ -8083,11 +8082,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     private static /* synthetic */ Object valueOf(Object[] objArr) {
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = toJson;
-        setFoundMatchingTemplates = ((i ^ 97) + ((i & 97) << 1)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i ^ 97) + ((i & 97) << 1)) % 128;
         PngjException(com.identy.a.PngjException.values(), -418890381, new Object[]{fingerActivity}, com.identy.a.PngjException.values(), 418890396, com.identy.a.PngjException.values(), com.identy.a.PngjException.values());
         int i2 = setFoundMatchingTemplates;
         int i3 = (i2 & 25) + (i2 | 25);
-        toJson = i3 % Uuid.SIZE_BITS;
+        toJson = i3 % 128;
         if (i3 % 2 == 0) {
             return null;
         }
@@ -8097,10 +8096,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     private static /* synthetic */ Object values(Object[] objArr) {
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = setFoundMatchingTemplates;
-        toJson = ((i & 101) + (i | 101)) % Uuid.SIZE_BITS;
+        toJson = ((i & 101) + (i | 101)) % 128;
         super.onBackPressed();
         int i2 = toJson + 75;
-        setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i2 % 128;
         if (i2 % 2 != 0) {
             return null;
         }
@@ -8110,13 +8109,13 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public final void Attempt() {
         int i = toJson;
         int i2 = (i ^ 49) + ((i & 49) << 1);
-        setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i2 % 128;
         if (i2 % 2 == 0) {
             throw null;
         }
         if (PngjBadSignature) {
             int i3 = ((i | 61) << 1) - (i ^ 61);
-            setFoundMatchingTemplates = i3 % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = i3 % 128;
             if (i3 % 2 == 0) {
                 PngjException(com.identy.a.PngjException.values(), 843068644, new Object[]{this, Boolean.TRUE}, com.identy.a.PngjException.values(), -843068625, com.identy.a.PngjException.values(), com.identy.a.PngjException.values());
                 return;
@@ -8126,12 +8125,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             }
         }
         if (((Boolean) PngjException(com.identy.a.PngjException.values(), -22604197, new Object[]{this}, com.identy.a.PngjException.values(), 22604208, com.identy.a.PngjException.values(), com.identy.a.PngjException.values())).booleanValue()) {
-            int i4 = (setFoundMatchingTemplates + 105) % Uuid.SIZE_BITS;
+            int i4 = (setFoundMatchingTemplates + 105) % 128;
             toJson = i4;
             try {
                 org.camera.preview.PngjBadCrcException pngjBadCrcException = this.Action;
                 if (pngjBadCrcException != null) {
-                    setFoundMatchingTemplates = ((i4 ^ 53) + ((i4 & 53) << 1)) % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = ((i4 ^ 53) + ((i4 & 53) << 1)) % 128;
                     pngjBadCrcException.PngjException();
                 }
             } catch (Exception unused) {
@@ -8147,7 +8146,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             getpadsub2.PngjBadCrcException = i6;
             getpadsub2.PngjBadSignature = getmatchingtime;
             if (PngjPrematureEnding) {
-                toJson = (setFoundMatchingTemplates + 105) % Uuid.SIZE_BITS;
+                toJson = (setFoundMatchingTemplates + 105) % 128;
                 this.getPadSub1 = getpadsub2;
                 getpadsub2.setTitle(getText(R.string.id_next_hand_confirm));
                 this.getPadSub1.show();
@@ -8156,7 +8155,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         } else {
             Action();
         }
-        setFoundMatchingTemplates = (toJson + 85) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (toJson + 85) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0056, code lost:
@@ -8166,7 +8165,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0057, code lost:
     
         r1 = com.identy.FingerActivity.toJson + 97;
-        com.identy.FingerActivity.setFoundMatchingTemplates = r1 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = r1 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0061, code lost:
     
@@ -8197,7 +8196,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         r1 = com.identy.FingerActivity.toJson;
         r2 = r4.CaptureMode;
         r3 = (r1 & 59) + (r1 | 59);
-        com.identy.FingerActivity.setFoundMatchingTemplates = r3 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = r3 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0053, code lost:
     
@@ -8213,7 +8212,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public final boolean PngjPrematureEnding() {
         int i = setFoundMatchingTemplates;
         int i2 = ((i | 97) << 1) - (i ^ 97);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         if (i2 % 2 != 0) {
             int i3 = 68 / 0;
         }
@@ -8222,7 +8221,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     @Override // com.identy.d.PngjBadSignature
     public final void a() {
         int i = toJson + 91;
-        setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i % 128;
         if (i % 2 != 0) {
             this.Action.PngjException();
         } else {
@@ -8243,7 +8242,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         int intValue;
         Object[] values$52c725b;
         int i = setFoundMatchingTemplates + 119;
-        toJson = i % Uuid.SIZE_BITS;
+        toJson = i % 128;
         int i2 = 0;
         if (i % 2 != 0) {
             super.attachBaseContext(context);
@@ -8332,7 +8331,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         }
                         int i12 = setFoundMatchingTemplates + 79;
                         while (true) {
-                            toJson = i12 % Uuid.SIZE_BITS;
+                            toJson = i12 % 128;
                             if (i2 >= strArr2.length) {
                                 throw null;
                             }
@@ -8364,7 +8363,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf3, i13, packedPositionGroup, -815159504, false, (String) objArr10[0], null);
                 }
                 ((Field) PngjBadSignature5).set(null, valueOf2);
-                toJson = (setFoundMatchingTemplates + 109) % Uuid.SIZE_BITS;
+                toJson = (setFoundMatchingTemplates + 109) % 128;
                 if (((int[]) values$52c725b[3])[0] != ((int[]) values$52c725b[0])[0]) {
                 }
             } catch (Exception unused) {
@@ -8417,7 +8416,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public void closeDialog(View view) {
         Dialog dialog;
         int i = toJson + 85;
-        setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i % 128;
         try {
             if (i % 2 == 0) {
                 dialog = this.getPadSub1;
@@ -8430,7 +8429,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (dialog.isShowing()) {
                 int i3 = toJson;
                 int i4 = (i3 ^ 19) + ((i3 & 19) << 1);
-                setFoundMatchingTemplates = i4 % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = i4 % 128;
                 if (i4 % 2 != 0) {
                     this.getPadSub1.dismiss();
                     return;
@@ -8443,7 +8442,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
         int i5 = toJson;
         int i6 = (i5 ^ 29) + ((i5 & 29) << 1);
-        setFoundMatchingTemplates = i6 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i6 % 128;
         if (i6 % 2 == 0) {
             throw null;
         }
@@ -8462,20 +8461,20 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     */
     public void closefDialog(View view) {
         int i = setFoundMatchingTemplates;
-        int i2 = ((i ^ 45) + ((i & 45) << 1)) % Uuid.SIZE_BITS;
+        int i2 = ((i ^ 45) + ((i & 45) << 1)) % 128;
         toJson = i2;
         try {
             Dialog dialog = this.getPadSub1;
             if (dialog != null) {
                 int i3 = i2 + 53;
-                setFoundMatchingTemplates = i3 % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = i3 % 128;
                 if (i3 % 2 == 0) {
                     int i4 = 61 / 0;
                 }
                 this.getPadSub1.dismiss();
                 int i5 = toJson;
                 int i6 = ((i5 | 105) << 1) - (i5 ^ 105);
-                setFoundMatchingTemplates = i6 % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = i6 % 128;
                 if (i6 % 2 == 0) {
                     throw null;
                 }
@@ -8484,7 +8483,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         } catch (Exception unused) {
         }
         int i7 = toJson;
-        setFoundMatchingTemplates = (((i7 | 21) << 1) - (i7 ^ 21)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (((i7 | 21) << 1) - (i7 ^ 21)) % 128;
     }
 
     public final void e1() {
@@ -8493,7 +8492,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (!LibSettings.isSaveCaptured()) {
             new com.identy.ui.c.getAsHighestSecurityLevelReached(this, new getNfiq1Score()).show();
             int i = toJson + 23;
-            setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = i % 128;
             if (i % 2 == 0) {
                 throw null;
             }
@@ -8505,7 +8504,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         aVar.PngjException = R.string.id_try_again;
         aVar.values(new getOveralTimetaken()).show();
         int i2 = setFoundMatchingTemplates;
-        toJson = (((i2 | 73) << 1) - (i2 ^ 73)) % Uuid.SIZE_BITS;
+        toJson = (((i2 | 73) << 1) - (i2 ^ 73)) % 128;
     }
 
     @Override // com.identy.d.PngjBadSignature
@@ -8529,7 +8528,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public void getPadSub2() {
         int i = setFoundMatchingTemplates;
         int i2 = ((i | 15) << 1) - (i ^ 15);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         if (i2 % 2 != 0) {
             int i3 = 22 / 0;
         }
@@ -8546,10 +8545,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     @Override // com.identy.d.PngjBadSignature
     public final void getScore() {
         int i = toJson + 17;
-        setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i % 128;
         if (i % 2 != 0 ? Calendar.getInstance().getTimeInMillis() < this.CaptureRolledFingersActivity + 100 : Calendar.getInstance().getTimeInMillis() < this.CaptureRolledFingersActivity % 100) {
             int i2 = toJson;
-            setFoundMatchingTemplates = ((i2 & 41) + (i2 | 41)) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = ((i2 & 41) + (i2 | 41)) % 128;
             return;
         }
         this.CaptureRolledFingersActivity = Calendar.getInstance().getTimeInMillis();
@@ -8557,7 +8556,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         intent.setPackage(getPackageName());
         sendBroadcast(intent);
         int i3 = setFoundMatchingTemplates + 21;
-        toJson = i3 % Uuid.SIZE_BITS;
+        toJson = i3 % 128;
         if (i3 % 2 != 0) {
             throw null;
         }
@@ -8565,10 +8564,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     public final void isQualityFailed() {
         int i = toJson;
-        setFoundMatchingTemplates = ((i & 79) + (i | 79)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i & 79) + (i | 79)) % 128;
         if (this.onErrorResponse != null) {
             int i2 = i + 87;
-            setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = i2 % 128;
             if (i2 % 2 == 0) {
                 int i3 = 88 / 0;
                 if (this.Action == null) {
@@ -8585,14 +8584,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (pngjBadSignature != null) {
                 int i4 = toJson;
                 int i5 = (i4 ^ 43) + ((i4 & 43) << 1);
-                setFoundMatchingTemplates = i5 % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = i5 % 128;
                 if (i5 % 2 == 0) {
                     pngjBadSignature.PngjPrematureEnding("flash_torch");
                     throw null;
                 }
                 pngjBadSignature.PngjPrematureEnding("flash_torch");
                 int i6 = toJson;
-                setFoundMatchingTemplates = ((i6 ^ 19) + ((i6 & 19) << 1)) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = ((i6 ^ 19) + ((i6 & 19) << 1)) % 128;
             }
             this.onErrorResponse.a();
             this.onErrorResponse.valueOf();
@@ -8603,14 +8602,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     @Override // android.app.Activity
     public void onActivityResult(int i, int i2, Intent intent) {
         int i3 = setFoundMatchingTemplates;
-        toJson = ((i3 & 3) + (i3 | 3)) % Uuid.SIZE_BITS;
+        toJson = ((i3 & 3) + (i3 | 3)) % 128;
     }
 
     @Override // android.app.Activity
     public void onBackPressed() {
         int i = setFoundMatchingTemplates;
         int i2 = (i & 83) + (i | 83);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         try {
             if (i2 % 2 != 0) {
                 IdentySdk.getInstance().isDisplayMoveNextDialog();
@@ -8637,7 +8636,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         } catch (Exception e) {
             e.printStackTrace();
             int i5 = setFoundMatchingTemplates + 97;
-            toJson = i5 % Uuid.SIZE_BITS;
+            toJson = i5 % 128;
             if (i5 % 2 != 0) {
                 throw null;
             }
@@ -8646,10 +8645,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     @Override // android.app.Activity, android.content.ComponentCallbacks
     public void onConfigurationChanged(Configuration configuration) {
-        toJson = (setFoundMatchingTemplates + 103) % Uuid.SIZE_BITS;
+        toJson = (setFoundMatchingTemplates + 103) % 128;
         super.onConfigurationChanged(configuration);
         int i = toJson;
-        setFoundMatchingTemplates = ((i ^ 63) + ((i & 63) << 1)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i ^ 63) + ((i & 63) << 1)) % 128;
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(56:(48:39|(3:41|42|(16:44|45|(1:47)|48|49|(2:51|52)(1:398)|53|(1:55)|56|(9:358|(2:360|361)(1:397)|(3:363|(3:365|366|(1:368)(1:369))|370)|371|372|373|374|375|(9:377|378|(1:380)|381|382|383|384|(1:386)|387))(4:61|62|(1:64)|65)|66|67|(1:69)(1:357)|70|71|72))(1:399)|73|(1:77)|78|(2:80|(1:82))|83|84|85|86|87|(1:89)|90|91|92|94|95|(9:97|98|99|(1:101)|102|103|(5:105|106|107|108|109)(7:115|116|117|(1:119)|120|121|(5:123|124|125|126|128)(9:132|133|134|135|(1:137)|138|139|140|(3:142|143|(3:145|146|147)(4:148|149|150|151))(2:158|(4:160|161|162|164))))|340|341)|189|190|(2:192|(1:194)(4:195|196|197|198))|202|203|(2:205|(3:207|208|209))|213|214|216|217|(2:219|(3:221|222|223))|227|(1:229)(7:284|285|286|(6:303|304|305|306|(2:308|309)(2:311|312)|310)(2:288|289)|290|291|(2:293|(3:295|296|297)))|230|231|232|233|234|235|(1:237)(1:277)|238|239|240|(2:242|(3:244|245|246))|250|251|(2:253|(2:255|(2:257|258))(4:259|260|261|262))|266|267|269)|374|375|(0)|66|67|(0)(0)|70|71|72|73|(2:75|77)|78|(0)|83|84|85|86|87|(0)|90|91|92|94|95|(0)|189|190|(0)|202|203|(0)|213|214|216|217|(0)|227|(0)(0)|230|231|232|233|234|235|(0)(0)|238|239|240|(0)|250|251|(0)|266|267|269) */
@@ -8975,7 +8974,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
                 if (j != -1) {
                     int i26 = setFoundMatchingTemplates;
-                    toJson = ((i26 ^ 79) + ((i26 & 79) << 1)) % Uuid.SIZE_BITS;
+                    toJson = ((i26 ^ 79) + ((i26 & 79) << 1)) % 128;
                     try {
                     } catch (Exception e17) {
                         e = e17;
@@ -9108,7 +9107,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             String[] strArr = (String[]) values$1eba2e16[2];
                             if (strArr != null) {
                                 int i68 = toJson;
-                                setFoundMatchingTemplates = ((i68 ^ 81) + ((i68 & 81) << 1)) % Uuid.SIZE_BITS;
+                                setFoundMatchingTemplates = ((i68 ^ 81) + ((i68 & 81) << 1)) % 128;
                                 int i69 = 0;
                                 while (i69 < strArr.length) {
                                     arrayList.add(strArr[i69]);
@@ -9118,7 +9117,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             }
                             throw new NullPointerException();
                         }
-                        toJson = (setFoundMatchingTemplates + 55) % Uuid.SIZE_BITS;
+                        toJson = (setFoundMatchingTemplates + 55) % 128;
                         Object[] objArr11 = new Object[4];
                         objArr11[0] = new int[]{r15};
                         objArr11[1] = new int[1];
@@ -9166,7 +9165,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                     if (j3 != -1) {
                                         int i91 = toJson;
                                         int i92 = (i91 & 15) + (i91 | 15);
-                                        setFoundMatchingTemplates = i92 % Uuid.SIZE_BITS;
+                                        setFoundMatchingTemplates = i92 % 128;
                                         if (i92 % 2 == 0) {
                                             if ((j3 | 4611686018427387901L) >= ((Long) Class.forName(str2).getDeclaredMethod(str3, null).invoke(null, new Object[1])).longValue()) {
                                                 Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
@@ -9216,7 +9215,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                 i8 = ((int[]) obj2)[0];
                                                 if (i8 != i7) {
                                                     int i119 = setFoundMatchingTemplates;
-                                                    toJson = (((i119 | 123) << 1) - (i119 ^ 123)) % Uuid.SIZE_BITS;
+                                                    toJson = (((i119 | 123) << 1) - (i119 ^ 123)) % 128;
                                                     Object[] objArr15 = {new int[1], new int[1], new int[1]};
                                                     int i120 = ((int[]) objArr3[0])[0];
                                                     int i121 = ((int[]) obj2)[0];
@@ -9320,7 +9319,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                     baseContext = getBaseContext();
                                                     if (baseContext != null) {
                                                         int i187 = setFoundMatchingTemplates;
-                                                        toJson = ((i187 & 93) + (i187 | 93)) % Uuid.SIZE_BITS;
+                                                        toJson = ((i187 & 93) + (i187 | 93)) % 128;
                                                         int rgb = Color.rgb(0, 0, 0);
                                                         int i188 = (rgb ^ 16777217) + ((rgb & 16777217) << 1);
                                                         Object[] objArr18 = new Object[1];
@@ -9395,7 +9394,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                     objArr4 = (Object[]) cls4.getMethod((String) objArr24[0], Context.class, cls, cls, cls).invoke(null, objArr22);
                                                     if (baseContext != null) {
                                                         int i218 = setFoundMatchingTemplates;
-                                                        toJson = ((i218 & 47) + (i218 | 47)) % Uuid.SIZE_BITS;
+                                                        toJson = ((i218 & 47) + (i218 | 47)) % 128;
                                                         Object PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
                                                         if (PngjBadSignature8 == null) {
                                                             char keyCodeFromString = (char) (KeyEvent.keyCodeFromString(BuildConfig.FLAVOR) + 31077);
@@ -9429,7 +9428,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                     }
                                                 } else {
                                                     int i220 = toJson;
-                                                    setFoundMatchingTemplates = (((i220 | 67) << 1) - (i220 ^ 67)) % Uuid.SIZE_BITS;
+                                                    setFoundMatchingTemplates = (((i220 | 67) << 1) - (i220 ^ 67)) % 128;
                                                     Object PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
                                                     if (PngjBadSignature10 == null) {
                                                         char longPressTimeout = (char) ((ViewConfiguration.getLongPressTimeout() >> 16) + 31077);
@@ -9564,7 +9563,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                             sb.append(" displays connected.");
                                             com.identy.getPadSub2.PngjException("MainActivity", sb.toString());
                                             if (displays.length > 1) {
-                                                setFoundMatchingTemplates = (toJson + 27) % Uuid.SIZE_BITS;
+                                                setFoundMatchingTemplates = (toJson + 27) % 128;
                                                 findViewById(R.id.preview).setVisibility(8);
                                             }
                                         }
@@ -9616,7 +9615,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                     try {
                                                         IdentySdk.getInstance().a(ERRORS.UNKNOWN, null);
                                                         int i294 = toJson;
-                                                        setFoundMatchingTemplates = ((i294 & 11) + (i294 | 11)) % Uuid.SIZE_BITS;
+                                                        setFoundMatchingTemplates = ((i294 & 11) + (i294 | 11)) % 128;
                                                         return;
                                                     } catch (Exception e18) {
                                                         e18.printStackTrace();
@@ -9669,7 +9668,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         z = false;
                                                         if (((Boolean) PngjException(com.identy.a.PngjException.values(), 1791075781, new Object[0], com.identy.a.PngjException.values(), -1791075758, com.identy.a.PngjException.values(), com.identy.a.PngjException.values())).booleanValue()) {
                                                             int i296 = setFoundMatchingTemplates + 35;
-                                                            toJson = i296 % Uuid.SIZE_BITS;
+                                                            toJson = i296 % 128;
                                                             try {
                                                                 if (i296 % 2 == 0) {
                                                                     finish();
@@ -9721,7 +9720,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         }
                                         if (IdentySdk.getInstance().getLocale() != null) {
                                             int i297 = toJson + 33;
-                                            setFoundMatchingTemplates = i297 % Uuid.SIZE_BITS;
+                                            setFoundMatchingTemplates = i297 % 128;
                                             if (i297 % 2 == 0) {
                                                 PngjException(com.identy.a.PngjException.values(), -563322541, new Object[]{this, IdentySdk.getInstance().getLocale()}, com.identy.a.PngjException.values(), 563322561, com.identy.a.PngjException.values(), com.identy.a.PngjException.values());
                                                 throw null;
@@ -9731,7 +9730,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         if (LibSettings.isSaveCaptured()) {
                                             int i298 = toJson;
                                             int i299 = (i298 ^ 71) + ((i298 & 71) << 1);
-                                            setFoundMatchingTemplates = i299 % Uuid.SIZE_BITS;
+                                            setFoundMatchingTemplates = i299 % 128;
                                             if (i299 % 2 == 0) {
                                                 int i300 = 9 / 0;
                                             }
@@ -9740,7 +9739,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         if (LibSettings.isSaveCaptured()) {
                                             int i301 = setFoundMatchingTemplates;
                                             int i302 = (i301 & 31) + (i301 | 31);
-                                            toJson = i302 % Uuid.SIZE_BITS;
+                                            toJson = i302 % 128;
                                             if (i302 % 2 != 0) {
                                                 int i303 = 25 / 0;
                                             }
@@ -9766,7 +9765,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                             z4 = false;
                                                             this.PngjUnsupportedException = true;
                                                             setRequestedOrientation(1);
-                                                            setFoundMatchingTemplates = (toJson + 25) % Uuid.SIZE_BITS;
+                                                            setFoundMatchingTemplates = (toJson + 25) % 128;
                                                         }
                                                         i = 1;
                                                         z2 = z4;
@@ -9781,7 +9780,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         if (LibSettings.isSaveCaptured()) {
                                                             int i304 = setFoundMatchingTemplates;
                                                             int i305 = ((i304 | 123) << i) - (i304 ^ 123);
-                                                            toJson = i305 % Uuid.SIZE_BITS;
+                                                            toJson = i305 % 128;
                                                             z5 = z2;
                                                             if (i305 % 2 != 0) {
                                                                 throw null;
@@ -9829,7 +9828,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                 z3 = false;
                                                 e.printStackTrace();
                                                 if (LibSettings.isSaveCaptured()) {
-                                                    toJson = (setFoundMatchingTemplates + 97) % Uuid.SIZE_BITS;
+                                                    toJson = (setFoundMatchingTemplates + 97) % 128;
                                                 }
                                                 setRequestedOrientation(1);
                                                 z5 = z3;
@@ -9862,10 +9861,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         if (z6) {
                                             i2 = R.layout.identy_activity_open_camera;
                                         } else {
-                                            int i306 = (setFoundMatchingTemplates + 37) % Uuid.SIZE_BITS;
+                                            int i306 = (setFoundMatchingTemplates + 37) % 128;
                                             toJson = i306;
                                             i2 = R.layout.touchless_activity_open_camera;
-                                            setFoundMatchingTemplates = (i306 + 107) % Uuid.SIZE_BITS;
+                                            setFoundMatchingTemplates = (i306 + 107) % 128;
                                         }
                                         setContentView(i2);
                                         this.PngjInputException = new com.identy.d.values(getApplicationContext());
@@ -9878,7 +9877,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         if (LibSettings.isSaveCaptured()) {
                                             int i307 = setFoundMatchingTemplates;
                                             int i308 = (i307 & 43) + (i307 | 43);
-                                            toJson = i308 % Uuid.SIZE_BITS;
+                                            toJson = i308 % 128;
                                             if (i308 % 2 != 0) {
                                                 throw null;
                                             }
@@ -9886,7 +9885,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         if (IdentySdk.getInstance().getAction() != null) {
                                             int i309 = toJson;
                                             int i310 = (i309 ^ 41) + ((i309 & 41) << 1);
-                                            setFoundMatchingTemplates = i310 % Uuid.SIZE_BITS;
+                                            setFoundMatchingTemplates = i310 % 128;
                                             if (i310 % 2 == 0) {
                                                 IdentySdk.getInstance().getAction().equals(com.identy.Action.CAPTURE);
                                                 throw null;
@@ -9894,7 +9893,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                             if (!IdentySdk.getInstance().getAction().equals(com.identy.Action.CAPTURE)) {
                                                 new Handler(handlerThread22222.getLooper()).postDelayed(new Action(), 2000L);
                                                 int i311 = toJson;
-                                                setFoundMatchingTemplates = ((i311 & 23) + (i311 | 23)) % Uuid.SIZE_BITS;
+                                                setFoundMatchingTemplates = ((i311 & 23) + (i311 | 23)) % 128;
                                             }
                                         }
                                         LibSettings.isSaveCaptured();
@@ -10167,7 +10166,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     @Override // android.app.Activity
     public boolean onCreateOptionsMenu(Menu menu) {
         int i = toJson + 105;
-        setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i % 128;
         return i % 2 != 0;
     }
 
@@ -10185,7 +10184,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     */
     public void onDestroy() {
         int i = toJson + 57;
-        setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i % 128;
         try {
             if (i % 2 == 0) {
                 int i2 = 80 / 0;
@@ -10212,7 +10211,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 if (pngjBadCrcException != null) {
                     if (pngjBadCrcException.getScore == PngjBadCrcException.getPadSub2.CAMERAOPENSTATE_CLOSING) {
                         int i3 = setFoundMatchingTemplates;
-                        int i4 = (((i3 | 89) << 1) - (i3 ^ 89)) % Uuid.SIZE_BITS;
+                        int i4 = (((i3 | 89) << 1) - (i3 ^ 89)) % 128;
                         toJson = i4;
                         PngjBadCrcException.getQualityScore getqualityscore = pngjBadCrcException.getNfiq1Score;
                         if (getqualityscore != null) {
@@ -10220,16 +10219,16 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 getqualityscore.get(3000L, TimeUnit.MILLISECONDS);
                             } catch (InterruptedException | ExecutionException | TimeoutException unused) {
                                 int i5 = toJson;
-                                setFoundMatchingTemplates = ((i5 ^ com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + ((i5 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) << 1)) % Uuid.SIZE_BITS;
+                                setFoundMatchingTemplates = ((i5 ^ com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + ((i5 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) << 1)) % 128;
                             }
                         } else {
-                            setFoundMatchingTemplates = ((i4 & 123) + (i4 | 123)) % Uuid.SIZE_BITS;
+                            setFoundMatchingTemplates = ((i4 & 123) + (i4 | 123)) % 128;
                         }
                     }
                     if (pngjBadCrcException.PngBadCharsetException != null) {
                         int i6 = setFoundMatchingTemplates;
                         int i7 = (i6 & 69) + (i6 | 69);
-                        toJson = i7 % Uuid.SIZE_BITS;
+                        toJson = i7 % 128;
                         if (i7 % 2 != 0) {
                             pngjBadCrcException.PngBadCharsetException = null;
                             int i8 = 1 / 0;
@@ -10239,7 +10238,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     }
                     if (pngjBadCrcException.Action != null) {
                         int i9 = setFoundMatchingTemplates + 101;
-                        toJson = i9 % Uuid.SIZE_BITS;
+                        toJson = i9 % 128;
                         if (i9 % 2 != 0) {
                             pngjBadCrcException.Action = null;
                             throw null;
@@ -10254,7 +10253,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 if (dialog != null) {
                     int i10 = setFoundMatchingTemplates;
                     int i11 = (i10 ^ 69) + ((i10 & 69) << 1);
-                    toJson = i11 % Uuid.SIZE_BITS;
+                    toJson = i11 % 128;
                     if (i11 % 2 != 0) {
                         dialog.isShowing();
                         throw null;
@@ -10270,13 +10269,13 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 if (e1Var != null) {
                     int i12 = toJson;
                     int i13 = (i12 & 9) + (i12 | 9);
-                    setFoundMatchingTemplates = i13 % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = i13 % 128;
                     if (i13 % 2 == 0) {
                         throw null;
                     }
                     ProgressDialog progressDialog = e1Var.getNfiq1Score;
                     if (progressDialog != null && progressDialog.isShowing()) {
-                        setFoundMatchingTemplates = (toJson + 107) % Uuid.SIZE_BITS;
+                        setFoundMatchingTemplates = (toJson + 107) % 128;
                         this.onErrorResponse.getNfiq1Score.cancel();
                     }
                 }
@@ -10285,7 +10284,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (this.PngBadCharsetException != null) {
                 this.PngBadCharsetException = null;
                 int i14 = toJson;
-                setFoundMatchingTemplates = ((i14 & 41) + (i14 | 41)) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = ((i14 & 41) + (i14 | 41)) % 128;
             }
             com.identy.e1 e1Var2 = this.onErrorResponse;
             if (e1Var2 != null) {
@@ -10299,7 +10298,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             this.Action = null;
             if (this.e1 != null) {
                 int i15 = toJson;
-                setFoundMatchingTemplates = ((i15 & 117) + (i15 | 117)) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = ((i15 & 117) + (i15 | 117)) % 128;
                 this.e1 = null;
             }
         } catch (Exception unused5) {
@@ -10307,7 +10306,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         super.onDestroy();
         int i16 = toJson;
         int i17 = (i16 & 41) + (i16 | 41);
-        setFoundMatchingTemplates = i17 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i17 % 128;
         if (i17 % 2 == 0) {
             int i18 = 66 / 0;
         }
@@ -10326,7 +10325,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         int i;
         org.cameracontroller.PngjBadSignature pngjBadSignature2;
         int i2 = toJson + 35;
-        setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i2 % 128;
         if (i2 % 2 == 0) {
             imageReader.acquireLatestImage();
             throw null;
@@ -10336,7 +10335,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (acquireLatestImage != null) {
                 int i3 = toJson;
                 int i4 = (i3 ^ 99) + ((i3 & 99) << 1);
-                setFoundMatchingTemplates = i4 % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = i4 % 128;
                 if (i4 % 2 == 0) {
                     acquireLatestImage.getWidth();
                     acquireLatestImage.getHeight();
@@ -10348,14 +10347,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 if (pngjBadCrcException != null && !this.onErrorResponse.getMatchingTime) {
                     int i5 = toJson;
                     int i6 = (i5 ^ 3) + ((i5 & 3) << 1);
-                    setFoundMatchingTemplates = i6 % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = i6 % 128;
                     if (i6 % 2 == 0) {
                         pngjBadCrcException.CaptureRolledFingersActivity.contains("focus_mode_macro");
                         throw null;
                     }
                     if (!pngjBadCrcException.CaptureRolledFingersActivity.contains("focus_mode_macro")) {
                         int i7 = toJson + 25;
-                        setFoundMatchingTemplates = i7 % Uuid.SIZE_BITS;
+                        setFoundMatchingTemplates = i7 % 128;
                         if (i7 % 2 != 0) {
                             z = true;
                             this.getCaptureTime = z;
@@ -10363,7 +10362,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             pngjBadSignature = this.Action.getQualityScore;
                             if (pngjBadSignature == null) {
                                 int i8 = toJson + 37;
-                                setFoundMatchingTemplates = i8 % Uuid.SIZE_BITS;
+                                setFoundMatchingTemplates = i8 % 128;
                                 if (i8 % 2 == 0) {
                                     pngjBadSignature.getPadSub2();
                                     throw null;
@@ -10379,7 +10378,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             pngjBadSignature2 = pngjBadCrcException2.getQualityScore;
                             if (pngjBadSignature2 != null) {
                                 int i9 = toJson + 1;
-                                setFoundMatchingTemplates = i9 % Uuid.SIZE_BITS;
+                                setFoundMatchingTemplates = i9 % 128;
                                 if (i9 % 2 == 0) {
                                     pngjBadSignature2.PngjPrematureEnding("flash_torch");
                                     int i10 = 50 / 0;
@@ -10387,7 +10386,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                     pngjBadSignature2.PngjPrematureEnding("flash_torch");
                                 }
                             }
-                            setFoundMatchingTemplates = (toJson + 29) % Uuid.SIZE_BITS;
+                            setFoundMatchingTemplates = (toJson + 29) % 128;
                         }
                     }
                     z = false;
@@ -10403,15 +10402,15 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     pngjBadSignature2 = pngjBadCrcException22.getQualityScore;
                     if (pngjBadSignature2 != null) {
                     }
-                    setFoundMatchingTemplates = (toJson + 29) % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = (toJson + 29) % 128;
                 }
                 this.PngjOutputException = Long.valueOf(acquireLatestImage.getTimestamp() - this.getOveralTimetaken.longValue());
                 this.getOveralTimetaken = Long.valueOf(acquireLatestImage.getTimestamp());
                 if (width != 0) {
                     int i11 = setFoundMatchingTemplates;
-                    toJson = ((i11 ^ 19) + ((i11 & 19) << 1)) % Uuid.SIZE_BITS;
+                    toJson = ((i11 ^ 19) + ((i11 & 19) << 1)) % 128;
                     if (height != 0) {
-                        toJson = ((i11 & 23) + (i11 | 23)) % Uuid.SIZE_BITS;
+                        toJson = ((i11 & 23) + (i11 | 23)) % 128;
                         com.identy.e1 e1Var3 = this.onErrorResponse;
                         if (e1Var3 != null) {
                             if (!e1Var3.getTemplates) {
@@ -10422,7 +10421,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 while (i12 < planes.length) {
                                     int i13 = toJson;
                                     int i14 = (i13 & 107) + (i13 | 107);
-                                    setFoundMatchingTemplates = i14 % Uuid.SIZE_BITS;
+                                    setFoundMatchingTemplates = i14 % 128;
                                     if (i14 % 2 == 0) {
                                         planes[i12].getBuffer();
                                         byte[] bArr2 = bArr[i12];
@@ -10431,7 +10430,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                     ByteBuffer buffer = planes[i12].getBuffer();
                                     byte[] bArr3 = bArr[i12];
                                     if (bArr3 != null) {
-                                        setFoundMatchingTemplates = (toJson + 27) % Uuid.SIZE_BITS;
+                                        setFoundMatchingTemplates = (toJson + 27) % 128;
                                         if (bArr3.length == buffer.capacity()) {
                                             buffer.get(bArr[i12]);
                                             int i15 = i12 - 109;
@@ -10452,7 +10451,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 e1Var3.EnrollFingersActivity = false;
                                 e1Var3.FingerOutput = Long.valueOf(acquireLatestImage.getTimestamp());
                             }
-                            setFoundMatchingTemplates = (toJson + 25) % Uuid.SIZE_BITS;
+                            setFoundMatchingTemplates = (toJson + 25) % 128;
                         }
                     }
                 }
@@ -10470,7 +10469,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         } catch (Throwable th) {
             if (acquireLatestImage != null) {
                 int i16 = setFoundMatchingTemplates + 39;
-                toJson = i16 % Uuid.SIZE_BITS;
+                toJson = i16 % 128;
                 if (i16 % 2 != 0) {
                     acquireLatestImage.close();
                     throw null;
@@ -10485,10 +10484,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     @Override // android.app.Activity, android.view.KeyEvent.Callback
     public boolean onKeyUp(int i, KeyEvent keyEvent) {
         int i2 = toJson;
-        setFoundMatchingTemplates = ((i2 ^ 125) + ((i2 & 125) << 1)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i2 ^ 125) + ((i2 & 125) << 1)) % 128;
         boolean onKeyUp = super.onKeyUp(i, keyEvent);
         int i3 = toJson + 65;
-        setFoundMatchingTemplates = i3 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i3 % 128;
         if (i3 % 2 != 0) {
             return onKeyUp;
         }
@@ -10498,9 +10497,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     @Override // android.app.Activity, android.content.ComponentCallbacks
     public void onLowMemory() {
         int i = toJson;
-        setFoundMatchingTemplates = ((i ^ 29) + ((i & 29) << 1)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i ^ 29) + ((i & 29) << 1)) % 128;
         super.onLowMemory();
-        toJson = (setFoundMatchingTemplates + 99) % Uuid.SIZE_BITS;
+        toJson = (setFoundMatchingTemplates + 99) % 128;
     }
 
     @Override // android.app.Activity
@@ -10517,7 +10516,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 if (dialog != null) {
                     int i2 = toJson;
                     int i3 = (i2 & 53) + (i2 | 53);
-                    setFoundMatchingTemplates = i3 % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = i3 % 128;
                     if (i3 % 2 == 0) {
                         dialog.isShowing();
                         throw null;
@@ -10535,12 +10534,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     if (this.getPadSub3) {
                         errors = ERRORS.ACTIVITY_PAUSED_ON_BACK_PRESSED;
                         int i4 = setFoundMatchingTemplates;
-                        toJson = ((i4 & 7) + (i4 | 7)) % Uuid.SIZE_BITS;
+                        toJson = ((i4 & 7) + (i4 | 7)) % 128;
                     } else {
                         errors = ERRORS.ACTIVITY_PAUSED;
                     }
                     i = toJson + 117;
-                    setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = i % 128;
                 } catch (Exception unused) {
                 }
                 if (i % 2 == 0) {
@@ -10555,7 +10554,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 if (e1Var2 != null) {
                     int i5 = toJson;
                     int i6 = ((i5 | 87) << 1) - (i5 ^ 87);
-                    setFoundMatchingTemplates = i6 % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = i6 % 128;
                     if (i6 % 2 == 0) {
                         e1Var2.PngjExceptionInternal();
                         throw null;
@@ -10564,28 +10563,28 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
                 identySdk.a(errors3, pairArr);
                 int i7 = setFoundMatchingTemplates;
-                toJson = (((i7 | 33) << 1) - (i7 ^ 33)) % Uuid.SIZE_BITS;
+                toJson = (((i7 | 33) << 1) - (i7 ^ 33)) % 128;
                 finish();
             } else if (this.getPadSub3) {
-                setFoundMatchingTemplates = (toJson + 63) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (toJson + 63) % 128;
                 try {
                     this.onErrorResponse.valueOf(this.getData ? ERRORS.CUSTOM_BACK_BUTTON_PRESSED : ERRORS.ACTIVITY_PAUSED_ON_BACK_PRESSED);
                     IdentySdk identySdk2 = IdentySdk.getInstance();
                     if (this.getData) {
-                        setFoundMatchingTemplates = (toJson + 33) % Uuid.SIZE_BITS;
+                        setFoundMatchingTemplates = (toJson + 33) % 128;
                         errors2 = ERRORS.CUSTOM_BACK_BUTTON_PRESSED;
                     } else {
                         errors2 = ERRORS.ACTIVITY_PAUSED_ON_BACK_PRESSED;
                     }
                     int i8 = toJson;
-                    int i9 = (((i8 | 83) << 1) - (i8 ^ 83)) % Uuid.SIZE_BITS;
+                    int i9 = (((i8 | 83) << 1) - (i8 ^ 83)) % 128;
                     setFoundMatchingTemplates = i9;
                     com.identy.e1 e1Var3 = this.onErrorResponse;
                     if (e1Var3 != null) {
-                        setFoundMatchingTemplates = ((i8 & 85) + (i8 | 85)) % Uuid.SIZE_BITS;
+                        setFoundMatchingTemplates = ((i8 & 85) + (i8 | 85)) % 128;
                         pairArr = e1Var3.PngjExceptionInternal();
                     } else {
-                        toJson = ((i9 & 109) + (i9 | 109)) % Uuid.SIZE_BITS;
+                        toJson = ((i9 & 109) + (i9 | 109)) % 128;
                     }
                     identySdk2.a(errors2, pairArr);
                 } catch (Exception unused2) {
@@ -10597,7 +10596,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             com.identy.onErrorResponse onerrorresponse = this.PngBadCharsetException.PngjBadCrcException;
             if (onerrorresponse.valueOf) {
                 int i10 = toJson;
-                setFoundMatchingTemplates = ((i10 ^ 95) + ((i10 & 95) << 1)) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = ((i10 ^ 95) + ((i10 & 95) << 1)) % 128;
                 onerrorresponse.valueOf = false;
                 onerrorresponse.PngjBadSignature = 0L;
                 onerrorresponse.values.unregisterListener(onerrorresponse);
@@ -10631,15 +10630,15 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             org.camera.preview.PngjBadCrcException pngjBadCrcException2 = this.Action;
             if (pngjBadCrcException2 != null) {
                 int i3 = toJson;
-                setFoundMatchingTemplates = (i3 + 57) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (i3 + 57) % 128;
                 if (!this.onErrorResponse.getMatchingTime) {
-                    setFoundMatchingTemplates = ((i3 ^ 117) + ((i3 & 117) << 1)) % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = ((i3 ^ 117) + ((i3 & 117) << 1)) % 128;
                     if (pngjBadCrcException2.CaptureRolledFingersActivity.contains("focus_mode_macro")) {
                         int i4 = setFoundMatchingTemplates;
-                        toJson = (((i4 | 5) << 1) - (i4 ^ 5)) % Uuid.SIZE_BITS;
+                        toJson = (((i4 | 5) << 1) - (i4 ^ 5)) % 128;
                         z = false;
                     } else {
-                        toJson = (setFoundMatchingTemplates + 39) % Uuid.SIZE_BITS;
+                        toJson = (setFoundMatchingTemplates + 39) % 128;
                         z = true;
                     }
                     this.getCaptureTime = z;
@@ -10653,15 +10652,15 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     if (pngjBadSignature2 != null) {
                         pngjBadSignature2.PngjPrematureEnding("flash_torch");
                         int i5 = toJson;
-                        setFoundMatchingTemplates = (((i5 | 83) << 1) - (i5 ^ 83)) % Uuid.SIZE_BITS;
+                        setFoundMatchingTemplates = (((i5 | 83) << 1) - (i5 ^ 83)) % 128;
                     }
                     int i6 = toJson;
-                    setFoundMatchingTemplates = ((i6 ^ 5) + ((i6 & 5) << 1)) % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = ((i6 ^ 5) + ((i6 & 5) << 1)) % 128;
                 }
             }
             if (i != 0) {
                 int i7 = setFoundMatchingTemplates;
-                toJson = ((i7 ^ 13) + ((i7 & 13) << 1)) % Uuid.SIZE_BITS;
+                toJson = ((i7 ^ 13) + ((i7 & 13) << 1)) % 128;
                 if (i2 != 0) {
                     com.identy.e1 e1Var2 = this.onErrorResponse;
                     e1Var2.getAttempts[0] = bArr;
@@ -10671,7 +10670,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     Capture4FActivity();
                     int i8 = toJson;
                     int i9 = ((i8 | 3) << 1) - (i8 ^ 3);
-                    setFoundMatchingTemplates = i9 % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = i9 % 128;
                     if (i9 % 2 == 0) {
                         throw null;
                     }
@@ -10684,20 +10683,20 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     @Override // android.app.Activity
     public void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
         int i2 = setFoundMatchingTemplates;
-        int i3 = ((i2 ^ 109) + ((i2 & 109) << 1)) % Uuid.SIZE_BITS;
+        int i3 = ((i2 ^ 109) + ((i2 & 109) << 1)) % 128;
         toJson = i3;
         if (i != 0) {
             if (i == 1 && iArr.length > 0) {
                 int i4 = iArr[0];
-                setFoundMatchingTemplates = (((i3 | 109) << 1) - (i3 ^ 109)) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (((i3 | 109) << 1) - (i3 ^ 109)) % 128;
                 return;
             }
             return;
         }
         if (iArr.length > 0) {
-            setFoundMatchingTemplates = (i3 + 99) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = (i3 + 99) % 128;
             int i5 = iArr[0];
-            setFoundMatchingTemplates = ((i3 ^ 79) + ((i3 & 79) << 1)) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = ((i3 ^ 79) + ((i3 & 79) << 1)) % 128;
         }
     }
 
@@ -10705,7 +10704,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public void onResume() {
         int i = setFoundMatchingTemplates;
         int i2 = (i & 7) + (i | 7);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
@@ -10730,7 +10729,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         this.getL2Score.enable();
         this.Action.valueOf();
         int i3 = setFoundMatchingTemplates + 109;
-        toJson = i3 % Uuid.SIZE_BITS;
+        toJson = i3 % 128;
         if (i3 % 2 != 0) {
             int i4 = 58 / 0;
         }
@@ -10740,12 +10739,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public void onSaveInstanceState(Bundle bundle) {
         int i;
         int i2 = toJson;
-        int i3 = (((i2 | 89) << 1) - (i2 ^ 89)) % Uuid.SIZE_BITS;
+        int i3 = (((i2 | 89) << 1) - (i2 ^ 89)) % 128;
         setFoundMatchingTemplates = i3;
         com.identy.PngjUnsupportedException pngjUnsupportedException = this.PngBadCharsetException;
         if (pngjUnsupportedException != null) {
             int i4 = (i3 ^ 35) + ((i3 & 35) << 1);
-            toJson = i4 % Uuid.SIZE_BITS;
+            toJson = i4 % 128;
             if (i4 % 2 != 0) {
                 bundle.putInt("cameraId", pngjUnsupportedException.PngjException);
                 i = 3670;
@@ -10758,7 +10757,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
         int i5 = setFoundMatchingTemplates;
         int i6 = (i5 & 9) + (i5 | 9);
-        toJson = i6 % Uuid.SIZE_BITS;
+        toJson = i6 % 128;
         if (i6 % 2 != 0) {
             throw null;
         }
@@ -10767,18 +10766,18 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     @Override // android.app.Activity
     public void onStart() {
         int i = toJson;
-        setFoundMatchingTemplates = ((i & 27) + (i | 27)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i & 27) + (i | 27)) % 128;
         PngjPrematureEnding = true;
         super.onStart();
         int i2 = setFoundMatchingTemplates;
-        toJson = ((i2 ^ 93) + ((i2 & 93) << 1)) % Uuid.SIZE_BITS;
+        toJson = ((i2 ^ 93) + ((i2 & 93) << 1)) % 128;
     }
 
     @Override // android.app.Activity
     public void onStop() {
         int i = toJson;
         int i2 = (i & 45) + (i | 45);
-        setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i2 % 128;
         int i3 = i2 % 2;
         super.onStop();
         if (i3 == 0) {
@@ -10790,15 +10789,15 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public void onWindowFocusChanged(boolean z) {
         int i = toJson;
         int i2 = (i ^ 95) + ((i & 95) << 1);
-        setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i2 % 128;
         if (i2 % 2 == 0) {
             throw null;
         }
         if (z) {
             PngjExceptionInternal();
-            setFoundMatchingTemplates = (toJson + 95) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = (toJson + 95) % 128;
         }
-        toJson = (setFoundMatchingTemplates + 19) % Uuid.SIZE_BITS;
+        toJson = (setFoundMatchingTemplates + 19) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:28:0x0084, code lost:
@@ -10825,11 +10824,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         View findViewById;
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         if (fingerActivity.onErrorResponse == null || fingerActivity.Action == null) {
-            toJson = (setFoundMatchingTemplates + 53) % Uuid.SIZE_BITS;
+            toJson = (setFoundMatchingTemplates + 53) % 128;
             return null;
         }
         int i = toJson;
-        setFoundMatchingTemplates = ((i ^ 21) + ((i & 21) << 1)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i ^ 21) + ((i & 21) << 1)) % 128;
         try {
             identySdk = IdentySdk.getInstance();
         } catch (Exception unused) {
@@ -10849,14 +10848,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (!(e1Var2 instanceof com.identy.isAuthSucess)) {
             int i2 = setFoundMatchingTemplates;
             int i3 = (i2 ^ 97) + ((i2 & 97) << 1);
-            toJson = i3 % Uuid.SIZE_BITS;
+            toJson = i3 % 128;
             if (i3 % 2 != 0) {
                 boolean z = e1Var2 instanceof com.identy.getOveralTimetaken;
                 throw null;
             }
             if (!(e1Var2 instanceof com.identy.getOveralTimetaken) && !(e1Var2 instanceof getFingers)) {
                 int i4 = i2 + 99;
-                toJson = i4 % Uuid.SIZE_BITS;
+                toJson = i4 % 128;
                 if (i4 % 2 != 0) {
                     int i5 = 40 / 0;
                 }
@@ -10868,14 +10867,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     fingerActivity.findViewById(i6).setScaleY(-1.0f);
                     fingerActivity.findViewById(i7).setScaleY(-1.0f);
                     int i8 = toJson;
-                    setFoundMatchingTemplates = ((i8 ^ 117) + ((i8 & 117) << 1)) % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = ((i8 ^ 117) + ((i8 & 117) << 1)) % 128;
                 }
                 if (!(!b)) {
                     fingerActivity.findViewById(R.id.change_hand).setVisibility(8);
                     return null;
                 }
                 int i9 = setFoundMatchingTemplates;
-                toJson = ((i9 & 35) + (i9 | 35)) % Uuid.SIZE_BITS;
+                toJson = ((i9 & 35) + (i9 | 35)) % 128;
                 int i10 = R.id.id_change_hand_button;
                 fingerActivity.findViewById(i10).setVisibility(0);
                 if (!identySdk.s()) {
@@ -10904,14 +10903,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             fingerActivity.findViewById(R.id.left_hand_icon).setVisibility(8);
             findViewById.setVisibility(0);
             int i11 = toJson;
-            setFoundMatchingTemplates = ((i11 ^ 53) + ((i11 & 53) << 1)) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = ((i11 ^ 53) + ((i11 & 53) << 1)) % 128;
         }
         com.identy.e1 e1Var3 = fingerActivity.onErrorResponse;
         if (e1Var3 instanceof com.identy.isAuthSucess) {
             if (e1Var3.cvtyuv2bgr.equals(capturePosition2)) {
                 int i12 = setFoundMatchingTemplates;
                 int i13 = ((i12 | 113) << 1) - (i12 ^ 113);
-                toJson = i13 % Uuid.SIZE_BITS;
+                toJson = i13 % 128;
                 if (i13 % 2 != 0) {
                     throw null;
                 }
@@ -10922,15 +10921,15 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
                 findViewById.setScaleY(-1.0f);
             } else if (fingerActivity.onErrorResponse.cvtyuv2bgr.equals(CapturePosition.VERTICAL_FROM_BOTTOM)) {
-                int i14 = (setFoundMatchingTemplates + 95) % Uuid.SIZE_BITS;
+                int i14 = (setFoundMatchingTemplates + 95) % 128;
                 toJson = i14;
                 if (z2) {
-                    setFoundMatchingTemplates = ((i14 & 31) + (i14 | 31)) % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = ((i14 & 31) + (i14 | 31)) % 128;
                     findViewById.setRotation(-90.0f);
                 } else {
                     findViewById.setRotation(90.0f);
                     int i15 = toJson;
-                    setFoundMatchingTemplates = ((i15 & 45) + (i15 | 45)) % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = ((i15 & 45) + (i15 | 45)) % 128;
                 }
             }
         }
@@ -10943,7 +10942,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public final boolean PngjBadCrcException() {
         int i = setFoundMatchingTemplates;
         int i2 = ((i | 59) << 1) - (i ^ 59);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         if (i2 % 2 != 0) {
             PreferenceManager.getDefaultSharedPreferences(this).getString("identy_app_preference_immersive_mode", "immersive_mode_low_profile").equals("immersive_mode_gui");
             throw null;
@@ -10951,7 +10950,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         String string = PreferenceManager.getDefaultSharedPreferences(this).getString("identy_app_preference_immersive_mode", "immersive_mode_low_profile");
         if (!string.equals("immersive_mode_gui")) {
             int i3 = toJson + 35;
-            setFoundMatchingTemplates = i3 % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = i3 % 128;
             if (i3 % 2 == 0) {
                 string.equals("immersive_mode_everything");
                 throw null;
@@ -10959,7 +10958,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (!string.equals("immersive_mode_everything")) {
                 int i4 = setFoundMatchingTemplates;
                 int i5 = ((i4 | 83) << 1) - (i4 ^ 83);
-                toJson = i5 % Uuid.SIZE_BITS;
+                toJson = i5 % 128;
                 if (i5 % 2 == 0) {
                     return false;
                 }
@@ -10968,7 +10967,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
         int i6 = setFoundMatchingTemplates;
         int i7 = (i6 & 53) + (i6 | 53);
-        toJson = i7 % Uuid.SIZE_BITS;
+        toJson = i7 % 128;
         if (i7 % 2 == 0) {
             return true;
         }
@@ -10980,12 +10979,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             return;
         }
         int i = setFoundMatchingTemplates;
-        toJson = (((i | 123) << 1) - (i ^ 123)) % Uuid.SIZE_BITS;
+        toJson = (((i | 123) << 1) - (i ^ 123)) % 128;
         if (LibSettings.isSaveCaptured()) {
-            toJson = (setFoundMatchingTemplates + 13) % Uuid.SIZE_BITS;
+            toJson = (setFoundMatchingTemplates + 13) % 128;
             Iterator<Map.Entry<Pair<Hand, Finger>, Float>> it = hashMap.entrySet().iterator();
             while (!(!it.hasNext())) {
-                setFoundMatchingTemplates = (toJson + 1) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (toJson + 1) % 128;
                 Map.Entry<Pair<Hand, Finger>, Float> next = it.next();
                 Pair<Hand, Finger> key = next.getKey();
                 next.getValue();
@@ -10998,7 +10997,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         try {
             i2 = IdentySdk.getInstance().getAllowedAttempts();
             if (!z2) {
-                toJson = (setFoundMatchingTemplates + 123) % Uuid.SIZE_BITS;
+                toJson = (setFoundMatchingTemplates + 123) % 128;
                 IdentySdk identySdk = IdentySdk.getInstance();
                 FingerDetectionMode fingerDetectionMode = this.PngjExceptionInternal;
                 com.identy.e1 e1Var = this.onErrorResponse;
@@ -11006,7 +11005,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 Pair[] PngjExceptionInternal2 = e1Var.PngjExceptionInternal();
                 com.identy.e1 e1Var2 = this.onErrorResponse;
                 identySdk.a(fingerDetectionMode, i3, PngjExceptionInternal2, e1Var2.toString, e1Var2.Enroll2IndexActivity, hashMap);
-                toJson = (setFoundMatchingTemplates + 33) % Uuid.SIZE_BITS;
+                toJson = (setFoundMatchingTemplates + 33) % 128;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -11014,7 +11013,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (!z2) {
             int i4 = toJson;
             int i5 = (i4 ^ 35) + ((i4 & 35) << 1);
-            setFoundMatchingTemplates = i5 % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = i5 % 128;
             if (i5 % 2 == 0) {
                 com.identy.e1 e1Var3 = this.onErrorResponse;
                 e1Var3.getEncryptedTemplates = e1Var3.getEncryptedTemplates;
@@ -11030,13 +11029,13 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         this.onErrorResponse.valueOf();
         PngjException(com.identy.a.PngjException.values(), 843068644, new Object[]{this, Boolean.valueOf(z2)}, com.identy.a.PngjException.values(), -843068625, com.identy.a.PngjException.values(), com.identy.a.PngjException.values());
         int i7 = toJson;
-        setFoundMatchingTemplates = (((i7 | 19) << 1) - (i7 ^ 19)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (((i7 | 19) << 1) - (i7 ^ 19)) % 128;
     }
 
     public final org.camera.preview.PngjBadCrcException PngjInputException() {
         int i = setFoundMatchingTemplates;
         int i2 = (i ^ 87) + ((i & 87) << 1);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         int i3 = i2 % 2;
         org.camera.preview.PngjBadCrcException pngjBadCrcException = this.Action;
         if (i3 != 0) {
@@ -11077,7 +11076,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     
         r6 = com.identy.FingerActivity.toJson;
         r0 = ((r6 | 69) << 1) - (r6 ^ 69);
-        r6 = r0 % kotlin.uuid.Uuid.SIZE_BITS;
+        r6 = r0 % 128;
         com.identy.FingerActivity.setFoundMatchingTemplates = r6;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0048, code lost:
@@ -11087,7 +11086,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Code restructure failed: missing block: B:9:0x004a, code lost:
     
         r2.screenBrightness = -1.0f;
-        com.identy.FingerActivity.toJson = ((r6 ^ 83) + ((r6 & 83) << 1)) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.toJson = ((r6 ^ 83) + ((r6 & 83) << 1)) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -11096,7 +11095,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         SharedPreferences defaultSharedPreferences;
         WindowManager.LayoutParams attributes;
         int i = toJson + 97;
-        setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i % 128;
         if (i % 2 == 0) {
             defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
             attributes = getWindow().getAttributes();
@@ -11108,7 +11107,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         runOnUiThread(new PngjOutputException(attributes));
         int i3 = setFoundMatchingTemplates;
         int i4 = (i3 & 5) + (i3 | 5);
-        toJson = i4 % Uuid.SIZE_BITS;
+        toJson = i4 % 128;
         if (i4 % 2 != 0) {
             throw null;
         }
@@ -11116,20 +11115,20 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     public final void values(Pair<Hand, Finger>[] pairArr) {
         int i = toJson;
-        setFoundMatchingTemplates = ((i ^ 37) + ((i & 37) << 1)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i ^ 37) + ((i & 37) << 1)) % 128;
         try {
             com.identy.e1 e1Var = this.onErrorResponse;
             ERRORS errors = ERRORS.EXCEEDED_TRANSACTION_LIMIT;
             e1Var.valueOf(errors);
             IdentySdk.getInstance().a(errors, pairArr);
-            setFoundMatchingTemplates = (toJson + 75) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = (toJson + 75) % 128;
         } catch (Exception e) {
             e.printStackTrace();
         }
         finish();
         int i2 = toJson;
         int i3 = (i2 ^ com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + ((i2 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) << 1);
-        setFoundMatchingTemplates = i3 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i3 % 128;
         if (i3 % 2 == 0) {
             throw null;
         }
@@ -11140,7 +11139,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         Pair[] pairArr = (Pair[]) objArr[1];
         int i = setFoundMatchingTemplates;
         int i2 = (i ^ 39) + ((i & 39) << 1);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         try {
         } catch (Exception e) {
             e.printStackTrace();
@@ -11151,11 +11150,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             e1Var.valueOf(errors);
             IdentySdk.getInstance().a(errors, pairArr);
             int i3 = setFoundMatchingTemplates;
-            toJson = (((i3 | 45) << 1) - (i3 ^ 45)) % Uuid.SIZE_BITS;
+            toJson = (((i3 | 45) << 1) - (i3 ^ 45)) % 128;
             fingerActivity.finish();
             int i4 = toJson;
             int i5 = (i4 ^ 71) + ((i4 & 71) << 1);
-            setFoundMatchingTemplates = i5 % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = i5 % 128;
             if (i5 % 2 != 0) {
                 return null;
             }
@@ -11183,7 +11182,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (fingerDetectionModeArr.length == 0) {
             runOnUiThread(new onErrorResponse());
             finish();
-            setFoundMatchingTemplates = (toJson + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = (toJson + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
             return;
         }
         this.PngjExceptionInternal = fingerDetectionModeArr[this.CaptureThumbActivity];
@@ -11197,7 +11196,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 FingerDetectionMode fingerDetectionMode = (FingerDetectionMode) it.next();
                 if (fingerDetectionMode.getHand() != null && !(!fingerDetectionMode.getHand().equals(hand))) {
                     int i2 = setFoundMatchingTemplates;
-                    toJson = (((i2 | 27) << 1) - (i2 ^ 27)) % Uuid.SIZE_BITS;
+                    toJson = (((i2 | 27) << 1) - (i2 ^ 27)) % 128;
                     if (fingerDetectionMode.canClub()) {
                         arrayList2.add(fingerDetectionMode.getFinger());
                         this.getPadSub2.add(fingerDetectionMode);
@@ -11214,7 +11213,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             }
             this.CapturePosition = (FingerDetectionMode[]) arrayList.toArray(new FingerDetectionMode[arrayList.size()]);
             this.a = (Finger[]) arrayList2.toArray(new Finger[arrayList2.size()]);
-            toJson = (setFoundMatchingTemplates + 65) % Uuid.SIZE_BITS;
+            toJson = (setFoundMatchingTemplates + 65) % 128;
         }
         CaptureFingersActivity();
         SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -11222,7 +11221,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         this.Capture2TActivity = largeMemoryClass;
         if (largeMemoryClass >= 128) {
             int i3 = toJson + 47;
-            setFoundMatchingTemplates = i3 % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = i3 % 128;
             if (i3 % 2 == 0) {
                 this.CaptureFingersActivity = false;
             } else {
@@ -11236,14 +11235,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         SensorManager sensorManager = (SensorManager) getSystemService("sensor");
         this.getSpoofScore = sensorManager;
         if (!valueOf) {
-            toJson = (setFoundMatchingTemplates + 83) % Uuid.SIZE_BITS;
+            toJson = (setFoundMatchingTemplates + 83) % 128;
             if (sensorManager == null) {
                 throw new AssertionError();
             }
         }
         if (sensorManager.getDefaultSensor(5) != null) {
             int i4 = toJson + 5;
-            setFoundMatchingTemplates = i4 % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = i4 % 128;
             this.getL1Score = i4 % 2 == 0 ? this.getSpoofScore.getDefaultSensor(2) : this.getSpoofScore.getDefaultSensor(5);
         }
         try {
@@ -11255,7 +11254,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         getWindow().getDecorView().setOnSystemUiVisibilityChangeListener(new getPadSub1());
         boolean contains = defaultSharedPreferences.contains("identy_app_done_first_time");
         if (!contains) {
-            toJson = (setFoundMatchingTemplates + 83) % Uuid.SIZE_BITS;
+            toJson = (setFoundMatchingTemplates + 83) % 128;
             PngjException(com.identy.a.PngjException.values(), 1727349288, new Object[]{this}, com.identy.a.PngjException.values(), -1727349276, com.identy.a.PngjException.values(), com.identy.a.PngjException.values());
         }
         if (!contains) {
@@ -11267,14 +11266,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         getData getdata = new getData();
         this.getNfiq1Score = getdata;
         int i5 = setFoundMatchingTemplates;
-        toJson = ((i5 ^ 97) + ((i5 & 97) << 1)) % Uuid.SIZE_BITS;
+        toJson = ((i5 ^ 97) + ((i5 & 97) << 1)) % 128;
         registerReceiver(getdata, intentFilter, 2);
         registerReceiver(this.getMatchingTime, intentFilter2, 2);
         try {
             if (!LibSettings.isSaveCaptured()) {
                 return;
             }
-            setFoundMatchingTemplates = (toJson + 67) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = (toJson + 67) % 128;
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -11294,7 +11293,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public final void PngjBadCrcException(int i, int i2) {
         int i3 = setFoundMatchingTemplates;
         int i4 = (i3 & 109) + (i3 | 109);
-        toJson = i4 % Uuid.SIZE_BITS;
+        toJson = i4 % 128;
         if (i4 % 2 != 0) {
             int i5 = 9 / 0;
         }
@@ -11304,18 +11303,18 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         } catch (Exception e) {
             e.printStackTrace();
             int i6 = setFoundMatchingTemplates;
-            toJson = ((i6 ^ 63) + ((i6 & 63) << 1)) % Uuid.SIZE_BITS;
+            toJson = ((i6 ^ 63) + ((i6 & 63) << 1)) % 128;
         }
     }
 
     public final void PngjExceptionInternal() {
         int i = setFoundMatchingTemplates;
         int i2 = ((i | 31) << 1) - (i ^ 31);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         if (i2 % 2 == 0) {
             if (PngjBadCrcException()) {
                 int i3 = setFoundMatchingTemplates + 97;
-                toJson = i3 % Uuid.SIZE_BITS;
+                toJson = i3 % 128;
                 int i4 = i3 % 2;
                 Object[] objArr = {this};
                 int values2 = com.identy.a.PngjException.values();
@@ -11329,9 +11328,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     PngjException(values2, 1835529429, objArr, values3, -1835529416, values4, values5);
                 }
                 int i6 = setFoundMatchingTemplates;
-                toJson = ((i6 & 73) + (i6 | 73)) % Uuid.SIZE_BITS;
+                toJson = ((i6 & 73) + (i6 | 73)) % 128;
             }
-            toJson = (setFoundMatchingTemplates + 61) % Uuid.SIZE_BITS;
+            toJson = (setFoundMatchingTemplates + 61) % 128;
             return;
         }
         PngjBadCrcException();
@@ -11375,7 +11374,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         r1.isQualityFailed();
         com.identy.FingerActivity.PngjBadSignature = false;
         r5 = com.identy.FingerActivity.toJson + 121;
-        com.identy.FingerActivity.setFoundMatchingTemplates = r5 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = r5 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0039, code lost:
     
@@ -11396,7 +11395,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         boolean booleanValue = ((Boolean) objArr[1]).booleanValue();
         int i = setFoundMatchingTemplates + 41;
-        toJson = i % Uuid.SIZE_BITS;
+        toJson = i % 128;
         if (i % 2 != 0) {
             fingerActivity.getL3Score = true;
         } else {
@@ -11411,12 +11410,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     public final void PngjOutputException() {
         int i = toJson + 65;
-        setFoundMatchingTemplates = i % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i % 128;
         if (i % 2 != 0 ? PreferenceManager.getDefaultSharedPreferences(this).getBoolean("identy_app_preference_show_take_photo", true) : PreferenceManager.getDefaultSharedPreferences(this).getBoolean("identy_app_preference_show_take_photo", true)) {
             boolean z = this.isQualityFailed.PngjException;
         }
         int i2 = toJson;
-        setFoundMatchingTemplates = ((i2 & 89) + (i2 | 89)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i2 & 89) + (i2 | 89)) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:37:0x0099, code lost:
@@ -11437,7 +11436,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         Hand hand;
         boolean contains;
         int i = toJson;
-        setFoundMatchingTemplates = (((i | 41) << 1) - (i ^ 41)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (((i | 41) << 1) - (i ^ 41)) % 128;
         if (this.CaptureThumbActivity + 1 < this.CapturePosition.length) {
             finish();
             int i2 = this.CaptureThumbActivity;
@@ -11460,28 +11459,28 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             }
             if (r2[0].getFinger() != null) {
                 int i12 = setFoundMatchingTemplates + 41;
-                toJson = i12 % Uuid.SIZE_BITS;
+                toJson = i12 % 128;
                 if (i12 % 2 != 0) {
                     if (r2[1].getFinger().equals(Finger.THUMB)) {
                         z = true;
                     }
                 }
                 if (r2[0].getHand() != null) {
-                    toJson = (setFoundMatchingTemplates + 45) % Uuid.SIZE_BITS;
+                    toJson = (setFoundMatchingTemplates + 45) % 128;
                     hand = Hand.LEFT;
                 } else {
                     hand = r2[0].getHand();
                     int i13 = toJson;
-                    setFoundMatchingTemplates = ((i13 & 33) + (i13 | 33)) % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = ((i13 & 33) + (i13 | 33)) % 128;
                 }
                 int i14 = setFoundMatchingTemplates;
-                int i15 = ((i14 ^ 67) + ((i14 & 67) << 1)) % Uuid.SIZE_BITS;
+                int i15 = ((i14 ^ 67) + ((i14 & 67) << 1)) % 128;
                 toJson = i15;
                 if (z) {
                     contains = IdentySdk.getInstance().PngjExceptionInternal.contains(hand);
                 } else {
                     int i16 = (i15 & 45) + (i15 | 45);
-                    setFoundMatchingTemplates = i16 % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = i16 % 128;
                     if (i16 % 2 == 0) {
                         contains = IdentySdk.getInstance().PngjPrematureEnding.contains(hand);
                         int i17 = 53 / 0;
@@ -11500,7 +11499,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (r2[0].getHand() != null) {
             }
             int i142 = setFoundMatchingTemplates;
-            int i152 = ((i142 ^ 67) + ((i142 & 67) << 1)) % Uuid.SIZE_BITS;
+            int i152 = ((i142 ^ 67) + ((i142 & 67) << 1)) % 128;
             toJson = i152;
             if (z) {
             }
@@ -11514,7 +11513,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         try {
             org.camera.preview.PngjBadCrcException pngjBadCrcException = this.Action;
             if (pngjBadCrcException != null) {
-                setFoundMatchingTemplates = (i + 97) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (i + 97) % 128;
                 pngjBadCrcException.PngjException();
             }
         } catch (Exception unused) {
@@ -11535,7 +11534,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         pngjBadCrcException.PngjException(rectF, new getL1Score(timeInMillis));
         int i = toJson;
         int i2 = (i ^ 113) + ((i & 113) << 1);
-        setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i2 % 128;
         if (i2 % 2 == 0) {
             int i3 = 97 / 0;
         }
@@ -11544,7 +11543,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     private static /* synthetic */ Object PngjBadSignature(Object[] objArr) {
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = toJson;
-        setFoundMatchingTemplates = (((i | 23) << 1) - (i ^ 23)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (((i | 23) << 1) - (i ^ 23)) % 128;
         fingerActivity.finish();
         FingerDetectionMode[] fingerDetectionModeArr = fingerActivity.CapturePosition;
         try {
@@ -11553,7 +11552,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             e.printStackTrace();
         }
         int i2 = toJson + 113;
-        setFoundMatchingTemplates = i2 % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = i2 % 128;
         if (i2 % 2 != 0) {
             return Boolean.TRUE;
         }
@@ -11563,21 +11562,21 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public static boolean PngjException(Context context) {
         boolean z;
         int i = toJson;
-        setFoundMatchingTemplates = ((i ^ 53) + ((i & 53) << 1)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i ^ 53) + ((i & 53) << 1)) % 128;
         boolean PngjBadSignature2 = PngjBadSignature(context);
         if (context.getResources().getConfiguration().orientation == 2) {
             int i2 = setFoundMatchingTemplates;
             int i3 = i2 + 55;
-            toJson = i3 % Uuid.SIZE_BITS;
+            toJson = i3 % 128;
             z = i3 % 2 == 0;
-            toJson = ((i2 & 13) + (i2 | 13)) % Uuid.SIZE_BITS;
+            toJson = ((i2 & 13) + (i2 | 13)) % 128;
         } else {
             z = false;
         }
         if (PngjBadSignature2) {
             int i4 = setFoundMatchingTemplates;
             int i5 = (i4 ^ 43) + ((i4 & 43) << 1);
-            toJson = i5 % Uuid.SIZE_BITS;
+            toJson = i5 % 128;
             if (i5 % 2 != 0) {
                 throw null;
             }
@@ -11611,7 +11610,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Code restructure failed: missing block: B:19:0x00d7, code lost:
     
         r3 = com.identy.FingerActivity.toJson;
-        com.identy.FingerActivity.setFoundMatchingTemplates = ((r3 ^ 123) + ((r3 & 123) << 1)) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = ((r3 ^ 123) + ((r3 & 123) << 1)) % 128;
         r3 = android.os.Build.MODEL;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x00eb, code lost:
@@ -11647,7 +11646,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     
         r1 = com.identy.FingerActivity.toJson;
         r2 = (r1 & 125) + (r1 | 125);
-        com.identy.FingerActivity.setFoundMatchingTemplates = r2 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.setFoundMatchingTemplates = r2 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x0117, code lost:
     
@@ -11679,7 +11678,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x012a, code lost:
     
-        com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 57) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 57) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x013c, code lost:
     
@@ -11694,7 +11693,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         r15.CaptureMode = false;
         r0 = com.identy.FingerActivity.setFoundMatchingTemplates;
         r1 = (r0 & 27) + (r0 | 27);
-        com.identy.FingerActivity.toJson = r1 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.toJson = r1 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x0153, code lost:
     
@@ -11714,7 +11713,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x0133, code lost:
     
-        com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 111) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 111) % 128;
         r2 = false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x0158, code lost:
@@ -11737,7 +11736,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         int i = setFoundMatchingTemplates;
         boolean z2 = true;
         int i2 = (i ^ 41) + ((i & 41) << 1);
-        toJson = i2 % Uuid.SIZE_BITS;
+        toJson = i2 % 128;
         if (i2 % 2 != 0) {
             this.CaptureMode = true;
             if (com.identy.PngjUnsupportedException.PngjBadCrcException(this)) {
@@ -11759,7 +11758,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         long longValue = ((Long) PngjException(com.identy.a.PngjException.values(), 1438500373, new Object[]{this}, com.identy.a.PngjException.values(), -1438500369, com.identy.a.PngjException.values(), com.identy.a.PngjException.values())).longValue();
         if (longValue < 1519572992) {
             int i3 = toJson;
-            setFoundMatchingTemplates = ((i3 ^ 37) + ((i3 & 37) << 1)) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = ((i3 ^ 37) + ((i3 & 37) << 1)) % 128;
             z = true;
         } else {
             z = false;
@@ -11769,7 +11768,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (!contains) {
             int i4 = toJson;
             int i5 = (i4 ^ 13) + ((i4 & 13) << 1);
-            setFoundMatchingTemplates = i5 % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = i5 % 128;
             if (i5 % 2 == 0) {
                 int i6 = 75 / 0;
             }
@@ -11777,21 +11776,21 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         this.CaptureMode = true;
         int i7 = setFoundMatchingTemplates;
         int i8 = ((i7 | 47) << 1) - (i7 ^ 47);
-        toJson = i8 % Uuid.SIZE_BITS;
+        toJson = i8 % 128;
         if (i8 % 2 != 0) {
             throw null;
         }
     }
 
     public final void PngjBadSignature() {
-        setFoundMatchingTemplates = (toJson + 101) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (toJson + 101) % 128;
         if (com.identy.e1.valueOf.equals(PngjBadCrcException.PngjBadSignature.HIGH)) {
             int i = toJson;
-            setFoundMatchingTemplates = ((i ^ 73) + ((i & 73) << 1)) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = ((i ^ 73) + ((i & 73) << 1)) % 128;
             com.identy.e1.valueOf = PngjBadCrcException.PngjBadSignature.MEDIUM;
         } else if (!(!com.identy.e1.valueOf.equals(PngjBadCrcException.PngjBadSignature.MEDIUM))) {
             int i2 = setFoundMatchingTemplates;
-            toJson = ((i2 ^ 65) + ((i2 & 65) << 1)) % Uuid.SIZE_BITS;
+            toJson = ((i2 ^ 65) + ((i2 & 65) << 1)) % 128;
             com.identy.e1.valueOf = PngjBadCrcException.PngjBadSignature.LOW;
         }
         try {
@@ -11799,7 +11798,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             try {
                 if (LibSettings.isSaveCaptured()) {
                     int i3 = toJson + 29;
-                    setFoundMatchingTemplates = i3 % Uuid.SIZE_BITS;
+                    setFoundMatchingTemplates = i3 % 128;
                     if (i3 % 2 == 0) {
                         int i4 = 41 / 0;
                     }
@@ -11810,12 +11809,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         } catch (Exception unused) {
         }
         finish();
-        setFoundMatchingTemplates = (toJson + 51) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (toJson + 51) % 128;
     }
 
     private void PngjBadSignature(int i) {
         runOnUiThread(new getProcessingTime(i));
-        toJson = (setFoundMatchingTemplates + 93) % Uuid.SIZE_BITS;
+        toJson = (setFoundMatchingTemplates + 93) % 128;
     }
 
     private void PngjBadSignature(boolean z) {
@@ -11843,7 +11842,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     private static /* synthetic */ Object PngjException(Object[] objArr) {
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = setFoundMatchingTemplates + 85;
-        int i2 = i % Uuid.SIZE_BITS;
+        int i2 = i % 128;
         toJson = i2;
         int i3 = i % 2;
         org.camera.preview.PngjBadCrcException pngjBadCrcException = fingerActivity.Action;
@@ -11853,7 +11852,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 return Boolean.valueOf(((org.cameracontroller.valueOf) pngjBadSignature).closeDialog);
             }
             int i4 = i2 + 81;
-            setFoundMatchingTemplates = i4 % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = i4 % 128;
             if (i4 % 2 != 0) {
                 return Boolean.FALSE;
             }
@@ -11876,7 +11875,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         int i2;
         int i3;
         int i4 = toJson;
-        setFoundMatchingTemplates = (((i4 | 125) << 1) - (i4 ^ 125)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = (((i4 | 125) << 1) - (i4 ^ 125)) % 128;
         if (z) {
             try {
                 IdentySdk.getInstance().a(this.PngjExceptionInternal);
@@ -11892,7 +11891,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         try {
             boolean z4 = IdentySdk.getInstance().e1;
             int i5 = toJson;
-            setFoundMatchingTemplates = (((i5 | 31) << 1) - (i5 ^ 31)) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = (((i5 | 31) << 1) - (i5 ^ 31)) % 128;
             z3 = z4;
         } catch (Exception unused) {
             z3 = false;
@@ -11905,7 +11904,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
         if (!(!z2) && !action.equals(com.identy.Action.VERIFY)) {
             int i6 = toJson;
-            setFoundMatchingTemplates = ((i6 & 81) + (i6 | 81)) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = ((i6 & 81) + (i6 | 81)) % 128;
             try {
                 i2 = IdentySdk.getInstance().getAllowedAttempts();
             } catch (Exception e3) {
@@ -11953,7 +11952,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 int i33 = ~((i32 & values2) | (i32 ^ values2));
                 identySdk.a(fingerDetectionMode, i7, PngjExceptionInternal2, hashMap, f, f, f, j, j2, PngjPrematureEnding2, (((i31 & i33) | (i31 ^ i33)) * 568) + i28);
                 int i34 = toJson;
-                setFoundMatchingTemplates = ((i34 & 25) + (i34 | 25)) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = ((i34 & 25) + (i34 | 25)) % 128;
             } catch (Exception e4) {
                 e = e4;
                 e.printStackTrace();
@@ -11970,7 +11969,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             i3 = e1Var42.getEncryptedTemplates + 1;
             e1Var42.getEncryptedTemplates = i3;
             if (i3 >= i2) {
-                setFoundMatchingTemplates = (toJson + 27) % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = (toJson + 27) % 128;
                 e1();
             } else {
                 Capture2TActivity();
@@ -12009,7 +12008,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (i37 < i) {
                 int i38 = toJson;
                 int i39 = ((i38 | 51) << 1) - (i38 ^ 51);
-                setFoundMatchingTemplates = i39 % Uuid.SIZE_BITS;
+                setFoundMatchingTemplates = i39 % 128;
                 if (i39 % 2 == 0) {
                     e1();
                     throw null;
@@ -12025,7 +12024,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             return;
         }
         int i40 = toJson;
-        setFoundMatchingTemplates = ((i40 ^ 45) + ((i40 & 45) << 1)) % Uuid.SIZE_BITS;
+        setFoundMatchingTemplates = ((i40 ^ 45) + ((i40 & 45) << 1)) % 128;
         try {
             IdentySdk identySdk3 = IdentySdk.getInstance();
             FingerDetectionMode fingerDetectionMode3 = this.PngjExceptionInternal;
@@ -12054,7 +12053,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         com.identy.e1 e1Var11 = this.onErrorResponse;
         if (e1Var11.getEncryptedTemplates >= i) {
             int i55 = toJson;
-            setFoundMatchingTemplates = ((i55 & 39) + (i55 | 39)) % Uuid.SIZE_BITS;
+            setFoundMatchingTemplates = ((i55 & 39) + (i55 | 39)) % 128;
             Capture2TActivity();
         } else {
             com.identy.e1.values(new Object[]{e1Var11}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());

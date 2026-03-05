@@ -37,7 +37,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
-import kotlin.uuid.Uuid;
 import org.camera.preview.PngjBadCrcException;
 
 /* loaded from: classes2.dex */
@@ -357,7 +356,7 @@ public class VerifyThumbActivity extends FingerActivity {
         long j2;
         char c7;
         int i7 = $10 + 43;
-        $11 = i7 % Uuid.SIZE_BITS;
+        $11 = i7 % 128;
         char c8 = 2;
         if (i7 % 2 == 0) {
             throw null;
@@ -413,7 +412,7 @@ public class VerifyThumbActivity extends FingerActivity {
             i2 = i8;
             j = j3;
             c2 = c9;
-            $10 = ($11 + 45) % Uuid.SIZE_BITS;
+            $10 = ($11 + 45) % 128;
             cArr = cArr2;
         } else {
             c = 2;
@@ -432,7 +431,7 @@ public class VerifyThumbActivity extends FingerActivity {
         char[] cArr3 = new char[i];
         if (i % 2 != 0) {
             int i11 = $10 + 125;
-            $11 = i11 % Uuid.SIZE_BITS;
+            $11 = i11 % 128;
             if (i11 % 2 == 0) {
                 i3 = i + 116;
                 cArr3[i3] = (char) (charArray[i3] >> b);
@@ -457,7 +456,7 @@ public class VerifyThumbActivity extends FingerActivity {
                 pngjInputException.PngjException = c11;
                 if (c10 == c11) {
                     int i14 = $11 + 41;
-                    $10 = i14 % Uuid.SIZE_BITS;
+                    $10 = i14 % 128;
                     if (i14 % 2 != 0) {
                         cArr3[i13] = (char) (c10 % b);
                         cArr3[i13 - 1] = (char) (c11 - b);
@@ -506,7 +505,7 @@ public class VerifyThumbActivity extends FingerActivity {
                     int intValue = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr4)).intValue();
                     int i16 = pngjInputException.PngjUnsupportedException;
                     if (intValue == i16) {
-                        $11 = ($10 + 37) % Uuid.SIZE_BITS;
+                        $11 = ($10 + 37) % 128;
                         Object[] objArr5 = new Object[11];
                         objArr5[c3] = pngjInputException;
                         objArr5[c4] = Integer.valueOf(charValue);
@@ -585,7 +584,7 @@ public class VerifyThumbActivity extends FingerActivity {
     public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
         FingerMatchSecLevel fingerMatchSecLevel;
         long j;
-        getFingerPrintQualityScore = (getProcessingTime + 5) % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = (getProcessingTime + 5) % 128;
         super.PngjException(hashMap, hashMap2, bitmap, z, z2);
         if (z && this.getAsHighestSecurityLevelReached) {
             this.onErrorResponse.getNfiq1Score = new ProgressDialog(this);
@@ -594,7 +593,7 @@ public class VerifyThumbActivity extends FingerActivity {
                 this.onErrorResponse.getNfiq1Score.setCancelable(false);
                 this.onErrorResponse.getNfiq1Score.setMessage("matching ...");
                 if (FingerActivity.PngjPrematureEnding) {
-                    getProcessingTime = (getFingerPrintQualityScore + 81) % Uuid.SIZE_BITS;
+                    getProcessingTime = (getFingerPrintQualityScore + 81) % 128;
                     this.onErrorResponse.getNfiq1Score.show();
                 }
             } catch (Exception unused) {
@@ -613,7 +612,7 @@ public class VerifyThumbActivity extends FingerActivity {
                         j = timeInMillis;
                         try {
                             new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis), this, pngjExceptionInternal, value, e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
-                            getFingerPrintQualityScore = (getProcessingTime + 61) % Uuid.SIZE_BITS;
+                            getFingerPrintQualityScore = (getProcessingTime + 61) % 128;
                         } catch (Exception unused2) {
                             try {
                                 this.onErrorResponse.valueOf();
@@ -664,7 +663,7 @@ public class VerifyThumbActivity extends FingerActivity {
         try {
             try {
                 if (j != -1) {
-                    getProcessingTime = (getFingerPrintQualityScore + 57) % Uuid.SIZE_BITS;
+                    getProcessingTime = (getFingerPrintQualityScore + 57) % 128;
                     long j2 = j + 4611686018427387952L;
                     c = 18;
                     c2 = 20;
@@ -695,7 +694,7 @@ public class VerifyThumbActivity extends FingerActivity {
                         int i5 = c3 ^ (c3 << 13);
                         int i6 = i5 ^ (i5 >>> 17);
                         ((int[]) PngjBadCrcException$1eba2e16[1])[0] = i6 ^ (i6 << 5);
-                        getFingerPrintQualityScore = (getProcessingTime + 37) % Uuid.SIZE_BITS;
+                        getFingerPrintQualityScore = (getProcessingTime + 37) % 128;
                         if (((int[]) PngjBadCrcException$1eba2e16[3])[0] == ((int[]) PngjBadCrcException$1eba2e16[0])[0]) {
                             ArrayList arrayList = new ArrayList();
                             String[] strArr2 = (String[]) PngjBadCrcException$1eba2e16[2];
@@ -719,7 +718,7 @@ public class VerifyThumbActivity extends FingerActivity {
                         int i12 = c4 ^ (c4 << 13);
                         int i13 = i12 ^ (i12 >>> 17);
                         ((int[]) objArr6[1])[0] = i13 ^ (i13 << 5);
-                        getFingerPrintQualityScore = (getProcessingTime + 33) % Uuid.SIZE_BITS;
+                        getFingerPrintQualityScore = (getProcessingTime + 33) % 128;
                         return;
                     }
                 } else {
@@ -785,7 +784,7 @@ public class VerifyThumbActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity
     public final void getPadSub2() {
-        getFingerPrintQualityScore = (getProcessingTime + 9) % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = (getProcessingTime + 9) % 128;
         super.getPadSub2();
         try {
             IdentyUser B = IdentySdk.getInstance().B();
@@ -795,7 +794,7 @@ public class VerifyThumbActivity extends FingerActivity {
             if (isEnrolled) {
                 return;
             }
-            getFingerPrintQualityScore = (getProcessingTime + 123) % Uuid.SIZE_BITS;
+            getFingerPrintQualityScore = (getProcessingTime + 123) % 128;
             Toast.makeText(this, "Fingers not registered .. please register first", 1).show();
             finish();
         } catch (Exception unused) {
@@ -805,7 +804,7 @@ public class VerifyThumbActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         int i = getFingerPrintQualityScore + 83;
-        getProcessingTime = i % Uuid.SIZE_BITS;
+        getProcessingTime = i % 128;
         int i2 = i % 2;
         super.onCreate(bundle);
         if (i2 == 0) {
@@ -816,26 +815,26 @@ public class VerifyThumbActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
         int i = getProcessingTime + 93;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onPause();
         if (i2 != 0) {
             int i3 = 26 / 0;
         }
-        getFingerPrintQualityScore = (getProcessingTime + 125) % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = (getProcessingTime + 125) % 128;
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
         int i = getProcessingTime + 33;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 != 0) {
             int i3 = 30 / 0;
         }
         int i4 = getProcessingTime + 63;
-        getFingerPrintQualityScore = i4 % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i4 % 128;
         if (i4 % 2 != 0) {
             throw null;
         }
@@ -844,14 +843,14 @@ public class VerifyThumbActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
         int i = getProcessingTime + 121;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onStart();
         if (i2 != 0) {
             throw null;
         }
         int i3 = getFingerPrintQualityScore + 79;
-        getProcessingTime = i3 % Uuid.SIZE_BITS;
+        getProcessingTime = i3 % 128;
         if (i3 % 2 == 0) {
             int i4 = 14 / 0;
         }
@@ -863,7 +862,7 @@ public class VerifyThumbActivity extends FingerActivity {
         try {
             try {
                 this.onErrorResponse = new getFingers(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
-                getProcessingTime = (getFingerPrintQualityScore + 79) % Uuid.SIZE_BITS;
+                getProcessingTime = (getFingerPrintQualityScore + 79) % 128;
             } catch (Exception unused) {
             }
         } catch (Exception unused2) {

@@ -8,7 +8,6 @@ import arid.a.PngjBadCrcException;
 import java.util.Arrays;
 import kotlin.KotlinVersion;
 import kotlin.UByte;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public final class values extends PngjException {
@@ -81,7 +80,7 @@ public final class values extends PngjException {
                     throw new PngjOutputException(sb.toString());
                 }
                 this.a = 0;
-                this.onErrorResponse = Uuid.SIZE_BITS;
+                this.onErrorResponse = 128;
                 this.Attempt = 0.008333333333333333d;
             }
         }
@@ -296,7 +295,7 @@ public final class values extends PngjException {
                                             i37++;
                                         }
                                         int i39 = 128;
-                                        for (i4 = Uuid.SIZE_BITS; i4 > 0; i4--) {
+                                        for (i4 = 128; i4 > 0; i4--) {
                                             i38 += pngjBadCrcException.PngjPrematureEnding[i39] * i4;
                                             i39++;
                                         }

@@ -7,7 +7,6 @@ import com.identy.Action;
 import com.identy.Fpnative;
 import defpackage.a;
 import java.lang.reflect.Method;
-import kotlin.uuid.Uuid;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -169,7 +168,7 @@ public class RollS3Meta {
                         int i10 = (i9 ^ 1) + ((i9 & 1) << 1);
                         int i11 = ((i7 | i10) << 1) - (i10 ^ i7);
                         int i12 = i7 >> 25;
-                        int i13 = -(i11 ^ (((((i12 | (-255)) << 1) - (i12 ^ (-255))) / Uuid.SIZE_BITS) + 1));
+                        int i13 = -(i11 ^ (((((i12 | (-255)) << 1) - (i12 ^ (-255))) / 128) + 1));
                         int i14 = ((i13 | 2) << 1) - (i13 ^ 2);
                         int i15 = i14 >> 15;
                         int i16 = ((i15 ^ (-262143)) + ((i15 & (-262143)) << 1)) / 131072;
@@ -199,7 +198,7 @@ public class RollS3Meta {
                 int i102 = (i92 ^ 1) + ((i92 & 1) << 1);
                 int i112 = ((i72 | i102) << 1) - (i102 ^ i72);
                 int i122 = i72 >> 25;
-                int i132 = -(i112 ^ (((((i122 | (-255)) << 1) - (i122 ^ (-255))) / Uuid.SIZE_BITS) + 1));
+                int i132 = -(i112 ^ (((((i122 | (-255)) << 1) - (i122 ^ (-255))) / 128) + 1));
                 int i142 = ((i132 | 2) << 1) - (i132 ^ 2);
                 int i152 = i142 >> 15;
                 int i162 = ((i152 ^ (-262143)) + ((i152 & (-262143)) << 1)) / 131072;

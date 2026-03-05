@@ -10,7 +10,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import kotlin.uuid.Uuid;
 import org.json.JSONObject;
 
 /* loaded from: classes2.dex */
@@ -55,7 +54,7 @@ public class HandOutput {
                     int i12 = -(i10 ^ ((i11 & 1) + (i11 | 1)));
                     int i13 = (i12 & 7) + (i12 | 7);
                     int i14 = i13 >> 25;
-                    int e = b.e((i14 | (-255)) << 1, i14 ^ (-255), Uuid.SIZE_BITS, -1);
+                    int e = b.e((i14 | (-255)) << 1, i14 ^ (-255), 128, -1);
                     this.values = 0 / (((-((e & 1) + (e | 1))) & i13) * 871);
                     this.PngjException = false;
                     this.PngjBadSignature = new Date();
@@ -87,7 +86,7 @@ public class HandOutput {
             int i122 = -(i102 ^ ((i112 & 1) + (i112 | 1)));
             int i132 = (i122 & 7) + (i122 | 7);
             int i142 = i132 >> 25;
-            int e2 = b.e((i142 | (-255)) << 1, i142 ^ (-255), Uuid.SIZE_BITS, -1);
+            int e2 = b.e((i142 | (-255)) << 1, i142 ^ (-255), 128, -1);
             this.values = 0 / (((-((e2 & 1) + (e2 | 1))) & i132) * 871);
             this.PngjException = false;
             this.PngjBadSignature = new Date();

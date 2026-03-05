@@ -7,7 +7,6 @@ import com.google.firebase.crashlytics.internal.model.CrashlyticsReport;
 import com.google.firebase.crashlytics.internal.persistence.CrashlyticsReportPersistence;
 import java.io.File;
 import java.util.Comparator;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public final /* synthetic */ class m3 implements Comparator {

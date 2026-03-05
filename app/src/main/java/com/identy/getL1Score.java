@@ -39,7 +39,6 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import kotlin.uuid.Uuid;
 import org.c.a.PngjBadCrcException;
 
 /* loaded from: classes2.dex */
@@ -220,7 +219,7 @@ final class getL1Score extends getL3Score {
         char c3;
         char c4;
         int i4;
-        $10 = ($11 + 87) % Uuid.SIZE_BITS;
+        $10 = ($11 + 87) % 128;
         char[] charArray = str != null ? str.toCharArray() : str;
         com.d.e.PngjInputException pngjInputException = new com.d.e.PngjInputException();
         char[] cArr = pfkrolGetQuality;
@@ -332,7 +331,7 @@ final class getL1Score extends getL3Score {
                     int intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
                     int i12 = pngjInputException.PngjUnsupportedException;
                     if (intValue == i12) {
-                        $11 = ($10 + 47) % Uuid.SIZE_BITS;
+                        $11 = ($10 + 47) % 128;
                         Object[] objArr5 = new Object[11];
                         objArr5[c2] = pngjInputException;
                         objArr5[c3] = Integer.valueOf(charValue);
@@ -366,7 +365,7 @@ final class getL1Score extends getL3Score {
                         int i17 = pngjInputException.PngjBadCrcException;
                         if (i16 == i17) {
                             int i18 = $11;
-                            $10 = (i18 + 113) % Uuid.SIZE_BITS;
+                            $10 = (i18 + 113) % 128;
                             int i19 = i3;
                             int C = x5.C(pngjInputException.PngjOutputException, charValue, i19, charValue);
                             pngjInputException.PngjOutputException = C;
@@ -376,7 +375,7 @@ final class getL1Score extends getL3Score {
                             int i21 = pngjInputException.values;
                             cArr3[i21] = cArr[(i16 * charValue) + C];
                             cArr3[i21 + i19] = cArr[i20];
-                            $10 = (i18 + 103) % Uuid.SIZE_BITS;
+                            $10 = (i18 + 103) % 128;
                             i3 = 1;
                         } else {
                             int i22 = (i16 * charValue) + i12;
@@ -385,7 +384,7 @@ final class getL1Score extends getL3Score {
                             cArr3[i24] = cArr[i22];
                             i3 = 1;
                             cArr3[i24 + 1] = cArr[i23];
-                            $11 = ($10 + 113) % Uuid.SIZE_BITS;
+                            $11 = ($10 + 113) % 128;
                         }
                     }
                 }
@@ -397,7 +396,7 @@ final class getL1Score extends getL3Score {
         int i25 = 0;
         while (i25 < i) {
             int i26 = $10 + 33;
-            $11 = i26 % Uuid.SIZE_BITS;
+            $11 = i26 % 128;
             if (i26 % 2 == 0) {
                 cArr3[i25] = (char) (cArr3[i25] ^ 23985);
                 i25 += 2;
@@ -542,7 +541,7 @@ final class getL1Score extends getL3Score {
         int i5;
         int i6;
         Context context2 = context;
-        pfkrolfinalizeF = (destroy + 101) % Uuid.SIZE_BITS;
+        pfkrolfinalizeF = (destroy + 101) % 128;
         Object[] objArr4 = new Object[1];
         h((byte) ((ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) + 109), "\f\u0018\u0010\u000e\u000e\u0004\u0012\u0004\u0006\u0004\u0001\u0017\u0010\u0002\u0016\u0000\u0006\t\b\u0005\r\u000b", 22 - (ViewConfiguration.getTouchSlop() >> 8), objArr4);
         String str = (String) objArr4[0];
@@ -669,7 +668,7 @@ final class getL1Score extends getL3Score {
             int i18 = c3 ^ (c3 << 13);
             int i19 = i18 ^ (i18 >>> 17);
             ((int[]) objArr14[1])[0] = i19 ^ (i19 << 5);
-            destroy = (pfkrolfinalizeF + 121) % Uuid.SIZE_BITS;
+            destroy = (pfkrolfinalizeF + 121) % 128;
         } else {
             ArrayList arrayList = new ArrayList();
             String[] strArr = (String[]) PngjBadSignature$1eba2e16[i];
@@ -710,7 +709,7 @@ final class getL1Score extends getL3Score {
         try {
             if (j3 != -1) {
                 int i26 = destroy + 91;
-                pfkrolfinalizeF = i26 % Uuid.SIZE_BITS;
+                pfkrolfinalizeF = i26 % 128;
                 if (i26 % 2 != 0 ? j3 + 4611686018427387777L >= ((Long) defpackage.a.i(str, str2, null, null, null)).longValue() : j3 + 4611686018427387777L >= ((Long) Class.forName(str).getDeclaredMethod(str2, new Class[1]).invoke(null, new Object[1])).longValue()) {
                     Object PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
                     if (PngjBadSignature8 == null) {
@@ -746,7 +745,7 @@ final class getL1Score extends getL3Score {
                     if (i4 == i3) {
                         throw new RuntimeException(String.valueOf(i4));
                     }
-                    destroy = (pfkrolfinalizeF + 29) % Uuid.SIZE_BITS;
+                    destroy = (pfkrolfinalizeF + 29) % 128;
                     Object[] objArr19 = {new int[1], new int[1], new int[1]};
                     int i35 = ((int[]) objArr[0])[0];
                     int i36 = ((int[]) obj2)[0];
@@ -774,7 +773,7 @@ final class getL1Score extends getL3Score {
                     long j4 = ((Field) PngjBadSignature9).getLong(null);
                     try {
                         if (j4 != -1) {
-                            destroy = (pfkrolfinalizeF + 19) % Uuid.SIZE_BITS;
+                            destroy = (pfkrolfinalizeF + 19) % 128;
                             if (j4 + 4611686018427387880L >= ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
                                 Object PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
                                 if (PngjBadSignature10 == null) {
@@ -897,7 +896,7 @@ final class getL1Score extends getL3Score {
                     if (context2 != null) {
                         if (context2 instanceof ContextWrapper) {
                             int i61 = destroy + 15;
-                            pfkrolfinalizeF = i61 % Uuid.SIZE_BITS;
+                            pfkrolfinalizeF = i61 % 128;
                             if (i61 % 2 == 0) {
                                 ((ContextWrapper) context2).getBaseContext();
                                 throw null;
@@ -1001,10 +1000,10 @@ final class getL1Score extends getL3Score {
         this.getL1Score = (com.identy.ui.PngjBadCrcException) this.Action.findViewById(R.id.scanner_overlay);
         try {
             if (!this.getL3Score) {
-                destroy = (pfkrolfinalizeF + 101) % Uuid.SIZE_BITS;
+                destroy = (pfkrolfinalizeF + 101) % 128;
                 if (IdentySdk.getInstance().getFingerPrintDrawable() == 0) {
                     int i4 = pfkrolfinalizeF + 55;
-                    destroy = i4 % Uuid.SIZE_BITS;
+                    destroy = i4 % 128;
                     if (i4 % 2 != 0) {
                         this.getL1Score.PngjBadSignature(this.a, 3.2d, 3.2d, 3.2d);
                         int i5 = 28 / 0;
@@ -1042,6 +1041,6 @@ final class getL1Score extends getL3Score {
         pngjBadCrcException.setLayerType(1, null);
         this.Action.runOnUiThread(new PngjBadCrcException());
         this.Capture2TActivity.valueOf = new PngjBadSignature();
-        destroy = (pfkrolfinalizeF + 35) % Uuid.SIZE_BITS;
+        destroy = (pfkrolfinalizeF + 35) % 128;
     }
 }

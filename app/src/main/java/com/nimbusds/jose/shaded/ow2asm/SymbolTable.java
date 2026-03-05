@@ -1,7 +1,6 @@
 package com.nimbusds.jose.shaded.ow2asm;
 
 import kotlin.jvm.internal.IntCompanionObject;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 final class SymbolTable {
@@ -386,13 +385,13 @@ final class SymbolTable {
     }
 
     public int addType(String str) {
-        int hash = hash(Uuid.SIZE_BITS, str);
+        int hash = hash(128, str);
         for (Entry entry = get(hash); entry != null; entry = entry.next) {
             if (entry.tag == 128 && entry.hashCode == hash && entry.value.equals(str)) {
                 return entry.index;
             }
         }
-        return addTypeInternal(new Entry(this.typeCount, Uuid.SIZE_BITS, str, hash));
+        return addTypeInternal(new Entry(this.typeCount, 128, str, hash));
     }
 
     public int addUninitializedType(String str, int i) {

@@ -31,7 +31,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class Verify4FActivity extends FingerActivity {
@@ -363,7 +362,7 @@ public class Verify4FActivity extends FingerActivity {
         char c;
         int i2;
         String str3 = str2;
-        $10 = ($11 + 21) % Uuid.SIZE_BITS;
+        $10 = ($11 + 21) % 128;
         byte[] bArr = str3;
         if (str3 != null) {
             bArr = str3.getBytes("ISO-8859-1");
@@ -374,7 +373,7 @@ public class Verify4FActivity extends FingerActivity {
         char[] cArr = valueOf;
         Class cls = Integer.TYPE;
         if (cArr != null) {
-            $10 = ($11 + 1) % Uuid.SIZE_BITS;
+            $10 = ($11 + 1) % 128;
             int length = cArr.length;
             char[] cArr2 = new char[length];
             int i3 = 0;
@@ -387,7 +386,7 @@ public class Verify4FActivity extends FingerActivity {
                     }
                     cArr2[i3] = ((Character) ((Method) PngjBadSignature).invoke(null, objArr2)).charValue();
                     i3++;
-                    $11 = ($10 + 49) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 49) % 128;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
                     if (cause == null) {
@@ -447,7 +446,7 @@ public class Verify4FActivity extends FingerActivity {
                 i5 = i2;
             }
         } else if (getFingerPrintQualityScore) {
-            $11 = ($10 + 33) % Uuid.SIZE_BITS;
+            $11 = ($10 + 33) % 128;
             int length3 = charArray.length;
             pngjExceptionInternal.PngjException = length3;
             char[] cArr4 = new char[length3];
@@ -459,7 +458,7 @@ public class Verify4FActivity extends FingerActivity {
                     objArr[0] = new String(cArr4);
                     return;
                 }
-                $11 = ($10 + 21) % Uuid.SIZE_BITS;
+                $11 = ($10 + 21) % 128;
                 cArr4[i9] = (char) (cArr[charArray[(i10 - 1) - i9] - i] - intValue);
                 Object[] objArr5 = new Object[i6];
                 objArr5[c] = pngjExceptionInternal;
@@ -511,7 +510,7 @@ public class Verify4FActivity extends FingerActivity {
         FingerMatchSecLevel fingerMatchSecLevel;
         long j;
         int i = getOveralTimetaken + 53;
-        getNfiq1Score = i % Uuid.SIZE_BITS;
+        getNfiq1Score = i % 128;
         if (i % 2 != 0) {
             super.PngjException(hashMap, hashMap2, bitmap, z, z2);
             throw null;
@@ -520,7 +519,7 @@ public class Verify4FActivity extends FingerActivity {
         if (z && this.getAsHighestSecurityLevelReached) {
             try {
                 this.onErrorResponse.PngjException(R.string.id_finger_matching);
-                getOveralTimetaken = (getNfiq1Score + 11) % Uuid.SIZE_BITS;
+                getOveralTimetaken = (getNfiq1Score + 11) % 128;
             } catch (Exception unused) {
             }
             Calendar.getInstance().getTimeInMillis();
@@ -528,7 +527,7 @@ public class Verify4FActivity extends FingerActivity {
                 FingerMatchSecLevel fingerMatchSecLevel2 = IdentySdk.getInstance().PngjOutputException;
                 this.PngjBadCrcException = 0;
                 long timeInMillis = Calendar.getInstance().getTimeInMillis();
-                getNfiq1Score = (getOveralTimetaken + 99) % Uuid.SIZE_BITS;
+                getNfiq1Score = (getOveralTimetaken + 99) % 128;
                 for (Map.Entry<Pair<Hand, Finger>, a> entry : hashMap.entrySet()) {
                     a value = entry.getValue();
                     try {
@@ -588,17 +587,17 @@ public class Verify4FActivity extends FingerActivity {
         try {
             try {
                 if (j != -1) {
-                    getNfiq1Score = (getOveralTimetaken + 111) % Uuid.SIZE_BITS;
+                    getNfiq1Score = (getOveralTimetaken + 111) % 128;
                     long j2 = j + 4611686018427387878L;
                     i = 864471691;
                     Object[] objArr2 = new Object[1];
-                    c(null, ImageFormat.getBitsPerPixel(0) + Uuid.SIZE_BITS, null, "\u0091\u0090\u0085\u008f\u008e\u008d\u008c\u008b\u0088\u008a\u0089\u0087\u0088\u0085\u0087\u0083\u0086\u0085\u0084\u0083\u0082\u0081", objArr2);
+                    c(null, ImageFormat.getBitsPerPixel(0) + 128, null, "\u0091\u0090\u0085\u008f\u008e\u008d\u008c\u008b\u0088\u008a\u0089\u0087\u0088\u0085\u0087\u0083\u0086\u0085\u0084\u0083\u0082\u0081", objArr2);
                     Class<?> cls = Class.forName((String) objArr2[0]);
                     f = 0.0f;
                     Object[] objArr3 = new Object[1];
                     c(null, (ViewConfiguration.getScrollDefaultDelay() >> 16) + 127, null, "\u008c\u008d\u0086\u008b\u008f\u0081\u008c\u0093\u0083\u008c\u0088\u0092\u0081\u008f\u008c", objArr3);
                     if (j2 >= ((Long) cls.getDeclaredMethod((String) objArr3[0], null).invoke(null, null)).longValue()) {
-                        getOveralTimetaken = (getNfiq1Score + 77) % Uuid.SIZE_BITS;
+                        getOveralTimetaken = (getNfiq1Score + 77) % 128;
                         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                         if (PngjBadSignature2 == null) {
                             char indexOf = (char) (TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0') + 14831);
@@ -619,7 +618,7 @@ public class Verify4FActivity extends FingerActivity {
                         int i6 = c2 ^ (c2 << 13);
                         int i7 = i6 ^ (i6 >>> 17);
                         ((int[]) values$1eba2e16[1])[0] = i7 ^ (i7 << 5);
-                        getOveralTimetaken = (getNfiq1Score + 77) % Uuid.SIZE_BITS;
+                        getOveralTimetaken = (getNfiq1Score + 77) % 128;
                         if (((int[]) values$1eba2e16[3])[0] != ((int[]) values$1eba2e16[0])[0]) {
                             Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
                             int i8 = ((int[]) values$1eba2e16[1])[0];
@@ -640,7 +639,7 @@ public class Verify4FActivity extends FingerActivity {
                         }
                         while (i2 < strArr3.length) {
                             int i13 = getNfiq1Score + 113;
-                            getOveralTimetaken = i13 % Uuid.SIZE_BITS;
+                            getOveralTimetaken = i13 % 128;
                             if (i13 % 2 == 0) {
                                 arrayList.add(strArr3[i2]);
                                 i2 += 123;
@@ -720,22 +719,22 @@ public class Verify4FActivity extends FingerActivity {
             this.values = com.identy.f.PngjBadSignature.PngjException(IdentySdk.getInstance().getData, new FingerDetectionMode[]{this.PngjExceptionInternal}, B);
             if (!isEnrolled) {
                 int i = getNfiq1Score + 117;
-                getOveralTimetaken = i % Uuid.SIZE_BITS;
+                getOveralTimetaken = i % 128;
                 (i % 2 == 0 ? Toast.makeText(this, "Fingers not registered .. please register first", 0) : Toast.makeText(this, "Fingers not registered .. please register first", 1)).show();
                 finish();
                 return;
             }
         } catch (Exception unused) {
         }
-        getNfiq1Score = (getOveralTimetaken + 95) % Uuid.SIZE_BITS;
+        getNfiq1Score = (getOveralTimetaken + 95) % 128;
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
-        getOveralTimetaken = (getNfiq1Score + 105) % Uuid.SIZE_BITS;
+        getOveralTimetaken = (getNfiq1Score + 105) % 128;
         super.onCreate(bundle);
         int i = getOveralTimetaken + 97;
-        getNfiq1Score = i % Uuid.SIZE_BITS;
+        getNfiq1Score = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -744,14 +743,14 @@ public class Verify4FActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
         int i = getNfiq1Score + 63;
-        getOveralTimetaken = i % Uuid.SIZE_BITS;
+        getOveralTimetaken = i % 128;
         int i2 = i % 2;
         super.onPause();
         if (i2 == 0) {
             int i3 = 20 / 0;
         }
         int i4 = getNfiq1Score + 19;
-        getOveralTimetaken = i4 % Uuid.SIZE_BITS;
+        getOveralTimetaken = i4 % 128;
         if (i4 % 2 == 0) {
             throw null;
         }
@@ -759,10 +758,10 @@ public class Verify4FActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
-        getNfiq1Score = (getOveralTimetaken + 53) % Uuid.SIZE_BITS;
+        getNfiq1Score = (getOveralTimetaken + 53) % 128;
         super.onResume();
         int i = getOveralTimetaken + 73;
-        getNfiq1Score = i % Uuid.SIZE_BITS;
+        getNfiq1Score = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -770,10 +769,10 @@ public class Verify4FActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
-        getOveralTimetaken = (getNfiq1Score + 27) % Uuid.SIZE_BITS;
+        getOveralTimetaken = (getNfiq1Score + 27) % 128;
         super.onStart();
         int i = getOveralTimetaken + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
-        getNfiq1Score = i % Uuid.SIZE_BITS;
+        getNfiq1Score = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -785,7 +784,7 @@ public class Verify4FActivity extends FingerActivity {
         try {
             try {
                 this.onErrorResponse = new getOveralTimetaken(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException, true);
-                getOveralTimetaken = (getNfiq1Score + 57) % Uuid.SIZE_BITS;
+                getOveralTimetaken = (getNfiq1Score + 57) % 128;
             } catch (Exception unused) {
             }
         } catch (Exception unused2) {

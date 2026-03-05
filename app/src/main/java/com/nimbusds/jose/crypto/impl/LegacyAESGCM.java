@@ -2,7 +2,6 @@ package com.nimbusds.jose.crypto.impl;
 
 import com.nimbusds.jose.JOSEException;
 import javax.crypto.SecretKey;
-import kotlin.uuid.Uuid;
 import org.bouncycastle.crypto.InvalidCipherTextException;
 import org.bouncycastle.crypto.engines.AESEngine;
 import org.bouncycastle.crypto.modes.GCMBlockCipher;
@@ -19,7 +18,7 @@ public abstract class LegacyAESGCM {
 
     private static GCMBlockCipher createAESGCMCipher(SecretKey secretKey, boolean z, byte[] bArr, byte[] bArr2) {
         GCMBlockCipher gCMBlockCipher = new GCMBlockCipher(createAESCipher(secretKey, z));
-        gCMBlockCipher.init(z, new AEADParameters(new KeyParameter(secretKey.getEncoded()), Uuid.SIZE_BITS, bArr, bArr2));
+        gCMBlockCipher.init(z, new AEADParameters(new KeyParameter(secretKey.getEncoded()), 128, bArr, bArr2));
         return gCMBlockCipher;
     }
 

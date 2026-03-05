@@ -27,7 +27,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class Enroll2IndexActivity extends FingerActivity {
@@ -298,7 +297,7 @@ public class Enroll2IndexActivity extends FingerActivity {
             i3 = i10;
             i4 = i11;
             i5 = 1618428774;
-            $10 = ($11 + 55) % Uuid.SIZE_BITS;
+            $10 = ($11 + 55) % 128;
             iArr2 = iArr3;
         } else {
             i2 = 2;
@@ -346,7 +345,7 @@ public class Enroll2IndexActivity extends FingerActivity {
                 objArr[0] = new String(cArr3, 0, i);
                 return;
             }
-            $10 = ($11 + 29) % Uuid.SIZE_BITS;
+            $10 = ($11 + 29) % 128;
             int i15 = iArr[i14];
             char c = (char) (i15 >> 16);
             cArr4[0] = c;
@@ -359,7 +358,7 @@ public class Enroll2IndexActivity extends FingerActivity {
             pngBadCharsetException.PngjException = (c << 16) + c2;
             pngBadCharsetException.PngjBadCrcException = (c3 << 16) + c4;
             com.d.e.PngBadCharsetException.values(iArr4);
-            $10 = ($11 + 37) % Uuid.SIZE_BITS;
+            $10 = ($11 + 37) % 128;
             int i16 = 0;
             while (i16 < i3) {
                 int i17 = pngBadCharsetException.PngjException ^ iArr4[i16];
@@ -429,13 +428,13 @@ public class Enroll2IndexActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
     public final void PngjBadSignature(List<HashMap<Pair<Hand, Finger>, a>> list, boolean z, boolean z2, HashMap<Pair<Hand, Finger>, Float> hashMap) {
         int i = getScore;
-        getFingerPrintQualityScore = (i + 123) % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = (i + 123) % 128;
         this.valueOf = 0;
         if (z) {
             this.valueOf = 1;
             super.PngjBadSignature(list, z, z2, hashMap);
         } else {
-            getFingerPrintQualityScore = (i + 97) % Uuid.SIZE_BITS;
+            getFingerPrintQualityScore = (i + 97) % 128;
             super.PngjBadSignature(list, z, z2, hashMap);
         }
     }
@@ -447,7 +446,7 @@ public class Enroll2IndexActivity extends FingerActivity {
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0026, code lost:
     
         r4 = com.identy.Enroll2IndexActivity.getScore + 35;
-        com.identy.Enroll2IndexActivity.getFingerPrintQualityScore = r4 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.Enroll2IndexActivity.getFingerPrintQualityScore = r4 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0030, code lost:
     
@@ -497,7 +496,7 @@ public class Enroll2IndexActivity extends FingerActivity {
         HashMap<Pair<Hand, Finger>, a> hashMap4;
         Enroll2IndexActivity enroll2IndexActivity;
         int i = getFingerPrintQualityScore + 95;
-        getScore = i % Uuid.SIZE_BITS;
+        getScore = i % 128;
         if (i % 2 != 0) {
             this.valueOf = 1;
             super.PngjException(hashMap, hashMap2, bitmap, z, z2);
@@ -589,7 +588,7 @@ public class Enroll2IndexActivity extends FingerActivity {
                             if (strArr2 != null) {
                                 while (i4 < strArr2.length) {
                                     int i9 = getScore + 21;
-                                    getFingerPrintQualityScore = i9 % Uuid.SIZE_BITS;
+                                    getFingerPrintQualityScore = i9 % 128;
                                     if (i9 % 2 == 0) {
                                         arrayList.add(strArr2[i4]);
                                         i4 += 65;
@@ -601,7 +600,7 @@ public class Enroll2IndexActivity extends FingerActivity {
                             }
                             throw new RuntimeException(String.valueOf(i3));
                         }
-                        getScore = (getFingerPrintQualityScore + 35) % Uuid.SIZE_BITS;
+                        getScore = (getFingerPrintQualityScore + 35) % 128;
                         Object[] objArr7 = {new int[]{r7}, new int[1], r1, new int[]{r6}};
                         int i10 = ((int[]) objArr[1])[0];
                         int i11 = ((int[]) objArr[3])[0];
@@ -685,18 +684,18 @@ public class Enroll2IndexActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
-        getScore = (getFingerPrintQualityScore + 9) % Uuid.SIZE_BITS;
+        getScore = (getFingerPrintQualityScore + 9) % 128;
         super.onCreate(bundle);
         this.valueOf = 0;
-        getScore = (getFingerPrintQualityScore + 53) % Uuid.SIZE_BITS;
+        getScore = (getFingerPrintQualityScore + 53) % 128;
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
-        getScore = (getFingerPrintQualityScore + 31) % Uuid.SIZE_BITS;
+        getScore = (getFingerPrintQualityScore + 31) % 128;
         super.onPause();
         int i = getScore + 95;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -704,10 +703,10 @@ public class Enroll2IndexActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
-        getFingerPrintQualityScore = (getScore + 79) % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = (getScore + 79) % 128;
         super.onResume();
         int i = getFingerPrintQualityScore + 49;
-        getScore = i % Uuid.SIZE_BITS;
+        getScore = i % 128;
         if (i % 2 != 0) {
             int i2 = 81 / 0;
         }
@@ -715,10 +714,10 @@ public class Enroll2IndexActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
-        getFingerPrintQualityScore = (getScore + 59) % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = (getScore + 59) % 128;
         super.onStart();
         int i = getFingerPrintQualityScore + 77;
-        getScore = i % Uuid.SIZE_BITS;
+        getScore = i % 128;
         if (i % 2 != 0) {
             int i2 = 39 / 0;
         }
@@ -731,7 +730,7 @@ public class Enroll2IndexActivity extends FingerActivity {
             try {
                 this.onErrorResponse = new setFingers(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
                 int i = getFingerPrintQualityScore + 17;
-                getScore = i % Uuid.SIZE_BITS;
+                getScore = i % 128;
                 if (i % 2 != 0) {
                     int i2 = 79 / 0;
                 }

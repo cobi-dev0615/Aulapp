@@ -8,7 +8,6 @@ import com.identy.ex.PostCaptureOutPut;
 import defpackage.a;
 import java.lang.reflect.Method;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -154,7 +153,7 @@ public class Captures3Meta {
                         int i5 = -(i3 * (-1987320192));
                         int i6 = ((i4 | i5) << 1) - (i5 ^ i4);
                         int i7 = (i6 ^ 1963013049) + ((1963013049 & i6) << 1);
-                        int i8 = ((i7 >> 25) - 255) / Uuid.SIZE_BITS;
+                        int i8 = ((i7 >> 25) - 255) / 128;
                         int i9 = (i8 & 1) + (i8 | 1);
                         int i10 = (i7 ^ i9) + ((i9 & i7) << 1);
                         int i11 = i7 >> 20;
@@ -180,7 +179,7 @@ public class Captures3Meta {
                 int i52 = -(i32 * (-1987320192));
                 int i62 = ((i42 | i52) << 1) - (i52 ^ i42);
                 int i72 = (i62 ^ 1963013049) + ((1963013049 & i62) << 1);
-                int i82 = ((i72 >> 25) - 255) / Uuid.SIZE_BITS;
+                int i82 = ((i72 >> 25) - 255) / 128;
                 int i92 = (i82 & 1) + (i82 | 1);
                 int i102 = (i72 ^ i92) + ((i92 & i72) << 1);
                 int i112 = i72 >> 20;

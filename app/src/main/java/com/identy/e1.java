@@ -84,7 +84,6 @@ import java.util.Objects;
 import java.util.concurrent.Executor;
 import kotlin.io.ConstantsKt;
 import kotlin.jvm.internal.LongCompanionObject;
-import kotlin.uuid.Uuid;
 import org.camera.preview.PngjBadCrcException;
 import org.cameracontroller.PngjBadSignature;
 import org.identy.opencv.android.Utils;
@@ -723,7 +722,7 @@ public class e1 extends BroadcastReceiver {
                 char[] cArr2 = new char[length];
                 int i8 = 0;
                 while (i8 < length) {
-                    $11 = ($10 + 67) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 67) % 128;
                     try {
                         Object[] objArr2 = {Integer.valueOf(cArr[i8])};
                         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i6);
@@ -857,7 +856,7 @@ public class e1 extends BroadcastReceiver {
                             int i17 = pngjInputException.PngjBadSignature;
                             int i18 = pngjInputException.PngjBadCrcException;
                             if (i17 == i18) {
-                                $10 = ($11 + 125) % Uuid.SIZE_BITS;
+                                $10 = ($11 + 125) % 128;
                                 int i19 = i3;
                                 int C = x5.C(pngjInputException.PngjOutputException, charValue, i19, charValue);
                                 pngjInputException.PngjOutputException = C;
@@ -909,7 +908,7 @@ public class e1 extends BroadcastReceiver {
                     break;
                 }
                 int i3 = $10 + 89;
-                $11 = i3 % Uuid.SIZE_BITS;
+                $11 = i3 % 128;
                 int i4 = i3 % 2;
                 Class cls = Integer.TYPE;
                 if (i4 == 0) {
@@ -975,7 +974,7 @@ public class e1 extends BroadcastReceiver {
                     return;
                 }
                 int i6 = $11 + 25;
-                $10 = i6 % Uuid.SIZE_BITS;
+                $10 = i6 % 128;
                 if (i6 % 2 != 0) {
                     cArr[i5] = (char) jArr[i5];
                     Object[] objArr6 = {pngjUnsupportedException, pngjUnsupportedException};
@@ -1068,9 +1067,9 @@ public class e1 extends BroadcastReceiver {
 
         @Override // java.lang.Runnable
         public void run() {
-            PngjUnsupportedException = (PngjInputException + 105) % Uuid.SIZE_BITS;
+            PngjUnsupportedException = (PngjInputException + 105) % 128;
             this.PngjBadCrcException.run();
-            PngjInputException = (PngjUnsupportedException + 111) % Uuid.SIZE_BITS;
+            PngjInputException = (PngjUnsupportedException + 111) % 128;
         }
     }
 
@@ -1227,7 +1226,7 @@ public class e1 extends BroadcastReceiver {
         getPadSub2();
         PngjUnsupportedException = Calendar.getInstance().getTimeInMillis();
         resetAttempt = new long[]{500, 500};
-        getPersonSelected = (getKey + 105) % Uuid.SIZE_BITS;
+        getPersonSelected = (getKey + 105) % 128;
     }
 
     public e1(Activity activity, boolean z, FingerDetectionMode fingerDetectionMode, boolean z2, boolean z3) {
@@ -1288,7 +1287,7 @@ public class e1 extends BroadcastReceiver {
 
     private void Attempt() {
         int i = getClassForDetection + 123;
-        markIntroSetting = i % Uuid.SIZE_BITS;
+        markIntroSetting = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -1297,16 +1296,16 @@ public class e1 extends BroadcastReceiver {
             countDownTimer.cancel();
             this.setFingers = ((this.generateT * 1000) - this.DeduplicationIdentyResponse) - this.setFingers;
             this.pfkrolChangeMinMaxWidth = null;
-            markIntroSetting = (getClassForDetection + 5) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 5) % 128;
         }
     }
 
     private static /* synthetic */ Object PngjBadCrcException(Object[] objArr) {
         e1 e1Var = (e1) objArr[0];
-        getClassForDetection = (markIntroSetting + 51) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 51) % 128;
         e1Var.configureroll.vibrate(VibrationEffect.createWaveform(resetAttempt, -1));
         int i = markIntroSetting + 15;
-        getClassForDetection = i % Uuid.SIZE_BITS;
+        getClassForDetection = i % 128;
         if (i % 2 == 0) {
             return null;
         }
@@ -1315,7 +1314,7 @@ public class e1 extends BroadcastReceiver {
 
     public static long PngjException(Activity activity) {
         if (values == 0) {
-            markIntroSetting = (getClassForDetection + 61) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 61) % 128;
             try {
                 int values2 = com.identy.i.PngjPrematureEnding.values();
                 int values3 = com.identy.i.PngjPrematureEnding.values();
@@ -1325,7 +1324,7 @@ public class e1 extends BroadcastReceiver {
             }
         }
         long j = values;
-        getClassForDetection = (markIntroSetting + 37) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 37) % 128;
         return j;
     }
 
@@ -1421,7 +1420,7 @@ public class e1 extends BroadcastReceiver {
         int i6 = 0;
         if (cArr2 != null) {
             int i7 = $11 + 69;
-            int i8 = i7 % Uuid.SIZE_BITS;
+            int i8 = i7 % 128;
             $10 = i8;
             if (i7 % 2 != 0) {
                 length = cArr2.length;
@@ -1430,7 +1429,7 @@ public class e1 extends BroadcastReceiver {
                 length = cArr2.length;
                 cArr = new char[length];
             }
-            $11 = (i8 + 65) % Uuid.SIZE_BITS;
+            $11 = (i8 + 65) % 128;
             int i9 = 0;
             while (i9 < length) {
                 try {
@@ -1494,7 +1493,7 @@ public class e1 extends BroadcastReceiver {
                 char c9 = charArray[i12 + 1];
                 pngjInputException.PngjException = c9;
                 if (c8 == c9) {
-                    $11 = ($10 + 53) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 53) % 128;
                     cArr3[i12] = (char) (c8 - b);
                     cArr3[i12 + 1] = (char) (c9 - b);
                     f = f2;
@@ -1538,7 +1537,7 @@ public class e1 extends BroadcastReceiver {
                     int intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
                     int i13 = pngjInputException.PngjUnsupportedException;
                     if (intValue == i13) {
-                        $11 = ($10 + 33) % Uuid.SIZE_BITS;
+                        $11 = ($10 + 33) % 128;
                         Object[] objArr5 = new Object[11];
                         objArr5[c] = pngjInputException;
                         objArr5[c2] = Integer.valueOf(charValue);
@@ -1589,7 +1588,7 @@ public class e1 extends BroadcastReceiver {
                     }
                 }
                 pngjInputException.values += 2;
-                $11 = ($10 + 111) % Uuid.SIZE_BITS;
+                $11 = ($10 + 111) % 128;
                 f2 = f;
             }
         }
@@ -1598,7 +1597,7 @@ public class e1 extends BroadcastReceiver {
         }
         String str2 = new String(cArr3);
         int i25 = $11 + 75;
-        $10 = i25 % Uuid.SIZE_BITS;
+        $10 = i25 % 128;
         if (i25 % 2 != 0) {
             throw null;
         }
@@ -1607,7 +1606,7 @@ public class e1 extends BroadcastReceiver {
 
     private int[] getData() {
         int i = markIntroSetting + 17;
-        getClassForDetection = i % Uuid.SIZE_BITS;
+        getClassForDetection = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -1615,7 +1614,7 @@ public class e1 extends BroadcastReceiver {
             int[] iArr = this.generateID;
             ImageUtils.valueOf(((byte[][]) this.getAttempts.clone())[0], this.getIdentyQuality, this.markIntroShown, iArr);
             this.generateID = iArr;
-            markIntroSetting = (getClassForDetection + 105) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 105) % 128;
         }
         this.getTemplates = false;
         return this.generateID;
@@ -1640,7 +1639,7 @@ public class e1 extends BroadcastReceiver {
             String readLine = bufferedReader.readLine();
             if (readLine != null) {
                 int i = getClassForDetection + 5;
-                markIntroSetting = i % Uuid.SIZE_BITS;
+                markIntroSetting = i % 128;
                 if (i % 2 == 0) {
                     sb.append(readLine);
                     sb.append(property);
@@ -1657,13 +1656,13 @@ public class e1 extends BroadcastReceiver {
             }
         }
         Runtime.getRuntime().exec(new String[]{"logcat", "-c"});
-        markIntroSetting = (getClassForDetection + 17) % Uuid.SIZE_BITS;
+        markIntroSetting = (getClassForDetection + 17) % 128;
         return sb.toString();
     }
 
     private void getScore() {
         int i = getClassForDetection + 73;
-        markIntroSetting = i % Uuid.SIZE_BITS;
+        markIntroSetting = i % 128;
         try {
             if (i % 2 == 0) {
                 this.pfkrolfinalize.iterator();
@@ -1672,7 +1671,7 @@ public class e1 extends BroadcastReceiver {
             Iterator it = this.pfkrolfinalize.iterator();
             while (it.hasNext()) {
                 int i2 = markIntroSetting + 61;
-                getClassForDetection = i2 % Uuid.SIZE_BITS;
+                getClassForDetection = i2 % 128;
                 if (i2 % 2 != 0) {
                     Mat.n_release(((Mat) it.next()).PngjException);
                     throw null;
@@ -1718,7 +1717,7 @@ public class e1 extends BroadcastReceiver {
         if (!activityManager.isLowRamDevice() && Runtime.getRuntime().availableProcessors() > 4) {
             if (activityManager.getMemoryClass() < 193) {
                 int i2 = markIntroSetting + 33;
-                getClassForDetection = i2 % Uuid.SIZE_BITS;
+                getClassForDetection = i2 % 128;
                 if (i2 % 2 == 0) {
                 }
                 while (!PngjException) {
@@ -1731,13 +1730,13 @@ public class e1 extends BroadcastReceiver {
                 if (z) {
                     if (d > 3.8d) {
                         int i3 = markIntroSetting + 3;
-                        getClassForDetection = i3 % Uuid.SIZE_BITS;
+                        getClassForDetection = i3 % 128;
                         if (i3 % 2 == 0 ? configure < 200 : configure < 27808) {
                             return PngjBadCrcException.PngjBadSignature.HIGH;
                         }
                     }
                     if (d >= 3.0d) {
-                        getClassForDetection = (markIntroSetting + 121) % Uuid.SIZE_BITS;
+                        getClassForDetection = (markIntroSetting + 121) % 128;
                         if (configure < 300) {
                             return PngjBadCrcException.PngjBadSignature.MEDIUM;
                         }
@@ -1745,13 +1744,13 @@ public class e1 extends BroadcastReceiver {
                 }
                 PngjBadCrcException.PngjBadSignature pngjBadSignature = PngjBadCrcException.PngjBadSignature.LOW;
                 i = markIntroSetting + 77;
-                getClassForDetection = i % Uuid.SIZE_BITS;
+                getClassForDetection = i % 128;
                 if (i % 2 != 0) {
                     int i4 = 69 / 0;
                 }
                 return pngjBadSignature;
             }
-            getClassForDetection = (markIntroSetting + 13) % Uuid.SIZE_BITS;
+            getClassForDetection = (markIntroSetting + 13) % 128;
             z = true;
             while (!PngjException) {
             }
@@ -1759,7 +1758,7 @@ public class e1 extends BroadcastReceiver {
             }
             PngjBadCrcException.PngjBadSignature pngjBadSignature2 = PngjBadCrcException.PngjBadSignature.LOW;
             i = markIntroSetting + 77;
-            getClassForDetection = i % Uuid.SIZE_BITS;
+            getClassForDetection = i % 128;
             if (i % 2 != 0) {
             }
             return pngjBadSignature2;
@@ -1771,7 +1770,7 @@ public class e1 extends BroadcastReceiver {
         }
         PngjBadCrcException.PngjBadSignature pngjBadSignature22 = PngjBadCrcException.PngjBadSignature.LOW;
         i = markIntroSetting + 77;
-        getClassForDetection = i % Uuid.SIZE_BITS;
+        getClassForDetection = i % 128;
         if (i % 2 != 0) {
         }
         return pngjBadSignature22;
@@ -1810,7 +1809,7 @@ public class e1 extends BroadcastReceiver {
         values = ((Long) uxd565jj[0]).longValue();
         if (((Integer) uxd565jj[1]).intValue() != 0) {
             int i23 = markIntroSetting + 109;
-            getClassForDetection = i23 % Uuid.SIZE_BITS;
+            getClassForDetection = i23 % 128;
             i7 = i23 % 2 != 0 ? ((Integer) uxd565jj[1]).intValue() : ((Integer) uxd565jj[1]).intValue();
         } else {
             i7 = configure;
@@ -1821,12 +1820,12 @@ public class e1 extends BroadcastReceiver {
                 i8 = ((Integer) uxd565jj[2]).intValue();
             } else {
                 i8 = PngjBadSignature;
-                markIntroSetting = (getClassForDetection + 21) % Uuid.SIZE_BITS;
+                markIntroSetting = (getClassForDetection + 21) % 128;
             }
             PngjBadSignature = i8;
             if (((Integer) uxd565jj[3]).intValue() != 0) {
                 i9 = ((Integer) uxd565jj[3]).intValue();
-                markIntroSetting = (getClassForDetection + 7) % Uuid.SIZE_BITS;
+                markIntroSetting = (getClassForDetection + 7) % 128;
             } else {
                 i9 = pfkrol;
             }
@@ -1844,7 +1843,7 @@ public class e1 extends BroadcastReceiver {
         List<RectF> PngjException2;
         int i;
         int i2 = getClassForDetection + 59;
-        markIntroSetting = i2 % Uuid.SIZE_BITS;
+        markIntroSetting = i2 % 128;
         if (i2 % 2 == 0) {
             PngjException2 = PngjException();
             i = 1;
@@ -1854,7 +1853,7 @@ public class e1 extends BroadcastReceiver {
         }
         RectF rectF = PngjException2.get(i);
         int i3 = markIntroSetting + 31;
-        getClassForDetection = i3 % Uuid.SIZE_BITS;
+        getClassForDetection = i3 % 128;
         if (i3 % 2 == 0) {
             return rectF;
         }
@@ -1888,7 +1887,7 @@ public class e1 extends BroadcastReceiver {
                         long timeInMillis4 = Calendar.getInstance().getTimeInMillis();
                         Mat mat = this.getFingerPrintQualityScore;
                         if (mat != null && !Mat.n_empty(mat.PngjException)) {
-                            getClassForDetection = (markIntroSetting + 37) % Uuid.SIZE_BITS;
+                            getClassForDetection = (markIntroSetting + 37) % 128;
                             Mat.n_release(this.getFingerPrintQualityScore.PngjException);
                         }
                         Mat mat2 = new Mat();
@@ -1898,7 +1897,7 @@ public class e1 extends BroadcastReceiver {
                         timeInMillis = Calendar.getInstance().getTimeInMillis();
                         if (!createBitmap.isRecycled()) {
                             int i2 = getClassForDetection + 39;
-                            markIntroSetting = i2 % Uuid.SIZE_BITS;
+                            markIntroSetting = i2 % 128;
                             if (i2 % 2 == 0) {
                                 createBitmap.recycle();
                                 throw null;
@@ -1917,7 +1916,7 @@ public class e1 extends BroadcastReceiver {
                         bitmap = createBitmap;
                         if (bitmap != null && !bitmap.isRecycled()) {
                             int i3 = markIntroSetting + 73;
-                            getClassForDetection = i3 % Uuid.SIZE_BITS;
+                            getClassForDetection = i3 % 128;
                             if (i3 % 2 != 0) {
                                 bitmap.recycle();
                                 int i4 = 28 / 0;
@@ -1934,13 +1933,13 @@ public class e1 extends BroadcastReceiver {
             } else {
                 int i5 = markIntroSetting;
                 int i6 = i5 + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
-                getClassForDetection = i6 % Uuid.SIZE_BITS;
+                getClassForDetection = i6 % 128;
                 if (i6 % 2 != 0) {
                     throw null;
                 }
                 Mat mat3 = this.getFingerPrintQualityScore;
                 if (mat3 != null) {
-                    getClassForDetection = (i5 + 45) % Uuid.SIZE_BITS;
+                    getClassForDetection = (i5 + 45) % 128;
                     if (!Mat.n_empty(mat3.PngjException)) {
                         Mat.n_release(this.getFingerPrintQualityScore.PngjException);
                     }
@@ -1954,7 +1953,7 @@ public class e1 extends BroadcastReceiver {
             }
             String str = Build.MANUFACTURER;
             if (!str.toUpperCase().contains("HYUNDAI")) {
-                markIntroSetting = (getClassForDetection + 59) % Uuid.SIZE_BITS;
+                markIntroSetting = (getClassForDetection + 59) % 128;
                 if (!str.toUpperCase().trim().contains("LAXTON")) {
                 }
             }
@@ -1977,7 +1976,7 @@ public class e1 extends BroadcastReceiver {
      */
     /* JADX WARN: Code restructure failed: missing block: B:76:0x0041, code lost:
     
-        com.identy.e1.getClassForDetection = (com.identy.e1.markIntroSetting + 89) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.e1.getClassForDetection = (com.identy.e1.markIntroSetting + 89) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:78:0x0051, code lost:
     
@@ -2008,7 +2007,7 @@ public class e1 extends BroadcastReceiver {
         JSONObject jSONObject;
         String obj;
         int i = getClassForDetection + 3;
-        markIntroSetting = i % Uuid.SIZE_BITS;
+        markIntroSetting = i % 128;
         try {
             if (i % 2 == 0) {
                 packageName = this.Action.getApplicationContext().getPackageName();
@@ -2097,7 +2096,7 @@ public class e1 extends BroadcastReceiver {
     public Pair[] PngjExceptionInternal() {
         Pair[] pairArr = {new Pair(this.a, Finger.INDEX), new Pair(this.a, Finger.MIDDLE), new Pair(this.a, Finger.RING), new Pair(this.a, Finger.LITTLE), new Pair(this.a, Finger.THUMB)};
         int i = getClassForDetection + 121;
-        markIntroSetting = i % Uuid.SIZE_BITS;
+        markIntroSetting = i % 128;
         if (i % 2 == 0) {
             int i2 = 61 / 0;
         }
@@ -2119,7 +2118,7 @@ public class e1 extends BroadcastReceiver {
         }
         try {
             if (this.Attempt != null) {
-                markIntroSetting = (getClassForDetection + 121) % Uuid.SIZE_BITS;
+                markIntroSetting = (getClassForDetection + 121) % 128;
                 if (bArr.length < 100) {
                     values(new Object[]{this}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                     this.Attempt.PngjBadSignature(null, false, false, null);
@@ -2133,7 +2132,7 @@ public class e1 extends BroadcastReceiver {
             long timeInMillis2 = Calendar.getInstance().getTimeInMillis();
             String str = Build.MANUFACTURER;
             if (!str.toUpperCase().contains("HYUNDAI") && !str.toUpperCase().trim().contains("LAXTON") && !str.toUpperCase().trim().contains("ZEBRA")) {
-                getClassForDetection = (markIntroSetting + 69) % Uuid.SIZE_BITS;
+                getClassForDetection = (markIntroSetting + 69) % 128;
                 if (!str.toUpperCase().trim().contains("INGENICO")) {
                 }
             }
@@ -2181,9 +2180,9 @@ public class e1 extends BroadcastReceiver {
         Attempt();
         Mat mat = this.getFingerPrintQualityScore;
         if (mat != null) {
-            markIntroSetting = (getClassForDetection + 103) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 103) % 128;
             if (!Mat.n_empty(mat.PngjException)) {
-                markIntroSetting = (getClassForDetection + 125) % Uuid.SIZE_BITS;
+                markIntroSetting = (getClassForDetection + 125) % 128;
                 Mat mat2 = this.addEncryptedTemplates;
                 if (mat2 != null && !Mat.n_empty(mat2.PngjException)) {
                     Mat.n_release(this.addEncryptedTemplates.PngjException);
@@ -2205,7 +2204,7 @@ public class e1 extends BroadcastReceiver {
         this.e1 = sb.toString();
         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
         if (pngjBadSignature != null) {
-            markIntroSetting = (getClassForDetection + 29) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 29) % 128;
             pngjBadSignature.getAsHighestSecurityLevelReached();
         }
     }
@@ -2225,7 +2224,7 @@ public class e1 extends BroadcastReceiver {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final byte[] PngjPrematureEnding() {
-        getClassForDetection = (markIntroSetting + 79) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 79) % 128;
         Bitmap.CompressFormat compressFormat = Bitmap.CompressFormat.JPEG;
         try {
             compressFormat = IdentySdk.getInstance().getGimageformat();
@@ -2242,21 +2241,21 @@ public class e1 extends BroadcastReceiver {
         Mat mat2 = new Mat(Mat.n_clone(this.addEncryptedTemplates.PngjException));
         try {
             if (this.CaptureThumbActivity) {
-                getClassForDetection = (markIntroSetting + 117) % Uuid.SIZE_BITS;
+                getClassForDetection = (markIntroSetting + 117) % 128;
                 if (Mat.n_cols(mat2.PngjException) > Mat.n_rows(mat2.PngjException)) {
                     int i = getClassForDetection + 23;
-                    markIntroSetting = i % Uuid.SIZE_BITS;
+                    markIntroSetting = i % 128;
                     int i2 = i % 2;
                     Core.valueOf(mat2, mat2, 0);
                     if (this.Action.getApplicationContext().getPackageName().contains("identy")) {
                         int i3 = getClassForDetection + 19;
-                        markIntroSetting = i3 % Uuid.SIZE_BITS;
+                        markIntroSetting = i3 % 128;
                         if (i3 % 2 == 0) {
                             IdentySdk.getInstance().getAttackS();
                             throw null;
                         }
                         IdentySdk.getInstance().getAttackS();
-                        markIntroSetting = (getClassForDetection + 29) % Uuid.SIZE_BITS;
+                        markIntroSetting = (getClassForDetection + 29) % 128;
                     }
                     if (Mat.n_cols(mat2.PngjException) != 480) {
                         Imgproc.valueOf(mat2, mat2, new org.identy.opencv.core.valueOf(480.0d, 640.0d));
@@ -2293,7 +2292,7 @@ public class e1 extends BroadcastReceiver {
             throw new RuntimeException(e2);
         }
         if (!this.CaptureThumbActivity && Mat.n_cols(mat2.PngjException) < Mat.n_rows(mat2.PngjException)) {
-            getClassForDetection = (markIntroSetting + 63) % Uuid.SIZE_BITS;
+            getClassForDetection = (markIntroSetting + 63) % 128;
             Core.valueOf(mat2, mat2, 0);
         }
     }
@@ -2336,7 +2335,7 @@ public class e1 extends BroadcastReceiver {
      */
     /* JADX WARN: Code restructure failed: missing block: B:66:0x0149, code lost:
     
-        com.identy.e1.getClassForDetection = (com.identy.e1.markIntroSetting + 43) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.e1.getClassForDetection = (com.identy.e1.markIntroSetting + 43) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:67:0x011f, code lost:
     
@@ -2374,7 +2373,7 @@ public class e1 extends BroadcastReceiver {
         boolean z3;
         boolean z4;
         if (!this.PngBadCharsetException && !this.getCaptureTime) {
-            markIntroSetting = (getClassForDetection + 23) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 23) % 128;
             if (!this.onErrorResponse && this.DeduplicationIdentyResponse < 110) {
                 try {
                     action = IdentySdk.getInstance().e;
@@ -2386,7 +2385,7 @@ public class e1 extends BroadcastReceiver {
                         IdentySdk identySdk = IdentySdk.getInstance();
                         if (identySdk.isDisplayTransactionAlerts()) {
                             if (this.PngjExceptionInternal.size() > 0) {
-                                markIntroSetting = (getClassForDetection + 89) % Uuid.SIZE_BITS;
+                                markIntroSetting = (getClassForDetection + 89) % 128;
                                 z = this.PngjExceptionInternal.contains(getPadSub2.AS);
                             } else {
                                 z = false;
@@ -2395,7 +2394,7 @@ public class e1 extends BroadcastReceiver {
                             int intValue2 = identySdk.c(this.CapturePosition).intValue();
                             if (identySdk.isEnableSkip()) {
                                 int i2 = markIntroSetting + 37;
-                                getClassForDetection = i2 % Uuid.SIZE_BITS;
+                                getClassForDetection = i2 % 128;
                                 if (i2 % 2 != 0) {
                                     throw null;
                                 }
@@ -2406,7 +2405,7 @@ public class e1 extends BroadcastReceiver {
                                 }
                                 if (z) {
                                     int i3 = getClassForDetection + 33;
-                                    markIntroSetting = i3 % Uuid.SIZE_BITS;
+                                    markIntroSetting = i3 % 128;
                                     if (i3 % 2 == 0) {
                                         int i4 = 61 / 0;
                                     } else {
@@ -2424,7 +2423,7 @@ public class e1 extends BroadcastReceiver {
                                 boolean PngBadCharsetException2 = ((FingerActivity) this.Action).PngBadCharsetException();
                                 if (!z3) {
                                     int i5 = markIntroSetting + 125;
-                                    getClassForDetection = i5 % Uuid.SIZE_BITS;
+                                    getClassForDetection = i5 % 128;
                                     if (i5 % 2 != 0) {
                                         if (!valueOf(false)) {
                                             z4 = true;
@@ -2438,7 +2437,7 @@ public class e1 extends BroadcastReceiver {
                                     }
                                     if (z4) {
                                         int i6 = getClassForDetection + 87;
-                                        markIntroSetting = i6 % Uuid.SIZE_BITS;
+                                        markIntroSetting = i6 % 128;
                                         if (i6 % 2 == 0) {
                                             int i7 = 26 / 0;
                                         }
@@ -2545,7 +2544,7 @@ public class e1 extends BroadcastReceiver {
         boolean z5 = this.PngBadCharsetException;
         if (!z5) {
             int i12 = getClassForDetection + 45;
-            markIntroSetting = i12 % Uuid.SIZE_BITS;
+            markIntroSetting = i12 % 128;
             if (i12 % 2 != 0 ? PngjOutputException == 0 : PngjOutputException == 1) {
                 PngjOutputException = Calendar.getInstance().getTimeInMillis();
             }
@@ -2555,7 +2554,7 @@ public class e1 extends BroadcastReceiver {
         }
         Activity activity2 = this.Action;
         if (activity2 != null) {
-            markIntroSetting = (getClassForDetection + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
             if (z5 && ((FingerActivity) activity2).getQualityScore()) {
                 return true;
             }
@@ -2577,7 +2576,7 @@ public class e1 extends BroadcastReceiver {
                 com.identy.d.PngjBadSignature pngjBadSignature3 = this.Attempt;
                 if (pngjBadSignature3 != null) {
                     pngjBadSignature3.getData();
-                    getClassForDetection = (markIntroSetting + 83) % Uuid.SIZE_BITS;
+                    getClassForDetection = (markIntroSetting + 83) % 128;
                 }
                 return true;
             }
@@ -2641,7 +2640,7 @@ public class e1 extends BroadcastReceiver {
         Object[] objArr2;
         long j3;
         int i2 = markIntroSetting + 11;
-        getClassForDetection = i2 % Uuid.SIZE_BITS;
+        getClassForDetection = i2 % 128;
         if (i2 % 2 != 0) {
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
             if (PngjBadSignature5 == null) {
@@ -2675,7 +2674,7 @@ public class e1 extends BroadcastReceiver {
                 objArr2 = new Object[1];
                 d("\u0018\n\t\u000e\u0000\u0017\u0011\n\u0018\u0000\n\f\u0000\u0006㘇", KeyEvent.normalizeMetaState(0) + 15, (byte) (TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0) + 9), objArr2);
                 if (j2 >= ((Long) cls.getDeclaredMethod((String) objArr2[0], null).invoke(null, null)).longValue()) {
-                    getClassForDetection = (markIntroSetting + 111) % Uuid.SIZE_BITS;
+                    getClassForDetection = (markIntroSetting + 111) % 128;
                     Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                     if (PngjBadSignature6 == null) {
                         char keyCodeFromString = (char) (KeyEvent.keyCodeFromString(BuildConfig.FLAVOR) + 14830);
@@ -2893,7 +2892,7 @@ public class e1 extends BroadcastReceiver {
                 while (i16 < strArr.length) {
                     arrayList.add(strArr[i16]);
                     i16++;
-                    getClassForDetection = (markIntroSetting + 19) % Uuid.SIZE_BITS;
+                    getClassForDetection = (markIntroSetting + 19) % 128;
                 }
             }
             Toast.makeText((Context) null, i10 / (((i10 - 1) * i10) % 2), 0).show();
@@ -2941,11 +2940,11 @@ public class e1 extends BroadcastReceiver {
         PngjPrematureEnding pngjPrematureEnding = new PngjPrematureEnding(j4);
         this.pfkrolChangeMinMaxWidth = pngjPrematureEnding;
         pngjPrematureEnding.start();
-        getClassForDetection = (markIntroSetting + 91) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 91) % 128;
     }
 
     public void e1() {
-        getClassForDetection = (markIntroSetting + 63) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 63) % 128;
         this.CaptureMode = 0L;
         Hand hand = this.a;
         Hand hand2 = Hand.LEFT;
@@ -2953,7 +2952,7 @@ public class e1 extends BroadcastReceiver {
             this.a = Hand.RIGHT;
         } else {
             this.a = hand2;
-            getClassForDetection = (markIntroSetting + 23) % Uuid.SIZE_BITS;
+            getClassForDetection = (markIntroSetting + 23) % 128;
         }
         Iterator it = this.pfkrolfinalize.iterator();
         while (it.hasNext()) {
@@ -2977,7 +2976,7 @@ public class e1 extends BroadcastReceiver {
         }
         try {
             this.isAuthSucess.setLength(0);
-            getClassForDetection = (markIntroSetting + 53) % Uuid.SIZE_BITS;
+            getClassForDetection = (markIntroSetting + 53) % 128;
         } catch (Exception unused2) {
         }
         try {
@@ -3006,7 +3005,7 @@ public class e1 extends BroadcastReceiver {
             }
             if (this.Action != null) {
                 int i = markIntroSetting + 107;
-                getClassForDetection = i % Uuid.SIZE_BITS;
+                getClassForDetection = i % 128;
                 if (i % 2 != 0) {
                     this.Action = null;
                     throw null;
@@ -3024,7 +3023,7 @@ public class e1 extends BroadcastReceiver {
             }
             if (this.Attempt != null) {
                 this.Attempt = null;
-                markIntroSetting = (getClassForDetection + 33) % Uuid.SIZE_BITS;
+                markIntroSetting = (getClassForDetection + 33) % 128;
             }
             if (this.toJson != null) {
                 this.toJson = null;
@@ -3034,7 +3033,7 @@ public class e1 extends BroadcastReceiver {
                 Iterator it = this.pfkrolfinalize.iterator();
                 while (it.hasNext()) {
                     int i2 = getClassForDetection + 91;
-                    markIntroSetting = i2 % Uuid.SIZE_BITS;
+                    markIntroSetting = i2 % 128;
                     if (i2 % 2 == 0) {
                         Mat.n_release(((Mat) it.next()).PngjException);
                         throw null;
@@ -3049,11 +3048,11 @@ public class e1 extends BroadcastReceiver {
     }
 
     public RectF onErrorResponse() {
-        markIntroSetting = (getClassForDetection + 25) % Uuid.SIZE_BITS;
+        markIntroSetting = (getClassForDetection + 25) % 128;
         RectF Action2 = Action();
         Action2.inset(-(Action2.width() * 0.3f), -(Action2.height() * 0.3f));
         int i = markIntroSetting + 113;
-        getClassForDetection = i % Uuid.SIZE_BITS;
+        getClassForDetection = i % 128;
         if (i % 2 == 0) {
             return Action2;
         }
@@ -3076,7 +3075,7 @@ public class e1 extends BroadcastReceiver {
             com.identy.onErrorResponse onerrorresponse = fingerActivity.PngBadCharsetException.PngjBadCrcException;
             if (onerrorresponse.PngjBadCrcException == null) {
                 int i = getClassForDetection + 97;
-                markIntroSetting = i % Uuid.SIZE_BITS;
+                markIntroSetting = i % 128;
                 arrayList = null;
                 if (i % 2 == 0) {
                     int i2 = 99 / 0;
@@ -3084,7 +3083,7 @@ public class e1 extends BroadcastReceiver {
             } else {
                 arrayList = new ArrayList(onerrorresponse.PngjException);
                 onerrorresponse.PngjException.clear();
-                getClassForDetection = (markIntroSetting + 103) % Uuid.SIZE_BITS;
+                getClassForDetection = (markIntroSetting + 103) % 128;
             }
             PngjBadCrcException(bArr, false, arrayList2, arrayList, fingerActivity.PngjInputException.valueOf, fingerActivity.Action.onErrorResponse);
         }
@@ -3094,21 +3093,21 @@ public class e1 extends BroadcastReceiver {
         int i2 = R.string.id_hold;
         if (i == 6) {
             int i3 = getClassForDetection + 81;
-            markIntroSetting = i3 % Uuid.SIZE_BITS;
+            markIntroSetting = i3 % 128;
             if (i3 % 2 == 0) {
                 throw null;
             }
             i2 = R.string.id_hold_6;
         } else if (i == 5) {
             int i4 = getClassForDetection + 13;
-            markIntroSetting = i4 % Uuid.SIZE_BITS;
+            markIntroSetting = i4 % 128;
             if (i4 % 2 == 0) {
                 throw null;
             }
             i2 = R.string.id_hold_5;
         } else if (i == 4) {
             int i5 = getClassForDetection + 1;
-            markIntroSetting = i5 % Uuid.SIZE_BITS;
+            markIntroSetting = i5 % 128;
             if (i5 % 2 == 0) {
                 throw null;
             }
@@ -3121,7 +3120,7 @@ public class e1 extends BroadcastReceiver {
             i2 = R.string.id_hold_1;
         } else if (i == 0) {
             int i6 = getClassForDetection + 21;
-            markIntroSetting = i6 % Uuid.SIZE_BITS;
+            markIntroSetting = i6 % 128;
             if (i6 % 2 == 0) {
                 throw null;
             }
@@ -3134,7 +3133,7 @@ public class e1 extends BroadcastReceiver {
         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
         if (pngjBadSignature != null) {
             pngjBadSignature.PngjBadSignature(i2, true);
-            markIntroSetting = (getClassForDetection + 55) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 55) % 128;
         }
     }
 
@@ -3149,7 +3148,7 @@ public class e1 extends BroadcastReceiver {
             RectF rectF2 = new RectF();
             matrix.mapRect(rectF2, rectF);
             linkedList.add(rectF2);
-            markIntroSetting = (getClassForDetection + 123) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 123) % 128;
         }
         return linkedList;
     }
@@ -3157,7 +3156,7 @@ public class e1 extends BroadcastReceiver {
     public void PngjBadCrcException(byte[] bArr, boolean z, List list, List list2, float f, Long l) {
         try {
             if (LibSettings.isSaveCaptured()) {
-                markIntroSetting = (getClassForDetection + 3) % Uuid.SIZE_BITS;
+                markIntroSetting = (getClassForDetection + 3) % 128;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -3177,7 +3176,7 @@ public class e1 extends BroadcastReceiver {
         try {
             com.identy.PngjOutputException pngjOutputException = this.Capture2IndexActivity;
             if (pngjOutputException != null) {
-                getClassForDetection = (markIntroSetting + 121) % Uuid.SIZE_BITS;
+                getClassForDetection = (markIntroSetting + 121) % 128;
                 pngjOutputException.PngjBadCrcException = f;
             }
         } catch (Exception e2) {
@@ -3204,28 +3203,28 @@ public class e1 extends BroadcastReceiver {
         this.toJson = bArr;
         if (this.getL2Score != null) {
             int i2 = markIntroSetting + 87;
-            getClassForDetection = i2 % Uuid.SIZE_BITS;
+            getClassForDetection = i2 % 128;
             if (i2 % 2 != 0) {
                 this.Capture2TActivity.postInvalidate();
                 throw null;
             }
             this.Capture2TActivity.postInvalidate();
-            getClassForDetection = (markIntroSetting + 45) % Uuid.SIZE_BITS;
+            getClassForDetection = (markIntroSetting + 45) % 128;
         }
     }
 
     public final void PngjException(int i) {
         this.Action.runOnUiThread(new PngBadCharsetException(i));
-        markIntroSetting = (getClassForDetection + 63) % Uuid.SIZE_BITS;
+        markIntroSetting = (getClassForDetection + 63) % 128;
     }
 
     public static void PngjException(int i, int i2) {
-        getClassForDetection = (markIntroSetting + 69) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 69) % 128;
         Object[] uxd565jk = Fpnative.uxd565jk(values, i, i2);
         PngjBadSignature = ((Integer) uxd565jk[0]).intValue();
         pfkrol = ((Integer) uxd565jk[1]).intValue();
         PngjPrematureEnding = ((Integer) uxd565jk[2]).intValue();
-        getClassForDetection = (markIntroSetting + 125) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 125) % 128;
     }
 
     public void valueOf(int i, int i2, int i3, boolean z) {
@@ -3310,10 +3309,10 @@ public class e1 extends BroadcastReceiver {
     }
 
     public static PngjBadCrcException.PngjBadSignature values(Context context) {
-        getClassForDetection = (markIntroSetting + 63) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 63) % 128;
         if (valueOf == null) {
             int i = markIntroSetting + 105;
-            getClassForDetection = i % Uuid.SIZE_BITS;
+            getClassForDetection = i % 128;
             boolean z = i % 2 == 0;
             try {
                 CaptureMode k = IdentySdk.getInstance().k();
@@ -3326,7 +3325,7 @@ public class e1 extends BroadcastReceiver {
                 e.printStackTrace();
             }
             if (z) {
-                getClassForDetection = (markIntroSetting + 53) % Uuid.SIZE_BITS;
+                getClassForDetection = (markIntroSetting + 53) % 128;
                 valueOf = valueOf(context);
             }
         }
@@ -3335,7 +3334,7 @@ public class e1 extends BroadcastReceiver {
 
     public final void PngjException(CaptureStatus captureStatus) {
         int i = getClassForDetection + 5;
-        markIntroSetting = i % Uuid.SIZE_BITS;
+        markIntroSetting = i % 128;
         FingerStatusUpdator fingerStatusUpdator = null;
         try {
         } catch (Exception e) {
@@ -3343,7 +3342,7 @@ public class e1 extends BroadcastReceiver {
         }
         if (i % 2 != 0) {
             fingerStatusUpdator = IdentySdk.getInstance().o();
-            markIntroSetting = (getClassForDetection + 85) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 85) % 128;
             if (fingerStatusUpdator != null) {
                 new Handler(Looper.getMainLooper()).post(new Action(fingerStatusUpdator, captureStatus));
                 return;
@@ -3356,7 +3355,7 @@ public class e1 extends BroadcastReceiver {
 
     private static /* synthetic */ Object PngjException(Object[] objArr) {
         e1 e1Var = (e1) objArr[0];
-        markIntroSetting = (getClassForDetection + 85) % Uuid.SIZE_BITS;
+        markIntroSetting = (getClassForDetection + 85) % 128;
         try {
             IdentySdk.getInstance().values(e1Var.Capture2IndexActivity.toString());
         } catch (Exception e) {
@@ -3364,7 +3363,7 @@ public class e1 extends BroadcastReceiver {
         }
         e1Var.Capture2IndexActivity = new com.identy.PngjOutputException(e1Var.PngjExceptionInternal());
         e1Var.getScore();
-        getClassForDetection = (markIntroSetting + 121) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 121) % 128;
         return null;
     }
 
@@ -3403,7 +3402,7 @@ public class e1 extends BroadcastReceiver {
             PngjExceptionInternal2 = pairArr;
         }
         if (!z4) {
-            markIntroSetting = (getClassForDetection + 91) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 91) % 128;
             for (int i4 = 0; i4 < length; i4++) {
                 iArr[i4] = 1;
             }
@@ -3414,7 +3413,7 @@ public class e1 extends BroadcastReceiver {
             z = false;
         } else {
             boolean equals = this.cvtyuv2bgr.equals(CapturePosition.VERTICAL_FROM_TOP);
-            markIntroSetting = (getClassForDetection + 85) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 85) % 128;
             z = equals;
         }
         QualityMode n = identySdk.n();
@@ -3432,7 +3431,7 @@ public class e1 extends BroadcastReceiver {
         int i9 = (int) rectF.bottom;
         int i10 = (int) rectF.right;
         if (i3 != i2) {
-            markIntroSetting = (getClassForDetection + 11) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 11) % 128;
             z2 = false;
             fArr2 = new float[0];
         } else {
@@ -3442,7 +3441,7 @@ public class e1 extends BroadcastReceiver {
         boolean z5 = !this.cvtyuv2bgr.equals(capturePosition2);
         IdentySdk identySdk2 = this.uxd566jk;
         if (identySdk2.getMatchingTime != null) {
-            markIntroSetting = (getClassForDetection + 87) % Uuid.SIZE_BITS;
+            markIntroSetting = (getClassForDetection + 87) % 128;
             if (identySdk2.getOveralTimetaken != null) {
                 z3 = true;
                 Fpnative.configure(j, ordinal, ordinal2, iArr2, iArr, ordinal3, i5, i6, i7, i8, i9, i10, z, fArr2, isElt, 0L, z5, z3, PngjException2);
@@ -3455,23 +3454,23 @@ public class e1 extends BroadcastReceiver {
     }
 
     private static boolean PngjBadSignature(Context context, String str) {
-        getClassForDetection = (markIntroSetting + 51) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 51) % 128;
         try {
             InputStream open = context.getResources().getAssets().open(str);
             if (open == null) {
                 if (open == null) {
                     return false;
                 }
-                markIntroSetting = (getClassForDetection + 117) % Uuid.SIZE_BITS;
+                markIntroSetting = (getClassForDetection + 117) % 128;
                 open.close();
-                getClassForDetection = (markIntroSetting + 55) % Uuid.SIZE_BITS;
+                getClassForDetection = (markIntroSetting + 55) % 128;
                 return false;
             }
             int i = getClassForDetection + 43;
-            int i2 = i % Uuid.SIZE_BITS;
+            int i2 = i % 128;
             markIntroSetting = i2;
             if (i % 2 != 0) {
-                getClassForDetection = (i2 + 85) % Uuid.SIZE_BITS;
+                getClassForDetection = (i2 + 85) % 128;
                 try {
                     open.close();
                     return true;
@@ -3495,7 +3494,7 @@ public class e1 extends BroadcastReceiver {
         StringBuilder sb2 = new StringBuilder();
         Object obj2 = this.a;
         if (obj2 == null) {
-            getClassForDetection = (markIntroSetting + 117) % Uuid.SIZE_BITS;
+            getClassForDetection = (markIntroSetting + 117) % 128;
             obj2 = "2T";
         }
         sb2.append(obj2.toString().charAt(0));
@@ -3513,12 +3512,12 @@ public class e1 extends BroadcastReceiver {
         sb2.append("_");
         if (str3.isEmpty()) {
             int i = getClassForDetection + 65;
-            int i2 = i % Uuid.SIZE_BITS;
+            int i2 = i % 128;
             markIntroSetting = i2;
             if (i % 2 == 0) {
                 throw null;
             }
-            getClassForDetection = (i2 + 123) % Uuid.SIZE_BITS;
+            getClassForDetection = (i2 + 123) % 128;
             concat = BuildConfig.FLAVOR;
         } else {
             concat = "_".concat(str3);
@@ -3533,13 +3532,13 @@ public class e1 extends BroadcastReceiver {
 
     public final void valueOf() {
         int i = getClassForDetection + 11;
-        markIntroSetting = i % Uuid.SIZE_BITS;
+        markIntroSetting = i % 128;
         try {
             if (i % 2 != 0) {
                 if (this.getNfiq1Score != null) {
                     this.Action.runOnUiThread(new onErrorResponse());
                     int i2 = markIntroSetting + 107;
-                    getClassForDetection = i2 % Uuid.SIZE_BITS;
+                    getClassForDetection = i2 % 128;
                     if (i2 % 2 != 0) {
                         throw null;
                     }
@@ -3553,12 +3552,12 @@ public class e1 extends BroadcastReceiver {
     }
 
     public void PngjBadCrcException() {
-        markIntroSetting = (getClassForDetection + 105) % Uuid.SIZE_BITS;
+        markIntroSetting = (getClassForDetection + 105) % 128;
     }
 
     public static boolean valueOf(boolean z) {
         int i = getClassForDetection + 121;
-        markIntroSetting = i % Uuid.SIZE_BITS;
+        markIntroSetting = i % 128;
         try {
             if (i % 2 == 0) {
                 int i2 = 80 / 0;
@@ -3569,7 +3568,7 @@ public class e1 extends BroadcastReceiver {
                 throw null;
             }
             int i3 = getClassForDetection + 3;
-            markIntroSetting = i3 % Uuid.SIZE_BITS;
+            markIntroSetting = i3 % 128;
             if (i3 % 2 != 0) {
                 return false;
             }
@@ -3580,14 +3579,14 @@ public class e1 extends BroadcastReceiver {
     }
 
     private Mat valueOf(int i, int i2) {
-        getClassForDetection = (markIntroSetting + 87) % Uuid.SIZE_BITS;
+        getClassForDetection = (markIntroSetting + 87) % 128;
         Calendar.getInstance().getTimeInMillis();
         byte[][] bArr = this.getAttempts;
         Object[] convertYUV420ToNV21 = ImageUtils.convertYUV420ToNV21(bArr[0], bArr[1], bArr[2], this.getPadSub3, this.getPadSub2, this.setScore, this.setSpoofScore, this.uxd565jj, this.Fpnative, this.getWidth, this.addTemplates);
         byte[] bArr2 = (byte[]) convertYUV420ToNV21[0];
         if (((Integer) convertYUV420ToNV21[1]).intValue() == 1) {
             int i3 = getClassForDetection + 103;
-            markIntroSetting = i3 % Uuid.SIZE_BITS;
+            markIntroSetting = i3 % 128;
             if (i3 % 2 == 0) {
                 this.match = false;
             } else {
@@ -3597,7 +3596,7 @@ public class e1 extends BroadcastReceiver {
         Mat mat = new Mat((i2 / 2) + i2, i, org.identy.opencv.core.PngjBadCrcException.PngjBadSignature);
         mat.PngjBadSignature(bArr2);
         int i4 = getClassForDetection + 37;
-        markIntroSetting = i4 % Uuid.SIZE_BITS;
+        markIntroSetting = i4 % 128;
         if (i4 % 2 != 0) {
             return mat;
         }
@@ -3626,7 +3625,7 @@ public class e1 extends BroadcastReceiver {
 
     public final synchronized void values(Runnable runnable) {
         AsyncTask.execute(new RunnableC0019e1(runnable));
-        markIntroSetting = (getClassForDetection + 7) % Uuid.SIZE_BITS;
+        markIntroSetting = (getClassForDetection + 7) % 128;
     }
 
     private static /* synthetic */ Object values(Object[] objArr) {
@@ -3636,14 +3635,14 @@ public class e1 extends BroadcastReceiver {
         boolean booleanValue = ((Boolean) objArr[2]).booleanValue();
         ASResult aSResult = (ASResult) objArr[3];
         int i = markIntroSetting + 53;
-        getClassForDetection = i % Uuid.SIZE_BITS;
+        getClassForDetection = i % 128;
         if (i % 2 == 0) {
             boolean isrfQualityPassed = e1Var.FingerActivity.isrfQualityPassed();
             if (!isrfQualityPassed) {
-                getClassForDetection = (markIntroSetting + 39) % Uuid.SIZE_BITS;
+                getClassForDetection = (markIntroSetting + 39) % 128;
                 e1Var.PngjExceptionInternal.add(getPadSub2.RFQ);
             } else if (booleanValue) {
-                getClassForDetection = (markIntroSetting + 63) % Uuid.SIZE_BITS;
+                getClassForDetection = (markIntroSetting + 63) % 128;
                 e1Var.PngjExceptionInternal.add(getPadSub2.AS);
             }
             e1Var.CaptureFingersActivity = aSResult.spoofScore;
@@ -3808,7 +3807,7 @@ public class e1 extends BroadcastReceiver {
 
     public final void valueOf(ERRORS errors) {
         int i = markIntroSetting + 117;
-        getClassForDetection = i % Uuid.SIZE_BITS;
+        getClassForDetection = i % 128;
         try {
         } catch (Exception e) {
             e.printStackTrace();
@@ -3821,7 +3820,7 @@ public class e1 extends BroadcastReceiver {
             this.Capture2IndexActivity = new com.identy.PngjOutputException(PngjExceptionInternal());
             getScore();
             int i2 = markIntroSetting + 41;
-            getClassForDetection = i2 % Uuid.SIZE_BITS;
+            getClassForDetection = i2 % 128;
             if (i2 % 2 != 0) {
                 int i3 = 23 / 0;
                 return;
@@ -3844,11 +3843,11 @@ public class e1 extends BroadcastReceiver {
                 Mat mat2 = (Mat) e1Var.pfkrolfinalize.remove(0);
                 if (mat2 != null) {
                     int i = markIntroSetting + 81;
-                    getClassForDetection = i % Uuid.SIZE_BITS;
+                    getClassForDetection = i % 128;
                     if (i % 2 == 0) {
                         if (!Mat.n_empty(mat2.PngjException)) {
                             Mat.n_release(mat2.PngjException);
-                            getClassForDetection = (markIntroSetting + 57) % Uuid.SIZE_BITS;
+                            getClassForDetection = (markIntroSetting + 57) % 128;
                         }
                     } else {
                         Mat.n_empty(mat2.PngjException);
@@ -3857,7 +3856,7 @@ public class e1 extends BroadcastReceiver {
                 }
             }
             if (intValue >= 0) {
-                getClassForDetection = (markIntroSetting + 113) % Uuid.SIZE_BITS;
+                getClassForDetection = (markIntroSetting + 113) % 128;
                 if (intValue < e1Var.pfkrolfinalize.size()) {
                     e1Var.pfkrolfinalize.add(intValue, mat);
                     return null;

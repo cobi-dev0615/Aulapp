@@ -35,7 +35,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class Capture2TActivity extends FingerActivity {
@@ -244,7 +243,7 @@ public class Capture2TActivity extends FingerActivity {
         /* JADX WARN: Code restructure failed: missing block: B:170:0x1b5a, code lost:
         
             r0 = r0 + 31;
-            com.identy.Capture2TActivity.PngjBadSignature.PngjUnsupportedException = r0 % kotlin.uuid.Uuid.SIZE_BITS;
+            com.identy.Capture2TActivity.PngjBadSignature.PngjUnsupportedException = r0 % 128;
          */
         /* JADX WARN: Code restructure failed: missing block: B:171:0x1b64, code lost:
         
@@ -531,7 +530,7 @@ public class Capture2TActivity extends FingerActivity {
          */
         /* JADX WARN: Code restructure failed: missing block: B:58:0x0a61, code lost:
         
-            com.identy.Capture2TActivity.PngjBadSignature.valueOf = (com.identy.Capture2TActivity.PngjBadSignature.PngjUnsupportedException + 97) % kotlin.uuid.Uuid.SIZE_BITS;
+            com.identy.Capture2TActivity.PngjBadSignature.valueOf = (com.identy.Capture2TActivity.PngjBadSignature.PngjUnsupportedException + 97) % 128;
             r0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:604:0x1b56, code lost:
@@ -692,7 +691,7 @@ public class Capture2TActivity extends FingerActivity {
             Class cls3 = Integer.TYPE;
             int i15 = PngjUnsupportedException;
             int i16 = (i15 & 55) + (i15 | 55);
-            valueOf = i16 % Uuid.SIZE_BITS;
+            valueOf = i16 % 128;
             try {
                 if (i16 % 2 != 0) {
                     Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1085800324);
@@ -772,7 +771,7 @@ public class Capture2TActivity extends FingerActivity {
                                     cls2 = cls;
                                     j = 0;
                                     f = 0.0f;
-                                    PngjUnsupportedException = (valueOf + 55) % Uuid.SIZE_BITS;
+                                    PngjUnsupportedException = (valueOf + 55) % 128;
                                     break;
                                 }
                                 if (!str.contains(strArr3[i37])) {
@@ -894,7 +893,7 @@ public class Capture2TActivity extends FingerActivity {
                                     }
                                     if (obj3 != null) {
                                         int i48 = PngjUnsupportedException;
-                                        valueOf = ((i48 ^ 53) + ((i48 & 53) << 1)) % Uuid.SIZE_BITS;
+                                        valueOf = ((i48 ^ 53) + ((i48 & 53) << 1)) % 128;
                                         Object[] objArr20 = {obj3, 42};
                                         Object PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(989703296);
                                         if (PngjBadSignature9 == null) {
@@ -936,7 +935,7 @@ public class Capture2TActivity extends FingerActivity {
                         boolean z5 = false;
                         if (z5) {
                             int i57 = valueOf;
-                            PngjUnsupportedException = ((i57 ^ 109) + ((i57 & 109) << 1)) % Uuid.SIZE_BITS;
+                            PngjUnsupportedException = ((i57 ^ 109) + ((i57 & 109) << 1)) % 128;
                             Object[] objArr22 = {new int[]{(i & (-261)) | (r7 & 260)}, new int[]{((~r1) & r2) | ((~r2) & r1)}, null, new int[]{i}};
                             int i58 = ~i;
                             int i59 = (((~(i | 623641961)) | (~(410924012 | i58))) * 627) + (((~((-410924013) | i)) | 623641961) * (-627)) + (((-620758018) | i) * (-627)) + 1167369348;
@@ -1330,7 +1329,7 @@ public class Capture2TActivity extends FingerActivity {
                         if (j3 > j && j89 > j) {
                             int i159 = PngjUnsupportedException;
                             int i160 = ((i159 | 99) << 1) - (i159 ^ 99);
-                            valueOf = i160 % Uuid.SIZE_BITS;
+                            valueOf = i160 % 128;
                             if (i160 % 2 != 0) {
                             }
                             if (!z) {
@@ -1424,7 +1423,7 @@ public class Capture2TActivity extends FingerActivity {
                             if (j4 > j) {
                                 int i189 = valueOf;
                                 int i190 = i189 + 43;
-                                PngjUnsupportedException = i190 % Uuid.SIZE_BITS;
+                                PngjUnsupportedException = i190 % 128;
                                 if (i190 % 2 == 0) {
                                 }
                                 if (!z2) {
@@ -1587,7 +1586,7 @@ public class Capture2TActivity extends FingerActivity {
                                             if (str37 != null) {
                                                 int i249 = PngjUnsupportedException;
                                                 int i250 = (i249 ^ 59) + ((i249 & 59) << 1);
-                                                valueOf = i250 % Uuid.SIZE_BITS;
+                                                valueOf = i250 % 128;
                                                 if (!(i250 % 2 == 0)) {
                                                     String[] strArr6 = new String[0];
                                                     Object[] objArr96 = new Object[1];
@@ -1607,9 +1606,9 @@ public class Capture2TActivity extends FingerActivity {
                                                         break;
                                                     }
                                                     int i251 = PngjUnsupportedException;
-                                                    valueOf = ((i251 & 65) + (i251 | 65)) % Uuid.SIZE_BITS;
+                                                    valueOf = ((i251 & 65) + (i251 | 65)) % 128;
                                                     if (str37.contains(strArr[i14])) {
-                                                        PngjUnsupportedException = (valueOf + 61) % Uuid.SIZE_BITS;
+                                                        PngjUnsupportedException = (valueOf + 61) % 128;
                                                         z4 = true;
                                                         break;
                                                     }
@@ -1692,7 +1691,7 @@ public class Capture2TActivity extends FingerActivity {
                                                 if (parseInt != 0) {
                                                     i6 = ((parseInt | 170) << 1) - (parseInt ^ 170);
                                                     if (i6 == 0) {
-                                                        PngjUnsupportedException = (valueOf + 15) % Uuid.SIZE_BITS;
+                                                        PngjUnsupportedException = (valueOf + 15) % 128;
                                                         Object[] objArr105 = {new int[]{(i6 & i77) | ((~i6) & i)}, new int[]{r0 ^ (r0 << 5)}, null, new int[]{i}};
                                                         int c14 = defpackage.a.c((~(i | (-620765505))) | (~(622013248 | i77)) | 411304981, 140, (((~(412552725 | i77)) | 620765504) * (-280)) + (((i | 412552725) * 140) - 1628538531), 16);
                                                         int i266 = (c14 & i4) + (c14 | i4);
@@ -1843,7 +1842,7 @@ public class Capture2TActivity extends FingerActivity {
                                                         c2 = 24;
                                                     }
                                                     if (c == c2) {
-                                                        PngjUnsupportedException = (valueOf + 97) % Uuid.SIZE_BITS;
+                                                        PngjUnsupportedException = (valueOf + 97) % 128;
                                                         Object[] objArr127 = {new int[]{i7 ^ i}, new int[1], null, new int[]{i}};
                                                         int i283 = (((~((~((int) Runtime.getRuntime().totalMemory())) | 205489949)) | (-829076025)) * 305) + ((((~(r0 | 205489949)) | (-1031780158)) * 305) - 1250391556);
                                                         int i284 = (i283 ^ 16) + ((i283 & 16) << 1);
@@ -1944,7 +1943,7 @@ public class Capture2TActivity extends FingerActivity {
                                                     i9 = i8 == 0 ? 240 : 0;
                                                     if (i9 == 0) {
                                                         int i325 = PngjUnsupportedException;
-                                                        valueOf = ((i325 & 101) + (i325 | 101)) % Uuid.SIZE_BITS;
+                                                        valueOf = ((i325 & 101) + (i325 | 101)) % 128;
                                                         Object[] objArr129 = {new int[]{(i9 & i77) | ((~i9) & i)}, new int[1], null, new int[]{i}};
                                                         int i326 = (((~((~Process.myPid()) | (-160208071))) | 159387712) * (-964)) + ((((~((-160208071) | r0)) | (-874357904)) * (-964)) - 211106643);
                                                         int i327 = (i326 ^ 16) + ((i326 & 16) << 1);
@@ -2026,7 +2025,7 @@ public class Capture2TActivity extends FingerActivity {
                                                     i10 = 0;
                                                     if (i10 != 0) {
                                                         int i345 = PngjUnsupportedException;
-                                                        valueOf = ((i345 & 7) + (i345 | 7)) % Uuid.SIZE_BITS;
+                                                        valueOf = ((i345 & 7) + (i345 | 7)) % 128;
                                                         z3 = true;
                                                     } else {
                                                         z3 = false;
@@ -2107,7 +2106,7 @@ public class Capture2TActivity extends FingerActivity {
                                                         } else {
                                                             int i370 = valueOf;
                                                             i11 = 1;
-                                                            PngjUnsupportedException = ((i370 ^ 15) + ((i370 & 15) << 1)) % Uuid.SIZE_BITS;
+                                                            PngjUnsupportedException = ((i370 ^ 15) + ((i370 & 15) << 1)) % 128;
                                                             i12 = i;
                                                         }
                                                         if (i12 != i) {
@@ -2281,7 +2280,7 @@ public class Capture2TActivity extends FingerActivity {
                                                             int myUid4 = Process.myUid();
                                                             int i419 = ((int) j174) & ((((~(myUid4 | (-702222138))) | 1443127490) * 433) + (((~(2139448547 | myUid4)) | (-702222138)) * (-433)) + ((~((~myUid4) | (-696321058))) * 433) + 774980936);
                                                             if (((i418 & i419) | (i418 ^ i419)) == 2) {
-                                                                PngjUnsupportedException = (valueOf + 15) % Uuid.SIZE_BITS;
+                                                                PngjUnsupportedException = (valueOf + 15) % 128;
                                                                 Object[] objArr140 = {new int[]{(i & (-271)) | (i77 & 270)}, new int[1], null, new int[]{i}};
                                                                 int i420 = (((~((~((int) SystemClock.uptimeMillis())) | (-873017410))) | 138413072) * 521) + (((~((-873017410) | r1)) * 521) - 1934704516);
                                                                 int i421 = (i420 ^ 16) + ((i420 & 16) << 1) + i4;
@@ -2319,7 +2318,7 @@ public class Capture2TActivity extends FingerActivity {
                                                             int i431 = ((int) j179) & (((1074795648 | (~((-1188721795) | i429))) * 516) + (((~(b68 | 1323300263)) | (~(i429 | (-1074795649)))) * 516) + (((i430 | r9) * (-516)) - 1257986327));
                                                             if (((i427 & i431) | (i427 ^ i431)) != 0) {
                                                                 int i432 = valueOf;
-                                                                PngjUnsupportedException = (((i432 | 119) << 1) - (i432 ^ 119)) % Uuid.SIZE_BITS;
+                                                                PngjUnsupportedException = (((i432 | 119) << 1) - (i432 ^ 119)) % 128;
                                                                 Object[] objArr142 = {new int[]{r4}, new int[1], null, new int[]{i}};
                                                                 int i433 = (~(i & 272)) & (i | 272);
                                                                 int maxMemory4 = (int) Runtime.getRuntime().maxMemory();
@@ -2437,7 +2436,7 @@ public class Capture2TActivity extends FingerActivity {
                                                                 return objArr150;
                                                             }
                                                             int i490 = valueOf + 63;
-                                                            PngjUnsupportedException = i490 % Uuid.SIZE_BITS;
+                                                            PngjUnsupportedException = i490 % 128;
                                                             if (i490 % 2 == 0) {
                                                                 Object PngjBadSignature36 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1617763359);
                                                                 if (PngjBadSignature36 == null) {
@@ -2681,7 +2680,7 @@ public class Capture2TActivity extends FingerActivity {
                 int i13 = 0;
                 while (i13 < length3) {
                     int i14 = $11 + 5;
-                    $10 = i14 % Uuid.SIZE_BITS;
+                    $10 = i14 % 128;
                     if (i14 % 2 != 0) {
                         Object[] objArr3 = {Integer.valueOf(iArr5[i13])};
                         Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i11);
@@ -2709,7 +2708,7 @@ public class Capture2TActivity extends FingerActivity {
                 }
                 i2 = i12;
                 j = 0;
-                $10 = ($11 + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+                $10 = ($11 + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
                 iArr5 = iArr6;
                 i8 = 0;
             } else {
@@ -2724,7 +2723,7 @@ public class Capture2TActivity extends FingerActivity {
                     objArr[0] = new String(cArr2, 0, i);
                     return;
                 }
-                $10 = ($11 + 61) % Uuid.SIZE_BITS;
+                $10 = ($11 + 61) % 128;
                 int i16 = iArr[i15];
                 char c2 = (char) (i16 >> 16);
                 cArr[0] = c2;
@@ -2740,7 +2739,7 @@ public class Capture2TActivity extends FingerActivity {
                 com.d.e.PngBadCharsetException.values(iArr4);
                 int i17 = 0;
                 while (i17 < i2) {
-                    $11 = ($10 + 103) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 103) % 128;
                     int i18 = pngBadCharsetException.PngjException ^ iArr4[i17];
                     pngBadCharsetException.PngjException = i18;
                     int PngjBadCrcException = com.d.e.PngBadCharsetException.PngjBadCrcException(i18);
@@ -2803,7 +2802,7 @@ public class Capture2TActivity extends FingerActivity {
             int i;
             byte[] bArr2;
             String str2 = str;
-            $11 = ($10 + 75) % Uuid.SIZE_BITS;
+            $11 = ($10 + 75) % 128;
             byte[] bArr3 = str2;
             if (str2 != null) {
                 bArr3 = str2.getBytes("ISO-8859-1");
@@ -2845,7 +2844,7 @@ public class Capture2TActivity extends FingerActivity {
                     }
                 }
                 bArr = bArr4;
-                $10 = ($11 + 3) % Uuid.SIZE_BITS;
+                $10 = ($11 + 3) % 128;
                 cArr = cArr2;
             } else {
                 bArr = bArr4;
@@ -2912,20 +2911,20 @@ public class Capture2TActivity extends FingerActivity {
                 cArr3 = cArr6;
             }
             if (i5 > 0) {
-                $10 = ($11 + 21) % Uuid.SIZE_BITS;
+                $10 = ($11 + 21) % 128;
                 e1Var.PngjBadSignature = 0;
                 while (true) {
                     int i11 = e1Var.PngjBadSignature;
                     if (i11 >= i4) {
                         break;
                     }
-                    $10 = ($11 + 93) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 93) % 128;
                     cArr3[i11] = (char) (cArr3[i11] - iArr[2]);
                     e1Var.PngjBadSignature = i11 + 1;
                 }
             }
             String str3 = new String(cArr3);
-            $10 = ($11 + 41) % Uuid.SIZE_BITS;
+            $10 = ($11 + 41) % 128;
             objArr[0] = str3;
         }
 
@@ -2963,12 +2962,12 @@ public class Capture2TActivity extends FingerActivity {
         */
         public final void run() {
             int i = valueOf + 113;
-            PngjUnsupportedException = i % Uuid.SIZE_BITS;
+            PngjUnsupportedException = i % 128;
             if (i % 2 == 0) {
                 int i2 = 73 / 0;
             }
             int i3 = PngjUnsupportedException + 95;
-            valueOf = i3 % Uuid.SIZE_BITS;
+            valueOf = i3 % 128;
             if (i3 % 2 != 0) {
                 throw null;
             }
@@ -3076,7 +3075,7 @@ public class Capture2TActivity extends FingerActivity {
         long j;
         int i2;
         if (str != null) {
-            $11 = ($10 + 23) % Uuid.SIZE_BITS;
+            $11 = ($10 + 23) % 128;
             cArr = str.toCharArray();
         } else {
             cArr = str;
@@ -3087,7 +3086,7 @@ public class Capture2TActivity extends FingerActivity {
         int length = cArr2.length;
         long[] jArr = new long[length];
         pngjUnsupportedException.valueOf = 0;
-        $10 = ($11 + 63) % Uuid.SIZE_BITS;
+        $10 = ($11 + 63) % 128;
         while (true) {
             int i3 = pngjUnsupportedException.valueOf;
             if (i3 >= cArr2.length) {
@@ -3122,7 +3121,7 @@ public class Capture2TActivity extends FingerActivity {
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (35510 - MotionEvent.axisFromString(BuildConfig.FLAVOR)), (SystemClock.elapsedRealtimeNanos() > j ? 1 : (SystemClock.elapsedRealtimeNanos() == j ? 0 : -1)) + 41, 507 - Color.red(0), 74289954, false, $$i(b3, b4, b4), new Class[]{Object.class, Object.class});
                 }
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
-                $11 = ($10 + 117) % Uuid.SIZE_BITS;
+                $11 = ($10 + 117) % 128;
             } catch (Throwable th) {
                 cause = th.getCause();
                 if (cause != null) {
@@ -3136,7 +3135,7 @@ public class Capture2TActivity extends FingerActivity {
         }
         char[] cArr3 = new char[length];
         pngjUnsupportedException.valueOf = 0;
-        $11 = ($10 + 123) % Uuid.SIZE_BITS;
+        $11 = ($10 + 123) % 128;
         while (true) {
             int i5 = pngjUnsupportedException.valueOf;
             if (i5 >= cArr2.length) {
@@ -3194,7 +3193,7 @@ public class Capture2TActivity extends FingerActivity {
             try {
                 if (IdentySdk.getInstance().isDisplayPrints()) {
                     runOnUiThread(new PngjBadSignature(hashMap2));
-                    getScore = (valueOf + 77) % Uuid.SIZE_BITS;
+                    getScore = (valueOf + 77) % 128;
                     return;
                 }
                 if (IdentySdk.getInstance().v()) {
@@ -3211,7 +3210,7 @@ public class Capture2TActivity extends FingerActivity {
                     return;
                 }
                 int i2 = valueOf + 69;
-                getScore = i2 % Uuid.SIZE_BITS;
+                getScore = i2 % 128;
                 if (i2 % 2 != 0) {
                     Attempt();
                 } else {
@@ -3222,7 +3221,7 @@ public class Capture2TActivity extends FingerActivity {
                 try {
                     if (LibSettings.isSaveCaptured()) {
                         int i3 = getScore + 71;
-                        valueOf = i3 % Uuid.SIZE_BITS;
+                        valueOf = i3 % 128;
                         if (i3 % 2 != 0) {
                             e3.getMessage();
                             int i4 = 18 / 0;
@@ -3267,7 +3266,7 @@ public class Capture2TActivity extends FingerActivity {
         try {
             try {
                 if (j != -1) {
-                    valueOf = (getScore + 85) % Uuid.SIZE_BITS;
+                    valueOf = (getScore + 85) % 128;
                     long j2 = j + 4611686018427387801L;
                     i = 864471691;
                     Object[] objArr2 = new Object[1];
@@ -3317,7 +3316,7 @@ public class Capture2TActivity extends FingerActivity {
                         String[] strArr3 = (String[]) PngjException$52c725b[2];
                         if (strArr3 != null) {
                             for (String str : strArr3) {
-                                valueOf = (getScore + 97) % Uuid.SIZE_BITS;
+                                valueOf = (getScore + 97) % 128;
                                 arrayList.add(str);
                             }
                         }
@@ -3405,10 +3404,10 @@ public class Capture2TActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
-        getScore = (valueOf + 95) % Uuid.SIZE_BITS;
+        getScore = (valueOf + 95) % 128;
         super.onCreate(bundle);
         int i = getScore + 107;
-        valueOf = i % Uuid.SIZE_BITS;
+        valueOf = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -3416,22 +3415,22 @@ public class Capture2TActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
-        valueOf = (getScore + 59) % Uuid.SIZE_BITS;
+        valueOf = (getScore + 59) % 128;
         super.onPause();
-        valueOf = (getScore + 69) % Uuid.SIZE_BITS;
+        valueOf = (getScore + 69) % 128;
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
         int i = valueOf + 99;
-        getScore = i % Uuid.SIZE_BITS;
+        getScore = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 == 0) {
             int i3 = 26 / 0;
         }
         int i4 = valueOf + 33;
-        getScore = i4 % Uuid.SIZE_BITS;
+        getScore = i4 % 128;
         if (i4 % 2 == 0) {
             int i5 = 0 / 0;
         }
@@ -3439,9 +3438,9 @@ public class Capture2TActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
-        valueOf = (getScore + 95) % Uuid.SIZE_BITS;
+        valueOf = (getScore + 95) % 128;
         super.onStart();
-        valueOf = (getScore + 117) % Uuid.SIZE_BITS;
+        valueOf = (getScore + 117) % 128;
     }
 
     @Override // com.identy.FingerActivity
@@ -3450,7 +3449,7 @@ public class Capture2TActivity extends FingerActivity {
         try {
             try {
                 this.onErrorResponse = new isFoundMatchingTemplates(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
-                getScore = (valueOf + 117) % Uuid.SIZE_BITS;
+                getScore = (valueOf + 117) % 128;
             } catch (Exception unused) {
             }
         } catch (Exception unused2) {

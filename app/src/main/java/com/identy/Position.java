@@ -6,7 +6,6 @@ import com.identy.enums.Finger;
 import com.identy.enums.Hand;
 import java.lang.reflect.Method;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 
 /* JADX WARN: Enum visitor error
 jadx.core.utils.exceptions.JadxRuntimeException: Init of enum field 'RIGHT_THUMB' uses external variables
@@ -203,7 +202,7 @@ public final class Position {
                     int i17 = -(((i16 & 1) + (i16 | 1)) ^ i14);
                     i2 = (i17 ^ 6) + ((i17 & 6) << 1);
                     int i18 = i2 >> 25;
-                    a = b.a(i18 ^ (-255), (i18 & (-255)) << 1, Uuid.SIZE_BITS, -1);
+                    a = b.a(i18 ^ (-255), (i18 & (-255)) << 1, 128, -1);
                     if (i != 10788 / (((-((a & 1) + (a | 1))) & i2) * 1798)) {
                         int i19 = PngjBadCrcException.valueOf[((Finger) pair.second).ordinal()];
                         if (i19 == 1) {
@@ -273,7 +272,7 @@ public final class Position {
             int i172 = -(((i162 & 1) + (i162 | 1)) ^ i142);
             i2 = (i172 ^ 6) + ((i172 & 6) << 1);
             int i182 = i2 >> 25;
-            a = b.a(i182 ^ (-255), (i182 & (-255)) << 1, Uuid.SIZE_BITS, -1);
+            a = b.a(i182 ^ (-255), (i182 & (-255)) << 1, 128, -1);
             if (i != 10788 / (((-((a & 1) + (a | 1))) & i2) * 1798)) {
             }
             return UNKNOWN;

@@ -15,7 +15,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public final class UserDao_Impl implements UserDao {
@@ -469,7 +468,7 @@ public final class UserDao_Impl implements UserDao {
                         int i12 = -(((i11 ^ 1) + ((i11 & 1) << 1)) ^ i9);
                         int i13 = (i12 ^ 9) + ((i12 & 9) << 1);
                         int i14 = i13 >> 25;
-                        int i15 = (((i14 | (-255)) << 1) - (i14 ^ (-255))) / Uuid.SIZE_BITS;
+                        int i15 = (((i14 | (-255)) << 1) - (i14 ^ (-255))) / 128;
                         acquire = RoomSQLiteQuery.acquire("SELECT * FROM IdentyUser", 0 / (((-(((i15 ^ 1) + ((i15 & 1) << 1)) - (-1))) & i13) * 543));
                         query = this.a.query(acquire);
                         int columnIndexOrThrow = query.getColumnIndexOrThrow("uid");
@@ -524,7 +523,7 @@ public final class UserDao_Impl implements UserDao {
             int i122 = -(((i112 ^ 1) + ((i112 & 1) << 1)) ^ i92);
             int i132 = (i122 ^ 9) + ((i122 & 9) << 1);
             int i142 = i132 >> 25;
-            int i152 = (((i142 | (-255)) << 1) - (i142 ^ (-255))) / Uuid.SIZE_BITS;
+            int i152 = (((i142 | (-255)) << 1) - (i142 ^ (-255))) / 128;
             acquire = RoomSQLiteQuery.acquire("SELECT * FROM IdentyUser", 0 / (((-(((i152 ^ 1) + ((i152 & 1) << 1)) - (-1))) & i132) * 543));
             query = this.a.query(acquire);
         } catch (Throwable th) {
@@ -632,7 +631,7 @@ public final class UserDao_Impl implements UserDao {
                         int i5 = ((int[]) objArr[1])[0];
                         int i6 = ((((i5 * i5) - (~(-(264764574 * i5)))) - 1) - (~(-(i5 * (-1994562862))))) - (-947721279);
                         int i7 = i6 >> 25;
-                        int i8 = (((i7 ^ (-255)) + ((i7 & (-255)) << 1)) / Uuid.SIZE_BITS) + 1;
+                        int i8 = (((i7 ^ (-255)) + ((i7 & (-255)) << 1)) / 128) + 1;
                         int i9 = (i6 ^ i8) + ((i8 & i6) << 1);
                         int i10 = i6 >> 20;
                         int i11 = ((i10 & (-8191)) + (i10 | (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;
@@ -659,7 +658,7 @@ public final class UserDao_Impl implements UserDao {
                 int i52 = ((int[]) objArr[1])[0];
                 int i62 = ((((i52 * i52) - (~(-(264764574 * i52)))) - 1) - (~(-(i52 * (-1994562862))))) - (-947721279);
                 int i72 = i62 >> 25;
-                int i82 = (((i72 ^ (-255)) + ((i72 & (-255)) << 1)) / Uuid.SIZE_BITS) + 1;
+                int i82 = (((i72 ^ (-255)) + ((i72 & (-255)) << 1)) / 128) + 1;
                 int i92 = (i62 ^ i82) + ((i82 & i62) << 1);
                 int i102 = i62 >> 20;
                 int i112 = ((i102 & (-8191)) + (i102 | (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;

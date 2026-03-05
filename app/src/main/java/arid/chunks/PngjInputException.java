@@ -21,7 +21,6 @@ import defpackage.a;
 import java.io.OutputStream;
 import java.lang.reflect.Method;
 import kotlin.io.encoding.Base64;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public abstract class PngjInputException {
@@ -265,13 +264,13 @@ public abstract class PngjInputException {
         char c;
         int i4;
         int i5 = $11 + 99;
-        int i6 = i5 % Uuid.SIZE_BITS;
+        int i6 = i5 % 128;
         $10 = i6;
         if (i5 % 2 != 0) {
             throw null;
         }
         if (str != null) {
-            $11 = (i6 + 79) % Uuid.SIZE_BITS;
+            $11 = (i6 + 79) % 128;
             cArr = str.toCharArray();
         } else {
             cArr = str;
@@ -328,7 +327,7 @@ public abstract class PngjInputException {
             throw cause;
         }
         if (i2 > 0) {
-            $11 = ($10 + 123) % Uuid.SIZE_BITS;
+            $11 = ($10 + 123) % 128;
             action.PngjException = i2;
             char[] cArr4 = new char[i];
             System.arraycopy(cArr3, 0, cArr4, 0, i);
@@ -338,7 +337,7 @@ public abstract class PngjInputException {
             System.arraycopy(cArr4, i9, cArr3, 0, i - i9);
         }
         if (z) {
-            $11 = ($10 + 11) % Uuid.SIZE_BITS;
+            $11 = ($10 + 11) % 128;
             char[] cArr5 = new char[i];
             action.valueOf = 0;
             while (true) {
@@ -373,14 +372,14 @@ public abstract class PngjInputException {
         onErrorResponse onerrorresponse = new onErrorResponse();
         long[] jArr = new long[i];
         onerrorresponse.PngjBadSignature = 0;
-        $10 = ($11 + 5) % Uuid.SIZE_BITS;
+        $10 = ($11 + 5) % 128;
         while (true) {
             int i5 = onerrorresponse.PngjBadSignature;
             if (i5 >= i) {
                 break;
             }
             int i6 = $11 + 109;
-            $10 = i6 % Uuid.SIZE_BITS;
+            $10 = i6 % 128;
             int i7 = i6 % 2;
             Class cls = Integer.TYPE;
             if (i7 != 0) {
@@ -474,7 +473,7 @@ public abstract class PngjInputException {
                 return;
             }
             int i9 = $11 + 89;
-            $10 = i9 % Uuid.SIZE_BITS;
+            $10 = i9 % 128;
             if (i9 % 2 != 0) {
                 cArr[i8] = (char) jArr[i8];
                 Object[] objArr8 = {onerrorresponse, onerrorresponse};
@@ -595,7 +594,7 @@ public abstract class PngjInputException {
         PngjBadSignature pngjBadSignature = this.PngjBadCrcException;
         if (pngjBadSignature != null) {
             int i2 = PngBadCharsetException + 103;
-            a = i2 % Uuid.SIZE_BITS;
+            a = i2 % 128;
             if (i2 % 2 == 0) {
                 throw null;
             }
@@ -610,9 +609,9 @@ public abstract class PngjInputException {
         PngjBadSignature pngjBadSignature2 = this.PngjBadCrcException;
         if (pngjBadSignature2 != null) {
             j = pngjBadSignature2.values;
-            a = (PngBadCharsetException + 117) % Uuid.SIZE_BITS;
+            a = (PngBadCharsetException + 117) % 128;
         } else {
-            PngBadCharsetException = (a + 19) % Uuid.SIZE_BITS;
+            PngBadCharsetException = (a + 19) % 128;
             j = -1;
         }
         sb.append(j);
@@ -621,7 +620,7 @@ public abstract class PngjInputException {
         sb.append((String) objArr4[0]);
         String obj = sb.toString();
         int i3 = PngBadCharsetException + 83;
-        a = i3 % Uuid.SIZE_BITS;
+        a = i3 % 128;
         if (i3 % 2 != 0) {
             return obj;
         }
@@ -629,7 +628,7 @@ public abstract class PngjInputException {
     }
 
     public final void valueOf(OutputStream outputStream) {
-        PngBadCharsetException = (a + 119) % Uuid.SIZE_BITS;
+        PngBadCharsetException = (a + 119) % 128;
         PngjBadSignature pngjBadSignature = this.PngjBadCrcException;
         if (pngjBadSignature == null || pngjBadSignature.valueOf == null) {
             this.PngjBadCrcException = values();
@@ -640,10 +639,10 @@ public abstract class PngjInputException {
             b((CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1)) + 33, false, "\u0018ￆ\u0014\u001b\u0012\u0012ￆ\t\u000e\u001b\u0014\u0011ￆￇￆ\t\u0018\u000b\u0007\u001a\u000f\u0015\u0014ￆ\f\u0007\u000f\u0012\u000b\nￆ\f\u0015", 2 - (ViewConfiguration.getKeyRepeatDelay() >> 16), 256 - (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), objArr);
             throw new arid.PngjExceptionInternal(((String) objArr[0]).concat(String.valueOf(this)));
         }
-        PngBadCharsetException = (a + 99) % Uuid.SIZE_BITS;
+        PngBadCharsetException = (a + 99) % 128;
         pngjBadSignature2.PngjBadCrcException(outputStream);
         int i = PngBadCharsetException + 75;
-        a = i % Uuid.SIZE_BITS;
+        a = i % 128;
         if (i % 2 == 0) {
             int i2 = 94 / 0;
         }

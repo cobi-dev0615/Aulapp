@@ -27,7 +27,6 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class UL {
@@ -163,7 +162,7 @@ public class UL {
                         byte[] bArr6 = new byte[length];
                         System.arraycopy(bArr, i23, bArr6, 0, length);
                         Cipher cipher2 = Cipher.getInstance("AES/GCM/NoPadding");
-                        cipher2.init(2, secretKeySpec, new GCMParameterSpec(Uuid.SIZE_BITS, bArr5));
+                        cipher2.init(2, secretKeySpec, new GCMParameterSpec(128, bArr5));
                         return cipher2.doFinal(bArr6);
                     }
                 }
@@ -329,7 +328,7 @@ public class UL {
                         byte[] bArr6 = new byte[i11];
                         System.arraycopy(bArr, i10, bArr6, 0, i11);
                         Cipher cipher2 = Cipher.getInstance("AES/GCM/NoPadding");
-                        cipher2.init(2, secretKeySpec, new GCMParameterSpec(Uuid.SIZE_BITS, bArr5));
+                        cipher2.init(2, secretKeySpec, new GCMParameterSpec(128, bArr5));
                         PngjException.PngjException("identy_finger");
                         return cipher2.doFinal(bArr6);
                     }
@@ -361,7 +360,7 @@ public class UL {
                 byte[] bArr62 = new byte[i112];
                 System.arraycopy(bArr7, i102, bArr62, 0, i112);
                 Cipher cipher22 = Cipher.getInstance("AES/GCM/NoPadding");
-                cipher22.init(2, secretKeySpec2, new GCMParameterSpec(Uuid.SIZE_BITS, bArr52));
+                cipher22.init(2, secretKeySpec2, new GCMParameterSpec(128, bArr52));
                 PngjException.PngjException("identy_finger");
                 return cipher22.doFinal(bArr62);
             } catch (FileNotFoundException e) {
@@ -559,7 +558,7 @@ public class UL {
                     int i13 = (i12 & 1) + (i12 | 1);
                     int i14 = ((i10 | i13) << 1) - (i13 ^ i10);
                     int i15 = i10 >> 25;
-                    int i16 = (((i15 | (-255)) << 1) - (i15 ^ (-255))) / Uuid.SIZE_BITS;
+                    int i16 = (((i15 | (-255)) << 1) - (i15 ^ (-255))) / 128;
                     int i17 = -(((i16 & 1) + (i16 | 1)) ^ i14);
                     int i18 = (i17 & 2) + (2 | i17);
                     int i19 = i18 >> 19;
@@ -611,7 +610,7 @@ public class UL {
             int i132 = (i122 & 1) + (i122 | 1);
             int i142 = ((i102 | i132) << 1) - (i132 ^ i102);
             int i152 = i102 >> 25;
-            int i162 = (((i152 | (-255)) << 1) - (i152 ^ (-255))) / Uuid.SIZE_BITS;
+            int i162 = (((i152 | (-255)) << 1) - (i152 ^ (-255))) / 128;
             int i172 = -(((i162 & 1) + (i162 | 1)) ^ i142);
             int i182 = (i172 & 2) + (2 | i172);
             int i192 = i182 >> 19;

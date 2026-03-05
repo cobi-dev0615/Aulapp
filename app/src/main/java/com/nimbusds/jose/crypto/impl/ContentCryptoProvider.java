@@ -18,7 +18,6 @@ import java.util.Map;
 import java.util.Set;
 import javax.crypto.SecretKey;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public abstract class ContentCryptoProvider {
@@ -58,7 +57,7 @@ public abstract class ContentCryptoProvider {
         hashSet4.add(encryptionMethod2);
         hashSet5.add(encryptionMethod3);
         hashSet5.add(encryptionMethod8);
-        hashMap.put(Integer.valueOf(Uuid.SIZE_BITS), Collections.unmodifiableSet(hashSet));
+        hashMap.put(Integer.valueOf(128), Collections.unmodifiableSet(hashSet));
         hashMap.put(192, Collections.unmodifiableSet(hashSet2));
         hashMap.put(256, Collections.unmodifiableSet(hashSet3));
         hashMap.put(384, Collections.unmodifiableSet(hashSet4));

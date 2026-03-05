@@ -49,7 +49,6 @@ import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
 import kotlin.io.encoding.Base64;
-import kotlin.uuid.Uuid;
 import org.c.a.PngjBadCrcException;
 import org.identy.nativealgo.NativeAlgoUtils;
 import org.identy.opencv.core.Mat;
@@ -390,7 +389,7 @@ public final class getOveralTimetaken extends e1 {
             char[] charArray = str3 != null ? str3.toCharArray() : str3;
             char[] charArray2 = str2 != 0 ? str2.toCharArray() : str2;
             if (str != null) {
-                $10 = ($11 + 119) % Uuid.SIZE_BITS;
+                $10 = ($11 + 119) % 128;
                 cArr = str.toCharArray();
             } else {
                 cArr = str;
@@ -411,7 +410,7 @@ public final class getOveralTimetaken extends e1 {
             char[] cArr6 = new char[length3];
             getpadsub2.PngjBadSignature = 0;
             while (getpadsub2.PngjBadSignature < length3) {
-                $11 = ($10 + 29) % Uuid.SIZE_BITS;
+                $11 = ($10 + 29) % 128;
                 try {
                     Object[] objArr2 = {getpadsub2};
                     Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(152054586);
@@ -490,7 +489,7 @@ public final class getOveralTimetaken extends e1 {
                 }
             }
             String str4 = new String(cArr6);
-            $11 = ($10 + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+            $11 = ($10 + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
             objArr[0] = str4;
         }
 
@@ -535,7 +534,7 @@ public final class getOveralTimetaken extends e1 {
             float f2;
             if (str != null) {
                 int i2 = $10 + 91;
-                $11 = i2 % Uuid.SIZE_BITS;
+                $11 = i2 % 128;
                 if (i2 % 2 == 0) {
                     str.toCharArray();
                     throw null;
@@ -556,7 +555,7 @@ public final class getOveralTimetaken extends e1 {
                     break;
                 }
                 int i4 = $11 + 17;
-                $10 = i4 % Uuid.SIZE_BITS;
+                $10 = i4 % 128;
                 int i5 = i4 % 2;
                 Class cls = Integer.TYPE;
                 if (i5 != 0) {
@@ -624,7 +623,7 @@ public final class getOveralTimetaken extends e1 {
                     return;
                 }
                 int i7 = $10 + 79;
-                $11 = i7 % Uuid.SIZE_BITS;
+                $11 = i7 % 128;
                 if (i7 % 2 == 0) {
                     break;
                 }
@@ -657,7 +656,7 @@ public final class getOveralTimetaken extends e1 {
         @Override // java.lang.Runnable
         public final void run() {
             int i = PngjOutputException + 27;
-            int i2 = i % Uuid.SIZE_BITS;
+            int i2 = i % 128;
             PngjUnsupportedException = i2;
             try {
                 if (i % 2 == 0) {
@@ -669,7 +668,7 @@ public final class getOveralTimetaken extends e1 {
                     return;
                 }
                 int i3 = i2 + 113;
-                PngjOutputException = i3 % Uuid.SIZE_BITS;
+                PngjOutputException = i3 % 128;
                 if (i3 % 2 == 0) {
                     getoveraltimetaken.getL1Score.PngjBadSignature(getoveraltimetaken.a, 8.0d, 8.0d, 8.0d);
                 } else {
@@ -976,7 +975,7 @@ public final class getOveralTimetaken extends e1 {
 
     private static void e(String str, int i, Object[] objArr) {
         int i2 = $11 + 5;
-        $10 = i2 % Uuid.SIZE_BITS;
+        $10 = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
@@ -1020,7 +1019,7 @@ public final class getOveralTimetaken extends e1 {
         }
         String str2 = new String(values2, 4, values2.length - 4);
         int i5 = $10 + 13;
-        $11 = i5 % Uuid.SIZE_BITS;
+        $11 = i5 % 128;
         if (i5 % 2 != 0) {
             objArr[0] = str2;
         } else {
@@ -1156,14 +1155,14 @@ public final class getOveralTimetaken extends e1 {
         float floatValue = ((Number) objArr[5]).floatValue();
         Long l = (Long) objArr[6];
         int i = pfkrolfinalizeF + 51;
-        pfk = i % Uuid.SIZE_BITS;
+        pfk = i % 128;
         int i2 = i % 2;
         super.PngjBadCrcException(bArr, booleanValue, list, list2, floatValue, l);
         if (i2 != 0) {
             throw null;
         }
         int i3 = pfkrolfinalizeF + 5;
-        pfk = i3 % Uuid.SIZE_BITS;
+        pfk = i3 % 128;
         if (i3 % 2 != 0) {
             int i4 = 19 / 0;
         }
@@ -1173,23 +1172,23 @@ public final class getOveralTimetaken extends e1 {
     @Override // com.identy.e1
     public final RectF Action() {
         int i = pfk + 27;
-        pfkrolfinalizeF = i % Uuid.SIZE_BITS;
+        pfkrolfinalizeF = i % 128;
         int i2 = i % 2;
         return PngjException().get(1);
     }
 
     @Override // com.identy.e1
     public final void PngjBadCrcException() {
-        int i = (pfk + 39) % Uuid.SIZE_BITS;
+        int i = (pfk + 39) % 128;
         pfkrolfinalizeF = i;
         this.getMatchingTime = false;
-        pfk = (i + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+        pfk = (i + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
     }
 
     @Override // com.identy.e1
     public final Pair[] PngjExceptionInternal() {
         Pair[] pairArr = {new Pair(this.a, Finger.INDEX), new Pair(this.a, Finger.MIDDLE), new Pair(this.a, Finger.RING), new Pair(this.a, Finger.LITTLE)};
-        pfkrolfinalizeF = (pfk + 85) % Uuid.SIZE_BITS;
+        pfkrolfinalizeF = (pfk + 85) % 128;
         return pairArr;
     }
 
@@ -1218,10 +1217,10 @@ public final class getOveralTimetaken extends e1 {
         boolean PngjUnsupportedException = super.PngjUnsupportedException();
         if (!this.PngBadCharsetException) {
             int i = pfkrolfinalizeF;
-            pfk = (i + 47) % Uuid.SIZE_BITS;
+            pfk = (i + 47) % 128;
             if (!this.onErrorResponse && PngjUnsupportedException) {
                 int i2 = i + 77;
-                pfk = i2 % Uuid.SIZE_BITS;
+                pfk = i2 % 128;
                 try {
                     if (i2 % 2 != 0) {
                         timeInMillis = Calendar.getInstance().getTimeInMillis();
@@ -1256,7 +1255,7 @@ public final class getOveralTimetaken extends e1 {
         super.a();
         if (this.a.equals(Hand.LEFT)) {
             int i2 = pfk + 123;
-            pfkrolfinalizeF = i2 % Uuid.SIZE_BITS;
+            pfkrolfinalizeF = i2 % 128;
             if (i2 % 2 == 0) {
                 throw null;
             }
@@ -1276,7 +1275,7 @@ public final class getOveralTimetaken extends e1 {
         this.Action.runOnUiThread(new PngjException());
         com.identy.d.PngjBadSignature pngjBadSignature2 = this.Attempt;
         if (pngjBadSignature2 != null) {
-            pfkrolfinalizeF = (pfk + 61) % Uuid.SIZE_BITS;
+            pfkrolfinalizeF = (pfk + 61) % 128;
             pngjBadSignature2.getData();
         }
     }
@@ -1293,7 +1292,7 @@ public final class getOveralTimetaken extends e1 {
         }
         try {
             this.isFoundMatchingTemplates = false;
-            pfkrolfinalizeF = (pfk + 103) % Uuid.SIZE_BITS;
+            pfkrolfinalizeF = (pfk + 103) % 128;
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -1301,7 +1300,7 @@ public final class getOveralTimetaken extends e1 {
         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
         if (pngjBadSignature != null) {
             int i2 = pfkrolfinalizeF + 101;
-            pfk = i2 % Uuid.SIZE_BITS;
+            pfk = i2 % 128;
             int i3 = i2 % 2;
             pngjBadSignature.PngjBadSignature(i, false);
         }
@@ -1309,11 +1308,11 @@ public final class getOveralTimetaken extends e1 {
 
     @Override // com.identy.e1
     public final void getPadSub1() {
-        pfkrolfinalizeF = (pfk + 95) % Uuid.SIZE_BITS;
+        pfkrolfinalizeF = (pfk + 95) % 128;
         try {
             super.getPadSub1();
             if (this.getL1Score != null) {
-                pfk = (pfkrolfinalizeF + 71) % Uuid.SIZE_BITS;
+                pfk = (pfkrolfinalizeF + 71) % 128;
                 this.getL1Score = null;
             }
             if (this.Capture2TActivity != null) {
@@ -1437,7 +1436,7 @@ public final class getOveralTimetaken extends e1 {
                 throw cause;
             }
         } else {
-            pfkrolfinalizeF = (pfk + 57) % Uuid.SIZE_BITS;
+            pfkrolfinalizeF = (pfk + 57) % 128;
             Object PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
             if (PngjBadSignature10 == null) {
                 int gidForName = Process.getGidForName(BuildConfig.FLAVOR) + 38;
@@ -1577,7 +1576,7 @@ public final class getOveralTimetaken extends e1 {
                             i3 = ((int[]) objArr2[c3])[0];
                             i4 = ((int[]) objArr2[c2])[0];
                             if (i4 != i3) {
-                                pfkrolfinalizeF = (pfk + 65) % Uuid.SIZE_BITS;
+                                pfkrolfinalizeF = (pfk + 65) % 128;
                                 Object[] objArr25 = new Object[5];
                                 objArr25[c3] = new int[]{r12};
                                 objArr25[c2] = new int[]{r11};
@@ -1669,7 +1668,7 @@ public final class getOveralTimetaken extends e1 {
                                 ((Field) PngjBadSignature5).set(null, valueOf3);
                                 objArr3 = valueOf$1eba2e16;
                             } else {
-                                pfkrolfinalizeF = (pfk + 105) % Uuid.SIZE_BITS;
+                                pfkrolfinalizeF = (pfk + 105) % 128;
                                 Object PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                                 if (PngjBadSignature14 == null) {
                                     char scrollBarSize2 = (char) ((ViewConfiguration.getScrollBarSize() >> 8) + 14830);
@@ -1703,7 +1702,7 @@ public final class getOveralTimetaken extends e1 {
                                 if (strArr != null) {
                                     while (i7 < strArr.length) {
                                         int i51 = pfkrolfinalizeF + 73;
-                                        pfk = i51 % Uuid.SIZE_BITS;
+                                        pfk = i51 % 128;
                                         if (i51 % 2 != 0) {
                                             arrayList2.add(strArr[i7]);
                                             i7 += 13;
@@ -1715,7 +1714,7 @@ public final class getOveralTimetaken extends e1 {
                                 }
                                 throw new RuntimeException(String.valueOf(i6));
                             }
-                            pfk = (pfkrolfinalizeF + 107) % Uuid.SIZE_BITS;
+                            pfk = (pfkrolfinalizeF + 107) % 128;
                             Object[] objArr35 = new Object[4];
                             objArr35[0] = new int[]{r9};
                             objArr35[1] = new int[1];
@@ -1744,7 +1743,7 @@ public final class getOveralTimetaken extends e1 {
                     throw cause2;
                 }
             } else {
-                pfkrolfinalizeF = (pfk + 41) % Uuid.SIZE_BITS;
+                pfkrolfinalizeF = (pfk + 41) % 128;
                 Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
                 if (PngjBadSignature15 == null) {
                     char normalizeMetaState = (char) (31077 - KeyEvent.normalizeMetaState(0));

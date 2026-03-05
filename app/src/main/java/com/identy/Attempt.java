@@ -5,7 +5,6 @@ import android.os.SystemClock;
 import com.identy.enums.FingerMatchSecLevel;
 import java.lang.reflect.Method;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class Attempt {
@@ -548,7 +547,7 @@ public class Attempt {
                     int i8 = (((i6 & i7) + (i6 | i7)) - (~(-(i5 * 477788007)))) - (-1094237376);
                     int i9 = ((i8 >> 21) - 4095) / 2048;
                     int i10 = (i8 - (~((i9 ^ 1) + ((i9 & 1) << 1)))) - 1;
-                    int i11 = ((i8 >> 25) - 255) / Uuid.SIZE_BITS;
+                    int i11 = ((i8 >> 25) - 255) / 128;
                     int i12 = -(i10 ^ ((i11 & 1) + (i11 | 1)));
                     i = (i12 ^ 7) + ((i12 & 7) << 1);
                     int i13 = ((i >> 28) - 31) / 16;
@@ -576,7 +575,7 @@ public class Attempt {
             int i82 = (((i62 & i72) + (i62 | i72)) - (~(-(i52 * 477788007)))) - (-1094237376);
             int i92 = ((i82 >> 21) - 4095) / 2048;
             int i102 = (i82 - (~((i92 ^ 1) + ((i92 & 1) << 1)))) - 1;
-            int i112 = ((i82 >> 25) - 255) / Uuid.SIZE_BITS;
+            int i112 = ((i82 >> 25) - 255) / 128;
             int i122 = -(i102 ^ ((i112 & 1) + (i112 | 1)));
             i = (i122 ^ 7) + ((i122 & 7) << 1);
             int i132 = ((i >> 28) - 31) / 16;
@@ -662,7 +661,7 @@ public class Attempt {
                     int i6 = (((i4 ^ i5) + ((i4 & i5) << 1)) - (~(-(i3 * (-2129638632))))) - 1;
                     int i7 = (i6 & 2025025956) + (2025025956 | i6);
                     int i8 = i7 >> 25;
-                    int a = b.a(i8 ^ (-255), (i8 & (-255)) << 1, Uuid.SIZE_BITS, -1);
+                    int a = b.a(i8 ^ (-255), (i8 & (-255)) << 1, 128, -1);
                     int i9 = (i7 & a) + (a | i7);
                     int i10 = ((i7 >> 29) - 15) / 8;
                     int i11 = -(i9 ^ (((i10 | 1) << 1) - (i10 ^ 1)));
@@ -692,7 +691,7 @@ public class Attempt {
             int i62 = (((i42 ^ i52) + ((i42 & i52) << 1)) - (~(-(i32 * (-2129638632))))) - 1;
             int i72 = (i62 & 2025025956) + (2025025956 | i62);
             int i82 = i72 >> 25;
-            int a2 = b.a(i82 ^ (-255), (i82 & (-255)) << 1, Uuid.SIZE_BITS, -1);
+            int a2 = b.a(i82 ^ (-255), (i82 & (-255)) << 1, 128, -1);
             int i92 = (i72 & a2) + (a2 | i72);
             int i102 = ((i72 >> 29) - 15) / 8;
             int i112 = -(i92 ^ (((i102 | 1) << 1) - (i102 ^ 1)));

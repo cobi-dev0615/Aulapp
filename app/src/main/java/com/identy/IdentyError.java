@@ -22,7 +22,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Map;
 import kotlin.jvm.internal.ByteCompanionObject;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public final class IdentyError extends IdentyResponse {
@@ -184,13 +183,13 @@ public final class IdentyError extends IdentyResponse {
         int i5;
         char c;
         int i6;
-        $10 = ($11 + 45) % Uuid.SIZE_BITS;
+        $10 = ($11 + 45) % 128;
         char[] charArray = str != null ? str.toCharArray() : str;
         com.d.e.Action action = new com.d.e.Action();
         char[] cArr = new char[i];
         int i7 = 0;
         action.valueOf = 0;
-        $10 = ($11 + 51) % Uuid.SIZE_BITS;
+        $10 = ($11 + 51) % 128;
         while (true) {
             int i8 = action.valueOf;
             if (i8 >= i) {
@@ -263,7 +262,7 @@ public final class IdentyError extends IdentyResponse {
                 if (i11 >= i) {
                     break;
                 }
-                $11 = ($10 + 125) % Uuid.SIZE_BITS;
+                $11 = ($10 + 125) % 128;
                 cArr3[i11] = cArr[(i - i11) - 1];
                 Object[] objArr4 = {action, action};
                 Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
@@ -276,7 +275,7 @@ public final class IdentyError extends IdentyResponse {
         }
         String str2 = new String(cArr);
         int i12 = $10 + 103;
-        $11 = i12 % Uuid.SIZE_BITS;
+        $11 = i12 % 128;
         if (i12 % 2 == 0) {
             throw null;
         }
@@ -327,7 +326,7 @@ public final class IdentyError extends IdentyResponse {
         try {
             if (objArr != null) {
                 int i2 = PngjUnsupportedException + 113;
-                PngjExceptionInternal = i2 % Uuid.SIZE_BITS;
+                PngjExceptionInternal = i2 % 128;
                 if (i2 % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, new Object[1])).longValue();
@@ -339,7 +338,7 @@ public final class IdentyError extends IdentyResponse {
                 Fpnative.valueOf = r2;
                 ERRORS errors = this.PngjOutputException;
                 i = PngjExceptionInternal + 45;
-                PngjUnsupportedException = i % Uuid.SIZE_BITS;
+                PngjUnsupportedException = i % 128;
                 if (i % 2 != 0) {
                     int i3 = 32 / 0;
                 }
@@ -356,7 +355,7 @@ public final class IdentyError extends IdentyResponse {
             Fpnative.valueOf = objArr4;
             ERRORS errors2 = this.PngjOutputException;
             i = PngjExceptionInternal + 45;
-            PngjUnsupportedException = i % Uuid.SIZE_BITS;
+            PngjUnsupportedException = i % 128;
             if (i % 2 != 0) {
             }
             return errors2;
@@ -375,7 +374,7 @@ public final class IdentyError extends IdentyResponse {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                PngjExceptionInternal = (PngjUnsupportedException + 3) % Uuid.SIZE_BITS;
+                PngjExceptionInternal = (PngjUnsupportedException + 3) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -409,7 +408,7 @@ public final class IdentyError extends IdentyResponse {
             }
             throw th;
         }
-        PngjExceptionInternal = (PngjUnsupportedException + 9) % Uuid.SIZE_BITS;
+        PngjExceptionInternal = (PngjUnsupportedException + 9) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:0x0131  */
@@ -445,7 +444,7 @@ public final class IdentyError extends IdentyResponse {
             try {
                 try {
                     if (objArr3 != null) {
-                        PngjUnsupportedException = (PngjExceptionInternal + 63) % Uuid.SIZE_BITS;
+                        PngjUnsupportedException = (PngjExceptionInternal + 63) % 128;
                         long j3 = ((long[]) objArr3[0])[0];
                         j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                         if (j3 > j) {
@@ -457,7 +456,7 @@ public final class IdentyError extends IdentyResponse {
                             int i6 = c4 ^ (c4 << 13);
                             int i7 = i6 ^ (i6 >>> 17);
                             ((int[]) objArr[1])[0] = i7 ^ (i7 << 5);
-                            PngjUnsupportedException = (PngjExceptionInternal + 89) % Uuid.SIZE_BITS;
+                            PngjUnsupportedException = (PngjExceptionInternal + 89) % 128;
                             ((long[]) objArr[0])[0] = j + 4985;
                             Fpnative.valueOf = objArr;
                             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
@@ -475,13 +474,13 @@ public final class IdentyError extends IdentyResponse {
                             if (j2 == -1) {
                                 long j4 = j2 + 1987;
                                 Object[] objArr5 = new Object[1];
-                                c(22 - (ViewConfiguration.getTouchSlop() >> 8), true, "\n\u0002\u0011\u0010\u0016\ufff0ￋ\u0010\fￋ\u0001\u0006\f\u000f\u0001\u000b\ufffe\b\u0000\f\t￠", 17 - (ViewConfiguration.getFadingEdgeLength() >> 16), View.MeasureSpec.makeMeasureSpec(0, 0) + Uuid.SIZE_BITS, objArr5);
+                                c(22 - (ViewConfiguration.getTouchSlop() >> 8), true, "\n\u0002\u0011\u0010\u0016\ufff0ￋ\u0010\fￋ\u0001\u0006\f\u000f\u0001\u000b\ufffe\b\u0000\f\t￠", 17 - (ViewConfiguration.getFadingEdgeLength() >> 16), View.MeasureSpec.makeMeasureSpec(0, 0) + 128, objArr5);
                                 Class<?> cls2 = Class.forName((String) objArr5[0]);
                                 i = 1556686741;
                                 Object[] objArr6 = new Object[1];
                                 c(16 - (SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1)), false, "\u0005\r\u0002\u0006\ufffe\ufffe\u0005\ufffa\t\f\ufffe�￫\ufffe\ufffa", Color.alpha(0) + 5, ImageFormat.getBitsPerPixel(0) + 133, objArr6);
                                 if (j4 >= ((Long) cls2.getDeclaredMethod((String) objArr6[0], null).invoke(null, null)).longValue()) {
-                                    PngjExceptionInternal = (PngjUnsupportedException + 39) % Uuid.SIZE_BITS;
+                                    PngjExceptionInternal = (PngjUnsupportedException + 39) % 128;
                                     Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
                                     if (PngjBadSignature5 == null) {
                                         int deadChar = KeyEvent.getDeadChar(0, 0) + 37;

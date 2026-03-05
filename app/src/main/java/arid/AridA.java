@@ -35,7 +35,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 import kotlin.KotlinVersion;
 import kotlin.jvm.internal.ByteCompanionObject;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public final class AridA {
@@ -1539,7 +1538,7 @@ public final class AridA {
             char c;
             int i4;
             int i5 = $11 + 41;
-            $10 = i5 % Uuid.SIZE_BITS;
+            $10 = i5 % 128;
             if (i5 % 2 != 0) {
                 throw null;
             }
@@ -1552,7 +1551,7 @@ public final class AridA {
                 if (i6 >= i) {
                     break;
                 }
-                $11 = ($10 + 53) % Uuid.SIZE_BITS;
+                $11 = ($10 + 53) % 128;
                 char c2 = charArray[i6];
                 action.values = c2;
                 char c3 = (char) (i3 + c2);
@@ -1596,7 +1595,7 @@ public final class AridA {
                 throw cause;
             }
             if (i2 > 0) {
-                $10 = ($11 + 33) % Uuid.SIZE_BITS;
+                $10 = ($11 + 33) % 128;
                 action.PngjException = i2;
                 char[] cArr2 = new char[i];
                 System.arraycopy(cArr, 0, cArr2, 0, i);
@@ -1608,13 +1607,13 @@ public final class AridA {
             if (z) {
                 char[] cArr3 = new char[i];
                 action.valueOf = 0;
-                $11 = ($10 + 85) % Uuid.SIZE_BITS;
+                $11 = ($10 + 85) % 128;
                 while (true) {
                     int i9 = action.valueOf;
                     if (i9 >= i) {
                         break;
                     }
-                    $10 = ($11 + 23) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 23) % 128;
                     cArr3[i9] = cArr[(i - i9) - 1];
                     Object[] objArr4 = {action, action};
                     Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
@@ -1626,7 +1625,7 @@ public final class AridA {
                 cArr = cArr3;
             }
             String str2 = new String(cArr);
-            $11 = ($10 + 19) % Uuid.SIZE_BITS;
+            $11 = ($10 + 19) % 128;
             objArr[0] = str2;
         }
 
@@ -1676,11 +1675,11 @@ public final class AridA {
                 int length = cArr.length;
                 char[] cArr2 = new char[length];
                 i = 2;
-                $10 = ($11 + 59) % Uuid.SIZE_BITS;
+                $10 = ($11 + 59) % 128;
                 int i9 = 0;
                 while (i9 < length) {
                     int i10 = $10 + 107;
-                    $11 = i10 % Uuid.SIZE_BITS;
+                    $11 = i10 % 128;
                     if (i10 % 2 == 0) {
                         try {
                             Object[] objArr2 = {Integer.valueOf(cArr[i9])};
@@ -1726,7 +1725,7 @@ public final class AridA {
             char[] cArr3 = new char[i6];
             System.arraycopy(cArr, i5, cArr3, 0, i6);
             if (bArr4 != null) {
-                $10 = ($11 + 11) % Uuid.SIZE_BITS;
+                $10 = ($11 + 11) % 128;
                 char[] cArr4 = new char[i6];
                 e1Var.PngjBadSignature = 0;
                 char c = 0;
@@ -1735,7 +1734,7 @@ public final class AridA {
                     if (i12 >= i6) {
                         break;
                     }
-                    $10 = ($11 + 123) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 123) % 128;
                     if (bArr4[i12] == 1) {
                         char c2 = cArr3[i12];
                         Object[] objArr4 = new Object[i];
@@ -1748,7 +1747,7 @@ public final class AridA {
                             PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (31882 - ExpandableListView.getPackedPositionGroup(0L)), 33 - (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)), (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)) + 1250, 605862879, false, $$e(b3, b4, (byte) (b4 + 5)), new Class[]{cls, cls});
                         }
                         cArr4[i12] = ((Character) ((Method) PngjBadSignature4).invoke(null, objArr4)).charValue();
-                        $10 = ($11 + 101) % Uuid.SIZE_BITS;
+                        $10 = ($11 + 101) % 128;
                     } else {
                         Object[] objArr5 = {Integer.valueOf(cArr3[i12]), Integer.valueOf(c)};
                         Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(269554740);
@@ -1821,7 +1820,7 @@ public final class AridA {
         public /* bridge */ /* synthetic */ Object initialValue() {
             Boolean bool = Boolean.FALSE;
             int i = PngjBadSignature + 67;
-            valueOf = i % Uuid.SIZE_BITS;
+            valueOf = i % 128;
             if (i % 2 == 0) {
                 int i2 = 48 / 0;
             }

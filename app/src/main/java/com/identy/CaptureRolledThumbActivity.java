@@ -29,7 +29,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class CaptureRolledThumbActivity extends FingerActivity {
@@ -162,7 +161,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                     break;
                 }
                 int i9 = $10 + 105;
-                $11 = i9 % Uuid.SIZE_BITS;
+                $11 = i9 % 128;
                 int i10 = i9 % 2;
                 Class cls = Long.TYPE;
                 Class cls2 = Integer.TYPE;
@@ -254,7 +253,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                 if (i12 >= i2) {
                     break;
                 }
-                $11 = ($10 + 99) % Uuid.SIZE_BITS;
+                $11 = ($10 + 99) % 128;
                 cArr[i12] = (char) jArr[i12];
                 Object[] objArr8 = {onerrorresponse, onerrorresponse};
                 Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(818986954);
@@ -262,11 +261,11 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                     PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1)), 35 - KeyEvent.getDeadChar(0, 0), 155 - (ExpandableListView.getPackedPositionForGroup(0) > 0L ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == 0L ? 0 : -1)), -868232591, false, "p", new Class[]{Object.class, Object.class});
                 }
                 ((Method) PngjBadSignature7).invoke(null, objArr8);
-                $11 = ($10 + 107) % Uuid.SIZE_BITS;
+                $11 = ($10 + 107) % 128;
             }
             String str = new String(cArr);
             int i13 = $10 + 39;
-            $11 = i13 % Uuid.SIZE_BITS;
+            $11 = i13 % 128;
             if (i13 % 2 == 0) {
                 throw null;
             }
@@ -285,7 +284,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
             int i4;
             if (str != null) {
                 int i5 = $10 + 125;
-                $11 = i5 % Uuid.SIZE_BITS;
+                $11 = i5 % 128;
                 if (i5 % 2 == 0) {
                     cArr = str.toCharArray();
                     int i6 = 80 / 0;
@@ -304,7 +303,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                 if (i7 >= i3) {
                     break;
                 }
-                $11 = ($10 + 15) % Uuid.SIZE_BITS;
+                $11 = ($10 + 15) % 128;
                 char c2 = cArr2[i7];
                 action.values = c2;
                 char c3 = (char) (i + c2);
@@ -336,7 +335,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                         PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (Color.rgb(0, 0, 0) + 16777216), 40 - Color.alpha(0), (-16777026) - Color.rgb(0, 0, 0), 794744863, false, "j", new Class[]{Object.class, Object.class});
                     }
                     ((Method) PngjBadSignature2).invoke(null, objArr3);
-                    $11 = ($10 + 29) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 29) % 128;
                 } catch (Throwable th) {
                     cause = th.getCause();
                     if (cause != null) {
@@ -358,7 +357,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                 System.arraycopy(cArr4, i10, cArr3, 0, i3 - i10);
             }
             if (z) {
-                $11 = ($10 + 37) % Uuid.SIZE_BITS;
+                $11 = ($10 + 37) % 128;
                 char[] cArr5 = new char[i3];
                 action.valueOf = 0;
                 while (true) {
@@ -367,7 +366,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                         break;
                     }
                     int i12 = $10 + 29;
-                    $11 = i12 % Uuid.SIZE_BITS;
+                    $11 = i12 % 128;
                     if (i12 % 2 == 0) {
                         cArr5[i11] = cArr3[(i3 / i11) << 1];
                         Object[] objArr4 = {action, action};
@@ -389,7 +388,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                 cArr3 = cArr5;
             }
             String str2 = new String(cArr3);
-            $11 = ($10 + 81) % Uuid.SIZE_BITS;
+            $11 = ($10 + 81) % 128;
             objArr[0] = str2;
         }
 
@@ -405,14 +404,14 @@ public class CaptureRolledThumbActivity extends FingerActivity {
 
         @Override // java.lang.Runnable
         public final void run() {
-            PngjOutputException = (PngjInputException + 97) % Uuid.SIZE_BITS;
+            PngjOutputException = (PngjInputException + 97) % 128;
             if (FingerActivity.PngjPrematureEnding) {
                 CaptureRolledThumbActivity.this.getPadSub1 = new com.identy.ui.c.getPadSub3(CaptureRolledThumbActivity.this, false, (a) this.PngjBadSignature.get(new Pair(CaptureRolledThumbActivity.this.PngjExceptionInternal.getHand(), CaptureRolledThumbActivity.this.PngjExceptionInternal.getFinger())), CaptureRolledThumbActivity.this.getQualityScore);
                 WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
                 layoutParams.copyFrom(CaptureRolledThumbActivity.this.getPadSub1.getWindow().getAttributes());
                 ((ViewGroup.LayoutParams) layoutParams).width = -1;
                 CaptureRolledThumbActivity.this.getPadSub1.show();
-                PngjOutputException = (PngjInputException + 9) % Uuid.SIZE_BITS;
+                PngjOutputException = (PngjInputException + 9) % 128;
             }
         }
     }
@@ -533,10 +532,10 @@ public class CaptureRolledThumbActivity extends FingerActivity {
     private static void c(String str, int i, Object[] objArr) {
         char[] cArr;
         int i2 = $11;
-        $10 = (i2 + 111) % Uuid.SIZE_BITS;
+        $10 = (i2 + 111) % 128;
         if (str != null) {
             int i3 = i2 + 125;
-            $10 = i3 % Uuid.SIZE_BITS;
+            $10 = i3 % 128;
             if (i3 % 2 != 0) {
                 cArr = str.toCharArray();
                 int i4 = 33 / 0;
@@ -576,7 +575,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (14830 - (ViewConfiguration.getLongPressTimeout() >> 16)), 28 - (ViewConfiguration.getFadingEdgeLength() >> 16), (ViewConfiguration.getKeyRepeatTimeout() >> 16) + 721, -1356718115, false, $$i(b, b2, (byte) (b2 - 1)), new Class[]{Object.class, Object.class});
                 }
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
-                $11 = ($10 + 79) % Uuid.SIZE_BITS;
+                $11 = ($10 + 79) % 128;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause == null) {
@@ -599,11 +598,11 @@ public class CaptureRolledThumbActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
     public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
-        values = (valueOf + 25) % Uuid.SIZE_BITS;
+        values = (valueOf + 25) % 128;
         super.PngjException(hashMap, hashMap2, bitmap, z, z2);
         if (!z) {
             int i = valueOf + 105;
-            values = i % Uuid.SIZE_BITS;
+            values = i % 128;
             if (i % 2 != 0) {
                 int i2 = 17 / 0;
                 return;
@@ -650,7 +649,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
             } catch (Exception e3) {
                 try {
                     if (LibSettings.isSaveCaptured()) {
-                        values = (valueOf + 107) % Uuid.SIZE_BITS;
+                        values = (valueOf + 107) % 128;
                         e3.getMessage();
                     }
                 } catch (Exception e4) {
@@ -674,7 +673,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
         Object[] PngjBadSignature$1eba2e16;
         int i2;
         int i3;
-        values = (valueOf + 99) % Uuid.SIZE_BITS;
+        values = (valueOf + 99) % 128;
         super.attachBaseContext(context);
         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature2 == null) {
@@ -692,7 +691,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
         try {
             try {
                 if (j2 != -1) {
-                    values = (valueOf + 63) % Uuid.SIZE_BITS;
+                    values = (valueOf + 63) % 128;
                     long j3 = j2 + 4611686018427387777L;
                     i = 864471691;
                     Object[] objArr2 = new Object[1];
@@ -738,7 +737,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                             int i13 = c4 ^ (c4 << 13);
                             int i14 = i13 ^ (i13 >>> 17);
                             ((int[]) objArr6[1])[0] = i14 ^ (i14 << 5);
-                            values = (valueOf + 47) % Uuid.SIZE_BITS;
+                            values = (valueOf + 47) % 128;
                             return;
                         }
                         ArrayList arrayList = new ArrayList();
@@ -759,7 +758,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                         int i19 = i18 ^ (i18 >>> 17);
                         ((int[]) objArr7[1])[0] = i19 ^ (i19 << 5);
                         int i20 = values + 47;
-                        valueOf = i20 % Uuid.SIZE_BITS;
+                        valueOf = i20 % 128;
                         if (i20 % 2 == 0) {
                             throw null;
                         }
@@ -832,37 +831,37 @@ public class CaptureRolledThumbActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         int i = values + 97;
-        valueOf = i % Uuid.SIZE_BITS;
+        valueOf = i % 128;
         int i2 = i % 2;
         super.onCreate(bundle);
         findViewById(R.id.middle_info_image).setVisibility(0);
-        valueOf = (values + 95) % Uuid.SIZE_BITS;
+        valueOf = (values + 95) % 128;
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
-        valueOf = (values + 109) % Uuid.SIZE_BITS;
+        valueOf = (values + 109) % 128;
         super.onPause();
-        values = (valueOf + 59) % Uuid.SIZE_BITS;
+        values = (valueOf + 59) % 128;
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
         int i = valueOf + 9;
-        values = i % Uuid.SIZE_BITS;
+        values = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 != 0) {
             int i3 = 94 / 0;
         }
-        values = (valueOf + 41) % Uuid.SIZE_BITS;
+        values = (valueOf + 41) % 128;
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
-        values = (valueOf + 3) % Uuid.SIZE_BITS;
+        values = (valueOf + 3) % 128;
         super.onStart();
-        values = (valueOf + 37) % Uuid.SIZE_BITS;
+        values = (valueOf + 37) % 128;
     }
 
     @Override // com.identy.FingerActivity
@@ -882,14 +881,14 @@ public class CaptureRolledThumbActivity extends FingerActivity {
             try {
                 if (LibSettings.isSaveCaptured()) {
                     exc.getMessage();
-                    valueOf = (values + 121) % Uuid.SIZE_BITS;
+                    valueOf = (values + 121) % 128;
                     return;
                 }
             } catch (Exception e3) {
                 e3.printStackTrace();
             }
             int i = values + 7;
-            valueOf = i % Uuid.SIZE_BITS;
+            valueOf = i % 128;
             if (i % 2 == 0) {
                 int i2 = 79 / 0;
             }

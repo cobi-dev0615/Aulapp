@@ -28,7 +28,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class Enroll4FActivity extends FingerActivity {
@@ -194,7 +193,7 @@ public class Enroll4FActivity extends FingerActivity {
                 int[] iArr4 = new int[length];
                 int i7 = 0;
                 while (i7 < length) {
-                    $11 = ($10 + 61) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 61) % 128;
                     try {
                         Object[] objArr2 = {Integer.valueOf(iArr3[i7])};
                         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(i5);
@@ -237,7 +236,7 @@ public class Enroll4FActivity extends FingerActivity {
                 int i10 = 0;
                 while (i10 < length3) {
                     int i11 = $10 + 55;
-                    $11 = i11 % Uuid.SIZE_BITS;
+                    $11 = i11 % 128;
                     if (i11 % 2 == 0) {
                         Object[] objArr3 = {Integer.valueOf(iArr6[i10])};
                         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i9);
@@ -294,10 +293,10 @@ public class Enroll4FActivity extends FingerActivity {
                 pngBadCharsetException.PngjException = (c3 << 16) + c4;
                 pngBadCharsetException.PngjBadCrcException = (c6 << 16) + c7;
                 com.d.e.PngBadCharsetException.values(iArr5);
-                $10 = ($11 + 125) % Uuid.SIZE_BITS;
+                $10 = ($11 + 125) % 128;
                 int i14 = 0;
                 while (i14 < 16) {
-                    $11 = ($10 + 49) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 49) % 128;
                     int i15 = pngBadCharsetException.PngjException ^ iArr5[i14];
                     pngBadCharsetException.PngjException = i15;
                     int PngjBadCrcException = com.d.e.PngBadCharsetException.PngjBadCrcException(i15);
@@ -486,13 +485,13 @@ public class Enroll4FActivity extends FingerActivity {
                 byte[] PngjPrematureEnding = e1Var.PngjPrematureEnding();
                 e1 e1Var2 = Enroll4FActivity.this.onErrorResponse;
                 identySdk.a(fingerDetectionMode, hashMap, j, j2, 0L, i, PngjPrematureEnding, e1Var2.setFoundMatchingTemplates + e1Var2.Enroll2IndexActivity, e1Var2.closeDialog, e1Var2.getHeight, e1Var2.ERRORS);
-                valueOf = (values + 119) % Uuid.SIZE_BITS;
+                valueOf = (values + 119) % 128;
             } catch (Exception unused) {
             }
             e1 e1Var3 = Enroll4FActivity.this.onErrorResponse;
             if (e1Var3 != null) {
                 e1Var3.valueOf();
-                values = (valueOf + 5) % Uuid.SIZE_BITS;
+                values = (valueOf + 5) % 128;
             }
             try {
                 org.camera.preview.PngjBadCrcException pngjBadCrcException = Enroll4FActivity.this.Action;
@@ -504,7 +503,7 @@ public class Enroll4FActivity extends FingerActivity {
             try {
                 if (IdentySdk.getInstance().isDisplayPrints()) {
                     Enroll4FActivity.this.runOnUiThread(new valueOf());
-                    valueOf = (values + 83) % Uuid.SIZE_BITS;
+                    valueOf = (values + 83) % 128;
                     return;
                 }
                 if (!IdentySdk.getInstance().v()) {
@@ -628,7 +627,7 @@ public class Enroll4FActivity extends FingerActivity {
     private static void c(String str, int i, Object[] objArr) {
         char[] cArr;
         if (str != null) {
-            $11 = ($10 + 17) % Uuid.SIZE_BITS;
+            $11 = ($10 + 17) % 128;
             cArr = str.toCharArray();
         } else {
             cArr = str;
@@ -642,7 +641,7 @@ public class Enroll4FActivity extends FingerActivity {
                 objArr[0] = new String(values2, 4, values2.length - 4);
                 return;
             }
-            $11 = ($10 + 117) % Uuid.SIZE_BITS;
+            $11 = ($10 + 117) % 128;
             int i3 = i2 - 4;
             aVar.PngjBadCrcException = i3;
             try {
@@ -687,14 +686,14 @@ public class Enroll4FActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
     public final void PngjBadSignature(List<HashMap<Pair<Hand, Finger>, a>> list, boolean z, boolean z2, HashMap<Pair<Hand, Finger>, Float> hashMap) {
         int i = getFingerPrintQualityScore + 63;
-        values = i % Uuid.SIZE_BITS;
+        values = i % 128;
         int i2 = i % 2;
         super.PngjBadSignature(list, z, z2, hashMap);
         if (i2 != 0) {
             int i3 = 14 / 0;
         }
         int i4 = getFingerPrintQualityScore + 61;
-        values = i4 % Uuid.SIZE_BITS;
+        values = i4 % 128;
         if (i4 % 2 != 0) {
             int i5 = 99 / 0;
         }
@@ -702,11 +701,11 @@ public class Enroll4FActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
     public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
-        values = (getFingerPrintQualityScore + 31) % Uuid.SIZE_BITS;
+        values = (getFingerPrintQualityScore + 31) % 128;
         super.PngjException(hashMap, hashMap2, bitmap, z, z2);
         if (!z) {
             int i = values + 29;
-            getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+            getFingerPrintQualityScore = i % 128;
             if (i % 2 == 0) {
                 int i2 = 42 / 0;
                 return;
@@ -750,7 +749,7 @@ public class Enroll4FActivity extends FingerActivity {
         try {
             try {
                 if (j2 != -1) {
-                    values = (getFingerPrintQualityScore + 75) % Uuid.SIZE_BITS;
+                    values = (getFingerPrintQualityScore + 75) % 128;
                     long j3 = j2 + 4611686018427387864L;
                     j = 0;
                     Object[] objArr2 = new Object[1];
@@ -782,7 +781,7 @@ public class Enroll4FActivity extends FingerActivity {
                         i = ((int[]) PngjException$1eba2e16[0])[0];
                         i2 = ((int[]) PngjException$1eba2e16[3])[0];
                         if (i2 != i) {
-                            values = (getFingerPrintQualityScore + 19) % Uuid.SIZE_BITS;
+                            values = (getFingerPrintQualityScore + 19) % 128;
                             Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
                             int i10 = ((int[]) PngjException$1eba2e16[1])[0];
                             int i11 = ((int[]) PngjException$1eba2e16[3])[0];
@@ -798,10 +797,10 @@ public class Enroll4FActivity extends FingerActivity {
                         ArrayList arrayList = new ArrayList();
                         String[] strArr3 = (String[]) PngjException$1eba2e16[2];
                         if (strArr3 != null) {
-                            values = (getFingerPrintQualityScore + 83) % Uuid.SIZE_BITS;
+                            values = (getFingerPrintQualityScore + 83) % 128;
                             while (i3 < strArr3.length) {
                                 int i15 = getFingerPrintQualityScore + 7;
-                                values = i15 % Uuid.SIZE_BITS;
+                                values = i15 % 128;
                                 if (i15 % 2 != 0) {
                                     arrayList.add(strArr3[i3]);
                                     i3 += 23;
@@ -891,7 +890,7 @@ public class Enroll4FActivity extends FingerActivity {
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(packedPositionChild, pressedStateDuration, i, 1560737410, false, (String) objArr2[0], new Class[]{Context.class, Integer.TYPE, getPadSub3B15685$PngjException.class});
             }
             ((Method) PngjBadSignature2).invoke(null, objArr);
-            values = (getFingerPrintQualityScore + 67) % Uuid.SIZE_BITS;
+            values = (getFingerPrintQualityScore + 67) % 128;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause == null) {
@@ -904,7 +903,7 @@ public class Enroll4FActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
         int i = values + 17;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onPause();
         if (i2 == 0) {
@@ -915,7 +914,7 @@ public class Enroll4FActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
         int i = values + 89;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 == 0) {
@@ -925,10 +924,10 @@ public class Enroll4FActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
-        getFingerPrintQualityScore = (values + 35) % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = (values + 35) % 128;
         super.onStart();
         int i = getFingerPrintQualityScore + 101;
-        values = i % Uuid.SIZE_BITS;
+        values = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -941,7 +940,7 @@ public class Enroll4FActivity extends FingerActivity {
             try {
                 this.onErrorResponse = new getOveralTimetaken(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException, true);
                 int i = values + 107;
-                getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+                getFingerPrintQualityScore = i % 128;
                 if (i % 2 == 0) {
                     throw null;
                 }

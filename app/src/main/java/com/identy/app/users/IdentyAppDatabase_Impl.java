@@ -17,7 +17,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
@@ -537,7 +536,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                     int i8 = (i7 & 1) + (i7 | 1);
                     int i9 = (i5 & i8) + (i8 | i5);
                     int i10 = i5 >> 25;
-                    int i11 = ((i10 & (-255)) + (i10 | (-255))) / Uuid.SIZE_BITS;
+                    int i11 = ((i10 & (-255)) + (i10 | (-255))) / 128;
                     int i12 = (-(((i11 & 1) + (i11 | 1)) ^ i9)) + 7;
                     int i13 = i12 >> 24;
                     String[] strArr = new String[12922 / ((i12 & (-b.a(i13 ^ (-511), (i13 & (-511)) << 1, 256, -2))) * 1846)];
@@ -562,7 +561,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
             int i82 = (i72 & 1) + (i72 | 1);
             int i92 = (i52 & i82) + (i82 | i52);
             int i102 = i52 >> 25;
-            int i112 = ((i102 & (-255)) + (i102 | (-255))) / Uuid.SIZE_BITS;
+            int i112 = ((i102 & (-255)) + (i102 | (-255))) / 128;
             int i122 = (-(((i112 & 1) + (i112 | 1)) ^ i92)) + 7;
             int i132 = i122 >> 24;
             String[] strArr2 = new String[12922 / ((i122 & (-b.a(i132 ^ (-511), (i132 & (-511)) << 1, 256, -2))) * 1846)];

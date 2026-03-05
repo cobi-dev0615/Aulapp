@@ -19,7 +19,6 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 import org.identy.opencv.core.Mat;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -1121,7 +1120,7 @@ public class PostCaptureOutPut {
                             int i7 = (((i5 ^ i6) + ((i5 & i6) << 1)) - (~(-(i4 * 939233517)))) - 1;
                             int i8 = (i7 ^ 394412032) + ((394412032 & i7) << 1);
                             int i9 = i8 >> 25;
-                            int i10 = ((i9 & (-255)) + (i9 | (-255))) / Uuid.SIZE_BITS;
+                            int i10 = ((i9 & (-255)) + (i9 | (-255))) / 128;
                             int i11 = (i10 ^ 1) + ((i10 & 1) << 1);
                             int i12 = (i8 ^ i11) + ((i11 & i8) << 1);
                             int i13 = i8 >> 18;

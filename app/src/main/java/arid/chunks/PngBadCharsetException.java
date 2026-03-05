@@ -23,7 +23,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public class PngBadCharsetException extends arid.PngjException {
@@ -119,7 +118,7 @@ public class PngBadCharsetException extends arid.PngjException {
     /* JADX WARN: Code restructure failed: missing block: B:210:0x225b, code lost:
     
         r0 = arid.chunks.PngBadCharsetException.PngjInputException + 95;
-        arid.chunks.PngBadCharsetException.PngjPrematureEnding = r0 % kotlin.uuid.Uuid.SIZE_BITS;
+        arid.chunks.PngBadCharsetException.PngjPrematureEnding = r0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:211:0x2267, code lost:
     
@@ -140,7 +139,7 @@ public class PngBadCharsetException extends arid.PngjException {
     /* JADX WARN: Code restructure failed: missing block: B:46:0x08de, code lost:
     
         r0 = arid.chunks.PngBadCharsetException.PngjPrematureEnding + 33;
-        arid.chunks.PngBadCharsetException.PngjInputException = r0 % kotlin.uuid.Uuid.SIZE_BITS;
+        arid.chunks.PngBadCharsetException.PngjInputException = r0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:479:0x2b21, code lost:
     
@@ -212,7 +211,7 @@ public class PngBadCharsetException extends arid.PngjException {
     /* JADX WARN: Code restructure failed: missing block: B:60:0x0b70, code lost:
     
         r0 = arid.chunks.PngBadCharsetException.PngjPrematureEnding;
-        arid.chunks.PngBadCharsetException.PngjInputException = ((r0 & 99) + (r0 | 99)) % kotlin.uuid.Uuid.SIZE_BITS;
+        arid.chunks.PngBadCharsetException.PngjInputException = ((r0 & 99) + (r0 | 99)) % 128;
         r0 = true;
      */
     /* JADX WARN: Code restructure failed: missing block: B:618:0x1cc4, code lost:
@@ -750,7 +749,7 @@ public class PngBadCharsetException extends arid.PngjException {
         c(null, null, 126 - TextUtils.indexOf((CharSequence) str, '0'), "\u0084\u0089\u0092\u0087\u008c\u008f\u0084", objArr29);
         String str6 = (String) objArr29[0];
         int i110 = -(SystemClock.elapsedRealtimeNanos() > j5 ? 1 : (SystemClock.elapsedRealtimeNanos() == j5 ? 0 : -1));
-        int i111 = (i110 ^ Uuid.SIZE_BITS) + ((i110 & Uuid.SIZE_BITS) << 1);
+        int i111 = (i110 ^ 128) + ((i110 & 128) << 1);
         Object[] objArr30 = new Object[1];
         c(null, null, i111, "\u0089\u0092\u0099\u0089\u0092\u0087\u0097\u0084\u0081", objArr30);
         String str7 = (String) objArr30[0];
@@ -760,7 +759,7 @@ public class PngBadCharsetException extends arid.PngjException {
         c(null, null, i113, "\u0086\u0083\u008d\u0083\u0084\u0086", objArr31);
         String str8 = (String) objArr31[0];
         int lastIndexOf2 = TextUtils.lastIndexOf(str, '0', 0);
-        int i114 = ((lastIndexOf2 | Uuid.SIZE_BITS) << 1) - (lastIndexOf2 ^ Uuid.SIZE_BITS);
+        int i114 = ((lastIndexOf2 | 128) << 1) - (lastIndexOf2 ^ 128);
         Object[] objArr32 = new Object[1];
         c(null, null, i114, "\u008d\u0089\u008a\u0081\u008c\u0097\u0092\u0084\u0096\u008e\u0086\u0091\u0086", objArr32);
         String str9 = (String) objArr32[0];
@@ -920,7 +919,7 @@ public class PngBadCharsetException extends arid.PngjException {
             int i153 = ((int) j45) & ((((-118319557) | i9) * 754) + (((~((-67447109) | i)) | (~((-1488098859) | i9))) * (-754)) + (((((~((-118319557) | i)) | 67447108) | (~((-1555545967) | i))) * (-754)) - 2063007093));
             if (((i152 & i153) | (i152 ^ i153)) != 0) {
                 int i154 = PngjInputException + 105;
-                PngjPrematureEnding = i154 % Uuid.SIZE_BITS;
+                PngjPrematureEnding = i154 % 128;
                 if (i154 % 2 == 0) {
                     Object[] objArr62 = new Object[1];
                     c(null, null, TextUtils.getCapsMode(str, 0, 1) * 57, "\u0089\u0092\u0089\u008c\u008e\u008d\u0090\u0085\u008c\u0091\u0090\u008f\u008a\u008e\u008d\u008c\u0084\u0082\u0089\u008b\u008a\u0082\u0089", objArr62);
@@ -972,7 +971,7 @@ public class PngBadCharsetException extends arid.PngjException {
                     }
                     Object invoke7 = ((Method) PngjBadSignature16).invoke(null, objArr69);
                     Object[] objArr71 = new Object[1];
-                    c(null, null, (ExpandableListView.getPackedPositionForChild(0, 0) > j5 ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == j5 ? 0 : -1)) + Uuid.SIZE_BITS, "\u0089\u0092\u0089\u008c\u008e\u008d\u0090\u0085\u008c\u0091\u0090\u008f\u008a\u008f\u0092\u008e\u0087\u0093\u0087\u008a\u008e\u008d\u008c\u0084\u0082\u0089\u008b\u008a\u0082\u0089", objArr71);
+                    c(null, null, (ExpandableListView.getPackedPositionForChild(0, 0) > j5 ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == j5 ? 0 : -1)) + 128, "\u0089\u0092\u0089\u008c\u008e\u008d\u0090\u0085\u008c\u0091\u0090\u008f\u008a\u008f\u0092\u008e\u0087\u0093\u0087\u008a\u008e\u008d\u008c\u0084\u0082\u0089\u008b\u008a\u0082\u0089", objArr71);
                     Object[] objArr72 = {(String) objArr71[0]};
                     Object PngjBadSignature17 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i12);
                     if (PngjBadSignature17 == null) {
@@ -1170,7 +1169,7 @@ public class PngBadCharsetException extends arid.PngjException {
                 if (j6 > j5) {
                     int i192 = PngjPrematureEnding;
                     int i193 = ((i192 | 83) << 1) - (i192 ^ 83);
-                    PngjInputException = i193 % Uuid.SIZE_BITS;
+                    PngjInputException = i193 % 128;
                     if (i193 % 2 == 0 ? j82 > j5 : j82 > j5) {
                         if (j82 - 3 < j6) {
                             z2 = true;
@@ -1244,11 +1243,11 @@ public class PngBadCharsetException extends arid.PngjException {
                             long j93 = (i209 & i210) | (i209 ^ i210);
                             if ((j7 > j5 ? '\n' : (char) 29) != 29 && j93 > j5) {
                                 int i211 = PngjInputException + 31;
-                                PngjPrematureEnding = i211 % Uuid.SIZE_BITS;
+                                PngjPrematureEnding = i211 % 128;
                                 if (i211 % 2 == 0) {
                                 }
                                 if (!z3) {
-                                    PngjPrematureEnding = (PngjInputException + 67) % Uuid.SIZE_BITS;
+                                    PngjPrematureEnding = (PngjInputException + 67) % 128;
                                     Object[] objArr95 = {new int[]{(i & (-249)) | (i9 & 248)}, new int[1], null, new int[]{i}};
                                     int myUid2 = Process.myUid();
                                     int i212 = (((~((~myUid2) | 251942316)) | (-782623658)) * 168) + (((~(myUid2 | 251942316)) | (-799405998)) * (-168)) + ((((~((-782623658) | myUid2)) | 235159976) * 336) - 973825651);
@@ -1306,7 +1305,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                 int i239 = 0;
                                 while (i239 < 7) {
                                     int i240 = PngjPrematureEnding + 83;
-                                    PngjInputException = i240 % Uuid.SIZE_BITS;
+                                    PngjInputException = i240 % 128;
                                     if (i240 % 2 != 0) {
                                         Object[] objArr103 = {strArr5[i239]};
                                         Object PngjBadSignature25 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1492900309);
@@ -1400,7 +1399,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                 }
                                 i13 = 0;
                                 if (i13 != 0) {
-                                    PngjPrematureEnding = (PngjInputException + 81) % Uuid.SIZE_BITS;
+                                    PngjPrematureEnding = (PngjInputException + 81) % 128;
                                     Object[] objArr107 = {new int[]{(i13 & i9) | ((~i13) & i)}, new int[1], null, new int[]{i}};
                                     int i257 = ((933738239 | i9) * 756) + ((((~(i | 933738239)) | 100827734) * (-756)) - 1580550591);
                                     int i258 = (i257 ^ 16) + ((i257 & 16) << 1);
@@ -1430,7 +1429,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                 try {
                                     int i278 = -(-TextUtils.lastIndexOf(str, '0'));
                                     objArr2 = new Object[1];
-                                    c(null, null, (i278 & Uuid.SIZE_BITS) + (i278 | Uuid.SIZE_BITS), "\u008e\u0087\u0082\u0088\u008a\u0084\u0083\u0086\u008c\u0097\u008a\u0082\u0089", objArr2);
+                                    c(null, null, (i278 & 128) + (i278 | 128), "\u008e\u0087\u0082\u0088\u008a\u0084\u0083\u0086\u008c\u0097\u008a\u0082\u0089", objArr2);
                                 } catch (Exception unused) {
                                 }
                                 try {
@@ -1449,7 +1448,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                     String str39 = (String) ((Method) PngjBadSignature27).invoke(null, objArr108);
                                     if (str39 != null) {
                                         int i279 = PngjPrematureEnding;
-                                        PngjInputException = (((i279 | 11) << 1) - (i279 ^ 11)) % Uuid.SIZE_BITS;
+                                        PngjInputException = (((i279 | 11) << 1) - (i279 ^ 11)) % 128;
                                         Object[] objArr110 = new Object[1];
                                         b(new int[]{240, 11, 0, 7}, "\u0001\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0001", true, objArr110);
                                         String[] strArr6 = {(String) objArr110[0]};
@@ -1461,7 +1460,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                             }
                                             int i281 = PngjInputException;
                                             int i282 = (i281 & 85) + (i281 | 85);
-                                            PngjPrematureEnding = i282 % Uuid.SIZE_BITS;
+                                            PngjPrematureEnding = i282 % 128;
                                             if ((i282 % 2 == 0 ? 'R' : (char) 22) == 'R') {
                                                 str39.contains(strArr6[i280]);
                                                 throw null;
@@ -1492,7 +1491,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                         if (invoke8 != null) {
                                             int i284 = PngjInputException;
                                             int i285 = (i284 & 75) + (i284 | 75);
-                                            PngjPrematureEnding = i285 % Uuid.SIZE_BITS;
+                                            PngjPrematureEnding = i285 % 128;
                                             if (i285 % 2 == 0) {
                                                 Object[] objArr114 = new Object[1];
                                                 c(null, null, 94 % (KeyEvent.getMaxKeyCode() - 90), "\u0081\u0091\u0086\u0091\u0091\u008c\u0089", objArr114);
@@ -1638,7 +1637,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                                                 c(null, null, i331, "\u0094\u008e\u0082\u0082\u0089\u0096\u0084\u0092\u0092\u0091\u0096\u0092\u009b\u0094\u0089\u0087\u008c\u0094\u008f\u0092\u008e\u0087\u0093\u0087\u0094", objArr133);
                                                                 String str48 = (String) objArr133[0];
                                                                 int i332 = -(-Process.getGidForName(str));
-                                                                int i333 = (i332 & Uuid.SIZE_BITS) + (i332 | Uuid.SIZE_BITS);
+                                                                int i333 = (i332 & 128) + (i332 | 128);
                                                                 Object[] objArr134 = new Object[1];
                                                                 c(null, null, i333, "\u0094\u0091\u0086\u0097\u009d\u0094\u008f\u0092\u008e\u0087\u0093\u0087\u0094", objArr134);
                                                                 String str49 = (String) objArr134[0];
@@ -1730,14 +1729,14 @@ public class PngBadCharsetException extends arid.PngjException {
                                                                                 break;
                                                                             }
                                                                             int i345 = PngjInputException;
-                                                                            PngjPrematureEnding = (i345 + 117) % Uuid.SIZE_BITS;
+                                                                            PngjPrematureEnding = (i345 + 117) % 128;
                                                                             BufferedInputStream bufferedInputStream6 = bufferedInputStream5;
                                                                             if ((j119 == jArr[i343] ? (char) 3 : (char) 25) != 3) {
                                                                                 i343 = ((i343 | 1) << 1) - (i343 ^ 1);
                                                                                 bufferedInputStream5 = bufferedInputStream6;
                                                                                 i344 = 1;
                                                                             } else {
-                                                                                PngjPrematureEnding = (i345 + 29) % Uuid.SIZE_BITS;
+                                                                                PngjPrematureEnding = (i345 + 29) % 128;
                                                                                 i16 = ((i343 | 1) << 1) - (i343 ^ 1);
                                                                                 try {
                                                                                     bufferedInputStream6.close();
@@ -1788,7 +1787,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                                         } else {
                                                             int i346 = PngjInputException;
                                                             int i347 = (i346 & 65) + (i346 | 65);
-                                                            PngjPrematureEnding = i347 % Uuid.SIZE_BITS;
+                                                            PngjPrematureEnding = i347 % 128;
                                                             i17 = i347 % 2 == 0 ? 1 : 0;
                                                         }
                                                         if ((i17 != 0 ? '9' : '\\') != '\\') {
@@ -1824,7 +1823,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                                                             try {
                                                                                 if (!(j120 == jArr2[i356])) {
                                                                                     i356++;
-                                                                                    PngjPrematureEnding = (PngjInputException + 55) % Uuid.SIZE_BITS;
+                                                                                    PngjPrematureEnding = (PngjInputException + 55) % 128;
                                                                                 } else {
                                                                                     i18 = i356 + 1;
                                                                                     try {
@@ -1865,7 +1864,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                                         }
                                                         i18 = 0;
                                                         if (!(i18 == 0)) {
-                                                            PngjInputException = (PngjPrematureEnding + 55) % Uuid.SIZE_BITS;
+                                                            PngjInputException = (PngjPrematureEnding + 55) % 128;
                                                             Object[] objArr144 = {new int[]{r6}, new int[]{(r1 | r2) & (~(r1 & r2))}, null, new int[]{i}};
                                                             int i357 = (~(i & 242)) & (i | 242);
                                                             int i358 = ((i | 594976258) * 104) + ((~(997695315 | i9)) * (-104)) + (((~((-439589716) | i)) | 36870658) * 104) + 813887181;
@@ -1906,7 +1905,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                                         if (((i367 & i372) | (i367 ^ i372)) != 0) {
                                                             int i373 = PngjPrematureEnding;
                                                             int i374 = (i373 & 31) + (i373 | 31);
-                                                            PngjInputException = i374 % Uuid.SIZE_BITS;
+                                                            PngjInputException = i374 % 128;
                                                             if (i374 % 2 == 0) {
                                                                 z4 = true;
                                                                 if (z4) {
@@ -1930,7 +1929,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                                                     long j133 = ((j131 * ((((j132 | j129) ^ j2) | ((j3 | longValue20) ^ j2)) | ((j128 | longValue20) ^ j2))) + ((((longValue20 | j132) | j3) * j131) + j130)) - 536932920;
                                                                     if (((((int) (j133 >> 32)) & (((~(i9 | (-1969658710))) * 301) + (((~(888082175 | i)) | (-1978638336) | (~((-879102550) | i9))) * (-301)) + (((~(888082175 | i9)) | (-1969658710)) * (-602)) + 88894062)) | (((int) j133) & ((((~(222849762 | i)) | (~((-1214376648) | i9))) * 333) + ((((~(222849762 | i9)) | (~((-1214376648) | i))) * 333) - 903196991)))) != 0) {
                                                                         int i375 = PngjInputException;
-                                                                        PngjPrematureEnding = ((i375 & 17) + (i375 | 17)) % Uuid.SIZE_BITS;
+                                                                        PngjPrematureEnding = ((i375 & 17) + (i375 | 17)) % 128;
                                                                         i19 = (~(i & 281)) & (i | 281);
                                                                     } else {
                                                                         i19 = i;
@@ -2092,7 +2091,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                                                             int i428 = ~i427;
                                                                             int i429 = ((int) j155) & ((((~(i427 | 1111884610)) | (~(i428 | (-1073873153)))) * 765) + (((-1399214952) | (~(1111884610 | i428))) * 1530) + (((((~(1399214951 | i428)) | (~((-287330342) | i427))) | (~((-1073873153) | i427))) * 765) - 1282446965));
                                                                             if (((i426 & i429) | (i426 ^ i429)) == 2) {
-                                                                                PngjPrematureEnding = (PngjInputException + 19) % Uuid.SIZE_BITS;
+                                                                                PngjPrematureEnding = (PngjInputException + 19) % 128;
                                                                                 Object[] objArr154 = {new int[]{r6}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{i}};
                                                                                 int i430 = (~(i & 270)) & (i | 270);
                                                                                 int i431 = (i2 - (~a.c((~(9926723 | i9)) | (-1024639251), 305, (((~(i | 9926723)) | (-1033369940)) * 305) - 1250391556, 16))) - 1;
@@ -2266,7 +2265,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                                                                 int i492 = ((~i490) & i491) | ((~i491) & i490);
                                                                                 int i493 = PngjPrematureEnding;
                                                                                 int i494 = (i493 & 65) + (i493 | 65);
-                                                                                PngjInputException = i494 % Uuid.SIZE_BITS;
+                                                                                PngjInputException = i494 % 128;
                                                                                 if (i494 % 2 == 0) {
                                                                                     return objArr166;
                                                                                 }
@@ -2395,7 +2394,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                                         if ((((int[]) objArr[3])[c] != ((int[]) objArr[c])[c] ? 'O' : 'P') != 'P') {
                                                         }
                                                     }
-                                                    PngjInputException = (PngjPrematureEnding + 111) % Uuid.SIZE_BITS;
+                                                    PngjInputException = (PngjPrematureEnding + 111) % 128;
                                                 } catch (Throwable th7) {
                                                     Throwable cause3 = th7.getCause();
                                                     if (cause3 != null) {
@@ -2421,7 +2420,7 @@ public class PngBadCharsetException extends arid.PngjException {
                                                     if (i14 != 0) {
                                                     }
                                                 }
-                                                PngjInputException = (PngjPrematureEnding + 111) % Uuid.SIZE_BITS;
+                                                PngjInputException = (PngjPrematureEnding + 111) % 128;
                                             }
                                             cause = th.getCause();
                                             if (cause == null) {
@@ -2526,7 +2525,7 @@ public class PngBadCharsetException extends arid.PngjException {
         String str2 = str;
         byte[] bArr2 = str2;
         if (str2 != null) {
-            $10 = ($11 + 53) % Uuid.SIZE_BITS;
+            $10 = ($11 + 53) % 128;
             bArr2 = str2.getBytes("ISO-8859-1");
         }
         byte[] bArr3 = bArr2;
@@ -2580,7 +2579,7 @@ public class PngBadCharsetException extends arid.PngjException {
         char[] cArr3 = new char[i5];
         System.arraycopy(cArr, i4, cArr3, 0, i5);
         if (bArr4 != null) {
-            $11 = ($10 + 47) % Uuid.SIZE_BITS;
+            $11 = ($10 + 47) % 128;
             char[] cArr4 = new char[i5];
             e1Var.PngjBadSignature = 0;
             char c3 = 0;
@@ -2590,7 +2589,7 @@ public class PngBadCharsetException extends arid.PngjException {
                     break;
                 }
                 int i11 = $11 + 29;
-                $10 = i11 % Uuid.SIZE_BITS;
+                $10 = i11 % 128;
                 if (i11 % 2 != 0) {
                     if (bArr4[i10] == 0) {
                         c = 1;
@@ -2653,7 +2652,7 @@ public class PngBadCharsetException extends arid.PngjException {
                 if (i13 >= i5) {
                     break;
                 }
-                $10 = ($11 + 29) % Uuid.SIZE_BITS;
+                $10 = ($11 + 29) % 128;
                 cArr6[i13] = cArr3[(i5 - i13) - 1];
                 i2 = i13 + 1;
             }
@@ -2666,7 +2665,7 @@ public class PngBadCharsetException extends arid.PngjException {
                 if (i14 >= i5) {
                     break;
                 }
-                $11 = ($10 + 33) % Uuid.SIZE_BITS;
+                $11 = ($10 + 33) % 128;
                 cArr3[i14] = (char) (cArr3[i14] - iArr[2]);
                 e1Var.PngjBadSignature = i14 + 1;
             }
@@ -2689,7 +2688,7 @@ public class PngBadCharsetException extends arid.PngjException {
         byte[] bArr2 = bArr;
         if (str != null) {
             int i4 = $10 + 121;
-            $11 = i4 % Uuid.SIZE_BITS;
+            $11 = i4 % 128;
             if (i4 % 2 == 0) {
                 cArr = str.toCharArray();
                 int i5 = 16 / 0;
@@ -2705,7 +2704,7 @@ public class PngBadCharsetException extends arid.PngjException {
         Class cls = Integer.TYPE;
         if (cArr4 != null) {
             int i6 = $10 + 49;
-            $11 = i6 % Uuid.SIZE_BITS;
+            $11 = i6 % 128;
             if (i6 % 2 == 0) {
                 length = cArr4.length;
                 cArr2 = new char[length];
@@ -2716,7 +2715,7 @@ public class PngBadCharsetException extends arid.PngjException {
                 i3 = 0;
             }
             while (i3 < length) {
-                $11 = ($10 + 95) % Uuid.SIZE_BITS;
+                $11 = ($10 + 95) % 128;
                 try {
                     Object[] objArr2 = {Integer.valueOf(cArr4[i3])};
                     Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(358189806);
@@ -2755,13 +2754,13 @@ public class PngBadCharsetException extends arid.PngjException {
         if (PngjExceptionInternal) {
             int i9 = $10;
             int i10 = i9 + 25;
-            $11 = i10 % Uuid.SIZE_BITS;
+            $11 = i10 % 128;
             int i11 = i10 % 2;
             int length2 = bArr2.length;
             pngjExceptionInternal.PngjException = length2;
             char[] cArr5 = new char[length2];
             pngjExceptionInternal.values = 0;
-            $11 = (i9 + 35) % Uuid.SIZE_BITS;
+            $11 = (i9 + 35) % 128;
             while (true) {
                 int i12 = pngjExceptionInternal.values;
                 int i13 = pngjExceptionInternal.PngjException;

@@ -52,7 +52,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import kotlin.jvm.internal.ByteCompanionObject;
-import kotlin.uuid.Uuid;
 import org.camera.preview.PngjBadCrcException;
 import org.identy.nativealgo.NativeAlgoUtils;
 import org.identy.opencv.android.Utils;
@@ -199,12 +198,12 @@ abstract class getL3Score extends e1 {
 
             private static void a(String str, int i, Object[] objArr) {
                 char[] cArr;
-                int i2 = ($11 + 83) % Uuid.SIZE_BITS;
+                int i2 = ($11 + 83) % 128;
                 $10 = i2;
                 if (str != null) {
-                    $11 = (i2 + 85) % Uuid.SIZE_BITS;
+                    $11 = (i2 + 85) % 128;
                     cArr = str.toCharArray();
-                    $11 = ($10 + 117) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 117) % 128;
                 } else {
                     cArr = str;
                 }
@@ -215,7 +214,7 @@ abstract class getL3Score extends e1 {
                     int i3 = aVar.PngjBadSignature;
                     if (i3 >= values2.length) {
                         String str2 = new String(values2, 4, values2.length - 4);
-                        $11 = ($10 + 79) % Uuid.SIZE_BITS;
+                        $11 = ($10 + 79) % 128;
                         objArr[0] = str2;
                         return;
                     }
@@ -239,7 +238,7 @@ abstract class getL3Score extends e1 {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1)) + 14829), 28 - Color.argb(0, 0, 0, 0), 721 - View.resolveSize(0, 0), -1356718115, false, $$e((byte) 14, b, b), new Class[]{Object.class, Object.class});
                         }
                         ((Method) PngjBadSignature2).invoke(null, objArr3);
-                        $10 = ($11 + 15) % Uuid.SIZE_BITS;
+                        $10 = ($11 + 15) % 128;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
                         if (cause == null) {
@@ -309,7 +308,7 @@ abstract class getL3Score extends e1 {
                     int[] iArr7 = new int[length3];
                     int i10 = 0;
                     while (i10 < length3) {
-                        $10 = ($11 + 43) % Uuid.SIZE_BITS;
+                        $10 = ($11 + 43) % 128;
                         Object[] objArr3 = {Integer.valueOf(iArr6[i10])};
                         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1618428774);
                         if (PngjBadSignature2 == null) {
@@ -335,14 +334,14 @@ abstract class getL3Score extends e1 {
                 int i11 = i9;
                 System.arraycopy(iArr6, 0, iArr5, 0, length2);
                 pngBadCharsetException.values = 0;
-                $10 = ($11 + 41) % Uuid.SIZE_BITS;
+                $10 = ($11 + 41) % 128;
                 while (true) {
                     int i12 = pngBadCharsetException.values;
                     if (i12 >= iArr.length) {
                         objArr[0] = new String(cArr3, 0, i);
                         return;
                     }
-                    $11 = ($10 + 73) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 73) % 128;
                     int i13 = iArr[i12];
                     char c2 = (char) (i13 >> 16);
                     cArr4[0] = c2;
@@ -456,13 +455,13 @@ abstract class getL3Score extends e1 {
 
             @Override // com.identy.c.PngjBadCrcException
             public final void valueOf() {
-                int i = (PngjBadCrcException + 77) % Uuid.SIZE_BITS;
+                int i = (PngjBadCrcException + 77) % 128;
                 PngjOutputException = i;
                 getL3Score getl3score = getL3Score.this;
                 int i2 = getl3score.getShortform - 1;
                 getl3score.getShortform = i2;
                 if (i2 <= 0) {
-                    PngjBadCrcException = (i + 55) % Uuid.SIZE_BITS;
+                    PngjBadCrcException = (i + 55) % 128;
                     long timeInMillis = Calendar.getInstance().getTimeInMillis();
                     getL3Score getl3score2 = getL3Score.this;
                     getl3score.Enroll2IndexActivity = (int) (timeInMillis - getl3score2.EnrollThumbActivity);
@@ -472,7 +471,7 @@ abstract class getL3Score extends e1 {
                     getl3score3.valueOf();
                     com.identy.d.PngjBadSignature pngjBadSignature = getL3Score.this.Attempt;
                     if (pngjBadSignature != null) {
-                        PngjBadCrcException = (PngjOutputException + 35) % Uuid.SIZE_BITS;
+                        PngjBadCrcException = (PngjOutputException + 35) % 128;
                         pngjBadSignature.PngjException(this.PngjBadSignature, null, null, true, false);
                     }
                 }
@@ -906,7 +905,7 @@ abstract class getL3Score extends e1 {
         handlerThread.start();
         new Handler(getl3score.getFingers.getLooper()).post(getl3score.new PngjBadSignature(mat));
         int i = generate + 5;
-        rgenerate = i % Uuid.SIZE_BITS;
+        rgenerate = i % 128;
         if (i % 2 == 0) {
             return null;
         }
@@ -937,7 +936,7 @@ abstract class getL3Score extends e1 {
         Iterator it = getl3score.pfkrolfinalizeF.iterator();
         while (it.hasNext()) {
             arrayList.add(new Pair(getl3score.a, (Finger) it.next()));
-            rgenerate = (generate + 111) % Uuid.SIZE_BITS;
+            rgenerate = (generate + 111) % 128;
         }
         return (Pair[]) arrayList.toArray(new Pair[arrayList.size()]);
     }
@@ -960,7 +959,7 @@ abstract class getL3Score extends e1 {
         int i8 = 16;
         int i9 = 0;
         if (iArr3 != null) {
-            $11 = ($10 + 23) % Uuid.SIZE_BITS;
+            $11 = ($10 + 23) % 128;
             int length = iArr3.length;
             int[] iArr4 = new int[length];
             int i10 = 0;
@@ -994,7 +993,7 @@ abstract class getL3Score extends e1 {
             i2 = i7;
             i3 = i8;
             i4 = 1618428774;
-            $11 = ($10 + 101) % Uuid.SIZE_BITS;
+            $11 = ($10 + 101) % 128;
             iArr3 = iArr4;
         } else {
             i2 = 2;
@@ -1010,7 +1009,7 @@ abstract class getL3Score extends e1 {
             int i11 = 0;
             while (i11 < length3) {
                 int i12 = $11 + 69;
-                $10 = i12 % Uuid.SIZE_BITS;
+                $10 = i12 % 128;
                 if (i12 % 2 != 0) {
                     Object[] objArr3 = {Integer.valueOf(iArr6[i11])};
                     Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i4);
@@ -1069,7 +1068,7 @@ abstract class getL3Score extends e1 {
             int i15 = 0;
             while (i15 < i3) {
                 int i16 = $10 + 19;
-                $11 = i16 % Uuid.SIZE_BITS;
+                $11 = i16 % 128;
                 if (i16 % 2 == 0) {
                     int i17 = pngBadCharsetException.PngjException ^ iArr5[i15];
                     pngBadCharsetException.PngjException = i17;
@@ -1224,14 +1223,14 @@ abstract class getL3Score extends e1 {
     }
 
     private void getScore() {
-        generate = (rgenerate + 37) % Uuid.SIZE_BITS;
+        generate = (rgenerate + 37) % 128;
         if (this.destroy.equals("focus_mode_continuous_video")) {
             this.destroy = "focus_mode_continuous_picture";
         } else if (!this.destroy.equals("focus_mode_continuous_picture")) {
             this.destroy = "focus_mode_continuous_video";
         } else {
             this.destroy = "focus_mode_auto";
-            generate = (rgenerate + 37) % Uuid.SIZE_BITS;
+            generate = (rgenerate + 37) % 128;
         }
     }
 
@@ -1258,13 +1257,13 @@ abstract class getL3Score extends e1 {
         RectF rectF2 = new RectF(rectF);
         RectF rectF3 = new RectF();
         matrix.mapRect(rectF3, rectF2);
-        generate = (rgenerate + 65) % Uuid.SIZE_BITS;
+        generate = (rgenerate + 65) % 128;
         return rectF3;
     }
 
     public final int Attempt() {
         int i = generate + 123;
-        rgenerate = i % Uuid.SIZE_BITS;
+        rgenerate = i % 128;
         if (i % 2 != 0) {
             this.a.equals(Hand.LEFT);
             throw null;
@@ -1273,7 +1272,7 @@ abstract class getL3Score extends e1 {
             int i2 = this.getProcessingTime;
             if (i2 == 1) {
                 int i3 = rgenerate + 109;
-                generate = i3 % Uuid.SIZE_BITS;
+                generate = i3 % 128;
                 if (i3 % 2 != 0 ? i2 == 1 : i2 == 0) {
                     if (this.pfkrolfinalizeF.size() == 1) {
                         if (((Finger) this.pfkrolfinalizeF.get(0)).equals(Finger.INDEX)) {
@@ -1298,11 +1297,11 @@ abstract class getL3Score extends e1 {
         }
         if (this.getProcessingTime == 1) {
             int i4 = generate + 43;
-            rgenerate = i4 % Uuid.SIZE_BITS;
+            rgenerate = i4 % 128;
             if (i4 % 2 == 0 ? this.pfkrolfinalizeF.size() == 1 : this.pfkrolfinalizeF.size() == 1) {
                 if (((Finger) this.pfkrolfinalizeF.get(0)).equals(Finger.INDEX)) {
                     int i5 = generate + 43;
-                    rgenerate = i5 % Uuid.SIZE_BITS;
+                    rgenerate = i5 % 128;
                     if (i5 % 2 == 0) {
                         return R.string.id_searching_left_index;
                     }
@@ -1319,7 +1318,7 @@ abstract class getL3Score extends e1 {
                 }
                 if (((Finger) this.pfkrolfinalizeF.get(0)).equals(Finger.THUMB)) {
                     int i6 = generate + 125;
-                    rgenerate = i6 % Uuid.SIZE_BITS;
+                    rgenerate = i6 % 128;
                     if (i6 % 2 == 0) {
                         return R.string.id_searching_left_thumb;
                     }
@@ -1333,11 +1332,11 @@ abstract class getL3Score extends e1 {
 
     @Override // com.identy.e1
     public final void PngjBadCrcException() {
-        int i = (generate + 91) % Uuid.SIZE_BITS;
+        int i = (generate + 91) % 128;
         rgenerate = i;
         this.getMatchingTime = false;
         int i2 = i + 67;
-        generate = i2 % Uuid.SIZE_BITS;
+        generate = i2 % 128;
         if (i2 % 2 == 0) {
             int i3 = 22 / 0;
         }
@@ -1373,7 +1372,7 @@ abstract class getL3Score extends e1 {
             this.getL2Score.values(this.getPadSub2, this.getPadSub3, this.getData.intValue(), this.CaptureRolledFingersActivity);
         }
         if (this.getQualityScore < 1) {
-            generate = (rgenerate + 87) % Uuid.SIZE_BITS;
+            generate = (rgenerate + 87) % 128;
             com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
             if (pngjBadSignature != null) {
                 pngjBadSignature.getData();
@@ -1384,20 +1383,20 @@ abstract class getL3Score extends e1 {
             return false;
         }
         this.getCaptureTime = true;
-        rgenerate = (generate + 19) % Uuid.SIZE_BITS;
+        rgenerate = (generate + 19) % 128;
         values(new PngjException());
         return true;
     }
 
     @Override // com.identy.e1
     public final void a() {
-        generate = (rgenerate + 29) % Uuid.SIZE_BITS;
+        generate = (rgenerate + 29) % 128;
         super.a();
         int Attempt = Attempt();
         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
         if (pngjBadSignature != null) {
             pngjBadSignature.PngjBadSignature(Attempt, false);
-            generate = (rgenerate + 89) % Uuid.SIZE_BITS;
+            generate = (rgenerate + 89) % 128;
         }
         this.onErrorResponse = false;
         this.getQualityScore = 0L;
@@ -1413,7 +1412,7 @@ abstract class getL3Score extends e1 {
     @Override // com.identy.e1
     public final void e1() {
         int i = rgenerate + 101;
-        generate = i % Uuid.SIZE_BITS;
+        generate = i % 128;
         try {
             if (i % 2 == 0) {
                 super.e1();
@@ -1429,13 +1428,13 @@ abstract class getL3Score extends e1 {
         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
         if (pngjBadSignature != null) {
             int i2 = rgenerate + 43;
-            generate = i2 % Uuid.SIZE_BITS;
+            generate = i2 % 128;
             if (i2 % 2 == 0) {
                 pngjBadSignature.PngjBadSignature(Attempt, true);
             } else {
                 pngjBadSignature.PngjBadSignature(Attempt, false);
             }
-            rgenerate = (generate + 9) % Uuid.SIZE_BITS;
+            rgenerate = (generate + 9) % 128;
         }
     }
 
@@ -1444,14 +1443,14 @@ abstract class getL3Score extends e1 {
         super.getPadSub1();
         AsyncTask.execute(new valueOf());
         if (this.getL1Score != null) {
-            rgenerate = (generate + 3) % Uuid.SIZE_BITS;
+            rgenerate = (generate + 3) % 128;
             this.getL1Score = null;
         }
         if (this.Capture2TActivity != null) {
-            rgenerate = (generate + 97) % Uuid.SIZE_BITS;
+            rgenerate = (generate + 97) % 128;
             this.Capture2TActivity = null;
         }
-        rgenerate = (generate + 113) % Uuid.SIZE_BITS;
+        rgenerate = (generate + 113) % 128;
     }
 
     public final void getPadSub3() {
@@ -1532,7 +1531,7 @@ abstract class getL3Score extends e1 {
             i5 = 3;
             if (context != null) {
                 if (context instanceof ContextWrapper) {
-                    generate = (rgenerate + 29) % Uuid.SIZE_BITS;
+                    generate = (rgenerate + 29) % 128;
                     if (((ContextWrapper) context).getBaseContext() == null) {
                         context2 = null;
                     }
@@ -1547,7 +1546,7 @@ abstract class getL3Score extends e1 {
             Object[] objArr7 = new Object[1];
             e(new int[]{246717870, -1706160973, -857543913, -798526455, 1427215364, -1489066450, -683683737, -1871066575}, 15 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0), objArr7);
             int intValue2 = ((Integer) cls.getMethod((String) objArr7[0], Object.class).invoke(null, this)).intValue();
-            rgenerate = (generate + 21) % Uuid.SIZE_BITS;
+            rgenerate = (generate + 21) % 128;
             try {
                 Object[] objArr8 = new Object[i3];
                 objArr8[3] = 2030180533;
@@ -1568,7 +1567,7 @@ abstract class getL3Score extends e1 {
                 objArr = (Object[]) cls2.getMethod(str3, Context.class, cls3, cls3, cls3).invoke(null, objArr8);
                 if (context2 != null) {
                     int i12 = rgenerate + 41;
-                    generate = i12 % Uuid.SIZE_BITS;
+                    generate = i12 % 128;
                     try {
                         if (i12 % 2 == 0) {
                             Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i2);
@@ -1738,7 +1737,7 @@ abstract class getL3Score extends e1 {
             try {
                 try {
                     if (j3 != -1) {
-                        rgenerate = (generate + 89) % Uuid.SIZE_BITS;
+                        rgenerate = (generate + 89) % 128;
                         if (j3 + 4611686018427387904L >= ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
                             Object PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                             if (PngjBadSignature13 == null) {
@@ -1763,13 +1762,13 @@ abstract class getL3Score extends e1 {
                             int i36 = c13 ^ (c13 << 13);
                             int i37 = i36 ^ (i36 >>> 17);
                             ((int[]) PngjBadCrcException$1eba2e16[1])[0] = i37 ^ (i37 << 5);
-                            rgenerate = (generate + 45) % Uuid.SIZE_BITS;
+                            rgenerate = (generate + 45) % 128;
                             c3 = 5;
                             c4 = 0;
                             i7 = ((int[]) PngjBadCrcException$1eba2e16[c4])[c4];
                             i8 = ((int[]) PngjBadCrcException$1eba2e16[i5])[c4];
                             if (i8 != i7) {
-                                rgenerate = (generate + 69) % Uuid.SIZE_BITS;
+                                rgenerate = (generate + 69) % 128;
                                 Object[] objArr22 = new Object[4];
                                 int[] iArr3 = new int[1];
                                 objArr22[c4] = iArr3;
@@ -1795,12 +1794,12 @@ abstract class getL3Score extends e1 {
                                 ArrayList arrayList2 = new ArrayList();
                                 String[] strArr2 = (String[]) PngjBadCrcException$1eba2e16[i4];
                                 if (strArr2 != null) {
-                                    rgenerate = (generate + 49) % Uuid.SIZE_BITS;
+                                    rgenerate = (generate + 49) % 128;
                                     int i46 = 0;
                                     while (i46 < strArr2.length) {
                                         arrayList2.add(strArr2[i46]);
                                         i46++;
-                                        generate = (rgenerate + 27) % Uuid.SIZE_BITS;
+                                        generate = (rgenerate + 27) % 128;
                                     }
                                 }
                                 Toast.makeText((Context) null, i8 / (((i8 - 1) * i8) % 2), 0).show();
@@ -1881,7 +1880,7 @@ abstract class getL3Score extends e1 {
                                 ((Field) PngjBadSignature5).set(null, valueOf4);
                                 i4 = 2;
                             } else {
-                                generate = (rgenerate + 125) % Uuid.SIZE_BITS;
+                                generate = (rgenerate + 125) % 128;
                                 Object PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
                                 if (PngjBadSignature14 == null) {
                                     char red = (char) Color.red(0);
@@ -1910,7 +1909,7 @@ abstract class getL3Score extends e1 {
                             Object obj2 = objArr2[1];
                             i10 = ((int[]) obj2)[0];
                             if (i10 != i9) {
-                                generate = (rgenerate + 21) % Uuid.SIZE_BITS;
+                                generate = (rgenerate + 21) % 128;
                                 Object[] objArr33 = {new int[1], new int[1], new int[1]};
                                 int i56 = ((int[]) objArr2[0])[0];
                                 int i57 = ((int[]) obj2)[0];
@@ -2053,7 +2052,7 @@ abstract class getL3Score extends e1 {
         if (Mat.n_empty(mat.PngjException) || new org.identy.opencv.core.valueOf(Mat.n_size(mat.PngjException)).PngjBadSignature == 0.0d || new org.identy.opencv.core.valueOf(Mat.n_size(mat.PngjException)).values == 0.0d) {
             return null;
         }
-        rgenerate = (generate + 57) % Uuid.SIZE_BITS;
+        rgenerate = (generate + 57) % 128;
         RResult pfkrol = Fpnative.pfkrol(e1.PngjBadCrcException, mat.PngjException, this.getPadSub3, this.getPadSub2, this.EnrollFingersActivity ? 1 : 2);
         PreCaptureOutput preCaptureOutput = pfkrol.getPreCaptureOutput();
         if (preCaptureOutput == null) {
@@ -2061,12 +2060,12 @@ abstract class getL3Score extends e1 {
         }
         preCaptureOutput.setWidthHeight(this.getPadSub3, this.getPadSub2);
         if (!preCaptureOutput.getBoxes().isEmpty() && preCaptureOutput.getError() != null && !preCaptureOutput.getError().equals(FingerError.BE_INSIDE_GUIDE) && !(!this.resetAttempt)) {
-            rgenerate = (generate + 99) % Uuid.SIZE_BITS;
+            rgenerate = (generate + 99) % 128;
             this.resetAttempt = false;
             this.Attempt.getScore();
         }
         if (pfkrol.getStatus().equals(STATUS.BAD_QUALITY)) {
-            generate = (rgenerate + 87) % Uuid.SIZE_BITS;
+            generate = (rgenerate + 87) % 128;
             this.pfk++;
             this.resetAttempt = true;
         }
@@ -2088,7 +2087,7 @@ abstract class getL3Score extends e1 {
             org.cameracontroller.PngjBadSignature pngjBadSignature2 = pngjBadCrcException2.getQualityScore;
             if (pngjBadSignature2 != null) {
                 int i3 = rgenerate + 121;
-                generate = i3 % Uuid.SIZE_BITS;
+                generate = i3 % 128;
                 if (i3 % 2 == 0) {
                     pngjBadSignature2.PngjException(str2);
                     pngjBadCrcException2.getQualityScore.PngjBadSignature(pngjBadCrcException2.CaptureRolledThumbActivity);
@@ -2104,7 +2103,7 @@ abstract class getL3Score extends e1 {
             float f2 = this.getServerRequest;
             if (f2 > 0.75d) {
                 int i5 = generate + 73;
-                rgenerate = i5 % Uuid.SIZE_BITS;
+                rgenerate = i5 % 128;
                 if (i5 % 2 != 0) {
                     float f3 = f2 - 0.05f;
                     this.getServerRequest = f3;
@@ -2121,7 +2120,7 @@ abstract class getL3Score extends e1 {
         }
         if (preCaptureOutput.getBoxes() == null) {
             this.Capture2IndexActivity.PngjBadCrcException((Integer) 0);
-            generate = (rgenerate + 39) % Uuid.SIZE_BITS;
+            generate = (rgenerate + 39) % 128;
         } else {
             this.Capture2IndexActivity.PngjBadCrcException(Integer.valueOf(preCaptureOutput.getBoxes().size()));
         }
@@ -2140,18 +2139,18 @@ abstract class getL3Score extends e1 {
             }
         }
         if (preCaptureOutput.getError() != null) {
-            rgenerate = (generate + 79) % Uuid.SIZE_BITS;
+            rgenerate = (generate + 79) % 128;
             PngjOutputException pngjOutputException = this.Capture2IndexActivity;
             String servermeta = preCaptureOutput.getError().getServermeta();
             if (servermeta.isEmpty()) {
                 int i6 = pngjOutputException.PngjInputException;
-                generate = (rgenerate + 85) % Uuid.SIZE_BITS;
+                generate = (rgenerate + 85) % 128;
             } else {
                 pngjOutputException.PngjUnsupportedException.set(pngjOutputException.PngjInputException, servermeta);
-                generate = (rgenerate + 31) % Uuid.SIZE_BITS;
+                generate = (rgenerate + 31) % 128;
             }
             PngjException(preCaptureOutput.getError().getStatus());
-            rgenerate = (generate + 35) % Uuid.SIZE_BITS;
+            rgenerate = (generate + 35) % 128;
         }
         Mat.n_release(mat.PngjException);
         return pfkrol;
@@ -2165,7 +2164,7 @@ abstract class getL3Score extends e1 {
         Imgproc.valueOf(values, values);
         int PngjBadCrcException2 = PngjBadCrcException.onErrorResponse.PngjBadCrcException();
         PngjException(PngjBadCrcException.onErrorResponse.PngjBadCrcException(), -1035848081, 1035848081, new Object[]{this, values}, PngjBadCrcException.onErrorResponse.PngjBadCrcException(), PngjBadCrcException.onErrorResponse.PngjBadCrcException(), PngjBadCrcException2);
-        rgenerate = (generate + 105) % Uuid.SIZE_BITS;
+        rgenerate = (generate + 105) % 128;
     }
 
     private static /* synthetic */ Object PngjException(Object[] objArr) {
@@ -2173,7 +2172,7 @@ abstract class getL3Score extends e1 {
         try {
             if (!getl3score.getL3Score) {
                 int i = rgenerate + 119;
-                generate = i % Uuid.SIZE_BITS;
+                generate = i % 128;
                 if (i % 2 != 0) {
                     if (IdentySdk.getInstance().getFingerPrintDrawable() == 0) {
                         getl3score.getL1Score.PngjBadSignature(getl3score.a, 4.0d, 3.5d, 2.0d);
@@ -2194,7 +2193,7 @@ abstract class getL3Score extends e1 {
                 e2.printStackTrace();
             }
         }
-        generate = (rgenerate + 9) % Uuid.SIZE_BITS;
+        generate = (rgenerate + 9) % 128;
         return null;
     }
 
@@ -2227,13 +2226,13 @@ abstract class getL3Score extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x008e, code lost:
     
-        com.identy.getL3Score.rgenerate = (com.identy.getL3Score.generate + 51) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.getL3Score.rgenerate = (com.identy.getL3Score.generate + 51) % 128;
         r4.PngjBadSignature(r1, false);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0099, code lost:
     
         PngjBadSignature();
-        com.identy.getL3Score.generate = (com.identy.getL3Score.rgenerate + 73) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.getL3Score.generate = (com.identy.getL3Score.rgenerate + 73) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x006c, code lost:
     
@@ -2254,7 +2253,7 @@ abstract class getL3Score extends e1 {
         long timeInMillis = Calendar.getInstance().getTimeInMillis();
         long j2 = e1.PngjBadCrcException;
         if (mat == null) {
-            generate = (rgenerate + 89) % Uuid.SIZE_BITS;
+            generate = (rgenerate + 89) % 128;
             j = 0;
         } else {
             j = mat.PngjException;
@@ -2266,7 +2265,7 @@ abstract class getL3Score extends e1 {
         }
         if (pfkrolfinalize2.getStatus().equals(STATUS.STATUS_OK) && pfkrolfinalize2.isSideDone()) {
             int i = rgenerate + 77;
-            generate = i % Uuid.SIZE_BITS;
+            generate = i % 128;
             if (i % 2 == 0) {
                 side = (SIDE) this.pfkrol.remove(0);
                 sdrawable = side.getSdrawable();
@@ -2282,7 +2281,7 @@ abstract class getL3Score extends e1 {
         pfkrolfinalize2.toString();
         if (preCaptureOutput == null) {
             int i2 = rgenerate + 107;
-            generate = i2 % Uuid.SIZE_BITS;
+            generate = i2 % 128;
             if (i2 % 2 == 0) {
                 int i3 = 68 / 0;
             }
@@ -2298,26 +2297,26 @@ abstract class getL3Score extends e1 {
         }
         if (preCaptureOutput.getError().equals(FingerError.CORRECT)) {
             int i4 = generate + 61;
-            rgenerate = i4 % Uuid.SIZE_BITS;
+            rgenerate = i4 % 128;
             if (i4 % 2 == 0 ? this.Capture4FActivity == 0 : this.Capture4FActivity == 1) {
                 this.Capture4FActivity = Calendar.getInstance().getTimeInMillis();
             }
             LibSettings.saveML4FData();
-            generate = (rgenerate + 65) % Uuid.SIZE_BITS;
+            generate = (rgenerate + 65) % 128;
         }
         if (preCaptureOutput.getError() != null) {
             PngjOutputException pngjOutputException = this.Capture2IndexActivity;
             String servermeta = preCaptureOutput.getError().getServermeta();
             if (!servermeta.isEmpty()) {
                 pngjOutputException.PngjUnsupportedException.set(pngjOutputException.PngjInputException, servermeta);
-                generate = (rgenerate + 27) % Uuid.SIZE_BITS;
+                generate = (rgenerate + 27) % 128;
             } else {
                 int i5 = pngjOutputException.PngjInputException;
             }
             PngjException(preCaptureOutput.getError().getStatus());
         }
         if (mat != null) {
-            rgenerate = (generate + 75) % Uuid.SIZE_BITS;
+            rgenerate = (generate + 75) % 128;
             Mat.n_release(mat.PngjException);
         }
         pfkrolfinalize2.toString();
@@ -2352,10 +2351,10 @@ abstract class getL3Score extends e1 {
         int i5 = (int) rectF.bottom;
         int i6 = (int) rectF.right;
         if (this.uxd566jk.getScore == CapturePosition.HORIZONTAL) {
-            generate = (rgenerate + 79) % Uuid.SIZE_BITS;
+            generate = (rgenerate + 79) % 128;
             z = false;
         } else {
-            generate = (rgenerate + 11) % Uuid.SIZE_BITS;
+            generate = (rgenerate + 11) % 128;
             z = true;
         }
         Fpnative.configureroll(j, ordinal, ordinal2, equals, i, i2, i3, i4, i5, i6, t, z);

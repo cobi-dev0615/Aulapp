@@ -16,7 +16,6 @@ import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.uuid.Uuid;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u0000 \u00022\u00020\u0001:\u0001\u0002¨\u0006\u0003"}, d2 = {"Lcom/gse/aulapp/util/UIHelper;", BuildConfig.FLAVOR, "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: classes.dex */
@@ -65,7 +64,7 @@ public abstract class UIHelper {
             if ((i & 64) != 0) {
                 z3 = true;
             }
-            if ((i & Uuid.SIZE_BITS) != 0) {
+            if ((i & 128) != 0) {
                 z4 = true;
             }
             companion.setterCustomToolbar(fragmentActivity, z, z2, str, num, num2, z3, z4);

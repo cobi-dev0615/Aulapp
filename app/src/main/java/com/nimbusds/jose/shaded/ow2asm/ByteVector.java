@@ -1,6 +1,5 @@
 package com.nimbusds.jose.shaded.ow2asm;
 
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class ByteVector {
@@ -58,14 +57,14 @@ public class ByteVector {
                 int i9 = i8 + 1;
                 bArr2[i8] = (byte) (((charAt2 >> 6) & 31) | 192);
                 i8 += 2;
-                bArr2[i9] = (byte) ((charAt2 & '?') | Uuid.SIZE_BITS);
+                bArr2[i9] = (byte) ((charAt2 & '?') | 128);
             } else {
                 byte[] bArr3 = this.data;
                 bArr3[i8] = (byte) (((charAt2 >> '\f') & 15) | 224);
                 int i10 = i8 + 2;
-                bArr3[i8 + 1] = (byte) (((charAt2 >> 6) & 63) | Uuid.SIZE_BITS);
+                bArr3[i8 + 1] = (byte) (((charAt2 >> 6) & 63) | 128);
                 i8 += 3;
-                bArr3[i10] = (byte) ((charAt2 & '?') | Uuid.SIZE_BITS);
+                bArr3[i10] = (byte) ((charAt2 & '?') | 128);
             }
             i++;
         }

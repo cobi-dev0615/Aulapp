@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import com.karumi.dexter.BuildConfig;
 import java.lang.reflect.Method;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public class PngjInputException extends PngjException {
@@ -147,7 +146,7 @@ public class PngjInputException extends PngjException {
     private static void e(String str, int i, Object[] objArr) {
         char[] cArr;
         if (str != null) {
-            $11 = ($10 + 25) % Uuid.SIZE_BITS;
+            $11 = ($10 + 25) % 128;
             cArr = str.toCharArray();
         } else {
             cArr = str;
@@ -185,7 +184,7 @@ public class PngjInputException extends PngjException {
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(capsMode, fadingEdgeLength2, combineMeasuredStates, -1356718115, false, $$j(b, b2, b2), new Class[]{Object.class, Object.class});
                 }
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
-                $11 = ($10 + 5) % Uuid.SIZE_BITS;
+                $11 = ($10 + 5) % 128;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause == null) {
@@ -197,7 +196,7 @@ public class PngjInputException extends PngjException {
     }
 
     private static void f(String str, int i, Object[] objArr) {
-        $10 = ($11 + 81) % Uuid.SIZE_BITS;
+        $10 = ($11 + 81) % 128;
         char[] charArray = str != null ? str.toCharArray() : str;
         com.d.e.PngjOutputException pngjOutputException = new com.d.e.PngjOutputException();
         char[] cArr = new char[charArray.length];
@@ -215,7 +214,7 @@ public class PngjInputException extends PngjException {
             int i5 = 58224;
             int i6 = i2;
             while (i6 < 16) {
-                $11 = ($10 + 105) % Uuid.SIZE_BITS;
+                $11 = ($10 + 105) % 128;
                 char c = cArr2[1];
                 char c2 = cArr2[i2];
                 int i7 = i3;
@@ -284,7 +283,7 @@ public class PngjInputException extends PngjException {
         }
         String str2 = new String(cArr, 0, i);
         int i16 = $10 + 107;
-        $11 = i16 % Uuid.SIZE_BITS;
+        $11 = i16 % 128;
         if (i16 % 2 == 0) {
             throw null;
         }

@@ -8,7 +8,6 @@ import java.util.Random;
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public class KeySalt {
@@ -38,7 +37,7 @@ public class KeySalt {
         byte[] bArr3 = new byte[wrap.remaining()];
         wrap.get(bArr3);
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
-        cipher.init(2, this.secretKeyAndroid, new GCMParameterSpec(Uuid.SIZE_BITS, bArr2));
+        cipher.init(2, this.secretKeyAndroid, new GCMParameterSpec(128, bArr2));
         return cipher.doFinal(bArr3);
     }
 

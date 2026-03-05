@@ -6,7 +6,6 @@ import defpackage.a;
 import kotlin.UByte;
 import kotlin.io.ConstantsKt;
 import kotlin.jvm.internal.ByteCompanionObject;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class ClassReader {
@@ -440,7 +439,7 @@ public class ClassReader {
                 case 125:
                 case 126:
                 case 127:
-                case Uuid.SIZE_BITS /* 128 */:
+                case 128 /* 128 */:
                 case 129:
                 case 130:
                 case 131:
@@ -872,7 +871,7 @@ public class ClassReader {
                                         case 125:
                                         case 126:
                                         case 127:
-                                        case Uuid.SIZE_BITS /* 128 */:
+                                        case 128 /* 128 */:
                                         case 129:
                                         case 130:
                                         case 131:

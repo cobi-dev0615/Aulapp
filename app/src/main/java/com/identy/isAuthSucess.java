@@ -50,7 +50,6 @@ import java.util.LinkedList;
 import java.util.List;
 import kotlin.io.encoding.Base64;
 import kotlin.jvm.internal.ByteCompanionObject;
-import kotlin.uuid.Uuid;
 import org.c.a.PngjBadCrcException;
 import org.identy.nativealgo.NativeAlgoUtils;
 import org.identy.opencv.core.Mat;
@@ -534,14 +533,14 @@ public final class isAuthSucess extends e1 {
                     if (z) {
                         char[] cArr3 = new char[i];
                         action.valueOf = i4;
-                        $10 = ($11 + 109) % Uuid.SIZE_BITS;
+                        $10 = ($11 + 109) % 128;
                         while (true) {
                             int i11 = action.valueOf;
                             if (i11 >= i) {
                                 break;
                             }
                             int i12 = $11 + 35;
-                            $10 = i12 % Uuid.SIZE_BITS;
+                            $10 = i12 % 128;
                             if (i12 % 2 != 0) {
                                 cArr3[i11] = cArr[(i - i11) % 0];
                                 Object[] objArr4 = {action, action};
@@ -597,7 +596,7 @@ public final class isAuthSucess extends e1 {
                         }
                         int intValue = ((Integer) ((Method) PngjBadSignature).invoke(null, objArr2)).intValue();
                         if (intValue == -1) {
-                            $10 = ($11 + 65) % Uuid.SIZE_BITS;
+                            $10 = ($11 + 65) % 128;
                             i5 = 1;
                         } else {
                             i5 = 0;
@@ -644,7 +643,7 @@ public final class isAuthSucess extends e1 {
                             j2 = -6165791747575875761L;
                             if (bArr != null) {
                                 int i19 = $10 + 67;
-                                $11 = i19 % Uuid.SIZE_BITS;
+                                $11 = i19 % 128;
                                 if (i19 % 2 == 0) {
                                     byte[] bArr3 = PngjExceptionInternal;
                                     Object[] objArr4 = new Object[i17];
@@ -673,7 +672,7 @@ public final class isAuthSucess extends e1 {
                                 intValue = (byte) i9;
                             } else {
                                 intValue = (short) (((short) (PngjOutputException[i3 + ((int) (PngjException ^ (-6165791747575875761L)))] ^ (-6165791747575875761L))) + ((int) (valueOf ^ (-6165791747575875761L))));
-                                $11 = ($10 + 119) % Uuid.SIZE_BITS;
+                                $11 = ($10 + 119) % 128;
                             }
                         } else {
                             i6 = 1;
@@ -698,17 +697,17 @@ public final class isAuthSucess extends e1 {
                             pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;
                             byte[] bArr5 = PngjExceptionInternal;
                             if (bArr5 != null) {
-                                $11 = ($10 + 77) % Uuid.SIZE_BITS;
+                                $11 = ($10 + 77) % 128;
                                 int length2 = bArr5.length;
                                 byte[] bArr6 = new byte[length2];
                                 for (int i21 = 0; i21 < length2; i21++) {
-                                    $10 = ($11 + 111) % Uuid.SIZE_BITS;
+                                    $10 = ($11 + 111) % 128;
                                     bArr6[i21] = (byte) (bArr5[i21] ^ j2);
                                 }
                                 bArr5 = bArr6;
                             }
                             if (bArr5 != null) {
-                                $11 = ($10 + 53) % Uuid.SIZE_BITS;
+                                $11 = ($10 + 53) % 128;
                                 i7 = i6;
                                 i8 = i7;
                             } else {
@@ -721,7 +720,7 @@ public final class isAuthSucess extends e1 {
                                     break;
                                 }
                                 if (i8 != 0) {
-                                    $10 = ($11 + 13) % Uuid.SIZE_BITS;
+                                    $10 = ($11 + 13) % 128;
                                     byte[] bArr7 = PngjExceptionInternal;
                                     pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
                                     pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr7[r3] ^ j2)) + s)) ^ b));
@@ -760,7 +759,7 @@ public final class isAuthSucess extends e1 {
                     ImageView imageView;
                     int i;
                     int i2 = PngjUnsupportedException + 31;
-                    PngjInputException = i2 % Uuid.SIZE_BITS;
+                    PngjInputException = i2 % 128;
                     if (i2 % 2 != 0) {
                         AnimationAnimationListenerC0024PngjException.this.PngjBadCrcException.clearAnimation();
                         imageView = AnimationAnimationListenerC0024PngjException.this.PngjBadCrcException;
@@ -771,7 +770,7 @@ public final class isAuthSucess extends e1 {
                         i = 8;
                     }
                     imageView.setVisibility(i);
-                    PngjUnsupportedException = (PngjInputException + 33) % Uuid.SIZE_BITS;
+                    PngjUnsupportedException = (PngjInputException + 33) % 128;
                 }
             }
 
@@ -1069,7 +1068,7 @@ public final class isAuthSucess extends e1 {
             int i = this.getProcessingTime;
             if (i == 1) {
                 int i2 = destroy + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
-                pfkrolfinalize = i2 % Uuid.SIZE_BITS;
+                pfkrolfinalize = i2 % 128;
                 if (i2 % 2 != 0 ? i == 1 : i == 1) {
                     if (this.resetAttempt.size() == 1) {
                         if (((Finger) this.resetAttempt.get(0)).equals(Finger.INDEX)) {
@@ -1077,7 +1076,7 @@ public final class isAuthSucess extends e1 {
                         }
                         if (((Finger) this.resetAttempt.get(0)).equals(Finger.MIDDLE)) {
                             int i3 = R.string.id_searching_right_middle;
-                            pfkrolfinalize = (destroy + 113) % Uuid.SIZE_BITS;
+                            pfkrolfinalize = (destroy + 113) % 128;
                             return i3;
                         }
                         if (((Finger) this.resetAttempt.get(0)).equals(Finger.RING)) {
@@ -1089,7 +1088,7 @@ public final class isAuthSucess extends e1 {
                     }
                 }
             } else if (i == 2) {
-                destroy = (pfkrolfinalize + 81) % Uuid.SIZE_BITS;
+                destroy = (pfkrolfinalize + 81) % 128;
                 if (this.resetAttempt.size() == 2 && this.resetAttempt.contains(Finger.INDEX) && this.resetAttempt.contains(Finger.MIDDLE)) {
                     return R.string.id_searching_right_index_middle;
                 }
@@ -1097,14 +1096,14 @@ public final class isAuthSucess extends e1 {
             return R.string.id_searching_right;
         }
         if (this.getProcessingTime == 1) {
-            pfkrolfinalize = (destroy + 105) % Uuid.SIZE_BITS;
+            pfkrolfinalize = (destroy + 105) % 128;
             if (this.resetAttempt.size() == 1) {
                 if (((Finger) this.resetAttempt.get(0)).equals(Finger.INDEX)) {
                     return R.string.id_searching_left_index;
                 }
                 if (!(!((Finger) this.resetAttempt.get(0)).equals(Finger.MIDDLE))) {
                     int i4 = destroy + 125;
-                    pfkrolfinalize = i4 % Uuid.SIZE_BITS;
+                    pfkrolfinalize = i4 % 128;
                     if (i4 % 2 != 0) {
                         return R.string.id_searching_left_middle;
                     }
@@ -1112,7 +1111,7 @@ public final class isAuthSucess extends e1 {
                     return R.string.id_searching_left_middle;
                 }
                 if (((Finger) this.resetAttempt.get(0)).equals(Finger.RING)) {
-                    pfkrolfinalize = (destroy + 91) % Uuid.SIZE_BITS;
+                    pfkrolfinalize = (destroy + 91) % 128;
                     return R.string.id_searching_left_ring;
                 }
                 if (((Finger) this.resetAttempt.get(0)).equals(Finger.LITTLE)) {
@@ -1123,7 +1122,7 @@ public final class isAuthSucess extends e1 {
         }
         if (this.getProcessingTime == 2 && this.resetAttempt.size() == 2 && this.resetAttempt.contains(Finger.INDEX)) {
             int i6 = pfkrolfinalize + 17;
-            destroy = i6 % Uuid.SIZE_BITS;
+            destroy = i6 % 128;
             if (i6 % 2 != 0) {
                 this.resetAttempt.contains(Finger.MIDDLE);
                 throw null;
@@ -1169,14 +1168,14 @@ public final class isAuthSucess extends e1 {
                 objArr[0] = new String(cArr, 0, i);
                 return;
             }
-            $10 = ($11 + 111) % Uuid.SIZE_BITS;
+            $10 = ($11 + 111) % 128;
             cArr2[i2] = charArray[i4];
             char c = 1;
             cArr2[1] = charArray[i4 + 1];
             int i5 = 58224;
             int i6 = i2;
             while (i6 < 16) {
-                $11 = ($10 + 125) % Uuid.SIZE_BITS;
+                $11 = ($10 + 125) % 128;
                 char c2 = cArr2[c];
                 char c3 = cArr2[i2];
                 char c4 = c;
@@ -1380,11 +1379,11 @@ public final class isAuthSucess extends e1 {
     @Override // com.identy.e1
     public final RectF Action() {
         int i = pfkrolfinalize + 35;
-        destroy = i % Uuid.SIZE_BITS;
+        destroy = i % 128;
         int i2 = i % 2;
         RectF rectF = PngjException().get(0);
         int i3 = pfkrolfinalize + 29;
-        destroy = i3 % Uuid.SIZE_BITS;
+        destroy = i3 % 128;
         if (i3 % 2 == 0) {
             return rectF;
         }
@@ -1393,20 +1392,20 @@ public final class isAuthSucess extends e1 {
 
     @Override // com.identy.e1
     public final void PngjBadCrcException() {
-        int i = (pfkrolfinalize + 121) % Uuid.SIZE_BITS;
+        int i = (pfkrolfinalize + 121) % 128;
         destroy = i;
         this.getMatchingTime = false;
-        pfkrolfinalize = (i + 123) % Uuid.SIZE_BITS;
+        pfkrolfinalize = (i + 123) % 128;
     }
 
     @Override // com.identy.e1
     public final Pair[] PngjExceptionInternal() {
         ArrayList arrayList = new ArrayList();
         Iterator it = this.resetAttempt.iterator();
-        pfkrolfinalize = (destroy + 69) % Uuid.SIZE_BITS;
+        pfkrolfinalize = (destroy + 69) % 128;
         while (it.hasNext()) {
             arrayList.add(new Pair(this.a, (Finger) it.next()));
-            destroy = (pfkrolfinalize + 61) % Uuid.SIZE_BITS;
+            destroy = (pfkrolfinalize + 61) % 128;
         }
         return (Pair[]) arrayList.toArray(new Pair[arrayList.size()]);
     }
@@ -1433,7 +1432,7 @@ public final class isAuthSucess extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0045, code lost:
     
-        com.identy.isAuthSucess.destroy = (com.identy.isAuthSucess.pfkrolfinalize + 105) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.isAuthSucess.destroy = (com.identy.isAuthSucess.pfkrolfinalize + 105) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0063, code lost:
     
@@ -1450,7 +1449,7 @@ public final class isAuthSucess extends e1 {
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0069, code lost:
     
         r3 = com.identy.isAuthSucess.pfkrolfinalize + 69;
-        com.identy.isAuthSucess.destroy = r3 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.isAuthSucess.destroy = r3 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0073, code lost:
     
@@ -1462,7 +1461,7 @@ public final class isAuthSucess extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x0078, code lost:
     
-        com.identy.isAuthSucess.destroy = (com.identy.isAuthSucess.pfkrolfinalize + 65) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.isAuthSucess.destroy = (com.identy.isAuthSucess.pfkrolfinalize + 65) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0081, code lost:
     
@@ -1482,7 +1481,7 @@ public final class isAuthSucess extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x008d, code lost:
     
-        com.identy.isAuthSucess.pfkrolfinalize = (com.identy.isAuthSucess.destroy + 21) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.isAuthSucess.pfkrolfinalize = (com.identy.isAuthSucess.destroy + 21) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x0095, code lost:
     
@@ -1511,7 +1510,7 @@ public final class isAuthSucess extends e1 {
     public final boolean PngjUnsupportedException() {
         boolean PngjUnsupportedException;
         int i = destroy + 49;
-        pfkrolfinalize = i % Uuid.SIZE_BITS;
+        pfkrolfinalize = i % 128;
         try {
             if (i % 2 == 0) {
                 PngjUnsupportedException = super.PngjUnsupportedException();
@@ -1539,7 +1538,7 @@ public final class isAuthSucess extends e1 {
     @Override // com.identy.e1
     public final void getPadSub1() {
         int i = pfkrolfinalize + 7;
-        destroy = i % Uuid.SIZE_BITS;
+        destroy = i % 128;
         if (i % 2 != 0) {
             super.getPadSub1();
             throw null;
@@ -1547,7 +1546,7 @@ public final class isAuthSucess extends e1 {
         super.getPadSub1();
         if (this.getL1Score != null) {
             int i2 = pfkrolfinalize + 31;
-            destroy = i2 % Uuid.SIZE_BITS;
+            destroy = i2 % 128;
             if (i2 % 2 != 0) {
                 this.getL1Score = null;
                 throw null;
@@ -1556,7 +1555,7 @@ public final class isAuthSucess extends e1 {
         }
         if (this.Capture2TActivity != null) {
             int i3 = destroy + 121;
-            pfkrolfinalize = i3 % Uuid.SIZE_BITS;
+            pfkrolfinalize = i3 % 128;
             int i4 = i3 % 2;
             this.Capture2TActivity = null;
             if (i4 == 0) {
@@ -1570,7 +1569,7 @@ public final class isAuthSucess extends e1 {
             if (this.getL3Score) {
                 return;
             }
-            destroy = (pfkrolfinalize + 47) % Uuid.SIZE_BITS;
+            destroy = (pfkrolfinalize + 47) % 128;
             if (IdentySdk.getInstance().getFingerPrintDrawable() == 0) {
                 if (this.getProcessingTime != 1) {
                     this.getL1Score.PngjBadSignature(this.a, 8.0d, 8.0d, 8.0d);
@@ -1578,7 +1577,7 @@ public final class isAuthSucess extends e1 {
                 }
                 this.getL1Score.PngjBadSignature(this.a, 4.0d, 3.5d, 2.0d);
                 int i = destroy + 15;
-                pfkrolfinalize = i % Uuid.SIZE_BITS;
+                pfkrolfinalize = i % 128;
                 if (i % 2 == 0) {
                     throw null;
                 }
@@ -1600,7 +1599,7 @@ public final class isAuthSucess extends e1 {
         int i2;
         int i3;
         Object[] objArr3;
-        destroy = (pfkrolfinalize + 29) % Uuid.SIZE_BITS;
+        destroy = (pfkrolfinalize + 29) % 128;
         Object[] objArr4 = new Object[1];
         e("䑢ಹ㵸Ꙝ钪謏\udccc鵫뽖휱멠狭즏닕ꕦ榊\udf13퀊헶붿뜋⩖", 23 - (SystemClock.elapsedRealtime() > 0L ? 1 : (SystemClock.elapsedRealtime() == 0L ? 0 : -1)), objArr4);
         String str = (String) objArr4[0];
@@ -1685,7 +1684,7 @@ public final class isAuthSucess extends e1 {
                 throw cause;
             }
         } else {
-            pfkrolfinalize = (destroy + 39) % Uuid.SIZE_BITS;
+            pfkrolfinalize = (destroy + 39) % 128;
             Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
             if (PngjBadSignature6 == null) {
                 char deadChar2 = (char) KeyEvent.getDeadChar(0, 0);
@@ -1721,7 +1720,7 @@ public final class isAuthSucess extends e1 {
         if (i13 != i12) {
             throw new RuntimeException(String.valueOf(i13));
         }
-        pfkrolfinalize = (destroy + 99) % Uuid.SIZE_BITS;
+        pfkrolfinalize = (destroy + 99) % 128;
         Object[] objArr15 = {new int[1], new int[1], new int[1]};
         int i14 = ((int[]) objArr[0])[0];
         int i15 = ((int[]) obj2)[0];
@@ -1734,7 +1733,7 @@ public final class isAuthSucess extends e1 {
         int i18 = i17 ^ (i17 >>> 17);
         ((int[]) objArr15[0])[0] = i18 ^ (i18 << 5);
         int i19 = pfkrolfinalize + 31;
-        destroy = i19 % Uuid.SIZE_BITS;
+        destroy = i19 % 128;
         if (i19 % 2 != 0) {
             Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
             if (PngjBadSignature7 == null) {
@@ -1814,7 +1813,7 @@ public final class isAuthSucess extends e1 {
                             i2 = 0;
                         }
                         ((Field) PngjBadSignature10).set(null, valueOf3);
-                        destroy = (pfkrolfinalize + 25) % Uuid.SIZE_BITS;
+                        destroy = (pfkrolfinalize + 25) % 128;
                     } catch (Exception unused2) {
                         throw new RuntimeException();
                     }
@@ -2028,7 +2027,7 @@ public final class isAuthSucess extends e1 {
         ((int[]) objArr37[1])[0] = i58 ^ (i58 << 5);
         super.onReceive(context, intent);
         int i59 = destroy + 35;
-        pfkrolfinalize = i59 % Uuid.SIZE_BITS;
+        pfkrolfinalize = i59 % 128;
         if (i59 % 2 == 0) {
             throw null;
         }
@@ -2211,15 +2210,15 @@ public final class isAuthSucess extends e1 {
 
     @Override // com.identy.e1
     public final void PngjBadCrcException(byte[] bArr, boolean z, List list, List list2, float f, Long l) {
-        pfkrolfinalize = (destroy + 21) % Uuid.SIZE_BITS;
+        pfkrolfinalize = (destroy + 21) % 128;
         super.PngjBadCrcException(bArr, z, list, list2, f, l);
-        destroy = (pfkrolfinalize + 15) % Uuid.SIZE_BITS;
+        destroy = (pfkrolfinalize + 15) % 128;
     }
 
     private static /* synthetic */ Object PngjBadCrcException(Object[] objArr) {
         isAuthSucess isauthsucess = (isAuthSucess) objArr[0];
         int i = destroy + 79;
-        pfkrolfinalize = i % Uuid.SIZE_BITS;
+        pfkrolfinalize = i % 128;
         if (i % 2 == 0) {
             super.e1();
         } else {
@@ -2236,7 +2235,7 @@ public final class isAuthSucess extends e1 {
             return null;
         }
         int i2 = pfkrolfinalize + 3;
-        destroy = i2 % Uuid.SIZE_BITS;
+        destroy = i2 % 128;
         pngjBadSignature.PngjBadSignature(Attempt, i2 % 2 != 0);
         return null;
     }
@@ -2261,7 +2260,7 @@ public final class isAuthSucess extends e1 {
         com.identy.d.PngjBadSignature pngjBadSignature;
         isAuthSucess isauthsucess = (isAuthSucess) objArr[0];
         int i = pfkrolfinalize + 109;
-        destroy = i % Uuid.SIZE_BITS;
+        destroy = i % 128;
         if (i % 2 != 0) {
             super.a();
             Attempt = isauthsucess.Attempt();
@@ -2281,7 +2280,7 @@ public final class isAuthSucess extends e1 {
         com.identy.d.PngjBadSignature pngjBadSignature2 = isauthsucess.Attempt;
         if (pngjBadSignature2 != null) {
             int i3 = pfkrolfinalize + 75;
-            destroy = i3 % Uuid.SIZE_BITS;
+            destroy = i3 % 128;
             if (i3 % 2 == 0) {
                 pngjBadSignature2.getData();
             } else {
@@ -2290,7 +2289,7 @@ public final class isAuthSucess extends e1 {
             }
         }
         int i4 = destroy + 121;
-        pfkrolfinalize = i4 % Uuid.SIZE_BITS;
+        pfkrolfinalize = i4 % 128;
         if (i4 % 2 != 0) {
             return null;
         }

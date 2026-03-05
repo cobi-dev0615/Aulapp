@@ -76,7 +76,6 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import kotlin.KotlinVersion;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 import org.identy.opencv.core.Mat;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -566,7 +565,7 @@ public class IdentySdk {
         System.loadLibrary("support-native-lib");
         getL2Score = "option_selected";
         isAuthSucess = "options";
-        matchMultiple = (matchCaptured + 123) % Uuid.SIZE_BITS;
+        matchMultiple = (matchCaptured + 123) % 128;
     }
 
     private IdentySdk(Activity activity, byte[] bArr, InitializationListener initializationListener, IdentyResponseListener identyResponseListener, boolean z) {
@@ -711,7 +710,7 @@ public class IdentySdk {
                             bufferedInputStream.close();
                             bufferedOutputStream.close();
                             int i = deduplication + 97;
-                            generateST = i % Uuid.SIZE_BITS;
+                            generateST = i % 128;
                             if (i % 2 == 0) {
                                 throw null;
                             }
@@ -719,7 +718,7 @@ public class IdentySdk {
                             th = th;
                             if (bufferedInputStream != null) {
                                 int i2 = deduplication + 57;
-                                generateST = i2 % Uuid.SIZE_BITS;
+                                generateST = i2 % 128;
                                 if (i2 % 2 == 0) {
                                     bufferedInputStream.close();
                                     throw null;
@@ -745,7 +744,7 @@ public class IdentySdk {
                 try {
                     byte[] bArr = new byte[1024];
                     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                    deduplication = (generateST + 123) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 123) % 128;
                     while (true) {
                         int read = fileInputStream.read(bArr);
                         if (read == -1) {
@@ -775,7 +774,7 @@ public class IdentySdk {
                     if (read2 <= 0) {
                         fileOutputStream2.close();
                         fileInputStream2.close();
-                        deduplication = (generateST + 17) % Uuid.SIZE_BITS;
+                        deduplication = (generateST + 17) % 128;
                         return;
                     }
                     fileOutputStream2.write(bArr2, 0, read2);
@@ -792,7 +791,7 @@ public class IdentySdk {
         Hand hand = (Hand) objArr[3];
         try {
             values(new Object[]{identySdk, Fpnative.generateID(e1.PngjException(identySdk.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_4.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, (IdentyUser) objArr[4]}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
-            deduplication = (generateST + 69) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 69) % 128;
         } catch (Exception unused) {
         }
         return null;
@@ -936,9 +935,9 @@ public class IdentySdk {
             }
             throw th;
         }
-        int i21 = (generateST + 17) % Uuid.SIZE_BITS;
+        int i21 = (generateST + 17) % 128;
         deduplication = i21;
-        generateST = (i21 + 33) % Uuid.SIZE_BITS;
+        generateST = (i21 + 33) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x00de  */
@@ -951,7 +950,7 @@ public class IdentySdk {
         long j;
         IdentySdk identySdk;
         int i = deduplication + 97;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -972,7 +971,7 @@ public class IdentySdk {
                     identySdk = PngjException;
                     if (identySdk == null) {
                         int i4 = generateST + 77;
-                        deduplication = i4 % Uuid.SIZE_BITS;
+                        deduplication = i4 % 128;
                         if (i4 % 2 == 0) {
                             return identySdk;
                         }
@@ -1014,7 +1013,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 21) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 21) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0050, code lost:
@@ -1041,12 +1040,12 @@ public class IdentySdk {
     public static String getInternalVersion() {
         long j;
         int i = generateST;
-        deduplication = (i + 99) % Uuid.SIZE_BITS;
+        deduplication = (i + 99) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 11;
-                deduplication = i2 % Uuid.SIZE_BITS;
+                deduplication = i2 % 128;
                 if (i2 % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -1102,7 +1101,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 73) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 73) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0054, code lost:
@@ -1131,7 +1130,7 @@ public class IdentySdk {
         long j;
         int i = generateST;
         int i2 = i + 105;
-        deduplication = i2 % Uuid.SIZE_BITS;
+        deduplication = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
@@ -1139,7 +1138,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i3 = i + 47;
-                deduplication = i3 % Uuid.SIZE_BITS;
+                deduplication = i3 % 128;
                 if (i3 % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -1158,7 +1157,7 @@ public class IdentySdk {
                 int i10 = (i9 ^ 1) + ((i9 & 1) << 1);
                 int i11 = (i7 ^ i10) + ((i10 & i7) << 1);
                 int i12 = i7 >> 25;
-                int i13 = ((i12 & (-255)) + (i12 | (-255))) / Uuid.SIZE_BITS;
+                int i13 = ((i12 & (-255)) + (i12 | (-255))) / 128;
                 int i14 = -(((i13 ^ 1) + ((i13 & 1) << 1)) ^ i11);
                 int i15 = (i14 & 5) + (i14 | 5);
                 int i16 = i15 >> 26;
@@ -1186,7 +1185,7 @@ public class IdentySdk {
             int i102 = (i92 ^ 1) + ((i92 & 1) << 1);
             int i112 = (i72 ^ i102) + ((i102 & i72) << 1);
             int i122 = i72 >> 25;
-            int i132 = ((i122 & (-255)) + (i122 | (-255))) / Uuid.SIZE_BITS;
+            int i132 = ((i122 & (-255)) + (i122 | (-255))) / 128;
             int i142 = -(((i132 ^ 1) + ((i132 & 1) << 1)) ^ i112);
             int i152 = (i142 & 5) + (i142 | 5);
             int i162 = i152 >> 26;
@@ -1200,7 +1199,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 33) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 33) % 128;
     }
 
     public static void init$0() {
@@ -1280,13 +1279,13 @@ public class IdentySdk {
         String str3 = str2;
         byte[] bArr = str3;
         if (str3 != null) {
-            $10 = ($11 + 53) % Uuid.SIZE_BITS;
+            $10 = ($11 + 53) % 128;
             bArr = str3.getBytes("ISO-8859-1");
         }
         byte[] bArr2 = bArr;
         if (str != null) {
             cArr = str.toCharArray();
-            $11 = ($10 + 83) % Uuid.SIZE_BITS;
+            $11 = ($10 + 83) % 128;
         } else {
             cArr = str;
         }
@@ -1300,7 +1299,7 @@ public class IdentySdk {
             loop0: while (true) {
                 for (int i4 = 0; i4 < length; i4++) {
                     int i5 = $10 + 87;
-                    $11 = i5 % Uuid.SIZE_BITS;
+                    $11 = i5 % 128;
                     if (i5 % 2 == 0) {
                         try {
                             Object[] objArr2 = {Integer.valueOf(cArr3[i4])};
@@ -1345,7 +1344,7 @@ public class IdentySdk {
         char c4 = 1;
         if (pfkrolChangeMinMaxWidth) {
             int i7 = $10 + 13;
-            $11 = i7 % Uuid.SIZE_BITS;
+            $11 = i7 % 128;
             int i8 = i7 % 2;
             int length2 = bArr2.length;
             pngjExceptionInternal.PngjException = length2;
@@ -1382,7 +1381,7 @@ public class IdentySdk {
                 i2 = 2;
             }
         } else if (generate) {
-            $11 = ($10 + 9) % Uuid.SIZE_BITS;
+            $11 = ($10 + 9) % 128;
             int length3 = cArr2.length;
             pngjExceptionInternal.PngjException = length3;
             char[] cArr6 = new char[length3];
@@ -1395,7 +1394,7 @@ public class IdentySdk {
                     return;
                 }
                 int i13 = $10 + 65;
-                $11 = i13 % Uuid.SIZE_BITS;
+                $11 = i13 % 128;
                 if (i13 % 2 == 0) {
                     cArr6[i11] = (char) (cArr3[cArr2[(i12 - 1) << i11] - i] >>> intValue);
                     Object[] objArr6 = {pngjExceptionInternal, pngjExceptionInternal};
@@ -1441,7 +1440,7 @@ public class IdentySdk {
     public static boolean newInstance(Activity activity, String str, InitializationListener<IdentySdk> initializationListener, IdentyResponseListener identyResponseListener, boolean z) {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 75) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 75) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -1463,7 +1462,7 @@ public class IdentySdk {
                     int i7 = (i5 & i6) + (i6 | i5);
                     int i8 = (i7 & (-1615984103)) + ((-1615984103) | i7);
                     int i9 = i8 >> 25;
-                    int i10 = ((i9 ^ (-255)) + ((i9 & (-255)) << 1)) / Uuid.SIZE_BITS;
+                    int i10 = ((i9 ^ (-255)) + ((i9 & (-255)) << 1)) / 128;
                     int i11 = (i10 ^ 1) + ((i10 & 1) << 1);
                     int i12 = ((i8 | i11) << 1) - (i11 ^ i8);
                     int i13 = i8 >> 28;
@@ -1490,7 +1489,7 @@ public class IdentySdk {
             int i72 = (i52 & i62) + (i62 | i52);
             int i82 = (i72 & (-1615984103)) + ((-1615984103) | i72);
             int i92 = i82 >> 25;
-            int i102 = ((i92 ^ (-255)) + ((i92 & (-255)) << 1)) / Uuid.SIZE_BITS;
+            int i102 = ((i92 ^ (-255)) + ((i92 & (-255)) << 1)) / 128;
             int i112 = (i102 ^ 1) + ((i102 & 1) << 1);
             int i122 = ((i82 | i112) << 1) - (i112 ^ i82);
             int i132 = i82 >> 28;
@@ -1506,7 +1505,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 61) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 61) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:0x00fc  */
@@ -1537,7 +1536,7 @@ public class IdentySdk {
                     resourceAsStream = context.getClassLoader().getResourceAsStream(str);
                     if (resourceAsStream == null) {
                         byte[] bytesFromInputStream = getBytesFromInputStream(resourceAsStream);
-                        generateST = (deduplication + 23) % Uuid.SIZE_BITS;
+                        generateST = (deduplication + 23) % 128;
                         return bytesFromInputStream;
                     }
                     StringBuilder sb = new StringBuilder();
@@ -1549,7 +1548,7 @@ public class IdentySdk {
                     int i10 = (i8 & i9) + (i9 | i8);
                     int i11 = ((i10 | (-1437745136)) << 1) - ((-1437745136) ^ i10);
                     int i12 = i11 >> 25;
-                    int i13 = ((i12 & (-255)) + (i12 | (-255))) / Uuid.SIZE_BITS;
+                    int i13 = ((i12 & (-255)) + (i12 | (-255))) / 128;
                     int i14 = (i13 & 1) + (i13 | 1);
                     int i15 = -(b.e(i11 >> 20, 8191, ConstantsKt.DEFAULT_BLOCK_SIZE, -1) ^ ((i11 ^ i14) + ((i14 & i11) << 1)));
                     int i16 = (i15 & 6) + (i15 | 6);
@@ -1580,14 +1579,14 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 103) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 103) % 128;
     }
 
     public static void showMessage(String str) {
         Object[] objArr;
         long j;
         int i = generateST + 119;
-        deduplication = i % Uuid.SIZE_BITS;
+        deduplication = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -1608,7 +1607,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i7 ^ (i7 << 5);
                     ((long[]) objArr[0])[0] = j + 4868;
                     Fpnative.valueOf = objArr;
-                    generateST = (deduplication + 63) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 63) % 128;
                     return;
                 }
             }
@@ -1620,10 +1619,10 @@ public class IdentySdk {
             d((short) 106, bArr[63], (byte) (-bArr[55]), objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 703418483);
             j = ((long[]) objArr[0])[0];
-            generateST = (deduplication + 49) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 49) % 128;
             ((long[]) objArr[0])[0] = j + 4868;
             Fpnative.valueOf = objArr;
-            generateST = (deduplication + 63) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 63) % 128;
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -1632,7 +1631,7 @@ public class IdentySdk {
             }
             throw cause;
         }
-        generateST = (deduplication + 29) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 29) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0022, code lost:
@@ -1641,7 +1640,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0024, code lost:
     
-        com.identy.IdentySdk.generateST = (r2 + 121) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (r2 + 121) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x002a, code lost:
     
@@ -1649,7 +1648,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x003b, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 73) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 73) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0043, code lost:
     
@@ -1698,7 +1697,7 @@ public class IdentySdk {
         int i = this.PngjUnsupportedException;
         if (i <= 6) {
             int i2 = generateST + 65;
-            int i3 = i2 % Uuid.SIZE_BITS;
+            int i3 = i2 % 128;
             deduplication = i3;
             if (i2 % 2 != 0) {
                 int i4 = 10 / 0;
@@ -1748,7 +1747,7 @@ public class IdentySdk {
                     Fpnative.valueOf = objArr;
                     boolean z = this.uxd566jk;
                     i = deduplication + 123;
-                    generateST = i % Uuid.SIZE_BITS;
+                    generateST = i % 128;
                     if (i % 2 == 0) {
                         return z;
                     }
@@ -1763,12 +1762,12 @@ public class IdentySdk {
             d((short) 106, bArr[63], (byte) (-bArr[55]), objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1281678953);
             j = ((long[]) objArr[0])[0];
-            generateST = (deduplication + 53) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 53) % 128;
             ((long[]) objArr[0])[0] = j + 4949;
             Fpnative.valueOf = objArr;
             boolean z2 = this.uxd566jk;
             i = deduplication + 123;
-            generateST = i % Uuid.SIZE_BITS;
+            generateST = i % 128;
             if (i % 2 == 0) {
             }
         } catch (Throwable th) {
@@ -1807,12 +1806,12 @@ public class IdentySdk {
     public IdentyUser B() {
         long j;
         int i = deduplication;
-        generateST = (i + 47) % Uuid.SIZE_BITS;
+        generateST = (i + 47) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 125;
-                generateST = i2 % Uuid.SIZE_BITS;
+                generateST = i2 % 128;
                 if (i2 % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -1855,7 +1854,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 63) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 63) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -1926,7 +1925,7 @@ public class IdentySdk {
             }
             throw cause;
         }
-        generateST = (deduplication + 25) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 25) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:47:0x00e0 A[EXC_TOP_SPLITTER, SYNTHETIC] */
@@ -1953,7 +1952,7 @@ public class IdentySdk {
                     if (!this.e.equals(Action.CAPTURE)) {
                         try {
                             capture();
-                            generateST = (deduplication + 49) % Uuid.SIZE_BITS;
+                            generateST = (deduplication + 49) % 128;
                             return;
                         } catch (AttemptsExceededLimitException e) {
                             throw new RuntimeException(e);
@@ -1964,7 +1963,7 @@ public class IdentySdk {
                         }
                     }
                     if (this.e.equals(Action.ENROLL)) {
-                        deduplication = (generateST + 21) % Uuid.SIZE_BITS;
+                        deduplication = (generateST + 21) % 128;
                         try {
                             enroll();
                             return;
@@ -1978,7 +1977,7 @@ public class IdentySdk {
                     }
                     if (this.e.equals(Action.VERIFY)) {
                         int i3 = generateST + 105;
-                        deduplication = i3 % Uuid.SIZE_BITS;
+                        deduplication = i3 % 128;
                         try {
                             if (i3 % 2 == 0) {
                                 verify();
@@ -2017,7 +2016,7 @@ public class IdentySdk {
             }
             throw cause;
         }
-        generateST = (deduplication + 51) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 51) % 128;
     }
 
     /* JADX WARN: Type inference failed for: r1v22, types: [boolean, int] */
@@ -2036,7 +2035,7 @@ public class IdentySdk {
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    generateST = (deduplication + 59) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 59) % 128;
                     ((long[]) objArr[0])[0] = j + 4879;
                     Fpnative.valueOf = objArr;
                     int i3 = ((int[]) objArr[1])[0];
@@ -2092,7 +2091,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 97) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 97) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:13:0x017b  */
@@ -2104,7 +2103,7 @@ public class IdentySdk {
     public boolean H() {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 113) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 113) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -2120,7 +2119,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 5041;
                     Fpnative.valueOf = objArr;
-                    deduplication = (generateST + 3) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 3) % 128;
                     if (this.getData.checkSelfPermission("android.permission.CAMERA") != 0) {
                         valueOf();
                         return true;
@@ -2134,7 +2133,7 @@ public class IdentySdk {
                     int i9 = (i7 ^ i8) + ((i8 & i7) << 1);
                     int i10 = (i9 & 845317705) + (845317705 | i9);
                     int i11 = i10 >> 25;
-                    int i12 = (((i11 | (-255)) << 1) - (i11 ^ (-255))) / Uuid.SIZE_BITS;
+                    int i12 = (((i11 | (-255)) << 1) - (i11 ^ (-255))) / 128;
                     int i13 = (i10 - (~((i12 & 1) + (i12 | 1)))) - 1;
                     int i14 = i10 >> 18;
                     int i15 = ((i14 & (-32767)) + (i14 | (-32767))) / 16384;
@@ -2143,7 +2142,7 @@ public class IdentySdk {
                     int i18 = ((i17 >> 29) - 15) / 8;
                     int r5 = 0 / (((-(((i18 ^ 1) + ((i18 & 1) << 1)) + 1)) & i17) * 897);
                     int i19 = deduplication + 33;
-                    generateST = i19 % Uuid.SIZE_BITS;
+                    generateST = i19 % 128;
                     if (i19 % 2 != 0) {
                         return r5;
                     }
@@ -2160,7 +2159,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5041;
             Fpnative.valueOf = objArr;
-            deduplication = (generateST + 3) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 3) % 128;
             if (this.getData.checkSelfPermission("android.permission.CAMERA") != 0) {
             }
         } catch (Throwable th) {
@@ -2173,12 +2172,12 @@ public class IdentySdk {
     }
 
     public final boolean PngjBadCrcException() {
-        deduplication = (generateST + 81) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 81) % 128;
         if (h() == null) {
             return false;
         }
         int i = deduplication + 91;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 != 0) {
             return !h().equals(FingerAS.NONE);
         }
@@ -2216,7 +2215,7 @@ public class IdentySdk {
                     this.PngjInputException = i2;
                     fingerDetectionModeArr = this.setScore;
                     if (fingerDetectionModeArr != null) {
-                        deduplication = (generateST + 109) % Uuid.SIZE_BITS;
+                        deduplication = (generateST + 109) % 128;
                         if (fingerDetectionModeArr.length != 0) {
                             if (!H()) {
                                 return false;
@@ -2226,7 +2225,7 @@ public class IdentySdk {
                             this.h = new HashMap();
                             if (!this.setFingers) {
                                 int i6 = deduplication + 57;
-                                generateST = i6 % Uuid.SIZE_BITS;
+                                generateST = i6 % 128;
                                 if (i6 % 2 == 0) {
                                     this.DeduplicationIdentyResponse = QualityMode.VERIFICATION;
                                     throw null;
@@ -2234,7 +2233,7 @@ public class IdentySdk {
                                 this.DeduplicationIdentyResponse = QualityMode.VERIFICATION;
                             }
                             if (!isEnrolled(this.setScore, identyUser)) {
-                                generateST = (deduplication + 43) % Uuid.SIZE_BITS;
+                                generateST = (deduplication + 43) % 128;
                                 return false;
                             }
                             if (this.setScore[0].getFinger() == null || !this.setScore[0].getFinger().equals(Finger.THUMB)) {
@@ -2299,14 +2298,14 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 121) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 121) % 128;
     }
 
     public void b(boolean z) {
         Object[] objArr;
         long j;
         int i = deduplication + 95;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -2347,7 +2346,7 @@ public class IdentySdk {
             }
             throw cause;
         }
-        generateST = (deduplication + 55) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 55) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:16:0x004d, code lost:
@@ -2381,7 +2380,7 @@ public class IdentySdk {
         try {
             if (objArr2 != null) {
                 int i2 = generateST + 67;
-                deduplication = i2 % Uuid.SIZE_BITS;
+                deduplication = i2 % 128;
                 if (i2 % 2 != 0) {
                     long j2 = ((long[]) objArr2[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
@@ -2400,15 +2399,15 @@ public class IdentySdk {
                     int e = b.e(i7 >> 27, 63, 32, -1);
                     int i8 = ((i7 | e) << 1) - (e ^ i7);
                     int i9 = i7 >> 25;
-                    int i10 = ((i9 ^ (-255)) + ((i9 & (-255)) << 1)) / Uuid.SIZE_BITS;
+                    int i10 = ((i9 ^ (-255)) + ((i9 & (-255)) << 1)) / 128;
                     int i11 = -(((i10 ^ 1) + ((i10 & 1) << 1)) ^ i8);
                     int i12 = (i11 & 5) + (i11 | 5);
                     int e2 = b.e(i12 >> 23, 1023, ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
                     i = 0 / (((-((e2 & 1) + (e2 | 1))) & i12) * 420);
                 } else {
-                    generateST = (deduplication + 97) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 97) % 128;
                     i = ((Integer) this.getFingers.get(fingerDetectionMode)).intValue();
-                    generateST = (deduplication + 65) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 65) % 128;
                 }
                 return Integer.valueOf(i);
             }
@@ -2432,7 +2431,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 49) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 49) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x0161 A[RETURN] */
@@ -2445,7 +2444,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i3;
-        deduplication = (generateST + 3) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 3) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -2465,7 +2464,7 @@ public class IdentySdk {
                     valueOf();
                     if (this.getMatchingTime != null && this.getOveralTimetaken == null) {
                         int i7 = generateST + 81;
-                        deduplication = i7 % Uuid.SIZE_BITS;
+                        deduplication = i7 % 128;
                         if (i7 % 2 == 0) {
                             return capture();
                         }
@@ -2488,7 +2487,7 @@ public class IdentySdk {
                     int e = b.e(i19 >> 16, 131071, 65536, -1);
                     int r14 = 917 / (((-((e ^ 1) + ((e & 1) << 1))) & i19) * 917);
                     i3 = generateST + 121;
-                    deduplication = i3 % Uuid.SIZE_BITS;
+                    deduplication = i3 % 128;
                     if (i3 % 2 != 0) {
                         return r14;
                     }
@@ -2526,7 +2525,7 @@ public class IdentySdk {
             int e2 = b.e(i192 >> 16, 131071, 65536, -1);
             int r142 = 917 / (((-((e2 ^ 1) + ((e2 & 1) << 1))) & i192) * 917);
             i3 = generateST + 121;
-            deduplication = i3 % Uuid.SIZE_BITS;
+            deduplication = i3 % 128;
             if (i3 % 2 != 0) {
             }
         } catch (Throwable th) {
@@ -2547,7 +2546,7 @@ public class IdentySdk {
     public boolean checkDeduplication(Template template, HashMap<Pair<Hand, Finger>, byte[]> hashMap) {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 83) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 83) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -2567,17 +2566,17 @@ public class IdentySdk {
                         throw new UnSupportedTemplateException();
                     }
                     if (!template.equals(Template.NIST_ITL_1_2015_RECORD_9) && (!template.equals(Template.NIST_ITL_1_2015_RECORD_14))) {
-                        deduplication = (generateST + 39) % Uuid.SIZE_BITS;
+                        deduplication = (generateST + 39) % 128;
                         if (!template.equals(Template.SLAP_PNG) && !template.equals(Template.SLAP_WSQ) && !template.equals(Template.RAW)) {
                             int i4 = deduplication + 97;
-                            generateST = i4 % Uuid.SIZE_BITS;
+                            generateST = i4 % 128;
                             if (i4 % 2 == 0) {
                                 template.equals(Template.IDENTY_1);
                                 throw null;
                             }
                             if ((!template.equals(Template.IDENTY_1)) && !template.equals(Template.FF_WSQ)) {
                                 int i5 = deduplication + 55;
-                                generateST = i5 % Uuid.SIZE_BITS;
+                                generateST = i5 % 128;
                                 if (i5 % 2 == 0) {
                                     template.equals(Template.FF_ISO_19794_4);
                                     throw null;
@@ -2634,14 +2633,14 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 13) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 13) % 128;
     }
 
     /* JADX WARN: Type inference failed for: r4v1, types: [boolean, int] */
     public IdentySdk disableDisplayTransactionAlerts() {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 29) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 29) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -2655,7 +2654,7 @@ public class IdentySdk {
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    generateST = (deduplication + 103) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 103) % 128;
                     ((long[]) objArr[0])[0] = j + 4978;
                     Fpnative.valueOf = objArr;
                     int i4 = ((int[]) objArr[1])[0];
@@ -2707,14 +2706,14 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 121) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 121) % 128;
     }
 
     /* JADX WARN: Type inference failed for: r4v1, types: [boolean, int] */
     public IdentySdk disableMoveNextDetectionDialog() {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 17) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 17) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -2727,7 +2726,7 @@ public class IdentySdk {
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    deduplication = (generateST + 13) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 13) % 128;
                     ((long[]) objArr[0])[0] = j + 5023;
                     Fpnative.valueOf = objArr;
                     int i4 = ((int[]) objArr[1])[0];
@@ -2785,19 +2784,19 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 49) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 49) % 128;
     }
 
     /* JADX WARN: Type inference failed for: r5v1, types: [boolean, int] */
     public IdentySdk disableTraining() {
         Object[] objArr;
         long j;
-        int i = (deduplication + 17) % Uuid.SIZE_BITS;
+        int i = (deduplication + 17) % 128;
         generateST = i;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (i + 3) % Uuid.SIZE_BITS;
+                deduplication = (i + 3) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -2894,7 +2893,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i2 = deduplication + 19;
-                generateST = i2 % Uuid.SIZE_BITS;
+                generateST = i2 % 128;
                 if (i2 % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
@@ -2906,7 +2905,7 @@ public class IdentySdk {
                 Fpnative.valueOf = r3;
                 this.uxd565jj = z;
                 i = generateST + 83;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                     int i3 = 72 / 0;
                 }
@@ -2924,7 +2923,7 @@ public class IdentySdk {
             Fpnative.valueOf = objArr4;
             this.uxd565jj = z;
             i = generateST + 83;
-            deduplication = i % Uuid.SIZE_BITS;
+            deduplication = i % 128;
             if (i % 2 != 0) {
             }
             return this;
@@ -2952,7 +2951,7 @@ public class IdentySdk {
         r0 = r0 ^ (r0 << 13);
         r0 = r0 ^ (r0 >>> 17);
         ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 67) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 67) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -2963,7 +2962,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i = generateST + 3;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -2996,7 +2995,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 13) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 13) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x0106  */
@@ -3008,7 +3007,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        deduplication = (generateST + 21) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 21) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -3025,7 +3024,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j + 4977;
                     Fpnative.valueOf = objArr;
                     if (!this.getFingers.containsKey(fingerDetectionMode)) {
-                        deduplication = (generateST + 97) % Uuid.SIZE_BITS;
+                        deduplication = (generateST + 97) % 128;
                         i = ((Integer) this.getFingers.get(fingerDetectionMode)).intValue();
                     } else {
                         i = 0;
@@ -3036,7 +3035,7 @@ public class IdentySdk {
                     int i8 = (i6 ^ i7) + ((i6 & i7) << 1);
                     int i9 = -(i5 * (-1268122637));
                     int i10 = (((i8 | i9) << 1) - (i9 ^ i8)) - (-1517541353);
-                    int i11 = ((i10 >> 25) - 255) / Uuid.SIZE_BITS;
+                    int i11 = ((i10 >> 25) - 255) / 128;
                     int i12 = (i10 - (~((i11 ^ 1) + ((i11 & 1) << 1)))) - 1;
                     int i13 = i10 >> 26;
                     int i14 = (((i13 | (-127)) << 1) - (i13 ^ (-127))) / 64;
@@ -3067,7 +3066,7 @@ public class IdentySdk {
             int i82 = (i62 ^ i72) + ((i62 & i72) << 1);
             int i92 = -(i52 * (-1268122637));
             int i102 = (((i82 | i92) << 1) - (i92 ^ i82)) - (-1517541353);
-            int i112 = ((i102 >> 25) - 255) / Uuid.SIZE_BITS;
+            int i112 = ((i102 >> 25) - 255) / 128;
             int i122 = (i102 - (~((i112 ^ 1) + ((i112 & 1) << 1)))) - 1;
             int i132 = i102 >> 26;
             int i142 = (((i132 | (-127)) << 1) - (i132 ^ (-127))) / 64;
@@ -3085,7 +3084,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 1) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 1) % 128;
     }
 
     /* JADX WARN: Type inference failed for: r1v27, types: [boolean, int] */
@@ -3095,7 +3094,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 123) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 123) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -3162,14 +3161,14 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 113) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 113) % 128;
     }
 
     /* JADX WARN: Type inference failed for: r1v24, types: [boolean, int] */
     public void enableCustomSDK() {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 17) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 17) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -3213,7 +3212,7 @@ public class IdentySdk {
             d((short) (-bArr[24]), bArr[63], bArr[116], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1652513311);
             j = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 45) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 45) % 128;
             ((long[]) objArr[0])[0] = j + 4902;
             Fpnative.valueOf = objArr;
             int i42 = ((int[]) objArr[1])[0];
@@ -3267,12 +3266,12 @@ public class IdentySdk {
     public void enableExitCaptureUsingHandChangeOption() {
         long j;
         int i = deduplication;
-        generateST = (i + 93) % Uuid.SIZE_BITS;
+        generateST = (i + 93) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 105;
-                generateST = i2 % Uuid.SIZE_BITS;
+                generateST = i2 % 128;
                 if (i2 % 2 == 0) {
                     long j2 = ((long[]) objArr[1])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -3301,7 +3300,7 @@ public class IdentySdk {
                 int i19 = ((i18 & (-131071)) + ((-131071) | i18)) / 65536;
                 int i20 = (i19 ^ 1) + ((i19 & 1) << 1);
                 this.cvtmat2ba = 11610 / (((-((i20 ^ 1) + ((i20 & 1) << 1))) & i17) * 1935);
-                generateST = (deduplication + 97) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 97) % 128;
             }
             byte[] bArr = $$d;
             Object[] objArr2 = new Object[1];
@@ -3332,7 +3331,7 @@ public class IdentySdk {
             int i192 = ((i182 & (-131071)) + ((-131071) | i182)) / 65536;
             int i202 = (i192 ^ 1) + ((i192 & 1) << 1);
             this.cvtmat2ba = 11610 / (((-((i202 ^ 1) + ((i202 & 1) << 1))) & i172) * 1935);
-            generateST = (deduplication + 97) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 97) % 128;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause == null) {
@@ -3355,7 +3354,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 37) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 37) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -3385,7 +3384,7 @@ public class IdentySdk {
                     this.resetAttempt = 7698 / ((i15 & (-((i18 ^ 1) + ((i18 & 1) << 1)))) * 1283);
                     this.CaptureRolledThumbActivity = compressFormat;
                     i = deduplication + 63;
-                    generateST = i % Uuid.SIZE_BITS;
+                    generateST = i % 128;
                     if (i % 2 != 0) {
                         throw null;
                     }
@@ -3400,7 +3399,7 @@ public class IdentySdk {
             d((short) 154, (byte) (-bArr[111]), bArr[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1360576807);
             j = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 31) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 31) % 128;
             ((long[]) objArr[0])[0] = j + 4978;
             Fpnative.valueOf = objArr;
             int i52 = ((int[]) objArr[1])[0];
@@ -3420,7 +3419,7 @@ public class IdentySdk {
             this.resetAttempt = 7698 / ((i152 & (-((i182 ^ 1) + ((i182 & 1) << 1)))) * 1283);
             this.CaptureRolledThumbActivity = compressFormat;
             i = deduplication + 63;
-            generateST = i % Uuid.SIZE_BITS;
+            generateST = i % 128;
             if (i % 2 != 0) {
             }
         } catch (Throwable th) {
@@ -3447,7 +3446,7 @@ public class IdentySdk {
         r0 = r0 ^ (r0 << 13);
         r0 = r0 ^ (r0 >>> 17);
         ((int[]) r6[1])[0] = r0 ^ (r0 << 5);
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 47) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 47) % 128;
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0162 A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:12:0x0163  */
@@ -3462,7 +3461,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i2 = generateST + 53;
-                deduplication = i2 % Uuid.SIZE_BITS;
+                deduplication = i2 % 128;
                 if (i2 % 2 != 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, new Object[1])).longValue();
@@ -3488,7 +3487,7 @@ public class IdentySdk {
                 int i16 = ((i15 >> 18) - 32767) / 16384;
                 this.CaptureMode = 13800 / (((-(((i16 ^ 1) + ((i16 & 1) << 1)) - (-1))) & i15) * 1725);
                 i = deduplication + 45;
-                generateST = i % Uuid.SIZE_BITS;
+                generateST = i % 128;
                 if (i % 2 == 0) {
                     return this;
                 }
@@ -3520,7 +3519,7 @@ public class IdentySdk {
             int i162 = ((i152 >> 18) - 32767) / 16384;
             this.CaptureMode = 13800 / (((-(((i162 ^ 1) + ((i162 & 1) << 1)) - (-1))) & i152) * 1725);
             i = deduplication + 45;
-            generateST = i % Uuid.SIZE_BITS;
+            generateST = i % 128;
             if (i % 2 == 0) {
             }
         } catch (Throwable th) {
@@ -3558,7 +3557,7 @@ public class IdentySdk {
         long j;
         int i;
         int i2 = deduplication + 61;
-        int i3 = i2 % Uuid.SIZE_BITS;
+        int i3 = i2 % 128;
         generateST = i3;
         if (i2 % 2 == 0) {
             throw null;
@@ -3567,7 +3566,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i4 = i3 + 89;
-                deduplication = i4 % Uuid.SIZE_BITS;
+                deduplication = i4 % 128;
                 if (i4 % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, new Object[1])).longValue();
@@ -3595,7 +3594,7 @@ public class IdentySdk {
                 int a = b.a(i19 ^ (-32767), (i19 & (-32767)) << 1, 16384, -1);
                 this.getShortform = b.c((-((a & 1) + (a | 1))) & i18, 28, 1764, "24;16;11;kid");
                 i = deduplication + 21;
-                generateST = i % Uuid.SIZE_BITS;
+                generateST = i % 128;
                 if (i % 2 == 0) {
                     return this;
                 }
@@ -3629,7 +3628,7 @@ public class IdentySdk {
             int a2 = b.a(i192 ^ (-32767), (i192 & (-32767)) << 1, 16384, -1);
             this.getShortform = b.c((-((a2 & 1) + (a2 | 1))) & i182, 28, 1764, "24;16;11;kid");
             i = deduplication + 21;
-            generateST = i % Uuid.SIZE_BITS;
+            generateST = i % 128;
             if (i % 2 == 0) {
             }
         } catch (Throwable th) {
@@ -3648,7 +3647,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0132, code lost:
     
         r5 = com.identy.IdentySdk.deduplication + 23;
-        r7 = r5 % kotlin.uuid.Uuid.SIZE_BITS;
+        r7 = r5 % 128;
         com.identy.IdentySdk.generateST = r7;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x013c, code lost:
@@ -3666,7 +3665,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0149, code lost:
     
         r7 = r7 + 107;
-        r5 = r7 % kotlin.uuid.Uuid.SIZE_BITS;
+        r5 = r7 % 128;
         com.identy.IdentySdk.deduplication = r5;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0151, code lost:
@@ -3679,7 +3678,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0155, code lost:
     
-        com.identy.IdentySdk.generateST = (r5 + 5) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (r5 + 5) % 128;
         r5 = ((int[]) r6[1])[r18];
         r6 = r5 * r5;
         r7 = -(1404602467 * r5);
@@ -3755,7 +3754,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:39:0x002e, code lost:
     
         r6 = r6 + 83;
-        com.identy.IdentySdk.generateST = r6 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = r6 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x0035, code lost:
     
@@ -3781,7 +3780,7 @@ public class IdentySdk {
         r5 = defpackage.a.c(((~(r5 | (-1031629371))) | (-1073610747)) | r9, 520, ((r10 | r9) * (-1040)) + r7, -1133546657);
         r5 = r5 ^ (r5 << 13);
         r5 = r5 ^ (r5 >>> 17);
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 121) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 121) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:44:0x0054, code lost:
     
@@ -3829,7 +3828,7 @@ public class IdentySdk {
     public IdentySdk enableRetries(int i, int i2, int i3, int i4) {
         Object[] objArr;
         int i5 = generateST + 23;
-        int i6 = i5 % Uuid.SIZE_BITS;
+        int i6 = i5 % 128;
         deduplication = i6;
         if (i5 % 2 != 0) {
             objArr = Fpnative.valueOf;
@@ -3868,7 +3867,7 @@ public class IdentySdk {
                     int i11 = ((i10 | 1) << 1) - (i10 ^ 1);
                     int i12 = (i8 ^ i11) + ((i11 & i8) << 1);
                     int i13 = i8 >> 25;
-                    int i14 = -(b.e((i13 | (-255)) << 1, i13 ^ (-255), Uuid.SIZE_BITS, -1) ^ i12);
+                    int i14 = -(b.e((i13 | (-255)) << 1, i13 ^ (-255), 128, -1) ^ i12);
                     int i15 = (i14 ^ 6) + ((i14 & 6) << 1);
                     int i16 = ((i15 >> 22) - 2047) / 1024;
                     int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
@@ -3884,7 +3883,7 @@ public class IdentySdk {
             d((short) 154, (byte) (-bArr[111]), bArr[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1197693693);
             j = ((long[]) objArr[0])[0];
-            generateST = (deduplication + 113) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 113) % 128;
             ((long[]) objArr[0])[0] = j + 5048;
             Fpnative.valueOf = objArr;
             int i32 = ((int[]) objArr[1])[0];
@@ -3898,7 +3897,7 @@ public class IdentySdk {
             int i112 = ((i102 | 1) << 1) - (i102 ^ 1);
             int i122 = (i82 ^ i112) + ((i112 & i82) << 1);
             int i132 = i82 >> 25;
-            int i142 = -(b.e((i132 | (-255)) << 1, i132 ^ (-255), Uuid.SIZE_BITS, -1) ^ i122);
+            int i142 = -(b.e((i132 | (-255)) << 1, i132 ^ (-255), 128, -1) ^ i122);
             int i152 = (i142 ^ 6) + ((i142 & 6) << 1);
             int i162 = ((i152 >> 22) - 2047) / 1024;
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
@@ -3911,7 +3910,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 11) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 11) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x010c, code lost:
@@ -3941,7 +3940,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001b, code lost:
     
         r0 = r0 + 67;
-        com.identy.IdentySdk.deduplication = r0 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = r0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0022, code lost:
     
@@ -3983,7 +3982,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x009f, code lost:
     
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 27) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 27) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x00aa, code lost:
     
@@ -4012,7 +4011,7 @@ public class IdentySdk {
         Object[] objArr;
         int i = generateST;
         int i2 = i + 25;
-        deduplication = i2 % Uuid.SIZE_BITS;
+        deduplication = i2 % 128;
         if (i2 % 2 != 0) {
             objArr = Fpnative.valueOf;
             int i3 = 54 / 0;
@@ -4028,7 +4027,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 113) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 113) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -4094,9 +4093,9 @@ public class IdentySdk {
             }
             throw th;
         }
-        int i19 = (generateST + 51) % Uuid.SIZE_BITS;
+        int i19 = (generateST + 51) % 128;
         deduplication = i19;
-        generateST = (i19 + 7) % Uuid.SIZE_BITS;
+        generateST = (i19 + 7) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x004b, code lost:
@@ -4129,7 +4128,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i3 = deduplication + 3;
-                generateST = i3 % Uuid.SIZE_BITS;
+                generateST = i3 % 128;
                 if (i3 % 2 == 0) {
                     long j2 = ((long[]) objArr[1])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
@@ -4156,7 +4155,7 @@ public class IdentySdk {
                 this.getIdentyQuality = z;
                 this.setSpoofScore = i;
                 i2 = deduplication + 85;
-                generateST = i2 % Uuid.SIZE_BITS;
+                generateST = i2 % 128;
                 if (i2 % 2 != 0) {
                     throw null;
                 }
@@ -4189,7 +4188,7 @@ public class IdentySdk {
             this.getIdentyQuality = z;
             this.setSpoofScore = i;
             i2 = deduplication + 85;
-            generateST = i2 % Uuid.SIZE_BITS;
+            generateST = i2 % 128;
             if (i2 % 2 != 0) {
             }
         } catch (Throwable th) {
@@ -4199,7 +4198,7 @@ public class IdentySdk {
             }
             throw cause;
         }
-        generateST = (deduplication + 71) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 71) % 128;
     }
 
     public boolean enroll(int i, int i2) {
@@ -4231,7 +4230,7 @@ public class IdentySdk {
             d((short) 106, bArr[63], (byte) (-bArr[55]), objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1533215827);
             j = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 35) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 35) % 128;
             ((long[]) objArr[0])[0] = j + 5003;
             Fpnative.valueOf = objArr;
             this.PngjUnsupportedException = i;
@@ -4245,7 +4244,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 123) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 123) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:53:0x0290  */
@@ -4327,7 +4326,7 @@ public class IdentySdk {
                                     PngjBadSignature(file.getAbsolutePath(), file2.getAbsolutePath());
                                     if (template.equals(Template.FF_ISO_19794_4)) {
                                         int i17 = deduplication + 109;
-                                        generateST = i17 % Uuid.SIZE_BITS;
+                                        generateST = i17 % 128;
                                         if (i17 % 2 == 0) {
                                             values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 1779101910, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -1779101909, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
                                             throw th2;
@@ -4343,7 +4342,7 @@ public class IdentySdk {
                             }
                         }
                     }
-                    deduplication = (generateST + 51) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 51) % 128;
                     return true;
                 }
             }
@@ -4367,7 +4366,7 @@ public class IdentySdk {
             }
             throw th3;
         }
-        generateST = (deduplication + 81) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 81) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:63:0x0055, code lost:
@@ -4396,7 +4395,7 @@ public class IdentySdk {
     public boolean enrollWithCustomTemplatesbase64(Template template, HashMap<Hand, String> hashMap) {
         Object[] objArr;
         long j;
-        int i = (deduplication + 57) % Uuid.SIZE_BITS;
+        int i = (deduplication + 57) % 128;
         generateST = i;
         Object[] objArr2 = Fpnative.valueOf;
         char c = 2;
@@ -4405,7 +4404,7 @@ public class IdentySdk {
         try {
             if (objArr2 != null) {
                 int i2 = i + 83;
-                deduplication = i2 % Uuid.SIZE_BITS;
+                deduplication = i2 % 128;
                 if (i2 % 2 != 0) {
                     long j2 = ((long[]) objArr2[1])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, new Object[1])).longValue();
@@ -4472,16 +4471,16 @@ public class IdentySdk {
                                 PngjBadSignature(file.getAbsolutePath(), file2.getAbsolutePath());
                                 if (template.equals(Template.FF_ISO_19794_4)) {
                                     int i17 = deduplication + 25;
-                                    generateST = i17 % Uuid.SIZE_BITS;
+                                    generateST = i17 % 128;
                                     if (i17 % 2 == 0) {
                                         values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 1779101910, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -1779101909, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
                                         throw th2;
                                     }
                                     values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 1779101910, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -1779101909, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
-                                    generateST = (deduplication + 113) % Uuid.SIZE_BITS;
+                                    generateST = (deduplication + 113) % 128;
                                 } else if (template.equals(Template.FF_WSQ)) {
                                     int i18 = deduplication + 81;
-                                    generateST = i18 % Uuid.SIZE_BITS;
+                                    generateST = i18 % 128;
                                     if (i18 % 2 == 0) {
                                         PngjBadCrcException(file2.getAbsolutePath(), PngjException(str), key, defaultUser);
                                         throw th2;
@@ -4548,7 +4547,7 @@ public class IdentySdk {
                     if (template2 != null) {
                         throw new Exception(this.getData.getString(R.string.template_type_is_unknown));
                     }
-                    deduplication = (generateST + 117) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 117) % 128;
                     if (template2.equals(Template.NIST_ITL_1_2015_RECORD_9) || template2.equals(Template.NIST_ITL_1_2015_RECORD_14)) {
                         StringBuilder sb = new StringBuilder();
                         sb.append(this.getData.getString(R.string.template_type_is_not_valid));
@@ -4578,7 +4577,7 @@ public class IdentySdk {
                     this.uxd565jk = defaultUser;
                     com.identy.PngjBadCrcException.values(this.getData, "TEMP_IDENTY");
                     for (Map.Entry<Pair<Hand, Finger>, String> entry : hashMap.entrySet()) {
-                        generateST = (deduplication + 95) % Uuid.SIZE_BITS;
+                        generateST = (deduplication + 95) % 128;
                         Pair<Hand, Finger> key = entry.getKey();
                         Hand hand = (Hand) key.first;
                         Finger finger = (Finger) key.second;
@@ -4589,7 +4588,7 @@ public class IdentySdk {
                             values(value, finger, hand, defaultUser);
                         } else if (template2.equals(Template.ISO_19794_4)) {
                             int i16 = deduplication + 31;
-                            generateST = i16 % Uuid.SIZE_BITS;
+                            generateST = i16 % 128;
                             if (i16 % 2 == 0) {
                                 values(new Object[]{this, value, finger, hand, defaultUser}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 1779101910, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -1779101909, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
                                 throw null;
@@ -4645,7 +4644,7 @@ public class IdentySdk {
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    generateST = (deduplication + 15) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 15) % 128;
                     ((long[]) objArr[0])[0] = j + 5004;
                     Fpnative.valueOf = objArr;
                     if (template2 != null) {
@@ -4675,7 +4674,7 @@ public class IdentySdk {
                     int i8 = (i6 ^ i7) + ((i7 & i6) << 1);
                     int i9 = (i8 & 1519839248) + (1519839248 | i8);
                     int i10 = i9 >> 25;
-                    int i11 = ((i10 ^ (-255)) + ((i10 & (-255)) << 1)) / Uuid.SIZE_BITS;
+                    int i11 = ((i10 ^ (-255)) + ((i10 & (-255)) << 1)) / 128;
                     int i12 = ((i11 | 1) << 1) - (i11 ^ 1);
                     int i13 = (i9 ^ i12) + ((i12 & i9) << 1);
                     int i14 = ((i9 >> 19) - 16383) / ConstantsKt.DEFAULT_BUFFER_SIZE;
@@ -4691,7 +4690,7 @@ public class IdentySdk {
                         String value = entry.getValue();
                         byte[] decode = Base64.decode(value.getBytes(), this.isQualityFailed);
                         if (template2.equals(Template.WSQ)) {
-                            generateST = (deduplication + 123) % Uuid.SIZE_BITS;
+                            generateST = (deduplication + 123) % 128;
                             valueOf(decode, finger, hand, defaultUser);
                         } else if (template2.equals(Template.ISO_19794_2)) {
                             values(new Object[]{this, decode, finger, hand, defaultUser}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -994925292, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 994925295, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
@@ -4725,13 +4724,13 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 77) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 77) % 128;
     }
 
     public IdentySdk f() {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 119) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 119) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -4762,11 +4761,11 @@ public class IdentySdk {
                     int i14 = (i13 & 1) + (i13 | 1);
                     int i15 = (i12 & i14) + (i14 | i12);
                     int i16 = i12 >> 25;
-                    int i17 = ((i16 ^ (-255)) + ((i16 & (-255)) << 1)) / Uuid.SIZE_BITS;
+                    int i17 = ((i16 ^ (-255)) + ((i16 & (-255)) << 1)) / 128;
                     int i18 = -(i15 ^ ((i17 ^ 1) + ((i17 & 1) << 1)));
                     int i19 = (i18 ^ 9) + ((i18 & 9) << 1);
                     int i20 = i19 >> 25;
-                    int i21 = (((i20 | (-255)) << 1) - (i20 ^ (-255))) / Uuid.SIZE_BITS;
+                    int i21 = (((i20 | (-255)) << 1) - (i20 ^ (-255))) / 128;
                     int i22 = ((i21 | 1) << 1) - (i21 ^ 1);
                     getPadSub2.PngjException("25/0/TAG".substring(22680 / (((-((i22 & 1) + (i22 | 1))) & i19) * 504)), " TAG ===  rolled ? ");
                     return this;
@@ -4796,11 +4795,11 @@ public class IdentySdk {
             int i142 = (i132 & 1) + (i132 | 1);
             int i152 = (i122 & i142) + (i142 | i122);
             int i162 = i122 >> 25;
-            int i172 = ((i162 ^ (-255)) + ((i162 & (-255)) << 1)) / Uuid.SIZE_BITS;
+            int i172 = ((i162 ^ (-255)) + ((i162 & (-255)) << 1)) / 128;
             int i182 = -(i152 ^ ((i172 ^ 1) + ((i172 & 1) << 1)));
             int i192 = (i182 ^ 9) + ((i182 & 9) << 1);
             int i202 = i192 >> 25;
-            int i212 = (((i202 | (-255)) << 1) - (i202 ^ (-255))) / Uuid.SIZE_BITS;
+            int i212 = (((i202 | (-255)) << 1) - (i202 ^ (-255))) / 128;
             int i222 = ((i212 | 1) << 1) - (i212 ^ 1);
             getPadSub2.PngjException("25/0/TAG".substring(22680 / (((-((i222 & 1) + (i222 | 1))) & i192) * 504)), " TAG ===  rolled ? ");
             return this;
@@ -4811,7 +4810,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 91) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 91) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x00e4  */
@@ -4823,7 +4822,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        generateST = (deduplication + 1) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 1) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -4839,7 +4838,7 @@ public class IdentySdk {
                     Fpnative.valueOf = objArr;
                     Activity activity = this.getData;
                     i = generateST + 27;
-                    deduplication = i % Uuid.SIZE_BITS;
+                    deduplication = i % 128;
                     if (i % 2 != 0) {
                         return activity;
                     }
@@ -4858,7 +4857,7 @@ public class IdentySdk {
             Fpnative.valueOf = objArr;
             Activity activity2 = this.getData;
             i = generateST + 27;
-            deduplication = i % Uuid.SIZE_BITS;
+            deduplication = i % 128;
             if (i % 2 != 0) {
             }
         } catch (Throwable th) {
@@ -4868,7 +4867,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 37) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 37) % 128;
     }
 
     public Action getAction() {
@@ -4886,11 +4885,11 @@ public class IdentySdk {
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    deduplication = (generateST + 43) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 43) % 128;
                     ((long[]) objArr[0])[0] = j + 4914;
                     Fpnative.valueOf = objArr;
                     Action action = this.e;
-                    generateST = (deduplication + 49) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 49) % 128;
                     return action;
                 }
             }
@@ -4906,7 +4905,7 @@ public class IdentySdk {
             ((long[]) objArr[0])[0] = j + 4914;
             Fpnative.valueOf = objArr;
             Action action2 = this.e;
-            generateST = (deduplication + 49) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 49) % 128;
             return action2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -4915,13 +4914,13 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 45) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 45) % 128;
     }
 
     public long getAfterCaptureInlinemsgTime() {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 87) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 87) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -4946,7 +4945,7 @@ public class IdentySdk {
             d((short) 106, bArr[63], (byte) (-bArr[55]), objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1174941777);
             j = ((long[]) objArr[0])[0];
-            generateST = (deduplication + 59) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 59) % 128;
             ((long[]) objArr[0])[0] = j + 4983;
             Fpnative.valueOf = objArr;
             return this.getServerRequest;
@@ -4965,7 +4964,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (generateST + 23) % Uuid.SIZE_BITS;
+                deduplication = (generateST + 23) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -4998,7 +4997,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 17) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 17) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
@@ -5019,7 +5018,7 @@ public class IdentySdk {
         r0 = r0 ^ (r0 << 13);
         r0 = r0 ^ (r0 >>> 17);
         ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 125) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 125) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -5030,7 +5029,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i = generateST + 73;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -5067,7 +5066,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i = generateST + 17;
-        deduplication = i % Uuid.SIZE_BITS;
+        deduplication = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -5083,7 +5082,7 @@ public class IdentySdk {
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    deduplication = (generateST + 111) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 111) % 128;
                     ((long[]) objArr[0])[0] = j + 4883;
                     Fpnative.valueOf = objArr;
                     return this.getEncryptedTemplates;
@@ -5107,7 +5106,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 21) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 21) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00fe, code lost:
@@ -5152,7 +5151,7 @@ public class IdentySdk {
         r0 = r0 ^ (r0 << 13);
         r0 = r0 ^ (r0 >>> 17);
         ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 109) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 109) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
@@ -5164,7 +5163,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0095, code lost:
     
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 57) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 57) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x009d, code lost:
     
@@ -5191,7 +5190,7 @@ public class IdentySdk {
     public int getBase64EncodingFlag() {
         Object[] objArr;
         int i = deduplication + 75;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             objArr = Fpnative.valueOf;
             int i2 = 54 / 0;
@@ -5222,12 +5221,12 @@ public class IdentySdk {
     public String getCaptureType() {
         long j;
         int i = generateST;
-        deduplication = (i + 61) % Uuid.SIZE_BITS;
+        deduplication = (i + 61) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 123;
-                deduplication = i2 % Uuid.SIZE_BITS;
+                deduplication = i2 % 128;
                 if (i2 % 2 != 0) {
                     long j2 = ((long[]) objArr[0])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
@@ -5258,14 +5257,14 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 3) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 3) % 128;
     }
 
     public IdentyUser getDefaultUser() {
         Object[] objArr;
         long j;
         int i = generateST + 17;
-        int i2 = i % Uuid.SIZE_BITS;
+        int i2 = i % 128;
         deduplication = i2;
         if (i % 2 != 0) {
             throw null;
@@ -5273,7 +5272,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (i2 + 123) % Uuid.SIZE_BITS;
+                generateST = (i2 + 123) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -5295,7 +5294,7 @@ public class IdentySdk {
                     int i11 = ((i10 | 1) << 1) - (i10 ^ 1);
                     int i12 = (i9 & i11) + (i11 | i9);
                     int i13 = i9 >> 25;
-                    int i14 = ((i13 ^ (-255)) + ((i13 & (-255)) << 1)) / Uuid.SIZE_BITS;
+                    int i14 = ((i13 ^ (-255)) + ((i13 & (-255)) << 1)) / 128;
                     int i15 = -(i12 ^ ((i14 ^ 1) + ((i14 & 1) << 1)));
                     int i16 = (i15 ^ 7) + ((i15 & 7) << 1);
                     int i17 = i16 >> 27;
@@ -5303,7 +5302,7 @@ public class IdentySdk {
                     int i19 = ((i18 | 1) << 1) - (i18 ^ 1);
                     identyUser.uid = 0 / (((-(((i19 | 1) << 1) - (i19 ^ 1))) & i16) * 1476);
                     identyUser.username = IdentyUserManager.getdefUser();
-                    deduplication = (generateST + 101) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 101) % 128;
                     return identyUser;
                 }
             }
@@ -5315,7 +5314,7 @@ public class IdentySdk {
             d((short) 154, (byte) (-bArr[111]), bArr[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1816448474);
             j = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 47) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 47) % 128;
             ((long[]) objArr[0])[0] = j + 4890;
             Fpnative.valueOf = objArr;
             IdentyUser identyUser2 = new IdentyUser();
@@ -5328,7 +5327,7 @@ public class IdentySdk {
             int i112 = ((i102 | 1) << 1) - (i102 ^ 1);
             int i122 = (i92 & i112) + (i112 | i92);
             int i132 = i92 >> 25;
-            int i142 = ((i132 ^ (-255)) + ((i132 & (-255)) << 1)) / Uuid.SIZE_BITS;
+            int i142 = ((i132 ^ (-255)) + ((i132 & (-255)) << 1)) / 128;
             int i152 = -(i122 ^ ((i142 ^ 1) + ((i142 & 1) << 1)));
             int i162 = (i152 ^ 7) + ((i152 & 7) << 1);
             int i172 = i162 >> 27;
@@ -5336,7 +5335,7 @@ public class IdentySdk {
             int i192 = ((i182 | 1) << 1) - (i182 ^ 1);
             identyUser2.uid = 0 / (((-(((i192 | 1) << 1) - (i192 ^ 1))) & i162) * 1476);
             identyUser2.username = IdentyUserManager.getdefUser();
-            deduplication = (generateST + 101) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 101) % 128;
             return identyUser2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5352,14 +5351,14 @@ public class IdentySdk {
         long j;
         int i = generateST;
         int i2 = i + 73;
-        deduplication = i2 % Uuid.SIZE_BITS;
+        deduplication = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (i + 33) % Uuid.SIZE_BITS;
+                deduplication = (i + 33) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -5369,7 +5368,7 @@ public class IdentySdk {
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
-                    deduplication = (generateST + 91) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 91) % 128;
                     ((long[]) objArr[0])[0] = j + 4910;
                     Fpnative.valueOf = objArr;
                     return this.setScore;
@@ -5411,7 +5410,7 @@ public class IdentySdk {
         r0 = r0 ^ (r0 << 13);
         r0 = r0 ^ (r0 >>> 17);
         ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 99) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 99) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -5422,7 +5421,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i = generateST + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -5452,13 +5451,13 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 91) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 91) % 128;
     }
 
     public Bitmap.CompressFormat getGimageformat() {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 89) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 89) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -5475,7 +5474,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j + 4850;
                     Fpnative.valueOf = objArr;
                     Bitmap.CompressFormat compressFormat = this.CaptureRolledThumbActivity;
-                    deduplication = (generateST + 39) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 39) % 128;
                     return compressFormat;
                 }
             }
@@ -5488,11 +5487,11 @@ public class IdentySdk {
             d((short) (-bArr[24]), bArr[63], bArr[116], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2034462842);
             j = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 79) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 79) % 128;
             ((long[]) objArr[0])[0] = j + 4850;
             Fpnative.valueOf = objArr;
             Bitmap.CompressFormat compressFormat2 = this.CaptureRolledThumbActivity;
-            deduplication = (generateST + 39) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 39) % 128;
             return compressFormat2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5515,7 +5514,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (generateST + 109) % Uuid.SIZE_BITS;
+                deduplication = (generateST + 109) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -5544,7 +5543,7 @@ public class IdentySdk {
                     int i13 = ((i12 >> 22) - 2047) / 1024;
                     int i14 = (i13 & 1) + (i13 | 1);
                     InlineGuideOption inlineGuideOption2 = new InlineGuideOption(300, 32508 / ((i12 & (-(((i14 | 1) << 1) - (1 ^ i14)))) * 1548));
-                    deduplication = (generateST + 63) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 63) % 128;
                     return inlineGuideOption2;
                 }
             }
@@ -5605,7 +5604,7 @@ public class IdentySdk {
                         int i = c4 ^ (c4 << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                        deduplication = (generateST + 61) % Uuid.SIZE_BITS;
+                        deduplication = (generateST + 61) % 128;
                         ((long[]) objArr[0])[0] = j + 4951;
                         Fpnative.valueOf = objArr;
                         PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
@@ -5676,7 +5675,7 @@ public class IdentySdk {
                                 int i12 = c6 ^ (c6 << 13);
                                 int i13 = i12 ^ (i12 >>> 17);
                                 ((int[]) objArr9[4])[0] = i13 ^ (i13 << 5);
-                                generateST = (deduplication + 107) % Uuid.SIZE_BITS;
+                                generateST = (deduplication + 107) % 128;
                                 return this.closefDialog;
                             }
                         } else {
@@ -5691,7 +5690,7 @@ public class IdentySdk {
                         context = (Context) cls2.getMethod((String) objArr11[0], null).invoke(null, null);
                         if (context != null) {
                             if (context instanceof ContextWrapper) {
-                                deduplication = (generateST + 113) % Uuid.SIZE_BITS;
+                                deduplication = (generateST + 113) % 128;
                                 if (((ContextWrapper) context).getBaseContext() == null) {
                                     context = null;
                                 }
@@ -5704,7 +5703,7 @@ public class IdentySdk {
                         Object[] objArr13 = new Object[1];
                         l(null, 128 - (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)), null, "\u008c\u0083\u0085\u008e\u0097\u0088\u0081\u009b\u008a\u008b\u0086\u008b\u0082\u008c\u0083\u0086", objArr13);
                         int intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
-                        generateST = (deduplication + 15) % Uuid.SIZE_BITS;
+                        generateST = (deduplication + 15) % 128;
                         Object[] objArr14 = {context, Integer.valueOf(intValue), 0, -66319567};
                         byte[] bArr = $$d;
                         c3 = 2;
@@ -5719,7 +5718,7 @@ public class IdentySdk {
                         Class cls5 = Integer.TYPE;
                         objArr2 = (Object[]) cls4.getMethod(str5, Context.class, cls5, cls5, cls5).invoke(null, objArr14);
                         if (context != null) {
-                            deduplication = (generateST + 95) % Uuid.SIZE_BITS;
+                            deduplication = (generateST + 95) % 128;
                             Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
                             if (PngjBadSignature4 == null) {
                                 char c7 = (char) ((ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) + 31076);
@@ -5818,7 +5817,7 @@ public class IdentySdk {
             Object[] objArr132 = new Object[1];
             l(null, 128 - (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)), null, "\u008c\u0083\u0085\u008e\u0097\u0088\u0081\u009b\u008a\u008b\u0086\u008b\u0082\u008c\u0083\u0086", objArr132);
             int intValue2 = ((Integer) cls32.getMethod((String) objArr132[0], Object.class).invoke(null, this)).intValue();
-            generateST = (deduplication + 15) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 15) % 128;
         } catch (Throwable th2) {
             Throwable cause2 = th2.getCause();
             if (cause2 != null) {
@@ -5826,13 +5825,13 @@ public class IdentySdk {
             }
             throw th2;
         }
-        generateST = (deduplication + 39) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 39) % 128;
     }
 
     public String getInstallationID() {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 27) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 27) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -5869,18 +5868,18 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 17) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 17) % 128;
     }
 
     public String getInternalTrnsactionID() {
         Object[] objArr;
         long j;
-        int i = (generateST + 89) % Uuid.SIZE_BITS;
+        int i = (generateST + 89) % 128;
         deduplication = i;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (i + 77) % Uuid.SIZE_BITS;
+                generateST = (i + 77) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -5915,7 +5914,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 105) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 105) % 128;
     }
 
     public String getLocale() {
@@ -5933,7 +5932,7 @@ public class IdentySdk {
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    deduplication = (generateST + 59) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 59) % 128;
                     ((long[]) objArr[0])[0] = j + 4953;
                     Fpnative.valueOf = objArr;
                     return this.Fpnative;
@@ -5957,7 +5956,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 17) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 17) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0103, code lost:
@@ -6013,7 +6012,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0092, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 21) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 21) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x009a, code lost:
     
@@ -6028,7 +6027,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00e8, code lost:
     
         r9 = ((long[]) r1[0])[0];
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 13) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 13) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00f6, code lost:
     
@@ -6041,7 +6040,7 @@ public class IdentySdk {
     public int getOutputHeight() {
         Object[] objArr;
         int i = generateST + 95;
-        deduplication = i % Uuid.SIZE_BITS;
+        deduplication = i % 128;
         if (i % 2 != 0) {
             objArr = Fpnative.valueOf;
             int i2 = 89 / 0;
@@ -6056,7 +6055,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 97) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 97) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -6089,16 +6088,16 @@ public class IdentySdk {
             }
             throw th;
         }
-        int i4 = (generateST + 87) % Uuid.SIZE_BITS;
+        int i4 = (generateST + 87) % 128;
         deduplication = i4;
-        generateST = (i4 + 55) % Uuid.SIZE_BITS;
+        generateST = (i4 + 55) % 128;
     }
 
     public HashMap<Finger, Integer> getQcthresolds() {
         Object[] objArr;
         long j;
         int i = generateST + 79;
-        deduplication = i % Uuid.SIZE_BITS;
+        deduplication = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -6140,8 +6139,8 @@ public class IdentySdk {
             throw th;
         }
         int i5 = generateST;
-        deduplication = (i5 + 41) % Uuid.SIZE_BITS;
-        deduplication = (i5 + 33) % Uuid.SIZE_BITS;
+        deduplication = (i5 + 41) % 128;
+        deduplication = (i5 + 33) % 128;
     }
 
     public int getQualityMaxRetries() {
@@ -6150,7 +6149,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 5) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 5) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -6164,7 +6163,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j + 4978;
                     Fpnative.valueOf = objArr;
                     int i4 = this.isFoundMatchingTemplates;
-                    deduplication = (generateST + 15) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 15) % 128;
                     return i4;
                 }
             }
@@ -6179,7 +6178,7 @@ public class IdentySdk {
             ((long[]) objArr[0])[0] = j + 4978;
             Fpnative.valueOf = objArr;
             int i42 = this.isFoundMatchingTemplates;
-            deduplication = (generateST + 15) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 15) % 128;
             return i42;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6219,7 +6218,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i = deduplication + 7;
-                generateST = i % Uuid.SIZE_BITS;
+                generateST = i % 128;
                 if (i % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, new Object[1])).longValue();
@@ -6240,7 +6239,7 @@ public class IdentySdk {
             d((short) (-bArr[24]), bArr[63], bArr[116], objArr3);
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -1290200769);
             j = ((long[]) objArr4[0])[0];
-            deduplication = (generateST + 3) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 3) % 128;
             ((long[]) objArr4[0])[0] = j + 4852;
             Fpnative.valueOf = objArr4;
             return this.ERRORS;
@@ -6274,7 +6273,7 @@ public class IdentySdk {
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    generateST = (deduplication + 77) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 77) % 128;
                     ((long[]) objArr[0])[0] = j + 4961;
                     Fpnative.valueOf = objArr;
                     if (this.setFoundMatchingTemplates.containsKey(fingerDetectionMode)) {
@@ -6286,7 +6285,7 @@ public class IdentySdk {
                         int i9 = ((i7 | i8) << 1) - (i8 ^ i7);
                         int i10 = (i9 ^ (-395233216)) + (((-395233216) & i9) << 1);
                         int i11 = i10 >> 25;
-                        int i12 = ((i11 ^ (-255)) + ((i11 & (-255)) << 1)) / Uuid.SIZE_BITS;
+                        int i12 = ((i11 ^ (-255)) + ((i11 & (-255)) << 1)) / 128;
                         int i13 = ((i12 | 1) << 1) - (i12 ^ 1);
                         int i14 = ((i10 | i13) << 1) - (i13 ^ i10);
                         int i15 = i10 >> 17;
@@ -6323,18 +6322,18 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 5) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 5) % 128;
     }
 
     public List<Pair<Hand, Finger>> getSelectedFingers() {
         Object[] objArr;
         long j;
-        int i = (deduplication + 61) % Uuid.SIZE_BITS;
+        int i = (deduplication + 61) % 128;
         generateST = i;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (i + 123) % Uuid.SIZE_BITS;
+                deduplication = (i + 123) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -6369,14 +6368,14 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 87) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 87) % 128;
     }
 
     public int getSpoofMaxRetries() {
         Object[] objArr;
         long j;
         int i = deduplication + 35;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -6416,7 +6415,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 43) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 43) % 128;
     }
 
     public int getSpoofMinRetries() {
@@ -6434,7 +6433,7 @@ public class IdentySdk {
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    deduplication = (generateST + 23) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 23) % 128;
                     ((long[]) objArr[0])[0] = j + 4984;
                     Fpnative.valueOf = objArr;
                     return this.Enroll2TActivity;
@@ -6458,13 +6457,13 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 77) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 77) % 128;
     }
 
     public IdentyUser getTempUser() {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 75) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 75) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -6481,7 +6480,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j + 4912;
                     Fpnative.valueOf = objArr;
                     IdentyUser tempUser = IdentyUserManager.getInstance(this.getData).getTempUser(IdentyUserManager.getTUser());
-                    deduplication = (generateST + 3) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 3) % 128;
                     return tempUser;
                 }
             }
@@ -6496,7 +6495,7 @@ public class IdentySdk {
             ((long[]) objArr[0])[0] = j + 4912;
             Fpnative.valueOf = objArr;
             IdentyUser tempUser2 = IdentyUserManager.getInstance(this.getData).getTempUser(IdentyUserManager.getTUser());
-            deduplication = (generateST + 3) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 3) % 128;
             return tempUser2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6505,7 +6504,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 81) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 81) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
@@ -6533,7 +6532,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i = generateST + 85;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -6563,13 +6562,13 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 63) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 63) % 128;
     }
 
     public WSQCompression getWSQCompression() {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 113) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 113) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -6607,7 +6606,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 99) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 99) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004d, code lost:
@@ -6633,12 +6632,12 @@ public class IdentySdk {
     public FingerAS h() {
         long j;
         int i = deduplication;
-        generateST = (i + 89) % Uuid.SIZE_BITS;
+        generateST = (i + 89) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 11;
-                generateST = i2 % Uuid.SIZE_BITS;
+                generateST = i2 % 128;
                 if (i2 % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -6659,7 +6658,7 @@ public class IdentySdk {
             d((short) (-bArr[24]), bArr[63], bArr[116], objArr3);
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -221287047);
             j = ((long[]) objArr4[0])[0];
-            deduplication = (generateST + 7) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 7) % 128;
             ((long[]) objArr4[0])[0] = j + 4963;
             Fpnative.valueOf = objArr4;
             return this.Action;
@@ -6679,7 +6678,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:11:0x00f1, code lost:
     
         r0 = ((java.lang.Integer) r11.setFoundMatchingTemplates.get(r12)).intValue();
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 71) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 71) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0107, code lost:
     
@@ -6783,7 +6782,7 @@ public class IdentySdk {
     public Integer incrementQualityTriesCounter(FingerDetectionMode fingerDetectionMode) {
         Object[] objArr;
         int i = generateST + 113;
-        deduplication = i % Uuid.SIZE_BITS;
+        deduplication = i % 128;
         if (i % 2 != 0) {
             objArr = Fpnative.valueOf;
             int i2 = 31 / 0;
@@ -6818,7 +6817,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        com.identy.IdentySdk.deduplication = (r1 + 29) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (r1 + 29) % 128;
         r7 = ((long[]) r0[0])[0];
         r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
@@ -6847,7 +6846,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x008f, code lost:
     
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 65) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 65) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0097, code lost:
     
@@ -6875,7 +6874,7 @@ public class IdentySdk {
     public boolean isAllowTabletLandscape() {
         Object[] objArr;
         int i = deduplication + 23;
-        int i2 = i % Uuid.SIZE_BITS;
+        int i2 = i % 128;
         generateST = i2;
         if (i % 2 == 0) {
             objArr = Fpnative.valueOf;
@@ -6895,7 +6894,7 @@ public class IdentySdk {
         long j;
         double d;
         int e;
-        generateST = (deduplication + 117) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 117) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -6929,7 +6928,7 @@ public class IdentySdk {
                     if (d / ((1034091366 / (((-((e ^ 1) + ((e & 1) << 1))) & r5) * 31)) + 1.043810602E9d) > 2.0d) {
                         return false;
                     }
-                    generateST = (deduplication + 111) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 111) % 128;
                     return true;
                 }
             }
@@ -6975,7 +6974,7 @@ public class IdentySdk {
     public boolean isCustomSDK() {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 73) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 73) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -6988,7 +6987,7 @@ public class IdentySdk {
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    deduplication = (generateST + 29) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 29) % 128;
                     ((long[]) objArr[0])[0] = j + 4906;
                     Fpnative.valueOf = objArr;
                     return this.CapturePosition;
@@ -7041,7 +7040,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
         r1 = r1 + 19;
-        com.identy.IdentySdk.deduplication = r1 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = r1 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0025, code lost:
     
@@ -7085,7 +7084,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x00b5, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 87) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 87) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x00bd, code lost:
     
@@ -7116,7 +7115,7 @@ public class IdentySdk {
         r1 = (r4 ^ 1) + ((r4 & 1) << 1);
         r4 = (r3 ^ r1) + ((r1 & r3) << 1);
         r1 = r3 >> 25;
-        r3 = (((r1 | (-255)) << 1) - (r1 ^ (-255))) / kotlin.uuid.Uuid.SIZE_BITS;
+        r3 = (((r1 | (-255)) << 1) - (r1 ^ (-255))) / 128;
         r1 = -((((r3 | 1) << 1) - (r3 ^ 1)) ^ r4);
         r3 = (r1 ^ 2) + ((r1 & 2) << 1);
         r1 = ((r3 >> 26) - 127) / 64;
@@ -7128,7 +7127,7 @@ public class IdentySdk {
     public boolean isDemoMode() {
         Object[] objArr;
         int i = deduplication + 5;
-        int i2 = i % Uuid.SIZE_BITS;
+        int i2 = i % 128;
         generateST = i2;
         if (i % 2 == 0) {
             objArr = Fpnative.valueOf;
@@ -7168,7 +7167,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i = generateST + 99;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -7176,7 +7175,7 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                generateST = r0 % Uuid.SIZE_BITS;
+                generateST = r0 % 128;
                 ((long[]) r2[0])[0] = j + 4910;
                 Fpnative.valueOf = r2;
                 return this.toString;
@@ -7190,7 +7189,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -205658018);
             j = ((long[]) objArr4[0])[0];
             int i2 = deduplication + 83;
-            generateST = i2 % Uuid.SIZE_BITS;
+            generateST = i2 % 128;
             ((long[]) objArr4[0])[0] = j + 4910;
             Fpnative.valueOf = objArr4;
             return this.toString;
@@ -7201,7 +7200,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 37) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 37) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f9, code lost:
@@ -7230,7 +7229,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        com.identy.IdentySdk.generateST = (r0 + 33) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (r0 + 33) % 128;
         r7 = ((long[]) r1[0])[0];
         r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
@@ -7259,7 +7258,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0089, code lost:
     
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 121) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 121) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0091, code lost:
     
@@ -7274,7 +7273,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00de, code lost:
     
         r9 = ((long[]) r0[0])[0];
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 117) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 117) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00ec, code lost:
     
@@ -7288,7 +7287,7 @@ public class IdentySdk {
         Object[] objArr;
         int i = deduplication;
         int i2 = i + 103;
-        generateST = i2 % Uuid.SIZE_BITS;
+        generateST = i2 % 128;
         if (i2 % 2 == 0) {
             objArr = Fpnative.valueOf;
             int i3 = 52 / 0;
@@ -7301,7 +7300,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i = deduplication + 33;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -7317,7 +7316,7 @@ public class IdentySdk {
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    deduplication = (generateST + 97) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 97) % 128;
                     ((long[]) objArr[0])[0] = j + 4956;
                     Fpnative.valueOf = objArr;
                     return this.uxd565jj;
@@ -7342,7 +7341,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 1) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 1) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f0, code lost:
@@ -7396,7 +7395,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x007f, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 31) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 31) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0087, code lost:
     
@@ -7417,7 +7416,7 @@ public class IdentySdk {
         ((long[]) r1[0])[0] = r9 + 4906;
         com.identy.Fpnative.valueOf = r1;
         r0 = r12.pfkrol;
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 53) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 53) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7425,7 +7424,7 @@ public class IdentySdk {
     public boolean isDisplayTransactionAlerts() {
         Object[] objArr;
         int i = deduplication + 29;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             objArr = Fpnative.valueOf;
             int i2 = 48 / 0;
@@ -7458,7 +7457,7 @@ public class IdentySdk {
     public boolean isElt() {
         long j;
         int i = generateST + 19;
-        int i2 = i % Uuid.SIZE_BITS;
+        int i2 = i % 128;
         deduplication = i2;
         if (i % 2 != 0) {
             throw null;
@@ -7467,7 +7466,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i3 = i2 + 77;
-                generateST = i3 % Uuid.SIZE_BITS;
+                generateST = i3 % 128;
                 if (i3 % 2 == 0) {
                     long j2 = ((long[]) objArr[1])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
@@ -7498,7 +7497,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 43) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 43) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x00f6  */
@@ -7512,14 +7511,14 @@ public class IdentySdk {
         long j;
         int i = generateST;
         int i2 = i + 31;
-        deduplication = i2 % Uuid.SIZE_BITS;
+        deduplication = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (i + 45) % Uuid.SIZE_BITS;
+                deduplication = (i + 45) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -7536,7 +7535,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j + 4971;
                     Fpnative.valueOf = objArr;
                     if (!this.e.equals(Action.CAPTURE)) {
-                        deduplication = (generateST + 69) % Uuid.SIZE_BITS;
+                        deduplication = (generateST + 69) % 128;
                         return this.PngjBadSignature;
                     }
                     int i9 = ((int[]) objArr[1])[0];
@@ -7577,7 +7576,7 @@ public class IdentySdk {
     public boolean isEnableSkip() {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 75) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 75) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -7592,7 +7591,7 @@ public class IdentySdk {
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
-                    deduplication = (generateST + 91) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 91) % 128;
                     ((long[]) objArr[0])[0] = j + 4964;
                     Fpnative.valueOf = objArr;
                     return this.toJson;
@@ -7617,7 +7616,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 57) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 57) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0148  */
@@ -7630,7 +7629,7 @@ public class IdentySdk {
         int length;
         int i;
         int i2 = deduplication + 107;
-        generateST = i2 % Uuid.SIZE_BITS;
+        generateST = i2 % 128;
         if (i2 % 2 == 0) {
             throw null;
         }
@@ -7647,7 +7646,7 @@ public class IdentySdk {
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
-                    generateST = (deduplication + 107) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 107) % 128;
                     ((long[]) objArr[0])[0] = j + 5018;
                     Fpnative.valueOf = objArr;
                     length = fingerDetectionModeArr.length;
@@ -7665,7 +7664,7 @@ public class IdentySdk {
                     for (i = 0 / (((-(((i15 & 1) + (i15 | 1)) - (-1))) & i14) * 1458); i < length; i++) {
                         for (Map.Entry<Pair<Hand, Finger>, PngjExceptionInternal> entry : com.identy.f.PngjBadSignature.PngjException(this.getData, new FingerDetectionMode[]{fingerDetectionModeArr[i]}, identyUser).entrySet()) {
                             if (this.configureroll.contains(entry.getKey())) {
-                                deduplication = (generateST + 77) % Uuid.SIZE_BITS;
+                                deduplication = (generateST + 77) % 128;
                                 if (!entry.getValue().PngjBadCrcException(this.getData, identyUser)) {
                                     return false;
                                 }
@@ -7708,7 +7707,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 67) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 67) % 128;
     }
 
     public boolean isGimages() {
@@ -7716,14 +7715,14 @@ public class IdentySdk {
         long j;
         int i = deduplication;
         int i2 = i + 71;
-        generateST = i2 % Uuid.SIZE_BITS;
+        generateST = i2 % 128;
         if (i2 % 2 == 0) {
             throw null;
         }
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (i + 47) % Uuid.SIZE_BITS;
+                generateST = (i + 47) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -7809,7 +7808,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x007d, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 25) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 25) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0085, code lost:
     
@@ -7836,7 +7835,7 @@ public class IdentySdk {
     public boolean isInlineGuide() {
         Object[] objArr;
         int i = deduplication + 71;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             objArr = Fpnative.valueOf;
             int i2 = 69 / 0;
@@ -7871,7 +7870,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i = generateST + 103;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, new Object[1])).longValue();
@@ -7931,13 +7930,13 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 49) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 49) % 128;
     }
 
     public boolean isRolledfp() {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 21) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 21) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -7977,7 +7976,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 69) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 69) % 128;
     }
 
     public CaptureMode k() {
@@ -7986,7 +7985,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 37) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 37) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -7995,7 +7994,7 @@ public class IdentySdk {
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    generateST = (deduplication + 11) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 11) % 128;
                     ((long[]) objArr[0])[0] = j + 4877;
                     Fpnative.valueOf = objArr;
                     return this.CaptureThumbActivity;
@@ -8020,13 +8019,13 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 27) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 27) % 128;
     }
 
     public LManager m() {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 53) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 53) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -8042,7 +8041,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j + 4953;
                     Fpnative.valueOf = objArr;
                     LManager lManager = this.PngjBadCrcException;
-                    generateST = (deduplication + 95) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 95) % 128;
                     return lManager;
                 }
             }
@@ -8058,7 +8057,7 @@ public class IdentySdk {
             ((long[]) objArr[0])[0] = j + 4953;
             Fpnative.valueOf = objArr;
             LManager lManager2 = this.PngjBadCrcException;
-            generateST = (deduplication + 95) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 95) % 128;
             return lManager2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -8067,7 +8066,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 75) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 75) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f4, code lost:
@@ -8086,7 +8085,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0103, code lost:
     
         r5 = com.identy.IdentySdk.generateST + 105;
-        com.identy.IdentySdk.deduplication = r5 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = r5 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x010d, code lost:
     
@@ -8108,7 +8107,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0124, code lost:
     
         r6 = com.identy.IdentySdk.generateST + 5;
-        com.identy.IdentySdk.deduplication = r6 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = r6 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x012e, code lost:
     
@@ -8130,7 +8129,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:26:0x014c, code lost:
     
         r5 = com.identy.IdentySdk.deduplication + 75;
-        com.identy.IdentySdk.generateST = r5 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = r5 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0156, code lost:
     
@@ -8177,7 +8176,7 @@ public class IdentySdk {
         r6 = (((r0 | (-32767)) << 1) - (r0 ^ (-32767))) / 16384;
         r3.fillPrintsInfo(r4, r5, false, 2838 / (((-((((r6 | 1) << 1) - (r6 ^ 1)) + 1)) & r2) * 946), new java.util.ArrayList(), new com.identy.IdentySdk.PngjInputException(r32, r3));
         r0 = com.identy.IdentySdk.generateST + 25;
-        com.identy.IdentySdk.deduplication = r0 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = r0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:31:0x02b9, code lost:
     
@@ -8301,7 +8300,7 @@ public class IdentySdk {
     public void matchWithTemplates(Hand hand, Finger finger, Template template, String str, Template template2, String str2) {
         Object[] objArr;
         int i = generateST + 69;
-        deduplication = i % Uuid.SIZE_BITS;
+        deduplication = i % 128;
         if (i % 2 != 0) {
             objArr = Fpnative.valueOf;
             int i2 = 6 / 0;
@@ -8338,9 +8337,9 @@ public class IdentySdk {
                         if (!template.equals(template4) && !template2.equals(template3) && !template2.equals(template4)) {
                             if (hashMap != null) {
                                 int i4 = deduplication;
-                                generateST = (i4 + 5) % Uuid.SIZE_BITS;
+                                generateST = (i4 + 5) % 128;
                                 if (hashMap2 != null) {
-                                    generateST = (i4 + 67) % Uuid.SIZE_BITS;
+                                    generateST = (i4 + 67) % 128;
                                     if (hashMap.size() != 0 && hashMap2.size() != 0) {
                                         this.e = Action.MATCH_WITH_TEMPLATE;
                                         StringBuilder sb = new StringBuilder();
@@ -8351,7 +8350,7 @@ public class IdentySdk {
                                         int i8 = (i6 ^ i7) + ((i6 & i7) << 1);
                                         int i9 = -(i5 * (-1118968834));
                                         int i10 = (((i8 | i9) << 1) - (i9 ^ i8)) - 354473711;
-                                        int i11 = ((i10 >> 25) - 255) / Uuid.SIZE_BITS;
+                                        int i11 = ((i10 >> 25) - 255) / 128;
                                         int i12 = (i10 - (~((i11 & 1) + (i11 | 1)))) - 1;
                                         int i13 = i10 >> 20;
                                         int i14 = -(i12 ^ b.e((i13 | (-8191)) << 1, i13 ^ (-8191), ConstantsKt.DEFAULT_BLOCK_SIZE, -1));
@@ -8367,17 +8366,17 @@ public class IdentySdk {
                                         HashMap hashMap3 = new HashMap();
                                         HashMap hashMap4 = new HashMap();
                                         for (Position position : Position.values()) {
-                                            generateST = (deduplication + 69) % Uuid.SIZE_BITS;
+                                            generateST = (deduplication + 69) % 128;
                                             Hand hand = position.a;
                                             if (hand != null && (finger = position.b) != null && hashMap.containsKey(new Pair(hand, finger)) && hashMap2.containsKey(new Pair(hand, finger))) {
                                                 String str = (String) b.b(hand, finger, hashMap);
                                                 String str2 = (String) b.b(hand, finger, hashMap2);
                                                 if (str != null && !str.isEmpty()) {
                                                     int i19 = generateST;
-                                                    deduplication = (i19 + 37) % Uuid.SIZE_BITS;
+                                                    deduplication = (i19 + 37) % 128;
                                                     if (str2 != null) {
                                                         int i20 = i19 + 41;
-                                                        deduplication = i20 % Uuid.SIZE_BITS;
+                                                        deduplication = i20 % 128;
                                                         if (i20 % 2 != 0) {
                                                             int i21 = 50 / 0;
                                                             if (str2.isEmpty()) {
@@ -8398,9 +8397,9 @@ public class IdentySdk {
                                         VerifyResult matchMultiple2 = Fpnative.matchMultiple(e1.PngjException(this.getData), template.ordinal(), hashMap3, template2.ordinal(), hashMap4, this.PngjOutputException.ordinal());
                                         ArrayList arrayList = new ArrayList();
                                         HashMap hashMap5 = new HashMap();
-                                        deduplication = (generateST + 15) % Uuid.SIZE_BITS;
+                                        deduplication = (generateST + 15) % 128;
                                         for (Map.Entry<Pair<Hand, Finger>, String> entry : hashMap.entrySet()) {
-                                            generateST = (deduplication + 125) % Uuid.SIZE_BITS;
+                                            generateST = (deduplication + 125) % 128;
                                             Hand hand2 = (Hand) entry.getKey().first;
                                             Finger finger2 = (Finger) entry.getKey().second;
                                             if (!this.h.containsKey(hand2)) {
@@ -8445,7 +8444,7 @@ public class IdentySdk {
             }
             throw cause;
         }
-        deduplication = (generateST + 101) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 101) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:18:0x011c, code lost:
@@ -8455,7 +8454,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0121, code lost:
     
         r5 = com.identy.IdentySdk.deduplication + 69;
-        com.identy.IdentySdk.generateST = r5 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = r5 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x012b, code lost:
     
@@ -8526,7 +8525,7 @@ public class IdentySdk {
     public void matchWithTemplatesbase64(Hand hand, Finger finger, Template template, String str, Template template2, String str2) {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 85) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 85) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -8538,14 +8537,14 @@ public class IdentySdk {
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    generateST = (deduplication + 95) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 95) % 128;
                     ((long[]) objArr[0])[0] = j + 4887;
                     Fpnative.valueOf = objArr;
                     if (template != null || template2 == null) {
                         throw new UnSupportedTemplateException();
                     }
                     int i3 = generateST + 121;
-                    deduplication = i3 % Uuid.SIZE_BITS;
+                    deduplication = i3 % 128;
                     if (i3 % 2 != 0) {
                         template.equals(Template.NIST_ITL_1_2015_RECORD_9);
                         throw null;
@@ -8555,7 +8554,7 @@ public class IdentySdk {
                         Template template4 = Template.NIST_ITL_1_2015_RECORD_14;
                         if (!template.equals(template4)) {
                             int i4 = generateST + 81;
-                            deduplication = i4 % Uuid.SIZE_BITS;
+                            deduplication = i4 % 128;
                             int i5 = i4 % 2;
                             boolean equals = template2.equals(template3);
                             if (i5 != 0) {
@@ -8598,7 +8597,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        deduplication = (generateST + 29) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 29) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -8615,7 +8614,7 @@ public class IdentySdk {
                     Fpnative.valueOf = objArr;
                     QualityMode qualityMode = this.DeduplicationIdentyResponse;
                     i = deduplication + 89;
-                    generateST = i % Uuid.SIZE_BITS;
+                    generateST = i % 128;
                     if (i % 2 == 0) {
                         return qualityMode;
                     }
@@ -8634,7 +8633,7 @@ public class IdentySdk {
             Fpnative.valueOf = objArr;
             QualityMode qualityMode2 = this.DeduplicationIdentyResponse;
             i = deduplication + 89;
-            generateST = i % Uuid.SIZE_BITS;
+            generateST = i % 128;
             if (i % 2 == 0) {
             }
         } catch (Throwable th) {
@@ -8644,18 +8643,18 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 47) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 47) % 128;
     }
 
     public FingerStatusUpdator o() {
         Object[] objArr;
         long j;
-        int i = (deduplication + 11) % Uuid.SIZE_BITS;
+        int i = (deduplication + 11) % 128;
         generateST = i;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (i + 51) % Uuid.SIZE_BITS;
+                deduplication = (i + 51) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -8669,7 +8668,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j + 4955;
                     Fpnative.valueOf = objArr;
                     FingerStatusUpdator fingerStatusUpdator = this.getL3Score;
-                    deduplication = (generateST + 99) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 99) % 128;
                     return fingerStatusUpdator;
                 }
             }
@@ -8684,7 +8683,7 @@ public class IdentySdk {
             ((long[]) objArr[0])[0] = j + 4955;
             Fpnative.valueOf = objArr;
             FingerStatusUpdator fingerStatusUpdator2 = this.getL3Score;
-            deduplication = (generateST + 99) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 99) % 128;
             return fingerStatusUpdator2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -8699,7 +8698,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i = deduplication + 43;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -8728,7 +8727,7 @@ public class IdentySdk {
             d((short) 154, (byte) (-bArr[111]), bArr[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 402549004);
             j = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 117) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 117) % 128;
             ((long[]) objArr[0])[0] = j + 4857;
             Fpnative.valueOf = objArr;
             return this.getPadSub2;
@@ -8739,13 +8738,13 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 119) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 119) % 128;
     }
 
     public HashSet q() {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 89) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 89) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -8782,7 +8781,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 25) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 25) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:22:0x014f A[SYNTHETIC] */
@@ -8817,7 +8816,7 @@ public class IdentySdk {
                     length = fingerDetectionModeArr.length;
                     for (i = 0; i < length; i++) {
                         int i5 = deduplication + 79;
-                        generateST = i5 % Uuid.SIZE_BITS;
+                        generateST = i5 % 128;
                         if (i5 % 2 == 0) {
                             FingerDetectionMode fingerDetectionMode = fingerDetectionModeArr[i];
                             Activity activity = this.getData;
@@ -8830,12 +8829,12 @@ public class IdentySdk {
                         Iterator<Map.Entry<Pair<Hand, Finger>, PngjExceptionInternal>> it = PngjException2.entrySet().iterator();
                         while (it.hasNext()) {
                             int i6 = deduplication + 33;
-                            generateST = i6 % Uuid.SIZE_BITS;
+                            generateST = i6 % 128;
                             if (i6 % 2 == 0) {
                                 next = it.next();
                                 int i7 = 21 / 0;
                                 if (this.configureroll.contains(next.getKey())) {
-                                    generateST = (deduplication + 109) % Uuid.SIZE_BITS;
+                                    generateST = (deduplication + 109) % 128;
                                     if (!next.getValue().PngjBadCrcException(this.getData, identyUser)) {
                                         PngjExceptionInternal value = next.getValue();
                                         value.PngjException(this.getData, identyUser);
@@ -8845,7 +8844,7 @@ public class IdentySdk {
                             } else {
                                 next = it.next();
                                 if (this.configureroll.contains(next.getKey())) {
-                                    generateST = (deduplication + 109) % Uuid.SIZE_BITS;
+                                    generateST = (deduplication + 109) % 128;
                                     if (!next.getValue().PngjBadCrcException(this.getData, identyUser)) {
                                     }
                                 }
@@ -8927,12 +8926,12 @@ public class IdentySdk {
     public boolean s() {
         long j;
         int i = deduplication;
-        generateST = (i + 35) % Uuid.SIZE_BITS;
+        generateST = (i + 35) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 79;
-                generateST = i2 % Uuid.SIZE_BITS;
+                generateST = i2 % 128;
                 if (i2 % 2 == 0) {
                     long j2 = ((long[]) objArr[1])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
@@ -8971,7 +8970,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i = deduplication + 7;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -9006,7 +9005,7 @@ public class IdentySdk {
                     int i18 = (((i17 | (-16383)) << 1) - (i17 ^ (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE;
                     int i19 = -(((i18 & 1) + (i18 | 1)) ^ i16);
                     int i20 = ((i19 | 2) << 1) - (i19 ^ 2);
-                    int i21 = ((i20 >> 25) - 255) / Uuid.SIZE_BITS;
+                    int i21 = ((i20 >> 25) - 255) / 128;
                     return setASServerConfig(str, str2, 2296 / (((-(((i21 ^ 1) + ((i21 & 1) << 1)) + 1)) & i20) * 1148));
                 }
             }
@@ -9019,7 +9018,7 @@ public class IdentySdk {
             d((short) (-bArr[24]), bArr[63], bArr[116], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -458646260);
             j = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 53) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 53) % 128;
             ((long[]) objArr[0])[0] = j + 5014;
             Fpnative.valueOf = objArr;
             int i62 = ((int[]) objArr[1])[0];
@@ -9037,7 +9036,7 @@ public class IdentySdk {
             int i182 = (((i172 | (-16383)) << 1) - (i172 ^ (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE;
             int i192 = -(((i182 & 1) + (i182 | 1)) ^ i162);
             int i202 = ((i192 | 2) << 1) - (i192 ^ 2);
-            int i212 = ((i202 >> 25) - 255) / Uuid.SIZE_BITS;
+            int i212 = ((i202 >> 25) - 255) / 128;
             return setASServerConfig(str, str2, 2296 / (((-(((i212 ^ 1) + ((i212 & 1) << 1)) + 1)) & i202) * 1148));
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -9054,7 +9053,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 83) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 83) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -9067,7 +9066,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j + 4866;
                     Fpnative.valueOf = objArr;
                     this.setDConfig = z;
-                    generateST = (deduplication + 85) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 85) % 128;
                     return;
                 }
             }
@@ -9082,7 +9081,7 @@ public class IdentySdk {
             ((long[]) objArr[0])[0] = j + 4866;
             Fpnative.valueOf = objArr;
             this.setDConfig = z;
-            generateST = (deduplication + 85) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 85) % 128;
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -9091,9 +9090,9 @@ public class IdentySdk {
             }
             throw cause;
         }
-        int i3 = (deduplication + 11) % Uuid.SIZE_BITS;
+        int i3 = (deduplication + 11) % 128;
         generateST = i3;
-        deduplication = (i3 + 99) % Uuid.SIZE_BITS;
+        deduplication = (i3 + 99) % 128;
     }
 
     public void setAllowTabletLandscape(boolean z) {
@@ -9114,7 +9113,7 @@ public class IdentySdk {
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
-                    generateST = (deduplication + 23) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 23) % 128;
                     ((long[]) objArr[0])[0] = j + 5041;
                     Fpnative.valueOf = objArr;
                     this.EnrollThumbActivity = z;
@@ -9128,7 +9127,7 @@ public class IdentySdk {
             d((short) 154, (byte) (-bArr[111]), bArr[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1596606561);
             j = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 107) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 107) % 128;
             ((long[]) objArr[0])[0] = j + 5041;
             Fpnative.valueOf = objArr;
             this.EnrollThumbActivity = z;
@@ -9156,7 +9155,7 @@ public class IdentySdk {
         r0 = r0 ^ (r0 << 13);
         r0 = r0 ^ (r0 >>> 17);
         ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 1) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 1) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -9167,7 +9166,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i = deduplication + 37;
-                generateST = i % Uuid.SIZE_BITS;
+                generateST = i % 128;
                 if (i % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -9224,7 +9223,7 @@ public class IdentySdk {
                     Fpnative.valueOf = objArr;
                     this.Action = fingerAS;
                     i = deduplication + 1;
-                    generateST = i % Uuid.SIZE_BITS;
+                    generateST = i % 128;
                     if (i % 2 == 0) {
                         return this;
                     }
@@ -9243,7 +9242,7 @@ public class IdentySdk {
             Fpnative.valueOf = objArr;
             this.Action = fingerAS;
             i = deduplication + 1;
-            generateST = i % Uuid.SIZE_BITS;
+            generateST = i % 128;
             if (i % 2 == 0) {
             }
         } catch (Throwable th) {
@@ -9253,18 +9252,18 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 87) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 87) % 128;
     }
 
     public void setAssistedMode(boolean z) {
         Object[] objArr;
         long j;
-        int i = (deduplication + 13) % Uuid.SIZE_BITS;
+        int i = (deduplication + 13) % 128;
         generateST = i;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (i + 15) % Uuid.SIZE_BITS;
+                deduplication = (i + 15) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -9287,7 +9286,7 @@ public class IdentySdk {
             d((short) 154, (byte) (-bArr[111]), bArr[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 616547664);
             j = ((long[]) objArr[0])[0];
-            generateST = (deduplication + 11) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 11) % 128;
             ((long[]) objArr[0])[0] = j + 4959;
             Fpnative.valueOf = objArr;
             this.CaptureRolledFingersActivity = z;
@@ -9303,7 +9302,7 @@ public class IdentySdk {
     public void setAttemptsTimeout(int i, int i2) {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 11) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 11) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -9321,7 +9320,7 @@ public class IdentySdk {
                     this.PngjUnsupportedException = i;
                     this.PngjInputException = i2;
                     valueOf();
-                    deduplication = (generateST + 31) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 31) % 128;
                     return;
                 }
             }
@@ -9339,7 +9338,7 @@ public class IdentySdk {
             this.PngjUnsupportedException = i;
             this.PngjInputException = i2;
             valueOf();
-            deduplication = (generateST + 31) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 31) % 128;
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -9348,14 +9347,14 @@ public class IdentySdk {
             }
             throw cause;
         }
-        generateST = (deduplication + 9) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 9) % 128;
     }
 
     public IdentySdk setBase64EncodingFlag(int i) {
         Object[] objArr;
         long j;
         int i2 = generateST + 27;
-        deduplication = i2 % Uuid.SIZE_BITS;
+        deduplication = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
@@ -9396,7 +9395,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 97) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 97) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x00dd  */
@@ -9420,12 +9419,12 @@ public class IdentySdk {
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    generateST = (deduplication + 7) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 7) % 128;
                     ((long[]) objArr[0])[0] = j + 4980;
                     Fpnative.valueOf = objArr;
                     this.values = identyCustomEncryption;
                     i = deduplication + 67;
-                    generateST = i % Uuid.SIZE_BITS;
+                    generateST = i % 128;
                     if (i % 2 == 0) {
                         return this;
                     }
@@ -9445,7 +9444,7 @@ public class IdentySdk {
             Fpnative.valueOf = objArr;
             this.values = identyCustomEncryption;
             i = deduplication + 67;
-            generateST = i % Uuid.SIZE_BITS;
+            generateST = i % 128;
             if (i % 2 == 0) {
             }
         } catch (Throwable th) {
@@ -9480,12 +9479,12 @@ public class IdentySdk {
     public IdentySdk setCustomQuality(HashMap<Finger, Integer> hashMap) {
         long j;
         int i = deduplication;
-        generateST = (i + 33) % Uuid.SIZE_BITS;
+        generateST = (i + 33) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 117;
-                generateST = i2 % Uuid.SIZE_BITS;
+                generateST = i2 % 128;
                 if (i2 % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -9517,14 +9516,14 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 11) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 11) % 128;
     }
 
     public IdentySdk setDetectionMode(FingerDetectionMode[] fingerDetectionModeArr, CapturePosition capturePosition) {
         Object[] objArr;
         long j;
         int i = deduplication + 69;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -9545,7 +9544,7 @@ public class IdentySdk {
                     Fpnative.valueOf = objArr;
                     this.getScore = capturePosition;
                     setDetectionMode(fingerDetectionModeArr);
-                    generateST = (deduplication + 101) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 101) % 128;
                     return this;
                 }
             }
@@ -9562,7 +9561,7 @@ public class IdentySdk {
             Fpnative.valueOf = objArr;
             this.getScore = capturePosition;
             setDetectionMode(fingerDetectionModeArr);
-            generateST = (deduplication + 101) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 101) % 128;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -9571,7 +9570,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 7) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 7) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0050, code lost:
@@ -9592,20 +9591,20 @@ public class IdentySdk {
         r1 = r1 ^ (r1 << 13);
         r1 = r1 ^ (r1 >>> 17);
         ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 17) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 17) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void setDeviceInfo(String str, String str2, String str3, String str4) {
         long j;
-        int i = (deduplication + 3) % Uuid.SIZE_BITS;
+        int i = (deduplication + 3) % 128;
         generateST = i;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 1;
-                deduplication = i2 % Uuid.SIZE_BITS;
+                deduplication = i2 % 128;
                 if (i2 % 2 != 0) {
                     long j2 = ((long[]) objArr[0])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
@@ -9629,7 +9628,7 @@ public class IdentySdk {
                 int i9 = ((i8 & (-63)) + (i8 | (-63))) / 32;
                 int i10 = (i7 - (~((i9 ^ 1) + ((i9 & 1) << 1)))) - 1;
                 int i11 = i7 >> 25;
-                int i12 = ((i11 & (-255)) + (i11 | (-255))) / Uuid.SIZE_BITS;
+                int i12 = ((i11 & (-255)) + (i11 | (-255))) / 128;
                 int i13 = (-(((i12 ^ 1) + ((i12 & 1) << 1)) ^ i10)) + 5;
                 int i14 = i13 >> 27;
                 int e = b.e((i14 | (-63)) << 1, i14 ^ (-63), 32, -1);
@@ -9664,7 +9663,7 @@ public class IdentySdk {
             int i92 = ((i82 & (-63)) + (i82 | (-63))) / 32;
             int i102 = (i72 - (~((i92 ^ 1) + ((i92 & 1) << 1)))) - 1;
             int i112 = i72 >> 25;
-            int i122 = ((i112 & (-255)) + (i112 | (-255))) / Uuid.SIZE_BITS;
+            int i122 = ((i112 & (-255)) + (i112 | (-255))) / 128;
             int i132 = (-(((i122 ^ 1) + ((i122 & 1) << 1)) ^ i102)) + 5;
             int i142 = i132 >> 27;
             int e2 = b.e((i142 | (-63)) << 1, i142 ^ (-63), 32, -1);
@@ -9686,7 +9685,7 @@ public class IdentySdk {
     public IdentySdk setDisplayBoxes(boolean z, boolean z2) {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 99) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 99) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -9698,7 +9697,7 @@ public class IdentySdk {
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    deduplication = (generateST + 13) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 13) % 128;
                     ((long[]) objArr[0])[0] = j + 4855;
                     Fpnative.valueOf = objArr;
                     this.cvtyuv2bgr = z;
@@ -9714,7 +9713,7 @@ public class IdentySdk {
             d((short) 154, (byte) (-bArr[111]), bArr[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1139826460);
             j = ((long[]) objArr[0])[0];
-            generateST = (deduplication + 101) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 101) % 128;
             ((long[]) objArr[0])[0] = j + 4855;
             Fpnative.valueOf = objArr;
             this.cvtyuv2bgr = z;
@@ -9741,7 +9740,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (generateST + 69) % Uuid.SIZE_BITS;
+                deduplication = (generateST + 69) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -9755,7 +9754,7 @@ public class IdentySdk {
                     Fpnative.valueOf = objArr;
                     this.uxd565jj = z;
                     i = generateST + 109;
-                    deduplication = i % Uuid.SIZE_BITS;
+                    deduplication = i % 128;
                     if (i % 2 != 0) {
                         return this;
                     }
@@ -9771,12 +9770,12 @@ public class IdentySdk {
             d((short) (-bArr[24]), bArr[63], bArr[116], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 411066871);
             j = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 53) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 53) % 128;
             ((long[]) objArr[0])[0] = j + 4867;
             Fpnative.valueOf = objArr;
             this.uxd565jj = z;
             i = generateST + 109;
-            deduplication = i % Uuid.SIZE_BITS;
+            deduplication = i % 128;
             if (i % 2 != 0) {
             }
         } catch (Throwable th) {
@@ -9830,20 +9829,20 @@ public class IdentySdk {
             }
             throw th;
         }
-        int i3 = (deduplication + 79) % Uuid.SIZE_BITS;
+        int i3 = (deduplication + 79) % 128;
         generateST = i3;
-        deduplication = (i3 + 61) % Uuid.SIZE_BITS;
+        deduplication = (i3 + 61) % 128;
     }
 
     public IdentySdk setFingerPrintDrawable(int i, boolean z) {
         Object[] objArr;
         long j;
         int i2 = deduplication;
-        generateST = (i2 + 101) % Uuid.SIZE_BITS;
+        generateST = (i2 + 101) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (i2 + 9) % Uuid.SIZE_BITS;
+                generateST = (i2 + 9) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -9857,7 +9856,7 @@ public class IdentySdk {
                     Fpnative.valueOf = objArr;
                     this.Enroll2IndexActivity = i;
                     this.toString = z;
-                    generateST = (deduplication + 31) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 31) % 128;
                     return this;
                 }
             }
@@ -9874,7 +9873,7 @@ public class IdentySdk {
             Fpnative.valueOf = objArr;
             this.Enroll2IndexActivity = i;
             this.toString = z;
-            generateST = (deduplication + 31) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 31) % 128;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -9909,7 +9908,7 @@ public class IdentySdk {
         long j;
         int i = generateST;
         int i2 = i + 47;
-        deduplication = i2 % Uuid.SIZE_BITS;
+        deduplication = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
@@ -9917,7 +9916,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i3 = i + 111;
-                deduplication = i3 % Uuid.SIZE_BITS;
+                deduplication = i3 % 128;
                 if (i3 % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
@@ -9939,7 +9938,7 @@ public class IdentySdk {
             d((short) 106, bArr[63], (byte) (-bArr[55]), objArr3);
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -604479582);
             j = ((long[]) objArr4[0])[0];
-            generateST = (deduplication + 75) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 75) % 128;
             ((long[]) objArr4[0])[0] = j + 5039;
             Fpnative.valueOf = objArr4;
             this.CaptureMode = z;
@@ -9952,14 +9951,14 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 35) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 35) % 128;
     }
 
     public IdentySdk setInlineMsgTimeOut(long j) {
         Object[] objArr;
         long j2;
         int i = deduplication + 29;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -9978,7 +9977,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j2 + 4947;
                     Fpnative.valueOf = objArr;
                     this.getServerRequest = j;
-                    deduplication = (generateST + 91) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 91) % 128;
                     return this;
                 }
             }
@@ -9994,7 +9993,7 @@ public class IdentySdk {
             ((long[]) objArr[0])[0] = j2 + 4947;
             Fpnative.valueOf = objArr;
             this.getServerRequest = j;
-            deduplication = (generateST + 91) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 91) % 128;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -10003,7 +10002,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 107) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 107) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004f, code lost:
@@ -10030,12 +10029,12 @@ public class IdentySdk {
     public void setLocale(String str) {
         long j;
         int i = deduplication;
-        generateST = (i + 99) % Uuid.SIZE_BITS;
+        generateST = (i + 99) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 107;
-                generateST = i2 % Uuid.SIZE_BITS;
+                generateST = i2 % 128;
                 if (i2 % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -10072,14 +10071,14 @@ public class IdentySdk {
         long j;
         int i = generateST;
         int i2 = i + 25;
-        deduplication = i2 % Uuid.SIZE_BITS;
+        deduplication = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (i + 5) % Uuid.SIZE_BITS;
+                deduplication = (i + 5) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -10090,7 +10089,7 @@ public class IdentySdk {
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
-                    generateST = (deduplication + 121) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 121) % 128;
                     ((long[]) objArr[0])[0] = j + 4953;
                     Fpnative.valueOf = objArr;
                     this.PngjOutputException = fingerMatchSecLevel;
@@ -10144,7 +10143,7 @@ public class IdentySdk {
         try {
             if (objArr2 != null) {
                 int i = generateST + 107;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr2[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, new Object[1])).longValue();
@@ -10155,7 +10154,7 @@ public class IdentySdk {
                 ((long[]) objArr[0])[0] = j + 4969;
                 Fpnative.valueOf = objArr;
                 if (str != null) {
-                    deduplication = (generateST + 25) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 25) % 128;
                     int i2 = ((int[]) objArr[1])[0];
                     int i3 = i2 * i2;
                     int i4 = -(1683007502 * i2);
@@ -10222,12 +10221,12 @@ public class IdentySdk {
     public void setOutputSize(int i, int i2) {
         long j;
         int i3 = generateST;
-        deduplication = (i3 + 7) % Uuid.SIZE_BITS;
+        deduplication = (i3 + 7) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i4 = i3 + 13;
-                deduplication = i4 % Uuid.SIZE_BITS;
+                deduplication = i4 % 128;
                 if (i4 % 2 != 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -10250,7 +10249,7 @@ public class IdentySdk {
             d((short) (-bArr[24]), bArr[63], bArr[116], objArr3);
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 1883741849);
             j = ((long[]) objArr4[0])[0];
-            generateST = (deduplication + 63) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 63) % 128;
             ((long[]) objArr4[0])[0] = j + 5020;
             Fpnative.valueOf = objArr4;
             this.pfk = i;
@@ -10263,16 +10262,16 @@ public class IdentySdk {
             }
             throw cause;
         }
-        int i5 = (generateST + 117) % Uuid.SIZE_BITS;
+        int i5 = (generateST + 117) % 128;
         deduplication = i5;
-        generateST = (i5 + 55) % Uuid.SIZE_BITS;
+        generateST = (i5 + 55) % 128;
     }
 
     /* JADX WARN: Type inference failed for: r0v31, types: [boolean, int] */
     public IdentySdk setQualityMode(QualityMode qualityMode) {
         Object[] objArr;
         long j;
-        generateST = (deduplication + 9) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 9) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -10342,7 +10341,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 63) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 63) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
@@ -10372,7 +10371,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i = generateST + 85;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr[0])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -10405,7 +10404,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 41) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 41) % 128;
     }
 
     public void setSelectedFingers(List<Pair<Hand, Finger>> list) {
@@ -10429,7 +10428,7 @@ public class IdentySdk {
                         return;
                     }
                     int i3 = deduplication + 17;
-                    generateST = i3 % Uuid.SIZE_BITS;
+                    generateST = i3 % 128;
                     int i4 = i3 % 2;
                     this.configureroll = list;
                     if (i4 == 0) {
@@ -10460,9 +10459,9 @@ public class IdentySdk {
             }
             throw cause;
         }
-        int i5 = (generateST + 21) % Uuid.SIZE_BITS;
+        int i5 = (generateST + 21) % 128;
         deduplication = i5;
-        generateST = (i5 + 109) % Uuid.SIZE_BITS;
+        generateST = (i5 + 109) % 128;
     }
 
     public void setStatusUpdator(FingerStatusUpdator fingerStatusUpdator) {
@@ -10494,7 +10493,7 @@ public class IdentySdk {
             d((short) (-bArr[24]), bArr[63], bArr[116], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1521754077);
             j = ((long[]) objArr[0])[0];
-            generateST = (deduplication + 73) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 73) % 128;
             ((long[]) objArr[0])[0] = j + 4877;
             Fpnative.valueOf = objArr;
             this.getL3Score = fingerStatusUpdator;
@@ -10506,7 +10505,7 @@ public class IdentySdk {
             }
             throw cause;
         }
-        deduplication = (generateST + 25) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 25) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0049, code lost:
@@ -10538,7 +10537,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i2 = generateST + 107;
-                deduplication = i2 % Uuid.SIZE_BITS;
+                deduplication = i2 % 128;
                 if (i2 % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -10550,7 +10549,7 @@ public class IdentySdk {
                 Fpnative.valueOf = r6;
                 this.getProcessingTime = transactionListener;
                 i = deduplication + 71;
-                generateST = i % Uuid.SIZE_BITS;
+                generateST = i % 128;
                 if (i % 2 != 0) {
                     throw null;
                 }
@@ -10568,7 +10567,7 @@ public class IdentySdk {
             Fpnative.valueOf = objArr4;
             this.getProcessingTime = transactionListener;
             i = deduplication + 71;
-            generateST = i % Uuid.SIZE_BITS;
+            generateST = i % 128;
             if (i % 2 != 0) {
             }
         } catch (Throwable th) {
@@ -10578,7 +10577,7 @@ public class IdentySdk {
             }
             throw cause;
         }
-        generateST = (deduplication + 73) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 73) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f4, code lost:
@@ -10633,7 +10632,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0084, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 105) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 105) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x008c, code lost:
     
@@ -10649,7 +10648,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00d9, code lost:
     
         r9 = ((long[]) r1[0])[0];
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 17) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 17) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00e7, code lost:
     
@@ -10663,7 +10662,7 @@ public class IdentySdk {
     public IdentySdk setTransactionUiType(UIAfterCaptures uIAfterCaptures) {
         Object[] objArr;
         int i = generateST + 29;
-        deduplication = i % Uuid.SIZE_BITS;
+        deduplication = i % 128;
         if (i % 2 != 0) {
             objArr = Fpnative.valueOf;
             int i2 = 78 / 0;
@@ -10688,7 +10687,7 @@ public class IdentySdk {
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    generateST = (deduplication + 3) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 3) % 128;
                     ((long[]) objArr[0])[0] = j + 4880;
                     Fpnative.valueOf = objArr;
                     this.uxd565jk = identyUser;
@@ -10715,7 +10714,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 39) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 39) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
@@ -10734,7 +10733,7 @@ public class IdentySdk {
         r0 = r0 ^ (r0 << 13);
         r0 = r0 ^ (r0 >>> 17);
         ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 85) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 85) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -10745,7 +10744,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i = deduplication + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
-                generateST = i % Uuid.SIZE_BITS;
+                generateST = i % 128;
                 if (i % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -10784,7 +10783,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i = generateST + 23;
-        deduplication = i % Uuid.SIZE_BITS;
+        deduplication = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -10823,7 +10822,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 91) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 91) % 128;
     }
 
     public boolean u() {
@@ -10855,7 +10854,7 @@ public class IdentySdk {
             d((short) (-bArr[24]), bArr[63], bArr[116], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1481746066);
             j = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 45) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 45) % 128;
             ((long[]) objArr[0])[0] = j + 4963;
             Fpnative.valueOf = objArr;
             return this.cvtyuv2bgr;
@@ -10866,13 +10865,13 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+        deduplication = (generateST + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
     }
 
     public boolean v() {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 77) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 77) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -10908,7 +10907,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 63) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 63) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004f, code lost:
@@ -10934,12 +10933,12 @@ public class IdentySdk {
     public boolean verify() {
         long j;
         int i = deduplication;
-        generateST = (i + 89) % Uuid.SIZE_BITS;
+        generateST = (i + 89) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 27;
-                generateST = i2 % Uuid.SIZE_BITS;
+                generateST = i2 % 128;
                 if (i2 % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -10969,7 +10968,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 49) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 49) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:52:0x02a4  */
@@ -10984,7 +10983,7 @@ public class IdentySdk {
         char c = 2;
         try {
             if (objArr2 != null) {
-                deduplication = (generateST + 49) % Uuid.SIZE_BITS;
+                deduplication = (generateST + 49) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -10999,7 +10998,7 @@ public class IdentySdk {
                     if (template != null) {
                         throw new Exception(this.getData.getString(R.string.template_type_is_unknown));
                     }
-                    generateST = (deduplication + 27) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 27) % 128;
                     this.uxd565jk = getTempUser();
                     Activity activity = this.getData;
                     int i4 = ((int[]) objArr[1])[0];
@@ -11029,7 +11028,7 @@ public class IdentySdk {
                                     File file = new File(values2, name.concat("crypt"));
                                     FileOutputStream fileOutputStream = new FileOutputStream(file);
                                     char c3 = c;
-                                    deduplication = (generateST + 121) % Uuid.SIZE_BITS;
+                                    deduplication = (generateST + 121) % 128;
                                     while (true) {
                                         try {
                                             int read = zipInputStream.read(bArr);
@@ -11040,7 +11039,7 @@ public class IdentySdk {
                                         } catch (Throwable th) {
                                             try {
                                                 fileOutputStream.close();
-                                                deduplication = (generateST + 77) % Uuid.SIZE_BITS;
+                                                deduplication = (generateST + 77) % 128;
                                                 throw th;
                                             } catch (Throwable th2) {
                                                 th.addSuppressed(th2);
@@ -11053,7 +11052,7 @@ public class IdentySdk {
                                     PngjBadSignature(file.getAbsolutePath(), file2.getAbsolutePath());
                                     if (template.equals(Template.FF_ISO_19794_4)) {
                                         int i17 = deduplication + 113;
-                                        generateST = i17 % Uuid.SIZE_BITS;
+                                        generateST = i17 % 128;
                                         if (i17 % 2 == 0) {
                                             values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 1779101910, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -1779101909, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
                                             int i18 = 61 / 0;
@@ -11070,7 +11069,7 @@ public class IdentySdk {
                         }
                     }
                     boolean a = a(this.uxd565jk, this.PngjUnsupportedException, this.PngjInputException, template);
-                    generateST = (deduplication + 27) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 27) % 128;
                     return a;
                 }
             }
@@ -11105,7 +11104,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i = generateST + 29;
-        int i2 = i % Uuid.SIZE_BITS;
+        int i2 = i % 128;
         deduplication = i2;
         if (i % 2 != 0) {
             throw null;
@@ -11113,7 +11112,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (i2 + 35) % Uuid.SIZE_BITS;
+                generateST = (i2 + 35) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -11143,7 +11142,7 @@ public class IdentySdk {
                     int i15 = (((i14 | (-131071)) << 1) - (i14 ^ (-131071))) / 65536;
                     int i16 = -(i13 ^ (((i15 | 1) << 1) - (i15 ^ 1)));
                     int i17 = ((i16 | 8) << 1) - (i16 ^ 8);
-                    int i18 = ((i17 >> 25) - 255) / Uuid.SIZE_BITS;
+                    int i18 = ((i17 >> 25) - 255) / 128;
                     int i19 = (i18 ^ 1) + ((i18 & 1) << 1);
                     File values2 = com.identy.PngjBadCrcException.values(activity, "22;16;9;TEMP_IDENTY".substring(29888 / (((-((i19 & 1) + (i19 | 1))) & i17) * 467)));
                     for (Map.Entry<Hand, String> entry : hashMap.entrySet()) {
@@ -11153,7 +11152,7 @@ public class IdentySdk {
                         while (true) {
                             ZipEntry nextEntry = zipInputStream.getNextEntry();
                             if (nextEntry != null) {
-                                generateST = (deduplication + 3) % Uuid.SIZE_BITS;
+                                generateST = (deduplication + 3) % 128;
                                 String name = nextEntry.getName();
                                 if (!nextEntry.isDirectory()) {
                                     String str = name.split("_")[1].split("\\.")[0];
@@ -11175,11 +11174,11 @@ public class IdentySdk {
                                     if (template.equals(Template.FF_ISO_19794_4)) {
                                         values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 1779101910, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -1779101909, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
                                     } else if (template.equals(Template.FF_WSQ)) {
-                                        deduplication = (generateST + 7) % Uuid.SIZE_BITS;
+                                        deduplication = (generateST + 7) % 128;
                                         PngjBadCrcException(file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk);
                                     }
                                     zipInputStream.closeEntry();
-                                    generateST = (deduplication + 11) % Uuid.SIZE_BITS;
+                                    generateST = (deduplication + 11) % 128;
                                 }
                             }
                         }
@@ -11206,7 +11205,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 47) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 47) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:65:0x02b4  */
@@ -11218,12 +11217,12 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         Template template2 = template;
-        int i = (generateST + 113) % Uuid.SIZE_BITS;
+        int i = (generateST + 113) % 128;
         deduplication = i;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (i + 25) % Uuid.SIZE_BITS;
+                generateST = (i + 25) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -11259,7 +11258,7 @@ public class IdentySdk {
                     int i17 = (i16 & 1) + (i16 | 1);
                     com.identy.PngjBadCrcException.values(activity, "20|11|23|TEMP_IDENTY".substring(24120 / ((i15 & (-((i17 & 1) + (i17 | 1)))) * 670)));
                     for (Map.Entry<Pair<Hand, Finger>, String> entry : hashMap.entrySet()) {
-                        generateST = (deduplication + 69) % Uuid.SIZE_BITS;
+                        generateST = (deduplication + 69) % 128;
                         Pair<Hand, Finger> key = entry.getKey();
                         Hand hand = (Hand) key.first;
                         Finger finger = (Finger) key.second;
@@ -11268,20 +11267,20 @@ public class IdentySdk {
                         if (template2.equals(template3)) {
                             try {
                                 values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template3.ordinal(), com.identy.e.valueOf.PngjException(value)), hand, finger, this.uxd565jk}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
-                                deduplication = (generateST + 101) % Uuid.SIZE_BITS;
+                                deduplication = (generateST + 101) % 128;
                             } catch (Exception unused) {
                             }
                         } else {
                             if (template2.equals(Template.WSQ)) {
                                 int i18 = generateST + 33;
-                                deduplication = i18 % Uuid.SIZE_BITS;
+                                deduplication = i18 % 128;
                                 if (i18 % 2 != 0) {
                                     PngjBadCrcException(value, finger, hand, this.uxd565jk);
                                     throw null;
                                 }
                                 PngjBadCrcException(value, finger, hand, this.uxd565jk);
                             } else if (template2.equals(Template.ISO_19794_2)) {
-                                deduplication = (generateST + 111) % Uuid.SIZE_BITS;
+                                deduplication = (generateST + 111) % 128;
                                 values(value, finger, hand, this.uxd565jk);
                             } else if (template2.equals(Template.ISO_19794_4)) {
                                 values(new Object[]{this, value, finger, hand, this.uxd565jk}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 1779101910, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -1779101909, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
@@ -11319,7 +11318,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 101) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 101) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0034, code lost:
@@ -11352,7 +11351,7 @@ public class IdentySdk {
         try {
             if (objArr2 != null) {
                 int i = deduplication + 91;
-                generateST = i % Uuid.SIZE_BITS;
+                generateST = i % 128;
                 if (i % 2 == 0) {
                     long j2 = ((long[]) objArr2[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -11366,7 +11365,7 @@ public class IdentySdk {
                     throw new UnSupportedTemplateException();
                 }
                 int i2 = deduplication + 77;
-                generateST = i2 % Uuid.SIZE_BITS;
+                generateST = i2 % 128;
                 if (i2 % 2 == 0) {
                     template.equals(Template.NIST_ITL_1_2015_RECORD_9);
                     throw null;
@@ -11376,7 +11375,7 @@ public class IdentySdk {
                 }
                 this.uxd565jk = getTempUser();
                 if (!this.setFingers) {
-                    deduplication = (generateST + 5) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 5) % 128;
                     this.DeduplicationIdentyResponse = QualityMode.VERIFICATION;
                 }
                 Activity activity = this.getData;
@@ -11411,7 +11410,7 @@ public class IdentySdk {
                         valueOf(value, finger, hand, this.uxd565jk);
                     } else if (template.equals(Template.ISO_19794_2)) {
                         int i16 = deduplication + 55;
-                        generateST = i16 % Uuid.SIZE_BITS;
+                        generateST = i16 % 128;
                         if (i16 % 2 == 0) {
                             values(new Object[]{this, value, finger, hand, this.uxd565jk}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -994925292, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 994925295, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
                             int i17 = 44 / 0;
@@ -11497,7 +11496,7 @@ public class IdentySdk {
         r0 = r0 ^ (r0 << 13);
         r0 = r0 ^ (r0 >>> 17);
         ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 29) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 29) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001b, code lost:
     
@@ -11509,7 +11508,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0098, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 111) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 111) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x00a1, code lost:
     
@@ -11536,7 +11535,7 @@ public class IdentySdk {
     public boolean x() {
         Object[] objArr;
         int i = generateST + 119;
-        deduplication = i % Uuid.SIZE_BITS;
+        deduplication = i % 128;
         if (i % 2 != 0) {
             objArr = Fpnative.valueOf;
             int i2 = 5 / 0;
@@ -11570,12 +11569,12 @@ public class IdentySdk {
         long j;
         int i;
         int i2 = generateST;
-        deduplication = (i2 + 81) % Uuid.SIZE_BITS;
+        deduplication = (i2 + 81) % 128;
         Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i3 = i2 + 117;
-                deduplication = i3 % Uuid.SIZE_BITS;
+                deduplication = i3 % 128;
                 if (i3 % 2 != 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -11587,7 +11586,7 @@ public class IdentySdk {
                 Fpnative.valueOf = r0;
                 boolean z = this.g;
                 i = generateST + 53;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                     int i4 = 23 / 0;
                 }
@@ -11606,7 +11605,7 @@ public class IdentySdk {
             Fpnative.valueOf = objArr4;
             boolean z2 = this.g;
             i = generateST + 53;
-            deduplication = i % Uuid.SIZE_BITS;
+            deduplication = i % 128;
             if (i % 2 != 0) {
             }
             return z2;
@@ -11622,7 +11621,7 @@ public class IdentySdk {
     private void PngjBadCrcException(byte[] bArr, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
             values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_4.ordinal(), bArr), hand, finger, identyUser}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
-            generateST = (deduplication + 75) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 75) % 128;
         } catch (Exception unused) {
         }
     }
@@ -11631,7 +11630,7 @@ public class IdentySdk {
         PackageInfo packageInfo;
         CertificateFactory certificateFactory;
         X509Certificate x509Certificate;
-        deduplication = (generateST + 87) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 87) % 128;
         try {
             packageInfo = this.getData.getPackageManager().getPackageInfo(this.getData.getPackageName(), 64);
         } catch (PackageManager.NameNotFoundException e) {
@@ -11658,7 +11657,7 @@ public class IdentySdk {
                 String hexString = Integer.toHexString(digest[i]);
                 int length = hexString.length();
                 if (length == 1) {
-                    generateST = (deduplication + 91) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 91) % 128;
                     hexString = "0".concat(hexString);
                 }
                 if (length > 2) {
@@ -11672,7 +11671,7 @@ public class IdentySdk {
             return sb.toString();
         } catch (NoSuchAlgorithmException e4) {
             e4.printStackTrace();
-            deduplication = (generateST + 5) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 5) % 128;
             return null;
         } catch (CertificateEncodingException e5) {
             e5.printStackTrace();
@@ -11681,16 +11680,16 @@ public class IdentySdk {
     }
 
     private static Finger PngjException(String str) {
-        deduplication = (generateST + 117) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 117) % 128;
         String lowerCase = str.toLowerCase();
         if (!lowerCase.equals("index")) {
             if (lowerCase.equals("middle")) {
                 return Finger.MIDDLE;
             }
             if (lowerCase.equals("ring")) {
-                generateST = (deduplication + 77) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 77) % 128;
                 Finger finger = Finger.RING;
-                generateST = (deduplication + 69) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 69) % 128;
                 return finger;
             }
             if (lowerCase.equals("little")) {
@@ -11699,10 +11698,10 @@ public class IdentySdk {
             if (!lowerCase.equals("thumb")) {
                 return null;
             }
-            generateST = (deduplication + 121) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 121) % 128;
             return Finger.THUMB;
         }
-        generateST = (deduplication + 43) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 43) % 128;
         return Finger.INDEX;
     }
 
@@ -11710,11 +11709,11 @@ public class IdentySdk {
         try {
             boolean z = true;
             if (this.getMatchingTime == null) {
-                int i = (deduplication + 67) % Uuid.SIZE_BITS;
+                int i = (deduplication + 67) % 128;
                 generateST = i;
                 if (this.getOveralTimetaken == null) {
                     int i2 = i + 41;
-                    deduplication = i2 % Uuid.SIZE_BITS;
+                    deduplication = i2 % 128;
                     if (i2 % 2 == 0) {
                         z = false;
                     }
@@ -11749,7 +11748,7 @@ public class IdentySdk {
         try {
             values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.WSQ.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
             int i = deduplication + 69;
-            generateST = i % Uuid.SIZE_BITS;
+            generateST = i % 128;
             if (i % 2 == 0) {
                 int i2 = 46 / 0;
             }
@@ -11761,7 +11760,7 @@ public class IdentySdk {
     private void valueOf(byte[] bArr, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
             values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.WSQ.ordinal(), bArr), hand, finger, identyUser}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
-            deduplication = (generateST + 45) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 45) % 128;
         } catch (Exception unused) {
         }
     }
@@ -11770,7 +11769,7 @@ public class IdentySdk {
         try {
             if (!this.h.containsKey(hand)) {
                 this.h.put(hand, new HashMap());
-                generateST = (deduplication + 27) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 27) % 128;
             }
             Map map = (Map) this.h.get(hand);
             List arrayList = new ArrayList();
@@ -11794,7 +11793,7 @@ public class IdentySdk {
             map.put(finger, getpadsub3);
             return attempt;
         } catch (Exception unused) {
-            generateST = (deduplication + 81) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 81) % 128;
             return null;
         }
     }
@@ -11802,7 +11801,7 @@ public class IdentySdk {
     private void valueOf(String str, Finger finger, Hand hand, IdentyUser identyUser, Template template) {
         try {
             values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
-            generateST = (deduplication + 37) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 37) % 128;
         } catch (Exception unused) {
         }
     }
@@ -11825,7 +11824,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:18:0x01d6, code lost:
     
         r9 = com.identy.IdentySdk.generateST + 35;
-        com.identy.IdentySdk.deduplication = r9 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = r9 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x01df, code lost:
     
@@ -11874,7 +11873,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:42:0x021d, code lost:
     
         r2 = com.identy.IdentySdk.deduplication + 85;
-        com.identy.IdentySdk.generateST = r2 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = r2 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x0226, code lost:
     
@@ -11963,7 +11962,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:73:0x0186, code lost:
     
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 113) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 113) % 128;
         r1.add(r6.changeHand());
      */
     /* JADX WARN: Code restructure failed: missing block: B:75:0x0195, code lost:
@@ -11976,7 +11975,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:81:0x019e, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 37) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 37) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:82:0x01ae, code lost:
     
@@ -11984,7 +11983,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:83:0x01b0, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 39) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 39) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:84:0x01c6, code lost:
     
@@ -12040,7 +12039,7 @@ public class IdentySdk {
                     int r0 = 0 / ((i14 & (-((i17 ^ 1) + ((i17 & 1) << 1)))) * 472);
                     if (this.e != null && this.setDConfig && !fingerDetectionMode.equals(FingerDetectionMode.TWO_THUMB)) {
                         i = generateST + 109;
-                        deduplication = i % Uuid.SIZE_BITS;
+                        deduplication = i % 128;
                         if (i % 2 == 0) {
                             int i18 = 41 / 0;
                         }
@@ -12075,7 +12074,7 @@ public class IdentySdk {
             int r02 = 0 / ((i142 & (-((i172 ^ 1) + ((i172 & 1) << 1)))) * 472);
             if (this.e != null) {
                 i = generateST + 109;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 == 0) {
                 }
             }
@@ -12087,7 +12086,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        deduplication = (generateST + 51) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 51) % 128;
     }
 
     private void valueOf(byte[] bArr, Hand hand, Finger finger, IdentyUser identyUser) {
@@ -12135,7 +12134,7 @@ public class IdentySdk {
             try {
                 if (objArr != null) {
                     int i = deduplication + 71;
-                    generateST = i % Uuid.SIZE_BITS;
+                    generateST = i % 128;
                     if (i % 2 == 0) {
                         long j2 = ((long[]) objArr[0])[1];
                         j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, new Object[1])).longValue();
@@ -12150,7 +12149,7 @@ public class IdentySdk {
                     runtime.freeMemory();
                     runtime.maxMemory();
                     if (LibSettings.isSaveCaptured()) {
-                        generateST = (deduplication + 117) % Uuid.SIZE_BITS;
+                        generateST = (deduplication + 117) % 128;
                     }
                     int i2 = ((int[]) r1[1])[0];
                     int i3 = i2 * i2;
@@ -12223,16 +12222,16 @@ public class IdentySdk {
     }
 
     private Attempt PngjException(Hand hand, Finger finger, long j, float f, boolean z, int i, float f2, float f3, float f4, float f5, float f6, double d, int i2, String str, int i3, boolean z2, int i4, FingerAS fingerAS) {
-        generateST = (deduplication + 63) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 63) % 128;
         try {
             if (!this.h.containsKey(hand)) {
                 this.h.put(hand, new HashMap());
-                deduplication = (generateST + 111) % Uuid.SIZE_BITS;
+                deduplication = (generateST + 111) % 128;
             }
             Map map = (Map) this.h.get(hand);
             List arrayList = new ArrayList();
             if (map.containsKey(finger)) {
-                generateST = (deduplication + 69) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 69) % 128;
                 arrayList = ((getPadSub3) map.get(finger)).PngjOutputException;
             }
             Attempt attempt = new Attempt(0, d, i2, i, f, f2, f3, f4, f5, f6, j, 0L, 0L, false, false, str, i3, i4, fingerAS, null);
@@ -12262,7 +12261,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (generateST + 29) % Uuid.SIZE_BITS;
+                deduplication = (generateST + 29) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -12276,13 +12275,13 @@ public class IdentySdk {
                     Fpnative.valueOf = objArr;
                     if (z) {
                         int i4 = deduplication + 111;
-                        generateST = i4 % Uuid.SIZE_BITS;
+                        generateST = i4 % 128;
                         if (i4 % 2 == 0) {
                             throw null;
                         }
                     }
                     if (str != null) {
-                        generateST = (deduplication + 121) % Uuid.SIZE_BITS;
+                        generateST = (deduplication + 121) % 128;
                         this.getOveralTimetaken = str2;
                         this.getMatchingTime = str;
                         this.getCaptureTime = z;
@@ -12311,7 +12310,7 @@ public class IdentySdk {
             d((short) 154, (byte) (-bArr[111]), bArr[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1722401695);
             j = ((long[]) objArr[0])[0];
-            generateST = (deduplication + 53) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 53) % 128;
             ((long[]) objArr[0])[0] = j + 4942;
             Fpnative.valueOf = objArr;
             if (z) {
@@ -12338,7 +12337,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 7) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 7) % 128;
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(18:18|(1:20)|21|(13:23|(1:25)(1:49)|27|(1:29)|30|(1:48)(1:34)|35|(1:37)(1:47)|(1:39)(1:46)|40|41|42|43)|51|(2:53|54)|27|(0)|30|(1:32)|48|35|(0)(0)|(0)(0)|40|41|42|43) */
@@ -12387,13 +12386,13 @@ public class IdentySdk {
                     if (fingerDetectionModeArr != null) {
                         int i3 = generateST;
                         int i4 = i3 + 57;
-                        deduplication = i4 % Uuid.SIZE_BITS;
+                        deduplication = i4 % 128;
                         if (i4 % 2 != 0) {
                             throw null;
                         }
                         if (fingerDetectionModeArr.length != 0) {
                             int i5 = i3 + 31;
-                            deduplication = i5 % Uuid.SIZE_BITS;
+                            deduplication = i5 % 128;
                             if (i5 % 2 == 0) {
                                 if (!H()) {
                                     return false;
@@ -12404,12 +12403,12 @@ public class IdentySdk {
                                 this.e = Action.ENROLL;
                                 if (this.getMatchingTime == null) {
                                     int i6 = deduplication + 43;
-                                    generateST = i6 % Uuid.SIZE_BITS;
+                                    generateST = i6 % 128;
                                     if (i6 % 2 == 0) {
                                         int i7 = 81 / 0;
                                     }
                                     if (!this.setFingers) {
-                                        generateST = (deduplication + 119) % Uuid.SIZE_BITS;
+                                        generateST = (deduplication + 119) % 128;
                                         this.DeduplicationIdentyResponse = QualityMode.ENROLLMENT;
                                     }
                                     this.h = new HashMap();
@@ -12427,7 +12426,7 @@ public class IdentySdk {
                                         int i14 = (i13 & 866932721) + (866932721 | i13);
                                         int i15 = ((i14 >> 20) - 8191) / ConstantsKt.DEFAULT_BLOCK_SIZE;
                                         int i16 = (i15 ^ 1) + ((i15 & 1) << 1);
-                                        int i17 = -(((i14 ^ i16) + ((i16 & i14) << 1)) ^ b.e(i14 >> 25, KotlinVersion.MAX_COMPONENT_VALUE, Uuid.SIZE_BITS, -1));
+                                        int i17 = -(((i14 ^ i16) + ((i16 & i14) << 1)) ^ b.e(i14 >> 25, KotlinVersion.MAX_COMPONENT_VALUE, 128, -1));
                                         int i18 = ((i17 | 3) << 1) - (i17 ^ 3);
                                         int i19 = ((i18 >> 21) - 4095) / 2048;
                                         int i20 = (i19 ^ 1) + ((i19 & 1) << 1);
@@ -12484,7 +12483,7 @@ public class IdentySdk {
             d((short) 154, (byte) (-bArr[111]), bArr[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1938024387);
             j = ((long[]) objArr[0])[0];
-            generateST = (deduplication + 21) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 21) % 128;
             ((long[]) objArr[0])[0] = j + 4876;
             Fpnative.valueOf = objArr;
             fingerDetectionModeArr = this.setScore;
@@ -12533,7 +12532,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x014e, code lost:
     
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 75) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 75) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x0156, code lost:
     
@@ -12572,7 +12571,7 @@ public class IdentySdk {
         r8 = ((r1 | 1) << 1) - (r1 ^ 1);
         r1 = (r6 ^ r8) + ((r8 & r6) << 1);
         r6 = r6 >> 25;
-        r8 = (((r6 | (-255)) << 1) - (r6 ^ (-255))) / kotlin.uuid.Uuid.SIZE_BITS;
+        r8 = (((r6 | (-255)) << 1) - (r6 ^ (-255))) / 128;
         r1 = (-(r1 ^ ((r8 ^ 1) + ((r8 & 1) << 1)))) + 9;
         r6 = r1 >> 17;
         r9 = ((r6 & (-65535)) + (r6 | (-65535))) / 32768;
@@ -12585,7 +12584,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:36:0x01e9, code lost:
     
         r0 = com.identy.enums.Hand.LEFT;
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 59) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 59) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x01fc, code lost:
     
@@ -12594,7 +12593,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:38:0x01fe, code lost:
     
         r14 = com.identy.IdentySdk.generateST + 45;
-        com.identy.IdentySdk.deduplication = r14 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = r14 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x0207, code lost:
     
@@ -12669,7 +12668,7 @@ public class IdentySdk {
         r0 = r0 ^ (r0 << 13);
         r0 = r0 ^ (r0 >>> 17);
         ((int[]) r6[1])[0] = r0 ^ (r0 << 5);
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 29) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 29) % 128;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0113  */
@@ -12685,7 +12684,7 @@ public class IdentySdk {
         try {
             if (objArr != null) {
                 int i3 = deduplication + 81;
-                generateST = i3 % Uuid.SIZE_BITS;
+                generateST = i3 % 128;
                 if (i3 % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -12700,7 +12699,7 @@ public class IdentySdk {
                 fingerDetectionModeArr = this.setScore;
                 if (fingerDetectionModeArr != null) {
                     int i4 = generateST + 17;
-                    deduplication = i4 % Uuid.SIZE_BITS;
+                    deduplication = i4 % 128;
                     if (i4 % 2 != 0) {
                         int i5 = 4 / 0;
                     }
@@ -12747,11 +12746,11 @@ public class IdentySdk {
         int i3;
         int i4;
         int i5 = generateST;
-        deduplication = (i5 + 85) % Uuid.SIZE_BITS;
+        deduplication = (i5 + 85) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (i5 + 97) % Uuid.SIZE_BITS;
+                deduplication = (i5 + 97) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -12769,7 +12768,7 @@ public class IdentySdk {
                     for (FingerDetectionMode fingerDetectionMode : fingerDetectionModeArr) {
                         if (fingerDetectionMode.canClub()) {
                             if (fingerDetectionMode.getHand().equals(Hand.LEFT)) {
-                                generateST = (deduplication + 105) % Uuid.SIZE_BITS;
+                                generateST = (deduplication + 105) % 128;
                                 i++;
                             } else {
                                 i2++;
@@ -12824,7 +12823,7 @@ public class IdentySdk {
                         int min4 = Math.min(min3, Math.min(indexOf4, arrayList.indexOf(fingerDetectionMode10)));
                         FingerDetectionMode fingerDetectionMode11 = FingerDetectionMode.R4F;
                         if (!arrayList.contains(fingerDetectionMode11)) {
-                            generateST = (deduplication + 91) % Uuid.SIZE_BITS;
+                            generateST = (deduplication + 91) % 128;
                             arrayList.add(min4, fingerDetectionMode11);
                         }
                         arrayList.remove(fingerDetectionMode7);
@@ -12894,7 +12893,7 @@ public class IdentySdk {
         long j;
         int i;
         int i2 = deduplication + 5;
-        generateST = i2 % Uuid.SIZE_BITS;
+        generateST = i2 % 128;
         if (i2 % 2 != 0) {
             Object[] objArr2 = Fpnative.valueOf;
             try {
@@ -12928,7 +12927,7 @@ public class IdentySdk {
                         int i18 = (i17 & 1) + (i17 | 1);
                         int r2 = 6204 / ((i16 & (-(((i18 | 1) << 1) - (i18 ^ 1)))) * 1551);
                         i = generateST + 49;
-                        deduplication = i % Uuid.SIZE_BITS;
+                        deduplication = i % 128;
                         if (i % 2 != 0) {
                             int i19 = 49 / 0;
                         }
@@ -12964,7 +12963,7 @@ public class IdentySdk {
                 int i182 = (i172 & 1) + (i172 | 1);
                 int r22 = 6204 / ((i162 & (-(((i182 | 1) << 1) - (i182 ^ 1)))) * 1551);
                 i = generateST + 49;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                 }
                 return r22;
@@ -12975,7 +12974,7 @@ public class IdentySdk {
                 }
                 throw th;
             }
-            generateST = (deduplication + 53) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 53) % 128;
         } else {
             throw null;
         }
@@ -13021,21 +13020,21 @@ public class IdentySdk {
                     Fpnative.valueOf = objArr;
                     fingerDetectionModeArr = this.setScore;
                     if (fingerDetectionModeArr == null && fingerDetectionModeArr.length != 0) {
-                        generateST = (deduplication + 53) % Uuid.SIZE_BITS;
+                        generateST = (deduplication + 53) % 128;
                         if (!H()) {
                             return false;
                         }
                         this.e = Action.CAPTURE;
                         this.h = new HashMap();
                         if (this.setScore[0].getFinger() != null) {
-                            deduplication = (generateST + 73) % Uuid.SIZE_BITS;
+                            deduplication = (generateST + 73) % 128;
                             if (this.setScore[0].getFinger().equals(Finger.THUMB)) {
-                                generateST = (deduplication + 43) % Uuid.SIZE_BITS;
+                                generateST = (deduplication + 43) % 128;
                                 z = true;
                                 Hand hand = this.setScore[0].getHand() != null ? Hand.LEFT : this.setScore[0].getHand();
                                 if (!z) {
                                     int i4 = generateST + 23;
-                                    deduplication = i4 % Uuid.SIZE_BITS;
+                                    deduplication = i4 % 128;
                                     if (i4 % 2 == 0) {
                                         contains = this.PngjPrematureEnding.contains(hand);
                                     } else {
@@ -13052,7 +13051,7 @@ public class IdentySdk {
                                 intent.putExtra(isAuthSucess, (Serializable) this.setScore);
                                 if (this.getMatchingTime == null) {
                                     int i5 = deduplication + 85;
-                                    generateST = i5 % Uuid.SIZE_BITS;
+                                    generateST = i5 % 128;
                                     if (i5 % 2 == 0) {
                                         throw null;
                                     }
@@ -13115,11 +13114,11 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i = generateST;
-        deduplication = (i + 3) % Uuid.SIZE_BITS;
+        deduplication = (i + 3) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                deduplication = (i + 1) % Uuid.SIZE_BITS;
+                deduplication = (i + 1) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -13140,7 +13139,7 @@ public class IdentySdk {
                     int i10 = ((i9 ^ (-131071)) + ((i9 & (-131071)) << 1)) / 65536;
                     int i11 = (i8 - (~(((i10 | 1) << 1) - (i10 ^ 1)))) - 1;
                     int i12 = i8 >> 25;
-                    int i13 = ((i12 ^ (-255)) + ((i12 & (-255)) << 1)) / Uuid.SIZE_BITS;
+                    int i13 = ((i12 ^ (-255)) + ((i12 & (-255)) << 1)) / 128;
                     int i14 = -(i11 ^ (((i13 | 1) << 1) - (i13 ^ 1)));
                     int i15 = (i14 ^ 1) + ((i14 & 1) << 1);
                     int i16 = i15 >> 29;
@@ -13169,7 +13168,7 @@ public class IdentySdk {
             int i102 = ((i92 ^ (-131071)) + ((i92 & (-131071)) << 1)) / 65536;
             int i112 = (i82 - (~(((i102 | 1) << 1) - (i102 ^ 1)))) - 1;
             int i122 = i82 >> 25;
-            int i132 = ((i122 ^ (-255)) + ((i122 & (-255)) << 1)) / Uuid.SIZE_BITS;
+            int i132 = ((i122 ^ (-255)) + ((i122 & (-255)) << 1)) / 128;
             int i142 = -(i112 ^ (((i132 | 1) << 1) - (i132 ^ 1)));
             int i152 = (i142 ^ 1) + ((i142 & 1) << 1);
             int i162 = i152 >> 29;
@@ -13184,13 +13183,13 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 121) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 121) % 128;
     }
 
     public boolean removeEnrollment() {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 109) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 109) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -13203,7 +13202,7 @@ public class IdentySdk {
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    deduplication = (generateST + 39) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 39) % 128;
                     ((long[]) objArr[0])[0] = j + 4871;
                     Fpnative.valueOf = objArr;
                     IdentyUser defaultUser = getDefaultUser();
@@ -13288,7 +13287,7 @@ public class IdentySdk {
     }
 
     public final void values(String str) {
-        deduplication = (generateST + 7) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 7) % 128;
         try {
             if (this.EnrollFingersActivity == null) {
                 LManager lManager = this.PngjBadCrcException;
@@ -13296,7 +13295,7 @@ public class IdentySdk {
                 sb.append(str);
                 sb.append("$");
                 lManager.updateTransaction(sb.toString());
-                generateST = (deduplication + 113) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 113) % 128;
                 return;
             }
             LManager lManager2 = this.PngjBadCrcException;
@@ -13306,7 +13305,7 @@ public class IdentySdk {
             sb2.append("$");
             lManager2.addTransactionv2(sb2.toString());
             this.EnrollFingersActivity = null;
-            deduplication = (generateST + 67) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 67) % 128;
         } catch (Exception unused) {
         }
     }
@@ -13315,13 +13314,13 @@ public class IdentySdk {
         try {
             if (!this.h.containsKey(hand)) {
                 this.h.put(hand, new HashMap());
-                deduplication = (generateST + 75) % Uuid.SIZE_BITS;
+                deduplication = (generateST + 75) % 128;
             }
             Map map = (Map) this.h.get(hand);
             List arrayList = new ArrayList();
             if (map.containsKey(finger)) {
                 int i = generateST + 95;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 == 0) {
                     arrayList = ((getPadSub3) map.get(finger)).PngjOutputException;
                 } else {
@@ -13393,7 +13392,7 @@ public class IdentySdk {
         long j;
         int i;
         int i2 = deduplication + 59;
-        generateST = i2 % Uuid.SIZE_BITS;
+        generateST = i2 % 128;
         if (i2 % 2 != 0) {
             Object[] objArr2 = Fpnative.valueOf;
             try {
@@ -13412,7 +13411,7 @@ public class IdentySdk {
                         Fpnative.valueOf = objArr;
                         boolean newInstance = newInstance(activity, LManager.getFileDataFromFile(activity.getAssets(), str), initializationListener, identyResponseListener, z, z2);
                         i = generateST + 51;
-                        deduplication = i % Uuid.SIZE_BITS;
+                        deduplication = i % 128;
                         if (i % 2 != 0) {
                             return newInstance;
                         }
@@ -13431,7 +13430,7 @@ public class IdentySdk {
                 Fpnative.valueOf = objArr;
                 boolean newInstance2 = newInstance(activity, LManager.getFileDataFromFile(activity.getAssets(), str), initializationListener, identyResponseListener, z, z2);
                 i = generateST + 51;
-                deduplication = i % Uuid.SIZE_BITS;
+                deduplication = i % 128;
                 if (i % 2 != 0) {
                 }
             } catch (Throwable th) {
@@ -13441,7 +13440,7 @@ public class IdentySdk {
                 }
                 throw th;
             }
-            generateST = (deduplication + 59) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 59) % 128;
         } else {
             throw null;
         }
@@ -13463,7 +13462,7 @@ public class IdentySdk {
                 sb.append(identyUser.uid);
                 obj = sb.toString();
             }
-            deduplication = (generateST + 39) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 39) % 128;
             File values2 = com.identy.PngjBadCrcException.values(activity, obj);
             StringBuilder sb2 = new StringBuilder();
             sb2.append(hand.toString());
@@ -13472,7 +13471,7 @@ public class IdentySdk {
             sb2.append(".isocryptv4");
             getInstance().m().encryptTemplatev2(bArr, new File(values2, sb2.toString()).getAbsolutePath());
             int i = generateST + 5;
-            deduplication = i % Uuid.SIZE_BITS;
+            deduplication = i % 128;
             if (i % 2 == 0) {
                 return null;
             }
@@ -13485,7 +13484,7 @@ public class IdentySdk {
     public void a(FingerDetectionMode fingerDetectionMode) {
         Object[] objArr;
         long j;
-        deduplication = (generateST + 75) % Uuid.SIZE_BITS;
+        deduplication = (generateST + 75) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             try {
@@ -13539,14 +13538,14 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 7) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 7) % 128;
     }
 
     private void PngjBadSignature() {
-        generateST = (deduplication + 87) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 87) % 128;
         if (h() != null) {
             int i = generateST + 27;
-            deduplication = i % Uuid.SIZE_BITS;
+            deduplication = i % 128;
             if (i % 2 != 0) {
                 int i2 = 90 / 0;
                 if (h().equals(FingerAS.NONE)) {
@@ -13556,7 +13555,7 @@ public class IdentySdk {
                 return;
             }
             if (this.getMatchingTime == null) {
-                generateST = (deduplication + 49) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 49) % 128;
                 if (this.getOveralTimetaken == null) {
                     return;
                 }
@@ -13565,7 +13564,7 @@ public class IdentySdk {
                 return;
             }
             new com.identy.PngjInputException().PngjBadSignature(this.getData, this.getMatchingTime, new PngjPrematureEnding());
-            generateST = (deduplication + 93) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 93) % 128;
         }
     }
 
@@ -13573,12 +13572,12 @@ public class IdentySdk {
     public IdentySdk setASServerConfig(PublicKey publicKey) {
         Object[] objArr;
         long j;
-        int i = (generateST + 41) % Uuid.SIZE_BITS;
+        int i = (generateST + 41) % 128;
         deduplication = i;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (i + 3) % Uuid.SIZE_BITS;
+                generateST = (i + 3) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -13611,7 +13610,7 @@ public class IdentySdk {
                     int i22 = (i21 & 1) + (i21 | 1);
                     this.getCaptureTime = 0 / (((-((i22 & 1) + (i22 | 1))) & i20) * 859);
                     this.S0 = publicKey;
-                    deduplication = (generateST + 45) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 45) % 128;
                     return this;
                 }
             }
@@ -13642,7 +13641,7 @@ public class IdentySdk {
             int i222 = (i212 & 1) + (i212 | 1);
             this.getCaptureTime = 0 / (((-((i222 & 1) + (i222 | 1))) & i202) * 859);
             this.S0 = publicKey;
-            deduplication = (generateST + 45) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 45) % 128;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -13651,7 +13650,7 @@ public class IdentySdk {
             }
             throw th;
         }
-        generateST = (deduplication + 85) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 85) % 128;
     }
 
     public boolean removeEnrollment(IdentyUser identyUser) {
@@ -13660,7 +13659,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 59) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 59) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -13703,7 +13702,7 @@ public class IdentySdk {
                     fingerDetectionModeArr[8] = FingerDetectionMode.RIGHT_LITTLE;
                     fingerDetectionModeArr[9] = fingerDetectionMode;
                     boolean removeEnrollment = removeEnrollment(fingerDetectionModeArr, identyUser);
-                    generateST = (deduplication + 119) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 119) % 128;
                     return removeEnrollment;
                 }
             }
@@ -13749,7 +13748,7 @@ public class IdentySdk {
             fingerDetectionModeArr2[8] = FingerDetectionMode.RIGHT_LITTLE;
             fingerDetectionModeArr2[9] = fingerDetectionMode3;
             boolean removeEnrollment2 = removeEnrollment(fingerDetectionModeArr2, identyUser);
-            generateST = (deduplication + 119) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 119) % 128;
             return removeEnrollment2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -13763,7 +13762,7 @@ public class IdentySdk {
     private void values(String str, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
             values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_2.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
-            generateST = (deduplication + 13) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 13) % 128;
         } catch (Exception unused) {
         }
     }
@@ -13775,7 +13774,7 @@ public class IdentySdk {
         Hand hand = (Hand) objArr[3];
         try {
             values(new Object[]{identySdk, Fpnative.generateID(e1.PngjException(identySdk.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_2.ordinal(), bArr), hand, finger, (IdentyUser) objArr[4]}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
-            generateST = (deduplication + 95) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 95) % 128;
         } catch (Exception unused) {
         }
         return null;
@@ -13948,14 +13947,14 @@ public class IdentySdk {
                     fingerDetectionModeArr = this.setScore;
                     if (fingerDetectionModeArr == null && fingerDetectionModeArr.length != 0) {
                         if (!H()) {
-                            generateST = (deduplication + 85) % Uuid.SIZE_BITS;
+                            generateST = (deduplication + 85) % 128;
                             return false;
                         }
                         this.e = Action.ENROLL;
                         this.uxd565jk = identyUser;
                         if (!this.setFingers) {
                             int i5 = deduplication + 7;
-                            generateST = i5 % Uuid.SIZE_BITS;
+                            generateST = i5 % 128;
                             if (i5 % 2 == 0) {
                                 this.DeduplicationIdentyResponse = QualityMode.ENROLLMENT;
                                 throw null;
@@ -13964,7 +13963,7 @@ public class IdentySdk {
                         }
                         this.h = new HashMap();
                         if (this.setScore[0].getFinger() != null) {
-                            deduplication = (generateST + 13) % Uuid.SIZE_BITS;
+                            deduplication = (generateST + 13) % 128;
                             FingerDetectionMode[] fingerDetectionModeArr2 = this.setScore;
                             int i6 = ((int[]) objArr[1])[0];
                             int i7 = i6 * i6;
@@ -13983,11 +13982,11 @@ public class IdentySdk {
                             int i19 = (((i18 | (-262143)) << 1) - (i18 ^ (-262143))) / 131072;
                             int i20 = ((i19 | 1) << 1) - (i19 ^ 1);
                         }
-                        generateST = (deduplication + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+                        generateST = (deduplication + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
                         z = false;
                         if (this.setScore[0].getHand() == null) {
                             int i21 = deduplication + 103;
-                            generateST = i21 % Uuid.SIZE_BITS;
+                            generateST = i21 % 128;
                             if (i21 % 2 != 0) {
                                 hand = Hand.LEFT;
                             } else {
@@ -14049,7 +14048,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0107, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 19) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 19) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x010e, code lost:
     
@@ -14086,7 +14085,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:25:0x013e, code lost:
     
         r10 = com.identy.IdentySdk.deduplication + 59;
-        com.identy.IdentySdk.generateST = r10 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = r10 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0148, code lost:
     
@@ -14138,7 +14137,7 @@ public class IdentySdk {
         r0 = -(com.identy.b.e(r3 >> 22, 2047, 1024, -1) ^ (((r3 | r0) << 1) - (r0 ^ r3)));
         r1 = (r0 & 7) + (r0 | 7);
         r0 = r1 >> 25;
-        r0 = com.identy.b.a(r0 & (-255), r0 | (-255), kotlin.uuid.Uuid.SIZE_BITS, -1);
+        r0 = com.identy.b.a(r0 & (-255), r0 | (-255), 128, -1);
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x023e, code lost:
     
@@ -14215,7 +14214,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x009b, code lost:
     
-        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 13) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 13) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:70:0x002d, code lost:
     
@@ -14276,7 +14275,7 @@ public class IdentySdk {
         Pair[] pairArr2 = pairArr;
         HashMap hashMap2 = hashMap;
         int i3 = deduplication + 17;
-        generateST = i3 % Uuid.SIZE_BITS;
+        generateST = i3 % 128;
         Throwable th = null;
         boolean z = true;
         if (i3 % 2 == 0) {
@@ -14294,7 +14293,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0115, code lost:
     
         r1 = com.identy.IdentySdk.generateST + 123;
-        r3 = r1 % kotlin.uuid.Uuid.SIZE_BITS;
+        r3 = r1 % 128;
         com.identy.IdentySdk.deduplication = r3;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x011e, code lost:
@@ -14308,7 +14307,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0123, code lost:
     
         r3 = r3 + 9;
-        com.identy.IdentySdk.generateST = r3 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = r3 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x012a, code lost:
     
@@ -14362,7 +14361,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:31:0x001e, code lost:
     
         r1 = r1 + 81;
-        com.identy.IdentySdk.generateST = r1 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = r1 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x0025, code lost:
     
@@ -14405,7 +14404,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x00aa, code lost:
     
-        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 27) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 27) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x00b2, code lost:
     
@@ -14433,7 +14432,7 @@ public class IdentySdk {
     public boolean enroll(IdentyUser identyUser, int i) {
         Object[] objArr;
         int i2 = generateST + 71;
-        int i3 = i2 % Uuid.SIZE_BITS;
+        int i3 = i2 % 128;
         deduplication = i3;
         if (i2 % 2 != 0) {
             objArr = Fpnative.valueOf;
@@ -14664,7 +14663,7 @@ public class IdentySdk {
         int length;
         int i2;
         int i3 = generateST + 125;
-        deduplication = i3 % Uuid.SIZE_BITS;
+        deduplication = i3 % 128;
         if (i3 % 2 == 0) {
             Object[] objArr2 = Fpnative.valueOf;
             try {
@@ -14678,7 +14677,7 @@ public class IdentySdk {
                             int i4 = c ^ (c << 13);
                             int i5 = i4 ^ (i4 >>> 17);
                             ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
-                            deduplication = (generateST + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+                            deduplication = (generateST + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
                             ((long[]) objArr[0])[0] = j3 + 5018;
                             Fpnative.valueOf = objArr;
                             a(fingerDetectionMode);
@@ -14709,7 +14708,7 @@ public class IdentySdk {
                             int i18 = (i17 & 2) + (i17 | 2);
                             int i19 = ((i18 >> 21) - 4095) / 2048;
                             int r2 = 550 / (((-(((i19 ^ 1) + ((i19 & 1) << 1)) + 1)) & i18) * 275);
-                            deduplication = (generateST + 21) % Uuid.SIZE_BITS;
+                            deduplication = (generateST + 21) % 128;
                             return r2;
                         }
                     }
@@ -14736,7 +14735,7 @@ public class IdentySdk {
                     int i182 = (i172 & 2) + (i172 | 2);
                     int i192 = ((i182 >> 21) - 4095) / 2048;
                     int r22 = 550 / (((-(((i192 ^ 1) + ((i192 & 1) << 1)) + 1)) & i182) * 275);
-                    deduplication = (generateST + 21) % Uuid.SIZE_BITS;
+                    deduplication = (generateST + 21) % 128;
                     return r22;
                 } catch (Exception unused) {
                     return false;
@@ -14797,7 +14796,7 @@ public class IdentySdk {
         int r5 = 0;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 85) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 85) % 128;
                 long j6 = ((long[]) objArr2[0])[0];
                 j5 = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j6 > j5) {
@@ -14825,7 +14824,7 @@ public class IdentySdk {
                     it = hashMap.entrySet().iterator();
                     while (it.hasNext()) {
                         int i5 = deduplication + 107;
-                        generateST = i5 % Uuid.SIZE_BITS;
+                        generateST = i5 % 128;
                         if (i5 % i2 != 0) {
                             Map.Entry entry = (Map.Entry) it.next();
                             aVar = (a) entry.getValue();
@@ -14837,7 +14836,7 @@ public class IdentySdk {
                             }
                             if (hand == null) {
                                 int i6 = deduplication + 103;
-                                generateST = i6 % Uuid.SIZE_BITS;
+                                generateST = i6 % 128;
                                 if (i6 % i2 == 0) {
                                     fingerDetectionMode.getHand();
                                     int i7 = 65 / 0;
@@ -14873,7 +14872,7 @@ public class IdentySdk {
                     HashMap hashMap4 = hashMap2;
                     if (str != null) {
                         int i9 = generateST + 45;
-                        deduplication = i9 % Uuid.SIZE_BITS;
+                        deduplication = i9 % 128;
                         if (i9 % 2 != 0) {
                             this.i.put(arrayList, str);
                             throw th2;
@@ -14908,7 +14907,7 @@ public class IdentySdk {
             d((short) 154, (byte) (-bArr2[111]), bArr2[63], objArr5);
             objArr = (Object[]) cls.getMethod((String) objArr5[0], Integer.TYPE).invoke(null, -154879222);
             j5 = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 53) % Uuid.SIZE_BITS;
+            deduplication = (generateST + 53) % 128;
             Object[] objArr32 = objArr;
             ((long[]) objArr32[0])[0] = j5 + 5021;
             Fpnative.valueOf = objArr32;
@@ -14965,7 +14964,7 @@ public class IdentySdk {
         ERRORS errors2;
         Action action;
         int i = deduplication + 81;
-        generateST = i % Uuid.SIZE_BITS;
+        generateST = i % 128;
         if (i % 2 != 0) {
             Object[] objArr2 = Fpnative.valueOf;
             int i2 = 0;
@@ -14989,10 +14988,10 @@ public class IdentySdk {
                         IdentyError identyError = new IdentyError(errors, pairArr, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, this.getData, this.i);
                         errors2 = ERRORS.TIMED_OUT;
                         if (!errors.equals(errors2)) {
-                            generateST = (deduplication + 55) % Uuid.SIZE_BITS;
+                            generateST = (deduplication + 55) % 128;
                             if (!errors.equals(ERRORS.ACTIVITY_PAUSED) && !errors.equals(ERRORS.EXCEEDED_TRANSACTION_LIMIT)) {
                                 int i6 = generateST + 53;
-                                deduplication = i6 % Uuid.SIZE_BITS;
+                                deduplication = i6 % 128;
                                 if (i6 % 2 == 0) {
                                     if (!errors.equals(errors2) && !errors.equals(ERRORS.ACTIVITY_PAUSED_ON_BACK_PRESSED) && !errors.equals(ERRORS.USER_CANCELLED_ON_NEXT_DETECTION)) {
                                         this.f.onErrorResponse(identyError, q());
@@ -15009,7 +15008,7 @@ public class IdentySdk {
                         action = this.e;
                         if (action != null) {
                             int i7 = deduplication + 33;
-                            generateST = i7 % Uuid.SIZE_BITS;
+                            generateST = i7 % 128;
                             if (i7 % 2 != 0) {
                                 if (action.equals(Action.VERIFY)) {
                                     int i8 = ((int[]) objArr4[1])[0];
@@ -15080,7 +15079,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                generateST = (deduplication + 15) % Uuid.SIZE_BITS;
+                generateST = (deduplication + 15) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -15093,7 +15092,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j + 4926;
                     Fpnative.valueOf = objArr;
                     this.configure = z;
-                    generateST = (deduplication + 25) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 25) % 128;
                     return;
                 }
             }
@@ -15108,7 +15107,7 @@ public class IdentySdk {
             ((long[]) objArr[0])[0] = j + 4926;
             Fpnative.valueOf = objArr;
             this.configure = z;
-            generateST = (deduplication + 25) % Uuid.SIZE_BITS;
+            generateST = (deduplication + 25) % 128;
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -15117,7 +15116,7 @@ public class IdentySdk {
             }
             throw cause;
         }
-        generateST = (deduplication + 75) % Uuid.SIZE_BITS;
+        generateST = (deduplication + 75) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x00e5 A[Catch: JSONException -> 0x00ed, TryCatch #0 {JSONException -> 0x00ed, blocks: (B:8:0x00e1, B:10:0x00e5, B:11:0x00ef), top: B:7:0x00e1 }] */
@@ -15131,7 +15130,7 @@ public class IdentySdk {
         try {
             try {
                 if (objArr2 != null) {
-                    generateST = (deduplication + 57) % Uuid.SIZE_BITS;
+                    generateST = (deduplication + 57) % 128;
                     long j2 = ((long[]) objArr2[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
@@ -15142,7 +15141,7 @@ public class IdentySdk {
                         int i2 = c ^ (c << 13);
                         int i3 = i2 ^ (i2 >>> 17);
                         ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                        generateST = (deduplication + 111) % Uuid.SIZE_BITS;
+                        generateST = (deduplication + 111) % 128;
                         ((long[]) objArr[0])[0] = j + 5007;
                         Fpnative.valueOf = objArr;
                         if (this.getSpoofScore == null) {

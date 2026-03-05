@@ -15,7 +15,6 @@ import com.karumi.dexter.BuildConfig;
 import com.karumi.dexter.R;
 import java.lang.reflect.Method;
 import kotlin.io.encoding.Base64;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public class PngjBadSignature extends PngjInputException {
@@ -133,7 +132,7 @@ public class PngjBadSignature extends PngjInputException {
         byte[] bArr2 = str2;
         if (str2 != null) {
             int i4 = $11 + 121;
-            $10 = i4 % Uuid.SIZE_BITS;
+            $10 = i4 % 128;
             if (i4 % 2 != 0) {
                 str2.getBytes("ISO-8859-1");
                 throw null;
@@ -158,7 +157,7 @@ public class PngjBadSignature extends PngjInputException {
             while (i10 < length) {
                 byte b3 = b2;
                 int i11 = $11 + 1;
-                $10 = i11 % Uuid.SIZE_BITS;
+                $10 = i11 % 128;
                 if (i11 % 2 != 0) {
                     try {
                         Object[] objArr2 = {Integer.valueOf(cArr[i10])};
@@ -213,7 +212,7 @@ public class PngjBadSignature extends PngjInputException {
         if (bArr4 != null) {
             char[] cArr4 = new char[i7];
             e1Var.PngjBadSignature = 0;
-            $11 = ($10 + 11) % Uuid.SIZE_BITS;
+            $11 = ($10 + 11) % 128;
             char c2 = 0;
             while (true) {
                 int i12 = e1Var.PngjBadSignature;
@@ -221,7 +220,7 @@ public class PngjBadSignature extends PngjInputException {
                     break;
                 }
                 int i13 = $11 + 89;
-                $10 = i13 % Uuid.SIZE_BITS;
+                $10 = i13 % 128;
                 if (i13 % 2 != 0) {
                     if (bArr4[i12] == 0) {
                         b = b8;
@@ -279,7 +278,7 @@ public class PngjBadSignature extends PngjInputException {
             i2 = 0;
         }
         if (z) {
-            $11 = ($10 + 35) % Uuid.SIZE_BITS;
+            $11 = ($10 + 35) % 128;
             char[] cArr6 = new char[i7];
             e1Var.PngjBadSignature = i2;
             while (true) {
@@ -299,7 +298,7 @@ public class PngjBadSignature extends PngjInputException {
                 if (i16 >= i7) {
                     break;
                 }
-                $11 = ($10 + 19) % Uuid.SIZE_BITS;
+                $11 = ($10 + 19) % 128;
                 cArr3[i16] = (char) (cArr3[i16] - iArr[2]);
                 e1Var.PngjBadSignature = i16 + 1;
             }
@@ -359,7 +358,7 @@ public class PngjBadSignature extends PngjInputException {
             boolean z = intValue == -1;
             if (!(!z)) {
                 int i15 = $10 + 97;
-                $11 = i15 % Uuid.SIZE_BITS;
+                $11 = i15 % 128;
                 if (i15 % 2 == 0) {
                     throw null;
                 }
@@ -370,7 +369,7 @@ public class PngjBadSignature extends PngjInputException {
                     int i16 = 0;
                     j = -6165791747575875761L;
                     while (i16 < length) {
-                        $10 = ($11 + 59) % Uuid.SIZE_BITS;
+                        $10 = ($11 + 59) % 128;
                         Object[] objArr3 = {Integer.valueOf(bArr[i16])};
                         Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1053815139);
                         if (PngjBadSignature3 == null) {
@@ -418,7 +417,7 @@ public class PngjBadSignature extends PngjInputException {
             }
             if (intValue > 0) {
                 int i18 = $11 + 53;
-                $10 = i18 % Uuid.SIZE_BITS;
+                $10 = i18 % 128;
                 if (i18 % 2 != 0) {
                     i7 = ((i2 / intValue) % 4) << ((int) (PngjBadSignature | j));
                 } else {
@@ -443,7 +442,7 @@ public class PngjBadSignature extends PngjInputException {
                 if (bArr4 != null) {
                     int length2 = bArr4.length;
                     byte[] bArr5 = new byte[length2];
-                    $11 = ($10 + 37) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 37) % 128;
                     for (int i20 = 0; i20 < length2; i20++) {
                         bArr5[i20] = (byte) (bArr4[i20] ^ j);
                     }
@@ -462,7 +461,7 @@ public class PngjBadSignature extends PngjInputException {
                         break;
                     }
                     if (i9 == 0) {
-                        $11 = ($10 + R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+                        $11 = ($10 + R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
                         byte[] bArr6 = PngjPrematureEnding;
                         pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
                         pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr6[r4] ^ j)) + s)) ^ b));
@@ -470,7 +469,7 @@ public class PngjBadSignature extends PngjInputException {
                         short[] sArr = PngjUnsupportedException;
                         pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
                         pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[r4] ^ j)) + s)) ^ b));
-                        $10 = ($11 + 63) % Uuid.SIZE_BITS;
+                        $10 = ($11 + 63) % 128;
                     }
                     sb.append(pngjPrematureEnding.valueOf);
                     pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;

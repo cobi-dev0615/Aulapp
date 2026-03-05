@@ -30,7 +30,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
-import kotlin.uuid.Uuid;
 import org.camera.preview.PngjBadCrcException;
 
 /* loaded from: classes2.dex */
@@ -172,7 +171,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         byte[] bArr2 = bArr;
         if (str != null) {
             int i4 = $10 + 29;
-            $11 = i4 % Uuid.SIZE_BITS;
+            $11 = i4 % 128;
             if (i4 % 2 == 0) {
                 str.toCharArray();
                 throw null;
@@ -198,7 +197,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     }
                     cArr5[i5] = ((Character) ((Method) PngjBadSignature2).invoke(null, objArr2)).charValue();
                     i5++;
-                    $11 = ($10 + 79) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 79) % 128;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
                     if (cause == null) {
@@ -223,7 +222,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         int i6 = -528960794;
         if (PngjBadSignature) {
             int i7 = $11 + 23;
-            $10 = i7 % Uuid.SIZE_BITS;
+            $10 = i7 % 128;
             if (i7 % 2 != 0) {
                 int length2 = bArr2.length;
                 pngjExceptionInternal.PngjException = length2;
@@ -272,7 +271,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 }
                 String str4 = new String(cArr6);
                 int i12 = $11 + 37;
-                $10 = i12 % Uuid.SIZE_BITS;
+                $10 = i12 % 128;
                 if (i12 % 2 == 0) {
                     objArr[0] = str4;
                     return;
@@ -283,7 +282,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 }
             }
             int i14 = $10 + 67;
-            $11 = i14 % Uuid.SIZE_BITS;
+            $11 = i14 % 128;
             int i15 = i14 % 2;
             int length5 = cArr3.length;
             pngjExceptionInternal.PngjException = length5;
@@ -297,7 +296,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     return;
                 }
                 int i18 = $11 + 87;
-                $10 = i18 % Uuid.SIZE_BITS;
+                $10 = i18 % 128;
                 if (i18 % 2 != 0) {
                     cArr7[i16] = (char) (cArr4[cArr3[0] >>> i] % intValue);
                     Object[] objArr5 = {pngjExceptionInternal, pngjExceptionInternal};
@@ -338,7 +337,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         int i3;
         String str2 = str;
         int i4 = $11 + 55;
-        $10 = i4 % Uuid.SIZE_BITS;
+        $10 = i4 % 128;
         byte[] bArr3 = str2;
         if (i4 % 2 != 0) {
             throw null;
@@ -391,7 +390,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
             }
             bArr = bArr4;
             b = b2;
-            $10 = ($11 + 77) % Uuid.SIZE_BITS;
+            $10 = ($11 + 77) % 128;
             cArr = cArr2;
         } else {
             bArr = bArr4;
@@ -463,12 +462,12 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 }
                 cArr6[i13] = cArr3[(i7 - i13) - 1];
                 e1Var.PngjBadSignature = i13 + 1;
-                $11 = ($10 + 119) % Uuid.SIZE_BITS;
+                $11 = ($10 + 119) % 128;
             }
             cArr3 = cArr6;
         }
         if (i8 > 0) {
-            $10 = ($11 + 41) % Uuid.SIZE_BITS;
+            $10 = ($11 + 41) % 128;
             loop3: while (true) {
                 e1Var.PngjBadSignature = 0;
                 while (true) {
@@ -477,7 +476,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                         break loop3;
                     }
                     int i14 = $11 + 63;
-                    $10 = i14 % Uuid.SIZE_BITS;
+                    $10 = i14 % 128;
                     if (i14 % 2 != 0) {
                         break;
                     }
@@ -608,7 +607,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
      */
     /* JADX WARN: Code restructure failed: missing block: B:56:0x0afe, code lost:
     
-        com.touchlessid.TouchLessIDSDK$values.PngjUnsupportedException = (com.touchlessid.TouchLessIDSDK$values.PngjOutputException + 97) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.touchlessid.TouchLessIDSDK$values.PngjUnsupportedException = (com.touchlessid.TouchLessIDSDK$values.PngjOutputException + 97) % 128;
         r0 = true;
      */
     /* JADX WARN: Code restructure failed: missing block: B:574:0x1263, code lost:
@@ -765,7 +764,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         Class cls5 = Integer.TYPE;
         int i16 = PngjUnsupportedException;
         int i17 = ((i16 | 57) << 1) - (i16 ^ 57);
-        PngjOutputException = i17 % Uuid.SIZE_BITS;
+        PngjOutputException = i17 % 128;
         try {
             if (i17 % 2 != 0) {
                 i3 = 4;
@@ -808,7 +807,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     if (invoke == null) {
                     }
                     cls = String.class;
-                    PngjUnsupportedException = (PngjOutputException + 49) % Uuid.SIZE_BITS;
+                    PngjUnsupportedException = (PngjOutputException + 49) % 128;
                     z = false;
                     if (z) {
                     }
@@ -916,7 +915,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     int i33 = ((int) j20) & (((~((-710463579) | i)) * 345) + (((~((-1859705180) | i32)) | 287572128) * 345) + i31);
                     if (((i30 & i33) | (i30 ^ i33)) != 0) {
                         int i34 = PngjOutputException;
-                        PngjUnsupportedException = ((i34 ^ 15) + ((i34 & 15) << 1)) % Uuid.SIZE_BITS;
+                        PngjUnsupportedException = ((i34 ^ 15) + ((i34 & 15) << 1)) % 128;
                         Object[] objArr13 = new Object[1];
                         c("\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0001", true, new int[]{0, 23, 0, i5}, objArr13);
                         Object[] objArr14 = {(String) objArr13[0]};
@@ -1077,7 +1076,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                             int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                             int i57 = ((int) j50) & ((((~(startElapsedRealtime | (-272630869))) | 67772673) * 235) + (((~((-1531299541) | startElapsedRealtime)) | 1326441345) * (-470)) + ((((~((~startElapsedRealtime) | (-1531299541))) | 1326441345) * (-235)) - 1701913145));
                         }
-                        PngjUnsupportedException = (PngjOutputException + 49) % Uuid.SIZE_BITS;
+                        PngjUnsupportedException = (PngjOutputException + 49) % 128;
                         z = false;
                         if (z) {
                             Object[] objArr27 = {new int[]{r5}, new int[1], null, new int[]{i}};
@@ -1357,11 +1356,11 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                         }
                                         if (!(((double) i104) < 25.2d)) {
                                             int i115 = PngjOutputException;
-                                            PngjUnsupportedException = ((i115 ^ 7) + ((i115 & 7) << 1)) % Uuid.SIZE_BITS;
+                                            PngjUnsupportedException = ((i115 ^ 7) + ((i115 & 7) << 1)) % 128;
                                             z2 = true;
                                             if (z2) {
                                                 int i116 = PngjOutputException;
-                                                PngjUnsupportedException = (((i116 | 29) << 1) - (i116 ^ 29)) % Uuid.SIZE_BITS;
+                                                PngjUnsupportedException = (((i116 | 29) << 1) - (i116 ^ 29)) % 128;
                                                 Object[] objArr74 = {new int[]{(i & (-262)) | (i70 & 261)}, new int[1], null, new int[]{i}};
                                                 int b41 = a.b(1824485297);
                                                 int i117 = (((~((-657192633) | b41)) | 553759776 | (~(377373341 | b41))) * (-754)) + 1564913883;
@@ -1438,7 +1437,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                             int i157 = (((i155 ^ i156) | (i155 & i156) | (~(((-129) ^ PngjBadCrcException4) | ((-129) & PngjBadCrcException4)))) * (-1734)) + i154;
                                             int i158 = (i149 ^ (-129)) | (i149 & (-129));
                                             int i159 = ~((i158 & i152) | (i158 ^ i152));
-                                            int i160 = (i149 & Uuid.SIZE_BITS) | (i149 ^ Uuid.SIZE_BITS);
+                                            int i160 = (i149 & 128) | (i149 ^ 128);
                                             int i161 = ~((i160 & PngjBadCrcException4) | (i160 ^ PngjBadCrcException4));
                                             int i162 = (i159 & i161) | (i159 ^ i161);
                                             int i163 = ((-129) & i146) | ((-129) ^ i146);
@@ -1479,7 +1478,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                 if (j84 - 3 < j74) {
                                                     z3 = true;
                                                     if (!z3) {
-                                                        PngjUnsupportedException = (PngjOutputException + 7) % Uuid.SIZE_BITS;
+                                                        PngjUnsupportedException = (PngjOutputException + 7) % 128;
                                                         Object[] objArr81 = {new int[]{(i & (-248)) | (i70 & 247)}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{i}};
                                                         int i168 = (((~(978758662 | i70)) | 38964230) * 495) + ((r3 * 495) - 1072858198);
                                                         int i169 = -(-(i168 * 530));
@@ -1552,7 +1551,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                         if ((j97 + 100 < j90 ? '!' : (char) 25) == '!') {
                                                             z4 = true;
                                                             if ((!z4 ? (char) 15 : ' ') != 15) {
-                                                                PngjOutputException = (PngjUnsupportedException + 13) % Uuid.SIZE_BITS;
+                                                                PngjOutputException = (PngjUnsupportedException + 13) % 128;
                                                                 Object[] objArr88 = {new int[]{r5}, new int[1], null, new int[]{i}};
                                                                 int i188 = (~(i & 248)) & (i | 248);
                                                                 int startElapsedRealtime2 = (int) Process.getStartElapsedRealtime();
@@ -1678,16 +1677,16 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                     int i224 = ~i;
                                                                     int i225 = ~((i224 ^ indexOf6) | (i224 & indexOf6));
                                                                     int i226 = (i223 & i225) | (i223 ^ i225);
-                                                                    int i227 = ~((i224 & Uuid.SIZE_BITS) | (i224 ^ Uuid.SIZE_BITS));
+                                                                    int i227 = ~((i224 & 128) | (i224 ^ 128));
                                                                     int i228 = -(-(((i226 & i227) | (i226 ^ i227)) * (-516)));
                                                                     int i229 = ((i222 | i228) << 1) - (i228 ^ i222);
                                                                     int i230 = ~indexOf6;
                                                                     int i231 = (i230 ^ (-129)) | (i230 & (-129));
                                                                     int i232 = ~((i231 & i) | (i231 ^ i));
-                                                                    int i233 = ~((i230 ^ i70) | (i230 & i70) | Uuid.SIZE_BITS);
+                                                                    int i233 = ~((i230 ^ i70) | (i230 & i70) | 128);
                                                                     int i234 = (((i232 & i233) | (i232 ^ i233)) * 516) + i229;
-                                                                    int i235 = ~((i230 & Uuid.SIZE_BITS) | (i230 ^ Uuid.SIZE_BITS));
-                                                                    int i236 = ~((i70 ^ Uuid.SIZE_BITS) | (i70 & Uuid.SIZE_BITS));
+                                                                    int i235 = ~((i230 & 128) | (i230 ^ 128));
+                                                                    int i236 = ~((i70 ^ 128) | (i70 & 128));
                                                                     int i237 = ((i235 & i236) | (i235 ^ i236)) * 516;
                                                                     int i238 = (i234 & i237) + (i237 | i234);
                                                                     Object[] objArr101 = new Object[1];
@@ -1792,7 +1791,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         Object invoke7 = ((Method) PngjBadSignature25).invoke(null, objArr111);
                                                                                         if (invoke7 != null) {
                                                                                             int gidForName2 = Process.getGidForName(BuildConfig.FLAVOR);
-                                                                                            int i260 = (gidForName2 & Uuid.SIZE_BITS) + (gidForName2 | Uuid.SIZE_BITS);
+                                                                                            int i260 = (gidForName2 & 128) + (gidForName2 | 128);
                                                                                             Object[] objArr113 = new Object[1];
                                                                                             b(null, i260, null, "\u0086\u0082\u0094\u0089\u0088\u008c\u0082\u0089\u0085\u0093\u008a", objArr113);
                                                                                             Object[] objArr114 = {invoke7, new String[]{(String) objArr113[0]}};
@@ -1829,19 +1828,19 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                             int i264 = ~myTid5;
                                                                                             int i265 = ((int) j108) & ((((~(i264 | (-837121246))) | 2020619640) * 217) + (((~(myTid5 | (-2020619641))) | 811611224) * 217) + (((~((-2020619641) | i264)) | (~((-837121246) | myTid5))) * 217) + 815461776);
                                                                                             if (((i263 & i265) | (i263 ^ i265)) != 1) {
-                                                                                                PngjUnsupportedException = (PngjOutputException + 21) % Uuid.SIZE_BITS;
+                                                                                                PngjUnsupportedException = (PngjOutputException + 21) % 128;
                                                                                                 int i266 = -(ViewConfiguration.getGlobalActionKeyTimeout() > 0L ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == 0L ? 0 : -1));
                                                                                                 int i267 = i266 * 399;
                                                                                                 int i268 = (i267 ^ 51072) + ((i267 & 51072) << 1);
                                                                                                 int i269 = ~i266;
-                                                                                                int i270 = ~((i269 ^ Uuid.SIZE_BITS) | (i269 & Uuid.SIZE_BITS));
+                                                                                                int i270 = ~((i269 ^ 128) | (i269 & 128));
                                                                                                 int i271 = ~((-129) | i266);
                                                                                                 int i272 = (i270 & i271) | (i270 ^ i271);
                                                                                                 int i273 = ~((-129) | i);
-                                                                                                int i274 = (((((i272 & i273) | (i272 ^ i273)) * 398) + i268) - (~(((i266 ^ Uuid.SIZE_BITS) | (i266 & Uuid.SIZE_BITS)) * (-1194)))) - 1;
+                                                                                                int i274 = (((((i272 & i273) | (i272 ^ i273)) * 398) + i268) - (~(((i266 ^ 128) | (i266 & 128)) * (-1194)))) - 1;
                                                                                                 int i275 = ~i;
                                                                                                 int i276 = ~(((-129) & i275) | ((-129) ^ i275));
-                                                                                                int i277 = ~((i269 & Uuid.SIZE_BITS) | (i269 ^ Uuid.SIZE_BITS));
+                                                                                                int i277 = ~((i269 & 128) | (i269 ^ 128));
                                                                                                 int i278 = (i277 & i276) | (i276 ^ i277);
                                                                                                 int i279 = ~((-129) | i266);
                                                                                                 int i280 = (((i279 & i278) | (i278 ^ i279)) * 398) + i274;
@@ -1951,7 +1950,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                             int i308 = i307 ^ (i307 >>> 17);
                                                                                             ((int[]) objArr131[1])[0] = i308 ^ (i308 << 5);
                                                                                             int i309 = PngjOutputException;
-                                                                                            PngjUnsupportedException = ((i309 ^ 17) + ((i309 & 17) << 1)) % Uuid.SIZE_BITS;
+                                                                                            PngjUnsupportedException = ((i309 ^ 17) + ((i309 & 17) << 1)) % 128;
                                                                                             return objArr131;
                                                                                         }
                                                                                         long[] jArr = {472001035};
@@ -1976,7 +1975,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                         j2 = ((j2 << 5) ^ read) & 1073741823;
                                                                                                         for (int i312 = 0; i312 < 1; i312++) {
                                                                                                             int i313 = PngjUnsupportedException + 125;
-                                                                                                            PngjOutputException = i313 % Uuid.SIZE_BITS;
+                                                                                                            PngjOutputException = i313 % 128;
                                                                                                             if (i313 % 2 == 0) {
                                                                                                                 long j113 = jArr[i312];
                                                                                                                 throw null;
@@ -2013,7 +2012,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         if (i13 == 0) {
                                                                                             int i314 = PngjUnsupportedException;
                                                                                             int i315 = (i314 ^ 119) + ((i314 & 119) << 1);
-                                                                                            PngjOutputException = i315 % Uuid.SIZE_BITS;
+                                                                                            PngjOutputException = i315 % 128;
                                                                                             i14 = i315 % 2 == 0 ? 18986 : 240;
                                                                                         } else {
                                                                                             i14 = 0;
@@ -2046,7 +2045,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                 if (read2 != -1) {
                                                                                                     int i321 = PngjUnsupportedException;
                                                                                                     int i322 = ((i321 | 113) << 1) - (i321 ^ 113);
-                                                                                                    PngjOutputException = i322 % Uuid.SIZE_BITS;
+                                                                                                    PngjOutputException = i322 % 128;
                                                                                                     j = i322 % 2 != 0 ? ((j << 5) ^ read2) & 1073741823 : ((j >>> 2) - read2) - 1073741823;
                                                                                                     int i323 = 0;
                                                                                                     while (true) {
@@ -2144,13 +2143,13 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         int i364 = ((int) j117) & ((((~((-1336483936) | i363)) | 1235752213) * 764) + (((~(i363 | (-100742475))) | 5376) * (-1528)) + ((((-100742475) | r8) * 764) - 993057923));
                                                                                         if (((i362 & i364) | (i362 ^ i364)) != 0) {
                                                                                             int i365 = PngjUnsupportedException;
-                                                                                            PngjOutputException = (((i365 | 41) << 1) - (i365 ^ 41)) % Uuid.SIZE_BITS;
+                                                                                            PngjOutputException = (((i365 | 41) << 1) - (i365 ^ 41)) % 128;
                                                                                             z5 = true;
                                                                                         } else {
                                                                                             z5 = false;
                                                                                         }
                                                                                         if (z5) {
-                                                                                            PngjOutputException = (PngjUnsupportedException + 107) % Uuid.SIZE_BITS;
+                                                                                            PngjOutputException = (PngjUnsupportedException + 107) % 128;
                                                                                             objArr = new Object[]{new int[]{r8}, new int[]{((~r5) & r7) | ((~r7) & r5)}, null, new int[]{i}};
                                                                                             int i366 = (~(i & 264)) & (i | 264);
                                                                                             int i367 = (((~((-557668368) | i)) | 2899974 | (~(1031665999 | i70))) * 988) + (((~((-554768394) | i70)) | (~(1031665999 | i))) * 988) + 1192792113;
@@ -2247,7 +2246,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                     int b87 = a.b(1499973375);
                                                                                                     if (((((int) (j132 >> 32)) & ((((~(b87 | (-1407899936))) | (-29326476)) * 502) + ((~((~b87) | (-1385601))) * (-502)) + (((~((-29326476) | b87)) | (-1409285536)) * (-502)) + 883084146)) | (((int) j132) & ((((~(309398903 | i)) | (-1400458616)) * 116) + (((-1127827507) | i) * 116) + ((~((-36767795) | i70)) * (-116)) + 2072280017))) != 0) {
                                                                                                         int i392 = PngjUnsupportedException;
-                                                                                                        PngjOutputException = (((i392 | 55) << 1) - (i392 ^ 55)) % Uuid.SIZE_BITS;
+                                                                                                        PngjOutputException = (((i392 | 55) << 1) - (i392 ^ 55)) % 128;
                                                                                                         objArr = new Object[]{new int[]{(i & (-267)) | (i70 & 266)}, new int[1], null, new int[]{i}};
                                                                                                         int startElapsedRealtime3 = (int) Process.getStartElapsedRealtime();
                                                                                                         int i393 = (i2 - (~(-(-a.A((~((~startElapsedRealtime3) | (-201359362))) | 827409476, 521, ((~((-201359362) | startElapsedRealtime3)) * 521) + 1916913896, -16))))) - 1;
@@ -2383,7 +2382,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         long j154 = ((502 * (((j152 | longValue23) ^ j69) | j153)) + ((j147 * ((j151 | (j152 ^ j69)) | j153)) + j149)) - 1130779844;
                                                                                         if (((((int) (j154 >> 32)) & ((((~(778333637 | i)) | (-795209702) | (~((-642016710) | i70))) * 717) + (((((~(i70 | 778333637)) | (-795209702)) | (~((-642016710) | i))) * 717) - 673077339))) | (((int) j154) & ((((~(341003476 | i)) | 335694976) * 196) + (((5308500 | r6) * (-196)) - 1768466267)))) != 0) {
                                                                                             int i437 = PngjOutputException;
-                                                                                            PngjUnsupportedException = ((i437 & 109) + (i437 | 109)) % Uuid.SIZE_BITS;
+                                                                                            PngjUnsupportedException = ((i437 & 109) + (i437 | 109)) % 128;
                                                                                             Object[] objArr146 = {new int[]{r5}, new int[1], null, new int[]{i}};
                                                                                             int i438 = (272 | i) & (~(i & 272));
                                                                                             int a2 = a.a();
@@ -2479,7 +2478,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         int i471 = i467 & (((1446010944 | i470) * 84) + ((i469 | i470) * (-84)) + i468);
                                                                                         if ((((i466 & i471) | (i466 ^ i471)) != 0 ? '2' : '-') == '2') {
                                                                                             int i472 = PngjOutputException;
-                                                                                            PngjUnsupportedException = ((i472 & 41) + (i472 | 41)) % Uuid.SIZE_BITS;
+                                                                                            PngjUnsupportedException = ((i472 & 41) + (i472 | 41)) % 128;
                                                                                             Object[] objArr154 = {new int[]{(i70 & 276) | (i & (-277))}, new int[1], null, new int[]{i}};
                                                                                             int a3 = a.a();
                                                                                             int A3 = a.A((~(a3 | 236838843)) | 797727130, 272, (((~((-236838844) | a3)) | 1148449) * (-272)) + ((((~((-235690395) | (~a3))) | (~(798875579 | a3))) * (-272)) - 1203192731), -16);
@@ -2558,7 +2557,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         int i502 = ((int) (j177 >> 32)) & ((((~((-1156192793) | i)) | (~(1156192792 | i70))) * 575) + (((~((-281033619) | i)) | (~(281033618 | i70))) * (-575)) + (((i501 | r8) * 1150) - 334238508));
                                                                                         int i503 = ((int) j177) & ((((~(1785458647 | i)) | 4295173 | (~(348232237 | i70))) * 904) + (((~((-343937065) | i)) | (~((-1781163475) | i70))) * 904) + ((((~((-348232238) | i)) | (~((-1785458648) | i70))) * (-1808)) - 1020982275));
                                                                                         if ((((i502 & i503) | (i502 ^ i503)) != 0 ? '7' : 'F') != 'F') {
-                                                                                            PngjUnsupportedException = (PngjOutputException + 105) % Uuid.SIZE_BITS;
+                                                                                            PngjUnsupportedException = (PngjOutputException + 105) % 128;
                                                                                             Object[] objArr158 = {new int[]{r5}, new int[1], null, new int[]{i}};
                                                                                             int i504 = (~(i & 279)) & (i | 279);
                                                                                             int i505 = ~((int) Runtime.getRuntime().freeMemory());
@@ -2686,7 +2685,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     i9 = 8;
                 }
                 cls = String.class;
-                PngjUnsupportedException = (PngjOutputException + 49) % Uuid.SIZE_BITS;
+                PngjUnsupportedException = (PngjOutputException + 49) % 128;
                 z = false;
                 if (z) {
                 }

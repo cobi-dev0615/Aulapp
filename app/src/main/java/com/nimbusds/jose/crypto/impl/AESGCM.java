@@ -17,7 +17,6 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public abstract class AESGCM {
@@ -44,7 +43,7 @@ public abstract class AESGCM {
         SecretKey aESKey = KeyUtils.toAESKey(secretKey);
         try {
             Cipher cipher = provider != null ? Cipher.getInstance("AES/GCM/NoPadding", provider) : Cipher.getInstance("AES/GCM/NoPadding");
-            cipher.init(2, aESKey, new GCMParameterSpec(Uuid.SIZE_BITS, bArr));
+            cipher.init(2, aESKey, new GCMParameterSpec(128, bArr));
             cipher.updateAAD(bArr3);
             try {
                 return cipher.doFinal(ByteUtils.concat(bArr2, bArr4));
@@ -63,13 +62,13 @@ public abstract class AESGCM {
         byte[] bArr3 = container.get();
         try {
             Cipher cipher = provider != null ? Cipher.getInstance("AES/GCM/NoPadding", provider) : Cipher.getInstance("AES/GCM/NoPadding");
-            cipher.init(1, aESKey, new GCMParameterSpec(Uuid.SIZE_BITS, bArr3));
+            cipher.init(1, aESKey, new GCMParameterSpec(128, bArr3));
             cipher.updateAAD(bArr2);
             try {
                 byte[] doFinal = cipher.doFinal(bArr);
-                int length = doFinal.length - ByteUtils.byteLength(Uuid.SIZE_BITS);
+                int length = doFinal.length - ByteUtils.byteLength(128);
                 byte[] subArray = ByteUtils.subArray(doFinal, 0, length);
-                byte[] subArray2 = ByteUtils.subArray(doFinal, length, ByteUtils.byteLength(Uuid.SIZE_BITS));
+                byte[] subArray2 = ByteUtils.subArray(doFinal, length, ByteUtils.byteLength(128));
                 container.set(actualIVOf(cipher));
                 return new AuthenticatedCipherText(subArray, subArray2);
             } catch (BadPaddingException | IllegalBlockSizeException e) {
@@ -93,7 +92,7 @@ public abstract class AESGCM {
             throw new JOSEException(String.format("IV length of %d bits is required, got %d", 96, Integer.valueOf(ByteUtils.safeBitLength(bArr))));
         }
         if (i != 128) {
-            throw new JOSEException(String.format("Authentication tag length of %d bits is required, got %d", Integer.valueOf(Uuid.SIZE_BITS), Integer.valueOf(i)));
+            throw new JOSEException(String.format("Authentication tag length of %d bits is required, got %d", Integer.valueOf(128), Integer.valueOf(i)));
         }
     }
 }

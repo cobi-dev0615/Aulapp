@@ -3,7 +3,6 @@ package com.gse.aulapp.lib.encryption_gse.encryptGse.cipher;
 import java.security.KeyFactory;
 import java.security.SecureRandom;
 import java.security.spec.ECPublicKeySpec;
-import kotlin.uuid.Uuid;
 import org.bouncycastle.crypto.agreement.ECDHBasicAgreement;
 import org.bouncycastle.crypto.digests.SHA256Digest;
 import org.bouncycastle.crypto.generators.KDF2BytesGenerator;
@@ -21,7 +20,7 @@ public class AsymCrypto {
     private ECPublicKey senderKey;
 
     public byte[] doEncrypt(byte[] bArr) {
-        IESParameterSpec iESParameterSpec = new IESParameterSpec(null, null, Uuid.SIZE_BITS, Uuid.SIZE_BITS, null);
+        IESParameterSpec iESParameterSpec = new IESParameterSpec(null, null, 128, 128, null);
         IESCipherGCM iESCipherGCM = new IESCipherGCM(new IESEngineGCM(new ECDHBasicAgreement(), new KDF2BytesGenerator(new SHA256Digest()), new AESGCMBlockCipher()), 16);
         iESCipherGCM.engineInit(1, this.senderKey, iESParameterSpec, this.random);
         return iESCipherGCM.engineDoFinal(bArr, 0, bArr.length);

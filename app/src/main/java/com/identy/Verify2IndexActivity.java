@@ -33,7 +33,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class Verify2IndexActivity extends FingerActivity {
@@ -382,7 +381,7 @@ public class Verify2IndexActivity extends FingerActivity {
         String str2 = str;
         byte[] bArr2 = str2;
         if (str2 != null) {
-            $11 = ($10 + 81) % Uuid.SIZE_BITS;
+            $11 = ($10 + 81) % 128;
             bArr2 = str2.getBytes("ISO-8859-1");
         }
         byte[] bArr3 = bArr2;
@@ -403,7 +402,7 @@ public class Verify2IndexActivity extends FingerActivity {
             while (i9 < length) {
                 int i10 = i3;
                 int i11 = $11 + 83;
-                $10 = i11 % Uuid.SIZE_BITS;
+                $10 = i11 % 128;
                 if (i11 % i6 != 0) {
                     try {
                         Object[] objArr2 = {Integer.valueOf(cArr[i9])};
@@ -461,9 +460,9 @@ public class Verify2IndexActivity extends FingerActivity {
                     break;
                 }
                 int i14 = $10;
-                $11 = (i14 + 53) % Uuid.SIZE_BITS;
+                $11 = (i14 + 53) % 128;
                 if (bArr4[i13] == 1) {
-                    $11 = (i14 + 53) % Uuid.SIZE_BITS;
+                    $11 = (i14 + 53) % 128;
                     Object[] objArr4 = {Integer.valueOf(cArr3[i13]), Integer.valueOf(c)};
                     Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
                     if (PngjBadSignature3 == null) {
@@ -517,7 +516,7 @@ public class Verify2IndexActivity extends FingerActivity {
                 cArr6[i16] = cArr3[(i5 - i16) - 1];
                 e1Var.PngjBadSignature = i16 + 1;
             }
-            $11 = ($10 + 37) % Uuid.SIZE_BITS;
+            $11 = ($10 + 37) % 128;
             cArr3 = cArr6;
         }
         if (i7 > 0) {
@@ -572,7 +571,7 @@ public class Verify2IndexActivity extends FingerActivity {
         int intValue;
         Object[] values$1eba2e16;
         long j;
-        getFingerPrintQualityScore = (getScore + 123) % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = (getScore + 123) % 128;
         super.attachBaseContext(context);
         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature == null) {
@@ -589,7 +588,7 @@ public class Verify2IndexActivity extends FingerActivity {
         try {
             try {
                 if (j2 != -1) {
-                    getFingerPrintQualityScore = (getScore + 119) % Uuid.SIZE_BITS;
+                    getFingerPrintQualityScore = (getScore + 119) % 128;
                     long j3 = j2 + 4611686018427387836L;
                     i = 763257050;
                     Object[] objArr2 = new Object[1];
@@ -599,7 +598,7 @@ public class Verify2IndexActivity extends FingerActivity {
                     Object[] objArr3 = new Object[1];
                     c(new int[]{22, 15, 70, 0}, "\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0000", false, objArr3);
                     if (j3 >= ((Long) cls.getDeclaredMethod((String) objArr3[0], null).invoke(null, null)).longValue()) {
-                        getFingerPrintQualityScore = (getScore + 3) % Uuid.SIZE_BITS;
+                        getFingerPrintQualityScore = (getScore + 3) % 128;
                         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                         if (PngjBadSignature2 == null) {
                             char resolveOpacity = (char) (Drawable.resolveOpacity(0, 0) + 14830);
@@ -628,12 +627,12 @@ public class Verify2IndexActivity extends FingerActivity {
                                 throw null;
                             }
                             for (String str : strArr2) {
-                                getScore = (getFingerPrintQualityScore + 117) % Uuid.SIZE_BITS;
+                                getScore = (getFingerPrintQualityScore + 117) % 128;
                                 arrayList.add(str);
                             }
                             throw null;
                         }
-                        getFingerPrintQualityScore = (getScore + 51) % Uuid.SIZE_BITS;
+                        getFingerPrintQualityScore = (getScore + 51) % 128;
                         Object[] objArr6 = {new int[]{r6}, new int[1], r1, new int[]{r5}};
                         int i9 = ((int[]) values$1eba2e16[1])[0];
                         int i10 = ((int[]) values$1eba2e16[3])[0];
@@ -723,10 +722,10 @@ public class Verify2IndexActivity extends FingerActivity {
             if (isEnrolled) {
                 return;
             }
-            getScore = (getFingerPrintQualityScore + 13) % Uuid.SIZE_BITS;
+            getScore = (getFingerPrintQualityScore + 13) % 128;
             Toast.makeText(this, "Fingers not registered .. please register first", 1).show();
             finish();
-            getFingerPrintQualityScore = (getScore + 117) % Uuid.SIZE_BITS;
+            getFingerPrintQualityScore = (getScore + 117) % 128;
         } catch (Exception unused) {
         }
     }
@@ -734,7 +733,7 @@ public class Verify2IndexActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         int i = getScore + 83;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onCreate(bundle);
         if (i2 == 0) {
@@ -744,10 +743,10 @@ public class Verify2IndexActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
-        getScore = (getFingerPrintQualityScore + 111) % Uuid.SIZE_BITS;
+        getScore = (getFingerPrintQualityScore + 111) % 128;
         super.onPause();
         int i = getFingerPrintQualityScore + 117;
-        getScore = i % Uuid.SIZE_BITS;
+        getScore = i % 128;
         if (i % 2 != 0) {
             int i2 = 2 / 0;
         }
@@ -756,7 +755,7 @@ public class Verify2IndexActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
         int i = getFingerPrintQualityScore + 39;
-        getScore = i % Uuid.SIZE_BITS;
+        getScore = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 != 0) {
@@ -767,7 +766,7 @@ public class Verify2IndexActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
         int i = getScore + 113;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onStart();
         if (i2 == 0) {
@@ -781,7 +780,7 @@ public class Verify2IndexActivity extends FingerActivity {
         try {
             try {
                 this.onErrorResponse = new setFingers(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
-                getFingerPrintQualityScore = (getScore + 75) % Uuid.SIZE_BITS;
+                getFingerPrintQualityScore = (getScore + 75) % 128;
             } catch (Exception unused) {
             }
         } catch (Exception unused2) {

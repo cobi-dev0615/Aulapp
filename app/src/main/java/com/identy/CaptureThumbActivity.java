@@ -32,7 +32,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import kotlin.UInt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class CaptureThumbActivity extends FingerActivity {
@@ -209,7 +208,7 @@ public class CaptureThumbActivity extends FingerActivity {
         int i3 = 2;
         if (str != null) {
             int i4 = $11 + 13;
-            $10 = i4 % Uuid.SIZE_BITS;
+            $10 = i4 % 128;
             if (i4 % 2 != 0) {
                 str.toCharArray();
                 throw null;
@@ -230,7 +229,7 @@ public class CaptureThumbActivity extends FingerActivity {
                 return;
             }
             int i6 = $10 + 67;
-            $11 = i6 % Uuid.SIZE_BITS;
+            $11 = i6 % 128;
             int i7 = 58224;
             char c = 1;
             if (i6 % i3 == 0) {
@@ -325,7 +324,7 @@ public class CaptureThumbActivity extends FingerActivity {
         super.PngjException(hashMap, hashMap2, bitmap, z, z2);
         if (z) {
             if (!this.getAsHighestSecurityLevelReached) {
-                getProcessingTime = (getFingerPrintQualityScore + 85) % Uuid.SIZE_BITS;
+                getProcessingTime = (getFingerPrintQualityScore + 85) % 128;
                 return;
             }
             try {
@@ -352,7 +351,7 @@ public class CaptureThumbActivity extends FingerActivity {
                         return;
                     }
                     int i2 = getFingerPrintQualityScore + 113;
-                    getProcessingTime = i2 % Uuid.SIZE_BITS;
+                    getProcessingTime = i2 % 128;
                     if (i2 % 2 != 0) {
                         Attempt();
                         return;
@@ -361,7 +360,7 @@ public class CaptureThumbActivity extends FingerActivity {
                         throw null;
                     }
                 }
-                getProcessingTime = (getFingerPrintQualityScore + 33) % Uuid.SIZE_BITS;
+                getProcessingTime = (getFingerPrintQualityScore + 33) % 128;
                 if (FingerActivity.PngjPrematureEnding) {
                     com.identy.ui.c.PngjUnsupportedException pngjUnsupportedException = new com.identy.ui.c.PngjUnsupportedException(this, this.getQualityScore, this.PngjExceptionInternal, (FingerDetectionMode) FingerActivity.PngjException(com.identy.a.PngjException.values(), -388390624, new Object[]{this}, com.identy.a.PngjException.values(), 388390631, com.identy.a.PngjException.values(), com.identy.a.PngjException.values()));
                     this.getPadSub1 = pngjUnsupportedException;
@@ -418,7 +417,7 @@ public class CaptureThumbActivity extends FingerActivity {
         try {
             try {
                 if (j != -1) {
-                    getProcessingTime = (getFingerPrintQualityScore + 117) % Uuid.SIZE_BITS;
+                    getProcessingTime = (getFingerPrintQualityScore + 117) % 128;
                     long j2 = j + 4611686018427387833L;
                     i = 864471691;
                     Object[] objArr2 = new Object[1];
@@ -469,12 +468,12 @@ public class CaptureThumbActivity extends FingerActivity {
                         ArrayList arrayList = new ArrayList();
                         String[] strArr3 = (String[]) PngjBadSignature$1eba2e16[2];
                         if (strArr3 != null) {
-                            getFingerPrintQualityScore = (getProcessingTime + 59) % Uuid.SIZE_BITS;
+                            getFingerPrintQualityScore = (getProcessingTime + 59) % 128;
                             int i15 = 0;
                             while (i15 < strArr3.length) {
                                 arrayList.add(strArr3[i15]);
                                 i15++;
-                                getFingerPrintQualityScore = (getProcessingTime + 93) % Uuid.SIZE_BITS;
+                                getFingerPrintQualityScore = (getProcessingTime + 93) % 128;
                             }
                         }
                         int[] iArr = new int[i3];
@@ -702,14 +701,14 @@ public class CaptureThumbActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
         int i = getProcessingTime + 3;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onPause();
         if (i2 != 0) {
             throw null;
         }
         int i3 = getProcessingTime + 89;
-        getFingerPrintQualityScore = i3 % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i3 % 128;
         if (i3 % 2 != 0) {
             throw null;
         }
@@ -718,7 +717,7 @@ public class CaptureThumbActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
         int i = getProcessingTime + 113;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 != 0) {
@@ -729,13 +728,13 @@ public class CaptureThumbActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
         int i = getFingerPrintQualityScore + 97;
-        getProcessingTime = i % Uuid.SIZE_BITS;
+        getProcessingTime = i % 128;
         int i2 = i % 2;
         super.onStart();
         if (i2 == 0) {
             int i3 = 92 / 0;
         }
-        getFingerPrintQualityScore = (getProcessingTime + 59) % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = (getProcessingTime + 59) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:97:0x028b, code lost:

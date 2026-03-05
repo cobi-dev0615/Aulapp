@@ -28,7 +28,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class Capture2IndexActivity extends FingerActivity {
@@ -161,7 +160,7 @@ public class Capture2IndexActivity extends FingerActivity {
         int i2;
         int i3;
         if (str != null) {
-            $11 = ($10 + 63) % Uuid.SIZE_BITS;
+            $11 = ($10 + 63) % 128;
             cArr = str.toCharArray();
         } else {
             cArr = str;
@@ -177,7 +176,7 @@ public class Capture2IndexActivity extends FingerActivity {
             if (i4 >= cArr2.length) {
                 break;
             }
-            $11 = ($10 + 113) % Uuid.SIZE_BITS;
+            $11 = ($10 + 113) % 128;
             try {
                 Object[] objArr2 = {Integer.valueOf(cArr2[i4]), pngjUnsupportedException, pngjUnsupportedException};
                 Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-930920279);
@@ -204,7 +203,7 @@ public class Capture2IndexActivity extends FingerActivity {
                     PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (i2 - TextUtils.getTrimmedLength(BuildConfig.FLAVOR)), 42 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), 507 - Color.blue(0), 74289954, false, $$i(b3, b4, b4), new Class[]{Object.class, Object.class});
                 }
                 ((Method) PngjBadSignature2).invoke(null, objArr3);
-                $11 = ($10 + 19) % Uuid.SIZE_BITS;
+                $11 = ($10 + 19) % 128;
             } catch (Throwable th) {
                 cause = th.getCause();
                 if (cause != null) {
@@ -251,7 +250,7 @@ public class Capture2IndexActivity extends FingerActivity {
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:34:0x0105 -> B:13:0x0108). Please report as a decompilation issue!!! */
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
     public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
-        PngjBadCrcException = (getFingerPrintQualityScore + 99) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (getFingerPrintQualityScore + 99) % 128;
         super.PngjException(hashMap, hashMap2, bitmap, z, z2);
         if (z && this.getAsHighestSecurityLevelReached) {
             this.values.clear();
@@ -271,7 +270,7 @@ public class Capture2IndexActivity extends FingerActivity {
                 try {
                     if (LibSettings.isSaveCaptured()) {
                         e.getMessage();
-                        PngjBadCrcException = (getFingerPrintQualityScore + 57) % Uuid.SIZE_BITS;
+                        PngjBadCrcException = (getFingerPrintQualityScore + 57) % 128;
                     }
                 } catch (Exception e2) {
                     e2.printStackTrace();
@@ -287,7 +286,7 @@ public class Capture2IndexActivity extends FingerActivity {
                         pngjUnsupportedException.show();
                     }
                 } else if (IdentySdk.getInstance().isDisplayMoveNextDialog()) {
-                    getFingerPrintQualityScore = (PngjBadCrcException + 13) % Uuid.SIZE_BITS;
+                    getFingerPrintQualityScore = (PngjBadCrcException + 13) % 128;
                     Attempt();
                 } else {
                     Action();
@@ -295,7 +294,7 @@ public class Capture2IndexActivity extends FingerActivity {
             } catch (Exception e3) {
                 try {
                     if (LibSettings.isSaveCaptured()) {
-                        PngjBadCrcException = (getFingerPrintQualityScore + 39) % Uuid.SIZE_BITS;
+                        PngjBadCrcException = (getFingerPrintQualityScore + 39) % 128;
                         e3.getMessage();
                     }
                 } catch (Exception e4) {
@@ -369,11 +368,11 @@ public class Capture2IndexActivity extends FingerActivity {
                         int i11 = c2 ^ (c2 << 13);
                         int i12 = i11 ^ (i11 >>> 17);
                         ((int[]) PngjBadCrcException$52c725b[1])[0] = i12 ^ (i12 << 5);
-                        PngjBadCrcException = (getFingerPrintQualityScore + 47) % Uuid.SIZE_BITS;
+                        PngjBadCrcException = (getFingerPrintQualityScore + 47) % 128;
                         i3 = ((int[]) PngjBadCrcException$52c725b[0])[0];
                         i4 = ((int[]) PngjBadCrcException$52c725b[3])[0];
                         if (i4 != i3) {
-                            getFingerPrintQualityScore = (PngjBadCrcException + 65) % Uuid.SIZE_BITS;
+                            getFingerPrintQualityScore = (PngjBadCrcException + 65) % 128;
                             Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r7}};
                             int i13 = ((int[]) PngjBadCrcException$52c725b[1])[0];
                             int i14 = ((int[]) PngjBadCrcException$52c725b[3])[0];
@@ -390,9 +389,9 @@ public class Capture2IndexActivity extends FingerActivity {
                         ArrayList arrayList = new ArrayList();
                         String[] strArr3 = (String[]) PngjBadCrcException$52c725b[2];
                         if (strArr3 != null) {
-                            PngjBadCrcException = (getFingerPrintQualityScore + 113) % Uuid.SIZE_BITS;
+                            PngjBadCrcException = (getFingerPrintQualityScore + 113) % 128;
                             for (String str : strArr3) {
-                                PngjBadCrcException = (getFingerPrintQualityScore + 43) % Uuid.SIZE_BITS;
+                                PngjBadCrcException = (getFingerPrintQualityScore + 43) % 128;
                                 arrayList.add(str);
                             }
                         }
@@ -478,7 +477,7 @@ public class Capture2IndexActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         int i = PngjBadCrcException + 45;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onCreate(bundle);
         if (i2 == 0) {
@@ -489,7 +488,7 @@ public class Capture2IndexActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
         int i = PngjBadCrcException + 99;
-        getFingerPrintQualityScore = i % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
         super.onPause();
         if (i2 == 0) {
@@ -500,7 +499,7 @@ public class Capture2IndexActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
         int i = getFingerPrintQualityScore + 47;
-        PngjBadCrcException = i % Uuid.SIZE_BITS;
+        PngjBadCrcException = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 != 0) {
@@ -511,13 +510,13 @@ public class Capture2IndexActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
         int i = getFingerPrintQualityScore + 95;
-        PngjBadCrcException = i % Uuid.SIZE_BITS;
+        PngjBadCrcException = i % 128;
         int i2 = i % 2;
         super.onStart();
         if (i2 != 0) {
             int i3 = 42 / 0;
         }
-        getFingerPrintQualityScore = (PngjBadCrcException + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+        getFingerPrintQualityScore = (PngjBadCrcException + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
     }
 
     @Override // com.identy.FingerActivity
@@ -527,7 +526,7 @@ public class Capture2IndexActivity extends FingerActivity {
             try {
                 this.onErrorResponse = new setFingers(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
                 int i = getFingerPrintQualityScore + 63;
-                PngjBadCrcException = i % Uuid.SIZE_BITS;
+                PngjBadCrcException = i % 128;
                 if (i % 2 != 0) {
                     throw null;
                 }

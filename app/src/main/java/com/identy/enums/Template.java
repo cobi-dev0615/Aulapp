@@ -52,7 +52,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import kotlin.jvm.internal.ByteCompanionObject;
-import kotlin.uuid.Uuid;
 import org.identy.opencv.android.Utils;
 import org.identy.opencv.core.Mat;
 
@@ -1807,7 +1806,7 @@ public enum Template {
             char[] cArr2;
             char c2;
             int i3 = $11 + 51;
-            $10 = i3 % Uuid.SIZE_BITS;
+            $10 = i3 % 128;
             int i4 = 2;
             Object obj = null;
             if (i3 % 2 != 0) {
@@ -1815,7 +1814,7 @@ public enum Template {
             }
             char[] charArray = str3 != 0 ? str3.toCharArray() : str3;
             if (str2 != null) {
-                $10 = ($11 + 51) % Uuid.SIZE_BITS;
+                $10 = ($11 + 51) % 128;
                 cArr = str2.toCharArray();
             } else {
                 cArr = str2;
@@ -1893,7 +1892,7 @@ public enum Template {
                     int i9 = getpadsub2.PngjBadSignature;
                     cArr6[i9] = (char) ((((r0 ^ cArr2[i9]) ^ (PngjInputException ^ 698259225915410659L)) ^ ((int) (PngjUnsupportedException ^ 698259225915410659L))) ^ ((char) (PngjPrematureEnding ^ 698259225915410659L)));
                     getpadsub2.PngjBadSignature = i9 + 1;
-                    $11 = ($10 + 83) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 83) % 128;
                     charArray = cArr2;
                     i4 = i8;
                     obj = null;
@@ -1961,10 +1960,10 @@ public enum Template {
                 boolean z = intValue == -1;
                 if (z) {
                     int i14 = $10;
-                    $11 = (i14 + 77) % Uuid.SIZE_BITS;
+                    $11 = (i14 + 77) % 128;
                     byte[] bArr2 = valueOf;
                     if (bArr2 != null) {
-                        $11 = (i14 + 21) % Uuid.SIZE_BITS;
+                        $11 = (i14 + 21) % 128;
                         int length2 = bArr2.length;
                         j = 0;
                         byte[] bArr3 = new byte[length2];
@@ -2019,7 +2018,7 @@ public enum Template {
                 }
                 if (intValue > 0) {
                     int i17 = $11 + 83;
-                    $10 = i17 % Uuid.SIZE_BITS;
+                    $10 = i17 % 128;
                     if (i17 % 2 != 0) {
                         i6 = ((i2 * intValue) % 3) - ((int) (PngjException / j2));
                     } else {
@@ -2043,7 +2042,7 @@ public enum Template {
                     byte[] bArr5 = valueOf;
                     if (bArr5 != null) {
                         int i19 = $11 + 87;
-                        $10 = i19 % Uuid.SIZE_BITS;
+                        $10 = i19 % 128;
                         if (i19 % 2 != 0) {
                             length = bArr5.length;
                             bArr = new byte[length];
@@ -2064,10 +2063,10 @@ public enum Template {
                         i9 = 0;
                     }
                     pngjPrematureEnding.PngjException = i8;
-                    $11 = ($10 + 97) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 97) % 128;
                     while (pngjPrematureEnding.PngjException < intValue) {
                         if (i9 != 0) {
-                            $11 = ($10 + 59) % Uuid.SIZE_BITS;
+                            $11 = ($10 + 59) % 128;
                             byte[] bArr6 = valueOf;
                             pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
                             pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr6[r3] ^ j2)) + s)) ^ b2));
@@ -2151,7 +2150,7 @@ public enum Template {
             super.PngjBadCrcException(template, getpadsub3, activity, j, templateSize, wSQCompression);
             try {
                 byte[] generateT = Fpnative.generateT(e1.values, new Mat(Mat.n_clone(getpadsub3.values(templateSize).PngjException)).PngjException, Template.ANSI_378_2004.ordinal(), Position.getFromHandFinger(new Pair(getpadsub3.PngjException, getpadsub3.PngjBadCrcException)).ordinal(), (float) wSQCompression.getCompression());
-                PngjOutputException = (PngjExceptionInternal + 113) % Uuid.SIZE_BITS;
+                PngjOutputException = (PngjExceptionInternal + 113) % 128;
                 return generateT;
             } catch (Exception e) {
                 e.printStackTrace();

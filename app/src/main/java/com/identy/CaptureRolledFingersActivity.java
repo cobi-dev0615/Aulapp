@@ -29,7 +29,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import kotlin.KotlinVersion;
 import kotlin.io.encoding.Base64;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class CaptureRolledFingersActivity extends FingerActivity {
@@ -174,9 +173,9 @@ public class CaptureRolledFingersActivity extends FingerActivity {
         char c;
         int i4;
         int i5 = $10;
-        $11 = (i5 + 45) % Uuid.SIZE_BITS;
+        $11 = (i5 + 45) % 128;
         if (str != null) {
-            $11 = (i5 + 89) % Uuid.SIZE_BITS;
+            $11 = (i5 + 89) % 128;
             cArr = str.toCharArray();
         } else {
             cArr = str;
@@ -233,7 +232,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
             throw cause;
         }
         if (i2 > 0) {
-            $10 = ($11 + 13) % Uuid.SIZE_BITS;
+            $10 = ($11 + 13) % 128;
             action.PngjException = i2;
             char[] cArr4 = new char[i];
             System.arraycopy(cArr3, 0, cArr4, 0, i);
@@ -276,7 +275,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
     public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
         int i = PngjBadCrcException + 109;
-        valueOf = i % Uuid.SIZE_BITS;
+        valueOf = i % 128;
         if (i % 2 == 0) {
             super.PngjException(hashMap, hashMap2, bitmap, z, z2);
             int i2 = 48 / 0;
@@ -322,7 +321,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
                     this.getPadSub1 = pngjUnsupportedException;
                     pngjUnsupportedException.show();
                 } else if (IdentySdk.getInstance().isDisplayMoveNextDialog()) {
-                    valueOf = (PngjBadCrcException + 37) % Uuid.SIZE_BITS;
+                    valueOf = (PngjBadCrcException + 37) % 128;
                     Attempt();
                 } else {
                     Action();
@@ -331,7 +330,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
                 try {
                     if (LibSettings.isSaveCaptured()) {
                         int i4 = valueOf + 55;
-                        PngjBadCrcException = i4 % Uuid.SIZE_BITS;
+                        PngjBadCrcException = i4 % 128;
                         if (i4 % 2 != 0) {
                             e3.getMessage();
                             int i5 = 16 / 0;
@@ -359,7 +358,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
         Object[] PngjBadSignature$1eba2e16;
         int i2;
         int i3;
-        valueOf = (PngjBadCrcException + 37) % Uuid.SIZE_BITS;
+        valueOf = (PngjBadCrcException + 37) % 128;
         super.attachBaseContext(context);
         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature == null) {
@@ -420,7 +419,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
                             int i12 = c3 ^ (c3 << 13);
                             int i13 = i12 ^ (i12 >>> 17);
                             ((int[]) objArr6[1])[0] = i13 ^ (i13 << 5);
-                            PngjBadCrcException = (valueOf + 83) % Uuid.SIZE_BITS;
+                            PngjBadCrcException = (valueOf + 83) % 128;
                             return;
                         }
                         ArrayList arrayList = new ArrayList();
@@ -429,7 +428,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
                             int i14 = 0;
                             while (i14 < strArr3.length) {
                                 int i15 = PngjBadCrcException + 93;
-                                valueOf = i15 % Uuid.SIZE_BITS;
+                                valueOf = i15 % 128;
                                 if (i15 % 2 == 0) {
                                     arrayList.add(strArr3[i14]);
                                     i14 += com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
@@ -521,7 +520,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
         View findViewById;
         int i;
         int i2 = PngjBadCrcException + 37;
-        valueOf = i2 % Uuid.SIZE_BITS;
+        valueOf = i2 % 128;
         if (i2 % 2 == 0) {
             super.onCreate(bundle);
             findViewById = findViewById(R.id.middle_info_image);
@@ -533,7 +532,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
         }
         findViewById.setVisibility(i);
         int i3 = PngjBadCrcException + 121;
-        valueOf = i3 % Uuid.SIZE_BITS;
+        valueOf = i3 % 128;
         if (i3 % 2 == 0) {
             throw null;
         }
@@ -542,14 +541,14 @@ public class CaptureRolledFingersActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onPause() {
         int i = valueOf + 113;
-        PngjBadCrcException = i % Uuid.SIZE_BITS;
+        PngjBadCrcException = i % 128;
         int i2 = i % 2;
         super.onPause();
         if (i2 != 0) {
             throw null;
         }
         int i3 = valueOf + 59;
-        PngjBadCrcException = i3 % Uuid.SIZE_BITS;
+        PngjBadCrcException = i3 % 128;
         if (i3 % 2 != 0) {
             throw null;
         }
@@ -558,25 +557,25 @@ public class CaptureRolledFingersActivity extends FingerActivity {
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onResume() {
         int i = valueOf + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
-        PngjBadCrcException = i % Uuid.SIZE_BITS;
+        PngjBadCrcException = i % 128;
         int i2 = i % 2;
         super.onResume();
         if (i2 != 0) {
             throw null;
         }
-        valueOf = (PngjBadCrcException + 51) % Uuid.SIZE_BITS;
+        valueOf = (PngjBadCrcException + 51) % 128;
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onStart() {
         int i = PngjBadCrcException + 99;
-        valueOf = i % Uuid.SIZE_BITS;
+        valueOf = i % 128;
         int i2 = i % 2;
         super.onStart();
         if (i2 == 0) {
             int i3 = 27 / 0;
         }
-        PngjBadCrcException = (valueOf + 15) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (valueOf + 15) % 128;
     }
 
     @Override // com.identy.FingerActivity
@@ -596,13 +595,13 @@ public class CaptureRolledFingersActivity extends FingerActivity {
             try {
                 if (LibSettings.isSaveCaptured()) {
                     exc.getMessage();
-                    PngjBadCrcException = (valueOf + 85) % Uuid.SIZE_BITS;
+                    PngjBadCrcException = (valueOf + 85) % 128;
                     return;
                 }
             } catch (Exception e3) {
                 e3.printStackTrace();
             }
-            valueOf = (PngjBadCrcException + 33) % Uuid.SIZE_BITS;
+            valueOf = (PngjBadCrcException + 33) % 128;
         }
     }
 }

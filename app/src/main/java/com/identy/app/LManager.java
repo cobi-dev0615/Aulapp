@@ -56,7 +56,6 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import kotlin.UByte;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 import org.json.JSONObject;
 
 /* loaded from: classes2.dex */
@@ -1180,7 +1179,7 @@ public final class LManager {
                             Cipher cipher = Cipher.getInstance(str);
                             System.arraycopy(bArr, 0, bArr2, 0, 12);
                             System.arraycopy(bArr, 12, bArr3, 0, length);
-                            cipher.init(2, key, new GCMParameterSpec(Uuid.SIZE_BITS, bArr2));
+                            cipher.init(2, key, new GCMParameterSpec(128, bArr2));
                             byteArrayOutputStream.write(cipher.doFinal(bArr3));
                         } else {
                             byte[] bArr4 = new byte[16];
@@ -1890,7 +1889,7 @@ public final class LManager {
                             c((CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1)) + 26, true, "ￊ�\u0012�\u0006\t\u000b\u0000\n�￮\u0001\u000e\u0011\uffff\u0001\uffefￊ\u0015\u0010\u0005\u000e\u0011\uffff\u0001\u000f", (ViewConfiguration.getMaximumDrawingCacheSize() >> 24) + 5, 142 - View.MeasureSpec.getMode(0), objArr4);
                             byte[] bArr2 = new byte[12];
                             ((Random) Class.forName((String) objArr4[0]).getDeclaredConstructor(null).newInstance(null)).nextBytes(bArr2);
-                            GCMParameterSpec gCMParameterSpec = new GCMParameterSpec(Uuid.SIZE_BITS, bArr2);
+                            GCMParameterSpec gCMParameterSpec = new GCMParameterSpec(128, bArr2);
                             Cipher cipher2 = Cipher.getInstance("AES/GCM/NoPadding");
                             Key secureRandomKey = getSecureRandomKey();
                             cipher2.init(1, secureRandomKey, gCMParameterSpec);
@@ -2534,7 +2533,7 @@ public final class LManager {
                     int i12 = (i11 ^ 1) + ((i11 & 1) << 1);
                     int i13 = ((i9 | i12) << 1) - (i12 ^ i9);
                     int i14 = i9 >> 25;
-                    int i15 = -(b.a(i14 & (-255), i14 | (-255), Uuid.SIZE_BITS, -1) ^ i13);
+                    int i15 = -(b.a(i14 & (-255), i14 | (-255), 128, -1) ^ i13);
                     int i16 = (i15 ^ 4) + ((i15 & 4) << 1);
                     int i17 = ((i16 >> 26) - 127) / 64;
                     int i18 = ((i17 | 1) << 1) - (i17 ^ 1);
@@ -2564,7 +2563,7 @@ public final class LManager {
             int i122 = (i112 ^ 1) + ((i112 & 1) << 1);
             int i132 = ((i92 | i122) << 1) - (i122 ^ i92);
             int i142 = i92 >> 25;
-            int i152 = -(b.a(i142 & (-255), i142 | (-255), Uuid.SIZE_BITS, -1) ^ i132);
+            int i152 = -(b.a(i142 & (-255), i142 | (-255), 128, -1) ^ i132);
             int i162 = (i152 ^ 4) + ((i152 & 4) << 1);
             int i172 = ((i162 >> 26) - 127) / 64;
             int i182 = ((i172 | 1) << 1) - (i172 ^ 1);

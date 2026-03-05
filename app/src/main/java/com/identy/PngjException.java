@@ -26,7 +26,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.jvm.internal.ByteCompanionObject;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public final class PngjException implements SensorEventListener {
@@ -137,11 +136,11 @@ public final class PngjException implements SensorEventListener {
         int i5;
         char c;
         int i6;
-        int i7 = ($10 + 63) % Uuid.SIZE_BITS;
+        int i7 = ($10 + 63) % 128;
         $11 = i7;
         if (str != null) {
             int i8 = i7 + 123;
-            $10 = i8 % Uuid.SIZE_BITS;
+            $10 = i8 % 128;
             if (i8 % 2 != 0) {
                 str.toCharArray();
                 throw null;
@@ -160,7 +159,7 @@ public final class PngjException implements SensorEventListener {
             if (i10 >= i) {
                 break;
             }
-            $10 = ($11 + 59) % Uuid.SIZE_BITS;
+            $10 = ($11 + 59) % 128;
             char c2 = cArr2[i10];
             action.values = c2;
             char c3 = (char) (i3 + c2);
@@ -254,7 +253,7 @@ public final class PngjException implements SensorEventListener {
 
     @Override // android.hardware.SensorEventListener
     public final void onAccuracyChanged(Sensor sensor, int i) {
-        PngjInputException = (PngjUnsupportedException + 113) % Uuid.SIZE_BITS;
+        PngjInputException = (PngjUnsupportedException + 113) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:16:0x036b  */
@@ -273,7 +272,7 @@ public final class PngjException implements SensorEventListener {
         Object[] PngjBadCrcException$1eba2e16;
         int i3;
         int i4;
-        PngjUnsupportedException = (PngjInputException + 35) % Uuid.SIZE_BITS;
+        PngjUnsupportedException = (PngjInputException + 35) % 128;
         if (this.PngjException != 0) {
             float[] fArr = sensorEvent.values;
             double d = fArr[0];
@@ -310,7 +309,7 @@ public final class PngjException implements SensorEventListener {
                         Object[] objArr3 = new Object[1];
                         b(15 - (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), false, "\ufffa\u0005\r\u0002\u0006\ufffe\ufffe\u0005\ufffa\t\f\ufffe�￫\ufffe", 5 - ImageFormat.getBitsPerPixel(0), (ViewConfiguration.getKeyRepeatTimeout() >> 16) + 161, objArr3);
                         if (j3 >= ((Long) cls.getDeclaredMethod((String) objArr3[0], null).invoke(null, null)).longValue()) {
-                            PngjUnsupportedException = (PngjInputException + 95) % Uuid.SIZE_BITS;
+                            PngjUnsupportedException = (PngjInputException + 95) % 128;
                             Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                             if (PngjBadSignature2 == null) {
                                 char resolveSizeAndState = (char) (14830 - View.resolveSizeAndState(0, 0, 0));
@@ -338,7 +337,7 @@ public final class PngjException implements SensorEventListener {
                                 String[] strArr2 = (String[]) PngjBadCrcException$1eba2e16[2];
                                 if (strArr2 != null) {
                                     for (int i10 = i4; i10 < strArr2.length; i10++) {
-                                        PngjUnsupportedException = (PngjInputException + 63) % Uuid.SIZE_BITS;
+                                        PngjUnsupportedException = (PngjInputException + 63) % 128;
                                         arrayList.add(strArr2[i10]);
                                     }
                                 }
@@ -455,6 +454,6 @@ public final class PngjException implements SensorEventListener {
             intValue = ((Integer) cls3.getMethod((String) objArr14[0], Object.class).invoke(null, this)).intValue();
         }
         this.PngjException = sensorEvent.timestamp;
-        PngjInputException = (PngjUnsupportedException + 77) % Uuid.SIZE_BITS;
+        PngjInputException = (PngjUnsupportedException + 77) % 128;
     }
 }

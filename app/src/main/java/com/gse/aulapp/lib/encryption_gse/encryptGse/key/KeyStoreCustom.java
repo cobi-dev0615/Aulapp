@@ -15,7 +15,6 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
-import kotlin.uuid.Uuid;
 import org.bouncycastle.jce.interfaces.ECPublicKey;
 import org.bouncycastle.util.Arrays;
 
@@ -76,7 +75,7 @@ public class KeyStoreCustom {
         byte[] bArr4 = new byte[wrap.remaining()];
         wrap.get(bArr4);
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
-        cipher.init(2, new SecretKeySpec(bArr2, 0, bArr2.length, "AES"), new GCMParameterSpec(Uuid.SIZE_BITS, bArr3));
+        cipher.init(2, new SecretKeySpec(bArr2, 0, bArr2.length, "AES"), new GCMParameterSpec(128, bArr3));
         return cipher.doFinal(bArr4);
     }
 
@@ -87,14 +86,14 @@ public class KeyStoreCustom {
         byte[] bArr4 = new byte[wrap.remaining()];
         wrap.get(bArr4);
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
-        cipher.init(2, new SecretKeySpec(bArr2, 0, bArr2.length, "AES"), new GCMParameterSpec(Uuid.SIZE_BITS, bArr3));
+        cipher.init(2, new SecretKeySpec(bArr2, 0, bArr2.length, "AES"), new GCMParameterSpec(128, bArr3));
         return new String(cipher.doFinal(bArr4));
     }
 
     public byte[] encryptValue(String str, byte[] bArr, int i) {
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
         byte[] generateIVBytes = generateIVBytes(cipher, i);
-        cipher.init(1, new SecretKeySpec(bArr, 0, bArr.length, "AES"), new GCMParameterSpec(Uuid.SIZE_BITS, generateIVBytes));
+        cipher.init(1, new SecretKeySpec(bArr, 0, bArr.length, "AES"), new GCMParameterSpec(128, generateIVBytes));
         return Arrays.concatenate(generateIVBytes, cipher.doFinal(str.getBytes()));
     }
 

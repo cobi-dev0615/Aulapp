@@ -17,7 +17,6 @@ import com.google.android.gms.dynamite.descriptors.com.google.android.gms.measur
 import com.identy.InitializationListener;
 import com.karumi.dexter.BuildConfig;
 import java.lang.reflect.Method;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public abstract class TouchLessIDSDK$PngjBadCrcException implements InitializationListener {
@@ -196,7 +195,7 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
             int i8 = 0;
             while (i8 < length3) {
                 int i9 = $11 + 11;
-                $10 = i9 % Uuid.SIZE_BITS;
+                $10 = i9 % 128;
                 if (i9 % 2 != 0) {
                     Object[] objArr3 = {Integer.valueOf(iArr5[i8])};
                     Object PngjBadSignature3 = PngjBadCrcException.PngjBadSignature(i3);
@@ -232,7 +231,7 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
         char[] cArr4 = cArr2;
         System.arraycopy(iArr5, 0, iArr4, 0, length2);
         pngBadCharsetException.values = 0;
-        $10 = ($11 + 23) % Uuid.SIZE_BITS;
+        $10 = ($11 + 23) % 128;
         while (true) {
             int i10 = pngBadCharsetException.values;
             if (i10 >= iArr.length) {
@@ -317,7 +316,7 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
         byte[] bArr;
         String str2 = str;
         int i = $10 + 55;
-        $11 = i % Uuid.SIZE_BITS;
+        $11 = i % 128;
         int i2 = 2;
         byte[] bArr2 = str2;
         if (i % 2 == 0) {
@@ -338,7 +337,7 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
         Class cls = Integer.TYPE;
         if (cArr2 != null) {
             int i8 = $11 + 25;
-            $10 = i8 % Uuid.SIZE_BITS;
+            $10 = i8 % 128;
             if (i8 % 2 != 0) {
                 length = cArr2.length;
                 cArr = new char[length];
@@ -351,7 +350,7 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
                 int i10 = i2;
                 int i11 = $10 + 39;
                 byte b2 = b;
-                $11 = i11 % Uuid.SIZE_BITS;
+                $11 = i11 % 128;
                 if (i11 % 2 == 0) {
                     try {
                         Object[] objArr2 = {Integer.valueOf(cArr2[i9])};
@@ -444,7 +443,7 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
             System.arraycopy(cArr5, i7, cArr3, 0, i14);
         }
         if (z) {
-            $10 = ($11 + 71) % Uuid.SIZE_BITS;
+            $10 = ($11 + 71) % 128;
             char[] cArr6 = new char[i5];
             e1Var.PngjBadSignature = 0;
             while (true) {
@@ -464,13 +463,13 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
                 if (i16 >= i5) {
                     break;
                 }
-                $11 = ($10 + 67) % Uuid.SIZE_BITS;
+                $11 = ($10 + 67) % 128;
                 cArr3[i16] = (char) (cArr3[i16] - iArr[2]);
                 e1Var.PngjBadSignature = i16 + 1;
             }
         }
         String str3 = new String(cArr3);
-        $10 = ($11 + 79) % Uuid.SIZE_BITS;
+        $10 = ($11 + 79) % 128;
         objArr[0] = str3;
     }
 

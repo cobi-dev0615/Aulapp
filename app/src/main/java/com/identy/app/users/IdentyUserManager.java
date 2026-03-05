@@ -11,7 +11,6 @@ import defpackage.a;
 import java.lang.reflect.Method;
 import java.util.List;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class IdentyUserManager {
@@ -47,7 +46,7 @@ public class IdentyUserManager {
                     int i10 = (i9 ^ 1) + ((i9 & 1) << 1);
                     int i11 = (i7 & i10) + (i10 | i7);
                     int i12 = i7 >> 25;
-                    int i13 = -(b.a(i12 ^ (-255), (i12 & (-255)) << 1, Uuid.SIZE_BITS, -1) ^ i11);
+                    int i13 = -(b.a(i12 ^ (-255), (i12 & (-255)) << 1, 128, -1) ^ i11);
                     int i14 = (i13 ^ 8) + ((i13 & 8) << 1);
                     int i15 = i14 >> 24;
                     int a = b.a(i15 & (-511), i15 | (-511), 256, -1);
@@ -75,7 +74,7 @@ public class IdentyUserManager {
             int i102 = (i92 ^ 1) + ((i92 & 1) << 1);
             int i112 = (i72 & i102) + (i102 | i72);
             int i122 = i72 >> 25;
-            int i132 = -(b.a(i122 ^ (-255), (i122 & (-255)) << 1, Uuid.SIZE_BITS, -1) ^ i112);
+            int i132 = -(b.a(i122 ^ (-255), (i122 & (-255)) << 1, 128, -1) ^ i112);
             int i142 = (i132 ^ 8) + ((i132 & 8) << 1);
             int i152 = i142 >> 24;
             int a2 = b.a(i152 & (-511), i152 | (-511), 256, -1);
@@ -223,7 +222,7 @@ public class IdentyUserManager {
                     int i13 = -(i11 ^ ((i12 ^ 1) + ((i12 & 1) << 1)));
                     int i14 = (i13 & 7) + (i13 | 7);
                     int i15 = i14 >> 25;
-                    int i16 = ((i15 & (-255)) + (i15 | (-255))) / Uuid.SIZE_BITS;
+                    int i16 = ((i15 & (-255)) + (i15 | (-255))) / 128;
                     int i17 = (i16 & 1) + (i16 | 1);
                     IdentyUser[] identyUserArr = new IdentyUser[13426 / (((-((i17 & 1) + (i17 | 1))) & i14) * 1918)];
                     identyUserArr[0] = identyUser;

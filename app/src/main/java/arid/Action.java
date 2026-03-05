@@ -15,7 +15,6 @@ import android.widget.ExpandableListView;
 import com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor;
 import com.karumi.dexter.BuildConfig;
 import java.lang.reflect.Method;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public final class Action {
@@ -120,7 +119,7 @@ public final class Action {
             return;
         }
         Object[] objArr = new Object[1];
-        b(null, Process.getGidForName(BuildConfig.FLAVOR) + Uuid.SIZE_BITS, null, "\u008c\u008b\u008a\u0089\u0088\u0087\u0086\u0081\u0085\u0084\u0083\u0082\u0081", objArr);
+        b(null, Process.getGidForName(BuildConfig.FLAVOR) + 128, null, "\u008c\u008b\u008a\u0089\u0088\u0087\u0086\u0081\u0085\u0084\u0083\u0082\u0081", objArr);
         StringBuilder sb2 = new StringBuilder((String) objArr[0]);
         sb2.append(i2);
         sb2.append(" ???");
@@ -154,7 +153,7 @@ public final class Action {
         int i3;
         char c;
         String str3 = str2;
-        $11 = ($10 + 35) % Uuid.SIZE_BITS;
+        $11 = ($10 + 35) % 128;
         byte[] bArr = str3;
         if (str3 != null) {
             bArr = str3.getBytes("ISO-8859-1");
@@ -163,7 +162,7 @@ public final class Action {
         int i4 = 2;
         if (str != null) {
             int i5 = $11 + 11;
-            $10 = i5 % Uuid.SIZE_BITS;
+            $10 = i5 % 128;
             if (i5 % 2 != 0) {
                 str.toCharArray();
                 throw null;
@@ -213,7 +212,7 @@ public final class Action {
         int i7 = -528960794;
         char c2 = 1;
         if (getPadSub3) {
-            $11 = ($10 + 83) % Uuid.SIZE_BITS;
+            $11 = ($10 + 83) % 128;
             int length2 = bArr2.length;
             pngjExceptionInternal.PngjException = length2;
             char[] cArr5 = new char[length2];
@@ -258,7 +257,7 @@ public final class Action {
                     return;
                 }
                 int i12 = $11 + 121;
-                $10 = i12 % Uuid.SIZE_BITS;
+                $10 = i12 % 128;
                 if (i12 % i4 != 0) {
                     cArr6[i10] = (char) (cArr3[cArr2[(i11 % 0) + i10] % i] - intValue);
                     Object[] objArr5 = new Object[i4];
@@ -284,7 +283,7 @@ public final class Action {
                     }
                     ((Method) PngjBadSignature5).invoke(null, objArr6);
                 }
-                $11 = ($10 + 59) % Uuid.SIZE_BITS;
+                $11 = ($10 + 59) % 128;
                 i4 = 2;
             }
         } else {
@@ -369,7 +368,7 @@ public final class Action {
         byte[] bArr2 = str3;
         if (str3 != null) {
             int i3 = $10 + 13;
-            $11 = i3 % Uuid.SIZE_BITS;
+            $11 = i3 % 128;
             if (i3 % 2 == 0) {
                 int i4 = 2 / 0;
                 bArr2 = str3.getBytes("ISO-8859-1");
@@ -386,13 +385,13 @@ public final class Action {
         char[] cArr2 = Attempt;
         Class cls = Integer.TYPE;
         if (cArr2 != null) {
-            $10 = ($11 + 121) % Uuid.SIZE_BITS;
+            $10 = ($11 + 121) % 128;
             int length = cArr2.length;
             char[] cArr3 = new char[length];
             b = 1;
             int i9 = 0;
             while (i9 < length) {
-                $11 = ($10 + 75) % Uuid.SIZE_BITS;
+                $11 = ($10 + 75) % 128;
                 try {
                     Object[] objArr2 = {Integer.valueOf(cArr2[i9])};
                     Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
@@ -433,7 +432,7 @@ public final class Action {
         char[] cArr4 = new char[i6];
         System.arraycopy(cArr2, i5, cArr4, 0, i6);
         if (bArr4 != null) {
-            $10 = ($11 + 9) % Uuid.SIZE_BITS;
+            $10 = ($11 + 9) % 128;
             char[] cArr5 = new char[i6];
             e1Var.PngjBadSignature = 0;
             char c2 = 0;
@@ -487,7 +486,7 @@ public final class Action {
             i = 0;
         }
         if (z) {
-            $10 = ($11 + 19) % Uuid.SIZE_BITS;
+            $10 = ($11 + 19) % 128;
             char[] cArr7 = new char[i6];
             while (true) {
                 e1Var.PngjBadSignature = i;
@@ -496,7 +495,7 @@ public final class Action {
                     break;
                 }
                 int i13 = $10 + 103;
-                $11 = i13 % Uuid.SIZE_BITS;
+                $11 = i13 % 128;
                 if (i13 % 2 == 0) {
                     cArr7[i12] = cArr4[(i6 % i12) / 0];
                     i = i12 % 1;
@@ -505,7 +504,7 @@ public final class Action {
                     i = i12 + 1;
                 }
             }
-            $10 = ($11 + 67) % Uuid.SIZE_BITS;
+            $10 = ($11 + 67) % 128;
             cArr4 = cArr7;
         }
         if (i7 > 0) {
@@ -533,7 +532,7 @@ public final class Action {
     }
 
     public final boolean equals(Object obj) {
-        getData = (isQualityFailed + 33) % Uuid.SIZE_BITS;
+        getData = (isQualityFailed + 33) % 128;
         if (this == obj) {
             return true;
         }
@@ -542,7 +541,7 @@ public final class Action {
         }
         Action action = (Action) obj;
         if (this.PngjBadCrcException != action.PngjBadCrcException) {
-            isQualityFailed = (getData + 75) % Uuid.SIZE_BITS;
+            isQualityFailed = (getData + 75) % 128;
             return false;
         }
         if (this.values != action.values) {
@@ -552,7 +551,7 @@ public final class Action {
             return this.valueOf == action.valueOf;
         }
         int i = getData + 53;
-        isQualityFailed = i % Uuid.SIZE_BITS;
+        isQualityFailed = i % 128;
         return i % 2 == 0;
     }
 
@@ -566,7 +565,7 @@ public final class Action {
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0032, code lost:
     
-        arid.Action.getData = (r1 + 65) % kotlin.uuid.Uuid.SIZE_BITS;
+        arid.Action.getData = (r1 + 65) % 128;
         r3 = 1237;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x002f, code lost:
@@ -580,7 +579,7 @@ public final class Action {
         int i;
         int i2;
         int i3 = getData + 85;
-        int i4 = i3 % Uuid.SIZE_BITS;
+        int i4 = i3 % 128;
         isQualityFailed = i4;
         if (i3 % 2 == 0) {
             i = ((39432 - this.PngjBadCrcException) + this.values) >> 20;
@@ -588,7 +587,7 @@ public final class Action {
             i = (((this.PngjBadCrcException + 39308) * 31) + this.values) * 31;
         }
         int i5 = ((((i + i2) * 31) + 1237) * 31) + this.valueOf;
-        getData = (i4 + 21) % Uuid.SIZE_BITS;
+        getData = (i4 + 21) % 128;
         return i5;
     }
 
@@ -610,7 +609,7 @@ public final class Action {
         sb.append("]");
         String obj = sb.toString();
         int i = isQualityFailed + 119;
-        getData = i % Uuid.SIZE_BITS;
+        getData = i % 128;
         if (i % 2 != 0) {
             int i2 = 90 / 0;
         }

@@ -14,7 +14,6 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public abstract class AESCBC {
@@ -83,7 +82,7 @@ public abstract class AESCBC {
     }
 
     public static byte[] generateIV(SecureRandom secureRandom) {
-        byte[] bArr = new byte[ByteUtils.byteLength(Uuid.SIZE_BITS)];
+        byte[] bArr = new byte[ByteUtils.byteLength(128)];
         secureRandom.nextBytes(bArr);
         return bArr;
     }

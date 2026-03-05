@@ -17,7 +17,6 @@ import java.lang.reflect.Member;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class VerifyResult {
@@ -121,7 +120,7 @@ public class VerifyResult {
     }
 
     public static /* synthetic */ void PngjBadSignature() {
-        PngjBadCrcException = (PngjException + 93) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (PngjException + 93) % 128;
         Member[] memberArr = com.d.e.a.values.valueOf;
         Object[] objArr = new Object[1];
         b(new int[]{0, 22, 60, 0}, "\u0001\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0000\u0001", true, objArr);
@@ -129,7 +128,7 @@ public class VerifyResult {
         Object[] objArr2 = new Object[1];
         b(new int[]{22, 15, 88, 5}, "\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001", true, objArr2);
         memberArr[0] = cls.getDeclaredMethod((String) objArr2[0], null);
-        PngjBadCrcException = (PngjException + 83) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (PngjException + 83) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0022  */
@@ -225,7 +224,7 @@ public class VerifyResult {
             }
             bArr = bArr4;
             f = f3;
-            $10 = ($11 + 111) % Uuid.SIZE_BITS;
+            $10 = ($11 + 111) % 128;
             cArr = cArr2;
         } else {
             bArr = bArr4;
@@ -243,7 +242,7 @@ public class VerifyResult {
                     break;
                 }
                 if (bArr[i8] == 1) {
-                    $11 = ($10 + 33) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 33) % 128;
                     Object[] objArr3 = {Integer.valueOf(cArr3[i8]), Integer.valueOf(c)};
                     Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
                     if (PngjBadSignature2 == null) {
@@ -274,7 +273,7 @@ public class VerifyResult {
         }
         if (i6 > 0) {
             int i9 = $10 + 59;
-            $11 = i9 % Uuid.SIZE_BITS;
+            $11 = i9 % 128;
             if (i9 % 2 == 0) {
                 char[] cArr5 = new char[i4];
                 i = 0;
@@ -295,7 +294,7 @@ public class VerifyResult {
         if (!(!z)) {
             char[] cArr7 = new char[i4];
             e1Var.PngjBadSignature = i;
-            $11 = ($10 + 91) % Uuid.SIZE_BITS;
+            $11 = ($10 + 91) % 128;
             while (true) {
                 int i11 = e1Var.PngjBadSignature;
                 if (i11 >= i4) {
@@ -308,7 +307,7 @@ public class VerifyResult {
         }
         if (i5 > 0) {
             int i12 = $11 + 109;
-            $10 = i12 % Uuid.SIZE_BITS;
+            $10 = i12 % 128;
             int i13 = i12 % 2;
             e1Var.PngjBadSignature = 0;
             while (true) {
@@ -361,7 +360,7 @@ public class VerifyResult {
         try {
             if (objArr != null) {
                 int i = PngjException + 87;
-                PngjBadCrcException = i % Uuid.SIZE_BITS;
+                PngjBadCrcException = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr[0])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
@@ -372,7 +371,7 @@ public class VerifyResult {
                 ((long[]) r2[0])[0] = j + 4985;
                 Fpnative.valueOf = r2;
                 String str = this.enrollmentTs;
-                PngjException = (PngjBadCrcException + 23) % Uuid.SIZE_BITS;
+                PngjException = (PngjBadCrcException + 23) % 128;
                 return str;
             }
             byte[] bArr = $$a;
@@ -387,7 +386,7 @@ public class VerifyResult {
             ((long[]) objArr4[0])[0] = j + 4985;
             Fpnative.valueOf = objArr4;
             String str2 = this.enrollmentTs;
-            PngjException = (PngjBadCrcException + 23) % Uuid.SIZE_BITS;
+            PngjException = (PngjBadCrcException + 23) % 128;
             return str2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -406,7 +405,7 @@ public class VerifyResult {
     public float getFingerScore(Pair<Hand, Finger> pair) {
         Object[] objArr;
         long j;
-        PngjBadCrcException = (PngjException + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (PngjException + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -422,7 +421,7 @@ public class VerifyResult {
                     ((long[]) objArr[0])[0] = j + 4921;
                     Fpnative.valueOf = objArr;
                     if (!this.scores.containsKey(Integer.valueOf(Position.getFromHandFinger(pair).ordinal()))) {
-                        PngjBadCrcException = (PngjException + 103) % Uuid.SIZE_BITS;
+                        PngjBadCrcException = (PngjException + 103) % 128;
                         return this.scores.get(Integer.valueOf(Position.getFromHandFinger(pair).ordinal())).floatValue();
                     }
                     int i3 = ((int[]) objArr[1])[0];
@@ -451,7 +450,7 @@ public class VerifyResult {
             a(b, (byte) (b | 77), bArr[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2074016405);
             j = ((long[]) objArr[0])[0];
-            PngjBadCrcException = (PngjException + 31) % Uuid.SIZE_BITS;
+            PngjBadCrcException = (PngjException + 31) % 128;
             ((long[]) objArr[0])[0] = j + 4921;
             Fpnative.valueOf = objArr;
             if (!this.scores.containsKey(Integer.valueOf(Position.getFromHandFinger(pair).ordinal()))) {
@@ -463,7 +462,7 @@ public class VerifyResult {
             }
             throw th;
         }
-        PngjBadCrcException = (PngjException + 27) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (PngjException + 27) % 128;
     }
 
     public FingerMatchSecLevel getMatched_true_up_to_security_level() {
@@ -471,14 +470,14 @@ public class VerifyResult {
         long j;
         int i = PngjException;
         int i2 = i + 17;
-        PngjBadCrcException = i2 % Uuid.SIZE_BITS;
+        PngjBadCrcException = i2 % 128;
         if (i2 % 2 != 0) {
             throw null;
         }
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                PngjBadCrcException = (i + 103) % Uuid.SIZE_BITS;
+                PngjBadCrcException = (i + 103) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -518,7 +517,7 @@ public class VerifyResult {
         Object[] objArr;
         long j;
         int i = PngjException + 13;
-        int i2 = i % Uuid.SIZE_BITS;
+        int i2 = i % 128;
         PngjBadCrcException = i2;
         if (i % 2 != 0) {
             throw null;
@@ -526,7 +525,7 @@ public class VerifyResult {
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                PngjException = (i2 + 61) % Uuid.SIZE_BITS;
+                PngjException = (i2 + 61) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -564,7 +563,7 @@ public class VerifyResult {
             }
             throw th;
         }
-        PngjBadCrcException = (PngjException + 71) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (PngjException + 71) % 128;
     }
 
     public boolean isMatched() {
@@ -595,7 +594,7 @@ public class VerifyResult {
             a(b, (byte) (b | 77), bArr[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1335193006);
             j = ((long[]) objArr[0])[0];
-            PngjException = (PngjBadCrcException + 29) % Uuid.SIZE_BITS;
+            PngjException = (PngjBadCrcException + 29) % 128;
             ((long[]) objArr[0])[0] = j + 5016;
             Fpnative.valueOf = objArr;
             return this.matched;
@@ -606,18 +605,18 @@ public class VerifyResult {
             }
             throw th;
         }
-        PngjException = (PngjBadCrcException + 17) % Uuid.SIZE_BITS;
+        PngjException = (PngjBadCrcException + 17) % 128;
     }
 
     public boolean isPositionMismatched() {
         Object[] objArr;
         long j;
-        int i = (PngjException + 53) % Uuid.SIZE_BITS;
+        int i = (PngjException + 53) % 128;
         PngjBadCrcException = i;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
-                PngjException = (i + 21) % Uuid.SIZE_BITS;
+                PngjException = (i + 21) % 128;
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
@@ -654,13 +653,13 @@ public class VerifyResult {
             }
             throw th;
         }
-        PngjBadCrcException = (PngjException + 19) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (PngjException + 19) % 128;
     }
 
     public void setEnrollmentTs(String str) {
         Object[] objArr;
         long j;
-        PngjException = (PngjBadCrcException + 65) % Uuid.SIZE_BITS;
+        PngjException = (PngjBadCrcException + 65) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -674,7 +673,7 @@ public class VerifyResult {
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    PngjException = (PngjBadCrcException + 87) % Uuid.SIZE_BITS;
+                    PngjException = (PngjBadCrcException + 87) % 128;
                     ((long[]) objArr[0])[0] = j + 5010;
                     Fpnative.valueOf = objArr;
                     this.enrollmentTs = str;
@@ -701,7 +700,7 @@ public class VerifyResult {
             }
             throw cause;
         }
-        PngjException = (PngjBadCrcException + 117) % Uuid.SIZE_BITS;
+        PngjException = (PngjBadCrcException + 117) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004c, code lost:
@@ -732,7 +731,7 @@ public class VerifyResult {
         try {
             if (objArr != null) {
                 int i = PngjBadCrcException + 75;
-                PngjException = i % Uuid.SIZE_BITS;
+                PngjException = i % 128;
                 if (i % 2 == 0) {
                     long j2 = ((long[]) objArr[0])[1];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, new Object[1])).longValue();
@@ -765,13 +764,13 @@ public class VerifyResult {
             }
             throw cause;
         }
-        PngjException = (PngjBadCrcException + 45) % Uuid.SIZE_BITS;
+        PngjException = (PngjBadCrcException + 45) % 128;
     }
 
     public void setMatched_true_up_to_security_level(FingerMatchSecLevel fingerMatchSecLevel) {
         Object[] objArr;
         long j;
-        PngjBadCrcException = (PngjException + 83) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (PngjException + 83) % 128;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -801,7 +800,7 @@ public class VerifyResult {
             a(bArr[32], (byte) 125, bArr[53], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -323864012);
             j = ((long[]) objArr[0])[0];
-            PngjBadCrcException = (PngjException + 43) % Uuid.SIZE_BITS;
+            PngjBadCrcException = (PngjException + 43) % 128;
             ((long[]) objArr[0])[0] = j + 5047;
             Fpnative.valueOf = objArr;
             this.matched_true_up_to_security_level = fingerMatchSecLevel;
@@ -857,7 +856,7 @@ public class VerifyResult {
             }
             throw cause;
         }
-        PngjBadCrcException = (PngjException + 45) % Uuid.SIZE_BITS;
+        PngjBadCrcException = (PngjException + 45) % 128;
     }
 
     public VerifyResult(String str) {

@@ -1,7 +1,6 @@
 package com.nimbusds.jose;
 
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public final class EncryptionMethod extends Algorithm {
@@ -24,7 +23,7 @@ public final class EncryptionMethod extends Algorithm {
         A128CBC_HS256_DEPRECATED = new EncryptionMethod("A128CBC+HS256", requirement2, 256);
         A256CBC_HS512_DEPRECATED = new EncryptionMethod("A256CBC+HS512", requirement2, ConstantsKt.MINIMUM_BLOCK_SIZE);
         Requirement requirement3 = Requirement.RECOMMENDED;
-        A128GCM = new EncryptionMethod("A128GCM", requirement3, Uuid.SIZE_BITS);
+        A128GCM = new EncryptionMethod("A128GCM", requirement3, 128);
         A192GCM = new EncryptionMethod("A192GCM", requirement2, 192);
         A256GCM = new EncryptionMethod("A256GCM", requirement3, 256);
     }

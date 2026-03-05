@@ -21,7 +21,6 @@ import java.lang.reflect.Method;
 import kotlin.io.ConstantsKt;
 import kotlin.io.encoding.Base64;
 import kotlin.jvm.internal.LongCompanionObject;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public abstract class valueOf extends OutputStream implements AutoCloseable {
@@ -204,7 +203,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
         int i2;
         char c;
         String str3 = str2;
-        $10 = ($11 + 33) % Uuid.SIZE_BITS;
+        $10 = ($11 + 33) % 128;
         Object bArr = str3;
         if (str3 != null) {
             bArr = str3.getBytes("ISO-8859-1");
@@ -215,7 +214,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
         char[] cArr = PngjOutputException;
         Class cls = Integer.TYPE;
         if (cArr != null) {
-            $11 = ($10 + 79) % Uuid.SIZE_BITS;
+            $11 = ($10 + 79) % 128;
             int length = cArr.length;
             char[] cArr2 = new char[length];
             for (int i3 = 0; i3 < length; i3++) {
@@ -234,7 +233,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
                     throw cause;
                 }
             }
-            $11 = ($10 + 31) % Uuid.SIZE_BITS;
+            $11 = ($10 + 31) % 128;
             cArr = cArr2;
         }
         Object[] objArr3 = {Integer.valueOf(Action)};
@@ -321,7 +320,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
                     return;
                 }
                 int i13 = $11 + 107;
-                $10 = i13 % Uuid.SIZE_BITS;
+                $10 = i13 % 128;
                 if (i13 % 2 != 0) {
                     cArr5[i11] = (char) (cArr[iArr[i12 - i11] + i] / intValue);
                 } else {
@@ -372,7 +371,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
         int i3;
         if (str != null) {
             cArr = str.toCharArray();
-            $10 = ($11 + R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+            $10 = ($11 + R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
         } else {
             cArr = str;
         }
@@ -437,7 +436,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
                 return;
             }
             int i7 = $11 + 57;
-            $10 = i7 % Uuid.SIZE_BITS;
+            $10 = i7 % 128;
             if (i7 % 2 != 0) {
                 break;
             }
@@ -469,7 +468,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
     @Override // java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
         int i = e1 + 41;
-        getPadSub2 = i % Uuid.SIZE_BITS;
+        getPadSub2 = i % 128;
         if (i % 2 == 0) {
             PngjBadSignature();
             throw null;
@@ -480,7 +479,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
             e1Var.PngjException();
             e1Var.values = 0;
             e1Var.valueOf = null;
-            getPadSub2 = (e1 + R.styleable.AppCompatTheme_tooltipFrameBackground) % Uuid.SIZE_BITS;
+            getPadSub2 = (e1 + R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
         }
         this.PngjException = true;
     }
@@ -490,7 +489,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
         int length;
         int i;
         int i2 = getPadSub2 + 55;
-        e1 = i2 % Uuid.SIZE_BITS;
+        e1 = i2 % 128;
         if (i2 % 2 != 0) {
             length = bArr.length;
             i = 1;
@@ -500,7 +499,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
         }
         write(bArr, i, length);
         int i3 = e1 + 93;
-        getPadSub2 = i3 % Uuid.SIZE_BITS;
+        getPadSub2 = i3 % 128;
         if (i3 % 2 == 0) {
             throw null;
         }
@@ -536,7 +535,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0021, code lost:
     
         r0 = r0 + 7;
-        arid.a.valueOf.getPadSub2 = r0 % kotlin.uuid.Uuid.SIZE_BITS;
+        arid.a.valueOf.getPadSub2 = r0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0029, code lost:
     
@@ -553,24 +552,24 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
     public final void write(byte[] bArr, int i, int i2) {
         int i3 = e1;
         int i4 = i3 + 97;
-        getPadSub2 = i4 % Uuid.SIZE_BITS;
+        getPadSub2 = i4 % 128;
         if (i4 % 2 == 0) {
             this.PngjPrematureEnding >>>= 1;
         } else {
             this.PngjPrematureEnding++;
         }
         if (this.PngjBadCrcException >= this.PngjExceptionInternal) {
-            getPadSub2 = (e1 + 65) % Uuid.SIZE_BITS;
+            getPadSub2 = (e1 + 65) % 128;
             PngjBadSignature();
         }
     }
 
     @Override // java.io.OutputStream
     public void write(int i) {
-        getPadSub2 = (e1 + 55) % Uuid.SIZE_BITS;
+        getPadSub2 = (e1 + 55) % 128;
         write(new byte[]{(byte) i});
         int i2 = e1 + 49;
-        getPadSub2 = i2 % Uuid.SIZE_BITS;
+        getPadSub2 = i2 % 128;
         if (i2 % 2 == 0) {
             throw null;
         }

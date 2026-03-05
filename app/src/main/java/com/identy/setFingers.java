@@ -33,7 +33,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import kotlin.uuid.Uuid;
 import org.camera.preview.PngjBadCrcException;
 import org.identy.nativealgo.NativeAlgoUtils;
 import org.identy.opencv.core.Mat;
@@ -119,7 +118,7 @@ final class setFingers extends e1 {
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void Attempt() {
         int i = pfkrolChangeMinMaxWidth + 17;
-        generateNFIQ = i % Uuid.SIZE_BITS;
+        generateNFIQ = i % 128;
         try {
             if (i % 2 != 0) {
                 int valueOf = PngjBadCrcException.getPadSub3.valueOf();
@@ -162,14 +161,14 @@ final class setFingers extends e1 {
         RectF rectF = PngjException.get(0);
         RectF rectF2 = PngjException.get(1);
         RectF rectF3 = new RectF(rectF2.left, rectF2.top, rectF.right, rectF.bottom);
-        generateNFIQ = (pfkrolChangeMinMaxWidth + 37) % Uuid.SIZE_BITS;
+        generateNFIQ = (pfkrolChangeMinMaxWidth + 37) % 128;
         return rectF3;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void getData() {
         int i = generateNFIQ + 63;
-        pfkrolChangeMinMaxWidth = i % Uuid.SIZE_BITS;
+        pfkrolChangeMinMaxWidth = i % 128;
         if (i % 2 != 0) {
             PngjOutputException();
             throw null;
@@ -179,7 +178,7 @@ final class setFingers extends e1 {
         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
         if (pngjBadSignature != null) {
             int i3 = generateNFIQ + 43;
-            pfkrolChangeMinMaxWidth = i3 % Uuid.SIZE_BITS;
+            pfkrolChangeMinMaxWidth = i3 % 128;
             if (i3 % 2 != 0) {
                 pngjBadSignature.PngjBadSignature(i2, true);
             } else {
@@ -228,7 +227,7 @@ final class setFingers extends e1 {
         ViewGroup.LayoutParams layoutParams4;
         if (this.Capture2TActivity != null) {
             if (this.pfk == null) {
-                generateNFIQ = (pfkrolChangeMinMaxWidth + 83) % Uuid.SIZE_BITS;
+                generateNFIQ = (pfkrolChangeMinMaxWidth + 83) % 128;
                 this.pfk = this.Action.findViewById(R.id.preview);
                 this.pfkrolfinalizeF = this.Action.findViewById(R.id.info_layout);
                 this.getServerRequest = this.Action.findViewById(R.id.location_error_layout);
@@ -238,20 +237,20 @@ final class setFingers extends e1 {
             int height = this.pfk.getHeight();
             org.c.a.PngjBadCrcException pngjBadCrcException = this.Capture2TActivity;
             if (pngjBadCrcException != null && (layoutParams4 = pngjBadCrcException.getLayoutParams()) != null) {
-                generateNFIQ = (pfkrolChangeMinMaxWidth + 55) % Uuid.SIZE_BITS;
+                generateNFIQ = (pfkrolChangeMinMaxWidth + 55) % 128;
                 layoutParams4.height = height;
                 pngjBadCrcException.setLayoutParams(layoutParams4);
             }
             View view = this.pfkrolfinalizeF;
             if (view != null && (layoutParams3 = view.getLayoutParams()) != null) {
-                pfkrolChangeMinMaxWidth = (generateNFIQ + 55) % Uuid.SIZE_BITS;
+                pfkrolChangeMinMaxWidth = (generateNFIQ + 55) % 128;
                 layoutParams3.height = height;
                 view.setLayoutParams(layoutParams3);
             }
             View view2 = this.getServerRequest;
             if (view2 != null) {
                 int i = pfkrolChangeMinMaxWidth + 101;
-                generateNFIQ = i % Uuid.SIZE_BITS;
+                generateNFIQ = i % 128;
                 if (i % 2 == 0) {
                     layoutParams2 = view2.getLayoutParams();
                     int i2 = 8 / 0;
@@ -274,7 +273,7 @@ final class setFingers extends e1 {
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void getScore() {
         int i = pfkrolChangeMinMaxWidth + 41;
-        generateNFIQ = i % Uuid.SIZE_BITS;
+        generateNFIQ = i % 128;
         if (i % 2 != 0) {
             this.getL1Score = (com.identy.ui.PngjBadCrcException) this.Action.findViewById(R.id.scanner_overlay);
             int valueOf = PngjBadCrcException.getPadSub3.valueOf();
@@ -309,7 +308,7 @@ final class setFingers extends e1 {
     private static /* synthetic */ Object valueOf(Object[] objArr) {
         setFingers setfingers = (setFingers) objArr[0];
         int i = generateNFIQ + 45;
-        pfkrolChangeMinMaxWidth = i % Uuid.SIZE_BITS;
+        pfkrolChangeMinMaxWidth = i % 128;
         if (i % 2 != 0) {
             boolean z = setfingers.getL3Score;
             throw null;
@@ -318,7 +317,7 @@ final class setFingers extends e1 {
             setfingers.getL1Score.PngjBadSignature(setfingers.a, 8.0d, 6.0d, 3.0d);
             return null;
         }
-        pfkrolChangeMinMaxWidth = (generateNFIQ + 65) % Uuid.SIZE_BITS;
+        pfkrolChangeMinMaxWidth = (generateNFIQ + 65) % 128;
         return null;
     }
 
@@ -334,7 +333,7 @@ final class setFingers extends e1 {
     public final void PngjBadCrcException() {
         int i = pfkrolChangeMinMaxWidth;
         this.getMatchingTime = false;
-        generateNFIQ = (i + 29) % Uuid.SIZE_BITS;
+        generateNFIQ = (i + 29) % 128;
     }
 
     @Override // com.identy.e1
@@ -342,7 +341,7 @@ final class setFingers extends e1 {
         Hand hand = Hand.LEFT;
         Finger finger = Finger.INDEX;
         Pair[] pairArr = {new Pair(hand, finger), new Pair(Hand.RIGHT, finger)};
-        generateNFIQ = (pfkrolChangeMinMaxWidth + 105) % Uuid.SIZE_BITS;
+        generateNFIQ = (pfkrolChangeMinMaxWidth + 105) % 128;
         return pairArr;
     }
 
@@ -354,16 +353,16 @@ final class setFingers extends e1 {
         } catch (Exception unused) {
         }
         if ((!this.PngBadCharsetException) && (!this.onErrorResponse)) {
-            int i = (pfkrolChangeMinMaxWidth + 103) % Uuid.SIZE_BITS;
+            int i = (pfkrolChangeMinMaxWidth + 103) % 128;
             generateNFIQ = i;
             if (PngjUnsupportedException) {
-                pfkrolChangeMinMaxWidth = (i + 101) % Uuid.SIZE_BITS;
+                pfkrolChangeMinMaxWidth = (i + 101) % 128;
                 this.getQualityScore++;
                 this.getL2Score.values(this.getPadSub3, this.getPadSub2, this.getData.intValue(), this.CaptureRolledFingersActivity);
                 if (this.getQualityScore < 1) {
                     com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
                     if (pngjBadSignature != null) {
-                        pfkrolChangeMinMaxWidth = (generateNFIQ + 23) % Uuid.SIZE_BITS;
+                        pfkrolChangeMinMaxWidth = (generateNFIQ + 23) % 128;
                         pngjBadSignature.getData();
                         return false;
                     }
@@ -374,7 +373,7 @@ final class setFingers extends e1 {
                         return true;
                     }
                     int i2 = generateNFIQ + 3;
-                    pfkrolChangeMinMaxWidth = i2 % Uuid.SIZE_BITS;
+                    pfkrolChangeMinMaxWidth = i2 % 128;
                     if (i2 % 2 != 0) {
                         int i3 = 95 / 0;
                     }
@@ -390,7 +389,7 @@ final class setFingers extends e1 {
         int i = R.string.id_searching_index;
         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
         if (pngjBadSignature != null) {
-            pfkrolChangeMinMaxWidth = (generateNFIQ + 73) % Uuid.SIZE_BITS;
+            pfkrolChangeMinMaxWidth = (generateNFIQ + 73) % 128;
             pngjBadSignature.PngjBadSignature(i, false);
         }
         new Message().what = 0;
@@ -402,7 +401,7 @@ final class setFingers extends e1 {
         com.identy.d.PngjBadSignature pngjBadSignature2 = this.Attempt;
         if (pngjBadSignature2 != null) {
             int i2 = pfkrolChangeMinMaxWidth + 3;
-            generateNFIQ = i2 % Uuid.SIZE_BITS;
+            generateNFIQ = i2 % 128;
             if (i2 % 2 != 0) {
                 pngjBadSignature2.getData();
             } else {
@@ -424,17 +423,17 @@ final class setFingers extends e1 {
         this.Capture2TActivity = null;
         List list = this.configure;
         if (list != null) {
-            pfkrolChangeMinMaxWidth = (generateNFIQ + 79) % Uuid.SIZE_BITS;
+            pfkrolChangeMinMaxWidth = (generateNFIQ + 79) % 128;
             list.clear();
-            generateNFIQ = (pfkrolChangeMinMaxWidth + 117) % Uuid.SIZE_BITS;
+            generateNFIQ = (pfkrolChangeMinMaxWidth + 117) % 128;
         }
     }
 
     @Override // com.identy.e1
     public final RectF onErrorResponse() {
-        pfkrolChangeMinMaxWidth = (generateNFIQ + 29) % Uuid.SIZE_BITS;
+        pfkrolChangeMinMaxWidth = (generateNFIQ + 29) % 128;
         RectF Action = Action();
-        pfkrolChangeMinMaxWidth = (generateNFIQ + 9) % Uuid.SIZE_BITS;
+        pfkrolChangeMinMaxWidth = (generateNFIQ + 9) % 128;
         return Action;
     }
 
@@ -702,7 +701,7 @@ final class setFingers extends e1 {
     /* JADX WARN: Code restructure failed: missing block: B:23:0x033f, code lost:
     
         ((java.lang.reflect.Field) r3).set(null, r1);
-        com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 121) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 121) % 128;
         r34 = 2;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x034e, code lost:
@@ -762,7 +761,7 @@ final class setFingers extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x041b, code lost:
     
-        com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 87) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 87) % 128;
         r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x042a, code lost:
@@ -867,7 +866,7 @@ final class setFingers extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x07eb, code lost:
     
-        com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 89) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 89) % 128;
         r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x07fa, code lost:
@@ -917,7 +916,7 @@ final class setFingers extends e1 {
         r3 = r3 ^ (r3 >>> 17);
         ((int[]) r1[1])[0] = r3 ^ (r3 << 5);
         r1 = com.identy.setFingers.generateNFIQ + 43;
-        com.identy.setFingers.pfkrolChangeMinMaxWidth = r1 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.setFingers.pfkrolChangeMinMaxWidth = r1 % 128;
         r1 = r1 % 2;
         super.onReceive(r37, r38);
      */
@@ -944,7 +943,7 @@ final class setFingers extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:62:0x0a96, code lost:
     
-        com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 23) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 23) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:64:0x0a9f, code lost:
     
@@ -1034,7 +1033,7 @@ final class setFingers extends e1 {
     /* JADX WARN: Code restructure failed: missing block: B:83:0x09ea, code lost:
     
         ((java.lang.reflect.Field) r3).set(null, r1);
-        com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 125) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 125) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:86:0x0aae, code lost:
     
@@ -1082,7 +1081,7 @@ final class setFingers extends e1 {
     /* JADX WARN: Code restructure failed: missing block: B:90:0x04dc, code lost:
     
         r1 = com.identy.setFingers.pfkrolChangeMinMaxWidth;
-        com.identy.setFingers.generateNFIQ = (r1 + 63) % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.setFingers.generateNFIQ = (r1 + 63) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:91:0x04e6, code lost:
     
@@ -1091,7 +1090,7 @@ final class setFingers extends e1 {
     /* JADX WARN: Code restructure failed: missing block: B:92:0x04e8, code lost:
     
         r1 = r1 + 65;
-        com.identy.setFingers.generateNFIQ = r1 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.setFingers.generateNFIQ = r1 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:93:0x04f2, code lost:
     
@@ -1127,7 +1126,7 @@ final class setFingers extends e1 {
         String str2;
         long j3;
         int i4 = generateNFIQ + 27;
-        pfkrolChangeMinMaxWidth = i4 % Uuid.SIZE_BITS;
+        pfkrolChangeMinMaxWidth = i4 % 128;
         int i5 = 0;
         if (i4 % 2 != 0) {
             j = -1;
@@ -1247,7 +1246,7 @@ final class setFingers extends e1 {
             int i10 = 0;
             while (i10 < length3) {
                 int i11 = $11 + 123;
-                $10 = i11 % Uuid.SIZE_BITS;
+                $10 = i11 % 128;
                 if (i11 % 2 != 0) {
                     Object[] objArr3 = {Integer.valueOf(iArr5[i10])};
                     Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1618428774);
@@ -1272,11 +1271,11 @@ final class setFingers extends e1 {
                     iArr6[i10] = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr4)).intValue();
                 }
                 i10++;
-                $10 = ($11 + 11) % Uuid.SIZE_BITS;
+                $10 = ($11 + 11) % 128;
                 cArr3 = cArr2;
             }
             cArr = cArr3;
-            $11 = ($10 + 77) % Uuid.SIZE_BITS;
+            $11 = ($10 + 77) % 128;
             iArr5 = iArr6;
         } else {
             cArr = cArr3;
@@ -1289,7 +1288,7 @@ final class setFingers extends e1 {
                 objArr[0] = new String(cArr4, 0, i);
                 return;
             }
-            $10 = ($11 + 81) % Uuid.SIZE_BITS;
+            $10 = ($11 + 81) % 128;
             int i13 = iArr[i12];
             char c = (char) (i13 >> 16);
             cArr[0] = c;
@@ -1462,14 +1461,14 @@ final class setFingers extends e1 {
     @Override // com.identy.e1
     public final void PngjBadCrcException(byte[] bArr, boolean z, List list, List list2, float f, Long l) {
         int i = generateNFIQ + 111;
-        pfkrolChangeMinMaxWidth = i % Uuid.SIZE_BITS;
+        pfkrolChangeMinMaxWidth = i % 128;
         int i2 = i % 2;
         super.PngjBadCrcException(bArr, z, list, list2, f, l);
         if (i2 != 0) {
             int i3 = 26 / 0;
         }
         int i4 = pfkrolChangeMinMaxWidth + 99;
-        generateNFIQ = i4 % Uuid.SIZE_BITS;
+        generateNFIQ = i4 % 128;
         if (i4 % 2 == 0) {
             throw null;
         }
@@ -1488,11 +1487,11 @@ final class setFingers extends e1 {
                 if (mat != null && !Mat.n_empty(mat.PngjException)) {
                     int i = generateNFIQ;
                     int i2 = i + 43;
-                    pfkrolChangeMinMaxWidth = i2 % Uuid.SIZE_BITS;
+                    pfkrolChangeMinMaxWidth = i2 % 128;
                     if (i2 % 2 == 0) {
                         if (setfingers.onErrorResponse) {
                             if (setfingers.Capture2TActivity != null) {
-                                pfkrolChangeMinMaxWidth = (i + 9) % Uuid.SIZE_BITS;
+                                pfkrolChangeMinMaxWidth = (i + 9) % 128;
                                 com.identy.ui.d.values valuesVar4 = setfingers.getL2Score;
                                 if (valuesVar4 != null) {
                                     valuesVar4.values(setfingers.configure);
@@ -1506,7 +1505,7 @@ final class setFingers extends e1 {
                                 pngjBadSignature.getData();
                             }
                             int i3 = pfkrolChangeMinMaxWidth + 103;
-                            generateNFIQ = i3 % Uuid.SIZE_BITS;
+                            generateNFIQ = i3 % 128;
                             if (i3 % 2 == 0) {
                                 throw null;
                             }
@@ -1519,7 +1518,7 @@ final class setFingers extends e1 {
                                 setfingers.onErrorResponse = true;
                                 setfingers.configureroll.postDelayed(new f(setfingers, 0), 10L);
                             } else if (!valueOf.getError().equals(FingerError.NO_BOXES)) {
-                                generateNFIQ = (pfkrolChangeMinMaxWidth + 57) % Uuid.SIZE_BITS;
+                                generateNFIQ = (pfkrolChangeMinMaxWidth + 57) % 128;
                                 setfingers.configure = setfingers.getSpoofScore;
                                 if (valueOf.getError().equals(FingerError.CORRECT)) {
                                     setfingers.PngjBadCrcException(3 - valueOf.getStreakCount());
@@ -1536,7 +1535,7 @@ final class setFingers extends e1 {
                                 com.identy.d.PngjBadSignature pngjBadSignature3 = setfingers.Attempt;
                                 if (pngjBadSignature3 != null) {
                                     int i4 = pfkrolChangeMinMaxWidth + 119;
-                                    generateNFIQ = i4 % Uuid.SIZE_BITS;
+                                    generateNFIQ = i4 % 128;
                                     int i5 = i4 % 2;
                                     pngjBadSignature3.PngjBadSignature(res2, true);
                                 }
@@ -1550,7 +1549,7 @@ final class setFingers extends e1 {
                             com.identy.d.PngjBadSignature pngjBadSignature4 = setfingers.Attempt;
                             if (pngjBadSignature4 != null) {
                                 int i6 = generateNFIQ + 17;
-                                pfkrolChangeMinMaxWidth = i6 % Uuid.SIZE_BITS;
+                                pfkrolChangeMinMaxWidth = i6 % 128;
                                 if (i6 % 2 == 0) {
                                     pngjBadSignature4.getData();
                                     return null;
@@ -1566,7 +1565,7 @@ final class setFingers extends e1 {
                     setfingers.getCaptureTime = false;
                     if (setfingers.Capture2TActivity != null) {
                         int i7 = pfkrolChangeMinMaxWidth + 109;
-                        generateNFIQ = i7 % Uuid.SIZE_BITS;
+                        generateNFIQ = i7 % 128;
                         if (i7 % 2 != 0) {
                             com.identy.ui.d.values valuesVar5 = setfingers.getL2Score;
                             if (valuesVar5 != null) {
@@ -1620,7 +1619,7 @@ final class setFingers extends e1 {
     @Override // com.identy.e1
     public final void valueOf(int i, int i2, int i3, boolean z) {
         int i4 = pfkrolChangeMinMaxWidth + 65;
-        generateNFIQ = i4 % Uuid.SIZE_BITS;
+        generateNFIQ = i4 % 128;
         if (i4 % 2 != 0) {
             super.valueOf(i, i2, i3, z);
             if (this.getMatchingTime) {
@@ -1642,7 +1641,7 @@ final class setFingers extends e1 {
             }
             try {
                 this.Action.runOnUiThread(new f(this, 1));
-                generateNFIQ = (pfkrolChangeMinMaxWidth + 11) % Uuid.SIZE_BITS;
+                generateNFIQ = (pfkrolChangeMinMaxWidth + 11) % 128;
             } catch (Exception unused2) {
             }
             this.Action.runOnUiThread(new f(this, 2));
@@ -1655,10 +1654,10 @@ final class setFingers extends e1 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void PngjBadSignature(Canvas canvas) {
-        generateNFIQ = (pfkrolChangeMinMaxWidth + 49) % Uuid.SIZE_BITS;
+        generateNFIQ = (pfkrolChangeMinMaxWidth + 49) % 128;
         this.getL2Score.values(canvas, this.getL3Score);
         int i = pfkrolChangeMinMaxWidth + 77;
-        generateNFIQ = i % Uuid.SIZE_BITS;
+        generateNFIQ = i % 128;
         if (i % 2 == 0) {
             int i2 = 95 / 0;
         }

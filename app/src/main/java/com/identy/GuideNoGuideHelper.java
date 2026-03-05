@@ -21,7 +21,6 @@ import com.identy.exceptions.NoDetectionModeException;
 import com.karumi.dexter.BuildConfig;
 import java.lang.reflect.Method;
 import kotlin.io.ConstantsKt;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class GuideNoGuideHelper {
@@ -209,7 +208,7 @@ public class GuideNoGuideHelper {
             int length = cArr.length;
             char[] cArr2 = new char[length];
             i = 2;
-            $11 = ($10 + 13) % Uuid.SIZE_BITS;
+            $11 = ($10 + 13) % 128;
             int i9 = 0;
             while (i9 < length) {
                 try {
@@ -252,7 +251,7 @@ public class GuideNoGuideHelper {
         char[] cArr3 = new char[i6];
         System.arraycopy(cArr, i5, cArr3, 0, i6);
         if (bArr4 != null) {
-            $11 = ($10 + 63) % Uuid.SIZE_BITS;
+            $11 = ($10 + 63) % 128;
             char[] cArr4 = new char[i6];
             e1Var.PngjBadSignature = 0;
             char c = 0;
@@ -263,7 +262,7 @@ public class GuideNoGuideHelper {
                 }
                 if (bArr4[i11] == 1) {
                     int i12 = $11 + 109;
-                    $10 = i12 % Uuid.SIZE_BITS;
+                    $10 = i12 % 128;
                     if (i12 % 2 != 0) {
                         char c2 = cArr3[i11];
                         Object[] objArr3 = new Object[i];
@@ -321,7 +320,7 @@ public class GuideNoGuideHelper {
             System.arraycopy(cArr5, i8, cArr3, 0, i14);
         }
         if (z) {
-            $10 = ($11 + 119) % Uuid.SIZE_BITS;
+            $10 = ($11 + 119) % 128;
             char[] cArr6 = new char[i6];
             e1Var.PngjBadSignature = 0;
             while (true) {
@@ -342,7 +341,7 @@ public class GuideNoGuideHelper {
                     break;
                 }
                 int i17 = $11 + 51;
-                int i18 = i17 % Uuid.SIZE_BITS;
+                int i18 = i17 % 128;
                 $10 = i18;
                 if (i17 % 2 != 0) {
                     cArr3[i16] = (char) (cArr3[i16] / iArr[2]);
@@ -352,7 +351,7 @@ public class GuideNoGuideHelper {
                     i2 = i16 + 1;
                 }
                 e1Var.PngjBadSignature = i2;
-                $11 = (i18 + 107) % Uuid.SIZE_BITS;
+                $11 = (i18 + 107) % 128;
             }
         }
         objArr[0] = new String(cArr3);
@@ -418,7 +417,7 @@ public class GuideNoGuideHelper {
         long j;
         String key;
         int i = PngjBadSignature + 91;
-        valueOf = i % Uuid.SIZE_BITS;
+        valueOf = i % 128;
         if (i % 2 == 0) {
             throw null;
         }
@@ -458,7 +457,7 @@ public class GuideNoGuideHelper {
                     getPadSub2.PngjException("TAG", sb.toString());
                     if (!isIntroShown(activity, key)) {
                         int i20 = valueOf + 73;
-                        PngjBadSignature = i20 % Uuid.SIZE_BITS;
+                        PngjBadSignature = i20 % 128;
                         if (i20 % 2 != 0) {
                             int i21 = 19 / 0;
                             if (!z) {
@@ -478,7 +477,7 @@ public class GuideNoGuideHelper {
                         return Capture2IndexActivity.class;
                     }
                     if (fingerDetectionModeArr[0].equals(FingerDetectionMode.TWO_THUMB)) {
-                        valueOf = (PngjBadSignature + 113) % Uuid.SIZE_BITS;
+                        valueOf = (PngjBadSignature + 113) % 128;
                         return Capture2TActivity.class;
                     }
                     if (fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_THUMB) || fingerDetectionModeArr[0].equals(FingerDetectionMode.RIGHT_THUMB)) {
@@ -487,12 +486,12 @@ public class GuideNoGuideHelper {
                     if (fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_INDEX)) {
                         return CaptureFingersActivity.class;
                     }
-                    valueOf = (PngjBadSignature + 47) % Uuid.SIZE_BITS;
+                    valueOf = (PngjBadSignature + 47) % 128;
                     if (fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_MIDDLE) || fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_RING) || fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_LITTLE)) {
                         return CaptureFingersActivity.class;
                     }
                     int i22 = valueOf + 73;
-                    PngjBadSignature = i22 % Uuid.SIZE_BITS;
+                    PngjBadSignature = i22 % 128;
                     if (i22 % 2 != 0) {
                         if (fingerDetectionModeArr[1].equals(FingerDetectionMode.RIGHT_INDEX)) {
                             return CaptureFingersActivity.class;
@@ -569,7 +568,7 @@ public class GuideNoGuideHelper {
                 int i3 = c ^ (c << 13);
                 int i4 = i3 ^ (i3 >>> 17);
                 ((int[]) PngjBadSignature2[1])[0] = i4 ^ (i4 << 5);
-                valueOf = (PngjBadSignature + 35) % Uuid.SIZE_BITS;
+                valueOf = (PngjBadSignature + 35) % 128;
                 ((long[]) PngjBadSignature2[0])[0] = j + 4979;
                 Fpnative.valueOf = PngjBadSignature2;
                 stringExtra = intent.getStringExtra("type");
@@ -591,13 +590,13 @@ public class GuideNoGuideHelper {
                     if (!stringExtra.equals("capture")) {
                         return getRegistrationClass(activity, z, fingerDetectionModeArr);
                     }
-                    valueOf = (PngjBadSignature + 49) % Uuid.SIZE_BITS;
+                    valueOf = (PngjBadSignature + 49) % 128;
                     return getCaptureClass(activity, z, fingerDetectionModeArr, z2);
                 }
-                PngjBadSignature = (valueOf + 107) % Uuid.SIZE_BITS;
+                PngjBadSignature = (valueOf + 107) % 128;
                 Class previewClass = getPreviewClass(activity, z, fingerDetectionModeArr);
                 int i10 = valueOf + 57;
-                PngjBadSignature = i10 % Uuid.SIZE_BITS;
+                PngjBadSignature = i10 % 128;
                 if (i10 % 2 != 0) {
                     int i11 = 10 / 0;
                 }
@@ -648,7 +647,7 @@ public class GuideNoGuideHelper {
         Object[] objArr = Fpnative.valueOf;
         if (objArr != null) {
             int i2 = valueOf + 7;
-            PngjBadSignature = i2 % Uuid.SIZE_BITS;
+            PngjBadSignature = i2 % 128;
             if (i2 % 2 != 0) {
                 long j2 = ((long[]) objArr[1])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, null)).longValue();
@@ -678,7 +677,7 @@ public class GuideNoGuideHelper {
             sb.append(z);
             String obj = sb.toString();
             i = PngjBadSignature + 97;
-            valueOf = i % Uuid.SIZE_BITS;
+            valueOf = i % 128;
             if (i % 2 == 0) {
                 return obj;
             }
@@ -708,7 +707,7 @@ public class GuideNoGuideHelper {
         sb2.append(z);
         String obj2 = sb2.toString();
         i = PngjBadSignature + 97;
-        valueOf = i % Uuid.SIZE_BITS;
+        valueOf = i % 128;
         if (i % 2 == 0) {
         }
     }
@@ -727,7 +726,7 @@ public class GuideNoGuideHelper {
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    valueOf = (PngjBadSignature + 97) % Uuid.SIZE_BITS;
+                    valueOf = (PngjBadSignature + 97) % 128;
                     ((long[]) objArr[0])[0] = j + 4851;
                     Fpnative.valueOf = objArr;
                     SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
@@ -744,7 +743,7 @@ public class GuideNoGuideHelper {
                     int i13 = i12 >> 19;
                     int i14 = ((i13 & (-16383)) + (i13 | (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE;
                     String string = defaultSharedPreferences.getString(b.c((-((i14 ^ 1) + ((i14 & 1) << 1) + 1)) & i12, 1284, 71904, "8;12;16;v1_person_selected"), BuildConfig.FLAVOR);
-                    valueOf = (PngjBadSignature + 79) % Uuid.SIZE_BITS;
+                    valueOf = (PngjBadSignature + 79) % 128;
                     return string;
                 }
             }
@@ -773,7 +772,7 @@ public class GuideNoGuideHelper {
             int i132 = i122 >> 19;
             int i142 = ((i132 & (-16383)) + (i132 | (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE;
             String string2 = defaultSharedPreferences2.getString(b.c((-((i142 ^ 1) + ((i142 & 1) << 1) + 1)) & i122, 1284, 71904, "8;12;16;v1_person_selected"), BuildConfig.FLAVOR);
-            valueOf = (PngjBadSignature + 79) % Uuid.SIZE_BITS;
+            valueOf = (PngjBadSignature + 79) % 128;
             return string2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -782,7 +781,7 @@ public class GuideNoGuideHelper {
             }
             throw th;
         }
-        valueOf = (PngjBadSignature + 79) % Uuid.SIZE_BITS;
+        valueOf = (PngjBadSignature + 79) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:26:0x0157  */
@@ -796,7 +795,7 @@ public class GuideNoGuideHelper {
         String str;
         Object[] objArr = Fpnative.valueOf;
         if (objArr != null) {
-            valueOf = (PngjBadSignature + 1) % Uuid.SIZE_BITS;
+            valueOf = (PngjBadSignature + 1) % 128;
             long j2 = ((long[]) objArr[0])[0];
             j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
             if (j2 > j) {
@@ -828,12 +827,12 @@ public class GuideNoGuideHelper {
                 int i16 = -((((i15 | 1) << 1) - (i15 ^ 1)) ^ i13);
                 int i17 = (i16 ^ 4) + ((i16 & 4) << 1);
                 int i18 = i17 >> 25;
-                int a = b.a(i18 ^ (-255), (i18 & (-255)) << 1, Uuid.SIZE_BITS, -1);
+                int a = b.a(i18 ^ (-255), (i18 & (-255)) << 1, 128, -1);
                 if (fingerDetectionModeArr[0 / (((-((a ^ 1) + ((a & 1) << 1))) & i17) * 491)].getFinger() != null) {
-                    valueOf = (PngjBadSignature + 5) % Uuid.SIZE_BITS;
+                    valueOf = (PngjBadSignature + 5) % 128;
                     if (fingerDetectionModeArr[0].getFinger().equals(Finger.THUMB)) {
                         int i19 = valueOf + 25;
-                        PngjBadSignature = i19 % Uuid.SIZE_BITS;
+                        PngjBadSignature = i19 % 128;
                         if (i19 % 2 != 0) {
                             int i20 = 57 / 0;
                         }
@@ -879,7 +878,7 @@ public class GuideNoGuideHelper {
                     int i6 = c ^ (c << 13);
                     int i7 = i6 ^ (i6 >>> 17);
                     ((int[]) objArr[1])[0] = i7 ^ (i7 << 5);
-                    PngjBadSignature = (valueOf + 91) % Uuid.SIZE_BITS;
+                    PngjBadSignature = (valueOf + 91) % 128;
                     ((long[]) objArr[0])[0] = j + 4931;
                     Fpnative.valueOf = objArr;
                     int i8 = ((int[]) objArr[1])[0];
@@ -911,19 +910,19 @@ public class GuideNoGuideHelper {
                         if (fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_THUMB)) {
                             return EnrollThumbActivity.class;
                         }
-                        valueOf = (PngjBadSignature + 77) % Uuid.SIZE_BITS;
+                        valueOf = (PngjBadSignature + 77) % 128;
                         if (fingerDetectionModeArr[0].equals(FingerDetectionMode.RIGHT_THUMB)) {
                             return EnrollThumbActivity.class;
                         }
                         if (fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_INDEX) || fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_MIDDLE) || fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_RING)) {
                             return EnrollFingersActivity.class;
                         }
-                        PngjBadSignature = (valueOf + 27) % Uuid.SIZE_BITS;
+                        PngjBadSignature = (valueOf + 27) % 128;
                         if (fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_LITTLE) || fingerDetectionModeArr[0].equals(FingerDetectionMode.RIGHT_INDEX)) {
                             return EnrollFingersActivity.class;
                         }
                         int i22 = valueOf + 91;
-                        PngjBadSignature = i22 % Uuid.SIZE_BITS;
+                        PngjBadSignature = i22 % 128;
                         if (i22 % 2 != 0) {
                             if (fingerDetectionModeArr[1].equals(FingerDetectionMode.RIGHT_MIDDLE)) {
                                 return EnrollFingersActivity.class;
@@ -935,7 +934,7 @@ public class GuideNoGuideHelper {
                             return EnrollFingersActivity.class;
                         }
                         int i23 = PngjBadSignature + 57;
-                        valueOf = i23 % Uuid.SIZE_BITS;
+                        valueOf = i23 % 128;
                         return i23 % 2 == 0 ? !fingerDetectionModeArr[1].equals(FingerDetectionMode.RIGHT_LITTLE) ? IntroActivity.class : EnrollFingersActivity.class : !fingerDetectionModeArr[0].equals(FingerDetectionMode.RIGHT_LITTLE) ? IntroActivity.class : EnrollFingersActivity.class;
                     }
                 }
@@ -977,7 +976,7 @@ public class GuideNoGuideHelper {
             }
             throw th;
         }
-        PngjBadSignature = (valueOf + 87) % Uuid.SIZE_BITS;
+        PngjBadSignature = (valueOf + 87) % 128;
     }
 
     /* JADX WARN: Type inference failed for: r2v39, types: [boolean, int] */
@@ -1035,12 +1034,12 @@ public class GuideNoGuideHelper {
                     if (fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_INDEX)) {
                         return VerifyFingersActivity.class;
                     }
-                    PngjBadSignature = (valueOf + 17) % Uuid.SIZE_BITS;
+                    PngjBadSignature = (valueOf + 17) % 128;
                     if (fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_MIDDLE) || fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_RING) || fingerDetectionModeArr[0].equals(FingerDetectionMode.LEFT_LITTLE) || fingerDetectionModeArr[0].equals(FingerDetectionMode.RIGHT_INDEX)) {
                         return VerifyFingersActivity.class;
                     }
                     int i19 = PngjBadSignature + 35;
-                    valueOf = i19 % Uuid.SIZE_BITS;
+                    valueOf = i19 % 128;
                     if (i19 % 2 == 0) {
                         if (fingerDetectionModeArr[0].equals(FingerDetectionMode.RIGHT_MIDDLE)) {
                             return VerifyFingersActivity.class;
@@ -1091,7 +1090,7 @@ public class GuideNoGuideHelper {
             }
             throw th;
         }
-        valueOf = (PngjBadSignature + 73) % Uuid.SIZE_BITS;
+        valueOf = (PngjBadSignature + 73) % 128;
     }
 
     public static void init$0() {
@@ -1163,7 +1162,7 @@ public class GuideNoGuideHelper {
     /* JADX WARN: Code restructure failed: missing block: B:5:0x001e, code lost:
     
         r0 = r0 + 59;
-        com.identy.GuideNoGuideHelper.PngjBadSignature = r0 % kotlin.uuid.Uuid.SIZE_BITS;
+        com.identy.GuideNoGuideHelper.PngjBadSignature = r0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0025, code lost:
     
@@ -1195,7 +1194,7 @@ public class GuideNoGuideHelper {
         long j;
         int i = valueOf;
         int i2 = i + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
-        PngjBadSignature = i2 % Uuid.SIZE_BITS;
+        PngjBadSignature = i2 % 128;
         if (i2 % 2 != 0) {
             objArr = Fpnative.valueOf;
             int i3 = 45 / 0;
@@ -1237,7 +1236,7 @@ public class GuideNoGuideHelper {
         String obj;
         int i;
         int i2;
-        valueOf = (PngjBadSignature + 67) % Uuid.SIZE_BITS;
+        valueOf = (PngjBadSignature + 67) % 128;
         Object[] objArr = Fpnative.valueOf;
         if (objArr != null) {
             long j2 = ((long[]) objArr[0])[0];
@@ -1283,7 +1282,7 @@ public class GuideNoGuideHelper {
                             StringBuilder sb4 = new StringBuilder("v1_intro_shown_");
                             sb4.append(getKey(FingerDetectionMode.RIGHT_THUMB, false));
                             if (!defaultSharedPreferences.getBoolean(sb4.toString(), false)) {
-                                PngjBadSignature = (valueOf + 65) % Uuid.SIZE_BITS;
+                                PngjBadSignature = (valueOf + 65) % 128;
                                 return false;
                             }
                         }
@@ -1348,7 +1347,7 @@ public class GuideNoGuideHelper {
         try {
             if (objArr != null) {
                 int i = valueOf + 5;
-                PngjBadSignature = i % Uuid.SIZE_BITS;
+                PngjBadSignature = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
@@ -1393,7 +1392,7 @@ public class GuideNoGuideHelper {
             a((short) (bArr[0] + 1), bArr[17], (byte) (bArr[107] - 1), objArr3);
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -972224104);
             j = ((long[]) objArr4[0])[0];
-            PngjBadSignature = (valueOf + 49) % Uuid.SIZE_BITS;
+            PngjBadSignature = (valueOf + 49) % 128;
             ((long[]) objArr4[0])[0] = j + 5008;
             Fpnative.valueOf = objArr4;
             SharedPreferences.Editor edit2 = PreferenceManager.getDefaultSharedPreferences(activity).edit();
@@ -1450,7 +1449,7 @@ public class GuideNoGuideHelper {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     i = valueOf + 5;
-                    PngjBadSignature = i % Uuid.SIZE_BITS;
+                    PngjBadSignature = i % 128;
                     ((long[]) objArr[0])[0] = j + 4927;
                     Fpnative.valueOf = objArr;
                     SharedPreferences.Editor edit = PreferenceManager.getDefaultSharedPreferences(activity).edit();
@@ -1484,7 +1483,7 @@ public class GuideNoGuideHelper {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -175119839);
             j = ((long[]) objArr[0])[0];
             i = valueOf + 27;
-            PngjBadSignature = i % Uuid.SIZE_BITS;
+            PngjBadSignature = i % 128;
             ((long[]) objArr[0])[0] = j + 4927;
             Fpnative.valueOf = objArr;
             SharedPreferences.Editor edit2 = PreferenceManager.getDefaultSharedPreferences(activity).edit();
@@ -1519,7 +1518,7 @@ public class GuideNoGuideHelper {
         Object[] objArr;
         long j;
         int i = valueOf + 65;
-        PngjBadSignature = i % Uuid.SIZE_BITS;
+        PngjBadSignature = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
@@ -1595,7 +1594,7 @@ public class GuideNoGuideHelper {
             }
             throw cause;
         }
-        valueOf = (PngjBadSignature + 93) % Uuid.SIZE_BITS;
+        valueOf = (PngjBadSignature + 93) % 128;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -1604,7 +1603,7 @@ public class GuideNoGuideHelper {
         Object[] objArr;
         long j;
         int i = valueOf + 125;
-        PngjBadSignature = i % Uuid.SIZE_BITS;
+        PngjBadSignature = i % 128;
         if (i % 2 == 0) {
             Object[] objArr2 = Fpnative.valueOf;
             try {
@@ -1679,7 +1678,7 @@ public class GuideNoGuideHelper {
                 }
                 throw cause;
             }
-            valueOf = (PngjBadSignature + 67) % Uuid.SIZE_BITS;
+            valueOf = (PngjBadSignature + 67) % 128;
         } else {
             throw null;
         }

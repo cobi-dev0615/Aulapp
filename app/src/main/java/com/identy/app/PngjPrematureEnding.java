@@ -37,7 +37,6 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
 import kotlin.jvm.internal.ByteCompanionObject;
-import kotlin.uuid.Uuid;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -268,7 +267,7 @@ public final class PngjPrematureEnding implements PngjUnsupportedException {
                     a("㝣್㈷\udecbᆘ컏逞缑땱滇뻖퐛溗뻁䧡쩺혡㧲땈⢵\ude28\uf52c鹅㿸䬙║", ExpandableListView.getPackedPositionType(0L) + 26, objArr2);
                     byte[] bArr2 = new byte[12];
                     ((Random) Class.forName((String) objArr2[0]).getDeclaredConstructor(null).newInstance(null)).nextBytes(bArr2);
-                    cipher.init(1, generateKey, new GCMParameterSpec(Uuid.SIZE_BITS, bArr2));
+                    cipher.init(1, generateKey, new GCMParameterSpec(128, bArr2));
                     byte[] doFinal = cipher.doFinal(bArr);
                     byte[] encoded = generateKey.getEncoded();
                     Cipher cipher2 = Cipher.getInstance("RSA/ECB/OAEPWithSHA1AndMGF1Padding");

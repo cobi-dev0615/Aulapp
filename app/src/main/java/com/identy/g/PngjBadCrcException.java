@@ -11,7 +11,6 @@ import com.karumi.dexter.BuildConfig;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public class PngjBadCrcException {
@@ -145,7 +144,7 @@ public class PngjBadCrcException {
         }
         byte[] bArr2 = bArr;
         if (str != null) {
-            $10 = ($11 + 27) % Uuid.SIZE_BITS;
+            $10 = ($11 + 27) % 128;
             cArr = str.toCharArray();
         } else {
             cArr = str;
@@ -156,7 +155,7 @@ public class PngjBadCrcException {
         Class cls = Integer.TYPE;
         if (cArr4 != null) {
             int i4 = $11 + 1;
-            $10 = i4 % Uuid.SIZE_BITS;
+            $10 = i4 % 128;
             if (i4 % 2 != 0) {
                 length = cArr4.length;
                 cArr2 = new char[length];
@@ -209,7 +208,7 @@ public class PngjBadCrcException {
                     objArr[0] = new String(cArr5);
                     return;
                 }
-                $10 = ($11 + 89) % Uuid.SIZE_BITS;
+                $10 = ($11 + 89) % 128;
                 cArr5[i6] = (char) (cArr4[bArr2[(i7 - 1) - i6] + i] - intValue);
                 Object[] objArr4 = new Object[2];
                 objArr4[c] = pngjExceptionInternal;
@@ -255,7 +254,7 @@ public class PngjBadCrcException {
             pngjExceptionInternal.PngjException = length4;
             char[] cArr7 = new char[length4];
             pngjExceptionInternal.values = 0;
-            $11 = ($10 + 11) % Uuid.SIZE_BITS;
+            $11 = ($10 + 11) % 128;
             while (true) {
                 int i10 = pngjExceptionInternal.values;
                 int i11 = pngjExceptionInternal.PngjException;

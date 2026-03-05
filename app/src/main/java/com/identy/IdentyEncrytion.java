@@ -29,7 +29,6 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes2.dex */
 public enum IdentyEncrytion {
@@ -284,7 +283,7 @@ public enum IdentyEncrytion {
                         a((short) (1 - (SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1))), TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR) - 1051389422, 47750523 - Drawable.resolveOpacity(0, 0), (byte) Color.red(0), (-39) - (SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1)), objArr2);
                         byte[] bArr2 = new byte[12];
                         ((Random) Class.forName((String) objArr2[0]).getDeclaredConstructor(null).newInstance(null)).nextBytes(bArr2);
-                        cipher.init(1, generateKey, new GCMParameterSpec(Uuid.SIZE_BITS, bArr2));
+                        cipher.init(1, generateKey, new GCMParameterSpec(128, bArr2));
                         byte[] doFinal = cipher.doFinal(bArr);
                         byte[] encoded = generateKey.getEncoded();
                         Cipher cipher2 = Cipher.getInstance("RSA/ECB/OAEPWithSHA1AndMGF1Padding");

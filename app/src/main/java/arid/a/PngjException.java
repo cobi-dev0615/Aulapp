@@ -19,7 +19,6 @@ import com.karumi.dexter.BuildConfig;
 import java.io.OutputStream;
 import java.lang.reflect.Method;
 import kotlin.UByte;
-import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
 public abstract class PngjException {
@@ -160,7 +159,7 @@ public abstract class PngjException {
         char[] cArr;
         if (str != null) {
             int i2 = $11 + 77;
-            $10 = i2 % Uuid.SIZE_BITS;
+            $10 = i2 % 128;
             if (i2 % 2 != 0) {
                 cArr = str.toCharArray();
                 int i3 = 87 / 0;
@@ -187,7 +186,7 @@ public abstract class PngjException {
             int i5 = 58224;
             int i6 = 0;
             while (i6 < 16) {
-                $11 = ($10 + 97) % Uuid.SIZE_BITS;
+                $11 = ($10 + 97) % 128;
                 char c2 = cArr4[c];
                 char c3 = cArr4[0];
                 char c4 = c;
@@ -350,7 +349,7 @@ public abstract class PngjException {
                     i4 = i12;
                     i8 = i13;
                     j2 = -6165791747575875761L;
-                    $11 = ($10 + 113) % Uuid.SIZE_BITS;
+                    $11 = ($10 + 113) % 128;
                     bArr = bArr2;
                 } else {
                     i4 = 1;
@@ -383,7 +382,7 @@ public abstract class PngjException {
             if (intValue > 0) {
                 int i16 = ((i3 + intValue) - 2) + ((int) (getPadSub1 ^ j2));
                 if (z) {
-                    $10 = ($11 + 75) % Uuid.SIZE_BITS;
+                    $10 = ($11 + 75) % 128;
                     i5 = i4;
                 } else {
                     i5 = 0;
@@ -428,10 +427,10 @@ public abstract class PngjException {
                         short[] sArr = getScore;
                         pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
                         pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[r4] ^ j2)) + s)) ^ b));
-                        $10 = ($11 + 103) % Uuid.SIZE_BITS;
+                        $10 = ($11 + 103) % 128;
                     } else {
                         int i19 = $11 + 61;
-                        $10 = i19 % Uuid.SIZE_BITS;
+                        $10 = i19 % 128;
                         if (i19 % 2 != 0) {
                             byte[] bArr6 = isQualityFailed;
                             pngjPrematureEnding.values = pngjPrematureEnding.values;
@@ -472,10 +471,10 @@ public abstract class PngjException {
         boolean z = this.PngjException;
         if (!z) {
             int i = getQualityScore;
-            getData = (i + 85) % Uuid.SIZE_BITS;
+            getData = (i + 85) % 128;
             if (!z) {
                 int i2 = i + 55;
-                getData = i2 % Uuid.SIZE_BITS;
+                getData = i2 % 128;
                 int i3 = i2 % 2;
                 PngjBadSignature();
                 this.PngjException = true;
@@ -500,22 +499,22 @@ public abstract class PngjException {
     public abstract void PngjBadSignature(byte[] bArr);
 
     public final void PngjException(byte[] bArr) {
-        getData = (getQualityScore + 59) % Uuid.SIZE_BITS;
+        getData = (getQualityScore + 59) % 128;
         this.onErrorResponse.write(bArr, 0, bArr.length);
         int[] iArr = this.e1;
         byte b = bArr[0];
         iArr[b] = iArr[b] + 1;
-        getQualityScore = (getData + 49) % Uuid.SIZE_BITS;
+        getQualityScore = (getData + 49) % 128;
     }
 
     public final boolean PngjExceptionInternal() {
         int i = getData;
-        getQualityScore = (i + 75) % Uuid.SIZE_BITS;
+        getQualityScore = (i + 75) % 128;
         if (this.PngjPrematureEnding != this.valueOf.valueOf - 1) {
             return false;
         }
         int i2 = i + 13;
-        getQualityScore = i2 % Uuid.SIZE_BITS;
+        getQualityScore = i2 % 128;
         return i2 % 2 == 0;
     }
 
@@ -527,23 +526,23 @@ public abstract class PngjException {
         }
         if (action.PngjOutputException < 0) {
             int i = getQualityScore + 91;
-            getData = i % Uuid.SIZE_BITS;
+            getData = i % 128;
             action.PngjOutputException = i % 2 == 0 ? action.values | action.valueOf : action.values * action.valueOf;
         }
         if (action.PngjOutputException < 1024) {
-            getQualityScore = (getData + 83) % Uuid.SIZE_BITS;
+            getQualityScore = (getData + 83) % 128;
             return arid.valueOf.FILTER_NONE;
         }
         if (action.valueOf == 1) {
             return arid.valueOf.FILTER_SUB;
         }
         if (action.values == 1) {
-            getData = (getQualityScore + 105) % Uuid.SIZE_BITS;
+            getData = (getQualityScore + 105) % 128;
             return arid.valueOf.FILTER_UP;
         }
         arid.valueOf valueof = arid.valueOf.FILTER_PAETH;
         int i2 = getQualityScore + 37;
-        getData = i2 % Uuid.SIZE_BITS;
+        getData = i2 % 128;
         if (i2 % 2 != 0) {
             return valueof;
         }
@@ -553,7 +552,7 @@ public abstract class PngjException {
     public final arid.valueOf valueOf() {
         int i = getData;
         arid.valueOf valueof = this.PngjBadCrcException;
-        getQualityScore = (i + 109) % Uuid.SIZE_BITS;
+        getQualityScore = (i + 109) % 128;
         return valueof;
     }
 
@@ -561,7 +560,7 @@ public abstract class PngjException {
 
     public final void valueOf(arid.valueOf valueof) {
         int i = getQualityScore + 27;
-        getData = i % Uuid.SIZE_BITS;
+        getData = i % 128;
         int i2 = i % 2;
         this.PngjBadCrcException = valueof;
         if (i2 == 0) {
@@ -571,14 +570,14 @@ public abstract class PngjException {
 
     public final void PngjException() {
         int i = getQualityScore + 85;
-        getData = i % Uuid.SIZE_BITS;
+        getData = i % 128;
         if (i % 2 != 0) {
             if (this.PngjException) {
                 return;
             }
             PngjBadSignature();
             this.PngjException = true;
-            getData = (getQualityScore + 77) % Uuid.SIZE_BITS;
+            getData = (getQualityScore + 77) % 128;
             return;
         }
         throw null;
@@ -589,7 +588,7 @@ public abstract class PngjException {
         int i2;
         int i3;
         if (valueof == arid.valueOf.FILTER_NONE) {
-            getQualityScore = (getData + 43) % Uuid.SIZE_BITS;
+            getQualityScore = (getData + 43) % 128;
             bArr3 = bArr;
         }
         bArr3[0] = (byte) valueof.Action;
@@ -604,7 +603,7 @@ public abstract class PngjException {
                     }
                     bArr3[i5] = (byte) AridA.PngjBadCrcException(bArr[i5], 0, bArr2[i5] & UByte.MAX_VALUE, 0);
                     i5++;
-                    getData = (getQualityScore + 121) % Uuid.SIZE_BITS;
+                    getData = (getQualityScore + 121) % 128;
                 }
                 int i6 = i + 1;
                 int i7 = 1;
@@ -642,7 +641,7 @@ public abstract class PngjException {
                         }
                         bArr3[i11] = (byte) (bArr[i11] - ((bArr2[i11] & UByte.MAX_VALUE) / 2));
                         i11++;
-                        getData = (getQualityScore + 17) % Uuid.SIZE_BITS;
+                        getData = (getQualityScore + 17) % 128;
                     }
                     int i12 = i3 + 1;
                     int i13 = 1;
@@ -668,7 +667,7 @@ public abstract class PngjException {
     public void PngjBadCrcException() {
         valueOf valueof;
         int i = getQualityScore + 79;
-        getData = i % Uuid.SIZE_BITS;
+        getData = i % 128;
         if (i % 2 == 0) {
             valueof = this.onErrorResponse;
             int i2 = 35 / 0;
@@ -682,7 +681,7 @@ public abstract class PngjException {
             }
         }
         valueof.close();
-        getQualityScore = (getData + 125) % Uuid.SIZE_BITS;
+        getQualityScore = (getData + 125) % 128;
     }
 
     /*  JADX ERROR: NoSuchElementException in pass: ReplaceNewArray
