@@ -4723,8 +4723,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         private static void c(String str, int i, Object[] objArr) {
             $11 = ($10 + 87) % 128;
             char[] charArray = str != null ? str.toCharArray() : str;
-            com.d.e.a aVar = new com.d.e.a();
-            char[] values2 = com.d.e.a.values(PngjInputException ^ 8332534422373704609L, charArray, i);
+            com.d.e.ComDeA aVar = new com.d.e.ComDeA();
+            char[] values2 = com.d.e.ComDeA.values(PngjInputException ^ 8332534422373704609L, charArray, i);
             aVar.PngjBadSignature = 4;
             while (true) {
                 int i2 = aVar.PngjBadSignature;
@@ -5887,8 +5887,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             } else {
                 cArr = str;
             }
-            com.d.e.a aVar = new com.d.e.a();
-            char[] values2 = com.d.e.a.values(PngjBadCrcException ^ 8332534422373704609L, cArr, i);
+            com.d.e.ComDeA aVar = new com.d.e.ComDeA();
+            char[] values2 = com.d.e.ComDeA.values(PngjBadCrcException ^ 8332534422373704609L, cArr, i);
             aVar.PngjBadSignature = 4;
             while (true) {
                 int i3 = aVar.PngjBadSignature;
@@ -7746,8 +7746,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (i2 % 2 == 0) {
             int i4 = 93 / 0;
         }
-        com.d.e.a aVar = new com.d.e.a();
-        char[] values2 = com.d.e.a.values(setFingers ^ 8332534422373704609L, charArray, i);
+        com.d.e.ComDeA aVar = new com.d.e.ComDeA();
+        char[] values2 = com.d.e.ComDeA.values(setFingers ^ 8332534422373704609L, charArray, i);
         aVar.PngjBadSignature = 4;
         while (true) {
             int i5 = aVar.PngjBadSignature;

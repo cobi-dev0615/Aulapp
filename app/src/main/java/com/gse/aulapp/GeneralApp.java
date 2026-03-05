@@ -6,8 +6,6 @@ import android.app.NotificationManager;
 import androidx.work.Configuration;
 import co.ceduladigital.sdk.f3;
 import co.ceduladigital.sdk.j3;
-import com.google.android.gms.time.TrustedTime;
-import com.google.android.gms.time.TrustedTimeClient;
 import com.gse.aulapp.io.ReceptionsDatabase;
 import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
@@ -27,7 +25,7 @@ public final class GeneralApp extends Application implements Configuration.Provi
     public static final Companion INSTANCE = new Companion(null);
     public static ReceptionsDatabase database;
     public static GeneralApp instance;
-    private static TrustedTimeClient trustedTimeClient;
+    private static Object trustedTimeClient;
     private final String TAG = "GeneralApp";
     private final CoroutineScope applicationScope = CoroutineScopeKt.CoroutineScope(SupervisorKt.SupervisorJob$default(null, 1, null));
 
@@ -55,7 +53,7 @@ public final class GeneralApp extends Application implements Configuration.Provi
             return null;
         }
 
-        public final TrustedTimeClient getTrustedTimeClient() {
+        public final Object getTrustedTimeClient() {
             return GeneralApp.trustedTimeClient;
         }
 
@@ -74,11 +72,11 @@ public final class GeneralApp extends Application implements Configuration.Provi
     }
 
     private final void initializeTrustedTimeClient() {
-        TrustedTime.createClient(this).addOnSuccessListener(new j3(new f3(3), 4)).addOnFailureListener(new j3(this, 5));
+        // TrustedTime.createClient(this).addOnSuccessListener(new j3(new f3(3), 4)).addOnFailureListener(new j3(this, 5));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit initializeTrustedTimeClient$lambda$0(TrustedTimeClient trustedTimeClient2) {
+    public static final Unit initializeTrustedTimeClient$lambda$0(Object trustedTimeClient2) {
         trustedTimeClient = trustedTimeClient2;
         return Unit.INSTANCE;
     }

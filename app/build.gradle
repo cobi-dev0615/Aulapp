@@ -141,6 +141,12 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
 
+    // Volley
+    implementation 'com.android.volley:volley:1.2.1'
+
+    // BouncyCastle
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.70'
+
     // Local JAR/AAR libraries (for Identy SDK and TouchLessID)
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 }

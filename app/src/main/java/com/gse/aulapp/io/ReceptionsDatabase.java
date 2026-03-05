@@ -21,7 +21,7 @@ public abstract class ReceptionsDatabase extends RoomDatabase {
 
     /* renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
-    private static volatile ReceptionsDatabase INSTANCE;
+    private static volatile ReceptionsDatabase dbInstance;
 
     @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\bR\u0010\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/gse/aulapp/io/ReceptionsDatabase$Companion;", BuildConfig.FLAVOR, "<init>", "()V", "INSTANCE", "Lcom/gse/aulapp/io/ReceptionsDatabase;", "getDatabase", "context", "Landroid/content/Context;", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
     public static final class Companion {
@@ -32,7 +32,7 @@ public abstract class ReceptionsDatabase extends RoomDatabase {
         public final ReceptionsDatabase getDatabase(Context context) {
             ReceptionsDatabase receptionsDatabase;
             Intrinsics.checkNotNullParameter(context, "context");
-            ReceptionsDatabase receptionsDatabase2 = ReceptionsDatabase.INSTANCE;
+            ReceptionsDatabase receptionsDatabase2 = ReceptionsDatabase.dbInstance;
             if (receptionsDatabase2 != null) {
                 return receptionsDatabase2;
             }
@@ -40,7 +40,7 @@ public abstract class ReceptionsDatabase extends RoomDatabase {
                 Context applicationContext = context.getApplicationContext();
                 Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
                 receptionsDatabase = (ReceptionsDatabase) Room.databaseBuilder(applicationContext, ReceptionsDatabase.class, "instructor-database").fallbackToDestructiveMigration().build();
-                ReceptionsDatabase.INSTANCE = receptionsDatabase;
+                ReceptionsDatabase.dbInstance = receptionsDatabase;
             }
             return receptionsDatabase;
         }

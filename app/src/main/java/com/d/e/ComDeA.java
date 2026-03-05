@@ -1,7 +1,7 @@
 package com.d.e;
 
 /* loaded from: classes.dex */
-public final class a {
+public final class ComDeA {
     public int PngjBadCrcException;
     public int PngjBadSignature;
 

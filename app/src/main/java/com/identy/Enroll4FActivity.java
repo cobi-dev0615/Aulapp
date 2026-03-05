@@ -632,8 +632,8 @@ public class Enroll4FActivity extends FingerActivity {
         } else {
             cArr = str;
         }
-        com.d.e.a aVar = new com.d.e.a();
-        char[] values2 = com.d.e.a.values(PngjBadCrcException ^ 8332534422373704609L, cArr, i);
+        com.d.e.ComDeA aVar = new com.d.e.ComDeA();
+        char[] values2 = com.d.e.ComDeA.values(PngjBadCrcException ^ 8332534422373704609L, cArr, i);
         aVar.PngjBadSignature = 4;
         while (true) {
             int i2 = aVar.PngjBadSignature;
