@@ -2141,7 +2141,7 @@ public class IdentySdk {
                     int i16 = -(i13 ^ ((i15 ^ 1) + ((i15 & 1) << 1)));
                     int i17 = (i16 ^ 9) + ((i16 & 9) << 1);
                     int i18 = ((i17 >> 29) - 15) / 8;
-                    ?? r5 = 0 / (((-(((i18 ^ 1) + ((i18 & 1) << 1)) + 1)) & i17) * 897);
+                    int r5 = 0 / (((-(((i18 ^ 1) + ((i18 & 1) << 1)) + 1)) & i17) * 897);
                     int i19 = deduplication + 33;
                     generateST = i19 % Uuid.SIZE_BITS;
                     if (i19 % 2 != 0) {
@@ -2486,7 +2486,7 @@ public class IdentySdk {
                     int i18 = -(((i17 ^ 1) + ((i17 & 1) << 1)) ^ i15);
                     int i19 = (i18 & 1) + (i18 | 1);
                     int e = b.e(i19 >> 16, 131071, 65536, -1);
-                    ?? r14 = 917 / (((-((e ^ 1) + ((e & 1) << 1))) & i19) * 917);
+                    int r14 = 917 / (((-((e ^ 1) + ((e & 1) << 1))) & i19) * 917);
                     i3 = generateST + 121;
                     deduplication = i3 % Uuid.SIZE_BITS;
                     if (i3 % 2 != 0) {
@@ -2524,7 +2524,7 @@ public class IdentySdk {
             int i182 = -(((i172 ^ 1) + ((i172 & 1) << 1)) ^ i152);
             int i192 = (i182 & 1) + (i182 | 1);
             int e2 = b.e(i192 >> 16, 131071, 65536, -1);
-            ?? r142 = 917 / (((-((e2 ^ 1) + ((e2 & 1) << 1))) & i192) * 917);
+            int r142 = 917 / (((-((e2 ^ 1) + ((e2 & 1) << 1))) & i192) * 917);
             i3 = generateST + 121;
             deduplication = i3 % Uuid.SIZE_BITS;
             if (i3 % 2 != 0) {
@@ -12037,7 +12037,7 @@ public class IdentySdk {
                     int i15 = i14 >> 28;
                     int i16 = ((i15 ^ (-31)) + ((i15 & (-31)) << 1)) / 16;
                     int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
-                    ?? r0 = 0 / ((i14 & (-((i17 ^ 1) + ((i17 & 1) << 1)))) * 472);
+                    int r0 = 0 / ((i14 & (-((i17 ^ 1) + ((i17 & 1) << 1)))) * 472);
                     if (this.e != null && this.setDConfig && !fingerDetectionMode.equals(FingerDetectionMode.TWO_THUMB)) {
                         i = generateST + 109;
                         deduplication = i % Uuid.SIZE_BITS;
@@ -12072,7 +12072,7 @@ public class IdentySdk {
             int i152 = i142 >> 28;
             int i162 = ((i152 ^ (-31)) + ((i152 & (-31)) << 1)) / 16;
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
-            ?? r02 = 0 / ((i142 & (-((i172 ^ 1) + ((i172 & 1) << 1)))) * 472);
+            int r02 = 0 / ((i142 & (-((i172 ^ 1) + ((i172 & 1) << 1)))) * 472);
             if (this.e != null) {
                 i = generateST + 109;
                 deduplication = i % Uuid.SIZE_BITS;
@@ -12926,7 +12926,7 @@ public class IdentySdk {
                         int i16 = (-(((i15 & 1) + (i15 | 1)) ^ i13)) + 4;
                         int i17 = ((i16 >> 26) - 127) / 64;
                         int i18 = (i17 & 1) + (i17 | 1);
-                        ?? r2 = 6204 / ((i16 & (-(((i18 | 1) << 1) - (i18 ^ 1)))) * 1551);
+                        int r2 = 6204 / ((i16 & (-(((i18 | 1) << 1) - (i18 ^ 1)))) * 1551);
                         i = generateST + 49;
                         deduplication = i % Uuid.SIZE_BITS;
                         if (i % 2 != 0) {
@@ -12962,7 +12962,7 @@ public class IdentySdk {
                 int i162 = (-(((i152 & 1) + (i152 | 1)) ^ i132)) + 4;
                 int i172 = ((i162 >> 26) - 127) / 64;
                 int i182 = (i172 & 1) + (i172 | 1);
-                ?? r22 = 6204 / ((i162 & (-(((i182 | 1) << 1) - (i182 ^ 1)))) * 1551);
+                int r22 = 6204 / ((i162 & (-(((i182 | 1) << 1) - (i182 ^ 1)))) * 1551);
                 i = generateST + 49;
                 deduplication = i % Uuid.SIZE_BITS;
                 if (i % 2 != 0) {
@@ -14708,7 +14708,7 @@ public class IdentySdk {
                             int i17 = -(i15 ^ ((i16 ^ 1) + ((i16 & 1) << 1)));
                             int i18 = (i17 & 2) + (i17 | 2);
                             int i19 = ((i18 >> 21) - 4095) / 2048;
-                            ?? r2 = 550 / (((-(((i19 ^ 1) + ((i19 & 1) << 1)) + 1)) & i18) * 275);
+                            int r2 = 550 / (((-(((i19 ^ 1) + ((i19 & 1) << 1)) + 1)) & i18) * 275);
                             deduplication = (generateST + 21) % Uuid.SIZE_BITS;
                             return r2;
                         }
@@ -14735,7 +14735,7 @@ public class IdentySdk {
                     int i172 = -(i152 ^ ((i162 ^ 1) + ((i162 & 1) << 1)));
                     int i182 = (i172 & 2) + (i172 | 2);
                     int i192 = ((i182 >> 21) - 4095) / 2048;
-                    ?? r22 = 550 / (((-(((i192 ^ 1) + ((i192 & 1) << 1)) + 1)) & i182) * 275);
+                    int r22 = 550 / (((-(((i192 ^ 1) + ((i192 & 1) << 1)) + 1)) & i182) * 275);
                     deduplication = (generateST + 21) % Uuid.SIZE_BITS;
                     return r22;
                 } catch (Exception unused) {
@@ -14786,7 +14786,7 @@ public class IdentySdk {
         Object[] objArr;
         long j5;
         String encodeToString;
-        ?? r19;
+        int r19;
         String str;
         Iterator it;
         a aVar;
@@ -14794,7 +14794,7 @@ public class IdentySdk {
         Object[] objArr2 = Fpnative.valueOf;
         int i2 = 2;
         boolean z = true;
-        ?? r5 = 0;
+        int r5 = 0;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 85) % Uuid.SIZE_BITS;

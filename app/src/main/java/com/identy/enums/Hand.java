@@ -38,11 +38,11 @@ public enum Hand implements Serializable {
     private static void c(short s, byte b2, int i, Object[] objArr) {
         int i2;
         byte b3;
-        ?? r6 = 118 - (b2 * 19);
+        int r6 = 118 - (b2 * 19);
         byte[] bArr = $$a;
         int i3 = 78 - i;
         byte[] bArr2 = new byte[s + 6];
-        ?? r5 = s + 5;
+        int r5 = s + 5;
         if (bArr == null) {
             byte b4 = r6;
             i2 = 0;

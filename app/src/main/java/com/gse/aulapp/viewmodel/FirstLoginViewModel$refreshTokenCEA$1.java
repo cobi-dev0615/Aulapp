@@ -177,7 +177,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
             String str2 = this.$ceaSelected;
             Iterator<T> it = list.iterator();
             while (it.hasNext()) {
-                ?? r4 = (CenterDto) it.next();
+                ?CenterDto r4 = (CenterDto) it.next();
                 equals$default = StringsKt__StringsJVMKt.equals$default(r4.getName(), str2, false, 2, null);
                 if (equals$default) {
                     objectRef.element = r4;

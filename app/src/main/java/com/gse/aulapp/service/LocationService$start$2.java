@@ -50,13 +50,13 @@ public final class LocationService$start$2 extends SuspendLambda implements Func
     /* JADX WARN: Type inference failed for: r3v3, types: [T, androidx.core.app.NotificationCompat$Builder] */
     public static final Unit invokeSuspend$lambda$0(LocationService locationService, Ref.ObjectRef objectRef, NotificationManager notificationManager, Intent intent, int i, int i2, Location location, String str, long j, boolean z) {
         boolean z2;
-        ?? callNotification;
+        ?Object callNotification;
         String unused;
         unused = locationService.TAG;
         if (z) {
             locationService.stop();
             callNotification = locationService.callNotification("Hemos detectado el uso de un simulador");
-            objectRef.element = callNotification;
+            objectRef.element =Object callNotification;
             notificationManager.notify(10000002, callNotification.build());
             locationService.isService = false;
         } else {

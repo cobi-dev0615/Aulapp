@@ -84,7 +84,7 @@ public final class FingerError {
         int i2;
         int i3;
         int i4 = b + 6;
-        ?? r8 = s2 + 4;
+        int r8 = s2 + 4;
         int i5 = (s * 19) + 80;
         byte[] bArr = $$a;
         byte[] bArr2 = new byte[i4];

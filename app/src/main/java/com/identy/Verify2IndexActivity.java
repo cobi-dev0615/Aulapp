@@ -333,7 +333,7 @@ public class Verify2IndexActivity extends FingerActivity {
     private static void b(byte b, byte b2, short s, Object[] objArr) {
         int i;
         int i2;
-        ?? r8 = 80 - (s * 2);
+        int r8 = 80 - (s * 2);
         byte[] bArr = $$a;
         int i3 = b * 6;
         int i4 = 21 - (b2 * 18);

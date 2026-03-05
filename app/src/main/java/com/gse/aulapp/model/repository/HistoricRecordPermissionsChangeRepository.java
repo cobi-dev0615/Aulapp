@@ -78,7 +78,7 @@ public final class HistoricRecordPermissionsChangeRepository {
         Context context2;
         Integer num2;
         HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository;
-        ?? r3 = "syncHistoricPermissionChange request: ";
+        ?String r3 = "syncHistoricPermissionChange request: ";
         if (continuation instanceof HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1) {
             historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1 = (HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1) continuation;
             int i2 = historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1.label;

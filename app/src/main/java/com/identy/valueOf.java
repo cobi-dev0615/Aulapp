@@ -31,10 +31,10 @@ public enum valueOf {
         int i2;
         byte b2;
         byte[] bArr = $$a;
-        ?? r5 = (s * 19) + 80;
+        int r5 = (s * 19) + 80;
         int i3 = 83 - i;
         byte[] bArr2 = new byte[44 - b];
-        ?? r7 = 43 - b;
+        int r7 = 43 - b;
         if (bArr == null) {
             byte b3 = r5;
             byte b4 = r7;

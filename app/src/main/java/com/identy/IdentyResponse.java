@@ -284,7 +284,7 @@ public class IdentyResponse {
         int i2;
         int i3 = s + 4;
         byte[] bArr = $$g;
-        ?? r6 = (s2 * 19) + 80;
+        int r6 = (s2 * 19) + 80;
         byte[] bArr2 = new byte[44 - b];
         int i4 = 43 - b;
         if (bArr == null) {
@@ -887,10 +887,10 @@ public class IdentyResponse {
     public JSONObject toJson(Context context) {
         Object[] objArr;
         long j;
-        ?? jSONObject;
+        JSONObject jSONObject;
         int i;
-        ?? r17;
-        ?? r4;
+        int r17;
+        int r4;
         Object obj;
         HashMap hashMap;
         Object obj2;
@@ -929,7 +929,7 @@ public class IdentyResponse {
                         jSONObject.put(entry4.getKey().toString().toLowerCase(), entry4.getValue().toJson(context));
                     }
                     if (this.PngjExceptionInternal.isEmpty()) {
-                        ?? jSONArray = new JSONArray();
+                        JSONArray jSONArray = new JSONArray();
                         for (Map.Entry entry5 : this.PngjExceptionInternal.entrySet()) {
                             JSONObject jSONObject3 = new JSONObject();
                             jSONObject3.put("picture", entry5.getValue());
@@ -965,15 +965,15 @@ public class IdentyResponse {
                     if (hashMap != null || hashMap.size() <= 0) {
                         obj = jSONObject;
                     } else {
-                        ?? jSONArray3 = new JSONArray();
+                        JSONArray jSONArray3 = new JSONArray();
                         Iterator it2 = this.PngjInputException.entrySet().iterator();
                         jSONObject = jSONObject;
                         while (it2.hasNext()) {
                             try {
                                 Map.Entry entry6 = (Map.Entry) it2.next();
-                                ?? jSONObject4 = new JSONObject();
+                                JSONObject jSONObject4 = new JSONObject();
                                 com.identy.g.PngjBadCrcException pngjBadCrcException = (com.identy.g.PngjBadCrcException) entry6.getValue();
-                                ?? jSONObject5 = new JSONObject();
+                                JSONObject jSONObject5 = new JSONObject();
                                 jSONObject5.put("lux", pngjBadCrcException.PngjBadCrcException);
                                 if (pngjBadCrcException.PngjException != null) {
                                     JSONArray jSONArray4 = new JSONArray();

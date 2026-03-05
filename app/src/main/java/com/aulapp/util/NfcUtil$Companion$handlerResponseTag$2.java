@@ -75,7 +75,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
         boolean z;
         boolean z2;
         Ndef ndef;
-        ?? r19;
+        ?Object r19;
         String str;
         LogSendUtil.Companion companion;
         String payloadByTag;
@@ -96,7 +96,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
                 String unused = NfcUtil.TAG;
                 LogSendUtil.Companion companion2 = LogSendUtil.INSTANCE;
                 LogSendUtil.Companion.setLog$default(companion2, this.$context, q.i("handlerResponseTag: Tag serial ", t), null, false, 12, null);
-                ?? r15 = Ndef.get(this.$tag);
+                ?Ndef r15 = Ndef.get(this.$tag);
                 try {
                     try {
                     } catch (Throwable th) {
@@ -147,7 +147,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
                         }
                     } catch (Exception e4) {
                         e = e4;
-                        companion = r19;
+                        companion =Object r19;
                         LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag:Error playing sound:  " + e.getMessage() + " ", str, z2);
                         Boxing.boxInt(Log.d(NfcUtil.TAG, "Error playing sound: " + e));
                         ndef.close();
@@ -161,7 +161,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
                     ndef = r15;
                     r19 = null;
                     str = "handlerResponseTag";
-                    companion = r19;
+                    companion =Object r19;
                     LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag:Error playing sound:  " + e.getMessage() + " ", str, z2);
                     Boxing.boxInt(Log.d(NfcUtil.TAG, "Error playing sound: " + e));
                     ndef.close();

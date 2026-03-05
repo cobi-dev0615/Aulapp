@@ -42,9 +42,9 @@ public enum valueOf {
         int i;
         byte b4;
         int i2;
-        ?? r6 = 93 - b;
+        int r6 = 93 - b;
         byte[] bArr = $$a;
-        ?? r8 = (b3 * 19) + 80;
+        int r8 = (b3 * 19) + 80;
         byte[] bArr2 = new byte[b2 + 16];
         int i3 = b2 + 15;
         if (bArr == null) {
@@ -52,7 +52,7 @@ public enum valueOf {
             i2 = 0;
             byte b6 = r6;
             int i4 = r6;
-            ?? r82 = (b6 + b5) - 13;
+            int r82 = (b6 + b5) - 13;
             i = i4 + 1;
             b4 = r82;
             bArr2[i2] = b4;
@@ -65,7 +65,7 @@ public enum valueOf {
             int i5 = i;
             b6 = b4;
             i4 = i5;
-            ?? r822 = (b6 + b5) - 13;
+            int r822 = (b6 + b5) - 13;
             i = i4 + 1;
             b4 = r822;
             bArr2[i2] = b4;

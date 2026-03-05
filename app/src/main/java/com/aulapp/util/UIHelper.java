@@ -92,7 +92,7 @@ public abstract class UIHelper {
         /* JADX WARN: Type inference failed for: r7v1, types: [java.lang.CharSequence] */
         /* JADX WARN: Type inference failed for: r7v3, types: [java.lang.CharSequence] */
         public final void setterCustomToolbar(FragmentActivity activity, boolean showToolbar, boolean showLogo, String title, Integer imageToolbar, Integer iconToolbar, boolean lockDrawer, boolean showActionLeftButton) {
-            ?? supportActionBar;
+            ?Object supportActionBar;
             Intrinsics.checkNotNullParameter(activity, "activity");
             closeVirtualKeyboardActivity(activity);
             getTAG();

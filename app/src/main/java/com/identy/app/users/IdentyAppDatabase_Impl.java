@@ -380,7 +380,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         int i2;
         byte[] bArr = $$a;
         int i3 = (s2 * 19) + 80;
-        ?? r6 = s + 4;
+        int r6 = s + 4;
         byte[] bArr2 = new byte[b + 6];
         int i4 = b + 5;
         if (bArr == null) {

@@ -154,7 +154,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
         int i2;
         int i3;
         byte[] bArr = $$a;
-        ?? r9 = 101 - (s * 4);
+        int r9 = 101 - (s * 4);
         int i4 = b + 1;
         int i5 = 3 - (b2 * 4);
         byte[] bArr2 = new byte[i4];
@@ -205,12 +205,12 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
         char c;
         String str3 = str2;
         $10 = ($11 + 33) % Uuid.SIZE_BITS;
-        byte[] bArr = str3;
+        Object bArr = str3;
         if (str3 != null) {
             bArr = str3.getBytes("ISO-8859-1");
         }
-        byte[] bArr2 = bArr;
-        char[] charArray = str != null ? str.toCharArray() : str;
+        byte[] bArr2 = (byte[]) bArr;
+        char[] charArray = str != null ? str.toCharArray() : null;
         PngjExceptionInternal pngjExceptionInternal = new PngjExceptionInternal();
         char[] cArr = PngjOutputException;
         Class cls = Integer.TYPE;

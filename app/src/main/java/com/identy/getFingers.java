@@ -1811,7 +1811,7 @@ final class getFingers extends e1 {
         if (this.getMatchingTime) {
             return;
         }
-        ?? r1 = this.CaptureThumbActivity;
+        long r1 = this.CaptureThumbActivity;
         try {
             if (r1 != 0) {
                 r1 = 4613712638259704627;

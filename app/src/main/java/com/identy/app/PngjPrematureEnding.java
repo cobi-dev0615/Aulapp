@@ -95,7 +95,7 @@ public final class PngjPrematureEnding implements PngjUnsupportedException {
         int i = s3 * 4;
         int i2 = s + 4;
         byte[] bArr = $$a;
-        ?? r6 = (s2 * 4) + 114;
+        int r6 = (s2 * 4) + 114;
         byte[] bArr2 = new byte[i + 1];
         int i3 = -1;
         byte b = r6;

@@ -357,8 +357,8 @@ public final class isAuthSucess extends e1 {
                     int i;
                     byte b2;
                     byte[] bArr = $$c;
-                    ?? r7 = s2 + 104;
-                    ?? r5 = 4 - (b * 3);
+                    int r7 = s2 + 104;
+                    int r5 = 4 - (b * 3);
                     int i2 = s * 2;
                     byte[] bArr2 = new byte[i2 + 1];
                     if (bArr == null) {

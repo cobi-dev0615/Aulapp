@@ -1079,7 +1079,7 @@ public final class getOveralTimetaken extends e1 {
     private static void g(byte b, short s, byte b2, Object[] objArr) {
         int i;
         int i2;
-        ?? r7 = (b2 * 56) + 4;
+        int r7 = (b2 * 56) + 4;
         int i3 = 111 - (s * 31);
         byte[] bArr = $$g;
         int i4 = b * 38;

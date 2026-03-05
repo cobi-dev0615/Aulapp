@@ -147,7 +147,7 @@ public class PostCaptureOutPut {
     private static void b(short s, short s2, int i, Object[] objArr) {
         int i2;
         int i3;
-        ?? r5 = 129 - s;
+        int r5 = 129 - s;
         byte[] bArr = $$a;
         int i4 = 118 - (s2 * 19);
         byte[] bArr2 = new byte[44 - i];

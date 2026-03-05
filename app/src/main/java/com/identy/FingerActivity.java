@@ -2266,7 +2266,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         private static String $$e(byte b, byte b2, byte b3) {
             int i;
             int i2;
-            ?? r8 = (b3 * 2) + 97;
+            int r8 = (b3 * 2) + 97;
             int i3 = b * 2;
             byte[] bArr = $$c;
             int i4 = b2 + 4;
@@ -5823,7 +5823,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i3;
             int i4 = 1 - (s2 * 2);
             byte[] bArr = $$c;
-            ?? r9 = 107 - (b * 2);
+            int r9 = 107 - (b * 2);
             int i5 = 3 - (s * 2);
             byte[] bArr2 = new byte[i4];
             if (bArr == null) {
@@ -11453,7 +11453,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i11 = ~(i5 | 1);
             this.CaptureThumbActivity = (((i8 - (~(-(-(((i10 & i11) | (i10 ^ i11)) * 933))))) - 1) - (~(-(-((~((i2 & 1) | (i2 ^ 1))) * 933))))) - 1;
             FingerDetectionMode[] fingerDetectionModeArr = this.CapturePosition;
-            ?? r2 = (FingerDetectionMode[]) Arrays.copyOfRange(fingerDetectionModeArr, 1, fingerDetectionModeArr.length);
+            int r2 = (FingerDetectionMode[]) Arrays.copyOfRange(fingerDetectionModeArr, 1, fingerDetectionModeArr.length);
             try {
             } catch (Exception e) {
                 e.printStackTrace();

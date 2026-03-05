@@ -39,7 +39,7 @@ public enum FingerMatchSecLevel {
         int i;
         int i2;
         int i3 = 99 - (s2 * 19);
-        ?? r7 = s3 + 4;
+        int r7 = s3 + 4;
         byte[] bArr = $$a;
         byte[] bArr2 = new byte[s + 16];
         int i4 = s + 15;

@@ -353,9 +353,9 @@ public class IntroActivity extends Activity {
         byte b3;
         byte[] bArr = $$a;
         int i2 = 39 - b;
-        ?? r7 = 118 - (b2 * 38);
+        int r7 = 118 - (b2 * 38);
         byte[] bArr2 = new byte[19 - s];
-        ?? r5 = 18 - s;
+        int r5 = 18 - s;
         if (bArr == null) {
             byte b4 = r7;
             i = 0;

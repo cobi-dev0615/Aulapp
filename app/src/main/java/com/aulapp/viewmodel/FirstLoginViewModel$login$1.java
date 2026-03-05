@@ -373,7 +373,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                                         if (centerList != null) {
                                             Iterator<T> it = centerList.iterator();
                                             while (it.hasNext()) {
-                                                ?? r7 = (T) ((CenterDto) it.next());
+                                                CenterDto r7 = (CenterDto) it.next();
                                                 equals$default = StringsKt__StringsJVMKt.equals$default(r7.getCenterID(), centerID, false, 2, null);
                                                 if (equals$default) {
                                                     objectRef.element = r7;
