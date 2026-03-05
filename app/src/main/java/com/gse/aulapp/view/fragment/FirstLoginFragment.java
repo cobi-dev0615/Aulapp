@@ -235,7 +235,7 @@ public final class FirstLoginFragment extends Fragment {
             String obj = (editText == null || (text = editText.getText()) == null) ? null : text.toString();
             FragmentFirstLoginBinding fragmentFirstLoginBinding4 = firstLoginFragment.b;
             Intrinsics.checkNotNull(fragmentFirstLoginBinding4);
-            ?Editable text3 = fragmentFirstLoginBinding4.tietTextInputUserLogin.getText();
+            Editable text3 = fragmentFirstLoginBinding4.tietTextInputUserLogin.getText();
             if (obj == null || obj.length() == 0) {
                 obj =Editable text3;
             }

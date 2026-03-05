@@ -214,7 +214,7 @@ public final class HomeViewModel extends ViewModel {
     private final ChipChip buildChipAll(Context context, FragmentHomeBinding binding) {
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
         ChipUtil.Companion companion = ChipUtil.INSTANCE;
-        ?Chip buildChip = companion.buildChip(companion.getALL(), context, 0);
+        Chip buildChip = companion.buildChip(companion.getALL(), context, 0);
         objectRef.element =Chip buildChip;
        Chip buildChip.setChecked(true);
         companion.updateColorChipStatus((Chip) objectRef.element);
@@ -457,7 +457,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(configurationSession, "$configurationSession");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
-        ?List r3 = (List) it;
+        List r3 = (List) it;
         configurationSession.element = r3;
         MutableLiveData mutableLiveData = this$0._listConfigSession;
         Intrinsics.checkNotNull(r3);

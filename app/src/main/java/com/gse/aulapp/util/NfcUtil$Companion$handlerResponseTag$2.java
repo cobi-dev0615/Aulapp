@@ -75,7 +75,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
         boolean z;
         boolean z2;
         Ndef ndef;
-        ?Object r19;
+        Object r19;
         String str;
         LogSendUtil.Companion companion;
         String payloadByTag;
@@ -96,7 +96,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
                 String unused = NfcUtil.TAG;
                 LogSendUtil.Companion companion2 = LogSendUtil.INSTANCE;
                 LogSendUtil.Companion.setLog$default(companion2, this.$context, q.i("handlerResponseTag: Tag serial ", t), null, false, 12, null);
-                ?Ndef r15 = Ndef.get(this.$tag);
+                Ndef r15 = Ndef.get(this.$tag);
                 try {
                     try {
                     } catch (Throwable th) {
