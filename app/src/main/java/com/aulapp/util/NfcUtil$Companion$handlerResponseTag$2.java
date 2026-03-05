@@ -147,7 +147,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
                         }
                     } catch (Exception e4) {
                         e = e4;
-                        companion =Object r19;
+                        companion = r19;
                         LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag:Error playing sound:  " + e.getMessage() + " ", str, z2);
                         Boxing.boxInt(Log.d(NfcUtil.TAG, "Error playing sound: " + e));
                         ndef.close();
@@ -161,7 +161,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
                     ndef = r15;
                     r19 = null;
                     str = "handlerResponseTag";
-                    companion =Object r19;
+                    companion = r19;
                     LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag:Error playing sound:  " + e.getMessage() + " ", str, z2);
                     Boxing.boxInt(Log.d(NfcUtil.TAG, "Error playing sound: " + e));
                     ndef.close();

@@ -215,7 +215,7 @@ public final class HomeViewModel extends ViewModel {
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
         ChipUtil.Companion companion = ChipUtil.INSTANCE;
         Chip buildChip = companion.buildChip(companion.getALL(), context, 0);
-        objectRef.element =Chip buildChip;
+        objectRef.element = buildChip;
        Chip buildChip.setChecked(true);
         companion.updateColorChipStatus((Chip) objectRef.element);
         ((Chip) objectRef.element).setOnClickListener(new h1(this, objectRef, binding, 3));

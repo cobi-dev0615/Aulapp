@@ -64,7 +64,7 @@ public abstract class ValidateHoursUtil {
             Intrinsics.checkNotNullParameter(callback, "callback");
             Ref.ObjectRef objectRef = new Ref.ObjectRef();
             String startClassOrExam = PreferenceUtil.INSTANCE.getStartClassOrExam(context);
-            objectRef.element =String startClassOrExam;
+            objectRef.element = startClassOrExam;
             if (startClassOrExam == 0 ||String startClassOrExam.length() == 0) {
                 callback.invoke(0L);
                 return;

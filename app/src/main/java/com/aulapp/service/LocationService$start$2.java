@@ -56,7 +56,7 @@ public final class LocationService$start$2 extends SuspendLambda implements Func
         if (z) {
             locationService.stop();
             callNotification = locationService.callNotification("Hemos detectado el uso de un simulador");
-            objectRef.element =Object callNotification;
+            objectRef.element = callNotification;
             notificationManager.notify(10000002, callNotification.build());
             locationService.isService = false;
         } else {
