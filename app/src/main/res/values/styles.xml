@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Base.Theme.AULAPPRECEPCIONISTA" parent="@style/Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+    <style name="Theme.AULAPPRECEPCIONISTA" parent="@style/Base.Theme.AULAPPRECEPCIONISTA">
+    </style>
     <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="colorAccent">@color/colorPrimary</item>
         <item name="colorPrimary">@color/colorPrimary</item>
