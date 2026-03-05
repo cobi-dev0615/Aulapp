@@ -1,4 +1,4 @@
-package com.identy.IdentyA;
+package com.identy.a;
 
 import android.os.SystemClock;
 import com.identy.enums.valueOf;

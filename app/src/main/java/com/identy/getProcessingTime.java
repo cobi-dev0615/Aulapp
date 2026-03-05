@@ -5,7 +5,7 @@ import com.identy.enums.FingerDetectionMode;
 import com.identy.enums.Hand;
 
 /* loaded from: classes2.dex */
-public final class getProcessingTime extends a {
+public final class getProcessingTime extends IdentyA {
     private VerifyResult e1;
 
     public getProcessingTime(int i, Hand hand, Finger finger, FingerDetectionMode fingerDetectionMode) {

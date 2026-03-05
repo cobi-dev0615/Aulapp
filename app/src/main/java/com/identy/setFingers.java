@@ -369,7 +369,7 @@ final class setFingers extends e1 {
                 } else {
                     if (!this.getCaptureTime) {
                         this.getCaptureTime = true;
-                        values(new f(this, 4));
+                        values(new IdentyF(this, 4));
                         return true;
                     }
                     int i2 = generateNFIQ + 3;
@@ -397,7 +397,7 @@ final class setFingers extends e1 {
         this.getQualityScore = 0L;
         this.getL2Score.PngjBadCrcException();
         this.Capture2TActivity.postInvalidate();
-        this.Action.runOnUiThread(new f(this, 3));
+        this.Action.runOnUiThread(new IdentyF(this, 3));
         com.identy.d.PngjBadSignature pngjBadSignature2 = this.Attempt;
         if (pngjBadSignature2 != null) {
             int i2 = pfkrolChangeMinMaxWidth + 3;
@@ -1516,7 +1516,7 @@ final class setFingers extends e1 {
                             PreCaptureOutput valueOf = setfingers.valueOf(new Mat(Mat.n_clone(setfingers.getFingerPrintQualityScore.PngjException)));
                             if (valueOf.isGoodToCapture()) {
                                 setfingers.onErrorResponse = true;
-                                setfingers.configureroll.postDelayed(new f(setfingers, 0), 10L);
+                                setfingers.configureroll.postDelayed(new IdentyF(setfingers, 0), 10L);
                             } else if (!valueOf.getError().equals(FingerError.NO_BOXES)) {
                                 generateNFIQ = (pfkrolChangeMinMaxWidth + 57) % 128;
                                 setfingers.configure = setfingers.getSpoofScore;
@@ -1640,11 +1640,11 @@ final class setFingers extends e1 {
             } catch (Exception unused) {
             }
             try {
-                this.Action.runOnUiThread(new f(this, 1));
+                this.Action.runOnUiThread(new IdentyF(this, 1));
                 generateNFIQ = (pfkrolChangeMinMaxWidth + 11) % 128;
             } catch (Exception unused2) {
             }
-            this.Action.runOnUiThread(new f(this, 2));
+            this.Action.runOnUiThread(new IdentyF(this, 2));
             this.Capture2TActivity.valueOf = new IdentyD(this, 1);
             return;
         }

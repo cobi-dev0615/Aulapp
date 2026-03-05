@@ -11765,7 +11765,7 @@ public class IdentySdk {
         }
     }
 
-    private Attempt PngjBadCrcException(Hand hand, Finger finger, a aVar, long j, long j2, long j3, int i, String str) {
+    private Attempt PngjBadCrcException(Hand hand, Finger finger, IdentyA aVar, long j, long j2, long j3, int i, String str) {
         try {
             if (!this.h.containsKey(hand)) {
                 this.h.put(hand, new HashMap());
@@ -13310,7 +13310,7 @@ public class IdentySdk {
         }
     }
 
-    private Attempt PngjException(Hand hand, Finger finger, a aVar, VerifyResult verifyResult, long j, long j2, long j3, String str, long j4) {
+    private Attempt PngjException(Hand hand, Finger finger, IdentyA aVar, VerifyResult verifyResult, long j, long j2, long j3, String str, long j4) {
         try {
             if (!this.h.containsKey(hand)) {
                 this.h.put(hand, new HashMap());

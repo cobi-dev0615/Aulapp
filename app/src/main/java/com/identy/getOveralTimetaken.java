@@ -340,7 +340,7 @@ public final class getOveralTimetaken extends e1 {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private static void a(int i, short s, short s2, Object[] objArr) {
+        private static void a(int i, short s, short s2, java.lang.Object[] objArr) {
             int i2;
             int i3;
             int i4 = 5 - i;
@@ -378,7 +378,7 @@ public final class getOveralTimetaken extends e1 {
         }
 
         /* JADX WARN: Multi-variable type inference failed */
-        private static void b(char c, String str, String str2, int i, String str3, Object[] objArr) {
+        private static void b(char c, String str, String str2, int i, String str3, java.lang.Object[] objArr) {
             char[] cArr;
             int i2;
             float f;
@@ -525,7 +525,7 @@ public final class getOveralTimetaken extends e1 {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private static void c(String str, int i, Object[] objArr) {
+        private static void c(String str, int i, java.lang.Object[] objArr) {
             char[] cArr;
             float f;
             Throwable cause;

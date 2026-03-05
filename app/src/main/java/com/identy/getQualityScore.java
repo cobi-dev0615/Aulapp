@@ -9,8 +9,8 @@ public class getQualityScore {
     public float PngjExceptionInternal;
     public double PngjInputException;
     public double PngjOutputException;
-    public Object PngjPrematureEnding;
-    public Object PngjUnsupportedException;
+    public java.lang.Object PngjPrematureEnding;
+    public java.lang.Object PngjUnsupportedException;
     private int e1;
     private final Object[] getPadSub3;
     public float valueOf;

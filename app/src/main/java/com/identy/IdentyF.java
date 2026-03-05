@@ -1,11 +1,11 @@
 package com.identy;
 
 /* loaded from: classes2.dex */
-public final /* synthetic */ class f implements Runnable {
+public final /* synthetic */ class IdentyF implements Runnable {
     public final /* synthetic */ int a;
     public final /* synthetic */ setFingers b;
 
-    public /* synthetic */ f(setFingers setfingers, int i) {
+    public /* synthetic */ IdentyF(setFingers setfingers, int i) {
         this.a = i;
         this.b = setfingers;
     }
