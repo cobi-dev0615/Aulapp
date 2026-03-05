@@ -17,33 +17,7 @@
     <string name="IC2_category">Instructor - Camiones servicio público</string>
     <string name="IC3_category">Instructor - Vehículos articulados servicio público</string>
     <string name="RC1_category">Re categorización C1</string>
-    <string name="abc_action_bar_home_description">Navigate home</string>
-    <string name="abc_action_bar_up_description">Navigate up</string>
-    <string name="abc_action_menu_overflow_description">More options</string>
-    <string name="abc_action_mode_done">Done</string>
-    <string name="abc_activity_chooser_view_see_all">See all</string>
-    <string name="abc_activitychooserview_choose_application">Choose an app</string>
-    <string name="abc_capital_off">OFF</string>
-    <string name="abc_capital_on">ON</string>
-    <string name="abc_menu_alt_shortcut_label">Alt+</string>
-    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
-    <string name="abc_menu_delete_shortcut_label">delete</string>
-    <string name="abc_menu_enter_shortcut_label">enter</string>
-    <string name="abc_menu_function_shortcut_label">Function+</string>
-    <string name="abc_menu_meta_shortcut_label">Meta+</string>
-    <string name="abc_menu_shift_shortcut_label">Shift+</string>
-    <string name="abc_menu_space_shortcut_label">space</string>
-    <string name="abc_menu_sym_shortcut_label">Sym+</string>
-    <string name="abc_prepend_shortcut_label">Menu+</string>
-    <string name="abc_search_hint">Search…</string>
-    <string name="abc_searchview_description_clear">Clear query</string>
-    <string name="abc_searchview_description_query">Search query</string>
-    <string name="abc_searchview_description_search">Search</string>
-    <string name="abc_searchview_description_submit">Submit query</string>
-    <string name="abc_searchview_description_voice">Voice search</string>
-    <string name="abc_shareactionprovider_share_with">Share with</string>
-    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <string name="abc_toolbar_collapse_description">Collapse</string>
+
     <string name="about_available">Disponible</string>
     <string name="about_copy_to_clipboard">Copiar al portapapeles</string>
     <string name="about_not_available">No disponible</string>
@@ -51,22 +25,17 @@
     <string name="action_settings">Ajustes</string>
     <string name="action_settings_aulapp">Settings</string>
     <string name="action_sync">Sincronizar</string>
-    <string name="androidx_startup">androidx.startup</string>
+
     <string name="angle">Ángulo</string>
     <string name="answer_no">No</string>
     <string name="answer_yes">Sí</string>
     <string name="app_name">Aulapp instructores</string>
     <string name="app_version">null</string>
-    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+
     <string name="auto_stabilise_info">La nivelación automática rotará automáticamente las fotos para que aparezcan niveladas. Tenga en cuenta que esto significa que las imágenes aparecerán con una resolución PngjException ligeramente más baja (debido a la rotación y el recorte que se requiere).</string>
     <string name="auto_stabilise_not_supported">Lo sentimos, el nivel automático no es compatible con este dispositivo</string>
     <string name="back_camera">Camara trasera</string>
-    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
-    <string name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
-    <string name="bottomsheet_action_expand">Expand the bottom sheet</string>
-    <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
-    <string name="bottomsheet_drag_handle_clicked">Drag handle double-tapped</string>
-    <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
+
     <string name="bright">Brillante</string>
     <string name="btn_cancel">Cancelar</string>
     <string name="btn_finish">TERMINAR</string>
@@ -75,13 +44,7 @@
     <string name="button_name_biometric_registration">Registrar huellas</string>
     <string name="button_name_biometric_verify">Verificar huellas</string>
     <string name="button_title_error_endpoint">Reintentar</string>
-    <string name="call_notification_answer_action">Answer</string>
-    <string name="call_notification_answer_video_action">Video</string>
-    <string name="call_notification_decline_action">Decline</string>
-    <string name="call_notification_hang_up_action">Hang Up</string>
-    <string name="call_notification_incoming_text">Incoming call</string>
-    <string name="call_notification_ongoing_text">Ongoing call</string>
-    <string name="call_notification_screening_text">Screening an incoming call</string>
+
     <string name="calltinit">Necesitas llamar al método tint()</string>
     <string name="camera">Cámara</string>
     <string name="camera_error">Error grave de la cámara</string>
@@ -114,36 +77,15 @@
     <string name="cant_write_folder">No puedo escribir en esta carpeta.</string>
     <string name="capturing">Capturing…</string>
     <string name="ceas_text_input_hint">Seleccione CEA</string>
-    <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
-    <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
-    <string name="character_counter_pattern">%1$d/%2$d</string>
+
     <string name="chip_all">Todos</string>
     <string name="choose_another_folder">Elige otra carpeta</string>
     <string name="clear_folder_history">Borrar historial de carpetas</string>
     <string name="clear_folder_history_question">¿Borrar historial de carpetas?</string>
-    <string name="clear_text_end_icon_content_description">Clear text</string>
-    <string name="close_drawer">Close navigation menu</string>
-    <string name="close_sheet">Close sheet</string>
+
     <string name="color_effect">efecto de color</string>
     <string name="com.google.firebase.crashlytics.mapping_file_id">60b225cba7e24b23a33adf0a087a4033</string>
-    <string name="common_google_play_services_enable_button">Enable</string>
-    <string name="common_google_play_services_enable_text">%1$s won\'t work unless you enable Google Play services.</string>
-    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
-    <string name="common_google_play_services_install_button">Install</string>
-    <string name="common_google_play_services_install_text">%1$s won\'t run without Google Play services, which are missing from your device.</string>
-    <string name="common_google_play_services_install_title">Get Google Play services</string>
-    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
-    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
-    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
-    <string name="common_google_play_services_unsupported_text">%1$s won\'t run without Google Play services, which are not supported by your device.</string>
-    <string name="common_google_play_services_update_button">Update</string>
-    <string name="common_google_play_services_update_text">%1$s won\'t run unless you update Google Play services.</string>
-    <string name="common_google_play_services_update_title">Update Google Play services</string>
-    <string name="common_google_play_services_updating_text">%1$s won\'t run without Google Play services, which are currently updating.</string>
-    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
-    <string name="common_open_on_phone">Open on phone</string>
-    <string name="common_signin_button_text">Sign in</string>
-    <string name="common_signin_button_text_long">Sign in with Google</string>
+
     <string name="cont_of">de</string>
     <string name="content_description_close_dialog">close dialog</string>
     <string name="content_description_icon_password_input">icono contraseña input</string>
@@ -156,8 +98,7 @@
     <string name="content_recovery_link">Olvidé mi contraseña</string>
     <string name="content_recovery_text_title">Recuperar contraseña\n\nPor favor ingresa tu correo electronico</string>
     <string name="dark">Oscuro</string>
-    <string name="default_error_message">Invalid input</string>
-    <string name="default_popup_window_title">Pop-Up Window</string>
+
     <string name="define_zxingandroidembedded" />
     <string name="description_channel_sync">Notificaciones de sincronización de datos recurrentes</string>
     <string name="dest_title">destination title</string>
@@ -309,7 +250,7 @@
     <string name="dont_show_again">no volver a mostrar</string>
     <string name="dropdown_cea_hint">Seleccione CEA</string>
     <string name="dropdown_hint">Selecciona una opción</string>
-    <string name="dropdown_menu">Dropdown menu</string>
+
     <string name="dummy_error_login">El usuario y la contraseña no coinciden</string>
     <string name="email_dummy">email@yopmail.co</string>
     <string name="enroll_finger_print_biometric_definition_text">Registrar biometría</string>
@@ -342,9 +283,7 @@
     <string name="enum_user_profile_none">None</string>
     <string name="enum_user_profile_receptionist">Recepcionista</string>
     <string name="enum_user_profile_receptionist_translated">Recepcionista</string>
-    <string name="error_a11y_label">Error: invalid</string>
-    <string name="error_icon_content_description">Error</string>
-    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+
     <string name="exposure">Exposición</string>
     <string name="exposure_compensation">Compensación de exposición</string>
     <string name="exposure_lock">Bloqueo de exposición</string>
@@ -352,8 +291,7 @@
     <string name="exposure_shutter_speed">Velocidad de obturación</string>
     <string name="exposure_unlocked">Exposición desbloqueada</string>
     <string name="fab_action">Bton que activa o muestra informacion de la ubicacion</string>
-    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
-    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+
     <string name="failed_create_folder">No se pudo crear la carpeta</string>
     <string name="failed_to_auto_stabilise">No se pudo nivelar automáticamente</string>
     <string name="failed_to_open_camera_1">NO SE PUEDE ABRIR LA CÁMARA.</string>
@@ -391,10 +329,10 @@
     <string name="helper_text_cea">CEA</string>
     <string name="helper_text_document_number">Usuario</string>
     <string name="helper_text_password">Contraseña</string>
-    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+
     <string name="hint_text_cea">seleccione CEA</string>
     <string name="hint_text_search_bar_document">Documento o correo electrónico</string>
-    <string name="icon_content_description">Dialog Icon</string>
+
     <string name="icon_description_close_webview">Icono para cerrar navegador</string>
     <string name="id_EXIT">EXIT</string>
     <string name="id_at_timed_out">La iluminación es extraña</string>
@@ -793,12 +731,12 @@
     <string name="id_yes">SI</string>
     <string name="id_zero">0</string>
     <string name="in_progress">In progress</string>
-    <string name="indeterminate">Partially checked</string>
+
     <string name="infinite">Infinito</string>
     <string name="intro_ok">OK (Este mensaje no se mostrará de nuevo)</string>
     <string name="intro_text">Toque para enfocar y presione el botón de la cámara para tomar fotos. Para obtener más ayuda, haga clic en Ayuda en línea desde Configuración. Open Camera es completamente gratis. Si le gusta esta aplicación, considere comprar mi aplicación de donación :) (consulte el enlace en Configuración o Ayuda en línea). Política de privacidad: se requiere permiso de ubicación para el geoetiquetado, pero está deshabilitado de forma predeterminada. Si está habilitado, su ubicación está codificada en los archivos guardados (y solo se usa para este propósito).</string>
     <string name="iso">ISO</string>
-    <string name="item_view_role_description">Tab</string>
+
     <string name="iv_class_type_content_description">icono tipo de clase</string>
     <string name="last_name">Last Name</string>
     <string name="last_searches">Búsquedas recientes</string>
@@ -812,44 +750,7 @@
     <string name="library_zxingandroidembedded_licenseId">apache_2_0</string>
     <string name="library_zxingandroidembedded_repositoryLink">https://github.com/journeyapps/zxing-android-embedded</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a, ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae, molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor bibendum, vel congue leo egestas.\n\n Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel, molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula, in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque est.\n\n Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh. Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc, quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus convallis.\n\n Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper, libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.</string>
-    <string name="m3_exceed_max_badge_text_suffix">%1$s%2$s</string>
-    <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
-    <string name="m3_ref_typeface_brand_regular">sans-serif</string>
-    <string name="m3_ref_typeface_plain_medium">sans-serif-medium</string>
-    <string name="m3_ref_typeface_plain_regular">sans-serif</string>
-    <string name="m3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
-    <string name="m3_sys_motion_easing_emphasized_accelerate">cubic-bezier(0.3, 0, 0.8, 0.2)</string>
-    <string name="m3_sys_motion_easing_emphasized_decelerate">cubic-bezier(0.1, 0.7, 0.1, 1)</string>
-    <string name="m3_sys_motion_easing_emphasized_path_data">M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1</string>
-    <string name="m3_sys_motion_easing_legacy">cubic-bezier(0.4, 0, 0.2, 1)</string>
-    <string name="m3_sys_motion_easing_legacy_accelerate">cubic-bezier(0.4, 0, 1, 1)</string>
-    <string name="m3_sys_motion_easing_legacy_decelerate">cubic-bezier(0, 0, 0.2, 1)</string>
-    <string name="m3_sys_motion_easing_linear">cubic-bezier(0, 0, 1, 1)</string>
-    <string name="m3_sys_motion_easing_standard">cubic-bezier(0.2, 0, 0, 1)</string>
-    <string name="m3_sys_motion_easing_standard_accelerate">cubic-bezier(0.3, 0, 1, 1)</string>
-    <string name="m3_sys_motion_easing_standard_decelerate">cubic-bezier(0, 0, 0, 1)</string>
-    <string name="material_clock_display_divider">:</string>
-    <string name="material_clock_toggle_content_description">Select AM or PM</string>
-    <string name="material_hour_24h_suffix">%1$s hours</string>
-    <string name="material_hour_selection">Select hour</string>
-    <string name="material_hour_suffix">%1$s o\'clock</string>
-    <string name="material_minute_selection">Select minutes</string>
-    <string name="material_minute_suffix">%1$s minutes</string>
-    <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
-    <string name="material_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
-    <string name="material_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
-    <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
-    <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
-    <string name="material_slider_range_end">Range end</string>
-    <string name="material_slider_range_start">Range start</string>
-    <string name="material_slider_value">Value</string>
-    <string name="material_timepicker_am">AM</string>
-    <string name="material_timepicker_clock_mode_description">Switch to clock mode for the time input.</string>
-    <string name="material_timepicker_hour">Hour</string>
-    <string name="material_timepicker_minute">Minute</string>
-    <string name="material_timepicker_pm">PM</string>
-    <string name="material_timepicker_select_time">Select time</string>
-    <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
+
     <string name="max_duration">Duración máxima</string>
     <string name="max_filesize">Tamaño máximo de archivo</string>
     <string name="mb_abbreviation">MB</string>
@@ -870,90 +771,26 @@
     <string name="message_sessions_active_other_mobile">Tienes un sesión activa en otro dispositivo, debes cerrar sesión para poder ingresar.</string>
     <string name="metres_abbreviation">m</string>
     <string name="msg_network_error">At this moment you cannot interact with the application correctly because you do not have internet access, check your connection and try again.</string>
-    <string name="mtrl_badge_numberless_content_description">New notification</string>
-    <string name="mtrl_checkbox_button_icon_path_checked">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
-    <string name="mtrl_checkbox_button_icon_path_group_name">icon</string>
-    <string name="mtrl_checkbox_button_icon_path_indeterminate">M13.4,15 11,15 11,17 13.4,17 21,17 21,15z</string>
-    <string name="mtrl_checkbox_button_icon_path_name">icon path</string>
-    <string name="mtrl_checkbox_button_path_checked">M23,7H9C7.9,7,7,7.9,7,9v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V9C25,7.9,24.1,7,23,7z</string>
-    <string name="mtrl_checkbox_button_path_group_name">button</string>
-    <string name="mtrl_checkbox_button_path_name">button path</string>
-    <string name="mtrl_checkbox_button_path_unchecked">M23,7H9C7.9,7,7,7.9,7,9v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V9C25,7.9,24.1,7,23,7z M23,23H9V9h14V23z</string>
-    <string name="mtrl_checkbox_state_description_checked">Checked</string>
-    <string name="mtrl_checkbox_state_description_indeterminate">Partially checked</string>
-    <string name="mtrl_checkbox_state_description_unchecked">Not checked</string>
-    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description">More than %1$d new notifications</string>
-    <string name="mtrl_exceed_max_badge_number_suffix">%1$d%2$s</string>
-    <string name="mtrl_picker_a11y_next_month">Change to next month</string>
-    <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
-    <string name="mtrl_picker_announce_current_range_selection">Start date selection: %1$s – End date selection: %2$s</string>
-    <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
-    <string name="mtrl_picker_announce_current_selection_none">none</string>
-    <string name="mtrl_picker_cancel">Cancel</string>
-    <string name="mtrl_picker_confirm">OK</string>
-    <string name="mtrl_picker_date_header_selected">%1$s</string>
-    <string name="mtrl_picker_date_header_title">Select Date</string>
-    <string name="mtrl_picker_date_header_unselected">Selected date</string>
-    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
-    <string name="mtrl_picker_end_date_description">End date %1$s</string>
-    <string name="mtrl_picker_invalid_format">Invalid format.</string>
-    <string name="mtrl_picker_invalid_format_example">Example: %1$s</string>
-    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
-    <string name="mtrl_picker_invalid_range">Invalid range.</string>
-    <string name="mtrl_picker_navigate_to_current_year_description">Navigate to current year %1$d</string>
-    <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$d</string>
-    <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
-    <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
-    <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
-    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
-    <string name="mtrl_picker_range_header_title">Select Range</string>
-    <string name="mtrl_picker_range_header_unselected">Start date – End date</string>
-    <string name="mtrl_picker_save">Save</string>
-    <string name="mtrl_picker_start_date_description">Start date %1$s</string>
-    <string name="mtrl_picker_text_input_date_hint">Date</string>
-    <string name="mtrl_picker_text_input_date_range_end_hint">End date</string>
-    <string name="mtrl_picker_text_input_date_range_start_hint">Start date</string>
-    <string name="mtrl_picker_text_input_day_abbr">d</string>
-    <string name="mtrl_picker_text_input_month_abbr">m</string>
-    <string name="mtrl_picker_text_input_year_abbr">y</string>
-    <string name="mtrl_picker_today_description">Today %1$s</string>
-    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
-    <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to Calendar view</string>
-    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
-    <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to year view</string>
-    <string name="mtrl_switch_thumb_group_name">circle_group</string>
-    <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
-    <string name="mtrl_switch_thumb_path_morphing">M0,16 A11,11 0 0,1 11,5 H21 A11,11 0 0,1 21,27 H11 A11,11 0 0,1 0,16</string>
-    <string name="mtrl_switch_thumb_path_name">circle</string>
-    <string name="mtrl_switch_thumb_path_pressed">M2,16 A14,14 0 0,1 16,2 H16 A14,14 0 0,1 16,30 H16 A14,14 0 0,1 2,16</string>
-    <string name="mtrl_switch_thumb_path_unchecked">M8,16 A8,8 0 0,1 16,8 H16 A8,8 0 0,1 16,24 H16 A8,8 0 0,1 8,16</string>
-    <string name="mtrl_switch_track_decoration_path">M1,16 A15,15 0 0,1 16,1 H36 A15,15 0 0,1 36,31 H16 A15,15 0 0,1 1,16</string>
-    <string name="mtrl_switch_track_path">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
-    <string name="mtrl_timepicker_cancel">Cancel</string>
-    <string name="mtrl_timepicker_confirm">OK</string>
+
+
+
     <string name="name">Name</string>
     <string name="name_channel_sync">Sincronización de datos</string>
-    <string name="nav_app_bar_navigate_up_description">Navigate up</string>
-    <string name="nav_app_bar_open_drawer_description">Open navigation drawer</string>
+
     <string name="navigation_drawer_close">Close</string>
     <string name="navigation_drawer_open">Open</string>
-    <string name="navigation_menu">Navigation menu</string>
+
     <string name="new_folder">Nueva carpeta</string>
     <string name="next">Next</string>
     <string name="no_gallery_app">No hay aplicación de galería disponible</string>
     <string name="no_permission">PERMISOS NO DISPONIBLES</string>
     <string name="none_result_search">¡No existen coincidencias para esta búsqueda!</string>
-    <string name="not_selected">Not selected</string>
+
     <string name="not_supported">no es compatible con su dispositivo</string>
     <string name="off">Apagado</string>
     <string name="on">Encendido</string>
     <string name="parent_folder">Carpeta principal</string>
-    <string name="password_toggle_content_description">Show password</string>
-    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
-    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
-    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
-    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+
     <string name="permission_permanently_denied_camera_face">Ha rechazado el permiso de cámara, este es usado para poder utilizar el reconocimiento facial.</string>
     <string name="permission_permanently_denied_camera_finger">Ha rechazado el permiso de cámara, este es usado para poder utilizar el lector de huellas.</string>
     <string name="permission_permanently_denied_gps">Ha rechazado el permiso de localización, este es usado para poder trazar tu ruta.</string>
@@ -1157,22 +994,19 @@
     <string name="screen_is_locked">La pantalla está bloqueada desliza la pantalla para desbloquear</string>
     <string name="screen_lock_message_1">[BLOQUEADO:</string>
     <string name="screen_lock_message_2">Desliza para desbloquear]</string>
-    <string name="search_menu_title">Search</string>
+
     <string name="search_trainee_instructor">Buscar aprendices o instructores</string>
-    <string name="searchbar_scrolling_view_behavior">com.google.android.material.search.SearchBar$ScrollingViewBehavior</string>
-    <string name="searchview_clear_text_content_description">Clear text</string>
-    <string name="searchview_navigation_content_description">Back</string>
+
     <string name="second_fragment_label">Second Fragment</string>
     <string name="seconds_abbreviation">s</string>
-    <string name="selected">Selected</string>
+
     <string name="share">Compartir foto</string>
-    <string name="side_sheet_accessibility_pane_title">Side Sheet</string>
-    <string name="side_sheet_behavior">com.google.android.material.sidesheet.SideSheetBehavior</string>
+
     <string name="sorry">Lo siento</string>
     <string name="speech_recognizer_started">Decir Queso</string>
     <string name="start_theory_exam">Ingreso examen teórico</string>
     <string name="started_timer">Temporizador iniciado</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
+
     <string name="strLeft">Izquierda</string>
     <string name="strRight">Derecha</string>
     <string name="strSnap">Tomar Chasquido</string>
@@ -1185,7 +1019,7 @@
     <string name="switch_to_back_camera">Cambiar a cámara trasera</string>
     <string name="switch_to_front_camera">Cambiar a cámara frontal</string>
     <string name="switch_to_photo">Cambiar al modo foto</string>
-    <string name="tab">Tab</string>
+
     <string name="tag_hand_check">X</string>
     <string name="tag_hand_uncheck">O</string>
     <string name="tag_rectangle_check">X</string>
