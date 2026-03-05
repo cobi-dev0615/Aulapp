@@ -1814,12 +1814,12 @@ final class getFingers extends e1 {
         long r1 = this.CaptureThumbActivity;
         try {
             if (r1 != 0) {
-                r1 = 4613712638259704627;
+                r1 = 4613712638259704627L;
                 d = 3.9000000953674316d;
                 this.getL2Score = new com.identy.ui.d.values(this.Action, 2.9d, 3.9000000953674316d, 2.9d, 2.740000009536743d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), -90, true, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);
                 resetAttempt = (pfkrolGetQuality + 11) % Uuid.SIZE_BITS;
             } else {
-                r1 = 4612811918334230528;
+                r1 = 4612811918334230528L;
                 d = 3.2d;
                 this.getL2Score = new com.identy.ui.d.values(this.Action, 2.5d, 3.2d, 2.5d, 2.740000009536743d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), -90, true, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);
             }
