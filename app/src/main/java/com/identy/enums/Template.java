@@ -23,7 +23,7 @@ import android.view.ViewConfiguration;
 import android.widget.ExpandableListView;
 import arid.Action;
 import arid.PngBadCharsetException;
-import arid.a;
+import arid.AridA;
 import arid.chunks.Attempt;
 import arid.onErrorResponse;
 import com.d.e.a.values;
@@ -125,7 +125,7 @@ public enum Template {
                     OutputStream outputStream = onerrorresponse.PngjInputException;
                     pngjException.PngjExceptionInternal = outputStream;
                     pngjException.PngjInputException = 0;
-                    a.PngjBadCrcException(outputStream, a.PngjBadSignature());
+                    AridA.PngjBadCrcException(outputStream, AridA.PngjBadSignature());
                     onerrorresponse.PngjBadSignature = 0;
                     arid.chunks.PngjOutputException pngjOutputException = new arid.chunks.PngjOutputException(onerrorresponse.PngjException);
                     pngjOutputException.values().PngjBadCrcException(onerrorresponse.PngjInputException);

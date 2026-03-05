@@ -1,15 +1,15 @@
 package arid.chunks;
 
-import arid.a;
+import arid.AridA;
 import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Pattern;
 
 /* loaded from: classes.dex */
 public abstract class valueOf {
-    public static final byte[] PngjBadSignature = "IHDR".getBytes(a.valueOf);
-    public static final byte[] PngjException = "IDAT".getBytes(a.valueOf);
-    public static final byte[] valueOf = "IEND".getBytes(a.valueOf);
+    public static final byte[] PngjBadSignature = "IHDR".getBytes(AridA.valueOf);
+    public static final byte[] PngjException = "IDAT".getBytes(AridA.valueOf);
+    public static final byte[] valueOf = "IEND".getBytes(AridA.valueOf);
 
     static {
         Pattern.compile("[a-zA-Z][a-zA-Z][A-Z][a-zA-Z]");
@@ -28,7 +28,7 @@ public abstract class valueOf {
     }
 
     public static byte[] PngjBadSignature(String str) {
-        return str.getBytes(a.valueOf);
+        return str.getBytes(AridA.valueOf);
     }
 
     public static boolean PngjException(PngjInputException pngjInputException) {
@@ -40,7 +40,7 @@ public abstract class valueOf {
     }
 
     public static String values(byte[] bArr) {
-        return new String(bArr, a.valueOf);
+        return new String(bArr, AridA.valueOf);
     }
 
     public static boolean PngjException(String str) {

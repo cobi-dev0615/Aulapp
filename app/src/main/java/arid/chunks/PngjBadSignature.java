@@ -1,6 +1,6 @@
 package arid.chunks;
 
-import arid.a;
+import arid.AridA;
 import java.io.OutputStream;
 import java.util.logging.Logger;
 import java.util.zip.CRC32;
@@ -48,13 +48,13 @@ public class PngjBadSignature {
         if (i > 0) {
             this.PngjUnsupportedException.update(this.valueOf, 0, i);
         }
-        a.PngjBadSignature((int) this.PngjUnsupportedException.getValue(), this.PngjInputException, 0);
+        AridA.PngjBadSignature((int) this.PngjUnsupportedException.getValue(), this.PngjInputException, 0);
     }
 
     private void valueOf(OutputStream outputStream) {
         if (this.PngjBadCrcException.length == 4) {
             a.PngjException(outputStream, this.PngjException);
-            a.PngjBadCrcException(outputStream, this.PngjBadCrcException);
+            AridA.PngjBadCrcException(outputStream, this.PngjBadCrcException);
         } else {
             StringBuilder sb = new StringBuilder("bad chunkid [");
             sb.append(this.PngjBadSignature);
@@ -74,10 +74,10 @@ public class PngjBadSignature {
                 sb.append("]");
                 throw new arid.PngjOutputException(sb.toString());
             }
-            a.PngjBadCrcException(outputStream, bArr, i);
+            AridA.PngjBadCrcException(outputStream, bArr, i);
         }
         PngjException();
-        a.PngjBadCrcException(outputStream, this.PngjInputException, 4);
+        AridA.PngjBadCrcException(outputStream, this.PngjInputException, 4);
     }
 
     public boolean equals(Object obj) {

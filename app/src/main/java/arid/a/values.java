@@ -3,7 +3,7 @@ package arid.a;
 import arid.Action;
 import arid.PngjExceptionInternal;
 import arid.PngjOutputException;
-import arid.a;
+import arid.AridA;
 import arid.a.PngjBadCrcException;
 import java.util.Arrays;
 import kotlin.KotlinVersion;
@@ -183,14 +183,14 @@ public final class values extends PngjException {
                                         i2 = 1;
                                         for (int i17 = 1; i17 <= i13; i17++) {
                                             int[] iArr2 = pngjBadCrcException.PngjPrematureEnding;
-                                            int PngjBadCrcException2 = a.PngjBadCrcException(bArr2[i17], 0, bArr3[i17] & UByte.MAX_VALUE, 0);
+                                            int PngjBadCrcException2 = AridA.PngjBadCrcException(bArr2[i17], 0, bArr3[i17] & UByte.MAX_VALUE, 0);
                                             iArr2[PngjBadCrcException2] = iArr2[PngjBadCrcException2] + 1;
                                         }
                                         int i18 = pngjBadCrcException.valueOf.PngjInputException + 1;
                                         int i19 = 1;
                                         while (i18 <= i13) {
                                             int[] iArr3 = pngjBadCrcException.PngjPrematureEnding;
-                                            int PngjBadCrcException3 = a.PngjBadCrcException(bArr2[i18], bArr2[i19] & UByte.MAX_VALUE, bArr3[i18] & UByte.MAX_VALUE, bArr3[i19] & UByte.MAX_VALUE);
+                                            int PngjBadCrcException3 = AridA.PngjBadCrcException(bArr2[i18], bArr2[i19] & UByte.MAX_VALUE, bArr3[i18] & UByte.MAX_VALUE, bArr3[i19] & UByte.MAX_VALUE);
                                             iArr3[PngjBadCrcException3] = iArr3[PngjBadCrcException3] + 1;
                                             i18++;
                                             i19++;

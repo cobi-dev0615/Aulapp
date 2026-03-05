@@ -1,7 +1,7 @@
 package arid.chunks;
 
 import arid.Action;
-import arid.a;
+import arid.AridA;
 import arid.chunks.PngjInputException;
 
 /* loaded from: classes.dex */
@@ -22,8 +22,8 @@ public final class PngjPrematureEnding extends e1 {
     @Override // arid.chunks.PngjInputException
     public final PngjBadSignature values() {
         PngjBadSignature pngjBadSignature = new PngjBadSignature(9, valueOf.PngjBadSignature(this.PngjBadSignature), true);
-        a.PngjBadSignature((int) this.PngjInputException, pngjBadSignature.valueOf, 0);
-        a.PngjBadSignature((int) this.PngjUnsupportedException, pngjBadSignature.valueOf, 4);
+        AridA.PngjBadSignature((int) this.PngjInputException, pngjBadSignature.valueOf, 0);
+        AridA.PngjBadSignature((int) this.PngjUnsupportedException, pngjBadSignature.valueOf, 4);
         pngjBadSignature.valueOf[8] = (byte) this.PngjExceptionInternal;
         return pngjBadSignature;
     }

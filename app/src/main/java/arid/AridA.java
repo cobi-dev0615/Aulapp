@@ -38,7 +38,7 @@ import kotlin.jvm.internal.ByteCompanionObject;
 import kotlin.uuid.Uuid;
 
 /* loaded from: classes.dex */
-public final class a {
+public final class AridA {
     public static Charset valueOf;
 
     public class PngjBadCrcException extends ThreadLocal {

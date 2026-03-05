@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.ExpandableListView;
 import arid.Action;
-import arid.a;
+import arid.AridA;
 import arid.e1;
 import com.d.e.PngjOutputException;
 import com.d.e.PngjPrematureEnding;
@@ -602,14 +602,14 @@ public abstract class PngjException {
                     if (i5 > i) {
                         break;
                     }
-                    bArr3[i5] = (byte) a.PngjBadCrcException(bArr[i5], 0, bArr2[i5] & UByte.MAX_VALUE, 0);
+                    bArr3[i5] = (byte) AridA.PngjBadCrcException(bArr[i5], 0, bArr2[i5] & UByte.MAX_VALUE, 0);
                     i5++;
                     getData = (getQualityScore + 121) % Uuid.SIZE_BITS;
                 }
                 int i6 = i + 1;
                 int i7 = 1;
                 while (i6 <= this.PngjOutputException) {
-                    bArr3[i6] = (byte) a.PngjBadCrcException(bArr[i6], bArr[i7] & UByte.MAX_VALUE, bArr2[i6] & UByte.MAX_VALUE, bArr2[i7] & UByte.MAX_VALUE);
+                    bArr3[i6] = (byte) AridA.PngjBadCrcException(bArr[i6], bArr[i7] & UByte.MAX_VALUE, bArr2[i6] & UByte.MAX_VALUE, bArr2[i7] & UByte.MAX_VALUE);
                     i6++;
                     i7++;
                 }
