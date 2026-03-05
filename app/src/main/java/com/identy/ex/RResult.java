@@ -3,7 +3,7 @@ package com.identy.ex;
 import android.os.Process;
 import com.d.e.a.values;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.lang.reflect.Method;
 
@@ -48,7 +48,7 @@ public class RResult {
                     int i9 = ((i7 | i8) << 1) - (i8 ^ i7);
                     int i10 = ((i9 | (-1520945756)) << 1) - ((-1520945756) ^ i9);
                     int i11 = i10 >> 27;
-                    int e = b.e((i11 | (-63)) << 1, i11 ^ (-63), 32, -1);
+                    int e = IdentyB.e((i11 | (-63)) << 1, i11 ^ (-63), 32, -1);
                     int i12 = ((i10 | e) << 1) - (e ^ i10);
                     int i13 = ((i10 >> 25) - 255) / 128;
                     int i14 = -(i12 ^ ((i13 & 1) + (i13 | 1)));
@@ -81,7 +81,7 @@ public class RResult {
             int i92 = ((i72 | i82) << 1) - (i82 ^ i72);
             int i102 = ((i92 | (-1520945756)) << 1) - ((-1520945756) ^ i92);
             int i112 = i102 >> 27;
-            int e2 = b.e((i112 | (-63)) << 1, i112 ^ (-63), 32, -1);
+            int e2 = IdentyB.e((i112 | (-63)) << 1, i112 ^ (-63), 32, -1);
             int i122 = ((i102 | e2) << 1) - (e2 ^ i102);
             int i132 = ((i102 >> 25) - 255) / 128;
             int i142 = -(i122 ^ ((i132 & 1) + (i132 | 1)));
@@ -534,7 +534,7 @@ public class RResult {
                     int i8 = (i6 & i7) + (i7 | i6);
                     int i9 = (i8 & 2001021777) + (2001021777 | i8);
                     int i10 = i9 >> 25;
-                    int e = b.e((i10 | (-255)) << 1, i10 ^ (-255), 128, -1);
+                    int e = IdentyB.e((i10 | (-255)) << 1, i10 ^ (-255), 128, -1);
                     int i11 = (i9 ^ e) + ((e & i9) << 1);
                     int i12 = i9 >> 21;
                     int i13 = ((i12 & (-4095)) + (i12 | (-4095))) / 2048;
@@ -583,7 +583,7 @@ public class RResult {
             int i82 = (i62 & i72) + (i72 | i62);
             int i92 = (i82 & 2001021777) + (2001021777 | i82);
             int i102 = i92 >> 25;
-            int e2 = b.e((i102 | (-255)) << 1, i102 ^ (-255), 128, -1);
+            int e2 = IdentyB.e((i102 | (-255)) << 1, i102 ^ (-255), 128, -1);
             int i112 = (i92 ^ e2) + ((e2 & i92) << 1);
             int i122 = i92 >> 21;
             int i132 = ((i122 & (-4095)) + (i122 | (-4095))) / 2048;

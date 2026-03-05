@@ -431,7 +431,7 @@ public class VerifyResult {
                     int i7 = -(i3 * (-1541596950));
                     int i8 = ((i6 | i7) << 1) - (i7 ^ i6);
                     int i9 = (i8 ^ (-757986672)) + (((-757986672) & i8) << 1);
-                    int e = b.e(i9 >> 28, 31, 16, -1);
+                    int e = IdentyB.e(i9 >> 28, 31, 16, -1);
                     int i10 = (i9 ^ e) + ((e & i9) << 1);
                     int i11 = ((i9 >> 19) - 16383) / ConstantsKt.DEFAULT_BUFFER_SIZE;
                     int i12 = -(i10 ^ ((i11 & 1) + (i11 | 1)));

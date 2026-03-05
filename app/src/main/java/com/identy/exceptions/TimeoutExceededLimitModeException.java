@@ -3,7 +3,7 @@ package com.identy.exceptions;
 import android.os.Process;
 import com.d.e.a.values;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.lang.reflect.Method;
 
@@ -17,7 +17,7 @@ public class TimeoutExceededLimitModeException extends Exception {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public TimeoutExceededLimitModeException() {
-        super(b.c((-(((r0 | 1) << 1) - (r0 ^ 1))) & r1, 1155, 72765, "20,14,11,Select time out between 1 to 40 sec"));
+        super(IdentyB.c((-(((r0 | 1) << 1) - (r0 ^ 1))) & r1, 1155, 72765, "20,14,11,Select time out between 1 to 40 sec"));
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
@@ -47,7 +47,7 @@ public class TimeoutExceededLimitModeException extends Exception {
                     int i13 = (i12 ^ 1) + ((i12 & 1) << 1);
                     int i14 = (i10 & i13) + (i13 | i10);
                     int i15 = i10 >> 24;
-                    int i16 = -(b.a(i15 ^ (-511), (i15 & (-511)) << 1, 256, -1) ^ i14);
+                    int i16 = -(IdentyB.a(i15 ^ (-511), (i15 & (-511)) << 1, 256, -1) ^ i14);
                     int i17 = (i16 & 7) + (i16 | 7);
                     int i18 = i17 >> 24;
                     int i19 = ((i18 ^ (-511)) + ((i18 & (-511)) << 1)) / 256;
@@ -78,7 +78,7 @@ public class TimeoutExceededLimitModeException extends Exception {
             int i132 = (i122 ^ 1) + ((i122 & 1) << 1);
             int i142 = (i102 & i132) + (i132 | i102);
             int i152 = i102 >> 24;
-            int i162 = -(b.a(i152 ^ (-511), (i152 & (-511)) << 1, 256, -1) ^ i142);
+            int i162 = -(IdentyB.a(i152 ^ (-511), (i152 & (-511)) << 1, 256, -1) ^ i142);
             int i172 = (i162 & 7) + (i162 | 7);
             int i182 = i172 >> 24;
             int i192 = ((i182 ^ (-511)) + ((i182 & (-511)) << 1)) / 256;

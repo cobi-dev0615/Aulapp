@@ -29,7 +29,7 @@ public final class EnumStatusStepSession {
     private EnumStatusStepSession(String str, int i) {
     }
 
-    public static EnumStatusStepSession valueOf(String str) {
+    public static EnumStatusStepSession valueOfString(String str) {
         return (EnumStatusStepSession) Enum.valueOf(EnumStatusStepSession.class, str);
     }
 

@@ -67,7 +67,7 @@ public enum WSQCompression {
         $$b = 151;
     }
 
-    public static WSQCompression valueOf(String str) {
+    public static WSQCompression valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
@@ -224,9 +224,9 @@ public enum WSQCompression {
                     int i8 = -(i4 * 441695806);
                     int i9 = ((i7 ^ i8) + ((i8 & i7) << 1)) - 1565919223;
                     int i10 = i9 >> 16;
-                    int i11 = (i9 - (~b.a(i10 ^ (-131071), (i10 & (-131071)) << 1, 65536, -1))) - 1;
+                    int i11 = (i9 - (~IdentyB.a(i10 ^ (-131071), (i10 & (-131071)) << 1, 65536, -1))) - 1;
                     int i12 = i9 >> 17;
-                    int i13 = -(i11 ^ b.a(i12 ^ (-65535), (i12 & (-65535)) << 1, 32768, -1));
+                    int i13 = -(i11 ^ IdentyB.a(i12 ^ (-65535), (i12 & (-65535)) << 1, 32768, -1));
                     int i14 = (i13 ^ 8) + ((i13 & 8) << 1);
                     int i15 = i14 >> 27;
                     int i16 = ((i15 ^ (-63)) + ((i15 & (-63)) << 1)) / 32;
@@ -252,9 +252,9 @@ public enum WSQCompression {
             int i82 = -(i42 * 441695806);
             int i92 = ((i72 ^ i82) + ((i82 & i72) << 1)) - 1565919223;
             int i102 = i92 >> 16;
-            int i112 = (i92 - (~b.a(i102 ^ (-131071), (i102 & (-131071)) << 1, 65536, -1))) - 1;
+            int i112 = (i92 - (~IdentyB.a(i102 ^ (-131071), (i102 & (-131071)) << 1, 65536, -1))) - 1;
             int i122 = i92 >> 17;
-            int i132 = -(i112 ^ b.a(i122 ^ (-65535), (i122 & (-65535)) << 1, 32768, -1));
+            int i132 = -(i112 ^ IdentyB.a(i122 ^ (-65535), (i122 & (-65535)) << 1, 32768, -1));
             int i142 = (i132 ^ 8) + ((i132 & 8) << 1);
             int i152 = i142 >> 27;
             int i162 = ((i152 ^ (-63)) + ((i152 & (-63)) << 1)) / 32;

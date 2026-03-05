@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.identy.FingerActivity;
 import com.identy.IdentySdk;
 import com.identy.R;
-import com.identy.b;
+import com.identy.IdentyB;
 import com.identy.enums.Finger;
 import com.identy.enums.Hand;
 import java.util.HashMap;
@@ -50,9 +50,9 @@ public class getQualityScore extends Dialog {
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
             Context context = getQualityScore.this.getContext();
-            com.identy.a aVar = (com.identy.a) getQualityScore.this.PngjBadSignature.get(view.getTag());
+            com.identy.IdentyA aVar = (com.identy.IdentyA) getQualityScore.this.PngjBadSignature.get(view.getTag());
             HashMap hashMap = getQualityScore.this.PngjBadCrcException;
-            new Attempt(context, aVar, (hashMap == null || !hashMap.containsKey(view.getTag())) ? null : (com.identy.a) getQualityScore.this.PngjBadCrcException.get(view.getTag())).show();
+            new Attempt(context, aVar, (hashMap == null || !hashMap.containsKey(view.getTag())) ? null : (com.identy.IdentyA) getQualityScore.this.PngjBadCrcException.get(view.getTag())).show();
         }
     }
 
@@ -87,7 +87,7 @@ public class getQualityScore extends Dialog {
         }
     }
 
-    public getQualityScore(Activity activity, boolean z, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap2, com.identy.d.PngjException pngjException) {
+    public getQualityScore(Activity activity, boolean z, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, com.identy.d.PngjException pngjException) {
         super(activity);
         this.PngjExceptionInternal = activity;
         this.PngjBadSignature = hashMap;
@@ -131,11 +131,11 @@ public class getQualityScore extends Dialog {
         HashMap hashMap = this.PngjBadSignature;
         Hand hand = Hand.LEFT;
         Finger finger = Finger.THUMB;
-        if (!hashMap.containsKey(new Pair(hand, finger)) || b.b(hand, finger, this.PngjBadSignature) == null) {
+        if (!hashMap.containsKey(new Pair(hand, finger)) || IdentyB.b(hand, finger, this.PngjBadSignature) == null) {
             findViewById(R.id.left_thumb_layout).setVisibility(4);
             this.valueOf.setVisibility(4);
         } else {
-            com.identy.a aVar = (com.identy.a) b.b(hand, finger, this.PngjBadSignature);
+            com.identy.IdentyA aVar = (com.identy.IdentyA) IdentyB.b(hand, finger, this.PngjBadSignature);
             Mat padSub3 = aVar.getPadSub3();
             if (padSub3 != null && Mat.n_rows(padSub3.PngjException) > 0 && Mat.n_cols(padSub3.PngjException) > 0) {
                 Mat mat = new Mat();
@@ -152,11 +152,11 @@ public class getQualityScore extends Dialog {
         }
         HashMap hashMap2 = this.PngjBadSignature;
         Hand hand2 = Hand.RIGHT;
-        if (!hashMap2.containsKey(new Pair(hand2, finger)) || b.b(hand2, finger, this.PngjBadSignature) == null) {
+        if (!hashMap2.containsKey(new Pair(hand2, finger)) || IdentyB.b(hand2, finger, this.PngjBadSignature) == null) {
             findViewById(R.id.right_thumb_layout).setVisibility(4);
             this.PngjException.setVisibility(4);
         } else {
-            com.identy.a aVar2 = (com.identy.a) b.b(hand2, finger, this.PngjBadSignature);
+            com.identy.IdentyA aVar2 = (com.identy.IdentyA) IdentyB.b(hand2, finger, this.PngjBadSignature);
             Mat padSub32 = aVar2.getPadSub3();
             if (padSub32 != null && Mat.n_rows(padSub32.PngjException) > 0 && Mat.n_cols(padSub32.PngjException) > 0) {
                 Mat mat2 = new Mat();
@@ -171,23 +171,23 @@ public class getQualityScore extends Dialog {
             aVar2.PngjException();
             ((TextView) findViewById(R.id.right_thumb_nfig_score)).setText(Html.fromHtml(aVar2.PngjBadCrcException()));
         }
-        if (this.PngjBadSignature.containsKey(new Pair(hand, finger)) && b.b(hand, finger, this.PngjBadSignature) != null) {
-            ((TextView) findViewById(R.id.left_thumb_nfig_score)).setText(Html.fromHtml(((com.identy.a) b.b(hand, finger, this.PngjBadSignature)).PngjBadCrcException()));
+        if (this.PngjBadSignature.containsKey(new Pair(hand, finger)) && IdentyB.b(hand, finger, this.PngjBadSignature) != null) {
+            ((TextView) findViewById(R.id.left_thumb_nfig_score)).setText(Html.fromHtml(((com.identy.IdentyA) IdentyB.b(hand, finger, this.PngjBadSignature)).PngjBadCrcException()));
         }
-        if (this.PngjBadSignature.containsKey(new Pair(hand2, finger)) && b.b(hand2, finger, this.PngjBadSignature) != null) {
-            ((TextView) findViewById(R.id.right_thumb_nfig_score)).setText(Html.fromHtml(((com.identy.a) b.b(hand2, finger, this.PngjBadSignature)).PngjBadCrcException()));
+        if (this.PngjBadSignature.containsKey(new Pair(hand2, finger)) && IdentyB.b(hand2, finger, this.PngjBadSignature) != null) {
+            ((TextView) findViewById(R.id.right_thumb_nfig_score)).setText(Html.fromHtml(((com.identy.IdentyA) IdentyB.b(hand2, finger, this.PngjBadSignature)).PngjBadCrcException()));
         }
         if (!this.PngjPrematureEnding) {
             findViewById(R.id.right_thumb_finger_score).setVisibility(8);
             findViewById(R.id.left_thumb_finger_score).setVisibility(8);
             return;
         }
-        if (this.PngjBadSignature.containsKey(new Pair(hand, finger)) && b.b(hand, finger, this.PngjBadSignature) != null) {
-            ((TextView) findViewById(R.id.left_thumb_finger_score)).setText(Html.fromHtml(((com.identy.a) b.b(hand, finger, this.PngjBadSignature)).PngjException(false)));
+        if (this.PngjBadSignature.containsKey(new Pair(hand, finger)) && IdentyB.b(hand, finger, this.PngjBadSignature) != null) {
+            ((TextView) findViewById(R.id.left_thumb_finger_score)).setText(Html.fromHtml(((com.identy.IdentyA) IdentyB.b(hand, finger, this.PngjBadSignature)).PngjException(false)));
         }
-        if (!this.PngjBadSignature.containsKey(new Pair(hand, finger)) || b.b(hand, finger, this.PngjBadSignature) == null) {
+        if (!this.PngjBadSignature.containsKey(new Pair(hand, finger)) || IdentyB.b(hand, finger, this.PngjBadSignature) == null) {
             return;
         }
-        ((TextView) findViewById(R.id.right_thumb_finger_score)).setText(Html.fromHtml(((com.identy.a) b.b(hand2, finger, this.PngjBadSignature)).PngjException(false)));
+        ((TextView) findViewById(R.id.right_thumb_finger_score)).setText(Html.fromHtml(((com.identy.IdentyA) IdentyB.b(hand2, finger, this.PngjBadSignature)).PngjException(false)));
     }
 }

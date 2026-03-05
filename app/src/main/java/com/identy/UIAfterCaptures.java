@@ -73,7 +73,7 @@ public enum UIAfterCaptures {
         $$b = 36;
     }
 
-    public static UIAfterCaptures valueOf(String str) {
+    public static UIAfterCaptures valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

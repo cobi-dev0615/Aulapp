@@ -5,7 +5,7 @@ import com.d.e.a.values;
 import com.identy.FingerAS;
 import com.identy.Fpnative;
 import com.identy.LibSettings;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.lang.reflect.Method;
 import kotlin.io.ConstantsKt;
@@ -504,7 +504,7 @@ public class ASResult {
                     int i18 = (i17 & 4) + (i17 | 4);
                     int i19 = ((i18 >> 26) - 127) / 64;
                     int i20 = (i19 & 1) + (i19 | 1);
-                    return b.c((-(((i20 | 1) << 1) - (i20 ^ 1))) & i18, 724, 8688, "20;");
+                    return IdentyB.c((-(((i20 | 1) << 1) - (i20 ^ 1))) & i18, 724, 8688, "20;");
                 }
             }
             byte[] bArr = $$a;
@@ -532,7 +532,7 @@ public class ASResult {
             int i182 = (i172 & 4) + (i172 | 4);
             int i192 = ((i182 >> 26) - 127) / 64;
             int i202 = (i192 & 1) + (i192 | 1);
-            return b.c((-(((i202 | 1) << 1) - (i202 ^ 1))) & i182, 724, 8688, "20;");
+            return IdentyB.c((-(((i202 | 1) << 1) - (i202 ^ 1))) & i182, 724, 8688, "20;");
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

@@ -6,7 +6,7 @@ import android.os.SystemClock;
 import androidx.room.Room;
 import com.d.e.a.values;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.lang.reflect.Method;
 import java.util.List;
@@ -46,11 +46,11 @@ public class IdentyUserManager {
                     int i10 = (i9 ^ 1) + ((i9 & 1) << 1);
                     int i11 = (i7 & i10) + (i10 | i7);
                     int i12 = i7 >> 25;
-                    int i13 = -(b.a(i12 ^ (-255), (i12 & (-255)) << 1, 128, -1) ^ i11);
+                    int i13 = -(IdentyB.a(i12 ^ (-255), (i12 & (-255)) << 1, 128, -1) ^ i11);
                     int i14 = (i13 ^ 8) + ((i13 & 8) << 1);
                     int i15 = i14 >> 24;
-                    int a = b.a(i15 & (-511), i15 | (-511), 256, -1);
-                    this.a = (IdentyAppDatabase) Room.databaseBuilder(context, IdentyAppDatabase.class, b.c((-((a & 1) + (a | 1))) & i14, 121, 2904, concat)).fallbackToDestructiveMigration().build();
+                    int a = IdentyB.a(i15 & (-511), i15 | (-511), 256, -1);
+                    this.a = (IdentyAppDatabase) Room.databaseBuilder(context, IdentyAppDatabase.class, IdentyB.c((-((a & 1) + (a | 1))) & i14, 121, 2904, concat)).fallbackToDestructiveMigration().build();
                 }
             }
             byte[] bArr = $$a;
@@ -74,11 +74,11 @@ public class IdentyUserManager {
             int i102 = (i92 ^ 1) + ((i92 & 1) << 1);
             int i112 = (i72 & i102) + (i102 | i72);
             int i122 = i72 >> 25;
-            int i132 = -(b.a(i122 ^ (-255), (i122 & (-255)) << 1, 128, -1) ^ i112);
+            int i132 = -(IdentyB.a(i122 ^ (-255), (i122 & (-255)) << 1, 128, -1) ^ i112);
             int i142 = (i132 ^ 8) + ((i132 & 8) << 1);
             int i152 = i142 >> 24;
-            int a2 = b.a(i152 & (-511), i152 | (-511), 256, -1);
-            this.a = (IdentyAppDatabase) Room.databaseBuilder(context, IdentyAppDatabase.class, b.c((-((a2 & 1) + (a2 | 1))) & i142, 121, 2904, concat2)).fallbackToDestructiveMigration().build();
+            int a2 = IdentyB.a(i152 & (-511), i152 | (-511), 256, -1);
+            this.a = (IdentyAppDatabase) Room.databaseBuilder(context, IdentyAppDatabase.class, IdentyB.c((-((a2 & 1) + (a2 | 1))) & i142, 121, 2904, concat2)).fallbackToDestructiveMigration().build();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause == null) {
@@ -402,7 +402,7 @@ public class IdentyUserManager {
                     int i11 = (i10 ^ (-827088919)) + (((-827088919) & i10) << 1);
                     int i12 = ((i11 >> 24) - 511) / 256;
                     int i13 = i11 >> 28;
-                    int i14 = (-(((i11 - (~((i12 & 1) + (i12 | 1)))) - 1) ^ b.a(i13 ^ (-31), (i13 & (-31)) << 1, 16, -1))) + 5;
+                    int i14 = (-(((i11 - (~((i12 & 1) + (i12 | 1)))) - 1) ^ IdentyB.a(i13 ^ (-31), (i13 & (-31)) << 1, 16, -1))) + 5;
                     int i15 = ((i14 >> 15) - 262143) / 131072;
                     int i16 = (i15 & 1) + (i15 | 1);
                     identyUser.uid = 0 / ((i14 & (-(((i16 | 1) << 1) - (1 ^ i16)))) * 1481);
@@ -430,7 +430,7 @@ public class IdentyUserManager {
             int i112 = (i102 ^ (-827088919)) + (((-827088919) & i102) << 1);
             int i122 = ((i112 >> 24) - 511) / 256;
             int i132 = i112 >> 28;
-            int i142 = (-(((i112 - (~((i122 & 1) + (i122 | 1)))) - 1) ^ b.a(i132 ^ (-31), (i132 & (-31)) << 1, 16, -1))) + 5;
+            int i142 = (-(((i112 - (~((i122 & 1) + (i122 | 1)))) - 1) ^ IdentyB.a(i132 ^ (-31), (i132 & (-31)) << 1, 16, -1))) + 5;
             int i152 = ((i142 >> 15) - 262143) / 131072;
             int i162 = (i152 & 1) + (i152 | 1);
             identyUser2.uid = 0 / ((i142 & (-(((i162 | 1) << 1) - (1 ^ i162)))) * 1481);
@@ -471,10 +471,10 @@ public class IdentyUserManager {
                     int i8 = -(i6 * (-2068763773));
                     int i9 = ((i7 ^ i8) + ((i8 & i7) << 1)) - 2123198464;
                     int i10 = i9 >> 18;
-                    int a = b.a(i10 & (-32767), i10 | (-32767), 16384, -1);
+                    int a = IdentyB.a(i10 & (-32767), i10 | (-32767), 16384, -1);
                     int i11 = (i9 ^ a) + ((a & i9) << 1);
                     int i12 = i9 >> 17;
-                    int i13 = -(b.a(i12 & (-65535), i12 | (-65535), 32768, -1) ^ i11);
+                    int i13 = -(IdentyB.a(i12 & (-65535), i12 | (-65535), 32768, -1) ^ i11);
                     int i14 = ((i13 | 3) << 1) - (i13 ^ 3);
                     int i15 = ((i14 >> 24) - 511) / 256;
                     int i16 = ((i15 | 1) << 1) - (i15 ^ 1);
@@ -501,10 +501,10 @@ public class IdentyUserManager {
             int i82 = -(i62 * (-2068763773));
             int i92 = ((i72 ^ i82) + ((i82 & i72) << 1)) - 2123198464;
             int i102 = i92 >> 18;
-            int a2 = b.a(i102 & (-32767), i102 | (-32767), 16384, -1);
+            int a2 = IdentyB.a(i102 & (-32767), i102 | (-32767), 16384, -1);
             int i112 = (i92 ^ a2) + ((a2 & i92) << 1);
             int i122 = i92 >> 17;
-            int i132 = -(b.a(i122 & (-65535), i122 | (-65535), 32768, -1) ^ i112);
+            int i132 = -(IdentyB.a(i122 & (-65535), i122 | (-65535), 32768, -1) ^ i112);
             int i142 = ((i132 | 3) << 1) - (i132 ^ 3);
             int i152 = ((i142 >> 24) - 511) / 256;
             int i162 = ((i152 | 1) << 1) - (i152 ^ 1);
@@ -600,7 +600,7 @@ public class IdentyUserManager {
                         int i11 = (i10 ^ 1) + ((i10 & 1) << 1);
                         int i12 = ((i9 | i11) << 1) - (i11 ^ i9);
                         int i13 = i9 >> 17;
-                        int i14 = -(i12 ^ b.a(i13 & (-65535), i13 | (-65535), 32768, -1));
+                        int i14 = -(i12 ^ IdentyB.a(i13 & (-65535), i13 | (-65535), 32768, -1));
                         int i15 = ((i14 | 2) << 1) - (i14 ^ 2);
                         int i16 = ((i15 >> 26) - 127) / 64;
                         IdentyUser[] identyUserArr = new IdentyUser[3526 / (((-((((i16 | 1) << 1) - (i16 ^ 1)) - (-1))) & i15) * 1763)];

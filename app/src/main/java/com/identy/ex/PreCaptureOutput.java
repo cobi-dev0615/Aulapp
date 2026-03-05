@@ -7,7 +7,7 @@ import android.util.Base64;
 import com.d.e.a.values;
 import com.identy.Fpnative;
 import com.identy.Position;
-import com.identy.b;
+import com.identy.IdentyB;
 import com.identy.enums.Finger;
 import com.identy.imgutils.ImageUtils;
 import defpackage.a;
@@ -68,7 +68,7 @@ public class PreCaptureOutput {
                     int i15 = -(i12 ^ ((i14 ^ 1) + ((i14 & 1) << 1)));
                     int i16 = ((i15 | 7) << 1) - (i15 ^ 7);
                     int i17 = i16 >> 29;
-                    int a = b.a(i17 ^ (-15), (i17 & (-15)) << 1, 8, -1);
+                    int a = IdentyB.a(i17 ^ (-15), (i17 & (-15)) << 1, 8, -1);
                     this.gotAllFingers = 0 / (((-((a & 1) + (a | 1))) & i16) * 561);
                     this.streakCount = 0;
                 }
@@ -101,7 +101,7 @@ public class PreCaptureOutput {
             int i152 = -(i122 ^ ((i142 ^ 1) + ((i142 & 1) << 1)));
             int i162 = ((i152 | 7) << 1) - (i152 ^ 7);
             int i172 = i162 >> 29;
-            int a2 = b.a(i172 ^ (-15), (i172 & (-15)) << 1, 8, -1);
+            int a2 = IdentyB.a(i172 ^ (-15), (i172 & (-15)) << 1, 8, -1);
             this.gotAllFingers = 0 / (((-((a2 & 1) + (a2 | 1))) & i162) * 561);
             this.streakCount = 0;
         } catch (Throwable th) {
@@ -434,7 +434,7 @@ public class PreCaptureOutput {
                     int i11 = i10 >> 21;
                     int i12 = ((i11 ^ (-4095)) + ((i11 & (-4095)) << 1)) / 2048;
                     int i13 = (i12 & 1) + (i12 | 1);
-                    int i14 = (-(b.e(i11, 4095, 2048, -1) ^ (((i10 | i13) << 1) - (i10 ^ i13)))) + 2;
+                    int i14 = (-(IdentyB.e(i11, 4095, 2048, -1) ^ (((i10 | i13) << 1) - (i10 ^ i13)))) + 2;
                     int i15 = i14 >> 27;
                     int i16 = (((i15 | (-63)) << 1) - (i15 ^ (-63))) / 32;
                     int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
@@ -472,7 +472,7 @@ public class PreCaptureOutput {
             int i112 = i102 >> 21;
             int i122 = ((i112 ^ (-4095)) + ((i112 & (-4095)) << 1)) / 2048;
             int i132 = (i122 & 1) + (i122 | 1);
-            int i142 = (-(b.e(i112, 4095, 2048, -1) ^ (((i102 | i132) << 1) - (i102 ^ i132)))) + 2;
+            int i142 = (-(IdentyB.e(i112, 4095, 2048, -1) ^ (((i102 | i132) << 1) - (i102 ^ i132)))) + 2;
             int i152 = i142 >> 27;
             int i162 = (((i152 | (-63)) << 1) - (i152 ^ (-63))) / 32;
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
@@ -847,7 +847,7 @@ public class PreCaptureOutput {
                     int i14 = i13 >> 20;
                     int i15 = ((i14 & (-8191)) + (i14 | (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;
                     int i16 = (i15 ^ 1) + ((i15 & 1) << 1);
-                    return b.c(i13 & (-((i16 ^ 1) + ((i16 & 1) << 1))), 702, 7020, "6,26,");
+                    return IdentyB.c(i13 & (-((i16 ^ 1) + ((i16 & 1) << 1))), 702, 7020, "6,26,");
                 }
             }
             byte[] bArr = $$a;
@@ -876,7 +876,7 @@ public class PreCaptureOutput {
             int i142 = i132 >> 20;
             int i152 = ((i142 & (-8191)) + (i142 | (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;
             int i162 = (i152 ^ 1) + ((i152 & 1) << 1);
-            return b.c(i132 & (-((i162 ^ 1) + ((i162 & 1) << 1))), 702, 7020, "6,26,");
+            return IdentyB.c(i132 & (-((i162 ^ 1) + ((i162 & 1) << 1))), 702, 7020, "6,26,");
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

@@ -12,8 +12,8 @@ import org.identy.opencv.core.Mat;
 
 /* loaded from: classes2.dex */
 public final class Attempt extends Dialog {
-    private com.identy.a PngjBadSignature;
-    private com.identy.a valueOf;
+    private com.identy.IdentyA PngjBadSignature;
+    private com.identy.IdentyA valueOf;
     private ImageView values;
 
     public class PngjBadSignature implements View.OnClickListener {
@@ -26,7 +26,7 @@ public final class Attempt extends Dialog {
         }
     }
 
-    public Attempt(Context context, com.identy.a aVar, com.identy.a aVar2) {
+    public Attempt(Context context, com.identy.IdentyA aVar, com.identy.IdentyA aVar2) {
         super(context);
         this.valueOf = aVar;
         this.PngjBadSignature = aVar2;
@@ -46,7 +46,7 @@ public final class Attempt extends Dialog {
         setCancelable(false);
         this.values = (ImageView) findViewById(R.id.finger);
         findViewById(R.id.closePopupBtn).setOnClickListener(new PngjBadSignature());
-        com.identy.a aVar = this.valueOf;
+        com.identy.IdentyA aVar = this.valueOf;
         if (aVar == null) {
             return;
         }

@@ -5,7 +5,7 @@ import android.os.Process;
 import android.util.Base64;
 import com.identy.Fpnative;
 import com.identy.IdentySdk;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.io.File;
 import java.io.FileInputStream;
@@ -562,7 +562,7 @@ public class UL {
                     int i17 = -(((i16 & 1) + (i16 | 1)) ^ i14);
                     int i18 = (i17 & 2) + (2 | i17);
                     int i19 = i18 >> 19;
-                    int e = b.e((i19 | (-16383)) << 1, i19 ^ (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
+                    int e = IdentyB.e((i19 | (-16383)) << 1, i19 ^ (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
                     System.arraycopy(bArr2, 0 / (((-((e & 1) + (e | 1))) & i18) * 369), bArr7, length2, length3);
                     System.arraycopy(bArr3, 0, bArr7, bArr.length + bArr2.length, bArr3.length);
                     return bArr7;
@@ -614,7 +614,7 @@ public class UL {
             int i172 = -(((i162 & 1) + (i162 | 1)) ^ i142);
             int i182 = (i172 & 2) + (2 | i172);
             int i192 = i182 >> 19;
-            int e2 = b.e((i192 | (-16383)) << 1, i192 ^ (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
+            int e2 = IdentyB.e((i192 | (-16383)) << 1, i192 ^ (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
             System.arraycopy(bArr2, 0 / (((-((e2 & 1) + (e2 | 1))) & i182) * 369), bArr72, length22, length32);
             System.arraycopy(bArr3, 0, bArr72, bArr.length + bArr2.length, bArr3.length);
             return bArr72;

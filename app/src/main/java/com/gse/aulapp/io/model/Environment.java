@@ -73,7 +73,7 @@ public abstract class Environment {
         this(str, i);
     }
 
-    public static Environment valueOf(String str) {
+    public static Environment valueOfString(String str) {
         return (Environment) Enum.valueOf(Environment.class, str);
     }
 

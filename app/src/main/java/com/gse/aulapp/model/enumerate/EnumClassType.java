@@ -290,7 +290,7 @@ public abstract class EnumClassType {
         return enumClassType.nameShow(context);
     }
 
-    public static EnumClassType valueOf(String str) {
+    public static EnumClassType valueOfString(String str) {
         return (EnumClassType) Enum.valueOf(EnumClassType.class, str);
     }
 

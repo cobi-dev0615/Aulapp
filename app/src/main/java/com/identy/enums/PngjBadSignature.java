@@ -86,7 +86,7 @@ public enum PngjBadSignature implements Serializable {
         $$b = 55;
     }
 
-    public static PngjBadSignature valueOf(String str) {
+    public static PngjBadSignature valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

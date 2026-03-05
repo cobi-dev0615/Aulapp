@@ -35,7 +35,7 @@ public final class EnumFraudStep {
     private EnumFraudStep(String str, int i) {
     }
 
-    public static EnumFraudStep valueOf(String str) {
+    public static EnumFraudStep valueOfString(String str) {
         return (EnumFraudStep) Enum.valueOf(EnumFraudStep.class, str);
     }
 

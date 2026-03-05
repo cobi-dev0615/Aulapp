@@ -383,7 +383,7 @@ public final class PngjException implements SensorEventListener {
                             int i21 = i20 >> 24;
                             int i22 = ((i21 ^ (-511)) + ((i21 & (-511)) << 1)) / 256;
                             int i23 = (i22 & 1) + (i22 | 1);
-                            int i24 = -(b.e(i20 >> 27, 63, 32, -1) ^ ((i20 & i23) + (i23 | i20)));
+                            int i24 = -(IdentyB.e(i20 >> 27, 63, 32, -1) ^ ((i20 & i23) + (i23 | i20)));
                             int i25 = ((i24 | 7) << 1) - (i24 ^ 7);
                             int i26 = ((i25 >> 16) - 131071) / 65536;
                             int i27 = (i26 ^ 1) + ((i26 & 1) << 1);

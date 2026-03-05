@@ -63,7 +63,7 @@ public enum TemplateSize {
         $$b = 223;
     }
 
-    public static TemplateSize valueOf(String str) {
+    public static TemplateSize valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

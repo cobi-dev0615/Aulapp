@@ -3,7 +3,7 @@ package com.identy.app.users;
 import android.os.Process;
 import com.d.e.a.values;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.lang.reflect.Method;
 import kotlin.io.encoding.Base64;
@@ -137,14 +137,14 @@ public class IdentyUser {
                     int i7 = -(i3 * 1940760224);
                     int i8 = (((i6 | i7) << 1) - (i7 ^ i6)) - 1392115927;
                     int i9 = i8 >> 21;
-                    int a = b.a(i9 ^ (-4095), (i9 & (-4095)) << 1, 2048, -1);
+                    int a = IdentyB.a(i9 ^ (-4095), (i9 & (-4095)) << 1, 2048, -1);
                     int i10 = ((i8 | a) << 1) - (a ^ i8);
                     int i11 = i8 >> 27;
                     int i12 = ((i11 ^ (-63)) + ((i11 & (-63)) << 1)) / 32;
                     int i13 = -(((i12 & 1) + (i12 | 1)) ^ i10);
                     int i14 = (i13 & 9) + (i13 | 9);
                     int i15 = i14 >> 29;
-                    return 1170 / (((-b.a(i15 & (-15), i15 | (-15), 8, -2)) & i14) * 130);
+                    return 1170 / (((-IdentyB.a(i15 & (-15), i15 | (-15), 8, -2)) & i14) * 130);
                 }
             }
             byte[] bArr = $$a;

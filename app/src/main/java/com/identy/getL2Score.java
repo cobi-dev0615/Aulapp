@@ -112,7 +112,7 @@ final class getL2Score extends getL3Score {
 
         @Override // android.view.animation.Animation.AnimationListener
         public final void onAnimationEnd(Animation animation) {
-            getL2Score.this.Action.runOnUiThread(new c(this.PngjBadCrcException, 3));
+            getL2Score.this.Action.runOnUiThread(new IdentyC(this.PngjBadCrcException, 3));
         }
 
         @Override // android.view.animation.Animation.AnimationListener
@@ -196,14 +196,14 @@ final class getL2Score extends getL3Score {
             pngjBadCrcException2.setLayerType(1, null);
             this.Action.runOnUiThread(runnable);
             pngjBadCrcException = this.Capture2TActivity;
-            dVar = new d(this, 0);
+            dVar = new IdentyD(this, 0);
         } else {
             org.c.a.PngjBadCrcException pngjBadCrcException3 = (org.c.a.PngjBadCrcException) this.Action.findViewById(R.id.tracking_overlay);
             this.Capture2TActivity = pngjBadCrcException3;
             pngjBadCrcException3.setLayerType(1, null);
             this.Action.runOnUiThread(runnable);
             pngjBadCrcException = this.Capture2TActivity;
-            dVar = new d(this, 0);
+            dVar = new IdentyD(this, 0);
         }
         pngjBadCrcException.valueOf = dVar;
         rgenerate = (ppk + 43) % 128;
@@ -227,9 +227,9 @@ final class getL2Score extends getL3Score {
         ppk = i % 128;
         try {
             if (i % 2 != 0) {
-                this.Action.runOnUiThread(new c(this, 2));
+                this.Action.runOnUiThread(new IdentyC(this, 2));
             } else {
-                this.Action.runOnUiThread(new c(this, 2));
+                this.Action.runOnUiThread(new IdentyC(this, 2));
                 throw null;
             }
         } catch (Exception e) {
@@ -847,7 +847,7 @@ final class getL2Score extends getL3Score {
             this.CaptureRolledFingersActivity = new RectF((int) d3, (int) (d4 / d), (int) (r11 - d3), (int) (d4 - (d4 / 2.5d)));
             this.getScore = 0;
             this.isQualityFailed = DurationKt.NANOS_IN_MILLIS;
-            PngjBadSignature(new c(this, 0));
+            PngjBadSignature(new IdentyC(this, 0));
             rgenerate = (ppk + 97) % 128;
         } else {
             this.getData = Integer.valueOf(this.Action.getWindowManager().getDefaultDisplay().getRotation() + i3);
@@ -877,7 +877,7 @@ final class getL2Score extends getL3Score {
             sb3.append(this.getScore);
             getPadSub2.PngjException("allowed ? ", sb3.toString());
             getData();
-            PngjBadSignature(new c(this, 1));
+            PngjBadSignature(new IdentyC(this, 1));
         }
         RectF rectF = this.CaptureRolledFingersActivity;
         this.CaptureRolledThumbActivity = rectF;

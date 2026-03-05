@@ -125,7 +125,7 @@ public final class FingerError {
         $$b = 212;
     }
 
-    public static FingerError valueOf(String str) {
+    public static FingerError valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

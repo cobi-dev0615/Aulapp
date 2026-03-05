@@ -4,11 +4,11 @@ import android.graphics.Canvas;
 import org.c.a.PngjBadCrcException;
 
 /* loaded from: classes2.dex */
-public final /* synthetic */ class d implements PngjBadCrcException.values {
+public final /* synthetic */ class IdentyD implements PngjBadCrcException.values {
     public final /* synthetic */ int a;
     public final /* synthetic */ e1 b;
 
-    public /* synthetic */ d(e1 e1Var, int i) {
+    public /* synthetic */ IdentyD(e1 e1Var, int i) {
         this.a = i;
         this.b = e1Var;
     }

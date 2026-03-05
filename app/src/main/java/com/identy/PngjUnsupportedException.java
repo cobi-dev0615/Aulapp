@@ -82,7 +82,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
             $$b = 215;
         }
 
-        public static valueOf valueOf(String str) {
+        public static valueOf valueOfString(String str) {
             Object[] objArr;
             long j;
             Object[] objArr2 = Fpnative.valueOf;
@@ -246,7 +246,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
             $$b = 54;
         }
 
-        public static values valueOf(String str) {
+        public static values valueOfString(String str) {
             Object[] objArr;
             long j;
             Object[] objArr2 = Fpnative.valueOf;

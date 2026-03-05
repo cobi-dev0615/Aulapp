@@ -13,7 +13,7 @@ import java.util.HashMap;
 public final class values extends getData {
     private com.identy.valueOf PngjInputException;
 
-    public values(Activity activity, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap2, com.identy.valueOf valueof, com.identy.d.PngjException pngjException) {
+    public values(Activity activity, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, com.identy.valueOf valueof, com.identy.d.PngjException pngjException) {
         super(activity, true, hashMap, hashMap2, pngjException);
         this.PngjInputException = valueof;
     }

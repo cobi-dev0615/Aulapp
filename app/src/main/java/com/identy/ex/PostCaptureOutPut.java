@@ -9,7 +9,7 @@ import com.identy.Fpnative;
 import com.identy.LibSettings;
 import com.identy.PngjOutputException;
 import com.identy.Position;
-import com.identy.b;
+import com.identy.IdentyB;
 import com.identy.enums.Finger;
 import com.identy.enums.FingerDetectionMode;
 import com.identy.enums.Hand;
@@ -451,7 +451,7 @@ public class PostCaptureOutPut {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public HashMap<Pair<Hand, Finger>, com.identy.a> getFingerRegions(Action action, FingerDetectionMode fingerDetectionMode) {
+    public HashMap<Pair<Hand, Finger>, com.identy.IdentyA> getFingerRegions(Action action, FingerDetectionMode fingerDetectionMode) {
         Object[] objArr;
         long j;
         Map<Integer, Long> map;
@@ -468,7 +468,7 @@ public class PostCaptureOutPut {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4889;
                     Fpnative.valueOf = objArr;
-                    HashMap<Pair<Hand, Finger>, com.identy.a> hashMap = new HashMap<>(4);
+                    HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap = new HashMap<>(4);
                     int i3 = ((int[]) objArr[1])[0];
                     int i4 = i3 * i3;
                     int i5 = -(400532661 * i3);
@@ -480,7 +480,7 @@ public class PostCaptureOutPut {
                     int i11 = (i8 - (~(((i10 | 1) << 1) - (i10 ^ 1)))) - 1;
                     int i12 = ((i8 >> 15) - 262143) / 131072;
                     int i13 = (-(i11 ^ ((i12 & 1) + (i12 | 1)))) + 8;
-                    int i14 = 0 / ((i13 & (-b.e(i13 >> 24, 511, 256, -2))) * 286);
+                    int i14 = 0 / ((i13 & (-IdentyB.e(i13 >> 24, 511, 256, -2))) * 286);
                     map = this.binarized;
                     if (map != null) {
                         int i15 = i14;
@@ -490,7 +490,7 @@ public class PostCaptureOutPut {
                             Finger finger = (Finger) pair.second;
                             this.pickedFromCapture.get(entry.getKey());
                             FingerDetectionMode fingerDetectionMode2 = fingerDetectionMode;
-                            com.identy.a aVar = new com.identy.a(i15, hand, finger, fingerDetectionMode2, false);
+                            com.identy.IdentyA aVar = new com.identy.IdentyA(i15, hand, finger, fingerDetectionMode2, false);
                             if (this.pickedFromCapture.get(entry.getKey()).booleanValue()) {
                                 this.a = true;
                             }
@@ -525,7 +525,7 @@ public class PostCaptureOutPut {
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4889;
             Fpnative.valueOf = objArr;
-            HashMap<Pair<Hand, Finger>, com.identy.a> hashMap2 = new HashMap<>(4);
+            HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2 = new HashMap<>(4);
             int i32 = ((int[]) objArr[1])[0];
             int i42 = i32 * i32;
             int i52 = -(400532661 * i32);
@@ -537,7 +537,7 @@ public class PostCaptureOutPut {
             int i112 = (i82 - (~(((i102 | 1) << 1) - (i102 ^ 1)))) - 1;
             int i122 = ((i82 >> 15) - 262143) / 131072;
             int i132 = (-(i112 ^ ((i122 & 1) + (i122 | 1)))) + 8;
-            int i142 = 0 / ((i132 & (-b.e(i132 >> 24, 511, 256, -2))) * 286);
+            int i142 = 0 / ((i132 & (-IdentyB.e(i132 >> 24, 511, 256, -2))) * 286);
             map = this.binarized;
             if (map != null) {
             }
@@ -1001,7 +1001,7 @@ public class PostCaptureOutPut {
                     int i12 = ((i11 | 1) << 1) - (i11 ^ 1);
                     int i13 = (i9 ^ i12) + ((i12 & i9) << 1);
                     int i14 = i9 >> 19;
-                    int i15 = -(b.a(i14 & (-16383), i14 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1) ^ i13);
+                    int i15 = -(IdentyB.a(i14 & (-16383), i14 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1) ^ i13);
                     int i16 = (i15 ^ 7) + ((i15 & 7) << 1);
                     int i17 = i16 >> 20;
                     int i18 = ((i17 & (-8191)) + (i17 | (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;
@@ -1065,7 +1065,7 @@ public class PostCaptureOutPut {
             int i122 = ((i112 | 1) << 1) - (i112 ^ 1);
             int i132 = (i92 ^ i122) + ((i122 & i92) << 1);
             int i142 = i92 >> 19;
-            int i152 = -(b.a(i142 & (-16383), i142 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1) ^ i132);
+            int i152 = -(IdentyB.a(i142 & (-16383), i142 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1) ^ i132);
             int i162 = (i152 ^ 7) + ((i152 & 7) << 1);
             int i172 = i162 >> 20;
             int i182 = ((i172 & (-8191)) + (i172 | (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;

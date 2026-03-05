@@ -9,7 +9,7 @@ import com.identy.R;
 public final class valueOf extends getPadSub3 {
     private com.identy.valueOf PngjBadCrcException;
 
-    public valueOf(Activity activity, com.identy.a aVar, com.identy.valueOf valueof, com.identy.d.PngjException pngjException) {
+    public valueOf(Activity activity, com.identy.IdentyA aVar, com.identy.valueOf valueof, com.identy.d.PngjException pngjException) {
         super(activity, true, aVar, pngjException);
         this.PngjBadCrcException = valueof;
     }

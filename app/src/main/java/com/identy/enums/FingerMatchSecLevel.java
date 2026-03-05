@@ -77,7 +77,7 @@ public enum FingerMatchSecLevel {
         $$b = 130;
     }
 
-    public static FingerMatchSecLevel valueOf(String str) {
+    public static FingerMatchSecLevel valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

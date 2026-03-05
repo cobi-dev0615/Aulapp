@@ -29,7 +29,7 @@ public final class EnumApiStatus {
     private EnumApiStatus(String str, int i) {
     }
 
-    public static EnumApiStatus valueOf(String str) {
+    public static EnumApiStatus valueOfString(String str) {
         return (EnumApiStatus) Enum.valueOf(EnumApiStatus.class, str);
     }
 

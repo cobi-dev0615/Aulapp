@@ -83,7 +83,7 @@ public enum STATUS {
         $$b = 134;
     }
 
-    public static STATUS valueOf(String str) {
+    public static STATUS valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

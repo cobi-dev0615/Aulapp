@@ -165,10 +165,6 @@ public final /* data */ class ExamsInfo implements Parcelable {
         return Intrinsics.areEqual(this._id, examsInfo._id) && Intrinsics.areEqual(this.instructorID, examsInfo.instructorID) && Intrinsics.areEqual(this.startTime, examsInfo.startTime) && Intrinsics.areEqual(this.endTime, examsInfo.endTime) && Intrinsics.areEqual(this.date, examsInfo.date) && Intrinsics.areEqual(this.computerID, examsInfo.computerID) && Intrinsics.areEqual(this.apprentices, examsInfo.apprentices);
     }
 
-    public final String[] getApprentices() {
-        return this.apprentices;
-    }
-
     public int hashCode() {
         int d = x5.d(this.endTime, x5.d(this.startTime, x5.d(this.instructorID, this._id.hashCode() * 31, 31), 31), 31);
         Date date = this.date;

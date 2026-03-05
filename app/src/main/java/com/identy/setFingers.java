@@ -1645,7 +1645,7 @@ final class setFingers extends e1 {
             } catch (Exception unused2) {
             }
             this.Action.runOnUiThread(new f(this, 2));
-            this.Capture2TActivity.valueOf = new d(this, 1);
+            this.Capture2TActivity.valueOf = new IdentyD(this, 1);
             return;
         }
         super.valueOf(i, i2, i3, z);

@@ -2,11 +2,11 @@ package com.identy.c;
 
 import android.os.AsyncTask;
 import com.identy.WSQCompression;
-import com.identy.a;
+import com.identy.IdentyA;
 import com.identy.enums.Template;
 
 /* loaded from: classes2.dex */
-public final class PngjException extends AsyncTask<a, Integer, a> {
+public final class PngjException extends AsyncTask<IdentyA, Integer, IdentyA> {
     private PngjBadCrcException PngjBadCrcException;
     private Template[] PngjException;
     private WSQCompression valueOf;
@@ -22,8 +22,8 @@ public final class PngjException extends AsyncTask<a, Integer, a> {
     /* JADX INFO: Access modifiers changed from: private */
     @Override // android.os.AsyncTask
     /* renamed from: PngjBadSignature, reason: merged with bridge method [inline-methods] */
-    public a doInBackground(a... aVarArr) {
-        a aVar = aVarArr[0];
+    public IdentyA doInBackground(IdentyA... aVarArr) {
+        IdentyA aVar = aVarArr[0];
         try {
             aVar.PngjBadSignature(this.PngjException, this.valueOf, false);
         } catch (Exception unused) {
@@ -32,7 +32,7 @@ public final class PngjException extends AsyncTask<a, Integer, a> {
     }
 
     @Override // android.os.AsyncTask
-    public final /* synthetic */ void onPostExecute(a aVar) {
+    public final /* synthetic */ void onPostExecute(IdentyA aVar) {
         this.PngjBadCrcException.valueOf();
     }
 

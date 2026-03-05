@@ -22,7 +22,7 @@ import android.widget.ExpandableListView;
 import com.d.e.Action;
 import com.d.e.a.c.getPadSub3B15685$PngjException;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import com.karumi.dexter.BuildConfig;
 import defpackage.a;
 import java.io.BufferedInputStream;
@@ -407,7 +407,7 @@ public final class LManager {
                     int i6 = ((((i4 | i5) << 1) - (i4 ^ i5)) - (~(-(i3 * 934250933)))) - 1;
                     int i7 = (i6 & 1167041817) + (1167041817 | i6);
                     int i8 = i7 >> 26;
-                    int a = b.a(i8 ^ (-127), (i8 & (-127)) << 1, 64, -1);
+                    int a = IdentyB.a(i8 ^ (-127), (i8 & (-127)) << 1, 64, -1);
                     int i9 = (i7 & a) + (a | i7);
                     int i10 = ((i7 >> 27) - 63) / 32;
                     int i11 = -(((i10 & 1) + (i10 | 1)) ^ i9);
@@ -444,7 +444,7 @@ public final class LManager {
             int i62 = ((((i42 | i52) << 1) - (i42 ^ i52)) - (~(-(i32 * 934250933)))) - 1;
             int i72 = (i62 & 1167041817) + (1167041817 | i62);
             int i82 = i72 >> 26;
-            int a2 = b.a(i82 ^ (-127), (i82 & (-127)) << 1, 64, -1);
+            int a2 = IdentyB.a(i82 ^ (-127), (i82 & (-127)) << 1, 64, -1);
             int i92 = (i72 & a2) + (a2 | i72);
             int i102 = ((i72 >> 27) - 63) / 32;
             int i112 = -(((i102 & 1) + (i102 | 1)) ^ i92);
@@ -741,14 +741,14 @@ public final class LManager {
                         int i12 = ((i8 >> 15) - 262143) / 131072;
                         int i13 = (-(i11 ^ ((i12 ^ 1) + ((i12 & 1) << 1)))) + 5;
                         int i14 = i13 >> 27;
-                        bufferedInputStream.read(bArr, 0 / (((-b.e((i14 | (-63)) << 1, i14 ^ (-63), 32, -2)) & i13) * 1033), available);
+                        bufferedInputStream.read(bArr, 0 / (((-IdentyB.e((i14 | (-63)) << 1, i14 ^ (-63), 32, -2)) & i13) * 1033), available);
                         bufferedInputStream.close();
                         open.close();
                         bufferedInputStream.close();
                         return bArr;
                     }
                 }
-                bufferedInputStream.read(bArr, 0 / (((-b.e((i14 | (-63)) << 1, i14 ^ (-63), 32, -2)) & i13) * 1033), available);
+                bufferedInputStream.read(bArr, 0 / (((-IdentyB.e((i14 | (-63)) << 1, i14 ^ (-63), 32, -2)) & i13) * 1033), available);
                 bufferedInputStream.close();
                 open.close();
                 bufferedInputStream.close();
@@ -1542,7 +1542,7 @@ public final class LManager {
                         int i17 = -(i15 ^ (((i16 | 1) << 1) - (i16 ^ 1)));
                         int i18 = (i17 ^ 5) + ((i17 & 5) << 1);
                         int i19 = i18 >> 29;
-                        if (i6 != 28650 / (((-b.a(i19 ^ (-15), (i19 & (-15)) << 1, 8, -2)) & i18) * 573)) {
+                        if (i6 != 28650 / (((-IdentyB.a(i19 ^ (-15), (i19 & (-15)) << 1, 8, -2)) & i18) * 573)) {
                             pngjBadCrcException.PngjBadCrcException(true);
                             return;
                         } else {
@@ -2265,11 +2265,11 @@ public final class LManager {
                     int i11 = (i10 & 1) + (i10 | 1);
                     int i12 = (i8 & i11) + (i11 | i8);
                     int i13 = i8 >> 18;
-                    int i14 = -(b.a(i13 & (-32767), i13 | (-32767), 16384, -1) ^ i12);
+                    int i14 = -(IdentyB.a(i13 & (-32767), i13 | (-32767), 16384, -1) ^ i12);
                     int i15 = (i14 & 1) + (i14 | 1);
                     int i16 = ((i15 >> 17) - 65535) / 32768;
                     int i17 = (i16 & 1) + (i16 | 1);
-                    return str.replace(b.c((-((i17 ^ 1) + ((i17 & 1) << 1))) & i15, 1945, 15560, "22/4/20/:"), BuildConfig.FLAVOR);
+                    return str.replace(IdentyB.c((-((i17 ^ 1) + ((i17 & 1) << 1))) & i15, 1945, 15560, "22/4/20/:"), BuildConfig.FLAVOR);
                 }
             }
             byte[] bArr = $$d;
@@ -2302,11 +2302,11 @@ public final class LManager {
             int i112 = (i102 & 1) + (i102 | 1);
             int i122 = (i82 & i112) + (i112 | i82);
             int i132 = i82 >> 18;
-            int i142 = -(b.a(i132 & (-32767), i132 | (-32767), 16384, -1) ^ i122);
+            int i142 = -(IdentyB.a(i132 & (-32767), i132 | (-32767), 16384, -1) ^ i122);
             int i152 = (i142 & 1) + (i142 | 1);
             int i162 = ((i152 >> 17) - 65535) / 32768;
             int i172 = (i162 & 1) + (i162 | 1);
-            return str.replace(b.c((-((i172 ^ 1) + ((i172 & 1) << 1))) & i152, 1945, 15560, "22/4/20/:"), BuildConfig.FLAVOR);
+            return str.replace(IdentyB.c((-((i172 ^ 1) + ((i172 & 1) << 1))) & i152, 1945, 15560, "22/4/20/:"), BuildConfig.FLAVOR);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -2391,11 +2391,11 @@ public final class LManager {
                     int i12 = ((i11 | 1) << 1) - (i11 ^ 1);
                     int i13 = (i9 ^ i12) + ((i12 & i9) << 1);
                     int i14 = i9 >> 29;
-                    int i15 = -(b.e((i14 | (-15)) << 1, i14 ^ (-15), 8, -1) ^ i13);
+                    int i15 = -(IdentyB.e((i14 | (-15)) << 1, i14 ^ (-15), 8, -1) ^ i13);
                     int i16 = (i15 ^ 3) + ((i15 & 3) << 1);
                     int i17 = i16 >> 17;
                     int i18 = ((i17 ^ (-65535)) + ((i17 & (-65535)) << 1)) / 32768;
-                    return defaultSharedPreferences.getString(str, b.c((-(((i18 & 1) + (i18 | 1)) - (-1))) & i16, 1224, 18360, "2|14|"));
+                    return defaultSharedPreferences.getString(str, IdentyB.c((-(((i18 & 1) + (i18 | 1)) - (-1))) & i16, 1224, 18360, "2|14|"));
                 }
             }
             byte b = $$d[113];
@@ -2421,11 +2421,11 @@ public final class LManager {
             int i122 = ((i112 | 1) << 1) - (i112 ^ 1);
             int i132 = (i92 ^ i122) + ((i122 & i92) << 1);
             int i142 = i92 >> 29;
-            int i152 = -(b.e((i142 | (-15)) << 1, i142 ^ (-15), 8, -1) ^ i132);
+            int i152 = -(IdentyB.e((i142 | (-15)) << 1, i142 ^ (-15), 8, -1) ^ i132);
             int i162 = (i152 ^ 3) + ((i152 & 3) << 1);
             int i172 = i162 >> 17;
             int i182 = ((i172 ^ (-65535)) + ((i172 & (-65535)) << 1)) / 32768;
-            return defaultSharedPreferences2.getString(str, b.c((-(((i182 & 1) + (i182 | 1)) - (-1))) & i162, 1224, 18360, "2|14|"));
+            return defaultSharedPreferences2.getString(str, IdentyB.c((-(((i182 & 1) + (i182 | 1)) - (-1))) & i162, 1224, 18360, "2|14|"));
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -2533,7 +2533,7 @@ public final class LManager {
                     int i12 = (i11 ^ 1) + ((i11 & 1) << 1);
                     int i13 = ((i9 | i12) << 1) - (i12 ^ i9);
                     int i14 = i9 >> 25;
-                    int i15 = -(b.a(i14 & (-255), i14 | (-255), 128, -1) ^ i13);
+                    int i15 = -(IdentyB.a(i14 & (-255), i14 | (-255), 128, -1) ^ i13);
                     int i16 = (i15 ^ 4) + ((i15 & 4) << 1);
                     int i17 = ((i16 >> 26) - 127) / 64;
                     int i18 = ((i17 | 1) << 1) - (i17 ^ 1);
@@ -2563,7 +2563,7 @@ public final class LManager {
             int i122 = (i112 ^ 1) + ((i112 & 1) << 1);
             int i132 = ((i92 | i122) << 1) - (i122 ^ i92);
             int i142 = i92 >> 25;
-            int i152 = -(b.a(i142 & (-255), i142 | (-255), 128, -1) ^ i132);
+            int i152 = -(IdentyB.a(i142 & (-255), i142 | (-255), 128, -1) ^ i132);
             int i162 = (i152 ^ 4) + ((i152 & 4) << 1);
             int i172 = ((i162 >> 26) - 127) / 64;
             int i182 = ((i172 | 1) << 1) - (i172 ^ 1);
@@ -2656,7 +2656,7 @@ public final class LManager {
                     int i13 = ((i12 | 7) << 1) - (i12 ^ 7);
                     int i14 = i13 >> 28;
                     int i15 = (((i14 | (-31)) << 1) - (i14 ^ (-31))) / 16;
-                    StringBuilder sb = new StringBuilder(b.c((-((((i15 | 1) << 1) - (i15 ^ 1)) + 1)) & i13, 1056, 66528, "12,23,30,LVERIFY"));
+                    StringBuilder sb = new StringBuilder(IdentyB.c((-((((i15 | 1) << 1) - (i15 ^ 1)) + 1)) & i13, 1056, 66528, "12,23,30,LVERIFY"));
                     StringBuilder sb2 = new StringBuilder(String.valueOf(Calendar.getInstance().getTimeInMillis()));
                     StringBuilder sb3 = new StringBuilder();
                     if (transactions == null) {
@@ -2721,7 +2721,7 @@ public final class LManager {
             int i132 = ((i122 | 7) << 1) - (i122 ^ 7);
             int i142 = i132 >> 28;
             int i152 = (((i142 | (-31)) << 1) - (i142 ^ (-31))) / 16;
-            StringBuilder sb5 = new StringBuilder(b.c((-((((i152 | 1) << 1) - (i152 ^ 1)) + 1)) & i132, 1056, 66528, "12,23,30,LVERIFY"));
+            StringBuilder sb5 = new StringBuilder(IdentyB.c((-((((i152 | 1) << 1) - (i152 ^ 1)) + 1)) & i132, 1056, 66528, "12,23,30,LVERIFY"));
             StringBuilder sb22 = new StringBuilder(String.valueOf(Calendar.getInstance().getTimeInMillis()));
             StringBuilder sb32 = new StringBuilder();
             if (transactions == null) {
@@ -3017,7 +3017,7 @@ public final class LManager {
                         int i16 = i15 >> 28;
                         int i17 = (((i16 | (-31)) << 1) - (i16 ^ (-31))) / 16;
                         int i18 = (i17 ^ 1) + ((i17 & 1) << 1);
-                        String c3 = "com.pinkapp.app, com.popular.joven ,com.popular.app.remesas,com.popular.app.micropyme,com.popular.pinkapp".toLowerCase().contains(packageName.toLowerCase()) ? "banco" : b.c((-(((i18 | 1) << 1) - (i18 ^ 1))) & i15, 1892, 47300, "2,25,");
+                        String c3 = "com.pinkapp.app, com.popular.joven ,com.popular.app.remesas,com.popular.app.micropyme,com.popular.pinkapp".toLowerCase().contains(packageName.toLowerCase()) ? "banco" : IdentyB.c((-(((i18 | 1) << 1) - (i18 ^ 1))) & i15, 1892, 47300, "2,25,");
                         StringBuilder sb = new StringBuilder("https://");
                         sb.append(c3);
                         sb.append("licensemgr.identy.io/nverify/v1");

@@ -4,7 +4,7 @@ import android.os.Process;
 import android.os.SystemClock;
 import com.d.e.a.values;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.lang.reflect.Method;
 import kotlin.jvm.internal.ByteCompanionObject;
@@ -163,8 +163,8 @@ public class PostCaptureInput {
                         int i12 = -(i10 ^ ((i11 & 1) + (i11 | 1)));
                         int i13 = (i12 & 7) + (i12 | 7);
                         int i14 = i13 >> 24;
-                        int a = b.a(i14 ^ (-511), (i14 & (-511)) << 1, 256, -1);
-                        jSONObject.put(b.c((-((a ^ 1) + ((a & 1) << 1))) & i13, 1673, 163954, "0|29|24|25|15|zdata"), jSONArray);
+                        int a = IdentyB.a(i14 ^ (-511), (i14 & (-511)) << 1, 256, -1);
+                        jSONObject.put(IdentyB.c((-((a ^ 1) + ((a & 1) << 1))) & i13, 1673, 163954, "0|29|24|25|15|zdata"), jSONArray);
                     }
                     if (this.d != null) {
                         jSONObject.put("gyroY", new JSONArray(this.d));

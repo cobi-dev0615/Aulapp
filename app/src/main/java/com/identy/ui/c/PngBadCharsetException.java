@@ -67,9 +67,9 @@ public class PngBadCharsetException extends Dialog {
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
             Context context = PngBadCharsetException.this.getContext();
-            com.identy.a aVar = (com.identy.a) PngBadCharsetException.this.values.get(view.getTag());
+            com.identy.IdentyA aVar = (com.identy.IdentyA) PngBadCharsetException.this.values.get(view.getTag());
             HashMap hashMap = PngBadCharsetException.this.PngjExceptionInternal;
-            new Attempt(context, aVar, (hashMap == null || !hashMap.containsKey(view.getTag())) ? null : (com.identy.a) PngBadCharsetException.this.PngjExceptionInternal.get(view.getTag())).show();
+            new Attempt(context, aVar, (hashMap == null || !hashMap.containsKey(view.getTag())) ? null : (com.identy.IdentyA) PngBadCharsetException.this.PngjExceptionInternal.get(view.getTag())).show();
         }
     }
 
@@ -94,7 +94,7 @@ public class PngBadCharsetException extends Dialog {
         }
     }
 
-    public PngBadCharsetException(Activity activity, boolean z, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap2, com.identy.d.PngjException pngjException) {
+    public PngBadCharsetException(Activity activity, boolean z, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, com.identy.d.PngjException pngjException) {
         super(activity);
         this.PngjPrematureEnding = false;
         this.Action = false;
@@ -150,7 +150,7 @@ public class PngBadCharsetException extends Dialog {
             findViewById(R.id.index_layout).setVisibility(8);
             this.PngjException.setVisibility(8);
         } else {
-            com.identy.a aVar = (com.identy.a) this.values.get(new Pair(this.PngjInputException, finger));
+            com.identy.IdentyA aVar = (com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger));
             Mat padSub3 = aVar.getPadSub3();
             if (padSub3 != null && Mat.n_rows(padSub3.PngjException) > 0 && Mat.n_cols(padSub3.PngjException) > 0) {
                 Mat mat = new Mat();
@@ -172,7 +172,7 @@ public class PngBadCharsetException extends Dialog {
             findViewById(R.id.middle_layout).setVisibility(8);
             this.valueOf.setVisibility(8);
         } else {
-            com.identy.a aVar2 = (com.identy.a) this.values.get(new Pair(this.PngjInputException, finger2));
+            com.identy.IdentyA aVar2 = (com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger2));
             Mat padSub32 = aVar2.getPadSub3();
             if (padSub32 != null && Mat.n_rows(padSub32.PngjException) > 0 && Mat.n_cols(padSub32.PngjException) > 0) {
                 Mat mat2 = new Mat();
@@ -194,7 +194,7 @@ public class PngBadCharsetException extends Dialog {
             findViewById(R.id.ring_layout).setVisibility(8);
             this.PngjBadCrcException.setVisibility(8);
         } else {
-            com.identy.a aVar3 = (com.identy.a) this.values.get(new Pair(this.PngjInputException, finger3));
+            com.identy.IdentyA aVar3 = (com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger3));
             Mat padSub33 = aVar3.getPadSub3();
             if (padSub33 != null && Mat.n_rows(padSub33.PngjException) > 0 && Mat.n_cols(padSub33.PngjException) > 0) {
                 Mat mat3 = new Mat();
@@ -216,7 +216,7 @@ public class PngBadCharsetException extends Dialog {
             findViewById(R.id.little_layout).setVisibility(8);
             this.PngjBadSignature.setVisibility(8);
         } else {
-            com.identy.a aVar4 = (com.identy.a) this.values.get(new Pair(this.PngjInputException, finger4));
+            com.identy.IdentyA aVar4 = (com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger4));
             Mat padSub34 = aVar4.getPadSub3();
             if (padSub34 != null && Mat.n_rows(padSub34.PngjException) > 0 && Mat.n_cols(padSub34.PngjException) > 0) {
                 Mat mat4 = new Mat();
@@ -232,11 +232,11 @@ public class PngBadCharsetException extends Dialog {
             ((TextView) findViewById(R.id.little_finger_nfig_score)).setText(Html.fromHtml(aVar4.PngjBadCrcException()));
         }
         if (this.values.containsKey(new Pair(this.PngjInputException, finger)) && this.values.get(new Pair(this.PngjInputException, finger)) != null) {
-            com.identy.a aVar5 = (com.identy.a) this.values.get(new Pair(this.PngjInputException, finger));
+            com.identy.IdentyA aVar5 = (com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger));
             String PngjBadCrcException2 = aVar5.PngjBadCrcException();
             HashMap hashMap5 = this.PngjExceptionInternal;
             if (hashMap5 != null && hashMap5.containsKey(new Pair(this.PngjInputException, finger))) {
-                com.identy.a aVar6 = (com.identy.a) this.PngjExceptionInternal.get(new Pair(this.PngjInputException, finger));
+                com.identy.IdentyA aVar6 = (com.identy.IdentyA) this.PngjExceptionInternal.get(new Pair(this.PngjInputException, finger));
                 StringBuilder sb = new StringBuilder();
                 sb.append(aVar5.PngjBadCrcException());
                 sb.append(aVar6.PngjBadCrcException());
@@ -245,11 +245,11 @@ public class PngBadCharsetException extends Dialog {
             ((TextView) findViewById(R.id.index_finger_nfig_score)).setText(Html.fromHtml(PngjBadCrcException2));
         }
         if (this.values.containsKey(new Pair(this.PngjInputException, finger2)) && this.values.get(new Pair(this.PngjInputException, finger2)) != null) {
-            com.identy.a aVar7 = (com.identy.a) this.values.get(new Pair(this.PngjInputException, finger2));
+            com.identy.IdentyA aVar7 = (com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger2));
             String PngjBadCrcException3 = aVar7.PngjBadCrcException();
             HashMap hashMap6 = this.PngjExceptionInternal;
             if (hashMap6 != null && hashMap6.containsKey(new Pair(this.PngjInputException, finger2))) {
-                com.identy.a aVar8 = (com.identy.a) this.PngjExceptionInternal.get(new Pair(this.PngjInputException, finger2));
+                com.identy.IdentyA aVar8 = (com.identy.IdentyA) this.PngjExceptionInternal.get(new Pair(this.PngjInputException, finger2));
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append(aVar7.PngjBadCrcException());
                 sb2.append(aVar8.PngjBadCrcException());
@@ -258,11 +258,11 @@ public class PngBadCharsetException extends Dialog {
             ((TextView) findViewById(R.id.middle_finger_nfig_score)).setText(Html.fromHtml(PngjBadCrcException3));
         }
         if (this.values.containsKey(new Pair(this.PngjInputException, finger3)) && this.values.get(new Pair(this.PngjInputException, finger3)) != null) {
-            com.identy.a aVar9 = (com.identy.a) this.values.get(new Pair(this.PngjInputException, finger3));
+            com.identy.IdentyA aVar9 = (com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger3));
             String PngjBadCrcException4 = aVar9.PngjBadCrcException();
             HashMap hashMap7 = this.PngjExceptionInternal;
             if (hashMap7 != null && hashMap7.containsKey(new Pair(this.PngjInputException, finger3))) {
-                com.identy.a aVar10 = (com.identy.a) this.PngjExceptionInternal.get(new Pair(this.PngjInputException, finger3));
+                com.identy.IdentyA aVar10 = (com.identy.IdentyA) this.PngjExceptionInternal.get(new Pair(this.PngjInputException, finger3));
                 StringBuilder sb3 = new StringBuilder();
                 sb3.append(aVar9.PngjBadCrcException());
                 sb3.append(aVar10.PngjBadCrcException());
@@ -271,11 +271,11 @@ public class PngBadCharsetException extends Dialog {
             ((TextView) findViewById(R.id.ring_finger_nfig_score)).setText(Html.fromHtml(PngjBadCrcException4));
         }
         if (this.values.containsKey(new Pair(this.PngjInputException, finger4)) && this.values.get(new Pair(this.PngjInputException, finger4)) != null) {
-            com.identy.a aVar11 = (com.identy.a) this.values.get(new Pair(this.PngjInputException, finger4));
+            com.identy.IdentyA aVar11 = (com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger4));
             String PngjBadCrcException5 = aVar11.PngjBadCrcException();
             HashMap hashMap8 = this.PngjExceptionInternal;
             if (hashMap8 != null && hashMap8.containsKey(new Pair(this.PngjInputException, finger4))) {
-                com.identy.a aVar12 = (com.identy.a) this.PngjExceptionInternal.get(new Pair(this.PngjInputException, finger4));
+                com.identy.IdentyA aVar12 = (com.identy.IdentyA) this.PngjExceptionInternal.get(new Pair(this.PngjInputException, finger4));
                 StringBuilder sb4 = new StringBuilder();
                 sb4.append(aVar11.PngjBadCrcException());
                 sb4.append(aVar12.PngjBadCrcException());
@@ -291,17 +291,17 @@ public class PngBadCharsetException extends Dialog {
             return;
         }
         if (this.values.containsKey(new Pair(this.PngjInputException, finger)) && this.values.get(new Pair(this.PngjInputException, finger)) != null) {
-            ((TextView) findViewById(R.id.index_finger_score)).setText(Html.fromHtml(((com.identy.a) this.values.get(new Pair(this.PngjInputException, finger))).PngjException(this.Action)));
+            ((TextView) findViewById(R.id.index_finger_score)).setText(Html.fromHtml(((com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger))).PngjException(this.Action)));
         }
         if (this.values.containsKey(new Pair(this.PngjInputException, finger2)) && this.values.get(new Pair(this.PngjInputException, finger2)) != null) {
-            ((TextView) findViewById(R.id.middle_finger_score)).setText(Html.fromHtml(((com.identy.a) this.values.get(new Pair(this.PngjInputException, finger2))).PngjException(this.Action)));
+            ((TextView) findViewById(R.id.middle_finger_score)).setText(Html.fromHtml(((com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger2))).PngjException(this.Action)));
         }
         if (this.values.containsKey(new Pair(this.PngjInputException, finger3)) && this.values.get(new Pair(this.PngjInputException, finger3)) != null) {
-            ((TextView) findViewById(R.id.ring_finger_score)).setText(Html.fromHtml(((com.identy.a) this.values.get(new Pair(this.PngjInputException, finger3))).PngjException(this.Action)));
+            ((TextView) findViewById(R.id.ring_finger_score)).setText(Html.fromHtml(((com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger3))).PngjException(this.Action)));
         }
         if (!this.values.containsKey(new Pair(this.PngjInputException, finger4)) || this.values.get(new Pair(this.PngjInputException, finger4)) == null) {
             return;
         }
-        ((TextView) findViewById(R.id.little_finger_score)).setText(Html.fromHtml(((com.identy.a) this.values.get(new Pair(this.PngjInputException, finger4))).PngjException(this.Action)));
+        ((TextView) findViewById(R.id.little_finger_score)).setText(Html.fromHtml(((com.identy.IdentyA) this.values.get(new Pair(this.PngjInputException, finger4))).PngjException(this.Action)));
     }
 }

@@ -14,7 +14,6 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.Regex;
 import kotlin.text.StringsKt;
-import kotlin.text.StringsKt___StringsKt;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u0000 \u00022\u00020\u0001:\u0001\u0002¨\u0006\u0003"}, d2 = {"Lcom/gse/aulapp/util/DateUtil;", BuildConfig.FLAVOR, "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: classes.dex */
@@ -277,7 +276,7 @@ public abstract class DateUtil {
             if (date2 != null) {
                 String format2 = simpleDateFormat.format(date2);
                 Intrinsics.checkNotNullExpressionValue(format2, "format(...)");
-                str = StringsKt___StringsKt.takeLast(format2, 2);
+                str = StringsKt.takeLast(format2, 2);
             } else {
                 str = null;
             }

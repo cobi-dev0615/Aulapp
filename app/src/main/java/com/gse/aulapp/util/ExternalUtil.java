@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import co.ceduladigital.sdk.e4;
 import co.ceduladigital.sdk.q;
-import com.google.android.gms.time.TrustedTimeClient;
 import com.gse.aulapp.GeneralApp;
 import com.gse.aulapp.io.ReceptionsApiService;
 import com.gse.aulapp.model.enumerate.EnumDialogType;
@@ -166,8 +165,8 @@ public abstract class ExternalUtil {
             if (i != 4) {
                 throw new NoWhenBranchMatchedException();
             }
-            TrustedTimeClient trustedTimeClient = GeneralApp.INSTANCE.getTrustedTimeClient();
-            Long computeCurrentUnixEpochMillis = trustedTimeClient != null ? trustedTimeClient.computeCurrentUnixEpochMillis() : null;
+            Object trustedTimeClient = GeneralApp.INSTANCE.getTrustedTimeClient();
+            Long computeCurrentUnixEpochMillis = trustedTimeClient != null ? ((com.google.android.gms.time.TrustedTimeClient) trustedTimeClient).computeCurrentUnixEpochMillis() : null;
             if (computeCurrentUnixEpochMillis != null) {
                 String format2 = Instant.ofEpochMilli(computeCurrentUnixEpochMillis.longValue()).atZone(ZoneId.of("America/Bogota")).format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
                 Intrinsics.checkNotNull(format2);

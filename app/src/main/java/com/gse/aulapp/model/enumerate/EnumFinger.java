@@ -72,7 +72,7 @@ public abstract class EnumFinger {
         return $ENTRIES;
     }
 
-    public static EnumFinger valueOf(String str) {
+    public static EnumFinger valueOfString(String str) {
         return (EnumFinger) Enum.valueOf(EnumFinger.class, str);
     }
 

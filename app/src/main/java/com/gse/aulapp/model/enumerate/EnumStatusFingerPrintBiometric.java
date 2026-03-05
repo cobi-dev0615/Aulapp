@@ -32,7 +32,7 @@ public final class EnumStatusFingerPrintBiometric {
     private EnumStatusFingerPrintBiometric(String str, int i) {
     }
 
-    public static EnumStatusFingerPrintBiometric valueOf(String str) {
+    public static EnumStatusFingerPrintBiometric valueOfString(String str) {
         return (EnumStatusFingerPrintBiometric) Enum.valueOf(EnumStatusFingerPrintBiometric.class, str);
     }
 

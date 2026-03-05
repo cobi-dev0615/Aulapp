@@ -110,7 +110,7 @@ public final class EnumDialogType {
     private EnumDialogType(String str, int i) {
     }
 
-    public static EnumDialogType valueOf(String str) {
+    public static EnumDialogType valueOfString(String str) {
         return (EnumDialogType) Enum.valueOf(EnumDialogType.class, str);
     }
 

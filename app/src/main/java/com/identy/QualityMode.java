@@ -68,7 +68,7 @@ public enum QualityMode {
         $$b = 67;
     }
 
-    public static QualityMode valueOf(String str) {
+    public static QualityMode valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

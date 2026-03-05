@@ -68,7 +68,7 @@ public enum valueOf {
         $$b = 79;
     }
 
-    public static valueOf valueOf(String str) {
+    public static valueOf valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

@@ -13,7 +13,7 @@ import kotlin.jvm.internal.IntCompanionObject;
 @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
 @DebugMetadata(c = "com.gse.aulapp.viewmodel.HomeViewModel$getSessionFromApiAndSave$1$2", f = "HomeViewModel.kt", i = {0, 0, 0, 1, 1, 1}, l = {160, 166, 184, 190, 199, 205}, m = "emit", n = {"this", "apiResponse", "result", "this", "apiResponse", "result"}, s = {"L$0", "L$1", "L$2", "L$0", "L$1", "L$2"})
 /* loaded from: classes2.dex */
-public final class HomeViewModel$getSessionFromApiAndSave$1$2$emit$1 extends ContinuationImpl {
+public final class HomeViewModel$getSessionFromApiAndSave$1$2$emit$1<T> extends ContinuationImpl {
     Object L$0;
     Object L$1;
     Object L$2;

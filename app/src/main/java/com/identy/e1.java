@@ -378,7 +378,7 @@ public class e1 extends BroadcastReceiver {
                 }
             } catch (Exception unused) {
             }
-            HashMap<Pair<Hand, Finger>, com.identy.a> hashMap = null;
+            HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap = null;
             if (!e1.this.FingerActivity.isrtQualityPassed()) {
                 e1.this.PngjExceptionInternal.add(getPadSub2.RTQ);
                 Mat.n_release(this.values.PngjException);
@@ -3666,7 +3666,7 @@ public class e1 extends BroadcastReceiver {
             }
             Iterator it = hashMap.entrySet().iterator();
             while (it.hasNext()) {
-                com.identy.a aVar = (com.identy.a) ((Map.Entry) it.next()).getValue();
+                com.identy.IdentyA aVar = (com.identy.IdentyA) ((Map.Entry) it.next()).getValue();
                 new com.identy.c.values(e1Var.Action, e1Var.Capture2IndexActivity).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, aVar);
                 aVar.valueOf(0);
                 aVar.PngjBadSignature(e1Var.CaptureFingersActivity, e1Var.generate, e1Var.ppk, e1Var.rgenerate);

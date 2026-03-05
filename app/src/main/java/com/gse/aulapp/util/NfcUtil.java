@@ -57,7 +57,7 @@ public abstract class NfcUtil {
             private NfcStatus(String str, int i) {
             }
 
-            public static NfcStatus valueOf(String str) {
+            public static NfcStatus valueOfString(String str) {
                 return (NfcStatus) Enum.valueOf(NfcStatus.class, str);
             }
 

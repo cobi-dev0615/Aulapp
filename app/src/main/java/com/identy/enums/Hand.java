@@ -76,7 +76,7 @@ public enum Hand implements Serializable {
         $$b = 248;
     }
 
-    public static Hand valueOf(String str) {
+    public static Hand valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

@@ -97,7 +97,7 @@ public abstract class EnumApps {
         this(str, i);
     }
 
-    public static EnumApps valueOf(String str) {
+    public static EnumApps valueOfString(String str) {
         return (EnumApps) Enum.valueOf(EnumApps.class, str);
     }
 

@@ -6,11 +6,11 @@ import android.os.AsyncTask;
 import android.util.Pair;
 import com.identy.PngjBadSignature;
 import com.identy.PngjOutputException;
-import com.identy.a;
+import com.identy.IdentyA;
 import java.lang.ref.WeakReference;
 
 /* loaded from: classes2.dex */
-public final class values extends AsyncTask<a, Integer, a> {
+public final class values extends AsyncTask<IdentyA, Integer, IdentyA> {
     private WeakReference PngjBadCrcException;
     private String PngjBadSignature = "CalculateNFIQAsync";
     private PngjOutputException values;
@@ -24,8 +24,8 @@ public final class values extends AsyncTask<a, Integer, a> {
     /* JADX INFO: Access modifiers changed from: private */
     @Override // android.os.AsyncTask
     /* renamed from: PngjBadSignature, reason: merged with bridge method [inline-methods] */
-    public a doInBackground(a... aVarArr) {
-        a aVar = aVarArr[0];
+    public IdentyA doInBackground(IdentyA... aVarArr) {
+        IdentyA aVar = aVarArr[0];
         try {
             aVar.getAsHighestSecurityLevelReached();
             try {
@@ -41,7 +41,7 @@ public final class values extends AsyncTask<a, Integer, a> {
     }
 
     @Override // android.os.AsyncTask
-    public final /* synthetic */ void onPostExecute(a aVar) {
+    public final /* synthetic */ void onPostExecute(IdentyA aVar) {
         Intent intent = new Intent(PngjBadSignature.values);
         intent.putExtra("mid", aVar.values());
         intent.setPackage(((Activity) this.PngjBadCrcException.get()).getPackageName());

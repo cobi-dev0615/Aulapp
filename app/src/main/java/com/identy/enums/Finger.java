@@ -81,7 +81,7 @@ public enum Finger implements Serializable {
         $$b = 158;
     }
 
-    public static Finger valueOf(String str) {
+    public static Finger valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

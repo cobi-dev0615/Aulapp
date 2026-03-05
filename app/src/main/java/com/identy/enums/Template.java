@@ -2296,7 +2296,7 @@ public enum Template {
         $$b = 168;
     }
 
-    public static Template valueOf(String str) {
+    public static Template valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

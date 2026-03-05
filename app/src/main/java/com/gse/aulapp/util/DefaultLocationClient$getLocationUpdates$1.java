@@ -41,10 +41,10 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit invokeSuspend$lambda$0(DefaultLocationClient defaultLocationClient, DefaultLocationClient$getLocationUpdates$1$callback$1 defaultLocationClient$getLocationUpdates$1$callback$1) {
+    public static final Unit invokeSuspend$lambda$0(DefaultLocationClient defaultLocationClient, Object defaultLocationClient$getLocationUpdates$1$callback$1) {
         FusedLocationProviderClient fusedLocationProviderClient;
         fusedLocationProviderClient = defaultLocationClient.client;
-        fusedLocationProviderClient.removeLocationUpdates(defaultLocationClient$getLocationUpdates$1$callback$1);
+        fusedLocationProviderClient.removeLocationUpdates((LocationCallback) defaultLocationClient$getLocationUpdates$1$callback$1);
         return Unit.INSTANCE;
     }
 

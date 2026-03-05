@@ -202,7 +202,7 @@ public final class Position {
                     int i17 = -(((i16 & 1) + (i16 | 1)) ^ i14);
                     i2 = (i17 ^ 6) + ((i17 & 6) << 1);
                     int i18 = i2 >> 25;
-                    a = b.a(i18 ^ (-255), (i18 & (-255)) << 1, 128, -1);
+                    a = IdentyB.a(i18 ^ (-255), (i18 & (-255)) << 1, 128, -1);
                     if (i != 10788 / (((-((a & 1) + (a | 1))) & i2) * 1798)) {
                         int i19 = PngjBadCrcException.valueOf[((Finger) pair.second).ordinal()];
                         if (i19 == 1) {
@@ -272,7 +272,7 @@ public final class Position {
             int i172 = -(((i162 & 1) + (i162 | 1)) ^ i142);
             i2 = (i172 ^ 6) + ((i172 & 6) << 1);
             int i182 = i2 >> 25;
-            a = b.a(i182 ^ (-255), (i182 & (-255)) << 1, 128, -1);
+            a = IdentyB.a(i182 ^ (-255), (i182 & (-255)) << 1, 128, -1);
             if (i != 10788 / (((-((a & 1) + (a | 1))) & i2) * 1798)) {
             }
             return UNKNOWN;
@@ -338,7 +338,7 @@ public final class Position {
         $$b = 112;
     }
 
-    public static Position valueOf(String str) {
+    public static Position valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

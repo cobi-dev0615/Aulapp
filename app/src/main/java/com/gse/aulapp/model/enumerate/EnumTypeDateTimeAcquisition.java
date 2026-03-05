@@ -30,7 +30,7 @@ public final class EnumTypeDateTimeAcquisition {
     private EnumTypeDateTimeAcquisition(String str, int i) {
     }
 
-    public static EnumTypeDateTimeAcquisition valueOf(String str) {
+    public static EnumTypeDateTimeAcquisition valueOfString(String str) {
         return (EnumTypeDateTimeAcquisition) Enum.valueOf(EnumTypeDateTimeAcquisition.class, str);
     }
 

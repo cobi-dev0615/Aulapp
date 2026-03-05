@@ -13,7 +13,7 @@ import java.util.HashMap;
 public final class PngjException extends getQualityScore {
     private com.identy.valueOf PngjPrematureEnding;
 
-    public PngjException(Activity activity, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap2, com.identy.valueOf valueof, com.identy.d.PngjException pngjException) {
+    public PngjException(Activity activity, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, com.identy.valueOf valueof, com.identy.d.PngjException pngjException) {
         super(activity, true, hashMap, hashMap2, pngjException);
         this.PngjPrematureEnding = valueof;
     }

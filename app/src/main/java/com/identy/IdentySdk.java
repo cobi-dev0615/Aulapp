@@ -990,7 +990,7 @@ public class IdentySdk {
                     int i15 = (i14 & 6) + (i14 | 6);
                     int i16 = i15 >> 21;
                     int i17 = ((i16 & (-4095)) + (i16 | (-4095))) / 2048;
-                    throw new Exception(b.c((-((i17 & 1) + (i17 | 1) + 1)) & i15, 343, 24696, "14/20/9/5/4/No Active instance"));
+                    throw new Exception(IdentyB.c((-((i17 & 1) + (i17 | 1) + 1)) & i15, 343, 24696, "14/20/9/5/4/No Active instance"));
                 }
             }
             byte[] bArr = $$d;
@@ -1068,7 +1068,7 @@ public class IdentySdk {
                 int i13 = (i12 ^ 2) + ((i12 & 2) << 1);
                 int i14 = i13 >> 27;
                 int i15 = ((i14 ^ (-63)) + ((i14 & (-63)) << 1)) / 32;
-                return b.c((-((i15 & 1) + (i15 | 1) + 1)) & i13, 1424, 5696, "7|aa1bb024f00e2090fd5463ce83cf89e72937a61f");
+                return IdentyB.c((-((i15 & 1) + (i15 | 1) + 1)) & i13, 1424, 5696, "7|aa1bb024f00e2090fd5463ce83cf89e72937a61f");
             }
             byte[] bArr = $$d;
             Object[] objArr2 = new Object[1];
@@ -1093,7 +1093,7 @@ public class IdentySdk {
             int i132 = (i122 ^ 2) + ((i122 & 2) << 1);
             int i142 = i132 >> 27;
             int i152 = ((i142 ^ (-63)) + ((i142 & (-63)) << 1)) / 32;
-            return b.c((-((i152 & 1) + (i152 | 1) + 1)) & i132, 1424, 5696, "7|aa1bb024f00e2090fd5463ce83cf89e72937a61f");
+            return IdentyB.c((-((i152 & 1) + (i152 | 1) + 1)) & i132, 1424, 5696, "7|aa1bb024f00e2090fd5463ce83cf89e72937a61f");
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -1163,7 +1163,7 @@ public class IdentySdk {
                 int i16 = i15 >> 26;
                 int i17 = (((i16 | (-127)) << 1) - (i16 ^ (-127))) / 64;
                 int i18 = (i17 ^ 1) + ((i17 & 1) << 1);
-                return b.c((-(((i18 | 1) << 1) - (i18 ^ 1))) & i15, 24, 600, "2;24;7.2.1");
+                return IdentyB.c((-(((i18 | 1) << 1) - (i18 ^ 1))) & i15, 24, 600, "2;24;7.2.1");
             }
             byte[] bArr = $$d;
             byte b = (byte) (-bArr[11]);
@@ -1191,7 +1191,7 @@ public class IdentySdk {
             int i162 = i152 >> 26;
             int i172 = (((i162 | (-127)) << 1) - (i162 ^ (-127))) / 64;
             int i182 = (i172 ^ 1) + ((i172 & 1) << 1);
-            return b.c((-(((i182 | 1) << 1) - (i182 ^ 1))) & i152, 24, 600, "2;24;7.2.1");
+            return IdentyB.c((-(((i182 | 1) << 1) - (i182 ^ 1))) & i152, 24, 600, "2;24;7.2.1");
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -1466,7 +1466,7 @@ public class IdentySdk {
                     int i11 = (i10 ^ 1) + ((i10 & 1) << 1);
                     int i12 = ((i8 | i11) << 1) - (i11 ^ i8);
                     int i13 = i8 >> 28;
-                    int i14 = (-(b.e((i13 | (-31)) << 1, i13 ^ (-31), 16, -1) ^ i12)) - (-1);
+                    int i14 = (-(IdentyB.e((i13 | (-31)) << 1, i13 ^ (-31), 16, -1) ^ i12)) - (-1);
                     int i15 = i14 >> 22;
                     int i16 = ((i15 ^ (-2047)) + ((i15 & (-2047)) << 1)) / 1024;
                     int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
@@ -1493,7 +1493,7 @@ public class IdentySdk {
             int i112 = (i102 ^ 1) + ((i102 & 1) << 1);
             int i122 = ((i82 | i112) << 1) - (i112 ^ i82);
             int i132 = i82 >> 28;
-            int i142 = (-(b.e((i132 | (-31)) << 1, i132 ^ (-31), 16, -1) ^ i122)) - (-1);
+            int i142 = (-(IdentyB.e((i132 | (-31)) << 1, i132 ^ (-31), 16, -1) ^ i122)) - (-1);
             int i152 = i142 >> 22;
             int i162 = ((i152 ^ (-2047)) + ((i152 & (-2047)) << 1)) / 1024;
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
@@ -1550,7 +1550,7 @@ public class IdentySdk {
                     int i12 = i11 >> 25;
                     int i13 = ((i12 & (-255)) + (i12 | (-255))) / 128;
                     int i14 = (i13 & 1) + (i13 | 1);
-                    int i15 = -(b.e(i11 >> 20, 8191, ConstantsKt.DEFAULT_BLOCK_SIZE, -1) ^ ((i11 ^ i14) + ((i14 & i11) << 1)));
+                    int i15 = -(IdentyB.e(i11 >> 20, 8191, ConstantsKt.DEFAULT_BLOCK_SIZE, -1) ^ ((i11 ^ i14) + ((i14 & i11) << 1)));
                     int i16 = (i15 & 6) + (i15 | 6);
                     int i17 = ((i16 >> 27) - 63) / 32;
                     sb.append("10;cannot find resource: ".substring(35820 / (((-((((i17 | 1) << 1) - (i17 ^ 1)) - (-1))) & i16) * 1990)));
@@ -2396,13 +2396,13 @@ public class IdentySdk {
                     int i5 = -(i3 * 889403318);
                     int i6 = ((i4 | i5) << 1) - (i5 ^ i4);
                     int i7 = ((i6 | 341778417) << 1) - (341778417 ^ i6);
-                    int e = b.e(i7 >> 27, 63, 32, -1);
+                    int e = IdentyB.e(i7 >> 27, 63, 32, -1);
                     int i8 = ((i7 | e) << 1) - (e ^ i7);
                     int i9 = i7 >> 25;
                     int i10 = ((i9 ^ (-255)) + ((i9 & (-255)) << 1)) / 128;
                     int i11 = -(((i10 ^ 1) + ((i10 & 1) << 1)) ^ i8);
                     int i12 = (i11 & 5) + (i11 | 5);
-                    int e2 = b.e(i12 >> 23, 1023, ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
+                    int e2 = IdentyB.e(i12 >> 23, 1023, ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
                     i = 0 / (((-((e2 & 1) + (e2 | 1))) & i12) * 420);
                 } else {
                     generateST = (deduplication + 97) % 128;
@@ -2484,7 +2484,7 @@ public class IdentySdk {
                     int i17 = ((i16 ^ (-63)) + ((i16 & (-63)) << 1)) / 32;
                     int i18 = -(((i17 ^ 1) + ((i17 & 1) << 1)) ^ i15);
                     int i19 = (i18 & 1) + (i18 | 1);
-                    int e = b.e(i19 >> 16, 131071, 65536, -1);
+                    int e = IdentyB.e(i19 >> 16, 131071, 65536, -1);
                     int r14 = 917 / (((-((e ^ 1) + ((e & 1) << 1))) & i19) * 917);
                     i3 = generateST + 121;
                     deduplication = i3 % 128;
@@ -2522,7 +2522,7 @@ public class IdentySdk {
             int i172 = ((i162 ^ (-63)) + ((i162 & (-63)) << 1)) / 32;
             int i182 = -(((i172 ^ 1) + ((i172 & 1) << 1)) ^ i152);
             int i192 = (i182 & 1) + (i182 | 1);
-            int e2 = b.e(i192 >> 16, 131071, 65536, -1);
+            int e2 = IdentyB.e(i192 >> 16, 131071, 65536, -1);
             int r142 = 917 / (((-((e2 ^ 1) + ((e2 & 1) << 1))) & i192) * 917);
             i3 = generateST + 121;
             deduplication = i3 % 128;
@@ -2602,7 +2602,7 @@ public class IdentySdk {
                                     int i12 = (i11 ^ 1) + ((i11 & 1) << 1);
                                     int i13 = ((i10 | i12) << 1) - (i12 ^ i10);
                                     int i14 = i10 >> 27;
-                                    int i15 = (-(i13 ^ b.a(i14 ^ (-63), (i14 & (-63)) << 1, 32, -1))) + 4;
+                                    int i15 = (-(i13 ^ IdentyB.a(i14 ^ (-63), (i14 & (-63)) << 1, 32, -1))) + 4;
                                     int i16 = i15 >> 21;
                                     int i17 = (((i16 | (-4095)) << 1) - (i16 ^ (-4095))) / 2048;
                                     int i18 = (i17 ^ 1) + ((i17 & 1) << 1);
@@ -2663,7 +2663,7 @@ public class IdentySdk {
                     int i7 = ((i5 | i6) << 1) - (i5 ^ i6);
                     int i8 = -(i4 * 2106721787);
                     int i9 = ((i7 ^ i8) + ((i8 & i7) << 1)) - 1824535239;
-                    int i10 = (i9 - (~b.e(i9 >> 28, 31, 16, -1))) - 1;
+                    int i10 = (i9 - (~IdentyB.e(i9 >> 28, 31, 16, -1))) - 1;
                     int i11 = i9 >> 22;
                     int i12 = (((i11 | (-2047)) << 1) - (i11 ^ (-2047))) / 1024;
                     int i13 = (-(i10 ^ ((i12 & 1) + (i12 | 1)))) + 8;
@@ -2690,7 +2690,7 @@ public class IdentySdk {
             int i72 = ((i52 | i62) << 1) - (i52 ^ i62);
             int i82 = -(i42 * 2106721787);
             int i92 = ((i72 ^ i82) + ((i82 & i72) << 1)) - 1824535239;
-            int i102 = (i92 - (~b.e(i92 >> 28, 31, 16, -1))) - 1;
+            int i102 = (i92 - (~IdentyB.e(i92 >> 28, 31, 16, -1))) - 1;
             int i112 = i92 >> 22;
             int i122 = (((i112 | (-2047)) << 1) - (i112 ^ (-2047))) / 1024;
             int i132 = (-(i102 ^ ((i122 & 1) + (i122 | 1)))) + 8;
@@ -2736,7 +2736,7 @@ public class IdentySdk {
                     int i8 = -(i4 * (-1901607536));
                     int i9 = ((i7 | i8) << 1) - (i8 ^ i7);
                     int i10 = (i9 & 410127529) + (410127529 | i9);
-                    int e = b.e(i10 >> 19, 16383, ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
+                    int e = IdentyB.e(i10 >> 19, 16383, ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
                     int i11 = (i10 ^ e) + ((e & i10) << 1);
                     int i12 = i10 >> 23;
                     int i13 = ((i12 & (-1023)) + (i12 | (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE;
@@ -2766,7 +2766,7 @@ public class IdentySdk {
             int i82 = -(i42 * (-1901607536));
             int i92 = ((i72 | i82) << 1) - (i82 ^ i72);
             int i102 = (i92 & 410127529) + (410127529 | i92);
-            int e2 = b.e(i102 >> 19, 16383, ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
+            int e2 = IdentyB.e(i102 >> 19, 16383, ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
             int i112 = (i102 ^ e2) + ((e2 & i102) << 1);
             int i122 = i102 >> 23;
             int i132 = ((i122 & (-1023)) + (i122 | (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE;
@@ -2818,7 +2818,7 @@ public class IdentySdk {
                     int i11 = i10 >> 18;
                     int i12 = ((i11 & (-32767)) + (i11 | (-32767))) / 16384;
                     int i13 = (i12 & 1) + (i12 | 1);
-                    int i14 = -(b.e(i10 >> 15, 262143, 131072, -1) ^ (((i10 | i13) << 1) - (i13 ^ i10)));
+                    int i14 = -(IdentyB.e(i10 >> 15, 262143, 131072, -1) ^ (((i10 | i13) << 1) - (i13 ^ i10)));
                     int i15 = (i14 & 4) + (i14 | 4);
                     int i16 = i15 >> 20;
                     int i17 = ((i16 & (-8191)) + (i16 | (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;
@@ -2848,7 +2848,7 @@ public class IdentySdk {
             int i112 = i102 >> 18;
             int i122 = ((i112 & (-32767)) + (i112 | (-32767))) / 16384;
             int i132 = (i122 & 1) + (i122 | 1);
-            int i142 = -(b.e(i102 >> 15, 262143, 131072, -1) ^ (((i102 | i132) << 1) - (i132 ^ i102)));
+            int i142 = -(IdentyB.e(i102 >> 15, 262143, 131072, -1) ^ (((i102 | i132) << 1) - (i132 ^ i102)));
             int i152 = (i142 & 4) + (i142 | 4);
             int i162 = i152 >> 20;
             int i172 = ((i162 & (-8191)) + (i162 | (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;
@@ -3042,7 +3042,7 @@ public class IdentySdk {
                     int i15 = -(i12 ^ ((i14 & 1) + (i14 | 1)));
                     int i16 = (i15 & 2) + (i15 | 2);
                     int i17 = i16 >> 29;
-                    int a = b.a(i17 & (-15), i17 | (-15), 8, -1);
+                    int a = IdentyB.a(i17 & (-15), i17 | (-15), 8, -1);
                     int i18 = (2654 / (((-(((a | 1) << 1) - (a ^ 1))) & i16) * 1327)) + i;
                     this.getFingers.put(fingerDetectionMode, Integer.valueOf(i18));
                     return Integer.valueOf(i18);
@@ -3073,7 +3073,7 @@ public class IdentySdk {
             int i152 = -(i122 ^ ((i142 & 1) + (i142 | 1)));
             int i162 = (i152 & 2) + (i152 | 2);
             int i172 = i162 >> 29;
-            int a2 = b.a(i172 & (-15), i172 | (-15), 8, -1);
+            int a2 = IdentyB.a(i172 & (-15), i172 | (-15), 8, -1);
             int i182 = (2654 / (((-(((a2 | 1) << 1) - (a2 ^ 1))) & i162) * 1327)) + i;
             this.getFingers.put(fingerDetectionMode, Integer.valueOf(i182));
             return Integer.valueOf(i182);
@@ -3482,7 +3482,7 @@ public class IdentySdk {
                 int i11 = ((i10 ^ (-4095)) + ((i10 & (-4095)) << 1)) / 2048;
                 int i12 = (i9 - (~((i11 & 1) + (i11 | 1)))) - 1;
                 int i13 = i9 >> 15;
-                int i14 = -(i12 ^ b.a(i13 & (-262143), i13 | (-262143), 131072, -1));
+                int i14 = -(i12 ^ IdentyB.a(i13 & (-262143), i13 | (-262143), 131072, -1));
                 int i15 = ((i14 | 8) << 1) - (i14 ^ 8);
                 int i16 = ((i15 >> 18) - 32767) / 16384;
                 this.CaptureMode = 13800 / (((-(((i16 ^ 1) + ((i16 & 1) << 1)) - (-1))) & i15) * 1725);
@@ -3514,7 +3514,7 @@ public class IdentySdk {
             int i112 = ((i102 ^ (-4095)) + ((i102 & (-4095)) << 1)) / 2048;
             int i122 = (i92 - (~((i112 & 1) + (i112 | 1)))) - 1;
             int i132 = i92 >> 15;
-            int i142 = -(i122 ^ b.a(i132 & (-262143), i132 | (-262143), 131072, -1));
+            int i142 = -(i122 ^ IdentyB.a(i132 & (-262143), i132 | (-262143), 131072, -1));
             int i152 = ((i142 | 8) << 1) - (i142 ^ 8);
             int i162 = ((i152 >> 18) - 32767) / 16384;
             this.CaptureMode = 13800 / (((-(((i162 ^ 1) + ((i162 & 1) << 1)) - (-1))) & i152) * 1725);
@@ -3588,11 +3588,11 @@ public class IdentySdk {
                 int i14 = (i13 & 1) + (i13 | 1);
                 int i15 = ((i11 | i14) << 1) - (i14 ^ i11);
                 int i16 = i11 >> 27;
-                int i17 = -(b.a(i16 & (-63), i16 | (-63), 32, -1) ^ i15);
+                int i17 = -(IdentyB.a(i16 & (-63), i16 | (-63), 32, -1) ^ i15);
                 int i18 = (i17 ^ 7) + ((i17 & 7) << 1);
                 int i19 = i18 >> 18;
-                int a = b.a(i19 ^ (-32767), (i19 & (-32767)) << 1, 16384, -1);
-                this.getShortform = b.c((-((a & 1) + (a | 1))) & i18, 28, 1764, "24;16;11;kid");
+                int a = IdentyB.a(i19 ^ (-32767), (i19 & (-32767)) << 1, 16384, -1);
+                this.getShortform = IdentyB.c((-((a & 1) + (a | 1))) & i18, 28, 1764, "24;16;11;kid");
                 i = deduplication + 21;
                 generateST = i % 128;
                 if (i % 2 == 0) {
@@ -3622,11 +3622,11 @@ public class IdentySdk {
             int i142 = (i132 & 1) + (i132 | 1);
             int i152 = ((i112 | i142) << 1) - (i142 ^ i112);
             int i162 = i112 >> 27;
-            int i172 = -(b.a(i162 & (-63), i162 | (-63), 32, -1) ^ i152);
+            int i172 = -(IdentyB.a(i162 & (-63), i162 | (-63), 32, -1) ^ i152);
             int i182 = (i172 ^ 7) + ((i172 & 7) << 1);
             int i192 = i182 >> 18;
-            int a2 = b.a(i192 ^ (-32767), (i192 & (-32767)) << 1, 16384, -1);
-            this.getShortform = b.c((-((a2 & 1) + (a2 | 1))) & i182, 28, 1764, "24;16;11;kid");
+            int a2 = IdentyB.a(i192 ^ (-32767), (i192 & (-32767)) << 1, 16384, -1);
+            this.getShortform = IdentyB.c((-((a2 & 1) + (a2 | 1))) & i182, 28, 1764, "24;16;11;kid");
             i = deduplication + 21;
             generateST = i % 128;
             if (i % 2 == 0) {
@@ -3867,7 +3867,7 @@ public class IdentySdk {
                     int i11 = ((i10 | 1) << 1) - (i10 ^ 1);
                     int i12 = (i8 ^ i11) + ((i11 & i8) << 1);
                     int i13 = i8 >> 25;
-                    int i14 = -(b.e((i13 | (-255)) << 1, i13 ^ (-255), 128, -1) ^ i12);
+                    int i14 = -(IdentyB.e((i13 | (-255)) << 1, i13 ^ (-255), 128, -1) ^ i12);
                     int i15 = (i14 ^ 6) + ((i14 & 6) << 1);
                     int i16 = ((i15 >> 22) - 2047) / 1024;
                     int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
@@ -3897,7 +3897,7 @@ public class IdentySdk {
             int i112 = ((i102 | 1) << 1) - (i102 ^ 1);
             int i122 = (i82 ^ i112) + ((i112 & i82) << 1);
             int i132 = i82 >> 25;
-            int i142 = -(b.e((i132 | (-255)) << 1, i132 ^ (-255), 128, -1) ^ i122);
+            int i142 = -(IdentyB.e((i132 | (-255)) << 1, i132 ^ (-255), 128, -1) ^ i122);
             int i152 = (i142 ^ 6) + ((i142 & 6) << 1);
             int i162 = ((i152 >> 22) - 2047) / 1024;
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
@@ -4050,7 +4050,7 @@ public class IdentySdk {
                     int i11 = (i10 & 1) + (i10 | 1);
                     int i12 = (i8 ^ i11) + ((i11 & i8) << 1);
                     int i13 = i8 >> 28;
-                    int i14 = -(b.a(i13 ^ (-31), (i13 & (-31)) << 1, 16, -1) ^ i12);
+                    int i14 = -(IdentyB.a(i13 ^ (-31), (i13 & (-31)) << 1, 16, -1) ^ i12);
                     int i15 = (i14 ^ 4) + ((i14 & 4) << 1);
                     int i16 = i15 >> 29;
                     int i17 = ((i16 & (-15)) + (i16 | (-15))) / 8;
@@ -4079,7 +4079,7 @@ public class IdentySdk {
             int i112 = (i102 & 1) + (i102 | 1);
             int i122 = (i82 ^ i112) + ((i112 & i82) << 1);
             int i132 = i82 >> 28;
-            int i142 = -(b.a(i132 ^ (-31), (i132 & (-31)) << 1, 16, -1) ^ i122);
+            int i142 = -(IdentyB.a(i132 ^ (-31), (i132 & (-31)) << 1, 16, -1) ^ i122);
             int i152 = (i142 ^ 4) + ((i142 & 4) << 1);
             int i162 = i152 >> 29;
             int i172 = ((i162 & (-15)) + (i162 | (-15))) / 8;
@@ -4147,9 +4147,9 @@ public class IdentySdk {
                 int i10 = ((i9 & (-65535)) + (i9 | (-65535))) / 32768;
                 int i11 = (i8 - (~((i10 ^ 1) + ((i10 & 1) << 1)))) - 1;
                 int i12 = i8 >> 19;
-                int i13 = -(i11 ^ b.e((i12 | (-16383)) << 1, i12 ^ (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1));
+                int i13 = -(i11 ^ IdentyB.e((i12 | (-16383)) << 1, i12 ^ (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1));
                 int i14 = (i13 ^ 2) + ((i13 & 2) << 1);
-                int e = b.e(i14 >> 21, 4095, 2048, -1);
+                int e = IdentyB.e(i14 >> 21, 4095, 2048, -1);
                 this.getTemplates = 414 / (((-((e ^ 1) + ((e & 1) << 1))) & i14) * 207);
                 this.getHeight = z2;
                 this.getIdentyQuality = z;
@@ -4180,9 +4180,9 @@ public class IdentySdk {
             int i102 = ((i92 & (-65535)) + (i92 | (-65535))) / 32768;
             int i112 = (i82 - (~((i102 ^ 1) + ((i102 & 1) << 1)))) - 1;
             int i122 = i82 >> 19;
-            int i132 = -(i112 ^ b.e((i122 | (-16383)) << 1, i122 ^ (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1));
+            int i132 = -(i112 ^ IdentyB.e((i122 | (-16383)) << 1, i122 ^ (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1));
             int i142 = (i132 ^ 2) + ((i132 & 2) << 1);
-            int e2 = b.e(i142 >> 21, 4095, 2048, -1);
+            int e2 = IdentyB.e(i142 >> 21, 4095, 2048, -1);
             this.getTemplates = 414 / (((-((e2 ^ 1) + ((e2 & 1) << 1))) & i142) * 207);
             this.getHeight = z2;
             this.getIdentyQuality = z;
@@ -4435,7 +4435,7 @@ public class IdentySdk {
                 int i9 = (((i8 | (-32767)) << 1) - (i8 ^ (-32767))) / 16384;
                 int i10 = (i7 - (~((i9 & 1) + (i9 | 1)))) - 1;
                 int i11 = i7 >> 26;
-                int i12 = -(i10 ^ b.a(i11 & (-127), i11 | (-127), 64, -1));
+                int i12 = -(i10 ^ IdentyB.a(i11 & (-127), i11 | (-127), 64, -1));
                 int i13 = (i12 ^ 2) + ((i12 & 2) << 1);
                 int i14 = i13 >> 15;
                 int i15 = ((i14 & (-262143)) + (i14 | (-262143))) / 131072;
@@ -4562,14 +4562,14 @@ public class IdentySdk {
                     int i7 = i6 * i6;
                     int i8 = -(1547121894 * i6);
                     int i9 = (((i7 & i8) + (i7 | i8)) - (~(-(i6 * 719288360)))) - 1109853392;
-                    int e = b.e(i9 >> 24, 511, 256, -1);
+                    int e = IdentyB.e(i9 >> 24, 511, 256, -1);
                     int i10 = ((i9 | e) << 1) - (e ^ i9);
                     int i11 = i9 >> 29;
                     int i12 = ((i11 & (-15)) + (i11 | (-15))) / 8;
                     int i13 = -((((i12 | 1) << 1) - (i12 ^ 1)) ^ i10);
                     int i14 = (i13 & 4) + (i13 | 4);
                     int i15 = i14 >> 28;
-                    int a = b.a(i15 ^ (-31), (i15 & (-31)) << 1, 16, -1);
+                    int a = IdentyB.a(i15 ^ (-31), (i15 & (-31)) << 1, 16, -1);
                     sb2.append("12;_".substring(13452 / (((-((a & 1) + (a | 1))) & i14) * 1121)));
                     sb2.append(template2);
                     PngjBadCrcException(sb2.toString());
@@ -5539,7 +5539,7 @@ public class IdentySdk {
                     int i9 = ((i8 | (-209414759)) << 1) - ((-209414759) ^ i8);
                     int i10 = i9 >> 24;
                     int i11 = (((i10 | (-511)) << 1) - (i10 ^ (-511))) / 256;
-                    int i12 = (-(((i9 - (~((i11 & 1) + (i11 | 1)))) - 1) ^ b.e(i9 >> 19, 16383, ConstantsKt.DEFAULT_BUFFER_SIZE, -1))) + 7;
+                    int i12 = (-(((i9 - (~((i11 & 1) + (i11 | 1)))) - 1) ^ IdentyB.e(i9 >> 19, 16383, ConstantsKt.DEFAULT_BUFFER_SIZE, -1))) + 7;
                     int i13 = ((i12 >> 22) - 2047) / 1024;
                     int i14 = (i13 & 1) + (i13 | 1);
                     InlineGuideOption inlineGuideOption2 = new InlineGuideOption(300, 32508 / ((i12 & (-(((i14 | 1) << 1) - (1 ^ i14)))) * 1548));
@@ -6919,12 +6919,12 @@ public class IdentySdk {
                     int i7 = -(i3 * 1324929563);
                     int i8 = (i6 & i7) + (i7 | i6);
                     int i9 = (i8 ^ (-464247999)) + (((-464247999) & i8) << 1);
-                    int e2 = b.e(i9 >> 16, 131071, 65536, -1);
+                    int e2 = IdentyB.e(i9 >> 16, 131071, 65536, -1);
                     int i10 = (i9 & e2) + (e2 | i9);
                     int i11 = i9 >> 17;
                     int i12 = (((i11 | (-65535)) << 1) - (i11 ^ (-65535))) / 32768;
                     int i13 = -((((i12 | 1) << 1) - (i12 ^ 1)) ^ i10);
-                    e = b.e(((i13 ^ 7) + ((i13 & 7) << 1)) >> 21, 4095, 2048, -1);
+                    e = IdentyB.e(((i13 ^ 7) + ((i13 & 7) << 1)) >> 21, 4095, 2048, -1);
                     if (d / ((1034091366 / (((-((e ^ 1) + ((e & 1) << 1))) & r5) * 31)) + 1.043810602E9d) > 2.0d) {
                         return false;
                     }
@@ -6954,12 +6954,12 @@ public class IdentySdk {
             int i72 = -(i32 * 1324929563);
             int i82 = (i62 & i72) + (i72 | i62);
             int i92 = (i82 ^ (-464247999)) + (((-464247999) & i82) << 1);
-            int e22 = b.e(i92 >> 16, 131071, 65536, -1);
+            int e22 = IdentyB.e(i92 >> 16, 131071, 65536, -1);
             int i102 = (i92 & e22) + (e22 | i92);
             int i112 = i92 >> 17;
             int i122 = (((i112 | (-65535)) << 1) - (i112 ^ (-65535))) / 32768;
             int i132 = -((((i122 | 1) << 1) - (i122 ^ 1)) ^ i102);
-            e = b.e(((i132 ^ 7) + ((i132 & 7) << 1)) >> 21, 4095, 2048, -1);
+            e = IdentyB.e(((i132 ^ 7) + ((i132 & 7) << 1)) >> 21, 4095, 2048, -1);
             if (d / ((1034091366 / (((-((e ^ 1) + ((e & 1) << 1))) & r5) * 31)) + 1.043810602E9d) > 2.0d) {
             }
         } catch (Throwable th) {
@@ -7543,7 +7543,7 @@ public class IdentySdk {
                     int i11 = -(i9 * (-2034815172));
                     int i12 = ((i10 & i11) + (i11 | i10)) - (-1201901568);
                     int i13 = i12 >> 29;
-                    int i14 = (i12 - (~b.a(i13 ^ (-15), (i13 & (-15)) << 1, 8, -1))) - 1;
+                    int i14 = (i12 - (~IdentyB.a(i13 ^ (-15), (i13 & (-15)) << 1, 8, -1))) - 1;
                     int i15 = ((i12 >> 23) - 1023) / ConstantsKt.MINIMUM_BLOCK_SIZE;
                     int i16 = -(i14 ^ ((i15 ^ 1) + ((i15 & 1) << 1)));
                     int i17 = (i16 & 8) + (i16 | 8);
@@ -7655,10 +7655,10 @@ public class IdentySdk {
                     int i8 = -(i6 * 645999389);
                     int i9 = (i7 ^ i8) + ((i8 & i7) << 1);
                     int i10 = ((i9 | (-1677159327)) << 1) - ((-1677159327) ^ i9);
-                    int e = b.e(i10 >> 28, 31, 16, -1);
+                    int e = IdentyB.e(i10 >> 28, 31, 16, -1);
                     int i11 = ((i10 | e) << 1) - (e ^ i10);
                     int i12 = i10 >> 16;
-                    int i13 = -(b.a(i12 ^ (-131071), (i12 & (-131071)) << 1, 65536, -1) ^ i11);
+                    int i13 = -(IdentyB.a(i12 ^ (-131071), (i12 & (-131071)) << 1, 65536, -1) ^ i11);
                     int i14 = (i13 & 4) + (i13 | 4);
                     int i15 = ((i14 >> 18) - 32767) / 16384;
                     for (i = 0 / (((-(((i15 & 1) + (i15 | 1)) - (-1))) & i14) * 1458); i < length; i++) {
@@ -7691,10 +7691,10 @@ public class IdentySdk {
             int i82 = -(i62 * 645999389);
             int i92 = (i72 ^ i82) + ((i82 & i72) << 1);
             int i102 = ((i92 | (-1677159327)) << 1) - ((-1677159327) ^ i92);
-            int e2 = b.e(i102 >> 28, 31, 16, -1);
+            int e2 = IdentyB.e(i102 >> 28, 31, 16, -1);
             int i112 = ((i102 | e2) << 1) - (e2 ^ i102);
             int i122 = i102 >> 16;
-            int i132 = -(b.a(i122 ^ (-131071), (i122 & (-131071)) << 1, 65536, -1) ^ i112);
+            int i132 = -(IdentyB.a(i122 ^ (-131071), (i122 & (-131071)) << 1, 65536, -1) ^ i112);
             int i142 = (i132 & 4) + (i132 | 4);
             int i152 = ((i142 >> 18) - 32767) / 16384;
             while (i < length) {
@@ -7887,10 +7887,10 @@ public class IdentySdk {
                 int i5 = (i3 & i4) + (i4 | i3);
                 int i6 = (i5 ^ (-776018880)) + (((-776018880) & i5) << 1);
                 int i7 = i6 >> 22;
-                int a = b.a(i7 ^ (-2047), (i7 & (-2047)) << 1, 1024, -1);
+                int a = IdentyB.a(i7 ^ (-2047), (i7 & (-2047)) << 1, 1024, -1);
                 int i8 = (i6 ^ a) + ((a & i6) << 1);
                 int i9 = i6 >> 24;
-                int i10 = -(b.a(i9 ^ (-511), (i9 & (-511)) << 1, 256, -1) ^ i8);
+                int i10 = -(IdentyB.a(i9 ^ (-511), (i9 & (-511)) << 1, 256, -1) ^ i8);
                 int i11 = (i10 ^ 8) + ((i10 & 8) << 1);
                 int i12 = i11 >> 18;
                 int i13 = (((i12 | (-32767)) << 1) - (i12 ^ (-32767))) / 16384;
@@ -7914,10 +7914,10 @@ public class IdentySdk {
             int i52 = (i32 & i42) + (i42 | i32);
             int i62 = (i52 ^ (-776018880)) + (((-776018880) & i52) << 1);
             int i72 = i62 >> 22;
-            int a2 = b.a(i72 ^ (-2047), (i72 & (-2047)) << 1, 1024, -1);
+            int a2 = IdentyB.a(i72 ^ (-2047), (i72 & (-2047)) << 1, 1024, -1);
             int i82 = (i62 ^ a2) + ((a2 & i62) << 1);
             int i92 = i62 >> 24;
-            int i102 = -(b.a(i92 ^ (-511), (i92 & (-511)) << 1, 256, -1) ^ i82);
+            int i102 = -(IdentyB.a(i92 ^ (-511), (i92 & (-511)) << 1, 256, -1) ^ i82);
             int i112 = (i102 ^ 8) + ((i102 & 8) << 1);
             int i122 = i112 >> 18;
             int i132 = (((i122 | (-32767)) << 1) - (i122 ^ (-32767))) / 16384;
@@ -8353,7 +8353,7 @@ public class IdentySdk {
                                         int i11 = ((i10 >> 25) - 255) / 128;
                                         int i12 = (i10 - (~((i11 & 1) + (i11 | 1)))) - 1;
                                         int i13 = i10 >> 20;
-                                        int i14 = -(i12 ^ b.e((i13 | (-8191)) << 1, i13 ^ (-8191), ConstantsKt.DEFAULT_BLOCK_SIZE, -1));
+                                        int i14 = -(i12 ^ IdentyB.e((i13 | (-8191)) << 1, i13 ^ (-8191), ConstantsKt.DEFAULT_BLOCK_SIZE, -1));
                                         int i15 = (i14 ^ 6) + ((i14 & 6) << 1);
                                         int i16 = i15 >> 15;
                                         int i17 = ((i16 ^ (-262143)) + ((i16 & (-262143)) << 1)) / 131072;
@@ -8369,8 +8369,8 @@ public class IdentySdk {
                                             generateST = (deduplication + 69) % 128;
                                             Hand hand = position.a;
                                             if (hand != null && (finger = position.b) != null && hashMap.containsKey(new Pair(hand, finger)) && hashMap2.containsKey(new Pair(hand, finger))) {
-                                                String str = (String) b.b(hand, finger, hashMap);
-                                                String str2 = (String) b.b(hand, finger, hashMap2);
+                                                String str = (String) IdentyB.b(hand, finger, hashMap);
+                                                String str2 = (String) IdentyB.b(hand, finger, hashMap2);
                                                 if (str != null && !str.isEmpty()) {
                                                     int i19 = generateST;
                                                     deduplication = (i19 + 37) % 128;
@@ -8496,7 +8496,7 @@ public class IdentySdk {
         r14 = (((r9 | (-65535)) << 1) - (r9 ^ (-65535))) / 32768;
         r9 = -(((r14 & 1) + (r14 | 1)) ^ r11);
         r9 = (((r9 | 1) << 1) - (r9 ^ 1)) >> 21;
-        r9 = com.identy.b.a(r9 & (-4095), r9 | (-4095), 2048, -1);
+        r9 = com.identy.IdentyB.a(r9 & (-4095), r9 | (-4095), 2048, -1);
         r2 = new com.identy.getCaptureTime(r29, r30, r5, r6, 0.0d, r0, r12, 0, 0.0f, false, null, com.karumi.dexter.BuildConfig.FLAVOR, 0, (430749 / (((-(((r9 | 1) << 1) - (r9 ^ 1))) & r11) * 687)) - 627, 0, new com.identy.PngBadCharsetException(), 0, 0, com.identy.enums.FingerDetectionMode.L4F, com.identy.FingerAS.NONE);
         r2.PngjOutputException = r5;
         r2.put(r30, r2);
@@ -9631,8 +9631,8 @@ public class IdentySdk {
                 int i12 = ((i11 & (-255)) + (i11 | (-255))) / 128;
                 int i13 = (-(((i12 ^ 1) + ((i12 & 1) << 1)) ^ i10)) + 5;
                 int i14 = i13 >> 27;
-                int e = b.e((i14 | (-63)) << 1, i14 ^ (-63), 32, -1);
-                String c = b.c((-((e & 1) + (e | 1))) & i13, 1573, 23595, "22/FIN");
+                int e = IdentyB.e((i14 | (-63)) << 1, i14 ^ (-63), 32, -1);
+                String c = IdentyB.c((-((e & 1) + (e | 1))) & i13, 1573, 23595, "22/FIN");
                 String string = Settings.Secure.getString(this.getData.getContentResolver(), "android_id");
                 StringBuilder r = defpackage.a.r(c);
                 r.append(this.Capture2IndexActivity / 1000);
@@ -9666,8 +9666,8 @@ public class IdentySdk {
             int i122 = ((i112 & (-255)) + (i112 | (-255))) / 128;
             int i132 = (-(((i122 ^ 1) + ((i122 & 1) << 1)) ^ i102)) + 5;
             int i142 = i132 >> 27;
-            int e2 = b.e((i142 | (-63)) << 1, i142 ^ (-63), 32, -1);
-            String c2 = b.c((-((e2 & 1) + (e2 | 1))) & i132, 1573, 23595, "22/FIN");
+            int e2 = IdentyB.e((i142 | (-63)) << 1, i142 ^ (-63), 32, -1);
+            String c2 = IdentyB.c((-((e2 & 1) + (e2 | 1))) & i132, 1573, 23595, "22/FIN");
             String string2 = Settings.Secure.getString(this.getData.getContentResolver(), "android_id");
             StringBuilder r2 = defpackage.a.r(c2);
             r2.append(this.Capture2IndexActivity / 1000);
@@ -10160,7 +10160,7 @@ public class IdentySdk {
                     int i4 = -(1683007502 * i2);
                     int i5 = (((i3 ^ i4) + ((i3 & i4) << 1)) - (~(-(i2 * 410839532)))) - 1;
                     int i6 = (i5 & 1399343625) + (1399343625 | i5);
-                    int e = b.e(i6 >> 23, 1023, ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
+                    int e = IdentyB.e(i6 >> 23, 1023, ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
                     int i7 = (i6 & e) + (e | i6);
                     int i8 = i6 >> 24;
                     int i9 = ((i8 & (-511)) + (i8 | (-511))) / 256;
@@ -10293,7 +10293,7 @@ public class IdentySdk {
                     int i6 = (((i4 & i5) + (i4 | i5)) - (~(-(i3 * 951304441)))) - 1;
                     int i7 = ((i6 | (-1350068604)) << 1) - ((-1350068604) ^ i6);
                     int i8 = i7 >> 19;
-                    int i9 = (i7 - (~b.a(i8 & (-16383), i8 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1))) - 1;
+                    int i9 = (i7 - (~IdentyB.a(i8 & (-16383), i8 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1))) - 1;
                     int i10 = i7 >> 18;
                     int i11 = ((i10 ^ (-32767)) + ((i10 & (-32767)) << 1)) / 16384;
                     int i12 = -(i9 ^ (((i11 | 1) << 1) - (i11 ^ 1)));
@@ -10324,7 +10324,7 @@ public class IdentySdk {
             int i62 = (((i42 & i52) + (i42 | i52)) - (~(-(i32 * 951304441)))) - 1;
             int i72 = ((i62 | (-1350068604)) << 1) - ((-1350068604) ^ i62);
             int i82 = i72 >> 19;
-            int i92 = (i72 - (~b.a(i82 & (-16383), i82 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1))) - 1;
+            int i92 = (i72 - (~IdentyB.a(i82 & (-16383), i82 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1))) - 1;
             int i102 = i72 >> 18;
             int i112 = ((i102 ^ (-32767)) + ((i102 & (-32767)) << 1)) / 16384;
             int i122 = -(i92 ^ (((i112 | 1) << 1) - (i112 ^ 1)));
@@ -11010,7 +11010,7 @@ public class IdentySdk {
                     int i10 = ((i9 | 159068048) << 1) - (159068048 ^ i9);
                     int i11 = ((i10 >> 22) - 2047) / 1024;
                     int i12 = (i11 & 1) + (i11 | 1);
-                    int i13 = -(((i10 ^ i12) + ((i12 & i10) << 1)) ^ b.e(i10 >> 16, 131071, 65536, -1));
+                    int i13 = -(((i10 ^ i12) + ((i12 & i10) << 1)) ^ IdentyB.e(i10 >> 16, 131071, 65536, -1));
                     int i14 = (i13 & 4) + (i13 | 4);
                     int i15 = ((i14 >> 17) - 65535) / 32768;
                     int i16 = (i15 & 1) + (i15 | 1);
@@ -11392,7 +11392,7 @@ public class IdentySdk {
                 int i13 = i8 >> 24;
                 int i14 = ((i13 & (-511)) + (i13 | (-511))) / 256;
                 int i15 = (-(((i14 & 1) + (i14 | 1)) ^ i12)) + 9;
-                File values2 = com.identy.PngjBadCrcException.values(activity, "16/TEMP_IDENTY".substring(297 / ((i15 & (-b.e(i15 >> 27, 63, 32, -2))) * 11)));
+                File values2 = com.identy.PngjBadCrcException.values(activity, "16/TEMP_IDENTY".substring(297 / ((i15 & (-IdentyB.e(i15 >> 27, 63, 32, -2))) * 11)));
                 Iterator<Map.Entry<Pair<Hand, Finger>, byte[]>> it = hashMap.entrySet().iterator();
                 while (!(!it.hasNext())) {
                     Map.Entry<Pair<Hand, Finger>, byte[]> next = it.next();
@@ -12029,7 +12029,7 @@ public class IdentySdk {
                     int i9 = -(i5 * 73907268);
                     int i10 = ((i8 | i9) << 1) - (i9 ^ i8);
                     int i11 = (i10 ^ (-714521852)) + (((-714521852) & i10) << 1);
-                    int e = b.e(i11 >> 17, 65535, 32768, -1);
+                    int e = IdentyB.e(i11 >> 17, 65535, 32768, -1);
                     int i12 = (i11 ^ e) + ((e & i11) << 1);
                     int i13 = ((i11 >> 16) - 131071) / 65536;
                     int i14 = (-(i12 ^ ((i13 & 1) + (i13 | 1)))) + 4;
@@ -12064,7 +12064,7 @@ public class IdentySdk {
             int i92 = -(i52 * 73907268);
             int i102 = ((i82 | i92) << 1) - (i92 ^ i82);
             int i112 = (i102 ^ (-714521852)) + (((-714521852) & i102) << 1);
-            int e2 = b.e(i112 >> 17, 65535, 32768, -1);
+            int e2 = IdentyB.e(i112 >> 17, 65535, 32768, -1);
             int i122 = (i112 ^ e2) + ((e2 & i112) << 1);
             int i132 = ((i112 >> 16) - 131071) / 65536;
             int i142 = (-(i122 ^ ((i132 & 1) + (i132 | 1)))) + 4;
@@ -12295,11 +12295,11 @@ public class IdentySdk {
                     int i10 = ((i8 | i9) << 1) - (i9 ^ i8);
                     int i11 = (i10 & (-586083895)) + ((-586083895) | i10);
                     int i12 = i11 >> 28;
-                    int a = b.a(i12 ^ (-31), (i12 & (-31)) << 1, 16, -1);
-                    int i13 = (-(b.e(i11 >> 27, 63, 32, -1) ^ ((i11 & a) + (a | i11)))) + 6;
+                    int a = IdentyB.a(i12 ^ (-31), (i12 & (-31)) << 1, 16, -1);
+                    int i13 = (-(IdentyB.e(i11 >> 27, 63, 32, -1) ^ ((i11 & a) + (a | i11)))) + 6;
                     int i14 = i13 >> 21;
                     int i15 = (((i14 | (-4095)) << 1) - (i14 ^ (-4095))) / 2048;
-                    throw new LivenessValidException(b.c(i13 & (-((((i15 | 1) << 1) - (i15 ^ 1)) - (-1))), 353, 21180, "20;16;5;9; Make sure server AS configuration is not null"));
+                    throw new LivenessValidException(IdentyB.c(i13 & (-((((i15 | 1) << 1) - (i15 ^ 1)) - (-1))), 353, 21180, "20;16;5;9; Make sure server AS configuration is not null"));
                 }
             }
             byte[] bArr = $$d;
@@ -12325,11 +12325,11 @@ public class IdentySdk {
             int i102 = ((i82 | i92) << 1) - (i92 ^ i82);
             int i112 = (i102 & (-586083895)) + ((-586083895) | i102);
             int i122 = i112 >> 28;
-            int a2 = b.a(i122 ^ (-31), (i122 & (-31)) << 1, 16, -1);
-            int i132 = (-(b.e(i112 >> 27, 63, 32, -1) ^ ((i112 & a2) + (a2 | i112)))) + 6;
+            int a2 = IdentyB.a(i122 ^ (-31), (i122 & (-31)) << 1, 16, -1);
+            int i132 = (-(IdentyB.e(i112 >> 27, 63, 32, -1) ^ ((i112 & a2) + (a2 | i112)))) + 6;
             int i142 = i132 >> 21;
             int i152 = (((i142 | (-4095)) << 1) - (i142 ^ (-4095))) / 2048;
-            throw new LivenessValidException(b.c(i132 & (-((((i152 | 1) << 1) - (i152 ^ 1)) - (-1))), 353, 21180, "20;16;5;9; Make sure server AS configuration is not null"));
+            throw new LivenessValidException(IdentyB.c(i132 & (-((((i152 | 1) << 1) - (i152 ^ 1)) - (-1))), 353, 21180, "20;16;5;9; Make sure server AS configuration is not null"));
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -12426,7 +12426,7 @@ public class IdentySdk {
                                         int i14 = (i13 & 866932721) + (866932721 | i13);
                                         int i15 = ((i14 >> 20) - 8191) / ConstantsKt.DEFAULT_BLOCK_SIZE;
                                         int i16 = (i15 ^ 1) + ((i15 & 1) << 1);
-                                        int i17 = -(((i14 ^ i16) + ((i16 & i14) << 1)) ^ b.e(i14 >> 25, KotlinVersion.MAX_COMPONENT_VALUE, 128, -1));
+                                        int i17 = -(((i14 ^ i16) + ((i16 & i14) << 1)) ^ IdentyB.e(i14 >> 25, KotlinVersion.MAX_COMPONENT_VALUE, 128, -1));
                                         int i18 = ((i17 | 3) << 1) - (i17 ^ 3);
                                         int i19 = ((i18 >> 21) - 4095) / 2048;
                                         int i20 = (i19 ^ 1) + ((i19 & 1) << 1);
@@ -12785,7 +12785,7 @@ public class IdentySdk {
                     int i15 = (i14 ^ 1) + ((i14 & 1) << 1);
                     int i16 = (i12 ^ i15) + ((i15 & i12) << 1);
                     int i17 = i12 >> 22;
-                    int i18 = -(b.e((i17 | (-2047)) << 1, i17 ^ (-2047), 1024, -1) ^ i16);
+                    int i18 = -(IdentyB.e((i17 | (-2047)) << 1, i17 ^ (-2047), 1024, -1) ^ i16);
                     i3 = ((i18 | 7) << 1) - (i18 ^ 7);
                     int i19 = i3 >> 27;
                     int i20 = ((i19 ^ (-63)) + ((i19 & (-63)) << 1)) / 32;
@@ -12860,7 +12860,7 @@ public class IdentySdk {
             int i152 = (i142 ^ 1) + ((i142 & 1) << 1);
             int i162 = (i122 ^ i152) + ((i152 & i122) << 1);
             int i172 = i122 >> 22;
-            int i182 = -(b.e((i172 | (-2047)) << 1, i172 ^ (-2047), 1024, -1) ^ i162);
+            int i182 = -(IdentyB.e((i172 | (-2047)) << 1, i172 ^ (-2047), 1024, -1) ^ i162);
             i3 = ((i182 | 7) << 1) - (i182 ^ 7);
             int i192 = i3 >> 27;
             int i202 = ((i192 ^ (-63)) + ((i192 & (-63)) << 1)) / 32;
@@ -12918,7 +12918,7 @@ public class IdentySdk {
                         int i10 = ((i8 | i9) << 1) - (i9 ^ i8);
                         int i11 = (i10 & (-146801776)) + ((-146801776) | i10);
                         int i12 = i11 >> 20;
-                        int e = b.e((i12 | (-8191)) << 1, i12 ^ (-8191), ConstantsKt.DEFAULT_BLOCK_SIZE, -1);
+                        int e = IdentyB.e((i12 | (-8191)) << 1, i12 ^ (-8191), ConstantsKt.DEFAULT_BLOCK_SIZE, -1);
                         int i13 = ((i11 | e) << 1) - (e ^ i11);
                         int i14 = i11 >> 24;
                         int i15 = ((i14 ^ (-511)) + ((i14 & (-511)) << 1)) / 256;
@@ -12954,7 +12954,7 @@ public class IdentySdk {
                 int i102 = ((i82 | i92) << 1) - (i92 ^ i82);
                 int i112 = (i102 & (-146801776)) + ((-146801776) | i102);
                 int i122 = i112 >> 20;
-                int e2 = b.e((i122 | (-8191)) << 1, i122 ^ (-8191), ConstantsKt.DEFAULT_BLOCK_SIZE, -1);
+                int e2 = IdentyB.e((i122 | (-8191)) << 1, i122 ^ (-8191), ConstantsKt.DEFAULT_BLOCK_SIZE, -1);
                 int i132 = ((i112 | e2) << 1) - (e2 ^ i112);
                 int i142 = i112 >> 24;
                 int i152 = ((i142 ^ (-511)) + ((i142 & (-511)) << 1)) / 256;
@@ -13601,7 +13601,7 @@ public class IdentySdk {
                     int i13 = (i11 ^ i12) + ((i12 & i11) << 1);
                     int i14 = (i13 ^ 1406085265) + ((1406085265 & i13) << 1);
                     int i15 = i14 >> 15;
-                    int i16 = (i14 - (~b.e((i15 | (-262143)) << 1, i15 ^ (-262143), 131072, -1))) - 1;
+                    int i16 = (i14 - (~IdentyB.e((i15 | (-262143)) << 1, i15 ^ (-262143), 131072, -1))) - 1;
                     int i17 = i14 >> 28;
                     int i18 = (((i17 | (-31)) << 1) - (i17 ^ (-31))) / 16;
                     int i19 = -(i16 ^ (((i18 | 1) << 1) - (i18 ^ 1)));
@@ -13632,7 +13632,7 @@ public class IdentySdk {
             int i132 = (i112 ^ i122) + ((i122 & i112) << 1);
             int i142 = (i132 ^ 1406085265) + ((1406085265 & i132) << 1);
             int i152 = i142 >> 15;
-            int i162 = (i142 - (~b.e((i152 | (-262143)) << 1, i152 ^ (-262143), 131072, -1))) - 1;
+            int i162 = (i142 - (~IdentyB.e((i152 | (-262143)) << 1, i152 ^ (-262143), 131072, -1))) - 1;
             int i172 = i142 >> 28;
             int i182 = (((i172 | (-31)) << 1) - (i172 ^ (-31))) / 16;
             int i192 = -(i162 ^ (((i182 | 1) << 1) - (i182 ^ 1)));
@@ -13691,7 +13691,7 @@ public class IdentySdk {
                     int i12 = (i11 & 1) + (i11 | 1);
                     int i13 = (i9 ^ i12) + ((i12 & i9) << 1);
                     int i14 = i9 >> 16;
-                    int i15 = -(b.e((i14 | (-131071)) << 1, i14 ^ (-131071), 65536, -1) ^ i13);
+                    int i15 = -(IdentyB.e((i14 | (-131071)) << 1, i14 ^ (-131071), 65536, -1) ^ i13);
                     int i16 = ((i15 | 6) << 1) - (i15 ^ 6);
                     int i17 = i16 >> 23;
                     int i18 = ((i17 ^ (-1023)) + ((i17 & (-1023)) << 1)) / ConstantsKt.MINIMUM_BLOCK_SIZE;
@@ -13737,7 +13737,7 @@ public class IdentySdk {
             int i122 = (i112 & 1) + (i112 | 1);
             int i132 = (i92 ^ i122) + ((i122 & i92) << 1);
             int i142 = i92 >> 16;
-            int i152 = -(b.e((i142 | (-131071)) << 1, i142 ^ (-131071), 65536, -1) ^ i132);
+            int i152 = -(IdentyB.e((i142 | (-131071)) << 1, i142 ^ (-131071), 65536, -1) ^ i132);
             int i162 = ((i152 | 6) << 1) - (i152 ^ 6);
             int i172 = i162 >> 23;
             int i182 = ((i172 ^ (-1023)) + ((i172 & (-1023)) << 1)) / ConstantsKt.MINIMUM_BLOCK_SIZE;
@@ -13854,10 +13854,10 @@ public class IdentySdk {
                     int i8 = -(1687410580 * i6);
                     int i9 = ((((i7 | i8) << 1) - (i7 ^ i8)) - (~(-(i6 * 2104977554)))) - 1;
                     int i10 = (i9 & 1792393577) + (1792393577 | i9);
-                    int i11 = (i10 - (~b.e(i10 >> 17, 65535, 32768, -1))) - 1;
+                    int i11 = (i10 - (~IdentyB.e(i10 >> 17, 65535, 32768, -1))) - 1;
                     int i12 = i10 >> 27;
-                    int i13 = (-(i11 ^ b.a(i12 & (-63), i12 | (-63), 32, -1))) + 6;
-                    int e2 = b.e(i13 >> 27, 63, 32, -1);
+                    int i13 = (-(i11 ^ IdentyB.a(i12 & (-63), i12 | (-63), 32, -1))) + 6;
+                    int e2 = IdentyB.e(i13 >> 27, 63, 32, -1);
                     return 3372 / ((i13 & (-((e2 & 1) + (e2 | 1)))) * 562);
                 }
             }
@@ -13894,10 +13894,10 @@ public class IdentySdk {
             int i82 = -(1687410580 * i62);
             int i92 = ((((i72 | i82) << 1) - (i72 ^ i82)) - (~(-(i62 * 2104977554)))) - 1;
             int i102 = (i92 & 1792393577) + (1792393577 | i92);
-            int i112 = (i102 - (~b.e(i102 >> 17, 65535, 32768, -1))) - 1;
+            int i112 = (i102 - (~IdentyB.e(i102 >> 17, 65535, 32768, -1))) - 1;
             int i122 = i102 >> 27;
-            int i132 = (-(i112 ^ b.a(i122 & (-63), i122 | (-63), 32, -1))) + 6;
-            int e22 = b.e(i132 >> 27, 63, 32, -1);
+            int i132 = (-(i112 ^ IdentyB.a(i122 & (-63), i122 | (-63), 32, -1))) + 6;
+            int e22 = IdentyB.e(i132 >> 27, 63, 32, -1);
             return 3372 / ((i132 & (-((e22 & 1) + (e22 | 1)))) * 562);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -13972,7 +13972,7 @@ public class IdentySdk {
                             int i10 = -(i6 * (-1992009029));
                             int i11 = ((i9 ^ i10) + ((i10 & i9) << 1)) - 1929559808;
                             int i12 = i11 >> 16;
-                            int e = b.e((i12 | (-131071)) << 1, i12 ^ (-131071), 65536, -1);
+                            int e = IdentyB.e((i12 | (-131071)) << 1, i12 ^ (-131071), 65536, -1);
                             int i13 = (i11 & e) + (e | i11);
                             int i14 = i11 >> 28;
                             int i15 = ((i14 ^ (-31)) + ((i14 & (-31)) << 1)) / 16;
@@ -14093,7 +14093,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x014a, code lost:
     
-        r10 = (com.identy.a) r1.get(r4);
+        r10 = (com.identy.IdentyA) r1.get(r4);
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x0159, code lost:
     
@@ -14134,10 +14134,10 @@ public class IdentySdk {
         r0 = r3 >> 26;
         r1 = ((r0 ^ (-127)) + ((r0 & (-127)) << 1)) / 64;
         r0 = ((r1 | 1) << 1) - (r1 ^ 1);
-        r0 = -(com.identy.b.e(r3 >> 22, 2047, 1024, -1) ^ (((r3 | r0) << 1) - (r0 ^ r3)));
+        r0 = -(com.identy.IdentyB.e(r3 >> 22, 2047, 1024, -1) ^ (((r3 | r0) << 1) - (r0 ^ r3)));
         r1 = (r0 & 7) + (r0 | 7);
         r0 = r1 >> 25;
-        r0 = com.identy.b.a(r0 & (-255), r0 | (-255), 128, -1);
+        r0 = com.identy.IdentyB.a(r0 & (-255), r0 | (-255), 128, -1);
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x023e, code lost:
     
@@ -14161,7 +14161,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:52:0x0151, code lost:
     
-        r0 = (com.identy.a) r1.get(r4);
+        r0 = (com.identy.IdentyA) r1.get(r4);
      */
     /* JADX WARN: Code restructure failed: missing block: B:53:0x0157, code lost:
     
@@ -14256,7 +14256,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r10v12 */
-    /* JADX WARN: Type inference failed for: r10v13, types: [com.identy.a, com.identy.getMatchingTime] */
+    /* JADX WARN: Type inference failed for: r10v13, types: [com.identy.IdentyA, com.identy.getMatchingTime] */
     /* JADX WARN: Type inference failed for: r10v33 */
     /* JADX WARN: Type inference failed for: r1v16, types: [boolean, int] */
     /* JADX WARN: Type inference failed for: r27v0 */
@@ -14477,7 +14477,7 @@ public class IdentySdk {
                     int i15 = -(i13 ^ ((i14 & 1) + (i14 | 1)));
                     int i16 = (i15 & 2) + (i15 | 2);
                     int i17 = i16 >> 16;
-                    int a = b.a(i17 ^ (-131071), (i17 & (-131071)) << 1, 65536, -1);
+                    int a = IdentyB.a(i17 ^ (-131071), (i17 & (-131071)) << 1, 65536, -1);
                     this.g = 0 / (((-((a ^ 1) + ((a & 1) << 1))) & i16) * 368);
                     this.h = new HashMap();
                     this.i = new HashMap();
@@ -14574,7 +14574,7 @@ public class IdentySdk {
             int i152 = -(i132 ^ ((i142 & 1) + (i142 | 1)));
             int i162 = (i152 & 2) + (i152 | 2);
             int i172 = i162 >> 16;
-            int a2 = b.a(i172 ^ (-131071), (i172 & (-131071)) << 1, 65536, -1);
+            int a2 = IdentyB.a(i172 ^ (-131071), (i172 & (-131071)) << 1, 65536, -1);
             this.g = 0 / (((-((a2 ^ 1) + ((a2 & 1) << 1))) & i162) * 368);
             this.h = new HashMap();
             this.i = new HashMap();

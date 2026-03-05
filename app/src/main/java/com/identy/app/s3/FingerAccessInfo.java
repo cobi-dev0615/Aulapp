@@ -7,7 +7,7 @@ import android.os.Process;
 import android.provider.Settings;
 import com.d.e.a.values;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.lang.reflect.Method;
 import kotlin.io.ConstantsKt;
@@ -143,13 +143,13 @@ public class FingerAccessInfo {
                     int i11 = (i9 & i10) + (i10 | i9);
                     int i12 = ((i11 | (-1359131248)) << 1) - ((-1359131248) ^ i11);
                     int i13 = i12 >> 18;
-                    int e = b.e((i13 | (-32767)) << 1, i13 ^ (-32767), 16384, -1);
+                    int e = IdentyB.e((i13 | (-32767)) << 1, i13 ^ (-32767), 16384, -1);
                     int i14 = (i12 & e) + (e | i12);
                     int i15 = i12 >> 27;
-                    int i16 = -(b.e((i15 | (-63)) << 1, i15 ^ (-63), 32, -1) ^ i14);
+                    int i16 = -(IdentyB.e((i15 | (-63)) << 1, i15 ^ (-63), 32, -1) ^ i14);
                     int i17 = (i16 & 6) + (i16 | 6);
                     int i18 = i17 >> 26;
-                    int a = b.a(i18 & (-127), i18 | (-127), 64, -1);
+                    int a = IdentyB.a(i18 & (-127), i18 | (-127), 64, -1);
                     ((ActivityManager) activity.getSystemService("25/24/31/8/7/activity".substring(32760 / (((-(((a | 1) << 1) - (a ^ 1))) & i17) * 420)))).getMemoryInfo(new ActivityManager.MemoryInfo());
                     return r0.totalMem / 1048576;
                 }
@@ -174,13 +174,13 @@ public class FingerAccessInfo {
             int i112 = (i92 & i102) + (i102 | i92);
             int i122 = ((i112 | (-1359131248)) << 1) - ((-1359131248) ^ i112);
             int i132 = i122 >> 18;
-            int e2 = b.e((i132 | (-32767)) << 1, i132 ^ (-32767), 16384, -1);
+            int e2 = IdentyB.e((i132 | (-32767)) << 1, i132 ^ (-32767), 16384, -1);
             int i142 = (i122 & e2) + (e2 | i122);
             int i152 = i122 >> 27;
-            int i162 = -(b.e((i152 | (-63)) << 1, i152 ^ (-63), 32, -1) ^ i142);
+            int i162 = -(IdentyB.e((i152 | (-63)) << 1, i152 ^ (-63), 32, -1) ^ i142);
             int i172 = (i162 & 6) + (i162 | 6);
             int i182 = i172 >> 26;
-            int a2 = b.a(i182 & (-127), i182 | (-127), 64, -1);
+            int a2 = IdentyB.a(i182 & (-127), i182 | (-127), 64, -1);
             ((ActivityManager) activity.getSystemService("25/24/31/8/7/activity".substring(32760 / (((-(((a2 | 1) << 1) - (a2 ^ 1))) & i172) * 420)))).getMemoryInfo(new ActivityManager.MemoryInfo());
             return r0.totalMem / 1048576;
         } catch (Throwable th) {
@@ -226,8 +226,8 @@ public class FingerAccessInfo {
                     int i16 = -(i13 ^ ((i15 ^ 1) + ((i15 & 1) << 1)));
                     int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
                     int i18 = i17 >> 15;
-                    int a = b.a(i18 ^ (-262143), (i18 & (-262143)) << 1, 131072, -1);
-                    jSONObject.put(b.c((-((a ^ 1) + ((a & 1) << 1))) & i17, 167, 1503, "20/15/12/unique_installation_id"), str);
+                    int a = IdentyB.a(i18 ^ (-262143), (i18 & (-262143)) << 1, 131072, -1);
+                    jSONObject.put(IdentyB.c((-((a ^ 1) + ((a & 1) << 1))) & i17, 167, 1503, "20/15/12/unique_installation_id"), str);
                     jSONObject.put("app", this.b);
                     jSONObject.put("app_commit", this.c);
                     jSONObject.put("app_version", this.d);
@@ -271,8 +271,8 @@ public class FingerAccessInfo {
             int i162 = -(i132 ^ ((i152 ^ 1) + ((i152 & 1) << 1)));
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
             int i182 = i172 >> 15;
-            int a2 = b.a(i182 ^ (-262143), (i182 & (-262143)) << 1, 131072, -1);
-            jSONObject2.put(b.c((-((a2 ^ 1) + ((a2 & 1) << 1))) & i172, 167, 1503, "20/15/12/unique_installation_id"), str2);
+            int a2 = IdentyB.a(i182 ^ (-262143), (i182 & (-262143)) << 1, 131072, -1);
+            jSONObject2.put(IdentyB.c((-((a2 ^ 1) + ((a2 & 1) << 1))) & i172, 167, 1503, "20/15/12/unique_installation_id"), str2);
             jSONObject2.put("app", this.b);
             jSONObject2.put("app_commit", this.c);
             jSONObject2.put("app_version", this.d);

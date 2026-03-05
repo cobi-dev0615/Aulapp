@@ -81,7 +81,7 @@ public enum CaptureStatus {
         $$b = 97;
     }
 
-    public static CaptureStatus valueOf(String str) {
+    public static CaptureStatus valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

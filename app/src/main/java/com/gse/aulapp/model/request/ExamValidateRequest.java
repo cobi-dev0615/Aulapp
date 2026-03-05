@@ -84,10 +84,6 @@ public final /* data */ class ExamValidateRequest implements Parcelable {
         return Intrinsics.areEqual(this.appointmentsId, examValidateRequest.appointmentsId) && Intrinsics.areEqual(this.role, examValidateRequest.role);
     }
 
-    public final String[] getAppointmentsId() {
-        return this.appointmentsId;
-    }
-
     public int hashCode() {
         String[] strArr = this.appointmentsId;
         int hashCode = (strArr == null ? 0 : Arrays.hashCode(strArr)) * 31;

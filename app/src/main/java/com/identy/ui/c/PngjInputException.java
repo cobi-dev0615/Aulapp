@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 /* loaded from: classes2.dex */
 public final class PngjInputException extends PngBadCharsetException {
-    public PngjInputException(Activity activity, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap2, com.identy.d.PngjException pngjException) {
+    public PngjInputException(Activity activity, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, com.identy.d.PngjException pngjException) {
         super(activity, false, hashMap, hashMap2, pngjException);
     }
 

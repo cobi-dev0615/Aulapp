@@ -123,7 +123,7 @@ public final class PngjOutputException {
                 str = r3.toString();
             }
             if (z) {
-                obj = b.d(obj2, "2T");
+                obj = IdentyB.d(obj2, "2T");
             } else {
                 StringBuilder r4 = defpackage.a.r(obj2);
                 r4.append(((Hand) this.getNfiq1Score[0].first).toString().toUpperCase().charAt(0));
@@ -131,7 +131,7 @@ public final class PngjOutputException {
                 obj = r4.toString();
             }
         }
-        String d = b.d(obj, "|");
+        String d = IdentyB.d(obj, "|");
         for (Object obj3 : this.PngjUnsupportedException) {
             String valueOf = obj3 instanceof Integer ? String.valueOf(obj3) : BuildConfig.FLAVOR;
             String str2 = "T";
@@ -164,14 +164,14 @@ public final class PngjOutputException {
                         str2 = sb4.toString();
                     }
                 }
-                d = b.d(d, str2);
+                d = IdentyB.d(d, str2);
             }
             str2 = valueOf;
-            d = b.d(d, str2);
+            d = IdentyB.d(d, str2);
         }
-        StringBuilder r5 = defpackage.a.r(b.d(d, "|"));
+        StringBuilder r5 = defpackage.a.r(IdentyB.d(d, "|"));
         r5.append((int) this.PngjBadCrcException);
-        String d2 = b.d(r5.toString(), "|");
+        String d2 = IdentyB.d(r5.toString(), "|");
         if (this.PngjExceptionInternal.keySet().size() != 0) {
             String str3 = BuildConfig.FLAVOR;
             for (int i3 = 0; i3 < 10; i3++) {
@@ -184,7 +184,7 @@ public final class PngjOutputException {
                     str3 = r7.toString();
                 }
             }
-            d2 = b.d(b.d(d2, str3), "|");
+            d2 = IdentyB.d(IdentyB.d(d2, str3), "|");
         }
         if (this.values.keySet().size() != 0) {
             String str4 = BuildConfig.FLAVOR;
@@ -198,7 +198,7 @@ public final class PngjOutputException {
                     str4 = r9.toString();
                 }
             }
-            d2 = b.d(b.d(d2, str4), "|");
+            d2 = IdentyB.d(IdentyB.d(d2, str4), "|");
         }
         if (this.getCaptureTime) {
             StringBuilder q = x5.q(d2, "m");
@@ -241,7 +241,7 @@ public final class PngjOutputException {
             q14.append(PngjBadCrcException(this.getAsHighestSecurityLevelReached));
             StringBuilder q15 = x5.q(q14.toString(), "p");
             q15.append(PngjBadCrcException(this.getPadSub2));
-            d2 = b.d(q15.toString(), "|");
+            d2 = IdentyB.d(q15.toString(), "|");
         }
         if (this.PngjException.keySet().size() != 0) {
             for (int i5 = 0; i5 < 10; i5++) {
@@ -252,7 +252,7 @@ public final class PngjOutputException {
                     d2 = r10.toString();
                 }
             }
-            d2 = b.d(d2, "|");
+            d2 = IdentyB.d(d2, "|");
         }
         if (this.PngjBadSignature.keySet().size() != 0) {
             String str5 = BuildConfig.FLAVOR;
@@ -266,9 +266,9 @@ public final class PngjOutputException {
                     str5 = r12.toString();
                 }
             }
-            StringBuilder q16 = x5.q(b.d(d2, str5), "#r");
+            StringBuilder q16 = x5.q(IdentyB.d(d2, str5), "#r");
             q16.append(this.getFingerPrintQualityScore);
-            d2 = b.d(q16.toString(), "|");
+            d2 = IdentyB.d(q16.toString(), "|");
         }
         StringBuilder q17 = x5.q(d2, "|");
         q17.append(this.getOveralTimetaken);
@@ -279,7 +279,7 @@ public final class PngjOutputException {
         r13.append(this.valueOf / 1000);
         String obj4 = r13.toString();
         ERRORS errors = this.getMatchingTime;
-        return errors != null ? errors.equals(ERRORS.TIMED_OUT) ? b.d(obj4, "|TO") : this.getMatchingTime.equals(ERRORS.EXCEEDED_TRANSACTION_LIMIT) ? b.d(obj4, "|TE") : this.getMatchingTime.equals(ERRORS.ACTIVITY_PAUSED_ON_BACK_PRESSED) ? b.d(obj4, "|AP") : this.getMatchingTime.equals(ERRORS.USER_CANCELLED_ON_NEXT_DETECTION) ? b.d(obj4, "|UC") : obj4 : obj4;
+        return errors != null ? errors.equals(ERRORS.TIMED_OUT) ? IdentyB.d(obj4, "|TO") : this.getMatchingTime.equals(ERRORS.EXCEEDED_TRANSACTION_LIMIT) ? IdentyB.d(obj4, "|TE") : this.getMatchingTime.equals(ERRORS.ACTIVITY_PAUSED_ON_BACK_PRESSED) ? IdentyB.d(obj4, "|AP") : this.getMatchingTime.equals(ERRORS.USER_CANCELLED_ON_NEXT_DETECTION) ? IdentyB.d(obj4, "|UC") : obj4 : obj4;
     }
 
     public final int PngjBadCrcException(Integer num) {

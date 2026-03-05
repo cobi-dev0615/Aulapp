@@ -75,7 +75,7 @@ public enum SIDE {
         $$b = 149;
     }
 
-    public static SIDE valueOf(String str) {
+    public static SIDE valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

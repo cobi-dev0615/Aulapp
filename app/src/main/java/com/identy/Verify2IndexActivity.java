@@ -551,7 +551,7 @@ public class Verify2IndexActivity extends FingerActivity {
         	at jadx.core.dex.visitors.regions.RegionMakerVisitor.visit(RegionMakerVisitor.java:27)
         */
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
-    public void PngjException(java.util.HashMap<android.util.Pair<com.identy.enums.Hand, com.identy.enums.Finger>, com.identy.a> r15, java.util.HashMap<android.util.Pair<com.identy.enums.Hand, com.identy.enums.Finger>, com.identy.a> r16, android.graphics.Bitmap r17, boolean r18, boolean r19) {
+    public void PngjException(java.util.HashMap<android.util.Pair<com.identy.enums.Hand, com.identy.enums.Finger>, com.identy.IdentyA> r15, java.util.HashMap<android.util.Pair<com.identy.enums.Hand, com.identy.enums.Finger>, com.identy.IdentyA> r16, android.graphics.Bitmap r17, boolean r18, boolean r19) {
         /*
             Method dump skipped, instructions count: 224
             To view this dump add '--comments-level debug' option

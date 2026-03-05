@@ -14,7 +14,7 @@ import java.util.Arrays;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
-import kotlin.collections.ArraysKt___ArraysKt;
+import kotlin.collections.ArraysKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.Boxing;
@@ -91,7 +91,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
             if (id.length != 0) {
                 byte[] id2 = this.$tag.getId();
                 Intrinsics.checkNotNullExpressionValue(id2, "getId(...)");
-                joinToString$default = ArraysKt___ArraysKt.joinToString$default(id2, (CharSequence) ":", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, (Function1) new b(), 30, (Object) null);
+                joinToString$default = ArraysKt.joinToString$default(id2, (CharSequence) ":", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, (Function1) new b(), 30, (Object) null);
                 String t = StringsKt.t(joinToString$default, ":", BuildConfig.FLAVOR);
                 String unused = NfcUtil.TAG;
                 LogSendUtil.Companion companion2 = LogSendUtil.INSTANCE;

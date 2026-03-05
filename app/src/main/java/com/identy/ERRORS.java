@@ -75,7 +75,7 @@ public enum ERRORS {
         $$b = 188;
     }
 
-    public static ERRORS valueOf(String str) {
+    public static ERRORS valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

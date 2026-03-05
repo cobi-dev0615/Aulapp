@@ -2,7 +2,7 @@ package com.identy.ex;
 
 import com.d.e.a.values;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.lang.reflect.Method;
 import kotlin.io.ConstantsKt;
@@ -51,7 +51,7 @@ public class FingerData {
                     int i16 = -(i13 ^ (((i15 | 1) << 1) - (i15 ^ 1)));
                     int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
                     int i18 = i17 >> 23;
-                    int e = b.e((i18 | (-1023)) << 1, i18 ^ (-1023), ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
+                    int e = IdentyB.e((i18 | (-1023)) << 1, i18 ^ (-1023), ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
                     this.width = 0 / (((-((e ^ 1) + ((e & 1) << 1))) & i17) * 320);
                     this.height = 0;
                     this.pad_score = 254;
@@ -88,7 +88,7 @@ public class FingerData {
             int i162 = -(i132 ^ (((i152 | 1) << 1) - (i152 ^ 1)));
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
             int i182 = i172 >> 23;
-            int e2 = b.e((i182 | (-1023)) << 1, i182 ^ (-1023), ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
+            int e2 = IdentyB.e((i182 | (-1023)) << 1, i182 ^ (-1023), ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
             this.width = 0 / (((-((e2 ^ 1) + ((e2 & 1) << 1))) & i172) * 320);
             this.height = 0;
             this.pad_score = 254;

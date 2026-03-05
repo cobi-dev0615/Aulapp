@@ -58,14 +58,6 @@ public abstract class ResultEncryptKeys {
             return Intrinsics.areEqual(this.publicKey, dataResult.publicKey) && Intrinsics.areEqual(this.value, dataResult.value);
         }
 
-        public final String getPublicKey() {
-            return this.publicKey;
-        }
-
-        public final String getValue() {
-            return this.value;
-        }
-
         public int hashCode() {
             String str = this.publicKey;
             int hashCode = (str == null ? 0 : str.hashCode()) * 31;
@@ -122,10 +114,6 @@ public abstract class ResultEncryptKeys {
                 return true;
             }
             return (other instanceof Failure) && Intrinsics.areEqual(this.e, ((Failure) other).e);
-        }
-
-        public final Throwable getE() {
-            return this.e;
         }
 
         public int hashCode() {

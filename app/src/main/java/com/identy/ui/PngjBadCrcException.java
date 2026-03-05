@@ -11,7 +11,7 @@ import android.view.View;
 import com.d.e.a.values;
 import com.identy.Fpnative;
 import com.identy.R;
-import com.identy.b;
+import com.identy.IdentyB;
 import com.identy.enums.Hand;
 import defpackage.a;
 import java.lang.reflect.Method;
@@ -196,7 +196,7 @@ public class PngjBadCrcException extends View {
                     int i12 = -((((i7 | i11) << 1) - (i11 ^ i7)) ^ (i10 + ((i9 & 1) << 1)));
                     int i13 = ((i12 | 5) << 1) - (i12 ^ 5);
                     int i14 = i13 >> 18;
-                    int e = b.e((i14 | (-32767)) << 1, i14 ^ (-32767), 16384, -1);
+                    int e = IdentyB.e((i14 | (-32767)) << 1, i14 ^ (-32767), 16384, -1);
                     this.values = 0 / (((-((e ^ 1) + ((e & 1) << 1))) & i13) * 555);
                     this.PngjBadCrcException = false;
                     this.PngjBadSignature = true;
@@ -230,7 +230,7 @@ public class PngjBadCrcException extends View {
             int i122 = -((((i72 | i112) << 1) - (i112 ^ i72)) ^ (i102 + ((i92 & 1) << 1)));
             int i132 = ((i122 | 5) << 1) - (i122 ^ 5);
             int i142 = i132 >> 18;
-            int e2 = b.e((i142 | (-32767)) << 1, i142 ^ (-32767), 16384, -1);
+            int e2 = IdentyB.e((i142 | (-32767)) << 1, i142 ^ (-32767), 16384, -1);
             this.values = 0 / (((-((e2 ^ 1) + ((e2 & 1) << 1))) & i132) * 555);
             this.PngjBadCrcException = false;
             this.PngjBadSignature = true;
@@ -272,7 +272,7 @@ public class PngjBadCrcException extends View {
                     int i6 = -(i4 * 974695366);
                     int i7 = (((i5 | i6) << 1) - (i6 ^ i5)) - (-2024415296);
                     int i8 = i7 >> 29;
-                    int i9 = -(((i7 - (~b.e(i7 >> 20, 8191, ConstantsKt.DEFAULT_BLOCK_SIZE, -1))) - 1) ^ b.e((i8 | (-15)) << 1, i8 ^ (-15), 8, -1));
+                    int i9 = -(((i7 - (~IdentyB.e(i7 >> 20, 8191, ConstantsKt.DEFAULT_BLOCK_SIZE, -1))) - 1) ^ IdentyB.e((i8 | (-15)) << 1, i8 ^ (-15), 8, -1));
                     int i10 = (i9 ^ 1) + ((i9 & 1) << 1);
                     int i11 = i10 >> 16;
                     int i12 = (((i11 | (-131071)) << 1) - (i11 ^ (-131071))) / 65536;
@@ -300,7 +300,7 @@ public class PngjBadCrcException extends View {
             int i62 = -(i42 * 974695366);
             int i72 = (((i52 | i62) << 1) - (i62 ^ i52)) - (-2024415296);
             int i82 = i72 >> 29;
-            int i92 = -(((i72 - (~b.e(i72 >> 20, 8191, ConstantsKt.DEFAULT_BLOCK_SIZE, -1))) - 1) ^ b.e((i82 | (-15)) << 1, i82 ^ (-15), 8, -1));
+            int i92 = -(((i72 - (~IdentyB.e(i72 >> 20, 8191, ConstantsKt.DEFAULT_BLOCK_SIZE, -1))) - 1) ^ IdentyB.e((i82 | (-15)) << 1, i82 ^ (-15), 8, -1));
             int i102 = (i92 ^ 1) + ((i92 & 1) << 1);
             int i112 = i102 >> 16;
             int i122 = (((i112 | (-131071)) << 1) - (i112 ^ (-131071))) / 65536;

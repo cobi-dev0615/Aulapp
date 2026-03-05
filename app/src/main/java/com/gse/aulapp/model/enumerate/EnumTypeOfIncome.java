@@ -30,7 +30,7 @@ public final class EnumTypeOfIncome {
     private EnumTypeOfIncome(String str, int i) {
     }
 
-    public static EnumTypeOfIncome valueOf(String str) {
+    public static EnumTypeOfIncome valueOfString(String str) {
         return (EnumTypeOfIncome) Enum.valueOf(EnumTypeOfIncome.class, str);
     }
 

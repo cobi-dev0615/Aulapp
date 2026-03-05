@@ -46,7 +46,7 @@ public class UkhobTemplateBuilder {
                     int i12 = (i10 & i11) + (i11 | i10);
                     int i13 = (i12 & (-158439759)) + ((-158439759) | i12);
                     int i14 = i13 >> 24;
-                    int a = b.a(i14 ^ (-511), (i14 & (-511)) << 1, 256, -1);
+                    int a = IdentyB.a(i14 ^ (-511), (i14 & (-511)) << 1, 256, -1);
                     int i15 = (i13 & a) + (a | i13);
                     int i16 = i13 >> 29;
                     int i17 = ((i16 ^ (-15)) + ((i16 & (-15)) << 1)) / 8;
@@ -78,7 +78,7 @@ public class UkhobTemplateBuilder {
             int i122 = (i102 & i112) + (i112 | i102);
             int i132 = (i122 & (-158439759)) + ((-158439759) | i122);
             int i142 = i132 >> 24;
-            int a2 = b.a(i142 ^ (-511), (i142 & (-511)) << 1, 256, -1);
+            int a2 = IdentyB.a(i142 ^ (-511), (i142 & (-511)) << 1, 256, -1);
             int i152 = (i132 & a2) + (a2 | i132);
             int i162 = i132 >> 29;
             int i172 = ((i162 ^ (-15)) + ((i162 & (-15)) << 1)) / 8;
@@ -180,9 +180,9 @@ public class UkhobTemplateBuilder {
                     int i10 = (i9 ^ 1) + ((i9 & 1) << 1);
                     int i11 = ((i8 | i10) << 1) - (i10 ^ i8);
                     int i12 = i8 >> 18;
-                    int i13 = (-(i11 ^ b.a(i12 & (-32767), i12 | (-32767), 16384, -1))) + 7;
+                    int i13 = (-(i11 ^ IdentyB.a(i12 & (-32767), i12 | (-32767), 16384, -1))) + 7;
                     int i14 = i13 >> 23;
-                    int e = b.e((i14 | (-1023)) << 1, i14 ^ (-1023), ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
+                    int e = IdentyB.e((i14 | (-1023)) << 1, i14 ^ (-1023), ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
                     concat.substring(69237 / ((i13 & (-((e & 1) + (e | 1)))) * 1099));
                     Object[] finishTransaction = finishTransaction(this.PngjBadCrcException, z);
                     this.PngjBadSignature = ((Boolean) finishTransaction[2]).booleanValue();
@@ -210,9 +210,9 @@ public class UkhobTemplateBuilder {
             int i102 = (i92 ^ 1) + ((i92 & 1) << 1);
             int i112 = ((i82 | i102) << 1) - (i102 ^ i82);
             int i122 = i82 >> 18;
-            int i132 = (-(i112 ^ b.a(i122 & (-32767), i122 | (-32767), 16384, -1))) + 7;
+            int i132 = (-(i112 ^ IdentyB.a(i122 & (-32767), i122 | (-32767), 16384, -1))) + 7;
             int i142 = i132 >> 23;
-            int e2 = b.e((i142 | (-1023)) << 1, i142 ^ (-1023), ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
+            int e2 = IdentyB.e((i142 | (-1023)) << 1, i142 ^ (-1023), ConstantsKt.MINIMUM_BLOCK_SIZE, -1);
             concat2.substring(69237 / ((i132 & (-((e2 & 1) + (e2 | 1)))) * 1099));
             Object[] finishTransaction2 = finishTransaction(this.PngjBadCrcException, z);
             this.PngjBadSignature = ((Boolean) finishTransaction2[2]).booleanValue();

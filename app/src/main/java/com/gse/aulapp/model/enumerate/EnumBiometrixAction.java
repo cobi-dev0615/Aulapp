@@ -49,7 +49,7 @@ public final class EnumBiometrixAction {
         return $ENTRIES;
     }
 
-    public static EnumBiometrixAction valueOf(String str) {
+    public static EnumBiometrixAction valueOfString(String str) {
         return (EnumBiometrixAction) Enum.valueOf(EnumBiometrixAction.class, str);
     }
 

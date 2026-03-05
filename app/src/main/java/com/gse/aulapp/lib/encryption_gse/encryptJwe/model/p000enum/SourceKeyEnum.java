@@ -29,7 +29,7 @@ public final class SourceKeyEnum {
     private SourceKeyEnum(String str, int i) {
     }
 
-    public static SourceKeyEnum valueOf(String str) {
+    public static SourceKeyEnum valueOfString(String str) {
         return (SourceKeyEnum) Enum.valueOf(SourceKeyEnum.class, str);
     }
 

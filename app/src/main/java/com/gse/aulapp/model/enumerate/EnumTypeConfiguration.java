@@ -29,7 +29,7 @@ public final class EnumTypeConfiguration {
     private EnumTypeConfiguration(String str, int i) {
     }
 
-    public static EnumTypeConfiguration valueOf(String str) {
+    public static EnumTypeConfiguration valueOfString(String str) {
         return (EnumTypeConfiguration) Enum.valueOf(EnumTypeConfiguration.class, str);
     }
 

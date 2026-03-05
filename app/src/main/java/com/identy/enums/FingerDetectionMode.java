@@ -5,7 +5,7 @@ import android.os.SystemClock;
 import com.d.e.a.values;
 import com.identy.Fpnative;
 import com.identy.R;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.io.Serializable;
 import java.lang.reflect.Method;
@@ -166,7 +166,7 @@ public final class FingerDetectionMode implements Serializable {
         }
     }
 
-    public static FingerDetectionMode valueOf(String str) {
+    public static FingerDetectionMode valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
@@ -328,7 +328,7 @@ public final class FingerDetectionMode implements Serializable {
                     int i14 = (i13 ^ 1) + ((i13 & 1) << 1);
                     int i15 = (i11 ^ i14) + ((i14 & i11) << 1);
                     int i16 = i11 >> 27;
-                    int i17 = (-(b.a(i16 & (-63), i16 | (-63), 32, -1) ^ i15)) + 2;
+                    int i17 = (-(IdentyB.a(i16 & (-63), i16 | (-63), 32, -1) ^ i15)) + 2;
                     int i18 = i17 >> 28;
                     int i19 = ((i18 ^ (-31)) + ((i18 & (-31)) << 1)) / 16;
                     for (i = 0 / (((-((((i19 | 1) << 1) - (1 ^ i19)) - (-1))) & i17) * 135); i < length; i++) {
@@ -365,7 +365,7 @@ public final class FingerDetectionMode implements Serializable {
             int i142 = (i132 ^ 1) + ((i132 & 1) << 1);
             int i152 = (i112 ^ i142) + ((i142 & i112) << 1);
             int i162 = i112 >> 27;
-            int i172 = (-(b.a(i162 & (-63), i162 | (-63), 32, -1) ^ i152)) + 2;
+            int i172 = (-(IdentyB.a(i162 & (-63), i162 | (-63), 32, -1) ^ i152)) + 2;
             int i182 = i172 >> 28;
             int i192 = ((i182 ^ (-31)) + ((i182 & (-31)) << 1)) / 16;
             while (i < length) {

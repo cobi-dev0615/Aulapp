@@ -13,7 +13,7 @@ import kotlin.jvm.internal.IntCompanionObject;
 @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
 @DebugMetadata(c = "com.gse.aulapp.viewmodel.FirstLoginViewModel$login$1$2", f = "FirstLoginViewModel.kt", i = {0, 0, 2, 2}, l = {360, 366, 446, 460, 468, 477}, m = "emit", n = {"this", "apiResponse", "this", "apiResponse"}, s = {"L$0", "L$1", "L$0", "L$1"})
 /* loaded from: classes2.dex */
-public final class FirstLoginViewModel$login$1$2$emit$1 extends ContinuationImpl {
+public final class FirstLoginViewModel$login$1$2$emit$1<T> extends ContinuationImpl {
     Object L$0;
     Object L$1;
     int label;

@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 /* loaded from: classes2.dex */
 public final class e1 extends getQualityScore {
-    public e1(Activity activity, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap2, com.identy.d.PngjException pngjException) {
+    public e1(Activity activity, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, com.identy.d.PngjException pngjException) {
         super(activity, false, hashMap, hashMap2, pngjException);
     }
 

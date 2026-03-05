@@ -4,7 +4,7 @@ import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.lang.reflect.Method;
 
@@ -109,12 +109,12 @@ public final class valueOf implements Response.ErrorListener {
                             int i9 = (((i7 ^ i8) + ((i7 & i8) << 1)) - (~(-(i6 * (-1716003862))))) - 1;
                             int i10 = (i9 ^ (-332754684)) + (((-332754684) & i9) << 1);
                             int i11 = i10 >> 28;
-                            int a = b.a(i11 & (-31), i11 | (-31), 16, -1);
+                            int a = IdentyB.a(i11 & (-31), i11 | (-31), 16, -1);
                             int i12 = ((i10 | a) << 1) - (a ^ i10);
                             int i13 = i10 >> 27;
-                            int i14 = (-(b.a(i13 & (-63), i13 | (-63), 32, -1) ^ i12)) + 8;
+                            int i14 = (-(IdentyB.a(i13 & (-63), i13 | (-63), 32, -1) ^ i12)) + 8;
                             int i15 = i14 >> 26;
-                            int a2 = b.a(i15 ^ (-127), (i15 & (-127)) << 1, 64, -1);
+                            int a2 = IdentyB.a(i15 ^ (-127), (i15 & (-127)) << 1, 64, -1);
                             z = 12488 / ((i14 & (-((a2 ^ 1) + ((a2 & 1) << 1)))) * 1561);
                         }
                         pngjOutputException.values(z);

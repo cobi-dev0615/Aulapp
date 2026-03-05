@@ -24,7 +24,7 @@ public class getPadSub3 extends Dialog {
     private ImageView PngjBadSignature;
     com.identy.d.PngjException PngjException;
     private boolean PngjOutputException;
-    com.identy.a valueOf;
+    com.identy.IdentyA valueOf;
     private Activity values;
 
     public class PngjBadCrcException implements View.OnClickListener {
@@ -65,12 +65,12 @@ public class getPadSub3 extends Dialog {
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
             Context context = getPadSub3.this.getContext();
-            com.identy.a aVar = getPadSub3.this.valueOf;
+            com.identy.IdentyA aVar = getPadSub3.this.valueOf;
             new Attempt(context, aVar, aVar).show();
         }
     }
 
-    public getPadSub3(Activity activity, boolean z, com.identy.a aVar, com.identy.d.PngjException pngjException) {
+    public getPadSub3(Activity activity, boolean z, com.identy.IdentyA aVar, com.identy.d.PngjException pngjException) {
         super(activity);
         this.values = activity;
         this.valueOf = aVar;
@@ -108,7 +108,7 @@ public class getPadSub3 extends Dialog {
         findViewById(R.id.closePopupBtn).setOnClickListener(new PngjBadSignature());
         setOnDismissListener(new valueOf());
         findViewById(R.id.retake_yes).setOnClickListener(new PngjBadCrcException());
-        com.identy.a aVar = this.valueOf;
+        com.identy.IdentyA aVar = this.valueOf;
         Mat padSub3 = aVar.getPadSub3();
         if (padSub3 != null && Mat.n_rows(padSub3.PngjException) > 0 && Mat.n_cols(padSub3.PngjException) > 0) {
             Mat mat = new Mat();

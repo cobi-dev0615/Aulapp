@@ -32,10 +32,10 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit invokeSuspend$lambda$0(NetworkConnectivityObserver networkConnectivityObserver, NetworkConnectivityObserver$observe$1$callback$1 networkConnectivityObserver$observe$1$callback$1) {
+    public static final Unit invokeSuspend$lambda$0(NetworkConnectivityObserver networkConnectivityObserver, Object networkConnectivityObserver$observe$1$callback$1) {
         ConnectivityManager connectivityManager;
         connectivityManager = networkConnectivityObserver.connectivityManager;
-        connectivityManager.unregisterNetworkCallback(networkConnectivityObserver$observe$1$callback$1);
+        connectivityManager.unregisterNetworkCallback((ConnectivityManager.NetworkCallback) networkConnectivityObserver$observe$1$callback$1);
         return Unit.INSTANCE;
     }
 

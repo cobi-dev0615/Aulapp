@@ -31,7 +31,7 @@ public final class Status {
     private Status(String str, int i) {
     }
 
-    public static Status valueOf(String str) {
+    public static Status valueOfString(String str) {
         return (Status) Enum.valueOf(Status.class, str);
     }
 

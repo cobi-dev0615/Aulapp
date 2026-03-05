@@ -576,7 +576,7 @@ public class GuideNoGuideHelper {
                 int i6 = ((i5 * i5) - (~(-(885835016 * i5)))) - 1;
                 int i7 = -(i5 * (-553154412));
                 int i8 = ((i6 & i7) + (i7 | i6)) - (-1920585156);
-                int e = b.e(i8 >> 24, 511, 256, -1);
+                int e = IdentyB.e(i8 >> 24, 511, 256, -1);
                 int i9 = -(e ^ (((i8 | e) << 1) - (i8 ^ e)));
                 i = (i9 ^ 9) + ((i9 & 9) << 1);
                 i2 = ((i >> 27) - 63) / 32;
@@ -612,7 +612,7 @@ public class GuideNoGuideHelper {
         int i62 = ((i52 * i52) - (~(-(885835016 * i52)))) - 1;
         int i72 = -(i52 * (-553154412));
         int i82 = ((i62 & i72) + (i72 | i62)) - (-1920585156);
-        int e2 = b.e(i82 >> 24, 511, 256, -1);
+        int e2 = IdentyB.e(i82 >> 24, 511, 256, -1);
         int i92 = -(e2 ^ (((i82 | e2) << 1) - (i82 ^ e2)));
         i = (i92 ^ 9) + ((i92 & 9) << 1);
         i2 = ((i >> 27) - 63) / 32;
@@ -667,12 +667,12 @@ public class GuideNoGuideHelper {
             int i7 = -(i3 * (-417704842));
             int i8 = (i6 & i7) + (i7 | i6);
             int i9 = (i8 ^ (-1704369904)) + (((-1704369904) & i8) << 1);
-            int e = b.e(i9 >> 18, 32767, 16384, -1);
+            int e = IdentyB.e(i9 >> 18, 32767, 16384, -1);
             int i10 = (i9 ^ e) + ((e & i9) << 1);
             int i11 = i9 >> 21;
             int i12 = ((i11 ^ (-4095)) + ((i11 & (-4095)) << 1)) / 2048;
             int i13 = (-(((i12 & 1) + (i12 | 1)) ^ i10)) + 8;
-            int e2 = b.e(i13 >> 22, 2047, 1024, -1);
+            int e2 = IdentyB.e(i13 >> 22, 2047, 1024, -1);
             sb.append("8/9/11/30/_".substring(13840 / ((i13 & (-(((e2 | 1) << 1) - (e2 ^ 1)))) * 173)));
             sb.append(z);
             String obj = sb.toString();
@@ -697,12 +697,12 @@ public class GuideNoGuideHelper {
         int i72 = -(i32 * (-417704842));
         int i82 = (i62 & i72) + (i72 | i62);
         int i92 = (i82 ^ (-1704369904)) + (((-1704369904) & i82) << 1);
-        int e3 = b.e(i92 >> 18, 32767, 16384, -1);
+        int e3 = IdentyB.e(i92 >> 18, 32767, 16384, -1);
         int i102 = (i92 ^ e3) + ((e3 & i92) << 1);
         int i112 = i92 >> 21;
         int i122 = ((i112 ^ (-4095)) + ((i112 & (-4095)) << 1)) / 2048;
         int i132 = (-(((i122 & 1) + (i122 | 1)) ^ i102)) + 8;
-        int e22 = b.e(i132 >> 22, 2047, 1024, -1);
+        int e22 = IdentyB.e(i132 >> 22, 2047, 1024, -1);
         sb2.append("8/9/11/30/_".substring(13840 / ((i132 & (-(((e22 | 1) << 1) - (e22 ^ 1)))) * 173)));
         sb2.append(z);
         String obj2 = sb2.toString();
@@ -742,7 +742,7 @@ public class GuideNoGuideHelper {
                     int i12 = ((i11 | 7) << 1) - (i11 ^ 7);
                     int i13 = i12 >> 19;
                     int i14 = ((i13 & (-16383)) + (i13 | (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE;
-                    String string = defaultSharedPreferences.getString(b.c((-((i14 ^ 1) + ((i14 & 1) << 1) + 1)) & i12, 1284, 71904, "8;12;16;v1_person_selected"), BuildConfig.FLAVOR);
+                    String string = defaultSharedPreferences.getString(IdentyB.c((-((i14 ^ 1) + ((i14 & 1) << 1) + 1)) & i12, 1284, 71904, "8;12;16;v1_person_selected"), BuildConfig.FLAVOR);
                     valueOf = (PngjBadSignature + 79) % 128;
                     return string;
                 }
@@ -771,7 +771,7 @@ public class GuideNoGuideHelper {
             int i122 = ((i112 | 7) << 1) - (i112 ^ 7);
             int i132 = i122 >> 19;
             int i142 = ((i132 & (-16383)) + (i132 | (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE;
-            String string2 = defaultSharedPreferences2.getString(b.c((-((i142 ^ 1) + ((i142 & 1) << 1) + 1)) & i122, 1284, 71904, "8;12;16;v1_person_selected"), BuildConfig.FLAVOR);
+            String string2 = defaultSharedPreferences2.getString(IdentyB.c((-((i142 ^ 1) + ((i142 & 1) << 1) + 1)) & i122, 1284, 71904, "8;12;16;v1_person_selected"), BuildConfig.FLAVOR);
             valueOf = (PngjBadSignature + 79) % 128;
             return string2;
         } catch (Throwable th) {
@@ -827,7 +827,7 @@ public class GuideNoGuideHelper {
                 int i16 = -((((i15 | 1) << 1) - (i15 ^ 1)) ^ i13);
                 int i17 = (i16 ^ 4) + ((i16 & 4) << 1);
                 int i18 = i17 >> 25;
-                int a = b.a(i18 ^ (-255), (i18 & (-255)) << 1, 128, -1);
+                int a = IdentyB.a(i18 ^ (-255), (i18 & (-255)) << 1, 128, -1);
                 if (fingerDetectionModeArr[0 / (((-((a ^ 1) + ((a & 1) << 1))) & i17) * 491)].getFinger() != null) {
                     valueOf = (PngjBadSignature + 5) % 128;
                     if (fingerDetectionModeArr[0].getFinger().equals(Finger.THUMB)) {
@@ -1371,7 +1371,7 @@ public class GuideNoGuideHelper {
                 int i7 = (i6 & 1) + (i6 | 1);
                 int i8 = ((i4 | i7) << 1) - (i7 ^ i4);
                 int i9 = i4 >> 26;
-                int i10 = (-(b.e((i9 | (-127)) << 1, i9 ^ (-127), 64, -1) ^ i8)) + 7;
+                int i10 = (-(IdentyB.e((i9 | (-127)) << 1, i9 ^ (-127), 64, -1) ^ i8)) + 7;
                 int i11 = ((i10 >> 24) - 511) / 256;
                 sb2.append(getKey(fingerDetectionMode, 0 / ((i10 & (-(((i11 & 1) + (1 | i11)) - (-1)))) * 356)));
                 edit.putBoolean(sb2.toString(), z);
@@ -1409,7 +1409,7 @@ public class GuideNoGuideHelper {
             int i72 = (i62 & 1) + (i62 | 1);
             int i82 = ((i42 | i72) << 1) - (i72 ^ i42);
             int i92 = i42 >> 26;
-            int i102 = (-(b.e((i92 | (-127)) << 1, i92 ^ (-127), 64, -1) ^ i82)) + 7;
+            int i102 = (-(IdentyB.e((i92 | (-127)) << 1, i92 ^ (-127), 64, -1) ^ i82)) + 7;
             int i112 = ((i102 >> 24) - 511) / 256;
             sb22.append(getKey(fingerDetectionMode2, 0 / ((i102 & (-(((i112 & 1) + (1 | i112)) - (-1)))) * 356)));
             edit2.putBoolean(sb22.toString(), z);
@@ -1552,7 +1552,7 @@ public class GuideNoGuideHelper {
                     int i17 = i16 >> 27;
                     int i18 = ((i17 & (-63)) + (i17 | (-63))) / 32;
                     int i19 = (i18 & 1) + (i18 | 1);
-                    edit.putString(b.c((-((i19 & 1) + (i19 | 1))) & i16, 292, 5256, "15/v1_person_selected"), str);
+                    edit.putString(IdentyB.c((-((i19 & 1) + (i19 | 1))) & i16, 292, 5256, "15/v1_person_selected"), str);
                     edit.commit();
                     return;
                 }
@@ -1584,7 +1584,7 @@ public class GuideNoGuideHelper {
             int i172 = i162 >> 27;
             int i182 = ((i172 & (-63)) + (i172 | (-63))) / 32;
             int i192 = (i182 & 1) + (i182 | 1);
-            edit2.putString(b.c((-((i192 & 1) + (i192 | 1))) & i162, 292, 5256, "15/v1_person_selected"), str);
+            edit2.putString(IdentyB.c((-((i192 & 1) + (i192 | 1))) & i162, 292, 5256, "15/v1_person_selected"), str);
             edit2.commit();
             return;
         } catch (Throwable th) {
@@ -1631,7 +1631,7 @@ public class GuideNoGuideHelper {
                         int i10 = -(i6 * 913180809);
                         int i11 = (((i9 | i10) << 1) - (i10 ^ i9)) - (-2106575361);
                         int i12 = i11 >> 22;
-                        int e = b.e((i12 | (-2047)) << 1, i12 ^ (-2047), 1024, -1);
+                        int e = IdentyB.e((i12 | (-2047)) << 1, i12 ^ (-2047), 1024, -1);
                         int i13 = (i11 ^ e) + ((e & i11) << 1);
                         int i14 = ((i11 >> 16) - 131071) / 65536;
                         int i15 = (-(i13 ^ ((i14 & 1) + (i14 | 1)))) + 6;
@@ -1662,7 +1662,7 @@ public class GuideNoGuideHelper {
                 int i102 = -(i62 * 913180809);
                 int i112 = (((i92 | i102) << 1) - (i102 ^ i92)) - (-2106575361);
                 int i122 = i112 >> 22;
-                int e2 = b.e((i122 | (-2047)) << 1, i122 ^ (-2047), 1024, -1);
+                int e2 = IdentyB.e((i122 | (-2047)) << 1, i122 ^ (-2047), 1024, -1);
                 int i132 = (i112 ^ e2) + ((e2 & i112) << 1);
                 int i142 = ((i112 >> 16) - 131071) / 65536;
                 int i152 = (-(i132 ^ ((i142 & 1) + (i142 | 1)))) + 6;

@@ -5522,7 +5522,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 int i54 = (i52 & i53) + (i53 | i52);
                                 int i55 = (i54 ^ 607577104) + ((607577104 & i54) << 1);
                                 int i56 = i55 >> 27;
-                                int a = b.a(i56 & (-63), i56 | (-63), 32, -1);
+                                int a = IdentyB.a(i56 & (-63), i56 | (-63), 32, -1);
                                 int i57 = (i55 & a) + (a | i55);
                                 int i58 = i55 >> 20;
                                 int i59 = (((i58 | (-8191)) << 1) - (i58 ^ (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;
@@ -5581,9 +5581,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             int i89 = (i88 ^ 1) + ((i88 & 1) << 1);
                             int i90 = (i86 ^ i89) + ((i89 & i86) << 1);
                             int i91 = i86 >> 22;
-                            int i92 = (-(b.a(i91 ^ (-2047), (i91 & (-2047)) << 1, 1024, -1) ^ i90)) + 9;
+                            int i92 = (-(IdentyB.a(i91 ^ (-2047), (i91 & (-2047)) << 1, 1024, -1) ^ i90)) + 9;
                             int i93 = i92 >> 24;
-                            int e = b.e((i93 | (-511)) << 1, i93 ^ (-511), 256, -1);
+                            int e = IdentyB.e((i93 | (-511)) << 1, i93 ^ (-511), 256, -1);
                             int i94 = 0 / ((i92 & (-((e & 1) + (e | 1)))) * 1770);
                             if (pngjBadCrcException.getQualityScore != null && pngjBadCrcException.EnrollThumbActivity) {
                                 pngjBadCrcException.EnrollThumbActivity = false;
@@ -10974,7 +10974,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         throw null;
     }
 
-    public void PngjBadSignature(List<HashMap<Pair<Hand, Finger>, com.identy.a>> list, boolean z, boolean z2, HashMap<Pair<Hand, Finger>, Float> hashMap) {
+    public void PngjBadSignature(List<HashMap<Pair<Hand, Finger>, com.identy.IdentyA>> list, boolean z, boolean z2, HashMap<Pair<Hand, Finger>, Float> hashMap) {
         if (this.onErrorResponse == null || z) {
             return;
         }
@@ -11868,7 +11868,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public void PngjException(HashMap<Pair<Hand, Finger>, com.identy.a> hashMap, HashMap<Pair<Hand, Finger>, com.identy.a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
+    public void PngjException(HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
         boolean z3;
         com.identy.Action action;
         int i;

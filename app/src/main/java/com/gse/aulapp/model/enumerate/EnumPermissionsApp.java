@@ -117,7 +117,7 @@ public abstract class EnumPermissionsApp {
         this(str, i);
     }
 
-    public static EnumPermissionsApp valueOf(String str) {
+    public static EnumPermissionsApp valueOfString(String str) {
         return (EnumPermissionsApp) Enum.valueOf(EnumPermissionsApp.class, str);
     }
 

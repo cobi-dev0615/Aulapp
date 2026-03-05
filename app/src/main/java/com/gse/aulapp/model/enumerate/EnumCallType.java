@@ -36,7 +36,7 @@ public final class EnumCallType {
     private EnumCallType(String str, int i) {
     }
 
-    public static EnumCallType valueOf(String str) {
+    public static EnumCallType valueOfString(String str) {
         return (EnumCallType) Enum.valueOf(EnumCallType.class, str);
     }
 

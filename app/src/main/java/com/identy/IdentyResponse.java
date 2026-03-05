@@ -544,9 +544,9 @@ public class IdentyResponse {
                     int i17 = ((i16 | 1) << 1) - (i16 ^ 1);
                     int i18 = (i14 & i17) + (i17 | i14);
                     int i19 = i14 >> 25;
-                    int i20 = (-(b.a(i19 ^ (-255), (i19 & (-255)) << 1, 128, -1) ^ i18)) + 7;
+                    int i20 = (-(IdentyB.a(i19 ^ (-255), (i19 & (-255)) << 1, 128, -1) ^ i18)) + 7;
                     int i21 = i20 >> 19;
-                    int a = b.a(i21 & (-16383), i21 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
+                    int a = IdentyB.a(i21 & (-16383), i21 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
                     this.PngjBadSignature = (595 / ((i20 & (-((a & 1) + (a | 1)))) * 85)) + i9;
                     valuesVar5.values();
                 }
@@ -585,9 +585,9 @@ public class IdentyResponse {
             int i172 = ((i162 | 1) << 1) - (i162 ^ 1);
             int i182 = (i142 & i172) + (i172 | i142);
             int i192 = i142 >> 25;
-            int i202 = (-(b.a(i192 ^ (-255), (i192 & (-255)) << 1, 128, -1) ^ i182)) + 7;
+            int i202 = (-(IdentyB.a(i192 ^ (-255), (i192 & (-255)) << 1, 128, -1) ^ i182)) + 7;
             int i212 = i202 >> 19;
-            int a2 = b.a(i212 & (-16383), i212 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
+            int a2 = IdentyB.a(i212 & (-16383), i212 | (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1);
             this.PngjBadSignature = (595 / ((i202 & (-((a2 & 1) + (a2 | 1)))) * 85)) + i92;
             valuesVar52.values();
         } catch (Throwable th) {

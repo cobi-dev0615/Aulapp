@@ -356,11 +356,11 @@ public final class UserDao_Impl implements UserDao {
                         int i7 = -(i3 * 1077787252);
                         int i8 = ((i6 & i7) + (i7 | i6)) - 458997504;
                         int i9 = i8 >> 22;
-                        int i10 = (i8 - (~com.identy.b.a(i9 ^ (-2047), (i9 & (-2047)) << 1, 1024, -1))) - 1;
+                        int i10 = (i8 - (~com.identy.IdentyB.a(i9 ^ (-2047), (i9 & (-2047)) << 1, 1024, -1))) - 1;
                         int i11 = i8 >> 15;
                         int i12 = (((i11 | (-262143)) << 1) - (i11 ^ (-262143))) / 131072;
                         int i13 = (-(i10 ^ ((i12 ^ 1) + ((i12 & 1) << 1)))) + 6;
-                        int e = com.identy.b.e(i13 >> 21, 4095, 2048, -1);
+                        int e = com.identy.IdentyB.e(i13 >> 21, 4095, 2048, -1);
                         int i14 = 1356 / ((i13 & (-((e & 1) + (1 | e)))) * 226);
                         if (str != null) {
                             acquire.bindNull(i14);
@@ -412,11 +412,11 @@ public final class UserDao_Impl implements UserDao {
             int i72 = -(i32 * 1077787252);
             int i82 = ((i62 & i72) + (i72 | i62)) - 458997504;
             int i92 = i82 >> 22;
-            int i102 = (i82 - (~com.identy.b.a(i92 ^ (-2047), (i92 & (-2047)) << 1, 1024, -1))) - 1;
+            int i102 = (i82 - (~com.identy.IdentyB.a(i92 ^ (-2047), (i92 & (-2047)) << 1, 1024, -1))) - 1;
             int i112 = i82 >> 15;
             int i122 = (((i112 | (-262143)) << 1) - (i112 ^ (-262143))) / 131072;
             int i132 = (-(i102 ^ ((i122 ^ 1) + ((i122 & 1) << 1)))) + 6;
-            int e2 = com.identy.b.e(i132 >> 21, 4095, 2048, -1);
+            int e2 = com.identy.IdentyB.e(i132 >> 21, 4095, 2048, -1);
             int i142 = 1356 / ((i132 & (-((e2 & 1) + (1 | e2)))) * 226);
             if (str != null) {
             }
@@ -461,7 +461,7 @@ public final class UserDao_Impl implements UserDao {
                         int i6 = ((i4 | i5) << 1) - (i4 ^ i5);
                         int i7 = -(i3 * (-2055086465));
                         int i8 = (((i6 | i7) << 1) - (i7 ^ i6)) - (-477307456);
-                        int e = com.identy.b.e(i8 >> 21, 4095, 2048, -1);
+                        int e = com.identy.IdentyB.e(i8 >> 21, 4095, 2048, -1);
                         int i9 = (i8 ^ e) + ((e & i8) << 1);
                         int i10 = i8 >> 23;
                         int i11 = ((i10 & (-1023)) + (i10 | (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE;
@@ -516,7 +516,7 @@ public final class UserDao_Impl implements UserDao {
             int i62 = ((i42 | i52) << 1) - (i42 ^ i52);
             int i72 = -(i32 * (-2055086465));
             int i82 = (((i62 | i72) << 1) - (i72 ^ i62)) - (-477307456);
-            int e2 = com.identy.b.e(i82 >> 21, 4095, 2048, -1);
+            int e2 = com.identy.IdentyB.e(i82 >> 21, 4095, 2048, -1);
             int i92 = (i82 ^ e2) + ((e2 & i82) << 1);
             int i102 = i82 >> 23;
             int i112 = ((i102 & (-1023)) + (i102 | (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE;

@@ -2,7 +2,7 @@ package com.identy.exceptions;
 
 import com.d.e.a.values;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import defpackage.a;
 import java.lang.reflect.Method;
 
@@ -16,7 +16,7 @@ public class AttemptsExceededLimitException extends Exception {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public AttemptsExceededLimitException() {
-        super(b.c((-((((r2 | 1) << 1) - (r2 ^ 1)) - (-1))) & r1, 1637, 104768, "22;10;7;Select attempts between 1 to 6"));
+        super(IdentyB.c((-((((r2 | 1) << 1) - (r2 ^ 1)) - (-1))) & r1, 1637, 104768, "22;10;7;Select attempts between 1 to 6"));
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
@@ -41,7 +41,7 @@ public class AttemptsExceededLimitException extends Exception {
                     int i9 = (i7 ^ i8) + ((i8 & i7) << 1);
                     int i10 = ((i9 | (-695088503)) << 1) - ((-695088503) ^ i9);
                     int i11 = i10 >> 24;
-                    int a = b.a(i11 ^ (-511), (i11 & (-511)) << 1, 256, -1);
+                    int a = IdentyB.a(i11 ^ (-511), (i11 & (-511)) << 1, 256, -1);
                     int i12 = (i10 ^ a) + ((a & i10) << 1);
                     int i13 = ((i10 >> 22) - 2047) / 1024;
                     int i14 = -(i12 ^ (((i13 | 1) << 1) - (i13 ^ 1)));
@@ -71,7 +71,7 @@ public class AttemptsExceededLimitException extends Exception {
             int i92 = (i72 ^ i82) + ((i82 & i72) << 1);
             int i102 = ((i92 | (-695088503)) << 1) - ((-695088503) ^ i92);
             int i112 = i102 >> 24;
-            int a2 = b.a(i112 ^ (-511), (i112 & (-511)) << 1, 256, -1);
+            int a2 = IdentyB.a(i112 ^ (-511), (i112 & (-511)) << 1, 256, -1);
             int i122 = (i102 ^ a2) + ((a2 & i102) << 1);
             int i132 = ((i102 >> 22) - 2047) / 1024;
             int i142 = -(i122 ^ (((i132 | 1) << 1) - (i132 ^ 1)));

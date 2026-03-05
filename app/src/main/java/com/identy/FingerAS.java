@@ -85,7 +85,7 @@ public enum FingerAS {
         $$b = 17;
     }
 
-    public static FingerAS valueOf(String str) {
+    public static FingerAS valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

@@ -80,7 +80,7 @@ public final class EnumBiometrixStatus {
         return $ENTRIES;
     }
 
-    public static EnumBiometrixStatus valueOf(String str) {
+    public static EnumBiometrixStatus valueOfString(String str) {
         return (EnumBiometrixStatus) Enum.valueOf(EnumBiometrixStatus.class, str);
     }
 

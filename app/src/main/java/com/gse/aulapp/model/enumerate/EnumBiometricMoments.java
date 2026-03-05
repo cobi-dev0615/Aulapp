@@ -67,7 +67,7 @@ public abstract class EnumBiometricMoments {
         this(str, i);
     }
 
-    public static EnumBiometricMoments valueOf(String str) {
+    public static EnumBiometricMoments valueOfString(String str) {
         return (EnumBiometricMoments) Enum.valueOf(EnumBiometricMoments.class, str);
     }
 

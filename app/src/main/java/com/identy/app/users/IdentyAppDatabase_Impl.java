@@ -11,7 +11,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
 import com.d.e.a.values;
 import com.identy.Fpnative;
-import com.identy.b;
+import com.identy.IdentyB;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -447,12 +447,12 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                         int i6 = -(983855667 * i4);
                         int i7 = (((i5 ^ i6) + ((i5 & i6) << 1)) - (~(-(i4 * (-1748399385))))) - (-177740200);
                         int i8 = i7 >> 24;
-                        int e = b.e((i8 | (-511)) << 1, i8 ^ (-511), 256, -1);
+                        int e = IdentyB.e((i8 | (-511)) << 1, i8 ^ (-511), 256, -1);
                         int i9 = ((i7 | e) << 1) - (e ^ i7);
                         int i10 = ((i7 >> 23) - 1023) / ConstantsKt.MINIMUM_BLOCK_SIZE;
                         int i11 = (-(i9 ^ ((i10 & 1) + (i10 | 1)))) + 3;
                         int i12 = i11 >> 28;
-                        int a2 = b.a(i12 ^ (-31), (i12 & (-31)) << 1, 16, -1);
+                        int a2 = IdentyB.a(i12 ^ (-31), (i12 & (-31)) << 1, 16, -1);
                         writableDatabase.query("2|22|13|PRAGMA wal_checkpoint(FULL)".substring(38664 / ((i11 & (-(((a2 | 1) << 1) - (a2 ^ 1)))) * 1611))).close();
                         if (writableDatabase.inTransaction()) {
                             writableDatabase.execSQL("VACUUM");
@@ -470,12 +470,12 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                 int i62 = -(983855667 * i42);
                 int i72 = (((i52 ^ i62) + ((i52 & i62) << 1)) - (~(-(i42 * (-1748399385))))) - (-177740200);
                 int i82 = i72 >> 24;
-                int e2 = b.e((i82 | (-511)) << 1, i82 ^ (-511), 256, -1);
+                int e2 = IdentyB.e((i82 | (-511)) << 1, i82 ^ (-511), 256, -1);
                 int i92 = ((i72 | e2) << 1) - (e2 ^ i72);
                 int i102 = ((i72 >> 23) - 1023) / ConstantsKt.MINIMUM_BLOCK_SIZE;
                 int i112 = (-(i92 ^ ((i102 & 1) + (i102 | 1)))) + 3;
                 int i122 = i112 >> 28;
-                int a22 = b.a(i122 ^ (-31), (i122 & (-31)) << 1, 16, -1);
+                int a22 = IdentyB.a(i122 ^ (-31), (i122 & (-31)) << 1, 16, -1);
                 writableDatabase.query("2|22|13|PRAGMA wal_checkpoint(FULL)".substring(38664 / ((i112 & (-(((a22 | 1) << 1) - (a22 ^ 1)))) * 1611))).close();
                 if (writableDatabase.inTransaction()) {
                 }
@@ -539,7 +539,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                     int i11 = ((i10 & (-255)) + (i10 | (-255))) / 128;
                     int i12 = (-(((i11 & 1) + (i11 | 1)) ^ i9)) + 7;
                     int i13 = i12 >> 24;
-                    String[] strArr = new String[12922 / ((i12 & (-b.a(i13 ^ (-511), (i13 & (-511)) << 1, 256, -2))) * 1846)];
+                    String[] strArr = new String[12922 / ((i12 & (-IdentyB.a(i13 ^ (-511), (i13 & (-511)) << 1, 256, -2))) * 1846)];
                     strArr[0] = "IdentyUser";
                     return new InvalidationTracker(this, strArr);
                 }
@@ -564,7 +564,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
             int i112 = ((i102 & (-255)) + (i102 | (-255))) / 128;
             int i122 = (-(((i112 & 1) + (i112 | 1)) ^ i92)) + 7;
             int i132 = i122 >> 24;
-            String[] strArr2 = new String[12922 / ((i122 & (-b.a(i132 ^ (-511), (i132 & (-511)) << 1, 256, -2))) * 1846)];
+            String[] strArr2 = new String[12922 / ((i122 & (-IdentyB.a(i132 ^ (-511), (i132 & (-511)) << 1, 256, -2))) * 1846)];
             strArr2[0] = "IdentyUser";
             return new InvalidationTracker(this, strArr2);
         } catch (Throwable th) {
@@ -602,15 +602,15 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                     int i8 = -(i4 * (-547641104));
                     int i9 = ((i7 & i8) + (i8 | i7)) - (-1974798628);
                     int i10 = i9 >> 22;
-                    int a2 = b.a(i10 ^ (-2047), (i10 & (-2047)) << 1, 1024, -1);
+                    int a2 = IdentyB.a(i10 ^ (-2047), (i10 & (-2047)) << 1, 1024, -1);
                     int i11 = ((i9 | a2) << 1) - (a2 ^ i9);
                     int i12 = i9 >> 16;
-                    int i13 = -(b.a(i12 & (-131071), i12 | (-131071), 65536, -1) ^ i11);
+                    int i13 = -(IdentyB.a(i12 & (-131071), i12 | (-131071), 65536, -1) ^ i11);
                     int i14 = ((i13 | 9) << 1) - (i13 ^ 9);
                     int i15 = i14 >> 27;
                     int i16 = (((i15 | (-63)) << 1) - (i15 ^ (-63))) / 32;
                     int i17 = (i16 & 1) + (i16 | 1);
-                    return databaseConfiguration.sqliteOpenHelperFactory.create(SupportSQLiteOpenHelper.Configuration.builder(databaseConfiguration.context).name(databaseConfiguration.name).callback(new RoomOpenHelper(databaseConfiguration, aVar, b.c((-((i17 ^ 1) + ((i17 & 1) << 1))) & i14, 391, 42228, "17\\19\\13\\11\\4b2d8ee6a4fbaaf2785ce5abd971486d"), "e2b606b641a43e3109ad37a6a1230d18")).build());
+                    return databaseConfiguration.sqliteOpenHelperFactory.create(SupportSQLiteOpenHelper.Configuration.builder(databaseConfiguration.context).name(databaseConfiguration.name).callback(new RoomOpenHelper(databaseConfiguration, aVar, IdentyB.c((-((i17 ^ 1) + ((i17 & 1) << 1))) & i14, 391, 42228, "17\\19\\13\\11\\4b2d8ee6a4fbaaf2785ce5abd971486d"), "e2b606b641a43e3109ad37a6a1230d18")).build());
                 }
             }
             byte[] bArr = $$a;
@@ -631,15 +631,15 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
             int i82 = -(i42 * (-547641104));
             int i92 = ((i72 & i82) + (i82 | i72)) - (-1974798628);
             int i102 = i92 >> 22;
-            int a22 = b.a(i102 ^ (-2047), (i102 & (-2047)) << 1, 1024, -1);
+            int a22 = IdentyB.a(i102 ^ (-2047), (i102 & (-2047)) << 1, 1024, -1);
             int i112 = ((i92 | a22) << 1) - (a22 ^ i92);
             int i122 = i92 >> 16;
-            int i132 = -(b.a(i122 & (-131071), i122 | (-131071), 65536, -1) ^ i112);
+            int i132 = -(IdentyB.a(i122 & (-131071), i122 | (-131071), 65536, -1) ^ i112);
             int i142 = ((i132 | 9) << 1) - (i132 ^ 9);
             int i152 = i142 >> 27;
             int i162 = (((i152 | (-63)) << 1) - (i152 ^ (-63))) / 32;
             int i172 = (i162 & 1) + (i162 | 1);
-            return databaseConfiguration.sqliteOpenHelperFactory.create(SupportSQLiteOpenHelper.Configuration.builder(databaseConfiguration.context).name(databaseConfiguration.name).callback(new RoomOpenHelper(databaseConfiguration, aVar2, b.c((-((i172 ^ 1) + ((i172 & 1) << 1))) & i142, 391, 42228, "17\\19\\13\\11\\4b2d8ee6a4fbaaf2785ce5abd971486d"), "e2b606b641a43e3109ad37a6a1230d18")).build());
+            return databaseConfiguration.sqliteOpenHelperFactory.create(SupportSQLiteOpenHelper.Configuration.builder(databaseConfiguration.context).name(databaseConfiguration.name).callback(new RoomOpenHelper(databaseConfiguration, aVar2, IdentyB.c((-((i172 ^ 1) + ((i172 & 1) << 1))) & i142, 391, 42228, "17\\19\\13\\11\\4b2d8ee6a4fbaaf2785ce5abd971486d"), "e2b606b641a43e3109ad37a6a1230d18")).build());
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

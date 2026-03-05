@@ -103,7 +103,7 @@ public abstract class EnumHandsAulapp {
         this(str, i);
     }
 
-    public static EnumHandsAulapp valueOf(String str) {
+    public static EnumHandsAulapp valueOfString(String str) {
         return (EnumHandsAulapp) Enum.valueOf(EnumHandsAulapp.class, str);
     }
 

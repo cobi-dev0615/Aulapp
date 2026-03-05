@@ -4,11 +4,11 @@ import android.widget.ImageView;
 import com.identy.getL2Score;
 
 /* loaded from: classes2.dex */
-public final /* synthetic */ class c implements Runnable {
+public final /* synthetic */ class IdentyC implements Runnable {
     public final /* synthetic */ int a;
     public final /* synthetic */ Object b;
 
-    public /* synthetic */ c(Object obj, int i) {
+    public /* synthetic */ IdentyC(Object obj, int i) {
         this.a = i;
         this.b = obj;
     }

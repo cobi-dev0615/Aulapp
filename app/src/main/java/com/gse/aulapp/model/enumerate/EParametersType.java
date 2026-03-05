@@ -62,7 +62,7 @@ public final class EParametersType {
     private EParametersType(String str, int i) {
     }
 
-    public static EParametersType valueOf(String str) {
+    public static EParametersType valueOfString(String str) {
         return (EParametersType) Enum.valueOf(EParametersType.class, str);
     }
 

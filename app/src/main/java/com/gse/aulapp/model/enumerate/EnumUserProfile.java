@@ -128,7 +128,7 @@ public abstract class EnumUserProfile {
         this(str, i);
     }
 
-    public static EnumUserProfile valueOf(String str) {
+    public static EnumUserProfile valueOfString(String str) {
         return (EnumUserProfile) Enum.valueOf(EnumUserProfile.class, str);
     }
 

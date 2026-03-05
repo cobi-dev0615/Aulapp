@@ -388,7 +388,7 @@ public enum IdentyEncrytion {
         $$b = 162;
     }
 
-    public static IdentyEncrytion valueOf(String str) {
+    public static IdentyEncrytion valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

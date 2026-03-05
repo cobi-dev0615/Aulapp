@@ -7,7 +7,7 @@ import com.identy.R;
 
 /* loaded from: classes2.dex */
 public final class onErrorResponse extends getPadSub3 {
-    public onErrorResponse(Activity activity, com.identy.a aVar, com.identy.d.PngjException pngjException) {
+    public onErrorResponse(Activity activity, com.identy.IdentyA aVar, com.identy.d.PngjException pngjException) {
         super(activity, false, aVar, pngjException);
     }
 

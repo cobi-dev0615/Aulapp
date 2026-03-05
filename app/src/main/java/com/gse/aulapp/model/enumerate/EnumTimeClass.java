@@ -28,7 +28,7 @@ public final class EnumTimeClass {
     private EnumTimeClass(String str, int i) {
     }
 
-    public static EnumTimeClass valueOf(String str) {
+    public static EnumTimeClass valueOfString(String str) {
         return (EnumTimeClass) Enum.valueOf(EnumTimeClass.class, str);
     }
 

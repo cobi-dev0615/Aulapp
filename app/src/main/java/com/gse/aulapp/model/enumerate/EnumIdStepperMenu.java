@@ -74,7 +74,7 @@ public abstract class EnumIdStepperMenu {
         return enumIdStepperMenu.name(context);
     }
 
-    public static EnumIdStepperMenu valueOf(String str) {
+    public static EnumIdStepperMenu valueOfString(String str) {
         return (EnumIdStepperMenu) Enum.valueOf(EnumIdStepperMenu.class, str);
     }
 

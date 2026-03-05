@@ -28,7 +28,7 @@ public final class EnumMethodBiometrix {
     private EnumMethodBiometrix(String str, int i) {
     }
 
-    public static EnumMethodBiometrix valueOf(String str) {
+    public static EnumMethodBiometrix valueOfString(String str) {
         return (EnumMethodBiometrix) Enum.valueOf(EnumMethodBiometrix.class, str);
     }
 

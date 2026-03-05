@@ -94,7 +94,7 @@ public abstract class EnumDeviceSecurity {
         return enumDeviceSecurity.name(context);
     }
 
-    public static EnumDeviceSecurity valueOf(String str) {
+    public static EnumDeviceSecurity valueOfString(String str) {
         return (EnumDeviceSecurity) Enum.valueOf(EnumDeviceSecurity.class, str);
     }
 

@@ -28,7 +28,6 @@ import java.util.Locale;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.comparisons.ComparisonsKt;
 import kotlin.enums.EnumEntries;
 import kotlin.enums.EnumEntriesKt;
@@ -67,7 +66,7 @@ public final class ClassUtil {
         private FilterType(String str, int i) {
         }
 
-        public static FilterType valueOf(String str) {
+        public static FilterType valueOfString(String str) {
             return (FilterType) Enum.valueOf(FilterType.class, str);
         }
 
@@ -271,7 +270,7 @@ public final class ClassUtil {
             return CollectionsKt.listOf(new ClassDate());
         }
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
-        sortedWith = CollectionsKt___CollectionsKt.sortedWith(classDetailList, ComparisonsKt.compareBy(new o1(simpleDateFormat, this, i2), new c0(new SimpleDateFormat("HH:mm", Locale.getDefault()), 4)));
+        sortedWith = CollectionsKt.sortedWith(classDetailList, ComparisonsKt.compareBy(new o1(simpleDateFormat, this, i2), new c0(new SimpleDateFormat("HH:mm", Locale.getDefault()), 4)));
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         for (Object obj : sortedWith) {
             String date = ((SessionDto) obj).getDate();
@@ -286,8 +285,8 @@ public final class ClassUtil {
             }
             ((List) obj2).add(obj);
         }
-        minOrNull = CollectionsKt___CollectionsKt.minOrNull((Iterable<? extends Comparable>) ((Iterable) linkedHashMap.keySet()));
-        maxOrNull = CollectionsKt___CollectionsKt.maxOrNull((Iterable<? extends Comparable>) ((Iterable) linkedHashMap.keySet()));
+        minOrNull = CollectionsKt.minOrNull((Iterable<? extends Comparable>) ((Iterable) linkedHashMap.keySet()));
+        maxOrNull = CollectionsKt.maxOrNull((Iterable<? extends Comparable>) ((Iterable) linkedHashMap.keySet()));
         Calendar calendar = Calendar.getInstance();
         ArrayList arrayList = new ArrayList();
         DateUtil.Companion companion = DateUtil.INSTANCE;

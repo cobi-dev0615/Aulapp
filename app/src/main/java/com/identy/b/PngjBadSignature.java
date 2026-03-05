@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.AsyncTask;
 import com.identy.PngjExceptionInternal;
 import com.identy.VerifyResult;
-import com.identy.a;
+import com.identy.IdentyA;
 import com.identy.getPadSub2;
 import java.io.File;
 import java.lang.ref.WeakReference;
@@ -14,14 +14,14 @@ import java.util.Calendar;
 public final class PngjBadSignature {
 
     /* renamed from: com.identy.b.PngjBadSignature$PngjBadSignature, reason: collision with other inner class name */
-    public static class AsyncTaskC0018PngjBadSignature extends AsyncTask<a, Integer, VerifyResult> {
+    public static class AsyncTaskC0018PngjBadSignature extends AsyncTask<IdentyA, Integer, VerifyResult> {
         private values PngjBadCrcException;
-        private a PngjBadSignature;
+        private IdentyA PngjBadSignature;
         private long PngjException;
         private WeakReference valueOf;
         private PngjExceptionInternal values;
 
-        public AsyncTaskC0018PngjBadSignature(values valuesVar, Activity activity, PngjExceptionInternal pngjExceptionInternal, a aVar, long j) {
+        public AsyncTaskC0018PngjBadSignature(values valuesVar, Activity activity, PngjExceptionInternal pngjExceptionInternal, IdentyA aVar, long j) {
             this.values = null;
             this.PngjBadSignature = null;
             this.valueOf = null;
@@ -57,7 +57,7 @@ public final class PngjBadSignature {
         }
 
         @Override // android.os.AsyncTask
-        public final /* synthetic */ VerifyResult doInBackground(a[] aVarArr) {
+        public final /* synthetic */ VerifyResult doInBackground(IdentyA[] aVarArr) {
             return PngjBadSignature();
         }
 

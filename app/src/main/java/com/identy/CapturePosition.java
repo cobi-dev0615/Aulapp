@@ -63,7 +63,7 @@ public enum CapturePosition {
         $$b = 123;
     }
 
-    public static CapturePosition valueOf(String str) {
+    public static CapturePosition valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

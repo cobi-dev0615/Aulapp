@@ -61,7 +61,7 @@ public enum Slap {
         $$b = 171;
     }
 
-    public static Slap valueOf(String str) {
+    public static Slap valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

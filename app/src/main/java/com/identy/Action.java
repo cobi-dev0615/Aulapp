@@ -68,7 +68,7 @@ public enum Action {
         $$b = 71;
     }
 
-    public static Action valueOf(String str) {
+    public static Action valueOfString(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

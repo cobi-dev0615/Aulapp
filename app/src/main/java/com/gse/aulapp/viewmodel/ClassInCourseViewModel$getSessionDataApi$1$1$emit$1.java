@@ -13,7 +13,7 @@ import kotlin.jvm.internal.IntCompanionObject;
 @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
 @DebugMetadata(c = "com.gse.aulapp.viewmodel.ClassInCourseViewModel$getSessionDataApi$1$1", f = "ClassInCourseViewModel.kt", i = {0, 0, 0, 1, 1}, l = {154, 156, 161}, m = "emit", n = {"this", "testResponse", "questionsResponses", "this", "testResponse"}, s = {"L$0", "L$1", "L$2", "L$0", "L$1"})
 /* loaded from: classes2.dex */
-public final class ClassInCourseViewModel$getSessionDataApi$1$1$emit$1 extends ContinuationImpl {
+public final class ClassInCourseViewModel$getSessionDataApi$1$1$emit$1<T> extends ContinuationImpl {
     Object L$0;
     Object L$1;
     Object L$2;

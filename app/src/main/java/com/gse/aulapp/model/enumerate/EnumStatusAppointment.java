@@ -147,7 +147,7 @@ public abstract class EnumStatusAppointment {
         return enumStatusAppointment.name(context);
     }
 
-    public static EnumStatusAppointment valueOf(String str) {
+    public static EnumStatusAppointment valueOfString(String str) {
         return (EnumStatusAppointment) Enum.valueOf(EnumStatusAppointment.class, str);
     }
 

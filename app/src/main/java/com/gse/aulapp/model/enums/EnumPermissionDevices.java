@@ -29,7 +29,7 @@ public final class EnumPermissionDevices {
     private EnumPermissionDevices(String str, int i) {
     }
 
-    public static EnumPermissionDevices valueOf(String str) {
+    public static EnumPermissionDevices valueOfString(String str) {
         return (EnumPermissionDevices) Enum.valueOf(EnumPermissionDevices.class, str);
     }
 
