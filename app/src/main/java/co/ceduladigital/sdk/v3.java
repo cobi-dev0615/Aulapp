@@ -1,8 +1,5 @@
 package co.ceduladigital.sdk;
 
-import androidx.profileinstaller.DeviceProfileWriter;
-import androidx.profileinstaller.ProfileInstaller;
-
 /* loaded from: classes.dex */
 public final /* synthetic */ class v3 implements Runnable {
     public final /* synthetic */ int a;
@@ -19,13 +16,7 @@ public final /* synthetic */ class v3 implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        switch (this.a) {
-            case 0:
-                ((DeviceProfileWriter) this.d).lambda$result$0(this.b, this.c);
-                break;
-            default:
-                ((ProfileInstaller.DiagnosticsCallback) this.d).onResultReceived(this.b, this.c);
-                break;
-        }
+        // Stubbed: DeviceProfileWriter and ProfileInstaller references
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 }

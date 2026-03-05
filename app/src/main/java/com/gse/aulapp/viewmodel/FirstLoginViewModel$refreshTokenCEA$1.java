@@ -36,7 +36,7 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.SourceDebugExtension;
-import kotlin.text.StringsKt__StringsJVMKt;
+import kotlin.text.StringsKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
@@ -178,7 +178,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
             Iterator<T> it = list.iterator();
             while (it.hasNext()) {
                 CenterDto r4 = (CenterDto) it.next();
-                equals$default = StringsKt__StringsJVMKt.equals$default(r4.getName(), str2, false, 2, null);
+                equals$default = StringsKt.equals$default(r4.getName(), str2, false, 2, null);
                 if (equals$default) {
                     objectRef.element = r4;
                 }

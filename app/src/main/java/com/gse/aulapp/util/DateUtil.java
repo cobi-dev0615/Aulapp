@@ -14,8 +14,6 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.Regex;
 import kotlin.text.StringsKt;
-import kotlin.text.StringsKt__StringsJVMKt;
-import kotlin.text.StringsKt;
 import kotlin.text.StringsKt___StringsKt;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u0000 \u00022\u00020\u0001:\u0001\u0002¨\u0006\u0003"}, d2 = {"Lcom/gse/aulapp/util/DateUtil;", BuildConfig.FLAVOR, "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -203,7 +201,7 @@ public abstract class DateUtil {
             String replaceFirst$default;
             String str = new DateFormatSymbols(Locale.getDefault()).getMonths()[currentMonth];
             Intrinsics.checkNotNull(str);
-            replaceFirst$default = StringsKt__StringsJVMKt.replaceFirst$default(str, str.charAt(0), Character.toUpperCase(str.charAt(0)), false, 4, (Object) null);
+            replaceFirst$default = StringsKt.replaceFirst$default(str, str.charAt(0), Character.toUpperCase(str.charAt(0)), false, 4, (Object) null);
             return replaceFirst$default;
         }
 
@@ -212,7 +210,7 @@ public abstract class DateUtil {
             Intrinsics.checkNotNullParameter(selection, "selection");
             String format = new SimpleDateFormat("MMMM", Locale.getDefault()).format(selection);
             Intrinsics.checkNotNull(format);
-            replaceFirst$default = StringsKt__StringsJVMKt.replaceFirst$default(format, format.charAt(0), Character.toUpperCase(format.charAt(0)), false, 4, (Object) null);
+            replaceFirst$default = StringsKt.replaceFirst$default(format, format.charAt(0), Character.toUpperCase(format.charAt(0)), false, 4, (Object) null);
             return replaceFirst$default;
         }
 
@@ -283,7 +281,7 @@ public abstract class DateUtil {
             } else {
                 str = null;
             }
-            equals = StringsKt__StringsJVMKt.equals(str, "AM", true);
+            equals = StringsKt.equals(str, "AM", true);
             String str2 = equals ? "AM" : "PM";
             if (str != null) {
                 String t = format != null ? StringsKt.t(format, str, str2) : null;

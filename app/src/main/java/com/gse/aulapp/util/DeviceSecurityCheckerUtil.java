@@ -15,7 +15,6 @@ import kotlin.TuplesKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import kotlin.text.StringsKt__StringsJVMKt;
 import kotlin.text.StringsKt;
 
 @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010%\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0006\u0010\b\u001a\u00020\tJ\u0006\u0010\n\u001a\u00020\tJ\u0006\u0010\u000b\u001a\u00020\tJ\u0006\u0010\f\u001a\u00020\tJ\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\t0\u000eJ\u0006\u0010\u000f\u001a\u00020\tR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082D¢\u0006\u0002\n\u0000¨\u0006\u0010"}, d2 = {"Lcom/gse/aulapp/util/DeviceSecurityCheckerUtil;", BuildConfig.FLAVOR, "context", "Landroid/content/Context;", "<init>", "(Landroid/content/Context;)V", "TAG", BuildConfig.FLAVOR, "isEmulator", BuildConfig.FLAVOR, "isRooted", "isDeveloperModeEnabled", "isDebuggingEnabled", "validateDeviceSecurityChecker", BuildConfig.FLAVOR, "validateMapDeviceSecurity", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -50,12 +49,12 @@ public final class DeviceSecurityCheckerUtil {
         boolean startsWith$default4;
         String FINGERPRINT = Build.FINGERPRINT;
         Intrinsics.checkNotNullExpressionValue(FINGERPRINT, "FINGERPRINT");
-        startsWith$default = StringsKt__StringsJVMKt.startsWith$default(FINGERPRINT, "generic", false, 2, null);
+        startsWith$default = StringsKt.startsWith$default(FINGERPRINT, "generic", false, 2, null);
         if (startsWith$default) {
             return true;
         }
         Intrinsics.checkNotNullExpressionValue(FINGERPRINT, "FINGERPRINT");
-        startsWith$default2 = StringsKt__StringsJVMKt.startsWith$default(FINGERPRINT, "unknown", false, 2, null);
+        startsWith$default2 = StringsKt.startsWith$default(FINGERPRINT, "unknown", false, 2, null);
         if (startsWith$default2) {
             return true;
         }
@@ -83,11 +82,11 @@ public final class DeviceSecurityCheckerUtil {
         }
         String BRAND = Build.BRAND;
         Intrinsics.checkNotNullExpressionValue(BRAND, "BRAND");
-        startsWith$default3 = StringsKt__StringsJVMKt.startsWith$default(BRAND, "generic", false, 2, null);
+        startsWith$default3 = StringsKt.startsWith$default(BRAND, "generic", false, 2, null);
         if (startsWith$default3) {
             String DEVICE = Build.DEVICE;
             Intrinsics.checkNotNullExpressionValue(DEVICE, "DEVICE");
-            startsWith$default4 = StringsKt__StringsJVMKt.startsWith$default(DEVICE, "generic", false, 2, null);
+            startsWith$default4 = StringsKt.startsWith$default(DEVICE, "generic", false, 2, null);
             if (startsWith$default4) {
                 return true;
             }

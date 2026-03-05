@@ -40,7 +40,7 @@ import kotlin.jvm.internal.IntCompanionObject;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.SourceDebugExtension;
-import kotlin.text.StringsKt__StringsJVMKt;
+import kotlin.text.StringsKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
@@ -374,7 +374,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                                             Iterator<T> it = centerList.iterator();
                                             while (it.hasNext()) {
                                                 CenterDto r7 = (CenterDto) it.next();
-                                                equals$default = StringsKt__StringsJVMKt.equals$default(r7.getCenterID(), centerID, false, 2, null);
+                                                equals$default = StringsKt.equals$default(r7.getCenterID(), centerID, false, 2, null);
                                                 if (equals$default) {
                                                     objectRef.element = r7;
                                                 }

@@ -78,7 +78,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.text.StringsKt;
-import kotlinx.coroutines.BuildersKt__BuildersKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.StateFlow;
@@ -160,7 +160,7 @@ public final class PracticeClassViewModel extends ViewModel {
             this$0.deleteGpsTraceBySessionID(id);
         }
         this$0.stopServices(context);
-        BuildersKt__BuildersKt.runBlocking$default(null, new PracticeClassViewModel$dialogCloseBeforeTime$1$2(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null), 1, null);
+        BuildersKt.runBlocking$default(null, new PracticeClassViewModel$dialogCloseBeforeTime$1$2(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null), 1, null);
         Dialog dialog = this$0.dialog;
         if (dialog != null) {
             dialog.dismiss();

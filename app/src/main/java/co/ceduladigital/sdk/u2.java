@@ -3,8 +3,6 @@ package co.ceduladigital.sdk;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.activity.ComponentActivity;
-import com.google.firebase.sessions.ProcessDataManagerImpl;
-import com.google.firebase.sessions.UuidGenerator;
 import com.gse.aulapp.databinding.FragmentRideHistoryBinding;
 import com.gse.aulapp.view.fragment.RideHistoryFragment;
 import com.gse.aulapp.viewmodel.RideHistoryViewModel;
@@ -25,14 +23,13 @@ public final /* synthetic */ class u2 implements Function0 {
     @Override // kotlin.jvm.functions.Function0
     public final Object invoke() {
         Unit lambda$new$0;
-        String myUuid_delegate$lambda$1;
         switch (this.a) {
             case 0:
                 lambda$new$0 = ((ComponentActivity) this.b).lambda$new$0();
                 return lambda$new$0;
             case 1:
-                myUuid_delegate$lambda$1 = ProcessDataManagerImpl.myUuid_delegate$lambda$1((UuidGenerator) this.b);
-                return myUuid_delegate$lambda$1;
+                // Stubbed: ProcessDataManagerImpl.myUuid_delegate$lambda$1 (UuidGenerator)
+                throw new UnsupportedOperationException("Decompiled stub");
             default:
                 RideHistoryFragment this$0 = (RideHistoryFragment) this.b;
                 Intrinsics.checkNotNullParameter(this$0, "this$0");

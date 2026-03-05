@@ -4,7 +4,6 @@ import androidx.collection.ArrayMap;
 import androidx.fragment.app.DefaultSpecialEffectsController;
 import androidx.fragment.app.SpecialEffectsController;
 import com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator;
-import com.google.firebase.crashlytics.internal.metadata.EventMetadata;
 import com.google.firebase.crashlytics.internal.model.CrashlyticsReport;
 
 /* loaded from: classes.dex */
@@ -29,12 +28,12 @@ public final /* synthetic */ class t3 implements Runnable {
                 DefaultSpecialEffectsController.startTransitions$lambda$9((SpecialEffectsController.Operation) this.c, (SpecialEffectsController.Operation) this.d, this.b, (ArrayMap) this.e);
                 break;
             default:
-                ((SessionReportingCoordinator) this.c).lambda$persistEvent$0((CrashlyticsReport.Session.Event) this.d, (EventMetadata) this.e, this.b);
-                break;
+                // Stubbed: SessionReportingCoordinator.lambda$persistEvent$0 (EventMetadata)
+                throw new UnsupportedOperationException("Decompiled stub");
         }
     }
 
-    public /* synthetic */ t3(SessionReportingCoordinator sessionReportingCoordinator, CrashlyticsReport.Session.Event event, EventMetadata eventMetadata, boolean z) {
+    public /* synthetic */ t3(SessionReportingCoordinator sessionReportingCoordinator, CrashlyticsReport.Session.Event event, Object eventMetadata, boolean z) {
         this.c = sessionReportingCoordinator;
         this.d = event;
         this.e = eventMetadata;

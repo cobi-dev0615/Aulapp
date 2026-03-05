@@ -44,7 +44,6 @@ import com.gse.aulapp.model.dto.CenterDto;
 import com.gse.aulapp.model.dto.ConfigurationSessionDto;
 import com.gse.aulapp.model.dto.QuestionDto;
 import com.gse.aulapp.model.dto.SessionDto;
-import com.gse.aulapp.model.dto.Status;
 import com.gse.aulapp.model.dto.VehicleDto;
 import com.gse.aulapp.model.enumerate.EnumClassType;
 import com.gse.aulapp.model.enumerate.EnumDialogType;
@@ -93,7 +92,7 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt;
-import kotlinx.coroutines.BuildersKt__BuildersKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.Dispatchers;
@@ -194,7 +193,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         this$0.stopServices(context);
         this$0.prepareToExit(findNavController);
         this$0.selectTypeClassOrExam(context, sessionID, findNavController);
-        BuildersKt__BuildersKt.runBlocking$default(null, new ClassInCourseViewModel$dialogCloseBeforeTime$1$1(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null), 1, null);
+        BuildersKt.runBlocking$default(null, new ClassInCourseViewModel$dialogCloseBeforeTime$1$1(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null), 1, null);
         Dialog dialog = this$0.dialog;
         if (dialog != null) {
             dialog.dismiss();

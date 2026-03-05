@@ -1,26 +1,21 @@
 package co.ceduladigital.sdk;
 
 import android.os.Parcel;
-import com.google.crypto.tink.shaded.protobuf.CodedOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.math.BigInteger;
 import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.KeySpec;
 import java.util.Iterator;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
 
 /* loaded from: classes2.dex */
 public abstract /* synthetic */ class x5 {
-    public static void A(StringBuilder sb, String str, ConfigurableProvider configurableProvider, String str2) {
-        sb.append(str);
-        configurableProvider.addAlgorithm(str2, sb.toString());
+    public static void A(StringBuilder sb, String str, Object configurableProvider, String str2) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static void B(StringBuilder sb, String str, org.spongycastle.jcajce.provider.config.ConfigurableProvider configurableProvider, String str2) {
-        sb.append(str);
-        configurableProvider.addAlgorithm(str2, sb.toString());
+    public static void B(StringBuilder sb, String str, Object configurableProvider, String str2) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static int C(int i, int i2, int i3, int i4) {
@@ -36,7 +31,8 @@ public abstract /* synthetic */ class x5 {
     }
 
     public static int b(int i, int i2, int i3, int i4) {
-        return CodedOutputStream.computeUInt32SizeNoTag(i) + i2 + i3 + i4;
+        // Stubbed: CodedOutputStream.computeUInt32SizeNoTag (com.google.crypto.tink)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static int c(long j, BigInteger bigInteger) {
@@ -74,7 +70,7 @@ public abstract /* synthetic */ class x5 {
         return str.substring(str.indexOf(i) + i2);
     }
 
-    public static String k(String str, ASN1ObjectIdentifier aSN1ObjectIdentifier, String str2) {
+    public static String k(String str, Object aSN1ObjectIdentifier, String str2) {
         return str + aSN1ObjectIdentifier + str2;
     }
 
@@ -130,12 +126,14 @@ public abstract /* synthetic */ class x5 {
         return bigInteger2.multiply(bigInteger.add(BigInteger.valueOf(j)));
     }
 
-    public static ASN1ObjectIdentifier t(String str) {
-        return new ASN1ObjectIdentifier(str).intern();
+    public static Object t(String str) {
+        // Stubbed: new ASN1ObjectIdentifier(str).intern() (org.bouncycastle)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static org.spongycastle.asn1.ASN1ObjectIdentifier u(String str) {
-        return new org.spongycastle.asn1.ASN1ObjectIdentifier(str).intern();
+    public static Object u(String str) {
+        // Stubbed: new org.spongycastle.asn1.ASN1ObjectIdentifier(str).intern()
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static void v(Parcel parcel, int i, Boolean bool) {

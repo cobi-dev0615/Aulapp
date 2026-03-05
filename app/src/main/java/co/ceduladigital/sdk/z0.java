@@ -15,7 +15,6 @@ import com.gse.aulapp.model.data.entity.entityFull.SessionFull;
 import com.gse.aulapp.model.data.statusControl.Status;
 import com.gse.aulapp.model.dto.ConfigurationSessionDto;
 import com.gse.aulapp.model.dto.QuestionDto;
-import com.gse.aulapp.model.dto.Status;
 import com.gse.aulapp.model.enumerate.EnumDialogType;
 import com.gse.aulapp.model.enumerate.EnumStatusFingerPrintBiometric;
 import com.gse.aulapp.model.enumerate.EnumTimeClass;
@@ -119,15 +118,15 @@ public final /* synthetic */ class z0 extends FunctionReferenceImpl implements F
                 }
                 return Unit.INSTANCE;
             case 3:
-                Status p03 = (Status) obj;
+                com.gse.aulapp.model.dto.Status p03 = (com.gse.aulapp.model.dto.Status) obj;
                 Intrinsics.checkNotNullParameter(p03, "p0");
                 ClassInCourseFragment classInCourseFragment3 = (ClassInCourseFragment) this.receiver;
                 classInCourseFragment3.getClass();
-                if (p03 == Status.REJECTED) {
+                if (p03 == com.gse.aulapp.model.dto.Status.REJECTED) {
                     FragmentClassInCourseBinding fragmentClassInCourseBinding7 = classInCourseFragment3.a;
                     Intrinsics.checkNotNull(fragmentClassInCourseBinding7);
                     fragmentClassInCourseBinding7.includeQuestionCard.statusCheck.check(R.id.rejectRadioButton);
-                } else if (p03 == Status.APPROVED) {
+                } else if (p03 == com.gse.aulapp.model.dto.Status.APPROVED) {
                     FragmentClassInCourseBinding fragmentClassInCourseBinding8 = classInCourseFragment3.a;
                     Intrinsics.checkNotNull(fragmentClassInCourseBinding8);
                     fragmentClassInCourseBinding8.includeQuestionCard.statusCheck.check(R.id.approveRadioButton);

@@ -11,7 +11,6 @@ import com.google.android.gms.tasks.CancellationTokenSource;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.TaskCompletionSource;
-import com.google.firebase.crashlytics.internal.concurrency.CrashlyticsTasks;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* loaded from: classes.dex */
@@ -40,8 +39,7 @@ public final /* synthetic */ class o3 implements Continuation, SynchronizationGu
 
     @Override // com.google.android.gms.tasks.Continuation
     public Object then(Task task) {
-        Task lambda$race$0;
-        lambda$race$0 = CrashlyticsTasks.lambda$race$0((TaskCompletionSource) this.a, (AtomicBoolean) this.b, (CancellationTokenSource) this.c, task);
-        return lambda$race$0;
+        // Stubbed: CrashlyticsTasks.lambda$race$0
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 }

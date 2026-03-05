@@ -1,9 +1,5 @@
 package co.ceduladigital.sdk;
 
-import androidx.datastore.core.CorruptionException;
-import com.google.android.gms.time.TrustedTimeClient;
-import com.google.firebase.sessions.FirebaseSessionsComponent;
-import com.google.firebase.sessions.settings.SessionConfigs;
 import com.gse.aulapp.GeneralApp;
 import kotlin.Unit;
 import kotlin.coroutines.CoroutineContext;
@@ -23,8 +19,6 @@ public final /* synthetic */ class f3 implements Function1 {
     public final Object invoke(Object obj) {
         CoroutineDispatcher _init_$lambda$0;
         ExecutorCoroutineDispatcher _init_$lambda$02;
-        SessionConfigs sessionConfigsDataStore$lambda$0;
-        Unit initializeTrustedTimeClient$lambda$0;
         switch (this.a) {
             case 0:
                 _init_$lambda$0 = CoroutineDispatcher.Companion._init_$lambda$0((CoroutineContext.Element) obj);
@@ -33,11 +27,11 @@ public final /* synthetic */ class f3 implements Function1 {
                 _init_$lambda$02 = ExecutorCoroutineDispatcher.Companion._init_$lambda$0((CoroutineContext.Element) obj);
                 return _init_$lambda$02;
             case 2:
-                sessionConfigsDataStore$lambda$0 = FirebaseSessionsComponent.MainModule.Companion.sessionConfigsDataStore$lambda$0((CorruptionException) obj);
-                return sessionConfigsDataStore$lambda$0;
+                // Stubbed: FirebaseSessionsComponent.MainModule.Companion.sessionConfigsDataStore$lambda$0
+                throw new UnsupportedOperationException("Decompiled stub");
             default:
-                initializeTrustedTimeClient$lambda$0 = GeneralApp.initializeTrustedTimeClient$lambda$0((TrustedTimeClient) obj);
-                return initializeTrustedTimeClient$lambda$0;
+                // Stubbed: GeneralApp.initializeTrustedTimeClient$lambda$0 (TrustedTimeClient)
+                throw new UnsupportedOperationException("Decompiled stub");
         }
     }
 }

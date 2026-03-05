@@ -25,11 +25,8 @@ import com.google.firebase.crashlytics.internal.CrashlyticsRemoteConfigListener;
 import com.google.firebase.crashlytics.internal.RemoteConfigDeferredProxy;
 import com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator;
 import com.google.firebase.crashlytics.internal.common.Utils;
-import com.google.firebase.crashlytics.internal.concurrency.CrashlyticsWorker;
 import com.google.firebase.inject.Deferred;
 import com.google.firebase.inject.Provider;
-import com.google.firebase.sessions.EventGDTLogger;
-import com.google.firebase.sessions.SessionEvent;
 import com.gse.aulapp.GeneralApp;
 import com.gse.aulapp.feature.biometrix.presentation.ui.WebviewFragment;
 import com.gse.aulapp.util.GpsUtil;
@@ -53,9 +50,8 @@ public final /* synthetic */ class j3 implements Deferred.DeferredHandler, Conti
 
     @Override // com.google.android.datatransport.Transformer
     public Object apply(Object obj) {
-        byte[] encode;
-        encode = ((EventGDTLogger) this.b).encode((SessionEvent) obj);
-        return encode;
+        // Stubbed: EventGDTLogger.encode (FirebaseSessions)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     @Override // com.google.android.datatransport.runtime.synchronization.SynchronizationGuard.CriticalSection
@@ -129,17 +125,16 @@ public final /* synthetic */ class j3 implements Deferred.DeferredHandler, Conti
 
     @Override // com.google.android.gms.tasks.Continuation
     public Object then(Task task) {
-        Task lambda$submitTask$2;
         Task lambda$submit$1;
         boolean onReportSendComplete;
         Object lambda$awaitEvenIfOnMainThread$0;
         switch (this.a) {
             case 1:
-                lambda$submitTask$2 = CrashlyticsWorker.lambda$submitTask$2((Callable) this.b, task);
-                return lambda$submitTask$2;
+                // Stubbed: CrashlyticsWorker.lambda$submitTask$2
+                throw new UnsupportedOperationException("Decompiled stub");
             case 2:
-                lambda$submit$1 = CrashlyticsWorker.lambda$submit$1((Runnable) this.b, task);
-                return lambda$submit$1;
+                // Stubbed: CrashlyticsWorker.lambda$submit$1
+                throw new UnsupportedOperationException("Decompiled stub");
             case 13:
                 onReportSendComplete = ((SessionReportingCoordinator) this.b).onReportSendComplete(task);
                 return Boolean.valueOf(onReportSendComplete);

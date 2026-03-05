@@ -31,7 +31,7 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt__StringsJVMKt;
+import kotlin.text.StringsKt;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u0000 \u00022\u00020\u0001:\u0001\u0002¨\u0006\u0003"}, d2 = {"Lcom/gse/aulapp/util/DialogUtil;", BuildConfig.FLAVOR, "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: classes.dex */
@@ -778,8 +778,8 @@ public abstract class DialogUtil {
                     q.w(context, R.string.dialog_fullscreen_right_hand_biometric_register_title_error, textView, imageView, R.drawable.ic_biometric_record_error);
                     String string = context.getString(R.string.dialog_fullscreen_right_hand_biometric_register_content_text_error);
                     Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
-                    replaceFirst$default = StringsKt__StringsJVMKt.replaceFirst$default(string, "[mano]", "izquierda", false, 4, (Object) null);
-                    replaceFirst$default2 = StringsKt__StringsJVMKt.replaceFirst$default(replaceFirst$default, "[mano]", "derecha", false, 4, (Object) null);
+                    replaceFirst$default = StringsKt.replaceFirst$default(string, "[mano]", "izquierda", false, 4, (Object) null);
+                    replaceFirst$default2 = StringsKt.replaceFirst$default(replaceFirst$default, "[mano]", "derecha", false, 4, (Object) null);
                     textView2.setText(replaceFirst$default2);
                     materialButton.setText(context.getString(R.string.dialog_fullscreen_right_hand_biometric_register_title_button_error));
                     break;
@@ -787,8 +787,8 @@ public abstract class DialogUtil {
                     q.w(context, R.string.dialog_fullscreen_right_hand_biometric_register_title_error, textView, imageView, R.drawable.ic_biometric_record_error);
                     String string2 = context.getString(R.string.dialog_fullscreen_right_hand_biometric_register_content_text_error);
                     Intrinsics.checkNotNullExpressionValue(string2, "getString(...)");
-                    replaceFirst$default3 = StringsKt__StringsJVMKt.replaceFirst$default(string2, "[mano]", "derecha", false, 4, (Object) null);
-                    replaceFirst$default4 = StringsKt__StringsJVMKt.replaceFirst$default(replaceFirst$default3, "[mano]", "izquierda", false, 4, (Object) null);
+                    replaceFirst$default3 = StringsKt.replaceFirst$default(string2, "[mano]", "derecha", false, 4, (Object) null);
+                    replaceFirst$default4 = StringsKt.replaceFirst$default(replaceFirst$default3, "[mano]", "izquierda", false, 4, (Object) null);
                     textView2.setText(replaceFirst$default4);
                     materialButton.setText(context.getString(R.string.dialog_fullscreen_right_hand_biometric_register_title_button_error));
                     break;
@@ -832,7 +832,7 @@ public abstract class DialogUtil {
                     q.w(context, R.string.dialog_fullscreen_verify_left_hand_biometric_register_title_success, textView, imageView, R.drawable.ic_biometric_record_success);
                     String string3 = context.getString(R.string.dialog_fullscreen_message_complete_verify_left_qr);
                     Intrinsics.checkNotNullExpressionValue(string3, "getString(...)");
-                    replaceFirst$default5 = StringsKt__StringsJVMKt.replaceFirst$default(string3, "[mano]", "derecha", false, 4, (Object) null);
+                    replaceFirst$default5 = StringsKt.replaceFirst$default(string3, "[mano]", "derecha", false, 4, (Object) null);
                     textView2.setText(replaceFirst$default5);
                     materialButton.setText(context.getString(R.string.dialog_fullscreen_verify_left_hand_biometric_register_title_button_success));
                     break;

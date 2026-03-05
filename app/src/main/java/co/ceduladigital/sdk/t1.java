@@ -1,6 +1,5 @@
 package co.ceduladigital.sdk;
 
-import com.google.firebase.crashlytics.internal.concurrency.CrashlyticsWorkers;
 import com.karumi.dexter.BuildConfig;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -15,12 +14,9 @@ public final /* synthetic */ class t1 implements Function0 {
 
     @Override // kotlin.jvm.functions.Function0
     public final Object invoke() {
-        String checkBackgroundThread$lambda$2;
-        String checkNotMainThread$lambda$0;
-        String checkBlockingThread$lambda$1;
+        String str;
         Unit unit;
         Unit unit2;
-        String str;
         switch (this.a) {
             case 0:
                 return Unit.INSTANCE;
@@ -43,14 +39,14 @@ public final /* synthetic */ class t1 implements Function0 {
             case 9:
                 return Unit.INSTANCE;
             case 10:
-                checkBackgroundThread$lambda$2 = CrashlyticsWorkers.Companion.checkBackgroundThread$lambda$2();
-                return checkBackgroundThread$lambda$2;
+                // Stubbed: CrashlyticsWorkers.Companion.checkBackgroundThread$lambda$2
+                throw new UnsupportedOperationException("Decompiled stub");
             case 11:
-                checkNotMainThread$lambda$0 = CrashlyticsWorkers.Companion.checkNotMainThread$lambda$0();
-                return checkNotMainThread$lambda$0;
+                // Stubbed: CrashlyticsWorkers.Companion.checkNotMainThread$lambda$0
+                throw new UnsupportedOperationException("Decompiled stub");
             case 12:
-                checkBlockingThread$lambda$1 = CrashlyticsWorkers.Companion.checkBlockingThread$lambda$1();
-                return checkBlockingThread$lambda$1;
+                // Stubbed: CrashlyticsWorkers.Companion.checkBlockingThread$lambda$1
+                throw new UnsupportedOperationException("Decompiled stub");
             case 13:
                 return Unit.INSTANCE;
             case 14:

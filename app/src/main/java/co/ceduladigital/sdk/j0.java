@@ -16,13 +16,9 @@ import com.gse.aulapp.view.fragment.PracticeClassFragment;
 import com.gse.aulapp.viewmodel.ClassPracticeBeforeViewModel;
 import com.gse.aulapp.viewmodel.HomeViewModel;
 import com.gse.aulapp.viewmodel.PracticeClassViewModel;
-import java.util.Map;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.json.Json;
-import kotlinx.serialization.json.internal.JsonNamesMapKt;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class j0 implements Function0 {
@@ -39,7 +35,6 @@ public final /* synthetic */ class j0 implements Function0 {
     @Override // kotlin.jvm.functions.Function0
     public final Object invoke() {
         Unit showDialog$lambda$0;
-        Map buildDeserializationNamesMap;
         Unit startGpsTrace$lambda$10;
         Unit _init_$lambda$1;
         switch (this.a) {
@@ -101,8 +96,8 @@ public final /* synthetic */ class j0 implements Function0 {
                 }
                 return Unit.INSTANCE;
             case 3:
-                buildDeserializationNamesMap = JsonNamesMapKt.buildDeserializationNamesMap((SerialDescriptor) this.c, (Json) this.b);
-                return buildDeserializationNamesMap;
+                // Stubbed: JsonNamesMapKt.buildDeserializationNamesMap (kotlinx.serialization)
+                throw new UnsupportedOperationException("Decompiled stub");
             case 4:
                 PracticeClassFragment this$03 = (PracticeClassFragment) this.c;
                 Intrinsics.checkNotNullParameter(this$03, "this$0");

@@ -10,11 +10,8 @@ import androidx.fragment.app.strictmode.Violation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.MultiInstanceInvalidationClient;
-import androidx.room.MultiInstanceInvalidationClient$callback$1;
 import androidx.room.TransactionExecutor;
 import androidx.lifecycle.DispatchQueue;
-import androidx.window.layout.SidecarWindowBackend;
-import androidx.window.layout.WindowLayoutInfo;
 import com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService;
 import com.gse.aulapp.databinding.FragmentClassInCourseBinding;
 import com.gse.aulapp.view.fragment.ClassInCourseFragment;
@@ -61,14 +58,14 @@ public final /* synthetic */ class o0 implements Runnable {
                 ((JobInfoSchedulerService) this.b).lambda$onStartJob$0((JobParameters) this.c);
                 break;
             case 4:
-                MultiInstanceInvalidationClient$callback$1.onInvalidation$lambda$0((MultiInstanceInvalidationClient) this.b, (String[]) this.c);
-                break;
+                // Stubbed: MultiInstanceInvalidationClient$callback$1.onInvalidation$lambda$0
+                throw new UnsupportedOperationException("Decompiled stub");
             case 5:
                 ((ResourcesCompat.FontCallback) this.b).lambda$callbackSuccessAsync$0((Typeface) this.c);
                 break;
             case 6:
-                SidecarWindowBackend.WindowLayoutChangeCallbackWrapper.m6accept$lambda0((SidecarWindowBackend.WindowLayoutChangeCallbackWrapper) this.b, (WindowLayoutInfo) this.c);
-                break;
+                // Stubbed: SidecarWindowBackend.WindowLayoutChangeCallbackWrapper
+                throw new UnsupportedOperationException("Decompiled stub");
             case 7:
                 TransactionExecutor.execute$lambda$1$lambda$0((Runnable) this.b, (TransactionExecutor) this.c);
                 break;

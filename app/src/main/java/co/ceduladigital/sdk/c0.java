@@ -1,12 +1,8 @@
 package co.ceduladigital.sdk;
 
 import android.content.Context;
-import androidx.datastore.core.CorruptionException;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
-import com.google.firebase.sessions.FirebaseSessionsComponent;
-import com.google.firebase.sessions.SessionData;
-import com.google.firebase.sessions.SessionDataSerializer;
 import com.gse.aulapp.databinding.FragmentClassBinding;
 import com.gse.aulapp.model.adapter.ClassDateRecyclerAdapter;
 import com.gse.aulapp.model.data.ClassDate;
@@ -25,7 +21,6 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
-import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 
 /* loaded from: classes.dex */
 public final /* synthetic */ class c0 implements Function1 {
@@ -42,9 +37,7 @@ public final /* synthetic */ class c0 implements Function1 {
         Unit onBindViewHolder$lambda$2$lambda$1$lambda$0;
         Unit entryTime$lambda$10;
         Comparable groupClassDetailsByFilterType$lambda$1;
-        SessionData sessionDataStore$lambda$3;
         Unit showDialogLogOut$lambda$13;
-        CharSequence string$lambda$6;
         switch (this.a) {
             case 0:
                 onBindViewHolder$lambda$2$lambda$1$lambda$0 = ClassDateRecyclerAdapter.onBindViewHolder$lambda$2$lambda$1$lambda$0((ClassDateRecyclerAdapter) this.b, (SessionDto) obj);
@@ -92,8 +85,8 @@ public final /* synthetic */ class c0 implements Function1 {
                 groupClassDetailsByFilterType$lambda$1 = ClassUtil.groupClassDetailsByFilterType$lambda$1((SimpleDateFormat) this.b, (SessionDto) obj);
                 return groupClassDetailsByFilterType$lambda$1;
             case 5:
-                sessionDataStore$lambda$3 = FirebaseSessionsComponent.MainModule.Companion.sessionDataStore$lambda$3((SessionDataSerializer) this.b, (CorruptionException) obj);
-                return sessionDataStore$lambda$3;
+                // Stubbed: FirebaseSessionsComponent.MainModule.Companion.sessionDataStore$lambda$3
+                throw new UnsupportedOperationException("Decompiled stub");
             case 6:
                 SessionDto it2 = (SessionDto) obj;
                 HomeFragment this$03 = (HomeFragment) this.b;
@@ -112,8 +105,8 @@ public final /* synthetic */ class c0 implements Function1 {
                 showDialogLogOut$lambda$13 = HomeViewModel.showDialogLogOut$lambda$13((Ref.ObjectRef) this.b, (String) obj);
                 return showDialogLogOut$lambda$13;
             default:
-                string$lambda$6 = PluginGeneratedSerialDescriptor.toString$lambda$6((PluginGeneratedSerialDescriptor) this.b, ((Integer) obj).intValue());
-                return string$lambda$6;
+                // Stubbed: PluginGeneratedSerialDescriptor.toString$lambda$6
+                throw new UnsupportedOperationException("Decompiled stub");
         }
     }
 }

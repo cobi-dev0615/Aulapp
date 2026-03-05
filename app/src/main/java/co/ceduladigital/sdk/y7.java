@@ -5,12 +5,6 @@ import android.media.MediaDrm;
 import android.media.MediaMetadataRetriever;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.util.TableInfo;
-import com.google.android.gms.internal.measurement.zzbk;
-import com.google.android.gms.internal.measurement.zzh;
-import com.google.android.gms.internal.measurement.zzlm;
-import com.google.android.gms.internal.mlkit_vision_face_bundled.zzbi;
-import com.google.android.gms.internal.mlkit_vision_face_bundled.zzuc;
-import com.google.android.gms.internal.mlkit_vision_internal_vkp.zzbdq;
 import com.google.firebase.encoders.FieldDescriptor;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -30,17 +24,12 @@ import kotlin.UShortArray;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.sequences.Sequence;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTParameters;
 
 /* loaded from: classes2.dex */
 public abstract /* synthetic */ class y7 {
     public static void A(int i, FieldDescriptor.Builder builder) {
-        zzbi zzbiVar = new zzbi();
-        zzbiVar.zza(i);
-        builder.withProperty(zzbiVar.zzb()).build();
+        // Stubbed: zzbi (non-public gms internal)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static /* synthetic */ void B(AutoCloseable autoCloseable) {
@@ -86,15 +75,18 @@ public abstract /* synthetic */ class y7 {
     }
 
     public static int C(int i, int i2, int i3) {
-        return zzlm.zzz(i) + i2 + i3;
+        // Stubbed: zzlm.zzz (non-public gms internal)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static int D(int i, int i2, int i3) {
-        return zzuc.zzz(i) + i2 + i3;
+        // Stubbed: zzuc.zzz (non-public gms internal)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static int a(int i, int i2, int i3) {
-        return zzbdq.zzF(i) + i2 + i3;
+        // Stubbed: zzbdq.zzF (non-public gms internal)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static int b(CharSequence charSequence, String str, Function1 function1, String str2) {
@@ -104,21 +96,18 @@ public abstract /* synthetic */ class y7 {
     }
 
     public static FieldDescriptor.Builder c(int i, FieldDescriptor.Builder builder, String str) {
-        zzbi zzbiVar = new zzbi();
-        zzbiVar.zza(i);
-        builder.withProperty(zzbiVar.zzb()).build();
-        return FieldDescriptor.builder(str);
+        // Stubbed: zzbi (non-public gms internal)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static FieldDescriptor d(int i, FieldDescriptor.Builder builder) {
-        zzbi zzbiVar = new zzbi();
-        zzbiVar.zza(i);
-        return builder.withProperty(zzbiVar.zzb()).build();
+        // Stubbed: zzbi (non-public gms internal)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static Object e(zzbk zzbkVar, int i, List list, int i2) {
-        zzh.zza(zzbkVar.name(), i, list);
-        return list.get(i2);
+    public static Object e(Object zzbkVar, int i, List list, int i2) {
+        // Stubbed: zzbk (non-public gms internal)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static Object f(CharSequence charSequence, int i, Function1 function1) {
@@ -166,24 +155,24 @@ public abstract /* synthetic */ class y7 {
         return str + str2 + str3 + str4 + str5;
     }
 
-    public static String q(ASN1Sequence aSN1Sequence, StringBuilder sb) {
-        sb.append(aSN1Sequence.size());
-        return sb.toString();
+    public static String q(Object aSN1Sequence, StringBuilder sb) {
+        // Stubbed: org.bouncycastle.asn1.ASN1Sequence
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static String r(ConfigurableProvider configurableProvider, String str, String str2, String str3, String str4) {
-        configurableProvider.addAlgorithm(str, str2);
-        return str3 + str4;
+    public static String r(Object configurableProvider, String str, String str2, String str3, String str4) {
+        // Stubbed: org.bouncycastle ConfigurableProvider
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static String s(org.spongycastle.asn1.ASN1Sequence aSN1Sequence, StringBuilder sb) {
-        sb.append(aSN1Sequence.size());
-        return sb.toString();
+    public static String s(Object aSN1Sequence, StringBuilder sb) {
+        // Stubbed: org.spongycastle.asn1.ASN1Sequence
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static String t(org.spongycastle.jcajce.provider.config.ConfigurableProvider configurableProvider, String str, String str2, String str3, String str4) {
-        configurableProvider.addAlgorithm(str, str2);
-        return str3 + str4;
+    public static String t(Object configurableProvider, String str, String str2, String str3, String str4) {
+        // Stubbed: org.spongycastle ConfigurableProvider
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static StringBuilder u(String str, String str2, String str3) {
@@ -193,20 +182,14 @@ public abstract /* synthetic */ class y7 {
         return sb;
     }
 
-    public static StringBuilder v(String str, String str2, String str3, StringBuilder sb, ConfigurableProvider configurableProvider) {
-        sb.append(str);
-        configurableProvider.addAlgorithm(str2, sb.toString());
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append(str3);
-        return sb2;
+    public static StringBuilder v(String str, String str2, String str3, StringBuilder sb, Object configurableProvider) {
+        // Stubbed: org.bouncycastle ConfigurableProvider
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static StringBuilder w(String str, String str2, String str3, StringBuilder sb, org.spongycastle.jcajce.provider.config.ConfigurableProvider configurableProvider) {
-        sb.append(str);
-        configurableProvider.addAlgorithm(str2, sb.toString());
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append(str3);
-        return sb2;
+    public static StringBuilder w(String str, String str2, String str3, StringBuilder sb, Object configurableProvider) {
+        // Stubbed: org.spongycastle ConfigurableProvider
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static HashSet x(HashMap hashMap, String str, TableInfo.Column column, int i) {
@@ -220,7 +203,8 @@ public abstract /* synthetic */ class y7 {
         return sequence.iterator();
     }
 
-    public static void z(int i, int i2, ASN1ObjectIdentifier aSN1ObjectIdentifier, HashMap hashMap, Integer num) {
-        hashMap.put(num, new XMSSMTParameters(i, i2, aSN1ObjectIdentifier));
+    public static void z(int i, int i2, Object aSN1ObjectIdentifier, HashMap hashMap, Integer num) {
+        // Stubbed: XMSSMTParameters, ASN1ObjectIdentifier (org.bouncycastle)
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 }

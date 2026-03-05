@@ -12,29 +12,23 @@ import java.util.Iterator;
 import java.util.List;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.spongycastle.asn1.ASN1ObjectIdentifier;
-import org.spongycastle.jcajce.provider.config.ConfigurableProvider;
 
 /* loaded from: classes2.dex */
 public abstract /* synthetic */ class q {
-    public static void A(StringBuilder sb, ASN1ObjectIdentifier aSN1ObjectIdentifier, ConfigurableProvider configurableProvider, String str) {
-        sb.append(aSN1ObjectIdentifier);
-        configurableProvider.addAlgorithm(sb.toString(), str);
+    public static void A(StringBuilder sb, Object aSN1ObjectIdentifier, Object configurableProvider, String str) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static void B(org.bouncycastle.jcajce.provider.config.ConfigurableProvider configurableProvider, String str, String str2, String str3, org.bouncycastle.asn1.ASN1ObjectIdentifier aSN1ObjectIdentifier) {
-        configurableProvider.addAlgorithm(str3, aSN1ObjectIdentifier, str + str2);
+    public static void B(Object configurableProvider, String str, String str2, String str3, Object aSN1ObjectIdentifier) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static void C(ConfigurableProvider configurableProvider, String str, String str2, String str3, ASN1ObjectIdentifier aSN1ObjectIdentifier) {
-        configurableProvider.addAlgorithm(str3, aSN1ObjectIdentifier, str + str2);
+    public static void C(Object configurableProvider, String str, String str2, String str3, Object aSN1ObjectIdentifier) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static StringBuilder D(String str, String str2, StringBuilder sb, org.bouncycastle.asn1.ASN1ObjectIdentifier aSN1ObjectIdentifier, org.bouncycastle.jcajce.provider.config.ConfigurableProvider configurableProvider) {
-        sb.append(aSN1ObjectIdentifier);
-        configurableProvider.addAlgorithm(sb.toString(), str);
-        return new StringBuilder(str2);
+    public static StringBuilder D(String str, String str2, StringBuilder sb, Object aSN1ObjectIdentifier, Object configurableProvider) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static float a(float f, float f2, float f3, float f4) {
@@ -101,37 +95,24 @@ public abstract /* synthetic */ class q {
         return sb.toString();
     }
 
-    public static StringBuilder n(String str, String str2, String str3, StringBuilder sb, org.bouncycastle.jcajce.provider.config.ConfigurableProvider configurableProvider) {
-        sb.append(str);
-        sb.append(str2);
-        configurableProvider.addAlgorithm(str3, sb.toString());
-        return new StringBuilder();
+    public static StringBuilder n(String str, String str2, String str3, StringBuilder sb, Object configurableProvider) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static StringBuilder o(String str, String str2, String str3, StringBuilder sb, ConfigurableProvider configurableProvider) {
-        sb.append(str);
-        sb.append(str2);
-        configurableProvider.addAlgorithm(str3, sb.toString());
-        return new StringBuilder();
+    public static StringBuilder o(String str, String str2, String str3, StringBuilder sb, Object configurableProvider) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static StringBuilder p(String str, String str2, StringBuilder sb, org.bouncycastle.asn1.ASN1ObjectIdentifier aSN1ObjectIdentifier, org.bouncycastle.jcajce.provider.config.ConfigurableProvider configurableProvider) {
-        sb.append(aSN1ObjectIdentifier);
-        configurableProvider.addAlgorithm(sb.toString(), str);
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append(str2);
-        return sb2;
+    public static StringBuilder p(String str, String str2, StringBuilder sb, Object aSN1ObjectIdentifier, Object configurableProvider) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static StringBuilder q(StringBuilder sb, ASN1ObjectIdentifier aSN1ObjectIdentifier, ConfigurableProvider configurableProvider, String str, String str2) {
-        sb.append(aSN1ObjectIdentifier);
-        configurableProvider.addAlgorithm(sb.toString(), str);
-        return new StringBuilder(str2);
+    public static StringBuilder q(StringBuilder sb, Object aSN1ObjectIdentifier, Object configurableProvider, String str, String str2) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static StringBuilder r(org.bouncycastle.jcajce.provider.config.ConfigurableProvider configurableProvider, String str, String str2, String str3) {
-        configurableProvider.addAlgorithm(str, str2);
-        return new StringBuilder(str3);
+    public static StringBuilder r(Object configurableProvider, String str, String str2, String str3) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static Iterator s(Iterable iterable, String str, Function1 function1, String str2) {
@@ -140,12 +121,12 @@ public abstract /* synthetic */ class q {
         return iterable.iterator();
     }
 
-    public static ECFieldElement t(ECFieldElement eCFieldElement, ECFieldElement eCFieldElement2, ECFieldElement eCFieldElement3) {
-        return eCFieldElement.square().add(eCFieldElement2).add(eCFieldElement3);
+    public static Object t(Object eCFieldElement, Object eCFieldElement2, Object eCFieldElement3) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static org.spongycastle.math.ec.ECFieldElement u(org.spongycastle.math.ec.ECFieldElement eCFieldElement, org.spongycastle.math.ec.ECFieldElement eCFieldElement2, org.spongycastle.math.ec.ECFieldElement eCFieldElement3) {
-        return eCFieldElement.square().add(eCFieldElement2).add(eCFieldElement3);
+    public static Object u(Object eCFieldElement, Object eCFieldElement2, Object eCFieldElement3) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
     public static void v(Activity activity, int i, TextView textView, int i2, MaterialButton materialButton) {
@@ -158,20 +139,15 @@ public abstract /* synthetic */ class q {
         imageView.setImageResource(i2);
     }
 
-    public static void x(String str, String str2, String str3, StringBuilder sb, org.bouncycastle.jcajce.provider.config.ConfigurableProvider configurableProvider) {
-        sb.append(str);
-        sb.append(str2);
-        configurableProvider.addAlgorithm(str3, sb.toString());
+    public static void x(String str, String str2, String str3, StringBuilder sb, Object configurableProvider) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static void y(String str, String str2, String str3, StringBuilder sb, ConfigurableProvider configurableProvider) {
-        sb.append(str);
-        sb.append(str2);
-        configurableProvider.addAlgorithm(str3, sb.toString());
+    public static void y(String str, String str2, String str3, StringBuilder sb, Object configurableProvider) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 
-    public static void z(StringBuilder sb, org.bouncycastle.asn1.ASN1ObjectIdentifier aSN1ObjectIdentifier, org.bouncycastle.jcajce.provider.config.ConfigurableProvider configurableProvider, String str) {
-        sb.append(aSN1ObjectIdentifier);
-        configurableProvider.addAlgorithm(sb.toString(), str);
+    public static void z(StringBuilder sb, Object aSN1ObjectIdentifier, Object configurableProvider, String str) {
+        throw new UnsupportedOperationException("Decompiled stub");
     }
 }

@@ -39,7 +39,7 @@ import java.util.Map;
 import kotlin.Metadata;
 import kotlin.NoWhenBranchMatchedException;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt__StringsJVMKt;
+import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.FlowKt;
@@ -159,13 +159,13 @@ public final class FirstLoginViewModel extends ViewModel {
         if (firstLogin) {
             throw new NoWhenBranchMatchedException();
         }
-        equals$default = StringsKt__StringsJVMKt.equals$default(numberDocument, userOrDocumentBox, false, 2, null);
+        equals$default = StringsKt.equals$default(numberDocument, userOrDocumentBox, false, 2, null);
         if (!equals$default) {
             refreshToken(activity, new RefreshTokenRequest(BuildConfig.FLAVOR));
             return;
         }
         if (ceaBox.length() > 0) {
-            equals$default2 = StringsKt__StringsJVMKt.equals$default(selectedCEA, cea != null ? cea.getName() : null, false, 2, null);
+            equals$default2 = StringsKt.equals$default(selectedCEA, cea != null ? cea.getName() : null, false, 2, null);
             if (equals$default2) {
                 refreshToken(activity, new RefreshTokenRequest(String.valueOf(email)));
                 return;

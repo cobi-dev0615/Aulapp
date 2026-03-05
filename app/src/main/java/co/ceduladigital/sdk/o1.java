@@ -24,8 +24,6 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
-import kotlinx.coroutines.android.HandlerContext;
-import kotlinx.coroutines.android.HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class o1 implements Function1 {
@@ -44,7 +42,6 @@ public final /* synthetic */ class o1 implements Function1 {
     public final Object invoke(Object obj) {
         Comparable groupClassDetailsByFilterType$lambda$0;
         Unit locationEnabled$lambda$13;
-        Unit scheduleResumeAfterDelay$lambda$2;
         Unit sessionConfigList$lambda$28;
         Unit subscribeNfc$lambda$0;
         Unit elapsedTime$lambda$0;
@@ -82,8 +79,8 @@ public final /* synthetic */ class o1 implements Function1 {
                 locationEnabled$lambda$13 = GpsUtil.Companion.locationEnabled$lambda$13((Function1) this.b, (FusedLocationProviderClient) this.c, (Location) obj);
                 return locationEnabled$lambda$13;
             case 3:
-                scheduleResumeAfterDelay$lambda$2 = HandlerContext.scheduleResumeAfterDelay$lambda$2((HandlerContext) this.b, (HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1) this.c, (Throwable) obj);
-                return scheduleResumeAfterDelay$lambda$2;
+                // Stubbed: HandlerContext.scheduleResumeAfterDelay$lambda$2
+                throw new UnsupportedOperationException("Decompiled stub");
             case 4:
                 sessionConfigList$lambda$28 = HomeViewModel.getSessionConfigList$lambda$28((Ref.ObjectRef) this.b, (HomeViewModel) this.c, obj);
                 return sessionConfigList$lambda$28;
