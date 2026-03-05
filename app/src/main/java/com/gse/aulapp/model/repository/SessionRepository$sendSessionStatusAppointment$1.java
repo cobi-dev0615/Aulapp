@@ -67,7 +67,7 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
     */
     public final Object invokeSuspend(Object obj) {
         FlowCollector flowCollector;
-        Responseint response;
+        Response response;
         Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         int r1 = this.label;
         try {
@@ -135,7 +135,7 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
             flowCollector = (FlowCollector) this.L$0;
             ResultKt.throwOnFailure(obj);
         }
-       int response = (Response) obj;
+        response = (Response) obj;
         if (response != null) {
         }
         return Unit.INSTANCE;

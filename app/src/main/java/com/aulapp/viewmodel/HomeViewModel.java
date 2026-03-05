@@ -186,10 +186,10 @@ public final class HomeViewModel extends ViewModel {
     }
 
     private final void addChipToGroup(String chipName, int chipId, Context context, FragmentHomeBinding binding) {
-        ChipChip buildChip = ChipUtil.INSTANCE.buildChip(chipName, context, chipId);
+        Chip buildChip = ChipUtil.INSTANCE.buildChip(chipName, context, chipId);
         binding.chipGroup.addView(buildChip);
-       Chip buildChip.isChecked();
-       Chip buildChip.setOnClickListener(new f0(this, binding, 6));
+        buildChip.isChecked();
+        buildChip.setOnClickListener(new f0(this, binding, 6));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -211,12 +211,12 @@ public final class HomeViewModel extends ViewModel {
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r5v1, types: [T, com.google.android.material.chip.Chip] */
-    private final ChipChip buildChipAll(Context context, FragmentHomeBinding binding) {
+    private final Chip buildChipAll(Context context, FragmentHomeBinding binding) {
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
         ChipUtil.Companion companion = ChipUtil.INSTANCE;
         Chip buildChip = companion.buildChip(companion.getALL(), context, 0);
         objectRef.element = buildChip;
-       Chip buildChip.setChecked(true);
+        buildChip.setChecked(true);
         companion.updateColorChipStatus((Chip) objectRef.element);
         ((Chip) objectRef.element).setOnClickListener(new h1(this, objectRef, binding, 3));
         return (Chip) objectRef.element;
@@ -224,7 +224,7 @@ public final class HomeViewModel extends ViewModel {
 
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Multi-variable type inference failed */
-    public static final voidChip buildChipAll$lambda$18(HomeViewModel this$0, Ref.ObjectRef chipTemporal, FragmentHomeBinding binding, View view) {
+    public static final void buildChipAll$lambda$18(HomeViewModel this$0, Ref.ObjectRef chipTemporal, FragmentHomeBinding binding, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(chipTemporal, "$chipTemporal");
         Intrinsics.checkNotNullParameter(binding, "$binding");
@@ -1441,7 +1441,7 @@ public final class HomeViewModel extends ViewModel {
         }
     }
 
-    public final voidChip buildChips(Context context, FragmentHomeBinding binding) {
+    public final void buildChips(Context context, FragmentHomeBinding binding) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(binding, "binding");
         setChipAll(buildChipAll(context, binding));

@@ -65,7 +65,7 @@ public abstract class ValidateHoursUtil {
             Ref.ObjectRef objectRef = new Ref.ObjectRef();
             String startClassOrExam = PreferenceUtil.INSTANCE.getStartClassOrExam(context);
             objectRef.element = startClassOrExam;
-            if (startClassOrExam == 0 ||String startClassOrExam.length() == 0) {
+            if (startClassOrExam == 0 || startClassOrExam.length() == 0) {
                 callback.invoke(0L);
                 return;
             }
@@ -83,14 +83,14 @@ public abstract class ValidateHoursUtil {
             Intrinsics.checkNotNullParameter(sessionFull, "sessionFull");
             Intrinsics.checkNotNullParameter(entryTime, "entryTime");
             PreferenceUtil.Companion companion = PreferenceUtil.INSTANCE;
-            StringString startClassOrExam = companion.getStartClassOrExam(context);
+            String startClassOrExam = companion.getStartClassOrExam(context);
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault());
             SessionEntity session = sessionFull.getSession();
             Date date = null;
             String id = session != null ? session.getId() : null;
             Intrinsics.checkNotNull(id);
             companion.saveSessionIdByTimeService(context, id);
-            if (startClassOrExam == null ||String startClassOrExam.length() == 0) {
+            if (startClassOrExam == null || startClassOrExam.length() == 0) {
                 getTag();
                 Parameters.INSTANCE.setINITIAL_TIME(0L);
                 companion.saveStartClassOrExam(context, entryTime);
