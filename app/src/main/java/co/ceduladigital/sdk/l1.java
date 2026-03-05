@@ -5,8 +5,8 @@ import android.content.Context;
 import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.FragmentKt;
-import androidx.view.LifecycleOwner;
-import androidx.view.LifecycleOwnerKt;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LifecycleOwnerKt;
 import com.gse.aulapp.databinding.FragmentPracticeClassBinding;
 import com.gse.aulapp.databinding.FragmentRideHistoryBinding;
 import com.gse.aulapp.model.adapter.ClassDateRecyclerAdapter;
@@ -27,7 +27,7 @@ import java.util.Date;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class l1 implements Function1 {
@@ -275,7 +275,7 @@ public final /* synthetic */ class l1 implements Function1 {
                         }));
                         LifecycleOwner viewLifecycleOwner = this$02.getViewLifecycleOwner();
                         Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-                        BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new o7(this$02, null), 3, null);
+                        BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new o7(this$02, null), 3, null);
                         PracticeClassViewModel practiceClassViewModel6 = this$02.b;
                         if (practiceClassViewModel6 == null) {
                             Intrinsics.throwUninitializedPropertyAccessException("viewModel");

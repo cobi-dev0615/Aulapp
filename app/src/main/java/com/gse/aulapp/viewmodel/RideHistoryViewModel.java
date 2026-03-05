@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.view.ViewModel;
-import androidx.view.ViewModelKt;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelKt;
 import co.ceduladigital.sdk.l1;
 import co.ceduladigital.sdk.q;
 import com.gse.aulapp.databinding.FragmentRideHistoryBinding;
@@ -28,7 +28,7 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
@@ -56,7 +56,7 @@ public final class RideHistoryViewModel extends ViewModel {
 
     private final void getRoutesFromApi(Context context, SessionInstructorRequest sessionInstructorRequest) {
         try {
-            BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new RideHistoryViewModel$getRoutesFromApi$1(context, sessionInstructorRequest, this, null), 3, null);
+            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new RideHistoryViewModel$getRoutesFromApi$1(context, sessionInstructorRequest, this, null), 3, null);
         } catch (Exception e) {
             LogSendUtil.INSTANCE.setLog(context, q.i("getRoutesFromApi exception: ", e.getMessage()), "getRoutesFromApi", true);
             this._message.setValue(new Status.Failure(new Exception(e.getMessage())));

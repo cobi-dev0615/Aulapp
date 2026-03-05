@@ -15,11 +15,11 @@ import android.widget.LinearLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.view.LifecycleOwner;
-import androidx.view.LifecycleOwnerKt;
-import androidx.view.Observer;
-import androidx.view.OnBackPressedDispatcher;
-import androidx.view.ViewModelProvider;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LifecycleOwnerKt;
+import androidx.lifecycle.Observer;
+import androidx.activity.OnBackPressedDispatcher;
+import androidx.lifecycle.ViewModelProvider;
 import co.ceduladigital.sdk.a6;
 import co.ceduladigital.sdk.c0;
 import co.ceduladigital.sdk.e2;
@@ -45,7 +45,7 @@ import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/gse/aulapp/view/fragment/HomeFragment;", "Landroidx/fragment/app/Fragment;", "<init>", "()V", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nHomeFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 HomeFragment.kt\ncom/gse/aulapp/view/fragment/HomeFragment\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,413:1\n1#2:414\n*E\n"})
@@ -177,7 +177,7 @@ public final class HomeFragment extends Fragment {
         Intrinsics.checkNotNullExpressionValue(requireActivity, "requireActivity(...)");
         UIHelper.Companion.setterCustomToolbar$default(companion2, requireActivity, false, true, null, null, Integer.valueOf(R.drawable.ic_drawer_menu), false, false, 154, null);
         Observer<? super Menu> observer = new Observer() { // from class: co.ceduladigital.sdk.b6
-            @Override // androidx.view.Observer
+            @Override // androidx.lifecycle.Observer
             public final void onChanged(Object obj) {
                 Context context;
                 Menu newMenu = (Menu) obj;
@@ -255,7 +255,7 @@ public final class HomeFragment extends Fragment {
             homeViewModel4.buildChips(requireContext, fragmentHomeBinding5);
             LifecycleOwner viewLifecycleOwner = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-            BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new f6(this, null), 3, null);
+            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new f6(this, null), 3, null);
             FragmentHomeBinding fragmentHomeBinding6 = this.c;
             Intrinsics.checkNotNull(fragmentHomeBinding6);
             fragmentHomeBinding6.containerButtons.actionFilter.setOnClickListener(new r2(this, 3));

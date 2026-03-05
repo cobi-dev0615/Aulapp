@@ -1,6 +1,6 @@
 package co.ceduladigital.sdk;
 
-import androidx.view.Observer;
+import androidx.lifecycle.Observer;
 import kotlin.Function;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionAdapter;
@@ -63,7 +63,7 @@ public final /* synthetic */ class x0 implements Observer, FunctionAdapter {
         return this.b.hashCode();
     }
 
-    @Override // androidx.view.Observer
+    @Override // androidx.lifecycle.Observer
     public final /* synthetic */ void onChanged(Object obj) {
         switch (this.a) {
             case 0:

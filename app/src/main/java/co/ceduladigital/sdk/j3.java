@@ -6,7 +6,7 @@ import androidx.core.view.accessibility.AccessibilityManagerCompat;
 import androidx.core.view.inputmethod.InputConnectionCompat;
 import androidx.fragment.app.SpecialEffectsController;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-import androidx.view.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultCallback;
 import com.google.android.datatransport.Transformer;
 import com.google.android.datatransport.runtime.scheduling.jobscheduling.Uploader;
 import com.google.android.datatransport.runtime.scheduling.jobscheduling.WorkInitializer;
@@ -88,7 +88,7 @@ public final /* synthetic */ class j3 implements Deferred.DeferredHandler, Conti
         }
     }
 
-    @Override // androidx.view.result.ActivityResultCallback
+    @Override // androidx.activity.result.ActivityResultCallback
     public void onActivityResult(Object obj) {
         WebviewFragment.requestPermissionLauncher$lambda$0((WebviewFragment) this.b, ((Boolean) obj).booleanValue());
     }

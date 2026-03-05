@@ -9,7 +9,7 @@ import android.os.Build;
 import android.os.CountDownTimer;
 import android.os.IBinder;
 import androidx.core.app.NotificationCompat;
-import androidx.view.MutableLiveData;
+import androidx.lifecycle.MutableLiveData;
 import com.gse.aulapp.R;
 import com.gse.aulapp.model.dto.ConfigurationSessionDto;
 import com.gse.aulapp.util.SingleLiveEvent;

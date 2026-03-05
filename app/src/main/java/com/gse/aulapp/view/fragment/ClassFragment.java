@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.view.ViewModelProvider;
+import androidx.lifecycle.ViewModelProvider;
 import co.ceduladigital.sdk.c0;
 import co.ceduladigital.sdk.i0;
 import co.ceduladigital.sdk.k0;

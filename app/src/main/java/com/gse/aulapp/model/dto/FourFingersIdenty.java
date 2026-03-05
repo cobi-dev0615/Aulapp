@@ -153,38 +153,6 @@ public final /* data */ class FourFingersIdenty implements Parcelable {
         return Intrinsics.areEqual(this.rightLittle, fourFingersIdenty.rightLittle) && Intrinsics.areEqual(this.rightMiddle, fourFingersIdenty.rightMiddle) && Intrinsics.areEqual(this.rightIndex, fourFingersIdenty.rightIndex) && Intrinsics.areEqual(this.rightRing, fourFingersIdenty.rightRing) && Intrinsics.areEqual(this.leftLittle, fourFingersIdenty.leftLittle) && Intrinsics.areEqual(this.leftMiddle, fourFingersIdenty.leftMiddle) && Intrinsics.areEqual(this.leftIndex, fourFingersIdenty.leftIndex) && Intrinsics.areEqual(this.leftRing, fourFingersIdenty.leftRing);
     }
 
-    public final String getLeftIndex() {
-        return this.leftIndex;
-    }
-
-    public final String getLeftLittle() {
-        return this.leftLittle;
-    }
-
-    public final String getLeftMiddle() {
-        return this.leftMiddle;
-    }
-
-    public final String getLeftRing() {
-        return this.leftRing;
-    }
-
-    public final String getRightIndex() {
-        return this.rightIndex;
-    }
-
-    public final String getRightLittle() {
-        return this.rightLittle;
-    }
-
-    public final String getRightMiddle() {
-        return this.rightMiddle;
-    }
-
-    public final String getRightRing() {
-        return this.rightRing;
-    }
-
     public int hashCode() {
         String str = this.rightLittle;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;

@@ -10,8 +10,8 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.view.LiveData;
-import androidx.view.MutableLiveData;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import co.ceduladigital.sdk.e0;
 import co.ceduladigital.sdk.f0;
 import co.ceduladigital.sdk.h0;
@@ -507,11 +507,11 @@ public final class ClassDetailRecyclerAdapter extends RecyclerView.Adapter<Class
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0038, code lost:
     
-        r9 = kotlin.text.StringsKt__StringsKt.split$default((java.lang.CharSequence) r9, new java.lang.String[]{","}, false, 0, 6, (java.lang.Object) null);
+        r9 = kotlin.text.StringsKt.split$default((java.lang.CharSequence) r9, new java.lang.String[]{","}, false, 0, 6, (java.lang.Object) null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x000f, code lost:
     
-        r0 = kotlin.text.StringsKt__StringsKt.split$default((java.lang.CharSequence) r0, new java.lang.String[]{","}, false, 0, 6, (java.lang.Object) null);
+        r0 = kotlin.text.StringsKt.split$default((java.lang.CharSequence) r0, new java.lang.String[]{","}, false, 0, 6, (java.lang.Object) null);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.

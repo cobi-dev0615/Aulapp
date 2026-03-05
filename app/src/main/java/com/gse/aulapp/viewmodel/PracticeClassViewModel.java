@@ -17,10 +17,10 @@ import androidx.core.content.ContextCompat;
 import androidx.navigation.ActionOnlyNavDirections;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDirections;
-import androidx.view.LiveData;
-import androidx.view.MutableLiveData;
-import androidx.view.ViewModel;
-import androidx.view.ViewModelKt;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelKt;
 import co.ceduladigital.sdk.d1;
 import co.ceduladigital.sdk.j0;
 import co.ceduladigital.sdk.k1;
@@ -79,7 +79,7 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt__BuildersKt;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.StateFlow;
 
@@ -145,7 +145,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     private final void deleteGpsTraceBySessionID(String sessionID) {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$deleteGpsTraceBySessionID$1(this, sessionID, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$deleteGpsTraceBySessionID$1(this, sessionID, null), 3, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -326,7 +326,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     private final void setDataSessionDetail(SessionDto session, FragmentPracticeClassBinding binding, String timeSession) {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$setDataSessionDetail$1(session, timeSession, binding, this, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$setDataSessionDetail$1(session, timeSession, binding, this, null), 3, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -433,7 +433,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     private final void updateIsPendingState(String isPending, String sessionID) {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$updateIsPendingState$1(this, isPending, sessionID, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$updateIsPendingState$1(this, isPending, sessionID, null), 3, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -443,7 +443,7 @@ public final class PracticeClassViewModel extends ViewModel {
         if (job != null) {
             Job.DefaultImpls.cancel$default(job, null, 1, null);
         }
-        launch$default = BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$updatePracticeInfo$1(this, binding, null), 3, null);
+        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$updatePracticeInfo$1(this, binding, null), 3, null);
         this.updatePracticeInfoJob = launch$default;
     }
 
@@ -603,7 +603,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     public final void getConfigSessionDto() {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$getConfigSessionDto$1(this, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$getConfigSessionDto$1(this, null), 3, null);
     }
 
     public final Dialog getDialog() {
@@ -617,7 +617,7 @@ public final class PracticeClassViewModel extends ViewModel {
     public final void getSessionById(String sessionID) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         try {
-            BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$getSessionById$1(this, sessionID, null), 3, null);
+            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$getSessionById$1(this, sessionID, null), 3, null);
         } catch (Exception e) {
             this._message.postValue(new Status.Failure(new Exception(e.getMessage())));
         }

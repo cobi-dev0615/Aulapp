@@ -10,7 +10,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.SourceDebugExtension;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.GlobalScope;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u0000 \u00022\u00020\u0001:\u0001\u0002¨\u0006\u0003"}, d2 = {"Lcom/gse/aulapp/util/RefreshTokenUtil;", BuildConfig.FLAVOR, "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -35,7 +35,7 @@ public abstract class RefreshTokenUtil {
                 Ref.ObjectRef objectRef = new Ref.ObjectRef();
                 String email = PreferenceUtil.INSTANCE.getEmail(context);
                 objectRef.element = email != null ? new RefreshTokenRequest(email) : 0;
-                BuildersKt__Builders_commonKt.launch$default(GlobalScope.INSTANCE, null, null, new RefreshTokenUtil$Companion$refreshToken$1(objectRef, context, null), 3, null);
+                BuildersKt.launch$default(GlobalScope.INSTANCE, null, null, new RefreshTokenUtil$Companion$refreshToken$1(objectRef, context, null), 3, null);
             } catch (Exception e) {
                 LogSendUtil.INSTANCE.setLog(context, q.i("refreshToken exception: ", e.getMessage()), "refreshToken", true);
             }

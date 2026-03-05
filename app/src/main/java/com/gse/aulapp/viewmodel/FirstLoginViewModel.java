@@ -5,8 +5,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
-import androidx.view.ViewModel;
-import androidx.view.ViewModelKt;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelKt;
 import com.gse.aulapp.databinding.FragmentFirstLoginBinding;
 import com.gse.aulapp.feature.core.util.RandomControllerUtil;
 import com.gse.aulapp.model.data.statusControl.Status;
@@ -40,7 +40,7 @@ import kotlin.Metadata;
 import kotlin.NoWhenBranchMatchedException;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt__StringsJVMKt;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.FlowKt;
 import kotlinx.coroutines.flow.MutableSharedFlow;
@@ -118,19 +118,19 @@ public final class FirstLoginViewModel extends ViewModel {
 
     private final Job login(Context context, LoginRequest loginRequest) {
         Job launch$default;
-        launch$default = BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$login$1(this, loginRequest, context, null), 3, null);
+        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$login$1(this, loginRequest, context, null), 3, null);
         return launch$default;
     }
 
     private final Job refreshToken(Context context, RefreshTokenRequest tokenRefreshRequest) {
         Job launch$default;
-        launch$default = BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$refreshToken$1(this, tokenRefreshRequest, context, null), 3, null);
+        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$refreshToken$1(this, tokenRefreshRequest, context, null), 3, null);
         return launch$default;
     }
 
     private final Job refreshTokenCEA(String ceaSelected, List<CenterDto> centerListCEA, String numberDocument, Activity activity) {
         Job launch$default;
-        launch$default = BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$refreshTokenCEA$1(this, ceaSelected, centerListCEA, numberDocument, activity, null), 3, null);
+        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$refreshTokenCEA$1(this, ceaSelected, centerListCEA, numberDocument, activity, null), 3, null);
         return launch$default;
     }
 
@@ -246,14 +246,14 @@ public final class FirstLoginViewModel extends ViewModel {
     public final void initBiometrix(Activity activity, BiometrixRequest request) {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(request, "request");
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$initBiometrix$1(this, activity, request, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$initBiometrix$1(this, activity, request, null), 3, null);
     }
 
     public final Job recoverPassword(Context context, String email) {
         Job launch$default;
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(email, "email");
-        launch$default = BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$recoverPassword$1(this, email, context, null), 3, null);
+        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$recoverPassword$1(this, email, context, null), 3, null);
         return launch$default;
     }
 

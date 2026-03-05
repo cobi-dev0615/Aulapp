@@ -5,8 +5,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.view.View;
 import androidx.navigation.NavController;
-import androidx.view.ViewModel;
-import androidx.view.ViewModelKt;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelKt;
 import co.ceduladigital.sdk.r2;
 import co.ceduladigital.sdk.r7;
 import com.gse.aulapp.databinding.FragmentPasswordRecoverBinding;
@@ -19,7 +19,7 @@ import com.gse.aulapp.util.NetworkUtil;
 import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
 
@@ -38,7 +38,7 @@ public final class PasswordRecoverViewModel extends ViewModel {
     }
 
     private final void callAPIPasswordRecovery(Context context, FragmentPasswordRecoverBinding binding, NavController navController) {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PasswordRecoverViewModel$callAPIPasswordRecovery$1(this, new PasswordRecoveryRequest(String.valueOf(binding.tietTextInputUserRecovery.getText())), context, binding, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PasswordRecoverViewModel$callAPIPasswordRecovery$1(this, new PasswordRecoveryRequest(String.valueOf(binding.tietTextInputUserRecovery.getText())), context, binding, null), 3, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

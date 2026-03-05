@@ -1,9 +1,9 @@
 package com.gse.aulapp.feature.biometrix.presentation.ui;
 
 import android.util.Log;
-import androidx.view.Lifecycle;
-import androidx.view.LifecycleOwner;
-import androidx.view.RepeatOnLifecycleKt;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.RepeatOnLifecycleKt;
 import com.gse.aulapp.model.data.statusControl.BiometricResult;
 import com.gse.aulapp.model.data.statusControl.BiometrixResult;
 import com.gse.aulapp.receptions.feature.biometrix.presentation.ui.viewmodel.WebviewViewModel;

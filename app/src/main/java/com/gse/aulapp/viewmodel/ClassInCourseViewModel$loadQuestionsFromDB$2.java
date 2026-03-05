@@ -2,7 +2,7 @@ package com.gse.aulapp.viewmodel;
 
 import android.content.Context;
 import androidx.navigation.NavController;
-import androidx.view.MutableLiveData;
+import androidx.lifecycle.MutableLiveData;
 import com.gse.aulapp.model.converter.SessionTestConverter;
 import com.gse.aulapp.model.data.entity.QuestionEntity;
 import com.gse.aulapp.model.repository.ClassInCourseRepository;

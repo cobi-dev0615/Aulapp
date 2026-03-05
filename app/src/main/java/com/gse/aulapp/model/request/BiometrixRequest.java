@@ -133,27 +133,6 @@ public final /* data */ class BiometrixRequest extends BiometrixGeneralRequest {
         return Intrinsics.areEqual(this.userID, biometrixRequest.userID) && Intrinsics.areEqual(this.documentType, biometrixRequest.documentType) && Intrinsics.areEqual(this.documentNumber, biometrixRequest.documentNumber) && Intrinsics.areEqual(this.userType, biometrixRequest.userType) && Intrinsics.areEqual(this.processType, biometrixRequest.processType);
     }
 
-    public final String getDocumentNumber() {
-        return this.documentNumber;
-    }
-
-    public final String getDocumentType() {
-        return this.documentType;
-    }
-
-    public final String getProcessType() {
-        return this.processType;
-    }
-
-    @Override // com.gse.aulapp.model.request.BiometrixGeneralRequest
-    public String getUserID() {
-        return this.userID;
-    }
-
-    public final String getUserType() {
-        return this.userType;
-    }
-
     public int hashCode() {
         return this.processType.hashCode() + x5.d(this.userType, x5.d(this.documentNumber, x5.d(this.documentType, this.userID.hashCode() * 31, 31), 31), 31);
     }

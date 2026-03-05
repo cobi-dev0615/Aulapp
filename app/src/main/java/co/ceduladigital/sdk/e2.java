@@ -1,7 +1,7 @@
 package co.ceduladigital.sdk;
 
 import androidx.fragment.app.Fragment;
-import androidx.view.OnBackPressedCallback;
+import androidx.activity.OnBackPressedCallback;
 import com.gse.aulapp.view.fragment.ClassPracticeBeforeFragment;
 import com.gse.aulapp.view.fragment.HomeFragment;
 
@@ -17,7 +17,7 @@ public final class e2 extends OnBackPressedCallback {
         this.b = fragment;
     }
 
-    @Override // androidx.view.OnBackPressedCallback
+    @Override // androidx.activity.OnBackPressedCallback
     public final void handleOnBackPressed() {
         switch (this.a) {
             case 0:

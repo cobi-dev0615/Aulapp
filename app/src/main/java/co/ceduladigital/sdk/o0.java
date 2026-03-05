@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.MultiInstanceInvalidationClient;
 import androidx.room.MultiInstanceInvalidationClient$callback$1;
 import androidx.room.TransactionExecutor;
-import androidx.view.DispatchQueue;
+import androidx.lifecycle.DispatchQueue;
 import androidx.window.layout.SidecarWindowBackend;
 import androidx.window.layout.WindowLayoutInfo;
 import com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService;

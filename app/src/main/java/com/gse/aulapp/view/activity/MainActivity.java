@@ -13,7 +13,7 @@ import androidx.navigation.NavDestination;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavControllerKt;
 import androidx.navigation.ui.NavigationViewKt;
-import androidx.view.ViewModelProvider;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.work.WorkManager;
 import co.ceduladigital.sdk.r2;
 import co.ceduladigital.sdk.t1;
@@ -145,7 +145,7 @@ public final class MainActivity extends AppCompatActivity {
         workManagerUtil.runTask();
     }
 
-    @Override // androidx.fragment.app.FragmentActivity, androidx.view.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity
+    @Override // androidx.fragment.app.FragmentActivity, androidx.activity.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity
     public void onCreate(Bundle savedInstanceState) {
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         super.onCreate(savedInstanceState);

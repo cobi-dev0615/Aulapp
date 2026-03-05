@@ -5,8 +5,8 @@ import android.content.Context;
 import androidx.core.text.HtmlCompat;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.view.ViewModel;
-import androidx.view.ViewModelKt;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelKt;
 import co.ceduladigital.sdk.q;
 import com.gse.aulapp.R;
 import com.gse.aulapp.databinding.FragmentHoursPerformedBinding;
@@ -25,7 +25,7 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
@@ -63,7 +63,7 @@ public final class HoursPerformedViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(request, "request");
         try {
-            BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HoursPerformedViewModel$getHoursPerformedApi$1(context, request, this, null), 3, null);
+            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HoursPerformedViewModel$getHoursPerformedApi$1(context, request, this, null), 3, null);
         } catch (Exception e) {
             LogSendUtil.INSTANCE.setLog(context, q.i("getHoursPerformedApi exception ", e.getMessage()), "getHoursPerformedApi", true);
             this._message.setValue(new Status.Failure(new Exception(e.getMessage())));

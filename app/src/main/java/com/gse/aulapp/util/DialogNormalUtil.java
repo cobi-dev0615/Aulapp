@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
-import androidx.view.ViewModelKt;
+import androidx.lifecycle.ViewModelKt;
 import co.ceduladigital.sdk.k1;
 import co.ceduladigital.sdk.x3;
 import co.ceduladigital.sdk.y3;
@@ -33,7 +33,7 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
@@ -517,7 +517,7 @@ public final class DialogNormalUtil {
         if (job != null) {
             Job.DefaultImpls.cancel$default(job, null, 1, null);
         }
-        launch$default = BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(viewModel), null, null, new DialogNormalUtil$updateDialogExamSpeedInfo$1(viewModel, null), 3, null);
+        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(viewModel), null, null, new DialogNormalUtil$updateDialogExamSpeedInfo$1(viewModel, null), 3, null);
         updateSpeedJob = launch$default;
     }
 

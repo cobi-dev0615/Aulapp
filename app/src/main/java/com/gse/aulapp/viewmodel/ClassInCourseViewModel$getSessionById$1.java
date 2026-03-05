@@ -1,6 +1,6 @@
 package com.gse.aulapp.viewmodel;
 
-import androidx.view.MutableLiveData;
+import androidx.lifecycle.MutableLiveData;
 import com.gse.aulapp.model.data.statusControl.Status;
 import com.gse.aulapp.model.repository.SessionRepository;
 import com.karumi.dexter.BuildConfig;

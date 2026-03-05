@@ -138,21 +138,6 @@ public final class HistoricRecordPermissionsChangeResponse extends GeneralRespon
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code);
         }
 
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
-
         public int hashCode() {
             Boolean bool = this.success;
             int hashCode = (bool == null ? 0 : bool.hashCode()) * 31;

@@ -6,7 +6,7 @@ import com.gse.aulapp.view.fragment.FingerPrintBiometricFragment;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.Boxing;
-import kotlin.text.StringsKt__StringsKt;
+import kotlin.text.StringsKt;
 import kotlinx.coroutines.flow.FlowCollector;
 
 /* loaded from: classes2.dex */
@@ -26,7 +26,7 @@ public final class j4 implements FlowCollector {
         if (z) {
             fingerPrintBiometricFragment.d(true);
         } else if (status instanceof Status.Exception) {
-            contains$default = StringsKt__StringsKt.contains$default(((Status.Exception) status).getData().toString(), (CharSequence) "activty paused on back pressed", false, 2, (Object) null);
+            contains$default = StringsKt.contains$default(((Status.Exception) status).getData().toString(), (CharSequence) "activty paused on back pressed", false, 2, (Object) null);
             if (contains$default) {
                 fingerPrintBiometricFragment.requireActivity().onBackPressed();
             } else {

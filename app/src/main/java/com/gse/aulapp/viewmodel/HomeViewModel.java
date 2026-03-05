@@ -13,10 +13,10 @@ import androidx.navigation.NavController;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-import androidx.view.LiveData;
-import androidx.view.MutableLiveData;
-import androidx.view.ViewModel;
-import androidx.view.ViewModelKt;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelKt;
 import co.ceduladigital.sdk.c0;
 import co.ceduladigital.sdk.e4;
 import co.ceduladigital.sdk.f0;
@@ -111,7 +111,7 @@ import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.flow.FlowKt;
 import kotlinx.coroutines.flow.MutableSharedFlow;
@@ -412,7 +412,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     private final void getSessionByFilterChip() {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$getSessionByFilterChip$1(this, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$getSessionByFilterChip$1(this, null), 3, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -497,12 +497,12 @@ public final class HomeViewModel extends ViewModel {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void initConfigurationPracticalAndExamPractical(SessionInstructorResponse sessionInstructorResponse) {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new HomeViewModel$initConfigurationPracticalAndExamPractical$1(this, sessionInstructorResponse, null), 2, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new HomeViewModel$initConfigurationPracticalAndExamPractical$1(this, sessionInstructorResponse, null), 2, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void loadDefaultList() {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$loadDefaultList$1(this, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$loadDefaultList$1(this, null), 3, null);
     }
 
     private final void onClickChip(Chip chip, FragmentHomeBinding binding) {
@@ -524,7 +524,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     private final void onClickLogOut(Activity activity, FragmentHomeBinding binding, Menu item) {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$onClickLogOut$1(this, activity, binding, item, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$onClickLogOut$1(this, activity, binding, item, null), 3, null);
     }
 
     private final void onSelectOkDate(Context context, Activity activity) {
@@ -1392,7 +1392,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(datetime, "datetime");
         Date parse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(datetime);
         if (date != null && parse != null && date2 != null) {
-            BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this$0), null, null, new HomeViewModel$validateAllowNavigate$1$1(session, configSession, date, date2, activity, parse, z, z2, this$0, navController, classRecyclerAdapter, null), 3, null);
+            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this$0), null, null, new HomeViewModel$validateAllowNavigate$1$1(session, configSession, date, date2, activity, parse, z, z2, this$0, navController, classRecyclerAdapter, null), 3, null);
         }
         return Unit.INSTANCE;
     }
@@ -1495,7 +1495,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(sessionInstructorRequest, "sessionInstructorRequest");
         try {
-            BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$getSessionFromApiAndSave$1(this, context, sessionInstructorRequest, isValidateSession, sessionId, navController, classRecyclerAdapter, activity, null), 3, null);
+            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$getSessionFromApiAndSave$1(this, context, sessionInstructorRequest, isValidateSession, sessionId, navController, classRecyclerAdapter, activity, null), 3, null);
         } catch (Exception e) {
             LogSendUtil.INSTANCE.setLog(context, q.i("getSessionFromApiAndSave exception: ", e.getMessage()), "getSessionFromApiAndSave", true);
         }
@@ -1520,7 +1520,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(item, "item");
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$initSessionSyncPending$1(this, context, item, binding, toast, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$initSessionSyncPending$1(this, context, item, binding, toast, null), 3, null);
     }
 
     /* renamed from: isSwipeRefresh, reason: from getter */
@@ -1554,7 +1554,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(binding, "binding");
         this.dateSelect = null;
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$onSwipeRefresh$1(this, activity, binding, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$onSwipeRefresh$1(this, activity, binding, null), 3, null);
         getSwrHome().setRefreshing(false);
         ChipGroup chipGroup = binding.chipGroup;
         Intrinsics.checkNotNullExpressionValue(chipGroup, "chipGroup");
@@ -1565,7 +1565,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     public final void saveSessionAndGetFromDB(SessionResponseDto sessionInstructorObjectResponseList) {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$saveSessionAndGetFromDB$1(this, sessionInstructorObjectResponseList, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$saveSessionAndGetFromDB$1(this, sessionInstructorObjectResponseList, null), 3, null);
     }
 
     public final void setChipAll(Chip chip) {

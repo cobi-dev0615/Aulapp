@@ -4,8 +4,8 @@ import android.app.AlertDialog;
 import android.view.View;
 import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.NavController;
-import androidx.view.ViewModel;
-import androidx.view.ViewModelKt;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelKt;
 import com.gse.aulapp.databinding.FragmentLoginBinding;
 import com.gse.aulapp.model.data.statusControl.Status;
 import com.gse.aulapp.model.enumerate.EnumDialogType;
@@ -18,7 +18,7 @@ import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
@@ -44,7 +44,7 @@ public final class LoginViewModel extends ViewModel {
 
     private final Job login(FragmentActivity context, LoginRequest loginRequest, FragmentLoginBinding binding, NavController findNavController) {
         Job launch$default;
-        launch$default = BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new LoginViewModel$login$1(this, loginRequest, context, binding, null), 3, null);
+        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new LoginViewModel$login$1(this, loginRequest, context, binding, null), 3, null);
         return launch$default;
     }
 

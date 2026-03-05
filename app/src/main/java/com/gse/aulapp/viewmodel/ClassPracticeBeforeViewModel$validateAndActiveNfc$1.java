@@ -12,7 +12,7 @@ import com.gse.aulapp.util.NfcUtil;
 import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScopeKt;
 import kotlinx.coroutines.Dispatchers;
 
@@ -71,6 +71,6 @@ public final class ClassPracticeBeforeViewModel$validateAndActiveNfc$1 implement
     @Override // com.gse.aulapp.util.NfcUtil.NfcCallback
     public void onSuccess(Tag tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
-        BuildersKt__Builders_commonKt.launch$default(CoroutineScopeKt.CoroutineScope(Dispatchers.getMain()), null, null, new ClassPracticeBeforeViewModel$validateAndActiveNfc$1$onSuccess$1(tag, this.this$0, this.$activity, this.$binding, this.$isEnter, null), 3, null);
+        BuildersKt.launch$default(CoroutineScopeKt.CoroutineScope(Dispatchers.getMain()), null, null, new ClassPracticeBeforeViewModel$validateAndActiveNfc$1$onSuccess$1(tag, this.this$0, this.$activity, this.$binding, this.$isEnter, null), 3, null);
     }
 }

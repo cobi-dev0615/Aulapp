@@ -1,7 +1,7 @@
 package com.gse.aulapp.viewmodel.factory;
 
-import androidx.view.ViewModel;
-import androidx.view.ViewModelProvider;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 import com.gse.aulapp.model.repository.LoginRepository;
 import com.gse.aulapp.viewmodel.LoginViewModel;
 import kotlin.Metadata;

@@ -163,25 +163,6 @@ public final /* data */ class SessionRoutesResponse extends GeneralResponseDecry
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.data, result.data) && Intrinsics.areEqual(this.code, result.code);
         }
 
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getCode() {
-            return this.code;
-        }
-
-        public final List<SessionRoutesDataResponse> getData() {
-            return this.data;
-        }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-        public String getMessage() {
-            return this.message;
-        }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-        public Boolean getSuccess() {
-            return this.success;
-        }
-
         public int hashCode() {
             Boolean bool = this.success;
             int hashCode = (bool == null ? 0 : bool.hashCode()) * 31;
@@ -338,29 +319,6 @@ public final /* data */ class SessionRoutesResponse extends GeneralResponseDecry
         }
         SessionRoutesResponse sessionRoutesResponse = (SessionRoutesResponse) other;
         return Intrinsics.areEqual(this.statusCode, sessionRoutesResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, sessionRoutesResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, sessionRoutesResponse.generalMessage) && Intrinsics.areEqual(this.result, sessionRoutesResponse.result) && Intrinsics.areEqual(this.url, sessionRoutesResponse.url);
-    }
-
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getGeneralMessage() {
-        return this.generalMessage;
-    }
-
-    public final Result getResult() {
-        return this.result;
-    }
-
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public Integer getStatusCode() {
-        return this.statusCode;
-    }
-
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-    public String getStatusMessage() {
-        return this.statusMessage;
-    }
-
-    public final String getUrl() {
-        return this.url;
     }
 
     public int hashCode() {

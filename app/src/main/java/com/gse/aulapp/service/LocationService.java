@@ -19,7 +19,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.text.StringsKt;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.CoroutineScopeKt;
 import kotlinx.coroutines.Dispatchers;
@@ -52,7 +52,7 @@ public final class LocationService extends Service {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void saveGpsTrackerAndNotificationReport(Location location, String sessionId, long interval, NotificationCompat.Builder notification, NotificationManager notificationManager) {
-        BuildersKt__Builders_commonKt.launch$default(this.serviceScope, null, null, new LocationService$saveGpsTrackerAndNotificationReport$1(location, this, sessionId, null), 3, null);
+        BuildersKt.launch$default(this.serviceScope, null, null, new LocationService$saveGpsTrackerAndNotificationReport$1(location, this, sessionId, null), 3, null);
         String valueOf = String.valueOf(location.getLatitude());
         String valueOf2 = String.valueOf(location.getLongitude());
         location.getLatitude();

@@ -103,18 +103,6 @@ public final /* data */ class StepProcessSessionEntity implements Parcelable {
         return Intrinsics.areEqual(this.sessionID, stepProcessSessionEntity.sessionID) && Intrinsics.areEqual(this.type, stepProcessSessionEntity.type) && Intrinsics.areEqual(this.status, stepProcessSessionEntity.status) && this.isEntry == stepProcessSessionEntity.isEntry;
     }
 
-    public final String getSessionID() {
-        return this.sessionID;
-    }
-
-    public final String getStatus() {
-        return this.status;
-    }
-
-    public final String getType() {
-        return this.type;
-    }
-
     public int hashCode() {
         return Boolean.hashCode(this.isEntry) + x5.d(this.status, x5.d(this.type, this.sessionID.hashCode() * 31, 31), 31);
     }

@@ -15,7 +15,7 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.Regex;
 import kotlin.text.StringsKt;
 import kotlin.text.StringsKt__StringsJVMKt;
-import kotlin.text.StringsKt__StringsKt;
+import kotlin.text.StringsKt;
 import kotlin.text.StringsKt___StringsKt;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u0000 \u00022\u00020\u0001:\u0001\u0002¨\u0006\u0003"}, d2 = {"Lcom/gse/aulapp/util/DateUtil;", BuildConfig.FLAVOR, "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -58,8 +58,8 @@ public abstract class DateUtil {
             if (parseDate != null) {
                 String format = simpleDateFormat.format(parseDate);
                 Intrinsics.checkNotNullExpressionValue(format, "format(...)");
-                replaceAfter$default = StringsKt__StringsKt.replaceAfter$default(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(format, "AM", "am"), "A.M", "am"), "PM", "pm"), "P.M", "pm"), "p.", "p"), "a.", "a"), "m.", "m"), "a", "m", (String) null, 4, (Object) null);
-                str = StringsKt__StringsKt.replaceAfter$default(replaceAfter$default, "p", "m", (String) null, 4, (Object) null);
+                replaceAfter$default = StringsKt.replaceAfter$default(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(format, "AM", "am"), "A.M", "am"), "PM", "pm"), "P.M", "pm"), "p.", "p"), "a.", "a"), "m.", "m"), "a", "m", (String) null, 4, (Object) null);
+                str = StringsKt.replaceAfter$default(replaceAfter$default, "p", "m", (String) null, 4, (Object) null);
             }
             return str == null ? BuildConfig.FLAVOR : str;
         }

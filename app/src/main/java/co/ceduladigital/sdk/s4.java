@@ -2,7 +2,7 @@ package co.ceduladigital.sdk;
 
 import android.app.AlertDialog;
 import androidx.fragment.app.FragmentActivity;
-import androidx.view.OnBackPressedCallback;
+import androidx.activity.OnBackPressedCallback;
 import com.gse.aulapp.databinding.FragmentFirstLoginBinding;
 import com.gse.aulapp.model.data.statusControl.BiometrixResult;
 import com.gse.aulapp.model.enumerate.EnumDialogType;

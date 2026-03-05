@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.view.Menu;
 import androidx.navigation.NavController;
-import androidx.view.ViewModel;
+import androidx.lifecycle.ViewModel;
 import com.gse.aulapp.databinding.FragmentHomeBinding;
 import com.gse.aulapp.viewmodel.ClassInCourseViewModel;
 import com.gse.aulapp.viewmodel.ClassPracticeBeforeViewModel;

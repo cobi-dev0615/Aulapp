@@ -1,15 +1,15 @@
 package com.gse.aulapp.receptions.feature.biometrix.presentation.ui.viewmodel;
 
 import android.content.Context;
-import androidx.view.ViewModel;
-import androidx.view.ViewModelKt;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelKt;
 import com.gse.aulapp.R;
 import com.gse.aulapp.model.data.statusControl.BiometricResult;
 import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.flow.FlowKt;
 import kotlinx.coroutines.flow.MutableSharedFlow;
 import kotlinx.coroutines.flow.SharedFlow;
@@ -44,11 +44,11 @@ public final class WebviewViewModel extends ViewModel {
     }
 
     public final void handlePageFinished(boolean isRegisterFlow, String url) {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new WebviewViewModel$handlePageFinished$1(url, this, isRegisterFlow, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new WebviewViewModel$handlePageFinished$1(url, this, isRegisterFlow, null), 3, null);
     }
 
     public final void resetState() {
-        BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new WebviewViewModel$resetState$1(this, null), 3, null);
+        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new WebviewViewModel$resetState$1(this, null), 3, null);
     }
 
     public final void setLoadingFinished(boolean z) {

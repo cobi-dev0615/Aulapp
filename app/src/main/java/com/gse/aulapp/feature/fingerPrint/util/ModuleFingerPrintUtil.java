@@ -10,7 +10,7 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.GlobalScope;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u0000 \u00022\u00020\u0001:\u0001\u0002¨\u0006\u0003"}, d2 = {"Lcom/gse/aulapp/feature/fingerPrint/util/ModuleFingerPrintUtil;", BuildConfig.FLAVOR, "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -33,7 +33,7 @@ public abstract class ModuleFingerPrintUtil {
             Intrinsics.checkNotNullParameter(urlDocument, "urlDocument");
             Intrinsics.checkNotNullParameter(onErrorCallback, "onErrorCallback");
             Intrinsics.checkNotNullParameter(onSuccessCallback, "onSuccessCallback");
-            BuildersKt__Builders_commonKt.launch$default(GlobalScope.INSTANCE, null, null, new ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(fragmentActivity, hand, userId, urlDocument, onErrorCallback, onSuccessCallback, null), 3, null);
+            BuildersKt.launch$default(GlobalScope.INSTANCE, null, null, new ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(fragmentActivity, hand, userId, urlDocument, onErrorCallback, onSuccessCallback, null), 3, null);
         }
 
         private Companion() {

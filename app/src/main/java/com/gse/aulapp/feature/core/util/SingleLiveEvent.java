@@ -1,9 +1,9 @@
 package com.gse.aulapp.feature.core.util;
 
 import androidx.annotation.Keep;
-import androidx.view.LifecycleOwner;
-import androidx.view.MutableLiveData;
-import androidx.view.Observer;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Observer;
 import java.io.Serializable;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -16,10 +16,10 @@ public class SingleLiveEvent<T> extends MutableLiveData<T> implements Serializab
         setValue(null);
     }
 
-    @Override // androidx.view.LiveData
+    @Override // androidx.lifecycle.LiveData
     public void observe(LifecycleOwner lifecycleOwner, final Observer<? super T> observer) {
         super.observe(lifecycleOwner, new Observer<T>() { // from class: com.gse.aulapp.feature.core.util.SingleLiveEvent.1
-            @Override // androidx.view.Observer
+            @Override // androidx.lifecycle.Observer
             public void onChanged(T t) {
                 if (SingleLiveEvent.this.mPending.compareAndSet(true, false)) {
                     observer.onChanged(t);
@@ -28,7 +28,7 @@ public class SingleLiveEvent<T> extends MutableLiveData<T> implements Serializab
         });
     }
 
-    @Override // androidx.view.MutableLiveData, androidx.view.LiveData
+    @Override // androidx.lifecycle.MutableLiveData, androidx.lifecycle.LiveData
     public void setValue(T t) {
         this.mPending.set(true);
         super.setValue(t);

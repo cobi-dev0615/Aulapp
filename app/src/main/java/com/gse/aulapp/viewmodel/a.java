@@ -3,7 +3,7 @@ package com.gse.aulapp.viewmodel;
 import android.content.Context;
 import android.view.View;
 import androidx.navigation.NavController;
-import androidx.view.ViewModel;
+import androidx.lifecycle.ViewModel;
 import com.gse.aulapp.viewmodel.ClassInCourseViewModel$getSessionDataApi$1;
 import com.gse.aulapp.viewmodel.ClassPracticeBeforeViewModel$showDialogTimePassed$1;
 

@@ -18,13 +18,13 @@ import androidx.navigation.ActionOnlyNavDirections;
 import androidx.navigation.NavBackStackEntry;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.FragmentKt;
-import androidx.view.Lifecycle;
-import androidx.view.LifecycleOwner;
-import androidx.view.LifecycleOwnerKt;
-import androidx.view.MutableLiveData;
-import androidx.view.OnBackPressedDispatcher;
-import androidx.view.SavedStateHandle;
-import androidx.view.ViewModelProvider;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LifecycleOwnerKt;
+import androidx.lifecycle.MutableLiveData;
+import androidx.activity.OnBackPressedDispatcher;
+import androidx.lifecycle.SavedStateHandle;
+import androidx.lifecycle.ViewModelProvider;
 import co.ceduladigital.sdk.a1;
 import co.ceduladigital.sdk.a2;
 import co.ceduladigital.sdk.d2;
@@ -78,7 +78,7 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/gse/aulapp/view/fragment/ClassPracticeBeforeFragment;", "Landroidx/fragment/app/Fragment;", "<init>", "()V", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nClassPracticeBeforeFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClassPracticeBeforeFragment.kt\ncom/gse/aulapp/view/fragment/ClassPracticeBeforeFragment\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1060:1\n1#2:1061\n*E\n"})
@@ -438,7 +438,7 @@ public final class ClassPracticeBeforeFragment extends Fragment {
             }
             LifecycleOwner viewLifecycleOwner2 = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner2, "getViewLifecycleOwner(...)");
-            BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner2), null, null, new a2(this, null), 3, null);
+            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner2), null, null, new a2(this, null), 3, null);
             ClassPracticeBeforeViewModel classPracticeBeforeViewModel2 = this.b;
             if (classPracticeBeforeViewModel2 == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("viewModel");
@@ -453,10 +453,10 @@ public final class ClassPracticeBeforeFragment extends Fragment {
             classPracticeBeforeViewModel3.getStatusClass().observe(getViewLifecycleOwner(), new x0(1, new z0(1, this, ClassPracticeBeforeFragment.class, "validateUpdateStatusAppointment", "validateUpdateStatusAppointment(Lcom/gse/aulapp/model/data/statusControl/Status;)V", 0, 7)));
             LifecycleOwner viewLifecycleOwner3 = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner3, "getViewLifecycleOwner(...)");
-            BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner3), null, null, new w1(this, null), 3, null);
+            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner3), null, null, new w1(this, null), 3, null);
             LifecycleOwner viewLifecycleOwner4 = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner4, "getViewLifecycleOwner(...)");
-            BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner4), null, null, new d2(this, null), 3, null);
+            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner4), null, null, new d2(this, null), 3, null);
         }
         FragmentActivity requireActivity = requireActivity();
         Intrinsics.checkNotNull(requireActivity, "null cannot be cast to non-null type androidx.appcompat.app.AppCompatActivity");

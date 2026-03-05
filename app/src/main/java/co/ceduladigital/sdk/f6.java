@@ -1,8 +1,8 @@
 package co.ceduladigital.sdk;
 
-import androidx.view.Lifecycle;
-import androidx.view.LifecycleOwner;
-import androidx.view.RepeatOnLifecycleKt;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.RepeatOnLifecycleKt;
 import com.gse.aulapp.view.fragment.HomeFragment;
 import kotlin.ResultKt;
 import kotlin.Unit;

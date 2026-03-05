@@ -3,9 +3,9 @@ package co.ceduladigital.sdk;
 import android.os.Bundle;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
-import androidx.view.ComponentActivity;
-import androidx.view.SavedStateHandle;
-import androidx.view.SavedStateRegistry;
+import androidx.activity.ComponentActivity;
+import androidx.lifecycle.SavedStateHandle;
+import androidx.savedstate.SavedStateRegistry;
 
 /* loaded from: classes.dex */
 public final /* synthetic */ class v2 implements SavedStateRegistry.SavedStateProvider {

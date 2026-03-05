@@ -219,50 +219,6 @@ public final /* data */ class UserInfoDto implements Parcelable {
         return Intrinsics.areEqual(this.userID, userInfoDto.userID) && Intrinsics.areEqual(this.documentNumber, userInfoDto.documentNumber) && this.userRole == userInfoDto.userRole && Intrinsics.areEqual(this.userName, userInfoDto.userName) && Intrinsics.areEqual(this.userEmail, userInfoDto.userEmail) && Intrinsics.areEqual(this.documentType, userInfoDto.documentType) && this.fullEnrolment == userInfoDto.fullEnrolment && Intrinsics.areEqual(this.pathDocument, userInfoDto.pathDocument) && this.enrollOrVerify == userInfoDto.enrollOrVerify && this.hand == userInfoDto.hand && Intrinsics.areEqual(this.fourFingersIdentyID, userInfoDto.fourFingersIdentyID);
     }
 
-    public final String getDocumentNumber() {
-        return this.documentNumber;
-    }
-
-    public final String getDocumentType() {
-        return this.documentType;
-    }
-
-    public final EnumBiometricMoments getEnrollOrVerify() {
-        return this.enrollOrVerify;
-    }
-
-    public final FourFingersIdenty getFourFingersIdentyID() {
-        return this.fourFingersIdentyID;
-    }
-
-    public final boolean getFullEnrolment() {
-        return this.fullEnrolment;
-    }
-
-    public final EnumHandsAulapp getHand() {
-        return this.hand;
-    }
-
-    public final String getPathDocument() {
-        return this.pathDocument;
-    }
-
-    public final String getUserEmail() {
-        return this.userEmail;
-    }
-
-    public final String getUserID() {
-        return this.userID;
-    }
-
-    public final String getUserName() {
-        return this.userName;
-    }
-
-    public final EnumUserProfile getUserRole() {
-        return this.userRole;
-    }
-
     public int hashCode() {
         int d = x5.d(this.pathDocument, a.g(this.fullEnrolment, x5.d(this.documentType, x5.d(this.userEmail, x5.d(this.userName, (this.userRole.hashCode() + x5.d(this.documentNumber, this.userID.hashCode() * 31, 31)) * 31, 31), 31), 31), 31), 31);
         EnumBiometricMoments enumBiometricMoments = this.enrollOrVerify;

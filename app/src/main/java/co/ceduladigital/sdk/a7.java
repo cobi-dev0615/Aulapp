@@ -1,7 +1,7 @@
 package co.ceduladigital.sdk;
 
 import android.window.OnBackInvokedCallback;
-import androidx.view.OnBackPressedDispatcher;
+import androidx.activity.OnBackPressedDispatcher;
 import com.google.android.material.motion.MaterialBackHandler;
 import kotlin.jvm.functions.Function0;
 

@@ -1,7 +1,7 @@
 package com.gse.aulapp.viewmodel.factory;
 
-import androidx.view.ViewModel;
-import androidx.view.ViewModelProvider;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 import com.gse.aulapp.model.repository.ClassInCourseRepository;
 import com.gse.aulapp.model.repository.GpsRepository;
 import com.gse.aulapp.model.repository.SessionRepository;

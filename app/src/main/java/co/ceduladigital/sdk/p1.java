@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.NavBackStackEntry;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.FragmentKt;
-import androidx.view.SavedStateHandle;
+import androidx.lifecycle.SavedStateHandle;
 import com.gse.aulapp.model.data.statusControl.BiometrixResult;
 import com.gse.aulapp.model.dto.StepProfile;
 import com.gse.aulapp.model.enumerate.EnumDialogType;

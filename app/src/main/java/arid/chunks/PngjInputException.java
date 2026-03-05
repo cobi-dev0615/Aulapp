@@ -95,7 +95,7 @@ public abstract class PngjInputException {
             $$b = 73;
         }
 
-        public static values valueOf(String str) {
+        public static values valueOfString(String str) {
             Object[] objArr;
             long j;
             Object[] objArr2 = Fpnative.valueOf;

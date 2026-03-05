@@ -2,9 +2,9 @@ package com.gse.aulapp.viewmodel;
 
 import android.app.Activity;
 import android.nfc.Tag;
-import androidx.view.LiveData;
-import androidx.view.MutableLiveData;
-import androidx.view.ViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 import com.gse.aulapp.model.data.ClassDate;
 import com.gse.aulapp.model.repository.SessionRepository;
 import com.gse.aulapp.util.NfcUtil;
@@ -13,7 +13,7 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScopeKt;
 import kotlinx.coroutines.Dispatchers;
 
@@ -62,7 +62,7 @@ public final class ClassViewModel extends ViewModel {
             @Override // com.gse.aulapp.util.NfcUtil.NfcCallback
             public void onSuccess(Tag tag) {
                 Intrinsics.checkNotNullParameter(tag, "tag");
-                BuildersKt__Builders_commonKt.launch$default(CoroutineScopeKt.CoroutineScope(Dispatchers.getMain()), null, null, new ClassViewModel$validateAndActiveNfc$1$onSuccess$1(tag, activity, null), 3, null);
+                BuildersKt.launch$default(CoroutineScopeKt.CoroutineScope(Dispatchers.getMain()), null, null, new ClassViewModel$validateAndActiveNfc$1$onSuccess$1(tag, activity, null), 3, null);
             }
         });
     }

@@ -2,7 +2,7 @@ package co.ceduladigital.sdk;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
-import androidx.view.ComponentActivity;
+import androidx.activity.ComponentActivity;
 import com.google.firebase.sessions.ProcessDataManagerImpl;
 import com.google.firebase.sessions.UuidGenerator;
 import com.gse.aulapp.databinding.FragmentRideHistoryBinding;

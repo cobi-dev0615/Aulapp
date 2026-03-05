@@ -86,14 +86,6 @@ public final /* data */ class SessionInstructorRequest implements Parcelable {
         return Intrinsics.areEqual(this.to, sessionInstructorRequest.to) && Intrinsics.areEqual(this.from, sessionInstructorRequest.from);
     }
 
-    public final String getFrom() {
-        return this.from;
-    }
-
-    public final String getTo() {
-        return this.to;
-    }
-
     public int hashCode() {
         return this.from.hashCode() + (this.to.hashCode() * 31);
     }

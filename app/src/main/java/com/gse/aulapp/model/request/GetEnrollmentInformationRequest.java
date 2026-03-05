@@ -101,18 +101,6 @@ public final /* data */ class GetEnrollmentInformationRequest implements Parcela
         return Intrinsics.areEqual(this.valueSearch, getEnrollmentInformationRequest.valueSearch) && Intrinsics.areEqual(this.type, getEnrollmentInformationRequest.type) && Intrinsics.areEqual(this.role, getEnrollmentInformationRequest.role);
     }
 
-    public final String getRole() {
-        return this.role;
-    }
-
-    public final String getType() {
-        return this.type;
-    }
-
-    public final String getValueSearch() {
-        return this.valueSearch;
-    }
-
     public int hashCode() {
         return this.role.hashCode() + x5.d(this.type, this.valueSearch.hashCode() * 31, 31);
     }

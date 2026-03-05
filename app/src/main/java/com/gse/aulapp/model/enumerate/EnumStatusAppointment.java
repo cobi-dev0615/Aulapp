@@ -10,7 +10,7 @@ import kotlin.enums.EnumEntriesKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import kotlin.text.StringsKt__StringsKt;
+import kotlin.text.StringsKt;
 
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -104,10 +104,10 @@ public abstract class EnumStatusAppointment {
                 Locale locale = Locale.ROOT;
                 String lowerCase = name.toLowerCase(locale);
                 Intrinsics.checkNotNullExpressionValue(lowerCase, "toLowerCase(...)");
-                String obj = StringsKt__StringsKt.trim((CharSequence) lowerCase).toString();
+                String obj = StringsKt.trim((CharSequence) lowerCase).toString();
                 String lowerCase2 = EnumStatusAppointment.name$default(enumStatusAppointment, null, 1, null).toLowerCase(locale);
                 Intrinsics.checkNotNullExpressionValue(lowerCase2, "toLowerCase(...)");
-                if (Intrinsics.areEqual(obj, StringsKt__StringsKt.trim((CharSequence) lowerCase2).toString())) {
+                if (Intrinsics.areEqual(obj, StringsKt.trim((CharSequence) lowerCase2).toString())) {
                     return enumStatusAppointment;
                 }
             }

@@ -14,9 +14,9 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.FragmentKt;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.view.LifecycleOwner;
-import androidx.view.LifecycleOwnerKt;
-import androidx.view.ViewModelProvider;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LifecycleOwnerKt;
+import androidx.lifecycle.ViewModelProvider;
 import co.ceduladigital.sdk.a1;
 import co.ceduladigital.sdk.c0;
 import co.ceduladigital.sdk.w0;
@@ -50,7 +50,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/gse/aulapp/view/fragment/ClassInCourseFragment;", "Landroidx/fragment/app/Fragment;", "<init>", "()V", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nClassInCourseFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClassInCourseFragment.kt\ncom/gse/aulapp/view/fragment/ClassInCourseFragment\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,504:1\n1#2:505\n*E\n"})
@@ -282,7 +282,7 @@ public final class ClassInCourseFragment extends Fragment {
             classInCourseViewModel8.getMessage().observe(getViewLifecycleOwner(), new x0(0, new z0(1, this, ClassInCourseFragment.class, "observerMessage", "observerMessage(Lcom/gse/aulapp/model/data/statusControl/Status;)V", 0, 5)));
             LifecycleOwner viewLifecycleOwner = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-            BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new w0(this, null), 3, null);
+            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new w0(this, null), 3, null);
             FragmentClassInCourseBinding fragmentClassInCourseBinding3 = this.a;
             Intrinsics.checkNotNull(fragmentClassInCourseBinding3);
             fragmentClassInCourseBinding3.includeQuestionCard.nextButtonSwipe.setOnSlideCompleteListener(new y0(this));

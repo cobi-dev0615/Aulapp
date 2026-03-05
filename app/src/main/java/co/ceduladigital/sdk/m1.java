@@ -1,7 +1,7 @@
 package co.ceduladigital.sdk;
 
 import android.content.Context;
-import androidx.view.ViewModel;
+import androidx.lifecycle.ViewModel;
 import com.gse.aulapp.model.dto.ConfigurationSessionDto;
 import com.gse.aulapp.viewmodel.ClassInCourseViewModel;
 import com.gse.aulapp.viewmodel.PracticeClassViewModel;

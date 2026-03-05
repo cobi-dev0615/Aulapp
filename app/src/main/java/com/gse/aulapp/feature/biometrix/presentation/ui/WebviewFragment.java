@@ -18,13 +18,13 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import androidx.view.LifecycleOwner;
-import androidx.view.LifecycleOwnerKt;
-import androidx.view.OnBackPressedCallback;
-import androidx.view.OnBackPressedDispatcher;
-import androidx.view.ViewModelProvider;
-import androidx.view.result.ActivityResultLauncher;
-import androidx.view.result.contract.ActivityResultContract;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LifecycleOwnerKt;
+import androidx.activity.OnBackPressedCallback;
+import androidx.activity.OnBackPressedDispatcher;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContract;
 import co.ceduladigital.sdk.j3;
 import com.gse.aulapp.R;
 import com.gse.aulapp.databinding.FragmentWebviewBinding;
@@ -45,7 +45,7 @@ import kotlin.jvm.internal.Reflection;
 import kotlin.properties.Delegates;
 import kotlin.properties.ReadWriteProperty;
 import kotlin.reflect.KProperty;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 
 @Metadata(d1 = {"\u0000l\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 92\u00020\u0001:\u00019B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u0012\u0010!\u001a\u00020\"2\b\u0010#\u001a\u0004\u0018\u00010$H\u0016J&\u0010%\u001a\u0004\u0018\u00010&2\u0006\u0010'\u001a\u00020(2\b\u0010)\u001a\u0004\u0018\u00010*2\b\u0010#\u001a\u0004\u0018\u00010$H\u0016J\u0012\u0010+\u001a\u00020\"2\b\u0010#\u001a\u0004\u0018\u00010$H\u0016J\b\u0010,\u001a\u00020\"H\u0016J\u001a\u0010-\u001a\u00020\"2\u0006\u0010.\u001a\u00020&2\b\u0010#\u001a\u0004\u0018\u00010$H\u0016J\b\u0010/\u001a\u00020\"H\u0016J\u0010\u00100\u001a\u00020\"2\u0006\u00101\u001a\u00020\u000bH\u0002J\b\u00102\u001a\u00020\"H\u0003J\b\u00103\u001a\u00020\"H\u0002J\b\u00104\u001a\u00020\"H\u0002J\b\u00105\u001a\u00020\"H\u0002J\u0010\u00106\u001a\u00020\"2\u0006\u00107\u001a\u000208H\u0002R\u0010\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\b\u001a\u0004\u0018\u00010\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0005X\u0082.¢\u0006\u0002\n\u0000R+\u0010\f\u001a\u00020\u000b2\u0006\u0010\n\u001a\u00020\u000b8B@BX\u0082\u008e\u0002¢\u0006\u0012\n\u0004\b\u0010\u0010\u0011\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u0014\u0010\u0012\u001a\u00020\u00078BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0014R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0018X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0019\u001a\u0004\u0018\u00010\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001dX\u0082D¢\u0006\u0002\n\u0000R\u001c\u0010\u001e\u001a\u0010\u0012\f\u0012\n  *\u0004\u0018\u00010\u00050\u00050\u001fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006:"}, d2 = {"Lcom/gse/aulapp/feature/biometrix/presentation/ui/WebviewFragment;", "Landroidx/fragment/app/Fragment;", "<init>", "()V", "TAG", BuildConfig.FLAVOR, "_binding", "Lcom/gse/aulapp/databinding/FragmentWebviewBinding;", "toolbarTitle", "urlAction", "<set-?>", BuildConfig.FLAVOR, "isRegisterFlow", "()Z", "setRegisterFlow", "(Z)V", "isRegisterFlow$delegate", "Lkotlin/properties/ReadWriteProperty;", "binding", "getBinding", "()Lcom/gse/aulapp/databinding/FragmentWebviewBinding;", "viewModel", "Lcom/gse/aulapp/receptions/feature/biometrix/presentation/ui/viewmodel/WebviewViewModel;", "myGeolocationCallback", "Landroid/webkit/GeolocationPermissions$Callback;", "myGeolocationOrigin", "cameraPermissionRequest", "Landroid/webkit/PermissionRequest;", "CAMERA_PERMISSION_REQUEST_CODE", BuildConfig.FLAVOR, "requestPermissionLauncher", "Landroidx/activity/result/ActivityResultLauncher;", "kotlin.jvm.PlatformType", "onCreate", BuildConfig.FLAVOR, "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onActivityCreated", "onResume", "onViewCreated", "view", "onDestroyView", "callGlobalLoading", "show", "initUI", "collects", "listeners", "onBackPressed", "handlerBiometricResult", "data", "Lcom/gse/aulapp/model/data/statusControl/BiometrixResult;", "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: classes.dex */
@@ -67,14 +67,14 @@ public final class WebviewFragment extends Fragment {
 
     public WebviewFragment() {
         ActivityResultLauncher<String> registerForActivityResult = registerForActivityResult(new ActivityResultContract<String, Boolean>() { // from class: androidx.activity.result.contract.ActivityResultContracts$RequestPermission
-            @Override // androidx.view.result.contract.ActivityResultContract
+            @Override // androidx.activity.result.contract.ActivityResultContract
             public Intent createIntent(Context context, String input) {
                 Intrinsics.checkNotNullParameter(context, "context");
                 Intrinsics.checkNotNullParameter(input, "input");
                 return ActivityResultContracts$RequestMultiplePermissions.INSTANCE.createIntent$activity_release(new String[]{input});
             }
 
-            @Override // androidx.view.result.contract.ActivityResultContract
+            @Override // androidx.activity.result.contract.ActivityResultContract
             public ActivityResultContract.SynchronousResult<Boolean> getSynchronousResult(Context context, String input) {
                 Intrinsics.checkNotNullParameter(context, "context");
                 Intrinsics.checkNotNullParameter(input, "input");
@@ -85,7 +85,7 @@ public final class WebviewFragment extends Fragment {
             }
 
             /* JADX WARN: Can't rename method to resolve collision */
-            @Override // androidx.view.result.contract.ActivityResultContract
+            @Override // androidx.activity.result.contract.ActivityResultContract
             public Boolean parseResult(int resultCode, Intent intent) {
                 if (intent == null || resultCode != -1) {
                     return Boolean.FALSE;
@@ -123,7 +123,7 @@ public final class WebviewFragment extends Fragment {
     private final void collects() {
         LifecycleOwner viewLifecycleOwner = getViewLifecycleOwner();
         Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-        BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new WebviewFragment$collects$1(this, null), 3, null);
+        BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new WebviewFragment$collects$1(this, null), 3, null);
     }
 
     private final FragmentWebviewBinding getBinding() {
@@ -134,7 +134,7 @@ public final class WebviewFragment extends Fragment {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void handlerBiometricResult(BiometrixResult data) {
-        BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this), null, null, new WebviewFragment$handlerBiometricResult$1(data, this, null), 3, null);
+        BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this), null, null, new WebviewFragment$handlerBiometricResult$1(data, this, null), 3, null);
     }
 
     private final void initUI() {
@@ -310,7 +310,7 @@ public final class WebviewFragment extends Fragment {
                 super(true);
             }
 
-            @Override // androidx.view.OnBackPressedCallback
+            @Override // androidx.activity.OnBackPressedCallback
             public void handleOnBackPressed() {
                 boolean isRegisterFlow;
                 EnumBiometrixStatus enumBiometrixStatus = EnumBiometrixStatus.ONBACKPRESSED;

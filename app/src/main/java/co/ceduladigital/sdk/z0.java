@@ -5,8 +5,8 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.fragment.FragmentKt;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.view.LifecycleOwner;
-import androidx.view.LifecycleOwnerKt;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LifecycleOwnerKt;
 import com.gse.aulapp.R;
 import com.gse.aulapp.databinding.FragmentClassInCourseBinding;
 import com.gse.aulapp.model.adapter.QuestionStatusAdapter;
@@ -37,7 +37,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
-import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.BuildersKt;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class z0 extends FunctionReferenceImpl implements Function1 {
@@ -208,7 +208,7 @@ public final /* synthetic */ class z0 extends FunctionReferenceImpl implements F
                             classInCourseViewModel10.getTimeElapsedInServiceSlider().observe(classInCourseFragment4.getViewLifecycleOwner(), new x0(0, new p0(classInCourseFragment4, fragmentClassInCourseBinding10)));
                             LifecycleOwner viewLifecycleOwner = classInCourseFragment4.getViewLifecycleOwner();
                             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-                            BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new t0(classInCourseFragment4, null), 3, null);
+                            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new t0(classInCourseFragment4, null), 3, null);
                             LifecycleOwner viewLifecycleOwner2 = classInCourseFragment4.getViewLifecycleOwner();
                             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner2, "getViewLifecycleOwner(...)");
                             LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner2).launchWhenStarted(new v0(classInCourseFragment4, fragmentClassInCourseBinding10, null));
@@ -281,7 +281,7 @@ public final /* synthetic */ class z0 extends FunctionReferenceImpl implements F
                 p05.toString();
                 LifecycleOwner viewLifecycleOwner3 = classPracticeBeforeFragment.getViewLifecycleOwner();
                 Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner3, "getViewLifecycleOwner(...)");
-                BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner3), null, null, new j2(p05, classPracticeBeforeFragment, null), 3, null);
+                BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner3), null, null, new j2(p05, classPracticeBeforeFragment, null), 3, null);
                 return Unit.INSTANCE;
             case 7:
                 com.gse.aulapp.model.data.statusControl.Status p06 = (com.gse.aulapp.model.data.statusControl.Status) obj;
@@ -289,7 +289,7 @@ public final /* synthetic */ class z0 extends FunctionReferenceImpl implements F
                 ClassPracticeBeforeFragment classPracticeBeforeFragment2 = (ClassPracticeBeforeFragment) this.receiver;
                 LifecycleOwner viewLifecycleOwner4 = classPracticeBeforeFragment2.getViewLifecycleOwner();
                 Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner4, "getViewLifecycleOwner(...)");
-                BuildersKt__Builders_commonKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner4), null, null, new f2(p06, classPracticeBeforeFragment2, null), 3, null);
+                BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner4), null, null, new f2(p06, classPracticeBeforeFragment2, null), 3, null);
                 return Unit.INSTANCE;
             case 8:
                 StatusFingerPrint p07 = (StatusFingerPrint) obj;
