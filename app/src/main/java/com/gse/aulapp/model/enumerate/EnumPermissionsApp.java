@@ -14,6 +14,7 @@ import kotlin.jvm.internal.SourceDebugExtension;
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\u0081\u0002\u0018\u0000 \n2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\nB\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\b\u0010\b\u001a\u00020\tH&j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007¨\u0006\u000b"}, d2 = {"Lcom/gse/aulapp/model/enumerate/EnumPermissionsApp;", BuildConfig.FLAVOR, "<init>", "(Ljava/lang/String;I)V", "AIRPLANE_MODE", "NFC", "GPS", "CONNECTION", "nameSync", BuildConfig.FLAVOR, "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: classes.dex */
+@SuppressWarnings({"unchecked", "rawtypes"})
 public abstract class EnumPermissionsApp {
     private static final /* synthetic */ EnumEntries $ENTRIES;
     private static final /* synthetic */ EnumPermissionsApp[] $VALUES;
@@ -109,7 +110,7 @@ public abstract class EnumPermissionsApp {
     static {
         EnumPermissionsApp[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = EnumEntriesKt.enumEntries((Enum[]) (Object[]) $values);
         INSTANCE = new Companion(null);
     }
 
@@ -118,7 +119,11 @@ public abstract class EnumPermissionsApp {
     }
 
     public static EnumPermissionsApp valueOfString(String str) {
-        return (EnumPermissionsApp) Enum.valueOf(EnumPermissionsApp.class, str);
+        EnumPermissionsApp[] values = values();
+        for (EnumPermissionsApp v : values) {
+            if (v.name().equals(str)) return v;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumPermissionsApp[] values() {
@@ -127,6 +132,19 @@ public abstract class EnumPermissionsApp {
 
     public abstract String nameSync();
 
+    public final String name() {
+        return this._name;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
+    }
+
+    private final String _name;
+    private final int _ordinal;
+
     private EnumPermissionsApp(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
     }
 }

@@ -477,7 +477,7 @@ public final class SessionRepository {
                 int i2 = sessionRepository$sendSessionSyncPracticalRequest$1.label;
                 if ((i2 & IntCompanionObject.MIN_VALUE) != 0) {
                     sessionRepository$sendSessionSyncPracticalRequest$1.label = i2 - IntCompanionObject.MIN_VALUE;
-                    Object obj = sessionRepository$sendSessionSyncPracticalRequest$1.result;
+                    obj = sessionRepository$sendSessionSyncPracticalRequest$1.result;
                     Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
                     i = sessionRepository$sendSessionSyncPracticalRequest$1.label;
                     if (i != 0) {

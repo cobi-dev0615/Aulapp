@@ -123,7 +123,7 @@ public final /* data */ class DataLoginDto implements Parcelable {
             String readString9 = parcel.readString();
             String readString10 = parcel.readString();
             if (parcel.readInt() == 0) {
-                valueOf = workedHorsDto;
+                valueOf = null;
             } else {
                 valueOf = Boolean.valueOf(parcel.readInt() != 0);
             }

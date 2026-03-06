@@ -17,7 +17,7 @@ public final class values extends PngjException {
     private byte[] PngjOutputException;
     private byte[] PngjUnsupportedException;
     private int a;
-    private PngjBadCrcException e1;
+    private arid.a.PngjBadCrcException e1;
     private int getPadSub1;
     private int onErrorResponse;
 

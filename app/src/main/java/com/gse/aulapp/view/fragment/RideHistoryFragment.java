@@ -134,18 +134,14 @@ public final class RideHistoryFragment extends Fragment {
             FragmentRideHistoryBinding fragmentRideHistoryBinding4 = this.b;
             Intrinsics.checkNotNull(fragmentRideHistoryBinding4);
             final int i = 0;
-            fragmentRideHistoryBinding4.includeCardDate.dateLeft.setOnClickListener(new View.OnClickListener(this) { // from class: co.ceduladigital.sdk.a8
-                public final /* synthetic */ RideHistoryFragment b;
-
-                {
-                    this.b = this;
-                }
+            final RideHistoryFragment outerThis = this;
+            fragmentRideHistoryBinding4.includeCardDate.dateLeft.setOnClickListener(new View.OnClickListener() { // from class: co.ceduladigital.sdk.a8
 
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
                     switch (i) {
                         case 0:
-                            RideHistoryFragment this$0 = this.b;
+                            RideHistoryFragment this$0 = outerThis;
                             Intrinsics.checkNotNullParameter(this$0, "this$0");
                             RideHistoryViewModel rideHistoryViewModel2 = this$0.a;
                             if (rideHistoryViewModel2 == null) {
@@ -158,7 +154,7 @@ public final class RideHistoryFragment extends Fragment {
                             rideHistoryViewModel2.previousMonth(context2, fragmentRideHistoryBinding5);
                             break;
                         default:
-                            RideHistoryFragment this$02 = this.b;
+                            RideHistoryFragment this$02 = outerThis;
                             Intrinsics.checkNotNullParameter(this$02, "this$0");
                             RideHistoryViewModel rideHistoryViewModel3 = this$02.a;
                             if (rideHistoryViewModel3 == null) {
@@ -176,18 +172,14 @@ public final class RideHistoryFragment extends Fragment {
             FragmentRideHistoryBinding fragmentRideHistoryBinding5 = this.b;
             Intrinsics.checkNotNull(fragmentRideHistoryBinding5);
             final int i2 = 1;
-            fragmentRideHistoryBinding5.includeCardDate.dateRight.setOnClickListener(new View.OnClickListener(this) { // from class: co.ceduladigital.sdk.a8
-                public final /* synthetic */ RideHistoryFragment b;
-
-                {
-                    this.b = this;
-                }
+            final RideHistoryFragment outerThis2 = this;
+            fragmentRideHistoryBinding5.includeCardDate.dateRight.setOnClickListener(new View.OnClickListener() { // from class: co.ceduladigital.sdk.a8
 
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
                     switch (i2) {
                         case 0:
-                            RideHistoryFragment this$0 = this.b;
+                            RideHistoryFragment this$0 = outerThis2;
                             Intrinsics.checkNotNullParameter(this$0, "this$0");
                             RideHistoryViewModel rideHistoryViewModel2 = this$0.a;
                             if (rideHistoryViewModel2 == null) {
@@ -200,7 +192,7 @@ public final class RideHistoryFragment extends Fragment {
                             rideHistoryViewModel2.previousMonth(context2, fragmentRideHistoryBinding52);
                             break;
                         default:
-                            RideHistoryFragment this$02 = this.b;
+                            RideHistoryFragment this$02 = outerThis2;
                             Intrinsics.checkNotNullParameter(this$02, "this$0");
                             RideHistoryViewModel rideHistoryViewModel3 = this$02.a;
                             if (rideHistoryViewModel3 == null) {

@@ -37,7 +37,7 @@ public final /* data */ class PasswordRecoveryRequest implements Parcelable {
 
     /* JADX WARN: Multi-variable type inference failed */
     public PasswordRecoveryRequest() {
-        this(null, 1, 0 == true ? 1 : 0);
+        this(null, 1, null);
     }
 
     public static /* synthetic */ PasswordRecoveryRequest copy$default(PasswordRecoveryRequest passwordRecoveryRequest, String str, int i, Object obj) {

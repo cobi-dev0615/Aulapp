@@ -95,7 +95,7 @@ public final class RideHistoryRecyclerAdapter extends RecyclerView.Adapter<RideH
     public final String addAMPM(String hour) {
         List split$default;
         Intrinsics.checkNotNullParameter(hour, "hour");
-        split$default = StringsKt.split$default((CharSequence) hour, new String[]{":"}, false, 0, 6, (Object) null);
+        split$default = StringsKt.split((CharSequence) hour, new String[]{":"}, false, 0);
         int parseInt = Integer.parseInt((String) split$default.get(0));
         String str = (String) split$default.get(1);
         String str2 = parseInt >= 12 ? "pm" : "am";
@@ -139,12 +139,8 @@ public final class RideHistoryRecyclerAdapter extends RecyclerView.Adapter<RideH
         TextView tvCellNumber2 = holder.getBinding().tvCellNumber;
         Intrinsics.checkNotNullExpressionValue(tvCellNumber2, "tvCellNumber");
         final int i = 0;
-        ViewExtKt.setOnSingleClickListener(tvCellNumber2, new Function0(this) { // from class: co.ceduladigital.sdk.e8
-            public final /* synthetic */ RideHistoryRecyclerAdapter b;
-
-            {
-                this.b = this;
-            }
+        final RideHistoryRecyclerAdapter adapterThis = this;
+        ViewExtKt.setOnSingleClickListener(tvCellNumber2, new Function0() { // from class: co.ceduladigital.sdk.e8
 
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -152,10 +148,10 @@ public final class RideHistoryRecyclerAdapter extends RecyclerView.Adapter<RideH
                 Unit onBindViewHolder$lambda$4$lambda$3$lambda$2;
                 switch (i) {
                     case 0:
-                        onBindViewHolder$lambda$4$lambda$3$lambda$1 = RideHistoryRecyclerAdapter.onBindViewHolder$lambda$4$lambda$3$lambda$1(this.b, sessionRoutesDataResponse);
+                        onBindViewHolder$lambda$4$lambda$3$lambda$1 = RideHistoryRecyclerAdapter.onBindViewHolder$lambda$4$lambda$3$lambda$1(adapterThis, sessionRoutesDataResponse);
                         return onBindViewHolder$lambda$4$lambda$3$lambda$1;
                     default:
-                        onBindViewHolder$lambda$4$lambda$3$lambda$2 = RideHistoryRecyclerAdapter.onBindViewHolder$lambda$4$lambda$3$lambda$2(this.b, sessionRoutesDataResponse);
+                        onBindViewHolder$lambda$4$lambda$3$lambda$2 = RideHistoryRecyclerAdapter.onBindViewHolder$lambda$4$lambda$3$lambda$2(adapterThis, sessionRoutesDataResponse);
                         return onBindViewHolder$lambda$4$lambda$3$lambda$2;
                 }
             }
@@ -163,12 +159,8 @@ public final class RideHistoryRecyclerAdapter extends RecyclerView.Adapter<RideH
         MaterialButton btnStartClass = holder.getBinding().includeShowHistoryButton.btnStartClass;
         Intrinsics.checkNotNullExpressionValue(btnStartClass, "btnStartClass");
         final int i2 = 1;
-        ViewExtKt.setOnSingleClickListener(btnStartClass, new Function0(this) { // from class: co.ceduladigital.sdk.e8
-            public final /* synthetic */ RideHistoryRecyclerAdapter b;
-
-            {
-                this.b = this;
-            }
+        final RideHistoryRecyclerAdapter adapterThis2 = this;
+        ViewExtKt.setOnSingleClickListener(btnStartClass, new Function0() { // from class: co.ceduladigital.sdk.e8
 
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -176,10 +168,10 @@ public final class RideHistoryRecyclerAdapter extends RecyclerView.Adapter<RideH
                 Unit onBindViewHolder$lambda$4$lambda$3$lambda$2;
                 switch (i2) {
                     case 0:
-                        onBindViewHolder$lambda$4$lambda$3$lambda$1 = RideHistoryRecyclerAdapter.onBindViewHolder$lambda$4$lambda$3$lambda$1(this.b, sessionRoutesDataResponse);
+                        onBindViewHolder$lambda$4$lambda$3$lambda$1 = RideHistoryRecyclerAdapter.onBindViewHolder$lambda$4$lambda$3$lambda$1(adapterThis2, sessionRoutesDataResponse);
                         return onBindViewHolder$lambda$4$lambda$3$lambda$1;
                     default:
-                        onBindViewHolder$lambda$4$lambda$3$lambda$2 = RideHistoryRecyclerAdapter.onBindViewHolder$lambda$4$lambda$3$lambda$2(this.b, sessionRoutesDataResponse);
+                        onBindViewHolder$lambda$4$lambda$3$lambda$2 = RideHistoryRecyclerAdapter.onBindViewHolder$lambda$4$lambda$3$lambda$2(adapterThis2, sessionRoutesDataResponse);
                         return onBindViewHolder$lambda$4$lambda$3$lambda$2;
                 }
             }

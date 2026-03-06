@@ -124,6 +124,10 @@ public abstract class Status {
             this.data = data;
         }
 
+        public final Object getData() {
+            return this.data;
+        }
+
         public boolean equals(Object other) {
             if (this == other) {
                 return true;

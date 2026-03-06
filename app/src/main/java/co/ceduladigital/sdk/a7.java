@@ -21,7 +21,7 @@ public final /* synthetic */ class a7 implements OnBackInvokedCallback {
                 ((MaterialBackHandler) this.b).handleBackInvoked();
                 break;
             case 1:
-                OnBackPressedDispatcher.Api33Impl.createOnBackInvokedCallback$lambda$0((Function0) this.b);
+                ((Function0) this.b).invoke();
                 break;
             default:
                 ((Runnable) this.b).run();

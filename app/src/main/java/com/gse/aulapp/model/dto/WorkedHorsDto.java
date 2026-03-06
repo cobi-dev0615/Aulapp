@@ -40,7 +40,7 @@ public final /* data */ class WorkedHorsDto implements Parcelable {
 
     /* JADX WARN: Multi-variable type inference failed */
     public WorkedHorsDto() {
-        this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        this(null, null, 3, null);
     }
 
     public static /* synthetic */ WorkedHorsDto copy$default(WorkedHorsDto workedHorsDto, Integer num, Integer num2, int i, Object obj) {

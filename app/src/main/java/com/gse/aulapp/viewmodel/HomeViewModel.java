@@ -102,6 +102,7 @@ import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
@@ -111,8 +112,9 @@ import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt;
-import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Dispatchers;
+import kotlinx.coroutines.channels.BufferOverflow;
 import kotlinx.coroutines.flow.FlowKt;
 import kotlinx.coroutines.flow.MutableSharedFlow;
 import kotlinx.coroutines.flow.SharedFlow;
@@ -170,7 +172,7 @@ public final class HomeViewModel extends ViewModel {
         this.TAG = "HomeViewModel";
         this.gson = new Gson();
         this.listClasType = new ArrayList();
-        MutableSharedFlow<Status> MutableSharedFlow$default = SharedFlowKt.MutableSharedFlow$default(0, 1, null, 4, null);
+        MutableSharedFlow<Status> MutableSharedFlow$default = SharedFlowKt.MutableSharedFlow(0, 1, (BufferOverflow) null);
         this._message = MutableSharedFlow$default;
         this.message = FlowKt.asSharedFlow(MutableSharedFlow$default);
         MutableLiveData<Menu> mutableLiveData = new MutableLiveData<>();
@@ -351,7 +353,7 @@ public final class HomeViewModel extends ViewModel {
                 return Unit.INSTANCE;
             }
         }
-        homeViewModel$getConfigurationSession$1 = new HomeViewModel$getConfigurationSession$1(this, continuation);
+        homeViewModel$getConfigurationSession$1 = new HomeViewModel$getConfigurationSession$1(this, (Continuation) continuation);
         Object obj2 = homeViewModel$getConfigurationSession$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = homeViewModel$getConfigurationSession$1.label;
@@ -385,11 +387,11 @@ public final class HomeViewModel extends ViewModel {
         ArrayList arrayList2 = new ArrayList();
         if (!listIdSessionDB.isEmpty()) {
             if (sessionInstructorObjectResponseList != null) {
-                Iterator<T> it = sessionInstructorObjectResponseList.iterator();
+                Iterator it = sessionInstructorObjectResponseList.iterator();
                 while (it.hasNext()) {
                     List<SessionResponse> sessions = ((SessionInstructorObjectResponse) it.next()).getSessions();
                     if (sessions != null) {
-                        Iterator<T> it2 = sessions.iterator();
+                        Iterator it2 = sessions.iterator();
                         while (it2.hasNext()) {
                             arrayList2.add(((SessionResponse) it2.next()).getId());
                         }
@@ -412,7 +414,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     private final void getSessionByFilterChip() {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$getSessionByFilterChip$1(this, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$getSessionByFilterChip$1(this, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -432,7 +434,7 @@ public final class HomeViewModel extends ViewModel {
         Object obj;
         List<ConfigurationSessionDto> value = this._listConfigSession.getValue();
         if (value != null) {
-            Iterator<T> it = value.iterator();
+            Iterator it = value.iterator();
             while (true) {
                 if (!it.hasNext()) {
                     break;
@@ -497,12 +499,12 @@ public final class HomeViewModel extends ViewModel {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void initConfigurationPracticalAndExamPractical(SessionInstructorResponse sessionInstructorResponse) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new HomeViewModel$initConfigurationPracticalAndExamPractical$1(this, sessionInstructorResponse, null), 2, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), (CoroutineStart) null, new HomeViewModel$initConfigurationPracticalAndExamPractical$1(this, sessionInstructorResponse, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void loadDefaultList() {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$loadDefaultList$1(this, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$loadDefaultList$1(this, null));
     }
 
     private final void onClickChip(Chip chip, FragmentHomeBinding binding) {
@@ -524,7 +526,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     private final void onClickLogOut(Activity activity, FragmentHomeBinding binding, Menu item) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$onClickLogOut$1(this, activity, binding, item, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$onClickLogOut$1(this, activity, binding, item, null));
     }
 
     private final void onSelectOkDate(Context context, Activity activity) {
@@ -672,8 +674,8 @@ public final class HomeViewModel extends ViewModel {
         SessionInstructorObjectResponse sessionInstructorObjectResponse9;
         Ref.ObjectRef objectRef11;
         Ref.ObjectRef objectRef12;
-        T t;
-        T t2;
+        Object t;
+        Object t2;
         Object endEntryClass;
         SessionResponseDto sessionResponseDto6 = sessionResponseDto;
         if (continuation instanceof HomeViewModel$saveSessionFull$1) {
@@ -689,11 +691,11 @@ public final class HomeViewModel extends ViewModel {
                         Ref.ObjectRef objectRef13 = new Ref.ObjectRef();
                         objectRef13.element = new ArrayList();
                         if (sessionResponseDto6 != null && (sessionInstructorObjectResponse = sessionResponseDto6.getSessionInstructorObjectResponse()) != null) {
-                            Iterator<T> it13 = sessionInstructorObjectResponse.iterator();
+                            Iterator it13 = sessionInstructorObjectResponse.iterator();
                             while (it13.hasNext()) {
                                 List<SessionResponse> sessions = ((SessionInstructorObjectResponse) it13.next()).getSessions();
                                 if (sessions != null) {
-                                    Iterator<T> it14 = sessions.iterator();
+                                    Iterator it14 = sessions.iterator();
                                     while (it14.hasNext()) {
                                         ((List) objectRef13.element).add(((SessionResponse) it14.next()).getId());
                                     }
@@ -1286,7 +1288,7 @@ public final class HomeViewModel extends ViewModel {
                 }
             }
         }
-        homeViewModel$saveSessionFull$1 = new HomeViewModel$saveSessionFull$1(this, continuation);
+        homeViewModel$saveSessionFull$1 = new HomeViewModel$saveSessionFull$1(this, (Continuation) continuation);
         Object obj32 = homeViewModel$saveSessionFull$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         switch (homeViewModel$saveSessionFull$1.label) {
@@ -1355,7 +1357,7 @@ public final class HomeViewModel extends ViewModel {
         if (runningServices != null && runningServices.isEmpty()) {
             return false;
         }
-        Iterator<T> it = runningServices.iterator();
+        Iterator it = runningServices.iterator();
         while (it.hasNext()) {
             if (Intrinsics.areEqual(((ActivityManager.RunningServiceInfo) it.next()).service.getClassName(), serviceClass.getName())) {
                 return true;
@@ -1392,7 +1394,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(datetime, "datetime");
         Date parse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(datetime);
         if (date != null && parse != null && date2 != null) {
-            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this$0), null, null, new HomeViewModel$validateAllowNavigate$1$1(session, configSession, date, date2, activity, parse, z, z2, this$0, navController, classRecyclerAdapter, null), 3, null);
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this$0), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$validateAllowNavigate$1$1(session, configSession, date, date2, activity, parse, z, z2, this$0, navController, classRecyclerAdapter, null));
         }
         return Unit.INSTANCE;
     }
@@ -1416,7 +1418,7 @@ public final class HomeViewModel extends ViewModel {
         if (isValidateSession) {
             List<SessionInstructorObjectResponse> sessionInstructorObjectResponse = result.getSessionInstructorObjectResponse();
             if (sessionInstructorObjectResponse != null) {
-                Iterator<T> it = sessionInstructorObjectResponse.iterator();
+                Iterator it = sessionInstructorObjectResponse.iterator();
                 sessionResponse = null;
                 while (it.hasNext()) {
                     List<SessionResponse> sessions = ((SessionInstructorObjectResponse) it.next()).getSessions();
@@ -1495,7 +1497,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(sessionInstructorRequest, "sessionInstructorRequest");
         try {
-            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$getSessionFromApiAndSave$1(this, context, sessionInstructorRequest, isValidateSession, sessionId, navController, classRecyclerAdapter, activity, null), 3, null);
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$getSessionFromApiAndSave$1(this, context, sessionInstructorRequest, isValidateSession, sessionId, navController, classRecyclerAdapter, activity, null));
         } catch (Exception e) {
             LogSendUtil.INSTANCE.setLog(context, q.i("getSessionFromApiAndSave exception: ", e.getMessage()), "getSessionFromApiAndSave", true);
         }
@@ -1520,7 +1522,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(item, "item");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$initSessionSyncPending$1(this, context, item, binding, toast, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$initSessionSyncPending$1(this, context, item, binding, toast, null));
     }
 
     /* renamed from: isSwipeRefresh, reason: from getter */
@@ -1554,7 +1556,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(binding, "binding");
         this.dateSelect = null;
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$onSwipeRefresh$1(this, activity, binding, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$onSwipeRefresh$1(this, activity, binding, null));
         getSwrHome().setRefreshing(false);
         ChipGroup chipGroup = binding.chipGroup;
         Intrinsics.checkNotNullExpressionValue(chipGroup, "chipGroup");
@@ -1565,7 +1567,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     public final void saveSessionAndGetFromDB(SessionResponseDto sessionInstructorObjectResponseList) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HomeViewModel$saveSessionAndGetFromDB$1(this, sessionInstructorObjectResponseList, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$saveSessionAndGetFromDB$1(this, sessionInstructorObjectResponseList, null));
     }
 
     public final void setChipAll(Chip chip) {
@@ -1652,7 +1654,7 @@ public final class HomeViewModel extends ViewModel {
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit validateAllowNavigate$lambda$26;
-                HomeViewModel homeViewModel = this;
+                HomeViewModel homeViewModel = HomeViewModel.this;
                 SessionDto sessionDto = session;
                 boolean z = areEqual;
                 NavController navController2 = navController;

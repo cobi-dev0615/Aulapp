@@ -40,7 +40,7 @@ public final /* data */ class LoginRequest implements Parcelable {
 
     /* JADX WARN: Multi-variable type inference failed */
     public LoginRequest() {
-        this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        this(null, null, 3, null);
     }
 
     public static /* synthetic */ LoginRequest copy$default(LoginRequest loginRequest, String str, String str2, int i, Object obj) {

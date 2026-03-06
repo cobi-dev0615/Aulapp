@@ -140,7 +140,7 @@ public final /* data */ class RefreshToken implements Parcelable {
             String readString9 = parcel.readString();
             CenterDto centerDto = (CenterDto) (parcel.readInt() == 0 ? parcelable5 : CenterDto.CREATOR.createFromParcel(parcel));
             if (parcel.readInt() == 0) {
-                valueOf = parcelable5;
+                valueOf = null;
             } else {
                 valueOf = Boolean.valueOf(parcel.readInt() != 0);
             }

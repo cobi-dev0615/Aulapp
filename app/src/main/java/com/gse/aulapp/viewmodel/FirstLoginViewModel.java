@@ -40,8 +40,11 @@ import kotlin.Metadata;
 import kotlin.NoWhenBranchMatchedException;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Job;
+import kotlinx.coroutines.channels.BufferOverflow;
 import kotlinx.coroutines.flow.FlowKt;
 import kotlinx.coroutines.flow.MutableSharedFlow;
 import kotlinx.coroutines.flow.MutableStateFlow;
@@ -86,19 +89,19 @@ public final class FirstLoginViewModel extends ViewModel {
         this.biometrixRepository = biometrixRepository;
         this.sessionRepository = sessionRepository;
         this.tag = "FirstLoginViewModel";
-        MutableSharedFlow<Status> MutableSharedFlow$default = SharedFlowKt.MutableSharedFlow$default(0, 1, null, 4, null);
+        MutableSharedFlow<Status> MutableSharedFlow$default = SharedFlowKt.MutableSharedFlow(0, 1, (BufferOverflow) null);
         this._message = MutableSharedFlow$default;
         this.message = FlowKt.asSharedFlow(MutableSharedFlow$default);
         MutableStateFlow<Status> MutableStateFlow = StateFlowKt.MutableStateFlow(Status.Empty.INSTANCE);
         this._messagePasswordRecovery = MutableStateFlow;
         this.messagePasswordRecovery = MutableStateFlow;
-        MutableSharedFlow<Status> MutableSharedFlow$default2 = SharedFlowKt.MutableSharedFlow$default(0, 1, null, 4, null);
+        MutableSharedFlow<Status> MutableSharedFlow$default2 = SharedFlowKt.MutableSharedFlow(0, 1, (BufferOverflow) null);
         this._messageRefreshToken = MutableSharedFlow$default2;
         this.messageRefreshToken = FlowKt.asSharedFlow(MutableSharedFlow$default2);
-        MutableSharedFlow<Status> MutableSharedFlow$default3 = SharedFlowKt.MutableSharedFlow$default(0, 1, null, 4, null);
+        MutableSharedFlow<Status> MutableSharedFlow$default3 = SharedFlowKt.MutableSharedFlow(0, 1, (BufferOverflow) null);
         this._messageRefreshTokenCEA = MutableSharedFlow$default3;
         this.messageRefreshTokenCEA = FlowKt.asSharedFlow(MutableSharedFlow$default3);
-        MutableSharedFlow<Status> MutableSharedFlow$default4 = SharedFlowKt.MutableSharedFlow$default(0, 1, null, 4, null);
+        MutableSharedFlow<Status> MutableSharedFlow$default4 = SharedFlowKt.MutableSharedFlow(0, 1, (BufferOverflow) null);
         this._messageBiometrix = MutableSharedFlow$default4;
         this.messageBiometrix = FlowKt.asSharedFlow(MutableSharedFlow$default4);
     }
@@ -118,19 +121,19 @@ public final class FirstLoginViewModel extends ViewModel {
 
     private final Job login(Context context, LoginRequest loginRequest) {
         Job launch$default;
-        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$login$1(this, loginRequest, context, null), 3, null);
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new FirstLoginViewModel$login$1(this, loginRequest, context, null));
         return launch$default;
     }
 
     private final Job refreshToken(Context context, RefreshTokenRequest tokenRefreshRequest) {
         Job launch$default;
-        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$refreshToken$1(this, tokenRefreshRequest, context, null), 3, null);
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new FirstLoginViewModel$refreshToken$1(this, tokenRefreshRequest, context, null));
         return launch$default;
     }
 
     private final Job refreshTokenCEA(String ceaSelected, List<CenterDto> centerListCEA, String numberDocument, Activity activity) {
         Job launch$default;
-        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$refreshTokenCEA$1(this, ceaSelected, centerListCEA, numberDocument, activity, null), 3, null);
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new FirstLoginViewModel$refreshTokenCEA$1(this, ceaSelected, centerListCEA, numberDocument, activity, null));
         return launch$default;
     }
 
@@ -159,13 +162,13 @@ public final class FirstLoginViewModel extends ViewModel {
         if (firstLogin) {
             throw new NoWhenBranchMatchedException();
         }
-        equals$default = StringsKt.equals$default(numberDocument, userOrDocumentBox, false, 2, null);
+        equals$default = StringsKt.equals(numberDocument, userOrDocumentBox, false);
         if (!equals$default) {
             refreshToken(activity, new RefreshTokenRequest(BuildConfig.FLAVOR));
             return;
         }
         if (ceaBox.length() > 0) {
-            equals$default2 = StringsKt.equals$default(selectedCEA, cea != null ? cea.getName() : null, false, 2, null);
+            equals$default2 = StringsKt.equals(selectedCEA, cea != null ? cea.getName() : null, false);
             if (equals$default2) {
                 refreshToken(activity, new RefreshTokenRequest(String.valueOf(email)));
                 return;
@@ -246,14 +249,14 @@ public final class FirstLoginViewModel extends ViewModel {
     public final void initBiometrix(Activity activity, BiometrixRequest request) {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(request, "request");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$initBiometrix$1(this, activity, request, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new FirstLoginViewModel$initBiometrix$1(this, activity, request, null));
     }
 
     public final Job recoverPassword(Context context, String email) {
         Job launch$default;
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(email, "email");
-        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new FirstLoginViewModel$recoverPassword$1(this, email, context, null), 3, null);
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new FirstLoginViewModel$recoverPassword$1(this, email, context, null));
         return launch$default;
     }
 

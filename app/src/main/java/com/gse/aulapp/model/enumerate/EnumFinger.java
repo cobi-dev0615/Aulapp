@@ -10,6 +10,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0000\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\b\u0010\b\u001a\u00020\tH&j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007¨\u0006\n"}, d2 = {"Lcom/gse/aulapp/model/enumerate/EnumFinger;", BuildConfig.FLAVOR, "<init>", "(Ljava/lang/String;I)V", "INDEX", "MIDDLE", "RING", "LITTLE", "nameFinger", BuildConfig.FLAVOR, "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: classes.dex */
+@SuppressWarnings({"unchecked", "rawtypes"})
 public abstract class EnumFinger {
     private static final /* synthetic */ EnumEntries $ENTRIES;
     private static final /* synthetic */ EnumFinger[] $VALUES;
@@ -61,19 +62,23 @@ public abstract class EnumFinger {
     static {
         EnumFinger[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = EnumEntriesKt.enumEntries((Enum[]) (Object[]) $values);
     }
 
     public /* synthetic */ EnumFinger(String str, int i, DefaultConstructorMarker defaultConstructorMarker) {
         this(str, i);
     }
 
-    public static EnumEntries<EnumFinger> getEntries() {
+    public static EnumEntries getEntries() {
         return $ENTRIES;
     }
 
     public static EnumFinger valueOfString(String str) {
-        return (EnumFinger) Enum.valueOf(EnumFinger.class, str);
+        EnumFinger[] values = values();
+        for (EnumFinger v : values) {
+            if (v.name().equals(str)) return v;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumFinger[] values() {
@@ -82,6 +87,19 @@ public abstract class EnumFinger {
 
     public abstract String nameFinger();
 
+    public final String name() {
+        return this._name;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
+    }
+
+    private final String _name;
+    private final int _ordinal;
+
     private EnumFinger(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
     }
 }

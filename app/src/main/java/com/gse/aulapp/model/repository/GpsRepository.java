@@ -18,6 +18,7 @@ import kotlin.jvm.internal.Intrinsics;
 
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u001e\u0010\n\u001a\b\u0012\u0004\u0012\u00020\t0\b2\u0006\u0010\u0007\u001a\u00020\u0006H\u0086@¢\u0006\u0004\b\n\u0010\u000bJ\u0018\u0010\u000e\u001a\u00020\r2\u0006\u0010\f\u001a\u00020\tH\u0086@¢\u0006\u0004\b\u000e\u0010\u000fJ\u0018\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u0007\u001a\u00020\u0006H\u0086@¢\u0006\u0004\b\u0011\u0010\u000bJ\u0018\u0010\u0012\u001a\u00020\u00102\u0006\u0010\u0007\u001a\u00020\u0006H\u0086@¢\u0006\u0004\b\u0012\u0010\u000bR\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0003\u0010\u0013¨\u0006\u0014"}, d2 = {"Lcom/gse/aulapp/model/repository/GpsRepository;", BuildConfig.FLAVOR, "Lcom/gse/aulapp/model/dao/GpsDao;", "gpsDao", "<init>", "(Lcom/gse/aulapp/model/dao/GpsDao;)V", BuildConfig.FLAVOR, "sessionID", BuildConfig.FLAVOR, "Lcom/gse/aulapp/model/dto/LocationDto;", "getGpsTraceBySessionID", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "locationDto", BuildConfig.FLAVOR, "saveGpsTrace", "(Lcom/gse/aulapp/model/dto/LocationDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", BuildConfig.FLAVOR, "getAverageSpeedBySessionID", "getMaxSpeedBySessionID", "Lcom/gse/aulapp/model/dao/GpsDao;", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: classes.dex */
+@SuppressWarnings({"unchecked", "rawtypes"})
 public final class GpsRepository {
     private final GpsDao gpsDao;
 
@@ -84,7 +85,7 @@ public final class GpsRepository {
                 obj = gpsDao2.getSpeedCustom(simpleSQLiteQuery, gpsRepository$getAverageSpeedBySessionID$1);
             }
         }
-        gpsRepository$getAverageSpeedBySessionID$1 = new GpsRepository$getAverageSpeedBySessionID$1(this, continuation);
+        gpsRepository$getAverageSpeedBySessionID$1 = new GpsRepository$getAverageSpeedBySessionID$1(this, (Continuation) continuation);
         Object obj2 = gpsRepository$getAverageSpeedBySessionID$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = gpsRepository$getAverageSpeedBySessionID$1.label;
@@ -137,7 +138,7 @@ public final class GpsRepository {
                 return companion.gpsTraceEntityToLocationDto((List<GpsTraceEntity>) obj);
             }
         }
-        gpsRepository$getGpsTraceBySessionID$1 = new GpsRepository$getGpsTraceBySessionID$1(this, continuation);
+        gpsRepository$getGpsTraceBySessionID$1 = new GpsRepository$getGpsTraceBySessionID$1(this, (Continuation) continuation);
         Object obj2 = gpsRepository$getGpsTraceBySessionID$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = gpsRepository$getGpsTraceBySessionID$1.label;
@@ -204,7 +205,7 @@ public final class GpsRepository {
                 obj = gpsDao2.getSpeedCustom(simpleSQLiteQuery, gpsRepository$getMaxSpeedBySessionID$1);
             }
         }
-        gpsRepository$getMaxSpeedBySessionID$1 = new GpsRepository$getMaxSpeedBySessionID$1(this, continuation);
+        gpsRepository$getMaxSpeedBySessionID$1 = new GpsRepository$getMaxSpeedBySessionID$1(this, (Continuation) continuation);
         Object obj2 = gpsRepository$getMaxSpeedBySessionID$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = gpsRepository$getMaxSpeedBySessionID$1.label;

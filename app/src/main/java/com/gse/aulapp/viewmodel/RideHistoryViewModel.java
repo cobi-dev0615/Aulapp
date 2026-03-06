@@ -28,7 +28,9 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
@@ -56,7 +58,7 @@ public final class RideHistoryViewModel extends ViewModel {
 
     private final void getRoutesFromApi(Context context, SessionInstructorRequest sessionInstructorRequest) {
         try {
-            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new RideHistoryViewModel$getRoutesFromApi$1(context, sessionInstructorRequest, this, null), 3, null);
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new RideHistoryViewModel$getRoutesFromApi$1(context, sessionInstructorRequest, this, null));
         } catch (Exception e) {
             LogSendUtil.INSTANCE.setLog(context, q.i("getRoutesFromApi exception: ", e.getMessage()), "getRoutesFromApi", true);
             this._message.setValue(new Status.Failure(new Exception(e.getMessage())));

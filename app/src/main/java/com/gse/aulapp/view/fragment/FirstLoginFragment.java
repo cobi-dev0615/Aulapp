@@ -672,7 +672,7 @@ public final class FirstLoginFragment extends Fragment {
             BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner5), (CoroutineContext) null, (CoroutineStart) null, new l5(this, null));
             OnBackPressedDispatcher onBackPressedDispatcher = requireActivity().getOnBackPressedDispatcher();
             Intrinsics.checkNotNullExpressionValue(onBackPressedDispatcher, "<get-onBackPressedDispatcher>(...)");
-            OnBackPressedDispatcherKt.addCallback$default(onBackPressedDispatcher, this, false, new s4(this, 0), 2, null);
+            OnBackPressedDispatcherKt.addCallback(onBackPressedDispatcher, this, false, new s4(this, 0));
             FragmentFirstLoginBinding fragmentFirstLoginBinding20 = this.b;
             Intrinsics.checkNotNull(fragmentFirstLoginBinding20);
             fragmentFirstLoginBinding20.includeDropdownCea.actv.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: co.ceduladigital.sdk.t4
