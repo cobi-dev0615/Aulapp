@@ -57,7 +57,7 @@ public final class LocationService$start$2 extends SuspendLambda implements Func
             locationService.stop();
             callNotification = locationService.callNotification("Hemos detectado el uso de un simulador");
             objectRef.element = callNotification;
-            notificationManager.notify(10000002, callNotification.build());
+            notificationManager.notify(10000002, ((NotificationCompat.Builder) callNotification).build());
             locationService.isService = false;
         } else {
             z2 = locationService.isService;
@@ -107,7 +107,7 @@ public final class LocationService$start$2 extends SuspendLambda implements Func
                 public final Object invoke(Object obj2) {
                     Unit invokeSuspend$lambda$0;
                     boolean booleanValue = ((Boolean) obj2).booleanValue();
-                    invokeSuspend$lambda$0 = LocationService$start$2.invokeSuspend$lambda$0(LocationService.this, objectRef, notificationManager, intent, i, i2, location, str, j, booleanValue);
+                    invokeSuspend$lambda$0 = LocationService$start$2.invokeSuspend$lambda$0(locationService, objectRef, notificationManager, intent, i, i2, location, str, j, booleanValue);
                     return invokeSuspend$lambda$0;
                 }
             });

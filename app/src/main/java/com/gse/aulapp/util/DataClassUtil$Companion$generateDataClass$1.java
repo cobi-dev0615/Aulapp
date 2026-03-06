@@ -21,7 +21,7 @@ public final class DataClassUtil$Companion$generateDataClass$1 extends Continuat
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DataClassUtil$Companion$generateDataClass$1(DataClassUtil.Companion companion, Continuation<? super DataClassUtil$Companion$generateDataClass$1> continuation) {
-        super(continuation);
+        super((Continuation<Object>) continuation);
         this.this$0 = companion;
     }
 

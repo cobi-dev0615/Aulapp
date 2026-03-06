@@ -20,13 +20,13 @@ public final class PracticeClassViewModel$getConfigSessionDto$1$config$1 extends
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PracticeClassViewModel$getConfigSessionDto$1$config$1(PracticeClassViewModel practiceClassViewModel, Continuation<? super PracticeClassViewModel$getConfigSessionDto$1$config$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = practiceClassViewModel;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new PracticeClassViewModel$getConfigSessionDto$1$config$1(this.this$0, continuation);
+        return (Continuation<Unit>) (Object) new PracticeClassViewModel$getConfigSessionDto$1$config$1(this.this$0, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -50,6 +50,6 @@ public final class PracticeClassViewModel$getConfigSessionDto$1$config$1 extends
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super ConfigurationSessionDto> continuation) {
-        return ((PracticeClassViewModel$getConfigSessionDto$1$config$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((PracticeClassViewModel$getConfigSessionDto$1$config$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

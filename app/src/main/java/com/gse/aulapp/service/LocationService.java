@@ -93,7 +93,7 @@ public final class LocationService extends Service {
                 Intrinsics.throwUninitializedPropertyAccessException("locationClient");
                 locationClient = null;
             }
-            FlowKt.launchIn(FlowKt.onEach(FlowKt.catch$(locationClient.getLocationUpdates(interval), new LocationService$start$1(this, null)), new LocationService$start$2(this, objectRef, notificationManager, intent, flags, startId, sessionId, interval, null)), this.serviceScope);
+            FlowKt.launchIn(FlowKt.onEach(locationClient.getLocationUpdates(interval), new LocationService$start$2(this, objectRef, notificationManager, intent, flags, startId, sessionId, interval, null)), this.serviceScope);
             startForeground(10000002, ((NotificationCompat.Builder) objectRef.element).build());
         } catch (Exception e) {
             e.toString();

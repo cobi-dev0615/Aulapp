@@ -23,13 +23,13 @@ public final class NetworkConnectivityObserver$observe$1$callback$1$onUnavailabl
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
     public NetworkConnectivityObserver$observe$1$callback$1$onUnavailable$1(ProducerScope<? super ConnectivityObserver.Status> producerScope, Continuation<? super NetworkConnectivityObserver$observe$1$callback$1$onUnavailable$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$$this$callbackFlow = producerScope;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new NetworkConnectivityObserver$observe$1$callback$1$onUnavailable$1(this.$$this$callbackFlow, continuation);
+        return (Continuation<Unit>) (Object) new NetworkConnectivityObserver$observe$1$callback$1$onUnavailable$1(this.$$this$callbackFlow, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -55,6 +55,6 @@ public final class NetworkConnectivityObserver$observe$1$callback$1$onUnavailabl
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((NetworkConnectivityObserver$observe$1$callback$1$onUnavailable$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((NetworkConnectivityObserver$observe$1$callback$1$onUnavailable$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

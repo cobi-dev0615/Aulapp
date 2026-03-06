@@ -27,16 +27,16 @@ public final class PracticeClassViewModel$updatePracticeInfo$1 extends SuspendLa
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PracticeClassViewModel$updatePracticeInfo$1(PracticeClassViewModel practiceClassViewModel, FragmentPracticeClassBinding fragmentPracticeClassBinding, Continuation<? super PracticeClassViewModel$updatePracticeInfo$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = practiceClassViewModel;
         this.$binding = fragmentPracticeClassBinding;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        PracticeClassViewModel$updatePracticeInfo$1 practiceClassViewModel$updatePracticeInfo$1 = new PracticeClassViewModel$updatePracticeInfo$1(this.this$0, this.$binding, continuation);
+        PracticeClassViewModel$updatePracticeInfo$1 practiceClassViewModel$updatePracticeInfo$1 = new PracticeClassViewModel$updatePracticeInfo$1(this.this$0, this.$binding, (Continuation) continuation);
         practiceClassViewModel$updatePracticeInfo$1.L$0 = obj;
-        return practiceClassViewModel$updatePracticeInfo$1;
+        return (Continuation<Unit>) (Object) practiceClassViewModel$updatePracticeInfo$1;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x005c, code lost:
@@ -98,6 +98,6 @@ public final class PracticeClassViewModel$updatePracticeInfo$1 extends SuspendLa
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PracticeClassViewModel$updatePracticeInfo$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((PracticeClassViewModel$updatePracticeInfo$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

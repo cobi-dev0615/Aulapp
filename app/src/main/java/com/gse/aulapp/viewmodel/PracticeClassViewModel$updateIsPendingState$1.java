@@ -23,7 +23,7 @@ public final class PracticeClassViewModel$updateIsPendingState$1 extends Suspend
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PracticeClassViewModel$updateIsPendingState$1(PracticeClassViewModel practiceClassViewModel, String str, String str2, Continuation<? super PracticeClassViewModel$updateIsPendingState$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = practiceClassViewModel;
         this.$isPending = str;
         this.$sessionID = str2;
@@ -31,7 +31,7 @@ public final class PracticeClassViewModel$updateIsPendingState$1 extends Suspend
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new PracticeClassViewModel$updateIsPendingState$1(this.this$0, this.$isPending, this.$sessionID, continuation);
+        return (Continuation<Unit>) (Object) new PracticeClassViewModel$updateIsPendingState$1(this.this$0, this.$isPending, this.$sessionID, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -65,6 +65,6 @@ public final class PracticeClassViewModel$updateIsPendingState$1 extends Suspend
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PracticeClassViewModel$updateIsPendingState$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((PracticeClassViewModel$updateIsPendingState$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

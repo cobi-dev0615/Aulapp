@@ -24,7 +24,7 @@ public final class ExternalUtil$Companion$getDateTimeApi$1 implements Callback<T
 
     /* JADX WARN: Multi-variable type inference failed */
     public ExternalUtil$Companion$getDateTimeApi$1(Function1<? super String, Unit> function1, Context context, EnumTimeClass enumTimeClass) {
-        this.$listener = function1;
+        this.$listener = (Function1<String, Unit>) (Function1) function1;
         this.$context = context;
         this.$enumTime = enumTimeClass;
     }

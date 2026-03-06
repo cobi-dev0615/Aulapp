@@ -55,8 +55,8 @@ public abstract class DateUtil {
             if (parseDate != null) {
                 String format = simpleDateFormat.format(parseDate);
                 Intrinsics.checkNotNullExpressionValue(format, "format(...)");
-                replaceAfterResult = StringsKt.replaceAfterResult(format.replace("AM", "am").replace("A.M", "am").replace("PM", "pm").replace("P.M", "pm").replace("p.", "p").replace("a.", "a").replace("m.", "m"), "a", "m", (String) null, 4, (Object) null);
-                str = StringsKt.replaceAfterResult(replaceAfterResult, "p", "m", (String) null, 4, (Object) null);
+                replaceAfterResult = StringsKt.replaceAfter(format.replace("AM", "am").replace("A.M", "am").replace("PM", "pm").replace("P.M", "pm").replace("p.", "p").replace("a.", "a").replace("m.", "m"), "a", "m", format);
+                str = StringsKt.replaceAfter(replaceAfterResult, "p", "m", replaceAfterResult);
             }
             return str == null ? BuildConfig.FLAVOR : str;
         }
@@ -330,8 +330,9 @@ public abstract class DateUtil {
         }
 
         public final Date uTCSettingDate(long selection) {
-            Intrinsics.checkNotNullExpressionValue(TimeZone.getDefault(), "getDefault(...)");
-            return new Date(selection + (r0.getOffset(new Date().getTime()) * (-1)));
+            TimeZone tz = TimeZone.getDefault();
+            Intrinsics.checkNotNullExpressionValue(tz, "getDefault(...)");
+            return new Date(selection + (tz.getOffset(new Date().getTime()) * (-1)));
         }
 
         public final String uTCSettingDateToString(long selection, String patternDate) {

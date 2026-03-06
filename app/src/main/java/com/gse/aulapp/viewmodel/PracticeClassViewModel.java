@@ -88,21 +88,21 @@ import kotlinx.coroutines.flow.StateFlow;
 @SourceDebugExtension({"SMAP\nPracticeClassViewModel.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PracticeClassViewModel.kt\ncom/gse/aulapp/viewmodel/PracticeClassViewModel\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,931:1\n1#2:932\n1755#3,3:933\n*S KotlinDebug\n*F\n+ 1 PracticeClassViewModel.kt\ncom/gse/aulapp/viewmodel/PracticeClassViewModel\n*L\n347#1:933,3\n*E\n"})
 /* loaded from: classes2.dex */
 public final class PracticeClassViewModel extends ViewModel {
-    private final SingleLiveEvent<ConfigurationSessionDto> _configSession;
-    private final MutableLiveData<Status> _message;
+    final SingleLiveEvent<ConfigurationSessionDto> _configSession;
+    final MutableLiveData<Status> _message;
     private final SingleLiveEvent<ConfigurationSessionDto> configSession;
     private Dialog dialog;
-    private final GpsRepository gpsRepository;
+    final GpsRepository gpsRepository;
     private Gson gson;
     private StateFlow<Boolean> isExtraTime;
     private StateFlow<Boolean> isMinimumClassTime;
     private StateFlow<Boolean> isTimeForAlarm;
     private final MutableLiveData<Status> message;
-    private final PracticeClassRepository practiceClassRepository;
-    private SessionDto sessionReceived;
-    private final SessionRepository sessionRepository;
+    final PracticeClassRepository practiceClassRepository;
+    SessionDto sessionReceived;
+    final SessionRepository sessionRepository;
     private boolean showIsMockDialog;
-    private final String tag;
+    final String tag;
     private LiveData<String> timeElapsedInService;
     private LiveData<Float> timeElapsedInServiceSlider;
     private SingleLiveEvent<String> timeRemaining;
@@ -161,7 +161,11 @@ public final class PracticeClassViewModel extends ViewModel {
             this$0.deleteGpsTraceBySessionID(id);
         }
         this$0.stopServices(context);
-        BuildersKt.runBlocking((CoroutineContext) null, new PracticeClassViewModel$dialogCloseBeforeTime$1$2(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null));
+        try {
+            BuildersKt.runBlocking((CoroutineContext) null, new PracticeClassViewModel$dialogCloseBeforeTime$1$2(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null));
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         Dialog dialog = this$0.dialog;
         if (dialog != null) {
             dialog.dismiss();
@@ -768,7 +772,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     public final boolean timerServiceIsRunning(Context context, Class<? extends Service> serviceClass) {
-        List<ActivityManager.RunningServiceInfo> runningServices;
+        List<ActivityManager.RunningServiceInfo> runningServices = null;
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(serviceClass, "serviceClass");
         try {

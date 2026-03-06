@@ -143,7 +143,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                     this.label = 1;
                 }
                 LogSendUtil.INSTANCE.setLog(this.$context, q.i("sendPracticeExamSync request ", this.$sessionID), null, false);
-                Flow m1541catch = FlowKt.catch$(this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID), new AnonymousClass2(this.$context, null));
+                Flow m1541catch = this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID);
                 AnonymousClass3 anonymousClass3 = new AnonymousClass3(this.$repository, this.$sessionID, this.$context, this.$findNavController, this.$navDirections);
                 this.label = 2;
             } else {
@@ -157,7 +157,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                 ResultKt.throwOnFailure(obj);
             }
             LogSendUtil.INSTANCE.setLog(this.$context, q.i("sendPracticeExamSync request ", this.$sessionID), null, false);
-            Flow m1541catch2 = FlowKt.catch$(this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID), new AnonymousClass2(this.$context, null));
+            Flow m1541catch2 = this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID);
             AnonymousClass3 anonymousClass32 = new AnonymousClass3(this.$repository, this.$sessionID, this.$context, this.$findNavController, this.$navDirections);
             this.label = 2;
         }

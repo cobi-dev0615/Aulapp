@@ -37,7 +37,7 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DefaultLocationClient$getLocationUpdates$1(DefaultLocationClient defaultLocationClient, long j, Continuation<? super DefaultLocationClient$getLocationUpdates$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = defaultLocationClient;
         this.$interval = j;
     }
@@ -52,9 +52,9 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        DefaultLocationClient$getLocationUpdates$1 defaultLocationClient$getLocationUpdates$1 = new DefaultLocationClient$getLocationUpdates$1(this.this$0, this.$interval, continuation);
+        DefaultLocationClient$getLocationUpdates$1 defaultLocationClient$getLocationUpdates$1 = new DefaultLocationClient$getLocationUpdates$1(this.this$0, this.$interval, (Continuation) continuation);
         defaultLocationClient$getLocationUpdates$1.L$0 = obj;
-        return defaultLocationClient$getLocationUpdates$1;
+        return (Continuation<Unit>) (Object) defaultLocationClient$getLocationUpdates$1;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -101,33 +101,33 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
                     if (lastLocation == null) {
                         return;
                     }
-                    z = DefaultLocationClient.this.isGpsReady;
+                    z = defaultLocationClient.isGpsReady;
                     if (!z) {
                         float accuracy = lastLocation.getAccuracy();
-                        f2 = DefaultLocationClient.this.MIN_INITIAL_ACCURACY;
+                        f2 = defaultLocationClient.MIN_INITIAL_ACCURACY;
                         if (accuracy > f2) {
                             return;
                         } else {
-                            DefaultLocationClient.this.isGpsReady = true;
+                            defaultLocationClient.isGpsReady = true;
                         }
                     }
-                    kalmanFilter = DefaultLocationClient.this.kalmanSpeed;
+                    kalmanFilter = defaultLocationClient.kalmanSpeed;
                     float update = kalmanFilter.update(lastLocation.getSpeed());
                     if (lastLocation.hasSpeedAccuracy() && lastLocation.getSpeedAccuracyMetersPerSecond() < 0.5f) {
-                        f = DefaultLocationClient.this.SPEED_THRESHOLD;
+                        f = defaultLocationClient.SPEED_THRESHOLD;
                     }
                     update = 0.0f;
                     Location location2 = new Location(lastLocation);
                     location2.setSpeed(update);
                     location2.setLatitude(lastLocation.getLatitude());
                     location2.setLongitude(lastLocation.getLongitude());
-                    location = DefaultLocationClient.this.oldLocation;
+                    location = defaultLocationClient.oldLocation;
                     if (location != null && update == 0.0f) {
                         location2.setLatitude(location.getLatitude());
                         location2.setLongitude(location.getLongitude());
                     }
-                    DefaultLocationClient.this.oldLocation = location2;
-                    ProducerScope<Location> producerScope2 = producerScope;
+                    defaultLocationClient.oldLocation = location2;
+                    ProducerScope producerScope2 = producerScope;
                     BuildersKt.launch(producerScope2, (CoroutineContext) null, (CoroutineStart) null, new DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2(producerScope2, location2, null));
                 }
             };
@@ -149,6 +149,6 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(ProducerScope<? super Location> producerScope, Continuation<? super Unit> continuation) {
-        return ((DefaultLocationClient$getLocationUpdates$1) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((DefaultLocationClient$getLocationUpdates$1) (Object) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -17,6 +17,7 @@ import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
+import java.util.concurrent.CancellationException;
 import kotlinx.coroutines.CoroutineScopeKt;
 
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", BuildConfig.FLAVOR, "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 0, 0}, xi = 48)
@@ -29,15 +30,15 @@ public final class DialogNormalUtil$updateDialogExamSpeedInfo$1 extends SuspendL
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DialogNormalUtil$updateDialogExamSpeedInfo$1(ClassInCourseViewModel classInCourseViewModel, Continuation<? super DialogNormalUtil$updateDialogExamSpeedInfo$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$viewModel = classInCourseViewModel;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        DialogNormalUtil$updateDialogExamSpeedInfo$1 dialogNormalUtil$updateDialogExamSpeedInfo$1 = new DialogNormalUtil$updateDialogExamSpeedInfo$1(this.$viewModel, continuation);
+        DialogNormalUtil$updateDialogExamSpeedInfo$1 dialogNormalUtil$updateDialogExamSpeedInfo$1 = new DialogNormalUtil$updateDialogExamSpeedInfo$1(this.$viewModel, (Continuation) continuation);
         dialogNormalUtil$updateDialogExamSpeedInfo$1.L$0 = obj;
-        return dialogNormalUtil$updateDialogExamSpeedInfo$1;
+        return (Continuation<Unit>) (Object) dialogNormalUtil$updateDialogExamSpeedInfo$1;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x004e, code lost:
@@ -125,13 +126,13 @@ public final class DialogNormalUtil$updateDialogExamSpeedInfo$1 extends SuspendL
             if (companion3.getDialogExamInfo() != null && companion3.getBindingDialogExamInfo() != null) {
                 break;
             }
-            CoroutineScopeKt.cancel(coroutineScope);
+            CoroutineScopeKt.cancel(coroutineScope, new CancellationException("cancelled"));
         }
         return coroutine_suspended;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((DialogNormalUtil$updateDialogExamSpeedInfo$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((DialogNormalUtil$updateDialogExamSpeedInfo$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

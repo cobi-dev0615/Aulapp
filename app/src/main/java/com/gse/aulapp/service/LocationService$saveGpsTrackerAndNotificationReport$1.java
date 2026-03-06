@@ -37,7 +37,7 @@ public final class LocationService$saveGpsTrackerAndNotificationReport$1 extends
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new LocationService$saveGpsTrackerAndNotificationReport$1(this.$location, this.this$0, this.$sessionId, (Continuation) continuation);
+        return (Continuation<Unit>) (Object) new LocationService$saveGpsTrackerAndNotificationReport$1(this.$location, this.this$0, this.$sessionId, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl

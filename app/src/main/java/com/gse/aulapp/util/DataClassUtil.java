@@ -59,6 +59,10 @@ public abstract class DataClassUtil {
             double d;
             String str3 = str;
             GpsRepository gpsRepository2 = gpsRepository;
+            dataClassUtil$Companion$generateDataClass$1 = new DataClassUtil$Companion$generateDataClass$1(this, (Continuation) continuation);
+            Object obj2 = dataClassUtil$Companion$generateDataClass$1.result;
+            coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            i = dataClassUtil$Companion$generateDataClass$1.label;
             try {
                 if (continuation instanceof DataClassUtil$Companion$generateDataClass$1) {
                     dataClassUtil$Companion$generateDataClass$1 = (DataClassUtil$Companion$generateDataClass$1) continuation;
@@ -152,7 +156,7 @@ public abstract class DataClassUtil {
                 }
                 if (i != 0) {
                 }
-                List<LocationDto> list32 = (List) obj;
+                List<LocationDto> list32 = (List) obj2;
                 dataClassUtil$Companion$generateDataClass$1.L$0 = str3;
                 dataClassUtil$Companion$generateDataClass$1.L$1 = gpsRepository2;
                 dataClassUtil$Companion$generateDataClass$1.L$2 = list32;
@@ -164,10 +168,6 @@ public abstract class DataClassUtil {
                 e.getMessage();
                 return null;
             }
-            dataClassUtil$Companion$generateDataClass$1 = new DataClassUtil$Companion$generateDataClass$1(this, continuation);
-            Object obj2 = dataClassUtil$Companion$generateDataClass$1.result;
-            coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-            i = dataClassUtil$Companion$generateDataClass$1.label;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:21:0x00a5, code lost:
@@ -233,7 +233,7 @@ public abstract class DataClassUtil {
                     return Unit.INSTANCE;
                 }
             }
-            dataClassUtil$Companion$updateClassValues$1 = new DataClassUtil$Companion$updateClassValues$1(this, continuation);
+            dataClassUtil$Companion$updateClassValues$1 = new DataClassUtil$Companion$updateClassValues$1(this, (Continuation) continuation);
             Object obj2 = dataClassUtil$Companion$updateClassValues$1.result;
             Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
             i = dataClassUtil$Companion$updateClassValues$1.label;
@@ -312,7 +312,7 @@ public abstract class DataClassUtil {
                     return Unit.INSTANCE;
                 }
             }
-            dataClassUtil$Companion$updateClassValues$3 = new DataClassUtil$Companion$updateClassValues$3(this, continuation);
+            dataClassUtil$Companion$updateClassValues$3 = new DataClassUtil$Companion$updateClassValues$3(this, (Continuation) continuation);
             Object obj2 = dataClassUtil$Companion$updateClassValues$3.result;
             Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
             i = dataClassUtil$Companion$updateClassValues$3.label;

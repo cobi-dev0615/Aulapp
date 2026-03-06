@@ -29,7 +29,7 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public NetworkConnectivityObserver$observe$1(NetworkConnectivityObserver networkConnectivityObserver, Continuation<? super NetworkConnectivityObserver$observe$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = networkConnectivityObserver;
     }
 
@@ -43,9 +43,9 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        NetworkConnectivityObserver$observe$1 networkConnectivityObserver$observe$1 = new NetworkConnectivityObserver$observe$1(this.this$0, continuation);
+        NetworkConnectivityObserver$observe$1 networkConnectivityObserver$observe$1 = new NetworkConnectivityObserver$observe$1(this.this$0, (Continuation) continuation);
         networkConnectivityObserver$observe$1.L$0 = obj;
-        return networkConnectivityObserver$observe$1;
+        return (Continuation<Unit>) (Object) networkConnectivityObserver$observe$1;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -106,6 +106,6 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(ProducerScope<? super ConnectivityObserver.Status> producerScope, Continuation<? super Unit> continuation) {
-        return ((NetworkConnectivityObserver$observe$1) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((NetworkConnectivityObserver$observe$1) (Object) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

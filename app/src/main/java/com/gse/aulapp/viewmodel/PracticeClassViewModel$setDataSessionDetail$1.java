@@ -49,7 +49,7 @@ public final class PracticeClassViewModel$setDataSessionDetail$1 extends Suspend
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PracticeClassViewModel$setDataSessionDetail$1(SessionDto sessionDto, String str, FragmentPracticeClassBinding fragmentPracticeClassBinding, PracticeClassViewModel practiceClassViewModel, Continuation<? super PracticeClassViewModel$setDataSessionDetail$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$session = sessionDto;
         this.$timeSession = str;
         this.$binding = fragmentPracticeClassBinding;
@@ -58,7 +58,7 @@ public final class PracticeClassViewModel$setDataSessionDetail$1 extends Suspend
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new PracticeClassViewModel$setDataSessionDetail$1(this.$session, this.$timeSession, this.$binding, this.this$0, continuation);
+        return (Continuation<Unit>) (Object) new PracticeClassViewModel$setDataSessionDetail$1(this.$session, this.$timeSession, this.$binding, this.this$0, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -205,6 +205,6 @@ public final class PracticeClassViewModel$setDataSessionDetail$1 extends Suspend
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PracticeClassViewModel$setDataSessionDetail$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((PracticeClassViewModel$setDataSessionDetail$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

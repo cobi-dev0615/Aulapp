@@ -403,7 +403,7 @@ public abstract class DialogUtil {
                 Dialog dialogLoading = getDialogLoading();
                 int i = R.color.dialog_background;
                 if (dialogLoading == null) {
-                    setDialogLoading(new Dialog(context, android.R.style.Theme.Black));
+                    setDialogLoading(new Dialog(context, android.R.style.Theme_Black));
                     View inflate = LayoutInflater.from(context).inflate(R.layout.loading_layout, (ViewGroup) null);
                     Intrinsics.checkNotNullExpressionValue(inflate, "inflate(...)");
                     Dialog dialogLoading2 = getDialogLoading();
@@ -491,13 +491,11 @@ public abstract class DialogUtil {
                 getTAG();
                 e.getMessage();
             }
-            getTAG();
-            e.getMessage();
         }
 
         public final AlertDialog showDialogTimeout(Activity context, boolean cancelable, View.OnClickListener listenerOk) {
             Intrinsics.checkNotNullParameter(context, "context");
-            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme.Material.Light.NoActionBar.Fullscreen);
+            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
             LayoutInflater layoutInflater = context.getLayoutInflater();
             Intrinsics.checkNotNullExpressionValue(layoutInflater, "getLayoutInflater(...)");
             View inflate = layoutInflater.inflate(R.layout.dialog_fullscreen_layout, (ViewGroup) null);
@@ -571,7 +569,7 @@ public abstract class DialogUtil {
 
         public final AlertDialog showInformationDialogPassExam(Activity context, String title, String message, boolean cancelable, String titleButtonOk, Integer drawableImage, View.OnClickListener listenerOk) {
             Intrinsics.checkNotNullParameter(context, "context");
-            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme.Material.Light.NoActionBar.Fullscreen);
+            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
             LayoutInflater layoutInflater = context.getLayoutInflater();
             Intrinsics.checkNotNullExpressionValue(layoutInflater, "getLayoutInflater(...)");
             View inflate = layoutInflater.inflate(R.layout.dialog_fullscreen_layout, (ViewGroup) null);
@@ -600,7 +598,7 @@ public abstract class DialogUtil {
         public final AlertDialog showInformationDialogValidationExam(Activity context, EnumDialogType selectedDialog, boolean complete, boolean cancelable, View.OnClickListener listenerOk, View.OnClickListener listenerCancel) {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(selectedDialog, "selectedDialog");
-            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme.Material.Light.NoActionBar.Fullscreen);
+            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
             LayoutInflater layoutInflater = context.getLayoutInflater();
             Intrinsics.checkNotNullExpressionValue(layoutInflater, "getLayoutInflater(...)");
             View inflate = layoutInflater.inflate(R.layout.dialog_fullscreen_layout, (ViewGroup) null);
@@ -670,7 +668,7 @@ public abstract class DialogUtil {
 
         public final AlertDialog showInformationFullDialog(Activity context, String title, String message, boolean cancelable, String titleButtonOk, String titleButtonError, Integer drawableImage, View.OnClickListener listenerOk, View.OnClickListener listenerError) {
             Intrinsics.checkNotNullParameter(context, "context");
-            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme.Material.Light.NoActionBar.Fullscreen);
+            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
             LayoutInflater layoutInflater = context.getLayoutInflater();
             Intrinsics.checkNotNullExpressionValue(layoutInflater, "getLayoutInflater(...)");
             View inflate = layoutInflater.inflate(R.layout.dialog_fullscreen_layout, (ViewGroup) null);
@@ -729,7 +727,7 @@ public abstract class DialogUtil {
             String replaceFirst$default5;
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(selectedDialog, "selectedDialog");
-            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme.Material.Light.NoActionBar.Fullscreen);
+            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
             LayoutInflater layoutInflater = context.getLayoutInflater();
             Intrinsics.checkNotNullExpressionValue(layoutInflater, "getLayoutInflater(...)");
             View inflate = layoutInflater.inflate(R.layout.dialog_fullscreen_layout, (ViewGroup) null);
@@ -977,7 +975,7 @@ public abstract class DialogUtil {
 
         public final AlertDialog showInformationFullDialogError(Activity context, String title, String message, boolean cancelable, String titleButtonOk, String titleButtonError, Integer drawableImage, View.OnClickListener listenerOk, View.OnClickListener listenerError) {
             Intrinsics.checkNotNullParameter(context, "context");
-            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme.Material.Light.NoActionBar.Fullscreen);
+            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
             LayoutInflater layoutInflater = context.getLayoutInflater();
             Intrinsics.checkNotNullExpressionValue(layoutInflater, "getLayoutInflater(...)");
             View inflate = layoutInflater.inflate(R.layout.dialog_fullscreen_layout, (ViewGroup) null);
@@ -1047,7 +1045,7 @@ public abstract class DialogUtil {
 
         public final AlertDialog showInformationFullDialogPasswordRecovery(Activity context, boolean complete, String message, String code, boolean cancelable, View.OnClickListener listenerOk) {
             Intrinsics.checkNotNullParameter(context, "context");
-            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme.Material.Light.NoActionBar.Fullscreen);
+            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
             LayoutInflater layoutInflater = context.getLayoutInflater();
             Intrinsics.checkNotNullExpressionValue(layoutInflater, "getLayoutInflater(...)");
             View inflate = layoutInflater.inflate(R.layout.dialog_fullscreen_layout, (ViewGroup) null);
@@ -1100,7 +1098,7 @@ public abstract class DialogUtil {
         public final AlertDialog showInformationFullDialogPermission(Activity context, String title, String message, EnumDialogType type, boolean complete, boolean cancelable, View.OnClickListener listenerOk) {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(type, "type");
-            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme.Material.Light.NoActionBar.Fullscreen);
+            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
             LayoutInflater layoutInflater = context.getLayoutInflater();
             Intrinsics.checkNotNullExpressionValue(layoutInflater, "getLayoutInflater(...)");
             View inflate = layoutInflater.inflate(R.layout.dialog_fullscreen_layout, (ViewGroup) null);
@@ -1162,7 +1160,7 @@ public abstract class DialogUtil {
 
         private final AlertDialog showInformationFullDialog(Activity context, EnumDialogType selectedDialog, String code, String messageException, String message, boolean cancelable, boolean isWarning, View.OnClickListener listenerOk) {
             showDialogProgressGlobal(context, false, false, false);
-            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme.Material.Light.NoActionBar.Fullscreen);
+            AlertDialog.Builder builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
             LayoutInflater layoutInflater = context.getLayoutInflater();
             Intrinsics.checkNotNullExpressionValue(layoutInflater, "getLayoutInflater(...)");
             View inflate = layoutInflater.inflate(R.layout.dialog_fullscreen_layout, (ViewGroup) null);

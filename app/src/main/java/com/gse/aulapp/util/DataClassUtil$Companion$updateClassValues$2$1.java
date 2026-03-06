@@ -31,7 +31,7 @@ public final class DataClassUtil$Companion$updateClassValues$2$1 extends Suspend
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DataClassUtil$Companion$updateClassValues$2$1(DialogExamInfoLayoutBinding dialogExamInfoLayoutBinding, RealtimeClassDataDto realtimeClassDataDto, String str, String str2, String str3, Continuation<? super DataClassUtil$Companion$updateClassValues$2$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$binding = dialogExamInfoLayoutBinding;
         this.$it = realtimeClassDataDto;
         this.$movingTime = str;
@@ -41,7 +41,8 @@ public final class DataClassUtil$Companion$updateClassValues$2$1 extends Suspend
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new DataClassUtil$Companion$updateClassValues$2$1(this.$binding, this.$it, this.$movingTime, this.$stoppedTime, this.$totalDistance, continuation);
+        DataClassUtil$Companion$updateClassValues$2$1 instance = new DataClassUtil$Companion$updateClassValues$2$1(this.$binding, this.$it, this.$movingTime, this.$stoppedTime, this.$totalDistance, (Continuation) continuation);
+        return (Continuation<Unit>) (Object) instance;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -72,6 +73,6 @@ public final class DataClassUtil$Companion$updateClassValues$2$1 extends Suspend
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((DataClassUtil$Companion$updateClassValues$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((DataClassUtil$Companion$updateClassValues$2$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -62,7 +62,7 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C00091(Context context, Continuation<? super C00091> continuation) {
-                super(3, continuation);
+                super(3, (Continuation<Object>) continuation);
                 this.$context = context;
             }
 
@@ -86,7 +86,7 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
 
             /* renamed from: invoke, reason: avoid collision after fix types in other method */
             public final Object invoke2(FlowCollector<? super ApiResult<DatetimeResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
-                C00091 c00091 = new C00091(this.$context, continuation);
+                C00091 c00091 = new C00091(this.$context, (Continuation) continuation);
                 c00091.L$0 = th;
                 return c00091.invokeSuspend(Unit.INSTANCE);
             }
@@ -94,13 +94,13 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AnonymousClass1(Context context, Continuation<? super AnonymousClass1> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.$context = context;
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return new AnonymousClass1(this.$context, continuation);
+            return (Continuation<Unit>) (Object) new AnonymousClass1(this.$context, (Continuation) continuation);
         }
 
         @Override // kotlin.jvm.functions.Function2
@@ -117,29 +117,29 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
             }
             ResultKt.throwOnFailure(obj);
             datetimeRepository = ExternalUtil.datetimeRepository;
-            return FlowKt.m1541catch(datetimeRepository.datetime(this.$context, new DatetimeRequest(Boxing.boxBoolean(true))), new C00091(this.$context, null));
+            return datetimeRepository.datetime(this.$context, new DatetimeRequest(Boxing.boxBoolean(true)));
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
         public final Object invoke2(CoroutineScope coroutineScope, Continuation<? super Flow<? extends ApiResult<DatetimeResponse>>> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+            return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
     public ExternalUtil$Companion$getDateTimeBiometrics$1(Context context, Ref.ObjectRef<String> objectRef, Ref.ObjectRef<String> objectRef2, EnumTimeClass enumTimeClass, Function1<? super String, Unit> function1, Continuation<? super ExternalUtil$Companion$getDateTimeBiometrics$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$date = objectRef;
         this.$time = objectRef2;
         this.$enumTime = enumTimeClass;
-        this.$listener = function1;
+        this.$listener = (Function1<String, Unit>) (Function1) function1;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ExternalUtil$Companion$getDateTimeBiometrics$1(this.$context, this.$date, this.$time, this.$enumTime, this.$listener, continuation);
+        return (Continuation<Unit>) (Object) new ExternalUtil$Companion$getDateTimeBiometrics$1(this.$context, this.$date, this.$time, this.$enumTime, this.$listener, (Continuation) continuation);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x004d, code lost:
@@ -217,20 +217,20 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
                 int i2 = WhenMappings.$EnumSwitchMapping$0[apiResult.getStatus().ordinal()];
                 if (i2 == 1) {
                     DatetimeResponse data = apiResult.getData();
-                    T t = null;
+                    Object t = null;
                     if (((data == null || (result = data.getResult()) == null) ? null : result.getTime()) != null) {
                         DatetimeResponse.Result result2 = apiResult.getData().getResult();
                         if ((result2 != null ? result2.getDate() : null) != null) {
                             LogSendUtil.INSTANCE.setLog(context, "datetime succes: " + apiResult.getData().getResult() + ", url: " + apiResult.getData().getUrl(), null, false);
                             Ref.ObjectRef<String> objectRef3 = objectRef;
                             DatetimeResponse.Result result3 = apiResult.getData().getResult();
-                            T t2 = result3 != null ? (T) result3.getDate() : null;
+                            Object t2 = result3 != null ? result3.getDate() : null;
                             Intrinsics.checkNotNull(t2);
                             objectRef3.element = t2;
                             Ref.ObjectRef<String> objectRef4 = objectRef2;
                             DatetimeResponse.Result result4 = apiResult.getData().getResult();
                             if (result4 != null) {
-                                t = (T) result4.getTime();
+                                t = result4.getTime();
                             }
                             Intrinsics.checkNotNull(t);
                             objectRef4.element = t;
@@ -270,6 +270,6 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ExternalUtil$Companion$getDateTimeBiometrics$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ExternalUtil$Companion$getDateTimeBiometrics$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

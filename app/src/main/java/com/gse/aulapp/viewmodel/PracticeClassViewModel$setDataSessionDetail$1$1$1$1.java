@@ -23,14 +23,14 @@ public final class PracticeClassViewModel$setDataSessionDetail$1$1$1$1 extends S
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PracticeClassViewModel$setDataSessionDetail$1$1$1$1(LayoutPracticeClassCardBinding layoutPracticeClassCardBinding, EnumClassType enumClassType, Continuation<? super PracticeClassViewModel$setDataSessionDetail$1$1$1$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$this_run = layoutPracticeClassCardBinding;
         this.$eClassType = enumClassType;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new PracticeClassViewModel$setDataSessionDetail$1$1$1$1(this.$this_run, this.$eClassType, continuation);
+        return (Continuation<Unit>) (Object) new PracticeClassViewModel$setDataSessionDetail$1$1$1$1(this.$this_run, this.$eClassType, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -47,6 +47,6 @@ public final class PracticeClassViewModel$setDataSessionDetail$1$1$1$1 extends S
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PracticeClassViewModel$setDataSessionDetail$1$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((PracticeClassViewModel$setDataSessionDetail$1$1$1$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

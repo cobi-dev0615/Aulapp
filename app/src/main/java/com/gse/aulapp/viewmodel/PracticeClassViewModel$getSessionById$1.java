@@ -36,14 +36,14 @@ public final class PracticeClassViewModel$getSessionById$1 extends SuspendLambda
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AnonymousClass1(PracticeClassViewModel practiceClassViewModel, String str, Continuation<? super AnonymousClass1> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.this$0 = practiceClassViewModel;
             this.$sessionID = str;
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return new AnonymousClass1(this.this$0, this.$sessionID, continuation);
+            return (Continuation<Unit>) (Object) new AnonymousClass1(this.this$0, this.$sessionID, (Continuation) continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -74,20 +74,20 @@ public final class PracticeClassViewModel$getSessionById$1 extends SuspendLambda
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+            return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PracticeClassViewModel$getSessionById$1(PracticeClassViewModel practiceClassViewModel, String str, Continuation<? super PracticeClassViewModel$getSessionById$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = practiceClassViewModel;
         this.$sessionID = str;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new PracticeClassViewModel$getSessionById$1(this.this$0, this.$sessionID, continuation);
+        return (Continuation<Unit>) (Object) new PracticeClassViewModel$getSessionById$1(this.this$0, this.$sessionID, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -113,6 +113,6 @@ public final class PracticeClassViewModel$getSessionById$1 extends SuspendLambda
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PracticeClassViewModel$getSessionById$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((PracticeClassViewModel$getSessionById$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }
