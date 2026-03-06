@@ -79,7 +79,7 @@ public final class SessionRepository$sendSessionSyncPracticalRequest2$1 extends 
                     if (response.isSuccessful()) {
                         SessionSyncPracticalResponse sessionSyncPracticalResponse = (SessionSyncPracticalResponse) response.body();
                         if (sessionSyncPracticalResponse != null) {
-                            sessionSyncPracticalResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            sessionSyncPracticalResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), sessionSyncPracticalResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

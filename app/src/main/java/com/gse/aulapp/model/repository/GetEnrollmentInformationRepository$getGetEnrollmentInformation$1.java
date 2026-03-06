@@ -33,14 +33,14 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(Context context, GetEnrollmentInformationRequest getEnrollmentInformationRequest, Continuation<? super GetEnrollmentInformationRepository$getGetEnrollmentInformation$1> continuation) {
-        super(2, (kotlin.coroutines.Continuation) continuation);
+        super(2, continuation);
         this.$context = context;
         this.$request = getEnrollmentInformationRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        GetEnrollmentInformationRepository$getGetEnrollmentInformation$1 getEnrollmentInformationRepository$getGetEnrollmentInformation$1 = new GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
+        GetEnrollmentInformationRepository$getGetEnrollmentInformation$1 getEnrollmentInformationRepository$getGetEnrollmentInformation$1 = new GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(this.$context, this.$request, continuation);
         getEnrollmentInformationRepository$getGetEnrollmentInformation$1.L$0 = obj;
         return (Continuation<Unit>) (Object) getEnrollmentInformationRepository$getGetEnrollmentInformation$1;
     }
@@ -102,7 +102,7 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
                     if (response.isSuccessful()) {
                         GetEnrollmentInformationResponse getEnrollmentInformationResponse = (GetEnrollmentInformationResponse) response.body();
                         if (getEnrollmentInformationResponse != null) {
-                            getEnrollmentInformationResponse.setUrl(response.raw().request().url().url());
+                            getEnrollmentInformationResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), getEnrollmentInformationResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

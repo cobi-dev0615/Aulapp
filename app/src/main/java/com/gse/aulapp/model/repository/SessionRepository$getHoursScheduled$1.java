@@ -97,7 +97,7 @@ public final class SessionRepository$getHoursScheduled$1 extends SuspendLambda i
                     if (response.isSuccessful()) {
                         HoursScheduledResponse hoursScheduledResponse = (HoursScheduledResponse) response.body();
                         if (hoursScheduledResponse != null) {
-                            hoursScheduledResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            hoursScheduledResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), hoursScheduledResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

@@ -226,7 +226,7 @@ public final /* data */ class BiometricSetExceptionResponse extends GeneralRespo
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public /* synthetic */ BiometricSetExceptionResponse(Integer num, String str, String str2, Result result, String str3, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(num, str, str2, r6, r7);
+        this(num, str, str2, null, null);
         String str4;
         Result result2;
         num = (i & 1) != 0 ? null : num;

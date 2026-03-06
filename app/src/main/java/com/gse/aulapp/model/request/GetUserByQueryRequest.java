@@ -37,7 +37,7 @@ public final /* data */ class GetUserByQueryRequest implements Parcelable {
 
     /* JADX WARN: Multi-variable type inference failed */
     public GetUserByQueryRequest() {
-        this(null, 1, 0 == true ? 1 : 0);
+        this(null, 1, null);
     }
 
     public static /* synthetic */ GetUserByQueryRequest copy$default(GetUserByQueryRequest getUserByQueryRequest, String str, int i, Object obj) {

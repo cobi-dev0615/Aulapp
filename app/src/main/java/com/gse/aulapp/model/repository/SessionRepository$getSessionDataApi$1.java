@@ -97,7 +97,7 @@ public final class SessionRepository$getSessionDataApi$1 extends SuspendLambda i
                     if (response.isSuccessful()) {
                         SessionExamResponse sessionExamResponse = (SessionExamResponse) response.body();
                         if (sessionExamResponse != null) {
-                            sessionExamResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            sessionExamResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), sessionExamResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

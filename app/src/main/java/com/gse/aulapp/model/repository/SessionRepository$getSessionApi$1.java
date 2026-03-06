@@ -102,7 +102,7 @@ public final class SessionRepository$getSessionApi$1 extends SuspendLambda imple
                     if (response.isSuccessful()) {
                         SessionInstructorResponse sessionInstructorResponse = (SessionInstructorResponse) response.body();
                         if (sessionInstructorResponse != null) {
-                            sessionInstructorResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            sessionInstructorResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), sessionInstructorResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

@@ -100,7 +100,7 @@ public final class SessionRepository$sendSessionPracticeRequest$1 extends Suspen
                             Object body = response.body();
                             Intrinsics.checkNotNull(body);
                             SessionPracticeExamResponse sessionPracticeExamResponse = (SessionPracticeExamResponse) body;
-                            sessionPracticeExamResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            sessionPracticeExamResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), sessionPracticeExamResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

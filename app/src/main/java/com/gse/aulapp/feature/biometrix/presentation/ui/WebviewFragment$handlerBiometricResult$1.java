@@ -30,14 +30,14 @@ public final class WebviewFragment$handlerBiometricResult$1 extends SuspendLambd
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public WebviewFragment$handlerBiometricResult$1(BiometrixResult biometrixResult, WebviewFragment webviewFragment, Continuation<? super WebviewFragment$handlerBiometricResult$1> continuation) {
-        super(2, (kotlin.coroutines.Continuation) continuation);
+        super(2, continuation);
         this.$data = biometrixResult;
         this.this$0 = webviewFragment;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return (Continuation<Unit>) (Object) new WebviewFragment$handlerBiometricResult$1(this.$data, this.this$0, (kotlin.coroutines.Continuation) continuation);
+        return (Continuation<Unit>) (Object) new WebviewFragment$handlerBiometricResult$1(this.$data, this.this$0, continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl

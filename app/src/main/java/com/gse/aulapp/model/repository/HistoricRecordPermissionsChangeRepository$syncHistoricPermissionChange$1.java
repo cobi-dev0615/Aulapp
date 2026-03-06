@@ -18,7 +18,7 @@ public final class HistoricRecordPermissionsChangeRepository$syncHistoricPermiss
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public HistoricRecordPermissionsChangeRepository$syncHistoricPermissionChange$1(HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository, Continuation<? super HistoricRecordPermissionsChangeRepository$syncHistoricPermissionChange$1> continuation) {
-        super((kotlin.coroutines.Continuation) continuation);
+        super(continuation);
         this.this$0 = historicRecordPermissionsChangeRepository;
     }
 

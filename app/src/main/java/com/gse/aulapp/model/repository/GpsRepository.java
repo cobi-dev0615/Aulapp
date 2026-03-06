@@ -92,8 +92,8 @@ public final class GpsRepository {
         if (i != 0) {
         }
         Objects.toString(obj2);
-        GpsRepository gpsRepository = this;
-        SimpleSQLiteQuery simpleSQLiteQuery = null;
+        gpsRepository = this;
+        simpleSQLiteQuery = null;
         GpsDao gpsDao22 = gpsRepository.gpsDao;
         gpsRepository$getAverageSpeedBySessionID$1.L$0 = null;
         gpsRepository$getAverageSpeedBySessionID$1.L$1 = null;
@@ -147,7 +147,7 @@ public final class GpsRepository {
         i = gpsRepository$getGpsTraceBySessionID$1.label;
         if (i != 0) {
         }
-        LocationConverter.Companion companion = null;
+        companion = null;
         return companion.gpsTraceEntityToLocationDto((List<GpsTraceEntity>) obj2);
     }
 
@@ -216,8 +216,8 @@ public final class GpsRepository {
         if (i != 0) {
         }
         Objects.toString(obj2);
-        GpsRepository gpsRepository = this;
-        SimpleSQLiteQuery simpleSQLiteQuery = null;
+        gpsRepository = this;
+        simpleSQLiteQuery = null;
         GpsDao gpsDao22 = gpsRepository.gpsDao;
         gpsRepository$getMaxSpeedBySessionID$1.L$0 = null;
         gpsRepository$getMaxSpeedBySessionID$1.L$1 = null;

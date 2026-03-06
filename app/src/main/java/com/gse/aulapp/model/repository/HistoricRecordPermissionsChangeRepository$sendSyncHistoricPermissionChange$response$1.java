@@ -39,14 +39,14 @@ public final class HistoricRecordPermissionsChangeRepository$sendSyncHistoricPer
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AnonymousClass1(Context context, HistoricRecordPermissionsChangeRequest historicRecordPermissionsChangeRequest, Continuation<? super AnonymousClass1> continuation) {
-            super(2, (kotlin.coroutines.Continuation) continuation);
+            super(2, continuation);
             this.$context = context;
             this.$historyPermissionChangeRequest = historicRecordPermissionsChangeRequest;
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return (Continuation<Unit>) (Object) new AnonymousClass1(this.$context, this.$historyPermissionChangeRequest, (kotlin.coroutines.Continuation) continuation);
+            return (Continuation<Unit>) (Object) new AnonymousClass1(this.$context, this.$historyPermissionChangeRequest, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -82,14 +82,14 @@ public final class HistoricRecordPermissionsChangeRepository$sendSyncHistoricPer
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1(Context context, HistoricRecordPermissionsChangeRequest historicRecordPermissionsChangeRequest, Continuation<? super HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1> continuation) {
-        super(2, (kotlin.coroutines.Continuation) continuation);
+        super(2, continuation);
         this.$context = context;
         this.$historyPermissionChangeRequest = historicRecordPermissionsChangeRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1 historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1 = new HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1(this.$context, this.$historyPermissionChangeRequest, (kotlin.coroutines.Continuation) continuation);
+        HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1 historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1 = new HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1(this.$context, this.$historyPermissionChangeRequest, continuation);
         historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1.L$0 = obj;
         return (Continuation<Unit>) (Object) historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1;
     }

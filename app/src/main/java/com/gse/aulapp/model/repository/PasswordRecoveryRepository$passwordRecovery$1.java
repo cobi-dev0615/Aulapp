@@ -33,14 +33,14 @@ public final class PasswordRecoveryRepository$passwordRecovery$1 extends Suspend
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PasswordRecoveryRepository$passwordRecovery$1(Context context, PasswordRecoveryRequest passwordRecoveryRequest, Continuation<? super PasswordRecoveryRepository$passwordRecovery$1> continuation) {
-        super(2, (kotlin.coroutines.Continuation) continuation);
+        super(2, continuation);
         this.$context = context;
         this.$request = passwordRecoveryRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        PasswordRecoveryRepository$passwordRecovery$1 passwordRecoveryRepository$passwordRecovery$1 = new PasswordRecoveryRepository$passwordRecovery$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
+        PasswordRecoveryRepository$passwordRecovery$1 passwordRecoveryRepository$passwordRecovery$1 = new PasswordRecoveryRepository$passwordRecovery$1(this.$context, this.$request, continuation);
         passwordRecoveryRepository$passwordRecovery$1.L$0 = obj;
         return (Continuation<Unit>) (Object) passwordRecoveryRepository$passwordRecovery$1;
     }
@@ -102,7 +102,7 @@ public final class PasswordRecoveryRepository$passwordRecovery$1 extends Suspend
                     if (response.isSuccessful()) {
                         PasswordRecoveryResponse passwordRecoveryResponse = (PasswordRecoveryResponse) response.body();
                         if (passwordRecoveryResponse != null) {
-                            passwordRecoveryResponse.setUrl(response.raw().request().url().url());
+                            passwordRecoveryResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), passwordRecoveryResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

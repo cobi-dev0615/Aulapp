@@ -89,7 +89,7 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
                         Intrinsics.checkNotNull(body);
                         HistoricRecordPermissionsChangeResponse historicRecordPermissionsChangeResponse = (HistoricRecordPermissionsChangeResponse) body;
                         if (historicRecordPermissionsChangeResponse != null) {
-                            historicRecordPermissionsChangeResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            historicRecordPermissionsChangeResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), historicRecordPermissionsChangeResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

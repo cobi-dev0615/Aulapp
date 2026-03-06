@@ -40,7 +40,7 @@ public final /* data */ class BiometricSetPreferredHandRequest implements Parcel
 
     /* JADX WARN: Multi-variable type inference failed */
     public BiometricSetPreferredHandRequest() {
-        this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        this(null, null, 3, null);
     }
 
     public static /* synthetic */ BiometricSetPreferredHandRequest copy$default(BiometricSetPreferredHandRequest biometricSetPreferredHandRequest, String str, String str2, int i, Object obj) {

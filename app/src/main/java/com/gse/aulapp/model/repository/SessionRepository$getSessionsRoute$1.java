@@ -102,7 +102,7 @@ public final class SessionRepository$getSessionsRoute$1 extends SuspendLambda im
                     if (response.isSuccessful()) {
                         SessionRoutesResponse sessionRoutesResponse = (SessionRoutesResponse) response.body();
                         if (sessionRoutesResponse != null) {
-                            sessionRoutesResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            sessionRoutesResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), sessionRoutesResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

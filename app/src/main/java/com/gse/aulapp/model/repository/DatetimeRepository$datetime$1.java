@@ -33,14 +33,14 @@ public final class DatetimeRepository$datetime$1 extends SuspendLambda implement
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DatetimeRepository$datetime$1(Context context, DatetimeRequest datetimeRequest, Continuation<? super DatetimeRepository$datetime$1> continuation) {
-        super(2, (kotlin.coroutines.Continuation) continuation);
+        super(2, continuation);
         this.$context = context;
         this.$request = datetimeRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        DatetimeRepository$datetime$1 datetimeRepository$datetime$1 = new DatetimeRepository$datetime$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
+        DatetimeRepository$datetime$1 datetimeRepository$datetime$1 = new DatetimeRepository$datetime$1(this.$context, this.$request, continuation);
         datetimeRepository$datetime$1.L$0 = obj;
         return (Continuation<Unit>) (Object) datetimeRepository$datetime$1;
     }
@@ -102,7 +102,7 @@ public final class DatetimeRepository$datetime$1 extends SuspendLambda implement
                     if (response.isSuccessful()) {
                         DatetimeResponse datetimeResponse = (DatetimeResponse) response.body();
                         if (datetimeResponse != null) {
-                            datetimeResponse.setUrl(response.raw().request().url().url());
+                            datetimeResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), datetimeResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

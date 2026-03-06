@@ -40,7 +40,7 @@ public final /* data */ class BiometricSetExceptionRequest implements Parcelable
 
     /* JADX WARN: Multi-variable type inference failed */
     public BiometricSetExceptionRequest() {
-        this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        this(null, null, 3, null);
     }
 
     public static /* synthetic */ BiometricSetExceptionRequest copy$default(BiometricSetExceptionRequest biometricSetExceptionRequest, String str, String str2, int i, Object obj) {

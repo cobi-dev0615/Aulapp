@@ -33,14 +33,14 @@ public final class RefreshTokenRepository$refreshToken$1 extends SuspendLambda i
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public RefreshTokenRepository$refreshToken$1(Context context, RefreshTokenRequest refreshTokenRequest, Continuation<? super RefreshTokenRepository$refreshToken$1> continuation) {
-        super(2, (kotlin.coroutines.Continuation) continuation);
+        super(2, continuation);
         this.$context = context;
         this.$request = refreshTokenRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        RefreshTokenRepository$refreshToken$1 refreshTokenRepository$refreshToken$1 = new RefreshTokenRepository$refreshToken$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
+        RefreshTokenRepository$refreshToken$1 refreshTokenRepository$refreshToken$1 = new RefreshTokenRepository$refreshToken$1(this.$context, this.$request, continuation);
         refreshTokenRepository$refreshToken$1.L$0 = obj;
         return (Continuation<Unit>) (Object) refreshTokenRepository$refreshToken$1;
     }
@@ -102,7 +102,7 @@ public final class RefreshTokenRepository$refreshToken$1 extends SuspendLambda i
                     if (response.isSuccessful()) {
                         RefreshTokenResponse refreshTokenResponse = (RefreshTokenResponse) response.body();
                         if (refreshTokenResponse != null) {
-                            refreshTokenResponse.setUrl(response.raw().request().url().url());
+                            refreshTokenResponse.setUrl(response.raw().request().url().url().toString());
                             ApiResult.Success success = new ApiResult.Success(response.code(), refreshTokenResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;

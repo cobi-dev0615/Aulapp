@@ -15,7 +15,7 @@ public abstract class ExamRequestGeneral implements Parcelable {
 
     /* JADX WARN: Multi-variable type inference failed */
     public ExamRequestGeneral() {
-        this(null, 1, 0 == true ? 1 : 0);
+        this(null, 1, null);
     }
 
     public String getEmail() {
