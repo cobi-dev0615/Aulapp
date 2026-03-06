@@ -729,10 +729,10 @@ public final class SessionDao_Impl implements SessionDao {
                 Code decompiled incorrectly, please refer to instructions dump.
             */
             public List<QuestionPracticeExam> call() {
-                String string;
-                String string2;
-                String string3;
-                String string4;
+                String string = null;
+                String string2 = null;
+                String string3 = null;
+                String string4 = null;
                 String string5;
                 String string6;
                 Cursor query = DBUtil.query(SessionDao_Impl.this.__db, simpleSQLiteQuery, false, null);
@@ -2464,7 +2464,7 @@ public final class SessionDao_Impl implements SessionDao {
                 Code decompiled incorrectly, please refer to instructions dump.
             */
             public List<SessionFull> call() {
-                Cursor cursor;
+                Cursor cursor = null;
                 int i;
                 ArrayList arrayList;
                 int i2;
@@ -2495,23 +2495,23 @@ public final class SessionDao_Impl implements SessionDao {
                 int i23;
                 int i24;
                 SessionEntity sessionEntity;
-                String string;
+                String string = null;
                 ArrayMap arrayMap5;
-                VehicleEntity vehicleEntity;
-                int i25;
-                String string2;
-                ArrayMap arrayMap6;
+                VehicleEntity vehicleEntity = null;
+                int i25 = 0;
+                String string2 = null;
+                ArrayMap arrayMap6 = null;
                 ArrayMap arrayMap7;
-                LessonEntity lessonEntity;
-                ArrayMap arrayMap8;
-                String string3;
-                int i26;
-                ArrayMap arrayMap9;
-                ClassRoomEntity classRoomEntity;
-                int i27;
-                String string4;
-                ArrayMap arrayMap10;
-                ArrayList arrayList2;
+                LessonEntity lessonEntity = null;
+                ArrayMap arrayMap8 = null;
+                String string3 = null;
+                int i26 = 0;
+                ArrayMap arrayMap9 = null;
+                ClassRoomEntity classRoomEntity = null;
+                int i27 = 0;
+                String string4 = null;
+                ArrayMap arrayMap10 = null;
+                ArrayList arrayList2 = null;
                 String string5;
                 String string6;
                 String string7;
@@ -2547,17 +2547,17 @@ public final class SessionDao_Impl implements SessionDao {
                 String str4;
                 String string19;
                 int i38;
-                boolean z;
+                boolean z = false;
                 int i39;
-                boolean z2;
+                boolean z2 = false;
                 int i40;
-                boolean z3;
+                boolean z3 = false;
                 int i41;
                 String string20;
                 int i42;
                 Boolean valueOf2;
-                Boolean bool;
-                int i43;
+                Boolean bool = null;
+                int i43 = 0;
                 String string21;
                 int i44;
                 String string22;
@@ -12584,7 +12584,7 @@ public final class SessionDao_Impl implements SessionDao {
                 Code decompiled incorrectly, please refer to instructions dump.
             */
             public List<SessionFullSync> call() {
-                Cursor cursor;
+                Cursor cursor = null;
                 int i;
                 ArrayList arrayList;
                 int i2;
@@ -12609,15 +12609,15 @@ public final class SessionDao_Impl implements SessionDao {
                 int i19;
                 SessionEntity sessionEntity;
                 int i20;
-                String string;
+                String string = null;
                 int i21;
-                ArrayList arrayList2;
+                ArrayList arrayList2 = null;
                 int i22;
-                String string2;
+                String string2 = null;
                 ArrayMap arrayMap3;
                 ArrayList arrayList3;
-                String string3;
-                String string4;
+                String string3 = null;
+                String string4 = null;
                 String string5;
                 String string6;
                 Integer valueOf;
@@ -12632,11 +12632,11 @@ public final class SessionDao_Impl implements SessionDao {
                 String string14;
                 int i24;
                 String str;
-                int i25;
+                int i25 = 0;
                 String str2;
-                int i26;
+                int i26 = 0;
                 String str3;
-                int i27;
+                int i27 = 0;
                 Long l;
                 int i28;
                 Long l2;
@@ -12652,16 +12652,16 @@ public final class SessionDao_Impl implements SessionDao {
                 String str6;
                 String string15;
                 int i34;
-                boolean z;
+                boolean z = false;
                 int i35;
-                boolean z2;
+                boolean z2 = false;
                 int i36;
-                boolean z3;
+                boolean z3 = false;
                 int i37;
                 String string16;
                 int i38;
                 Boolean valueOf2;
-                Boolean bool;
+                Boolean bool = null;
                 int i39;
                 String string17;
                 int i40;
@@ -20918,10 +20918,10 @@ public final class SessionDao_Impl implements SessionDao {
                 ArrayMap arrayMap2;
                 int i4;
                 SessionEntity sessionEntity;
-                String string;
-                String string2;
-                String string3;
-                String string4;
+                String string = null;
+                String string2 = null;
+                String string3 = null;
+                String string4 = null;
                 Integer valueOf;
                 String string5;
                 String string6;
@@ -20954,16 +20954,16 @@ public final class SessionDao_Impl implements SessionDao {
                 int i15;
                 String string19;
                 int i16;
-                boolean z;
+                boolean z = false;
                 int i17;
-                boolean z2;
+                boolean z2 = false;
                 int i18;
-                boolean z3;
+                boolean z3 = false;
                 int i19;
                 String string20;
                 int i20;
                 Boolean valueOf6;
-                Boolean bool;
+                Boolean bool = null;
                 int i21;
                 String string21;
                 int i22;
@@ -20971,7 +20971,7 @@ public final class SessionDao_Impl implements SessionDao {
                 int i23;
                 int i24;
                 String string23;
-                int i25;
+                int i25 = 0;
                 String string25 = null;
                 String string26 = null;
                 java.util.ArrayList arrayList = null;
