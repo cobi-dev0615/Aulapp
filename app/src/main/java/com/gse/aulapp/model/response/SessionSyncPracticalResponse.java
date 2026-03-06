@@ -137,7 +137,6 @@ public final class SessionSyncPracticalResponse extends GeneralResponseDecrypt {
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.message, result.message);
         }
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
 

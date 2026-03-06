@@ -148,7 +148,6 @@ public final /* data */ class PasswordRecoveryResponse extends GeneralResponseDe
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.status, result.status) && Intrinsics.areEqual(this.code, result.code);
         }
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         public int hashCode() {
             Boolean bool = this.success;
@@ -307,7 +306,6 @@ public final /* data */ class PasswordRecoveryResponse extends GeneralResponseDe
         PasswordRecoveryResponse passwordRecoveryResponse = (PasswordRecoveryResponse) other;
         return Intrinsics.areEqual(this.statusCode, passwordRecoveryResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, passwordRecoveryResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, passwordRecoveryResponse.generalMessage) && Intrinsics.areEqual(this.result, passwordRecoveryResponse.result) && Intrinsics.areEqual(this.url, passwordRecoveryResponse.url);
     }
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 

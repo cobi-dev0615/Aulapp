@@ -134,7 +134,6 @@ public final /* data */ class ExamValidateResponse extends GeneralResponseDecryp
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code);
         }
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
@@ -246,7 +245,6 @@ public final /* data */ class ExamValidateResponse extends GeneralResponseDecryp
         ExamValidateResponse examValidateResponse = (ExamValidateResponse) other;
         return Intrinsics.areEqual(this.statusCode, examValidateResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, examValidateResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, examValidateResponse.generalMessage) && Intrinsics.areEqual(this.result, examValidateResponse.result);
     }
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 

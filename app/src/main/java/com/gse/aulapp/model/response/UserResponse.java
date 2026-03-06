@@ -182,7 +182,6 @@ public final /* data */ class UserResponse extends GeneralResponseDecrypt {
         public final List<User> getData() {
             return this.data;
         }
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
@@ -364,7 +363,6 @@ public final /* data */ class UserResponse extends GeneralResponseDecrypt {
         UserResponse userResponse = (UserResponse) other;
         return Intrinsics.areEqual(this.statusCode, userResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, userResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, userResponse.generalMessage) && Intrinsics.areEqual(this.result, userResponse.result) && Intrinsics.areEqual(this.url, userResponse.url);
     }
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 

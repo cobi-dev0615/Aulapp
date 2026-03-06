@@ -148,7 +148,6 @@ public final /* data */ class BiometricSetExceptionResponse extends GeneralRespo
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.status, result.status) && Intrinsics.areEqual(this.code, result.code);
         }
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         public int hashCode() {
             Boolean bool = this.success;
@@ -307,7 +306,6 @@ public final /* data */ class BiometricSetExceptionResponse extends GeneralRespo
         BiometricSetExceptionResponse biometricSetExceptionResponse = (BiometricSetExceptionResponse) other;
         return Intrinsics.areEqual(this.statusCode, biometricSetExceptionResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, biometricSetExceptionResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, biometricSetExceptionResponse.generalMessage) && Intrinsics.areEqual(this.result, biometricSetExceptionResponse.result) && Intrinsics.areEqual(this.url, biometricSetExceptionResponse.url);
     }
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 

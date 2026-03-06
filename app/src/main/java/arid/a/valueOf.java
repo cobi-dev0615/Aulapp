@@ -24,10 +24,10 @@ import kotlin.jvm.internal.LongCompanionObject;
 
 /* loaded from: classes.dex */
 public abstract class valueOf extends OutputStream implements AutoCloseable {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$d = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
+    private static byte[] $$c = null;
+    private static int $$d = 0;
     private static int $10;
     private static int $11;
     private static int Action;
@@ -373,7 +373,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
             cArr = str.toCharArray();
             $10 = ($11 + R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
         } else {
-            cArr = str;
+            cArr = str != null ? str.toCharArray() : null;
         }
         char[] cArr2 = cArr;
         PngjUnsupportedException pngjUnsupportedException = new PngjUnsupportedException();
@@ -419,13 +419,10 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
             } catch (Throwable th) {
                 cause = th.getCause();
                 if (cause != null) {
+                    throw cause;
                 }
-            }
-            cause = th.getCause();
-            if (cause != null) {
                 throw th;
             }
-            throw cause;
         }
         char[] cArr3 = new char[length];
         pngjUnsupportedException.valueOf = i4;

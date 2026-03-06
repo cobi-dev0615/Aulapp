@@ -357,7 +357,6 @@ public final /* data */ class LoginResponse extends GeneralResponseDecrypt {
             return this.centerList;
         }
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         public int hashCode() {
             Boolean bool = this.success;
@@ -635,7 +634,6 @@ public final /* data */ class LoginResponse extends GeneralResponseDecrypt {
         LoginResponse loginResponse = (LoginResponse) other;
         return Intrinsics.areEqual(this.statusCode, loginResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, loginResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, loginResponse.generalMessage) && Intrinsics.areEqual(this.result, loginResponse.result) && Intrinsics.areEqual(this.url, loginResponse.url);
     }
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 

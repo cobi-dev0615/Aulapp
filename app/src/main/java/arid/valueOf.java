@@ -24,8 +24,8 @@ public enum valueOf {
     FILTER_CYCLIC(-50),
     FILTER_UNKNOWN(-100);
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
     private static final HashMap Attempt;
     public final int Action;
 
@@ -54,6 +54,7 @@ public enum valueOf {
     private static void b(byte b, int i, short s, Object[] objArr) {
         int i2;
         int i3;
+        int i8;
         byte[] bArr = $$a;
         int i4 = 77 - b;
         int i5 = 118 - (s * 19);
@@ -62,7 +63,7 @@ public enum valueOf {
         if (bArr == null) {
             i2 = i4;
             int i7 = i6;
-            int i8 = 0;
+            i8 = 0;
             i4 = (i4 + i7) - 8;
             i3 = i8;
             bArr2[i3] = (byte) i4;

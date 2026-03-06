@@ -281,7 +281,6 @@ public final class ParameterListResponse extends GeneralResponseDecrypt {
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.status, result.status) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.data, result.data);
         }
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         public int hashCode() {
             Boolean bool = this.success;

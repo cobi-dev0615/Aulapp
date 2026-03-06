@@ -137,7 +137,6 @@ public final /* data */ class SetFraudInformationResponse extends GeneralRespons
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code);
         }
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
@@ -275,7 +274,6 @@ public final /* data */ class SetFraudInformationResponse extends GeneralRespons
         SetFraudInformationResponse setFraudInformationResponse = (SetFraudInformationResponse) other;
         return Intrinsics.areEqual(this.statusCode, setFraudInformationResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, setFraudInformationResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, setFraudInformationResponse.generalMessage) && Intrinsics.areEqual(this.result, setFraudInformationResponse.result) && Intrinsics.areEqual(this.url, setFraudInformationResponse.url);
     }
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 

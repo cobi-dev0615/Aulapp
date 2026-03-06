@@ -148,7 +148,6 @@ public final /* data */ class FallBackResponse extends GeneralResponseDecrypt {
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.status, result.status);
         }
         @Override // com.gse.aulapp.model.response.GeneralResponse
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         public int hashCode() {
             Boolean bool = this.success;
@@ -307,7 +306,6 @@ public final /* data */ class FallBackResponse extends GeneralResponseDecrypt {
         FallBackResponse fallBackResponse = (FallBackResponse) other;
         return Intrinsics.areEqual(this.statusCode, fallBackResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, fallBackResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, fallBackResponse.generalMessage) && Intrinsics.areEqual(this.result, fallBackResponse.result) && Intrinsics.areEqual(this.url, fallBackResponse.url);
     }
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 

@@ -164,7 +164,6 @@ public final /* data */ class DatetimeResponse extends GeneralResponseDecrypt {
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.time, result.time) && Intrinsics.areEqual(this.date, result.date) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code);
         }
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
@@ -325,7 +324,6 @@ public final /* data */ class DatetimeResponse extends GeneralResponseDecrypt {
         DatetimeResponse datetimeResponse = (DatetimeResponse) other;
         return Intrinsics.areEqual(this.statusCode, datetimeResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, datetimeResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, datetimeResponse.generalMessage) && Intrinsics.areEqual(this.result, datetimeResponse.result) && Intrinsics.areEqual(this.url, datetimeResponse.url);
     }
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 

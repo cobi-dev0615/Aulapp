@@ -22,10 +22,10 @@ import kotlin.UByte;
 
 /* loaded from: classes.dex */
 public abstract class PngjException {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$d = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
+    private static byte[] $$c = null;
+    private static int $$d = 0;
     private static int $10;
     private static int $11;
     private static char Attempt;
@@ -167,7 +167,7 @@ public abstract class PngjException {
                 cArr = str.toCharArray();
             }
         } else {
-            cArr = str;
+            cArr = str != null ? str.toCharArray() : null;
         }
         char[] cArr2 = cArr;
         PngjOutputException pngjOutputException = new PngjOutputException();
@@ -277,7 +277,7 @@ public abstract class PngjException {
             byte[] bArr4 = bArr;
             i3 = i;
             i = b5;
-            b4 = b3 + 1;
+            b4 = (byte)(b3 + 1);
             bArr3 = bArr4;
             i2++;
             i += i3;
@@ -426,7 +426,7 @@ public abstract class PngjException {
                     if (i7 == 0) {
                         short[] sArr = getScore;
                         pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                        pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[r4] ^ j2)) + s)) ^ b));
+                        pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[pngjPrematureEnding.values] ^ j2)) + s)) ^ b));
                         $10 = ($11 + 103) % 128;
                     } else {
                         int i19 = $11 + 61;
@@ -434,11 +434,11 @@ public abstract class PngjException {
                         if (i19 % 2 != 0) {
                             byte[] bArr6 = isQualityFailed;
                             pngjPrematureEnding.values = pngjPrematureEnding.values;
-                            c = (char) (pngjPrematureEnding.PngjBadCrcException >>> (((byte) (((byte) (bArr6[r4] * j2)) / s)) ^ b));
+                            c = (char) (pngjPrematureEnding.PngjBadCrcException >>> (((byte) (((byte) (bArr6[pngjPrematureEnding.values] * j2)) / s)) ^ b));
                         } else {
                             byte[] bArr7 = isQualityFailed;
                             pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                            c = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr7[r4] ^ j2)) + s)) ^ b));
+                            c = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr7[pngjPrematureEnding.values] ^ j2)) + s)) ^ b));
                         }
                         pngjPrematureEnding.valueOf = c;
                     }
@@ -592,7 +592,7 @@ public abstract class PngjException {
             bArr3 = bArr;
         }
         bArr3[0] = (byte) valueof.Action;
-        int i4 = PngjBadCrcException.PngjBadSignature[valueof.ordinal()];
+        int i4 = PngjException.PngjBadCrcException.PngjBadSignature[valueof.ordinal()];
         if (i4 != 1) {
             if (i4 == 2) {
                 int i5 = 1;

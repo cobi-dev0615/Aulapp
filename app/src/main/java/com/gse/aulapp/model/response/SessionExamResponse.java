@@ -147,7 +147,6 @@ public final /* data */ class SessionExamResponse extends GeneralResponseDecrypt
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.data, result.data);
         }
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
@@ -304,7 +303,6 @@ public final /* data */ class SessionExamResponse extends GeneralResponseDecrypt
         SessionExamResponse sessionExamResponse = (SessionExamResponse) other;
         return Intrinsics.areEqual(this.statusCode, sessionExamResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, sessionExamResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, sessionExamResponse.generalMessage) && Intrinsics.areEqual(this.result, sessionExamResponse.result) && Intrinsics.areEqual(this.url, sessionExamResponse.url);
     }
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 

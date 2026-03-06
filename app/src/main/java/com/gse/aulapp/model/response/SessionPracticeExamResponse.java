@@ -161,7 +161,6 @@ public final class SessionPracticeExamResponse extends GeneralResponseDecrypt {
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.dataID, result.dataID) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.examResult, result.examResult);
         }
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
 

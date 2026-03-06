@@ -134,7 +134,6 @@ public final /* data */ class BiometricSetPreferredHandResponse extends GeneralR
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code);
         }
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
@@ -246,7 +245,6 @@ public final /* data */ class BiometricSetPreferredHandResponse extends GeneralR
         BiometricSetPreferredHandResponse biometricSetPreferredHandResponse = (BiometricSetPreferredHandResponse) other;
         return Intrinsics.areEqual(this.statusCode, biometricSetPreferredHandResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, biometricSetPreferredHandResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, biometricSetPreferredHandResponse.generalMessage) && Intrinsics.areEqual(this.result, biometricSetPreferredHandResponse.result);
     }
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
