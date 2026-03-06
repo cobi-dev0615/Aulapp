@@ -24,7 +24,6 @@ import java.util.Date;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
 import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
@@ -52,11 +51,11 @@ public final class HoursPerformedViewModel extends ViewModel {
     private final void footer(FragmentActivity activity, FragmentHoursPerformedBinding binding, Integer hour, Integer hourMax) {
         CharSequence text = activity != null ? activity.getText(R.string.footer_hours_performed) : null;
         int colorResource = ResourceUtil.INSTANCE.getColorResource(activity, R.color.light_green);
-        String t = StringsKt.t(StringsKt.t(StringsKt.t(String.valueOf(text), "[HOURS]", String.valueOf(hour)), "[HOURSMAXIMUM]", String.valueOf(hourMax)), hour + " horas", "<font color='" + colorResource + "'>" + hour + " horas</font>");
+        String t = String.valueOf(text).replace("[HOURS]", String.valueOf(hour)).replace("[HOURSMAXIMUM]", String.valueOf(hourMax)).replace(hour + " horas", "<font color='" + colorResource + "'>" + hour + " horas</font>");
         StringBuilder sb = new StringBuilder();
         sb.append(hourMax);
         sb.append(" máximas");
-        String t2 = StringsKt.t(t, sb.toString(), "<font color='" + colorResource + "'>" + hourMax + " máximas</font>");
+        String t2 = t.replace(sb.toString(), "<font color='" + colorResource + "'>" + hourMax + " máximas</font>");
         binding.cvContainerFooter.setVisibility(0);
         binding.footer.setText(HtmlCompat.fromHtml(t2, 0));
     }

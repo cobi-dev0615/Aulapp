@@ -21,8 +21,7 @@ public final /* synthetic */ class u5 implements LifecycleEventObserver {
     public final void onStateChanged(LifecycleOwner lifecycleOwner, Lifecycle.Event event) {
         switch (this.a) {
             case 0:
-                FragmentNavigator.fragmentObserver$lambda$1((FragmentNavigator) this.b, lifecycleOwner, event);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             case 1:
                 NavController.lifecycleObserver$lambda$2((NavController) this.b, lifecycleOwner, event);
                 break;

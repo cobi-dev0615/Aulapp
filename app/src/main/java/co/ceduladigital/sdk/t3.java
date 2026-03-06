@@ -25,8 +25,7 @@ public final /* synthetic */ class t3 implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                DefaultSpecialEffectsController.startTransitions$lambda$9((SpecialEffectsController.Operation) this.c, (SpecialEffectsController.Operation) this.d, this.b, (ArrayMap) this.e);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
                 // Stubbed: SessionReportingCoordinator.lambda$persistEvent$0 (EventMetadata)
                 throw new UnsupportedOperationException("Decompiled stub");

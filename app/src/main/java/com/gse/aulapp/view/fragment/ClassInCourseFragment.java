@@ -19,6 +19,7 @@ import androidx.lifecycle.LifecycleOwnerKt;
 import androidx.lifecycle.ViewModelProvider;
 import co.ceduladigital.sdk.a1;
 import co.ceduladigital.sdk.c0;
+import co.ceduladigital.sdk.c1;
 import co.ceduladigital.sdk.w0;
 import co.ceduladigital.sdk.x0;
 import co.ceduladigital.sdk.y0;
@@ -324,12 +325,8 @@ public final class ClassInCourseFragment extends Fragment {
             FragmentClassInCourseBinding fragmentClassInCourseBinding5 = this.a;
             Intrinsics.checkNotNull(fragmentClassInCourseBinding5);
             final int i = 0;
-            fragmentClassInCourseBinding5.cvInfoExam.setOnClickListener(new View.OnClickListener(this) { // from class: co.ceduladigital.sdk.m0
-                public final /* synthetic */ ClassInCourseFragment b;
-
-                {
-                    this.b = this;
-                }
+            fragmentClassInCourseBinding5.cvInfoExam.setOnClickListener(new View.OnClickListener() { // from class: co.ceduladigital.sdk.m0
+                public final /* synthetic */ ClassInCourseFragment b = ClassInCourseFragment.this;
 
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
@@ -439,12 +436,8 @@ public final class ClassInCourseFragment extends Fragment {
             FragmentClassInCourseBinding fragmentClassInCourseBinding6 = this.a;
             Intrinsics.checkNotNull(fragmentClassInCourseBinding6);
             final int i2 = 1;
-            fragmentClassInCourseBinding6.floatingActionButtonCloseClass.setOnClickListener(new View.OnClickListener(this) { // from class: co.ceduladigital.sdk.m0
-                public final /* synthetic */ ClassInCourseFragment b;
-
-                {
-                    this.b = this;
-                }
+            fragmentClassInCourseBinding6.floatingActionButtonCloseClass.setOnClickListener(new View.OnClickListener() { // from class: co.ceduladigital.sdk.m0
+                public final /* synthetic */ ClassInCourseFragment b = ClassInCourseFragment.this;
 
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
@@ -554,12 +547,8 @@ public final class ClassInCourseFragment extends Fragment {
             FragmentClassInCourseBinding fragmentClassInCourseBinding7 = this.a;
             Intrinsics.checkNotNull(fragmentClassInCourseBinding7);
             final int i3 = 2;
-            fragmentClassInCourseBinding7.btnEndClass.setOnClickListener(new View.OnClickListener(this) { // from class: co.ceduladigital.sdk.m0
-                public final /* synthetic */ ClassInCourseFragment b;
-
-                {
-                    this.b = this;
-                }
+            fragmentClassInCourseBinding7.btnEndClass.setOnClickListener(new View.OnClickListener() { // from class: co.ceduladigital.sdk.m0
+                public final /* synthetic */ ClassInCourseFragment b = ClassInCourseFragment.this;
 
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {

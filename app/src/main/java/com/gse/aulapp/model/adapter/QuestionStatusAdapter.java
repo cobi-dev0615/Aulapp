@@ -101,7 +101,9 @@ public final class QuestionStatusAdapter extends ListAdapter<QuestionDto, Questi
     public QuestionStatusAdapter(Function2<? super Integer, ? super QuestionDto, Unit> onItemClick) {
         super(new QuestionDiffCallback());
         Intrinsics.checkNotNullParameter(onItemClick, "onItemClick");
-        this.onItemClick = onItemClick;
+        @SuppressWarnings("unchecked")
+        Function2<Integer, QuestionDto, Unit> castedClick = (Function2<Integer, QuestionDto, Unit>) (Function2) onItemClick;
+        this.onItemClick = castedClick;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

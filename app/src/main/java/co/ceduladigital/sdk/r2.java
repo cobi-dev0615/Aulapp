@@ -80,8 +80,7 @@ public final /* synthetic */ class r2 implements View.OnClickListener {
                 MainActivity.onCreate$lambda$0((MainActivity) this.b, view);
                 break;
             case 7:
-                ((MaterialDatePicker) this.b).lambda$initHeaderToggle$0(view);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             case 8:
                 PasswordRecoverFragment this$03 = (PasswordRecoverFragment) this.b;
                 Intrinsics.checkNotNullParameter(this$03, "this$0");

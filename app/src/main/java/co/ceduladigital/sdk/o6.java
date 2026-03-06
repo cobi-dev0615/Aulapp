@@ -15,7 +15,8 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.StateFlow;
 
 /* loaded from: classes2.dex */
-public final class o6 extends SuspendLambda implements Function2 {
+@SuppressWarnings("unchecked")
+public final class o6 extends SuspendLambda implements Function2<Object, Object, Object> {
     public int a;
     public final /* synthetic */ HoursPerformedFragment b;
 

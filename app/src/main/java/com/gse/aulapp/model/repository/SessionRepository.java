@@ -195,11 +195,11 @@ public final class SessionRepository {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object sendSessionPracticeAndSyncPracticalExamRequest(Context context, SessionPracticeExamSyncRequest sessionPracticeExamSyncRequest, Continuation<? super Pair<Boolean, String>> continuation) {
-        SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1 sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1;
-        Object obj;
-        Object coroutine_suspended;
-        int i;
-        SessionRepository sessionRepository;
+        SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1 sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1 = null;
+        Object obj = null;
+        Object coroutine_suspended = null;
+        int i = 0;
+        SessionRepository sessionRepository = null;
         Response response;
         Object sendSessionSyncPracticalRequest;
         SessionPracticeExamResponse sessionPracticeExamResponse;
@@ -309,6 +309,7 @@ public final class SessionRepository {
         obj = sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1.result;
         coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1.label;
+        return null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -324,14 +325,14 @@ public final class SessionRepository {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object sendSessionPracticeAndSyncPracticalRequest(Context context, SessionPracticeSyncRequest sessionPracticeSyncRequest, Continuation<? super Pair<Boolean, String>> continuation) {
-        SessionRepository$sendSessionPracticeAndSyncPracticalRequest$1 sessionRepository$sendSessionPracticeAndSyncPracticalRequest$1;
-        Object obj;
-        Object coroutine_suspended;
-        int i;
-        SessionRepository sessionRepository;
+        SessionRepository$sendSessionPracticeAndSyncPracticalRequest$1 sessionRepository$sendSessionPracticeAndSyncPracticalRequest$1 = null;
+        Object obj = null;
+        Object coroutine_suspended = null;
+        int i = 0;
+        SessionRepository sessionRepository = null;
         Response response;
         SessionPracticeExamResponse sessionPracticeExamResponse;
-        String dataID;
+        String dataID = null;
         SessionPracticeExamResponse.Result result;
         Object sendSessionSyncPracticalRequest;
         SessionPracticeExamResponse sessionPracticeExamResponse2;
@@ -451,6 +452,7 @@ public final class SessionRepository {
         obj = sessionRepository$sendSessionPracticeAndSyncPracticalRequest$1.result;
         coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$sendSessionPracticeAndSyncPracticalRequest$1.label;
+        return null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -468,7 +470,7 @@ public final class SessionRepository {
     */
     public final Object sendSessionSyncPracticalRequest(Context context, SessionSyncPracticalRequest sessionSyncPracticalRequest, Continuation<? super ApiResult<SessionSyncPracticalResponse>> continuation) {
         SessionRepository$sendSessionSyncPracticalRequest$1 sessionRepository$sendSessionSyncPracticalRequest$1;
-        int i;
+        int i = 0;
         Response response;
         Object obj = null;
         try {
@@ -527,6 +529,7 @@ public final class SessionRepository {
         Object obj2 = sessionRepository$sendSessionSyncPracticalRequest$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$sendSessionSyncPracticalRequest$1.label;
+        return null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -800,6 +803,7 @@ public final class SessionRepository {
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         switch (sessionRepository$deleteLogOutSession$1.label) {
         }
+        return null;
     }
 
     public final Object deleteSessionById(List<String> list, Continuation<? super Unit> continuation) {
@@ -982,9 +986,9 @@ public final class SessionRepository {
     */
     public final Object initAllSessionSyncPending(Context context, Continuation<? super Pair<Boolean, String>> continuation) {
         SessionRepository$initAllSessionSyncPending$1 sessionRepository$initAllSessionSyncPending$1;
-        int i;
+        int i = 0;
         Ref.ObjectRef objectRef;
-        Object allSessionPendingSync;
+        Object allSessionPendingSync = null;
         SessionRepository sessionRepository;
         Iterator it;
         SessionFullSync sessionFullSync;
@@ -1152,6 +1156,7 @@ public final class SessionRepository {
         it = ((Iterable) allSessionPendingSync).iterator();
         if (!it.hasNext()) {
         }
+        return null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x008b  */
@@ -1168,7 +1173,7 @@ public final class SessionRepository {
     */
     public final Object initSessionSyncPending(Continuation<? super Boolean> continuation) {
         SessionRepository$initSessionSyncPending$1 sessionRepository$initSessionSyncPending$1;
-        int i;
+        int i = 0;
         Ref.BooleanRef booleanRef;
         SessionRepository sessionRepository;
         Iterator it;
@@ -1310,6 +1315,7 @@ public final class SessionRepository {
         it = ((Iterable) obj2).iterator();
         if (it.hasNext()) {
         }
+        return null;
     }
 
     public final Object saveClassRoom(ClassRoomEntity classRoomEntity, Continuation<? super Long> continuation) {
@@ -1341,7 +1347,11 @@ public final class SessionRepository {
         Date parseDate = companion.parseDate(B2, "yyyy-MM-dd HH:mm", null);
         ConverterUtil.Companion companion2 = ConverterUtil.INSTANCE;
         sessionEntity.setDateEndClass(companion2.dateToTimestamp(parseDate));
-        sessionEntity.setDateClass(companion2.dateToTimestamp(new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).parse(str)));
+        try {
+            sessionEntity.setDateClass(companion2.dateToTimestamp(new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).parse(str)));
+        } catch (java.text.ParseException e) {
+            e.printStackTrace();
+        }
         return this.sessionDao.saveSession(sessionEntity, continuation);
     }
 
@@ -1374,13 +1384,13 @@ public final class SessionRepository {
     */
     public final Object syncSessionProcess(Context context, String str, Continuation<? super Pair<Boolean, String>> continuation) {
         SessionRepository$syncSessionProcess$1 sessionRepository$syncSessionProcess$1;
-        Object coroutine_suspended;
-        int i;
-        SessionRepository sessionRepository;
+        Object coroutine_suspended = null;
+        int i = 0;
+        SessionRepository sessionRepository = null;
         Object sessionSyncById;
         Context context2;
         List<QuestionPracticeExam> list;
-        String type;
+        String type = null;
         if (continuation instanceof SessionRepository$syncSessionProcess$1) {
             sessionRepository$syncSessionProcess$1 = (SessionRepository$syncSessionProcess$1) continuation;
             int i2 = sessionRepository$syncSessionProcess$1.label;

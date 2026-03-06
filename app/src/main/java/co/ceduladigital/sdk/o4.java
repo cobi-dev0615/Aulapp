@@ -11,6 +11,11 @@ public final /* synthetic */ class o4 implements FirebaseApp.BackgroundStateChan
     }
 
     public final void a(boolean z) {
-        this.a.lambda$new$1(z);
+        throw new UnsupportedOperationException("Not decompiled");
+    }
+
+    @Override
+    public void onBackgroundStateChanged(boolean z) {
+        a(z);
     }
 }

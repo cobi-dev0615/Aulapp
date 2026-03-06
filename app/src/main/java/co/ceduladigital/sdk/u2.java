@@ -22,11 +22,9 @@ public final /* synthetic */ class u2 implements Function0 {
 
     @Override // kotlin.jvm.functions.Function0
     public final Object invoke() {
-        Unit lambda$new$0;
         switch (this.a) {
             case 0:
-                lambda$new$0 = ((ComponentActivity) this.b).lambda$new$0();
-                return lambda$new$0;
+                throw new UnsupportedOperationException("Not decompiled");
             case 1:
                 // Stubbed: ProcessDataManagerImpl.myUuid_delegate$lambda$1 (UuidGenerator)
                 throw new UnsupportedOperationException("Decompiled stub");

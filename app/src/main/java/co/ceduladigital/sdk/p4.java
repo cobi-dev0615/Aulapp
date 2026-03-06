@@ -18,11 +18,9 @@ public final /* synthetic */ class p4 implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                this.b.lambda$getToken$2(this.c);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                this.b.lambda$doRegistrationOrRefresh$3(this.c);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

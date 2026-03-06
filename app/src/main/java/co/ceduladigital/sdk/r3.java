@@ -28,11 +28,9 @@ public final /* synthetic */ class r3 implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                ((DefaultScheduler) this.b).lambda$schedule$1((TransportContext) this.c, (TransportScheduleCallback) this.d, (EventInternal) this.e);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                ((UserMetadata) this.b).lambda$setNewSession$0((String) this.c, (Map) this.d, (List) this.e);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

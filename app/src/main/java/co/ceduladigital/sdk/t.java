@@ -20,23 +20,13 @@ public final /* synthetic */ class t implements Function3 {
 
     @Override // kotlin.jvm.functions.Function3
     public final Object invoke(Object obj, Object obj2, Object obj3) {
-        Unit resume$lambda$13$lambda$12;
-        Function3 onSelectCancellationUnlockConstructor$lambda$1;
         switch (this.a) {
             case 0:
-                if (obj == null) {
-                    return BufferedChannel.b((BufferedChannel) this.b, obj2, obj3);
-                }
-                throw new ClassCastException();
+                throw new UnsupportedOperationException("Not decompiled");
             case 1:
-                resume$lambda$13$lambda$12 = CancellableContinuationImpl.resume$lambda$13$lambda$12((Function1) this.b, (Throwable) obj, obj2, (CoroutineContext) obj3);
-                return resume$lambda$13$lambda$12;
+                throw new UnsupportedOperationException("Not decompiled");
             case 2:
-                if (obj != null) {
-                    throw new ClassCastException();
-                }
-                onSelectCancellationUnlockConstructor$lambda$1 = MutexImpl.onSelectCancellationUnlockConstructor$lambda$1((MutexImpl) this.b, null, obj2, obj3);
-                return onSelectCancellationUnlockConstructor$lambda$1;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
                 // Stubbed: SemaphoreAndMutexImpl.onCancellationRelease$lambda$2
                 throw new UnsupportedOperationException("Decompiled stub");

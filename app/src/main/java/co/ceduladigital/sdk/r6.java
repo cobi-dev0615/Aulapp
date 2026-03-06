@@ -18,11 +18,9 @@ public final /* synthetic */ class r6 implements ObjectEncoder {
         ObjectEncoderContext objectEncoderContext = (ObjectEncoderContext) obj2;
         switch (this.a) {
             case 0:
-                JsonDataEncoderBuilder.lambda$static$0(obj, objectEncoderContext);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                ProtobufEncoder.Builder.lambda$static$0(obj, objectEncoderContext);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

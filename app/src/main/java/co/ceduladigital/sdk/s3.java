@@ -25,11 +25,9 @@ public final /* synthetic */ class s3 implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                DefaultSpecialEffectsController.executeOperations$lambda$2((List) this.b, (SpecialEffectsController.Operation) this.c, (DefaultSpecialEffectsController) this.d);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                DefaultSpecialEffectsController.startTransitions$lambda$10((FragmentTransitionImpl) this.b, (View) this.c, (Rect) this.d);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

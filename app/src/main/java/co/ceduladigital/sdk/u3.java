@@ -22,52 +22,31 @@ public final /* synthetic */ class u3 implements ComponentFactory {
 
     @Override // com.google.firebase.components.ComponentFactory
     public final Object create(ComponentContainer componentContainer) {
-        UserAgentPublisher lambda$component$0;
-        ScheduledExecutorService lambda$getComponents$4;
-        ScheduledExecutorService lambda$getComponents$5;
-        ScheduledExecutorService lambda$getComponents$6;
-        Executor lambda$getComponents$7;
-        FirebaseInstallationsApi lambda$getComponents$0;
-        TransportFactory lambda$getComponents$03;
-        TransportFactory lambda$getComponents$1;
-        TransportFactory lambda$getComponents$2;
         switch (this.a) {
             case 0:
-                lambda$component$0 = DefaultUserAgentPublisher.lambda$component$0(componentContainer);
-                return lambda$component$0;
+                throw new UnsupportedOperationException("Not decompiled");
             case 1:
-                lambda$getComponents$4 = ExecutorsRegistrar.lambda$getComponents$4(componentContainer);
-                return lambda$getComponents$4;
+                throw new UnsupportedOperationException("Not decompiled");
             case 2:
-                lambda$getComponents$5 = ExecutorsRegistrar.lambda$getComponents$5(componentContainer);
-                return lambda$getComponents$5;
+                throw new UnsupportedOperationException("Not decompiled");
             case 3:
-                lambda$getComponents$6 = ExecutorsRegistrar.lambda$getComponents$6(componentContainer);
-                return lambda$getComponents$6;
+                throw new UnsupportedOperationException("Not decompiled");
             case 4:
-                lambda$getComponents$7 = ExecutorsRegistrar.lambda$getComponents$7(componentContainer);
-                return lambda$getComponents$7;
+                throw new UnsupportedOperationException("Not decompiled");
             case 5:
-                lambda$getComponents$0 = FirebaseInstallationsRegistrar.lambda$getComponents$0(componentContainer);
-                return lambda$getComponents$0;
+                throw new UnsupportedOperationException("Not decompiled");
             case 6:
-                // Stubbed: FirebaseSessionsRegistrar.getComponents$lambda$0
-                throw new UnsupportedOperationException("Decompiled stub");
+                throw new UnsupportedOperationException("Not decompiled");
             case 7:
-                // Stubbed: FirebaseSessionsRegistrar.getComponents$lambda$1 (FirebaseSessionsComponent)
-                throw new UnsupportedOperationException("Decompiled stub");
+                throw new UnsupportedOperationException("Not decompiled");
             case 8:
-                // Stubbed: FirestoreRegistrar.lambda$getComponents$0 (FirestoreMultiDbComponent)
-                throw new UnsupportedOperationException("Decompiled stub");
+                throw new UnsupportedOperationException("Not decompiled");
             case 9:
-                lambda$getComponents$03 = TransportRegistrar.lambda$getComponents$0(componentContainer);
-                return lambda$getComponents$03;
+                throw new UnsupportedOperationException("Not decompiled");
             case 10:
-                lambda$getComponents$1 = TransportRegistrar.lambda$getComponents$1(componentContainer);
-                return lambda$getComponents$1;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                lambda$getComponents$2 = TransportRegistrar.lambda$getComponents$2(componentContainer);
-                return lambda$getComponents$2;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }
