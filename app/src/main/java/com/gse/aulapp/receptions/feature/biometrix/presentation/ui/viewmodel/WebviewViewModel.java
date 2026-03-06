@@ -26,7 +26,7 @@ public final class WebviewViewModel extends ViewModel {
     private boolean loadingFinished = true;
 
     public WebviewViewModel() {
-        MutableSharedFlow<BiometricResult> MutableSharedFlow$default = SharedFlowKt.MutableSharedFlow$default(0, 0, null, 4, null);
+        MutableSharedFlow<BiometricResult> MutableSharedFlow$default = SharedFlowKt.MutableSharedFlow(0, 0, null);
         this._responseBiometric = MutableSharedFlow$default;
         this.responseBiometric = FlowKt.asSharedFlow(MutableSharedFlow$default);
     }

@@ -25,6 +25,16 @@ public final class values extends FilterInputStream {
         this(inputStream, i, i2, s, i3, i4, (byte) 0);
     }
 
+    private static long[] initSeedArray(int a, int b) {
+        long[] result = new long[4];
+        long seed = ((long) a << 32) | (b & 0xFFFFFFFFL);
+        for (int i = 0; i < 4; i++) {
+            seed = (seed * 2147483085L + 1) % 2147483647L;
+            result[i] = seed;
+        }
+        return result;
+    }
+
     private void valueOf() {
         long[] jArr = this.PngjException;
         long[] jArr2 = this.PngjInputException;
@@ -35,7 +45,7 @@ public final class values extends FilterInputStream {
         jArr2[i] = ((jArr[i] * 2147483085) + j2) / 2147483647L;
         jArr[i] = (j + j2) % 2147483647L;
         for (int i2 = 0; i2 < this.values; i2++) {
-            this.PngjUnsupportedException[i2] = (byte) (r1[i2] ^ ((this.PngjException[this.PngjOutputException] >> (i2 << 3)) & 255));
+            this.PngjUnsupportedException[i2] = (byte) (this.PngjUnsupportedException[i2] ^ ((this.PngjException[this.PngjOutputException] >> (i2 << 3)) & 255));
         }
         this.PngjOutputException = (short) ((this.PngjOutputException + 1) % 4);
     }
@@ -43,7 +53,7 @@ public final class values extends FilterInputStream {
     private int values() {
         int i;
         if (this.PngjPrematureEnding == Integer.MAX_VALUE) {
-            this.PngjPrematureEnding = ((FilterInputStream) this).in.read();
+            this.PngjPrematureEnding = super.in.read();
         }
         if (this.PngjExceptionInternal == this.values) {
             byte[] bArr = this.PngjUnsupportedException;
@@ -54,7 +64,7 @@ public final class values extends FilterInputStream {
             }
             int i3 = 1;
             do {
-                int read = ((FilterInputStream) this).in.read(this.PngjUnsupportedException, i3, this.values - i3);
+                int read = super.in.read(this.PngjUnsupportedException, i3, this.values - i3);
                 if (read <= 0) {
                     break;
                 }
@@ -77,7 +87,7 @@ public final class values extends FilterInputStream {
                     this.PngjBadCrcException = 1;
                 }
             }
-            int read2 = ((FilterInputStream) this).in.read();
+            int read2 = super.in.read();
             this.PngjPrematureEnding = read2;
             this.PngjExceptionInternal = 0;
             if (read2 < 0) {
@@ -134,8 +144,8 @@ public final class values extends FilterInputStream {
         this.PngjInputException = new long[4];
         this.PngjExceptionInternal = min;
         this.a = min;
-        this.PngjException = PngjBadSignature.valueOf(i ^ i4, min ^ i4);
-        this.PngjInputException = PngjBadSignature.valueOf(i2 ^ i4, i3 ^ i4);
+        this.PngjException = initSeedArray(i ^ i4, min ^ i4);
+        this.PngjInputException = initSeedArray(i2 ^ i4, i3 ^ i4);
         this.PngjBadSignature = 100;
         this.valueOf = 100;
     }

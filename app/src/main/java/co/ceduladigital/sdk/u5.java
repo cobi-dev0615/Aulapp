@@ -23,11 +23,9 @@ public final /* synthetic */ class u5 implements LifecycleEventObserver {
             case 0:
                 throw new UnsupportedOperationException("Not decompiled");
             case 1:
-                NavController.lifecycleObserver$lambda$2((NavController) this.b, lifecycleOwner, event);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                SavedStateRegistry.performAttach$lambda$4((SavedStateRegistry) this.b, lifecycleOwner, event);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

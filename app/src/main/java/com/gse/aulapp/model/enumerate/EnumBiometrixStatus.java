@@ -89,7 +89,7 @@ public final class EnumBiometrixStatus {
         return this._name;
     }
 
-    public static EnumEntries<EnumBiometrixStatus> getEntries() {
+    public static EnumEntries getEntries() {
         return $ENTRIES;
     }
 

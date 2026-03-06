@@ -16,11 +16,9 @@ public final /* synthetic */ class x implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                this.b.lambda$new$0();
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                this.b.returnResultTimeout();
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

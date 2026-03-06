@@ -15,7 +15,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
 /* loaded from: classes2.dex */
-public final class v0 extends SuspendLambda implements Function2 {
+@SuppressWarnings("unchecked")
+public final class v0 extends SuspendLambda implements Function2<Object, Object, Object> {
     public int a;
     public final /* synthetic */ ClassInCourseFragment b;
     public final /* synthetic */ FragmentClassInCourseBinding c;

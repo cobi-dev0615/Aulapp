@@ -19,11 +19,9 @@ public final /* synthetic */ class z7 implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                ((ResourcesCompat.FontCallback) this.c).lambda$callbackFailAsync$1(this.b);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                ((SideSheetBehavior) this.c).lambda$setState$0(this.b);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

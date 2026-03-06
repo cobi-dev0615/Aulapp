@@ -74,7 +74,7 @@ public final class PngjBadCrcException extends FilterInputStream {
 
     private int valueOf() {
         if (this.PngjUnsupportedException == Integer.MAX_VALUE) {
-            this.PngjUnsupportedException = ((FilterInputStream) this).in.read();
+            this.PngjUnsupportedException = super.in.read();
         }
         if (this.PngjBadSignature == 8) {
             byte[] bArr = this.PngjBadCrcException;
@@ -85,7 +85,7 @@ public final class PngjBadCrcException extends FilterInputStream {
             }
             int i2 = 1;
             do {
-                int read = ((FilterInputStream) this).in.read(this.PngjBadCrcException, i2, 8 - i2);
+                int read = super.in.read(this.PngjBadCrcException, i2, 8 - i2);
                 if (read <= 0) {
                     break;
                 }
@@ -108,7 +108,7 @@ public final class PngjBadCrcException extends FilterInputStream {
                     this.Attempt = 1;
                 }
             }
-            int read2 = ((FilterInputStream) this).in.read();
+            int read2 = super.in.read();
             this.PngjUnsupportedException = read2;
             this.PngjBadSignature = 0;
             this.PngjInputException = read2 < 0 ? 8 - (this.PngjBadCrcException[7] & UByte.MAX_VALUE) : 8;

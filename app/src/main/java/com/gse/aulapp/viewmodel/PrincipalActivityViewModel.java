@@ -69,18 +69,15 @@ public final class PrincipalActivityViewModel extends ViewModel {
     }
 
     private final void routeNavigation(Button btnNavigation, NavController navController, Activity activity) {
-        switch (btnNavigation.getId()) {
-            case R.id.drawer_button_history_hour /* 2131362111 */:
-                navigateToHoursPrefered(navController, String.valueOf(PreferenceUtil.INSTANCE.getUserId(activity)));
-                break;
-            case R.id.drawer_button_history_ride /* 2131362112 */:
-                navigateToRideHistory(navController, String.valueOf(PreferenceUtil.INSTANCE.getUserId(activity)));
-                break;
-            case R.id.drawer_button_schedule_Exams /* 2131362113 */:
-                String string = activity.getResources().getString(R.string.txt_title_schedule_Exams);
-                Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
-                navigateToScheduleExams(navController, string, PreferenceUtil.INSTANCE.getScheduleExamsUrl(activity));
-                break;
+        int itemId = btnNavigation.getId();
+        if (itemId == R.id.drawer_button_history_hour) {
+            navigateToHoursPrefered(navController, String.valueOf(PreferenceUtil.INSTANCE.getUserId(activity)));
+        } else if (itemId == R.id.drawer_button_history_ride) {
+            navigateToRideHistory(navController, String.valueOf(PreferenceUtil.INSTANCE.getUserId(activity)));
+        } else if (itemId == R.id.drawer_button_schedule_Exams) {
+            String string = activity.getResources().getString(R.string.txt_title_schedule_Exams);
+            Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
+            navigateToScheduleExams(navController, string, PreferenceUtil.INSTANCE.getScheduleExamsUrl(activity));
         }
     }
 

@@ -67,16 +67,12 @@ public class ReLinkerInstance {
                                 loadLibrary(context2, reLinkerInstance.libraryLoader.unmapLibraryName(it.next()));
                             }
                         } catch (Throwable th) {
-                            th = th;
-                            Throwable th2 = th;
-                            if (elfParser == null) {
-                                throw th2;
+                            if (elfParser != null) {
+                                elfParser.close();
                             }
-                            elfParser.close();
-                            throw th2;
+                            throw th;
                         }
                     } catch (Throwable th3) {
-                        th = th3;
                         elfParser = null;
                     }
                 }
@@ -147,31 +143,17 @@ public class ReLinkerInstance {
         if (loadListener == null) {
             loadLibraryInternal(context, str, str2);
         } else {
-            new Thread(new Runnable(context, str, str2, loadListener) { // from class: com.getkeepsafe.relinker.ReLinkerInstance.1
-                final /* synthetic */ Context val$context;
-                final /* synthetic */ String val$library;
-                final /* synthetic */ String val$version;
-
-                /* JADX WARN: Code restructure failed: missing block: B:7:?, code lost:
-                
-                    throw null;
-                 */
-                /* JADX WARN: Code restructure failed: missing block: B:8:?, code lost:
-                
-                    throw null;
-                 */
+            final Context finalContext = context;
+            final String finalLibrary = str;
+            final String finalVersion = str2;
+            final ReLinker.LoadListener finalListener = loadListener;
+            new Thread(new Runnable() { // from class: com.getkeepsafe.relinker.ReLinkerInstance.1
                 @Override // java.lang.Runnable
-                /*
-                    Code decompiled incorrectly, please refer to instructions dump.
-                */
                 public void run() {
                     try {
-                        ReLinkerInstance.this.loadLibraryInternal(this.val$context, this.val$library, this.val$version);
-                        throw null;
+                        ReLinkerInstance.this.loadLibraryInternal(finalContext, finalLibrary, finalVersion);
                     } catch (MissingLibraryException unused) {
-                        throw null;
                     } catch (UnsatisfiedLinkError unused2) {
-                        throw null;
                     }
                 }
             }).start();

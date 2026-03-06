@@ -4,10 +4,10 @@ import java.util.Map;
 
 /* loaded from: classes.dex */
 public abstract class PngjBadCrcException {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
+    private static byte[] $$d = null;
+    private static int $$e = 0;
     private static int $10 = 0;
     private static int $11 = 1;
     private static int $14 = 0;

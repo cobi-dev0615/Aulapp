@@ -19,11 +19,9 @@ public final /* synthetic */ class y2 implements ComponentFactory {
 
     @Override // com.google.firebase.components.ComponentFactory
     public final Object create(ComponentContainer componentContainer) {
-        Object lambda$processRegistrar$0;
         switch (this.a) {
             case 0:
-                lambda$processRegistrar$0 = ComponentMonitor.lambda$processRegistrar$0(this.b, (Component) this.c, componentContainer);
-                return lambda$processRegistrar$0;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
                 // Stubbed: LibraryVersionComponent.lambda$fromContext$0 (LibraryVersion not public)
                 throw new UnsupportedOperationException("Decompiled stub");

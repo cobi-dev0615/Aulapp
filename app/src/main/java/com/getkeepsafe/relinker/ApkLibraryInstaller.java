@@ -196,8 +196,10 @@ public class ApkLibraryInstaller implements ReLinker.LibraryInstaller {
                                         } catch (IOException unused2) {
                                             fileOutputStream = null;
                                         } catch (Throwable th) {
-                                            th = th;
                                             fileOutputStream = null;
+                                            closeSilently(null);
+                                            closeSilently(fileOutputStream);
+                                            throw th;
                                         }
                                     } catch (FileNotFoundException unused3) {
                                         inputStream = null;
@@ -206,8 +208,10 @@ public class ApkLibraryInstaller implements ReLinker.LibraryInstaller {
                                         inputStream = null;
                                         fileOutputStream = null;
                                     } catch (Throwable th2) {
-                                        th = th2;
                                         fileOutputStream = null;
+                                        closeSilently(null);
+                                        closeSilently(fileOutputStream);
+                                        throw th2;
                                     }
                                     try {
                                         copy = copy(inputStream, fileOutputStream);
@@ -221,11 +225,9 @@ public class ApkLibraryInstaller implements ReLinker.LibraryInstaller {
                                         closeSilently(fileOutputStream);
                                         i = i2;
                                     } catch (Throwable th3) {
-                                        th = th3;
-                                        closeable = inputStream;
-                                        closeSilently(closeable);
+                                        closeSilently(inputStream);
                                         closeSilently(fileOutputStream);
-                                        throw th;
+                                        throw th3;
                                     }
                                     if (copy != file.length()) {
                                         closeSilently(inputStream);
@@ -257,21 +259,19 @@ public class ApkLibraryInstaller implements ReLinker.LibraryInstaller {
                     }
                 }
             } catch (Throwable th4) {
-                th = th4;
-                zipFileInZipEntry = findAPKWithLibrary;
-                if (zipFileInZipEntry != null) {
+                if (findAPKWithLibrary != null) {
                     try {
-                        ZipFile zipFile2 = zipFileInZipEntry.zipFile;
+                        ZipFile zipFile2 = findAPKWithLibrary.zipFile;
                         if (zipFile2 != null) {
                             zipFile2.close();
                         }
                     } catch (IOException unused9) {
                     }
                 }
-                throw th;
+                throw th4;
             }
         } catch (Throwable th5) {
-            th = th5;
+            /* decompilation artifact - exception swallowed */
         }
     }
 }

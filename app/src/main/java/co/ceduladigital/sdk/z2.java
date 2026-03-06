@@ -15,25 +15,17 @@ public final /* synthetic */ class z2 implements Provider {
 
     @Override // com.google.firebase.inject.Provider
     public final Object get() {
-        ScheduledExecutorService lambda$static$0;
-        ScheduledExecutorService lambda$static$1;
-        ScheduledExecutorService lambda$static$2;
-        ScheduledExecutorService lambda$static$3;
         switch (this.a) {
             case 0:
                 return Collections.EMPTY_SET;
             case 1:
-                lambda$static$0 = ExecutorsRegistrar.lambda$static$0();
-                return lambda$static$0;
+                throw new UnsupportedOperationException("Not decompiled");
             case 2:
-                lambda$static$1 = ExecutorsRegistrar.lambda$static$1();
-                return lambda$static$1;
+                throw new UnsupportedOperationException("Not decompiled");
             case 3:
-                lambda$static$2 = ExecutorsRegistrar.lambda$static$2();
-                return lambda$static$2;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                lambda$static$3 = ExecutorsRegistrar.lambda$static$3();
-                return lambda$static$3;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

@@ -9,12 +9,12 @@ public final class PngBadCharsetException {
     public int values;
 
     public static int PngjBadCrcException(int i) {
-        PngjException pngjException = PngjException.PngjBadSignature;
+        PngjException pngjException0 = PngjException.PngjBadSignature;
         int i2 = (i >>> 24) & KotlinVersion.MAX_COMPONENT_VALUE;
         int i3 = (i >>> 16) & KotlinVersion.MAX_COMPONENT_VALUE;
         int i4 = (i >>> 8) & KotlinVersion.MAX_COMPONENT_VALUE;
         int i5 = i & KotlinVersion.MAX_COMPONENT_VALUE;
-        int[][] iArr = pngjException.values;
+        int[][] iArr = pngjException0.values;
         return ((iArr[0][i2] + iArr[1][i3]) ^ iArr[2][i4]) + iArr[3][i5];
     }
 

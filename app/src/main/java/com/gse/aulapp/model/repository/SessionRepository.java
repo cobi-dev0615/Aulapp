@@ -826,7 +826,7 @@ public final class SessionRepository {
         SessionRepository$examRequest$1 sessionRepository$examRequest$1;
         Object coroutine_suspended;
         int i;
-        SessionRepository sessionRepository;
+        SessionRepository sessionRepository = null;
         Object sessionSyncById;
         List<QuestionPracticeExam> list;
         SessionRepository sessionRepository2;

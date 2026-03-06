@@ -9,4 +9,9 @@ public final /* synthetic */ class w8 implements MaterialPickerOnPositiveButtonC
     public /* synthetic */ w8(e4 e4Var) {
         this.a = e4Var;
     }
+
+    @Override // com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener
+    public void onPositiveButtonClick(Object selection) {
+        /* empty stub */
+    }
 }

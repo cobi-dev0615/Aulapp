@@ -19,23 +19,15 @@ public final /* synthetic */ class v2 implements SavedStateRegistry.SavedStatePr
 
     @Override // androidx.savedstate.SavedStateRegistry.SavedStateProvider
     public final Bundle saveState() {
-        Bundle lambda$new$1;
-        Bundle lambda$init$0;
-        Bundle lambda$attachController$4;
-        Bundle savedStateProvider$lambda$0;
         switch (this.a) {
             case 0:
-                lambda$new$1 = ((ComponentActivity) this.b).lambda$new$1();
-                return lambda$new$1;
+                throw new UnsupportedOperationException("Not decompiled");
             case 1:
-                lambda$init$0 = ((FragmentActivity) this.b).lambda$init$0();
-                return lambda$init$0;
+                throw new UnsupportedOperationException("Not decompiled");
             case 2:
-                lambda$attachController$4 = ((FragmentManager) this.b).lambda$attachController$4();
-                return lambda$attachController$4;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                savedStateProvider$lambda$0 = SavedStateHandle.savedStateProvider$lambda$0((SavedStateHandle) this.b);
-                return savedStateProvider$lambda$0;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

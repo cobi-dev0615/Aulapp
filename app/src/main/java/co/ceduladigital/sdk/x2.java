@@ -20,19 +20,13 @@ public final /* synthetic */ class x2 implements Provider {
 
     @Override // com.google.firebase.inject.Provider
     public final Object get() {
-        ComponentRegistrar instantiate;
-        ComponentRegistrar lambda$addComponentRegistrar$0;
-        IidStore lambda$new$0;
         switch (this.a) {
             case 0:
-                instantiate = ComponentDiscovery.instantiate((String) this.b);
-                return instantiate;
+                throw new UnsupportedOperationException("Not decompiled");
             case 1:
-                lambda$addComponentRegistrar$0 = ComponentRuntime.Builder.lambda$addComponentRegistrar$0((ComponentRegistrar) this.b);
-                return lambda$addComponentRegistrar$0;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                lambda$new$0 = FirebaseInstallations.lambda$new$0((FirebaseApp) this.b);
-                return lambda$new$0;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

@@ -22,38 +22,22 @@ public final /* synthetic */ class v implements ComponentRegistrarProcessor, Tra
         this.a = i;
     }
 
+    public void onDeleted(String name, com.google.firebase.FirebaseOptions options) {
+        /* empty stub for FirebaseAppLifecycleListener */
+    }
+
     @Override // com.google.android.datatransport.Transformer
     public Object apply(Object obj) {
-        byte[] lambda$static$0;
-        lambda$static$0 = DataTransportCrashlyticsReportSender.lambda$static$0((CrashlyticsReport) obj);
-        return lambda$static$0;
+        throw new UnsupportedOperationException("Not decompiled");
     }
 
     public String extract(Object obj) {
-        String lambda$getComponents$0;
-        String lambda$getComponents$1;
-        String lambda$getComponents$2;
-        String lambda$getComponents$3;
-        Context context = (Context) obj;
-        switch (this.a) {
-            case 5:
-                lambda$getComponents$0 = FirebaseCommonRegistrar.lambda$getComponents$0(context);
-                return lambda$getComponents$0;
-            case 6:
-                lambda$getComponents$1 = FirebaseCommonRegistrar.lambda$getComponents$1(context);
-                return lambda$getComponents$1;
-            case 7:
-                lambda$getComponents$2 = FirebaseCommonRegistrar.lambda$getComponents$2(context);
-                return lambda$getComponents$2;
-            default:
-                lambda$getComponents$3 = FirebaseCommonRegistrar.lambda$getComponents$3(context);
-                return lambda$getComponents$3;
-        }
+        throw new UnsupportedOperationException("Not decompiled");
     }
 
     @Override // com.google.android.gms.tasks.OnFailureListener
     public void onFailure(Exception exc) {
-        FirebaseCrashlytics.lambda$init$0(exc);
+        throw new UnsupportedOperationException("Not decompiled");
     }
 
     @Override // com.google.firebase.components.ComponentRegistrarProcessor

@@ -40,13 +40,13 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AnonymousClass1(WebviewFragment webviewFragment, Continuation<? super AnonymousClass1> continuation) {
-            super(2, continuation);
+            super(2, (kotlin.coroutines.Continuation) continuation);
             this.this$0 = webviewFragment;
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return new AnonymousClass1(this.this$0, continuation);
+            return new AnonymousClass1(this.this$0, (kotlin.coroutines.Continuation) continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -76,16 +76,16 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
                             if (z) {
                                 BiometricResult.Complete complete = (BiometricResult.Complete) biometricResult;
                                 if (complete.getData() instanceof BiometrixResult) {
-                                    WebviewFragment.this.handlerBiometricResult((BiometrixResult) complete.getData());
+                                    webviewFragment.handlerBiometricResult((BiometrixResult) complete.getData());
                                 }
                             }
                             if (biometricResult instanceof BiometricResult.Error) {
                                 BiometricResult.Error error = (BiometricResult.Error) biometricResult;
                                 if (error.getData() instanceof BiometrixResult) {
-                                    WebviewFragment.this.handlerBiometricResult((BiometrixResult) error.getData());
+                                    webviewFragment.handlerBiometricResult((BiometrixResult) error.getData());
                                 }
                             }
-                            str = WebviewFragment.this.TAG;
+                            str = webviewFragment.TAG;
                             Boxing.boxInt(Log.e(str, "collects: BiometricResult is not Complete or Error"));
                         } else if (!Intrinsics.areEqual(biometricResult, BiometricResult.EmptyObject.INSTANCE) && !Intrinsics.areEqual(biometricResult, BiometricResult.LoadingLibrary.INSTANCE)) {
                             throw new NoWhenBranchMatchedException();
@@ -108,19 +108,19 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+            return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public WebviewFragment$collects$1(WebviewFragment webviewFragment, Continuation<? super WebviewFragment$collects$1> continuation) {
-        super(2, continuation);
+        super(2, (kotlin.coroutines.Continuation) continuation);
         this.this$0 = webviewFragment;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new WebviewFragment$collects$1(this.this$0, continuation);
+        return new WebviewFragment$collects$1(this.this$0, (kotlin.coroutines.Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -148,6 +148,6 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((WebviewFragment$collects$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((WebviewFragment$collects$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

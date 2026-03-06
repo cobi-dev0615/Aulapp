@@ -19,11 +19,9 @@ public final /* synthetic */ class w2 implements OnContextAvailableListener {
     public final void onContextAvailable(Context context) {
         switch (this.a) {
             case 0:
-                this.b.lambda$new$2(context);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                ((FragmentActivity) this.b).lambda$init$3(context);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

@@ -19,11 +19,9 @@ public final /* synthetic */ class w implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                this.b.lambda$requestPreview$3(this.c);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                this.b.lambda$requestPreview$2(this.c);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 }

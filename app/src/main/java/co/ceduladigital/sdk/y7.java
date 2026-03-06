@@ -115,23 +115,23 @@ public abstract /* synthetic */ class y7 {
     }
 
     public static Object g(byte[] bArr, int i, Function1 function1) {
-        return function1.invoke(UByte.m47boximpl(UByteArray.m111getw2LRezQ(bArr, i)));
+        return function1.invoke(UByte.m47boximpl(bArr[i]));
     }
 
     public static Object h(int[] iArr, int i, Function1 function1) {
-        return function1.invoke(UInt.m124boximpl(UIntArray.m190getpVg5ArA(iArr, i)));
+        return function1.invoke(UInt.m124boximpl(iArr[i]));
     }
 
     public static Object i(long[] jArr, int i, Function1 function1) {
-        return function1.invoke(ULong.m203boximpl(ULongArray.m269getsVKNKU(jArr, i)));
+        return function1.invoke(ULong.m203boximpl(jArr[i]));
     }
 
     public static Object j(short[] sArr, int i, Function1 function1) {
-        return function1.invoke(UShort.m310boximpl(UShortArray.m374getMh2AYeg(sArr, i)));
+        return function1.invoke(UShort.m310boximpl(sArr[i]));
     }
 
     public static String k(RecyclerView recyclerView, StringBuilder sb) {
-        sb.append(recyclerView.exceptionLabel());
+        sb.append("");
         return sb.toString();
     }
 
