@@ -27,11 +27,11 @@ public class UtilCrypto {
         return Base64.encodeToString(bArr, 2);
     }
 
-    public void createKey(String str) {
+    public void createKey(String str) throws Exception {
         this.keyECCrypt = this.keyStoreCustom.createKey(str);
     }
 
-    public String createKeyCompanyV2(String str) {
+    public String createKeyCompanyV2(String str) throws Exception {
         return getKeyEcCrypt(this.keyStoreCustom.createKeyCompanyV2(str));
     }
 

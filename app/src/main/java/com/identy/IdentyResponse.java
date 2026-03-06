@@ -74,7 +74,8 @@ public class IdentyResponse {
                 }
                 HashMap hashMap2 = new HashMap();
                 TreeMap treeMap = new TreeMap();
-                for (Map.Entry entry : map.entrySet()) {
+                for (Object obj : map.entrySet()) {
+                    Map.Entry entry = (Map.Entry) obj;
                     Hand hand = (Hand) entry.getKey();
                     TreeMap treeMap2 = new TreeMap();
                     Iterator it = ((Map) entry.getValue()).entrySet().iterator();
@@ -182,7 +183,8 @@ public class IdentyResponse {
             int i = identyResponse.PngjBadSignature - 1;
             identyResponse.PngjBadSignature = i;
             if (i == 0) {
-                for (Map.Entry entry : this.PngjException.entrySet()) {
+                for (Object obj : this.PngjException.entrySet()) {
+                    Map.Entry entry = (Map.Entry) obj;
                     Iterator it = ((Map) entry.getValue()).entrySet().iterator();
                     while (it.hasNext()) {
                         getPadSub3 getpadsub3 = (getPadSub3) ((Map.Entry) it.next()).getValue();

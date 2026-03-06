@@ -1,8 +1,10 @@
 package com.gse.aulapp.lib.encryption_gse.encryptGse.cipher;
 
 import java.security.KeyFactory;
+import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.spec.ECPublicKeySpec;
+import java.security.spec.InvalidKeySpecException;
 import org.bouncycastle.crypto.agreement.ECDHBasicAgreement;
 import org.bouncycastle.crypto.digests.SHA256Digest;
 import org.bouncycastle.crypto.generators.KDF2BytesGenerator;
@@ -26,7 +28,7 @@ public class AsymCrypto {
         return iESCipherGCM.engineDoFinal(bArr, 0, bArr.length);
     }
 
-    public void ephemeralKeys(ECPublicKey eCPublicKey) {
+    public void ephemeralKeys(ECPublicKey eCPublicKey) throws NoSuchAlgorithmException, InvalidKeySpecException {
         ECNamedCurveParameterSpec parameterSpec = ECNamedCurveTable.getParameterSpec("prime256v1");
         KeyFactory keyFactory = KeyFactory.getInstance("EC", new BouncyCastleProvider());
         ECNamedCurveSpec eCNamedCurveSpec = new ECNamedCurveSpec("prime256v1", parameterSpec.getCurve(), parameterSpec.getG(), parameterSpec.getN());

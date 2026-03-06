@@ -56,7 +56,7 @@ public class KeyStoreCustom {
         return UtilCrypto.decodeBase64ByteArray(getPubKey());
     }
 
-    public byte[] createKey(String str) {
+    public byte[] createKey(String str) throws Exception {
         setPassword(str);
         getKeyAndroid();
         getSalt();
@@ -64,7 +64,7 @@ public class KeyStoreCustom {
         return getECCrypt();
     }
 
-    public byte[] createKeyCompanyV2(String str) {
+    public byte[] createKeyCompanyV2(String str) throws Exception {
         return getECCrypt(str);
     }
 
@@ -135,7 +135,7 @@ public class KeyStoreCustom {
         return UtilCrypto.encodeBase64ByteArray(getDerive());
     }
 
-    public byte[] getECCrypt() {
+    public byte[] getECCrypt() throws Exception {
         ECPublicKey readPublicKey = Utils.readPublicKey(getPublicKey());
         AsymCrypto asymCrypto = new AsymCrypto();
         asymCrypto.ephemeralKeys(readPublicKey);
@@ -162,7 +162,7 @@ public class KeyStoreCustom {
         return this.keyDeriv.derive(str, salt);
     }
 
-    public byte[] getECCrypt(String str) {
+    public byte[] getECCrypt(String str) throws Exception {
         ECPublicKey readPublicKey = Utils.readPublicKey(getPublicKey());
         AsymCrypto asymCrypto = new AsymCrypto();
         asymCrypto.ephemeralKeys(readPublicKey);
