@@ -18,10 +18,10 @@ import java.lang.reflect.Method;
 
 /* loaded from: classes.dex */
 public final class Action {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$d = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
+    private static byte[] $$c = null;
+    private static int $$d = 0;
     private static int $10;
     private static int $11;
     private static char[] Attempt;
@@ -154,7 +154,7 @@ public final class Action {
         char c;
         String str3 = str2;
         $11 = ($10 + 35) % 128;
-        byte[] bArr = str3;
+        byte[] bArr = str3.getBytes();
         if (str3 != null) {
             bArr = str3.getBytes("ISO-8859-1");
         }
@@ -169,7 +169,7 @@ public final class Action {
             }
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = str.toCharArray();
         }
         char[] cArr2 = cArr;
         com.d.e.PngjExceptionInternal pngjExceptionInternal = new com.d.e.PngjExceptionInternal();
@@ -336,7 +336,7 @@ public final class Action {
             byte b4 = bArr[i5];
             i3 = i2;
             i2 = b4;
-            b3 = b2 + 1;
+            b3 = (byte)(b2 + 1);
             bArr3 = bArr;
             i4 = i5;
             i2 = (i3 + i2) - 23;
@@ -365,7 +365,7 @@ public final class Action {
         String str3 = str;
         String str4 = BuildConfig.FLAVOR;
         int i2 = 0;
-        byte[] bArr2 = str3;
+        byte[] bArr2 = str3.getBytes();
         if (str3 != null) {
             int i3 = $10 + 13;
             $11 = i3 % 128;

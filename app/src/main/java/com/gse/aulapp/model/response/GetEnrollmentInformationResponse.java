@@ -205,9 +205,6 @@ public final /* data */ class GetEnrollmentInformationResponse extends GeneralRe
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.userID, result.userID) && Intrinsics.areEqual(this.fullEnrollment, result.fullEnrollment) && Intrinsics.areEqual(this.fraudInformationID, result.fraudInformationID) && Intrinsics.areEqual(this.biometrixInformationID, result.biometrixInformationID) && Intrinsics.areEqual(this.fourFingersIdentyID, result.fourFingersIdentyID);
         }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
@@ -395,9 +392,6 @@ public final /* data */ class GetEnrollmentInformationResponse extends GeneralRe
         GetEnrollmentInformationResponse getEnrollmentInformationResponse = (GetEnrollmentInformationResponse) other;
         return Intrinsics.areEqual(this.statusCode, getEnrollmentInformationResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, getEnrollmentInformationResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, getEnrollmentInformationResponse.generalMessage) && Intrinsics.areEqual(this.result, getEnrollmentInformationResponse.result) && Intrinsics.areEqual(this.url, getEnrollmentInformationResponse.url);
     }
-
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt

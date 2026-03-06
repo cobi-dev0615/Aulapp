@@ -219,13 +219,7 @@ public final /* data */ class ChangeCenterResponse extends GeneralResponseDecryp
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.status, result.status) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.token, result.token) && Intrinsics.areEqual(this.centerID, result.centerID) && this.fullEnrollment == result.fullEnrollment && Intrinsics.areEqual(this.date, result.date) && Intrinsics.areEqual(this.userEmail, result.userEmail) && Intrinsics.areEqual(this.fullName, result.fullName) && Intrinsics.areEqual(this.biometrixInformationID, result.biometrixInformationID) && Intrinsics.areEqual(this.fraudInformationID, result.fraudInformationID) && Intrinsics.areEqual(this.fourFingersIdentyID, result.fourFingersIdentyID) && Intrinsics.areEqual(this.data, result.data);
         }
-
         @Override // com.gse.aulapp.model.response.GeneralResponse
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
         public int hashCode() {
@@ -452,9 +446,6 @@ public final /* data */ class ChangeCenterResponse extends GeneralResponseDecryp
         ChangeCenterResponse changeCenterResponse = (ChangeCenterResponse) other;
         return Intrinsics.areEqual(this.statusCode, changeCenterResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, changeCenterResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, changeCenterResponse.generalMessage) && Intrinsics.areEqual(this.result, changeCenterResponse.result) && Intrinsics.areEqual(this.url, changeCenterResponse.url);
     }
-
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt

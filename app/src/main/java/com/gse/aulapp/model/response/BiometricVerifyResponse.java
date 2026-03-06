@@ -148,9 +148,6 @@ public final /* data */ class BiometricVerifyResponse extends GeneralResponseDec
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.authStatus, result.authStatus);
         }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
@@ -312,9 +309,6 @@ public final /* data */ class BiometricVerifyResponse extends GeneralResponseDec
         BiometricVerifyResponse biometricVerifyResponse = (BiometricVerifyResponse) other;
         return Intrinsics.areEqual(this.statusCode, biometricVerifyResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, biometricVerifyResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, biometricVerifyResponse.generalMessage) && Intrinsics.areEqual(this.result, biometricVerifyResponse.result) && Intrinsics.areEqual(this.url, biometricVerifyResponse.url);
     }
-
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt

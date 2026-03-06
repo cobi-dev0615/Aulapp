@@ -53,7 +53,7 @@ public class VerifyFingersActivity extends FingerActivity {
     protected HashMap values = new HashMap();
     int PngjBadCrcException = 0;
 
-    public class PngjBadCrcException implements PngjBadSignature.values {
+    public class PngjBadCrcException implements org.cameracontroller.PngjBadSignature.values {
         private /* synthetic */ FingerMatchSecLevel PngjBadSignature;
         private /* synthetic */ long PngjException;
         private /* synthetic */ HashMap valueOf;

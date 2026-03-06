@@ -137,9 +137,6 @@ public final /* data */ class BiometricRegistrationResponse extends GeneralRespo
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.code, result.code);
         }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
@@ -278,9 +275,6 @@ public final /* data */ class BiometricRegistrationResponse extends GeneralRespo
         BiometricRegistrationResponse biometricRegistrationResponse = (BiometricRegistrationResponse) other;
         return Intrinsics.areEqual(this.statusCode, biometricRegistrationResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, biometricRegistrationResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, biometricRegistrationResponse.generalMessage) && Intrinsics.areEqual(this.result, biometricRegistrationResponse.result) && Intrinsics.areEqual(this.url, biometricRegistrationResponse.url);
     }
-
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt

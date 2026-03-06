@@ -158,7 +158,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
         int i5 = 3 - (b2 * 4);
         byte[] bArr2 = new byte[i4];
         if (bArr == null) {
-            byte b3 = r9;
+            byte b3 = (byte) r9;
             i3 = 0;
             int i6 = i5;
             int i7 = (i5 + (-b3)) - 52;

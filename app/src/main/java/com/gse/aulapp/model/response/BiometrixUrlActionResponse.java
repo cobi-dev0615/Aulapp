@@ -130,9 +130,6 @@ public final /* data */ class BiometrixUrlActionResponse implements Parcelable {
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.redirectUrl, result.redirectUrl);
         }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
         public int hashCode() {

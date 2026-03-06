@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.gms.measurement.internal.zzic;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -22,8 +22,8 @@ public abstract /* synthetic */ class a {
         return str + str2 + str3;
     }
 
-    public static void C(zzic zzicVar, String str) {
-        zzicVar.zzaV().zze().zza(str);
+    public static void C(Object zzicVar, String str) {
+        throw new UnsupportedOperationException();
     }
 
     public static int D(int i, int i2, int i3, int i4) {
@@ -155,7 +155,7 @@ public abstract /* synthetic */ class a {
         return arrayList;
     }
 
-    public static void z(zzic zzicVar, String str) {
-        zzicVar.zzaV().zzb().zza(str);
+    public static void z(Object zzicVar, String str) {
+        throw new UnsupportedOperationException();
     }
 }

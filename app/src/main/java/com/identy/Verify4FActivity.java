@@ -49,7 +49,7 @@ public class Verify4FActivity extends FingerActivity {
     protected HashMap values = new HashMap();
     int PngjBadCrcException = 0;
 
-    public class PngjException implements PngjBadSignature.values {
+    public class PngjException implements org.cameracontroller.PngjBadSignature.values {
         private /* synthetic */ HashMap PngjBadCrcException;
         private /* synthetic */ FingerMatchSecLevel PngjBadSignature;
         private /* synthetic */ HashMap valueOf;

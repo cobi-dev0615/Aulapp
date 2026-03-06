@@ -30,7 +30,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
-import org.camera.preview.PngjBadCrcException;
+
 
 /* loaded from: classes2.dex */
 public abstract class TouchLessIDSDK$values implements IdentyResponseListener {

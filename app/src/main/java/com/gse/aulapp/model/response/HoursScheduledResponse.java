@@ -444,9 +444,6 @@ public final /* data */ class HoursScheduledResponse extends GeneralResponseDecr
         HoursScheduledResponse hoursScheduledResponse = (HoursScheduledResponse) other;
         return Intrinsics.areEqual(this.statusCode, hoursScheduledResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, hoursScheduledResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, hoursScheduledResponse.generalMessage) && Intrinsics.areEqual(this.result, hoursScheduledResponse.result) && Intrinsics.areEqual(this.url, hoursScheduledResponse.url);
     }
-
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt

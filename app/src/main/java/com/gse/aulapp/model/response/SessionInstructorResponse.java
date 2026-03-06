@@ -243,9 +243,6 @@ public final /* data */ class SessionInstructorResponse extends GeneralResponseD
         public final List<SessionInstructorObjectResponse> getData() {
             return this.data;
         }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
         @Override // com.gse.aulapp.model.response.GeneralResponse
@@ -457,9 +454,6 @@ public final /* data */ class SessionInstructorResponse extends GeneralResponseD
         SessionInstructorResponse sessionInstructorResponse = (SessionInstructorResponse) other;
         return Intrinsics.areEqual(this.statusCode, sessionInstructorResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, sessionInstructorResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, sessionInstructorResponse.generalMessage) && Intrinsics.areEqual(this.result, sessionInstructorResponse.result) && Intrinsics.areEqual(this.url, sessionInstructorResponse.url);
     }
-
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt

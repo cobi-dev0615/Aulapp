@@ -240,13 +240,7 @@ public final /* data */ class RefreshTokenResponse extends GeneralResponseDecryp
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.status, result.status) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.token, result.token) && Intrinsics.areEqual(this.date, result.date) && Intrinsics.areEqual(this.fullEnrollment, result.fullEnrollment) && Intrinsics.areEqual(this.fraudInformationID, result.fraudInformationID) && Intrinsics.areEqual(this.biometrixInformationID, result.biometrixInformationID) && Intrinsics.areEqual(this.biometricException, result.biometricException) && Intrinsics.areEqual(this.fullName, result.fullName) && Intrinsics.areEqual(this.data, result.data) && Intrinsics.areEqual(this.fourFingersIdentyID, result.fourFingersIdentyID);
         }
-
         @Override // com.gse.aulapp.model.response.GeneralResponse
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-
         @Override // com.gse.aulapp.model.response.GeneralResponse
 
         public int hashCode() {
@@ -486,9 +480,6 @@ public final /* data */ class RefreshTokenResponse extends GeneralResponseDecryp
         RefreshTokenResponse refreshTokenResponse = (RefreshTokenResponse) other;
         return Intrinsics.areEqual(this.statusCode, refreshTokenResponse.statusCode) && Intrinsics.areEqual(this.statusMessage, refreshTokenResponse.statusMessage) && Intrinsics.areEqual(this.generalMessage, refreshTokenResponse.generalMessage) && Intrinsics.areEqual(this.result, refreshTokenResponse.result) && Intrinsics.areEqual(this.url, refreshTokenResponse.url);
     }
-
-    @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
-
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
 
     @Override // com.gse.aulapp.io.model.response.GeneralResponseDecrypt
