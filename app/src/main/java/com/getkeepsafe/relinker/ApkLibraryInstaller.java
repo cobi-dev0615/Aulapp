@@ -40,7 +40,7 @@ public class ApkLibraryInstaller implements ReLinker.LibraryInstaller {
         }
     }
 
-    private long copy(InputStream inputStream, OutputStream outputStream) {
+    private long copy(InputStream inputStream, OutputStream outputStream) throws IOException {
         byte[] bArr = new byte[ConstantsKt.DEFAULT_BLOCK_SIZE];
         long j = 0;
         while (true) {
@@ -165,7 +165,7 @@ public class ApkLibraryInstaller implements ReLinker.LibraryInstaller {
         ZipFile zipFile;
         FileOutputStream fileOutputStream;
         InputStream inputStream;
-        long copy;
+        long copy = 0;
         ZipFileInZipEntry zipFileInZipEntry = null;
         Closeable closeable = null;
         try {
@@ -254,7 +254,7 @@ public class ApkLibraryInstaller implements ReLinker.LibraryInstaller {
                                 return;
                             }
                         }
-                    } catch (IOException unused8) {
+                    } catch (Exception unused8) {
                         return;
                     }
                 }
