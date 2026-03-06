@@ -14789,7 +14789,7 @@ public class IdentySdk {
                                 throw null;
                             }
                         }
-                        identyError.fillPrintsInfo(map, hashMap, true, i2, new ArrayList<>(Arrays.asList(pairArr)), new values(identyError));
+                        identyError.fillPrintsInfo(map, hashMap, true, i2 != 0, new ArrayList<>(Arrays.asList(pairArr)), new values(identyError));
                         return;
                     }
                 }
@@ -14814,7 +14814,7 @@ public class IdentySdk {
                 action = this.e;
                 if (action != null) {
                 }
-                identyError2.fillPrintsInfo(map2, hashMap2, true, i2, new ArrayList<>(Arrays.asList(pairArr)), new values(identyError2));
+                identyError2.fillPrintsInfo(map2, hashMap2, true, i2 != 0, new ArrayList<>(Arrays.asList(pairArr)), new values(identyError2));
                 return;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();

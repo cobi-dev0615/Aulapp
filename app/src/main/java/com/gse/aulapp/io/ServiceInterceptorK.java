@@ -12,6 +12,7 @@ import com.gse.aulapp.lib.encryption_gse.encryptJwe.EcCryptKeys;
 import com.gse.aulapp.lib.encryption_gse.encryptJwe.model.ResultEncryptKeys;
 import com.gse.aulapp.util.PreferenceUtil;
 import com.karumi.dexter.BuildConfig;
+import java.io.IOException;
 import java.util.Objects;
 import kotlin.Metadata;
 import kotlin.NoWhenBranchMatchedException;
@@ -48,6 +49,7 @@ public final class ServiceInterceptorK implements Interceptor {
             decrypt = EcCryptKeys.INSTANCE.decrypt(context, jwe);
         } catch (Exception e) {
             e.getMessage();
+            return null;
         }
         if (decrypt instanceof ResultEncryptKeys.DataResult) {
             ((ResultEncryptKeys.DataResult) decrypt).getPublicKey();
@@ -141,7 +143,9 @@ public final class ServiceInterceptorK implements Interceptor {
             GeneralEncryptResponse generalEncryptResponse2 = (GeneralEncryptResponse) fromJson2;
             decryptValue = decryptValue(generalEncryptResponse2.getResult());
             if (decryptValue != null) {
+                return response;
             }
+            return response;
         } catch (Exception e) {
             e.getMessage();
             return response;
@@ -189,7 +193,7 @@ public final class ServiceInterceptorK implements Interceptor {
         }
     }
 
-    private final Response validateRequest(Interceptor.Chain chain, Request request) {
+    private final Response validateRequest(Interceptor.Chain chain, Request request) throws IOException {
         return chain.proceed(requestUpdatedEncrypt(request));
     }
 
@@ -198,7 +202,7 @@ public final class ServiceInterceptorK implements Interceptor {
     }
 
     @Override // okhttp3.Interceptor
-    public Response intercept(Interceptor.Chain chain) {
+    public Response intercept(Interceptor.Chain chain) throws IOException {
         Intrinsics.checkNotNullParameter(chain, "chain");
         Request validateHeaders = validateHeaders(chain.request());
         return validateHeaders.header("KEY_PRIVATE_CONFIDENTIAL") == null ? validateResponse(validateRequest(chain, validateHeaders)) : chain.proceed(validateHeaders);
