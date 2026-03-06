@@ -184,54 +184,7 @@ public class PostCaptureOutPut {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public JSONObject fillQuality(Map<Integer, Float> map) {
-        Object[] objArr;
-        long j;
-        Object[] objArr2 = Fpnative.valueOf;
-        try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~((~identityHashCode) | 701664820)) | 202775540, 168, (((~(identityHashCode | 701664820)) | 67375552) * (-168)) + ((((~(202775540 | identityHashCode)) | 566264832) * 336) - 1710130969), -1665956533);
-                    int i = c ^ (c << 13);
-                    int i2 = i ^ (i >>> 17);
-                    ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    ((long[]) objArr[0])[0] = j + 4873;
-                    Fpnative.valueOf = objArr;
-                    JSONObject jSONObject = new JSONObject();
-                    for (Map.Entry<Integer, Float> entry : map.entrySet()) {
-                        try {
-                            jSONObject.put(entry.getKey().toString(), entry.getValue());
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    return jSONObject;
-                }
-            }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            b((byte) 89, (byte) (-bArr[113]), bArr[63], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            b((byte) (-bArr[117]), bArr[25], (byte) (-bArr[4]), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1665956533);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4873;
-            Fpnative.valueOf = objArr;
-            JSONObject jSONObject2 = new JSONObject();
-            while (0.hasNext()) {
-            }
-            return jSONObject2;
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause != null) {
-                throw cause;
-            }
-            throw th;
-        }
+        throw new UnsupportedOperationException("Method not decompiled");
     }
 
     public ASResult getAsResult() {
@@ -556,50 +509,7 @@ public class PostCaptureOutPut {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public HashMap<Pair<Hand, Finger>, Float> getRfQuality() {
-        Object[] objArr;
-        long j;
-        Object[] objArr2 = Fpnative.valueOf;
-        try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int i = ~((int) SystemClock.uptimeMillis());
-                    int c = a.c((~(i | (-301260844))) | 271605803, 983, (((~((-197628437) | i)) | (-301260844)) * (-983)) + 11691054, -1178259779);
-                    int i2 = c ^ (c << 13);
-                    int i3 = i2 ^ (i2 >>> 17);
-                    ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    ((long[]) objArr[0])[0] = j + 4956;
-                    Fpnative.valueOf = objArr;
-                    HashMap<Pair<Hand, Finger>, Float> hashMap = new HashMap<>();
-                    for (Map.Entry<Integer, Float> entry : this.rfQuality.entrySet()) {
-                        hashMap.put(Position.getFromOrdinal(entry.getKey().intValue()).getPair(), entry.getValue());
-                    }
-                    return hashMap;
-                }
-            }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            b((byte) 125, (byte) (-bArr[113]), (byte) (-bArr[34]), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            b((byte) 94, bArr[63], (byte) (-bArr[111]), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1178259779);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4956;
-            Fpnative.valueOf = objArr;
-            HashMap<Pair<Hand, Finger>, Float> hashMap2 = new HashMap<>();
-            while (0.hasNext()) {
-            }
-            return hashMap2;
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause != null) {
-                throw cause;
-            }
-            throw th;
-        }
+        throw new UnsupportedOperationException("Method not decompiled");
     }
 
     /* JADX WARN: Removed duplicated region for block: B:8:0x00e5  */

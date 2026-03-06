@@ -90,6 +90,10 @@ public class Verify2IndexActivity extends FingerActivity {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final void values() {
+            throw new UnsupportedOperationException("Method not decompiled");
+        }
+
+        private void values_REMOVED() {
             VerifyResult verifyResult;
             e1 e1Var;
             VerifyResult matchCaptured;

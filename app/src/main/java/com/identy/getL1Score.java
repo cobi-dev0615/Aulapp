@@ -977,6 +977,10 @@ final class getL1Score extends getL3Score {
 
     @Override // com.identy.e1
     public final void valueOf(int i, int i2, int i3, boolean z) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private void valueOf_REMOVED(int i, int i2, int i3, boolean z) {
         double d;
         super.valueOf(i, i2, i3, z);
         if (this.getMatchingTime) {
@@ -1020,16 +1024,7 @@ final class getL1Score extends getL3Score {
         double d4 = this.getPadSub3;
         this.CaptureRolledFingersActivity = new RectF((int) d3, (int) (d4 / d), (int) (0 - d3), (int) (d4 - (d4 / 2.5d)));
         if (this.CaptureThumbActivity) {
-            this.getScore = (int) (0.width() * 0.57d);
-            this.isQualityFailed = (int) (this.CaptureRolledFingersActivity.width() * 1.15d);
-        } else {
-            int i6 = this.getPadSub3;
-            this.getScore = (i6 - (i6 / 5)) / 6;
-            if (z) {
-                this.isQualityFailed = (int) (0.height() * 0.93d);
-            } else {
-                this.isQualityFailed = (int) (((i6 - (i6 / 5)) / 3) * 1.03d);
-            }
+            throw new UnsupportedOperationException("Method not decompiled");
         }
         RectF rectF = this.CaptureRolledFingersActivity;
         this.CaptureRolledThumbActivity = rectF;

@@ -150,8 +150,9 @@ public class FingerAccessInfo {
                     int i17 = (i16 & 6) + (i16 | 6);
                     int i18 = i17 >> 26;
                     int a = IdentyB.a(i18 & (-127), i18 | (-127), 64, -1);
-                    ((ActivityManager) activity.getSystemService("25/24/31/8/7/activity".substring(32760 / (((-(((a | 1) << 1) - (a ^ 1))) & i17) * 420)))).getMemoryInfo(new ActivityManager.MemoryInfo());
-                    return 0.totalMem / 1048576;
+                    ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
+                    ((ActivityManager) activity.getSystemService("25/24/31/8/7/activity".substring(32760 / (((-(((a | 1) << 1) - (a ^ 1))) & i17) * 420)))).getMemoryInfo(memoryInfo);
+                    return memoryInfo.totalMem / 1048576;
                 }
             }
             byte[] bArr = $$a;
@@ -181,8 +182,9 @@ public class FingerAccessInfo {
             int i172 = (i162 & 6) + (i162 | 6);
             int i182 = i172 >> 26;
             int a2 = IdentyB.a(i182 & (-127), i182 | (-127), 64, -1);
-            ((ActivityManager) activity.getSystemService("25/24/31/8/7/activity".substring(32760 / (((-(((a2 | 1) << 1) - (a2 ^ 1))) & i172) * 420)))).getMemoryInfo(new ActivityManager.MemoryInfo());
-            return 0.totalMem / 1048576;
+            ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
+            ((ActivityManager) activity.getSystemService("25/24/31/8/7/activity".substring(32760 / (((-(((a2 | 1) << 1) - (a2 ^ 1))) & i172) * 420)))).getMemoryInfo(memoryInfo);
+            return memoryInfo.totalMem / 1048576;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

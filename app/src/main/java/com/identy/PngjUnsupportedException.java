@@ -414,29 +414,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final int PngjPrematureEnding() {
-        String str;
-        String str2 = "0";
-        try {
-            String upperCase = Build.MODEL.toUpperCase();
-            String upperCase2 = Build.MANUFACTURER.toUpperCase();
-            str = "-2";
-            if (upperCase2.contains("HUAWEI") && upperCase.contains("LX")) {
-                str2 = "-2";
-            }
-            if (upperCase2.contains("WHEATEK") && upperCase.contains("WP19")) {
-                str2 = "-2";
-            }
-            if (upperCase2.contains("SAMSUNG")) {
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        str = str2;
-        try {
-            return Integer.parseInt(str);
-        } catch (NumberFormatException unused) {
-            return 0;
-        }
+        throw new UnsupportedOperationException("Method not decompiled");
     }
 
     @Override // org.camera.preview.ApplicationInterface

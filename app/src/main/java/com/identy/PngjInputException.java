@@ -732,6 +732,10 @@ public final class PngjInputException {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public static java.lang.Object[] values$1eba2e16(int i, java.lang.Object obj, int i2) {
+            throw new UnsupportedOperationException("Method not decompiled");
+        }
+
+        private static java.lang.Object[] values$1eba2e16_REMOVED(int i, java.lang.Object obj, int i2) {
             int i3;
             int i4;
             char c;
@@ -3687,6 +3691,10 @@ public final class PngjInputException {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public static java.lang.Object[] PngjBadCrcException$1eba2e16(int i, java.lang.Object obj, int i2) {
+            throw new UnsupportedOperationException("Method not decompiled");
+        }
+
+        private static java.lang.Object[] PngjBadCrcException$1eba2e16_REMOVED(int i, java.lang.Object obj, int i2) {
             Throwable cause;
             int i3;
             int i4;
@@ -5703,6 +5711,10 @@ public final class PngjInputException {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         private static void b(int i, boolean z, String str, int i2, int i3, java.lang.Object[] objArr) {
+            throw new UnsupportedOperationException("Method not decompiled");
+        }
+
+        private static void b_REMOVED(int i, boolean z, String str, int i2, int i3, java.lang.Object[] objArr) {
             char[] charArray;
             int i4;
             Throwable cause;

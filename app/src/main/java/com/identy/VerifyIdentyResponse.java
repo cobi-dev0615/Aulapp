@@ -284,77 +284,15 @@ public final class VerifyIdentyResponse extends IdentyResponse {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final JSONObject toJson(Context context) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private JSONObject toJson_REMOVED(Context context) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
         try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int myTid = Process.myTid();
-                    int c = defpackage.a.c(~((~myTid) | (-551368705)), -948, (((~(320915424 | myTid)) | (-819804705)) * (-948)) + 1427965579, -1493303231);
-                    int i = c ^ (c << 13);
-                    int i2 = i ^ (i >>> 17);
-                    ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    ((long[]) objArr[0])[0] = j + 4855;
-                    Fpnative.valueOf = objArr;
-                    JSONObject json = super.toJson(context);
-                    JSONObject jSONObject = new JSONObject();
-                    for (Map.Entry entry : this.o.entrySet()) {
-                        jSONObject.put((String) entry.getKey(), entry.getValue());
-                    }
-                    int i3 = ((int[]) objArr[1])[0];
-                    int i4 = i3 * i3;
-                    int i5 = -(42819697 * i3);
-                    int i6 = (((i4 & i5) + (i4 | i5)) - (~(-(i3 * (-2144963887))))) - (-153646912);
-                    int i7 = i6 >> 27;
-                    int i8 = ((i7 ^ (-63)) + ((i7 & (-63)) << 1)) / 32;
-                    int i9 = (i8 & 1) + (i8 | 1);
-                    int i10 = ((i6 | i9) << 1) - (i9 ^ i6);
-                    int i11 = i6 >> 22;
-                    int i12 = ((i11 ^ (-2047)) + ((i11 & (-2047)) << 1)) / 1024;
-                    int i13 = (-(((i12 & 1) + (i12 | 1)) ^ i10)) + 4;
-                    int i14 = ((i13 >> 26) - 127) / 64;
-                    json.put("27,13,verify_result".substring(38088 / ((i13 & (-(((i14 ^ 1) + ((i14 & 1) << 1)) + 1))) * 1587)), jSONObject);
-                    return json;
-                }
-            }
-            byte b = $$a[77];
-            Object[] objArr3 = new Object[1];
-            a(b, (short) (-b), $$a[27], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            a($$a[27], $$a[88], $$a[4], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 510031553);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4855;
-            Fpnative.valueOf = objArr;
-            JSONObject json2 = super.toJson(context);
-            JSONObject jSONObject2 = new JSONObject();
-            while (0.hasNext()) {
-            }
-            int i32 = ((int[]) objArr[1])[0];
-            int i42 = i32 * i32;
-            int i52 = -(42819697 * i32);
-            int i62 = (((i42 & i52) + (i42 | i52)) - (~(-(i32 * (-2144963887))))) - (-153646912);
-            int i72 = i62 >> 27;
-            int i82 = ((i72 ^ (-63)) + ((i72 & (-63)) << 1)) / 32;
-            int i92 = (i82 & 1) + (i82 | 1);
-            int i102 = ((i62 | i92) << 1) - (i92 ^ i62);
-            int i112 = i62 >> 22;
-            int i122 = ((i112 ^ (-2047)) + ((i112 & (-2047)) << 1)) / 1024;
-            int i132 = (-(((i122 & 1) + (i122 | 1)) ^ i102)) + 4;
-            int i142 = ((i132 >> 26) - 127) / 64;
-            json2.put("27,13,verify_result".substring(38088 / ((i132 & (-(((i142 ^ 1) + ((i142 & 1) << 1)) + 1))) * 1587)), jSONObject2);
-            return json2;
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause != null) {
-                throw cause;
-            }
-            throw th;
+            throw new UnsupportedOperationException("Method not decompiled");
         }
     }
 

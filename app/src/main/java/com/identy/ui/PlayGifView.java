@@ -257,6 +257,10 @@ public class PlayGifView extends View {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void onMeasure(int i, int i2) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private void onMeasure_REMOVED(int i, int i2) {
         java.lang.Object[] objArr;
         long j;
         java.lang.Object[] objArr2 = Fpnative.valueOf;
@@ -265,25 +269,7 @@ public class PlayGifView extends View {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int elapsedRealtime = (int) SystemClock.elapsedRealtime();
-                    int i3 = ~((-577) | elapsedRealtime);
-                    int i4 = ~elapsedRealtime;
-                    int c = a.c((~(elapsedRealtime | (-220743833))) | (~((-577) | i4)) | (~((-278144296) | elapsedRealtime)), 920, (((~((-278144872) | i4)) | 576) * 920) + ((i3 | (~(i4 | (-220743833)))) * 920) + 1082253271, -1203002137);
-                    int i5 = c ^ (c << 13);
-                    int i6 = i5 ^ (i5 >>> 17);
-                    ((int[]) objArr[1])[0] = i6 ^ (i6 << 5);
-                    ((long[]) objArr[0])[0] = j + 4992;
-                    Fpnative.valueOf = objArr;
-                    if (this.b != null) {
-                        super.onMeasure(i, i2);
-                        return;
-                    }
-                    float width = 0.width() / this.b.height();
-                    View.MeasureSpec.getMode(i2);
-                    int size = View.MeasureSpec.getSize(i2);
-                    setMeasuredDimension((int) (size * width), size);
-                    return;
+                    throw new UnsupportedOperationException("Method not decompiled");
                 }
             }
             byte[] bArr = $$a;

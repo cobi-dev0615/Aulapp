@@ -240,88 +240,15 @@ public class HandOutput {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public JSONObject toJson(Context context) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private JSONObject toJson_REMOVED(Context context) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
         try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | 346262818)) | (-152626462), 305, (((~(0 | 346262818)) | (-498855232)) * 305) - 1958702672, -1706388314);
-                    int i = c ^ (c << 13);
-                    int i2 = i ^ (i >>> 17);
-                    ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    ((long[]) objArr[0])[0] = j + 4890;
-                    Fpnative.valueOf = objArr;
-                    JSONObject jSONObject = new JSONObject();
-                    int i3 = ((int[]) objArr[1])[0];
-                    int i4 = i3 * i3;
-                    int i5 = -(812018213 * i3);
-                    int i6 = ((((i4 | i5) << 1) - (i4 ^ i5)) - (~(-(i3 * 1458523371)))) - (-2095183935);
-                    int i7 = i6 >> 22;
-                    int i8 = (((i7 | (-2047)) << 1) - (i7 ^ (-2047))) / 1024;
-                    int i9 = (i6 - (~(((i8 | 1) << 1) - (i8 ^ 1)))) - 1;
-                    int i10 = i6 >> 27;
-                    int i11 = (((i10 | (-63)) << 1) - (i10 ^ (-63))) / 32;
-                    int i12 = -(i9 ^ ((i11 & 1) + (i11 | 1)));
-                    int i13 = (i12 ^ 4) + ((i12 & 4) << 1);
-                    int i14 = i13 >> 22;
-                    int i15 = ((i14 & (-2047)) + (i14 | (-2047))) / 1024;
-                    int i16 = (i15 & 1) + (i15 | 1);
-                    jSONObject.put("date", new SimpleDateFormat("16,27,yyyy-MM-dd'T'HH:mm:s.SSS Z".substring(35400 / (((-((i16 & 1) + (i16 | 1))) & i13) * 1475)), context.getResources().getConfiguration().getLocales().get(0)).format(this.PngjBadSignature));
-                    jSONObject.put("hand", this.valueOf);
-                    JSONObject jSONObject2 = new JSONObject();
-                    for (Map.Entry entry : this.PngjBadCrcException.entrySet()) {
-                        if (entry.equals(Template.FF_WSQ)) {
-                            jSONObject.put("wsq_compression", this.PngjUnsupportedException.toString());
-                        }
-                        jSONObject2.put(((Template) entry.getKey()).toString(), entry.getValue());
-                    }
-                    jSONObject.put("templates", jSONObject2);
-                    return jSONObject;
-                }
-            }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            a(bArr[113], bArr[63], bArr[62], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b = bArr[63];
-            Object[] objArr4 = new Object[1];
-            a(b, bArr[57], b, objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1706388314);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4890;
-            Fpnative.valueOf = objArr;
-            JSONObject jSONObject3 = new JSONObject();
-            int i32 = ((int[]) objArr[1])[0];
-            int i42 = i32 * i32;
-            int i52 = -(812018213 * i32);
-            int i62 = ((((i42 | i52) << 1) - (i42 ^ i52)) - (~(-(i32 * 1458523371)))) - (-2095183935);
-            int i72 = i62 >> 22;
-            int i82 = (((i72 | (-2047)) << 1) - (i72 ^ (-2047))) / 1024;
-            int i92 = (i62 - (~(((i82 | 1) << 1) - (i82 ^ 1)))) - 1;
-            int i102 = i62 >> 27;
-            int i112 = (((i102 | (-63)) << 1) - (i102 ^ (-63))) / 32;
-            int i122 = -(i92 ^ ((i112 & 1) + (i112 | 1)));
-            int i132 = (i122 ^ 4) + ((i122 & 4) << 1);
-            int i142 = i132 >> 22;
-            int i152 = ((i142 & (-2047)) + (i142 | (-2047))) / 1024;
-            int i162 = (i152 & 1) + (i152 | 1);
-            jSONObject3.put("date", new SimpleDateFormat("16,27,yyyy-MM-dd'T'HH:mm:s.SSS Z".substring(35400 / (((-((i162 & 1) + (i162 | 1))) & i132) * 1475)), context.getResources().getConfiguration().getLocales().get(0)).format(this.PngjBadSignature));
-            jSONObject3.put("hand", this.valueOf);
-            JSONObject jSONObject22 = new JSONObject();
-            while (0.hasNext()) {
-            }
-            jSONObject3.put("templates", jSONObject22);
-            return jSONObject3;
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause != null) {
-                throw cause;
-            }
-            throw th;
+            throw new UnsupportedOperationException("Method not decompiled");
         }
     }
 }

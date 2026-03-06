@@ -1805,6 +1805,10 @@ final class getFingers extends e1 {
     /* JADX WARN: Type inference failed for: r1v40 */
     @Override // com.identy.e1
     public final void valueOf(int i, int i2, int i3, boolean z) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private void valueOf_REMOVED(int i, int i2, int i3, boolean z) {
         double d;
         super.valueOf(i, i2, i3, z);
         if (this.getMatchingTime) {
@@ -1835,23 +1839,7 @@ final class getFingers extends e1 {
         this.getMatchingTime = true;
         this.getData = Integer.valueOf(this.Action.getWindowManager().getDefaultDisplay().getRotation() + i3);
         if (this.CaptureThumbActivity) {
-            double d2 = this.getPadSub3 / 0;
-            double d3 = this.getPadSub2;
-            this.CaptureRolledFingersActivity = new RectF((int) d2, (int) (d3 / d), (int) (0 - d2), (int) (d3 - (d3 / 2.740000009536743d)));
-            this.getScore = (int) (0.height() * 0.57d);
-            this.isQualityFailed = (int) (this.CaptureRolledFingersActivity.height() * 1.1d);
-        } else {
-            double d4 = this.getPadSub2 / d;
-            double d5 = this.getPadSub3;
-            this.CaptureRolledFingersActivity = new RectF((int) d4, (int) (d5 / 0), (int) (0 - d4), (int) (d5 - (d5 / 2.740000009536743d)));
-            int i4 = this.getPadSub3;
-            this.getScore = (i4 - (i4 / 5)) / 6;
-            if (z) {
-                this.isQualityFailed = (int) (0.height() * 0.93d);
-                resetAttempt = (pfkrolGetQuality + 83) % 128;
-            } else {
-                this.isQualityFailed = (int) (((i4 - (i4 / 5)) / 3) * 1.03d);
-            }
+            throw new UnsupportedOperationException("Method not decompiled");
         }
         RectF rectF = this.CaptureRolledFingersActivity;
         rectF.inset(-(rectF.width() * 0.1f), -(this.CaptureRolledFingersActivity.height() * 0.1f));

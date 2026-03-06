@@ -554,24 +554,7 @@ public class Enroll2TActivity extends FingerActivity {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
-        HashMap<Pair<Hand, Finger>, a> hashMap3;
-        HashMap<Pair<Hand, Finger>, a> hashMap4;
-        Enroll2TActivity enroll2TActivity;
-        int i = getScore + 49;
-        getOveralTimetaken = i % 128;
-        if (i % 2 == 0) {
-            this.valueOf = 1;
-            super.PngjException(hashMap, hashMap2, bitmap, z, z2);
-            hashMap3 = hashMap2;
-            hashMap4 = hashMap;
-            enroll2TActivity = this;
-        } else {
-            this.valueOf = 0;
-            super.PngjException(hashMap, hashMap2, bitmap, z, z2);
-            hashMap3 = hashMap2;
-            hashMap4 = hashMap;
-            enroll2TActivity = this;
-        }
+        throw new UnsupportedOperationException("Method not decompiled");
     }
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x0308  */

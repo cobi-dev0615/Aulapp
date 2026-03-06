@@ -1213,40 +1213,7 @@ public final class getOveralTimetaken extends e1 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean PngjUnsupportedException() {
-        long timeInMillis;
-        boolean PngjUnsupportedException = super.PngjUnsupportedException();
-        if (!this.PngBadCharsetException) {
-            int i = pfkrolfinalizeF;
-            pfk = (i + 47) % 128;
-            if (!this.onErrorResponse && PngjUnsupportedException) {
-                int i2 = i + 77;
-                pfk = i2 % 128;
-                try {
-                    if (i2 % 2 != 0) {
-                        timeInMillis = Calendar.getInstance().getTimeInMillis();
-                        this.getQualityScore++;
-                    } else {
-                        timeInMillis = Calendar.getInstance().getTimeInMillis();
-                        this.getQualityScore++;
-                    }
-                } catch (Exception unused) {
-                }
-                if (this.getQualityScore < 1) {
-                    com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
-                    if (pngjBadSignature != null) {
-                        pngjBadSignature.getData();
-                    }
-                    return false;
-                }
-                if (this.getCaptureTime) {
-                    return false;
-                }
-                this.getCaptureTime = true;
-                values(new PngjBadSignature(timeInMillis));
-                return true;
-            }
-        }
-        return false;
+        throw new UnsupportedOperationException("Method not decompiled");
     }
 
     @Override // com.identy.e1

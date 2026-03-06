@@ -405,87 +405,15 @@ public class PreCaptureOutput {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public List<values$values> getRecog(RectF rectF, boolean z) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private List<values$values> getRecog_REMOVED(RectF rectF, boolean z) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
         try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int b = a.b(1990271862);
-                    int c = a.c((~(b | (-488087549))) | (-10801732), 301, (((~((-10801732) | b)) | (~((~b) | 488087548))) * (-301)) + (((~(498589695 | b)) * (-301)) - 1430220870), 492924634);
-                    int i = c ^ (c << 13);
-                    int i2 = i ^ (i >>> 17);
-                    ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    ((long[]) objArr[0])[0] = j + 5002;
-                    Fpnative.valueOf = objArr;
-                    ArrayList arrayList = new ArrayList();
-                    int i3 = this.a;
-                    int i4 = this.b;
-                    Matrix valueOf = ImageUtils.valueOf(i3, i4, !z ? i3 : i4, !z ? i4 : i3, !z ? 0 : 90);
-                    int i5 = ((int[]) objArr[1])[0];
-                    int i6 = i5 * i5;
-                    int i7 = -(110679622 * i5);
-                    int i8 = (i6 & i7) + (i6 | i7);
-                    int i9 = -(i5 * (-1153118650));
-                    int i10 = ((i8 & i9) + (i9 | i8)) - (-652143396);
-                    int i11 = i10 >> 21;
-                    int i12 = ((i11 ^ (-4095)) + ((i11 & (-4095)) << 1)) / 2048;
-                    int i13 = (i12 & 1) + (i12 | 1);
-                    int i14 = (-(IdentyB.e(i11, 4095, 2048, -1) ^ (((i10 | i13) << 1) - (i10 ^ i13)))) + 2;
-                    int i15 = i14 >> 27;
-                    int i16 = (((i15 | (-63)) << 1) - (i15 ^ (-63))) / 32;
-                    int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
-                    int i18 = 0 / ((i14 & (-((i17 ^ 1) + ((i17 & 1) << 1)))) * 1107);
-                    for (RectF rectF2 : this.boxes) {
-                        valueOf.mapRect(rectF2);
-                        arrayList.add(new values$values("0", ((Finger) Position.getFromOrdinal(this.boxesOrder.get(i18).intValue()).getPair().second).toString(), Float.valueOf(0.0f), rectF2));
-                        i18++;
-                    }
-                    return arrayList;
-                }
-            }
-            byte[] bArr = $$a;
-            byte b2 = bArr[63];
-            byte b3 = bArr[2];
-            Object[] objArr3 = new Object[1];
-            c(b2, b3, (byte) (b3 | 88), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            c((byte) (-bArr[4]), bArr[25], (byte) (-bArr[117]), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 492924634);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 5002;
-            Fpnative.valueOf = objArr;
-            ArrayList arrayList2 = new ArrayList();
-            int i32 = this.a;
-            int i42 = this.b;
-            Matrix valueOf2 = ImageUtils.valueOf(i32, i42, !z ? i32 : i42, !z ? i42 : i32, !z ? 0 : 90);
-            int i52 = ((int[]) objArr[1])[0];
-            int i62 = i52 * i52;
-            int i72 = -(110679622 * i52);
-            int i82 = (i62 & i72) + (i62 | i72);
-            int i92 = -(i52 * (-1153118650));
-            int i102 = ((i82 & i92) + (i92 | i82)) - (-652143396);
-            int i112 = i102 >> 21;
-            int i122 = ((i112 ^ (-4095)) + ((i112 & (-4095)) << 1)) / 2048;
-            int i132 = (i122 & 1) + (i122 | 1);
-            int i142 = (-(IdentyB.e(i112, 4095, 2048, -1) ^ (((i102 | i132) << 1) - (i102 ^ i132)))) + 2;
-            int i152 = i142 >> 27;
-            int i162 = (((i152 | (-63)) << 1) - (i152 ^ (-63))) / 32;
-            int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
-            int i182 = 0 / ((i142 & (-((i172 ^ 1) + ((i172 & 1) << 1)))) * 1107);
-            while (0.hasNext()) {
-            }
-            return arrayList2;
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause != null) {
-                throw cause;
-            }
-            throw th;
+            throw new UnsupportedOperationException("Method not decompiled");
         }
     }
 
@@ -724,6 +652,10 @@ public class PreCaptureOutput {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public JSONObject toJson(long j, long j2) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private JSONObject toJson_REMOVED(long j, long j2) {
         Object[] objArr;
         long j3;
         Iterator<RectF> it;
@@ -901,6 +833,10 @@ public class PreCaptureOutput {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public JSONObject toJson() {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private JSONObject toJson_REMOVED() {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

@@ -1621,32 +1621,7 @@ final class setFingers extends e1 {
         int i4 = pfkrolChangeMinMaxWidth + 65;
         generateNFIQ = i4 % 128;
         if (i4 % 2 != 0) {
-            super.valueOf(i, i2, i3, z);
-            if (this.getMatchingTime) {
-                return;
-            }
-            this.getMatchingTime = true;
-            this.getData = Integer.valueOf(this.Action.getWindowManager().getDefaultDisplay().getRotation() + i3);
-            org.c.a.PngjBadCrcException pngjBadCrcException = (org.c.a.PngjBadCrcException) this.Action.findViewById(R.id.tracking_overlay);
-            this.Capture2TActivity = pngjBadCrcException;
-            pngjBadCrcException.setLayerType(1, null);
-            double d = this.getPadSub2 / 5.6d;
-            double d2 = this.getPadSub3;
-            this.CaptureRolledFingersActivity = new RectF((int) d, (int) (d2 / 6.0d), (int) (0 - d), (int) (d2 - (d2 / 3.0d)));
-            this.getScore = (int) (0.width() / 3.7d);
-            this.isQualityFailed = (int) (this.CaptureRolledFingersActivity.width() / 2.0f);
-            try {
-                this.getL2Score = new com.identy.ui.d.values(this.Action, 5.6d, 6.0d, 5.6d, 3.0d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), 90, true, false, false, this.uxd565jk, this.cvtyuv2bgr);
-            } catch (Exception unused) {
-            }
-            try {
-                this.Action.runOnUiThread(new IdentyF(this, 1));
-                generateNFIQ = (pfkrolChangeMinMaxWidth + 11) % 128;
-            } catch (Exception unused2) {
-            }
-            this.Action.runOnUiThread(new IdentyF(this, 2));
-            this.Capture2TActivity.valueOf = new IdentyD(this, 1);
-            return;
+            throw new UnsupportedOperationException("Method not decompiled");
         }
         super.valueOf(i, i2, i3, z);
         throw null;

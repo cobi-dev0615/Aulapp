@@ -916,124 +916,15 @@ public class FingerOutput {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public JSONObject toJson(Context context) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private JSONObject toJson_REMOVED(Context context) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
         try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int i = (int) Runtime.getRuntime().totalMemory();
-                    int c = defpackage.a.c((~(i | (-287649173))) | (~((-786538453) | i)) | 2166164, -69, (((~((-784372289) | i)) | (~((-285483009) | i))) * 69) + 1603391372, -954351567);
-                    int i2 = c ^ (c << 13);
-                    int i3 = i2 ^ (i2 >>> 17);
-                    ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    ((long[]) objArr[0])[0] = j + 4939;
-                    Fpnative.valueOf = objArr;
-                    JSONObject jSONObject = new JSONObject();
-                    jSONObject.put("date", new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:s.SSS Z", context.getResources().getConfiguration().getLocales().get(0)).format(this.onErrorResponse));
-                    jSONObject.put("captureTimeTaken", this.getAsHighestSecurityLevelReached);
-                    jSONObject.put("overallTimeTaken", this.getQualityScore);
-                    jSONObject.put("processingTimeTaken", this.getData);
-                    int i4 = ((int[]) objArr[1])[0];
-                    int i5 = i4 * i4;
-                    int i6 = -(1796795015 * i4);
-                    int i7 = ((i5 | i6) << 1) - (i5 ^ i6);
-                    int i8 = -(i4 * 1513746151);
-                    int i9 = ((i7 | i8) << 1) - (i8 ^ i7);
-                    int i10 = (i9 & (-741807407)) + ((-741807407) | i9);
-                    int i11 = i10 >> 20;
-                    int i12 = (((i11 ^ (-8191)) + ((i11 & (-8191)) << 1)) / ConstantsKt.DEFAULT_BLOCK_SIZE) + 1;
-                    int i13 = -((((i10 | i12) << 1) - (i12 ^ i10)) ^ ((((i10 >> 18) - 32767) / 16384) + 1));
-                    int i14 = ((i13 | 8) << 1) - (i13 ^ 8);
-                    int i15 = i14 >> 16;
-                    int i16 = (((i15 & (-131071)) + (i15 | (-131071))) / 65536) + 1;
-                    jSONObject.put("27;0;1;hand".substring(100576 / (((-((i16 ^ 1) + ((i16 & 1) << 1))) & i14) * 1796)), this.getPadSub3);
-                    jSONObject.put("finger", this.Attempt);
-                    jSONObject.put("identy_quality", this.getPadSub2);
-                    jSONObject.put("fingerprintQuality", this.Action);
-                    jSONObject.put("height", this.values);
-                    jSONObject.put("width", this.PngjOutputException);
-                    jSONObject.put("bits_per_pixel", this.PngjInputException);
-                    jSONObject.put("resolution", this.PngjExceptionInternal);
-                    if (this.PngjException) {
-                        jSONObject.put("score", this.PngjBadSignature);
-                    }
-                    jSONObject.put("nfiq_1", this.PngjPrematureEnding);
-                    if (this.valueOf) {
-                        jSONObject.put("spoof_score", this.PngjBadCrcException);
-                        jSONObject.put("asHighestSecurityLevelReached", this.getScore);
-                    }
-                    JSONObject jSONObject2 = new JSONObject();
-                    for (Map.Entry entry : this.PngBadCharsetException.entrySet()) {
-                        if (entry.equals(Template.WSQ)) {
-                            jSONObject.put("wsq_compression", this.e1.toString());
-                        }
-                        HashMap hashMap = (HashMap) entry.getValue();
-                        JSONObject jSONObject3 = new JSONObject();
-                        for (Map.Entry entry2 : hashMap.entrySet()) {
-                            jSONObject3.put(((TemplateSize) entry2.getKey()).toString(), entry2.getValue());
-                        }
-                        jSONObject2.put(((Template) entry.getKey()).toString(), jSONObject3);
-                    }
-                    jSONObject.put("templates", jSONObject2);
-                    return jSONObject;
-                }
-            }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            b((byte) (-bArr[16]), (byte) (-bArr[14]), bArr[3], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            b(bArr[42], (byte) (-bArr[98]), (byte) 121, objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 685210);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4939;
-            Fpnative.valueOf = objArr;
-            JSONObject jSONObject4 = new JSONObject();
-            jSONObject4.put("date", new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:s.SSS Z", context.getResources().getConfiguration().getLocales().get(0)).format(this.onErrorResponse));
-            jSONObject4.put("captureTimeTaken", this.getAsHighestSecurityLevelReached);
-            jSONObject4.put("overallTimeTaken", this.getQualityScore);
-            jSONObject4.put("processingTimeTaken", this.getData);
-            int i42 = ((int[]) objArr[1])[0];
-            int i52 = i42 * i42;
-            int i62 = -(1796795015 * i42);
-            int i72 = ((i52 | i62) << 1) - (i52 ^ i62);
-            int i82 = -(i42 * 1513746151);
-            int i92 = ((i72 | i82) << 1) - (i82 ^ i72);
-            int i102 = (i92 & (-741807407)) + ((-741807407) | i92);
-            int i112 = i102 >> 20;
-            int i122 = (((i112 ^ (-8191)) + ((i112 & (-8191)) << 1)) / ConstantsKt.DEFAULT_BLOCK_SIZE) + 1;
-            int i132 = -((((i102 | i122) << 1) - (i122 ^ i102)) ^ ((((i102 >> 18) - 32767) / 16384) + 1));
-            int i142 = ((i132 | 8) << 1) - (i132 ^ 8);
-            int i152 = i142 >> 16;
-            int i162 = (((i152 & (-131071)) + (i152 | (-131071))) / 65536) + 1;
-            jSONObject4.put("27;0;1;hand".substring(100576 / (((-((i162 ^ 1) + ((i162 & 1) << 1))) & i142) * 1796)), this.getPadSub3);
-            jSONObject4.put("finger", this.Attempt);
-            jSONObject4.put("identy_quality", this.getPadSub2);
-            jSONObject4.put("fingerprintQuality", this.Action);
-            jSONObject4.put("height", this.values);
-            jSONObject4.put("width", this.PngjOutputException);
-            jSONObject4.put("bits_per_pixel", this.PngjInputException);
-            jSONObject4.put("resolution", this.PngjExceptionInternal);
-            if (this.PngjException) {
-            }
-            jSONObject4.put("nfiq_1", this.PngjPrematureEnding);
-            if (this.valueOf) {
-            }
-            JSONObject jSONObject22 = new JSONObject();
-            while (0.hasNext()) {
-            }
-            jSONObject4.put("templates", jSONObject22);
-            return jSONObject4;
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause != null) {
-                throw cause;
-            }
-            throw th;
+            throw new UnsupportedOperationException("Method not decompiled");
         }
     }
 }

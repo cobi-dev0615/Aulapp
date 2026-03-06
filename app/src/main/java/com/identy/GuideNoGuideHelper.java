@@ -1189,6 +1189,10 @@ public class GuideNoGuideHelper {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static boolean isIntroShown(Activity activity, String str) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private static boolean isIntroShown_REMOVED(Activity activity, String str) {
         java.lang.Object[] objArr;
         java.lang.Object[] objArr2;
         long j;

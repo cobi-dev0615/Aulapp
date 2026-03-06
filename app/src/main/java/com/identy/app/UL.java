@@ -102,6 +102,10 @@ public class UL {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static byte[] a(byte[] bArr, String str) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private static byte[] a_REMOVED(byte[] bArr, String str) {
         Object[] objArr;
         long j;
         int i;
@@ -278,6 +282,10 @@ public class UL {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public byte[] decryptModel(String str) {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
+
+    private byte[] decryptModel_REMOVED(String str) {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

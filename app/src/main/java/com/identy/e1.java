@@ -457,7 +457,7 @@ public class e1 extends BroadcastReceiver {
                 e5.printStackTrace();
             }
             Mat.n_release(this.values.PngjException);
-            e1.values(new Object[]{e1.this, hashMap, Boolean.valueOf(!0.isAsPass()), e1.this.FingerActivity.getAsResult()}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -1059459396, com.identy.i.PngjPrematureEnding.values(), 1059459400, com.identy.i.PngjPrematureEnding.values());
+            e1.values(new Object[]{e1.this, hashMap, Boolean.valueOf(!e1.this.FingerActivity.getAsResult().isAsPass()), e1.this.FingerActivity.getAsResult()}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -1059459396, com.identy.i.PngjPrematureEnding.values(), 1059459400, com.identy.i.PngjPrematureEnding.values());
         }
     }
 
@@ -676,14 +676,17 @@ public class e1 extends BroadcastReceiver {
                 bArr2[i] = (byte) i2;
                 i6 = i + 1;
                 if (i == i4) {
+                    return new String(bArr2, 0);
                 }
             } else {
                 i = 0;
                 bArr2[i] = (byte) i2;
                 i6 = i + 1;
                 if (i == i4) {
+                    return new String(bArr2, 0);
                 }
             }
+            return new String(bArr2, 0);
         }
 
         static {
@@ -1203,14 +1206,17 @@ public class e1 extends BroadcastReceiver {
             int i92 = i6 + 1;
             bArr2[i3] = (byte) i4;
             if (i3 == i5) {
+                return new String(bArr2, 0);
             }
         } else {
             i3 = 0;
             int i922 = i6 + 1;
             bArr2[i3] = (byte) i4;
             if (i3 == i5) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -1712,8 +1718,9 @@ public class e1 extends BroadcastReceiver {
         activityManager.isLowRamDevice();
         activityManager.getMemoryClass();
         int largeMemoryClass = activityManager.getLargeMemoryClass();
-        activityManager.getMemoryInfo(new ActivityManager.MemoryInfo());
-        double d = 0.totalMem / 1.048576E9d;
+        ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
+        activityManager.getMemoryInfo(memoryInfo);
+        double d = memoryInfo.totalMem / 1.048576E9d;
         if (!activityManager.isLowRamDevice() && Runtime.getRuntime().availableProcessors() > 4) {
             if (activityManager.getMemoryClass() < 193) {
                 int i2 = markIntroSetting + 33;
@@ -2290,10 +2297,6 @@ public class e1 extends BroadcastReceiver {
             return byteArray2;
         } catch (Exception e2) {
             throw new RuntimeException(e2);
-        }
-        if (!this.CaptureThumbActivity && Mat.n_cols(mat2.PngjException) < Mat.n_rows(mat2.PngjException)) {
-            getClassForDetection = (markIntroSetting + 63) % 128;
-            Core.valueOf(mat2, mat2, 0);
         }
     }
 

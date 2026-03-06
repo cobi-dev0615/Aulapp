@@ -295,53 +295,7 @@ public class SlapOutput {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void setSlab(Slap slap, int i) {
-        Object[] objArr;
-        long j;
-        Object[] objArr2 = Fpnative.valueOf;
-        try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int myUid = Process.myUid();
-                    int c = defpackage.a.c((~(myUid | 191090274)) | (~((~myUid) | (-191090275))) | (~((-307799006) | myUid)), 959, ((((~((-307799006) | 0)) | (~((-191090275) | myUid))) | (~(0 | 191090274))) * 959) - 1374386114, 588122372);
-                    int i2 = c ^ (c << 13);
-                    int i3 = i2 ^ (i2 >>> 17);
-                    ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    ((long[]) objArr[0])[0] = j + 4940;
-                    Fpnative.valueOf = objArr;
-                    this.PngjException = slap;
-                    for (Map.Entry<Integer, byte[]> entry : this.templatesby.entrySet()) {
-                        this.valueOf.put(Template.getFromOrdinal(entry.getKey()) == Template.WSQ ? Template.SLAP_WSQ : Template.SLAP_PNG, new String(Base64.encode(entry.getValue(), i)));
-                    }
-                    for (Map.Entry<Integer, RectF> entry2 : this.positionsby.entrySet()) {
-                        this.PngjBadCrcException.put(Position.getFromOrdinal(entry2.getKey().intValue()).getPair(), entry2.getValue());
-                    }
-                }
-            }
-            byte b = $$a[27];
-            Object[] objArr3 = new Object[1];
-            a(b, (short) (b | 135), $$a[77], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            a($$a[4], (short) 92, $$a[27], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 588122372);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4940;
-            Fpnative.valueOf = objArr;
-            this.PngjException = slap;
-            while (0.hasNext()) {
-            }
-            while (0.hasNext()) {
-            }
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause == null) {
-                throw th;
-            }
-            throw cause;
-        }
+        throw new UnsupportedOperationException("Method not decompiled");
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(16:(2:3|(13:5|6|7|8|9|10|(2:13|11)|14|15|(2:18|16)|19|20|21))|27|28|29|6|7|8|9|10|(1:11)|14|15|(1:16)|19|20|21) */
@@ -351,92 +305,7 @@ public class SlapOutput {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public JSONObject toJson(Context context) {
-        Object[] objArr;
-        long j;
-        Object[] objArr2 = Fpnative.valueOf;
-        try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int myPid = Process.myPid();
-                    int i = ~myPid;
-                    int c = defpackage.a.c(~(i | (-4967552)), 184, ((myPid | 489693568) * (-184)) + (((~(493921728 | i)) | 739391) * 184) + 272144631, -732155512);
-                    int i2 = c ^ (c << 13);
-                    int i3 = i2 ^ (i2 >>> 17);
-                    ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
-                    ((long[]) objArr[0])[0] = j + 4976;
-                    Fpnative.valueOf = objArr;
-                    JSONObject jSONObject = new JSONObject();
-                    int i4 = ((int[]) objArr[1])[0];
-                    int i5 = ((((i4 * i4) - (~(-(849768700 * i4)))) - 1) - (~(-(i4 * 572910386)))) - 1;
-                    int i6 = (i5 & 1319126545) + (1319126545 | i5);
-                    int i7 = ((i6 >> 29) - 15) / 8;
-                    int i8 = (i7 & 1) + (i7 | 1);
-                    int i9 = ((i6 | i8) << 1) - (i8 ^ i6);
-                    int i10 = i6 >> 17;
-                    int i11 = ((i10 & (-65535)) + (i10 | (-65535))) / 32768;
-                    int i12 = -(i9 ^ (((i11 | 1) << 1) - (i11 ^ 1)));
-                    int i13 = (i12 & 9) + (i12 | 9);
-                    int i14 = i13 >> 19;
-                    jSONObject.put("date", new SimpleDateFormat("7,14,3,yyyy-MM-dd'T'HH:mm:s.SSS Z".substring(107730 / (((-(((((i14 | (-16383)) << 1) - (i14 ^ (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE) + 2)) & i13) * 1710)), context.getResources().getConfiguration().getLocales().get(0)).format(this.PngjBadSignature));
-                    JSONObject jSONObject2 = new JSONObject();
-                    for (Map.Entry entry : this.valueOf.entrySet()) {
-                        jSONObject2.put(((Template) entry.getKey()).toString(), entry.getValue());
-                    }
-                    JSONObject jSONObject3 = new JSONObject();
-                    for (Map.Entry entry2 : this.PngjBadCrcException.entrySet()) {
-                        StringBuilder sb = new StringBuilder();
-                        sb.append(((Hand) ((Pair) entry2.getKey()).first).name());
-                        sb.append("_");
-                        sb.append(((Finger) ((Pair) entry2.getKey()).second).name());
-                        jSONObject3.put(sb.toString(), valueOf((RectF) entry2.getValue()));
-                    }
-                    jSONObject.put("positions", jSONObject3);
-                    jSONObject.put("templates", jSONObject2);
-                    return jSONObject;
-                }
-            }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            a(bArr[59], (short) ($$b | 8), bArr[77], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            a((byte) (bArr[143] + 1), bArr[81], bArr[27], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -732155512);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4976;
-            Fpnative.valueOf = objArr;
-            JSONObject jSONObject4 = new JSONObject();
-            int i42 = ((int[]) objArr[1])[0];
-            int i52 = ((((i42 * i42) - (~(-(849768700 * i42)))) - 1) - (~(-(i42 * 572910386)))) - 1;
-            int i62 = (i52 & 1319126545) + (1319126545 | i52);
-            int i72 = ((i62 >> 29) - 15) / 8;
-            int i82 = (i72 & 1) + (i72 | 1);
-            int i92 = ((i62 | i82) << 1) - (i82 ^ i62);
-            int i102 = i62 >> 17;
-            int i112 = ((i102 & (-65535)) + (i102 | (-65535))) / 32768;
-            int i122 = -(i92 ^ (((i112 | 1) << 1) - (i112 ^ 1)));
-            int i132 = (i122 & 9) + (i122 | 9);
-            int i142 = i132 >> 19;
-            jSONObject4.put("date", new SimpleDateFormat("7,14,3,yyyy-MM-dd'T'HH:mm:s.SSS Z".substring(107730 / (((-(((((i142 | (-16383)) << 1) - (i142 ^ (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE) + 2)) & i132) * 1710)), context.getResources().getConfiguration().getLocales().get(0)).format(this.PngjBadSignature));
-            JSONObject jSONObject22 = new JSONObject();
-            while (0.hasNext()) {
-            }
-            JSONObject jSONObject32 = new JSONObject();
-            while (0.hasNext()) {
-            }
-            jSONObject4.put("positions", jSONObject32);
-            jSONObject4.put("templates", jSONObject22);
-            return jSONObject4;
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause != null) {
-                throw cause;
-            }
-            throw th;
-        }
+        throw new UnsupportedOperationException("Method not decompiled");
     }
 
     public SlapOutput() {
