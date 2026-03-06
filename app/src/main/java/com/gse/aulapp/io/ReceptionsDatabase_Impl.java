@@ -2,7 +2,7 @@ package com.gse.aulapp.io;
 
 import androidx.room.DatabaseConfiguration;
 import androidx.room.InvalidationTracker;
-import androidx.room.AutoMigrationSpec;
+
 import androidx.room.RoomDatabase;
 import androidx.room.RoomOpenHelper;
 import androidx.room.migration.Migration;
@@ -537,13 +537,15 @@ public final class ReceptionsDatabase_Impl extends ReceptionsDatabase {
         }, "850ea398abc29ec13eea5005b5ad8a3c", "087a05a2737ddc40d3517bd58f75dc52")).build());
     }
 
+    @SuppressWarnings({"unchecked", "rawtypes"})
     @Override // androidx.room.RoomDatabase
-    public List<Migration> getAutoMigrations(Map<Class<? extends AutoMigrationSpec>, AutoMigrationSpec> map) {
+    public List<Migration> getAutoMigrations(Map map) {
         return new ArrayList();
     }
 
+    @SuppressWarnings({"unchecked", "rawtypes"})
     @Override // androidx.room.RoomDatabase
-    public Set<Class<? extends AutoMigrationSpec>> getRequiredAutoMigrationSpecs() {
+    public Set getRequiredAutoMigrationSpecs() {
         return new HashSet();
     }
 
