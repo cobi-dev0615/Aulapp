@@ -84,6 +84,7 @@ public final class Action {
             if (i == i5) {
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -119,7 +120,11 @@ public final class Action {
             return;
         }
         Object[] objArr = new Object[1];
-        b(null, Process.getGidForName(BuildConfig.FLAVOR) + 128, null, "\u008c\u008b\u008a\u0089\u0088\u0087\u0086\u0081\u0085\u0084\u0083\u0082\u0081", objArr);
+        try {
+            b(null, Process.getGidForName(BuildConfig.FLAVOR) + 128, null, "\u008c\u008b\u008a\u0089\u0088\u0087\u0086\u0081\u0085\u0084\u0083\u0082\u0081", objArr);
+        } catch (Throwable e) {
+            throw new RuntimeException(e);
+        }
         StringBuilder sb2 = new StringBuilder((String) objArr[0]);
         sb2.append(i2);
         sb2.append(" ???");
@@ -146,7 +151,7 @@ public final class Action {
         throw new UnsupportedOperationException("Method not decompiled: arid.Action.PngjException$52c725b(int, java.lang.Object):java.lang.Object[]");
     }
 
-    private static void b(int[] iArr, int i, String str, String str2, Object[] objArr) {
+    private static void b(int[] iArr, int i, String str, String str2, Object[] objArr) throws Throwable {
         char[] cArr;
         long j;
         int i2;
@@ -156,7 +161,7 @@ public final class Action {
         $11 = ($10 + 35) % 128;
         byte[] bArr = str3.getBytes();
         if (str3 != null) {
-            bArr = str3.getBytes("ISO-8859-1");
+            bArr = str3.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1);
         }
         byte[] bArr2 = bArr;
         int i4 = 2;
@@ -356,7 +361,7 @@ public final class Action {
         }
     }
 
-    private static void d(String str, boolean z, int[] iArr, Object[] objArr) {
+    private static void d(String str, boolean z, int[] iArr, Object[] objArr) throws Throwable {
         byte b;
         int i;
         byte[] bArr;
@@ -371,9 +376,9 @@ public final class Action {
             $11 = i3 % 128;
             if (i3 % 2 == 0) {
                 int i4 = 2 / 0;
-                bArr2 = str3.getBytes("ISO-8859-1");
+                bArr2 = str3.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1);
             } else {
-                bArr2 = str3.getBytes("ISO-8859-1");
+                bArr2 = str3.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1);
             }
         }
         byte[] bArr3 = bArr2;
@@ -577,7 +582,7 @@ public final class Action {
     */
     public final int hashCode() {
         int i;
-        int i2;
+        int i2 = 0;
         int i3 = getData + 85;
         int i4 = i3 % 128;
         isQualityFailed = i4;

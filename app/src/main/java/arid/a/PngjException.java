@@ -126,6 +126,7 @@ public abstract class PngjException {
             if (i5 == i7) {
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -155,7 +156,7 @@ public abstract class PngjException {
         this.PngjBadCrcException = arid.valueOf.FILTER_DEFAULT;
     }
 
-    private static void b(String str, int i, Object[] objArr) {
+    private static void b(String str, int i, Object[] objArr) throws Throwable {
         char[] cArr;
         if (str != null) {
             int i2 = $11 + 77;
@@ -294,7 +295,7 @@ public abstract class PngjException {
         }
     }
 
-    private static void d(int i, byte b, short s, int i2, int i3, Object[] objArr) {
+    private static void d(int i, byte b, short s, int i2, int i3, Object[] objArr) throws Throwable {
         int i4;
         long j;
         long j2;
@@ -592,7 +593,7 @@ public abstract class PngjException {
             bArr3 = bArr;
         }
         bArr3[0] = (byte) valueof.Action;
-        int i4 = PngjException.PngjBadCrcException.PngjBadSignature[valueof.ordinal()];
+        int i4 = arid.a.PngjException.PngjBadCrcException.PngjBadSignature[valueof.ordinal()];
         if (i4 != 1) {
             if (i4 == 2) {
                 int i5 = 1;
