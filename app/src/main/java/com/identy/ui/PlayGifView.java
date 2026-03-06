@@ -260,38 +260,6 @@ public class PlayGifView extends View {
         throw new UnsupportedOperationException("Method not decompiled");
     }
 
-    private void onMeasure_REMOVED(int i, int i2) {
-        java.lang.Object[] objArr;
-        long j;
-        java.lang.Object[] objArr2 = Fpnative.valueOf;
-        try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    throw new UnsupportedOperationException("Method not decompiled");
-                }
-            }
-            byte[] bArr = $$a;
-            java.lang.Object[] objArr3 = new java.lang.Object[1];
-            e(bArr[78], bArr[34], bArr[52], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            java.lang.Object[] objArr4 = new java.lang.Object[1];
-            e(bArr[100], bArr[50], bArr[32], objArr4);
-            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1203002137);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4992;
-            Fpnative.valueOf = objArr;
-            if (this.b != null) {
-            }
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause == null) {
-                throw th;
-            }
-            throw cause;
-        }
-    }
 
     public void setImageResource(int i) {
         java.lang.Object[] objArr;

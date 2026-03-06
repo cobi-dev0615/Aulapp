@@ -684,9 +684,6 @@ public class IntroActivity extends Activity {
         throw new UnsupportedOperationException("Method not decompiled");
     }
 
-    private void onCreate_REMOVED() {
-        throw new UnsupportedOperationException("Method not decompiled");
-    }
 
     @Override // android.app.Activity
     public void onPause() {

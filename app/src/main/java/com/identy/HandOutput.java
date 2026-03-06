@@ -243,12 +243,4 @@ public class HandOutput {
         throw new UnsupportedOperationException("Method not decompiled");
     }
 
-    private JSONObject toJson_REMOVED(Context context) {
-        Object[] objArr;
-        long j;
-        Object[] objArr2 = Fpnative.valueOf;
-        try {
-            throw new UnsupportedOperationException("Method not decompiled");
-        }
-    }
 }

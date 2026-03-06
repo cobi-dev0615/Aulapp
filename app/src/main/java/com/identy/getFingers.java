@@ -1808,45 +1808,4 @@ final class getFingers extends e1 {
         throw new UnsupportedOperationException("Method not decompiled");
     }
 
-    private void valueOf_REMOVED(int i, int i2, int i3, boolean z) {
-        double d;
-        super.valueOf(i, i2, i3, z);
-        if (this.getMatchingTime) {
-            return;
-        }
-        long r1 = this.CaptureThumbActivity;
-        try {
-            if (0 != 0) {
-                0 = 4613712638259704627L;
-                d = 3.9000000953674316d;
-                this.getL2Score = new com.identy.ui.d.values(this.Action, 2.9d, 3.9000000953674316d, 2.9d, 2.740000009536743d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), -90, true, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);
-                resetAttempt = (pfkrolGetQuality + 11) % 128;
-            } else {
-                0 = 4612811918334230528L;
-                d = 3.2d;
-                this.getL2Score = new com.identy.ui.d.values(this.Action, 2.5d, 3.2d, 2.5d, 2.740000009536743d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), -90, true, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);
-            }
-        } catch (Exception unused) {
-        }
-        this.getL1Score = (com.identy.ui.PngjBadCrcException) this.Action.findViewById(R.id.scanner_overlay);
-        try {
-            if (!this.getL3Score && IdentySdk.getInstance().getFingerPrintDrawable() == 0) {
-                resetAttempt = (pfkrolGetQuality + 63) % 128;
-                this.getL1Score.PngjBadSignature(this.a, 3.2d, 3.2d, 3.2d);
-            }
-        } catch (Exception unused2) {
-        }
-        this.getMatchingTime = true;
-        this.getData = Integer.valueOf(this.Action.getWindowManager().getDefaultDisplay().getRotation() + i3);
-        if (this.CaptureThumbActivity) {
-            throw new UnsupportedOperationException("Method not decompiled");
-        }
-        RectF rectF = this.CaptureRolledFingersActivity;
-        rectF.inset(-(rectF.width() * 0.1f), -(this.CaptureRolledFingersActivity.height() * 0.1f));
-        org.c.a.PngjBadCrcException pngjBadCrcException = (org.c.a.PngjBadCrcException) this.Action.findViewById(R.id.tracking_overlay);
-        this.Capture2TActivity = pngjBadCrcException;
-        pngjBadCrcException.setLayerType(1, null);
-        this.Action.runOnUiThread(new PngjException());
-        this.Capture2TActivity.valueOf = new values();
-    }
 }

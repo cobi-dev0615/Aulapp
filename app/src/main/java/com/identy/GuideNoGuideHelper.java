@@ -1192,40 +1192,6 @@ public class GuideNoGuideHelper {
         throw new UnsupportedOperationException("Method not decompiled");
     }
 
-    private static boolean isIntroShown_REMOVED(Activity activity, String str) {
-        java.lang.Object[] objArr;
-        java.lang.Object[] objArr2;
-        long j;
-        int i = valueOf;
-        int i2 = i + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
-        PngjBadSignature = i2 % 128;
-        if (i2 % 2 != 0) {
-            objArr = Fpnative.valueOf;
-            int i3 = 45 / 0;
-        } else {
-            objArr = Fpnative.valueOf;
-        }
-        ((long[]) objArr2[0])[0] = j + 4860;
-        Fpnative.valueOf = objArr2;
-        SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
-        StringBuilder sb = new StringBuilder();
-        int i4 = ((int[]) objArr2[1])[0];
-        int i5 = ((i4 * i4) - (~(-(2113035437 * i4)))) - 1;
-        int i6 = -(i4 * 1694050807);
-        int i7 = (((i5 | i6) << 1) - (i6 ^ i5)) - 2114320828;
-        int i8 = i7 >> 23;
-        int i9 = ((i8 & (-1023)) + (i8 | (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE;
-        int i10 = ((i9 | 1) << 1) - (i9 ^ 1);
-        int i11 = ((i7 | i10) << 1) - (i10 ^ i7);
-        int i12 = ((i7 >> 17) - 65535) / 32768;
-        int i13 = -(i11 ^ ((i12 & 1) + (i12 | 1)));
-        int i14 = (i13 & 9) + (i13 | 9);
-        int i15 = ((i14 >> 20) - 8191) / ConstantsKt.DEFAULT_BLOCK_SIZE;
-        int i16 = ((i15 | 1) << 1) - (i15 ^ 1);
-        sb.append("4/21/v1_intro_shown_".substring(64530 / (((-((i16 ^ 1) + ((i16 & 1) << 1))) & i14) * 1434)));
-        sb.append(str);
-        return defaultSharedPreferences.getBoolean(sb.toString(), false);
-    }
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:8:0x0113  */
