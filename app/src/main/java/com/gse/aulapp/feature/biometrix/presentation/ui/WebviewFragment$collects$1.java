@@ -40,13 +40,13 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AnonymousClass1(WebviewFragment webviewFragment, Continuation<? super AnonymousClass1> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.this$0 = webviewFragment;
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return (Continuation<Unit>) (Object) new AnonymousClass1(this.this$0, continuation);
+            return (Continuation<Unit>) (Object) new AnonymousClass1(this.this$0, (Continuation) continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -114,13 +114,13 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public WebviewFragment$collects$1(WebviewFragment webviewFragment, Continuation<? super WebviewFragment$collects$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = webviewFragment;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return (Continuation<Unit>) (Object) new WebviewFragment$collects$1(this.this$0, continuation);
+        return (Continuation<Unit>) (Object) new WebviewFragment$collects$1(this.this$0, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl

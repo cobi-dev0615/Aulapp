@@ -76,9 +76,9 @@ public final class HistoricRecordPermissionsChangeRepository {
         HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1 historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1;
         int i;
         Object obj;
-        Context context2;
-        Integer num2;
-        HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository;
+        Context context2 = null;
+        Integer num2 = null;
+        HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository = null;
         String r3 = "syncHistoricPermissionChange request: ";
         if (continuation instanceof HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1) {
             historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1 = (HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1) continuation;
@@ -168,6 +168,7 @@ public final class HistoricRecordPermissionsChangeRepository {
         historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$122.L$2 = num2;
         historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$122.label = 2;
         obj22 = ((Deferred) obj22).await(historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$122);
+        return null;
     }
 
     public static /* synthetic */ Object syncHistoricPermissionChange$default(HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository, Context context, Continuation continuation, int i, Object obj) {
@@ -264,6 +265,7 @@ public final class HistoricRecordPermissionsChangeRepository {
         i = historicRecordPermissionsChangeRepository$syncHistoricPermissionChangeRequest$1.label;
         if (i != 0) {
         }
+        return null;
     }
 
     public final Object saveHistoricPermissionsChange(String str, String str2, boolean z, EnumPermissionsApp enumPermissionsApp, Continuation<? super Unit> continuation) {
@@ -327,5 +329,6 @@ public final class HistoricRecordPermissionsChangeRepository {
         historicRecordPermissionsChangeRepository$syncHistoricPermissionChange$1.L$0 = null;
         historicRecordPermissionsChangeRepository$syncHistoricPermissionChange$1.L$1 = null;
         historicRecordPermissionsChangeRepository$syncHistoricPermissionChange$1.label = 2;
+        return null;
     }
 }

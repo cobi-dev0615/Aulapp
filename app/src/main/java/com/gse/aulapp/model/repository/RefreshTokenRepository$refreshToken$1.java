@@ -33,14 +33,14 @@ public final class RefreshTokenRepository$refreshToken$1 extends SuspendLambda i
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public RefreshTokenRepository$refreshToken$1(Context context, RefreshTokenRequest refreshTokenRequest, Continuation<? super RefreshTokenRepository$refreshToken$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = refreshTokenRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        RefreshTokenRepository$refreshToken$1 refreshTokenRepository$refreshToken$1 = new RefreshTokenRepository$refreshToken$1(this.$context, this.$request, continuation);
+        RefreshTokenRepository$refreshToken$1 refreshTokenRepository$refreshToken$1 = new RefreshTokenRepository$refreshToken$1(this.$context, this.$request, (Continuation) continuation);
         refreshTokenRepository$refreshToken$1.L$0 = obj;
         return (Continuation<Unit>) (Object) refreshTokenRepository$refreshToken$1;
     }

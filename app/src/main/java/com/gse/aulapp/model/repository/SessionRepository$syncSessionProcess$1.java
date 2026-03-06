@@ -19,7 +19,7 @@ public final class SessionRepository$syncSessionProcess$1 extends ContinuationIm
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SessionRepository$syncSessionProcess$1(SessionRepository sessionRepository, Continuation<? super SessionRepository$syncSessionProcess$1> continuation) {
-        super(continuation);
+        super((Continuation<Object>) continuation);
         this.this$0 = sessionRepository;
     }
 

@@ -33,14 +33,14 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(Context context, GetEnrollmentInformationRequest getEnrollmentInformationRequest, Continuation<? super GetEnrollmentInformationRepository$getGetEnrollmentInformation$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = getEnrollmentInformationRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        GetEnrollmentInformationRepository$getGetEnrollmentInformation$1 getEnrollmentInformationRepository$getGetEnrollmentInformation$1 = new GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(this.$context, this.$request, continuation);
+        GetEnrollmentInformationRepository$getGetEnrollmentInformation$1 getEnrollmentInformationRepository$getGetEnrollmentInformation$1 = new GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(this.$context, this.$request, (Continuation) continuation);
         getEnrollmentInformationRepository$getGetEnrollmentInformation$1.L$0 = obj;
         return (Continuation<Unit>) (Object) getEnrollmentInformationRepository$getGetEnrollmentInformation$1;
     }

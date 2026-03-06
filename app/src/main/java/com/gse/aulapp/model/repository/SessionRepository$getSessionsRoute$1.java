@@ -33,16 +33,16 @@ public final class SessionRepository$getSessionsRoute$1 extends SuspendLambda im
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SessionRepository$getSessionsRoute$1(Context context, SessionInstructorRequest sessionInstructorRequest, Continuation<? super SessionRepository$getSessionsRoute$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$sessionInstructorRequest = sessionInstructorRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        SessionRepository$getSessionsRoute$1 sessionRepository$getSessionsRoute$1 = new SessionRepository$getSessionsRoute$1(this.$context, this.$sessionInstructorRequest, continuation);
+        SessionRepository$getSessionsRoute$1 sessionRepository$getSessionsRoute$1 = new SessionRepository$getSessionsRoute$1(this.$context, this.$sessionInstructorRequest, (Continuation) continuation);
         sessionRepository$getSessionsRoute$1.L$0 = obj;
-        return sessionRepository$getSessionsRoute$1;
+        return (Continuation<Unit>) (Object) sessionRepository$getSessionsRoute$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -144,6 +144,6 @@ public final class SessionRepository$getSessionsRoute$1 extends SuspendLambda im
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<SessionRoutesResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((SessionRepository$getSessionsRoute$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((SessionRepository$getSessionsRoute$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

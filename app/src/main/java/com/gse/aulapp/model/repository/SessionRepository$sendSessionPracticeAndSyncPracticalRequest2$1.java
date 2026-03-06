@@ -33,7 +33,7 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest2
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1(SessionRepository sessionRepository, String str, Context context, Continuation<? super SessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = sessionRepository;
         this.$sessionID = str;
         this.$context = context;
@@ -41,9 +41,9 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest2
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        SessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1 sessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1 = new SessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1(this.this$0, this.$sessionID, this.$context, continuation);
+        SessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1 sessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1 = new SessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1(this.this$0, this.$sessionID, this.$context, (Continuation) continuation);
         sessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1.L$0 = obj;
-        return sessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1;
+        return (Continuation<Unit>) (Object) sessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -178,6 +178,6 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest2
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<SessionPracticeExamResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((SessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((SessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

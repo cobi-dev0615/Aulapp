@@ -34,14 +34,14 @@ public final class BiometrixRepository$getUrlBiometrix$1 extends SuspendLambda i
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public BiometrixRepository$getUrlBiometrix$1(Context context, BiometrixRequest biometrixRequest, Continuation<? super BiometrixRepository$getUrlBiometrix$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = biometrixRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        BiometrixRepository$getUrlBiometrix$1 biometrixRepository$getUrlBiometrix$1 = new BiometrixRepository$getUrlBiometrix$1(this.$context, this.$request, continuation);
+        BiometrixRepository$getUrlBiometrix$1 biometrixRepository$getUrlBiometrix$1 = new BiometrixRepository$getUrlBiometrix$1(this.$context, this.$request, (Continuation) continuation);
         biometrixRepository$getUrlBiometrix$1.L$0 = obj;
         return (Continuation<Unit>) (Object) biometrixRepository$getUrlBiometrix$1;
     }

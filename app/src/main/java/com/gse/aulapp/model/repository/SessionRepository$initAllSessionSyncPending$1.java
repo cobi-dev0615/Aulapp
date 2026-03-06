@@ -21,7 +21,7 @@ public final class SessionRepository$initAllSessionSyncPending$1 extends Continu
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SessionRepository$initAllSessionSyncPending$1(SessionRepository sessionRepository, Continuation<? super SessionRepository$initAllSessionSyncPending$1> continuation) {
-        super(continuation);
+        super((Continuation<Object>) continuation);
         this.this$0 = sessionRepository;
     }
 

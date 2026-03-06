@@ -39,14 +39,14 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalExamRequ
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AnonymousClass1(Context context, SessionPracticeExamSyncRequest sessionPracticeExamSyncRequest, Continuation<? super AnonymousClass1> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.$context = context;
             this.$practiceRequest = sessionPracticeExamSyncRequest;
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return new AnonymousClass1(this.$context, this.$practiceRequest, continuation);
+            return (Continuation<Unit>) (Object) new AnonymousClass1(this.$context, this.$practiceRequest, (Continuation) continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -76,22 +76,22 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalExamRequ
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Response<SessionPracticeExamResponse>> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+            return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1(Context context, SessionPracticeExamSyncRequest sessionPracticeExamSyncRequest, Continuation<? super SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$practiceRequest = sessionPracticeExamSyncRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1 sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1 = new SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1(this.$context, this.$practiceRequest, continuation);
+        SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1 sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1 = new SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1(this.$context, this.$practiceRequest, (Continuation) continuation);
         sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1.L$0 = obj;
-        return sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1;
+        return (Continuation<Unit>) (Object) sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -113,6 +113,6 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalExamRequ
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(CoroutineScope coroutineScope, Continuation<? super Deferred<Response<SessionPracticeExamResponse>>> continuation) {
-        return ((SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

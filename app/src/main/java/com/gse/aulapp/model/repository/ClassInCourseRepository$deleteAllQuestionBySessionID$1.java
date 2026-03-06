@@ -17,7 +17,7 @@ public final class ClassInCourseRepository$deleteAllQuestionBySessionID$1 extend
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassInCourseRepository$deleteAllQuestionBySessionID$1(ClassInCourseRepository classInCourseRepository, Continuation<? super ClassInCourseRepository$deleteAllQuestionBySessionID$1> continuation) {
-        super(continuation);
+        super((Continuation<Object>) continuation);
         this.this$0 = classInCourseRepository;
     }
 

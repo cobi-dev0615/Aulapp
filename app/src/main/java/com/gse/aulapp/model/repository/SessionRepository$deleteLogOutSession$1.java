@@ -17,7 +17,7 @@ public final class SessionRepository$deleteLogOutSession$1 extends ContinuationI
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SessionRepository$deleteLogOutSession$1(SessionRepository sessionRepository, Continuation<? super SessionRepository$deleteLogOutSession$1> continuation) {
-        super(continuation);
+        super((Continuation<Object>) continuation);
         this.this$0 = sessionRepository;
     }
 

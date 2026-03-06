@@ -48,7 +48,7 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         /* JADX WARN: Multi-variable type inference failed */
         public AnonymousClass1(FragmentActivity fragmentActivity, EnumHandsAulapp enumHandsAulapp, String str, String str2, Function1<? super DataFailure, Unit> function1, Function1<? super FingerPrintResponse, Unit> function12, Continuation<? super AnonymousClass1> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.$fragmentActivity = fragmentActivity;
             this.$hand = enumHandsAulapp;
             this.$userId = str;
@@ -59,7 +59,7 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return (Continuation<Unit>) (Object) new AnonymousClass1(this.$fragmentActivity, this.$hand, this.$userId, this.$urlDocument, this.$onErrorCallback, this.$onSuccessCallback, continuation);
+            return (Continuation<Unit>) (Object) new AnonymousClass1(this.$fragmentActivity, this.$hand, this.$userId, this.$urlDocument, this.$onErrorCallback, this.$onSuccessCallback, (Continuation) continuation);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -106,7 +106,7 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
     public ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(FragmentActivity fragmentActivity, EnumHandsAulapp enumHandsAulapp, String str, String str2, Function1<? super DataFailure, Unit> function1, Function1<? super FingerPrintResponse, Unit> function12, Continuation<? super ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$fragmentActivity = fragmentActivity;
         this.$hand = enumHandsAulapp;
         this.$userId = str;
@@ -117,7 +117,7 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return (Continuation<Unit>) (Object) new ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(this.$fragmentActivity, this.$hand, this.$userId, this.$urlDocument, this.$onErrorCallback, this.$onSuccessCallback, continuation);
+        return (Continuation<Unit>) (Object) new ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(this.$fragmentActivity, this.$hand, this.$userId, this.$urlDocument, this.$onErrorCallback, this.$onSuccessCallback, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl

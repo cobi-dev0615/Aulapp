@@ -33,7 +33,7 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SessionRepository$sendSessionStatusAppointment$1(String str, EnumStatusAppointment enumStatusAppointment, Context context, Continuation<? super SessionRepository$sendSessionStatusAppointment$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$sessionID = str;
         this.$sessionStatus = enumStatusAppointment;
         this.$context = context;
@@ -41,9 +41,9 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        SessionRepository$sendSessionStatusAppointment$1 sessionRepository$sendSessionStatusAppointment$1 = new SessionRepository$sendSessionStatusAppointment$1(this.$sessionID, this.$sessionStatus, this.$context, continuation);
+        SessionRepository$sendSessionStatusAppointment$1 sessionRepository$sendSessionStatusAppointment$1 = new SessionRepository$sendSessionStatusAppointment$1(this.$sessionID, this.$sessionStatus, this.$context, (Continuation) continuation);
         sessionRepository$sendSessionStatusAppointment$1.L$0 = obj;
-        return sessionRepository$sendSessionStatusAppointment$1;
+        return (Continuation<Unit>) (Object) sessionRepository$sendSessionStatusAppointment$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -143,6 +143,6 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<HistoricRecordPermissionsChangeResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((SessionRepository$sendSessionStatusAppointment$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((SessionRepository$sendSessionStatusAppointment$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

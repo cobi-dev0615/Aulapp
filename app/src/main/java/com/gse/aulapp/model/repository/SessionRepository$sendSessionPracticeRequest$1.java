@@ -31,16 +31,16 @@ public final class SessionRepository$sendSessionPracticeRequest$1 extends Suspen
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SessionRepository$sendSessionPracticeRequest$1(Context context, SessionPracticeExamSyncRequest sessionPracticeExamSyncRequest, Continuation<? super SessionRepository$sendSessionPracticeRequest$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = sessionPracticeExamSyncRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        SessionRepository$sendSessionPracticeRequest$1 sessionRepository$sendSessionPracticeRequest$1 = new SessionRepository$sendSessionPracticeRequest$1(this.$context, this.$request, continuation);
+        SessionRepository$sendSessionPracticeRequest$1 sessionRepository$sendSessionPracticeRequest$1 = new SessionRepository$sendSessionPracticeRequest$1(this.$context, this.$request, (Continuation) continuation);
         sessionRepository$sendSessionPracticeRequest$1.L$0 = obj;
-        return sessionRepository$sendSessionPracticeRequest$1;
+        return (Continuation<Unit>) (Object) sessionRepository$sendSessionPracticeRequest$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -137,6 +137,6 @@ public final class SessionRepository$sendSessionPracticeRequest$1 extends Suspen
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<SessionPracticeExamResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((SessionRepository$sendSessionPracticeRequest$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((SessionRepository$sendSessionPracticeRequest$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

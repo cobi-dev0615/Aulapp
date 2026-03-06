@@ -33,14 +33,14 @@ public final class ParameterListRepository$getParameterList$1 extends SuspendLam
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ParameterListRepository$getParameterList$1(Context context, ParameterListRequest parameterListRequest, Continuation<? super ParameterListRepository$getParameterList$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = parameterListRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        ParameterListRepository$getParameterList$1 parameterListRepository$getParameterList$1 = new ParameterListRepository$getParameterList$1(this.$context, this.$request, continuation);
+        ParameterListRepository$getParameterList$1 parameterListRepository$getParameterList$1 = new ParameterListRepository$getParameterList$1(this.$context, this.$request, (Continuation) continuation);
         parameterListRepository$getParameterList$1.L$0 = obj;
         return (Continuation<Unit>) (Object) parameterListRepository$getParameterList$1;
     }

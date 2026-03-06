@@ -33,14 +33,14 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LoginRepository$login$1(Context context, LoginRequest loginRequest, Continuation<? super LoginRepository$login$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = loginRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        LoginRepository$login$1 loginRepository$login$1 = new LoginRepository$login$1(this.$context, this.$request, continuation);
+        LoginRepository$login$1 loginRepository$login$1 = new LoginRepository$login$1(this.$context, this.$request, (Continuation) continuation);
         loginRepository$login$1.L$0 = obj;
         return (Continuation<Unit>) (Object) loginRepository$login$1;
     }

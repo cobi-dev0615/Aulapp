@@ -21,7 +21,7 @@ public final class HistoricRecordPermissionsChangeRepository$syncHistoricPermiss
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public HistoricRecordPermissionsChangeRepository$syncHistoricPermissionChangeRequest$1(HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository, Continuation<? super HistoricRecordPermissionsChangeRepository$syncHistoricPermissionChangeRequest$1> continuation) {
-        super(continuation);
+        super((Continuation<Object>) continuation);
         this.this$0 = historicRecordPermissionsChangeRepository;
     }
 

@@ -16,7 +16,7 @@ public final class SessionRepository$updateDateEntryClass$1 extends Continuation
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SessionRepository$updateDateEntryClass$1(SessionRepository sessionRepository, Continuation<? super SessionRepository$updateDateEntryClass$1> continuation) {
-        super(continuation);
+        super((Continuation<Object>) continuation);
         this.this$0 = sessionRepository;
     }
 
