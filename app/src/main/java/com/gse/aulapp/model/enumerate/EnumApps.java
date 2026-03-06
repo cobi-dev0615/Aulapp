@@ -89,7 +89,7 @@ public abstract class EnumApps {
     static {
         EnumApps[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
         INSTANCE = new Companion(null);
     }
 
@@ -98,7 +98,10 @@ public abstract class EnumApps {
     }
 
     public static EnumApps valueOfString(String str) {
-        return (EnumApps) Enum.valueOf(EnumApps.class, str);
+        for (EnumApps e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumApps[] values() {
@@ -107,6 +110,19 @@ public abstract class EnumApps {
 
     public abstract String nameString();
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumApps(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
+    }
+
+    public final String name() {
+        return this._name;
     }
 }

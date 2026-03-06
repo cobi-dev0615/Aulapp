@@ -49,27 +49,27 @@ public final class values extends PngjException {
                     throw new arid.PngjOutputException("bad chunk group?");
                 }
                 PngjInputException.values PngjBadCrcException2 = pngjInputException.PngjBadCrcException();
-                PngjInputException.values valuesVar = PngjInputException.values.BEFORE_PLTE_AND_IDAT;
+                PngjInputException.values valuesVar = Enum.valueOf(PngjInputException.values.class, "BEFORE_PLTE_AND_IDAT");
                 if (PngjBadCrcException2 == valuesVar) {
                     i2 = 1;
                 } else {
                     PngjInputException.values PngjBadCrcException3 = pngjInputException.PngjBadCrcException();
-                    if (PngjBadCrcException3 == PngjInputException.values.BEFORE_IDAT || PngjBadCrcException3 == valuesVar || PngjBadCrcException3 == PngjInputException.values.AFTER_PLTE_BEFORE_IDAT) {
-                        if (pngjInputException.PngjBadCrcException() != PngjInputException.values.AFTER_PLTE_BEFORE_IDAT) {
-                            PngjInputException.values valuesVar2 = PngjInputException.values.AFTER_PLTE_BEFORE_IDAT_PLTE_REQUIRED;
+                    if (PngjBadCrcException3 == Enum.valueOf(PngjInputException.values.class, "BEFORE_IDAT") || PngjBadCrcException3 == valuesVar || PngjBadCrcException3 == Enum.valueOf(PngjInputException.values.class, "AFTER_PLTE_BEFORE_IDAT")) {
+                        if (pngjInputException.PngjBadCrcException() != Enum.valueOf(PngjInputException.values.class, "AFTER_PLTE_BEFORE_IDAT")) {
+                            PngjInputException.values valuesVar2 = Enum.valueOf(PngjInputException.values.class, "AFTER_PLTE_BEFORE_IDAT_PLTE_REQUIRED");
                         }
                         i2 = 3;
                     } else {
                         i2 = 5;
                     }
                 }
-                if (!valueOf.PngjException(pngjInputException) || (i3 = pngjInputException.PngjPrematureEnding) <= 0) {
+                if (!arid.chunks.valueOf.PngjException(pngjInputException) || (i3 = pngjInputException.PngjPrematureEnding) <= 0) {
                     i3 = i2;
                 }
                 z = i == i3 || (i > i3 && i <= i2);
             }
             if (z) {
-                if (valueOf.valueOf(pngjInputException.PngjBadSignature) && !pngjInputException.PngjBadSignature.equals("PLTE")) {
+                if (arid.chunks.valueOf.valueOf(pngjInputException.PngjBadSignature) && !pngjInputException.PngjBadSignature.equals("PLTE")) {
                     throw new arid.PngjOutputException("bad chunk queued: ".concat(String.valueOf(pngjInputException)));
                 }
                 if (this.PngjOutputException.containsKey(pngjInputException.PngjBadSignature) && !pngjInputException.PngjBadSignature()) {

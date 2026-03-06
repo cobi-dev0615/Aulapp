@@ -96,7 +96,7 @@ public abstract class EnumHandsAulapp {
     static {
         EnumHandsAulapp[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
     public /* synthetic */ EnumHandsAulapp(String str, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -104,7 +104,10 @@ public abstract class EnumHandsAulapp {
     }
 
     public static EnumHandsAulapp valueOfString(String str) {
-        return (EnumHandsAulapp) Enum.valueOf(EnumHandsAulapp.class, str);
+        for (EnumHandsAulapp e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumHandsAulapp[] values() {
@@ -115,6 +118,19 @@ public abstract class EnumHandsAulapp {
 
     public abstract String nameHand();
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumHandsAulapp(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
+    }
+
+    public final String name() {
+        return this._name;
     }
 }

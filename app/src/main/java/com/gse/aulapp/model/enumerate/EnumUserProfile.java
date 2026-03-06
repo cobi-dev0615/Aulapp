@@ -121,7 +121,7 @@ public abstract class EnumUserProfile {
     static {
         EnumUserProfile[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
     public /* synthetic */ EnumUserProfile(String str, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -129,7 +129,10 @@ public abstract class EnumUserProfile {
     }
 
     public static EnumUserProfile valueOfString(String str) {
-        return (EnumUserProfile) Enum.valueOf(EnumUserProfile.class, str);
+        for (EnumUserProfile e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumUserProfile[] values() {
@@ -144,6 +147,19 @@ public abstract class EnumUserProfile {
 
     public abstract int style(Context context);
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumUserProfile(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
+    }
+
+    public final String name() {
+        return this._name;
     }
 }

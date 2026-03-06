@@ -98,6 +98,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
             if (i3 == i4) {
             }
         }
+        return null;
     }
 
     static {
@@ -198,7 +199,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
         }
     }
 
-    private static void c(int[] iArr, int i, String str, String str2, Object[] objArr) {
+    private static void c(int[] iArr, int i, String str, String str2, Object[] objArr) throws Throwable {
         long j;
         int i2;
         char c;
@@ -206,7 +207,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
         $10 = ($11 + 33) % 128;
         Object bArr = str3;
         if (str3 != null) {
-            bArr = str3.getBytes("ISO-8859-1");
+            bArr = str3.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1);
         }
         byte[] bArr2 = (byte[]) bArr;
         char[] charArray = str != null ? str.toCharArray() : null;
@@ -363,7 +364,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void d(String str, int i, Object[] objArr) {
+    private static void d(String str, int i, Object[] objArr) throws Throwable {
         char[] cArr;
         Throwable cause;
         int i2;

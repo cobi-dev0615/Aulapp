@@ -31,12 +31,12 @@ public final class PngjOutputException extends e1 {
 
     @Override // arid.chunks.PngjInputException
     public final PngjInputException.values PngjBadCrcException() {
-        return PngjInputException.values.NA;
+        return Enum.valueOf(PngjInputException.values.class, "NA");
     }
 
     @Override // arid.chunks.PngjInputException
     public final PngjBadSignature values() {
-        PngjBadSignature pngjBadSignature = new PngjBadSignature(13, valueOf.PngjBadSignature, true);
+        PngjBadSignature pngjBadSignature = new PngjBadSignature(13, arid.chunks.valueOf.PngjBadSignature, true);
         AridA.PngjBadSignature(this.PngjInputException, pngjBadSignature.valueOf, 0);
         AridA.PngjBadSignature(this.PngjOutputException, pngjBadSignature.valueOf, 4);
         byte[] bArr = pngjBadSignature.valueOf;

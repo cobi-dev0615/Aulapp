@@ -18,10 +18,10 @@ import kotlin.io.encoding.Base64;
 
 /* loaded from: classes.dex */
 public class PngjBadSignature extends PngjInputException {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
+    private static byte[] $$c = null;
+    private static int $$f = 0;
     private static int $10;
     private static int $11;
     private static int PngjBadSignature;
@@ -76,10 +76,11 @@ public class PngjBadSignature extends PngjInputException {
         } else {
             i = 0;
             bArr2[i] = (byte) i2;
-            i6 = i + 1;
+            int i6 = i + 1;
             if (i == i3) {
             }
         }
+        return null;
     }
 
     static {
@@ -121,7 +122,7 @@ public class PngjBadSignature extends PngjInputException {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void a(String str, boolean z, int[] iArr, Object[] objArr) {
+    private static void a(String str, boolean z, int[] iArr, Object[] objArr) throws Throwable {
         int i;
         int i2;
         byte b;
@@ -129,15 +130,15 @@ public class PngjBadSignature extends PngjInputException {
         byte[] bArr;
         int i3;
         String str2 = str;
-        byte[] bArr2 = str2;
+        byte[] bArr2 = str2 != null ? str2.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1) : null;
         if (str2 != null) {
             int i4 = $11 + 121;
             $10 = i4 % 128;
             if (i4 % 2 != 0) {
-                str2.getBytes("ISO-8859-1");
+                str2.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1);
                 throw null;
             }
-            bArr2 = str2.getBytes("ISO-8859-1");
+            bArr2 = str2.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1);
         }
         byte[] bArr3 = bArr2;
         com.d.e.e1 e1Var = new com.d.e.e1();
@@ -325,7 +326,7 @@ public class PngjBadSignature extends PngjInputException {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void b(short s, int i, int i2, byte b, int i3, Object[] objArr) {
+    private static void b(short s, int i, int i2, byte b, int i3, Object[] objArr) throws Throwable {
         int i4;
         int i5;
         int i6;
@@ -464,11 +465,11 @@ public class PngjBadSignature extends PngjInputException {
                         $11 = ($10 + R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
                         byte[] bArr6 = PngjPrematureEnding;
                         pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                        pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr6[r4] ^ j)) + s)) ^ b));
+                        pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr6[pngjPrematureEnding.values] ^ j)) + s)) ^ b));
                     } else {
                         short[] sArr = PngjUnsupportedException;
                         pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                        pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[r4] ^ j)) + s)) ^ b));
+                        pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[pngjPrematureEnding.values] ^ j)) + s)) ^ b));
                         $10 = ($11 + 63) % 128;
                     }
                     sb.append(pngjPrematureEnding.valueOf);
@@ -532,7 +533,7 @@ public class PngjBadSignature extends PngjInputException {
             i = 0;
             int i722 = i3 + 1;
             bArr2[i] = (byte) i2;
-            i5 = i + 1;
+            int i5 = i + 1;
             if (i == i4) {
             }
         }

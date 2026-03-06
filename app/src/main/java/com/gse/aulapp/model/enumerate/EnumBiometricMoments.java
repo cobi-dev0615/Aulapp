@@ -60,7 +60,7 @@ public abstract class EnumBiometricMoments {
     static {
         EnumBiometricMoments[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
     public /* synthetic */ EnumBiometricMoments(String str, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -68,7 +68,10 @@ public abstract class EnumBiometricMoments {
     }
 
     public static EnumBiometricMoments valueOfString(String str) {
-        return (EnumBiometricMoments) Enum.valueOf(EnumBiometricMoments.class, str);
+        for (EnumBiometricMoments e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumBiometricMoments[] values() {
@@ -77,6 +80,19 @@ public abstract class EnumBiometricMoments {
 
     public abstract String definitionText(Context context);
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumBiometricMoments(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
+    }
+
+    public final String name() {
+        return this._name;
     }
 }

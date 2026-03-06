@@ -84,7 +84,9 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Job;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.flow.FlowKt;
 import kotlinx.coroutines.flow.MutableSharedFlow;
 import kotlinx.coroutines.flow.SharedFlow;
@@ -148,7 +150,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         this.biometrixRepository = biometrixRepository;
         this.TAG = "ClassPracticeBeforeViewModel";
         this.gson = new Gson();
-        MutableSharedFlow<Status> MutableSharedFlow$default = SharedFlowKt.MutableSharedFlow$default(0, 1, null, 4, null);
+        MutableSharedFlow<Status> MutableSharedFlow$default = SharedFlowKt.MutableSharedFlow(0, 1, (kotlinx.coroutines.channels.BufferOverflow) null);
         this._message = MutableSharedFlow$default;
         this.message = FlowKt.asSharedFlow(MutableSharedFlow$default);
         this.stepRepository = new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao());
@@ -161,10 +163,10 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         SingleLiveEvent<Status> singleLiveEvent3 = new SingleLiveEvent<>();
         this._messageValidation = singleLiveEvent3;
         this.messageValidation = singleLiveEvent3;
-        MutableSharedFlow<Status> MutableSharedFlow$default2 = SharedFlowKt.MutableSharedFlow$default(0, 1, null, 4, null);
+        MutableSharedFlow<Status> MutableSharedFlow$default2 = SharedFlowKt.MutableSharedFlow(0, 1, (kotlinx.coroutines.channels.BufferOverflow) null);
         this._messageGetEnrollmentInformation = MutableSharedFlow$default2;
         this.messageGetEnrollmentInformation = FlowKt.asSharedFlow(MutableSharedFlow$default2);
-        MutableSharedFlow<Status> MutableSharedFlow$default3 = SharedFlowKt.MutableSharedFlow$default(0, 1, null, 4, null);
+        MutableSharedFlow<Status> MutableSharedFlow$default3 = SharedFlowKt.MutableSharedFlow(0, 1, (kotlinx.coroutines.channels.BufferOverflow) null);
         this._messageBiometrix = MutableSharedFlow$default3;
         this.messageBiometrix = FlowKt.asSharedFlow(MutableSharedFlow$default3);
     }
@@ -188,7 +190,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
     }
 
     private final void callEndPointGetEnrollmentInformation(GetEnrollmentInformationRequest getEnrollmentInformationRequest, Activity activity, UserInfoDto userInfo) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInformation$1(this, activity, getEnrollmentInformationRequest, userInfo, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInformation$1(this, activity, getEnrollmentInformationRequest, userInfo, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -297,7 +299,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void saveStepStatus(EnumIdStepperMenu enumIdStepperMenu, boolean isEntry) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$saveStepStatus$1(this, enumIdStepperMenu, isEntry, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$saveStepStatus$1(this, enumIdStepperMenu, isEntry, null));
     }
 
     private final void setDataSessionDetail(SessionDto session, FragmentClassPracticeBeforeBinding binding) {
@@ -376,7 +378,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
     /* JADX INFO: Access modifiers changed from: private */
     public final Job showDialogTimePassed(Activity activity, Context context, boolean isEnter, EnumClassType sessionType, NavController findNavController) {
         Job launch$default;
-        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$showDialogTimePassed$1(this, activity, context, isEnter, sessionType, findNavController, null), 3, null);
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$showDialogTimePassed$1(this, activity, context, isEnter, sessionType, findNavController, null));
         return launch$default;
     }
 
@@ -460,7 +462,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(enumIdStepperMenu, "enumIdStepperMenu");
         Intrinsics.checkNotNullParameter(binding, "binding");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$changeStatus$1(enumIdStepperMenu, this, isEntry, activity, binding, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$changeStatus$1(enumIdStepperMenu, this, isEntry, activity, binding, null));
     }
 
     public final void disableNfc(Activity activity) {
@@ -479,7 +481,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
 
     public final void getConfigSessionDto(EnumTypeConfiguration type) {
         Intrinsics.checkNotNullParameter(type, "type");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$getConfigSessionDto$1(this, type, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$getConfigSessionDto$1(this, type, null));
     }
 
     public final ErrorResponse getErrorEndpoint(String message, String code) {
@@ -523,7 +525,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
 
     public final void getSessionById(String sessionID) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$getSessionById$1(this, sessionID, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$getSessionById$1(this, sessionID, null));
     }
 
     public final SingleLiveEvent<Status> getStatusClass() {
@@ -541,13 +543,13 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
 
     public final void getStepperStatusComplete(String sessionID, boolean isEntry) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$getStepperStatusComplete$1(this, sessionID, isEntry, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$getStepperStatusComplete$1(this, sessionID, isEntry, null));
     }
 
     public final void initBiometrix(Activity activity, BiometrixRequest request) {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(request, "request");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$initBiometrix$1(this, activity, request, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$initBiometrix$1(this, activity, request, null));
     }
 
     public final void initNfcStatus(Activity activity) {
@@ -570,7 +572,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(userId, "userId");
         Intrinsics.checkNotNullParameter(apprenticesDocumentType, "apprenticesDocumentType");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1(this, context, stepProfile, binding, isEnter, userId, apprenticesDocumentNumber, userName, email, apprenticesDocumentType, activity, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1(this, context, stepProfile, binding, isEnter, userId, apprenticesDocumentNumber, userName, email, apprenticesDocumentType, activity, null));
     }
 
     public final void navigateTo(Context context, NavController navController, NavDirections action) {
@@ -585,7 +587,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(navController, "navController");
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         Intrinsics.checkNotNullParameter(timeEntry, "timeEntry");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$navigateToStartClass$1(this, sessionID, timeEntry, context, navController, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$navigateToStartClass$1(this, sessionID, timeEntry, context, navController, null));
     }
 
     public final EnumHandsAulapp reportHand(EnumHandsAulapp handValidate) {
@@ -629,40 +631,20 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
 
     public final void updateDateEntryClass(String sessionID) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$updateDateEntryClass$1(this, sessionID, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$updateDateEntryClass$1(this, sessionID, null));
     }
 
     public final void updateSessionStatusAppointment(Context context, String sessionID, String data) {
-        Context context2;
-        ClassPracticeBeforeViewModel classPracticeBeforeViewModel;
-        CoroutineScope viewModelScope;
-        ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1 classPracticeBeforeViewModel$updateSessionStatusAppointment$1;
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         Intrinsics.checkNotNullParameter(data, "data");
         try {
-            viewModelScope = ViewModelKt.getViewModelScope(this);
-            try {
-                classPracticeBeforeViewModel$updateSessionStatusAppointment$1 = new ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1(this, context, sessionID, data, null);
-                classPracticeBeforeViewModel = this;
-                context2 = context;
-            } catch (Exception e) {
-                e = e;
-                classPracticeBeforeViewModel = this;
-                context2 = context;
-            }
-        } catch (Exception e2) {
-            e = e2;
-            context2 = context;
-            classPracticeBeforeViewModel = this;
-        }
-        try {
-            BuildersKt.launch$default(viewModelScope, null, null, classPracticeBeforeViewModel$updateSessionStatusAppointment$1, 3, null);
-        } catch (Exception e3) {
-            e = e3;
-            Exception exc = e;
-            LogSendUtil.INSTANCE.setLog(context2, q.i("updateSessionStatusAppointment exception: ", exc.getMessage()), "updateSessionStatusAppointment", true);
-            classPracticeBeforeViewModel._statusClass.postValue(new Status.Failure(exc));
+            CoroutineScope viewModelScope = ViewModelKt.getViewModelScope(this);
+            ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1 block = new ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1(this, context, sessionID, data, null);
+            BuildersKt.launch(viewModelScope, (CoroutineContext) null, (CoroutineStart) null, block);
+        } catch (Exception exc) {
+            LogSendUtil.INSTANCE.setLog(context, q.i("updateSessionStatusAppointment exception: ", exc.getMessage()), "updateSessionStatusAppointment", true);
+            this._statusClass.postValue(new Status.Failure(exc));
         }
     }
 
@@ -693,7 +675,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
     public final void validateContinueButton(List<StepProcessSessionEntity> listStep, FragmentClassPracticeBeforeBinding binding) {
         Intrinsics.checkNotNullParameter(listStep, "listStep");
         Intrinsics.checkNotNullParameter(binding, "binding");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$validateContinueButton$1(listStep, binding, this, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$validateContinueButton$1(listStep, binding, this, null));
     }
 
     public final void validateNfcStatus(Activity activity, FragmentClassPracticeBeforeBinding binding, boolean isEnter) {
@@ -736,7 +718,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(sessionType, "sessionType");
         Intrinsics.checkNotNullParameter(findNavController, "findNavController");
         try {
-            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1(this, context, sessionInstructorRequest, activity, sessionId, isEnter, sessionType, findNavController, null), 3, null);
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1(this, context, sessionInstructorRequest, activity, sessionId, isEnter, sessionType, findNavController, null));
         } catch (Exception e) {
             LogSendUtil.INSTANCE.setLog(context, q.i("validateTimeSessionFromApi exception: ", e.getMessage()), "validateTimeSessionFromApi", true);
             this._messageValidation.setValue(new Status.Failure(new Exception(e.getMessage())));

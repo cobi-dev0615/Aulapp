@@ -62,18 +62,31 @@ public final class EnumBiometrixStatus {
     static {
         EnumBiometrixStatus[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
         INSTANCE = new Companion(null);
-        EnumEntries<EnumBiometrixStatus> entries = getEntries();
-        LinkedHashMap linkedHashMap = new LinkedHashMap(RangesKt.coerceAtLeast(MapsKt.mapCapacity(CollectionsKt.e(entries)), 16));
-        for (Object obj : entries) {
-            linkedHashMap.put(((EnumBiometrixStatus) obj).value, obj);
+        EnumBiometrixStatus[] entries = $values;
+        LinkedHashMap linkedHashMap = new LinkedHashMap(RangesKt.coerceAtLeast(MapsKt.mapCapacity(entries.length), 16));
+        for (EnumBiometrixStatus obj : entries) {
+            linkedHashMap.put(obj.value, obj);
         }
         map = linkedHashMap;
     }
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumBiometrixStatus(String str, int i, String str2) {
+        this._name = str;
+        this._ordinal = i;
         this.value = str2;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
+    }
+
+    public final String name() {
+        return this._name;
     }
 
     public static EnumEntries<EnumBiometrixStatus> getEntries() {
@@ -81,7 +94,10 @@ public final class EnumBiometrixStatus {
     }
 
     public static EnumBiometrixStatus valueOfString(String str) {
-        return (EnumBiometrixStatus) Enum.valueOf(EnumBiometrixStatus.class, str);
+        for (EnumBiometrixStatus e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumBiometrixStatus[] values() {

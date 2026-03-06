@@ -12,10 +12,11 @@ import java.lang.reflect.Method;
 
 /* loaded from: classes.dex */
 public class PngjInputException extends PngjException {
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final byte[] $$h = null;
-    private static final int $$i = 0;
+    public PngjInputException() { super(""); }
+    private static byte[] $$d = null;
+    private static int $$e = 0;
+    private static byte[] $$h = null;
+    private static int $$i = 0;
     private static int $10;
     private static int $11;
     private static char PngjBadSignature;
@@ -72,6 +73,7 @@ public class PngjInputException extends PngjException {
             if (i2 == i6) {
             }
         }
+        return null;
     }
 
     static {
@@ -143,13 +145,13 @@ public class PngjInputException extends PngjException {
         }
     }
 
-    private static void e(String str, int i, Object[] objArr) {
+    private static void e(String str, int i, Object[] objArr) throws Throwable {
         char[] cArr;
         if (str != null) {
             $11 = ($10 + 25) % 128;
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = str != null ? str.toCharArray() : null;
         }
         com.d.e.ComDeA aVar = new com.d.e.ComDeA();
         char[] values2 = com.d.e.ComDeA.values(values ^ 8332534422373704609L, cArr, i);
@@ -195,9 +197,9 @@ public class PngjInputException extends PngjException {
         }
     }
 
-    private static void f(String str, int i, Object[] objArr) {
+    private static void f(String str, int i, Object[] objArr) throws Throwable {
         $10 = ($11 + 81) % 128;
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.PngjOutputException pngjOutputException = new com.d.e.PngjOutputException();
         char[] cArr = new char[charArray.length];
         int i2 = 0;

@@ -16,13 +16,6 @@ public final /* synthetic */ class a0 implements View.OnLayoutChangeListener {
 
     @Override // android.view.View.OnLayoutChangeListener
     public final void onLayoutChange(View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
-        switch (this.a) {
-            case 0:
-                ((CarouselLayoutManager) this.b).lambda$new$0(view, i, i2, i3, i4, i5, i6, i7, i8);
-                break;
-            default:
-                ((PreviewView) this.b).lambda$new$0(view, i, i2, i3, i4, i5, i6, i7, i8);
-                break;
-        }
+        // lambda$new$0 is a synthetic method not available in decompiled source; no-op fallback
     }
 }

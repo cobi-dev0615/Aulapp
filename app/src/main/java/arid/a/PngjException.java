@@ -593,7 +593,15 @@ public abstract class PngjException {
             bArr3 = bArr;
         }
         bArr3[0] = (byte) valueof.Action;
-        int i4 = arid.a.PngjBadCrcException.PngjException.PngjBadCrcException[valueof.ordinal()];
+        int i4;
+        switch (valueof) {
+            case FILTER_NONE: i4 = 1; break;
+            case FILTER_PAETH: i4 = 2; break;
+            case FILTER_SUB: i4 = 3; break;
+            case FILTER_UP: i4 = 4; break;
+            case FILTER_AVERAGE: i4 = 5; break;
+            default: i4 = 0; break;
+        }
         if (i4 != 1) {
             if (i4 == 2) {
                 int i5 = 1;

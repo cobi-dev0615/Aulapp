@@ -61,7 +61,7 @@ public final /* data */ class UserInfoDto implements Parcelable {
         @Override // android.os.Parcelable.Creator
         public final UserInfoDto createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new UserInfoDto(parcel.readString(), parcel.readString(), EnumUserProfile.valueOf(parcel.readString()), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readInt() != 0, parcel.readString(), parcel.readInt() == 0 ? null : EnumBiometricMoments.valueOf(parcel.readString()), parcel.readInt() == 0 ? null : EnumHandsAulapp.valueOf(parcel.readString()), parcel.readInt() != 0 ? FourFingersIdenty.CREATOR.createFromParcel(parcel) : null);
+            return new UserInfoDto(parcel.readString(), parcel.readString(), EnumUserProfile.valueOfString(parcel.readString()), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readInt() != 0, parcel.readString(), parcel.readInt() == 0 ? null : EnumBiometricMoments.valueOfString(parcel.readString()), parcel.readInt() == 0 ? null : EnumHandsAulapp.valueOfString(parcel.readString()), parcel.readInt() != 0 ? FourFingersIdenty.CREATOR.createFromParcel(parcel) : null);
         }
 
         /* JADX WARN: Can't rename method to resolve collision */

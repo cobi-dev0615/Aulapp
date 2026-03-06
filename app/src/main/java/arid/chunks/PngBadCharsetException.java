@@ -173,7 +173,7 @@ public class PngBadCharsetException extends arid.PngjException {
         byte[] bArr;
         int i3;
         String str2 = str;
-        byte[] bArr2 = str2;
+        byte[] bArr2 = str2 != null ? str2.getBytes("ISO-8859-1") : null;
         if (str2 != null) {
             $10 = ($11 + 53) % 128;
             bArr2 = str2.getBytes("ISO-8859-1");
@@ -331,7 +331,7 @@ public class PngBadCharsetException extends arid.PngjException {
         char[] cArr2;
         int i3;
         String str3 = str2;
-        byte[] bArr = str3;
+        byte[] bArr = str3 != null ? str3.getBytes("ISO-8859-1") : null;
         if (str3 != null) {
             bArr = str3.getBytes("ISO-8859-1");
         }
@@ -346,7 +346,7 @@ public class PngBadCharsetException extends arid.PngjException {
                 cArr = str.toCharArray();
             }
         } else {
-            cArr = str;
+            cArr = str != null ? str.toCharArray() : null;
         }
         char[] cArr3 = cArr;
         com.d.e.PngjExceptionInternal pngjExceptionInternal = new com.d.e.PngjExceptionInternal();

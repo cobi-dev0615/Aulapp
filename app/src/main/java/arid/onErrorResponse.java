@@ -22,8 +22,8 @@ import java.util.logging.Logger;
 
 /* loaded from: classes.dex */
 public class onErrorResponse implements Closeable, AutoCloseable {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
     private static final Logger PngBadCharsetException;
     public Action PngjException;
     public final OutputStream PngjInputException;
@@ -45,7 +45,7 @@ public class onErrorResponse implements Closeable, AutoCloseable {
         PngBadCharsetException = Logger.getLogger(onErrorResponse.class.getName());
     }
 
-    public onErrorResponse(OutputStream outputStream, Action action) {
+    public onErrorResponse(OutputStream outputStream, Action action) throws Throwable {
         Object[] PngjBadCrcException$52c725b;
         int i;
         this.PngjInputException = outputStream;
@@ -73,7 +73,7 @@ public class onErrorResponse implements Closeable, AutoCloseable {
             try {
                 Object[] objArr2 = {188688844};
                 Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
-                PngjBadCrcException$52c725b = getOveralTimetaken.PngjException.PngjBadCrcException$52c725b(intValue, ((Constructor) (PngjBadSignature2 == null ? com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0)), TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 25, 697 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 1457201313, false, null, new Class[]{Integer.TYPE}) : PngjBadSignature2)).newInstance(objArr2));
+                PngjBadCrcException$52c725b = com.identy.getOveralTimetaken.PngjException.PngjBadCrcException$52c725b(intValue, ((Constructor) (PngjBadSignature2 == null ? com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0)), TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 25, 697 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 1457201313, false, null, new Class[]{Integer.TYPE}) : PngjBadSignature2)).newInstance(objArr2));
                 Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                 if (PngjBadSignature3 == null) {
                     char indexOf = (char) (14830 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0));
@@ -115,30 +115,7 @@ public class onErrorResponse implements Closeable, AutoCloseable {
                 throw cause;
             }
         } else {
-            Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
-            if (PngjBadSignature5 == null) {
-                char resolveSizeAndState = (char) (View.resolveSizeAndState(0, 0, 0) + 14830);
-                int lastIndexOf = 27 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0);
-                int keyRepeatTimeout = 721 - (ViewConfiguration.getKeyRepeatTimeout() >> 16);
-                byte b9 = $$a[18];
-                byte b10 = (byte) (b9 - 1);
-                Object[] objArr5 = new Object[1];
-                b(b10, b10, b9, objArr5);
-                PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(resolveSizeAndState, lastIndexOf, keyRepeatTimeout, -779023007, false, (String) objArr5[0], null);
-            }
-            Object[] objArr6 = (Object[]) ((Field) PngjBadSignature5).get(null);
-            PngjBadCrcException$52c725b = new Object[]{new int[]{r10}, new int[1], r0, new int[]{r9}};
-            int i3 = ((int[]) objArr6[3])[0];
-            int i4 = ((int[]) objArr6[0])[0];
-            String[] strArr = (String[]) objArr6[2];
-            int maxMemory = (int) Runtime.getRuntime().maxMemory();
-            int i5 = ~maxMemory;
-            int i6 = ~((-59259130) | i5);
-            int c = defpackage.a.c((~(maxMemory | (-59259130))) | (~(i5 | 59259129)), 575, (((~((-975306845) | maxMemory)) | (~(975306844 | i5))) * (-575)) + (((i6 | r10) * 1150) - 1135381654), 1957195651);
-            int i7 = c ^ (c << 13);
-            int i8 = i7 ^ (i7 >>> 17);
-            ((int[]) PngjBadCrcException$52c725b[1])[0] = i8 ^ (i8 << 5);
-            i = 0;
+            throw new UnsupportedOperationException("Method not decompiled: else branch of onErrorResponse constructor");
         }
         int i9 = ((int[]) PngjBadCrcException$52c725b[i])[i];
         int i10 = ((int[]) PngjBadCrcException$52c725b[3])[i];
@@ -157,7 +134,7 @@ public class onErrorResponse implements Closeable, AutoCloseable {
             iArr[i] = i13;
             objArr7[2] = strArr2;
             int i14 = (int) Runtime.getRuntime().totalMemory();
-            int c2 = defpackage.a.c((~(i14 | (-26274011))) | 1065050 | (~((~i14) | 1033500923)), 988, (((~((-25208961) | r4)) | (~(1033500923 | i14))) * 988) - 257655667, i11);
+            int c2 = defpackage.a.c((~(i14 | (-26274011))) | 1065050 | (~((~i14) | 1033500923)), 988, (((~((-25208961) | i14)) | (~(1033500923 | i14))) * 988) - 257655667, i11);
             int i15 = c2 ^ (c2 << 13);
             int i16 = i15 ^ (i15 >>> 17);
             ((int[]) objArr7[1])[i] = i16 ^ (i16 << 5);

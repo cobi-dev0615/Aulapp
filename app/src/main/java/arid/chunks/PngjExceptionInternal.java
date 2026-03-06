@@ -11,11 +11,11 @@ public final class PngjExceptionInternal extends e1 {
 
     @Override // arid.chunks.PngjInputException
     public final PngjInputException.values PngjBadCrcException() {
-        return PngjInputException.values.NA;
+        return Enum.valueOf(PngjInputException.values.class, "NA");
     }
 
     @Override // arid.chunks.PngjInputException
     public final PngjBadSignature values() {
-        return new PngjBadSignature(0, valueOf.valueOf, false);
+        return new PngjBadSignature(0, arid.chunks.valueOf.valueOf, false);
     }
 }

@@ -16,7 +16,7 @@ public final class ValidationFlowManager {
     /* JADX WARN: Multi-variable type inference failed */
     public ValidationFlowManager(List<? extends EnumApps> validationOrder) {
         Intrinsics.checkNotNullParameter(validationOrder, "validationOrder");
-        this.validationOrder = validationOrder;
+        this.validationOrder = (List<EnumApps>) (List<?>) validationOrder;
     }
 
     public final EnumApps getCurrentValidation() {

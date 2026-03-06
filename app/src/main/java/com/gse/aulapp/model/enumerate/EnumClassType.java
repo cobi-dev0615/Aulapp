@@ -252,7 +252,7 @@ public abstract class EnumClassType {
     static {
         EnumClassType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
         INSTANCE = new Companion(null);
     }
 
@@ -291,7 +291,10 @@ public abstract class EnumClassType {
     }
 
     public static EnumClassType valueOfString(String str) {
-        return (EnumClassType) Enum.valueOf(EnumClassType.class, str);
+        for (EnumClassType e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumClassType[] values() {
@@ -306,6 +309,19 @@ public abstract class EnumClassType {
 
     public abstract int resource();
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumClassType(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
+    }
+
+    public final String name() {
+        return this._name;
     }
 }

@@ -79,6 +79,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
+import kotlin.coroutines.CoroutineContext;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/gse/aulapp/view/fragment/ClassPracticeBeforeFragment;", "Landroidx/fragment/app/Fragment;", "<init>", "()V", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nClassPracticeBeforeFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClassPracticeBeforeFragment.kt\ncom/gse/aulapp/view/fragment/ClassPracticeBeforeFragment\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1060:1\n1#2:1061\n*E\n"})
@@ -438,7 +440,7 @@ public final class ClassPracticeBeforeFragment extends Fragment {
             }
             LifecycleOwner viewLifecycleOwner2 = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner2, "getViewLifecycleOwner(...)");
-            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner2), null, null, new a2(this, null), 3, null);
+            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner2), (CoroutineContext) null, (CoroutineStart) null, new a2(this, null));
             ClassPracticeBeforeViewModel classPracticeBeforeViewModel2 = this.b;
             if (classPracticeBeforeViewModel2 == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("viewModel");
@@ -453,10 +455,10 @@ public final class ClassPracticeBeforeFragment extends Fragment {
             classPracticeBeforeViewModel3.getStatusClass().observe(getViewLifecycleOwner(), new x0(1, new z0(1, this, ClassPracticeBeforeFragment.class, "validateUpdateStatusAppointment", "validateUpdateStatusAppointment(Lcom/gse/aulapp/model/data/statusControl/Status;)V", 0, 7)));
             LifecycleOwner viewLifecycleOwner3 = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner3, "getViewLifecycleOwner(...)");
-            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner3), null, null, new w1(this, null), 3, null);
+            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner3), (CoroutineContext) null, (CoroutineStart) null, new w1(this, null));
             LifecycleOwner viewLifecycleOwner4 = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner4, "getViewLifecycleOwner(...)");
-            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner4), null, null, new d2(this, null), 3, null);
+            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner4), (CoroutineContext) null, (CoroutineStart) null, new d2(this, null));
         }
         FragmentActivity requireActivity = requireActivity();
         Intrinsics.checkNotNull(requireActivity, "null cannot be cast to non-null type androidx.appcompat.app.AppCompatActivity");
