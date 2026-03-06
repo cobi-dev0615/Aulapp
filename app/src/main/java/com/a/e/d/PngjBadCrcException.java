@@ -60,7 +60,7 @@ public abstract class PngjBadCrcException extends Request<NetworkResponse> {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         DataOutputStream dataOutputStream = new DataOutputStream(byteArrayOutputStream);
         try {
-            Map<String, String> params = getParams();
+            Map<String, String> params; try { params = getParams(); } catch (com.android.volley.AuthFailureError e2) { params = null; }
             if (params != null && params.size() > 0) {
                 String paramsEncoding = getParamsEncoding();
                 try {

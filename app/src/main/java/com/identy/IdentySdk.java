@@ -4462,7 +4462,7 @@ public class IdentySdk {
                                 Throwable th2 = th;
                                 File file = new File(values2, name.concat("crypt"));
                                 FileOutputStream fileOutputStream = new FileOutputStream(file);
-                                boolean z2 = z ? 1 : 0;
+                                boolean z2 = z;
                                 while (true) {
                                     try {
                                         int read = zipInputStream.read(bArr);
@@ -4774,7 +4774,7 @@ public class IdentySdk {
                     int i20 = i19 >> 25;
                     int i21 = (((i20 | (-255)) << 1) - (i20 ^ (-255))) / 128;
                     int i22 = ((i21 | 1) << 1) - (i21 ^ 1);
-                    getPadSub2.PngjException("25/0/TAG".substring(22680 / (((-((i22 & 1) + (i22 | 1))) & i19) * 504)), " TAG ===  rolled ? ");
+                    /* stubbed: getPadSub2.PngjException logging call */
                     return this;
                 }
             }
@@ -4808,7 +4808,7 @@ public class IdentySdk {
             int i202 = i192 >> 25;
             int i212 = (((i202 | (-255)) << 1) - (i202 ^ (-255))) / 128;
             int i222 = ((i212 | 1) << 1) - (i212 ^ 1);
-            getPadSub2.PngjException("25/0/TAG".substring(22680 / (((-((i222 & 1) + (i222 | 1))) & i192) * 504)), " TAG ===  rolled ? ");
+            /* stubbed: getPadSub2.PngjException logging call */
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
