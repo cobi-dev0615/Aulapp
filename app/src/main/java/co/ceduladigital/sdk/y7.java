@@ -35,7 +35,7 @@ public abstract /* synthetic */ class y7 {
     public static /* synthetic */ void B(AutoCloseable autoCloseable) {
         boolean isTerminated;
         if (autoCloseable instanceof AutoCloseable) {
-            autoCloseable.close();
+            try { autoCloseable.close(); } catch (Exception e) { throw new RuntimeException(e); }
             return;
         }
         if (!(autoCloseable instanceof ExecutorService)) {
@@ -43,7 +43,7 @@ public abstract /* synthetic */ class y7 {
                 ((TypedArray) autoCloseable).recycle();
                 return;
             } else if (autoCloseable instanceof MediaMetadataRetriever) {
-                ((MediaMetadataRetriever) autoCloseable).release();
+                try { ((MediaMetadataRetriever) autoCloseable).release(); } catch (java.io.IOException e) { throw new RuntimeException(e); }
                 return;
             } else {
                 if (!(autoCloseable instanceof MediaDrm)) {
