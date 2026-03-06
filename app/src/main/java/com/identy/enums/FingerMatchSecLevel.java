@@ -89,7 +89,7 @@ public enum FingerMatchSecLevel {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myPid = Process.myPid();
                     int i = ~myPid;
-                    int c = a.c((~(374842609 | i)) | (-124046671), 712, (((~(myPid | 393735679)) | (~(i | (-18893071)))) * (-712)) + (((18893070 | 0) * (-712)) - 1974160153), 1195728185);
+                    int c = defpackage.a.c((~(374842609 | i)) | (-124046671), 712, (((~(myPid | 393735679)) | (~(i | (-18893071)))) * (-712)) + (((18893070 | 0) * (-712)) - 1974160153), 1195728185);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -135,7 +135,7 @@ public enum FingerMatchSecLevel {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                     int i = ~startElapsedRealtime;
-                    int c = a.c((~(657196034 | i)) | 158306754, 712, (((~(startElapsedRealtime | (-138645953))) | (~(i | 795841986))) * (-712)) + ((((-795841987) | 0) * (-712)) - 318511529), 923107545);
+                    int c = defpackage.a.c((~(657196034 | i)) | 158306754, 712, (((~(startElapsedRealtime | (-138645953))) | (~(i | 795841986))) * (-712)) + ((((-795841987) | 0) * (-712)) - 318511529), 923107545);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -176,7 +176,7 @@ public enum FingerMatchSecLevel {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~((~identityHashCode) | 91121498)) | (-661585883), -964, (((~(91121498 | identityHashCode)) | (-590010779)) * (-964)) + 1017369575, -125337086);
+                    int c = defpackage.a.c((~((~identityHashCode) | 91121498)) | (-661585883), -964, (((~(91121498 | identityHashCode)) | (-590010779)) * (-964)) + 1017369575, -125337086);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

@@ -232,7 +232,7 @@ public class IdentySdk {
             }
             if (!z) {
                 IdentyResponseListener identyResponseListener = this.PngjInputException;
-                ERRORS errors = ERRORS.LICENSE_ERROR;
+                ERRORS errors = com.identy.ERRORS.LICENSE_ERROR;
                 IdentySdk identySdk = IdentySdk.this;
                 identyResponseListener.onErrorResponse(new IdentyError(errors, null, identySdk.e, identySdk.isQualityFailed, identySdk.Attempt, identySdk.getPadSub1, identySdk.getQualityScore, identySdk.values, this.values, identySdk.i), IdentySdk.this.q());
                 return;
@@ -240,13 +240,13 @@ public class IdentySdk {
             NetworkInfo activeNetworkInfo = ((ConnectivityManager) IdentySdk.this.getData.getSystemService("connectivity")).getActiveNetworkInfo();
             if (activeNetworkInfo == null || !activeNetworkInfo.isConnected()) {
                 IdentyResponseListener identyResponseListener2 = this.PngjInputException;
-                ERRORS errors2 = ERRORS.NETWORK_ERROR;
+                ERRORS errors2 = com.identy.ERRORS.NETWORK_ERROR;
                 IdentySdk identySdk2 = IdentySdk.this;
                 identyResponseListener2.onErrorResponse(new IdentyError(errors2, null, identySdk2.e, identySdk2.isQualityFailed, identySdk2.Attempt, identySdk2.getPadSub1, identySdk2.getQualityScore, identySdk2.values, this.values, identySdk2.i), IdentySdk.this.q());
                 return;
             }
             IdentyResponseListener identyResponseListener3 = this.PngjInputException;
-            ERRORS errors3 = ERRORS.LICENSE_SERVER_NOT_CONNECTED;
+            ERRORS errors3 = com.identy.ERRORS.LICENSE_SERVER_NOT_CONNECTED;
             IdentySdk identySdk3 = IdentySdk.this;
             identyResponseListener3.onErrorResponse(new IdentyError(errors3, null, identySdk3.e, identySdk3.isQualityFailed, identySdk3.Attempt, identySdk3.getPadSub1, identySdk3.getQualityScore, identySdk3.values, this.values, identySdk3.i), IdentySdk.this.q());
         }
@@ -324,10 +324,10 @@ public class IdentySdk {
                 IdentySdk identySdk2 = IdentySdk.this;
                 Action action = identySdk2.e;
                 if (action == null) {
-                    action = Action.CAPTURE;
+                    action = com.identy.com.identy.Action.CAPTURE;
                 }
                 identySdk2.e = action;
-                Action action2 = Action.VERIFY;
+                Action action2 = com.identy.com.identy.Action.VERIFY;
                 if (action.equals(action2)) {
                     IdentySdk identySdk3 = IdentySdk.this;
                     identyResponse = new VerifyIdentyResponse(identySdk3.h, identySdk3.e, identySdk3.isQualityFailed, identySdk3.Attempt, identySdk3.getPadSub1, identySdk3.getQualityScore, identySdk3.values, identySdk3.getData, identySdk3.i);
@@ -418,10 +418,10 @@ public class IdentySdk {
         public final void PngjBadSignature(boolean z) {
             if (z) {
                 IdentySdk identySdk = IdentySdk.this;
-                identySdk.f.onErrorResponse(new IdentyError(identySdk.e, ERRORS.NETWORK_ERROR, identySdk.getData), null);
+                identySdk.f.onErrorResponse(new IdentyError(identySdk.e, com.identy.ERRORS.NETWORK_ERROR, identySdk.getData), null);
             } else {
                 IdentySdk identySdk2 = IdentySdk.this;
-                identySdk2.f.onErrorResponse(new IdentyError(identySdk2.e, ERRORS.CONFIG_URL_ERROR, identySdk2.getData), null);
+                identySdk2.f.onErrorResponse(new IdentyError(identySdk2.e, com.identy.ERRORS.CONFIG_URL_ERROR, identySdk2.getData), null);
             }
         }
 
@@ -570,7 +570,7 @@ public class IdentySdk {
 
     private IdentySdk(Activity activity, byte[] bArr, InitializationListener initializationListener, IdentyResponseListener identyResponseListener, boolean z) {
         this.PngjBadSignature = false;
-        this.e = Action.CAPTURE;
+        this.e = com.identy.com.identy.Action.CAPTURE;
         this.g = false;
         this.h = new HashMap();
         this.i = new HashMap();
@@ -589,7 +589,7 @@ public class IdentySdk {
         this.PngjOutputException = FingerMatchSecLevel.MEDIUM;
         this.PngjUnsupportedException = 5;
         this.PngjInputException = 30;
-        this.CaptureThumbActivity = CaptureMode.H;
+        this.CaptureThumbActivity = com.identy.CaptureMode.H;
         this.PngjExceptionInternal = new ArrayList();
         this.PngjPrematureEnding = new ArrayList();
         this.DeduplicationIdentyResponse = QualityMode.VERIFICATION;
@@ -607,7 +607,7 @@ public class IdentySdk {
         this.FingerAS = new InlineGuideOption(300, 10);
         this.EnrollFingersActivity = null;
         this.getShortform = "adult";
-        this.Action = FingerAS.BALANCED_VERY_HIGH;
+        this.Action = com.identy.FingerAS.BALANCED_VERY_HIGH;
         this.e1 = false;
         this.EnrollThumbActivity = false;
         this.onErrorResponse = new HashMap();
@@ -637,7 +637,7 @@ public class IdentySdk {
         this.configure = false;
         this.destroy = UIAfterCaptures.ALERTS;
         this.getServerRequest = 2000L;
-        this.getScore = CapturePosition.HORIZONTAL;
+        this.getScore = com.identy.CapturePosition.HORIZONTAL;
         this.pfkrolGetQuality = false;
         this.ppk = false;
         this.getCaptureTime = false;
@@ -679,7 +679,7 @@ public class IdentySdk {
             if (progressDialog2 != null) {
                 progressDialog2.dismiss();
             }
-            identyResponseListener.onErrorResponse(new IdentyError(ERRORS.LICENSE_NOT_EXIST, null, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, activity, this.i), q());
+            identyResponseListener.onErrorResponse(new IdentyError(com.identy.ERRORS.LICENSE_NOT_EXIST, null, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, activity, this.i), q());
             return;
         }
         if (bArr.length != 0) {
@@ -690,12 +690,13 @@ public class IdentySdk {
         if (progressDialog3 != null) {
             progressDialog3.dismiss();
         }
-        identyResponseListener.onErrorResponse(new IdentyError(ERRORS.LICENSE_EMPTY, null, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, activity, this.i), q());
+        identyResponseListener.onErrorResponse(new IdentyError(com.identy.ERRORS.LICENSE_EMPTY, null, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, activity, this.i), q());
     }
 
     private void PngjBadSignature(String str, String str2) {
         BufferedInputStream bufferedInputStream;
         BufferedOutputStream bufferedOutputStream;
+        Throwable th = null;
         try {
             if (this.getPadSub1 != null) {
                 com.identy.e.PngjException pngjException = new com.identy.e.PngjException(this.getQualityScore);
@@ -714,8 +715,8 @@ public class IdentySdk {
                             if (i % 2 == 0) {
                                 throw null;
                             }
-                        } catch (Throwable th) {
-                            th = th;
+                        } catch (Throwable th4) {
+                            th = th4;
                             if (bufferedInputStream != null) {
                                 int i2 = deduplication + 57;
                                 generateST = i2 % 128;
@@ -733,11 +734,25 @@ public class IdentySdk {
                     } catch (Throwable th2) {
                         th = th2;
                         bufferedOutputStream = null;
+                        if (bufferedInputStream != null) {
+                            bufferedInputStream.close();
+                        }
+                        if (bufferedOutputStream != null) {
+                            bufferedOutputStream.close();
+                        }
+                        throw th;
                     }
                 } catch (Throwable th3) {
                     th = th3;
                     bufferedInputStream = null;
                     bufferedOutputStream = null;
+                    if (bufferedInputStream != null) {
+                        bufferedInputStream.close();
+                    }
+                    if (bufferedOutputStream != null) {
+                        bufferedOutputStream.close();
+                    }
+                    throw th;
                 }
             } else if (this.values != null) {
                 FileInputStream fileInputStream = new FileInputStream(new File(str));
@@ -780,21 +795,12 @@ public class IdentySdk {
                     fileOutputStream2.write(bArr2, 0, read2);
                 }
             }
-        } catch (IOException | Exception unused) {
+        } catch (Exception unused) {
         }
     }
 
     private static /* synthetic */ Object PngjException(Object[] objArr) {
-        IdentySdk identySdk = (IdentySdk) objArr[0];
-        String str = (String) objArr[1];
-        Finger finger = (Finger) objArr[2];
-        Hand hand = (Hand) objArr[3];
-        try {
-            values(new Object[]{identySdk, Fpnative.generateID(e1.PngjException(identySdk.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_4.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, (IdentyUser) objArr[4]}, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), -320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), 320332114, getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature(), getL1Score.PngjBadCrcException.values.valueOf.PngjBadSignature());
-            deduplication = (generateST + 69) % 128;
-        } catch (Exception unused) {
-        }
-        return null;
+        throw new UnsupportedOperationException("Method not decompiled: com.identy.IdentySdk.PngjException(java.lang.Object[])");
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0020  */
@@ -1949,7 +1955,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4944;
                     Fpnative.valueOf = objArr;
-                    if (!this.e.equals(Action.CAPTURE)) {
+                    if (!this.e.equals(com.identy.Action.CAPTURE)) {
                         try {
                             capture();
                             generateST = (deduplication + 49) % 128;
@@ -1962,7 +1968,7 @@ public class IdentySdk {
                             throw new RuntimeException(e3);
                         }
                     }
-                    if (this.e.equals(Action.ENROLL)) {
+                    if (this.e.equals(com.identy.Action.ENROLL)) {
                         deduplication = (generateST + 21) % 128;
                         try {
                             enroll();
@@ -1975,7 +1981,7 @@ public class IdentySdk {
                             throw new RuntimeException(e6);
                         }
                     }
-                    if (this.e.equals(Action.VERIFY)) {
+                    if (this.e.equals(com.identy.Action.VERIFY)) {
                         int i3 = generateST + 105;
                         deduplication = i3 % 128;
                         try {
@@ -2007,7 +2013,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4944;
             Fpnative.valueOf = objArr;
-            if (!this.e.equals(Action.CAPTURE)) {
+            if (!this.e.equals(com.identy.Action.CAPTURE)) {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -2124,7 +2130,7 @@ public class IdentySdk {
                         valueOf();
                         return true;
                     }
-                    this.f.onErrorResponse(new IdentyError(ERRORS.CAMERA_PERMISSION_REQUIRED, null, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, this.getData, this.i), q());
+                    this.f.onErrorResponse(new IdentyError(com.identy.ERRORS.CAMERA_PERMISSION_REQUIRED, null, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, this.getData, this.i), q());
                     int i4 = ((int[]) objArr[1])[0];
                     int i5 = i4 * i4;
                     int i6 = -(113029152 * i4);
@@ -2179,9 +2185,9 @@ public class IdentySdk {
         int i = deduplication + 91;
         generateST = i % 128;
         if (i % 2 != 0) {
-            return !h().equals(FingerAS.NONE);
+            return !h().equals(com.identy.FingerAS.NONE);
         }
-        h().equals(FingerAS.NONE);
+        h().equals(com.identy.FingerAS.NONE);
         throw null;
     }
 
@@ -2257,7 +2263,7 @@ public class IdentySdk {
                             }
                             Hand hand = this.setScore[0].getHand() == null ? Hand.LEFT : this.setScore[0].getHand();
                             boolean contains = i3 != 0 ? this.PngjPrematureEnding.contains(hand) : this.PngjExceptionInternal.contains(hand);
-                            this.e = Action.VERIFY;
+                            this.e = com.identy.Action.VERIFY;
                             Activity activity = this.getData;
                             Intent intent = new Intent(activity, (Class<?>) GuideNoGuideHelper.getVerifyClass(activity, contains, this.setScore));
                             intent.putExtra("type", "verify");
@@ -2587,7 +2593,7 @@ public class IdentySdk {
                                         hashMap2.put(Integer.valueOf(Position.getFromHandFinger(entry.getKey()).ordinal()), entry.getValue());
                                     }
                                     this.f.onResponse(new DeduplicationIdentyResponse((Integer[]) Fpnative.deduplication(e1.PngjException(this.getData), template.ordinal(), hashMap2)), q());
-                                    Action action = Action.DEDUP;
+                                    Action action = com.identy.Action.DEDUP;
                                     this.e = action;
                                     try {
                                         PngjBadCrcException(action.toString());
@@ -4275,7 +4281,7 @@ public class IdentySdk {
                     if (template != null) {
                         throw new Exception(this.getData.getString(R.string.template_type_is_unknown));
                     }
-                    this.e = Action.ENROLL_WITH_TEMPLATE;
+                    this.e = com.identy.com.identy.Action.ENROLL_WITH_TEMPLATE;
                     StringBuilder sb = new StringBuilder();
                     sb.append(this.e);
                     int i4 = ((int[]) objArr[1])[0];
@@ -4419,7 +4425,7 @@ public class IdentySdk {
                 }
                 IdentyUser defaultUser = getDefaultUser();
                 this.uxd565jk = defaultUser;
-                this.e = Action.ENROLL_WITH_TEMPLATE;
+                this.e = com.identy.com.identy.Action.ENROLL_WITH_TEMPLATE;
                 StringBuilder sb = new StringBuilder();
                 sb.append(this.e);
                 sb.append("_");
@@ -4555,7 +4561,7 @@ public class IdentySdk {
                         sb.append(" for this operation");
                         throw new Exception(sb.toString());
                     }
-                    this.e = Action.ENROLL_WITH_TEMPLATE;
+                    this.e = com.identy.com.identy.Action.ENROLL_WITH_TEMPLATE;
                     StringBuilder sb2 = new StringBuilder();
                     sb2.append(this.e);
                     int i6 = ((int[]) objArr[1])[0];
@@ -4657,7 +4663,7 @@ public class IdentySdk {
                         sb.append(" for this operation");
                         throw new Exception(sb.toString());
                     }
-                    this.e = Action.ENROLL_WITH_TEMPLATE;
+                    this.e = com.identy.com.identy.Action.ENROLL_WITH_TEMPLATE;
                     StringBuilder sb2 = new StringBuilder();
                     sb2.append(this.e);
                     sb2.append("_");
@@ -7534,7 +7540,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i8 ^ (i8 << 5);
                     ((long[]) objArr[0])[0] = j + 4971;
                     Fpnative.valueOf = objArr;
-                    if (!this.e.equals(Action.CAPTURE)) {
+                    if (!this.e.equals(com.identy.Action.CAPTURE)) {
                         deduplication = (generateST + 69) % 128;
                         return this.PngjBadSignature;
                     }
@@ -7562,7 +7568,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4971;
             Fpnative.valueOf = objArr;
-            if (!this.e.equals(Action.CAPTURE)) {
+            if (!this.e.equals(com.identy.Action.CAPTURE)) {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -8141,7 +8147,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x015e, code lost:
     
-        0.e = com.identy.Action.MATCH_WITH_TEMPLATE;
+        0.e = com.identy.com.identy.Action.MATCH_WITH_TEMPLATE;
         0 = new java.lang.StringBuilder();
         0.append(0.e);
         0.append("_");
@@ -8154,7 +8160,7 @@ public class IdentySdk {
         0.h.put(0, new java.util.HashMap());
         0 = (java.util.Map) 0.h.get(0);
         0 = new java.util.ArrayList();
-        0 = new com.identy.getCaptureTime(0, 0, new java.util.Date(), new java.util.HashMap(), 0.0d, 0, (float) 0.getScore(), 0, 0.0f, false, null, com.karumi.dexter.BuildConfig.FLAVOR, 0, 0, 0, new com.identy.PngBadCharsetException(), 0, 0, com.identy.enums.FingerDetectionMode.L4F, com.identy.FingerAS.NONE);
+        0 = new com.identy.getCaptureTime(0, 0, new java.util.Date(), new java.util.HashMap(), 0.0d, 0, (float) 0.getScore(), 0, 0.0f, false, null, com.karumi.dexter.BuildConfig.FLAVOR, 0, 0, 0, new com.identy.PngBadCharsetException(), 0, 0, com.identy.enums.FingerDetectionMode.L4F, com.identy.com.identy.FingerAS.NONE);
         0.PngjOutputException = 0;
         0.put(0, 0);
         0 = new com.identy.VerifyIdentyResponse(0.h, 0.e, 0.isQualityFailed, 0.Attempt, 0.getPadSub1, 0.getQualityScore, 0.values, 0.getData, 0.i);
@@ -8341,7 +8347,7 @@ public class IdentySdk {
                                 if (hashMap2 != null) {
                                     generateST = (i4 + 67) % 128;
                                     if (hashMap.size() != 0 && hashMap2.size() != 0) {
-                                        this.e = Action.MATCH_WITH_TEMPLATE;
+                                        this.e = com.identy.Action.MATCH_WITH_TEMPLATE;
                                         StringBuilder sb = new StringBuilder();
                                         sb.append(this.e);
                                         int i5 = ((int[]) objArr[1])[0];
@@ -8407,7 +8413,7 @@ public class IdentySdk {
                                             }
                                             Map map = (Map) this.h.get(hand2);
                                             VerifyResult verifyResult = matchMultiple2;
-                                            getCaptureTime getcapturetime = new getCaptureTime(hand2, finger2, new Date(), hashMap5, 0.0d, verifyResult, matchMultiple2.getFingerScore(entry.getKey()), 0, 0.0f, false, null, BuildConfig.FLAVOR, 0L, 0L, 0L, new PngBadCharsetException(), 0, 0, FingerDetectionMode.L4F, FingerAS.NONE);
+                                            getCaptureTime getcapturetime = new getCaptureTime(hand2, finger2, new Date(), hashMap5, 0.0d, verifyResult, matchMultiple2.getFingerScore(entry.getKey()), 0, 0.0f, false, null, BuildConfig.FLAVOR, 0L, 0L, 0L, new PngBadCharsetException(), 0, 0, FingerDetectionMode.L4F, com.identy.FingerAS.NONE);
                                             getcapturetime.PngjOutputException = arrayList;
                                             map.put(finger2, getcapturetime);
                                             matchMultiple2 = verifyResult;
@@ -8466,7 +8472,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0133, code lost:
     
-        0.e = com.identy.Action.MATCH_WITH_TEMPLATE;
+        0.e = com.identy.com.identy.Action.MATCH_WITH_TEMPLATE;
         0 = new java.lang.StringBuilder();
         0.append(0.e);
         0.append("_");
@@ -8497,7 +8503,7 @@ public class IdentySdk {
         0 = -(((0 & 1) + (0 | 1)) ^ 0);
         0 = (((0 | 1) << 1) - (0 ^ 1)) >> 21;
         0 = com.identy.IdentyB.a(0 & (-4095), 0 | (-4095), 2048, -1);
-        0 = new com.identy.getCaptureTime(0, 0, 0, 0, 0.0d, 0, 0, 0, 0.0f, false, null, com.karumi.dexter.BuildConfig.FLAVOR, 0, (430749 / (((-(((0 | 1) << 1) - (0 ^ 1))) & 0) * 687)) - 627, 0, new com.identy.PngBadCharsetException(), 0, 0, com.identy.enums.FingerDetectionMode.L4F, com.identy.FingerAS.NONE);
+        0 = new com.identy.getCaptureTime(0, 0, 0, 0, 0.0d, 0, 0, 0, 0.0f, false, null, com.karumi.dexter.BuildConfig.FLAVOR, 0, (430749 / (((-(((0 | 1) << 1) - (0 ^ 1))) & 0) * 687)) - 627, 0, new com.identy.PngBadCharsetException(), 0, 0, com.identy.enums.FingerDetectionMode.L4F, com.identy.com.identy.FingerAS.NONE);
         0.PngjOutputException = 0;
         0.put(0, 0);
         0 = new com.identy.VerifyIdentyResponse(0.h, 0.e, 0.isQualityFailed, 0.Attempt, 0.getPadSub1, 0.getQualityScore, 0.values, 0.getData, 0.i);
@@ -11806,7 +11812,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x0233, code lost:
     
-        if (0.e.equals(com.identy.Action.VERIFY) != false) goto L66;
+        if (0.e.equals(com.identy.com.identy.Action.VERIFY) != false) goto L66;
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x0241, code lost:
     
@@ -11857,7 +11863,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:66:0x023e, code lost:
     
-        if (0.e.equals(com.identy.Action.VERIFY) != false) goto L66;
+        if (0.e.equals(com.identy.com.identy.Action.VERIFY) != false) goto L66;
      */
     /* JADX WARN: Code restructure failed: missing block: B:67:0x0166, code lost:
     
@@ -11900,7 +11906,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:82:0x01ae, code lost:
     
-        if (0.e.equals(com.identy.Action.VERIFY) == false) goto L80;
+        if (0.e.equals(com.identy.com.identy.Action.VERIFY) == false) goto L80;
      */
     /* JADX WARN: Code restructure failed: missing block: B:83:0x01b0, code lost:
     
@@ -12321,7 +12327,7 @@ public class IdentySdk {
                                 if (this.uxd565jk == null) {
                                     this.uxd565jk = getDefaultUser();
                                 }
-                                this.e = Action.ENROLL;
+                                this.e = com.identy.Action.ENROLL;
                                 if (this.getMatchingTime == null) {
                                     int i6 = deduplication + 43;
                                     generateST = i6 % 128;
@@ -12434,7 +12440,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x012e, code lost:
     
-        0.e = com.identy.Action.VERIFY;
+        0.e = com.identy.com.identy.Action.VERIFY;
         valueOf();
         0.uxd565jk = 0;
         0.h = new java.util.HashMap();
@@ -12945,7 +12951,7 @@ public class IdentySdk {
                         if (!H()) {
                             return false;
                         }
-                        this.e = Action.CAPTURE;
+                        this.e = com.identy.com.identy.Action.CAPTURE;
                         this.h = new HashMap();
                         if (this.setScore[0].getFinger() != null) {
                             deduplication = (generateST + 73) % 128;
@@ -13290,7 +13296,7 @@ public class IdentySdk {
                 arrayList = ((getPadSub3) map.get(finger)).PngjOutputException;
             }
             double floatValue = hashMap.containsKey(new Pair(hand, finger)) ? ((Float) hashMap.get(new Pair(hand, finger))).floatValue() : 0.0d;
-            FingerAS fingerAS = FingerAS.NONE;
+            FingerAS fingerAS = com.identy.FingerAS.NONE;
             Attempt attempt = new Attempt(0, floatValue, 0, 0, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, longValue, 0L, 0L, false, true, BuildConfig.FLAVOR, 0, 0L, fingerAS, null);
             List list = arrayList;
             getPadSub3 getpadsub3 = new getPadSub3(hand, finger, new Date(), null, hashMap.containsKey(new Pair(hand, finger)) ? ((Float) hashMap.get(new Pair(hand, finger))).floatValue() : 0.0d, -1, 0, 0.0f, false, null, null, longValue, 0L, 0L, new PngBadCharsetException(), 0, 0, null, fingerAS);
@@ -13469,10 +13475,10 @@ public class IdentySdk {
             deduplication = i % 128;
             if (i % 2 != 0) {
                 int i2 = 90 / 0;
-                if (h().equals(FingerAS.NONE)) {
+                if (h().equals(com.identy.FingerAS.NONE)) {
                     return;
                 }
-            } else if (h().equals(FingerAS.NONE)) {
+            } else if (h().equals(com.identy.FingerAS.NONE)) {
                 return;
             }
             if (this.getMatchingTime == null) {
@@ -13871,7 +13877,7 @@ public class IdentySdk {
                             generateST = (deduplication + 85) % 128;
                             return false;
                         }
-                        this.e = Action.ENROLL;
+                        this.e = com.identy.Action.ENROLL;
                         this.uxd565jk = identyUser;
                         if (!this.setFingers) {
                             int i5 = deduplication + 7;
@@ -14382,7 +14388,7 @@ public class IdentySdk {
                     ((long[]) objArr[0])[0] = j + 4926;
                     Fpnative.valueOf = objArr;
                     this.PngjBadSignature = false;
-                    this.e = Action.CAPTURE;
+                    this.e = com.identy.com.identy.Action.CAPTURE;
                     int i3 = ((int[]) objArr[1])[0];
                     int i4 = i3 * i3;
                     int i5 = -(914771209 * i3);
@@ -14412,7 +14418,7 @@ public class IdentySdk {
                     this.PngjOutputException = FingerMatchSecLevel.MEDIUM;
                     this.PngjUnsupportedException = 5;
                     this.PngjInputException = 30;
-                    this.CaptureThumbActivity = CaptureMode.H;
+                    this.CaptureThumbActivity = com.identy.CaptureMode.H;
                     this.PngjExceptionInternal = new ArrayList();
                     this.PngjPrematureEnding = new ArrayList();
                     this.DeduplicationIdentyResponse = QualityMode.VERIFICATION;
@@ -14430,7 +14436,7 @@ public class IdentySdk {
                     this.FingerAS = new InlineGuideOption(300, 10);
                     this.EnrollFingersActivity = null;
                     this.getShortform = "adult";
-                    this.Action = FingerAS.BALANCED_VERY_HIGH;
+                    this.Action = com.identy.FingerAS.BALANCED_VERY_HIGH;
                     this.e1 = false;
                     this.EnrollThumbActivity = false;
                     this.onErrorResponse = new HashMap();
@@ -14460,7 +14466,7 @@ public class IdentySdk {
                     this.configure = false;
                     this.destroy = UIAfterCaptures.ALERTS;
                     this.getServerRequest = 2000L;
-                    this.getScore = CapturePosition.HORIZONTAL;
+                    this.getScore = com.identy.CapturePosition.HORIZONTAL;
                     this.pfkrolGetQuality = false;
                     this.ppk = false;
                     this.getCaptureTime = false;
@@ -14479,7 +14485,7 @@ public class IdentySdk {
             ((long[]) objArr[0])[0] = j + 4926;
             Fpnative.valueOf = objArr;
             this.PngjBadSignature = false;
-            this.e = Action.CAPTURE;
+            this.e = com.identy.com.identy.Action.CAPTURE;
             int i32 = ((int[]) objArr[1])[0];
             int i42 = i32 * i32;
             int i52 = -(914771209 * i32);
@@ -14509,7 +14515,7 @@ public class IdentySdk {
             this.PngjOutputException = FingerMatchSecLevel.MEDIUM;
             this.PngjUnsupportedException = 5;
             this.PngjInputException = 30;
-            this.CaptureThumbActivity = CaptureMode.H;
+            this.CaptureThumbActivity = com.identy.CaptureMode.H;
             this.PngjExceptionInternal = new ArrayList();
             this.PngjPrematureEnding = new ArrayList();
             this.DeduplicationIdentyResponse = QualityMode.VERIFICATION;
@@ -14527,7 +14533,7 @@ public class IdentySdk {
             this.FingerAS = new InlineGuideOption(300, 10);
             this.EnrollFingersActivity = null;
             this.getShortform = "adult";
-            this.Action = FingerAS.BALANCED_VERY_HIGH;
+            this.Action = com.identy.FingerAS.BALANCED_VERY_HIGH;
             this.e1 = false;
             this.EnrollThumbActivity = false;
             this.onErrorResponse = new HashMap();
@@ -14557,7 +14563,7 @@ public class IdentySdk {
             this.configure = false;
             this.destroy = UIAfterCaptures.ALERTS;
             this.getServerRequest = 2000L;
-            this.getScore = CapturePosition.HORIZONTAL;
+            this.getScore = com.identy.CapturePosition.HORIZONTAL;
             this.pfkrolGetQuality = false;
             this.ppk = false;
             this.getCaptureTime = false;
@@ -14907,14 +14913,14 @@ public class IdentySdk {
                         ((long[]) objArr4[0])[0] = j + 4905;
                         Fpnative.valueOf = objArr4;
                         IdentyError identyError = new IdentyError(errors, pairArr, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, this.getData, this.i);
-                        errors2 = ERRORS.TIMED_OUT;
+                        errors2 = com.identy.ERRORS.TIMED_OUT;
                         if (!errors.equals(errors2)) {
                             generateST = (deduplication + 55) % 128;
-                            if (!errors.equals(ERRORS.ACTIVITY_PAUSED) && !errors.equals(ERRORS.EXCEEDED_TRANSACTION_LIMIT)) {
+                            if (!errors.equals(com.identy.ERRORS.ACTIVITY_PAUSED) && !errors.equals(com.identy.ERRORS.EXCEEDED_TRANSACTION_LIMIT)) {
                                 int i6 = generateST + 53;
                                 deduplication = i6 % 128;
                                 if (i6 % 2 == 0) {
-                                    if (!errors.equals(errors2) && !errors.equals(ERRORS.ACTIVITY_PAUSED_ON_BACK_PRESSED) && !errors.equals(ERRORS.USER_CANCELLED_ON_NEXT_DETECTION)) {
+                                    if (!errors.equals(errors2) && !errors.equals(com.identy.ERRORS.ACTIVITY_PAUSED_ON_BACK_PRESSED) && !errors.equals(com.identy.ERRORS.USER_CANCELLED_ON_NEXT_DETECTION)) {
                                         this.f.onErrorResponse(identyError, q());
                                         return;
                                     }
@@ -14931,7 +14937,7 @@ public class IdentySdk {
                             int i7 = deduplication + 33;
                             generateST = i7 % 128;
                             if (i7 % 2 != 0) {
-                                if (action.equals(Action.VERIFY)) {
+                                if (action.equals(com.identy.Action.VERIFY)) {
                                     int i8 = ((int[]) objArr4[1])[0];
                                     int i9 = i8 * i8;
                                     int i10 = -(1780168329 * i8);
@@ -14952,7 +14958,7 @@ public class IdentySdk {
                                     i2 = 3970 / (((-((i24 & 1) + (i24 | 1))) & i21) * 1985);
                                 }
                             } else {
-                                action.equals(Action.VERIFY);
+                                action.equals(com.identy.Action.VERIFY);
                                 throw null;
                             }
                         }
@@ -14973,7 +14979,7 @@ public class IdentySdk {
                 ((long[]) objArr42[0])[0] = j + 4905;
                 Fpnative.valueOf = objArr42;
                 IdentyError identyError2 = new IdentyError(errors, pairArr, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, this.getData, this.i);
-                errors2 = ERRORS.TIMED_OUT;
+                errors2 = com.identy.ERRORS.TIMED_OUT;
                 if (!errors.equals(errors2)) {
                 }
                 Map<Hand, Map<Finger, getPadSub3>> map2 = this.h;

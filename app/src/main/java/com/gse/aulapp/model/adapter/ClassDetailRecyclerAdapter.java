@@ -428,7 +428,7 @@ public final class ClassDetailRecyclerAdapter extends RecyclerView.Adapter<Class
         }
 
         private final boolean timerServiceIsRunning(Context context, Class<? extends Service> serviceClass) {
-            List<ActivityManager.RunningServiceInfo> runningServices;
+            List<ActivityManager.RunningServiceInfo> runningServices = null;
             try {
                 Object systemService = context.getSystemService("activity");
                 Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.app.ActivityManager");

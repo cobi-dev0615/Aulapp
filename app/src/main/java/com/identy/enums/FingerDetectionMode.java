@@ -377,7 +377,7 @@ public final class FingerDetectionMode implements Serializable {
             int i172 = (-(IdentyB.a(i162 & (-63), i162 | (-63), 32, -1) ^ i152)) + 2;
             int i182 = i172 >> 28;
             int i192 = ((i182 ^ (-31)) + ((i182 & (-31)) << 1)) / 16;
-            int i = 0;
+            i = 0;
             while (i < length) {
             }
             return null;
