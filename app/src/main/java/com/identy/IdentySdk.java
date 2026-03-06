@@ -1477,7 +1477,7 @@ public class IdentySdk {
                     int i15 = i14 >> 22;
                     int i16 = ((i15 ^ (-2047)) + ((i15 & (-2047)) << 1)) / 1024;
                     int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
-                    return newInstance(activity, str, initializationListener, identyResponseListener, z, false;
+                    return newInstance(activity, str, initializationListener, identyResponseListener, z, false);
                 }
             }
             byte[] bArr = $$d;
@@ -1504,7 +1504,7 @@ public class IdentySdk {
             int i152 = i142 >> 22;
             int i162 = ((i152 ^ (-2047)) + ((i152 & (-2047)) << 1)) / 1024;
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
-            return newInstance(activity, str, initializationListener, identyResponseListener, z, false;
+            return newInstance(activity, str, initializationListener, identyResponseListener, z, false);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
