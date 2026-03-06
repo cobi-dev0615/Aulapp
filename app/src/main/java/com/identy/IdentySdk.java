@@ -13701,7 +13701,7 @@ public class IdentySdk {
         Finger finger = (Finger) objArr[2];
         Hand hand = (Hand) objArr[3];
         try {
-            values(new Object[]{identySdk, com.identy.Fpnative.generateID(e1.PngjException(identySdk.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_2.ordinal(), bArr), hand, finger, (IdentyUser) objArr[4]}, 0, -320332114, 0, 320332114, 0, 0);
+            values(new Object[]{identySdk, com.identy.Fpnative.generateID(com.identy.e1.PngjException(identySdk.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_2.ordinal(), bArr), hand, finger, (IdentyUser) objArr[4]}, 0, -320332114, 0, 320332114, 0, 0);
             generateST = (deduplication + 95) % 128;
         } catch (Exception unused) {
         }

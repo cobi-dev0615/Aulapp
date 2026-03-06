@@ -26,7 +26,7 @@ public class ElfParser implements Closeable, AutoCloseable {
         this.channel = new FileInputStream(file).getChannel();
     }
 
-    private long offsetFromVma(Elf$Header elf$Header, long j, long j2) {
+    private long offsetFromVma(Elf$Header elf$Header, long j, long j2) throws IOException {
         for (long j3 = 0; j3 < j; j3++) {
             Elf$ProgramHeader programHeader = elf$Header.getProgramHeader(j3);
             if (programHeader.type == 1) {
