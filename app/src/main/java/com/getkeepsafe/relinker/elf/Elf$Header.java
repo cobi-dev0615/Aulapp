@@ -1,5 +1,7 @@
 package com.getkeepsafe.relinker.elf;
 
+import java.io.IOException;
+
 /* loaded from: classes.dex */
 public abstract class Elf$Header {
     public boolean bigEndian;
@@ -12,9 +14,9 @@ public abstract class Elf$Header {
     public int shstrndx;
     public int type;
 
-    public abstract Elf$DynamicStructure getDynamicStructure(long j, int i);
+    public abstract Elf$DynamicStructure getDynamicStructure(long j, int i) throws IOException;
 
-    public abstract Elf$ProgramHeader getProgramHeader(long j);
+    public abstract Elf$ProgramHeader getProgramHeader(long j) throws IOException;
 
-    public abstract Elf$SectionHeader getSectionHeader(int i);
+    public abstract Elf$SectionHeader getSectionHeader(int i) throws IOException;
 }
