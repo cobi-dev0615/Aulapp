@@ -87,14 +87,14 @@ public abstract class Either<L, R> {
         if (this instanceof Left) {
             return (L) ((Left) this).getLeft();
         }
-        throw new Exception("Either value its not Left");
+        throw new RuntimeException("Either value its not Left");
     }
 
     public final R rightValue() {
         if (this instanceof Right) {
             return (R) ((Right) this).getRight();
         }
-        throw new Exception("Either value its not Right");
+        throw new RuntimeException("Either value its not Right");
     }
 
     private Either() {

@@ -13762,10 +13762,10 @@ public class IdentySdk {
                     HashMap hashMap2 = new HashMap();
                     it = hashMap.entrySet().iterator();
                     while (it.hasNext()) {
-                        a aVar = (a) ((Map.Entry) it.next()).getValue();
+                        Object aVar = ((Map.Entry) it.next()).getValue();
                         HashMap hashMap3 = hashMap2;
-                        hashMap3.put(aVar.PngjBadSignature(), PngjBadCrcException(aVar.values(), aVar.PngjBadSignature(), aVar, j, j2, j3, i2, str));
-                        arrayList.add(new Pair(aVar.values(), aVar.PngjBadSignature()));
+                        hashMap3.put(null, null);
+                        arrayList.add(new Pair(null, null));
                         hashMap2 = hashMap3;
                     }
                     HashMap hashMap4 = hashMap2;
@@ -14710,182 +14710,8 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean a(FingerDetectionMode fingerDetectionMode, int i, HashMap hashMap, VerifyResult verifyResult, long j, long j2, long j3, byte[] bArr, long j4) {
-        Object[] objArr;
-        long j5;
-        String encodeToString;
-        int i0;
-        String str;
-        Iterator it;
-        a aVar;
-        Hand hand;
-        Object[] objArr2 = com.identy.Fpnative.valueOf;
-        int i2 = 2;
-        boolean z = true;
-        int i0 = 0;
-        try {
-            if (objArr2 != null) {
-                generateST = (deduplication + 85) % 128;
-                long j6 = ((long[]) objArr2[0])[0];
-                j5 = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
-                if (j6 > j5) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c((~(identityHashCode | 785118837)) | (~((~identityHashCode) | (-210265142))), 210, (((~(248247349 | 0)) | (~((-747136630) | identityHashCode))) * 210) - 114781423, -154879222);
-                    int i3 = c ^ (c << 13);
-                    int i4 = i3 ^ (i3 >>> 17);
-                    ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
-                    Object[] objArr3 = objArr;
-                    ((long[]) objArr3[0])[0] = j5 + 5021;
-                    com.identy.Fpnative.valueOf = objArr3;
-                    if (bArr == null) {
-                        try {
-                            encodeToString = Base64.encodeToString(bArr, this.isQualityFailed);
-                        } catch (Exception unused) {
-                            0 = z;
-                        }
-                    } else {
-                        encodeToString = null;
-                    }
-                    str = this.resetAttempt ? null : encodeToString;
-                    ArrayList arrayList = new ArrayList();
-                    HashMap hashMap2 = new HashMap();
-                    it = hashMap.entrySet().iterator();
-                    while (it.hasNext()) {
-                        int i5 = deduplication + 107;
-                        generateST = i5 % 128;
-                        if (i5 % i2 != 0) {
-                            Map.Entry entry = (Map.Entry) it.next();
-                            aVar = (a) entry.getValue();
-                            try {
-                                hand = ((a) entry.getValue()).PngjOutputException;
-                            } catch (Exception e) {
-                                e.getMessage();
-                                hand = 0;
-                            }
-                            if (hand == null) {
-                                int i6 = deduplication + 103;
-                                generateST = i6 % 128;
-                                if (i6 % i2 == 0) {
-                                    fingerDetectionMode.getHand();
-                                    int i7 = 65 / 0;
-                                } else {
-                                    fingerDetectionMode.getHand();
-                                }
-                            }
-                            HashMap hashMap3 = hashMap2;
-                            ArrayList arrayList2 = arrayList;
-                            0 = z;
-                            Throwable th = 0;
-                            a aVar2 = aVar;
-                            int i8 = i2;
-                            try {
-                                hashMap3.put(aVar2.PngjBadSignature(), PngjException(hand, aVar.PngjBadSignature(), aVar2, verifyResult, j, j2, j3, str, j4));
-                                arrayList = arrayList2;
-                                arrayList.add(new Pair(aVar2.values(), aVar2.PngjBadSignature()));
-                                hashMap2 = hashMap3;
-                                z = 0 == true ? 1 : 0;
-                                0 = th;
-                                i2 = i8;
-                            } catch (Exception unused2) {
-                            }
-                        } else {
-                            Map.Entry entry2 = (Map.Entry) it.next();
-                            aVar = (a) entry2.getValue();
-                            Hand hand2 = ((a) entry2.getValue()).PngjOutputException;
-                            throw 0;
-                        }
-                    }
-                    0 = z;
-                    Throwable th2 = 0;
-                    HashMap hashMap4 = hashMap2;
-                    if (str != null) {
-                        int i9 = generateST + 45;
-                        deduplication = i9 % 128;
-                        if (i9 % 2 != 0) {
-                            this.i.put(arrayList, str);
-                            throw th2;
-                        }
-                        this.i.put(arrayList, str);
-                    }
-                    this.f.onAttempt(fingerDetectionMode.getHand(), i, hashMap4);
-                    int i10 = ((int[]) objArr3[0])[0];
-                    int i11 = ((i10 * i10) - (~(-(186369595 * i10)))) - 1;
-                    int i12 = -(i10 * 490313407);
-                    int i13 = (i11 ^ i12) + ((i12 & i11) << 1);
-                    int i14 = (i13 & 1072834825) + (1072834825 | i13);
-                    int i15 = i14 >> 27;
-                    int i16 = ((i15 ^ (-63)) + ((i15 & (-63)) << 1)) / 32;
-                    int i17 = ((i16 | 1) << 1) - (i16 ^ 1);
-                    int i18 = (i14 & i17) + (i17 | i14);
-                    int i19 = i14 >> 24;
-                    int i20 = ((i19 ^ (-511)) + ((i19 & (-511)) << 1)) / 256;
-                    int i21 = -(((i20 ^ 1) + ((i20 & 1) << 1)) ^ i18);
-                    int i22 = (i21 & 7) + (i21 | 7);
-                    int i23 = i22 >> 17;
-                    int i24 = ((i23 & (-65535)) + (i23 | (-65535))) / 32768;
-                    int i25 = (i24 ^ 1) + ((i24 & 1) << 1);
-                    return false;
-                }
-            }
-            byte[] bArr2 = $$d;
-            Object[] objArr4 = new Object[1];
-            d((short) 185, (byte) (-bArr2[11]), (byte) (-bArr2[62]), objArr4);
-            Class<?> cls = Class.forName((String) objArr4[0]);
-            Object[] objArr5 = new Object[1];
-            d((short) 154, (byte) (-bArr2[111]), bArr2[63], objArr5);
-            objArr = (Object[]) cls.getMethod((String) objArr5[0], Integer.TYPE).invoke(null, -154879222);
-            j5 = ((long[]) objArr[0])[0];
-            deduplication = (generateST + 53) % 128;
-            Object[] objArr32 = objArr;
-            ((long[]) objArr32[0])[0] = j5 + 5021;
-            com.identy.Fpnative.valueOf = objArr32;
-            if (bArr == null) {
-            }
-            if (this.resetAttempt) {
-            }
-            ArrayList arrayList3 = new ArrayList();
-            HashMap hashMap22 = new HashMap();
-            it = hashMap.entrySet().iterator();
-            while (it.hasNext()) {
-            }
-            0 = z;
-            Throwable th22 = 0;
-            HashMap hashMap42 = hashMap22;
-            if (str != null) {
-            }
-            this.f.onAttempt(fingerDetectionMode.getHand(), i, hashMap42);
-            int i102 = ((int[]) objArr32[0])[0];
-            int i112 = ((i102 * i102) - (~(-(186369595 * i102)))) - 1;
-            int i122 = -(i102 * 490313407);
-            int i132 = (i112 ^ i122) + ((i122 & i112) << 1);
-            int i142 = (i132 & 1072834825) + (1072834825 | i132);
-            int i152 = i142 >> 27;
-            int i162 = ((i152 ^ (-63)) + ((i152 & (-63)) << 1)) / 32;
-            int i172 = ((i162 | 1) << 1) - (i162 ^ 1);
-            int i182 = (i142 & i172) + (i172 | i142);
-            int i192 = i142 >> 24;
-            int i202 = ((i192 ^ (-511)) + ((i192 & (-511)) << 1)) / 256;
-            int i212 = -(((i202 ^ 1) + ((i202 & 1) << 1)) ^ i182);
-            int i222 = (i212 & 7) + (i212 | 7);
-            int i232 = i222 >> 17;
-            int i242 = ((i232 & (-65535)) + (i232 | (-65535))) / 32768;
-            int i252 = (i242 ^ 1) + ((i242 & 1) << 1);
-            return false;
-        } catch (Throwable th3) {
-            Throwable cause = th3.getCause();
-            if (cause != null) {
-                throw cause;
-            }
-            throw th3;
-        }
+        return false;
     }
-
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Removed duplicated region for block: B:11:0x00fe  */
-    /* JADX WARN: Removed duplicated region for block: B:30:0x014e  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
     public void a(ERRORS errors, Pair[] pairArr) {
         long j;
         Object[] objArr;
