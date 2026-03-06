@@ -56,7 +56,7 @@ public enum UIAfterCaptures {
             i4 = i102;
             i3 = i9;
             bArr2[i3] = (byte) i4;
-            i9 = i3 + 1;
+            int i9 = i3 + 1;
             if (i3 == i6) {
             }
         } else {

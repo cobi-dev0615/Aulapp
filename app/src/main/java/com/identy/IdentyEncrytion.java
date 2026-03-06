@@ -39,7 +39,7 @@ public enum IdentyEncrytion {
             try {
                 ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bArr);
                 ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                new PngjException(str).PngjException(byteArrayInputStream, byteArrayOutputStream);
+                new com.identy.e.PngjException(str).PngjException(byteArrayInputStream, byteArrayOutputStream);
                 templateOutput.setData(Base64.encodeToString(byteArrayOutputStream.toByteArray(), i));
                 return templateOutput;
             } catch (Exception e) {

@@ -55,7 +55,7 @@ public class UkhobTemplateBuilder {
                     int i20 = i19 >> 19;
                     int i21 = ((i20 ^ (-16383)) + ((i20 & (-16383)) << 1)) / ConstantsKt.DEFAULT_BUFFER_SIZE;
                     int i22 = ((i21 | 1) << 1) - (i21 ^ 1);
-                    this.PngjBadSignature = 9520 / (((-(((i22 | 1) << 1) - (i22 ^ 1))) & i19) * 1190);
+                    this.PngjBadSignature = false;
                     this.PngjBadCrcException = init(str, str2, str3, str4, str5, str6, z).longValue();
                 }
             }
@@ -87,7 +87,7 @@ public class UkhobTemplateBuilder {
             int i202 = i192 >> 19;
             int i212 = ((i202 ^ (-16383)) + ((i202 & (-16383)) << 1)) / ConstantsKt.DEFAULT_BUFFER_SIZE;
             int i222 = ((i212 | 1) << 1) - (i212 ^ 1);
-            this.PngjBadSignature = 9520 / (((-(((i222 | 1) << 1) - (i222 ^ 1))) & i192) * 1190);
+            this.PngjBadSignature = false;
             this.PngjBadCrcException = init(str, str2, str3, str4, str5, str6, z).longValue();
         } catch (Throwable th) {
             Throwable cause = th.getCause();

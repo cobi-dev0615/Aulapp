@@ -52,7 +52,7 @@ public enum CapturePosition {
         } else {
             i3 = 0;
             bArr2[i3] = (byte) i4;
-            i8 = i3 + 1;
+            int i8 = i3 + 1;
             if (i3 == i6) {
             }
         }

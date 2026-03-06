@@ -68,7 +68,7 @@ public class KeyStoreCustom {
         return getECCrypt(str);
     }
 
-    public byte[] decryptFile(byte[] bArr, byte[] bArr2, int i) {
+    public byte[] decryptFile(byte[] bArr, byte[] bArr2, int i) throws Exception {
         ByteBuffer wrap = ByteBuffer.wrap(bArr);
         byte[] bArr3 = new byte[i];
         wrap.get(bArr3);
@@ -79,7 +79,7 @@ public class KeyStoreCustom {
         return cipher.doFinal(bArr4);
     }
 
-    public String decryptValue(byte[] bArr, byte[] bArr2, int i) {
+    public String decryptValue(byte[] bArr, byte[] bArr2, int i) throws Exception {
         ByteBuffer wrap = ByteBuffer.wrap(bArr);
         byte[] bArr3 = new byte[i];
         wrap.get(bArr3);
@@ -90,14 +90,14 @@ public class KeyStoreCustom {
         return new String(cipher.doFinal(bArr4));
     }
 
-    public byte[] encryptValue(String str, byte[] bArr, int i) {
+    public byte[] encryptValue(String str, byte[] bArr, int i) throws Exception {
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
         byte[] generateIVBytes = generateIVBytes(cipher, i);
         cipher.init(1, new SecretKeySpec(bArr, 0, bArr.length, "AES"), new GCMParameterSpec(128, generateIVBytes));
         return Arrays.concatenate(generateIVBytes, cipher.doFinal(str.getBytes()));
     }
 
-    public byte[] getContentDecryptFileFromByte(String str, File file) {
+    public byte[] getContentDecryptFileFromByte(String str, File file) throws Exception {
         if (!file.exists()) {
             return null;
         }

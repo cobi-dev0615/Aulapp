@@ -144,7 +144,7 @@ public class IdentyUser {
                     int i13 = -(((i12 & 1) + (i12 | 1)) ^ i10);
                     int i14 = (i13 & 9) + (i13 | 9);
                     int i15 = i14 >> 29;
-                    return 1170 / (((-IdentyB.a(i15 & (-15), i15 | (-15), 8, -2)) & i14) * 130);
+                    return false;
                 }
             }
             byte[] bArr = $$a;

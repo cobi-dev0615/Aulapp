@@ -233,7 +233,7 @@ public class FingerOutput {
             i2 = 0;
             int i822 = i4 + 1;
             bArr2[i2] = (byte) i3;
-            i6 = i2 + 1;
+            int i6 = i2 + 1;
             if (i2 == i5) {
             }
         }
@@ -798,7 +798,7 @@ public class FingerOutput {
                     int i13 = i12 >> 17;
                     int i14 = (((i13 | (-65535)) << 1) - (i13 ^ (-65535))) / 32768;
                     int i15 = ((i14 | 1) << 1) - (i14 ^ 1);
-                    this.PngjException = 2554 / (((-(((i15 | 1) << 1) - (i15 ^ 1))) & i12) * 1277);
+                    this.PngjException = false;
                     this.PngjBadSignature = i;
                 }
             }
@@ -825,7 +825,7 @@ public class FingerOutput {
             int i132 = i122 >> 17;
             int i142 = (((i132 | (-65535)) << 1) - (i132 ^ (-65535))) / 32768;
             int i152 = ((i142 | 1) << 1) - (i142 ^ 1);
-            this.PngjException = 2554 / (((-(((i152 | 1) << 1) - (i152 ^ 1))) & i122) * 1277);
+            this.PngjException = false;
             this.PngjBadSignature = i;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -868,7 +868,7 @@ public class FingerOutput {
                     int i13 = (i12 & 6) + (i12 | 6);
                     int i14 = i13 >> 18;
                     int i15 = ((i14 & (-32767)) + (i14 | (-32767))) / 16384;
-                    this.valueOf = 8532 / (((-(((i15 & 1) + (i15 | 1)) - (-1))) & i13) * 1422);
+                    this.valueOf = false;
                     this.PngjBadCrcException = f;
                 }
             }
@@ -896,7 +896,7 @@ public class FingerOutput {
             int i132 = (i122 & 6) + (i122 | 6);
             int i142 = i132 >> 18;
             int i152 = ((i142 & (-32767)) + (i142 | (-32767))) / 16384;
-            this.valueOf = 8532 / (((-(((i152 & 1) + (i152 | 1)) - (-1))) & i132) * 1422);
+            this.valueOf = false;
             this.PngjBadCrcException = f;
         } catch (Throwable th) {
             Throwable cause = th.getCause();

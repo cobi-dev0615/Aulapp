@@ -913,15 +913,15 @@ public class IdentyResponse {
                     Fpnative.valueOf = objArr;
                     JSONObject jSONObject2 = new JSONObject();
                     jSONObject = new JSONObject();
-                    for (Object obj2 : this.e1.entrySet()) {
-                        Map.Entry entry2 = (Map.Entry) obj2;
+                    for (Object obj2a : this.e1.entrySet()) {
+                        Map.Entry entry2 = (Map.Entry) obj2a;
                         StringBuilder sb = new StringBuilder();
                         sb.append(((Hand) ((Pair) entry2.getKey()).first).toString());
                         sb.append(((Finger) ((Pair) entry2.getKey()).second).toString());
                         jSONObject.put(sb.toString(), ((FingerOutput) entry2.getValue()).toJson(context));
                     }
-                    for (Object obj3 : this.Action.entrySet()) {
-                        Map.Entry entry3 = (Map.Entry) obj3;
+                    for (Object obj3a : this.Action.entrySet()) {
+                        Map.Entry entry3 = (Map.Entry) obj3a;
                         jSONObject.put(((Hand) entry3.getKey()).toString(), ((HandOutput) entry3.getValue()).toJson(context));
                     }
                     for (Map.Entry<Slap, SlapOutput> entry4 : getSLAPOutput().entrySet()) {
@@ -1046,12 +1046,12 @@ public class IdentyResponse {
                                 jSONArray3.put(jSONObject4);
                                 it2 = it;
                                 objArr = objArr2;
-                                jSONObject = obj3;
+                                jSONObject = (JSONObject) obj3;
                             } catch (Exception e2) {
-                                e = e2;
+                                // e = e2;
                                 obj2 = jSONObject;
                                 /* 0 = obj2; register var removed */
-                                e.printStackTrace();
+                                e2.printStackTrace();
                                 obj = null;
                                 jSONObject2.put("data", obj);
                                 return jSONObject2;

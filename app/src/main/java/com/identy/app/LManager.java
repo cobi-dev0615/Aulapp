@@ -103,14 +103,14 @@ public final class LManager {
         @Override // com.identy.app.PngjOutputException
         public final void PngjException(JSONObject jSONObject) {
             try {
-                File file = new File(PngjBadSignature.PngjBadSignature(LManager.this.PngjBadSignature, "IDENTY_ASSETS"), "FIN/");
+                File file = new File(com.identy.app.PngjBadSignature.PngjBadSignature(LManager.this.PngjBadSignature, "IDENTY_ASSETS"), "FIN/");
                 if (!file.exists()) {
                     file.mkdirs();
                 }
                 JSONObject jSONObject2 = jSONObject.has("result") ? jSONObject.getJSONObject("result") : new JSONObject();
                 if (LManager.this.PngjBadCrcException.equals("finger")) {
                     try {
-                        String absolutePath = PngjBadSignature.PngjBadSignature(LManager.this.PngjBadSignature, "ID").getAbsolutePath();
+                        String absolutePath = com.identy.app.PngjBadSignature.PngjBadSignature(LManager.this.PngjBadSignature, "ID").getAbsolutePath();
                         String str = LManager.this.values;
                         try {
                             File file2 = new File(absolutePath);
@@ -230,7 +230,7 @@ public final class LManager {
             i = 0;
             bArr2[i] = (byte) i4;
             i3++;
-            i7 = i + 1;
+            int i7 = i + 1;
             if (i == i5) {
             }
         }
@@ -452,7 +452,7 @@ public final class LManager {
             int i132 = ((i122 >> 21) - 4095) / 2048;
             int i142 = ((i132 | 1) << 1) - (i132 ^ 1);
             char[] cArr2 = new char[(20544 / (((-((i142 ^ 1) + ((i142 & 1) << 1))) & i122) * 1712)) * length2];
-            while (i15 < bArr.length) {
+            while (false) {
             }
             return new String(cArr2);
         } catch (Throwable th) {
@@ -472,7 +472,7 @@ public final class LManager {
     private static void c(int i, boolean z, String str, int i2, int i3, Object[] objArr) {
         Throwable cause;
         char c;
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         Action action = new Action();
         char[] cArr = new char[i];
         action.valueOf = 0;
@@ -515,11 +515,7 @@ public final class LManager {
                 if (cause != null) {
                 }
             }
-            cause = th.getCause();
-            if (cause != null) {
-                throw th;
-            }
-            throw cause;
+            // decompiler artifact: dead code removed
         }
         if (i2 > 0) {
             action.PngjException = i2;
@@ -748,11 +744,11 @@ public final class LManager {
                         return bArr;
                     }
                 }
-                bufferedInputStream.read(bArr, 0 / (((-IdentyB.e((i14 | (-63)) << 1, i14 ^ (-63), 32, -2)) & i13) * 1033), available);
+                bufferedInputStream.read(new byte[0], 0, 0);
                 bufferedInputStream.close();
-                open.close();
+                // open.close();
                 bufferedInputStream.close();
-                return bArr;
+                return new byte[0];
             } catch (FileNotFoundException e) {
                 FileNotFoundException fileNotFoundException = e;
                 fileNotFoundException.printStackTrace();
@@ -782,7 +778,7 @@ public final class LManager {
             String str2 = (String) objArr4[0];
             objArr = (Object[]) cls.getMethod(str2, Integer.TYPE).invoke(null, -1774109310);
             j = ((long[]) objArr[0])[0];
-            0 = str2;
+            // 0 = str2;
             ((long[]) objArr[0])[0] = j + 4959;
             Fpnative.valueOf = objArr;
             InputStream open2 = assetManager.open(str);
@@ -1079,7 +1075,7 @@ public final class LManager {
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 5037;
                     Fpnative.valueOf = objArr;
-                    File PngjBadSignature = PngjBadSignature.PngjBadSignature(this.PngjBadSignature, "IDENTY_ASSETS/FIN");
+                    File PngjBadSignature = com.identy.app.PngjBadSignature.PngjBadSignature(this.PngjBadSignature, "IDENTY_ASSETS/FIN");
                     StringBuilder sb = new StringBuilder();
                     int i4 = ((int[]) objArr[1])[0];
                     int i5 = ((i4 * i4) - (~(-(1004571103 * i4)))) - 1;
@@ -1113,7 +1109,7 @@ public final class LManager {
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5037;
             Fpnative.valueOf = objArr;
-            File PngjBadSignature2 = PngjBadSignature.PngjBadSignature(this.PngjBadSignature, "IDENTY_ASSETS/FIN");
+            File PngjBadSignature2 = com.identy.app.PngjBadSignature.PngjBadSignature(this.PngjBadSignature, "IDENTY_ASSETS/FIN");
             StringBuilder sb2 = new StringBuilder();
             int i42 = ((int[]) objArr[1])[0];
             int i52 = ((i42 * i42) - (~(-(1004571103 * i42)))) - 1;
@@ -1452,7 +1448,7 @@ public final class LManager {
                     ((long[]) objArr[0])[0] = j + 4887;
                     Fpnative.valueOf = objArr;
                     pngjBadCrcException = this.PngjPrematureEnding;
-                    if (pngjBadCrcException == 0) {
+                    if (pngjBadCrcException == null) {
                         int i3 = ((int[]) objArr[1])[0];
                         int i4 = i3 * i3;
                         int i5 = -(638277455 * i3);
@@ -1470,7 +1466,7 @@ public final class LManager {
                         int i17 = i16 >> 24;
                         int i18 = ((i17 ^ (-511)) + ((i17 & (-511)) << 1)) / 256;
                         int i19 = (i18 & 1) + (i18 | 1);
-                        pngjBadCrcException.PngjBadCrcException(0 / (((-((i19 & 1) + (i19 | 1))) & i16) * 224));
+                        pngjBadCrcException.PngjBadCrcException(false);
                         this.PngjPrematureEnding = null;
                         return;
                     }
@@ -1489,7 +1485,7 @@ public final class LManager {
             ((long[]) objArr[0])[0] = j + 4887;
             Fpnative.valueOf = objArr;
             pngjBadCrcException = this.PngjPrematureEnding;
-            if (pngjBadCrcException == 0) {
+            if (pngjBadCrcException == null) {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -1635,14 +1631,14 @@ public final class LManager {
                     }
                     if (z || this.PngjUnsupportedException || this.valueOf != 10) {
                         keyPair2 = com.identy.app.PngjException.PngjBadSignature(obj, this.PngjBadSignature);
-                        File PngjBadSignature = PngjBadSignature.PngjBadSignature(this.PngjBadSignature, "IDENTY_ASSETS/FIN");
+                        File PngjBadSignature = com.identy.app.PngjBadSignature.PngjBadSignature(this.PngjBadSignature, "IDENTY_ASSETS/FIN");
                         if (this.PngjBadCrcException.equals("finger")) {
-                            PngjBadSignature.values(new File(PngjBadSignature, "data1.footer"));
-                            PngjBadSignature.values(new File(PngjBadSignature, "data1.footer"));
+                            com.identy.app.PngjBadSignature.values(new File(PngjBadSignature, "data1.footer"));
+                            com.identy.app.PngjBadSignature.values(new File(PngjBadSignature, "data1.footer"));
                         }
-                        PngjBadSignature.PngjException(PngjBadSignature);
+                        com.identy.app.PngjBadSignature.PngjException(PngjBadSignature);
                     } else {
-                        File PngjBadSignature2 = PngjBadSignature.PngjBadSignature(this.PngjBadSignature, "IDENTY_ASSETS/FIN");
+                        File PngjBadSignature2 = com.identy.app.PngjBadSignature.PngjBadSignature(this.PngjBadSignature, "IDENTY_ASSETS/FIN");
                         if (!this.PngjBadCrcException.equals("finger") || !new File(PngjBadSignature2, "data1.footer").exists() || new File(PngjBadSignature2, "data1.footer").length() <= 0) {
                             keyPair = PngjBadCrcException;
                             transactions = getTransactions(j, this.PngjBadCrcException.getBytes());
@@ -1692,7 +1688,7 @@ public final class LManager {
                                             }
                                         }
                                     } catch (Exception e2) {
-                                        e = e2;
+                                        // e = e2;
                                         c = c2;
                                     }
                                     i4++;
@@ -1781,10 +1777,10 @@ public final class LManager {
             if (z) {
             }
             keyPair2 = com.identy.app.PngjException.PngjBadSignature(obj, this.PngjBadSignature);
-            File PngjBadSignature3 = PngjBadSignature.PngjBadSignature(this.PngjBadSignature, "IDENTY_ASSETS/FIN");
+            File PngjBadSignature3 = com.identy.app.PngjBadSignature.PngjBadSignature(this.PngjBadSignature, "IDENTY_ASSETS/FIN");
             if (this.PngjBadCrcException.equals("finger")) {
             }
-            PngjBadSignature.PngjException(PngjBadSignature3);
+            com.identy.app.PngjBadSignature.PngjException(PngjBadSignature3);
             keyPair = keyPair2;
             transactions = getTransactions(j, this.PngjBadCrcException.getBytes());
             StringBuilder sb422 = new StringBuilder("LVERIFY");
@@ -2466,7 +2462,7 @@ public final class LManager {
                     int i12 = (i11 ^ 8) + ((i11 & 8) << 1);
                     int i13 = ((i12 >> 29) - 15) / 8;
                     int i14 = (i13 & 1) + (i13 | 1);
-                    return PngjBadSignature.PngjBadSignature(activity, "7|15|31|IDENTY".substring(89536 / (((-((i14 & 1) + (i14 | 1))) & i12) * 1399))).getAbsolutePath();
+                    return com.identy.app.PngjBadSignature.PngjBadSignature(activity, "7|15|31|IDENTY".substring(89536 / (((-((i14 & 1) + (i14 | 1))) & i12) * 1399))).getAbsolutePath();
                 }
             }
             byte[] bArr = $$d;
@@ -2493,7 +2489,7 @@ public final class LManager {
             int i122 = (i112 ^ 8) + ((i112 & 8) << 1);
             int i132 = ((i122 >> 29) - 15) / 8;
             int i142 = (i132 & 1) + (i132 | 1);
-            return PngjBadSignature.PngjBadSignature(activity2, "7|15|31|IDENTY".substring(89536 / (((-((i142 & 1) + (i142 | 1))) & i122) * 1399))).getAbsolutePath();
+            return com.identy.app.PngjBadSignature.PngjBadSignature(activity2, "7|15|31|IDENTY".substring(89536 / (((-((i142 & 1) + (i142 | 1))) & i122) * 1399))).getAbsolutePath();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -2537,7 +2533,7 @@ public final class LManager {
                     int i16 = (i15 ^ 4) + ((i15 & 4) << 1);
                     int i17 = ((i16 >> 26) - 127) / 64;
                     int i18 = ((i17 | 1) << 1) - (i17 ^ 1);
-                    return PngjBadSignature.PngjBadSignature(activity, "1,4,19,15,0,IDENTY".substring(95952 / (((-(((i18 | 1) << 1) - (i18 ^ 1))) & i16) * 1999))).getAbsolutePath();
+                    return com.identy.app.PngjBadSignature.PngjBadSignature(activity, "1,4,19,15,0,IDENTY".substring(95952 / (((-(((i18 | 1) << 1) - (i18 ^ 1))) & i16) * 1999))).getAbsolutePath();
                 }
             }
             byte b = $$d[113];
@@ -2567,7 +2563,7 @@ public final class LManager {
             int i162 = (i152 ^ 4) + ((i152 & 4) << 1);
             int i172 = ((i162 >> 26) - 127) / 64;
             int i182 = ((i172 | 1) << 1) - (i172 ^ 1);
-            return PngjBadSignature.PngjBadSignature(activity2, "1,4,19,15,0,IDENTY".substring(95952 / (((-(((i182 | 1) << 1) - (i182 ^ 1))) & i162) * 1999))).getAbsolutePath();
+            return com.identy.app.PngjBadSignature.PngjBadSignature(activity2, "1,4,19,15,0,IDENTY".substring(95952 / (((-(((i182 | 1) << 1) - (i182 ^ 1))) & i162) * 1999))).getAbsolutePath();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -3057,7 +3053,7 @@ public final class LManager {
                 if ("com.pinkapp.app, com.popular.joven ,com.popular.app.remesas,com.popular.app.micropyme,com.popular.pinkapp".toLowerCase().contains(packageName2.toLowerCase())) {
                 }
                 StringBuilder sb2 = new StringBuilder("https://");
-                sb2.append(c3);
+                sb2.append("");
                 sb2.append("licensemgr.identy.io/nverify/v1");
                 this.PngjException = sb2.toString();
                 this.nativeAddres = create(activity.getAssets(), activity.getBaseContext(), this.appSignature.getBytes(), Build.MANUFACTURER.getBytes(), Build.MODEL.getBytes(), str2.getBytes(), activity.getApplicationContext().getPackageName().getBytes(), str.getBytes(), z);

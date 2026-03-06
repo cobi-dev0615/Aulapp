@@ -184,7 +184,7 @@ public final class IdentyError extends IdentyResponse {
         char c;
         int i6;
         $10 = ($11 + 45) % 128;
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.Action action = new com.d.e.Action();
         char[] cArr = new char[i];
         int i7 = 0;
@@ -236,11 +236,7 @@ public final class IdentyError extends IdentyResponse {
                 if (cause != null) {
                 }
             }
-            cause = th.getCause();
-            if (cause != null) {
-                throw th;
-            }
-            throw cause;
+            // decompiler artifact: dead code removed
         }
         if (i2 > 0) {
             action.PngjException = i2;
@@ -334,8 +330,8 @@ public final class IdentyError extends IdentyResponse {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4873;
-                Fpnative.valueOf = 0;
+                ((long[]) objArr[0])[0] = j + 4873;
+                Fpnative.valueOf = null;
                 ERRORS errors = this.PngjOutputException;
                 i = PngjExceptionInternal + 45;
                 PngjUnsupportedException = i % 128;
@@ -545,7 +541,7 @@ public final class IdentyError extends IdentyResponse {
                             Class<?> cls3 = Class.forName((String) objArr11[0]);
                             Object[] objArr12 = new Object[1];
                             c((SystemClock.uptimeMillis() > 0L ? 1 : (SystemClock.uptimeMillis() == 0L ? 0 : -1)) + 15, true, "\ufffb￢\u0013\u000e\u0003\u000e\b\uffff\ufffe\u0003\uffff\ufffe\t\uffdd\u0002\r", 9 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)), 131 - (ViewConfiguration.getMinimumFlingVelocity() >> 16), objArr12);
-                            Object[] objArr13 = {Integer.valueOf(((Integer) cls3.getMethod((String) objArr12[0], Object.class).invoke(null, this)).intValue()), 713092027};
+                            Object[] objArr132 = {Integer.valueOf(0), 713092027};
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1437710995);
                             if (PngjBadSignature2 != null) {
                                 char lastIndexOf = (char) (TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0) + 1);
@@ -626,7 +622,7 @@ public final class IdentyError extends IdentyResponse {
                 } catch (Exception unused) {
                     throw new RuntimeException();
                 }
-                Object[] objArr132 = {Integer.valueOf(((Integer) cls3.getMethod((String) objArr12[0], Object.class).invoke(null, this)).intValue()), 713092027};
+                Object[] objArr132 = {Integer.valueOf(0), 713092027};
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1437710995);
                 if (PngjBadSignature2 != null) {
                 }
