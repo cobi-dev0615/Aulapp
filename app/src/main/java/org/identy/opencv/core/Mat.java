@@ -1,8 +1,9 @@
 package org.identy.opencv.core;
 public class Mat {
+    public long PngjException;
     public Mat() {}
     public Mat(int rows, int cols, int type) {}
-    public Mat(long addr) {}
+    public Mat(long addr) { this.PngjException = addr; }
     public int rows() { return 0; }
     public int cols() { return 0; }
     public int type() { return 0; }
@@ -27,4 +28,8 @@ public class Mat {
     public Mat reshape(int cn) { return new Mat(); }
     public Mat reshape(int cn, int rows) { return new Mat(); }
     public void copyTo(Mat m) {}
+    public static long n_clone(long addr) { return 0; }
+    public static int n_cols(long addr) { return 0; }
+    public static int n_rows(long addr) { return 0; }
+    public static void n_release(long addr) {}
 }

@@ -88,7 +88,7 @@ public enum Template {
             pngjPrematureEnding.PngjInputException = 19685L;
             pngjPrematureEnding.PngjUnsupportedException = 19685L;
             arid.chunks.values valuesVar = (arid.chunks.values) attempt.PngjBadSignature;
-            arid.chunks.valueOf.PngjBadCrcException(valuesVar.values, new Attempt.PngjException(attempt, pngjPrematureEnding));
+            arid.chunks.valueOf.PngjBadCrcException(valuesVar.values, attempt.new PngjException(pngjPrematureEnding));
             valuesVar.values.add(pngjPrematureEnding);
             int i = 0;
             while (i < getpadsub1.PngjBadSignature) {

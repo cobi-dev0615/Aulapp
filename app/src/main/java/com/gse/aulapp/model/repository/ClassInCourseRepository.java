@@ -94,6 +94,7 @@ public final class ClassInCourseRepository {
         testEntity = (TestEntity) obj2;
         if (testEntity != null) {
         }
+        return Unit.INSTANCE;
     }
 
     public final Object getQuestionFromDB(String str, Continuation<? super List<QuestionEntity>> continuation) {
@@ -109,7 +110,7 @@ public final class ClassInCourseRepository {
     public final Object saveQuestion(List<QuestionEntity> list, Continuation<? super Unit> continuation) {
         ClassInCourseRepository$saveQuestion$1 classInCourseRepository$saveQuestion$1;
         int i;
-        Iterator it;
+        Iterator it = null;
         ClassInCourseRepository classInCourseRepository;
         if (continuation instanceof ClassInCourseRepository$saveQuestion$1) {
             classInCourseRepository$saveQuestion$1 = (ClassInCourseRepository$saveQuestion$1) continuation;
@@ -150,7 +151,7 @@ public final class ClassInCourseRepository {
         i = classInCourseRepository$saveQuestion$1.label;
         if (i != 0) {
         }
-        while (it.hasNext()) {
+        while (it != null && it.hasNext()) {
         }
         return Unit.INSTANCE;
     }

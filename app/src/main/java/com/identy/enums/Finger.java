@@ -70,7 +70,7 @@ public enum Finger implements Serializable {
         } else {
             i2 = 0;
             bArr2[i2] = (byte) i4;
-            i6 = i2 + 1;
+            int i6 = i2 + 1;
             if (i2 == i5) {
             }
         }
@@ -92,7 +92,7 @@ public enum Finger implements Serializable {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myPid = Process.myPid();
-                    int c = a.c(~(myPid | 293969574), 113, (((~((~myPid) | 1070046950)) | (~((-792858855) | myPid)) | 16781478) * (-113)) + ((((~(293969574 | 0)) | 792858854) * 226) - 41024400), -811822094);
+                    int c = defpackage.a.c(~(myPid | 293969574), 113, (((~((~myPid) | 1070046950)) | (~((-792858855) | myPid)) | 16781478) * (-113)) + ((((~(293969574 | 0)) | 792858854) * 226) - 41024400), -811822094);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -135,7 +135,7 @@ public enum Finger implements Serializable {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int freeMemory = (int) Runtime.getRuntime().freeMemory();
-                    int c = a.c((~(freeMemory | 1056374509)) | 548571309, 366, (((~(553028269 | freeMemory)) | 1051917549) * (-366)) + 40019391, -899590866);
+                    int c = defpackage.a.c((~(freeMemory | 1056374509)) | 548571309, 366, (((~(553028269 | freeMemory)) | 1051917549) * (-366)) + 40019391, -899590866);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -181,7 +181,7 @@ public enum Finger implements Serializable {
                     int i = ~identityHashCode;
                     int i2 = (~((-291694435) | i)) | 287466786;
                     int i3 = ~(identityHashCode | (-202967198));
-                    int c = a.c(~(i | (-207194846)), 713, (i3 * 1426) + ((i2 | i3) * (-713)) + 617554092, -2003598730);
+                    int c = defpackage.a.c(~(i | (-207194846)), 713, (i3 * 1426) + ((i2 | i3) * (-713)) + 617554092, -2003598730);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
