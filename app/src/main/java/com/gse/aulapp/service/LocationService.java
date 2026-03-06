@@ -32,8 +32,8 @@ import kotlinx.coroutines.flow.FlowKt;
 /* loaded from: classes.dex */
 public final class LocationService extends Service {
     private final long INTERVAL_DEFAULT;
-    private final String TAG;
-    private boolean isService;
+    final String TAG;
+    boolean isService;
     private LocationClient locationClient;
     private final CoroutineScope serviceScope;
 
@@ -93,7 +93,7 @@ public final class LocationService extends Service {
                 Intrinsics.throwUninitializedPropertyAccessException("locationClient");
                 locationClient = null;
             }
-            FlowKt.launchIn(FlowKt.onEach(FlowKt.m1541catch(locationClient.getLocationUpdates(interval), new LocationService$start$1(this, null)), new LocationService$start$2(this, objectRef, notificationManager, intent, flags, startId, sessionId, interval, null)), this.serviceScope);
+            FlowKt.launchIn(FlowKt.onEach(FlowKt.catch$(locationClient.getLocationUpdates(interval), new LocationService$start$1(this, null)), new LocationService$start$2(this, objectRef, notificationManager, intent, flags, startId, sessionId, interval, null)), this.serviceScope);
             startForeground(10000002, ((NotificationCompat.Builder) objectRef.element).build());
         } catch (Exception e) {
             e.toString();
@@ -124,7 +124,7 @@ public final class LocationService extends Service {
     @Override // android.app.Service
     public void onDestroy() {
         super.onDestroy();
-        CoroutineScopeKt.cancel(this.serviceScope);
+        CoroutineScopeKt.cancel$default(this.serviceScope, null, 1, null);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:16:0x0040 A[Catch: Exception -> 0x0044, TryCatch #2 {Exception -> 0x0044, blocks: (B:2:0x0000, B:16:0x0040, B:18:0x004b, B:20:0x0051, B:25:0x0063, B:47:0x0039, B:50:0x0006, B:52:0x000c, B:6:0x001d, B:8:0x0025, B:10:0x002b, B:12:0x0034, B:5:0x0017), top: B:1:0x0000, inners: #0 }] */
@@ -169,10 +169,14 @@ public final class LocationService extends Service {
                 if (obj == null) {
                 }
                 j = ((Long) obj).longValue();
-                if (intent != null || (extras2 = intent.getExtras()) == null || (r0 = extras2.get("SESSION_ID_KEY")) == null) {
-                    Object obj2 = "9999999999999";
+                Object sessionObj = null;
+                if (intent != null && (extras2 = intent.getExtras()) != null) {
+                    sessionObj = extras2.get("SESSION_ID_KEY");
                 }
-                str = (String) obj2;
+                if (sessionObj == null) {
+                    sessionObj = "9999999999999";
+                }
+                str = (String) sessionObj;
                 long j2 = j;
                 if (intent != null) {
                     intent.getAction();
@@ -200,8 +204,7 @@ public final class LocationService extends Service {
                             }
                         }
                     } catch (Exception e3) {
-                        e = e3;
-                        e.toString();
+                        e3.toString();
                         GpsUtil.Companion companion2 = GpsUtil.INSTANCE;
                         Context applicationContext2 = getApplicationContext();
                         Intrinsics.checkNotNullExpressionValue(applicationContext2, "getApplicationContext(...)");

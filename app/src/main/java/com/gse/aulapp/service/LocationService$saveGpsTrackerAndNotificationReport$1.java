@@ -29,7 +29,7 @@ public final class LocationService$saveGpsTrackerAndNotificationReport$1 extends
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LocationService$saveGpsTrackerAndNotificationReport$1(Location location, LocationService locationService, String str, Continuation<? super LocationService$saveGpsTrackerAndNotificationReport$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$location = location;
         this.this$0 = locationService;
         this.$sessionId = str;
@@ -37,7 +37,7 @@ public final class LocationService$saveGpsTrackerAndNotificationReport$1 extends
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new LocationService$saveGpsTrackerAndNotificationReport$1(this.$location, this.this$0, this.$sessionId, continuation);
+        return new LocationService$saveGpsTrackerAndNotificationReport$1(this.$location, this.this$0, this.$sessionId, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -75,6 +75,6 @@ public final class LocationService$saveGpsTrackerAndNotificationReport$1 extends
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((LocationService$saveGpsTrackerAndNotificationReport$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((LocationService$saveGpsTrackerAndNotificationReport$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

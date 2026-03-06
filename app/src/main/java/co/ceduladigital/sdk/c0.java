@@ -59,8 +59,11 @@ public final /* synthetic */ class c0 implements Function1 {
                 while (true) {
                     if (!it.hasNext()) {
                         i = -1;
+                        break;
                     } else if (!Intrinsics.areEqual(it.next().getDay(), "(Hoy)")) {
                         i++;
+                    } else {
+                        break;
                     }
                 }
                 rvClass.clearOnScrollListeners();

@@ -39,7 +39,7 @@ public abstract class ActivityUtil {
             try {
                 List<Fragment> fragments2 = activity.getSupportFragmentManager().getFragments();
                 Intrinsics.checkNotNullExpressionValue(fragments2, "getFragments(...)");
-                Iterator<T> it = fragments2.iterator();
+                Iterator<?> it = fragments2.iterator();
                 while (true) {
                     if (!it.hasNext()) {
                         obj = null;

@@ -22,13 +22,13 @@ public final class ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$1(String str, Continuation<? super ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$sessionID = str;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$1(this.$sessionID, continuation);
+        return (Continuation<Unit>) (Object) new ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$1(this.$sessionID, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -68,6 +68,6 @@ public final class ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

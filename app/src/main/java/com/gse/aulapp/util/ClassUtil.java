@@ -53,6 +53,9 @@ public final class ClassUtil {
         public static final FilterType DATE = new FilterType("DATE", 1);
         public static final FilterType DEFAULT = new FilterType("DEFAULT", 2);
 
+        private final String name;
+        private final int ordinal;
+
         private static final /* synthetic */ FilterType[] $values() {
             return new FilterType[]{CHIP, DATE, DEFAULT};
         }
@@ -64,10 +67,25 @@ public final class ClassUtil {
         }
 
         private FilterType(String str, int i) {
+            this.name = str;
+            this.ordinal = i;
+        }
+
+        public final String name() {
+            return this.name;
+        }
+
+        public final int ordinal() {
+            return this.ordinal;
         }
 
         public static FilterType valueOfString(String str) {
-            return (FilterType) Enum.valueOf(FilterType.class, str);
+            for (FilterType value : $VALUES) {
+                if (value.name.equals(str)) {
+                    return value;
+                }
+            }
+            throw new IllegalArgumentException("No enum constant " + str);
         }
 
         public static FilterType[] values() {
@@ -210,7 +228,7 @@ public final class ClassUtil {
         for (SessionDto sessionDto : mutableList) {
             EnumTypeConfiguration type = ConfigurationSessionTypeConverter.INSTANCE.getType(sessionDto.getType());
             if (configList != null) {
-                Iterator<T> it = configList.iterator();
+                Iterator<?> it = configList.iterator();
                 while (true) {
                     if (!it.hasNext()) {
                         break;

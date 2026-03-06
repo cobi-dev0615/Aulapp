@@ -34,7 +34,7 @@ public final class LocationService$start$2 extends SuspendLambda implements Func
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LocationService$start$2(LocationService locationService, Ref.ObjectRef<NotificationCompat.Builder> objectRef, NotificationManager notificationManager, Intent intent, int i, int i2, String str, long j, Continuation<? super LocationService$start$2> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = locationService;
         this.$notification = objectRef;
         this.$notificationManager = notificationManager;
@@ -73,14 +73,14 @@ public final class LocationService$start$2 extends SuspendLambda implements Func
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        LocationService$start$2 locationService$start$2 = new LocationService$start$2(this.this$0, this.$notification, this.$notificationManager, this.$intent, this.$flags, this.$startId, this.$sessionId, this.$interval, continuation);
+        LocationService$start$2 locationService$start$2 = new LocationService$start$2(this.this$0, this.$notification, this.$notificationManager, this.$intent, this.$flags, this.$startId, this.$sessionId, this.$interval, (Continuation) continuation);
         locationService$start$2.L$0 = obj;
-        return locationService$start$2;
+        return (Continuation<Unit>) (Object) locationService$start$2;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(Location location, Continuation<? super Unit> continuation) {
-        return ((LocationService$start$2) create(location, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((LocationService$start$2) (Object) create(location, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl

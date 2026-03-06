@@ -35,7 +35,7 @@ public final class ControllerEntryOrExamUtil$Companion$saveEntryExam$1 extends S
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AnonymousClass1(SessionRepository sessionRepository, String str, String str2, Continuation<? super AnonymousClass1> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.$repository = sessionRepository;
             this.$dateEntryExam = str;
             this.$sessionID = str2;
@@ -43,7 +43,7 @@ public final class ControllerEntryOrExamUtil$Companion$saveEntryExam$1 extends S
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return new AnonymousClass1(this.$repository, this.$dateEntryExam, this.$sessionID, continuation);
+            return (Continuation<Unit>) (Object) new AnonymousClass1(this.$repository, this.$dateEntryExam, this.$sessionID, (Continuation) continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -70,13 +70,13 @@ public final class ControllerEntryOrExamUtil$Companion$saveEntryExam$1 extends S
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+            return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ControllerEntryOrExamUtil$Companion$saveEntryExam$1(SessionRepository sessionRepository, String str, String str2, Continuation<? super ControllerEntryOrExamUtil$Companion$saveEntryExam$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$repository = sessionRepository;
         this.$dateEntryExam = str;
         this.$sessionID = str2;
@@ -84,7 +84,7 @@ public final class ControllerEntryOrExamUtil$Companion$saveEntryExam$1 extends S
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ControllerEntryOrExamUtil$Companion$saveEntryExam$1(this.$repository, this.$dateEntryExam, this.$sessionID, continuation);
+        return (Continuation<Unit>) (Object) new ControllerEntryOrExamUtil$Companion$saveEntryExam$1(this.$repository, this.$dateEntryExam, this.$sessionID, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -110,6 +110,6 @@ public final class ControllerEntryOrExamUtil$Companion$saveEntryExam$1 extends S
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ControllerEntryOrExamUtil$Companion$saveEntryExam$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ControllerEntryOrExamUtil$Companion$saveEntryExam$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

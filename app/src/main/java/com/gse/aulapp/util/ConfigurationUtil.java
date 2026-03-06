@@ -83,7 +83,7 @@ public abstract class ConfigurationUtil {
                     return arrayList;
                 }
             }
-            configurationUtil$Companion$getConfigurationSession$1 = new ConfigurationUtil$Companion$getConfigurationSession$1(this, continuation);
+            configurationUtil$Companion$getConfigurationSession$1 = new ConfigurationUtil$Companion$getConfigurationSession$1(this, (Continuation) continuation);
             Object obj2 = configurationUtil$Companion$getConfigurationSession$1.result;
             Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
             i = configurationUtil$Companion$getConfigurationSession$1.label;
@@ -134,7 +134,7 @@ public abstract class ConfigurationUtil {
                     return companion.convertEntityToDto((ConfigurationSessionEntity) obj);
                 }
             }
-            configurationUtil$Companion$getConfigurationSessionByType$1 = new ConfigurationUtil$Companion$getConfigurationSessionByType$1(this, continuation);
+            configurationUtil$Companion$getConfigurationSessionByType$1 = new ConfigurationUtil$Companion$getConfigurationSessionByType$1(this, (Continuation) continuation);
             Object obj2 = configurationUtil$Companion$getConfigurationSessionByType$1.result;
             Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
             i = configurationUtil$Companion$getConfigurationSessionByType$1.label;

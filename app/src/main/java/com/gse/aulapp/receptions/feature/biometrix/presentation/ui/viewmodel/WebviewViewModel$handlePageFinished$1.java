@@ -77,7 +77,7 @@ public final class WebviewViewModel$handlePageFinished$1 extends SuspendLambda i
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public WebviewViewModel$handlePageFinished$1(String str, WebviewViewModel webviewViewModel, boolean z, Continuation<? super WebviewViewModel$handlePageFinished$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$url = str;
         this.this$0 = webviewViewModel;
         this.$isRegisterFlow = z;
@@ -85,7 +85,7 @@ public final class WebviewViewModel$handlePageFinished$1 extends SuspendLambda i
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new WebviewViewModel$handlePageFinished$1(this.$url, this.this$0, this.$isRegisterFlow, continuation);
+        return new WebviewViewModel$handlePageFinished$1(this.$url, this.this$0, this.$isRegisterFlow, (Continuation) continuation);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:64:0x0139, code lost:
@@ -198,6 +198,6 @@ public final class WebviewViewModel$handlePageFinished$1 extends SuspendLambda i
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((WebviewViewModel$handlePageFinished$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((WebviewViewModel$handlePageFinished$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

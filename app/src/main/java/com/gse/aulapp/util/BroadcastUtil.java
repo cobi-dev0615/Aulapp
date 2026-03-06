@@ -87,7 +87,7 @@ public abstract class BroadcastUtil {
                             if (action.equals("android.intent.action.AIRPLANE_MODE")) {
                                 BroadcastUtil.Companion companion = BroadcastUtil.INSTANCE;
                                 BroadcastUtil.airplaneModeEnabled = intent.getBooleanExtra("state", false);
-                                Function1<Boolean, Unit> function1 = callback;
+                                Function1<Boolean, Unit> function1 = (Function1<Boolean, Unit>) (Function1<?, ?>) callback;
                                 z = BroadcastUtil.airplaneModeEnabled;
                                 function1.invoke(Boolean.valueOf(z));
                             }

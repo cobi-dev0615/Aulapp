@@ -228,7 +228,7 @@ public final class TimerService extends Service {
             longRef2.element = durationMillis;
             _isExtraTime.setValue(Boolean.TRUE);
         }
-        this.timer = new CountDownTimer(this, longRef, j, configurationSession, retakeElapsedTime) { // from class: com.gse.aulapp.service.TimerService$startTimer$1
+        this.timer = new CountDownTimer(longRef2.element, 1000L) { // from class: com.gse.aulapp.service.TimerService$startTimer$1
             final /* synthetic */ long $alarmMillis;
             final /* synthetic */ Ref.LongRef $calculateNewDurationMillis;
             final /* synthetic */ ConfigurationSessionDto $configurationSession;
@@ -237,8 +237,7 @@ public final class TimerService extends Service {
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             {
-                super(Ref.LongRef.this.element, 1000L);
-                this.this$0 = this;
+                this.this$0 = TimerService.this;
                 this.$calculateNewDurationMillis = longRef;
                 this.$alarmMillis = j;
                 this.$configurationSession = configurationSession;
@@ -247,7 +246,7 @@ public final class TimerService extends Service {
 
             @Override // android.os.CountDownTimer
             public void onFinish() {
-                this.this$0.handleFinish(Ref.LongRef.this.element, this.$configurationSession, this.$retakeElapsedTime, false);
+                this.this$0.handleFinish(this.$calculateNewDurationMillis.element, this.$configurationSession, this.$retakeElapsedTime, false);
             }
 
             @Override // android.os.CountDownTimer

@@ -29,7 +29,7 @@ public abstract class ControllerFinishClassOrExamUtil {
 
     /* renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE;
-    private static String TAG;
+    static String TAG;
     private static AlertDialog dialog;
     private static SessionRepository sessionRepository;
 

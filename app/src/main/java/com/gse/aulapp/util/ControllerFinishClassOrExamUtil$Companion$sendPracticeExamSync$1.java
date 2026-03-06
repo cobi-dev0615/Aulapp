@@ -64,7 +64,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public AnonymousClass2(Context context, Continuation<? super AnonymousClass2> continuation) {
-                super(3, continuation);
+                super(3, (Continuation<Object>) continuation);
                 this.$context = context;
             }
 
@@ -86,7 +86,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
 
             /* renamed from: invoke, reason: avoid collision after fix types in other method */
             public final Object invoke2(FlowCollector<? super ApiResult<SessionPracticeExamResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
-                AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$context, continuation);
+                AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$context, (Continuation) continuation);
                 anonymousClass2.L$0 = th;
                 return anonymousClass2.invokeSuspend(Unit.INSTANCE);
             }
@@ -94,7 +94,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AnonymousClass1(Context context, String str, SessionRepository sessionRepository, NavController navController, NavDirections navDirections, Continuation<? super AnonymousClass1> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.$context = context;
             this.$sessionID = str;
             this.$repository = sessionRepository;
@@ -104,7 +104,8 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return new AnonymousClass1(this.$context, this.$sessionID, this.$repository, this.$findNavController, this.$navDirections, continuation);
+            AnonymousClass1 instance = new AnonymousClass1(this.$context, this.$sessionID, this.$repository, this.$findNavController, this.$navDirections, (Continuation) continuation);
+            return (Continuation<Unit>) (Object) instance;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:15:0x009b, code lost:
@@ -142,7 +143,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                     this.label = 1;
                 }
                 LogSendUtil.INSTANCE.setLog(this.$context, q.i("sendPracticeExamSync request ", this.$sessionID), null, false);
-                Flow m1541catch = FlowKt.m1541catch(this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID), new AnonymousClass2(this.$context, null));
+                Flow m1541catch = FlowKt.catch$(this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID), new AnonymousClass2(this.$context, null));
                 AnonymousClass3 anonymousClass3 = new AnonymousClass3(this.$repository, this.$sessionID, this.$context, this.$findNavController, this.$navDirections);
                 this.label = 2;
             } else {
@@ -156,14 +157,14 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                 ResultKt.throwOnFailure(obj);
             }
             LogSendUtil.INSTANCE.setLog(this.$context, q.i("sendPracticeExamSync request ", this.$sessionID), null, false);
-            Flow m1541catch2 = FlowKt.m1541catch(this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID), new AnonymousClass2(this.$context, null));
+            Flow m1541catch2 = FlowKt.catch$(this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID), new AnonymousClass2(this.$context, null));
             AnonymousClass3 anonymousClass32 = new AnonymousClass3(this.$repository, this.$sessionID, this.$context, this.$findNavController, this.$navDirections);
             this.label = 2;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+            return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
         @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
@@ -246,10 +247,9 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                                 anonymousClass32 = (AnonymousClass3) controllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1.L$0;
                                 try {
                                     ResultKt.throwOnFailure(obj);
-                                } catch (Exception e) {
-                                    e = e;
-                                    LogSendUtil.INSTANCE.setLog(anonymousClass32.$context, q.i("sendPracticeExamSync exception ", e.getMessage()), "sendPracticeExamSync", true);
-                                    Boxing.boxInt(Log.e(ControllerFinishClassOrExamUtil.TAG, "Exception updateIsPending " + e.getMessage()));
+                                } catch (Exception eInner) {
+                                    LogSendUtil.INSTANCE.setLog(anonymousClass32.$context, q.i("sendPracticeExamSync exception ", eInner.getMessage()), "sendPracticeExamSync", true);
+                                    Boxing.boxInt(Log.e(ControllerFinishClassOrExamUtil.TAG, "Exception updateIsPending " + eInner.getMessage()));
                                     return Unit.INSTANCE;
                                 }
                                 return Unit.INSTANCE;
@@ -261,10 +261,9 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                             try {
                                 ResultKt.throwOnFailure(obj);
                             } catch (Exception e2) {
-                                e = e2;
-                                LogSendUtil.INSTANCE.setLog(anonymousClass33.$context, q.i("sendPracticeExamSync exception ", e.getMessage()), "sendPracticeExamSync", true);
+                                LogSendUtil.INSTANCE.setLog(anonymousClass33.$context, q.i("sendPracticeExamSync exception ", e2.getMessage()), "sendPracticeExamSync", true);
                                 String unused = ControllerFinishClassOrExamUtil.TAG;
-                                e.getMessage();
+                                e2.getMessage();
                                 int i5 = i2;
                                 ApiResult<SessionPracticeExamResponse> apiResult4 = apiResult3;
                                 int i6 = i3;
@@ -322,14 +321,13 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                                 controllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1.I$1 = intValue2;
                                 controllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1.label = 2;
                             } catch (Exception e3) {
-                                e = e3;
                                 apiResult3 = apiResult2;
                                 anonymousClass33 = anonymousClass3;
                                 i2 = intValue;
                                 i3 = intValue2;
-                                LogSendUtil.INSTANCE.setLog(anonymousClass33.$context, q.i("sendPracticeExamSync exception ", e.getMessage()), "sendPracticeExamSync", true);
+                                LogSendUtil.INSTANCE.setLog(anonymousClass33.$context, q.i("sendPracticeExamSync exception ", e3.getMessage()), "sendPracticeExamSync", true);
                                 String unused2 = ControllerFinishClassOrExamUtil.TAG;
-                                e.getMessage();
+                                e3.getMessage();
                                 int i522 = i2;
                                 ApiResult<SessionPracticeExamResponse> apiResult422 = apiResult3;
                                 int i622 = i3;
@@ -366,10 +364,9 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                                 controllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1.L$1 = null;
                                 controllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1.label = 3;
                             } catch (Exception e4) {
-                                e = e4;
                                 anonymousClass32 = anonymousClass3;
-                                LogSendUtil.INSTANCE.setLog(anonymousClass32.$context, q.i("sendPracticeExamSync exception ", e.getMessage()), "sendPracticeExamSync", true);
-                                Boxing.boxInt(Log.e(ControllerFinishClassOrExamUtil.TAG, "Exception updateIsPending " + e.getMessage()));
+                                LogSendUtil.INSTANCE.setLog(anonymousClass32.$context, q.i("sendPracticeExamSync exception ", e4.getMessage()), "sendPracticeExamSync", true);
+                                Boxing.boxInt(Log.e(ControllerFinishClassOrExamUtil.TAG, "Exception updateIsPending " + e4.getMessage()));
                                 return Unit.INSTANCE;
                             }
                         }
@@ -405,7 +402,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1(Context context, String str, SessionRepository sessionRepository, NavController navController, NavDirections navDirections, Continuation<? super ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$sessionID = str;
         this.$repository = sessionRepository;
@@ -415,7 +412,8 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1(this.$context, this.$sessionID, this.$repository, this.$findNavController, this.$navDirections, continuation);
+        ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1 instance = new ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1(this.$context, this.$sessionID, this.$repository, this.$findNavController, this.$navDirections, (Continuation) continuation);
+        return (Continuation<Unit>) (Object) instance;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -441,6 +439,6 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -1,5 +1,7 @@
 package com.gse.aulapp.util;
 
+import com.google.android.gms.location.LocationCallback;
+import android.net.ConnectivityManager;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 
@@ -21,10 +23,10 @@ public final /* synthetic */ class a implements Function0 {
         Unit invokeSuspend$lambda$02;
         switch (this.a) {
             case 0:
-                invokeSuspend$lambda$0 = DefaultLocationClient$getLocationUpdates$1.invokeSuspend$lambda$0((DefaultLocationClient) this.b, (DefaultLocationClient$getLocationUpdates$1$callback$1) this.c);
+                invokeSuspend$lambda$0 = DefaultLocationClient$getLocationUpdates$1.invokeSuspend$lambda$0((DefaultLocationClient) this.b, (LocationCallback) this.c);
                 return invokeSuspend$lambda$0;
             default:
-                invokeSuspend$lambda$02 = NetworkConnectivityObserver$observe$1.invokeSuspend$lambda$0((NetworkConnectivityObserver) this.b, (NetworkConnectivityObserver$observe$1$callback$1) this.c);
+                invokeSuspend$lambda$02 = NetworkConnectivityObserver$observe$1.invokeSuspend$lambda$0((NetworkConnectivityObserver) this.b, (ConnectivityManager.NetworkCallback) this.c);
                 return invokeSuspend$lambda$02;
         }
     }
