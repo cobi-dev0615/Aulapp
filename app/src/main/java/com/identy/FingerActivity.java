@@ -2264,7 +2264,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         private static String $$e(byte b, byte b2, byte b3) {
             int i;
             int i2;
-            int 0 = (b3 * 2) + 97;
+            int i0 = (b3 * 2) + 97;
             int i3 = b * 2;
             byte[] bArr = $$c;
             int i4 = b2 + 4;
@@ -5821,7 +5821,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i3;
             int i4 = 1 - (s2 * 2);
             byte[] bArr = $$c;
-            int 0 = 107 - (b * 2);
+            int i0 = 107 - (b * 2);
             int i5 = 3 - (s * 2);
             byte[] bArr2 = new byte[i4];
             if (bArr == null) {
@@ -11451,7 +11451,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i11 = ~(i5 | 1);
             this.CaptureThumbActivity = (((i8 - (~(-(-(((i10 & i11) | (i10 ^ i11)) * 933))))) - 1) - (~(-(-((~((i2 & 1) | (i2 ^ 1))) * 933))))) - 1;
             FingerDetectionMode[] fingerDetectionModeArr = this.CapturePosition;
-            int 0 = (FingerDetectionMode[]) Arrays.copyOfRange(fingerDetectionModeArr, 1, fingerDetectionModeArr.length);
+            int i0 = (FingerDetectionMode[]) Arrays.copyOfRange(fingerDetectionModeArr, 1, fingerDetectionModeArr.length);
             try {
             } catch (Exception e) {
                 e.printStackTrace();
@@ -12024,9 +12024,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
         int i40 = toJson;
         setFoundMatchingTemplates = ((i40 ^ 45) + ((i40 & 45) << 1)) % 128;
-        try {
-            throw new UnsupportedOperationException("Method not decompiled");
-        }
+        /* try block with no catch/finally removed */
         com.identy.e1 e1Var10 = this.onErrorResponse;
         int i41 = e1Var10.getEncryptedTemplates;
         int values3 = com.identy.a.PngjException.values();
