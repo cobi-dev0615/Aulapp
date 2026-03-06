@@ -433,8 +433,6 @@ public final /* data */ class SessionDto extends GeneralSessionDto {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public SessionDto() {
-        this(BuildConfig.FLAVOR, BuildConfig.FLAVOR, BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0, BuildConfig.FLAVOR, BuildConfig.FLAVOR, BuildConfig.FLAVOR, null, null, BuildConfig.FLAVOR, BuildConfig.FLAVOR, BuildConfig.FLAVOR, BuildConfig.FLAVOR, null, null, r18, r19, BuildConfig.FLAVOR, r19, BuildConfig.FLAVOR, 0, 0, BuildConfig.FLAVOR);
-        List emptyList = CollectionsKt.emptyList();
-        Boolean bool = Boolean.FALSE;
+        this(BuildConfig.FLAVOR, BuildConfig.FLAVOR, BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0, BuildConfig.FLAVOR, BuildConfig.FLAVOR, BuildConfig.FLAVOR, null, null, BuildConfig.FLAVOR, BuildConfig.FLAVOR, BuildConfig.FLAVOR, BuildConfig.FLAVOR, null, null, CollectionsKt.emptyList(), Boolean.FALSE, BuildConfig.FLAVOR, Boolean.FALSE, BuildConfig.FLAVOR, 0, 0, BuildConfig.FLAVOR);
     }
 }

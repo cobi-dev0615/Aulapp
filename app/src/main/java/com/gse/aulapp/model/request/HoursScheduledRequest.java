@@ -36,7 +36,7 @@ public final class HoursScheduledRequest implements Parcelable {
 
     /* JADX WARN: Multi-variable type inference failed */
     public HoursScheduledRequest() {
-        this(null, 1, 0 == true ? 1 : 0);
+        this(null, 1, null);
     }
 
     @Override // android.os.Parcelable

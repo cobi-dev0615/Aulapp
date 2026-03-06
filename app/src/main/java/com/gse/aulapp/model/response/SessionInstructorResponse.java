@@ -119,7 +119,7 @@ public final /* data */ class SessionInstructorResponse extends GeneralResponseD
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public /* synthetic */ Result(Boolean bool, String str, Integer num, String str2, String str3, List list, PracticalConfigurationResponse practicalConfigurationResponse, ExamPracticalConfigurationResponse examPracticalConfigurationResponse, int i, DefaultConstructorMarker defaultConstructorMarker) {
-            this(bool, str, r5, r6, r7, r8, r9, r10);
+            this(bool, str, null, null, null, null, null, null);
             ExamPracticalConfigurationResponse examPracticalConfigurationResponse2;
             PracticalConfigurationResponse practicalConfigurationResponse2;
             List list2;
@@ -237,8 +237,6 @@ public final /* data */ class SessionInstructorResponse extends GeneralResponseD
             Result result = (Result) other;
             return Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.message, result.message) && Intrinsics.areEqual(this.status, result.status) && Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.date, result.date) && Intrinsics.areEqual(this.data, result.data) && Intrinsics.areEqual(this.practicalConfiguration, result.practicalConfiguration) && Intrinsics.areEqual(this.examPracticalConfiguration, result.examPracticalConfiguration);
         }
-
-        @Override // com.gse.aulapp.model.response.GeneralResponse
 
         public final List<SessionInstructorObjectResponse> getData() {
             return this.data;
@@ -373,7 +371,7 @@ public final /* data */ class SessionInstructorResponse extends GeneralResponseD
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public /* synthetic */ SessionInstructorResponse(Integer num, String str, String str2, Result result, String str3, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(num, str, str2, r6, r7);
+        this(num, str, str2, null, null);
         String str4;
         Result result2;
         num = (i & 1) != 0 ? null : num;

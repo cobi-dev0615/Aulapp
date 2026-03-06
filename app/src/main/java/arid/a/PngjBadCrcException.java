@@ -22,7 +22,12 @@ public final class PngjBadCrcException {
         static final /* synthetic */ int[] PngjBadCrcException;
 
         static {
-            int[] iArr = new int[arid.valueOf.valuesCustom().length];
+            int[] iArr;
+            try {
+                iArr = new int[arid.valueOf.valuesCustom().length];
+            } catch (Throwable th) {
+                throw new RuntimeException(th);
+            }
             PngjBadCrcException = iArr;
             try {
                 iArr[arid.valueOf.FILTER_NONE.ordinal()] = 1;

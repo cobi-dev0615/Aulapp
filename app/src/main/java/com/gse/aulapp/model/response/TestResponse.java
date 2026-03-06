@@ -48,7 +48,7 @@ public final /* data */ class TestResponse implements Parcelable {
 
     /* JADX WARN: Multi-variable type inference failed */
     public TestResponse() {
-        this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        this(null, null, 3, null);
     }
 
     /* JADX WARN: Multi-variable type inference failed */

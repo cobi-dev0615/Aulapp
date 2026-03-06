@@ -5,8 +5,8 @@ import com.gse.aulapp.GeneralApp;
 import com.karumi.dexter.BuildConfig;
 import java.util.Locale;
 import kotlin.Metadata;
-import kotlin.enums.EnumEntries;
-import kotlin.enums.EnumEntriesKt;
+// import kotlin.enums.EnumEntries;
+// import kotlin.enums.EnumEntriesKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -17,7 +17,7 @@ import kotlin.text.StringsKt;
 @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\n\b\u0086\u0081\u0002\u0018\u0000 \t2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\tB\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0019\u0010\u0007\u001a\u00020\u00062\b\b\u0002\u0010\u0005\u001a\u00020\u0004H&¢\u0006\u0004\b\u0007\u0010\bj\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000f¨\u0006\u0010"}, d2 = {"Lcom/gse/aulapp/model/enumerate/EnumStatusAppointment;", BuildConfig.FLAVOR, "<init>", "(Ljava/lang/String;I)V", "Landroid/content/Context;", "context", BuildConfig.FLAVOR, "name", "(Landroid/content/Context;)Ljava/lang/String;", "Companion", "DEFAULT", "TO_BE_DEVELOPED", "NOT_SEEN", "SEEN", "UNDER_DEVELOPMENT", "CANCELED", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: classes.dex */
 public abstract class EnumStatusAppointment {
-    private static final /* synthetic */ EnumEntries $ENTRIES;
+    // private static final /* synthetic */ EnumEntries $ENTRIES;
     private static final /* synthetic */ EnumStatusAppointment[] $VALUES;
 
     /* renamed from: Companion, reason: from kotlin metadata */
@@ -125,7 +125,6 @@ public abstract class EnumStatusAppointment {
     static {
         EnumStatusAppointment[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
         INSTANCE = new Companion(null);
     }
 
@@ -133,8 +132,8 @@ public abstract class EnumStatusAppointment {
         this(str, i);
     }
 
-    public static EnumEntries<EnumStatusAppointment> getEntries() {
-        return $ENTRIES;
+    public static EnumStatusAppointment[] getEntries() {
+        return values();
     }
 
     public static /* synthetic */ String name$default(EnumStatusAppointment enumStatusAppointment, Context context, int i, Object obj) {
@@ -148,7 +147,10 @@ public abstract class EnumStatusAppointment {
     }
 
     public static EnumStatusAppointment valueOfString(String str) {
-        return (EnumStatusAppointment) Enum.valueOf(EnumStatusAppointment.class, str);
+        for (EnumStatusAppointment e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumStatusAppointment[] values() {
@@ -157,6 +159,19 @@ public abstract class EnumStatusAppointment {
 
     public abstract String name(Context context);
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumStatusAppointment(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public final String name() {
+        return this._name;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
     }
 }

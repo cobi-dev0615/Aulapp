@@ -73,7 +73,7 @@ public class onErrorResponse implements Closeable, AutoCloseable {
             try {
                 Object[] objArr2 = {188688844};
                 Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
-                PngjBadCrcException$52c725b = com.identy.getOveralTimetaken.PngjException.PngjBadCrcException$52c725b(intValue, ((Constructor) (PngjBadSignature2 == null ? com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0)), TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 25, 697 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 1457201313, false, null, new Class[]{Integer.TYPE}) : PngjBadSignature2)).newInstance(objArr2));
+                PngjBadCrcException$52c725b = ((com.identy.getOveralTimetaken.PngjException) null).PngjBadCrcException$52c725b(intValue, ((Constructor) (PngjBadSignature2 == null ? com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0)), TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 25, 697 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 1457201313, false, null, new Class[]{Integer.TYPE}) : PngjBadSignature2)).newInstance(objArr2));
                 Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                 if (PngjBadSignature3 == null) {
                     char indexOf = (char) (14830 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0));

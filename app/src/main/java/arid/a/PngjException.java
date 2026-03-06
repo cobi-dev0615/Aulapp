@@ -57,7 +57,12 @@ public abstract class PngjException {
         static final /* synthetic */ int[] PngjBadSignature;
 
         static {
-            int[] iArr = new int[arid.valueOf.valuesCustom().length];
+            int[] iArr;
+            try {
+                iArr = new int[arid.valueOf.valuesCustom().length];
+            } catch (Throwable th) {
+                throw new RuntimeException(th);
+            }
             PngjBadSignature = iArr;
             try {
                 iArr[arid.valueOf.FILTER_NONE.ordinal()] = 1;

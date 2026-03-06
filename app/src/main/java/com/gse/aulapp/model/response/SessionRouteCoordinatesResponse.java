@@ -39,7 +39,7 @@ public final /* data */ class SessionRouteCoordinatesResponse implements Parcela
 
     /* JADX WARN: Multi-variable type inference failed */
     public SessionRouteCoordinatesResponse() {
-        this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        this(null, null, 3, null);
     }
 
     public static /* synthetic */ SessionRouteCoordinatesResponse copy$default(SessionRouteCoordinatesResponse sessionRouteCoordinatesResponse, Double d, Double d2, int i, Object obj) {

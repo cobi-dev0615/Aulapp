@@ -234,8 +234,6 @@ public final /* data */ class HoursScheduledResponse extends GeneralResponseDecr
             return Intrinsics.areEqual(this.code, result.code) && Intrinsics.areEqual(this.success, result.success) && Intrinsics.areEqual(this.hoursDayByCEA, result.hoursDayByCEA) && Intrinsics.areEqual(this.hoursMonth, result.hoursMonth) && Intrinsics.areEqual(this.dayInformation, result.dayInformation) && Intrinsics.areEqual(this.monthInformation, result.monthInformation) && Intrinsics.areEqual(this.instructorDay, result.instructorDay) && Intrinsics.areEqual(this.instructorMonth, result.instructorMonth);
         }
 
-        @Override // com.gse.aulapp.model.response.GeneralResponse
-
         public final List<HoursScheduledMonthInformationResponse> getDayInformation() {
             return this.dayInformation;
         }
@@ -364,7 +362,7 @@ public final /* data */ class HoursScheduledResponse extends GeneralResponseDecr
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public /* synthetic */ HoursScheduledResponse(Integer num, String str, String str2, Result result, String str3, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(num, str, str2, r6, r7);
+        this(num, str, str2, null, null);
         String str4;
         Result result2;
         num = (i & 1) != 0 ? null : num;

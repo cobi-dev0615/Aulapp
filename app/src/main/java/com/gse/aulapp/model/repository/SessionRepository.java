@@ -71,6 +71,7 @@ import retrofit2.Response;
 @Metadata(d1 = {"\u0000Ú\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u001a\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000e\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007J+\u0010\r\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\f0\u000b0\n2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020\b¢\u0006\u0004\b\r\u0010\u000eJ+\u0010\u0012\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\u00110\u000b0\n2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u000f¢\u0006\u0004\b\u0012\u0010\u0013J+\u0010\u0016\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\u00150\u000b0\n2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0014\u001a\u00020\b¢\u0006\u0004\b\u0016\u0010\u000eJ+\u0010\u0019\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\u00180\u000b0\n2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020\u0017¢\u0006\u0004\b\u0019\u0010\u001aJ\u0018\u0010\u001e\u001a\u00020\u001d2\u0006\u0010\u001c\u001a\u00020\u001bH\u0086@¢\u0006\u0004\b\u001e\u0010\u001fJ\u0018\u0010\"\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020 H\u0086@¢\u0006\u0004\b\"\u0010#J\u0018\u0010&\u001a\u00020\u001d2\u0006\u0010%\u001a\u00020$H\u0086@¢\u0006\u0004\b&\u0010'J\u0018\u0010*\u001a\u00020\u001d2\u0006\u0010)\u001a\u00020(H\u0086@¢\u0006\u0004\b*\u0010+J \u0010/\u001a\b\u0012\u0004\u0012\u00020.0-2\b\u0010,\u001a\u0004\u0018\u00010\u001dH\u0086@¢\u0006\u0004\b/\u00100J$\u00103\u001a\b\u0012\u0004\u0012\u00020.0-2\f\u00102\u001a\b\u0012\u0004\u0012\u0002010-H\u0086@¢\u0006\u0004\b3\u00104J\u001e\u00106\u001a\b\u0012\u0004\u0012\u00020.0-2\u0006\u00105\u001a\u000201H\u0086@¢\u0006\u0004\b6\u00107J0\u0010:\u001a\u0010\u0012\u0004\u0012\u000209\u0012\u0006\u0012\u0004\u0018\u000101082\b\b\u0002\u0010\u0005\u001a\u00020\u00042\u0006\u00105\u001a\u000201H\u0086@¢\u0006\u0004\b:\u0010;J\u0018\u0010=\u001a\u00020<2\u0006\u00105\u001a\u000201H\u0086@¢\u0006\u0004\b=\u00107J\u001e\u0010@\u001a\b\u0012\u0004\u0012\u00020?0-2\u0006\u0010>\u001a\u000201H\u0086@¢\u0006\u0004\b@\u00107J3\u0010D\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010C0\u000b0\n2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u00105\u001a\u0002012\u0006\u0010B\u001a\u00020A¢\u0006\u0004\bD\u0010EJ-\u0010G\u001a\u0012\u0012\u000e\u0012\f\u0012\u0006\u0012\u0004\u0018\u00010F\u0018\u00010\u000b0\n2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u00105\u001a\u000201¢\u0006\u0004\bG\u0010HJ\u0010\u0010J\u001a\u00020IH\u0086@¢\u0006\u0004\bJ\u0010KJ\u0016\u0010L\u001a\b\u0012\u0004\u0012\u0002010-H\u0086@¢\u0006\u0004\bL\u0010KJ\u0016\u0010M\u001a\b\u0012\u0004\u0012\u0002010-H\u0086@¢\u0006\u0004\bM\u0010KJ\u001e\u0010O\u001a\u00020I2\f\u0010N\u001a\b\u0012\u0004\u0012\u0002010-H\u0086@¢\u0006\u0004\bO\u00104J\u0018\u0010Q\u001a\u00020I2\u0006\u0010P\u001a\u000201H\u0086@¢\u0006\u0004\bQ\u00107J\u0010\u0010R\u001a\u000209H\u0086@¢\u0006\u0004\bR\u0010KJ&\u0010S\u001a\u0010\u0012\u0004\u0012\u000209\u0012\u0006\u0012\u0004\u0018\u000101082\u0006\u0010\u0005\u001a\u00020\u0004H\u0086@¢\u0006\u0004\bS\u0010TJ \u0010V\u001a\u00020\u001d2\u0006\u0010U\u001a\u0002012\u0006\u00105\u001a\u000201H\u0086@¢\u0006\u0004\bV\u0010WJ \u0010X\u001a\u00020I2\u0006\u0010P\u001a\u00020\u001d2\u0006\u00105\u001a\u000201H\u0086@¢\u0006\u0004\bX\u0010YJ\"\u0010Z\u001a\u0004\u0018\u00010\u001d2\u0006\u0010P\u001a\u00020\u001d2\u0006\u00105\u001a\u000201H\u0086@¢\u0006\u0004\bZ\u0010YJ\u001a\u0010[\u001a\u0004\u0018\u00010\u001d2\u0006\u00105\u001a\u000201H\u0086@¢\u0006\u0004\b[\u00107J\u0010\u0010\\\u001a\u00020\u001dH\u0086@¢\u0006\u0004\b\\\u0010KJ\u0018\u0010]\u001a\u00020\u001d2\u0006\u00105\u001a\u000201H\u0086@¢\u0006\u0004\b]\u00107J\u0018\u0010^\u001a\u00020\u001d2\u0006\u00105\u001a\u000201H\u0086@¢\u0006\u0004\b^\u00107J \u0010`\u001a\u00020I2\u0006\u0010_\u001a\u0002012\u0006\u0010>\u001a\u000201H\u0086@¢\u0006\u0004\b`\u0010WJ.\u0010b\u001a\u0010\u0012\u0004\u0012\u000209\u0012\u0006\u0012\u0004\u0018\u000101082\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010a\u001a\u00020<H\u0082@¢\u0006\u0004\bb\u0010cJ.\u0010e\u001a\u0010\u0012\u0004\u0012\u000209\u0012\u0006\u0012\u0004\u0018\u000101082\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010a\u001a\u00020dH\u0082@¢\u0006\u0004\be\u0010fJ-\u0010g\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010F0\u000b0\n2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020<H\u0002¢\u0006\u0004\bg\u0010hJ-\u0010k\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010j0\u000b0\n2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020iH\u0002¢\u0006\u0004\bk\u0010lJ(\u0010n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010j0\u000b2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010m\u001a\u00020iH\u0082@¢\u0006\u0004\bn\u0010oJ%\u0010s\u001a\u00020<2\u0006\u0010q\u001a\u00020p2\f\u0010r\u001a\b\u0012\u0004\u0012\u00020?0-H\u0002¢\u0006\u0004\bs\u0010tJ\u0017\u0010a\u001a\u00020d2\u0006\u0010q\u001a\u00020pH\u0002¢\u0006\u0004\ba\u0010uJ\u0018\u0010v\u001a\u00020p2\u0006\u00105\u001a\u000201H\u0082@¢\u0006\u0004\bv\u00107J\u0016\u0010w\u001a\b\u0012\u0004\u0012\u00020p0-H\u0082@¢\u0006\u0004\bw\u0010KR\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0003\u0010xR\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010yR\u0017\u0010z\u001a\u0002018\u0006¢\u0006\f\n\u0004\bz\u0010{\u001a\u0004\b|\u0010}¨\u0006~"}, d2 = {"Lcom/gse/aulapp/model/repository/SessionRepository;", BuildConfig.FLAVOR, "Lcom/gse/aulapp/model/dao/SessionDao;", "sessionDao", "Landroid/content/Context;", "context", "<init>", "(Lcom/gse/aulapp/model/dao/SessionDao;Landroid/content/Context;)V", "Lcom/gse/aulapp/model/request/SessionInstructorRequest;", "request", "Lkotlinx/coroutines/flow/Flow;", "Lcom/gse/aulapp/model/data/statusControl/ApiResult;", "Lcom/gse/aulapp/model/response/SessionInstructorResponse;", "getSessionApi", "(Landroid/content/Context;Lcom/gse/aulapp/model/request/SessionInstructorRequest;)Lkotlinx/coroutines/flow/Flow;", "Lcom/gse/aulapp/model/request/SessionExamRequest;", "sessionExamRequest", "Lcom/gse/aulapp/model/response/SessionExamResponse;", "getSessionDataApi", "(Landroid/content/Context;Lcom/gse/aulapp/model/request/SessionExamRequest;)Lkotlinx/coroutines/flow/Flow;", "sessionInstructorRequest", "Lcom/gse/aulapp/model/response/SessionRoutesResponse;", "getSessionsRoute", "Lcom/gse/aulapp/model/request/HoursScheduledRequest;", "Lcom/gse/aulapp/model/response/HoursScheduledResponse;", "getHoursScheduled", "(Landroid/content/Context;Lcom/gse/aulapp/model/request/HoursScheduledRequest;)Lkotlinx/coroutines/flow/Flow;", "Lcom/gse/aulapp/model/data/entity/SessionEntity;", "session", BuildConfig.FLAVOR, "saveSession", "(Lcom/gse/aulapp/model/data/entity/SessionEntity;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/gse/aulapp/model/data/entity/VehicleEntity;", "vehicle", "saveVehicle", "(Lcom/gse/aulapp/model/data/entity/VehicleEntity;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/gse/aulapp/model/data/entity/LessonEntity;", "lesson", "saveLesson", "(Lcom/gse/aulapp/model/data/entity/LessonEntity;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/gse/aulapp/model/data/entity/ClassRoomEntity;", "classRoomEntity", "saveClassRoom", "(Lcom/gse/aulapp/model/data/entity/ClassRoomEntity;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "dateFilter", BuildConfig.FLAVOR, "Lcom/gse/aulapp/model/data/entity/entityFull/SessionFull;", "getAllSession", "(Ljava/lang/Long;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", BuildConfig.FLAVOR, "listType", "getSessionByType", "(Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "sessionID", "getSessionById", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lkotlin/Pair;", BuildConfig.FLAVOR, "syncSessionProcess", "(Landroid/content/Context;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/gse/aulapp/model/request/SessionPracticeExamSyncRequest;", "examRequest", "sessionId", "Lcom/gse/aulapp/model/response/QuestionPracticeExam;", "getAllQuestionSync", "Lcom/gse/aulapp/model/enumerate/EnumStatusAppointment;", "sessionStatus", "Lcom/gse/aulapp/model/response/HistoricRecordPermissionsChangeResponse;", "sendSessionStatusAppointment", "(Landroid/content/Context;Ljava/lang/String;Lcom/gse/aulapp/model/enumerate/EnumStatusAppointment;)Lkotlinx/coroutines/flow/Flow;", "Lcom/gse/aulapp/model/response/SessionPracticeExamResponse;", "sendSessionPracticeAndSyncPracticalRequest2", "(Landroid/content/Context;Ljava/lang/String;)Lkotlinx/coroutines/flow/Flow;", BuildConfig.FLAVOR, "deleteLogOutSession", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getSessionIdPendingSync", "getAllSessionID", "listSessionID", "deleteSessionById", "date", "deleteSessionsByDate", "initSessionSyncPending", "initAllSessionSyncPending", "(Landroid/content/Context;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "isPending", "updateIsPending", "(Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "updateDateEndClass", "(JLjava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "updateDateEntryClass", "updateIsFinished", "getSessionsIsPending", "getStartEntryClass", "getEndEntryClass", "dateEntryExam", "saveDateExamEntry", "practiceRequest", "sendSessionPracticeAndSyncPracticalExamRequest", "(Landroid/content/Context;Lcom/gse/aulapp/model/request/SessionPracticeExamSyncRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/gse/aulapp/model/request/SessionPracticeSyncRequest;", "sendSessionPracticeAndSyncPracticalRequest", "(Landroid/content/Context;Lcom/gse/aulapp/model/request/SessionPracticeSyncRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "sendSessionPracticeRequest", "(Landroid/content/Context;Lcom/gse/aulapp/model/request/SessionPracticeExamSyncRequest;)Lkotlinx/coroutines/flow/Flow;", "Lcom/gse/aulapp/model/request/SessionSyncPracticalRequest;", "Lcom/gse/aulapp/model/response/SessionSyncPracticalResponse;", "sendSessionSyncPracticalRequest2", "(Landroid/content/Context;Lcom/gse/aulapp/model/request/SessionSyncPracticalRequest;)Lkotlinx/coroutines/flow/Flow;", "syncRequest", "sendSessionSyncPracticalRequest", "(Landroid/content/Context;Lcom/gse/aulapp/model/request/SessionSyncPracticalRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/gse/aulapp/model/data/entity/entityFull/SessionFullSync;", "data", "questionFullSync", "practiceExamRequest", "(Lcom/gse/aulapp/model/data/entity/entityFull/SessionFullSync;Ljava/util/List;)Lcom/gse/aulapp/model/request/SessionPracticeExamSyncRequest;", "(Lcom/gse/aulapp/model/data/entity/entityFull/SessionFullSync;)Lcom/gse/aulapp/model/request/SessionPracticeSyncRequest;", "getSessionSyncById", "getAllSessionPendingSync", "Lcom/gse/aulapp/model/dao/SessionDao;", "Landroid/content/Context;", "tag", "Ljava/lang/String;", "getTag", "()Ljava/lang/String;", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nSessionRepository.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SessionRepository.kt\ncom/gse/aulapp/model/repository/SessionRepository\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1017:1\n1863#2,2:1018\n1863#2,2:1020\n*S KotlinDebug\n*F\n+ 1 SessionRepository.kt\ncom/gse/aulapp/model/repository/SessionRepository\n*L\n907#1:1018,2\n933#1:1020,2\n*E\n"})
 /* loaded from: classes.dex */
+@SuppressWarnings({"unchecked", "rawtypes"})
 public final class SessionRepository {
     private final Context context;
     private final SessionDao sessionDao;
@@ -304,7 +305,7 @@ public final class SessionRepository {
         } catch (Exception unused) {
             return new Pair(Boxing.boxBoolean(false), null);
         }
-        sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1 = new SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1(this, continuation);
+        sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1 = new SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1(this, (Continuation) continuation);
         obj = sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1.result;
         coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$1.label;
@@ -446,7 +447,7 @@ public final class SessionRepository {
         } catch (Exception unused) {
             return new Pair(Boxing.boxBoolean(false), null);
         }
-        sessionRepository$sendSessionPracticeAndSyncPracticalRequest$1 = new SessionRepository$sendSessionPracticeAndSyncPracticalRequest$1(this, continuation);
+        sessionRepository$sendSessionPracticeAndSyncPracticalRequest$1 = new SessionRepository$sendSessionPracticeAndSyncPracticalRequest$1(this, (Continuation) continuation);
         obj = sessionRepository$sendSessionPracticeAndSyncPracticalRequest$1.result;
         coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$sendSessionPracticeAndSyncPracticalRequest$1.label;
@@ -454,7 +455,7 @@ public final class SessionRepository {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Flow<ApiResult<SessionPracticeExamResponse>> sendSessionPracticeRequest(Context context, SessionPracticeExamSyncRequest request) {
-        return FlowKt.flowOn(FlowKt.flow(new SessionRepository$sendSessionPracticeRequest$1(context, request, null)), Dispatchers.getIO());
+        return FlowKt.flowOn((Flow) FlowKt.flow(new SessionRepository$sendSessionPracticeRequest$1(context, request, null)), Dispatchers.getIO());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -469,6 +470,7 @@ public final class SessionRepository {
         SessionRepository$sendSessionSyncPracticalRequest$1 sessionRepository$sendSessionSyncPracticalRequest$1;
         int i;
         Response response;
+        Object obj = null;
         try {
             if (continuation instanceof SessionRepository$sendSessionSyncPracticalRequest$1) {
                 sessionRepository$sendSessionSyncPracticalRequest$1 = (SessionRepository$sendSessionSyncPracticalRequest$1) continuation;
@@ -521,7 +523,7 @@ public final class SessionRepository {
         } catch (Exception unused) {
             return new ApiResult.Failure(500, new Exception("Unknown error"));
         }
-        sessionRepository$sendSessionSyncPracticalRequest$1 = new SessionRepository$sendSessionSyncPracticalRequest$1(this, continuation);
+        sessionRepository$sendSessionSyncPracticalRequest$1 = new SessionRepository$sendSessionSyncPracticalRequest$1(this, (Continuation) continuation);
         Object obj2 = sessionRepository$sendSessionSyncPracticalRequest$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$sendSessionSyncPracticalRequest$1.label;
@@ -529,7 +531,7 @@ public final class SessionRepository {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Flow<ApiResult<SessionSyncPracticalResponse>> sendSessionSyncPracticalRequest2(Context context, SessionSyncPracticalRequest request) {
-        return FlowKt.flowOn(FlowKt.flow(new SessionRepository$sendSessionSyncPracticalRequest2$1(context, request, this, null)), Dispatchers.getIO());
+        return FlowKt.flowOn((Flow) FlowKt.flow(new SessionRepository$sendSessionSyncPracticalRequest2$1(context, request, this, null)), Dispatchers.getIO());
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0259, code lost:
@@ -793,7 +795,7 @@ public final class SessionRepository {
                 }
             }
         }
-        sessionRepository$deleteLogOutSession$1 = new SessionRepository$deleteLogOutSession$1(this, continuation);
+        sessionRepository$deleteLogOutSession$1 = new SessionRepository$deleteLogOutSession$1(this, (Continuation) continuation);
         Object obj2 = sessionRepository$deleteLogOutSession$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         switch (sessionRepository$deleteLogOutSession$1.label) {
@@ -801,12 +803,12 @@ public final class SessionRepository {
     }
 
     public final Object deleteSessionById(List<String> list, Continuation<? super Unit> continuation) {
-        Object deleteSessionById = this.sessionDao.deleteSessionById(list, continuation);
+        Object deleteSessionById = this.sessionDao.deleteSessionById(list, (Continuation) continuation);
         return deleteSessionById == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? deleteSessionById : Unit.INSTANCE;
     }
 
     public final Object deleteSessionsByDate(String str, Continuation<? super Unit> continuation) {
-        Object deleteSessionsByDate = this.sessionDao.deleteSessionsByDate(str, continuation);
+        Object deleteSessionsByDate = this.sessionDao.deleteSessionsByDate(str, (Continuation) continuation);
         return deleteSessionsByDate == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? deleteSessionsByDate : Unit.INSTANCE;
     }
 
@@ -869,7 +871,7 @@ public final class SessionRepository {
                 return coroutine_suspended;
             }
         }
-        sessionRepository$examRequest$1 = new SessionRepository$examRequest$1(this, continuation);
+        sessionRepository$examRequest$1 = new SessionRepository$examRequest$1(this, (Continuation) continuation);
         Object obj2 = sessionRepository$examRequest$1.result;
         coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$examRequest$1.label;
@@ -911,13 +913,13 @@ public final class SessionRepository {
     public final Flow<ApiResult<HoursScheduledResponse>> getHoursScheduled(Context context, HoursScheduledRequest request) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(request, "request");
-        return FlowKt.flowOn(FlowKt.flow(new SessionRepository$getHoursScheduled$1(context, request, null)), Dispatchers.getIO());
+        return FlowKt.flowOn((Flow) FlowKt.flow(new SessionRepository$getHoursScheduled$1(context, request, null)), Dispatchers.getIO());
     }
 
     public final Flow<ApiResult<SessionInstructorResponse>> getSessionApi(Context context, SessionInstructorRequest request) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(request, "request");
-        return FlowKt.flowOn(FlowKt.flow(new SessionRepository$getSessionApi$1(context, request, null)), Dispatchers.getIO());
+        return FlowKt.flowOn((Flow) FlowKt.flow(new SessionRepository$getSessionApi$1(context, request, null)), Dispatchers.getIO());
     }
 
     public final Object getSessionById(String str, Continuation<? super List<SessionFull>> continuation) {
@@ -938,7 +940,7 @@ public final class SessionRepository {
     public final Flow<ApiResult<SessionExamResponse>> getSessionDataApi(Context context, SessionExamRequest sessionExamRequest) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sessionExamRequest, "sessionExamRequest");
-        return FlowKt.flowOn(FlowKt.flow(new SessionRepository$getSessionDataApi$1(context, sessionExamRequest, null)), Dispatchers.getIO());
+        return FlowKt.flowOn((Flow) FlowKt.flow(new SessionRepository$getSessionDataApi$1(context, sessionExamRequest, null)), Dispatchers.getIO());
     }
 
     public final Object getSessionIdPendingSync(Continuation<? super List<String>> continuation) {
@@ -952,7 +954,7 @@ public final class SessionRepository {
     public final Flow<ApiResult<SessionRoutesResponse>> getSessionsRoute(Context context, SessionInstructorRequest sessionInstructorRequest) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sessionInstructorRequest, "sessionInstructorRequest");
-        return FlowKt.flowOn(FlowKt.flow(new SessionRepository$getSessionsRoute$1(context, sessionInstructorRequest, null)), Dispatchers.getIO());
+        return FlowKt.flowOn((Flow) FlowKt.flow(new SessionRepository$getSessionsRoute$1(context, sessionInstructorRequest, null)), Dispatchers.getIO());
     }
 
     public final Object getStartEntryClass(String str, Continuation<? super Long> continuation) {
@@ -1141,7 +1143,7 @@ public final class SessionRepository {
                 }
             }
         }
-        sessionRepository$initAllSessionSyncPending$1 = new SessionRepository$initAllSessionSyncPending$1(this, continuation);
+        sessionRepository$initAllSessionSyncPending$1 = new SessionRepository$initAllSessionSyncPending$1(this, (Continuation) continuation);
         Object obj2 = sessionRepository$initAllSessionSyncPending$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$initAllSessionSyncPending$1.label;
@@ -1299,7 +1301,7 @@ public final class SessionRepository {
                 }
             }
         }
-        sessionRepository$initSessionSyncPending$1 = new SessionRepository$initSessionSyncPending$1(this, continuation);
+        sessionRepository$initSessionSyncPending$1 = new SessionRepository$initSessionSyncPending$1(this, (Continuation) continuation);
         Object obj2 = sessionRepository$initSessionSyncPending$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$initSessionSyncPending$1.label;
@@ -1315,7 +1317,7 @@ public final class SessionRepository {
     }
 
     public final Object saveDateExamEntry(String str, String str2, Continuation<? super Unit> continuation) {
-        Object updateDateStartEntry = this.sessionDao.updateDateStartEntry(new SimpleSQLiteQuery("UPDATE session  SET dateStartEntry = ? WHERE id = ?", new Object[]{str, str2}), continuation);
+        Object updateDateStartEntry = this.sessionDao.updateDateStartEntry(new SimpleSQLiteQuery("UPDATE session  SET dateStartEntry = ? WHERE id = ?", new Object[]{str, str2}), (Continuation) continuation);
         return updateDateStartEntry == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? updateDateStartEntry : Unit.INSTANCE;
     }
 
@@ -1350,14 +1352,14 @@ public final class SessionRepository {
     public final Flow<ApiResult<SessionPracticeExamResponse>> sendSessionPracticeAndSyncPracticalRequest2(Context context, String sessionID) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-        return FlowKt.flowOn(FlowKt.flow(new SessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1(this, sessionID, context, null)), Dispatchers.getIO());
+        return FlowKt.flowOn((Flow) FlowKt.flow(new SessionRepository$sendSessionPracticeAndSyncPracticalRequest2$1(this, sessionID, context, null)), Dispatchers.getIO());
     }
 
     public final Flow<ApiResult<HistoricRecordPermissionsChangeResponse>> sendSessionStatusAppointment(Context context, String sessionID, EnumStatusAppointment sessionStatus) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         Intrinsics.checkNotNullParameter(sessionStatus, "sessionStatus");
-        return FlowKt.flow(new SessionRepository$sendSessionStatusAppointment$1(sessionID, sessionStatus, context, null));
+        return (Flow) FlowKt.flow(new SessionRepository$sendSessionStatusAppointment$1(sessionID, sessionStatus, context, null));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:22:0x0091  */
@@ -1471,7 +1473,7 @@ public final class SessionRepository {
                 return coroutine_suspended;
             }
         }
-        sessionRepository$syncSessionProcess$1 = new SessionRepository$syncSessionProcess$1(this, continuation);
+        sessionRepository$syncSessionProcess$1 = new SessionRepository$syncSessionProcess$1(this, (Continuation) continuation);
         Object obj2 = sessionRepository$syncSessionProcess$1.result;
         coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$syncSessionProcess$1.label;
@@ -1489,7 +1491,7 @@ public final class SessionRepository {
     }
 
     public final Object updateDateEndClass(long j, String str, Continuation<? super Unit> continuation) {
-        Object updateSessionBySessionId = this.sessionDao.updateSessionBySessionId(new SimpleSQLiteQuery("UPDATE session SET dateEndEntryClass = ? WHERE id = ?", new Object[]{Boxing.boxLong(j), str}), continuation);
+        Object updateSessionBySessionId = this.sessionDao.updateSessionBySessionId(new SimpleSQLiteQuery("UPDATE session SET dateEndEntryClass = ? WHERE id = ?", new Object[]{Boxing.boxLong(j), str}), (Continuation) continuation);
         return updateSessionBySessionId == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? updateSessionBySessionId : Unit.INSTANCE;
     }
 
@@ -1530,7 +1532,7 @@ public final class SessionRepository {
                 return Boxing.boxLong(l == null ? l.longValue() : 0L);
             }
         }
-        sessionRepository$updateDateEntryClass$1 = new SessionRepository$updateDateEntryClass$1(this, continuation);
+        sessionRepository$updateDateEntryClass$1 = new SessionRepository$updateDateEntryClass$1(this, (Continuation) continuation);
         Object obj2 = sessionRepository$updateDateEntryClass$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$updateDateEntryClass$1.label;
@@ -1581,7 +1583,7 @@ public final class SessionRepository {
                 return Boxing.boxLong(l == null ? l.longValue() : 0L);
             }
         }
-        sessionRepository$updateIsPending$1 = new SessionRepository$updateIsPending$1(this, continuation);
+        sessionRepository$updateIsPending$1 = new SessionRepository$updateIsPending$1(this, (Continuation) continuation);
         Object obj2 = sessionRepository$updateIsPending$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$updateIsPending$1.label;

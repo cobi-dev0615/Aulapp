@@ -32,8 +32,12 @@ public enum valueOf {
     static {
         init$0();
         Attempt = new HashMap();
-        for (valueOf valueof : valuesCustom()) {
-            Attempt.put(Integer.valueOf(valueof.Action), valueof);
+        try {
+            for (valueOf valueof : valuesCustom()) {
+                Attempt.put(Integer.valueOf(valueof.Action), valueof);
+            }
+        } catch (Throwable th) {
+            throw new RuntimeException(th);
         }
     }
 
@@ -98,7 +102,7 @@ public enum valueOf {
         $$b = 223;
     }
 
-    public static valueOf valueOfString(String str) {
+    public static valueOf valueOfString(String str) throws Throwable {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
@@ -147,7 +151,7 @@ public enum valueOf {
     }
 
     /* renamed from: values, reason: to resolve conflict with enum method */
-    public static valueOf[] valuesCustom() {
+    public static valueOf[] valuesCustom() throws Throwable {
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;

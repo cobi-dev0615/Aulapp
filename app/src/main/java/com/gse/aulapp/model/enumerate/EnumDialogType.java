@@ -2,15 +2,15 @@ package com.gse.aulapp.model.enumerate;
 
 import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
-import kotlin.enums.EnumEntries;
-import kotlin.enums.EnumEntriesKt;
+// import kotlin.enums.EnumEntries;
+// import kotlin.enums.EnumEntriesKt;
 
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\bW\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016j\u0002\b\u0017j\u0002\b\u0018j\u0002\b\u0019j\u0002\b\u001aj\u0002\b\u001bj\u0002\b\u001cj\u0002\b\u001dj\u0002\b\u001ej\u0002\b\u001fj\u0002\b j\u0002\b!j\u0002\b\"j\u0002\b#j\u0002\b$j\u0002\b%j\u0002\b&j\u0002\b'j\u0002\b(j\u0002\b)j\u0002\b*j\u0002\b+j\u0002\b,j\u0002\b-j\u0002\b.j\u0002\b/j\u0002\b0j\u0002\b1j\u0002\b2j\u0002\b3j\u0002\b4j\u0002\b5j\u0002\b6j\u0002\b7j\u0002\b8j\u0002\b9j\u0002\b:j\u0002\b;j\u0002\b<j\u0002\b=j\u0002\b>j\u0002\b?j\u0002\b@j\u0002\bAj\u0002\bBj\u0002\bCj\u0002\bDj\u0002\bEj\u0002\bFj\u0002\bGj\u0002\bHj\u0002\bIj\u0002\bJj\u0002\bKj\u0002\bLj\u0002\bMj\u0002\bNj\u0002\bOj\u0002\bPj\u0002\bQj\u0002\bRj\u0002\bSj\u0002\bTj\u0002\bUj\u0002\bVj\u0002\bW¨\u0006X"}, d2 = {"Lcom/gse/aulapp/model/enumerate/EnumDialogType;", BuildConfig.FLAVOR, "<init>", "(Ljava/lang/String;I)V", "LEFT_HAND_BIOMETRIC_RECORD_SUCCESS", "RIGHT_HAND_BIOMETRIC_RECORD_SUCCESS", "VERIFY_LEFT_HAND_BIOMETRIC_RECORD_SUCCESS", "VERIFY_RIGHT_HAND_BIOMETRIC_RECORD_SUCCESS", "BIOMETRIC_REGISTER_INCOMPLETE", "BIOMETRIC_RECORD_REGISTERED_VERIFIED", "PHOTO_RECORD_SUCCESS", "PHOTO_RECORD_FAIL", "BIOMETRIC_READING_ERROR", "HAND_CHANGE_ERROR", "HAND_CHANGE_ERROR_RIGHT", "EXCEPTION_BIOMETRIC_BOTH", "ENTRY_EXAM_SUCESS", "EXIT_EXAM_SUCESS", "ENTRY_EXAM_INSTRUCTOR", "EXIT_EXAM_INSTRUCTOR", "TIME_FOR_FINISH_EXAM", "TIME_FOR_FINISH_CLASS", "VERIFY_LEFT_HAND_BIOMETRIC_RECORD_SUCCESS_QR", "VERIFY_RIGHT_HAND_BIOMETRIC_RECORD_SUCCESS_QR", "FAIL_CONNECTION_SYNC_EXAM", "PENDING_EXAM_FOR_FINISH", "CLASS_IN_PROGRESS", "CLASS_TIME_EXTRA_FINISHED", "SUCCESS_REGISTRATION_BIOMETRIC_LEFT", "SUCCESS_REGISTRATION_BIOMETRIC_RIGHT", "SUCCESS_REGISTRATION_BIOMETRIC_PROCESS", "SUCCESS_REGISTRATION_VERIFY_PROCESS", "SUCCESS_VERIFICATION_HANDS", "FAIL_REGISTRATION_BIOMETRIC", "FAIL_CONNECTION_REGISTRATION_BIOMETRIC", "SUCCESS_VERIFY_BIOMETRIC_LEFT", "SUCCESS_VERIFY_BIOMETRIC_RIGHT", "FAIL_REGISTRATION_LEFT_HAND_ENROLL", "FAIL_REGISTRATION_LEFT_HAND_VERIFY", "EXCEPTION_BIOMETRIC_VERIFY_LEFT_HAND_LOGIN", "EXCEPTION_BIOMETRIC_VERIFY_RIGHT_HAND_LOGIN", "FAIL_REGISTRATION_RIGHT_HAND_ENROLL", "FAIL_REGISTRATION_RIGHT_HAND_VERIFY", "CHECK_LEFT_HAND", "CHECK_RIGHT_HAND", "SUCCESS_REGISTERED_DOCUMENTS_FACE", "SUCCESS_REGISTERED_FACE", "SUCCESS_REGISTERED_FACE_WITH_OUT_HANDS", "FAIL_REGISTERED_DOCUMENTS_FACE", "FAIL_REGISTERED_FACE", "EXCEPTION_BIOMETRIC_ENROLL_LEFT_HAND", "EXCEPTION_BIOMETRIC_ENROLL_RIGHT_HAND", "EXCEPTION_BIOMETRIC_VERIFY_LEFT_HAND", "EXCEPTION_BIOMETRIC_VERIFY_RIGHT_HAND", "FAIL_REGISTRATION_ENROLL_VERIFY", "WELCOME_TO_APP_MESSAGE", "WELCOME", "LOGOUT", "IS_PENDING_SYNC", "DIALOG_TYPE_GENERAL_ERROR", "DIALOG_TYPE_OFFLINE_ERROR", "DIALOG_TYPE_ERROR_APP", "DIALOG_TYPE_CONFIRMATION_APP", "DIALOG_TYPE_REQUEST_PERMISSION", "DIALOG_TYPE_REQUEST_PERMISSION_DENIED", "DIALOG_TYPE_REQUEST_PERMISSION_PERMANENTLY_DENIED", "DIALOG_BACK_CLASS", "NETWORK_ERROR", "ERROR_OTHER_DEVICE", "WARNING_FAIL_GPS_NFC_FLIGHT_MODE", "WARNING_SIGNAL_GPS", "WARNING_NFC_DISABLE", "WARNING_NFC_TAG", "WARNING_NFC_NOT_FOUND", "ERROR_VERIFY_CLASS_EXAM", "NETWORK_ACCESS_ERROR", "DIALOG_TYPE_VALIDATE_ID_ERROR", "DIALOG_TYPE_VALIDATE_ID_FRONTAL", "DIALOG_TYPE_VALIDATE_ID_BACK", "DIALOG_TYPE_VALIDATE_ID_SELFIE", "DIALOG_TYPE_AUTH_ID_SELFIE", "DIALOG_FAKE_GPS", "IS_EMULATOR_OR_DEVELOPER_MODE", "DIALOG_ERROR_MESSAGE_BIOMETRIC", "DIALOG_TYPE_WITHOUT_BIOMETRIC_APP", "DIALOG_TIME_PASSED", "DIALOG_TYPE_TIMEOUT_FAIL", "DIALOG_WITH_MESSAGE", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: classes.dex */
 public final class EnumDialogType {
-    private static final /* synthetic */ EnumEntries $ENTRIES;
+    // private static final /* synthetic */ EnumEntries $ENTRIES;
     private static final /* synthetic */ EnumDialogType[] $VALUES;
     public static final EnumDialogType LEFT_HAND_BIOMETRIC_RECORD_SUCCESS = new EnumDialogType("LEFT_HAND_BIOMETRIC_RECORD_SUCCESS", 0);
     public static final EnumDialogType RIGHT_HAND_BIOMETRIC_RECORD_SUCCESS = new EnumDialogType("RIGHT_HAND_BIOMETRIC_RECORD_SUCCESS", 1);
@@ -104,14 +104,29 @@ public final class EnumDialogType {
     static {
         EnumDialogType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
     }
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumDialogType(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public final String name() {
+        return this._name;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
     }
 
     public static EnumDialogType valueOfString(String str) {
-        return (EnumDialogType) Enum.valueOf(EnumDialogType.class, str);
+        for (EnumDialogType e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumDialogType[] values() {

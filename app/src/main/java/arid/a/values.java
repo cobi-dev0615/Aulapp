@@ -24,7 +24,7 @@ public final class values extends PngjException {
     public values(Action action) {
         super(action);
         this.getPadSub1 = 0;
-        this.e1 = new PngjBadCrcException(action);
+        this.e1 = new arid.a.PngjBadCrcException(action);
     }
 
     @Override // arid.a.PngjException

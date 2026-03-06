@@ -39,7 +39,7 @@ public final /* data */ class TestDataResponse implements Parcelable {
 
     /* JADX WARN: Multi-variable type inference failed */
     public TestDataResponse() {
-        this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        this(null, null, 3, null);
     }
 
     public static /* synthetic */ TestDataResponse copy$default(TestDataResponse testDataResponse, TestResponse testResponse, ConfigResponse configResponse, int i, Object obj) {

@@ -37,7 +37,7 @@ public final /* data */ class SessionSyncPracticalRequest implements Parcelable 
 
     /* JADX WARN: Multi-variable type inference failed */
     public SessionSyncPracticalRequest() {
-        this(null, 1, 0 == true ? 1 : 0);
+        this(null, 1, null);
     }
 
     public static /* synthetic */ SessionSyncPracticalRequest copy$default(SessionSyncPracticalRequest sessionSyncPracticalRequest, String str, int i, Object obj) {

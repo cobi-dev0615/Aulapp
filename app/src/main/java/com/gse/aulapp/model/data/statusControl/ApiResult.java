@@ -81,7 +81,7 @@ public abstract class ApiResult<T> {
     }
 
     public /* synthetic */ ApiResult(Integer num, EnumApiStatus enumApiStatus, Object obj, String str, DefaultConstructorMarker defaultConstructorMarker) {
-        this(num, enumApiStatus, obj, str);
+        this(num, enumApiStatus, (T) obj, str);
     }
 
     public final T getData() {

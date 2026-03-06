@@ -98,7 +98,9 @@ import kotlin.jvm.internal.IntCompanionObject;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.DelayKt;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/gse/aulapp/view/fragment/FirstLoginFragment;", "Landroidx/fragment/app/Fragment;", "<init>", "()V", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -237,7 +239,7 @@ public final class FirstLoginFragment extends Fragment {
             Intrinsics.checkNotNull(fragmentFirstLoginBinding4);
             Editable text3 = fragmentFirstLoginBinding4.tietTextInputUserLogin.getText();
             if (obj == null || obj.length() == 0) {
-                obj = text3;
+                obj = text3.toString();
             }
             FragmentFirstLoginBinding fragmentFirstLoginBinding5 = firstLoginFragment.b;
             Intrinsics.checkNotNull(fragmentFirstLoginBinding5);
@@ -655,19 +657,19 @@ public final class FirstLoginFragment extends Fragment {
             fragmentFirstLoginBinding19.constraintAllMenu.setLayoutParams(marginLayoutParams);
             LifecycleOwner viewLifecycleOwner = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new y4(this, null), 3, null);
+            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), (CoroutineContext) null, (CoroutineStart) null, new y4(this, null));
             LifecycleOwner viewLifecycleOwner2 = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner2, "getViewLifecycleOwner(...)");
-            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner2), null, null, new b5(this, null), 3, null);
+            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner2), (CoroutineContext) null, (CoroutineStart) null, new b5(this, null));
             LifecycleOwner viewLifecycleOwner3 = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner3, "getViewLifecycleOwner(...)");
-            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner3), null, null, new e5(this, null), 3, null);
+            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner3), (CoroutineContext) null, (CoroutineStart) null, new e5(this, null));
             LifecycleOwner viewLifecycleOwner4 = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner4, "getViewLifecycleOwner(...)");
-            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner4), null, null, new i5(this, null), 3, null);
+            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner4), (CoroutineContext) null, (CoroutineStart) null, new i5(this, null));
             LifecycleOwner viewLifecycleOwner5 = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner5, "getViewLifecycleOwner(...)");
-            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner5), null, null, new l5(this, null), 3, null);
+            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner5), (CoroutineContext) null, (CoroutineStart) null, new l5(this, null));
             OnBackPressedDispatcher onBackPressedDispatcher = requireActivity().getOnBackPressedDispatcher();
             Intrinsics.checkNotNullExpressionValue(onBackPressedDispatcher, "<get-onBackPressedDispatcher>(...)");
             OnBackPressedDispatcherKt.addCallback$default(onBackPressedDispatcher, this, false, new s4(this, 0), 2, null);

@@ -208,7 +208,9 @@ public final class SessionPracticeExamResponse extends GeneralResponseDecrypt {
             String str4 = this.examResult;
             StringBuilder q = a.q(bool, "Result(success=", ", code=", str, ", dataID=");
             x5.z(q, str2, ", message=", str3, ", examResult=");
-            return q.j(str4, ")", q);
+            q.append(str4);
+            q.append(")");
+            return q.toString();
         }
 
         @Override // android.os.Parcelable
@@ -241,7 +243,7 @@ public final class SessionPracticeExamResponse extends GeneralResponseDecrypt {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public /* synthetic */ SessionPracticeExamResponse(Integer num, String str, String str2, Result result, String str3, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(num, str, str2, r6, r7);
+        this(num, str, str2, null, null);
         String str4;
         Result result2;
         num = (i & 1) != 0 ? null : num;
