@@ -95,7 +95,7 @@ public abstract class PngjInputException {
             $$b = 73;
         }
 
-        public static values valueOfString(String str) {
+        public static values valueOfString(String str) throws Throwable {
             Object[] objArr;
             long j;
             Object[] objArr2 = Fpnative.valueOf;
@@ -139,7 +139,7 @@ public abstract class PngjInputException {
         }
 
         /* renamed from: values, reason: to resolve conflict with enum method */
-        public static values[] valuesCustom() {
+        public static values[] valuesCustom() throws Throwable {
             Object[] objArr;
             long j;
             Object[] objArr2 = Fpnative.valueOf;
@@ -221,6 +221,7 @@ public abstract class PngjInputException {
             bArr2[i3] = (byte) i4;
             i7 = i3 + 1;
             if (i3 == i5) {
+                return new String(bArr2, 0);
             }
         } else {
             i2 = i4;
@@ -229,8 +230,10 @@ public abstract class PngjInputException {
             bArr2[i3] = (byte) i4;
             int i7 = i3 + 1;
             if (i3 == i5) {
+                return new String(bArr2, 0);
             }
         }
+        return null;
     }
 
     static {
@@ -258,7 +261,7 @@ public abstract class PngjInputException {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void b(int i, boolean z, String str, int i2, int i3, Object[] objArr) {
+    private static void b(int i, boolean z, String str, int i2, int i3, Object[] objArr) throws Throwable {
         char[] cArr;
         Throwable cause;
         char c;
@@ -359,7 +362,7 @@ public abstract class PngjInputException {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void c(char c, int i, int i2, Object[] objArr) {
+    private static void c(char c, int i, int i2, Object[] objArr) throws Throwable {
         Throwable cause;
         float f;
         char c2;

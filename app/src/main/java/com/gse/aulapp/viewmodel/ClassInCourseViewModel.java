@@ -91,10 +91,10 @@ import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.text.StringsKt;
-import kotlinx.coroutines.BuildersKt;
-import kotlinx.coroutines.BuildersKt;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineDispatcher;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
@@ -105,14 +105,14 @@ import kotlinx.coroutines.flow.StateFlowKt;
 /* loaded from: classes2.dex */
 public final class ClassInCourseViewModel extends ViewModel {
     private final String TAG;
-    private final MutableLiveData<Status> _checkRadioButton;
+    private final MutableLiveData<com.gse.aulapp.model.dto.Status> _checkRadioButton;
     private final SingleLiveEvent<ConfigurationSessionDto> _configSession;
     private final MutableLiveData<QuestionDto> _currentQuestionDto;
     private MutableLiveData<Boolean> _isLastQuestion;
     private final MutableLiveData<com.gse.aulapp.model.data.statusControl.Status> _message;
     private MutableStateFlow<Integer> _minimumClassMinutes;
     private final MutableLiveData<List<QuestionDto>> _questions;
-    private final LiveData<Status> checkRadioButton;
+    private final LiveData<com.gse.aulapp.model.dto.Status> checkRadioButton;
     private final ClassInCourseRepository classInCourseRepository;
     private final SingleLiveEvent<ConfigurationSessionDto> configSession;
     private int currentIndex;
@@ -123,7 +123,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     private final LiveData<Boolean> isLastQuestion;
     private StateFlow<Boolean> isMinimumClassTime;
     private StateFlow<Boolean> isTimeForAlarm;
-    private Status lastStatus;
+    private com.gse.aulapp.model.dto.Status lastStatus;
     private final LiveData<com.gse.aulapp.model.data.statusControl.Status> message;
     private StateFlow<Integer> minimumClassMinutes;
     private final LiveData<List<QuestionDto>> questions;
@@ -145,7 +145,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         MutableLiveData<List<QuestionDto>> mutableLiveData = new MutableLiveData<>();
         this._questions = mutableLiveData;
         this.questions = mutableLiveData;
-        MutableLiveData<Status> mutableLiveData2 = new MutableLiveData<>();
+        MutableLiveData<com.gse.aulapp.model.dto.Status> mutableLiveData2 = new MutableLiveData<>();
         this._checkRadioButton = mutableLiveData2;
         this.checkRadioButton = mutableLiveData2;
         MutableLiveData<QuestionDto> mutableLiveData3 = new MutableLiveData<>();
@@ -182,7 +182,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     }
 
     private final void deleteAllQuestionBySessionID(String sessionID) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new ClassInCourseViewModel$deleteAllQuestionBySessionID$1(this, sessionID, null), 2, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), (CoroutineStart) null, new ClassInCourseViewModel$deleteAllQuestionBySessionID$1(this, sessionID, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -193,7 +193,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         this$0.stopServices(context);
         this$0.prepareToExit(findNavController);
         this$0.selectTypeClassOrExam(context, sessionID, findNavController);
-        BuildersKt.runBlocking$default(null, new ClassInCourseViewModel$dialogCloseBeforeTime$1$1(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null), 1, null);
+        BuildersKt.runBlocking((CoroutineContext) null, new ClassInCourseViewModel$dialogCloseBeforeTime$1$1(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null));
         Dialog dialog = this$0.dialog;
         if (dialog != null) {
             dialog.dismiss();
@@ -256,15 +256,14 @@ public final class ClassInCourseViewModel extends ViewModel {
                                 dialog3.show();
                             }
                         } catch (Exception e) {
-                            e = e;
                             e.toString();
                         }
                     } catch (Exception e2) {
-                        e = e2;
+                        e2.toString();
                     }
                 }
             } catch (Exception e3) {
-                e = e3;
+                e3.toString();
             }
         }
     }
@@ -367,7 +366,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         }
         Intrinsics.checkNotNull(num);
         int intValue2 = num.intValue();
-        return getFormattedTimeToString(TimeUnit.MINUTES.toMillis(intValue2 + (this._configSession.getValue() != null ? r1.getMinToleranceDepartureAfter() : 15)));
+        return getFormattedTimeToString(TimeUnit.MINUTES.toMillis(intValue2 + (this._configSession.getValue() != null ? this._configSession.getValue().getMinToleranceDepartureAfter() : 15)));
     }
 
     private final String getDurationFormat() {
@@ -428,9 +427,7 @@ public final class ClassInCourseViewModel extends ViewModel {
                             return coroutine_suspended;
                         }
                     } catch (Exception e) {
-                        e = e;
-                        context2 = context;
-                        LogSendUtil.INSTANCE.setLog(context2, q.i("loadQuestionsFromDB exception: ", e.getMessage()), "loadQuestionsFromDB", true);
+                        LogSendUtil.INSTANCE.setLog(context, q.i("loadQuestionsFromDB exception: ", e.getMessage()), "loadQuestionsFromDB", true);
                         return Unit.INSTANCE;
                     }
                 } else {
@@ -441,16 +438,14 @@ public final class ClassInCourseViewModel extends ViewModel {
                     try {
                         ResultKt.throwOnFailure(obj);
                     } catch (Exception e2) {
-                        e = e2;
-                        context2 = context3;
-                        LogSendUtil.INSTANCE.setLog(context2, q.i("loadQuestionsFromDB exception: ", e.getMessage()), "loadQuestionsFromDB", true);
+                        LogSendUtil.INSTANCE.setLog(context3, q.i("loadQuestionsFromDB exception: ", e2.getMessage()), "loadQuestionsFromDB", true);
                         return Unit.INSTANCE;
                     }
                 }
                 return Unit.INSTANCE;
             }
         }
-        classInCourseViewModel$loadQuestionsFromDB$1 = new ClassInCourseViewModel$loadQuestionsFromDB$1(this, continuation);
+        classInCourseViewModel$loadQuestionsFromDB$1 = new ClassInCourseViewModel$loadQuestionsFromDB$1(this, (Continuation) continuation);
         Object obj2 = classInCourseViewModel$loadQuestionsFromDB$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = classInCourseViewModel$loadQuestionsFromDB$1.label;
@@ -513,16 +508,16 @@ public final class ClassInCourseViewModel extends ViewModel {
         Intrinsics.checkNotNullExpressionValue(text, "getText(...)");
         String obj = text.toString();
         if (pass) {
-            t = StringsKt.t(obj, "[PASS]", BuildConfig.FLAVOR);
+            t = obj.replace("[PASS]", BuildConfig.FLAVOR);
             string = context.getString(R.string.dialog_fullscreen_pass_exam_approved);
             i = 7;
         } else {
-            t = StringsKt.t(obj, "[PASS]", " NO");
+            t = obj.replace("[PASS]", " NO");
             string = context.getString(R.string.dialog_fullscreen_pass_exam_not_approved);
             i = 6;
         }
         int i2 = i;
-        String t2 = StringsKt.t(StringsKt.t(t, "[APPROVED]", String.valueOf(approved)), "[NOAPPROVED]", String.valueOf(noApproved));
+        String t2 = t.replace("[APPROVED]", String.valueOf(approved)).replace("[NOAPPROVED]", String.valueOf(noApproved));
         DialogUtil.Companion companion = DialogUtil.INSTANCE;
         Activity activity = (Activity) context;
         if (string == null) {
@@ -588,15 +583,14 @@ public final class ClassInCourseViewModel extends ViewModel {
                                 dialog2.show();
                             }
                         } catch (Exception e) {
-                            e = e;
                             e.toString();
                         }
                     } catch (Exception e2) {
-                        e = e2;
+                        e2.toString();
                     }
                 }
             } catch (Exception e3) {
-                e = e3;
+                e3.toString();
             }
         }
     }
@@ -680,19 +674,19 @@ public final class ClassInCourseViewModel extends ViewModel {
     }
 
     private final void updateDateEndClass(String sessionID) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassInCourseViewModel$updateDateEndClass$1(this, sessionID, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$updateDateEndClass$1(this, sessionID, null));
     }
 
     private final void updateIsFinishedState(String sessionID) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassInCourseViewModel$updateIsFinishedState$1(this, sessionID, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$updateIsFinishedState$1(this, sessionID, null));
     }
 
     private final void updateIsPendingState(String isPending, String sessionID) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassInCourseViewModel$updateIsPendingState$1(this, isPending, sessionID, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$updateIsPendingState$1(this, isPending, sessionID, null));
     }
 
     private final void updateIsPendingSync(String sessionID) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassInCourseViewModel$updateIsPendingSync$1(this, sessionID, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$updateIsPendingSync$1(this, sessionID, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -832,7 +826,7 @@ public final class ClassInCourseViewModel extends ViewModel {
                     Intrinsics.checkNotNullExpressionValue(text, "getText(...)");
                     try {
                         try {
-                            AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog(activity, StringsKt.t(text.toString(), "[HH:MM:SS]", String.valueOf(this.timeRemaining.getValue())), ((Activity) context).getString(R.string.dialog_fullscreen_close_before_time_title), ((Activity) context).getString(R.string.btn_finish), 8, true, new i1(this, context, findNavController, sessionID, 4), null);
+                            AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog(activity, text.toString().replace("[HH:MM:SS]", String.valueOf(this.timeRemaining.getValue())), ((Activity) context).getString(R.string.dialog_fullscreen_close_before_time_title), ((Activity) context).getString(R.string.btn_finish), 8, true, new i1(this, context, findNavController, sessionID, 4), null);
                             this.dialog = showInformationDialog;
                             if (showInformationDialog == null || showInformationDialog.isShowing()) {
                                 Dialog dialog = this.dialog;
@@ -847,15 +841,14 @@ public final class ClassInCourseViewModel extends ViewModel {
                                 dialog2.show();
                             }
                         } catch (Exception e) {
-                            e = e;
                             e.toString();
                         }
                     } catch (Exception e2) {
-                        e = e2;
+                        e2.toString();
                     }
                 }
             } catch (Exception e3) {
-                e = e3;
+                e3.toString();
             }
         }
     }
@@ -872,7 +865,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         String obj = text.toString();
         ConfigurationSessionDto value = this._configSession.getValue();
         Activity activity = (Activity) context;
-        AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog(activity, StringsKt.t(obj, "[TIME]", String.valueOf(value != null ? value.getMinToleranceDepartureAfter() : 15)), activity.getString(R.string.dialog_fullscreen_class_time_finished_title), activity.getString(R.string.dialog_fullscreen_class_time_finished_title_button), 8, true, new i1(this, context, sessionID, findNavController), null);
+        AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog(activity, obj.replace("[TIME]", String.valueOf(value != null ? value.getMinToleranceDepartureAfter() : 15)), activity.getString(R.string.dialog_fullscreen_class_time_finished_title), activity.getString(R.string.dialog_fullscreen_class_time_finished_title_button), 8, true, new i1(this, context, sessionID, findNavController), null);
         this.dialog = showInformationDialog;
         if (showInformationDialog != null && (window = showInformationDialog.getWindow()) != null) {
             window.clearFlags(8);
@@ -904,7 +897,7 @@ public final class ClassInCourseViewModel extends ViewModel {
                 int alertEndSession = value != null ? value.getAlertEndSession() : 10;
                 CharSequence text = ((Activity) context).getText(R.string.dialog_fullscreen_max_wait_time_exam);
                 Intrinsics.checkNotNullExpressionValue(text, "getText(...)");
-                AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog(activity, StringsKt.t(text.toString(), "[TIME]", String.valueOf(alertEndSession)), ((Activity) context).getString(R.string.dialog_fullscreen_max_wait_time_title), ((Activity) context).getString(R.string.id_continue), 8, false, new j1(this, 1), null);
+                AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog(activity, text.toString().replace("[TIME]", String.valueOf(alertEndSession)), ((Activity) context).getString(R.string.dialog_fullscreen_max_wait_time_title), ((Activity) context).getString(R.string.id_continue), 8, false, new j1(this, 1), null);
                 this.dialog = showInformationDialog;
                 if (showInformationDialog != null && (window = showInformationDialog.getWindow()) != null) {
                     window.clearFlags(8);
@@ -937,7 +930,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     }
 
     public final void getConfigSessionDto() {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassInCourseViewModel$getConfigSessionDto$1(this, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$getConfigSessionDto$1(this, null));
     }
 
     public final int getCurrentIndex() {
@@ -971,7 +964,7 @@ public final class ClassInCourseViewModel extends ViewModel {
             ConfigurationSessionDto value = this._configSession.getValue();
             num = Integer.valueOf(intValue * (value != null ? value.getMinuteForHour() : 60));
         }
-        double durationForHour = ((this._configSession.getValue() != null ? r2.getDurationForHour() : 40) * 100.0d) / (this._configSession.getValue() != null ? r6.getMinuteForHour() : 60);
+        double durationForHour = ((this._configSession.getValue() != null ? this._configSession.getValue().getDurationForHour() : 40) * 100.0d) / (this._configSession.getValue() != null ? this._configSession.getValue().getMinuteForHour() : 60);
         if (num != null) {
             this._minimumClassMinutes.setValue(Integer.valueOf((int) ((durationForHour / 100.0d) * num.intValue())));
         }
@@ -985,14 +978,14 @@ public final class ClassInCourseViewModel extends ViewModel {
 
     public final void getSessionById(String sessionID) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassInCourseViewModel$getSessionById$1(this, sessionID, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$getSessionById$1(this, sessionID, null));
     }
 
     public final void getSessionDataApi(Context context, String sessionID, boolean startChronometer, NavController findNavController) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         Intrinsics.checkNotNullParameter(findNavController, "findNavController");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassInCourseViewModel$getSessionDataApi$1(context, sessionID, this, startChronometer, findNavController, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$getSessionDataApi$1(context, sessionID, this, startChronometer, findNavController, null));
     }
 
     /* renamed from: getSessionReceived$app_release, reason: from getter */
@@ -1048,7 +1041,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     public final void moveToNextQuestion() {
         List<QuestionDto> value = this._questions.getValue();
         if (value != null) {
-            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new ClassInCourseViewModel$moveToNextQuestion$1$1(value, this, null), 2, null);
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), (CoroutineStart) null, new ClassInCourseViewModel$moveToNextQuestion$1$1(value, this, null));
         }
     }
 
@@ -1092,7 +1085,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         Intrinsics.checkNotNullParameter(findNavController, "findNavController");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassInCourseViewModel$sendPracticeExamSync$1(context, this, sessionID, findNavController, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$sendPracticeExamSync$1(context, this, sessionID, findNavController, null));
     }
 
     public final void setCurrentIndex(int i) {
@@ -1193,7 +1186,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         binding.includeLayoutPracticeClassCard.includePracticeClassTime.classProgressDescription.setText(parseDateToString12H2 + " - " + parseDateToString12H3 + " (" + duration + "h) ");
         binding.includeLayoutPracticeClassCard.includePracticeClassStartTime.classProgressTitle.setText(binding.getRoot().getContext().getText(R.string.txt_card_practice_class_start_hour));
         binding.includeLayoutPracticeClassCard.includePracticeClassStartTime.classProgressDescription.setText(parseDateToString12H);
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new ClassInCourseViewModel$setDataSessionDetailToDialog$2(this, binding, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$setDataSessionDetailToDialog$2(this, binding, null));
         binding.includeLayoutPracticeClassCard.includePracticeClassTopSpeed.classProgressTitle.setText(binding.getRoot().getContext().getText(R.string.txt_card_practice_class_top_velocity));
         binding.includeLayoutPracticeClassCard.includePracticeClassTopSpeed.classProgressDescription.setText("0,000 km/h");
         binding.includeLayoutPracticeClassCard.includePracticeClassAverageSpeed.classProgressTitle.setText(binding.getRoot().getContext().getText(R.string.txt_card_practice_class_max_average));
@@ -1268,7 +1261,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         if (value == null || this.currentIndex > value.size() - 1) {
             return;
         }
-        ArrayList arrayList = new ArrayList(CollectionsKt.e(value));
+        ArrayList arrayList = new ArrayList(CollectionsKt.collectionSizeOrDefault(value, 10));
         int i = 0;
         for (Object obj : value) {
             int i2 = i + 1;
@@ -1287,7 +1280,7 @@ public final class ClassInCourseViewModel extends ViewModel {
             status = status2;
         }
         this._questions.setValue(arrayList);
-        this._currentQuestionDto.setValue(arrayList.get(this.currentIndex));
+        this._currentQuestionDto.setValue((QuestionDto) arrayList.get(this.currentIndex));
         this._questions.getValue();
     }
 
@@ -1404,7 +1397,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         if (runningServices != null && runningServices.isEmpty()) {
             return false;
         }
-        Iterator<T> it = runningServices.iterator();
+        Iterator it = runningServices.iterator();
         while (it.hasNext()) {
             if (Intrinsics.areEqual(((ActivityManager.RunningServiceInfo) it.next()).service.getClassName(), TimerService.class.getName())) {
                 return true;
@@ -1471,7 +1464,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         }
         Intrinsics.checkNotNull(num);
         int intValue2 = num.intValue();
-        binding.includeChronometer.sliderTimer.setValueTo(intValue2 + (this._configSession.getValue() != null ? r1.getMinToleranceDepartureAfter() : 15));
+        binding.includeChronometer.sliderTimer.setValueTo(intValue2 + (this._configSession.getValue() != null ? this._configSession.getValue().getMinToleranceDepartureAfter() : 15));
     }
 
     public final boolean validateTimeClass() {

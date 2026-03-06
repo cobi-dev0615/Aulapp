@@ -247,8 +247,8 @@ public final class SlideToActView extends View {
             this.mPositionPercInv = 1.0f;
         } else {
             float f = i;
-            this.mPositionPerc = f / (r0 - r1);
-            this.mPositionPercInv = 1 - (f / (r0 - r1));
+            this.mPositionPerc = f / (this.mAreaWidth - this.mAreaHeight);
+            this.mPositionPercInv = 1 - (f / (this.mAreaWidth - this.mAreaHeight));
             setMEffectivePosition(i);
         }
     }
@@ -938,7 +938,7 @@ public final class SlideToActView extends View {
             obtainStyledAttributes.recycle();
             int i7 = this.mActualAreaMargin;
             int i8 = this.mEffectivePosition;
-            this.mInnerRect = new RectF(i7 + i8, i7, (i8 + r6) - i7, this.mAreaHeight - i7);
+            this.mInnerRect = new RectF(i7 + i8, i7, (i8 + this.mAreaHeight) - i7, this.mAreaHeight - i7);
             int i9 = this.mActualAreaWidth;
             this.mOuterRect = new RectF(i9, 0.0f, this.mAreaWidth - i9, this.mAreaHeight);
             this.mDrawableTick = SlideToActIconUtil.INSTANCE.loadIconCompat$slidetoact_release(context, resourceId);

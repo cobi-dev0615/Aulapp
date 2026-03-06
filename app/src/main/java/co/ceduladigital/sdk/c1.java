@@ -44,7 +44,7 @@ public final class c1 implements NavDirections {
         bundle.putString("sessionID", this.a);
         bundle.putBoolean("isEnter", this.b);
         boolean isAssignableFrom = Parcelable.class.isAssignableFrom(EnumClassType.class);
-        Serializable serializable = this.c;
+        Serializable serializable = (Serializable) this.c;
         if (isAssignableFrom) {
             Intrinsics.checkNotNull(serializable, "null cannot be cast to non-null type android.os.Parcelable");
             bundle.putParcelable("sessionType", (Parcelable) serializable);

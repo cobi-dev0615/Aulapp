@@ -1,10 +1,6 @@
 package co.ceduladigital.sdk;
 
-import android.app.Activity;
-import android.content.Context;
 import android.widget.EditText;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.DefaultSpecialEffectsController;
 import androidx.fragment.app.Fragment;
 import androidx.room.InvalidationTracker;
@@ -36,11 +32,9 @@ public final /* synthetic */ class f implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                ActivityCompat.lambda$recreate$0((Activity) this.b);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             case 1:
-                AppCompatDelegate.lambda$syncRequestedAndStoredLocales$1((Context) this.b);
-                break;
+                throw new UnsupportedOperationException("Not decompiled");
             case 2:
                 ((CarouselLayoutManager) this.b).refreshKeylineState();
                 break;

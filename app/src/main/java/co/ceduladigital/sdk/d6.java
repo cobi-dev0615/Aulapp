@@ -201,7 +201,7 @@ public final class d6 implements FlowCollector {
                         showErrorDialog$default.setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: co.ceduladigital.sdk.c6
                             @Override // android.content.DialogInterface.OnDismissListener
                             public final void onDismiss(DialogInterface dialogInterface) {
-                                HomeFragment this$0 = HomeFragment.this;
+                                HomeFragment this$0 = homeFragment;
                                 Intrinsics.checkNotNullParameter(this$0, "this$0");
                                 this$0.f = null;
                                 this$0.g = false;

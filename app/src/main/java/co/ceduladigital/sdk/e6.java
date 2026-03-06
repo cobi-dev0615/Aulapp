@@ -15,7 +15,8 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.SharedFlow;
 
 /* loaded from: classes2.dex */
-public final class e6 extends SuspendLambda implements Function2 {
+@SuppressWarnings({"rawtypes", "unchecked"})
+public final class e6 extends SuspendLambda implements Function2<Object, Object, Object> {
     public int a;
     public final /* synthetic */ HomeFragment b;
 

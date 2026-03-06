@@ -267,7 +267,7 @@ public final class HistoricRecordPermissionsChangeRepository {
     }
 
     public final Object saveHistoricPermissionsChange(String str, String str2, boolean z, EnumPermissionsApp enumPermissionsApp, Continuation<? super Unit> continuation) {
-        Object saveHistoric = this.dao.saveHistoric(new HistoricRecordPermissionsChangeEntity(null, str, str2, z, enumPermissionsApp.name()), continuation);
+        Object saveHistoric = this.dao.saveHistoric(new HistoricRecordPermissionsChangeEntity(null, str, str2, z, enumPermissionsApp.name()), (Continuation) continuation);
         return saveHistoric == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? saveHistoric : Unit.INSTANCE;
     }
 

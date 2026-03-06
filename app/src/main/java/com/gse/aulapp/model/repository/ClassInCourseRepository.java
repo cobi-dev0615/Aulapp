@@ -19,6 +19,7 @@ import kotlin.jvm.internal.SourceDebugExtension;
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u000b\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\u001c\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000b\u001a\u00020\fH\u0086@¢\u0006\u0002\u0010\rJ&\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0010\u001a\u00020\f2\u0006\u0010\u0011\u001a\u00020\fH\u0086@¢\u0006\u0002\u0010\u0012J\u001c\u0010\u0013\u001a\u00020\u000f2\f\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\n0\tH\u0086@¢\u0006\u0002\u0010\u0015J\u0016\u0010\u0016\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\fH\u0086@¢\u0006\u0002\u0010\rJ\u001e\u0010\u0018\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0017\u001a\u00020\fH\u0086@¢\u0006\u0002\u0010\u0019R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001a"}, d2 = {"Lcom/gse/aulapp/model/repository/ClassInCourseRepository;", BuildConfig.FLAVOR, "testDao", "Lcom/gse/aulapp/model/dao/TestDao;", "questionDao", "Lcom/gse/aulapp/model/dao/QuestionDao;", "<init>", "(Lcom/gse/aulapp/model/dao/TestDao;Lcom/gse/aulapp/model/dao/QuestionDao;)V", "getQuestionFromDB", BuildConfig.FLAVOR, "Lcom/gse/aulapp/model/data/entity/QuestionEntity;", "testID", BuildConfig.FLAVOR, "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "saveResolvedQuestion", BuildConfig.FLAVOR, "questionID", "approved", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "saveQuestion", "questionEntity", "(Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "deleteAllQuestionBySessionID", "sessionID", "saveTest", "(Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nClassInCourseRepository.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClassInCourseRepository.kt\ncom/gse/aulapp/model/repository/ClassInCourseRepository\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,80:1\n1863#2,2:81\n*S KotlinDebug\n*F\n+ 1 ClassInCourseRepository.kt\ncom/gse/aulapp/model/repository/ClassInCourseRepository\n*L\n48#1:81,2\n*E\n"})
 /* loaded from: classes.dex */
+@SuppressWarnings({"unchecked", "rawtypes"})
 public final class ClassInCourseRepository {
     private final QuestionDao questionDao;
     private final TestDao testDao;
@@ -84,7 +85,7 @@ public final class ClassInCourseRepository {
                 classInCourseRepository$deleteAllQuestionBySessionID$1.label = 2;
             }
         }
-        classInCourseRepository$deleteAllQuestionBySessionID$1 = new ClassInCourseRepository$deleteAllQuestionBySessionID$1(this, continuation);
+        classInCourseRepository$deleteAllQuestionBySessionID$1 = new ClassInCourseRepository$deleteAllQuestionBySessionID$1(this, (Continuation) continuation);
         Object obj2 = classInCourseRepository$deleteAllQuestionBySessionID$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = classInCourseRepository$deleteAllQuestionBySessionID$1.label;
@@ -143,7 +144,7 @@ public final class ClassInCourseRepository {
                 return Unit.INSTANCE;
             }
         }
-        classInCourseRepository$saveQuestion$1 = new ClassInCourseRepository$saveQuestion$1(this, continuation);
+        classInCourseRepository$saveQuestion$1 = new ClassInCourseRepository$saveQuestion$1(this, (Continuation) continuation);
         Object obj2 = classInCourseRepository$saveQuestion$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = classInCourseRepository$saveQuestion$1.label;

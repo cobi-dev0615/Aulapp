@@ -78,8 +78,9 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.text.StringsKt;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
-import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.StateFlow;
 
@@ -145,7 +146,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     private final void deleteGpsTraceBySessionID(String sessionID) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$deleteGpsTraceBySessionID$1(this, sessionID, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$deleteGpsTraceBySessionID$1(this, sessionID, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -160,7 +161,7 @@ public final class PracticeClassViewModel extends ViewModel {
             this$0.deleteGpsTraceBySessionID(id);
         }
         this$0.stopServices(context);
-        BuildersKt.runBlocking$default(null, new PracticeClassViewModel$dialogCloseBeforeTime$1$2(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null), 1, null);
+        BuildersKt.runBlocking((CoroutineContext) null, new PracticeClassViewModel$dialogCloseBeforeTime$1$2(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null));
         Dialog dialog = this$0.dialog;
         if (dialog != null) {
             dialog.dismiss();
@@ -214,15 +215,14 @@ public final class PracticeClassViewModel extends ViewModel {
                                 dialog3.show();
                             }
                         } catch (Exception e) {
-                            e = e;
                             e.toString();
                         }
                     } catch (Exception e2) {
-                        e = e2;
+                        e2.toString();
                     }
                 }
             } catch (Exception e3) {
-                e = e3;
+                e3.toString();
             }
         }
     }
@@ -326,7 +326,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     private final void setDataSessionDetail(SessionDto session, FragmentPracticeClassBinding binding, String timeSession) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$setDataSessionDetail$1(session, timeSession, binding, this, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$setDataSessionDetail$1(session, timeSession, binding, this, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -433,7 +433,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     private final void updateIsPendingState(String isPending, String sessionID) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$updateIsPendingState$1(this, isPending, sessionID, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$updateIsPendingState$1(this, isPending, sessionID, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -441,9 +441,9 @@ public final class PracticeClassViewModel extends ViewModel {
         Job launch$default;
         Job job = this.updatePracticeInfoJob;
         if (job != null) {
-            Job.DefaultImpls.cancel$default(job, null, 1, null);
+            job.cancel(null);
         }
-        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$updatePracticeInfo$1(this, binding, null), 3, null);
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$updatePracticeInfo$1(this, binding, null));
         this.updatePracticeInfoJob = launch$default;
     }
 
@@ -491,7 +491,7 @@ public final class PracticeClassViewModel extends ViewModel {
                     Intrinsics.checkNotNullExpressionValue(text, "getText(...)");
                     try {
                         try {
-                            AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog(activity, StringsKt.t(text.toString(), "[HH:MM:SS]", String.valueOf(this.timeRemaining.getValue())), ((Activity) context).getString(R.string.dialog_fullscreen_close_before_time_title), ((Activity) context).getString(R.string.btn_finish), 8, true, new r7(context, this, sessionID, findNavController, 0), null);
+                            AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog(activity, text.toString().replace("[HH:MM:SS]", String.valueOf(this.timeRemaining.getValue())), ((Activity) context).getString(R.string.dialog_fullscreen_close_before_time_title), ((Activity) context).getString(R.string.btn_finish), 8, true, new r7(context, this, sessionID, findNavController, 0), null);
                             this.dialog = showInformationDialog;
                             if (showInformationDialog == null || showInformationDialog.isShowing()) {
                                 Dialog dialog = this.dialog;
@@ -506,15 +506,14 @@ public final class PracticeClassViewModel extends ViewModel {
                                 dialog2.show();
                             }
                         } catch (Exception e) {
-                            e = e;
                             e.toString();
                         }
                     } catch (Exception e2) {
-                        e = e2;
+                        e2.toString();
                     }
                 }
             } catch (Exception e3) {
-                e = e3;
+                e3.toString();
             }
         }
     }
@@ -531,7 +530,7 @@ public final class PracticeClassViewModel extends ViewModel {
                 }
                 CharSequence text = ((Activity) context).getText(R.string.dialog_fullscreen_class_time_finished_text);
                 Intrinsics.checkNotNullExpressionValue(text, "getText(...)");
-                AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog(activity, StringsKt.t(text.toString(), "[TIME]", String.valueOf(timeMin)), ((Activity) context).getString(R.string.dialog_fullscreen_class_time_finished_title), ((Activity) context).getString(R.string.dialog_fullscreen_class_time_finished_title_button), 8, true, new r7(this, context, findNavController, sessionID, 2), null);
+                AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog(activity, text.toString().replace("[TIME]", String.valueOf(timeMin)), ((Activity) context).getString(R.string.dialog_fullscreen_class_time_finished_title), ((Activity) context).getString(R.string.dialog_fullscreen_class_time_finished_title_button), 8, true, new r7(this, context, findNavController, sessionID, 2), null);
                 this.dialog = showInformationDialog;
                 if (showInformationDialog != null && (window = showInformationDialog.getWindow()) != null) {
                     window.clearFlags(8);
@@ -563,7 +562,7 @@ public final class PracticeClassViewModel extends ViewModel {
                 if (activity.isFinishing() || activity.isDestroyed()) {
                     return;
                 }
-                AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog((Activity) context, StringsKt.t(String.valueOf(((Activity) context).getText(R.string.dialog_fullscreen_max_wait_time_class)), "[TIME]", String.valueOf(configurationSessionDto != null ? configurationSessionDto.getAlertEndSession() : 10)), ((Activity) context).getString(R.string.dialog_fullscreen_max_wait_time_title), ((Activity) context).getString(R.string.id_continue), 8, false, new r2(this, 11), null);
+                AlertDialog showInformationDialog = DialogUtil.INSTANCE.showInformationDialog((Activity) context, String.valueOf(((Activity) context).getText(R.string.dialog_fullscreen_max_wait_time_class)).replace("[TIME]", String.valueOf(configurationSessionDto != null ? configurationSessionDto.getAlertEndSession() : 10)), ((Activity) context).getString(R.string.dialog_fullscreen_max_wait_time_title), ((Activity) context).getString(R.string.id_continue), 8, false, new r2(this, 11), null);
                 this.dialog = showInformationDialog;
                 if (showInformationDialog != null && (window = showInformationDialog.getWindow()) != null) {
                     window.clearFlags(8);
@@ -603,7 +602,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     public final void getConfigSessionDto() {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$getConfigSessionDto$1(this, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$getConfigSessionDto$1(this, null));
     }
 
     public final Dialog getDialog() {
@@ -617,7 +616,7 @@ public final class PracticeClassViewModel extends ViewModel {
     public final void getSessionById(String sessionID) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         try {
-            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PracticeClassViewModel$getSessionById$1(this, sessionID, null), 3, null);
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$getSessionById$1(this, sessionID, null));
         } catch (Exception e) {
             this._message.postValue(new Status.Failure(new Exception(e.getMessage())));
         }
@@ -757,7 +756,7 @@ public final class PracticeClassViewModel extends ViewModel {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit starTimerClass$lambda$3;
-                starTimerClass$lambda$3 = PracticeClassViewModel.starTimerClass$lambda$3(num2, binding, this, context, sessionID, alertEndSession, configurationSessionDto);
+                starTimerClass$lambda$3 = PracticeClassViewModel.starTimerClass$lambda$3(num2, binding, PracticeClassViewModel.this, context, sessionID, alertEndSession, configurationSessionDto);
                 return starTimerClass$lambda$3;
             }
         });
@@ -782,7 +781,7 @@ public final class PracticeClassViewModel extends ViewModel {
         if (runningServices != null && runningServices.isEmpty()) {
             return false;
         }
-        Iterator<T> it = runningServices.iterator();
+        Iterator it = runningServices.iterator();
         while (it.hasNext()) {
             if (Intrinsics.areEqual(((ActivityManager.RunningServiceInfo) it.next()).service.getClassName(), serviceClass.getName())) {
                 return true;

@@ -1,14 +1,9 @@
 package co.ceduladigital.sdk;
 
-import android.animation.Animator;
 import androidx.concurrent.futures.CallbackToFutureAdapter;
 import androidx.core.os.CancellationSignal;
-import androidx.fragment.app.DefaultSpecialEffectsController;
-import androidx.fragment.app.SpecialEffectsController;
-import com.google.android.datatransport.runtime.scheduling.jobscheduling.Uploader;
 import com.google.android.datatransport.runtime.synchronization.SynchronizationGuard;
 import com.google.android.material.navigation.NavigationView;
-import java.util.HashMap;
 
 /* loaded from: classes.dex */
 public final /* synthetic */ class c3 implements CallbackToFutureAdapter.Resolver, CancellationSignal.OnCancelListener, NavigationView.OnNavigationItemSelectedListener, SynchronizationGuard.CriticalSection {
@@ -24,20 +19,26 @@ public final /* synthetic */ class c3 implements CallbackToFutureAdapter.Resolve
 
     @Override // com.google.android.datatransport.runtime.synchronization.SynchronizationGuard.CriticalSection
     public Object execute() {
-        Object lambda$logAndUpdateState$5;
-        Object lambda$logAndUpdateState$7;
         switch (this.a) {
             case 3:
-                lambda$logAndUpdateState$5 = ((Uploader) this.b).lambda$logAndUpdateState$5((Iterable) this.c);
-                return lambda$logAndUpdateState$5;
+                throw new UnsupportedOperationException("Not decompiled");
             default:
-                lambda$logAndUpdateState$7 = ((Uploader) this.b).lambda$logAndUpdateState$7((HashMap) this.c);
-                return lambda$logAndUpdateState$7;
+                throw new UnsupportedOperationException("Not decompiled");
         }
     }
 
     @Override // androidx.core.os.CancellationSignal.OnCancelListener
     public void onCancel() {
-        DefaultSpecialEffectsController.startAnimations$lambda$3((Animator) this.b, (SpecialEffectsController.Operation) this.c);
+        throw new UnsupportedOperationException("Not decompiled");
+    }
+
+    @Override // androidx.concurrent.futures.CallbackToFutureAdapter.Resolver
+    public Object attachCompleter(CallbackToFutureAdapter.Completer completer) {
+        return null;
+    }
+
+    @Override // com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener
+    public boolean onNavigationItemSelected(android.view.MenuItem item) {
+        return false;
     }
 }

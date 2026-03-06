@@ -38,6 +38,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import kotlin.Metadata;
+import kotlin.text.StringsKt;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.IntCompanionObject;
@@ -139,7 +140,7 @@ public final class ClassDetailRecyclerAdapter extends RecyclerView.Adapter<Class
                 public final Object invoke(Object obj) {
                     Unit handlerClassCardByDate$lambda$18$lambda$16$lambda$15;
                     boolean booleanValue = ((Boolean) obj).booleanValue();
-                    handlerClassCardByDate$lambda$18$lambda$16$lambda$15 = ClassDetailRecyclerAdapter.ClassDetailViewHolder.handlerClassCardByDate$lambda$18$lambda$16$lambda$15(ItemClassCardDetailBinding.this, this, enumByName, areEqual, classDetailRecyclerAdapter, classDetail, date, date2, intValue, intValue2, booleanValue);
+                    handlerClassCardByDate$lambda$18$lambda$16$lambda$15 = ClassDetailRecyclerAdapter.ClassDetailViewHolder.handlerClassCardByDate$lambda$18$lambda$16$lambda$15(itemClassCardDetailBinding, this, enumByName, areEqual, classDetailRecyclerAdapter, classDetail, date, date2, intValue, intValue2, booleanValue);
                     return handlerClassCardByDate$lambda$18$lambda$16$lambda$15;
                 }
             }, 32, null);
@@ -438,7 +439,7 @@ public final class ClassDetailRecyclerAdapter extends RecyclerView.Adapter<Class
             if (runningServices != null && runningServices.isEmpty()) {
                 return false;
             }
-            Iterator<T> it = runningServices.iterator();
+            Iterator it = runningServices.iterator();
             while (it.hasNext()) {
                 if (Intrinsics.areEqual(((ActivityManager.RunningServiceInfo) it.next()).service.getClassName(), serviceClass.getName())) {
                     return true;
@@ -522,10 +523,14 @@ public final class ClassDetailRecyclerAdapter extends RecyclerView.Adapter<Class
         List split$default2;
         String str2;
         ClassRoomDto classroom = classDetail.getClassroom();
+        String location = classroom != null ? classroom.getLocation() : null;
         Double d = null;
-        Double valueOf = (classroom == null || (r0 = classroom.getLocation()) == null || split$default2 == null || (str2 = (String) split$default2.get(0)) == null) ? null : Double.valueOf(Double.parseDouble(str2));
+        split$default2 = location != null ? StringsKt.split$default((CharSequence) location, new String[]{","}, false, 0, 6, (Object) null) : null;
+        Double valueOf = (classroom == null || location == null || split$default2 == null || (str2 = (String) split$default2.get(0)) == null) ? null : Double.valueOf(Double.parseDouble(str2));
         ClassRoomDto classroom2 = classDetail.getClassroom();
-        if (classroom2 != null && (r9 = classroom2.getLocation()) != null && split$default != null && (str = (String) split$default.get(1)) != null) {
+        String location2 = classroom2 != null ? classroom2.getLocation() : null;
+        split$default = location2 != null ? StringsKt.split$default((CharSequence) location2, new String[]{","}, false, 0, 6, (Object) null) : null;
+        if (classroom2 != null && location2 != null && split$default != null && (str = (String) split$default.get(1)) != null) {
             d = Double.valueOf(Double.parseDouble(str));
         }
         if (valueOf == null || d == null) {
