@@ -20972,6 +20972,10 @@ public final class SessionDao_Impl implements SessionDao {
                 int i24;
                 String string23;
                 int i25;
+                String string25 = null;
+                String string26 = null;
+                java.util.ArrayList arrayList = null;
+                java.util.ArrayList arrayList2 = null;
                 Cursor query = DBUtil.query(SessionDao_Impl.this.__db, simpleSQLiteQuery, true, null);
                 try {
                     int columnIndex = CursorUtil.getColumnIndex(query, "id");

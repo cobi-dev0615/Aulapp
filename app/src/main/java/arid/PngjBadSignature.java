@@ -332,7 +332,7 @@ public class PngjBadSignature extends PngjInputException {
         int i6;
         long j;
         int i7;
-        int i8;
+        int i8 = 0;
         int i9;
         int i10;
         int i11;
