@@ -32,7 +32,7 @@ public final class g5 implements FlowCollector<Status> {
     public final Object emit(Status status, Continuation continuation) {
         f5 f5Var;
         int i;
-        g5 g5Var;
+        g5 g5Var = this;
         if (continuation instanceof f5) {
             f5Var = (f5) continuation;
             int i2 = f5Var.d;

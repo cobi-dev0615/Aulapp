@@ -84,6 +84,7 @@ import org.json.JSONObject;
 /* loaded from: classes2.dex */
 public class IdentySdk {
     private static  byte[] $$a = null;
+    private static  Object[] $$a_state = new Object[]{new long[1], new int[1]};
     private static  int $$b = 0;
     private static  byte[] $$c = null;
     private static  byte[] $$d = null;
@@ -324,10 +325,10 @@ public class IdentySdk {
                 IdentySdk identySdk2 = IdentySdk.this;
                 Action action = identySdk2.e;
                 if (action == null) {
-                    action = com.identy.com.identy.Action.CAPTURE;
+                    action = com.identy.Action.CAPTURE;
                 }
                 identySdk2.e = action;
-                Action action2 = com.identy.com.identy.Action.VERIFY;
+                Action action2 = com.identy.Action.VERIFY;
                 if (action.equals(action2)) {
                     IdentySdk identySdk3 = IdentySdk.this;
                     identyResponse = new VerifyIdentyResponse(identySdk3.h, identySdk3.e, identySdk3.isQualityFailed, identySdk3.Attempt, identySdk3.getPadSub1, identySdk3.getQualityScore, identySdk3.values, identySdk3.getData, identySdk3.i);
@@ -570,7 +571,7 @@ public class IdentySdk {
 
     private IdentySdk(Activity activity, byte[] bArr, InitializationListener initializationListener, IdentyResponseListener identyResponseListener, boolean z) {
         this.PngjBadSignature = false;
-        this.e = com.identy.com.identy.Action.CAPTURE;
+        this.e = com.identy.Action.CAPTURE;
         this.g = false;
         this.h = new HashMap();
         this.i = new HashMap();
@@ -854,7 +855,7 @@ public class IdentySdk {
         ByteArrayOutputStream byteArrayOutputStream;
         byte[] bArr;
         int read;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -867,7 +868,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4966;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     byteArrayOutputStream = new ByteArrayOutputStream();
                     int i3 = ((int[]) objArr[1])[0];
                     int i4 = i3 * i3;
@@ -907,7 +908,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1202683340);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4966;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             byteArrayOutputStream = new ByteArrayOutputStream();
             int i32 = ((int[]) objArr[1])[0];
             int i42 = i32 * i32;
@@ -960,7 +961,7 @@ public class IdentySdk {
         if (i % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -973,7 +974,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4929;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     identySdk = PngjException;
                     if (identySdk == null) {
                         int i4 = generateST + 77;
@@ -1008,7 +1009,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 223364188);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4929;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             identySdk = PngjException;
             if (identySdk == null) {
             }
@@ -1032,13 +1033,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0053, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = ~((int) android.os.Process.getStartElapsedRealtime());
         0 = ~(435881670 | 0);
         0 = defpackage.a.c(0 | 440036799, 764, (((~(0 | 63007609)) | 406455430) * (-1528)) + (((0 | 63007609) * 764) + 1013657327), -1284815836);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1047,7 +1048,7 @@ public class IdentySdk {
         long j;
         int i = generateST;
         deduplication = (i + 99) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 11;
@@ -1059,9 +1060,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4858;
-                Fpnative.valueOf = 0;
-                int i3 = ((int[]) $$a[1])[0];
+                ((long[]) $$a_state[0])[0] = j + 4858;
+                com.identy.Fpnative.valueOf = null;
+                int i3 = ((int[]) $$a_state[1])[0];
                 int i4 = i3 * i3;
                 int i5 = -(395977197 * i3);
                 int i6 = (((i4 & i5) + (i4 | i5)) - (~(-(i3 * (-1651716929))))) - 1;
@@ -1085,7 +1086,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -1284815836);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4858;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             int i32 = ((int[]) objArr4[1])[0];
             int i42 = i32 * i32;
             int i52 = -(395977197 * i32);
@@ -1120,14 +1121,14 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0057, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = (int) android.os.Process.getStartUptimeMillis();
         0 = ~0;
         0 = ~(77321349 | 0);
         0 = defpackage.a.c(0 | (-421567931), 712, (((~(0 | 498851263)) | (~(0 | (-421529915)))) * (-712)) + (((421529914 | 0) * (-712)) + 789319079), 1045028144);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1140,7 +1141,7 @@ public class IdentySdk {
         if (i2 % 2 != 0) {
             throw null;
         }
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i3 = i + 47;
@@ -1152,9 +1153,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 5003;
-                Fpnative.valueOf = 0;
-                int i4 = ((int[]) $$a[1])[0];
+                ((long[]) $$a_state[0])[0] = j + 5003;
+                com.identy.Fpnative.valueOf = null;
+                int i4 = ((int[]) $$a_state[1])[0];
                 int i5 = i4 * i4;
                 int i6 = -(1528323890 * i4);
                 int i7 = (((i5 ^ i6) + ((i5 & i6) << 1)) - (~(-(i4 * (-166310270))))) - 1297927773;
@@ -1181,7 +1182,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 1045028144);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 5003;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             int i42 = ((int[]) objArr4[1])[0];
             int i52 = i42 * i42;
             int i62 = -(1528323890 * i42);
@@ -1283,7 +1284,7 @@ public class IdentySdk {
         int i3;
         char c2;
         String str3 = str2;
-        byte[] bArr = str3;
+        byte[] bArr = null;
         if (str3 != null) {
             $10 = ($11 + 53) % 128;
             bArr = str3.getBytes("ISO-8859-1");
@@ -1293,7 +1294,7 @@ public class IdentySdk {
             cArr = str.toCharArray();
             $11 = ($10 + 83) % 128;
         } else {
-            cArr = str;
+            cArr = null;
         }
         char[] cArr2 = cArr;
         com.d.e.PngjExceptionInternal pngjExceptionInternal = new com.d.e.PngjExceptionInternal();
@@ -1447,7 +1448,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 75) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -1461,7 +1462,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4998;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i4 = ((int[]) objArr[1])[0];
                     int i5 = ((i4 * i4) - (~(-(813828171 * i4)))) - 1;
                     int i6 = -(i4 * (-1811482177));
@@ -1476,7 +1477,7 @@ public class IdentySdk {
                     int i15 = i14 >> 22;
                     int i16 = ((i15 ^ (-2047)) + ((i15 & (-2047)) << 1)) / 1024;
                     int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
-                    return newInstance(activity, str, initializationListener, identyResponseListener, z, (boolean) (0 / ((i14 & (-(((i17 | 1) << 1) - (i17 ^ 1)))) * 1839)));
+                    return newInstance(activity, str, initializationListener, identyResponseListener, z, false;
                 }
             }
             byte[] bArr = $$d;
@@ -1488,7 +1489,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -656788891);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4998;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i42 = ((int[]) objArr[1])[0];
             int i52 = ((i42 * i42) - (~(-(813828171 * i42)))) - 1;
             int i62 = -(i42 * (-1811482177));
@@ -1503,7 +1504,7 @@ public class IdentySdk {
             int i152 = i142 >> 22;
             int i162 = ((i152 ^ (-2047)) + ((i152 & (-2047)) << 1)) / 1024;
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
-            return newInstance(activity, str, initializationListener, identyResponseListener, z, (boolean) (0 / ((i142 & (-(((i172 | 1) << 1) - (i172 ^ 1)))) * 1839)));
+            return newInstance(activity, str, initializationListener, identyResponseListener, z, false;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -1523,7 +1524,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         InputStream resourceAsStream;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -1538,7 +1539,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4888;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     resourceAsStream = context.getClassLoader().getResourceAsStream(str);
                     if (resourceAsStream == null) {
                         byte[] bytesFromInputStream = getBytesFromInputStream(resourceAsStream);
@@ -1574,7 +1575,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 314897519);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4888;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             resourceAsStream = context.getClassLoader().getResourceAsStream(str);
             if (resourceAsStream == null) {
             }
@@ -1596,7 +1597,7 @@ public class IdentySdk {
         if (i % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -1612,7 +1613,7 @@ public class IdentySdk {
                     int i7 = i6 ^ (i6 >>> 17);
                     ((int[]) objArr[1])[0] = i7 ^ (i7 << 5);
                     ((long[]) objArr[0])[0] = j + 4868;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     generateST = (deduplication + 63) % 128;
                     return;
                 }
@@ -1627,7 +1628,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             generateST = (deduplication + 49) % 128;
             ((long[]) objArr[0])[0] = j + 4868;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             generateST = (deduplication + 63) % 128;
             return;
         } catch (Throwable th) {
@@ -1737,7 +1738,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -1750,7 +1751,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4949;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     boolean z = this.uxd566jk;
                     i = deduplication + 123;
                     generateST = i % 128;
@@ -1770,7 +1771,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             generateST = (deduplication + 53) % 128;
             ((long[]) objArr[0])[0] = j + 4949;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             boolean z2 = this.uxd566jk;
             i = deduplication + 123;
             generateST = i % 128;
@@ -1795,7 +1796,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = (int) java.lang.Runtime.getRuntime().totalMemory();
         0 = ~0;
         0 = (((~((-537166401) | 0)) | (~((-318462235) | 0))) * 520) - 1713740649;
@@ -1804,7 +1805,7 @@ public class IdentySdk {
         0 = defpackage.a.c(0 | ((~(0 | (-817351515))) | (-855628635)), 520, ((0 | 0) * (-1040)) + 0, -2043662396);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1813,7 +1814,7 @@ public class IdentySdk {
         long j;
         int i = deduplication;
         generateST = (i + 47) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 125;
@@ -1825,8 +1826,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4861;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4861;
+                com.identy.Fpnative.valueOf = null;
                 return this.uxd565jk;
             }
             byte[] bArr = $$d;
@@ -1839,7 +1840,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -2043662396);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4861;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return this.uxd565jk;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -1857,7 +1858,7 @@ public class IdentySdk {
     public void D() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 63) % 128;
@@ -1871,7 +1872,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 5012;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     IdentySdk identySdk = PngjException;
                     int i3 = ((int[]) objArr[1])[0];
                     int i4 = ((i3 * i3) - (~(-(577715163 * i3)))) - 1;
@@ -1903,7 +1904,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1843416630);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5012;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             IdentySdk identySdk2 = PngjException;
             int i32 = ((int[]) objArr[1])[0];
             int i42 = ((i32 * i32) - (~(-(577715163 * i32)))) - 1;
@@ -1942,7 +1943,7 @@ public class IdentySdk {
     public void F() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -1954,7 +1955,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4944;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (!this.e.equals(com.identy.Action.CAPTURE)) {
                         try {
                             capture();
@@ -2012,7 +2013,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 272515171);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4944;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (!this.e.equals(com.identy.Action.CAPTURE)) {
             }
         } catch (Throwable th) {
@@ -2029,7 +2030,7 @@ public class IdentySdk {
     public IdentySdk G() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -2043,7 +2044,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     generateST = (deduplication + 59) % 128;
                     ((long[]) objArr[0])[0] = j + 4879;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i3 = ((int[]) objArr[1])[0];
                     int i4 = i3 * i3;
                     int i5 = -(53199137 * i3);
@@ -2072,7 +2073,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1853263190);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4879;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i32 = ((int[]) objArr[1])[0];
             int i42 = i32 * i32;
             int i52 = -(53199137 * i32);
@@ -2110,7 +2111,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 113) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -2124,7 +2125,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 5041;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     deduplication = (generateST + 3) % 128;
                     if (this.getData.checkSelfPermission("android.permission.CAMERA") != 0) {
                         valueOf();
@@ -2164,7 +2165,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1377843967);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5041;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             deduplication = (generateST + 3) % 128;
             if (this.getData.checkSelfPermission("android.permission.CAMERA") != 0) {
             }
@@ -2203,7 +2204,7 @@ public class IdentySdk {
         long j;
         FingerDetectionMode[] fingerDetectionModeArr;
         int i3;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -2216,7 +2217,7 @@ public class IdentySdk {
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     ((long[]) objArr[0])[0] = j + 4942;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.PngjUnsupportedException = i;
                     this.PngjInputException = i2;
                     fingerDetectionModeArr = this.setScore;
@@ -2290,7 +2291,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -93674246);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4942;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.PngjUnsupportedException = i;
             this.PngjInputException = i2;
             fingerDetectionModeArr = this.setScore;
@@ -2315,7 +2316,7 @@ public class IdentySdk {
         if (i % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -2328,7 +2329,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4938;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.g = z;
                     return;
                 }
@@ -2342,7 +2343,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 336231612);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4938;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.g = z;
             return;
         } catch (Throwable th) {
@@ -2365,13 +2366,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0050, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = ~0;
         0 = defpackage.a.c(~(0 | (-258255913)), 301, ((((~(0 | (-757145193))) | 536941120) | (~((-38051841) | 0))) * (-301)) + ((((~((-757145193) | 0)) | (-258255913)) * (-602)) - 84911587), -167846730);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x010d  */
     /* JADX WARN: Removed duplicated region for block: B:14:0x012a  */
@@ -2382,7 +2383,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 int i2 = generateST + 67;
@@ -2395,7 +2396,7 @@ public class IdentySdk {
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
                 ((long[]) objArr[0])[0] = j + 5040;
-                Fpnative.valueOf = objArr;
+                com.identy.Fpnative.valueOf = objArr;
                 if (this.getFingers.containsKey(fingerDetectionMode)) {
                     int i3 = ((int[]) objArr[1])[0];
                     int i4 = ((i3 * i3) - (~(-(951852696 * i3)))) - 1;
@@ -2426,7 +2427,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -167846730);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5040;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (this.getFingers.containsKey(fingerDetectionMode)) {
             }
             return Integer.valueOf(i);
@@ -2451,7 +2452,7 @@ public class IdentySdk {
         long j;
         int i3;
         deduplication = (generateST + 3) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -2464,7 +2465,7 @@ public class IdentySdk {
                     int i6 = i5 ^ (i5 >>> 17);
                     ((int[]) objArr[1])[0] = i6 ^ (i6 << 5);
                     ((long[]) objArr[0])[0] = j + 4858;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.PngjUnsupportedException = i;
                     this.PngjInputException = i2;
                     valueOf();
@@ -2509,7 +2510,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1854097764);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4858;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.PngjUnsupportedException = i;
             this.PngjInputException = i2;
             valueOf();
@@ -2553,7 +2554,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 83) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -2567,7 +2568,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4854;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (template != null) {
                         throw new UnSupportedTemplateException();
                     }
@@ -2629,7 +2630,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1413796008);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4854;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template != null) {
             }
         } catch (Throwable th) {
@@ -2647,7 +2648,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 29) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -2662,7 +2663,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     generateST = (deduplication + 103) % 128;
                     ((long[]) objArr[0])[0] = j + 4978;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i4 = ((int[]) objArr[1])[0];
                     int i5 = i4 * i4;
                     int i6 = -(634473563 * i4);
@@ -2689,7 +2690,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -933214582);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4978;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i42 = ((int[]) objArr[1])[0];
             int i52 = i42 * i42;
             int i62 = -(634473563 * i42);
@@ -2720,7 +2721,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 17) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -2734,7 +2735,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     deduplication = (generateST + 13) % 128;
                     ((long[]) objArr[0])[0] = j + 5023;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i4 = ((int[]) objArr[1])[0];
                     int i5 = i4 * i4;
                     int i6 = -(1781495434 * i4);
@@ -2764,7 +2765,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 262917303);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5023;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i42 = ((int[]) objArr[1])[0];
             int i52 = i42 * i42;
             int i62 = -(1781495434 * i42);
@@ -2799,7 +2800,7 @@ public class IdentySdk {
         long j;
         int i = (deduplication + 17) % 128;
         generateST = i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (i + 3) % 128;
@@ -2813,7 +2814,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4957;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i4 = ((int[]) objArr[1])[0];
                     int i5 = i4 * i4;
                     int i6 = -(589793297 * i4);
@@ -2843,7 +2844,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1933657390);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4957;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i42 = ((int[]) objArr[1])[0];
             int i52 = i42 * i42;
             int i62 = -(589793297 * i42);
@@ -2881,12 +2882,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = ~java.lang.System.identityHashCode(0);
         0 = defpackage.a.c((~(0 | (-510988404))) | (-1009877684), 783, ((~((-472973364) | 0)) * (-783)) + 959133387, -2010617708);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x00fd  */
     /*
@@ -2895,7 +2896,7 @@ public class IdentySdk {
     public IdentySdk displayImages(boolean z) {
         long j;
         int i;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = deduplication + 19;
@@ -2907,8 +2908,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 5046;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 5046;
+                com.identy.Fpnative.valueOf = null;
                 this.uxd565jj = z;
                 i = generateST + 83;
                 deduplication = i % 128;
@@ -2926,7 +2927,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -2010617708);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 5046;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.uxd565jj = z;
             i = generateST + 83;
             deduplication = i % 128;
@@ -2952,11 +2953,11 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.c((~((~java.lang.System.identityHashCode(0)) | (-364175563))) | 134713717, 160, (((~(0 | 134713717)) | (-498594304)) * (-160)) - 2046146273, 2020304908);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 67) % 128;
      */
     /*
@@ -2964,7 +2965,7 @@ public class IdentySdk {
     */
     public IdentySdk displayResult(boolean z) {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = generateST + 3;
@@ -2976,8 +2977,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 5001;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 5001;
+                com.identy.Fpnative.valueOf = null;
                 this.addEncryptedTemplates = z;
                 return this;
             }
@@ -2991,7 +2992,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 2020304908);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 5001;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.addEncryptedTemplates = z;
             return this;
         } catch (Throwable th) {
@@ -3014,7 +3015,7 @@ public class IdentySdk {
         long j;
         int i;
         deduplication = (generateST + 21) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -3028,7 +3029,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4977;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (!this.getFingers.containsKey(fingerDetectionMode)) {
                         deduplication = (generateST + 97) % 128;
                         i = ((Integer) this.getFingers.get(fingerDetectionMode)).intValue();
@@ -3063,7 +3064,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1027036724);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4977;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (!this.getFingers.containsKey(fingerDetectionMode)) {
             }
             int i52 = ((int[]) objArr[1])[0];
@@ -3097,7 +3098,7 @@ public class IdentySdk {
     public IdentySdk elt() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 123) % 128;
@@ -3111,7 +3112,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4956;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i3 = ((int[]) objArr[1])[0];
                     int i4 = i3 * i3;
                     int i5 = -(274162730 * i3);
@@ -3141,7 +3142,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2009525555);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4956;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i32 = ((int[]) objArr[1])[0];
             int i42 = i32 * i32;
             int i52 = -(274162730 * i32);
@@ -3175,7 +3176,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 17) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -3189,7 +3190,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4902;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i4 = ((int[]) objArr[1])[0];
                     int i5 = i4 * i4;
                     int i6 = -(1701020042 * i4);
@@ -3220,7 +3221,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             deduplication = (generateST + 45) % 128;
             ((long[]) objArr[0])[0] = j + 4902;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i42 = ((int[]) objArr[1])[0];
             int i52 = i42 * i42;
             int i62 = -(1701020042 * i42);
@@ -3257,13 +3258,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = android.os.Process.myTid();
         0 = ~0;
         0 = defpackage.a.c((~(0 | 535676387)) | (~(0 | 1034565667)), 979, ((0 | 1034565667) * (-979)) + (((~(535676387 | 0)) * 979) + 167569156), -176073595);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Type inference failed for: r1v28, types: [boolean, int] */
     /*
@@ -3273,7 +3274,7 @@ public class IdentySdk {
         long j;
         int i = deduplication;
         generateST = (i + 93) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 105;
@@ -3285,9 +3286,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4874;
-                Fpnative.valueOf = 0;
-                int i3 = ((int[]) $$a[1])[0];
+                ((long[]) $$a_state[0])[0] = j + 4874;
+                com.identy.Fpnative.valueOf = null;
+                int i3 = ((int[]) $$a_state[1])[0];
                 int i4 = i3 * i3;
                 int i5 = -(392312081 * i3);
                 int i6 = (i4 ^ i5) + ((i4 & i5) << 1);
@@ -3317,7 +3318,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -176073595);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4874;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             int i32 = ((int[]) objArr4[1])[0];
             int i42 = i32 * i32;
             int i52 = -(392312081 * i32);
@@ -3357,7 +3358,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 37) % 128;
@@ -3372,7 +3373,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4978;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i5 = ((int[]) objArr[1])[0];
                     int i6 = ((i5 * i5) - (~(-(2104850807 * i5)))) - 1;
                     int i7 = -(i5 * 1101096829);
@@ -3407,7 +3408,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             deduplication = (generateST + 31) % 128;
             ((long[]) objArr[0])[0] = j + 4978;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i52 = ((int[]) objArr[1])[0];
             int i62 = ((i52 * i52) - (~(-(2104850807 * i52)))) - 1;
             int i72 = -(i52 * 1101096829);
@@ -3447,11 +3448,11 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.c((~((~java.lang.System.identityHashCode(0)) | (-538818365))) | 499255360, 970, (((-1038073725) | 0) * (-970)) - 356671459, -748634564);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 47) % 128;
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0162 A[RETURN] */
@@ -3463,7 +3464,7 @@ public class IdentySdk {
     public IdentySdk enableGuide() {
         long j;
         int i;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = generateST + 53;
@@ -3475,9 +3476,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4955;
-                Fpnative.valueOf = 0;
-                int i3 = ((int[]) $$a[1])[0];
+                ((long[]) $$a_state[0])[0] = j + 4955;
+                com.identy.Fpnative.valueOf = null;
+                int i3 = ((int[]) $$a_state[1])[0];
                 int i4 = i3 * i3;
                 int i5 = -(40975719 * i3);
                 int i6 = (i4 & i5) + (i4 | i5);
@@ -3508,7 +3509,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -748634564);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4955;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             int i32 = ((int[]) objArr4[1])[0];
             int i42 = i32 * i32;
             int i52 = -(40975719 * i32);
@@ -3547,12 +3548,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0057, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c((~(0 | (-706120408))) | (-207231128), 376, (((~((~0) | 706120407)) | 71831552) * (-376)) + (((642552384 | 0) * 376) + 1895081399), -1959843931);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:12:0x0179 A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:14:0x017a  */
@@ -3568,7 +3569,7 @@ public class IdentySdk {
         if (i2 % 2 == 0) {
             throw null;
         }
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i4 = i3 + 89;
@@ -3580,9 +3581,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 5045;
-                Fpnative.valueOf = 0;
-                int i5 = ((int[]) $$a[1])[0];
+                ((long[]) $$a_state[0])[0] = j + 5045;
+                com.identy.Fpnative.valueOf = null;
+                int i5 = ((int[]) $$a_state[1])[0];
                 int i6 = i5 * i5;
                 int i7 = -(301388543 * i5);
                 int i8 = ((i6 | i7) << 1) - (i6 ^ i7);
@@ -3615,7 +3616,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -1959843931);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 5045;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             int i52 = ((int[]) objArr4[1])[0];
             int i62 = i52 * i52;
             int i72 = -(301388543 * i52);
@@ -3685,7 +3686,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0155, code lost:
     
         com.identy.IdentySdk.generateST = (0 + 5) % 128;
-        0 = ((int[]) $$a[1])[0];
+        0 = ((int[]) $$a_state[1])[0];
         0 = 0 * 0;
         0 = -(1404602467 * 0);
         0 = ((0 | 0) << 1) - (0 ^ 0);
@@ -3768,7 +3769,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x0037, code lost:
     
-        0 = ((long[]) $$a[1])[1];
+        0 = ((long[]) $$a_state[1])[1];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, new java.lang.Object[1])).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:0x0051, code lost:
@@ -3777,7 +3778,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x006f, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[]{0 ^ (0 << 5)}};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[]{0 ^ (0 << 5)}};
         0 = ~0;
         0 = (((~(0 | (-532740091))) | (~((-540870657) | 0))) * 520) - 1224411497;
         0 = 0;
@@ -3790,7 +3791,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:44:0x0054, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x006c, code lost:
@@ -3821,12 +3822,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x011f, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0125, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4918;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4918;
+        com.identy.Fpnative.valueOf = null;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -3837,10 +3838,10 @@ public class IdentySdk {
         int i6 = i5 % 128;
         deduplication = i6;
         if (i5 % 2 != 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i7 = 63 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -3848,7 +3849,7 @@ public class IdentySdk {
     public IdentySdk enableSkip() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -3861,7 +3862,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 5048;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i3 = ((int[]) objArr[1])[0];
                     int i4 = i3 * i3;
                     int i5 = -(2080461665 * i3);
@@ -3891,7 +3892,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             generateST = (deduplication + 113) % 128;
             ((long[]) objArr[0])[0] = j + 5048;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i32 = ((int[]) objArr[1])[0];
             int i42 = i32 * i32;
             int i52 = -(2080461665 * i32);
@@ -3954,7 +3955,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0024, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x003c, code lost:
@@ -3963,15 +3964,15 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x005a, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.c(~(android.os.Process.myUid() | (-4276541)), -1504, (((~((-771611069) | 0)) | 767334528) * 1504) - 1003693777, 1921615470);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x003f, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x0057, code lost:
@@ -4002,12 +4003,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00f7, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00fd, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4866;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4866;
+        com.identy.Fpnative.valueOf = null;
         0.CaptureThumbActivity = com.identy.CaptureMode.L;
      */
     /*
@@ -4019,10 +4020,10 @@ public class IdentySdk {
         int i2 = i + 25;
         deduplication = i2 % 128;
         if (i2 % 2 != 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i3 = 54 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -4030,7 +4031,7 @@ public class IdentySdk {
     public IdentySdk enableTraining() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 113) % 128;
@@ -4045,7 +4046,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4915;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i4 = ((int[]) objArr[1])[0];
                     int i5 = ((i4 * i4) - (~(-(430545252 * i4)))) - 1;
                     int i6 = -(i4 * (-1949717110));
@@ -4074,7 +4075,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1971933747);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4915;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i42 = ((int[]) objArr[1])[0];
             int i52 = ((i42 * i42) - (~(-(430545252 * i42)))) - 1;
             int i62 = -(i42 * (-1949717110));
@@ -4114,12 +4115,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c(~((~0) | (-16861749)), 476, ((~((-16861749) | 0)) * 952) + (((481427467 | 0) * (-476)) - 1706127869), -1248022112);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0172 A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:12:0x0173  */
@@ -4130,7 +4131,7 @@ public class IdentySdk {
     public void enablesd(boolean z, boolean z2, int i) {
         long j;
         int i2;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i3 = deduplication + 3;
@@ -4142,9 +4143,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4904;
-                Fpnative.valueOf = 0;
-                int i4 = ((int[]) $$a[1])[0];
+                ((long[]) $$a_state[0])[0] = j + 4904;
+                com.identy.Fpnative.valueOf = null;
+                int i4 = ((int[]) $$a_state[1])[0];
                 int i5 = i4 * i4;
                 int i6 = -(1990423977 * i4);
                 int i7 = (((i5 ^ i6) + ((i5 & i6) << 1)) - (~(-(i4 * (-1337463437))))) - 1;
@@ -4176,7 +4177,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -1248022112);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4904;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             int i42 = ((int[]) objArr4[1])[0];
             int i52 = i42 * i42;
             int i62 = -(1990423977 * i42);
@@ -4210,7 +4211,7 @@ public class IdentySdk {
     public boolean enroll(int i, int i2) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -4221,7 +4222,7 @@ public class IdentySdk {
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((long[]) objArr[0])[0] = j + 5003;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.PngjUnsupportedException = i;
                     this.PngjInputException = i2;
                     valueOf();
@@ -4238,7 +4239,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             deduplication = (generateST + 35) % 128;
             ((long[]) objArr[0])[0] = j + 5003;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.PngjUnsupportedException = i;
             this.PngjInputException = i2;
             valueOf();
@@ -4261,7 +4262,7 @@ public class IdentySdk {
     public boolean enrollWithCustomTemplates(Template template, HashMap<Hand, String> hashMap) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         char c = 2;
         Throwable th = null;
         try {
@@ -4277,11 +4278,11 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 5009;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (template != null) {
                         throw new Exception(this.getData.getString(R.string.template_type_is_unknown));
                     }
-                    this.e = com.identy.com.identy.Action.ENROLL_WITH_TEMPLATE;
+                    this.e = com.identy.Action.ENROLL_WITH_TEMPLATE;
                     StringBuilder sb = new StringBuilder();
                     sb.append(this.e);
                     int i4 = ((int[]) objArr[1])[0];
@@ -4362,7 +4363,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -119137097);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5009;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template != null) {
             }
         } catch (Throwable th3) {
@@ -4385,13 +4386,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0058, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = (int) android.os.SystemClock.uptimeMillis();
         0 = ~(85786709 | 0);
         0 = defpackage.a.c((~(0 | 413102570)) | ((~((-85786710) | 0)) | 83886101), 407, ((0 | ((~((~0) | (-413102571))) | 83886101)) * 407) + (((411201962 | 0) * (-814)) + 17006335), -672302448);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x010f  */
     /* JADX WARN: Removed duplicated region for block: B:60:0x02dc  */
@@ -4403,7 +4404,7 @@ public class IdentySdk {
         long j;
         int i = (deduplication + 57) % 128;
         generateST = i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         char c = 2;
         Throwable th = null;
         boolean z = true;
@@ -4419,13 +4420,13 @@ public class IdentySdk {
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
                 ((long[]) objArr[0])[0] = j + 4904;
-                Fpnative.valueOf = objArr;
+                com.identy.Fpnative.valueOf = objArr;
                 if (template != null) {
                     throw new Exception(this.getData.getString(R.string.template_type_is_unknown));
                 }
                 IdentyUser defaultUser = getDefaultUser();
                 this.uxd565jk = defaultUser;
-                this.e = com.identy.com.identy.Action.ENROLL_WITH_TEMPLATE;
+                this.e = com.identy.Action.ENROLL_WITH_TEMPLATE;
                 StringBuilder sb = new StringBuilder();
                 sb.append(this.e);
                 sb.append("_");
@@ -4512,7 +4513,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -672302448);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4904;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template != null) {
             }
         } catch (Throwable th3) {
@@ -4533,7 +4534,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         Template template2 = template;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -4549,7 +4550,7 @@ public class IdentySdk {
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     ((long[]) objArr[0])[0] = j + 4856;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (template2 != null) {
                         throw new Exception(this.getData.getString(R.string.template_type_is_unknown));
                     }
@@ -4561,7 +4562,7 @@ public class IdentySdk {
                         sb.append(" for this operation");
                         throw new Exception(sb.toString());
                     }
-                    this.e = com.identy.com.identy.Action.ENROLL_WITH_TEMPLATE;
+                    this.e = com.identy.Action.ENROLL_WITH_TEMPLATE;
                     StringBuilder sb2 = new StringBuilder();
                     sb2.append(this.e);
                     int i6 = ((int[]) objArr[1])[0];
@@ -4617,7 +4618,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -147865372);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4856;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template2 != null) {
             }
         } catch (Throwable th) {
@@ -4638,7 +4639,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         Template template2 = template;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -4652,7 +4653,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     generateST = (deduplication + 15) % 128;
                     ((long[]) objArr[0])[0] = j + 5004;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (template2 != null) {
                         throw new Exception(this.getData.getString(R.string.template_type_is_unknown));
                     }
@@ -4663,7 +4664,7 @@ public class IdentySdk {
                         sb.append(" for this operation");
                         throw new Exception(sb.toString());
                     }
-                    this.e = com.identy.com.identy.Action.ENROLL_WITH_TEMPLATE;
+                    this.e = com.identy.Action.ENROLL_WITH_TEMPLATE;
                     StringBuilder sb2 = new StringBuilder();
                     sb2.append(this.e);
                     sb2.append("_");
@@ -4720,7 +4721,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 996249518);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5004;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template2 != null) {
             }
         } catch (Throwable th) {
@@ -4737,7 +4738,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 119) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -4753,7 +4754,7 @@ public class IdentySdk {
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     ((long[]) objArr[0])[0] = j + 4987;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.pfkrolGetQuality = true;
                     this.PngjInputException = 90;
                     int i6 = ((int[]) objArr[1])[0];
@@ -4787,7 +4788,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1782782372);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4987;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.pfkrolGetQuality = true;
             this.PngjInputException = 90;
             int i62 = ((int[]) objArr[1])[0];
@@ -4829,7 +4830,7 @@ public class IdentySdk {
         long j;
         int i;
         generateST = (deduplication + 1) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -4841,7 +4842,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4899;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     Activity activity = this.getData;
                     i = generateST + 27;
                     deduplication = i % 128;
@@ -4860,7 +4861,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1153600335);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4899;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             Activity activity2 = this.getData;
             i = generateST + 27;
             deduplication = i % 128;
@@ -4879,7 +4880,7 @@ public class IdentySdk {
     public Action getAction() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -4893,7 +4894,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     deduplication = (generateST + 43) % 128;
                     ((long[]) objArr[0])[0] = j + 4914;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     Action action = this.e;
                     generateST = (deduplication + 49) % 128;
                     return action;
@@ -4909,7 +4910,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1165546632);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4914;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             Action action2 = this.e;
             generateST = (deduplication + 49) % 128;
             return action2;
@@ -4927,7 +4928,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 87) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -4939,7 +4940,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4983;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.getServerRequest;
                 }
             }
@@ -4953,7 +4954,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             generateST = (deduplication + 59) % 128;
             ((long[]) objArr[0])[0] = j + 4983;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.getServerRequest;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -4967,7 +4968,7 @@ public class IdentySdk {
     public int getAllowedAttempts() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (generateST + 23) % 128;
@@ -4981,7 +4982,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4851;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.PngjUnsupportedException;
                 }
             }
@@ -4994,7 +4995,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1330868128);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4851;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.PngjUnsupportedException;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5016,14 +5017,14 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = (int) android.os.Process.getElapsedCpuTime();
         0 = ~(140897128 | 0);
         0 = ~0;
         0 = defpackage.a.c((~(0 | (-639786409))) | (~((-140897129) | 0)), 406, ((~(778567656 | 0)) * (-406)) + (((0 | (~((-138781249) | 0))) * (-406)) + 1368953161), -1540344450);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 125) % 128;
      */
     /*
@@ -5031,7 +5032,7 @@ public class IdentySdk {
     */
     public int getAllowedTimeLimit() {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = generateST + 73;
@@ -5043,8 +5044,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4869;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4869;
+                com.identy.Fpnative.valueOf = null;
                 return this.PngjInputException;
             }
             byte[] bArr = $$d;
@@ -5057,7 +5058,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -1540344450);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4869;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return this.PngjInputException;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5076,7 +5077,7 @@ public class IdentySdk {
         if (i % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -5090,7 +5091,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     deduplication = (generateST + 111) % 128;
                     ((long[]) objArr[0])[0] = j + 4883;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.getEncryptedTemplates;
                 }
             }
@@ -5103,7 +5104,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1528319940);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4883;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.getEncryptedTemplates;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5141,7 +5142,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0036, code lost:
@@ -5150,13 +5151,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.a();
         0 = ~0;
         0 = defpackage.a.c(((~(0 | 718925200)) | (-803078097)) | (~(0 | (-135883025))), 369, (((~((-718925201) | 0)) | (-220035921)) * (-369)) + ((((-84152897) | 0) * (-369)) - 94560498), 446634408);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 109) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
@@ -5183,12 +5184,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00eb, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00f1, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4978;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4978;
+        com.identy.Fpnative.valueOf = null;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -5198,10 +5199,10 @@ public class IdentySdk {
         int i = deduplication + 75;
         generateST = i % 128;
         if (i % 2 == 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i2 = 54 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -5215,11 +5216,11 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0054, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.c((~(java.lang.System.identityHashCode(0) | (-208393421))) | 570426112, 196, (((-778819533) | 0) * (-196)) - 1960252085, 1933539822);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -5228,7 +5229,7 @@ public class IdentySdk {
         long j;
         int i = generateST;
         deduplication = (i + 61) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 123;
@@ -5240,8 +5241,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4948;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4948;
+                com.identy.Fpnative.valueOf = null;
                 return this.getShortform;
             }
             byte[] bArr = $$d;
@@ -5254,7 +5255,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 1933539822);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4948;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return this.getShortform;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5275,7 +5276,7 @@ public class IdentySdk {
         if (i % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (i2 + 123) % 128;
@@ -5289,7 +5290,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4890;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     IdentyUser identyUser = new IdentyUser();
                     int i5 = ((int[]) objArr[1])[0];
                     int i6 = i5 * i5;
@@ -5322,7 +5323,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             deduplication = (generateST + 47) % 128;
             ((long[]) objArr[0])[0] = j + 4890;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             IdentyUser identyUser2 = new IdentyUser();
             int i52 = ((int[]) objArr[1])[0];
             int i62 = i52 * i52;
@@ -5361,7 +5362,7 @@ public class IdentySdk {
         if (i2 % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (i + 33) % 128;
@@ -5376,7 +5377,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     deduplication = (generateST + 91) % 128;
                     ((long[]) objArr[0])[0] = j + 4910;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.setScore;
                 }
             }
@@ -5389,7 +5390,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1988215601);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4910;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.setScore;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5410,12 +5411,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0049, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = (int) java.lang.Runtime.getRuntime().maxMemory();
         0 = defpackage.a.c((~(0 | (-371759708))) | (~(870648987 | 0)), -1324, (((~0) | 566559872) * 1324) + 946668373, 383792642);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 99) % 128;
      */
     /*
@@ -5423,7 +5424,7 @@ public class IdentySdk {
     */
     public int getFingerPrintDrawable() {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = generateST + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
@@ -5435,8 +5436,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4906;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4906;
+                com.identy.Fpnative.valueOf = null;
                 return this.Enroll2IndexActivity;
             }
             byte[] bArr = $$d;
@@ -5448,7 +5449,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -662434536);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4906;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return this.Enroll2IndexActivity;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5464,7 +5465,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 89) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -5478,7 +5479,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4850;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     Bitmap.CompressFormat compressFormat = this.CaptureRolledThumbActivity;
                     deduplication = (generateST + 39) % 128;
                     return compressFormat;
@@ -5495,7 +5496,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             deduplication = (generateST + 79) % 128;
             ((long[]) objArr[0])[0] = j + 4850;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             Bitmap.CompressFormat compressFormat2 = this.CaptureRolledThumbActivity;
             deduplication = (generateST + 39) % 128;
             return compressFormat2;
@@ -5517,7 +5518,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         InlineGuideOption inlineGuideOption;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (generateST + 109) % 128;
@@ -5531,7 +5532,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4851;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     inlineGuideOption = this.FingerAS;
                     if (inlineGuideOption == null) {
                         return inlineGuideOption;
@@ -5563,7 +5564,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -109722299);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4851;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             inlineGuideOption = this.FingerAS;
             if (inlineGuideOption == null) {
             }
@@ -5597,7 +5598,7 @@ public class IdentySdk {
         char c3;
         Object[] objArr2;
         float f;
-        Object[] objArr3 = Fpnative.valueOf;
+        Object[] objArr3 = com.identy.Fpnative.valueOf;
         try {
             try {
                 if (objArr3 != null) {
@@ -5612,7 +5613,7 @@ public class IdentySdk {
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                         deduplication = (generateST + 61) % 128;
                         ((long[]) objArr[0])[0] = j + 4951;
-                        Fpnative.valueOf = objArr;
+                        com.identy.Fpnative.valueOf = objArr;
                         PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
                         if (PngjBadSignature2 == null) {
                             char trimmedLength = (char) (TextUtils.getTrimmedLength(BuildConfig.FLAVOR) + 31077);
@@ -5802,7 +5803,7 @@ public class IdentySdk {
             objArr = (Object[]) cls7.getMethod((String) objArr22[0], Integer.TYPE).invoke(null, 1620083078);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4951;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
             if (PngjBadSignature2 == null) {
             }
@@ -5838,7 +5839,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 27) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -5852,7 +5853,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4945;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.closeDialog;
                 }
             }
@@ -5865,7 +5866,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 239994025);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4945;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.closeDialog;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5882,7 +5883,7 @@ public class IdentySdk {
         long j;
         int i = (generateST + 89) % 128;
         deduplication = i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (i + 77) % 128;
@@ -5897,7 +5898,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 5039;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.FingerOutput;
                 }
             }
@@ -5911,7 +5912,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -587468131);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5039;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.FingerOutput;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5926,7 +5927,7 @@ public class IdentySdk {
     public String getLocale() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -5940,7 +5941,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     deduplication = (generateST + 59) % 128;
                     ((long[]) objArr[0])[0] = j + 4953;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.Fpnative;
                 }
             }
@@ -5953,7 +5954,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1376569067);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4953;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.Fpnative;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -5991,7 +5992,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0036, code lost:
@@ -6000,13 +6001,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = (int) java.lang.Runtime.getRuntime().maxMemory();
         0 = ~0;
         0 = defpackage.a.c((~(0 | 43275425)) | 42209280, 49, ((((~(0 | (-542164706))) | 43275425) | (~(542164705 | 0))) * (-49)) + ((((~(43275425 | 0)) | (-584373986)) * 98) + 1241180500), 384144782);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
@@ -6032,13 +6033,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00e8, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 13) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00f6, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4926;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4926;
+        com.identy.Fpnative.valueOf = null;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -6048,17 +6049,17 @@ public class IdentySdk {
         int i = generateST + 95;
         deduplication = i % 128;
         if (i % 2 != 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i2 = 89 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
     public int getOutputWidth() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 97) % 128;
@@ -6072,7 +6073,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4928;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.pfk;
                 }
             }
@@ -6085,7 +6086,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 650866679);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4928;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.pfk;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6107,7 +6108,7 @@ public class IdentySdk {
         if (i % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -6121,7 +6122,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 5036;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.getAttempts;
                 }
             }
@@ -6135,7 +6136,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1569644865);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5036;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.getAttempts;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6152,7 +6153,7 @@ public class IdentySdk {
     public int getQualityMaxRetries() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 5) % 128;
@@ -6167,7 +6168,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4978;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i4 = this.isFoundMatchingTemplates;
                     deduplication = (generateST + 15) % 128;
                     return i4;
@@ -6182,7 +6183,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1495623676);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4978;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i42 = this.isFoundMatchingTemplates;
             deduplication = (generateST + 15) % 128;
             return i42;
@@ -6205,7 +6206,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = (int) android.os.SystemClock.uptimeMillis();
         0 = ((((~((-760452717) | 0)) | 219350060) | (~((-261563437) | 0))) * (-754)) - 1995044639;
         0 = ~((-219350061) | 0);
@@ -6213,14 +6214,14 @@ public class IdentySdk {
         0 = defpackage.a.c(0 | (-760452717), 754, ((0 | (~((-42213377) | 0))) * (-754)) + 0, -1290200769);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public int getQualityMinRetries() {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = deduplication + 7;
@@ -6232,8 +6233,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4852;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4852;
+                com.identy.Fpnative.valueOf = null;
                 return this.ERRORS;
             }
             byte[] bArr = $$d;
@@ -6247,7 +6248,7 @@ public class IdentySdk {
             j = ((long[]) objArr4[0])[0];
             deduplication = (generateST + 3) % 128;
             ((long[]) objArr4[0])[0] = j + 4852;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return this.ERRORS;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6267,7 +6268,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -6281,7 +6282,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     generateST = (deduplication + 77) % 128;
                     ((long[]) objArr[0])[0] = j + 4961;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (this.setFoundMatchingTemplates.containsKey(fingerDetectionMode)) {
                         int i4 = ((int[]) objArr[1])[0];
                         int i5 = i4 * i4;
@@ -6317,7 +6318,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1015469051);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4961;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (this.setFoundMatchingTemplates.containsKey(fingerDetectionMode)) {
             }
             return Integer.valueOf(i);
@@ -6336,7 +6337,7 @@ public class IdentySdk {
         long j;
         int i = (deduplication + 61) % 128;
         generateST = i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (i + 123) % 128;
@@ -6351,7 +6352,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4917;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.configureroll;
                 }
             }
@@ -6365,7 +6366,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1175882325);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4917;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.configureroll;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6385,7 +6386,7 @@ public class IdentySdk {
         if (i % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -6398,7 +6399,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4870;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.Enroll4FActivity;
                 }
             }
@@ -6412,7 +6413,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1947950987);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4870;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.Enroll4FActivity;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6427,7 +6428,7 @@ public class IdentySdk {
     public int getSpoofMinRetries() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -6441,7 +6442,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     deduplication = (generateST + 23) % 128;
                     ((long[]) objArr[0])[0] = j + 4984;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.Enroll2TActivity;
                 }
             }
@@ -6454,7 +6455,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 877187135);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4984;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.Enroll2TActivity;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6470,7 +6471,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 75) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -6484,7 +6485,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4912;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     IdentyUser tempUser = IdentyUserManager.getInstance(this.getData).getTempUser(IdentyUserManager.getTUser());
                     deduplication = (generateST + 3) % 128;
                     return tempUser;
@@ -6499,7 +6500,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1650309639);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4912;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             IdentyUser tempUser2 = IdentyUserManager.getInstance(this.getData).getTempUser(IdentyUserManager.getTUser());
             deduplication = (generateST + 3) % 128;
             return tempUser2;
@@ -6523,18 +6524,18 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.c((~(((int) android.os.Process.getStartElapsedRealtime()) | 590083768)) | 91194488, 529, (((~((~0) | 590083768)) | 71565376) * 529) - 1876653424, 220873416);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public UIAfterCaptures getUitype() {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = generateST + 85;
@@ -6546,8 +6547,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4977;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4977;
+                com.identy.Fpnative.valueOf = null;
                 return this.destroy;
             }
             byte[] bArr = $$d;
@@ -6559,7 +6560,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 220873416);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4977;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return this.destroy;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6575,7 +6576,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 113) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -6590,7 +6591,7 @@ public class IdentySdk {
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     ((long[]) objArr[0])[0] = j + 5001;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.Attempt;
                 }
             }
@@ -6603,7 +6604,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -597946414);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5001;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.Attempt;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6625,12 +6626,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0050, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c(~((~0) | (-33622081)), -948, (((~((-193144955) | 0)) | (-305744326)) * (-948)) + 1128867971, -1125117187);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -6639,7 +6640,7 @@ public class IdentySdk {
         long j;
         int i = deduplication;
         generateST = (i + 89) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 11;
@@ -6651,8 +6652,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4963;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4963;
+                com.identy.Fpnative.valueOf = null;
                 return this.Action;
             }
             byte[] bArr = $$d;
@@ -6666,7 +6667,7 @@ public class IdentySdk {
             j = ((long[]) objArr4[0])[0];
             deduplication = (generateST + 7) % 128;
             ((long[]) objArr4[0])[0] = j + 4963;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return this.Action;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -6688,7 +6689,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0107, code lost:
     
-        0 = ((int[]) $$a[1])[0];
+        0 = ((int[]) $$a_state[1])[0];
         0 = 0 * 0;
         0 = -(577182738 * 0);
         0 = ((0 | 0) << 1) - (0 ^ 0);
@@ -6738,7 +6739,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001d, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0035, code lost:
@@ -6747,12 +6748,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x0038, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = (int) android.os.Process.getStartElapsedRealtime();
         0 = defpackage.a.c((~(0 | (-19400863))) | ((~((-518290143) | 0)) | 2099358), -69, (((~((-516190785) | 0)) | (~((-17301505) | 0))) * 69) - 1055137040, -656555536);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x001b, code lost:
     
@@ -6775,12 +6776,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00d8, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00de, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4910;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4910;
+        com.identy.Fpnative.valueOf = null;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -6790,10 +6791,10 @@ public class IdentySdk {
         int i = generateST + 113;
         deduplication = i % 128;
         if (i % 2 != 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i2 = 31 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -6824,7 +6825,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
         com.identy.IdentySdk.deduplication = (0 + 29) % 128;
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x003c, code lost:
@@ -6833,14 +6834,14 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x003f, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.a();
         0 = ~0;
         0 = ~(537978563 | 0);
         0 = defpackage.a.c(0 | 39089283, 712, (((~(0 | (-38014977))) | (~(0 | 575993539))) * (-712)) + ((((-575993540) | 0) * (-712)) + 1943442631), -874555431);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
@@ -6867,12 +6868,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00e4, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00ea, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4966;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4966;
+        com.identy.Fpnative.valueOf = null;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -6883,10 +6884,10 @@ public class IdentySdk {
         int i2 = i % 128;
         generateST = i2;
         if (i % 2 == 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i3 = 83 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -6901,7 +6902,7 @@ public class IdentySdk {
         double d;
         int e;
         generateST = (deduplication + 117) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -6913,7 +6914,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4962;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     ActivityManager activityManager = (ActivityManager) this.getData.getSystemService("activity");
                     ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
                     activityManager.getMemoryInfo(memoryInfo);
@@ -6948,7 +6949,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1285194678);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4962;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             ActivityManager activityManager2 = (ActivityManager) this.getData.getSystemService("activity");
             ActivityManager.MemoryInfo memoryInfo2 = new ActivityManager.MemoryInfo();
             activityManager2.getMemoryInfo(memoryInfo2);
@@ -6981,7 +6982,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 73) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -6995,7 +6996,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     deduplication = (generateST + 29) % 128;
                     ((long[]) objArr[0])[0] = j + 4906;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.CapturePosition;
                 }
             }
@@ -7008,7 +7009,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 297710465);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4906;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.CapturePosition;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -7054,7 +7055,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0027, code lost:
     
-        0 = ((long[]) $$a[0])[1];
+        0 = ((long[]) $$a_state[0])[1];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, new java.lang.Object[1])).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0041, code lost:
@@ -7063,17 +7064,17 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x005f, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = (int) java.lang.Runtime.getRuntime().maxMemory();
         0 = ~0;
         0 = defpackage.a.c(((~(0 | (-209024256))) | 4486208) | (~(0 | 494403071)), 521, ((289865024 | 0) * 521) + ((((~(0 | 289865024)) | 209024255) * (-1042)) + 1330521590), 1479006954);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0044, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x005c, code lost:
@@ -7104,14 +7105,14 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x010b, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0111, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4990;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4990;
+        com.identy.Fpnative.valueOf = null;
         0 = 0.addTemplates;
-        0 = ((int[]) $$a[1])[0];
+        0 = ((int[]) $$a_state[1])[0];
         0 = ((0 * 0) - (~(-(65286046 * 0)))) - 1;
         0 = -(0 * (-454904652));
         0 = (0 & 0) + (0 | 0);
@@ -7136,10 +7137,10 @@ public class IdentySdk {
         int i2 = i % 128;
         generateST = i2;
         if (i % 2 == 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i3 = 82 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -7153,7 +7154,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = ((((~((-615185215) | 0)) | 536900352) | (~(116295934 | 0))) * (-880)) + 1434790607;
         0 = (~((-615185215) | (~0))) | (-116295935);
@@ -7161,7 +7162,7 @@ public class IdentySdk {
         0 = defpackage.a.c(0, 880, ((0 | 0) * (-880)) + 0, -205658018);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         0 = com.identy.IdentySdk.deduplication + 41;
      */
     /*
@@ -7169,7 +7170,7 @@ public class IdentySdk {
     */
     public boolean isDisableOuterBox() {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = generateST + 99;
@@ -7182,8 +7183,8 @@ public class IdentySdk {
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
                 generateST = 0 % 128;
-                ((long[]) $$a[0])[0] = j + 4910;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4910;
+                com.identy.Fpnative.valueOf = null;
                 return this.toString;
             }
             byte[] bArr = $$d;
@@ -7197,7 +7198,7 @@ public class IdentySdk {
             int i2 = deduplication + 83;
             generateST = i2 % 128;
             ((long[]) objArr4[0])[0] = j + 4910;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return this.toString;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -7236,7 +7237,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
         com.identy.IdentySdk.generateST = (0 + 33) % 128;
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x003c, code lost:
@@ -7245,14 +7246,14 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x003f, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = android.os.Process.myPid();
         0 = (~((-433245951) | 0)) | 29393472;
         0 = ~((~0) | 469495807);
         0 = defpackage.a.c((~(0 | (-403852479))) | 0, 470, ((0 | 0) * (-470)) + 1428919231, 373493212);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
@@ -7278,13 +7279,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00de, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 117) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00ec, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4925;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4925;
+        com.identy.Fpnative.valueOf = null;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7295,10 +7296,10 @@ public class IdentySdk {
         int i2 = i + 103;
         generateST = i2 % 128;
         if (i2 % 2 == 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i3 = 52 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -7310,7 +7311,7 @@ public class IdentySdk {
         if (i % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -7324,7 +7325,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     deduplication = (generateST + 97) % 128;
                     ((long[]) objArr[0])[0] = j + 4956;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.uxd565jj;
                 }
             }
@@ -7338,7 +7339,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1201169133);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4956;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.uxd565jj;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -7376,7 +7377,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0036, code lost:
@@ -7385,11 +7386,11 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.c((~((~((int) java.lang.Runtime.getRuntime().totalMemory())) | 477793963)) | (-642616897), 262, (((~(477793963 | 0)) | (-642616897)) * 262) - 1285726773, 2105969858);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
@@ -7415,12 +7416,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00d5, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00db, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4906;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4906;
+        com.identy.Fpnative.valueOf = null;
         0 = 0.pfkrol;
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 53) % 128;
      */
@@ -7432,10 +7433,10 @@ public class IdentySdk {
         int i = deduplication + 29;
         generateST = i % 128;
         if (i % 2 == 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i2 = 48 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -7449,13 +7450,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0057, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = ~(1073004499 | 0);
         0 = defpackage.a.c((~(0 | (-574115220))) | ((~((-1073004500) | 0)) | 573574547), 407, ((0 | ((~((~0) | 574115219)) | 573574547)) * 407) + ((((-1073545172) | 0) * (-814)) + 1509894921), -48751761);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7468,7 +7469,7 @@ public class IdentySdk {
         if (i % 2 != 0) {
             throw null;
         }
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i3 = i2 + 77;
@@ -7480,8 +7481,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4949;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4949;
+                com.identy.Fpnative.valueOf = null;
                 return this.ppk;
             }
             byte[] bArr = $$d;
@@ -7494,7 +7495,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -48751761);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4949;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return this.ppk;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -7521,7 +7522,7 @@ public class IdentySdk {
         if (i2 % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (i + 45) % 128;
@@ -7539,7 +7540,7 @@ public class IdentySdk {
                     int i8 = i7 ^ (i7 >>> 17);
                     ((int[]) objArr[1])[0] = i8 ^ (i8 << 5);
                     ((long[]) objArr[0])[0] = j + 4971;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (!this.e.equals(com.identy.Action.CAPTURE)) {
                         deduplication = (generateST + 69) % 128;
                         return this.PngjBadSignature;
@@ -7567,7 +7568,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -849504758);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4971;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (!this.e.equals(com.identy.Action.CAPTURE)) {
             }
         } catch (Throwable th) {
@@ -7583,7 +7584,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 75) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -7599,7 +7600,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     deduplication = (generateST + 91) % 128;
                     ((long[]) objArr[0])[0] = j + 4964;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.toJson;
                 }
             }
@@ -7613,7 +7614,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1674705348);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4964;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.toJson;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -7639,7 +7640,7 @@ public class IdentySdk {
         if (i2 % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -7654,7 +7655,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     generateST = (deduplication + 107) % 128;
                     ((long[]) objArr[0])[0] = j + 5018;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     length = fingerDetectionModeArr.length;
                     int i6 = ((int[]) objArr[1])[0];
                     int i7 = ((i6 * i6) - (~(-(1581649989 * i6)))) - 1;
@@ -7690,7 +7691,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1265271303);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5018;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             length = fingerDetectionModeArr.length;
             int i62 = ((int[]) objArr[1])[0];
             int i72 = ((i62 * i62) - (~(-(1581649989 * i62)))) - 1;
@@ -7725,7 +7726,7 @@ public class IdentySdk {
         if (i2 % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (i + 47) % 128;
@@ -7739,7 +7740,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4901;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.resetAttempt;
                 }
             }
@@ -7752,7 +7753,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1766899627);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4901;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.resetAttempt;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -7789,7 +7790,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0036, code lost:
@@ -7798,11 +7799,11 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.c((~((~java.lang.System.identityHashCode(0)) | 92524537)) | (-406364743), 305, (((~(0 | 92524537)) | (-498855936)) * 305) - 1958702672, -3857954);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
@@ -7828,12 +7829,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00d3, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00d9, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4912;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4912;
+        com.identy.Fpnative.valueOf = null;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7843,10 +7844,10 @@ public class IdentySdk {
         int i = deduplication + 71;
         generateST = i % 128;
         if (i % 2 == 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i2 = 69 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -7860,19 +7861,19 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = ~java.lang.System.identityHashCode(0);
         0 = defpackage.a.c((~(0 | (-30636977))) | 1247536, 52, (((~(30636976 | 0)) | ((~((-468252304) | 0)) | 438862863)) * (-52)) + (((~(469499839 | 0)) * 52) + 1780049803), 256620041);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean isKidsCapture() {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = generateST + 103;
@@ -7884,10 +7885,10 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4870;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4870;
+                com.identy.Fpnative.valueOf = null;
                 String str = this.getShortform;
-                int i2 = ((int[]) $$a[1])[0];
+                int i2 = ((int[]) $$a_state[1])[0];
                 int i3 = ((i2 * i2) - (~(-(1035472495 * i2)))) - 1;
                 int i4 = -(i2 * 311778337);
                 int i5 = (i3 & i4) + (i4 | i3);
@@ -7912,7 +7913,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 256620041);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4870;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             String str2 = this.getShortform;
             int i22 = ((int[]) objArr4[1])[0];
             int i32 = ((i22 * i22) - (~(-(1035472495 * i22)))) - 1;
@@ -7943,7 +7944,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 21) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -7960,7 +7961,7 @@ public class IdentySdk {
                     int i6 = i5 ^ (i5 >>> 17);
                     ((int[]) objArr[1])[0] = i6 ^ (i6 << 5);
                     ((long[]) objArr[0])[0] = j + 4853;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.pfkrolGetQuality;
                 }
             }
@@ -7973,7 +7974,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1407188725);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4853;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.pfkrolGetQuality;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -7988,7 +7989,7 @@ public class IdentySdk {
     public CaptureMode k() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 37) % 128;
@@ -8002,7 +8003,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     generateST = (deduplication + 11) % 128;
                     ((long[]) objArr[0])[0] = j + 4877;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.CaptureThumbActivity;
                 }
             }
@@ -8016,7 +8017,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1246483723);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4877;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.CaptureThumbActivity;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -8032,7 +8033,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 53) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -8045,7 +8046,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4953;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     LManager lManager = this.PngjBadCrcException;
                     generateST = (deduplication + 95) % 128;
                     return lManager;
@@ -8061,7 +8062,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2100614122);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4953;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             LManager lManager2 = this.PngjBadCrcException;
             generateST = (deduplication + 95) % 128;
             return lManager2;
@@ -8077,8 +8078,8 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f4, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4878;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4878;
+        com.identy.Fpnative.valueOf = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x00ff, code lost:
     
@@ -8147,7 +8148,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x015e, code lost:
     
-        0.e = com.identy.com.identy.Action.MATCH_WITH_TEMPLATE;
+        0.e = com.identy.Action.MATCH_WITH_TEMPLATE;
         0 = new java.lang.StringBuilder();
         0.append(0.e);
         0.append("_");
@@ -8166,7 +8167,7 @@ public class IdentySdk {
         0 = new com.identy.VerifyIdentyResponse(0.h, 0.e, 0.isQualityFailed, 0.Attempt, 0.getPadSub1, 0.getQualityScore, 0.values, 0.getData, 0.i);
         0 = 0.h;
         0 = 0.getPadSub2;
-        0 = ((int[]) $$a[1])[0];
+        0 = ((int[]) $$a_state[1])[0];
         0 = 0 * 0;
         0 = -(1320108001 * 0);
         0 = (0 ^ 0) + ((0 & 0) << 1);
@@ -8250,7 +8251,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x002d, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0022, code lost:
@@ -8263,14 +8264,14 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x0048, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = 2;
         0 = ~0;
         0 = defpackage.a.c((~(0 | (-132263))) | ((~(0 | 499287782)) | (-499554023)), 140, ((132262 | (~((-398503) | 0))) * (-280)) + (((0 | (-398503)) * 140) + 1791282863), 635268508);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:53:0x002b, code lost:
     
@@ -8292,7 +8293,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00ed, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x009c, code lost:
     
@@ -8308,10 +8309,10 @@ public class IdentySdk {
         int i = generateST + 69;
         deduplication = i % 128;
         if (i % 2 != 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i2 = 6 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -8319,7 +8320,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         Finger finger;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -8333,7 +8334,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 5043;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (template != null || template2 == null) {
                         throw new UnSupportedTemplateException();
                     }
@@ -8439,7 +8440,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1093565825);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5043;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template != null) {
             }
             throw new UnSupportedTemplateException();
@@ -8472,7 +8473,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0133, code lost:
     
-        0.e = com.identy.com.identy.Action.MATCH_WITH_TEMPLATE;
+        0.e = com.identy.Action.MATCH_WITH_TEMPLATE;
         0 = new java.lang.StringBuilder();
         0.append(0.e);
         0.append("_");
@@ -8487,7 +8488,7 @@ public class IdentySdk {
         0 = new java.util.HashMap();
         0 = new java.util.Date();
         0 = (float) 0.getScore();
-        0 = ((int[]) $$a[1])[0];
+        0 = ((int[]) $$a_state[1])[0];
         0 = 0 * 0;
         0 = -(2064437118 * 0);
         0 = (0 & 0) + (0 | 0);
@@ -8532,7 +8533,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 85) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -8545,7 +8546,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     generateST = (deduplication + 95) % 128;
                     ((long[]) objArr[0])[0] = j + 4887;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (template != null || template2 == null) {
                         throw new UnSupportedTemplateException();
                     }
@@ -8581,7 +8582,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1487803151);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4887;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template != null) {
             }
             throw new UnSupportedTemplateException();
@@ -8604,7 +8605,7 @@ public class IdentySdk {
         long j;
         int i;
         deduplication = (generateST + 29) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -8617,7 +8618,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4920;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     QualityMode qualityMode = this.DeduplicationIdentyResponse;
                     i = deduplication + 89;
                     generateST = i % 128;
@@ -8636,7 +8637,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -182361609);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4920;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             QualityMode qualityMode2 = this.DeduplicationIdentyResponse;
             i = deduplication + 89;
             generateST = i % 128;
@@ -8657,7 +8658,7 @@ public class IdentySdk {
         long j;
         int i = (deduplication + 11) % 128;
         generateST = i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (i + 51) % 128;
@@ -8672,7 +8673,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4955;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     FingerStatusUpdator fingerStatusUpdator = this.getL3Score;
                     deduplication = (generateST + 99) % 128;
                     return fingerStatusUpdator;
@@ -8687,7 +8688,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1933260075);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4955;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             FingerStatusUpdator fingerStatusUpdator2 = this.getL3Score;
             deduplication = (generateST + 99) % 128;
             return fingerStatusUpdator2;
@@ -8708,7 +8709,7 @@ public class IdentySdk {
         if (i % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -8721,7 +8722,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4857;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.getPadSub2;
                 }
             }
@@ -8735,7 +8736,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             deduplication = (generateST + 117) % 128;
             ((long[]) objArr[0])[0] = j + 4857;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.getPadSub2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -8751,7 +8752,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 89) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -8765,7 +8766,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4941;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return new HashSet(this.CaptureFingersActivity);
                 }
             }
@@ -8778,7 +8779,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 746771215);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4941;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return new HashSet(this.CaptureFingersActivity);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -8804,7 +8805,7 @@ public class IdentySdk {
         int i;
         HashMap<Pair<Hand, Finger>, PngjExceptionInternal> PngjException2;
         Map.Entry<Pair<Hand, Finger>, PngjExceptionInternal> next;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -8818,7 +8819,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 5010;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     length = fingerDetectionModeArr.length;
                     for (i = 0; i < length; i++) {
                         int i5 = deduplication + 79;
@@ -8882,7 +8883,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 72204456);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5010;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             length = fingerDetectionModeArr.length;
             while (i < length) {
             }
@@ -8919,12 +8920,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0055, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c((~(0 | 863894486)) | ((~((~0) | (-538751745))) | (~((-285280279) | 0))), 867, ((((~((-824032023) | 0)) | 538751744) | (~(325142742 | 0))) * (-1734)) + ((((~((-824032023) | 0)) | (~(325142742 | 0))) * (-867)) - 755802724), -1278610547);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -8933,7 +8934,7 @@ public class IdentySdk {
         long j;
         int i = deduplication;
         generateST = (i + 35) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 79;
@@ -8945,8 +8946,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4964;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4964;
+                com.identy.Fpnative.valueOf = null;
                 return this.cvtmat2ba;
             }
             byte[] bArr = $$d;
@@ -8959,7 +8960,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -1278610547);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4964;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return this.cvtmat2ba;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -8980,7 +8981,7 @@ public class IdentySdk {
         if (i % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -8995,7 +8996,7 @@ public class IdentySdk {
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     ((long[]) objArr[0])[0] = j + 5014;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i6 = ((int[]) objArr[1])[0];
                     int i7 = i6 * i6;
                     int i8 = -(1750353624 * i6);
@@ -9026,7 +9027,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             deduplication = (generateST + 53) % 128;
             ((long[]) objArr[0])[0] = j + 5014;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i62 = ((int[]) objArr[1])[0];
             int i72 = i62 * i62;
             int i82 = -(1750353624 * i62);
@@ -9056,7 +9057,7 @@ public class IdentySdk {
     public void setAllowHandChange(boolean z) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 83) % 128;
@@ -9070,7 +9071,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4866;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.setDConfig = z;
                     generateST = (deduplication + 85) % 128;
                     return;
@@ -9085,7 +9086,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2083029511);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4866;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.setDConfig = z;
             generateST = (deduplication + 85) % 128;
             return;
@@ -9104,7 +9105,7 @@ public class IdentySdk {
     public void setAllowTabletLandscape(boolean z) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -9121,7 +9122,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     generateST = (deduplication + 23) % 128;
                     ((long[]) objArr[0])[0] = j + 5041;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.EnrollThumbActivity = z;
                 }
             }
@@ -9135,7 +9136,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             deduplication = (generateST + 107) % 128;
             ((long[]) objArr[0])[0] = j + 5041;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.EnrollThumbActivity = z;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -9156,11 +9157,11 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.c((~((~((int) android.os.Process.getStartElapsedRealtime())) | (-48086436))) | 9973155, 191, (((~(0 | (-48086436))) | 546975715) * 191) - 1488831675, -1309727729);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 1) % 128;
      */
     /*
@@ -9168,7 +9169,7 @@ public class IdentySdk {
     */
     public void setAllowVerificationAfterSpoof(boolean z) {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = deduplication + 37;
@@ -9180,8 +9181,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4919;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4919;
+                com.identy.Fpnative.valueOf = null;
                 this.e1 = z;
             }
             byte[] bArr = $$d;
@@ -9193,7 +9194,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -1309727729);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4919;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.e1 = z;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -9213,7 +9214,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -9226,7 +9227,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 5016;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.Action = fingerAS;
                     i = deduplication + 1;
                     generateST = i % 128;
@@ -9245,7 +9246,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1734199529);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5016;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.Action = fingerAS;
             i = deduplication + 1;
             generateST = i % 128;
@@ -9266,7 +9267,7 @@ public class IdentySdk {
         long j;
         int i = (deduplication + 13) % 128;
         generateST = i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (i + 15) % 128;
@@ -9280,7 +9281,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4959;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.CaptureRolledFingersActivity = z;
                 }
             }
@@ -9294,7 +9295,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             generateST = (deduplication + 11) % 128;
             ((long[]) objArr[0])[0] = j + 4959;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.CaptureRolledFingersActivity = z;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -9309,7 +9310,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 11) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -9322,7 +9323,7 @@ public class IdentySdk {
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     ((long[]) objArr[0])[0] = j + 4973;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.PngjUnsupportedException = i;
                     this.PngjInputException = i2;
                     valueOf();
@@ -9340,7 +9341,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 598037894);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4973;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.PngjUnsupportedException = i;
             this.PngjInputException = i2;
             valueOf();
@@ -9364,7 +9365,7 @@ public class IdentySdk {
         if (i2 % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -9377,7 +9378,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4926;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.isQualityFailed = i;
                     return this;
                 }
@@ -9391,7 +9392,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 707867423);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4926;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.isQualityFailed = i;
             return this;
         } catch (Throwable th) {
@@ -9413,7 +9414,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -9427,7 +9428,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     generateST = (deduplication + 7) % 128;
                     ((long[]) objArr[0])[0] = j + 4980;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.values = identyCustomEncryption;
                     i = deduplication + 67;
                     generateST = i % 128;
@@ -9447,7 +9448,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1437149504);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4980;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.values = identyCustomEncryption;
             i = deduplication + 67;
             generateST = i % 128;
@@ -9472,12 +9473,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = ~java.lang.System.identityHashCode(0);
         0 = defpackage.a.c((~(0 | (-495690594))) | 650360512, 494, (((-419954978) | 0) * 494) + 1343344045, -1134655906);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -9486,7 +9487,7 @@ public class IdentySdk {
         long j;
         int i = deduplication;
         generateST = (i + 33) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 117;
@@ -9498,8 +9499,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4925;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4925;
+                com.identy.Fpnative.valueOf = null;
                 this.getAttempts = hashMap;
                 return this;
             }
@@ -9512,7 +9513,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -1134655906);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4925;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.getAttempts = hashMap;
             return this;
         } catch (Throwable th) {
@@ -9533,7 +9534,7 @@ public class IdentySdk {
         if (i % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -9547,7 +9548,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4959;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.getScore = capturePosition;
                     setDetectionMode(fingerDetectionModeArr);
                     generateST = (deduplication + 101) % 128;
@@ -9564,7 +9565,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 208998406);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4959;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.getScore = capturePosition;
             setDetectionMode(fingerDetectionModeArr);
             generateST = (deduplication + 101) % 128;
@@ -9589,14 +9590,14 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0053, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.a();
         0 = ~(355378127 | 0);
         0 = ~0;
         0 = defpackage.a.c((~(0 | (-854267408))) | (~((-355378128) | 0)), 406, ((~(938457039 | 0)) * (-406)) + (((0 | (~((-84189633) | 0))) * (-406)) - 990926187), -1049296627);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 17) % 128;
      */
     /*
@@ -9613,7 +9614,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 99) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -9626,7 +9627,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     deduplication = (generateST + 13) % 128;
                     ((long[]) objArr[0])[0] = j + 4855;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.cvtyuv2bgr = z;
                     this.uxd566jk = z2;
                     return this;
@@ -9642,7 +9643,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             generateST = (deduplication + 101) % 128;
             ((long[]) objArr[0])[0] = j + 4855;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.cvtyuv2bgr = z;
             this.uxd566jk = z2;
             return this;
@@ -9664,7 +9665,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (generateST + 69) % 128;
@@ -9678,7 +9679,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4867;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.uxd565jj = z;
                     i = generateST + 109;
                     deduplication = i % 128;
@@ -9699,7 +9700,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             deduplication = (generateST + 53) % 128;
             ((long[]) objArr[0])[0] = j + 4867;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.uxd565jj = z;
             i = generateST + 109;
             deduplication = i % 128;
@@ -9717,7 +9718,7 @@ public class IdentySdk {
     public IdentySdk setEncryption(IdentyEncrytion identyEncrytion, String str) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -9729,7 +9730,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4912;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.getPadSub1 = identyEncrytion;
                     this.getQualityScore = str;
                     return this;
@@ -9745,7 +9746,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1905997335);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4912;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.getPadSub1 = identyEncrytion;
             this.getQualityScore = str;
             return this;
@@ -9766,7 +9767,7 @@ public class IdentySdk {
         long j;
         int i2 = deduplication;
         generateST = (i2 + 101) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (i2 + 9) % 128;
@@ -9780,7 +9781,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 5017;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.Enroll2IndexActivity = i;
                     this.toString = z;
                     generateST = (deduplication + 31) % 128;
@@ -9797,7 +9798,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 465340497);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5017;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.Enroll2IndexActivity = i;
             this.toString = z;
             generateST = (deduplication + 31) % 128;
@@ -9821,12 +9822,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0058, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = android.os.Process.myPid();
         0 = defpackage.a.c((~(0 | (-223041858))) | (-793762754), 302, ((~((-151210242) | 0)) * (-604)) + ((((~((~0) | (-151210242))) | (~((-71831617) | 0))) * (-302)) - 1882075063), -604479582);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -9839,7 +9840,7 @@ public class IdentySdk {
         if (i2 % 2 != 0) {
             throw null;
         }
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i3 = i + 111;
@@ -9851,8 +9852,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 5039;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 5039;
+                com.identy.Fpnative.valueOf = null;
                 this.CaptureMode = z;
                 this.FingerAS = inlineGuideOption;
                 return this;
@@ -9867,7 +9868,7 @@ public class IdentySdk {
             j = ((long[]) objArr4[0])[0];
             generateST = (deduplication + 75) % 128;
             ((long[]) objArr4[0])[0] = j + 5039;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.CaptureMode = z;
             this.FingerAS = inlineGuideOption;
             return this;
@@ -9889,7 +9890,7 @@ public class IdentySdk {
         if (i % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j3 = ((long[]) objArr2[0])[0];
@@ -9902,7 +9903,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j2 + 4947;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.getServerRequest = j;
                     deduplication = (generateST + 91) % 128;
                     return this;
@@ -9918,7 +9919,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 767051648);
             j2 = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j2 + 4947;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.getServerRequest = j;
             deduplication = (generateST + 91) % 128;
             return this;
@@ -9942,13 +9943,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = android.os.Process.myUid();
         0 = ~0;
         0 = defpackage.a.c((~(0 | (-178837820))) | (~(0 | (-286457861))), 765, (((~((-178837820) | 0)) | 33593600) * 1530) + (((((~((-33593601) | 0)) | (~((-145244220) | 0))) | (~((-286457861) | 0))) * 765) + 1728702125), -33121115);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -9957,7 +9958,7 @@ public class IdentySdk {
         long j;
         int i = deduplication;
         generateST = (i + 99) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 107;
@@ -9969,8 +9970,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4913;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4913;
+                com.identy.Fpnative.valueOf = null;
                 this.Fpnative = str;
             }
             byte[] bArr = $$d;
@@ -9982,7 +9983,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -33121115);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4913;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.Fpnative = str;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -10002,7 +10003,7 @@ public class IdentySdk {
         if (i2 % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (i + 5) % 128;
@@ -10018,7 +10019,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     generateST = (deduplication + 121) % 128;
                     ((long[]) objArr[0])[0] = j + 4953;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.PngjOutputException = fingerMatchSecLevel;
                 }
             }
@@ -10031,7 +10032,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -359903585);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4953;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.PngjOutputException = fingerMatchSecLevel;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -10052,12 +10053,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0050, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = android.os.Process.myUid();
         0 = defpackage.a.c((~((~0) | (-673576337))) | 38273600, 564, ((~(0 | (-136413457))) * 1128) + (((((~(174687056 | 0)) | (-673576337)) | (~((-174687057) | 0))) * (-564)) - 1180294517), 1646120197);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0100  */
     /*
@@ -10066,7 +10067,7 @@ public class IdentySdk {
     public IdentySdk setMode(String str) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 int i = generateST + 107;
@@ -10079,7 +10080,7 @@ public class IdentySdk {
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
                 ((long[]) objArr[0])[0] = j + 4969;
-                Fpnative.valueOf = objArr;
+                com.identy.Fpnative.valueOf = objArr;
                 if (str != null) {
                     deduplication = (generateST + 25) % 128;
                     int i2 = ((int[]) objArr[1])[0];
@@ -10112,7 +10113,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1646120197);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4969;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (str != null) {
             }
             throw new Exception(" Invalid mode option");
@@ -10135,7 +10136,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[]{0 ^ (0 << 5)}};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[]{0 ^ (0 << 5)}};
         0 = ~0;
         0 = (~((-517041987) | 0)) | 1076482;
         0 = defpackage.a.c(~(0 | 18152706), 713, ((~(534118210 | 0)) * 1426) + (((0 | 0) * (-713)) - 159383956), 1883741849);
@@ -10149,7 +10150,7 @@ public class IdentySdk {
         long j;
         int i3 = generateST;
         deduplication = (i3 + 7) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i4 = i3 + 13;
@@ -10161,8 +10162,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 5020;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 5020;
+                com.identy.Fpnative.valueOf = null;
                 this.pfk = i;
                 this.pfkrolfinalizeF = i2;
                 return;
@@ -10178,7 +10179,7 @@ public class IdentySdk {
             j = ((long[]) objArr4[0])[0];
             generateST = (deduplication + 63) % 128;
             ((long[]) objArr4[0])[0] = j + 5020;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.pfk = i;
             this.pfkrolfinalizeF = i2;
             return;
@@ -10199,7 +10200,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         generateST = (deduplication + 9) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -10212,7 +10213,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4943;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.DeduplicationIdentyResponse = qualityMode;
                     int i3 = ((int[]) objArr[1])[0];
                     int i4 = i3 * i3;
@@ -10243,7 +10244,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 658737907);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4943;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.DeduplicationIdentyResponse = qualityMode;
             int i32 = ((int[]) objArr[1])[0];
             int i42 = i32 * i32;
@@ -10281,20 +10282,20 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = ~((-856761528) | (~0));
         0 = defpackage.a.c((~(0 | (-71602753))) | 0, 338, ((((-928364280) | 0) | (~(856761527 | 0))) * (-338)) + 244375247, 716071032);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public IdentySdk setRequiredTemplates(HashMap<Template, HashMap<Finger, ArrayList<TemplateSize>>> hashMap) {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = generateST + 85;
@@ -10306,8 +10307,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 5047;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 5047;
+                com.identy.Fpnative.valueOf = null;
                 this.getPadSub2 = hashMap;
                 return this;
             }
@@ -10321,7 +10322,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 716071032);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 5047;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.getPadSub2 = hashMap;
             return this;
         } catch (Throwable th) {
@@ -10337,7 +10338,7 @@ public class IdentySdk {
     public void setSelectedFingers(List<Pair<Hand, Finger>> list) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -10350,7 +10351,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4943;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (list != null || list.size() == 0) {
                         return;
                     }
@@ -10373,7 +10374,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 661152373);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4943;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (list != null) {
                 return;
             } else {
@@ -10394,7 +10395,7 @@ public class IdentySdk {
     public void setStatusUpdator(FingerStatusUpdator fingerStatusUpdator) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -10406,7 +10407,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4877;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.getL3Score = fingerStatusUpdator;
                     return;
                 }
@@ -10422,7 +10423,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             generateST = (deduplication + 73) % 128;
             ((long[]) objArr[0])[0] = j + 4877;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.getL3Score = fingerStatusUpdator;
             return;
         } catch (Throwable th) {
@@ -10445,12 +10446,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c(~((~0) | (-1011107012)), 184, ((0 | (-1053284036)) * (-184)) + ((((~((-512217732) | 0)) | 470040707) * 184) - 619989193), -1235313435);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0109 A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:12:0x010a  */
@@ -10460,7 +10461,7 @@ public class IdentySdk {
     public void setTransactionListener(TransactionListener transactionListener) {
         long j;
         int i;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = generateST + 107;
@@ -10472,8 +10473,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4885;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4885;
+                com.identy.Fpnative.valueOf = null;
                 this.getProcessingTime = transactionListener;
                 i = deduplication + 71;
                 generateST = i % 128;
@@ -10491,7 +10492,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -1235313435);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4885;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.getProcessingTime = transactionListener;
             i = deduplication + 71;
             generateST = i % 128;
@@ -10533,7 +10534,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0036, code lost:
@@ -10542,12 +10543,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c(0 | (-110629838), 496, ((((~((-609519118) | 0)) | 541361152) | (~((~0) | (-42471873)))) * (-496)) + ((0 * 992) - 2137057233), 414724687);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
@@ -10574,13 +10575,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00d9, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 17) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00e7, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4872;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4872;
+        com.identy.Fpnative.valueOf = null;
         0.destroy = 0;
      */
     /*
@@ -10591,17 +10592,17 @@ public class IdentySdk {
         int i = generateST + 29;
         deduplication = i % 128;
         if (i % 2 != 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i2 = 78 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
     public IdentySdk setUser(IdentyUser identyUser) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -10616,7 +10617,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     generateST = (deduplication + 3) % 128;
                     ((long[]) objArr[0])[0] = j + 4880;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.uxd565jk = identyUser;
                     return this;
                 }
@@ -10631,7 +10632,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -824276192);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4880;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.uxd565jk = identyUser;
             return this;
         } catch (Throwable th) {
@@ -10654,12 +10655,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c((~(0 | (-501654953))) | 2765672, 502, ((~((~0) | 502183912)) * (-502)) + ((((~(2765672 | 0)) | 528960) * (-502)) + 682805993), 519113821);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 85) % 128;
      */
     /*
@@ -10667,7 +10668,7 @@ public class IdentySdk {
     */
     public IdentySdk setWSQCompression(WSQCompression wSQCompression) {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = deduplication + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
@@ -10679,8 +10680,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4966;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4966;
+                com.identy.Fpnative.valueOf = null;
                 this.Attempt = wSQCompression;
                 return this;
             }
@@ -10694,7 +10695,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 519113821);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4966;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.Attempt = wSQCompression;
             return this;
         } catch (Throwable th) {
@@ -10714,7 +10715,7 @@ public class IdentySdk {
         if (i % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -10727,7 +10728,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4924;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.CaptureRolledFingersActivity;
                 }
             }
@@ -10740,7 +10741,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -488011932);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4924;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.CaptureRolledFingersActivity;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -10755,7 +10756,7 @@ public class IdentySdk {
     public boolean u() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -10768,7 +10769,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4963;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.cvtyuv2bgr;
                 }
             }
@@ -10783,7 +10784,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             deduplication = (generateST + 45) % 128;
             ((long[]) objArr[0])[0] = j + 4963;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.cvtyuv2bgr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -10799,7 +10800,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 77) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -10812,7 +10813,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4867;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     return this.addEncryptedTemplates;
                 }
             }
@@ -10825,7 +10826,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1635083417);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4867;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             return this.addEncryptedTemplates;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -10847,12 +10848,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c((~(0 | 348655957)) | 570720896, 116, ((847545237 | 0) * 116) + (((~((~0) | (-71831617))) * (-116)) - 1537692237), 640052107);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -10861,7 +10862,7 @@ public class IdentySdk {
         long j;
         int i = deduplication;
         generateST = (i + 89) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i2 = i + 27;
@@ -10873,8 +10874,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4910;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4910;
+                com.identy.Fpnative.valueOf = null;
                 return verify(getDefaultUser(), this.PngjUnsupportedException, this.PngjInputException);
             }
             byte[] bArr = $$d;
@@ -10886,7 +10887,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 640052107);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4910;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             return verify(getDefaultUser(), this.PngjUnsupportedException, this.PngjInputException);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -10906,7 +10907,7 @@ public class IdentySdk {
     public boolean verifyWithCustomTemplates(Template template, HashMap<Hand, String> hashMap) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         char c = 2;
         try {
             if (objArr2 != null) {
@@ -10921,7 +10922,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 5047;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (template != null) {
                         throw new Exception(this.getData.getString(R.string.template_type_is_unknown));
                     }
@@ -11010,7 +11011,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -314941488);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5047;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template != null) {
             }
         } catch (Throwable th3) {
@@ -11036,7 +11037,7 @@ public class IdentySdk {
         if (i % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (i2 + 35) % 128;
@@ -11051,7 +11052,7 @@ public class IdentySdk {
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     ((long[]) objArr[0])[0] = j + 4891;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (template != null) {
                         throw new UnSupportedTemplateException();
                     }
@@ -11122,7 +11123,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1031448196);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4891;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template != null) {
             }
         } catch (Throwable th) {
@@ -11146,7 +11147,7 @@ public class IdentySdk {
         Template template2 = template;
         int i = (generateST + 113) % 128;
         deduplication = i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (i + 25) % 128;
@@ -11160,7 +11161,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 5004;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (template2 != null) {
                         throw new Exception(this.getData.getString(R.string.template_type_is_unknown));
                     }
@@ -11235,7 +11236,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 962205956);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5004;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template2 != null) {
             }
         } catch (Throwable th) {
@@ -11254,13 +11255,13 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0056, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = (int) android.os.SystemClock.uptimeMillis();
         0 = ~0;
         0 = defpackage.a.c(0 | (-285483009), 220, (((~(0 | (-289286305))) | 788175584) * (-440)) + (((784372288 | (~(0 | (-285483009)))) * 220) + 1317303579), -700417004);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:81:0x0053, code lost:
     
@@ -11274,7 +11275,7 @@ public class IdentySdk {
     public boolean verifyWithTemplatesbyteArray(Template template, HashMap<Pair<Hand, Finger>, byte[]> hashMap) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 int i = deduplication + 91;
@@ -11287,7 +11288,7 @@ public class IdentySdk {
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
                 ((long[]) objArr[0])[0] = j + 4975;
-                Fpnative.valueOf = objArr;
+                com.identy.Fpnative.valueOf = objArr;
                 if (template != null) {
                     throw new UnSupportedTemplateException();
                 }
@@ -11370,7 +11371,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -700417004);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4975;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (template != null) {
             }
         } catch (Throwable th) {
@@ -11408,7 +11409,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001d, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0035, code lost:
@@ -11417,12 +11418,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0038, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = ~((int) android.os.Process.getStartElapsedRealtime());
         0 = defpackage.a.c((~((-942848469) | 0)) | (~(0 | (-443959189))), 590, ((((~(443959188 | 0)) | (-980877269)) | (~(942848468 | 0))) * (-1180)) + ((((~(0 | (-405930389))) | 0) * 590) - 1673842111), -720553400);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 29) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001b, code lost:
@@ -11449,12 +11450,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00ed, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00f3, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4980;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4980;
+        com.identy.Fpnative.valueOf = null;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -11464,10 +11465,10 @@ public class IdentySdk {
         int i = generateST + 119;
         deduplication = i % 128;
         if (i % 2 != 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i2 = 5 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -11481,12 +11482,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c((~((~0) | 184141136)) | (-314748144), 168, (((~(0 | 184141136)) | (-452718080)) * (-168)) + ((((~((-314748144) | 0)) | 46171200) * 336) - 1710130969), 534473634);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x010b  */
     /*
@@ -11497,7 +11498,7 @@ public class IdentySdk {
         int i;
         int i2 = generateST;
         deduplication = (i2 + 81) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i3 = i2 + 117;
@@ -11509,8 +11510,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4951;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4951;
+                com.identy.Fpnative.valueOf = null;
                 boolean z = this.g;
                 i = generateST + 53;
                 deduplication = i % 128;
@@ -11529,7 +11530,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 534473634);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4951;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             boolean z2 = this.g;
             i = generateST + 53;
             deduplication = i % 128;
@@ -11787,7 +11788,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x0211, code lost:
     
-        $$a[0].canClub();
+        false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x0216, code lost:
     
@@ -11812,7 +11813,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x0233, code lost:
     
-        if (0.e.equals(com.identy.com.identy.Action.VERIFY) != false) goto L66;
+        if (0.e.equals(com.identy.Action.VERIFY) != false) goto L66;
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x0241, code lost:
     
@@ -11863,7 +11864,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:66:0x023e, code lost:
     
-        if (0.e.equals(com.identy.com.identy.Action.VERIFY) != false) goto L66;
+        if (0.e.equals(com.identy.Action.VERIFY) != false) goto L66;
      */
     /* JADX WARN: Code restructure failed: missing block: B:67:0x0166, code lost:
     
@@ -11906,7 +11907,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:82:0x01ae, code lost:
     
-        if (0.e.equals(com.identy.com.identy.Action.VERIFY) == false) goto L80;
+        if (0.e.equals(com.identy.Action.VERIFY) == false) goto L80;
      */
     /* JADX WARN: Code restructure failed: missing block: B:83:0x01b0, code lost:
     
@@ -11934,7 +11935,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         int i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         int i2 = 0;
         try {
             if (objArr2 != null) {
@@ -11948,7 +11949,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4934;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i5 = ((int[]) objArr[1])[0];
                     int i6 = i5 * i5;
                     int i7 = -(1346608448 * i5);
@@ -11983,7 +11984,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1421437364);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4934;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i52 = ((int[]) objArr[1])[0];
             int i62 = i52 * i52;
             int i72 = -(1346608448 * i52);
@@ -12043,12 +12044,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = defpackage.a.a();
         0 = defpackage.a.c((~((~0) | 265367195)) | (-803057372), -964, (((~(265367195 | 0)) | (-764256476)) * (-964)) + 79114847, 456133358);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:12:0x0104  */
     /*
@@ -12056,7 +12057,7 @@ public class IdentySdk {
     */
     public void f(String str) {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             try {
                 if (objArr != null) {
@@ -12069,8 +12070,8 @@ public class IdentySdk {
                         long j3 = ((long[]) objArr[0])[0];
                         j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                     }
-                    ((long[]) $$a[0])[0] = j + 5047;
-                    Fpnative.valueOf = 0;
+                    ((long[]) $$a_state[0])[0] = j + 5047;
+                    com.identy.Fpnative.valueOf = null;
                     Runtime runtime = Runtime.getRuntime();
                     runtime.totalMemory();
                     runtime.freeMemory();
@@ -12078,7 +12079,7 @@ public class IdentySdk {
                     if (LibSettings.isSaveCaptured()) {
                         generateST = (deduplication + 117) % 128;
                     }
-                    int i2 = ((int[]) $$a[1])[0];
+                    int i2 = ((int[]) $$a_state[1])[0];
                     int i3 = i2 * i2;
                     int i4 = -(581178453 * i2);
                     int i5 = ((i3 | i4) << 1) - (i3 ^ i4);
@@ -12114,7 +12115,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 456133358);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 5047;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             Runtime runtime2 = Runtime.getRuntime();
             runtime2.totalMemory();
             runtime2.freeMemory();
@@ -12185,7 +12186,7 @@ public class IdentySdk {
     public IdentySdk setASServerConfig(String str, String str2, boolean z) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (generateST + 29) % 128;
@@ -12199,7 +12200,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4942;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     if (z) {
                         int i4 = deduplication + 111;
                         generateST = i4 % 128;
@@ -12239,7 +12240,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             generateST = (deduplication + 53) % 128;
             ((long[]) objArr[0])[0] = j + 4942;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             if (z) {
             }
             if (str != null) {
@@ -12295,7 +12296,7 @@ public class IdentySdk {
         boolean z;
         Hand hand;
         boolean contains;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -12308,7 +12309,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4876;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     fingerDetectionModeArr = this.setScore;
                     if (fingerDetectionModeArr != null) {
                         int i3 = generateST;
@@ -12412,7 +12413,7 @@ public class IdentySdk {
             j = ((long[]) objArr[0])[0];
             generateST = (deduplication + 21) % 128;
             ((long[]) objArr[0])[0] = j + 4876;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             fingerDetectionModeArr = this.setScore;
             if (fingerDetectionModeArr != null) {
             }
@@ -12440,7 +12441,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x012e, code lost:
     
-        0.e = com.identy.com.identy.Action.VERIFY;
+        0.e = com.identy.Action.VERIFY;
         valueOf();
         0.uxd565jk = 0;
         0.h = new java.util.HashMap();
@@ -12488,7 +12489,7 @@ public class IdentySdk {
     /* JADX WARN: Code restructure failed: missing block: B:34:0x0180, code lost:
     
         0 = 0.setScore;
-        0 = ((int[]) $$a[1])[0];
+        0 = ((int[]) $$a_state[1])[0];
         0 = 0 * 0;
         0 = -(2042505826 * 0);
         0 = (0 & 0) + (0 | 0);
@@ -12506,7 +12507,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x01e7, code lost:
     
-        if ($$a[0 / ((0 & (-((0 ^ 1) + ((0 & 1) << 1)))) * 558)].getHand() != null) goto L49;
+        if (null != null) goto L49;
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x01e9, code lost:
     
@@ -12589,12 +12590,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004d, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c((~(0 | (-711239482))) | 212350201, 318, (((~(711239481 | 0)) | (-787265530)) * (-318)) + ((((~((-574915329) | 0)) | (~((~0) | (-76026049)))) * (-318)) - 1144853787), 33161694);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 29) % 128;
      */
     /* JADX WARN: Multi-variable type inference failed */
@@ -12607,7 +12608,7 @@ public class IdentySdk {
     public boolean verify(IdentyUser identyUser, int i, int i2) {
         long j;
         FingerDetectionMode[] fingerDetectionModeArr;
-        Object[] objArr = Fpnative.valueOf;
+        Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i3 = deduplication + 81;
@@ -12619,8 +12620,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4876;
-                Fpnative.valueOf = 0;
+                ((long[]) $$a_state[0])[0] = j + 4876;
+                com.identy.Fpnative.valueOf = null;
                 this.PngjUnsupportedException = i;
                 this.PngjInputException = i2;
                 fingerDetectionModeArr = this.setScore;
@@ -12642,7 +12643,7 @@ public class IdentySdk {
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, 33161694);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4876;
-            Fpnative.valueOf = objArr4;
+            com.identy.Fpnative.valueOf = objArr4;
             this.PngjUnsupportedException = i;
             this.PngjInputException = i2;
             fingerDetectionModeArr = this.setScore;
@@ -12674,7 +12675,7 @@ public class IdentySdk {
         int i4;
         int i5 = generateST;
         deduplication = (i5 + 85) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (i5 + 97) % 128;
@@ -12688,7 +12689,7 @@ public class IdentySdk {
                     int i7 = i6 ^ (i6 >>> 17);
                     ((int[]) objArr[1])[0] = i7 ^ (i7 << 5);
                     ((long[]) objArr[0])[0] = j + 4950;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.setScore = fingerDetectionModeArr;
                     i = 0;
                     i2 = 0;
@@ -12771,7 +12772,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -554664354);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4950;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.setScore = fingerDetectionModeArr;
             i = 0;
             i2 = 0;
@@ -12822,7 +12823,7 @@ public class IdentySdk {
         int i2 = deduplication + 5;
         generateST = i2 % 128;
         if (i2 % 2 != 0) {
-            Object[] objArr2 = Fpnative.valueOf;
+            Object[] objArr2 = com.identy.Fpnative.valueOf;
             try {
                 if (objArr2 != null) {
                     long j2 = ((long[]) objArr2[0])[0];
@@ -12835,7 +12836,7 @@ public class IdentySdk {
                         int i4 = i3 ^ (i3 >>> 17);
                         ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                         ((long[]) objArr[0])[0] = j + 4922;
-                        Fpnative.valueOf = objArr;
+                        com.identy.Fpnative.valueOf = objArr;
                         PngjException = new IdentySdk(activity, bArr, initializationListener, identyResponseListener, z);
                         int i5 = ((int[]) objArr[1])[0];
                         int i6 = i5 * i5;
@@ -12871,7 +12872,7 @@ public class IdentySdk {
                 objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2082349258);
                 j = ((long[]) objArr[0])[0];
                 ((long[]) objArr[0])[0] = j + 4922;
-                Fpnative.valueOf = objArr;
+                com.identy.Fpnative.valueOf = objArr;
                 PngjException = new IdentySdk(activity, bArr, initializationListener, identyResponseListener, z);
                 int i52 = ((int[]) objArr[1])[0];
                 int i62 = i52 * i52;
@@ -12930,7 +12931,7 @@ public class IdentySdk {
         FingerDetectionMode[] fingerDetectionModeArr;
         boolean z;
         boolean contains;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -12944,14 +12945,14 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4864;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     fingerDetectionModeArr = this.setScore;
                     if (fingerDetectionModeArr == null && fingerDetectionModeArr.length != 0) {
                         generateST = (deduplication + 53) % 128;
                         if (!H()) {
                             return false;
                         }
-                        this.e = com.identy.com.identy.Action.CAPTURE;
+                        this.e = com.identy.Action.CAPTURE;
                         this.h = new HashMap();
                         if (this.setScore[0].getFinger() != null) {
                             deduplication = (generateST + 73) % 128;
@@ -13022,7 +13023,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -148567703);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4864;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             fingerDetectionModeArr = this.setScore;
             if (fingerDetectionModeArr == null) {
             }
@@ -13042,7 +13043,7 @@ public class IdentySdk {
         long j;
         int i = generateST;
         deduplication = (i + 3) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 deduplication = (i + 1) % 128;
@@ -13056,7 +13057,7 @@ public class IdentySdk {
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 4982;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i4 = ((int[]) objArr[1])[0];
                     int i5 = i4 * i4;
                     int i6 = -(195004744 * i4);
@@ -13085,7 +13086,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 180302781);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4982;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i42 = ((int[]) objArr[1])[0];
             int i52 = i42 * i42;
             int i62 = -(195004744 * i42);
@@ -13117,7 +13118,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 109) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -13131,7 +13132,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     deduplication = (generateST + 39) % 128;
                     ((long[]) objArr[0])[0] = j + 4871;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     IdentyUser defaultUser = getDefaultUser();
                     FingerDetectionMode[] fingerDetectionModeArr = new FingerDetectionMode[10];
                     fingerDetectionModeArr[0] = FingerDetectionMode.LEFT_INDEX;
@@ -13173,7 +13174,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -451814125);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4871;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             IdentyUser defaultUser2 = getDefaultUser();
             FingerDetectionMode[] fingerDetectionModeArr2 = new FingerDetectionMode[10];
             fingerDetectionModeArr2[0] = FingerDetectionMode.LEFT_INDEX;
@@ -13321,7 +13322,7 @@ public class IdentySdk {
         int i2 = deduplication + 59;
         generateST = i2 % 128;
         if (i2 % 2 != 0) {
-            Object[] objArr2 = Fpnative.valueOf;
+            Object[] objArr2 = com.identy.Fpnative.valueOf;
             try {
                 if (objArr2 != null) {
                     long j2 = ((long[]) objArr2[0])[0];
@@ -13335,7 +13336,7 @@ public class IdentySdk {
                         int i5 = i4 ^ (i4 >>> 17);
                         ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                         ((long[]) objArr[0])[0] = j + 4925;
-                        Fpnative.valueOf = objArr;
+                        com.identy.Fpnative.valueOf = objArr;
                         boolean newInstance = newInstance(activity, LManager.getFileDataFromFile(activity.getAssets(), str), initializationListener, identyResponseListener, z, z2);
                         i = generateST + 51;
                         deduplication = i % 128;
@@ -13354,7 +13355,7 @@ public class IdentySdk {
                 objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1067883615);
                 j = ((long[]) objArr[0])[0];
                 ((long[]) objArr[0])[0] = j + 4925;
-                Fpnative.valueOf = objArr;
+                com.identy.Fpnative.valueOf = objArr;
                 boolean newInstance2 = newInstance(activity, LManager.getFileDataFromFile(activity.getAssets(), str), initializationListener, identyResponseListener, z, z2);
                 i = generateST + 51;
                 deduplication = i % 128;
@@ -13412,7 +13413,7 @@ public class IdentySdk {
         Object[] objArr;
         long j;
         deduplication = (generateST + 75) % 128;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             try {
                 if (objArr2 != null) {
@@ -13426,7 +13427,7 @@ public class IdentySdk {
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                         ((long[]) objArr[0])[0] = j + 4966;
-                        Fpnative.valueOf = objArr;
+                        com.identy.Fpnative.valueOf = objArr;
                         HashSet hashSet = this.CaptureFingersActivity;
                         String string = Settings.Secure.getString(this.getData.getContentResolver(), "android_id");
                         StringBuilder sb = new StringBuilder();
@@ -13457,7 +13458,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1270201268);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4966;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -13501,7 +13502,7 @@ public class IdentySdk {
         long j;
         int i = (generateST + 41) % 128;
         deduplication = i;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (i + 3) % 128;
@@ -13519,7 +13520,7 @@ public class IdentySdk {
                     int i7 = i6 ^ (i6 >>> 17);
                     ((int[]) objArr[1])[0] = i7 ^ (i7 << 5);
                     ((long[]) objArr[0])[0] = j + 5036;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     int i8 = ((int[]) objArr[1])[0];
                     int i9 = i8 * i8;
                     int i10 = -(402008188 * i8);
@@ -13550,7 +13551,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 504394160);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5036;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             int i82 = ((int[]) objArr[1])[0];
             int i92 = i82 * i82;
             int i102 = -(402008188 * i82);
@@ -13583,7 +13584,7 @@ public class IdentySdk {
     public boolean removeEnrollment(IdentyUser identyUser) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 59) % 128;
@@ -13597,7 +13598,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4986;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     FingerDetectionMode[] fingerDetectionModeArr = new FingerDetectionMode[10];
                     fingerDetectionModeArr[0] = FingerDetectionMode.LEFT_INDEX;
                     fingerDetectionModeArr[1] = FingerDetectionMode.LEFT_MIDDLE;
@@ -13643,7 +13644,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1969006909);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4986;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             FingerDetectionMode[] fingerDetectionModeArr2 = new FingerDetectionMode[10];
             fingerDetectionModeArr2[0] = FingerDetectionMode.LEFT_INDEX;
             fingerDetectionModeArr2[1] = FingerDetectionMode.LEFT_MIDDLE;
@@ -13732,7 +13733,7 @@ public class IdentySdk {
         String encodeToString;
         String str;
         Iterator it;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j5 = ((long[]) objArr2[0])[0];
@@ -13746,7 +13747,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                     Object[] objArr3 = objArr;
                     ((long[]) objArr3[0])[0] = j4 + 5012;
-                    Fpnative.valueOf = objArr3;
+                    com.identy.Fpnative.valueOf = objArr3;
                     if (bArr == null) {
                         try {
                             encodeToString = Base64.encodeToString(bArr, this.isQualityFailed);
@@ -13799,7 +13800,7 @@ public class IdentySdk {
             j4 = ((long[]) objArr[0])[0];
             Object[] objArr32 = objArr;
             ((long[]) objArr32[0])[0] = j4 + 5012;
-            Fpnative.valueOf = objArr32;
+            com.identy.Fpnative.valueOf = objArr32;
             if (bArr == null) {
             }
             if (this.resetAttempt) {
@@ -13844,7 +13845,7 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:25:0x0198, code lost:
     
-        if ($$a[0 / (((-((0 ^ 1) + ((0 & 1) << 1))) & 0) * 543)].getFinger().equals(com.identy.enums.Finger.THUMB) != false) goto L31;
+        if (null.equals(com.identy.enums.Finger.THUMB) != false) goto L31;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -13855,7 +13856,7 @@ public class IdentySdk {
         FingerDetectionMode[] fingerDetectionModeArr;
         Hand hand;
         boolean z = true;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -13870,7 +13871,7 @@ public class IdentySdk {
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4969;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     fingerDetectionModeArr = this.setScore;
                     if (fingerDetectionModeArr == null && fingerDetectionModeArr.length != 0) {
                         if (!H()) {
@@ -13942,7 +13943,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1853456773);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4969;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             fingerDetectionModeArr = this.setScore;
             if (fingerDetectionModeArr == null) {
             }
@@ -13962,8 +13963,8 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x00f7, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 4919;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 4919;
+        com.identy.Fpnative.valueOf = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0102, code lost:
     
@@ -14051,7 +14052,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:0x01db, code lost:
     
-        0 = ((int[]) $$a[0])[0];
+        0 = ((int[]) $$a_state[0])[0];
         0 = 0 * 0;
         0 = -(820773087 * 0);
         0 = (0 & 0) + (0 | 0);
@@ -14145,7 +14146,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:70:0x002d, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:71:0x0045, code lost:
@@ -14154,14 +14155,14 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:72:0x0048, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = android.os.Process.myUid();
         0 = ~((-576524865) | 0);
         0 = ~0;
         0 = defpackage.a.c((~(0 | 1073741521)) | ((~((-996105938) | 0)) | 419581073), 497, (((~(0 | 1073741521)) | 0) * 497) + 429069360, -1194981449);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:74:0x002b, code lost:
     
@@ -14179,7 +14180,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00f0, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r10v12 */
@@ -14206,10 +14207,10 @@ public class IdentySdk {
         Throwable th = null;
         boolean z = true;
         if (i3 % 2 == 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i4 = 24 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -14296,7 +14297,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x0027, code lost:
     
-        0 = ((long[]) $$a[0])[1];
+        0 = ((long[]) $$a_state[0])[1];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[1]).invoke(null, new java.lang.Object[1])).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x0041, code lost:
@@ -14305,16 +14306,16 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x005f, code lost:
     
-        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a_state[0])[0]}, new int[1]};
         0 = java.lang.System.identityHashCode(0);
         0 = defpackage.a.c((~(0 | (-933833075))) | 138712576, 433, (((~(434943794 | 0)) | (-933833075)) * (-433)) + (((~((~0) | (-296231219))) * 433) + 523991850), 374120916);
         0 = 0 ^ (0 << 13);
         0 = 0 ^ (0 >>> 17);
-        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        ((int[]) $$a_state[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x0044, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
         0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x005c, code lost:
@@ -14345,12 +14346,12 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0100, code lost:
     
-        0 = ((long[]) $$a[0])[0];
+        0 = ((long[]) $$a_state[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0106, code lost:
     
-        ((long[]) $$a[0])[0] = 0 + 5014;
-        com.identy.Fpnative.valueOf = 0;
+        ((long[]) $$a_state[0])[0] = 0 + 5014;
+        com.identy.Fpnative.valueOf = null;
         0 = 0.setScore;
      */
     /*
@@ -14362,10 +14363,10 @@ public class IdentySdk {
         int i3 = i2 % 128;
         deduplication = i3;
         if (i2 % 2 != 0) {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
             int i4 = 18 / 0;
         } else {
-            objArr = Fpnative.valueOf;
+            objArr = com.identy.Fpnative.valueOf;
         }
     }
 
@@ -14373,7 +14374,7 @@ public class IdentySdk {
     public IdentySdk() {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
@@ -14386,9 +14387,9 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4926;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.PngjBadSignature = false;
-                    this.e = com.identy.com.identy.Action.CAPTURE;
+                    this.e = com.identy.Action.CAPTURE;
                     int i3 = ((int[]) objArr[1])[0];
                     int i4 = i3 * i3;
                     int i5 = -(914771209 * i3);
@@ -14483,9 +14484,9 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 940326753);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4926;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.PngjBadSignature = false;
-            this.e = com.identy.com.identy.Action.CAPTURE;
+            this.e = com.identy.Action.CAPTURE;
             int i32 = ((int[]) objArr[1])[0];
             int i42 = i32 * i32;
             int i52 = -(914771209 * i32);
@@ -14592,7 +14593,7 @@ public class IdentySdk {
         int i3 = generateST + 125;
         deduplication = i3 % 128;
         if (i3 % 2 == 0) {
-            Object[] objArr2 = Fpnative.valueOf;
+            Object[] objArr2 = com.identy.Fpnative.valueOf;
             try {
                 try {
                     if (objArr2 != null) {
@@ -14606,7 +14607,7 @@ public class IdentySdk {
                             ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
                             deduplication = (generateST + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
                             ((long[]) objArr[0])[0] = j3 + 5018;
-                            Fpnative.valueOf = objArr;
+                            com.identy.Fpnative.valueOf = objArr;
                             a(fingerDetectionMode);
                             HashMap hashMap2 = new HashMap();
                             Hand hand = Hand.LEFT;
@@ -14677,7 +14678,7 @@ public class IdentySdk {
                 objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -282606622);
                 j3 = ((long[]) objArr[0])[0];
                 ((long[]) objArr[0])[0] = j3 + 5018;
-                Fpnative.valueOf = objArr;
+                com.identy.Fpnative.valueOf = objArr;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
@@ -14717,7 +14718,7 @@ public class IdentySdk {
         Iterator it;
         a aVar;
         Hand hand;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         int i2 = 2;
         boolean z = true;
         int i0 = 0;
@@ -14735,7 +14736,7 @@ public class IdentySdk {
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     Object[] objArr3 = objArr;
                     ((long[]) objArr3[0])[0] = j5 + 5021;
-                    Fpnative.valueOf = objArr3;
+                    com.identy.Fpnative.valueOf = objArr3;
                     if (bArr == null) {
                         try {
                             encodeToString = Base64.encodeToString(bArr, this.isQualityFailed);
@@ -14837,7 +14838,7 @@ public class IdentySdk {
             deduplication = (generateST + 53) % 128;
             Object[] objArr32 = objArr;
             ((long[]) objArr32[0])[0] = j5 + 5021;
-            Fpnative.valueOf = objArr32;
+            com.identy.Fpnative.valueOf = objArr32;
             if (bArr == null) {
             }
             if (this.resetAttempt) {
@@ -14893,7 +14894,7 @@ public class IdentySdk {
         int i = deduplication + 81;
         generateST = i % 128;
         if (i % 2 != 0) {
-            Object[] objArr2 = Fpnative.valueOf;
+            Object[] objArr2 = com.identy.Fpnative.valueOf;
             int i2 = 0;
             try {
                 if (objArr2 != null) {
@@ -14911,7 +14912,7 @@ public class IdentySdk {
                         objArr = objArr3;
                         Object[] objArr4 = objArr;
                         ((long[]) objArr4[0])[0] = j + 4905;
-                        Fpnative.valueOf = objArr4;
+                        com.identy.Fpnative.valueOf = objArr4;
                         IdentyError identyError = new IdentyError(errors, pairArr, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, this.getData, this.i);
                         errors2 = com.identy.ERRORS.TIMED_OUT;
                         if (!errors.equals(errors2)) {
@@ -14977,7 +14978,7 @@ public class IdentySdk {
                 objArr = objArr7;
                 Object[] objArr42 = objArr;
                 ((long[]) objArr42[0])[0] = j + 4905;
-                Fpnative.valueOf = objArr42;
+                com.identy.Fpnative.valueOf = objArr42;
                 IdentyError identyError2 = new IdentyError(errors, pairArr, this.e, this.isQualityFailed, this.Attempt, this.getPadSub1, this.getQualityScore, this.values, this.getData, this.i);
                 errors2 = com.identy.ERRORS.TIMED_OUT;
                 if (!errors.equals(errors2)) {
@@ -15003,7 +15004,7 @@ public class IdentySdk {
     public void a(boolean z) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 generateST = (deduplication + 15) % 128;
@@ -15017,7 +15018,7 @@ public class IdentySdk {
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4926;
-                    Fpnative.valueOf = objArr;
+                    com.identy.Fpnative.valueOf = objArr;
                     this.configure = z;
                     generateST = (deduplication + 25) % 128;
                     return;
@@ -15032,7 +15033,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 688392166);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4926;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
             this.configure = z;
             generateST = (deduplication + 25) % 128;
             return;
@@ -15053,7 +15054,7 @@ public class IdentySdk {
     public void a(String str) {
         Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             try {
                 if (objArr2 != null) {
@@ -15070,7 +15071,7 @@ public class IdentySdk {
                         ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                         generateST = (deduplication + 111) % 128;
                         ((long[]) objArr[0])[0] = j + 5007;
-                        Fpnative.valueOf = objArr;
+                        com.identy.Fpnative.valueOf = objArr;
                         if (this.getSpoofScore == null) {
                             this.getSpoofScore = new JSONArray();
                         }
@@ -15095,7 +15096,7 @@ public class IdentySdk {
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1225211945);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5007;
-            Fpnative.valueOf = objArr;
+            com.identy.Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause == null) {
