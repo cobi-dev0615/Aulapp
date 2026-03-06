@@ -3,6 +3,7 @@ package com.gse.aulapp.lib.encryption_gse.encryptGse.cipher;
 import org.bouncycastle.crypto.BufferedBlockCipher;
 import org.bouncycastle.crypto.CipherParameters;
 import org.bouncycastle.crypto.engines.AESEngine;
+import org.bouncycastle.crypto.InvalidCipherTextException;
 import org.bouncycastle.crypto.modes.GCMBlockCipher;
 
 /* loaded from: classes.dex */
@@ -10,7 +11,7 @@ public class AESGCMBlockCipher extends BufferedBlockCipher {
     private final GCMBlockCipher internalCipher = new GCMBlockCipher(new AESEngine());
 
     @Override // org.bouncycastle.crypto.BufferedBlockCipher
-    public int doFinal(byte[] bArr, int i) {
+    public int doFinal(byte[] bArr, int i) throws InvalidCipherTextException {
         return this.internalCipher.doFinal(bArr, i);
     }
 
