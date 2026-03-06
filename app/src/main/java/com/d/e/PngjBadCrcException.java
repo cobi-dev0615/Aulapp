@@ -72,7 +72,7 @@ public final class PngjBadCrcException extends FilterInputStream {
         }
     }
 
-    private int valueOf() {
+    private int valueOf() throws java.io.IOException {
         if (this.PngjUnsupportedException == Integer.MAX_VALUE) {
             this.PngjUnsupportedException = super.in.read();
         }

@@ -5769,7 +5769,7 @@ public class IdentySdk {
                         }
                     }
                 }
-                Object[] objArr142 = {context, Integer.valueOf(intValue), 0, -66319567};
+                Object[] objArr142 = {context, Integer.valueOf(0), 0, -66319567};
                 byte[] bArr2 = $$d;
                 c3 = 2;
                 Object[] objArr152 = new Object[1];
