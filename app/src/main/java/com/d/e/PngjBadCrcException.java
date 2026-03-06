@@ -117,7 +117,7 @@ public final class PngjBadCrcException extends FilterInputStream {
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
-    public final int available() {
+    public final int available() throws java.io.IOException {
         valueOf();
         return this.PngjInputException - this.PngjBadSignature;
     }
@@ -128,7 +128,7 @@ public final class PngjBadCrcException extends FilterInputStream {
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
-    public final int read() {
+    public final int read() throws java.io.IOException {
         valueOf();
         int i = this.PngjBadSignature;
         if (i >= this.PngjInputException) {
@@ -182,7 +182,7 @@ public final class PngjBadCrcException extends FilterInputStream {
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
-    public final int read(byte[] bArr, int i, int i2) {
+    public final int read(byte[] bArr, int i, int i2) throws java.io.IOException {
         int i3 = i + i2;
         for (int i4 = i; i4 < i3; i4++) {
             valueOf();
