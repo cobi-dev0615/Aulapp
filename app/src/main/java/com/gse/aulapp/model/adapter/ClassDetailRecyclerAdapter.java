@@ -140,7 +140,7 @@ public final class ClassDetailRecyclerAdapter extends RecyclerView.Adapter<Class
                 public final Object invoke(Object obj) {
                     Unit handlerClassCardByDate$lambda$18$lambda$16$lambda$15;
                     boolean booleanValue = ((Boolean) obj).booleanValue();
-                    handlerClassCardByDate$lambda$18$lambda$16$lambda$15 = ClassDetailRecyclerAdapter.ClassDetailViewHolder.handlerClassCardByDate$lambda$18$lambda$16$lambda$15(itemClassCardDetailBinding, this, enumByName, areEqual, classDetailRecyclerAdapter, classDetail, date, date2, intValue, intValue2, booleanValue);
+                    handlerClassCardByDate$lambda$18$lambda$16$lambda$15 = ClassDetailRecyclerAdapter.ClassDetailViewHolder.handlerClassCardByDate$lambda$18$lambda$16$lambda$15(itemClassCardDetailBinding, ClassDetailViewHolder.this, enumByName, areEqual, classDetailRecyclerAdapter, classDetail, date, date2, intValue, intValue2, booleanValue);
                     return handlerClassCardByDate$lambda$18$lambda$16$lambda$15;
                 }
             }, 32, null);
@@ -525,11 +525,11 @@ public final class ClassDetailRecyclerAdapter extends RecyclerView.Adapter<Class
         ClassRoomDto classroom = classDetail.getClassroom();
         String location = classroom != null ? classroom.getLocation() : null;
         Double d = null;
-        split$default2 = location != null ? StringsKt.split$default((CharSequence) location, new String[]{","}, false, 0, 6, (Object) null) : null;
+        split$default2 = location != null ? StringsKt.split((CharSequence) location, new String[]{","}, false, 0) : null;
         Double valueOf = (classroom == null || location == null || split$default2 == null || (str2 = (String) split$default2.get(0)) == null) ? null : Double.valueOf(Double.parseDouble(str2));
         ClassRoomDto classroom2 = classDetail.getClassroom();
         String location2 = classroom2 != null ? classroom2.getLocation() : null;
-        split$default = location2 != null ? StringsKt.split$default((CharSequence) location2, new String[]{","}, false, 0, 6, (Object) null) : null;
+        split$default = location2 != null ? StringsKt.split((CharSequence) location2, new String[]{","}, false, 0) : null;
         if (classroom2 != null && location2 != null && split$default != null && (str = (String) split$default.get(1)) != null) {
             d = Double.valueOf(Double.parseDouble(str));
         }

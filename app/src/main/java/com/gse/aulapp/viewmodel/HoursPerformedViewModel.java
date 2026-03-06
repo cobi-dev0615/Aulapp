@@ -25,7 +25,9 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
@@ -63,7 +65,7 @@ public final class HoursPerformedViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(request, "request");
         try {
-            BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new HoursPerformedViewModel$getHoursPerformedApi$1(context, request, this, null), 3, null);
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HoursPerformedViewModel$getHoursPerformedApi$1(context, request, this, null));
         } catch (Exception e) {
             LogSendUtil.INSTANCE.setLog(context, q.i("getHoursPerformedApi exception ", e.getMessage()), "getHoursPerformedApi", true);
             this._message.setValue(new Status.Failure(new Exception(e.getMessage())));

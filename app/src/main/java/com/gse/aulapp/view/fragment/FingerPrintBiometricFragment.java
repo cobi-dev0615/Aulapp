@@ -26,6 +26,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.google.android.material.button.MaterialButton;
 import com.gse.aulapp.R;
 import com.gse.aulapp.databinding.FragmentRegistrationBiometricBinding;
+import com.gse.aulapp.model.enumerate.EnumDialogType;
 import com.gse.aulapp.model.enumerate.EnumStatusFingerPrintBiometric;
 import com.gse.aulapp.model.enumerate.EnumUserProfile;
 import com.gse.aulapp.receptions.feature.core.model.dto.UserInfoDto;
@@ -64,6 +65,16 @@ public final class FingerPrintBiometricFragment extends Fragment {
                     });
 
     public FingerPrintBiometricFragment() {
+    }
+
+    /** Stub for decompiled dispatch classes (g4, j4). Originally handled biometric status callbacks. */
+    public void c(EnumStatusFingerPrintBiometric status) {
+        // No-op stub: original method was part of Identy SDK biometric flow
+    }
+
+    /** Stub for decompiled dispatch classes (g4, j4). Originally toggled UI loading state. */
+    public void d(boolean loading) {
+        // No-op stub: original method was part of Identy SDK biometric flow
     }
 
     /**
@@ -204,5 +215,17 @@ public final class FingerPrintBiometricFragment extends Fragment {
                     }
                 }
         );
+    }
+
+    /* Stub methods called by obfuscated SDK classes (z0, l4, etc.) */
+
+    /** Called to show a dialog of the given type (e.g. error dialog). */
+    public void b(EnumDialogType enumDialogType) {
+        // no-op stub: original Identy SDK dialog handling removed
+    }
+
+    /** Called to start fingerprint capture / show loading before capture. */
+    public void e() {
+        // no-op stub
     }
 }

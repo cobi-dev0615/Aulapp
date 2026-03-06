@@ -26,8 +26,10 @@ import com.gse.aulapp.viewmodel.RideHistoryViewModel;
 import java.util.Date;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class l1 implements Function1 {
@@ -275,7 +277,7 @@ public final /* synthetic */ class l1 implements Function1 {
                         }));
                         LifecycleOwner viewLifecycleOwner = this$02.getViewLifecycleOwner();
                         Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-                        BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), null, null, new o7(this$02, null), 3, null);
+                        BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), (CoroutineContext) null, (CoroutineStart) null, new o7(this$02, null));
                         PracticeClassViewModel practiceClassViewModel6 = this$02.b;
                         if (practiceClassViewModel6 == null) {
                             Intrinsics.throwUninitializedPropertyAccessException("viewModel");

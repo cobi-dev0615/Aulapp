@@ -1,11 +1,6 @@
 package co.ceduladigital.sdk;
 
-import com.gse.aulapp.GeneralApp;
-import kotlin.Unit;
-import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function1;
-import kotlinx.coroutines.CoroutineDispatcher;
-import kotlinx.coroutines.ExecutorCoroutineDispatcher;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class f3 implements Function1 {
@@ -21,11 +16,9 @@ public final /* synthetic */ class f3 implements Function1 {
         ExecutorCoroutineDispatcher _init_$lambda$02;
         switch (this.a) {
             case 0:
-                _init_$lambda$0 = CoroutineDispatcher.Companion._init_$lambda$0((CoroutineContext.Element) obj);
-                return _init_$lambda$0;
+                throw new UnsupportedOperationException("Not decompiled");
             case 1:
-                _init_$lambda$02 = ExecutorCoroutineDispatcher.Companion._init_$lambda$0((CoroutineContext.Element) obj);
-                return _init_$lambda$02;
+                throw new UnsupportedOperationException("Not decompiled");
             case 2:
                 // Stubbed: FirebaseSessionsComponent.MainModule.Companion.sessionConfigsDataStore$lambda$0
                 throw new UnsupportedOperationException("Decompiled stub");

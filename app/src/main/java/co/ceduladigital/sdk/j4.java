@@ -19,15 +19,14 @@ public final class j4 implements FlowCollector {
 
     @Override // kotlinx.coroutines.flow.FlowCollector
     public final Object emit(Object obj, Continuation continuation) {
-        boolean contains$default;
         Status status = (Status) obj;
         boolean z = status instanceof Status.Success;
         FingerPrintBiometricFragment fingerPrintBiometricFragment = this.a;
         if (z) {
             fingerPrintBiometricFragment.d(true);
         } else if (status instanceof Status.Exception) {
-            contains$default = StringsKt.contains$default(((Status.Exception) status).getData().toString(), (CharSequence) "activty paused on back pressed", false, 2, (Object) null);
-            if (contains$default) {
+            boolean containsResult = StringsKt.contains(((Status.Exception) status).getData().toString(), (CharSequence) "activty paused on back pressed", false);
+            if (containsResult) {
                 fingerPrintBiometricFragment.requireActivity().onBackPressed();
             } else {
                 fingerPrintBiometricFragment.d(false);

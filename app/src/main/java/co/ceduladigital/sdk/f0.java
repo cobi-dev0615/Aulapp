@@ -3,7 +3,6 @@ package co.ceduladigital.sdk;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.view.View;
-import com.google.android.material.snackbar.Snackbar;
 import com.gse.aulapp.databinding.FragmentHomeBinding;
 import com.gse.aulapp.databinding.ItemClassCardDetailBinding;
 import com.gse.aulapp.model.adapter.ClassDetailRecyclerAdapter;
@@ -126,7 +125,6 @@ public final /* synthetic */ class f0 implements View.OnClickListener {
                 }
                 break;
             default:
-                ((Snackbar) obj2).lambda$setAction$0((View.OnClickListener) obj, view);
                 break;
         }
     }

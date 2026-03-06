@@ -24,7 +24,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
 /* loaded from: classes2.dex */
-public final class f2 extends SuspendLambda implements Function2 {
+@SuppressWarnings({"rawtypes", "unchecked"})
+public final class f2 extends SuspendLambda implements Function2<Object, Object, Object> {
     public final /* synthetic */ Status a;
     public final /* synthetic */ ClassPracticeBeforeFragment b;
 

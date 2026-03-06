@@ -14,7 +14,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.flow.FlowCollector;
 
 /* loaded from: classes2.dex */
-public final class g5 implements FlowCollector {
+@SuppressWarnings({"rawtypes", "unchecked"})
+public final class g5 implements FlowCollector<Status> {
     public final /* synthetic */ FirstLoginFragment a;
 
     public g5(FirstLoginFragment firstLoginFragment) {

@@ -18,7 +18,9 @@ import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
@@ -44,7 +46,7 @@ public final class LoginViewModel extends ViewModel {
 
     private final Job login(FragmentActivity context, LoginRequest loginRequest, FragmentLoginBinding binding, NavController findNavController) {
         Job launch$default;
-        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new LoginViewModel$login$1(this, loginRequest, context, binding, null), 3, null);
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new LoginViewModel$login$1(this, loginRequest, context, binding, null));
         return launch$default;
     }
 

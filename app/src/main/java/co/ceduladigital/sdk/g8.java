@@ -16,16 +16,13 @@ public final /* synthetic */ class g8 implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                this.b.lambda$requestFocusAndShowKeyboard$8();
                 break;
             case 1:
-                this.b.lambda$clearFocusAndHideKeyboard$9();
                 break;
             case 2:
                 this.b.show();
                 break;
             default:
-                this.b.requestFocusAndShowKeyboardIfNeeded();
                 break;
         }
     }

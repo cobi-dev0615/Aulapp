@@ -20,6 +20,7 @@ import kotlin.enums.EnumEntriesKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.Charsets;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u0000 \u00022\u00020\u0001:\u0002\u0003\u0002¨\u0006\u0004"}, d2 = {"Lcom/gse/aulapp/util/NfcUtil;", BuildConfig.FLAVOR, "Companion", "NfcCallback", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -134,7 +135,7 @@ public abstract class NfcUtil {
 
         public final Object handlerResponseTag(Context context, Tag tag, Continuation<? super TagDto> continuation) {
             Object runBlocking$default;
-            runBlocking$default = BuildersKt.runBlocking$default(null, new NfcUtil$Companion$handlerResponseTag$2(tag, context, null), 1, null);
+            runBlocking$default = BuildersKt.runBlocking((CoroutineContext) null, new NfcUtil$Companion$handlerResponseTag$2(tag, context, null));
             return runBlocking$default;
         }
 

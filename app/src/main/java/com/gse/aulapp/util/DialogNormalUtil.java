@@ -33,7 +33,9 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
@@ -517,7 +519,7 @@ public final class DialogNormalUtil {
         if (job != null) {
             Job.DefaultImpls.cancel$default(job, null, 1, null);
         }
-        launch$default = BuildersKt.launch$default(ViewModelKt.getViewModelScope(viewModel), null, null, new DialogNormalUtil$updateDialogExamSpeedInfo$1(viewModel, null), 3, null);
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(viewModel), (CoroutineContext) null, (CoroutineStart) null, new DialogNormalUtil$updateDialogExamSpeedInfo$1(viewModel, null));
         updateSpeedJob = launch$default;
     }
 

@@ -3,7 +3,6 @@ package co.ceduladigital.sdk;
 import com.google.android.datatransport.runtime.TransportContext;
 import com.google.android.datatransport.runtime.scheduling.jobscheduling.Uploader;
 import com.google.android.datatransport.runtime.synchronization.SynchronizationGuard;
-import com.google.firebase.crashlytics.internal.CrashlyticsNativeComponentDeferredProxy;
 import com.google.firebase.crashlytics.internal.model.StaticSessionData;
 import com.google.firebase.inject.Deferred;
 import com.google.firebase.inject.Provider;
@@ -24,14 +23,13 @@ public final /* synthetic */ class k3 implements Deferred.DeferredHandler, Synch
 
     @Override // com.google.android.datatransport.runtime.synchronization.SynchronizationGuard.CriticalSection
     public Object execute() {
-        Object lambda$logAndUpdateState$4;
-        lambda$logAndUpdateState$4 = ((Uploader) this.b).lambda$logAndUpdateState$4((Iterable) this.c, (TransportContext) this.d, this.a);
-        return lambda$logAndUpdateState$4;
+        // Stubbed: Uploader.lambda$logAndUpdateState$4
+        return null;
     }
 
     @Override // com.google.firebase.inject.Deferred.DeferredHandler
     public void handle(Provider provider) {
-        CrashlyticsNativeComponentDeferredProxy.lambda$prepareNativeSession$1((String) this.b, (String) this.c, this.a, (StaticSessionData) this.d, provider);
+        // Stubbed: CrashlyticsNativeComponentDeferredProxy.lambda$prepareNativeSession$1
     }
 
     public /* synthetic */ k3(String str, String str2, long j, StaticSessionData staticSessionData) {

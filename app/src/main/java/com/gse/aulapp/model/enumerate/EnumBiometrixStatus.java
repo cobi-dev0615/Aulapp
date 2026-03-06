@@ -93,6 +93,13 @@ public final class EnumBiometrixStatus {
         return $ENTRIES;
     }
 
+    public static EnumBiometrixStatus valueOf(String str) {
+        for (EnumBiometrixStatus e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
+    }
+
     public static EnumBiometrixStatus valueOfString(String str) {
         for (EnumBiometrixStatus e : values()) {
             if (e._name.equals(str)) return e;

@@ -20,7 +20,9 @@ import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.channels.ProduceKt;
 import kotlinx.coroutines.channels.ProducerScope;
 
@@ -126,7 +128,7 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
                     }
                     DefaultLocationClient.this.oldLocation = location2;
                     ProducerScope<Location> producerScope2 = producerScope;
-                    BuildersKt.launch$default(producerScope2, null, null, new DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2(producerScope2, location2, null), 3, null);
+                    BuildersKt.launch(producerScope2, (CoroutineContext) null, (CoroutineStart) null, new DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2(producerScope2, location2, null));
                 }
             };
             fusedLocationProviderClient = this.this$0.client;

@@ -12,8 +12,10 @@ import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.AwaitKt;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Deferred;
 
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00070\u0001¢\u0006\u0002\b\u0002*\u00020\u0003H\n"}, d2 = {"<anonymous>", "Landroidx/work/ListenableWorker$Result;", "Lkotlin/jvm/internal/EnhancedNullability;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 0, 0}, xi = 48)
@@ -60,8 +62,8 @@ public final class SyncDataWorker$doWork$2 extends SuspendLambda implements Func
                 createNotification = this.this$0.createNotification();
                 notificationManager = this.this$0.notificationManager;
                 notificationManager.notify(100, createNotification);
-                async$default = BuildersKt.async$default(coroutineScope, null, null, new SyncDataWorker$doWork$2$asyncSyncSession$1(this.this$0, null), 3, null);
-                async$default2 = BuildersKt.async$default(coroutineScope, null, null, new SyncDataWorker$doWork$2$asyncSyncHistory$1(this.this$0, null), 3, null);
+                async$default = BuildersKt.async(coroutineScope, (CoroutineContext) null, (CoroutineStart) null, new SyncDataWorker$doWork$2$asyncSyncSession$1(this.this$0, null));
+                async$default2 = BuildersKt.async(coroutineScope, (CoroutineContext) null, (CoroutineStart) null, new SyncDataWorker$doWork$2$asyncSyncHistory$1(this.this$0, null));
                 Deferred[] deferredArr = {async$default, async$default2};
                 this.label = 1;
                 if (AwaitKt.awaitAll(deferredArr, this) == coroutine_suspended) {

@@ -178,11 +178,12 @@ public final class PracticeClassFragment extends Fragment {
             FloatingActionButton floatingActionButton = fragmentPracticeClassBinding2.floatingActionButton;
             Intrinsics.checkNotNullExpressionValue(floatingActionButton, "floatingActionButton");
             final int i = 0;
-            ViewExtKt.setOnSingleClickListener(floatingActionButton, new Function0(this) { // from class: co.ceduladigital.sdk.i7
+            final PracticeClassFragment outerThis1 = this;
+            ViewExtKt.setOnSingleClickListener(floatingActionButton, new Function0() { // from class: co.ceduladigital.sdk.i7
                 public final /* synthetic */ PracticeClassFragment b;
 
                 {
-                    this.b = this;
+                    this.b = outerThis1;
                 }
 
                 @Override // kotlin.jvm.functions.Function0
@@ -248,11 +249,12 @@ public final class PracticeClassFragment extends Fragment {
             MaterialButton btnEndClass = fragmentPracticeClassBinding3.btnEndClass;
             Intrinsics.checkNotNullExpressionValue(btnEndClass, "btnEndClass");
             final int i2 = 1;
-            ViewExtKt.setOnSingleClickListener(btnEndClass, new Function0(this) { // from class: co.ceduladigital.sdk.i7
+            final PracticeClassFragment outerThis2 = this;
+            ViewExtKt.setOnSingleClickListener(btnEndClass, new Function0() { // from class: co.ceduladigital.sdk.i7
                 public final /* synthetic */ PracticeClassFragment b;
 
                 {
-                    this.b = this;
+                    this.b = outerThis2;
                 }
 
                 @Override // kotlin.jvm.functions.Function0

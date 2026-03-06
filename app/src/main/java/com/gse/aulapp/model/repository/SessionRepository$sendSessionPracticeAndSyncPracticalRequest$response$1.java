@@ -13,8 +13,10 @@ import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Deferred;
 import retrofit2.Response;
 
@@ -105,7 +107,7 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest$
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         ResultKt.throwOnFailure(obj);
-        async$default = BuildersKt.async$default((CoroutineScope) this.L$0, null, null, new AnonymousClass1(this.$context, this.$practiceRequest, null), 3, null);
+        async$default = BuildersKt.async((CoroutineScope) this.L$0, (CoroutineContext) null, (CoroutineStart) null, new AnonymousClass1(this.$context, this.$practiceRequest, null));
         return async$default;
     }
 

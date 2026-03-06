@@ -577,52 +577,56 @@ public abstract class PngjInputException {
     public abstract boolean PngjBadSignature();
 
     public String toString() {
-        int i;
-        long j;
-        Object[] objArr = new Object[1];
-        c((char) (KeyEvent.getDeadChar(0, 0) + 4534), (SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1)) + 9, 1 - (SystemClock.elapsedRealtime() > 0L ? 1 : (SystemClock.elapsedRealtime() == 0L ? 0 : -1)), objArr);
-        StringBuilder sb = new StringBuilder((String) objArr[0]);
-        sb.append(this.PngjBadSignature);
-        Object[] objArr2 = new Object[1];
-        c((char) TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 6 - View.combineMeasuredStates(0, 0), 10 - (ViewConfiguration.getScrollDefaultDelay() >> 16), objArr2);
-        sb.append((String) objArr2[0]);
-        PngjBadSignature pngjBadSignature = this.PngjBadCrcException;
-        if (pngjBadSignature != null) {
-            int i2 = PngBadCharsetException + 103;
-            a = i2 % 128;
-            if (i2 % 2 == 0) {
-                throw null;
+        try {
+            int i;
+            long j;
+            Object[] objArr = new Object[1];
+            c((char) (KeyEvent.getDeadChar(0, 0) + 4534), (SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1)) + 9, 1 - (SystemClock.elapsedRealtime() > 0L ? 1 : (SystemClock.elapsedRealtime() == 0L ? 0 : -1)), objArr);
+            StringBuilder sb = new StringBuilder((String) objArr[0]);
+            sb.append(this.PngjBadSignature);
+            Object[] objArr2 = new Object[1];
+            c((char) TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 6 - View.combineMeasuredStates(0, 0), 10 - (ViewConfiguration.getScrollDefaultDelay() >> 16), objArr2);
+            sb.append((String) objArr2[0]);
+            PngjBadSignature pngjBadSignature = this.PngjBadCrcException;
+            if (pngjBadSignature != null) {
+                int i2 = PngBadCharsetException + 103;
+                a = i2 % 128;
+                if (i2 % 2 == 0) {
+                    throw null;
+                }
+                i = pngjBadSignature.PngjException;
+            } else {
+                i = -1;
             }
-            i = pngjBadSignature.PngjException;
-        } else {
-            i = -1;
+            sb.append(i);
+            Object[] objArr3 = new Object[1];
+            b(Color.red(0) + 8, false, "\n\u0017\t\u0018￡ￄ\u0013\n", (ViewConfiguration.getLongPressTimeout() >> 16) + 5, 259 - (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)), objArr3);
+            sb.append((String) objArr3[0]);
+            PngjBadSignature pngjBadSignature2 = this.PngjBadCrcException;
+            if (pngjBadSignature2 != null) {
+                j = pngjBadSignature2.values;
+                a = (PngBadCharsetException + 117) % 128;
+            } else {
+                PngBadCharsetException = (a + 19) % 128;
+                j = -1;
+            }
+            sb.append(j);
+            Object[] objArr4 = new Object[1];
+            c((char) (ViewConfiguration.getJumpTapTimeout() >> 16), -TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), 16 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), objArr4);
+            sb.append((String) objArr4[0]);
+            String obj = sb.toString();
+            int i3 = PngBadCharsetException + 83;
+            a = i3 % 128;
+            if (i3 % 2 != 0) {
+                return obj;
+            }
+            throw null;
+        } catch (Throwable t) {
+            throw new RuntimeException(t);
         }
-        sb.append(i);
-        Object[] objArr3 = new Object[1];
-        b(Color.red(0) + 8, false, "\n\u0017\t\u0018￡ￄ\u0013\n", (ViewConfiguration.getLongPressTimeout() >> 16) + 5, 259 - (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)), objArr3);
-        sb.append((String) objArr3[0]);
-        PngjBadSignature pngjBadSignature2 = this.PngjBadCrcException;
-        if (pngjBadSignature2 != null) {
-            j = pngjBadSignature2.values;
-            a = (PngBadCharsetException + 117) % 128;
-        } else {
-            PngBadCharsetException = (a + 19) % 128;
-            j = -1;
-        }
-        sb.append(j);
-        Object[] objArr4 = new Object[1];
-        c((char) (ViewConfiguration.getJumpTapTimeout() >> 16), -TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), 16 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), objArr4);
-        sb.append((String) objArr4[0]);
-        String obj = sb.toString();
-        int i3 = PngBadCharsetException + 83;
-        a = i3 % 128;
-        if (i3 % 2 != 0) {
-            return obj;
-        }
-        throw null;
     }
 
-    public final void valueOf(OutputStream outputStream) {
+    public final void valueOf(OutputStream outputStream) throws Throwable {
         PngBadCharsetException = (a + 119) % 128;
         PngjBadSignature pngjBadSignature = this.PngjBadCrcException;
         if (pngjBadSignature == null || pngjBadSignature.valueOf == null) {

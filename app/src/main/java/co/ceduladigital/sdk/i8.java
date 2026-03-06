@@ -16,15 +16,11 @@ public final /* synthetic */ class i8 implements ViewUtils.OnApplyWindowInsetsLi
 
     @Override // androidx.core.view.OnApplyWindowInsetsListener
     public WindowInsetsCompat onApplyWindowInsets(View view, WindowInsetsCompat windowInsetsCompat) {
-        WindowInsetsCompat lambda$setUpStatusBarSpacerInsetListener$5;
-        lambda$setUpStatusBarSpacerInsetListener$5 = this.a.lambda$setUpStatusBarSpacerInsetListener$5(view, windowInsetsCompat);
-        return lambda$setUpStatusBarSpacerInsetListener$5;
+        return windowInsetsCompat;
     }
 
     @Override // com.google.android.material.internal.ViewUtils.OnApplyWindowInsetsListener
     public WindowInsetsCompat onApplyWindowInsets(View view, WindowInsetsCompat windowInsetsCompat, ViewUtils.RelativePadding relativePadding) {
-        WindowInsetsCompat lambda$setUpToolbarInsetListener$4;
-        lambda$setUpToolbarInsetListener$4 = this.a.lambda$setUpToolbarInsetListener$4(view, windowInsetsCompat, relativePadding);
-        return lambda$setUpToolbarInsetListener$4;
+        return windowInsetsCompat;
     }
 }

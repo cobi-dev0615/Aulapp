@@ -10,4 +10,9 @@ public final /* synthetic */ class h3 implements BreadcrumbHandler {
     public /* synthetic */ h3(CrashlyticsCore crashlyticsCore) {
         this.a = crashlyticsCore;
     }
+
+    @Override
+    public void handleBreadcrumb(String breadcrumb) {
+        // Stubbed: originally delegated to CrashlyticsCore private lambda
+    }
 }

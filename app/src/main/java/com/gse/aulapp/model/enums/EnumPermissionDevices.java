@@ -23,14 +23,30 @@ public final class EnumPermissionDevices {
     static {
         EnumPermissionDevices[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumPermissionDevices(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public final String name() {
+        return this._name;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
     }
 
     public static EnumPermissionDevices valueOfString(String str) {
-        return (EnumPermissionDevices) Enum.valueOf(EnumPermissionDevices.class, str);
+        for (EnumPermissionDevices e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumPermissionDevices[] values() {

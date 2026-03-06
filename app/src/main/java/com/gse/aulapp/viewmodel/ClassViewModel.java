@@ -56,13 +56,13 @@ public final class ClassViewModel extends ViewModel {
             public void onError(String error) {
                 String unused;
                 Intrinsics.checkNotNullParameter(error, "error");
-                unused = this.TAG;
+                unused = ClassViewModel.this.TAG;
             }
 
             @Override // com.gse.aulapp.util.NfcUtil.NfcCallback
             public void onSuccess(Tag tag) {
                 Intrinsics.checkNotNullParameter(tag, "tag");
-                BuildersKt.launch$default(CoroutineScopeKt.CoroutineScope(Dispatchers.getMain()), null, null, new ClassViewModel$validateAndActiveNfc$1$onSuccess$1(tag, activity, null), 3, null);
+                BuildersKt.launch(CoroutineScopeKt.CoroutineScope(Dispatchers.getMain()), (kotlin.coroutines.CoroutineContext) null, (kotlinx.coroutines.CoroutineStart) null, new ClassViewModel$validateAndActiveNfc$1$onSuccess$1(tag, activity, null));
             }
         });
     }

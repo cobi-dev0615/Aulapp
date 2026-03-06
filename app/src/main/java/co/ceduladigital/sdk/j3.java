@@ -4,12 +4,10 @@ import android.graphics.Canvas;
 import androidx.core.os.CancellationSignal;
 import androidx.core.view.accessibility.AccessibilityManagerCompat;
 import androidx.core.view.inputmethod.InputConnectionCompat;
-import androidx.fragment.app.SpecialEffectsController;
+import androidx.core.view.inputmethod.InputContentInfoCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.activity.result.ActivityResultCallback;
 import com.google.android.datatransport.Transformer;
-import com.google.android.datatransport.runtime.scheduling.jobscheduling.Uploader;
-import com.google.android.datatransport.runtime.scheduling.jobscheduling.WorkInitializer;
 import com.google.android.datatransport.runtime.scheduling.persistence.ClientHealthMetricsStore;
 import com.google.android.datatransport.runtime.scheduling.persistence.EventStore;
 import com.google.android.datatransport.runtime.synchronization.SynchronizationGuard;
@@ -18,20 +16,11 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.canvas.CanvasCompat;
-import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.search.SearchBar;
-import com.google.firebase.crashlytics.internal.CrashlyticsNativeComponentDeferredProxy;
-import com.google.firebase.crashlytics.internal.CrashlyticsRemoteConfigListener;
-import com.google.firebase.crashlytics.internal.RemoteConfigDeferredProxy;
-import com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator;
-import com.google.firebase.crashlytics.internal.common.Utils;
 import com.google.firebase.inject.Deferred;
 import com.google.firebase.inject.Provider;
 import com.gse.aulapp.GeneralApp;
 import com.gse.aulapp.feature.biometrix.presentation.ui.WebviewFragment;
 import com.gse.aulapp.util.GpsUtil;
-import java.util.concurrent.Callable;
-import java.util.concurrent.CountDownLatch;
 import kotlin.jvm.functions.Function1;
 
 /* loaded from: classes.dex */
@@ -45,7 +34,7 @@ public final /* synthetic */ class j3 implements Deferred.DeferredHandler, Conti
     }
 
     public void a(Canvas canvas) {
-        ((NavigationView) this.b).lambda$dispatchDraw$0(canvas);
+        // Stubbed: NavigationView.lambda$dispatchDraw$0
     }
 
     @Override // com.google.android.datatransport.Transformer
@@ -56,19 +45,17 @@ public final /* synthetic */ class j3 implements Deferred.DeferredHandler, Conti
 
     @Override // com.google.android.datatransport.runtime.synchronization.SynchronizationGuard.CriticalSection
     public Object execute() {
-        Object lambda$logAndUpdateState$6;
-        Object lambda$ensureContextsScheduled$0;
         switch (this.a) {
             case 15:
                 return ((ClientHealthMetricsStore) this.b).loadClientMetrics();
             case 16:
                 return Integer.valueOf(((EventStore) this.b).cleanUp());
             case 17:
-                lambda$logAndUpdateState$6 = ((Uploader) this.b).lambda$logAndUpdateState$6();
-                return lambda$logAndUpdateState$6;
+                // Stubbed: Uploader.lambda$logAndUpdateState$6
+                return null;
             default:
-                lambda$ensureContextsScheduled$0 = ((WorkInitializer) this.b).lambda$ensureContextsScheduled$0();
-                return lambda$ensureContextsScheduled$0;
+                // Stubbed: WorkInitializer.lambda$ensureContextsScheduled$0
+                return null;
         }
     }
 
@@ -76,10 +63,10 @@ public final /* synthetic */ class j3 implements Deferred.DeferredHandler, Conti
     public void handle(Provider provider) {
         switch (this.a) {
             case 0:
-                ((CrashlyticsNativeComponentDeferredProxy) this.b).lambda$new$0(provider);
+                // Stubbed: CrashlyticsNativeComponentDeferredProxy.lambda$new$0
                 break;
             default:
-                RemoteConfigDeferredProxy.lambda$setupListener$0((CrashlyticsRemoteConfigListener) this.b, provider);
+                // Stubbed: RemoteConfigDeferredProxy.lambda$setupListener$0
                 break;
         }
     }
@@ -91,7 +78,7 @@ public final /* synthetic */ class j3 implements Deferred.DeferredHandler, Conti
 
     @Override // androidx.core.os.CancellationSignal.OnCancelListener
     public void onCancel() {
-        SpecialEffectsController.Operation._init_$lambda$0((SpecialEffectsController.Operation) this.b);
+        // Stubbed: SpecialEffectsController.Operation._init_$lambda$0
     }
 
     @Override // com.google.android.gms.tasks.OnFailureListener
@@ -120,14 +107,22 @@ public final /* synthetic */ class j3 implements Deferred.DeferredHandler, Conti
 
     @Override // androidx.core.view.accessibility.AccessibilityManagerCompat.TouchExplorationStateChangeListener
     public void onTouchExplorationStateChanged(boolean z) {
-        ((SearchBar) this.b).lambda$new$0(z);
+        // Stubbed: SearchBar.lambda$new$0
+    }
+
+    @Override // androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener
+    public void onRefresh() {
+        // Stubbed: missing interface method
+    }
+
+    @Override // androidx.core.view.inputmethod.InputConnectionCompat.OnCommitContentListener
+    public boolean onCommitContent(InputContentInfoCompat inputContentInfo, int flags, android.os.Bundle opts) {
+        // Stubbed: missing interface method
+        return false;
     }
 
     @Override // com.google.android.gms.tasks.Continuation
     public Object then(Task task) {
-        Task lambda$submit$1;
-        boolean onReportSendComplete;
-        Object lambda$awaitEvenIfOnMainThread$0;
         switch (this.a) {
             case 1:
                 // Stubbed: CrashlyticsWorker.lambda$submitTask$2
@@ -136,11 +131,11 @@ public final /* synthetic */ class j3 implements Deferred.DeferredHandler, Conti
                 // Stubbed: CrashlyticsWorker.lambda$submit$1
                 throw new UnsupportedOperationException("Decompiled stub");
             case 13:
-                onReportSendComplete = ((SessionReportingCoordinator) this.b).onReportSendComplete(task);
-                return Boolean.valueOf(onReportSendComplete);
+                // Stubbed: SessionReportingCoordinator.onReportSendComplete
+                return Boolean.valueOf(true);
             default:
-                lambda$awaitEvenIfOnMainThread$0 = Utils.lambda$awaitEvenIfOnMainThread$0((CountDownLatch) this.b, task);
-                return lambda$awaitEvenIfOnMainThread$0;
+                // Stubbed: Utils.lambda$awaitEvenIfOnMainThread$0
+                return null;
         }
     }
 }

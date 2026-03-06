@@ -19,10 +19,8 @@ public final /* synthetic */ class g3 implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                this.b.lambda$doBackgroundInitializationAsync$0(this.c);
                 break;
             default:
-                this.b.lambda$finishInitSynchronously$9(this.c);
                 break;
         }
     }

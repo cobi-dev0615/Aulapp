@@ -19,8 +19,10 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.text.StringsKt;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.CoroutineScopeKt;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.SupervisorKt;
@@ -38,7 +40,7 @@ public final class LocationService extends Service {
     public LocationService() {
         Intrinsics.checkNotNullExpressionValue("LocationService", "getSimpleName(...)");
         this.TAG = "LocationService";
-        this.serviceScope = CoroutineScopeKt.CoroutineScope(SupervisorKt.SupervisorJob$default(null, 1, null).plus(Dispatchers.getMain()));
+        this.serviceScope = CoroutineScopeKt.CoroutineScope(SupervisorKt.SupervisorJob(null).plus(Dispatchers.getMain()));
         this.INTERVAL_DEFAULT = 2500L;
         this.isService = true;
     }
@@ -52,7 +54,7 @@ public final class LocationService extends Service {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void saveGpsTrackerAndNotificationReport(Location location, String sessionId, long interval, NotificationCompat.Builder notification, NotificationManager notificationManager) {
-        BuildersKt.launch$default(this.serviceScope, null, null, new LocationService$saveGpsTrackerAndNotificationReport$1(location, this, sessionId, null), 3, null);
+        BuildersKt.launch(this.serviceScope, (CoroutineContext) null, (CoroutineStart) null, new LocationService$saveGpsTrackerAndNotificationReport$1(location, this, sessionId, null));
         String valueOf = String.valueOf(location.getLatitude());
         String valueOf2 = String.valueOf(location.getLongitude());
         location.getLatitude();

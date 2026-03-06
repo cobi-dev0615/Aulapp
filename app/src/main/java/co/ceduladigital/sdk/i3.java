@@ -20,10 +20,8 @@ public final /* synthetic */ class i3 implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                this.b.lambda$log$3(this.c, this.d);
                 break;
             default:
-                this.b.lambda$log$2(this.c, this.d);
                 break;
         }
     }

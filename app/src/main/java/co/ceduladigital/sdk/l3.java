@@ -19,15 +19,13 @@ public final /* synthetic */ class l3 implements ComponentFactory {
 
     @Override // com.google.firebase.components.ComponentFactory
     public final Object create(ComponentContainer componentContainer) {
-        FirebaseCrashlytics buildCrashlytics;
-        DefaultHeartBeatController lambda$component$3;
         switch (this.a) {
             case 0:
-                buildCrashlytics = ((CrashlyticsRegistrar) this.b).buildCrashlytics(componentContainer);
-                return buildCrashlytics;
+                /* Stubbed: CrashlyticsRegistrar.buildCrashlytics is not accessible */
+                return null;
             default:
-                lambda$component$3 = DefaultHeartBeatController.lambda$component$3((Qualified) this.b, componentContainer);
-                return lambda$component$3;
+                /* Stubbed: DefaultHeartBeatController.lambda$component$3 is not accessible */
+                return null;
         }
     }
 }

@@ -18,7 +18,9 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.GlobalScope;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u0000 \u00022\u00020\u0001:\u0001\u0002¨\u0006\u0003"}, d2 = {"Lcom/gse/aulapp/util/ControllerFinishClassOrExamUtil;", BuildConfig.FLAVOR, "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -154,11 +156,11 @@ public abstract class ControllerFinishClassOrExamUtil {
         }
 
         private final void updateIsFinishedState(String sessionID) {
-            BuildersKt.launch$default(GlobalScope.INSTANCE, null, null, new ControllerFinishClassOrExamUtil$Companion$updateIsFinishedState$1(sessionID, null), 3, null);
+            BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new ControllerFinishClassOrExamUtil$Companion$updateIsFinishedState$1(sessionID, null));
         }
 
         private final void updateIsPendingState(String isPending, String sessionID) {
-            BuildersKt.launch$default(GlobalScope.INSTANCE, null, null, new ControllerFinishClassOrExamUtil$Companion$updateIsPendingState$1(isPending, sessionID, null), 3, null);
+            BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new ControllerFinishClassOrExamUtil$Companion$updateIsPendingState$1(isPending, sessionID, null));
         }
 
         public final void navigationTo(NavController findNavController, NavDirections navDirections) {
@@ -190,17 +192,17 @@ public abstract class ControllerFinishClassOrExamUtil {
             Intrinsics.checkNotNullParameter(repository, "repository");
             Intrinsics.checkNotNullParameter(navDirections, "navDirections");
             ControllerFinishClassOrExamUtil.sessionRepository = repository;
-            BuildersKt.launch$default(GlobalScope.INSTANCE, null, null, new ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1(context, sessionID, repository, findNavController, navDirections, null), 3, null);
+            BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1(context, sessionID, repository, findNavController, navDirections, null));
         }
 
         public final void updateDateEndClass(String sessionID) {
             Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-            BuildersKt.launch$default(GlobalScope.INSTANCE, null, null, new ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$1(sessionID, null), 3, null);
+            BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$1(sessionID, null));
         }
 
         public final void updateIsPendingSync(String sessionID) {
             Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-            BuildersKt.launch$default(GlobalScope.INSTANCE, null, null, new ControllerFinishClassOrExamUtil$Companion$updateIsPendingSync$1(sessionID, null), 3, null);
+            BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new ControllerFinishClassOrExamUtil$Companion$updateIsPendingSync$1(sessionID, null));
         }
 
         private Companion() {

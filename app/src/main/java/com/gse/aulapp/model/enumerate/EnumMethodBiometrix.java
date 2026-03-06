@@ -22,14 +22,37 @@ public final class EnumMethodBiometrix {
     static {
         EnumMethodBiometrix[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumMethodBiometrix(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public final String name() {
+        return this._name;
+    }
+
+    public final int ordinal() {
+        return this._ordinal;
+    }
+
+    public static EnumMethodBiometrix valueOf(String str) {
+        for (EnumMethodBiometrix e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumMethodBiometrix valueOfString(String str) {
-        return (EnumMethodBiometrix) Enum.valueOf(EnumMethodBiometrix.class, str);
+        for (EnumMethodBiometrix e : values()) {
+            if (e._name.equals(str)) return e;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumMethodBiometrix[] values() {

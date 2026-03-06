@@ -18,16 +18,16 @@ public final /* synthetic */ class i implements BreadcrumbSource, AnalyticsEvent
 
     @Override // com.google.firebase.inject.Deferred.DeferredHandler
     public void handle(Provider provider) {
-        this.a.lambda$init$2(provider);
+        // Stubbed: AnalyticsDeferredProxy.lambda$init$2
     }
 
     @Override // com.google.firebase.crashlytics.internal.analytics.AnalyticsEventLogger
     public void logEvent(String str, Bundle bundle) {
-        this.a.lambda$getAnalyticsEventLogger$1(str, bundle);
+        // Stubbed: AnalyticsDeferredProxy.lambda$getAnalyticsEventLogger$1
     }
 
     @Override // com.google.firebase.crashlytics.internal.breadcrumbs.BreadcrumbSource
     public void registerBreadcrumbHandler(BreadcrumbHandler breadcrumbHandler) {
-        this.a.lambda$getDeferredBreadcrumbSource$0(breadcrumbHandler);
+        // Stubbed: AnalyticsDeferredProxy.lambda$getDeferredBreadcrumbSource$0
     }
 }

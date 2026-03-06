@@ -2,8 +2,6 @@ package co.ceduladigital.sdk;
 
 import android.view.View;
 import com.google.android.material.internal.ViewUtils;
-import com.google.zxing.client.android.AmbientLightManager;
-import com.journeyapps.barcodescanner.camera.CameraInstance;
 
 /* loaded from: classes.dex */
 public final /* synthetic */ class h implements Runnable {
@@ -21,10 +19,8 @@ public final /* synthetic */ class h implements Runnable {
     public final void run() {
         switch (this.a) {
             case 0:
-                ((AmbientLightManager) this.c).lambda$setTorch$0(this.b);
                 break;
             case 1:
-                ((CameraInstance) this.c).lambda$setTorch$0(this.b);
                 break;
             default:
                 ViewUtils.showKeyboard((View) this.c, this.b);

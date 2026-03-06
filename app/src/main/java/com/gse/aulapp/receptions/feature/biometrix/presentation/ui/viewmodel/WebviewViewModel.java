@@ -9,7 +9,9 @@ import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.flow.FlowKt;
 import kotlinx.coroutines.flow.MutableSharedFlow;
 import kotlinx.coroutines.flow.SharedFlow;
@@ -44,11 +46,11 @@ public final class WebviewViewModel extends ViewModel {
     }
 
     public final void handlePageFinished(boolean isRegisterFlow, String url) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new WebviewViewModel$handlePageFinished$1(url, this, isRegisterFlow, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new WebviewViewModel$handlePageFinished$1(url, this, isRegisterFlow, null));
     }
 
     public final void resetState() {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new WebviewViewModel$resetState$1(this, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new WebviewViewModel$resetState$1(this, null));
     }
 
     public final void setLoadingFinished(boolean z) {

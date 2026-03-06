@@ -12,8 +12,10 @@ import com.gse.aulapp.util.NfcUtil;
 import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScopeKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Dispatchers;
 
 @Metadata(d1 = {"\u0000\u001f\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\bH\u0016¨\u0006\t"}, d2 = {"com/gse/aulapp/viewmodel/ClassPracticeBeforeViewModel$validateAndActiveNfc$1", "Lcom/gse/aulapp/util/NfcUtil$NfcCallback;", "onSuccess", BuildConfig.FLAVOR, "tag", "Landroid/nfc/Tag;", "onError", "error", BuildConfig.FLAVOR, "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -71,6 +73,6 @@ public final class ClassPracticeBeforeViewModel$validateAndActiveNfc$1 implement
     @Override // com.gse.aulapp.util.NfcUtil.NfcCallback
     public void onSuccess(Tag tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
-        BuildersKt.launch$default(CoroutineScopeKt.CoroutineScope(Dispatchers.getMain()), null, null, new ClassPracticeBeforeViewModel$validateAndActiveNfc$1$onSuccess$1(tag, this.this$0, this.$activity, this.$binding, this.$isEnter, null), 3, null);
+        BuildersKt.launch(CoroutineScopeKt.CoroutineScope(Dispatchers.getMain()), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$validateAndActiveNfc$1$onSuccess$1(tag, this.this$0, this.$activity, this.$binding, this.$isEnter, null));
     }
 }

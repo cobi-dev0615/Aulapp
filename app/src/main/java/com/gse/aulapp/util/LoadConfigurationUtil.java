@@ -9,7 +9,9 @@ import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.GlobalScope;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u0000 \u00022\u00020\u0001:\u0001\u0002¨\u0006\u0003"}, d2 = {"Lcom/gse/aulapp/util/LoadConfigurationUtil;", BuildConfig.FLAVOR, "Companion", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -29,7 +31,7 @@ public abstract class LoadConfigurationUtil {
         public final void saveParameterListOnPreference(Activity context) {
             Intrinsics.checkNotNullParameter(context, "context");
             try {
-                BuildersKt.launch$default(GlobalScope.INSTANCE, null, null, new LoadConfigurationUtil$Companion$saveParameterListOnPreference$1(context, null), 3, null);
+                BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new LoadConfigurationUtil$Companion$saveParameterListOnPreference$1(context, null));
             } catch (Exception e) {
                 LogSendUtil.INSTANCE.setLog(context, q.i("saveParameterListOnPreference Exception: ", e.getMessage()), "saveParameterListOnPreference", true);
                 DialogUtil.Companion.showErrorDialog$default(DialogUtil.INSTANCE, context, EnumDialogType.DIALOG_TYPE_GENERAL_ERROR, null, null, e.getMessage(), false, null, 12, null);

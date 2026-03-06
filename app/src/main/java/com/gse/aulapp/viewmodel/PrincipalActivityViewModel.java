@@ -35,7 +35,9 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
+import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineStart;
 
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u000e\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\rJ\u0016\u0010\u000e\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000f\u001a\u00020\u0010J\u0016\u0010\u0011\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000f\u001a\u00020\u0010J\u000e\u0010\u0012\u001a\u00020\u000b2\u0006\u0010\u0013\u001a\u00020\rJ\u0016\u0010\u0014\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000f\u001a\u00020\u0010J\u0016\u0010\u0015\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000f\u001a\u00020\u0010J\u0018\u0010\u0016\u001a\u00020\u000b2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u000f\u001a\u00020\u0010H\u0002J&\u0010\u0019\u001a\u00020\u000b2\u0006\u0010\u0013\u001a\u00020\r2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fJ\u001e\u0010 \u001a\u00020\u000b2\u0006\u0010\u0013\u001a\u00020\r2\f\u0010!\u001a\b\u0012\u0004\u0012\u00020\u000b0\"H\u0002J \u0010#\u001a\u00020\u000b2\u0006\u0010$\u001a\u00020%2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010\u0013\u001a\u00020\rH\u0002J\u0018\u0010&\u001a\u00020\u000b2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010'\u001a\u00020\u0007H\u0002J\u0018\u0010(\u001a\u00020\u000b2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010)\u001a\u00020\u0007H\u0002J \u0010*\u001a\u00020\u000b2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010+\u001a\u00020\u00072\u0006\u0010,\u001a\u00020\u0007H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082.¢\u0006\u0002\n\u0000¨\u0006-"}, d2 = {"Lcom/gse/aulapp/viewmodel/PrincipalActivityViewModel;", "Landroidx/lifecycle/ViewModel;", "historicRecordPermissionsChangeRepository", "Lcom/gse/aulapp/model/repository/HistoricRecordPermissionsChangeRepository;", "<init>", "(Lcom/gse/aulapp/model/repository/HistoricRecordPermissionsChangeRepository;)V", "TAG", BuildConfig.FLAVOR, "connectivityObserver", "Lcom/gse/aulapp/util/ConnectivityObserver;", "subscribeNetwork", BuildConfig.FLAVOR, "context", "Landroid/app/Activity;", "handlerStatusChangeAirplaneMode", "isEnabled", BuildConfig.FLAVOR, "handlerStatusChangeGPS", "subscribeNfc", "activity", "handlerStatusChangeNfc", "validateShowDialogNetworkUnavailable", "saveHistoricPermission", "permission", "Lcom/gse/aulapp/model/enumerate/EnumPermissionsApp;", "setDrawerMenuData", "navView", "Lcom/google/android/material/navigation/NavigationView;", "drawerLayout", "Landroidx/drawerlayout/widget/DrawerLayout;", "navController", "Landroidx/navigation/NavController;", "validateConnection", "function", "Lkotlin/Function0;", "routeNavigation", "btnNavigation", "Landroid/widget/Button;", "navigateToRideHistory", "instructorId", "navigateToHoursPrefered", "sessionId", "navigateToScheduleExams", "appbarTitle", "url", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: classes2.dex */
@@ -84,7 +86,7 @@ public final class PrincipalActivityViewModel extends ViewModel {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void saveHistoricPermission(EnumPermissionsApp permission, boolean isEnabled) {
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PrincipalActivityViewModel$saveHistoricPermission$1(this, isEnabled, permission, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$saveHistoricPermission$1(this, isEnabled, permission, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -188,17 +190,17 @@ public final class PrincipalActivityViewModel extends ViewModel {
 
     public final void handlerStatusChangeAirplaneMode(Activity context, boolean isEnabled) {
         Intrinsics.checkNotNullParameter(context, "context");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PrincipalActivityViewModel$handlerStatusChangeAirplaneMode$1(this, isEnabled, context, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$handlerStatusChangeAirplaneMode$1(this, isEnabled, context, null));
     }
 
     public final void handlerStatusChangeGPS(Activity context, boolean isEnabled) {
         Intrinsics.checkNotNullParameter(context, "context");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PrincipalActivityViewModel$handlerStatusChangeGPS$1(this, isEnabled, context, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$handlerStatusChangeGPS$1(this, isEnabled, context, null));
     }
 
     public final void handlerStatusChangeNfc(Activity context, boolean isEnabled) {
         Intrinsics.checkNotNullParameter(context, "context");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PrincipalActivityViewModel$handlerStatusChangeNfc$1(this, isEnabled, context, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$handlerStatusChangeNfc$1(this, isEnabled, context, null));
     }
 
     public final void setDrawerMenuData(Activity activity, NavigationView navView, DrawerLayout drawerLayout, NavController navController) {
@@ -249,7 +251,7 @@ public final class PrincipalActivityViewModel extends ViewModel {
 
     public final void subscribeNetwork(Activity context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PrincipalActivityViewModel$subscribeNetwork$1(this, context, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$subscribeNetwork$1(this, context, null));
     }
 
     public final void subscribeNfc(Activity activity) {
@@ -260,6 +262,6 @@ public final class PrincipalActivityViewModel extends ViewModel {
 
     public final void validateShowDialogNetworkUnavailable(Activity context, boolean isEnabled) {
         Intrinsics.checkNotNullParameter(context, "context");
-        BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), null, null, new PrincipalActivityViewModel$validateShowDialogNetworkUnavailable$1(this, context, isEnabled, null), 3, null);
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$validateShowDialogNetworkUnavailable$1(this, context, isEnabled, null));
     }
 }
