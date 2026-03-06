@@ -143,10 +143,10 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                 }
             }
             Object[] objArr3 = new Object[1];
-            g(r1[2], (short) ($$a[54] + 1), r1[77], objArr3);
+            g($$a[2], (short) ($$a[54] + 1), $$a[77], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            g(r1[17], (short) ($$b & 505), r1[27], objArr4);
+            g($$a[17], (short) ($$b & 505), $$a[27], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1621578265);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4930;
@@ -172,7 +172,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedRealtime = (int) SystemClock.elapsedRealtime();
-                    int c = defpackage.a.c((~((~elapsedRealtime) | 261041012)) | 759930292, 217, (((~(elapsedRealtime | (-759930293))) | 541103232) * 217) + ((((~((-759930293) | r5)) | (~(261041012 | elapsedRealtime))) * 217) - 2082017980), 1558105787);
+                    int c = defpackage.a.c((~((~elapsedRealtime) | 261041012)) | 759930292, 217, (((~(elapsedRealtime | (-759930293))) | 541103232) * 217) + ((((~((-759930293) | 0)) | (~(261041012 | elapsedRealtime))) * 217) - 2082017980), 1558105787);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -306,10 +306,10 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                 }
             }
             Object[] objArr3 = new Object[1];
-            g(r1[2], (short) ($$a[54] + 1), r1[77], objArr3);
+            g($$a[2], (short) ($$a[54] + 1), $$a[77], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            g(r1[17], (short) ($$b & 505), r1[27], objArr4);
+            g($$a[17], (short) ($$b & 505), $$a[27], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1370698847);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4952;
@@ -335,7 +335,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int maxMemory = (int) Runtime.getRuntime().maxMemory();
-                    int c = defpackage.a.c((~((~maxMemory) | (-227585149))) | 150998076, 560, ((~(maxMemory | 803061500)) * (-560)) + (((~(726474428 | r5)) * (-560)) - 1198529137), -2031914957);
+                    int c = defpackage.a.c((~((~maxMemory) | (-227585149))) | 150998076, 560, ((~(maxMemory | 803061500)) * (-560)) + (((~(726474428 | 0)) * (-560)) - 1198529137), -2031914957);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -383,9 +383,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         byte[] bArr2 = new byte[b + 6];
         int i4 = b + 5;
         if (bArr == null) {
-            byte b2 = r6;
+            byte b2 = 0;
             i = 0;
-            int i5 = r6;
+            int i5 = 0;
             i3 = (i3 + b2) - 13;
             i2 = i5 + 1;
             bArr2[i] = (byte) i3;
@@ -403,7 +403,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
             }
         } else {
             i = 0;
-            i2 = r6;
+            i2 = 0;
             bArr2[i] = (byte) i3;
             if (i == i4) {
             }
@@ -430,7 +430,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int identityHashCode = System.identityHashCode(this);
                         int i = ~identityHashCode;
-                        int c = defpackage.a.c((~(367862163 | i)) | (-131027117), 712, (((~(identityHashCode | 401568191)) | (~(i | (-33706029)))) * (-712)) + (((33706028 | r7) * (-712)) - 623939641), 901506480);
+                        int c = defpackage.a.c((~(367862163 | i)) | (-131027117), 712, (((~(identityHashCode | 401568191)) | (~(i | (-33706029)))) * (-712)) + (((33706028 | 0) * (-712)) - 623939641), 901506480);
                         int i2 = c ^ (c << 13);
                         int i3 = i2 ^ (i2 >>> 17);
                         ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -545,10 +545,10 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                 }
             }
             Object[] objArr3 = new Object[1];
-            g(r1[2], (short) ($$a[54] + 1), r1[77], objArr3);
+            g($$a[2], (short) ($$a[54] + 1), $$a[77], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            g(r1[17], (short) ($$b & 505), r1[27], objArr4);
+            g($$a[17], (short) ($$b & 505), $$a[27], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 491737148);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4922;
@@ -721,7 +721,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedRealtime = (int) SystemClock.elapsedRealtime();
-                    int c = defpackage.a.c((~(elapsedRealtime | (-257256639))) | 239404160 | (~((~elapsedRealtime) | 259485119)), 164, ((241632641 | elapsedRealtime) * 164) + ((((~(257256638 | r5)) | 241632641) * (-328)) - 2063446229), -1468239307);
+                    int c = defpackage.a.c((~(elapsedRealtime | (-257256639))) | 239404160 | (~((~elapsedRealtime) | 259485119)), 164, ((241632641 | elapsedRealtime) * 164) + ((((~(257256638 | 0)) | 241632641) * (-328)) - 2063446229), -1468239307);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -775,10 +775,10 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                 }
             }
             Object[] objArr3 = new Object[1];
-            g(r1[2], (short) ($$a[54] + 1), r1[77], objArr3);
+            g($$a[2], (short) ($$a[54] + 1), $$a[77], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            g(r1[17], (short) ($$b & 505), r1[27], objArr4);
+            g($$a[17], (short) ($$b & 505), $$a[27], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1136444667);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4961;

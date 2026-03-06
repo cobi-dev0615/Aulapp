@@ -42,8 +42,8 @@ import org.json.JSONObject;
 
 /* loaded from: classes2.dex */
 public final class PngjPrematureEnding implements PngjUnsupportedException {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     private static char PngjBadCrcException;
     private static char PngjBadSignature;
     private static char valueOf;
@@ -97,9 +97,9 @@ public final class PngjPrematureEnding implements PngjUnsupportedException {
         int r6 = (s2 * 4) + 114;
         byte[] bArr2 = new byte[i + 1];
         int i3 = -1;
-        byte b = r6;
+        byte b = 0;
         if (bArr == null) {
-            b = i2 + r6;
+            b = i2 + 0;
             i2 = i2;
             bArr = bArr;
             i3 = -1;

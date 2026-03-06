@@ -344,7 +344,7 @@ public class RResult {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~((int) Runtime.getRuntime().maxMemory())) | (-742527))) | 498146753, 160, (((~(r0 | 498146753)) | (-498818560)) * (-160)) - 101770849, 200559911);
+                    int c = a.c((~((~((int) Runtime.getRuntime().maxMemory())) | (-742527))) | 498146753, 160, (((~(0 | 498146753)) | (-498818560)) * (-160)) - 101770849, 200559911);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -387,7 +387,7 @@ public class RResult {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~System.identityHashCode(this);
-                    int c = a.c((~(204528972 | i)) | 498813375, 764, (((~(i | 294360307)) | 204491020) * (-1528)) + (((r5 | 294360307) * 764) - 965749081), -1839591171);
+                    int c = a.c((~(204528972 | i)) | 498813375, 764, (((~(i | 294360307)) | 204491020) * (-1528)) + (((0 | 294360307) * 764) - 965749081), -1839591171);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -512,7 +512,7 @@ public class RResult {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | (-11534399))) | (~((~identityHashCode) | (-407553))) | (~((-486539778) | identityHashCode)), 867, (((~((-486947330) | identityHashCode)) | 407552 | (~((-11941951) | identityHashCode))) * (-1734)) + ((((~((-486947330) | r6)) | (~((-11941951) | r6))) * (-867)) - 755802724), 158222991);
+                    int c = a.c((~(identityHashCode | (-11534399))) | (~((~identityHashCode) | (-407553))) | (~((-486539778) | identityHashCode)), 867, (((~((-486947330) | identityHashCode)) | 407552 | (~((-11941951) | identityHashCode))) * (-1734)) + ((((~((-486947330) | 0)) | (~((-11941951) | 0))) * (-867)) - 755802724), 158222991);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

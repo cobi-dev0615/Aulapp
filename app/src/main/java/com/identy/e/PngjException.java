@@ -33,8 +33,8 @@ import kotlin.UByte;
 
 /* loaded from: classes2.dex */
 public class PngjException {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     private static char[] Action;
     private static char PngBadCharsetException;
     private static /* synthetic */ boolean valueOf;

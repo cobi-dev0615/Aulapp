@@ -4,8 +4,8 @@ import java.lang.reflect.Method;
 
 /* loaded from: classes2.dex */
 public class LibSettings {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     public static boolean SAVE_4F_DATA = false;
     protected static int a = 200;
     public static int cameraId = 0;
@@ -26,7 +26,7 @@ public class LibSettings {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~defpackage.a.b(1079731555)) | 188898746)) | 37885056, 420, ((~(r0 | 188898746)) * 420) - 499869941, 1208440908);
+                    int c = defpackage.a.c((~((~defpackage.a.b(1079731555)) | 188898746)) | 37885056, 420, ((~(0 | 188898746)) * 420) - 499869941, 1208440908);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -36,10 +36,10 @@ public class LibSettings {
             }
             byte b = $$a[77];
             java.lang.Object[] objArr3 = new java.lang.Object[1];
-            b((short) (-b), b, r1[75], objArr3);
+            b((short) (-b), b, $$a[75], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             java.lang.Object[] objArr4 = new java.lang.Object[1];
-            b(r1[88], r1[27], r1[19], objArr4);
+            b($$a[88], $$a[27], $$a[19], objArr4);
             objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1208440908);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4893;
@@ -122,7 +122,7 @@ public class LibSettings {
                 if (j2 > j) {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = (int) Runtime.getRuntime().totalMemory();
-                    int c = defpackage.a.c((~(i | 237323694)) | 261565585, 519, (((~((~i) | (-26355730))) | (~(263679423 | i))) * (-519)) + ((((~((-261565586) | r5)) | 237323694) * 519) - 726608762), -253050616);
+                    int c = defpackage.a.c((~(i | 237323694)) | 261565585, 519, (((~((~i) | (-26355730))) | (~(263679423 | i))) * (-519)) + ((((~((-261565586) | 0)) | 237323694) * 519) - 726608762), -253050616);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);

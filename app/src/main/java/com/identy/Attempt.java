@@ -75,7 +75,7 @@ public class Attempt {
                     int i17 = ((i16 ^ 5) + ((i16 & 5) << 1)) >> 27;
                     int i18 = ((i17 & (-63)) + (i17 | (-63))) / 32;
                     int i19 = (i18 ^ 1) + ((i18 & 1) << 1);
-                    this.e1 = (993300 / (((-((i19 ^ 1) + ((i19 & 1) << 1))) & r5) * 462)) - 430;
+                    this.e1 = (993300 / (((-((i19 ^ 1) + ((i19 & 1) << 1))) & 0) * 462)) - 430;
                     this.PngBadCharsetException = 0L;
                     this.Action = 0L;
                     this.onErrorResponse = false;
@@ -119,7 +119,7 @@ public class Attempt {
             int i172 = ((i162 ^ 5) + ((i162 & 5) << 1)) >> 27;
             int i182 = ((i172 & (-63)) + (i172 | (-63))) / 32;
             int i192 = (i182 ^ 1) + ((i182 & 1) << 1);
-            this.e1 = (993300 / (((-((i192 ^ 1) + ((i192 & 1) << 1))) & r5) * 462)) - 430;
+            this.e1 = (993300 / (((-((i192 ^ 1) + ((i192 & 1) << 1))) & 0) * 462)) - 430;
             this.PngBadCharsetException = 0L;
             this.Action = 0L;
             this.onErrorResponse = false;
@@ -245,7 +245,7 @@ public class Attempt {
                 if (j3 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = defpackage.a.c((~(elapsedCpuTime | 498593215)) | (~((-8817849) | (~elapsedCpuTime))), 338, (((489775367 | r6) | (~(8817848 | elapsedCpuTime))) * (-338)) - 1460761219, -1417565455);
+                    int c = defpackage.a.c((~(elapsedCpuTime | 498593215)) | (~((-8817849) | (~elapsedCpuTime))), 338, (((489775367 | 0) | (~(8817848 | elapsedCpuTime))) * (-338)) - 1460761219, -1417565455);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -265,7 +265,7 @@ public class Attempt {
                     int i13 = -(i11 ^ ((i12 ^ 1) + ((i12 & 1) << 1)));
                     int i14 = ((i13 & 2) + (2 | i13)) >> 21;
                     i = ((i14 ^ (-4095)) + ((i14 & (-4095)) << 1)) / 2048;
-                    if (j2 >= (504594 / (((-((((i | 1) << 1) - (i ^ 1)) - (-1))) & r5) * 1649)) - 153) {
+                    if (j2 >= (504594 / (((-((((i | 1) << 1) - (i ^ 1)) - (-1))) & 0) * 1649)) - 153) {
                         return 0L;
                     }
                     return j2;
@@ -296,7 +296,7 @@ public class Attempt {
             int i132 = -(i112 ^ ((i122 ^ 1) + ((i122 & 1) << 1)));
             int i142 = ((i132 & 2) + (2 | i132)) >> 21;
             i = ((i142 ^ (-4095)) + ((i142 & (-4095)) << 1)) / 2048;
-            if (j2 >= (504594 / (((-((((i | 1) << 1) - (i ^ 1)) - (-1))) & r5) * 1649)) - 153) {
+            if (j2 >= (504594 / (((-((((i | 1) << 1) - (i ^ 1)) - (-1))) & 0) * 1649)) - 153) {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -404,7 +404,7 @@ public class Attempt {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int freeMemory = (int) Runtime.getRuntime().freeMemory();
-                    int c = defpackage.a.c((~(freeMemory | (-550202987))) | 1049092266, 519, (((~((~freeMemory) | (-545480747))) | (~((-4722241) | freeMemory))) * (-519)) + ((((~((-1049092267) | r5)) | (-550202987)) * 519) - 726608762), 604584575);
+                    int c = defpackage.a.c((~(freeMemory | (-550202987))) | 1049092266, 519, (((~((~freeMemory) | (-545480747))) | (~((-4722241) | freeMemory))) * (-519)) + ((((~((-1049092267) | 0)) | (-550202987)) * 519) - 726608762), 604584575);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -485,7 +485,7 @@ public class Attempt {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int maxMemory = (int) Runtime.getRuntime().maxMemory();
-                    int c = defpackage.a.c((~(maxMemory | (-116354838))) | 114098944 | (~((~maxMemory) | 384790335)), 988, (((~((-2255894) | r5)) | (~(384790335 | maxMemory))) * 988) - 574810061, 439586937);
+                    int c = defpackage.a.c((~(maxMemory | (-116354838))) | 114098944 | (~((~maxMemory) | 384790335)), 988, (((~((-2255894) | 0)) | (~(384790335 | maxMemory))) * 988) - 574810061, 439586937);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -534,7 +534,7 @@ public class Attempt {
                 if (j3 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myTid = Process.myTid();
-                    int c = defpackage.a.c(~(myTid | 65097441), 113, (((~((~myTid) | 603836385)) | (~((-563986722) | myTid)) | 25247777) * (-113)) + ((((~(65097441 | r6)) | 563986721) * 226) - 41024400), -1180490681);
+                    int c = defpackage.a.c(~(myTid | 65097441), 113, (((~((~myTid) | 603836385)) | (~((-563986722) | myTid)) | 25247777) * (-113)) + ((((~(65097441 | 0)) | 563986721) * 226) - 41024400), -1180490681);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -601,7 +601,7 @@ public class Attempt {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | (-151195038))) | (-794804190), 241, (((~((-722444254) | r0)) | 571249216) * (-241)) - 994721667, -1317032922);
+                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | (-151195038))) | (-794804190), 241, (((~((-722444254) | 0)) | 571249216) * (-241)) - 994721667, -1317032922);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -648,7 +648,7 @@ public class Attempt {
                 if (j3 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int uptimeMillis = (int) SystemClock.uptimeMillis();
-                    int c = defpackage.a.c((~(uptimeMillis | 139863176)) | (~((~uptimeMillis) | 638752456)), 959, (((~(139863176 | r5)) | (~(uptimeMillis | 638752456))) * 959) - 133027219, 547286276);
+                    int c = defpackage.a.c((~(uptimeMillis | 139863176)) | (~((~uptimeMillis) | 638752456)), 959, (((~(139863176 | 0)) | (~(uptimeMillis | 638752456))) * 959) - 133027219, 547286276);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -667,7 +667,7 @@ public class Attempt {
                     int i11 = -(i9 ^ (((i10 | 1) << 1) - (i10 ^ 1)));
                     int i12 = ((i11 & 7) + (i11 | 7)) >> 24;
                     e = IdentyB.e((i12 | (-511)) << 1, i12 ^ (-511), 256, -1);
-                    if (j2 >= (8186178 / (((-((e ^ 1) + ((e & 1) << 1))) & r4) * 1551)) - 754) {
+                    if (j2 >= (8186178 / (((-((e ^ 1) + ((e & 1) << 1))) & 0) * 1551)) - 754) {
                         return 0L;
                     }
                     return j2;
@@ -697,7 +697,7 @@ public class Attempt {
             int i112 = -(i92 ^ (((i102 | 1) << 1) - (i102 ^ 1)));
             int i122 = ((i112 & 7) + (i112 | 7)) >> 24;
             e = IdentyB.e((i122 | (-511)) << 1, i122 ^ (-511), 256, -1);
-            if (j2 >= (8186178 / (((-((e ^ 1) + ((e & 1) << 1))) & r4) * 1551)) - 754) {
+            if (j2 >= (8186178 / (((-((e ^ 1) + ((e & 1) << 1))) & 0) * 1551)) - 754) {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -759,7 +759,7 @@ public class Attempt {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c(~(((int) Process.getStartElapsedRealtime()) | (-488664355)), -1504, (((~((-492924771) | r0)) | 4260416) * 1504) - 1003693777, -725311687);
+                    int c = defpackage.a.c(~(((int) Process.getStartElapsedRealtime()) | (-488664355)), -1504, (((~((-492924771) | 0)) | 4260416) * 1504) - 1003693777, -725311687);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -1017,7 +1017,7 @@ public class Attempt {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myPid = Process.myPid();
-                    int c = defpackage.a.c(myPid | 217002622, 496, (((~((-281886658) | myPid)) | 13447744 | (~((~myPid) | 485441535))) * (-496)) + ((r5 * 992) - 2137057233), -1688300247);
+                    int c = defpackage.a.c(myPid | 217002622, 496, (((~((-281886658) | myPid)) | 13447744 | (~((~myPid) | 485441535))) * (-496)) + ((0 * 992) - 2137057233), -1688300247);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -1057,7 +1057,7 @@ public class Attempt {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~defpackage.a.b(88807956)) | (-557318568))) | (-1065129960), 521, ((~((-557318568) | r0)) * 521) - 1219347320, -1562148214);
+                    int c = defpackage.a.c((~((~defpackage.a.b(88807956)) | (-557318568))) | (-1065129960), 521, ((~((-557318568) | 0)) * 521) - 1219347320, -1562148214);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -1138,7 +1138,7 @@ public class Attempt {
                 j5 = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j6 > j5) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c(~((~((int) SystemClock.elapsedRealtime())) | (-536871489)), -948, (((~(398694698 | r0)) | (-897583979)) * (-948)) - 12649861, -2037216983);
+                    int c = defpackage.a.c(~((~((int) SystemClock.elapsedRealtime())) | (-536871489)), -948, (((~(398694698 | 0)) | (-897583979)) * (-948)) - 12649861, -2037216983);
                     int i5 = c ^ (c << 13);
                     int i6 = i5 ^ (i5 >>> 17);
                     ((int[]) objArr[1])[0] = i6 ^ (i6 << 5);

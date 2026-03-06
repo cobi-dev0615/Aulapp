@@ -89,12 +89,12 @@ public class UL {
     /* JADX WARN: Can't wrap try/catch for region: R(7:(4:(2:3|(7:5|6|7|8|10|11|(1:13)(2:15|16)))|10|11|(0)(0))|23|24|25|6|7|8) */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0140, code lost:
     
-        r15 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0141, code lost:
     
-        r15.printStackTrace();
-        r15 = null;
+        0.printStackTrace();
+        0 = null;
      */
     /* JADX WARN: Removed duplicated region for block: B:13:0x015a A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:15:0x015b A[Catch: Exception -> 0x01a8, TRY_LEAVE, TryCatch #1 {Exception -> 0x01a8, blocks: (B:11:0x0145, B:15:0x015b), top: B:10:0x0145 }] */
@@ -113,7 +113,7 @@ public class UL {
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                        int c = a.c((~((~((int) Runtime.getRuntime().totalMemory())) | 191743063)) | (-421751232), 494, (((-268577193) | r0) * 494) - 1609399123, 2088233879);
+                        int c = a.c((~((~((int) Runtime.getRuntime().totalMemory())) | 191743063)) | (-421751232), 494, (((-268577193) | 0) * 494) - 1609399123, 2088233879);
                         int i2 = c ^ (c << 13);
                         int i3 = i2 ^ (i2 >>> 17);
                         ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -268,11 +268,11 @@ public class UL {
     /* JADX WARN: Can't wrap try/catch for region: R(8:(4:(2:3|(8:5|6|7|8|9|10|11|12))|10|11|12)|35|36|37|6|7|8|9) */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x00ed, code lost:
     
-        r1 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x00ee, code lost:
     
-        r1.printStackTrace();
+        0.printStackTrace();
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -426,7 +426,7 @@ public class UL {
                         int i = ~(402260972 | elapsedCpuTime);
                         int i2 = ~elapsedCpuTime;
                         int i3 = i | (~(901150252 | i2));
-                        int c = a.c(363987500 | (~((-402260973) | i2)), 516, (((~(elapsedCpuTime | (-537162753))) | (~(i2 | (-363987501)))) * 516) + (((i3 | r10) * (-516)) - 2046404645), -1357218802);
+                        int c = a.c(363987500 | (~((-402260973) | i2)), 516, (((~(elapsedCpuTime | (-537162753))) | (~(i2 | (-363987501)))) * 516) + (((i3 | 0) * (-516)) - 2046404645), -1357218802);
                         int i4 = c ^ (c << 13);
                         int i5 = i4 ^ (i4 >>> 17);
                         ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -523,7 +523,7 @@ public class UL {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~(System.identityHashCode(this) | (-58965629))) | 25365564, 490, (((-33600065) | (~r0)) * (-490)) - 1810240475, 333024711);
+                    int c = a.c((~(System.identityHashCode(this) | (-58965629))) | 25365564, 490, (((-33600065) | (~0)) * (-490)) - 1810240475, 333024711);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

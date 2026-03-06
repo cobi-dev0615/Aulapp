@@ -224,7 +224,7 @@ public final class UserDao_Impl implements UserDao {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int identityHashCode = System.identityHashCode(this);
                         int i = (~(324790772 | identityHashCode)) | 536876032;
-                        int c = defpackage.a.c((~(identityHashCode | 861666804)) | (~((~identityHashCode) | (-37986753))), 470, ((i | r7) * (-470)) - 572446145, 823122063);
+                        int c = defpackage.a.c((~(identityHashCode | 861666804)) | (~((~identityHashCode) | (-37986753))), 470, ((i | 0) * (-470)) - 572446145, 823122063);
                         int i2 = c ^ (c << 13);
                         int i3 = i2 ^ (i2 >>> 17);
                         ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -342,7 +342,7 @@ public final class UserDao_Impl implements UserDao {
                     j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                        int c = defpackage.a.c((~(System.identityHashCode(this) | 805175161)) | 204556601, 366, (((~(255421241 | r0)) | 754310521) * (-366)) - 154638913, -1781998909);
+                        int c = defpackage.a.c((~(System.identityHashCode(this) | 805175161)) | 204556601, 366, (((~(255421241 | 0)) | 754310521) * (-366)) - 154638913, -1781998909);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -550,7 +550,7 @@ public final class UserDao_Impl implements UserDao {
                         int b2 = defpackage.a.b(639777284);
                         int i = ~b2;
                         int i2 = (~((-866492802) | i)) | 570720384;
-                        int c = defpackage.a.c((~(b2 | (-71831105))) | (~(i | (-295772418))), 502, ((i2 | r0) * (-502)) - 762286785, 1193818105);
+                        int c = defpackage.a.c((~(b2 | (-71831105))) | (~(i | (-295772418))), 502, ((i2 | 0) * (-502)) - 762286785, 1193818105);
                         int i3 = c ^ (c << 13);
                         int i4 = i3 ^ (i3 >>> 17);
                         ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -608,7 +608,7 @@ public final class UserDao_Impl implements UserDao {
                     j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                        int c = defpackage.a.c((~((~System.identityHashCode(this)) | (-284746320))) | 473656767, 262, (((~((-284746320) | r0)) | 473656767) * 262) - 1894612533, -387833701);
+                        int c = defpackage.a.c((~((~System.identityHashCode(this)) | (-284746320))) | 473656767, 262, (((~((-284746320) | 0)) | 473656767) * 262) - 1894612533, -387833701);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -694,7 +694,7 @@ public final class UserDao_Impl implements UserDao {
             newStringBuilder2.append(")");
             acquire = RoomSQLiteQuery.acquire(newStringBuilder2.toString(), length2);
             int i32 = 1;
-            while (r7 < r3) {
+            while (0 < 0) {
             }
             query = this.a.query(acquire);
         } catch (Throwable th) {

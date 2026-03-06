@@ -47,10 +47,10 @@ public class FingerAccessInfo {
                 }
             }
             Object[] objArr3 = new Object[1];
-            e(r1[113], r1[34], (byte) (-$$a[3]), objArr3);
+            e($$a[113], $$a[34], (byte) (-$$a[3]), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            e(r1[32], r1[111], (byte) 94, objArr4);
+            e($$a[32], $$a[111], (byte) 94, objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1720707152);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4958;
@@ -151,7 +151,7 @@ public class FingerAccessInfo {
                     int i18 = i17 >> 26;
                     int a = IdentyB.a(i18 & (-127), i18 | (-127), 64, -1);
                     ((ActivityManager) activity.getSystemService("25/24/31/8/7/activity".substring(32760 / (((-(((a | 1) << 1) - (a ^ 1))) & i17) * 420)))).getMemoryInfo(new ActivityManager.MemoryInfo());
-                    return r0.totalMem / 1048576;
+                    return 0.totalMem / 1048576;
                 }
             }
             byte[] bArr = $$a;
@@ -182,7 +182,7 @@ public class FingerAccessInfo {
             int i182 = i172 >> 26;
             int a2 = IdentyB.a(i182 & (-127), i182 | (-127), 64, -1);
             ((ActivityManager) activity.getSystemService("25/24/31/8/7/activity".substring(32760 / (((-(((a2 | 1) << 1) - (a2 ^ 1))) & i172) * 420)))).getMemoryInfo(new ActivityManager.MemoryInfo());
-            return r0.totalMem / 1048576;
+            return 0.totalMem / 1048576;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

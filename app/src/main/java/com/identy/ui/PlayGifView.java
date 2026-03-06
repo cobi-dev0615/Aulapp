@@ -279,7 +279,7 @@ public class PlayGifView extends View {
                         super.onMeasure(i, i2);
                         return;
                     }
-                    float width = r0.width() / this.b.height();
+                    float width = 0.width() / this.b.height();
                     View.MeasureSpec.getMode(i2);
                     int size = View.MeasureSpec.getSize(i2);
                     setMeasuredDimension((int) (size * width), size);

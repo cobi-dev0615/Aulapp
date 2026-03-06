@@ -61,7 +61,7 @@ public class RollS3Meta {
             }
             byte b = $$a[2];
             Object[] objArr3 = new Object[1];
-            m((byte) (b + 1), r1[30], (byte) (-b), objArr3);
+            m((byte) (b + 1), $$a[30], (byte) (-b), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             byte b2 = (byte) 28;
             Object[] objArr4 = new Object[1];
@@ -145,7 +145,7 @@ public class RollS3Meta {
                     j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                        int c = a.c((~(System.identityHashCode(this) | 771521474)) | 272632194, 529, (((~((~r0) | 771521474)) | 268435456) * 529) - 1876653424, 335340166);
+                        int c = a.c((~(System.identityHashCode(this) | 771521474)) | 272632194, 529, (((~((~0) | 771521474)) | 268435456) * 529) - 1876653424, 335340166);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

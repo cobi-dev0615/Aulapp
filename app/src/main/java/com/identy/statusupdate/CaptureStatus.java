@@ -18,8 +18,8 @@ public enum CaptureStatus {
     CAPTURED,
     QC_ERROR;
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
 
     static {
         init$0();
@@ -132,7 +132,7 @@ public enum CaptureStatus {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~(Process.myUid() | 441305675)) | (-57583605), 529, (((~((~r0) | 441305675)) | (-460320768)) * 529) - 1876653424, 973346045);
+                    int c = a.c((~(Process.myUid() | 441305675)) | (-57583605), 529, (((~((~0) | 441305675)) | (-460320768)) * 529) - 1876653424, 973346045);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

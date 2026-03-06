@@ -7,8 +7,8 @@ public enum CaptureMode {
     L,
     H;
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
 
     static {
         init$0();
@@ -69,7 +69,7 @@ public enum CaptureMode {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int maxMemory = (int) Runtime.getRuntime().maxMemory();
-                    int i = (((~((-994671272) | maxMemory)) | (~(495781991 | maxMemory))) * 140) + (((420022311 | r5) * (-280)) - 1291051405);
+                    int i = (((~((-994671272) | maxMemory)) | (~(495781991 | maxMemory))) * 140) + (((420022311 | 0) * (-280)) - 1291051405);
                     int i2 = ~((-574648961) | maxMemory);
                     int i3 = ~maxMemory;
                     int c = defpackage.a.c((~(i3 | 1070430951)) | i2 | (~((-420022312) | i3)), 140, i, -451325483);

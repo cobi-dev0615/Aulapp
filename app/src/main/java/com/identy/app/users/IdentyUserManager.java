@@ -29,7 +29,7 @@ public class IdentyUserManager {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~((int) SystemClock.uptimeMillis())) | (-3672210))) | 402800942, 521, ((~((-3672210) | r0)) * 521) - 820224888, -2122646827);
+                    int c = a.c((~((~((int) SystemClock.uptimeMillis())) | (-3672210))) | 402800942, 521, ((~((-3672210) | 0)) * 521) - 820224888, -2122646827);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -577,7 +577,7 @@ public class IdentyUserManager {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~((int) Runtime.getRuntime().freeMemory())) | 913571826)) | 271605810, 449, (((~(913571826 | r0)) | 271605810) * 449) - 713102322, 1871535459);
+                    int c = a.c((~((~((int) Runtime.getRuntime().freeMemory())) | 913571826)) | 271605810, 449, (((~(913571826 | 0)) | 271605810) * 449) - 713102322, 1871535459);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

@@ -16,7 +16,7 @@ public class AttemptsExceededLimitException extends Exception {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public AttemptsExceededLimitException() {
-        super(IdentyB.c((-((((r2 | 1) << 1) - (r2 ^ 1)) - (-1))) & r1, 1637, 104768, "22;10;7;Select attempts between 1 to 6"));
+        super(IdentyB.c((-((((0 | 1) << 1) - (0 ^ 1)) - (-1))) & 0, 1637, 104768, "22;10;7;Select attempts between 1 to 6"));
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
@@ -157,7 +157,7 @@ public class AttemptsExceededLimitException extends Exception {
             a(b, b2, (byte) (b2 - 5), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r5[32], r5[63], r5[55], objArr4);
+            a($$a[32], $$a[63], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -2090262755);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4978;

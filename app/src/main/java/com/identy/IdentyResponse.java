@@ -209,7 +209,7 @@ public class IdentyResponse {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~(defpackage.a.b(661896083) | 281421737)) | (-485912512), 220, (((-217467543) | r0) * (-220)) - 1056083863, -2020883299);
+                    int c = defpackage.a.c((~(defpackage.a.b(661896083) | 281421737)) | (-485912512), 220, (((-217467543) | 0) * (-220)) - 1056083863, -2020883299);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -287,7 +287,7 @@ public class IdentyResponse {
         byte[] bArr2 = new byte[44 - b];
         int i4 = 43 - b;
         if (bArr == null) {
-            byte b2 = r6;
+            byte b2 = 0;
             i2 = 0;
             i = i3;
             i++;
@@ -306,7 +306,7 @@ public class IdentyResponse {
             }
         } else {
             i = i3;
-            i3 = r6;
+            i3 = 0;
             i2 = 0;
             bArr2[i2] = (byte) i3;
             if (i2 == i4) {
@@ -564,14 +564,14 @@ public class IdentyResponse {
             Fpnative.valueOf = objArr32;
             if (!hashMap.containsKey(Template.FF_ISO_19794_4)) {
             }
-            while (r2.hasNext()) {
+            while (0.hasNext()) {
             }
             valuesVar = new values(map, getnfiq1score);
             if (!hashMap.containsKey(Template.SLAP_PNG)) {
             }
             this.PngjBadSignature++;
             new PngjBadCrcException(map, hashMap, valuesVar).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);
-            while (r11.hasNext()) {
+            while (0.hasNext()) {
             }
             values valuesVar52 = valuesVar;
             int i92 = this.PngjBadSignature;
@@ -693,7 +693,7 @@ public class IdentyResponse {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) SystemClock.elapsedRealtime())) | (-139223484))) | 541115, 191, (((~(r0 | (-139223484))) | 638112763) * 191) - 1943445643, -262284397);
+                    int c = defpackage.a.c((~((~((int) SystemClock.elapsedRealtime())) | (-139223484))) | 541115, 191, (((~(0 | (-139223484))) | 638112763) * 191) - 1943445643, -262284397);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -852,11 +852,11 @@ public class IdentyResponse {
     /* JADX WARN: Can't wrap try/catch for region: R(28:0|1|(2:3|(20:5|6|7|8|(2:11|9)|12|13|(2:16|14)|17|18|(2:21|19)|22|23|24|(4:26|(5:29|(1:31)|32|33|27)|34|35)(1:91)|36|37|(1:88)(7:41|(11:44|45|46|(4:48|(4:50|51|52|53)|61|62)(1:75)|63|(4:65|(1:67)|68|69)|70|(1:72)|73|74|42)|79|80|81|82|83)|57|58))|93|94|95|96|6|7|8|(1:9)|12|13|(1:14)|17|18|(1:19)|22|23|24|(0)(0)|36|37|(1:39)|88|57|58|(1:(0))) */
     /* JADX WARN: Code restructure failed: missing block: B:89:0x03e5, code lost:
     
-        r0 = e;
+        0 = e;
      */
     /* JADX WARN: Code restructure failed: missing block: B:90:0x03e6, code lost:
     
-        r4 = r7;
+        0 = 0;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:11:0x00e9 A[Catch: Exception -> 0x03f0, LOOP:0: B:9:0x00e3->B:11:0x00e9, LOOP_END, TryCatch #0 {Exception -> 0x03f0, blocks: (B:8:0x00d9, B:9:0x00e3, B:11:0x00e9, B:13:0x0128, B:14:0x0132, B:16:0x0138, B:18:0x0156, B:19:0x0162, B:21:0x0168, B:23:0x018a, B:26:0x0194, B:27:0x01a3, B:29:0x01a9, B:31:0x01cf, B:33:0x0202, B:35:0x0211, B:56:0x03ea, B:57:0x03ed), top: B:7:0x00d9 }] */
@@ -954,11 +954,11 @@ public class IdentyResponse {
                             z = z;
                         }
                         i = i2;
-                        r17 = z;
+                        0 = z;
                         jSONObject.put("gimages", jSONArray);
                     } else {
                         i = 0;
-                        r17 = 1;
+                        0 = 1;
                     }
                     hashMap = this.PngjInputException;
                     if (hashMap != null || hashMap.size() <= 0) {
@@ -1003,9 +1003,9 @@ public class IdentyResponse {
                                             i7 = i8;
                                         } catch (Exception e) {
                                             e = e;
-                                            r4 = obj2;
+                                            0 = obj2;
                                             e.printStackTrace();
-                                            obj = r4;
+                                            obj = 0;
                                             jSONObject2.put("data", obj);
                                             return jSONObject2;
                                         }
@@ -1026,9 +1026,9 @@ public class IdentyResponse {
                                         Object obj7 = arrayList4.get(i10);
                                         i10++;
                                         JSONObject jSONObject7 = new JSONObject();
-                                        jSONObject7.put("x", r10.PngjException);
-                                        jSONObject7.put("y", r10.valueOf);
-                                        jSONObject7.put("z", r10.PngjBadCrcException);
+                                        jSONObject7.put("x", 0.PngjException);
+                                        jSONObject7.put("y", 0.valueOf);
+                                        jSONObject7.put("z", 0.PngjBadCrcException);
                                         jSONObject7.put("ts", ((com.identy.g.PngjBadSignature) obj7).values);
                                         jSONArray5.put(jSONObject7);
                                         arrayList4 = arrayList4;
@@ -1057,15 +1057,15 @@ public class IdentyResponse {
                             } catch (Exception e2) {
                                 e = e2;
                                 obj2 = jSONObject;
-                                r4 = obj2;
+                                0 = obj2;
                                 e.printStackTrace();
-                                obj = r4;
+                                obj = 0;
                                 jSONObject2.put("data", obj);
                                 return jSONObject2;
                             }
                         }
                         obj2 = jSONObject;
-                        int i12 = ((int[]) objArr[r17])[i];
+                        int i12 = ((int[]) objArr[0])[i];
                         int i13 = i12 * i12;
                         int i14 = -(1047877187 * i12);
                         int i15 = (i13 ^ i14) + ((i13 & i14) << 1);
@@ -1082,14 +1082,14 @@ public class IdentyResponse {
                         int i26 = i25 >> 22;
                         int i27 = (((i26 | (-2047)) << 1) - (i26 ^ (-2047))) / 1024;
                         String substring = "0\\sensor_data".substring(10056 / ((i25 & (-((((i27 | 1) << 1) - (i27 ^ 1)) + 1))) * 838));
-                        r4 = obj2;
+                        0 = obj2;
                         try {
-                            r4.put(substring, jSONArray3);
-                            obj = r4;
+                            0.put(substring, jSONArray3);
+                            obj = 0;
                         } catch (Exception e3) {
                             e = e3;
                             e.printStackTrace();
-                            obj = r4;
+                            obj = 0;
                             jSONObject2.put("data", obj);
                             return jSONObject2;
                         }
@@ -1111,11 +1111,11 @@ public class IdentyResponse {
             Fpnative.valueOf = objArr;
             JSONObject jSONObject22 = new JSONObject();
             jSONObject = new JSONObject();
-            while (r8.hasNext()) {
+            while (0.hasNext()) {
             }
-            while (r8.hasNext()) {
+            while (0.hasNext()) {
             }
-            while (r8.hasNext()) {
+            while (0.hasNext()) {
             }
             if (this.PngjExceptionInternal.isEmpty()) {
             }

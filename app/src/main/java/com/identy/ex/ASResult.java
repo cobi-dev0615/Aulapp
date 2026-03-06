@@ -230,7 +230,7 @@ public class ASResult {
                     int identityHashCode = System.identityHashCode(this);
                     int i = ~identityHashCode;
                     int i2 = (~((-176204598) | i)) | 142616629;
-                    int c = a.c(~(i | (-322684683)), 713, ((~(identityHashCode | (-289096715))) * 1426) + (((i2 | r0) * (-713)) - 862196222), 1073179592);
+                    int c = a.c(~(i | (-322684683)), 713, ((~(identityHashCode | (-289096715))) * 1426) + (((i2 | 0) * (-713)) - 862196222), 1073179592);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -244,7 +244,7 @@ public class ASResult {
             c((byte) 97, (byte) (i5 | 6), (byte) (-$$a[113]), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            c((byte) (i5 | 108), r7[116], r7[63], objArr4);
+            c((byte) (i5 | 108), $$a[116], $$a[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1073179592);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4978;
@@ -328,7 +328,7 @@ public class ASResult {
             c((byte) 97, (byte) (i5 | 6), (byte) (-$$a[113]), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            c((byte) (i5 | 108), r7[116], r7[63], objArr4);
+            c((byte) (i5 | 108), $$a[116], $$a[63], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2110814560);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5008;
@@ -398,7 +398,7 @@ public class ASResult {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~System.identityHashCode(this)) | 38091053)) | (-422707264), 381, (((-422707219) | r0) * (-381)) - 1638753682, 864231622);
+                    int c = a.c((~((~System.identityHashCode(this)) | 38091053)) | (-422707264), 381, (((-422707219) | 0) * (-381)) - 1638753682, 864231622);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

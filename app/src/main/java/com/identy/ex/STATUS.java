@@ -16,8 +16,8 @@ public enum STATUS {
     TWIST_MORE(R.string.id_r_status_twist_more),
     PRECAPTURE_ERROR(R.string.id_r_status_pre_capture_erro);
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     int a;
 
     static {
@@ -149,11 +149,11 @@ public enum STATUS {
                 }
             }
             Object[] objArr3 = new Object[1];
-            c(r1[33], (byte) 74, (byte) ($$a[82] + 1), objArr3);
+            c($$a[33], (byte) 74, (byte) ($$a[82] + 1), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             byte b2 = (byte) ($$b & 11);
             Object[] objArr4 = new Object[1];
-            c(b2, (byte) (b2 | 44), r1[72], objArr4);
+            c(b2, (byte) (b2 | 44), $$a[72], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1527135602);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4866;

@@ -41,10 +41,10 @@ import org.camera.preview.PngjBadCrcException;
 
 /* loaded from: classes2.dex */
 public class VerifyThumbActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int getFingerPrintQualityScore;
@@ -686,11 +686,11 @@ public class VerifyThumbActivity extends FingerActivity {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(scrollBarSize, i2, absoluteGravity, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                        PngjBadCrcException$1eba2e16 = new Object[]{new int[]{r8}, new int[1], r0, new int[]{r7}};
+                        PngjBadCrcException$1eba2e16 = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i3 = ((int[]) objArr5[3])[0];
                         int i4 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
-                        int c3 = defpackage.a.c((~(((int) Runtime.getRuntime().totalMemory()) | 1065997548)) | 31431574, 529, (((~((~r0) | 1065997548)) | 5638930) * 529) - 1435847140, -1432701858);
+                        int c3 = defpackage.a.c((~(((int) Runtime.getRuntime().totalMemory()) | 1065997548)) | 31431574, 529, (((~((~0) | 1065997548)) | 5638930) * 529) - 1435847140, -1432701858);
                         int i5 = c3 ^ (c3 << 13);
                         int i6 = i5 ^ (i5 >>> 17);
                         ((int[]) PngjBadCrcException$1eba2e16[1])[0] = i6 ^ (i6 << 5);
@@ -706,7 +706,7 @@ public class VerifyThumbActivity extends FingerActivity {
                             }
                             throw null;
                         }
-                        Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r7}};
+                        Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i7 = ((int[]) PngjBadCrcException$1eba2e16[1])[0];
                         int i8 = ((int[]) PngjBadCrcException$1eba2e16[3])[0];
                         int i9 = ((int[]) PngjBadCrcException$1eba2e16[0])[0];

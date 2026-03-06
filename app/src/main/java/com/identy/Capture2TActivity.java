@@ -38,10 +38,10 @@ import java.util.HashMap;
 
 /* loaded from: classes2.dex */
 public class Capture2TActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int getScore;
@@ -50,10 +50,10 @@ public class Capture2TActivity extends FingerActivity {
     final HashMap PngjBadCrcException = new HashMap();
 
     public class PngjBadSignature implements Runnable {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static char[] PngjBadSignature;
@@ -126,339 +126,339 @@ public class Capture2TActivity extends FingerActivity {
 
         /* JADX WARN: Code restructure failed: missing block: B:100:0x1417, code lost:
         
-            r4 = new java.lang.Object[]{((java.lang.String) r14[0]).concat(java.lang.String.valueOf(r4))};
-            r8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1934049891);
+            0 = new java.lang.Object[]{((java.lang.String) $$a[0]).concat(java.lang.String.valueOf(0))};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1934049891);
          */
         /* JADX WARN: Code restructure failed: missing block: B:101:0x1422, code lost:
         
-            if (r8 != null) goto L161;
+            if (0 != null) goto L161;
          */
         /* JADX WARN: Code restructure failed: missing block: B:102:0x1424, code lost:
         
-            r8 = (char) android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0, 0);
-            r53 = (android.view.ViewConfiguration.getZoomControlsTimeout() > r35 ? 1 : (android.view.ViewConfiguration.getZoomControlsTimeout() == r35 ? 0 : -1)) + 27;
-            r9 = 1447 - android.view.KeyEvent.normalizeMetaState(0);
-            r10 = (byte) (com.identy.Capture2TActivity.PngjBadSignature.$$b - 1);
-            r14 = r10;
-            r48 = r0;
-            r0 = new java.lang.Object[1];
-            a(r10, r14, (byte) (r14 | 15), r0);
-            r8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r8, r53, r9, -1884803112, false, (java.lang.String) r0[0], new java.lang.Class[]{java.lang.String.class});
+            0 = (char) android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0, 0);
+            0 = (android.view.ViewConfiguration.getZoomControlsTimeout() > 0 ? 1 : (android.view.ViewConfiguration.getZoomControlsTimeout() == 0 ? 0 : -1)) + 27;
+            0 = 1447 - android.view.KeyEvent.normalizeMetaState(0);
+            0 = (byte) (com.identy.Capture2TActivity.PngjBadSignature.$$b - 1);
+            0 = 0;
+            0 = 0;
+            0 = new java.lang.Object[1];
+            a(0, 0, (byte) (0 | 15), 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -1884803112, false, (java.lang.String) $$a[0], new java.lang.Class[]{java.lang.String.class});
          */
         /* JADX WARN: Code restructure failed: missing block: B:103:0x1463, code lost:
         
-            r13 = ((java.lang.Long) ((java.lang.reflect.Method) r8).invoke(null, r4)).longValue();
+            0 = ((java.lang.Long) ((java.lang.reflect.Method) 0).invoke(null, 0)).longValue();
          */
         /* JADX WARN: Code restructure failed: missing block: B:104:0x1470, code lost:
         
-            r9 = -1183587401;
-            r8 = r5;
-            r4 = defpackage.a.a();
-            r58 = r13 ^ r2;
-            r54 = ((-676) * ((r9 | r4) | r58)) + (((-675) * r13) + (677 * r9));
-            r4 = 676;
-            r60 = r4 ^ r2;
-            r4 = ((r4 * (((((r9 ^ r2) | r58) ^ r2) | ((r58 | r60) ^ r2)) | (((r9 | r13) | r4) ^ r2))) + (((((r58 | r9) ^ r2) | ((r60 | r9) ^ r2)) * r4) + r54)) - 533329866;
-            r0 = ((int) (r4 >> 32)) & (((~((-1213170470) | r76)) * 113) + (((((~((-224055942) | r76)) | 84955264) | (~((-1074069793) | r7))) * (-113)) + ((((~((-1213170470) | r7)) | 224055941) * 226) - 2055567968)));
-            r4 = ((int) r4) & ((((-1346392193) | r76) * 465) + ((((-1383354507) | (~(53871903 | r76))) * 930) + ((((~((-1383354507) | r76)) | 53871903) * (-465)) + 167875179)));
+            0 = -1183587401;
+            0 = 0;
+            0 = defpackage.a.a();
+            0 = 0 ^ 0;
+            0 = ((-676) * ((0 | 0) | 0)) + (((-675) * 0) + (677 * 0));
+            0 = 676;
+            0 = 0 ^ 0;
+            0 = ((0 * (((((0 ^ 0) | 0) ^ 0) | ((0 | 0) ^ 0)) | (((0 | 0) | 0) ^ 0))) + (((((0 | 0) ^ 0) | ((0 | 0) ^ 0)) * 0) + 0)) - 533329866;
+            0 = ((int) (0 >> 32)) & (((~((-1213170470) | 0)) * 113) + (((((~((-224055942) | 0)) | 84955264) | (~((-1074069793) | 0))) * (-113)) + ((((~((-1213170470) | 0)) | 224055941) * 226) - 2055567968)));
+            0 = ((int) 0) & ((((-1346392193) | 0) * 465) + ((((-1383354507) | (~(53871903 | 0))) * 930) + ((((~((-1383354507) | 0)) | 53871903) * (-465)) + 167875179)));
          */
         /* JADX WARN: Code restructure failed: missing block: B:105:0x1515, code lost:
         
-            if (((r0 & r4) | (r0 ^ r4)) != 0) goto L166;
+            if (((0 & 0) | (0 ^ 0)) != 0) goto L166;
          */
         /* JADX WARN: Code restructure failed: missing block: B:106:0x1517, code lost:
         
-            r0 = 0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:108:0x151a, code lost:
         
-            r4 = com.identy.a.PngjException.values();
-            r9 = (r3 * (-518)) + (r0 * (-518));
-            r5 = ~r0;
-            r10 = ~r4;
-            r10 = ~((r10 & r5) | (r5 ^ r10));
-            r10 = ((r10 & r3) | (r3 ^ r10)) * 519;
-            r13 = ((r9 | r10) << 1) - (r9 ^ r10);
-            r9 = ~r4;
-            r5 = (r5 & r9) | (r5 ^ r9);
-            r5 = (((~((r5 & r3) | (r5 ^ r3))) | (~((r0 | r3) | r4))) * (-519)) + r13;
-            r0 = -(-((r0 | (~((r3 & r4) | (r3 ^ r4)))) * 519));
-            r3 = (r5 ^ r0) + ((r0 & r5) << 1);
-            r2 = ((r2 ^ 121) + ((r2 & 121) << 1)) - 120;
-            r5 = r8;
-            r0 = r48;
+            0 = com.identy.a.PngjException.values();
+            0 = (0 * (-518)) + (0 * (-518));
+            0 = ~0;
+            0 = ~0;
+            0 = ~((0 & 0) | (0 ^ 0));
+            0 = ((0 & 0) | (0 ^ 0)) * 519;
+            0 = ((0 | 0) << 1) - (0 ^ 0);
+            0 = ~0;
+            0 = (0 & 0) | (0 ^ 0);
+            0 = (((~((0 & 0) | (0 ^ 0))) | (~((0 | 0) | 0))) * (-519)) + 0;
+            0 = -(-((0 | (~((0 & 0) | (0 ^ 0)))) * 519));
+            0 = (0 ^ 0) + ((0 & 0) << 1);
+            0 = ((0 ^ 121) + ((0 & 121) << 1)) - 120;
+            0 = 0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:109:0x1519, code lost:
         
-            r0 = 1;
+            0 = 1;
          */
         /* JADX WARN: Code restructure failed: missing block: B:111:0x1461, code lost:
         
-            r48 = r0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:113:0x156a, code lost:
         
-            r8 = r5;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:114:0x1573, code lost:
         
-            if (r3 < 25.2d) goto L171;
+            if (0 < 25.2d) goto L171;
          */
         /* JADX WARN: Code restructure failed: missing block: B:115:0x1575, code lost:
         
-            r0 = '!';
+            0 = '!';
          */
         /* JADX WARN: Code restructure failed: missing block: B:117:0x157c, code lost:
         
-            if (r0 == '\\') goto L176;
+            if (0 == '\\') goto L176;
          */
         /* JADX WARN: Code restructure failed: missing block: B:118:0x157e, code lost:
         
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:142:0x1846, code lost:
         
-            if ((r2 - 3 < r60 ? '_' : 3) != '_') goto L207;
+            if ((0 - 3 < 0 ? '_' : 3) != '_') goto L207;
          */
         /* JADX WARN: Code restructure failed: missing block: B:143:0x1850, code lost:
         
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:165:0x1b3d, code lost:
         
-            if ((r2 > r35 ? ';' : 'a') != 'a') goto L239;
+            if ((0 > 0 ? ';' : 'a') != 'a') goto L239;
          */
         /* JADX WARN: Code restructure failed: missing block: B:167:0x1b52, code lost:
         
-            if ((r2 + 100) >= r54) goto L242;
+            if ((0 + 100) >= 0) goto L242;
          */
         /* JADX WARN: Code restructure failed: missing block: B:168:0x1b54, code lost:
         
-            r2 = false;
+            0 = false;
          */
         /* JADX WARN: Code restructure failed: missing block: B:169:0x1b57, code lost:
         
-            if (r2 == false) goto L245;
+            if (0 == false) goto L245;
          */
         /* JADX WARN: Code restructure failed: missing block: B:170:0x1b5a, code lost:
         
-            r0 = r0 + 31;
-            com.identy.Capture2TActivity.PngjBadSignature.PngjUnsupportedException = r0 % 128;
+            0 = 0 + 31;
+            com.identy.Capture2TActivity.PngjBadSignature.PngjUnsupportedException = 0 % 128;
          */
         /* JADX WARN: Code restructure failed: missing block: B:171:0x1b64, code lost:
         
-            if ((r0 % 2) != 0) goto L248;
+            if ((0 % 2) != 0) goto L248;
          */
         /* JADX WARN: Code restructure failed: missing block: B:172:0x1b68, code lost:
         
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:222:0x2015, code lost:
         
-            if (r0 == false) goto L304;
+            if (0 == false) goto L304;
          */
         /* JADX WARN: Code restructure failed: missing block: B:376:0x3947, code lost:
         
-            if ((((r0 & r2) | (r0 ^ r2)) != 0 ? false : 32) != false) goto L596;
+            if ((((0 & 0) | (0 ^ 0)) != 0 ? false : 32) != false) goto L596;
          */
         /* JADX WARN: Code restructure failed: missing block: B:378:0x3d2d, code lost:
         
-            r0 = new java.lang.Object[]{new int[]{(r76 & (-274)) | (r7 & 273)}, new int[1], null, new int[]{r76}};
-            r2 = (int) java.lang.Runtime.getRuntime().totalMemory();
-            r3 = ~(32691685 | r2);
-            r4 = ~r2;
-            r3 = r3 | (~(1067257659 | r4));
-            r5 = ~((-32691686) | r4);
-            r2 = defpackage.a.c(26215713 | r5, 516, (((~(r2 | (-1041041947))) | (~(r4 | (-26215714)))) * 516) + (((r3 | r5) * (-516)) + 396387025), 16);
-            r3 = (r2 * 51) - 696052452;
-            r4 = -(-(((r2 ^ r76) | (r2 & r76)) * (-50)));
-            r5 = (r3 ^ r4) + ((r3 & r4) << 1);
-            r3 = ~r2;
-            r3 = (r3 & r19) | (r3 ^ r19);
-            r1 = ~((r76 & r3) | (r3 ^ r76));
-            r3 = ~(((r19 ^ r7) | (r19 & r7)) | r2);
-            r5 = (r5 - (~(((r1 & r3) | (r1 ^ r3)) * 50))) - 1;
-            r1 = ~((r19 ^ r8) | (r19 & r8));
-            r3 = ~((r19 ^ r2) | (r19 & r2));
-            r1 = (r1 & r3) | (r1 ^ r3);
-            r2 = ~((r2 & r8) | (r8 ^ r2));
-            r1 = (((r1 & r2) | (r1 ^ r2)) * 50) + r5;
-            r2 = r1 << 13;
-            r1 = (r1 | r2) & (~(r1 & r2));
-            r2 = r1 >>> 17;
-            r1 = (r1 | r2) & (~(r1 & r2));
-            r2 = r1 << 5;
-            ((int[]) r0[1])[0] = (r1 | r2) & (~(r1 & r2));
+            0 = new java.lang.Object[]{new int[]{(0 & (-274)) | (0 & 273)}, new int[1], null, new int[]{0}};
+            0 = (int) java.lang.Runtime.getRuntime().totalMemory();
+            0 = ~(32691685 | 0);
+            0 = ~0;
+            0 = 0 | (~(1067257659 | 0));
+            0 = ~((-32691686) | 0);
+            0 = defpackage.a.c(26215713 | 0, 516, (((~(0 | (-1041041947))) | (~(0 | (-26215714)))) * 516) + (((0 | 0) * (-516)) + 396387025), 16);
+            0 = (0 * 51) - 696052452;
+            0 = -(-(((0 ^ 0) | (0 & 0)) * (-50)));
+            0 = (0 ^ 0) + ((0 & 0) << 1);
+            0 = ~0;
+            0 = (0 & 0) | (0 ^ 0);
+            0 = ~((0 & 0) | (0 ^ 0));
+            0 = ~(((0 ^ 0) | (0 & 0)) | 0);
+            0 = (0 - (~(((0 & 0) | (0 ^ 0)) * 50))) - 1;
+            0 = ~((0 ^ 0) | (0 & 0));
+            0 = ~((0 ^ 0) | (0 & 0));
+            0 = (0 & 0) | (0 ^ 0);
+            0 = ~((0 & 0) | (0 ^ 0));
+            0 = (((0 & 0) | (0 ^ 0)) * 50) + 0;
+            0 = 0 << 13;
+            0 = (0 | 0) & (~(0 & 0));
+            0 = 0 >>> 17;
+            0 = (0 | 0) & (~(0 & 0));
+            0 = 0 << 5;
+            ((int[]) $$a[1])[0] = (0 | 0) & (~(0 & 0));
          */
         /* JADX WARN: Code restructure failed: missing block: B:379:0x3e03, code lost:
         
-            return r0;
+            return 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:381:0x3a35, code lost:
         
-            r0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-820027826);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-820027826);
          */
         /* JADX WARN: Code restructure failed: missing block: B:382:0x3a39, code lost:
         
-            if (r0 != null) goto L600;
+            if (0 != null) goto L600;
          */
         /* JADX WARN: Code restructure failed: missing block: B:383:0x3a3b, code lost:
         
-            r0 = (char) ((android.view.ViewConfiguration.getPressedStateDuration() >> 16) + 13779);
-            r49 = (android.view.ViewConfiguration.getTouchSlop() >> 8) + 29;
-            r2 = 1502 - android.widget.ExpandableListView.getPackedPositionType(r35);
-            r3 = com.identy.Capture2TActivity.PngjBadSignature.$$b;
-            r4 = (byte) (r3 + 1);
-            r3 = (byte) r3;
-            r6 = new java.lang.Object[1];
-            a(r4, r3, (byte) (r3 - 1), r6);
-            r0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r0, r49, r2, 871379957, false, (java.lang.String) r6[0], new java.lang.Class[0]);
+            0 = (char) ((android.view.ViewConfiguration.getPressedStateDuration() >> 16) + 13779);
+            0 = (android.view.ViewConfiguration.getTouchSlop() >> 8) + 29;
+            0 = 1502 - android.widget.ExpandableListView.getPackedPositionType(0);
+            0 = com.identy.Capture2TActivity.PngjBadSignature.$$b;
+            0 = (byte) (0 + 1);
+            0 = (byte) 0;
+            0 = new java.lang.Object[1];
+            a(0, 0, (byte) (0 - 1), 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, 871379957, false, (java.lang.String) $$a[0], new java.lang.Class[0]);
          */
         /* JADX WARN: Code restructure failed: missing block: B:384:0x3a7d, code lost:
         
-            r2 = ((java.lang.Long) ((java.lang.reflect.Method) r0).invoke(null, null)).longValue();
+            0 = ((java.lang.Long) ((java.lang.reflect.Method) 0).invoke(null, null)).longValue();
          */
         /* JADX WARN: Code restructure failed: missing block: B:385:0x3a8a, code lost:
         
-            r4 = 1374630237;
-            r2 = (263 * r2) + ((-523) * r4);
-            r9 = 262;
-            r17 = ((r4 ^ r58) | r2) ^ r58;
-            r15 = r2 ^ r58;
-            r4 = (r4 | r15) ^ r58;
-            r9 = ((r9 * (r4 | (((r15 | r56) ^ r58) | r17))) + (((-786) * r4) + ((((r17 | r4) | ((r13 | r15) ^ r58)) * r9) + r2))) - 1542025453;
-            r2 = (int) android.os.SystemClock.elapsedRealtime();
-            r0 = ((int) (r9 >> 32)) & ((((~(r2 | (-1908316513))) | (-949424373)) * 272) + ((((~(1908316512 | r2)) | 134283412) * (-272)) + ((((~(2042599924 | (~r2))) | (~((-815140961) | r2))) * (-272)) - 1683397910)));
-            r3 = android.os.Process.myTid();
-            r4 = ~r3;
-            r5 = (~((-385966766) | r4)) | 318784168;
-            r3 = ~(r3 | (-1756010579));
-            r2 = ((int) r9) & (((r3 | (~(r4 | (-67182598)))) * 252) + (((r5 | r3) * (-252)) + 1586972597));
+            0 = 1374630237;
+            0 = (263 * 0) + ((-523) * 0);
+            0 = 262;
+            0 = ((0 ^ 0) | 0) ^ 0;
+            0 = 0 ^ 0;
+            0 = (0 | 0) ^ 0;
+            0 = ((0 * (0 | (((0 | 0) ^ 0) | 0))) + (((-786) * 0) + ((((0 | 0) | ((0 | 0) ^ 0)) * 0) + 0))) - 1542025453;
+            0 = (int) android.os.SystemClock.elapsedRealtime();
+            0 = ((int) (0 >> 32)) & ((((~(0 | (-1908316513))) | (-949424373)) * 272) + ((((~(1908316512 | 0)) | 134283412) * (-272)) + ((((~(2042599924 | (~0))) | (~((-815140961) | 0))) * (-272)) - 1683397910)));
+            0 = android.os.Process.myTid();
+            0 = ~0;
+            0 = (~((-385966766) | 0)) | 318784168;
+            0 = ~(0 | (-1756010579));
+            0 = ((int) 0) & (((0 | (~(0 | (-67182598)))) * 252) + (((0 | 0) * (-252)) + 1586972597));
          */
         /* JADX WARN: Code restructure failed: missing block: B:386:0x3b1e, code lost:
         
-            if (((r0 & r2) | (r0 ^ r2)) == 0) goto L604;
+            if (((0 & 0) | (0 ^ 0)) == 0) goto L604;
          */
         /* JADX WARN: Code restructure failed: missing block: B:387:0x3b20, code lost:
         
-            r0 = 'U';
+            0 = 'U';
          */
         /* JADX WARN: Code restructure failed: missing block: B:389:0x3b27, code lost:
         
-            if (r0 == 'U') goto L620;
+            if (0 == 'U') goto L620;
          */
         /* JADX WARN: Code restructure failed: missing block: B:391:0x3b2a, code lost:
         
-            r0 = new java.lang.Object[]{java.lang.Integer.valueOf(r76), r77, java.lang.Integer.valueOf(r37), 16777216};
-            r2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1284430186);
+            0 = new java.lang.Object[]{java.lang.Integer.valueOf(0), 0, java.lang.Integer.valueOf(0), 16777216};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1284430186);
          */
         /* JADX WARN: Code restructure failed: missing block: B:392:0x3b51, code lost:
         
-            if (r2 != null) goto L611;
+            if (0 != null) goto L611;
          */
         /* JADX WARN: Code restructure failed: missing block: B:393:0x3b53, code lost:
         
-            r2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((android.os.SystemClock.elapsedRealtime() > r35 ? 1 : (android.os.SystemClock.elapsedRealtime() == r35 ? 0 : -1)) - 1), 26 - (android.view.ViewConfiguration.getDoubleTapTimeout() >> 16), 1224 - android.text.TextUtils.getCapsMode(com.karumi.dexter.BuildConfig.FLAVOR, 0, 0), 1335773997, false, null, new java.lang.Class[]{r11, (java.lang.Class) com.d.e.a.PngjBadCrcException.values((char) (android.view.KeyEvent.getMaxKeyCode() >> 16), 25 - (android.view.ViewConfiguration.getLongPressTimeout() >> 16), (-16776017) - android.graphics.Color.rgb(0, 0, 0)), r11, r11});
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((android.os.SystemClock.elapsedRealtime() > 0 ? 1 : (android.os.SystemClock.elapsedRealtime() == 0 ? 0 : -1)) - 1), 26 - (android.view.ViewConfiguration.getDoubleTapTimeout() >> 16), 1224 - android.text.TextUtils.getCapsMode(com.karumi.dexter.BuildConfig.FLAVOR, 0, 0), 1335773997, false, null, new java.lang.Class[]{0, (java.lang.Class) com.d.e.a.PngjBadCrcException.values((char) (android.view.KeyEvent.getMaxKeyCode() >> 16), 25 - (android.view.ViewConfiguration.getLongPressTimeout() >> 16), (-16776017) - android.graphics.Color.rgb(0, 0, 0)), 0, 0});
          */
         /* JADX WARN: Code restructure failed: missing block: B:394:0x3b9c, code lost:
         
-            r0 = ((java.lang.reflect.Constructor) r2).newInstance(r0);
+            0 = ((java.lang.reflect.Constructor) 0).newInstance(0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:396:0x3ba2, code lost:
         
-            r4 = new java.lang.Object[1];
-            c("\u0000\u0001\u0000\u0001\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001", true, new int[]{371, 16, 0, 0}, r4);
-            r2 = java.lang.Class.forName((java.lang.String) r4[0]);
-            r4 = -android.view.KeyEvent.normalizeMetaState(0);
-            r5 = ((r4 | 5) << 1) - (r4 ^ 5);
-            r4 = new java.lang.Object[1];
-            b(new int[]{-663634992, -799357427, 637467420, 305851541}, r5, r4);
-            r2.getMethod((java.lang.String) r4[0], null).invoke(r0, null);
+            0 = new java.lang.Object[1];
+            c("\u0000\u0001\u0000\u0001\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001", true, new int[]{371, 16, 0, 0}, 0);
+            0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+            0 = -android.view.KeyEvent.normalizeMetaState(0);
+            0 = ((0 | 5) << 1) - (0 ^ 5);
+            0 = new java.lang.Object[1];
+            b(new int[]{-663634992, -799357427, 637467420, 305851541}, 0, 0);
+            0.getMethod((java.lang.String) $$a[0], null).invoke(0, null);
          */
         /* JADX WARN: Code restructure failed: missing block: B:397:0x3bec, code lost:
         
-            r0 = new java.lang.Object[]{new int[]{r76}, new int[]{((~r1) & r2) | ((~r2) & r1)}, null, new int[]{r76}};
-            r2 = 1767253027 - (~(-(-(((403706116 | (~((-557948946) | r7))) * 449) + ((((~(r76 | (-557948946))) | 403706116) * 449) - 2127246468)))));
-            r1 = r2 << 13;
-            r1 = (r1 | r2) & (~(r2 & r1));
-            r2 = r1 >>> 17;
-            r1 = (r1 | r2) & (~(r1 & r2));
-            r2 = r1 << 5;
+            0 = new java.lang.Object[]{new int[]{0}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{0}};
+            0 = 1767253027 - (~(-(-(((403706116 | (~((-557948946) | 0))) * 449) + ((((~(0 | (-557948946))) | 403706116) * 449) - 2127246468)))));
+            0 = 0 << 13;
+            0 = (0 | 0) & (~(0 & 0));
+            0 = 0 >>> 17;
+            0 = (0 | 0) & (~(0 & 0));
+            0 = 0 << 5;
          */
         /* JADX WARN: Code restructure failed: missing block: B:398:0x3c4b, code lost:
         
-            return r0;
+            return 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:400:0x3c4c, code lost:
         
-            r0 = move-exception;
+            0 = move-exception;
          */
         /* JADX WARN: Code restructure failed: missing block: B:401:0x3c4d, code lost:
         
-            r1 = r0.getCause();
+            0 = 0.getCause();
          */
         /* JADX WARN: Code restructure failed: missing block: B:402:0x3c51, code lost:
         
-            if (r1 != null) goto L618;
+            if (0 != null) goto L618;
          */
         /* JADX WARN: Code restructure failed: missing block: B:403:0x3c53, code lost:
         
-            throw r1;
+            throw 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:404:0x3c54, code lost:
         
-            throw r0;
+            throw 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:406:0x3c55, code lost:
         
-            r0 = new java.lang.Object[]{new int[]{(r76 & (-280)) | (r7 & 279)}, new int[]{((~r1) & r2) | ((~r2) & r1)}, null, new int[]{r76}};
-            r4 = ((((~(284405931 | r7)) | (~(750160042 | r7))) | (~((-11698347) | r76))) * 568) + (((((~((-284405932) | r76)) | (~((-750160043) | r76))) | (~(1022867627 | r7))) * (-568)) + (((((~((-284405932) | r7)) | 11698346) | (~((-750160043) | r7))) * (-1136)) + 257519085));
-            r2 = r4 * 521;
-            r6 = ((-8304) & r2) + (r2 | (-8304));
-            r2 = ~r4;
-            r5 = ((-17) & r2) | ((-17) ^ r2);
-            r5 = ~((r5 & r8) | (r5 ^ r8));
-            r9 = ~(r4 | r76);
-            r5 = -(-(((r5 & r9) | (r5 ^ r9)) * 520));
-            r9 = (r6 & r5) + (r5 | r6);
-            r2 = ~((r2 & r8) | (r2 ^ r8));
-            r5 = ~(r76 | 16);
-            r2 = (((r2 & r5) | (r2 ^ r5)) * (-1040)) + r9;
-            r5 = ~((-17) | r7);
-            r4 = ~r4;
-            r4 = ~((r4 & 16) | (r4 ^ 16));
-            r4 = (r4 & r5) | (r5 ^ r4);
-            r1 = ~((r76 & 16) | (r76 ^ 16));
-            r1 = ((r1 & r4) | (r4 ^ r1)) * 520;
-            r4 = (((r2 | r1) << 1) - (r1 ^ r2)) + r37;
-            r1 = (r4 << 13) ^ r4;
-            r2 = r1 >>> 17;
-            r1 = ((~r1) & r2) | ((~r2) & r1);
-            r2 = r1 << 5;
+            0 = new java.lang.Object[]{new int[]{(0 & (-280)) | (0 & 279)}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{0}};
+            0 = ((((~(284405931 | 0)) | (~(750160042 | 0))) | (~((-11698347) | 0))) * 568) + (((((~((-284405932) | 0)) | (~((-750160043) | 0))) | (~(1022867627 | 0))) * (-568)) + (((((~((-284405932) | 0)) | 11698346) | (~((-750160043) | 0))) * (-1136)) + 257519085));
+            0 = 0 * 521;
+            0 = ((-8304) & 0) + (0 | (-8304));
+            0 = ~0;
+            0 = ((-17) & 0) | ((-17) ^ 0);
+            0 = ~((0 & 0) | (0 ^ 0));
+            0 = ~(0 | 0);
+            0 = -(-(((0 & 0) | (0 ^ 0)) * 520));
+            0 = (0 & 0) + (0 | 0);
+            0 = ~((0 & 0) | (0 ^ 0));
+            0 = ~(0 | 16);
+            0 = (((0 & 0) | (0 ^ 0)) * (-1040)) + 0;
+            0 = ~((-17) | 0);
+            0 = ~0;
+            0 = ~((0 & 16) | (0 ^ 16));
+            0 = (0 & 0) | (0 ^ 0);
+            0 = ~((0 & 16) | (0 ^ 16));
+            0 = ((0 & 0) | (0 ^ 0)) * 520;
+            0 = (((0 | 0) << 1) - (0 ^ 0)) + 0;
+            0 = (0 << 13) ^ 0;
+            0 = 0 >>> 17;
+            0 = ((~0) & 0) | ((~0) & 0);
+            0 = 0 << 5;
          */
         /* JADX WARN: Code restructure failed: missing block: B:407:0x3d2c, code lost:
         
-            return r0;
+            return 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:408:0x3b23, code lost:
         
-            r0 = ':';
+            0 = ':';
          */
         /* JADX WARN: Code restructure failed: missing block: B:419:0x3a30, code lost:
         
-            if ((((r0 & r2) | (r0 ^ r2)) != 0) != true) goto L596;
+            if ((((0 & 0) | (0 ^ 0)) != 0) != true) goto L596;
          */
         /* JADX WARN: Code restructure failed: missing block: B:45:0x05b3, code lost:
         
-            if (((r2 & r3) | (r2 ^ r3)) != 477111747) goto L56;
+            if (((0 & 0) | (0 ^ 0)) != 477111747) goto L56;
          */
         /* JADX WARN: Code restructure failed: missing block: B:46:0x05b6, code lost:
         
-            r11 = r4;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:472:0x28cf, code lost:
         
-            if (r15 == null) goto L461;
+            if (0 == null) goto L461;
          */
         /* JADX WARN: Code restructure failed: missing block: B:48:0x08ca, code lost:
         
@@ -466,168 +466,168 @@ public class Capture2TActivity extends FingerActivity {
          */
         /* JADX WARN: Code restructure failed: missing block: B:49:0x08cc, code lost:
         
-            r2 = new java.lang.Object[1];
-            c("\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u0000\u0001\u0001\u0000\u0001", false, new int[]{38, 28, com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor.MODULE_VERSION, 0}, r2);
+            0 = new java.lang.Object[1];
+            c("\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u0000\u0001\u0001\u0000\u0001", false, new int[]{38, 28, com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor.MODULE_VERSION, 0}, 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:503:0x2791, code lost:
         
-            if (r15 == null) goto L421;
+            if (0 == null) goto L421;
          */
         /* JADX WARN: Code restructure failed: missing block: B:506:0x277f, code lost:
         
-            r15.close();
+            0.close();
          */
         /* JADX WARN: Code restructure failed: missing block: B:50:0x08e3, code lost:
         
-            r0 = new java.lang.Object[]{(java.lang.String) r2[0]};
-            r2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
+            0 = new java.lang.Object[]{(java.lang.String) $$a[0]};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
          */
         /* JADX WARN: Code restructure failed: missing block: B:51:0x08ee, code lost:
         
-            if (r2 != null) goto L88;
+            if (0 != null) goto L88;
          */
         /* JADX WARN: Code restructure failed: missing block: B:52:0x08f0, code lost:
         
-            r2 = (char) ((-1) - android.os.Process.getGidForName(com.karumi.dexter.BuildConfig.FLAVOR));
-            r49 = 29 - (android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1));
-            r3 = 1446 - android.view.MotionEvent.axisFromString(com.karumi.dexter.BuildConfig.FLAVOR);
-            r4 = (byte) com.identy.Capture2TActivity.PngjBadSignature.$$b;
-            r5 = r4;
-            r8 = new java.lang.Object[1];
-            a(r4, r5, (byte) (r5 + 3), r8);
-            r2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r2, r49, r3, -1614962923, false, (java.lang.String) r8[0], new java.lang.Class[]{java.lang.String.class});
+            0 = (char) ((-1) - android.os.Process.getGidForName(com.karumi.dexter.BuildConfig.FLAVOR));
+            0 = 29 - (android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1));
+            0 = 1446 - android.view.MotionEvent.axisFromString(com.karumi.dexter.BuildConfig.FLAVOR);
+            0 = (byte) com.identy.Capture2TActivity.PngjBadSignature.$$b;
+            0 = 0;
+            0 = new java.lang.Object[1];
+            a(0, 0, (byte) (0 + 3), 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -1614962923, false, (java.lang.String) $$a[0], new java.lang.Class[]{java.lang.String.class});
          */
         /* JADX WARN: Code restructure failed: missing block: B:53:0x092d, code lost:
         
-            r2 = ((java.lang.Long) ((java.lang.reflect.Method) r2).invoke(null, r0)).longValue();
+            0 = ((java.lang.Long) ((java.lang.reflect.Method) 0).invoke(null, 0)).longValue();
          */
         /* JADX WARN: Code restructure failed: missing block: B:54:0x093a, code lost:
         
-            r4 = 9338041;
-            r13 = ((-675) * r2) + (677 * r4);
-            r9 = r76;
-            r38 = 0.0f;
-            r2 = -1;
-            r52 = r2 ^ r2;
-            r7 = ((-676) * ((r4 | r9) | r52)) + r13;
-            r13 = 676;
-            r54 = r9 ^ r2;
-            r13 = ((r13 * ((r2 ^ ((r4 | r2) | r9)) | ((((r4 ^ r2) | r52) ^ r2) | ((r52 | r54) ^ r2)))) + (((((r52 | r4) ^ r2) | ((r54 | r4) ^ r2)) * r13) + r7)) + 461150276;
-            r0 = ((int) (r13 >> 32)) & (((~((~r76) | 1991815892)) * 184) + (((1142947924 | r76) * (-184)) + ((((~((-865924993) | r2)) | 17057024) * 184) - 1852245494)));
-            r2 = ((int) r13) & defpackage.a.c(((~((-766927198) | r76)) | 18882821) | (~(2090813688 | r76)), -69, (((~((-748044377) | r76)) | (~(2109696509 | r76))) * 69) + 1703886222, -1838197984);
+            0 = 9338041;
+            0 = ((-675) * 0) + (677 * 0);
+            0 = 0;
+            0 = 0.0f;
+            0 = -1;
+            0 = 0 ^ 0;
+            0 = ((-676) * ((0 | 0) | 0)) + 0;
+            0 = 676;
+            0 = 0 ^ 0;
+            0 = ((0 * ((0 ^ ((0 | 0) | 0)) | ((((0 ^ 0) | 0) ^ 0) | ((0 | 0) ^ 0)))) + (((((0 | 0) ^ 0) | ((0 | 0) ^ 0)) * 0) + 0)) + 461150276;
+            0 = ((int) (0 >> 32)) & (((~((~0) | 1991815892)) * 184) + (((1142947924 | 0) * (-184)) + ((((~((-865924993) | 0)) | 17057024) * 184) - 1852245494)));
+            0 = ((int) 0) & defpackage.a.c(((~((-766927198) | 0)) | 18882821) | (~(2090813688 | 0)), -69, (((~((-748044377) | 0)) | (~(2109696509 | 0))) * 69) + 1703886222, -1838197984);
          */
         /* JADX WARN: Code restructure failed: missing block: B:55:0x09d8, code lost:
         
-            if (((r0 & r2) | (r0 ^ r2)) != 1) goto L92;
+            if (((0 & 0) | (0 ^ 0)) != 1) goto L92;
          */
         /* JADX WARN: Code restructure failed: missing block: B:56:0x09da, code lost:
         
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:57:0x0a5f, code lost:
         
-            if (r0 == false) goto L104;
+            if (0 == false) goto L104;
          */
         /* JADX WARN: Code restructure failed: missing block: B:58:0x0a61, code lost:
         
             com.identy.Capture2TActivity.PngjBadSignature.valueOf = (com.identy.Capture2TActivity.PngjBadSignature.PngjUnsupportedException + 97) % 128;
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:604:0x1b56, code lost:
         
-            r2 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:610:0x1b4b, code lost:
         
-            if ((r2 > r35 ? 2 : 20) != 20) goto L239;
+            if ((0 > 0 ? 2 : 20) != 20) goto L239;
          */
         /* JADX WARN: Code restructure failed: missing block: B:616:0x184e, code lost:
         
-            if ((r2 - 3) < r60) goto L206;
+            if ((0 - 3) < 0) goto L206;
          */
         /* JADX WARN: Code restructure failed: missing block: B:620:0x1578, code lost:
         
-            r0 = '\\';
+            0 = '\\';
          */
         /* JADX WARN: Code restructure failed: missing block: B:628:0x13ec, code lost:
         
-            if (((((int) (r8 >> 32)) & ((((~((-1738854157) | r3)) | (~(r4 | (-1118886729)))) * 950) + ((((~((-1118886729) | r3)) | (~(r4 | (-1738854157)))) * (-950)) + ((((~(1118886728 | r4)) | (~(1738854156 | r3))) * 1900) + 1871737038)))) | (((int) r8) & ((((~(1664426061 | r76)) | 227199651) * 376) + ((((~((-1664426062) | r7)) | 1647648844) * (-376)) + (((1858071278 | r76) * 376) + 2088992125))))) == 477111747) goto L154;
+            if (((((int) (0 >> 32)) & ((((~((-1738854157) | 0)) | (~(0 | (-1118886729)))) * 950) + ((((~((-1118886729) | 0)) | (~(0 | (-1738854157)))) * (-950)) + ((((~(1118886728 | 0)) | (~(1738854156 | 0))) * 1900) + 1871737038)))) | (((int) 0) & ((((~(1664426061 | 0)) | 227199651) * 376) + ((((~((-1664426062) | 0)) | 1647648844) * (-376)) + (((1858071278 | 0) * 376) + 2088992125))))) == 477111747) goto L154;
          */
         /* JADX WARN: Code restructure failed: missing block: B:634:0x09dd, code lost:
         
-            r0 = false;
+            0 = false;
          */
         /* JADX WARN: Code restructure failed: missing block: B:635:0x09e0, code lost:
         
-            r38 = 0.0f;
-            r2 = new java.lang.Object[1];
-            c("\u0000\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001", false, new int[]{66, 13, 0, 2}, r2);
+            0 = 0.0f;
+            0 = new java.lang.Object[1];
+            c("\u0000\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001", false, new int[]{66, 13, 0, 2}, 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:636:0x09f8, code lost:
         
-            r0 = new java.lang.Object[]{(java.lang.String) r2[0]};
-            r2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r32);
+            0 = new java.lang.Object[]{(java.lang.String) $$a[0]};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:637:0x0a00, code lost:
         
-            if (r2 != null) goto L97;
+            if (0 != null) goto L97;
          */
         /* JADX WARN: Code restructure failed: missing block: B:638:0x0a02, code lost:
         
-            r2 = (char) (8751 - android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0', 0, 0));
-            r49 = android.text.TextUtils.getOffsetAfter(com.karumi.dexter.BuildConfig.FLAVOR, 0) + 24;
-            r3 = 337 - (android.view.ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (android.view.ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1));
-            r4 = com.identy.Capture2TActivity.PngjBadSignature.$$b;
-            r5 = (byte) (r4 + 1);
-            r4 = (byte) r4;
-            r8 = new java.lang.Object[1];
-            a(r5, r4, (byte) (r4 - 1), r8);
-            r2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r2, r49, r3, -598779726, false, (java.lang.String) r8[0], new java.lang.Class[]{java.lang.String.class});
+            0 = (char) (8751 - android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0', 0, 0));
+            0 = android.text.TextUtils.getOffsetAfter(com.karumi.dexter.BuildConfig.FLAVOR, 0) + 24;
+            0 = 337 - (android.view.ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (android.view.ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1));
+            0 = com.identy.Capture2TActivity.PngjBadSignature.$$b;
+            0 = (byte) (0 + 1);
+            0 = (byte) 0;
+            0 = new java.lang.Object[1];
+            a(0, 0, (byte) (0 - 1), 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -598779726, false, (java.lang.String) $$a[0], new java.lang.Class[]{java.lang.String.class});
          */
         /* JADX WARN: Code restructure failed: missing block: B:639:0x0a41, code lost:
         
-            r0 = ((java.lang.reflect.Method) r2).invoke(null, r0);
+            0 = ((java.lang.reflect.Method) 0).invoke(null, 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:640:0x0a48, code lost:
         
-            r3 = new java.lang.Object[1];
-            c("\u0001", false, new int[]{79, 1, 0, 1}, r3);
-            r0 = r0.equals((java.lang.String) r3[0]);
+            0 = new java.lang.Object[1];
+            c("\u0001", false, new int[]{79, 1, 0, 1}, 0);
+            0 = 0.equals((java.lang.String) $$a[0]);
          */
         /* JADX WARN: Code restructure failed: missing block: B:648:0x06b3, code lost:
         
-            if (((((int) (r9 >> 32)) & defpackage.a.c((-173408898) | r7, -828, (((~((-173408898) | r7)) | 1610635308) * (-828)) + 1754752898, 1848645948)) | (((((~(r7 | 1545878427)) | (~((-1311862459) | r76))) * 979) + (((1545878427 | r76) * (-979)) + (((~((-1311862459) | r7)) * 979) + 31140552))) & ((int) r9))) != 477111747) goto L64;
+            if (((((int) (0 >> 32)) & defpackage.a.c((-173408898) | 0, -828, (((~((-173408898) | 0)) | 1610635308) * (-828)) + 1754752898, 1848645948)) | (((((~(0 | 1545878427)) | (~((-1311862459) | 0))) * 979) + (((1545878427 | 0) * (-979)) + (((~((-1311862459) | 0)) * 979) + 31140552))) & ((int) 0))) != 477111747) goto L64;
          */
         /* JADX WARN: Code restructure failed: missing block: B:656:0x07b0, code lost:
         
-            if ((r0 | (((int) r13) & defpackage.a.c((~((~r4) | (-37855241))) | 671615233, 576, (((~((-1111990447) | r4)) | 1074135206) * 576) + 1771465493, 226588032))) != (-1032769152)) goto L74;
+            if ((0 | (((int) 0) & defpackage.a.c((~((~0) | (-37855241))) | 671615233, 576, (((~((-1111990447) | 0)) | 1074135206) * 576) + 1771465493, 226588032))) != (-1032769152)) goto L74;
          */
         /* JADX WARN: Code restructure failed: missing block: B:664:0x08c4, code lost:
         
-            if (((r0 & r2) | (r0 ^ r2)) == 542074309) goto L82;
+            if (((0 & 0) | (0 ^ 0)) == 542074309) goto L82;
          */
         /* JADX WARN: Code restructure failed: missing block: B:678:0x0201, code lost:
         
-            if (((((int) (r13 >> 32)) & defpackage.a.c(r2 | (-1280757891), -828, (((~((-1280757891) | r2)) | (-1576982995)) * (-828)) + 1754752898, -389389192)) | (((int) r13) & ((((~((~((int) android.os.Process.getElapsedCpuTime())) | 453090201)) | (-2074868700)) * 191) + ((((~(453090201 | r5)) | (-1890316612)) * 191) - 523123721)))) != 0) goto L10;
+            if (((((int) (0 >> 32)) & defpackage.a.c(0 | (-1280757891), -828, (((~((-1280757891) | 0)) | (-1576982995)) * (-828)) + 1754752898, -389389192)) | (((int) 0) & ((((~((~((int) android.os.Process.getElapsedCpuTime())) | 453090201)) | (-2074868700)) * 191) + ((((~(453090201 | 0)) | (-1890316612)) * 191) - 523123721)))) != 0) goto L10;
          */
         /* JADX WARN: Code restructure failed: missing block: B:95:0x12dd, code lost:
         
-            if (((r2 & r8) | (r8 ^ r2)) != 477111747) goto L146;
+            if (((0 & 0) | (0 ^ 0)) != 477111747) goto L146;
          */
         /* JADX WARN: Code restructure failed: missing block: B:96:0x13ee, code lost:
         
-            r2 = 0;
-            r3 = 0;
+            0 = 0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:98:0x13f2, code lost:
         
-            if (r2 >= 28) goto L682;
+            if (0 >= 28) goto L682;
          */
         /* JADX WARN: Code restructure failed: missing block: B:99:0x13f4, code lost:
         
-            r4 = r0[r2];
-            r14 = new java.lang.Object[1];
-            b(new int[]{1481079821, -1204985403, 1573751675, 1163940359, 1454481099, -1270784315}, 12 - android.graphics.drawable.Drawable.resolveOpacity(0, 0), r14);
+            0 = $$a[0];
+            0 = new java.lang.Object[1];
+            b(new int[]{1481079821, -1204985403, 1573751675, 1163940359, 1454481099, -1270784315}, 12 - android.graphics.drawable.Drawable.resolveOpacity(0, 0), 0);
          */
         /* JADX WARN: Removed duplicated region for block: B:145:0x1855  */
         /* JADX WARN: Removed duplicated region for block: B:147:0x1919  */
@@ -717,7 +717,7 @@ public class Capture2TActivity extends FingerActivity {
                     long j12 = (j11 | longValue) ^ j6;
                     long j13 = (j10 * (j12 | ((j11 | j8) ^ j6) | (j6 ^ (longValue | j8)))) + ((((j7 | (j8 ^ j6)) ^ j6) | j12 | j9) * j10) + ((-814) * (((j7 | j5) ^ j6) | j9)) + (408 * longValue) + ((-813) * j5) + 1298591803;
                     i2 = 0;
-                    if (((((int) (j13 << 3)) & ((((~((~i) | 2119249993)) | (-2130180832)) * 560) + ((~((-671092745) | i)) * (-560)) + (((~((-682023583) | r7)) * (-560)) - 1807601366))) | (((int) j13) & ((((~(1158383069 | i)) | 541073440) * 658) + (((541172133 | r4) * (-658)) - 1372286417)))) == 0) {
+                    if (((((int) (j13 << 3)) & ((((~((~i) | 2119249993)) | (-2130180832)) * 560) + ((~((-671092745) | i)) * (-560)) + (((~((-682023583) | 0)) * (-560)) - 1807601366))) | (((int) j13) & ((((~(1158383069 | i)) | 541073440) * 658) + (((541172133 | 0) * (-658)) - 1372286417)))) == 0) {
                         cls = cls3;
                         int minimumFlingVelocity = ViewConfiguration.getMinimumFlingVelocity() >> 16;
                         int values = com.identy.a.PngjException.values();
@@ -835,8 +835,8 @@ public class Capture2TActivity extends FingerActivity {
                                         long j17 = (elapsedCpuTime | j14) ^ j16;
                                         long j18 = ((j14 ^ j16) | longValue2) ^ j16;
                                         long j19 = (j15 * (j18 | (j16 ^ ((longValue2 ^ j16) | j14)) | j17)) + ((-1528) * (j18 | ((elapsedCpuTime | longValue2) ^ j16))) + ((longValue2 | j17) * j15) + ((-1527) * longValue2) + (765 * j14) + 377206707;
-                                        int i43 = ((int) (j19 >> 32)) & ((((~(defpackage.a.b(1471084013) | (-1082232794))) | 99712) * 658) + (((693474722 | r3) * (-658)) - 1883517682));
-                                        int i44 = ((int) j19) & ((((~((~((int) Runtime.getRuntime().freeMemory())) | 978667283)) | (-1879073603)) * 305) + ((((~(978667283 | r7)) | (-2052417364)) * 305) - 1704616964));
+                                        int i43 = ((int) (j19 >> 32)) & ((((~(defpackage.a.b(1471084013) | (-1082232794))) | 99712) * 658) + (((693474722 | 0) * (-658)) - 1883517682));
+                                        int i44 = ((int) j19) & ((((~((~((int) Runtime.getRuntime().freeMemory())) | 978667283)) | (-1879073603)) * 305) + ((((~(978667283 | 0)) | (-2052417364)) * 305) - 1704616964));
                                     } else {
                                         obj3 = invoke3;
                                     }
@@ -936,7 +936,7 @@ public class Capture2TActivity extends FingerActivity {
                         if (z5) {
                             int i57 = valueOf;
                             PngjUnsupportedException = ((i57 ^ 109) + ((i57 & 109) << 1)) % 128;
-                            Object[] objArr22 = {new int[]{(i & (-261)) | (r7 & 260)}, new int[]{((~r1) & r2) | ((~r2) & r1)}, null, new int[]{i}};
+                            Object[] objArr22 = {new int[]{(i & (-261)) | (0 & 260)}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{i}};
                             int i58 = ~i;
                             int i59 = (((~(i | 623641961)) | (~(410924012 | i58))) * 627) + (((~((-410924013) | i)) | 623641961) * (-627)) + (((-620758018) | i) * (-627)) + 1167369348;
                             int i60 = -(-((i59 & 16) + (i59 | 16)));
@@ -1250,7 +1250,7 @@ public class Capture2TActivity extends FingerActivity {
                         int i144 = i98;
                         boolean z6 = false;
                         if (z6) {
-                            Object[] objArr68 = {new int[]{(i & (-262)) | (i77 & 261)}, new int[]{((~r1) & r2) | ((~r2) & r1)}, null, new int[]{i}};
+                            Object[] objArr68 = {new int[]{(i & (-262)) | (i77 & 261)}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{i}};
                             int c10 = defpackage.a.c((~(i | (-337740740))) | (~((-696825235) | i77)) | (-1034532820), -370, (((~((-337740740) | i77)) | (~((-696825235) | i))) * (-370)) + 1571886639, -525054056);
                             int i145 = (((c10 | 16) << 1) - (c10 ^ 16)) + i4;
                             int i146 = i145 << 13;
@@ -1289,7 +1289,7 @@ public class Capture2TActivity extends FingerActivity {
                         long j80 = ((j73 * ((((j75 | j79) | longValue9) ^ j74) | (((j76 | j70) | j78) ^ j74))) + (((((j76 | j79) ^ j74) | ((j75 | j78) ^ j74)) * j73) + j77)) - 351713958;
                         int i152 = (int) Runtime.getRuntime().totalMemory();
                         int i153 = ((int) (j80 >> 32)) & (((~(i152 | 2010343732)) * 283) + (((~(915628320 | i152)) | 1094715412) * (-283)) + 2004042694);
-                        int i154 = ((int) j80) & ((((~((~((int) Runtime.getRuntime().totalMemory())) | (-576869548))) | (-287986774)) * 494) + ((((-2249730) | r5) * 494) - 905680329));
+                        int i154 = ((int) j80) & ((((~((~((int) Runtime.getRuntime().totalMemory())) | (-576869548))) | (-287986774)) * 494) + ((((-2249730) | 0) * 494) - 905680329));
                         long j81 = (i153 & i154) | (i153 ^ i154);
                         Object[] objArr72 = new Object[1];
                         c("\u0001\u0001\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0000\u0000", true, new int[]{165, 17, 0, 4}, objArr72);
@@ -1320,7 +1320,7 @@ public class Capture2TActivity extends FingerActivity {
                         long j86 = ((-865) * (j84 | (((j82 ^ j2) | j85) ^ j2))) + j83;
                         long j87 = 865;
                         long j88 = ((j87 * (((j85 | j82) ^ j2) | ((j84 | j85) ^ j2))) + ((((j82 | startUptimeMillis2) ^ j2) * j87) + j86)) - 1743640642;
-                        int c12 = ((int) (j88 >> 32)) & defpackage.a.c((~((~defpackage.a.a()) | (-537214987))) | (-2112879552), 576, (((~((-2043660475) | r4)) | 1506445488) * 576) - 1771464918, 129207296);
+                        int c12 = ((int) (j88 >> 32)) & defpackage.a.c((~((~defpackage.a.a()) | (-537214987))) | (-2112879552), 576, (((~((-2043660475) | 0)) | 1506445488) * 576) - 1771464918, 129207296);
                         int a = defpackage.a.a();
                         int i156 = ((1845052852 | a) * (-50)) + 1526308875;
                         int i157 = ~((-743982241) | a);
@@ -1418,7 +1418,7 @@ public class Capture2TActivity extends FingerActivity {
                             long j107 = longValue12 ^ j2;
                             long j108 = ((j106 * (((j103 | j107) | maxMemory) ^ j2)) + ((((j107 | j101) ^ j2) * j106) + j105)) - 1198379395;
                             int i187 = ((int) (j108 >> 32)) & ((((~(567055525 | i)) | (-870170886)) * 529) + (((~(i77 | 567055525)) | (-870176166)) * 529) + 1520786966);
-                            int i188 = ((int) j108) & ((((~((-904753249) | i77)) | (-1073608042)) * 374) + (((168854793 | r3) * (-374)) - 612594089));
+                            int i188 = ((int) j108) & ((((~((-904753249) | i77)) | (-1073608042)) * 374) + (((168854793 | 0) * (-374)) - 612594089));
                             long j109 = (i187 & i188) | (i187 ^ i188);
                             if (j4 > j) {
                                 int i189 = valueOf;
@@ -1428,12 +1428,12 @@ public class Capture2TActivity extends FingerActivity {
                                 }
                                 if (!z2) {
                                     com.identy.a.PngjException.values();
-                                    Object[] objArr82 = {new int[]{r4}, new int[1], null, new int[]{i}};
+                                    Object[] objArr82 = {new int[]{0}, new int[1], null, new int[]{i}};
                                     int i191 = (~(i & 248)) & (i | 248);
                                     int myUid2 = Process.myUid();
                                     int i192 = ~myUid2;
                                     int i193 = ~((-402426002) | i192);
-                                    int i194 = (((~(myUid2 | (-402426002))) | (~(i192 | 402426001))) * 575) + (((~((-632139973) | myUid2)) | (~(632139972 | i192))) * (-575)) + (((i193 | r5) * 1150) - 1135381654);
+                                    int i194 = (((~(myUid2 | (-402426002))) | (~(i192 | 402426001))) * 575) + (((~((-632139973) | myUid2)) | (~(632139972 | i192))) * (-575)) + (((i193 | 0) * 1150) - 1135381654);
                                     int i195 = 1767253027 - (~((i194 & 16) + (i194 | 16)));
                                     int i196 = i195 << 13;
                                     int i197 = (i196 | i195) & (~(i195 & i196));
@@ -1522,7 +1522,7 @@ public class Capture2TActivity extends FingerActivity {
                                     i214 = 7;
                                 }
                                 if (i5 != 0) {
-                                    Object[] objArr92 = {new int[]{(i5 | i) & (~(i & i5))}, new int[]{((~r0) & r1) | ((~r1) & r0)}, null, new int[]{i}};
+                                    Object[] objArr92 = {new int[]{(i5 | i) & (~(i & i5))}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{i}};
                                     int i220 = (((-50414560) | i77) * 754) + (((~((-16843402) | i)) | (~(1000994815 | i77))) * (-754)) + (((~((-50414560) | i)) | android.R.attr.progressBarStyleLargeInverse | (~(984151414 | i))) * (-754)) + 1371613847;
                                     int i221 = -(-(i220 * (-667)));
                                     int i222 = ((-21360) & i221) + (i221 | (-21360));
@@ -1692,7 +1692,7 @@ public class Capture2TActivity extends FingerActivity {
                                                     i6 = ((parseInt | 170) << 1) - (parseInt ^ 170);
                                                     if (i6 == 0) {
                                                         PngjUnsupportedException = (valueOf + 15) % 128;
-                                                        Object[] objArr105 = {new int[]{(i6 & i77) | ((~i6) & i)}, new int[]{r0 ^ (r0 << 5)}, null, new int[]{i}};
+                                                        Object[] objArr105 = {new int[]{(i6 & i77) | ((~i6) & i)}, new int[]{0 ^ (0 << 5)}, null, new int[]{i}};
                                                         int c14 = defpackage.a.c((~(i | (-620765505))) | (~(622013248 | i77)) | 411304981, 140, (((~(412552725 | i77)) | 620765504) * (-280)) + (((i | 412552725) * 140) - 1628538531), 16);
                                                         int i266 = (c14 & i4) + (c14 | i4);
                                                         int i267 = i266 << 13;
@@ -1844,7 +1844,7 @@ public class Capture2TActivity extends FingerActivity {
                                                     if (c == c2) {
                                                         PngjUnsupportedException = (valueOf + 97) % 128;
                                                         Object[] objArr127 = {new int[]{i7 ^ i}, new int[1], null, new int[]{i}};
-                                                        int i283 = (((~((~((int) Runtime.getRuntime().totalMemory())) | 205489949)) | (-829076025)) * 305) + ((((~(r0 | 205489949)) | (-1031780158)) * 305) - 1250391556);
+                                                        int i283 = (((~((~((int) Runtime.getRuntime().totalMemory())) | 205489949)) | (-829076025)) * 305) + ((((~(0 | 205489949)) | (-1031780158)) * 305) - 1250391556);
                                                         int i284 = (i283 ^ 16) + ((i283 & 16) << 1);
                                                         int i285 = i284 * (-337);
                                                         int i286 = (i285 & 2098322348) + (i285 | 2098322348);
@@ -1945,7 +1945,7 @@ public class Capture2TActivity extends FingerActivity {
                                                         int i325 = PngjUnsupportedException;
                                                         valueOf = ((i325 & 101) + (i325 | 101)) % 128;
                                                         Object[] objArr129 = {new int[]{(i9 & i77) | ((~i9) & i)}, new int[1], null, new int[]{i}};
-                                                        int i326 = (((~((~Process.myPid()) | (-160208071))) | 159387712) * (-964)) + ((((~((-160208071) | r0)) | (-874357904)) * (-964)) - 211106643);
+                                                        int i326 = (((~((~Process.myPid()) | (-160208071))) | 159387712) * (-964)) + ((((~((-160208071) | 0)) | (-874357904)) * (-964)) - 211106643);
                                                         int i327 = (i326 ^ 16) + ((i326 & 16) << 1);
                                                         int i328 = i327 * 960;
                                                         int i329 = ((i328 | 905141868) << 1) - (i328 ^ 905141868);
@@ -2031,7 +2031,7 @@ public class Capture2TActivity extends FingerActivity {
                                                         z3 = false;
                                                     }
                                                     if (z3) {
-                                                        Object[] objArr131 = {new int[]{r5}, new int[]{(r1 | r2) & (~(r1 & r2))}, null, new int[]{i}};
+                                                        Object[] objArr131 = {new int[]{0}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                                                         int i346 = (~(i & 242)) & (i | 242);
                                                         int c18 = defpackage.a.c((~((-618842220) | i77)) | 12730474 | (~((-415723755) | i77)), 184, (((~((-606111746) | i77)) | (~((-402993281) | i77))) * (-184)) - 347012035, -960829208);
                                                         int i347 = (c18 ^ 16) + ((c18 & 16) << 1);
@@ -2064,7 +2064,7 @@ public class Capture2TActivity extends FingerActivity {
                                                     int i356 = ~((-174608407) | startUptimeMillis4);
                                                     int i357 = ~startUptimeMillis4;
                                                     if ((i355 | (((int) j139) & (((((~((-174608407) | i357)) | (~(2071657974 | startUptimeMillis4))) | (~(startUptimeMillis4 | (-285214753)))) * 920) + (((174608406 | (~(1897049568 | i357))) * 920) + ((((~(i357 | (-285214753))) | i356) * 920) + (-2038855459)))))) != 0) {
-                                                        objArr = new Object[]{new int[]{r5}, new int[]{(r2 | r4) & (~(r2 & r4))}, null, new int[]{i}};
+                                                        objArr = new Object[]{new int[]{0}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                                                         int i358 = (~(i & 264)) & (i | 264);
                                                         int i359 = (((~(916882634 | i77)) | (-832909378)) * 184) + ((((-16855042) | i77) * 184) - 328930947);
                                                         int i360 = (i359 ^ 16) + ((i359 & 16) << 1) + i4;
@@ -2157,7 +2157,7 @@ public class Capture2TActivity extends FingerActivity {
                                                             int i382 = ((int) (j154 >> 32)) & (((i381 | 542463048) * 764) + (((~(i380 | (-1695903495))) | 538264576) * (-1528)) + (((-1695903495) | i381) * 764) + 31983534);
                                                             int i383 = ((int) j154) & ((((~((-38813769) | i77)) | 267521) * 241) + ((((~((-1448143567) | i77)) | 1409329798) * (-241)) - 1155634038));
                                                             if (((i382 & i383) | (i382 ^ i383)) != 0) {
-                                                                objArr = new Object[]{new int[]{(i & (-269)) | (i77 & 268)}, new int[]{((~r2) & r4) | ((~r4) & r2)}, null, new int[]{i}};
+                                                                objArr = new Object[]{new int[]{(i & (-269)) | (i77 & 268)}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{i}};
                                                                 int i384 = ((478593738 | (~((-555972236) | i77))) * 160) + ((((~(i77 | 478593738)) | (-1034417868)) * (-160)) - 529122411);
                                                                 int i385 = 1767253027 - (~(((i384 | 16) << 1) - (i384 ^ 16)));
                                                                 int i386 = i385 << 13;
@@ -2195,7 +2195,7 @@ public class Capture2TActivity extends FingerActivity {
                                                                 int i395 = ((int) j162) & (((i394 | 572726432) * 712) + (((~((-293871882) | i77)) | (~((-570628097) | i))) * (-712)) + ((293871881 | i394) * (-712)) + 147107421);
                                                                 if (((i393 & i395) | (i393 ^ i395)) != 0) {
                                                                     objArr = new Object[]{new int[]{(i & (-267)) | (i77 & 266)}, new int[1], null, new int[]{i}};
-                                                                    int A = defpackage.a.A((~(defpackage.a.b(1288271074) | (-273289478))) | 704652288, 130, ((~((~r2) | (-273289478))) * 130) - 1543811893, -16);
+                                                                    int A = defpackage.a.A((~(defpackage.a.b(1288271074) | (-273289478))) | 704652288, 130, ((~((~0) | (-273289478))) * 130) - 1543811893, -16);
                                                                     int i396 = ((A | i4) << 1) - (A ^ i4);
                                                                     int i397 = (i396 << 13) ^ i396;
                                                                     int i398 = i397 >>> 17;
@@ -2239,7 +2239,7 @@ public class Capture2TActivity extends FingerActivity {
                                                                         c3 = 0;
                                                                         ((int[]) objArr[1])[0] = ((~i408) & i409) | ((~i409) & i408);
                                                                     } else {
-                                                                        objArr = new Object[]{new int[]{r5}, new int[]{((~r2) & r4) | ((~r4) & r2)}, null, new int[]{i}};
+                                                                        objArr = new Object[]{new int[]{0}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{i}};
                                                                         int i410 = (~(i & 280)) & (i | 280);
                                                                         int i411 = ((463578319 | (~((-570987655) | i77))) * 160) + ((((~(i77 | 463578319)) | (-1000977616)) * (-160)) - 1366149643);
                                                                         int i412 = -(-((i411 ^ 16) + ((i411 & 16) << 1)));
@@ -2282,7 +2282,7 @@ public class Capture2TActivity extends FingerActivity {
                                                             if (((i418 & i419) | (i418 ^ i419)) == 2) {
                                                                 PngjUnsupportedException = (valueOf + 15) % 128;
                                                                 Object[] objArr140 = {new int[]{(i & (-271)) | (i77 & 270)}, new int[1], null, new int[]{i}};
-                                                                int i420 = (((~((~((int) SystemClock.uptimeMillis())) | (-873017410))) | 138413072) * 521) + (((~((-873017410) | r1)) * 521) - 1934704516);
+                                                                int i420 = (((~((~((int) SystemClock.uptimeMillis())) | (-873017410))) | 138413072) * 521) + (((~((-873017410) | 0)) * 521) - 1934704516);
                                                                 int i421 = (i420 ^ 16) + ((i420 & 16) << 1) + i4;
                                                                 int i422 = i421 << 13;
                                                                 int i423 = (i422 | i421) & (~(i421 & i422));
@@ -2315,11 +2315,11 @@ public class Capture2TActivity extends FingerActivity {
                                                             int i428 = ~(1188721794 | b68);
                                                             int i429 = ~b68;
                                                             int i430 = i428 | (~((-248504616) | i429));
-                                                            int i431 = ((int) j179) & (((1074795648 | (~((-1188721795) | i429))) * 516) + (((~(b68 | 1323300263)) | (~(i429 | (-1074795649)))) * 516) + (((i430 | r9) * (-516)) - 1257986327));
+                                                            int i431 = ((int) j179) & (((1074795648 | (~((-1188721795) | i429))) * 516) + (((~(b68 | 1323300263)) | (~(i429 | (-1074795649)))) * 516) + (((i430 | 0) * (-516)) - 1257986327));
                                                             if (((i427 & i431) | (i427 ^ i431)) != 0) {
                                                                 int i432 = valueOf;
                                                                 PngjUnsupportedException = (((i432 | 119) << 1) - (i432 ^ 119)) % 128;
-                                                                Object[] objArr142 = {new int[]{r4}, new int[1], null, new int[]{i}};
+                                                                Object[] objArr142 = {new int[]{0}, new int[1], null, new int[]{i}};
                                                                 int i433 = (~(i & 272)) & (i | 272);
                                                                 int maxMemory4 = (int) Runtime.getRuntime().maxMemory();
                                                                 int i434 = ((((~((-372996405) | maxMemory4)) | 269564180) | (~(661569569 | maxMemory4))) * (-754)) - 1801235637;
@@ -2376,7 +2376,7 @@ public class Capture2TActivity extends FingerActivity {
                                                             int i461 = ((int) (j185 >> 32)) & ((((~((-837115676) | i77)) | 25498626) * 560) + ((~((-1209008161) | i)) * (-560)) + (((~((-2020625210) | i77)) * (-560)) - 1517365430));
                                                             int i462 = ((int) j185) & ((((~((-713043031) | i77)) | (~(2144697855 | i77))) * 614) + (((~((-1787116920) | i77)) | 1074073889 | (~(1070623966 | i77))) * (-1228)) + ((1431654825 | i) * 614) + 402782539);
                                                             if (((i461 & i462) | (i461 ^ i462)) != 0) {
-                                                                Object[] objArr146 = {new int[]{r5}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{i}};
+                                                                Object[] objArr146 = {new int[]{0}, new int[]{0 ^ (0 << 5)}, null, new int[]{i}};
                                                                 int i463 = (~(i & 275)) & (i | 275);
                                                                 int A3 = defpackage.a.A(~((-2824601) | i), 566, (((~((-343874458) | i)) | 341049857) * (-566)) + 795256715, -16);
                                                                 int i464 = A3 * (-112);
@@ -2425,9 +2425,9 @@ public class Capture2TActivity extends FingerActivity {
                                                             int c21 = ((int) (j191 >> 32)) & defpackage.a.c((~((-1677611846) | i77)) | 38949120, 933, (((~(240385434 | i77)) | (-1677611846)) * (-933)) - 1347840694, -1038480062);
                                                             int i483 = ((int) j191) & ((((~((-918256135) | i77)) | 848965638 | (~(2008775247 | i))) * 676) + (((~(1939484751 | i77)) | 69290496) * 676) + (((-69290497) | i) * (-676)) + 1718551321);
                                                             if (!(!(((c21 & i483) | (c21 ^ i483)) != 0))) {
-                                                                Object[] objArr150 = {new int[]{r4}, new int[1], null, new int[]{i}};
+                                                                Object[] objArr150 = {new int[]{0}, new int[1], null, new int[]{i}};
                                                                 int i484 = (~(i & 276)) & (i | 276);
-                                                                int i485 = 1767253027 - (~defpackage.a.A((~((~Process.myPid()) | 981549975)) | (-53015999), 783, ((~((-19444777) | r1)) * (-783)) - 403579770, -16));
+                                                                int i485 = 1767253027 - (~defpackage.a.A((~((~Process.myPid()) | 981549975)) | (-53015999), 783, ((~((-19444777) | 0)) * (-783)) - 403579770, -16));
                                                                 int i486 = i485 << 13;
                                                                 int i487 = (i486 | i485) & (~(i485 & i486));
                                                                 int i488 = i487 >>> 17;
@@ -2940,13 +2940,13 @@ public class Capture2TActivity extends FingerActivity {
 
         /* JADX WARN: Code restructure failed: missing block: B:11:0x0019, code lost:
         
-            r0 = r6.values;
-            r2 = r6.values;
-            r0.getPadSub1 = new com.identy.ui.c.PngjExceptionInternal(r2, r2.PngjBadCrcException, r6.PngjBadCrcException, r2.getQualityScore);
-            r0 = new android.view.WindowManager.LayoutParams();
-            r0.copyFrom(r6.values.getPadSub1.getWindow().getAttributes());
-            ((android.view.ViewGroup.LayoutParams) r0).width = -1;
-            r6.values.getPadSub1.show();
+            0 = 0.values;
+            0 = 0.values;
+            0.getPadSub1 = new com.identy.ui.c.PngjExceptionInternal(0, 0.PngjBadCrcException, 0.PngjBadCrcException, 0.getQualityScore);
+            0 = new android.view.WindowManager.LayoutParams();
+            0.copyFrom(0.values.getPadSub1.getWindow().getAttributes());
+            ((android.view.ViewGroup.LayoutParams) 0).width = -1;
+            0.values.getPadSub1.show();
          */
         /* JADX WARN: Code restructure failed: missing block: B:13:0x0017, code lost:
         
@@ -3289,24 +3289,24 @@ public class Capture2TActivity extends FingerActivity {
                             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(deadChar, keyRepeatTimeout, edgeSlop, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature3).get(null);
-                        PngjException$52c725b = new Object[]{new int[]{r5}, new int[1], r0, new int[]{r4}};
+                        PngjException$52c725b = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i5 = ((int[]) objArr5[3])[0];
                         int i6 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
                         int elapsedRealtime = (int) SystemClock.elapsedRealtime();
-                        int c2 = defpackage.a.c((~(elapsedRealtime | 645741323)) | (~((-388824651) | elapsedRealtime)) | 285262912, 407, (((~(388824650 | elapsedRealtime)) | (~((~elapsedRealtime) | (-645741324))) | 285262912) * 407) + (((542179585 | r2) * (-814)) - 1112373114), 1767253028);
+                        int c2 = defpackage.a.c((~(elapsedRealtime | 645741323)) | (~((-388824651) | elapsedRealtime)) | 285262912, 407, (((~(388824650 | elapsedRealtime)) | (~((~elapsedRealtime) | (-645741324))) | 285262912) * 407) + (((542179585 | 0) * (-814)) - 1112373114), 1767253028);
                         int i7 = c2 ^ (c2 << 13);
                         int i8 = i7 ^ (i7 >>> 17);
                         ((int[]) PngjException$52c725b[1])[0] = i8 ^ (i8 << 5);
                         i2 = ((int[]) PngjException$52c725b[0])[0];
                         i3 = ((int[]) PngjException$52c725b[3])[0];
                         if (i3 != i2) {
-                            Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
+                            Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i9 = ((int[]) PngjException$52c725b[1])[0];
                             int i10 = ((int[]) PngjException$52c725b[3])[0];
                             int i11 = ((int[]) PngjException$52c725b[0])[0];
                             String[] strArr2 = (String[]) PngjException$52c725b[2];
-                            int d = defpackage.a.d(~((~System.identityHashCode(this)) | (-33833513)), -948, (((~((-579204654) | r1)) | (-455361321)) * (-948)) - 1821038631, -1615767096, i9);
+                            int d = defpackage.a.d(~((~System.identityHashCode(this)) | (-33833513)), -948, (((~((-579204654) | 0)) | (-455361321)) * (-948)) - 1821038631, -1615767096, i9);
                             int i12 = d ^ (d << 13);
                             int i13 = i12 ^ (i12 >>> 17);
                             ((int[]) objArr6[1])[0] = i13 ^ (i13 << 5);
@@ -3324,7 +3324,7 @@ public class Capture2TActivity extends FingerActivity {
                         int i14 = i3 - 1;
                         iArr[i14] = 1;
                         Toast.makeText((Context) null, iArr[((i3 * i14) % 2) - 1], 1).show();
-                        Object[] objArr7 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
+                        Object[] objArr7 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i15 = ((int[]) PngjException$52c725b[1])[0];
                         int i16 = ((int[]) PngjException$52c725b[3])[0];
                         int i17 = ((int[]) PngjException$52c725b[0])[0];

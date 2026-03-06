@@ -56,12 +56,12 @@ import org.identy.opencv.core.Mat;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */
 public final class getOveralTimetaken extends e1 {
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final byte[] $$g = null;
-    private static final int $$h = 0;
-    private static final byte[] $$l = null;
-    private static final int $$m = 0;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  byte[] $$g = null;
+    private static  int $$h = 0;
+    private static  byte[] $$l = null;
+    private static  int $$m = 0;
     private static int $10;
     private static int $11;
     private static int pfk;
@@ -250,10 +250,10 @@ public final class getOveralTimetaken extends e1 {
     }
 
     public class PngjException implements Runnable {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static long PngjBadCrcException;
@@ -475,7 +475,7 @@ public final class getOveralTimetaken extends e1 {
                     cArr5[intValue2] = ((Character) ((Method) PngjBadSignature5).invoke(null, objArr5)).charValue();
                     cArr4[intValue2] = getpadsub2.values;
                     int i10 = getpadsub2.PngjBadSignature;
-                    cArr6[i10] = (char) ((((r0 ^ cArr2[i10]) ^ (PngjBadCrcException ^ 698259225915410659L)) ^ ((int) (values ^ 698259225915410659L))) ^ ((char) (PngjBadSignature ^ 698259225915410659L)));
+                    cArr6[i10] = (char) ((((0 ^ cArr2[i10]) ^ (PngjBadCrcException ^ 698259225915410659L)) ^ ((int) (values ^ 698259225915410659L))) ^ ((char) (PngjBadSignature ^ 698259225915410659L)));
                     getpadsub2.PngjBadSignature = i10 + 1;
                     i5 = i9;
                     charArray2 = cArr2;
@@ -495,26 +495,26 @@ public final class getOveralTimetaken extends e1 {
 
         /* JADX WARN: Code restructure failed: missing block: B:59:0x01ca, code lost:
         
-            r4[r7] = (char) r5[r7];
+            $$a[0] = (char) $$a[0];
          */
         /* JADX WARN: Code restructure failed: missing block: B:60:0x01d0, code lost:
         
-            r1 = new java.lang.Object[]{r3, r3};
-            r2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-125632871);
+            0 = new java.lang.Object[]{0, 0};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-125632871);
          */
         /* JADX WARN: Code restructure failed: missing block: B:61:0x01da, code lost:
         
-            if (r2 != null) goto L48;
+            if (0 != null) goto L48;
          */
         /* JADX WARN: Code restructure failed: missing block: B:62:0x01dc, code lost:
         
-            r4 = (byte) 0;
-            r5 = (byte) (r4 - 1);
-            r2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (35510 - android.graphics.ImageFormat.getBitsPerPixel(0)), 43 - (android.media.AudioTrack.getMaxVolume() > r16 ? 1 : (android.media.AudioTrack.getMaxVolume() == r16 ? 0 : -1)), (android.view.ViewConfiguration.getJumpTapTimeout() >> 16) + 507, 74289954, false, $$e(r4, r5, (byte) (r5 + 1)), new java.lang.Class[]{java.lang.Object.class, java.lang.Object.class});
+            0 = (byte) 0;
+            0 = (byte) (0 - 1);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (35510 - android.graphics.ImageFormat.getBitsPerPixel(0)), 43 - (android.media.AudioTrack.getMaxVolume() > 0 ? 1 : (android.media.AudioTrack.getMaxVolume() == 0 ? 0 : -1)), (android.view.ViewConfiguration.getJumpTapTimeout() >> 16) + 507, 74289954, false, $$e(0, 0, (byte) (0 + 1)), new java.lang.Class[]{java.lang.Object.class, java.lang.Object.class});
          */
         /* JADX WARN: Code restructure failed: missing block: B:63:0x020f, code lost:
         
-            ((java.lang.reflect.Method) r2).invoke(null, r1);
+            ((java.lang.reflect.Method) 0).invoke(null, 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:64:0x0214, code lost:
         
@@ -1085,9 +1085,9 @@ public final class getOveralTimetaken extends e1 {
         byte[] bArr2 = new byte[i4 + 19];
         int i5 = i4 + 18;
         if (bArr == null) {
-            byte b3 = r7;
+            byte b3 = 0;
             i = 0;
-            int i6 = r7;
+            int i6 = 0;
             i3 = (i3 + (-b3)) - 7;
             i2 = i6 + 1;
             bArr2[i] = (byte) i3;
@@ -1105,7 +1105,7 @@ public final class getOveralTimetaken extends e1 {
             }
         } else {
             i = 0;
-            i2 = r7;
+            i2 = 0;
             bArr2[i] = (byte) i3;
             if (i == i5) {
             }
@@ -1194,19 +1194,19 @@ public final class getOveralTimetaken extends e1 {
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0033, code lost:
     
-        if (r11.CaptureThumbActivity != true) goto L17;
+        if (0.CaptureThumbActivity != true) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0047, code lost:
     
-        r11.getL2Score.values(r11.getPadSub3, r11.getPadSub2, r11.getData.intValue(), r11.CaptureRolledFingersActivity);
+        0.getL2Score.values(0.getPadSub3, 0.getPadSub2, 0.getData.intValue(), 0.CaptureRolledFingersActivity);
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0059, code lost:
     
-        r11.getL2Score.values(r11.getPadSub2, r11.getPadSub3, r11.getData.intValue(), r11.CaptureRolledFingersActivity);
+        0.getL2Score.values(0.getPadSub2, 0.getPadSub3, 0.getData.intValue(), 0.CaptureRolledFingersActivity);
      */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x0045, code lost:
     
-        if (r11.CaptureThumbActivity != false) goto L16;
+        if (0.CaptureThumbActivity != false) goto L16;
      */
     @Override // com.identy.e1
     /*
@@ -1404,7 +1404,7 @@ public final class getOveralTimetaken extends e1 {
                     int fadingEdgeLength2 = (ViewConfiguration.getFadingEdgeLength() >> 16) + 37;
                     int bitsPerPixel = 548 - ImageFormat.getBitsPerPixel(0);
                     Object[] objArr11 = new Object[1];
-                    f((byte) ($$d[19] + 1), r9[18], r9[5], objArr11);
+                    f((byte) ($$d[19] + 1), $$a[18], $$a[5], objArr11);
                     PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(lastIndexOf, fadingEdgeLength2, bitsPerPixel, 1452666181, false, (String) objArr11[0], null);
                 }
                 ((Field) PngjBadSignature8).set(null, objArr);
@@ -1445,7 +1445,7 @@ public final class getOveralTimetaken extends e1 {
                 j = 0;
                 i = 5;
                 Object[] objArr13 = new Object[1];
-                f((byte) ($$d[19] + 1), r10[18], r10[5], objArr13);
+                f((byte) ($$d[19] + 1), $$a[18], $$a[5], objArr13);
                 PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) - 1), gidForName, keyCodeFromString, 1452666181, false, (String) objArr13[0], null);
             } else {
                 i = 5;
@@ -1453,7 +1453,7 @@ public final class getOveralTimetaken extends e1 {
                 j = 0;
             }
             Object[] objArr14 = (Object[]) ((Field) PngjBadSignature10).get(null);
-            objArr = new Object[]{new int[1], new int[]{r12}, new int[]{r3}};
+            objArr = new Object[]{new int[1], new int[]{0}, new int[]{0}};
             int i8 = ((int[]) objArr14[1])[0];
             int i9 = ((int[]) objArr14[2])[0];
             int identityHashCode = System.identityHashCode(this);
@@ -1494,7 +1494,7 @@ public final class getOveralTimetaken extends e1 {
             ((int[]) objArr16[1])[0] = i24;
             ((int[]) objArr16[c3])[0] = i25;
             int elapsedRealtime = (int) SystemClock.elapsedRealtime();
-            int i26 = (((~((-112529958) | elapsedRealtime)) | (~((-1351713278) | elapsedRealtime))) * 140) + (((103027200 | r9) * (-280)) - 222729726);
+            int i26 = (((~((-112529958) | elapsedRealtime)) | (~((-1351713278) | elapsedRealtime))) * 140) + (((103027200 | 0) * (-280)) - 222729726);
             int i27 = ~((-9502758) | elapsedRealtime);
             int i28 = ~elapsedRealtime;
             int c7 = defpackage.a.c((~(i28 | (-1342210521))) | i27 | (~((-103027201) | i28)), 140, i26, i23);
@@ -1578,8 +1578,8 @@ public final class getOveralTimetaken extends e1 {
                             if (i4 != i3) {
                                 pfkrolfinalizeF = (pfk + 65) % 128;
                                 Object[] objArr25 = new Object[5];
-                                objArr25[c3] = new int[]{r12};
-                                objArr25[c2] = new int[]{r11};
+                                objArr25[c3] = new int[]{0};
+                                objArr25[c2] = new int[]{0};
                                 objArr25[i2] = new int[1];
                                 int i34 = ((int[]) objArr2[i2])[0];
                                 int i35 = ((int[]) objArr2[c2])[0];
@@ -1588,7 +1588,7 @@ public final class getOveralTimetaken extends e1 {
                                 String str6 = (String) objArr2[0];
                                 objArr25[1] = str5;
                                 objArr25[0] = str6;
-                                int c8 = defpackage.a.c((~((~((int) SystemClock.elapsedRealtime())) | 385874745)) | 238482624, 56, (((~(r6 | 238482624)) | 385874745) * 56) - 919441359, i34);
+                                int c8 = defpackage.a.c((~((~((int) SystemClock.elapsedRealtime())) | 385874745)) | 238482624, 56, (((~(0 | 238482624)) | 385874745) * 56) - 919441359, i34);
                                 int i37 = c8 ^ (c8 << 13);
                                 int i38 = i37 ^ (i37 >>> 17);
                                 ((int[]) objArr25[i2])[0] = i38 ^ (i38 << 5);
@@ -1601,8 +1601,8 @@ public final class getOveralTimetaken extends e1 {
                                 iArr2[i39] = 1;
                                 Toast.makeText((Context) null, iArr2[((i4 * i39) % 2) - 1], 1).show();
                                 Object[] objArr26 = new Object[5];
-                                objArr26[c3] = new int[]{r12};
-                                objArr26[c2] = new int[]{r11};
+                                objArr26[c3] = new int[]{0};
+                                objArr26[c2] = new int[]{0};
                                 objArr26[i2] = new int[1];
                                 int i40 = ((int[]) objArr2[i2])[0];
                                 int i41 = ((int[]) objArr2[c2])[0];
@@ -1681,9 +1681,9 @@ public final class getOveralTimetaken extends e1 {
                                 }
                                 Object[] objArr34 = (Object[]) ((Field) PngjBadSignature14).get(null);
                                 objArr3 = new Object[i2];
-                                objArr3[0] = new int[]{r8};
+                                objArr3[0] = new int[]{0};
                                 objArr3[1] = new int[1];
-                                objArr3[c2] = new int[]{r7};
+                                objArr3[c2] = new int[]{0};
                                 int i46 = ((int[]) objArr34[c2])[0];
                                 int i47 = ((int[]) objArr34[0])[0];
                                 objArr3[c3] = (String[]) objArr34[c3];
@@ -1716,9 +1716,9 @@ public final class getOveralTimetaken extends e1 {
                             }
                             pfk = (pfkrolfinalizeF + 107) % 128;
                             Object[] objArr35 = new Object[4];
-                            objArr35[0] = new int[]{r9};
+                            objArr35[0] = new int[]{0};
                             objArr35[1] = new int[1];
-                            objArr35[c2] = new int[]{r8};
+                            objArr35[c2] = new int[]{0};
                             int i52 = ((int[]) objArr3[1])[0];
                             int i53 = ((int[]) objArr3[c2])[0];
                             int i54 = ((int[]) objArr3[0])[0];
@@ -1758,8 +1758,8 @@ public final class getOveralTimetaken extends e1 {
                 }
                 Object[] objArr37 = (Object[]) ((Field) PngjBadSignature15).get(null);
                 objArr2 = new Object[i];
-                objArr2[c3] = new int[]{r12};
-                objArr2[c2] = new int[]{r11};
+                objArr2[c3] = new int[]{0};
+                objArr2[c2] = new int[]{0};
                 objArr2[4] = new int[1];
                 int i58 = ((int[]) objArr37[c2])[0];
                 int i59 = ((int[]) objArr37[c3])[0];

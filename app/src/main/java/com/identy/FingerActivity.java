@@ -101,12 +101,12 @@ import org.identy.nativealgo.NativeAlgoUtils;
 
 /* loaded from: classes2.dex */
 public class FingerActivity extends Activity implements Camera.PreviewCallback, ImageReader.OnImageAvailableListener, com.identy.d.PngjBadSignature, com.identy.d.valueOf {
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final byte[] $$g = null;
-    private static final int $$h = 0;
-    private static final byte[] $$j = null;
-    private static final int $$k = 0;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  byte[] $$g = null;
+    private static  int $$h = 0;
+    private static  byte[] $$j = null;
+    private static  int $$k = 0;
     private static int $10;
     private static int $11;
     public static boolean PngjBadSignature;
@@ -235,10 +235,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     }
 
     public class PngjBadCrcException implements Runnable {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static char[] PngjBadCrcException;
@@ -739,7 +739,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
         /* JADX WARN: Code restructure failed: missing block: B:236:0x1251, code lost:
         
-            r45.close();
+            0.close();
          */
         /* JADX WARN: Removed duplicated region for block: B:247:0x12d5 A[Catch: all -> 0x12c4, Exception -> 0x158b, TryCatch #1 {, blocks: (B:198:0x0ee1, B:201:0x0efd, B:204:0x0f24, B:211:0x0f7e, B:217:0x0fca, B:227:0x107f, B:244:0x12c0, B:245:0x12c7, B:247:0x12d5, B:248:0x131d, B:250:0x1333, B:251:0x137f, B:253:0x1390, B:255:0x13b6, B:257:0x13ea, B:259:0x145f, B:261:0x147e, B:263:0x14a1, B:266:0x14a9, B:316:0x1559, B:317:0x155c, B:321:0x158b, B:322:0x15ae, B:327:0x155e, B:329:0x1564, B:330:0x1565, B:333:0x156b, B:335:0x1571, B:336:0x1572, B:343:0x1576, B:345:0x157c, B:346:0x157d, B:350:0x157e, B:352:0x1584, B:353:0x1585), top: B:197:0x0ee1 }] */
         /* JADX WARN: Removed duplicated region for block: B:250:0x1333 A[Catch: all -> 0x12c4, Exception -> 0x158b, TryCatch #1 {, blocks: (B:198:0x0ee1, B:201:0x0efd, B:204:0x0f24, B:211:0x0f7e, B:217:0x0fca, B:227:0x107f, B:244:0x12c0, B:245:0x12c7, B:247:0x12d5, B:248:0x131d, B:250:0x1333, B:251:0x137f, B:253:0x1390, B:255:0x13b6, B:257:0x13ea, B:259:0x145f, B:261:0x147e, B:263:0x14a1, B:266:0x14a9, B:316:0x1559, B:317:0x155c, B:321:0x158b, B:322:0x15ae, B:327:0x155e, B:329:0x1564, B:330:0x1565, B:333:0x156b, B:335:0x1571, B:336:0x1572, B:343:0x1576, B:345:0x157c, B:346:0x157d, B:350:0x157e, B:352:0x1584, B:353:0x1585), top: B:197:0x0ee1 }] */
@@ -882,7 +882,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         int i64 = i63 << 5;
                         ((int[]) objArr6[4])[0] = (i63 | i64) & (~(i63 & i64));
                     } else {
-                        objArr6 = new Object[]{null, null, new int[]{i}, new int[]{i}, new int[]{(r1 | r4) & (~(r1 & r4))}};
+                        objArr6 = new Object[]{null, null, new int[]{i}, new int[]{i}, new int[]{(0 | 0) & (~(0 & 0))}};
                         int i65 = (((~((-155779085) | i27)) | (~((-268436642) | i)) | (~((-44362561) | i))) * 867) + (((~((-424215726) | i)) | 155779084 | (~((-200141645) | i))) * (-1734)) + (((~((-424215726) | i27)) | (~((-200141645) | i27))) * (-867)) + 776316996;
                         int i66 = (i3 & i65) + (i65 | i3);
                         int i67 = i66 << 13;
@@ -918,13 +918,13 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     long j14 = (int) Runtime.getRuntime().totalMemory();
                     long j15 = (j13 | j14) ^ j4;
                     long j16 = ((476 * (((j12 | (j14 ^ j4)) | j9) ^ j4)) + ((952 * j15) + (((-476) * (j11 | j15)) + j10))) - 1115498487;
-                    int i71 = ((int) (j16 >> 32)) & ((((~((-2012826061) | i27)) | 844914824) * 712) + (((~((-1168181573) | i27)) | (~((-844644489) | i))) * (-712)) + (((1168181572 | r1) * (-712)) - 233628982));
+                    int i71 = ((int) (j16 >> 32)) & ((((~((-2012826061) | i27)) | 844914824) * 712) + (((~((-1168181573) | i27)) | (~((-844644489) | i))) * (-712)) + (((1168181572 | 0) * (-712)) - 233628982));
                     int a = defpackage.a.a();
                     int i72 = ~a;
                     int i73 = (~((-334565759) | i72)) | 26280232 | (~((-1771792169) | i72));
                     int i74 = ((int) j16) & ((((~(1771792168 | i72)) | (~(i72 | 334565758))) * 590) + (i73 * (-1180)) + (((~(a | 2080077694)) | i73) * 590) + 68401975);
                     if (((i71 & i74) | (i71 ^ i74)) != 0) {
-                        objArr7 = new Object[]{null, null, new int[]{r1}, new int[]{i}, new int[1]};
+                        objArr7 = new Object[]{null, null, new int[]{0}, new int[]{i}, new int[1]};
                         int i75 = (~(i & 60)) & (i | 60);
                         int i76 = 785804835 | i27;
                         int i77 = (((~i76) | 641728514) * 495) + (i76 * 495) + 796323338;
@@ -952,7 +952,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         ((int[]) objArr7[4])[0] = (i96 | i97) & (~(i96 & i97));
                     } else {
                         objArr7 = new Object[]{null, null, new int[]{i}, new int[]{i}, new int[1]};
-                        int i98 = (((~((~((int) Process.getStartElapsedRealtime())) | (-134220418))) | 268699000) * 449) + ((((~((-134220418) | r1)) | 268699000) * 449) - 284601144);
+                        int i98 = (((~((~((int) Process.getStartElapsedRealtime())) | (-134220418))) | 268699000) * 449) + ((((~((-134220418) | 0)) | 268699000) * 449) - 284601144);
                         int i99 = (i3 ^ i98) + ((i98 & i3) << 1);
                         int i100 = (i99 << 13) ^ i99;
                         int i101 = i100 >>> 17;
@@ -997,10 +997,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     long j21 = (j17 | longValue3) ^ j4;
                     long myUid = Process.myUid();
                     long j22 = ((j20 * ((((myUid ^ j4) | j17) ^ j4) | (longValue3 ^ j4))) + (((j21 | ((j17 | myUid) ^ j4)) * j20) + j19)) - 815304355;
-                    int i112 = ((int) (j22 >> 32)) & ((((~((~Process.myTid()) | (-684260385))) | 1455140331) * 494) + ((((-675303425) | r1) * 494) - 142558178));
+                    int i112 = ((int) (j22 >> 32)) & ((((~((~Process.myTid()) | (-684260385))) | 1455140331) * 494) + ((((-675303425) | 0) * 494) - 142558178));
                     int i113 = ((int) j22) & ((((~((-111383467) | i27)) | 10555904 | (~((-1225015382) | i))) * 140) + (((~((-1325842944) | i27)) | 1225015381) * (-280)) + (((-1325842944) | i) * 140) + 2017794257);
                     if (((i112 & i113) | (i112 ^ i113)) != 0) {
-                        objArr8 = new Object[]{null, null, new int[]{r1}, new int[]{i}, new int[1]};
+                        objArr8 = new Object[]{null, null, new int[]{0}, new int[]{i}, new int[1]};
                         int i114 = (~(i & 80)) & (i | 80);
                         int i115 = (((-155774979) | i) * 591) + (((~((-155774979) | i27)) | (-468582392)) * (-591)) + 438770014;
                         int i116 = ((i115 | 16) << 1) - (i115 ^ 16);
@@ -1027,7 +1027,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         i13 = 0;
                         ((int[]) objArr8[4])[0] = (i134 | i135) & (~(i134 & i135));
                     } else {
-                        objArr8 = new Object[]{null, null, new int[]{i}, new int[]{i}, new int[]{(r1 | r5) & (~(r1 & r5))}};
+                        objArr8 = new Object[]{null, null, new int[]{i}, new int[]{i}, new int[]{(0 | 0) & (~(0 & 0))}};
                         int i136 = (((~((-8457930) | i27)) | (~(1003486927 | i))) * 210) + (((~(193793743 | i27)) | (~((-818151114) | i))) * 210) + 890172855;
                         int i137 = i136 * 561;
                         int i138 = (i137 << 1) - i137;
@@ -1090,7 +1090,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     }
                     Object[] objArr25 = {null, null, new int[]{(i & (-91)) | (i27 & 90)}, new int[]{i}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int i159 = -(-defpackage.a.c((~(elapsedCpuTime | 519962617)) | (~((-372833577) | (~elapsedCpuTime))), 338, (((147129041 | r2) | (~(372833576 | elapsedCpuTime))) * (-338)) - 1185634325, 16));
+                    int i159 = -(-defpackage.a.c((~(elapsedCpuTime | 519962617)) | (~((-372833577) | (~elapsedCpuTime))), 338, (((147129041 | 0) | (~(372833576 | elapsedCpuTime))) * (-338)) - 1185634325, 16));
                     int i160 = (i3 ^ i159) + ((i159 & i3) << 1);
                     int i161 = (i160 << 13) ^ i160;
                     int i162 = i161 >>> 17;
@@ -1165,7 +1165,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 int uptimeMillis = (int) SystemClock.uptimeMillis();
                                 int i175 = ((int) j37) & (((uptimeMillis | (-337911809)) * 465) + ((1268303667 | (~((-1589437219) | uptimeMillis))) * 930) + ((((~(1268303667 | uptimeMillis)) | (-1589437219)) * (-465)) - 197561779));
                                 if (((i175 & i174) | (i174 ^ i175)) == -725904754) {
-                                    objArr = new Object[]{r4, null, new int[1], new int[1], new int[1]};
+                                    objArr = new Object[]{0, null, new int[1], new int[1], new int[1]};
                                     String str11 = (String) defpackage.a.h(str6, str7, invoke);
                                     ((int[]) objArr[3])[0] = i;
                                     ((int[]) objArr[2])[0] = (i & (-21)) | (i4 & 20);
@@ -1232,7 +1232,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 int i187 = ((int) (j46 >> 32)) & ((((~((-1702472376) | i)) | 1613802163 | (~(i4 | (-176575753)))) * 521) + (((-265245965) | i) * 521) + (((~(i4 | (-265245965))) | 1702472375) * (-1042)) + 121297806);
                                 int i188 = ((int) j46) & ((((~((-969778429) | i4)) | 814220376 | (~(2043520509 | i))) * 757) + ((~((-155558053) | i)) * 1514) + ((1887962457 | i4) * (-757)) + 2138348886);
                                 if (((i187 & i188) | (i187 ^ i188)) == -2096167706) {
-                                    objArr = new Object[]{r4, null, new int[1], new int[1], new int[1]};
+                                    objArr = new Object[]{0, null, new int[1], new int[1], new int[1]};
                                     int i189 = (~(i & 20)) & (i | 20);
                                     String str13 = (String) defpackage.a.h(str6, str7, invoke);
                                     ((int[]) objArr[3])[0] = i;
@@ -1492,12 +1492,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         i9 = i7;
                                     }
                                 }
-                                objArr = new Object[]{r4, null, new int[1], new int[1], new int[1]};
+                                objArr = new Object[]{0, null, new int[1], new int[1], new int[1]};
                                 int i258 = (~(i & 20)) & (i | 20);
                                 String str16 = (String) defpackage.a.h(str6, str7, invoke);
                                 ((int[]) objArr[3])[0] = i;
                                 ((int[]) objArr[2])[0] = i258;
-                                int i259 = (((~((-1022632792) | i)) | 347349845 | (~((-398275422) | i))) * 407) + (((~(1022632791 | i)) | (~(398275421 | i4)) | 347349845) * 407) + ((((-1073558368) | r1) * (-814)) - 1759385883);
+                                int i259 = (((~((-1022632792) | i)) | 347349845 | (~((-398275422) | i))) * 407) + (((~(1022632791 | i)) | (~(398275421 | i4)) | 347349845) * 407) + ((((-1073558368) | 0) * (-814)) - 1759385883);
                                 int i260 = (i3 - (~(-(-(((i259 | 16) << 1) - (i259 ^ 16)))))) - 1;
                                 int i261 = i260 << 13;
                                 int i262 = ((~i260) & i261) | ((~i261) & i260);
@@ -1689,7 +1689,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 }
                             }
                             objArr5 = new Object[]{null, null, new int[]{i}, new int[]{i}, new int[1]};
-                            int i323 = (((~((~defpackage.a.b(1989811794)) | (-268446089))) | 178308721) * 521) + (((~((-268446089) | r1)) * 521) - 206664136);
+                            int i323 = (((~((~defpackage.a.b(1989811794)) | (-268446089))) | 178308721) * 521) + (((~((-268446089) | 0)) * 521) - 206664136);
                             int i324 = (i323 << 1) - i323;
                             int i325 = (i3 ^ i324) + ((i324 & i3) << 1);
                             int i326 = i325 ^ (i325 << 13);
@@ -1750,10 +1750,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     long uptimeMillis2 = (int) SystemClock.uptimeMillis();
                     long j60 = ((j59 | j55) | uptimeMillis2) ^ j57;
                     long j61 = ((476 * (((j59 | (uptimeMillis2 ^ j57)) | j55) ^ j57)) + ((952 * j60) + (((-476) * (j58 | j60)) + j56))) - 956603244;
-                    int c11 = ((int) (j61 >> 32)) & defpackage.a.c((~(((int) Runtime.getRuntime().freeMemory()) | 755372174)) | 1346996544, 490, ((2102368718 | (~r1)) * (-490)) - 1461079942, -631483140);
+                    int c11 = ((int) (j61 >> 32)) & defpackage.a.c((~(((int) Runtime.getRuntime().freeMemory()) | 755372174)) | 1346996544, 490, ((2102368718 | (~0)) * (-490)) - 1461079942, -631483140);
                     int i345 = ((int) j61) & ((((~(i4 | (-27263317))) | 604508161) * 521) + ((~((-27263317) | i)) * 521) + 122315864);
                     if (((c11 & i345) | (c11 ^ i345)) != 0) {
-                        objArr2 = new Object[]{null, null, new int[]{r6}, new int[]{i}, new int[]{(r1 | r4) & (~(r1 & r4))}};
+                        objArr2 = new Object[]{null, null, new int[]{0}, new int[]{i}, new int[]{(0 | 0) & (~(0 & 0))}};
                         int i346 = (~(i & 50)) & (i | 50);
                         int i347 = (((-191891604) | (~((-432465767) | i))) * 502) + ((~(i4 | (-36702354))) * (-502)) + (((~((-191891604) | i)) | (-469168120)) * (-502)) + 115211831;
                         int i348 = (i3 - (~(-(-((i347 ^ 16) + ((i347 & 16) << 1)))))) - 1;
@@ -1763,7 +1763,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         int i352 = i351 << 5;
                         c3 = 0;
                     } else {
-                        objArr2 = new Object[]{null, null, new int[]{i}, new int[]{i}, new int[]{r1 ^ (r1 << 5)}};
+                        objArr2 = new Object[]{null, null, new int[]{i}, new int[]{i}, new int[]{0 ^ (0 << 5)}};
                         int c12 = defpackage.a.c((~((-1020761745) | i)) | 343967376 | (~((-396404375) | i)), -69, (((~((-676794369) | i)) | (~((-52436999) | i))) * 69) - 375428228, -1036269235);
                         int i353 = (c12 << 1) - c12;
                         int i354 = (i3 ^ i353) + ((i353 & i3) << 1);
@@ -1806,7 +1806,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     int i360 = ~i359;
                     int i361 = ((int) (j70 >> 32)) & ((((~(i359 | (-296306955))) | (~(i360 | (-570459729)))) * 168) + ((~((-570459729) | i359)) * 168) + (((~((-866766683) | i360)) | 570459728) * 168) + 501358106);
                     int myTid4 = Process.myTid();
-                    int i362 = (((~((-96671596) | myTid4)) | (~(1533898005 | myTid4))) * 140) + (((21038337 | r5) * (-280)) - 790748959);
+                    int i362 = (((~((-96671596) | myTid4)) | (~(1533898005 | myTid4))) * 140) + (((21038337 | 0) * (-280)) - 790748959);
                     int i363 = ~((-75633259) | myTid4);
                     int i364 = ~myTid4;
                     int i365 = ((int) j70) & ((((~(i364 | 1609531263)) | i363 | (~((-21038338) | i364))) * 140) + i362);
@@ -1958,7 +1958,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     int startElapsedRealtime3 = (int) Process.getStartElapsedRealtime();
                     int c13 = ((int) j77) & defpackage.a.c((~(startElapsedRealtime3 | (-2088097748))) | (~(650871337 | startElapsedRealtime3)), -1324, (((~startElapsedRealtime3) | 42598440) * 1324) + 818885255, 1473095918);
                     if (((i435 & c13) | (i435 ^ c13)) == 0) {
-                        Object[] objArr74 = {null, null, new int[]{i}, new int[]{i}, new int[]{(r1 | r2) & (~(r1 & r2))}};
+                        Object[] objArr74 = {null, null, new int[]{i}, new int[]{i}, new int[]{(0 | 0) & (~(0 & 0))}};
                         int i436 = (i3 - (~((((~((-583390102) | i4)) | (~(i4 | 40967268))) * 865) + (((~(i | 40967268)) * 865) + ((((~((-40967269) | i4)) | (-583390102)) * (-865)) - 419957912))))) - 1;
                         int i437 = i436 << 13;
                         int i438 = ((~i436) & i437) | ((~i437) & i436);
@@ -1968,7 +1968,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         return objArr74;
                     }
                     Object[] objArr75 = {null, null, new int[]{i ^ 90}, new int[]{i}, new int[1]};
-                    int i442 = (((~((~((int) Runtime.getRuntime().freeMemory())) | 406371180)) | (-217986190)) * 783) + (((~((-80086146) | r1)) * (-783)) - 491147701);
+                    int i442 = (((~((~((int) Runtime.getRuntime().freeMemory())) | 406371180)) | (-217986190)) * 783) + (((~((-80086146) | 0)) * (-783)) - 491147701);
                     int i443 = -(-((i442 ^ 16) + ((i442 & 16) << 1)));
                     int i444 = (i3 & i443) + (i443 | i3);
                     int i445 = i444 << 13;
@@ -2072,7 +2072,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                 String str162 = (String) defpackage.a.h(str6, str7, invoke);
                                                 ((int[]) objArr[3])[0] = i;
                                                 ((int[]) objArr[2])[0] = i2582;
-                                                int i2592 = (((~((-1022632792) | i)) | 347349845 | (~((-398275422) | i))) * 407) + (((~(1022632791 | i)) | (~(398275421 | i4)) | 347349845) * 407) + ((((-1073558368) | r1) * (-814)) - 1759385883);
+                                                int i2592 = (((~((-1022632792) | i)) | 347349845 | (~((-398275422) | i))) * 407) + (((~(1022632791 | i)) | (~(398275421 | i4)) | 347349845) * 407) + ((((-1073558368) | 0) * (-814)) - 1759385883);
                                                 int i2602 = (i3 - (~(-(-(((i2592 | 16) << 1) - (i2592 ^ 16)))))) - 1;
                                                 int i2612 = i2602 << 13;
                                                 int i2622 = ((~i2602) & i2612) | ((~i2612) & i2602);
@@ -2239,10 +2239,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     }
 
     public class PngjUnsupportedException implements Runnable {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static boolean PngjBadCrcException;
@@ -2270,7 +2270,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i4 = b2 + 4;
             byte[] bArr2 = new byte[i3 + 1];
             if (bArr == null) {
-                byte b4 = r8;
+                byte b4 = 0;
                 i = 0;
                 int i5 = i4;
                 int i6 = i5;
@@ -2294,7 +2294,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
             } else {
                 i = 0;
-                i2 = r8;
+                i2 = 0;
                 bArr2[i] = (byte) i2;
                 if (i == i3) {
                 }
@@ -2320,30 +2320,30 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
         /* JADX WARN: Code restructure failed: missing block: B:182:0x1e72, code lost:
         
-            r4 = 56159 - (~(r3 * (-622)));
-            r0 = ~r3;
-            r5 = (r0 ^ 90) | (r0 & 90);
-            r4 = (r4 - (~((~((r5 & r76) | (r5 ^ r76))) * 623))) - 1;
-            r3 = ((~((r3 & (-91)) | ((-91) ^ r3))) | r9) * (-623);
-            r5 = (r4 ^ r3) + ((r3 & r4) << 1);
-            r3 = ~((r0 ^ 90) | (r0 & 90));
-            r0 = ~((r0 & r76) | (r0 ^ r76));
-            r0 = (r0 & r3) | (r3 ^ r0);
-            r3 = ~((r76 ^ 90) | (r76 & 90));
-            r0 = ((r0 & r3) | (r0 ^ r3)) * 623;
-            r0 = (r0 | r5) + (r5 & r0);
+            0 = 56159 - (~(0 * (-622)));
+            0 = ~0;
+            0 = (0 ^ 90) | (0 & 90);
+            0 = (0 - (~((~((0 & 0) | (0 ^ 0))) * 623))) - 1;
+            0 = ((~((0 & (-91)) | ((-91) ^ 0))) | 0) * (-623);
+            0 = (0 ^ 0) + ((0 & 0) << 1);
+            0 = ~((0 ^ 90) | (0 & 90));
+            0 = ~((0 & 0) | (0 ^ 0));
+            0 = (0 & 0) | (0 ^ 0);
+            0 = ~((0 ^ 90) | (0 & 90));
+            0 = ((0 & 0) | (0 ^ 0)) * 623;
+            0 = (0 | 0) + (0 & 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:211:0x1fb0, code lost:
         
-            if (r0 == false) goto L289;
+            if (0 == false) goto L289;
          */
         /* JADX WARN: Code restructure failed: missing block: B:449:0x295c, code lost:
         
-            if (r8 == null) goto L413;
+            if (0 == null) goto L413;
          */
         /* JADX WARN: Code restructure failed: missing block: B:45:0x04f3, code lost:
         
-            if (((((int) (r3 >> 32)) & (((r6 | (-1632474423)) * 496) + ((((~((~r6) | (-1091048727))) | r14) * (-496)) + ((r14 * 992) + 1537498186)))) | (((int) r3) & ((((~(((int) android.os.Process.getElapsedCpuTime()) | (-134228002))) | 558891400) * 366) + ((((~((-1216538744) | r4)) | 1641202142) * (-366)) - 448486071)))) != 477111747) goto L50;
+            if (((((int) (0 >> 32)) & (((0 | (-1632474423)) * 496) + ((((~((~0) | (-1091048727))) | 0) * (-496)) + ((0 * 992) + 1537498186)))) | (((int) 0) & ((((~(((int) android.os.Process.getElapsedCpuTime()) | (-134228002))) | 558891400) * 366) + ((((~((-1216538744) | 0)) | 1641202142) * (-366)) - 448486071)))) != 477111747) goto L50;
          */
         /* JADX WARN: Code restructure failed: missing block: B:47:0x07f9, code lost:
         
@@ -2351,124 +2351,124 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
          */
         /* JADX WARN: Code restructure failed: missing block: B:48:0x07fb, code lost:
         
-            r0 = com.identy.FingerActivity.PngjUnsupportedException.PngjPrematureEnding;
-            com.identy.FingerActivity.PngjUnsupportedException.PngjOutputException = ((r0 & 29) + (r0 | 29)) % 128;
-            r4 = new java.lang.Object[1];
-            c("オ\uf484ゅ냭ꬅ셐⍩ഗ₵ꃑ㌣ᵭႾ郇̑ⶸQ聼ᎀ㶀瀏瀪推췓怽怙牯\udc28凯円䉏\uec77", android.view.Gravity.getAbsoluteGravity(0, 0), r4);
+            0 = com.identy.FingerActivity.PngjUnsupportedException.PngjPrematureEnding;
+            com.identy.FingerActivity.PngjUnsupportedException.PngjOutputException = ((0 & 29) + (0 | 29)) % 128;
+            0 = new java.lang.Object[1];
+            c("オ\uf484ゅ냭ꬅ셐⍩ഗ₵ꃑ㌣ᵭႾ郇̑ⶸQ聼ᎀ㶀瀏瀪推췓怽怙牯\udc28凯円䉏\uec77", android.view.Gravity.getAbsoluteGravity(0, 0), 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:49:0x0817, code lost:
         
-            r0 = new java.lang.Object[]{(java.lang.String) r4[0]};
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
+            0 = new java.lang.Object[]{(java.lang.String) $$a[0]};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
          */
         /* JADX WARN: Code restructure failed: missing block: B:50:0x0822, code lost:
         
-            if (r3 != null) goto L78;
+            if (0 != null) goto L78;
          */
         /* JADX WARN: Code restructure failed: missing block: B:51:0x0824, code lost:
         
-            r49 = (android.view.ViewConfiguration.getKeyRepeatDelay() >> 16) + 28;
-            r4 = 1446 - android.text.TextUtils.indexOf((java.lang.CharSequence) com.karumi.dexter.BuildConfig.FLAVOR, '0', 0, 0);
-            r5 = (byte) (com.identy.FingerActivity.PngjUnsupportedException.$$b & 3);
-            r10 = r5;
-            r6 = new java.lang.Object[1];
-            a(r5, r10, (byte) (r10 | 10), r6);
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (android.text.AndroidCharacter.getMirror('0') - '0'), r49, r4, -1614962923, false, (java.lang.String) r6[0], new java.lang.Class[]{r11});
+            0 = (android.view.ViewConfiguration.getKeyRepeatDelay() >> 16) + 28;
+            0 = 1446 - android.text.TextUtils.indexOf((java.lang.CharSequence) com.karumi.dexter.BuildConfig.FLAVOR, '0', 0, 0);
+            0 = (byte) (com.identy.FingerActivity.PngjUnsupportedException.$$b & 3);
+            0 = 0;
+            0 = new java.lang.Object[1];
+            a(0, 0, (byte) (0 | 10), 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (android.text.AndroidCharacter.getMirror('0') - '0'), 0, 0, -1614962923, false, (java.lang.String) $$a[0], new java.lang.Class[]{0});
          */
         /* JADX WARN: Code restructure failed: missing block: B:52:0x0864, code lost:
         
-            r3 = ((java.lang.Long) ((java.lang.reflect.Method) r3).invoke(null, r0)).longValue();
+            0 = ((java.lang.Long) ((java.lang.reflect.Method) 0).invoke(null, 0)).longValue();
          */
         /* JADX WARN: Code restructure failed: missing block: B:53:0x0871, code lost:
         
-            r5 = -791688681;
-            r14 = ((-328) * (r5 | ((r26 | r3) ^ r8))) + (((-163) * r3) + (165 * r5));
-            r3 = 164;
-            r48 = r3 ^ r8;
-            r3 = ((r3 * ((((r26 | r5) | r3) ^ r8) | ((((r5 ^ r8) | r48) ^ r8) | ((r48 | r7) ^ r8)))) + (((r5 | r7) * r3) + r14)) + 1262176998;
-            r5 = (int) android.os.SystemClock.elapsedRealtime();
-            r0 = ((int) (r3 >> 32)) & defpackage.a.c(~((~r5) | (-1447336150)), -948, (((~((-2000985302) | r5)) | 563758890) * (-948)) + 1863230890, -873386932);
-            r3 = ((int) r3) & ((((-1243907114) | r76) * 465) + ((((-1340533866) | (~(96692544 | r76))) * 930) + ((((~((-1340533866) | r76)) | 96692544) * (-465)) + 1731113594)));
+            0 = -791688681;
+            0 = ((-328) * (0 | ((0 | 0) ^ 0))) + (((-163) * 0) + (165 * 0));
+            0 = 164;
+            0 = 0 ^ 0;
+            0 = ((0 * ((((0 | 0) | 0) ^ 0) | ((((0 ^ 0) | 0) ^ 0) | ((0 | 0) ^ 0)))) + (((0 | 0) * 0) + 0)) + 1262176998;
+            0 = (int) android.os.SystemClock.elapsedRealtime();
+            0 = ((int) (0 >> 32)) & defpackage.a.c(~((~0) | (-1447336150)), -948, (((~((-2000985302) | 0)) | 563758890) * (-948)) + 1863230890, -873386932);
+            0 = ((int) 0) & ((((-1243907114) | 0) * 465) + ((((-1340533866) | (~(96692544 | 0))) * 930) + ((((~((-1340533866) | 0)) | 96692544) * (-465)) + 1731113594)));
          */
         /* JADX WARN: Code restructure failed: missing block: B:54:0x08fe, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != 1) goto L82;
+            if (((0 & 0) | (0 ^ 0)) != 1) goto L82;
          */
         /* JADX WARN: Code restructure failed: missing block: B:55:0x0900, code lost:
         
             com.identy.FingerActivity.PngjUnsupportedException.PngjPrematureEnding = (com.identy.FingerActivity.PngjUnsupportedException.PngjOutputException + 87) % 128;
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:561:0x1394, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) == 477111747) goto L150;
+            if (((0 & 0) | (0 ^ 0)) == 477111747) goto L150;
          */
         /* JADX WARN: Code restructure failed: missing block: B:568:0x1192, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != 477111747) goto L135;
+            if (((0 & 0) | (0 ^ 0)) != 477111747) goto L135;
          */
         /* JADX WARN: Code restructure failed: missing block: B:56:0x0999, code lost:
         
-            if (r0 == false) goto L93;
+            if (0 == false) goto L93;
          */
         /* JADX WARN: Code restructure failed: missing block: B:575:0x090b, code lost:
         
-            r0 = false;
+            0 = false;
          */
         /* JADX WARN: Code restructure failed: missing block: B:576:0x090e, code lost:
         
-            r0 = -android.widget.ExpandableListView.getPackedPositionGroup(0);
-            r3 = (r0 & 127) + (r0 | 127);
-            r0 = new java.lang.Object[1];
-            b(null, r3, null, "\u0088\u008a\u0094\u0085\u0089\u0089\u008f\u0094\u0088\u0086\u0083\u0082\u0081", r0);
+            0 = -android.widget.ExpandableListView.getPackedPositionGroup(0);
+            0 = (0 & 127) + (0 | 127);
+            0 = new java.lang.Object[1];
+            b(null, 0, null, "\u0088\u008a\u0094\u0085\u0089\u0089\u008f\u0094\u0088\u0086\u0083\u0082\u0081", 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:577:0x0927, code lost:
         
-            r0 = new java.lang.Object[]{(java.lang.String) r0[0]};
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(547370249);
+            0 = new java.lang.Object[]{(java.lang.String) $$a[0]};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(547370249);
          */
         /* JADX WARN: Code restructure failed: missing block: B:578:0x092f, code lost:
         
-            if (r3 != null) goto L87;
+            if (0 != null) goto L87;
          */
         /* JADX WARN: Code restructure failed: missing block: B:579:0x0931, code lost:
         
-            r3 = (char) ((android.view.ViewConfiguration.getEdgeSlop() >> 16) + 8752);
-            r49 = (android.view.ViewConfiguration.getLongPressTimeout() >> 16) + 24;
-            r4 = 336 - android.view.View.MeasureSpec.makeMeasureSpec(0, 0);
-            r5 = (byte) 0;
-            r10 = (byte) (r5 + 1);
-            r14 = new java.lang.Object[1];
-            a(r5, r10, (byte) (r10 | 14), r14);
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r3, r49, r4, -598779726, false, (java.lang.String) r14[0], new java.lang.Class[]{r11});
+            0 = (char) ((android.view.ViewConfiguration.getEdgeSlop() >> 16) + 8752);
+            0 = (android.view.ViewConfiguration.getLongPressTimeout() >> 16) + 24;
+            0 = 336 - android.view.View.MeasureSpec.makeMeasureSpec(0, 0);
+            0 = (byte) 0;
+            0 = (byte) (0 + 1);
+            0 = new java.lang.Object[1];
+            a(0, 0, (byte) (0 | 14), 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -598779726, false, (java.lang.String) $$a[0], new java.lang.Class[]{0});
          */
         /* JADX WARN: Code restructure failed: missing block: B:57:0x099b, code lost:
         
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:580:0x0971, code lost:
         
-            r0 = ((java.lang.reflect.Method) r3).invoke(null, r0);
+            0 = ((java.lang.reflect.Method) 0).invoke(null, 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:581:0x0978, code lost:
         
-            r3 = -(-(android.view.ViewConfiguration.getZoomControlsTimeout() > 0 ? 1 : (android.view.ViewConfiguration.getZoomControlsTimeout() == 0 ? 0 : -1)));
-            r4 = (r3 ^ 126) + ((r3 & 126) << 1);
-            r3 = new java.lang.Object[1];
-            b(null, r4, null, "\u0095", r3);
-            r0 = r0.equals((java.lang.String) r3[0]);
+            0 = -(-(android.view.ViewConfiguration.getZoomControlsTimeout() > 0 ? 1 : (android.view.ViewConfiguration.getZoomControlsTimeout() == 0 ? 0 : -1)));
+            0 = (0 ^ 126) + ((0 & 126) << 1);
+            0 = new java.lang.Object[1];
+            b(null, 0, null, "\u0095", 0);
+            0 = 0.equals((java.lang.String) $$a[0]);
          */
         /* JADX WARN: Code restructure failed: missing block: B:588:0x05eb, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != 477111747) goto L57;
+            if (((0 & 0) | (0 ^ 0)) != 477111747) goto L57;
          */
         /* JADX WARN: Code restructure failed: missing block: B:595:0x06fc, code lost:
         
-            if (((((int) (r3 >> 32)) & ((((~(168872078 | r9)) | 49286) * 564) + (((~(1606147775 | r76)) * 1128) + (((((~((-1606098490) | r9)) | 168872078) | (~(1606098489 | r76))) * (-564)) + 1793246794)))) | (((int) r3) & ((((~((-784431973) | r9)) | 2073308913) * 217) + ((((~((-2073308914) | r76)) | 713042528) * 217) + ((((~((-2073308914) | r9)) | (~((-784431973) | r76))) * 217) - 2028175873))))) != (-1032769152)) goto L64;
+            if (((((int) (0 >> 32)) & ((((~(168872078 | 0)) | 49286) * 564) + (((~(1606147775 | 0)) * 1128) + (((((~((-1606098490) | 0)) | 168872078) | (~(1606098489 | 0))) * (-564)) + 1793246794)))) | (((int) 0) & ((((~((-784431973) | 0)) | 2073308913) * 217) + ((((~((-2073308914) | 0)) | 713042528) * 217) + ((((~((-2073308914) | 0)) | (~((-784431973) | 0))) * 217) - 2028175873))))) != (-1032769152)) goto L64;
          */
         /* JADX WARN: Code restructure failed: missing block: B:603:0x07f3, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) == 542074309) goto L72;
+            if (((0 & 0) | (0 ^ 0)) == 542074309) goto L72;
          */
         /* JADX WARN: Removed duplicated region for block: B:123:0x1580  */
         /* JADX WARN: Removed duplicated region for block: B:125:0x1600  */
@@ -2557,7 +2557,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 int i19 = ((int) (j14 >> 32)) & (((myPid | 1413846276) * 397) + ((((~(i17 | 16184407)) | ((~((-1421042004) | i17)) | 1409351936)) * (-397)) - 347026570));
                 int i20 = ~i;
                 if ((i19 | (((int) j14) & ((((~((-1779411158) | i20)) | 2120940542) * 494) + ((((-327682) | i20) * 494) - 1209833441)))) != 0) {
-                    Object[] objArr4 = {new int[]{r6}, new int[1], null, new int[]{i}};
+                    Object[] objArr4 = {new int[]{0}, new int[1], null, new int[]{i}};
                     int i21 = (~(i & 271)) & (i | 271);
                     int i22 = ~defpackage.a.a();
                     int i23 = -(-defpackage.a.c((~(i22 | (-28985661))) | 1050916, 933, (((~((-1005580314) | i22)) | (-28985661)) * (-933)) + 1664310470, 1410900250));
@@ -2767,7 +2767,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 boolean z4 = false;
                 if (z4) {
                     Object[] objArr26 = {new int[]{(i & (-261)) | (i20 & 260)}, new int[1], null, new int[]{i}};
-                    int i47 = (((~((~defpackage.a.a()) | (-73985))) | 574625809) * 241) + ((((~((-230007075) | r1)) | 229933090) * (-241)) - 432000682);
+                    int i47 = (((~((~defpackage.a.a()) | (-73985))) | 574625809) * 241) + ((((~((-230007075) | 0)) | 229933090) * (-241)) - 432000682);
                     int i48 = (i47 ^ 16) + ((i47 & 16) << 1);
                     int PngjBadCrcException2 = IdentySdk.valueOf.PngjBadCrcException();
                     int i49 = ((i48 * (-519)) - (~(-(-(521 * i2))))) - 1;
@@ -3074,8 +3074,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             long j53 = (j48 ^ j9) | j13;
                             long j54 = (369 * ((((longValue8 ^ j9) | j48) ^ j9) | ((j48 | j12) ^ j9) | ((j53 | longValue8) ^ j9))) + (j51 * (longValue8 | (j53 ^ j9))) + j52 + 790312057;
                             int myUid = Process.myUid();
-                            int i151 = ((int) (j54 >> 32)) & (((myUid | (-1092627610)) * 220) + (((~((~myUid) | (-1765109178))) | (-1092631708)) * (-440)) + ((((~((-1092627610) | r6)) | (-1765113276)) * 220) - 941585550));
-                            int i152 = ((int) j54) & ((((~((-308222895) | i20)) | (-1398750208)) * 970) + (((1090527313 | r4) * (-970)) - 609651393));
+                            int i151 = ((int) (j54 >> 32)) & (((myUid | (-1092627610)) * 220) + (((~((~myUid) | (-1765109178))) | (-1092631708)) * (-440)) + ((((~((-1092627610) | 0)) | (-1765113276)) * 220) - 941585550));
+                            int i152 = ((int) j54) & ((((~((-308222895) | i20)) | (-1398750208)) * 970) + (((1090527313 | 0) * (-970)) - 609651393));
                         }
                         if (obj3 != null) {
                             int i153 = PngjPrematureEnding;
@@ -3162,7 +3162,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         int i182 = ~(maxMemory2 | 855456631);
                                         int i183 = ((int) (j67 >> 32)) & (((i182 | (~(i180 | (-273686849)))) * 502) + ((i181 | i182) * (-502)) + 1427879340);
                                         int i184 = ~defpackage.a.b(2011881280);
-                                        int i185 = ((int) j67) & ((((~(1993610004 | i184)) | 1163232341) * 764) + (((~(i184 | 864130881)) | 1146355732) * (-1528)) + (((864130881 | r6) * 764) - 574632435));
+                                        int i185 = ((int) j67) & ((((~(1993610004 | i184)) | 1163232341) * 764) + (((~(i184 | 864130881)) | 1146355732) * (-1528)) + (((864130881 | 0) * 764) - 574632435));
                                         if (((i183 & i185) | (i183 ^ i185)) != 0) {
                                             i16 = 1;
                                         } else {
@@ -3248,7 +3248,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             long j82 = ((j80 * (j12 | j81)) + ((((((j78 | j12) ^ j9) | j81) | ((j13 | j77) ^ j9)) * j80) + j79)) - 54808620;
                             int i205 = ((int) (j82 >> 32)) & ((((~(751054296 | i20)) | 2228738) * 560) + ((~((-67110921) | i)) * (-560)) + (((~(686172114 | i20)) * (-560)) - 883457334));
                             int startUptimeMillis = (int) Process.getStartUptimeMillis();
-                            int c7 = ((int) j82) & defpackage.a.c((~(startUptimeMillis | (-271198573))) | (~((~startUptimeMillis) | 1708424982)) | 1708414482, -370, (((~((-271198573) | r5)) | (~(1708424982 | startUptimeMillis))) * (-370)) - 635053777, 753165828);
+                            int c7 = ((int) j82) & defpackage.a.c((~(startUptimeMillis | (-271198573))) | (~((~startUptimeMillis) | 1708424982)) | 1708414482, -370, (((~((-271198573) | 0)) | (~(1708424982 | startUptimeMillis))) * (-370)) - 635053777, 753165828);
                             long j83 = (i205 & c7) | (i205 ^ c7);
                             Object[] objArr81 = new Object[1];
                             c("\ue11d됖\ue132\uf06aྤ㟇蟎ﮌ\uf14e\ue005鞟\uebf6섑퀜\ua7f3\udb30퇹샫띸쬆ꆮ", (-TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0)) - 1, objArr81);
@@ -3276,7 +3276,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             long j89 = j84 ^ j9;
                             long j90 = ((j88 * (((j89 | longValue13) ^ j9) | j86)) + ((((((j89 | j85) | j12) ^ j9) | (((j89 | j13) | longValue13) ^ j9)) * j88) + j87)) - 971990485;
                             int myPid4 = Process.myPid();
-                            long j91 = (((int) (j90 >> 32)) & ((((~(myPid4 | 1630062994)) | 1227677890) * 301) + (((~(1227677890 | myPid4)) | (~((~myPid4) | (-1630062995)))) * (-301)) + (((~((-1093189763) | myPid4)) * (-301)) - 1998908870))) | (((int) j90) & ((((~((~((int) Runtime.getRuntime().totalMemory())) | (-382716984))) | (-2058743255)) * 262) + ((((~((-382716984) | r4)) | (-2058743255)) * 262) - 506880027)));
+                            long j91 = (((int) (j90 >> 32)) & ((((~(myPid4 | 1630062994)) | 1227677890) * 301) + (((~(1227677890 | myPid4)) | (~((~myPid4) | (-1630062995)))) * (-301)) + (((~((-1093189763) | myPid4)) * (-301)) - 1998908870))) | (((int) j90) & ((((~((~((int) Runtime.getRuntime().totalMemory())) | (-382716984))) | (-2058743255)) * 262) + ((((~((-382716984) | 0)) | (-2058743255)) * 262) - 506880027)));
                             if (((j > 0L ? 1 : (j == 0L ? 0 : -1)) > 0) && j91 > 0 && j91 - 3 < j) {
                                 c2 = c;
                                 c3 = c2;
@@ -3287,7 +3287,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             if (c2 == c3) {
                                 Object[] objArr84 = {new int[]{i ^ 247}, new int[1], null, new int[]{i}};
                                 int myTid5 = Process.myTid();
-                                int i206 = (i2 - (~(-(-defpackage.a.A((~(myTid5 | 530240592)) | ((~((~myTid5) | (-530240593))) | (~((-504325382) | myTid5))), 959, ((((~((-504325382) | r3)) | (~((-530240593) | myTid5))) | (~(r3 | 530240592))) * 959) - 1254784748, -16))))) - 1;
+                                int i206 = (i2 - (~(-(-defpackage.a.A((~(myTid5 | 530240592)) | ((~((~myTid5) | (-530240593))) | (~((-504325382) | myTid5))), 959, ((((~((-504325382) | 0)) | (~((-530240593) | myTid5))) | (~(0 | 530240592))) * 959) - 1254784748, -16))))) - 1;
                                 int i207 = i206 ^ (i206 << 13);
                                 int i208 = i207 >>> 17;
                                 int i209 = (i207 | i208) & (~(i207 & i208));
@@ -3511,7 +3511,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                     }
                                     if (i8 != 0) {
                                         Object[] objArr103 = {new int[]{(i8 | i) & (~(i & i8))}, new int[1], null, new int[]{i}};
-                                        int c9 = defpackage.a.c((~(((int) Runtime.getRuntime().freeMemory()) | (-25167874))) | 1008021636, 446, (((~((~r0) | (-25856106))) | 688232) * 446) - 820357313, 306951472);
+                                        int c9 = defpackage.a.c((~(((int) Runtime.getRuntime().freeMemory()) | (-25167874))) | 1008021636, 446, (((~((~0) | (-25856106))) | 688232) * 446) - 820357313, 306951472);
                                         int i263 = (c9 & 16) + (c9 | 16);
                                         int i264 = (i2 & i263) + (i263 | i2);
                                         int i265 = i264 << 13;
@@ -3787,7 +3787,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                     long j132 = ((j131 * ((j127 | longValue19) ^ j9)) + (((((j129 | elapsedRealtime2) ^ j9) | ((j129 | j127) ^ j9)) * j131) + j130)) - 566302476;
                                                                     int i331 = ((int) (j132 >> 32)) & (((~((-168893597) | i)) * 113) + (((~((-1268332815) | i)) | 1099440386 | (~(i20 | (-1169)))) * (-113)) + ((((~((-168893597) | i20)) | 1268332814) * 226) - 2055567968));
                                                                     int i332 = ~((int) Runtime.getRuntime().maxMemory());
-                                                                    int i333 = ((int) j132) & ((((~((-540817881) | i332)) | 1978044290) * 68) + ((~(1979629530 | i332)) * (-68)) + ((((~(r4 | 540817880)) | ((~((-1585241) | i332)) | 1438811650)) * (-68)) - 921162199));
+                                                                    int i333 = ((int) j132) & ((((~((-540817881) | i332)) | 1978044290) * 68) + ((~(1979629530 | i332)) * (-68)) + ((((~(0 | 540817880)) | ((~((-1585241) | i332)) | 1438811650)) * (-68)) - 921162199));
                                                                     if (((i331 & i333) | (i331 ^ i333)) != 0) {
                                                                         i10 = ((i15 | 110) << 1) - (i15 ^ 110);
                                                                         break;
@@ -3799,7 +3799,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         }
                                                         i10 = 0;
                                                         if (i10 != 0) {
-                                                            Object[] objArr136 = {new int[]{(i10 | i) & (~(i & i10))}, new int[]{(r0 | r1) & (~(r0 & r1))}, null, new int[]{i}};
+                                                            Object[] objArr136 = {new int[]{(i10 | i) & (~(i & i10))}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                                                             int i334 = (((~((-838155228) | i20)) | 809566849) * (-964)) + (((~((-838155228) | i)) | (-196410747)) * (-964)) + 1200954069;
                                                             int i335 = ~i334;
                                                             int i336 = ~(((-17) ^ i335) | ((-17) & i335) | i7);
@@ -3849,7 +3849,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         long j138 = (j136 | j133) ^ j9;
                                                         long j139 = ((j135 * (j138 | ((j133 | elapsedRealtime3) ^ j9))) + (((-464) * ((elapsedRealtime3 | (j133 ^ j9)) | j136)) + ((((((j136 | j137) ^ j9) | j138) | ((j137 | j133) ^ j9)) * j135) + j134))) - 1918239270;
                                                         int i356 = ((int) (j139 >> 32)) & ((((~((-669274289) | i)) | 633602224 | (~(803624186 | i20))) * 521) + ((767952122 | i) * 521) + (((~(i20 | 767952122)) | 669274288) * (-1042)) + 1565682448);
-                                                        int i357 = ((int) j139) & ((((~((~defpackage.a.a()) | 1266097029)) | (-1591643857)) * 783) + (((~((-344491089) | r4)) * (-783)) - 720602220));
+                                                        int i357 = ((int) j139) & ((((~((~defpackage.a.a()) | 1266097029)) | (-1591643857)) * 783) + (((~((-344491089) | 0)) * (-783)) - 720602220));
                                                         if (((i356 & i357) | (i356 ^ i357)) != 0) {
                                                             i11 = 240;
                                                         } else {
@@ -3873,7 +3873,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         if ((i11 != 0 ? '[' : 'E') == '[') {
                                                             Object[] objArr140 = {new int[]{(i11 | i) & (~(i & i11))}, new int[1], null, new int[]{i}};
                                                             int elapsedRealtime4 = (int) SystemClock.elapsedRealtime();
-                                                            int i371 = (((~(elapsedRealtime4 | (-812148572))) | (~((~elapsedRealtime4) | 222417402))) * 979) + ((elapsedRealtime4 | 222417402) * (-979)) + (((~((-812148572) | r1)) * 979) - 786630814);
+                                                            int i371 = (((~(elapsedRealtime4 | (-812148572))) | (~((~elapsedRealtime4) | 222417402))) * 979) + ((elapsedRealtime4 | 222417402) * (-979)) + (((~((-812148572) | 0)) * 979) - 786630814);
                                                             int i372 = (i371 & 16) + (i371 | 16) + i2;
                                                             int i373 = i372 << 13;
                                                             int i374 = (i373 | i372) & (~(i372 & i373));
@@ -3951,7 +3951,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         if (i12 != 0) {
                                                             Object[] objArr142 = {new int[]{(i & (-243)) | (i20 & 242)}, new int[1], null, new int[]{i}};
                                                             int maxMemory4 = (int) Runtime.getRuntime().maxMemory();
-                                                            int i392 = (((~(maxMemory4 | (-392434495))) | 105120278 | (~((~maxMemory4) | 929445695))) * 164) + ((642131479 | maxMemory4) * 164) + ((((~(392434494 | r3)) | 642131479) * (-328)) - 964801447);
+                                                            int i392 = (((~(maxMemory4 | (-392434495))) | 105120278 | (~((~maxMemory4) | 929445695))) * 164) + ((642131479 | maxMemory4) * 164) + ((((~(392434494 | 0)) | 642131479) * (-328)) - 964801447);
                                                             int i393 = (i392 & 16) + (i392 | 16);
                                                             int i394 = ((i2 | i393) << 1) - (i2 ^ i393);
                                                             int i395 = i394 ^ (i394 << 13);
@@ -3984,10 +3984,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         int myUid6 = Process.myUid();
                                                         int i399 = ((int) j146) & ((((~myUid6) | (-30693389)) * 756) + (((~((-30693389) | myUid6)) | (-1406533022)) * (-756)) + 2105063969);
                                                         if (((i398 & i399) | (i398 ^ i399)) != 0) {
-                                                            objArr = new Object[]{new int[]{r5}, new int[1], null, new int[]{i}};
+                                                            objArr = new Object[]{new int[]{0}, new int[1], null, new int[]{i}};
                                                             int i400 = (~(i & 264)) & (i | 264);
                                                             int startElapsedRealtime4 = (int) Process.getStartElapsedRealtime();
-                                                            int i401 = (i2 - (~defpackage.a.A((~((~startElapsedRealtime4) | 715429610)) | 285286401, 560, ((~(startElapsedRealtime4 | (-681579649))) * (-560)) + (((~(319136363 | r4)) * (-560)) - 379515099), -16))) - 1;
+                                                            int i401 = (i2 - (~defpackage.a.A((~((~startElapsedRealtime4) | 715429610)) | 285286401, 560, ((~(startElapsedRealtime4 | (-681579649))) * (-560)) + (((~(319136363 | 0)) * (-560)) - 379515099), -16))) - 1;
                                                             int i402 = i401 ^ (i401 << 13);
                                                             int i403 = i402 >>> 17;
                                                             int i404 = (i402 | i403) & (~(i402 & i403));
@@ -4073,12 +4073,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                     int freeMemory = (int) Runtime.getRuntime().freeMemory();
                                                                     int i412 = ((int) (j167 >> 32)) & ((((~((~freeMemory) | (-1202522715))) | 1655218170) * 168) + (((~((-1202522715) | freeMemory)) | 1118308954) * (-168)) + (((~(1655218170 | freeMemory)) | (-1739431931)) * 336) + 501358106);
                                                                     int i413 = (~((-1438102715) | i)) | (~(1419638171 | i20));
-                                                                    int i414 = ((int) j167) & (((540929 | (~(1438102714 | i20))) * 516) + (((~((-1419097243) | i)) | (~((-540930) | i20))) * 516) + (((i413 | r5) * (-516)) - 499456815));
+                                                                    int i414 = ((int) j167) & (((540929 | (~(1438102714 | i20))) * 516) + (((~((-1419097243) | i)) | (~((-540930) | i20))) * 516) + (((i413 | 0) * (-516)) - 499456815));
                                                                     if (((i412 & i414) | (i412 ^ i414)) != 0) {
                                                                         PngjOutputException = (PngjPrematureEnding + 45) % 128;
-                                                                        objArr = new Object[]{new int[]{r5}, new int[1], null, new int[]{i}};
+                                                                        objArr = new Object[]{new int[]{0}, new int[1], null, new int[]{i}};
                                                                         int i415 = (~(i & 266)) & (i | 266);
-                                                                        int c13 = defpackage.a.c((~((~((int) Process.getStartElapsedRealtime())) | 392189072)) | 642376901, 56, (((~(r3 | 642376901)) | 392189072) * 56) - 543474291, i5);
+                                                                        int c13 = defpackage.a.c((~((~((int) Process.getStartElapsedRealtime())) | 392189072)) | 642376901, 56, (((~(0 | 642376901)) | 392189072) * 56) - 543474291, i5);
                                                                         int PngjBadCrcException12 = IdentySdk.valueOf.PngjBadCrcException();
                                                                         int i416 = (i2 * 370) + (c13 * 370);
                                                                         int i417 = c13 | i2;
@@ -4121,7 +4121,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                         long j173 = ((-658) * (j170 | j171 | j172)) + j169;
                                                                         long j174 = 658;
                                                                         long j175 = (j174 * (j171 | j172)) + (j174 * j171) + j173 + 272671126;
-                                                                        int i435 = ((int) (j175 >> 32)) & ((((~(553275031 | i)) | (-1996418776) | (~(1990501442 | i))) * 407) + (((~((-553275032) | i)) | (~((-1990501443) | i20)) | (-1996418776)) * 407) + (((547357698 | r3) * (-814)) - 783195672));
+                                                                        int i435 = ((int) (j175 >> 32)) & ((((~(553275031 | i)) | (-1996418776) | (~(1990501442 | i))) * 407) + (((~((-553275032) | i)) | (~((-1990501443) | i20)) | (-1996418776)) * 407) + (((547357698 | 0) * (-814)) - 783195672));
                                                                         int i436 = ((int) j175) & ((((~((-1387867044) | i20)) | (~(49359366 | i20)) | 1342701985) * 50) + (((~(1392061351 | i)) | (~((-1342701986) | i20))) * 50) + (((-1387867044) | i) * (-50)) + 356866475);
                                                                         if (((i435 & i436) | (i435 ^ i436)) != 0) {
                                                                             objArr = new Object[]{new int[]{i ^ 280}, new int[1], null, new int[]{i}};
@@ -4138,7 +4138,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                             ((int[]) objArr[1])[0] = ((~i444) & i445) | ((~i445) & i444);
                                                                             i14 = 0;
                                                                         } else {
-                                                                            objArr = new Object[]{new int[]{i}, new int[]{((~r3) & r5) | ((~r5) & r3)}, null, new int[]{i}};
+                                                                            objArr = new Object[]{new int[]{i}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{i}};
                                                                             int i446 = -(-((((~((-71839810) | i)) | 939623444) * 366) + (((~((-83391170) | i)) | 951174804) * (-366)) + 967396437));
                                                                             int i447 = (i2 & i446) + (i446 | i2);
                                                                             int i448 = i447 << 13;
@@ -4162,7 +4162,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                 i14 = 0;
                                                             } else {
                                                                 PngjPrematureEnding = (PngjOutputException + 59) % 128;
-                                                                objArr = new Object[]{new int[]{i13}, new int[]{r3}, null, new int[]{i}};
+                                                                objArr = new Object[]{new int[]{i13}, new int[]{0}, null, new int[]{i}};
                                                                 int i459 = (i2 - (~defpackage.a.c((~(1065746611 | i)) | (-1046333423), 70, ((~((-5883725) | i)) * 70) + ((((~((-31180638) | i)) | 25296913) * (-140)) + 510062075), 16))) - 1;
                                                                 int i460 = i459 << 13;
                                                                 int i461 = ((~i459) & i460) | ((~i460) & i459);
@@ -4203,12 +4203,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         int i468 = (~(a3 | 360428416)) | 19005696;
                                                         int i469 = ~(1797654827 | i466);
                                                         int i470 = ((int) (j183 >> 32)) & ((((~(i466 | 360428416)) | (-2139077548) | i469) * 594) + ((i468 | i469) * 594) + i467);
-                                                        int i471 = ((int) j183) & ((((~(1236161861 | i)) | 536936464) * 658) + (((688455765 | r4) * (-658)) - 521774161));
+                                                        int i471 = ((int) j183) & ((((~(1236161861 | i)) | 536936464) * 658) + (((688455765 | 0) * (-658)) - 521774161));
                                                         if (((i470 & i471) | (i470 ^ i471)) == 2) {
-                                                            Object[] objArr150 = {new int[]{r5}, new int[1], null, new int[]{i}};
+                                                            Object[] objArr150 = {new int[]{0}, new int[1], null, new int[]{i}};
                                                             int i472 = (~(i & 270)) & (i | 270);
                                                             int myTid8 = Process.myTid();
-                                                            int i473 = (((~(myTid8 | (-256513344))) | 239076374 | (~((~myTid8) | 795489599))) * 521) + ((778052630 | myTid8) * 521) + ((((~(r3 | 778052630)) | 256513343) * (-1042)) - 104462906);
+                                                            int i473 = (((~(myTid8 | (-256513344))) | 239076374 | (~((~myTid8) | 795489599))) * 521) + ((778052630 | myTid8) * 521) + ((((~(0 | 778052630)) | 256513343) * (-1042)) - 104462906);
                                                             int PngjBadCrcException13 = IdentySdk.valueOf.PngjBadCrcException();
                                                             int i474 = (i473 * (-49)) + 816;
                                                             int i475 = -(-(((PngjBadCrcException13 ^ 16) | (PngjBadCrcException13 & 16)) * (-50)));
@@ -4255,9 +4255,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         int i492 = ~startUptimeMillis2;
                                                         int i493 = ((int) (j190 >> 32)) & ((((~(startUptimeMillis2 | 178810400)) | 16896 | (~((-178810401) | i492))) * 988) + (((~(1616036811 | i492)) | (-1794830316)) * (-1976)) + (((startUptimeMillis2 | 16896) * 988) - 1261828250));
                                                         int elapsedRealtime6 = (int) SystemClock.elapsedRealtime();
-                                                        int i494 = ((int) j190) & ((((~(elapsedRealtime6 | (-167870466))) | (~((~elapsedRealtime6) | 1873666241)) | (-2142235608)) * 168) + ((~((-268569367) | elapsedRealtime6)) * 168) + ((((~((-436439832) | r5)) | 268569366) * 168) - 501357939));
+                                                        int i494 = ((int) j190) & ((((~(elapsedRealtime6 | (-167870466))) | (~((~elapsedRealtime6) | 1873666241)) | (-2142235608)) * 168) + ((~((-268569367) | elapsedRealtime6)) * 168) + ((((~((-436439832) | 0)) | 268569366) * 168) - 501357939));
                                                         if (!(((i493 & i494) | (i493 ^ i494)) == 0)) {
-                                                            Object[] objArr152 = {new int[]{r5}, new int[1], null, new int[]{i}};
+                                                            Object[] objArr152 = {new int[]{0}, new int[1], null, new int[]{i}};
                                                             int i495 = (~(i & 272)) & (i | 272);
                                                             int i496 = ~(Process.myUid() | 313579364);
                                                             int i497 = ((i496 | 45105504) * 196) + ((268473860 | i496) * (-196)) + 1865090789;
@@ -4301,7 +4301,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         int i507 = ~uptimeMillis2;
                                                         int i508 = i505 & ((((~(649545556 | i507)) | 138414081) * 672) + (((~(uptimeMillis2 | (-649545557))) | (~(787680853 | i507))) * (-672)) + i506);
                                                         if (((i504 & i508) | (i504 ^ i508)) != 0) {
-                                                            Object[] objArr156 = {new int[]{r5}, new int[1], null, new int[]{i}};
+                                                            Object[] objArr156 = {new int[]{0}, new int[1], null, new int[]{i}};
                                                             int i509 = (~(i & 275)) & (i | 275);
                                                             int myUid9 = Process.myUid();
                                                             int i510 = (((~((-982233707) | myUid9)) | 34243178 | (~((-52332268) | myUid9))) * (-880)) + 919555461;
@@ -4405,8 +4405,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         if (!((i558 | (i559 & ((((~(myUid10 | (-18891050))) | ((~(i560 | (-1591687319))) | 344524800)) * 168) + (((~((-1247162519) | myUid10)) * 168) + ((((~((-1266053568) | i560)) | 1247162518) * 168) + (-501357939)))))) == 0)) {
                                                             int i561 = PngjOutputException;
                                                             PngjPrematureEnding = ((i561 & 49) + (i561 | 49)) % 128;
-                                                            Object[] objArr162 = {new int[]{(i & (-274)) | (i20 & 273)}, new int[]{(r1 | r2) & (~(r1 & r2))}, null, new int[]{i}};
-                                                            int d2 = defpackage.a.d((~(1012287885 | i20)) | 5392776, 495, (r1 * 495) - 1634857652, 16, i2);
+                                                            Object[] objArr162 = {new int[]{(i & (-274)) | (i20 & 273)}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
+                                                            int d2 = defpackage.a.d((~(1012287885 | i20)) | 5392776, 495, (0 * 495) - 1634857652, 16, i2);
                                                             int i562 = d2 << 13;
                                                             int i563 = (d2 | i562) & (~(d2 & i562));
                                                             int i564 = i563 >>> 17;
@@ -4430,10 +4430,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         long j206 = longValue31 ^ j9;
                                                         long j207 = ((49 * (((longValue31 | j205) ^ j9) | ((j206 | j3) ^ j9))) + (((-49) * ((j206 | (((j205 ^ j9) | j13) ^ j9)) | ((j205 | j3) ^ j9))) + ((98 * (((j206 | j13) ^ j9) | ((j206 | j205) ^ j9))) + (((-97) * longValue31) + (50 * j205))))) - 667577249;
                                                         int i567 = ~defpackage.a.b(1735405557);
-                                                        int i568 = ((int) (j207 >> 32)) & ((((~((-1428493042) | i567)) | (-8733370)) * 68) + ((~((-8405001) | i567)) * (-68)) + ((((~(r3 | 1428493041)) | ((~((-328370) | i567)) | (-1436898042))) * (-68)) - 617150774));
-                                                        int i569 = ((int) j207) & ((((~((~defpackage.a.b(1607931481)) | 517169422)) | 176308486) * 420) + (((~(517169422 | r4)) * 420) - 9553639));
+                                                        int i568 = ((int) (j207 >> 32)) & ((((~((-1428493042) | i567)) | (-8733370)) * 68) + ((~((-8405001) | i567)) * (-68)) + ((((~(0 | 1428493041)) | ((~((-328370) | i567)) | (-1436898042))) * (-68)) - 617150774));
+                                                        int i569 = ((int) j207) & ((((~((~defpackage.a.b(1607931481)) | 517169422)) | 176308486) * 420) + (((~(517169422 | 0)) * 420) - 9553639));
                                                         if (((i568 & i569) | (i568 ^ i569)) != 0) {
-                                                            Object[] objArr164 = {new int[]{i ^ 279}, new int[]{(r1 | r2) & (~(r1 & r2))}, null, new int[]{i}};
+                                                            Object[] objArr164 = {new int[]{i ^ 279}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                                                             int d3 = defpackage.a.d(i | (-28475817), 591, (((~((-28475817) | i20)) | (-1006090158)) * (-591)) - 1209891894, 16, i2);
                                                             int i570 = d3 ^ (d3 << 13);
                                                             int i571 = i570 ^ (i570 >>> 17);
@@ -4453,7 +4453,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                             Object[] objArr167 = new Object[1];
                                                             c("露〽靁瑅풎陖峷娀蝶", ViewConfiguration.getJumpTapTimeout() >> 16, objArr167);
                                                             cls4.getMethod((String) objArr167[0], null).invoke(newInstance, null);
-                                                            Object[] objArr168 = {new int[]{i}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{i}};
+                                                            Object[] objArr168 = {new int[]{i}, new int[]{0 ^ (0 << 5)}, null, new int[]{i}};
                                                             int i573 = (i2 - (~(-(-(((~(i20 | 804069126)) * 301) + (((((~(i | (-230496848))) | 229448198) | (~(805117775 | i20))) * (-301)) + ((((~((-230496848) | i20)) | 804069126) * (-602)) + 412949588))))))) - 1;
                                                             int i574 = i573 << 13;
                                                             int i575 = (i573 | i574) & (~(i573 & i574));
@@ -4837,12 +4837,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     }
 
     public class getData extends BroadcastReceiver {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final byte[] $$d = null;
-        private static final int $$e = 0;
-        private static final int $$f = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  byte[] $$d = null;
+        private static  int $$e = 0;
+        private static  int $$f = 0;
         private static int $10;
         private static int $11;
         private static long PngjBadCrcException;
@@ -5119,23 +5119,23 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
         /* JADX WARN: Code restructure failed: missing block: B:157:0x019c, code lost:
         
-            if ((r0 instanceof android.content.ContextWrapper) != false) goto L24;
+            if ((0 instanceof android.content.ContextWrapper) != false) goto L24;
          */
         /* JADX WARN: Code restructure failed: missing block: B:158:0x01af, code lost:
         
-            r0 = r0.getApplicationContext();
+            0 = 0.getApplicationContext();
          */
         /* JADX WARN: Code restructure failed: missing block: B:160:0x01aa, code lost:
         
-            if (((android.content.ContextWrapper) r0).getBaseContext() == null) goto L27;
+            if (((android.content.ContextWrapper) 0).getBaseContext() == null) goto L27;
          */
         /* JADX WARN: Code restructure failed: missing block: B:161:0x01ad, code lost:
         
-            r0 = null;
+            0 = null;
          */
         /* JADX WARN: Code restructure failed: missing block: B:163:0x01a1, code lost:
         
-            if ((r0 instanceof android.content.ContextWrapper) != false) goto L24;
+            if ((0 instanceof android.content.ContextWrapper) != false) goto L24;
          */
         /* JADX WARN: Removed duplicated region for block: B:117:0x0b7a  */
         /* JADX WARN: Removed duplicated region for block: B:27:0x060a  */
@@ -5275,8 +5275,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
                 Object[] objArr14 = (Object[]) ((Field) PngjBadSignature5).get(null);
                 objArr = new Object[5];
-                objArr[i] = new int[]{r15};
-                objArr[i2] = new int[]{r14};
+                objArr[i] = new int[]{0};
+                objArr[i2] = new int[]{0};
                 objArr[4] = new int[1];
                 int i9 = ((int[]) objArr14[i2])[0];
                 int i10 = ((int[]) objArr14[i])[0];
@@ -5288,7 +5288,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 int i11 = ~((-448287793) | maxMemory);
                 int i12 = ~maxMemory;
                 int i13 = i11 | (~(176069577 | i12));
-                int c3 = defpackage.a.c(4623305 | (~(448287792 | i12)), 516, (((~(maxMemory | (-171446273))) | (~(i12 | (-4623306)))) * 516) + (((i13 | r14) * (-516)) - 644964459), 903914835);
+                int c3 = defpackage.a.c(4623305 | (~(448287792 | i12)), 516, (((~(maxMemory | (-171446273))) | (~(i12 | (-4623306)))) * 516) + (((i13 | 0) * (-516)) - 644964459), 903914835);
                 int i14 = c3 ^ (c3 << 13);
                 int i15 = i14 ^ (i14 >>> 17);
                 ((int[]) objArr[4])[0] = i15 ^ (i15 << 5);
@@ -5316,7 +5316,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             iArr[i4] = i18;
             objArr15[1] = str6;
             objArr15[i4] = str7;
-            int c4 = defpackage.a.c((~((~System.identityHashCode(this)) | 736055358)) | 540720, 449, (((~(736055358 | r3)) | 540720) * 449) - 84834792, i16);
+            int c4 = defpackage.a.c((~((~System.identityHashCode(this)) | 736055358)) | 540720, 449, (((~(736055358 | 0)) | 540720) * 449) - 84834792, i16);
             int i19 = c4 ^ (c4 << 13);
             int i20 = i19 ^ (i19 >>> 17);
             ((int[]) objArr15[i3])[i4] = i20 ^ (i20 << 5);
@@ -5350,9 +5350,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             }
                             Object[] objArr18 = (Object[]) ((Field) PngjBadSignature7).get(null);
                             PngjException$52c725b = new Object[i3];
-                            PngjException$52c725b[0] = new int[]{r14};
+                            PngjException$52c725b[0] = new int[]{0};
                             PngjException$52c725b[1] = new int[1];
-                            PngjException$52c725b[i2] = new int[]{r13};
+                            PngjException$52c725b[i2] = new int[]{0};
                             int i24 = ((int[]) objArr18[i2])[0];
                             int i25 = ((int[]) objArr18[0])[0];
                             PngjException$52c725b[i] = (String[]) objArr18[i];
@@ -5393,7 +5393,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             iArr4[c2] = i33;
                             iArr3[c2] = i34;
                             objArr19[i] = strArr2;
-                            int c7 = defpackage.a.c(~(System.identityHashCode(this) | (-29624931)), 566, (((~((-298061427) | r8)) | 268436496) * (-566)) - 1649199947, i32);
+                            int c7 = defpackage.a.c(~(System.identityHashCode(this) | (-29624931)), 566, (((~((-298061427) | 0)) | 268436496) * (-566)) - 1649199947, i32);
                             int i35 = c7 ^ (c7 << 13);
                             int i36 = i35 ^ (i35 >>> 17);
                             ((int[]) objArr19[1])[0] = i36 ^ (i36 << 5);
@@ -5475,8 +5475,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 Object[] objArr29 = (Object[]) ((Field) PngjBadSignature12).get(null);
                                 objArr2 = new Object[i2];
                                 objArr2[0] = new int[1];
-                                objArr2[1] = new int[]{r10};
-                                objArr2[i] = new int[]{r4};
+                                objArr2[1] = new int[]{0};
+                                objArr2[i] = new int[]{0};
                                 int i38 = ((int[]) objArr29[1])[0];
                                 int i39 = ((int[]) objArr29[i])[0];
                                 int identityHashCode2 = System.identityHashCode(this);
@@ -5795,12 +5795,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     }
 
     public class getPadSub2 extends BroadcastReceiver {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final byte[] $$d = null;
-        private static final int $$e = 0;
-        private static final int $$f = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  byte[] $$d = null;
+        private static  int $$e = 0;
+        private static  int $$f = 0;
         private static int $10;
         private static int $11;
         private static long PngjBadCrcException;
@@ -5825,7 +5825,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i5 = 3 - (s * 2);
             byte[] bArr2 = new byte[i4];
             if (bArr == null) {
-                byte b2 = r9;
+                byte b2 = 0;
                 i3 = 0;
                 int i6 = i5;
                 int i7 = i5 + b2;
@@ -5854,7 +5854,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
             } else {
                 i = 0;
-                i2 = r9;
+                i2 = 0;
                 i3 = i + 1;
                 bArr2[i] = (byte) i2;
                 if (i3 == i4) {
@@ -6269,13 +6269,13 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     }
                     Object[] objArr17 = (Object[]) ((Field) PngjBadSignature6).get(null);
                     valueOf$1eba2e16 = new Object[4];
-                    valueOf$1eba2e16[0] = new int[]{r15};
+                    valueOf$1eba2e16[0] = new int[]{0};
                     valueOf$1eba2e16[1] = new int[1];
-                    valueOf$1eba2e16[3] = new int[]{r14};
+                    valueOf$1eba2e16[3] = new int[]{0};
                     int i8 = ((int[]) objArr17[3])[0];
                     int i9 = ((int[]) objArr17[0])[0];
                     valueOf$1eba2e16[i3] = (String[]) objArr17[i3];
-                    int c3 = defpackage.a.c((~((int) Process.getElapsedCpuTime())) | 931078143, -828, (((~(931078143 | r0)) | 103487830) * (-828)) - 1338267583, -880754250);
+                    int c3 = defpackage.a.c((~((int) Process.getElapsedCpuTime())) | 931078143, -828, (((~(931078143 | 0)) | 103487830) * (-828)) - 1338267583, -880754250);
                     int i10 = c3 ^ (c3 << 13);
                     int i11 = i10 ^ (i10 >>> 17);
                     ((int[]) valueOf$1eba2e16[1])[0] = i11 ^ (i11 << 5);
@@ -6325,9 +6325,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     int i22 = i4;
                     Toast.makeText((Context) null, i13 / (((i13 - 1) * i13) % 2), i22).show();
                     Object[] objArr19 = new Object[4];
-                    objArr19[i22] = new int[]{r14};
+                    objArr19[i22] = new int[]{0};
                     objArr19[1] = new int[1];
-                    objArr19[3] = new int[]{r13};
+                    objArr19[3] = new int[]{0};
                     int i23 = ((int[]) valueOf$1eba2e16[1])[0];
                     int i24 = ((int[]) valueOf$1eba2e16[3])[0];
                     int i25 = ((int[]) valueOf$1eba2e16[0])[0];
@@ -6434,7 +6434,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     ((int[]) objArr2[1])[0] = i31;
                     ((int[]) objArr2[i3])[0] = i32;
                     int identityHashCode3 = System.identityHashCode(this);
-                    int c6 = defpackage.a.c(~((~identityHashCode3) | (-18874769)), 476, ((~((-18874769) | identityHashCode3)) * 952) + (((102130242 | r9) * (-476)) - 1855824102), 401726129);
+                    int c6 = defpackage.a.c(~((~identityHashCode3) | (-18874769)), 476, ((~((-18874769) | identityHashCode3)) * 952) + (((102130242 | 0) * (-476)) - 1855824102), 401726129);
                     int i33 = c6 ^ (c6 << 13);
                     int i34 = i33 ^ (i33 >>> 17);
                     ((int[]) objArr2[0])[0] = i34 ^ (i34 << 5);
@@ -6552,7 +6552,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c10, axisFromString, indexOf7, 1150904546, false, (String) objArr33[0], null);
                 }
                 Object[] objArr34 = (Object[]) ((Field) PngjBadSignature14).get(null);
-                objArr = new Object[]{r0, r9, new int[]{r8}, new int[]{r7}, new int[1]};
+                objArr = new Object[]{0, 0, new int[]{0}, new int[]{0}, new int[1]};
                 int i45 = ((int[]) objArr34[3])[0];
                 int i46 = ((int[]) objArr34[2])[0];
                 String str5 = (String) objArr34[1];
@@ -6567,7 +6567,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             i = ((int[]) objArr[2])[0];
             i2 = ((int[]) objArr[3])[0];
             if (i2 == i) {
-                Object[] objArr35 = {r2, r9, new int[]{r8}, new int[]{r7}, new int[1]};
+                Object[] objArr35 = {0, 0, new int[]{0}, new int[]{0}, new int[1]};
                 int i49 = ((int[]) objArr[4])[0];
                 int i50 = ((int[]) objArr[3])[0];
                 int i51 = ((int[]) objArr[2])[0];
@@ -6588,7 +6588,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i55 = i2 - 1;
             iArr3[i55] = 1;
             Toast.makeText((Context) null, iArr3[((i2 * i55) % 2) - 1], 1).show();
-            Object[] objArr36 = {r2, r9, new int[]{r8}, new int[]{r7}, new int[1]};
+            Object[] objArr36 = {0, 0, new int[]{0}, new int[]{0}, new int[1]};
             int i56 = ((int[]) objArr[4])[0];
             int i57 = ((int[]) objArr[3])[0];
             int i58 = ((int[]) objArr[2])[0];
@@ -6874,49 +6874,49 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:65:0x01f1, code lost:
     
-        r0 = com.identy.FingerActivity.toJson;
-        com.identy.FingerActivity.setFoundMatchingTemplates = (r0 + 21) % 128;
+        0 = com.identy.FingerActivity.toJson;
+        com.identy.FingerActivity.setFoundMatchingTemplates = (0 + 21) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:66:0x01f9, code lost:
     
-        if (r2 == false) goto L103;
+        if (0 == false) goto L103;
      */
     /* JADX WARN: Code restructure failed: missing block: B:67:0x01fb, code lost:
     
-        r2 = (r0 ^ 67) + ((r0 & 67) << 1);
-        com.identy.FingerActivity.setFoundMatchingTemplates = r2 % 128;
+        0 = (0 ^ 67) + ((0 & 67) << 1);
+        com.identy.FingerActivity.setFoundMatchingTemplates = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:68:0x0207, code lost:
     
-        if ((r2 % 2) == 0) goto L102;
+        if ((0 % 2) == 0) goto L102;
      */
     /* JADX WARN: Code restructure failed: missing block: B:69:0x0209, code lost:
     
-        if (r7 == false) goto L103;
+        if (0 == false) goto L103;
      */
     /* JADX WARN: Code restructure failed: missing block: B:70:0x020b, code lost:
     
-        r0 = new com.identy.ui.c.getPadSub2(r15);
-        r0.PngjException = com.identy.R.string.id_attempt_reached_next_detection_no_retries;
-        r2 = com.identy.R.string.id_no;
-        r3 = new com.identy.FingerActivity.getQualityScore(r15);
-        r0.PngjBadCrcException = r2;
-        r0.PngjBadSignature = r3;
-        r2 = com.identy.R.string.id_yes;
-        r3 = new com.identy.FingerActivity.getFingerPrintQualityScore(r15);
-        r0.values = r2;
-        r0.valueOf = r3;
-        r0.show();
+        0 = new com.identy.ui.c.getPadSub2(0);
+        0.PngjException = com.identy.R.string.id_attempt_reached_next_detection_no_retries;
+        0 = com.identy.R.string.id_no;
+        0 = new com.identy.FingerActivity.getQualityScore(0);
+        0.PngjBadCrcException = 0;
+        0.PngjBadSignature = 0;
+        0 = com.identy.R.string.id_yes;
+        0 = new com.identy.FingerActivity.getFingerPrintQualityScore(0);
+        0.values = 0;
+        0.valueOf = 0;
+        0.show();
      */
     /* JADX WARN: Code restructure failed: missing block: B:71:0x022d, code lost:
     
-        r0 = com.identy.FingerActivity.toJson;
-        r2 = ((r0 | 49) << 1) - (r0 ^ 49);
-        com.identy.FingerActivity.setFoundMatchingTemplates = r2 % 128;
+        0 = com.identy.FingerActivity.toJson;
+        0 = ((0 | 49) << 1) - (0 ^ 49);
+        com.identy.FingerActivity.setFoundMatchingTemplates = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:72:0x023b, code lost:
     
-        if ((r2 % 2) == 0) goto L101;
+        if ((0 % 2) == 0) goto L101;
      */
     /* JADX WARN: Code restructure failed: missing block: B:73:0x023d, code lost:
     
@@ -7168,30 +7168,30 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x001e, code lost:
     
-        r1.cancel();
+        0.cancel();
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0021, code lost:
     
-        r0 = com.identy.FingerActivity.setFoundMatchingTemplates;
-        com.identy.FingerActivity.toJson = ((r0 ^ 91) + ((r0 & 91) << 1)) % 128;
+        0 = com.identy.FingerActivity.setFoundMatchingTemplates;
+        com.identy.FingerActivity.toJson = ((0 ^ 91) + ((0 & 91) << 1)) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x001c, code lost:
     
-        if (r1 != null) goto L10;
+        if (0 != null) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0017, code lost:
     
-        if (r1 != null) goto L10;
+        if (0 != null) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x002e, code lost:
     
-        ((android.widget.TextView) r4.findViewById(com.identy.R.id.id_header_title)).setTextColor(-1);
-        r4.isAuthSucess = null;
+        ((android.widget.TextView) 0.findViewById(com.identy.R.id.id_header_title)).setTextColor(-1);
+        0.isAuthSucess = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x003c, code lost:
     
-        r4 = com.identy.FingerActivity.toJson;
-        com.identy.FingerActivity.setFoundMatchingTemplates = ((r4 & 89) + (r4 | 89)) % 128;
+        0 = com.identy.FingerActivity.toJson;
+        com.identy.FingerActivity.setFoundMatchingTemplates = ((0 & 89) + (0 | 89)) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7250,11 +7250,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:48:0x01a0, code lost:
     
-        if (r8 < r7.length) goto L52;
+        if (0 < 0.length) goto L52;
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x01f0, code lost:
     
-        com.identy.FingerActivity.toJson = (r11 + 87) % 128;
+        com.identy.FingerActivity.toJson = (0 + 87) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x01f6, code lost:
     
@@ -7262,23 +7262,23 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x01ac, code lost:
     
-        r8 = com.identy.a.PngjException.values();
-        r11 = ~r8;
-        r12 = (r11 ^ 1) | (r11 & 1);
-        r12 = ((~((r12 & r6) | (r12 ^ r6))) * 52) + ((r6 * 53) - 51);
-        r10 = ~r6;
-        r0 = ~(r10 | r11);
-        r10 = ~((r10 & 1) | (r10 ^ 1));
-        r6 = r7[(((~((r6 & (-2)) | ((-2) ^ r6))) | (~(((-2) ^ r11) | (r11 & (-2))))) * 52) + ((((~((~r8) | 1)) | ((r10 & r0) | (r0 ^ r10))) * (-52)) + r12)];
+        0 = com.identy.a.PngjException.values();
+        0 = ~0;
+        0 = (0 ^ 1) | (0 & 1);
+        0 = ((~((0 & 0) | (0 ^ 0))) * 52) + ((0 * 53) - 51);
+        0 = ~0;
+        0 = ~(0 | 0);
+        0 = ~((0 & 1) | (0 ^ 1));
+        0 = $$a[(((~((0 & (-2)) | ((-2) ^ 0))) | (~(((-2) ^ 0) | (0 & (-2))))) * 52) + ((((~((~0) | 1)) | ((0 & 0) | (0 ^ 0))) * (-52)) + 0)];
         com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 15) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:52:0x01ef, code lost:
     
-        return r6;
+        return 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:54:0x01aa, code lost:
     
-        if (r8 < r7.length) goto L52;
+        if (0 < 0.length) goto L52;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7488,11 +7488,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0026, code lost:
     
-        if (((r0 ^ 1) + ((r0 & 1) << 1)) < r4.CapturePosition.length) goto L9;
+        if (((0 ^ 1) + ((0 & 1) << 1)) < 0.CapturePosition.length) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0019, code lost:
     
-        if ((r4.CaptureThumbActivity + 1) < r4.CapturePosition.length) goto L9;
+        if ((0.CaptureThumbActivity + 1) < 0.CapturePosition.length) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0048, code lost:
     
@@ -7500,13 +7500,13 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0028, code lost:
     
-        com.identy.FingerActivity.toJson = ((r1 & 91) + (r1 | 91)) % 128;
-        r4 = ((r1 | 41) << 1) - (r1 ^ 41);
-        com.identy.FingerActivity.toJson = r4 % 128;
+        com.identy.FingerActivity.toJson = ((0 & 91) + (0 | 91)) % 128;
+        0 = ((0 | 41) << 1) - (0 ^ 41);
+        com.identy.FingerActivity.toJson = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x003d, code lost:
     
-        if ((r4 % 2) != 0) goto L13;
+        if ((0 % 2) != 0) goto L13;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7523,37 +7523,37 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x008d, code lost:
     
-        if (r4.toLowerCase(r3).contains("2") == false) goto L19;
+        if (0.toLowerCase(0).contains("2") == false) goto L19;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x009a, code lost:
     
-        r5 = com.identy.FingerActivity.toJson;
-        com.identy.FingerActivity.setFoundMatchingTemplates = ((r5 & 83) + (r5 | 83)) % 128;
+        0 = com.identy.FingerActivity.toJson;
+        com.identy.FingerActivity.setFoundMatchingTemplates = ((0 & 83) + (0 | 83)) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x00af, code lost:
     
-        if (r4.toLowerCase(r3).contains("1") == false) goto L22;
+        if (0.toLowerCase(0).contains("1") == false) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0098, code lost:
     
-        if (r4.toLowerCase(r3).contains("2") == false) goto L19;
+        if (0.toLowerCase(0).contains("2") == false) goto L19;
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x0142, code lost:
     
-        if (r5 == false) goto L33;
+        if (0 == false) goto L33;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x014a, code lost:
     
-        r11 = com.identy.FingerActivity.toJson + 1;
-        com.identy.FingerActivity.setFoundMatchingTemplates = r11 % 128;
+        0 = com.identy.FingerActivity.toJson + 1;
+        com.identy.FingerActivity.setFoundMatchingTemplates = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0154, code lost:
     
-        if ((r11 % 2) == 0) goto L37;
+        if ((0 % 2) == 0) goto L37;
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x0156, code lost:
     
-        if (r3 == false) goto L39;
+        if (0 == false) goto L39;
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x0159, code lost:
     
@@ -7561,7 +7561,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x0147, code lost:
     
-        if ((!r5) != true) goto L38;
+        if ((!0) != true) goto L38;
      */
     /* JADX WARN: Removed duplicated region for block: B:22:0x00c9  */
     /* JADX WARN: Removed duplicated region for block: B:30:0x0168  */
@@ -7703,20 +7703,20 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:32:0x0018, code lost:
     
-        r2 = r2 + 67;
-        com.identy.FingerActivity.$10 = r2 % 128;
+        0 = 0 + 67;
+        com.identy.FingerActivity.$10 = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x001f, code lost:
     
-        if ((r2 % 2) != 0) goto L11;
+        if ((0 % 2) != 0) goto L11;
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x0021, code lost:
     
-        r1 = r20.toCharArray();
+        0 = 0.toCharArray();
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x0026, code lost:
     
-        r20.toCharArray();
+        0.toCharArray();
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x0029, code lost:
     
@@ -7724,15 +7724,15 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x0016, code lost:
     
-        if (r20 != null) goto L8;
+        if (0 != null) goto L8;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0013, code lost:
     
-        if (r20 != null) goto L8;
+        if (0 != null) goto L8;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x002a, code lost:
     
-        r1 = r20;
+        0 = 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7924,11 +7924,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x002a, code lost:
     
-        if ((!r1.getBoolean("identy_app_preference_keep_display_on", true)) != true) goto L9;
+        if ((!0.getBoolean("identy_app_preference_keep_display_on", true)) != true) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x001e, code lost:
     
-        if (r1.getBoolean("identy_app_preference_keep_display_on", false) != true) goto L10;
+        if (0.getBoolean("identy_app_preference_keep_display_on", false) != true) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x002c, code lost:
     
@@ -8163,12 +8163,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0057, code lost:
     
-        r1 = com.identy.FingerActivity.toJson + 97;
-        com.identy.FingerActivity.setFoundMatchingTemplates = r1 % 128;
+        0 = com.identy.FingerActivity.toJson + 97;
+        com.identy.FingerActivity.setFoundMatchingTemplates = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0061, code lost:
     
-        if ((r1 % 2) == 0) goto L18;
+        if ((0 % 2) == 0) goto L18;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0063, code lost:
     
@@ -8192,18 +8192,18 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0044, code lost:
     
-        r1 = com.identy.FingerActivity.toJson;
-        r2 = r4.CaptureMode;
-        r3 = (r1 & 59) + (r1 | 59);
-        com.identy.FingerActivity.setFoundMatchingTemplates = r3 % 128;
+        0 = com.identy.FingerActivity.toJson;
+        0 = 0.CaptureMode;
+        0 = (0 & 59) + (0 | 59);
+        com.identy.FingerActivity.setFoundMatchingTemplates = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0053, code lost:
     
-        if ((r3 % 2) == 0) goto L14;
+        if ((0 % 2) == 0) goto L14;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0055, code lost:
     
-        return r2;
+        return 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -8298,7 +8298,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(capsMode, lastIndexOf, tapTimeout, -779023007, false, (String) objArr5[0], null);
                         }
                         Object[] objArr6 = (Object[]) ((Field) PngjBadSignature4).get(null);
-                        values$52c725b = new Object[]{new int[]{r5}, new int[1], r0, new int[]{r4}};
+                        values$52c725b = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i3 = ((int[]) objArr6[3])[0];
                         int i4 = ((int[]) objArr6[0])[0];
                         String[] strArr = (String[]) objArr6[2];
@@ -8309,9 +8309,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         ((int[]) values$52c725b[1])[0] = i6 ^ (i6 << 5);
                         if (((int[]) values$52c725b[3])[0] != ((int[]) values$52c725b[0])[0]) {
                             Object[] objArr7 = new Object[4];
-                            objArr7[0] = new int[]{r6};
+                            objArr7[0] = new int[]{0};
                             objArr7[1] = new int[1];
-                            objArr7[3] = new int[]{r5};
+                            objArr7[3] = new int[]{0};
                             int i7 = ((int[]) values$52c725b[1])[0];
                             int i8 = ((int[]) values$52c725b[3])[0];
                             int i9 = ((int[]) values$52c725b[0])[0];
@@ -8403,11 +8403,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0018, code lost:
     
-        if (r3 != null) goto L10;
+        if (0 != null) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0013, code lost:
     
-        if (r3 != null) goto L10;
+        if (0 != null) goto L10;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -8449,11 +8449,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0023, code lost:
     
-        if (r3.isShowing() != false) goto L16;
+        if (0.isShowing() != false) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x002c, code lost:
     
-        if (r3.isShowing() != false) goto L16;
+        if (0.isShowing() != false) goto L16;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -8653,11 +8653,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Can't wrap try/catch for region: R(56:(48:39|(3:41|42|(16:44|45|(1:47)|48|49|(2:51|52)(1:398)|53|(1:55)|56|(9:358|(2:360|361)(1:397)|(3:363|(3:365|366|(1:368)(1:369))|370)|371|372|373|374|375|(9:377|378|(1:380)|381|382|383|384|(1:386)|387))(4:61|62|(1:64)|65)|66|67|(1:69)(1:357)|70|71|72))(1:399)|73|(1:77)|78|(2:80|(1:82))|83|84|85|86|87|(1:89)|90|91|92|94|95|(9:97|98|99|(1:101)|102|103|(5:105|106|107|108|109)(7:115|116|117|(1:119)|120|121|(5:123|124|125|126|128)(9:132|133|134|135|(1:137)|138|139|140|(3:142|143|(3:145|146|147)(4:148|149|150|151))(2:158|(4:160|161|162|164))))|340|341)|189|190|(2:192|(1:194)(4:195|196|197|198))|202|203|(2:205|(3:207|208|209))|213|214|216|217|(2:219|(3:221|222|223))|227|(1:229)(7:284|285|286|(6:303|304|305|306|(2:308|309)(2:311|312)|310)(2:288|289)|290|291|(2:293|(3:295|296|297)))|230|231|232|233|234|235|(1:237)(1:277)|238|239|240|(2:242|(3:244|245|246))|250|251|(2:253|(2:255|(2:257|258))(4:259|260|261|262))|266|267|269)|374|375|(0)|66|67|(0)(0)|70|71|72|73|(2:75|77)|78|(0)|83|84|85|86|87|(0)|90|91|92|94|95|(0)|189|190|(0)|202|203|(0)|213|214|216|217|(0)|227|(0)(0)|230|231|232|233|234|235|(0)(0)|238|239|240|(0)|250|251|(0)|266|267|269) */
     /* JADX WARN: Code restructure failed: missing block: B:355:0x110d, code lost:
     
-        r0 = e;
+        0 = e;
      */
     /* JADX WARN: Code restructure failed: missing block: B:400:0x059d, code lost:
     
-        if ((r6 + 4611686018427387901L) >= ((java.lang.Long) java.lang.Class.forName(r11).getDeclaredMethod(r4, null).invoke(null, null)).longValue()) goto L75;
+        if ((0 + 4611686018427387901L) >= ((java.lang.Long) java.lang.Class.forName(0).getDeclaredMethod(0, null).invoke(null, null)).longValue()) goto L75;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:192:0x149b  */
@@ -9047,21 +9047,21 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             int axisFromString = MotionEvent.axisFromString(BuildConfig.FLAVOR) + 722;
                             i6 = -1;
                             Object[] objArr9 = new Object[1];
-                            f((byte) ($$e & 95), (byte) (r14[20] - 1), (byte) (-$$d[53]), objArr9);
+                            f((byte) ($$e & 95), (byte) ($$a[20] - 1), (byte) (-$$d[53]), objArr9);
                             PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c2, i27, axisFromString, -779023007, false, (String) objArr9[0], null);
                         } else {
                             i6 = -1;
                         }
                         Object[] objArr10 = (Object[]) ((Field) PngjBadSignature5).get(null);
                         values$1eba2e16 = new Object[4];
-                        values$1eba2e16[0] = new int[]{r15};
+                        values$1eba2e16[0] = new int[]{0};
                         values$1eba2e16[1] = new int[1];
-                        values$1eba2e16[3] = new int[]{r14};
+                        values$1eba2e16[3] = new int[]{0};
                         int i28 = ((int[]) objArr10[3])[0];
                         int i29 = ((int[]) objArr10[0])[0];
                         values$1eba2e16[i5] = (String[]) objArr10[i5];
                         int i30 = ((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", null).invoke(null, null)).getResources().getConfiguration().keyboardHidden;
-                        int i31 = (((~((~i30) | (-321080323))) | (-1000861012)) * 564) + ((~(i30 | (-287375361))) * 1128) + (((((~((-713485652) | r7)) | (-321080323)) | (~(713485651 | i30))) * (-564)) - 987127863);
+                        int i31 = (((~((~i30) | (-321080323))) | (-1000861012)) * 564) + ((~(i30 | (-287375361))) * 1128) + (((((~((-713485652) | 0)) | (-321080323)) | (~(713485651 | i30))) * (-564)) - 987127863);
                         int values3 = PngjBadCrcException.values.values();
                         int i32 = i31 * (-613);
                         int i33 = -(-(((~(~i31)) | values3) * 614));
@@ -9118,9 +9118,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         }
                         toJson = (setFoundMatchingTemplates + 55) % 128;
                         Object[] objArr11 = new Object[4];
-                        objArr11[0] = new int[]{r15};
+                        objArr11[0] = new int[]{0};
                         objArr11[1] = new int[1];
-                        objArr11[3] = new int[]{r14};
+                        objArr11[3] = new int[]{0};
                         int i71 = ((int[]) values$1eba2e16[1])[0];
                         int i72 = ((int[]) values$1eba2e16[3])[0];
                         int i73 = ((int[]) values$1eba2e16[0])[0];
@@ -9221,7 +9221,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                     int i122 = ((int[]) obj)[0];
                                                     ((int[]) objArr15[1])[0] = i121;
                                                     ((int[]) objArr15[2])[0] = i122;
-                                                    int i123 = (((~(((int) Process.getStartElapsedRealtime()) | (-1074004753))) | 373358796) * 130) + (((~((~r6) | (-1074004753))) * 130) - 2009424278);
+                                                    int i123 = (((~(((int) Process.getStartElapsedRealtime()) | (-1074004753))) | 373358796) * 130) + (((~((~0) | (-1074004753))) * 130) - 2009424278);
                                                     int identityHashCode4 = System.identityHashCode(this);
                                                     int i124 = i123 * (-919);
                                                     int i125 = i120 * (-919);
@@ -9440,7 +9440,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(longPressTimeout, lastIndexOf, modifierMetaStateMask2, 1150904546, false, (String) objArr27[0], null);
                                                     }
                                                     Object[] objArr28 = (Object[]) ((Field) PngjBadSignature10).get(null);
-                                                    objArr4 = new Object[]{r0, r8, new int[]{r7}, new int[]{r6}, new int[1]};
+                                                    objArr4 = new Object[]{0, 0, new int[]{0}, new int[]{0}, new int[1]};
                                                     int i221 = ((int[]) objArr28[3])[0];
                                                     int i222 = ((int[]) objArr28[2])[0];
                                                     String str4 = (String) objArr28[1];
@@ -9481,14 +9481,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                 i10 = ((int[]) objArr4[2])[0];
                                                 i11 = ((int[]) objArr4[3])[0];
                                                 if (i11 != i10) {
-                                                    Object[] objArr29 = {r3, r11, new int[]{r8}, new int[]{r7}, new int[1]};
+                                                    Object[] objArr29 = {0, 0, new int[]{0}, new int[]{0}, new int[1]};
                                                     int i250 = ((int[]) objArr4[4])[0];
                                                     int i251 = ((int[]) objArr4[3])[0];
                                                     int i252 = ((int[]) objArr4[2])[0];
                                                     String str6 = (String) objArr4[1];
                                                     String str7 = (String) objArr4[0];
                                                     int myTid3 = Process.myTid();
-                                                    int c4 = defpackage.a.c((~(myTid3 | (-588385842))) | (~((~myTid3) | (-35971529))) | (-590802938), -370, (((~((-588385842) | r3)) | (~((-35971529) | myTid3))) * (-370)) - 291650085, 446245036);
+                                                    int c4 = defpackage.a.c((~(myTid3 | (-588385842))) | (~((~myTid3) | (-35971529))) | (-590802938), -370, (((~((-588385842) | 0)) | (~((-35971529) | myTid3))) * (-370)) - 291650085, 446245036);
                                                     int values10 = com.identy.a.PngjException.values();
                                                     int i253 = (-1) - (~(-(-(c4 * (-858)))));
                                                     int i254 = -(-(values10 * (-859)));
@@ -9514,7 +9514,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                     int[] iArr2 = new int[i11];
                                                     iArr2[i11 - 1] = 1;
                                                     Toast.makeText((Context) null, iArr2[((((-2) - (i11 ^ (-1))) * i11) % 2) - 1], 1).show();
-                                                    Object[] objArr30 = {r3, r11, new int[]{r8}, new int[]{r7}, new int[1]};
+                                                    Object[] objArr30 = {0, 0, new int[]{0}, new int[]{0}, new int[1]};
                                                     int i269 = ((int[]) objArr4[4])[0];
                                                     int i270 = ((int[]) objArr4[3])[0];
                                                     int i271 = ((int[]) objArr4[2])[0];
@@ -10801,15 +10801,15 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:28:0x0084, code lost:
     
-        if ((r6 instanceof com.identy.getL2Score) == false) goto L34;
+        if ((0 instanceof com.identy.getL2Score) == false) goto L34;
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x008d, code lost:
     
-        if ((r6 instanceof com.identy.getL1Score) == false) goto L62;
+        if ((0 instanceof com.identy.getL1Score) == false) goto L62;
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x0089, code lost:
     
-        if ((r6 instanceof com.identy.getL2Score) != true) goto L34;
+        if ((0 instanceof com.identy.getL2Score) != true) goto L34;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:33:0x013f  */
@@ -11049,7 +11049,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0057, code lost:
     
-        r2.screenBrightness = -1.0f;
+        0.screenBrightness = -1.0f;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0059, code lost:
     
@@ -11057,35 +11057,35 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x005a, code lost:
     
-        r2.screenBrightness = 1.0f;
+        0.screenBrightness = 1.0f;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x002c, code lost:
     
-        if (r6 == false) goto L9;
+        if (0 == false) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x001d, code lost:
     
-        if (r6 != false) goto L17;
+        if (0 != false) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0035, code lost:
     
-        if (r0.getBoolean("identy_app_preference_max_brightness", true) == false) goto L12;
+        if (0.getBoolean("identy_app_preference_max_brightness", true) == false) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0038, code lost:
     
-        r6 = com.identy.FingerActivity.toJson;
-        r0 = ((r6 | 69) << 1) - (r6 ^ 69);
-        r6 = r0 % 128;
-        com.identy.FingerActivity.setFoundMatchingTemplates = r6;
+        0 = com.identy.FingerActivity.toJson;
+        0 = ((0 | 69) << 1) - (0 ^ 69);
+        0 = 0 % 128;
+        com.identy.FingerActivity.setFoundMatchingTemplates = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0048, code lost:
     
-        if ((r0 % 2) == 0) goto L15;
+        if ((0 % 2) == 0) goto L15;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x004a, code lost:
     
-        r2.screenBrightness = -1.0f;
-        com.identy.FingerActivity.toJson = ((r6 ^ 83) + ((r6 & 83) << 1)) % 128;
+        0.screenBrightness = -1.0f;
+        com.identy.FingerActivity.toJson = ((0 ^ 83) + ((0 & 83) << 1)) % 128;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -11280,11 +11280,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0016, code lost:
     
-        if (r3 != r4) goto L8;
+        if (0 != 0) goto L8;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0013, code lost:
     
-        if (r3 != r4) goto L8;
+        if (0 != 0) goto L8;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -11355,33 +11355,33 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x003f, code lost:
     
-        r5 = new com.identy.ui.c.getPadSub1(r1, new com.identy.FingerActivity.PngjException(r1));
-        r1.getPadSub1 = r5;
-        r5.show();
+        0 = new com.identy.ui.c.getPadSub1(0, new com.identy.FingerActivity.PngjException(0));
+        0.getPadSub1 = 0;
+        0.show();
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0023, code lost:
     
-        if ((!r5) != true) goto L9;
+        if ((!0) != true) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x001d, code lost:
     
-        if (r5 != false) goto L9;
+        if (0 != false) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0025, code lost:
     
-        r1.onErrorResponse.valueOf();
-        r1.isQualityFailed();
+        0.onErrorResponse.valueOf();
+        0.isQualityFailed();
         com.identy.FingerActivity.PngjBadSignature = false;
-        r5 = com.identy.FingerActivity.toJson + 121;
-        com.identy.FingerActivity.setFoundMatchingTemplates = r5 % 128;
+        0 = com.identy.FingerActivity.toJson + 121;
+        com.identy.FingerActivity.setFoundMatchingTemplates = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0039, code lost:
     
-        if ((r5 % 2) != 0) goto L12;
+        if ((0 % 2) != 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x003b, code lost:
     
-        r5 = 14 / 0;
+        0 = 14 / 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x003e, code lost:
     
@@ -11419,7 +11419,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:37:0x0099, code lost:
     
-        if (r2[0].getFinger().equals(com.identy.enums.Finger.THUMB) != false) goto L16;
+        if ($$a[0].getFinger().equals(com.identy.enums.Finger.THUMB) != false) goto L16;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:15:0x00a6  */
@@ -11456,19 +11456,19 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            if (r2[0].getFinger() != null) {
+            if ($$a[0].getFinger() != null) {
                 int i12 = setFoundMatchingTemplates + 41;
                 toJson = i12 % 128;
                 if (i12 % 2 != 0) {
-                    if (r2[1].getFinger().equals(Finger.THUMB)) {
+                    if ($$a[1].getFinger().equals(Finger.THUMB)) {
                         z = true;
                     }
                 }
-                if (r2[0].getHand() != null) {
+                if ($$a[0].getHand() != null) {
                     toJson = (setFoundMatchingTemplates + 45) % 128;
                     hand = Hand.LEFT;
                 } else {
-                    hand = r2[0].getHand();
+                    hand = $$a[0].getHand();
                     int i13 = toJson;
                     setFoundMatchingTemplates = ((i13 & 33) + (i13 | 33)) % 128;
                 }
@@ -11487,24 +11487,24 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         contains = IdentySdk.getInstance().PngjPrematureEnding.contains(hand);
                     }
                 }
-                Intent intent = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, r2, IdentySdk.getInstance().isRolledfp()));
+                Intent intent = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, 0, IdentySdk.getInstance().isRolledfp()));
                 intent.putExtra("type", getIntent().getStringExtra("type"));
-                intent.putExtra("option_selected", (Serializable) r2);
+                intent.putExtra("option_selected", (Serializable) 0);
                 intent.putExtra("options", getIntent().getSerializableExtra("options"));
                 startActivity(intent);
                 return true;
             }
             z = false;
-            if (r2[0].getHand() != null) {
+            if ($$a[0].getHand() != null) {
             }
             int i142 = setFoundMatchingTemplates;
             int i152 = ((i142 ^ 67) + ((i142 & 67) << 1)) % 128;
             toJson = i152;
             if (z) {
             }
-            Intent intent2 = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, r2, IdentySdk.getInstance().isRolledfp()));
+            Intent intent2 = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, 0, IdentySdk.getInstance().isRolledfp()));
             intent2.putExtra("type", getIntent().getStringExtra("type"));
-            intent2.putExtra("option_selected", (Serializable) r2);
+            intent2.putExtra("option_selected", (Serializable) 0);
             intent2.putExtra("options", getIntent().getSerializableExtra("options"));
             startActivity(intent2);
             return true;
@@ -11588,15 +11588,15 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x00c2, code lost:
     
-        if (r5 != true) goto L22;
+        if (0 != true) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x00c7, code lost:
     
-        if (r3 == true) goto L54;
+        if (0 == true) goto L54;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x00c9, code lost:
     
-        if (r6 == false) goto L26;
+        if (0 == false) goto L26;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x00d3, code lost:
     
@@ -11604,25 +11604,25 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x00d5, code lost:
     
-        if (r7 == false) goto L33;
+        if (0 == false) goto L33;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x00d7, code lost:
     
-        r3 = com.identy.FingerActivity.toJson;
-        com.identy.FingerActivity.setFoundMatchingTemplates = ((r3 ^ 123) + ((r3 & 123) << 1)) % 128;
-        r3 = android.os.Build.MODEL;
+        0 = com.identy.FingerActivity.toJson;
+        com.identy.FingerActivity.setFoundMatchingTemplates = ((0 ^ 123) + ((0 & 123) << 1)) % 128;
+        0 = android.os.Build.MODEL;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x00eb, code lost:
     
-        if (r3.equals("CPH2619") != false) goto L33;
+        if (0.equals("CPH2619") != false) goto L33;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x00f3, code lost:
     
-        if (r3.equals("EB2101") == true) goto L33;
+        if (0.equals("EB2101") == true) goto L33;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x00f5, code lost:
     
-        r15.CaptureMode = false;
+        0.CaptureMode = false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x00f7, code lost:
     
@@ -11630,30 +11630,30 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x00f8, code lost:
     
-        if (r1 != false) goto L35;
+        if (0 != false) goto L35;
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x00fb, code lost:
     
-        java.lang.System.identityHashCode(r15);
-        java.lang.System.identityHashCode(r15);
+        java.lang.System.identityHashCode(0);
+        java.lang.System.identityHashCode(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x0108, code lost:
     
-        if (r10 > 3.1d) goto L43;
+        if (0 > 3.1d) goto L43;
      */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x010a, code lost:
     
-        r1 = com.identy.FingerActivity.toJson;
-        r2 = (r1 & 125) + (r1 | 125);
-        com.identy.FingerActivity.setFoundMatchingTemplates = r2 % 128;
+        0 = com.identy.FingerActivity.toJson;
+        0 = (0 & 125) + (0 | 125);
+        com.identy.FingerActivity.setFoundMatchingTemplates = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x0117, code lost:
     
-        if ((r2 % 2) != 0) goto L41;
+        if ((0 % 2) != 0) goto L41;
      */
     /* JADX WARN: Code restructure failed: missing block: B:31:0x0119, code lost:
     
-        r15.CaptureMode = false;
+        0.CaptureMode = false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x011b, code lost:
     
@@ -11661,7 +11661,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x011c, code lost:
     
-        r15.CaptureMode = false;
+        0.CaptureMode = false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x011e, code lost:
     
@@ -11669,11 +11669,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x011f, code lost:
     
-        r1 = new org.cameracontroller.PngjInputException(r15);
+        0 = new org.cameracontroller.PngjInputException(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x0128, code lost:
     
-        if (r1.PngjBadSignature() == 0) goto L46;
+        if (0.PngjBadSignature() == 0) goto L46;
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x012a, code lost:
     
@@ -11681,22 +11681,22 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x013c, code lost:
     
-        r15.CaptureMode = r2;
+        0.CaptureMode = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x0142, code lost:
     
-        if (r1.PngjException() != false) goto L53;
+        if (0.PngjException() != false) goto L53;
      */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x0144, code lost:
     
-        r15.CaptureMode = false;
-        r0 = com.identy.FingerActivity.setFoundMatchingTemplates;
-        r1 = (r0 & 27) + (r0 | 27);
-        com.identy.FingerActivity.toJson = r1 % 128;
+        0.CaptureMode = false;
+        0 = com.identy.FingerActivity.setFoundMatchingTemplates;
+        0 = (0 & 27) + (0 | 27);
+        com.identy.FingerActivity.toJson = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x0153, code lost:
     
-        if ((r1 % 2) != 0) goto L52;
+        if ((0 % 2) != 0) goto L52;
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:0x0155, code lost:
     
@@ -11713,11 +11713,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     /* JADX WARN: Code restructure failed: missing block: B:45:0x0133, code lost:
     
         com.identy.FingerActivity.toJson = (com.identy.FingerActivity.setFoundMatchingTemplates + 111) % 128;
-        r2 = false;
+        0 = false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x0158, code lost:
     
-        r15.CaptureMode = false;
+        0.CaptureMode = false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:47:0x015a, code lost:
     
@@ -11725,7 +11725,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x00c5, code lost:
     
-        if (r5 != true) goto L22;
+        if (0 != true) goto L22;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -12028,7 +12028,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             IdentySdk identySdk3 = IdentySdk.getInstance();
             FingerDetectionMode fingerDetectionMode3 = this.PngjExceptionInternal;
             com.identy.e1 e1Var9 = this.onErrorResponse;
-            identySdk3.a(fingerDetectionMode3, e1Var9.getEncryptedTemplates, e1Var9.PngjExceptionInternal(), r0.toString, r0.Enroll2IndexActivity, this.onErrorResponse.FingerActivity.getRfQuality());
+            identySdk3.a(fingerDetectionMode3, e1Var9.getEncryptedTemplates, e1Var9.PngjExceptionInternal(), 0.toString, 0.Enroll2IndexActivity, this.onErrorResponse.FingerActivity.getRfQuality());
         } catch (Exception e7) {
             e7.printStackTrace();
         }

@@ -21,7 +21,7 @@ public class TemplateOutput {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) Process.getStartElapsedRealtime())) | (-271187973))) | 135285051, 521, ((~((-271187973) | r0)) * 521) - 820158200, -1502932265);
+                    int c = defpackage.a.c((~((~((int) Process.getStartElapsedRealtime())) | (-271187973))) | 135285051, 521, ((~((-271187973) | 0)) * 521) - 820158200, -1502932265);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -34,7 +34,7 @@ public class TemplateOutput {
             d((byte) 122, b, (byte) (b | 22), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            d((byte) 94, r5[0], r5[45], objArr4);
+            d((byte) 94, $$a[0], $$a[45], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1502932265);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4965;
@@ -143,7 +143,7 @@ public class TemplateOutput {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~(((int) Process.getElapsedCpuTime()) | (-434627965))) | 404971836, 490, (((-29656129) | (~r0)) * (-490)) - 592142299, -840371877);
+                    int c = defpackage.a.c((~(((int) Process.getElapsedCpuTime()) | (-434627965))) | 404971836, 490, (((-29656129) | (~0)) * (-490)) - 592142299, -840371877);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -157,7 +157,7 @@ public class TemplateOutput {
             d((byte) 122, b, (byte) (b | 22), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            d((byte) 94, r5[0], r5[45], objArr4);
+            d((byte) 94, $$a[0], $$a[45], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 582901891);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5019;
@@ -266,7 +266,7 @@ public class TemplateOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myTid = Process.myTid();
-                    int c = defpackage.a.c((~((~myTid) | 300760198)) | 799649478, 217, (((~(myTid | (-799649479))) | 771785280) * 217) + ((((~((-799649479) | r5)) | (~(300760198 | myTid))) * 217) - 2111146750), 1041120715);
+                    int c = defpackage.a.c((~((~myTid) | 300760198)) | 799649478, 217, (((~(myTid | (-799649479))) | 771785280) * 217) + ((((~((-799649479) | 0)) | (~(300760198 | myTid))) * 217) - 2111146750), 1041120715);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -321,7 +321,7 @@ public class TemplateOutput {
             d((byte) 122, b, (byte) (b | 22), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            d((byte) 94, r5[0], r5[45], objArr4);
+            d((byte) 94, $$a[0], $$a[45], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1825815553);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5036;

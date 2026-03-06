@@ -29,10 +29,10 @@ import kotlin.jvm.internal.ByteCompanionObject;
 
 /* loaded from: classes2.dex */
 public final class PngjException implements SensorEventListener {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$d = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$d = 0;
     private static int $10;
     private static int $11;
     private static int PngjInputException;
@@ -322,7 +322,7 @@ public final class PngjException implements SensorEventListener {
                                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(resolveSizeAndState, fadingEdgeLength, i5, -779023007, false, (String) objArr4[0], null);
                             }
                             Object[] objArr5 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                            PngjBadCrcException$1eba2e16 = new Object[]{new int[]{r15}, new int[1], r5, new int[]{r14}};
+                            PngjBadCrcException$1eba2e16 = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                             int i6 = ((int[]) objArr5[3])[0];
                             int i7 = ((int[]) objArr5[0])[0];
                             String[] strArr = (String[]) objArr5[2];

@@ -81,7 +81,7 @@ public final class DeduplicationIdentyResponse extends IdentyResponse {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c((~((~identityHashCode) | 531710291)) | 1030599571, 217, (((~(identityHashCode | (-1030599572))) | 541897344) * 217) + ((((~((-1030599572) | r5)) | (~(531710291 | identityHashCode))) * 217) - 687709379), -260516091);
+                    int c = defpackage.a.c((~((~identityHashCode) | 531710291)) | 1030599571, 217, (((~(identityHashCode | (-1030599572))) | 541897344) * 217) + ((((~((-1030599572) | 0)) | (~(531710291 | identityHashCode))) * 217) - 687709379), -260516091);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -136,7 +136,7 @@ public final class DeduplicationIdentyResponse extends IdentyResponse {
             a(b, (byte) (b | 22), (byte) 97, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[116], (byte) 125, objArr4);
+            a($$a[63], $$a[116], (byte) 125, objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1043101156);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4904;
@@ -204,7 +204,7 @@ public final class DeduplicationIdentyResponse extends IdentyResponse {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c(identityHashCode | (-489273012), 496, (((~((-988162292) | identityHashCode)) | 583403584 | (~((~identityHashCode) | (-84514305)))) * (-496)) + ((r5 * 992) - 2137057233), -1644443764);
+                    int c = defpackage.a.c(identityHashCode | (-489273012), 496, (((~((-988162292) | identityHashCode)) | 583403584 | (~((~identityHashCode) | (-84514305)))) * (-496)) + ((0 * 992) - 2137057233), -1644443764);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -249,7 +249,7 @@ public final class DeduplicationIdentyResponse extends IdentyResponse {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~(System.identityHashCode(this) | 78154811)) | (-653065852), 490, (((-574911041) | (~r0)) * (-490)) - 576195451, -27013057);
+                    int c = defpackage.a.c((~(System.identityHashCode(this) | 78154811)) | (-653065852), 490, (((-574911041) | (~0)) * (-490)) - 576195451, -27013057);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -295,7 +295,7 @@ public final class DeduplicationIdentyResponse extends IdentyResponse {
             Fpnative.valueOf = objArr;
             JSONObject json2 = super.toJson(context);
             JSONArray jSONArray2 = new JSONArray();
-            while (r6 < r5) {
+            while (0 < 0) {
             }
             json2.put("fingers", jSONArray2);
             int i32 = ((int[]) objArr[1])[0];
@@ -339,7 +339,7 @@ public final class DeduplicationIdentyResponse extends IdentyResponse {
                     int myUid = Process.myUid();
                     int i = ~myUid;
                     int i2 = (~((-675587784) | i)) | 134227079;
-                    int c = defpackage.a.c(~(i | 176698503), 713, ((~(myUid | 718059207)) * 1426) + (((i2 | r0) * (-713)) - 1706344122), 1813541786);
+                    int c = defpackage.a.c(~(i | 176698503), 713, ((~(myUid | 718059207)) * 1426) + (((i2 | 0) * (-713)) - 1706344122), 1813541786);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -353,7 +353,7 @@ public final class DeduplicationIdentyResponse extends IdentyResponse {
             a(b, (byte) (b | 22), (byte) 97, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[116], (byte) 125, objArr4);
+            a($$a[63], $$a[116], (byte) 125, objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1813541786);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4933;

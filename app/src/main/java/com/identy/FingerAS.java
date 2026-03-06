@@ -14,8 +14,8 @@ public enum FingerAS {
     VERY_HIGH("VH"),
     HIGHEST("HT");
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     String a;
 
     static {
@@ -153,7 +153,7 @@ public enum FingerAS {
             c(b3, (byte) (b3 | 89), b2, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            c(r1[4], r1[81], r1[77], objArr4);
+            c($$a[4], $$a[81], $$a[77], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1052466576);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4922;
@@ -178,7 +178,7 @@ public enum FingerAS {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~defpackage.a.b(485300798)) | 297037105)) | 1280, 374, ((297035825 | r0) * (-374)) - 79340587, 963230402);
+                    int c = defpackage.a.c((~((~defpackage.a.b(485300798)) | 297037105)) | 1280, 374, ((297035825 | 0) * (-374)) - 79340587, 963230402);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -193,7 +193,7 @@ public enum FingerAS {
             c(b3, (byte) (b3 | 89), b2, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            c(r1[4], r1[81], r1[77], objArr4);
+            c($$a[4], $$a[81], $$a[77], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 963230402);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4943;

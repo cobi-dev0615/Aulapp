@@ -35,10 +35,10 @@ import kotlin.UInt;
 
 /* loaded from: classes2.dex */
 public class CaptureThumbActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static char PngjBadCrcException;
@@ -440,7 +440,7 @@ public class CaptureThumbActivity extends FingerActivity {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(mirror, indexOf, i4, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                        PngjBadSignature$1eba2e16 = new Object[]{new int[]{r8}, new int[1], r0, new int[]{r7}};
+                        PngjBadSignature$1eba2e16 = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i5 = ((int[]) objArr5[3])[0];
                         int i6 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
@@ -453,13 +453,13 @@ public class CaptureThumbActivity extends FingerActivity {
                         i2 = ((int[]) PngjBadSignature$1eba2e16[0])[0];
                         i3 = ((int[]) PngjBadSignature$1eba2e16[3])[0];
                         if (i3 != i2) {
-                            Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r7}};
+                            Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i10 = ((int[]) PngjBadSignature$1eba2e16[1])[0];
                             int i11 = ((int[]) PngjBadSignature$1eba2e16[3])[0];
                             int i12 = ((int[]) PngjBadSignature$1eba2e16[0])[0];
                             String[] strArr2 = (String[]) PngjBadSignature$1eba2e16[2];
                             int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                            int c3 = defpackage.a.c(~((~elapsedCpuTime) | (-211849473)), 476, ((~((-211849473) | elapsedCpuTime)) * 952) + (((822420521 | r2) * (-476)) - 391390831), i10);
+                            int c3 = defpackage.a.c(~((~elapsedCpuTime) | (-211849473)), 476, ((~((-211849473) | elapsedCpuTime)) * 952) + (((822420521 | 0) * (-476)) - 391390831), i10);
                             int i13 = c3 ^ (c3 << 13);
                             int i14 = i13 ^ (i13 >>> 17);
                             ((int[]) objArr6[1])[0] = i14 ^ (i14 << 5);
@@ -480,7 +480,7 @@ public class CaptureThumbActivity extends FingerActivity {
                         int i16 = i3 - 1;
                         iArr[i16] = 1;
                         Toast.makeText((Context) null, iArr[((i3 * i16) % 2) - 1], 1).show();
-                        Object[] objArr7 = {new int[]{r8}, new int[1], r1, new int[]{r7}};
+                        Object[] objArr7 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i17 = ((int[]) PngjBadSignature$1eba2e16[1])[0];
                         int i18 = ((int[]) PngjBadSignature$1eba2e16[3])[0];
                         int i19 = ((int[]) PngjBadSignature$1eba2e16[0])[0];
@@ -739,7 +739,7 @@ public class CaptureThumbActivity extends FingerActivity {
 
     /* JADX WARN: Code restructure failed: missing block: B:97:0x028b, code lost:
     
-        if (r4 < r11) goto L79;
+        if (0 < 0) goto L79;
      */
     @Override // com.identy.FingerActivity
     /*
@@ -761,13 +761,13 @@ public class CaptureThumbActivity extends FingerActivity {
             char c2 = 31;
             char c3 = 18;
             Object[] objArr4 = new Object[1];
-            b((short) (i2 | 48), r7[31], r7[18], objArr4);
+            b((short) (i2 | 48), $$a[31], $$a[18], objArr4);
             Class<?> cls = Class.forName((String) objArr4[0]);
             Object[] objArr5 = new Object[1];
-            b((short) (i2 | 63), r7[77], r7[8], objArr5);
+            b((short) (i2 | 63), $$a[77], $$a[8], objArr5);
             String str2 = (String) objArr5[0];
             Object[] objArr6 = new Object[1];
-            b((short) (i2 | 48), r7[31], r7[18], objArr6);
+            b((short) (i2 | 48), $$a[31], $$a[18], objArr6);
             Object[] objArr7 = (Object[]) cls.getMethod(str2, Class.forName((String) objArr6[0])).invoke(str, objArr3);
             int[] iArr = new int[objArr7.length];
             int i3 = 0;

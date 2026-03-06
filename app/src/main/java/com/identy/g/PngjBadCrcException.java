@@ -14,12 +14,12 @@ import java.util.List;
 
 /* loaded from: classes2.dex */
 public class PngjBadCrcException {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int PngjExceptionInternal;

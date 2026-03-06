@@ -10,8 +10,8 @@ public enum valueOf {
     RETAKE,
     UNSUCCESS;
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
 
     static {
         init$0();
@@ -36,13 +36,13 @@ public enum valueOf {
         byte[] bArr2 = new byte[44 - b];
         int r7 = 43 - b;
         if (bArr == null) {
-            byte b3 = r5;
-            byte b4 = r7;
+            byte b3 = 0;
+            byte b4 = 0;
             i2 = 0;
             i3++;
             b2 = (b4 + b3) - 13;
             bArr2[i2] = b2 == true ? (byte) 1 : (byte) 0;
-            if (i2 == r7) {
+            if (i2 == 0) {
                 objArr[0] = new String(bArr2, 0);
                 return;
             }
@@ -52,13 +52,13 @@ public enum valueOf {
             i3++;
             b2 = (b4 + b3) - 13;
             bArr2[i2] = b2 == true ? (byte) 1 : (byte) 0;
-            if (i2 == r7) {
+            if (i2 == 0) {
             }
         } else {
             i2 = 0;
-            b2 = r5;
+            b2 = 0;
             bArr2[i2] = b2 == true ? (byte) 1 : (byte) 0;
-            if (i2 == r7) {
+            if (i2 == 0) {
             }
         }
     }
@@ -78,7 +78,7 @@ public enum valueOf {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) Process.getStartUptimeMillis())) | 461902059)) | (-431780288), 184, (((-3432725) | r0) * 184) - 1657916169, -151298680);
+                    int c = defpackage.a.c((~((~((int) Process.getStartUptimeMillis())) | 461902059)) | (-431780288), 184, (((-3432725) | 0) * 184) - 1657916169, -151298680);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

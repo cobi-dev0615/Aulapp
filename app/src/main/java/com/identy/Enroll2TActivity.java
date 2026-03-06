@@ -35,10 +35,10 @@ import java.util.List;
 
 /* loaded from: classes2.dex */
 public class Enroll2TActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static char[] PngjBadCrcException;
@@ -501,16 +501,16 @@ public class Enroll2TActivity extends FingerActivity {
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0026, code lost:
     
-        r6 = com.identy.Enroll2TActivity.getOveralTimetaken + 91;
-        com.identy.Enroll2TActivity.getScore = r6 % 128;
+        0 = com.identy.Enroll2TActivity.getOveralTimetaken + 91;
+        com.identy.Enroll2TActivity.getScore = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0030, code lost:
     
-        if ((r6 % 2) == 0) goto L15;
+        if ((0 % 2) == 0) goto L15;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0032, code lost:
     
-        r6 = 38 / 0;
+        0 = 38 / 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0035, code lost:
     
@@ -522,32 +522,32 @@ public class Enroll2TActivity extends FingerActivity {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0024, code lost:
     
-        if (r8 == false) goto L9;
+        if (0 == false) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0016, code lost:
     
-        if (r8 == false) goto L9;
+        if (0 == false) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0038, code lost:
     
-        if (r5.getAsHighestSecurityLevelReached != false) goto L16;
+        if (0.getAsHighestSecurityLevelReached != false) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x003b, code lost:
     
-        r5.values.clear();
-        r5.values.putAll(r6);
-        r5.onErrorResponse.PngjException(com.identy.R.string.id_processing);
-        new com.identy.getAsHighestSecurityLevelReached(r4, new com.identy.Enroll2TActivity.PngjException(r4, r6, r7)).PngjException(r5.values, com.identy.e1.PngjInputException);
-        r6 = com.identy.Enroll2TActivity.getScore + 15;
-        com.identy.Enroll2TActivity.getOveralTimetaken = r6 % 128;
+        0.values.clear();
+        0.values.putAll(0);
+        0.onErrorResponse.PngjException(com.identy.R.string.id_processing);
+        new com.identy.getAsHighestSecurityLevelReached(0, new com.identy.Enroll2TActivity.PngjException(0, 0, 0)).PngjException(0.values, com.identy.e1.PngjInputException);
+        0 = com.identy.Enroll2TActivity.getScore + 15;
+        com.identy.Enroll2TActivity.getOveralTimetaken = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0067, code lost:
     
-        if ((r6 % 2) != 0) goto L21;
+        if ((0 % 2) != 0) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0069, code lost:
     
-        r6 = 41 / 0;
+        0 = 41 / 0;
      */
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
     /*
@@ -597,7 +597,7 @@ public class Enroll2TActivity extends FingerActivity {
             int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, 0) + 721;
             byte b = $$a[18];
             Object[] objArr2 = new Object[1];
-            b((byte) (b - 1), b, r1[20], objArr2);
+            b((byte) (b - 1), b, $$a[20], objArr2);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(c3, bitsPerPixel, makeMeasureSpec, -815159504, false, (String) objArr2[0], null);
         }
         long j = ((Field) PngjBadSignature).getLong(null);
@@ -626,7 +626,7 @@ public class Enroll2TActivity extends FingerActivity {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(doubleTapTimeout, gidForName, threadPriority, -779023007, false, (String) objArr5[0], null);
                         }
                         Object[] objArr6 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                        objArr = new Object[]{new int[]{r5}, new int[1], r0, new int[]{r4}};
+                        objArr = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i4 = ((int[]) objArr6[3])[0];
                         int i5 = ((int[]) objArr6[0])[0];
                         String[] strArr = (String[]) objArr6[2];
@@ -642,7 +642,7 @@ public class Enroll2TActivity extends FingerActivity {
                         i2 = ((int[]) objArr[0])[0];
                         i3 = ((int[]) objArr[3])[0];
                         if (i3 != i2) {
-                            Object[] objArr7 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
+                            Object[] objArr7 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i12 = ((int[]) objArr[1])[0];
                             int i13 = ((int[]) objArr[3])[0];
                             int i14 = ((int[]) objArr[0])[0];
@@ -673,13 +673,13 @@ public class Enroll2TActivity extends FingerActivity {
                             }
                         }
                         Toast.makeText((Context) null, i3 / (((i3 - 1) * i3) % 2), 0).show();
-                        Object[] objArr8 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
+                        Object[] objArr8 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i20 = ((int[]) objArr[1])[0];
                         int i21 = ((int[]) objArr[3])[0];
                         int i22 = ((int[]) objArr[0])[0];
                         String[] strArr4 = (String[]) objArr[2];
                         int identityHashCode3 = System.identityHashCode(this);
-                        int c6 = defpackage.a.c((~(identityHashCode3 | (-240235493))) | (~((~identityHashCode3) | 794330481)), 979, ((identityHashCode3 | 794330481) * (-979)) + (((~((-240235493) | r2)) * 979) - 1967286388), i20);
+                        int c6 = defpackage.a.c((~(identityHashCode3 | (-240235493))) | (~((~identityHashCode3) | 794330481)), 979, ((identityHashCode3 | 794330481) * (-979)) + (((~((-240235493) | 0)) * 979) - 1967286388), i20);
                         int i23 = c6 ^ (c6 << 13);
                         int i24 = i23 ^ (i23 >>> 17);
                         ((int[]) objArr8[1])[0] = i24 ^ (i24 << 5);
@@ -702,7 +702,7 @@ public class Enroll2TActivity extends FingerActivity {
                     int lastIndexOf = TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0') + 722;
                     byte b4 = $$a[c2];
                     Object[] objArr11 = new Object[1];
-                    b((byte) (b4 - 1), b4, r4[c], objArr11);
+                    b((byte) (b4 - 1), b4, $$a[c], objArr11);
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(longPressTimeout, i25, lastIndexOf, -815159504, false, (String) objArr11[0], null);
                 }
                 ((Field) PngjBadSignature3).set(null, valueOf);

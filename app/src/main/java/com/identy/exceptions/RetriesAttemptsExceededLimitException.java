@@ -122,7 +122,7 @@ public class RetriesAttemptsExceededLimitException extends Exception {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | (-42209985))) | (~((-560104761) | (~identityHashCode))), 338, ((((-602314745) | r5) | (~(560104760 | identityHashCode))) * (-338)) - 1220031619, -991316377);
+                    int c = a.c((~(identityHashCode | (-42209985))) | (~((-560104761) | (~identityHashCode))), 338, ((((-602314745) | 0) | (~(560104760 | identityHashCode))) * (-338)) - 1220031619, -991316377);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

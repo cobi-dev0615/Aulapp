@@ -31,10 +31,10 @@ import java.util.List;
 
 /* loaded from: classes2.dex */
 public class Enroll4FActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static long PngjBadCrcException;
@@ -43,12 +43,12 @@ public class Enroll4FActivity extends FingerActivity {
     HashMap valueOf = new HashMap();
 
     public class PngjBadSignature implements com.identy.d.PngjBadCrcException {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final byte[] $$d = null;
-        private static final int $$e = 0;
-        private static final int $$f = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  byte[] $$d = null;
+        private static  int $$e = 0;
+        private static  int $$f = 0;
         private static int $10;
         private static int $11;
         private static int[] PngjException;
@@ -765,16 +765,16 @@ public class Enroll4FActivity extends FingerActivity {
                             int defaultSize = View.getDefaultSize(0, 0) + 721;
                             byte b2 = $$a[26];
                             Object[] objArr4 = new Object[1];
-                            b(b2, (byte) (b2 | 16), r2[23], objArr4);
+                            b(b2, (byte) (b2 | 16), $$a[23], objArr4);
                             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c2, pressedStateDuration, defaultSize, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature3).get(null);
-                        PngjException$1eba2e16 = new Object[]{new int[]{r5}, new int[1], r0, new int[]{r4}};
+                        PngjException$1eba2e16 = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i5 = ((int[]) objArr5[3])[0];
                         int i6 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
                         int i7 = ~System.identityHashCode(this);
-                        int c3 = defpackage.a.c((~((-188508661) | i7)) | (-846057314), 68, ((~((-809600514) | i7)) * (-68)) + ((((~(r0 | 188508660)) | ((~((-36456801) | i7)) | (-998109174))) * (-68)) - 1496765879), -1517060756);
+                        int c3 = defpackage.a.c((~((-188508661) | i7)) | (-846057314), 68, ((~((-809600514) | i7)) * (-68)) + ((((~(0 | 188508660)) | ((~((-36456801) | i7)) | (-998109174))) * (-68)) - 1496765879), -1517060756);
                         int i8 = c3 ^ (c3 << 13);
                         int i9 = i8 ^ (i8 >>> 17);
                         ((int[]) PngjException$1eba2e16[1])[0] = i9 ^ (i9 << 5);
@@ -782,7 +782,7 @@ public class Enroll4FActivity extends FingerActivity {
                         i2 = ((int[]) PngjException$1eba2e16[3])[0];
                         if (i2 != i) {
                             values = (getFingerPrintQualityScore + 19) % 128;
-                            Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
+                            Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i10 = ((int[]) PngjException$1eba2e16[1])[0];
                             int i11 = ((int[]) PngjException$1eba2e16[3])[0];
                             int i12 = ((int[]) PngjException$1eba2e16[0])[0];
@@ -853,7 +853,7 @@ public class Enroll4FActivity extends FingerActivity {
                 int indexOf = TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0, 0) + 722;
                 byte b4 = $$a[26];
                 Object[] objArr11 = new Object[1];
-                b(b4, (byte) (b4 | 16), r10[23], objArr11);
+                b(b4, (byte) (b4 | 16), $$a[23], objArr11);
                 PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c4, rgb, indexOf, -779023007, false, (String) objArr11[0], null);
             }
             ((Field) PngjBadSignature6).set(null, PngjException$1eba2e16);

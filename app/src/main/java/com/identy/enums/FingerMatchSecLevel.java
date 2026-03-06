@@ -15,8 +15,8 @@ public enum FingerMatchSecLevel {
     HIGH("H"),
     HIGHEST("G");
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     String a;
 
     static {
@@ -45,9 +45,9 @@ public enum FingerMatchSecLevel {
         int i4 = s + 15;
         if (bArr == null) {
             i3 = i4;
-            byte b2 = r7;
+            byte b2 = 0;
             i = 0;
-            int i5 = r7;
+            int i5 = 0;
             i3 = (i3 + b2) - 13;
             i2 = i5 + 1;
             bArr2[i] = (byte) i3;
@@ -65,7 +65,7 @@ public enum FingerMatchSecLevel {
             }
         } else {
             i = 0;
-            i2 = r7;
+            i2 = 0;
             bArr2[i] = (byte) i3;
             if (i == i4) {
             }
@@ -89,7 +89,7 @@ public enum FingerMatchSecLevel {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myPid = Process.myPid();
                     int i = ~myPid;
-                    int c = a.c((~(374842609 | i)) | (-124046671), 712, (((~(myPid | 393735679)) | (~(i | (-18893071)))) * (-712)) + (((18893070 | r6) * (-712)) - 1974160153), 1195728185);
+                    int c = a.c((~(374842609 | i)) | (-124046671), 712, (((~(myPid | 393735679)) | (~(i | (-18893071)))) * (-712)) + (((18893070 | 0) * (-712)) - 1974160153), 1195728185);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -135,7 +135,7 @@ public enum FingerMatchSecLevel {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                     int i = ~startElapsedRealtime;
-                    int c = a.c((~(657196034 | i)) | 158306754, 712, (((~(startElapsedRealtime | (-138645953))) | (~(i | 795841986))) * (-712)) + ((((-795841987) | r6) * (-712)) - 318511529), 923107545);
+                    int c = a.c((~(657196034 | i)) | 158306754, 712, (((~(startElapsedRealtime | (-138645953))) | (~(i | 795841986))) * (-712)) + ((((-795841987) | 0) * (-712)) - 318511529), 923107545);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);

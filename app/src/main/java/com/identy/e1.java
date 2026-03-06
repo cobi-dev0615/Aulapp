@@ -97,12 +97,12 @@ import org.json.JSONObject;
 
 /* loaded from: classes2.dex */
 public class e1 extends BroadcastReceiver {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
-    private static final byte[] $$j = null;
-    private static final int $$k = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
+    private static  byte[] $$j = null;
+    private static  int $$k = 0;
     private static int $10 = 0;
     private static int $11 = 0;
     public static long PngjBadCrcException = 0;
@@ -457,7 +457,7 @@ public class e1 extends BroadcastReceiver {
                 e5.printStackTrace();
             }
             Mat.n_release(this.values.PngjException);
-            e1.values(new Object[]{e1.this, hashMap, Boolean.valueOf(!r0.isAsPass()), e1.this.FingerActivity.getAsResult()}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -1059459396, com.identy.i.PngjPrematureEnding.values(), 1059459400, com.identy.i.PngjPrematureEnding.values());
+            e1.values(new Object[]{e1.this, hashMap, Boolean.valueOf(!0.isAsPass()), e1.this.FingerActivity.getAsResult()}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -1059459396, com.identy.i.PngjPrematureEnding.values(), 1059459400, com.identy.i.PngjPrematureEnding.values());
         }
     }
 
@@ -619,10 +619,10 @@ public class e1 extends BroadcastReceiver {
 
     /* renamed from: com.identy.e1$e1, reason: collision with other inner class name */
     public class RunnableC0019e1 implements Runnable {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static char[] PngjBadSignature;
@@ -1713,7 +1713,7 @@ public class e1 extends BroadcastReceiver {
         activityManager.getMemoryClass();
         int largeMemoryClass = activityManager.getLargeMemoryClass();
         activityManager.getMemoryInfo(new ActivityManager.MemoryInfo());
-        double d = r1.totalMem / 1.048576E9d;
+        double d = 0.totalMem / 1.048576E9d;
         if (!activityManager.isLowRamDevice() && Runtime.getRuntime().availableProcessors() > 4) {
             if (activityManager.getMemoryClass() < 193) {
                 int i2 = markIntroSetting + 33;
@@ -1862,7 +1862,7 @@ public class e1 extends BroadcastReceiver {
 
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0153, code lost:
     
-        if (r5.toUpperCase().trim().contains("ZEBRA") == false) goto L45;
+        if (0.toUpperCase().trim().contains("ZEBRA") == false) goto L45;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1972,7 +1972,7 @@ public class e1 extends BroadcastReceiver {
 
     /* JADX WARN: Code restructure failed: missing block: B:75:0x003f, code lost:
     
-        if (r0.contains("identy") == false) goto L93;
+        if (0.contains("identy") == false) goto L93;
      */
     /* JADX WARN: Code restructure failed: missing block: B:76:0x0041, code lost:
     
@@ -2212,11 +2212,11 @@ public class e1 extends BroadcastReceiver {
     /* JADX WARN: Can't wrap try/catch for region: R(16:10|(2:12|(13:14|15|16|17|18|(2:20|(2:22|23)(3:24|25|26))|31|(1:33)|34|35|36|37|38))|45|(1:49)|15|16|17|18|(0)|31|(0)|34|35|36|37|38) */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x00f2, code lost:
     
-        r4 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x00f3, code lost:
     
-        r4.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Removed duplicated region for block: B:20:0x008d  */
     /* JADX WARN: Removed duplicated region for block: B:33:0x00bf  */
@@ -2299,39 +2299,39 @@ public class e1 extends BroadcastReceiver {
 
     /* JADX WARN: Code restructure failed: missing block: B:35:0x009f, code lost:
     
-        if (r6 >= r0.getQualityMaxRetries()) goto L52;
+        if (0 >= 0.getQualityMaxRetries()) goto L52;
      */
     /* JADX WARN: Code restructure failed: missing block: B:58:0x011c, code lost:
     
-        if (r5 != false) goto L81;
+        if (0 != false) goto L81;
      */
     /* JADX WARN: Code restructure failed: missing block: B:59:0x0121, code lost:
     
-        r0 = new com.identy.ui.c.getPadSub2(r13.Action);
-        r0.PngjException = com.identy.R.string.id_timed_out_next_detection;
-        r2 = com.identy.R.string.id_retry;
-        r5 = new com.identy.e1.getAsHighestSecurityLevelReached(r13);
-        r0.values = r2;
-        r0.valueOf = r5;
+        0 = new com.identy.ui.c.getPadSub2(0.Action);
+        0.PngjException = com.identy.R.string.id_timed_out_next_detection;
+        0 = com.identy.R.string.id_retry;
+        0 = new com.identy.e1.getAsHighestSecurityLevelReached(0);
+        0.values = 0;
+        0.valueOf = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:60:0x0137, code lost:
     
-        if (r1 == false) goto L84;
+        if (0 == false) goto L84;
      */
     /* JADX WARN: Code restructure failed: missing block: B:61:0x0139, code lost:
     
-        r1 = com.identy.R.string.id_process;
-        r2 = new com.identy.e1.getPadSub1(r13);
-        r0.PngjBadCrcException = r1;
-        r0.PngjBadSignature = r2;
+        0 = com.identy.R.string.id_process;
+        0 = new com.identy.e1.getPadSub1(0);
+        0.PngjBadCrcException = 0;
+        0.PngjBadSignature = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:62:0x0151, code lost:
     
-        r0.show();
+        0.show();
      */
     /* JADX WARN: Code restructure failed: missing block: B:65:0x0145, code lost:
     
-        r0.PngjException = com.identy.R.string.id_timed_out_next_detection_no_skip;
+        0.PngjException = com.identy.R.string.id_timed_out_next_detection_no_skip;
      */
     /* JADX WARN: Code restructure failed: missing block: B:66:0x0149, code lost:
     
@@ -2339,7 +2339,7 @@ public class e1 extends BroadcastReceiver {
      */
     /* JADX WARN: Code restructure failed: missing block: B:67:0x011f, code lost:
     
-        if (r5 != false) goto L81;
+        if (0 != false) goto L81;
      */
     /* JADX WARN: Code restructure failed: missing block: B:82:0x00e1, code lost:
     
@@ -2347,11 +2347,11 @@ public class e1 extends BroadcastReceiver {
      */
     /* JADX WARN: Code restructure failed: missing block: B:93:0x00af, code lost:
     
-        if (r7 >= r0.getSpoofMaxRetries()) goto L52;
+        if (0 >= 0.getSpoofMaxRetries()) goto L52;
      */
     /* JADX WARN: Code restructure failed: missing block: B:95:0x0085, code lost:
     
-        if (r6 >= r0.getQualityMinRetries()) goto L34;
+        if (0 >= 0.getQualityMinRetries()) goto L34;
      */
     /* JADX WARN: Removed duplicated region for block: B:29:0x008d  */
     /* JADX WARN: Removed duplicated region for block: B:38:0x00b6 A[Catch: Exception -> 0x004f, TryCatch #0 {Exception -> 0x004f, blocks: (B:13:0x002c, B:15:0x0036, B:18:0x0046, B:19:0x0053, B:24:0x007a, B:31:0x0098, B:34:0x009e, B:38:0x00b6, B:39:0x00c1, B:43:0x00d6, B:47:0x00e6, B:49:0x00ea, B:51:0x00f0, B:59:0x0121, B:61:0x0139, B:62:0x0151, B:63:0x01cd, B:65:0x0145, B:70:0x015a, B:72:0x0172, B:73:0x0182, B:74:0x017e, B:79:0x018d, B:80:0x01b2, B:81:0x00dd, B:84:0x00bc, B:89:0x00a4, B:92:0x00ab, B:94:0x0081, B:99:0x01d0), top: B:12:0x002c }] */
@@ -2688,9 +2688,9 @@ public class e1 extends BroadcastReceiver {
                     }
                     Object[] objArr6 = (Object[]) ((Field) PngjBadSignature6).get(null);
                     values$1eba2e16 = new Object[4];
-                    values$1eba2e16[0] = new int[]{r10};
+                    values$1eba2e16[0] = new int[]{0};
                     values$1eba2e16[1] = new int[1];
-                    values$1eba2e16[3] = new int[]{r9};
+                    values$1eba2e16[3] = new int[]{0};
                     int i3 = ((int[]) objArr6[3])[0];
                     int i4 = ((int[]) objArr6[0])[0];
                     values$1eba2e16[c] = (String[]) objArr6[c];
@@ -2873,14 +2873,14 @@ public class e1 extends BroadcastReceiver {
         int i10 = ((int[]) values$1eba2e16[c3])[0];
         if (i10 == i9) {
             objArr = new Object[4];
-            objArr[0] = new int[]{r10};
+            objArr[0] = new int[]{0};
             objArr[1] = new int[1];
-            objArr[c3] = new int[]{r9};
+            objArr[c3] = new int[]{0};
             int i11 = ((int[]) values$1eba2e16[1])[0];
             int i12 = ((int[]) values$1eba2e16[c3])[0];
             int i13 = ((int[]) values$1eba2e16[0])[0];
             objArr[c] = (String[]) values$1eba2e16[c];
-            int c6 = defpackage.a.c((~(((int) Runtime.getRuntime().maxMemory()) | 296147671)) | (-738418303), 529, (((~((~r3) | 296147671)) | (-1034411776)) * 529) - 1435847140, i11);
+            int c6 = defpackage.a.c((~(((int) Runtime.getRuntime().maxMemory()) | 296147671)) | (-738418303), 529, (((~((~0) | 296147671)) | (-1034411776)) * 529) - 1435847140, i11);
             int i14 = c6 ^ (c6 << 13);
             int i15 = i14 ^ (i14 >>> 17);
             ((int[]) objArr[1])[0] = i15 ^ (i15 << 5);
@@ -2897,9 +2897,9 @@ public class e1 extends BroadcastReceiver {
             }
             Toast.makeText((Context) null, i10 / (((i10 - 1) * i10) % 2), 0).show();
             objArr = new Object[4];
-            objArr[0] = new int[]{r10};
+            objArr[0] = new int[]{0};
             objArr[1] = new int[1];
-            objArr[c3] = new int[]{r9};
+            objArr[c3] = new int[]{0};
             int i17 = ((int[]) values$1eba2e16[1])[0];
             int i18 = ((int[]) values$1eba2e16[c3])[0];
             int i19 = ((int[]) values$1eba2e16[0])[0];
@@ -2908,7 +2908,7 @@ public class e1 extends BroadcastReceiver {
             int i20 = ~((-856249154) | identityHashCode2);
             int i21 = ~identityHashCode2;
             int i22 = i20 | (~(178316820 | i21));
-            int c7 = defpackage.a.c(144745492 | (~(856249153 | i21)), 516, (((~(identityHashCode2 | (-33571329))) | (~(i21 | (-144745493)))) * 516) + (((i22 | r9) * (-516)) - 1339668471), i17);
+            int c7 = defpackage.a.c(144745492 | (~(856249153 | i21)), 516, (((~(identityHashCode2 | (-33571329))) | (~(i21 | (-144745493)))) * 516) + (((i22 | 0) * (-516)) - 1339668471), i17);
             int i23 = c7 ^ (c7 << 13);
             int i24 = i23 ^ (i23 >>> 17);
             ((int[]) objArr[1])[0] = i24 ^ (i24 << 5);

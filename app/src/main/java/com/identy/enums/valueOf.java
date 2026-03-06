@@ -14,8 +14,8 @@ public enum valueOf {
     NEURO("ve", 98.0d),
     IDENTY("idty", 10.0d);
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     private String PngjExceptionInternal;
     private double PngjOutputException;
 
@@ -48,13 +48,13 @@ public enum valueOf {
         byte[] bArr2 = new byte[b2 + 16];
         int i3 = b2 + 15;
         if (bArr == null) {
-            byte b5 = r8;
+            byte b5 = 0;
             i2 = 0;
-            byte b6 = r6;
-            int i4 = r6;
+            byte b6 = 0;
+            int i4 = 0;
             int r82 = (b6 + b5) - 13;
             i = i4 + 1;
-            b4 = r82;
+            b4 = 0;
             bArr2[i2] = b4;
             if (i2 == i3) {
                 objArr[0] = new String(bArr2, 0);
@@ -67,13 +67,13 @@ public enum valueOf {
             i4 = i5;
             int r822 = (b6 + b5) - 13;
             i = i4 + 1;
-            b4 = r822;
+            b4 = 0;
             bArr2[i2] = b4;
             if (i2 == i3) {
             }
         } else {
-            i = r6;
-            b4 = r8;
+            i = 0;
+            b4 = 0;
             i2 = 0;
             bArr2[i2] = b4;
             if (i2 == i3) {
@@ -96,7 +96,7 @@ public enum valueOf {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~(((int) Process.getElapsedCpuTime()) | 998563154)) | 499673874, 529, (((~((~r0) | 998563154)) | 71836160) * 529) - 1876653424, 35076901);
+                    int c = a.c((~(((int) Process.getElapsedCpuTime()) | 998563154)) | 499673874, 529, (((~((~0) | 998563154)) | 71836160) * 529) - 1876653424, 35076901);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -140,7 +140,7 @@ public enum valueOf {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myUid = Process.myUid();
                     int i = ~((-29364865) | myUid);
-                    int c = a.c((~(myUid | (-137382174))) | (~((~myUid) | (-332142243))) | 302777378, 497, ((i | (~(r6 | (-137382174)))) * 497) - 926510992, 2107420654);
+                    int c = a.c((~(myUid | (-137382174))) | (~((~myUid) | (-332142243))) | 302777378, 497, ((i | (~(0 | (-137382174)))) * 497) - 926510992, 2107420654);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);

@@ -24,12 +24,12 @@ import kotlin.io.ConstantsKt;
 
 /* loaded from: classes2.dex */
 public class GuideNoGuideHelper {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static char[] PngjBadCrcException;
@@ -86,7 +86,7 @@ public class GuideNoGuideHelper {
                 if (j2 > j) {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = defpackage.a.c((~(elapsedCpuTime | (-413392553))) | 37504 | (~((~elapsedCpuTime) | 498851775)), 988, (((~((-413355049) | r5)) | (~(498851775 | elapsedCpuTime))) * 988) - 966743329, 1796799628);
+                    int c = defpackage.a.c((~(elapsedCpuTime | (-413392553))) | 37504 | (~((~elapsedCpuTime) | 498851775)), 988, (((~((-413355049) | 0)) | (~(498851775 | elapsedCpuTime))) * 988) - 966743329, 1796799628);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -428,7 +428,7 @@ public class GuideNoGuideHelper {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) SystemClock.elapsedRealtime())) | (-383430534))) | 270150917, 933, (((~((-115458747) | r0)) | (-383430534)) * (-933)) - 410684824, -1725503618);
+                    int c = defpackage.a.c((~((~((int) SystemClock.elapsedRealtime())) | (-383430534))) | 270150917, 933, (((~((-115458747) | 0)) | (-383430534)) * (-933)) - 410684824, -1725503618);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -622,19 +622,19 @@ public class GuideNoGuideHelper {
 
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0049, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        r6 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = defpackage.a.c((~((~android.os.Process.myPid()) | (-283152968))) | 773653632, 420, ((~(r0 | (-283152968))) * 420) - 978250813, 1043284810);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r6[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.c((~((~android.os.Process.myPid()) | (-283152968))) | 773653632, 420, ((~(0 | (-283152968))) * 420) - 978250813, 1043284810);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:20:0x014f A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:22:0x0150  */
@@ -655,12 +655,12 @@ public class GuideNoGuideHelper {
                 long j3 = ((long[]) objArr[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
             }
-            ((long[]) r6[0])[0] = j + 4929;
-            Fpnative.valueOf = r6;
+            ((long[]) $$a[0])[0] = j + 4929;
+            Fpnative.valueOf = 0;
             StringBuilder sb = new StringBuilder();
             sb.append((fingerDetectionMode.getFinger() == null && fingerDetectionMode.getFinger().equals(Finger.THUMB)) ? "thumb" : "4F");
             sb.append((fingerDetectionMode.getHand() == null && fingerDetectionMode.getHand().equals(Hand.LEFT)) ? "_left" : "_right");
-            int i3 = ((int[]) r6[1])[0];
+            int i3 = ((int[]) $$a[1])[0];
             int i4 = i3 * i3;
             int i5 = -(620460754 * i3);
             int i6 = (i4 & i5) + (i4 | i5);
@@ -722,7 +722,7 @@ public class GuideNoGuideHelper {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~Process.myPid()) | (-35184276))) | 431705407, 398, (((~((-35184276) | r0)) | 431705407) * 398) - 25919653, 536136751);
+                    int c = defpackage.a.c((~((~Process.myPid()) | (-35184276))) | 431705407, 398, (((~((-35184276) | 0)) | 431705407) * 398) - 25919653, 536136751);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -993,7 +993,7 @@ public class GuideNoGuideHelper {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~(Process.myUid() | 553975616)) | 55086336, 529, (((~((~r0) | 553975616)) | 38273024) * 529) - 1876653424, -1518824212);
+                    int c = defpackage.a.c((~(Process.myUid() | 553975616)) | 55086336, 529, (((~((~0) | 553975616)) | 38273024) * 529) - 1876653424, -1518824212);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -1110,80 +1110,80 @@ public class GuideNoGuideHelper {
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0044, code lost:
     
-        r7 = ((long[]) r1[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x005c, code lost:
     
-        if (r7 > r9) goto L17;
+        if (0 > 0) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x009f, code lost:
     
-        r1 = com.identy.GuideNoGuideHelper.$$d;
-        r8 = new java.lang.Object[1];
-        a((short) (-r1[107(0x6b, float:1.5E-43)]), r1[60], (byte) (r1[30] - 1), r8);
-        r2 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r8 = new java.lang.Object[1];
-        a((short) (r1[75] - 1), (byte) (r1[67] - 1), (byte) (-r1[149(0x95, float:2.09E-43)]), r8);
-        r0 = (java.lang.Object[]) r2.getMethod((java.lang.String) r8[0], java.lang.Integer.TYPE).invoke(null, -164435209);
+        0 = com.identy.GuideNoGuideHelper.$$d;
+        0 = new java.lang.Object[1];
+        a((short) (-$$a[107(0x6b, float:1.5E-43)]), $$a[60], (byte) ($$a[30] - 1), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        a((short) ($$a[75] - 1), (byte) ($$a[67] - 1), (byte) (-$$a[149(0x95, float:2.09E-43)]), 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, -164435209);
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x00f2, code lost:
     
-        r9 = ((long[]) r0[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0180, code lost:
     
-        r11 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0181, code lost:
     
-        r12 = r11.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0185, code lost:
     
-        if (r12 != null) goto L25;
+        if (0 != null) goto L25;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0187, code lost:
     
-        throw r12;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0188, code lost:
     
-        throw r11;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x001c, code lost:
     
-        if (r1 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0017, code lost:
     
-        if (r1 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x001e, code lost:
     
-        r0 = r0 + 59;
-        com.identy.GuideNoGuideHelper.PngjBadSignature = r0 % 128;
+        0 = 0 + 59;
+        com.identy.GuideNoGuideHelper.PngjBadSignature = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0025, code lost:
     
-        if ((r0 % 2) == 0) goto L14;
+        if ((0 % 2) == 0) goto L14;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0027, code lost:
     
-        r7 = ((long[]) r1[1])[1];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, new java.lang.Object[1])).longValue();
+        0 = ((long[]) $$a[1])[1];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, new java.lang.Object[1])).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0041, code lost:
     
-        if (r7 > r9) goto L17;
+        if (0 > 0) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x005f, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = defpackage.a.c((~android.os.Process.myPid()) | 494886911, 756, (((~(494886911 | r1)) | 4002368) * (-756)) - 1242637773, -164435209);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.c((~android.os.Process.myPid()) | 494886911, 756, (((~(494886911 | 0)) | 4002368) * (-756)) - 1242637773, -164435209);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1321,21 +1321,21 @@ public class GuideNoGuideHelper {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004b, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0030, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = android.os.Process.myUid();
-        r6 = ~r0;
-        r0 = defpackage.a.c((~(r0 | (-37981697))) | ((~(466861576 | r6)) | 536870976), 676, (((~(965750856 | r6)) | (-1003732553)) * 676) + (((1003732552 | r0) * (-676)) - 1717714909), -972224104);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = android.os.Process.myUid();
+        0 = ~0;
+        0 = defpackage.a.c((~(0 | (-37981697))) | ((~(466861576 | 0)) | 536870976), 676, (((~(965750856 | 0)) | (-1003732553)) * 676) + (((1003732552 | 0) * (-676)) - 1717714909), -972224104);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Type inference failed for: r2v25, types: [boolean, int] */
     /*
@@ -1355,15 +1355,15 @@ public class GuideNoGuideHelper {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 5008;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 5008;
+                Fpnative.valueOf = 0;
                 SharedPreferences.Editor edit = PreferenceManager.getDefaultSharedPreferences(activity).edit();
                 StringBuilder sb = new StringBuilder("v1_intro_shown_");
                 sb.append(getKey(FingerDetectionMode.L4F, false));
                 edit.putBoolean(sb.toString(), z);
                 StringBuilder sb2 = new StringBuilder("v1_intro_shown_");
                 FingerDetectionMode fingerDetectionMode = FingerDetectionMode.R4F;
-                int i2 = ((int[]) r2[1])[0];
+                int i2 = ((int[]) $$a[1])[0];
                 int i3 = ((((i2 * i2) - (~(-(2012947794 * i2)))) - 1) - (~(-(i2 * 1033728842)))) - 1;
                 int i4 = ((i3 | (-1961990204)) << 1) - ((-1961990204) ^ i3);
                 int i5 = i4 >> 21;
@@ -1529,7 +1529,7 @@ public class GuideNoGuideHelper {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) Runtime.getRuntime().totalMemory())) | 310950466)) | (-852344515), 933, (((~((-809839747) | r0)) | 310950466) * (-933)) - 1775862216, 1549362678);
+                    int c = defpackage.a.c((~((~((int) Runtime.getRuntime().totalMemory())) | 310950466)) | (-852344515), 933, (((~((-809839747) | 0)) | 310950466) * (-933)) - 1775862216, 1549362678);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -1615,7 +1615,7 @@ public class GuideNoGuideHelper {
                         int myUid = Process.myUid();
                         int i2 = ~myUid;
                         int i3 = (~((-1058533527) | i2)) | 554922006;
-                        int c = defpackage.a.c(~(i2 | 559644246), 713, ((~(myUid | 1063255766)) * 1426) + (((i3 | r0) * (-713)) - 1086561196), 1427098041);
+                        int c = defpackage.a.c(~(i2 | 559644246), 713, ((~(myUid | 1063255766)) * 1426) + (((i3 | 0) * (-713)) - 1086561196), 1427098041);
                         int i4 = c ^ (c << 13);
                         int i5 = i4 ^ (i4 >>> 17);
                         ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);

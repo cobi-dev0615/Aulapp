@@ -25,8 +25,8 @@ jadx.core.utils.exceptions.JadxRuntimeException: Init of enum field 'NO_BOXES' u
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* loaded from: classes2.dex */
 public final class FingerError {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     public static final FingerError BACKHAND;
     public static final FingerError BE_INSIDE_GUIDE;
     public static final FingerError CORRECT;
@@ -89,9 +89,9 @@ public final class FingerError {
         byte[] bArr = $$a;
         byte[] bArr2 = new byte[i4];
         if (bArr == null) {
-            byte b2 = r8;
+            byte b2 = 0;
             i3 = 0;
-            int i6 = r8;
+            int i6 = 0;
             i5 = (i5 + b2) - 13;
             i = i3;
             i2 = i6 + 1;
@@ -112,7 +112,7 @@ public final class FingerError {
             }
         } else {
             i = 0;
-            i2 = r8;
+            i2 = 0;
             i3 = i + 1;
             bArr2[i] = (byte) i5;
             if (i3 == i4) {
@@ -265,7 +265,7 @@ public final class FingerError {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~System.identityHashCode(this)) | (-69304598))) | (-669381462), 241, (((~((-618787670) | r0)) | 549483072) * (-241)) - 2107501451, -1088125361);
+                    int c = a.c((~((~System.identityHashCode(this)) | (-69304598))) | (-669381462), 241, (((~((-618787670) | 0)) | 549483072) * (-241)) - 2107501451, -1088125361);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

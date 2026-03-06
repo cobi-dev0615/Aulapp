@@ -38,10 +38,10 @@ import org.identy.nativealgo.NativeAlgoUtils;
 
 /* loaded from: classes2.dex */
 public class Verify2TActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int getFingerPrintQualityScore;
@@ -587,9 +587,9 @@ public class Verify2TActivity extends FingerActivity {
                         }
                         java.lang.Object[] objArr6 = (java.lang.Object[]) ((Field) PngjBadSignature4).get(null);
                         PngjException$1eba2e16 = new java.lang.Object[4];
-                        PngjException$1eba2e16[0] = new int[]{r5};
+                        PngjException$1eba2e16[0] = new int[]{0};
                         PngjException$1eba2e16[1] = new int[1];
-                        PngjException$1eba2e16[3] = new int[]{r4};
+                        PngjException$1eba2e16[3] = new int[]{0};
                         int i8 = ((int[]) objArr6[3])[0];
                         int i9 = ((int[]) objArr6[0])[0];
                         PngjException$1eba2e16[c] = (String[]) objArr6[c];
@@ -602,9 +602,9 @@ public class Verify2TActivity extends FingerActivity {
                         i3 = ((int[]) PngjException$1eba2e16[3])[0];
                         if (i3 != i2) {
                             java.lang.Object[] objArr7 = new java.lang.Object[4];
-                            objArr7[0] = new int[]{r6};
+                            objArr7[0] = new int[]{0};
                             objArr7[1] = new int[1];
-                            objArr7[3] = new int[]{r5};
+                            objArr7[3] = new int[]{0};
                             int i12 = ((int[]) PngjException$1eba2e16[1])[0];
                             int i13 = ((int[]) PngjException$1eba2e16[3])[0];
                             int i14 = ((int[]) PngjException$1eba2e16[0])[0];
@@ -629,14 +629,14 @@ public class Verify2TActivity extends FingerActivity {
                         iArr[i18] = 1;
                         Toast.makeText((Context) null, iArr[((i3 * i18) % 2) - 1], 1).show();
                         java.lang.Object[] objArr8 = new java.lang.Object[4];
-                        objArr8[0] = new int[]{r6};
+                        objArr8[0] = new int[]{0};
                         objArr8[1] = new int[1];
-                        objArr8[3] = new int[]{r5};
+                        objArr8[3] = new int[]{0};
                         int i19 = ((int[]) PngjException$1eba2e16[1])[0];
                         int i20 = ((int[]) PngjException$1eba2e16[3])[0];
                         int i21 = ((int[]) PngjException$1eba2e16[0])[0];
                         objArr8[c] = (String[]) PngjException$1eba2e16[c];
-                        int c5 = defpackage.a.c(~(System.identityHashCode(this) | (-4211207)), 283, (((~((-694215247) | r1)) | 690004040) * (-283)) - 1262786323, i19);
+                        int c5 = defpackage.a.c(~(System.identityHashCode(this) | (-4211207)), 283, (((~((-694215247) | 0)) | 690004040) * (-283)) - 1262786323, i19);
                         int i22 = c5 ^ (c5 << 13);
                         int i23 = i22 ^ (i22 >>> 17);
                         ((int[]) objArr8[1])[0] = i23 ^ (i23 << 5);

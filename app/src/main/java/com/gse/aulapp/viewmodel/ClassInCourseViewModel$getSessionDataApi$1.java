@@ -49,7 +49,7 @@ public final class ClassInCourseViewModel$getSessionDataApi$1 extends SuspendLam
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassInCourseViewModel$getSessionDataApi$1(Context context, String str, ClassInCourseViewModel classInCourseViewModel, boolean z, NavController navController, Continuation<? super ClassInCourseViewModel$getSessionDataApi$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$sessionID = str;
         this.this$0 = classInCourseViewModel;
@@ -59,7 +59,7 @@ public final class ClassInCourseViewModel$getSessionDataApi$1 extends SuspendLam
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ClassInCourseViewModel$getSessionDataApi$1(this.$context, this.$sessionID, this.this$0, this.$startChronometer, this.$findNavController, continuation);
+        return (Continuation<Unit>) (Object) new ClassInCourseViewModel$getSessionDataApi$1(this.$context, this.$sessionID, this.this$0, this.$startChronometer, this.$findNavController, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -88,7 +88,7 @@ public final class ClassInCourseViewModel$getSessionDataApi$1 extends SuspendLam
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ClassInCourseViewModel$getSessionDataApi$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ClassInCourseViewModel$getSessionDataApi$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
     @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)

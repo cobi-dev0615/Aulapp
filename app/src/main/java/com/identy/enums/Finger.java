@@ -15,8 +15,8 @@ public enum Finger implements Serializable {
     RING("ring"),
     LITTLE("little");
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     String a;
 
     static {
@@ -92,7 +92,7 @@ public enum Finger implements Serializable {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myPid = Process.myPid();
-                    int c = a.c(~(myPid | 293969574), 113, (((~((~myPid) | 1070046950)) | (~((-792858855) | myPid)) | 16781478) * (-113)) + ((((~(293969574 | r6)) | 792858854) * 226) - 41024400), -811822094);
+                    int c = a.c(~(myPid | 293969574), 113, (((~((~myPid) | 1070046950)) | (~((-792858855) | myPid)) | 16781478) * (-113)) + ((((~(293969574 | 0)) | 792858854) * 226) - 41024400), -811822094);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

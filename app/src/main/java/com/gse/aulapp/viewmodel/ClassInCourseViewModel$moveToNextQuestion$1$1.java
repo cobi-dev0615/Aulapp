@@ -51,14 +51,14 @@ public final class ClassInCourseViewModel$moveToNextQuestion$1$1 extends Suspend
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassInCourseViewModel$moveToNextQuestion$1$1(List<QuestionDto> list, ClassInCourseViewModel classInCourseViewModel, Continuation<? super ClassInCourseViewModel$moveToNextQuestion$1$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$questions = list;
         this.this$0 = classInCourseViewModel;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ClassInCourseViewModel$moveToNextQuestion$1$1(this.$questions, this.this$0, continuation);
+        return (Continuation<Unit>) (Object) new ClassInCourseViewModel$moveToNextQuestion$1$1(this.$questions, this.this$0, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -151,6 +151,6 @@ public final class ClassInCourseViewModel$moveToNextQuestion$1$1 extends Suspend
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ClassInCourseViewModel$moveToNextQuestion$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ClassInCourseViewModel$moveToNextQuestion$1$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

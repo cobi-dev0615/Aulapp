@@ -31,10 +31,10 @@ import org.identy.nativealgo.NativeAlgoUtils;
 
 /* loaded from: classes2.dex */
 public class EnrollThumbActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int getFingerPrintQualityScore;
@@ -489,15 +489,15 @@ public class EnrollThumbActivity extends FingerActivity {
                             int capsMode = TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0) + 28;
                             int gidForName = 720 - Process.getGidForName(BuildConfig.FLAVOR);
                             Object[] objArr4 = new Object[1];
-                            b((byte) 22, r1[5], (byte) ($$a[25] - 1), objArr4);
+                            b((byte) 22, $$a[5], (byte) ($$a[25] - 1), objArr4);
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf3, capsMode, gidForName, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                        PngjException$1eba2e16 = new Object[]{new int[]{r8}, new int[1], r0, new int[]{r4}};
+                        PngjException$1eba2e16 = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i = ((int[]) objArr5[3])[0];
                         int i2 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
-                        int c3 = defpackage.a.c((~System.identityHashCode(this)) | 931018483, -828, (((~(931018483 | r0)) | 103547490) * (-828)) - 1338267583, -1625002363);
+                        int c3 = defpackage.a.c((~System.identityHashCode(this)) | 931018483, -828, (((~(931018483 | 0)) | 103547490) * (-828)) - 1338267583, -1625002363);
                         int i3 = c3 ^ (c3 << 13);
                         int i4 = i3 ^ (i3 >>> 17);
                         ((int[]) PngjException$1eba2e16[1])[0] = i4 ^ (i4 << 5);
@@ -514,7 +514,7 @@ public class EnrollThumbActivity extends FingerActivity {
                             throw null;
                         }
                         getFingerPrintQualityScore = (valueOf + 55) % 128;
-                        Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r7}};
+                        Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i5 = ((int[]) PngjException$1eba2e16[1])[0];
                         int i6 = ((int[]) PngjException$1eba2e16[3])[0];
                         int i7 = ((int[]) PngjException$1eba2e16[0])[0];
@@ -566,7 +566,7 @@ public class EnrollThumbActivity extends FingerActivity {
                 int pressedStateDuration2 = 28 - (ViewConfiguration.getPressedStateDuration() >> 16);
                 int rgb = (-16776495) - Color.rgb(0, 0, 0);
                 Object[] objArr11 = new Object[1];
-                b((byte) 22, r8[5], (byte) ($$a[c2] - 1), objArr11);
+                b((byte) 22, $$a[5], (byte) ($$a[c2] - 1), objArr11);
                 PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(threadPriority, pressedStateDuration2, rgb, -779023007, false, (String) objArr11[0], null);
             }
             ((Field) PngjBadSignature5).set(null, PngjException$1eba2e16);
@@ -597,7 +597,7 @@ public class EnrollThumbActivity extends FingerActivity {
                 int i2 = 722 - (AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1));
                 byte b = $$a[23];
                 Object[] objArr2 = new Object[1];
-                b(b, (byte) (b & 13), r2[25], objArr2);
+                b(b, (byte) (b & 13), $$a[25], objArr2);
                 PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(blue, i, i2, 1560737410, false, (String) objArr2[0], new Class[]{Context.class, Integer.TYPE, getPadSub3B15685$PngjException.class});
             }
             ((Method) PngjBadSignature).invoke(null, objArr);

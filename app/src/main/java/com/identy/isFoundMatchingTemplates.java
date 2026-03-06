@@ -46,12 +46,12 @@ import org.identy.opencv.core.Mat;
 
 /* loaded from: classes2.dex */
 final class isFoundMatchingTemplates extends e1 {
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final byte[] $$g = null;
-    private static final int $$h = 0;
-    private static final byte[] $$l = null;
-    private static final int $$m = 0;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  byte[] $$g = null;
+    private static  int $$h = 0;
+    private static  byte[] $$l = null;
+    private static  int $$m = 0;
     private static int $10;
     private static int $11;
     private static int destroy;
@@ -89,10 +89,10 @@ final class isFoundMatchingTemplates extends e1 {
     }
 
     public class PngjBadSignature implements Runnable {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static int PngjBadCrcException;
@@ -354,11 +354,11 @@ final class isFoundMatchingTemplates extends e1 {
                         if (z5) {
                             byte[] bArr6 = valueOf;
                             pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                            pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr6[r1] ^ j2)) + s)) ^ b));
+                            pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr6[0] ^ j2)) + s)) ^ b));
                         } else {
                             short[] sArr = PngjPrematureEnding;
                             pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                            pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[r1] ^ j2)) + s)) ^ b));
+                            pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[0] ^ j2)) + s)) ^ b));
                         }
                         sb.append(pngjPrematureEnding.valueOf);
                         pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;
@@ -1149,12 +1149,12 @@ final class isFoundMatchingTemplates extends e1 {
 
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0022, code lost:
     
-        r1 = com.identy.isFoundMatchingTemplates.getServerRequest + 7;
-        com.identy.isFoundMatchingTemplates.destroy = r1 % 128;
+        0 = com.identy.isFoundMatchingTemplates.getServerRequest + 7;
+        com.identy.isFoundMatchingTemplates.destroy = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x002c, code lost:
     
-        if ((r1 % 2) == 0) goto L12;
+        if ((0 % 2) == 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x002e, code lost:
     
@@ -1166,28 +1166,28 @@ final class isFoundMatchingTemplates extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0020, code lost:
     
-        if (r20.getMatchingTime != false) goto L9;
+        if (0.getMatchingTime != false) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0018, code lost:
     
-        if (r20.getMatchingTime != false) goto L9;
+        if (0.getMatchingTime != false) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0030, code lost:
     
-        r20.getMatchingTime = true;
-        r20.getData = java.lang.Integer.valueOf(r20.Action.getWindowManager().getDefaultDisplay().getRotation() + r23);
-        r3 = (org.c.a.PngjBadCrcException) r20.Action.findViewById(com.identy.R.id.tracking_overlay);
-        r20.Capture2TActivity = r3;
-        r3.setLayerType(1, null);
-        r4 = r20.getPadSub2 / 7.0d;
-        r7 = r20.getPadSub3;
-        r20.CaptureRolledFingersActivity = new android.graphics.RectF((int) r4, (int) (r7 / 6.0d), (int) (r2 - r4), (int) (r7 - (r7 / 3.0d)));
-        r20.getScore = (int) (r1.width() / 3.7d);
-        r20.isQualityFailed = (int) (r20.CaptureRolledFingersActivity.width() / 2.0f);
+        0.getMatchingTime = true;
+        0.getData = java.lang.Integer.valueOf(0.Action.getWindowManager().getDefaultDisplay().getRotation() + 0);
+        0 = (org.c.a.PngjBadCrcException) 0.Action.findViewById(com.identy.R.id.tracking_overlay);
+        0.Capture2TActivity = 0;
+        0.setLayerType(1, null);
+        0 = 0.getPadSub2 / 7.0d;
+        0 = 0.getPadSub3;
+        0.CaptureRolledFingersActivity = new android.graphics.RectF((int) 0, (int) (0 / 6.0d), (int) (0 - 0), (int) (0 - (0 / 3.0d)));
+        0.getScore = (int) (0.width() / 3.7d);
+        0.isQualityFailed = (int) (0.CaptureRolledFingersActivity.width() / 2.0f);
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0095, code lost:
     
-        r20.getL2Score = new com.identy.ui.d.values(r20.Action, 7.0d, 6.0d, 7.0d, 3.0d, com.identy.IdentySdk.getInstance().getFingerPrintDrawable(), com.identy.IdentySdk.getInstance().isDisableOuterBox(), 90, true, false, false, r20.uxd565jk, r20.cvtyuv2bgr);
+        0.getL2Score = new com.identy.ui.d.values(0.Action, 7.0d, 6.0d, 7.0d, 3.0d, com.identy.IdentySdk.getInstance().getFingerPrintDrawable(), com.identy.IdentySdk.getInstance().isDisableOuterBox(), 90, true, false, false, 0.uxd565jk, 0.cvtyuv2bgr);
      */
     @Override // com.identy.e1
     /*
@@ -1281,12 +1281,12 @@ final class isFoundMatchingTemplates extends e1 {
             java.lang.Object[] objArr9 = (java.lang.Object[]) ((Field) PngjBadSignature3).get(null);
             objArr2 = new java.lang.Object[3];
             objArr2[0] = new int[1];
-            objArr2[1] = new int[]{r13};
-            objArr2[c4] = new int[]{r4};
+            objArr2[1] = new int[]{0};
+            objArr2[c4] = new int[]{0};
             int i5 = ((int[]) objArr9[1])[0];
             int i6 = ((int[]) objArr9[c4])[0];
             int uptimeMillis = (int) SystemClock.uptimeMillis();
-            int c7 = defpackage.a.c(uptimeMillis | 872284159, 220, (((~((~uptimeMillis) | 863884411)) | 600358823) * (-440)) + ((((~(872284159 | r11)) | 591959075) * 220) - 676811278), -98945853);
+            int c7 = defpackage.a.c(uptimeMillis | 872284159, 220, (((~((~uptimeMillis) | 863884411)) | 600358823) * (-440)) + ((((~(872284159 | 0)) | 591959075) * 220) - 676811278), -98945853);
             int i7 = c7 ^ (c7 << 13);
             int i8 = i7 ^ (i7 >>> 17);
             ((int[]) objArr2[0])[0] = i8 ^ (i8 << 5);
@@ -1406,8 +1406,8 @@ final class isFoundMatchingTemplates extends e1 {
                 }
                 java.lang.Object[] objArr19 = (java.lang.Object[]) ((Field) PngjBadSignature8).get(null);
                 objArr3 = new java.lang.Object[5];
-                objArr3[2] = new int[]{r15};
-                objArr3[c3] = new int[]{r14};
+                objArr3[2] = new int[]{0};
+                objArr3[c3] = new int[]{0};
                 objArr3[4] = new int[1];
                 int i19 = ((int[]) objArr19[c3])[0];
                 int i20 = ((int[]) objArr19[2])[0];
@@ -1509,8 +1509,8 @@ final class isFoundMatchingTemplates extends e1 {
             int i30 = ((int[]) objArr3[c3])[0];
             if (i30 == i29) {
                 java.lang.Object[] objArr27 = new java.lang.Object[5];
-                objArr27[2] = new int[]{r14};
-                objArr27[c3] = new int[]{r13};
+                objArr27[2] = new int[]{0};
+                objArr27[c3] = new int[]{0};
                 objArr27[i2] = new int[1];
                 int i31 = ((int[]) objArr3[i2])[0];
                 int i32 = ((int[]) objArr3[c3])[0];
@@ -1552,9 +1552,9 @@ final class isFoundMatchingTemplates extends e1 {
                     }
                     java.lang.Object[] objArr30 = (java.lang.Object[]) ((Field) PngjBadSignature12).get(null);
                     objArr4 = new java.lang.Object[i2];
-                    objArr4[0] = new int[]{r9};
+                    objArr4[0] = new int[]{0};
                     objArr4[1] = new int[1];
-                    objArr4[c3] = new int[]{r8};
+                    objArr4[c3] = new int[]{0};
                     int i36 = ((int[]) objArr30[c3])[0];
                     int i37 = ((int[]) objArr30[0])[0];
                     objArr4[2] = (String[]) objArr30[2];

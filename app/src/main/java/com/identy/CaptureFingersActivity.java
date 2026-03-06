@@ -29,10 +29,10 @@ import kotlin.UInt;
 
 /* loaded from: classes2.dex */
 public class CaptureFingersActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static long PngjBadCrcException;
@@ -399,7 +399,7 @@ public class CaptureFingersActivity extends FingerActivity {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf, green, keyCodeFromString, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                        PngjBadSignature$52c725b = new Object[]{new int[]{r8}, new int[1], r0, new int[]{r7}};
+                        PngjBadSignature$52c725b = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i2 = ((int[]) objArr5[3])[0];
                         int i3 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
@@ -413,7 +413,7 @@ public class CaptureFingersActivity extends FingerActivity {
                         int i9 = i8 ^ (i8 >>> 17);
                         ((int[]) PngjBadSignature$52c725b[1])[0] = i9 ^ (i9 << 5);
                         if (((int[]) PngjBadSignature$52c725b[3])[0] != ((int[]) PngjBadSignature$52c725b[0])[0]) {
-                            Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r7}};
+                            Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i10 = ((int[]) PngjBadSignature$52c725b[1])[0];
                             int i11 = ((int[]) PngjBadSignature$52c725b[3])[0];
                             int i12 = ((int[]) PngjBadSignature$52c725b[0])[0];

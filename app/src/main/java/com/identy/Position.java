@@ -22,8 +22,8 @@ jadx.core.utils.exceptions.JadxRuntimeException: Init of enum field 'RIGHT_THUMB
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* loaded from: classes2.dex */
 public final class Position {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     public static final Position LEFT_INDEX;
     public static final Position LEFT_LITTLE;
     public static final Position LEFT_MIDDLE;
@@ -38,6 +38,7 @@ public final class Position {
     private static final /* synthetic */ Position[] c;
     Hand a;
     Finger b;
+    private final int ordinal_value;
 
     public static /* synthetic */ class PngjBadCrcException {
         static final /* synthetic */ int[] valueOf;
@@ -103,8 +104,13 @@ public final class Position {
     }
 
     private Position(String str, int i, Hand hand, Finger finger) {
+        this.ordinal_value = i;
         this.a = hand;
         this.b = finger;
+    }
+
+    public int ordinal() {
+        return this.ordinal_value;
     }
 
     private static /* synthetic */ Position[] a() {
@@ -182,7 +188,7 @@ public final class Position {
                     int myUid = Process.myUid();
                     int i3 = ~myUid;
                     int i4 = (~((-920715893) | i3)) | 270532660;
-                    int c2 = defpackage.a.c(~(i3 | 421826612), 713, ((~(myUid | 1072009844)) * 1426) + (((i4 | r0) * (-713)) - 46011664), 1572082045);
+                    int c2 = defpackage.a.c(~(i3 | 421826612), 713, ((~(myUid | 1072009844)) * 1426) + (((i4 | 0) * (-713)) - 46011664), 1572082045);
                     int i5 = c2 ^ (c2 << 13);
                     int i6 = i5 ^ (i5 >>> 17);
                     ((int[]) objArr[1])[0] = i6 ^ (i6 << 5);
@@ -393,7 +399,7 @@ public final class Position {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myTid = Process.myTid();
-                    int c2 = defpackage.a.c(~(myTid | (-354455475)), 113, (((~((~myTid) | (-354422067))) | (~((-144433806) | myTid)) | 144400397) * (-113)) + ((((~((-354455475) | r6)) | 144433805) * 226) - 41024400), 712215623);
+                    int c2 = defpackage.a.c(~(myTid | (-354455475)), 113, (((~((~myTid) | (-354422067))) | (~((-144433806) | myTid)) | 144400397) * (-113)) + ((((~((-354455475) | 0)) | 144433805) * 226) - 41024400), 712215623);
                     int i = c2 ^ (c2 << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -437,7 +443,7 @@ public final class Position {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c2 = defpackage.a.c((~(identityHashCode | 178323558)) | (~((~identityHashCode) | (-33620033))) | (-465269248), 717, ((((~(r5 | 178323558)) | (-465269248)) | (~((-33620033) | identityHashCode))) * 717) - 237295238, -1066307536);
+                    int c2 = defpackage.a.c((~(identityHashCode | 178323558)) | (~((~identityHashCode) | (-33620033))) | (-465269248), 717, ((((~(0 | 178323558)) | (-465269248)) | (~((-33620033) | identityHashCode))) * 717) - 237295238, -1066307536);
                     int i = c2 ^ (c2 << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

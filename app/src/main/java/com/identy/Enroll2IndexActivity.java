@@ -30,10 +30,10 @@ import java.util.List;
 
 /* loaded from: classes2.dex */
 public class Enroll2IndexActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int[] PngjBadCrcException;
@@ -445,16 +445,16 @@ public class Enroll2IndexActivity extends FingerActivity {
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0026, code lost:
     
-        r4 = com.identy.Enroll2IndexActivity.getScore + 35;
-        com.identy.Enroll2IndexActivity.getFingerPrintQualityScore = r4 % 128;
+        0 = com.identy.Enroll2IndexActivity.getScore + 35;
+        com.identy.Enroll2IndexActivity.getFingerPrintQualityScore = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0030, code lost:
     
-        if ((r4 % 2) != 0) goto L18;
+        if ((0 % 2) != 0) goto L18;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0032, code lost:
     
-        r4 = 40 / 0;
+        0 = 40 / 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0035, code lost:
     
@@ -466,15 +466,15 @@ public class Enroll2IndexActivity extends FingerActivity {
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0024, code lost:
     
-        if (r6 == false) goto L9;
+        if (0 == false) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0016, code lost:
     
-        if (r6 == false) goto L9;
+        if (0 == false) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0038, code lost:
     
-        if (r3.getAsHighestSecurityLevelReached != false) goto L16;
+        if (0.getAsHighestSecurityLevelReached != false) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x003a, code lost:
     
@@ -482,10 +482,10 @@ public class Enroll2IndexActivity extends FingerActivity {
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x003b, code lost:
     
-        r3.values.clear();
-        r3.values.putAll(r4);
-        r3.onErrorResponse.PngjException(com.identy.R.string.id_processing);
-        new com.identy.getAsHighestSecurityLevelReached(r2, new com.identy.Enroll2IndexActivity.PngjBadSignature(r2, r4, r5)).PngjException(r3.values, com.identy.e1.PngjInputException);
+        0.values.clear();
+        0.values.putAll(0);
+        0.onErrorResponse.PngjException(com.identy.R.string.id_processing);
+        new com.identy.getAsHighestSecurityLevelReached(0, new com.identy.Enroll2IndexActivity.PngjBadSignature(0, 0, 0)).PngjException(0.values, com.identy.e1.PngjInputException);
      */
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
     /*
@@ -571,7 +571,7 @@ public class Enroll2IndexActivity extends FingerActivity {
                             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c3, size, keyRepeatDelay, -779023007, false, (String) objArr5[0], null);
                         }
                         Object[] objArr6 = (Object[]) ((Field) PngjBadSignature3).get(null);
-                        objArr = new Object[]{new int[]{r6}, new int[1], r0, new int[]{r5}};
+                        objArr = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i5 = ((int[]) objArr6[3])[0];
                         int i6 = ((int[]) objArr6[0])[0];
                         String[] strArr = (String[]) objArr6[2];
@@ -601,7 +601,7 @@ public class Enroll2IndexActivity extends FingerActivity {
                             throw new RuntimeException(String.valueOf(i3));
                         }
                         getScore = (getFingerPrintQualityScore + 35) % 128;
-                        Object[] objArr7 = {new int[]{r7}, new int[1], r1, new int[]{r6}};
+                        Object[] objArr7 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i10 = ((int[]) objArr[1])[0];
                         int i11 = ((int[]) objArr[3])[0];
                         int i12 = ((int[]) objArr[0])[0];

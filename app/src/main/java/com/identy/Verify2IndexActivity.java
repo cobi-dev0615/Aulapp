@@ -36,10 +36,10 @@ import java.util.Map;
 
 /* loaded from: classes2.dex */
 public class Verify2IndexActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int getFingerPrintQualityScore;
@@ -75,12 +75,12 @@ public class Verify2IndexActivity extends FingerActivity {
         /* JADX WARN: Can't wrap try/catch for region: R(6:(14:14|15|(4:18|19|21|16)|90|91|(1:93)(1:115)|94|95|96|97|98|99|100|101)|30|31|32|33|(2:35|(2:37|38)(5:40|41|(1:43)(1:47)|44|45))(7:52|53|(1:55)|56|(2:79|80)|58|(2:60|61)(2:62|(4:64|(1:66)(2:69|(1:71)(1:72))|67|68)(2:73|(2:75|76)(2:77|78))))) */
         /* JADX WARN: Code restructure failed: missing block: B:86:0x0190, code lost:
         
-            r0 = move-exception;
+            0 = move-exception;
          */
         /* JADX WARN: Code restructure failed: missing block: B:87:0x0191, code lost:
         
-            r0.printStackTrace();
-            r0 = 0;
+            0.printStackTrace();
+            0 = 0;
          */
         /* JADX WARN: Removed duplicated region for block: B:27:0x017d A[Catch: Exception -> 0x0181, TRY_LEAVE, TryCatch #8 {Exception -> 0x0181, blocks: (B:25:0x0177, B:27:0x017d), top: B:24:0x0177 }] */
         /* JADX WARN: Removed duplicated region for block: B:35:0x01b3  */
@@ -339,7 +339,7 @@ public class Verify2IndexActivity extends FingerActivity {
         byte[] bArr2 = new byte[i3 + 13];
         int i5 = i3 + 12;
         if (bArr == null) {
-            byte b3 = r8;
+            byte b3 = 0;
             i = 0;
             int i6 = i4;
             int i7 = i6;
@@ -365,7 +365,7 @@ public class Verify2IndexActivity extends FingerActivity {
             }
         } else {
             i = 0;
-            i2 = r8;
+            i2 = 0;
             int i822 = i4 + 1;
             bArr2[i] = (byte) i2;
             if (i == i5) {
@@ -611,7 +611,7 @@ public class Verify2IndexActivity extends FingerActivity {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(resolveOpacity, alpha, mirror, -779023007, false, (String) objArr4[0], null);
                         }
                         java.lang.Object[] objArr5 = (java.lang.Object[]) ((Field) PngjBadSignature2).get(null);
-                        values$1eba2e16 = new java.lang.Object[]{new int[]{r6}, new int[1], r0, new int[]{r5}};
+                        values$1eba2e16 = new java.lang.Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i4 = ((int[]) objArr5[3])[0];
                         int i5 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
@@ -633,7 +633,7 @@ public class Verify2IndexActivity extends FingerActivity {
                             throw null;
                         }
                         getFingerPrintQualityScore = (getScore + 51) % 128;
-                        java.lang.Object[] objArr6 = {new int[]{r6}, new int[1], r1, new int[]{r5}};
+                        java.lang.Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i9 = ((int[]) values$1eba2e16[1])[0];
                         int i10 = ((int[]) values$1eba2e16[3])[0];
                         int i11 = ((int[]) values$1eba2e16[0])[0];

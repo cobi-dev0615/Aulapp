@@ -58,10 +58,10 @@ public class SlapOutput {
             }
             byte b = $$a[27];
             Object[] objArr3 = new Object[1];
-            a(b, (short) (b | 135), r1[77], objArr3);
+            a(b, (short) (b | 135), $$a[77], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[4], (short) 92, r1[27], objArr4);
+            a($$a[4], (short) 92, $$a[27], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1696701493);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4903;
@@ -191,10 +191,10 @@ public class SlapOutput {
             }
             byte b = $$a[27];
             Object[] objArr3 = new Object[1];
-            a(b, (short) (b | 135), r1[77], objArr3);
+            a(b, (short) (b | 135), $$a[77], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[4], (short) 92, r1[27], objArr4);
+            a($$a[4], (short) 92, $$a[27], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -385120929);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4895;
@@ -305,7 +305,7 @@ public class SlapOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myUid = Process.myUid();
-                    int c = defpackage.a.c((~(myUid | 191090274)) | (~((~myUid) | (-191090275))) | (~((-307799006) | myUid)), 959, ((((~((-307799006) | r5)) | (~((-191090275) | myUid))) | (~(r5 | 191090274))) * 959) - 1374386114, 588122372);
+                    int c = defpackage.a.c((~(myUid | 191090274)) | (~((~myUid) | (-191090275))) | (~((-307799006) | myUid)), 959, ((((~((-307799006) | 0)) | (~((-191090275) | myUid))) | (~(0 | 191090274))) * 959) - 1374386114, 588122372);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -322,18 +322,18 @@ public class SlapOutput {
             }
             byte b = $$a[27];
             Object[] objArr3 = new Object[1];
-            a(b, (short) (b | 135), r1[77], objArr3);
+            a(b, (short) (b | 135), $$a[77], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[4], (short) 92, r1[27], objArr4);
+            a($$a[4], (short) 92, $$a[27], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 588122372);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4940;
             Fpnative.valueOf = objArr;
             this.PngjException = slap;
-            while (r15.hasNext()) {
+            while (0.hasNext()) {
             }
-            while (r15.hasNext()) {
+            while (0.hasNext()) {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -422,10 +422,10 @@ public class SlapOutput {
             int i142 = i132 >> 19;
             jSONObject4.put("date", new SimpleDateFormat("7,14,3,yyyy-MM-dd'T'HH:mm:s.SSS Z".substring(107730 / (((-(((((i142 | (-16383)) << 1) - (i142 ^ (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE) + 2)) & i132) * 1710)), context.getResources().getConfiguration().getLocales().get(0)).format(this.PngjBadSignature));
             JSONObject jSONObject22 = new JSONObject();
-            while (r1.hasNext()) {
+            while (0.hasNext()) {
             }
             JSONObject jSONObject32 = new JSONObject();
-            while (r2.hasNext()) {
+            while (0.hasNext()) {
             }
             jSONObject4.put("positions", jSONObject32);
             jSONObject4.put("templates", jSONObject22);

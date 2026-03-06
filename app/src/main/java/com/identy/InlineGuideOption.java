@@ -114,7 +114,7 @@ public class InlineGuideOption {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = defpackage.a.c((~(elapsedCpuTime | (-122904776))) | (~((~elapsedCpuTime) | 375984504)), 959, (((~((-122904776) | r5)) | (~(elapsedCpuTime | 375984504))) * 959) - 1610785523, -977081042);
+                    int c = defpackage.a.c((~(elapsedCpuTime | (-122904776))) | (~((~elapsedCpuTime) | 375984504)), 959, (((~((-122904776) | 0)) | (~(elapsedCpuTime | 375984504))) * 959) - 1610785523, -977081042);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

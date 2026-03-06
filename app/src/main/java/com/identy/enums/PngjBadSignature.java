@@ -13,8 +13,8 @@ public enum PngjBadSignature implements Serializable {
     GOOD(1),
     BAD(0);
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     private int PngjBadSignature;
 
     static {
@@ -112,7 +112,7 @@ public enum PngjBadSignature implements Serializable {
             a(b, b2, (byte) (b2 & 5), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r5[55], (byte) 78, r5[32], objArr4);
+            a($$a[55], (byte) 78, $$a[32], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 399097436);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5021;
@@ -139,7 +139,7 @@ public enum PngjBadSignature implements Serializable {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myTid = Process.myTid();
-                    int c = a.c((~(myTid | 3599601)) | 303296, 49, (((~((~myTid) | (-502488882))) | 3599601 | (~(502488881 | myTid))) * (-49)) + ((((~(3599601 | r5)) | (-502792178)) * 98) - 296198332), -1841564973);
+                    int c = a.c((~(myTid | 3599601)) | 303296, 49, (((~((~myTid) | (-502488882))) | 3599601 | (~(502488881 | myTid))) * (-49)) + ((((~(3599601 | 0)) | (-502792178)) * 98) - 296198332), -1841564973);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

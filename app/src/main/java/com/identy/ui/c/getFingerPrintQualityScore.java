@@ -51,10 +51,10 @@ public final class getFingerPrintQualityScore extends Dialog {
     }
 
     public class PngjBadSignature implements Runnable {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static char[] PngjBadCrcException;
@@ -334,20 +334,20 @@ public final class getFingerPrintQualityScore extends Dialog {
 
         /* JADX WARN: Code restructure failed: missing block: B:43:0x0015, code lost:
         
-            com.identy.ui.c.getFingerPrintQualityScore.PngjBadSignature.$10 = (r0 + 45) % 128;
-            r0 = r26.toCharArray();
+            com.identy.ui.c.getFingerPrintQualityScore.PngjBadSignature.$10 = (0 + 45) % 128;
+            0 = 0.toCharArray();
          */
         /* JADX WARN: Code restructure failed: missing block: B:44:0x0013, code lost:
         
-            if (r26 != null) goto L8;
+            if (0 != null) goto L8;
          */
         /* JADX WARN: Code restructure failed: missing block: B:4:0x0010, code lost:
         
-            if (r26 != null) goto L8;
+            if (0 != null) goto L8;
          */
         /* JADX WARN: Code restructure failed: missing block: B:5:0x0020, code lost:
         
-            r0 = r26;
+            0 = 0;
          */
         /* JADX WARN: Removed duplicated region for block: B:26:0x0160  */
         /* JADX WARN: Removed duplicated region for block: B:28:0x0161  */

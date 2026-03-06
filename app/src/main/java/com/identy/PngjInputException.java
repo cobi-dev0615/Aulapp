@@ -79,10 +79,10 @@ public final class PngjInputException {
     }
 
     public class PngjBadSignature extends StringRequest {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static char[] PngjBadSignature;
@@ -437,117 +437,117 @@ public final class PngjInputException {
 
         /* JADX WARN: Code restructure failed: missing block: B:100:0x1283, code lost:
         
-            r4 = r42[r0];
-            r6 = -(android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1));
-            r8 = (r6 ^ 128) + ((r6 & 128) << 1);
-            r6 = new java.lang.Object[1];
-            b(null, r8, null, "\u0095\u0089\u008f\u0098\u0095\u0094\u0088\u0092\u0090\u0093\u0090\u0095", r6);
+            0 = $$a[0];
+            0 = -(android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1));
+            0 = (0 ^ 128) + ((0 & 128) << 1);
+            0 = new java.lang.Object[1];
+            b(null, 0, null, "\u0095\u0089\u008f\u0098\u0095\u0094\u0088\u0092\u0090\u0093\u0090\u0095", 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:101:0x12ad, code lost:
         
-            r4 = new java.lang.Object[]{((java.lang.String) r6[0]).concat(java.lang.String.valueOf(r4))};
-            r8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
+            0 = new java.lang.Object[]{((java.lang.String) $$a[0]).concat(java.lang.String.valueOf(0))};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
          */
         /* JADX WARN: Code restructure failed: missing block: B:102:0x12b8, code lost:
         
-            if (r8 != null) goto L181;
+            if (0 != null) goto L181;
          */
         /* JADX WARN: Code restructure failed: missing block: B:103:0x12ba, code lost:
         
-            r8 = (char) (android.graphics.PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (android.graphics.PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1));
-            r54 = 28 - (android.view.ViewConfiguration.getMaximumFlingVelocity() >> 16);
-            r9 = 1447 - (android.view.ViewConfiguration.getPressedStateDuration() >> 16);
-            r6 = (byte) (com.identy.PngjInputException.PngjBadSignature.$$b & 5);
-            r26 = r0;
-            r0 = com.identy.PngjInputException.PngjBadSignature.$$a[4];
-            r43 = r11;
-            r11 = new java.lang.Object[1];
-            a(r6, r0, r0, r11);
-            r8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r8, r54, r9, -1614962923, false, (java.lang.String) r11[0], new java.lang.Class[]{java.lang.String.class});
+            0 = (char) (android.graphics.PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (android.graphics.PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1));
+            0 = 28 - (android.view.ViewConfiguration.getMaximumFlingVelocity() >> 16);
+            0 = 1447 - (android.view.ViewConfiguration.getPressedStateDuration() >> 16);
+            0 = (byte) (com.identy.PngjInputException.PngjBadSignature.$$b & 5);
+            0 = 0;
+            0 = com.identy.PngjInputException.PngjBadSignature.$$a[4];
+            0 = 0;
+            0 = new java.lang.Object[1];
+            a(0, 0, 0, 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -1614962923, false, (java.lang.String) $$a[0], new java.lang.Class[]{java.lang.String.class});
          */
         /* JADX WARN: Code restructure failed: missing block: B:104:0x1306, code lost:
         
-            r8 = ((java.lang.Long) ((java.lang.reflect.Method) r8).invoke(null, r4)).longValue();
+            0 = ((java.lang.Long) ((java.lang.reflect.Method) 0).invoke(null, 0)).longValue();
          */
         /* JADX WARN: Code restructure failed: missing block: B:105:0x1313, code lost:
         
-            r11 = -1664614654;
-            r45 = r7;
-            r6 = 765;
-            r55 = r11 ^ r12;
-            r57 = r8 ^ r12;
-            r59 = r55 | r57;
-            r6 = r81;
-            r63 = r6 ^ r12;
-            r8 = (((((r55 | r6) ^ r12) | (((r57 | r63) | r11) ^ r12)) * r6) + ((1530 * ((r59 ^ r12) | ((r55 | r63) ^ r12))) + ((((((r59 | r63) ^ r12) | (((r55 | r8) | r6) ^ r12)) | (((r57 | r11) | r6) ^ r12)) * r6) + (((-764) * r8) + ((-1529) * r11))))) + 2135102971;
-            r4 = (int) android.os.Process.getStartElapsedRealtime();
-            r0 = ((int) (r8 >> 32)) & defpackage.a.c((~(r4 | (-122534499))) | 16850978, 490, (((-105683521) | (~r4)) * (-490)) + 1478807014, 46057030);
-            r6 = ~(android.os.Process.myUid() | 714489693);
-            r4 = ((int) r8) & (((r6 | 714484312) * 196) + (((5381 | r6) * (-196)) + 258823881));
+            0 = -1664614654;
+            0 = 0;
+            0 = 765;
+            0 = 0 ^ 0;
+            0 = 0 ^ 0;
+            0 = 0 | 0;
+            0 = 0;
+            0 = 0 ^ 0;
+            0 = (((((0 | 0) ^ 0) | (((0 | 0) | 0) ^ 0)) * 0) + ((1530 * ((0 ^ 0) | ((0 | 0) ^ 0))) + ((((((0 | 0) ^ 0) | (((0 | 0) | 0) ^ 0)) | (((0 | 0) | 0) ^ 0)) * 0) + (((-764) * 0) + ((-1529) * 0))))) + 2135102971;
+            0 = (int) android.os.Process.getStartElapsedRealtime();
+            0 = ((int) (0 >> 32)) & defpackage.a.c((~(0 | (-122534499))) | 16850978, 490, (((-105683521) | (~0)) * (-490)) + 1478807014, 46057030);
+            0 = ~(android.os.Process.myUid() | 714489693);
+            0 = ((int) 0) & (((0 | 714484312) * 196) + (((5381 | 0) * (-196)) + 258823881));
          */
         /* JADX WARN: Code restructure failed: missing block: B:106:0x13b4, code lost:
         
-            if (((r0 & r4) | (r0 ^ r4)) != 0) goto L186;
+            if (((0 & 0) | (0 ^ 0)) != 0) goto L186;
          */
         /* JADX WARN: Code restructure failed: missing block: B:107:0x13b6, code lost:
         
-            r0 = 0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:109:0x13b9, code lost:
         
-            r6 = (r3 * (-112)) + (r0 * (-112));
-            r4 = ~r3;
-            r4 = (r4 & r15) | (r4 ^ r15);
-            r7 = ((~r4) | r0) * 226;
-            r8 = (r6 & r7) + (r6 | r7);
-            r6 = ~r0;
-            r7 = ~((r6 ^ r3) | (r6 & r3));
-            r6 = ~(r6 | r81);
-            r6 = (r6 & r7) | (r7 ^ r6);
-            r0 = ~((r0 & r4) | (r4 ^ r0));
-            r8 = (r8 - (~(-(-(((r0 & r6) | (r6 ^ r0)) * (-113)))))) - 1;
-            r0 = ~r3;
-            r3 = (r8 - (~((~((r0 & r81) | (r0 ^ r81))) * 113))) - 1;
-            r0 = ((r26 | 1) << 1) - (r26 ^ 1);
-            r11 = r43;
-            r7 = r45;
+            0 = (0 * (-112)) + (0 * (-112));
+            0 = ~0;
+            0 = (0 & 0) | (0 ^ 0);
+            0 = ((~0) | 0) * 226;
+            0 = (0 & 0) + (0 | 0);
+            0 = ~0;
+            0 = ~((0 ^ 0) | (0 & 0));
+            0 = ~(0 | 0);
+            0 = (0 & 0) | (0 ^ 0);
+            0 = ~((0 & 0) | (0 ^ 0));
+            0 = (0 - (~(-(-(((0 & 0) | (0 ^ 0)) * (-113)))))) - 1;
+            0 = ~0;
+            0 = (0 - (~((~((0 & 0) | (0 ^ 0))) * 113))) - 1;
+            0 = ((0 | 1) << 1) - (0 ^ 1);
+            0 = 0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:110:0x13b8, code lost:
         
-            r0 = 1;
+            0 = 1;
          */
         /* JADX WARN: Code restructure failed: missing block: B:112:0x1302, code lost:
         
-            r26 = r0;
-            r43 = r11;
+            0 = 0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:115:0x1275, code lost:
         
-            if (r3 < 25.2d) goto L174;
+            if (0 < 25.2d) goto L174;
          */
         /* JADX WARN: Code restructure failed: missing block: B:116:0x1277, code lost:
         
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:117:0x127a, code lost:
         
-            if (r0 == false) goto L163;
+            if (0 == false) goto L163;
          */
         /* JADX WARN: Code restructure failed: missing block: B:118:0x125a, code lost:
         
-            r45 = r7;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:207:0x1e8d, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) == 0) goto L287;
+            if (((0 & 0) | (0 ^ 0)) == 0) goto L287;
          */
         /* JADX WARN: Code restructure failed: missing block: B:448:0x26d3, code lost:
         
-            if (r4 == null) goto L404;
+            if (0 == null) goto L404;
          */
         /* JADX WARN: Code restructure failed: missing block: B:45:0x0472, code lost:
         
-            if ((r0 | (r3 & (((((~((-986869648) | r9)) | 1157697600) | r8) * 520) + (((r7 | r8) * (-1040)) + r6)))) != 477111747) goto L49;
+            if ((0 | (0 & (((((~((-986869648) | 0)) | 1157697600) | 0) * 520) + (((0 | 0) * (-1040)) + 0)))) != 477111747) goto L49;
          */
         /* JADX WARN: Code restructure failed: missing block: B:47:0x07c3, code lost:
         
@@ -555,162 +555,162 @@ public final class PngjInputException {
          */
         /* JADX WARN: Code restructure failed: missing block: B:48:0x07c5, code lost:
         
-            r0 = -(-android.os.Process.getGidForName(com.karumi.dexter.BuildConfig.FLAVOR));
-            r3 = ((r0 | 128) << 1) - (r0 ^ 128);
-            r0 = new java.lang.Object[1];
-            b(null, r3, null, "\u008a\u0081\u0083\u0088\u008d\u0098\u0085\u008c\u008c\u008b\u0098\u0088\u0086\u0097\u0086\u0096\u008d\u008d\u0095\u0092\u008f\u0089\u008f\u0095\u008a\u0092\u0088\u0095", r0);
+            0 = -(-android.os.Process.getGidForName(com.karumi.dexter.BuildConfig.FLAVOR));
+            0 = ((0 | 128) << 1) - (0 ^ 128);
+            0 = new java.lang.Object[1];
+            b(null, 0, null, "\u008a\u0081\u0083\u0088\u008d\u0098\u0085\u008c\u008c\u008b\u0098\u0088\u0086\u0097\u0086\u0096\u008d\u008d\u0095\u0092\u008f\u0089\u008f\u0095\u008a\u0092\u0088\u0095", 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:49:0x07df, code lost:
         
-            r0 = new java.lang.Object[]{(java.lang.String) r0[0]};
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
+            0 = new java.lang.Object[]{(java.lang.String) $$a[0]};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
          */
         /* JADX WARN: Code restructure failed: missing block: B:50:0x07ea, code lost:
         
-            if (r3 != null) goto L79;
+            if (0 != null) goto L79;
          */
         /* JADX WARN: Code restructure failed: missing block: B:51:0x07ec, code lost:
         
-            r3 = (char) android.widget.ExpandableListView.getPackedPositionType(0);
-            r54 = 27 - android.widget.ExpandableListView.getPackedPositionChild(0);
-            r7 = 1447 - android.text.TextUtils.getOffsetAfter(com.karumi.dexter.BuildConfig.FLAVOR, 0);
-            r8 = (byte) (com.identy.PngjInputException.PngjBadSignature.$$b & 5);
-            r9 = com.identy.PngjInputException.PngjBadSignature.$$a[4];
-            r3 = new java.lang.Object[1];
-            a(r8, r9, r9, r3);
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r3, r54, r7, -1614962923, false, (java.lang.String) r3[0], new java.lang.Class[]{java.lang.String.class});
+            0 = (char) android.widget.ExpandableListView.getPackedPositionType(0);
+            0 = 27 - android.widget.ExpandableListView.getPackedPositionChild(0);
+            0 = 1447 - android.text.TextUtils.getOffsetAfter(com.karumi.dexter.BuildConfig.FLAVOR, 0);
+            0 = (byte) (com.identy.PngjInputException.PngjBadSignature.$$b & 5);
+            0 = com.identy.PngjInputException.PngjBadSignature.$$a[4];
+            0 = new java.lang.Object[1];
+            a(0, 0, 0, 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -1614962923, false, (java.lang.String) $$a[0], new java.lang.Class[]{java.lang.String.class});
          */
         /* JADX WARN: Code restructure failed: missing block: B:525:0x127c, code lost:
         
-            r45 = r7;
-            r43 = r11;
-            r0 = true;
+            0 = 0;
+            0 = 0;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:526:0x1279, code lost:
         
-            r0 = false;
+            0 = false;
          */
         /* JADX WARN: Code restructure failed: missing block: B:527:0x1267, code lost:
         
-            r4 = kotlin.text.Typography.quote;
+            0 = kotlin.text.Typography.quote;
          */
         /* JADX WARN: Code restructure failed: missing block: B:52:0x0829, code lost:
         
-            r7 = ((java.lang.Long) ((java.lang.reflect.Method) r3).invoke(null, r0)).longValue();
+            0 = ((java.lang.Long) ((java.lang.reflect.Method) 0).invoke(null, 0)).longValue();
          */
         /* JADX WARN: Code restructure failed: missing block: B:539:0x1140, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) == 477111747) goto L134;
+            if (((0 & 0) | (0 ^ 0)) == 477111747) goto L134;
          */
         /* JADX WARN: Code restructure failed: missing block: B:53:0x0836, code lost:
         
-            r6 = 362670167;
-            r8 = -55;
-            r44 = r8 * r6;
-            r6 = 56;
-            r6 = r81;
-            r6 = (((r6 | (((r6 ^ r12) | r7) ^ r12)) * r6) + (((-56) * ((r6 | r7) ^ r12)) + (((r7 | ((r6 | r6) ^ r12)) * r6) + ((r8 * r7) + r44)))) + 107818150;
-            r8 = (((~((-697846851) | r81)) | 92947754) * 262) - 29601230;
-            r9 = ~r81;
-            r0 = ((int) (r6 >> 32)) & ((((~((-697846851) | r9)) | 92947754) * 262) + r8);
-            r3 = ((int) r6) & defpackage.a.c((~((-1099040838) | r9)) | 2629888, 576, (((~(170407730 | r81)) | (-1269448568)) * 576) + 1771465493, -1057934848);
+            0 = 362670167;
+            0 = -55;
+            0 = 0 * 0;
+            0 = 56;
+            0 = 0;
+            0 = (((0 | (((0 ^ 0) | 0) ^ 0)) * 0) + (((-56) * ((0 | 0) ^ 0)) + (((0 | ((0 | 0) ^ 0)) * 0) + ((0 * 0) + 0)))) + 107818150;
+            0 = (((~((-697846851) | 0)) | 92947754) * 262) - 29601230;
+            0 = ~0;
+            0 = ((int) (0 >> 32)) & ((((~((-697846851) | 0)) | 92947754) * 262) + 0);
+            0 = ((int) 0) & defpackage.a.c((~((-1099040838) | 0)) | 2629888, 576, (((~(170407730 | 0)) | (-1269448568)) * 576) + 1771465493, -1057934848);
          */
         /* JADX WARN: Code restructure failed: missing block: B:549:0x1258, code lost:
         
-            if (((r0 | (((int) r3) & (((~(1273795280 | r6)) * 713) + ((r8 * 1426) + (((r4 | r8) * (-713)) + (-21569212)))))) == 477111747 ? 'N' : kotlin.text.Typography.amp) != 'N') goto L163;
+            if (((0 | (((int) 0) & (((~(1273795280 | 0)) * 713) + ((0 * 1426) + (((0 | 0) * (-713)) + (-21569212)))))) == 477111747 ? 'N' : kotlin.text.Typography.amp) != 'N') goto L163;
          */
         /* JADX WARN: Code restructure failed: missing block: B:54:0x08b8, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != 1) goto L83;
+            if (((0 & 0) | (0 ^ 0)) != 1) goto L83;
          */
         /* JADX WARN: Code restructure failed: missing block: B:55:0x08ba, code lost:
         
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:561:0x08bd, code lost:
         
-            r0 = false;
+            0 = false;
          */
         /* JADX WARN: Code restructure failed: missing block: B:562:0x08c0, code lost:
         
-            r0 = new java.lang.Object[1];
-            c("輪᧶ꋴ䭿퐹绿ޫ選㤷쏰沰\uf57f鸱", 38592 - (~(-(android.view.ViewConfiguration.getWindowTouchSlop() >> 8))), r0);
+            0 = new java.lang.Object[1];
+            c("輪᧶ꋴ䭿퐹绿ޫ選㤷쏰沰\uf57f鸱", 38592 - (~(-(android.view.ViewConfiguration.getWindowTouchSlop() >> 8))), 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:563:0x08d9, code lost:
         
-            r0 = new java.lang.Object[]{(java.lang.String) r0[0]};
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(547370249);
+            0 = new java.lang.Object[]{(java.lang.String) $$a[0]};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(547370249);
          */
         /* JADX WARN: Code restructure failed: missing block: B:564:0x08e1, code lost:
         
-            if (r3 != null) goto L88;
+            if (0 != null) goto L88;
          */
         /* JADX WARN: Code restructure failed: missing block: B:565:0x08e3, code lost:
         
-            r3 = (char) (android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0') + 8753);
-            r54 = 24 - android.widget.ExpandableListView.getPackedPositionGroup(0);
-            r7 = android.view.KeyEvent.normalizeMetaState(0) + 336;
-            r8 = com.identy.PngjInputException.PngjBadSignature.$$a[4];
-            r9 = r8;
-            r3 = new java.lang.Object[1];
-            a(r9, (byte) (r9 + 1), r8, r3);
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r3, r54, r7, -598779726, false, (java.lang.String) r3[0], new java.lang.Class[]{java.lang.String.class});
+            0 = (char) (android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0') + 8753);
+            0 = 24 - android.widget.ExpandableListView.getPackedPositionGroup(0);
+            0 = android.view.KeyEvent.normalizeMetaState(0) + 336;
+            0 = com.identy.PngjInputException.PngjBadSignature.$$a[4];
+            0 = 0;
+            0 = new java.lang.Object[1];
+            a(0, (byte) (0 + 1), 0, 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -598779726, false, (java.lang.String) $$a[0], new java.lang.Class[]{java.lang.String.class});
          */
         /* JADX WARN: Code restructure failed: missing block: B:566:0x0923, code lost:
         
-            r0 = ((java.lang.reflect.Method) r3).invoke(null, r0);
+            0 = ((java.lang.reflect.Method) 0).invoke(null, 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:567:0x092a, code lost:
         
-            r3 = new java.lang.Object[1];
-            b(null, android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0', 0) + 128, null, "\u0099", r3);
-            r0 = r0.equals((java.lang.String) r3[0]);
+            0 = new java.lang.Object[1];
+            b(null, android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0', 0) + 128, null, "\u0099", 0);
+            0 = 0.equals((java.lang.String) $$a[0]);
          */
         /* JADX WARN: Code restructure failed: missing block: B:56:0x0943, code lost:
         
-            if (r0 == false) goto L94;
+            if (0 == false) goto L94;
          */
         /* JADX WARN: Code restructure failed: missing block: B:575:0x0587, code lost:
         
-            if ((r0 | (r3 & (((r6 | 920006723) * 245) + ((r6 * (-245)) + r7)))) != 477111747) goto L57;
+            if ((0 | (0 & (((0 | 920006723) * 245) + ((0 * (-245)) + 0)))) != 477111747) goto L57;
          */
         /* JADX WARN: Code restructure failed: missing block: B:57:0x0945, code lost:
         
             com.identy.PngjInputException.PngjBadSignature.PngjOutputException = (com.identy.PngjInputException.PngjBadSignature.PngjUnsupportedException + 83) % 128;
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:583:0x0697, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != (-1032769152)) goto L65;
+            if (((0 & 0) | (0 ^ 0)) != (-1032769152)) goto L65;
          */
         /* JADX WARN: Code restructure failed: missing block: B:591:0x07bd, code lost:
         
-            if ((r0 | (r3 & (((((~(r6 | (-1784390698))) | 710542376) | (~(r7 | 2147198509))) * 988) + ((((~((-1073848322) | r7)) | (~(2147198509 | r6))) * 988) + 534607265)))) == 542074309) goto L73;
+            if ((0 | (0 & (((((~(0 | (-1784390698))) | 710542376) | (~(0 | 2147198509))) * 988) + ((((~((-1073848322) | 0)) | (~(2147198509 | 0))) * 988) + 534607265)))) == 542074309) goto L73;
          */
         /* JADX WARN: Code restructure failed: missing block: B:92:0x0ffd, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != 477111747) goto L136;
+            if (((0 & 0) | (0 ^ 0)) != 477111747) goto L136;
          */
         /* JADX WARN: Code restructure failed: missing block: B:93:0x1000, code lost:
         
-            r7 = r45;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:94:0x125e, code lost:
         
-            r0 = 0;
-            r3 = 0;
+            0 = 0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:96:0x1262, code lost:
         
-            if (r0 >= 28) goto L168;
+            if (0 >= 28) goto L168;
          */
         /* JADX WARN: Code restructure failed: missing block: B:97:0x1264, code lost:
         
-            r4 = '7';
+            0 = '7';
          */
         /* JADX WARN: Code restructure failed: missing block: B:99:0x126b, code lost:
         
-            if (r4 == '7') goto L177;
+            if (0 == '7') goto L177;
          */
         /* JADX WARN: Removed duplicated region for block: B:122:0x140b  */
         /* JADX WARN: Removed duplicated region for block: B:124:0x1495  */
@@ -820,9 +820,9 @@ public final class PngjInputException {
                 long j19 = ((myTid | ((j17 | j14) ^ j13)) * j18) + (((j17 | longValue) ^ j13) * j16) + j15 + 1644284985;
                 int myUid = Process.myUid();
                 int i20 = ((int) (j19 >> 32)) & (((16818464 | (~((~myUid) | 1867970557))) * 449) + ((16818464 | (~(1867970557 | myUid))) * 449) + 419305448);
-                int i21 = ((int) j19) & ((((~((~((int) Process.getStartUptimeMillis())) | 48386888)) | 1517222842) * 184) + (((1525611514 | r6) * 184) - 1433354915));
+                int i21 = ((int) j19) & ((((~((~((int) Process.getStartUptimeMillis())) | 48386888)) | 1517222842) * 184) + (((1525611514 | 0) * 184) - 1433354915));
                 if (((i20 & i21) | (i20 ^ i21)) != 0) {
-                    java.lang.Object[] objArr4 = {new int[]{r3}, new int[]{((~r1) & r2) | ((~r2) & r1)}, null, new int[]{i}};
+                    java.lang.Object[] objArr4 = {new int[]{0}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{i}};
                     int i22 = (~(i & 271)) & (i | 271);
                     int i23 = ~i;
                     int i24 = ((114697 | (~((-803093799) | i)) | (~(803093798 | i23))) * 988) + (((~(231472175 | i23)) | 571736320) * (-1976)) + ((i | 114697) * 988) + 2094771509;
@@ -1324,7 +1324,7 @@ public final class PngjInputException {
                             long j61 = (502 * (((j59 | longValue6) ^ j13) | j60)) + ((j57 | (j59 ^ j13) | j60) * j53) + j55 + 195662201;
                             int a = defpackage.a.a();
                             int i145 = ~a;
-                            int i146 = ((int) (j61 >> 32)) & (((1095721872 | (~((-1762019013) | i145))) * 712) + (((~((-1090929281) | a)) | (~(i145 | (-671089733)))) * (-712)) + (((671089732 | r8) * (-712)) - 900579766));
+                            int i146 = ((int) (j61 >> 32)) & (((1095721872 | (~((-1762019013) | i145))) * 712) + (((~((-1090929281) | a)) | (~(i145 | (-671089733)))) * (-712)) + (((671089732 | 0) * (-712)) - 900579766));
                             int freeMemory3 = (int) Runtime.getRuntime().freeMemory();
                             int i147 = ((1396432277 | freeMemory3) * (-50)) - 386075665;
                             int i148 = ~((-1394199681) | freeMemory3);
@@ -1368,7 +1368,7 @@ public final class PngjInputException {
                                 int startElapsedRealtime2 = (int) Process.getStartElapsedRealtime();
                                 int i154 = ~startElapsedRealtime2;
                                 int i155 = (~(1305455827 | i154)) | 34603012;
-                                int i156 = i153 & (((~(i154 | 131770582)) * 713) + ((~(startElapsedRealtime2 | (-1208288258))) * 1426) + (((i155 | r4) * (-713)) - 756183376));
+                                int i156 = i153 & (((~(i154 | 131770582)) * 713) + ((~(startElapsedRealtime2 | (-1208288258))) * 1426) + (((i155 | 0) * (-713)) - 756183376));
                             } else {
                                 java.lang.Object[] objArr68 = {obj3, Integer.valueOf(i3)};
                                 java.lang.Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(989703296);
@@ -1405,7 +1405,7 @@ public final class PngjInputException {
                         if (!z) {
                             int i163 = PngjUnsupportedException;
                             PngjOutputException = (((i163 | 81) << 1) - (i163 ^ 81)) % 128;
-                            java.lang.Object[] objArr70 = {new int[]{r5}, new int[1], null, new int[]{i}};
+                            java.lang.Object[] objArr70 = {new int[]{0}, new int[1], null, new int[]{i}};
                             int i164 = (i & (-262)) | ((~i) & 261);
                             int a3 = defpackage.a.a();
                             int i165 = (((~((-614116398) | a3)) | 691240 | (~((-420449577) | a3))) * (-880)) + 919555461;
@@ -1445,7 +1445,7 @@ public final class PngjInputException {
                         long j79 = i;
                         long j80 = j79 ^ j13;
                         long j81 = ((302 * ((((longValue9 ^ j13) | j76) ^ j13) | ((longValue9 | j79) ^ j13))) + (((-604) * (((j78 | longValue9) | j79) ^ j13)) + (((-302) * ((((j78 | j80) | longValue9) ^ j13) | (((j76 | longValue9) | j79) ^ j13))) + j77))) - 1842266481;
-                        int i177 = ((int) (j81 >> 32)) & ((((~((-759285460) | i)) | (-2102650836)) * 196) + (((1343365376 | r6) * (-196)) - 1748428806));
+                        int i177 = ((int) (j81 >> 32)) & ((((~((-759285460) | i)) | (-2102650836)) * 196) + (((1343365376 | 0) * (-196)) - 1748428806));
                         int i178 = ~i;
                         int i179 = ((int) j81) & (((~((-1682652261) | i178)) * 184) + ((33571217 | i) * (-184)) + ((((~(1175088625 | i178)) | 541134852) * 184) - 339654739));
                         long j82 = (i177 & i179) | (i177 ^ i179);
@@ -1680,7 +1680,7 @@ public final class PngjInputException {
                                                 long j118 = j114 | j111;
                                                 long j119 = ((j116 * ((((j113 | longValue13) ^ j13) | ((j117 | elapsedCpuTime) ^ j13)) | (j118 ^ j13))) + ((((((j113 | j117) | elapsedCpuTime) ^ j13) | ((j118 | longValue13) ^ j13)) * j116) + j115)) - 815114088;
                                                 int startElapsedRealtime3 = (int) Process.getStartElapsedRealtime();
-                                                if (((((int) (j119 >> 32)) & (((startElapsedRealtime3 | (-604241985)) * 668) + ((416546613 | (~((-1020679798) | startElapsedRealtime3))) * 1336) + (((~(416546613 | startElapsedRealtime3)) | (-1020679798)) * (-668)) + 67428294)) | (((int) j119) & ((((~(((int) Process.getStartUptimeMillis()) | 1372008377)) | 1350970008) * 196) + (((21038369 | r4) * (-196)) - 110822599)))) != 0) {
+                                                if (((((int) (j119 >> 32)) & (((startElapsedRealtime3 | (-604241985)) * 668) + ((416546613 | (~((-1020679798) | startElapsedRealtime3))) * 1336) + (((~(416546613 | startElapsedRealtime3)) | (-1020679798)) * (-668)) + 67428294)) | (((int) j119) & ((((~(((int) Process.getStartUptimeMillis()) | 1372008377)) | 1350970008) * 196) + (((21038369 | 0) * (-196)) - 110822599)))) != 0) {
                                                     int i241 = PngjOutputException;
                                                     PngjUnsupportedException = ((i241 ^ 101) + ((i241 & 101) << 1)) % 128;
                                                     i8 = (i17 ^ 90) + ((i17 & 90) << 1);
@@ -1693,7 +1693,7 @@ public final class PngjInputException {
                                             }
                                             if (i8 != 0) {
                                                 java.lang.Object[] objArr94 = {new int[]{(i8 & i7) | ((~i8) & i)}, new int[1], null, new int[]{i}};
-                                                int c10 = defpackage.a.c((~((~Process.myUid()) | (-5243394))) | 805450920, 521, ((~((-5243394) | r0)) * 521) - 430376092, 16);
+                                                int c10 = defpackage.a.c((~((~Process.myUid()) | (-5243394))) | 805450920, 521, ((~((-5243394) | 0)) * 521) - 430376092, 16);
                                                 int i243 = ((i2 | c10) << 1) - (c10 ^ i2);
                                                 int i244 = i243 << 13;
                                                 int i245 = (i244 | i243) & (~(i243 & i244));
@@ -2025,7 +2025,7 @@ public final class PngjInputException {
                                                                 }
                                                                 i11 = 0;
                                                                 if (i11 != 0) {
-                                                                    java.lang.Object[] objArr129 = {new int[]{r6}, new int[]{(r1 | r2) & (~(r1 & r2))}, null, new int[]{i}};
+                                                                    java.lang.Object[] objArr129 = {new int[]{0}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                                                                     int i350 = (~(i & i11)) & (i | i11);
                                                                     int i351 = (((~((-690802354) | i7)) | 687899665) * (-245)) + 159709638;
                                                                     int i352 = ~((-690802354) | i);
@@ -2123,7 +2123,7 @@ public final class PngjInputException {
                                                                 if (c3 != c4) {
                                                                     int i372 = i7;
                                                                     java.lang.Object[] objArr131 = {new int[]{(i13 | i) & (~(i & i13))}, new int[1], null, new int[]{i}};
-                                                                    int c13 = defpackage.a.c((~((int) Runtime.getRuntime().freeMemory())) | 1000995149, -828, (((~(1000995149 | r0)) | 33570824) * (-828)) - 1338267583, 104703928);
+                                                                    int c13 = defpackage.a.c((~((int) Runtime.getRuntime().freeMemory())) | 1000995149, -828, (((~(1000995149 | 0)) | 33570824) * (-828)) - 1338267583, 104703928);
                                                                     int i373 = (c13 ^ 16) + ((c13 & 16) << 1);
                                                                     int i374 = i373 * 755;
                                                                     int i375 = -(-(i2 * (-753)));
@@ -2184,9 +2184,9 @@ public final class PngjInputException {
                                                                 int i396 = ((int) j148) & ((((~(elapsedCpuTime2 | (-67109154))) | (~((-962153545) | i395)) | 554189832) * 140) + ((67109153 | (~((-475072866) | i395))) * (-280)) + (((-475072866) | elapsedCpuTime2) * 140) + 1176647065);
                                                                 if (((i394 & i396) | (i394 ^ i396)) != 0) {
                                                                     PngjOutputException = (PngjUnsupportedException + 81) % 128;
-                                                                    java.lang.Object[] objArr135 = {new int[]{r5}, new int[1], null, new int[]{i}};
+                                                                    java.lang.Object[] objArr135 = {new int[]{0}, new int[1], null, new int[]{i}};
                                                                     int i397 = (~(i & 242)) & (i | 242);
-                                                                    int A = defpackage.a.A(~(Process.myTid() | (-153991)), 566, (((~((-218323408) | r1)) | 218169417) * (-566)) - 35595589, -16);
+                                                                    int A = defpackage.a.A(~(Process.myTid() | (-153991)), 566, (((~((-218323408) | 0)) | 218169417) * (-566)) - 35595589, -16);
                                                                     int i398 = (i2 & A) + (A | i2);
                                                                     int i399 = i398 << 13;
                                                                     int i400 = (i399 & (~i398)) | ((~i399) & i398);
@@ -2222,7 +2222,7 @@ public final class PngjInputException {
                                                                 int i407 = (~(1924816999 | myUid4)) | 218106520;
                                                                 int i408 = ~((~myUid4) | (-1655332931));
                                                                 if ((i405 | (i406 & ((((~(myUid4 | 2142923519)) | i408) * 470) + (((i407 | i408) * (-470)) + (-2006377115))))) != 0) {
-                                                                    objArr = new java.lang.Object[]{new int[]{r6}, new int[]{r3}, null, new int[]{i}};
+                                                                    objArr = new java.lang.Object[]{new int[]{0}, new int[]{0}, null, new int[]{i}};
                                                                     int i409 = (~(i & 264)) & (i | 264);
                                                                     int i410 = (((~((-982874909) | i)) | 34880024 | (~(i7 | 999685949))) * 988) + (((~(i7 | (-947994885))) | (~(999685949 | i))) * 988) + 464006285;
                                                                     int i411 = i410 * 185;
@@ -2324,9 +2324,9 @@ public final class PngjInputException {
                                                                         long j168 = (int) Runtime.getRuntime().totalMemory();
                                                                         long j169 = (272 * (longValue20 | ((j163 | j168) ^ j13))) + ((((j166 | longValue20) ^ j13) | ((j166 | j168) ^ j13)) * j165) + ((((j167 | (j168 ^ j13)) ^ j13) | (((j163 | longValue20) | j168) ^ j13)) * j165) + j164 + 1208277783;
                                                                         int i445 = ((int) (j169 >> 32)) & ((((~(98863833 | i)) | 1241595904) * 464) + (((-96766674) | i) * (-464)) + (((~((-1338362578) | i14)) | 1241595904 | (~(i14 | 98863833))) * 464) + 1835426858);
-                                                                        int i446 = ((int) j169) & ((((~(1446332208 | i14)) | 34939925) * 764) + (((~(1411408677 | i14)) | 34931728) * (-1528)) + (((1411408677 | r6) * 764) - 804890435));
+                                                                        int i446 = ((int) j169) & ((((~(1446332208 | i14)) | 34939925) * 764) + (((~(1411408677 | i14)) | 34931728) * (-1528)) + (((1411408677 | 0) * 764) - 804890435));
                                                                         if (((i445 & i446) | (i445 ^ i446)) != 0) {
-                                                                            objArr = new java.lang.Object[]{new int[]{(i & (-269)) | (i14 & 268)}, new int[]{(r4 | r9) & (~(r4 & r9))}, null, new int[]{i}};
+                                                                            objArr = new java.lang.Object[]{new int[]{(i & (-269)) | (i14 & 268)}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                                                                             int c17 = defpackage.a.c((~((-240145751) | i14)) | 240140630 | (~((-794420224) | i14)), 184, (((~(i14 | (-5121))) | (~((-554279594) | i14))) * (-184)) - 347012035, 145375048);
                                                                             int i447 = ((c17 | 16) << 1) - (c17 ^ 16);
                                                                             int i448 = (i2 & i447) + (i447 | i2);
@@ -2359,7 +2359,7 @@ public final class PngjInputException {
                                                                             int maxMemory = (int) Runtime.getRuntime().maxMemory();
                                                                             int i455 = ~maxMemory;
                                                                             if (((((int) (j176 >> 32)) & ((((~(maxMemory | (-289440913))) | (~(325774492 | i455)) | 1075118338) * 140) + ((289440912 | (~(1111451918 | i455))) * (-280)) + ((1111451918 | maxMemory) * 140) + 2127090602)) | (((int) j176) & ((((~(141923437 | i14)) | (~((-1579149848) | i14)) | (~((-6296681) | i))) * 568) + (((~((-141923438) | i)) | (~(1579149847 | i)) | (~((-1443523091) | i14))) * (-568)) + (((((~((-141923438) | i14)) | 6296680) | (~(1579149847 | i14))) * (-1136)) - 1738041619)))) != 0) {
-                                                                                objArr = new java.lang.Object[]{new int[]{i ^ 266}, new int[]{(r4 | r9) & (~(r4 & r9))}, null, new int[]{i}};
+                                                                                objArr = new java.lang.Object[]{new int[]{i ^ 266}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                                                                                 int i456 = (i2 - (~defpackage.a.A((~(651361 | i14)) | (-1034533014), 494, (((-1033898133) | i14) * 494) + 992767159, -16))) - 1;
                                                                                 int i457 = i456 << 13;
                                                                                 int i458 = ((~i456) & i457) | ((~i457) & i456);
@@ -2402,7 +2402,7 @@ public final class PngjInputException {
                                                                                     c5 = 0;
                                                                                     ((int[]) objArr[1])[0] = (i470 | i471) & (~(i470 & i471));
                                                                                 } else {
-                                                                                    objArr = new java.lang.Object[]{new int[]{i}, new int[]{(r4 | r9) & (~(r4 & r9))}, null, new int[]{i}};
+                                                                                    objArr = new java.lang.Object[]{new int[]{i}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                                                                                     int i472 = -(-defpackage.a.c((~((-402915594) | i14)) | 562136128, 576, (((~((-437672720) | i)) | 34757126) * 576) + 2125019669, -1454731904));
                                                                                     int i473 = (i2 ^ i472) + ((i472 & i2) << 1);
                                                                                     int i474 = i473 << 13;
@@ -2442,10 +2442,10 @@ public final class PngjInputException {
                                                                 long j187 = (j186 * ((((j183 ^ j13) | j184) ^ j13) | ((j184 | j80) ^ j13) | (((j183 | longValue23) | j4) ^ j13))) + ((((j184 | j183) ^ j13) | ((j80 | j183) ^ j13)) * j186) + j185 + 1068192542;
                                                                 int freeMemory6 = (int) Runtime.getRuntime().freeMemory();
                                                                 int i481 = ((int) (j187 >> 32)) & ((((~((~freeMemory6) | 1060489865)) | 1412044098) * 262) + (((~(1060489865 | freeMemory6)) | 1412044098) * 262) + 1256578394);
-                                                                int i482 = ((int) j187) & ((((~((~((int) Process.getElapsedCpuTime())) | (-776006153))) | (-795470762)) * 970) + (((19464609 | r6) * (-970)) - 1223899005));
+                                                                int i482 = ((int) j187) & ((((~((~((int) Process.getElapsedCpuTime())) | (-776006153))) | (-795470762)) * 970) + (((19464609 | 0) * (-970)) - 1223899005));
                                                                 if (((i481 & i482) | (i481 ^ i482)) == 2) {
                                                                     PngjOutputException = (PngjUnsupportedException + 9) % 128;
-                                                                    java.lang.Object[] objArr144 = {new int[]{i ^ 270}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{i}};
+                                                                    java.lang.Object[] objArr144 = {new int[]{i ^ 270}, new int[]{0 ^ (0 << 5)}, null, new int[]{i}};
                                                                     int i483 = (((~(190728840 | i14)) | 805413957) * 191) + (((~(i | 190728840)) | 843837133) * 191) + 844933785;
                                                                     int i484 = ((i483 | 16) << 1) - (i483 ^ 16);
                                                                     int i485 = (i2 * (-216)) + (i484 * (-433));
@@ -2485,12 +2485,12 @@ public final class PngjInputException {
                                                                 long j192 = (longValue24 | j188) ^ j13;
                                                                 long j193 = ((j192 * j147) + ((((((j191 | j80) ^ j13) | ((j190 | j4) ^ j13)) | j192) * j141) + (((((j190 | j80) ^ j13) | ((j191 | j4) ^ j13)) * j141) + j189))) - 2100729904;
                                                                 int i502 = (~(689698100 | i)) | 1455688395;
-                                                                int i503 = ((int) (j193 >> 32)) & ((((~((-18461985) | i14)) | (~(2145386495 | i))) * 470) + (((i502 | r9) * (-470)) - 1583995300));
+                                                                int i503 = ((int) (j193 >> 32)) & ((((~((-18461985) | i14)) | (~(2145386495 | i))) * 470) + (((i502 | 0) * (-470)) - 1583995300));
                                                                 int i504 = (int) j193;
                                                                 int maxMemory3 = (int) Runtime.getRuntime().maxMemory();
                                                                 int i505 = i504 & ((((~((~maxMemory3) | (-1405784694))) | 88180117) * 262) + (((~((-1405784694) | maxMemory3)) | 88180117) * 262) + 1860792089);
                                                                 if (((i503 & i505) | (i503 ^ i505)) != 0) {
-                                                                    java.lang.Object[] objArr146 = {new int[]{r5}, new int[1], null, new int[]{i}};
+                                                                    java.lang.Object[] objArr146 = {new int[]{0}, new int[1], null, new int[]{i}};
                                                                     int i506 = (~(i & 272)) & (i | 272);
                                                                     int elapsedRealtime = (int) SystemClock.elapsedRealtime();
                                                                     int i507 = (i2 - (~defpackage.a.A((~((~elapsedRealtime) | 867385241)) | (-167180733), 168, (((~(elapsedRealtime | 867385241)) | (-1006108606)) * (-168)) + ((((~((-167180733) | elapsedRealtime)) | 28457368) * 336) - 973825651), -16))) - 1;
@@ -2529,7 +2529,7 @@ public final class PngjInputException {
                                                                 long j196 = 381;
                                                                 long j197 = ((j196 * ((j195 | longValue25) ^ j13)) + (((((j194 | longValue25) ^ j13) | (((j195 | (longValue25 ^ j13)) ^ j13) | ((j80 | longValue25) ^ j13))) * j196) + (((-381) * ((longValue25 | j4) | j195)) + ((382 * longValue25) + ((-380) * j194))))) - 1023286224;
                                                                 int startUptimeMillis4 = (int) Process.getStartUptimeMillis();
-                                                                int i519 = ((int) (j197 >> 32)) & ((((~(startUptimeMillis4 | (-1175165861))) | (-1682575025)) * 519) + (((~((~startUptimeMillis4) | (-33657093))) | (~((-1141508769) | startUptimeMillis4))) * (-519)) + ((((~(1682575024 | r7)) | (-1175165861)) * 519) - 1453938172));
+                                                                int i519 = ((int) (j197 >> 32)) & ((((~(startUptimeMillis4 | (-1175165861))) | (-1682575025)) * 519) + (((~((~startUptimeMillis4) | (-33657093))) | (~((-1141508769) | startUptimeMillis4))) * (-519)) + ((((~(1682575024 | 0)) | (-1175165861)) * 519) - 1453938172));
                                                                 int i520 = (((~((-590880652) | i)) | 51907210 | (~(2028107061 | i))) * (-880)) + 818884229;
                                                                 int i521 = (~((-590880652) | i14)) | (-2028107062);
                                                                 int i522 = ~(590880651 | i);
@@ -2542,7 +2542,7 @@ public final class PngjInputException {
                                                                     z4 = false;
                                                                 }
                                                                 if (z4) {
-                                                                    java.lang.Object[] objArr150 = {new int[]{(i & (-276)) | (i14 & 275)}, new int[]{(r1 | r2) & (~(r1 & r2))}, null, new int[]{i}};
+                                                                    java.lang.Object[] objArr150 = {new int[]{(i & (-276)) | (i14 & 275)}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                                                                     int i525 = (i2 - (~(-(-defpackage.a.c((~(i | (-188580945))) | 845985029, 376, (((~(i14 | 188580944)) | (-998094166)) * (-376)) + ((((-961622358) | i) * 376) - 1415183235), 16))))) - 1;
                                                                     int i526 = i525 << 13;
                                                                     int i527 = (i525 | i526) & (~(i525 & i526));
@@ -2577,7 +2577,7 @@ public final class PngjInputException {
                                                                 int i534 = ((int) (j203 >> 32)) & (((134218760 | i533) * 516) + (((~(2041241390 | i)) | (~((-134218761) | i14))) * 516) + ((i532 | i533) * (-516)) + 969045386);
                                                                 int i535 = ((int) j203) & ((((~((-905565454) | i14)) | 27262981 | (~((-1073872961) | i))) * 497) + ((((~((-878302473) | i)) | (~((-1073872961) | i14))) * 497) - 1670606888));
                                                                 if (((i534 & i535) | (i534 ^ i535)) != 0) {
-                                                                    java.lang.Object[] objArr154 = {new int[]{r7}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{i}};
+                                                                    java.lang.Object[] objArr154 = {new int[]{0}, new int[]{0 ^ (0 << 5)}, null, new int[]{i}};
                                                                     int i536 = (~(i & 276)) & (i | 276);
                                                                     int d2 = defpackage.a.d((~(i | 150645041)) | (~((-883920933) | i)) | 872747012, 623, ((i14 | 139471121) * (-623)) + (((~((-872747013) | i)) * 623) - 529780744), 16, i2);
                                                                     int i537 = d2 << 13;
@@ -2604,7 +2604,7 @@ public final class PngjInputException {
                                                                 int i542 = ((int) (j205 >> 32)) & ((((~((-1369506817) | i14)) | (~((-743852678) | i))) * 318) + (((~(744381391 | i)) | (~((-743852678) | i14))) * 318) + ((((~(2113359493 | i)) | 744381391) * (-318)) - 106113130));
                                                                 int startElapsedRealtime4 = (int) Process.getStartElapsedRealtime();
                                                                 if (!((i542 | (((int) j205) & ((((~(startElapsedRealtime4 | (-1240290833))) | 1080579072) * 116) + (((1617450053 | startElapsedRealtime4) * 116) + (((~((~startElapsedRealtime4) | 1777161813)) * (-116)) + 2072280017))))) == 0)) {
-                                                                    java.lang.Object[] objArr156 = {new int[]{i ^ 273}, new int[]{((~r1) & r2) | ((~r2) & r1)}, null, new int[]{i}};
+                                                                    java.lang.Object[] objArr156 = {new int[]{i ^ 273}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{i}};
                                                                     int i543 = (((~(i | 25382510)) | 1034265737) * 70) + ((~(1034415855 | i)) * 70) + (((~(1009183463 | i)) | 25232392) * (-140)) + 887975999;
                                                                     int i544 = ((i543 | 16) << 1) - (i543 ^ 16);
                                                                     int i545 = (i2 & i544) + (i2 | i544);
@@ -2635,9 +2635,9 @@ public final class PngjInputException {
                                                                 long j210 = ((j206 ^ j13) | longValue28) ^ j13;
                                                                 long j211 = ((j208 * ((j210 | (((longValue28 ^ j13) | j206) ^ j13)) | j209)) + (((-1528) * (j210 | ((uptimeMillis4 | longValue28) ^ j13))) + (((longValue28 | j209) * j208) + j207))) - 142592519;
                                                                 int i552 = ((int) (j211 >> 32)) & ((((~(367577699 | i14)) | (~(i14 | 1804804110))) * 865) + ((~(1804804110 | i)) * 865) + ((((~((-1804804111) | i14)) | 367577699) * (-865)) - 648183588));
-                                                                int i553 = ((int) j211) & ((((~((-1426577486) | i14)) | (-1437072734)) * 374) + (((10495248 | r5) * (-374)) - 1212680439));
+                                                                int i553 = ((int) j211) & ((((~((-1426577486) | i14)) | (-1437072734)) * 374) + (((10495248 | 0) * (-374)) - 1212680439));
                                                                 if (((i552 & i553) | (i552 ^ i553)) != 0) {
-                                                                    java.lang.Object[] objArr158 = {new int[]{(i & (-280)) | (i14 & 279)}, new int[]{(r1 | r2) & (~(r1 & r2))}, null, new int[]{i}};
+                                                                    java.lang.Object[] objArr158 = {new int[]{(i & (-280)) | (i14 & 279)}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                                                                     int i554 = -(-defpackage.a.A(886309140 | (~(i14 | (-148256834))), 160, (((~(i14 | 886309140)) | (-1020672342)) * (-160)) + 860206869, -16));
                                                                     int i555 = (i2 ^ i554) + ((i554 & i2) << 1);
                                                                     int i556 = i555 << 13;
@@ -2820,10 +2820,10 @@ public final class PngjInputException {
     }
 
     public class valueOf {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static long PngjBadCrcException;
@@ -2881,28 +2881,28 @@ public final class PngjInputException {
 
         /* JADX WARN: Code restructure failed: missing block: B:46:0x00d4, code lost:
         
-            r0 = r0[r5];
+            0 = $$a[0];
          */
         /* JADX WARN: Code restructure failed: missing block: B:47:0x00d8, code lost:
         
-            r1 = new java.lang.Object[r28];
-            r1[1] = java.lang.Integer.valueOf(r3);
-            r1[0] = java.lang.Integer.valueOf(r0);
-            r0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
+            0 = new java.lang.Object[0];
+            $$a[1] = java.lang.Integer.valueOf(0);
+            $$a[0] = java.lang.Integer.valueOf(0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
          */
         /* JADX WARN: Code restructure failed: missing block: B:48:0x00ee, code lost:
         
-            if (r0 != null) goto L30;
+            if (0 != null) goto L30;
          */
         /* JADX WARN: Code restructure failed: missing block: B:49:0x00f0, code lost:
         
-            r0 = (byte) 0;
-            r2 = r0;
-            r0 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (((byte) android.view.KeyEvent.getModifierMetaStateMask()) + 31883), (android.util.TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (android.util.TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)) + 32, android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0) + 1250, 605862879, false, $$e(r0, r2, r2), new java.lang.Class[]{r11, r11});
+            0 = (byte) 0;
+            0 = 0;
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (((byte) android.view.KeyEvent.getModifierMetaStateMask()) + 31883), (android.util.TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (android.util.TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)) + 32, android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0) + 1250, 605862879, false, $$e(0, 0, 0), new java.lang.Class[]{0, 0});
          */
         /* JADX WARN: Code restructure failed: missing block: B:51:0x0129, code lost:
         
-            r4[r5] = ((java.lang.Character) ((java.lang.reflect.Method) r0).invoke(null, r1)).charValue();
+            $$a[0] = ((java.lang.Character) ((java.lang.reflect.Method) 0).invoke(null, 0)).charValue();
          */
         /* JADX WARN: Code restructure failed: missing block: B:52:0x012b, code lost:
         
@@ -3203,10 +3203,10 @@ public final class PngjInputException {
     }
 
     public class values implements RetryPolicy {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static char PngjBadCrcException;
@@ -3287,260 +3287,260 @@ public final class PngjInputException {
 
         /* JADX WARN: Code restructure failed: missing block: B:123:0x1422, code lost:
         
-            if (((((int) r3) & ((((~((-1616165079) | r75)) | (-1783953920)) * 433) + ((((~((-1241575808) | r75)) | (-1616165079)) * (-433)) + (((~((-542378113) | r6)) * 433) - 425623506)))) | (((int) (r3 >> r25)) & ((((~((~r7) | (-671096316))) | (-2108322727)) * 305) + ((((~((-671096316) | r7)) | 3161) * 305) + 1704617878)))) != 477111747) goto L129;
+            if (((((int) 0) & ((((~((-1616165079) | 0)) | (-1783953920)) * 433) + ((((~((-1241575808) | 0)) | (-1616165079)) * (-433)) + (((~((-542378113) | 0)) * 433) - 425623506)))) | (((int) (0 >> 0)) & ((((~((~0) | (-671096316))) | (-2108322727)) * 305) + ((((~((-671096316) | 0)) | 3161) * 305) + 1704617878)))) != 477111747) goto L129;
          */
         /* JADX WARN: Code restructure failed: missing block: B:124:0x153d, code lost:
         
-            r0 = 0;
-            r3 = 0;
+            0 = 0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:126:0x1541, code lost:
         
-            if (r0 >= 28) goto L478;
+            if (0 >= 28) goto L478;
          */
         /* JADX WARN: Code restructure failed: missing block: B:127:0x1543, code lost:
         
-            r4 = r44[r0];
-            r5 = new java.lang.Object[1];
-            b(12 - android.text.TextUtils.getCapsMode(r10, 0, 0), false, "\uffd1\u0015\u001b\u0015\u0016\u0007\u000f\uffd1\u0004\u000b\u0010\uffd1", 11 - android.text.TextUtils.lastIndexOf(r10, '0'), 99 - (~(android.view.ViewConfiguration.getEdgeSlop() >> 16)), r5);
+            0 = $$a[0];
+            0 = new java.lang.Object[1];
+            b(12 - android.text.TextUtils.getCapsMode(0, 0, 0), false, "\uffd1\u0015\u001b\u0015\u0016\u0007\u000f\uffd1\u0004\u000b\u0010\uffd1", 11 - android.text.TextUtils.lastIndexOf(0, '0'), 99 - (~(android.view.ViewConfiguration.getEdgeSlop() >> 16)), 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:128:0x1577, code lost:
         
-            r4 = new java.lang.Object[]{((java.lang.String) r5[0]).concat(java.lang.String.valueOf(r4))};
-            r5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1142218481);
+            0 = new java.lang.Object[]{((java.lang.String) $$a[0]).concat(java.lang.String.valueOf(0))};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1142218481);
          */
         /* JADX WARN: Code restructure failed: missing block: B:129:0x1582, code lost:
         
-            if (r5 != null) goto L144;
+            if (0 != null) goto L144;
          */
         /* JADX WARN: Code restructure failed: missing block: B:130:0x1584, code lost:
         
-            r5 = (char) (android.view.ViewConfiguration.getKeyRepeatTimeout() >> 16);
-            r35 = 28 - (android.util.TypedValue.complexToFloat(0) > 0.0f ? 1 : (android.util.TypedValue.complexToFloat(0) == 0.0f ? 0 : -1));
-            r11 = (android.os.Process.getElapsedCpuTime() > r31 ? 1 : (android.os.Process.getElapsedCpuTime() == r31 ? 0 : -1)) + 1446;
-            r15 = (byte) 0;
-            r12 = (byte) (r15 + 1);
-            r26 = r0;
-            r5 = new java.lang.Object[1];
-            a(r15, r12, (byte) (r12 - 1), r5);
-            r5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r5, r35, r11, 1191464116, false, (java.lang.String) r5[0], new java.lang.Class[]{java.lang.String.class});
+            0 = (char) (android.view.ViewConfiguration.getKeyRepeatTimeout() >> 16);
+            0 = 28 - (android.util.TypedValue.complexToFloat(0) > 0.0f ? 1 : (android.util.TypedValue.complexToFloat(0) == 0.0f ? 0 : -1));
+            0 = (android.os.Process.getElapsedCpuTime() > 0 ? 1 : (android.os.Process.getElapsedCpuTime() == 0 ? 0 : -1)) + 1446;
+            0 = (byte) 0;
+            0 = (byte) (0 + 1);
+            0 = 0;
+            0 = new java.lang.Object[1];
+            a(0, 0, (byte) (0 - 1), 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, 1191464116, false, (java.lang.String) $$a[0], new java.lang.Class[]{java.lang.String.class});
          */
         /* JADX WARN: Code restructure failed: missing block: B:131:0x15c8, code lost:
         
-            r4 = ((java.lang.Long) ((java.lang.reflect.Method) r5).invoke(null, r4)).longValue();
+            0 = ((java.lang.Long) ((java.lang.reflect.Method) 0).invoke(null, 0)).longValue();
          */
         /* JADX WARN: Code restructure failed: missing block: B:132:0x15d5, code lost:
         
-            r11 = -1718086821;
-            r4 = -494;
-            r4 = ((-495) * ((r11 | r4) ^ r13)) + ((r4 * r4) + (r4 * r11));
-            r4 = 495;
-            r4 = (((int) android.os.SystemClock.elapsedRealtime()) ^ r13) | r11;
-            r4 = ((((r4 ^ r13) | (((r11 ^ r13) | (r4 ^ r13)) ^ r13)) * r4) + ((r4 * r4) + r4)) - 237911056;
-            r0 = ((int) (r4 >> r25)) & ((((~(2058367739 | r75)) | 536875088) * 302) + (((~(2142633979 | r75)) * (-604)) + ((((~(2142633979 | r6)) | (~((-84266241) | r75))) * (-302)) - 320660478)));
-            r5 = (int) android.os.SystemClock.uptimeMillis();
-            r4 = ((int) r4) & (((r5 | 1876815806) * 465) + (((236834060 | (~(1674060470 | r5))) * 930) + ((((~(236834060 | r5)) | 1674060470) * (-465)) - 1600531676)));
+            0 = -1718086821;
+            0 = -494;
+            0 = ((-495) * ((0 | 0) ^ 0)) + ((0 * 0) + (0 * 0));
+            0 = 495;
+            0 = (((int) android.os.SystemClock.elapsedRealtime()) ^ 0) | 0;
+            0 = ((((0 ^ 0) | (((0 ^ 0) | (0 ^ 0)) ^ 0)) * 0) + ((0 * 0) + 0)) - 237911056;
+            0 = ((int) (0 >> 0)) & ((((~(2058367739 | 0)) | 536875088) * 302) + (((~(2142633979 | 0)) * (-604)) + ((((~(2142633979 | 0)) | (~((-84266241) | 0))) * (-302)) - 320660478)));
+            0 = (int) android.os.SystemClock.uptimeMillis();
+            0 = ((int) 0) & (((0 | 1876815806) * 465) + (((236834060 | (~(1674060470 | 0))) * 930) + ((((~(236834060 | 0)) | 1674060470) * (-465)) - 1600531676)));
          */
         /* JADX WARN: Code restructure failed: missing block: B:133:0x1666, code lost:
         
-            if (((r0 & r4) | (r0 ^ r4)) != 0) goto L149;
+            if (((0 & 0) | (0 ^ 0)) != 0) goto L149;
          */
         /* JADX WARN: Code restructure failed: missing block: B:134:0x1668, code lost:
         
             com.identy.PngjInputException.values.PngjUnsupportedException = (com.identy.PngjInputException.values.PngjOutputException + 91) % 128;
-            r0 = 0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:136:0x1673, code lost:
         
-            r3 = (r3 - (~(-(-r0)))) - 1;
-            r0 = ((r26 | 1) << 1) - (r26 ^ 1);
+            0 = (0 - (~(-(-0)))) - 1;
+            0 = ((0 | 1) << 1) - (0 ^ 1);
          */
         /* JADX WARN: Code restructure failed: missing block: B:137:0x1672, code lost:
         
-            r0 = 1;
+            0 = 1;
          */
         /* JADX WARN: Code restructure failed: missing block: B:139:0x15c6, code lost:
         
-            r26 = r0;
+            0 = 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:142:0x168c, code lost:
         
-            if (r3 < 25.2d) goto L155;
+            if (0 < 25.2d) goto L155;
          */
         /* JADX WARN: Code restructure failed: missing block: B:143:0x168e, code lost:
         
-            r0 = com.identy.PngjInputException.values.PngjUnsupportedException;
-            com.identy.PngjInputException.values.PngjOutputException = ((r0 & 85) + (r0 | 85)) % 128;
-            r0 = new java.lang.Object[]{new int[]{r75 ^ 261}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{r75}};
-            r1 = (r77 - (~defpackage.a.A((~(r75 | 434817350)) | 599748623, 519, (((~(r6 | (-571813898))) | (~(1006631247 | r75))) * (-519)) + ((((~((-599748624) | r6)) | 434817350) * 519) + 965737986), -16))) - 1;
-            r2 = r1 << 13;
-            r1 = ((~r1) & r2) | ((~r2) & r1);
-            r2 = r1 >>> 17;
-            r1 = ((~r1) & r2) | ((~r2) & r1);
+            0 = com.identy.PngjInputException.values.PngjUnsupportedException;
+            com.identy.PngjInputException.values.PngjOutputException = ((0 & 85) + (0 | 85)) % 128;
+            0 = new java.lang.Object[]{new int[]{0 ^ 261}, new int[]{0 ^ (0 << 5)}, null, new int[]{0}};
+            0 = (0 - (~defpackage.a.A((~(0 | 434817350)) | 599748623, 519, (((~(0 | (-571813898))) | (~(1006631247 | 0))) * (-519)) + ((((~((-599748624) | 0)) | 434817350) * 519) + 965737986), -16))) - 1;
+            0 = 0 << 13;
+            0 = ((~0) & 0) | ((~0) & 0);
+            0 = 0 >>> 17;
+            0 = ((~0) & 0) | ((~0) & 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:144:0x1703, code lost:
         
-            return r0;
+            return 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:152:0x153b, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) == 477111747) goto L137;
+            if (((0 & 0) | (0 ^ 0)) == 477111747) goto L137;
          */
         /* JADX WARN: Code restructure failed: missing block: B:341:0x4024, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != 0) goto L424;
+            if (((0 & 0) | (0 ^ 0)) != 0) goto L424;
          */
         /* JADX WARN: Code restructure failed: missing block: B:343:0x411b, code lost:
         
-            r0 = new java.lang.Object[]{new int[]{r75 ^ 273}, new int[1], null, new int[]{r75}};
-            r3 = android.os.Process.myPid();
-            r3 = defpackage.a.A((~(r3 | (-559154689))) | ((~((~r3) | (-439032270))) | 402653253), 168, ((~((-36379017) | r3)) * 168) + ((((~((-595533705) | r4)) | 36379016) * 168) - 973825651), -16);
-            r4 = r3 * 284;
-            r5 = -(-(r77 * (-282)));
-            r6 = (r4 & r5) + (r4 | r5);
-            r4 = ~r3;
-            r5 = ~(r4 | r77);
-            r4 = ~((r4 & r75) | (r4 ^ r75));
-            r4 = ((r4 & r5) | (r5 ^ r4)) * (-283);
-            r2 = ~r77;
-            r4 = ((~((r2 ^ r3) | (r2 & r3))) * 283) + ((r6 & r4) + (r4 | r6));
-            r3 = ~r3;
-            r1 = (~(r75 | ((r2 & r3) | (r3 ^ r2)))) * 283;
-            r2 = (r4 ^ r1) + ((r1 & r4) << 1);
-            r1 = r2 << 13;
-            r1 = (r1 & (~r2)) | ((~r1) & r2);
-            r1 = r1 ^ (r1 >>> 17);
-            ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+            0 = new java.lang.Object[]{new int[]{0 ^ 273}, new int[1], null, new int[]{0}};
+            0 = android.os.Process.myPid();
+            0 = defpackage.a.A((~(0 | (-559154689))) | ((~((~0) | (-439032270))) | 402653253), 168, ((~((-36379017) | 0)) * 168) + ((((~((-595533705) | 0)) | 36379016) * 168) - 973825651), -16);
+            0 = 0 * 284;
+            0 = -(-(0 * (-282)));
+            0 = (0 & 0) + (0 | 0);
+            0 = ~0;
+            0 = ~(0 | 0);
+            0 = ~((0 & 0) | (0 ^ 0));
+            0 = ((0 & 0) | (0 ^ 0)) * (-283);
+            0 = ~0;
+            0 = ((~((0 ^ 0) | (0 & 0))) * 283) + ((0 & 0) + (0 | 0));
+            0 = ~0;
+            0 = (~(0 | ((0 & 0) | (0 ^ 0)))) * 283;
+            0 = (0 ^ 0) + ((0 & 0) << 1);
+            0 = 0 << 13;
+            0 = (0 & (~0)) | ((~0) & 0);
+            0 = 0 ^ (0 >>> 17);
+            ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
          */
         /* JADX WARN: Code restructure failed: missing block: B:344:0x41bc, code lost:
         
-            return r0;
+            return 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:347:0x41c0, code lost:
         
-            r0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-820027826);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-820027826);
          */
         /* JADX WARN: Code restructure failed: missing block: B:348:0x41c4, code lost:
         
-            if (r0 != null) goto L439;
+            if (0 != null) goto L439;
          */
         /* JADX WARN: Code restructure failed: missing block: B:349:0x41c6, code lost:
         
-            r0 = (char) (android.graphics.Color.red(0) + 13779);
-            r34 = 30 - (android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1));
-            r4 = 1502 - android.text.TextUtils.getOffsetBefore(r10, 0);
-            r7 = (byte) 0;
-            r9 = (byte) (r7 + 1);
-            r3 = new java.lang.Object[1];
-            a(r7, r9, (byte) (r9 - 1), r3);
-            r0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r0, r34, r4, 871379957, false, (java.lang.String) r3[0], new java.lang.Class[0]);
+            0 = (char) (android.graphics.Color.red(0) + 13779);
+            0 = 30 - (android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1));
+            0 = 1502 - android.text.TextUtils.getOffsetBefore(0, 0);
+            0 = (byte) 0;
+            0 = (byte) (0 + 1);
+            0 = new java.lang.Object[1];
+            a(0, 0, (byte) (0 - 1), 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, 871379957, false, (java.lang.String) $$a[0], new java.lang.Class[0]);
          */
         /* JADX WARN: Code restructure failed: missing block: B:350:0x4200, code lost:
         
-            r3 = ((java.lang.Long) ((java.lang.reflect.Method) r0).invoke(null, null)).longValue();
+            0 = ((java.lang.Long) ((java.lang.reflect.Method) 0).invoke(null, null)).longValue();
          */
         /* JADX WARN: Code restructure failed: missing block: B:351:0x420d, code lost:
         
-            r12 = 339993277;
-            r2 = 829;
-            r2 = (r2 * r3) + (r2 * r12);
-            r4 = -828;
-            r2 = android.os.Process.myTid() ^ r13;
-            r11 = r12 | r3;
-            r2 = ((828 * (r11 ^ r13)) + ((r4 * (r2 | r11)) + ((((((r12 ^ r13) | (r3 ^ r13)) ^ r13) | (((r2 | r12) | r3) ^ r13)) * r4) + r2))) - 507388493;
-            r0 = ((int) (r2 >> r25)) & ((((~((~((int) android.os.SystemClock.elapsedRealtime())) | (-621415160))) | 1606314581) * 494) + ((((-536871075) | r4) * 494) - 1808193646));
-            r3 = (int) android.os.Process.getStartUptimeMillis();
-            r2 = ((int) r2) & ((((~(r3 | (-1081431777))) | ((~((~r3) | 1081431776)) | (~(355794633 | r3)))) * 959) + (((((~(355794633 | r4)) | (~(1081431776 | r3))) | (~(r4 | (-1081431777)))) * 959) - 816079702));
+            0 = 339993277;
+            0 = 829;
+            0 = (0 * 0) + (0 * 0);
+            0 = -828;
+            0 = android.os.Process.myTid() ^ 0;
+            0 = 0 | 0;
+            0 = ((828 * (0 ^ 0)) + ((0 * (0 | 0)) + ((((((0 ^ 0) | (0 ^ 0)) ^ 0) | (((0 | 0) | 0) ^ 0)) * 0) + 0))) - 507388493;
+            0 = ((int) (0 >> 0)) & ((((~((~((int) android.os.SystemClock.elapsedRealtime())) | (-621415160))) | 1606314581) * 494) + ((((-536871075) | 0) * 494) - 1808193646));
+            0 = (int) android.os.Process.getStartUptimeMillis();
+            0 = ((int) 0) & ((((~(0 | (-1081431777))) | ((~((~0) | 1081431776)) | (~(355794633 | 0)))) * 959) + (((((~(355794633 | 0)) | (~(1081431776 | 0))) | (~(0 | (-1081431777)))) * 959) - 816079702));
          */
         /* JADX WARN: Code restructure failed: missing block: B:352:0x429d, code lost:
         
-            if (((r0 & r2) | (r0 ^ r2)) == 0) goto L444;
+            if (((0 & 0) | (0 ^ 0)) == 0) goto L444;
          */
         /* JADX WARN: Code restructure failed: missing block: B:353:0x429f, code lost:
         
-            r0 = com.identy.PngjInputException.values.PngjUnsupportedException;
-            com.identy.PngjInputException.values.PngjOutputException = (((r0 | 7) << 1) - (r0 ^ 7)) % 128;
-            r0 = new java.lang.Object[]{new int[]{r75 ^ 279}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{r75}};
-            r1 = (((((~(r75 | (-272639042))) | 705692168) * 235) + ((((~((-300756424) | r75)) | 733809550) * (-470)) + ((((~((-300756424) | r6)) | 733809550) * (-235)) - 9013834))) + 16) + r77;
-            r2 = r1 << 13;
-            r1 = (r1 | r2) & (~(r1 & r2));
-            r2 = r1 >>> 17;
-            r1 = (r1 | r2) & (~(r1 & r2));
+            0 = com.identy.PngjInputException.values.PngjUnsupportedException;
+            com.identy.PngjInputException.values.PngjOutputException = (((0 | 7) << 1) - (0 ^ 7)) % 128;
+            0 = new java.lang.Object[]{new int[]{0 ^ 279}, new int[]{0 ^ (0 << 5)}, null, new int[]{0}};
+            0 = (((((~(0 | (-272639042))) | 705692168) * 235) + ((((~((-300756424) | 0)) | 733809550) * (-470)) + ((((~((-300756424) | 0)) | 733809550) * (-235)) - 9013834))) + 16) + 0;
+            0 = 0 << 13;
+            0 = (0 | 0) & (~(0 & 0));
+            0 = 0 >>> 17;
+            0 = (0 | 0) & (~(0 & 0));
          */
         /* JADX WARN: Code restructure failed: missing block: B:354:0x430c, code lost:
         
-            return r0;
+            return 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:356:0x430e, code lost:
         
-            r0 = new java.lang.Object[]{java.lang.Integer.valueOf(r75), r76, java.lang.Integer.valueOf(r77), 16777216};
-            r2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1284430186);
+            0 = new java.lang.Object[]{java.lang.Integer.valueOf(0), 0, java.lang.Integer.valueOf(0), 16777216};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1284430186);
          */
         /* JADX WARN: Code restructure failed: missing block: B:357:0x4332, code lost:
         
-            if (r2 != null) goto L448;
+            if (0 != null) goto L448;
          */
         /* JADX WARN: Code restructure failed: missing block: B:358:0x4334, code lost:
         
-            r2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ('0' - android.text.AndroidCharacter.getMirror('0')), (android.view.ViewConfiguration.getDoubleTapTimeout() >> 16) + 26, 1225 - (android.view.ViewConfiguration.getZoomControlsTimeout() > r31 ? 1 : (android.view.ViewConfiguration.getZoomControlsTimeout() == r31 ? 0 : -1)), 1335773997, false, null, new java.lang.Class[]{r8, (java.lang.Class) com.d.e.a.PngjBadCrcException.values((char) (android.view.ViewConfiguration.getTouchSlop() >> 8), android.text.TextUtils.getOffsetBefore(r10, 0) + 25, (android.os.SystemClock.uptimeMillis() > r31 ? 1 : (android.os.SystemClock.uptimeMillis() == r31 ? 0 : -1)) + 1198), r8, r8});
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ('0' - android.text.AndroidCharacter.getMirror('0')), (android.view.ViewConfiguration.getDoubleTapTimeout() >> 16) + 26, 1225 - (android.view.ViewConfiguration.getZoomControlsTimeout() > 0 ? 1 : (android.view.ViewConfiguration.getZoomControlsTimeout() == 0 ? 0 : -1)), 1335773997, false, null, new java.lang.Class[]{0, (java.lang.Class) com.d.e.a.PngjBadCrcException.values((char) (android.view.ViewConfiguration.getTouchSlop() >> 8), android.text.TextUtils.getOffsetBefore(0, 0) + 25, (android.os.SystemClock.uptimeMillis() > 0 ? 1 : (android.os.SystemClock.uptimeMillis() == 0 ? 0 : -1)) + 1198), 0, 0});
          */
         /* JADX WARN: Code restructure failed: missing block: B:359:0x437e, code lost:
         
-            r0 = ((java.lang.reflect.Constructor) r2).newInstance(r0);
+            0 = ((java.lang.reflect.Constructor) 0).newInstance(0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:362:0x4384, code lost:
         
-            r4 = new java.lang.Object[1];
-            c("䦢\u0897\u1fdc\u137f", (android.media.AudioTrack.getMinVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), (char) (32543 - android.view.KeyEvent.keyCodeFromString(r10)), "\ue5a3䢥꡷鵥", "眨Յភ\uf869쀬钭홀垄잃\uf891\udaacᴾ巃딾輺淅", r4);
-            r2 = java.lang.Class.forName((java.lang.String) r4[0]);
-            r4 = android.view.ViewConfiguration.getLongPressTimeout() >> 16;
-            r5 = new java.lang.Object[1];
-            c("煔쭷濇噪", ((r4 | (-942966927)) << 1) - (r4 ^ (-942966927)), (char) (27246 - (~(-android.text.TextUtils.indexOf(r10, r10)))), "\ue5a3䢥꡷鵥", "븪뚭ᕅ祺\uf670", r5);
-            r2.getMethod((java.lang.String) r5[0], null).invoke(r0, null);
+            0 = new java.lang.Object[1];
+            c("䦢\u0897\u1fdc\u137f", (android.media.AudioTrack.getMinVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), (char) (32543 - android.view.KeyEvent.keyCodeFromString(0)), "\ue5a3䢥꡷鵥", "眨Յភ\uf869쀬钭홀垄잃\uf891\udaacᴾ巃딾輺淅", 0);
+            0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+            0 = android.view.ViewConfiguration.getLongPressTimeout() >> 16;
+            0 = new java.lang.Object[1];
+            c("煔쭷濇噪", ((0 | (-942966927)) << 1) - (0 ^ (-942966927)), (char) (27246 - (~(-android.text.TextUtils.indexOf(0, 0)))), "\ue5a3䢥꡷鵥", "븪뚭ᕅ祺\uf670", 0);
+            0.getMethod((java.lang.String) $$a[0], null).invoke(0, null);
          */
         /* JADX WARN: Code restructure failed: missing block: B:363:0x43e7, code lost:
         
-            r0 = new java.lang.Object[]{new int[]{r75}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{r75}};
-            r3 = ((((~((-399775408) | r75)) | 97780390) | (~((-634790567) | r75))) * (-880)) + 919555461;
-            r2 = (~((-399775408) | r6)) | 634790566;
-            r1 = ~(r75 | 399775407);
-            r1 = (r77 - (~((r1 * 880) + (((r2 | r1) * (-880)) + r3)))) - 1;
-            r2 = r1 << 13;
-            r1 = ((~r1) & r2) | ((~r2) & r1);
-            r2 = r1 >>> 17;
-            r1 = ((~r1) & r2) | ((~r2) & r1);
+            0 = new java.lang.Object[]{new int[]{0}, new int[]{0 ^ (0 << 5)}, null, new int[]{0}};
+            0 = ((((~((-399775408) | 0)) | 97780390) | (~((-634790567) | 0))) * (-880)) + 919555461;
+            0 = (~((-399775408) | 0)) | 634790566;
+            0 = ~(0 | 399775407);
+            0 = (0 - (~((0 * 880) + (((0 | 0) * (-880)) + 0)))) - 1;
+            0 = 0 << 13;
+            0 = ((~0) & 0) | ((~0) & 0);
+            0 = 0 >>> 17;
+            0 = ((~0) & 0) | ((~0) & 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:364:0x444a, code lost:
         
-            return r0;
+            return 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:366:0x444b, code lost:
         
-            r0 = move-exception;
+            0 = move-exception;
          */
         /* JADX WARN: Code restructure failed: missing block: B:367:0x444c, code lost:
         
-            r1 = r0.getCause();
+            0 = 0.getCause();
          */
         /* JADX WARN: Code restructure failed: missing block: B:368:0x4450, code lost:
         
-            if (r1 != null) goto L455;
+            if (0 != null) goto L455;
          */
         /* JADX WARN: Code restructure failed: missing block: B:369:0x4452, code lost:
         
-            throw r1;
+            throw 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:370:0x4453, code lost:
         
-            throw r0;
+            throw 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:376:0x4117, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != 0) goto L424;
+            if (((0 & 0) | (0 ^ 0)) != 0) goto L424;
          */
         /* JADX WARN: Code restructure failed: missing block: B:43:0x055b, code lost:
         
-            if (((((int) (r3 >> r25)) & defpackage.a.c(((~(196579716 | r5)) | 1614833195) | (~((-1633806128) | r5)), 184, (((~(r5 | (-18972933))) | (~(1811412911 | r5))) * (-184)) - 1019427974, 1680089928)) | (((int) r3) & ((((1432018003 | (~(5208406 | r75))) | (~(r7 | (-5208407)))) * 45) + ((((~(1432018003 | r75)) | 4872274) * (-45)) + ((((~(1432018003 | r7)) | (-5208407)) * (-90)) - 1687905466))))) != 477111747) goto L50;
+            if (((((int) (0 >> 0)) & defpackage.a.c(((~(196579716 | 0)) | 1614833195) | (~((-1633806128) | 0)), 184, (((~(0 | (-18972933))) | (~(1811412911 | 0))) * (-184)) - 1019427974, 1680089928)) | (((int) 0) & ((((1432018003 | (~(5208406 | 0))) | (~(0 | (-5208407)))) * 45) + ((((~(1432018003 | 0)) | 4872274) * (-45)) + ((((~(1432018003 | 0)) | (-5208407)) * (-90)) - 1687905466))))) != 477111747) goto L50;
          */
         /* JADX WARN: Code restructure failed: missing block: B:45:0x0863, code lost:
         
@@ -3548,134 +3548,134 @@ public final class PngjInputException {
          */
         /* JADX WARN: Code restructure failed: missing block: B:46:0x0865, code lost:
         
-            r3 = new java.lang.Object[1];
-            c("\udf1dꇀ◟尯", android.graphics.Color.red(0), (char) ((android.os.Process.getElapsedCpuTime() > r31 ? 1 : (android.os.Process.getElapsedCpuTime() == r31 ? 0 : -1)) + 12068), "\ue5a3䢥꡷鵥", "탹ʀ䂐齗뼾䂟\udae1Ⳍ\u20f3Ꮄ陵\ue521ⶐ\ue418ꥩ饛옞\ue08dൺ\udddd\uddc7\uf1b4䰅海싫귢ᓐꑆ", r3);
+            0 = new java.lang.Object[1];
+            c("\udf1dꇀ◟尯", android.graphics.Color.red(0), (char) ((android.os.Process.getElapsedCpuTime() > 0 ? 1 : (android.os.Process.getElapsedCpuTime() == 0 ? 0 : -1)) + 12068), "\ue5a3䢥꡷鵥", "탹ʀ䂐齗뼾䂟\udae1Ⳍ\u20f3Ꮄ陵\ue521ⶐ\ue418ꥩ饛옞\ue08dൺ\udddd\uddc7\uf1b4䰅海싫귢ᓐꑆ", 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:47:0x0888, code lost:
         
-            r0 = new java.lang.Object[]{(java.lang.String) r3[0]};
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
+            0 = new java.lang.Object[]{(java.lang.String) $$a[0]};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
          */
         /* JADX WARN: Code restructure failed: missing block: B:48:0x0893, code lost:
         
-            if (r3 != null) goto L80;
+            if (0 != null) goto L80;
          */
         /* JADX WARN: Code restructure failed: missing block: B:49:0x0895, code lost:
         
-            r3 = (char) android.text.TextUtils.indexOf(r10, r10);
-            r35 = 28 - (android.view.ViewConfiguration.getLongPressTimeout() >> 16);
-            r4 = 1448 - (android.view.ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (android.view.ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1));
-            r5 = (byte) (com.identy.PngjInputException.values.$$b & 3);
-            r6 = r5;
-            r12 = new java.lang.Object[1];
-            a(r5, r6, (byte) (r6 + 3), r12);
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r3, r35, r4, -1614962923, false, (java.lang.String) r12[0], new java.lang.Class[]{java.lang.String.class});
+            0 = (char) android.text.TextUtils.indexOf(0, 0);
+            0 = 28 - (android.view.ViewConfiguration.getLongPressTimeout() >> 16);
+            0 = 1448 - (android.view.ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (android.view.ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1));
+            0 = (byte) (com.identy.PngjInputException.values.$$b & 3);
+            0 = 0;
+            0 = new java.lang.Object[1];
+            a(0, 0, (byte) (0 + 3), 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -1614962923, false, (java.lang.String) $$a[0], new java.lang.Class[]{java.lang.String.class});
          */
         /* JADX WARN: Code restructure failed: missing block: B:50:0x08d3, code lost:
         
-            r3 = ((java.lang.Long) ((java.lang.reflect.Method) r3).invoke(null, r0)).longValue();
+            0 = ((java.lang.Long) ((java.lang.reflect.Method) 0).invoke(null, 0)).longValue();
          */
         /* JADX WARN: Code restructure failed: missing block: B:51:0x08e0, code lost:
         
-            r5 = -1236063203;
-            r3 = ((-301) * r3) + (303 * r5);
-            r36 = r5 ^ r13;
-            r3 = (int) android.os.SystemClock.elapsedRealtime();
-            r11 = ((302 * ((((r3 ^ r13) | r5) ^ r13) | ((r3 | r3) ^ r13))) + (((-604) * (((r36 | r3) | r3) ^ r13)) + (((-302) * ((((r36 | (r3 ^ r13)) | r3) ^ r13) | (((r5 | r3) | r3) ^ r13))) + r3))) + 1706551520;
-            r0 = ((int) (r11 >> r25)) & ((((~(803178606 | r7)) | (-169166163)) * 494) + ((((-17681) | r7) * 494) - 894034494));
-            r4 = (int) java.lang.Runtime.getRuntime().maxMemory();
-            r5 = ~r4;
-            r3 = ((int) r11) & ((((~(r4 | (-386791353))) | (~(r5 | (-1824017763)))) * 333) + ((((~((-386791353) | r5)) | (~((-1824017763) | r4))) * 333) + 1097713539));
+            0 = -1236063203;
+            0 = ((-301) * 0) + (303 * 0);
+            0 = 0 ^ 0;
+            0 = (int) android.os.SystemClock.elapsedRealtime();
+            0 = ((302 * ((((0 ^ 0) | 0) ^ 0) | ((0 | 0) ^ 0))) + (((-604) * (((0 | 0) | 0) ^ 0)) + (((-302) * ((((0 | (0 ^ 0)) | 0) ^ 0) | (((0 | 0) | 0) ^ 0))) + 0))) + 1706551520;
+            0 = ((int) (0 >> 0)) & ((((~(803178606 | 0)) | (-169166163)) * 494) + ((((-17681) | 0) * 494) - 894034494));
+            0 = (int) java.lang.Runtime.getRuntime().maxMemory();
+            0 = ~0;
+            0 = ((int) 0) & ((((~(0 | (-386791353))) | (~(0 | (-1824017763)))) * 333) + ((((~((-386791353) | 0)) | (~((-1824017763) | 0))) * 333) + 1097713539));
          */
         /* JADX WARN: Code restructure failed: missing block: B:52:0x0979, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != 1) goto L84;
+            if (((0 & 0) | (0 ^ 0)) != 1) goto L84;
          */
         /* JADX WARN: Code restructure failed: missing block: B:53:0x097b, code lost:
         
-            r0 = true;
+            0 = true;
          */
         /* JADX WARN: Code restructure failed: missing block: B:54:0x0a3f, code lost:
         
-            if (r0 != false) goto L93;
+            if (0 != false) goto L93;
          */
         /* JADX WARN: Code restructure failed: missing block: B:55:0x0a44, code lost:
         
-            r0 = com.identy.PngjInputException.values.PngjOutputException;
-            com.identy.PngjInputException.values.PngjUnsupportedException = ((r0 & 27) + (r0 | 27)) % 128;
-            r0 = new java.lang.Object[]{new int[]{r5}, new int[1], null, new int[]{r75}};
-            r5 = (r75 & (-261)) | ((~r75) & 260);
-            r1 = (int) android.os.Process.getStartElapsedRealtime();
-            r1 = -(-defpackage.a.c((~(r1 | (-128143541))) | 27332628, 490, (((-100810913) | (~r1)) * (-490)) + 139134199, -1765361156));
-            r3 = (r77 & r1) + (r1 | r77);
-            r1 = r3 << 13;
-            r1 = (r1 | r3) & (~(r3 & r1));
-            r1 = r1 ^ (r1 >>> 17);
-            r2 = r1 << 5;
-            ((int[]) r0[1])[0] = (r1 | r2) & (~(r1 & r2));
+            0 = com.identy.PngjInputException.values.PngjOutputException;
+            com.identy.PngjInputException.values.PngjUnsupportedException = ((0 & 27) + (0 | 27)) % 128;
+            0 = new java.lang.Object[]{new int[]{0}, new int[1], null, new int[]{0}};
+            0 = (0 & (-261)) | ((~0) & 260);
+            0 = (int) android.os.Process.getStartElapsedRealtime();
+            0 = -(-defpackage.a.c((~(0 | (-128143541))) | 27332628, 490, (((-100810913) | (~0)) * (-490)) + 139134199, -1765361156));
+            0 = (0 & 0) + (0 | 0);
+            0 = 0 << 13;
+            0 = (0 | 0) & (~(0 & 0));
+            0 = 0 ^ (0 >>> 17);
+            0 = 0 << 5;
+            ((int[]) $$a[1])[0] = (0 | 0) & (~(0 & 0));
          */
         /* JADX WARN: Code restructure failed: missing block: B:56:0x0ab9, code lost:
         
-            return r0;
+            return 0;
          */
         /* JADX WARN: Code restructure failed: missing block: B:57:0x097e, code lost:
         
-            r0 = false;
+            0 = false;
          */
         /* JADX WARN: Code restructure failed: missing block: B:58:0x0981, code lost:
         
-            r0 = -android.view.View.getDefaultSize(0, 0);
-            r35 = ((r0 | (-1579264646)) << 1) - (r0 ^ (-1579264646));
-            r0 = android.graphics.Color.red(0);
-            r3 = new java.lang.Object[1];
-            c("窂\ude55ᒡ粢", r35, (char) ((r0 ^ 41492) + ((r0 & 41492) << 1)), "\ue5a3䢥꡷鵥", "烙╒୶뮸\u2e5f뵧罞糖\ueec7懹盨䧀\udf2f", r3);
+            0 = -android.view.View.getDefaultSize(0, 0);
+            0 = ((0 | (-1579264646)) << 1) - (0 ^ (-1579264646));
+            0 = android.graphics.Color.red(0);
+            0 = new java.lang.Object[1];
+            c("窂\ude55ᒡ粢", 0, (char) ((0 ^ 41492) + ((0 & 41492) << 1)), "\ue5a3䢥꡷鵥", "烙╒୶뮸\u2e5f뵧罞糖\ueec7懹盨䧀\udf2f", 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:59:0x09b3, code lost:
         
-            r0 = new java.lang.Object[]{(java.lang.String) r3[0]};
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r24);
+            0 = new java.lang.Object[]{(java.lang.String) $$a[0]};
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:60:0x09bb, code lost:
         
-            if (r3 != null) goto L89;
+            if (0 != null) goto L89;
          */
         /* JADX WARN: Code restructure failed: missing block: B:61:0x09bd, code lost:
         
-            r3 = (char) (8752 - (android.view.ViewConfiguration.getKeyRepeatDelay() >> 16));
-            r35 = android.text.TextUtils.getTrimmedLength(r10) + 24;
-            r4 = 337 - (android.os.SystemClock.currentThreadTimeMillis() > (-1) ? 1 : (android.os.SystemClock.currentThreadTimeMillis() == (-1) ? 0 : -1));
-            r6 = (byte) 0;
-            r7 = (byte) (r6 + 1);
-            r12 = new java.lang.Object[1];
-            a(r6, r7, (byte) (r7 - 1), r12);
-            r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r3, r35, r4, -598779726, false, (java.lang.String) r12[0], new java.lang.Class[]{java.lang.String.class});
+            0 = (char) (8752 - (android.view.ViewConfiguration.getKeyRepeatDelay() >> 16));
+            0 = android.text.TextUtils.getTrimmedLength(0) + 24;
+            0 = 337 - (android.os.SystemClock.currentThreadTimeMillis() > (-1) ? 1 : (android.os.SystemClock.currentThreadTimeMillis() == (-1) ? 0 : -1));
+            0 = (byte) 0;
+            0 = (byte) (0 + 1);
+            0 = new java.lang.Object[1];
+            a(0, 0, (byte) (0 - 1), 0);
+            0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -598779726, false, (java.lang.String) $$a[0], new java.lang.Class[]{java.lang.String.class});
          */
         /* JADX WARN: Code restructure failed: missing block: B:62:0x09fb, code lost:
         
-            r0 = ((java.lang.reflect.Method) r3).invoke(null, r0);
+            0 = ((java.lang.reflect.Method) 0).invoke(null, 0);
          */
         /* JADX WARN: Code restructure failed: missing block: B:63:0x0a02, code lost:
         
-            r3 = -(-(android.util.TypedValue.complexToFloat(0) > 0.0f ? 1 : (android.util.TypedValue.complexToFloat(0) == 0.0f ? 0 : -1)));
-            r34 = ((r3 | 1) << 1) - (r3 ^ 1);
-            r37 = 1 - (android.view.ViewConfiguration.getEdgeSlop() >> 16);
-            r3 = -(-(android.os.Process.myPid() >> 22));
-            r38 = (r3 & 55) + (r3 | 55);
-            r3 = new java.lang.Object[1];
-            b(r34, false, "\u0000", r37, r38, r3);
-            r0 = r0.equals((java.lang.String) r3[0]);
+            0 = -(-(android.util.TypedValue.complexToFloat(0) > 0.0f ? 1 : (android.util.TypedValue.complexToFloat(0) == 0.0f ? 0 : -1)));
+            0 = ((0 | 1) << 1) - (0 ^ 1);
+            0 = 1 - (android.view.ViewConfiguration.getEdgeSlop() >> 16);
+            0 = -(-(android.os.Process.myPid() >> 22));
+            0 = (0 & 55) + (0 | 55);
+            0 = new java.lang.Object[1];
+            b(0, false, "\u0000", 0, 0, 0);
+            0 = 0.equals((java.lang.String) $$a[0]);
          */
         /* JADX WARN: Code restructure failed: missing block: B:71:0x064a, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != 477111747) goto L58;
+            if (((0 & 0) | (0 ^ 0)) != 477111747) goto L58;
          */
         /* JADX WARN: Code restructure failed: missing block: B:79:0x075d, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) != (-1032769152)) goto L66;
+            if (((0 & 0) | (0 ^ 0)) != (-1032769152)) goto L66;
          */
         /* JADX WARN: Code restructure failed: missing block: B:87:0x085d, code lost:
         
-            if (((r0 & r3) | (r0 ^ r3)) == 542074309) goto L74;
+            if (((0 & 0) | (0 ^ 0)) == 542074309) goto L74;
          */
         /* JADX WARN: Removed duplicated region for block: B:230:0x245c  */
         /* JADX WARN: Removed duplicated region for block: B:232:0x2537  */
@@ -3765,7 +3765,7 @@ public final class PngjInputException {
                 }
             }
             if (((i7 & i8) | (i7 ^ i8)) != 0) {
-                java.lang.Object[] objArr4 = {new int[]{r3}, new int[]{(r1 | r2) & (~(r1 & r2))}, null, new int[]{i}};
+                java.lang.Object[] objArr4 = {new int[]{0}, new int[]{(0 | 0) & (~(0 & 0))}, null, new int[]{i}};
                 int i22 = (~(i & 271)) & (i | 271);
                 int c5 = defpackage.a.c(~((~i) | (-44860449)), -948, (((~((-45909041) | i)) | (-988656934)) * (-948)) + 662760977, -994066164);
                 int i23 = (i2 - (~((c5 ^ 16) + ((c5 & 16) << 1)))) - 1;
@@ -3930,9 +3930,9 @@ public final class PngjInputException {
                         long j28 = ((-184) * (((j25 | longValue4) ^ j) | ((j27 | j22) ^ j))) + (j23 * longValue4) + (j23 * j22);
                         long j29 = 184;
                         long j30 = (j29 * (j22 | longValue4)) + ((((j24 | j26) ^ j) | (j25 ^ j) | (j27 ^ j)) * j29) + j28 + 1206157716;
-                        int i45 = ((int) (j30 >> c)) & ((((~((~Process.myUid()) | (-302000169))) | 1078984960) * 521) + (((~((-302000169) | r3)) * 521) - 796486846));
+                        int i45 = ((int) (j30 >> c)) & ((((~((~Process.myUid()) | (-302000169))) | 1078984960) * 521) + (((~((-302000169) | 0)) * 521) - 796486846));
                         int i46 = (~(522511035 | i39)) | (-1067840256);
-                        int i47 = ((int) j30) & ((((~((-369386155) | i)) | (~((-545329221) | i39))) * 502) + (((i46 | r5) * (-502)) - 622122923));
+                        int i47 = ((int) j30) & ((((~((-369386155) | i)) | (~((-545329221) | i39))) * 502) + (((i46 | 0) * (-502)) - 622122923));
                     }
                     if (obj3 != null) {
                         java.lang.Object[] objArr22 = {obj3, 42};
@@ -3958,7 +3958,7 @@ public final class PngjInputException {
                         long j38 = (int) Runtime.getRuntime().totalMemory();
                         long j39 = j38 ^ j;
                         long j40 = ((((j37 | j39) ^ j) | (((j35 | longValue5) | j38) ^ j) | ((j38 | (j36 | j31)) ^ j)) * j34) + (((j37 ^ j) | ((j35 | j39) ^ j)) * j34) + ((((j37 | j38) ^ j) | (((j36 | j39) | j31) ^ j)) * j34) + j33 + 1747653424;
-                        int i49 = ((int) (j40 >> c)) & ((((~((~((int) Process.getStartElapsedRealtime())) | 979228219)) | 16787780) * 191) + ((((~(979228219 | r5)) | 457998191) * 191) - 2087053155));
+                        int i49 = ((int) (j40 >> c)) & ((((~((~((int) Process.getStartElapsedRealtime())) | 979228219)) | 16787780) * 191) + ((((~(979228219 | 0)) | 457998191) * 191) - 2087053155));
                         int i50 = ((int) j40) & ((((~(1211322451 | i)) | (~((-225903959) | i39))) * 406) + ((~((-1073762306) | i39)) * (-406)) + ((((~(225903958 | i)) | (~((-137560147) | i39))) * (-406)) - 789276781));
                     }
                     if (obj4 != null) {
@@ -4362,7 +4362,7 @@ public final class PngjInputException {
             long j73 = ((((((j68 | j72) | j62) ^ j) | (((j62 | longValue9) | j69) ^ j)) * j71) + (((((j68 | j69) ^ j) | (((j72 | j62) | longValue9) ^ j)) * j71) + j70)) - 1254654016;
             int i172 = ((int) (j73 >> c)) & ((((~((-1548609465) | i)) | 1481401776) * 116) + (((-111383054) | i) * 116) + (((~((-44175366) | i66)) * (-116)) - 2072279902));
             int startElapsedRealtime2 = (int) Process.getStartElapsedRealtime();
-            int i173 = ((int) j73) & ((((~(startElapsedRealtime2 | (-1082140038))) | (~((~startElapsedRealtime2) | (-812008041))) | (~((-151584769) | startElapsedRealtime2))) * 867) + (((~((-963592809) | startElapsedRealtime2)) | 812008040 | (~((-1894148078) | startElapsedRealtime2))) * (-1734)) + ((((~((-963592809) | r5)) | (~((-1894148078) | r5))) * (-867)) - 1972008908));
+            int i173 = ((int) j73) & ((((~(startElapsedRealtime2 | (-1082140038))) | (~((~startElapsedRealtime2) | (-812008041))) | (~((-151584769) | startElapsedRealtime2))) * 867) + (((~((-963592809) | startElapsedRealtime2)) | 812008040 | (~((-1894148078) | startElapsedRealtime2))) * (-1734)) + ((((~((-963592809) | 0)) | (~((-1894148078) | 0))) * (-867)) - 1972008908));
             long j74 = (i172 & i173) | (i172 ^ i173);
             int i174 = -(ViewConfiguration.getFadingEdgeLength() >> 16);
             int i175 = ((i174 | (-1291446460)) << 1) - (i174 ^ (-1291446460));
@@ -4403,7 +4403,7 @@ public final class PngjInputException {
                 PngjOutputException = i178;
                 if (j84 > j2 && j84 - 3 < j3) {
                     PngjUnsupportedException = (((i178 | 17) << 1) - (i178 ^ 17)) % 128;
-                    java.lang.Object[] objArr75 = {new int[]{r7}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{i}};
+                    java.lang.Object[] objArr75 = {new int[]{0}, new int[]{0 ^ (0 << 5)}, null, new int[]{i}};
                     int i179 = (~(i & 247)) & (i | 247);
                     int i180 = (((~(i | (-907752458))) | 25428292 | (~(126813516 | i66))) * 904) + (((~((-101385225) | i)) | (~(i66 | 933180749))) * 904) + ((((~((-126813517) | i)) | (~(907752457 | i66))) * (-1808)) - 559600147);
                     int i181 = (i180 & 16) + (i180 | 16) + i2;
@@ -4437,7 +4437,7 @@ public final class PngjInputException {
             long j88 = j85 | elapsedCpuTime2;
             long j89 = ((668 * (j88 | j87)) + ((1336 * (j85 | ((j87 | elapsedCpuTime2) ^ j))) + (((-668) * (j87 | (j88 ^ j))) + j86))) - 1539587440;
             int i187 = ((int) (j89 >> c)) & ((((~(747028573 | i66)) | 1363683746) * 672) + (((~((-747028574) | i)) | (~(2110712311 | i66))) * (-672)) + ((((~((-2110712312) | i)) | (-747028574)) * 672) - 638183382));
-            int c11 = ((int) j89) & defpackage.a.c((~(((int) SystemClock.elapsedRealtime()) | 290440223)) | 1141903744, 490, ((1432343967 | (~r4)) * (-490)) - 139953273, -715484636);
+            int c11 = ((int) j89) & defpackage.a.c((~(((int) SystemClock.elapsedRealtime()) | 290440223)) | 1141903744, 490, ((1432343967 | (~0)) * (-490)) - 139953273, -715484636);
             long j90 = (i187 & c11) | (i187 ^ c11);
             int i188 = -(ViewConfiguration.getMaximumDrawingCacheSize() >> 24);
             int i189 = (i188 ^ 4) + ((i188 & 4) << 1);
@@ -4488,13 +4488,13 @@ public final class PngjInputException {
             long j96 = j94 | j91;
             long j97 = ((((((j91 ^ j) | longValue12) ^ j) | ((j96 | elapsedRealtime) ^ j)) * j93) + (((-260) * (j96 ^ j)) + j95)) - 878223266;
             int i211 = (~((-1258885804) | i66)) | 167838379;
-            int i212 = ((int) (j97 >> c)) & ((((~(1269388031 | i)) | (~((-1091047425) | i66))) * 502) + (((i211 | r4) * (-502)) - 207253252));
+            int i212 = ((int) (j97 >> c)) & ((((~(1269388031 | i)) | (~((-1091047425) | i66))) * 502) + (((i211 | 0) * (-502)) - 207253252));
             int startElapsedRealtime3 = (int) Process.getStartElapsedRealtime();
             int i213 = ((int) j97) & ((((~((~startElapsedRealtime3) | 663527718)) | 42467622) * 420) + ((~(663527718 | startElapsedRealtime3)) * 420) + 1709976569);
             long j98 = (i212 & i213) | (i212 ^ i213);
             if (j4 > j2 && j98 > j2 && j98 + 100 < j4) {
                 PngjOutputException = (PngjUnsupportedException + 93) % 128;
-                java.lang.Object[] objArr82 = {new int[]{i ^ 248}, new int[]{((~r1) & r2) | ((~r2) & r1)}, null, new int[]{i}};
+                java.lang.Object[] objArr82 = {new int[]{i ^ 248}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{i}};
                 int i214 = (((~(i | 544103778)) | (~(490462195 | i66))) * 627) + (((~((-490462196) | i)) | 544103778) * (-627)) + (((-541328385) | i) * (-627)) + 1167369348;
                 int i215 = (i214 & 16) + (i214 | 16) + i2;
                 int i216 = i215 << 13;
@@ -5087,7 +5087,7 @@ public final class PngjInputException {
                             int i455 = ~(myPid3 | (-1284798499));
                             int i456 = ((int) j136) & ((i455 * 880) + ((i454 | i455) * (-880)) + i453);
                             if (((i452 & i456) | (i452 ^ i456)) != 0) {
-                                java.lang.Object[] objArr129 = {new int[]{r5}, new int[1], null, new int[]{i}};
+                                java.lang.Object[] objArr129 = {new int[]{0}, new int[1], null, new int[]{i}};
                                 int i457 = (~(i & 242)) & (i | 242);
                                 int startUptimeMillis4 = (int) Process.getStartUptimeMillis();
                                 int i458 = ~startUptimeMillis4;
@@ -5211,10 +5211,10 @@ public final class PngjInputException {
                                         long j157 = -1408215780;
                                         long j158 = longValue22 ^ j;
                                         long j159 = ((((((j158 | j72) | j157) ^ j) | (((longValue22 | j157) | j69) ^ j)) * j71) + (((((j158 | j69) ^ j) | (((j72 | j157) | longValue22) ^ j)) * j71) + (((j158 | (((j157 ^ j) | j69) ^ j)) * j67) + ((j65 * longValue22) + (j63 * j157))))) - 190023006;
-                                        int c17 = ((int) (j159 >> c)) & defpackage.a.c((~((~((int) SystemClock.uptimeMillis())) | (-1409029))) | (-1606418048), 576, (((~((-1522526744) | r5)) | 1521117715) * 576) - 1771464918, -9524544);
+                                        int c17 = ((int) (j159 >> c)) & defpackage.a.c((~((~((int) SystemClock.uptimeMillis())) | (-1409029))) | (-1606418048), 576, (((~((-1522526744) | 0)) | 1521117715) * 576) - 1771464918, -9524544);
                                         int i489 = ((int) j159) & ((((~((-1258302087) | i)) | (~((-335888650) | i66)) | (~(1599438799 | i))) * 192) + (((~((-1594190736) | i66)) | 1258302086) * (-384)) + ((5248064 | i66) * (-192)) + 1788176917);
                                         if (((c17 & i489) | (c17 ^ i489)) != 0) {
-                                            objArr = new java.lang.Object[]{new int[]{i ^ 266}, new int[]{((~r5) & r7) | ((~r7) & r5)}, null, new int[]{i}};
+                                            objArr = new java.lang.Object[]{new int[]{i ^ 266}, new int[]{((~0) & 0) | ((~0) & 0)}, null, new int[]{i}};
                                             int i490 = (((~((-1008862209) | i66)) | 524885) * 241) + ((((~((-1021451649) | i66)) | 12589440) * (-241)) - 352843568);
                                             int i491 = (i490 & 16) + (i490 | 16) + i2;
                                             int i492 = i491 ^ (i491 << 13);
@@ -5243,10 +5243,10 @@ public final class PngjInputException {
                                             long j164 = j160 ^ j;
                                             long j165 = (j160 | longValue23) ^ j;
                                             long j166 = ((longValue23 | ((j164 | elapsedCpuTime4) ^ j)) * j163) + ((-376) * ((((elapsedCpuTime4 ^ j) | j160) ^ j) | j165)) + ((elapsedCpuTime4 | ((j164 | (longValue23 ^ j)) ^ j) | j165) * j163) + j162 + 636961842;
-                                            if (((((int) (j166 >> c)) & ((((~(1600318462 | i66)) | 9442304 | (~((-352338345) | i))) * 168) + ((~(1609760766 | i)) * 168) + (((~(1257422422 | i66)) | (-1609760767)) * 168) + 501358106)) | (((int) j166) & ((((~(1125889337 | i)) | 277086272 | (~((-311337073) | i))) * 407) + (((~((-1125889338) | i)) | (~(311337072 | i66)) | 277086272) * 407) + (((1091638537 | r4) * (-814)) - 1951476454)))) != 0) {
+                                            if (((((int) (j166 >> c)) & ((((~(1600318462 | i66)) | 9442304 | (~((-352338345) | i))) * 168) + ((~(1609760766 | i)) * 168) + (((~(1257422422 | i66)) | (-1609760767)) * 168) + 501358106)) | (((int) j166) & ((((~(1125889337 | i)) | 277086272 | (~((-311337073) | i))) * 407) + (((~((-1125889338) | i)) | (~(311337072 | i66)) | 277086272) * 407) + (((1091638537 | 0) * (-814)) - 1951476454)))) != 0) {
                                                 int i496 = PngjUnsupportedException;
                                                 PngjOutputException = ((i496 ^ 95) + ((i496 & 95) << 1)) % 128;
-                                                objArr = new java.lang.Object[]{new int[]{r5}, new int[1], null, new int[]{i}};
+                                                objArr = new java.lang.Object[]{new int[]{0}, new int[1], null, new int[]{i}};
                                                 int i497 = (~(i & 280)) & (i | 280);
                                                 int i498 = ~(107317974 | i66);
                                                 int c18 = defpackage.a.c(i498 | (-927248000), 712, (((~((-822092842) | i66)) | (~(929410815 | i))) * (-712)) + ((822092841 | i498) * (-712)) + 709191517, 16);
@@ -5331,7 +5331,7 @@ public final class PngjInputException {
                                         int i540 = ~(315618518 | i538);
                                         int i541 = ((int) j173) & ((((-2063597271) | i540) * 516) + (((~(b66 | (-310752343))) | (~(i538 | 2063597270))) * 516) + ((i539 | i540) * (-516)) + 738022833);
                                         if (((i536 & i541) | (i536 ^ i541)) == 2) {
-                                            java.lang.Object[] objArr138 = {new int[]{r7}, new int[1], null, new int[]{i}};
+                                            java.lang.Object[] objArr138 = {new int[]{0}, new int[1], null, new int[]{i}};
                                             int i542 = (~(i & 270)) & (i | 270);
                                             int i543 = ~Process.myUid();
                                             int A = defpackage.a.A((~(i543 | (-237204957))) | 2176132, 52, (((~(237204956 | i543)) | (~((-797361018) | i543)) | 562332193) * (-52)) + ((~(799537149 | i543)) * 52) + 97910073, -16);
@@ -5378,7 +5378,7 @@ public final class PngjInputException {
                                         if (((((int) (j182 >> c)) & (((i | 1210126628) * 54) + (((~(2033793980 | i)) | 1210126628 | (~((-2033793981) | i66))) * 54) + (((~((-823946905) | i66)) | 279552) * (-108)) + 2073453656)) | (((int) j182) & ((((-40284295) | i) * 591) + ((((~((-40284295) | i66)) | 1477510704) * (-591)) - 2068546866)))) != 0) {
                                             java.lang.Object[] objArr140 = {new int[]{(i & (-273)) | (i66 & 272)}, new int[1], null, new int[]{i}};
                                             int elapsedCpuTime5 = (int) Process.getElapsedCpuTime();
-                                            int i559 = -(-defpackage.a.A((~(elapsedCpuTime5 | 1031273677)) | (~((-276020365) | (~elapsedCpuTime5))), 338, (((755253313 | r3) | (~(276020364 | elapsedCpuTime5))) * (-338)) - 1387851993, -16));
+                                            int i559 = -(-defpackage.a.A((~(elapsedCpuTime5 | 1031273677)) | (~((-276020365) | (~elapsedCpuTime5))), 338, (((755253313 | 0) | (~(276020364 | elapsedCpuTime5))) * (-338)) - 1387851993, -16));
                                             int i560 = (i2 ^ i559) + ((i559 & i2) << 1);
                                             int i561 = (i560 << 13) ^ i560;
                                             int i562 = i561 >>> 17;
@@ -5429,7 +5429,7 @@ public final class PngjInputException {
                                         long j187 = j186 | j183;
                                         long j188 = (((((j183 | j69) ^ j) | ((j187 ^ j) | ((j186 | j69) ^ j))) * j185) + (((-623) * (j72 | (((j183 ^ j) | longValue26) ^ j))) + ((((j187 | j69) ^ j) * j185) + j184))) - 1149265640;
                                         int c19 = ((int) (j188 >> c)) & defpackage.a.c((~((-1630564091) | i66)) | (-672486817), 381, (((-537937057) | i) * (-381)) - 1929478006, -1204411872);
-                                        int i582 = ((int) j188) & ((((~((~Process.myUid()) | 2352075)) | 1441651390) * 184) + (((1441790975 | r4) * 184) - 413109635));
+                                        int i582 = ((int) j188) & ((((~((~Process.myUid()) | 2352075)) | 1441651390) * 184) + (((1441790975 | 0) * 184) - 413109635));
                                         if (((c19 & i582) | (c19 ^ i582)) != 0) {
                                             java.lang.Object[] objArr144 = {new int[]{(i & (-276)) | (i66 & 275)}, new int[1], null, new int[]{i}};
                                             int b71 = defpackage.a.b(1454353943);
@@ -5479,9 +5479,9 @@ public final class PngjInputException {
                                         int i598 = ~startUptimeMillis7;
                                         int i599 = ((int) (j196 >> c)) & ((((~(startUptimeMillis7 | 1226641639)) | 1631099245 | (~(i598 | (-1226641640)))) * 45) + (((~(1631099245 | startUptimeMillis7)) | 1092096101) * (-45)) + (((~(1631099245 | i598)) | (-1226641640)) * (-90)) + 1687905420);
                                         int maxMemory4 = (int) Runtime.getRuntime().maxMemory();
-                                        int i600 = ((int) j196) & ((((~(maxMemory4 | (-969783687))) | (~((~maxMemory4) | 969783686)) | (~(467442723 | maxMemory4))) * 959) + (((((~(467442723 | r5)) | (~(969783686 | maxMemory4))) | (~(r5 | (-969783687)))) * 959) - 302045588));
+                                        int i600 = ((int) j196) & ((((~(maxMemory4 | (-969783687))) | (~((~maxMemory4) | 969783686)) | (~(467442723 | maxMemory4))) * 959) + (((((~(467442723 | 0)) | (~(969783686 | maxMemory4))) | (~(0 | (-969783687)))) * 959) - 302045588));
                                         if (((i599 & i600) | (i599 ^ i600)) != 0) {
-                                            java.lang.Object[] objArr148 = {new int[]{i ^ 276}, new int[]{r1 ^ (r1 << 5)}, null, new int[]{i}};
+                                            java.lang.Object[] objArr148 = {new int[]{i ^ 276}, new int[]{0 ^ (0 << 5)}, null, new int[]{i}};
                                             int i601 = (((~((-867513290) | i66)) | 838873665) * 52) + (((~(867513289 | i66)) | (~((-167052685) | i66)) | 138413060) * (-52)) + (((~(1005926349 | i66)) * 52) - 1029647119);
                                             int i602 = (((i601 | 16) << 1) - (i601 ^ 16)) + i2;
                                             int i603 = i602 << 13;
@@ -5512,7 +5512,7 @@ public final class PngjInputException {
                                             long j200 = elapsedRealtime4 ^ j;
                                             long j201 = (((((((longValue28 ^ j) | j197) ^ j) | ((j200 | j197) ^ j)) | ((j199 | elapsedRealtime4) ^ j)) * j198) + (((-280) * ((j199 ^ j) | ((j200 | longValue28) ^ j))) + (((longValue28 | elapsedRealtime4) * j198) + (((-279) * longValue28) + (141 * j197))))) - 1181540199;
                                             int i609 = (~(768436174 | i66)) | 1342177280;
-                                            int i610 = ((int) (j201 >> 25)) & (((~(2089304710 | i66)) * 713) + ((~((-21308745) | i)) * 1426) + (((i609 | r4) * (-713)) - 1676312542));
+                                            int i610 = ((int) (j201 >> 25)) & (((~(2089304710 | i66)) * 713) + ((~((-21308745) | i)) * 1426) + (((i609 | 0) * (-713)) - 1676312542));
                                             int i611 = ((int) j201) & ((((~(i66 | (-810056731))) | (~((-627169680) | i))) * 950) + (((~(i66 | (-627169680))) | (~((-810056731) | i))) * (-950)) + ((((~(810056730 | i66)) | (~(627169679 | i))) * 1900) - 1871736089));
                                         } else {
                                             java.lang.Object PngjBadSignature38 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1617763359);
@@ -5683,19 +5683,19 @@ public final class PngjInputException {
 
         /* JADX WARN: Code restructure failed: missing block: B:4:0x0014, code lost:
         
-            if (r26 != null) goto L8;
+            if (0 != null) goto L8;
          */
         /* JADX WARN: Code restructure failed: missing block: B:51:0x0019, code lost:
         
-            r2 = r26.toCharArray();
+            0 = 0.toCharArray();
          */
         /* JADX WARN: Code restructure failed: missing block: B:52:0x0017, code lost:
         
-            if (r26 != null) goto L8;
+            if (0 != null) goto L8;
          */
         /* JADX WARN: Code restructure failed: missing block: B:5:0x001e, code lost:
         
-            r2 = r26;
+            0 = 0;
          */
         /* JADX WARN: Removed duplicated region for block: B:27:0x0161  */
         /* JADX WARN: Removed duplicated region for block: B:29:0x0162  */
@@ -5900,7 +5900,7 @@ public final class PngjInputException {
                     cArr5[intValue2] = ((Character) ((Method) PngjBadSignature5).invoke(null, objArr5)).charValue();
                     cArr4[intValue2] = getpadsub2.values;
                     int i10 = getpadsub2.PngjBadSignature;
-                    cArr6[i10] = (char) ((((r0 ^ cArr2[i10]) ^ (valueOf ^ 698259225915410659L)) ^ ((int) (values ^ 698259225915410659L))) ^ ((char) (PngjBadCrcException ^ 698259225915410659L)));
+                    cArr6[i10] = (char) ((((0 ^ cArr2[i10]) ^ (valueOf ^ 698259225915410659L)) ^ ((int) (values ^ 698259225915410659L))) ^ ((char) (PngjBadCrcException ^ 698259225915410659L)));
                     getpadsub2.PngjBadSignature = i10 + 1;
                     charArray = cArr2;
                     i5 = i9;

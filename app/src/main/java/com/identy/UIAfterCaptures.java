@@ -8,8 +8,8 @@ public enum UIAfterCaptures {
     ALERTS("A"),
     INLINE("I");
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     String a;
 
     static {
@@ -128,7 +128,7 @@ public enum UIAfterCaptures {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) SystemClock.elapsedRealtime())) | (-243553353))) | 255335927, 160, (((~(r0 | 255335927)) | (-264003072)) * (-160)) - 990971937, -617693138);
+                    int c = defpackage.a.c((~((~((int) SystemClock.elapsedRealtime())) | (-243553353))) | 255335927, 160, (((~(0 | 255335927)) | (-264003072)) * (-160)) - 990971937, -617693138);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

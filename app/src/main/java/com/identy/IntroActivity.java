@@ -40,12 +40,12 @@ import java.util.ArrayList;
 
 /* loaded from: classes2.dex */
 public class IntroActivity extends Activity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int PngjBadCrcException;
@@ -356,13 +356,13 @@ public class IntroActivity extends Activity {
         byte[] bArr2 = new byte[19 - s];
         int r5 = 18 - s;
         if (bArr == null) {
-            byte b4 = r7;
+            byte b4 = 0;
             i = 0;
-            byte b5 = r5;
+            byte b5 = 0;
             i2++;
             b3 = b5 + b4 + 5;
             bArr2[i] = b3 == true ? (byte) 1 : (byte) 0;
-            if (i == r5) {
+            if (i == 0) {
                 objArr[0] = new String(bArr2, 0);
                 return;
             }
@@ -372,13 +372,13 @@ public class IntroActivity extends Activity {
             i2++;
             b3 = b5 + b4 + 5;
             bArr2[i] = b3 == true ? (byte) 1 : (byte) 0;
-            if (i == r5) {
+            if (i == 0) {
             }
         } else {
             i = 0;
-            b3 = r7;
+            b3 = 0;
             bArr2[i] = b3 == true ? (byte) 1 : (byte) 0;
-            if (i == r5) {
+            if (i == 0) {
             }
         }
     }
@@ -493,11 +493,11 @@ public class IntroActivity extends Activity {
                             int rgb2 = (-16777188) - Color.rgb(0, 0, 0);
                             int modifierMetaStateMask = ((byte) KeyEvent.getModifierMetaStateMask()) + 722;
                             java.lang.Object[] objArr4 = new java.lang.Object[1];
-                            b(r2[17], (byte) ($$a[44] - 1), r2[20], objArr4);
+                            b($$a[17], (byte) ($$a[44] - 1), $$a[20], objArr4);
                             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(alpha, rgb2, modifierMetaStateMask, -779023007, false, (String) objArr4[0], null);
                         }
                         java.lang.Object[] objArr5 = (java.lang.Object[]) ((Field) PngjBadSignature3).get(null);
-                        valueOf$1eba2e16 = new java.lang.Object[]{new int[]{r5}, new int[1], r0, new int[]{r4}};
+                        valueOf$1eba2e16 = new java.lang.Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i4 = ((int[]) objArr5[3])[0];
                         int i5 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
@@ -510,7 +510,7 @@ public class IntroActivity extends Activity {
                         i2 = ((int[]) valueOf$1eba2e16[0])[0];
                         i3 = ((int[]) valueOf$1eba2e16[3])[0];
                         if (i3 != i2) {
-                            java.lang.Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
+                            java.lang.Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i9 = ((int[]) valueOf$1eba2e16[1])[0];
                             int i10 = ((int[]) valueOf$1eba2e16[3])[0];
                             int i11 = ((int[]) valueOf$1eba2e16[0])[0];
@@ -531,7 +531,7 @@ public class IntroActivity extends Activity {
                             }
                         }
                         Toast.makeText((Context) null, i3 / (((i3 - 1) * i3) % 2), 0).show();
-                        java.lang.Object[] objArr7 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
+                        java.lang.Object[] objArr7 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i15 = ((int[]) valueOf$1eba2e16[1])[0];
                         int i16 = ((int[]) valueOf$1eba2e16[3])[0];
                         int i17 = ((int[]) valueOf$1eba2e16[0])[0];
@@ -585,7 +585,7 @@ public class IntroActivity extends Activity {
                 int tapTimeout = 721 - (ViewConfiguration.getTapTimeout() >> 16);
                 c2 = '\r';
                 java.lang.Object[] objArr12 = new java.lang.Object[1];
-                b(r9[17], (byte) ($$a[44] - 1), r9[c], objArr12);
+                b($$a[17], (byte) ($$a[44] - 1), $$a[c], objArr12);
                 PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(myPid, blue2, tapTimeout, -779023007, false, (String) objArr12[0], null);
             } else {
                 c2 = '\r';
@@ -625,35 +625,35 @@ public class IntroActivity extends Activity {
 
     /* JADX WARN: Code restructure failed: missing block: B:193:0x00da, code lost:
     
-        if ((!(r8 instanceof com.identy.ui.PlayGifView)) != true) goto L33;
+        if ((!(0 instanceof com.identy.ui.PlayGifView)) != true) goto L33;
      */
     /* JADX WARN: Code restructure failed: missing block: B:195:0x00e5, code lost:
     
-        r8 = (com.identy.ui.PlayGifView) r8;
+        0 = (com.identy.ui.PlayGifView) 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:196:0x00ed, code lost:
     
-        if (r3[0].getFinger() == null) goto L41;
+        if ($$a[0].getFinger() == null) goto L41;
      */
     /* JADX WARN: Code restructure failed: missing block: B:198:0x00fb, code lost:
     
-        if (r3[0].getFinger().equals(com.identy.enums.Finger.THUMB) != false) goto L38;
+        if ($$a[0].getFinger().equals(com.identy.enums.Finger.THUMB) != false) goto L38;
      */
     /* JADX WARN: Code restructure failed: missing block: B:200:0x00fe, code lost:
     
-        r8.setImageResource(com.identy.R.drawable.id_rol_thumb);
+        0.setImageResource(com.identy.R.drawable.id_rol_thumb);
      */
     /* JADX WARN: Code restructure failed: missing block: B:202:0x010d, code lost:
     
-        if (r10.equals(com.identy.enums.Hand.LEFT) == false) goto L44;
+        if (0.equals(com.identy.enums.Hand.LEFT) == false) goto L44;
      */
     /* JADX WARN: Code restructure failed: missing block: B:203:0x010f, code lost:
     
-        r8.setImageResource(com.identy.R.drawable.id_rol_left_finger);
+        0.setImageResource(com.identy.R.drawable.id_rol_left_finger);
      */
     /* JADX WARN: Code restructure failed: missing block: B:204:0x0115, code lost:
     
-        r8.setImageResource(com.identy.R.drawable.id_rol_right_finger);
+        0.setImageResource(com.identy.R.drawable.id_rol_right_finger);
      */
     /* JADX WARN: Code restructure failed: missing block: B:205:0x011a, code lost:
     
@@ -661,7 +661,7 @@ public class IntroActivity extends Activity {
      */
     /* JADX WARN: Code restructure failed: missing block: B:207:0x00e3, code lost:
     
-        if ((r8 instanceof com.identy.ui.PlayGifView) != false) goto L33;
+        if ((0 instanceof com.identy.ui.PlayGifView) != false) goto L33;
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0088  */
     /* JADX WARN: Removed duplicated region for block: B:150:0x0ccc  */
@@ -906,7 +906,7 @@ public class IntroActivity extends Activity {
                                     iArr2[i3] = i17;
                                     iArr[i3] = i18;
                                     PngjException$1eba2e16[i] = strArr;
-                                    int c7 = defpackage.a.c((~((~((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", null).invoke(null, null)).getResources().getConfiguration().orientation) | (-832603653))) | 201670673, 521, ((~((-832603653) | r3)) * 521) - 951445352, 173451453);
+                                    int c7 = defpackage.a.c((~((~((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", null).invoke(null, null)).getResources().getConfiguration().orientation) | (-832603653))) | 201670673, 521, ((~((-832603653) | 0)) * 521) - 951445352, 173451453);
                                     int i19 = c7 ^ (c7 << 13);
                                     int i20 = i19 ^ (i19 >>> 17);
                                     ((int[]) PngjException$1eba2e16[1])[i3] = i20 ^ (i20 << 5);
@@ -1053,8 +1053,8 @@ public class IntroActivity extends Activity {
                                     }
                                     java.lang.Object[] objArr27 = (java.lang.Object[]) ((Field) PngjBadSignature10).get(null);
                                     objArr2 = new java.lang.Object[i2];
-                                    objArr2[i] = new int[]{r13};
-                                    objArr2[3] = new int[]{r12};
+                                    objArr2[i] = new int[]{0};
+                                    objArr2[3] = new int[]{0};
                                     objArr2[4] = new int[1];
                                     int i30 = ((int[]) objArr27[3])[0];
                                     int i31 = ((int[]) objArr27[i])[0];
@@ -1077,8 +1077,8 @@ public class IntroActivity extends Activity {
                                     throw null;
                                 }
                                 java.lang.Object[] objArr28 = new java.lang.Object[5];
-                                objArr28[i] = new int[]{r16};
-                                objArr28[3] = new int[]{r13};
+                                objArr28[i] = new int[]{0};
+                                objArr28[3] = new int[]{0};
                                 objArr28[4] = new int[1];
                                 int i36 = ((int[]) objArr2[4])[0];
                                 int i37 = ((int[]) objArr2[3])[0];
@@ -1122,7 +1122,7 @@ public class IntroActivity extends Activity {
                                         int size = View.MeasureSpec.getSize(0) + 37;
                                         int i43 = 550 - (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1));
                                         java.lang.Object[] objArr33 = new java.lang.Object[1];
-                                        b(r7[17], (byte) ($$a[c] - 1), r7[c3], objArr33);
+                                        b($$a[17], (byte) ($$a[c] - 1), $$a[c3], objArr33);
                                         PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf, size, i43, -1453402328, false, (String) objArr33[0], new Class[]{cls2, cls2});
                                     }
                                     java.lang.Object[] objArr34 = (java.lang.Object[]) ((Method) PngjBadSignature12).invoke(null, objArr32);
@@ -1175,8 +1175,8 @@ public class IntroActivity extends Activity {
                                     java.lang.Object[] objArr38 = (java.lang.Object[]) ((Field) PngjBadSignature15).get(null);
                                     objArr3 = new java.lang.Object[3];
                                     objArr3[0] = new int[1];
-                                    objArr3[1] = new int[]{r5};
-                                    objArr3[i] = new int[]{r0};
+                                    objArr3[1] = new int[]{0};
+                                    objArr3[i] = new int[]{0};
                                     int i47 = ((int[]) objArr38[1])[0];
                                     int i48 = ((int[]) objArr38[i])[0];
                                     int identityHashCode2 = System.identityHashCode(this);
@@ -1198,7 +1198,7 @@ public class IntroActivity extends Activity {
                                     int i56 = ((int[]) obj)[0];
                                     ((int[]) objArr39[1])[0] = i55;
                                     ((int[]) objArr39[2])[0] = i56;
-                                    int c15 = defpackage.a.c((~((~((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", null).invoke(null, null)).getResources().getConfiguration().keyboard) | 461631680)) | (-541152163), 184, (((-541066019) | r0) * 184) - 2042973694, i54);
+                                    int c15 = defpackage.a.c((~((~((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", null).invoke(null, null)).getResources().getConfiguration().keyboard) | 461631680)) | (-541152163), 184, (((-541066019) | 0) * 184) - 2042973694, i54);
                                     int i57 = c15 ^ (c15 << 13);
                                     int i58 = i57 ^ (i57 >>> 17);
                                     ((int[]) objArr39[0])[0] = i58 ^ (i58 << 5);

@@ -40,7 +40,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassInCourseViewModel$sendPracticeExamSync$1(Context context, ClassInCourseViewModel classInCourseViewModel, String str, NavController navController, Continuation<? super ClassInCourseViewModel$sendPracticeExamSync$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.this$0 = classInCourseViewModel;
         this.$sessionID = str;
@@ -49,7 +49,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ClassInCourseViewModel$sendPracticeExamSync$1(this.$context, this.this$0, this.$sessionID, this.$findNavController, continuation);
+        return (Continuation<Unit>) (Object) new ClassInCourseViewModel$sendPracticeExamSync$1(this.$context, this.this$0, this.$sessionID, this.$findNavController, (Continuation) continuation);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0095, code lost:
@@ -114,7 +114,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ClassInCourseViewModel$sendPracticeExamSync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ClassInCourseViewModel$sendPracticeExamSync$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
     @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)

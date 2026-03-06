@@ -31,10 +31,10 @@ import java.util.HashMap;
 
 /* loaded from: classes2.dex */
 public class Capture2IndexActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int PngjBadCrcException;
@@ -355,7 +355,7 @@ public class Capture2IndexActivity extends FingerActivity {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(deadChar, indexOf, capsMode, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                        PngjBadCrcException$52c725b = new Object[]{new int[]{r8}, new int[1], r0, new int[]{r7}};
+                        PngjBadCrcException$52c725b = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i5 = ((int[]) objArr5[3])[0];
                         int i6 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
@@ -373,7 +373,7 @@ public class Capture2IndexActivity extends FingerActivity {
                         i4 = ((int[]) PngjBadCrcException$52c725b[3])[0];
                         if (i4 != i3) {
                             getFingerPrintQualityScore = (PngjBadCrcException + 65) % 128;
-                            Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r7}};
+                            Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i13 = ((int[]) PngjBadCrcException$52c725b[1])[0];
                             int i14 = ((int[]) PngjBadCrcException$52c725b[3])[0];
                             int i15 = ((int[]) PngjBadCrcException$52c725b[0])[0];
@@ -396,12 +396,12 @@ public class Capture2IndexActivity extends FingerActivity {
                             }
                         }
                         Toast.makeText((Context) null, i4 / (((i4 - 1) * i4) % 2), 0).show();
-                        Object[] objArr7 = {new int[]{r8}, new int[1], r1, new int[]{r7}};
+                        Object[] objArr7 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i20 = ((int[]) PngjBadCrcException$52c725b[1])[0];
                         int i21 = ((int[]) PngjBadCrcException$52c725b[3])[0];
                         int i22 = ((int[]) PngjBadCrcException$52c725b[0])[0];
                         String[] strArr4 = (String[]) PngjBadCrcException$52c725b[2];
-                        int c4 = defpackage.a.c((~(System.identityHashCode(this) | (-27853313))) | 939574305, 130, ((~((~r1) | (-27853313))) * 130) - 176972653, i20);
+                        int c4 = defpackage.a.c((~(System.identityHashCode(this) | (-27853313))) | 939574305, 130, ((~((~0) | (-27853313))) * 130) - 176972653, i20);
                         int i23 = c4 ^ (c4 << 13);
                         int i24 = i23 ^ (i23 >>> 17);
                         ((int[]) objArr7[1])[0] = i24 ^ (i24 << 5);

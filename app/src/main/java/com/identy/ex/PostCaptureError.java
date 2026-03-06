@@ -15,8 +15,8 @@ public enum PostCaptureError {
     AS_FAILED,
     NO_ERROR;
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
 
     static {
         init$0();

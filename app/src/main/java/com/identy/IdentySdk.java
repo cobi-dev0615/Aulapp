@@ -83,12 +83,12 @@ import org.json.JSONObject;
 
 /* loaded from: classes2.dex */
 public class IdentySdk {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     static IdentySdk PngjException;
@@ -1018,21 +1018,21 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0050, code lost:
     
-        if (r8 <= r10) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0035, code lost:
     
-        if (r8 <= r10) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0053, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = ~((int) android.os.Process.getStartElapsedRealtime());
-        r3 = ~(435881670 | r1);
-        r1 = defpackage.a.c(r3 | 440036799, 764, (((~(r1 | 63007609)) | 406455430) * (-1528)) + (((r3 | 63007609) * 764) + 1013657327), -1284815836);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = ~((int) android.os.Process.getStartElapsedRealtime());
+        0 = ~(435881670 | 0);
+        0 = defpackage.a.c(0 | 440036799, 764, (((~(0 | 63007609)) | 406455430) * (-1528)) + (((0 | 63007609) * 764) + 1013657327), -1284815836);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1053,9 +1053,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4858;
-                Fpnative.valueOf = r0;
-                int i3 = ((int[]) r0[1])[0];
+                ((long[]) $$a[0])[0] = j + 4858;
+                Fpnative.valueOf = 0;
+                int i3 = ((int[]) $$a[1])[0];
                 int i4 = i3 * i3;
                 int i5 = -(395977197 * i3);
                 int i6 = (((i4 & i5) + (i4 | i5)) - (~(-(i3 * (-1651716929))))) - 1;
@@ -1106,22 +1106,22 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0054, code lost:
     
-        if (r8 <= r10) goto L15;
+        if (0 <= 0) goto L15;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0039, code lost:
     
-        if (r8 <= r10) goto L15;
+        if (0 <= 0) goto L15;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0057, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = (int) android.os.Process.getStartUptimeMillis();
-        r2 = ~r1;
-        r3 = ~(77321349 | r2);
-        r1 = defpackage.a.c(r3 | (-421567931), 712, (((~(r1 | 498851263)) | (~(r2 | (-421529915)))) * (-712)) + (((421529914 | r3) * (-712)) + 789319079), 1045028144);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) android.os.Process.getStartUptimeMillis();
+        0 = ~0;
+        0 = ~(77321349 | 0);
+        0 = defpackage.a.c(0 | (-421567931), 712, (((~(0 | 498851263)) | (~(0 | (-421529915)))) * (-712)) + (((421529914 | 0) * (-712)) + 789319079), 1045028144);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1146,9 +1146,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 5003;
-                Fpnative.valueOf = r0;
-                int i4 = ((int[]) r0[1])[0];
+                ((long[]) $$a[0])[0] = j + 5003;
+                Fpnative.valueOf = 0;
+                int i4 = ((int[]) $$a[1])[0];
                 int i5 = i4 * i4;
                 int i6 = -(1528323890 * i4);
                 int i7 = (((i5 ^ i6) + ((i5 & i6) << 1)) - (~(-(i4 * (-166310270))))) - 1297927773;
@@ -1636,15 +1636,15 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0022, code lost:
     
-        if (r0 > 150) goto L17;
+        if (0 > 150) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0024, code lost:
     
-        com.identy.IdentySdk.generateST = (r2 + 121) % 128;
+        com.identy.IdentySdk.generateST = (0 + 121) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x002a, code lost:
     
-        if (r0 < 0) goto L17;
+        if (0 < 0) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x003b, code lost:
     
@@ -1660,15 +1660,15 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0033, code lost:
     
-        r0 = r3.PngjInputException;
+        0 = 0.PngjInputException;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0037, code lost:
     
-        if (r0 > 40) goto L24;
+        if (0 > 40) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        if (r0 < 0) goto L24;
+        if (0 < 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0049, code lost:
     
@@ -1676,19 +1676,19 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0018, code lost:
     
-        if (r0 >= 0) goto L10;
+        if (0 >= 0) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0015, code lost:
     
-        if (r0 >= 0) goto L10;
+        if (0 >= 0) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x001c, code lost:
     
-        if (r3.pfkrolGetQuality == false) goto L19;
+        if (0.pfkrolGetQuality == false) goto L19;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x001e, code lost:
     
-        r0 = r3.PngjInputException;
+        0 = 0.PngjInputException;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1739,7 +1739,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i2 = (int) Runtime.getRuntime().totalMemory();
-                    int c = defpackage.a.c((~(i2 | (-153223737))) | (~((~i2) | (-37794817))) | (~((-270075912) | i2)), 867, (((~((-307870728) | i2)) | 37794816 | (~((-191018553) | i2))) * (-1734)) + ((((~((-307870728) | r7)) | (~((-191018553) | r7))) * (-867)) - 755802724), -1281678953);
+                    int c = defpackage.a.c((~(i2 | (-153223737))) | (~((~i2) | (-37794817))) | (~((-270075912) | i2)), 867, (((~((-307870728) | i2)) | 37794816 | (~((-191018553) | i2))) * (-1734)) + ((((~((-307870728) | 0)) | (~((-191018553) | 0))) * (-867)) - 755802724), -1281678953);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -1781,24 +1781,24 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004f, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0034, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = (int) java.lang.Runtime.getRuntime().totalMemory();
-        r3 = ~r1;
-        r6 = (((~((-537166401) | r3)) | (~((-318462235) | r1))) * 520) - 1713740649;
-        r8 = ~(318462234 | r3);
-        r1 = ~(r1 | 817351514);
-        r1 = defpackage.a.c(r1 | ((~(r3 | (-817351515))) | (-855628635)), 520, ((r8 | r1) * (-1040)) + r6, -2043662396);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) java.lang.Runtime.getRuntime().totalMemory();
+        0 = ~0;
+        0 = (((~((-537166401) | 0)) | (~((-318462235) | 0))) * 520) - 1713740649;
+        0 = ~(318462234 | 0);
+        0 = ~(0 | 817351514);
+        0 = defpackage.a.c(0 | ((~(0 | (-817351515))) | (-855628635)), 520, ((0 | 0) * (-1040)) + 0, -2043662396);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1819,8 +1819,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4861;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 4861;
+                Fpnative.valueOf = 0;
                 return this.uxd565jk;
             }
             byte[] bArr = $$d;
@@ -1943,7 +1943,7 @@ public class IdentySdk {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) Runtime.getRuntime().maxMemory())) | (-58939427))) | 16992290, 191, (((~(r0 | (-58939427))) | 557828706) * 191) - 1339706941, 272515171);
+                    int c = defpackage.a.c((~((~((int) Runtime.getRuntime().maxMemory())) | (-58939427))) | 16992290, 191, (((~(0 | (-58939427))) | 557828706) * 191) - 1339706941, 272515171);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -2144,7 +2144,7 @@ public class IdentySdk {
                     int i19 = deduplication + 33;
                     generateST = i19 % 128;
                     if (i19 % 2 != 0) {
-                        return r5;
+                        return 0;
                     }
                     throw null;
                 }
@@ -2205,7 +2205,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = defpackage.a.c((~((~elapsedCpuTime) | (-860918945))) | 75768384, 564, ((~(elapsedCpuTime | (-286261281))) * 1128) + (((((~(362029664 | r7)) | (-860918945)) | (~((-362029665) | elapsedCpuTime))) * (-564)) - 2049358837), -93674246);
+                    int c = defpackage.a.c((~((~elapsedCpuTime) | (-860918945))) | 75768384, 564, ((~(elapsedCpuTime | (-286261281))) * 1128) + (((((~(362029664 | 0)) | (-860918945)) | (~((-362029665) | elapsedCpuTime))) * (-564)) - 2049358837), -93674246);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -2351,21 +2351,21 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:16:0x004d, code lost:
     
-        if (r8 <= r10) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0032, code lost:
     
-        if (r8 <= r10) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0050, code lost:
     
-        r3 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r13);
-        r6 = ~r0;
-        r0 = defpackage.a.c(~(r6 | (-258255913)), 301, ((((~(r0 | (-757145193))) | 536941120) | (~((-38051841) | r6))) * (-301)) + ((((~((-757145193) | r6)) | (-258255913)) * (-602)) - 84911587), -167846730);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r3[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = ~0;
+        0 = defpackage.a.c(~(0 | (-258255913)), 301, ((((~(0 | (-757145193))) | 536941120) | (~((-38051841) | 0))) * (-301)) + ((((~((-757145193) | 0)) | (-258255913)) * (-602)) - 84911587), -167846730);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x010d  */
     /* JADX WARN: Removed duplicated region for block: B:14:0x012a  */
@@ -2489,7 +2489,7 @@ public class IdentySdk {
                     i3 = generateST + 121;
                     deduplication = i3 % 128;
                     if (i3 % 2 != 0) {
-                        return r14;
+                        return 0;
                     }
                     throw null;
                 }
@@ -2802,7 +2802,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c((~(identityHashCode | (-486744615))) | (~((~identityHashCode) | (-7916570))) | 3688473, 168, ((~((-4228097) | identityHashCode)) * 168) + ((((~((-490972711) | r3)) | 4228096) * 168) - 1710130969), 1933657390);
+                    int c = defpackage.a.c((~(identityHashCode | (-486744615))) | (~((~identityHashCode) | (-7916570))) | 3688473, 168, ((~((-4228097) | identityHashCode)) * 168) + ((((~((-490972711) | 0)) | 4228096) * 168) - 1710130969), 1933657390);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -2867,20 +2867,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x004b, code lost:
     
-        if (r7 <= r9) goto L24;
+        if (0 <= 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0030, code lost:
     
-        if (r7 <= r9) goto L24;
+        if (0 <= 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        r3 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = ~java.lang.System.identityHashCode(r11);
-        r0 = defpackage.a.c((~(r0 | (-510988404))) | (-1009877684), 783, ((~((-472973364) | r0)) * (-783)) + 959133387, -2010617708);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r3[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = ~java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~(0 | (-510988404))) | (-1009877684), 783, ((~((-472973364) | 0)) * (-783)) + 959133387, -2010617708);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x00fd  */
     /*
@@ -2901,8 +2901,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r3[0])[0] = j + 5046;
-                Fpnative.valueOf = r3;
+                ((long[]) $$a[0])[0] = j + 5046;
+                Fpnative.valueOf = 0;
                 this.uxd565jj = z;
                 i = generateST + 83;
                 deduplication = i % 128;
@@ -2938,19 +2938,19 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = defpackage.a.c((~((~java.lang.System.identityHashCode(r11)) | (-364175563))) | 134713717, 160, (((~(r0 | 134713717)) | (-498594304)) * (-160)) - 2046146273, 2020304908);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.c((~((~java.lang.System.identityHashCode(0)) | (-364175563))) | 134713717, 160, (((~(0 | 134713717)) | (-498594304)) * (-160)) - 2046146273, 2020304908);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 67) % 128;
      */
     /*
@@ -2970,8 +2970,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 5001;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 5001;
+                Fpnative.valueOf = 0;
                 this.addEncryptedTemplates = z;
                 return this;
             }
@@ -3243,21 +3243,21 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004f, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0034, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = android.os.Process.myTid();
-        r3 = ~r1;
-        r1 = defpackage.a.c((~(r1 | 535676387)) | (~(r3 | 1034565667)), 979, ((r1 | 1034565667) * (-979)) + (((~(535676387 | r3)) * 979) + 167569156), -176073595);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = android.os.Process.myTid();
+        0 = ~0;
+        0 = defpackage.a.c((~(0 | 535676387)) | (~(0 | 1034565667)), 979, ((0 | 1034565667) * (-979)) + (((~(535676387 | 0)) * 979) + 167569156), -176073595);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Type inference failed for: r1v28, types: [boolean, int] */
     /*
@@ -3279,9 +3279,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4874;
-                Fpnative.valueOf = r0;
-                int i3 = ((int[]) r0[1])[0];
+                ((long[]) $$a[0])[0] = j + 4874;
+                Fpnative.valueOf = 0;
+                int i3 = ((int[]) $$a[1])[0];
                 int i4 = i3 * i3;
                 int i5 = -(392312081 * i3);
                 int i6 = (i4 ^ i5) + ((i4 & i5) << 1);
@@ -3433,19 +3433,19 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x004b, code lost:
     
-        if (r7 <= r9) goto L24;
+        if (0 <= 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0030, code lost:
     
-        if (r7 <= r9) goto L24;
+        if (0 <= 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        r6 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = defpackage.a.c((~((~java.lang.System.identityHashCode(r13)) | (-538818365))) | 499255360, 970, (((-1038073725) | r0) * (-970)) - 356671459, -748634564);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r6[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.c((~((~java.lang.System.identityHashCode(0)) | (-538818365))) | 499255360, 970, (((-1038073725) | 0) * (-970)) - 356671459, -748634564);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 47) % 128;
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0162 A[RETURN] */
@@ -3469,9 +3469,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r6[0])[0] = j + 4955;
-                Fpnative.valueOf = r6;
-                int i3 = ((int[]) r6[1])[0];
+                ((long[]) $$a[0])[0] = j + 4955;
+                Fpnative.valueOf = 0;
+                int i3 = ((int[]) $$a[1])[0];
                 int i4 = i3 * i3;
                 int i5 = -(40975719 * i3);
                 int i6 = (i4 & i5) + (i4 | i5);
@@ -3533,20 +3533,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0054, code lost:
     
-        if (r7 <= r9) goto L27;
+        if (0 <= 0) goto L27;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0039, code lost:
     
-        if (r7 <= r9) goto L27;
+        if (0 <= 0) goto L27;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0057, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r13);
-        r0 = defpackage.a.c((~(r0 | (-706120408))) | (-207231128), 376, (((~((~r0) | 706120407)) | 71831552) * (-376)) + (((642552384 | r0) * 376) + 1895081399), -1959843931);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~(0 | (-706120408))) | (-207231128), 376, (((~((~0) | 706120407)) | 71831552) * (-376)) + (((642552384 | 0) * 376) + 1895081399), -1959843931);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:12:0x0179 A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:14:0x017a  */
@@ -3574,9 +3574,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r1[0])[0] = j + 5045;
-                Fpnative.valueOf = r1;
-                int i5 = ((int[]) r1[1])[0];
+                ((long[]) $$a[0])[0] = j + 5045;
+                Fpnative.valueOf = 0;
+                int i5 = ((int[]) $$a[1])[0];
                 int i6 = i5 * i5;
                 int i7 = -(301388543 * i5);
                 int i8 = ((i6 | i7) << 1) - (i6 ^ i7);
@@ -3642,78 +3642,78 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0130, code lost:
     
-        if (r21 < 0) goto L43;
+        if (0 < 0) goto L43;
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0132, code lost:
     
-        r5 = com.identy.IdentySdk.deduplication + 23;
-        r7 = r5 % 128;
-        com.identy.IdentySdk.generateST = r7;
+        0 = com.identy.IdentySdk.deduplication + 23;
+        0 = 0 % 128;
+        com.identy.IdentySdk.generateST = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x013c, code lost:
     
-        if ((r5 % 2) != 0) goto L28;
+        if ((0 % 2) != 0) goto L28;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0140, code lost:
     
-        if (r22 > 84) goto L43;
+        if (0 > 84) goto L43;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0147, code lost:
     
-        if (r21 > r22) goto L43;
+        if (0 > 0) goto L43;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0149, code lost:
     
-        r7 = r7 + 107;
-        r5 = r7 % 128;
-        com.identy.IdentySdk.deduplication = r5;
+        0 = 0 + 107;
+        0 = 0 % 128;
+        com.identy.IdentySdk.deduplication = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0151, code lost:
     
-        if ((r7 % 2) != 0) goto L41;
+        if ((0 % 2) != 0) goto L41;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0153, code lost:
     
-        if (r23 < 0) goto L39;
+        if (0 < 0) goto L39;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0155, code lost:
     
-        com.identy.IdentySdk.generateST = (r5 + 5) % 128;
-        r5 = ((int[]) r6[1])[r18];
-        r6 = r5 * r5;
-        r7 = -(1404602467 * r5);
-        r8 = ((r6 | r7) << 1) - (r6 ^ r7);
-        r5 = -(r5 * (-1753952063));
-        r6 = (r8 ^ r5) + ((r5 & r8) << 1);
-        r7 = ((r6 | 594314052) << 1) - (594314052 ^ r6);
-        r5 = r7 >> 23;
-        r6 = (((r5 | (-1023)) << 1) - (r5 ^ (-1023))) / kotlin.io.ConstantsKt.MINIMUM_BLOCK_SIZE;
-        r5 = (r7 - (~(((r6 | 1) << 1) - (r6 ^ 1)))) - 1;
-        r6 = r7 >> 16;
-        r8 = ((r6 ^ (-131071)) + ((r6 & (-131071)) << 1)) / 65536;
-        r5 = -(r5 ^ (((r8 | 1) << 1) - (r8 ^ 1)));
-        r6 = (r5 & 8) + (r5 | 8);
-        r5 = r6 >> 27;
-        r7 = ((r5 & (-63)) + (r5 | (-63))) / 32;
+        com.identy.IdentySdk.generateST = (0 + 5) % 128;
+        0 = ((int[]) $$a[1])[0];
+        0 = 0 * 0;
+        0 = -(1404602467 * 0);
+        0 = ((0 | 0) << 1) - (0 ^ 0);
+        0 = -(0 * (-1753952063));
+        0 = (0 ^ 0) + ((0 & 0) << 1);
+        0 = ((0 | 594314052) << 1) - (594314052 ^ 0);
+        0 = 0 >> 23;
+        0 = (((0 | (-1023)) << 1) - (0 ^ (-1023))) / kotlin.io.ConstantsKt.MINIMUM_BLOCK_SIZE;
+        0 = (0 - (~(((0 | 1) << 1) - (0 ^ 1)))) - 1;
+        0 = 0 >> 16;
+        0 = ((0 ^ (-131071)) + ((0 & (-131071)) << 1)) / 65536;
+        0 = -(0 ^ (((0 | 1) << 1) - (0 ^ 1)));
+        0 = (0 & 8) + (0 | 8);
+        0 = 0 >> 27;
+        0 = ((0 & (-63)) + (0 | (-63))) / 32;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x01c4, code lost:
     
-        if (r24 > (75680 / (((-(((r7 ^ 1) + ((r7 & 1) << 1)) + 1)) & r6) * 473))) goto L39;
+        if (0 > (75680 / (((-(((0 ^ 1) + ((0 & 1) << 1)) + 1)) & 0) * 473))) goto L39;
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x01c6, code lost:
     
-        if (r23 > r24) goto L39;
+        if (0 > 0) goto L39;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x01c8, code lost:
     
-        r20.isFoundMatchingTemplates = r22;
-        r20.Enroll4FActivity = r24;
-        r20.ERRORS = r21;
-        r20.Enroll2TActivity = r23;
+        0.isFoundMatchingTemplates = 0;
+        0.Enroll4FActivity = 0;
+        0.ERRORS = 0;
+        0.Enroll2TActivity = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x01d0, code lost:
     
-        return r20;
+        return 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x01d8, code lost:
     
@@ -3725,7 +3725,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x0145, code lost:
     
-        if (r22 > 20) goto L43;
+        if (0 > 20) goto L43;
      */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x01e3, code lost:
     
@@ -3733,94 +3733,94 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x01e4, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x01e5, code lost:
     
-        r2 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x01e9, code lost:
     
-        if (r2 != null) goto L48;
+        if (0 != null) goto L48;
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x01eb, code lost:
     
-        throw r2;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x01ec, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x002e, code lost:
     
-        r6 = r6 + 83;
-        com.identy.IdentySdk.generateST = r6 % 128;
+        0 = 0 + 83;
+        com.identy.IdentySdk.generateST = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x0035, code lost:
     
-        if ((r6 % 2) != 0) goto L15;
+        if ((0 % 2) != 0) goto L15;
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x0037, code lost:
     
-        r12 = ((long[]) r5[1])[1];
-        r14 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, new java.lang.Object[1])).longValue();
+        0 = ((long[]) $$a[1])[1];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, new java.lang.Object[1])).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:0x0051, code lost:
     
-        if (r12 > r14) goto L18;
+        if (0 > 0) goto L18;
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x006f, code lost:
     
-        r6 = new java.lang.Object[]{new long[]{((long[]) r5[0])[0]}, new int[]{r5 ^ (r5 << 5)}};
-        r5 = ~r21;
-        r7 = (((~(r21 | (-532740091))) | (~((-540870657) | r5))) * 520) - 1224411497;
-        r18 = 0;
-        r10 = ~(532740090 | r5);
-        r9 = ~(r21 | 1031629370);
-        r5 = defpackage.a.c(((~(r5 | (-1031629371))) | (-1073610747)) | r9, 520, ((r10 | r9) * (-1040)) + r7, -1133546657);
-        r5 = r5 ^ (r5 << 13);
-        r5 = r5 ^ (r5 >>> 17);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[]{0 ^ (0 << 5)}};
+        0 = ~0;
+        0 = (((~(0 | (-532740091))) | (~((-540870657) | 0))) * 520) - 1224411497;
+        0 = 0;
+        0 = ~(532740090 | 0);
+        0 = ~(0 | 1031629370);
+        0 = defpackage.a.c(((~(0 | (-1031629371))) | (-1073610747)) | 0, 520, ((0 | 0) * (-1040)) + 0, -1133546657);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 121) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:44:0x0054, code lost:
     
-        r12 = ((long[]) r5[0])[0];
-        r14 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x006c, code lost:
     
-        if (r12 > r14) goto L18;
+        if (0 > 0) goto L18;
      */
     /* JADX WARN: Code restructure failed: missing block: B:47:0x002c, code lost:
     
-        if (r5 != null) goto L10;
+        if (0 != null) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0021, code lost:
     
-        if (r5 != null) goto L10;
+        if (0 != null) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0024, code lost:
     
-        r18 = 0;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x00d0, code lost:
     
-        r7 = com.identy.IdentySdk.$$d;
-        r10 = new java.lang.Object[1];
-        d((short) 149, (byte) (-r7[11]), (byte) (-r7[111(0x6f, float:1.56E-43)]), r10);
-        r6 = java.lang.Class.forName((java.lang.String) r10[0]);
-        r10 = new java.lang.Object[1];
-        d((short) 106, r7[63], (byte) (-r7[55]), r10);
-        r6 = (java.lang.Object[]) r6.getMethod((java.lang.String) r10[0], java.lang.Integer.TYPE).invoke(null, -1133546657);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 149, (byte) (-$$a[11]), (byte) (-$$a[111(0x6f, float:1.56E-43)]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 106, $$a[63], (byte) (-$$a[55]), 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, -1133546657);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x011f, code lost:
     
-        r14 = ((long[]) r6[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0125, code lost:
     
-        ((long[]) r6[r18])[r18] = r14 + 4918;
-        com.identy.Fpnative.valueOf = r6;
+        ((long[]) $$a[0])[0] = 0 + 4918;
+        com.identy.Fpnative.valueOf = 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -3850,7 +3850,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c((~(identityHashCode | (-536339996))) | 1035229275, 519, (((~((~identityHashCode) | (-498352156))) | (~((-37987841) | identityHashCode))) * (-519)) + ((((~((-1035229276) | r6)) | (-536339996)) * 519) - 726608762), 1197693693);
+                    int c = defpackage.a.c((~(identityHashCode | (-536339996))) | 1035229275, 519, (((~((~identityHashCode) | (-498352156))) | (~((-37987841) | identityHashCode))) * (-519)) + ((((~((-1035229276) | 0)) | (-536339996)) * 519) - 726608762), 1197693693);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -3915,70 +3915,70 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x010c, code lost:
     
-        return r10;
+        return 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x010d, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x010e, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0112, code lost:
     
-        if (r1 != null) goto L26;
+        if (0 != null) goto L26;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0114, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0115, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001b, code lost:
     
-        r0 = r0 + 67;
-        com.identy.IdentySdk.deduplication = r0 % 128;
+        0 = 0 + 67;
+        com.identy.IdentySdk.deduplication = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0022, code lost:
     
-        if ((r0 % 2) == 0) goto L14;
+        if ((0 % 2) == 0) goto L14;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0024, code lost:
     
-        r6 = ((long[]) r1[0])[0];
-        r8 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x003c, code lost:
     
-        if (r6 > r8) goto L17;
+        if (0 > 0) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x005a, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = defpackage.a.c(~(android.os.Process.myUid() | (-4276541)), -1504, (((~((-771611069) | r1)) | 767334528) * 1504) - 1003693777, 1921615470);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.c(~(android.os.Process.myUid() | (-4276541)), -1504, (((~((-771611069) | 0)) | 767334528) * 1504) - 1003693777, 1921615470);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x003f, code lost:
     
-        r6 = ((long[]) r1[0])[0];
-        r8 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x0057, code lost:
     
-        if (r6 > r8) goto L17;
+        if (0 > 0) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0019, code lost:
     
-        if (r1 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0014, code lost:
     
-        if (r1 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x009f, code lost:
     
@@ -3986,23 +3986,23 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x00aa, code lost:
     
-        r2 = com.identy.IdentySdk.$$d;
-        r8 = new java.lang.Object[1];
-        d((short) 185, (byte) (-r2[11]), (byte) (-r2[62]), r8);
-        r1 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r4 = new java.lang.Object[1];
-        d((short) 154, (byte) (-r2[111(0x6f, float:1.56E-43)]), r2[63], r4);
-        r0 = (java.lang.Object[]) r1.getMethod((java.lang.String) r4[0], java.lang.Integer.TYPE).invoke(null, -856040098);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 185, (byte) (-$$a[11]), (byte) (-$$a[62]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 154, (byte) (-$$a[111(0x6f, float:1.56E-43)]), $$a[63], 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, -856040098);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00f7, code lost:
     
-        r8 = ((long[]) r0[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00fd, code lost:
     
-        ((long[]) r0[0])[0] = r8 + 4866;
-        com.identy.Fpnative.valueOf = r0;
-        r10.CaptureThumbActivity = com.identy.CaptureMode.L;
+        ((long[]) $$a[0])[0] = 0 + 4866;
+        com.identy.Fpnative.valueOf = 0;
+        0.CaptureThumbActivity = com.identy.CaptureMode.L;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -4100,20 +4100,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x004b, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0030, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        r6 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r13);
-        r0 = defpackage.a.c(~((~r0) | (-16861749)), 476, ((~((-16861749) | r0)) * 952) + (((481427467 | r8) * (-476)) - 1706127869), -1248022112);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r6[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c(~((~0) | (-16861749)), 476, ((~((-16861749) | 0)) * 952) + (((481427467 | 0) * (-476)) - 1706127869), -1248022112);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0172 A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:12:0x0173  */
@@ -4136,9 +4136,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r6[0])[0] = j + 4904;
-                Fpnative.valueOf = r6;
-                int i4 = ((int[]) r6[1])[0];
+                ((long[]) $$a[0])[0] = j + 4904;
+                Fpnative.valueOf = 0;
+                int i4 = ((int[]) $$a[1])[0];
                 int i5 = i4 * i4;
                 int i6 = -(1990423977 * i4);
                 int i7 = (((i5 ^ i6) + ((i5 & i6) << 1)) - (~(-(i4 * (-1337463437))))) - 1;
@@ -4210,8 +4210,8 @@ public class IdentySdk {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[]{r0 ^ (r0 << 5)}};
-                    int c = defpackage.a.c(~((-402851229) | (~i)), 476, ((~((-402851229) | i)) * 952) + (((28338211 | r3) * (-476)) - 1675647677), 1533215827);
+                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[]{0 ^ (0 << 5)}};
+                    int c = defpackage.a.c(~((-402851229) | (~i)), 476, ((~((-402851229) | i)) * 952) + (((28338211 | 0) * (-476)) - 1675647677), 1533215827);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((long[]) objArr[0])[0] = j + 5003;
@@ -4371,21 +4371,21 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:63:0x0055, code lost:
     
-        if (r9 <= r11) goto L63;
+        if (0 <= 0) goto L63;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x003a, code lost:
     
-        if (r9 <= r11) goto L63;
+        if (0 <= 0) goto L63;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0058, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r3[0])[0]}, new int[1]};
-        r3 = (int) android.os.SystemClock.uptimeMillis();
-        r9 = ~(85786709 | r3);
-        r3 = defpackage.a.c((~(r3 | 413102570)) | ((~((-85786710) | r3)) | 83886101), 407, ((r9 | ((~((~r3) | (-413102571))) | 83886101)) * 407) + (((411201962 | r9) * (-814)) + 17006335), -672302448);
-        r3 = r3 ^ (r3 << 13);
-        r3 = r3 ^ (r3 >>> 17);
-        ((int[]) r2[1])[0] = r3 ^ (r3 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) android.os.SystemClock.uptimeMillis();
+        0 = ~(85786709 | 0);
+        0 = defpackage.a.c((~(0 | 413102570)) | ((~((-85786710) | 0)) | 83886101), 407, ((0 | ((~((~0) | (-413102571))) | 83886101)) * 407) + (((411201962 | 0) * (-814)) + 17006335), -672302448);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x010f  */
     /* JADX WARN: Removed duplicated region for block: B:60:0x02dc  */
@@ -4640,7 +4640,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c(identityHashCode | (-264791147), 496, (((~((-763680427) | identityHashCode)) | 537170560 | (~((~identityHashCode) | (-38281281)))) * (-496)) + ((r5 * 992) - 2137057233), 996249518);
+                    int c = defpackage.a.c(identityHashCode | (-264791147), 496, (((~((-763680427) | identityHashCode)) | 537170560 | (~((~identityHashCode) | (-38281281)))) * (-496)) + ((0 * 992) - 2137057233), 996249518);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -4830,7 +4830,7 @@ public class IdentySdk {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~(((int) Process.getStartUptimeMillis()) | 323579654)) | 137494585, 658, ((423259199 | r0) * (-658)) - 446555733, 1153600335);
+                    int c = defpackage.a.c((~(((int) Process.getStartUptimeMillis()) | 323579654)) | 137494585, 658, ((423259199 | 0) * (-658)) - 446555733, 1153600335);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -4928,7 +4928,7 @@ public class IdentySdk {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | (-317304164))) | 271132963, -964, (((~((-317304164) | r0)) | (-181585117)) * (-964)) - 1811936553, 1174941777);
+                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | (-317304164))) | 271132963, -964, (((~((-317304164) | 0)) | (-181585117)) * (-964)) - 1811936553, 1174941777);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -4970,7 +4970,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
-                    int c = defpackage.a.c(startElapsedRealtime | (-1046863836), 54, (((~((~startElapsedRealtime) | 1008815387)) | (~((-1008815388) | startElapsedRealtime)) | (-1046863836)) * 54) + ((((~((-509926108) | r5)) | 471877659) * (-108)) - 1622209855), 1330868128);
+                    int c = defpackage.a.c(startElapsedRealtime | (-1046863836), 54, (((~((~startElapsedRealtime) | 1008815387)) | (~((-1008815388) | startElapsedRealtime)) | (-1046863836)) * 54) + ((((~((-509926108) | 0)) | 471877659) * (-108)) - 1622209855), 1330868128);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -5002,22 +5002,22 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = (int) android.os.Process.getElapsedCpuTime();
-        r5 = ~(140897128 | r0);
-        r6 = ~r0;
-        r0 = defpackage.a.c((~(r0 | (-639786409))) | (~((-140897129) | r6)), 406, ((~(778567656 | r6)) * (-406)) + (((r5 | (~((-138781249) | r6))) * (-406)) + 1368953161), -1540344450);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) android.os.Process.getElapsedCpuTime();
+        0 = ~(140897128 | 0);
+        0 = ~0;
+        0 = defpackage.a.c((~(0 | (-639786409))) | (~((-140897129) | 0)), 406, ((~(778567656 | 0)) * (-406)) + (((0 | (~((-138781249) | 0))) * (-406)) + 1368953161), -1540344450);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 125) % 128;
      */
     /*
@@ -5037,8 +5037,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 4869;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 4869;
+                Fpnative.valueOf = 0;
                 return this.PngjInputException;
             }
             byte[] bArr = $$d;
@@ -5078,7 +5078,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int freeMemory = (int) Runtime.getRuntime().freeMemory();
-                    int c = defpackage.a.c((~(freeMemory | (-140758749))) | 4227648 | (~((~freeMemory) | 494661631)), 988, (((~((-136531101) | r2)) | (~(494661631 | freeMemory))) * 988) - 2032379601, 1528319940);
+                    int c = defpackage.a.c((~(freeMemory | (-140758749))) | 4227648 | (~((~freeMemory) | 494661631)), 988, (((~((-136531101) | 0)) | (~(494661631 | freeMemory))) * 988) - 2032379601, 1528319940);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -5111,55 +5111,55 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00fe, code lost:
     
-        return r11.isQualityFailed;
+        return 0.isQualityFailed;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x00ff, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0100, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0104, code lost:
     
-        if (r1 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0106, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0107, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        r7 = ((long[]) r0[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0036, code lost:
     
-        if (r7 > r9) goto L12;
+        if (0 > 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = defpackage.a.a();
-        r3 = ~r0;
-        r0 = defpackage.a.c(((~(r0 | 718925200)) | (-803078097)) | (~(r3 | (-135883025))), 369, (((~((-718925201) | r3)) | (-220035921)) * (-369)) + ((((-84152897) | r3) * (-369)) - 94560498), 446634408);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.a();
+        0 = ~0;
+        0 = defpackage.a.c(((~(0 | 718925200)) | (-803078097)) | (~(0 | (-135883025))), 369, (((~((-718925201) | 0)) | (-220035921)) * (-369)) + ((((-84152897) | 0) * (-369)) - 94560498), 446634408);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 109) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0017, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0095, code lost:
     
@@ -5167,22 +5167,22 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x009d, code lost:
     
-        r2 = com.identy.IdentySdk.$$d;
-        r8 = new java.lang.Object[1];
-        d((short) 185, (byte) (-r2[11]), (byte) (-r2[62]), r8);
-        r1 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r4 = new java.lang.Object[1];
-        d((short) 154, (byte) (-r2[111(0x6f, float:1.56E-43)]), r2[63], r4);
-        r1 = (java.lang.Object[]) r1.getMethod((java.lang.String) r4[0], java.lang.Integer.TYPE).invoke(null, 446634408);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 185, (byte) (-$$a[11]), (byte) (-$$a[62]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 154, (byte) (-$$a[111(0x6f, float:1.56E-43)]), $$a[63], 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, 446634408);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00eb, code lost:
     
-        r9 = ((long[]) r1[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00f1, code lost:
     
-        ((long[]) r1[0])[0] = r9 + 4978;
-        com.identy.Fpnative.valueOf = r1;
+        ((long[]) $$a[0])[0] = 0 + 4978;
+        com.identy.Fpnative.valueOf = 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -5201,19 +5201,19 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0051, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0036, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0054, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = defpackage.a.c((~(java.lang.System.identityHashCode(r11) | (-208393421))) | 570426112, 196, (((-778819533) | r1) * (-196)) - 1960252085, 1933539822);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.c((~(java.lang.System.identityHashCode(0) | (-208393421))) | 570426112, 196, (((-778819533) | 0) * (-196)) - 1960252085, 1933539822);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -5234,8 +5234,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4948;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 4948;
+                Fpnative.valueOf = 0;
                 return this.getShortform;
             }
             byte[] bArr = $$d;
@@ -5364,7 +5364,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c(identityHashCode | (-232305455), 496, (((~((-731194735) | identityHashCode)) | 570754112 | (~((~identityHashCode) | (-71864833)))) * (-496)) + ((r2 * 992) - 2137057233), -1988215601);
+                    int c = defpackage.a.c(identityHashCode | (-232305455), 496, (((~((-731194735) | identityHashCode)) | 570754112 | (~((~identityHashCode) | (-71864833)))) * (-496)) + ((0 * 992) - 2137057233), -1988215601);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -5396,20 +5396,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0046, code lost:
     
-        if (r6 <= r8) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002b, code lost:
     
-        if (r6 <= r8) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0049, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = (int) java.lang.Runtime.getRuntime().maxMemory();
-        r0 = defpackage.a.c((~(r0 | (-371759708))) | (~(870648987 | r0)), -1324, (((~r0) | 566559872) * 1324) + 946668373, 383792642);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) java.lang.Runtime.getRuntime().maxMemory();
+        0 = defpackage.a.c((~(0 | (-371759708))) | (~(870648987 | 0)), -1324, (((~0) | 566559872) * 1324) + 946668373, 383792642);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 99) % 128;
      */
     /*
@@ -5429,8 +5429,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r1[0])[0] = j + 4906;
-                Fpnative.valueOf = r1;
+                ((long[]) $$a[0])[0] = j + 4906;
+                Fpnative.valueOf = 0;
                 return this.Enroll2IndexActivity;
             }
             byte[] bArr = $$d;
@@ -5467,7 +5467,7 @@ public class IdentySdk {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
                     int i = ~identityHashCode;
-                    int c = defpackage.a.c((~(83957258 | i)) | (-414932022), 712, (((~(identityHashCode | 498818623)) | (~(i | (-414861366)))) * (-712)) + (((414861365 | r6) * (-712)) - 70280745), 2034462842);
+                    int c = defpackage.a.c((~(83957258 | i)) | (-414932022), 712, (((~(identityHashCode | 498818623)) | (~(i | (-414861366)))) * (-712)) + (((414861365 | 0) * (-712)) - 70280745), 2034462842);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -5520,7 +5520,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c((~(identityHashCode | 461785962)) | 42222144, 49, (((~((~identityHashCode) | (-960675243))) | 461785962 | (~(960675242 | identityHashCode))) * (-49)) + ((((~(461785962 | r6)) | (-1002897387)) * 98) - 1662280001), -109722299);
+                    int c = defpackage.a.c((~(identityHashCode | 461785962)) | 42222144, 49, (((~((~identityHashCode) | (-960675243))) | 461785962 | (~(960675242 | identityHashCode))) * (-49)) + ((((~(461785962 | 0)) | (-1002897387)) * 98) - 1662280001), -109722299);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -5642,7 +5642,7 @@ public class IdentySdk {
                                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(size, keyCodeFromString, i3, 1150904546, false, (String) objArr7[0], null);
                                 }
                                 Object[] objArr8 = (Object[]) ((Field) PngjBadSignature3).get(null);
-                                objArr2 = new Object[]{r0, r10, new int[]{r9}, new int[]{r8}, new int[1]};
+                                objArr2 = new Object[]{0, 0, new int[]{0}, new int[]{0}, new int[1]};
                                 int i4 = ((int[]) objArr8[3])[0];
                                 int i5 = ((int[]) objArr8[2])[0];
                                 String str = (String) objArr8[1];
@@ -5660,8 +5660,8 @@ public class IdentySdk {
                                     throw null;
                                 }
                                 Object[] objArr9 = new Object[5];
-                                objArr9[c3] = new int[]{r8};
-                                objArr9[3] = new int[]{r7};
+                                objArr9[c3] = new int[]{0};
+                                objArr9[3] = new int[]{0};
                                 objArr9[4] = new int[1];
                                 int i9 = ((int[]) objArr2[4])[0];
                                 int i10 = ((int[]) objArr2[3])[0];
@@ -5671,7 +5671,7 @@ public class IdentySdk {
                                 objArr9[1] = str3;
                                 objArr9[0] = str4;
                                 int startUptimeMillis = (int) Process.getStartUptimeMillis();
-                                int c6 = defpackage.a.c((~(startUptimeMillis | 345185020)) | (~((~startUptimeMillis) | 969542390)), 979, ((startUptimeMillis | 969542390) * (-979)) + (((~(345185020 | r2)) * 979) - 747696062), i9);
+                                int c6 = defpackage.a.c((~(startUptimeMillis | 345185020)) | (~((~startUptimeMillis) | 969542390)), 979, ((startUptimeMillis | 969542390) * (-979)) + (((~(345185020 | 0)) * 979) - 747696062), i9);
                                 int i12 = c6 ^ (c6 << 13);
                                 int i13 = i12 ^ (i12 >>> 17);
                                 ((int[]) objArr9[4])[0] = i13 ^ (i13 << 5);
@@ -5928,7 +5928,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c(~(identityHashCode | 274764164), 113, (((~((~identityHashCode) | 1048417220)) | (~((-773653445) | identityHashCode)) | 388) * (-113)) + ((((~(274764164 | r5)) | 773653444) * 226) - 41024400), -1376569067);
+                    int c = defpackage.a.c(~(identityHashCode | 274764164), 113, (((~((~identityHashCode) | 1048417220)) | (~((-773653445) | identityHashCode)) | 388) * (-113)) + ((((~(274764164 | 0)) | 773653444) * 226) - 41024400), -1376569067);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -5961,54 +5961,54 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0103, code lost:
     
-        return r11.pfkrolfinalizeF;
+        return 0.pfkrolfinalizeF;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0104, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0105, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0109, code lost:
     
-        if (r1 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x010b, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x010c, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        r7 = ((long[]) r0[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0036, code lost:
     
-        if (r7 > r9) goto L12;
+        if (0 > 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = (int) java.lang.Runtime.getRuntime().maxMemory();
-        r3 = ~r0;
-        r0 = defpackage.a.c((~(r0 | 43275425)) | 42209280, 49, ((((~(r3 | (-542164706))) | 43275425) | (~(542164705 | r0))) * (-49)) + ((((~(43275425 | r3)) | (-584373986)) * 98) + 1241180500), 384144782);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) java.lang.Runtime.getRuntime().maxMemory();
+        0 = ~0;
+        0 = defpackage.a.c((~(0 | 43275425)) | 42209280, 49, ((((~(0 | (-542164706))) | 43275425) | (~(542164705 | 0))) * (-49)) + ((((~(43275425 | 0)) | (-584373986)) * 98) + 1241180500), 384144782);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0017, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0092, code lost:
     
@@ -6016,23 +6016,23 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x009a, code lost:
     
-        r2 = com.identy.IdentySdk.$$d;
-        r8 = new java.lang.Object[1];
-        d((short) 185, (byte) (-r2[11]), (byte) (-r2[62]), r8);
-        r1 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r4 = new java.lang.Object[1];
-        d((short) 154, (byte) (-r2[111(0x6f, float:1.56E-43)]), r2[63], r4);
-        r1 = (java.lang.Object[]) r1.getMethod((java.lang.String) r4[0], java.lang.Integer.TYPE).invoke(null, 384144782);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 185, (byte) (-$$a[11]), (byte) (-$$a[62]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 154, (byte) (-$$a[111(0x6f, float:1.56E-43)]), $$a[63], 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, 384144782);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00e8, code lost:
     
-        r9 = ((long[]) r1[0])[0];
+        0 = ((long[]) $$a[0])[0];
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 13) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00f6, code lost:
     
-        ((long[]) r1[0])[0] = r9 + 4926;
-        com.identy.Fpnative.valueOf = r1;
+        ((long[]) $$a[0])[0] = 0 + 4926;
+        com.identy.Fpnative.valueOf = 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -6156,7 +6156,7 @@ public class IdentySdk {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                     int i = ~startElapsedRealtime;
-                    int c = defpackage.a.c((~(610159898 | i)) | 111270618, 712, (((~(startElapsedRealtime | (-44143297))) | (~(i | 654303194))) * (-712)) + ((((-654303195) | r6) * (-712)) - 2058530601), -1495623676);
+                    int c = defpackage.a.c((~(610159898 | i)) | 111270618, 712, (((~(startElapsedRealtime | (-44143297))) | (~(i | 654303194))) * (-712)) + ((((-654303195) | 0) * (-712)) - 2058530601), -1495623676);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -6191,23 +6191,23 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004b, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0030, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = (int) android.os.SystemClock.uptimeMillis();
-        r6 = ((((~((-760452717) | r0)) | 219350060) | (~((-261563437) | r0))) * (-754)) - 1995044639;
-        r7 = ~((-219350061) | r0);
-        r0 = ~r0;
-        r0 = defpackage.a.c(r0 | (-760452717), 754, ((r7 | (~((-42213377) | r0))) * (-754)) + r6, -1290200769);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) android.os.SystemClock.uptimeMillis();
+        0 = ((((~((-760452717) | 0)) | 219350060) | (~((-261563437) | 0))) * (-754)) - 1995044639;
+        0 = ~((-219350061) | 0);
+        0 = ~0;
+        0 = defpackage.a.c(0 | (-760452717), 754, ((0 | (~((-42213377) | 0))) * (-754)) + 0, -1290200769);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -6226,8 +6226,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 4852;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 4852;
+                Fpnative.valueOf = 0;
                 return this.ERRORS;
             }
             byte[] bArr = $$d;
@@ -6509,19 +6509,19 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = defpackage.a.c((~(((int) android.os.Process.getStartElapsedRealtime()) | 590083768)) | 91194488, 529, (((~((~r0) | 590083768)) | 71565376) * 529) - 1876653424, 220873416);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.c((~(((int) android.os.Process.getStartElapsedRealtime()) | 590083768)) | 91194488, 529, (((~((~0) | 590083768)) | 71565376) * 529) - 1876653424, 220873416);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -6540,8 +6540,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 4977;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 4977;
+                Fpnative.valueOf = 0;
                 return this.destroy;
             }
             byte[] bArr = $$d;
@@ -6579,7 +6579,7 @@ public class IdentySdk {
                     int i = (int) Runtime.getRuntime().totalMemory();
                     int i2 = ~i;
                     int i3 = (~((-909790974) | i2)) | 637665856;
-                    int c = defpackage.a.c((~(i | (-138776577))) | (~(i2 | (-272125118))), 502, ((i3 | r0) * (-502)) - 1515398209, -597946414);
+                    int c = defpackage.a.c((~(i | (-138776577))) | (~(i2 | (-272125118))), 502, ((i3 | 0) * (-502)) - 1515398209, -597946414);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -6611,20 +6611,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004d, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0032, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0050, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = java.lang.System.identityHashCode(r11);
-        r1 = defpackage.a.c(~((~r1) | (-33622081)), -948, (((~((-193144955) | r1)) | (-305744326)) * (-948)) + 1128867971, -1125117187);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c(~((~0) | (-33622081)), -948, (((~((-193144955) | 0)) | (-305744326)) * (-948)) + 1128867971, -1125117187);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -6645,8 +6645,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4963;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 4963;
+                Fpnative.valueOf = 0;
                 return this.Action;
             }
             byte[] bArr = $$d;
@@ -6673,108 +6673,108 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00ef, code lost:
     
-        if (r11.setFoundMatchingTemplates.containsKey(r12) == false) goto L19;
+        if (0.setFoundMatchingTemplates.containsKey(0) == false) goto L19;
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x00f1, code lost:
     
-        r0 = ((java.lang.Integer) r11.setFoundMatchingTemplates.get(r12)).intValue();
+        0 = ((java.lang.Integer) 0.setFoundMatchingTemplates.get(0)).intValue();
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 71) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0107, code lost:
     
-        r1 = ((int[]) r1[1])[0];
-        r3 = r1 * r1;
-        r5 = -(577182738 * r1);
-        r6 = ((r3 | r5) << 1) - (r3 ^ r5);
-        r1 = -(r1 * 256938680);
-        r3 = (r6 ^ r1) + ((r1 & r6) << 1);
-        r5 = (r3 & 738774489) + (738774489 | r3);
-        r1 = r5 >> 23;
-        r3 = ((r1 & (-1023)) + (r1 | (-1023))) / kotlin.io.ConstantsKt.MINIMUM_BLOCK_SIZE;
-        r1 = (r3 ^ 1) + ((r3 & 1) << 1);
-        r3 = (r5 & r1) + (r1 | r5);
-        r1 = r5 >> 15;
-        r6 = ((r1 & (-262143)) + (r1 | (-262143))) / 131072;
-        r1 = -(((r6 & 1) + (r6 | 1)) ^ r3);
-        r3 = (r1 ^ 1) + ((r1 & 1) << 1);
-        r1 = ((r3 >> 27) - 63) / 32;
-        r2 = (r1 & 1) + (r1 | 1);
-        r2 = (90 / (((-((r2 ^ 1) + ((r2 & 1) << 1))) & r3) * 90)) + r0;
-        r11.setFoundMatchingTemplates.put(r12, java.lang.Integer.valueOf(r2));
+        0 = ((int[]) $$a[1])[0];
+        0 = 0 * 0;
+        0 = -(577182738 * 0);
+        0 = ((0 | 0) << 1) - (0 ^ 0);
+        0 = -(0 * 256938680);
+        0 = (0 ^ 0) + ((0 & 0) << 1);
+        0 = (0 & 738774489) + (738774489 | 0);
+        0 = 0 >> 23;
+        0 = ((0 & (-1023)) + (0 | (-1023))) / kotlin.io.ConstantsKt.MINIMUM_BLOCK_SIZE;
+        0 = (0 ^ 1) + ((0 & 1) << 1);
+        0 = (0 & 0) + (0 | 0);
+        0 = 0 >> 15;
+        0 = ((0 & (-262143)) + (0 | (-262143))) / 131072;
+        0 = -(((0 & 1) + (0 | 1)) ^ 0);
+        0 = (0 ^ 1) + ((0 & 1) << 1);
+        0 = ((0 >> 27) - 63) / 32;
+        0 = (0 & 1) + (0 | 1);
+        0 = (90 / (((-((0 ^ 1) + ((0 & 1) << 1))) & 0) * 90)) + 0;
+        0.setFoundMatchingTemplates.put(0, java.lang.Integer.valueOf(0));
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0176, code lost:
     
-        return java.lang.Integer.valueOf(r2);
+        return java.lang.Integer.valueOf(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0106, code lost:
     
-        r0 = 0;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0177, code lost:
     
-        r12 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0178, code lost:
     
-        r0 = r12.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x017c, code lost:
     
-        if (r0 != null) goto L25;
+        if (0 != null) goto L25;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x017e, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x017f, code lost:
     
-        throw r12;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001d, code lost:
     
-        r7 = ((long[]) r0[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0035, code lost:
     
-        if (r7 > r9) goto L12;
+        if (0 > 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x0038, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = (int) android.os.Process.getStartElapsedRealtime();
-        r0 = defpackage.a.c((~(r0 | (-19400863))) | ((~((-518290143) | r0)) | 2099358), -69, (((~((-516190785) | r0)) | (~((-17301505) | r0))) * 69) - 1055137040, -656555536);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) android.os.Process.getStartElapsedRealtime();
+        0 = defpackage.a.c((~(0 | (-19400863))) | ((~((-518290143) | 0)) | 2099358), -69, (((~((-516190785) | 0)) | (~((-17301505) | 0))) * 69) - 1055137040, -656555536);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x001b, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0016, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x008d, code lost:
     
-        r6 = com.identy.IdentySdk.$$d;
-        r7 = (byte) (-r6[11]);
-        r9 = new java.lang.Object[1];
-        d((short) 88, r7, (byte) (r7 + 4), r9);
-        r1 = java.lang.Class.forName((java.lang.String) r9[0]);
-        r9 = new java.lang.Object[1];
-        d((short) (-r6[24]), r6[63], r6[116(0x74, float:1.63E-43)], r9);
-        r1 = (java.lang.Object[]) r1.getMethod((java.lang.String) r9[0], java.lang.Integer.TYPE).invoke(null, 1939529739);
+        0 = com.identy.IdentySdk.$$d;
+        0 = (byte) (-$$a[11]);
+        0 = new java.lang.Object[1];
+        d((short) 88, 0, (byte) (0 + 4), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) (-$$a[24]), $$a[63], $$a[116(0x74, float:1.63E-43)], 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, 1939529739);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00d8, code lost:
     
-        r9 = ((long[]) r1[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00de, code lost:
     
-        ((long[]) r1[0])[0] = r9 + 4910;
-        com.identy.Fpnative.valueOf = r1;
+        ((long[]) $$a[0])[0] = 0 + 4910;
+        com.identy.Fpnative.valueOf = 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -6793,56 +6793,56 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f7, code lost:
     
-        return r11.EnrollThumbActivity;
+        return 0.EnrollThumbActivity;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x00f8, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x00f9, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x00fd, code lost:
     
-        if (r1 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x00ff, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0100, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        com.identy.IdentySdk.deduplication = (r1 + 29) % 128;
-        r7 = ((long[]) r0[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        com.identy.IdentySdk.deduplication = (0 + 29) % 128;
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x003c, code lost:
     
-        if (r7 > r9) goto L12;
+        if (0 > 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x003f, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = defpackage.a.a();
-        r2 = ~r0;
-        r4 = ~(537978563 | r2);
-        r0 = defpackage.a.c(r4 | 39089283, 712, (((~(r0 | (-38014977))) | (~(r2 | 575993539))) * (-712)) + ((((-575993540) | r4) * (-712)) + 1943442631), -874555431);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.a();
+        0 = ~0;
+        0 = ~(537978563 | 0);
+        0 = defpackage.a.c(0 | 39089283, 712, (((~(0 | (-38014977))) | (~(0 | 575993539))) * (-712)) + ((((-575993540) | 0) * (-712)) + 1943442631), -874555431);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0017, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x008f, code lost:
     
@@ -6850,23 +6850,23 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0097, code lost:
     
-        r2 = com.identy.IdentySdk.$$d;
-        r3 = (byte) (-r2[11]);
-        r8 = new java.lang.Object[1];
-        d((short) 88, r3, (byte) (r3 + 4), r8);
-        r1 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r5 = new java.lang.Object[1];
-        d((short) (-r2[24]), r2[63], r2[116(0x74, float:1.63E-43)], r5);
-        r1 = (java.lang.Object[]) r1.getMethod((java.lang.String) r5[0], java.lang.Integer.TYPE).invoke(null, -874555431);
+        0 = com.identy.IdentySdk.$$d;
+        0 = (byte) (-$$a[11]);
+        0 = new java.lang.Object[1];
+        d((short) 88, 0, (byte) (0 + 4), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) (-$$a[24]), $$a[63], $$a[116(0x74, float:1.63E-43)], 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, -874555431);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00e4, code lost:
     
-        r9 = ((long[]) r1[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00ea, code lost:
     
-        ((long[]) r1[0])[0] = r9 + 4966;
-        com.identy.Fpnative.valueOf = r1;
+        ((long[]) $$a[0])[0] = 0 + 4966;
+        com.identy.Fpnative.valueOf = 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -6902,7 +6902,7 @@ public class IdentySdk {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~defpackage.a.a()) | 677731192)) | 541397568, 495, (r0 * 495) - 1204934034, 1285194678);
+                    int c = defpackage.a.c((~((~defpackage.a.a()) | 677731192)) | 541397568, 495, (0 * 495) - 1204934034, 1285194678);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -6925,7 +6925,7 @@ public class IdentySdk {
                     int i12 = (((i11 | (-65535)) << 1) - (i11 ^ (-65535))) / 32768;
                     int i13 = -((((i12 | 1) << 1) - (i12 ^ 1)) ^ i10);
                     e = IdentyB.e(((i13 ^ 7) + ((i13 & 7) << 1)) >> 21, 4095, 2048, -1);
-                    if (d / ((1034091366 / (((-((e ^ 1) + ((e & 1) << 1))) & r5) * 31)) + 1.043810602E9d) > 2.0d) {
+                    if (d / ((1034091366 / (((-((e ^ 1) + ((e & 1) << 1))) & 0) * 31)) + 1.043810602E9d) > 2.0d) {
                         return false;
                     }
                     generateST = (deduplication + 111) % 128;
@@ -6960,7 +6960,7 @@ public class IdentySdk {
             int i122 = (((i112 | (-65535)) << 1) - (i112 ^ (-65535))) / 32768;
             int i132 = -((((i122 | 1) << 1) - (i122 ^ 1)) ^ i102);
             e = IdentyB.e(((i132 ^ 7) + ((i132 & 7) << 1)) >> 21, 4095, 2048, -1);
-            if (d / ((1034091366 / (((-((e ^ 1) + ((e & 1) << 1))) & r5) * 31)) + 1.043810602E9d) > 2.0d) {
+            if (d / ((1034091366 / (((-((e ^ 1) + ((e & 1) << 1))) & 0) * 31)) + 1.043810602E9d) > 2.0d) {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -7015,72 +7015,72 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0188, code lost:
     
-        return r0.equalsIgnoreCase("3,DEMO".substring(5624 / (((-((r2 & 1) + (r2 | 1))) & r3) * 1406)));
+        return 0.equalsIgnoreCase("3,DEMO".substring(5624 / (((-((0 & 1) + (0 | 1))) & 0) * 1406)));
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0189, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x018a, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x018e, code lost:
     
-        if (r1 != null) goto L26;
+        if (0 != null) goto L26;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0190, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0191, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        r1 = r1 + 19;
-        com.identy.IdentySdk.deduplication = r1 % 128;
+        0 = 0 + 19;
+        com.identy.IdentySdk.deduplication = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0025, code lost:
     
-        if ((r1 % 2) == 0) goto L14;
+        if ((0 % 2) == 0) goto L14;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0027, code lost:
     
-        r7 = ((long[]) r0[0])[1];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, new java.lang.Object[1])).longValue();
+        0 = ((long[]) $$a[0])[1];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, new java.lang.Object[1])).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0041, code lost:
     
-        if (r7 > r9) goto L17;
+        if (0 > 0) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x005f, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = (int) java.lang.Runtime.getRuntime().maxMemory();
-        r4 = ~r0;
-        r0 = defpackage.a.c(((~(r0 | (-209024256))) | 4486208) | (~(r4 | 494403071)), 521, ((289865024 | r0) * 521) + ((((~(r4 | 289865024)) | 209024255) * (-1042)) + 1330521590), 1479006954);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) java.lang.Runtime.getRuntime().maxMemory();
+        0 = ~0;
+        0 = defpackage.a.c(((~(0 | (-209024256))) | 4486208) | (~(0 | 494403071)), 521, ((289865024 | 0) * 521) + ((((~(0 | 289865024)) | 209024255) * (-1042)) + 1330521590), 1479006954);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0044, code lost:
     
-        r7 = ((long[]) r0[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x005c, code lost:
     
-        if (r7 > r9) goto L17;
+        if (0 > 0) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x001c, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0017, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x00b5, code lost:
     
@@ -7088,38 +7088,38 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x00bd, code lost:
     
-        r3 = com.identy.IdentySdk.$$d;
-        r9 = new java.lang.Object[1];
-        d((short) 185, (byte) (-r3[11]), (byte) (-r3[62]), r9);
-        r1 = java.lang.Class.forName((java.lang.String) r9[0]);
-        r9 = new java.lang.Object[1];
-        d((short) 154, (byte) (-r3[111(0x6f, float:1.56E-43)]), r3[63], r9);
-        r1 = (java.lang.Object[]) r1.getMethod((java.lang.String) r9[0], java.lang.Integer.TYPE).invoke(null, 1479006954);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 185, (byte) (-$$a[11]), (byte) (-$$a[62]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 154, (byte) (-$$a[111(0x6f, float:1.56E-43)]), $$a[63], 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, 1479006954);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x010b, code lost:
     
-        r9 = ((long[]) r1[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0111, code lost:
     
-        ((long[]) r1[0])[0] = r9 + 4990;
-        com.identy.Fpnative.valueOf = r1;
-        r0 = r12.addTemplates;
-        r1 = ((int[]) r1[1])[0];
-        r3 = ((r1 * r1) - (~(-(65286046 * r1)))) - 1;
-        r1 = -(r1 * (-454904652));
-        r4 = (r3 & r1) + (r1 | r3);
-        r3 = (r4 & (-1499559279)) + ((-1499559279) | r4);
-        r1 = r3 >> 18;
-        r4 = ((r1 ^ (-32767)) + ((r1 & (-32767)) << 1)) / 16384;
-        r1 = (r4 ^ 1) + ((r4 & 1) << 1);
-        r4 = (r3 ^ r1) + ((r1 & r3) << 1);
-        r1 = r3 >> 25;
-        r3 = (((r1 | (-255)) << 1) - (r1 ^ (-255))) / 128;
-        r1 = -((((r3 | 1) << 1) - (r3 ^ 1)) ^ r4);
-        r3 = (r1 ^ 2) + ((r1 & 2) << 1);
-        r1 = ((r3 >> 26) - 127) / 64;
-        r2 = (r1 ^ 1) + ((r1 & 1) << 1);
+        ((long[]) $$a[0])[0] = 0 + 4990;
+        com.identy.Fpnative.valueOf = 0;
+        0 = 0.addTemplates;
+        0 = ((int[]) $$a[1])[0];
+        0 = ((0 * 0) - (~(-(65286046 * 0)))) - 1;
+        0 = -(0 * (-454904652));
+        0 = (0 & 0) + (0 | 0);
+        0 = (0 & (-1499559279)) + ((-1499559279) | 0);
+        0 = 0 >> 18;
+        0 = ((0 ^ (-32767)) + ((0 & (-32767)) << 1)) / 16384;
+        0 = (0 ^ 1) + ((0 & 1) << 1);
+        0 = (0 ^ 0) + ((0 & 0) << 1);
+        0 = 0 >> 25;
+        0 = (((0 | (-255)) << 1) - (0 ^ (-255))) / 128;
+        0 = -((((0 | 1) << 1) - (0 ^ 1)) ^ 0);
+        0 = (0 ^ 2) + ((0 & 2) << 1);
+        0 = ((0 >> 26) - 127) / 64;
+        0 = (0 ^ 1) + ((0 & 1) << 1);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7139,24 +7139,24 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0049, code lost:
     
-        if (r7 <= r9) goto L14;
+        if (0 <= 0) goto L14;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
     
-        if (r7 <= r9) goto L14;
+        if (0 <= 0) goto L14;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r11);
-        r6 = ((((~((-615185215) | r0)) | 536900352) | (~(116295934 | r0))) * (-880)) + 1434790607;
-        r5 = (~((-615185215) | (~r0))) | (-116295935);
-        r0 = ~(r0 | 615185214);
-        r0 = defpackage.a.c(r0, 880, ((r5 | r0) * (-880)) + r6, -205658018);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
-        r0 = com.identy.IdentySdk.deduplication + 41;
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = ((((~((-615185215) | 0)) | 536900352) | (~(116295934 | 0))) * (-880)) + 1434790607;
+        0 = (~((-615185215) | (~0))) | (-116295935);
+        0 = ~(0 | 615185214);
+        0 = defpackage.a.c(0, 880, ((0 | 0) * (-880)) + 0, -205658018);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        0 = com.identy.IdentySdk.deduplication + 41;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7175,9 +7175,9 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                generateST = r0 % 128;
-                ((long[]) r2[0])[0] = j + 4910;
-                Fpnative.valueOf = r2;
+                generateST = 0 % 128;
+                ((long[]) $$a[0])[0] = j + 4910;
+                Fpnative.valueOf = 0;
                 return this.toString;
             }
             byte[] bArr = $$d;
@@ -7205,56 +7205,56 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f9, code lost:
     
-        return r11.Capture4FActivity;
+        return 0.Capture4FActivity;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x00fa, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x00fb, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x00ff, code lost:
     
-        if (r1 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0101, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0102, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        com.identy.IdentySdk.generateST = (r0 + 33) % 128;
-        r7 = ((long[]) r1[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        com.identy.IdentySdk.generateST = (0 + 33) % 128;
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x003c, code lost:
     
-        if (r7 > r9) goto L12;
+        if (0 > 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x003f, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = android.os.Process.myPid();
-        r2 = (~((-433245951) | r1)) | 29393472;
-        r4 = ~((~r1) | 469495807);
-        r1 = defpackage.a.c((~(r1 | (-403852479))) | r4, 470, ((r2 | r4) * (-470)) + 1428919231, 373493212);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = android.os.Process.myPid();
+        0 = (~((-433245951) | 0)) | 29393472;
+        0 = ~((~0) | 469495807);
+        0 = defpackage.a.c((~(0 | (-403852479))) | 0, 470, ((0 | 0) * (-470)) + 1428919231, 373493212);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
-        if (r1 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0017, code lost:
     
-        if (r1 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0089, code lost:
     
@@ -7262,23 +7262,23 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0091, code lost:
     
-        r2 = com.identy.IdentySdk.$$d;
-        r8 = new java.lang.Object[1];
-        d((short) 149, (byte) (-r2[11]), (byte) (-r2[111(0x6f, float:1.56E-43)]), r8);
-        r1 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r5 = new java.lang.Object[1];
-        d((short) 106, r2[63], (byte) (-r2[55]), r5);
-        r0 = (java.lang.Object[]) r1.getMethod((java.lang.String) r5[0], java.lang.Integer.TYPE).invoke(null, 373493212);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 149, (byte) (-$$a[11]), (byte) (-$$a[111(0x6f, float:1.56E-43)]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 106, $$a[63], (byte) (-$$a[55]), 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, 373493212);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00de, code lost:
     
-        r9 = ((long[]) r0[0])[0];
+        0 = ((long[]) $$a[0])[0];
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 117) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00ec, code lost:
     
-        ((long[]) r0[0])[0] = r9 + 4925;
-        com.identy.Fpnative.valueOf = r0;
+        ((long[]) $$a[0])[0] = 0 + 4925;
+        com.identy.Fpnative.valueOf = 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7346,52 +7346,52 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f0, code lost:
     
-        return r0;
+        return 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x00f1, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x00f2, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x00f6, code lost:
     
-        if (r1 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x00f8, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x00f9, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        r7 = ((long[]) r0[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0036, code lost:
     
-        if (r7 > r9) goto L12;
+        if (0 > 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = defpackage.a.c((~((~((int) java.lang.Runtime.getRuntime().totalMemory())) | 477793963)) | (-642616897), 262, (((~(477793963 | r0)) | (-642616897)) * 262) - 1285726773, 2105969858);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.c((~((~((int) java.lang.Runtime.getRuntime().totalMemory())) | 477793963)) | (-642616897), 262, (((~(477793963 | 0)) | (-642616897)) * 262) - 1285726773, 2105969858);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0017, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x007f, code lost:
     
@@ -7399,23 +7399,23 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0087, code lost:
     
-        r2 = com.identy.IdentySdk.$$d;
-        r8 = new java.lang.Object[1];
-        d((short) 185, (byte) (-r2[11]), (byte) (-r2[62]), r8);
-        r1 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r4 = new java.lang.Object[1];
-        d((short) 154, (byte) (-r2[111(0x6f, float:1.56E-43)]), r2[63], r4);
-        r1 = (java.lang.Object[]) r1.getMethod((java.lang.String) r4[0], java.lang.Integer.TYPE).invoke(null, 2105969858);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 185, (byte) (-$$a[11]), (byte) (-$$a[62]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 154, (byte) (-$$a[111(0x6f, float:1.56E-43)]), $$a[63], 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, 2105969858);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00d5, code lost:
     
-        r9 = ((long[]) r1[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00db, code lost:
     
-        ((long[]) r1[0])[0] = r9 + 4906;
-        com.identy.Fpnative.valueOf = r1;
-        r0 = r12.pfkrol;
+        ((long[]) $$a[0])[0] = 0 + 4906;
+        com.identy.Fpnative.valueOf = 0;
+        0 = 0.pfkrol;
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 53) % 128;
      */
     /*
@@ -7435,21 +7435,21 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0054, code lost:
     
-        if (r7 <= r9) goto L15;
+        if (0 <= 0) goto L15;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0039, code lost:
     
-        if (r7 <= r9) goto L15;
+        if (0 <= 0) goto L15;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0057, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r11);
-        r2 = ~(1073004499 | r0);
-        r0 = defpackage.a.c((~(r0 | (-574115220))) | ((~((-1073004500) | r0)) | 573574547), 407, ((r2 | ((~((~r0) | 574115219)) | 573574547)) * 407) + ((((-1073545172) | r2) * (-814)) + 1509894921), -48751761);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = ~(1073004499 | 0);
+        0 = defpackage.a.c((~(0 | (-574115220))) | ((~((-1073004500) | 0)) | 573574547), 407, ((0 | ((~((~0) | 574115219)) | 573574547)) * 407) + ((((-1073545172) | 0) * (-814)) + 1509894921), -48751761);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7474,8 +7474,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r1[0])[0] = j + 4949;
-                Fpnative.valueOf = r1;
+                ((long[]) $$a[0])[0] = j + 4949;
+                Fpnative.valueOf = 0;
                 return this.ppk;
             }
             byte[] bArr = $$d;
@@ -7642,7 +7642,7 @@ public class IdentySdk {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startUptimeMillis = (int) Process.getStartUptimeMillis();
                     int i3 = ~((-504136769) | startUptimeMillis);
-                    int c = defpackage.a.c((~(startUptimeMillis | 517799526)) | (~((~startUptimeMillis) | (-512552039))) | 8415270, 497, ((i3 | (~(r6 | 517799526))) * 497) - 1188075984, 1265271303);
+                    int c = defpackage.a.c((~(startUptimeMillis | 517799526)) | (~((~startUptimeMillis) | (-512552039))) | 8415270, 497, ((i3 | (~(0 | 517799526))) * 497) - 1188075984, 1265271303);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -7728,7 +7728,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int b = defpackage.a.b(1410069717);
-                    int c = defpackage.a.c((~(b | (-402654606))) | (~((~b) | (-96098931))) | 95963186, 168, ((~((-135745) | b)) * 168) + ((((~((-402790350) | r2)) | 135744) * 168) - 1710130969), -1766899627);
+                    int c = defpackage.a.c((~(b | (-402654606))) | (~((~b) | (-96098931))) | 95963186, 168, ((~((-135745) | b)) * 168) + ((((~((-402790350) | 0)) | 135744) * 168) - 1710130969), -1766899627);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -7759,52 +7759,52 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00e6, code lost:
     
-        return r11.CaptureMode;
+        return 0.CaptureMode;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x00e7, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x00e8, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x00ec, code lost:
     
-        if (r1 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x00ee, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x00ef, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        r7 = ((long[]) r0[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0036, code lost:
     
-        if (r7 > r9) goto L12;
+        if (0 > 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = defpackage.a.c((~((~java.lang.System.identityHashCode(r11)) | 92524537)) | (-406364743), 305, (((~(r0 | 92524537)) | (-498855936)) * 305) - 1958702672, -3857954);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.c((~((~java.lang.System.identityHashCode(0)) | 92524537)) | (-406364743), 305, (((~(0 | 92524537)) | (-498855936)) * 305) - 1958702672, -3857954);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0017, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x007d, code lost:
     
@@ -7812,22 +7812,22 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0085, code lost:
     
-        r2 = com.identy.IdentySdk.$$d;
-        r8 = new java.lang.Object[1];
-        d((short) 149, (byte) (-r2[11]), (byte) (-r2[111(0x6f, float:1.56E-43)]), r8);
-        r1 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r4 = new java.lang.Object[1];
-        d((short) 106, r2[63], (byte) (-r2[55]), r4);
-        r1 = (java.lang.Object[]) r1.getMethod((java.lang.String) r4[0], java.lang.Integer.TYPE).invoke(null, -3857954);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 149, (byte) (-$$a[11]), (byte) (-$$a[111(0x6f, float:1.56E-43)]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 106, $$a[63], (byte) (-$$a[55]), 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, -3857954);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00d3, code lost:
     
-        r9 = ((long[]) r1[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00d9, code lost:
     
-        ((long[]) r1[0])[0] = r9 + 4912;
-        com.identy.Fpnative.valueOf = r1;
+        ((long[]) $$a[0])[0] = 0 + 4912;
+        com.identy.Fpnative.valueOf = 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7846,20 +7846,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004b, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0030, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = ~java.lang.System.identityHashCode(r12);
-        r0 = defpackage.a.c((~(r0 | (-30636977))) | 1247536, 52, (((~(30636976 | r0)) | ((~((-468252304) | r0)) | 438862863)) * (-52)) + (((~(469499839 | r0)) * 52) + 1780049803), 256620041);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = ~java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~(0 | (-30636977))) | 1247536, 52, (((~(30636976 | 0)) | ((~((-468252304) | 0)) | 438862863)) * (-52)) + (((~(469499839 | 0)) * 52) + 1780049803), 256620041);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -7878,10 +7878,10 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 4870;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 4870;
+                Fpnative.valueOf = 0;
                 String str = this.getShortform;
-                int i2 = ((int[]) r2[1])[0];
+                int i2 = ((int[]) $$a[1])[0];
                 int i3 = ((i2 * i2) - (~(-(1035472495 * i2)))) - 1;
                 int i4 = -(i2 * 311778337);
                 int i5 = (i3 & i4) + (i4 | i3);
@@ -7990,7 +7990,7 @@ public class IdentySdk {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | 979266001)) | 576587840, 495, (r0 * 495) - 1444249490, 1246483723);
+                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | 979266001)) | 576587840, 495, (0 * 495) - 1444249490, 1246483723);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -8034,7 +8034,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int maxMemory = (int) Runtime.getRuntime().maxMemory();
-                    int c = defpackage.a.c((~(maxMemory | 853406698)) | (~((~maxMemory) | (-810931179))) | 269566378, 168, ((~((-541364801) | maxMemory)) * 168) + ((((~(312041898 | r5)) | 541364800) * 168) - 1710130969), 2100614122);
+                    int c = defpackage.a.c((~(maxMemory | 853406698)) | (~((~maxMemory) | (-810931179))) | 269566378, 168, ((~((-541364801) | maxMemory)) * 168) + ((((~(312041898 | 0)) | 541364800) * 168) - 1710130969), 2100614122);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -8071,120 +8071,120 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f4, code lost:
     
-        ((long[]) r28[0])[0] = r13 + 4878;
-        com.identy.Fpnative.valueOf = r28;
+        ((long[]) $$a[0])[0] = 0 + 4878;
+        com.identy.Fpnative.valueOf = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x00ff, code lost:
     
-        if (r35 == null) goto L48;
+        if (0 == null) goto L48;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0101, code lost:
     
-        if (r37 == null) goto L48;
+        if (0 == null) goto L48;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0103, code lost:
     
-        r5 = com.identy.IdentySdk.generateST + 105;
-        com.identy.IdentySdk.deduplication = r5 % 128;
+        0 = com.identy.IdentySdk.generateST + 105;
+        com.identy.IdentySdk.deduplication = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x010d, code lost:
     
-        if ((r5 % 2) == 0) goto L25;
+        if ((0 % 2) == 0) goto L25;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x010f, code lost:
     
-        r5 = com.identy.enums.Template.NIST_ITL_1_2015_RECORD_9;
-        r7 = 67 / 0;
+        0 = com.identy.enums.Template.NIST_ITL_1_2015_RECORD_9;
+        0 = 67 / 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0119, code lost:
     
-        if (r35.equals(r5) == true) goto L46;
+        if (0.equals(0) == true) goto L46;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x02d3, code lost:
     
-        throw new java.lang.Exception("Template type is not valid ".concat(java.lang.String.valueOf(r35)));
+        throw new java.lang.Exception("Template type is not valid ".concat(java.lang.String.valueOf(0)));
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0124, code lost:
     
-        r6 = com.identy.IdentySdk.generateST + 5;
-        com.identy.IdentySdk.deduplication = r6 % 128;
+        0 = com.identy.IdentySdk.generateST + 5;
+        com.identy.IdentySdk.deduplication = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x012e, code lost:
     
-        if ((r6 % 2) == 0) goto L32;
+        if ((0 % 2) == 0) goto L32;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0130, code lost:
     
-        r6 = com.identy.enums.Template.NIST_ITL_1_2015_RECORD_14;
-        r10 = 87 / 0;
+        0 = com.identy.enums.Template.NIST_ITL_1_2015_RECORD_14;
+        0 = 87 / 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x013a, code lost:
     
-        if (r35.equals(r6) != false) goto L46;
+        if (0.equals(0) != false) goto L46;
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x014a, code lost:
     
-        if ((!r37.equals(r5)) != true) goto L46;
+        if ((!0.equals(0)) != true) goto L46;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x014c, code lost:
     
-        r5 = com.identy.IdentySdk.deduplication + 75;
-        com.identy.IdentySdk.generateST = r5 % 128;
+        0 = com.identy.IdentySdk.deduplication + 75;
+        com.identy.IdentySdk.generateST = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0156, code lost:
     
-        if ((r5 % 2) == 0) goto L44;
+        if ((0 % 2) == 0) goto L44;
      */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x015c, code lost:
     
-        if (r37.equals(r6) != false) goto L46;
+        if (0.equals(0) != false) goto L46;
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x015e, code lost:
     
-        r32.e = com.identy.Action.MATCH_WITH_TEMPLATE;
-        r5 = new java.lang.StringBuilder();
-        r5.append(r32.e);
-        r5.append("_");
-        r5.append(r35);
-        r5.append("_");
-        r5.append(r37);
-        PngjBadCrcException(r5.toString());
-        r0 = com.identy.Fpnative.match(com.identy.e1.PngjException(r32.getData), r35.ordinal(), com.identy.e.valueOf.PngjException(r36), r37.ordinal(), com.identy.e.valueOf.PngjException(r38), r32.PngjOutputException.ordinal(), com.identy.Position.getFromHandFinger(new android.util.Pair(r33, r34)).ordinal());
-        r0.getScore();
-        r32.h.put(r33, new java.util.HashMap());
-        r2 = (java.util.Map) r32.h.get(r33);
-        r5 = new java.util.ArrayList();
-        r2 = new com.identy.getCaptureTime(r33, r34, new java.util.Date(), new java.util.HashMap(), 0.0d, r0, (float) r0.getScore(), 0, 0.0f, false, null, com.karumi.dexter.BuildConfig.FLAVOR, 0, 0, 0, new com.identy.PngBadCharsetException(), 0, 0, com.identy.enums.FingerDetectionMode.L4F, com.identy.FingerAS.NONE);
-        r2.PngjOutputException = r5;
-        r2.put(r34, r2);
-        r3 = new com.identy.VerifyIdentyResponse(r32.h, r32.e, r32.isQualityFailed, r32.Attempt, r32.getPadSub1, r32.getQualityScore, r32.values, r32.getData, r32.i);
-        r4 = r32.h;
-        r5 = r32.getPadSub2;
-        r0 = ((int[]) r28[1])[0];
-        r2 = r0 * r0;
-        r6 = -(1320108001 * r0);
-        r7 = (r2 ^ r6) + ((r2 & r6) << 1);
-        r0 = -(r0 * (-1716077197));
-        r2 = ((r7 & r0) + (r0 | r7)) - 2017605404;
-        r0 = ((r2 >> 18) - 32767) / 16384;
-        r0 = (r2 - (~((r0 ^ 1) + ((r0 & 1) << 1)))) - 1;
-        r2 = r2 >> 24;
-        r6 = ((r2 & (-511)) + (r2 | (-511))) / 256;
-        r0 = -(r0 ^ (((r6 | 1) << 1) - (r6 ^ 1)));
-        r2 = (r0 ^ 3) + ((r0 & 3) << 1);
-        r0 = r2 >> 18;
-        r6 = (((r0 | (-32767)) << 1) - (r0 ^ (-32767))) / 16384;
-        r3.fillPrintsInfo(r4, r5, false, 2838 / (((-((((r6 | 1) << 1) - (r6 ^ 1)) + 1)) & r2) * 946), new java.util.ArrayList(), new com.identy.IdentySdk.PngjInputException(r32, r3));
-        r0 = com.identy.IdentySdk.generateST + 25;
-        com.identy.IdentySdk.deduplication = r0 % 128;
+        0.e = com.identy.Action.MATCH_WITH_TEMPLATE;
+        0 = new java.lang.StringBuilder();
+        0.append(0.e);
+        0.append("_");
+        0.append(0);
+        0.append("_");
+        0.append(0);
+        PngjBadCrcException(0.toString());
+        0 = com.identy.Fpnative.match(com.identy.e1.PngjException(0.getData), 0.ordinal(), com.identy.e.valueOf.PngjException(0), 0.ordinal(), com.identy.e.valueOf.PngjException(0), 0.PngjOutputException.ordinal(), com.identy.Position.getFromHandFinger(new android.util.Pair(0, 0)).ordinal());
+        0.getScore();
+        0.h.put(0, new java.util.HashMap());
+        0 = (java.util.Map) 0.h.get(0);
+        0 = new java.util.ArrayList();
+        0 = new com.identy.getCaptureTime(0, 0, new java.util.Date(), new java.util.HashMap(), 0.0d, 0, (float) 0.getScore(), 0, 0.0f, false, null, com.karumi.dexter.BuildConfig.FLAVOR, 0, 0, 0, new com.identy.PngBadCharsetException(), 0, 0, com.identy.enums.FingerDetectionMode.L4F, com.identy.FingerAS.NONE);
+        0.PngjOutputException = 0;
+        0.put(0, 0);
+        0 = new com.identy.VerifyIdentyResponse(0.h, 0.e, 0.isQualityFailed, 0.Attempt, 0.getPadSub1, 0.getQualityScore, 0.values, 0.getData, 0.i);
+        0 = 0.h;
+        0 = 0.getPadSub2;
+        0 = ((int[]) $$a[1])[0];
+        0 = 0 * 0;
+        0 = -(1320108001 * 0);
+        0 = (0 ^ 0) + ((0 & 0) << 1);
+        0 = -(0 * (-1716077197));
+        0 = ((0 & 0) + (0 | 0)) - 2017605404;
+        0 = ((0 >> 18) - 32767) / 16384;
+        0 = (0 - (~((0 ^ 1) + ((0 & 1) << 1)))) - 1;
+        0 = 0 >> 24;
+        0 = ((0 & (-511)) + (0 | (-511))) / 256;
+        0 = -(0 ^ (((0 | 1) << 1) - (0 ^ 1)));
+        0 = (0 ^ 3) + ((0 & 3) << 1);
+        0 = 0 >> 18;
+        0 = (((0 | (-32767)) << 1) - (0 ^ (-32767))) / 16384;
+        0.fillPrintsInfo(0, 0, false, 2838 / (((-((((0 | 1) << 1) - (0 ^ 1)) + 1)) & 0) * 946), new java.util.ArrayList(), new com.identy.IdentySdk.PngjInputException(0, 0));
+        0 = com.identy.IdentySdk.generateST + 25;
+        com.identy.IdentySdk.deduplication = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:31:0x02b9, code lost:
     
-        if ((r0 % 2) == 0) goto L57;
+        if ((0 % 2) == 0) goto L57;
      */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x02bb, code lost:
     
-        r0 = 32 / 0;
+        0 = 32 / 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x02bf, code lost:
     
@@ -8196,7 +8196,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x02c0, code lost:
     
-        r37.equals(r6);
+        0.equals(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x02c3, code lost:
     
@@ -8204,93 +8204,93 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x013d, code lost:
     
-        r6 = com.identy.enums.Template.NIST_ITL_1_2015_RECORD_14;
+        0 = com.identy.enums.Template.NIST_ITL_1_2015_RECORD_14;
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x0143, code lost:
     
-        if (r35.equals(r6) != false) goto L46;
+        if (0.equals(0) != false) goto L46;
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x011c, code lost:
     
-        r5 = com.identy.enums.Template.NIST_ITL_1_2015_RECORD_9;
+        0 = com.identy.enums.Template.NIST_ITL_1_2015_RECORD_9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x0122, code lost:
     
-        if (r35.equals(r5) != false) goto L46;
+        if (0.equals(0) != false) goto L46;
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:0x02e1, code lost:
     
-        throw new java.lang.Exception(r32.getData.getString(com.identy.R.string.template_type_is_unknown));
+        throw new java.lang.Exception(0.getData.getString(com.identy.R.string.template_type_is_unknown));
      */
     /* JADX WARN: Code restructure failed: missing block: B:44:0x02e2, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x02e3, code lost:
     
-        r2 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x02e7, code lost:
     
-        if (r2 != null) goto L53;
+        if (0 != null) goto L53;
      */
     /* JADX WARN: Code restructure failed: missing block: B:47:0x02e9, code lost:
     
-        throw r2;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x02ea, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x002d, code lost:
     
-        r11 = ((long[]) r5[0])[0];
-        r13 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0022, code lost:
     
-        if (r5 != null) goto L10;
+        if (0 != null) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x0045, code lost:
     
-        if (r11 > r13) goto L13;
+        if (0 > 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x0048, code lost:
     
-        r10 = new java.lang.Object[]{new long[]{((long[]) r5[0])[0]}, new int[1]};
-        r5 = java.lang.System.identityHashCode(r32);
-        r16 = 2;
-        r6 = ~r5;
-        r5 = defpackage.a.c((~(r5 | (-132263))) | ((~(r6 | 499287782)) | (-499554023)), 140, ((132262 | (~((-398503) | r6))) * (-280)) + (((r5 | (-398503)) * 140) + 1791282863), 635268508);
-        r5 = r5 ^ (r5 << 13);
-        r5 = r5 ^ (r5 >>> 17);
-        ((int[]) r10[1])[0] = r5 ^ (r5 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = 2;
+        0 = ~0;
+        0 = defpackage.a.c((~(0 | (-132263))) | ((~(0 | 499287782)) | (-499554023)), 140, ((132262 | (~((-398503) | 0))) * (-280)) + (((0 | (-398503)) * 140) + 1791282863), 635268508);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:53:0x002b, code lost:
     
-        if (r5 != null) goto L10;
+        if (0 != null) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0025, code lost:
     
-        r16 = 2;
+        0 = 2;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x009f, code lost:
     
-        r7 = com.identy.IdentySdk.$$d;
-        r12 = new java.lang.Object[1];
-        d((short) 185, (byte) (-r7[11]), (byte) (-r7[62]), r12);
-        r6 = java.lang.Class.forName((java.lang.String) r12[0]);
-        r12 = new java.lang.Object[1];
-        d((short) 154, (byte) (-r7[111(0x6f, float:1.56E-43)]), r7[63], r12);
-        r10 = (java.lang.Object[]) r6.getMethod((java.lang.String) r12[0], java.lang.Integer.TYPE).invoke(null, 635268508);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 185, (byte) (-$$a[11]), (byte) (-$$a[62]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 154, (byte) (-$$a[111(0x6f, float:1.56E-43)]), $$a[63], 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, 635268508);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00ed, code lost:
     
-        r13 = ((long[]) r10[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x009c, code lost:
     
-        r28 = r10;
+        0 = 0;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r7v9, types: [boolean, int] */
@@ -8449,59 +8449,59 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:18:0x011c, code lost:
     
-        if (r5 == false) goto L25;
+        if (0 == false) goto L25;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0121, code lost:
     
-        r5 = com.identy.IdentySdk.deduplication + 69;
-        com.identy.IdentySdk.generateST = r5 % 128;
+        0 = com.identy.IdentySdk.deduplication + 69;
+        com.identy.IdentySdk.generateST = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x012b, code lost:
     
-        if ((r5 % 2) == 0) goto L31;
+        if ((0 % 2) == 0) goto L31;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0131, code lost:
     
-        if (r33.equals(r6) != false) goto L33;
+        if (0.equals(0) != false) goto L33;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0133, code lost:
     
-        r28.e = com.identy.Action.MATCH_WITH_TEMPLATE;
-        r5 = new java.lang.StringBuilder();
-        r5.append(r28.e);
-        r5.append("_");
-        r5.append(r31);
-        r5.append("_");
-        r5.append(r33);
-        PngjBadCrcException(r5.toString());
-        r0 = com.identy.Fpnative.match(com.identy.e1.PngjException(r28.getData), r31.ordinal(), android.util.Base64.decode(r32.getBytes(), r28.isQualityFailed), r33.ordinal(), android.util.Base64.decode(r34.getBytes(), r28.isQualityFailed), r28.PngjOutputException.ordinal(), com.identy.Position.getFromHandFinger(new android.util.Pair(r29, r30)).ordinal());
-        r28.h.put(r29, new java.util.HashMap());
-        r2 = (java.util.Map) r28.h.get(r29);
-        r5 = new java.util.ArrayList();
-        r6 = new java.util.HashMap();
-        r5 = new java.util.Date();
-        r12 = (float) r0.getScore();
-        r9 = ((int[]) r11[1])[0];
-        r11 = r9 * r9;
-        r13 = -(2064437118 * r9);
-        r14 = (r11 & r13) + (r11 | r13);
-        r9 = -(r9 * 750375434);
-        r11 = ((r14 | r9) << 1) - (r9 ^ r14);
-        r13 = ((r11 | 1829967376) << 1) - (1829967376 ^ r11);
-        r9 = r13 >> 24;
-        r11 = (((r9 | (-511)) << 1) - (r9 ^ (-511))) / 256;
-        r9 = (r11 & 1) + (r11 | 1);
-        r11 = (r13 & r9) + (r9 | r13);
-        r9 = r13 >> 17;
-        r14 = (((r9 | (-65535)) << 1) - (r9 ^ (-65535))) / 32768;
-        r9 = -(((r14 & 1) + (r14 | 1)) ^ r11);
-        r9 = (((r9 | 1) << 1) - (r9 ^ 1)) >> 21;
-        r9 = com.identy.IdentyB.a(r9 & (-4095), r9 | (-4095), 2048, -1);
-        r2 = new com.identy.getCaptureTime(r29, r30, r5, r6, 0.0d, r0, r12, 0, 0.0f, false, null, com.karumi.dexter.BuildConfig.FLAVOR, 0, (430749 / (((-(((r9 | 1) << 1) - (r9 ^ 1))) & r11) * 687)) - 627, 0, new com.identy.PngBadCharsetException(), 0, 0, com.identy.enums.FingerDetectionMode.L4F, com.identy.FingerAS.NONE);
-        r2.PngjOutputException = r5;
-        r2.put(r30, r2);
-        r3 = new com.identy.VerifyIdentyResponse(r28.h, r28.e, r28.isQualityFailed, r28.Attempt, r28.getPadSub1, r28.getQualityScore, r28.values, r28.getData, r28.i);
-        r3.fillPrintsInfo(r28.h, r28.getPadSub2, false, true, new java.util.ArrayList<>(), new com.identy.IdentySdk.PngjException(r28, r3));
+        0.e = com.identy.Action.MATCH_WITH_TEMPLATE;
+        0 = new java.lang.StringBuilder();
+        0.append(0.e);
+        0.append("_");
+        0.append(0);
+        0.append("_");
+        0.append(0);
+        PngjBadCrcException(0.toString());
+        0 = com.identy.Fpnative.match(com.identy.e1.PngjException(0.getData), 0.ordinal(), android.util.Base64.decode(0.getBytes(), 0.isQualityFailed), 0.ordinal(), android.util.Base64.decode(0.getBytes(), 0.isQualityFailed), 0.PngjOutputException.ordinal(), com.identy.Position.getFromHandFinger(new android.util.Pair(0, 0)).ordinal());
+        0.h.put(0, new java.util.HashMap());
+        0 = (java.util.Map) 0.h.get(0);
+        0 = new java.util.ArrayList();
+        0 = new java.util.HashMap();
+        0 = new java.util.Date();
+        0 = (float) 0.getScore();
+        0 = ((int[]) $$a[1])[0];
+        0 = 0 * 0;
+        0 = -(2064437118 * 0);
+        0 = (0 & 0) + (0 | 0);
+        0 = -(0 * 750375434);
+        0 = ((0 | 0) << 1) - (0 ^ 0);
+        0 = ((0 | 1829967376) << 1) - (1829967376 ^ 0);
+        0 = 0 >> 24;
+        0 = (((0 | (-511)) << 1) - (0 ^ (-511))) / 256;
+        0 = (0 & 1) + (0 | 1);
+        0 = (0 & 0) + (0 | 0);
+        0 = 0 >> 17;
+        0 = (((0 | (-65535)) << 1) - (0 ^ (-65535))) / 32768;
+        0 = -(((0 & 1) + (0 | 1)) ^ 0);
+        0 = (((0 | 1) << 1) - (0 ^ 1)) >> 21;
+        0 = com.identy.IdentyB.a(0 & (-4095), 0 | (-4095), 2048, -1);
+        0 = new com.identy.getCaptureTime(0, 0, 0, 0, 0.0d, 0, 0, 0, 0.0f, false, null, com.karumi.dexter.BuildConfig.FLAVOR, 0, (430749 / (((-(((0 | 1) << 1) - (0 ^ 1))) & 0) * 687)) - 627, 0, new com.identy.PngBadCharsetException(), 0, 0, com.identy.enums.FingerDetectionMode.L4F, com.identy.FingerAS.NONE);
+        0.PngjOutputException = 0;
+        0.put(0, 0);
+        0 = new com.identy.VerifyIdentyResponse(0.h, 0.e, 0.isQualityFailed, 0.Attempt, 0.getPadSub1, 0.getQualityScore, 0.values, 0.getData, 0.i);
+        0.fillPrintsInfo(0.h, 0.getPadSub2, false, true, new java.util.ArrayList<>(), new com.identy.IdentySdk.PngjException(0, 0));
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x028c, code lost:
     
@@ -8509,7 +8509,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x028d, code lost:
     
-        r33.equals(r6);
+        0.equals(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0290, code lost:
     
@@ -8517,7 +8517,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x011f, code lost:
     
-        if (r5 == false) goto L25;
+        if (0 == false) goto L25;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -8533,7 +8533,7 @@ public class IdentySdk {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) Process.getElapsedCpuTime())) | 571047322)) | (-1070464987), -964, (((-1069936603) | (~(571047322 | r5))) * (-964)) - 861650457, -1487803151);
+                    int c = defpackage.a.c((~((~((int) Process.getElapsedCpuTime())) | 571047322)) | (-1070464987), -964, (((-1069936603) | (~(571047322 | 0))) * (-964)) - 861650457, -1487803151);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -8905,20 +8905,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0052, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0036, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0055, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = java.lang.System.identityHashCode(r12);
-        r1 = defpackage.a.c((~(r1 | 863894486)) | ((~((~r1) | (-538751745))) | (~((-285280279) | r1))), 867, ((((~((-824032023) | r1)) | 538751744) | (~(325142742 | r1))) * (-1734)) + ((((~((-824032023) | r3)) | (~(325142742 | r3))) * (-867)) - 755802724), -1278610547);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~(0 | 863894486)) | ((~((~0) | (-538751745))) | (~((-285280279) | 0))), 867, ((((~((-824032023) | 0)) | 538751744) | (~(325142742 | 0))) * (-1734)) + ((((~((-824032023) | 0)) | (~(325142742 | 0))) * (-867)) - 755802724), -1278610547);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -8939,8 +8939,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4964;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 4964;
+                Fpnative.valueOf = 0;
                 return this.cvtmat2ba;
             }
             byte[] bArr = $$d;
@@ -9142,19 +9142,19 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = defpackage.a.c((~((~((int) android.os.Process.getStartElapsedRealtime())) | (-48086436))) | 9973155, 191, (((~(r0 | (-48086436))) | 546975715) * 191) - 1488831675, -1309727729);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.c((~((~((int) android.os.Process.getStartElapsedRealtime())) | (-48086436))) | 9973155, 191, (((~(0 | (-48086436))) | 546975715) * 191) - 1488831675, -1309727729);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 1) % 128;
      */
     /*
@@ -9174,8 +9174,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 4919;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 4919;
+                Fpnative.valueOf = 0;
                 this.e1 = z;
             }
             byte[] bArr = $$d;
@@ -9458,20 +9458,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004f, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0034, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = ~java.lang.System.identityHashCode(r11);
-        r1 = defpackage.a.c((~(r1 | (-495690594))) | 650360512, 494, (((-419954978) | r1) * 494) + 1343344045, -1134655906);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = ~java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~(0 | (-495690594))) | 650360512, 494, (((-419954978) | 0) * 494) + 1343344045, -1134655906);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -9492,8 +9492,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4925;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 4925;
+                Fpnative.valueOf = 0;
                 this.getAttempts = hashMap;
                 return this;
             }
@@ -9575,22 +9575,22 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0050, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0035, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0053, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = defpackage.a.a();
-        r3 = ~(355378127 | r1);
-        r6 = ~r1;
-        r1 = defpackage.a.c((~(r1 | (-854267408))) | (~((-355378128) | r6)), 406, ((~(938457039 | r6)) * (-406)) + (((r3 | (~((-84189633) | r6))) * (-406)) - 990926187), -1049296627);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.a();
+        0 = ~(355378127 | 0);
+        0 = ~0;
+        0 = defpackage.a.c((~(0 | (-854267408))) | (~((-355378128) | 0)), 406, ((~(938457039 | 0)) * (-406)) + (((0 | (~((-84189633) | 0))) * (-406)) - 990926187), -1049296627);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 17) % 128;
      */
     /*
@@ -9612,14 +9612,14 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4984;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 4984;
+                Fpnative.valueOf = 0;
                 this.closeDialog = str;
                 this.closefDialog = str2;
                 this.getEncryptedTemplates = str3;
                 this.PngBadCharsetException = str4;
                 this.Capture2IndexActivity = Calendar.getInstance().getTimeInMillis();
-                int i3 = ((int[]) r0[1])[0];
+                int i3 = ((int[]) $$a[1])[0];
                 int i4 = ((i3 * i3) - (~(-(1381246373 * i3)))) - 1;
                 int i5 = -(i3 * 1648347675);
                 int i6 = ((i4 | i5) << 1) - (i5 ^ i4);
@@ -9669,10 +9669,10 @@ public class IdentySdk {
             int e2 = IdentyB.e((i142 | (-63)) << 1, i142 ^ (-63), 32, -1);
             String c2 = IdentyB.c((-((e2 & 1) + (e2 | 1))) & i132, 1573, 23595, "22/FIN");
             String string2 = Settings.Secure.getString(this.getData.getContentResolver(), "android_id");
-            StringBuilder r2 = defpackage.a.r(c2);
-            r2.append(this.Capture2IndexActivity / 1000);
-            r2.append(string2);
-            this.FingerOutput = r2.toString();
+            StringBuilder 0 = defpackage.a.r(c2);
+            0.append(this.Capture2IndexActivity / 1000);
+            0.append(string2);
+            this.FingerOutput = 0.toString();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause == null) {
@@ -9693,7 +9693,7 @@ public class IdentySdk {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c(~(System.identityHashCode(this) | (-279068709)), -1504, (((~((-313481381) | r0)) | 34412672) * 1504) - 1003693777, -1869608916);
+                    int c = defpackage.a.c(~(System.identityHashCode(this) | (-279068709)), -1504, (((~((-313481381) | 0)) | 34412672) * 1504) - 1003693777, -1869608916);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -9797,7 +9797,7 @@ public class IdentySdk {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~(System.identityHashCode(this) | 718188955)) | 219299675, 529, (((~((~r0) | 718188955)) | 84938304) * 529) - 1876653424, -1905997335);
+                    int c = defpackage.a.c((~(System.identityHashCode(this) | 718188955)) | 219299675, 529, (((~((~0) | 718188955)) | 84938304) * 529) - 1876653424, -1905997335);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -9886,20 +9886,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0055, code lost:
     
-        if (r8 <= r10) goto L15;
+        if (0 <= 0) goto L15;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x003a, code lost:
     
-        if (r8 <= r10) goto L15;
+        if (0 <= 0) goto L15;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0058, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = android.os.Process.myPid();
-        r1 = defpackage.a.c((~(r1 | (-223041858))) | (-793762754), 302, ((~((-151210242) | r1)) * (-604)) + ((((~((~r1) | (-151210242))) | (~((-71831617) | r1))) * (-302)) - 1882075063), -604479582);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = android.os.Process.myPid();
+        0 = defpackage.a.c((~(0 | (-223041858))) | (-793762754), 302, ((~((-151210242) | 0)) * (-604)) + ((((~((~0) | (-151210242))) | (~((-71831617) | 0))) * (-302)) - 1882075063), -604479582);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -9924,8 +9924,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 5039;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 5039;
+                Fpnative.valueOf = 0;
                 this.CaptureMode = z;
                 this.FingerAS = inlineGuideOption;
                 return this;
@@ -10007,21 +10007,21 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004f, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0034, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = android.os.Process.myUid();
-        r3 = ~r1;
-        r1 = defpackage.a.c((~(r1 | (-178837820))) | (~(r3 | (-286457861))), 765, (((~((-178837820) | r3)) | 33593600) * 1530) + (((((~((-33593601) | r3)) | (~((-145244220) | r1))) | (~((-286457861) | r1))) * 765) + 1728702125), -33121115);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = android.os.Process.myUid();
+        0 = ~0;
+        0 = defpackage.a.c((~(0 | (-178837820))) | (~(0 | (-286457861))), 765, (((~((-178837820) | 0)) | 33593600) * 1530) + (((((~((-33593601) | 0)) | (~((-145244220) | 0))) | (~((-286457861) | 0))) * 765) + 1728702125), -33121115);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -10042,8 +10042,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4913;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 4913;
+                Fpnative.valueOf = 0;
                 this.Fpnative = str;
             }
             byte[] bArr = $$d;
@@ -10117,20 +10117,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:20:0x004d, code lost:
     
-        if (r8 <= r10) goto L30;
+        if (0 <= 0) goto L30;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0032, code lost:
     
-        if (r8 <= r10) goto L30;
+        if (0 <= 0) goto L30;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0050, code lost:
     
-        r3 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = android.os.Process.myUid();
-        r0 = defpackage.a.c((~((~r0) | (-673576337))) | 38273600, 564, ((~(r0 | (-136413457))) * 1128) + (((((~(174687056 | r6)) | (-673576337)) | (~((-174687057) | r0))) * (-564)) - 1180294517), 1646120197);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r3[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = android.os.Process.myUid();
+        0 = defpackage.a.c((~((~0) | (-673576337))) | 38273600, 564, ((~(0 | (-136413457))) * 1128) + (((((~(174687056 | 0)) | (-673576337)) | (~((-174687057) | 0))) * (-564)) - 1180294517), 1646120197);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0100  */
     /*
@@ -10200,20 +10200,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004f, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0034, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[]{r1 ^ (r1 << 5)}};
-        r1 = ~r12;
-        r3 = (~((-517041987) | r1)) | 1076482;
-        r1 = defpackage.a.c(~(r1 | 18152706), 713, ((~(534118210 | r12)) * 1426) + (((r3 | r4) * (-713)) - 159383956), 1883741849);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[]{0 ^ (0 << 5)}};
+        0 = ~0;
+        0 = (~((-517041987) | 0)) | 1076482;
+        0 = defpackage.a.c(~(0 | 18152706), 713, ((~(534118210 | 0)) * 1426) + (((0 | 0) * (-713)) - 159383956), 1883741849);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -10234,8 +10234,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 5020;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 5020;
+                Fpnative.valueOf = 0;
                 this.pfk = i;
                 this.pfkrolfinalizeF = i2;
                 return;
@@ -10280,7 +10280,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c(~((~identityHashCode) | (-661093908)), 184, ((identityHashCode | (-804224980)) * (-184)) + ((((~((-162204628) | r5)) | 19073555) * 184) - 664185801), 658737907);
+                    int c = defpackage.a.c(~((~identityHashCode) | (-661093908)), 184, ((identityHashCode | (-804224980)) * (-184)) + ((((~((-162204628) | 0)) | 19073555) * 184) - 664185801), 658737907);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -10346,21 +10346,21 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r11);
-        r5 = ~((-856761528) | (~r0));
-        r0 = defpackage.a.c((~(r0 | (-71602753))) | r5, 338, ((((-928364280) | r5) | (~(856761527 | r0))) * (-338)) + 244375247, 716071032);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = ~((-856761528) | (~0));
+        0 = defpackage.a.c((~(0 | (-71602753))) | 0, 338, ((((-928364280) | 0) | (~(856761527 | 0))) * (-338)) + 244375247, 716071032);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -10379,8 +10379,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 5047;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 5047;
+                Fpnative.valueOf = 0;
                 this.getPadSub2 = hashMap;
                 return this;
             }
@@ -10474,7 +10474,7 @@ public class IdentySdk {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~(((int) Process.getStartElapsedRealtime()) | 1073577944)) | 293670168, 366, (((~(434179416 | r0)) | 933068696) * (-366)) - 1704450753, 1521754077);
+                    int c = defpackage.a.c((~(((int) Process.getStartElapsedRealtime()) | 1073577944)) | 293670168, 366, (((~(434179416 | 0)) | 933068696) * (-366)) - 1704450753, 1521754077);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -10510,20 +10510,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0049, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        r6 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r13);
-        r0 = defpackage.a.c(~((~r0) | (-1011107012)), 184, ((r0 | (-1053284036)) * (-184)) + ((((~((-512217732) | r7)) | 470040707) * 184) - 619989193), -1235313435);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r6[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c(~((~0) | (-1011107012)), 184, ((0 | (-1053284036)) * (-184)) + ((((~((-512217732) | 0)) | 470040707) * 184) - 619989193), -1235313435);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0109 A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:12:0x010a  */
@@ -10545,8 +10545,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r6[0])[0] = j + 4885;
-                Fpnative.valueOf = r6;
+                ((long[]) $$a[0])[0] = j + 4885;
+                Fpnative.valueOf = 0;
                 this.getProcessingTime = transactionListener;
                 i = deduplication + 71;
                 generateST = i % 128;
@@ -10582,53 +10582,53 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f4, code lost:
     
-        return r11;
+        return 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x00f5, code lost:
     
-        r12 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x00f6, code lost:
     
-        r0 = r12.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x00fa, code lost:
     
-        if (r0 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x00fc, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x00fd, code lost:
     
-        throw r12;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001e, code lost:
     
-        r7 = ((long[]) r0[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0036, code lost:
     
-        if (r7 > r9) goto L12;
+        if (0 > 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r11);
-        r0 = defpackage.a.c(r0 | (-110629838), 496, ((((~((-609519118) | r0)) | 541361152) | (~((~r0) | (-42471873)))) * (-496)) + ((r3 * 992) - 2137057233), 414724687);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c(0 | (-110629838), 496, ((((~((-609519118) | 0)) | 541361152) | (~((~0) | (-42471873)))) * (-496)) + ((0 * 992) - 2137057233), 414724687);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001c, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0017, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0084, code lost:
     
@@ -10636,25 +10636,25 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x008c, code lost:
     
-        r2 = com.identy.IdentySdk.$$d;
-        r6 = (byte) (-r2[11]);
-        r8 = new java.lang.Object[1];
-        d((short) 88, r6, (byte) (r6 + 4), r8);
-        r1 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r4 = new java.lang.Object[1];
-        d((short) (-r2[24]), r2[63], r2[116(0x74, float:1.63E-43)], r4);
-        r1 = (java.lang.Object[]) r1.getMethod((java.lang.String) r4[0], java.lang.Integer.TYPE).invoke(null, 414724687);
+        0 = com.identy.IdentySdk.$$d;
+        0 = (byte) (-$$a[11]);
+        0 = new java.lang.Object[1];
+        d((short) 88, 0, (byte) (0 + 4), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) (-$$a[24]), $$a[63], $$a[116(0x74, float:1.63E-43)], 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, 414724687);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00d9, code lost:
     
-        r9 = ((long[]) r1[0])[0];
+        0 = ((long[]) $$a[0])[0];
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 17) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00e7, code lost:
     
-        ((long[]) r1[0])[0] = r9 + 4872;
-        com.identy.Fpnative.valueOf = r1;
-        r11.destroy = r12;
+        ((long[]) $$a[0])[0] = 0 + 4872;
+        com.identy.Fpnative.valueOf = 0;
+        0.destroy = 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -10719,20 +10719,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004c, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r11);
-        r0 = defpackage.a.c((~(r0 | (-501654953))) | 2765672, 502, ((~((~r0) | 502183912)) * (-502)) + ((((~(2765672 | r0)) | 528960) * (-502)) + 682805993), 519113821);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~(0 | (-501654953))) | 2765672, 502, ((~((~0) | 502183912)) * (-502)) + ((((~(2765672 | 0)) | 528960) * (-502)) + 682805993), 519113821);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 85) % 128;
      */
     /*
@@ -10752,8 +10752,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 4966;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 4966;
+                Fpnative.valueOf = 0;
                 this.Attempt = wSQCompression;
                 return this;
             }
@@ -10880,7 +10880,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c((~(identityHashCode | (-1019132209))) | 549239040 | (~((~identityHashCode) | (-50349761))), 521, (((-520242929) | identityHashCode) * 521) + ((((~(r5 | (-520242929))) | 1019132208) * (-1042)) - 645548696), -1635083417);
+                    int c = defpackage.a.c((~(identityHashCode | (-1019132209))) | 549239040 | (~((~identityHashCode) | (-50349761))), 521, (((-520242929) | identityHashCode) * 521) + ((((~(0 | (-520242929))) | 1019132208) * (-1042)) - 645548696), -1635083417);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -10912,20 +10912,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004f, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0034, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = java.lang.System.identityHashCode(r11);
-        r1 = defpackage.a.c((~(r1 | 348655957)) | 570720896, 116, ((847545237 | r1) * 116) + (((~((~r1) | (-71831617))) * (-116)) - 1537692237), 640052107);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~(0 | 348655957)) | 570720896, 116, ((847545237 | 0) * 116) + (((~((~0) | (-71831617))) * (-116)) - 1537692237), 640052107);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -10946,8 +10946,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4910;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 4910;
+                Fpnative.valueOf = 0;
                 return verify(getDefaultUser(), this.PngjUnsupportedException, this.PngjInputException);
             }
             byte[] bArr = $$d;
@@ -11323,21 +11323,21 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0034, code lost:
     
-        if (r12 <= r14) goto L8;
+        if (0 <= 0) goto L8;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0056, code lost:
     
-        r11 = new java.lang.Object[]{new long[]{((long[]) r2[0])[0]}, new int[1]};
-        r2 = (int) android.os.SystemClock.uptimeMillis();
-        r12 = ~r2;
-        r2 = defpackage.a.c(r2 | (-285483009), 220, (((~(r12 | (-289286305))) | 788175584) * (-440)) + (((784372288 | (~(r12 | (-285483009)))) * 220) + 1317303579), -700417004);
-        r2 = r2 ^ (r2 << 13);
-        r2 = r2 ^ (r2 >>> 17);
-        ((int[]) r11[1])[0] = r2 ^ (r2 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) android.os.SystemClock.uptimeMillis();
+        0 = ~0;
+        0 = defpackage.a.c(0 | (-285483009), 220, (((~(0 | (-289286305))) | 788175584) * (-440)) + (((784372288 | (~(0 | (-285483009)))) * 220) + 1317303579), -700417004);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:81:0x0053, code lost:
     
-        if (r12 <= r14) goto L8;
+        if (0 <= 0) goto L8;
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0105  */
     /* JADX WARN: Removed duplicated region for block: B:78:0x031b  */
@@ -11457,54 +11457,54 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0100, code lost:
     
-        return r11.pfkrolfinalize;
+        return 0.pfkrolfinalize;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0101, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0102, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0106, code lost:
     
-        if (r1 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0108, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0109, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x001d, code lost:
     
-        r7 = ((long[]) r0[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0035, code lost:
     
-        if (r7 > r9) goto L12;
+        if (0 > 0) goto L12;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0038, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r3 = ~((int) android.os.Process.getStartElapsedRealtime());
-        r0 = defpackage.a.c((~((-942848469) | r3)) | (~(r3 | (-443959189))), 590, ((((~(443959188 | r3)) | (-980877269)) | (~(942848468 | r3))) * (-1180)) + ((((~(r0 | (-405930389))) | r6) * 590) - 1673842111), -720553400);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = ~((int) android.os.Process.getStartElapsedRealtime());
+        0 = defpackage.a.c((~((-942848469) | 0)) | (~(0 | (-443959189))), 590, ((((~(443959188 | 0)) | (-980877269)) | (~(942848468 | 0))) * (-1180)) + ((((~(0 | (-405930389))) | 0) * 590) - 1673842111), -720553400);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 29) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x001b, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0016, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0098, code lost:
     
@@ -11512,22 +11512,22 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x00a1, code lost:
     
-        r6 = com.identy.IdentySdk.$$d;
-        r8 = new java.lang.Object[1];
-        d((short) 149, (byte) (-r6[11]), (byte) (-r6[111(0x6f, float:1.56E-43)]), r8);
-        r1 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r4 = new java.lang.Object[1];
-        d((short) 106, r6[63], (byte) (-r6[55]), r4);
-        r1 = (java.lang.Object[]) r1.getMethod((java.lang.String) r4[0], java.lang.Integer.TYPE).invoke(null, -720553400);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 149, (byte) (-$$a[11]), (byte) (-$$a[111(0x6f, float:1.56E-43)]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 106, $$a[63], (byte) (-$$a[55]), 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, -720553400);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00ed, code lost:
     
-        r9 = ((long[]) r1[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00f3, code lost:
     
-        ((long[]) r1[0])[0] = r9 + 4980;
-        com.identy.Fpnative.valueOf = r1;
+        ((long[]) $$a[0])[0] = 0 + 4980;
+        com.identy.Fpnative.valueOf = 0;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -11546,20 +11546,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x004f, code lost:
     
-        if (r7 <= r9) goto L24;
+        if (0 <= 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0034, code lost:
     
-        if (r7 <= r9) goto L24;
+        if (0 <= 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0052, code lost:
     
-        r0 = new java.lang.Object[]{new long[]{((long[]) r1[0])[0]}, new int[1]};
-        r1 = java.lang.System.identityHashCode(r13);
-        r1 = defpackage.a.c((~((~r1) | 184141136)) | (-314748144), 168, (((~(r1 | 184141136)) | (-452718080)) * (-168)) + ((((~((-314748144) | r1)) | 46171200) * 336) - 1710130969), 534473634);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r0[1])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~((~0) | 184141136)) | (-314748144), 168, (((~(0 | 184141136)) | (-452718080)) * (-168)) + ((((~((-314748144) | 0)) | 46171200) * 336) - 1710130969), 534473634);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x010b  */
     /*
@@ -11582,8 +11582,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r0[0])[0] = j + 4951;
-                Fpnative.valueOf = r0;
+                ((long[]) $$a[0])[0] = j + 4951;
+                Fpnative.valueOf = 0;
                 boolean z = this.g;
                 i = generateST + 53;
                 deduplication = i % 128;
@@ -11808,59 +11808,59 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x015d, code lost:
     
-        if (r13.canClub() == false) goto L24;
+        if (0.canClub() == false) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x01cb, code lost:
     
-        r5 = new java.util.ArrayList();
-        r6 = r12.setScore;
-        r7 = r6.length;
-        r8 = 0;
+        0 = new java.util.ArrayList();
+        0 = 0.setScore;
+        0 = 0.length;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x01d4, code lost:
     
-        if (r8 >= r7) goto L89;
+        if (0 >= 0) goto L89;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x01d6, code lost:
     
-        r9 = com.identy.IdentySdk.generateST + 35;
-        com.identy.IdentySdk.deduplication = r9 % 128;
+        0 = com.identy.IdentySdk.generateST + 35;
+        com.identy.IdentySdk.deduplication = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x01df, code lost:
     
-        if ((r9 % 2) != 0) goto L90;
+        if ((0 % 2) != 0) goto L90;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x01e1, code lost:
     
-        r9 = r6[r8];
+        0 = $$a[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x01e7, code lost:
     
-        if (r9.canClub() == false) goto L92;
+        if (0.canClub() == false) goto L92;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x01ed, code lost:
     
-        if (r9.getCode() == null) goto L93;
+        if (0.getCode() == null) goto L93;
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x01fb, code lost:
     
-        if (r9.getCode().equals(r13.getCode()) == false) goto L94;
+        if (0.getCode().equals(0.getCode()) == false) goto L94;
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0209, code lost:
     
-        if (r9.getHand().equals(r13.getHand()) != false) goto L95;
+        if (0.getHand().equals(0.getHand()) != false) goto L95;
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x020b, code lost:
     
-        r5.add(r9);
+        0.add(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x020e, code lost:
     
-        r8 = r8 + 1;
+        0 = 0 + 1;
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x0211, code lost:
     
-        r6[r8].canClub();
+        $$a[0].canClub();
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x0216, code lost:
     
@@ -11868,67 +11868,67 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x021b, code lost:
     
-        if (r5.size() != 1) goto L81;
+        if (0.size() != 1) goto L81;
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:0x021d, code lost:
     
-        r2 = com.identy.IdentySdk.deduplication + 85;
-        com.identy.IdentySdk.generateST = r2 % 128;
+        0 = com.identy.IdentySdk.deduplication + 85;
+        com.identy.IdentySdk.generateST = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x0226, code lost:
     
-        if ((r2 % 2) != 0) goto L63;
+        if ((0 % 2) != 0) goto L63;
      */
     /* JADX WARN: Code restructure failed: missing block: B:44:0x0228, code lost:
     
-        r2 = 98 / 0;
+        0 = 98 / 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x0233, code lost:
     
-        if (r12.e.equals(com.identy.Action.VERIFY) != false) goto L66;
+        if (0.e.equals(com.identy.Action.VERIFY) != false) goto L66;
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x0241, code lost:
     
-        r1 = new java.util.ArrayList();
-        r2 = r12.setScore;
-        r5 = r2.length;
-        r6 = 0;
+        0 = new java.util.ArrayList();
+        0 = 0.setScore;
+        0 = 0.length;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:47:0x024a, code lost:
     
-        if (r6 >= r5) goto L96;
+        if (0 >= 0) goto L96;
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x024c, code lost:
     
-        r7 = r2[r6];
+        0 = $$a[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x0252, code lost:
     
-        if (r7.canClub() == false) goto L98;
+        if (0.canClub() == false) goto L98;
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x0258, code lost:
     
-        if (r7.getCode() == null) goto L99;
+        if (0.getCode() == null) goto L99;
      */
     /* JADX WARN: Code restructure failed: missing block: B:53:0x0266, code lost:
     
-        if (r7.getCode().equals(r13.getCode()) != false) goto L75;
+        if (0.getCode().equals(0.getCode()) != false) goto L75;
      */
     /* JADX WARN: Code restructure failed: missing block: B:54:0x0269, code lost:
     
-        r1.add(r7.changeHand());
+        0.add(0.changeHand());
      */
     /* JADX WARN: Code restructure failed: missing block: B:56:0x0270, code lost:
     
-        r6 = r6 + 1;
+        0 = 0 + 1;
      */
     /* JADX WARN: Code restructure failed: missing block: B:62:0x0281, code lost:
     
-        if (isEnrolled((com.identy.enums.FingerDetectionMode[]) r1.toArray(new com.identy.enums.FingerDetectionMode[0]), r12.uxd565jk) != false) goto L80;
+        if (isEnrolled((com.identy.enums.FingerDetectionMode[]) 0.toArray(new com.identy.enums.FingerDetectionMode[0]), 0.uxd565jk) != false) goto L80;
      */
     /* JADX WARN: Code restructure failed: missing block: B:63:0x0283, code lost:
     
-        return r0;
+        return 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:64:0x0284, code lost:
     
@@ -11936,42 +11936,42 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:66:0x023e, code lost:
     
-        if (r12.e.equals(com.identy.Action.VERIFY) != false) goto L66;
+        if (0.e.equals(com.identy.Action.VERIFY) != false) goto L66;
      */
     /* JADX WARN: Code restructure failed: missing block: B:67:0x0166, code lost:
     
-        r1 = new java.util.ArrayList();
-        r2 = r12.setScore;
-        r5 = r2.length;
+        0 = new java.util.ArrayList();
+        0 = 0.setScore;
+        0 = 0.length;
      */
     /* JADX WARN: Code restructure failed: missing block: B:68:0x016e, code lost:
     
-        if (r3 >= r5) goto L101;
+        if (0 >= 0) goto L101;
      */
     /* JADX WARN: Code restructure failed: missing block: B:69:0x0170, code lost:
     
-        r6 = r2[r3];
+        0 = $$a[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:70:0x0176, code lost:
     
-        if (r6.getCode() == null) goto L103;
+        if (0.getCode() == null) goto L103;
      */
     /* JADX WARN: Code restructure failed: missing block: B:72:0x0184, code lost:
     
-        if (r6.getCode().equals(r13.getCode()) == false) goto L104;
+        if (0.getCode().equals(0.getCode()) == false) goto L104;
      */
     /* JADX WARN: Code restructure failed: missing block: B:73:0x0186, code lost:
     
         com.identy.IdentySdk.generateST = (com.identy.IdentySdk.deduplication + 113) % 128;
-        r1.add(r6.changeHand());
+        0.add(0.changeHand());
      */
     /* JADX WARN: Code restructure failed: missing block: B:75:0x0195, code lost:
     
-        r3 = r3 + 1;
+        0 = 0 + 1;
      */
     /* JADX WARN: Code restructure failed: missing block: B:80:0x019c, code lost:
     
-        if (r1.size() != 1) goto L39;
+        if (0.size() != 1) goto L39;
      */
     /* JADX WARN: Code restructure failed: missing block: B:81:0x019e, code lost:
     
@@ -11979,7 +11979,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:82:0x01ae, code lost:
     
-        if (r12.e.equals(com.identy.Action.VERIFY) == false) goto L80;
+        if (0.e.equals(com.identy.Action.VERIFY) == false) goto L80;
      */
     /* JADX WARN: Code restructure failed: missing block: B:83:0x01b0, code lost:
     
@@ -11987,15 +11987,15 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:84:0x01c6, code lost:
     
-        if (isEnrolled(new com.identy.enums.FingerDetectionMode[]{r13.changeHand()}, r12.uxd565jk) == false) goto L81;
+        if (isEnrolled(new com.identy.enums.FingerDetectionMode[]{0.changeHand()}, 0.uxd565jk) == false) goto L81;
      */
     /* JADX WARN: Code restructure failed: missing block: B:85:0x01ca, code lost:
     
-        return r0;
+        return 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:87:0x0164, code lost:
     
-        if (r13.canClub() == false) goto L24;
+        if (0.canClub() == false) goto L24;
      */
     /* JADX WARN: Removed duplicated region for block: B:14:0x0156  */
     /* JADX WARN: Removed duplicated region for block: B:86:0x0160  */
@@ -12044,7 +12044,7 @@ public class IdentySdk {
                             int i18 = 41 / 0;
                         }
                     }
-                    return r0;
+                    return 0;
                 }
             }
             byte[] bArr = $$d;
@@ -12078,7 +12078,7 @@ public class IdentySdk {
                 if (i % 2 == 0) {
                 }
             }
-            return r02;
+            return 0;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -12100,28 +12100,28 @@ public class IdentySdk {
     /* JADX WARN: Can't wrap try/catch for region: R(9:(4:(10:3|(1:5)(1:25)|8|9|10|(1:12)|13|14|15|17)|14|15|17)|27|28|29|8|9|10|(0)|13) */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x010d, code lost:
     
-        r11 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x010e, code lost:
     
-        r11.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x004b, code lost:
     
-        if (r6 <= r8) goto L34;
+        if (0 <= 0) goto L34;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0030, code lost:
     
-        if (r6 <= r8) goto L34;
+        if (0 <= 0) goto L34;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004e, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r11[0])[0]}, new int[1]};
-        r11 = defpackage.a.a();
-        r11 = defpackage.a.c((~((~r11) | 265367195)) | (-803057372), -964, (((~(265367195 | r11)) | (-764256476)) * (-964)) + 79114847, 456133358);
-        r11 = r11 ^ (r11 << 13);
-        r11 = r11 ^ (r11 >>> 17);
-        ((int[]) r1[1])[0] = r11 ^ (r11 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.a();
+        0 = defpackage.a.c((~((~0) | 265367195)) | (-803057372), -964, (((~(265367195 | 0)) | (-764256476)) * (-964)) + 79114847, 456133358);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:12:0x0104  */
     /*
@@ -12142,8 +12142,8 @@ public class IdentySdk {
                         long j3 = ((long[]) objArr[0])[0];
                         j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                     }
-                    ((long[]) r1[0])[0] = j + 5047;
-                    Fpnative.valueOf = r1;
+                    ((long[]) $$a[0])[0] = j + 5047;
+                    Fpnative.valueOf = 0;
                     Runtime runtime = Runtime.getRuntime();
                     runtime.totalMemory();
                     runtime.freeMemory();
@@ -12151,7 +12151,7 @@ public class IdentySdk {
                     if (LibSettings.isSaveCaptured()) {
                         generateST = (deduplication + 117) % 128;
                     }
-                    int i2 = ((int[]) r1[1])[0];
+                    int i2 = ((int[]) $$a[1])[0];
                     int i3 = i2 * i2;
                     int i4 = -(581178453 * i2);
                     int i5 = ((i3 | i4) << 1) - (i3 ^ i4);
@@ -12248,7 +12248,7 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0100, code lost:
     
-        if (r20 != null) goto L18;
+        if (0 != null) goto L18;
      */
     /* JADX WARN: Removed duplicated region for block: B:16:0x0106  */
     /* JADX WARN: Removed duplicated region for block: B:8:0x00f5  */
@@ -12343,11 +12343,11 @@ public class IdentySdk {
     /* JADX WARN: Can't wrap try/catch for region: R(18:18|(1:20)|21|(13:23|(1:25)(1:49)|27|(1:29)|30|(1:48)(1:34)|35|(1:37)(1:47)|(1:39)(1:46)|40|41|42|43)|51|(2:53|54)|27|(0)|30|(1:32)|48|35|(0)(0)|(0)(0)|40|41|42|43) */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x011d, code lost:
     
-        if (r14.getOveralTimetaken != null) goto L33;
+        if (0.getOveralTimetaken != null) goto L33;
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x0122, code lost:
     
-        if (r14.getOveralTimetaken != null) goto L33;
+        if (0.getOveralTimetaken != null) goto L33;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:29:0x012c  */
@@ -12501,7 +12501,7 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0121, code lost:
     
-        if (r0.length != 0) goto L24;
+        if (0.length != 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x012b, code lost:
     
@@ -12513,22 +12513,22 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x012e, code lost:
     
-        r13.e = com.identy.Action.VERIFY;
+        0.e = com.identy.Action.VERIFY;
         valueOf();
-        r13.uxd565jk = r14;
-        r13.h = new java.util.HashMap();
+        0.uxd565jk = 0;
+        0.h = new java.util.HashMap();
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0140, code lost:
     
-        if (r13.setFingers != false) goto L30;
+        if (0.setFingers != false) goto L30;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0142, code lost:
     
-        r13.DeduplicationIdentyResponse = com.identy.QualityMode.VERIFICATION;
+        0.DeduplicationIdentyResponse = com.identy.QualityMode.VERIFICATION;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x014c, code lost:
     
-        if (isEnrolled(r13.setScore, r14) == true) goto L34;
+        if (isEnrolled(0.setScore, 0) == true) goto L34;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x014e, code lost:
     
@@ -12540,85 +12540,85 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0159, code lost:
     
-        if (r13.getMatchingTime != null) goto L38;
+        if (0.getMatchingTime != null) goto L38;
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x015d, code lost:
     
-        if (r13.getOveralTimetaken == null) goto L40;
+        if (0.getOveralTimetaken == null) goto L40;
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x016b, code lost:
     
-        if (r13.setScore[0].getFinger() == null) goto L45;
+        if (0.setScore[0].getFinger() == null) goto L45;
      */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x017b, code lost:
     
-        if (r13.setScore[0].getFinger().equals(com.identy.enums.Finger.THUMB) == false) goto L45;
+        if (0.setScore[0].getFinger().equals(com.identy.enums.Finger.THUMB) == false) goto L45;
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x017d, code lost:
     
-        r14 = true;
+        0 = true;
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x0180, code lost:
     
-        r0 = r13.setScore;
-        r1 = ((int[]) r6[1])[0];
-        r6 = r1 * r1;
-        r7 = -(2042505826 * r1);
-        r8 = (r6 & r7) + (r6 | r7);
-        r1 = -(r1 * 1967533676);
-        r6 = ((r8 & r1) + (r1 | r8)) - 498101903;
-        r1 = ((r6 >> 17) - 65535) / 32768;
-        r8 = ((r1 | 1) << 1) - (r1 ^ 1);
-        r1 = (r6 ^ r8) + ((r8 & r6) << 1);
-        r6 = r6 >> 25;
-        r8 = (((r6 | (-255)) << 1) - (r6 ^ (-255))) / 128;
-        r1 = (-(r1 ^ ((r8 ^ 1) + ((r8 & 1) << 1)))) + 9;
-        r6 = r1 >> 17;
-        r9 = ((r6 & (-65535)) + (r6 | (-65535))) / 32768;
-        r6 = (r9 & 1) + (r9 | 1);
+        0 = 0.setScore;
+        0 = ((int[]) $$a[1])[0];
+        0 = 0 * 0;
+        0 = -(2042505826 * 0);
+        0 = (0 & 0) + (0 | 0);
+        0 = -(0 * 1967533676);
+        0 = ((0 & 0) + (0 | 0)) - 498101903;
+        0 = ((0 >> 17) - 65535) / 32768;
+        0 = ((0 | 1) << 1) - (0 ^ 1);
+        0 = (0 ^ 0) + ((0 & 0) << 1);
+        0 = 0 >> 25;
+        0 = (((0 | (-255)) << 1) - (0 ^ (-255))) / 128;
+        0 = (-(0 ^ ((0 ^ 1) + ((0 & 1) << 1)))) + 9;
+        0 = 0 >> 17;
+        0 = ((0 & (-65535)) + (0 | (-65535))) / 32768;
+        0 = (0 & 1) + (0 | 1);
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x01e7, code lost:
     
-        if (r0[0 / ((r1 & (-((r6 ^ 1) + ((r6 & 1) << 1)))) * 558)].getHand() != null) goto L49;
+        if ($$a[0 / ((0 & (-((0 ^ 1) + ((0 & 1) << 1)))) * 558)].getHand() != null) goto L49;
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x01e9, code lost:
     
-        r0 = com.identy.enums.Hand.LEFT;
+        0 = com.identy.enums.Hand.LEFT;
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 59) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x01fc, code lost:
     
-        if (r14 == false) goto L56;
+        if (0 == false) goto L56;
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x01fe, code lost:
     
-        r14 = com.identy.IdentySdk.generateST + 45;
-        com.identy.IdentySdk.deduplication = r14 % 128;
+        0 = com.identy.IdentySdk.generateST + 45;
+        com.identy.IdentySdk.deduplication = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x0207, code lost:
     
-        if ((r14 % 2) != 0) goto L54;
+        if ((0 % 2) != 0) goto L54;
      */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x0209, code lost:
     
-        r14 = r13.PngjPrematureEnding.contains(r0);
+        0 = 0.PngjPrematureEnding.contains(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x021c, code lost:
     
-        r1 = r13.getData;
-        r0 = new android.content.Intent(r1, (java.lang.Class<?>) com.identy.GuideNoGuideHelper.getVerifyClass(r1, r14, r13.setScore));
-        r0.putExtra("type", "verify");
-        r0.putExtra(com.identy.IdentySdk.getL2Score, (java.io.Serializable) r13.setScore);
-        r0.putExtra(com.identy.IdentySdk.isAuthSucess, (java.io.Serializable) r13.setScore);
-        r13.getData.startActivityForResult(r0, 102);
+        0 = 0.getData;
+        0 = new android.content.Intent(0, (java.lang.Class<?>) com.identy.GuideNoGuideHelper.getVerifyClass(0, 0, 0.setScore));
+        0.putExtra("type", "verify");
+        0.putExtra(com.identy.IdentySdk.getL2Score, (java.io.Serializable) 0.setScore);
+        0.putExtra(com.identy.IdentySdk.isAuthSucess, (java.io.Serializable) 0.setScore);
+        0.getData.startActivityForResult(0, 102);
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x0245, code lost:
     
-        PngjBadCrcException(r13.e.toString());
+        PngjBadCrcException(0.e.toString());
      */
     /* JADX WARN: Code restructure failed: missing block: B:47:0x0210, code lost:
     
-        r13.PngjPrematureEnding.contains(r0);
+        0.PngjPrematureEnding.contains(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x0215, code lost:
     
@@ -12626,19 +12626,19 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x0216, code lost:
     
-        r14 = r13.PngjExceptionInternal.contains(r0);
+        0 = 0.PngjExceptionInternal.contains(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x01f4, code lost:
     
-        r0 = r13.setScore[0].getHand();
+        0 = 0.setScore[0].getHand();
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x017f, code lost:
     
-        r14 = false;
+        0 = false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:53:0x0161, code lost:
     
-        if (r13.getNfiq1Score == false) goto L60;
+        if (0.getNfiq1Score == false) goto L60;
      */
     /* JADX WARN: Code restructure failed: missing block: B:54:0x024f, code lost:
     
@@ -12650,24 +12650,24 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:57:0x0125, code lost:
     
-        if (r0.length != 0) goto L24;
+        if (0.length != 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:61:0x004a, code lost:
     
-        if (r7 <= r9) goto L72;
+        if (0 <= 0) goto L72;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
     
-        if (r7 <= r9) goto L72;
+        if (0 <= 0) goto L72;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004d, code lost:
     
-        r6 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r13);
-        r0 = defpackage.a.c((~(r0 | (-711239482))) | 212350201, 318, (((~(711239481 | r0)) | (-787265530)) * (-318)) + ((((~((-574915329) | r0)) | (~((~r0) | (-76026049)))) * (-318)) - 1144853787), 33161694);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r6[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~(0 | (-711239482))) | 212350201, 318, (((~(711239481 | 0)) | (-787265530)) * (-318)) + ((((~((-574915329) | 0)) | (~((~0) | (-76026049)))) * (-318)) - 1144853787), 33161694);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
         com.identy.IdentySdk.deduplication = (com.identy.IdentySdk.generateST + 29) % 128;
      */
     /* JADX WARN: Multi-variable type inference failed */
@@ -12692,8 +12692,8 @@ public class IdentySdk {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r6[0])[0] = j + 4876;
-                Fpnative.valueOf = r6;
+                ((long[]) $$a[0])[0] = j + 4876;
+                Fpnative.valueOf = 0;
                 this.PngjUnsupportedException = i;
                 this.PngjInputException = i2;
                 fingerDetectionModeArr = this.setScore;
@@ -12756,7 +12756,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c((~(identityHashCode | (-13899692))) | (~((~identityHashCode) | 484989588)), 333, (((~((-13899692) | r3)) | (~(identityHashCode | 484989588))) * 333) - 1541964639, -554664354);
+                    int c = defpackage.a.c((~(identityHashCode | (-13899692))) | (~((~identityHashCode) | 484989588)), 333, (((~((-13899692) | 0)) | (~(identityHashCode | 484989588))) * 333) - 1541964639, -554664354);
                     int i6 = c ^ (c << 13);
                     int i7 = i6 ^ (i6 >>> 17);
                     ((int[]) objArr[1])[0] = i7 ^ (i7 << 5);
@@ -12848,7 +12848,7 @@ public class IdentySdk {
             this.setScore = fingerDetectionModeArr;
             i = 0;
             i2 = 0;
-            while (r2 < r1) {
+            while (0 < 0) {
             }
             int i82 = ((int[]) objArr[1])[0];
             int i92 = ((i82 * i82) - (~(-(1438864331 * i82)))) - 1;
@@ -12903,7 +12903,7 @@ public class IdentySdk {
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int myPid = Process.myPid();
-                        int c = defpackage.a.c(~((~myPid) | 601750215), 476, ((~(601750215 | myPid)) * 952) + (((18352135 | r8) * (-476)) - 685135069), 2082349258);
+                        int c = defpackage.a.c(~((~myPid) | 601750215), 476, ((~(601750215 | myPid)) * 952) + (((18352135 | 0) * (-476)) - 685135069), 2082349258);
                         int i3 = c ^ (c << 13);
                         int i4 = i3 ^ (i3 >>> 17);
                         ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -12931,7 +12931,7 @@ public class IdentySdk {
                         if (i % 2 != 0) {
                             int i19 = 49 / 0;
                         }
-                        return r2;
+                        return 0;
                     }
                 }
                 byte[] bArr2 = $$d;
@@ -12966,7 +12966,7 @@ public class IdentySdk {
                 deduplication = i % 128;
                 if (i % 2 != 0) {
                 }
-                return r22;
+                return 0;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
@@ -12983,7 +12983,7 @@ public class IdentySdk {
     /* JADX WARN: Can't wrap try/catch for region: R(15:14|(2:16|(13:18|19|(1:21)(1:47)|22|(2:24|(1:26)(2:44|45))(1:46)|27|(2:29|(1:31)(1:39))|40|(2:42|43)|33|34|35|36))|48|19|(0)(0)|22|(0)(0)|27|(0)|40|(0)|33|34|35|36) */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x018c, code lost:
     
-        if (r14.getOveralTimetaken != null) goto L44;
+        if (0.getOveralTimetaken != null) goto L44;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:21:0x0129  */
@@ -13198,7 +13198,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int uptimeMillis = (int) SystemClock.uptimeMillis();
-                    int c = defpackage.a.c((~(uptimeMillis | (-406698457))) | (~((~uptimeMillis) | 92190823)), 959, (((~((-406698457) | r6)) | (~(uptimeMillis | 92190823))) * 959) - 466219089, -451814125);
+                    int c = defpackage.a.c((~(uptimeMillis | (-406698457))) | (~((~uptimeMillis) | 92190823)), 959, (((~((-406698457) | 0)) | (~(uptimeMillis | 92190823))) * 959) - 466219089, -451814125);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -13665,7 +13665,7 @@ public class IdentySdk {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c(~(identityHashCode | (-236382830)), 113, (((~((~identityHashCode) | (-1206318))) | (~((-262506451) | identityHashCode)) | 27329938) * (-113)) + ((((~((-236382830) | r6)) | 262506450) * 226) - 41024400), 1969006909);
+                    int c = defpackage.a.c(~(identityHashCode | (-236382830)), 113, (((~((~identityHashCode) | (-1206318))) | (~((-262506451) | identityHashCode)) | 27329938) * (-113)) + ((((~((-236382830) | 0)) | 262506450) * 226) - 41024400), 1969006909);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -13813,7 +13813,7 @@ public class IdentySdk {
                 if (j5 > j4) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i3 = (int) Runtime.getRuntime().totalMemory();
-                    int c = defpackage.a.c((~(i3 | 230820530)) | (~((~i3) | 729709810)), 959, (((~(230820530 | r5)) | (~(i3 | 729709810))) * 959) - 1770481383, -1995815880);
+                    int c = defpackage.a.c((~(i3 | 230820530)) | (~((~i3) | 729709810)), 959, (((~(230820530 | 0)) | (~(i3 | 729709810))) * 959) - 1770481383, -1995815880);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -13917,7 +13917,7 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:25:0x0198, code lost:
     
-        if (r14[0 / (((-((r1 ^ 1) + ((r1 & 1) << 1))) & r2) * 543)].getFinger().equals(com.identy.enums.Finger.THUMB) != false) goto L31;
+        if ($$a[0 / (((-((0 ^ 1) + ((0 & 1) << 1))) & 0) * 543)].getFinger().equals(com.identy.enums.Finger.THUMB) != false) goto L31;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -14031,20 +14031,20 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0098, code lost:
     
-        r24 = r10;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x00f7, code lost:
     
-        ((long[]) r24[0])[0] = r13 + 4919;
-        com.identy.Fpnative.valueOf = r24;
+        ((long[]) $$a[0])[0] = 0 + 4919;
+        com.identy.Fpnative.valueOf = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0102, code lost:
     
-        a(r31);
+        a(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0105, code lost:
     
-        if (r42 == null) goto L24;
+        if (0 == null) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0107, code lost:
     
@@ -14052,141 +14052,141 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x010e, code lost:
     
-        r3 = android.util.Base64.encodeToString(r42, r30.isQualityFailed);
+        0 = android.util.Base64.encodeToString(0, 0.isQualityFailed);
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x011d, code lost:
     
-        if ((!r30.resetAttempt) == true) goto L28;
+        if ((!0.resetAttempt) == true) goto L28;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x011f, code lost:
     
-        r18 = r3;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0124, code lost:
     
-        r3 = new java.util.HashMap();
-        r4 = com.identy.enums.Hand.LEFT;
-        r5 = r0.length;
-        r6 = 0;
+        0 = new java.util.HashMap();
+        0 = com.identy.enums.Hand.LEFT;
+        0 = 0.length;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x012e, code lost:
     
-        if (r6 >= r5) goto L76;
+        if (0 >= 0) goto L76;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0130, code lost:
     
-        r4 = r0[r6];
-        r25 = (com.identy.enums.Hand) r4.first;
+        0 = $$a[0];
+        0 = (com.identy.enums.Hand) 0.first;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x013c, code lost:
     
-        if (r1.containsKey(r4) == false) goto L38;
+        if (0.containsKey(0) == false) goto L38;
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x013e, code lost:
     
-        r10 = com.identy.IdentySdk.deduplication + 59;
-        com.identy.IdentySdk.generateST = r10 % 128;
+        0 = com.identy.IdentySdk.deduplication + 59;
+        com.identy.IdentySdk.generateST = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0148, code lost:
     
-        if ((r10 % 2) == 0) goto L75;
+        if ((0 % 2) == 0) goto L75;
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x014a, code lost:
     
-        r10 = (com.identy.IdentyA) r1.get(r4);
+        0 = (com.identy.IdentyA) 0.get(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x0159, code lost:
     
-        r12 = r3;
-        r13 = r8;
+        0 = 0;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x016b, code lost:
     
-        r14 = r9;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x018f, code lost:
     
-        r28 = r5;
-        r29 = r6;
-        r27 = r14;
+        0 = 0;
+        0 = 0;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x01ac, code lost:
     
-        r12.put((com.identy.enums.Finger) r4.second, PngjException(r31.getHand(), (com.identy.enums.Finger) r4.second, r38, r35, r10.PngjOutputException(), r10.e1(), r36, r37, r10.PngBadCharsetException(), r10.Action(), r10.a(), r10.PngjException, r10.Attempt(), r18, r10.PngjUnsupportedException, true, r43, r10.Action));
-        r6 = r29 + 1;
-        r1 = r34;
-        r3 = r12;
-        r4 = r25;
-        r8 = r13;
-        r9 = r27 == true ? 1 : 0;
-        r5 = r28;
-        r0 = r33;
+        0.put((com.identy.enums.Finger) 0.second, PngjException(0.getHand(), (com.identy.enums.Finger) 0.second, 0, 0, 0.PngjOutputException(), 0.e1(), 0, 0, 0.PngBadCharsetException(), 0.Action(), 0.a(), 0.PngjException, 0.Attempt(), 0, 0.PngjUnsupportedException, true, 0, 0.Action));
+        0 = 0 + 1;
+        0 = 0;
+        0 = 0;
+        0 = 0;
+        0 = 0;
+        0 = 0 == true ? 1 : 0;
+        0 = 0;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:0x01db, code lost:
     
-        r0 = ((int[]) r24[r27])[0];
-        r1 = r0 * r0;
-        r3 = -(820773087 * r0);
-        r4 = (r1 & r3) + (r1 | r3);
-        r0 = -(r0 * 727228273);
-        r1 = (r4 & r0) + (r0 | r4);
-        r3 = (r1 & (-1011284416)) + ((-1011284416) | r1);
-        r0 = r3 >> 26;
-        r1 = ((r0 ^ (-127)) + ((r0 & (-127)) << 1)) / 64;
-        r0 = ((r1 | 1) << 1) - (r1 ^ 1);
-        r0 = -(com.identy.IdentyB.e(r3 >> 22, 2047, 1024, -1) ^ (((r3 | r0) << 1) - (r0 ^ r3)));
-        r1 = (r0 & 7) + (r0 | 7);
-        r0 = r1 >> 25;
-        r0 = com.identy.IdentyB.a(r0 & (-255), r0 | (-255), 128, -1);
+        0 = ((int[]) $$a[0])[0];
+        0 = 0 * 0;
+        0 = -(820773087 * 0);
+        0 = (0 & 0) + (0 | 0);
+        0 = -(0 * 727228273);
+        0 = (0 & 0) + (0 | 0);
+        0 = (0 & (-1011284416)) + ((-1011284416) | 0);
+        0 = 0 >> 26;
+        0 = ((0 ^ (-127)) + ((0 & (-127)) << 1)) / 64;
+        0 = ((0 | 1) << 1) - (0 ^ 1);
+        0 = -(com.identy.IdentyB.e(0 >> 22, 2047, 1024, -1) ^ (((0 | 0) << 1) - (0 ^ 0)));
+        0 = (0 & 7) + (0 | 7);
+        0 = 0 >> 25;
+        0 = com.identy.IdentyB.a(0 & (-255), 0 | (-255), 128, -1);
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x023e, code lost:
     
-        return 9905 / (((-((r0 & 1) + (r0 | 1))) & r1) * 1415);
+        return 9905 / (((-((0 & 1) + (0 | 1))) & 0) * 1415);
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x01c8, code lost:
     
-        r27 = r14;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x01cb, code lost:
     
-        r27 = r14;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0023, code lost:
     
-        if (r4 != null) goto L10;
+        if (0 != null) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x01ce, code lost:
     
-        r27 = r14;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:52:0x0151, code lost:
     
-        r0 = (com.identy.IdentyA) r1.get(r4);
+        0 = (com.identy.IdentyA) 0.get(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:53:0x0157, code lost:
     
-        throw r8;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:55:0x0158, code lost:
     
-        r10 = r8;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:57:0x01d1, code lost:
     
-        r27 = r9;
-        r30.f.onAttempt(r4, r32, r3);
+        0 = 0;
+        0.f.onAttempt(0, 0, 0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:59:0x0122, code lost:
     
-        r18 = null;
+        0 = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:60:0x0115, code lost:
     
-        r27 = r9;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:61:0x0119, code lost:
     
-        r3 = null;
+        0 = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:63:0x023f, code lost:
     
@@ -14194,23 +14194,23 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:65:0x0240, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:66:0x0241, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:67:0x0245, code lost:
     
-        if (r1 != null) goto L58;
+        if (0 != null) goto L58;
      */
     /* JADX WARN: Code restructure failed: missing block: B:68:0x0247, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:69:0x0248, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x009b, code lost:
     
@@ -14218,41 +14218,41 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:70:0x002d, code lost:
     
-        r11 = ((long[]) r4[0])[0];
-        r13 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:71:0x0045, code lost:
     
-        if (r11 > r13) goto L13;
+        if (0 > 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:72:0x0048, code lost:
     
-        r10 = new java.lang.Object[]{new long[]{((long[]) r4[0])[0]}, new int[1]};
-        r4 = android.os.Process.myUid();
-        r11 = ~((-576524865) | r4);
-        r12 = ~r4;
-        r4 = defpackage.a.c((~(r4 | 1073741521)) | ((~((-996105938) | r12)) | 419581073), 497, (((~(r12 | 1073741521)) | r11) * 497) + 429069360, -1194981449);
-        r4 = r4 ^ (r4 << 13);
-        r4 = r4 ^ (r4 >>> 17);
-        ((int[]) r10[1])[0] = r4 ^ (r4 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = android.os.Process.myUid();
+        0 = ~((-576524865) | 0);
+        0 = ~0;
+        0 = defpackage.a.c((~(0 | 1073741521)) | ((~((-996105938) | 0)) | 419581073), 497, (((~(0 | 1073741521)) | 0) * 497) + 429069360, -1194981449);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:74:0x002b, code lost:
     
-        if (r4 != null) goto L10;
+        if (0 != null) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x00a2, code lost:
     
-        r6 = com.identy.IdentySdk.$$d;
-        r12 = new java.lang.Object[1];
-        d((short) 149, (byte) (-r6[11]), (byte) (-r6[111(0x6f, float:1.56E-43)]), r12);
-        r5 = java.lang.Class.forName((java.lang.String) r12[0]);
-        r12 = new java.lang.Object[1];
-        d((short) 106, r6[63], (byte) (-r6[55]), r12);
-        r10 = (java.lang.Object[]) r5.getMethod((java.lang.String) r12[0], java.lang.Integer.TYPE).invoke(null, -1194981449);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 149, (byte) (-$$a[11]), (byte) (-$$a[111(0x6f, float:1.56E-43)]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 106, $$a[63], (byte) (-$$a[55]), 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, -1194981449);
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x00f0, code lost:
     
-        r13 = ((long[]) r10[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r10v12 */
@@ -14288,47 +14288,47 @@ public class IdentySdk {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0113, code lost:
     
-        if (r0 == null) goto L34;
+        if (0 == null) goto L34;
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0115, code lost:
     
-        r1 = com.identy.IdentySdk.generateST + 123;
-        r3 = r1 % 128;
-        com.identy.IdentySdk.deduplication = r3;
+        0 = com.identy.IdentySdk.generateST + 123;
+        0 = 0 % 128;
+        com.identy.IdentySdk.deduplication = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x011e, code lost:
     
-        if ((r1 % 2) != 0) goto L33;
+        if ((0 % 2) != 0) goto L33;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0121, code lost:
     
-        if (r0.length == 0) goto L34;
+        if (0.length == 0) goto L34;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0123, code lost:
     
-        r3 = r3 + 9;
-        com.identy.IdentySdk.generateST = r3 % 128;
+        0 = 0 + 9;
+        com.identy.IdentySdk.generateST = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x012a, code lost:
     
-        if ((r3 % 2) != 0) goto L31;
+        if ((0 % 2) != 0) goto L31;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x012c, code lost:
     
-        r13.PngjInputException = r15;
-        r15 = 77 / 0;
+        0.PngjInputException = 0;
+        0 = 77 / 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0135, code lost:
     
-        return enroll(r14);
+        return enroll(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0136, code lost:
     
-        r13.PngjInputException = r15;
+        0.PngjInputException = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x013c, code lost:
     
-        return enroll(r14);
+        return enroll(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x013d, code lost:
     
@@ -14340,67 +14340,67 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0144, code lost:
     
-        r14 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0145, code lost:
     
-        r15 = r14.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x0149, code lost:
     
-        if (r15 != null) goto L39;
+        if (0 != null) goto L39;
      */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x014b, code lost:
     
-        throw r15;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x014c, code lost:
     
-        throw r14;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:31:0x001e, code lost:
     
-        r1 = r1 + 81;
-        com.identy.IdentySdk.generateST = r1 % 128;
+        0 = 0 + 81;
+        com.identy.IdentySdk.generateST = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x0025, code lost:
     
-        if ((r1 % 2) != 0) goto L14;
+        if ((0 % 2) != 0) goto L14;
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x0027, code lost:
     
-        r7 = ((long[]) r0[0])[1];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[1]).invoke(null, new java.lang.Object[1])).longValue();
+        0 = ((long[]) $$a[0])[1];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[1]).invoke(null, new java.lang.Object[1])).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x0041, code lost:
     
-        if (r7 > r9) goto L17;
+        if (0 > 0) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x005f, code lost:
     
-        r1 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r13);
-        r0 = defpackage.a.c((~(r0 | (-933833075))) | 138712576, 433, (((~(434943794 | r0)) | (-933833075)) * (-433)) + (((~((~r0) | (-296231219))) * 433) + 523991850), 374120916);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r1[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~(0 | (-933833075))) | 138712576, 433, (((~(434943794 | 0)) | (-933833075)) * (-433)) + (((~((~0) | (-296231219))) * 433) + 523991850), 374120916);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x0044, code lost:
     
-        r7 = ((long[]) r0[0])[0];
-        r9 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
+        0 = ((long[]) $$a[0])[0];
+        0 = ((java.lang.Long) ((java.lang.reflect.Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x005c, code lost:
     
-        if (r7 > r9) goto L17;
+        if (0 > 0) goto L17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x001c, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0017, code lost:
     
-        if (r0 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:5:0x00aa, code lost:
     
@@ -14408,23 +14408,23 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x00b2, code lost:
     
-        r3 = com.identy.IdentySdk.$$d;
-        r9 = new java.lang.Object[1];
-        d((short) 149, (byte) (-r3[11]), (byte) (-r3[111(0x6f, float:1.56E-43)]), r9);
-        r1 = java.lang.Class.forName((java.lang.String) r9[0]);
-        r5 = new java.lang.Object[1];
-        d((short) 106, r3[63], (byte) (-r3[55]), r5);
-        r1 = (java.lang.Object[]) r1.getMethod((java.lang.String) r5[0], java.lang.Integer.TYPE).invoke(null, 374120916);
+        0 = com.identy.IdentySdk.$$d;
+        0 = new java.lang.Object[1];
+        d((short) 149, (byte) (-$$a[11]), (byte) (-$$a[111(0x6f, float:1.56E-43)]), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        d((short) 106, $$a[63], (byte) (-$$a[55]), 0);
+        0 = (java.lang.Object[]) 0.getMethod((java.lang.String) $$a[0], java.lang.Integer.TYPE).invoke(null, 374120916);
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0100, code lost:
     
-        r9 = ((long[]) r1[0])[0];
+        0 = ((long[]) $$a[0])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0106, code lost:
     
-        ((long[]) r1[0])[0] = r9 + 5014;
-        com.identy.Fpnative.valueOf = r1;
-        r0 = r13.setScore;
+        ((long[]) $$a[0])[0] = 0 + 5014;
+        com.identy.Fpnative.valueOf = 0;
+        0 = 0.setScore;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -14673,7 +14673,7 @@ public class IdentySdk {
                         j3 = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                         if (j4 > j3) {
                             objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                            int c = defpackage.a.c((~((int) Runtime.getRuntime().maxMemory())) | (-50696193), 756, (((~((-50696193) | r2)) | 549585472) * (-756)) - 954705357, -282606622);
+                            int c = defpackage.a.c((~((int) Runtime.getRuntime().maxMemory())) | (-50696193), 756, (((~((-50696193) | 0)) | 549585472) * (-756)) - 954705357, -282606622);
                             int i4 = c ^ (c << 13);
                             int i5 = i4 ^ (i4 >>> 17);
                             ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -14709,7 +14709,7 @@ public class IdentySdk {
                             int i19 = ((i18 >> 21) - 4095) / 2048;
                             int r2 = 550 / (((-(((i19 ^ 1) + ((i19 & 1) << 1)) + 1)) & i18) * 275);
                             deduplication = (generateST + 21) % 128;
-                            return r2;
+                            return 0;
                         }
                     }
                     a(fingerDetectionMode);
@@ -14736,7 +14736,7 @@ public class IdentySdk {
                     int i192 = ((i182 >> 21) - 4095) / 2048;
                     int r22 = 550 / (((-(((i192 ^ 1) + ((i192 & 1) << 1)) + 1)) & i182) * 275);
                     deduplication = (generateST + 21) % 128;
-                    return r22;
+                    return 0;
                 } catch (Exception unused) {
                     return false;
                 }
@@ -14802,7 +14802,7 @@ public class IdentySdk {
                 if (j6 > j5) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c((~(identityHashCode | 785118837)) | (~((~identityHashCode) | (-210265142))), 210, (((~(248247349 | r7)) | (~((-747136630) | identityHashCode))) * 210) - 114781423, -154879222);
+                    int c = defpackage.a.c((~(identityHashCode | 785118837)) | (~((~identityHashCode) | (-210265142))), 210, (((~(248247349 | 0)) | (~((-747136630) | identityHashCode))) * 210) - 114781423, -154879222);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -14813,7 +14813,7 @@ public class IdentySdk {
                         try {
                             encodeToString = Base64.encodeToString(bArr, this.isQualityFailed);
                         } catch (Exception unused) {
-                            r19 = z;
+                            0 = z;
                         }
                     } else {
                         encodeToString = null;
@@ -14832,7 +14832,7 @@ public class IdentySdk {
                                 hand = ((a) entry.getValue()).PngjOutputException;
                             } catch (Exception e) {
                                 e.getMessage();
-                                hand = r5;
+                                hand = 0;
                             }
                             if (hand == null) {
                                 int i6 = deduplication + 103;
@@ -14846,8 +14846,8 @@ public class IdentySdk {
                             }
                             HashMap hashMap3 = hashMap2;
                             ArrayList arrayList2 = arrayList;
-                            r19 = z;
-                            Throwable th = r5;
+                            0 = z;
+                            Throwable th = 0;
                             a aVar2 = aVar;
                             int i8 = i2;
                             try {
@@ -14855,8 +14855,8 @@ public class IdentySdk {
                                 arrayList = arrayList2;
                                 arrayList.add(new Pair(aVar2.values(), aVar2.PngjBadSignature()));
                                 hashMap2 = hashMap3;
-                                z = r19 == true ? 1 : 0;
-                                r5 = th;
+                                z = 0 == true ? 1 : 0;
+                                0 = th;
                                 i2 = i8;
                             } catch (Exception unused2) {
                             }
@@ -14864,11 +14864,11 @@ public class IdentySdk {
                             Map.Entry entry2 = (Map.Entry) it.next();
                             aVar = (a) entry2.getValue();
                             Hand hand2 = ((a) entry2.getValue()).PngjOutputException;
-                            throw r5;
+                            throw 0;
                         }
                     }
-                    r19 = z;
-                    Throwable th2 = r5;
+                    0 = z;
+                    Throwable th2 = 0;
                     HashMap hashMap4 = hashMap2;
                     if (str != null) {
                         int i9 = generateST + 45;
@@ -14880,7 +14880,7 @@ public class IdentySdk {
                         this.i.put(arrayList, str);
                     }
                     this.f.onAttempt(fingerDetectionMode.getHand(), i, hashMap4);
-                    int i10 = ((int[]) objArr3[r19])[0];
+                    int i10 = ((int[]) objArr3[0])[0];
                     int i11 = ((i10 * i10) - (~(-(186369595 * i10)))) - 1;
                     int i12 = -(i10 * 490313407);
                     int i13 = (i11 ^ i12) + ((i12 & i11) << 1);
@@ -14920,13 +14920,13 @@ public class IdentySdk {
             it = hashMap.entrySet().iterator();
             while (it.hasNext()) {
             }
-            r19 = z;
-            Throwable th22 = r5;
+            0 = z;
+            Throwable th22 = 0;
             HashMap hashMap42 = hashMap22;
             if (str != null) {
             }
             this.f.onAttempt(fingerDetectionMode.getHand(), i, hashMap42);
-            int i102 = ((int[]) objArr32[r19])[0];
+            int i102 = ((int[]) objArr32[0])[0];
             int i112 = ((i102 * i102) - (~(-(186369595 * i102)))) - 1;
             int i122 = -(i102 * 490313407);
             int i132 = (i112 ^ i122) + ((i122 & i112) << 1);

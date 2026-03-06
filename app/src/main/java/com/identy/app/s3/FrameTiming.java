@@ -157,7 +157,7 @@ public class FrameTiming extends HashMap<String, Long> {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = a.c((~(elapsedCpuTime | 443235899)) | 38276608, 49, (((~((~elapsedCpuTime) | (-942125180))) | 443235899 | (~(942125179 | elapsedCpuTime))) * (-49)) + ((((~(443235899 | r5)) | (-980401788)) * 98) - 94171966), 1313004950);
+                    int c = a.c((~(elapsedCpuTime | 443235899)) | 38276608, 49, (((~((~elapsedCpuTime) | (-942125180))) | 443235899 | (~(942125179 | elapsedCpuTime))) * (-49)) + ((((~(443235899 | 0)) | (-980401788)) * 98) - 94171966), 1313004950);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -197,7 +197,7 @@ public class FrameTiming extends HashMap<String, Long> {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~((int) Runtime.getRuntime().totalMemory())) | 54294757)) | (-423854528), 494, (((-407077147) | r0) * 494) - 570370899, -1942652077);
+                    int c = a.c((~((~((int) Runtime.getRuntime().totalMemory())) | 54294757)) | (-423854528), 494, (((-407077147) | 0) * 494) - 570370899, -1942652077);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

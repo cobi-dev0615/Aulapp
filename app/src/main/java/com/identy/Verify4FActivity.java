@@ -34,10 +34,10 @@ import java.util.Map;
 
 /* loaded from: classes2.dex */
 public class Verify4FActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static boolean getFingerPrintQualityScore;
@@ -610,17 +610,17 @@ public class Verify4FActivity extends FingerActivity {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf, defaultSize, touchSlop, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                        values$1eba2e16 = new Object[]{new int[]{r5}, new int[1], r0, new int[]{r4}};
+                        values$1eba2e16 = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i4 = ((int[]) objArr5[3])[0];
                         int i5 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
-                        int c2 = defpackage.a.c((~(System.identityHashCode(this) | 1039032319)) | 263849, 446, (((~((~r0) | 2365097)) | 1036667222) * 446) - 820357313, -1544662296);
+                        int c2 = defpackage.a.c((~(System.identityHashCode(this) | 1039032319)) | 263849, 446, (((~((~0) | 2365097)) | 1036667222) * 446) - 820357313, -1544662296);
                         int i6 = c2 ^ (c2 << 13);
                         int i7 = i6 ^ (i6 >>> 17);
                         ((int[]) values$1eba2e16[1])[0] = i7 ^ (i7 << 5);
                         getOveralTimetaken = (getNfiq1Score + 77) % 128;
                         if (((int[]) values$1eba2e16[3])[0] != ((int[]) values$1eba2e16[0])[0]) {
-                            Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
+                            Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i8 = ((int[]) values$1eba2e16[1])[0];
                             int i9 = ((int[]) values$1eba2e16[3])[0];
                             int i10 = ((int[]) values$1eba2e16[0])[0];

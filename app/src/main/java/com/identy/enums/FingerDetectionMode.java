@@ -25,8 +25,8 @@ jadx.core.utils.exceptions.JadxRuntimeException: Init of enum field 'L4F' uses e
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* loaded from: classes2.dex */
 public final class FingerDetectionMode implements Serializable {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     public static final FingerDetectionMode L4F;
     public static final FingerDetectionMode LEFT_INDEX;
     public static final FingerDetectionMode LEFT_LITTLE;
@@ -217,7 +217,7 @@ public final class FingerDetectionMode implements Serializable {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int maxMemory = (int) Runtime.getRuntime().maxMemory();
-                    int c = a.c(~(maxMemory | 160293434), 113, (((~((~maxMemory) | 802158202)) | (~((-659182715) | maxMemory)) | 17317946) * (-113)) + ((((~(160293434 | r5)) | 659182714) * 226) - 41024400), -984920321);
+                    int c = a.c(~(maxMemory | 160293434), 113, (((~((~maxMemory) | 802158202)) | (~((-659182715) | maxMemory)) | 17317946) * (-113)) + ((((~(160293434 | 0)) | 659182714) * 226) - 41024400), -984920321);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -232,7 +232,7 @@ public final class FingerDetectionMode implements Serializable {
             n(b2, (byte) (b2 & 23), (byte) (-b), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            n(r1[21], r1[19], r1[42], objArr4);
+            n($$a[21], $$a[19], $$a[42], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -984920321);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5008;
@@ -274,7 +274,7 @@ public final class FingerDetectionMode implements Serializable {
             n(b2, (byte) (b2 & 23), (byte) (-b), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            n(r1[21], r1[19], r1[42], objArr4);
+            n($$a[21], $$a[19], $$a[42], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1936537369);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5017;
@@ -476,7 +476,7 @@ public final class FingerDetectionMode implements Serializable {
                     int i = ~(147616866 | identityHashCode);
                     int i2 = ~identityHashCode;
                     int i3 = i | (~(646506146 | i2));
-                    int c = a.c(8938530 | (~((-147616867) | i2)), 516, (((~(identityHashCode | (-637567617))) | (~(i2 | (-8938531)))) * 516) + (((i3 | r7) * (-516)) - 1246692309), 2069747002);
+                    int c = a.c(8938530 | (~((-147616867) | i2)), 516, (((~(identityHashCode | (-637567617))) | (~(i2 | (-8938531)))) * 516) + (((i3 | 0) * (-516)) - 1246692309), 2069747002);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -516,7 +516,7 @@ public final class FingerDetectionMode implements Serializable {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~((int) Runtime.getRuntime().freeMemory())) | (-699606083))) | 162668546, 983, (((~(200716802 | r0)) | (-699606083)) * (-983)) - 1008513716, 1168641282);
+                    int c = a.c((~((~((int) Runtime.getRuntime().freeMemory())) | (-699606083))) | 162668546, 983, (((~(200716802 | 0)) | (-699606083)) * (-983)) - 1008513716, 1168641282);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -617,7 +617,7 @@ public final class FingerDetectionMode implements Serializable {
             n(b2, (byte) (b2 & 23), (byte) (-b), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            n(r1[21], r1[19], r1[42], objArr4);
+            n($$a[21], $$a[19], $$a[42], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -273828672);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4927;
@@ -700,7 +700,7 @@ public final class FingerDetectionMode implements Serializable {
             n(b3, (byte) (b3 & 23), (byte) (-b2), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            n(r1[21], r1[19], r1[42], objArr4);
+            n($$a[21], $$a[19], $$a[42], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1876117010);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4986;
@@ -726,7 +726,7 @@ public final class FingerDetectionMode implements Serializable {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myUid = Process.myUid();
-                    int c = a.c((~(myUid | 469495615)) | (~((-333179658) | (~myUid))), 338, (((136315958 | r5) | (~(333179657 | myUid))) * (-338)) - 670957173, -1043034424);
+                    int c = a.c((~(myUid | 469495615)) | (~((-333179658) | (~myUid))), 338, (((136315958 | 0) | (~(333179657 | myUid))) * (-338)) - 670957173, -1043034424);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -741,7 +741,7 @@ public final class FingerDetectionMode implements Serializable {
             n(b2, (byte) (b2 & 23), (byte) (-b), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            n(r1[21], r1[19], r1[42], objArr4);
+            n($$a[21], $$a[19], $$a[42], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1043034424);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4979;
@@ -767,7 +767,7 @@ public final class FingerDetectionMode implements Serializable {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~((~identityHashCode) | 175081862)) | 673971142, 217, (((~(identityHashCode | (-673971143))) | 536900160) * 217) + ((((~((-673971143) | r5)) | (~(175081862 | identityHashCode))) * 217) - 608751614), 462898700);
+                    int c = a.c((~((~identityHashCode) | 175081862)) | 673971142, 217, (((~(identityHashCode | (-673971143))) | 536900160) * 217) + ((((~((-673971143) | 0)) | (~(175081862 | identityHashCode))) * 217) - 608751614), 462898700);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -823,7 +823,7 @@ public final class FingerDetectionMode implements Serializable {
             n(b2, (byte) (b2 & 23), (byte) (-b), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            n(r1[21], r1[19], r1[42], objArr4);
+            n($$a[21], $$a[19], $$a[42], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -223468470);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4954;

@@ -117,11 +117,10 @@ public abstract class ExternalUtil {
             try {
                 BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new ExternalUtil$Companion$getDateTimeBiometrics$1(context2, objectRef, objectRef2, enumTime, listener, null));
             } catch (Exception e2) {
-                e = e2;
-                LogSendUtil.INSTANCE.setLog(context2, q.i("datetime exception: ", e.getMessage()), "datetime", true);
+                LogSendUtil.INSTANCE.setLog(context2, q.i("datetime exception: ", e2.getMessage()), "datetime", true);
                 DialogUtil.Companion companion = DialogUtil.INSTANCE;
                 Intrinsics.checkNotNull(context2, "null cannot be cast to non-null type android.app.Activity");
-                DialogUtil.Companion.showErrorDialog$default(companion, (Activity) context2, EnumDialogType.DIALOG_TYPE_GENERAL_ERROR, null, null, e.getMessage(), false, null, 12, null);
+                DialogUtil.Companion.showErrorDialog$default(companion, (Activity) context2, EnumDialogType.DIALOG_TYPE_GENERAL_ERROR, null, null, e2.getMessage(), false, null, 12, null);
             }
         }
 
@@ -168,7 +167,7 @@ public abstract class ExternalUtil {
                 throw new NoWhenBranchMatchedException();
             }
             Object trustedTimeClient = GeneralApp.INSTANCE.getTrustedTimeClient();
-            Long computeCurrentUnixEpochMillis = trustedTimeClient != null ? ((com.google.android.gms.time.TrustedTimeClient) trustedTimeClient).computeCurrentUnixEpochMillis() : null;
+            Long computeCurrentUnixEpochMillis = null;
             if (computeCurrentUnixEpochMillis != null) {
                 String format2 = Instant.ofEpochMilli(computeCurrentUnixEpochMillis.longValue()).atZone(ZoneId.of("America/Bogota")).format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
                 Intrinsics.checkNotNull(format2);

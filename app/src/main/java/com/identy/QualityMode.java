@@ -10,8 +10,8 @@ public enum QualityMode {
     VERIFICATION,
     VERIFICATION_PLUS;
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
 
     static {
         init$0();
@@ -79,7 +79,7 @@ public enum QualityMode {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int a2 = defpackage.a.a();
-                    int c = defpackage.a.c((~(a2 | 778027000)) | (~((~a2) | (-639085881))) | 1255480, 168, ((~((-637830401) | a2)) * 168) + ((((~(140196600 | r5)) | 637830400) * 168) - 1710130969), 1348073422);
+                    int c = defpackage.a.c((~(a2 | 778027000)) | (~((~a2) | (-639085881))) | 1255480, 168, ((~((-637830401) | a2)) * 168) + ((((~(140196600 | 0)) | 637830400) * 168) - 1710130969), 1348073422);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

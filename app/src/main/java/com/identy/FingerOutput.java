@@ -126,7 +126,7 @@ public class FingerOutput {
             b(b2, (byte) (b2 | 22), b, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            b(r2[42], r2[19], r2[21], objArr4);
+            b($$a[42], $$a[19], $$a[21], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 443375789);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4885;
@@ -254,7 +254,7 @@ public class FingerOutput {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c(~((~Process.myPid()) | (-37552193)), -948, (((~((-176115908) | r0)) | (-322773373)) * (-948)) - 1093434069, 1948336709);
+                    int c = defpackage.a.c(~((~Process.myPid()) | (-37552193)), -948, (((~((-176115908) | 0)) | (-322773373)) * (-948)) - 1093434069, 1948336709);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -334,7 +334,7 @@ public class FingerOutput {
             b(b2, (byte) (b2 | 22), b, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            b(r1[42], r1[19], r1[21], objArr4);
+            b($$a[42], $$a[19], $$a[21], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -846004927);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5037;
@@ -380,7 +380,7 @@ public class FingerOutput {
             b(b2, (byte) (b2 | 22), b, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            b(r1[42], r1[19], r1[21], objArr4);
+            b($$a[42], $$a[19], $$a[21], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 125547453);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4906;
@@ -421,7 +421,7 @@ public class FingerOutput {
             b(b2, (byte) (b2 | 22), b, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            b(r1[42], r1[19], r1[21], objArr4);
+            b($$a[42], $$a[19], $$a[21], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -62231329);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5017;
@@ -504,7 +504,7 @@ public class FingerOutput {
             b(b2, (byte) (b2 | 22), b, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            b(r1[42], r1[19], r1[21], objArr4);
+            b($$a[42], $$a[19], $$a[21], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -262015512);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5020;
@@ -529,7 +529,7 @@ public class FingerOutput {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c(~(System.identityHashCode(this) | (-403194295)), -1504, (((~((-973654519) | r0)) | 570460224) * 1504) - 1003693777, 114829975);
+                    int c = defpackage.a.c(~(System.identityHashCode(this) | (-403194295)), -1504, (((~((-973654519) | 0)) | 570460224) * 1504) - 1003693777, 114829975);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -740,7 +740,7 @@ public class FingerOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c((~(identityHashCode | (-2575517))) | (~((~identityHashCode) | 496313763)), 979, ((identityHashCode | 496313763) * (-979)) + (((~((-2575517) | r5)) * 979) - 1462671356), -982905571);
+                    int c = defpackage.a.c((~(identityHashCode | (-2575517))) | (~((~identityHashCode) | 496313763)), 979, ((identityHashCode | 496313763) * (-979)) + (((~((-2575517) | 0)) * 979) - 1462671356), -982905571);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -779,7 +779,7 @@ public class FingerOutput {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[]{r0 ^ (r0 << 5)}};
+                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[]{0 ^ (0 << 5)}};
                     int c = defpackage.a.c((~((-471990320) | i)) | 16780560, 235, (((~((-477049520) | i)) | 21839760) * (-470)) + ((((~((~i) | (-477049520))) | 21839760) * (-235)) - 1683838140), -1759213173);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
@@ -878,7 +878,7 @@ public class FingerOutput {
             b(b2, (byte) (b2 | 22), b, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            b(r2[42], r2[19], r2[21], objArr4);
+            b($$a[42], $$a[19], $$a[21], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2006147757);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4895;
@@ -1024,7 +1024,7 @@ public class FingerOutput {
             if (this.valueOf) {
             }
             JSONObject jSONObject22 = new JSONObject();
-            while (r1.hasNext()) {
+            while (0.hasNext()) {
             }
             jSONObject4.put("templates", jSONObject22);
             return jSONObject4;

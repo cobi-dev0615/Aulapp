@@ -43,12 +43,12 @@ import org.c.a.PngjBadCrcException;
 
 /* loaded from: classes2.dex */
 final class getL1Score extends getL3Score {
-    private static final byte[] $$g = null;
-    private static final int $$h = 0;
-    private static final byte[] $$p = null;
-    private static final int $$q = 0;
-    private static final byte[] $$s = null;
-    private static final int $$t = 0;
+    private static  byte[] $$g = null;
+    private static  int $$h = 0;
+    private static  byte[] $$p = null;
+    private static  int $$q = 0;
+    private static  byte[] $$s = null;
+    private static  int $$t = 0;
     private static int $10;
     private static int $11;
     private static int destroy;
@@ -638,9 +638,9 @@ final class getL1Score extends getL3Score {
             }
             Object[] objArr13 = (Object[]) ((Field) PngjBadSignature6).get(null);
             PngjBadSignature$1eba2e16 = new Object[4];
-            PngjBadSignature$1eba2e16[0] = new int[]{r14};
+            PngjBadSignature$1eba2e16[0] = new int[]{0};
             PngjBadSignature$1eba2e16[1] = new int[1];
-            PngjBadSignature$1eba2e16[i2] = new int[]{r13};
+            PngjBadSignature$1eba2e16[i2] = new int[]{0};
             int i7 = ((int[]) objArr13[i2])[0];
             int i8 = ((int[]) objArr13[0])[0];
             PngjBadSignature$1eba2e16[i] = (String[]) objArr13[i];
@@ -655,9 +655,9 @@ final class getL1Score extends getL3Score {
         int i13 = ((int[]) PngjBadSignature$1eba2e16[i2])[0];
         if (i13 == i12) {
             Object[] objArr14 = new Object[4];
-            objArr14[0] = new int[]{r13};
+            objArr14[0] = new int[]{0};
             objArr14[1] = new int[1];
-            objArr14[i2] = new int[]{r12};
+            objArr14[i2] = new int[]{0};
             int i14 = ((int[]) PngjBadSignature$1eba2e16[1])[0];
             int i15 = ((int[]) PngjBadSignature$1eba2e16[i2])[0];
             int i16 = ((int[]) PngjBadSignature$1eba2e16[0])[0];
@@ -682,14 +682,14 @@ final class getL1Score extends getL3Score {
             iArr[i20] = 1;
             Toast.makeText((Context) null, iArr[((i13 * i20) % 2) - 1], 1).show();
             Object[] objArr15 = new Object[4];
-            objArr15[0] = new int[]{r13};
+            objArr15[0] = new int[]{0};
             objArr15[1] = new int[1];
-            objArr15[i2] = new int[]{r12};
+            objArr15[i2] = new int[]{0};
             int i21 = ((int[]) PngjBadSignature$1eba2e16[1])[0];
             int i22 = ((int[]) PngjBadSignature$1eba2e16[i2])[0];
             int i23 = ((int[]) PngjBadSignature$1eba2e16[0])[0];
             objArr15[i] = (String[]) PngjBadSignature$1eba2e16[i];
-            int c4 = defpackage.a.c(~(System.identityHashCode(this) | (-234895979)), 566, (((~((-245939947) | r8)) | 11043968) * (-566)) - 1304482731, i21);
+            int c4 = defpackage.a.c(~(System.identityHashCode(this) | (-234895979)), 566, (((~((-245939947) | 0)) | 11043968) * (-566)) - 1304482731, i21);
             int i24 = c4 ^ (c4 << 13);
             int i25 = i24 ^ (i24 >>> 17);
             ((int[]) objArr15[1])[0] = i25 ^ (i25 << 5);
@@ -726,8 +726,8 @@ final class getL1Score extends getL3Score {
                     Object[] objArr18 = (Object[]) ((Field) PngjBadSignature8).get(null);
                     objArr = new Object[i2];
                     objArr[0] = new int[1];
-                    objArr[1] = new int[]{r11};
-                    objArr[i] = new int[]{r4};
+                    objArr[1] = new int[]{0};
+                    objArr[i] = new int[]{0};
                     int i28 = ((int[]) objArr18[1])[0];
                     int i29 = ((int[]) objArr18[i])[0];
                     int identityHashCode2 = System.identityHashCode(this);
@@ -782,11 +782,11 @@ final class getL1Score extends getL3Score {
                                     int deadChar = KeyEvent.getDeadChar(0, 0) + 1043;
                                     byte b15 = (byte) ($$g[20] - 1);
                                     Object[] objArr21 = new Object[1];
-                                    i(b15, b15, r4[c], objArr21);
+                                    i(b15, b15, $$a[c], objArr21);
                                     PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(myPid, mirror, deadChar, 1150904546, false, (String) objArr21[0], null);
                                 }
                                 Object[] objArr22 = (Object[]) ((Field) PngjBadSignature10).get(null);
-                                objArr3 = new Object[]{r0, r9, new int[]{r8}, new int[]{r7}, new int[1]};
+                                objArr3 = new Object[]{0, 0, new int[]{0}, new int[]{0}, new int[1]};
                                 int i41 = ((int[]) objArr22[3])[0];
                                 int i42 = ((int[]) objArr22[2])[0];
                                 String str4 = (String) objArr22[1];
@@ -803,13 +803,13 @@ final class getL1Score extends getL3Score {
                                 i5 = ((int[]) objArr3[2])[0];
                                 i6 = ((int[]) objArr3[3])[0];
                                 if (i6 != i5) {
-                                    Object[] objArr23 = {r2, r9, new int[]{r8}, new int[]{r7}, new int[1]};
+                                    Object[] objArr23 = {0, 0, new int[]{0}, new int[]{0}, new int[1]};
                                     int i49 = ((int[]) objArr3[4])[0];
                                     int i50 = ((int[]) objArr3[3])[0];
                                     int i51 = ((int[]) objArr3[2])[0];
                                     String str6 = (String) objArr3[1];
                                     String str7 = (String) objArr3[0];
-                                    int d = defpackage.a.d((~System.identityHashCode(this)) | 456585199, -828, (((~(456585199 | r2)) | 167772170) * (-828)) - 2098783915, -95423552, i49);
+                                    int d = defpackage.a.d((~System.identityHashCode(this)) | 456585199, -828, (((~(456585199 | 0)) | 167772170) * (-828)) - 2098783915, -95423552, i49);
                                     int i52 = d ^ (d << 13);
                                     int i53 = i52 ^ (i52 >>> 17);
                                     ((int[]) objArr23[4])[0] = i53 ^ (i53 << 5);
@@ -822,14 +822,14 @@ final class getL1Score extends getL3Score {
                                 int i54 = i6 - 1;
                                 iArr2[i54] = 1;
                                 Toast.makeText((Context) null, iArr2[((i6 * i54) % 2) - 1], 1).show();
-                                Object[] objArr24 = {r2, r9, new int[]{r8}, new int[]{r7}, new int[1]};
+                                Object[] objArr24 = {0, 0, new int[]{0}, new int[]{0}, new int[1]};
                                 int i55 = ((int[]) objArr3[4])[0];
                                 int i56 = ((int[]) objArr3[3])[0];
                                 int i57 = ((int[]) objArr3[2])[0];
                                 String str8 = (String) objArr3[1];
                                 String str9 = (String) objArr3[0];
                                 int identityHashCode4 = System.identityHashCode(this);
-                                int c10 = defpackage.a.c((~(identityHashCode4 | 152626557)) | (~((~identityHashCode4) | (-152626558))) | (~((-471730813) | identityHashCode4)), 959, ((((~((-471730813) | r3)) | (~((-152626558) | identityHashCode4))) | (~(r3 | 152626557))) * 959) - 749919436, i55);
+                                int c10 = defpackage.a.c((~(identityHashCode4 | 152626557)) | (~((~identityHashCode4) | (-152626558))) | (~((-471730813) | identityHashCode4)), 959, ((((~((-471730813) | 0)) | (~((-152626558) | identityHashCode4))) | (~(0 | 152626557))) * 959) - 749919436, i55);
                                 int i58 = c10 ^ (c10 << 13);
                                 int i59 = i58 ^ (i58 >>> 17);
                                 ((int[]) objArr24[4])[0] = i59 ^ (i59 << 5);
@@ -859,7 +859,7 @@ final class getL1Score extends getL3Score {
                                 int minimumFlingVelocity = 1043 - (ViewConfiguration.getMinimumFlingVelocity() >> 16);
                                 byte b21 = (byte) ($$g[20] - 1);
                                 Object[] objArr29 = new Object[1];
-                                i(b21, b21, r9[c], objArr29);
+                                i(b21, b21, $$a[c], objArr29);
                                 PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(absoluteGravity, i60, minimumFlingVelocity, 1150904546, false, (String) objArr29[0], null);
                             }
                             ((Field) PngjBadSignature11).set(null, objArr28);
@@ -1018,15 +1018,15 @@ final class getL1Score extends getL3Score {
         this.getData = Integer.valueOf(this.Action.getWindowManager().getDefaultDisplay().getRotation() + i3);
         double d3 = this.getPadSub2 / d2;
         double d4 = this.getPadSub3;
-        this.CaptureRolledFingersActivity = new RectF((int) d3, (int) (d4 / d), (int) (r10 - d3), (int) (d4 - (d4 / 2.5d)));
+        this.CaptureRolledFingersActivity = new RectF((int) d3, (int) (d4 / d), (int) (0 - d3), (int) (d4 - (d4 / 2.5d)));
         if (this.CaptureThumbActivity) {
-            this.getScore = (int) (r9.width() * 0.57d);
+            this.getScore = (int) (0.width() * 0.57d);
             this.isQualityFailed = (int) (this.CaptureRolledFingersActivity.width() * 1.15d);
         } else {
             int i6 = this.getPadSub3;
             this.getScore = (i6 - (i6 / 5)) / 6;
             if (z) {
-                this.isQualityFailed = (int) (r9.height() * 0.93d);
+                this.isQualityFailed = (int) (0.height() * 0.93d);
             } else {
                 this.isQualityFailed = (int) (((i6 - (i6 / 5)) / 3) * 1.03d);
             }

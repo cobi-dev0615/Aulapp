@@ -36,10 +36,10 @@ import kotlin.jvm.internal.ByteCompanionObject;
 
 /* loaded from: classes2.dex */
 public class Capture4FActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int PngjBadCrcException;
@@ -49,10 +49,10 @@ public class Capture4FActivity extends FingerActivity {
     private static int[] values;
 
     public class PngjBadSignature implements Runnable {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static char PngjBadCrcException;
@@ -285,7 +285,7 @@ public class Capture4FActivity extends FingerActivity {
                         if (PngjBadSignature == null) {
                             bArr = bArr3;
                             byte b = (byte) i2;
-                            PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Gravity.getAbsoluteGravity(i2, i2), (ViewConfiguration.getDoubleTapTimeout() >> 16) + 35, 1313 - Color.blue(i2), 208396893, false, $$e($$c[r25], b, b), new Class[]{cls});
+                            PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Gravity.getAbsoluteGravity(i2, i2), (ViewConfiguration.getDoubleTapTimeout() >> 16) + 35, 1313 - Color.blue(i2), 208396893, false, $$e($$c[0], b, b), new Class[]{cls});
                         } else {
                             bArr = bArr3;
                         }
@@ -843,11 +843,11 @@ public class Capture4FActivity extends FingerActivity {
                 this.getPadSub1 = pngjUnsupportedException;
                 try {
                     Object[] objArr = new Object[1];
-                    b((byte) (-getScore[338]), (short) 342, r5[390], objArr);
+                    b((byte) (-getScore[338]), (short) 342, $$a[390], objArr);
                     Class<?> cls = Class.forName((String) objArr[0]);
                     byte b = (byte) 71;
                     Object[] objArr2 = new Object[1];
-                    b(b, (short) (b | 288), r5[5], objArr2);
+                    b(b, (short) (b | 288), $$a[5], objArr2);
                     cls.getMethod((String) objArr2[0], null).invoke(pngjUnsupportedException, null);
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
@@ -863,7 +863,7 @@ public class Capture4FActivity extends FingerActivity {
                     Class<?> cls2 = Class.forName((String) objArr3[0]);
                     byte b2 = (byte) 68;
                     Object[] objArr4 = new Object[1];
-                    b(b2, (short) (b2 | 312), r7[169], objArr4);
+                    b(b2, (short) (b2 | 312), $$a[169], objArr4);
                     cls2.getMethod((String) objArr4[0], null).invoke(e, null);
                 } catch (Throwable th2) {
                     Throwable cause2 = th2.getCause();
@@ -928,7 +928,7 @@ public class Capture4FActivity extends FingerActivity {
                             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(absoluteGravity, maxKeyCode, maximumFlingVelocity, -779023007, false, (String) objArr5[0], null);
                         }
                         Object[] objArr6 = (Object[]) ((Field) PngjBadSignature3).get(null);
-                        objArr = new Object[]{new int[]{r6}, new int[1], r0, new int[]{r5}};
+                        objArr = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i4 = ((int[]) objArr6[3])[0];
                         int i5 = ((int[]) objArr6[0])[0];
                         String[] strArr = (String[]) objArr6[2];
@@ -941,12 +941,12 @@ public class Capture4FActivity extends FingerActivity {
                         i = ((int[]) objArr[0])[0];
                         i2 = ((int[]) objArr[3])[0];
                         if (i2 != i) {
-                            Object[] objArr7 = {new int[]{r7}, new int[1], r1, new int[]{r6}};
+                            Object[] objArr7 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i9 = ((int[]) objArr[1])[0];
                             int i10 = ((int[]) objArr[3])[0];
                             int i11 = ((int[]) objArr[0])[0];
                             String[] strArr2 = (String[]) objArr[2];
-                            int c3 = defpackage.a.c((~((~System.identityHashCode(this)) | 859091093)) | 36995200, 374, ((822095893 | r1) * (-374)) - 1690518269, i9);
+                            int c3 = defpackage.a.c((~((~System.identityHashCode(this)) | 859091093)) | 36995200, 374, ((822095893 | 0) * (-374)) - 1690518269, i9);
                             int i12 = c3 ^ (c3 << 13);
                             int i13 = i12 ^ (i12 >>> 17);
                             ((int[]) objArr7[1])[0] = i13 ^ (i13 << 5);
@@ -967,7 +967,7 @@ public class Capture4FActivity extends FingerActivity {
                         int i15 = i2 - 1;
                         iArr[i15] = 1;
                         Toast.makeText((Context) null, iArr[((i2 * i15) % 2) - 1], 1).show();
-                        Object[] objArr8 = {new int[]{r7}, new int[1], r1, new int[]{r6}};
+                        Object[] objArr8 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i16 = ((int[]) objArr[1])[0];
                         int i17 = ((int[]) objArr[3])[0];
                         int i18 = ((int[]) objArr[0])[0];
@@ -1223,7 +1223,7 @@ public class Capture4FActivity extends FingerActivity {
 
     /* JADX WARN: Code restructure failed: missing block: B:126:0x02f6, code lost:
     
-        if (r3 < 12) goto L88;
+        if (0 < 12) goto L88;
      */
     /* JADX WARN: Multi-variable type inference failed */
     @Override // com.identy.FingerActivity

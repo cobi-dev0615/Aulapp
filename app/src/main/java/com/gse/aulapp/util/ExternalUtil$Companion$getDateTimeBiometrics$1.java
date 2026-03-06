@@ -226,14 +226,14 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
                             DatetimeResponse.Result result3 = apiResult.getData().getResult();
                             Object t2 = result3 != null ? result3.getDate() : null;
                             Intrinsics.checkNotNull(t2);
-                            objectRef3.element = t2;
+                            objectRef3.element = (String) t2;
                             Ref.ObjectRef<String> objectRef4 = objectRef2;
                             DatetimeResponse.Result result4 = apiResult.getData().getResult();
                             if (result4 != null) {
                                 t = result4.getTime();
                             }
                             Intrinsics.checkNotNull(t);
-                            objectRef4.element = t;
+                            objectRef4.element = (String) t;
                             ExternalUtil.Companion companion = ExternalUtil.INSTANCE;
                             ExternalUtil.datetime = ((Object) objectRef.element) + " " + ((Object) objectRef2.element);
                             ExternalUtil.datetime = ExternalUtil.INSTANCE.addSecondsToDate(String.valueOf(ExternalUtil.datetime));

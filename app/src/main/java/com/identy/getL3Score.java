@@ -61,12 +61,12 @@ import org.identy.opencv.imgproc.Imgproc;
 
 /* loaded from: classes2.dex */
 abstract class getL3Score extends e1 {
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final byte[] $$l = null;
-    private static final byte[] $$m = null;
-    private static final int $$n = 0;
-    private static final int $$o = 0;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  byte[] $$l = null;
+    private static  byte[] $$m = null;
+    private static  int $$n = 0;
+    private static  int $$o = 0;
     private static int $10;
     private static int $11;
     private static int generate;
@@ -106,10 +106,10 @@ abstract class getL3Score extends e1 {
         private /* synthetic */ Mat PngjException;
 
         public class PngjException implements com.identy.c.PngjBadCrcException {
-            private static final byte[] $$a = null;
-            private static final int $$b = 0;
-            private static final byte[] $$c = null;
-            private static final int $$d = 0;
+            private static  byte[] $$a = null;
+            private static  int $$b = 0;
+            private static  byte[] $$c = null;
+            private static  int $$d = 0;
             private static int $10;
             private static int $11;
             private static int PngjBadCrcException;
@@ -1679,8 +1679,8 @@ abstract class getL3Score extends e1 {
         int i21 = ((int[]) objArr[i5])[0];
         if (i21 == i20) {
             Object[] objArr17 = new Object[5];
-            objArr17[i4] = new int[]{r14};
-            objArr17[i5] = new int[]{r12};
+            objArr17[i4] = new int[]{0};
+            objArr17[i5] = new int[]{0};
             objArr17[4] = new int[1];
             int i22 = ((int[]) objArr[4])[0];
             int i23 = ((int[]) objArr[i5])[0];
@@ -1691,7 +1691,7 @@ abstract class getL3Score extends e1 {
             objArr17[0] = str7;
             int identityHashCode = System.identityHashCode(this);
             int i25 = ~identityHashCode;
-            int c9 = defpackage.a.c((~(959063373 | i25)) | 334706003, 712, (((~(identityHashCode | (-47255571))) | (~(i25 | 1006318943))) * (-712)) + ((((-1006318944) | r7) * (-712)) - 1416437711), i22);
+            int c9 = defpackage.a.c((~(959063373 | i25)) | 334706003, 712, (((~(identityHashCode | (-47255571))) | (~(i25 | 1006318943))) * (-712)) + ((((-1006318944) | 0) * (-712)) - 1416437711), i22);
             int i26 = c9 ^ (c9 << 13);
             int i27 = i26 ^ (i26 >>> 17);
             i6 = 0;
@@ -1702,8 +1702,8 @@ abstract class getL3Score extends e1 {
             arrayList.add((String) objArr[0]);
             Toast.makeText((Context) null, i21 / (((i21 - 1) * i21) % 2), 0).show();
             Object[] objArr18 = new Object[5];
-            objArr18[i4] = new int[]{r15};
-            objArr18[i5] = new int[]{r14};
+            objArr18[i4] = new int[]{0};
+            objArr18[i5] = new int[]{0};
             objArr18[4] = new int[1];
             int i28 = ((int[]) objArr[4])[0];
             int i29 = ((int[]) objArr[i5])[0];
@@ -1751,14 +1751,14 @@ abstract class getL3Score extends e1 {
                             }
                             Object[] objArr21 = (Object[]) ((Field) PngjBadSignature13).get(null);
                             PngjBadCrcException$1eba2e16 = new Object[4];
-                            PngjBadCrcException$1eba2e16[0] = new int[]{r12};
+                            PngjBadCrcException$1eba2e16[0] = new int[]{0};
                             PngjBadCrcException$1eba2e16[1] = new int[1];
-                            PngjBadCrcException$1eba2e16[i5] = new int[]{r9};
+                            PngjBadCrcException$1eba2e16[i5] = new int[]{0};
                             int i34 = ((int[]) objArr21[i5])[0];
                             int i35 = ((int[]) objArr21[0])[0];
                             PngjBadCrcException$1eba2e16[i4] = (String[]) objArr21[i4];
                             int identityHashCode3 = System.identityHashCode(this);
-                            int c13 = defpackage.a.c(~((~identityHashCode3) | (-602373)), 476, ((~((-602373) | identityHashCode3)) * 952) + (((564134945 | r5) * (-476)) - 1306868927), 1331820402);
+                            int c13 = defpackage.a.c(~((~identityHashCode3) | (-602373)), 476, ((~((-602373) | identityHashCode3)) * 952) + (((564134945 | 0) * (-476)) - 1306868927), 1331820402);
                             int i36 = c13 ^ (c13 << 13);
                             int i37 = i36 ^ (i36 >>> 17);
                             ((int[]) PngjBadCrcException$1eba2e16[1])[0] = i37 ^ (i37 << 5);
@@ -1804,15 +1804,15 @@ abstract class getL3Score extends e1 {
                                 }
                                 Toast.makeText((Context) null, i8 / (((i8 - 1) * i8) % 2), 0).show();
                                 Object[] objArr23 = new Object[4];
-                                objArr23[0] = new int[]{r14};
+                                objArr23[0] = new int[]{0};
                                 objArr23[1] = new int[1];
-                                objArr23[i5] = new int[]{r12};
+                                objArr23[i5] = new int[]{0};
                                 int i47 = ((int[]) PngjBadCrcException$1eba2e16[1])[0];
                                 int i48 = ((int[]) PngjBadCrcException$1eba2e16[i5])[0];
                                 int i49 = ((int[]) PngjBadCrcException$1eba2e16[0])[0];
                                 objArr23[i4] = (String[]) PngjBadCrcException$1eba2e16[i4];
                                 int maxMemory = (int) Runtime.getRuntime().maxMemory();
-                                int c15 = defpackage.a.c((~(maxMemory | (-948448080))) | 2566 | (~((~maxMemory) | 1034563407)), 521, ((86117894 | maxMemory) * 521) + ((((~(r5 | 86117894)) | 948448079) * (-1042)) - 662973722), i47);
+                                int c15 = defpackage.a.c((~(maxMemory | (-948448080))) | 2566 | (~((~maxMemory) | 1034563407)), 521, ((86117894 | maxMemory) * 521) + ((((~(0 | 86117894)) | 948448079) * (-1042)) - 662973722), i47);
                                 int i50 = c15 ^ (c15 << 13);
                                 int i51 = i50 ^ (i50 >>> 17);
                                 ((int[]) objArr23[1])[0] = i51 ^ (i51 << 5);
@@ -1860,7 +1860,7 @@ abstract class getL3Score extends e1 {
                                     int fadingEdgeLength = (ViewConfiguration.getFadingEdgeLength() >> 16) + 549;
                                     byte b18 = $$d[c2];
                                     Object[] objArr29 = new Object[1];
-                                    f((byte) (b18 - 1), r6[c3], (byte) (b18 - 1), objArr29);
+                                    f((byte) (b18 - 1), $$a[c3], (byte) (b18 - 1), objArr29);
                                     PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(scrollBarFadeDuration, resolveOpacity, fadingEdgeLength, 1452666181, false, (String) objArr29[0], null);
                                 }
                                 ((Field) PngjBadSignature4).set(null, objArr2);
@@ -1888,14 +1888,14 @@ abstract class getL3Score extends e1 {
                                     int combineMeasuredStates3 = 549 - View.combineMeasuredStates(0, 0);
                                     byte b21 = $$d[c2];
                                     Object[] objArr31 = new Object[1];
-                                    f((byte) (b21 - 1), r4[c3], (byte) (b21 - 1), objArr31);
+                                    f((byte) (b21 - 1), $$a[c3], (byte) (b21 - 1), objArr31);
                                     PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(red, combineMeasuredStates2, combineMeasuredStates3, 1452666181, false, (String) objArr31[0], null);
                                 }
                                 Object[] objArr32 = (Object[]) ((Field) PngjBadSignature14).get(null);
                                 objArr2 = new Object[i5];
                                 objArr2[0] = new int[1];
-                                objArr2[1] = new int[]{r6};
-                                objArr2[i4] = new int[]{r1};
+                                objArr2[1] = new int[]{0};
+                                objArr2[i4] = new int[]{0};
                                 int i52 = ((int[]) objArr32[1])[0];
                                 int i53 = ((int[]) objArr32[i4])[0];
                                 int freeMemory = (int) Runtime.getRuntime().freeMemory();
@@ -2199,35 +2199,35 @@ abstract class getL3Score extends e1 {
 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0059, code lost:
     
-        if (r5 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x006f, code lost:
     
-        r1 = r1.getTwistRoation();
-        r4 = r10.CapturePosition.getFinger().equals(com.identy.enums.Finger.THUMB);
-        r5 = r10.Attempt;
+        0 = 0.getTwistRoation();
+        0 = 0.CapturePosition.getFinger().equals(com.identy.enums.Finger.THUMB);
+        0 = 0.Attempt;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0081, code lost:
     
-        if (r5 == null) goto L25;
+        if (0 == null) goto L25;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0083, code lost:
     
-        r5.PngjException(r1, r4);
+        0.PngjException(0, 0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0086, code lost:
     
-        r1 = Attempt();
-        r4 = r10.Attempt;
+        0 = Attempt();
+        0 = 0.Attempt;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x008c, code lost:
     
-        if (r4 == null) goto L28;
+        if (0 == null) goto L28;
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x008e, code lost:
     
         com.identy.getL3Score.rgenerate = (com.identy.getL3Score.generate + 51) % 128;
-        r4.PngjBadSignature(r1, false);
+        0.PngjBadSignature(0, false);
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0099, code lost:
     
@@ -2236,11 +2236,11 @@ abstract class getL3Score extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x006c, code lost:
     
-        r5.values(r4);
+        0.values(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x006a, code lost:
     
-        if (r5 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.

@@ -152,9 +152,9 @@ public class PostCaptureOutPut {
         byte[] bArr2 = new byte[44 - i];
         int i5 = 43 - i;
         if (bArr == null) {
-            byte b = r5;
+            byte b = 0;
             i2 = 0;
-            int i6 = r5;
+            int i6 = 0;
             i4 = (i4 + (-b)) - 13;
             i3 = i6 + 1;
             bArr2[i2] = (byte) i4;
@@ -172,7 +172,7 @@ public class PostCaptureOutPut {
             }
         } else {
             i2 = 0;
-            i3 = r5;
+            i3 = 0;
             bArr2[i2] = (byte) i4;
             if (i2 == i5) {
             }
@@ -222,7 +222,7 @@ public class PostCaptureOutPut {
             ((long[]) objArr[0])[0] = j + 4873;
             Fpnative.valueOf = objArr;
             JSONObject jSONObject2 = new JSONObject();
-            while (r13.hasNext()) {
+            while (0.hasNext()) {
             }
             return jSONObject2;
         } catch (Throwable th) {
@@ -462,7 +462,7 @@ public class PostCaptureOutPut {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~(System.identityHashCode(this) | 654311374)) | 78864398, 130, ((~((~r0) | 654311374)) * 130) - 2002415039, -466829566);
+                    int c = a.c((~(System.identityHashCode(this) | 654311374)) | 78864398, 130, ((~((~0) | 654311374)) * 130) - 2002415039, -466829566);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -590,7 +590,7 @@ public class PostCaptureOutPut {
             ((long[]) objArr[0])[0] = j + 4956;
             Fpnative.valueOf = objArr;
             HashMap<Pair<Hand, Finger>, Float> hashMap2 = new HashMap<>();
-            while (r1.hasNext()) {
+            while (0.hasNext()) {
             }
             return hashMap2;
         } catch (Throwable th) {
@@ -621,7 +621,7 @@ public class PostCaptureOutPut {
                     int i = ~((-131168438) | identityHashCode);
                     int i2 = ~identityHashCode;
                     int i3 = i | (~(367720842 | i2));
-                    int c = a.c(271221002 | (~(131168437 | i2)), 516, (((~(identityHashCode | (-96499841))) | (~(i2 | (-271221003)))) * 516) + (((i3 | r7) * (-516)) - 1303067413), -639380744);
+                    int c = a.c(271221002 | (~(131168437 | i2)), 516, (((~(identityHashCode | (-96499841))) | (~(i2 | (-271221003)))) * 516) + (((i3 | 0) * (-516)) - 1303067413), -639380744);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -671,7 +671,7 @@ public class PostCaptureOutPut {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~(System.identityHashCode(this) | 437414940)) | 27787811, 658, ((431516223 | r0) * (-658)) - 135787977, 541119782);
+                    int c = a.c((~(System.identityHashCode(this) | 437414940)) | 27787811, 658, ((431516223 | 0) * (-658)) - 135787977, 541119782);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -953,7 +953,7 @@ public class PostCaptureOutPut {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c(~(((int) Process.getStartElapsedRealtime()) | (-573705499)), -1504, (((~((-1072865179) | r0)) | 499159680) * 1504) - 1003693777, -727272897);
+                    int c = a.c(~(((int) Process.getStartElapsedRealtime()) | (-573705499)), -1504, (((~((-1072865179) | 0)) | 499159680) * 1504) - 1003693777, -727272897);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -1103,7 +1103,7 @@ public class PostCaptureOutPut {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
                     int i = ~((-12354625) | identityHashCode);
-                    int c = a.c((~(identityHashCode | (-272777528))) | (~((~identityHashCode) | (-213757129))) | 201402504, 497, ((i | (~(r6 | (-272777528)))) * 497) - 790665680, 355881587);
+                    int c = a.c((~(identityHashCode | (-272777528))) | (~((~identityHashCode) | (-213757129))) | 201402504, 497, ((i | (~(0 | (-272777528)))) * 497) - 790665680, 355881587);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -1128,7 +1128,7 @@ public class PostCaptureOutPut {
                             int i15 = ((-(((i14 & 1) + (i14 | 1)) ^ i12)) + 6) >> 19;
                             int i16 = (((i15 | (-16383)) << 1) - (i15 ^ (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE;
                             int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
-                            pngjOutputException.PngjExceptionInternal.put(pair, Integer.valueOf((int) (((99396 / ((r6 & (-(((i17 | 1) << 1) - (i17 ^ 1)))) * 502)) + 67.0f) * floatValue)));
+                            pngjOutputException.PngjExceptionInternal.put(pair, Integer.valueOf((int) (((99396 / ((0 & (-(((i17 | 1) << 1) - (i17 ^ 1)))) * 502)) + 67.0f) * floatValue)));
                         }
                     }
                     if (this.isrtQualityPassed) {
@@ -1196,35 +1196,35 @@ public class PostCaptureOutPut {
     /* JADX WARN: Can't wrap try/catch for region: R(16:(2:3|(13:5|6|7|8|10|11|13|14|16|17|(3:19|(2:22|20)|23)|24|25))|37|38|39|6|7|8|10|11|13|14|16|17|(0)|24|25) */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x01f3, code lost:
     
-        r1 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x01fb, code lost:
     
-        r1.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Code restructure failed: missing block: B:31:0x01c4, code lost:
     
-        r1 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x01c5, code lost:
     
-        r1.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x0188, code lost:
     
-        r1 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x0189, code lost:
     
-        r1.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x0178, code lost:
     
-        r1 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x0179, code lost:
     
-        r1.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Removed duplicated region for block: B:19:0x01d1 A[Catch: Exception -> 0x01f3, TryCatch #3 {Exception -> 0x01f3, blocks: (B:17:0x01c8, B:19:0x01d1, B:20:0x01d9, B:22:0x01df, B:24:0x01f5), top: B:16:0x01c8 }] */
     /*
@@ -1242,7 +1242,7 @@ public class PostCaptureOutPut {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c(identityHashCode | (-1054849989), 54, (((~((~identityHashCode) | 1012669188)) | (~((-1012669189) | identityHashCode)) | (-1054849989)) * 54) + ((((~((-513779909) | r5)) | 471599108) * (-108)) - 997894093), -2022839525);
+                    int c = a.c(identityHashCode | (-1054849989), 54, (((~((~identityHashCode) | 1012669188)) | (~((-1012669189) | identityHashCode)) | (-1054849989)) * 54) + ((((~((-513779909) | 0)) | 471599108) * (-108)) - 997894093), -2022839525);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

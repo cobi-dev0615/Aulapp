@@ -39,7 +39,7 @@ public class FrameS3Meta {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedRealtime = (int) SystemClock.elapsedRealtime();
-                    int c = a.c((~(elapsedRealtime | (-429419532))) | (~((~elapsedRealtime) | (-69403061))), 210, (((~((-429452876) | r5)) | (~((-69436405) | elapsedRealtime))) * 210) - 1181641967, -2068133335);
+                    int c = a.c((~(elapsedRealtime | (-429419532))) | (~((~elapsedRealtime) | (-69403061))), 210, (((~((-429452876) | 0)) | (~((-69436405) | elapsedRealtime))) * 210) - 1181641967, -2068133335);
                     int i5 = c ^ (c << 13);
                     int i6 = i5 ^ (i5 >>> 17);
                     ((int[]) objArr[1])[0] = i6 ^ (i6 << 5);
@@ -245,10 +245,10 @@ public class FrameS3Meta {
                 return jSONObject;
             }
             Object[] objArr3 = new Object[1];
-            m((byte) ($$a[32] - 1), r1[63], r1[75], objArr3);
+            m((byte) ($$a[32] - 1), $$a[63], $$a[75], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            m(r1[63], r1[4], (byte) 78, objArr4);
+            m($$a[63], $$a[4], (byte) 78, objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -496217158);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4917;

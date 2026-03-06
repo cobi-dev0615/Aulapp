@@ -43,12 +43,12 @@ import kotlin.time.DurationKt;
 
 /* loaded from: classes2.dex */
 final class getL2Score extends getL3Score {
-    private static final byte[] $$g = null;
-    private static final int $$h = 0;
-    private static final byte[] $$p = null;
-    private static final int $$q = 0;
-    private static final byte[] $$s = null;
-    private static final int $$t = 0;
+    private static  byte[] $$g = null;
+    private static  int $$h = 0;
+    private static  byte[] $$p = null;
+    private static  int $$q = 0;
+    private static  byte[] $$s = null;
+    private static  int $$t = 0;
     private static int $10;
     private static int $11;
     private static byte[] destroy;
@@ -431,7 +431,7 @@ final class getL2Score extends getL3Score {
             c = 16;
             c2 = 21;
             Object[] objArr5 = new Object[1];
-            i((byte) (b - 1), r16[21], (byte) (b - 1), objArr5);
+            i((byte) (b - 1), $$a[21], (byte) (b - 1), objArr5);
             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(gidForName, i2, modifierMetaStateMask, -1608103378, false, (String) objArr5[0], null);
         } else {
             j = 0;
@@ -456,7 +456,7 @@ final class getL2Score extends getL3Score {
                     int i3 = 550 - (SystemClock.uptimeMillis() > j ? 1 : (SystemClock.uptimeMillis() == j ? 0 : -1));
                     f = 0.0f;
                     Object[] objArr9 = new Object[1];
-                    i((byte) ($$g[18] - 1), r13[6], r13[c2], objArr9);
+                    i((byte) ($$g[18] - 1), $$a[6], $$a[c2], objArr9);
                     String str3 = (String) objArr9[0];
                     Class cls2 = Integer.TYPE;
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(capsMode, indexOf, i3, -1453402328, false, str3, new Class[]{cls2, cls2});
@@ -485,7 +485,7 @@ final class getL2Score extends getL3Score {
                         byte b2 = $$g[18];
                         c4 = 3;
                         Object[] objArr11 = new Object[1];
-                        i((byte) (b2 - 1), r13[c2], (byte) (b2 - 1), objArr11);
+                        i((byte) (b2 - 1), $$a[c2], (byte) (b2 - 1), objArr11);
                         PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(pressedStateDuration, resolveOpacity, red, -1608103378, false, (String) objArr11[0], null);
                     } else {
                         c4 = 3;
@@ -523,8 +523,8 @@ final class getL2Score extends getL3Score {
             Object[] objArr13 = (Object[]) ((Field) PngjBadSignature6).get(null);
             objArr = new Object[3];
             objArr[0] = new int[1];
-            objArr[1] = new int[]{r14};
-            objArr[c5] = new int[]{r7};
+            objArr[1] = new int[]{0};
+            objArr[c5] = new int[]{0};
             int i4 = ((int[]) objArr13[1])[0];
             int i5 = ((int[]) objArr13[c5])[0];
             int i6 = ~((~((int) Process.getStartUptimeMillis())) | 363525272);
@@ -546,7 +546,7 @@ final class getL2Score extends getL3Score {
             int i13 = ((int[]) obj)[0];
             ((int[]) objArr14[1])[0] = i12;
             ((int[]) objArr14[2])[0] = i13;
-            int d = defpackage.a.d((~((~System.identityHashCode(this)) | (-1359500473))) | 1358971024, 933, (((~((-104742763) | r7)) | (-1359500473)) * (-933)) - 993595684, 154636857, i11);
+            int d = defpackage.a.d((~((~System.identityHashCode(this)) | (-1359500473))) | 1358971024, 933, (((~((-104742763) | 0)) | (-1359500473)) * (-933)) - 993595684, 154636857, i11);
             int i14 = d ^ (d << 13);
             int i15 = i14 ^ (i14 >>> 17);
             ((int[]) objArr14[0])[0] = i15 ^ (i15 << 5);
@@ -575,7 +575,7 @@ final class getL2Score extends getL3Score {
             int keyRepeatDelay = (ViewConfiguration.getKeyRepeatDelay() >> 16) + 721;
             byte b3 = $$g[18];
             Object[] objArr16 = new Object[1];
-            i((byte) (b3 - 1), r9[c2], (byte) (b3 - 1), objArr16);
+            i((byte) (b3 - 1), $$a[c2], (byte) (b3 - 1), objArr16);
             PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(defaultSize, edgeSlop, keyRepeatDelay, -815159504, false, (String) objArr16[0], null);
         }
         long j3 = ((Field) PngjBadSignature7).getLong(null);
@@ -598,7 +598,7 @@ final class getL2Score extends getL3Score {
                 int i23 = 29 - (ViewConfiguration.getScrollFriction() > f ? 1 : (ViewConfiguration.getScrollFriction() == f ? 0 : -1));
                 int maximumFlingVelocity = (ViewConfiguration.getMaximumFlingVelocity() >> 16) + 721;
                 Object[] objArr20 = new Object[1];
-                i((byte) ($$g[18] - 1), r12[c3], r12[c2], objArr20);
+                i((byte) ($$g[18] - 1), $$a[c3], $$a[c2], objArr20);
                 PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(blue, i23, maximumFlingVelocity, -779023007, false, (String) objArr20[0], null);
             }
             ((Field) PngjBadSignature9).set(null, PngjException$1eba2e16);
@@ -611,7 +611,7 @@ final class getL2Score extends getL3Score {
                     int argb = Color.argb(0, 0, 0, 0) + 721;
                     byte b4 = $$g[18];
                     Object[] objArr21 = new Object[1];
-                    i((byte) (b4 - 1), r13[c2], (byte) (b4 - 1), objArr21);
+                    i((byte) (b4 - 1), $$a[c2], (byte) (b4 - 1), objArr21);
                     PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c8, longPressTimeout, argb, -815159504, false, (String) objArr21[0], null);
                 }
                 ((Field) PngjBadSignature10).set(null, valueOf2);
@@ -625,18 +625,18 @@ final class getL2Score extends getL3Score {
                 int threadPriority = ((Process.getThreadPriority(0) + 20) >> 6) + 28;
                 int i24 = (ViewConfiguration.getZoomControlsTimeout() > j ? 1 : (ViewConfiguration.getZoomControlsTimeout() == j ? 0 : -1)) + 720;
                 Object[] objArr22 = new Object[1];
-                i((byte) ($$g[18] - 1), r9[c3], r9[c2], objArr22);
+                i((byte) ($$g[18] - 1), $$a[c3], $$a[c2], objArr22);
                 PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c9, threadPriority, i24, -779023007, false, (String) objArr22[0], null);
             }
             Object[] objArr23 = (Object[]) ((Field) PngjBadSignature11).get(null);
             PngjException$1eba2e16 = new Object[4];
-            PngjException$1eba2e16[0] = new int[]{r14};
+            PngjException$1eba2e16[0] = new int[]{0};
             PngjException$1eba2e16[1] = new int[1];
-            PngjException$1eba2e16[c4] = new int[]{r13};
+            PngjException$1eba2e16[c4] = new int[]{0};
             int i25 = ((int[]) objArr23[c4])[0];
             int i26 = ((int[]) objArr23[0])[0];
             PngjException$1eba2e16[2] = (String[]) objArr23[2];
-            int c10 = defpackage.a.c(~((~Process.myUid()) | (-290489349)), 501, (((~((-290489349) | r7)) | 536944929) * 501) - 1193146388, -1511602340);
+            int c10 = defpackage.a.c(~((~Process.myUid()) | (-290489349)), 501, (((~((-290489349) | 0)) | 536944929) * 501) - 1193146388, -1511602340);
             int i27 = c10 ^ (c10 << 13);
             int i28 = i27 ^ (i27 >>> 17);
             ((int[]) PngjException$1eba2e16[1])[0] = i28 ^ (i28 << 5);
@@ -654,9 +654,9 @@ final class getL2Score extends getL3Score {
             throw null;
         }
         Object[] objArr24 = new Object[4];
-        objArr24[0] = new int[]{r14};
+        objArr24[0] = new int[]{0};
         objArr24[1] = new int[1];
-        objArr24[c4] = new int[]{r13};
+        objArr24[c4] = new int[]{0};
         int i29 = ((int[]) PngjException$1eba2e16[1])[0];
         int i30 = ((int[]) PngjException$1eba2e16[c4])[0];
         int i31 = ((int[]) PngjException$1eba2e16[0])[0];
@@ -674,7 +674,7 @@ final class getL2Score extends getL3Score {
             int scrollBarSize2 = 1043 - (ViewConfiguration.getScrollBarSize() >> 8);
             byte b5 = $$g[18];
             Object[] objArr25 = new Object[1];
-            i((byte) (b5 - 1), r9[c2], (byte) (b5 - 1), objArr25);
+            i((byte) (b5 - 1), $$a[c2], (byte) (b5 - 1), objArr25);
             PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(offsetBefore, indexOf2, scrollBarSize2, 159283629, false, (String) objArr25[0], null);
         }
         long j4 = ((Field) PngjBadSignature12).getLong(null);
@@ -734,7 +734,7 @@ final class getL2Score extends getL3Score {
                             int i36 = (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1)) + 1043;
                             byte b11 = $$g[18];
                             Object[] objArr33 = new Object[1];
-                            i((byte) (b11 - 1), r7[c2], (byte) (b11 - 1), objArr33);
+                            i((byte) (b11 - 1), $$a[c2], (byte) (b11 - 1), objArr33);
                             PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c12, argb2, i36, 159283629, false, (String) objArr33[0], null);
                         }
                         ((Field) PngjBadSignature14).set(null, valueOf3);
@@ -764,8 +764,8 @@ final class getL2Score extends getL3Score {
             }
             Object[] objArr35 = (Object[]) ((Field) PngjBadSignature15).get(null);
             objArr2 = new Object[i];
-            objArr2[2] = new int[]{r8};
-            objArr2[c4] = new int[]{r7};
+            objArr2[2] = new int[]{0};
+            objArr2[c4] = new int[]{0};
             objArr2[4] = new int[1];
             int i37 = ((int[]) objArr35[c4])[0];
             int i38 = ((int[]) objArr35[2])[0];
@@ -773,7 +773,7 @@ final class getL2Score extends getL3Score {
             String str7 = (String) objArr35[0];
             objArr2[1] = str6;
             objArr2[0] = str7;
-            int c13 = defpackage.a.c(~(System.identityHashCode(this) | (-537314357)), -1504, (((~((-541512759) | r0)) | 4198402) * 1504) - 740948855, -1884920509);
+            int c13 = defpackage.a.c(~(System.identityHashCode(this) | (-537314357)), -1504, (((~((-541512759) | 0)) | 4198402) * 1504) - 740948855, -1884920509);
             int i39 = c13 ^ (c13 << 13);
             int i40 = i39 ^ (i39 >>> 17);
             ((int[]) objArr2[4])[0] = i40 ^ (i40 << 5);
@@ -783,8 +783,8 @@ final class getL2Score extends getL3Score {
         if (i42 == i41) {
             rgenerate = (ppk + 125) % 128;
             Object[] objArr36 = new Object[5];
-            objArr36[2] = new int[]{r8};
-            objArr36[c4] = new int[]{r7};
+            objArr36[2] = new int[]{0};
+            objArr36[c4] = new int[]{0};
             objArr36[4] = new int[1];
             int i43 = ((int[]) objArr2[4])[0];
             int i44 = ((int[]) objArr2[c4])[0];
@@ -793,7 +793,7 @@ final class getL2Score extends getL3Score {
             String str9 = (String) objArr2[0];
             objArr36[1] = str8;
             objArr36[0] = str9;
-            int d3 = defpackage.a.d((~((int) Runtime.getRuntime().freeMemory())) | 536276973, -828, (((~(536276973 | r1)) | 88080396) * (-828)) - 2098783915, -1655702984, i43);
+            int d3 = defpackage.a.d((~((int) Runtime.getRuntime().freeMemory())) | 536276973, -828, (((~(536276973 | 0)) | 88080396) * (-828)) - 2098783915, -1655702984, i43);
             int i46 = d3 ^ (d3 << 13);
             int i47 = i46 ^ (i46 >>> 17);
             ((int[]) objArr36[4])[0] = i47 ^ (i47 << 5);
@@ -804,8 +804,8 @@ final class getL2Score extends getL3Score {
         arrayList2.add((String) objArr2[0]);
         Toast.makeText((Context) null, i42 / (((i42 - 1) * i42) % 2), 0).show();
         Object[] objArr37 = new Object[5];
-        objArr37[2] = new int[]{r8};
-        objArr37[c4] = new int[]{r7};
+        objArr37[2] = new int[]{0};
+        objArr37[c4] = new int[]{0};
         objArr37[4] = new int[1];
         int i48 = ((int[]) objArr2[4])[0];
         int i49 = ((int[]) objArr2[c4])[0];
@@ -814,7 +814,7 @@ final class getL2Score extends getL3Score {
         String str11 = (String) objArr2[0];
         objArr37[1] = str10;
         objArr37[0] = str11;
-        int d4 = defpackage.a.d((~(((int) SystemClock.uptimeMillis()) | (-121023444))) | 51519506, 220, (((-745380814) | r1) * (-220)) - 190830389, 1590776494, i48);
+        int d4 = defpackage.a.d((~(((int) SystemClock.uptimeMillis()) | (-121023444))) | 51519506, 220, (((-745380814) | 0) * (-220)) - 190830389, 1590776494, i48);
         int i51 = d4 ^ (d4 << 13);
         int i52 = i51 ^ (i51 >>> 17);
         ((int[]) objArr37[4])[0] = i52 ^ (i52 << 5);
@@ -844,7 +844,7 @@ final class getL2Score extends getL3Score {
             this.getData = Integer.valueOf(this.Action.getWindowManager().getDefaultDisplay().getRotation() + i3);
             double d3 = this.getPadSub2 / d2;
             double d4 = this.getPadSub3;
-            this.CaptureRolledFingersActivity = new RectF((int) d3, (int) (d4 / d), (int) (r11 - d3), (int) (d4 - (d4 / 2.5d)));
+            this.CaptureRolledFingersActivity = new RectF((int) d3, (int) (d4 / d), (int) (0 - d3), (int) (d4 - (d4 / 2.5d)));
             this.getScore = 0;
             this.isQualityFailed = DurationKt.NANOS_IN_MILLIS;
             PngjBadSignature(new IdentyC(this, 0));
@@ -1079,12 +1079,12 @@ final class getL2Score extends getL3Score {
                                 $11 = i28;
                                 byte[] bArr8 = destroy;
                                 pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                                pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr8[r4] ^ j2)) + s)) ^ b));
+                                pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr8[0] ^ j2)) + s)) ^ b));
                                 $10 = (i28 + 13) % 128;
                             } else {
                                 short[] sArr = getServerRequest;
                                 pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                                pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[r3] ^ j2)) + s)) ^ b));
+                                pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[0] ^ j2)) + s)) ^ b));
                             }
                             sb.append(pngjPrematureEnding.valueOf);
                             pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;

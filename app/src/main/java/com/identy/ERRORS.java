@@ -21,8 +21,8 @@ public enum ERRORS {
     UNKNOWN("unknown error"),
     EXCEEDED_TRANSACTION_LIMIT("Transaction Limit exceeded");
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     String a;
 
     static {
@@ -85,7 +85,7 @@ public enum ERRORS {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) Process.getStartUptimeMillis())) | 376067172)) | (-575443649), 262, (((~(376067172 | r0)) | (-575443649)) * 262) - 1915009461, 1935578374);
+                    int c = defpackage.a.c((~((~((int) Process.getStartUptimeMillis())) | 376067172)) | (-575443649), 262, (((~(376067172 | 0)) | (-575443649)) * 262) - 1915009461, 1935578374);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

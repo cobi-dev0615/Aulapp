@@ -104,16 +104,16 @@ import kotlinx.coroutines.flow.StateFlowKt;
 @SourceDebugExtension({"SMAP\nClassInCourseViewModel.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClassInCourseViewModel.kt\ncom/gse/aulapp/viewmodel/ClassInCourseViewModel\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1528:1\n360#2,7:1529\n1567#2:1536\n1598#2,4:1537\n1755#2,3:1541\n1734#2,3:1544\n1755#2,3:1547\n*S KotlinDebug\n*F\n+ 1 ClassInCourseViewModel.kt\ncom/gse/aulapp/viewmodel/ClassInCourseViewModel\n*L\n226#1:1529,7\n302#1:1536\n302#1:1537,4\n339#1:1541,3\n419#1:1544,3\n537#1:1547,3\n*E\n"})
 /* loaded from: classes2.dex */
 public final class ClassInCourseViewModel extends ViewModel {
-    private final String TAG;
-    private final MutableLiveData<com.gse.aulapp.model.dto.Status> _checkRadioButton;
-    private final SingleLiveEvent<ConfigurationSessionDto> _configSession;
-    private final MutableLiveData<QuestionDto> _currentQuestionDto;
-    private MutableLiveData<Boolean> _isLastQuestion;
-    private final MutableLiveData<com.gse.aulapp.model.data.statusControl.Status> _message;
+    final String TAG;
+    final MutableLiveData<com.gse.aulapp.model.dto.Status> _checkRadioButton;
+    final SingleLiveEvent<ConfigurationSessionDto> _configSession;
+    final MutableLiveData<QuestionDto> _currentQuestionDto;
+    MutableLiveData<Boolean> _isLastQuestion;
+    final MutableLiveData<com.gse.aulapp.model.data.statusControl.Status> _message;
     private MutableStateFlow<Integer> _minimumClassMinutes;
-    private final MutableLiveData<List<QuestionDto>> _questions;
+    final MutableLiveData<List<QuestionDto>> _questions;
     private final LiveData<com.gse.aulapp.model.dto.Status> checkRadioButton;
-    private final ClassInCourseRepository classInCourseRepository;
+    final ClassInCourseRepository classInCourseRepository;
     private final SingleLiveEvent<ConfigurationSessionDto> configSession;
     private int currentIndex;
     private final LiveData<QuestionDto> currentQuestionDto;
@@ -123,12 +123,12 @@ public final class ClassInCourseViewModel extends ViewModel {
     private final LiveData<Boolean> isLastQuestion;
     private StateFlow<Boolean> isMinimumClassTime;
     private StateFlow<Boolean> isTimeForAlarm;
-    private com.gse.aulapp.model.dto.Status lastStatus;
+    com.gse.aulapp.model.dto.Status lastStatus;
     private final LiveData<com.gse.aulapp.model.data.statusControl.Status> message;
     private StateFlow<Integer> minimumClassMinutes;
     private final LiveData<List<QuestionDto>> questions;
     private SessionDto sessionReceived;
-    private final SessionRepository sessionRepository;
+    final SessionRepository sessionRepository;
     private boolean showIsMockDialog;
     private LiveData<String> timeElapsedInService;
     private LiveData<Float> timeElapsedInServiceSlider;
@@ -193,7 +193,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         this$0.stopServices(context);
         this$0.prepareToExit(findNavController);
         this$0.selectTypeClassOrExam(context, sessionID, findNavController);
-        BuildersKt.runBlocking((CoroutineContext) null, new ClassInCourseViewModel$dialogCloseBeforeTime$1$1(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null));
+        try { BuildersKt.runBlocking((CoroutineContext) null, new ClassInCourseViewModel$dialogCloseBeforeTime$1$1(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null)); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
         Dialog dialog = this$0.dialog;
         if (dialog != null) {
             dialog.dismiss();
@@ -692,7 +692,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public final List<QuestionDto> validateAnswers(List<QuestionDto> questionsResponses) {
-        int i;
+        int i = 0;
         com.gse.aulapp.model.dto.Status status;
         ArrayList arrayList = new ArrayList();
         for (QuestionDto questionDto : questionsResponses) {
@@ -739,9 +739,14 @@ public final class ClassInCourseViewModel extends ViewModel {
                 Object obj = arrayList.get(i2);
                 i2++;
                 QuestionDto questionDto2 = (QuestionDto) obj;
-                i = (questionDto2.getStatus() == com.gse.aulapp.model.dto.Status.NOT_ANSWERED || questionDto2.getStatus() == com.gse.aulapp.model.dto.Status.NOT_APPLICABLE) ? 0 : i + 1;
+                if (questionDto2.getStatus() == com.gse.aulapp.model.dto.Status.NOT_ANSWERED || questionDto2.getStatus() == com.gse.aulapp.model.dto.Status.NOT_APPLICABLE) {
+                    i = i2 - 1;
+                    break;
+                }
+                i = i + 1;
             } else {
                 i = -1;
+                break;
             }
         }
         this.currentIndex = i;
@@ -1385,7 +1390,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     }
 
     public final boolean timerServiceIsRunning(Context context) {
-        List<ActivityManager.RunningServiceInfo> runningServices;
+        List<ActivityManager.RunningServiceInfo> runningServices = null;
         Intrinsics.checkNotNullParameter(context, "context");
         try {
             Object systemService = context.getSystemService("activity");

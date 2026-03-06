@@ -49,12 +49,12 @@ import org.identy.opencv.core.Mat;
 
 /* loaded from: classes2.dex */
 final class getFingers extends e1 {
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final byte[] $$g = null;
-    private static final int $$h = 0;
-    private static final byte[] $$l = null;
-    private static final int $$m = 0;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  byte[] $$g = null;
+    private static  int $$h = 0;
+    private static  byte[] $$l = null;
+    private static  int $$m = 0;
     private static int $10;
     private static int $11;
     private static int[] pfk;
@@ -323,10 +323,10 @@ final class getFingers extends e1 {
     }
 
     public class valueOf implements Runnable {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static int PngjBadCrcException;
@@ -1341,7 +1341,7 @@ final class getFingers extends e1 {
             c2 = '\r';
             c = 20;
             Object[] objArr5 = new Object[1];
-            f(b, (byte) (b + 1), r17[18], objArr5);
+            f(b, (byte) (b + 1), $$a[18], objArr5);
             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf, indexOf2, windowTouchSlop, 159283629, false, (String) objArr5[0], null);
         } else {
             i = -175041514;
@@ -1404,7 +1404,7 @@ final class getFingers extends e1 {
                                 byte b7 = $$d[c];
                                 i6 = 4;
                                 Object[] objArr12 = new Object[1];
-                                f(b7, (byte) (b7 + 1), r11[18], objArr12);
+                                f(b7, (byte) (b7 + 1), $$a[18], objArr12);
                                 obj = objArr12[0];
                                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(packedPositionGroup, i7, fadingEdgeLength, 159283629, false, (String) obj, null);
                                 ((Field) PngjBadSignature2).set(null, valueOf2);
@@ -1415,8 +1415,8 @@ final class getFingers extends e1 {
                                     throw null;
                                 }
                                 Object[] objArr13 = new Object[5];
-                                objArr13[i3] = new int[]{r14};
-                                objArr13[i4] = new int[]{r12};
+                                objArr13[i3] = new int[]{0};
+                                objArr13[i4] = new int[]{0};
                                 objArr13[i6] = new int[1];
                                 int i10 = ((int[]) objArr[i6])[0];
                                 int i11 = ((int[]) objArr[i4])[0];
@@ -1440,7 +1440,7 @@ final class getFingers extends e1 {
                                         int mode = View.MeasureSpec.getMode(0) + 721;
                                         byte b8 = $$d[c];
                                         Object[] objArr14 = new Object[1];
-                                        f(b8, (byte) (b8 + 1), r0[18], objArr14);
+                                        f(b8, (byte) (b8 + 1), $$a[18], objArr14);
                                         PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(myPid, tapTimeout, mode, -815159504, false, (String) objArr14[0], null);
                                     }
                                     ((Field) PngjBadSignature5).getLong(null);
@@ -1453,7 +1453,7 @@ final class getFingers extends e1 {
                                     int scrollDefaultDelay = (ViewConfiguration.getScrollDefaultDelay() >> 16) + 721;
                                     byte b9 = $$d[c];
                                     Object[] objArr15 = new Object[1];
-                                    f(b9, (byte) (b9 + 1), r5[18], objArr15);
+                                    f(b9, (byte) (b9 + 1), $$a[18], objArr15);
                                     PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(threadPriority, resolveSize, scrollDefaultDelay, -815159504, false, (String) objArr15[0], null);
                                 }
                                 long j2 = ((Field) PngjBadSignature6).getLong(null);
@@ -1513,7 +1513,7 @@ final class getFingers extends e1 {
                                                 int indexOf3 = 720 - TextUtils.indexOf(BuildConfig.FLAVOR, c3, 0, 0);
                                                 byte b11 = $$d[c];
                                                 Object[] objArr20 = new Object[1];
-                                                f(b11, (byte) (b11 + 1), r12[18], objArr20);
+                                                f(b11, (byte) (b11 + 1), $$a[18], objArr20);
                                                 PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c7, modifierMetaStateMask, indexOf3, -815159504, false, (String) objArr20[0], null);
                                             }
                                             ((Field) PngjBadSignature9).set(null, valueOf3);
@@ -1541,9 +1541,9 @@ final class getFingers extends e1 {
                                     }
                                     Object[] objArr22 = (Object[]) ((Field) PngjBadSignature10).get(null);
                                     PngjException$1eba2e16 = new Object[i6];
-                                    PngjException$1eba2e16[0] = new int[]{r14};
+                                    PngjException$1eba2e16[0] = new int[]{0};
                                     PngjException$1eba2e16[1] = new int[1];
-                                    PngjException$1eba2e16[i4] = new int[]{r12};
+                                    PngjException$1eba2e16[i4] = new int[]{0};
                                     int i19 = ((int[]) objArr22[i4])[0];
                                     int i20 = ((int[]) objArr22[0])[0];
                                     PngjException$1eba2e16[i3] = (String[]) objArr22[i3];
@@ -1571,9 +1571,9 @@ final class getFingers extends e1 {
                                 }
                                 resetAttempt = (pfkrolGetQuality + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
                                 Object[] objArr23 = new Object[4];
-                                objArr23[0] = new int[]{r14};
+                                objArr23[0] = new int[]{0};
                                 objArr23[1] = new int[1];
-                                objArr23[i4] = new int[]{r12};
+                                objArr23[i4] = new int[]{0};
                                 int i29 = ((int[]) PngjException$1eba2e16[1])[0];
                                 int i30 = ((int[]) PngjException$1eba2e16[i4])[0];
                                 int i31 = ((int[]) PngjException$1eba2e16[0])[0];
@@ -1590,7 +1590,7 @@ final class getFingers extends e1 {
                                     int i34 = 549 - (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1));
                                     byte b13 = $$d[c];
                                     Object[] objArr24 = new Object[1];
-                                    f(b13, (byte) (b13 + 1), r4[18], objArr24);
+                                    f(b13, (byte) (b13 + 1), $$a[18], objArr24);
                                     PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(maxKeyCode, tapTimeout2, i34, -1608103378, false, (String) objArr24[0], null);
                                 }
                                 long j3 = ((Field) PngjBadSignature11).getLong(null);
@@ -1636,7 +1636,7 @@ final class getFingers extends e1 {
                                             int mirror = 597 - AndroidCharacter.getMirror('0');
                                             byte b14 = $$d[c];
                                             Object[] objArr30 = new Object[1];
-                                            f(b14, (byte) (b14 + 1), r4[18], objArr30);
+                                            f(b14, (byte) (b14 + 1), $$a[18], objArr30);
                                             PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(combineMeasuredStates, touchSlop, mirror, -1608103378, false, (String) objArr30[0], null);
                                         }
                                         ((Field) PngjBadSignature14).set(null, valueOf4);
@@ -1659,8 +1659,8 @@ final class getFingers extends e1 {
                                     Object[] objArr32 = (Object[]) ((Field) PngjBadSignature15).get(null);
                                     objArr2 = new Object[i4];
                                     objArr2[0] = new int[1];
-                                    objArr2[1] = new int[]{r8};
-                                    objArr2[i3] = new int[]{r2};
+                                    objArr2[1] = new int[]{0};
+                                    objArr2[i3] = new int[]{0};
                                     int i37 = ((int[]) objArr32[1])[0];
                                     int i38 = ((int[]) objArr32[i3])[0];
                                     int identityHashCode2 = System.identityHashCode(this);
@@ -1730,7 +1730,7 @@ final class getFingers extends e1 {
                                 fadingEdgeLength = 1043 - (ViewConfiguration.getFadingEdgeLength() >> 16);
                                 byte b17 = $$d[c];
                                 Object[] objArr36 = new Object[1];
-                                f(b17, (byte) (b17 + 1), r11[18], objArr36);
+                                f(b17, (byte) (b17 + 1), $$a[18], objArr36);
                                 obj = objArr36[0];
                                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(packedPositionGroup, i7, fadingEdgeLength, 159283629, false, (String) obj, null);
                             }
@@ -1758,7 +1758,7 @@ final class getFingers extends e1 {
                 int windowTouchSlop3 = 1043 - (ViewConfiguration.getWindowTouchSlop() >> 8);
                 i3 = 2;
                 i4 = 3;
-                byte b18 = (byte) (r16[18] - 1);
+                byte b18 = (byte) ($$a[18] - 1);
                 c3 = '0';
                 Object[] objArr37 = new Object[1];
                 f((byte) ($$e & 117), (byte) (-$$d[2]), b18, objArr37);
@@ -1770,8 +1770,8 @@ final class getFingers extends e1 {
             }
             Object[] objArr38 = (Object[]) ((Field) PngjBadSignature17).get(null);
             objArr = new Object[5];
-            objArr[i3] = new int[]{r15};
-            objArr[i4] = new int[]{r14};
+            objArr[i3] = new int[]{0};
+            objArr[i4] = new int[]{0};
             objArr[4] = new int[1];
             int i56 = ((int[]) objArr38[i4])[0];
             int i57 = ((int[]) objArr38[i3])[0];
@@ -1812,13 +1812,13 @@ final class getFingers extends e1 {
         }
         long r1 = this.CaptureThumbActivity;
         try {
-            if (r1 != 0) {
-                r1 = 4613712638259704627L;
+            if (0 != 0) {
+                0 = 4613712638259704627L;
                 d = 3.9000000953674316d;
                 this.getL2Score = new com.identy.ui.d.values(this.Action, 2.9d, 3.9000000953674316d, 2.9d, 2.740000009536743d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), -90, true, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);
                 resetAttempt = (pfkrolGetQuality + 11) % 128;
             } else {
-                r1 = 4612811918334230528L;
+                0 = 4612811918334230528L;
                 d = 3.2d;
                 this.getL2Score = new com.identy.ui.d.values(this.Action, 2.5d, 3.2d, 2.5d, 2.740000009536743d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), -90, true, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);
             }
@@ -1835,19 +1835,19 @@ final class getFingers extends e1 {
         this.getMatchingTime = true;
         this.getData = Integer.valueOf(this.Action.getWindowManager().getDefaultDisplay().getRotation() + i3);
         if (this.CaptureThumbActivity) {
-            double d2 = this.getPadSub3 / r1;
+            double d2 = this.getPadSub3 / 0;
             double d3 = this.getPadSub2;
-            this.CaptureRolledFingersActivity = new RectF((int) d2, (int) (d3 / d), (int) (r9 - d2), (int) (d3 - (d3 / 2.740000009536743d)));
-            this.getScore = (int) (r6.height() * 0.57d);
+            this.CaptureRolledFingersActivity = new RectF((int) d2, (int) (d3 / d), (int) (0 - d2), (int) (d3 - (d3 / 2.740000009536743d)));
+            this.getScore = (int) (0.height() * 0.57d);
             this.isQualityFailed = (int) (this.CaptureRolledFingersActivity.height() * 1.1d);
         } else {
             double d4 = this.getPadSub2 / d;
             double d5 = this.getPadSub3;
-            this.CaptureRolledFingersActivity = new RectF((int) d4, (int) (d5 / r1), (int) (r9 - d4), (int) (d5 - (d5 / 2.740000009536743d)));
+            this.CaptureRolledFingersActivity = new RectF((int) d4, (int) (d5 / 0), (int) (0 - d4), (int) (d5 - (d5 / 2.740000009536743d)));
             int i4 = this.getPadSub3;
             this.getScore = (i4 - (i4 / 5)) / 6;
             if (z) {
-                this.isQualityFailed = (int) (r6.height() * 0.93d);
+                this.isQualityFailed = (int) (0.height() * 0.93d);
                 resetAttempt = (pfkrolGetQuality + 83) % 128;
             } else {
                 this.isQualityFailed = (int) (((i4 - (i4 / 5)) / 3) * 1.03d);

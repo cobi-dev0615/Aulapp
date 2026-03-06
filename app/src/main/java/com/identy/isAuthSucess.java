@@ -57,12 +57,12 @@ import org.identy.opencv.core.Mat;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */
 public final class isAuthSucess extends e1 {
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final byte[] $$g = null;
-    private static final int $$h = 0;
-    private static final byte[] $$l = null;
-    private static final int $$m = 0;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  byte[] $$g = null;
+    private static  int $$h = 0;
+    private static  byte[] $$l = null;
+    private static  int $$m = 0;
     private static int $10;
     private static int $11;
     private static char configureroll;
@@ -324,10 +324,10 @@ public final class isAuthSucess extends e1 {
 
             /* renamed from: com.identy.isAuthSucess$PngjException$PngjException$PngjException, reason: collision with other inner class name */
             public class RunnableC0025PngjException implements Runnable {
-                private static final byte[] $$a = null;
-                private static final int $$b = 0;
-                private static final byte[] $$c = null;
-                private static final int $$d = 0;
+                private static  byte[] $$a = null;
+                private static  int $$b = 0;
+                private static  byte[] $$c = null;
+                private static  int $$d = 0;
                 private static int $10;
                 private static int $11;
                 private static int PngjBadCrcException;
@@ -361,26 +361,26 @@ public final class isAuthSucess extends e1 {
                     int i2 = s * 2;
                     byte[] bArr2 = new byte[i2 + 1];
                     if (bArr == null) {
-                        byte b3 = r7;
+                        byte b3 = 0;
                         i = 0;
-                        byte b4 = r5;
-                        r5++;
+                        byte b4 = 0;
+                        0++;
                         b2 = b4 + b3;
                         bArr2[i] = b2 == true ? (byte) 1 : (byte) 0;
                         if (i == i2) {
                             return new String(bArr2, 0);
                         }
                         i++;
-                        b3 = bArr[r5];
+                        b3 = bArr[0];
                         b4 = b2;
-                        r5++;
+                        0++;
                         b2 = b4 + b3;
                         bArr2[i] = b2 == true ? (byte) 1 : (byte) 0;
                         if (i == i2) {
                         }
                     } else {
                         i = 0;
-                        b2 = r7;
+                        b2 = 0;
                         bArr2[i] = b2 == true ? (byte) 1 : (byte) 0;
                         if (i == i2) {
                         }
@@ -723,11 +723,11 @@ public final class isAuthSucess extends e1 {
                                     $10 = ($11 + 13) % 128;
                                     byte[] bArr7 = PngjExceptionInternal;
                                     pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                                    pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr7[r3] ^ j2)) + s)) ^ b));
+                                    pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr7[0] ^ j2)) + s)) ^ b));
                                 } else {
                                     short[] sArr = PngjOutputException;
                                     pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                                    pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[r3] ^ j2)) + s)) ^ b));
+                                    pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[0] ^ j2)) + s)) ^ b));
                                 }
                                 sb.append(pngjPrematureEnding.valueOf);
                                 pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;
@@ -1412,23 +1412,23 @@ public final class isAuthSucess extends e1 {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0025, code lost:
     
-        if (r9.onErrorResponse != false) goto L41;
+        if (0.onErrorResponse != false) goto L41;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0027, code lost:
     
-        if (r0 == false) goto L41;
+        if (0 == false) goto L41;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0029, code lost:
     
-        r9.getQualityScore++;
+        0.getQualityScore++;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0032, code lost:
     
-        if (r9.CaptureThumbActivity == false) goto L20;
+        if (0.CaptureThumbActivity == false) goto L20;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0034, code lost:
     
-        r9.getL2Score.values(r9.getPadSub3, r9.getPadSub2, r9.getData.intValue(), r9.CaptureRolledFingersActivity);
+        0.getL2Score.values(0.getPadSub3, 0.getPadSub2, 0.getData.intValue(), 0.CaptureRolledFingersActivity);
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0045, code lost:
     
@@ -1436,28 +1436,28 @@ public final class isAuthSucess extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0063, code lost:
     
-        if (r9.getQualityScore >= 1) goto L35;
+        if (0.getQualityScore >= 1) goto L35;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0065, code lost:
     
-        r0 = r9.Attempt;
+        0 = 0.Attempt;
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0067, code lost:
     
-        if (r0 == null) goto L34;
+        if (0 == null) goto L34;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0069, code lost:
     
-        r3 = com.identy.isAuthSucess.pfkrolfinalize + 69;
-        com.identy.isAuthSucess.destroy = r3 % 128;
+        0 = com.identy.isAuthSucess.pfkrolfinalize + 69;
+        com.identy.isAuthSucess.destroy = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0073, code lost:
     
-        if ((r3 % 2) != 0) goto L29;
+        if ((0 % 2) != 0) goto L29;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x0075, code lost:
     
-        r0.getData();
+        0.getData();
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x0078, code lost:
     
@@ -1465,7 +1465,7 @@ public final class isAuthSucess extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0081, code lost:
     
-        r0.getData();
+        0.getData();
      */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x0085, code lost:
     
@@ -1477,7 +1477,7 @@ public final class isAuthSucess extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x008b, code lost:
     
-        if (r9.getCaptureTime == false) goto L39;
+        if (0.getCaptureTime == false) goto L39;
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x008d, code lost:
     
@@ -1489,19 +1489,19 @@ public final class isAuthSucess extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x0096, code lost:
     
-        r9.getCaptureTime = true;
+        0.getCaptureTime = true;
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x004e, code lost:
     
-        r9.getL2Score.values(r9.getPadSub2, r9.getPadSub3, r9.getData.intValue(), r9.CaptureRolledFingersActivity);
+        0.getL2Score.values(0.getPadSub2, 0.getPadSub3, 0.getData.intValue(), 0.CaptureRolledFingersActivity);
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x0021, code lost:
     
-        if (r9.PngBadCharsetException == false) goto L13;
+        if (0.PngBadCharsetException == false) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0016, code lost:
     
-        if (r9.PngBadCharsetException == false) goto L13;
+        if (0.PngBadCharsetException == false) goto L13;
      */
     @Override // com.identy.e1
     /*
@@ -1614,7 +1614,7 @@ public final class isAuthSucess extends e1 {
             byte b = (byte) ($$d[18] - 1);
             j = 0;
             java.lang.Object[] objArr6 = new java.lang.Object[1];
-            f(b, (byte) (b | 13), r7[20], objArr6);
+            f(b, (byte) (b | 13), $$a[20], objArr6);
             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(bitsPerPixel, i4, i5, -1608103378, false, (String) objArr6[0], null);
         } else {
             j = 0;
@@ -1667,7 +1667,7 @@ public final class isAuthSucess extends e1 {
                         byte b6 = (byte) ($$d[18] - 1);
                         c2 = 2;
                         java.lang.Object[] objArr12 = new java.lang.Object[1];
-                        f(b6, (byte) (b6 | 13), r12[20], objArr12);
+                        f(b6, (byte) (b6 | 13), $$a[20], objArr12);
                         PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c3, pressedStateDuration, deadChar, -1608103378, false, (String) objArr12[0], null);
                     } else {
                         c2 = 2;
@@ -1702,12 +1702,12 @@ public final class isAuthSucess extends e1 {
                 j2 = -1;
             }
             java.lang.Object[] objArr14 = (java.lang.Object[]) ((Field) PngjBadSignature6).get(null);
-            objArr = new java.lang.Object[]{new int[1], new int[]{r13}, new int[]{r4}};
+            objArr = new java.lang.Object[]{new int[1], new int[]{0}, new int[]{0}};
             int i8 = ((int[]) objArr14[1])[0];
             int i9 = ((int[]) objArr14[2])[0];
             int uptimeMillis = (int) SystemClock.uptimeMillis();
             c = 3;
-            int c4 = defpackage.a.c((~(uptimeMillis | (-258076658))) | (~((~uptimeMillis) | 1206166577)), 333, (((~(uptimeMillis | 1206166577)) | (~((-258076658) | r11))) * 333) - 649392977, 847920981);
+            int c4 = defpackage.a.c((~(uptimeMillis | (-258076658))) | (~((~uptimeMillis) | 1206166577)), 333, (((~(uptimeMillis | 1206166577)) | (~((-258076658) | 0))) * 333) - 649392977, 847920981);
             int i10 = c4 ^ (c4 << 13);
             int i11 = i10 ^ (i10 >>> 17);
             ((int[]) objArr[0])[0] = i11 ^ (i11 << 5);
@@ -1728,7 +1728,7 @@ public final class isAuthSucess extends e1 {
         ((int[]) objArr15[1])[0] = i15;
         ((int[]) objArr15[c2])[0] = i16;
         int identityHashCode = System.identityHashCode(this);
-        int c5 = defpackage.a.c((~(identityHashCode | (-803180129))) | (~((~identityHashCode) | 661063106)), 959, (((~((-803180129) | r10)) | (~(identityHashCode | 661063106))) * 959) - 1681993729, i14);
+        int c5 = defpackage.a.c((~(identityHashCode | (-803180129))) | (~((~identityHashCode) | 661063106)), 959, (((~((-803180129) | 0)) | (~(identityHashCode | 661063106))) * 959) - 1681993729, i14);
         int i17 = c5 ^ (c5 << 13);
         int i18 = i17 ^ (i17 >>> 17);
         ((int[]) objArr15[0])[0] = i18 ^ (i18 << 5);
@@ -1742,7 +1742,7 @@ public final class isAuthSucess extends e1 {
                 int i20 = 1043 - (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1));
                 byte b9 = (byte) ($$d[18] - 1);
                 java.lang.Object[] objArr16 = new java.lang.Object[1];
-                f(b9, (byte) (b9 | 13), r0[20], objArr16);
+                f(b9, (byte) (b9 | 13), $$a[20], objArr16);
                 PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(green2, maxKeyCode, i20, 159283629, false, (String) objArr16[0], null);
             }
             ((Field) PngjBadSignature7).getLong(null);
@@ -1755,7 +1755,7 @@ public final class isAuthSucess extends e1 {
             int scrollBarFadeDuration = (ViewConfiguration.getScrollBarFadeDuration() >> 16) + 1043;
             byte b10 = (byte) ($$d[18] - 1);
             java.lang.Object[] objArr17 = new java.lang.Object[1];
-            f(b10, (byte) (b10 | 13), r9[20], objArr17);
+            f(b10, (byte) (b10 | 13), $$a[20], objArr17);
             PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(trimmedLength, i21, scrollBarFadeDuration, 159283629, false, (String) objArr17[0], null);
         }
         long j4 = ((Field) PngjBadSignature8).getLong(null);
@@ -1793,7 +1793,7 @@ public final class isAuthSucess extends e1 {
                         int i22 = 1044 - (ViewConfiguration.getGlobalActionKeyTimeout() > j ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == j ? 0 : -1));
                         byte b13 = $$d[18];
                         java.lang.Object[] objArr23 = new java.lang.Object[1];
-                        f(b13, (byte) (b13 - 1), r11[13], objArr23);
+                        f(b13, (byte) (b13 - 1), $$a[13], objArr23);
                         PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(deadChar3, threadPriority, i22, 1150904546, false, (String) objArr23[0], null);
                     }
                     ((Field) PngjBadSignature9).set(null, objArr2);
@@ -1807,7 +1807,7 @@ public final class isAuthSucess extends e1 {
                             byte b14 = (byte) ($$d[18] - 1);
                             i2 = 0;
                             java.lang.Object[] objArr24 = new java.lang.Object[1];
-                            f(b14, (byte) (b14 | 13), r12[20], objArr24);
+                            f(b14, (byte) (b14 | 13), $$a[20], objArr24);
                             PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c6, maximumFlingVelocity2, trimmedLength2, 159283629, false, (String) objArr24[0], null);
                         } else {
                             i2 = 0;
@@ -1835,13 +1835,13 @@ public final class isAuthSucess extends e1 {
                 int offsetBefore = TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0) + 1043;
                 byte b15 = $$d[18];
                 java.lang.Object[] objArr25 = new java.lang.Object[1];
-                f(b15, (byte) (b15 - 1), r9[13], objArr25);
+                f(b15, (byte) (b15 - 1), $$a[13], objArr25);
                 PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(size, i23, offsetBefore, 1150904546, false, (String) objArr25[0], null);
             }
             java.lang.Object[] objArr26 = (java.lang.Object[]) ((Field) PngjBadSignature11).get(null);
             objArr2 = new java.lang.Object[5];
-            objArr2[c2] = new int[]{r14};
-            objArr2[c] = new int[]{r13};
+            objArr2[c2] = new int[]{0};
+            objArr2[c] = new int[]{0};
             objArr2[4] = new int[1];
             int i24 = ((int[]) objArr26[c])[0];
             int i25 = ((int[]) objArr26[c2])[0];
@@ -1877,7 +1877,7 @@ public final class isAuthSucess extends e1 {
             objArr27[1] = str7;
             objArr27[i2] = str8;
             int identityHashCode3 = System.identityHashCode(this);
-            int c8 = defpackage.a.c((~(identityHashCode3 | (-663905296))) | (~((~identityHashCode3) | (-39547926))), 333, (((~((-663905296) | r8)) | (~(identityHashCode3 | (-39547926)))) * 333) - 1697330907, i31);
+            int c8 = defpackage.a.c((~(identityHashCode3 | (-663905296))) | (~((~identityHashCode3) | (-39547926))), 333, (((~((-663905296) | 0)) | (~(identityHashCode3 | (-39547926)))) * 333) - 1697330907, i31);
             int i34 = c8 ^ (c8 << 13);
             int i35 = i34 ^ (i34 >>> 17);
             ((int[]) objArr27[i])[i2] = i35 ^ (i35 << 5);
@@ -1905,7 +1905,7 @@ public final class isAuthSucess extends e1 {
             objArr28[1] = str9;
             objArr28[i2] = str10;
             int identityHashCode4 = System.identityHashCode(this);
-            int c9 = defpackage.a.c((~(identityHashCode4 | (-226206534))) | (~((-850563904) | identityHashCode4)) | 3310341, 407, (((~(850563903 | identityHashCode4)) | (~((~identityHashCode4) | 226206533)) | 3310341) * 407) + ((((-1073460096) | r7) * (-814)) - 2116671139), i37);
+            int c9 = defpackage.a.c((~(identityHashCode4 | (-226206534))) | (~((-850563904) | identityHashCode4)) | 3310341, 407, (((~(850563903 | identityHashCode4)) | (~((~identityHashCode4) | 226206533)) | 3310341) * 407) + ((((-1073460096) | 0) * (-814)) - 2116671139), i37);
             int i40 = c9 ^ (c9 << 13);
             int i41 = i40 ^ (i40 >>> 17);
             ((int[]) objArr28[i])[i2] = i41 ^ (i41 << 5);
@@ -1919,7 +1919,7 @@ public final class isAuthSucess extends e1 {
             int capsMode = 721 - TextUtils.getCapsMode(BuildConfig.FLAVOR, i42, i42);
             byte b16 = (byte) ($$d[18] - 1);
             java.lang.Object[] objArr29 = new java.lang.Object[1];
-            f(b16, (byte) (b16 | 13), r1[20], objArr29);
+            f(b16, (byte) (b16 | 13), $$a[20], objArr29);
             PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c10, i43, capsMode, -815159504, false, (String) objArr29[0], null);
         }
         long j5 = ((Field) PngjBadSignature12).getLong(null);
@@ -1958,7 +1958,7 @@ public final class isAuthSucess extends e1 {
                     int i44 = 722 - (SystemClock.currentThreadTimeMillis() > j2 ? 1 : (SystemClock.currentThreadTimeMillis() == j2 ? 0 : -1));
                     byte b19 = (byte) ($$d[18] - 1);
                     java.lang.Object[] objArr34 = new java.lang.Object[1];
-                    f(b19, (byte) (b19 | 13), r5[20], objArr34);
+                    f(b19, (byte) (b19 | 13), $$a[20], objArr34);
                     i3 = 0;
                     PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c11, indexOf, i44, -815159504, false, (String) objArr34[0], null);
                 }
@@ -1981,9 +1981,9 @@ public final class isAuthSucess extends e1 {
             }
             java.lang.Object[] objArr36 = (java.lang.Object[]) ((Field) PngjBadSignature16).get(null);
             objArr3 = new java.lang.Object[i];
-            objArr3[0] = new int[]{r8};
+            objArr3[0] = new int[]{0};
             objArr3[1] = new int[1];
-            objArr3[c] = new int[]{r7};
+            objArr3[c] = new int[]{0};
             int i46 = ((int[]) objArr36[c])[0];
             int i47 = ((int[]) objArr36[0])[0];
             objArr3[c2] = (String[]) objArr36[c2];
@@ -2079,7 +2079,7 @@ public final class isAuthSucess extends e1 {
                     }
                     double d = this.getPadSub3 / 2.9d;
                     float f5 = this.getPadSub2;
-                    RectF rectF = new RectF((int) d, (int) (r6 / 3.9000000953674316d), (int) (r10 - d), (int) (f5 - (f5 / 2.74f)));
+                    RectF rectF = new RectF((int) d, (int) (0 / 3.9000000953674316d), (int) (0 - d), (int) (f5 - (f5 / 2.74f)));
                     this.CaptureRolledFingersActivity = rectF;
                     rectF.width();
                     this.CaptureRolledFingersActivity.height();
@@ -2140,7 +2140,7 @@ public final class isAuthSucess extends e1 {
                     i3 = 1083808154;
                     float f6 = (int) (this.getPadSub3 / 3.0d);
                     double d2 = this.getPadSub2 / 5.6d;
-                    this.CaptureRolledFingersActivity = new RectF(f6, (int) d2, (int) (r7 - (r7 / 6.0d)), (int) (r9 - d2));
+                    this.CaptureRolledFingersActivity = new RectF(f6, (int) d2, (int) (0 - (0 / 6.0d)), (int) (0 - d2));
                     this.getL2Score = new com.identy.ui.d.values(this.Action, 5.6d, 6.0d, 5.6d, 3.0d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), 90, true, false, false, this.uxd565jk, this.cvtyuv2bgr);
                     this.CaptureRolledFingersActivity.width();
                     this.CaptureRolledFingersActivity.height();
@@ -2157,12 +2157,12 @@ public final class isAuthSucess extends e1 {
                         float f7 = Build.MANUFACTURER.toUpperCase().trim().contains("INGENICO") ? 4.0f : 2.6f;
                         float f8 = this.getPadSub2 / 10.0f;
                         float f9 = this.getPadSub3;
-                        this.CaptureRolledFingersActivity = new RectF((int) f8, (int) (f9 / 4.75f), (int) (r7 - f8), (int) (f9 - (f9 / f7)));
+                        this.CaptureRolledFingersActivity = new RectF((int) f8, (int) (f9 / 4.75f), (int) (0 - f8), (int) (f9 - (f9 / f7)));
                         this.getL2Score = new com.identy.ui.d.values(this.Action, 10.0d, 4.75d, 10.0d, f7, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), this.a.equals(Hand.RIGHT) ? 180 : 0, false, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);
                     } else {
                         double d3 = this.getPadSub2 / 5.6d;
                         double d4 = this.getPadSub3;
-                        this.CaptureRolledFingersActivity = new RectF((int) d3, (int) (d4 / 6.0d), (int) (r6 - d3), (int) (d4 - (d4 / 3.0d)));
+                        this.CaptureRolledFingersActivity = new RectF((int) d3, (int) (d4 / 6.0d), (int) (0 - d3), (int) (d4 - (d4 / 3.0d)));
                         this.getL2Score = new com.identy.ui.d.values(this.Action, 5.6d, 6.0d, 5.6d, 3.0d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), 90, true, false, false, this.uxd565jk, this.cvtyuv2bgr);
                         this.CaptureRolledFingersActivity.width();
                         this.CaptureRolledFingersActivity.height();
@@ -2242,15 +2242,15 @@ public final class isAuthSucess extends e1 {
 
     /* JADX WARN: Code restructure failed: missing block: B:17:0x002b, code lost:
     
-        r2.PngjBadSignature(r1, false);
+        0.PngjBadSignature(0, false);
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0029, code lost:
     
-        if (r2 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:4:0x001d, code lost:
     
-        if (r2 != null) goto L9;
+        if (0 != null) goto L9;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.

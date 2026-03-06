@@ -13,8 +13,8 @@ public enum Action {
     ENROLL_WITH_TEMPLATE,
     MATCH_WITH_TEMPLATE;
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
 
     static {
         init$0();
@@ -121,7 +121,7 @@ public enum Action {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) Process.getElapsedCpuTime())) | (-417298110))) | 278618301, 191, (((~(r0 | (-417298110))) | 916187389) * 191) - 793770375, 2019811095);
+                    int c = defpackage.a.c((~((~((int) Process.getElapsedCpuTime())) | (-417298110))) | 278618301, 191, (((~(0 | (-417298110))) | 916187389) * 191) - 793770375, 2019811095);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

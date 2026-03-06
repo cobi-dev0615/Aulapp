@@ -44,13 +44,13 @@ public enum Hand implements Serializable {
         byte[] bArr2 = new byte[s + 6];
         byte r5 = (byte) (s + 5);
         if (bArr == null) {
-            byte b4 = r6;
+            byte b4 = 0;
             i2 = 0;
-            byte b5 = r5;
+            byte b5 = 0;
             i3++;
             b3 = (byte) ((b5 + b4) - 8);
             bArr2[i2] = b3 != 0 ? (byte) 1 : (byte) 0;
-            if (i2 == r5) {
+            if (i2 == 0) {
                 objArr[0] = new String(bArr2, 0);
                 return;
             }
@@ -60,13 +60,13 @@ public enum Hand implements Serializable {
             i3++;
             b3 = (byte) ((b5 + b4) - 8);
             bArr2[i2] = b3 != 0 ? (byte) 1 : (byte) 0;
-            if (i2 == r5) {
+            if (i2 == 0) {
             }
         } else {
             i2 = 0;
-            b3 = r6;
+            b3 = 0;
             bArr2[i2] = b3 != 0 ? (byte) 1 : (byte) 0;
-            if (i2 == r5) {
+            if (i2 == 0) {
             }
         }
     }

@@ -217,10 +217,10 @@ public final class VerifyIdentyResponse extends IdentyResponse {
             }
             byte b = $$a[77];
             Object[] objArr3 = new Object[1];
-            a(b, (short) (-b), r1[27], objArr3);
+            a(b, (short) (-b), $$a[27], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[27], r1[88], r1[4], objArr4);
+            a($$a[27], $$a[88], $$a[4], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2111006126);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5021;
@@ -323,17 +323,17 @@ public final class VerifyIdentyResponse extends IdentyResponse {
             }
             byte b = $$a[77];
             Object[] objArr3 = new Object[1];
-            a(b, (short) (-b), r4[27], objArr3);
+            a(b, (short) (-b), $$a[27], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r4[27], r4[88], r4[4], objArr4);
+            a($$a[27], $$a[88], $$a[4], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 510031553);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4855;
             Fpnative.valueOf = objArr;
             JSONObject json2 = super.toJson(context);
             JSONObject jSONObject2 = new JSONObject();
-            while (r4.hasNext()) {
+            while (0.hasNext()) {
             }
             int i32 = ((int[]) objArr[1])[0];
             int i42 = i32 * i32;

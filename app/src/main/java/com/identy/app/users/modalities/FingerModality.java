@@ -22,7 +22,7 @@ public class FingerModality {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = a.c((~(elapsedCpuTime | 217031195)) | 570430528 | (~((~elapsedCpuTime) | (-71541249))), 988, (((~(787461723 | r5)) | (~((-71541249) | elapsedCpuTime))) * 988) - 1785930161, 2004246426);
+                    int c = a.c((~(elapsedCpuTime | 217031195)) | 570430528 | (~((~elapsedCpuTime) | (-71541249))), 988, (((~(787461723 | 0)) | (~((-71541249) | elapsedCpuTime))) * 988) - 1785930161, 2004246426);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

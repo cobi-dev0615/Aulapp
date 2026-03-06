@@ -33,10 +33,10 @@ import java.util.List;
 
 /* loaded from: classes2.dex */
 public class EnrollFingersActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int getFingerPrintQualityScore;
@@ -578,9 +578,9 @@ public class EnrollFingersActivity extends FingerActivity {
                         }
                         Object[] objArr6 = (Object[]) ((Field) PngjBadSignature4).get(null);
                         PngjException$1eba2e16 = new Object[4];
-                        PngjException$1eba2e16[0] = new int[]{r5};
+                        PngjException$1eba2e16[0] = new int[]{0};
                         PngjException$1eba2e16[1] = new int[1];
-                        PngjException$1eba2e16[3] = new int[]{r4};
+                        PngjException$1eba2e16[3] = new int[]{0};
                         int i6 = ((int[]) objArr6[3])[0];
                         int i7 = ((int[]) objArr6[0])[0];
                         PngjException$1eba2e16[c] = (String[]) objArr6[c];
@@ -594,9 +594,9 @@ public class EnrollFingersActivity extends FingerActivity {
                         i3 = ((int[]) PngjException$1eba2e16[3])[0];
                         if (i3 != i2) {
                             Object[] objArr7 = new Object[4];
-                            objArr7[0] = new int[]{r6};
+                            objArr7[0] = new int[]{0};
                             objArr7[1] = new int[1];
-                            objArr7[3] = new int[]{r5};
+                            objArr7[3] = new int[]{0};
                             int i10 = ((int[]) PngjException$1eba2e16[1])[0];
                             int i11 = ((int[]) PngjException$1eba2e16[3])[0];
                             int i12 = ((int[]) PngjException$1eba2e16[0])[0];
@@ -621,9 +621,9 @@ public class EnrollFingersActivity extends FingerActivity {
                         }
                         Toast.makeText((Context) null, i3 / (((i3 - 1) * i3) % 2), 0).show();
                         Object[] objArr8 = new Object[4];
-                        objArr8[0] = new int[]{r6};
+                        objArr8[0] = new int[]{0};
                         objArr8[1] = new int[1];
-                        objArr8[3] = new int[]{r5};
+                        objArr8[3] = new int[]{0};
                         int i16 = ((int[]) PngjException$1eba2e16[1])[0];
                         int i17 = ((int[]) PngjException$1eba2e16[3])[0];
                         int i18 = ((int[]) PngjException$1eba2e16[0])[0];

@@ -168,7 +168,7 @@ public abstract class FingerPrintBiometricUtil {
 
         private final List<FingerDetectionMode> getModeForHandByFingers(EnumHandsAulapp hand, List<? extends EnumFinger> fingersAllowed) {
             ArrayList arrayList = new ArrayList();
-            Iterator<T> it = fingersAllowed.iterator();
+            Iterator<?> it = fingersAllowed.iterator();
             while (it.hasNext()) {
                 int i = WhenMappings.$EnumSwitchMapping$2[((EnumFinger) it.next()).ordinal()];
                 if (i != 1) {

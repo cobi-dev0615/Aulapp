@@ -23,14 +23,14 @@ public final class ClassInCourseViewModel$updateDateEndClass$1 extends SuspendLa
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassInCourseViewModel$updateDateEndClass$1(ClassInCourseViewModel classInCourseViewModel, String str, Continuation<? super ClassInCourseViewModel$updateDateEndClass$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = classInCourseViewModel;
         this.$sessionID = str;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ClassInCourseViewModel$updateDateEndClass$1(this.this$0, this.$sessionID, continuation);
+        return (Continuation<Unit>) (Object) new ClassInCourseViewModel$updateDateEndClass$1(this.this$0, this.$sessionID, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -68,6 +68,6 @@ public final class ClassInCourseViewModel$updateDateEndClass$1 extends SuspendLa
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ClassInCourseViewModel$updateDateEndClass$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ClassInCourseViewModel$updateDateEndClass$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

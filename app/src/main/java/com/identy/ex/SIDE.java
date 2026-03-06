@@ -13,8 +13,8 @@ public enum SIDE {
     LEFT(R.string.id_fin_show_left, R.drawable.ro_left_center, 360),
     RIGHT(R.string.id_fin_show_right, R.drawable.ro_all, 0);
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     int a;
     int b;
     int c;
@@ -227,7 +227,7 @@ public enum SIDE {
             e(b, (byte) (b | 22), (byte) 96, objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            e(r1[0], r1[116], (byte) 124, objArr4);
+            e($$a[0], $$a[116], (byte) 124, objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1658559858);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4856;
@@ -252,7 +252,7 @@ public enum SIDE {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~System.identityHashCode(this)) | (-77912071))) | 498287167, 398, (((~((-77912071) | r0)) | 498287167) * 398) - 1120524709, 218961109);
+                    int c = a.c((~((~System.identityHashCode(this)) | (-77912071))) | 498287167, 398, (((~((-77912071) | 0)) | 498287167) * 398) - 1120524709, 218961109);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

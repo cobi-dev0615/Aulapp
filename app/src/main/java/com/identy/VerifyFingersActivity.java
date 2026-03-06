@@ -37,10 +37,10 @@ import java.util.Map;
 
 /* loaded from: classes2.dex */
 public class VerifyFingersActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static byte[] getCaptureTime;
@@ -469,13 +469,13 @@ public class VerifyFingersActivity extends FingerActivity {
                         if (i18 % 2 != 0) {
                             byte[] bArr6 = getCaptureTime;
                             pngjPrematureEnding.values = pngjPrematureEnding.values;
-                            byte b10 = (byte) (bArr6[r3] | j);
+                            byte b10 = (byte) (bArr6[0] | j);
                             c = pngjPrematureEnding.PngjBadCrcException;
                             i8 = b10 % s;
                         } else {
                             byte[] bArr7 = getCaptureTime;
                             pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                            byte b11 = (byte) (bArr7[r3] ^ j);
+                            byte b11 = (byte) (bArr7[0] ^ j);
                             c = pngjPrematureEnding.PngjBadCrcException;
                             i8 = b11 + s;
                         }
@@ -483,7 +483,7 @@ public class VerifyFingersActivity extends FingerActivity {
                     } else {
                         short[] sArr = getProcessingTime;
                         pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                        pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[r3] ^ j)) + s)) ^ b));
+                        pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[0] ^ j)) + s)) ^ b));
                     }
                     sb.append(pngjPrematureEnding.valueOf);
                     pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;
@@ -616,7 +616,7 @@ public class VerifyFingersActivity extends FingerActivity {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(maximumFlingVelocity, defaultSize, scrollDefaultDelay, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                        PngjBadSignature$1eba2e16 = new Object[]{new int[]{r5}, new int[1], r0, new int[]{r4}};
+                        PngjBadSignature$1eba2e16 = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i2 = ((int[]) objArr5[3])[0];
                         int i3 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
@@ -627,7 +627,7 @@ public class VerifyFingersActivity extends FingerActivity {
                         int i6 = i5 ^ (i5 >>> 17);
                         ((int[]) PngjBadSignature$1eba2e16[1])[0] = i6 ^ (i6 << 5);
                         if (((int[]) PngjBadSignature$1eba2e16[3])[0] != ((int[]) PngjBadSignature$1eba2e16[0])[0]) {
-                            Object[] objArr6 = {new int[]{r6}, new int[1], r1, new int[]{r5}};
+                            Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i7 = ((int[]) PngjBadSignature$1eba2e16[1])[0];
                             int i8 = ((int[]) PngjBadSignature$1eba2e16[3])[0];
                             int i9 = ((int[]) PngjBadSignature$1eba2e16[0])[0];

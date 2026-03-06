@@ -25,13 +25,13 @@ public final class ClassInCourseViewModel$getConfigSessionDto$1 extends SuspendL
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassInCourseViewModel$getConfigSessionDto$1(ClassInCourseViewModel classInCourseViewModel, Continuation<? super ClassInCourseViewModel$getConfigSessionDto$1> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = classInCourseViewModel;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ClassInCourseViewModel$getConfigSessionDto$1(this.this$0, continuation);
+        return (Continuation<Unit>) (Object) new ClassInCourseViewModel$getConfigSessionDto$1(this.this$0, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -61,6 +61,6 @@ public final class ClassInCourseViewModel$getConfigSessionDto$1 extends SuspendL
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ClassInCourseViewModel$getConfigSessionDto$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ClassInCourseViewModel$getConfigSessionDto$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

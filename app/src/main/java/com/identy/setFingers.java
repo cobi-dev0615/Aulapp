@@ -39,12 +39,12 @@ import org.identy.opencv.core.Mat;
 
 /* loaded from: classes2.dex */
 final class setFingers extends e1 {
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final byte[] $$g = null;
-    private static final int $$h = 0;
-    private static final byte[] $$l = null;
-    private static final int $$m = 0;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  byte[] $$g = null;
+    private static  int $$h = 0;
+    private static  byte[] $$l = null;
+    private static  int $$m = 0;
     private static int $10;
     private static int $11;
     private static int[] destroy;
@@ -206,16 +206,16 @@ final class setFingers extends e1 {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0090, code lost:
     
-        if (r2 != null) goto L26;
+        if (0 != null) goto L26;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0099, code lost:
     
-        r2.height = r0;
-        r1.setLayoutParams(r2);
+        0.height = 0;
+        0.setLayoutParams(0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x0097, code lost:
     
-        if (r2 != null) goto L26;
+        if (0 != null) goto L26;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -439,83 +439,83 @@ final class setFingers extends e1 {
 
     /* JADX WARN: Code restructure failed: missing block: B:100:0x0555, code lost:
     
-        r4 = new java.lang.Object[]{r1, java.lang.Integer.valueOf(((java.lang.Integer) r4.getMethod((java.lang.String) r13[0], java.lang.Object.class).invoke(null, r36)).intValue()), 0, 792966357};
-        r3 = com.identy.setFingers.$$g;
-        r8 = r3[5];
-        r13 = (byte) (r8 - 1);
-        r15 = new java.lang.Object[1];
-        g(r8, r13, r13, r15);
-        r8 = java.lang.Class.forName((java.lang.String) r15[0]);
-        r3 = r3[5];
-        r13 = (byte) (r3 - 1);
-        r3 = r3;
-        r15 = new java.lang.Object[1];
-        g(r13, r3, r3, r15);
-        r3 = (java.lang.String) r15[0];
-        r14 = java.lang.Integer.TYPE;
-        r4 = (java.lang.Object[]) r8.getMethod(r3, android.content.Context.class, r14, r14, r14).invoke(null, r4);
+        0 = new java.lang.Object[]{0, java.lang.Integer.valueOf(((java.lang.Integer) 0.getMethod((java.lang.String) $$a[0], java.lang.Object.class).invoke(null, 0)).intValue()), 0, 792966357};
+        0 = com.identy.setFingers.$$g;
+        0 = $$a[5];
+        0 = (byte) (0 - 1);
+        0 = new java.lang.Object[1];
+        g(0, 0, 0, 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = $$a[5];
+        0 = (byte) (0 - 1);
+        0 = 0;
+        0 = new java.lang.Object[1];
+        g(0, 0, 0, 0);
+        0 = (java.lang.String) $$a[0];
+        0 = java.lang.Integer.TYPE;
+        0 = (java.lang.Object[]) 0.getMethod(0, android.content.Context.class, 0, 0, 0).invoke(null, 0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:101:0x05af, code lost:
     
-        if (r1 == null) goto L52;
+        if (0 == null) goto L52;
      */
     /* JADX WARN: Code restructure failed: missing block: B:102:0x05b1, code lost:
     
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
      */
     /* JADX WARN: Code restructure failed: missing block: B:103:0x05b8, code lost:
     
-        if (r1 != null) goto L74;
+        if (0 != null) goto L74;
      */
     /* JADX WARN: Code restructure failed: missing block: B:104:0x05ba, code lost:
     
-        r1 = (char) (31077 - (android.view.ViewConfiguration.getPressedStateDuration() >> 16));
-        r27 = ((android.os.Process.getThreadPriority(0) + 20) >> 6) + 49;
-        r3 = (android.widget.ExpandableListView.getPackedPositionForChild(0, 0) > r24 ? 1 : (android.widget.ExpandableListView.getPackedPositionForChild(0, 0) == r24 ? 0 : -1)) + 1044;
-        r8 = (byte) (com.identy.setFingers.$$d[0] - 1);
-        r13 = r8;
-        r15 = new java.lang.Object[1];
-        f(r8, r13, r13, r15);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r1, r27, r3, 1150904546, false, (java.lang.String) r15[0], null);
+        0 = (char) (31077 - (android.view.ViewConfiguration.getPressedStateDuration() >> 16));
+        0 = ((android.os.Process.getThreadPriority(0) + 20) >> 6) + 49;
+        0 = (android.widget.ExpandableListView.getPackedPositionForChild(0, 0) > 0 ? 1 : (android.widget.ExpandableListView.getPackedPositionForChild(0, 0) == 0 ? 0 : -1)) + 1044;
+        0 = (byte) (com.identy.setFingers.$$d[0] - 1);
+        0 = 0;
+        0 = new java.lang.Object[1];
+        f(0, 0, 0, 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, 1150904546, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:105:0x05f7, code lost:
     
-        ((java.lang.reflect.Field) r1).set(null, r4);
+        ((java.lang.reflect.Field) 0).set(null, 0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:108:0x060e, code lost:
     
-        r1 = java.lang.Long.valueOf(((java.lang.Long) java.lang.Class.forName(r7).getDeclaredMethod(r12, null).invoke(null, null)).longValue());
-        r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
+        0 = java.lang.Long.valueOf(((java.lang.Long) java.lang.Class.forName(0).getDeclaredMethod(0, null).invoke(null, null)).longValue());
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
      */
     /* JADX WARN: Code restructure failed: missing block: B:109:0x0619, code lost:
     
-        if (r3 != null) goto L79;
+        if (0 != null) goto L79;
      */
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0235, code lost:
     
-        r8 = new java.lang.Object[r34];
-        r8[1] = -332083894;
-        r8[0] = java.lang.Integer.valueOf(r1);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1437710995);
+        0 = new java.lang.Object[0];
+        $$a[1] = -332083894;
+        $$a[0] = java.lang.Integer.valueOf(0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1437710995);
      */
     /* JADX WARN: Code restructure failed: missing block: B:110:0x061b, code lost:
     
-        r3 = (char) ((android.os.Process.getElapsedCpuTime() > r24 ? 1 : (android.os.Process.getElapsedCpuTime() == r24 ? 0 : -1)) + 31076);
-        r27 = 49 - (android.media.AudioTrack.getMinVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMinVolume() == 0.0f ? 0 : -1));
-        r8 = android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0) + 1043;
-        r13 = com.identy.setFingers.$$d;
-        r35 = 4;
-        r6 = new java.lang.Object[1];
-        f((byte) 13, r13[17], r13[0], r6);
-        r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r3, r27, r8, 159283629, false, (java.lang.String) r6[0], null);
+        0 = (char) ((android.os.Process.getElapsedCpuTime() > 0 ? 1 : (android.os.Process.getElapsedCpuTime() == 0 ? 0 : -1)) + 31076);
+        0 = 49 - (android.media.AudioTrack.getMinVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMinVolume() == 0.0f ? 0 : -1));
+        0 = android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0) + 1043;
+        0 = com.identy.setFingers.$$d;
+        0 = 4;
+        0 = new java.lang.Object[1];
+        f((byte) 13, $$a[17], $$a[0], 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, 159283629, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:111:0x065e, code lost:
     
-        ((java.lang.reflect.Field) r3).set(null, r1);
+        ((java.lang.reflect.Field) 0).set(null, 0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:112:0x065c, code lost:
     
-        r35 = 4;
+        0 = 4;
      */
     /* JADX WARN: Code restructure failed: missing block: B:115:0x066a, code lost:
     
@@ -523,31 +523,31 @@ final class setFingers extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:117:0x0aaf, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:118:0x0ab0, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:119:0x0ab4, code lost:
     
-        if (r1 != null) goto L130;
+        if (0 != null) goto L130;
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x024d, code lost:
     
-        if (r1 != null) goto L28;
+        if (0 != null) goto L28;
      */
     /* JADX WARN: Code restructure failed: missing block: B:120:0x0ab6, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:121:0x0ab7, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:122:0x0502, code lost:
     
-        ((android.content.ContextWrapper) r37).getBaseContext();
+        ((android.content.ContextWrapper) 0).getBaseContext();
      */
     /* JADX WARN: Code restructure failed: missing block: B:123:0x0507, code lost:
     
@@ -555,31 +555,31 @@ final class setFingers extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:124:0x0508, code lost:
     
-        r1 = r37.getApplicationContext();
+        0 = 0.getApplicationContext();
      */
     /* JADX WARN: Code restructure failed: missing block: B:125:0x050d, code lost:
     
-        r1 = r37;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:127:0x0ac1, code lost:
     
-        throw new java.lang.RuntimeException(java.lang.String.valueOf(r6));
+        throw new java.lang.RuntimeException(java.lang.String.valueOf(0));
      */
     /* JADX WARN: Code restructure failed: missing block: B:128:0x033d, code lost:
     
-        r19 = 13;
+        0 = 13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x024f, code lost:
     
-        r1 = (char) android.view.View.resolveSize(0, 0);
-        r27 = (android.view.ViewConfiguration.getJumpTapTimeout() >> 16) + 37;
-        r3 = 549 - (android.view.ViewConfiguration.getScrollDefaultDelay() >> 16);
-        r13 = com.identy.setFingers.$$d;
-        r4 = new java.lang.Object[1];
-        f((byte) (r13[17] + 1), (byte) (-r13[6]), r13[0], r4);
-        r31 = (java.lang.String) r4[0];
-        r4 = java.lang.Integer.TYPE;
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r1, r27, r3, -1453402328, false, r31, new java.lang.Class[]{r4, r4});
+        0 = (char) android.view.View.resolveSize(0, 0);
+        0 = (android.view.ViewConfiguration.getJumpTapTimeout() >> 16) + 37;
+        0 = 549 - (android.view.ViewConfiguration.getScrollDefaultDelay() >> 16);
+        0 = com.identy.setFingers.$$d;
+        0 = new java.lang.Object[1];
+        f((byte) ($$a[17] + 1), (byte) (-$$a[6]), $$a[0], 0);
+        0 = (java.lang.String) $$a[0];
+        0 = java.lang.Integer.TYPE;
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -1453402328, false, 0, new java.lang.Class[]{0, 0});
      */
     /* JADX WARN: Code restructure failed: missing block: B:131:0x0ac7, code lost:
     
@@ -587,342 +587,342 @@ final class setFingers extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:132:0x0290, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:134:0x0ac8, code lost:
     
-        r1 = r0.getCause();
+        0 = 0.getCause();
      */
     /* JADX WARN: Code restructure failed: missing block: B:135:0x0acc, code lost:
     
-        if (r1 != null) goto L138;
+        if (0 != null) goto L138;
      */
     /* JADX WARN: Code restructure failed: missing block: B:136:0x0ace, code lost:
     
-        throw r1;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:137:0x0acf, code lost:
     
-        throw r0;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:139:0x0138, code lost:
     
-        if ((r13 + 4611686018427387913L) < ((java.lang.Long) defpackage.a.i(r7, r12, null, null, null)).longValue()) goto L22;
+        if ((0 + 4611686018427387913L) < ((java.lang.Long) defpackage.a.i(0, 0, null, null, null)).longValue()) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0293, code lost:
     
-        r8 = (java.lang.Object[]) ((java.lang.reflect.Method) r1).invoke(null, r8);
+        0 = (java.lang.Object[]) ((java.lang.reflect.Method) 0).invoke(null, 0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:140:0x013a, code lost:
     
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
      */
     /* JADX WARN: Code restructure failed: missing block: B:141:0x0141, code lost:
     
-        if (r1 != null) goto L21;
+        if (0 != null) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:142:0x0143, code lost:
     
-        r1 = (char) (android.view.ViewConfiguration.getFadingEdgeLength() >> 16);
-        r27 = 37 - (android.view.ViewConfiguration.getScrollBarFadeDuration() >> 16);
-        r3 = 549 - android.view.View.MeasureSpec.getSize(0);
-        r8 = com.identy.setFingers.$$d;
-        r13 = r8[0];
-        r8 = (byte) (-r8[16]);
-        r15 = new java.lang.Object[1];
-        f(r13, r8, (byte) (r8 - 3), r15);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r1, r27, r3, 1452666181, false, (java.lang.String) r15[0], null);
+        0 = (char) (android.view.ViewConfiguration.getFadingEdgeLength() >> 16);
+        0 = 37 - (android.view.ViewConfiguration.getScrollBarFadeDuration() >> 16);
+        0 = 549 - android.view.View.MeasureSpec.getSize(0);
+        0 = com.identy.setFingers.$$d;
+        0 = $$a[0];
+        0 = (byte) (-$$a[16]);
+        0 = new java.lang.Object[1];
+        f(0, 0, (byte) (0 - 3), 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, 1452666181, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:143:0x017e, code lost:
     
-        r1 = (java.lang.Object[]) ((java.lang.reflect.Field) r1).get(null);
-        r8 = new java.lang.Object[r21];
-        r8[0] = new int[1];
-        r8[1] = new int[]{r14};
-        r8[r34] = new int[]{r1};
-        r14 = ((int[]) r1[1])[0];
-        r1 = ((int[]) r1[r34])[0];
-        r1 = java.lang.System.identityHashCode(r36);
-        r3 = ~r1;
-        r1 = defpackage.a.c((~(r3 | (-806337932))) | 657905303, 217, ((537302147 | (~((-657905304) | r1))) * 217) + ((((~((-806337932) | r1)) | (~((-657905304) | r3))) * 217) + 519511377), -332083894);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r8[0])[0] = r1 ^ (r1 << 5);
-        r19 = 13;
+        0 = (java.lang.Object[]) ((java.lang.reflect.Field) 0).get(null);
+        0 = new java.lang.Object[0];
+        $$a[0] = new int[1];
+        $$a[1] = new int[]{0};
+        $$a[0] = new int[]{0};
+        0 = ((int[]) $$a[1])[0];
+        0 = ((int[]) $$a[0])[0];
+        0 = java.lang.System.identityHashCode(0);
+        0 = ~0;
+        0 = defpackage.a.c((~(0 | (-806337932))) | 657905303, 217, ((537302147 | (~((-657905304) | 0))) * 217) + ((((~((-806337932) | 0)) | (~((-657905304) | 0))) * 217) + 519511377), -332083894);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[0])[0] = 0 ^ (0 << 5);
+        0 = 13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:149:0x0123, code lost:
     
-        if (r13 != (-1)) goto L16;
+        if (0 != (-1)) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x029c, code lost:
     
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x02a3, code lost:
     
-        if (r1 != null) goto L32;
+        if (0 != null) goto L32;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x02a5, code lost:
     
-        r1 = (char) android.text.TextUtils.getTrimmedLength(com.karumi.dexter.BuildConfig.FLAVOR);
-        r27 = 38 - (android.os.Process.getElapsedCpuTime() > r24 ? 1 : (android.os.Process.getElapsedCpuTime() == r24 ? 0 : -1));
-        r3 = 549 - android.view.View.resolveSizeAndState(0, 0, 0);
-        r4 = com.identy.setFingers.$$d;
-        r13 = r4[0];
-        r4 = (byte) (-r4[16]);
-        r15 = new java.lang.Object[1];
-        f(r13, r4, (byte) (r4 - 3), r15);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r1, r27, r3, 1452666181, false, (java.lang.String) r15[0], null);
+        0 = (char) android.text.TextUtils.getTrimmedLength(com.karumi.dexter.BuildConfig.FLAVOR);
+        0 = 38 - (android.os.Process.getElapsedCpuTime() > 0 ? 1 : (android.os.Process.getElapsedCpuTime() == 0 ? 0 : -1));
+        0 = 549 - android.view.View.resolveSizeAndState(0, 0, 0);
+        0 = com.identy.setFingers.$$d;
+        0 = $$a[0];
+        0 = (byte) (-$$a[16]);
+        0 = new java.lang.Object[1];
+        f(0, 0, (byte) (0 - 3), 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, 1452666181, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x02e0, code lost:
     
-        ((java.lang.reflect.Field) r1).set(null, r8);
+        ((java.lang.reflect.Field) 0).set(null, 0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x02f7, code lost:
     
-        r1 = java.lang.Long.valueOf(((java.lang.Long) java.lang.Class.forName(r7).getDeclaredMethod(r12, null).invoke(null, null)).longValue());
-        r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
+        0 = java.lang.Long.valueOf(((java.lang.Long) java.lang.Class.forName(0).getDeclaredMethod(0, null).invoke(null, null)).longValue());
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x02ff, code lost:
     
-        if (r3 != null) goto L37;
+        if (0 != null) goto L37;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0301, code lost:
     
-        r3 = (char) (android.view.ViewConfiguration.getMinimumFlingVelocity() >> 16);
-        r27 = 37 - (android.util.TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (android.util.TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1));
-        r4 = android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0) + 549;
-        r14 = com.identy.setFingers.$$d;
-        r19 = 13;
-        r6 = new java.lang.Object[1];
-        f((byte) 13, r14[17], r14[0], r6);
-        r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r3, r27, r4, -1608103378, false, (java.lang.String) r6[0], null);
+        0 = (char) (android.view.ViewConfiguration.getMinimumFlingVelocity() >> 16);
+        0 = 37 - (android.util.TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (android.util.TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1));
+        0 = android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0) + 549;
+        0 = com.identy.setFingers.$$d;
+        0 = 13;
+        0 = new java.lang.Object[1];
+        f((byte) 13, $$a[17], $$a[0], 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -1608103378, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x033f, code lost:
     
-        ((java.lang.reflect.Field) r3).set(null, r1);
+        ((java.lang.reflect.Field) 0).set(null, 0);
         com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 121) % 128;
-        r34 = 2;
+        0 = 2;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x034e, code lost:
     
-        r1 = r8[r34];
-        r3 = ((int[]) r1)[0];
-        r4 = r8[1];
-        r6 = ((int[]) r4)[0];
+        0 = $$a[0];
+        0 = ((int[]) 0)[0];
+        0 = $$a[1];
+        0 = ((int[]) 0)[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x035c, code lost:
     
-        if (r6 != r3) goto L132;
+        if (0 != 0) goto L132;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x035e, code lost:
     
-        r3 = new java.lang.Object[]{new int[1], new int[1], new int[1]};
-        r6 = ((int[]) r8[0])[0];
-        r4 = ((int[]) r4)[0];
-        r1 = ((int[]) r1)[0];
-        ((int[]) r3[1])[0] = r4;
-        ((int[]) r3[2])[0] = r1;
-        r1 = defpackage.a.a();
-        r4 = ~r1;
-        r8 = (~((-1063426692) | r4)) | 392337539;
-        r1 = ~(r1 | 1071905695);
-        r1 = defpackage.a.c(r1 | (~(r4 | (-671089153))), 502, ((r8 | r1) * (-502)) + 849192196, r6);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r3[0])[0] = r1 ^ (r1 << 5);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
+        0 = new java.lang.Object[]{new int[1], new int[1], new int[1]};
+        0 = ((int[]) $$a[0])[0];
+        0 = ((int[]) 0)[0];
+        0 = ((int[]) 0)[0];
+        ((int[]) $$a[1])[0] = 0;
+        ((int[]) $$a[2])[0] = 0;
+        0 = defpackage.a.a();
+        0 = ~0;
+        0 = (~((-1063426692) | 0)) | 392337539;
+        0 = ~(0 | 1071905695);
+        0 = defpackage.a.c(0 | (~(0 | (-671089153))), 502, ((0 | 0) * (-502)) + 849192196, 0);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[0])[0] = 0 ^ (0 << 5);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x03c0, code lost:
     
-        if (r1 != null) goto L44;
+        if (0 != null) goto L44;
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x03c2, code lost:
     
-        r1 = (char) (31078 - (android.os.SystemClock.elapsedRealtime() > r24 ? 1 : (android.os.SystemClock.elapsedRealtime() == r24 ? 0 : -1)));
-        r27 = android.view.View.combineMeasuredStates(0, 0) + 49;
-        r3 = android.graphics.Color.red(0) + 1043;
-        r4 = com.identy.setFingers.$$d;
-        r13 = new java.lang.Object[1];
-        f((byte) r19, r4[17], r4[0], r13);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r1, r27, r3, 159283629, false, (java.lang.String) r13[0], null);
+        0 = (char) (31078 - (android.os.SystemClock.elapsedRealtime() > 0 ? 1 : (android.os.SystemClock.elapsedRealtime() == 0 ? 0 : -1)));
+        0 = android.view.View.combineMeasuredStates(0, 0) + 49;
+        0 = android.graphics.Color.red(0) + 1043;
+        0 = com.identy.setFingers.$$d;
+        0 = new java.lang.Object[1];
+        f((byte) 0, $$a[17], $$a[0], 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, 159283629, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x03fc, code lost:
     
-        r3 = ((java.lang.reflect.Field) r1).getLong(null);
+        0 = ((java.lang.reflect.Field) 0).getLong(null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x0405, code lost:
     
-        if (r3 == r22) goto L54;
+        if (0 == 0) goto L54;
      */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x0419, code lost:
     
-        if ((r3 + 4611686018427387855L) < ((java.lang.Long) defpackage.a.i(r7, r12, null, null, null)).longValue()) goto L54;
+        if ((0 + 4611686018427387855L) < ((java.lang.Long) defpackage.a.i(0, 0, null, null, null)).longValue()) goto L54;
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x041b, code lost:
     
         com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 87) % 128;
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x042a, code lost:
     
-        if (r1 != null) goto L51;
+        if (0 != null) goto L51;
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x042c, code lost:
     
-        r1 = (char) ((android.view.ViewConfiguration.getMinimumFlingVelocity() >> 16) + 31077);
-        r27 = (android.widget.ExpandableListView.getPackedPositionForChild(0, 0) > r24 ? 1 : (android.widget.ExpandableListView.getPackedPositionForChild(0, 0) == r24 ? 0 : -1)) + 50;
-        r3 = 1043 - android.graphics.Color.green(0);
-        r4 = (byte) (com.identy.setFingers.$$d[0] - 1);
-        r8 = r4;
-        r14 = new java.lang.Object[1];
-        f(r4, r8, r8, r14);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r1, r27, r3, 1150904546, false, (java.lang.String) r14[0], null);
+        0 = (char) ((android.view.ViewConfiguration.getMinimumFlingVelocity() >> 16) + 31077);
+        0 = (android.widget.ExpandableListView.getPackedPositionForChild(0, 0) > 0 ? 1 : (android.widget.ExpandableListView.getPackedPositionForChild(0, 0) == 0 ? 0 : -1)) + 50;
+        0 = 1043 - android.graphics.Color.green(0);
+        0 = (byte) (com.identy.setFingers.$$d[0] - 1);
+        0 = 0;
+        0 = new java.lang.Object[1];
+        f(0, 0, 0, 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, 1150904546, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x0465, code lost:
     
-        r1 = (java.lang.Object[]) ((java.lang.reflect.Field) r1).get(null);
-        r4 = new java.lang.Object[r16];
-        r4[2] = new int[]{r14};
-        r4[3] = new int[]{r13};
-        r4[4] = new int[1];
-        r13 = ((int[]) r1[3])[0];
-        r14 = ((int[]) r1[2])[0];
-        r15 = (java.lang.String) r1[1];
-        r1 = (java.lang.String) r1[0];
-        r4[1] = r15;
-        r4[0] = r1;
-        r1 = ~(java.lang.System.identityHashCode(r36) | 103612674);
-        r1 = defpackage.a.c(r1 | (-523104248), 220, (((-520744696) | r1) * (-220)) + 1984475315, -48050149);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r4[4])[0] = r1 ^ (r1 << 5);
+        0 = (java.lang.Object[]) ((java.lang.reflect.Field) 0).get(null);
+        0 = new java.lang.Object[0];
+        $$a[2] = new int[]{0};
+        $$a[3] = new int[]{0};
+        $$a[4] = new int[1];
+        0 = ((int[]) $$a[3])[0];
+        0 = ((int[]) $$a[2])[0];
+        0 = (java.lang.String) $$a[1];
+        0 = (java.lang.String) $$a[0];
+        $$a[1] = 0;
+        $$a[0] = 0;
+        0 = ~(java.lang.System.identityHashCode(0) | 103612674);
+        0 = defpackage.a.c(0 | (-523104248), 220, (((-520744696) | 0) * (-220)) + 1984475315, -48050149);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[4])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x04d4, code lost:
     
-        r35 = 4;
+        0 = 4;
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x066b, code lost:
     
-        r1 = ((int[]) r4[2])[0];
-        r3 = ((int[]) r4[3])[0];
+        0 = ((int[]) $$a[2])[0];
+        0 = ((int[]) $$a[3])[0];
      */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x0679, code lost:
     
-        if (r3 != r1) goto L86;
+        if (0 != 0) goto L86;
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x067b, code lost:
     
-        r3 = new java.lang.Object[5];
-        r3[2] = new int[]{r14};
-        r3[3] = new int[]{r13};
-        r3[r35] = new int[1];
-        r8 = ((int[]) r4[r35])[0];
-        r13 = ((int[]) r4[3])[0];
-        r14 = ((int[]) r4[2])[0];
-        r15 = (java.lang.String) r4[1];
-        r4 = (java.lang.String) r4[0];
-        r3[1] = r15;
-        r3[0] = r4;
-        r1 = android.os.Process.myTid();
-        r4 = ~r1;
-        r6 = (((~((-88608771) | r4)) | (~(124523171 | r1))) * 520) - 1263848351;
-        r13 = ~((-124523172) | r4);
-        r1 = ~(r1 | 499834198);
-        r1 = defpackage.a.c(r1 | ((~(r4 | (-499834199))) | 35914401), 520, ((r13 | r1) * (-1040)) + r6, r8);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r3[r35])[0] = r1 ^ (r1 << 5);
+        0 = new java.lang.Object[5];
+        $$a[2] = new int[]{0};
+        $$a[3] = new int[]{0};
+        $$a[0] = new int[1];
+        0 = ((int[]) $$a[0])[0];
+        0 = ((int[]) $$a[3])[0];
+        0 = ((int[]) $$a[2])[0];
+        0 = (java.lang.String) $$a[1];
+        0 = (java.lang.String) $$a[0];
+        $$a[1] = 0;
+        $$a[0] = 0;
+        0 = android.os.Process.myTid();
+        0 = ~0;
+        0 = (((~((-88608771) | 0)) | (~(124523171 | 0))) * 520) - 1263848351;
+        0 = ~((-124523172) | 0);
+        0 = ~(0 | 499834198);
+        0 = defpackage.a.c(0 | ((~(0 | (-499834199))) | 35914401), 520, ((0 | 0) * (-1040)) + 0, 0);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[0])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:0x078c, code lost:
     
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x0793, code lost:
     
-        if (r1 != null) goto L90;
+        if (0 != null) goto L90;
      */
     /* JADX WARN: Code restructure failed: missing block: B:44:0x0795, code lost:
     
-        r1 = (char) (14829 - android.view.MotionEvent.axisFromString(com.karumi.dexter.BuildConfig.FLAVOR));
-        r27 = android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0) + 28;
-        r3 = android.view.MotionEvent.axisFromString(com.karumi.dexter.BuildConfig.FLAVOR) + 722;
-        r6 = com.identy.setFingers.$$d;
-        r13 = new java.lang.Object[1];
-        f((byte) 13, r6[17], r6[0], r13);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r1, r27, r3, -815159504, false, (java.lang.String) r13[0], null);
+        0 = (char) (14829 - android.view.MotionEvent.axisFromString(com.karumi.dexter.BuildConfig.FLAVOR));
+        0 = android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0) + 28;
+        0 = android.view.MotionEvent.axisFromString(com.karumi.dexter.BuildConfig.FLAVOR) + 722;
+        0 = com.identy.setFingers.$$d;
+        0 = new java.lang.Object[1];
+        f((byte) 13, $$a[17], $$a[0], 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -815159504, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x07cd, code lost:
     
-        r3 = ((java.lang.reflect.Field) r1).getLong(null);
+        0 = ((java.lang.reflect.Field) 0).getLong(null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x07d5, code lost:
     
-        if (r3 == r22) goto L98;
+        if (0 == 0) goto L98;
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x07e9, code lost:
     
-        if ((r3 + 4611686018427387780L) < ((java.lang.Long) defpackage.a.i(r7, r12, null, null, null)).longValue()) goto L98;
+        if ((0 + 4611686018427387780L) < ((java.lang.Long) defpackage.a.i(0, 0, null, null, null)).longValue()) goto L98;
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x07eb, code lost:
     
         com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 89) % 128;
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x07fa, code lost:
     
-        if (r1 != null) goto L97;
+        if (0 != null) goto L97;
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x07fc, code lost:
     
-        r1 = (char) ((android.view.ViewConfiguration.getKeyRepeatDelay() >> 16) + 14830);
-        r23 = android.view.KeyEvent.keyCodeFromString(com.karumi.dexter.BuildConfig.FLAVOR) + 28;
-        r3 = android.text.TextUtils.getOffsetAfter(com.karumi.dexter.BuildConfig.FLAVOR, 0) + 721;
-        r4 = com.identy.setFingers.$$d;
-        r7 = new java.lang.Object[1];
-        f((byte) (r4[17] + 1), (byte) (-r4[6]), r4[0], r7);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r1, r23, r3, -779023007, false, (java.lang.String) r7[0], null);
+        0 = (char) ((android.view.ViewConfiguration.getKeyRepeatDelay() >> 16) + 14830);
+        0 = android.view.KeyEvent.keyCodeFromString(com.karumi.dexter.BuildConfig.FLAVOR) + 28;
+        0 = android.text.TextUtils.getOffsetAfter(com.karumi.dexter.BuildConfig.FLAVOR, 0) + 721;
+        0 = com.identy.setFingers.$$d;
+        0 = new java.lang.Object[1];
+        f((byte) ($$a[17] + 1), (byte) (-$$a[6]), $$a[0], 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -779023007, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:52:0x0838, code lost:
     
-        r1 = (java.lang.Object[]) ((java.lang.reflect.Field) r1).get(null);
-        r4 = new java.lang.Object[r35];
-        r4[0] = new int[]{r7};
-        r4[1] = new int[1];
-        r4[3] = new int[]{r6};
-        r6 = ((int[]) r1[3])[0];
-        r7 = ((int[]) r1[0])[0];
-        r4[2] = (java.lang.String[]) r1[2];
-        r1 = ~java.lang.System.identityHashCode(r36);
-        r1 = defpackage.a.c(((~((-811029068) | r1)) | 5390858) | (~((-223536907) | r1)), 184, (((~(r1 | (-218146049))) | (~((-805638210) | r1))) * (-184)) - 347012035, -1316634333);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r4[1])[0] = r1 ^ (r1 << 5);
+        0 = (java.lang.Object[]) ((java.lang.reflect.Field) 0).get(null);
+        0 = new java.lang.Object[0];
+        $$a[0] = new int[]{0};
+        $$a[1] = new int[1];
+        $$a[3] = new int[]{0};
+        0 = ((int[]) $$a[3])[0];
+        0 = ((int[]) $$a[0])[0];
+        $$a[2] = (java.lang.String[]) $$a[2];
+        0 = ~java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c(((~((-811029068) | 0)) | 5390858) | (~((-223536907) | 0)), 184, (((~(0 | (-218146049))) | (~((-805638210) | 0))) * (-184)) - 347012035, -1316634333);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:54:0x0a05, code lost:
     
-        if (((int[]) r4[3])[0] != ((int[]) r4[0])[0]) goto L118;
+        if (((int[]) $$a[3])[0] != ((int[]) $$a[0])[0]) goto L118;
      */
     /* JADX WARN: Code restructure failed: missing block: B:55:0x0a07, code lost:
     
-        r1 = new java.lang.Object[]{new int[]{r8}, new int[1], r4, new int[]{r7}};
-        r6 = ((int[]) r4[1])[0];
-        r7 = ((int[]) r4[3])[0];
-        r8 = ((int[]) r4[0])[0];
-        r4 = (java.lang.String[]) r4[2];
-        r3 = java.lang.System.identityHashCode(r36);
-        r3 = defpackage.a.c((~((~r3) | 852470554)) | (-182095420), 168, (((~(r3 | 852470554)) | (-987737916)) * (-168)) + ((((~((-182095420) | r3)) | 46828058) * 336) - 973825651), r6);
-        r3 = r3 ^ (r3 << 13);
-        r3 = r3 ^ (r3 >>> 17);
-        ((int[]) r1[1])[0] = r3 ^ (r3 << 5);
-        r1 = com.identy.setFingers.generateNFIQ + 43;
-        com.identy.setFingers.pfkrolChangeMinMaxWidth = r1 % 128;
-        r1 = r1 % 2;
-        super.onReceive(r37, r38);
+        0 = new java.lang.Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
+        0 = ((int[]) $$a[1])[0];
+        0 = ((int[]) $$a[3])[0];
+        0 = ((int[]) $$a[0])[0];
+        0 = (java.lang.String[]) $$a[2];
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~((~0) | 852470554)) | (-182095420), 168, (((~(0 | 852470554)) | (-987737916)) * (-168)) + ((((~((-182095420) | 0)) | 46828058) * 336) - 973825651), 0);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
+        0 = com.identy.setFingers.generateNFIQ + 43;
+        com.identy.setFingers.pfkrolChangeMinMaxWidth = 0 % 128;
+        0 = 0 % 2;
+        super.onReceive(0, 0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:56:0x0a85, code lost:
     
-        if (r1 != 0) goto L117;
+        if (0 != 0) goto L117;
      */
     /* JADX WARN: Code restructure failed: missing block: B:57:0x0a87, code lost:
     
@@ -934,12 +934,12 @@ final class setFingers extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:60:0x0a89, code lost:
     
-        r0 = new java.util.ArrayList();
-        r1 = (java.lang.String[]) r4[2];
+        0 = new java.util.ArrayList();
+        0 = (java.lang.String[]) $$a[2];
      */
     /* JADX WARN: Code restructure failed: missing block: B:61:0x0a94, code lost:
     
-        if (r1 == null) goto L124;
+        if (0 == null) goto L124;
      */
     /* JADX WARN: Code restructure failed: missing block: B:62:0x0a96, code lost:
     
@@ -947,12 +947,12 @@ final class setFingers extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:64:0x0a9f, code lost:
     
-        if (r11 >= r1.length) goto L150;
+        if (0 >= 0.length) goto L150;
      */
     /* JADX WARN: Code restructure failed: missing block: B:65:0x0aa1, code lost:
     
-        r0.add(r1[r11]);
-        r11 = r11 + 1;
+        0.add($$a[0]);
+        0 = 0 + 1;
      */
     /* JADX WARN: Code restructure failed: missing block: B:67:?, code lost:
     
@@ -964,75 +964,75 @@ final class setFingers extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:69:0x08b1, code lost:
     
-        r6 = new java.lang.Object[1];
-        e(new int[]{30266216, 977086156, -1650830022, 1735886405, 992645496, 1122101911, 1703073393, 478097594}, 16 - android.graphics.Color.argb(0, 0, 0, 0), r6);
-        r1 = java.lang.Class.forName((java.lang.String) r6[0]);
-        r6 = new java.lang.Object[1];
-        e(new int[]{1551909375, 223664038, 1892115062, -2072098593, -1325504391, 1390373483, -1264418426, -164569808}, (android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) + 15, r6);
-        r1 = ((java.lang.Integer) r1.getMethod((java.lang.String) r6[0], java.lang.Object.class).invoke(null, r36)).intValue();
+        0 = new java.lang.Object[1];
+        e(new int[]{30266216, 977086156, -1650830022, 1735886405, 992645496, 1122101911, 1703073393, 478097594}, 16 - android.graphics.Color.argb(0, 0, 0, 0), 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        e(new int[]{1551909375, 223664038, 1892115062, -2072098593, -1325504391, 1390373483, -1264418426, -164569808}, (android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) + 15, 0);
+        0 = ((java.lang.Integer) 0.getMethod((java.lang.String) $$a[0], java.lang.Object.class).invoke(null, 0)).intValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:70:0x08fc, code lost:
     
-        r3 = new java.lang.Object[]{749250485};
-        r4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
+        0 = new java.lang.Object[]{749250485};
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
      */
     /* JADX WARN: Code restructure failed: missing block: B:71:0x090b, code lost:
     
-        if (r4 != null) goto L102;
+        if (0 != null) goto L102;
      */
     /* JADX WARN: Code restructure failed: missing block: B:72:0x090d, code lost:
     
-        r4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0', 0, 0) + 1), 24 - android.text.TextUtils.getOffsetAfter(com.karumi.dexter.BuildConfig.FLAVOR, 0), 696 - android.graphics.ImageFormat.getBitsPerPixel(0), 1457201313, false, null, new java.lang.Class[]{java.lang.Integer.TYPE});
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0', 0, 0) + 1), 24 - android.text.TextUtils.getOffsetAfter(com.karumi.dexter.BuildConfig.FLAVOR, 0), 696 - android.graphics.ImageFormat.getBitsPerPixel(0), 1457201313, false, null, new java.lang.Class[]{java.lang.Integer.TYPE});
      */
     /* JADX WARN: Code restructure failed: missing block: B:74:0x093c, code lost:
     
-        r4 = com.identy.isFoundMatchingTemplates.PngjBadSignature.PngjBadCrcException$1eba2e16(r1, ((java.lang.reflect.Constructor) r4).newInstance(r3), -1706294469);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
+        0 = com.identy.isFoundMatchingTemplates.PngjBadSignature.PngjBadCrcException$1eba2e16(0, ((java.lang.reflect.Constructor) 0).newInstance(0), -1706294469);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
      */
     /* JADX WARN: Code restructure failed: missing block: B:75:0x094a, code lost:
     
-        if (r1 != null) goto L106;
+        if (0 != null) goto L106;
      */
     /* JADX WARN: Code restructure failed: missing block: B:76:0x094c, code lost:
     
-        r1 = (char) (14830 - (android.view.ViewConfiguration.getKeyRepeatDelay() >> 16));
-        r27 = (android.view.ViewConfiguration.getScrollBarFadeDuration() >> 16) + 28;
-        r3 = android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0) + 721;
-        r6 = com.identy.setFingers.$$d;
-        r13 = new java.lang.Object[1];
-        f((byte) (r6[17] + 1), (byte) (-r6[6]), r6[0], r13);
-        r1 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r1, r27, r3, -779023007, false, (java.lang.String) r13[0], null);
+        0 = (char) (14830 - (android.view.ViewConfiguration.getKeyRepeatDelay() >> 16));
+        0 = (android.view.ViewConfiguration.getScrollBarFadeDuration() >> 16) + 28;
+        0 = android.text.TextUtils.indexOf(com.karumi.dexter.BuildConfig.FLAVOR, com.karumi.dexter.BuildConfig.FLAVOR, 0) + 721;
+        0 = com.identy.setFingers.$$d;
+        0 = new java.lang.Object[1];
+        f((byte) ($$a[17] + 1), (byte) (-$$a[6]), $$a[0], 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -779023007, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:77:0x098a, code lost:
     
-        ((java.lang.reflect.Field) r1).set(null, r4);
+        ((java.lang.reflect.Field) 0).set(null, 0);
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x00a5, code lost:
     
-        if (r13 != (-1)) goto L16;
+        if (0 != (-1)) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:80:0x09a1, code lost:
     
-        r1 = java.lang.Long.valueOf(((java.lang.Long) java.lang.Class.forName(r7).getDeclaredMethod(r12, null).invoke(null, null)).longValue());
-        r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
+        0 = java.lang.Long.valueOf(((java.lang.Long) java.lang.Class.forName(0).getDeclaredMethod(0, null).invoke(null, null)).longValue());
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
      */
     /* JADX WARN: Code restructure failed: missing block: B:81:0x09ac, code lost:
     
-        if (r3 != null) goto L111;
+        if (0 != null) goto L111;
      */
     /* JADX WARN: Code restructure failed: missing block: B:82:0x09ae, code lost:
     
-        r3 = (char) (android.view.View.MeasureSpec.getSize(0) + 14830);
-        r27 = 27 - android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0');
-        r5 = (android.os.Process.getElapsedCpuTime() > r24 ? 1 : (android.os.Process.getElapsedCpuTime() == r24 ? 0 : -1)) + 720;
-        r7 = com.identy.setFingers.$$d;
-        r9 = new java.lang.Object[1];
-        f((byte) 13, r7[17], r7[0], r9);
-        r3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(r3, r27, r5, -815159504, false, (java.lang.String) r9[0], null);
+        0 = (char) (android.view.View.MeasureSpec.getSize(0) + 14830);
+        0 = 27 - android.text.TextUtils.lastIndexOf(com.karumi.dexter.BuildConfig.FLAVOR, '0');
+        0 = (android.os.Process.getElapsedCpuTime() > 0 ? 1 : (android.os.Process.getElapsedCpuTime() == 0 ? 0 : -1)) + 720;
+        0 = com.identy.setFingers.$$d;
+        0 = new java.lang.Object[1];
+        f((byte) 13, $$a[17], $$a[0], 0);
+        0 = com.d.e.a.PngjBadCrcException.PngjBadSignature(0, 0, 0, -815159504, false, (java.lang.String) $$a[0], null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:83:0x09ea, code lost:
     
-        ((java.lang.reflect.Field) r3).set(null, r1);
+        ((java.lang.reflect.Field) 0).set(null, 0);
         com.identy.setFingers.generateNFIQ = (com.identy.setFingers.pfkrolChangeMinMaxWidth + 125) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:86:0x0aae, code lost:
@@ -1041,76 +1041,76 @@ final class setFingers extends e1 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:88:0x06f9, code lost:
     
-        r1 = new java.util.ArrayList();
-        r1.add((java.lang.String) r4[1]);
-        r1.add((java.lang.String) r4[0]);
-        r1 = new int[r3];
-        r6 = r3 - 1;
-        r1[r6] = 1;
-        android.widget.Toast.makeText((android.content.Context) null, r1[((r3 * r6) % 2) - 1], 1).show();
-        r3 = new java.lang.Object[5];
-        r3[2] = new int[]{r14};
-        r3[3] = new int[]{r13};
-        r3[r35] = new int[1];
-        r8 = ((int[]) r4[r35])[0];
-        r13 = ((int[]) r4[3])[0];
-        r14 = ((int[]) r4[2])[0];
-        r15 = (java.lang.String) r4[1];
-        r4 = (java.lang.String) r4[0];
-        r3[1] = r15;
-        r3[0] = r4;
-        r1 = java.lang.System.identityHashCode(r36);
-        r1 = defpackage.a.c((~((~r1) | (-28820308))) | 583593973, 398, (((~((-28820308) | r1)) | 583593973) * 398) + 418041617, r8);
-        r1 = r1 ^ (r1 << 13);
-        r1 = r1 ^ (r1 >>> 17);
-        ((int[]) r3[r35])[0] = r1 ^ (r1 << 5);
+        0 = new java.util.ArrayList();
+        0.add((java.lang.String) $$a[1]);
+        0.add((java.lang.String) $$a[0]);
+        0 = new int[0];
+        0 = 0 - 1;
+        $$a[0] = 1;
+        android.widget.Toast.makeText((android.content.Context) null, $$a[((0 * 0) % 2) - 1], 1).show();
+        0 = new java.lang.Object[5];
+        $$a[2] = new int[]{0};
+        $$a[3] = new int[]{0};
+        $$a[0] = new int[1];
+        0 = ((int[]) $$a[0])[0];
+        0 = ((int[]) $$a[3])[0];
+        0 = ((int[]) $$a[2])[0];
+        0 = (java.lang.String) $$a[1];
+        0 = (java.lang.String) $$a[0];
+        $$a[1] = 0;
+        $$a[0] = 0;
+        0 = java.lang.System.identityHashCode(0);
+        0 = defpackage.a.c((~((~0) | (-28820308))) | 583593973, 398, (((~((-28820308) | 0)) | 583593973) * 398) + 418041617, 0);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[0])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:89:0x04da, code lost:
     
-        if (r37 == null) goto L67;
+        if (0 == null) goto L67;
      */
     /* JADX WARN: Code restructure failed: missing block: B:8:0x01f0, code lost:
     
-        r8 = new java.lang.Object[1];
-        e(new int[]{30266216, 977086156, -1650830022, 1735886405, 992645496, 1122101911, 1703073393, 478097594}, android.graphics.Color.alpha(0) + 16, r8);
-        r1 = java.lang.Class.forName((java.lang.String) r8[0]);
-        r13 = new java.lang.Object[1];
-        e(new int[]{1551909375, 223664038, 1892115062, -2072098593, -1325504391, 1390373483, -1264418426, -164569808}, 15 - ((byte) android.view.KeyEvent.getModifierMetaStateMask()), r13);
-        r1 = ((java.lang.Integer) r1.getMethod((java.lang.String) r13[0], java.lang.Object.class).invoke(null, r36)).intValue();
+        0 = new java.lang.Object[1];
+        e(new int[]{30266216, 977086156, -1650830022, 1735886405, 992645496, 1122101911, 1703073393, 478097594}, android.graphics.Color.alpha(0) + 16, 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        e(new int[]{1551909375, 223664038, 1892115062, -2072098593, -1325504391, 1390373483, -1264418426, -164569808}, 15 - ((byte) android.view.KeyEvent.getModifierMetaStateMask()), 0);
+        0 = ((java.lang.Integer) 0.getMethod((java.lang.String) $$a[0], java.lang.Object.class).invoke(null, 0)).intValue();
      */
     /* JADX WARN: Code restructure failed: missing block: B:90:0x04dc, code lost:
     
-        r1 = com.identy.setFingers.pfkrolChangeMinMaxWidth;
-        com.identy.setFingers.generateNFIQ = (r1 + 63) % 128;
+        0 = com.identy.setFingers.pfkrolChangeMinMaxWidth;
+        com.identy.setFingers.generateNFIQ = (0 + 63) % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:91:0x04e6, code lost:
     
-        if ((r37 instanceof android.content.ContextWrapper) == false) goto L66;
+        if ((0 instanceof android.content.ContextWrapper) == false) goto L66;
      */
     /* JADX WARN: Code restructure failed: missing block: B:92:0x04e8, code lost:
     
-        r1 = r1 + 65;
-        com.identy.setFingers.generateNFIQ = r1 % 128;
+        0 = 0 + 65;
+        com.identy.setFingers.generateNFIQ = 0 % 128;
      */
     /* JADX WARN: Code restructure failed: missing block: B:93:0x04f2, code lost:
     
-        if ((r1 % 2) == 0) goto L64;
+        if ((0 % 2) == 0) goto L64;
      */
     /* JADX WARN: Code restructure failed: missing block: B:95:0x04fb, code lost:
     
-        if (((android.content.ContextWrapper) r37).getBaseContext() == null) goto L62;
+        if (((android.content.ContextWrapper) 0).getBaseContext() == null) goto L62;
      */
     /* JADX WARN: Code restructure failed: missing block: B:96:0x04fe, code lost:
     
-        r1 = null;
+        0 = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:98:0x050f, code lost:
     
-        r13 = new java.lang.Object[1];
-        e(new int[]{30266216, 977086156, -1650830022, 1735886405, 992645496, 1122101911, 1703073393, 478097594}, (android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) + 15, r13);
-        r4 = java.lang.Class.forName((java.lang.String) r13[0]);
-        r13 = new java.lang.Object[1];
-        e(new int[]{1551909375, 223664038, 1892115062, -2072098593, -1325504391, 1390373483, -1264418426, -164569808}, 16 - android.view.View.resolveSizeAndState(0, 0, 0), r13);
+        0 = new java.lang.Object[1];
+        e(new int[]{30266216, 977086156, -1650830022, 1735886405, 992645496, 1122101911, 1703073393, 478097594}, (android.media.AudioTrack.getMaxVolume() > 0.0f ? 1 : (android.media.AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) + 15, 0);
+        0 = java.lang.Class.forName((java.lang.String) $$a[0]);
+        0 = new java.lang.Object[1];
+        e(new int[]{1551909375, 223664038, 1892115062, -2072098593, -1325504391, 1390373483, -1264418426, -164569808}, 16 - android.view.View.resolveSizeAndState(0, 0, 0), 0);
      */
     @Override // com.identy.e1, android.content.BroadcastReceiver
     /*
@@ -1632,8 +1632,8 @@ final class setFingers extends e1 {
             pngjBadCrcException.setLayerType(1, null);
             double d = this.getPadSub2 / 5.6d;
             double d2 = this.getPadSub3;
-            this.CaptureRolledFingersActivity = new RectF((int) d, (int) (d2 / 6.0d), (int) (r2 - d), (int) (d2 - (d2 / 3.0d)));
-            this.getScore = (int) (r1.width() / 3.7d);
+            this.CaptureRolledFingersActivity = new RectF((int) d, (int) (d2 / 6.0d), (int) (0 - d), (int) (d2 - (d2 / 3.0d)));
+            this.getScore = (int) (0.width() / 3.7d);
             this.isQualityFailed = (int) (this.CaptureRolledFingersActivity.width() / 2.0f);
             try {
                 this.getL2Score = new com.identy.ui.d.values(this.Action, 5.6d, 6.0d, 5.6d, 3.0d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), 90, true, false, false, this.uxd565jk, this.cvtyuv2bgr);

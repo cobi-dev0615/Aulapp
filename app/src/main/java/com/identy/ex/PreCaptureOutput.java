@@ -177,7 +177,7 @@ public class PreCaptureOutput {
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int identityHashCode = System.identityHashCode(this);
-                        int c = a.c((~(identityHashCode | 331497871)) | (~((~identityHashCode) | (-331497872))) | (~((-167391409) | identityHashCode)), 959, ((((~((-167391409) | r5)) | (~((-331497872) | identityHashCode))) | (~(r5 | 331497871))) * 959) - 2013489538, 353463146);
+                        int c = a.c((~(identityHashCode | 331497871)) | (~((~identityHashCode) | (-331497872))) | (~((-167391409) | identityHashCode)), 959, ((((~((-167391409) | 0)) | (~((-331497872) | identityHashCode))) | (~(0 | 331497871))) * 959) - 2013489538, 353463146);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -265,7 +265,7 @@ public class PreCaptureOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | (-95229732))) | 594119011, 519, (((~((~identityHashCode) | (-19464484))) | (~((-75765249) | identityHashCode))) * (-519)) + ((((~((-594119012) | r3)) | (-95229732)) * 519) - 726608762), 1537818787);
+                    int c = a.c((~(identityHashCode | (-95229732))) | 594119011, 519, (((~((~identityHashCode) | (-19464484))) | (~((-75765249) | identityHashCode))) * (-519)) + ((((~((-594119012) | 0)) | (-95229732)) * 519) - 726608762), 1537818787);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -363,7 +363,7 @@ public class PreCaptureOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c(identityHashCode | (-439802602), 496, (((~((-938691882) | identityHashCode)) | 633406720 | (~((~identityHashCode) | (-134517441)))) * (-496)) + ((r3 * 992) - 2137057233), -955806130);
+                    int c = a.c(identityHashCode | (-439802602), 496, (((~((-938691882) | identityHashCode)) | 633406720 | (~((~identityHashCode) | (-134517441)))) * (-496)) + ((0 * 992) - 2137057233), -955806130);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -477,7 +477,7 @@ public class PreCaptureOutput {
             int i162 = (((i152 | (-63)) << 1) - (i152 ^ (-63))) / 32;
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
             int i182 = 0 / ((i142 & (-((i172 ^ 1) + ((i172 & 1) << 1)))) * 1107);
-            while (r0.hasNext()) {
+            while (0.hasNext()) {
             }
             return arrayList2;
         } catch (Throwable th) {
@@ -545,7 +545,7 @@ public class PreCaptureOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = a.c((~(elapsedCpuTime | (-519137810))) | 1018027089, 519, (((~((~elapsedCpuTime) | (-480331794))) | (~((-38806017) | elapsedCpuTime))) * (-519)) + ((((~((-1018027090) | r3)) | (-519137810)) * 519) - 726608762), -13850401);
+                    int c = a.c((~(elapsedCpuTime | (-519137810))) | 1018027089, 519, (((~((~elapsedCpuTime) | (-480331794))) | (~((-38806017) | elapsedCpuTime))) * (-519)) + ((((~((-1018027090) | 0)) | (-519137810)) * 519) - 726608762), -13850401);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -675,7 +675,7 @@ public class PreCaptureOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | (-237569))) | (~((~identityHashCode) | 35889448)) | 499126848, 757, ((~(535016296 | identityHashCode)) * 1514) + (((534778728 | r3) * (-757)) - 1296997628), 1107248303);
+                    int c = a.c((~(identityHashCode | (-237569))) | (~((~identityHashCode) | 35889448)) | 499126848, 757, ((~(535016296 | identityHashCode)) * 1514) + (((534778728 | 0) * (-757)) - 1296997628), 1107248303);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -713,11 +713,11 @@ public class PreCaptureOutput {
     /* JADX WARN: Can't wrap try/catch for region: R(15:(2:3|(12:5|6|7|8|9|10|11|12|13|(2:16|14)|17|18))|23|24|25|6|7|8|9|10|11|12|13|(1:14)|17|18) */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0154, code lost:
     
-        r12 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0155, code lost:
     
-        r12.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Removed duplicated region for block: B:16:0x016b A[LOOP:0: B:14:0x0165->B:16:0x016b, LOOP_END] */
     /*
@@ -734,7 +734,7 @@ public class PreCaptureOutput {
                 j3 = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j4 > j3) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~(System.identityHashCode(this) | 658283361)) | 159394081, 529, (((~((~r0) | 658283361)) | 142614528) * 529) - 1876653424, 1515838705);
+                    int c = a.c((~(System.identityHashCode(this) | 658283361)) | 159394081, 529, (((~((~0) | 658283361)) | 142614528) * 529) - 1876653424, 1515838705);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -889,11 +889,11 @@ public class PreCaptureOutput {
     /* JADX WARN: Can't wrap try/catch for region: R(16:(2:3|(13:5|6|7|8|9|10|11|12|13|(5:28|29|(2:32|30)|33|34)|15|(4:17|(2:20|18)|21|22)|26))|42|43|44|6|7|8|9|10|11|12|13|(0)|15|(0)|26) */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x00e8, code lost:
     
-        r2 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x00e9, code lost:
     
-        r2.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Removed duplicated region for block: B:17:0x0177  */
     /* JADX WARN: Removed duplicated region for block: B:28:0x00f7 A[EXC_TOP_SPLITTER, SYNTHETIC] */
@@ -934,7 +934,7 @@ public class PreCaptureOutput {
                                 int i9 = (((i8 >> 27) - 63) / 32) + 1;
                                 int i10 = ((i8 | i9) << 1) - (i9 ^ i8);
                                 int i11 = i8 >> 23;
-                                int i12 = (((r8 >> 29) - 15) / 8) + 1;
+                                int i12 = (((0 >> 29) - 15) / 8) + 1;
                                 jSONArray.put(Base64.encodeToString(bArr, 0 / ((((-(i10 ^ ((((i11 & (-1023)) + (i11 | (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE) + 1))) + 5) & (-((i12 ^ 1) + ((i12 & 1) << 1)))) * 867)));
                             }
                             jSONObject.put("segments", jSONArray);

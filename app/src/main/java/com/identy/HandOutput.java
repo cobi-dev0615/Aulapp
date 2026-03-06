@@ -179,7 +179,7 @@ public class HandOutput {
             a(b, (byte) (b | 96), (byte) ($$b & 55), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[32], (byte) 125, r1[53], objArr4);
+            a($$a[32], (byte) 125, $$a[53], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1588123288);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4874;
@@ -204,7 +204,7 @@ public class HandOutput {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) Runtime.getRuntime().totalMemory())) | (-130149866))) | 33647017, 983, (((~((-368739415) | r0)) | (-130149866)) * (-983)) - 1599656758, -1414748314);
+                    int c = defpackage.a.c((~((~((int) Runtime.getRuntime().totalMemory())) | (-130149866))) | 33647017, 983, (((~((-368739415) | 0)) | (-130149866)) * (-983)) - 1599656758, -1414748314);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -249,7 +249,7 @@ public class HandOutput {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | 346262818)) | (-152626462), 305, (((~(r0 | 346262818)) | (-498855232)) * 305) - 1958702672, -1706388314);
+                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | 346262818)) | (-152626462), 305, (((~(0 | 346262818)) | (-498855232)) * 305) - 1958702672, -1706388314);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -312,7 +312,7 @@ public class HandOutput {
             jSONObject3.put("date", new SimpleDateFormat("16,27,yyyy-MM-dd'T'HH:mm:s.SSS Z".substring(35400 / (((-((i162 & 1) + (i162 | 1))) & i132) * 1475)), context.getResources().getConfiguration().getLocales().get(0)).format(this.PngjBadSignature));
             jSONObject3.put("hand", this.valueOf);
             JSONObject jSONObject22 = new JSONObject();
-            while (r1.hasNext()) {
+            while (0.hasNext()) {
             }
             jSONObject3.put("templates", jSONObject22);
             return jSONObject3;

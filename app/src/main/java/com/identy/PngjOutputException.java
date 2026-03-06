@@ -104,10 +104,10 @@ public final class PngjOutputException {
             r.append("F");
             obj = r.toString();
         } else if (pairArr2.length == 1) {
-            StringBuilder r2 = defpackage.a.r(obj2);
-            r2.append(((Hand) this.getNfiq1Score[0].first).toString().toUpperCase().charAt(0));
-            r2.append(((Finger) this.getNfiq1Score[0].second).toString().toUpperCase().charAt(0));
-            obj = r2.toString();
+            StringBuilder 0 = defpackage.a.r(obj2);
+            0.append(((Hand) this.getNfiq1Score[0].first).toString().toUpperCase().charAt(0));
+            0.append(((Finger) this.getNfiq1Score[0].second).toString().toUpperCase().charAt(0));
+            obj = 0.toString();
         } else {
             Hand hand3 = null;
             String str = BuildConfig.FLAVOR;
@@ -118,17 +118,17 @@ public final class PngjOutputException {
                 } else if (!hand3.equals(pair6.first)) {
                     z = true;
                 }
-                StringBuilder r3 = defpackage.a.r(str);
-                r3.append(((Finger) pair6.second).toString().charAt(0));
-                str = r3.toString();
+                StringBuilder 0 = defpackage.a.r(str);
+                0.append(((Finger) pair6.second).toString().charAt(0));
+                str = 0.toString();
             }
             if (z) {
                 obj = IdentyB.d(obj2, "2T");
             } else {
-                StringBuilder r4 = defpackage.a.r(obj2);
-                r4.append(((Hand) this.getNfiq1Score[0].first).toString().toUpperCase().charAt(0));
-                r4.append(str);
-                obj = r4.toString();
+                StringBuilder 0 = defpackage.a.r(obj2);
+                0.append(((Hand) this.getNfiq1Score[0].first).toString().toUpperCase().charAt(0));
+                0.append(str);
+                obj = 0.toString();
             }
         }
         String d = IdentyB.d(obj, "|");
@@ -169,19 +169,19 @@ public final class PngjOutputException {
             str2 = valueOf;
             d = IdentyB.d(d, str2);
         }
-        StringBuilder r5 = defpackage.a.r(IdentyB.d(d, "|"));
-        r5.append((int) this.PngjBadCrcException);
-        String d2 = IdentyB.d(r5.toString(), "|");
+        StringBuilder 0 = defpackage.a.r(IdentyB.d(d, "|"));
+        0.append((int) this.PngjBadCrcException);
+        String d2 = IdentyB.d(0.toString(), "|");
         if (this.PngjExceptionInternal.keySet().size() != 0) {
             String str3 = BuildConfig.FLAVOR;
             for (int i3 = 0; i3 < 10; i3++) {
                 Pair pair7 = pairArr[i3];
                 if (this.PngjExceptionInternal.containsKey(pair7)) {
-                    StringBuilder r6 = defpackage.a.r(str3);
-                    r6.append(str3.equals(BuildConfig.FLAVOR) ? BuildConfig.FLAVOR : "#");
-                    StringBuilder r7 = defpackage.a.r(r6.toString());
-                    r7.append(this.PngjExceptionInternal.get(pair7));
-                    str3 = r7.toString();
+                    StringBuilder 0 = defpackage.a.r(str3);
+                    0.append(str3.equals(BuildConfig.FLAVOR) ? BuildConfig.FLAVOR : "#");
+                    StringBuilder 0 = defpackage.a.r(0.toString());
+                    0.append(this.PngjExceptionInternal.get(pair7));
+                    str3 = 0.toString();
                 }
             }
             d2 = IdentyB.d(IdentyB.d(d2, str3), "|");
@@ -191,11 +191,11 @@ public final class PngjOutputException {
             for (int i4 = 0; i4 < 10; i4++) {
                 Pair pair8 = pairArr[i4];
                 if (this.values.containsKey(pair8)) {
-                    StringBuilder r8 = defpackage.a.r(str4);
-                    r8.append(str4.equals(BuildConfig.FLAVOR) ? BuildConfig.FLAVOR : "#");
-                    StringBuilder r9 = defpackage.a.r(r8.toString());
-                    r9.append(this.values.get(pair8));
-                    str4 = r9.toString();
+                    StringBuilder 0 = defpackage.a.r(str4);
+                    0.append(str4.equals(BuildConfig.FLAVOR) ? BuildConfig.FLAVOR : "#");
+                    StringBuilder 0 = defpackage.a.r(0.toString());
+                    0.append(this.values.get(pair8));
+                    str4 = 0.toString();
                 }
             }
             d2 = IdentyB.d(IdentyB.d(d2, str4), "|");
@@ -247,9 +247,9 @@ public final class PngjOutputException {
             for (int i5 = 0; i5 < 10; i5++) {
                 Pair pair9 = pairArr[i5];
                 if (this.PngjException.containsKey(pair9)) {
-                    StringBuilder r10 = defpackage.a.r(d2);
-                    r10.append(this.PngjException.get(pair9));
-                    d2 = r10.toString();
+                    StringBuilder 0 = defpackage.a.r(d2);
+                    0.append(this.PngjException.get(pair9));
+                    d2 = 0.toString();
                 }
             }
             d2 = IdentyB.d(d2, "|");
@@ -259,11 +259,11 @@ public final class PngjOutputException {
             for (int i6 = 0; i6 < 10; i6++) {
                 Pair pair10 = pairArr[i6];
                 if (this.PngjBadSignature.containsKey(pair10)) {
-                    StringBuilder r11 = defpackage.a.r(str5);
-                    r11.append(str5.equals(BuildConfig.FLAVOR) ? BuildConfig.FLAVOR : "#");
-                    StringBuilder r12 = defpackage.a.r(r11.toString());
-                    r12.append(this.PngjBadSignature.get(pair10));
-                    str5 = r12.toString();
+                    StringBuilder 0 = defpackage.a.r(str5);
+                    0.append(str5.equals(BuildConfig.FLAVOR) ? BuildConfig.FLAVOR : "#");
+                    StringBuilder 0 = defpackage.a.r(0.toString());
+                    0.append(this.PngjBadSignature.get(pair10));
+                    str5 = 0.toString();
                 }
             }
             StringBuilder q16 = x5.q(IdentyB.d(d2, str5), "#r");
@@ -275,9 +275,9 @@ public final class PngjOutputException {
         q17.append("/");
         q17.append(this.getData);
         q17.append("|");
-        StringBuilder r13 = defpackage.a.r(q17.toString());
-        r13.append(this.valueOf / 1000);
-        String obj4 = r13.toString();
+        StringBuilder 0 = defpackage.a.r(q17.toString());
+        0.append(this.valueOf / 1000);
+        String obj4 = 0.toString();
         ERRORS errors = this.getMatchingTime;
         return errors != null ? errors.equals(ERRORS.TIMED_OUT) ? IdentyB.d(obj4, "|TO") : this.getMatchingTime.equals(ERRORS.EXCEEDED_TRANSACTION_LIMIT) ? IdentyB.d(obj4, "|TE") : this.getMatchingTime.equals(ERRORS.ACTIVITY_PAUSED_ON_BACK_PRESSED) ? IdentyB.d(obj4, "|AP") : this.getMatchingTime.equals(ERRORS.USER_CANCELLED_ON_NEXT_DETECTION) ? IdentyB.d(obj4, "|UC") : obj4 : obj4;
     }

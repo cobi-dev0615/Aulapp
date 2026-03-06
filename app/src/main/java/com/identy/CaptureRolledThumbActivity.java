@@ -32,10 +32,10 @@ import java.util.HashMap;
 
 /* loaded from: classes2.dex */
 public class CaptureRolledThumbActivity extends FingerActivity {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static long PngjBadCrcException;
@@ -43,10 +43,10 @@ public class CaptureRolledThumbActivity extends FingerActivity {
     private static int values;
 
     public class PngjBadSignature implements Runnable {
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
-        private static final byte[] $$c = null;
-        private static final int $$d = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
+        private static  byte[] $$c = null;
+        private static  int $$d = 0;
         private static int $10;
         private static int $11;
         private static int PngjException;
@@ -714,7 +714,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c2, i4, mirror, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature3).get(null);
-                        PngjBadSignature$1eba2e16 = new Object[]{new int[]{r5}, new int[1], r0, new int[]{r4}};
+                        PngjBadSignature$1eba2e16 = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i5 = ((int[]) objArr5[3])[0];
                         int i6 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
@@ -727,7 +727,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                         i2 = ((int[]) PngjBadSignature$1eba2e16[0])[0];
                         i3 = ((int[]) PngjBadSignature$1eba2e16[3])[0];
                         if (i3 != i2) {
-                            Object[] objArr6 = {new int[]{r8}, new int[1], r1, new int[]{r5}};
+                            Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
                             int i10 = ((int[]) PngjBadSignature$1eba2e16[1])[0];
                             int i11 = ((int[]) PngjBadSignature$1eba2e16[3])[0];
                             int i12 = ((int[]) PngjBadSignature$1eba2e16[0])[0];
@@ -748,12 +748,12 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                             }
                         }
                         Toast.makeText((Context) null, i3 / (((i3 - 1) * i3) % 2), 0).show();
-                        Object[] objArr7 = {new int[]{r9}, new int[1], r1, new int[]{r5}};
+                        Object[] objArr7 = {new int[]{0}, new int[1], 0, new int[]{0}};
                         int i15 = ((int[]) PngjBadSignature$1eba2e16[1])[0];
                         int i16 = ((int[]) PngjBadSignature$1eba2e16[3])[0];
                         int i17 = ((int[]) PngjBadSignature$1eba2e16[0])[0];
                         String[] strArr4 = (String[]) PngjBadSignature$1eba2e16[2];
-                        int c5 = defpackage.a.c((~((~System.identityHashCode(this)) | 169493228)) | (-966112390), 184, (((-830845954) | r1) * 184) - 1589380515, i15);
+                        int c5 = defpackage.a.c((~((~System.identityHashCode(this)) | 169493228)) | (-966112390), 184, (((-830845954) | 0) * 184) - 1589380515, i15);
                         int i18 = c5 ^ (c5 << 13);
                         int i19 = i18 ^ (i18 >>> 17);
                         ((int[]) objArr7[1])[0] = i19 ^ (i19 << 5);

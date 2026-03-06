@@ -23,7 +23,7 @@ public final class ClassInCourseViewModel$saveTestInDB$2 extends SuspendLambda i
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassInCourseViewModel$saveTestInDB$2(ClassInCourseViewModel classInCourseViewModel, String str, String str2, Continuation<? super ClassInCourseViewModel$saveTestInDB$2> continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = classInCourseViewModel;
         this.$testID = str;
         this.$sessionID = str2;
@@ -31,7 +31,7 @@ public final class ClassInCourseViewModel$saveTestInDB$2 extends SuspendLambda i
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ClassInCourseViewModel$saveTestInDB$2(this.this$0, this.$testID, this.$sessionID, continuation);
+        return (Continuation<Unit>) (Object) new ClassInCourseViewModel$saveTestInDB$2(this.this$0, this.$testID, this.$sessionID, (Continuation) continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -59,6 +59,6 @@ public final class ClassInCourseViewModel$saveTestInDB$2 extends SuspendLambda i
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ClassInCourseViewModel$saveTestInDB$2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ClassInCourseViewModel$saveTestInDB$2) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

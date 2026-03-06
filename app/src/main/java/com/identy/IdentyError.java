@@ -25,12 +25,12 @@ import kotlin.jvm.internal.ByteCompanionObject;
 
 /* loaded from: classes2.dex */
 public final class IdentyError extends IdentyResponse {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  int $$f = 0;
     private static int $10;
     private static int $11;
     private static int PngjExceptionInternal;
@@ -299,21 +299,21 @@ public final class IdentyError extends IdentyResponse {
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x004c, code lost:
     
-        if (r8 <= r10) goto L24;
+        if (0 <= 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0031, code lost:
     
-        if (r8 <= r10) goto L24;
+        if (0 <= 0) goto L24;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004f, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = java.lang.System.identityHashCode(r13);
-        r4 = ~r0;
-        r0 = defpackage.a.c((~(r4 | 925329944)) | (~(426440664 | r4)), 865, ((~(r0 | 925329944)) * 865) + ((((~((-925329945) | r4)) | 426440664) * (-865)) + 1549361552), -1411907857);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = java.lang.System.identityHashCode(0);
+        0 = ~0;
+        0 = defpackage.a.c((~(0 | 925329944)) | (~(426440664 | 0)), 865, ((~(0 | 925329944)) * 865) + ((((~((-925329945) | 0)) | 426440664) * (-865)) + 1549361552), -1411907857);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0102  */
     /*
@@ -334,8 +334,8 @@ public final class IdentyError extends IdentyResponse {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 4873;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 4873;
+                Fpnative.valueOf = 0;
                 ERRORS errors = this.PngjOutputException;
                 i = PngjExceptionInternal + 45;
                 PngjUnsupportedException = i % 128;
@@ -345,10 +345,10 @@ public final class IdentyError extends IdentyResponse {
                 return errors;
             }
             Object[] objArr2 = new Object[1];
-            a((byte) 97, (byte) ($$d[30] - 1), r7[113], objArr2);
+            a((byte) 97, (byte) ($$d[30] - 1), $$a[113], objArr2);
             Class<?> cls = Class.forName((String) objArr2[0]);
             Object[] objArr3 = new Object[1];
-            a((byte) 125, r7[53], r7[63], objArr3);
+            a((byte) 125, $$a[53], $$a[63], objArr3);
             Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -1411907857);
             j = ((long[]) objArr4[0])[0];
             ((long[]) objArr4[0])[0] = j + 4873;
@@ -493,7 +493,7 @@ public final class IdentyError extends IdentyResponse {
                                         PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) - 1), deadChar, tapTimeout, 1452666181, false, (String) objArr7[0], null);
                                     }
                                     Object[] objArr8 = (Object[]) ((Field) PngjBadSignature5).get(null);
-                                    objArr2 = new Object[]{new int[1], new int[]{r8}, new int[]{r0}};
+                                    objArr2 = new Object[]{new int[1], new int[]{0}, new int[]{0}};
                                     int i8 = ((int[]) objArr8[1])[0];
                                     int i9 = ((int[]) objArr8[2])[0];
                                     int identityHashCode2 = System.identityHashCode(this);
@@ -530,7 +530,7 @@ public final class IdentyError extends IdentyResponse {
                                         ((int[]) objArr10[1])[0] = i21;
                                         ((int[]) objArr10[c2])[0] = i22;
                                         int uptimeMillis = (int) SystemClock.uptimeMillis();
-                                        int c7 = defpackage.a.c((~(uptimeMillis | 760023247)) | (~((-704219988) | uptimeMillis)) | 11567888, 407, (((~(704219987 | uptimeMillis)) | (~((~uptimeMillis) | (-760023248))) | 11567888) * 407) + (((67371148 | r3) * (-814)) - 448359599), i20);
+                                        int c7 = defpackage.a.c((~(uptimeMillis | 760023247)) | (~((-704219988) | uptimeMillis)) | 11567888, 407, (((~(704219987 | uptimeMillis)) | (~((~uptimeMillis) | (-760023248))) | 11567888) * 407) + (((67371148 | 0) * (-814)) - 448359599), i20);
                                         int i23 = c7 ^ (c7 << 13);
                                         int i24 = i23 ^ (i23 >>> 17);
                                         ((int[]) objArr10[0])[0] = i24 ^ (i24 << 5);

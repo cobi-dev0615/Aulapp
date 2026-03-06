@@ -24,7 +24,7 @@ public final class ClassInCourseViewModel$getSessionDataApi$1$1$emit$1<T> extend
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
     public ClassInCourseViewModel$getSessionDataApi$1$1$emit$1(ClassInCourseViewModel$getSessionDataApi$1.AnonymousClass1<? super T> anonymousClass1, Continuation<? super ClassInCourseViewModel$getSessionDataApi$1$1$emit$1> continuation) {
-        super(continuation);
+        super((Continuation<Object>) continuation);
         this.this$0 = anonymousClass1;
     }
 

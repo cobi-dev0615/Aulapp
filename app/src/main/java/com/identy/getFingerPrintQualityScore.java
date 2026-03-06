@@ -21,8 +21,8 @@ import org.identy.opencv.core.Mat;
 public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, ArrayList<PostCaptureOutPut>> {
     private static final byte[] $$a;
     private static final int $$b;
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
     private boolean PngjBadCrcException;
     private ArrayList PngjBadSignature;
     private WeakReference PngjException;

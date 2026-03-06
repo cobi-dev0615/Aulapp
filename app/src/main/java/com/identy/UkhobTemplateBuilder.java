@@ -281,7 +281,7 @@ public class UkhobTemplateBuilder {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c(~((~identityHashCode) | 927768388), 476, ((~(927768388 | identityHashCode)) * 952) + (((285217028 | r6) * (-476)) - 1940637189), 289993935);
+                    int c = defpackage.a.c(~((~identityHashCode) | 927768388), 476, ((~(927768388 | identityHashCode)) * 952) + (((285217028 | 0) * (-476)) - 1940637189), 289993935);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

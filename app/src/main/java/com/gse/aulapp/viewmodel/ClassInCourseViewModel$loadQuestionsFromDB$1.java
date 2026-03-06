@@ -17,7 +17,7 @@ public final class ClassInCourseViewModel$loadQuestionsFromDB$1 extends Continua
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassInCourseViewModel$loadQuestionsFromDB$1(ClassInCourseViewModel classInCourseViewModel, Continuation<? super ClassInCourseViewModel$loadQuestionsFromDB$1> continuation) {
-        super(continuation);
+        super((Continuation<Object>) continuation);
         this.this$0 = classInCourseViewModel;
     }
 

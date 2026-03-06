@@ -49,8 +49,8 @@ public enum IdentyEncrytion {
         }
     }),
     RSA_AES(new com.identy.e.PngjBadSignature() { // from class: com.identy.e.PngjBadCrcException
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
         private static int PngjBadCrcException;
         private static int PngjBadSignature;
         private static byte[] PngjException;
@@ -219,11 +219,11 @@ public enum IdentyEncrytion {
                         if (i7 != 0) {
                             byte[] bArr6 = PngjException;
                             pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                            pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr6[r4] ^ j)) + s)) ^ b2));
+                            pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((byte) (((byte) (bArr6[0] ^ j)) + s)) ^ b2));
                         } else {
                             short[] sArr = values;
                             pngjPrematureEnding.values = pngjPrematureEnding.values - 1;
-                            pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[r4] ^ j)) + s)) ^ b2));
+                            pngjPrematureEnding.valueOf = (char) (pngjPrematureEnding.PngjBadCrcException + (((short) (((short) (sArr[0] ^ j)) + s)) ^ b2));
                         }
                         sb.append(pngjPrematureEnding.valueOf);
                         pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;
@@ -315,8 +315,8 @@ public enum IdentyEncrytion {
         }
     });
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     com.identy.e.PngjBadSignature a;
 
     static {
@@ -487,7 +487,7 @@ public enum IdentyEncrytion {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c(~(identityHashCode | 504887759), 113, (((~((~identityHashCode) | 1071119823)) | (~((-1003777040) | identityHashCode)) | 437544975) * (-113)) + ((((~(504887759 | r5)) | 1003777039) * 226) - 41024400), -1835887858);
+                    int c = defpackage.a.c(~(identityHashCode | 504887759), 113, (((~((~identityHashCode) | 1071119823)) | (~((-1003777040) | identityHashCode)) | 437544975) * (-113)) + ((((~(504887759 | 0)) | 1003777039) * 226) - 41024400), -1835887858);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

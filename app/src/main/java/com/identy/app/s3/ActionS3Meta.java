@@ -43,8 +43,8 @@ public class ActionS3Meta {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[]{r1 ^ (r1 << 5)}};
-                    int c = a.c((~((~i) | 595891346)) | 570725504, 374, ((25165842 | r1) * (-374)) - 1676961397, 988157494);
+                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[]{0 ^ (0 << 5)}};
+                    int c = a.c((~((~i) | 595891346)) | 570725504, 374, ((25165842 | 0) * (-374)) - 1676961397, 988157494);
                     int i7 = c ^ (c << 13);
                     int i8 = i7 ^ (i7 >>> 17);
                     ((long[]) objArr[0])[0] = j + 4879;

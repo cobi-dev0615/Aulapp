@@ -17,7 +17,7 @@ public class TimeoutExceededLimitModeException extends Exception {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public TimeoutExceededLimitModeException() {
-        super(IdentyB.c((-(((r0 | 1) << 1) - (r0 ^ 1))) & r1, 1155, 72765, "20,14,11,Select time out between 1 to 40 sec"));
+        super(IdentyB.c((-(((0 | 1) << 1) - (0 ^ 1))) & 0, 1155, 72765, "20,14,11,Select time out between 1 to 40 sec"));
         Object[] objArr;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
@@ -161,7 +161,7 @@ public class TimeoutExceededLimitModeException extends Exception {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
-                    int c = a.c((~(startElapsedRealtime | (-988130907))) | (~((~startElapsedRealtime) | (-489241627))), 333, (((~((-988130907) | r5)) | (~(startElapsedRealtime | (-489241627)))) * 333) - 1839892133, 1492378966);
+                    int c = a.c((~(startElapsedRealtime | (-988130907))) | (~((~startElapsedRealtime) | (-489241627))), 333, (((~((-988130907) | 0)) | (~(startElapsedRealtime | (-489241627)))) * 333) - 1839892133, 1492378966);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

@@ -20,10 +20,10 @@ import kotlin.io.ConstantsKt;
 
 /* loaded from: classes2.dex */
 public class VerifyResult {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$d = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  int $$d = 0;
     private static int $10;
     private static int $11;
     private static int PngjBadCrcException;
@@ -334,22 +334,22 @@ public class VerifyResult {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004c, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0030, code lost:
     
-        if (r7 <= r9) goto L22;
+        if (0 <= 0) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004f, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = (int) java.lang.Runtime.getRuntime().freeMemory();
-        r3 = ~((-577283448) | r0);
-        r6 = ~r0;
-        r0 = defpackage.a.c(((~(r0 | 78394167)) | 2629943) | (~(577283447 | r6)), 904, (((~(r6 | (-75764225))) | (~((-574653505) | r0))) * 904) + (((r3 | (~((-78394168) | r6))) * (-1808)) + 525966391), -1976579667);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = (int) java.lang.Runtime.getRuntime().freeMemory();
+        0 = ~((-577283448) | 0);
+        0 = ~0;
+        0 = defpackage.a.c(((~(0 | 78394167)) | 2629943) | (~(577283447 | 0)), 904, (((~(0 | (-75764225))) | (~((-574653505) | 0))) * 904) + (((0 | (~((-78394168) | 0))) * (-1808)) + 525966391), -1976579667);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -368,8 +368,8 @@ public class VerifyResult {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 4985;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 4985;
+                Fpnative.valueOf = 0;
                 String str = this.enrollmentTs;
                 PngjException = (PngjBadCrcException + 23) % 128;
                 return str;
@@ -414,7 +414,7 @@ public class VerifyResult {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
-                    int c = defpackage.a.c((~(startElapsedRealtime | (-134072433))) | 96241728 | (~((~startElapsedRealtime) | 402647551)), 988, (((~((-37830705) | r7)) | (~(402647551 | startElapsedRealtime))) * 988) - 436864513, 2074016405);
+                    int c = defpackage.a.c((~(startElapsedRealtime | (-134072433))) | 96241728 | (~((~startElapsedRealtime) | 402647551)), 988, (((~((-37830705) | 0)) | (~(402647551 | startElapsedRealtime))) * 988) - 436864513, 2074016405);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -576,7 +576,7 @@ public class VerifyResult {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = defpackage.a.c((~((~((int) Process.getStartUptimeMillis())) | (-439269703))) | 304752902, 191, (((~(r0 | (-439269703))) | 938158982) * 191) - 596984309, -1335193006);
+                    int c = defpackage.a.c((~((~((int) Process.getStartUptimeMillis())) | (-439269703))) | 304752902, 191, (((~(0 | (-439269703))) | 938158982) * 191) - 596984309, -1335193006);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -705,22 +705,22 @@ public class VerifyResult {
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004c, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0030, code lost:
     
-        if (r7 <= r9) goto L13;
+        if (0 <= 0) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x004f, code lost:
     
-        r2 = new java.lang.Object[]{new long[]{((long[]) r0[0])[0]}, new int[1]};
-        r0 = defpackage.a.b(142163362);
-        r3 = ~((-120821665) | r0);
-        r6 = ~r0;
-        r0 = defpackage.a.c(((~(r0 | (-378067616))) | 20120864) | (~(120821664 | r6)), 904, (((~(r6 | 398188479)) | (~((-100700801) | r0))) * 904) + (((r3 | (~(378067615 | r6))) * (-1808)) - 123216441), 2143280105);
-        r0 = r0 ^ (r0 << 13);
-        r0 = r0 ^ (r0 >>> 17);
-        ((int[]) r2[1])[0] = r0 ^ (r0 << 5);
+        0 = new java.lang.Object[]{new long[]{((long[]) $$a[0])[0]}, new int[1]};
+        0 = defpackage.a.b(142163362);
+        0 = ~((-120821665) | 0);
+        0 = ~0;
+        0 = defpackage.a.c(((~(0 | (-378067616))) | 20120864) | (~(120821664 | 0)), 904, (((~(0 | 398188479)) | (~((-100700801) | 0))) * 904) + (((0 | (~(378067615 | 0))) * (-1808)) - 123216441), 2143280105);
+        0 = 0 ^ (0 << 13);
+        0 = 0 ^ (0 >>> 17);
+        ((int[]) $$a[1])[0] = 0 ^ (0 << 5);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -739,8 +739,8 @@ public class VerifyResult {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) r2[0])[0] = j + 5009;
-                Fpnative.valueOf = r2;
+                ((long[]) $$a[0])[0] = j + 5009;
+                Fpnative.valueOf = 0;
                 this.matched = z;
                 return;
             }
@@ -870,7 +870,7 @@ public class VerifyResult {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int maxMemory = (int) Runtime.getRuntime().maxMemory();
-                    int c = defpackage.a.c((~(maxMemory | 490828897)) | 582779520 | (~((~maxMemory) | (-83890241))), 988, (((~(1073608417 | r3)) | (~((-83890241) | maxMemory))) * 988) - 1172642441, -1244161780);
+                    int c = defpackage.a.c((~(maxMemory | 490828897)) | 582779520 | (~((~maxMemory) | (-83890241))), 988, (((~(1073608417 | 0)) | (~((-83890241) | maxMemory))) * 988) - 1172642441, -1244161780);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

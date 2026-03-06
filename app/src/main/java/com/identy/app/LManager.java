@@ -60,12 +60,12 @@ import org.json.JSONObject;
 
 /* loaded from: classes2.dex */
 public final class LManager {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final byte[] $$d = null;
-    private static final int $$e = 0;
-    private static final int $$f = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
+    private static  byte[] $$c = null;
+    private static  byte[] $$d = null;
+    private static  int $$e = 0;
+    private static  int $$f = 0;
     public static final long MILLIS_PER_DAY = 86400000;
     private static int onErrorResponse;
     String PngjBadCrcException;
@@ -610,10 +610,10 @@ public final class LManager {
             }
             byte b2 = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b2, (byte) (b2 | 88), r1[111], objArr3);
+            a(b2, (byte) (b2 | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[117], r1[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2031826682);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5047;
@@ -632,68 +632,68 @@ public final class LManager {
     /* JADX WARN: Can't wrap try/catch for region: R(8:(6:(2:3|(10:5|6|7|8|9|10|11|12|13|14))|10|11|12|13|14)|55|56|57|6|7|8|9) */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0168, code lost:
     
-        if (r3 != null) goto L59;
+        if (0 != null) goto L59;
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x0172, code lost:
     
-        r3.close();
+        0.close();
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x0175, code lost:
     
-        throw r15;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:?, code lost:
     
-        throw r15;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:?, code lost:
     
-        throw r15;
+        throw 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:44:0x0160, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x0161, code lost:
     
-        r15 = r0;
-        r4 = r3;
+        0 = 0;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x016f, code lost:
     
-        r3 = r4;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:47:0x0156, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x0157, code lost:
     
-        r15 = r0;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x0164, code lost:
     
-        r3 = null;
+        0 = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x0153, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x0154, code lost:
     
-        r15 = r0;
+        0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:52:0x0159, code lost:
     
-        r3 = null;
+        0 = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:53:0x0150, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:54:0x0151, code lost:
     
-        r15 = r0;
+        0 = 0;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:36:0x0172 A[EXC_TOP_SPLITTER, SYNTHETIC] */
@@ -719,7 +719,7 @@ public final class LManager {
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int b = a.b(989110959);
-                        int c = a.c(~(b | 397237902), 113, (((~((~b) | 938335950)) | (~((-896127183) | b)) | 355029134) * (-113)) + ((((~(397237902 | r8)) | 896127182) * 226) - 41024400), -1774109310);
+                        int c = a.c(~(b | 397237902), 113, (((~((~b) | 938335950)) | (~((-896127183) | b)) | 355029134) * (-113)) + ((((~(397237902 | 0)) | 896127182) * 226) - 41024400), -1774109310);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -782,7 +782,7 @@ public final class LManager {
             String str2 = (String) objArr4[0];
             objArr = (Object[]) cls.getMethod(str2, Integer.TYPE).invoke(null, -1774109310);
             j = ((long[]) objArr[0])[0];
-            r3 = str2;
+            0 = str2;
             ((long[]) objArr[0])[0] = j + 4959;
             Fpnative.valueOf = objArr;
             InputStream open2 = assetManager.open(str);
@@ -813,11 +813,11 @@ public final class LManager {
     /* JADX WARN: Can't wrap try/catch for region: R(11:(2:3|(8:5|6|7|8|10|11|12|13))|23|24|25|6|7|8|10|11|12|13) */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0106, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0107, code lost:
     
-        r0.printStackTrace();
+        0.printStackTrace();
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -921,7 +921,7 @@ public final class LManager {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int uptimeMillis = (int) SystemClock.uptimeMillis();
                     int i = ~((-37781569) | uptimeMillis);
-                    int c = a.c((~(uptimeMillis | (-423100438))) | (~((~uptimeMillis) | (-38007275))) | 225706, 497, ((i | (~(r6 | (-423100438)))) * 497) - 1038376400, 1872094805);
+                    int c = a.c((~(uptimeMillis | (-423100438))) | (~((~uptimeMillis) | (-38007275))) | 225706, 497, ((i | (~(0 | (-423100438)))) * 497) - 1038376400, 1872094805);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -1105,10 +1105,10 @@ public final class LManager {
             }
             byte b = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), r1[111], objArr3);
+            a(b, (byte) (b | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[117], r1[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1972682829);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5037;
@@ -1304,7 +1304,7 @@ public final class LManager {
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
-                        int c = a.c((~(startElapsedRealtime | (-721917977))) | (~((~startElapsedRealtime) | (-223028697))), 333, (((~((-721917977) | r6)) | (~(startElapsedRealtime | (-223028697)))) * 333) - 635739889, -1930179136);
+                        int c = a.c((~(startElapsedRealtime | (-721917977))) | (~((~startElapsedRealtime) | (-223028697))), 333, (((~((-721917977) | 0)) | (~(startElapsedRealtime | (-223028697)))) * 333) - 635739889, -1930179136);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -1320,10 +1320,10 @@ public final class LManager {
             }
             byte b = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), r2[111], objArr3);
+            a(b, (byte) (b | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r2[63], r2[117], r2[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1930179136);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4986;
@@ -1408,10 +1408,10 @@ public final class LManager {
             }
             byte b = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), r1[111], objArr3);
+            a(b, (byte) (b | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[117], r1[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 543598441);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4932;
@@ -1556,10 +1556,10 @@ public final class LManager {
             }
             byte b = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), r1[111], objArr3);
+            a(b, (byte) (b | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[117], r1[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1240999738);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5031;
@@ -1579,11 +1579,11 @@ public final class LManager {
     /* JADX WARN: Can't wrap try/catch for region: R(21:0|1|(2:3|(11:5|6|(3:8|(1:10)(1:85)|11)(1:86)|12|(5:75|76|77|(1:79)|80)(2:18|(6:74|25|(6:27|(1:29)|30|(5:32|33|34|(13:36|37|(1:39)(1:61)|40|41|(1:43)(1:55)|44|(1:46)(1:54)|47|(1:49)|50|51|52)(2:62|63)|53)|67|68)(1:73)|69|70|71))|24|25|(0)(0)|69|70|71))|87|88|89|6|(0)(0)|12|(1:14)|75|76|77|(0)|80|24|25|(0)(0)|69|70|71) */
     /* JADX WARN: Code restructure failed: missing block: B:82:0x018a, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:84:0x0190, code lost:
     
-        r0.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Removed duplicated region for block: B:27:0x01bf  */
     /* JADX WARN: Removed duplicated region for block: B:73:0x023d  */
@@ -1721,7 +1721,7 @@ public final class LManager {
                             int i18 = ((i17 ^ 3) + ((i17 & 3) << 1)) >> 22;
                             int i19 = ((i18 ^ (-2047)) + ((i18 & (-2047)) << 1)) / 1024;
                             int i20 = (i19 & 1) + (i19 | 1);
-                            String valueOf2 = String.valueOf(timeInMillis / ((1570752 / (((-((i20 ^ 1) + ((i20 & 1) << 1))) & r4) * 808)) + 352));
+                            String valueOf2 = String.valueOf(timeInMillis / ((1570752 / (((-((i20 ^ 1) + ((i20 & 1) << 1))) & 0) * 808)) + 352));
                             String requestData = getRequestData(j, sb.toString().getBytes(), sb2.toString().getBytes(), this.appSignature.getBytes(), Build.MANUFACTURER.getBytes(), Build.MODEL.getBytes(), this.PngjInputException.getBytes(), this.PngjBadSignature.getApplicationContext().getPackageName().getBytes(), this.values.getBytes(), valueOf2.getBytes(), this.PngjBadCrcException.getBytes());
                             PngjPrematureEnding pngjPrematureEnding = new PngjPrematureEnding();
                             Activity activity = this.PngjBadSignature;
@@ -1752,7 +1752,7 @@ public final class LManager {
                     int i182 = ((i172 ^ 3) + ((i172 & 3) << 1)) >> 22;
                     int i192 = ((i182 ^ (-2047)) + ((i182 & (-2047)) << 1)) / 1024;
                     int i202 = (i192 & 1) + (i192 | 1);
-                    String valueOf22 = String.valueOf(timeInMillis2 / ((1570752 / (((-((i202 ^ 1) + ((i202 & 1) << 1))) & r4) * 808)) + 352));
+                    String valueOf22 = String.valueOf(timeInMillis2 / ((1570752 / (((-((i202 ^ 1) + ((i202 & 1) << 1))) & 0) * 808)) + 352));
                     String requestData2 = getRequestData(j, sb.toString().getBytes(), sb2.toString().getBytes(), this.appSignature.getBytes(), Build.MANUFACTURER.getBytes(), Build.MODEL.getBytes(), this.PngjInputException.getBytes(), this.PngjBadSignature.getApplicationContext().getPackageName().getBytes(), this.values.getBytes(), valueOf22.getBytes(), this.PngjBadCrcException.getBytes());
                     PngjPrematureEnding pngjPrematureEnding2 = new PngjPrematureEnding();
                     Activity activity2 = this.PngjBadSignature;
@@ -1809,7 +1809,7 @@ public final class LManager {
             int i1822 = ((i1722 ^ 3) + ((i1722 & 3) << 1)) >> 22;
             int i1922 = ((i1822 ^ (-2047)) + ((i1822 & (-2047)) << 1)) / 1024;
             int i2022 = (i1922 & 1) + (i1922 | 1);
-            String valueOf222 = String.valueOf(timeInMillis22 / ((1570752 / (((-((i2022 ^ 1) + ((i2022 & 1) << 1))) & r4) * 808)) + 352));
+            String valueOf222 = String.valueOf(timeInMillis22 / ((1570752 / (((-((i2022 ^ 1) + ((i2022 & 1) << 1))) & 0) * 808)) + 352));
             String requestData22 = getRequestData(j, sb.toString().getBytes(), sb2.toString().getBytes(), this.appSignature.getBytes(), Build.MANUFACTURER.getBytes(), Build.MODEL.getBytes(), this.PngjInputException.getBytes(), this.PngjBadSignature.getApplicationContext().getPackageName().getBytes(), this.values.getBytes(), valueOf222.getBytes(), this.PngjBadCrcException.getBytes());
             PngjPrematureEnding pngjPrematureEnding22 = new PngjPrematureEnding();
             Activity activity22 = this.PngjBadSignature;
@@ -1971,7 +1971,7 @@ public final class LManager {
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int i = ~((int) Process.getStartElapsedRealtime());
-                        int c = a.c((~(826234487 | i)) | (-582857281), 764, (((~(i | (-327345208))) | 285361207) * (-1528)) + (((r5 | (-327345208)) * 764) - 1945850973), 1874909962);
+                        int c = a.c((~(826234487 | i)) | (-582857281), 764, (((~(i | (-327345208))) | 285361207) * (-1528)) + (((0 | (-327345208)) * 764) - 1945850973), 1874909962);
                         int i2 = c ^ (c << 13);
                         int i3 = i2 ^ (i2 >>> 17);
                         ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -2063,10 +2063,10 @@ public final class LManager {
             }
             byte b = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), r1[111], objArr3);
+            a(b, (byte) (b | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[117], r1[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1518827033);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4910;
@@ -2108,10 +2108,10 @@ public final class LManager {
             }
             byte b = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), r1[111], objArr3);
+            a(b, (byte) (b | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[117], r1[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1208687703);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5046;
@@ -2136,7 +2136,7 @@ public final class LManager {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~((int) SystemClock.elapsedRealtime())) | 505226933)) | (-633650753), 262, (((~(505226933 | r0)) | (-633650753)) * 262) - 514454069, 1629380421);
+                    int c = a.c((~((~((int) SystemClock.elapsedRealtime())) | 505226933)) | (-633650753), 262, (((~(505226933 | 0)) | (-633650753)) * 262) - 514454069, 1629380421);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -2170,46 +2170,46 @@ public final class LManager {
     /* JADX WARN: Can't wrap try/catch for region: R(21:0|1|(2:3|(16:5|6|7|8|9|10|11|12|13|15|16|(7:19|(1:21)|(1:23)|24|(2:26|27)(1:29)|28|17)|30|31|32|33))|50|51|52|6|7|8|9|10|11|12|13|15|16|(1:17)|30|31|32|33) */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x012c, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x0152, code lost:
     
-        r0.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x012a, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x014e, code lost:
     
-        r0.printStackTrace();
+        0.printStackTrace();
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:0x00f9, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x00fa, code lost:
     
-        r0.printStackTrace();
-        r0 = null;
+        0.printStackTrace();
+        0 = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x00ed, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x00ee, code lost:
     
-        r0.printStackTrace();
-        r0 = null;
+        0.printStackTrace();
+        0 = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x00d4, code lost:
     
-        r0 = move-exception;
+        0 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x00d5, code lost:
     
-        r0.printStackTrace();
-        r0 = null;
+        0.printStackTrace();
+        0 = null;
      */
     /* JADX WARN: Removed duplicated region for block: B:19:0x0117 A[Catch: CertificateEncodingException -> 0x012a, NoSuchAlgorithmException -> 0x012c, TryCatch #6 {NoSuchAlgorithmException -> 0x012c, CertificateEncodingException -> 0x012a, blocks: (B:16:0x00fe, B:17:0x0114, B:19:0x0117, B:21:0x0123, B:23:0x0130, B:24:0x0136, B:26:0x0141, B:28:0x0146, B:31:0x0149), top: B:15:0x00fe }] */
     /*
@@ -2228,7 +2228,7 @@ public final class LManager {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~System.identityHashCode(this)) | 233552548)) | (-37424448), 184, (((-34604316) | r0) * 184) - 1204946697, 1722441282);
+                    int c = a.c((~((~System.identityHashCode(this)) | 233552548)) | (-37424448), 184, (((-34604316) | 0) * 184) - 1204946697, 1722441282);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -2372,7 +2372,7 @@ public final class LManager {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~System.identityHashCode(this)) | 469496383, 756, (((~(469496383 | r0)) | 29392896) * (-756)) - 1506865101, 552683111);
+                    int c = a.c((~System.identityHashCode(this)) | 469496383, 756, (((~(469496383 | 0)) | 29392896) * (-756)) - 1506865101, 552683111);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -2400,10 +2400,10 @@ public final class LManager {
             }
             byte b = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), r1[111], objArr3);
+            a(b, (byte) (b | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[117], r1[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 552683111);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4896;
@@ -2514,7 +2514,7 @@ public final class LManager {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | 769113841)) | (~((~identityHashCode) | (-701739250))) | 135475377, 168, ((~((-566263873) | identityHashCode)) * 168) + ((((~(202849969 | r5)) | 566263872) * 168) - 1710130969), 2094784876);
+                    int c = a.c((~(identityHashCode | 769113841)) | (~((~identityHashCode) | (-701739250))) | 135475377, 168, ((~((-566263873) | identityHashCode)) * 168) + ((((~(202849969 | 0)) | 566263872) * 168) - 1710130969), 2094784876);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -2542,10 +2542,10 @@ public final class LManager {
             }
             byte b = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), r1[111], objArr3);
+            a(b, (byte) (b | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[117], r1[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2094784876);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4967;
@@ -2587,7 +2587,7 @@ public final class LManager {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~System.identityHashCode(this)) | 23202632)) | (-475686648), 305, (((~(r0 | 23202632)) | (-494563328)) * 305) - 1958702672, -1464420651);
+                    int c = a.c((~((~System.identityHashCode(this)) | 23202632)) | (-475686648), 305, (((~(0 | 23202632)) | (-494563328)) * 305) - 1958702672, -1464420651);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -2889,10 +2889,10 @@ public final class LManager {
             }
             byte b = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), r1[111], objArr3);
+            a(b, (byte) (b | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[117], r1[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1557508997);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5015;
@@ -2933,10 +2933,10 @@ public final class LManager {
             }
             byte b = $$d[113];
             Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), r1[111], objArr3);
+            a(b, (byte) (b | 88), $$a[111], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             Object[] objArr4 = new Object[1];
-            a(r1[63], r1[117], r1[55], objArr4);
+            a($$a[63], $$a[117], $$a[55], objArr4);
             objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 705516381);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4981;
@@ -2970,7 +2970,7 @@ public final class LManager {
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int startUptimeMillis = (int) Process.getStartUptimeMillis();
-                        int c = a.c(startUptimeMillis | (-569428804), 496, (((~((-1068318084) | startUptimeMillis)) | 504181888 | (~((~startUptimeMillis) | (-5292609)))) * (-496)) + ((r10 * 992) - 2137057233), -818561606);
+                        int c = a.c(startUptimeMillis | (-569428804), 496, (((~((-1068318084) | startUptimeMillis)) | 504181888 | (~((~startUptimeMillis) | (-5292609)))) * (-496)) + ((0 * 992) - 2137057233), -818561606);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -3071,10 +3071,10 @@ public final class LManager {
             }
             byte b3 = $$d[113];
             Object[] objArr5 = new Object[1];
-            a(b3, (byte) (b3 | 88), r4[111], objArr5);
+            a(b3, (byte) (b3 | 88), $$a[111], objArr5);
             Class<?> cls2 = Class.forName((String) objArr5[0]);
             Object[] objArr6 = new Object[1];
-            a(r4[63], r4[117], r4[55], objArr6);
+            a($$a[63], $$a[117], $$a[55], objArr6);
             objArr = (Object[]) cls2.getMethod((String) objArr6[0], cls).invoke(null, -818561606);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4969;
@@ -3110,7 +3110,7 @@ public final class LManager {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | (-577681793))) | 575453312 | (~((~identityHashCode) | (-76564033))), 521, (((-78792513) | identityHashCode) * 521) + ((((~(r6 | (-78792513))) | 577681792) * (-1042)) - 1075381496), -1978653699);
+                    int c = a.c((~(identityHashCode | (-577681793))) | 575453312 | (~((~identityHashCode) | (-76564033))), 521, (((-78792513) | identityHashCode) * 521) + ((((~(0 | (-78792513))) | 577681792) * (-1042)) - 1075381496), -1978653699);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -3161,7 +3161,7 @@ public final class LManager {
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int myTid = Process.myTid();
-                        int c = a.c((~(myTid | 152369684)) | (~((~myTid) | (-292865))) | (-498596416), 717, ((((~(r6 | 152369684)) | (-498596416)) | (~((-292865) | myTid))) * 717) - 1119835056, -816574437);
+                        int c = a.c((~(myTid | 152369684)) | (~((~myTid) | (-292865))) | (-498596416), 717, ((((~(0 | 152369684)) | (-498596416)) | (~((-292865) | myTid))) * 717) - 1119835056, -816574437);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

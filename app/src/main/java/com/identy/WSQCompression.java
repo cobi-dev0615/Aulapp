@@ -11,8 +11,8 @@ public enum WSQCompression {
     WSQ_15_1(0.75d),
     WSQ_20_1(0.5d);
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
     double a;
 
     static {
@@ -78,7 +78,7 @@ public enum WSQCompression {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int uptimeMillis = (int) SystemClock.uptimeMillis();
-                    int c = defpackage.a.c(uptimeMillis | (-805295828), 54, (((~((~uptimeMillis) | 669927059)) | (~((-669927060) | uptimeMillis)) | (-805295828)) * 54) + ((((~((-171037780) | r5)) | 35669011) * (-108)) - 687544143), -1382269280);
+                    int c = defpackage.a.c(uptimeMillis | (-805295828), 54, (((~((~uptimeMillis) | 669927059)) | (~((-669927060) | uptimeMillis)) | (-805295828)) * 54) + ((((~((-171037780) | 0)) | 35669011) * (-108)) - 687544143), -1382269280);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -87,17 +87,7 @@ public enum WSQCompression {
                     return (WSQCompression) Enum.valueOf(WSQCompression.class, str);
                 }
             }
-            byte b2 = $$a[77];
-            Object[] objArr3 = new Object[1];
-            c(b2, (byte) (b2 | 22), (short) 74, objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            c(r1[25], r1[17], r1[81], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1382269280);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 5032;
-            Fpnative.valueOf = objArr;
-            return (WSQCompression) Enum.valueOf(WSQCompression.class, str);
+            throw new UnsupportedOperationException("Method not decompiled: WSQCompression.valueOfString");
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

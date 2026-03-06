@@ -38,8 +38,8 @@ public final class PngjUnsupportedException implements ApplicationInterface {
         ExpoBracketing,
         NoiseReduction;
 
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
 
         static {
             init$0();
@@ -96,7 +96,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
                         int i = ~((-381084656) | myUid);
                         int i2 = ~myUid;
                         int i3 = i | (~(117804624 | i2));
-                        int c = defpackage.a.c(16845840 | (~(381084655 | i2)), 516, (((~(myUid | (-100958785))) | (~(i2 | (-16845841)))) * 516) + (((i3 | r7) * (-516)) - 1087568197), 41025836);
+                        int c = defpackage.a.c(16845840 | (~(381084655 | i2)), 516, (((~(myUid | (-100958785))) | (~(i2 | (-16845841)))) * 516) + (((i3 | 0) * (-516)) - 1087568197), 41025836);
                         int i4 = c ^ (c << 13);
                         int i5 = i4 ^ (i4 >>> 17);
                         ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -140,7 +140,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                        int c = defpackage.a.c((~((~((int) Process.getStartUptimeMillis())) | 235863463)) | (-263025817), 305, (((~(r0 | 235863463)) | (-263192000)) * 305) - 1958702672, 1210811437);
+                        int c = defpackage.a.c((~((~((int) Process.getStartUptimeMillis())) | 235863463)) | (-263025817), 305, (((~(0 | 235863463)) | (-263192000)) * 305) - 1958702672, 1210811437);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -176,8 +176,8 @@ public final class PngjUnsupportedException implements ApplicationInterface {
         ALIGNMENT_CENTRE,
         ALIGNMENT_BOTTOM;
 
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
+        private static  byte[] $$a = null;
+        private static  int $$b = 0;
 
         static {
             init$0();
@@ -407,7 +407,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0043, code lost:
     
-        if (r1.contains("SM-S911B") != false) goto L27;
+        if (0.contains("SM-S911B") != false) goto L27;
      */
     @Override // org.camera.preview.ApplicationInterface
     /*

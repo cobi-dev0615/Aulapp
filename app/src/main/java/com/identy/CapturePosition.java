@@ -9,8 +9,8 @@ public enum CapturePosition {
     VERTICAL_FROM_BOTTOM,
     VERTICAL_FROM_TOP;
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
 
     static {
         init$0();
