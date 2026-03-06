@@ -17,15 +17,15 @@ public class LibSettings {
     }
 
     public LibSettings() {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int c = defpackage.a.c((~((~defpackage.a.b(1079731555)) | 188898746)) | 37885056, 420, ((~(r0 | 188898746)) * 420) - 499869941, 1208440908);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
@@ -35,12 +35,12 @@ public class LibSettings {
                 }
             }
             byte b = $$a[77];
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             b((short) (-b), b, r1[75], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             b(r1[88], r1[27], r1[19], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1208440908);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1208440908);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4893;
             Fpnative.valueOf = objArr;
@@ -59,7 +59,7 @@ public class LibSettings {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void b(int i, short s, int i2, Object[] objArr) {
+    private static void b(int i, short s, int i2, java.lang.Object[] objArr) {
         int i3;
         int i4 = i + 4;
         int i5 = (s * 19) + 80;
@@ -112,15 +112,15 @@ public class LibSettings {
     }
 
     public static boolean isSaveCaptured() {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = (int) Runtime.getRuntime().totalMemory();
                     int c = defpackage.a.c((~(i | 237323694)) | 261565585, 519, (((~((~i) | (-26355730))) | (~(263679423 | i))) * (-519)) + ((((~((-261565586) | r5)) | 237323694) * 519) - 726608762), -253050616);
                     int i2 = c ^ (c << 13);
@@ -132,12 +132,12 @@ public class LibSettings {
                 }
             }
             byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             b((short) 103, bArr[77], bArr[26], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             b((short) 134, bArr[25], bArr[27], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -253050616);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -253050616);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4939;
             Fpnative.valueOf = objArr;
@@ -152,15 +152,15 @@ public class LibSettings {
     }
 
     public static boolean saveML4FData() {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int a2 = defpackage.a.a();
                     int c = defpackage.a.c((~(a2 | 59508580)) | (~((~a2) | 439380699)), 627, (((~((-439380700) | a2)) | 59508580) * (-627)) + ((((-25953573) | a2) * (-627)) - 230145396), -803306537);
                     int i = c ^ (c << 13);
@@ -174,12 +174,12 @@ public class LibSettings {
             byte[] bArr = $$a;
             short s = bArr[54];
             byte b = bArr[77];
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             b(s, b, (byte) (b | 22), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             b((short) 88, bArr[27], bArr[17], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -803306537);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -803306537);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4949;
             Fpnative.valueOf = objArr;

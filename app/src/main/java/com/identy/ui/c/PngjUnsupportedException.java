@@ -85,15 +85,15 @@ public final class PngjUnsupportedException extends Dialog {
         getWindow().setAttributes(layoutParams);
         setOnDismissListener(new PngjBadCrcException(pngjException));
         try {
-            Object[] objArr = {context, 10, new PngjBadSignature()};
-            Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1578525895);
+            java.lang.Object[] objArr = {context, 10, new PngjBadSignature()};
+            java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1578525895);
             if (PngjBadSignature2 == null) {
                 char scrollBarSize = (char) ((ViewConfiguration.getScrollBarSize() >> 8) + 14830);
                 int indexOf = TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0) + 28;
                 int keyRepeatTimeout = 721 - (ViewConfiguration.getKeyRepeatTimeout() >> 16);
                 byte b = (byte) 0;
                 byte b2 = b;
-                Object[] objArr2 = new Object[1];
+                java.lang.Object[] objArr2 = new java.lang.Object[1];
                 a(b, b2, b2, objArr2);
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(scrollBarSize, indexOf, keyRepeatTimeout, 1560737410, false, (String) objArr2[0], new Class[]{Context.class, Integer.TYPE, getPadSub3B15685$PngjException.class});
             }
@@ -113,7 +113,7 @@ public final class PngjUnsupportedException extends Dialog {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void a(int i, short s, int i2, Object[] objArr) {
+    private static void a(int i, short s, int i2, java.lang.Object[] objArr) {
         int i3;
         int i4;
         int i5 = 118 - (i * 4);

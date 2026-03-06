@@ -9,9 +9,9 @@ public class getScore {
     public double PngjExceptionInternal;
     public double PngjInputException;
     public float PngjOutputException;
-    public Object PngjPrematureEnding;
-    public Object PngjUnsupportedException;
-    private final Object[] getPadSub3;
+    public java.lang.Object PngjPrematureEnding;
+    public java.lang.Object PngjUnsupportedException;
+    private final java.lang.Object[] getPadSub3;
     private int onErrorResponse;
     public int valueOf;
     public long values;
@@ -20,8 +20,8 @@ public class getScore {
     private final float[] PngBadCharsetException = new float[28];
     private final double[] getAsHighestSecurityLevelReached = new double[28];
 
-    public getScore(Object obj, Object obj2) {
-        Object[] objArr = new Object[28];
+    public getScore(java.lang.Object obj, java.lang.Object obj2) {
+        java.lang.Object[] objArr = new java.lang.Object[28];
         this.getPadSub3 = objArr;
         objArr[15] = obj;
         objArr[16] = obj2;
@@ -32,7 +32,7 @@ public class getScore {
     public int PngjBadCrcException(int i) {
         switch (i) {
             case 1:
-                Object[] objArr = this.getPadSub3;
+                java.lang.Object[] objArr = this.getPadSub3;
                 int i2 = this.onErrorResponse;
                 this.onErrorResponse = i2 + 1;
                 objArr[i2] = objArr[15];
@@ -43,15 +43,15 @@ public class getScore {
                 this.Action = i3;
                 return 0;
             case 3:
-                Object[] objArr2 = this.getPadSub3;
+                java.lang.Object[] objArr2 = this.getPadSub3;
                 int i4 = this.Action;
                 this.Action = i4 + 1;
-                Object obj = objArr2[i4];
+                java.lang.Object obj = objArr2[i4];
                 objArr2[i4] = null;
                 this.PngjUnsupportedException = obj;
                 return 0;
             case 4:
-                Object[] objArr3 = this.getPadSub3;
+                java.lang.Object[] objArr3 = this.getPadSub3;
                 int i5 = this.onErrorResponse;
                 this.onErrorResponse = i5 + 1;
                 objArr3[i5] = objArr3[16];
@@ -120,19 +120,19 @@ public class getScore {
                 iArr7[i16 - 1] = iArr7[i16 - 1] % iArr7[i16];
                 return 0;
             case 15:
-                Object[] objArr4 = this.getPadSub3;
+                java.lang.Object[] objArr4 = this.getPadSub3;
                 int i17 = this.onErrorResponse;
-                Object obj2 = objArr4[i17 - 1];
+                java.lang.Object obj2 = objArr4[i17 - 1];
                 objArr4[i17 - 1] = null;
                 this.PngjUnsupportedException = obj2;
                 return 0;
             case 16:
-                Object[] objArr5 = this.getPadSub3;
+                java.lang.Object[] objArr5 = this.getPadSub3;
                 int i18 = this.onErrorResponse;
                 this.onErrorResponse = i18 + 1;
                 objArr5[i18] = null;
                 int[] iArr8 = this.e1;
-                Object obj3 = objArr5[i18];
+                java.lang.Object obj3 = objArr5[i18];
                 objArr5[i18] = null;
                 iArr8[i18] = ((int[]) obj3).length;
                 this.onErrorResponse = i18;
@@ -191,24 +191,24 @@ public class getScore {
                 for (int i28 = this.onErrorResponse - 1; i28 >= 0; i28--) {
                     this.getPadSub3[i28] = null;
                 }
-                Object[] objArr6 = this.getPadSub3;
+                java.lang.Object[] objArr6 = this.getPadSub3;
                 this.onErrorResponse = 1;
                 objArr6[0] = this.PngjPrematureEnding;
                 return 0;
             case 25:
-                Object[] objArr7 = this.getPadSub3;
+                java.lang.Object[] objArr7 = this.getPadSub3;
                 int i29 = this.onErrorResponse;
                 this.onErrorResponse = i29 + 1;
                 objArr7[i29] = objArr7[i29 - 1];
                 return 0;
             case 26:
-                Object[] objArr8 = this.getPadSub3;
+                java.lang.Object[] objArr8 = this.getPadSub3;
                 int i30 = this.onErrorResponse;
                 this.onErrorResponse = i30 + 1;
                 objArr8[i30] = this.PngjPrematureEnding;
                 return 0;
             case 27:
-                Object[] objArr9 = this.getPadSub3;
+                java.lang.Object[] objArr9 = this.getPadSub3;
                 int i31 = this.onErrorResponse;
                 int i32 = i31 + 1;
                 this.onErrorResponse = i32;
@@ -220,16 +220,16 @@ public class getScore {
             case 28:
                 int i33 = this.onErrorResponse - 1;
                 this.onErrorResponse = i33;
-                Object[] objArr10 = this.getPadSub3;
-                Object obj4 = objArr10[i33];
+                java.lang.Object[] objArr10 = this.getPadSub3;
+                java.lang.Object obj4 = objArr10[i33];
                 objArr10[i33] = null;
                 objArr10[16] = obj4;
                 return 0;
             case 29:
                 int i34 = this.onErrorResponse - 1;
                 this.onErrorResponse = i34;
-                Object[] objArr11 = this.getPadSub3;
-                Object obj5 = objArr11[i34];
+                java.lang.Object[] objArr11 = this.getPadSub3;
+                java.lang.Object obj5 = objArr11[i34];
                 objArr11[i34] = null;
                 objArr11[17] = obj5;
                 return 0;
@@ -246,7 +246,7 @@ public class getScore {
                 iArr16[19] = iArr16[i36];
                 return 0;
             case 32:
-                Object[] objArr12 = this.getPadSub3;
+                java.lang.Object[] objArr12 = this.getPadSub3;
                 int i37 = this.onErrorResponse;
                 int i38 = i37 + 1;
                 this.onErrorResponse = i38;

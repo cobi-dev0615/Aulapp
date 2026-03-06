@@ -75,7 +75,7 @@ public final class isAuthSucess extends e1 {
     List pfkrol;
     private List resetAttempt;
 
-    public class PngjBadCrcException implements PngjBadCrcException.values {
+    public class PngjBadCrcException implements org.c.a.PngjBadCrcException.values {
         public PngjBadCrcException() {
         }
 
@@ -425,7 +425,7 @@ public final class isAuthSucess extends e1 {
                     throw new UnsupportedOperationException("Method not decompiled: com.identy.isAuthSucess.PngjException.AnimationAnimationListenerC0024PngjException.RunnableC0025PngjException.PngjException$1eba2e16(int, java.lang.Object, int):java.lang.Object[]");
                 }
 
-                private static void a(int i, short s, byte b, Object[] objArr) {
+                private static void a(int i, short s, byte b, java.lang.Object[] objArr) {
                     int i2 = i + 4;
                     int i3 = 112 - b;
                     byte[] bArr = $$a;
@@ -454,7 +454,7 @@ public final class isAuthSucess extends e1 {
                 /*
                     Code decompiled incorrectly, please refer to instructions dump.
                 */
-                private static void b(int i, boolean z, String str, int i2, int i3, Object[] objArr) {
+                private static void b(int i, boolean z, String str, int i2, int i3, java.lang.Object[] objArr) {
                     int i4;
                     Throwable cause;
                     int i5;
@@ -475,10 +475,10 @@ public final class isAuthSucess extends e1 {
                         char c3 = (char) (i3 + c2);
                         cArr[i7] = c3;
                         try {
-                            Object[] objArr2 = new Object[2];
+                            java.lang.Object[] objArr2 = new java.lang.Object[2];
                             objArr2[1] = Integer.valueOf(PngjBadCrcException);
                             objArr2[i6] = Integer.valueOf(c3);
-                            Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(610361420);
+                            java.lang.Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(610361420);
                             if (PngjBadSignature == null) {
                                 char packedPositionChild = (char) ((-1) - ExpandableListView.getPackedPositionChild(0L));
                                 int jumpTapTimeout = (ViewConfiguration.getJumpTapTimeout() >> 16) + 28;
@@ -497,13 +497,13 @@ public final class isAuthSucess extends e1 {
                                 j = 0;
                             }
                             cArr[i7] = ((Character) ((Method) PngjBadSignature).invoke(null, objArr2)).charValue();
-                            Object[] objArr3 = new Object[2];
+                            java.lang.Object[] objArr3 = new java.lang.Object[2];
                             objArr3[c] = action;
                             objArr3[i5] = action;
-                            Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
+                            java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
                             if (PngjBadSignature2 == null) {
                                 int i8 = i5;
-                                PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - (ExpandableListView.getPackedPositionForChild(i8, i8) > j ? 1 : (ExpandableListView.getPackedPositionForChild(i8, i8) == j ? 0 : -1))), 39 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), 190 - (ViewConfiguration.getKeyRepeatDelay() >> 16), 794744863, false, "j", new Class[]{Object.class, Object.class});
+                                PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - (ExpandableListView.getPackedPositionForChild(i8, i8) > j ? 1 : (ExpandableListView.getPackedPositionForChild(i8, i8) == j ? 0 : -1))), 39 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), 190 - (ViewConfiguration.getKeyRepeatDelay() >> 16), 794744863, false, "j", new Class[]{java.lang.Object.class, java.lang.Object.class});
                             }
                             ((Method) PngjBadSignature2).invoke(null, objArr3);
                             i6 = 0;
@@ -543,18 +543,18 @@ public final class isAuthSucess extends e1 {
                             $10 = i12 % 128;
                             if (i12 % 2 != 0) {
                                 cArr3[i11] = cArr[(i - i11) % 0];
-                                Object[] objArr4 = {action, action};
-                                Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
+                                java.lang.Object[] objArr4 = {action, action};
+                                java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
                                 if (PngjBadSignature3 == null) {
-                                    PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Color.blue(0), (ViewConfiguration.getTapTimeout() >> 16) + 40, (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 190, 794744863, false, "j", new Class[]{Object.class, Object.class});
+                                    PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Color.blue(0), (ViewConfiguration.getTapTimeout() >> 16) + 40, (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 190, 794744863, false, "j", new Class[]{java.lang.Object.class, java.lang.Object.class});
                                 }
                                 ((Method) PngjBadSignature3).invoke(null, objArr4);
                             } else {
                                 cArr3[i11] = cArr[(i - i11) - 1];
-                                Object[] objArr5 = {action, action};
-                                Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
+                                java.lang.Object[] objArr5 = {action, action};
+                                java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
                                 if (PngjBadSignature4 == null) {
-                                    PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0) + 1), Color.argb(0, 0, 0, 0) + 40, View.combineMeasuredStates(0, 0) + 190, 794744863, false, "j", new Class[]{Object.class, Object.class});
+                                    PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0) + 1), Color.argb(0, 0, 0, 0) + 40, View.combineMeasuredStates(0, 0) + 190, 794744863, false, "j", new Class[]{java.lang.Object.class, java.lang.Object.class});
                                 }
                                 ((Method) PngjBadSignature4).invoke(null, objArr5);
                             }
@@ -564,7 +564,7 @@ public final class isAuthSucess extends e1 {
                     objArr[0] = new String(cArr);
                 }
 
-                private static void c(int i, byte b, short s, int i2, int i3, Object[] objArr) {
+                private static void c(int i, byte b, short s, int i2, int i3, java.lang.Object[] objArr) {
                     int i4;
                     int i5;
                     int i6;
@@ -582,9 +582,9 @@ public final class isAuthSucess extends e1 {
                     int i13 = 2;
                     try {
                         int i14 = 1;
-                        Object[] objArr2 = {Integer.valueOf(i), Integer.valueOf(valueOf)};
+                        java.lang.Object[] objArr2 = {Integer.valueOf(i), Integer.valueOf(valueOf)};
                         int i15 = 0;
-                        Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1302984176);
+                        java.lang.Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1302984176);
                         Class cls = Integer.TYPE;
                         if (PngjBadSignature == null) {
                             byte b2 = (byte) 0;
@@ -610,8 +610,8 @@ public final class isAuthSucess extends e1 {
                                 int i16 = 0;
                                 f = 0.0f;
                                 while (i16 < length) {
-                                    Object[] objArr3 = {Integer.valueOf(bArr[i16])};
-                                    Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1053815139);
+                                    java.lang.Object[] objArr3 = {Integer.valueOf(bArr[i16])};
+                                    java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1053815139);
                                     if (PngjBadSignature2 == null) {
                                         char c = (char) ((SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)) + 14829);
                                         int myPid = (Process.myPid() >> 22) + 28;
@@ -646,10 +646,10 @@ public final class isAuthSucess extends e1 {
                                 $11 = i19 % 128;
                                 if (i19 % 2 == 0) {
                                     byte[] bArr3 = PngjExceptionInternal;
-                                    Object[] objArr4 = new Object[i17];
+                                    java.lang.Object[] objArr4 = new java.lang.Object[i17];
                                     objArr4[i6] = Integer.valueOf(PngjException);
                                     objArr4[i18] = Integer.valueOf(i3);
-                                    Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i4);
+                                    java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i4);
                                     if (PngjBadSignature3 == null) {
                                         byte b6 = (byte) i18;
                                         byte b7 = b6;
@@ -658,10 +658,10 @@ public final class isAuthSucess extends e1 {
                                     i9 = ((byte) (bArr3[((Integer) ((Method) PngjBadSignature3).invoke(null, objArr4)).intValue()] ^ (-6165791747575875761L))) * ((int) (valueOf * (-6165791747575875761L)));
                                 } else {
                                     byte[] bArr4 = PngjExceptionInternal;
-                                    Object[] objArr5 = new Object[2];
+                                    java.lang.Object[] objArr5 = new java.lang.Object[2];
                                     objArr5[i6] = Integer.valueOf(PngjException);
                                     objArr5[0] = Integer.valueOf(i3);
-                                    Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i4);
+                                    java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i4);
                                     if (PngjBadSignature4 == null) {
                                         byte b8 = (byte) 0;
                                         byte b9 = b8;
@@ -683,15 +683,15 @@ public final class isAuthSucess extends e1 {
                         if (intValue > 0) {
                             pngjPrematureEnding.values = ((i3 + intValue) - 2) + ((int) (PngjException ^ j2)) + i5;
                             int i20 = values;
-                            Object[] objArr6 = new Object[4];
+                            java.lang.Object[] objArr6 = new java.lang.Object[4];
                             objArr6[3] = sb;
                             objArr6[2] = Integer.valueOf(i20);
                             objArr6[i6] = Integer.valueOf(i2);
                             objArr6[0] = pngjPrematureEnding;
-                            Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1013119226);
+                            java.lang.Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1013119226);
                             if (PngjBadSignature5 == null) {
                                 byte b10 = (byte) 0;
-                                PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (45718 - (Process.getElapsedCpuTime() > j ? 1 : (Process.getElapsedCpuTime() == j ? 0 : -1))), 40 - (TypedValue.complexToFloat(0) > f ? 1 : (TypedValue.complexToFloat(0) == f ? 0 : -1)), 625 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 1064463037, false, $$e(b10, b10, (byte) $$c.length), new Class[]{Object.class, cls, cls, Object.class});
+                                PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (45718 - (Process.getElapsedCpuTime() > j ? 1 : (Process.getElapsedCpuTime() == j ? 0 : -1))), 40 - (TypedValue.complexToFloat(0) > f ? 1 : (TypedValue.complexToFloat(0) == f ? 0 : -1)), 625 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 1064463037, false, $$e(b10, b10, (byte) $$c.length), new Class[]{java.lang.Object.class, cls, cls, java.lang.Object.class});
                             }
                             ((StringBuilder) ((Method) PngjBadSignature5).invoke(null, objArr6)).append(pngjPrematureEnding.valueOf);
                             pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;
@@ -1134,7 +1134,7 @@ public final class isAuthSucess extends e1 {
         return R.string.id_searching_left;
     }
 
-    public static /* synthetic */ Object PngjBadSignature(Object[] objArr, int i, int i2, int i3, int i4, int i5, int i6) {
+    public static /* synthetic */ java.lang.Object PngjBadSignature(java.lang.Object[] objArr, int i, int i2, int i3, int i4, int i5, int i6) {
         int i7 = ~i6;
         int i8 = i7 | i;
         int i9 = ~i8;
@@ -1154,7 +1154,7 @@ public final class isAuthSucess extends e1 {
         return ((i22 * i22) * 739704832) + i16 != 1 ? PngjBadCrcException(objArr) : valueOf(objArr);
     }
 
-    private static void e(String str, int i, Object[] objArr) {
+    private static void e(String str, int i, java.lang.Object[] objArr) {
         char[] charArray = str != null ? str.toCharArray() : str;
         com.d.e.PngjOutputException pngjOutputException = new com.d.e.PngjOutputException();
         char[] cArr = new char[charArray.length];
@@ -1184,12 +1184,12 @@ public final class isAuthSucess extends e1 {
                 int i8 = (c3 + i5) ^ ((c3 << 4) + ((char) (pfkrolGetQuality ^ (-4937072311772145044L))));
                 int i9 = c3 >>> 5;
                 try {
-                    Object[] objArr2 = new Object[4];
+                    java.lang.Object[] objArr2 = new java.lang.Object[4];
                     objArr2[3] = Integer.valueOf(pfkrolfinalizeF);
                     objArr2[i7] = Integer.valueOf(i9);
                     objArr2[c4] = Integer.valueOf(i8);
                     objArr2[i2] = Integer.valueOf(c2);
-                    Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-222953304);
+                    java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-222953304);
                     Class cls = Integer.TYPE;
                     if (PngjBadSignature2 == null) {
                         PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getSize(i2), (SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)) + 34, 155 - View.resolveSizeAndState(i2, i2, i2), 240741651, false, "n", new Class[]{cls, cls, cls, cls});
@@ -1200,12 +1200,12 @@ public final class isAuthSucess extends e1 {
                     int i10 = i2;
                     int i11 = (charValue + i5) ^ ((charValue << 4) + ((char) (configureroll ^ (-4937072311772145044L))));
                     int i12 = charValue >>> 5;
-                    Object[] objArr3 = new Object[4];
+                    java.lang.Object[] objArr3 = new java.lang.Object[4];
                     objArr3[3] = Integer.valueOf(pfk);
                     objArr3[i7] = Integer.valueOf(i12);
                     objArr3[c4] = Integer.valueOf(i11);
                     objArr3[i10] = Integer.valueOf(c5);
-                    Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-222953304);
+                    java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-222953304);
                     if (PngjBadSignature3 == null) {
                         PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)), 35 - TextUtils.getOffsetBefore(BuildConfig.FLAVOR, i10), ExpandableListView.getPackedPositionChild(0L) + 156, 240741651, false, "n", new Class[]{cls, cls, cls, cls});
                     }
@@ -1230,14 +1230,14 @@ public final class isAuthSucess extends e1 {
             int i14 = pngjOutputException.values;
             cArr[i14] = cArr4[0];
             cArr[i14 + 1] = cArr4[c6];
-            Object[] objArr4 = new Object[i13];
+            java.lang.Object[] objArr4 = new java.lang.Object[i13];
             objArr4[c6] = pngjOutputException;
             objArr4[0] = pngjOutputException;
-            Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(150653722);
+            java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(150653722);
             if (PngjBadSignature4 == null) {
                 byte b = (byte) 0;
                 byte b2 = b;
-                PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (8055 - Process.getGidForName(BuildConfig.FLAVOR)), View.MeasureSpec.getMode(0) + 32, TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR) + 665, -199907679, false, $$n(b, b2, (byte) (b2 - 1)), new Class[]{Object.class, Object.class});
+                PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (8055 - Process.getGidForName(BuildConfig.FLAVOR)), View.MeasureSpec.getMode(0) + 32, TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR) + 665, -199907679, false, $$n(b, b2, (byte) (b2 - 1)), new Class[]{java.lang.Object.class, java.lang.Object.class});
             }
             ((Method) PngjBadSignature4).invoke(null, objArr4);
             i3 = i13;
@@ -1252,7 +1252,7 @@ public final class isAuthSucess extends e1 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void f(short s, byte b, int i, Object[] objArr) {
+    private static void f(short s, byte b, int i, java.lang.Object[] objArr) {
         int i2;
         int i3;
         int i4;
@@ -1308,7 +1308,7 @@ public final class isAuthSucess extends e1 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void g(int i, int i2, byte b, Object[] objArr) {
+    private static void g(int i, int i2, byte b, java.lang.Object[] objArr) {
         int i3;
         int i4;
         int i5 = (b * 31) + 80;
@@ -1527,12 +1527,12 @@ public final class isAuthSucess extends e1 {
 
     @Override // com.identy.e1
     public final void a() {
-        PngjBadSignature(new Object[]{this}, 2120009648, arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), -2120009647);
+        PngjBadSignature(new java.lang.Object[]{this}, 2120009648, arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), -2120009647);
     }
 
     @Override // com.identy.e1
     public final void e1() {
-        PngjBadSignature(new Object[]{this}, -1977365682, arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), 1977365682);
+        PngjBadSignature(new java.lang.Object[]{this}, -1977365682, arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), arid.chunks.values.valueOf(), 1977365682);
     }
 
     @Override // com.identy.e1
@@ -1592,28 +1592,28 @@ public final class isAuthSucess extends e1 {
         char c;
         float f;
         long j2;
-        Object[] objArr;
+        java.lang.Object[] objArr;
         char c2;
         int i;
-        Object[] objArr2;
+        java.lang.Object[] objArr2;
         int i2;
         int i3;
-        Object[] objArr3;
+        java.lang.Object[] objArr3;
         destroy = (pfkrolfinalize + 29) % 128;
-        Object[] objArr4 = new Object[1];
+        java.lang.Object[] objArr4 = new java.lang.Object[1];
         e("䑢ಹ㵸Ꙝ钪謏\udccc鵫뽖휱멠狭즏닕ꕦ榊\udf13퀊헶붿뜋⩖", 23 - (SystemClock.elapsedRealtime() > 0L ? 1 : (SystemClock.elapsedRealtime() == 0L ? 0 : -1)), objArr4);
         String str = (String) objArr4[0];
-        Object[] objArr5 = new Object[1];
+        java.lang.Object[] objArr5 = new java.lang.Object[1];
         e("馩ꦦ玈ⵗ\udf7f⺰厑䖺謩뵍澽Ӽ弖\ue859\udde3；", 15 - Drawable.resolveOpacity(0, 0), objArr5);
         String str2 = (String) objArr5[0];
-        Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
+        java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
         if (PngjBadSignature2 == null) {
             char bitsPerPixel = (char) (ImageFormat.getBitsPerPixel(0) + 1);
             int i4 = (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 37;
             int i5 = (SystemClock.uptimeMillis() > 0L ? 1 : (SystemClock.uptimeMillis() == 0L ? 0 : -1)) + 548;
             byte b = (byte) ($$d[18] - 1);
             j = 0;
-            Object[] objArr6 = new Object[1];
+            java.lang.Object[] objArr6 = new java.lang.Object[1];
             f(b, (byte) (b | 13), r7[20], objArr6);
             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(bitsPerPixel, i4, i5, -1608103378, false, (String) objArr6[0], null);
         } else {
@@ -1624,49 +1624,49 @@ public final class isAuthSucess extends e1 {
             c = 3;
             f = 0.0f;
             j2 = -1;
-            Object[] objArr7 = new Object[1];
+            java.lang.Object[] objArr7 = new java.lang.Object[1];
             e("ᚼ\uf7ca䐐\ud82c匑㰜䑢ಹ㿳澁噫탾쩖벸鳹쯰", 16 - (ViewConfiguration.getMinimumFlingVelocity() >> 16), objArr7);
             Class<?> cls = Class.forName((String) objArr7[0]);
-            Object[] objArr8 = new Object[1];
+            java.lang.Object[] objArr8 = new java.lang.Object[1];
             e("擑Ԗ᷹㛚ⰽ춷옠繹★У塹嗍㵎蕜橘욛", TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0, 0) + 17, objArr8);
             try {
-                Object[] objArr9 = {Integer.valueOf(((Integer) cls.getMethod((String) objArr8[0], Object.class).invoke(null, this)).intValue()), 847920981};
-                Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1437710995);
+                java.lang.Object[] objArr9 = {Integer.valueOf(((Integer) cls.getMethod((String) objArr8[0], java.lang.Object.class).invoke(null, this)).intValue()), 847920981};
+                java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1437710995);
                 if (PngjBadSignature3 == null) {
                     char alpha = (char) Color.alpha(0);
                     int green = Color.green(0) + 37;
                     int maximumDrawingCacheSize = (ViewConfiguration.getMaximumDrawingCacheSize() >> 24) + 549;
                     byte b2 = (byte) ($$d[18] - 1);
                     byte b3 = (byte) (b2 | 7);
-                    Object[] objArr10 = new Object[1];
+                    java.lang.Object[] objArr10 = new java.lang.Object[1];
                     f(b2, b3, (byte) (b3 | 16), objArr10);
                     String str3 = (String) objArr10[0];
                     Class cls2 = Integer.TYPE;
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(alpha, green, maximumDrawingCacheSize, -1453402328, false, str3, new Class[]{cls2, cls2});
                 }
-                objArr = (Object[]) ((Method) PngjBadSignature3).invoke(null, objArr9);
-                Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
+                objArr = (java.lang.Object[]) ((Method) PngjBadSignature3).invoke(null, objArr9);
+                java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
                 if (PngjBadSignature4 == null) {
                     char packedPositionChild = (char) (ExpandableListView.getPackedPositionChild(j) + 1);
                     int i6 = (AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) + 36;
                     int mode = View.MeasureSpec.getMode(0) + 549;
                     byte b4 = $$d[18];
                     byte b5 = b4;
-                    Object[] objArr11 = new Object[1];
+                    java.lang.Object[] objArr11 = new java.lang.Object[1];
                     f(b4, b5, (byte) (b5 | 16), objArr11);
                     PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(packedPositionChild, i6, mode, 1452666181, false, (String) objArr11[0], null);
                 }
                 ((Field) PngjBadSignature4).set(null, objArr);
                 try {
                     Long valueOf2 = Long.valueOf(((Long) Class.forName(str).getDeclaredMethod(str2, null).invoke(null, null)).longValue());
-                    Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
+                    java.lang.Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
                     if (PngjBadSignature5 == null) {
                         char c3 = (char) (TypedValue.complexToFloat(0) > 0.0f ? 1 : (TypedValue.complexToFloat(0) == 0.0f ? 0 : -1));
                         int pressedStateDuration = (ViewConfiguration.getPressedStateDuration() >> 16) + 37;
                         int deadChar = 549 - KeyEvent.getDeadChar(0, 0);
                         byte b6 = (byte) ($$d[18] - 1);
                         c2 = 2;
-                        Object[] objArr12 = new Object[1];
+                        java.lang.Object[] objArr12 = new java.lang.Object[1];
                         f(b6, (byte) (b6 | 13), r12[20], objArr12);
                         PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c3, pressedStateDuration, deadChar, -1608103378, false, (String) objArr12[0], null);
                     } else {
@@ -1685,7 +1685,7 @@ public final class isAuthSucess extends e1 {
             }
         } else {
             pfkrolfinalize = (destroy + 39) % 128;
-            Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
+            java.lang.Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
             if (PngjBadSignature6 == null) {
                 char deadChar2 = (char) KeyEvent.getDeadChar(0, 0);
                 int maximumFlingVelocity = 37 - (ViewConfiguration.getMaximumFlingVelocity() >> 16);
@@ -1694,15 +1694,15 @@ public final class isAuthSucess extends e1 {
                 j2 = -1;
                 byte b8 = b7;
                 f = 0.0f;
-                Object[] objArr13 = new Object[1];
+                java.lang.Object[] objArr13 = new java.lang.Object[1];
                 f(b7, b8, (byte) (b8 | 16), objArr13);
                 PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(deadChar2, maximumFlingVelocity, i7, 1452666181, false, (String) objArr13[0], null);
             } else {
                 f = 0.0f;
                 j2 = -1;
             }
-            Object[] objArr14 = (Object[]) ((Field) PngjBadSignature6).get(null);
-            objArr = new Object[]{new int[1], new int[]{r13}, new int[]{r4}};
+            java.lang.Object[] objArr14 = (java.lang.Object[]) ((Field) PngjBadSignature6).get(null);
+            objArr = new java.lang.Object[]{new int[1], new int[]{r13}, new int[]{r4}};
             int i8 = ((int[]) objArr14[1])[0];
             int i9 = ((int[]) objArr14[2])[0];
             int uptimeMillis = (int) SystemClock.uptimeMillis();
@@ -1713,15 +1713,15 @@ public final class isAuthSucess extends e1 {
             ((int[]) objArr[0])[0] = i11 ^ (i11 << 5);
             c2 = 2;
         }
-        Object obj = objArr[c2];
+        java.lang.Object obj = objArr[c2];
         int i12 = ((int[]) obj)[0];
-        Object obj2 = objArr[1];
+        java.lang.Object obj2 = objArr[1];
         int i13 = ((int[]) obj2)[0];
         if (i13 != i12) {
             throw new RuntimeException(String.valueOf(i13));
         }
         pfkrolfinalize = (destroy + 99) % 128;
-        Object[] objArr15 = {new int[1], new int[1], new int[1]};
+        java.lang.Object[] objArr15 = {new int[1], new int[1], new int[1]};
         int i14 = ((int[]) objArr[0])[0];
         int i15 = ((int[]) obj2)[0];
         int i16 = ((int[]) obj)[0];
@@ -1735,40 +1735,40 @@ public final class isAuthSucess extends e1 {
         int i19 = pfkrolfinalize + 31;
         destroy = i19 % 128;
         if (i19 % 2 != 0) {
-            Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
+            java.lang.Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
             if (PngjBadSignature7 == null) {
                 char green2 = (char) (31077 - Color.green(0));
                 int maxKeyCode = (KeyEvent.getMaxKeyCode() >> 16) + 49;
                 int i20 = 1043 - (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1));
                 byte b9 = (byte) ($$d[18] - 1);
-                Object[] objArr16 = new Object[1];
+                java.lang.Object[] objArr16 = new java.lang.Object[1];
                 f(b9, (byte) (b9 | 13), r0[20], objArr16);
                 PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(green2, maxKeyCode, i20, 159283629, false, (String) objArr16[0], null);
             }
             ((Field) PngjBadSignature7).getLong(null);
             throw null;
         }
-        Object PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
+        java.lang.Object PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
         if (PngjBadSignature8 == null) {
             char trimmedLength = (char) (TextUtils.getTrimmedLength(BuildConfig.FLAVOR) + 31077);
             int i21 = 49 - (CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1));
             int scrollBarFadeDuration = (ViewConfiguration.getScrollBarFadeDuration() >> 16) + 1043;
             byte b10 = (byte) ($$d[18] - 1);
-            Object[] objArr17 = new Object[1];
+            java.lang.Object[] objArr17 = new java.lang.Object[1];
             f(b10, (byte) (b10 | 13), r9[20], objArr17);
             PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(trimmedLength, i21, scrollBarFadeDuration, 159283629, false, (String) objArr17[0], null);
         }
         long j4 = ((Field) PngjBadSignature8).getLong(null);
         if (j4 == j2 || j4 + 4611686018427387791L < ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
             Context applicationContext = context != null ? ((context instanceof ContextWrapper) && ((ContextWrapper) context).getBaseContext() == null) ? null : context.getApplicationContext() : context;
-            Object[] objArr18 = new Object[1];
+            java.lang.Object[] objArr18 = new java.lang.Object[1];
             e("ᚼ\uf7ca䐐\ud82c匑㰜䑢ಹ㿳澁噫탾쩖벸鳹쯰", ExpandableListView.getPackedPositionGroup(j) + 16, objArr18);
             Class<?> cls3 = Class.forName((String) objArr18[0]);
-            Object[] objArr19 = new Object[1];
+            java.lang.Object[] objArr19 = new java.lang.Object[1];
             e("擑Ԗ᷹㛚ⰽ춷옠繹★У塹嗍㵎蕜橘욛", 16 - (ViewConfiguration.getMaximumFlingVelocity() >> 16), objArr19);
-            int intValue = ((Integer) cls3.getMethod((String) objArr19[0], Object.class).invoke(null, this)).intValue();
+            int intValue = ((Integer) cls3.getMethod((String) objArr19[0], java.lang.Object.class).invoke(null, this)).intValue();
             try {
-                Object[] objArr20 = new Object[4];
+                java.lang.Object[] objArr20 = new java.lang.Object[4];
                 objArr20[c] = -246762248;
                 objArr20[c2] = 0;
                 objArr20[1] = Integer.valueOf(intValue);
@@ -1776,37 +1776,37 @@ public final class isAuthSucess extends e1 {
                 byte[] bArr = $$g;
                 byte b11 = bArr[10];
                 i = 4;
-                Object[] objArr21 = new Object[1];
+                java.lang.Object[] objArr21 = new java.lang.Object[1];
                 g((byte) (-b11), bArr[21], (byte) (-b11), objArr21);
                 Class<?> cls4 = Class.forName((String) objArr21[0]);
                 byte b12 = bArr[21];
-                Object[] objArr22 = new Object[1];
+                java.lang.Object[] objArr22 = new java.lang.Object[1];
                 g(b12, (byte) (-bArr[10]), b12, objArr22);
                 String str4 = (String) objArr22[0];
                 Class cls5 = Integer.TYPE;
-                objArr2 = (Object[]) cls4.getMethod(str4, Context.class, cls5, cls5, cls5).invoke(null, objArr20);
+                objArr2 = (java.lang.Object[]) cls4.getMethod(str4, Context.class, cls5, cls5, cls5).invoke(null, objArr20);
                 if (applicationContext != null) {
-                    Object PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
+                    java.lang.Object PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
                     if (PngjBadSignature9 == null) {
                         char deadChar3 = (char) (KeyEvent.getDeadChar(0, 0) + 31077);
                         int threadPriority = 49 - ((Process.getThreadPriority(0) + 20) >> 6);
                         int i22 = 1044 - (ViewConfiguration.getGlobalActionKeyTimeout() > j ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == j ? 0 : -1));
                         byte b13 = $$d[18];
-                        Object[] objArr23 = new Object[1];
+                        java.lang.Object[] objArr23 = new java.lang.Object[1];
                         f(b13, (byte) (b13 - 1), r11[13], objArr23);
                         PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(deadChar3, threadPriority, i22, 1150904546, false, (String) objArr23[0], null);
                     }
                     ((Field) PngjBadSignature9).set(null, objArr2);
                     try {
                         Long valueOf3 = Long.valueOf(((Long) Class.forName(str).getDeclaredMethod(str2, null).invoke(null, null)).longValue());
-                        Object PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
+                        java.lang.Object PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
                         if (PngjBadSignature10 == null) {
                             char c6 = (char) (31078 - (SystemClock.uptimeMillis() > j ? 1 : (SystemClock.uptimeMillis() == j ? 0 : -1)));
                             int maximumFlingVelocity2 = (ViewConfiguration.getMaximumFlingVelocity() >> 16) + 49;
                             int trimmedLength2 = TextUtils.getTrimmedLength(BuildConfig.FLAVOR) + 1043;
                             byte b14 = (byte) ($$d[18] - 1);
                             i2 = 0;
-                            Object[] objArr24 = new Object[1];
+                            java.lang.Object[] objArr24 = new java.lang.Object[1];
                             f(b14, (byte) (b14 | 13), r12[20], objArr24);
                             PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c6, maximumFlingVelocity2, trimmedLength2, 159283629, false, (String) objArr24[0], null);
                         } else {
@@ -1828,18 +1828,18 @@ public final class isAuthSucess extends e1 {
                 throw cause2;
             }
         } else {
-            Object PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
+            java.lang.Object PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
             if (PngjBadSignature11 == null) {
                 char size = (char) (View.MeasureSpec.getSize(0) + 31077);
                 int i23 = (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1)) + 49;
                 int offsetBefore = TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0) + 1043;
                 byte b15 = $$d[18];
-                Object[] objArr25 = new Object[1];
+                java.lang.Object[] objArr25 = new java.lang.Object[1];
                 f(b15, (byte) (b15 - 1), r9[13], objArr25);
                 PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(size, i23, offsetBefore, 1150904546, false, (String) objArr25[0], null);
             }
-            Object[] objArr26 = (Object[]) ((Field) PngjBadSignature11).get(null);
-            objArr2 = new Object[5];
+            java.lang.Object[] objArr26 = (java.lang.Object[]) ((Field) PngjBadSignature11).get(null);
+            objArr2 = new java.lang.Object[5];
             objArr2[c2] = new int[]{r14};
             objArr2[c] = new int[]{r13};
             objArr2[4] = new int[1];
@@ -1861,7 +1861,7 @@ public final class isAuthSucess extends e1 {
         int i29 = ((int[]) objArr2[c2])[i2];
         int i30 = ((int[]) objArr2[c])[i2];
         if (i30 == i29) {
-            Object[] objArr27 = new Object[5];
+            java.lang.Object[] objArr27 = new java.lang.Object[5];
             int[] iArr = new int[1];
             objArr27[c2] = iArr;
             int[] iArr2 = new int[1];
@@ -1889,7 +1889,7 @@ public final class isAuthSucess extends e1 {
             int i36 = i30 - 1;
             iArr3[i36] = 1;
             Toast.makeText((Context) null, iArr3[((i30 * i36) % 2) - 1], 1).show();
-            Object[] objArr28 = new Object[5];
+            java.lang.Object[] objArr28 = new java.lang.Object[5];
             int[] iArr4 = new int[1];
             objArr28[c2] = iArr4;
             int[] iArr5 = new int[1];
@@ -1910,7 +1910,7 @@ public final class isAuthSucess extends e1 {
             int i41 = i40 ^ (i40 >>> 17);
             ((int[]) objArr28[i])[i2] = i41 ^ (i41 << 5);
         }
-        Object PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
+        java.lang.Object PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature12 == null) {
             int i42 = i2;
             float f2 = f;
@@ -1918,46 +1918,46 @@ public final class isAuthSucess extends e1 {
             int i43 = 27 - (ExpandableListView.getPackedPositionForChild(i42, i42) > j ? 1 : (ExpandableListView.getPackedPositionForChild(i42, i42) == j ? 0 : -1));
             int capsMode = 721 - TextUtils.getCapsMode(BuildConfig.FLAVOR, i42, i42);
             byte b16 = (byte) ($$d[18] - 1);
-            Object[] objArr29 = new Object[1];
+            java.lang.Object[] objArr29 = new java.lang.Object[1];
             f(b16, (byte) (b16 | 13), r1[20], objArr29);
             PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c10, i43, capsMode, -815159504, false, (String) objArr29[0], null);
         }
         long j5 = ((Field) PngjBadSignature12).getLong(null);
         if (j5 == j2 || j5 + 4611686018427387859L < ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
-            Object[] objArr30 = new Object[1];
+            java.lang.Object[] objArr30 = new java.lang.Object[1];
             e("ᚼ\uf7ca䐐\ud82c匑㰜䑢ಹ㿳澁噫탾쩖벸鳹쯰", (ViewConfiguration.getTouchSlop() >> 8) + 16, objArr30);
             Class<?> cls6 = Class.forName((String) objArr30[0]);
-            Object[] objArr31 = new Object[1];
+            java.lang.Object[] objArr31 = new java.lang.Object[1];
             e("擑Ԗ᷹㛚ⰽ춷옠繹★У塹嗍㵎蕜橘욛", 16 - Color.alpha(0), objArr31);
-            int intValue2 = ((Integer) cls6.getMethod((String) objArr31[0], Object.class).invoke(null, this)).intValue();
-            Object[] objArr32 = {-2022153982};
-            Object PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
+            int intValue2 = ((Integer) cls6.getMethod((String) objArr31[0], java.lang.Object.class).invoke(null, this)).intValue();
+            java.lang.Object[] objArr32 = {-2022153982};
+            java.lang.Object PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
             if (PngjBadSignature13 == null) {
                 PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (Process.getGidForName(BuildConfig.FLAVOR) + 1), TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0) + 24, 697 - (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            Object[] PngjBadSignature$1eba2e16 = FingerActivity.PngjUnsupportedException.PngjBadSignature$1eba2e16(intValue2, ((Constructor) PngjBadSignature13).newInstance(objArr32), -1978388072);
-            Object PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
+            java.lang.Object[] PngjBadSignature$1eba2e16 = FingerActivity.PngjUnsupportedException.PngjBadSignature$1eba2e16(intValue2, ((Constructor) PngjBadSignature13).newInstance(objArr32), -1978388072);
+            java.lang.Object PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature14 == null) {
                 char doubleTapTimeout = (char) (14830 - (ViewConfiguration.getDoubleTapTimeout() >> 16));
                 int lastIndexOf = 27 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0);
                 int keyRepeatDelay = 721 - (ViewConfiguration.getKeyRepeatDelay() >> 16);
                 byte b17 = (byte) ($$d[18] - 1);
                 byte b18 = (byte) (b17 | 7);
-                Object[] objArr33 = new Object[1];
+                java.lang.Object[] objArr33 = new java.lang.Object[1];
                 f(b17, b18, (byte) (b18 | 16), objArr33);
                 PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(doubleTapTimeout, lastIndexOf, keyRepeatDelay, -779023007, false, (String) objArr33[0], null);
             }
             ((Field) PngjBadSignature14).set(null, PngjBadSignature$1eba2e16);
             try {
                 Long valueOf4 = Long.valueOf(((Long) Class.forName(str).getDeclaredMethod(str2, null).invoke(null, null)).longValue());
-                Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
+                java.lang.Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
                 i3 = 0;
                 if (PngjBadSignature15 == null) {
                     char c11 = (char) (14830 - (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1)));
                     int indexOf = TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR) + 28;
                     int i44 = 722 - (SystemClock.currentThreadTimeMillis() > j2 ? 1 : (SystemClock.currentThreadTimeMillis() == j2 ? 0 : -1));
                     byte b19 = (byte) ($$d[18] - 1);
-                    Object[] objArr34 = new Object[1];
+                    java.lang.Object[] objArr34 = new java.lang.Object[1];
                     f(b19, (byte) (b19 | 13), r5[20], objArr34);
                     i3 = 0;
                     PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c11, indexOf, i44, -815159504, false, (String) objArr34[0], null);
@@ -1968,19 +1968,19 @@ public final class isAuthSucess extends e1 {
                 throw new RuntimeException();
             }
         } else {
-            Object PngjBadSignature16 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
+            java.lang.Object PngjBadSignature16 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature16 == null) {
                 char axisFromString = (char) (MotionEvent.axisFromString(BuildConfig.FLAVOR) + 14831);
                 int i45 = (CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1)) + 28;
                 int makeMeasureSpec = 721 - View.MeasureSpec.makeMeasureSpec(0, 0);
                 byte b20 = (byte) ($$d[18] - 1);
                 byte b21 = (byte) (b20 | 7);
-                Object[] objArr35 = new Object[1];
+                java.lang.Object[] objArr35 = new java.lang.Object[1];
                 f(b20, b21, (byte) (b21 | 16), objArr35);
                 PngjBadSignature16 = com.d.e.a.PngjBadCrcException.PngjBadSignature(axisFromString, i45, makeMeasureSpec, -779023007, false, (String) objArr35[0], null);
             }
-            Object[] objArr36 = (Object[]) ((Field) PngjBadSignature16).get(null);
-            objArr3 = new Object[i];
+            java.lang.Object[] objArr36 = (java.lang.Object[]) ((Field) PngjBadSignature16).get(null);
+            objArr3 = new java.lang.Object[i];
             objArr3[0] = new int[]{r8};
             objArr3[1] = new int[1];
             objArr3[c] = new int[]{r7};
@@ -2007,7 +2007,7 @@ public final class isAuthSucess extends e1 {
             }
             throw new RuntimeException(String.valueOf(i52));
         }
-        Object[] objArr37 = new Object[4];
+        java.lang.Object[] objArr37 = new java.lang.Object[4];
         int[] iArr6 = new int[1];
         objArr37[i3] = iArr6;
         objArr37[1] = new int[1];
@@ -2215,7 +2215,7 @@ public final class isAuthSucess extends e1 {
         destroy = (pfkrolfinalize + 15) % 128;
     }
 
-    private static /* synthetic */ Object PngjBadCrcException(Object[] objArr) {
+    private static /* synthetic */ java.lang.Object PngjBadCrcException(java.lang.Object[] objArr) {
         isAuthSucess isauthsucess = (isAuthSucess) objArr[0];
         int i = destroy + 79;
         pfkrolfinalize = i % 128;
@@ -2255,7 +2255,7 @@ public final class isAuthSucess extends e1 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static /* synthetic */ Object valueOf(Object[] objArr) {
+    private static /* synthetic */ java.lang.Object valueOf(java.lang.Object[] objArr) {
         int Attempt;
         com.identy.d.PngjBadSignature pngjBadSignature;
         isAuthSucess isauthsucess = (isAuthSucess) objArr[0];

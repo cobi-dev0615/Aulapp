@@ -149,7 +149,7 @@ public final class getFingerPrintQualityScore extends Dialog {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private static void a(byte b, short s, int i, Object[] objArr) {
+        private static void a(byte b, short s, int i, java.lang.Object[] objArr) {
             int i2;
             int i3;
             int i4;
@@ -194,7 +194,7 @@ public final class getFingerPrintQualityScore extends Dialog {
             }
         }
 
-        private static void b(int[] iArr, int i, String str, String str2, Object[] objArr) {
+        private static void b(int[] iArr, int i, String str, String str2, java.lang.Object[] objArr) {
             char[] cArr;
             int i2;
             char c;
@@ -226,8 +226,8 @@ public final class getFingerPrintQualityScore extends Dialog {
                 char[] cArr4 = new char[length];
                 for (int i5 = 0; i5 < length; i5++) {
                     try {
-                        Object[] objArr2 = {Integer.valueOf(cArr3[i5])};
-                        Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(358189806);
+                        java.lang.Object[] objArr2 = {Integer.valueOf(cArr3[i5])};
+                        java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(358189806);
                         if (PngjBadSignature2 == null) {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (View.getDefaultSize(0, 0) + 27092), 37 - (ViewConfiguration.getScrollBarSize() >> 8), (CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1)) + 118, -373889195, false, "b", new Class[]{cls});
                         }
@@ -243,8 +243,8 @@ public final class getFingerPrintQualityScore extends Dialog {
                 $10 = ($11 + 41) % 128;
                 cArr3 = cArr4;
             }
-            Object[] objArr3 = {Integer.valueOf(PngjBadSignature)};
-            Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1639226071);
+            java.lang.Object[] objArr3 = {Integer.valueOf(PngjBadSignature)};
+            java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1639226071);
             if (PngjBadSignature3 == null) {
                 char doubleTapTimeout = (char) ((ViewConfiguration.getDoubleTapTimeout() >> 16) + 61713);
                 int i6 = 34 - (CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1));
@@ -272,16 +272,16 @@ public final class getFingerPrintQualityScore extends Dialog {
                         return;
                     }
                     cArr5[i10] = (char) (cArr3[bArr2[(i11 - 1) - i10] + i] - intValue);
-                    Object[] objArr4 = new Object[i3];
+                    java.lang.Object[] objArr4 = new java.lang.Object[i3];
                     objArr4[c2] = pngjExceptionInternal;
                     objArr4[0] = pngjExceptionInternal;
-                    Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i7);
+                    java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i7);
                     if (PngjBadSignature4 == null) {
                         i2 = i7;
                         byte b2 = (byte) 0;
                         c = c2;
                         byte b3 = b2;
-                        PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1))), 37 - (Process.myTid() >> 22), 548 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0), 479715165, false, $$e(b2, b3, b3), new Class[]{Object.class, Object.class});
+                        PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1))), 37 - (Process.myTid() >> 22), 548 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0), 479715165, false, $$e(b2, b3, b3), new Class[]{java.lang.Object.class, java.lang.Object.class});
                     } else {
                         i2 = i7;
                         c = c2;
@@ -304,12 +304,12 @@ public final class getFingerPrintQualityScore extends Dialog {
                         return;
                     }
                     cArr6[i12] = (char) (cArr3[cArr2[(i13 - 1) - i12] - i] - intValue);
-                    Object[] objArr5 = {pngjExceptionInternal, pngjExceptionInternal};
-                    Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-528960794);
+                    java.lang.Object[] objArr5 = {pngjExceptionInternal, pngjExceptionInternal};
+                    java.lang.Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-528960794);
                     if (PngjBadSignature5 == null) {
                         byte b4 = (byte) 0;
                         byte b5 = b4;
-                        PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1))), 37 - Color.green(0), 549 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), 479715165, false, $$e(b4, b5, b5), new Class[]{Object.class, Object.class});
+                        PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1))), 37 - Color.green(0), 549 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), 479715165, false, $$e(b4, b5, b5), new Class[]{java.lang.Object.class, java.lang.Object.class});
                     }
                     ((Method) PngjBadSignature5).invoke(null, objArr5);
                 }
@@ -354,7 +354,7 @@ public final class getFingerPrintQualityScore extends Dialog {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private static void c(String str, int i, Object[] objArr) {
+        private static void c(String str, int i, java.lang.Object[] objArr) {
             char[] charArray;
             Throwable cause;
             char c;
@@ -378,27 +378,27 @@ public final class getFingerPrintQualityScore extends Dialog {
                     break;
                 }
                 try {
-                    Object[] objArr2 = {Integer.valueOf(cArr[i7]), pngjUnsupportedException, pngjUnsupportedException};
-                    Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-930920279);
+                    java.lang.Object[] objArr2 = {Integer.valueOf(cArr[i7]), pngjUnsupportedException, pngjUnsupportedException};
+                    java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-930920279);
                     if (PngjBadSignature2 == null) {
                         i2 = 35511;
                         i3 = -125632871;
                         byte b = (byte) 0;
                         c = 1;
-                        PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getMaximumFlingVelocity() >> 16), 47 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0), 944 - (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)), 879502610, false, $$e((byte) ($$d & 86), b, b), new Class[]{Integer.TYPE, Object.class, Object.class});
+                        PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getMaximumFlingVelocity() >> 16), 47 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0), 944 - (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)), 879502610, false, $$e((byte) ($$d & 86), b, b), new Class[]{Integer.TYPE, java.lang.Object.class, java.lang.Object.class});
                     } else {
                         c = 1;
                         i2 = 35511;
                         i3 = -125632871;
                     }
                     jArr[i7] = ((Long) ((Method) PngjBadSignature2).invoke(null, objArr2)).longValue() ^ (PngjPrematureEnding ^ 2636593786896957769L);
-                    Object[] objArr3 = new Object[2];
+                    java.lang.Object[] objArr3 = new java.lang.Object[2];
                     objArr3[c] = pngjUnsupportedException;
                     objArr3[0] = pngjUnsupportedException;
-                    Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i3);
+                    java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i3);
                     if (PngjBadSignature3 == null) {
                         byte b2 = (byte) 0;
-                        PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (i2 - (ViewConfiguration.getKeyRepeatDelay() >> 16)), 43 - (SystemClock.uptimeMillis() > 0L ? 1 : (SystemClock.uptimeMillis() == 0L ? 0 : -1)), 507 - View.MeasureSpec.getSize(0), 74289954, false, $$e((byte) 23, b2, b2), new Class[]{Object.class, Object.class});
+                        PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (i2 - (ViewConfiguration.getKeyRepeatDelay() >> 16)), 43 - (SystemClock.uptimeMillis() > 0L ? 1 : (SystemClock.uptimeMillis() == 0L ? 0 : -1)), 507 - View.MeasureSpec.getSize(0), 74289954, false, $$e((byte) 23, b2, b2), new Class[]{java.lang.Object.class, java.lang.Object.class});
                     }
                     ((Method) PngjBadSignature3).invoke(null, objArr3);
                 } catch (Throwable th) {
@@ -422,11 +422,11 @@ public final class getFingerPrintQualityScore extends Dialog {
                     return;
                 }
                 cArr2[i8] = (char) jArr[i8];
-                Object[] objArr4 = {pngjUnsupportedException, pngjUnsupportedException};
-                Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-125632871);
+                java.lang.Object[] objArr4 = {pngjUnsupportedException, pngjUnsupportedException};
+                java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-125632871);
                 if (PngjBadSignature4 == null) {
                     byte b3 = (byte) 0;
-                    PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (KeyEvent.keyCodeFromString(BuildConfig.FLAVOR) + 35511), ExpandableListView.getPackedPositionChild(0L) + 43, 507 - Color.green(0), 74289954, false, $$e((byte) 23, b3, b3), new Class[]{Object.class, Object.class});
+                    PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (KeyEvent.keyCodeFromString(BuildConfig.FLAVOR) + 35511), ExpandableListView.getPackedPositionChild(0L) + 43, 507 - Color.green(0), 74289954, false, $$e((byte) 23, b3, b3), new Class[]{java.lang.Object.class, java.lang.Object.class});
                 }
                 ((Method) PngjBadSignature4).invoke(null, objArr4);
                 $10 = ($11 + 19) % 128;
@@ -490,15 +490,15 @@ public final class getFingerPrintQualityScore extends Dialog {
         getWindow().setAttributes(layoutParams);
         setOnDismissListener(new PngjBadCrcException(pngjException));
         try {
-            Object[] objArr = {context, 10, new PngjException()};
-            Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1578525895);
+            java.lang.Object[] objArr = {context, 10, new PngjException()};
+            java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1578525895);
             if (PngjBadSignature2 == null) {
                 char offsetBefore = (char) (TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0) + 14830);
                 int touchSlop = 28 - (ViewConfiguration.getTouchSlop() >> 8);
                 int indexOf = 721 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0);
                 byte b = (byte) 0;
                 byte b2 = b;
-                Object[] objArr2 = new Object[1];
+                java.lang.Object[] objArr2 = new java.lang.Object[1];
                 a(b, b2, b2, objArr2);
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(offsetBefore, touchSlop, indexOf, 1560737410, false, (String) objArr2[0], new Class[]{Context.class, Integer.TYPE, getPadSub3B15685$PngjException.class});
             }
@@ -518,7 +518,7 @@ public final class getFingerPrintQualityScore extends Dialog {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void a(int i, byte b, int i2, Object[] objArr) {
+    private static void a(int i, byte b, int i2, java.lang.Object[] objArr) {
         int i3;
         int i4;
         int i5 = (i2 * 2) + 6;

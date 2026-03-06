@@ -85,15 +85,15 @@ public final class PngjOutputException extends Dialog {
         getWindow().setAttributes(layoutParams);
         setOnDismissListener(new values(pngjException));
         try {
-            Object[] objArr = {context, 10, new PngjBadSignature()};
-            Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1578525895);
+            java.lang.Object[] objArr = {context, 10, new PngjBadSignature()};
+            java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1578525895);
             if (PngjBadSignature2 == null) {
                 char c = (char) ((Process.getElapsedCpuTime() > 0L ? 1 : (Process.getElapsedCpuTime() == 0L ? 0 : -1)) + 14829);
                 int i = (SystemClock.uptimeMillis() > 0L ? 1 : (SystemClock.uptimeMillis() == 0L ? 0 : -1)) + 27;
                 int scrollBarSize = 721 - (ViewConfiguration.getScrollBarSize() >> 8);
                 byte b = (byte) 0;
                 byte b2 = b;
-                Object[] objArr2 = new Object[1];
+                java.lang.Object[] objArr2 = new java.lang.Object[1];
                 a(b, b2, b2, objArr2);
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c, i, scrollBarSize, 1560737410, false, (String) objArr2[0], new Class[]{Context.class, Integer.TYPE, getPadSub3B15685$PngjException.class});
             }
@@ -113,7 +113,7 @@ public final class PngjOutputException extends Dialog {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void a(byte b, byte b2, short s, Object[] objArr) {
+    private static void a(byte b, byte b2, short s, java.lang.Object[] objArr) {
         int i;
         int i2 = b * 2;
         byte[] bArr = $$a;

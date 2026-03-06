@@ -12,15 +12,15 @@ public class SelectedFrame {
     public ArrayList<byte[]> sequence;
 
     public SelectedFrame() {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int b = defpackage.a.b(943483186);
                     int i = ~b;
                     int c = defpackage.a.c((~(b | 469297551)) | 537203264 | (~(i | (-38313985))), 988, (((~(1006500815 | i)) | (~((-38313985) | b))) * 988) + 1108892159, 1536766574);
@@ -36,13 +36,13 @@ public class SelectedFrame {
             byte[] bArr = $$a;
             byte b2 = (byte) (bArr[25] - 1);
             byte b3 = bArr[27];
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a(b2, b3, (byte) (b3 - 1), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             byte b4 = bArr[27];
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             a(b4, (byte) (b4 + 1), (byte) (bArr[32] - 1), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1536766574);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1536766574);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4972;
             Fpnative.valueOf = objArr;
@@ -63,7 +63,7 @@ public class SelectedFrame {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void a(byte b, short s, short s2, Object[] objArr) {
+    private static void a(byte b, short s, short s2, java.lang.Object[] objArr) {
         int i;
         int i2;
         int i3 = 44 - (s * 25);

@@ -50,7 +50,7 @@ public class Verify2TActivity extends FingerActivity {
     protected HashMap values = new HashMap();
     int PngjBadCrcException = 0;
 
-    public class PngjBadSignature implements PngjBadSignature.values {
+    public class PngjBadSignature implements com.identy.b.PngjBadSignature.values {
         private /* synthetic */ HashMap PngjBadSignature;
         private /* synthetic */ HashMap PngjException;
         private /* synthetic */ long valueOf;
@@ -125,7 +125,7 @@ public class Verify2TActivity extends FingerActivity {
                         Verify2TActivity.this.onErrorResponse.valueOf();
                     } catch (Exception unused2) {
                     }
-                    e1.values(new Object[]{Verify2TActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
+                    e1.values(new java.lang.Object[]{Verify2TActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                     identySdk = IdentySdk.getInstance();
                     Verify2TActivity verify2TActivity2 = Verify2TActivity.this;
                     fingerDetectionMode = verify2TActivity2.PngjExceptionInternal;
@@ -287,7 +287,7 @@ public class Verify2TActivity extends FingerActivity {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void b(int i, byte b, byte b2, Object[] objArr) {
+    private static void b(int i, byte b, byte b2, java.lang.Object[] objArr) {
         int i2;
         int i3;
         int i4 = (b * 18) + 4;
@@ -329,7 +329,7 @@ public class Verify2TActivity extends FingerActivity {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void c(int i, boolean z, String str, int i2, int i3, Object[] objArr) {
+    private static void c(int i, boolean z, String str, int i2, int i3, java.lang.Object[] objArr) {
         int i4;
         char[] cArr;
         Throwable cause;
@@ -351,10 +351,10 @@ public class Verify2TActivity extends FingerActivity {
             char c3 = (char) (i3 + c2);
             cArr2[i7] = c3;
             try {
-                Object[] objArr2 = new Object[2];
+                java.lang.Object[] objArr2 = new java.lang.Object[2];
                 objArr2[1] = Integer.valueOf(valueOf);
                 objArr2[i6] = Integer.valueOf(c3);
-                Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(610361420);
+                java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(610361420);
                 if (PngjBadSignature2 == null) {
                     char indexOf = (char) ((-1) - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', i6));
                     int keyRepeatTimeout = 28 - (ViewConfiguration.getKeyRepeatTimeout() >> 16);
@@ -371,12 +371,12 @@ public class Verify2TActivity extends FingerActivity {
                     c = 1;
                 }
                 cArr2[i7] = ((Character) ((Method) PngjBadSignature2).invoke(null, objArr2)).charValue();
-                Object[] objArr3 = new Object[2];
+                java.lang.Object[] objArr3 = new java.lang.Object[2];
                 objArr3[c] = action;
                 objArr3[i5] = action;
-                Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
+                java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
                 if (PngjBadSignature3 == null) {
-                    PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1))), (TypedValue.complexToFloat(i5) > 0.0f ? 1 : (TypedValue.complexToFloat(i5) == 0.0f ? 0 : -1)) + 40, 189 - Process.getGidForName(BuildConfig.FLAVOR), 794744863, false, "j", new Class[]{Object.class, Object.class});
+                    PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1))), (TypedValue.complexToFloat(i5) > 0.0f ? 1 : (TypedValue.complexToFloat(i5) == 0.0f ? 0 : -1)) + 40, 189 - Process.getGidForName(BuildConfig.FLAVOR), 794744863, false, "j", new Class[]{java.lang.Object.class, java.lang.Object.class});
                 }
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
                 i6 = i5;
@@ -419,12 +419,12 @@ public class Verify2TActivity extends FingerActivity {
                     break;
                 }
                 cArr[i12] = cArr2[(i - i12) - i4];
-                Object[] objArr4 = new Object[2];
+                java.lang.Object[] objArr4 = new java.lang.Object[2];
                 objArr4[i4] = action;
                 objArr4[0] = action;
-                Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
+                java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-743328348);
                 if (PngjBadSignature4 == null) {
-                    PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0, 0)), 40 - (ViewConfiguration.getTapTimeout() >> 16), (ViewConfiguration.getScrollBarFadeDuration() >> 16) + 190, 794744863, false, "j", new Class[]{Object.class, Object.class});
+                    PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0, 0)), 40 - (ViewConfiguration.getTapTimeout() >> 16), (ViewConfiguration.getScrollBarFadeDuration() >> 16) + 190, 794744863, false, "j", new Class[]{java.lang.Object.class, java.lang.Object.class});
                 }
                 ((Method) PngjBadSignature4).invoke(null, objArr4);
                 $10 = ($11 + 21) % 128;
@@ -521,7 +521,7 @@ public class Verify2TActivity extends FingerActivity {
         char c;
         int i;
         int intValue;
-        Object[] PngjException$1eba2e16;
+        java.lang.Object[] PngjException$1eba2e16;
         char c2;
         int i2;
         int i3;
@@ -529,14 +529,14 @@ public class Verify2TActivity extends FingerActivity {
         getScore = i4 % 128;
         if (i4 % 2 == 0) {
             super.attachBaseContext(context);
-            Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
+            java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
             if (PngjBadSignature2 == null) {
                 char indexOf = (char) (TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 14831);
                 int i5 = 27 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1));
                 int i6 = (ViewConfiguration.getGlobalActionKeyTimeout() > 0L ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == 0L ? 0 : -1)) + 720;
                 byte b = $$a[20];
                 byte b2 = (byte) (b - 1);
-                Object[] objArr = new Object[1];
+                java.lang.Object[] objArr = new java.lang.Object[1];
                 b(b, b2, b2, objArr);
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf, i5, i6, -815159504, false, (String) objArr[0], null);
             }
@@ -544,7 +544,7 @@ public class Verify2TActivity extends FingerActivity {
             throw null;
         }
         super.attachBaseContext(context);
-        Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
+        java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature3 == null) {
             char maximumFlingVelocity = (char) (14830 - (ViewConfiguration.getMaximumFlingVelocity() >> 16));
             int offsetAfter = TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0) + 28;
@@ -553,7 +553,7 @@ public class Verify2TActivity extends FingerActivity {
             byte b4 = (byte) (b3 - 1);
             c = 2;
             i = 864471691;
-            Object[] objArr2 = new Object[1];
+            java.lang.Object[] objArr2 = new java.lang.Object[1];
             b(b3, b4, b4, objArr2);
             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(maximumFlingVelocity, offsetAfter, i7, -815159504, false, (String) objArr2[0], null);
         } else {
@@ -566,14 +566,14 @@ public class Verify2TActivity extends FingerActivity {
                 if (j != -1) {
                     getFingerPrintQualityScore = (getScore + 45) % 128;
                     long j2 = j + 4611686018427387815L;
-                    Object[] objArr3 = new Object[1];
+                    java.lang.Object[] objArr3 = new java.lang.Object[1];
                     c(22 - KeyEvent.getDeadChar(0, 0), true, "\u0000\f\t￠\n\u0002\u0011\u0010\u0016\ufff0ￋ\u0010\fￋ\u0001\u0006\f\u000f\u0001\u000b\ufffe\b", ((Process.getThreadPriority(0) + 20) >> 6) + 21, MotionEvent.axisFromString(BuildConfig.FLAVOR) + 158, objArr3);
                     Class<?> cls = Class.forName((String) objArr3[0]);
-                    Object[] objArr4 = new Object[1];
+                    java.lang.Object[] objArr4 = new java.lang.Object[1];
                     c(TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0) + 16, false, "￫\ufffe\ufffa\u0005\r\u0002\u0006\ufffe\ufffe\u0005\ufffa\t\f\ufffe�", 7 - ExpandableListView.getPackedPositionChild(0L), Color.blue(0) + 161, objArr4);
                     if (j2 >= ((Long) cls.getDeclaredMethod((String) objArr4[0], null).invoke(null, null)).longValue()) {
                         getFingerPrintQualityScore = (getScore + 71) % 128;
-                        Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
+                        java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                         if (PngjBadSignature4 == null) {
                             char maximumFlingVelocity2 = (char) ((ViewConfiguration.getMaximumFlingVelocity() >> 16) + 14830);
                             int scrollBarSize = 28 - (ViewConfiguration.getScrollBarSize() >> 8);
@@ -581,12 +581,12 @@ public class Verify2TActivity extends FingerActivity {
                             byte b5 = $$a[20];
                             byte b6 = (byte) (b5 - 1);
                             byte b7 = b5;
-                            Object[] objArr5 = new Object[1];
+                            java.lang.Object[] objArr5 = new java.lang.Object[1];
                             b(b6, b7, (byte) (b7 - 1), objArr5);
                             PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(maximumFlingVelocity2, scrollBarSize, minimumFlingVelocity, -779023007, false, (String) objArr5[0], null);
                         }
-                        Object[] objArr6 = (Object[]) ((Field) PngjBadSignature4).get(null);
-                        PngjException$1eba2e16 = new Object[4];
+                        java.lang.Object[] objArr6 = (java.lang.Object[]) ((Field) PngjBadSignature4).get(null);
+                        PngjException$1eba2e16 = new java.lang.Object[4];
                         PngjException$1eba2e16[0] = new int[]{r5};
                         PngjException$1eba2e16[1] = new int[1];
                         PngjException$1eba2e16[3] = new int[]{r4};
@@ -601,7 +601,7 @@ public class Verify2TActivity extends FingerActivity {
                         i2 = ((int[]) PngjException$1eba2e16[0])[0];
                         i3 = ((int[]) PngjException$1eba2e16[3])[0];
                         if (i3 != i2) {
-                            Object[] objArr7 = new Object[4];
+                            java.lang.Object[] objArr7 = new java.lang.Object[4];
                             objArr7[0] = new int[]{r6};
                             objArr7[1] = new int[1];
                             objArr7[3] = new int[]{r5};
@@ -628,7 +628,7 @@ public class Verify2TActivity extends FingerActivity {
                         int i18 = i3 - 1;
                         iArr[i18] = 1;
                         Toast.makeText((Context) null, iArr[((i3 * i18) % 2) - 1], 1).show();
-                        Object[] objArr8 = new Object[4];
+                        java.lang.Object[] objArr8 = new java.lang.Object[4];
                         objArr8[0] = new int[]{r6};
                         objArr8[1] = new int[1];
                         objArr8[3] = new int[]{r5};
@@ -643,20 +643,20 @@ public class Verify2TActivity extends FingerActivity {
                         return;
                     }
                 }
-                Object[] objArr9 = new Object[1];
+                java.lang.Object[] objArr9 = new java.lang.Object[1];
                 c(22 - TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0), true, "\u0000\f\t￠\n\u0002\u0011\u0010\u0016\ufff0ￋ\u0010\fￋ\u0001\u0006\f\u000f\u0001\u000b\ufffe\b", 20 - Process.getGidForName(BuildConfig.FLAVOR), 157 - (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)), objArr9);
                 Class<?> cls2 = Class.forName((String) objArr9[0]);
-                Object[] objArr10 = new Object[1];
+                java.lang.Object[] objArr10 = new java.lang.Object[1];
                 c(15 - (ViewConfiguration.getDoubleTapTimeout() >> 16), false, "￫\ufffe\ufffa\u0005\r\u0002\u0006\ufffe\ufffe\u0005\ufffa\t\f\ufffe�", 7 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)), (ViewConfiguration.getGlobalActionKeyTimeout() > 0L ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == 0L ? 0 : -1)) + 160, objArr10);
                 Long valueOf2 = Long.valueOf(((Long) cls2.getDeclaredMethod((String) objArr10[0], null).invoke(null, null)).longValue());
-                Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i);
+                java.lang.Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i);
                 if (PngjBadSignature5 == null) {
                     char keyRepeatDelay = (char) ((ViewConfiguration.getKeyRepeatDelay() >> 16) + 14830);
                     int i24 = 29 - (SystemClock.uptimeMillis() > 0L ? 1 : (SystemClock.uptimeMillis() == 0L ? 0 : -1));
                     int absoluteGravity = Gravity.getAbsoluteGravity(0, 0) + 721;
                     byte b8 = $$a[c2];
                     byte b9 = (byte) (b8 - 1);
-                    Object[] objArr11 = new Object[1];
+                    java.lang.Object[] objArr11 = new java.lang.Object[1];
                     b(b8, b9, b9, objArr11);
                     PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(keyRepeatDelay, i24, absoluteGravity, -815159504, false, (String) objArr11[0], null);
                 }
@@ -669,13 +669,13 @@ public class Verify2TActivity extends FingerActivity {
             } catch (Exception unused) {
                 throw new RuntimeException();
             }
-            Object[] objArr12 = {-1754974480};
-            Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
+            java.lang.Object[] objArr12 = {-1754974480};
+            java.lang.Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
             if (PngjBadSignature6 == null) {
                 PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0), (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)) + 25, (-16776519) - Color.rgb(0, 0, 0), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
             PngjException$1eba2e16 = NativeAlgoUtils.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr12), 1549783404);
-            Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
+            java.lang.Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature7 == null) {
                 char packedPositionGroup = (char) (ExpandableListView.getPackedPositionGroup(0L) + 14830);
                 int indexOf2 = 27 - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0');
@@ -684,7 +684,7 @@ public class Verify2TActivity extends FingerActivity {
                 byte b11 = (byte) (b10 - 1);
                 byte b12 = b10;
                 c2 = 20;
-                Object[] objArr13 = new Object[1];
+                java.lang.Object[] objArr13 = new java.lang.Object[1];
                 b(b11, b12, (byte) (b12 - 1), objArr13);
                 PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(packedPositionGroup, indexOf2, maximumDrawingCacheSize, -779023007, false, (String) objArr13[0], null);
             } else {
@@ -698,12 +698,12 @@ public class Verify2TActivity extends FingerActivity {
             }
             throw cause;
         }
-        Object[] objArr14 = new Object[1];
+        java.lang.Object[] objArr14 = new java.lang.Object[1];
         c((ViewConfiguration.getLongPressTimeout() >> 16) + 16, false, "\u0011\u0012\u0003\u000b\b\uffff\u0014\uffffￌ\n\uffff\f\u0005ￌ\ufff1\u0017", 3 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), 156 - (ViewConfiguration.getJumpTapTimeout() >> 16), objArr14);
         Class<?> cls3 = Class.forName((String) objArr14[0]);
-        Object[] objArr15 = new Object[1];
+        java.lang.Object[] objArr15 = new java.lang.Object[1];
         c(16 - Color.alpha(0), true, "\ufffe\u0003\uffff\ufffe\t\uffdd\u0002\r\ufffb￢\u0013\u000e\u0003\u000e\b\uffff", 1 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)), TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0') + 161, objArr15);
-        intValue = ((Integer) cls3.getMethod((String) objArr15[0], Object.class).invoke(null, this)).intValue();
+        intValue = ((Integer) cls3.getMethod((String) objArr15[0], java.lang.Object.class).invoke(null, this)).intValue();
     }
 
     @Override // com.identy.FingerActivity

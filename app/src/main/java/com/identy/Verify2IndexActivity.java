@@ -48,7 +48,7 @@ public class Verify2IndexActivity extends FingerActivity {
     protected HashMap valueOf = new HashMap();
     int PngjBadCrcException = 0;
 
-    public class PngjBadCrcException implements PngjBadSignature.values {
+    public class PngjBadCrcException implements org.cameracontroller.PngjBadSignature.values {
         private /* synthetic */ HashMap PngjBadCrcException;
         private /* synthetic */ long PngjBadSignature;
         private /* synthetic */ HashMap PngjException;
@@ -153,7 +153,7 @@ public class Verify2IndexActivity extends FingerActivity {
                             e5.printStackTrace();
                         }
                     }
-                    e1.values(new Object[]{Verify2IndexActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
+                    e1.values(new java.lang.Object[]{Verify2IndexActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                     IdentySdk identySdk = IdentySdk.getInstance();
                     Verify2IndexActivity verify2IndexActivity2 = Verify2IndexActivity.this;
                     FingerDetectionMode fingerDetectionMode = verify2IndexActivity2.PngjExceptionInternal;
@@ -329,7 +329,7 @@ public class Verify2IndexActivity extends FingerActivity {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void b(byte b, byte b2, short s, Object[] objArr) {
+    private static void b(byte b, byte b2, short s, java.lang.Object[] objArr) {
         int i;
         int i2;
         int r8 = 80 - (s * 2);
@@ -373,7 +373,7 @@ public class Verify2IndexActivity extends FingerActivity {
         }
     }
 
-    private static void c(int[] iArr, String str, boolean z, Object[] objArr) {
+    private static void c(int[] iArr, String str, boolean z, java.lang.Object[] objArr) {
         float f;
         int i;
         byte[] bArr;
@@ -405,8 +405,8 @@ public class Verify2IndexActivity extends FingerActivity {
                 $10 = i11 % 128;
                 if (i11 % i6 != 0) {
                     try {
-                        Object[] objArr2 = {Integer.valueOf(cArr[i9])};
-                        Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
+                        java.lang.Object[] objArr2 = {Integer.valueOf(cArr[i9])};
+                        java.lang.Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
                         if (PngjBadSignature == null) {
                             bArr = bArr3;
                             i2 = i9;
@@ -429,8 +429,8 @@ public class Verify2IndexActivity extends FingerActivity {
                 } else {
                     bArr = bArr3;
                     int i12 = i9;
-                    Object[] objArr3 = {Integer.valueOf(cArr[i12])};
-                    Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
+                    java.lang.Object[] objArr3 = {Integer.valueOf(cArr[i12])};
+                    java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
                     if (PngjBadSignature2 == null) {
                         byte b3 = (byte) 2;
                         byte b4 = (byte) (b3 - 2);
@@ -463,8 +463,8 @@ public class Verify2IndexActivity extends FingerActivity {
                 $11 = (i14 + 53) % 128;
                 if (bArr4[i13] == 1) {
                     $11 = (i14 + 53) % 128;
-                    Object[] objArr4 = {Integer.valueOf(cArr3[i13]), Integer.valueOf(c)};
-                    Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
+                    java.lang.Object[] objArr4 = {Integer.valueOf(cArr3[i13]), Integer.valueOf(c)};
+                    java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
                     if (PngjBadSignature3 == null) {
                         float f2 = f;
                         byte b5 = (byte) 3;
@@ -473,8 +473,8 @@ public class Verify2IndexActivity extends FingerActivity {
                     }
                     cArr4[i13] = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr4)).charValue();
                 } else {
-                    Object[] objArr5 = {Integer.valueOf(cArr3[i13]), Integer.valueOf(c)};
-                    Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(269554740);
+                    java.lang.Object[] objArr5 = {Integer.valueOf(cArr3[i13]), Integer.valueOf(c)};
+                    java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(269554740);
                     if (PngjBadSignature4 == null) {
                         byte b7 = (byte) 0;
                         byte b8 = b7;
@@ -483,11 +483,11 @@ public class Verify2IndexActivity extends FingerActivity {
                     cArr4[i13] = ((Character) ((Method) PngjBadSignature4).invoke(null, objArr5)).charValue();
                 }
                 c = cArr4[e1Var.PngjBadSignature];
-                Object[] objArr6 = {e1Var, e1Var};
-                Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1060060353);
+                java.lang.Object[] objArr6 = {e1Var, e1Var};
+                java.lang.Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1060060353);
                 if (PngjBadSignature5 == null) {
                     f = 0.0f;
-                    PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getMode(0), (SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)) + 34, (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1)) + 154, -1010806406, false, "g", new Class[]{Object.class, Object.class});
+                    PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getMode(0), (SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)) + 34, (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1)) + 154, -1010806406, false, "g", new Class[]{java.lang.Object.class, java.lang.Object.class});
                 } else {
                     f = 0.0f;
                 }
@@ -569,18 +569,18 @@ public class Verify2IndexActivity extends FingerActivity {
         char c;
         int i;
         int intValue;
-        Object[] values$1eba2e16;
+        java.lang.Object[] values$1eba2e16;
         long j;
         getFingerPrintQualityScore = (getScore + 123) % 128;
         super.attachBaseContext(context);
-        Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
+        java.lang.Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature == null) {
             char pressedStateDuration = (char) (14830 - (ViewConfiguration.getPressedStateDuration() >> 16));
             int i2 = 28 - (CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1));
             int i3 = (SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)) + 720;
             byte b = $$a[18];
             byte b2 = b;
-            Object[] objArr = new Object[1];
+            java.lang.Object[] objArr = new java.lang.Object[1];
             b(b, b2, (byte) (b2 - 1), objArr);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(pressedStateDuration, i2, i3, -815159504, false, (String) objArr[0], null);
         }
@@ -591,27 +591,27 @@ public class Verify2IndexActivity extends FingerActivity {
                     getFingerPrintQualityScore = (getScore + 119) % 128;
                     long j3 = j2 + 4611686018427387836L;
                     i = 763257050;
-                    Object[] objArr2 = new Object[1];
+                    java.lang.Object[] objArr2 = new java.lang.Object[1];
                     c(new int[]{0, 22, 28, 0}, "\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0000", false, objArr2);
                     Class<?> cls = Class.forName((String) objArr2[0]);
                     c = 18;
-                    Object[] objArr3 = new Object[1];
+                    java.lang.Object[] objArr3 = new java.lang.Object[1];
                     c(new int[]{22, 15, 70, 0}, "\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0000", false, objArr3);
                     if (j3 >= ((Long) cls.getDeclaredMethod((String) objArr3[0], null).invoke(null, null)).longValue()) {
                         getFingerPrintQualityScore = (getScore + 3) % 128;
-                        Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
+                        java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                         if (PngjBadSignature2 == null) {
                             char resolveOpacity = (char) (Drawable.resolveOpacity(0, 0) + 14830);
                             int alpha = 28 - Color.alpha(0);
                             int mirror = AndroidCharacter.getMirror('0') + 673;
                             byte b3 = (byte) ($$a[18] - 1);
                             byte b4 = b3;
-                            Object[] objArr4 = new Object[1];
+                            java.lang.Object[] objArr4 = new java.lang.Object[1];
                             b(b3, b4, b4, objArr4);
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(resolveOpacity, alpha, mirror, -779023007, false, (String) objArr4[0], null);
                         }
-                        Object[] objArr5 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                        values$1eba2e16 = new Object[]{new int[]{r6}, new int[1], r0, new int[]{r5}};
+                        java.lang.Object[] objArr5 = (java.lang.Object[]) ((Field) PngjBadSignature2).get(null);
+                        values$1eba2e16 = new java.lang.Object[]{new int[]{r6}, new int[1], r0, new int[]{r5}};
                         int i4 = ((int[]) objArr5[3])[0];
                         int i5 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
@@ -633,7 +633,7 @@ public class Verify2IndexActivity extends FingerActivity {
                             throw null;
                         }
                         getFingerPrintQualityScore = (getScore + 51) % 128;
-                        Object[] objArr6 = {new int[]{r6}, new int[1], r1, new int[]{r5}};
+                        java.lang.Object[] objArr6 = {new int[]{r6}, new int[1], r1, new int[]{r5}};
                         int i9 = ((int[]) values$1eba2e16[1])[0];
                         int i10 = ((int[]) values$1eba2e16[3])[0];
                         int i11 = ((int[]) values$1eba2e16[0])[0];
@@ -652,20 +652,20 @@ public class Verify2IndexActivity extends FingerActivity {
                     c = 18;
                     i = 763257050;
                 }
-                Object[] objArr7 = new Object[1];
+                java.lang.Object[] objArr7 = new java.lang.Object[1];
                 c(new int[]{0, 22, 28, 0}, "\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0000", false, objArr7);
                 Class<?> cls2 = Class.forName((String) objArr7[0]);
-                Object[] objArr8 = new Object[1];
+                java.lang.Object[] objArr8 = new java.lang.Object[1];
                 c(new int[]{22, 15, 70, 0}, "\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0000", false, objArr8);
                 Long valueOf = Long.valueOf(((Long) cls2.getDeclaredMethod((String) objArr8[0], null).invoke(null, null)).longValue());
-                Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
+                java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
                 if (PngjBadSignature3 == null) {
                     char packedPositionChild = (char) (14829 - ExpandableListView.getPackedPositionChild(j));
                     int maximumDrawingCacheSize = 28 - (ViewConfiguration.getMaximumDrawingCacheSize() >> 24);
                     int i17 = (ViewConfiguration.getZoomControlsTimeout() > j ? 1 : (ViewConfiguration.getZoomControlsTimeout() == j ? 0 : -1)) + 720;
                     byte b5 = $$a[c];
                     byte b6 = b5;
-                    Object[] objArr9 = new Object[1];
+                    java.lang.Object[] objArr9 = new java.lang.Object[1];
                     b(b5, b6, (byte) (b6 - 1), objArr9);
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(packedPositionChild, maximumDrawingCacheSize, i17, -815159504, false, (String) objArr9[0], null);
                 }
@@ -675,13 +675,13 @@ public class Verify2IndexActivity extends FingerActivity {
             } catch (Exception unused) {
                 throw new RuntimeException();
             }
-            Object[] objArr10 = {-1148600848};
-            Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
+            java.lang.Object[] objArr10 = {-1148600848};
+            java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getPressedStateDuration() >> 16), 23 - MotionEvent.axisFromString(BuildConfig.FLAVOR), 697 - Color.blue(0), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
             values$1eba2e16 = PngjInputException.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -56835873);
-            Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i);
+            java.lang.Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i);
             if (PngjBadSignature5 == null) {
                 char c4 = (char) ((ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) + 14829);
                 int i18 = 28 - (TypedValue.complexToFloat(0) > 0.0f ? 1 : (TypedValue.complexToFloat(0) == 0.0f ? 0 : -1));
@@ -689,7 +689,7 @@ public class Verify2IndexActivity extends FingerActivity {
                 byte b7 = (byte) ($$a[c] - 1);
                 j = 0;
                 byte b8 = b7;
-                Object[] objArr11 = new Object[1];
+                java.lang.Object[] objArr11 = new java.lang.Object[1];
                 b(b7, b8, b8, objArr11);
                 PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c4, i18, i19, -779023007, false, (String) objArr11[0], null);
             } else {
@@ -703,12 +703,12 @@ public class Verify2IndexActivity extends FingerActivity {
             }
             throw cause;
         }
-        Object[] objArr12 = new Object[1];
+        java.lang.Object[] objArr12 = new java.lang.Object[1];
         c(new int[]{37, 16, 151, 10}, "\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0000", true, objArr12);
         Class<?> cls3 = Class.forName((String) objArr12[0]);
-        Object[] objArr13 = new Object[1];
+        java.lang.Object[] objArr13 = new java.lang.Object[1];
         c(new int[]{53, 16, 0, 12}, "\u0000\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0000\u0001\u0001\u0000", true, objArr13);
-        intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        intValue = ((Integer) cls3.getMethod((String) objArr13[0], java.lang.Object.class).invoke(null, this)).intValue();
     }
 
     @Override // com.identy.FingerActivity

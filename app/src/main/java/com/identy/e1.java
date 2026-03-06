@@ -121,7 +121,7 @@ public class e1 extends BroadcastReceiver {
     private static int pfkrol;
     private static final long[] resetAttempt;
     private static char setPersonSelected;
-    public static PngjBadCrcException.PngjBadSignature valueOf;
+    public static org.camera.preview.PngjBadCrcException.PngjBadSignature valueOf;
     public static long values;
     protected Activity Action;
     com.identy.d.PngjBadSignature Attempt;
@@ -1705,7 +1705,7 @@ public class e1 extends BroadcastReceiver {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static PngjBadCrcException.PngjBadSignature valueOf(Context context) {
+    private static org.camera.preview.PngjBadCrcException.PngjBadSignature valueOf(Context context) {
         boolean z;
         int i;
         ActivityManager activityManager = (ActivityManager) context.getSystemService("activity");
@@ -1732,17 +1732,17 @@ public class e1 extends BroadcastReceiver {
                         int i3 = markIntroSetting + 3;
                         getClassForDetection = i3 % 128;
                         if (i3 % 2 == 0 ? configure < 200 : configure < 27808) {
-                            return PngjBadCrcException.PngjBadSignature.HIGH;
+                            return org.camera.preview.PngjBadCrcException.PngjBadSignature.HIGH;
                         }
                     }
                     if (d >= 3.0d) {
                         getClassForDetection = (markIntroSetting + 121) % 128;
                         if (configure < 300) {
-                            return PngjBadCrcException.PngjBadSignature.MEDIUM;
+                            return org.camera.preview.PngjBadCrcException.PngjBadSignature.MEDIUM;
                         }
                     }
                 }
-                PngjBadCrcException.PngjBadSignature pngjBadSignature = PngjBadCrcException.PngjBadSignature.LOW;
+                org.camera.preview.PngjBadCrcException.PngjBadSignature pngjBadSignature = org.camera.preview.PngjBadCrcException.PngjBadSignature.LOW;
                 i = markIntroSetting + 77;
                 getClassForDetection = i % 128;
                 if (i % 2 != 0) {
@@ -1756,7 +1756,7 @@ public class e1 extends BroadcastReceiver {
             }
             if (z) {
             }
-            PngjBadCrcException.PngjBadSignature pngjBadSignature2 = PngjBadCrcException.PngjBadSignature.LOW;
+            org.camera.preview.PngjBadCrcException.PngjBadSignature pngjBadSignature2 = org.camera.preview.PngjBadCrcException.PngjBadSignature.LOW;
             i = markIntroSetting + 77;
             getClassForDetection = i % 128;
             if (i % 2 != 0) {
@@ -1768,7 +1768,7 @@ public class e1 extends BroadcastReceiver {
         }
         if (z) {
         }
-        PngjBadCrcException.PngjBadSignature pngjBadSignature22 = PngjBadCrcException.PngjBadSignature.LOW;
+        org.camera.preview.PngjBadCrcException.PngjBadSignature pngjBadSignature22 = org.camera.preview.PngjBadCrcException.PngjBadSignature.LOW;
         i = markIntroSetting + 77;
         getClassForDetection = i % 128;
         if (i % 2 != 0) {
@@ -1833,7 +1833,7 @@ public class e1 extends BroadcastReceiver {
             PngjPrematureEnding = ((Integer) uxd565jj[4]).intValue() != 0 ? ((Integer) uxd565jj[4]).intValue() : PngjPrematureEnding;
             PngjException = true;
         }
-        PngjBadCrcException.PngjBadSignature values2 = values(activity);
+        org.camera.preview.PngjBadCrcException.PngjBadSignature values2 = values(activity);
         " levelx : ".concat(String.valueOf(values2));
         Fpnative.setDConfig(values, values2.ordinal());
         return null;
@@ -3308,7 +3308,7 @@ public class e1 extends BroadcastReceiver {
         }
     }
 
-    public static PngjBadCrcException.PngjBadSignature values(Context context) {
+    public static org.camera.preview.PngjBadCrcException.PngjBadSignature values(Context context) {
         getClassForDetection = (markIntroSetting + 63) % 128;
         if (valueOf == null) {
             int i = markIntroSetting + 105;
@@ -3319,7 +3319,7 @@ public class e1 extends BroadcastReceiver {
                 boolean contains = Build.MANUFACTURER.toLowerCase(Locale.US).contains("oneplus");
                 boolean startsWith = Build.MODEL.startsWith("EB210");
                 if (k.equals(CaptureMode.L) || (startsWith && contains)) {
-                    valueOf = PngjBadCrcException.PngjBadSignature.LOW;
+                    valueOf = org.camera.preview.PngjBadCrcException.PngjBadSignature.LOW;
                 }
             } catch (Exception e) {
                 e.printStackTrace();

@@ -62,9 +62,9 @@ final class isFoundMatchingTemplates extends e1 {
     private boolean pfk;
     Handler pfkrol;
 
-    public class PngjBadCrcException implements PngjBadCrcException.values {
-        public static int valueOf;
-        public static int values;
+    public class PngjBadCrcException implements org.c.a.PngjBadCrcException.values {
+        public int valueOf;
+        public int values;
 
         public PngjBadCrcException() {
         }
@@ -194,7 +194,7 @@ final class isFoundMatchingTemplates extends e1 {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private static void a(short s, int i, short s2, Object[] objArr) {
+        private static void a(short s, int i, short s2, java.lang.Object[] objArr) {
             int i2;
             int i3 = (s2 * 4) + 97;
             byte[] bArr = $$a;
@@ -239,7 +239,7 @@ final class isFoundMatchingTemplates extends e1 {
             }
         }
 
-        private static void b(short s, int i, int i2, byte b, int i3, Object[] objArr) {
+        private static void b(short s, int i, int i2, byte b, int i3, java.lang.Object[] objArr) {
             boolean z;
             boolean z2;
             long j;
@@ -251,9 +251,9 @@ final class isFoundMatchingTemplates extends e1 {
             StringBuilder sb = new StringBuilder();
             try {
                 boolean z4 = true;
-                Object[] objArr2 = {Integer.valueOf(i3), Integer.valueOf(values)};
+                java.lang.Object[] objArr2 = {Integer.valueOf(i3), Integer.valueOf(values)};
                 int i6 = 0;
-                Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1302984176);
+                java.lang.Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1302984176);
                 Class cls = Integer.TYPE;
                 if (PngjBadSignature == null) {
                     byte b2 = (byte) 0;
@@ -276,8 +276,8 @@ final class isFoundMatchingTemplates extends e1 {
                         int i7 = 0;
                         j = 0;
                         while (i7 < length) {
-                            Object[] objArr3 = {Integer.valueOf(bArr[i7])};
-                            Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1053815139);
+                            java.lang.Object[] objArr3 = {Integer.valueOf(bArr[i7])};
+                            java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1053815139);
                             if (PngjBadSignature2 == null) {
                                 char defaultSize = (char) (View.getDefaultSize(i6, i6) + 14830);
                                 int minimumFlingVelocity = 28 - (ViewConfiguration.getMinimumFlingVelocity() >> 16);
@@ -306,10 +306,10 @@ final class isFoundMatchingTemplates extends e1 {
                     j2 = -6165791747575875761L;
                     if (bArr != null) {
                         byte[] bArr3 = valueOf;
-                        Object[] objArr4 = new Object[2];
+                        java.lang.Object[] objArr4 = new java.lang.Object[2];
                         objArr4[z2 ? 1 : 0] = Integer.valueOf(PngjBadCrcException);
                         objArr4[i8] = Integer.valueOf(i2);
-                        Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1302984176);
+                        java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1302984176);
                         if (PngjBadSignature3 == null) {
                             byte b5 = (byte) i8;
                             byte b6 = b5;
@@ -326,12 +326,12 @@ final class isFoundMatchingTemplates extends e1 {
                 }
                 if (intValue > 0) {
                     pngjPrematureEnding.values = ((i2 + intValue) - 2) + ((int) (PngjBadCrcException ^ j2)) + ((z ^ true) != z2 ? 1 : 0);
-                    Object[] objArr5 = {pngjPrematureEnding, Integer.valueOf(i), Integer.valueOf(PngjException), sb};
-                    Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1013119226);
+                    java.lang.Object[] objArr5 = {pngjPrematureEnding, Integer.valueOf(i), Integer.valueOf(PngjException), sb};
+                    java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1013119226);
                     if (PngjBadSignature4 == null) {
                         byte b7 = (byte) 3;
                         byte b8 = (byte) (b7 - 3);
-                        PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ExpandableListView.getPackedPositionChild(j) + 45718), (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 40, 625 - KeyEvent.normalizeMetaState(0), 1064463037, false, $$e(b7, b8, b8), new Class[]{Object.class, cls, cls, Object.class});
+                        PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ExpandableListView.getPackedPositionChild(j) + 45718), (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 40, 625 - KeyEvent.normalizeMetaState(0), 1064463037, false, $$e(b7, b8, b8), new Class[]{java.lang.Object.class, cls, cls, java.lang.Object.class});
                     }
                     ((StringBuilder) ((Method) PngjBadSignature4).invoke(null, objArr5)).append(pngjPrematureEnding.valueOf);
                     pngjPrematureEnding.PngjBadCrcException = pngjPrematureEnding.valueOf;
@@ -375,7 +375,7 @@ final class isFoundMatchingTemplates extends e1 {
             }
         }
 
-        private static void c(String str, int i, Object[] objArr) {
+        private static void c(String str, int i, java.lang.Object[] objArr) {
             char[] cArr;
             if (str != null) {
                 $11 = ($10 + 45) % 128;
@@ -397,8 +397,8 @@ final class isFoundMatchingTemplates extends e1 {
                 int i3 = i2 - 4;
                 aVar.PngjBadCrcException = i3;
                 try {
-                    Object[] objArr2 = {Long.valueOf(values2[i2] ^ values2[i2 % 4]), Long.valueOf(i3), Long.valueOf(PngjUnsupportedException)};
-                    Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1668670198);
+                    java.lang.Object[] objArr2 = {Long.valueOf(values2[i2] ^ values2[i2 % 4]), Long.valueOf(i3), Long.valueOf(PngjUnsupportedException)};
+                    java.lang.Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1668670198);
                     if (PngjBadSignature == null) {
                         char c = (char) (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1));
                         int indexOf = TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 30;
@@ -407,15 +407,15 @@ final class isFoundMatchingTemplates extends e1 {
                         PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(c, indexOf, deadChar, 1617260721, false, "o", new Class[]{cls, cls, cls});
                     }
                     values2[i2] = ((Character) ((Method) PngjBadSignature).invoke(null, objArr2)).charValue();
-                    Object[] objArr3 = {aVar, aVar};
-                    Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1405973094);
+                    java.lang.Object[] objArr3 = {aVar, aVar};
+                    java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1405973094);
                     if (PngjBadSignature2 == null) {
                         char fadingEdgeLength = (char) ((ViewConfiguration.getFadingEdgeLength() >> 16) + 14830);
                         int lastIndexOf = 27 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0);
                         int absoluteGravity = Gravity.getAbsoluteGravity(0, 0) + 721;
                         byte b = (byte) ($$d & 11);
                         byte b2 = (byte) (b - 2);
-                        PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(fadingEdgeLength, lastIndexOf, absoluteGravity, -1356718115, false, $$e(b, b2, b2), new Class[]{Object.class, Object.class});
+                        PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(fadingEdgeLength, lastIndexOf, absoluteGravity, -1356718115, false, $$e(b, b2, b2), new Class[]{java.lang.Object.class, java.lang.Object.class});
                     }
                     ((Method) PngjBadSignature2).invoke(null, objArr3);
                 } catch (Throwable th) {
@@ -767,7 +767,7 @@ final class isFoundMatchingTemplates extends e1 {
         this.cvtyuv2bgr = CapturePosition.VERTICAL_FROM_BOTTOM;
     }
 
-    public static /* synthetic */ Object PngjException(int i, int i2, int i3, int i4, Object[] objArr, int i5, int i6) {
+    public static /* synthetic */ java.lang.Object PngjException(int i, int i2, int i3, int i4, java.lang.Object[] objArr, int i5, int i6) {
         int i7 = ~((~i4) | i | i3);
         int i8 = ~((~i) | i4);
         int i9 = ~i3;
@@ -801,7 +801,7 @@ final class isFoundMatchingTemplates extends e1 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void e(String str, int i, Object[] objArr) {
+    private static void e(String str, int i, java.lang.Object[] objArr) {
         char[] cArr;
         Throwable cause;
         char c;
@@ -825,27 +825,27 @@ final class isFoundMatchingTemplates extends e1 {
                 break;
             }
             try {
-                Object[] objArr2 = {Integer.valueOf(cArr2[i3]), pngjUnsupportedException, pngjUnsupportedException};
-                Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-930920279);
+                java.lang.Object[] objArr2 = {Integer.valueOf(cArr2[i3]), pngjUnsupportedException, pngjUnsupportedException};
+                java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-930920279);
                 if (PngjBadSignature2 == null) {
                     byte b = (byte) 0;
                     i2 = -125632871;
                     byte b2 = b;
                     c = 1;
-                    PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 1), 48 - (ViewConfiguration.getKeyRepeatDelay() >> 16), (ViewConfiguration.getKeyRepeatTimeout() >> 16) + 944, 879502610, false, $$n(b, b2, b2), new Class[]{Integer.TYPE, Object.class, Object.class});
+                    PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 1), 48 - (ViewConfiguration.getKeyRepeatDelay() >> 16), (ViewConfiguration.getKeyRepeatTimeout() >> 16) + 944, 879502610, false, $$n(b, b2, b2), new Class[]{Integer.TYPE, java.lang.Object.class, java.lang.Object.class});
                 } else {
                     c = 1;
                     i2 = -125632871;
                 }
                 jArr[i3] = ((Long) ((Method) PngjBadSignature2).invoke(null, objArr2)).longValue() ^ (resetAttempt ^ 2636593786896957769L);
-                Object[] objArr3 = new Object[2];
+                java.lang.Object[] objArr3 = new java.lang.Object[2];
                 objArr3[c] = pngjUnsupportedException;
                 objArr3[0] = pngjUnsupportedException;
-                Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i2);
+                java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i2);
                 if (PngjBadSignature3 == null) {
                     byte b3 = (byte) 0;
                     byte b4 = b3;
-                    PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) + 35510), TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0) + 42, (ViewConfiguration.getTapTimeout() >> 16) + 507, 74289954, false, $$n(b3, b4, (byte) (b4 + 1)), new Class[]{Object.class, Object.class});
+                    PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) + 35510), TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0) + 42, (ViewConfiguration.getTapTimeout() >> 16) + 507, 74289954, false, $$n(b3, b4, (byte) (b4 + 1)), new Class[]{java.lang.Object.class, java.lang.Object.class});
                 }
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
             } catch (Throwable th) {
@@ -869,12 +869,12 @@ final class isFoundMatchingTemplates extends e1 {
             }
             $11 = ($10 + 59) % 128;
             cArr3[i4] = (char) jArr[i4];
-            Object[] objArr4 = {pngjUnsupportedException, pngjUnsupportedException};
-            Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-125632871);
+            java.lang.Object[] objArr4 = {pngjUnsupportedException, pngjUnsupportedException};
+            java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-125632871);
             if (PngjBadSignature4 == null) {
                 byte b5 = (byte) 0;
                 byte b6 = b5;
-                PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (Color.alpha(0) + 35511), Color.red(0) + 42, 507 - KeyEvent.getDeadChar(0, 0), 74289954, false, $$n(b5, b6, (byte) (b6 + 1)), new Class[]{Object.class, Object.class});
+                PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (Color.alpha(0) + 35511), Color.red(0) + 42, 507 - KeyEvent.getDeadChar(0, 0), 74289954, false, $$n(b5, b6, (byte) (b6 + 1)), new Class[]{java.lang.Object.class, java.lang.Object.class});
             }
             ((Method) PngjBadSignature4).invoke(null, objArr4);
         }
@@ -886,7 +886,7 @@ final class isFoundMatchingTemplates extends e1 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void f(int i, byte b, short s, Object[] objArr) {
+    private static void f(int i, byte b, short s, java.lang.Object[] objArr) {
         int i2;
         int i3;
         int i4 = i + 4;
@@ -944,7 +944,7 @@ final class isFoundMatchingTemplates extends e1 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void g(byte b, short s, short s2, Object[] objArr) {
+    private static void g(byte b, short s, short s2, java.lang.Object[] objArr) {
         int i;
         int i2;
         int i3 = b + 4;
@@ -1144,7 +1144,7 @@ final class isFoundMatchingTemplates extends e1 {
     public final void onReceive(Context context, Intent intent) {
         int PngjException2 = isQualityFailed.PngjException();
         int PngjException3 = isQualityFailed.PngjException();
-        PngjException(-796303406, isQualityFailed.PngjException(), PngjException2, 796303406, new Object[]{this, context, intent}, PngjException3, isQualityFailed.PngjException());
+        PngjException(-796303406, isQualityFailed.PngjException(), PngjException2, 796303406, new java.lang.Object[]{this, context, intent}, PngjException3, isQualityFailed.PngjException());
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0022, code lost:
@@ -1216,33 +1216,33 @@ final class isFoundMatchingTemplates extends e1 {
     public final void PngjBadCrcException() {
         int PngjException2 = isQualityFailed.PngjException();
         int PngjException3 = isQualityFailed.PngjException();
-        PngjException(-1418043732, isQualityFailed.PngjException(), PngjException2, 1418043733, new Object[]{this}, PngjException3, isQualityFailed.PngjException());
+        PngjException(-1418043732, isQualityFailed.PngjException(), PngjException2, 1418043733, new java.lang.Object[]{this}, PngjException3, isQualityFailed.PngjException());
     }
 
-    private static /* synthetic */ Object valueOf(Object[] objArr) {
+    private static /* synthetic */ java.lang.Object valueOf(java.lang.Object[] objArr) {
         long j;
         char c;
         char c2;
         char c3;
-        Object[] objArr2;
+        java.lang.Object[] objArr2;
         int i;
         char c4;
         Context context;
         int i2;
-        Object[] objArr3;
+        java.lang.Object[] objArr3;
         char c5;
-        Object[] objArr4;
+        java.lang.Object[] objArr4;
         isFoundMatchingTemplates isfoundmatchingtemplates = (isFoundMatchingTemplates) objArr[0];
         Context context2 = (Context) objArr[1];
         Intent intent = (Intent) objArr[2];
         getServerRequest = (destroy + 113) % 128;
-        Object[] objArr5 = new Object[1];
+        java.lang.Object[] objArr5 = new java.lang.Object[1];
         e("䇝펣攺\uf69dࠗ鷠⽾䂅퉛搶笠\u0b34鲉\u2e72䏦핆曁\uf87eਢ龰ㄋ䊒", 37489 - TextUtils.getTrimmedLength(BuildConfig.FLAVOR), objArr5);
         String str = (String) objArr5[0];
-        Object[] objArr6 = new Object[1];
+        java.lang.Object[] objArr6 = new java.lang.Object[1];
         e("䇙\u0c29\uda2fꠧ瘫쐄鈎怡⸑ﰜ䩪\u187b\ue679둴ɇ", 19961 - KeyEvent.keyCodeFromString(BuildConfig.FLAVOR), objArr6);
         String str2 = (String) objArr6[0];
-        Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
+        java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
         if (PngjBadSignature2 == null) {
             char c6 = (char) (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1));
             int argb = Color.argb(0, 0, 0, 0) + 37;
@@ -1253,7 +1253,7 @@ final class isFoundMatchingTemplates extends e1 {
             j = 0;
             byte b2 = bArr[18];
             c = 18;
-            Object[] objArr7 = new Object[1];
+            java.lang.Object[] objArr7 = new java.lang.Object[1];
             f(b, b2, (byte) (b2 | 12), objArr7);
             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c6, argb, i3, -1608103378, false, (String) objArr7[0], null);
         } else {
@@ -1263,7 +1263,7 @@ final class isFoundMatchingTemplates extends e1 {
         }
         long j2 = ((Field) PngjBadSignature2).getLong(null);
         if (j2 != -1 && j2 + 4611686018427387944L >= ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
-            Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
+            java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
             if (PngjBadSignature3 == null) {
                 char argb2 = (char) Color.argb(0, 0, 0, 0);
                 int argb3 = 37 - Color.argb(0, 0, 0, 0);
@@ -1272,14 +1272,14 @@ final class isFoundMatchingTemplates extends e1 {
                 byte b3 = (byte) (bArr2[19] + 1);
                 byte b4 = bArr2[c];
                 c4 = 2;
-                Object[] objArr8 = new Object[1];
+                java.lang.Object[] objArr8 = new java.lang.Object[1];
                 f(b3, (byte) (b4 - 1), b4, objArr8);
                 PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(argb2, argb3, i4, 1452666181, false, (String) objArr8[0], null);
             } else {
                 c4 = 2;
             }
-            Object[] objArr9 = (Object[]) ((Field) PngjBadSignature3).get(null);
-            objArr2 = new Object[3];
+            java.lang.Object[] objArr9 = (java.lang.Object[]) ((Field) PngjBadSignature3).get(null);
+            objArr2 = new java.lang.Object[3];
             objArr2[0] = new int[1];
             objArr2[1] = new int[]{r13};
             objArr2[c4] = new int[]{r4};
@@ -1293,21 +1293,21 @@ final class isFoundMatchingTemplates extends e1 {
             i = 0;
             c3 = 3;
         } else {
-            Object[] objArr10 = new Object[1];
+            java.lang.Object[] objArr10 = new java.lang.Object[1];
             e("䇖⥂郴砀\ue3ee䫋㉧鶋ԣ\uec05埙㼐ꚻᇛ參悀", 26783 - (ViewConfiguration.getPressedStateDuration() >> 16), objArr10);
             Class<?> cls = Class.forName((String) objArr10[0]);
-            Object[] objArr11 = new Object[1];
+            java.lang.Object[] objArr11 = new java.lang.Object[1];
             e("䇕쥉僻\ud861掌\ueb00犮免ռ賄ᑥ鿯✳꺎㘶䆦", TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0) + 34961, objArr11);
             try {
-                Object[] objArr12 = {Integer.valueOf(((Integer) cls.getMethod((String) objArr11[0], Object.class).invoke(null, isfoundmatchingtemplates)).intValue()), -98945853};
-                Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1437710995);
+                java.lang.Object[] objArr12 = {Integer.valueOf(((Integer) cls.getMethod((String) objArr11[0], java.lang.Object.class).invoke(null, isfoundmatchingtemplates)).intValue()), -98945853};
+                java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1437710995);
                 if (PngjBadSignature4 == null) {
                     char jumpTapTimeout = (char) (ViewConfiguration.getJumpTapTimeout() >> 16);
                     int packedPositionType = 37 - ExpandableListView.getPackedPositionType(j);
                     int indexOf = 548 - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0, 0);
                     byte b5 = $$d[c];
                     c3 = 3;
-                    Object[] objArr13 = new Object[1];
+                    java.lang.Object[] objArr13 = new java.lang.Object[1];
                     f((byte) 23, b5, (byte) (b5 | 6), objArr13);
                     String str3 = (String) objArr13[0];
                     Class cls2 = Integer.TYPE;
@@ -1315,8 +1315,8 @@ final class isFoundMatchingTemplates extends e1 {
                 } else {
                     c3 = 3;
                 }
-                objArr2 = (Object[]) ((Method) PngjBadSignature4).invoke(null, objArr12);
-                Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
+                objArr2 = (java.lang.Object[]) ((Method) PngjBadSignature4).invoke(null, objArr12);
+                java.lang.Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
                 if (PngjBadSignature5 == null) {
                     char bitsPerPixel = (char) ((-1) - ImageFormat.getBitsPerPixel(0));
                     int doubleTapTimeout = (ViewConfiguration.getDoubleTapTimeout() >> 16) + 37;
@@ -1324,14 +1324,14 @@ final class isFoundMatchingTemplates extends e1 {
                     byte[] bArr3 = $$d;
                     byte b6 = (byte) (bArr3[19] + 1);
                     byte b7 = bArr3[c];
-                    Object[] objArr14 = new Object[1];
+                    java.lang.Object[] objArr14 = new java.lang.Object[1];
                     f(b6, (byte) (b7 - 1), b7, objArr14);
                     PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(bitsPerPixel, doubleTapTimeout, red, 1452666181, false, (String) objArr14[0], null);
                 }
                 ((Field) PngjBadSignature5).set(null, objArr2);
                 try {
                     Long valueOf2 = Long.valueOf(((Long) Class.forName(str).getDeclaredMethod(str2, null).invoke(null, null)).longValue());
-                    Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
+                    java.lang.Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
                     if (PngjBadSignature6 == null) {
                         char defaultSize = (char) View.getDefaultSize(0, 0);
                         int rgb = (-16777179) - Color.rgb(0, 0, 0);
@@ -1340,7 +1340,7 @@ final class isFoundMatchingTemplates extends e1 {
                         byte b8 = bArr4[c2];
                         byte b9 = bArr4[c];
                         i = 0;
-                        Object[] objArr15 = new Object[1];
+                        java.lang.Object[] objArr15 = new java.lang.Object[1];
                         f(b8, b9, (byte) (b9 | 12), objArr15);
                         PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(defaultSize, rgb, combineMeasuredStates, -1608103378, false, (String) objArr15[0], null);
                     } else {
@@ -1359,11 +1359,11 @@ final class isFoundMatchingTemplates extends e1 {
                 throw th;
             }
         }
-        Object obj = objArr2[c4];
+        java.lang.Object obj = objArr2[c4];
         int i9 = ((int[]) obj)[i];
-        Object obj2 = objArr2[1];
+        java.lang.Object obj2 = objArr2[1];
         if (((int[]) obj2)[i] == i9) {
-            Object[] objArr16 = {new int[1], new int[1], new int[1]};
+            java.lang.Object[] objArr16 = {new int[1], new int[1], new int[1]};
             int i10 = ((int[]) objArr2[i])[i];
             int i11 = ((int[]) obj2)[i];
             int i12 = ((int[]) obj)[i];
@@ -1377,7 +1377,7 @@ final class isFoundMatchingTemplates extends e1 {
             int i16 = c8 ^ (c8 << 13);
             int i17 = i16 ^ (i16 >>> 17);
             ((int[]) objArr16[i])[i] = i17 ^ (i17 << 5);
-            Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
+            java.lang.Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
             if (PngjBadSignature7 == null) {
                 char maximumDrawingCacheSize = (char) ((ViewConfiguration.getMaximumDrawingCacheSize() >> 24) + 31077);
                 int i18 = i;
@@ -1386,13 +1386,13 @@ final class isFoundMatchingTemplates extends e1 {
                 byte[] bArr5 = $$d;
                 byte b10 = bArr5[c2];
                 byte b11 = bArr5[c];
-                Object[] objArr17 = new Object[1];
+                java.lang.Object[] objArr17 = new java.lang.Object[1];
                 f(b10, b11, (byte) (b11 | 12), objArr17);
                 PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(maximumDrawingCacheSize, resolveSizeAndState, maxKeyCode, 159283629, false, (String) objArr17[0], null);
             }
             long j3 = ((Field) PngjBadSignature7).getLong(null);
             if (j3 != -1 && j3 + 4611686018427387892L >= ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
-                Object PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
+                java.lang.Object PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
                 if (PngjBadSignature8 == null) {
                     char deadChar = (char) (KeyEvent.getDeadChar(0, 0) + 31077);
                     int packedPositionGroup = 49 - ExpandableListView.getPackedPositionGroup(j);
@@ -1400,12 +1400,12 @@ final class isFoundMatchingTemplates extends e1 {
                     byte[] bArr6 = $$d;
                     byte b12 = bArr6[13];
                     byte b13 = (byte) (bArr6[c] - 1);
-                    Object[] objArr18 = new Object[1];
+                    java.lang.Object[] objArr18 = new java.lang.Object[1];
                     f(b12, b13, b13, objArr18);
                     PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(deadChar, packedPositionGroup, packedPositionChild, 1150904546, false, (String) objArr18[0], null);
                 }
-                Object[] objArr19 = (Object[]) ((Field) PngjBadSignature8).get(null);
-                objArr3 = new Object[5];
+                java.lang.Object[] objArr19 = (java.lang.Object[]) ((Field) PngjBadSignature8).get(null);
+                objArr3 = new java.lang.Object[5];
                 objArr3[2] = new int[]{r15};
                 objArr3[c3] = new int[]{r14};
                 objArr3[4] = new int[1];
@@ -1437,14 +1437,14 @@ final class isFoundMatchingTemplates extends e1 {
                 } else {
                     context = context2;
                 }
-                Object[] objArr20 = new Object[1];
+                java.lang.Object[] objArr20 = new java.lang.Object[1];
                 e("䇖⥂郴砀\ue3ee䫋㉧鶋ԣ\uec05埙㼐ꚻᇛ參悀", (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 26783, objArr20);
                 Class<?> cls3 = Class.forName((String) objArr20[0]);
-                Object[] objArr21 = new Object[1];
+                java.lang.Object[] objArr21 = new java.lang.Object[1];
                 e("䇕쥉僻\ud861掌\ueb00犮免ռ賄ᑥ鿯✳꺎㘶䆦", 34961 - KeyEvent.normalizeMetaState(0), objArr21);
-                int intValue = ((Integer) cls3.getMethod((String) objArr21[0], Object.class).invoke(null, isfoundmatchingtemplates)).intValue();
+                int intValue = ((Integer) cls3.getMethod((String) objArr21[0], java.lang.Object.class).invoke(null, isfoundmatchingtemplates)).intValue();
                 try {
-                    Object[] objArr22 = new Object[4];
+                    java.lang.Object[] objArr22 = new java.lang.Object[4];
                     objArr22[c3] = 42969038;
                     objArr22[2] = 0;
                     objArr22[1] = Integer.valueOf(intValue);
@@ -1453,19 +1453,19 @@ final class isFoundMatchingTemplates extends e1 {
                     byte b14 = bArr7[8];
                     byte b15 = (byte) (b14 - 1);
                     i2 = 4;
-                    Object[] objArr23 = new Object[1];
+                    java.lang.Object[] objArr23 = new java.lang.Object[1];
                     g(b15, (byte) (-b15), b14, objArr23);
                     Class<?> cls4 = Class.forName((String) objArr23[0]);
                     byte b16 = bArr7[19];
                     byte b17 = bArr7[8];
-                    Object[] objArr24 = new Object[1];
+                    java.lang.Object[] objArr24 = new java.lang.Object[1];
                     g(b16, b17, (byte) (b17 + 1), objArr24);
                     String str6 = (String) objArr24[0];
                     Class cls5 = Integer.TYPE;
-                    objArr3 = (Object[]) cls4.getMethod(str6, Context.class, cls5, cls5, cls5).invoke(null, objArr22);
+                    objArr3 = (java.lang.Object[]) cls4.getMethod(str6, Context.class, cls5, cls5, cls5).invoke(null, objArr22);
                     if (context != null) {
                         getServerRequest = (destroy + 79) % 128;
-                        Object PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
+                        java.lang.Object PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
                         if (PngjBadSignature9 == null) {
                             char indexOf2 = (char) (31076 - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0'));
                             int i27 = (ViewConfiguration.getZoomControlsTimeout() > j ? 1 : (ViewConfiguration.getZoomControlsTimeout() == j ? 0 : -1)) + 48;
@@ -1473,14 +1473,14 @@ final class isFoundMatchingTemplates extends e1 {
                             byte[] bArr8 = $$d;
                             byte b18 = bArr8[13];
                             byte b19 = (byte) (bArr8[c] - 1);
-                            Object[] objArr25 = new Object[1];
+                            java.lang.Object[] objArr25 = new java.lang.Object[1];
                             f(b18, b19, b19, objArr25);
                             PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf2, i27, edgeSlop, 1150904546, false, (String) objArr25[0], null);
                         }
                         ((Field) PngjBadSignature9).set(null, objArr3);
                         try {
                             Long valueOf3 = Long.valueOf(((Long) Class.forName(str).getDeclaredMethod(str2, null).invoke(null, null)).longValue());
-                            Object PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
+                            java.lang.Object PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
                             if (PngjBadSignature10 == null) {
                                 char resolveSizeAndState2 = (char) (31077 - View.resolveSizeAndState(0, 0, 0));
                                 int i28 = (SystemClock.uptimeMillis() > j ? 1 : (SystemClock.uptimeMillis() == j ? 0 : -1)) + 48;
@@ -1488,7 +1488,7 @@ final class isFoundMatchingTemplates extends e1 {
                                 byte[] bArr9 = $$d;
                                 byte b20 = bArr9[c2];
                                 byte b21 = bArr9[c];
-                                Object[] objArr26 = new Object[1];
+                                java.lang.Object[] objArr26 = new java.lang.Object[1];
                                 f(b20, b21, (byte) (b21 | 12), objArr26);
                                 PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(resolveSizeAndState2, i28, deadChar2, 159283629, false, (String) objArr26[0], null);
                             }
@@ -1508,7 +1508,7 @@ final class isFoundMatchingTemplates extends e1 {
             int i29 = ((int[]) objArr3[2])[0];
             int i30 = ((int[]) objArr3[c3])[0];
             if (i30 == i29) {
-                Object[] objArr27 = new Object[5];
+                java.lang.Object[] objArr27 = new java.lang.Object[5];
                 objArr27[2] = new int[]{r14};
                 objArr27[c3] = new int[]{r13};
                 objArr27[i2] = new int[1];
@@ -1525,7 +1525,7 @@ final class isFoundMatchingTemplates extends e1 {
                 int i35 = i34 ^ (i34 >>> 17);
                 ((int[]) objArr27[i2])[0] = i35 ^ (i35 << 5);
                 getServerRequest = (destroy + 5) % 128;
-                Object PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
+                java.lang.Object PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
                 if (PngjBadSignature11 == null) {
                     char c11 = (char) ((PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 14830);
                     int scrollBarFadeDuration = (ViewConfiguration.getScrollBarFadeDuration() >> 16) + 28;
@@ -1533,25 +1533,25 @@ final class isFoundMatchingTemplates extends e1 {
                     byte[] bArr10 = $$d;
                     byte b22 = bArr10[c2];
                     byte b23 = bArr10[c];
-                    Object[] objArr28 = new Object[1];
+                    java.lang.Object[] objArr28 = new java.lang.Object[1];
                     f(b22, b23, (byte) (b23 | 12), objArr28);
                     PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c11, scrollBarFadeDuration, pressedStateDuration, -815159504, false, (String) objArr28[0], null);
                 }
                 long j4 = ((Field) PngjBadSignature11).getLong(null);
                 if (j4 != -1 && j4 + 4611686018427387760L >= ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
                     destroy = (getServerRequest + 87) % 128;
-                    Object PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
+                    java.lang.Object PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                     if (PngjBadSignature12 == null) {
                         char c12 = (char) (14830 - (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)));
                         int tapTimeout = (ViewConfiguration.getTapTimeout() >> 16) + 28;
                         int indexOf3 = 721 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR);
                         byte b24 = $$d[c];
-                        Object[] objArr29 = new Object[1];
+                        java.lang.Object[] objArr29 = new java.lang.Object[1];
                         f((byte) 23, b24, (byte) (b24 | 6), objArr29);
                         PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c12, tapTimeout, indexOf3, -779023007, false, (String) objArr29[0], null);
                     }
-                    Object[] objArr30 = (Object[]) ((Field) PngjBadSignature12).get(null);
-                    objArr4 = new Object[i2];
+                    java.lang.Object[] objArr30 = (java.lang.Object[]) ((Field) PngjBadSignature12).get(null);
+                    objArr4 = new java.lang.Object[i2];
                     objArr4[0] = new int[]{r9};
                     objArr4[1] = new int[1];
                     objArr4[c3] = new int[]{r8};
@@ -1567,32 +1567,32 @@ final class isFoundMatchingTemplates extends e1 {
                     c5 = 0;
                     ((int[]) objArr4[1])[0] = i41 ^ (i41 << 5);
                 } else {
-                    Object[] objArr31 = new Object[1];
+                    java.lang.Object[] objArr31 = new java.lang.Object[1];
                     e("䇖⥂郴砀\ue3ee䫋㉧鶋ԣ\uec05埙㼐ꚻᇛ參悀", 26783 - (KeyEvent.getMaxKeyCode() >> 16), objArr31);
                     Class<?> cls6 = Class.forName((String) objArr31[0]);
-                    Object[] objArr32 = new Object[1];
+                    java.lang.Object[] objArr32 = new java.lang.Object[1];
                     e("䇕쥉僻\ud861掌\ueb00犮免ռ賄ᑥ鿯✳꺎㘶䆦", (ViewConfiguration.getGlobalActionKeyTimeout() > j ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == j ? 0 : -1)) + 34960, objArr32);
-                    int intValue2 = ((Integer) cls6.getMethod((String) objArr32[0], Object.class).invoke(null, isfoundmatchingtemplates)).intValue();
-                    Object[] objArr33 = {363831610};
-                    Object PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
+                    int intValue2 = ((Integer) cls6.getMethod((String) objArr32[0], java.lang.Object.class).invoke(null, isfoundmatchingtemplates)).intValue();
+                    java.lang.Object[] objArr33 = {363831610};
+                    java.lang.Object PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
                     if (PngjBadSignature13 == null) {
                         PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getDoubleTapTimeout() >> 16), 24 - (ViewConfiguration.getPressedStateDuration() >> 16), 697 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), 1457201313, false, null, new Class[]{Integer.TYPE});
                     }
-                    Object[] PngjBadSignature$1eba2e16 = arid.chunks.PngBadCharsetException.PngjBadSignature$1eba2e16(intValue2, ((Constructor) PngjBadSignature13).newInstance(objArr33), 247766195);
-                    Object PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
+                    java.lang.Object[] PngjBadSignature$1eba2e16 = arid.chunks.PngBadCharsetException.PngjBadSignature$1eba2e16(intValue2, ((Constructor) PngjBadSignature13).newInstance(objArr33), 247766195);
+                    java.lang.Object PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                     if (PngjBadSignature14 == null) {
                         char minimumFlingVelocity = (char) ((ViewConfiguration.getMinimumFlingVelocity() >> 16) + 14830);
                         int i42 = (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 28;
                         int rgb2 = Color.rgb(0, 0, 0) + 16777937;
                         byte b25 = $$d[c];
-                        Object[] objArr34 = new Object[1];
+                        java.lang.Object[] objArr34 = new java.lang.Object[1];
                         f((byte) 23, b25, (byte) (b25 | 6), objArr34);
                         PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(minimumFlingVelocity, i42, rgb2, -779023007, false, (String) objArr34[0], null);
                     }
                     ((Field) PngjBadSignature14).set(null, PngjBadSignature$1eba2e16);
                     try {
                         Long valueOf4 = Long.valueOf(((Long) Class.forName(str).getDeclaredMethod(str2, null).invoke(null, null)).longValue());
-                        Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
+                        java.lang.Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
                         if (PngjBadSignature15 == null) {
                             char green = (char) (14830 - Color.green(0));
                             int i43 = (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 28;
@@ -1600,7 +1600,7 @@ final class isFoundMatchingTemplates extends e1 {
                             byte[] bArr11 = $$d;
                             byte b26 = bArr11[c2];
                             byte b27 = bArr11[c];
-                            Object[] objArr35 = new Object[1];
+                            java.lang.Object[] objArr35 = new java.lang.Object[1];
                             f(b26, b27, (byte) (b27 | 12), objArr35);
                             c5 = 0;
                             PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(green, i43, offsetAfter, -815159504, false, (String) objArr35[0], null);
@@ -1614,7 +1614,7 @@ final class isFoundMatchingTemplates extends e1 {
                     }
                 }
                 if (((int[]) objArr4[c3])[c5] == ((int[]) objArr4[c5])[c5]) {
-                    Object[] objArr36 = new Object[4];
+                    java.lang.Object[] objArr36 = new java.lang.Object[4];
                     int[] iArr = new int[1];
                     objArr36[c5] = iArr;
                     objArr36[1] = new int[1];

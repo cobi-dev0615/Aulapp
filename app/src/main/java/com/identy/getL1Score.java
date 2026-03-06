@@ -163,7 +163,7 @@ final class getL1Score extends getL3Score {
         }
     }
 
-    public class PngjBadSignature implements PngjBadCrcException.values {
+    public class PngjBadSignature implements org.c.a.PngjBadCrcException.values {
         public PngjBadSignature() {
         }
 

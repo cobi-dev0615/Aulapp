@@ -124,19 +124,19 @@ final class setFingers extends e1 {
                 int valueOf = PngjBadCrcException.getPadSub3.valueOf();
                 int valueOf2 = PngjBadCrcException.getPadSub3.valueOf();
                 int valueOf3 = PngjBadCrcException.getPadSub3.valueOf();
-                PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
+                PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
                 return;
             }
             int valueOf4 = PngjBadCrcException.getPadSub3.valueOf();
             int valueOf5 = PngjBadCrcException.getPadSub3.valueOf();
             int valueOf6 = PngjBadCrcException.getPadSub3.valueOf();
-            PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new Object[]{this}, valueOf6, valueOf5, -1609665347, 1609665349, valueOf4);
+            PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf6, valueOf5, -1609665347, 1609665349, valueOf4);
             throw null;
         } catch (Exception unused) {
         }
     }
 
-    public static /* synthetic */ Object PngjBadSignature(int i, Object[] objArr, int i2, int i3, int i4, int i5, int i6) {
+    public static /* synthetic */ java.lang.Object PngjBadSignature(int i, java.lang.Object[] objArr, int i2, int i3, int i4, int i5, int i6) {
         int i7 = ~i5;
         int i8 = (~(i7 | i6)) | i4;
         int i9 = i6 | i4 | i7;
@@ -193,14 +193,14 @@ final class setFingers extends e1 {
         int valueOf = PngjBadCrcException.getPadSub3.valueOf();
         int valueOf2 = PngjBadCrcException.getPadSub3.valueOf();
         int valueOf3 = PngjBadCrcException.getPadSub3.valueOf();
-        PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new Object[]{this}, valueOf3, valueOf2, -2022270286, 2022270287, valueOf);
+        PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf3, valueOf2, -2022270286, 2022270287, valueOf);
     }
 
     private void getPadSub3() {
         int valueOf = PngjBadCrcException.getPadSub3.valueOf();
         int valueOf2 = PngjBadCrcException.getPadSub3.valueOf();
         int valueOf3 = PngjBadCrcException.getPadSub3.valueOf();
-        PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
+        PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -279,14 +279,14 @@ final class setFingers extends e1 {
             int valueOf = PngjBadCrcException.getPadSub3.valueOf();
             int valueOf2 = PngjBadCrcException.getPadSub3.valueOf();
             int valueOf3 = PngjBadCrcException.getPadSub3.valueOf();
-            PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
+            PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
             return;
         }
         this.getL1Score = (com.identy.ui.PngjBadCrcException) this.Action.findViewById(R.id.scanner_overlay);
         int valueOf4 = PngjBadCrcException.getPadSub3.valueOf();
         int valueOf5 = PngjBadCrcException.getPadSub3.valueOf();
         int valueOf6 = PngjBadCrcException.getPadSub3.valueOf();
-        PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new Object[]{this}, valueOf6, valueOf5, -1609665347, 1609665349, valueOf4);
+        PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf6, valueOf5, -1609665347, 1609665349, valueOf4);
         int i2 = 16 / 0;
     }
 
@@ -305,7 +305,7 @@ final class setFingers extends e1 {
         $$m = 134;
     }
 
-    private static /* synthetic */ Object valueOf(Object[] objArr) {
+    private static /* synthetic */ java.lang.Object valueOf(java.lang.Object[] objArr) {
         setFingers setfingers = (setFingers) objArr[0];
         int i = generateNFIQ + 45;
         pfkrolChangeMinMaxWidth = i % 128;
@@ -326,7 +326,7 @@ final class setFingers extends e1 {
         int valueOf = PngjBadCrcException.getPadSub3.valueOf();
         int valueOf2 = PngjBadCrcException.getPadSub3.valueOf();
         int valueOf3 = PngjBadCrcException.getPadSub3.valueOf();
-        return (RectF) PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new Object[]{this}, valueOf3, valueOf2, -53535754, 53535754, valueOf);
+        return (RectF) PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf3, valueOf2, -53535754, 53535754, valueOf);
     }
 
     @Override // com.identy.e1
@@ -1130,14 +1130,14 @@ final class setFingers extends e1 {
         int i5 = 0;
         if (i4 % 2 != 0) {
             j = -1;
-            Object[] objArr = new Object[1];
+            java.lang.Object[] objArr = new java.lang.Object[1];
             e(new int[]{1036369326, -1752761909, -1220829774, -1369761805, -215872125, -1464893336, 1771611089, 1929727866, 61377720, -1238655573, -235958307, 811175433}, Gravity.getAbsoluteGravity(0, 1) * 16, objArr);
             str = (String) objArr[0];
             j2 = 0;
-            Object[] objArr2 = new Object[1];
+            java.lang.Object[] objArr2 = new java.lang.Object[1];
             e(new int[]{-1533640142, -502740938, -960465581, 832921941, -1290124194, 164588923, -460069947, 756362562}, 17 / ExpandableListView.getPackedPositionType(1L), objArr2);
             str2 = (String) objArr2[0];
-            Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
+            java.lang.Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
             if (PngjBadSignature == null) {
                 char packedPositionChild = (char) (ExpandableListView.getPackedPositionChild(0L) + 1);
                 int i6 = 37 - (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1));
@@ -1148,7 +1148,7 @@ final class setFingers extends e1 {
                 i = 2;
                 byte b2 = bArr[0];
                 i3 = 3;
-                Object[] objArr3 = new Object[1];
+                java.lang.Object[] objArr3 = new java.lang.Object[1];
                 f((byte) 13, b, b2, objArr3);
                 PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(packedPositionChild, i6, indexOf, -1608103378, false, (String) objArr3[0], null);
             } else {
@@ -1163,19 +1163,19 @@ final class setFingers extends e1 {
             i3 = 3;
             j = -1;
             j2 = 0;
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             e(new int[]{1036369326, -1752761909, -1220829774, -1369761805, -215872125, -1464893336, 1771611089, 1929727866, 61377720, -1238655573, -235958307, 811175433}, Gravity.getAbsoluteGravity(0, 0) + 22, objArr4);
             str = (String) objArr4[0];
-            Object[] objArr5 = new Object[1];
+            java.lang.Object[] objArr5 = new java.lang.Object[1];
             e(new int[]{-1533640142, -502740938, -960465581, 832921941, -1290124194, 164588923, -460069947, 756362562}, 15 - ExpandableListView.getPackedPositionType(0L), objArr5);
             str2 = (String) objArr5[0];
-            Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
+            java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
             if (PngjBadSignature2 == null) {
                 char packedPositionGroup = (char) ExpandableListView.getPackedPositionGroup(0L);
                 int i7 = (ViewConfiguration.getGlobalActionKeyTimeout() > 0L ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == 0L ? 0 : -1)) + 36;
                 int resolveOpacity = Drawable.resolveOpacity(0, 0) + 549;
                 byte[] bArr2 = $$d;
-                Object[] objArr6 = new Object[1];
+                java.lang.Object[] objArr6 = new java.lang.Object[1];
                 f((byte) 13, bArr2[17], bArr2[0], objArr6);
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(packedPositionGroup, i7, resolveOpacity, -1608103378, false, (String) objArr6[0], null);
             }
@@ -1183,7 +1183,7 @@ final class setFingers extends e1 {
         }
     }
 
-    private static void e(int[] iArr, int i, Object[] objArr) {
+    private static void e(int[] iArr, int i, java.lang.Object[] objArr) {
         long j;
         char[] cArr;
         float f;
@@ -1205,8 +1205,8 @@ final class setFingers extends e1 {
             int i7 = 0;
             while (i7 < length) {
                 try {
-                    Object[] objArr2 = {Integer.valueOf(iArr2[i7])};
-                    Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(1618428774);
+                    java.lang.Object[] objArr2 = {Integer.valueOf(iArr2[i7])};
+                    java.lang.Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(1618428774);
                     if (PngjBadSignature == null) {
                         i2 = i4;
                         byte b = (byte) i6;
@@ -1248,8 +1248,8 @@ final class setFingers extends e1 {
                 int i11 = $11 + 123;
                 $10 = i11 % 128;
                 if (i11 % 2 != 0) {
-                    Object[] objArr3 = {Integer.valueOf(iArr5[i10])};
-                    Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1618428774);
+                    java.lang.Object[] objArr3 = {Integer.valueOf(iArr5[i10])};
+                    java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1618428774);
                     if (PngjBadSignature2 == null) {
                         byte b3 = (byte) 0;
                         byte b4 = b3;
@@ -1261,8 +1261,8 @@ final class setFingers extends e1 {
                     iArr6[i10] = ((Integer) ((Method) PngjBadSignature2).invoke(null, objArr3)).intValue();
                 } else {
                     cArr2 = cArr3;
-                    Object[] objArr4 = {Integer.valueOf(iArr5[i10])};
-                    Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1618428774);
+                    java.lang.Object[] objArr4 = {Integer.valueOf(iArr5[i10])};
+                    java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1618428774);
                     if (PngjBadSignature3 == null) {
                         byte b5 = (byte) 0;
                         byte b6 = b5;
@@ -1306,16 +1306,16 @@ final class setFingers extends e1 {
                 int i15 = pngBadCharsetException.PngjException ^ iArr4[i14];
                 pngBadCharsetException.PngjException = i15;
                 int PngjBadCrcException = com.d.e.PngBadCharsetException.PngjBadCrcException(i15);
-                Object[] objArr5 = new Object[4];
+                java.lang.Object[] objArr5 = new java.lang.Object[4];
                 objArr5[3] = pngBadCharsetException;
                 objArr5[i8] = pngBadCharsetException;
                 objArr5[1] = Integer.valueOf(PngjBadCrcException);
                 objArr5[0] = pngBadCharsetException;
-                Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-2104166611);
+                java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-2104166611);
                 if (PngjBadSignature4 == null) {
                     byte b7 = (byte) 0;
                     byte b8 = (byte) (b7 + 1);
-                    PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (2786 - View.MeasureSpec.getMode(0)), 37 - (ViewConfiguration.getGlobalActionKeyTimeout() > j ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == j ? 0 : -1)), Color.rgb(0, 0, 0) + 16778001, 2122029718, false, $$n(b7, b8, (byte) (-b8)), new Class[]{Object.class, cls, Object.class, Object.class});
+                    PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (2786 - View.MeasureSpec.getMode(0)), 37 - (ViewConfiguration.getGlobalActionKeyTimeout() > j ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == j ? 0 : -1)), Color.rgb(0, 0, 0) + 16778001, 2122029718, false, $$n(b7, b8, (byte) (-b8)), new Class[]{java.lang.Object.class, cls, java.lang.Object.class, java.lang.Object.class});
                 }
                 int intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr5)).intValue();
                 pngBadCharsetException.PngjException = pngBadCharsetException.PngjBadCrcException;
@@ -1343,13 +1343,13 @@ final class setFingers extends e1 {
             cArr4[(i20 * 2) + 2] = cArr[i8];
             cArr4[(i20 * 2) + 3] = cArr[3];
             int i21 = i8;
-            Object[] objArr6 = new Object[i21];
+            java.lang.Object[] objArr6 = new java.lang.Object[i21];
             objArr6[1] = pngBadCharsetException;
             objArr6[0] = pngBadCharsetException;
-            Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-800662452);
+            java.lang.Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-800662452);
             if (PngjBadSignature5 == null) {
                 f = f2;
-                PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TypedValue.complexToFloat(0) > f2 ? 1 : (TypedValue.complexToFloat(0) == f2 ? 0 : -1)), 22 - (ViewConfiguration.getWindowTouchSlop() >> 8), (TypedValue.complexToFraction(0, f, f) > f ? 1 : (TypedValue.complexToFraction(0, f, f) == f ? 0 : -1)) + 29, 749318647, false, "E", new Class[]{Object.class, Object.class});
+                PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TypedValue.complexToFloat(0) > f2 ? 1 : (TypedValue.complexToFloat(0) == f2 ? 0 : -1)), 22 - (ViewConfiguration.getWindowTouchSlop() >> 8), (TypedValue.complexToFraction(0, f, f) > f ? 1 : (TypedValue.complexToFraction(0, f, f) == f ? 0 : -1)) + 29, 749318647, false, "E", new Class[]{java.lang.Object.class, java.lang.Object.class});
             } else {
                 f = f2;
             }
@@ -1365,7 +1365,7 @@ final class setFingers extends e1 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void f(short s, byte b, short s2, Object[] objArr) {
+    private static void f(short s, byte b, short s2, java.lang.Object[] objArr) {
         int i;
         int i2 = 118 - (s2 * 38);
         byte[] bArr = $$d;
@@ -1409,7 +1409,7 @@ final class setFingers extends e1 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void g(int i, byte b, byte b2, Object[] objArr) {
+    private static void g(int i, byte b, byte b2, java.lang.Object[] objArr) {
         int i2;
         int i3;
         int i4 = 99 - (b * 19);
@@ -1474,7 +1474,7 @@ final class setFingers extends e1 {
         }
     }
 
-    private static /* synthetic */ Object PngjBadSignature(Object[] objArr) {
+    private static /* synthetic */ java.lang.Object PngjBadSignature(java.lang.Object[] objArr) {
         com.identy.ui.d.values valuesVar;
         com.identy.ui.d.values valuesVar2;
         com.identy.ui.d.values valuesVar3;

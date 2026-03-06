@@ -702,7 +702,7 @@ final class getFingers extends e1 {
         }
     }
 
-    public class values implements PngjBadCrcException.values {
+    public class values implements org.c.a.PngjBadCrcException.values {
         public values() {
         }
 

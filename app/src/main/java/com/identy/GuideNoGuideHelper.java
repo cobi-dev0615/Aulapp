@@ -76,15 +76,15 @@ public class GuideNoGuideHelper {
     }
 
     public GuideNoGuideHelper() {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
                     int c = defpackage.a.c((~(elapsedCpuTime | (-413392553))) | 37504 | (~((~elapsedCpuTime) | 498851775)), 988, (((~((-413355049) | r5)) | (~(498851775 | elapsedCpuTime))) * 988) - 966743329, 1796799628);
                     int i = c ^ (c << 13);
@@ -95,12 +95,12 @@ public class GuideNoGuideHelper {
                 }
             }
             byte[] bArr = $$d;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a((short) (-bArr[107]), bArr[60], (byte) (bArr[30] - 1), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             a((short) (bArr[75] - 1), (byte) (bArr[67] - 1), (byte) (-bArr[149]), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1796799628);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1796799628);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4997;
             Fpnative.valueOf = objArr;
@@ -135,7 +135,7 @@ public class GuideNoGuideHelper {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void a(short s, byte b, short s2, Object[] objArr) {
+    private static void a(short s, byte b, short s2, java.lang.Object[] objArr) {
         int i;
         int i2;
         int i3 = s + 4;
@@ -182,7 +182,7 @@ public class GuideNoGuideHelper {
         }
     }
 
-    private static void b(int[] iArr, String str, boolean z, Object[] objArr) {
+    private static void b(int[] iArr, String str, boolean z, java.lang.Object[] objArr) {
         int i;
         int i2;
         long j;
@@ -212,8 +212,8 @@ public class GuideNoGuideHelper {
             int i9 = 0;
             while (i9 < length) {
                 try {
-                    Object[] objArr2 = {Integer.valueOf(cArr[i9])};
-                    Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
+                    java.lang.Object[] objArr2 = {Integer.valueOf(cArr[i9])};
+                    java.lang.Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
                     if (PngjBadSignature2 == null) {
                         char scrollDefaultDelay = (char) (ViewConfiguration.getScrollDefaultDelay() >> 16);
                         int red = Color.red(i4) + 35;
@@ -265,10 +265,10 @@ public class GuideNoGuideHelper {
                     $10 = i12 % 128;
                     if (i12 % 2 != 0) {
                         char c2 = cArr3[i11];
-                        Object[] objArr3 = new Object[i];
+                        java.lang.Object[] objArr3 = new java.lang.Object[i];
                         objArr3[1] = Integer.valueOf(c);
                         objArr3[0] = Integer.valueOf(c2);
-                        Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
+                        java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
                         if (PngjBadSignature3 == null) {
                             byte b3 = (byte) 3;
                             byte b4 = (byte) (b3 - 4);
@@ -281,8 +281,8 @@ public class GuideNoGuideHelper {
                         int i13 = 5 / 0;
                     } else {
                         j = 0;
-                        Object[] objArr4 = {Integer.valueOf(cArr3[i11]), Integer.valueOf(c)};
-                        Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
+                        java.lang.Object[] objArr4 = {Integer.valueOf(cArr3[i11]), Integer.valueOf(c)};
+                        java.lang.Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
                         if (PngjBadSignature4 == null) {
                             byte b5 = (byte) 3;
                             byte b6 = (byte) (b5 - 4);
@@ -292,8 +292,8 @@ public class GuideNoGuideHelper {
                     }
                 } else {
                     j = 0;
-                    Object[] objArr5 = {Integer.valueOf(cArr3[i11]), Integer.valueOf(c)};
-                    Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(269554740);
+                    java.lang.Object[] objArr5 = {Integer.valueOf(cArr3[i11]), Integer.valueOf(c)};
+                    java.lang.Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(269554740);
                     if (PngjBadSignature5 == null) {
                         byte b7 = (byte) 0;
                         byte b8 = (byte) (b7 - 1);
@@ -302,10 +302,10 @@ public class GuideNoGuideHelper {
                     cArr4[i11] = ((Character) ((Method) PngjBadSignature5).invoke(null, objArr5)).charValue();
                 }
                 c = cArr4[e1Var.PngjBadSignature];
-                Object[] objArr6 = {e1Var, e1Var};
-                Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1060060353);
+                java.lang.Object[] objArr6 = {e1Var, e1Var};
+                java.lang.Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1060060353);
                 if (PngjBadSignature6 == null) {
-                    PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ExpandableListView.getPackedPositionGroup(j), 35 - Color.alpha(0), View.getDefaultSize(0, 0) + ModuleDescriptor.MODULE_VERSION, -1010806406, false, "g", new Class[]{Object.class, Object.class});
+                    PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ExpandableListView.getPackedPositionGroup(j), 35 - Color.alpha(0), View.getDefaultSize(0, 0) + ModuleDescriptor.MODULE_VERSION, -1010806406, false, "g", new Class[]{java.lang.Object.class, java.lang.Object.class});
                 }
                 ((Method) PngjBadSignature6).invoke(null, objArr6);
                 i = 2;
@@ -363,7 +363,7 @@ public class GuideNoGuideHelper {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void c(short s, byte b, int i, Object[] objArr) {
+    private static void c(short s, byte b, int i, java.lang.Object[] objArr) {
         int i2;
         int i3 = 118 - (b * 38);
         byte[] bArr = $$a;
@@ -413,7 +413,7 @@ public class GuideNoGuideHelper {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static Class getCaptureClass(Activity activity, boolean z, FingerDetectionMode[] fingerDetectionModeArr, boolean z2) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
         String key;
         int i = PngjBadSignature + 91;
@@ -421,13 +421,13 @@ public class GuideNoGuideHelper {
         if (i % 2 == 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int c = defpackage.a.c((~((~((int) SystemClock.elapsedRealtime())) | (-383430534))) | 270150917, 933, (((~((-115458747) | r0)) | (-383430534)) * (-933)) - 410684824, -1725503618);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
@@ -503,12 +503,12 @@ public class GuideNoGuideHelper {
                 }
             }
             byte[] bArr = $$d;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a((short) (-bArr[107]), bArr[60], (byte) (bArr[30] - 1), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             a((short) (bArr[75] - 1), (byte) (bArr[67] - 1), (byte) (-bArr[149]), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1566027326);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1566027326);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4876;
             Fpnative.valueOf = objArr;
@@ -552,17 +552,17 @@ public class GuideNoGuideHelper {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static Class getClassForDetection(Activity activity, Intent intent, boolean z, FingerDetectionMode[] fingerDetectionModeArr, boolean z2) {
-        Object[] PngjBadSignature2;
+        java.lang.Object[] PngjBadSignature2;
         long j;
         String stringExtra;
         int i;
         int i2;
-        Object[] objArr = Fpnative.valueOf;
+        java.lang.Object[] objArr = Fpnative.valueOf;
         if (objArr != null) {
             long j2 = ((long[]) objArr[0])[0];
             j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
             if (j2 > j) {
-                PngjBadSignature2 = new Object[]{new long[]{((long[]) objArr[0])[0]}, new int[1]};
+                PngjBadSignature2 = new java.lang.Object[]{new long[]{((long[]) objArr[0])[0]}, new int[1]};
                 int myPid = Process.myPid();
                 int c = defpackage.a.c(~(myPid | (-113377857)), 345, (((~((-384967420) | (~myPid))) | 544004) * 345) + (((~((-384967420) | myPid)) | 113377856) * 345) + 180779864, -689183080);
                 int i3 = c ^ (c << 13);
@@ -644,7 +644,7 @@ public class GuideNoGuideHelper {
     public static String getKey(FingerDetectionMode fingerDetectionMode, boolean z) {
         long j;
         int i;
-        Object[] objArr = Fpnative.valueOf;
+        java.lang.Object[] objArr = Fpnative.valueOf;
         if (objArr != null) {
             int i2 = valueOf + 7;
             PngjBadSignature = i2 % 128;
@@ -683,7 +683,7 @@ public class GuideNoGuideHelper {
             }
             throw null;
         }
-        Object[] PngjBadSignature2 = PngjBadSignature(1043284810);
+        java.lang.Object[] PngjBadSignature2 = PngjBadSignature(1043284810);
         j = ((long[]) PngjBadSignature2[0])[0];
         ((long[]) PngjBadSignature2[0])[0] = j + 4929;
         Fpnative.valueOf = PngjBadSignature2;
@@ -713,15 +713,15 @@ public class GuideNoGuideHelper {
     }
 
     public static String getPersonSelected(Activity activity) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int c = defpackage.a.c((~((~Process.myPid()) | (-35184276))) | 431705407, 398, (((~((-35184276) | r0)) | 431705407) * 398) - 25919653, 536136751);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
@@ -749,12 +749,12 @@ public class GuideNoGuideHelper {
             }
             byte[] bArr = $$d;
             byte b = bArr[12];
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a((short) 35, b, (byte) (b + 5), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             a((short) (bArr[0] + 1), bArr[17], (byte) (bArr[107] - 1), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 536136751);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 536136751);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4851;
             Fpnative.valueOf = objArr;
@@ -790,16 +790,16 @@ public class GuideNoGuideHelper {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static Class getPreviewClass(Activity activity, boolean z, FingerDetectionMode[] fingerDetectionModeArr) {
-        Object[] PngjBadSignature2;
+        java.lang.Object[] PngjBadSignature2;
         long j;
         String str;
-        Object[] objArr = Fpnative.valueOf;
+        java.lang.Object[] objArr = Fpnative.valueOf;
         if (objArr != null) {
             valueOf = (PngjBadSignature + 1) % 128;
             long j2 = ((long[]) objArr[0])[0];
             j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
             if (j2 > j) {
-                PngjBadSignature2 = new Object[]{new long[]{((long[]) objArr[0])[0]}, new int[1]};
+                PngjBadSignature2 = new java.lang.Object[]{new long[]{((long[]) objArr[0])[0]}, new int[1]};
                 int freeMemory = (int) Runtime.getRuntime().freeMemory();
                 int c = defpackage.a.c((~(freeMemory | (-157751679))) | 153223486, 490, (((-4528193) | (~freeMemory)) * (-490)) + 163678333, 737800053);
                 int i = c ^ (c << 13);
@@ -859,17 +859,17 @@ public class GuideNoGuideHelper {
     }
 
     public static Class getRegistrationClass(Activity activity, boolean z, FingerDetectionMode[] fingerDetectionModeArr) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
         int i;
         int i2;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
                     int i3 = ~elapsedCpuTime;
                     int i4 = ~((-705720364) | i3);
@@ -941,12 +941,12 @@ public class GuideNoGuideHelper {
             }
             byte[] bArr = $$d;
             byte b = bArr[12];
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a((short) 35, b, (byte) (b + 5), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             a((short) (bArr[0] + 1), bArr[17], (byte) (bArr[107] - 1), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1168332796);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1168332796);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4931;
             Fpnative.valueOf = objArr;
@@ -981,18 +981,18 @@ public class GuideNoGuideHelper {
 
     /* JADX WARN: Type inference failed for: r2v39, types: [boolean, int] */
     public static Class getVerifyClass(Activity activity, boolean z, FingerDetectionMode[] fingerDetectionModeArr) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
         FingerDetectionMode fingerDetectionMode;
         int i;
         int i2;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int c = defpackage.a.c((~(Process.myUid() | 553975616)) | 55086336, 529, (((~((~r0) | 553975616)) | 38273024) * 529) - 1876653424, -1518824212);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
@@ -1052,12 +1052,12 @@ public class GuideNoGuideHelper {
             }
             byte[] bArr = $$d;
             byte b = bArr[12];
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a((short) 35, b, (byte) (b + 5), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             a((short) (bArr[0] + 1), bArr[17], (byte) (bArr[107] - 1), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1518824212);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1518824212);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4862;
             Fpnative.valueOf = objArr;
@@ -1189,8 +1189,8 @@ public class GuideNoGuideHelper {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static boolean isIntroShown(Activity activity, String str) {
-        Object[] objArr;
-        Object[] objArr2;
+        java.lang.Object[] objArr;
+        java.lang.Object[] objArr2;
         long j;
         int i = valueOf;
         int i2 = i + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
@@ -1230,19 +1230,19 @@ public class GuideNoGuideHelper {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static boolean isIntroShownG(Activity activity) {
-        Object[] PngjBadSignature2;
+        java.lang.Object[] PngjBadSignature2;
         long j;
         SharedPreferences defaultSharedPreferences;
         String obj;
         int i;
         int i2;
         valueOf = (PngjBadSignature + 67) % 128;
-        Object[] objArr = Fpnative.valueOf;
+        java.lang.Object[] objArr = Fpnative.valueOf;
         if (objArr != null) {
             long j2 = ((long[]) objArr[0])[0];
             j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
             if (j2 > j) {
-                PngjBadSignature2 = new Object[]{new long[]{((long[]) objArr[0])[0]}, new int[1]};
+                PngjBadSignature2 = new java.lang.Object[]{new long[]{((long[]) objArr[0])[0]}, new int[1]};
                 int a = defpackage.a.a();
                 int i3 = (((~((-877262043) | a)) | 541094976 | (~(378372762 | a))) * (-880)) + 1434790607;
                 int i4 = (~((-877262043) | (~a))) | (-378372763);
@@ -1343,14 +1343,14 @@ public class GuideNoGuideHelper {
     */
     public static void markIntroSetting(Activity activity, boolean z) {
         long j;
-        Object[] objArr = Fpnative.valueOf;
+        java.lang.Object[] objArr = Fpnative.valueOf;
         try {
             if (objArr != null) {
                 int i = valueOf + 5;
                 PngjBadSignature = i % 128;
                 if (i % 2 != 0) {
                     long j2 = ((long[]) objArr[1])[0];
-                    j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new Object[1])).longValue();
+                    j = ((Long) ((Method) com.d.e.a.values.valueOf[1]).invoke(null, new java.lang.Object[1])).longValue();
                 } else {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
@@ -1385,12 +1385,12 @@ public class GuideNoGuideHelper {
             }
             byte[] bArr = $$d;
             byte b = bArr[12];
-            Object[] objArr2 = new Object[1];
+            java.lang.Object[] objArr2 = new java.lang.Object[1];
             a((short) 35, b, (byte) (b + 5), objArr2);
             Class<?> cls = Class.forName((String) objArr2[0]);
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a((short) (bArr[0] + 1), bArr[17], (byte) (bArr[107] - 1), objArr3);
-            Object[] objArr4 = (Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -972224104);
+            java.lang.Object[] objArr4 = (java.lang.Object[]) cls.getMethod((String) objArr3[0], Integer.TYPE).invoke(null, -972224104);
             j = ((long[]) objArr4[0])[0];
             PngjBadSignature = (valueOf + 49) % 128;
             ((long[]) objArr4[0])[0] = j + 5008;
@@ -1432,16 +1432,16 @@ public class GuideNoGuideHelper {
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r1v20, types: [boolean, int] */
     public static void markIntroShown(Activity activity, String str) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
         int i;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int uptimeMillis = (int) SystemClock.uptimeMillis();
                     int i2 = ~((-911973741) | (~uptimeMillis));
                     int c = defpackage.a.c((~(uptimeMillis | (-142877185))) | i2, 338, (((-1054850925) | i2 | (~(911973740 | uptimeMillis))) * (-338)) + 441562197, -175119839);
@@ -1475,12 +1475,12 @@ public class GuideNoGuideHelper {
             }
             byte[] bArr = $$d;
             byte b = bArr[12];
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a((short) 35, b, (byte) (b + 5), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             a((short) (bArr[0] + 1), bArr[17], (byte) (bArr[107] - 1), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -175119839);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -175119839);
             j = ((long[]) objArr[0])[0];
             i = valueOf + 27;
             PngjBadSignature = i % 128;
@@ -1515,20 +1515,20 @@ public class GuideNoGuideHelper {
     }
 
     public static void setPersonSelected(Activity activity, String str) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
         int i = valueOf + 65;
         PngjBadSignature = i % 128;
         if (i % 2 != 0) {
             throw null;
         }
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int c = defpackage.a.c((~((~((int) Runtime.getRuntime().totalMemory())) | 310950466)) | (-852344515), 933, (((~((-809839747) | r0)) | 310950466) * (-933)) - 1775862216, 1549362678);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
@@ -1558,12 +1558,12 @@ public class GuideNoGuideHelper {
                 }
             }
             byte[] bArr = $$d;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a((short) (-bArr[107]), bArr[60], (byte) (bArr[30] - 1), objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             a((short) (bArr[75] - 1), (byte) (bArr[67] - 1), (byte) (-bArr[149]), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 547119798);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 547119798);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4927;
             Fpnative.valueOf = objArr;
@@ -1600,18 +1600,18 @@ public class GuideNoGuideHelper {
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r1v32, types: [boolean, int] */
     public static void markIntroShown(Activity activity, FingerDetectionMode fingerDetectionMode) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
         int i = valueOf + 125;
         PngjBadSignature = i % 128;
         if (i % 2 == 0) {
-            Object[] objArr2 = Fpnative.valueOf;
+            java.lang.Object[] objArr2 = Fpnative.valueOf;
             try {
                 if (objArr2 != null) {
                     long j2 = ((long[]) objArr2[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
-                        objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                        objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int myUid = Process.myUid();
                         int i2 = ~myUid;
                         int i3 = (~((-1058533527) | i2)) | 554922006;
@@ -1643,12 +1643,12 @@ public class GuideNoGuideHelper {
                     }
                 }
                 byte[] bArr = $$d;
-                Object[] objArr3 = new Object[1];
+                java.lang.Object[] objArr3 = new java.lang.Object[1];
                 a((short) (-bArr[107]), bArr[60], (byte) (bArr[30] - 1), objArr3);
                 Class<?> cls = Class.forName((String) objArr3[0]);
-                Object[] objArr4 = new Object[1];
+                java.lang.Object[] objArr4 = new java.lang.Object[1];
                 a((short) (bArr[75] - 1), (byte) (bArr[67] - 1), (byte) (-bArr[149]), objArr4);
-                objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1427098041);
+                objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1427098041);
                 j = ((long[]) objArr[0])[0];
                 ((long[]) objArr[0])[0] = j + 4854;
                 Fpnative.valueOf = objArr;

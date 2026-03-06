@@ -27,7 +27,7 @@ public enum valueOf {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void a(short s, int i, byte b, Object[] objArr) {
+    private static void a(short s, int i, byte b, java.lang.Object[] objArr) {
         int i2;
         byte b2;
         byte[] bArr = $$a;
@@ -69,15 +69,15 @@ public enum valueOf {
     }
 
     public static valueOf valueOfString(String str) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int c = defpackage.a.c((~((~((int) Process.getStartUptimeMillis())) | 461902059)) | (-431780288), 184, (((-3432725) | r0) * 184) - 1657916169, -151298680);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
@@ -89,13 +89,13 @@ public enum valueOf {
             }
             byte b = (byte) ($$b & 1);
             byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a(b, bArr[17], bArr[63], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
             byte b2 = bArr[63];
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             a(b2, b2, bArr[4], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -151298680);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -151298680);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4952;
             Fpnative.valueOf = objArr;
@@ -111,15 +111,15 @@ public enum valueOf {
 
     /* renamed from: values, reason: to resolve conflict with enum method */
     public static valueOf[] valuesCustom() {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedRealtime = (int) SystemClock.elapsedRealtime();
                     int i = (((~((-209200456) | elapsedRealtime)) | (-289688825)) * (-318)) + 673391713;
                     int i2 = ~((-289688825) | elapsedRealtime);
@@ -135,12 +135,12 @@ public enum valueOf {
             }
             int i6 = $$b;
             byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             a((byte) (i6 & 1), (byte) i6, bArr[34], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             a(bArr[32], (byte) (bArr[16] + 1), (byte) 38, objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1619985614);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1619985614);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4963;
             Fpnative.valueOf = objArr;

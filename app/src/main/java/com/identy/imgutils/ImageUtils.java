@@ -13,7 +13,7 @@ public class ImageUtils {
 
     public static native void convertYUV420SPToARGB8888(byte[] bArr, int[] iArr, int i, int i2, boolean z);
 
-    public static native Object[] convertYUV420ToNV21(byte[] bArr, byte[] bArr2, byte[] bArr3, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8);
+    public static native java.lang.Object[] convertYUV420ToNV21(byte[] bArr, byte[] bArr2, byte[] bArr3, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8);
 
     public static int valueOf(int i, int i2) {
         return (i * i2) + ((((i2 + 1) / 2) * ((i + 1) / 2)) << 1);

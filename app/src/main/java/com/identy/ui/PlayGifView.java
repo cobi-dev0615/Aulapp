@@ -25,15 +25,15 @@ public class PlayGifView extends View {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PlayGifView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                     int i = ~startElapsedRealtime;
                     int c = a.c((~(startElapsedRealtime | 498757631)) | (~((-159541227) | i)) | 131648, 676, (((~(339348053 | i)) | 159409578) * 676) + (((-159409579) | startElapsedRealtime) * (-676)) + 1789220043, -1379038954);
@@ -63,12 +63,12 @@ public class PlayGifView extends View {
                 }
             }
             byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             e(bArr[78], bArr[34], bArr[52], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             e(bArr[100], bArr[50], bArr[32], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1379038954);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1379038954);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4948;
             Fpnative.valueOf = objArr;
@@ -117,7 +117,7 @@ public class PlayGifView extends View {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void e(byte b, int i, short s, Object[] objArr) {
+    private static void e(byte b, int i, short s, java.lang.Object[] objArr) {
         int i2;
         int i3 = b + 4;
         byte[] bArr = $$a;
@@ -156,15 +156,15 @@ public class PlayGifView extends View {
 
     @Override // android.view.View
     public void invalidate() {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
                     int i = ~identityHashCode;
                     int c = a.c(identityHashCode | (-776311489), 397, (((~(i | (-164945004))) | (~((-663834284) | i)) | 26233899) * (-397)) + 1281828411, 1410978615);
@@ -177,12 +177,12 @@ public class PlayGifView extends View {
                 }
             }
             byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             e(bArr[93], bArr[29], bArr[52], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             e(bArr[27], (byte) (bArr[39] + 1), bArr[78], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1410978615);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1410978615);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4988;
             Fpnative.valueOf = objArr;
@@ -203,15 +203,15 @@ public class PlayGifView extends View {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void onDraw(Canvas canvas) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~System.identityHashCode(this);
                     int c = a.c(i | 263975423, -828, (((~(i | 263975423)) | 234913856) * (-828)) + 1262351875, 378218866);
                     int i2 = c ^ (c << 13);
@@ -230,12 +230,12 @@ public class PlayGifView extends View {
                 }
             }
             byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             e((byte) 79, bArr[78], bArr[52], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             e((byte) 122, bArr[4], bArr[78], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -93462158);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -93462158);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4993;
             Fpnative.valueOf = objArr;
@@ -257,15 +257,15 @@ public class PlayGifView extends View {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void onMeasure(int i, int i2) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedRealtime = (int) SystemClock.elapsedRealtime();
                     int i3 = ~((-577) | elapsedRealtime);
                     int i4 = ~elapsedRealtime;
@@ -287,12 +287,12 @@ public class PlayGifView extends View {
                 }
             }
             byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             e(bArr[78], bArr[34], bArr[52], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             e(bArr[100], bArr[50], bArr[32], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1203002137);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1203002137);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4992;
             Fpnative.valueOf = objArr;
@@ -308,15 +308,15 @@ public class PlayGifView extends View {
     }
 
     public void setImageResource(int i) {
-        Object[] objArr;
+        java.lang.Object[] objArr;
         long j;
-        Object[] objArr2 = Fpnative.valueOf;
+        java.lang.Object[] objArr2 = Fpnative.valueOf;
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
+                    objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i2 = ~System.identityHashCode(this);
                     int c = a.c((~(i2 | (-295595750))) | 203293530, 160, (((~(i2 | 203293530)) | (-496922624)) * (-160)) + 133454335, 276330771);
                     int i3 = c ^ (c << 13);
@@ -330,12 +330,12 @@ public class PlayGifView extends View {
                 }
             }
             byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
+            java.lang.Object[] objArr3 = new java.lang.Object[1];
             e(bArr[93], bArr[29], bArr[52], objArr3);
             Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
+            java.lang.Object[] objArr4 = new java.lang.Object[1];
             e(bArr[27], (byte) (bArr[39] + 1), bArr[78], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 276330771);
+            objArr = (java.lang.Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 276330771);
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5010;
             Fpnative.valueOf = objArr;

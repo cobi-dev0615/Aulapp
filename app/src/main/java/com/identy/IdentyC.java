@@ -6,9 +6,9 @@ import com.identy.getL2Score;
 /* loaded from: classes2.dex */
 public final /* synthetic */ class IdentyC implements Runnable {
     public final /* synthetic */ int a;
-    public final /* synthetic */ Object b;
+    public final /* synthetic */ java.lang.Object b;
 
-    public /* synthetic */ IdentyC(Object obj, int i) {
+    public /* synthetic */ IdentyC(java.lang.Object obj, int i) {
         this.a = i;
         this.b = obj;
     }

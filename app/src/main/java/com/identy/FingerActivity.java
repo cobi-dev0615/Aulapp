@@ -95,7 +95,6 @@ import java.util.concurrent.TimeoutException;
 import kotlin.io.ConstantsKt;
 import kotlin.jvm.internal.ByteCompanionObject;
 import org.camera.a.valueOf.PngjBadCrcException;
-import org.camera.preview.PngjBadCrcException;
 import org.camera.preview.PngjBadCrcException.valueOf;
 import org.cameracontroller.PngjBadSignature;
 import org.identy.nativealgo.NativeAlgoUtils;
@@ -5681,7 +5680,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
     }
 
-    public class getL1Score implements PngjBadSignature.values {
+    public class getL1Score implements org.cameracontroller.PngjBadSignature.values {
         private /* synthetic */ long PngjException;
 
         public getL1Score(long j) {

@@ -71,7 +71,7 @@ public final class getOveralTimetaken extends e1 {
     boolean configureroll;
     List pfkrol;
 
-    public class PngjBadCrcException implements PngjBadCrcException.values {
+    public class PngjBadCrcException implements org.c.a.PngjBadCrcException.values {
         public PngjBadCrcException() {
         }
 

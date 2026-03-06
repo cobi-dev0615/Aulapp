@@ -12,7 +12,7 @@ public class getQualityScore {
     public java.lang.Object PngjPrematureEnding;
     public java.lang.Object PngjUnsupportedException;
     private int e1;
-    private final Object[] getPadSub3;
+    private final java.lang.Object[] getPadSub3;
     public float valueOf;
     public long values;
     private final int[] a = new int[27];
@@ -20,8 +20,8 @@ public class getQualityScore {
     private final float[] onErrorResponse = new float[27];
     private final double[] getPadSub1 = new double[27];
 
-    public getQualityScore(Object obj, Object obj2) {
-        Object[] objArr = new Object[27];
+    public getQualityScore(java.lang.Object obj, java.lang.Object obj2) {
+        java.lang.Object[] objArr = new java.lang.Object[27];
         this.getPadSub3 = objArr;
         objArr[15] = obj;
         objArr[16] = obj2;
@@ -37,15 +37,15 @@ public class getQualityScore {
                 this.Action = i2;
                 return 0;
             case 2:
-                Object[] objArr = this.getPadSub3;
+                java.lang.Object[] objArr = this.getPadSub3;
                 int i3 = this.Action;
                 this.Action = i3 + 1;
-                Object obj = objArr[i3];
+                java.lang.Object obj = objArr[i3];
                 objArr[i3] = null;
                 this.PngjUnsupportedException = obj;
                 return 0;
             case 3:
-                Object[] objArr2 = this.getPadSub3;
+                java.lang.Object[] objArr2 = this.getPadSub3;
                 int i4 = this.e1;
                 int i5 = i4 + 1;
                 this.e1 = i5;
@@ -141,19 +141,19 @@ public class getQualityScore {
                 this.PngjBadSignature = this.a[i20] == 0 ? 0 : 1;
                 return 0;
             case 17:
-                Object[] objArr3 = this.getPadSub3;
+                java.lang.Object[] objArr3 = this.getPadSub3;
                 int i21 = this.e1;
-                Object obj2 = objArr3[i21 - 1];
+                java.lang.Object obj2 = objArr3[i21 - 1];
                 objArr3[i21 - 1] = null;
                 this.PngjUnsupportedException = obj2;
                 return 0;
             case 18:
-                Object[] objArr4 = this.getPadSub3;
+                java.lang.Object[] objArr4 = this.getPadSub3;
                 int i22 = this.e1;
                 this.e1 = i22 + 1;
                 objArr4[i22] = null;
                 int[] iArr10 = this.a;
-                Object obj3 = objArr4[i22];
+                java.lang.Object obj3 = objArr4[i22];
                 objArr4[i22] = null;
                 iArr10[i22] = ((int[]) obj3).length;
                 this.e1 = i22;
@@ -181,12 +181,12 @@ public class getQualityScore {
                 for (int i26 = this.e1 - 1; i26 >= 0; i26--) {
                     this.getPadSub3[i26] = null;
                 }
-                Object[] objArr5 = this.getPadSub3;
+                java.lang.Object[] objArr5 = this.getPadSub3;
                 this.e1 = 1;
                 objArr5[0] = this.PngjPrematureEnding;
                 return 0;
             case 23:
-                Object[] objArr6 = this.getPadSub3;
+                java.lang.Object[] objArr6 = this.getPadSub3;
                 int i27 = this.e1;
                 int i28 = i27 + 1;
                 this.e1 = i28;
@@ -195,13 +195,13 @@ public class getQualityScore {
                 objArr6[i28] = objArr6[i27];
                 return 0;
             case 24:
-                Object[] objArr7 = this.getPadSub3;
+                java.lang.Object[] objArr7 = this.getPadSub3;
                 int i29 = this.e1;
                 this.e1 = i29 + 1;
                 objArr7[i29] = objArr7[16];
                 return 0;
             case 25:
-                Object[] objArr8 = this.getPadSub3;
+                java.lang.Object[] objArr8 = this.getPadSub3;
                 int i30 = this.e1;
                 int i31 = i30 + 1;
                 this.e1 = i31;
@@ -213,7 +213,7 @@ public class getQualityScore {
                 objArr8[i32] = objArr8[i30 + 1];
                 return 0;
             case 26:
-                Object[] objArr9 = this.getPadSub3;
+                java.lang.Object[] objArr9 = this.getPadSub3;
                 int i33 = this.e1;
                 this.e1 = i33 + 1;
                 objArr9[i33] = this.PngjPrematureEnding;
@@ -221,8 +221,8 @@ public class getQualityScore {
             case 27:
                 int i34 = this.e1 - 1;
                 this.e1 = i34;
-                Object[] objArr10 = this.getPadSub3;
-                Object obj4 = objArr10[i34];
+                java.lang.Object[] objArr10 = this.getPadSub3;
+                java.lang.Object obj4 = objArr10[i34];
                 objArr10[i34] = null;
                 objArr10[16] = obj4;
                 return 0;
@@ -239,7 +239,7 @@ public class getQualityScore {
                 iArr15[18] = iArr15[i36];
                 return 0;
             case 30:
-                Object[] objArr11 = this.getPadSub3;
+                java.lang.Object[] objArr11 = this.getPadSub3;
                 int i37 = this.e1;
                 this.e1 = i37 + 1;
                 objArr11[i37] = objArr11[15];

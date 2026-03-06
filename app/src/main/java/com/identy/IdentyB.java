@@ -11,7 +11,7 @@ public abstract /* synthetic */ class IdentyB {
         return ((i + i2) / i3) - i4;
     }
 
-    public static Object b(Hand hand, Finger finger, HashMap hashMap) {
+    public static java.lang.Object b(Hand hand, Finger finger, HashMap hashMap) {
         return hashMap.get(new Pair(hand, finger));
     }
 
