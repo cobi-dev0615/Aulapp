@@ -56,7 +56,7 @@ public class IESCipherGCM extends CipherSpi {
     }
 
     @Override // javax.crypto.CipherSpi
-    public byte[] engineDoFinal(byte[] bArr, int i, int i2) {
+    public byte[] engineDoFinal(byte[] bArr, int i, int i2) throws BadPaddingException {
         if (i2 != 0) {
             this.buffer.write(bArr, i, i2);
         }
@@ -89,7 +89,7 @@ public class IESCipherGCM extends CipherSpi {
             try {
                 this.engine.init(this.key, iESWithCipherParameters, new ECIESPublicKeyParser(parameters));
                 return this.engine.processBlock(byteArray, 0, byteArray.length);
-            } catch (InvalidCipherTextException e2) {
+            } catch (Exception e2) {
                 throw new BadPaddingException(e2.getMessage());
             }
         }
@@ -177,7 +177,7 @@ public class IESCipherGCM extends CipherSpi {
     }
 
     @Override // javax.crypto.CipherSpi
-    public void engineInit(int i, Key key, AlgorithmParameters algorithmParameters, SecureRandom secureRandom) {
+    public void engineInit(int i, Key key, AlgorithmParameters algorithmParameters, SecureRandom secureRandom) throws InvalidKeyException, InvalidAlgorithmParameterException {
         AlgorithmParameterSpec parameterSpec;
         if (algorithmParameters != null) {
             try {
@@ -206,7 +206,7 @@ public class IESCipherGCM extends CipherSpi {
     }
 
     @Override // javax.crypto.CipherSpi
-    public void engineSetPadding(String str) {
+    public void engineSetPadding(String str) throws NoSuchPaddingException {
         String upperCase = Strings.toUpperCase(str);
         if (!upperCase.equals("NOPADDING") && !upperCase.equals("PKCS5PADDING") && !upperCase.equals("PKCS7PADDING")) {
             throw new NoSuchPaddingException("padding not available with IESCipher");
@@ -226,7 +226,7 @@ public class IESCipherGCM extends CipherSpi {
     }
 
     @Override // javax.crypto.CipherSpi
-    public void engineInit(int i, Key key, AlgorithmParameterSpec algorithmParameterSpec, SecureRandom secureRandom) {
+    public void engineInit(int i, Key key, AlgorithmParameterSpec algorithmParameterSpec, SecureRandom secureRandom) throws InvalidKeyException, InvalidAlgorithmParameterException {
         byte[] bArr = null;
         this.otherKeyParameter = null;
         if (algorithmParameterSpec == null) {
@@ -282,14 +282,14 @@ public class IESCipherGCM extends CipherSpi {
     }
 
     @Override // javax.crypto.CipherSpi
-    public int engineDoFinal(byte[] bArr, int i, int i2, byte[] bArr2, int i3) {
+    public int engineDoFinal(byte[] bArr, int i, int i2, byte[] bArr2, int i3) throws BadPaddingException {
         byte[] engineDoFinal = engineDoFinal(bArr, i, i2);
         System.arraycopy(engineDoFinal, 0, bArr2, i3, engineDoFinal.length);
         return engineDoFinal.length;
     }
 
     @Override // javax.crypto.CipherSpi
-    public void engineInit(int i, Key key, SecureRandom secureRandom) {
+    public void engineInit(int i, Key key, SecureRandom secureRandom) throws InvalidKeyException {
         try {
             engineInit(i, key, (AlgorithmParameterSpec) null, secureRandom);
         } catch (InvalidAlgorithmParameterException unused) {
