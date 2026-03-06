@@ -5,6 +5,10 @@ import arid.Action;
 /* loaded from: classes.dex */
 public final class PngjBadCrcException {
     final Action valueOf;
+
+    public PngjBadCrcException(Action action) {
+        this.valueOf = action;
+    }
     public static final double[] values = {0.73d, 1.03d, 0.97d, 1.11d, 1.22d};
     static final double PngjBadCrcException = (-1.0d) / Math.log(2.0d);
     double PngjException = 0.7d;
