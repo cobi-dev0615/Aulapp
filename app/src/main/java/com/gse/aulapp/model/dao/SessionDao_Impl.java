@@ -1323,7 +1323,7 @@ public final class SessionDao_Impl implements SessionDao {
                                                                                                                                                     anonymousClass12 = this;
                                                                                                                                                     cursor.close();
                                                                                                                                                     acquire.release();
-                                                                                                                                                    throw th;
+                                                                                                                                                    throw new RuntimeException(th);
                                                                                                                                                 }
                                                                                                                                             } else {
                                                                                                                                                 cursor = query;
@@ -2232,7 +2232,7 @@ public final class SessionDao_Impl implements SessionDao {
                                     cursor = query;
                                     cursor.close();
                                     acquire.release();
-                                    throw th2;
+                                    throw new RuntimeException(th2);
                                 }
                             }
                             i4 = i44;
@@ -2388,7 +2388,7 @@ public final class SessionDao_Impl implements SessionDao {
                             cursor = query;
                             cursor.close();
                             acquire.release();
-                            throw th3;
+                            throw new RuntimeException(th3);
                         }
                     }
                     ArrayList arrayList5 = arrayList3;
@@ -2396,7 +2396,7 @@ public final class SessionDao_Impl implements SessionDao {
                     acquire.release();
                     return arrayList5;
                 } catch (Throwable th4) {
-                    throw th4;
+                    throw new RuntimeException(th4);
                 }
             }
         }, continuation);
@@ -2869,7 +2869,7 @@ public final class SessionDao_Impl implements SessionDao {
                                                                                                                                             } catch (Throwable th) {
                                                                                                                                                 th = th;
                                                                                                                                                 cursor.close();
-                                                                                                                                                throw th;
+                                                                                                                                                throw new RuntimeException(th);
                                                                                                                                             }
                                                                                                                                         } else {
                                                                                                                                             cursor = query;
@@ -12524,7 +12524,7 @@ public final class SessionDao_Impl implements SessionDao {
                 } catch (Throwable th2) {
                     cursor = query;
                     cursor.close();
-                    throw th2;
+                    throw new RuntimeException(th2);
                 }
             }
         }, continuation);
@@ -12921,7 +12921,7 @@ public final class SessionDao_Impl implements SessionDao {
                                                                                                                                             } catch (Throwable th) {
                                                                                                                                                 th = th;
                                                                                                                                                 cursor.close();
-                                                                                                                                                throw th;
+                                                                                                                                                throw new RuntimeException(th);
                                                                                                                                             }
                                                                                                                                         } else {
                                                                                                                                             cursor = query;
@@ -20790,7 +20790,7 @@ public final class SessionDao_Impl implements SessionDao {
                 } catch (Throwable th2) {
                     cursor = query;
                     cursor.close();
-                    throw th2;
+                    throw new RuntimeException(th2);
                 }
             }
         }, continuation);
@@ -25859,7 +25859,7 @@ public final class SessionDao_Impl implements SessionDao {
                     return sessionFullSync;
                 } catch (Throwable th) {
                     query.close();
-                    throw th;
+                    throw new RuntimeException(th);
                 }
             }
         }, continuation);
