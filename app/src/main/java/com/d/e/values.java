@@ -2,6 +2,7 @@ package com.d.e;
 
 import java.io.BufferedInputStream;
 import java.io.FilterInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import kotlin.UByte;
 import kotlin.io.ConstantsKt;
@@ -50,7 +51,7 @@ public final class values extends FilterInputStream {
         this.PngjOutputException = (short) ((this.PngjOutputException + 1) % 4);
     }
 
-    private int values() {
+    private int values() throws IOException {
         int i;
         if (this.PngjPrematureEnding == Integer.MAX_VALUE) {
             this.PngjPrematureEnding = super.in.read();
@@ -102,7 +103,7 @@ public final class values extends FilterInputStream {
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
-    public final int available() {
+    public final int available() throws IOException {
         values();
         return this.a - this.PngjExceptionInternal;
     }
@@ -113,7 +114,7 @@ public final class values extends FilterInputStream {
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
-    public final int read() {
+    public final int read() throws IOException {
         values();
         int i = this.PngjExceptionInternal;
         if (i >= this.a) {
@@ -125,7 +126,7 @@ public final class values extends FilterInputStream {
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
-    public final long skip(long j) {
+    public final long skip(long j) throws IOException {
         long j2 = 0;
         while (j2 < j && read() != -1) {
             j2++;
@@ -151,7 +152,7 @@ public final class values extends FilterInputStream {
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
-    public final int read(byte[] bArr, int i, int i2) {
+    public final int read(byte[] bArr, int i, int i2) throws IOException {
         int i3 = i + i2;
         for (int i4 = i; i4 < i3; i4++) {
             values();

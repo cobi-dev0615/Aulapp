@@ -8401,7 +8401,7 @@ public class IdentySdk {
                                                 throw new Exception("templates are empty");
                                             }
                                         }
-                                        VerifyResult matchMultiple2 = com.identy.Fpnative.matchMultiple(com.identy.com.identy.e1.PngjException(this.getData), template.ordinal(), hashMap3, template2.ordinal(), hashMap4, this.PngjOutputException.ordinal());
+                                        VerifyResult matchMultiple2 = com.identy.Fpnative.matchMultiple(com.identy.e1.PngjException(this.getData), template.ordinal(), hashMap3, template2.ordinal(), hashMap4, this.PngjOutputException.ordinal());
                                         ArrayList arrayList = new ArrayList();
                                         HashMap hashMap5 = new HashMap();
                                         deduplication = (generateST + 15) % 128;
