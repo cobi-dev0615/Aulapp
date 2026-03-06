@@ -37,6 +37,11 @@ public final /* synthetic */ class j3 implements Deferred.DeferredHandler, Conti
         // Stubbed: NavigationView.lambda$dispatchDraw$0
     }
 
+    @Override // com.google.android.material.canvas.CanvasCompat.CanvasOperation
+    public void run(Canvas canvas) {
+        a(canvas);
+    }
+
     @Override // com.google.android.datatransport.Transformer
     public Object apply(Object obj) {
         // Stubbed: EventGDTLogger.encode (FirebaseSessions)

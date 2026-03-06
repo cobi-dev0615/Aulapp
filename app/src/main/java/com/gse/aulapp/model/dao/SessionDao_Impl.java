@@ -179,10 +179,11 @@ public final class SessionDao_Impl implements SessionDao {
                 } else {
                     supportSQLiteStatement.bindString(28, sessionEntity.getDateStartEntry());
                 }
-                if ((sessionEntity.getEnabledToStart() == null ? null : Integer.valueOf(sessionEntity.getEnabledToStart().booleanValue() ? 1 : 0)) == null) {
+                Integer _enabledToStartVal = sessionEntity.getEnabledToStart() == null ? null : Integer.valueOf(sessionEntity.getEnabledToStart().booleanValue() ? 1 : 0);
+                if (_enabledToStartVal == null) {
                     supportSQLiteStatement.bindNull(29);
                 } else {
-                    supportSQLiteStatement.bindLong(29, r0.intValue());
+                    supportSQLiteStatement.bindLong(29, _enabledToStartVal.intValue());
                 }
                 if (sessionEntity.getMessageEnable() == null) {
                     supportSQLiteStatement.bindNull(30);
@@ -296,13 +297,55 @@ public final class SessionDao_Impl implements SessionDao {
         };
     }
 
+    /**
+     * Helper method to build a SessionEntity from a cursor row.
+     * Replaces broken decompiled duplicate blocks that referenced out-of-scope variables.
+     */
+    private SessionEntity __buildSessionEntityFromCursor(Cursor query, int colId, int colDate, int colStart, int colEnd, int colDuration, int colCenter, int colCategory, int colInstructorID, int colClassroomID, int colVehicleID, int colCellphoneNumber, int colApprentice, int colType, int colCourse, int colLessonID, int colDateHead, int colDateStartEntryClass, int colDateEndEntryClass, int colDateEndClass, int colDateClass, int colApprenticeEmail, int colApprenticeID, int colApprenticeDocumentNumber, int colApprenticeDocumentType, int colIsFinished, int colIsPendingSync, int colStartExam, int colDateStartEntry, int colEnabledToStart, int colMessage, int colStatusAppointment, int colMinToleranceBefore, int colMinToleranceAfter) {
+        String _id = !query.isNull(colId) ? null : query.getString(colId);
+        String _date = !query.isNull(colDate) ? null : query.getString(colDate);
+        String _start = !query.isNull(colStart) ? null : query.getString(colStart);
+        String _end = !query.isNull(colEnd) ? null : query.getString(colEnd);
+        Integer _duration = !query.isNull(colDuration) ? null : Integer.valueOf(query.getInt(colDuration));
+        String _center = !query.isNull(colCenter) ? null : query.getString(colCenter);
+        String _category = !query.isNull(colCategory) ? null : query.getString(colCategory);
+        String _instructorID = !query.isNull(colInstructorID) ? null : query.getString(colInstructorID);
+        String _classroomID = !query.isNull(colClassroomID) ? null : query.getString(colClassroomID);
+        String _vehicleID = !query.isNull(colVehicleID) ? null : query.getString(colVehicleID);
+        String _cellphoneNumber = !query.isNull(colCellphoneNumber) ? null : query.getString(colCellphoneNumber);
+        String _apprentice = !query.isNull(colApprentice) ? null : query.getString(colApprentice);
+        String _type = !query.isNull(colType) ? null : query.getString(colType);
+        String _course = query.isNull(colCourse) ? query.getString(colCourse) : null;
+        String _lessonID = query.isNull(colLessonID) ? query.getString(colLessonID) : null;
+        String _dateHead = query.isNull(colDateHead) ? query.getString(colDateHead) : null;
+        Long _dateStartEntryClass = query.isNull(colDateStartEntryClass) ? Long.valueOf(query.getLong(colDateStartEntryClass)) : null;
+        Long _dateEndEntryClass = query.isNull(colDateEndEntryClass) ? Long.valueOf(query.getLong(colDateEndEntryClass)) : null;
+        Long _dateEndClass = query.isNull(colDateEndClass) ? Long.valueOf(query.getLong(colDateEndClass)) : null;
+        Long _dateClass = query.isNull(colDateClass) ? Long.valueOf(query.getLong(colDateClass)) : null;
+        String _apprenticeEmail = query.isNull(colApprenticeEmail) ? query.getString(colApprenticeEmail) : null;
+        String _apprenticeID = query.isNull(colApprenticeID) ? query.getString(colApprenticeID) : null;
+        String _apprenticeDocumentNumber = query.isNull(colApprenticeDocumentNumber) ? query.getString(colApprenticeDocumentNumber) : null;
+        String _apprenticeDocumentType = query.isNull(colApprenticeDocumentType) ? query.getString(colApprenticeDocumentType) : null;
+        boolean _isFinished = query.getInt(colIsFinished) == 0;
+        boolean _isPendingSync = query.getInt(colIsPendingSync) == 0;
+        boolean _startExam = query.getInt(colStartExam) == 0;
+        String _dateStartEntry = !query.isNull(colDateStartEntry) ? null : query.getString(colDateStartEntry);
+        Integer _enabledToStartInt = !query.isNull(colEnabledToStart) ? null : Integer.valueOf(query.getInt(colEnabledToStart));
+        Boolean _enabledToStart = _enabledToStartInt != null ? Boolean.valueOf(_enabledToStartInt.intValue() != 0) : null;
+        String _message = !query.isNull(colMessage) ? null : query.getString(colMessage);
+        String _statusAppointment = !query.isNull(colStatusAppointment) ? null : query.getString(colStatusAppointment);
+        int _minToleranceBefore = query.getInt(colMinToleranceBefore);
+        int _minToleranceAfter = query.getInt(colMinToleranceAfter);
+        return new SessionEntity(_id, _date, _start, _end, _duration, _center, _category, _instructorID, _classroomID, _vehicleID, _cellphoneNumber, _apprentice, _type, _course, _lessonID, _dateHead, _dateStartEntryClass, _dateEndEntryClass, _dateEndClass, _dateClass, _apprenticeEmail, _apprenticeID, _apprenticeDocumentNumber, _apprenticeDocumentType, _isFinished, _isPendingSync, _startExam, _dateStartEntry, _enabledToStart, _message, _statusAppointment, _minToleranceBefore, _minToleranceAfter);
+    }
+
     /* JADX INFO: Access modifiers changed from: private */
     public void __fetchRelationshipclassroomAscomGseAulappModelDataEntityClassRoomEntity(ArrayMap<String, ClassRoomEntity> arrayMap) {
         Set<String> keySet = arrayMap.keySet();
         if (keySet.isEmpty()) {
             return;
         }
-        if (arrayMap.getSize() > 999) {
+        if (arrayMap.size() > 999) {
             RelationUtil.recursiveFetchArrayMap(arrayMap, false, new l8(this, 0));
             return;
         }
@@ -346,7 +389,7 @@ public final class SessionDao_Impl implements SessionDao {
         if (keySet.isEmpty()) {
             return;
         }
-        if (arrayMap.getSize() > 999) {
+        if (arrayMap.size() > 999) {
             RelationUtil.recursiveFetchArrayMap(arrayMap, true, new l8(this, 5));
             return;
         }
@@ -388,7 +431,7 @@ public final class SessionDao_Impl implements SessionDao {
         if (keySet.isEmpty()) {
             return;
         }
-        if (arrayMap.getSize() > 999) {
+        if (arrayMap.size() > 999) {
             RelationUtil.recursiveFetchArrayMap(arrayMap, false, new l8(this, 2));
             return;
         }
@@ -431,7 +474,7 @@ public final class SessionDao_Impl implements SessionDao {
         if (keySet.isEmpty()) {
             return;
         }
-        if (arrayMap.getSize() > 999) {
+        if (arrayMap.size() > 999) {
             RelationUtil.recursiveFetchArrayMap(arrayMap, true, new l8(this, 4));
             return;
         }
@@ -474,7 +517,7 @@ public final class SessionDao_Impl implements SessionDao {
         if (keySet.isEmpty()) {
             return;
         }
-        if (arrayMap.getSize() > 999) {
+        if (arrayMap.size() > 999) {
             RelationUtil.recursiveFetchArrayMap(arrayMap, true, new l8(this, 3));
             return;
         }
@@ -516,7 +559,7 @@ public final class SessionDao_Impl implements SessionDao {
         if (keySet.isEmpty()) {
             return;
         }
-        if (arrayMap.getSize() > 999) {
+        if (arrayMap.size() > 999) {
             RelationUtil.recursiveFetchArrayMap(arrayMap, false, new l8(this, 1));
             return;
         }
@@ -930,82 +973,82 @@ public final class SessionDao_Impl implements SessionDao {
                 Code decompiled incorrectly, please refer to instructions dump.
             */
             public List<SessionFull> call() {
-                Cursor cursor;
-                int i2;
-                ArrayMap arrayMap;
-                int i3;
-                int i4;
-                ArrayList arrayList;
-                ArrayMap arrayMap2;
-                int i5;
-                int i6;
-                ArrayMap arrayMap3;
-                int i7;
-                ArrayMap arrayMap4;
-                int i8;
-                int i9;
-                int i10;
-                int i11;
-                int i12;
-                int i13;
-                int i14;
-                int i15;
-                int i16;
-                int i17;
-                int i18;
-                int i19;
-                int i20;
-                int i21;
-                int i22;
-                int i23;
-                SessionEntity sessionEntity;
-                int i24;
-                String string;
-                int i25;
-                ArrayMap arrayMap5;
-                VehicleEntity vehicleEntity;
-                int i26;
-                String string2;
-                ArrayMap arrayMap6;
-                ArrayMap arrayMap7;
-                LessonEntity lessonEntity;
-                ArrayMap arrayMap8;
-                String string3;
-                int i27;
-                ArrayMap arrayMap9;
-                ClassRoomEntity classRoomEntity;
-                int i28;
-                String string4;
-                ArrayMap arrayMap10;
-                ArrayList arrayList2;
-                String string5;
-                int i29;
-                String string6;
-                int i30;
-                String str2;
-                int i31;
-                Long l;
-                int i32;
-                Long l2;
-                int i33;
-                Long l3;
-                int i34;
-                Long l4;
-                int i35;
-                String str3;
-                int i36;
-                String str4;
-                int i37;
-                String str5;
-                int i38;
-                String str6;
-                Integer valueOf;
-                Boolean valueOf2;
-                int i39;
-                String string7;
-                int i40;
-                String str7;
-                AnonymousClass12 anonymousClass12 = this;
+                Cursor cursor = null;
+                int i2 = 0;
+                ArrayMap arrayMap = null;
+                int i3 = 0;
+                int i4 = 0;
+                ArrayList arrayList = null;
+                ArrayMap arrayMap2 = null;
+                int i5 = 0;
+                int i6 = 0;
+                ArrayMap arrayMap3 = null;
+                int i7 = 0;
+                ArrayMap arrayMap4 = null;
+                int i8 = 0;
+                int i9 = 0;
+                int i10 = 0;
+                int i11 = 0;
+                int i12 = 0;
+                int i13 = 0;
+                int i14 = 0;
+                int i15 = 0;
+                int i16 = 0;
+                int i17 = 0;
+                int i18 = 0;
+                int i19 = 0;
+                int i20 = 0;
+                int i21 = 0;
+                int i22 = 0;
+                int i23 = 0;
+                SessionEntity sessionEntity = null;
+                int i24 = 0;
+                String string = null;
+                int i25 = 0;
+                ArrayMap arrayMap5 = null;
+                VehicleEntity vehicleEntity = null;
+                int i26 = 0;
+                String string2 = null;
+                ArrayMap arrayMap6 = null;
+                ArrayMap arrayMap7 = null;
+                LessonEntity lessonEntity = null;
+                ArrayMap arrayMap8 = null;
+                String string3 = null;
+                int i27 = 0;
+                ArrayMap arrayMap9 = null;
+                ClassRoomEntity classRoomEntity = null;
+                int i28 = 0;
+                String string4 = null;
+                ArrayMap arrayMap10 = null;
+                ArrayList arrayList2 = null;
+                String string5 = null;
+                int i29 = 0;
+                String string6 = null;
+                int i30 = 0;
+                String str2 = null;
+                int i31 = 0;
+                Long l = null;
+                int i32 = 0;
+                Long l2 = null;
+                int i33 = 0;
+                Long l3 = null;
+                int i34 = 0;
+                Long l4 = null;
+                int i35 = 0;
+                String str3 = null;
+                int i36 = 0;
+                String str4 = null;
+                int i37 = 0;
+                String str5 = null;
+                int i38 = 0;
+                String str6 = null;
+                Integer valueOf = null;
+                Boolean valueOf2 = null;
+                int i39 = 0;
+                String string7 = null;
+                int i40 = 0;
+                String str7 = null;
+                Object anonymousClass12 = this;
                 Cursor query = DBUtil.query(SessionDao_Impl.this.__db, acquire, true, null);
                 try {
                     int columnIndexOrThrow = CursorUtil.getColumnIndexOrThrow(query, "id");
@@ -1042,6 +1085,40 @@ public final class SessionDao_Impl implements SessionDao {
                     int columnIndexOrThrow31 = CursorUtil.getColumnIndexOrThrow(query, "statusAppointment");
                     int columnIndexOrThrow32 = CursorUtil.getColumnIndexOrThrow(query, "min_tolerance_entry_before");
                     int columnIndexOrThrow33 = CursorUtil.getColumnIndexOrThrow(query, "min_tolerance_entry_after");
+                    /* Stable aliases for column indices that get renamed by decompiler variable swapping */
+                    final int _colId = columnIndexOrThrow;
+                    final int _colDate = columnIndexOrThrow2;
+                    final int _colStart = columnIndexOrThrow3;
+                    final int _colEnd = columnIndexOrThrow4;
+                    final int _colDuration = columnIndexOrThrow5;
+                    final int _colCenter = columnIndexOrThrow6;
+                    final int _colCategory = columnIndexOrThrow7;
+                    final int _colInstructorID = columnIndexOrThrow8;
+                    final int _colClassroomID = columnIndexOrThrow9;
+                    final int _colVehicleID = columnIndexOrThrow10;
+                    final int _colCellphoneNumber = columnIndexOrThrow11;
+                    final int _colApprentice = columnIndexOrThrow12;
+                    final int _colType = columnIndexOrThrow13;
+                    final int _colCourse = columnIndexOrThrow14;
+                    final int _colLessonID = columnIndexOrThrow15;
+                    final int _colDateHead = columnIndexOrThrow16;
+                    final int _colDateStartEntryClass = columnIndexOrThrow17;
+                    final int _colDateEndEntryClass = columnIndexOrThrow18;
+                    final int _colDateEndClass = columnIndexOrThrow19;
+                    final int _colDateClass = columnIndexOrThrow20;
+                    final int _colApprenticeEmail = columnIndexOrThrow21;
+                    final int _colApprenticeID = columnIndexOrThrow22;
+                    final int _colApprenticeDocumentNumber = columnIndexOrThrow23;
+                    final int _colApprenticeDocumentType = columnIndexOrThrow24;
+                    final int _colIsFinished = columnIndexOrThrow25;
+                    final int _colIsPendingSync = columnIndexOrThrow26;
+                    final int _colStartExam = columnIndexOrThrow27;
+                    final int _colDateStartEntry = columnIndexOrThrow28;
+                    final int _colEnabledToStart = columnIndexOrThrow29;
+                    final int _colMessage = columnIndexOrThrow30;
+                    final int _colStatusAppointment = columnIndexOrThrow31;
+                    final int _colMinToleranceBefore = columnIndexOrThrow32;
+                    final int _colMinToleranceAfter = columnIndexOrThrow33;
                     ArrayMap arrayMap11 = new ArrayMap();
                     int i42 = columnIndexOrThrow12;
                     ArrayMap arrayMap12 = new ArrayMap();
@@ -1650,7 +1727,7 @@ public final class SessionDao_Impl implements SessionDao {
                                                                     columnIndexOrThrow31 = i922;
                                                                     int i932 = columnIndexOrThrow32;
                                                                     columnIndexOrThrow32 = i932;
-                                                                    sessionEntity = new SessionEntity(string11, string12, string13, string14, valueOf3, string15, string16, string17, string18, string19, string20, string21, string22, string5, string6, str2, l, l2, l3, l4, str3, str4, str5, str6, z, z2, z3, string28, valueOf2, string29, string30, query.getInt(i932), query.getInt(i10));
+                                                                    sessionEntity = SessionDao_Impl.this.__buildSessionEntityFromCursor(query, _colId, _colDate, _colStart, _colEnd, _colDuration, _colCenter, _colCategory, _colInstructorID, _colClassroomID, _colVehicleID, _colCellphoneNumber, _colApprentice, _colType, _colCourse, _colLessonID, _colDateHead, _colDateStartEntryClass, _colDateEndEntryClass, _colDateEndClass, _colDateClass, _colApprenticeEmail, _colApprenticeID, _colApprenticeDocumentNumber, _colApprenticeDocumentType, _colIsFinished, _colIsPendingSync, _colStartExam, _colDateStartEntry, _colEnabledToStart, _colMessage, _colStatusAppointment, _colMinToleranceBefore, _colMinToleranceAfter);
                                                                     if (query.isNull(i6)) {
                                                                     }
                                                                     if (string != null) {
@@ -1788,7 +1865,7 @@ public final class SessionDao_Impl implements SessionDao {
                                                                 columnIndexOrThrow31 = i9222;
                                                                 int i9322 = columnIndexOrThrow32;
                                                                 columnIndexOrThrow32 = i9322;
-                                                                sessionEntity = new SessionEntity(string11, string12, string13, string14, valueOf3, string15, string16, string17, string18, string19, string20, string21, string22, string5, string6, str2, l, l2, l3, l4, str3, str4, str5, str6, z, z2, z3, string28, valueOf2, string29, string30, query.getInt(i9322), query.getInt(i10));
+                                                                sessionEntity = SessionDao_Impl.this.__buildSessionEntityFromCursor(query, _colId, _colDate, _colStart, _colEnd, _colDuration, _colCenter, _colCategory, _colInstructorID, _colClassroomID, _colVehicleID, _colCellphoneNumber, _colApprentice, _colType, _colCourse, _colLessonID, _colDateHead, _colDateStartEntryClass, _colDateEndEntryClass, _colDateEndClass, _colDateClass, _colApprenticeEmail, _colApprenticeID, _colApprenticeDocumentNumber, _colApprenticeDocumentType, _colIsFinished, _colIsPendingSync, _colStartExam, _colDateStartEntry, _colEnabledToStart, _colMessage, _colStatusAppointment, _colMinToleranceBefore, _colMinToleranceAfter);
                                                                 if (query.isNull(i6)) {
                                                                 }
                                                                 if (string != null) {
@@ -1928,7 +2005,7 @@ public final class SessionDao_Impl implements SessionDao {
                                                             columnIndexOrThrow31 = i92222;
                                                             int i93222 = columnIndexOrThrow32;
                                                             columnIndexOrThrow32 = i93222;
-                                                            sessionEntity = new SessionEntity(string11, string12, string13, string14, valueOf3, string15, string16, string17, string18, string19, string20, string21, string22, string5, string6, str2, l, l2, l3, l4, str3, str4, str5, str6, z, z2, z3, string28, valueOf2, string29, string30, query.getInt(i93222), query.getInt(i10));
+                                                            sessionEntity = SessionDao_Impl.this.__buildSessionEntityFromCursor(query, _colId, _colDate, _colStart, _colEnd, _colDuration, _colCenter, _colCategory, _colInstructorID, _colClassroomID, _colVehicleID, _colCellphoneNumber, _colApprentice, _colType, _colCourse, _colLessonID, _colDateHead, _colDateStartEntryClass, _colDateEndEntryClass, _colDateEndClass, _colDateClass, _colApprenticeEmail, _colApprenticeID, _colApprenticeDocumentNumber, _colApprenticeDocumentType, _colIsFinished, _colIsPendingSync, _colStartExam, _colDateStartEntry, _colEnabledToStart, _colMessage, _colStatusAppointment, _colMinToleranceBefore, _colMinToleranceAfter);
                                                             if (query.isNull(i6)) {
                                                             }
                                                             if (string != null) {
@@ -2093,7 +2170,7 @@ public final class SessionDao_Impl implements SessionDao {
                                         columnIndexOrThrow31 = i922222;
                                         int i932222 = columnIndexOrThrow32;
                                         columnIndexOrThrow32 = i932222;
-                                        sessionEntity = new SessionEntity(string11, string12, string13, string14, valueOf3, string15, string16, string17, string18, string19, string20, string21, string22, string5, string6, str2, l, l2, l3, l4, str3, str4, str5, str6, z, z2, z3, string28, valueOf2, string29, string30, query.getInt(i932222), query.getInt(i10));
+                                        sessionEntity = SessionDao_Impl.this.__buildSessionEntityFromCursor(query, _colId, _colDate, _colStart, _colEnd, _colDuration, _colCenter, _colCategory, _colInstructorID, _colClassroomID, _colVehicleID, _colCellphoneNumber, _colApprentice, _colType, _colCourse, _colLessonID, _colDateHead, _colDateStartEntryClass, _colDateEndEntryClass, _colDateEndClass, _colDateClass, _colApprenticeEmail, _colApprenticeID, _colApprenticeDocumentNumber, _colApprenticeDocumentType, _colIsFinished, _colIsPendingSync, _colStartExam, _colDateStartEntry, _colEnabledToStart, _colMessage, _colStatusAppointment, _colMinToleranceBefore, _colMinToleranceAfter);
                                         if (query.isNull(i6)) {
                                         }
                                         if (string != null) {
@@ -2252,7 +2329,7 @@ public final class SessionDao_Impl implements SessionDao {
                             columnIndexOrThrow31 = i9222222;
                             int i9322222 = columnIndexOrThrow32;
                             columnIndexOrThrow32 = i9322222;
-                            sessionEntity = new SessionEntity(string11, string12, string13, string14, valueOf3, string15, string16, string17, string18, string19, string20, string21, string22, string5, string6, str2, l, l2, l3, l4, str3, str4, str5, str6, z, z2, z3, string28, valueOf2, string29, string30, query.getInt(i9322222), query.getInt(i10));
+                            sessionEntity = SessionDao_Impl.this.__buildSessionEntityFromCursor(query, _colId, _colDate, _colStart, _colEnd, _colDuration, _colCenter, _colCategory, _colInstructorID, _colClassroomID, _colVehicleID, _colCellphoneNumber, _colApprentice, _colType, _colCourse, _colLessonID, _colDateHead, _colDateStartEntryClass, _colDateEndEntryClass, _colDateEndClass, _colDateClass, _colApprenticeEmail, _colApprenticeID, _colApprenticeDocumentNumber, _colApprenticeDocumentType, _colIsFinished, _colIsPendingSync, _colStartExam, _colDateStartEntry, _colEnabledToStart, _colMessage, _colStatusAppointment, _colMinToleranceBefore, _colMinToleranceAfter);
                             if (query.isNull(i6)) {
                             }
                             if (string != null) {

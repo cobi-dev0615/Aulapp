@@ -91,6 +91,7 @@ public class PngBadCharsetException extends arid.PngjException {
             if (i2 == i5) {
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -164,7 +165,7 @@ public class PngBadCharsetException extends arid.PngjException {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void b(int[] iArr, String str, boolean z, Object[] objArr) {
+    private static void b(int[] iArr, String str, boolean z, Object[] objArr) throws Throwable {
         int i;
         float f;
         int i2;
@@ -173,10 +174,10 @@ public class PngBadCharsetException extends arid.PngjException {
         byte[] bArr;
         int i3;
         String str2 = str;
-        byte[] bArr2 = str2 != null ? str2.getBytes("ISO-8859-1") : null;
+        byte[] bArr2 = str2 != null ? str2.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1) : null;
         if (str2 != null) {
             $10 = ($11 + 53) % 128;
-            bArr2 = str2.getBytes("ISO-8859-1");
+            bArr2 = str2.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1);
         }
         byte[] bArr3 = bArr2;
         com.d.e.e1 e1Var = new com.d.e.e1();
@@ -323,7 +324,7 @@ public class PngBadCharsetException extends arid.PngjException {
         objArr[0] = new String(cArr3);
     }
 
-    private static void c(int[] iArr, String str, int i, String str2, Object[] objArr) {
+    private static void c(int[] iArr, String str, int i, String str2, Object[] objArr) throws Throwable {
         char[] cArr;
         int i2;
         char c;
@@ -331,9 +332,9 @@ public class PngBadCharsetException extends arid.PngjException {
         char[] cArr2;
         int i3;
         String str3 = str2;
-        byte[] bArr = str3 != null ? str3.getBytes("ISO-8859-1") : null;
+        byte[] bArr = str3 != null ? str3.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1) : null;
         if (str3 != null) {
-            bArr = str3.getBytes("ISO-8859-1");
+            bArr = str3.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1);
         }
         byte[] bArr2 = bArr;
         if (str != null) {

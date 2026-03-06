@@ -14,7 +14,8 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.StateFlow;
 
 /* loaded from: classes2.dex */
-public final class l7 extends SuspendLambda implements Function2 {
+@SuppressWarnings({"rawtypes", "unchecked"})
+public final class l7 extends SuspendLambda implements Function2<Object, Object, Object> {
     public int a;
     public final /* synthetic */ PracticeClassFragment b;
 

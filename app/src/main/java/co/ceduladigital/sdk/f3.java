@@ -12,8 +12,8 @@ public final /* synthetic */ class f3 implements Function1 {
 
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Object obj) {
-        CoroutineDispatcher _init_$lambda$0;
-        ExecutorCoroutineDispatcher _init_$lambda$02;
+        Object _init_$lambda$0;
+        Object _init_$lambda$02;
         switch (this.a) {
             case 0:
                 throw new UnsupportedOperationException("Not decompiled");
