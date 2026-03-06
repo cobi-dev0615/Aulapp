@@ -45,7 +45,8 @@ public final /* synthetic */ class p1 implements Function1 {
                 ClassPracticeBeforeFragment this$0 = this.b;
                 Intrinsics.checkNotNullParameter(this$0, "this$0");
                 Intrinsics.checkNotNullParameter(datetime, "datetime");
-                Date parse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(datetime);
+                Date parse;
+                try { parse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(datetime); } catch (java.text.ParseException e) { parse = null; }
                 if (parse == null || (str = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(parse)) == null) {
                     str = BuildConfig.FLAVOR;
                 }

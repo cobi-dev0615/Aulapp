@@ -4335,10 +4335,10 @@ public class IdentySdk {
                                         int i17 = deduplication + 109;
                                         generateST = i17 % 128;
                                         if (i17 % 2 == 0) {
-                                            values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                            values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                                             throw th2;
                                         }
-                                        values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                        values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                                     } else if (template.equals(Template.FF_WSQ)) {
                                         PngjBadCrcException(file2.getAbsolutePath(), PngjException(str), key, defaultUser);
                                     }
@@ -4480,10 +4480,10 @@ public class IdentySdk {
                                     int i17 = deduplication + 25;
                                     generateST = i17 % 128;
                                     if (i17 % 2 == 0) {
-                                        values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                        values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                                         throw th2;
                                     }
-                                    values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                    values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                                     generateST = (deduplication + 113) % 128;
                                 } else if (template.equals(Template.FF_WSQ)) {
                                     int i18 = deduplication + 81;
@@ -4597,10 +4597,10 @@ public class IdentySdk {
                             int i16 = deduplication + 31;
                             generateST = i16 % 128;
                             if (i16 % 2 == 0) {
-                                values(new Object[]{this, value, finger, hand, defaultUser}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                values(new Object[]{this, value, finger, hand, defaultUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                                 throw null;
                             }
-                            values(new Object[]{this, value, finger, hand, defaultUser}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                            values(new Object[]{this, value, finger, hand, defaultUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                         } else {
                             valueOf(value, finger, hand, defaultUser, template2);
                             template2 = template;
@@ -4700,7 +4700,7 @@ public class IdentySdk {
                             generateST = (deduplication + 123) % 128;
                             valueOf(decode, finger, hand, defaultUser);
                         } else if (template2.equals(Template.ISO_19794_2)) {
-                            values(new Object[]{this, decode, finger, hand, defaultUser}, PngjBadCrcException.PngjBadSignature(), -994925292, PngjBadCrcException.PngjBadSignature(), 994925295, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                            values(new Object[]{this, decode, finger, hand, defaultUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -994925292, IdentySdk.PngjBadCrcException.PngjBadSignature(), 994925295, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                         } else if (template2.equals(Template.ISO_19794_4)) {
                             PngjBadCrcException(decode, finger, hand, defaultUser);
                         } else {
@@ -10982,10 +10982,10 @@ public class IdentySdk {
                                         int i17 = deduplication + 113;
                                         generateST = i17 % 128;
                                         if (i17 % 2 == 0) {
-                                            values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                            values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                                             int i18 = 61 / 0;
                                         } else {
-                                            values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                            values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                                         }
                                     } else if (template.equals(Template.FF_WSQ)) {
                                         PngjBadCrcException(file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk);
@@ -11100,7 +11100,7 @@ public class IdentySdk {
                                     File file2 = new File(values2, name);
                                     PngjBadSignature(file.getAbsolutePath(), file2.getAbsolutePath());
                                     if (template.equals(Template.FF_ISO_19794_4)) {
-                                        values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                        values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                                     } else if (template.equals(Template.FF_WSQ)) {
                                         deduplication = (generateST + 7) % 128;
                                         PngjBadCrcException(file2.getAbsolutePath(), PngjException(str), key, this.uxd565jk);
@@ -11194,7 +11194,7 @@ public class IdentySdk {
                         Template template3 = Template.PNG;
                         if (template2.equals(template3)) {
                             try {
-                                values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template3.ordinal(), com.identy.e.valueOf.PngjException(value)), hand, finger, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template3.ordinal(), com.identy.e.valueOf.PngjException(value)), hand, finger, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                                 deduplication = (generateST + 101) % 128;
                             } catch (Exception unused) {
                             }
@@ -11211,11 +11211,11 @@ public class IdentySdk {
                                 deduplication = (generateST + 111) % 128;
                                 values(value, finger, hand, this.uxd565jk);
                             } else if (template2.equals(Template.ISO_19794_4)) {
-                                values(new Object[]{this, value, finger, hand, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                values(new Object[]{this, value, finger, hand, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                             } else {
                                 Template template4 = Template.ANSI_378_2004;
                                 if (template2.equals(template4)) {
-                                    values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template4.ordinal(), com.identy.e.valueOf.PngjException(value)), hand, finger, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                                    values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template4.ordinal(), com.identy.e.valueOf.PngjException(value)), hand, finger, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                                 } else {
                                     valueOf(value, finger, hand, this.uxd565jk, template2);
                                 }
@@ -11331,7 +11331,7 @@ public class IdentySdk {
                     Template template2 = Template.PNG;
                     if (template.equals(template2)) {
                         try {
-                            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template2.ordinal(), value), hand, finger, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template2.ordinal(), value), hand, finger, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                         } catch (Exception unused) {
                         }
                     } else if (template.equals(Template.WSQ)) {
@@ -11340,19 +11340,19 @@ public class IdentySdk {
                         int i16 = deduplication + 55;
                         generateST = i16 % 128;
                         if (i16 % 2 == 0) {
-                            values(new Object[]{this, value, finger, hand, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), -994925292, PngjBadCrcException.PngjBadSignature(), 994925295, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                            values(new Object[]{this, value, finger, hand, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -994925292, IdentySdk.PngjBadCrcException.PngjBadSignature(), 994925295, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                             int i17 = 44 / 0;
                         } else {
-                            values(new Object[]{this, value, finger, hand, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), -994925292, PngjBadCrcException.PngjBadSignature(), 994925295, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                            values(new Object[]{this, value, finger, hand, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -994925292, IdentySdk.PngjBadCrcException.PngjBadSignature(), 994925295, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                         }
                     } else if (template.equals(Template.ISO_19794_4)) {
                         PngjBadCrcException(value, finger, hand, this.uxd565jk);
                     } else {
                         Template template3 = Template.ANSI_378_2004;
                         if (template.equals(template3)) {
-                            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template3.ordinal(), value), hand, finger, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template3.ordinal(), value), hand, finger, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                         } else {
-                            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template.ordinal(), value), hand, finger, this.uxd565jk}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+                            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template.ordinal(), value), hand, finger, this.uxd565jk}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
                         }
                     }
                 }
@@ -11548,7 +11548,7 @@ public class IdentySdk {
 
     private void PngjBadCrcException(byte[] bArr, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
-            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_4.ordinal(), bArr), hand, finger, identyUser}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_4.ordinal(), bArr), hand, finger, identyUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
             generateST = (deduplication + 75) % 128;
         } catch (Exception unused) {
         }
@@ -11674,7 +11674,7 @@ public class IdentySdk {
 
     private void PngjBadCrcException(String str, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
-            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.WSQ.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.WSQ.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
             int i = deduplication + 69;
             generateST = i % 128;
             if (i % 2 == 0) {
@@ -11687,7 +11687,7 @@ public class IdentySdk {
 
     private void valueOf(byte[] bArr, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
-            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.WSQ.ordinal(), bArr), hand, finger, identyUser}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.WSQ.ordinal(), bArr), hand, finger, identyUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
             deduplication = (generateST + 45) % 128;
         } catch (Exception unused) {
         }
@@ -11728,7 +11728,7 @@ public class IdentySdk {
 
     private void valueOf(String str, Finger finger, Hand hand, IdentyUser identyUser, Template template) {
         try {
-            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
             generateST = (deduplication + 37) % 128;
         } catch (Exception unused) {
         }
@@ -12018,11 +12018,11 @@ public class IdentySdk {
     }
 
     private void valueOf(byte[] bArr, Hand hand, Finger finger, IdentyUser identyUser) {
-        values(new Object[]{this, bArr, hand, finger, identyUser}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+        values(new Object[]{this, bArr, hand, finger, identyUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
     }
 
     private Attempt valueOf(Hand hand, Finger finger, long j, HashMap hashMap) {
-        return (Attempt) values(new Object[]{this, hand, finger, Long.valueOf(j), hashMap}, PngjBadCrcException.PngjBadSignature(), 1772618473, PngjBadCrcException.PngjBadSignature(), -1772618471, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+        return (Attempt) values(new Object[]{this, hand, finger, Long.valueOf(j), hashMap}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1772618473, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1772618471, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(9:(4:(10:3|(1:5)(1:25)|8|9|10|(1:12)|13|14|15|17)|14|15|17)|27|28|29|8|9|10|(0)|13) */
@@ -13689,7 +13689,7 @@ public class IdentySdk {
 
     private void values(String str, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
-            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_2.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+            values(new Object[]{this, Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_2.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
             generateST = (deduplication + 13) % 128;
         } catch (Exception unused) {
         }
@@ -13701,7 +13701,7 @@ public class IdentySdk {
         Finger finger = (Finger) objArr[2];
         Hand hand = (Hand) objArr[3];
         try {
-            values(new Object[]{identySdk, Fpnative.generateID(e1.PngjException(identySdk.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_2.ordinal(), bArr), hand, finger, (IdentyUser) objArr[4]}, PngjBadCrcException.PngjBadSignature(), -320332114, PngjBadCrcException.PngjBadSignature(), 320332114, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+            values(new Object[]{identySdk, Fpnative.generateID(e1.PngjException(identySdk.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_2.ordinal(), bArr), hand, finger, (IdentyUser) objArr[4]}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), 320332114, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
             generateST = (deduplication + 95) % 128;
         } catch (Exception unused) {
         }
@@ -13709,11 +13709,11 @@ public class IdentySdk {
     }
 
     private void PngjBadSignature(String str, Finger finger, Hand hand, IdentyUser identyUser) {
-        values(new Object[]{this, str, finger, hand, identyUser}, PngjBadCrcException.PngjBadSignature(), 1779101910, PngjBadCrcException.PngjBadSignature(), -1779101909, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+        values(new Object[]{this, str, finger, hand, identyUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1779101910, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1779101909, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
     }
 
     private void PngjBadSignature(byte[] bArr, Finger finger, Hand hand, IdentyUser identyUser) {
-        values(new Object[]{this, bArr, finger, hand, identyUser}, PngjBadCrcException.PngjBadSignature(), -994925292, PngjBadCrcException.PngjBadSignature(), 994925295, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature());
+        values(new Object[]{this, bArr, finger, hand, identyUser}, IdentySdk.PngjBadCrcException.PngjBadSignature(), -994925292, IdentySdk.PngjBadCrcException.PngjBadSignature(), 994925295, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature());
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x00e8  */
@@ -14616,7 +14616,7 @@ public class IdentySdk {
                             while (i2 < length) {
                                 Pair pair = pairArr[i2];
                                 Hand hand2 = (Hand) pair.first;
-                                hashMap2.put((Finger) pair.second, (Attempt) values(new Object[]{this, fingerDetectionMode.getHand(), (Finger) pair.second, Long.valueOf(j), hashMap}, PngjBadCrcException.PngjBadSignature(), 1772618473, PngjBadCrcException.PngjBadSignature(), -1772618471, PngjBadCrcException.PngjBadSignature(), PngjBadCrcException.PngjBadSignature()));
+                                hashMap2.put((Finger) pair.second, (Attempt) values(new Object[]{this, fingerDetectionMode.getHand(), (Finger) pair.second, Long.valueOf(j), hashMap}, IdentySdk.PngjBadCrcException.PngjBadSignature(), 1772618473, IdentySdk.PngjBadCrcException.PngjBadSignature(), -1772618471, IdentySdk.PngjBadCrcException.PngjBadSignature(), IdentySdk.PngjBadCrcException.PngjBadSignature()));
                                 i2++;
                                 hand = hand2;
                             }
