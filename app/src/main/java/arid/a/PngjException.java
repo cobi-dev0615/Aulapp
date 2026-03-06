@@ -593,7 +593,7 @@ public abstract class PngjException {
             bArr3 = bArr;
         }
         bArr3[0] = (byte) valueof.Action;
-        int i4 = arid.a.PngjException.PngjBadCrcException.PngjBadSignature[valueof.ordinal()];
+        int i4 = arid.a.PngjBadCrcException.PngjException.PngjBadCrcException[valueof.ordinal()];
         if (i4 != 1) {
             if (i4 == 2) {
                 int i5 = 1;

@@ -24,10 +24,10 @@ import kotlin.io.encoding.Base64;
 
 /* loaded from: classes.dex */
 public abstract class PngjInputException {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$f = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
+    private static byte[] $$c = null;
+    private static int $$f = 0;
     private static int $10;
     private static int $11;
     private static long Action;
@@ -53,8 +53,8 @@ public abstract class PngjInputException {
         AFTER_IDAT,
         NA;
 
-        private static final byte[] $$a = null;
-        private static final int $$b = 0;
+        private static byte[] $$a = null;
+        private static int $$b = 0;
 
         static {
             init$0();
@@ -105,8 +105,8 @@ public abstract class PngjInputException {
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                        int a = a.a();
-                        int c = a.c((~(a | 480937827)) | (~((~a) | (-17951453))) | (~(17951452 | a)), 831, ((~((-480904484) | a)) * (-1662)) + ((((~((-480937828) | r5)) | (~(498855935 | a))) * (-831)) - 1306489736), -66117936);
+                        int a2 = defpackage.a.a();
+                        int c = defpackage.a.c((~(a2 | 480937827)) | (~((~a2) | (-17951453))) | (~(17951452 | a2)), 831, ((~((-480904484) | a2)) * (-1662)) + ((((~((-480937828) | 0)) | (~(498855935 | a2))) * (-831)) - 1306489736), -66117936);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -149,8 +149,8 @@ public abstract class PngjInputException {
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                        int a = a.a();
-                        int c = a.c((~((~a) | 339618318)) | 159270961, 56, (((~(a | 159270961)) | 339618318) * 56) + 271233655, -224608341);
+                        int a2 = defpackage.a.a();
+                        int c = defpackage.a.c((~((~a2) | 339618318)) | 159270961, 56, (((~(a2 | 159270961)) | 339618318) * 56) + 271233655, -224608341);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -165,7 +165,7 @@ public abstract class PngjInputException {
                 a(b, b2, b2, objArr3);
                 Class<?> cls = Class.forName((String) objArr3[0]);
                 Object[] objArr4 = new Object[1];
-                a(r1[4], r1[77], r1[32], objArr4);
+                a($$a[4], $$a[77], $$a[32], objArr4);
                 objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -224608341);
                 j = ((long[]) objArr[0])[0];
                 ((long[]) objArr[0])[0] = j + 4883;
@@ -227,7 +227,7 @@ public abstract class PngjInputException {
             i4 = i6;
             i3 = 0;
             bArr2[i3] = (byte) i4;
-            i7 = i3 + 1;
+            int i7 = i3 + 1;
             if (i3 == i5) {
             }
         }
@@ -248,9 +248,9 @@ public abstract class PngjInputException {
     public PngjInputException(String str, Action action) {
         this.PngjBadSignature = str;
         this.values = action;
-        this.PngjException = valueOf.valueOf(str);
-        this.PngjInputException = valueOf.PngjException(str);
-        this.PngjOutputException = valueOf.values(str);
+        this.PngjException = arid.chunks.valueOf.valueOf(str);
+        this.PngjInputException = arid.chunks.valueOf.PngjException(str);
+        this.PngjOutputException = arid.chunks.valueOf.values(str);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:25:0x0152  */
@@ -273,7 +273,7 @@ public abstract class PngjInputException {
             $11 = (i6 + 79) % 128;
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = str != null ? str.toCharArray() : null;
         }
         char[] cArr2 = cArr;
         com.d.e.Action action = new com.d.e.Action();
@@ -320,11 +320,7 @@ public abstract class PngjInputException {
                 if (cause != null) {
                 }
             }
-            cause = th.getCause();
-            if (cause != null) {
-                throw th;
-            }
-            throw cause;
+            throw new RuntimeException();
         }
         if (i2 > 0) {
             $11 = ($10 + 123) % 128;
@@ -458,11 +454,7 @@ public abstract class PngjInputException {
                 }
                 ((Method) PngjBadSignature6).invoke(null, objArr7);
             }
-            cause = th.getCause();
-            if (cause != null) {
-                throw th;
-            }
-            throw cause;
+            throw new RuntimeException();
         }
         char[] cArr = new char[i];
         onerrorresponse.PngjBadSignature = 0;
@@ -527,7 +519,7 @@ public abstract class PngjInputException {
             int i7 = i2;
             i5 = i3;
             i3 = bArr[i3];
-            s4 = s3 + 1;
+            s4 = (short)(s3 + 1);
             bArr3 = bArr;
             i4 = i7;
             int i62 = i5 + 1;

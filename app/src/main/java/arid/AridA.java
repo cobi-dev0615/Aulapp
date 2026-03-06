@@ -391,9 +391,8 @@ public final class AridA {
     }
 
     static {
-        Logger.getLogger(a.class.getName());
+        Logger.getLogger(AridA.class.getName());
         valueOf = StandardCharsets.ISO_8859_1;
-        new PngjBadCrcException();
     }
 
     public static int PngjBadCrcException(int i, int i2, int i3, int i4) {

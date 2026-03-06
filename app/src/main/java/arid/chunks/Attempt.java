@@ -28,7 +28,7 @@ public final class Attempt {
 
         @Override // arid.chunks.PngjBadCrcException
         public final boolean PngjBadCrcException(PngjInputException pngjInputException) {
-            return valueOf.values(this.PngjException, pngjInputException);
+            return arid.chunks.valueOf.values(this.PngjException, pngjInputException);
         }
     }
 

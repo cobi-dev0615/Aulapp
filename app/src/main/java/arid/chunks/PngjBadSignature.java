@@ -25,7 +25,7 @@ public class PngjBadSignature {
         this.PngjInputException = new byte[4];
         this.PngjException = i;
         this.PngjBadSignature = str;
-        this.PngjBadCrcException = valueOf.PngjBadSignature(str);
+        this.PngjBadCrcException = arid.chunks.valueOf.PngjBadSignature(str);
         for (int i2 = 0; i2 < 4; i2++) {
             byte b = this.PngjBadCrcException[i2];
             if (b < 65 || b > 122 || (b > 90 && b < 97)) {
@@ -53,7 +53,7 @@ public class PngjBadSignature {
 
     private void valueOf(OutputStream outputStream) {
         if (this.PngjBadCrcException.length == 4) {
-            a.PngjException(outputStream, this.PngjException);
+            AridA.PngjBadSignature(this.PngjException, this.PngjInputException, 0);
             AridA.PngjBadCrcException(outputStream, this.PngjBadCrcException);
         } else {
             StringBuilder sb = new StringBuilder("bad chunkid [");
@@ -106,13 +106,13 @@ public class PngjBadSignature {
 
     public String toString() {
         StringBuilder sb = new StringBuilder("chunkid=");
-        sb.append(valueOf.values(this.PngjBadCrcException));
+        sb.append(arid.chunks.valueOf.values(this.PngjBadCrcException));
         sb.append(" len=");
         sb.append(this.PngjException);
         return sb.toString();
     }
 
     public PngjBadSignature(int i, byte[] bArr, boolean z) {
-        this(i, valueOf.values(bArr), z);
+        this(i, arid.chunks.valueOf.values(bArr), z);
     }
 }
