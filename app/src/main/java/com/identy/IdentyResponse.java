@@ -496,15 +496,13 @@ public class IdentyResponse {
                                                         }
                                                         valuesVar2 = valuesVar;
                                                     } catch (Exception e3) {
-                                                        e = e3;
                                                         valuesVar2 = valuesVar;
                                                     }
                                                 } catch (Exception e4) {
-                                                    e = e4;
                                                     valuesVar2 = valuesVar;
                                                     i = i2;
                                                     if (LibSettings.isSaveCaptured()) {
-                                                        e.getMessage();
+                                                        e4.getMessage();
                                                     }
                                                     z4 = z3;
                                                     i2 = i;
@@ -514,7 +512,6 @@ public class IdentyResponse {
                                             z4 = z3;
                                         }
                                     } catch (Exception e5) {
-                                        e = e5;
                                         valuesVar2 = valuesVar;
                                         z3 = z4;
                                     }

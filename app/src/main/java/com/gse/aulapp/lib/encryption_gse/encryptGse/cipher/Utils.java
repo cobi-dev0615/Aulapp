@@ -7,7 +7,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 /* loaded from: classes.dex */
 public abstract class Utils {
-    public static ECPublicKey readPublicKey(byte[] bArr) {
+    public static ECPublicKey readPublicKey(byte[] bArr) throws java.security.NoSuchAlgorithmException, java.security.spec.InvalidKeySpecException {
         return (ECPublicKey) KeyFactory.getInstance("EC", new BouncyCastleProvider()).generatePublic(new X509EncodedKeySpec(bArr));
     }
 }
