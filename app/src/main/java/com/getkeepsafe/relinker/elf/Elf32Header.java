@@ -1,5 +1,6 @@
 package com.getkeepsafe.relinker.elf;
 
+import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
@@ -7,7 +8,7 @@ import java.nio.ByteOrder;
 public class Elf32Header extends Elf$Header {
     private final ElfParser parser;
 
-    public Elf32Header(boolean z, ElfParser elfParser) {
+    public Elf32Header(boolean z, ElfParser elfParser) throws IOException {
         this.bigEndian = z;
         this.parser = elfParser;
         ByteBuffer allocate = ByteBuffer.allocate(4);
@@ -23,17 +24,17 @@ public class Elf32Header extends Elf$Header {
     }
 
     @Override // com.getkeepsafe.relinker.elf.Elf$Header
-    public Elf$DynamicStructure getDynamicStructure(long j, int i) {
+    public Elf$DynamicStructure getDynamicStructure(long j, int i) throws IOException {
         return new Dynamic32Structure(this.parser, this, j, i);
     }
 
     @Override // com.getkeepsafe.relinker.elf.Elf$Header
-    public Elf$ProgramHeader getProgramHeader(long j) {
+    public Elf$ProgramHeader getProgramHeader(long j) throws IOException {
         return new Program32Header(this.parser, this, j);
     }
 
     @Override // com.getkeepsafe.relinker.elf.Elf$Header
-    public Elf$SectionHeader getSectionHeader(int i) {
+    public Elf$SectionHeader getSectionHeader(int i) throws IOException {
         return new Section32Header(this.parser, this, i);
     }
 }

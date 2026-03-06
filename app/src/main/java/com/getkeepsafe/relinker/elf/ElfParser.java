@@ -4,6 +4,7 @@ import java.io.Closeable;
 import java.io.EOFException;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.FileChannel;
@@ -18,7 +19,7 @@ public class ElfParser implements Closeable, AutoCloseable {
     private final int MAGIC = 1179403647;
     private final FileChannel channel;
 
-    public ElfParser(File file) {
+    public ElfParser(File file) throws IOException {
         if (file == null || !file.exists()) {
             throw new IllegalArgumentException("File is null or does not exist");
         }
@@ -39,11 +40,11 @@ public class ElfParser implements Closeable, AutoCloseable {
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
+    public void close() throws IOException {
         this.channel.close();
     }
 
-    public Elf$Header parseHeader() {
+    public Elf$Header parseHeader() throws IOException {
         this.channel.position(0L);
         ByteBuffer allocate = ByteBuffer.allocate(8);
         allocate.order(ByteOrder.LITTLE_ENDIAN);
@@ -61,7 +62,7 @@ public class ElfParser implements Closeable, AutoCloseable {
         throw new IllegalStateException("Invalid class type!");
     }
 
-    public List<String> parseNeededDependencies() {
+    public List<String> parseNeededDependencies() throws IOException {
         long j;
         this.channel.position(0L);
         ArrayList arrayList = new ArrayList();
@@ -121,7 +122,7 @@ public class ElfParser implements Closeable, AutoCloseable {
         return arrayList;
     }
 
-    public void read(ByteBuffer byteBuffer, long j, int i) {
+    public void read(ByteBuffer byteBuffer, long j, int i) throws IOException {
         byteBuffer.position(0);
         byteBuffer.limit(i);
         long j2 = 0;
@@ -135,22 +136,22 @@ public class ElfParser implements Closeable, AutoCloseable {
         byteBuffer.position(0);
     }
 
-    public short readByte(ByteBuffer byteBuffer, long j) {
+    public short readByte(ByteBuffer byteBuffer, long j) throws IOException {
         read(byteBuffer, j, 1);
         return (short) (byteBuffer.get() & UByte.MAX_VALUE);
     }
 
-    public int readHalf(ByteBuffer byteBuffer, long j) {
+    public int readHalf(ByteBuffer byteBuffer, long j) throws IOException {
         read(byteBuffer, j, 2);
         return byteBuffer.getShort() & UShort.MAX_VALUE;
     }
 
-    public long readLong(ByteBuffer byteBuffer, long j) {
+    public long readLong(ByteBuffer byteBuffer, long j) throws IOException {
         read(byteBuffer, j, 8);
         return byteBuffer.getLong();
     }
 
-    public String readString(ByteBuffer byteBuffer, long j) {
+    public String readString(ByteBuffer byteBuffer, long j) throws IOException {
         StringBuilder sb = new StringBuilder();
         while (true) {
             long j2 = 1 + j;
@@ -163,7 +164,7 @@ public class ElfParser implements Closeable, AutoCloseable {
         }
     }
 
-    public long readWord(ByteBuffer byteBuffer, long j) {
+    public long readWord(ByteBuffer byteBuffer, long j) throws IOException {
         read(byteBuffer, j, 4);
         return byteBuffer.getInt() & 4294967295L;
     }

@@ -1,11 +1,12 @@
 package com.getkeepsafe.relinker.elf;
 
+import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
 /* loaded from: classes.dex */
 public class Program64Header extends Elf$ProgramHeader {
-    public Program64Header(ElfParser elfParser, Elf$Header elf$Header, long j) {
+    public Program64Header(ElfParser elfParser, Elf$Header elf$Header, long j) throws IOException {
         ByteBuffer allocate = ByteBuffer.allocate(8);
         allocate.order(elf$Header.bigEndian ? ByteOrder.BIG_ENDIAN : ByteOrder.LITTLE_ENDIAN);
         long j2 = (j * elf$Header.phentsize) + elf$Header.phoff;
