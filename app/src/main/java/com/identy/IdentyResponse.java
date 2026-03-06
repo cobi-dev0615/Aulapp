@@ -323,7 +323,8 @@ public class IdentyResponse {
         int[] iArr2 = new int[arrayList.size()];
         int i = 0;
         int i2 = 0;
-        for (Map.Entry entry : treeMap.entrySet()) {
+        for (Object obj : treeMap.entrySet()) {
+            Map.Entry entry = (Map.Entry) obj;
             iArr[i2] = ((Integer) entry.getKey()).intValue();
             jArr[i2] = ((Long) entry.getValue()).longValue();
             i2++;
@@ -347,7 +348,7 @@ public class IdentyResponse {
         } catch (Exception e2) {
             e2.printStackTrace();
         }
-        SlapOutput generateST = Fpnative.generateST(e1.values, jArr, iArr2, iArr, (float) wSQCompression.getCompression());
+        SlapOutput generateST = Fpnative.generateST(0L, jArr, iArr2, iArr, (float) wSQCompression.getCompression());
         try {
             generateST.setSlab(slap, this.valueOf);
         } catch (Exception e3) {
@@ -915,13 +916,15 @@ public class IdentyResponse {
                     Fpnative.valueOf = objArr;
                     JSONObject jSONObject2 = new JSONObject();
                     jSONObject = new JSONObject();
-                    for (Map.Entry entry2 : this.e1.entrySet()) {
+                    for (Object obj2 : this.e1.entrySet()) {
+                        Map.Entry entry2 = (Map.Entry) obj2;
                         StringBuilder sb = new StringBuilder();
                         sb.append(((Hand) ((Pair) entry2.getKey()).first).toString());
                         sb.append(((Finger) ((Pair) entry2.getKey()).second).toString());
                         jSONObject.put(sb.toString(), ((FingerOutput) entry2.getValue()).toJson(context));
                     }
-                    for (Map.Entry entry3 : this.Action.entrySet()) {
+                    for (Object obj3 : this.Action.entrySet()) {
+                        Map.Entry entry3 = (Map.Entry) obj3;
                         jSONObject.put(((Hand) entry3.getKey()).toString(), ((HandOutput) entry3.getValue()).toJson(context));
                     }
                     for (Map.Entry<Slap, SlapOutput> entry4 : getSLAPOutput().entrySet()) {
@@ -929,7 +932,8 @@ public class IdentyResponse {
                     }
                     if (this.PngjExceptionInternal.isEmpty()) {
                         JSONArray jSONArray = new JSONArray();
-                        for (Map.Entry entry5 : this.PngjExceptionInternal.entrySet()) {
+                        for (Object obj5 : this.PngjExceptionInternal.entrySet()) {
+                            Map.Entry entry5 = (Map.Entry) obj5;
                             JSONObject jSONObject3 = new JSONObject();
                             jSONObject3.put("picture", entry5.getValue());
                             JSONArray jSONArray2 = new JSONArray();

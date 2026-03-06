@@ -21,7 +21,7 @@ public class AsymCrypto {
     private final SecureRandom random = new SecureRandom();
     private ECPublicKey senderKey;
 
-    public byte[] doEncrypt(byte[] bArr) {
+    public byte[] doEncrypt(byte[] bArr) throws Exception {
         IESParameterSpec iESParameterSpec = new IESParameterSpec(null, null, 128, 128, null);
         IESCipherGCM iESCipherGCM = new IESCipherGCM(new IESEngineGCM(new ECDHBasicAgreement(), new KDF2BytesGenerator(new SHA256Digest()), new AESGCMBlockCipher()), 16);
         iESCipherGCM.engineInit(1, this.senderKey, iESParameterSpec, this.random);
