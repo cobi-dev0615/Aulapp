@@ -75,7 +75,11 @@ public final class values extends PngjException {
                 if (this.PngjOutputException.containsKey(pngjInputException.PngjBadSignature) && !pngjInputException.PngjBadSignature()) {
                     throw new arid.PngjOutputException("duplicated chunk does not allow multiple: ".concat(String.valueOf(pngjInputException)));
                 }
-                pngjInputException.valueOf(outputStream);
+                try {
+                    pngjInputException.valueOf(outputStream);
+                } catch (Throwable t) {
+                    throw new RuntimeException(t);
+                }
                 this.valueOf.add(pngjInputException);
                 HashMap hashMap = this.PngjOutputException;
                 String str = pngjInputException.PngjBadSignature;

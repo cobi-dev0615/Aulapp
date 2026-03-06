@@ -2228,12 +2228,11 @@ public final class SessionDao_Impl implements SessionDao {
                                         columnIndexOrThrow = i28;
                                     }
                                 } catch (Throwable th2) {
-                                    th = th2;
                                     anonymousClass12 = this;
                                     cursor = query;
                                     cursor.close();
                                     acquire.release();
-                                    throw th;
+                                    throw th2;
                                 }
                             }
                             i4 = i44;
@@ -2386,8 +2385,10 @@ public final class SessionDao_Impl implements SessionDao {
                             i45 = i2;
                             columnIndexOrThrow = i28;
                         } catch (Throwable th3) {
-                            th = th3;
                             cursor = query;
+                            cursor.close();
+                            acquire.release();
+                            throw th3;
                         }
                     }
                     ArrayList arrayList5 = arrayList3;
@@ -2395,7 +2396,7 @@ public final class SessionDao_Impl implements SessionDao {
                     acquire.release();
                     return arrayList5;
                 } catch (Throwable th4) {
-                    th = th4;
+                    throw th4;
                 }
             }
         }, continuation);
@@ -12521,8 +12522,9 @@ public final class SessionDao_Impl implements SessionDao {
                     query.close();
                     return arrayList5;
                 } catch (Throwable th2) {
-                    th = th2;
                     cursor = query;
+                    cursor.close();
+                    throw th2;
                 }
             }
         }, continuation);
@@ -12667,6 +12669,8 @@ public final class SessionDao_Impl implements SessionDao {
                 int i41;
                 String string19;
                 int i42;
+                String string25 = null;
+                String string26 = null;
                 Cursor query = DBUtil.query(SessionDao_Impl.this.__db, simpleSQLiteQuery, true, null);
                 try {
                     int columnIndex = CursorUtil.getColumnIndex(query, "id");
@@ -12821,13 +12825,13 @@ public final class SessionDao_Impl implements SessionDao {
                                                                                                                 i31 = i54;
                                                                                                                 str4 = string24;
                                                                                                                 if (i31 != -1 && !query.isNull(i31)) {
-                                                                                                                    String string25 = query.getString(i31);
+                                                                                                                    string25 = query.getString(i31);
                                                                                                                     int i55 = columnIndex23;
                                                                                                                     i7 = i31;
                                                                                                                     i32 = i55;
                                                                                                                     str5 = string25;
                                                                                                                     if (i32 != -1 && !query.isNull(i32)) {
-                                                                                                                        String string26 = query.getString(i32);
+                                                                                                                        string26 = query.getString(i32);
                                                                                                                         int i56 = columnIndex24;
                                                                                                                         i6 = i32;
                                                                                                                         i33 = i56;
@@ -20784,8 +20788,9 @@ public final class SessionDao_Impl implements SessionDao {
                     query.close();
                     return arrayList6;
                 } catch (Throwable th2) {
-                    th = th2;
                     cursor = query;
+                    cursor.close();
+                    throw th2;
                 }
             }
         }, continuation);
@@ -21140,10 +21145,10 @@ public final class SessionDao_Impl implements SessionDao {
                                                                                                                                         string22 = query.getString(i22);
                                                                                                                                         i23 = columnIndex32;
                                                                                                                                         sessionEntity = new SessionEntity(string, string2, string3, string4, valueOf, string5, string6, string7, string8, string9, string10, string11, string12, string13, string14, string15, valueOf2, valueOf3, valueOf4, valueOf5, string16, string17, string18, string19, z, z2, z3, string20, bool, string21, string22, i23 == -1 ? 0 : query.getInt(i23), i4 != -1 ? query.getInt(i4) : 0);
-                                                                                                                                        String string25 = !query.isNull(columnIndex) ? null : query.getString(columnIndex);
-                                                                                                                                        ArrayList arrayList = string25 == null ? (ArrayList) arrayMap2.get(string25) : new ArrayList();
-                                                                                                                                        String string26 = !query.isNull(columnIndex) ? null : query.getString(columnIndex);
-                                                                                                                                        ArrayList arrayList2 = string26 == null ? (ArrayList) arrayMap.get(string26) : new ArrayList();
+                                                                                                                                        string25 = !query.isNull(columnIndex) ? null : query.getString(columnIndex);
+                                                                                                                                        arrayList = string25 == null ? (ArrayList) arrayMap2.get(string25) : new ArrayList();
+                                                                                                                                        string26 = !query.isNull(columnIndex) ? null : query.getString(columnIndex);
+                                                                                                                                        arrayList2 = string26 == null ? (ArrayList) arrayMap.get(string26) : new ArrayList();
                                                                                                                                         sessionFullSync = new SessionFullSync();
                                                                                                                                         sessionFullSync.setSession(sessionEntity);
                                                                                                                                         sessionFullSync.setListQuestion(arrayList);
