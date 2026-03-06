@@ -28,7 +28,7 @@ public final class TokenAuthenticator implements Authenticator {
     private final int responseCount(Response response) {
         int i = 1;
         while (true) {
-            Response priorResponse = response.getPriorResponse();
+            Response priorResponse = response.priorResponse();
             if (priorResponse != null) {
                 response = priorResponse;
             } else {
@@ -48,14 +48,14 @@ public final class TokenAuthenticator implements Authenticator {
         PreferenceUtil.Companion companion = PreferenceUtil.INSTANCE;
         Context applicationContext = GeneralApp.INSTANCE.getInstance().getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-        return response.getRequest().newBuilder().header("Authorization", q.i("Bearer ", companion.getToken(applicationContext))).build();
+        return response.request().newBuilder().header("Authorization", q.i("Bearer ", companion.getToken(applicationContext))).build();
     }
 
     @Override // okhttp3.Authenticator
     public Request authenticate(Route route, Response response) {
         Request validateReTry;
         Intrinsics.checkNotNullParameter(response, "response");
-        if (response.getCode() != 401) {
+        if (response.code() != 401) {
             return null;
         }
         synchronized (this) {

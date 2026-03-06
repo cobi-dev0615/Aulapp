@@ -18,9 +18,8 @@ public abstract class ResultEncryptKeys {
         private final String publicKey;
         private final String value;
 
-        /* JADX WARN: Multi-variable type inference failed */
         public DataResult() {
-            this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+            this(null, null, 3, null);
         }
 
         public static /* synthetic */ DataResult copy$default(DataResult dataResult, String str, String str2, int i, Object obj) {

@@ -9,7 +9,7 @@ public final class PngBadCharsetException {
     public int values;
 
     public static int PngjBadCrcException(int i) {
-        PngjException pngjException0 = PngjException.PngjBadSignature;
+        com.d.e.PngjException pngjException0 = com.d.e.PngjException.PngjBadSignature;
         int i2 = (i >>> 24) & KotlinVersion.MAX_COMPONENT_VALUE;
         int i3 = (i >>> 16) & KotlinVersion.MAX_COMPONENT_VALUE;
         int i4 = (i >>> 8) & KotlinVersion.MAX_COMPONENT_VALUE;

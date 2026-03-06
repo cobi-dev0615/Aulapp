@@ -431,7 +431,7 @@ public final class HomeViewModel extends ViewModel {
     */
     private final ConfigurationSessionDto getSessionConfig(EnumTypeConfiguration type) {
         ConfigurationSessionDto configurationSessionDto;
-        Object obj;
+        Object obj = null;
         List<ConfigurationSessionDto> value = this._listConfigSession.getValue();
         if (value != null) {
             Iterator it = value.iterator();
@@ -488,7 +488,12 @@ public final class HomeViewModel extends ViewModel {
     public static final Unit getSessionRequest$lambda$16(Function1 callback, String dateTime) {
         Intrinsics.checkNotNullParameter(callback, "$callback");
         Intrinsics.checkNotNullParameter(dateTime, "dateTime");
-        Date parse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(dateTime);
+        Date parse = null;
+        try {
+            parse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(dateTime);
+        } catch (java.text.ParseException e) {
+            e.printStackTrace();
+        }
         if (parse == null) {
             parse = DateUtil.Companion.getNowDateDate$default(DateUtil.INSTANCE, false, 1, null);
         }
@@ -617,7 +622,7 @@ public final class HomeViewModel extends ViewModel {
         List list;
         Object obj2;
         List<String> listIdSessionDelete;
-        List<SessionInstructorObjectResponse> sessionInstructorObjectResponse2;
+        List<SessionInstructorObjectResponse> sessionInstructorObjectResponse2 = null;
         Iterator it;
         Ref.ObjectRef objectRef3;
         Ref.ObjectRef objectRef4;
@@ -637,7 +642,7 @@ public final class HomeViewModel extends ViewModel {
         List<String> list4;
         List list5;
         Ref.ObjectRef objectRef6;
-        String str;
+        String str = null;
         String str2;
         String str3;
         SessionResponse sessionResponse3;
@@ -1293,6 +1298,7 @@ public final class HomeViewModel extends ViewModel {
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         switch (homeViewModel$saveSessionFull$1.label) {
         }
+        return null;
     }
 
     private final void setupOnScrollListener(MaterialButton buttonTodayClass, RecyclerView recyclerView, ClassDateRecyclerAdapter classDateAdapter, TextView tvSubtitle, int todayItemPosition) {
@@ -1346,7 +1352,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     private final boolean timerServiceIsRunning(Context context, Class<? extends Service> serviceClass) {
-        List<ActivityManager.RunningServiceInfo> runningServices;
+        List<ActivityManager.RunningServiceInfo> runningServices = null;
         try {
             Object systemService = context.getSystemService("activity");
             Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.app.ActivityManager");
@@ -1392,7 +1398,12 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(navController, "$navController");
         Intrinsics.checkNotNullParameter(classRecyclerAdapter, "$classRecyclerAdapter");
         Intrinsics.checkNotNullParameter(datetime, "datetime");
-        Date parse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(datetime);
+        Date parse = null;
+        try {
+            parse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(datetime);
+        } catch (java.text.ParseException e) {
+            e.printStackTrace();
+        }
         if (date != null && parse != null && date2 != null) {
             BuildersKt.launch(ViewModelKt.getViewModelScope(this$0), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$validateAllowNavigate$1$1(session, configSession, date, date2, activity, parse, z, z2, this$0, navController, classRecyclerAdapter, null));
         }

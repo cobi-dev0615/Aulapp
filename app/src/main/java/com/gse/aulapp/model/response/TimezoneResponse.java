@@ -41,9 +41,8 @@ public final /* data */ class TimezoneResponse implements Parcelable {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
     public TimezoneResponse() {
-        this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        this(null, null, 3, null);
     }
 
     public static /* synthetic */ TimezoneResponse copy$default(TimezoneResponse timezoneResponse, String str, String str2, int i, Object obj) {

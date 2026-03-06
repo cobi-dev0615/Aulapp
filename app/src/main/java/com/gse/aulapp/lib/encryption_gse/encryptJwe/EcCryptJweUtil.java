@@ -100,39 +100,35 @@ public abstract class EcCryptJweUtil {
                 }
                 throw th;
             }
-        } catch (FileNotFoundException e) {
-            e = e;
+        } catch (FileNotFoundException e2) {
             eCPublicKey = null;
-        } catch (IOException e2) {
-            e = e2;
-            eCPublicKey = null;
-            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, e);
+            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, (Throwable) e2);
             return eCPublicKey;
-        } catch (NoSuchAlgorithmException e3) {
-            e = e3;
+        } catch (IOException e3) {
             eCPublicKey = null;
-            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, e);
+            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, e3);
+            return eCPublicKey;
+        } catch (NoSuchAlgorithmException e4) {
+            eCPublicKey = null;
+            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, e4);
             return eCPublicKey;
         } catch (InvalidKeySpecException unused) {
+            return eCPublicKey2;
         }
         try {
             pemReader.close();
             return eCPublicKey;
-        } catch (FileNotFoundException e4) {
-            e = e4;
-            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, (Throwable) e);
+        } catch (FileNotFoundException e5) {
+            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, (Throwable) e5);
             return eCPublicKey;
-        } catch (IOException e5) {
-            e = e5;
-            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, e);
+        } catch (IOException e6) {
+            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, e6);
             return eCPublicKey;
-        } catch (NoSuchAlgorithmException e6) {
-            e = e6;
-            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, e);
+        } catch (NoSuchAlgorithmException e7) {
+            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, e7);
             return eCPublicKey;
         } catch (InvalidKeySpecException unused2) {
-            eCPublicKey2 = eCPublicKey;
-            return eCPublicKey2;
+            return eCPublicKey;
         }
     }
 

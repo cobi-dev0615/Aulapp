@@ -13,8 +13,8 @@ public enum Hand implements Serializable {
     LEFT("left"),
     RIGHT("right");
 
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
     String a;
 
     static {
@@ -38,18 +38,18 @@ public enum Hand implements Serializable {
     private static void c(short s, byte b2, int i, Object[] objArr) {
         int i2;
         byte b3;
-        int r6 = 118 - (b2 * 19);
+        byte r6 = (byte) (118 - (b2 * 19));
         byte[] bArr = $$a;
         int i3 = 78 - i;
         byte[] bArr2 = new byte[s + 6];
-        int r5 = s + 5;
+        byte r5 = (byte) (s + 5);
         if (bArr == null) {
             byte b4 = r6;
             i2 = 0;
             byte b5 = r5;
             i3++;
-            b3 = (b5 + b4) - 8;
-            bArr2[i2] = b3 == true ? (byte) 1 : (byte) 0;
+            b3 = (byte) ((b5 + b4) - 8);
+            bArr2[i2] = b3 != 0 ? (byte) 1 : (byte) 0;
             if (i2 == r5) {
                 objArr[0] = new String(bArr2, 0);
                 return;
@@ -58,14 +58,14 @@ public enum Hand implements Serializable {
             b4 = bArr[i3];
             b5 = b3;
             i3++;
-            b3 = (b5 + b4) - 8;
-            bArr2[i2] = b3 == true ? (byte) 1 : (byte) 0;
+            b3 = (byte) ((b5 + b4) - 8);
+            bArr2[i2] = b3 != 0 ? (byte) 1 : (byte) 0;
             if (i2 == r5) {
             }
         } else {
             i2 = 0;
             b3 = r6;
-            bArr2[i2] = b3 == true ? (byte) 1 : (byte) 0;
+            bArr2[i2] = b3 != 0 ? (byte) 1 : (byte) 0;
             if (i2 == r5) {
             }
         }

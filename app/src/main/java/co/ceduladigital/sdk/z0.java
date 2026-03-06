@@ -69,7 +69,7 @@ public final /* synthetic */ class z0 extends FunctionReferenceImpl implements F
                 RecyclerView.LayoutManager layoutManager = fragmentClassInCourseBinding.rvQuestions.getLayoutManager();
                 Intrinsics.checkNotNull(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
                 LinearLayoutManager linearLayoutManager = (LinearLayoutManager) layoutManager;
-                QuestionStatusAdapter questionStatusAdapter = new QuestionStatusAdapter(new n0(classInCourseFragment, 0));
+                QuestionStatusAdapter questionStatusAdapter = new QuestionStatusAdapter((kotlin.jvm.functions.Function2) new n0(classInCourseFragment, 0));
                 FragmentClassInCourseBinding fragmentClassInCourseBinding2 = classInCourseFragment.a;
                 Intrinsics.checkNotNull(fragmentClassInCourseBinding2);
                 fragmentClassInCourseBinding2.rvQuestions.setAdapter(questionStatusAdapter);

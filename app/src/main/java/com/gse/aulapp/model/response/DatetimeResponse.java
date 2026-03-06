@@ -211,7 +211,9 @@ public final /* data */ class DatetimeResponse extends GeneralResponseDecrypt {
             String str4 = this.code;
             StringBuilder q = a.q(bool, "Result(success=", ", time=", str, ", date=");
             x5.z(q, str2, ", message=", str3, ", code=");
-            return q.j(str4, ")", q);
+            q.append(str4);
+            q.append(")");
+            return q.toString();
         }
 
         @Override // android.os.Parcelable
@@ -244,19 +246,11 @@ public final /* data */ class DatetimeResponse extends GeneralResponseDecrypt {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public /* synthetic */ DatetimeResponse(Integer num, String str, String str2, Result result, String str3, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(num, str, str2, r6, r7);
-        String str4;
-        Result result2;
-        num = (i & 1) != 0 ? null : num;
-        str = (i & 2) != 0 ? null : str;
-        str2 = (i & 4) != 0 ? null : str2;
-        if ((i & 8) != 0) {
-            str4 = str3;
-            result2 = null;
-        } else {
-            str4 = str3;
-            result2 = result;
-        }
+        this((i & 1) != 0 ? null : num,
+             (i & 2) != 0 ? null : str,
+             (i & 4) != 0 ? null : str2,
+             (i & 8) != 0 ? null : result,
+             (i & 16) != 0 ? null : str3);
     }
 
     public static /* synthetic */ DatetimeResponse copy$default(DatetimeResponse datetimeResponse, Integer num, String str, String str2, Result result, String str3, int i, Object obj) {

@@ -114,13 +114,13 @@ public final class ServiceInterceptorK implements Interceptor {
         String str;
         String decryptValue;
         try {
-            ResponseBody body = response.getBody();
+            ResponseBody body = response.body();
             if (body != null) {
                 str = body.string();
                 if (str == null) {
                 }
                 Gson gson = new Gson();
-                Object fromJson = gson.fromJson(str, (Class<Object>) GeneralEncryptResponse.class);
+                Object fromJson = gson.fromJson(str, GeneralEncryptResponse.class);
                 Intrinsics.checkNotNullExpressionValue(fromJson, "fromJson(...)");
                 GeneralEncryptResponse generalEncryptResponse = (GeneralEncryptResponse) fromJson;
                 decryptValue = decryptValue(generalEncryptResponse.getResult());
@@ -136,7 +136,7 @@ public final class ServiceInterceptorK implements Interceptor {
             }
             str = BuildConfig.FLAVOR;
             Gson gson2 = new Gson();
-            Object fromJson2 = gson2.fromJson(str, (Class<Object>) GeneralEncryptResponse.class);
+            Object fromJson2 = gson2.fromJson(str, GeneralEncryptResponse.class);
             Intrinsics.checkNotNullExpressionValue(fromJson2, "fromJson(...)");
             GeneralEncryptResponse generalEncryptResponse2 = (GeneralEncryptResponse) fromJson2;
             decryptValue = decryptValue(generalEncryptResponse2.getResult());
@@ -149,16 +149,16 @@ public final class ServiceInterceptorK implements Interceptor {
     }
 
     private final Request requestUpdatedEncrypt(Request request) {
-        return request.newBuilder().method(request.getMethod(), updateBody(request)).build();
+        return request.newBuilder().method(request.method(), updateBody(request)).build();
     }
 
     private final RequestBody updateBody(Request request) {
         String encryptValue;
-        RequestBody body = request.getBody();
+        RequestBody body = request.body();
         try {
             String bodyToString = InterceptorUtil.INSTANCE.bodyToString(request);
             if (bodyToString != null && bodyToString.length() != 0 && (encryptValue = encryptValue(bodyToString)) != null && encryptValue.length() != 0) {
-                return RequestBody.INSTANCE.create(encryptValue, body != null ? body.getContentType() : null);
+                return RequestBody.create(encryptValue, body != null ? body.contentType() : null);
             }
             return body;
         } catch (Exception e) {
@@ -169,7 +169,7 @@ public final class ServiceInterceptorK implements Interceptor {
 
     private final Request validateHeaders(Request request) {
         try {
-            Headers.Builder newBuilder = request.getHeaders().newBuilder();
+            Headers.Builder newBuilder = request.headers().newBuilder();
             Headers headers = this.mandatoryHeaders;
             if (headers != null && headers.size() > 0) {
                 for (Pair<? extends String, ? extends String> pair : this.mandatoryHeaders) {

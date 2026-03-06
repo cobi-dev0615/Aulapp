@@ -142,7 +142,10 @@ public final class ParameterListResponse extends GeneralResponseDecrypt {
         }
 
         public String toString() {
-            return q.j(this.scheduleExamsURL, ")", x5.p("Data(validationsPercentage=", this.validationsPercentage, ", entryValidation=", this.entryValidation, ", scheduleExamsURL="));
+            StringBuilder sb = x5.p("Data(validationsPercentage=", this.validationsPercentage, ", entryValidation=", this.entryValidation, ", scheduleExamsURL=");
+            sb.append(this.scheduleExamsURL);
+            sb.append(")");
+            return sb.toString();
         }
 
         @Override // android.os.Parcelable
@@ -376,19 +379,11 @@ public final class ParameterListResponse extends GeneralResponseDecrypt {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public /* synthetic */ ParameterListResponse(Integer num, String str, String str2, Result result, String str3, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(num, str, str2, r6, r7);
-        String str4;
-        Result result2;
-        num = (i & 1) != 0 ? null : num;
-        str = (i & 2) != 0 ? null : str;
-        str2 = (i & 4) != 0 ? null : str2;
-        if ((i & 8) != 0) {
-            str4 = str3;
-            result2 = null;
-        } else {
-            str4 = str3;
-            result2 = result;
-        }
+        this((i & 1) != 0 ? null : num,
+             (i & 2) != 0 ? null : str,
+             (i & 4) != 0 ? null : str2,
+             (i & 8) != 0 ? null : result,
+             (i & 16) != 0 ? null : str3);
     }
 
     @Override // android.os.Parcelable

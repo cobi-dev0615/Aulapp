@@ -2,6 +2,7 @@ package com.gse.aulapp.io;
 
 import androidx.room.DatabaseConfiguration;
 import androidx.room.InvalidationTracker;
+import androidx.room.AutoMigrationSpec;
 import androidx.room.RoomDatabase;
 import androidx.room.RoomOpenHelper;
 import androidx.room.migration.Migration;
@@ -270,7 +271,7 @@ public final class ReceptionsDatabase_Impl extends ReceptionsDatabase {
                 supportSQLiteDatabase.execSQL("DROP TABLE IF EXISTS `test`");
                 supportSQLiteDatabase.execSQL("DROP TABLE IF EXISTS `question`");
                 supportSQLiteDatabase.execSQL("DROP TABLE IF EXISTS `configurationSession`");
-                List list = ((RoomDatabase) ReceptionsDatabase_Impl.this).mCallbacks;
+                List list = ReceptionsDatabase_Impl.this.mCallbacks;
                 if (list != null) {
                     Iterator it = list.iterator();
                     while (it.hasNext()) {
@@ -281,7 +282,7 @@ public final class ReceptionsDatabase_Impl extends ReceptionsDatabase {
 
             @Override // androidx.room.RoomOpenHelper.Delegate
             public void onCreate(SupportSQLiteDatabase supportSQLiteDatabase) {
-                List list = ((RoomDatabase) ReceptionsDatabase_Impl.this).mCallbacks;
+                List list = ReceptionsDatabase_Impl.this.mCallbacks;
                 if (list != null) {
                     Iterator it = list.iterator();
                     while (it.hasNext()) {
@@ -292,9 +293,9 @@ public final class ReceptionsDatabase_Impl extends ReceptionsDatabase {
 
             @Override // androidx.room.RoomOpenHelper.Delegate
             public void onOpen(SupportSQLiteDatabase supportSQLiteDatabase) {
-                ((RoomDatabase) ReceptionsDatabase_Impl.this).mDatabase = supportSQLiteDatabase;
+                ReceptionsDatabase_Impl.this.mDatabase = supportSQLiteDatabase;
                 ReceptionsDatabase_Impl.this.internalInitInvalidationTracker(supportSQLiteDatabase);
-                List list = ((RoomDatabase) ReceptionsDatabase_Impl.this).mCallbacks;
+                List list = ReceptionsDatabase_Impl.this.mCallbacks;
                 if (list != null) {
                     Iterator it = list.iterator();
                     while (it.hasNext()) {
@@ -537,12 +538,12 @@ public final class ReceptionsDatabase_Impl extends ReceptionsDatabase {
     }
 
     @Override // androidx.room.RoomDatabase
-    public List<Migration> getAutoMigrations(Map<Class<Object>, Object> map) {
+    public List<Migration> getAutoMigrations(Map<Class<? extends AutoMigrationSpec>, AutoMigrationSpec> map) {
         return new ArrayList();
     }
 
     @Override // androidx.room.RoomDatabase
-    public Set<Class<Object>> getRequiredAutoMigrationSpecs() {
+    public Set<Class<? extends AutoMigrationSpec>> getRequiredAutoMigrationSpecs() {
         return new HashSet();
     }
 

@@ -39,7 +39,7 @@ public final class FingerIdentyDatasourceImpl implements FingerPrintDataSource {
         final SafeContinuation safeContinuation = new SafeContinuation(IntrinsicsKt.intercepted(continuation));
         FingerPrintBiometricUtil.INSTANCE.identyFingerPrint(fragmentActivity, str, enumHandsAulapp, new IdentyResponseListener() { // from class: com.gse.aulapp.feature.fingerPrint.domain.datasource.FingerIdentyDatasourceImpl$callIdentyFinger$2$1
             @Override // com.identy.IdentyResponseListener
-            public void onAttempt(Hand p0, int p1, Map<Finger, ? extends Attempt> p2) {
+            public void onAttempt(Hand p0, int p1, Map<Finger, Attempt> p2) {
             }
 
             @Override // com.identy.IdentyResponseListener
@@ -47,13 +47,13 @@ public final class FingerIdentyDatasourceImpl implements FingerPrintDataSource {
                 LogSendUtil.INSTANCE.setLog(fragmentActivity, q.i("Finger error: ", error != null ? error.getMessage() : null), null, false);
                 if (error == null) {
                     Continuation<Either<DataFailure, FingerPrintResponse>> continuation2 = safeContinuation;
-                    Result.Companion companion = Result.INSTANCE;
-                    continuation2.resumeWith(Result.m35constructorimpl(new Either.Left(new DataFailure(0, BuildConfig.FLAVOR, 1, null))));
+                    Result.Companion companion = Result.Companion;
+                    continuation2.resumeWith(new Either.Left(new DataFailure(0, BuildConfig.FLAVOR, 1, null)));
                 } else {
                     Continuation<Either<DataFailure, FingerPrintResponse>> continuation3 = safeContinuation;
                     String message = error.getMessage();
                     Intrinsics.checkNotNullExpressionValue(message, "getMessage(...)");
-                    continuation3.resumeWith(Result.m35constructorimpl(new Either.Left(new DataFailure(0, message, 1, null))));
+                    continuation3.resumeWith(new Either.Left(new DataFailure(0, message, 1, null)));
                 }
             }
 
@@ -66,13 +66,13 @@ public final class FingerIdentyDatasourceImpl implements FingerPrintDataSource {
                     JSONObject jSONObject = new JSONObject(String.valueOf((identyResponse == null || (json = identyResponse.toJson()) == null) ? null : json.get("verify_result")));
                     validateHandKey = FingerIdentyDatasourceImpl.this.validateHandKey(enumHandsAulapp);
                     if (Boolean.parseBoolean(jSONObject.get(validateHandKey).toString())) {
-                        safeContinuation.resumeWith(Result.m35constructorimpl(new Either.Right(new FingerPrintResponse(EnumStatusFingerPrintBiometric.ON_SUCCESS, str2, enumHandsAulapp))));
+                        safeContinuation.resumeWith(new Either.Right(new FingerPrintResponse(EnumStatusFingerPrintBiometric.ON_SUCCESS, str2, enumHandsAulapp)));
                         return;
                     }
                     LogSendUtil.INSTANCE.setLog(fragmentActivity, "Fail verify hands: " + enumHandsAulapp.name() + " response: " + jSONObject + "}", null, false);
                     Continuation<Either<DataFailure, FingerPrintResponse>> continuation2 = safeContinuation;
-                    Result.Companion companion = Result.INSTANCE;
-                    continuation2.resumeWith(Result.m35constructorimpl(new Either.Left(new DataFailure(0, "Error en la verificación", 1, null))));
+                    Result.Companion companion = Result.Companion;
+                    continuation2.resumeWith(new Either.Left(new DataFailure(0, "Error en la verificación", 1, null)));
                 } catch (Exception e) {
                     unused = FingerIdentyDatasourceImpl.this.tag;
                     e.getMessage();

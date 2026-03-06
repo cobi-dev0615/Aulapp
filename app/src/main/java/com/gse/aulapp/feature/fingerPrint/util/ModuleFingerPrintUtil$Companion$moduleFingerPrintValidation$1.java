@@ -48,18 +48,18 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         /* JADX WARN: Multi-variable type inference failed */
         public AnonymousClass1(FragmentActivity fragmentActivity, EnumHandsAulapp enumHandsAulapp, String str, String str2, Function1<? super DataFailure, Unit> function1, Function1<? super FingerPrintResponse, Unit> function12, Continuation<? super AnonymousClass1> continuation) {
-            super(2, continuation);
+            super(2, (kotlin.coroutines.Continuation) continuation);
             this.$fragmentActivity = fragmentActivity;
             this.$hand = enumHandsAulapp;
             this.$userId = str;
             this.$urlDocument = str2;
-            this.$onErrorCallback = function1;
-            this.$onSuccessCallback = function12;
+            this.$onErrorCallback = (Function1) function1;
+            this.$onSuccessCallback = (Function1) function12;
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return new AnonymousClass1(this.$fragmentActivity, this.$hand, this.$userId, this.$urlDocument, this.$onErrorCallback, this.$onSuccessCallback, continuation);
+            return (Continuation<Unit>) (Object) new AnonymousClass1(this.$fragmentActivity, this.$hand, this.$userId, this.$urlDocument, this.$onErrorCallback, this.$onSuccessCallback, continuation);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -90,34 +90,34 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
             }
             Either either = (Either) obj;
             if (either.isLeft()) {
-                anonymousClass1.$onErrorCallback.invoke(either.leftValue());
+                anonymousClass1.$onErrorCallback.invoke((DataFailure) either.leftValue());
             } else {
-                anonymousClass1.$onSuccessCallback.invoke(either.rightValue());
+                anonymousClass1.$onSuccessCallback.invoke((FingerPrintResponse) either.rightValue());
             }
             return Unit.INSTANCE;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+            return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
     public ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(FragmentActivity fragmentActivity, EnumHandsAulapp enumHandsAulapp, String str, String str2, Function1<? super DataFailure, Unit> function1, Function1<? super FingerPrintResponse, Unit> function12, Continuation<? super ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1> continuation) {
-        super(2, continuation);
+        super(2, (kotlin.coroutines.Continuation) continuation);
         this.$fragmentActivity = fragmentActivity;
         this.$hand = enumHandsAulapp;
         this.$userId = str;
         this.$urlDocument = str2;
-        this.$onErrorCallback = function1;
-        this.$onSuccessCallback = function12;
+        this.$onErrorCallback = (Function1) function1;
+        this.$onSuccessCallback = (Function1) function12;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        return new ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(this.$fragmentActivity, this.$hand, this.$userId, this.$urlDocument, this.$onErrorCallback, this.$onSuccessCallback, continuation);
+        return (Continuation<Unit>) (Object) new ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(this.$fragmentActivity, this.$hand, this.$userId, this.$urlDocument, this.$onErrorCallback, this.$onSuccessCallback, continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -143,6 +143,6 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

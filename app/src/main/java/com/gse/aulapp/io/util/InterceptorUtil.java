@@ -27,7 +27,7 @@ public abstract class InterceptorUtil {
             try {
                 Request build = request.newBuilder().build();
                 Buffer buffer = new Buffer();
-                RequestBody body = build.getBody();
+                RequestBody body = build.body();
                 Intrinsics.checkNotNull(body);
                 body.writeTo(buffer);
                 return buffer.readUtf8();

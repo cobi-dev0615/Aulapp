@@ -35,9 +35,8 @@ public final /* data */ class ParameterListRequest implements Parcelable {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
     public ParameterListRequest() {
-        this(null, 1, 0 == true ? 1 : 0);
+        this(null, 1, null);
     }
 
     public static /* synthetic */ ParameterListRequest copy$default(ParameterListRequest parameterListRequest, String str, int i, Object obj) {
