@@ -40,7 +40,7 @@ public class IESEngineGCM {
         this.cipher = bufferedBlockCipher;
     }
 
-    private byte[] decryptBlock(byte[] bArr, int i, int i2) {
+    private byte[] decryptBlock(byte[] bArr, int i, int i2) throws InvalidCipherTextException {
         int doFinal;
         byte[] bArr2;
         byte[] bArr3 = this.encodedPublicKey;
@@ -91,7 +91,7 @@ public class IESEngineGCM {
         return Arrays.copyOfRange(bArr2, 0, doFinal);
     }
 
-    private byte[] encryptBlock(byte[] bArr, int i, int i2) {
+    private byte[] encryptBlock(byte[] bArr, int i, int i2) throws InvalidCipherTextException {
         byte[] bArr2;
         if (this.cipher == null) {
             byte[] bArr3 = new byte[i2];
@@ -161,7 +161,7 @@ public class IESEngineGCM {
         extractParams(cipherParameters3);
     }
 
-    public byte[] processBlock(byte[] bArr, int i, int i2) {
+    public byte[] processBlock(byte[] bArr, int i, int i2) throws InvalidCipherTextException {
         if (this.forEncryption) {
             EphemeralKeyPairGenerator ephemeralKeyPairGenerator = this.keyPairGenerator;
             if (ephemeralKeyPairGenerator != null) {
