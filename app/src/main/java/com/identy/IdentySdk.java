@@ -8401,7 +8401,7 @@ public class IdentySdk {
                                                 throw new Exception("templates are empty");
                                             }
                                         }
-                                        VerifyResult matchMultiple2 = com.identy.Fpnative.matchMultiple(e1.PngjException(this.getData), template.ordinal(), hashMap3, template2.ordinal(), hashMap4, this.PngjOutputException.ordinal());
+                                        VerifyResult matchMultiple2 = com.identy.Fpnative.matchMultiple(com.identy.com.identy.e1.PngjException(this.getData), template.ordinal(), hashMap3, template2.ordinal(), hashMap4, this.PngjOutputException.ordinal());
                                         ArrayList arrayList = new ArrayList();
                                         HashMap hashMap5 = new HashMap();
                                         deduplication = (generateST + 15) % 128;
@@ -9013,7 +9013,7 @@ public class IdentySdk {
                     int i19 = -(((i18 & 1) + (i18 | 1)) ^ i16);
                     int i20 = ((i19 | 2) << 1) - (i19 ^ 2);
                     int i21 = ((i20 >> 25) - 255) / 128;
-                    return setASServerConfig(str, str2, 2);
+                    return setASServerConfig(str, str2, true);
                 }
             }
             byte[] bArr = $$d;
@@ -9044,7 +9044,7 @@ public class IdentySdk {
             int i192 = -(((i182 & 1) + (i182 | 1)) ^ i162);
             int i202 = ((i192 | 2) << 1) - (i192 ^ 2);
             int i212 = ((i202 >> 25) - 255) / 128;
-            return setASServerConfig(str, str2, 2296 / (((-(((i212 ^ 1) + ((i212 & 1) << 1)) + 1)) & i202) * 1148));
+            return setASServerConfig(str, str2, true);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -11194,7 +11194,7 @@ public class IdentySdk {
                         Template template3 = Template.PNG;
                         if (template2.equals(template3)) {
                             try {
-                                values(new Object[]{this, com.identy.Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template3.ordinal(), com.identy.e.valueOf.PngjException(value)), hand, finger, this.uxd565jk}, 0, -320332114, 0, 320332114, 0, 0);
+                                values(new Object[]{this, com.identy.Fpnative.generateID(com.identy.e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template3.ordinal(), com.identy.e.valueOf.PngjException(value)), hand, finger, this.uxd565jk}, 0, -320332114, 0, 320332114, 0, 0);
                                 deduplication = (generateST + 101) % 128;
                             } catch (Exception unused) {
                             }
@@ -11215,7 +11215,7 @@ public class IdentySdk {
                             } else {
                                 Template template4 = Template.ANSI_378_2004;
                                 if (template2.equals(template4)) {
-                                    values(new Object[]{this, com.identy.Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template4.ordinal(), com.identy.e.valueOf.PngjException(value)), hand, finger, this.uxd565jk}, 0, -320332114, 0, 320332114, 0, 0);
+                                    values(new Object[]{this, com.identy.Fpnative.generateID(com.identy.e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template4.ordinal(), com.identy.e.valueOf.PngjException(value)), hand, finger, this.uxd565jk}, 0, -320332114, 0, 320332114, 0, 0);
                                 } else {
                                     valueOf(value, finger, hand, this.uxd565jk, template2);
                                 }
@@ -11331,7 +11331,7 @@ public class IdentySdk {
                     Template template2 = Template.PNG;
                     if (template.equals(template2)) {
                         try {
-                            values(new Object[]{this, com.identy.Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template2.ordinal(), value), hand, finger, this.uxd565jk}, 0, -320332114, 0, 320332114, 0, 0);
+                            values(new Object[]{this, com.identy.Fpnative.generateID(com.identy.e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template2.ordinal(), value), hand, finger, this.uxd565jk}, 0, -320332114, 0, 320332114, 0, 0);
                         } catch (Exception unused) {
                         }
                     } else if (template.equals(Template.WSQ)) {
@@ -11350,9 +11350,9 @@ public class IdentySdk {
                     } else {
                         Template template3 = Template.ANSI_378_2004;
                         if (template.equals(template3)) {
-                            values(new Object[]{this, com.identy.Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template3.ordinal(), value), hand, finger, this.uxd565jk}, 0, -320332114, 0, 320332114, 0, 0);
+                            values(new Object[]{this, com.identy.Fpnative.generateID(com.identy.e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template3.ordinal(), value), hand, finger, this.uxd565jk}, 0, -320332114, 0, 320332114, 0, 0);
                         } else {
-                            values(new Object[]{this, com.identy.Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template.ordinal(), value), hand, finger, this.uxd565jk}, 0, -320332114, 0, 320332114, 0, 0);
+                            values(new Object[]{this, com.identy.Fpnative.generateID(com.identy.e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template.ordinal(), value), hand, finger, this.uxd565jk}, 0, -320332114, 0, 320332114, 0, 0);
                         }
                     }
                 }
@@ -11548,7 +11548,7 @@ public class IdentySdk {
 
     private void PngjBadCrcException(byte[] bArr, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
-            values(new Object[]{this, com.identy.Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_4.ordinal(), bArr), hand, finger, identyUser}, 0, -320332114, 0, 320332114, 0, 0);
+            values(new Object[]{this, com.identy.Fpnative.generateID(com.identy.e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_4.ordinal(), bArr), hand, finger, identyUser}, 0, -320332114, 0, 320332114, 0, 0);
             generateST = (deduplication + 75) % 128;
         } catch (Exception unused) {
         }
@@ -11674,7 +11674,7 @@ public class IdentySdk {
 
     private void PngjBadCrcException(String str, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
-            values(new Object[]{this, com.identy.Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.WSQ.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, 0, -320332114, 0, 320332114, 0, 0);
+            values(new Object[]{this, com.identy.Fpnative.generateID(com.identy.e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.WSQ.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, 0, -320332114, 0, 320332114, 0, 0);
             int i = deduplication + 69;
             generateST = i % 128;
             if (i % 2 == 0) {
@@ -11687,7 +11687,7 @@ public class IdentySdk {
 
     private void valueOf(byte[] bArr, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
-            values(new Object[]{this, com.identy.Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.WSQ.ordinal(), bArr), hand, finger, identyUser}, 0, -320332114, 0, 320332114, 0, 0);
+            values(new Object[]{this, com.identy.Fpnative.generateID(com.identy.e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.WSQ.ordinal(), bArr), hand, finger, identyUser}, 0, -320332114, 0, 320332114, 0, 0);
             deduplication = (generateST + 45) % 128;
         } catch (Exception unused) {
         }
@@ -11728,7 +11728,7 @@ public class IdentySdk {
 
     private void valueOf(String str, Finger finger, Hand hand, IdentyUser identyUser, Template template) {
         try {
-            values(new Object[]{this, com.identy.Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, 0, -320332114, 0, 320332114, 0, 0);
+            values(new Object[]{this, com.identy.Fpnative.generateID(com.identy.e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), template.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, 0, -320332114, 0, 320332114, 0, 0);
             generateST = (deduplication + 37) % 128;
         } catch (Exception unused) {
         }
@@ -13689,7 +13689,7 @@ public class IdentySdk {
 
     private void values(String str, Finger finger, Hand hand, IdentyUser identyUser) {
         try {
-            values(new Object[]{this, com.identy.Fpnative.generateID(e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_2.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, 0, -320332114, 0, 320332114, 0, 0);
+            values(new Object[]{this, com.identy.Fpnative.generateID(com.identy.e1.PngjException(this.getData), Position.getFromHandFinger(new Pair(hand, finger)).ordinal(), Template.ISO_19794_2.ordinal(), com.identy.e.valueOf.PngjException(str)), hand, finger, identyUser}, 0, -320332114, 0, 320332114, 0, 0);
             generateST = (deduplication + 13) % 128;
         } catch (Exception unused) {
         }

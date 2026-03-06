@@ -140,7 +140,7 @@ public final class PngjBadCrcException extends FilterInputStream {
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
-    public final long skip(long j) {
+    public final long skip(long j) throws IOException {
         long j2 = 0;
         while (j2 < j && read() != -1) {
             j2++;
