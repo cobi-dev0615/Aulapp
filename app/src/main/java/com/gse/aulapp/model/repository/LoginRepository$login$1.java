@@ -33,16 +33,16 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LoginRepository$login$1(Context context, LoginRequest loginRequest, Continuation<? super LoginRepository$login$1> continuation) {
-        super(2, continuation);
+        super(2, (kotlin.coroutines.Continuation) continuation);
         this.$context = context;
         this.$request = loginRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        LoginRepository$login$1 loginRepository$login$1 = new LoginRepository$login$1(this.$context, this.$request, continuation);
+        LoginRepository$login$1 loginRepository$login$1 = new LoginRepository$login$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
         loginRepository$login$1.L$0 = obj;
-        return loginRepository$login$1;
+        return (Continuation<Unit>) (Object) loginRepository$login$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -102,7 +102,7 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
                     if (response.isSuccessful()) {
                         LoginResponse loginResponse = (LoginResponse) response.body();
                         if (loginResponse != null) {
-                            loginResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            loginResponse.setUrl(response.raw().request().url().url());
                             ApiResult.Success success = new ApiResult.Success(response.code(), loginResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;
@@ -144,6 +144,6 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<LoginResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((LoginRepository$login$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((LoginRepository$login$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -94,7 +94,7 @@ public abstract class SessionDataConverter {
         public final List<StepProcessSessionDto> getListStepSessionDtoFromStepSessionEntity(List<StepProcessSessionEntity> listStepStatus) {
             Intrinsics.checkNotNullParameter(listStepStatus, "listStepStatus");
             ArrayList arrayList = new ArrayList();
-            Iterator<T> it = listStepStatus.iterator();
+            Iterator it = listStepStatus.iterator();
             while (it.hasNext()) {
                 arrayList.add(SessionDataConverter.INSTANCE.getStepProcessSessionDtoFromStepProcessSessionEntity((StepProcessSessionEntity) it.next()));
             }

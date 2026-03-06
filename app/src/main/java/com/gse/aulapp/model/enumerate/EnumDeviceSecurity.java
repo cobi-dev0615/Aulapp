@@ -95,7 +95,10 @@ public abstract class EnumDeviceSecurity {
     }
 
     public static EnumDeviceSecurity valueOfString(String str) {
-        return (EnumDeviceSecurity) Enum.valueOf(EnumDeviceSecurity.class, str);
+        for (EnumDeviceSecurity val : $values()) {
+            if (val.name().equals(str)) return val;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumDeviceSecurity[] values() {
@@ -104,6 +107,19 @@ public abstract class EnumDeviceSecurity {
 
     public abstract String name(Context context);
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumDeviceSecurity(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public String name() {
+        return _name;
+    }
+
+    public int ordinal() {
+        return _ordinal;
     }
 }

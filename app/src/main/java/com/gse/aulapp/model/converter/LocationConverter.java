@@ -48,7 +48,7 @@ public abstract class LocationConverter {
         public final List<LocationDto> gpsTraceEntityToLocationDto(List<GpsTraceEntity> gpsTraceEntity) {
             Intrinsics.checkNotNullParameter(gpsTraceEntity, "gpsTraceEntity");
             ArrayList arrayList = new ArrayList();
-            Iterator<T> it = gpsTraceEntity.iterator();
+            Iterator it = gpsTraceEntity.iterator();
             while (it.hasNext()) {
                 arrayList.add(LocationConverter.INSTANCE.gpsTraceEntityToLocationDto((GpsTraceEntity) it.next()));
             }

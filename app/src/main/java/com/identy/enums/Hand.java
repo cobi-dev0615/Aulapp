@@ -87,7 +87,7 @@ public enum Hand implements Serializable {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myUid = Process.myUid();
-                    int c = a.c(~(myUid | (-291457)), 566, (((~((-478540459) | myUid)) | 478249002) * (-566)) + 604884763, -590478048);
+                    int c = 0;
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -132,7 +132,7 @@ public enum Hand implements Serializable {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int uptimeMillis = (int) SystemClock.uptimeMillis();
-                    int c = a.c((~(uptimeMillis | (-406347803))) | (~((~uptimeMillis) | (-79924518))) | 67307557, 168, ((~((-12616961) | uptimeMillis)) * 168) + ((((~((-418964763) | r5)) | 12616960) * 168) - 1710130969), -241117023);
+                    int c = 0;
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -175,7 +175,7 @@ public enum Hand implements Serializable {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | (-138543123))) | 302057517, 446, (((~((~identityHashCode) | (-167687443))) | 29144320) * 446) + 1332570237, -66154022);
+                    int c = 0;
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

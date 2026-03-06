@@ -33,16 +33,16 @@ public final class ParameterListRepository$getParameterList$1 extends SuspendLam
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ParameterListRepository$getParameterList$1(Context context, ParameterListRequest parameterListRequest, Continuation<? super ParameterListRepository$getParameterList$1> continuation) {
-        super(2, continuation);
+        super(2, (kotlin.coroutines.Continuation) continuation);
         this.$context = context;
         this.$request = parameterListRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        ParameterListRepository$getParameterList$1 parameterListRepository$getParameterList$1 = new ParameterListRepository$getParameterList$1(this.$context, this.$request, continuation);
+        ParameterListRepository$getParameterList$1 parameterListRepository$getParameterList$1 = new ParameterListRepository$getParameterList$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
         parameterListRepository$getParameterList$1.L$0 = obj;
-        return parameterListRepository$getParameterList$1;
+        return (Continuation<Unit>) (Object) parameterListRepository$getParameterList$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -102,7 +102,7 @@ public final class ParameterListRepository$getParameterList$1 extends SuspendLam
                     if (response.isSuccessful()) {
                         ParameterListResponse parameterListResponse = (ParameterListResponse) response.body();
                         if (parameterListResponse != null) {
-                            parameterListResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            parameterListResponse.setUrl(response.raw().request().url().url());
                             ApiResult.Success success = new ApiResult.Success(response.code(), parameterListResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;
@@ -144,6 +144,6 @@ public final class ParameterListRepository$getParameterList$1 extends SuspendLam
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<ParameterListResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((ParameterListRepository$getParameterList$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ParameterListRepository$getParameterList$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

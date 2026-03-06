@@ -18,7 +18,7 @@ public final class ClassInCourseRepository$saveQuestion$1 extends ContinuationIm
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassInCourseRepository$saveQuestion$1(ClassInCourseRepository classInCourseRepository, Continuation<? super ClassInCourseRepository$saveQuestion$1> continuation) {
-        super(continuation);
+        super((kotlin.coroutines.Continuation) continuation);
         this.this$0 = classInCourseRepository;
     }
 

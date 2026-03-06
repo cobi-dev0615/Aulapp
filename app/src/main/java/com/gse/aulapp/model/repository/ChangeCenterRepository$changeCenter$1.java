@@ -33,16 +33,16 @@ public final class ChangeCenterRepository$changeCenter$1 extends SuspendLambda i
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ChangeCenterRepository$changeCenter$1(Context context, ChangeCenterRequest changeCenterRequest, Continuation<? super ChangeCenterRepository$changeCenter$1> continuation) {
-        super(2, continuation);
+        super(2, (kotlin.coroutines.Continuation) continuation);
         this.$context = context;
         this.$request = changeCenterRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        ChangeCenterRepository$changeCenter$1 changeCenterRepository$changeCenter$1 = new ChangeCenterRepository$changeCenter$1(this.$context, this.$request, continuation);
+        ChangeCenterRepository$changeCenter$1 changeCenterRepository$changeCenter$1 = new ChangeCenterRepository$changeCenter$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
         changeCenterRepository$changeCenter$1.L$0 = obj;
-        return changeCenterRepository$changeCenter$1;
+        return (Continuation<Unit>) (Object) changeCenterRepository$changeCenter$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -102,7 +102,7 @@ public final class ChangeCenterRepository$changeCenter$1 extends SuspendLambda i
                     if (response.isSuccessful()) {
                         ChangeCenterResponse changeCenterResponse = (ChangeCenterResponse) response.body();
                         if (changeCenterResponse != null) {
-                            changeCenterResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            changeCenterResponse.setUrl(response.raw().request().url().url());
                             ApiResult.Success success = new ApiResult.Success(response.code(), changeCenterResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;
@@ -144,6 +144,6 @@ public final class ChangeCenterRepository$changeCenter$1 extends SuspendLambda i
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<ChangeCenterResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((ChangeCenterRepository$changeCenter$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((ChangeCenterRepository$changeCenter$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

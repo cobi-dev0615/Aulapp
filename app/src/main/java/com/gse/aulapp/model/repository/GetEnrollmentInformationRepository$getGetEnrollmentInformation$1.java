@@ -33,16 +33,16 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(Context context, GetEnrollmentInformationRequest getEnrollmentInformationRequest, Continuation<? super GetEnrollmentInformationRepository$getGetEnrollmentInformation$1> continuation) {
-        super(2, continuation);
+        super(2, (kotlin.coroutines.Continuation) continuation);
         this.$context = context;
         this.$request = getEnrollmentInformationRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        GetEnrollmentInformationRepository$getGetEnrollmentInformation$1 getEnrollmentInformationRepository$getGetEnrollmentInformation$1 = new GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(this.$context, this.$request, continuation);
+        GetEnrollmentInformationRepository$getGetEnrollmentInformation$1 getEnrollmentInformationRepository$getGetEnrollmentInformation$1 = new GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
         getEnrollmentInformationRepository$getGetEnrollmentInformation$1.L$0 = obj;
-        return getEnrollmentInformationRepository$getGetEnrollmentInformation$1;
+        return (Continuation<Unit>) (Object) getEnrollmentInformationRepository$getGetEnrollmentInformation$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -102,7 +102,7 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
                     if (response.isSuccessful()) {
                         GetEnrollmentInformationResponse getEnrollmentInformationResponse = (GetEnrollmentInformationResponse) response.body();
                         if (getEnrollmentInformationResponse != null) {
-                            getEnrollmentInformationResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            getEnrollmentInformationResponse.setUrl(response.raw().request().url().url());
                             ApiResult.Success success = new ApiResult.Success(response.code(), getEnrollmentInformationResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;
@@ -144,6 +144,6 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((GetEnrollmentInformationRepository$getGetEnrollmentInformation$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((GetEnrollmentInformationRepository$getGetEnrollmentInformation$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

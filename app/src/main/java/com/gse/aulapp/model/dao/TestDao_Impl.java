@@ -97,7 +97,7 @@ public final class TestDao_Impl implements TestDao {
             public Unit call() {
                 TestDao_Impl.this.__db.beginTransaction();
                 try {
-                    TestDao_Impl.this.__insertionAdapterOfTestEntity.insert((EntityInsertionAdapter) testEntity);
+                    TestDao_Impl.this.__insertionAdapterOfTestEntity.insert(testEntity);
                     TestDao_Impl.this.__db.setTransactionSuccessful();
                     return Unit.INSTANCE;
                 } finally {

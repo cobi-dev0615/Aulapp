@@ -23,6 +23,8 @@ public final class EnumBiometrixAction {
     public static final EnumBiometrixAction VALIDATION = new EnumBiometrixAction("VALIDATION", 1, "validation");
     private static final Map<String, EnumBiometrixAction> map;
     private final String value;
+    private final String _name;
+    private final int _ordinal;
 
     private static final /* synthetic */ EnumBiometrixAction[] $values() {
         return new EnumBiometrixAction[]{ENLISTMENT, VALIDATION};
@@ -32,8 +34,8 @@ public final class EnumBiometrixAction {
         EnumBiometrixAction[] $values = $values();
         $VALUES = $values;
         $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
-        INSTANCE = new Companion(null);
-        EnumEntries<EnumBiometrixAction> entries = getEntries();
+        // INSTANCE = new Companion(null);
+        EnumEntries entries = getEntries();
         LinkedHashMap linkedHashMap = new LinkedHashMap(RangesKt.coerceAtLeast(MapsKt.mapCapacity(10), 16));
         for (Object obj : entries) {
             linkedHashMap.put(((EnumBiometrixAction) obj).value, obj);
@@ -42,15 +44,30 @@ public final class EnumBiometrixAction {
     }
 
     private EnumBiometrixAction(String str, int i, String str2) {
+        this._name = str;
+        this._ordinal = i;
         this.value = str2;
     }
 
-    public static EnumEntries<EnumBiometrixAction> getEntries() {
+    public String name() {
+        return this._name;
+    }
+
+    public int ordinal() {
+        return this._ordinal;
+    }
+
+    public static EnumEntries getEntries() {
         return $ENTRIES;
     }
 
     public static EnumBiometrixAction valueOfString(String str) {
-        return (EnumBiometrixAction) Enum.valueOf(EnumBiometrixAction.class, str);
+        for (EnumBiometrixAction e : values()) {
+            if (e.name().equals(str)) {
+                return e;
+            }
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumBiometrixAction[] values() {

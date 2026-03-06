@@ -19,7 +19,7 @@ public final class GpsRepository$getMaxSpeedBySessionID$1 extends ContinuationIm
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public GpsRepository$getMaxSpeedBySessionID$1(GpsRepository gpsRepository, Continuation<? super GpsRepository$getMaxSpeedBySessionID$1> continuation) {
-        super(continuation);
+        super((kotlin.coroutines.Continuation) continuation);
         this.this$0 = gpsRepository;
     }
 

@@ -17,6 +17,6 @@ public final class ParameterListRepository {
     public final Flow<ApiResult<ParameterListResponse>> getParameterList(Context context, ParameterListRequest request) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(request, "request");
-        return FlowKt.flowOn(FlowKt.flow(new ParameterListRepository$getParameterList$1(context, request, null)), Dispatchers.getIO());
+        return FlowKt.flowOn((Flow) FlowKt.flow(new ParameterListRepository$getParameterList$1(context, request, null)), Dispatchers.getIO());
     }
 }

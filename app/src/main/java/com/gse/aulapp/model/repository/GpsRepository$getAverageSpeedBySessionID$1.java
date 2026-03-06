@@ -19,7 +19,7 @@ public final class GpsRepository$getAverageSpeedBySessionID$1 extends Continuati
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public GpsRepository$getAverageSpeedBySessionID$1(GpsRepository gpsRepository, Continuation<? super GpsRepository$getAverageSpeedBySessionID$1> continuation) {
-        super(continuation);
+        super((kotlin.coroutines.Continuation) continuation);
         this.this$0 = gpsRepository;
     }
 

@@ -33,11 +33,27 @@ public final class EnumCallType {
         $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumCallType(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public String name() {
+        return _name;
+    }
+
+    public int ordinal() {
+        return _ordinal;
     }
 
     public static EnumCallType valueOfString(String str) {
-        return (EnumCallType) Enum.valueOf(EnumCallType.class, str);
+        for (EnumCallType val : $values()) {
+            if (val.name().equals(str)) return val;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumCallType[] values() {

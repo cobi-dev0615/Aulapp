@@ -92,12 +92,15 @@ public final class GpsRepository {
         if (i != 0) {
         }
         Objects.toString(obj2);
+        GpsRepository gpsRepository = this;
+        SimpleSQLiteQuery simpleSQLiteQuery = null;
         GpsDao gpsDao22 = gpsRepository.gpsDao;
         gpsRepository$getAverageSpeedBySessionID$1.L$0 = null;
         gpsRepository$getAverageSpeedBySessionID$1.L$1 = null;
         gpsRepository$getAverageSpeedBySessionID$1.L$2 = null;
         gpsRepository$getAverageSpeedBySessionID$1.label = 2;
         obj2 = gpsDao22.getSpeedCustom(simpleSQLiteQuery, gpsRepository$getAverageSpeedBySessionID$1);
+        return null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:15:0x0035  */
@@ -144,6 +147,7 @@ public final class GpsRepository {
         i = gpsRepository$getGpsTraceBySessionID$1.label;
         if (i != 0) {
         }
+        LocationConverter.Companion companion = null;
         return companion.gpsTraceEntityToLocationDto((List<GpsTraceEntity>) obj2);
     }
 
@@ -212,12 +216,15 @@ public final class GpsRepository {
         if (i != 0) {
         }
         Objects.toString(obj2);
+        GpsRepository gpsRepository = this;
+        SimpleSQLiteQuery simpleSQLiteQuery = null;
         GpsDao gpsDao22 = gpsRepository.gpsDao;
         gpsRepository$getMaxSpeedBySessionID$1.L$0 = null;
         gpsRepository$getMaxSpeedBySessionID$1.L$1 = null;
         gpsRepository$getMaxSpeedBySessionID$1.L$2 = null;
         gpsRepository$getMaxSpeedBySessionID$1.label = 2;
         obj2 = gpsDao22.getSpeedCustom(simpleSQLiteQuery, gpsRepository$getMaxSpeedBySessionID$1);
+        return null;
     }
 
     public final Object saveGpsTrace(LocationDto locationDto, Continuation<? super Long> continuation) {

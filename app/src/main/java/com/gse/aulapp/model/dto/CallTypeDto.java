@@ -42,8 +42,8 @@ public final /* data */ class CallTypeDto implements Parcelable {
             boolean z4;
             String str;
             Intrinsics.checkNotNullParameter(parcel, "parcel");
-            EnumCallType valueOf = EnumCallType.valueOf(parcel.readString());
-            EnumUserProfile valueOf2 = parcel.readInt() == 0 ? null : EnumUserProfile.valueOf(parcel.readString());
+            EnumCallType valueOf = EnumCallType.valueOfString(parcel.readString());
+            EnumUserProfile valueOf2 = parcel.readInt() == 0 ? null : EnumUserProfile.valueOfString(parcel.readString());
             int readInt = parcel.readInt();
             String readString = parcel.readString();
             if (parcel.readInt() != 0) {
@@ -54,7 +54,7 @@ public final /* data */ class CallTypeDto implements Parcelable {
                 z2 = false;
             }
             String readString2 = parcel.readString();
-            EnumClassType valueOf3 = parcel.readInt() != 0 ? EnumClassType.valueOf(parcel.readString()) : null;
+            EnumClassType valueOf3 = parcel.readInt() != 0 ? EnumClassType.valueOfString(parcel.readString()) : null;
             boolean z5 = z2;
             String readString3 = parcel.readString();
             String readString4 = parcel.readString();
@@ -125,9 +125,9 @@ public final /* data */ class CallTypeDto implements Parcelable {
     public int hashCode() {
         int hashCode = this.callType.hashCode() * 31;
         EnumUserProfile enumUserProfile = this.role;
-        int a = x5.a(this.order, (hashCode + (enumUserProfile == null ? 0 : enumUserProfile.hashCode())) * 31, 31);
+        int aVal = x5.a(this.order, (hashCode + (enumUserProfile == null ? 0 : enumUserProfile.hashCode())) * 31, 31);
         String str = this.email;
-        int g = a.g(this.startExamOrClass, (a + (str == null ? 0 : str.hashCode())) * 31, 31);
+        int g = defpackage.a.g(this.startExamOrClass, (aVal + (str == null ? 0 : str.hashCode())) * 31, 31);
         String str2 = this.momentStep;
         int hashCode2 = (g + (str2 == null ? 0 : str2.hashCode())) * 31;
         EnumClassType enumClassType = this.typeClass;
@@ -141,7 +141,7 @@ public final /* data */ class CallTypeDto implements Parcelable {
         String str6 = this.fullName;
         int hashCode7 = (hashCode6 + (str6 == null ? 0 : str6.hashCode())) * 31;
         String str7 = this.document;
-        return Boolean.hashCode(this.biometricException) + x5.d(this.docType, a.g(this.fullEnrolment, (hashCode7 + (str7 != null ? str7.hashCode() : 0)) * 31, 31), 31);
+        return Boolean.hashCode(this.biometricException) + x5.d(this.docType, defpackage.a.g(this.fullEnrolment, (hashCode7 + (str7 != null ? str7.hashCode() : 0)) * 31, 31), 31);
     }
 
     public String toString() {

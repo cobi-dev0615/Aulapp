@@ -59,11 +59,27 @@ public final class EParametersType {
         $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
+    private final String _name;
+    private final int _ordinal;
+
     private EParametersType(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public String name() {
+        return _name;
+    }
+
+    public int ordinal() {
+        return _ordinal;
     }
 
     public static EParametersType valueOfString(String str) {
-        return (EParametersType) Enum.valueOf(EParametersType.class, str);
+        for (EParametersType val : $values()) {
+            if (val.name().equals(str)) return val;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EParametersType[] values() {

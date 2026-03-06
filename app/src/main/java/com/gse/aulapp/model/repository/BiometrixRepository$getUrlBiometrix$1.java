@@ -34,16 +34,16 @@ public final class BiometrixRepository$getUrlBiometrix$1 extends SuspendLambda i
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public BiometrixRepository$getUrlBiometrix$1(Context context, BiometrixRequest biometrixRequest, Continuation<? super BiometrixRepository$getUrlBiometrix$1> continuation) {
-        super(2, continuation);
+        super(2, (kotlin.coroutines.Continuation) continuation);
         this.$context = context;
         this.$request = biometrixRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        BiometrixRepository$getUrlBiometrix$1 biometrixRepository$getUrlBiometrix$1 = new BiometrixRepository$getUrlBiometrix$1(this.$context, this.$request, continuation);
+        BiometrixRepository$getUrlBiometrix$1 biometrixRepository$getUrlBiometrix$1 = new BiometrixRepository$getUrlBiometrix$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
         biometrixRepository$getUrlBiometrix$1.L$0 = obj;
-        return biometrixRepository$getUrlBiometrix$1;
+        return (Continuation<Unit>) (Object) biometrixRepository$getUrlBiometrix$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -108,7 +108,7 @@ public final class BiometrixRepository$getUrlBiometrix$1 extends SuspendLambda i
                         Intrinsics.checkNotNull(body);
                         BiometrixUrlActionResponse biometrixUrlActionResponse = (BiometrixUrlActionResponse) body;
                         if (biometrixUrlActionResponse != null) {
-                            biometrixUrlActionResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            biometrixUrlActionResponse.setUrl(response.raw().request().url().url());
                             ApiResult.Success success = new ApiResult.Success(response.code(), biometrixUrlActionResponse);
                             biometrixRepository$getUrlBiometrix$1.L$0 = flowCollector;
                             biometrixRepository$getUrlBiometrix$1.label = 2;
@@ -151,6 +151,6 @@ public final class BiometrixRepository$getUrlBiometrix$1 extends SuspendLambda i
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<BiometrixUrlActionResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((BiometrixRepository$getUrlBiometrix$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((BiometrixRepository$getUrlBiometrix$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

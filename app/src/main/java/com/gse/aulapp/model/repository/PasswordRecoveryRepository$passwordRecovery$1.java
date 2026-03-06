@@ -33,16 +33,16 @@ public final class PasswordRecoveryRepository$passwordRecovery$1 extends Suspend
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PasswordRecoveryRepository$passwordRecovery$1(Context context, PasswordRecoveryRequest passwordRecoveryRequest, Continuation<? super PasswordRecoveryRepository$passwordRecovery$1> continuation) {
-        super(2, continuation);
+        super(2, (kotlin.coroutines.Continuation) continuation);
         this.$context = context;
         this.$request = passwordRecoveryRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        PasswordRecoveryRepository$passwordRecovery$1 passwordRecoveryRepository$passwordRecovery$1 = new PasswordRecoveryRepository$passwordRecovery$1(this.$context, this.$request, continuation);
+        PasswordRecoveryRepository$passwordRecovery$1 passwordRecoveryRepository$passwordRecovery$1 = new PasswordRecoveryRepository$passwordRecovery$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
         passwordRecoveryRepository$passwordRecovery$1.L$0 = obj;
-        return passwordRecoveryRepository$passwordRecovery$1;
+        return (Continuation<Unit>) (Object) passwordRecoveryRepository$passwordRecovery$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -102,7 +102,7 @@ public final class PasswordRecoveryRepository$passwordRecovery$1 extends Suspend
                     if (response.isSuccessful()) {
                         PasswordRecoveryResponse passwordRecoveryResponse = (PasswordRecoveryResponse) response.body();
                         if (passwordRecoveryResponse != null) {
-                            passwordRecoveryResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            passwordRecoveryResponse.setUrl(response.raw().request().url().url());
                             ApiResult.Success success = new ApiResult.Success(response.code(), passwordRecoveryResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;
@@ -144,6 +144,6 @@ public final class PasswordRecoveryRepository$passwordRecovery$1 extends Suspend
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<PasswordRecoveryResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((PasswordRecoveryRepository$passwordRecovery$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((PasswordRecoveryRepository$passwordRecovery$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

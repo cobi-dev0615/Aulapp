@@ -27,11 +27,27 @@ public final class EnumTypeOfIncome {
         $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumTypeOfIncome(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public String name() {
+        return _name;
+    }
+
+    public int ordinal() {
+        return _ordinal;
     }
 
     public static EnumTypeOfIncome valueOfString(String str) {
-        return (EnumTypeOfIncome) Enum.valueOf(EnumTypeOfIncome.class, str);
+        for (EnumTypeOfIncome val : $values()) {
+            if (val.name().equals(str)) return val;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumTypeOfIncome[] values() {

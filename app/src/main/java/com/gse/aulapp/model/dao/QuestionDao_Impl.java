@@ -64,15 +64,17 @@ public final class QuestionDao_Impl implements QuestionDao {
                 } else {
                     supportSQLiteStatement.bindString(6, questionEntity.getLevel());
                 }
-                if ((questionEntity.getApproved() == null ? null : Integer.valueOf(questionEntity.getApproved().booleanValue() ? 1 : 0)) == null) {
+                Integer _tmpApproved = questionEntity.getApproved() == null ? null : Integer.valueOf(questionEntity.getApproved().booleanValue() ? 1 : 0);
+                if (_tmpApproved == null) {
                     supportSQLiteStatement.bindNull(7);
                 } else {
-                    supportSQLiteStatement.bindLong(7, r0.intValue());
+                    supportSQLiteStatement.bindLong(7, _tmpApproved.intValue());
                 }
-                if ((questionEntity.getReplied() != null ? Integer.valueOf(questionEntity.getReplied().booleanValue() ? 1 : 0) : null) == null) {
+                Integer _tmpReplied = questionEntity.getReplied() != null ? Integer.valueOf(questionEntity.getReplied().booleanValue() ? 1 : 0) : null;
+                if (_tmpReplied == null) {
                     supportSQLiteStatement.bindNull(8);
                 } else {
-                    supportSQLiteStatement.bindLong(8, r1.intValue());
+                    supportSQLiteStatement.bindLong(8, _tmpReplied.intValue());
                 }
             }
         };
@@ -187,7 +189,7 @@ public final class QuestionDao_Impl implements QuestionDao {
             public Unit call() {
                 QuestionDao_Impl.this.__db.beginTransaction();
                 try {
-                    QuestionDao_Impl.this.__insertionAdapterOfQuestionEntity.insert((EntityInsertionAdapter) questionEntity);
+                    QuestionDao_Impl.this.__insertionAdapterOfQuestionEntity.insert(questionEntity);
                     QuestionDao_Impl.this.__db.setTransactionSuccessful();
                     return Unit.INSTANCE;
                 } finally {

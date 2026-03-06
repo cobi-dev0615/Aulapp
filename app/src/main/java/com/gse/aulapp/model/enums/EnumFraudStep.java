@@ -32,11 +32,27 @@ public final class EnumFraudStep {
         $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
+    private final String _name;
+    private final int _ordinal;
+
     private EnumFraudStep(String str, int i) {
+        this._name = str;
+        this._ordinal = i;
+    }
+
+    public String name() {
+        return _name;
+    }
+
+    public int ordinal() {
+        return _ordinal;
     }
 
     public static EnumFraudStep valueOfString(String str) {
-        return (EnumFraudStep) Enum.valueOf(EnumFraudStep.class, str);
+        for (EnumFraudStep val : $values()) {
+            if (val.name().equals(str)) return val;
+        }
+        throw new IllegalArgumentException("No enum constant " + str);
     }
 
     public static EnumFraudStep[] values() {

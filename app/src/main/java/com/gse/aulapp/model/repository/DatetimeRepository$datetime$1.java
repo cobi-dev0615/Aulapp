@@ -33,16 +33,16 @@ public final class DatetimeRepository$datetime$1 extends SuspendLambda implement
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DatetimeRepository$datetime$1(Context context, DatetimeRequest datetimeRequest, Continuation<? super DatetimeRepository$datetime$1> continuation) {
-        super(2, continuation);
+        super(2, (kotlin.coroutines.Continuation) continuation);
         this.$context = context;
         this.$request = datetimeRequest;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-        DatetimeRepository$datetime$1 datetimeRepository$datetime$1 = new DatetimeRepository$datetime$1(this.$context, this.$request, continuation);
+        DatetimeRepository$datetime$1 datetimeRepository$datetime$1 = new DatetimeRepository$datetime$1(this.$context, this.$request, (kotlin.coroutines.Continuation) continuation);
         datetimeRepository$datetime$1.L$0 = obj;
-        return datetimeRepository$datetime$1;
+        return (Continuation<Unit>) (Object) datetimeRepository$datetime$1;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -102,7 +102,7 @@ public final class DatetimeRepository$datetime$1 extends SuspendLambda implement
                     if (response.isSuccessful()) {
                         DatetimeResponse datetimeResponse = (DatetimeResponse) response.body();
                         if (datetimeResponse != null) {
-                            datetimeResponse.setUrl(response.raw().getRequest().getUrl().getUrl());
+                            datetimeResponse.setUrl(response.raw().request().url().url());
                             ApiResult.Success success = new ApiResult.Success(response.code(), datetimeResponse);
                             this.L$0 = flowCollector;
                             this.label = 2;
@@ -144,6 +144,6 @@ public final class DatetimeRepository$datetime$1 extends SuspendLambda implement
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
     public final Object invoke2(FlowCollector<? super ApiResult<DatetimeResponse>> flowCollector, Continuation<? super Unit> continuation) {
-        return ((DatetimeRepository$datetime$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
+        return ((DatetimeRepository$datetime$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

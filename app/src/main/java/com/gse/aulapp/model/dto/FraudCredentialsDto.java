@@ -38,10 +38,10 @@ public final /* data */ class FraudCredentialsDto implements Parcelable {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
             String readString = parcel.readString();
             String readString2 = parcel.readString();
-            EnumFraudStep valueOf = EnumFraudStep.valueOf(parcel.readString());
+            EnumFraudStep valueOf = EnumFraudStep.valueOfString(parcel.readString());
             String readString3 = parcel.readString();
             String readString4 = parcel.readString();
-            EnumUserProfile valueOf2 = EnumUserProfile.valueOf(parcel.readString());
+            EnumUserProfile valueOf2 = EnumUserProfile.valueOfString(parcel.readString());
             String readString5 = parcel.readString();
             boolean z3 = false;
             if (parcel.readInt() != 0) {
@@ -206,7 +206,7 @@ public final /* data */ class FraudCredentialsDto implements Parcelable {
     public int hashCode() {
         int hashCode = (this.stepFraud.hashCode() + x5.d(this.documentNumber, this.fraudId.hashCode() * 31, 31)) * 31;
         String str = this.userId;
-        return Boolean.hashCode(this.destinyExamOrClass) + x5.d(this.userEmail, a.g(this.fullEnrolment, x5.d(this.docType, (this.role.hashCode() + x5.d(this.fullName, (hashCode + (str == null ? 0 : str.hashCode())) * 31, 31)) * 31, 31), 31), 31);
+        return Boolean.hashCode(this.destinyExamOrClass) + x5.d(this.userEmail, defpackage.a.g(this.fullEnrolment, x5.d(this.docType, (this.role.hashCode() + x5.d(this.fullName, (hashCode + (str == null ? 0 : str.hashCode())) * 31, 31)) * 31, 31), 31), 31);
     }
 
     public String toString() {

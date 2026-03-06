@@ -17,6 +17,6 @@ public final class DatetimeRepository {
     public final Flow<ApiResult<DatetimeResponse>> datetime(Context context, DatetimeRequest request) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(request, "request");
-        return FlowKt.flowOn(FlowKt.flow(new DatetimeRepository$datetime$1(context, request, null)), Dispatchers.getIO());
+        return FlowKt.flowOn((Flow) FlowKt.flow(new DatetimeRepository$datetime$1(context, request, null)), Dispatchers.getIO());
     }
 }
