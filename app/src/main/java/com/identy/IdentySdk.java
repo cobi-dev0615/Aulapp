@@ -2060,7 +2060,7 @@ public class IdentySdk {
                     int i15 = i14 >> 29;
                     int i16 = ((i15 ^ (-15)) + ((i15 & (-15)) << 1)) / 8;
                     int i17 = (i16 & 1) + (i16 | 1);
-                    this.pfkrolfinalize = 4980 / (((-((i17 & 1) + (i17 | 1))) & i14) * 1245);
+                    this.pfkrolfinalize = false;
                     return this;
                 }
             }
@@ -2089,7 +2089,7 @@ public class IdentySdk {
             int i152 = i142 >> 29;
             int i162 = ((i152 ^ (-15)) + ((i152 & (-15)) << 1)) / 8;
             int i172 = (i162 & 1) + (i162 | 1);
-            this.pfkrolfinalize = 4980 / (((-((i172 & 1) + (i172 | 1))) & i142) * 1245);
+            this.pfkrolfinalize = false;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -2151,7 +2151,7 @@ public class IdentySdk {
                     int i19 = deduplication + 33;
                     generateST = i19 % 128;
                     if (i19 % 2 != 0) {
-                        return 0;
+                        return false;
                     }
                     throw null;
                 }
@@ -2496,7 +2496,7 @@ public class IdentySdk {
                     i3 = generateST + 121;
                     deduplication = i3 % 128;
                     if (i3 % 2 != 0) {
-                        return 0;
+                        return false;
                     }
                     throw null;
                 }
@@ -2593,7 +2593,7 @@ public class IdentySdk {
                                     for (Map.Entry<Pair<Hand, Finger>, byte[]> entry : hashMap.entrySet()) {
                                         hashMap2.put(Integer.valueOf(Position.getFromHandFinger(entry.getKey()).ordinal()), entry.getValue());
                                     }
-                                    this.f.onResponse(new DeduplicationIdentyResponse((Integer[]) Fpnative.deduplication(e1.PngjException(this.getData), template.ordinal(), hashMap2)), q());
+                                    throw new UnsupportedOperationException("Method not decompiled");
                                     Action action = com.identy.Action.DEDUP;
                                     this.e = action;
                                     try {
@@ -2613,7 +2613,7 @@ public class IdentySdk {
                                     int i16 = i15 >> 21;
                                     int i17 = (((i16 | (-4095)) << 1) - (i16 ^ (-4095))) / 2048;
                                     int i18 = (i17 ^ 1) + ((i17 & 1) << 1);
-                                    return 976 / ((i15 & (-(((i18 | 1) << 1) - (i18 ^ 1)))) * 244);
+                                    return false;
                                 }
                             }
                         }
@@ -2677,7 +2677,7 @@ public class IdentySdk {
                     int i14 = i13 >> 21;
                     int i15 = ((i14 & (-4095)) + (i14 | (-4095))) / 2048;
                     int i16 = (i15 ^ 1) + ((i15 & 1) << 1);
-                    this.pfkrol = 0 / ((i13 & (-(((i16 | 1) << 1) - (i16 ^ 1)))) * 1629);
+                    this.pfkrol = false;
                     return this;
                 }
             }
@@ -2704,7 +2704,7 @@ public class IdentySdk {
             int i142 = i132 >> 21;
             int i152 = ((i142 & (-4095)) + (i142 | (-4095))) / 2048;
             int i162 = (i152 ^ 1) + ((i152 & 1) << 1);
-            this.pfkrol = 0 / ((i132 & (-(((i162 | 1) << 1) - (i162 ^ 1)))) * 1629);
+            this.pfkrol = false;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -2752,7 +2752,7 @@ public class IdentySdk {
                     int i16 = i15 >> 23;
                     int i17 = (((i16 | (-1023)) << 1) - (i16 ^ (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE;
                     int i18 = (i17 & 1) + (i17 | 1);
-                    this.Capture4FActivity = 0 / (((-((i18 ^ 1) + ((i18 & 1) << 1))) & i15) * 1326);
+                    this.Capture4FActivity = false;
                     return this;
                 }
             }
@@ -2782,7 +2782,7 @@ public class IdentySdk {
             int i162 = i152 >> 23;
             int i172 = (((i162 | (-1023)) << 1) - (i162 ^ (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE;
             int i182 = (i172 & 1) + (i172 | 1);
-            this.Capture4FActivity = 0 / (((-((i182 ^ 1) + ((i182 & 1) << 1))) & i152) * 1326);
+            this.Capture4FActivity = false;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -2830,7 +2830,7 @@ public class IdentySdk {
                     int i16 = i15 >> 20;
                     int i17 = ((i16 & (-8191)) + (i16 | (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;
                     int i18 = ((i17 | 1) << 1) - (i17 ^ 1);
-                    this.getWidth = 0 / (((-(((i18 | 1) << 1) - (i18 ^ 1))) & i15) * 1619);
+                    this.getWidth = false;
                     GuideNoGuideHelper.markIntroSetting(this.getData, true);
                     return this;
                 }
@@ -2860,7 +2860,7 @@ public class IdentySdk {
             int i162 = i152 >> 20;
             int i172 = ((i162 & (-8191)) + (i162 | (-8191))) / ConstantsKt.DEFAULT_BLOCK_SIZE;
             int i182 = ((i172 | 1) << 1) - (i172 ^ 1);
-            this.getWidth = 0 / (((-(((i182 | 1) << 1) - (i182 ^ 1))) & i152) * 1619);
+            this.getWidth = false;
             GuideNoGuideHelper.markIntroSetting(this.getData, true);
             return this;
         } catch (Throwable th) {
@@ -3129,7 +3129,7 @@ public class IdentySdk {
                     int i16 = i15 >> 27;
                     int i17 = ((i16 ^ (-63)) + ((i16 & (-63)) << 1)) / 32;
                     int i18 = ((i17 | 1) << 1) - (i17 ^ 1);
-                    this.ppk = 8340 / (((-(((i18 | 1) << 1) - (i18 ^ 1))) & i15) * 1390);
+                    this.ppk = false;
                     return this;
                 }
             }
@@ -3159,7 +3159,7 @@ public class IdentySdk {
             int i162 = i152 >> 27;
             int i172 = ((i162 ^ (-63)) + ((i162 & (-63)) << 1)) / 32;
             int i182 = ((i172 | 1) << 1) - (i172 ^ 1);
-            this.ppk = 8340 / (((-(((i182 | 1) << 1) - (i182 ^ 1))) & i152) * 1390);
+            this.ppk = false;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -3207,7 +3207,7 @@ public class IdentySdk {
                     int i17 = ((i16 | 9) << 1) - (i16 ^ 9);
                     int i18 = i17 >> 23;
                     int i19 = (((i18 | (-1023)) << 1) - (i18 ^ (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE;
-                    this.CapturePosition = 4473 / (((-(((i19 & 1) + (i19 | 1)) + 1)) & i17) * 497);
+                    this.CapturePosition = false;
                 }
             }
             byte[] bArr = $$d;
@@ -3238,7 +3238,7 @@ public class IdentySdk {
             int i172 = ((i162 | 9) << 1) - (i162 ^ 9);
             int i182 = i172 >> 23;
             int i192 = (((i182 | (-1023)) << 1) - (i182 ^ (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE;
-            this.CapturePosition = 4473 / (((-(((i192 & 1) + (i192 | 1)) + 1)) & i172) * 497);
+            this.CapturePosition = false;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause == null) {
@@ -3306,7 +3306,7 @@ public class IdentySdk {
                 int i18 = i17 >> 16;
                 int i19 = ((i18 & (-131071)) + ((-131071) | i18)) / 65536;
                 int i20 = (i19 ^ 1) + ((i19 & 1) << 1);
-                this.cvtmat2ba = 11610 / (((-((i20 ^ 1) + ((i20 & 1) << 1))) & i17) * 1935);
+                this.cvtmat2ba = false;
                 generateST = (deduplication + 97) % 128;
             }
             byte[] bArr = $$d;
@@ -3337,7 +3337,7 @@ public class IdentySdk {
             int i182 = i172 >> 16;
             int i192 = ((i182 & (-131071)) + ((-131071) | i182)) / 65536;
             int i202 = (i192 ^ 1) + ((i192 & 1) << 1);
-            this.cvtmat2ba = 11610 / (((-((i202 ^ 1) + ((i202 & 1) << 1))) & i172) * 1935);
+            this.cvtmat2ba = false;
             generateST = (deduplication + 97) % 128;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -3388,7 +3388,7 @@ public class IdentySdk {
                     int i16 = i15 >> 18;
                     int i17 = ((i16 ^ (-32767)) + ((i16 & (-32767)) << 1)) / 16384;
                     int i18 = ((i17 | 1) << 1) - (i17 ^ 1);
-                    this.resetAttempt = 7698 / ((i15 & (-((i18 ^ 1) + ((i18 & 1) << 1)))) * 1283);
+                    this.resetAttempt = false;
                     this.CaptureRolledThumbActivity = compressFormat;
                     i = deduplication + 63;
                     generateST = i % 128;
@@ -3423,7 +3423,7 @@ public class IdentySdk {
             int i162 = i152 >> 18;
             int i172 = ((i162 ^ (-32767)) + ((i162 & (-32767)) << 1)) / 16384;
             int i182 = ((i172 | 1) << 1) - (i172 ^ 1);
-            this.resetAttempt = 7698 / ((i152 & (-((i182 ^ 1) + ((i182 & 1) << 1)))) * 1283);
+            this.resetAttempt = false;
             this.CaptureRolledThumbActivity = compressFormat;
             i = deduplication + 63;
             generateST = i % 128;
@@ -3492,7 +3492,7 @@ public class IdentySdk {
                 int i14 = -(i12 ^ IdentyB.a(i13 & (-262143), i13 | (-262143), 131072, -1));
                 int i15 = ((i14 | 8) << 1) - (i14 ^ 8);
                 int i16 = ((i15 >> 18) - 32767) / 16384;
-                this.CaptureMode = 13800 / (((-(((i16 ^ 1) + ((i16 & 1) << 1)) - (-1))) & i15) * 1725);
+                this.CaptureMode = false;
                 i = deduplication + 45;
                 generateST = i % 128;
                 if (i % 2 == 0) {
@@ -3524,7 +3524,7 @@ public class IdentySdk {
             int i142 = -(i122 ^ IdentyB.a(i132 & (-262143), i132 | (-262143), 131072, -1));
             int i152 = ((i142 | 8) << 1) - (i142 ^ 8);
             int i162 = ((i152 >> 18) - 32767) / 16384;
-            this.CaptureMode = 13800 / (((-(((i162 ^ 1) + ((i162 & 1) << 1)) - (-1))) & i152) * 1725);
+            this.CaptureMode = false;
             i = deduplication + 45;
             generateST = i % 128;
             if (i % 2 == 0) {
@@ -3878,7 +3878,7 @@ public class IdentySdk {
                     int i15 = (i14 ^ 6) + ((i14 & 6) << 1);
                     int i16 = ((i15 >> 22) - 2047) / 1024;
                     int i17 = (i16 ^ 1) + ((i16 & 1) << 1);
-                    this.toJson = 11046 / (((-((i17 ^ 1) + ((i17 & 1) << 1))) & i15) * 1841);
+                    this.toJson = false;
                     return this;
                 }
             }
@@ -3908,7 +3908,7 @@ public class IdentySdk {
             int i152 = (i142 ^ 6) + ((i142 & 6) << 1);
             int i162 = ((i152 >> 22) - 2047) / 1024;
             int i172 = (i162 ^ 1) + ((i162 & 1) << 1);
-            this.toJson = 11046 / (((-((i172 ^ 1) + ((i172 & 1) << 1))) & i152) * 1841);
+            this.toJson = false;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -4062,7 +4062,7 @@ public class IdentySdk {
                     int i16 = i15 >> 29;
                     int i17 = ((i16 & (-15)) + (i16 | (-15))) / 8;
                     int i18 = ((i17 | 1) << 1) - (i17 ^ 1);
-                    this.getWidth = 6720 / (((-((i18 & 1) + (i18 | 1))) & i15) * 1680);
+                    this.getWidth = false;
                     return this;
                 }
             }
@@ -4091,7 +4091,7 @@ public class IdentySdk {
             int i162 = i152 >> 29;
             int i172 = ((i162 & (-15)) + (i162 | (-15))) / 8;
             int i182 = ((i172 | 1) << 1) - (i172 ^ 1);
-            this.getWidth = 6720 / (((-((i182 & 1) + (i182 | 1))) & i152) * 1680);
+            this.getWidth = false;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -4157,7 +4157,7 @@ public class IdentySdk {
                 int i13 = -(i11 ^ IdentyB.e((i12 | (-16383)) << 1, i12 ^ (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1));
                 int i14 = (i13 ^ 2) + ((i13 & 2) << 1);
                 int e = IdentyB.e(i14 >> 21, 4095, 2048, -1);
-                this.getTemplates = 414 / (((-((e ^ 1) + ((e & 1) << 1))) & i14) * 207);
+                this.getTemplates = false;
                 this.getHeight = z2;
                 this.getIdentyQuality = z;
                 this.setSpoofScore = i;
@@ -4190,7 +4190,7 @@ public class IdentySdk {
             int i132 = -(i112 ^ IdentyB.e((i122 | (-16383)) << 1, i122 ^ (-16383), ConstantsKt.DEFAULT_BUFFER_SIZE, -1));
             int i142 = (i132 ^ 2) + ((i132 & 2) << 1);
             int e2 = IdentyB.e(i142 >> 21, 4095, 2048, -1);
-            this.getTemplates = 414 / (((-((e2 ^ 1) + ((e2 & 1) << 1))) & i142) * 207);
+            this.getTemplates = false;
             this.getHeight = z2;
             this.getIdentyQuality = z;
             this.setSpoofScore = i;
@@ -7556,7 +7556,7 @@ public class IdentySdk {
                     int i17 = (i16 & 8) + (i16 | 8);
                     int i18 = ((i17 >> 22) - 2047) / 1024;
                     int i19 = (i18 & 1) + (i18 | 1);
-                    return 0 / (((-((i19 & 1) + (i19 | 1))) & i17) * 1253);
+                    return false;
                 }
             }
             byte[] bArr = $$d;
@@ -8871,7 +8871,7 @@ public class IdentySdk {
                     int i18 = i17 >> 18;
                     int i19 = (((i18 | (-32767)) << 1) - (i18 ^ (-32767))) / 16384;
                     int i20 = (i19 & 1) + (i19 | 1);
-                    return 4170 / (((-((i20 ^ 1) + ((i20 & 1) << 1))) & i17) * 1390);
+                    return false;
                 }
             }
             byte[] bArr = $$d;
@@ -8900,7 +8900,7 @@ public class IdentySdk {
             int i182 = i172 >> 18;
             int i192 = (((i182 | (-32767)) << 1) - (i182 ^ (-32767))) / 16384;
             int i202 = (i192 & 1) + (i192 | 1);
-            return 4170 / (((-((i202 ^ 1) + ((i202 & 1) << 1))) & i172) * 1390);
+            return false;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -10229,7 +10229,7 @@ public class IdentySdk {
                     int i14 = i13 >> 28;
                     int i15 = (((i14 | (-31)) << 1) - (i14 ^ (-31))) / 16;
                     int i16 = (i15 ^ 1) + ((i15 & 1) << 1);
-                    this.setFingers = 2088 / (((-((i16 & 1) + (i16 | 1))) & i13) * 522);
+                    this.setFingers = false;
                     return this;
                 }
             }
@@ -10260,7 +10260,7 @@ public class IdentySdk {
             int i142 = i132 >> 28;
             int i152 = (((i142 | (-31)) << 1) - (i142 ^ (-31))) / 16;
             int i162 = (i152 ^ 1) + ((i152 & 1) << 1);
-            this.setFingers = 2088 / (((-((i162 & 1) + (i162 | 1))) & i132) * 522);
+            this.setFingers = false;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -11919,7 +11919,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:85:0x01ca, code lost:
     
-        return 0;
+        return false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:87:0x0164, code lost:
     
@@ -11972,7 +11972,7 @@ public class IdentySdk {
                             int i18 = 41 / 0;
                         }
                     }
-                    return 0;
+                    return false;
                 }
             }
             byte[] bArr = $$d;
@@ -12006,7 +12006,7 @@ public class IdentySdk {
                 if (i % 2 == 0) {
                 }
             }
-            return 0;
+            return false;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -13073,7 +13073,7 @@ public class IdentySdk {
                     int i16 = i15 >> 29;
                     int i17 = (((i16 | (-15)) << 1) - (i16 ^ (-15))) / 8;
                     int i18 = (i17 & 1) + (i17 | 1);
-                    this.FingerActivity = 731 / (((-((i18 & 1) + (i18 | 1))) & i15) * 731);
+                    this.FingerActivity = false;
                     return this;
                 }
             }
@@ -13102,7 +13102,7 @@ public class IdentySdk {
             int i162 = i152 >> 29;
             int i172 = (((i162 | (-15)) << 1) - (i162 ^ (-15))) / 8;
             int i182 = (i172 & 1) + (i172 | 1);
-            this.FingerActivity = 731 / (((-((i182 & 1) + (i182 | 1))) & i152) * 731);
+            this.FingerActivity = false;
             return this;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -13536,7 +13536,7 @@ public class IdentySdk {
                     int i20 = (i19 ^ 1) + ((i19 & 1) << 1);
                     int i21 = ((i20 >> 29) - 15) / 8;
                     int i22 = (i21 & 1) + (i21 | 1);
-                    this.getCaptureTime = 0 / (((-((i22 & 1) + (i22 | 1))) & i20) * 859);
+                    this.getCaptureTime = false;
                     this.S0 = publicKey;
                     deduplication = (generateST + 45) % 128;
                     return this;
@@ -13567,7 +13567,7 @@ public class IdentySdk {
             int i202 = (i192 ^ 1) + ((i192 & 1) << 1);
             int i212 = ((i202 >> 29) - 15) / 8;
             int i222 = (i212 & 1) + (i212 | 1);
-            this.getCaptureTime = 0 / (((-((i222 & 1) + (i222 | 1))) & i202) * 859);
+            this.getCaptureTime = false;
             this.S0 = publicKey;
             deduplication = (generateST + 45) % 128;
             return this;
@@ -13786,7 +13786,7 @@ public class IdentySdk {
                     int i12 = i10 >> 27;
                     int i13 = (-(i11 ^ IdentyB.a(i12 & (-63), i12 | (-63), 32, -1))) + 6;
                     int e2 = IdentyB.e(i13 >> 27, 63, 32, -1);
-                    return 3372 / ((i13 & (-((e2 & 1) + (e2 | 1)))) * 562);
+                    return false;
                 }
             }
             byte[] bArr2 = $$d;
@@ -13826,7 +13826,7 @@ public class IdentySdk {
             int i122 = i102 >> 27;
             int i132 = (-(i112 ^ IdentyB.a(i122 & (-63), i122 | (-63), 32, -1))) + 6;
             int e22 = IdentyB.e(i132 >> 27, 63, 32, -1);
-            return 3372 / ((i132 & (-((e22 & 1) + (e22 | 1)))) * 562);
+            return false;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -14069,7 +14069,7 @@ public class IdentySdk {
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x023e, code lost:
     
-        return 9905 / (((-((0 & 1) + (0 | 1))) & 0) * 1415);
+        return false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x01c8, code lost:
     
@@ -14406,7 +14406,7 @@ public class IdentySdk {
                     int i16 = (i15 & 2) + (i15 | 2);
                     int i17 = i16 >> 16;
                     int a = IdentyB.a(i17 ^ (-131071), (i17 & (-131071)) << 1, 65536, -1);
-                    this.g = 0 / (((-((a ^ 1) + ((a & 1) << 1))) & i16) * 368);
+                    this.g = false;
                     this.h = new HashMap();
                     this.i = new HashMap();
                     this.Capture2TActivity = new Finger[]{Finger.INDEX, Finger.MIDDLE, Finger.RING, Finger.LITTLE, Finger.THUMB};
@@ -14503,7 +14503,7 @@ public class IdentySdk {
             int i162 = (i152 & 2) + (i152 | 2);
             int i172 = i162 >> 16;
             int a2 = IdentyB.a(i172 ^ (-131071), (i172 & (-131071)) << 1, 65536, -1);
-            this.g = 0 / (((-((a2 ^ 1) + ((a2 & 1) << 1))) & i162) * 368);
+            this.g = false;
             this.h = new HashMap();
             this.i = new HashMap();
             this.Capture2TActivity = new Finger[]{Finger.INDEX, Finger.MIDDLE, Finger.RING, Finger.LITTLE, Finger.THUMB};
@@ -14637,7 +14637,7 @@ public class IdentySdk {
                             int i19 = ((i18 >> 21) - 4095) / 2048;
                             int i0 = 550 / (((-(((i19 ^ 1) + ((i19 & 1) << 1)) + 1)) & i18) * 275);
                             deduplication = (generateST + 21) % 128;
-                            return 0;
+                            return false;
                         }
                     }
                     a(fingerDetectionMode);
@@ -14664,7 +14664,7 @@ public class IdentySdk {
                     int i192 = ((i182 >> 21) - 4095) / 2048;
                     int i0 = 550 / (((-(((i192 ^ 1) + ((i192 & 1) << 1)) + 1)) & i182) * 275);
                     deduplication = (generateST + 21) % 128;
-                    return 0;
+                    return false;
                 } catch (Exception unused) {
                     return false;
                 }
@@ -14824,7 +14824,7 @@ public class IdentySdk {
                     int i23 = i22 >> 17;
                     int i24 = ((i23 & (-65535)) + (i23 | (-65535))) / 32768;
                     int i25 = (i24 ^ 1) + ((i24 & 1) << 1);
-                    return 4767 / (((-((i25 ^ 1) + ((i25 & 1) << 1))) & i22) * 681);
+                    return false;
                 }
             }
             byte[] bArr2 = $$d;
@@ -14870,7 +14870,7 @@ public class IdentySdk {
             int i232 = i222 >> 17;
             int i242 = ((i232 & (-65535)) + (i232 | (-65535))) / 32768;
             int i252 = (i242 ^ 1) + ((i242 & 1) << 1);
-            return 4767 / (((-((i252 ^ 1) + ((i252 & 1) << 1))) & i222) * 681);
+            return false;
         } catch (Throwable th3) {
             Throwable cause = th3.getCause();
             if (cause != null) {

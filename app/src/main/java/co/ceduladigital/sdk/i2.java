@@ -48,7 +48,7 @@ public final class i2 extends SuspendLambda implements Function2<Object, Object,
     public final Object invokeSuspend(Object obj) {
         String str;
         String str2;
-        String str3;
+        String str3 = "";
         IntrinsicsKt.getCOROUTINE_SUSPENDED();
         ResultKt.throwOnFailure(obj);
         ClassPracticeBeforeFragment classPracticeBeforeFragment = this.a;
