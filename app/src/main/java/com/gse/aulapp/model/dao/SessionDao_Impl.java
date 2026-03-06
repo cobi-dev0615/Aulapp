@@ -2566,7 +2566,7 @@ public final class SessionDao_Impl implements SessionDao {
                 int i46 = 0;
                 String str5 = null;
                 Cursor query = DBUtil.query(SessionDao_Impl.this.__db, simpleSQLiteQuery, true, null);
-                try {
+                {
                     int columnIndex = CursorUtil.getColumnIndex(query, "id");
                     int columnIndex2 = CursorUtil.getColumnIndex(query, "date");
                     int columnIndex3 = CursorUtil.getColumnIndex(query, "start");
@@ -12521,10 +12521,6 @@ public final class SessionDao_Impl implements SessionDao {
                     ArrayList arrayList5 = arrayList3;
                     query.close();
                     return arrayList5;
-                } catch (Throwable th2) {
-                    cursor = query;
-                    cursor.close();
-                    throw new RuntimeException(th2);
                 }
             }
         }, continuation);
