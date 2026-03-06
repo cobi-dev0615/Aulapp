@@ -11047,7 +11047,7 @@ public class IdentySdk {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                     int i3 = ~startElapsedRealtime;
-                    int c = defpackage.a.c(startElapsedRealtime | (-794791673), 54, (((~(i3 | 655327480)) | (~((-655327481) | startElapsedRealtime)) | (-794791673)) * 54) + (((~((-156438201) | i3)) | android.R.style.Widget.Holo.Light.Button.Inset) * (-108)) + 1242291355, -1031448196);
+                    int c = defpackage.a.c(startElapsedRealtime | (-794791673), 54, (((~(i3 | 655327480)) | (~((-655327481) | startElapsedRealtime)) | (-794791673)) * 54) + (((~((-156438201) | i3)) | 0) * (-108)) + 1242291355, -1031448196);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -12859,7 +12859,7 @@ public class IdentySdk {
                         if (i % 2 != 0) {
                             int i19 = 49 / 0;
                         }
-                        return 0;
+                        return false;
                     }
                 }
                 byte[] bArr2 = $$d;
@@ -12894,7 +12894,7 @@ public class IdentySdk {
                 deduplication = i % 128;
                 if (i % 2 != 0) {
                 }
-                return 0;
+                return false;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {

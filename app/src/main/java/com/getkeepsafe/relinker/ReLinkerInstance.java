@@ -76,7 +76,7 @@ public class ReLinkerInstance {
                         elfParser = null;
                     }
                 }
-            } catch (IOException unused) {
+            } catch (Exception unused) {
             }
             reLinkerInstance.libraryLoader.loadPath(workaroundLibFile.getAbsolutePath());
             reLinkerInstance.loadedLibraries.add(str);
