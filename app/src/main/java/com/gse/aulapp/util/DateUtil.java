@@ -48,15 +48,15 @@ public abstract class DateUtil {
         }
 
         public final String convert24hTo12h(String date) {
-            String replaceAfter$default;
+            String replaceAfterResult;
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm a", Locale.getDefault());
             String str = null;
             Date parseDate = parseDate(date, "HH:mm", null);
             if (parseDate != null) {
                 String format = simpleDateFormat.format(parseDate);
                 Intrinsics.checkNotNullExpressionValue(format, "format(...)");
-                replaceAfter$default = StringsKt.replaceAfter$default(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(StringsKt.t(format, "AM", "am"), "A.M", "am"), "PM", "pm"), "P.M", "pm"), "p.", "p"), "a.", "a"), "m.", "m"), "a", "m", (String) null, 4, (Object) null);
-                str = StringsKt.replaceAfter$default(replaceAfter$default, "p", "m", (String) null, 4, (Object) null);
+                replaceAfterResult = StringsKt.replaceAfterResult(format.replace("AM", "am").replace("A.M", "am").replace("PM", "pm").replace("P.M", "pm").replace("p.", "p").replace("a.", "a").replace("m.", "m"), "a", "m", (String) null, 4, (Object) null);
+                str = StringsKt.replaceAfterResult(replaceAfterResult, "p", "m", (String) null, 4, (Object) null);
             }
             return str == null ? BuildConfig.FLAVOR : str;
         }
@@ -200,7 +200,7 @@ public abstract class DateUtil {
             String replaceFirst$default;
             String str = new DateFormatSymbols(Locale.getDefault()).getMonths()[currentMonth];
             Intrinsics.checkNotNull(str);
-            replaceFirst$default = StringsKt.replaceFirst$default(str, str.charAt(0), Character.toUpperCase(str.charAt(0)), false, 4, (Object) null);
+            replaceFirst$default = StringsKt.replaceFirst(str, str.charAt(0), Character.toUpperCase(str.charAt(0)), false);
             return replaceFirst$default;
         }
 
@@ -209,7 +209,7 @@ public abstract class DateUtil {
             Intrinsics.checkNotNullParameter(selection, "selection");
             String format = new SimpleDateFormat("MMMM", Locale.getDefault()).format(selection);
             Intrinsics.checkNotNull(format);
-            replaceFirst$default = StringsKt.replaceFirst$default(format, format.charAt(0), Character.toUpperCase(format.charAt(0)), false, 4, (Object) null);
+            replaceFirst$default = StringsKt.replaceFirst(format, format.charAt(0), Character.toUpperCase(format.charAt(0)), false);
             return replaceFirst$default;
         }
 
@@ -283,7 +283,7 @@ public abstract class DateUtil {
             equals = StringsKt.equals(str, "AM", true);
             String str2 = equals ? "AM" : "PM";
             if (str != null) {
-                String t = format != null ? StringsKt.t(format, str, str2) : null;
+                String t = format != null ? format.replace(str, str2) : null;
                 if (t != null) {
                     return t;
                 }

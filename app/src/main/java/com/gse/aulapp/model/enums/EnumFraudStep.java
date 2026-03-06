@@ -29,7 +29,7 @@ public final class EnumFraudStep {
     static {
         EnumFraudStep[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
     private EnumFraudStep(String str, int i) {

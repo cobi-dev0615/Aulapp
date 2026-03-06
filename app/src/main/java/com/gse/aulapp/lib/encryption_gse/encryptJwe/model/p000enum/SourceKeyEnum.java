@@ -23,7 +23,7 @@ public final class SourceKeyEnum {
     static {
         SourceKeyEnum[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
     private SourceKeyEnum(String str, int i) {

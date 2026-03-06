@@ -517,7 +517,7 @@ public final class DialogNormalUtil {
         Job launch$default;
         Job job = updateSpeedJob;
         if (job != null) {
-            Job.DefaultImpls.cancel$default(job, null, 1, null);
+            job.cancel(null);
         }
         launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(viewModel), (CoroutineContext) null, (CoroutineStart) null, new DialogNormalUtil$updateDialogExamSpeedInfo$1(viewModel, null));
         updateSpeedJob = launch$default;
@@ -593,7 +593,7 @@ public final class DialogNormalUtil {
         TextView textView2 = dialogExamInfoLayoutBinding4.tvMinimunTime;
         String string = context.getResources().getString(R.string.txt_minimum_time);
         Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
-        textView2.setText(StringsKt.t(string, "[TIME]", minimumClassMinutes));
+        textView2.setText(string.replace("[TIME]", minimumClassMinutes));
         Dialog dialog4 = dialogExamInfo;
         Intrinsics.checkNotNull(dialog4);
         dialog4.show();

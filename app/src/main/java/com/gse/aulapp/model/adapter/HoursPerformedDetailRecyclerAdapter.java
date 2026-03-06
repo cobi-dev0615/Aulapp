@@ -53,7 +53,7 @@ public final class HoursPerformedDetailRecyclerAdapter extends RecyclerView.Adap
         Intrinsics.checkNotNullParameter(nameShow, "nameShow");
         CharSequence text = context.getText(R.string.txt_practice_exams_title_class_card);
         Intrinsics.checkNotNullExpressionValue(text, "getText(...)");
-        binding.includeHoursPerformedCardDetail.tvPracticeClassTitleClassCard.setText(StringsKt.t(text.toString(), "[TYPE]", nameShow));
+        binding.includeHoursPerformedCardDetail.tvPracticeClassTitleClassCard.setText(text.toString().replace("[TYPE]", nameShow));
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

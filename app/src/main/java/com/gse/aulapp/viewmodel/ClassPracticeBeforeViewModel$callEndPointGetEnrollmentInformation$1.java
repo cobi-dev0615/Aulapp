@@ -69,7 +69,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
             if (i == 0) {
                 ResultKt.throwOnFailure(obj);
                 Throwable th = (Throwable) this.L$0;
-                LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$activity, "endPointGetEnrollmentInformation catch: " + th, null, false, 12, null);
+                LogSendUtil.INSTANCE.setLog(this.$activity, "endPointGetEnrollmentInformation catch: " + th, null, false);
                 mutableSharedFlow = this.this$0._message;
                 Status.Failure failure = new Status.Failure(th);
                 this.label = 1;
@@ -143,7 +143,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
             }
             ResultKt.throwOnFailure(obj);
         }
-        LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$activity, "endPointGetEnrollmentInformation Request: " + this.$getEnrollmentInformationRequest, null, false, 12, null);
+        LogSendUtil.INSTANCE.setLog(this.$activity, "endPointGetEnrollmentInformation Request: " + this.$getEnrollmentInformationRequest, null, false);
         getEnrollmentInformationRepository = this.this$0.enrollmentInformationRepository;
         Flow m1541catch = FlowKt.m1541catch(getEnrollmentInformationRepository.getGetEnrollmentInformation(this.$activity, this.$getEnrollmentInformationRequest), new AnonymousClass1(this.$activity, this.this$0, null));
         final Activity activity = this.$activity;
@@ -217,7 +217,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
                             GetEnrollmentInformationResponse data = this.$apiResponse.getData();
                             GetEnrollmentInformationResponse.Result result3 = data != null ? data.getResult() : null;
                             GetEnrollmentInformationResponse data2 = this.$apiResponse.getData();
-                            LogSendUtil.Companion.setLog$default(companion, activity, "endPointGetEnrollmentInformation succes: " + result3 + ", url: " + (data2 != null ? data2.getUrl() : null), null, false, 12, null);
+                            companion.setLog(activity, "endPointGetEnrollmentInformation succes: " + result3 + ", url: " + (data2 != null ? data2.getUrl() : null), null, false);
                             GetEnrollmentInformationResponse data3 = this.$apiResponse.getData();
                             if ((data3 != null ? data3.getResult() : null) != null) {
                                 UserInfoDto userInfoDto = this.$userInfo;
@@ -255,7 +255,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
                             GetEnrollmentInformationResponse data6 = this.$apiResponse.getData();
                             GetEnrollmentInformationResponse.Result result7 = data6 != null ? data6.getResult() : null;
                             GetEnrollmentInformationResponse data7 = this.$apiResponse.getData();
-                            LogSendUtil.Companion.setLog$default(companion2, activity2, "endPointGetEnrollmentInformation result: " + result7 + ", url: " + (data7 != null ? data7.getUrl() : null), null, false, 12, null);
+                            companion2.setLog(activity2, "endPointGetEnrollmentInformation result: " + result7 + ", url: " + (data7 != null ? data7.getUrl() : null), null, false);
                             mutableSharedFlow = this.this$0._messageGetEnrollmentInformation;
                             Status.Exception exception3 = new Status.Exception(String.valueOf(this.$apiResponse.getMessage()));
                             this.label = 4;

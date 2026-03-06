@@ -94,7 +94,7 @@ public final class HistoricRecordPermissionsChangeRepository {
                     try {
                         obj = null;
                         context2 = context;
-                        LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, context2, "syncHistoricPermissionChange request: " + historicRecordPermissionsChangeRequest, null, false, 12, null);
+                        LogSendUtil.INSTANCE.setLog(context2, "syncHistoricPermissionChange request: " + historicRecordPermissionsChangeRequest, null, false);
                         HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1 historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1 = new HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1(context2, historicRecordPermissionsChangeRequest, null);
                         historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$12.L$0 = this;
                         historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$12.L$1 = context2;
@@ -128,7 +128,7 @@ public final class HistoricRecordPermissionsChangeRepository {
                         try {
                             Response response = (Response) obj2;
                             if (response != null) {
-                                LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, context3, "syncHistoricPermissionChange response: " + response + "}", null, false, 12, null);
+                                LogSendUtil.INSTANCE.setLog(context3, "syncHistoricPermissionChange response: " + response + "}", null, false);
                                 if (response.isSuccessful() && num2 != null) {
                                     int intValue = num2.intValue();
                                     historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$12.L$0 = context3;

@@ -77,7 +77,7 @@ public abstract class EnumDeviceSecurity {
     static {
         EnumDeviceSecurity[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
     public /* synthetic */ EnumDeviceSecurity(String str, int i, DefaultConstructorMarker defaultConstructorMarker) {

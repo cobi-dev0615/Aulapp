@@ -24,7 +24,7 @@ public final class EnumTypeOfIncome {
     static {
         EnumTypeOfIncome[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
     private EnumTypeOfIncome(String str, int i) {

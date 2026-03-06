@@ -159,13 +159,13 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
         Parameters.INSTANCE.setPARAMETER_TYPE_LOGGIN(EnumTypeOfIncome.REFRESHTOKEN);
         RefreshTokenRequest refreshTokenRequest = this.$tokenRefreshRequest;
         if (refreshTokenRequest != null) {
-            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "refreshToken request: " + refreshTokenRequest, null, false, 12, null);
+            LogSendUtil.INSTANCE.setLog(this.$context, "refreshToken request: " + refreshTokenRequest, null, false);
             refreshTokenRepository = this.this$0.tokenRefreshRepository;
             Flow m1541catch = FlowKt.m1541catch(refreshTokenRepository.refreshToken(this.$context, this.$tokenRefreshRequest), new AnonymousClass1(this.$context, this.$tokenRefreshRequest, this.this$0, null));
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$context, this.this$0);
             this.label = 2;
         } else {
-            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "refreshToken error: User or pass is null", null, false, 12, null);
+            LogSendUtil.INSTANCE.setLog(this.$context, "refreshToken error: User or pass is null", null, false);
             mutableSharedFlow2 = this.this$0._messageRefreshToken;
             Status.Failure failure = new Status.Failure(new Exception("User or pass is null"));
             this.label = 3;
@@ -330,14 +330,14 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
                                     if (mutableSharedFlow5.emit(success, firstLoginViewModel$refreshToken$1$2$emit$1) != coroutine_suspended) {
                                         anonymousClass2 = this;
                                         apiResult2 = apiResult;
-                                        LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, anonymousClass2.$context, "refreshToken success: " + apiResult2.getData().getResult() + ", url: " + apiResult2.getData().getUrl(), null, false, 12, null);
+                                        LogSendUtil.INSTANCE.setLog(anonymousClass2.$context, "refreshToken success: " + apiResult2.getData().getResult() + ", url: " + apiResult2.getData().getUrl(), null, false);
                                     }
                                 } else {
                                     LogSendUtil.Companion companion3 = LogSendUtil.INSTANCE;
                                     Context context4 = this.$context;
                                     RefreshTokenResponse.Result result25 = apiResult.getData().getResult();
                                     RefreshTokenResponse data12 = apiResult.getData();
-                                    LogSendUtil.Companion.setLog$default(companion3, context4, "refreshToken error: " + result25 + ", url: " + (data12 != null ? data12.getUrl() : null), null, false, 12, null);
+                                    companion3.setLog(context4, "refreshToken error: " + result25 + ", url: " + (data12 != null ? data12.getUrl() : null), null, false);
                                     mutableSharedFlow4 = this.this$0._messageRefreshToken;
                                     Status.Empty empty = Status.Empty.INSTANCE;
                                     firstLoginViewModel$refreshToken$1$2$emit$1.label = 2;
@@ -348,7 +348,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
                                 RefreshTokenResponse data13 = apiResult.getData();
                                 RefreshTokenResponse.Result result26 = data13 != null ? data13.getResult() : null;
                                 RefreshTokenResponse data14 = apiResult.getData();
-                                LogSendUtil.Companion.setLog$default(companion4, context5, "refreshToken error: " + result26 + ", url: " + (data14 != null ? data14.getUrl() : null), null, false, 12, null);
+                                companion4.setLog(context5, "refreshToken error: " + result26 + ", url: " + (data14 != null ? data14.getUrl() : null), null, false);
                                 mutableSharedFlow3 = this.this$0._messageRefreshToken;
                                 RefreshTokenResponse data15 = apiResult.getData();
                                 if (data15 != null && (result = data15.getResult()) != null) {
@@ -358,7 +358,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
                                 firstLoginViewModel$refreshToken$1$2$emit$1.label = 3;
                             }
                         } else if (apiResult.getStatus() == EnumApiStatus.ERROR) {
-                            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, q.i("refreshToken error: ", apiResult.getMessage()), null, false, 12, null);
+                            LogSendUtil.INSTANCE.setLog(this.$context, q.i("refreshToken error: ", apiResult.getMessage()), null, false);
                             Integer statusCode = apiResult.getStatusCode();
                             if (statusCode != null && statusCode.intValue() == 401) {
                                 mutableSharedFlow2 = this.this$0._messageRefreshToken;
@@ -394,7 +394,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
                     apiResult2 = (ApiResult) firstLoginViewModel$refreshToken$1$2$emit$1.L$1;
                     anonymousClass2 = (AnonymousClass2) firstLoginViewModel$refreshToken$1$2$emit$1.L$0;
                     ResultKt.throwOnFailure(obj);
-                    LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, anonymousClass2.$context, "refreshToken success: " + apiResult2.getData().getResult() + ", url: " + apiResult2.getData().getUrl(), null, false, 12, null);
+                    LogSendUtil.INSTANCE.setLog(anonymousClass2.$context, "refreshToken success: " + apiResult2.getData().getResult() + ", url: " + apiResult2.getData().getUrl(), null, false);
                     return Unit.INSTANCE;
                 }
             }

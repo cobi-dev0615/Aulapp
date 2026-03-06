@@ -80,18 +80,18 @@ public abstract class ControllerFinishClassOrExamUtil {
             AlertDialog alertDialog = null;
             String valueOf = String.valueOf(context != null ? context.getText(R.string.dialog_fullscreen_pass_exam) : null);
             if (pass) {
-                t = StringsKt.t(valueOf, "[PASS]", BuildConfig.FLAVOR);
+                t = valueOf.replace("[PASS]", BuildConfig.FLAVOR);
                 Intrinsics.checkNotNull(context);
                 string = context.getString(R.string.dialog_fullscreen_pass_exam_approved);
                 i = 7;
             } else {
-                t = StringsKt.t(valueOf, "[PASS]", " NO");
+                t = valueOf.replace("[PASS]", " NO");
                 Intrinsics.checkNotNull(context);
                 string = context.getString(R.string.dialog_fullscreen_pass_exam_not_approved);
                 i = 6;
             }
             int i2 = i;
-            String t2 = StringsKt.t(StringsKt.t(t, "[APPROVED]", String.valueOf(approved)), "[NOAPPROVED]", String.valueOf(noApproved));
+            String t2 = t.replace("[APPROVED]", String.valueOf(approved)).replace("[NOAPPROVED]", String.valueOf(noApproved));
             DialogUtil.Companion companion = DialogUtil.INSTANCE;
             Activity activity = (Activity) context;
             if (string == null) {

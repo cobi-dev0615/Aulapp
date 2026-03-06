@@ -34,7 +34,7 @@ public abstract class SessionTestConverter {
         public final List<QuestionEntity> getQuestionEntityFromQuestionResponse(String testID, List<QuestionsResponse> questionsResponses) {
             Intrinsics.checkNotNullParameter(testID, "testID");
             Intrinsics.checkNotNullParameter(questionsResponses, "questionsResponses");
-            ArrayList arrayList = new ArrayList(CollectionsKt.e(questionsResponses));
+            ArrayList arrayList = new ArrayList(10);
             for (QuestionsResponse questionsResponse : questionsResponses) {
                 String id = questionsResponse.getId();
                 String itemID = questionsResponse.getItemID();

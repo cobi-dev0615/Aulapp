@@ -69,7 +69,7 @@ public final class ClassInCourseViewModel$getSessionDataApi$1 extends SuspendLam
         int i = this.label;
         if (i == 0) {
             ResultKt.throwOnFailure(obj);
-            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, q.i("getSessionDataApi request: ", this.$sessionID), null, false, 12, null);
+            LogSendUtil.INSTANCE.setLog(this.$context, q.i("getSessionDataApi request: ", this.$sessionID), null, false);
             sessionRepository = this.this$0.sessionRepository;
             Flow<ApiResult<SessionExamResponse>> sessionDataApi = sessionRepository.getSessionDataApi(this.$context, new SessionExamRequest(this.$sessionID));
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$context, this.this$0, this.$sessionID, this.$startChronometer, this.$findNavController);
@@ -158,7 +158,7 @@ public final class ClassInCourseViewModel$getSessionDataApi$1 extends SuspendLam
                     if (i != 0) {
                         ResultKt.throwOnFailure(obj);
                         if (apiResult instanceof ApiResult.Failure) {
-                            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "getSessionDataApi error: " + apiResult, null, false, 12, null);
+                            LogSendUtil.INSTANCE.setLog(this.$context, "getSessionDataApi error: " + apiResult, null, false);
                         } else if (apiResult instanceof ApiResult.Success) {
                             ApiResult.Success success = (ApiResult.Success) apiResult;
                             SessionExamResponse sessionExamResponse = (SessionExamResponse) success.getData();
@@ -170,7 +170,7 @@ public final class ClassInCourseViewModel$getSessionDataApi$1 extends SuspendLam
                                 SessionExamResponse sessionExamResponse2 = (SessionExamResponse) success.getData();
                                 SessionExamResponse.Result result2 = sessionExamResponse2 != null ? sessionExamResponse2.getResult() : null;
                                 SessionExamResponse sessionExamResponse3 = (SessionExamResponse) success.getData();
-                                LogSendUtil.Companion.setLog$default(companion, context, "getSessionDataApi Success: " + result2 + ", url: " + (sessionExamResponse3 != null ? sessionExamResponse3.getUrl() : null), null, false, 12, null);
+                                companion.setLog(context, "getSessionDataApi Success: " + result2 + ", url: " + (sessionExamResponse3 != null ? sessionExamResponse3.getUrl() : null), null, false);
                                 ClassInCourseViewModel classInCourseViewModel = this.this$0;
                                 String testID = test != null ? test.getTestID() : null;
                                 Intrinsics.checkNotNull(testID);

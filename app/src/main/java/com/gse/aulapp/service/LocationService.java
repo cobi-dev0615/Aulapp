@@ -68,7 +68,7 @@ public final class LocationService extends Service {
         location.getElapsedRealtimeNanos();
         String string = getString(R.string.content_notification_gps);
         Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
-        NotificationCompat.Builder contentText = notification.setContentText(StringsKt.t(StringsKt.t(string, "[LAT]", valueOf), "[LONG]", valueOf2));
+        NotificationCompat.Builder contentText = notification.setContentText(string.replace("[LAT]", valueOf).replace("[LONG]", valueOf2));
         Intrinsics.checkNotNullExpressionValue(contentText, "setContentText(...)");
         notificationManager.notify(10000002, contentText.build());
     }
@@ -124,7 +124,7 @@ public final class LocationService extends Service {
     @Override // android.app.Service
     public void onDestroy() {
         super.onDestroy();
-        CoroutineScopeKt.cancel$default(this.serviceScope, null, 1, null);
+        CoroutineScopeKt.cancel(this.serviceScope);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:16:0x0040 A[Catch: Exception -> 0x0044, TryCatch #2 {Exception -> 0x0044, blocks: (B:2:0x0000, B:16:0x0040, B:18:0x004b, B:20:0x0051, B:25:0x0063, B:47:0x0039, B:50:0x0006, B:52:0x000c, B:6:0x001d, B:8:0x0025, B:10:0x002b, B:12:0x0034, B:5:0x0017), top: B:1:0x0000, inners: #0 }] */

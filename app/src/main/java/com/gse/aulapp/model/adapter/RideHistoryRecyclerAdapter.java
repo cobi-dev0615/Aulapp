@@ -93,11 +93,11 @@ public final class RideHistoryRecyclerAdapter extends RecyclerView.Adapter<RideH
     }
 
     public final String addAMPM(String hour) {
-        List split$default;
+        List splitResult;
         Intrinsics.checkNotNullParameter(hour, "hour");
-        split$default = StringsKt.split((CharSequence) hour, new String[]{":"}, false, 0);
-        int parseInt = Integer.parseInt((String) split$default.get(0));
-        String str = (String) split$default.get(1);
+        splitResult = StringsKt.split((CharSequence) hour, new String[]{":"}, false, 0);
+        int parseInt = Integer.parseInt((String) splitResult.get(0));
+        String str = (String) splitResult.get(1);
         String str2 = parseInt >= 12 ? "pm" : "am";
         if (parseInt > 12) {
             parseInt -= 12;

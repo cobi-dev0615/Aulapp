@@ -45,6 +45,10 @@ public final /* synthetic */ class v implements ComponentRegistrarProcessor, Tra
         return componentRegistrar.getComponents();
     }
 
+    public int countLength(android.text.Editable editableText) {
+        throw new UnsupportedOperationException("Not decompiled");
+    }
+
     public /* synthetic */ v(PreviewView previewView) {
         this.a = 11;
     }

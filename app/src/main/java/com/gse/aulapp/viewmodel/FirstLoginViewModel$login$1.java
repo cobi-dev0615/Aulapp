@@ -166,7 +166,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
         Parameters.INSTANCE.setPARAMETER_TYPE_LOGGIN(EnumTypeOfIncome.LOGGIN);
         LoginRequest loginRequest = this.$loginRequest;
         if (loginRequest != null) {
-            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, q.i("Login request: ", loginRequest.getUsername()), null, false, 12, null);
+            LogSendUtil.INSTANCE.setLog(this.$context, q.i("Login request: ", loginRequest.getUsername()), null, false);
             loginRepository = this.this$0.loginRepository;
             Flow m1541catch = FlowKt.m1541catch(loginRepository.login(this.$context, this.$loginRequest), new AnonymousClass1(this.$context, this.this$0, null));
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.this$0, this.$context);
@@ -247,7 +247,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
             DataLoginDto data2;
             DataLoginDto data3;
             DataLoginDto data4;
-            boolean equals$default;
+            boolean equalsResult;
             DataLoginDto data5;
             DataLoginDto data6;
             Boolean biometricException;
@@ -272,7 +272,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                                     LoginResponse data8 = apiResult.getData();
                                     LoginResponse.Result result6 = data8 != null ? data8.getResult() : null;
                                     LoginResponse data9 = apiResult.getData();
-                                    LogSendUtil.Companion.setLog$default(companion, context, "Login Error:  " + result6 + ",  url: " + (data9 != null ? data9.getUrl() : null), null, false, 12, null);
+                                    companion.setLog(context, "Login Error:  " + result6 + ",  url: " + (data9 != null ? data9.getUrl() : null), null, false);
                                     Integer statusCode = apiResult.getStatusCode();
                                     if (statusCode == null || statusCode.intValue() != 401) {
                                         mutableSharedFlow = this.this$0._message;
@@ -307,7 +307,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                                     LoginResponse data12 = apiResult2.getData();
                                     LoginResponse.Result result7 = data12 != null ? data12.getResult() : null;
                                     LoginResponse data13 = apiResult2.getData();
-                                    LogSendUtil.Companion.setLog$default(companion2, context2, "Login: Token is null error: " + result7 + ", url: " + (data13 != null ? data13.getUrl() : null), null, false, 12, null);
+                                    companion2.setLog(context2, "Login: Token is null error: " + result7 + ", url: " + (data13 != null ? data13.getUrl() : null), null, false);
                                     mutableSharedFlow3 = anonymousClass2.this$0._message;
                                     LoginResponse data14 = apiResult2.getData();
                                     Status.Failure failure3 = new Status.Failure(new Exception((data14 == null || (result3 = data14.getResult()) == null) ? null : result3.getMessage()));
@@ -374,8 +374,8 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                                             Iterator<T> it = centerList.iterator();
                                             while (it.hasNext()) {
                                                 CenterDto r7 = (CenterDto) it.next();
-                                                equals$default = StringsKt.equals$default(r7.getCenterID(), centerID, false, 2, null);
-                                                if (equals$default) {
+                                                equalsResult = r7.getCenterID() != null ? r7.getCenterID().equals(centerID) : centerID == null;
+                                                if (equalsResult) {
                                                     objectRef.element = r7;
                                                 }
                                             }
@@ -419,7 +419,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                                         if (mutableSharedFlow4.emit(success, firstLoginViewModel$login$1$2$emit$1) != coroutine_suspended) {
                                             apiResult3 = apiResult2;
                                             anonymousClass22 = anonymousClass2;
-                                            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, anonymousClass22.$context, "Login Result Success:  " + apiResult3.getData().getResult() + ", url: " + apiResult3.getData().getUrl(), null, false, 12, null);
+                                            LogSendUtil.INSTANCE.setLog(anonymousClass22.$context, "Login Result Success:  " + apiResult3.getData().getResult() + ", url: " + apiResult3.getData().getUrl(), null, false);
                                             return Unit.INSTANCE;
                                         }
                                     }
@@ -444,7 +444,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                             apiResult3 = (ApiResult) firstLoginViewModel$login$1$2$emit$1.L$1;
                             anonymousClass22 = (AnonymousClass2) firstLoginViewModel$login$1$2$emit$1.L$0;
                             ResultKt.throwOnFailure(obj);
-                            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, anonymousClass22.$context, "Login Result Success:  " + apiResult3.getData().getResult() + ", url: " + apiResult3.getData().getUrl(), null, false, 12, null);
+                            LogSendUtil.INSTANCE.setLog(anonymousClass22.$context, "Login Result Success:  " + apiResult3.getData().getResult() + ", url: " + apiResult3.getData().getUrl(), null, false);
                             return Unit.INSTANCE;
                         case 4:
                             ResultKt.throwOnFailure(obj);

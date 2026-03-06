@@ -128,7 +128,7 @@ public final class ClassInCourseViewModel$moveToNextQuestion$1$1 extends Suspend
             }
             List<QuestionDto> list2 = this.$questions;
             ClassInCourseViewModel classInCourseViewModel = this.this$0;
-            ArrayList arrayList = new ArrayList(CollectionsKt.e(list2));
+            ArrayList arrayList = new ArrayList(10);
             for (Object obj2 : list2) {
                 int i4 = i2 + 1;
                 if (i2 < 0) {

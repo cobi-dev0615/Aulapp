@@ -128,7 +128,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
             int i = this.label;
             try {
             } catch (Exception e) {
-                LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, q.i("sendPracticeExamSync  updateDateEndClass exception ", e.getMessage()), null, false, 12, null);
+                LogSendUtil.INSTANCE.setLog(this.$context, q.i("sendPracticeExamSync  updateDateEndClass exception ", e.getMessage()), null, false);
                 String unused = ControllerFinishClassOrExamUtil.TAG;
                 e.getMessage();
             }
@@ -141,7 +141,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                     long longValue = dateLong.longValue();
                     this.label = 1;
                 }
-                LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, q.i("sendPracticeExamSync request ", this.$sessionID), null, false, 12, null);
+                LogSendUtil.INSTANCE.setLog(this.$context, q.i("sendPracticeExamSync request ", this.$sessionID), null, false);
                 Flow m1541catch = FlowKt.m1541catch(this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID), new AnonymousClass2(this.$context, null));
                 AnonymousClass3 anonymousClass3 = new AnonymousClass3(this.$repository, this.$sessionID, this.$context, this.$findNavController, this.$navDirections);
                 this.label = 2;
@@ -155,7 +155,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                 }
                 ResultKt.throwOnFailure(obj);
             }
-            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, q.i("sendPracticeExamSync request ", this.$sessionID), null, false, 12, null);
+            LogSendUtil.INSTANCE.setLog(this.$context, q.i("sendPracticeExamSync request ", this.$sessionID), null, false);
             Flow m1541catch2 = FlowKt.m1541catch(this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID), new AnonymousClass2(this.$context, null));
             AnonymousClass3 anonymousClass32 = new AnonymousClass3(this.$repository, this.$sessionID, this.$context, this.$findNavController, this.$navDirections);
             this.label = 2;
@@ -306,13 +306,13 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                         int intValue = validateQuestionsStatus.component1().intValue();
                         int intValue2 = validateQuestionsStatus.component2().intValue();
                         LogSendUtil.Companion companion = LogSendUtil.INSTANCE;
-                        LogSendUtil.Companion.setLog$default(companion, anonymousClass3.$context, "sendPracticeExamSync result " + ((apiResult2 != null || (data4 = apiResult2.getData()) == null) ? null : data4.getResult()) + ", url: " + ((apiResult2 != null || (data3 = apiResult2.getData()) == null) ? null : data3.getUrl()), null, false, 12, null);
+                        companion.setLog(anonymousClass3.$context, "sendPracticeExamSync result " + ((apiResult2 != null || (data4 = apiResult2.getData()) == null) ? null : data4.getResult()) + ", url: " + ((apiResult2 != null || (data3 = apiResult2.getData()) == null) ? null : data3.getUrl()), null, false);
                         if ((apiResult2 == null ? apiResult2.getStatus() : null) != EnumApiStatus.SUCCESS) {
                             Context context = anonymousClass3.$context;
                             SessionPracticeExamResponse data6 = apiResult2.getData();
                             SessionPracticeExamResponse.Result result2 = data6 != null ? data6.getResult() : null;
                             SessionPracticeExamResponse data7 = apiResult2.getData();
-                            LogSendUtil.Companion.setLog$default(companion, context, "sendPracticeExamSync result " + result2 + ", url: " + (data7 != null ? data7.getUrl() : null), null, false, 12, null);
+                            companion.setLog(context, "sendPracticeExamSync result " + result2 + ", url: " + (data7 != null ? data7.getUrl() : null), null, false);
                             try {
                                 sessionRepository = anonymousClass3.$repository;
                                 str = anonymousClass3.$sessionID;
@@ -358,7 +358,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                                 return Unit.INSTANCE;
                             }
                         } else {
-                            LogSendUtil.Companion.setLog$default(companion, anonymousClass3.$context, "sendPracticeExamSync error " + ((apiResult2 == null || (data2 = apiResult2.getData()) == null) ? null : data2.getResult()) + ", url: " + ((apiResult2 == null || (data = apiResult2.getData()) == null) ? null : data.getUrl()), null, false, 12, null);
+                            companion.setLog(anonymousClass3.$context, "sendPracticeExamSync error " + ((apiResult2 == null || (data2 = apiResult2.getData()) == null) ? null : data2.getResult()) + ", url: " + ((apiResult2 == null || (data = apiResult2.getData()) == null) ? null : data.getUrl()), null, false);
                             try {
                                 SessionRepository sessionRepository3 = anonymousClass3.$repository;
                                 String str3 = anonymousClass3.$sessionID;
@@ -390,7 +390,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                 }
                 if (apiResult2 != null) {
                 }
-                LogSendUtil.Companion.setLog$default(companion2, anonymousClass3.$context, "sendPracticeExamSync result " + ((apiResult2 != null || (data4 = apiResult2.getData()) == null) ? null : data4.getResult()) + ", url: " + ((apiResult2 != null || (data3 = apiResult2.getData()) == null) ? null : data3.getUrl()), null, false, 12, null);
+                companion2.setLog(anonymousClass3.$context, "sendPracticeExamSync result " + ((apiResult2 != null || (data4 = apiResult2.getData()) == null) ? null : data4.getResult()) + ", url: " + ((apiResult2 != null || (data3 = apiResult2.getData()) == null) ? null : data3.getUrl()), null, false);
                 if ((apiResult2 == null ? apiResult2.getStatus() : null) != EnumApiStatus.SUCCESS) {
                 }
                 return coroutine_suspended2;

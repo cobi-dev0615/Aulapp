@@ -221,7 +221,7 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
                     if (((data == null || (result = data.getResult()) == null) ? null : result.getTime()) != null) {
                         DatetimeResponse.Result result2 = apiResult.getData().getResult();
                         if ((result2 != null ? result2.getDate() : null) != null) {
-                            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, context, "datetime succes: " + apiResult.getData().getResult() + ", url: " + apiResult.getData().getUrl(), null, false, 12, null);
+                            LogSendUtil.INSTANCE.setLog(context, "datetime succes: " + apiResult.getData().getResult() + ", url: " + apiResult.getData().getUrl(), null, false);
                             Ref.ObjectRef<String> objectRef3 = objectRef;
                             DatetimeResponse.Result result3 = apiResult.getData().getResult();
                             T t2 = result3 != null ? (T) result3.getDate() : null;
@@ -252,7 +252,7 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
                     DatetimeResponse data2 = apiResult.getData();
                     DatetimeResponse.Result result5 = data2 != null ? data2.getResult() : null;
                     DatetimeResponse data3 = apiResult.getData();
-                    LogSendUtil.Companion.setLog$default(companion2, context2, "datetime error: " + result5 + ", url: " + (data3 != null ? data3.getUrl() : null), null, false, 12, null);
+                    companion2.setLog(context2, "datetime error: " + result5 + ", url: " + (data3 != null ? data3.getUrl() : null), null, false);
                     function1.invoke(String.valueOf(new Date().getTime()));
                 } else if (i2 == 2) {
                     function1.invoke(String.valueOf(new Date().getTime()));

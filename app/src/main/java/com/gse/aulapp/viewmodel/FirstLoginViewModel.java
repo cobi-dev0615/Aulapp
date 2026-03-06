@@ -147,8 +147,8 @@ public final class FirstLoginViewModel extends ViewModel {
     }
 
     private final void validateFirstLogin(boolean firstLogin, List<CenterDto> centerListCEA, String ceaBox, Activity activity, LoginRequest loginRequest, FragmentFirstLoginBinding binding, String numberDocument, String userOrDocumentBox, String selectedCEA, String email) {
-        boolean equals$default;
-        boolean equals$default2;
+        boolean equalsResult;
+        boolean equalsResult2;
         CenterDto cea = PreferenceUtil.INSTANCE.getCEA(activity);
         if (firstLogin) {
             if (centerListCEA.isEmpty() || centerListCEA.size() <= 1) {
@@ -162,14 +162,14 @@ public final class FirstLoginViewModel extends ViewModel {
         if (firstLogin) {
             throw new NoWhenBranchMatchedException();
         }
-        equals$default = StringsKt.equals(numberDocument, userOrDocumentBox, false);
-        if (!equals$default) {
+        equalsResult = StringsKt.equals(numberDocument, userOrDocumentBox, false);
+        if (!equalsResult) {
             refreshToken(activity, new RefreshTokenRequest(BuildConfig.FLAVOR));
             return;
         }
         if (ceaBox.length() > 0) {
-            equals$default2 = StringsKt.equals(selectedCEA, cea != null ? cea.getName() : null, false);
-            if (equals$default2) {
+            equalsResult2 = StringsKt.equals(selectedCEA, cea != null ? cea.getName() : null, false);
+            if (equalsResult2) {
                 refreshToken(activity, new RefreshTokenRequest(String.valueOf(email)));
                 return;
             } else {

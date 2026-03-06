@@ -71,7 +71,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
     /* JADX WARN: Type inference failed for: r8v15, types: [com.gse.aulapp.model.dto.TagDto] */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Object invokeSuspend(Object obj) {
-        String joinToString$default;
+        String joinedString;
         boolean z;
         boolean z2;
         Ndef ndef;
@@ -91,11 +91,11 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
             if (id.length != 0) {
                 byte[] id2 = this.$tag.getId();
                 Intrinsics.checkNotNullExpressionValue(id2, "getId(...)");
-                joinToString$default = ArraysKt.joinToString$default(id2, (CharSequence) ":", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, (Function1) new b(), 30, (Object) null);
-                String t = StringsKt.t(joinToString$default, ":", BuildConfig.FLAVOR);
+                joinedString = ArraysKt.joinedString(id2, (CharSequence) ":", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, (Function1) new b(), 30, (Object) null);
+                String t = joinedString.replace(":", BuildConfig.FLAVOR);
                 String unused = NfcUtil.TAG;
                 LogSendUtil.Companion companion2 = LogSendUtil.INSTANCE;
-                LogSendUtil.Companion.setLog$default(companion2, this.$context, q.i("handlerResponseTag: Tag serial ", t), null, false, 12, null);
+                companion2.setLog(this.$context, q.i("handlerResponseTag: Tag serial ", t), null, false);
                 Ndef r15 = Ndef.get(this.$tag);
                 try {
                     try {
@@ -128,7 +128,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
                     z2 = true;
                     r19 = null;
                     try {
-                        LogSendUtil.Companion.setLog$default(companion2, this.$context, "handlerResponseTag: Ndef Message: " + payloadByTag, null, false, 12, null);
+                        companion2.setLog(this.$context, "handlerResponseTag: Ndef Message: " + payloadByTag, null, false);
                         RingtoneManager.getRingtone(this.$context, RingtoneManager.getDefaultUri(2)).play();
                         companion = payloadByTag != null ? new TagDto(payloadByTag, t) : null;
                         try {
@@ -186,7 +186,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
                 return companion2;
             }
         }
-        LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "handlerResponseTag: Tag is null or id is null", null, false, 12, null);
+        LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag: Tag is null or id is null", null, false);
         return null;
     }
 

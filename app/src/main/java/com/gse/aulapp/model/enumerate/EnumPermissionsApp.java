@@ -110,7 +110,7 @@ public abstract class EnumPermissionsApp {
     static {
         EnumPermissionsApp[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries((Enum[]) (Object[]) $values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
         INSTANCE = new Companion(null);
     }
 

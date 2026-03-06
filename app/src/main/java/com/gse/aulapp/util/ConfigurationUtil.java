@@ -75,7 +75,7 @@ public abstract class ConfigurationUtil {
                         ResultKt.throwOnFailure(obj);
                     }
                     List list = (List) obj;
-                    ArrayList arrayList = new ArrayList(CollectionsKt.e(list));
+                    ArrayList arrayList = new ArrayList(10);
                     it = list.iterator();
                     while (it.hasNext()) {
                         arrayList.add(ConfigurationUtil.INSTANCE.convertEntityToDto((ConfigurationSessionEntity) it.next()));
@@ -90,7 +90,7 @@ public abstract class ConfigurationUtil {
             if (i != 0) {
             }
             List list2 = (List) obj2;
-            ArrayList arrayList2 = new ArrayList(CollectionsKt.e(list2));
+            ArrayList arrayList2 = new ArrayList(10);
             it = list2.iterator();
             while (it.hasNext()) {
             }

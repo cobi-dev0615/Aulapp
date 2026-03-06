@@ -31,10 +31,10 @@ public final class EnumBiometrixAction {
     static {
         EnumBiometrixAction[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
         INSTANCE = new Companion(null);
         EnumEntries<EnumBiometrixAction> entries = getEntries();
-        LinkedHashMap linkedHashMap = new LinkedHashMap(RangesKt.coerceAtLeast(MapsKt.mapCapacity(CollectionsKt.e(entries)), 16));
+        LinkedHashMap linkedHashMap = new LinkedHashMap(RangesKt.coerceAtLeast(MapsKt.mapCapacity(10), 16));
         for (Object obj : entries) {
             linkedHashMap.put(((EnumBiometrixAction) obj).value, obj);
         }

@@ -125,7 +125,7 @@ public final class DialogNormalUtil$updateDialogExamSpeedInfo$1 extends SuspendL
             if (companion3.getDialogExamInfo() != null && companion3.getBindingDialogExamInfo() != null) {
                 break;
             }
-            CoroutineScopeKt.cancel$default(coroutineScope, null, 1, null);
+            CoroutineScopeKt.cancel(coroutineScope);
         }
         return coroutine_suspended;
     }

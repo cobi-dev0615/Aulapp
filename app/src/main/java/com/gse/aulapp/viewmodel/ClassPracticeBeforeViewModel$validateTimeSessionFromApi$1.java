@@ -217,7 +217,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
                 SessionInstructorResponse data2 = apiResult.getData();
                 SessionInstructorResponse.Result result5 = data2 != null ? data2.getResult() : null;
                 SessionInstructorResponse data3 = apiResult.getData();
-                LogSendUtil.Companion.setLog$default(companion, context, "validateTimeSessionFromApi success: " + result5 + ", url: " + (data3 != null ? data3.getUrl() : null), null, false, 12, null);
+                companion.setLog(context, "validateTimeSessionFromApi success: " + result5 + ", url: " + (data3 != null ? data3.getUrl() : null), null, false);
                 SessionInstructorResponse data4 = apiResult.getData();
                 if (data4 == null || (result = data4.getResult()) == null || (emptyList = result.getData()) == null) {
                     emptyList = CollectionsKt.emptyList();
@@ -227,7 +227,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
                     SessionInstructorResponse data5 = apiResult.getData();
                     SessionInstructorResponse.Result result6 = data5 != null ? data5.getResult() : null;
                     SessionInstructorResponse data6 = apiResult.getData();
-                    LogSendUtil.Companion.setLog$default(companion, context2, "validateTimeSessionFromApi error: " + result6 + ", url: " + (data6 != null ? data6.getUrl() : null), null, false, 12, null);
+                    companion.setLog(context2, "validateTimeSessionFromApi error: " + result6 + ", url: " + (data6 != null ? data6.getUrl() : null), null, false);
                     unused = this.this$0.TAG;
                     singleLiveEvent3 = this.this$0._messageValidation;
                     singleLiveEvent3.postValue(new Status.Failure(new Exception(apiResult.getMessage())));
@@ -294,7 +294,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
                 SessionInstructorResponse data7 = apiResult.getData();
                 SessionInstructorResponse.Result result7 = data7 != null ? data7.getResult() : null;
                 SessionInstructorResponse data8 = apiResult.getData();
-                LogSendUtil.Companion.setLog$default(companion3, context4, "validateTimeSessionFromApi error: " + result7 + ", url: " + (data8 != null ? data8.getUrl() : null), null, false, 12, null);
+                companion3.setLog(context4, "validateTimeSessionFromApi error: " + result7 + ", url: " + (data8 != null ? data8.getUrl() : null), null, false);
                 Integer statusCode = apiResult.getStatusCode();
                 if (statusCode != null && statusCode.intValue() == 401) {
                     singleLiveEvent2 = this.this$0._messageValidation;
@@ -341,7 +341,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
             ResultKt.throwOnFailure(obj);
             singleLiveEvent = this.this$0._messageValidation;
             singleLiveEvent.postValue(new Status.Loading(false, 1, null));
-            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "validateTimeSessionFromApi request: " + this.$sessionInstructorRequest, null, false, 12, null);
+            LogSendUtil.INSTANCE.setLog(this.$context, "validateTimeSessionFromApi request: " + this.$sessionInstructorRequest, null, false);
             sessionRepository = this.this$0.repository;
             Flow m1541catch = FlowKt.m1541catch(sessionRepository.getSessionApi(this.$context, this.$sessionInstructorRequest), new AnonymousClass1(this.$context, this.this$0, null));
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.this$0, this.$context, this.$activity, this.$sessionId, this.$isEnter, this.$sessionType, this.$findNavController);

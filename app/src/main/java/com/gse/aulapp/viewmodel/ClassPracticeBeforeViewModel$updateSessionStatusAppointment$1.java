@@ -129,13 +129,13 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
                     HistoricRecordPermissionsChangeResponse data = apiResult.getData();
                     HistoricRecordPermissionsChangeResponse.Result result4 = data != null ? data.getResult() : null;
                     HistoricRecordPermissionsChangeResponse data2 = apiResult.getData();
-                    LogSendUtil.Companion.setLog$default(companion, context2, "updateSessionStatusAppointment result: " + result4 + ", url: " + (data2 != null ? data2.getUrl() : null), null, false, 12, null);
+                    companion.setLog(context2, "updateSessionStatusAppointment result: " + result4 + ", url: " + (data2 != null ? data2.getUrl() : null), null, false);
                     if (apiResult.getStatus() == EnumApiStatus.SUCCESS) {
                         Context context3 = context;
                         HistoricRecordPermissionsChangeResponse data3 = apiResult.getData();
                         HistoricRecordPermissionsChangeResponse.Result result5 = data3 != null ? data3.getResult() : null;
                         HistoricRecordPermissionsChangeResponse data4 = apiResult.getData();
-                        LogSendUtil.Companion.setLog$default(companion, context3, "updateSessionStatusAppointment success: " + result5 + ", url: " + (data4 != null ? data4.getUrl() : null), null, false, 12, null);
+                        companion.setLog(context3, "updateSessionStatusAppointment success: " + result5 + ", url: " + (data4 != null ? data4.getUrl() : null), null, false);
                         HistoricRecordPermissionsChangeResponse data5 = apiResult.getData();
                         if ((data5 == null || (result3 = data5.getResult()) == null) ? false : Intrinsics.areEqual(result3.getSuccess(), Boxing.boxBoolean(true))) {
                             singleLiveEvent4 = classPracticeBeforeViewModel._statusClass;
@@ -157,7 +157,7 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
                         HistoricRecordPermissionsChangeResponse data8 = apiResult.getData();
                         HistoricRecordPermissionsChangeResponse.Result result6 = data8 != null ? data8.getResult() : null;
                         HistoricRecordPermissionsChangeResponse data9 = apiResult.getData();
-                        LogSendUtil.Companion.setLog$default(companion, context4, "updateSessionStatusAppointment error: " + result6 + ", url: " + (data9 != null ? data9.getUrl() : null), null, false, 12, null);
+                        companion.setLog(context4, "updateSessionStatusAppointment error: " + result6 + ", url: " + (data9 != null ? data9.getUrl() : null), null, false);
                         Integer statusCode = apiResult.getStatusCode();
                         if (statusCode != null && statusCode.intValue() == 401) {
                             singleLiveEvent2 = classPracticeBeforeViewModel._statusClass;

@@ -101,7 +101,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
         int i = this.label;
         if (i == 0) {
             ResultKt.throwOnFailure(obj);
-            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "getRoutesFromApi request: " + this.$sessionInstructorRequest, null, false, 12, null);
+            LogSendUtil.INSTANCE.setLog(this.$context, "getRoutesFromApi request: " + this.$sessionInstructorRequest, null, false);
             sessionRepository = this.this$0.sessionRepository;
             Flow m1541catch = FlowKt.m1541catch(sessionRepository.getSessionsRoute(this.$context, this.$sessionInstructorRequest), new AnonymousClass1(this.$context, this.this$0, null));
             final Context context = this.$context;
@@ -126,7 +126,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
                         SessionRoutesResponse data = apiResult.getData();
                         Boolean success = (data == null || (result5 = data.getResult()) == null) ? null : result5.getSuccess();
                         SessionRoutesResponse data2 = apiResult.getData();
-                        LogSendUtil.Companion.setLog$default(companion, context2, "getRoutesFromApi success: " + success + ", url: " + (data2 != null ? data2.getUrl() : null), null, false, 12, null);
+                        companion.setLog(context2, "getRoutesFromApi success: " + success + ", url: " + (data2 != null ? data2.getUrl() : null), null, false);
                         SessionRoutesResponse data3 = apiResult.getData();
                         if (data3 == null || (result4 = data3.getResult()) == null || (emptyList = result4.getData()) == null) {
                             emptyList = CollectionsKt.emptyList();
@@ -150,7 +150,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
                         SessionRoutesResponse data7 = apiResult.getData();
                         SessionRoutesResponse.Result result6 = data7 != null ? data7.getResult() : null;
                         SessionRoutesResponse data8 = apiResult.getData();
-                        LogSendUtil.Companion.setLog$default(companion2, context3, "getRoutesFromApi Error: " + result6 + ", url: " + (data8 != null ? data8.getUrl() : null), null, false, 12, null);
+                        companion2.setLog(context3, "getRoutesFromApi Error: " + result6 + ", url: " + (data8 != null ? data8.getUrl() : null), null, false);
                         if (apiResult.hashCode() == 401) {
                             rideHistoryViewModel.get_message().setValue(new Status.Failure(new Exception("401")));
                         } else {

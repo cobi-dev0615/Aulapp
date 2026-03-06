@@ -76,7 +76,7 @@ public final class ClassInCourseViewModel$loadQuestionsFromDB$2 extends SuspendL
             ResultKt.throwOnFailure(obj);
         }
         List list = (List) obj;
-        ArrayList arrayList = new ArrayList(CollectionsKt.e(list));
+        ArrayList arrayList = new ArrayList(10);
         Iterator it = list.iterator();
         while (it.hasNext()) {
             arrayList.add(SessionTestConverter.INSTANCE.getQuestionDtoFromQuestionEntity((QuestionEntity) it.next()));

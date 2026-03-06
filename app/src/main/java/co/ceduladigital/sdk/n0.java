@@ -9,7 +9,8 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
 /* loaded from: classes2.dex */
-public final /* synthetic */ class n0 implements Function2 {
+@SuppressWarnings("unchecked")
+public final /* synthetic */ class n0 implements Function2<Object, Object, Object> {
     public final /* synthetic */ int a;
     public final /* synthetic */ Object b;
 

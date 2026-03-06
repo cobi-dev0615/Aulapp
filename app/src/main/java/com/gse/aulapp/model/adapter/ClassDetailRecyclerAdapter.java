@@ -506,31 +506,20 @@ public final class ClassDetailRecyclerAdapter extends RecyclerView.Adapter<Class
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code restructure failed: missing block: B:14:0x0038, code lost:
-    
-        r9 = kotlin.text.StringsKt.split$default((java.lang.CharSequence) r9, new java.lang.String[]{","}, false, 0, 6, (java.lang.Object) null);
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:5:0x000f, code lost:
-    
-        r0 = kotlin.text.StringsKt.split$default((java.lang.CharSequence) r0, new java.lang.String[]{","}, false, 0, 6, (java.lang.Object) null);
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
     public final void handlerLocation(SessionDto classDetail, Context it1) {
-        List split$default;
+        List splitResult;
         String str;
-        List split$default2;
+        List splitResult2;
         String str2;
         ClassRoomDto classroom = classDetail.getClassroom();
         String location = classroom != null ? classroom.getLocation() : null;
         Double d = null;
-        split$default2 = location != null ? StringsKt.split((CharSequence) location, new String[]{","}, false, 0) : null;
-        Double valueOf = (classroom == null || location == null || split$default2 == null || (str2 = (String) split$default2.get(0)) == null) ? null : Double.valueOf(Double.parseDouble(str2));
+        splitResult2 = location != null ? StringsKt.split((CharSequence) location, new String[]{","}, false, 0) : null;
+        Double valueOf = (classroom == null || location == null || splitResult2 == null || (str2 = (String) splitResult2.get(0)) == null) ? null : Double.valueOf(Double.parseDouble(str2));
         ClassRoomDto classroom2 = classDetail.getClassroom();
         String location2 = classroom2 != null ? classroom2.getLocation() : null;
-        split$default = location2 != null ? StringsKt.split((CharSequence) location2, new String[]{","}, false, 0) : null;
-        if (classroom2 != null && location2 != null && split$default != null && (str = (String) split$default.get(1)) != null) {
+        splitResult = location2 != null ? StringsKt.split((CharSequence) location2, new String[]{","}, false, 0) : null;
+        if (classroom2 != null && location2 != null && splitResult != null && (str = (String) splitResult.get(1)) != null) {
             d = Double.valueOf(Double.parseDouble(str));
         }
         if (valueOf == null || d == null) {

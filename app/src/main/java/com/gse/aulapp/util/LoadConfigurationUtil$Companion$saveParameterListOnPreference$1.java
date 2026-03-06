@@ -92,7 +92,7 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
         if (i == 0) {
             ResultKt.throwOnFailure(obj);
             ParameterListRequest parameterListRequest = new ParameterListRequest(null, 1, null);
-            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "saveParameterListOnPreference request: " + parameterListRequest, null, false, 12, null);
+            LogSendUtil.INSTANCE.setLog(this.$context, "saveParameterListOnPreference request: " + parameterListRequest, null, false);
             parameterListRepository = LoadConfigurationUtil.parameterListRepository;
             Flow m1541catch = FlowKt.m1541catch(parameterListRepository.getParameterList(this.$context, parameterListRequest), new AnonymousClass1(this.$context, null));
             final Activity activity = this.$context;
@@ -125,7 +125,7 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
                         String str = null;
                         if ((parameterListResponse2 != null ? parameterListResponse2.getResult() : null) != null) {
                             LogSendUtil.Companion companion = LogSendUtil.INSTANCE;
-                            LogSendUtil.Companion.setLog$default(companion, activity, "saveParameterListOnPreference Success: " + ((ParameterListResponse) success.getData()).getResult() + ", url: " + ((ParameterListResponse) success.getData()).getUrl(), null, false, 12, null);
+                            companion.setLog(activity, "saveParameterListOnPreference Success: " + ((ParameterListResponse) success.getData()).getResult() + ", url: " + ((ParameterListResponse) success.getData()).getUrl(), null, false);
                             PreferenceUtil.Companion companion2 = PreferenceUtil.INSTANCE;
                             Activity activity2 = activity;
                             ParameterListResponse.Result result = ((ParameterListResponse) success.getData()).getResult();
@@ -141,7 +141,7 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
                             if (userId == null) {
                                 userId = BuildConfig.FLAVOR;
                             }
-                            String t = userId.length() > 0 ? StringsKt.t("?userID=[userId]", "[userId]", userId) : BuildConfig.FLAVOR;
+                            String t = userId.length() > 0 ? "?userID=[userId]".replace("[userId]", userId) : BuildConfig.FLAVOR;
                             ParameterListResponse.Result result3 = ((ParameterListResponse) success.getData()).getResult();
                             if (result3 != null && (data = result3.getData()) != null && (scheduleExamsURL = data.getScheduleExamsURL()) != null) {
                                 str2 = scheduleExamsURL;
@@ -150,7 +150,7 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
                                 str2 = defpackage.a.l(str2, t);
                             }
                             String str3 = str2;
-                            LogSendUtil.Companion.setLog$default(companion, activity, q.i("saveParameterListOnPreference scheduleExamsURL: ", str3), null, false, 12, null);
+                            companion.setLog(activity, q.i("saveParameterListOnPreference scheduleExamsURL: ", str3), null, false);
                             companion2.saveScheduleExamsUrl(activity, str3);
                             companion2.saveEntryValidation(activity, enumByNameString);
                         }

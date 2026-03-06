@@ -152,7 +152,7 @@ public abstract class TemplatesUtil {
 
         public final EnumHandsAulapp validateExistsHands(String pathDocument) {
             EnumEntries<Hand> enumEntries = EntriesMappings.entries$1;
-            LinkedHashMap linkedHashMap = new LinkedHashMap(RangesKt.coerceAtLeast(MapsKt.mapCapacity(CollectionsKt.e(enumEntries)), 16));
+            LinkedHashMap linkedHashMap = new LinkedHashMap(RangesKt.coerceAtLeast(MapsKt.mapCapacity(10), 16));
             for (Object obj : enumEntries) {
                 linkedHashMap.put(obj, Boolean.FALSE);
             }

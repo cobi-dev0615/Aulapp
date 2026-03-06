@@ -105,7 +105,7 @@ public final class HomeViewModel$initSessionSyncPending$1 extends SuspendLambda 
                     Intrinsics.checkNotNull(context2, "null cannot be cast to non-null type android.app.Activity");
                     homeViewModel.onSwipeRefresh((Activity) context2, this.$binding);
                     if (((Boolean) pair.getFirst()).booleanValue()) {
-                        LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "initSessionSyncPending response: Sincronización Exitosa", null, false, 12, null);
+                        LogSendUtil.INSTANCE.setLog(this.$context, "initSessionSyncPending response: Sincronización Exitosa", null, false);
                         unused = this.this$0.TAG;
                     }
                     if (((Boolean) pair.getFirst()).booleanValue()) {

@@ -28,7 +28,7 @@ public abstract class UtilString {
             int indexOf$default;
             Intrinsics.checkNotNullParameter(exceptionMessage, "exceptionMessage");
             try {
-                indexOf$default = StringsKt.indexOf$default((CharSequence) exceptionMessage, "{", 0, false, 6, (Object) null);
+                indexOf$default = StringsKt.indexOf((CharSequence) exceptionMessage, "{", 0, false);
                 if (indexOf$default == -1) {
                     return null;
                 }

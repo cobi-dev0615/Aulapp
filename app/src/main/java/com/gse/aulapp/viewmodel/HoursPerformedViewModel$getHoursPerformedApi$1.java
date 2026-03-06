@@ -102,7 +102,7 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
         int i = this.label;
         if (i == 0) {
             ResultKt.throwOnFailure(obj);
-            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "getHoursPerformedApi request: " + this.$request, null, false, 12, null);
+            LogSendUtil.INSTANCE.setLog(this.$context, "getHoursPerformedApi request: " + this.$request, null, false);
             sessionRepository = this.this$0.sessionRepository;
             Flow m1541catch = FlowKt.m1541catch(sessionRepository.getHoursScheduled(this.$context, this.$request), new AnonymousClass1(this.$context, this.this$0, null));
             final Context context = this.$context;
@@ -130,7 +130,7 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
                         HoursScheduledResponse data = apiResult.getData();
                         HoursScheduledResponse.Result result4 = data != null ? data.getResult() : null;
                         HoursScheduledResponse data2 = apiResult.getData();
-                        LogSendUtil.Companion.setLog$default(companion, context2, "getHoursPerformedApi success " + result4 + ", url: " + (data2 != null ? data2.getUrl() : null), null, false, 12, null);
+                        companion.setLog(context2, "getHoursPerformedApi success " + result4 + ", url: " + (data2 != null ? data2.getUrl() : null), null, false);
                         HoursScheduledResponse data3 = apiResult.getData();
                         if (data3 == null || (result3 = data3.getResult()) == null || (emptyList = result3.getMonthInformation()) == null) {
                             emptyList = CollectionsKt.emptyList();
@@ -152,7 +152,7 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
                         HoursScheduledResponse data6 = apiResult.getData();
                         HoursScheduledResponse.Result result5 = data6 != null ? data6.getResult() : null;
                         HoursScheduledResponse data7 = apiResult.getData();
-                        LogSendUtil.Companion.setLog$default(companion2, context3, "getHoursPerformedApi error " + result5 + ", url: " + (data7 != null ? data7.getUrl() : null), null, false, 12, null);
+                        companion2.setLog(context3, "getHoursPerformedApi error " + result5 + ", url: " + (data7 != null ? data7.getUrl() : null), null, false);
                         Integer statusCode = apiResult.getStatusCode();
                         if (statusCode != null && statusCode.intValue() == 401) {
                             mutableStateFlow3 = hoursPerformedViewModel._message;

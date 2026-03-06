@@ -138,7 +138,7 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
             }
             ResultKt.throwOnFailure(obj);
         }
-        LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$activity, "request: BiometrixRequest: " + this.$request, "endPointGetUrl", false, 8, null);
+        LogSendUtil.INSTANCE.setLog(this.$activity, "request: BiometrixRequest: " + this.$request, "endPointGetUrl", false);
         biometrixRepository = this.this$0.biometrixRepository;
         Flow m1541catch = FlowKt.m1541catch(biometrixRepository.getUrlBiometrix(this.$activity, this.$request), new AnonymousClass1(this.$activity, this.this$0, null));
         final Activity activity = this.$activity;
@@ -168,7 +168,7 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
                     BiometrixUrlActionResponse data = apiResult.getData();
                     BiometrixUrlActionResponse.Result result5 = data != null ? data.getResult() : null;
                     BiometrixUrlActionResponse data2 = apiResult.getData();
-                    LogSendUtil.Companion.setLog$default(companion, activity2, "endPointGetUrlRegister error :" + result5 + ", url: " + (data2 != null ? data2.getUrl() : null), null, false, 12, null);
+                    companion.setLog(activity2, "endPointGetUrlRegister error :" + result5 + ", url: " + (data2 != null ? data2.getUrl() : null), null, false);
                     ErrorResponse errorEndpoint = firstLoginViewModel.getErrorEndpoint(apiResult.getMessage(), null);
                     mutableSharedFlow2 = firstLoginViewModel._messageBiometrix;
                     Object emit = mutableSharedFlow2.emit(new Status.Exception(errorEndpoint), continuation);
@@ -183,7 +183,7 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
                 BiometrixUrlActionResponse data4 = apiResult.getData();
                 BiometrixUrlActionResponse.Result result6 = data4 != null ? data4.getResult() : null;
                 BiometrixUrlActionResponse data5 = apiResult.getData();
-                LogSendUtil.Companion.setLog$default(companion2, activity3, "endPointGetUrlRegister success :" + result6 + ", url: " + (data5 != null ? data5.getUrl() : null), null, false, 12, null);
+                companion2.setLog(activity3, "endPointGetUrlRegister success :" + result6 + ", url: " + (data5 != null ? data5.getUrl() : null), null, false);
                 BiometrixUrlActionResponse data6 = apiResult.getData();
                 if ((data6 == null || (result3 = data6.getResult()) == null) ? false : Intrinsics.areEqual(result3.getSuccess(), Boxing.boxBoolean(true))) {
                     mutableSharedFlow4 = firstLoginViewModel._messageBiometrix;

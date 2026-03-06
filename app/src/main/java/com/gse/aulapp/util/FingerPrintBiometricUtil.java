@@ -300,7 +300,7 @@ public abstract class FingerPrintBiometricUtil {
                     }
                 }, listener, false, true);
             } catch (Exception e) {
-                LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, activity, q.i("Exception: ", e.getMessage()), "RegisterHand", false, 8, null);
+                LogSendUtil.INSTANCE.setLog(activity, q.i("Exception: ", e.getMessage()), "RegisterHand", false);
                 DialogUtil.Companion.showErrorDialog$default(DialogUtil.INSTANCE, activity, EnumDialogType.DIALOG_TYPE_GENERAL_ERROR, null, null, e.getMessage(), false, null, 12, null);
             }
         }

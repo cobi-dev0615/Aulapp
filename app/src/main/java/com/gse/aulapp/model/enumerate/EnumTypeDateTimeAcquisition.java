@@ -24,7 +24,7 @@ public final class EnumTypeDateTimeAcquisition {
     static {
         EnumTypeDateTimeAcquisition[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries($values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
     private EnumTypeDateTimeAcquisition(String str, int i) {

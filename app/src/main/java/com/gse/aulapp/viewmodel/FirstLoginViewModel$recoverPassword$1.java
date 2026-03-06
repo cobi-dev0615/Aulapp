@@ -109,7 +109,7 @@ public final class FirstLoginViewModel$recoverPassword$1 extends SuspendLambda i
             mutableStateFlow = this.this$0._messagePasswordRecovery;
             mutableStateFlow.setValue(new Status.Loading(false, 1, null));
             if (this.$email.length() > 0) {
-                LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, q.i("recoverPassword request: ", this.$email), null, false, 12, null);
+                LogSendUtil.INSTANCE.setLog(this.$context, q.i("recoverPassword request: ", this.$email), null, false);
                 PasswordRecoveryRequest passwordRecoveryRequest = new PasswordRecoveryRequest(this.$email);
                 passwordRecoveryRepository = this.this$0.passwordRecoveryRepository;
                 Context applicationContext = GeneralApp.INSTANCE.getInstance().getApplicationContext();
@@ -167,7 +167,7 @@ public final class FirstLoginViewModel$recoverPassword$1 extends SuspendLambda i
                             Context context2 = context;
                             FirstLoginViewModel firstLoginViewModel2 = firstLoginViewModel;
                             if (message != null) {
-                                LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, context2, "recoverPassword Success: " + message + ", url: " + apiResult.getData().getUrl(), null, false, 12, null);
+                                LogSendUtil.INSTANCE.setLog(context2, "recoverPassword Success: " + message + ", url: " + apiResult.getData().getUrl(), null, false);
                                 PasswordRecoveryResponse data2 = apiResult.getData();
                                 if ((data2 == null || (result3 = data2.getResult()) == null) ? false : Intrinsics.areEqual(result3.getSuccess(), Boxing.boxBoolean(true))) {
                                     mutableStateFlow4 = firstLoginViewModel2._messagePasswordRecovery;
@@ -196,7 +196,7 @@ public final class FirstLoginViewModel$recoverPassword$1 extends SuspendLambda i
                             PasswordRecoveryResponse data6 = apiResult.getData();
                             mutableStateFlow8.setValue(new Status.Exception(String.valueOf(data6 != null ? data6.getResult() : null)));
                         } else if (message != null) {
-                            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, context, "recoverPassword Error: " + message + ", url: " + apiResult.getData().getUrl(), null, false, 12, null);
+                            LogSendUtil.INSTANCE.setLog(context, "recoverPassword Error: " + message + ", url: " + apiResult.getData().getUrl(), null, false);
                             ErrorResponse errorEndpoint2 = firstLoginViewModel.getErrorEndpoint(apiResult.getMessage(), null);
                             mutableStateFlow7 = firstLoginViewModel._messagePasswordRecovery;
                             mutableStateFlow7.setValue(new Status.Exception(errorEndpoint2));

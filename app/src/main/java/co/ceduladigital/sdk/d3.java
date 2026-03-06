@@ -4,7 +4,8 @@ import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function2;
 
 /* loaded from: classes2.dex */
-public final /* synthetic */ class d3 implements Function2 {
+@SuppressWarnings("unchecked")
+public final /* synthetic */ class d3 implements Function2<Object, Object, Object> {
     public final /* synthetic */ int a;
 
     public /* synthetic */ d3(int i) {

@@ -159,7 +159,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
             }
             ResultKt.throwOnFailure(obj);
         }
-        LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "getSessionFromApiAndSave request: " + this.$sessionInstructorRequest, null, false, 12, null);
+        LogSendUtil.INSTANCE.setLog(this.$context, "getSessionFromApiAndSave request: " + this.$sessionInstructorRequest, null, false);
         sessionRepository = this.this$0.sessionRepository;
         Flow m1541catch = FlowKt.m1541catch(sessionRepository.getSessionApi(this.$context, this.$sessionInstructorRequest), new AnonymousClass1(this.$context, this.this$0, null));
         AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$context, this.this$0, this.$isValidateSession, this.$sessionId, this.$navController, this.$classRecyclerAdapter, this.$activity);
@@ -271,7 +271,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                                     SessionInstructorResponse data2 = apiResult.getData();
                                     SessionInstructorResponse.Result result11 = data2 != null ? data2.getResult() : null;
                                     SessionInstructorResponse data3 = apiResult.getData();
-                                    LogSendUtil.Companion.setLog$default(companion, context, "getSessionFromApiAndSave error: " + result11 + ", url: " + (data3 != null ? data3.getUrl() : null), null, false, 12, null);
+                                    companion.setLog(context, "getSessionFromApiAndSave error: " + result11 + ", url: " + (data3 != null ? data3.getUrl() : null), null, false);
                                     Integer statusCode = apiResult.getStatusCode();
                                     if (statusCode == null || statusCode.intValue() != 401) {
                                         ErrorResponse errorEndpoint = this.this$0.getErrorEndpoint(apiResult.getMessage(), null);
@@ -293,7 +293,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                             SessionInstructorResponse data4 = apiResult.getData();
                             SessionInstructorResponse.Result result12 = data4 != null ? data4.getResult() : null;
                             SessionInstructorResponse data5 = apiResult.getData();
-                            LogSendUtil.Companion.setLog$default(companion2, context2, "getSessionFromApiAndSave success: " + result12 + ", url: " + (data5 != null ? data5.getUrl() : null), null, false, 12, null);
+                            companion2.setLog(context2, "getSessionFromApiAndSave success: " + result12 + ", url: " + (data5 != null ? data5.getUrl() : null), null, false);
                             SessionInstructorResponse data6 = apiResult.getData();
                             List<SessionInstructorObjectResponse> data7 = (data6 == null || (result9 = data6.getResult()) == null) ? null : result9.getData();
                             SessionInstructorResponse data8 = apiResult.getData();

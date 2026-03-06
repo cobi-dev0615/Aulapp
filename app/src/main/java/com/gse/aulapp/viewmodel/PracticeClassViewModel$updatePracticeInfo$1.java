@@ -75,7 +75,7 @@ public final class PracticeClassViewModel$updatePracticeInfo$1 extends SuspendLa
             coroutineScope = coroutineScope2;
             sessionDto = this.this$0.sessionReceived;
             if (sessionDto == null || (r1 = sessionDto.getId()) == null) {
-                CoroutineScopeKt.cancel$default(coroutineScope, null, 1, null);
+                CoroutineScopeKt.cancel(coroutineScope);
             } else {
                 FragmentPracticeClassBinding fragmentPracticeClassBinding = this.$binding;
                 PracticeClassViewModel practiceClassViewModel = this.this$0;

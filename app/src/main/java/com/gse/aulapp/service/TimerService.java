@@ -126,7 +126,7 @@ public final class TimerService extends Service {
     private final Notification createAlarmNotification(int timeMin) {
         CharSequence text = getResources().getText(R.string.dialog_fullscreen_max_wait_time_class);
         Intrinsics.checkNotNullExpressionValue(text, "getText(...)");
-        Notification build = new NotificationCompat.Builder(this, "timer_channel").setContentText(StringsKt.t(text.toString(), "[TIME]", String.valueOf(timeMin))).setSmallIcon(R.drawable.ic_aulapp_notification).setOnlyAlertOnce(true).setStyle(new NotificationCompat.DecoratedCustomViewStyle()).build();
+        Notification build = new NotificationCompat.Builder(this, "timer_channel").setContentText(text.toString().replace("[TIME]", String.valueOf(timeMin))).setSmallIcon(R.drawable.ic_aulapp_notification).setOnlyAlertOnce(true).setStyle(new NotificationCompat.DecoratedCustomViewStyle()).build();
         Intrinsics.checkNotNullExpressionValue(build, "build(...)");
         return build;
     }

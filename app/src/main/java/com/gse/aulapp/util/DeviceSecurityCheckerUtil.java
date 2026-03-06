@@ -39,55 +39,39 @@ public final class DeviceSecurityCheckerUtil {
     }
 
     public final boolean isEmulator() {
-        boolean startsWith$default;
-        boolean startsWith$default2;
-        boolean contains$default;
-        boolean contains$default2;
-        boolean contains$default3;
-        boolean contains$default4;
-        boolean startsWith$default3;
-        boolean startsWith$default4;
         String FINGERPRINT = Build.FINGERPRINT;
         Intrinsics.checkNotNullExpressionValue(FINGERPRINT, "FINGERPRINT");
-        startsWith$default = StringsKt.startsWith$default(FINGERPRINT, "generic", false, 2, null);
-        if (startsWith$default) {
+        if (FINGERPRINT.startsWith("generic")) {
             return true;
         }
         Intrinsics.checkNotNullExpressionValue(FINGERPRINT, "FINGERPRINT");
-        startsWith$default2 = StringsKt.startsWith$default(FINGERPRINT, "unknown", false, 2, null);
-        if (startsWith$default2) {
+        if (FINGERPRINT.startsWith("unknown")) {
             return true;
         }
         String MODEL = Build.MODEL;
         Intrinsics.checkNotNullExpressionValue(MODEL, "MODEL");
-        contains$default = StringsKt.contains$default(MODEL, (CharSequence) "google_sdk", false, 2, (Object) null);
-        if (contains$default) {
+        if (MODEL.contains("google_sdk")) {
             return true;
         }
         Intrinsics.checkNotNullExpressionValue(MODEL, "MODEL");
-        contains$default2 = StringsKt.contains$default(MODEL, (CharSequence) "Emulator", false, 2, (Object) null);
-        if (contains$default2) {
+        if (MODEL.contains("Emulator")) {
             return true;
         }
         Intrinsics.checkNotNullExpressionValue(MODEL, "MODEL");
-        contains$default3 = StringsKt.contains$default(MODEL, (CharSequence) "Android SDK built for x86", false, 2, (Object) null);
-        if (contains$default3) {
+        if (MODEL.contains("Android SDK built for x86")) {
             return true;
         }
         String MANUFACTURER = Build.MANUFACTURER;
         Intrinsics.checkNotNullExpressionValue(MANUFACTURER, "MANUFACTURER");
-        contains$default4 = StringsKt.contains$default(MANUFACTURER, (CharSequence) "Genymotion", false, 2, (Object) null);
-        if (contains$default4) {
+        if (MANUFACTURER.contains("Genymotion")) {
             return true;
         }
         String BRAND = Build.BRAND;
         Intrinsics.checkNotNullExpressionValue(BRAND, "BRAND");
-        startsWith$default3 = StringsKt.startsWith$default(BRAND, "generic", false, 2, null);
-        if (startsWith$default3) {
+        if (BRAND.startsWith("generic")) {
             String DEVICE = Build.DEVICE;
             Intrinsics.checkNotNullExpressionValue(DEVICE, "DEVICE");
-            startsWith$default4 = StringsKt.startsWith$default(DEVICE, "generic", false, 2, null);
-            if (startsWith$default4) {
+            if (DEVICE.startsWith("generic")) {
                 return true;
             }
         }

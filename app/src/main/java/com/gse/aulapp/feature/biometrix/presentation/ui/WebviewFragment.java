@@ -268,7 +268,7 @@ public final class WebviewFragment extends Fragment {
                         str2 = null;
                     }
                     isRegisterFlow2 = WebviewFragment.this.isRegisterFlow();
-                    LogSendUtil.Companion.setLog$default(companion, context, str + " onPageFinished: urlAction: " + str2 + " isRegisterFlow: " + isRegisterFlow2, null, false, 12, null);
+                    companion.setLog(context, str + " onPageFinished: urlAction: " + str2 + " isRegisterFlow: " + isRegisterFlow2, null, false);
                 }
                 webviewViewModel2 = WebviewFragment.this.viewModel;
                 if (webviewViewModel2 == null) {

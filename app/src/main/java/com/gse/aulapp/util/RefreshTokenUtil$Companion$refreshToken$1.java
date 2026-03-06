@@ -95,7 +95,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
             ResultKt.throwOnFailure(obj);
             RefreshTokenRequest refreshTokenRequest = this.$refreshTokenRequest.element;
             if (refreshTokenRequest != null) {
-                LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$context, "refreshToken request: " + refreshTokenRequest, null, false, 12, null);
+                LogSendUtil.INSTANCE.setLog(this.$context, "refreshToken request: " + refreshTokenRequest, null, false);
                 refreshTokenRepository = RefreshTokenUtil.RefreshTokenRepository;
                 Flow m1541catch = FlowKt.m1541catch(refreshTokenRepository.refreshToken(this.$context, this.$refreshTokenRequest.element), new AnonymousClass1(this.$context, null));
                 final Context context = this.$context;
@@ -110,7 +110,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
                         RefreshToken data;
                         if (apiResult instanceof ApiResult.Failure) {
                             ApiResult.Failure failure = (ApiResult.Failure) apiResult;
-                            LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, context, q.i("refreshToken error: ", failure.getMessage()), null, false, 12, null);
+                            LogSendUtil.INSTANCE.setLog(context, q.i("refreshToken error: ", failure.getMessage()), null, false);
                             DialogUtil.INSTANCE.showErrorGeneralDialogGlobal(context, failure.getMessage());
                         } else {
                             if (!(apiResult instanceof ApiResult.Success)) {
@@ -123,7 +123,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
                             String str = null;
                             RefreshTokenResponse.Result result = refreshTokenResponse != null ? refreshTokenResponse.getResult() : null;
                             RefreshTokenResponse refreshTokenResponse2 = (RefreshTokenResponse) success.getData();
-                            LogSendUtil.Companion.setLog$default(companion, context2, "refreshToken Success: " + result + ", url " + (refreshTokenResponse2 != null ? refreshTokenResponse2.getUrl() : null), null, false, 12, null);
+                            companion.setLog(context2, "refreshToken Success: " + result + ", url " + (refreshTokenResponse2 != null ? refreshTokenResponse2.getUrl() : null), null, false);
                             RefreshTokenResponse refreshTokenResponse3 = (RefreshTokenResponse) success.getData();
                             if ((refreshTokenResponse3 != null ? refreshTokenResponse3.getResult() : null) != null) {
                                 PreferenceUtil.Companion companion2 = PreferenceUtil.INSTANCE;

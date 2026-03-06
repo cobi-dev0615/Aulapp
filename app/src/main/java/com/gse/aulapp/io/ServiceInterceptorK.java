@@ -132,7 +132,7 @@ public final class ServiceInterceptorK implements Interceptor {
                 Intrinsics.checkNotNullExpressionValue(asJsonObject, "getAsJsonObject(...)");
                 String json = gson.toJson(new GeneralDecrypt(generalEncryptResponse, asJsonObject));
                 Intrinsics.checkNotNullExpressionValue(json, "toJson(...)");
-                return response.newBuilder().body(ResponseBody.Companion.create$default(ResponseBody.INSTANCE, json, (MediaType) null, 1, (Object) null)).build();
+                return response.newBuilder().body(ResponseBody.create(json, (MediaType) null)).build();
             }
             str = BuildConfig.FLAVOR;
             Gson gson2 = new Gson();

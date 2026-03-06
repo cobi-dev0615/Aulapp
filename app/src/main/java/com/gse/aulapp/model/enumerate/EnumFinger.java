@@ -62,7 +62,7 @@ public abstract class EnumFinger {
     static {
         EnumFinger[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = EnumEntriesKt.enumEntries((Enum[]) (Object[]) $values);
+        $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
     }
 
     public /* synthetic */ EnumFinger(String str, int i, DefaultConstructorMarker defaultConstructorMarker) {

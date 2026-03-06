@@ -94,7 +94,7 @@ public final class ClassPracticeBeforeViewModel$showDialogTimePassed$1 extends S
             EnumDialogType enumDialogType = EnumDialogType.DIALOG_TIME_PASSED;
             String string = this.$context.getString(R.string.dialog_fullscreen_time_passed);
             Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
-            classPracticeBeforeViewModel.dialog = DialogUtil.Companion.showErrorDialog$default(companion, activity, enumDialogType, StringsKt.t(StringsKt.t(string, "[entryOrExitClass]", this.$isEnter ? "el ingreso" : "la salida"), "[examOrClass]", this.$sessionType == EnumClassType.PRACTICE ? "de la clase" : "del examen"), null, null, false, new a(this.this$0, this.$context, this.$findNavController, 1), 8, null);
+            classPracticeBeforeViewModel.dialog = DialogUtil.Companion.showErrorDialog$default(companion, activity, enumDialogType, string.replace("[entryOrExitClass]", this.$isEnter ? "el ingreso" : "la salida").replace("[examOrClass]", this.$sessionType == EnumClassType.PRACTICE ? "de la clase" : "del examen"), null, null, false, new a(this.this$0, this.$context, this.$findNavController, 1), 8, null);
             alertDialog = this.this$0.dialog;
             if (alertDialog == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("dialog");

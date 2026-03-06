@@ -150,7 +150,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
         MutableSharedFlow mutableSharedFlow;
         MutableSharedFlow mutableSharedFlow2;
         ChangeCenterRepository changeCenterRepository;
-        boolean equals$default;
+        boolean equalsResult;
         Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         int i = this.label;
         if (i == 0) {
@@ -178,15 +178,15 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
             Iterator<T> it = list.iterator();
             while (it.hasNext()) {
                 CenterDto r4 = (CenterDto) it.next();
-                equals$default = StringsKt.equals$default(r4.getName(), str2, false, 2, null);
-                if (equals$default) {
+                equalsResult = r4.getName() != null ? r4.getName().equals(str2) : str2 == null;
+                if (equalsResult) {
                     objectRef.element = r4;
                 }
             }
             if (this.$numberDocument != null) {
                 CenterDto centerDto = (CenterDto) objectRef.element;
                 ChangeCenterRequest changeCenterRequest = new ChangeCenterRequest(String.valueOf(centerDto != null ? centerDto.getCenterID() : null), this.$numberDocument);
-                LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$activity, "refreshTokenCEA request: " + changeCenterRequest, null, false, 12, null);
+                LogSendUtil.INSTANCE.setLog(this.$activity, "refreshTokenCEA request: " + changeCenterRequest, null, false);
                 changeCenterRepository = this.this$0.changeCenterRepository;
                 Flow m1541catch = FlowKt.m1541catch(changeCenterRepository.changeCenter(this.$activity, changeCenterRequest), new AnonymousClass2(this.$activity, this.this$0, null));
                 final Activity activity = this.$activity;
@@ -234,7 +234,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
                             ChangeCenterResponse data12 = apiResult.getData();
                             ChangeCenterResponse.Result result7 = data12 != null ? data12.getResult() : null;
                             ChangeCenterResponse data13 = apiResult.getData();
-                            LogSendUtil.Companion.setLog$default(companion, activity2, "refreshTokenCEA Error: token is null " + result7 + ", url: " + (data13 != null ? data13.getUrl() : null), null, false, 12, null);
+                            companion.setLog(activity2, "refreshTokenCEA Error: token is null " + result7 + ", url: " + (data13 != null ? data13.getUrl() : null), null, false);
                             mutableSharedFlow3 = firstLoginViewModel._messageRefreshTokenCEA;
                             ChangeCenterResponse data14 = apiResult.getData();
                             Object emit = mutableSharedFlow3.emit(new Status.Failure(new Exception((data14 == null || (result = data14.getResult()) == null) ? null : result.getMessage())), continuation);
@@ -253,7 +253,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
                             ChangeCenterResponse data17 = apiResult.getData();
                             ChangeCenterResponse.Result result8 = data17 != null ? data17.getResult() : null;
                             ChangeCenterResponse data18 = apiResult.getData();
-                            LogSendUtil.Companion.setLog$default(companion2, activity3, "refreshTokenCEA Error: " + result8 + ", url: " + (data18 != null ? data18.getUrl() : null), null, false, 12, null);
+                            companion2.setLog(activity3, "refreshTokenCEA Error: " + result8 + ", url: " + (data18 != null ? data18.getUrl() : null), null, false);
                             mutableSharedFlow4 = firstLoginViewModel._messageRefreshTokenCEA;
                             ChangeCenterResponse data19 = apiResult.getData();
                             Object emit3 = mutableSharedFlow4.emit(new Status.Failure(new Exception((data19 == null || (result2 = data19.getResult()) == null) ? null : result2.getMessage())), continuation);
@@ -327,7 +327,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
                         }
                         ChangeCenterResponse.Result result24 = apiResult.getData().getResult();
                         LoginObject loginObject = new LoginObject(token2, userEmail, str3, Boxing.boxBoolean(z), date, fraudInformationID, id, callSaveTemplate, str5, fullName, enumUserProfile, docType, listOf, center, Boxing.boxBoolean(z3), null, result24 != null ? result24.getBiometrixInformationID() : null, 32768, null);
-                        LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, activity, "refreshTokenCEA Success: " + apiResult.getData().getResult() + ", url: " + apiResult.getData().getUrl(), null, false, 12, null);
+                        LogSendUtil.INSTANCE.setLog(activity, "refreshTokenCEA Success: " + apiResult.getData().getResult() + ", url: " + apiResult.getData().getUrl(), null, false);
                         mutableSharedFlow5 = firstLoginViewModel._messageRefreshTokenCEA;
                         Object emit4 = mutableSharedFlow5.emit(new Status.Success(loginObject), continuation);
                         return emit4 == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? emit4 : Unit.INSTANCE;
@@ -337,7 +337,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
             }
             return Unit.INSTANCE;
         }
-        LogSendUtil.Companion.setLog$default(LogSendUtil.INSTANCE, this.$activity, "refreshTokenCEA Error:\nSeleccione un CEA", null, false, 12, null);
+        LogSendUtil.INSTANCE.setLog(this.$activity, "refreshTokenCEA Error:\nSeleccione un CEA", null, false);
         mutableSharedFlow2 = this.this$0._messageRefreshTokenCEA;
         Status.Failure failure = new Status.Failure(new Exception("\nSeleccione un CEA"));
         this.label = 3;

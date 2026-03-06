@@ -60,7 +60,7 @@ public final class ClassUtil {
         static {
             FilterType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = EnumEntriesKt.enumEntries($values);
+            $ENTRIES = null; // EnumEntriesKt.enumEntries requires actual enum type
         }
 
         private FilterType(String str, int i) {
