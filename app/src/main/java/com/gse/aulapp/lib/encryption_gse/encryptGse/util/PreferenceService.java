@@ -28,12 +28,12 @@ public abstract class PreferenceService {
             this();
         }
 
-        private final void generateSharedPreferencesInstance(Context context) {
+        private final void generateSharedPreferencesInstance(Context context) throws Exception {
             PreferenceService.sharedPreferences = EncryptedSharedPreferences.create(context.getString(R.string.preference_file), getGetOrCreateMasterKeys(), context, EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV, EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM);
             PreferenceService.gson = new Gson();
         }
 
-        private final String getGetOrCreateMasterKeys() {
+        private final String getGetOrCreateMasterKeys() throws Exception {
             String orCreate = MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC);
             Intrinsics.checkNotNullExpressionValue(orCreate, "getOrCreate(...)");
             return orCreate;
