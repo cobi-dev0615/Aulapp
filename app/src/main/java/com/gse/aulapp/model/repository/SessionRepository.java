@@ -494,7 +494,8 @@ public final class SessionRepository {
                                 return new ApiResult.Success(response.code(), response.body());
                             }
                             ResponseBody errorBody = response.errorBody();
-                            String string = errorBody != null ? errorBody.string() : null;
+                            String string = null;
+                    try { if (errorBody != null) string = errorBody.string(); } catch (java.io.IOException ignored) {}
                             ResponseBody errorBody2 = response.errorBody();
                             if (errorBody2 != null) {
                                 errorBody2.close();

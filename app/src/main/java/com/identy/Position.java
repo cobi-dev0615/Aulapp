@@ -363,7 +363,7 @@ public final class Position {
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 5025;
                     Fpnative.valueOf = objArr;
-                    return Position.valueOf(str);
+                    return Position.valueOfString(str);
                 }
             }
             byte[] bArr = $$a;
@@ -378,7 +378,7 @@ public final class Position {
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5025;
             Fpnative.valueOf = objArr;
-            return Position.valueOf(str);
+            return Position.valueOfString(str);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

@@ -47,7 +47,7 @@ public abstract class GpsTracerUtil {
             sortedWith = CollectionsKt.sortedWith(locations, new Comparator() { // from class: com.gse.aulapp.util.GpsTracerUtil$Companion$calculateTotalDistanceStoppedAndMovingTime$$inlined$sortedBy$1
                 /* JADX WARN: Multi-variable type inference failed */
                 @Override // java.util.Comparator
-                public final int compare(T t, T t2) {
+                public final int compare(Object t, Object t2) {
                     return ComparisonsKt.compareValues(Long.valueOf(((LocationDto) t).getDate()), Long.valueOf(((LocationDto) t2).getDate()));
                 }
             });

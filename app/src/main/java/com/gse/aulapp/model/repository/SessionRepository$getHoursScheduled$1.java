@@ -105,7 +105,8 @@ public final class SessionRepository$getHoursScheduled$1 extends SuspendLambda i
                         return Unit.INSTANCE;
                     }
                     ResponseBody errorBody = response.errorBody();
-                    String string = errorBody != null ? errorBody.string() : null;
+                    String string = null;
+                    try { if (errorBody != null) string = errorBody.string(); } catch (java.io.IOException ignored) {}
                     ResponseBody errorBody2 = response.errorBody();
                     if (errorBody2 != null) {
                         errorBody2.close();
@@ -130,6 +131,7 @@ public final class SessionRepository$getHoursScheduled$1 extends SuspendLambda i
         response = (Response) obj;
         if (response != null) {
         }
+        return Unit.INSTANCE;
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
