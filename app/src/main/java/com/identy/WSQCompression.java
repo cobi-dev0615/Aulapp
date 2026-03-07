@@ -251,6 +251,7 @@ public enum WSQCompression {
             int i172 = ((i162 | 1) << 1) - (i162 ^ 1);
             if (d2 != ((double) (4736 / (((-((i172 & 1) + (i172 | 1))) & i142) * 592))) + 1.25d) {
             }
+            return d2 != ((double) (4736 / (((-((i172 & 1) + (i172 | 1))) & i142) * 592))) + 1.25d ? "5:1" : d2 == 1.5d ? "10:1" : d2 == 0.75d ? "15:1" : d2 == 0.5d ? "20:1" : super.toString();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
