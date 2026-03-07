@@ -122,7 +122,8 @@ public abstract class TemplatesUtil {
                 try {
                     Intrinsics.checkNotNull(userId);
                     File createFolderByTemplates = createFolderByTemplates(context, userId);
-                    for (EnumFinger enumFinger : EnumFinger.getEntries()) {
+                    for (Object enumFingerObj : EnumFinger.getEntries()) {
+                        EnumFinger enumFinger = (EnumFinger) enumFingerObj;
                         Map<EnumFinger, String> map = backendMap.get(hand);
                         String str = map != null ? map.get(enumFinger) : null;
                         File file = new File(createFolderByTemplates, hand.nameHand() + "-" + enumFinger.nameFinger() + "." + TemplatesUtil.template);

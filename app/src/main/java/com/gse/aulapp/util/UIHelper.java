@@ -91,12 +91,12 @@ public abstract class UIHelper {
         /* JADX WARN: Type inference failed for: r7v1, types: [java.lang.CharSequence] */
         /* JADX WARN: Type inference failed for: r7v3, types: [java.lang.CharSequence] */
         public final void setterCustomToolbar(FragmentActivity activity, boolean showToolbar, boolean showLogo, String title, Integer imageToolbar, Integer iconToolbar, boolean lockDrawer, boolean showActionLeftButton) {
-            Object supportActionBar;
+            ActionBar supportActionBar;
             Intrinsics.checkNotNullParameter(activity, "activity");
             closeVirtualKeyboardActivity(activity);
             getTAG();
             AppCompatActivity appCompatActivity = (AppCompatActivity) activity;
-            if (appCompatActivity.getSupportActionBar() == null || (supportActionBar = appCompatActivity.getSupportActionBar()) == 0) {
+            if (appCompatActivity.getSupportActionBar() == null || (supportActionBar = appCompatActivity.getSupportActionBar()) == null) {
                 return;
             }
             if (showToolbar) {
@@ -110,10 +110,10 @@ public abstract class UIHelper {
                         supportActionBar2.setLogo(R.drawable.ic_aulapp);
                     }
                 }
-                if (title == 0) {
-                    title = (CharSequence) Parameters.INSTANCE.getParameter(EParametersType.EMPTY);
+                if (title == null) {
+                    title = (String) Parameters.INSTANCE.getParameter(EParametersType.EMPTY);
                 }
-                supportActionBar.setTitle(title);
+                supportActionBar.setTitle((CharSequence) title);
                 supportActionBar.show();
             } else {
                 supportActionBar.hide();

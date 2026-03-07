@@ -1146,7 +1146,7 @@ public class IdentyResponse {
 
     private byte[] PngjBadSignature(Map.Entry entry, Template template) {
         Template template2;
-        byte[] PngjBadCrcException2;
+        byte[] PngjBadCrcException2 = null;
         try {
             String str = template.equals(Template.WSQ) ? "wsq" : "iso4";
             File values2 = com.identy.PngjBadCrcException.values(this.PngjException, "ZIP");
