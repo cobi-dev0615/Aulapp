@@ -137,11 +137,11 @@ public final class LocationService extends Service {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Intent intent2;
-        int i;
-        int i2;
+        Intent intent2 = intent;
+        int i = flags;
+        int i2 = startId;
         long j;
-        Bundle extras;
+        Bundle extras = null;
         Object obj;
         String str;
         Bundle extras2;
@@ -240,5 +240,6 @@ public final class LocationService extends Service {
         }
         if (intent != null) {
         }
+        return super.onStartCommand(intent2, i, i2);
     }
 }
