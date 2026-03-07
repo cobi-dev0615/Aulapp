@@ -232,12 +232,9 @@ public abstract class FingerPrintBiometricUtil {
                 if (alertDialogLoadingBiometricRegister != null) {
                     alertDialogLoadingBiometricRegister.cancel();
                 }
-            } catch (NoDetectionModeException e) {
-                LogSendUtil.INSTANCE.setLog(activity, q.i("NoDetectionModeException: ", e.getMessage()), "RegisterHand", true);
+            } catch (Exception e) {
+                LogSendUtil.INSTANCE.setLog(activity, q.i("Exception: ", e.getMessage()), "RegisterHand", true);
                 DialogUtil.Companion.showErrorDialog$default(DialogUtil.INSTANCE, activity, EnumDialogType.DIALOG_TYPE_GENERAL_ERROR, null, null, e.getMessage(), false, null, 12, null);
-            } catch (Exception e2) {
-                LogSendUtil.INSTANCE.setLog(activity, q.i("Exception: ", e2.getMessage()), "RegisterHand", true);
-                DialogUtil.Companion.showErrorDialog$default(DialogUtil.INSTANCE, activity, EnumDialogType.DIALOG_TYPE_GENERAL_ERROR, null, null, e2.getMessage(), false, null, 12, null);
             }
         }
 

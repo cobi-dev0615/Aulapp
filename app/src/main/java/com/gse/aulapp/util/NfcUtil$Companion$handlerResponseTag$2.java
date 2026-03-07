@@ -69,7 +69,12 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
             if (id.length != 0) {
                 byte[] id2 = this.$tag.getId();
                 Intrinsics.checkNotNullExpressionValue(id2, "getId(...)");
-                String joinedString = ArraysKt.joinToString(id2, (CharSequence) ":", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, (Function1) new b(), 30, (Object) null);
+                StringBuilder sb = new StringBuilder();
+                for (int idx = 0; idx < id2.length; idx++) {
+                    if (idx > 0) sb.append(":");
+                    sb.append(String.format("%02X", id2[idx]));
+                }
+                String joinedString = sb.toString();
                 String t = joinedString.replace(":", BuildConfig.FLAVOR);
                 String unused = NfcUtil.TAG;
                 LogSendUtil.Companion companion2 = LogSendUtil.INSTANCE;

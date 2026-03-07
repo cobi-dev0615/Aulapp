@@ -210,7 +210,7 @@ public abstract class NfcUtil {
                 NfcAdapter.ReaderCallback readerCallback = new NfcAdapter.ReaderCallback() { // from class: co.ceduladigital.sdk.f7
                     @Override // android.nfc.NfcAdapter.ReaderCallback
                     public final void onTagDiscovered(Tag tag) {
-                        NfcUtil.Companion.validateNfcAdapter$lambda$0(NfcUtil.NfcCallback.this, tag);
+                        NfcUtil.Companion.validateNfcAdapter$lambda$0(callback, tag);
                     }
                 };
                 NfcAdapter nfcAdapter = NfcUtil.mNfcAdapter;
