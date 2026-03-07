@@ -14,7 +14,7 @@ public class KeyAndroid {
     private String ALGORITHM = "AES";
     private final String PROVIDER = "AndroidKeyStore";
 
-    public KeyAndroid(String str) {
+    public KeyAndroid(String str) throws Exception {
         this.ALIAS_KEY = str;
         SecretKey findSecretKey = findSecretKey();
         this.SECRET_KEY = findSecretKey;
@@ -23,13 +23,13 @@ public class KeyAndroid {
         }
     }
 
-    private SecretKey createSecretKey() {
+    private SecretKey createSecretKey() throws Exception {
         KeyGenerator keyGenerator = KeyGenerator.getInstance(this.ALGORITHM, "AndroidKeyStore");
         keyGenerator.init(new KeyGenParameterSpec.Builder(this.ALIAS_KEY, 3).setBlockModes("GCM").setEncryptionPaddings("NoPadding").build());
         return keyGenerator.generateKey();
     }
 
-    private SecretKey findSecretKey() {
+    private SecretKey findSecretKey() throws Exception {
         KeyStore keyStore = KeyStore.getInstance("AndroidKeyStore");
         keyStore.load(null);
         Enumeration<String> aliases = keyStore.aliases();
@@ -46,7 +46,7 @@ public class KeyAndroid {
         return this.SECRET_KEY;
     }
 
-    public SecretKey loadSecretKey() {
+    public SecretKey loadSecretKey() throws Exception {
         KeyStore keyStore = KeyStore.getInstance("AndroidKeyStore");
         keyStore.load(null);
         return ((KeyStore.SecretKeyEntry) keyStore.getEntry(this.ALIAS_KEY, null)).getSecretKey();
