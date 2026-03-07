@@ -98,7 +98,7 @@ public final class HomeViewModel$getSessionFromDBFilterChip$2 extends SuspendLam
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((HomeViewModel$getSessionFromDBFilterChip$2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

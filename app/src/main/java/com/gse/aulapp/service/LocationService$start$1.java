@@ -41,7 +41,7 @@ public final class LocationService$start$1 extends SuspendLambda implements Func
     }
 
     @Override // kotlin.jvm.functions.Function3
-    public final Object invoke(FlowCollector<? super Location> flowCollector, Throwable th, Continuation continuation) {
+    public final Object invoke(FlowCollector<? super Location> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
         LocationService$start$1 locationService$start$1 = new LocationService$start$1(this.this$0, (Continuation) continuation);
         locationService$start$1.L$0 = th;
         return locationService$start$1.invokeSuspend(Unit.INSTANCE);

@@ -55,7 +55,7 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends HoursScheduledResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends HoursScheduledResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             return invoke2((FlowCollector<? super ApiResult<HoursScheduledResponse>>) flowCollector, th, continuation);
         }
 
@@ -75,7 +75,7 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<HoursScheduledResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<HoursScheduledResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$context, this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -109,11 +109,11 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
             final HoursPerformedViewModel hoursPerformedViewModel = this.this$0;
             FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.HoursPerformedViewModel$getHoursPerformedApi$1.2
                 @Override // kotlinx.coroutines.flow.FlowCollector
-                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
                     return emit((ApiResult<HoursScheduledResponse>) obj2, (Continuation<? super Unit>) continuation);
                 }
 
-                public final Object emit(ApiResult<HoursScheduledResponse> apiResult, Continuation continuation) {
+                public final Object emit(ApiResult<HoursScheduledResponse> apiResult, Continuation<? super Unit> continuation) {
                     MutableStateFlow mutableStateFlow;
                     MutableStateFlow mutableStateFlow2;
                     MutableStateFlow mutableStateFlow3;
@@ -186,7 +186,7 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((HoursPerformedViewModel$getHoursPerformedApi$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

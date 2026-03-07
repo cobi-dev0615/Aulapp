@@ -88,7 +88,7 @@ public final class ClassPracticeBeforeViewModel$getSessionById$1 extends Suspend
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
@@ -150,7 +150,7 @@ public final class ClassPracticeBeforeViewModel$getSessionById$1 extends Suspend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ClassPracticeBeforeViewModel$getSessionById$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

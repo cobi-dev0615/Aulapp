@@ -54,7 +54,7 @@ public final class LoginViewModel$login$1 extends SuspendLambda implements Funct
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends LoginResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends LoginResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             return invoke2((FlowCollector<? super ApiResult<LoginResponse>>) flowCollector, th, continuation);
         }
 
@@ -73,7 +73,7 @@ public final class LoginViewModel$login$1 extends SuspendLambda implements Funct
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<LoginResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<LoginResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -117,11 +117,11 @@ public final class LoginViewModel$login$1 extends SuspendLambda implements Funct
                 final FragmentLoginBinding fragmentLoginBinding = this.$binding;
                 FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.LoginViewModel$login$1.2
                     @Override // kotlinx.coroutines.flow.FlowCollector
-                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
                         return emit((ApiResult<LoginResponse>) obj2, (Continuation<? super Unit>) continuation);
                     }
 
-                    public final Object emit(ApiResult<LoginResponse> apiResult, Continuation continuation) {
+                    public final Object emit(ApiResult<LoginResponse> apiResult, Continuation<? super Unit> continuation) {
                         MutableStateFlow mutableStateFlow3;
                         MutableStateFlow mutableStateFlow4;
                         MutableStateFlow mutableStateFlow5;
@@ -193,7 +193,7 @@ public final class LoginViewModel$login$1 extends SuspendLambda implements Funct
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((LoginViewModel$login$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

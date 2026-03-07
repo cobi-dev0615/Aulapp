@@ -46,7 +46,7 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends LoginResponse>> flowCollector, Continuation continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends LoginResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return invoke2((FlowCollector<? super ApiResult<LoginResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<LoginResponse>> flowCollector, Continuation continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<LoginResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return ((LoginRepository$login$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

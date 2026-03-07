@@ -63,7 +63,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$updateIsPendingSync
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ControllerFinishClassOrExamUtil$Companion$updateIsPendingSync$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

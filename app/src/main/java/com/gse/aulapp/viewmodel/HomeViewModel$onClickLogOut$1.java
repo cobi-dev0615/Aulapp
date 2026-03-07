@@ -113,7 +113,7 @@ public final class HomeViewModel$onClickLogOut$1 extends SuspendLambda implement
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((HomeViewModel$onClickLogOut$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

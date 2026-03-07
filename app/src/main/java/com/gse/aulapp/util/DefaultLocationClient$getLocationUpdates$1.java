@@ -148,7 +148,7 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(ProducerScope<? super Location> producerScope, Continuation continuation) {
+    public final Object invoke(ProducerScope<? super Location> producerScope, Continuation<? super Unit> continuation) {
         return ((DefaultLocationClient$getLocationUpdates$1) (Object) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

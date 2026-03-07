@@ -54,7 +54,7 @@ public final class NetworkConnectivityObserver$observe$1$callback$1$onAvailable$
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((NetworkConnectivityObserver$observe$1$callback$1$onAvailable$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

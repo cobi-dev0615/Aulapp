@@ -46,7 +46,7 @@ public final class PasswordRecoveryRepository$passwordRecovery$1 extends Suspend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends PasswordRecoveryResponse>> flowCollector, Continuation continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends PasswordRecoveryResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return invoke2((FlowCollector<? super ApiResult<PasswordRecoveryResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class PasswordRecoveryRepository$passwordRecovery$1 extends Suspend
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<PasswordRecoveryResponse>> flowCollector, Continuation continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<PasswordRecoveryResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return ((PasswordRecoveryRepository$passwordRecovery$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -67,7 +67,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionInstructorResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionInstructorResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             return invoke2((FlowCollector<? super ApiResult<SessionInstructorResponse>>) flowCollector, th, continuation);
         }
 
@@ -96,7 +96,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<SessionInstructorResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<SessionInstructorResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$context, this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -167,7 +167,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((HomeViewModel$getSessionFromApiAndSave$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
@@ -231,7 +231,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object emit(ApiResult<SessionInstructorResponse> apiResult, Continuation continuation) {
+        public final Object emit(ApiResult<SessionInstructorResponse> apiResult, Continuation<? super Unit> continuation) {
             HomeViewModel$getSessionFromApiAndSave$1$2$emit$1 homeViewModel$getSessionFromApiAndSave$1$2$emit$1;
             MutableSharedFlow mutableSharedFlow;
             MutableSharedFlow mutableSharedFlow2;
@@ -408,7 +408,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
-        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
+        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation<? super Unit> continuation) {
             return emit((ApiResult<SessionInstructorResponse>) obj, (Continuation<? super Unit>) continuation);
         }
     }

@@ -53,7 +53,7 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends PasswordRecoveryResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends PasswordRecoveryResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             return invoke2((FlowCollector<? super ApiResult<PasswordRecoveryResponse>>) flowCollector, th, continuation);
         }
 
@@ -72,7 +72,7 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<PasswordRecoveryResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<PasswordRecoveryResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -114,11 +114,11 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
                 final Context context2 = this.$context;
                 FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.PasswordRecoverViewModel$callAPIPasswordRecovery$1.2
                     @Override // kotlinx.coroutines.flow.FlowCollector
-                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
                         return emit((ApiResult<PasswordRecoveryResponse>) obj2, (Continuation<? super Unit>) continuation);
                     }
 
-                    public final Object emit(ApiResult<PasswordRecoveryResponse> apiResult, Continuation continuation) {
+                    public final Object emit(ApiResult<PasswordRecoveryResponse> apiResult, Continuation<? super Unit> continuation) {
                         FragmentPasswordRecoverBinding.this.mtvInformationRecovery.setText(BuildConfig.FLAVOR);
                         FragmentPasswordRecoverBinding.this.mtvInformationRecovery.setVisibility(4);
                         if (apiResult.getStatus() == EnumApiStatus.SUCCESS) {
@@ -153,7 +153,7 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((PasswordRecoverViewModel$callAPIPasswordRecovery$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

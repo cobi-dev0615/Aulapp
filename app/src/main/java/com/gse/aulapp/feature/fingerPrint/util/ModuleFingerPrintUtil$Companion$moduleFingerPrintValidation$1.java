@@ -98,7 +98,7 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
             return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
@@ -142,7 +142,7 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

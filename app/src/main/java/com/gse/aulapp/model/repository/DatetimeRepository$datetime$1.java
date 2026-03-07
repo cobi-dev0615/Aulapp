@@ -46,7 +46,7 @@ public final class DatetimeRepository$datetime$1 extends SuspendLambda implement
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends DatetimeResponse>> flowCollector, Continuation continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends DatetimeResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return invoke2((FlowCollector<? super ApiResult<DatetimeResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class DatetimeRepository$datetime$1 extends SuspendLambda implement
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<DatetimeResponse>> flowCollector, Continuation continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<DatetimeResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return ((DatetimeRepository$datetime$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

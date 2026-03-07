@@ -46,7 +46,7 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends GetEnrollmentInformationResponse>> flowCollector, Continuation continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends GetEnrollmentInformationResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return invoke2((FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>> flowCollector, Continuation continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return ((GetEnrollmentInformationRepository$getGetEnrollmentInformation$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

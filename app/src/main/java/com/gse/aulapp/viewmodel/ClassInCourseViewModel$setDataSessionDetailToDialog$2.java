@@ -77,7 +77,7 @@ public final class ClassInCourseViewModel$setDataSessionDetailToDialog$2 extends
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
             return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
@@ -116,7 +116,7 @@ public final class ClassInCourseViewModel$setDataSessionDetailToDialog$2 extends
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ClassInCourseViewModel$setDataSessionDetailToDialog$2) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

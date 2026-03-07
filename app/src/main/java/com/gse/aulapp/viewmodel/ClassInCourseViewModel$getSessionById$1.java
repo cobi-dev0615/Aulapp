@@ -73,7 +73,7 @@ public final class ClassInCourseViewModel$getSessionById$1 extends SuspendLambda
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
             return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
@@ -118,7 +118,7 @@ public final class ClassInCourseViewModel$getSessionById$1 extends SuspendLambda
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ClassInCourseViewModel$getSessionById$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

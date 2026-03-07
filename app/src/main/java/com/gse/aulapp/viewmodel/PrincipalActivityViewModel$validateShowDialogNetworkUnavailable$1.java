@@ -70,7 +70,7 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
             }
 
             @Override // kotlin.jvm.functions.Function2
-            public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
                 return ((C00151) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
             }
         }
@@ -117,7 +117,7 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
@@ -162,7 +162,7 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((PrincipalActivityViewModel$validateShowDialogNetworkUnavailable$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

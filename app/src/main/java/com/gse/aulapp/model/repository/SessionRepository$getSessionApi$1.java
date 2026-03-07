@@ -46,7 +46,7 @@ public final class SessionRepository$getSessionApi$1 extends SuspendLambda imple
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionInstructorResponse>> flowCollector, Continuation continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionInstructorResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return invoke2((FlowCollector<? super ApiResult<SessionInstructorResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class SessionRepository$getSessionApi$1 extends SuspendLambda imple
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<SessionInstructorResponse>> flowCollector, Continuation continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<SessionInstructorResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return ((SessionRepository$getSessionApi$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -65,11 +65,11 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
                 final WebviewFragment webviewFragment = this.this$0;
                 FlowCollector<? super BiometricResult> flowCollector = new FlowCollector() { // from class: com.gse.aulapp.feature.biometrix.presentation.ui.WebviewFragment.collects.1.1.1
                     @Override // kotlinx.coroutines.flow.FlowCollector
-                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
                         return emit((BiometricResult) obj2, (Continuation<? super Unit>) continuation);
                     }
 
-                    public final Object emit(BiometricResult biometricResult, Continuation continuation) {
+                    public final Object emit(BiometricResult biometricResult, Continuation<? super Unit> continuation) {
                         String str;
                         boolean z = biometricResult instanceof BiometricResult.Complete;
                         if (z || (biometricResult instanceof BiometricResult.Error)) {
@@ -107,7 +107,7 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
             return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
@@ -147,7 +147,7 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((WebviewFragment$collects$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

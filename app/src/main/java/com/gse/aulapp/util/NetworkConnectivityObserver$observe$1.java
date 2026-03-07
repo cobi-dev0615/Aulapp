@@ -105,7 +105,7 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(ProducerScope<? super ConnectivityObserver.Status> producerScope, Continuation continuation) {
+    public final Object invoke(ProducerScope<? super ConnectivityObserver.Status> producerScope, Continuation<? super Unit> continuation) {
         return ((NetworkConnectivityObserver$observe$1) (Object) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

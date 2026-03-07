@@ -46,7 +46,7 @@ public final class PracticeClassViewModel$setDataSessionDetail$1$1$1$1 extends S
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((PracticeClassViewModel$setDataSessionDetail$1$1$1$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

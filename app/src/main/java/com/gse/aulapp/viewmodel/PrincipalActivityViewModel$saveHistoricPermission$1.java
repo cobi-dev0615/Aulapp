@@ -78,7 +78,7 @@ public final class PrincipalActivityViewModel$saveHistoricPermission$1 extends S
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((PrincipalActivityViewModel$saveHistoricPermission$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

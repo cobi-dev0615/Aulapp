@@ -53,7 +53,7 @@ public final class ClassPracticeBeforeViewModel$initBiometrix$1 extends SuspendL
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends BiometrixUrlActionResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends BiometrixUrlActionResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             return invoke2((FlowCollector<? super ApiResult<BiometrixUrlActionResponse>>) flowCollector, th, continuation);
         }
 
@@ -105,7 +105,7 @@ public final class ClassPracticeBeforeViewModel$initBiometrix$1 extends SuspendL
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<BiometrixUrlActionResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<BiometrixUrlActionResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$activity, this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -168,11 +168,11 @@ public final class ClassPracticeBeforeViewModel$initBiometrix$1 extends SuspendL
         final ClassPracticeBeforeViewModel classPracticeBeforeViewModel = this.this$0;
         FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.ClassPracticeBeforeViewModel$initBiometrix$1.2
             @Override // kotlinx.coroutines.flow.FlowCollector
-            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
                 return emit((ApiResult<BiometrixUrlActionResponse>) obj2, (Continuation<? super Unit>) continuation);
             }
 
-            public final Object emit(ApiResult<BiometrixUrlActionResponse> apiResult, Continuation continuation) {
+            public final Object emit(ApiResult<BiometrixUrlActionResponse> apiResult, Continuation<? super Unit> continuation) {
                 MutableSharedFlow mutableSharedFlow2;
                 String str;
                 MutableSharedFlow mutableSharedFlow3;
@@ -228,7 +228,7 @@ public final class ClassPracticeBeforeViewModel$initBiometrix$1 extends SuspendL
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ClassPracticeBeforeViewModel$initBiometrix$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

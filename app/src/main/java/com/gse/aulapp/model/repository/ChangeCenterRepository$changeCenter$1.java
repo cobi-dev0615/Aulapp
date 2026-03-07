@@ -46,7 +46,7 @@ public final class ChangeCenterRepository$changeCenter$1 extends SuspendLambda i
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends ChangeCenterResponse>> flowCollector, Continuation continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends ChangeCenterResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return invoke2((FlowCollector<? super ApiResult<ChangeCenterResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class ChangeCenterRepository$changeCenter$1 extends SuspendLambda i
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<ChangeCenterResponse>> flowCollector, Continuation continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<ChangeCenterResponse>> flowCollector, Continuation<? super Unit> continuation) {
         return ((ChangeCenterRepository$changeCenter$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

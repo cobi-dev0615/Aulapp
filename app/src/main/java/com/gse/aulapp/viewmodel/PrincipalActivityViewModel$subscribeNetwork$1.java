@@ -99,7 +99,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                     }
 
                     @Override // kotlin.jvm.functions.Function2
-                    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+                    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
                         return ((C00131) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
                     }
                 }
@@ -141,7 +141,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                         }
 
                         @Override // kotlin.jvm.functions.Function2
-                        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+                        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
                             return ((C00141) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
                         }
                     }
@@ -185,7 +185,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                     }
 
                     @Override // kotlin.jvm.functions.Function2
-                    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+                    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
                         return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
                     }
                 }
@@ -218,11 +218,11 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                 }
 
                 @Override // kotlinx.coroutines.flow.FlowCollector
-                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
                     return emit((ConnectivityObserver.Status) obj2, (Continuation<? super Unit>) continuation);
                 }
 
-                public final Object emit(ConnectivityObserver.Status status, Continuation continuation) {
+                public final Object emit(ConnectivityObserver.Status status, Continuation<? super Unit> continuation) {
                     String unused;
                     String unused2;
                     unused = PrincipalActivityViewModel.this.TAG;
@@ -262,7 +262,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((PrincipalActivityViewModel$subscribeNetwork$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -68,7 +68,7 @@ public final class ClassViewModel$validateAndActiveNfc$1$onSuccess$1 extends Sus
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ClassViewModel$validateAndActiveNfc$1$onSuccess$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

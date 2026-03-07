@@ -69,7 +69,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
             }
 
             @Override // kotlin.jvm.functions.Function3
-            public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionPracticeExamResponse>> flowCollector, Throwable th, Continuation continuation) {
+            public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionPracticeExamResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
                 return invoke2((FlowCollector<? super ApiResult<SessionPracticeExamResponse>>) flowCollector, th, continuation);
             }
 
@@ -85,7 +85,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
             }
 
             /* renamed from: invoke, reason: avoid collision after fix types in other method */
-            public final Object invoke2(FlowCollector<? super ApiResult<SessionPracticeExamResponse>> flowCollector, Throwable th, Continuation continuation) {
+            public final Object invoke2(FlowCollector<? super ApiResult<SessionPracticeExamResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
                 AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$context, (Continuation) continuation);
                 anonymousClass2.L$0 = th;
                 return anonymousClass2.invokeSuspend(Unit.INSTANCE);
@@ -164,7 +164,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
             return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
@@ -200,7 +200,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
             /*
                 Code decompiled incorrectly, please refer to instructions dump.
             */
-            public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation continuation) {
+            public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation<? super Unit> continuation) {
                 ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1 controllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1;
                 int i;
                 ApiResult<SessionPracticeExamResponse> apiResult2 = null;
@@ -395,7 +395,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
-            public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
+            public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation<? super Unit> continuation) {
                 return emit((ApiResult<SessionPracticeExamResponse>) obj, (Continuation<? super Unit>) continuation);
             }
         }
@@ -439,7 +439,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

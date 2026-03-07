@@ -113,7 +113,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ClassInCourseViewModel$sendPracticeExamSync$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
@@ -149,7 +149,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation continuation) {
+        public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation<? super Unit> continuation) {
             ClassInCourseViewModel$sendPracticeExamSync$1$2$emit$1 classInCourseViewModel$sendPracticeExamSync$1$2$emit$1;
             int i;
             SessionRepository sessionRepository;
@@ -348,7 +348,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
-        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
+        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation<? super Unit> continuation) {
             return emit((ApiResult<SessionPracticeExamResponse>) obj, (Continuation<? super Unit>) continuation);
         }
     }

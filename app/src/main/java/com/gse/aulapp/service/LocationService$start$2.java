@@ -79,7 +79,7 @@ public final class LocationService$start$2 extends SuspendLambda implements Func
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(Location location, Continuation continuation) {
+    public final Object invoke(Location location, Continuation<? super Unit> continuation) {
         return ((LocationService$start$2) (Object) create(location, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 

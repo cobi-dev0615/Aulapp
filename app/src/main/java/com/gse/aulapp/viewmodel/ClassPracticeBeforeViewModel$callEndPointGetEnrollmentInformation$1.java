@@ -57,7 +57,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends GetEnrollmentInformationResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends GetEnrollmentInformationResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             return invoke2((FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>>) flowCollector, th, continuation);
         }
 
@@ -86,7 +86,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>> flowCollector, Throwable th, Continuation continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$activity, this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -270,17 +270,17 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
                 }
 
                 @Override // kotlin.jvm.functions.Function2
-                public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+                public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
                     return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
                 }
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
-            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
                 return emit((ApiResult<GetEnrollmentInformationResponse>) obj2, (Continuation<? super Unit>) continuation);
             }
 
-            public final Object emit(ApiResult<GetEnrollmentInformationResponse> apiResult, Continuation continuation) {
+            public final Object emit(ApiResult<GetEnrollmentInformationResponse> apiResult, Continuation<? super Unit> continuation) {
                 Object withContext = BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass1(apiResult, activity, userInfoDto, classPracticeBeforeViewModel, null), continuation);
                 return withContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? withContext : Unit.INSTANCE;
             }
@@ -289,7 +289,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInformation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

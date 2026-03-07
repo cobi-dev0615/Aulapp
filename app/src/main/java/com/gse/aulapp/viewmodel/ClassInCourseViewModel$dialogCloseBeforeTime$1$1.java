@@ -56,7 +56,7 @@ public final class ClassInCourseViewModel$dialogCloseBeforeTime$1$1 extends Susp
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ClassInCourseViewModel$dialogCloseBeforeTime$1$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

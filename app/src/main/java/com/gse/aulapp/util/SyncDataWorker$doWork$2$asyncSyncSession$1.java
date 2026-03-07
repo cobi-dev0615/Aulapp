@@ -50,7 +50,7 @@ public final class SyncDataWorker$doWork$2$asyncSyncSession$1 extends SuspendLam
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((SyncDataWorker$doWork$2$asyncSyncSession$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

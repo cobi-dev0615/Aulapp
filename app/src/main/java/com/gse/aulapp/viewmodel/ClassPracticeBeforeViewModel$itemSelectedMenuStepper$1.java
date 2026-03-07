@@ -242,7 +242,7 @@ public final class ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1 extend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
         return ((ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }
