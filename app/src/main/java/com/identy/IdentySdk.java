@@ -943,7 +943,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x00de  */
@@ -1019,7 +1018,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0050, code lost:
@@ -1586,7 +1584,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     public static void showMessage(String str) {
@@ -1787,7 +1784,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004f, code lost:
@@ -2315,7 +2311,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     public void b(boolean z) {
@@ -2451,7 +2446,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x0161 A[RETURN] */
@@ -2953,7 +2947,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0049, code lost:
@@ -3103,7 +3096,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     /* JADX WARN: Type inference failed for: r1v27, types: [boolean, int] */
@@ -4400,7 +4392,6 @@ public class IdentySdk {
 
             throw new RuntimeException(th3);
         }
-        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:63:0x0055, code lost:
@@ -4554,7 +4545,6 @@ public class IdentySdk {
 
             throw new RuntimeException(th3);
         }
-        return false;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:46:0x0243  */
@@ -4660,7 +4650,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:41:0x0227  */
@@ -4764,7 +4753,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     public IdentySdk f() {
@@ -4906,7 +4894,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     public Action getAction() {
@@ -6348,7 +6335,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     public List<Pair<Hand, Finger>> getSelectedFingers() {
@@ -7725,7 +7711,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     public boolean isGimages() {
@@ -8920,7 +8905,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0052, code lost:
@@ -10155,7 +10139,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004f, code lost:
@@ -11058,7 +11041,6 @@ public class IdentySdk {
 
             throw new RuntimeException(th3);
         }
-        return false;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x00f5  */
@@ -11171,7 +11153,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:65:0x02b4  */
@@ -11284,7 +11265,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0034, code lost:
@@ -11419,7 +11399,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0100, code lost:
@@ -11583,7 +11562,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     private void PngjBadCrcException(byte[] bArr, Finger finger, Hand hand, IdentyUser identyUser) {
@@ -12054,7 +12032,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     private void valueOf(byte[] bArr, Hand hand, Finger finger, IdentyUser identyUser) {
@@ -12309,7 +12286,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(18:18|(1:20)|21|(13:23|(1:25)(1:49)|27|(1:29)|30|(1:48)(1:34)|35|(1:37)(1:47)|(1:39)(1:46)|40|41|42|43)|51|(2:53|54)|27|(0)|30|(1:32)|48|35|(0)(0)|(0)(0)|40|41|42|43) */
@@ -12469,7 +12445,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0121, code lost:
@@ -12703,7 +12678,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:26:0x0181  */
@@ -12855,7 +12829,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0155  */
@@ -13081,7 +13054,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     /* JADX WARN: Type inference failed for: r1v30, types: [boolean, int] */
@@ -13877,7 +13849,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     public static void PngjException() {
@@ -13999,7 +13970,6 @@ public class IdentySdk {
             }
             throw new RuntimeException(th);
         }
-        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0098, code lost:
