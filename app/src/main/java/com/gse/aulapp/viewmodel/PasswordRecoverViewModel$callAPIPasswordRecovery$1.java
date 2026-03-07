@@ -114,11 +114,11 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
                 final Context context2 = this.$context;
                 FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.PasswordRecoverViewModel$callAPIPasswordRecovery$1.2
                     @Override // kotlinx.coroutines.flow.FlowCollector
-                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                         return emit((ApiResult<PasswordRecoveryResponse>) obj2, (Continuation<? super Unit>) continuation);
                     }
 
-                    public final Object emit(ApiResult<PasswordRecoveryResponse> apiResult, Continuation<? super Unit> continuation) {
+                    public final Object emit(ApiResult<PasswordRecoveryResponse> apiResult, Continuation continuation) {
                         FragmentPasswordRecoverBinding.this.mtvInformationRecovery.setText(BuildConfig.FLAVOR);
                         FragmentPasswordRecoverBinding.this.mtvInformationRecovery.setVisibility(4);
                         if (apiResult.getStatus() == EnumApiStatus.SUCCESS) {

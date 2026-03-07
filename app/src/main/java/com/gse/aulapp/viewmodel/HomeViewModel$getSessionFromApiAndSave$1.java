@@ -231,7 +231,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object emit(ApiResult<SessionInstructorResponse> apiResult, Continuation<? super Unit> continuation) {
+        public final Object emit(ApiResult<SessionInstructorResponse> apiResult, Continuation continuation) {
             HomeViewModel$getSessionFromApiAndSave$1$2$emit$1 homeViewModel$getSessionFromApiAndSave$1$2$emit$1;
             MutableSharedFlow mutableSharedFlow;
             MutableSharedFlow mutableSharedFlow2;
@@ -408,7 +408,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
-        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
             return emit((ApiResult<SessionInstructorResponse>) obj, (Continuation<? super Unit>) continuation);
         }
     }

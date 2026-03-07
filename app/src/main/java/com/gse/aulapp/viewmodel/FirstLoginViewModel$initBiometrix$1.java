@@ -145,11 +145,11 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
         final FirstLoginViewModel firstLoginViewModel = this.this$0;
         FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.FirstLoginViewModel$initBiometrix$1.2
             @Override // kotlinx.coroutines.flow.FlowCollector
-            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                 return emit((ApiResult<BiometrixUrlActionResponse>) obj2, (Continuation<? super Unit>) continuation);
             }
 
-            public final Object emit(ApiResult<BiometrixUrlActionResponse> apiResult, Continuation<? super Unit> continuation) {
+            public final Object emit(ApiResult<BiometrixUrlActionResponse> apiResult, Continuation continuation) {
                 MutableSharedFlow mutableSharedFlow2;
                 String str;
                 MutableSharedFlow mutableSharedFlow3;

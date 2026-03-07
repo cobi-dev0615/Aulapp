@@ -117,11 +117,11 @@ public final class LoginViewModel$login$1 extends SuspendLambda implements Funct
                 final FragmentLoginBinding fragmentLoginBinding = this.$binding;
                 FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.LoginViewModel$login$1.2
                     @Override // kotlinx.coroutines.flow.FlowCollector
-                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                         return emit((ApiResult<LoginResponse>) obj2, (Continuation<? super Unit>) continuation);
                     }
 
-                    public final Object emit(ApiResult<LoginResponse> apiResult, Continuation<? super Unit> continuation) {
+                    public final Object emit(ApiResult<LoginResponse> apiResult, Continuation continuation) {
                         MutableStateFlow mutableStateFlow3;
                         MutableStateFlow mutableStateFlow4;
                         MutableStateFlow mutableStateFlow5;

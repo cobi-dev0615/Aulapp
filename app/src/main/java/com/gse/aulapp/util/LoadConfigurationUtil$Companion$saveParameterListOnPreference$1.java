@@ -98,12 +98,12 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
             final Activity activity = this.$context;
             FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.util.LoadConfigurationUtil$Companion$saveParameterListOnPreference$1.2
                 @Override // kotlinx.coroutines.flow.FlowCollector
-                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                     return emit((ApiResult<ParameterListResponse>) obj2, (Continuation<? super Unit>) continuation);
                 }
 
                 /* JADX WARN: Multi-variable type inference failed */
-                public final Object emit(ApiResult<ParameterListResponse> apiResult, Continuation<? super Unit> continuation) {
+                public final Object emit(ApiResult<ParameterListResponse> apiResult, Continuation continuation) {
                     ParameterListResponse.Data data;
                     String scheduleExamsURL;
                     ParameterListResponse.Data data2;

@@ -182,11 +182,11 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
-        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
             return emit((ApiResult<SessionInstructorResponse>) obj, (Continuation<? super Unit>) continuation);
         }
 
-        public final Object emit(final ApiResult<SessionInstructorResponse> apiResult, Continuation<? super Unit> continuation) {
+        public final Object emit(final ApiResult<SessionInstructorResponse> apiResult, Continuation continuation) {
             SingleLiveEvent singleLiveEvent;
             SingleLiveEvent singleLiveEvent2;
             List<SessionInstructorObjectResponse> emptyList;

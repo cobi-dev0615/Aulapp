@@ -109,11 +109,11 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
             final HoursPerformedViewModel hoursPerformedViewModel = this.this$0;
             FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.HoursPerformedViewModel$getHoursPerformedApi$1.2
                 @Override // kotlinx.coroutines.flow.FlowCollector
-                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                     return emit((ApiResult<HoursScheduledResponse>) obj2, (Continuation<? super Unit>) continuation);
                 }
 
-                public final Object emit(ApiResult<HoursScheduledResponse> apiResult, Continuation<? super Unit> continuation) {
+                public final Object emit(ApiResult<HoursScheduledResponse> apiResult, Continuation continuation) {
                     MutableStateFlow mutableStateFlow;
                     MutableStateFlow mutableStateFlow2;
                     MutableStateFlow mutableStateFlow3;

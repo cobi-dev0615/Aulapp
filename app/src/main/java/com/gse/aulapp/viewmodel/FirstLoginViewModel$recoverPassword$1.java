@@ -143,11 +143,11 @@ public final class FirstLoginViewModel$recoverPassword$1 extends SuspendLambda i
                     }
 
                     @Override // kotlinx.coroutines.flow.FlowCollector
-                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                         return emit((ApiResult<PasswordRecoveryResponse>) obj2, (Continuation<? super Unit>) continuation);
                     }
 
-                    public final Object emit(ApiResult<PasswordRecoveryResponse> apiResult, Continuation<? super Unit> continuation) {
+                    public final Object emit(ApiResult<PasswordRecoveryResponse> apiResult, Continuation continuation) {
                         MutableStateFlow mutableStateFlow3;
                         PasswordRecoveryResponse.Result result;
                         PasswordRecoveryResponse.Result result2;

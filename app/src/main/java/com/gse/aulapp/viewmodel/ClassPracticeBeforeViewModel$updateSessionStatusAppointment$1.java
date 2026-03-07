@@ -112,11 +112,11 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
             final String str = this.$data;
             FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1.2
                 @Override // kotlinx.coroutines.flow.FlowCollector
-                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                     return emit((ApiResult<HistoricRecordPermissionsChangeResponse>) obj2, (Continuation<? super Unit>) continuation);
                 }
 
-                public final Object emit(ApiResult<HistoricRecordPermissionsChangeResponse> apiResult, Continuation<? super Unit> continuation) {
+                public final Object emit(ApiResult<HistoricRecordPermissionsChangeResponse> apiResult, Continuation continuation) {
                     SingleLiveEvent singleLiveEvent;
                     SingleLiveEvent singleLiveEvent2;
                     SingleLiveEvent singleLiveEvent3;

@@ -65,11 +65,11 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
                 final WebviewFragment webviewFragment = this.this$0;
                 FlowCollector<? super BiometricResult> flowCollector = new FlowCollector() { // from class: com.gse.aulapp.feature.biometrix.presentation.ui.WebviewFragment.collects.1.1.1
                     @Override // kotlinx.coroutines.flow.FlowCollector
-                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                         return emit((BiometricResult) obj2, (Continuation<? super Unit>) continuation);
                     }
 
-                    public final Object emit(BiometricResult biometricResult, Continuation<? super Unit> continuation) {
+                    public final Object emit(BiometricResult biometricResult, Continuation continuation) {
                         String str;
                         boolean z = biometricResult instanceof BiometricResult.Complete;
                         if (z || (biometricResult instanceof BiometricResult.Error)) {

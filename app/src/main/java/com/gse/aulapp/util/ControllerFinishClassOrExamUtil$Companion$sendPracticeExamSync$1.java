@@ -200,7 +200,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
             /*
                 Code decompiled incorrectly, please refer to instructions dump.
             */
-            public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation<? super Unit> continuation) {
+            public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation continuation) {
                 ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1 controllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1;
                 int i;
                 ApiResult<SessionPracticeExamResponse> apiResult2 = null;
@@ -395,7 +395,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
-            public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation<? super Unit> continuation) {
+            public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
                 return emit((ApiResult<SessionPracticeExamResponse>) obj, (Continuation<? super Unit>) continuation);
             }
         }

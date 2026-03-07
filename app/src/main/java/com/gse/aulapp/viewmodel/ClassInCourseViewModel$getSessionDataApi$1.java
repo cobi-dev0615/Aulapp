@@ -133,7 +133,7 @@ public final class ClassInCourseViewModel$getSessionDataApi$1 extends SuspendLam
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object emit(ApiResult<SessionExamResponse> apiResult, Continuation<? super Unit> continuation) {
+        public final Object emit(ApiResult<SessionExamResponse> apiResult, Continuation continuation) {
             ClassInCourseViewModel$getSessionDataApi$1$1$emit$1 classInCourseViewModel$getSessionDataApi$1$1$emit$1;
             int i;
             List questions;
@@ -278,7 +278,7 @@ public final class ClassInCourseViewModel$getSessionDataApi$1 extends SuspendLam
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
-        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
             return emit((ApiResult<SessionExamResponse>) obj, (Continuation<? super Unit>) continuation);
         }
     }

@@ -276,11 +276,11 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
-            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                 return emit((ApiResult<GetEnrollmentInformationResponse>) obj2, (Continuation<? super Unit>) continuation);
             }
 
-            public final Object emit(ApiResult<GetEnrollmentInformationResponse> apiResult, Continuation<? super Unit> continuation) {
+            public final Object emit(ApiResult<GetEnrollmentInformationResponse> apiResult, Continuation continuation) {
                 Object withContext = BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass1(apiResult, activity, userInfoDto, classPracticeBeforeViewModel, null), continuation);
                 return withContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? withContext : Unit.INSTANCE;
             }

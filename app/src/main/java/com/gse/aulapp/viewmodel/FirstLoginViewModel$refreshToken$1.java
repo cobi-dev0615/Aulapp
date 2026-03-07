@@ -210,7 +210,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object emit(ApiResult<RefreshTokenResponse> apiResult, Continuation<? super Unit> continuation) {
+        public final Object emit(ApiResult<RefreshTokenResponse> apiResult, Continuation continuation) {
             FirstLoginViewModel$refreshToken$1$2$emit$1 firstLoginViewModel$refreshToken$1$2$emit$1;
             int i;
             MutableSharedFlow mutableSharedFlow;
@@ -408,7 +408,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
-        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
             return emit((ApiResult<RefreshTokenResponse>) obj, (Continuation<? super Unit>) continuation);
         }
     }

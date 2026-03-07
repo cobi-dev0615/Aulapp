@@ -208,11 +208,11 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
-            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                 return emit((ApiResult<DatetimeResponse>) obj2, (Continuation<? super Unit>) continuation);
             }
 
-            public final Object emit(ApiResult<DatetimeResponse> apiResult, Continuation<? super Unit> continuation) {
+            public final Object emit(ApiResult<DatetimeResponse> apiResult, Continuation continuation) {
                 DatetimeResponse.Result result;
                 int i2 = WhenMappings.$EnumSwitchMapping$0[apiResult.getStatus().ordinal()];
                 if (i2 == 1) {

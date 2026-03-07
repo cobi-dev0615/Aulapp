@@ -149,7 +149,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation<? super Unit> continuation) {
+        public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation continuation) {
             ClassInCourseViewModel$sendPracticeExamSync$1$2$emit$1 classInCourseViewModel$sendPracticeExamSync$1$2$emit$1;
             int i;
             SessionRepository sessionRepository;
@@ -348,7 +348,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
-        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
             return emit((ApiResult<SessionPracticeExamResponse>) obj, (Continuation<? super Unit>) continuation);
         }
     }

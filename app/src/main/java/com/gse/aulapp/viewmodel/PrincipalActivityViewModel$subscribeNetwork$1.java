@@ -218,11 +218,11 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                 }
 
                 @Override // kotlinx.coroutines.flow.FlowCollector
-                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                     return emit((ConnectivityObserver.Status) obj2, (Continuation<? super Unit>) continuation);
                 }
 
-                public final Object emit(ConnectivityObserver.Status status, Continuation<? super Unit> continuation) {
+                public final Object emit(ConnectivityObserver.Status status, Continuation continuation) {
                     String unused;
                     String unused2;
                     unused = PrincipalActivityViewModel.this.TAG;

@@ -226,7 +226,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object emit(ApiResult<LoginResponse> apiResult, Continuation<? super Unit> continuation) {
+        public final Object emit(ApiResult<LoginResponse> apiResult, Continuation continuation) {
             FirstLoginViewModel$login$1$2$emit$1 firstLoginViewModel$login$1$2$emit$1;
             MutableSharedFlow mutableSharedFlow;
             LoginResponse.Result result;
@@ -468,7 +468,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
-        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
             return emit((ApiResult<LoginResponse>) obj, (Continuation<? super Unit>) continuation);
         }
     }

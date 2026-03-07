@@ -194,11 +194,11 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
                 final String str3 = this.$numberDocument;
                 FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.FirstLoginViewModel$refreshTokenCEA$1.3
                     @Override // kotlinx.coroutines.flow.FlowCollector
-                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                         return emit((ApiResult<ChangeCenterResponse>) obj2, (Continuation<? super Unit>) continuation);
                     }
 
-                    public final Object emit(ApiResult<ChangeCenterResponse> apiResult, Continuation<? super Unit> continuation) {
+                    public final Object emit(ApiResult<ChangeCenterResponse> apiResult, Continuation continuation) {
                         MutableSharedFlow mutableSharedFlow3;
                         ChangeCenterResponse.Result result;
                         MutableSharedFlow mutableSharedFlow4;

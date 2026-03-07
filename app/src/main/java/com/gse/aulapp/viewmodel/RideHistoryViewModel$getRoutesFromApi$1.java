@@ -108,11 +108,11 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
             final RideHistoryViewModel rideHistoryViewModel = this.this$0;
             FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.RideHistoryViewModel$getRoutesFromApi$1.2
                 @Override // kotlinx.coroutines.flow.FlowCollector
-                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                     return emit((ApiResult<SessionRoutesResponse>) obj2, (Continuation<? super Unit>) continuation);
                 }
 
-                public final Object emit(ApiResult<SessionRoutesResponse> apiResult, Continuation<? super Unit> continuation) {
+                public final Object emit(ApiResult<SessionRoutesResponse> apiResult, Continuation continuation) {
                     List<SessionRoutesDataResponse> emptyList;
                     SessionRoutesResponse.Result result;
                     SessionRoutesResponse.Result result2;

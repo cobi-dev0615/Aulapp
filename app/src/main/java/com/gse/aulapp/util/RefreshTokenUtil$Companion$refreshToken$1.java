@@ -101,12 +101,12 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
                 final Context context = this.$context;
                 FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.util.RefreshTokenUtil$Companion$refreshToken$1.2
                     @Override // kotlinx.coroutines.flow.FlowCollector
-                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation<? super Unit> continuation) {
+                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
                         return emit((ApiResult<RefreshTokenResponse>) obj2, (Continuation<? super Unit>) continuation);
                     }
 
                     /* JADX WARN: Multi-variable type inference failed */
-                    public final Object emit(ApiResult<RefreshTokenResponse> apiResult, Continuation<? super Unit> continuation) {
+                    public final Object emit(ApiResult<RefreshTokenResponse> apiResult, Continuation continuation) {
                         RefreshToken data;
                         if (apiResult instanceof ApiResult.Failure) {
                             ApiResult.Failure failure = (ApiResult.Failure) apiResult;
