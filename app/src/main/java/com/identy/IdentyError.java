@@ -561,7 +561,7 @@ public final class IdentyError extends IdentyResponse {
                                 c2 = 2;
                                 c3 = 6;
                             }
-                            objArr2 = (Object[]) ((Method) PngjBadSignature2).invoke(null, objArr13);
+                            objArr2 = (Object[]) ((Method) PngjBadSignature2).invoke(null, objArr132);
                             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
                             if (PngjBadSignature3 == null) {
                                 char keyCodeFromString = (char) KeyEvent.keyCodeFromString(BuildConfig.FLAVOR);

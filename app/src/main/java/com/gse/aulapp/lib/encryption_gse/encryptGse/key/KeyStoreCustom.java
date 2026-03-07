@@ -33,14 +33,14 @@ public class KeyStoreCustom {
         return bArr;
     }
 
-    private String getContentDecryptStringFromByte(byte[] bArr) {
+    private String getContentDecryptStringFromByte(byte[] bArr) throws Exception {
         if (bArr != null) {
             return decryptValue(bArr, getDerive(), 16);
         }
         return null;
     }
 
-    private byte[] getContentEncryptStringFromByte(String str) {
+    private byte[] getContentEncryptStringFromByte(String str) throws Exception {
         if (str == null) {
             return null;
         }
