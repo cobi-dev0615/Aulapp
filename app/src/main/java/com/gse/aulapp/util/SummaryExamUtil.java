@@ -96,7 +96,7 @@ public abstract class SummaryExamUtil {
             Intrinsics.checkNotNullParameter(questionFullSync, "questionFullSync");
             int i2 = 0;
             if (questionFullSync == null || !questionFullSync.isEmpty()) {
-                Iterator it = questionFullSync.iterator();
+                Iterator<T> it = questionFullSync.iterator();
                 i = 0;
                 while (it.hasNext()) {
                     if (Intrinsics.areEqual(((QuestionPracticeExam) it.next()).getAnswer(), "Aprobado") && (i = i + 1) < 0) {
@@ -107,7 +107,7 @@ public abstract class SummaryExamUtil {
                 i = 0;
             }
             if (questionFullSync == null || !questionFullSync.isEmpty()) {
-                Iterator it2 = questionFullSync.iterator();
+                Iterator<T> it2 = questionFullSync.iterator();
                 while (it2.hasNext()) {
                     if (Intrinsics.areEqual(((QuestionPracticeExam) it2.next()).getAnswer(), "Reprobado") && (i2 = i2 + 1) < 0) {
                         CollectionsKt.throwCountOverflow();
