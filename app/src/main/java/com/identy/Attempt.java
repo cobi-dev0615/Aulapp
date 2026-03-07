@@ -309,6 +309,7 @@ public class Attempt {
             }
             throw new RuntimeException(th);
         }
+        return 0L;
     }
 
     public String getData() {
@@ -593,6 +594,7 @@ public class Attempt {
             }
             throw new RuntimeException(th);
         }
+        return 0L;
     }
 
     public int getNfiq1Score() {
@@ -710,6 +712,7 @@ public class Attempt {
             }
             throw new RuntimeException(th);
         }
+        return 0L;
     }
 
     public float getPadSub1() {
@@ -921,6 +924,7 @@ public class Attempt {
             }
             throw new RuntimeException(th);
         }
+        return 0L;
     }
 
     public double getQualityScore() {
