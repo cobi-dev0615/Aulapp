@@ -621,15 +621,6 @@ public final class IdentyError extends IdentyResponse {
                 } catch (Exception unused) {
                     throw new RuntimeException();
                 }
-                Object[] objArr132 = {Integer.valueOf(0), 713092027};
-                PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1437710995);
-                if (PngjBadSignature2 != null) {
-                }
-                objArr2 = (Object[]) ((Method) PngjBadSignature2).invoke(null, objArr132);
-                PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
-                if (PngjBadSignature3 == null) {
-                }
-                ((Field) PngjBadSignature3).set(null, objArr2);
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
