@@ -228,10 +228,14 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
                     cArr2[i3] = ((Character) ((Method) PngjBadSignature).invoke(null, objArr2)).charValue();
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             $11 = ($10 + 31) % 128;
@@ -420,7 +424,7 @@ public abstract class valueOf extends OutputStream implements AutoCloseable {
             } catch (Throwable th) {
                 cause = th.getCause();
                 if (cause != null) {
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
                 throw th;
             }

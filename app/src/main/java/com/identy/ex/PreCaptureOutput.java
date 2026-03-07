@@ -106,10 +106,14 @@ public class PreCaptureOutput {
             this.streakCount = 0;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -248,9 +252,9 @@ public class PreCaptureOutput {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -291,9 +295,9 @@ public class PreCaptureOutput {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -346,9 +350,9 @@ public class PreCaptureOutput {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -388,9 +392,9 @@ public class PreCaptureOutput {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -448,9 +452,9 @@ public class PreCaptureOutput {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -492,9 +496,9 @@ public class PreCaptureOutput {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -536,9 +540,9 @@ public class PreCaptureOutput {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -578,9 +582,9 @@ public class PreCaptureOutput {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -623,10 +627,14 @@ public class PreCaptureOutput {
             this.b = i2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -712,9 +720,9 @@ public class PreCaptureOutput {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 

@@ -106,10 +106,14 @@ public class GuideNoGuideHelper {
             Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -236,10 +240,14 @@ public class GuideNoGuideHelper {
                     i4 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             cArr = cArr2;
@@ -540,9 +548,9 @@ public class GuideNoGuideHelper {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -777,9 +785,9 @@ public class GuideNoGuideHelper {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         valueOf = (PngjBadSignature + 79) % 128;
     }
@@ -972,9 +980,9 @@ public class GuideNoGuideHelper {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         PngjBadSignature = (valueOf + 87) % 128;
     }
@@ -1086,9 +1094,9 @@ public class GuideNoGuideHelper {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         valueOf = (PngjBadSignature + 73) % 128;
     }
@@ -1392,10 +1400,14 @@ public class GuideNoGuideHelper {
             edit2.commit();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -1477,10 +1489,14 @@ public class GuideNoGuideHelper {
             edit2.commit();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -1559,10 +1575,14 @@ public class GuideNoGuideHelper {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         valueOf = (PngjBadSignature + 93) % 128;
     }
@@ -1643,10 +1663,14 @@ public class GuideNoGuideHelper {
                 return;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
             valueOf = (PngjBadSignature + 67) % 128;
         } else {

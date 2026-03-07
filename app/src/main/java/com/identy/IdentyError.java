@@ -358,9 +358,9 @@ public final class IdentyError extends IdentyResponse {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -400,9 +400,9 @@ public final class IdentyError extends IdentyResponse {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         PngjExceptionInternal = (PngjUnsupportedException + 9) % 128;
     }
@@ -634,9 +634,9 @@ public final class IdentyError extends IdentyResponse {
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
             byte[] bArr4 = $$d;
             Object[] objArr19 = new Object[1];

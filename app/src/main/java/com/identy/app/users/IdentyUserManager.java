@@ -81,10 +81,14 @@ public class IdentyUserManager {
             this.a = (IdentyAppDatabase) Room.databaseBuilder(context, IdentyAppDatabase.class, IdentyB.c((-((a2 & 1) + (a2 | 1))) & i142, 121, 2904, concat2)).fallbackToDestructiveMigration().build();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -170,9 +174,9 @@ public class IdentyUserManager {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -245,9 +249,9 @@ public class IdentyUserManager {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -287,9 +291,9 @@ public class IdentyUserManager {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -327,9 +331,9 @@ public class IdentyUserManager {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -367,9 +371,9 @@ public class IdentyUserManager {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -439,9 +443,9 @@ public class IdentyUserManager {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -514,9 +518,9 @@ public class IdentyUserManager {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -556,9 +560,9 @@ public class IdentyUserManager {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -628,9 +632,9 @@ public class IdentyUserManager {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 }

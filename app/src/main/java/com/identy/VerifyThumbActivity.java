@@ -402,10 +402,14 @@ public class VerifyThumbActivity extends FingerActivity {
                     c9 = c7;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             c = c8;
@@ -769,10 +773,14 @@ public class VerifyThumbActivity extends FingerActivity {
             ((Field) PngjBadSignature5).set(null, PngjBadCrcException$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr12 = new Object[1];
         c("\r\u0016\r\u0003\u0014\u0010\u0003\u0017\u000b\u0017\u0003\u0002\n\u0001\t\u000b", 15 - MotionEvent.axisFromString(BuildConfig.FLAVOR), (byte) (13 - TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0)), objArr12);

@@ -92,10 +92,14 @@ public class ActionS3Meta {
             this.a = z2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -248,9 +252,9 @@ public class ActionS3Meta {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 }

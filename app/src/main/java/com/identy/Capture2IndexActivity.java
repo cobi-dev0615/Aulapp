@@ -213,7 +213,7 @@ public class Capture2IndexActivity extends FingerActivity {
             if (cause != null) {
                 throw th;
             }
-            throw cause;
+            throw new RuntimeException(cause);
         }
         char[] cArr3 = new char[length];
         pngjUnsupportedException.valueOf = 0;
@@ -461,10 +461,14 @@ public class Capture2IndexActivity extends FingerActivity {
             ((Field) PngjBadSignature5).set(null, PngjBadCrcException$52c725b);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr13 = new Object[1];
         c("豔隖맚\udc04\ue734ি⳩㜯娑紁螷ꫤ촡큿瘟ᶔ", (ViewConfiguration.getKeyRepeatDelay() >> 16) + 6857, objArr13);

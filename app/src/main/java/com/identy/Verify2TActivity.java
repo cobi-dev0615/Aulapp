@@ -389,7 +389,7 @@ public class Verify2TActivity extends FingerActivity {
             if (cause != null) {
                 throw th;
             }
-            throw cause;
+            throw new RuntimeException(cause);
         }
         int i8 = i6;
         if (i2 > 0) {
@@ -693,10 +693,14 @@ public class Verify2TActivity extends FingerActivity {
             ((Field) PngjBadSignature7).set(null, PngjException$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         java.lang.Object[] objArr14 = new java.lang.Object[1];
         c((ViewConfiguration.getLongPressTimeout() >> 16) + 16, false, "\u0011\u0012\u0003\u000b\b\uffff\u0014\uffffￌ\n\uffff\f\u0005ￌ\ufff1\u0017", 3 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), 156 - (ViewConfiguration.getJumpTapTimeout() >> 16), objArr14);

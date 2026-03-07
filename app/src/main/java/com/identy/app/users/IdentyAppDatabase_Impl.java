@@ -114,10 +114,14 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
             Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -155,9 +159,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -197,9 +201,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -238,9 +242,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -278,9 +282,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -318,9 +322,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -360,9 +364,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -503,10 +507,14 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
             writableDatabase = super.getOpenHelper().getWritableDatabase();
         } catch (Throwable th2) {
             Throwable cause = th2.getCause();
+
             if (cause == null) {
-                throw th2;
+
+                throw new RuntimeException(th2);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -570,9 +578,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -643,9 +651,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -703,10 +711,14 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
             }
         } catch (Throwable th2) {
             Throwable cause = th2.getCause();
+
             if (cause != null) {
-                throw cause;
+
+                throw new RuntimeException(cause);
+
             }
-            throw th2;
+
+            throw new RuntimeException(th2);
         }
     }
 
@@ -745,10 +757,14 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
             identyAppDatabase_Impl.internalInitInvalidationTracker(supportSQLiteDatabase);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -788,9 +804,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 }

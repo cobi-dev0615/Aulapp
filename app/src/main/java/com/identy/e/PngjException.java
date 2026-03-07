@@ -176,10 +176,14 @@ public class PngjException {
                     i6 = i4;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             cArr = cArr2;
@@ -431,10 +435,14 @@ public class PngjException {
                 this.PngjOutputException = Mac.getInstance("HmacSHA256");
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         } catch (GeneralSecurityException e) {
             throw new GeneralSecurityException("Please make sure \"Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files\" is installed on your JRE.", e);

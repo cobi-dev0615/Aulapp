@@ -217,10 +217,14 @@ public class Enroll4FActivity extends FingerActivity {
                         i6 = 0;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
                 iArr3 = iArr4;
@@ -665,10 +669,14 @@ public class Enroll4FActivity extends FingerActivity {
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         }
     }
@@ -859,10 +867,14 @@ public class Enroll4FActivity extends FingerActivity {
             ((Field) PngjBadSignature6).set(null, PngjException$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr12 = new Object[1];
         c("䮀䠑䯪拓츺鬊⾈倀\ue122鵒撹稛ỿ㞄ㄇ蕸둗戢쾅\u2fe0", (ViewConfiguration.getJumpTapTimeout() >> 16) + 1, objArr12);
@@ -893,10 +905,14 @@ public class Enroll4FActivity extends FingerActivity {
             values = (getFingerPrintQualityScore + 67) % 128;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 

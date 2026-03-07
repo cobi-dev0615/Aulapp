@@ -284,10 +284,14 @@ public class EnrollFingersActivity extends FingerActivity {
                         cArr2[i4] = ((Character) ((Method) PngjBadSignature2).invoke(null, objArr2)).charValue();
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 } else {
                     Object[] objArr3 = {Integer.valueOf(cArr[i4])};
@@ -689,10 +693,14 @@ public class EnrollFingersActivity extends FingerActivity {
             ((Field) PngjBadSignature7).set(null, PngjException$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr14 = new Object[1];
         c("\u0000\r\u0005\u000e\u0016\r\r\u000f\b\u0015\u0010\u0016\u0002\u0015\u0005\n", 16 - (Process.myTid() >> 22), (byte) (TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0) + 78), objArr14);

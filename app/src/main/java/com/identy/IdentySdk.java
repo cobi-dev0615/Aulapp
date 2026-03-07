@@ -938,9 +938,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         int i21 = (generateST + 17) % 128;
         deduplication = i21;
@@ -1016,9 +1016,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 21) % 128;
     }
@@ -1104,9 +1104,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 73) % 128;
     }
@@ -1202,9 +1202,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 33) % 128;
     }
@@ -1317,10 +1317,14 @@ public class IdentySdk {
                             cArr4[i4] = ((Character) ((Method) PngjBadSignature2).invoke(null, objArr2)).charValue();
                         } catch (Throwable th) {
                             Throwable cause = th.getCause();
+
                             if (cause == null) {
-                                throw th;
+
+                                throw new RuntimeException(th);
+
                             }
-                            throw cause;
+
+                            throw new RuntimeException(cause);
                         }
                     } else {
                         Object[] objArr3 = {Integer.valueOf(cArr3[i4])};
@@ -1508,9 +1512,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 61) % 128;
     }
@@ -1582,9 +1586,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 103) % 128;
     }
@@ -1633,10 +1637,14 @@ public class IdentySdk {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         generateST = (deduplication + 29) % 128;
     }
@@ -1780,9 +1788,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -1845,9 +1853,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -1927,10 +1935,14 @@ public class IdentySdk {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         generateST = (deduplication + 25) % 128;
     }
@@ -2018,10 +2030,14 @@ public class IdentySdk {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         generateST = (deduplication + 51) % 128;
     }
@@ -2094,9 +2110,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 97) % 128;
     }
@@ -2172,9 +2188,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -2301,9 +2317,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 121) % 128;
     }
@@ -2348,10 +2364,14 @@ public class IdentySdk {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         generateST = (deduplication + 55) % 128;
     }
@@ -2434,9 +2454,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 49) % 128;
     }
@@ -2538,9 +2558,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -2636,9 +2656,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 13) % 128;
     }
@@ -2709,9 +2729,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 121) % 128;
     }
@@ -2787,9 +2807,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 49) % 128;
     }
@@ -2866,9 +2886,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -2937,9 +2957,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -2998,9 +3018,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 13) % 128;
     }
@@ -3087,9 +3107,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 1) % 128;
     }
@@ -3164,9 +3184,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 113) % 128;
     }
@@ -3241,10 +3261,14 @@ public class IdentySdk {
             this.CapturePosition = false;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -3341,10 +3365,14 @@ public class IdentySdk {
             generateST = (deduplication + 97) % 128;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -3431,10 +3459,14 @@ public class IdentySdk {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -3532,9 +3564,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -3641,9 +3673,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -3913,9 +3945,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 11) % 128;
     }
@@ -4096,9 +4128,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         int i19 = (generateST + 51) % 128;
         deduplication = i19;
@@ -4200,10 +4232,14 @@ public class IdentySdk {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         generateST = (deduplication + 71) % 128;
     }
@@ -4247,9 +4283,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 123) % 128;
     }
@@ -4368,10 +4404,14 @@ public class IdentySdk {
             }
         } catch (Throwable th3) {
             Throwable cause = th3.getCause();
+
             if (cause != null) {
-                throw cause;
+
+                throw new RuntimeException(cause);
+
             }
-            throw th3;
+
+            throw new RuntimeException(th3);
         }
         generateST = (deduplication + 81) % 128;
     }
@@ -4518,10 +4558,14 @@ public class IdentySdk {
             }
         } catch (Throwable th3) {
             Throwable cause = th3.getCause();
+
             if (cause != null) {
-                throw cause;
+
+                throw new RuntimeException(cause);
+
             }
-            throw th3;
+
+            throw new RuntimeException(th3);
         }
     }
 
@@ -4624,9 +4668,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -4727,9 +4771,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 77) % 128;
     }
@@ -4813,9 +4857,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 91) % 128;
     }
@@ -4870,9 +4914,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 37) % 128;
     }
@@ -4917,9 +4961,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 45) % 128;
     }
@@ -4959,9 +5003,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -5000,9 +5044,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 17) % 128;
     }
@@ -5063,9 +5107,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -5109,9 +5153,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 21) % 128;
     }
@@ -5260,9 +5304,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 3) % 128;
     }
@@ -5347,9 +5391,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -5395,9 +5439,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -5454,9 +5498,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 91) % 128;
     }
@@ -5503,9 +5547,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -5571,9 +5615,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -5789,9 +5833,9 @@ public class IdentySdk {
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
             byte[] bArr3 = $$d;
             byte b12 = (byte) (-bArr3[11]);
@@ -5871,9 +5915,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 17) % 128;
     }
@@ -5917,9 +5961,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 105) % 128;
     }
@@ -5959,9 +6003,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 17) % 128;
     }
@@ -6091,9 +6135,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         int i4 = (generateST + 87) % 128;
         deduplication = i4;
@@ -6141,9 +6185,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         int i5 = generateST;
         deduplication = (i5 + 41) % 128;
@@ -6190,9 +6234,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -6253,9 +6297,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -6325,9 +6369,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 5) % 128;
     }
@@ -6371,9 +6415,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 87) % 128;
     }
@@ -6418,9 +6462,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 43) % 128;
     }
@@ -6460,9 +6504,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 77) % 128;
     }
@@ -6507,9 +6551,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 81) % 128;
     }
@@ -6565,9 +6609,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 63) % 128;
     }
@@ -6609,9 +6653,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 99) % 128;
     }
@@ -6672,9 +6716,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -6972,9 +7016,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -7014,9 +7058,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -7203,9 +7247,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 37) % 128;
     }
@@ -7344,9 +7388,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 1) % 128;
     }
@@ -7500,9 +7544,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 43) % 128;
     }
@@ -7574,9 +7618,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -7619,9 +7663,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 57) % 128;
     }
@@ -7710,9 +7754,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 67) % 128;
     }
@@ -7758,9 +7802,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -7933,9 +7977,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 49) % 128;
     }
@@ -7979,9 +8023,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 69) % 128;
     }
@@ -8022,9 +8066,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 27) % 128;
     }
@@ -8069,9 +8113,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 75) % 128;
     }
@@ -8446,10 +8490,14 @@ public class IdentySdk {
             throw new UnSupportedTemplateException();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         deduplication = (generateST + 101) % 128;
     }
@@ -8588,10 +8636,14 @@ public class IdentySdk {
             throw new UnSupportedTemplateException();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -8646,9 +8698,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 47) % 128;
     }
@@ -8695,9 +8747,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -8741,9 +8793,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 119) % 128;
     }
@@ -8784,9 +8836,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 25) % 128;
     }
@@ -8904,9 +8956,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -8965,9 +9017,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -9048,9 +9100,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -9092,10 +9144,14 @@ public class IdentySdk {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         int i3 = (deduplication + 11) % 128;
         generateST = i3;
@@ -9140,10 +9196,14 @@ public class IdentySdk {
             this.EnrollThumbActivity = z;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -9198,10 +9258,14 @@ public class IdentySdk {
             this.e1 = z;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -9255,9 +9319,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 87) % 128;
     }
@@ -9299,10 +9363,14 @@ public class IdentySdk {
             this.CaptureRolledFingersActivity = z;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -9349,10 +9417,14 @@ public class IdentySdk {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         generateST = (deduplication + 9) % 128;
     }
@@ -9398,9 +9470,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 97) % 128;
     }
@@ -9457,9 +9529,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -9519,9 +9591,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 11) % 128;
     }
@@ -9573,9 +9645,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 7) % 128;
     }
@@ -9650,9 +9722,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -9709,9 +9781,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -9753,9 +9825,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         int i3 = (deduplication + 79) % 128;
         generateST = i3;
@@ -9806,9 +9878,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -9875,9 +9947,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 35) % 128;
     }
@@ -9926,9 +9998,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 107) % 128;
     }
@@ -9987,10 +10059,14 @@ public class IdentySdk {
             this.Fpnative = str;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -10036,10 +10112,14 @@ public class IdentySdk {
             this.PngjOutputException = fingerMatchSecLevel;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -10120,9 +10200,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -10185,10 +10265,14 @@ public class IdentySdk {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         int i5 = (generateST + 117) % 128;
         deduplication = i5;
@@ -10265,9 +10349,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 63) % 128;
     }
@@ -10328,9 +10412,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 41) % 128;
     }
@@ -10382,10 +10466,14 @@ public class IdentySdk {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         int i5 = (generateST + 21) % 128;
         deduplication = i5;
@@ -10428,10 +10516,14 @@ public class IdentySdk {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         deduplication = (generateST + 25) % 128;
     }
@@ -10500,10 +10592,14 @@ public class IdentySdk {
             }
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         generateST = (deduplication + 73) % 128;
     }
@@ -10638,9 +10734,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 39) % 128;
     }
@@ -10701,9 +10797,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -10746,9 +10842,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 91) % 128;
     }
@@ -10789,9 +10885,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) % 128;
     }
@@ -10831,9 +10927,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 63) % 128;
     }
@@ -10892,9 +10988,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 49) % 128;
     }
@@ -11016,10 +11112,14 @@ public class IdentySdk {
             }
         } catch (Throwable th3) {
             Throwable cause = th3.getCause();
+
             if (cause != null) {
-                throw cause;
+
+                throw new RuntimeException(cause);
+
             }
-            throw th3;
+
+            throw new RuntimeException(th3);
         }
     }
 
@@ -11129,9 +11229,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 47) % 128;
     }
@@ -11242,9 +11342,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 101) % 128;
     }
@@ -11377,9 +11477,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -11540,9 +11640,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -12010,9 +12110,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         deduplication = (generateST + 51) % 128;
     }
@@ -12142,10 +12242,14 @@ public class IdentySdk {
             "26/26/3/Memory".substring(8880 / (((-((((i182 | 1) << 1) - (i182 ^ 1)) + 1)) & i162) * 185));
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -12261,9 +12365,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 7) % 128;
     }
@@ -12421,9 +12525,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -12654,9 +12758,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -12805,9 +12909,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -12898,9 +13002,9 @@ public class IdentySdk {
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
             generateST = (deduplication + 53) % 128;
         } else {
@@ -13031,9 +13135,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -13107,9 +13211,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 121) % 128;
     }
@@ -13208,9 +13312,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -13364,9 +13468,9 @@ public class IdentySdk {
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
             generateST = (deduplication + 59) % 128;
         } else {
@@ -13462,9 +13566,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 7) % 128;
     }
@@ -13574,9 +13678,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         generateST = (deduplication + 85) % 128;
     }
@@ -13681,9 +13785,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -13830,9 +13934,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -13951,9 +14055,9 @@ public class IdentySdk {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -14572,10 +14676,14 @@ public class IdentySdk {
             this.getL1Score = null;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -14682,9 +14790,9 @@ public class IdentySdk {
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
         } else {
             throw null;
@@ -14819,9 +14927,9 @@ public class IdentySdk {
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
         }
         throw null;
@@ -14865,10 +14973,14 @@ public class IdentySdk {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         generateST = (deduplication + 75) % 128;
     }
@@ -14925,10 +15037,14 @@ public class IdentySdk {
             com.identy.Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 }

@@ -749,10 +749,14 @@ public class e1 extends BroadcastReceiver {
                         c4 = '0';
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
                 cArr = cArr2;
@@ -966,7 +970,7 @@ public class e1 extends BroadcastReceiver {
                 if (cause != null) {
                     throw th;
                 }
-                throw cause;
+                throw new RuntimeException(cause);
             }
             char[] cArr = new char[length];
             pngjUnsupportedException.valueOf = 0;
@@ -1460,10 +1464,14 @@ public class e1 extends BroadcastReceiver {
                     i6 = i4;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             cArr2 = cArr;
@@ -2755,10 +2763,14 @@ public class e1 extends BroadcastReceiver {
                     }
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             } else {
                 z = true;

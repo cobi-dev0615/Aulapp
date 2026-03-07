@@ -244,7 +244,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                 if (cause != null) {
                     throw th;
                 }
-                throw cause;
+                throw new RuntimeException(cause);
             }
             char[] cArr = new char[i2];
             onerrorresponse.PngjBadSignature = 0;
@@ -345,7 +345,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                 if (cause != null) {
                     throw th;
                 }
-                throw cause;
+                throw new RuntimeException(cause);
             }
             if (i2 > 0) {
                 action.PngjException = i2;
@@ -578,10 +578,14 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                 $11 = ($10 + 79) % 128;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         }
     }
@@ -815,10 +819,14 @@ public class CaptureRolledThumbActivity extends FingerActivity {
             ((Field) PngjBadSignature6).set(null, PngjBadSignature$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr13 = new Object[1];
         c("⍾픚⏺쁊⌔ុꘌ衫⡐ᢶ댛鍤㔙෴렩鹳ȍ㚮蔟ꥧ", Drawable.resolveOpacity(0, 0), objArr13);

@@ -132,9 +132,9 @@ public abstract class PngjInputException {
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
         }
 
@@ -174,9 +174,9 @@ public abstract class PngjInputException {
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
         }
     }

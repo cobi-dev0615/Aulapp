@@ -389,10 +389,14 @@ public class Verify4FActivity extends FingerActivity {
                     $11 = ($10 + 49) % 128;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             cArr = cArr2;
@@ -697,10 +701,14 @@ public class Verify4FActivity extends FingerActivity {
             ((Field) PngjBadSignature5).set(null, values$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr12 = new Object[1];
         c(null, 127 - (ViewConfiguration.getMaximumFlingVelocity() >> 16), null, "\u008d\u008c\u008b\u0088\u008a\u0089\u0087\u0096\u0082\u0081\u008f\u0087\u0081\u0095\u0081\u0094", objArr12);

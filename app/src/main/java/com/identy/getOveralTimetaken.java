@@ -482,10 +482,14 @@ public final class getOveralTimetaken extends e1 {
                     i4 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             String str4 = new String(cArr6);
@@ -611,7 +615,7 @@ public final class getOveralTimetaken extends e1 {
                 if (cause != null) {
                     throw th;
                 }
-                throw cause;
+                throw new RuntimeException(cause);
             }
             float f3 = 0.0f;
             char[] cArr3 = new char[length];
@@ -1011,10 +1015,14 @@ public final class getOveralTimetaken extends e1 {
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         }
         String str2 = new String(values2, 4, values2.length - 4);
@@ -1397,10 +1405,14 @@ public final class getOveralTimetaken extends e1 {
                 }
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         } else {
             pfkrolfinalizeF = (pfk + 57) % 128;

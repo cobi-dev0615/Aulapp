@@ -248,10 +248,14 @@ public class Verify2IndexActivity extends FingerActivity {
                         i9 = i2;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 } else {
                     bArr = bArr3;
@@ -525,10 +529,14 @@ public class Verify2IndexActivity extends FingerActivity {
             ((Field) PngjBadSignature5).set(null, values$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         java.lang.Object[] objArr12 = new java.lang.Object[1];
         c(new int[]{37, 16, 151, 10}, "\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0000", true, objArr12);

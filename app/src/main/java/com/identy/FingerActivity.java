@@ -348,10 +348,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             cArr5[i8] = ((Character) ((Method) PngjBadSignature2).invoke(null, objArr2)).charValue();
                         } catch (Throwable th) {
                             Throwable cause = th.getCause();
+
                             if (cause == null) {
-                                throw th;
+
+                                throw new RuntimeException(th);
+
                             }
-                            throw cause;
+
+                            throw new RuntimeException(cause);
                         }
                     } else {
                         Object[] objArr3 = {Integer.valueOf(cArr4[i8])};
@@ -525,10 +529,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         i9 = i6;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
                 cArr2 = cArr;
@@ -1413,9 +1421,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                                             } catch (Throwable th) {
                                                                                                 Throwable cause = th.getCause();
                                                                                                 if (cause != null) {
-                                                                                                    throw cause;
+                                                                                                    throw new RuntimeException(cause);
                                                                                                 }
-                                                                                                throw th;
+                                                                                                throw new RuntimeException(th);
                                                                                             }
                                                                                         } else {
                                                                                             dataOutputStream = dataOutputStream2;
@@ -3568,9 +3576,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         } catch (Throwable th) {
                                             Throwable cause = th.getCause();
                                             if (cause != null) {
-                                                throw cause;
+                                                throw new RuntimeException(cause);
                                             }
-                                            throw th;
+                                            throw new RuntimeException(th);
                                         }
                                     } catch (Exception unused) {
                                     }
@@ -4600,10 +4608,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         cArr4[i6] = ((Character) ((Method) PngjBadSignature2).invoke(null, objArr2)).charValue();
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
                 cArr3 = cArr4;
@@ -4760,10 +4772,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     $10 = ($11 + 9) % 128;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
         }
@@ -4976,7 +4992,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 if (cause != null) {
                     throw th;
                 }
-                throw cause;
+                throw new RuntimeException(cause);
             }
             char[] cArr3 = new char[length];
             pngjUnsupportedException.valueOf = 0;
@@ -5250,10 +5266,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     }
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             } else {
                 Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
@@ -5918,10 +5938,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     $10 = ($11 + 51) % 128;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             String str2 = new String(values2, 4, values2.length - 4);
@@ -6142,10 +6166,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 }
                             } catch (Throwable th) {
                                 Throwable cause = th.getCause();
+
                                 if (cause == null) {
-                                    throw th;
+
+                                    throw new RuntimeException(th);
+
                                 }
-                                throw cause;
+
+                                throw new RuntimeException(cause);
                             }
                         }
                     } catch (Exception e3) {
@@ -7777,10 +7805,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         }
     }
@@ -8388,10 +8420,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             ((Field) PngjBadSignature7).set(null, values$52c725b);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr13 = new Object[1];
         e("덉滸댣숚\u175c篔ū丬〛䕟縼짇휶繍\uf361៤ꔞ갫Ⅳ旼", 1 - (ViewConfiguration.getTapTimeout() >> 16), objArr13);
@@ -8894,10 +8930,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 }
                             } catch (Throwable th) {
                                 Throwable cause = th.getCause();
+
                                 if (cause == null) {
-                                    throw th;
+
+                                    throw new RuntimeException(th);
+
                                 }
-                                throw cause;
+
+                                throw new RuntimeException(cause);
                             }
                         }
                     } else {

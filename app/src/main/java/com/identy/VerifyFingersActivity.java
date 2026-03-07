@@ -495,10 +495,14 @@ public class VerifyFingersActivity extends FingerActivity {
             objArr[0] = sb2;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -703,10 +707,14 @@ public class VerifyFingersActivity extends FingerActivity {
             ((Field) PngjBadSignature5).set(null, PngjBadSignature$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr12 = new Object[1];
         c((short) (TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR) + 59), (Process.getElapsedCpuTime() > 0L ? 1 : (Process.getElapsedCpuTime() == 0L ? 0 : -1)) - 1774066382, View.resolveSize(0, 0) + 1801737947, (byte) (54 - (ViewConfiguration.getJumpTapTimeout() >> 16)), (-16) - (ViewConfiguration.getWindowTouchSlop() >> 8), objArr12);

@@ -193,10 +193,14 @@ public final class Action {
                     cArr4[i6] = ((Character) ((Method) PngjBadSignature).invoke(null, objArr2)).charValue();
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             cArr3 = cArr4;
@@ -423,10 +427,14 @@ public final class Action {
                     i2 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             cArr2 = cArr3;

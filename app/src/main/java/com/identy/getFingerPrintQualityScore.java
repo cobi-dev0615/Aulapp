@@ -79,10 +79,14 @@ public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, Ar
             ((Method) PngjBadSignature2).invoke(null, objArr);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 

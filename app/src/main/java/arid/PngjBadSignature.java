@@ -178,10 +178,14 @@ public class PngjBadSignature extends PngjInputException {
                         i10--;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 } else {
                     bArr = bArr3;
@@ -480,10 +484,14 @@ public class PngjBadSignature extends PngjInputException {
             objArr[0] = sb.toString();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 

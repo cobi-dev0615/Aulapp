@@ -189,10 +189,14 @@ public class PngjInputException extends PngjException {
                 $11 = ($10 + 5) % 128;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         }
     }
@@ -257,10 +261,14 @@ public class PngjInputException extends PngjException {
                     i2 = i10;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             int i13 = i2;

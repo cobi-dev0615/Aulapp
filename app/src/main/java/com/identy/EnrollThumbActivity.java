@@ -284,10 +284,14 @@ public class EnrollThumbActivity extends FingerActivity {
                     i5 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             bArr = bArr4;
@@ -572,10 +576,14 @@ public class EnrollThumbActivity extends FingerActivity {
             ((Field) PngjBadSignature5).set(null, PngjException$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr12 = new Object[1];
         c(new int[]{37, 16, 12, 0}, "\u0000\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0001\u0001\u0000", false, objArr12);
@@ -604,10 +612,14 @@ public class EnrollThumbActivity extends FingerActivity {
             getFingerPrintQualityScore = (valueOf + 103) % 128;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 

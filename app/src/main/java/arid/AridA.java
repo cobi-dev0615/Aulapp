@@ -153,7 +153,7 @@ public final class AridA {
                     if (cause == null) {
                         throw th;
                     }
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
             }
             if (i2 > 0) {
@@ -259,10 +259,14 @@ public final class AridA {
                             i9 = i3;
                         } catch (Throwable th) {
                             Throwable cause = th.getCause();
+
                             if (cause == null) {
-                                throw th;
+
+                                throw new RuntimeException(th);
+
                             }
-                            throw cause;
+
+                            throw new RuntimeException(cause);
                         }
                     } else {
                         bArr = bArr3;

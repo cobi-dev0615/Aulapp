@@ -516,7 +516,7 @@ public final class isAuthSucess extends e1 {
                         if (cause != null) {
                             throw th;
                         }
-                        throw cause;
+                        throw new RuntimeException(cause);
                     }
                     if (i2 > 0) {
                         action.PngjException = i2;
@@ -737,10 +737,14 @@ public final class isAuthSucess extends e1 {
                         objArr[0] = sb.toString();
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
 
@@ -1218,10 +1222,14 @@ public final class isAuthSucess extends e1 {
                     i2 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             int i13 = i3;
@@ -1678,10 +1686,14 @@ public final class isAuthSucess extends e1 {
                 }
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         } else {
             pfkrolfinalize = (destroy + 39) % 128;

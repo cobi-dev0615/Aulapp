@@ -206,7 +206,7 @@ public final class PngjException implements SensorEventListener {
             if (cause != null) {
                 throw th;
             }
-            throw cause;
+            throw new RuntimeException(cause);
         }
         if (i2 > 0) {
             action.PngjException = i2;
@@ -441,10 +441,14 @@ public final class PngjException implements SensorEventListener {
                 ((Field) PngjBadSignature5).set(null, PngjBadCrcException$1eba2e16);
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
             Object[] objArr13 = new Object[1];
             b(16 - ExpandableListView.getPackedPositionType(j), true, "\u0005\f\uffff\nￌ\uffff\u0014\uffff\b\u000b\u0003\u0012\u0011\u0017\ufff1ￌ", 9 - (ViewConfiguration.getPressedStateDuration() >> 16), 155 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), objArr13);

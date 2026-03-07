@@ -173,10 +173,14 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
                     i5 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             iArr2 = iArr3;
@@ -365,10 +369,14 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
                         cArr[i9] = ((Character) ((Method) PngjBadSignature2).invoke(null, objArr2)).charValue();
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 } else {
                     bArr = bArr3;

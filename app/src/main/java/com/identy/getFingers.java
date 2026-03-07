@@ -473,7 +473,7 @@ final class getFingers extends e1 {
                 if (cause != null) {
                     throw th;
                 }
-                throw cause;
+                throw new RuntimeException(cause);
             }
             char[] cArr = new char[i];
             onerrorresponse.PngjBadSignature = 0;
@@ -564,7 +564,7 @@ final class getFingers extends e1 {
                 if (cause != null) {
                     throw th;
                 }
-                throw cause;
+                throw new RuntimeException(cause);
             }
             if (i2 > 0) {
                 $10 = ($11 + 55) % 128;
@@ -861,10 +861,14 @@ final class getFingers extends e1 {
                         i7 <<= 1;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 } else {
                     i2 = i4;
@@ -1522,10 +1526,14 @@ final class getFingers extends e1 {
                                         }
                                     } catch (Throwable th) {
                                         Throwable cause = th.getCause();
+
                                         if (cause == null) {
-                                            throw th;
+
+                                            throw new RuntimeException(th);
+
                                         }
-                                        throw cause;
+
+                                        throw new RuntimeException(cause);
                                     }
                                 } else {
                                     Object PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);

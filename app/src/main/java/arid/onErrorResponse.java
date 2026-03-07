@@ -109,10 +109,14 @@ public class onErrorResponse implements Closeable, AutoCloseable {
                 }
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         } else {
             throw new UnsupportedOperationException("Method not decompiled: else branch of onErrorResponse constructor");

@@ -80,10 +80,14 @@ public class AttemptsExceededLimitException extends Exception {
             int i172 = (((i162 | (-511)) << 1) - (i162 ^ (-511))) / 256;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -166,9 +170,9 @@ public class AttemptsExceededLimitException extends Exception {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 }

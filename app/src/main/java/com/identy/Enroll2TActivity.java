@@ -300,10 +300,14 @@ public class Enroll2TActivity extends FingerActivity {
                     j2 = j;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             cArr2 = cArr;
@@ -720,10 +724,14 @@ public class Enroll2TActivity extends FingerActivity {
             ((Field) PngjBadSignature5).set(null, PngjBadCrcException$52c725b);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr14 = new Object[1];
         c("\u0017\u0006\u0012\u0005\u0003\u000e\u0007\u0003\u000e\u0000\b\u0013\f\u0016\u0006\u0007", 16 - (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), (byte) (39 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0, 0)), objArr14);

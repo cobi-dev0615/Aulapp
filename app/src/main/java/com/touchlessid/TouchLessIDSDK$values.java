@@ -200,10 +200,14 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     $11 = ($10 + 79) % 128;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             cArr4 = cArr5;
@@ -382,10 +386,14 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     i5 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             bArr = bArr4;
@@ -2711,7 +2719,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         }
         cause = th9.getCause();
         if (cause == null) {
-            throw cause;
+            throw new RuntimeException(cause);
         }
         throw th9;
         i13 = 0;

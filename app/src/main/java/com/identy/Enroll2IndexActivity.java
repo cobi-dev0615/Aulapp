@@ -286,10 +286,14 @@ public class Enroll2IndexActivity extends FingerActivity {
                     i11 = i8;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             i2 = i9;
@@ -652,10 +656,14 @@ public class Enroll2IndexActivity extends FingerActivity {
             ((Field) PngjBadSignature6).set(null, PngjBadCrcException$52c725b);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr13 = new Object[1];
         c(new int[]{155833484, -766790118, -1804259995, 1196741573, -1100295407, -917697114, -1490213639, 942890872}, ExpandableListView.getPackedPositionGroup(j) + 16, objArr13);

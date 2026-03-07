@@ -497,10 +497,14 @@ final class getL2Score extends getL3Score {
                 }
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         } else {
             Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
@@ -1122,10 +1126,14 @@ final class getL2Score extends getL3Score {
             objArr[0] = sb.toString();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 

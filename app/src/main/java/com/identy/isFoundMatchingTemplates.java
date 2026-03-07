@@ -368,10 +368,14 @@ final class isFoundMatchingTemplates extends e1 {
                 objArr[0] = sb.toString();
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         }
 
@@ -420,10 +424,14 @@ final class isFoundMatchingTemplates extends e1 {
                     ((Method) PngjBadSignature2).invoke(null, objArr3);
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
         }
@@ -857,7 +865,7 @@ final class isFoundMatchingTemplates extends e1 {
             if (cause != null) {
                 throw th;
             }
-            throw cause;
+            throw new RuntimeException(cause);
         }
         char[] cArr3 = new char[length];
         pngjUnsupportedException.valueOf = 0;
@@ -1354,9 +1362,9 @@ final class isFoundMatchingTemplates extends e1 {
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
                 if (cause != null) {
-                    throw cause;
+                    throw new RuntimeException(cause);
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
         }
         java.lang.Object obj = objArr2[c4];

@@ -229,7 +229,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
             if (cause != null) {
                 throw th;
             }
-            throw cause;
+            throw new RuntimeException(cause);
         }
         if (i2 > 0) {
             $10 = ($11 + 13) % 128;
@@ -502,10 +502,14 @@ public class CaptureRolledFingersActivity extends FingerActivity {
             ((Field) PngjBadSignature5).set(null, PngjBadSignature$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr13 = new Object[1];
         c(16 - (ViewConfiguration.getDoubleTapTimeout() >> 16), true, "ￌ\uffff\u0014\uffff\b\u000b\u0003\u0012\u0011\u0017\ufff1ￌ\u0005\f\uffff\n", View.resolveSize(0, 0) + 5, 254 - Color.alpha(0), objArr13);

@@ -226,10 +226,14 @@ public final class PngjInputException {
                             cArr2[i4] = ((Character) ((Method) PngjBadSignature2).invoke(null, objArr2)).charValue();
                         } catch (Throwable th) {
                             Throwable cause = th.getCause();
+
                             if (cause == null) {
-                                throw th;
+
+                                throw new RuntimeException(th);
+
                             }
-                            throw cause;
+
+                            throw new RuntimeException(cause);
                         }
                     } else {
                         java.lang.Object[] objArr3 = {Integer.valueOf(cArr[i4])};
@@ -386,7 +390,7 @@ public final class PngjInputException {
                 if (cause != null) {
                     throw th;
                 }
-                throw cause;
+                throw new RuntimeException(cause);
             }
             char[] cArr = new char[length];
             pngjUnsupportedException.valueOf = 0;
@@ -957,10 +961,14 @@ public final class PngjInputException {
                         i2 = 0;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
                 cArr2 = cArr3;
@@ -1160,10 +1168,14 @@ public final class PngjInputException {
                     ((Method) PngjBadSignature2).invoke(null, objArr3);
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
         }
@@ -1837,10 +1849,14 @@ public final class PngjInputException {
                     i4 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             objArr[0] = new String(cArr6);

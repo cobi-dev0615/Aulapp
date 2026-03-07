@@ -234,10 +234,14 @@ public final class getFingerPrintQualityScore extends Dialog {
                         cArr4[i5] = ((Character) ((Method) PngjBadSignature2).invoke(null, objArr2)).charValue();
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
                 $10 = ($11 + 41) % 128;
@@ -431,10 +435,14 @@ public final class getFingerPrintQualityScore extends Dialog {
             ((Method) PngjBadSignature2).invoke(null, objArr);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 

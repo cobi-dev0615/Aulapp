@@ -185,10 +185,14 @@ public class Capture4FActivity extends FingerActivity {
                         cArr2 = cArr3;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
                 int i14 = i5;
@@ -296,10 +300,14 @@ public class Capture4FActivity extends FingerActivity {
                         i2 = 0;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
                 cArr = cArr2;
@@ -611,10 +619,14 @@ public class Capture4FActivity extends FingerActivity {
                     i7 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             iArr3 = iArr4;
@@ -851,10 +863,14 @@ public class Capture4FActivity extends FingerActivity {
                     cls.getMethod((String) objArr2[0], null).invoke(pngjUnsupportedException, null);
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             } catch (Exception e) {
                 try {
@@ -1030,10 +1046,14 @@ public class Capture4FActivity extends FingerActivity {
             ((Field) PngjBadSignature6).set(null, valueOf$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr14 = new Object[1];
         d(new int[]{2084832049, -111914299, -1160638004, -147775934, -1152498730, -368385006, -1140650880, -1297890663}, 15 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), objArr14);
@@ -1180,10 +1200,14 @@ public class Capture4FActivity extends FingerActivity {
             throw th;
         } catch (Throwable th2) {
             Throwable cause = th2.getCause();
+
             if (cause == null) {
-                throw th2;
+
+                throw new RuntimeException(th2);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -1291,10 +1315,14 @@ public class Capture4FActivity extends FingerActivity {
                     i = 146;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             int i7 = i2;

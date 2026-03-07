@@ -233,10 +233,14 @@ public enum IdentyEncrytion {
                 objArr[0] = sb.toString();
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         }
 
@@ -297,9 +301,9 @@ public enum IdentyEncrytion {
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
                         if (cause != null) {
-                            throw cause;
+                            throw new RuntimeException(cause);
                         }
-                        throw th;
+                        throw new RuntimeException(th);
                     }
                 } catch (Throwable th2) {
                     Throwable cause2 = th2.getCause();
@@ -426,9 +430,9 @@ public enum IdentyEncrytion {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -470,9 +474,9 @@ public enum IdentyEncrytion {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -512,9 +516,9 @@ public enum IdentyEncrytion {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 }

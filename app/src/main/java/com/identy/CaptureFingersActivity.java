@@ -267,10 +267,14 @@ public class CaptureFingersActivity extends FingerActivity {
                 $11 = ($10 + 121) % 128;
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         }
     }
@@ -337,10 +341,14 @@ public class CaptureFingersActivity extends FingerActivity {
                     cls.getMethod((String) objArr2[0], null).invoke(pngjUnsupportedException, null);
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             } catch (Exception unused2) {
             }
@@ -488,10 +496,14 @@ public class CaptureFingersActivity extends FingerActivity {
             ((Field) PngjBadSignature5).set(null, PngjBadSignature$52c725b);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr12 = new Object[1];
         d("뤳륙㩣䍇丂ⅿ볾尉䫑摖欁ᩜ獼礠\u001f罟ᙼኖᵝ冷", ExpandableListView.getPackedPositionType(0L) + 1, objArr12);
@@ -653,10 +665,14 @@ public class CaptureFingersActivity extends FingerActivity {
             throw th;
         } catch (Throwable th3) {
             Throwable cause = th3.getCause();
+
             if (cause == null) {
-                throw th3;
+
+                throw new RuntimeException(th3);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -743,10 +759,14 @@ public class CaptureFingersActivity extends FingerActivity {
                         i = 136;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 } catch (Throwable th2) {
                     Throwable cause2 = th2.getCause();

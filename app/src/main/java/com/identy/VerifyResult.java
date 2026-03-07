@@ -112,10 +112,14 @@ public class VerifyResult {
             this.scores = new HashMap<>();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -216,10 +220,14 @@ public class VerifyResult {
                     bArr4 = bArr2;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             bArr = bArr4;
@@ -391,9 +399,9 @@ public class VerifyResult {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -458,9 +466,9 @@ public class VerifyResult {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         PngjBadCrcException = (PngjException + 27) % 128;
     }
@@ -507,9 +515,9 @@ public class VerifyResult {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -559,9 +567,9 @@ public class VerifyResult {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         PngjBadCrcException = (PngjException + 71) % 128;
     }
@@ -601,9 +609,9 @@ public class VerifyResult {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         PngjException = (PngjBadCrcException + 17) % 128;
     }
@@ -649,9 +657,9 @@ public class VerifyResult {
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         PngjBadCrcException = (PngjException + 19) % 128;
     }
@@ -695,10 +703,14 @@ public class VerifyResult {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         PngjException = (PngjBadCrcException + 117) % 128;
     }
@@ -759,10 +771,14 @@ public class VerifyResult {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         PngjException = (PngjBadCrcException + 45) % 128;
     }
@@ -806,10 +822,14 @@ public class VerifyResult {
             this.matched_true_up_to_security_level = fingerMatchSecLevel;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 
@@ -851,10 +871,14 @@ public class VerifyResult {
             return;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         PngjBadCrcException = (PngjException + 45) % 128;
     }
@@ -895,10 +919,14 @@ public class VerifyResult {
             this.enrollmentTs = str;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
     }
 }

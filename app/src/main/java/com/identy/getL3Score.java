@@ -241,10 +241,14 @@ abstract class getL3Score extends e1 {
                         $10 = ($11 + 15) % 128;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
             }
@@ -288,10 +292,14 @@ abstract class getL3Score extends e1 {
                             i6 = 0;
                         } catch (Throwable th) {
                             Throwable cause = th.getCause();
+
                             if (cause == null) {
-                                throw th;
+
+                                throw new RuntimeException(th);
+
                             }
-                            throw cause;
+
+                            throw new RuntimeException(cause);
                         }
                     }
                     iArr3 = iArr4;
@@ -984,10 +992,14 @@ abstract class getL3Score extends e1 {
                     i9 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             i2 = i7;
@@ -1630,10 +1642,14 @@ abstract class getL3Score extends e1 {
                 }
             } catch (Throwable th) {
                 Throwable cause = th.getCause();
+
                 if (cause == null) {
-                    throw th;
+
+                    throw new RuntimeException(th);
+
                 }
-                throw cause;
+
+                throw new RuntimeException(cause);
             }
         } else {
             Object PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i2);

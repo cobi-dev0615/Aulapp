@@ -2572,7 +2572,7 @@ public class Capture2TActivity extends FingerActivity {
             }
             cause = th11.getCause();
             if (cause == null) {
-                throw cause;
+                throw new RuntimeException(cause);
             }
             throw th11;
             i8 = 0;
@@ -2660,10 +2660,14 @@ public class Capture2TActivity extends FingerActivity {
                         i6 = i4;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
                 iArr2 = iArr3;
@@ -2837,10 +2841,14 @@ public class Capture2TActivity extends FingerActivity {
                         i2 = 0;
                     } catch (Throwable th) {
                         Throwable cause = th.getCause();
+
                         if (cause == null) {
-                            throw th;
+
+                            throw new RuntimeException(th);
+
                         }
-                        throw cause;
+
+                        throw new RuntimeException(cause);
                     }
                 }
                 bArr = bArr4;
@@ -3131,7 +3139,7 @@ public class Capture2TActivity extends FingerActivity {
             if (cause != null) {
                 throw th;
             }
-            throw cause;
+            throw new RuntimeException(cause);
         }
         char[] cArr3 = new char[length];
         pngjUnsupportedException.valueOf = 0;
@@ -3389,10 +3397,14 @@ public class Capture2TActivity extends FingerActivity {
             ((Field) PngjBadSignature6).set(null, PngjException$52c725b);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         Object[] objArr13 = new Object[1];
         c("椛引ԍ쬟녋朄ⴎጼ\ud93e轲甐㬿\ue13e흄鵒䍗", (ViewConfiguration.getEdgeSlop() >> 16) + 13829, objArr13);

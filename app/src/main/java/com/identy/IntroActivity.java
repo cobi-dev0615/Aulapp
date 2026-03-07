@@ -186,10 +186,14 @@ public class IntroActivity extends Activity {
                     i6 = 0;
                 } catch (Throwable th) {
                     Throwable cause = th.getCause();
+
                     if (cause == null) {
-                        throw th;
+
+                        throw new RuntimeException(th);
+
                     }
-                    throw cause;
+
+                    throw new RuntimeException(cause);
                 }
             }
             cArr3 = cArr4;
@@ -593,10 +597,14 @@ public class IntroActivity extends Activity {
             ((Field) PngjBadSignature6).set(null, valueOf$1eba2e16);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
+
             if (cause == null) {
-                throw th;
+
+                throw new RuntimeException(th);
+
             }
-            throw cause;
+
+            throw new RuntimeException(cause);
         }
         java.lang.Object[] objArr13 = new java.lang.Object[1];
         a("\u0019\u000b\u0001\u000b\u000f\u0016\b\u001f\u000e\u0011\r\u0003\u001e\u0016\u0019\u001c", '@' - AndroidCharacter.getMirror('0'), (byte) (14 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0)), objArr13);
