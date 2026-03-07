@@ -74,7 +74,7 @@ public class UtilCrypto {
         return getBase64KeyECCrypt();
     }
 
-    public String getSalt() {
+    public String getSalt() throws Exception {
         return Base64.encodeToString(this.keyStoreCustom.getSalt(), 2);
     }
 

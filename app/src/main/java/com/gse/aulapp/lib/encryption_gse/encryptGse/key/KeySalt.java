@@ -20,7 +20,7 @@ public class KeySalt {
         return bArr;
     }
 
-    public void createSalt() {
+    public void createSalt() throws Exception {
         byte[] salt = getSalt();
         this.salt = salt;
         if (salt != null) {
@@ -30,7 +30,7 @@ public class KeySalt {
         this.salt = getSalt();
     }
 
-    public byte[] decryptSalt(byte[] bArr) {
+    public byte[] decryptSalt(byte[] bArr) throws Exception {
         ByteBuffer wrap = ByteBuffer.wrap(bArr);
         byte[] bArr2 = new byte[12];
         wrap.get(bArr2);
@@ -41,7 +41,7 @@ public class KeySalt {
         return cipher.doFinal(bArr3);
     }
 
-    public byte[] encryptSalt(byte[] bArr) {
+    public byte[] encryptSalt(byte[] bArr) throws Exception {
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
         cipher.init(1, this.secretKeyAndroid);
         byte[] iv = cipher.getIV();
@@ -49,7 +49,7 @@ public class KeySalt {
         return ByteBuffer.allocate(iv.length + doFinal.length).put(iv).put(doFinal).array();
     }
 
-    public byte[] getSalt() {
+    public byte[] getSalt() throws Exception {
         byte[] loadSaltCrypt = loadSaltCrypt();
         if (loadSaltCrypt == null) {
             return null;

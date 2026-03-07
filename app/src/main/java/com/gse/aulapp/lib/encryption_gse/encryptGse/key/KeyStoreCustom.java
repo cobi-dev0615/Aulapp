@@ -149,7 +149,7 @@ public class KeyStoreCustom {
         this.secretKey = this.keyAndroid.getKey();
     }
 
-    public byte[] getSalt() {
+    public byte[] getSalt() throws Exception {
         this.keySalt.setSecretKeyAndroid(this.secretKey);
         this.keySalt.createSalt();
         return this.keySalt.getSalt();
