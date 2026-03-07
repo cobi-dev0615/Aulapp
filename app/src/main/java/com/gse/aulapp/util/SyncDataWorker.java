@@ -30,11 +30,11 @@ import kotlinx.coroutines.Dispatchers;
 public final class SyncDataWorker extends CoroutineWorker {
     private final Context appContext;
     private final HistoricRecordPermissionsChangeDao historicRecordPermissionsChangeDao;
-    private final HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository;
+    final HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository;
     private final NotificationManager notificationManager;
     private final WorkerParameters params;
     private final SessionDao sessionDao;
-    private final SessionRepository sessionRepository;
+    final SessionRepository sessionRepository;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SyncDataWorker(Context appContext, WorkerParameters params) {

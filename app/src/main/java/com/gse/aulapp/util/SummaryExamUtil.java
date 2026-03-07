@@ -46,7 +46,8 @@ public abstract class SummaryExamUtil {
                 ((List) obj2).add(obj);
             }
             LinkedHashMap linkedHashMap2 = new LinkedHashMap(MapsKt.mapCapacity(linkedHashMap.size()));
-            for (Map.Entry entry : linkedHashMap.entrySet()) {
+            for (Object entryObj : linkedHashMap.entrySet()) {
+                Map.Entry entry = (Map.Entry) entryObj;
                 Object key = entry.getKey();
                 List list = (List) entry.getValue();
                 if (list == null || !list.isEmpty()) {

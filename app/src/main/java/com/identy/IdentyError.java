@@ -628,27 +628,6 @@ public final class IdentyError extends IdentyResponse {
                 }
                 throw new RuntimeException(th);
             }
-            byte[] bArr4 = $$d;
-            Object[] objArr19 = new Object[1];
-            a(bArr4[63], bArr4[62], bArr4[113], objArr19);
-            Class<?> cls5 = Class.forName((String) objArr19[0]);
-            Object[] objArr20 = new Object[1];
-            a(bArr4[57], bArr4[63], bArr4[32], objArr20);
-            objArr = (Object[]) cls5.getMethod((String) objArr20[0], cls).invoke(null, 1432688339);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4985;
-            Fpnative.valueOf = objArr;
-            PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
-            if (PngjBadSignature == null) {
-            }
-            j2 = ((Field) PngjBadSignature).getLong(null);
-            if (j2 == -1) {
-            }
-            Object[] objArr112 = new Object[1];
-            c(16 - Gravity.getAbsoluteGravity(0, 0), false, "\n\uffff\f\u0005ￌ\ufff1\u0017\u0011\u0012\u0003\u000b\b\uffff\u0014\uffffￌ", 11 - (ViewConfiguration.getJumpTapTimeout() >> 16), ((Process.getThreadPriority(0) + 20) >> 6) + 127, objArr112);
-            Class<?> cls32 = Class.forName((String) objArr112[0]);
-            Object[] objArr122 = new Object[1];
-            c((SystemClock.uptimeMillis() > 0L ? 1 : (SystemClock.uptimeMillis() == 0L ? 0 : -1)) + 15, true, "\ufffb￢\u0013\u000e\u0003\u000e\b\uffff\ufffe\u0003\uffff\ufffe\t\uffdd\u0002\r", 9 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)), 131 - (ViewConfiguration.getMinimumFlingVelocity() >> 16), objArr122);
         } catch (Throwable th2) {
             Throwable cause2 = th2.getCause();
             if (cause2 != null) {
