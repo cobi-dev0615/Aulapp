@@ -159,7 +159,7 @@ public class IdentyA extends getMatchingTime {
                 sb.append(B.uid);
                 obj = sb.toString();
             }
-            File values = PngjBadCrcException.values(activity, obj);
+            File values = com.identy.PngjBadCrcException.values(activity, obj);
             String obj2 = values.toString();
             StringBuilder sb2 = new StringBuilder();
             sb2.append(valueOf(str));
@@ -224,13 +224,13 @@ public class IdentyA extends getMatchingTime {
         int[] copyOf = Arrays.copyOf(iArr, i);
         StringBuilder sb = new StringBuilder("TEMPLATE SETUP");
         sb.append(Arrays.toString(copyOf));
-        PngjBadCrcException.PngjException(sb.toString(), timeInMillis);
+        com.identy.PngjBadCrcException.PngjException(sb.toString(), timeInMillis);
         if (this.getPadSub2) {
-            generate = Fpnative.rgenerate(e1.PngjBadCrcException, Position.getFromHandFinger(new Pair(this.PngjOutputException, this.PngjExceptionInternal)).ordinal(), copyOf, (float) wSQCompression.getCompression(), z);
+            generate = Fpnative.rgenerate(com.identy.e1.PngjBadCrcException, Position.getFromHandFinger(new Pair(this.PngjOutputException, this.PngjExceptionInternal)).ordinal(), copyOf, (float) wSQCompression.getCompression(), z);
         } else {
-            generate = Fpnative.generate(e1.values, Position.getFromHandFinger(new Pair(this.PngjOutputException, this.PngjExceptionInternal)).ordinal(), copyOf, (float) wSQCompression.getCompression(), z);
+            generate = Fpnative.generate(com.identy.e1.values, Position.getFromHandFinger(new Pair(this.PngjOutputException, this.PngjExceptionInternal)).ordinal(), copyOf, (float) wSQCompression.getCompression(), z);
         }
-        PngjBadCrcException.PngjException("TEMPLATE GENERATE", timeInMillis);
+        com.identy.PngjBadCrcException.PngjException("TEMPLATE GENERATE", timeInMillis);
         for (Map.Entry<Integer, byte[]> entry : generate.entrySet()) {
             this.PngBadCharsetException.put(Template.getFromOrdinal(entry.getKey()), entry.getValue());
         }

@@ -23,7 +23,10 @@ public class KeyStoreCustom {
     private static final SecureRandom random = new SecureRandom();
     private String password;
     private SecretKey secretKey;
-    private KeyAndroid keyAndroid = new KeyAndroid("GSEKey");
+    private KeyAndroid keyAndroid;
+    {
+        try { keyAndroid = new KeyAndroid("GSEKey"); } catch (Exception e) { keyAndroid = null; }
+    }
     private KeySalt keySalt = new KeySalt();
     private KeyDeriv keyDeriv = new KeyDeriv();
 

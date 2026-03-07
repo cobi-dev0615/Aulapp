@@ -90,7 +90,7 @@ abstract class getMatchingTime {
         if (this.PngjPrematureEnding == null) {
             return;
         }
-        this.PngjException = Fpnative.generateNFIQ(e1.values, Position.getFromHandFinger(new Pair(this.PngjOutputException, this.PngjExceptionInternal)).ordinal());
+        this.PngjException = Fpnative.generateNFIQ(com.identy.e1.values, Position.getFromHandFinger(new Pair(this.PngjOutputException, this.PngjExceptionInternal)).ordinal());
     }
 
     public Mat getPadSub3() {
