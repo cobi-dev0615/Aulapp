@@ -81,7 +81,12 @@ public enum Template {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             getPadSub1 getpadsub1 = new getPadSub1(createBitmap);
             Action action = new Action(getpadsub1.values, getpadsub1.PngjBadSignature);
-            onErrorResponse onerrorresponse = new onErrorResponse(byteArrayOutputStream, action);
+            onErrorResponse onerrorresponse;
+            try {
+                onerrorresponse = new onErrorResponse(byteArrayOutputStream, action);
+            } catch (Throwable t) {
+                throw new RuntimeException(t);
+            }
             Attempt attempt = onerrorresponse.values;
             arid.chunks.PngjPrematureEnding pngjPrematureEnding = new arid.chunks.PngjPrematureEnding(attempt.PngjBadSignature.PngjException);
             pngjPrematureEnding.PngjExceptionInternal = 1;
@@ -271,8 +276,10 @@ public enum Template {
                 i3 = i2 + 1;
                 bArr2[i2] = (byte) i5;
                 if (i3 == i4) {
+                    return new String(bArr2, 0);
                 }
             }
+            return new String(bArr2, 0);
         }
 
         static {

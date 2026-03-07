@@ -35,8 +35,8 @@ public abstract class QRUtil {
             Intrinsics.checkNotNullParameter(imageView, "<this>");
             Intrinsics.checkNotNullParameter(textQR, "textQR");
             EnumMap enumMap = new EnumMap(EncodeHintType.class);
-            enumMap.put((EnumMap) EncodeHintType.MARGIN, (EncodeHintType) 5);
-            enumMap.put((EnumMap) EncodeHintType.CHARACTER_SET, (EncodeHintType) "UTF-8");
+            enumMap.put(EncodeHintType.MARGIN, 5);
+            enumMap.put(EncodeHintType.CHARACTER_SET, "UTF-8");
             BitMatrix encode = new MultiFormatWriter().encode(textQR, BarcodeFormat.QR_CODE, i3, i3, enumMap);
             int width = encode.getWidth();
             int height = encode.getHeight();
