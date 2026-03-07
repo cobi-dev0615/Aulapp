@@ -160,6 +160,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
             Flow m1541catch2 = this.$repository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID);
             AnonymousClass3 anonymousClass32 = new AnonymousClass3(this.$repository, this.$sessionID, this.$context, this.$findNavController, this.$navDirections);
             this.label = 2;
+            return Unit.INSTANCE;
         }
 
         @Override // kotlin.jvm.functions.Function2
@@ -202,8 +203,8 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
             public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation<? super Unit> continuation) {
                 ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1 controllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1;
                 int i;
-                ApiResult<SessionPracticeExamResponse> apiResult2;
-                AnonymousClass3<T> anonymousClass3;
+                ApiResult<SessionPracticeExamResponse> apiResult2 = null;
+                AnonymousClass3<T> anonymousClass3 = null;
                 AnonymousClass3<T> anonymousClass32;
                 SessionPracticeExamResponse data;
                 SessionPracticeExamResponse data2;
@@ -215,7 +216,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
                 String str;
                 SessionPracticeExamResponse data3;
                 SessionPracticeExamResponse data4;
-                String examResult;
+                String examResult = null;
                 SessionPracticeExamResponse.Result result;
                 if (continuation instanceof ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1) {
                     controllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1 = (ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1) continuation;
