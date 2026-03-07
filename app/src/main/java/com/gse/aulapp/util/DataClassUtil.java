@@ -168,8 +168,8 @@ public abstract class DataClassUtil {
                 e.getMessage();
                 return null;
             }
+            return coroutine_suspended;
         }
-        return coroutine_suspended;
 
         /* JADX WARN: Code restructure failed: missing block: B:21:0x00a5, code lost:
         
