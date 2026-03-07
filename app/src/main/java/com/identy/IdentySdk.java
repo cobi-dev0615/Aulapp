@@ -507,7 +507,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private static String $$g(short s, byte b, byte b2) {
-        int i;
+        int i = 0;
         int i2;
         byte[] bArr = $$c;
         int i3 = 101 - (b * 4);
@@ -731,7 +731,7 @@ public class IdentySdk {
                             if (bufferedOutputStream != null) {
                                 bufferedOutputStream.close();
                             }
-                            throw th;
+                            throw new RuntimeException(th);
                         }
                     } catch (Throwable th2) {
                         th = th2;
@@ -742,7 +742,7 @@ public class IdentySdk {
                         if (bufferedOutputStream != null) {
                             bufferedOutputStream.close();
                         }
-                        throw th;
+                        throw new RuntimeException(th);
                     }
                 } catch (Throwable th3) {
                     th = th3;
@@ -754,7 +754,7 @@ public class IdentySdk {
                     if (bufferedOutputStream != null) {
                         bufferedOutputStream.close();
                     }
-                    throw th;
+                    throw new RuntimeException(th);
                 }
             } else if (this.values != null) {
                 FileInputStream fileInputStream = new FileInputStream(new File(str));
@@ -851,7 +851,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static byte[] getBytesFromInputStream(InputStream inputStream) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         ByteArrayOutputStream byteArrayOutputStream;
         byte[] bArr;
@@ -951,7 +951,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static IdentySdk getInstance() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         IdentySdk identySdk;
         int i = deduplication + 97;
@@ -1227,7 +1227,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private static void j(short s, short s2, short s3, Object[] objArr) {
-        int i;
+        int i = 0;
         int i2;
         int i3;
         int i4;
@@ -1273,7 +1273,7 @@ public class IdentySdk {
         }
     }
 
-    private static void l(int[] iArr, int i, String str, String str2, Object[] objArr) {
+    private static void l(int[] iArr, int i, String str, String str2, Object[] objArr) throws Exception {
         char[] cArr;
         int i2;
         char c;
@@ -1283,7 +1283,7 @@ public class IdentySdk {
         byte[] bArr = null;
         if (str3 != null) {
             $10 = ($11 + 53) % 128;
-            bArr = str3.getBytes("ISO-8859-1");
+            bArr = str3.getBytes(java.nio.charset.StandardCharsets.ISO_8859_1);
         }
         byte[] bArr2 = bArr;
         if (str != null) {
@@ -1445,7 +1445,7 @@ public class IdentySdk {
 
     /* JADX WARN: Type inference failed for: r9v0, types: [boolean, int] */
     public static boolean newInstance(Activity activity, String str, InitializationListener<IdentySdk> initializationListener, IdentyResponseListener identyResponseListener, boolean z) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 75) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -1520,7 +1520,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static byte[] readFileResource(String str, Context context) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         InputStream resourceAsStream;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -1589,7 +1589,7 @@ public class IdentySdk {
     }
 
     public static void showMessage(String str) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = generateST + 119;
         deduplication = i % 128;
@@ -1712,7 +1712,7 @@ public class IdentySdk {
                 int i4 = 10 / 0;
             }
         }
-        throw new AttemptsExceededLimitException();
+        throw new RuntimeException(new AttemptsExceededLimitException());
     }
 
     public static /* synthetic */ Object values(Object[] objArr, int i, int i2, int i3, int i4, int i5, int i6) {
@@ -1737,9 +1737,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean A() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -1859,7 +1859,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void D() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -1947,7 +1947,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void F() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -1967,12 +1967,8 @@ public class IdentySdk {
                             capture();
                             generateST = (deduplication + 49) % 128;
                             return;
-                        } catch (AttemptsExceededLimitException e) {
+                        } catch (RuntimeException e) {
                             throw new RuntimeException(e);
-                        } catch (NoDetectionModeException e2) {
-                            throw new RuntimeException(e2);
-                        } catch (TimeoutExceededLimitModeException e3) {
-                            throw new RuntimeException(e3);
                         }
                     }
                     if (this.e.equals(com.identy.Action.ENROLL)) {
@@ -1980,12 +1976,8 @@ public class IdentySdk {
                         try {
                             enroll();
                             return;
-                        } catch (AttemptsExceededLimitException e4) {
+                        } catch (RuntimeException e4) {
                             throw new RuntimeException(e4);
-                        } catch (NoDetectionModeException e5) {
-                            throw new RuntimeException(e5);
-                        } catch (TimeoutExceededLimitModeException e6) {
-                            throw new RuntimeException(e6);
                         }
                     }
                     if (this.e.equals(com.identy.Action.VERIFY)) {
@@ -1999,12 +1991,8 @@ public class IdentySdk {
                                 verify();
                                 throw null;
                             }
-                        } catch (AttemptsExceededLimitException e7) {
+                        } catch (RuntimeException e7) {
                             throw new RuntimeException(e7);
-                        } catch (NoDetectionModeException e8) {
-                            throw new RuntimeException(e8);
-                        } catch (TimeoutExceededLimitModeException e9) {
-                            throw new RuntimeException(e9);
                         }
                     }
                     return;
@@ -2037,7 +2025,7 @@ public class IdentySdk {
 
     /* JADX WARN: Type inference failed for: r1v22, types: [boolean, int] */
     public IdentySdk G() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -2116,7 +2104,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean H() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 113) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -2209,7 +2197,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean a(IdentyUser identyUser, int i, int i2, Template template) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         FingerDetectionMode[] fingerDetectionModeArr;
         int i3;
@@ -2317,7 +2305,7 @@ public class IdentySdk {
     }
 
     public void b(boolean z) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = deduplication + 95;
         generateST = i % 128;
@@ -2391,9 +2379,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public Integer c(FingerDetectionMode fingerDetectionMode) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -2458,7 +2446,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean capture(int i, int i2) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i3;
         deduplication = (generateST + 3) % 128;
@@ -2562,7 +2550,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean checkDeduplication(Template template, HashMap<Pair<Hand, Finger>, byte[]> hashMap) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 83) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -2656,7 +2644,7 @@ public class IdentySdk {
 
     /* JADX WARN: Type inference failed for: r4v1, types: [boolean, int] */
     public IdentySdk disableDisplayTransactionAlerts() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 29) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -2728,7 +2716,7 @@ public class IdentySdk {
 
     /* JADX WARN: Type inference failed for: r4v1, types: [boolean, int] */
     public IdentySdk disableMoveNextDetectionDialog() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 17) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -2805,7 +2793,7 @@ public class IdentySdk {
 
     /* JADX WARN: Type inference failed for: r5v1, types: [boolean, int] */
     public IdentySdk disableTraining() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = (deduplication + 17) % 128;
         generateST = i;
@@ -2904,7 +2892,7 @@ public class IdentySdk {
     */
     public IdentySdk displayImages(boolean z) {
         long j;
-        int i;
+        int i = 0;
         Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
@@ -3019,9 +3007,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public Integer e(FingerDetectionMode fingerDetectionMode) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         deduplication = (generateST + 21) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -3103,7 +3091,7 @@ public class IdentySdk {
 
     /* JADX WARN: Type inference failed for: r1v27, types: [boolean, int] */
     public IdentySdk elt() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -3179,7 +3167,7 @@ public class IdentySdk {
 
     /* JADX WARN: Type inference failed for: r1v24, types: [boolean, int] */
     public void enableCustomSDK() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 17) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -3369,9 +3357,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void enableGImage(Bitmap.CompressFormat compressFormat) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -3481,7 +3469,7 @@ public class IdentySdk {
     */
     public IdentySdk enableGuide() {
         long j;
-        int i;
+        int i = 0;
         Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
@@ -3581,7 +3569,7 @@ public class IdentySdk {
     */
     public IdentySdk enableKidsCapture() {
         long j;
-        int i;
+        int i = 0;
         int i2 = deduplication + 61;
         int i3 = i2 % 128;
         generateST = i3;
@@ -3853,7 +3841,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public IdentySdk enableRetries(int i, int i2, int i3, int i4) {
-        Object[] objArr;
+        Object[] objArr = null;
         int i5 = generateST + 23;
         int i6 = i5 % 128;
         deduplication = i6;
@@ -3863,11 +3851,12 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return this;
     }
 
     /* JADX WARN: Type inference failed for: r1v19, types: [boolean, int] */
     public IdentySdk enableSkip() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -4034,7 +4023,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public IdentySdk enableStandardCaptureMode() {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = generateST;
         int i2 = i + 25;
         deduplication = i2 % 128;
@@ -4044,11 +4033,12 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return this;
     }
 
     /* JADX WARN: Type inference failed for: r1v17, types: [boolean, int] */
     public IdentySdk enableTraining() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -4228,7 +4218,7 @@ public class IdentySdk {
     }
 
     public boolean enroll(int i, int i2) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -4278,7 +4268,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean enrollWithCustomTemplates(Template template, HashMap<Hand, String> hashMap) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         char c = 2;
@@ -4354,7 +4344,7 @@ public class IdentySdk {
                                         generateST = i17 % 128;
                                         if (i17 % 2 == 0) {
                                             values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, 0, 1779101910, 0, -1779101909, 0, 0);
-                                            throw th2;
+                                            throw new RuntimeException(th2);
                                         }
                                         values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, 0, 1779101910, 0, -1779101909, 0, 0);
                                     } else if (template.equals(Template.FF_WSQ)) {
@@ -4422,7 +4412,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean enrollWithCustomTemplatesbase64(Template template, HashMap<Hand, String> hashMap) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = (deduplication + 57) % 128;
         generateST = i;
@@ -4503,7 +4493,7 @@ public class IdentySdk {
                                     generateST = i17 % 128;
                                     if (i17 % 2 == 0) {
                                         values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, 0, 1779101910, 0, -1779101909, 0, 0);
-                                        throw th2;
+                                        throw new RuntimeException(th2);
                                     }
                                     values(new Object[]{this, file2.getAbsolutePath(), PngjException(str), key, defaultUser}, 0, 1779101910, 0, -1779101909, 0, 0);
                                     generateST = (deduplication + 113) % 128;
@@ -4512,7 +4502,7 @@ public class IdentySdk {
                                     generateST = i18 % 128;
                                     if (i18 % 2 == 0) {
                                         PngjBadCrcException(file2.getAbsolutePath(), PngjException(str), key, defaultUser);
-                                        throw th2;
+                                        throw new RuntimeException(th2);
                                     }
                                     PngjBadCrcException(file2.getAbsolutePath(), PngjException(str), key, defaultUser);
                                 }
@@ -4558,7 +4548,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean enrollWithTemplates(Template template, HashMap<Pair<Hand, Finger>, String> hashMap) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Template template2 = template;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -4664,7 +4654,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean enrollWithTemplatesbase64(Template template, HashMap<Pair<Hand, Finger>, String> hashMap) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Template template2 = template;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -4763,7 +4753,7 @@ public class IdentySdk {
     }
 
     public IdentySdk f() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 119) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -4853,9 +4843,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public Activity getAc() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         generateST = (deduplication + 1) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -4905,7 +4895,7 @@ public class IdentySdk {
     }
 
     public Action getAction() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -4951,7 +4941,7 @@ public class IdentySdk {
     }
 
     public long getAfterCaptureInlinemsgTime() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 87) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -4992,7 +4982,7 @@ public class IdentySdk {
     }
 
     public int getAllowedAttempts() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -5095,7 +5085,7 @@ public class IdentySdk {
     }
 
     public String getAttackS() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = generateST + 17;
         deduplication = i % 128;
@@ -5219,7 +5209,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public int getBase64EncodingFlag() {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = deduplication + 75;
         generateST = i % 128;
         if (i % 2 == 0) {
@@ -5228,6 +5218,7 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return 0;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0051, code lost:
@@ -5291,7 +5282,7 @@ public class IdentySdk {
     }
 
     public IdentyUser getDefaultUser() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = generateST + 17;
         int i2 = i % 128;
@@ -5377,7 +5368,7 @@ public class IdentySdk {
     }
 
     public FingerDetectionMode[] getDetections() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = generateST;
         int i2 = i + 73;
@@ -5484,7 +5475,7 @@ public class IdentySdk {
     }
 
     public Bitmap.CompressFormat getGimageformat() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 89) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -5537,7 +5528,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public InlineGuideOption getGuideOption() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         InlineGuideOption inlineGuideOption;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -5611,13 +5602,13 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public String getInstallUserID() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object PngjBadSignature2;
         long j2;
         char c;
         char c2;
-        Context context;
+        Context context = null;
         char c3;
         Object[] objArr2;
         float f;
@@ -5851,15 +5842,16 @@ public class IdentySdk {
         } catch (Throwable th2) {
             Throwable cause2 = th2.getCause();
             if (cause2 != null) {
-                throw cause2;
+                throw new RuntimeException(cause2);
             }
-            throw th2;
+            throw new RuntimeException(th2);
         }
         generateST = (deduplication + 39) % 128;
+        return null;
     }
 
     public String getInstallationID() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 27) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -5901,7 +5893,7 @@ public class IdentySdk {
     }
 
     public String getInternalTrnsactionID() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = (generateST + 89) % 128;
         deduplication = i;
@@ -5946,7 +5938,7 @@ public class IdentySdk {
     }
 
     public String getLocale() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -6065,7 +6057,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public int getOutputHeight() {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = generateST + 95;
         deduplication = i % 128;
         if (i % 2 != 0) {
@@ -6074,10 +6066,11 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return 0;
     }
 
     public int getOutputWidth() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -6118,7 +6111,7 @@ public class IdentySdk {
     }
 
     public HashMap<Finger, Integer> getQcthresolds() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = generateST + 79;
         deduplication = i % 128;
@@ -6165,7 +6158,7 @@ public class IdentySdk {
     }
 
     public int getQualityMaxRetries() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -6279,9 +6272,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public Integer getQualityTriesCounter(FingerDetectionMode fingerDetectionMode) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -6346,7 +6339,7 @@ public class IdentySdk {
     }
 
     public List<Pair<Hand, Finger>> getSelectedFingers() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = (deduplication + 61) % 128;
         generateST = i;
@@ -6391,7 +6384,7 @@ public class IdentySdk {
     }
 
     public int getSpoofMaxRetries() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = deduplication + 35;
         generateST = i % 128;
@@ -6437,7 +6430,7 @@ public class IdentySdk {
     }
 
     public int getSpoofMinRetries() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -6478,7 +6471,7 @@ public class IdentySdk {
     }
 
     public IdentyUser getTempUser() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 75) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -6581,7 +6574,7 @@ public class IdentySdk {
     }
 
     public WSQCompression getWSQCompression() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 113) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -6794,7 +6787,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public Integer incrementQualityTriesCounter(FingerDetectionMode fingerDetectionMode) {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = generateST + 113;
         deduplication = i % 128;
         if (i % 2 != 0) {
@@ -6803,6 +6796,7 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return null;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x00f7, code lost:
@@ -6886,7 +6880,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean isAllowTabletLandscape() {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = deduplication + 23;
         int i2 = i % 128;
         generateST = i2;
@@ -6896,6 +6890,7 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return false;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:0x015b A[RETURN] */
@@ -6904,7 +6899,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean isCompatible() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         double d;
         int e;
@@ -6987,7 +6982,7 @@ public class IdentySdk {
     }
 
     public boolean isCustomSDK() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 73) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -7140,7 +7135,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean isDemoMode() {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = deduplication + 5;
         int i2 = i % 128;
         generateST = i2;
@@ -7150,6 +7145,7 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x0049, code lost:
@@ -7298,7 +7294,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean isDisplayMoveNextDialog() {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = deduplication;
         int i2 = i + 103;
         generateST = i2 % 128;
@@ -7308,10 +7304,11 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return false;
     }
 
     public boolean isDisplayPrints() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = deduplication + 33;
         generateST = i % 128;
@@ -7435,7 +7432,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean isDisplayTransactionAlerts() {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = deduplication + 29;
         generateST = i % 128;
         if (i % 2 == 0) {
@@ -7444,6 +7441,7 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0054, code lost:
@@ -7519,7 +7517,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean isEnableAllFingerNistTemplate() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = generateST;
         int i2 = i + 31;
@@ -7587,7 +7585,7 @@ public class IdentySdk {
     }
 
     public boolean isEnableSkip() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 75) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -7636,10 +7634,10 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean isEnrolled(FingerDetectionMode[] fingerDetectionModeArr, IdentyUser identyUser) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int length;
-        int i;
+        int i = 0;
         int i2 = deduplication + 107;
         generateST = i2 % 128;
         if (i2 % 2 == 0) {
@@ -7722,7 +7720,7 @@ public class IdentySdk {
     }
 
     public boolean isGimages() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = deduplication;
         int i2 = i + 71;
@@ -7844,7 +7842,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean isInlineGuide() {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = deduplication + 71;
         generateST = i % 128;
         if (i % 2 == 0) {
@@ -7853,6 +7851,7 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004b, code lost:
@@ -7944,7 +7943,7 @@ public class IdentySdk {
     }
 
     public boolean isRolledfp() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 21) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -7989,7 +7988,7 @@ public class IdentySdk {
     }
 
     public CaptureMode k() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -8031,7 +8030,7 @@ public class IdentySdk {
     }
 
     public LManager m() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 53) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -8305,7 +8304,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void matchWithTemplates(Hand hand, Finger finger, Template template, String str, Template template2, String str2) {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = generateST + 69;
         deduplication = i % 128;
         if (i % 2 != 0) {
@@ -8317,7 +8316,7 @@ public class IdentySdk {
     }
 
     public void matchWithTemplatesMultiplebase64(Template template, HashMap<Pair<Hand, Finger>, String> hashMap, Template template2, HashMap<Pair<Hand, Finger>, String> hashMap2) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Finger finger;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -8533,7 +8532,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void matchWithTemplatesbase64(Hand hand, Finger finger, Template template, String str, Template template2, String str2) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 85) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -8608,9 +8607,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public QualityMode n() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         deduplication = (generateST + 29) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -8661,7 +8660,7 @@ public class IdentySdk {
     }
 
     public FingerStatusUpdator o() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = (deduplication + 11) % 128;
         generateST = i;
@@ -8709,7 +8708,7 @@ public class IdentySdk {
     }
 
     public HashMap p() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = deduplication + 43;
         generateST = i % 128;
@@ -8755,7 +8754,7 @@ public class IdentySdk {
     }
 
     public HashSet q() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 89) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -8804,10 +8803,10 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean removeEnrollment(FingerDetectionMode[] fingerDetectionModeArr, IdentyUser identyUser) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int length;
-        int i;
+        int i = 0;
         HashMap<Pair<Hand, Finger>, PngjExceptionInternal> PngjException2;
         Map.Entry<Pair<Hand, Finger>, PngjExceptionInternal> next;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -8979,7 +8978,7 @@ public class IdentySdk {
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r1v6, types: [boolean, int] */
     public IdentySdk setASServerConfig(String str, String str2) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = deduplication + 7;
         generateST = i % 128;
@@ -9060,7 +9059,7 @@ public class IdentySdk {
     }
 
     public void setAllowHandChange(boolean z) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -9109,7 +9108,7 @@ public class IdentySdk {
     }
 
     public void setAllowTabletLandscape(boolean z) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -9225,9 +9224,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public IdentySdk setAsSecMode(FingerAS fingerAS) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -9277,7 +9276,7 @@ public class IdentySdk {
     }
 
     public void setAssistedMode(boolean z) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = (deduplication + 13) % 128;
         generateST = i;
@@ -9325,7 +9324,7 @@ public class IdentySdk {
     }
 
     public void setAttemptsTimeout(int i, int i2) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 11) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -9379,7 +9378,7 @@ public class IdentySdk {
     }
 
     public IdentySdk setBase64EncodingFlag(int i) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i2 = generateST + 27;
         deduplication = i2 % 128;
@@ -9431,9 +9430,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public IdentySdk setCustomEncryption(IdentyCustomEncryption identyCustomEncryption) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -9547,7 +9546,7 @@ public class IdentySdk {
     }
 
     public IdentySdk setDetectionMode(FingerDetectionMode[] fingerDetectionModeArr, CapturePosition capturePosition) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = deduplication + 69;
         generateST = i % 128;
@@ -9630,7 +9629,7 @@ public class IdentySdk {
     }
 
     public IdentySdk setDisplayBoxes(boolean z, boolean z2) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 99) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -9681,9 +9680,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public IdentySdk setDisplayImages(boolean z) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -9736,7 +9735,7 @@ public class IdentySdk {
     }
 
     public IdentySdk setEncryption(IdentyEncrytion identyEncrytion, String str) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -9780,7 +9779,7 @@ public class IdentySdk {
     }
 
     public IdentySdk setFingerPrintDrawable(int i, boolean z) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i2 = deduplication;
         generateST = (i2 + 101) % 128;
@@ -9899,7 +9898,7 @@ public class IdentySdk {
     }
 
     public IdentySdk setInlineMsgTimeOut(long j) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j2;
         int i = deduplication + 29;
         generateST = i % 128;
@@ -10014,7 +10013,7 @@ public class IdentySdk {
     }
 
     public void setMatchSecLevel(FingerMatchSecLevel fingerMatchSecLevel) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = generateST;
         int i2 = i + 25;
@@ -10088,7 +10087,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public IdentySdk setMode(String str) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -10221,7 +10220,7 @@ public class IdentySdk {
 
     /* JADX WARN: Type inference failed for: r0v31, types: [boolean, int] */
     public IdentySdk setQualityMode(QualityMode qualityMode) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         generateST = (deduplication + 9) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -10358,7 +10357,7 @@ public class IdentySdk {
     }
 
     public void setSelectedFingers(List<Pair<Hand, Finger>> list) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -10416,7 +10415,7 @@ public class IdentySdk {
     }
 
     public void setStatusUpdator(FingerStatusUpdator fingerStatusUpdator) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -10486,7 +10485,7 @@ public class IdentySdk {
     */
     public void setTransactionListener(TransactionListener transactionListener) {
         long j;
-        int i;
+        int i = 0;
         Object[] objArr = com.identy.Fpnative.valueOf;
         try {
             if (objArr != null) {
@@ -10617,7 +10616,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public IdentySdk setTransactionUiType(UIAfterCaptures uIAfterCaptures) {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = generateST + 29;
         deduplication = i % 128;
         if (i % 2 != 0) {
@@ -10626,10 +10625,11 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return null;
     }
 
     public IdentySdk setUser(IdentyUser identyUser) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -10736,7 +10736,7 @@ public class IdentySdk {
     }
 
     public boolean t() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = generateST + 23;
         deduplication = i % 128;
@@ -10781,7 +10781,7 @@ public class IdentySdk {
     }
 
     public boolean u() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -10823,7 +10823,7 @@ public class IdentySdk {
     }
 
     public boolean v() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 77) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -10929,7 +10929,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean verifyWithCustomTemplates(Template template, HashMap<Hand, String> hashMap) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         char c = 2;
@@ -10992,10 +10992,10 @@ public class IdentySdk {
                                             try {
                                                 fileOutputStream.close();
                                                 deduplication = (generateST + 77) % 128;
-                                                throw th;
+                                                throw new RuntimeException(th);
                                             } catch (Throwable th2) {
                                                 th.addSuppressed(th2);
-                                                throw th;
+                                                throw new RuntimeException(th);
                                             }
                                         }
                                     }
@@ -11058,7 +11058,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean verifyWithCustomTemplatesbase64(Template template, HashMap<Hand, String> hashMap) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = generateST + 29;
         int i2 = i % 128;
@@ -11171,7 +11171,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean verifyWithTemplates(Template template, HashMap<Pair<Hand, Finger>, String> hashMap) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Template template2 = template;
         int i = (generateST + 113) % 128;
@@ -11302,7 +11302,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean verifyWithTemplatesbyteArray(Template template, HashMap<Pair<Hand, Finger>, byte[]> hashMap) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -11491,7 +11491,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean x() {
-        Object[] objArr;
+        Object[] objArr = null;
         int i = generateST + 119;
         deduplication = i % 128;
         if (i % 2 != 0) {
@@ -11500,6 +11500,7 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x004f, code lost:
@@ -11525,7 +11526,7 @@ public class IdentySdk {
     */
     public boolean y() {
         long j;
-        int i;
+        int i = 0;
         int i2 = generateST;
         deduplication = (i2 + 81) % 128;
         Object[] objArr = com.identy.Fpnative.valueOf;
@@ -11962,9 +11963,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean b(FingerDetectionMode fingerDetectionMode) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         int i2 = 0;
         try {
@@ -12133,7 +12134,7 @@ public class IdentySdk {
                 return;
             } catch (Exception e) {
                 e.printStackTrace();
-                return;
+                // return; // removed to make subsequent code reachable
             }
             byte[] bArr = $$d;
             Object[] objArr2 = new Object[1];
@@ -12217,7 +12218,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public IdentySdk setASServerConfig(String str, String str2, boolean z) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -12322,12 +12323,12 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean enroll() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         FingerDetectionMode[] fingerDetectionModeArr;
-        boolean z;
+        boolean z = false;
         Hand hand;
-        boolean contains;
+        boolean contains = false;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -12682,7 +12683,7 @@ public class IdentySdk {
             if (fingerDetectionModeArr != null) {
             }
             throw new NoDetectionModeException();
-            return true;
+            // return true; // unreachable after throw
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -12699,9 +12700,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public IdentySdk setDetectionMode(FingerDetectionMode[] fingerDetectionModeArr) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         int i2;
         int i3;
         int i4;
@@ -12808,8 +12809,8 @@ public class IdentySdk {
             this.setScore = fingerDetectionModeArr;
             i = 0;
             i2 = 0;
-            while (0 < 0) {
-            }
+            // while (0 < 0) { // unreachable dead loop
+            // } // end dead loop
             int i82 = ((int[]) objArr[1])[0];
             int i92 = ((i82 * i82) - (~(-(1438864331 * i82)))) - 1;
             int i102 = -(i82 * 350445369);
@@ -12849,9 +12850,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static boolean newInstance(Activity activity, byte[] bArr, InitializationListener<IdentySdk> initializationListener, IdentyResponseListener identyResponseListener, boolean z, boolean z2) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         int i2 = deduplication + 5;
         generateST = i2 % 128;
         if (i2 % 2 != 0) {
@@ -12957,11 +12958,11 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean capture() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         FingerDetectionMode[] fingerDetectionModeArr;
-        boolean z;
-        boolean contains;
+        boolean z = false;
+        boolean contains = false;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
             if (objArr2 != null) {
@@ -13070,7 +13071,7 @@ public class IdentySdk {
 
     /* JADX WARN: Type inference failed for: r1v30, types: [boolean, int] */
     public IdentySdk e() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = generateST;
         deduplication = (i + 3) % 128;
@@ -13145,7 +13146,7 @@ public class IdentySdk {
     }
 
     public boolean removeEnrollment() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 109) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -13346,9 +13347,9 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static boolean newInstance(Activity activity, String str, InitializationListener<IdentySdk> initializationListener, IdentyResponseListener identyResponseListener, boolean z, boolean z2) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        int i;
+        int i = 0;
         int i2 = deduplication + 59;
         generateST = i2 % 128;
         if (i2 % 2 != 0) {
@@ -13401,6 +13402,7 @@ public class IdentySdk {
         } else {
             throw null;
         }
+        return false;
     }
 
     private static /* synthetic */ Object PngjBadCrcException(Object[] objArr) {
@@ -13439,7 +13441,7 @@ public class IdentySdk {
     }
 
     public void a(FingerDetectionMode fingerDetectionMode) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         deduplication = (generateST + 75) % 128;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
@@ -13476,7 +13478,7 @@ public class IdentySdk {
                 hashSet2.add(sb2.toString());
                 return;
             } catch (Exception unused) {
-                return;
+                // return; // removed to make subsequent code reachable
             }
             byte[] bArr = $$d;
             Object[] objArr3 = new Object[1];
@@ -13526,7 +13528,7 @@ public class IdentySdk {
 
     /* JADX WARN: Type inference failed for: r4v1, types: [boolean, int] */
     public IdentySdk setASServerConfig(PublicKey publicKey) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i = (generateST + 41) % 128;
         deduplication = i;
@@ -13609,7 +13611,7 @@ public class IdentySdk {
     }
 
     public boolean removeEnrollment(IdentyUser identyUser) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -13755,10 +13757,10 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean a(FingerDetectionMode fingerDetectionMode, HashMap hashMap, long j, long j2, long j3, int i, byte[] bArr, int i2, List list, List list2, float f) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j4;
-        String encodeToString;
-        String str;
+        String encodeToString = null;
+        String str = null;
         Iterator it;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -13878,7 +13880,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean enroll(IdentyUser identyUser) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         FingerDetectionMode[] fingerDetectionModeArr;
         Hand hand;
@@ -14226,7 +14228,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean a(FingerDetectionMode fingerDetectionMode, int i, Pair[] pairArr, HashMap hashMap, float f, float f2, float f3, long j, long j2, byte[] bArr, int i2) {
-        Object[] objArr;
+        Object[] objArr = null;
         Pair[] pairArr2 = pairArr;
         HashMap hashMap2 = hashMap;
         int i3 = deduplication + 17;
@@ -14239,6 +14241,7 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0113, code lost:
@@ -14385,7 +14388,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean enroll(IdentyUser identyUser, int i) {
-        Object[] objArr;
+        Object[] objArr = null;
         int i2 = generateST + 71;
         int i3 = i2 % 128;
         deduplication = i3;
@@ -14395,11 +14398,12 @@ public class IdentySdk {
         } else {
             objArr = com.identy.Fpnative.valueOf;
         }
+        return false;
     }
 
     /* JADX WARN: Type inference failed for: r0v41, types: [boolean, int] */
     public IdentySdk() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -14617,7 +14621,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean a(FingerDetectionMode fingerDetectionMode, int i, Pair[] pairArr, long j, long j2, HashMap hashMap) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j3;
         int length;
         int i2;
@@ -14697,7 +14701,7 @@ public class IdentySdk {
                     deduplication = (generateST + 21) % 128;
                     return false;
                 } catch (Exception unused) {
-                    return false;
+                    // return false; // removed to make subsequent code reachable
                 }
                 byte[] bArr = $$d;
                 byte b = (byte) (-bArr[11]);
@@ -14745,7 +14749,7 @@ public class IdentySdk {
     }
     public void a(ERRORS errors, Pair[] pairArr) {
         long j;
-        Object[] objArr;
+        Object[] objArr = null;
         ERRORS errors2;
         Action action;
         int i = deduplication + 81;
@@ -14859,7 +14863,7 @@ public class IdentySdk {
     }
 
     public void a(boolean z) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -14912,7 +14916,7 @@ public class IdentySdk {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void a(String str) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = com.identy.Fpnative.valueOf;
         try {
@@ -14945,7 +14949,7 @@ public class IdentySdk {
                 return;
             } catch (JSONException e) {
                 e.printStackTrace();
-                return;
+                // return; // removed to make subsequent code reachable
             }
             byte[] bArr = $$d;
             Object[] objArr3 = new Object[1];
