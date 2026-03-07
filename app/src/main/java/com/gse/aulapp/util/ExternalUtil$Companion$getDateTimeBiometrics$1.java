@@ -167,6 +167,9 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$context, null);
             this.label = 1;
             obj = BuildersKt.withContext(main, anonymousClass1, this);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         } else {
             if (i != 1) {
                 if (i != 2) {
@@ -266,6 +269,10 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
             }
         };
         this.label = 2;
+        if (((Flow) obj).collect(flowCollector, this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2

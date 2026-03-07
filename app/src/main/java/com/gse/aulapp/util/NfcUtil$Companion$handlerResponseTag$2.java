@@ -55,30 +55,8 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
         return new NfcUtil$Companion$handlerResponseTag$2(this.$tag, this.$context, continuation);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r15v0, types: [android.nfc.tech.Ndef] */
-    /* JADX WARN: Type inference failed for: r15v1, types: [java.lang.String] */
-    /* JADX WARN: Type inference failed for: r15v10 */
-    /* JADX WARN: Type inference failed for: r15v2, types: [java.lang.String] */
-    /* JADX WARN: Type inference failed for: r15v3 */
-    /* JADX WARN: Type inference failed for: r15v7 */
-    /* JADX WARN: Type inference failed for: r15v9 */
-    /* JADX WARN: Type inference failed for: r19v2 */
-    /* JADX WARN: Type inference failed for: r19v3 */
-    /* JADX WARN: Type inference failed for: r19v5 */
-    /* JADX WARN: Type inference failed for: r4v2, types: [com.gse.aulapp.util.LogSendUtil$Companion] */
-    /* JADX WARN: Type inference failed for: r5v3, types: [com.gse.aulapp.util.LogSendUtil$Companion] */
-    /* JADX WARN: Type inference failed for: r8v15, types: [com.gse.aulapp.model.dto.TagDto] */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Object invokeSuspend(Object obj) {
-        String joinedString;
-        boolean z;
-        boolean z2;
-        Ndef ndef;
-        Object r19;
-        String str;
-        LogSendUtil.Companion companion;
-        String payloadByTag;
         IntrinsicsKt.getCOROUTINE_SUSPENDED();
         if (this.label != 0) {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -91,99 +69,49 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
             if (id.length != 0) {
                 byte[] id2 = this.$tag.getId();
                 Intrinsics.checkNotNullExpressionValue(id2, "getId(...)");
-                joinedString = ArraysKt.joinedString(id2, (CharSequence) ":", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, (Function1) new b(), 30, (Object) null);
+                String joinedString = ArraysKt.joinToString(id2, (CharSequence) ":", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, (Function1) new b(), 30, (Object) null);
                 String t = joinedString.replace(":", BuildConfig.FLAVOR);
                 String unused = NfcUtil.TAG;
                 LogSendUtil.Companion companion2 = LogSendUtil.INSTANCE;
                 companion2.setLog(this.$context, q.i("handlerResponseTag: Tag serial ", t), null, false);
-                Ndef r15 = Ndef.get(this.$tag);
-                try {
-                    try {
-                    } catch (Throwable th) {
-                        th = th;
-                    }
-                } catch (IOException e) {
-                    LogSendUtil.INSTANCE.setLog(this.$context, defpackage.a.m("handlerResponseTag: Error closing NFC: ", e.getMessage(), " "), r15, z2);
-                    String unused2 = NfcUtil.TAG;
-                    e.toString();
-                }
-                if (r15 == 0) {
+                Ndef ndef = Ndef.get(this.$tag);
+                if (ndef == null) {
                     companion2.setLog(this.$context, "handlerResponseTag: Not an Ndef capable card", "handlerResponseTag", true);
                     Boxing.boxInt(Log.d(NfcUtil.TAG, "Not an Ndef capable card"));
                     return null;
                 }
+                TagDto result = null;
                 try {
-                    payloadByTag = NfcUtil.INSTANCE.getPayloadByTag(r15);
+                    String payloadByTag = NfcUtil.INSTANCE.getPayloadByTag(ndef);
                     String unused3 = NfcUtil.TAG;
-                } catch (Exception e2) {
-                    e = e2;
-                    z2 = true;
-                } catch (Throwable th2) {
-                    th = th2;
-                    z = true;
-                }
-                try {
-                    ndef = r15;
-                    str = "handlerResponseTag";
-                    z2 = true;
-                    r19 = null;
                     try {
                         companion2.setLog(this.$context, "handlerResponseTag: Ndef Message: " + payloadByTag, null, false);
-                        RingtoneManager.getRingtone(this.$context, RingtoneManager.getDefaultUri(2)).play();
-                        companion = payloadByTag != null ? new TagDto(payloadByTag, t) : null;
                         try {
-                            Unit unit = Unit.INSTANCE;
-                            ndef.close();
-                            companion2 = companion;
-                            r15 = str;
-                        } catch (Exception e3) {
-                            e = e3;
-                            LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag:Error playing sound:  " + e.getMessage() + " ", str, z2);
+                            RingtoneManager.getRingtone(this.$context, RingtoneManager.getDefaultUri(2)).play();
+                        } catch (Exception e) {
+                            LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag:Error playing sound:  " + e.getMessage() + " ", "handlerResponseTag", true);
                             Boxing.boxInt(Log.d(NfcUtil.TAG, "Error playing sound: " + e));
-                            ndef.close();
-                            companion2 = companion;
-                            r15 = str;
-                            return companion2;
                         }
-                    } catch (Exception e4) {
-                        e = e4;
-                        companion = r19;
-                        LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag:Error playing sound:  " + e.getMessage() + " ", str, z2);
+                        if (payloadByTag != null) {
+                            result = new TagDto(payloadByTag, t);
+                        }
+                    } catch (Exception e) {
+                        LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag:Error playing sound:  " + e.getMessage() + " ", "handlerResponseTag", true);
                         Boxing.boxInt(Log.d(NfcUtil.TAG, "Error playing sound: " + e));
-                        ndef.close();
-                        companion2 = companion;
-                        r15 = str;
-                        return companion2;
                     }
-                } catch (Exception e5) {
-                    e = e5;
-                    z2 = true;
-                    ndef = r15;
-                    r19 = null;
-                    str = "handlerResponseTag";
-                    companion = r19;
-                    LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag:Error playing sound:  " + e.getMessage() + " ", str, z2);
+                } catch (Exception e) {
+                    LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag:Error playing sound:  " + e.getMessage() + " ", "handlerResponseTag", true);
                     Boxing.boxInt(Log.d(NfcUtil.TAG, "Error playing sound: " + e));
-                    ndef.close();
-                    companion2 = companion;
-                    r15 = str;
-                    return companion2;
-                } catch (Throwable th3) {
-                    th = th3;
-                    z = true;
-                    r15 = "handlerResponseTag";
-                    Throwable th4 = th;
+                } finally {
                     try {
-                        r15.close();
-                        throw th4;
-                    } catch (IOException e6) {
-                        LogSendUtil.INSTANCE.setLog(this.$context, defpackage.a.m("handlerResponseTag: Error closing NFC: ", e6.getMessage(), " "), r15, z);
+                        ndef.close();
+                    } catch (IOException e) {
+                        LogSendUtil.INSTANCE.setLog(this.$context, defpackage.a.m("handlerResponseTag: Error closing NFC: ", e.getMessage(), " "), "handlerResponseTag", true);
                         String unused4 = NfcUtil.TAG;
-                        e6.toString();
-                        throw th4;
+                        e.toString();
                     }
                 }
-                return companion2;
+                return result;
             }
         }
         LogSendUtil.INSTANCE.setLog(this.$context, "handlerResponseTag: Tag is null or id is null", null, false);
@@ -191,7 +119,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super TagDto> continuation) {
         return ((NfcUtil$Companion$handlerResponseTag$2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }
