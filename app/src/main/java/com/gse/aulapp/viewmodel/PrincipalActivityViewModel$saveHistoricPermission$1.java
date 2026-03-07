@@ -25,7 +25,7 @@ public final class PrincipalActivityViewModel$saveHistoricPermission$1 extends S
     final /* synthetic */ PrincipalActivityViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PrincipalActivityViewModel$saveHistoricPermission$1(PrincipalActivityViewModel principalActivityViewModel, boolean z, EnumPermissionsApp enumPermissionsApp, Continuation<? super PrincipalActivityViewModel$saveHistoricPermission$1> continuation) {
+    public PrincipalActivityViewModel$saveHistoricPermission$1(PrincipalActivityViewModel principalActivityViewModel, boolean z, EnumPermissionsApp enumPermissionsApp, Continuation continuation) {
         super(2, continuation);
         this.this$0 = principalActivityViewModel;
         this.$isEnabled = z;
@@ -78,7 +78,7 @@ public final class PrincipalActivityViewModel$saveHistoricPermission$1 extends S
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((PrincipalActivityViewModel$saveHistoricPermission$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -16,7 +16,7 @@ public final class HomeViewModel$getConfigurationSession$1 extends ContinuationI
     final /* synthetic */ HomeViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HomeViewModel$getConfigurationSession$1(HomeViewModel homeViewModel, Continuation<? super HomeViewModel$getConfigurationSession$1> continuation) {
+    public HomeViewModel$getConfigurationSession$1(HomeViewModel homeViewModel, Continuation continuation) {
         super(continuation);
         this.this$0 = homeViewModel;
     }

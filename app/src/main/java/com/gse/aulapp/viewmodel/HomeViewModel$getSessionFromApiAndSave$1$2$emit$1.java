@@ -23,7 +23,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1$2$emit$1<T> extends 
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
-    public HomeViewModel$getSessionFromApiAndSave$1$2$emit$1(HomeViewModel$getSessionFromApiAndSave$1.AnonymousClass2<? super T> anonymousClass2, Continuation<? super HomeViewModel$getSessionFromApiAndSave$1$2$emit$1> continuation) {
+    public HomeViewModel$getSessionFromApiAndSave$1$2$emit$1(HomeViewModel$getSessionFromApiAndSave$1.AnonymousClass2<? super T> anonymousClass2, Continuation continuation) {
         super(continuation);
         this.this$0 = anonymousClass2;
     }

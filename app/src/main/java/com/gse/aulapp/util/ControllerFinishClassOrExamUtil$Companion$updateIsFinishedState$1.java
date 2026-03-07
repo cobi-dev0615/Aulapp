@@ -73,13 +73,13 @@ public final class ControllerFinishClassOrExamUtil$Companion$updateIsFinishedSta
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ControllerFinishClassOrExamUtil$Companion$updateIsFinishedState$1(String str, Continuation<? super ControllerFinishClassOrExamUtil$Companion$updateIsFinishedState$1> continuation) {
+    public ControllerFinishClassOrExamUtil$Companion$updateIsFinishedState$1(String str, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$sessionID = str;
     }
@@ -111,7 +111,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$updateIsFinishedSta
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ControllerFinishClassOrExamUtil$Companion$updateIsFinishedState$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

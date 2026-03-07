@@ -45,7 +45,7 @@ public abstract class SaveDbUtil {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object saveGpsTracker(Context context, String str, Location location, Continuation<? super Unit> continuation) {
+        public final Object saveGpsTracker(Context context, String str, Location location, Continuation continuation) {
             SaveDbUtil$Companion$saveGpsTracker$1 saveDbUtil$Companion$saveGpsTracker$1;
             int i;
             if (continuation instanceof SaveDbUtil$Companion$saveGpsTracker$1) {

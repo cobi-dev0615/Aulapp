@@ -24,7 +24,7 @@ public final class HomeViewModel$initConfigurationPracticalAndExamPractical$1 ex
     final /* synthetic */ HomeViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HomeViewModel$initConfigurationPracticalAndExamPractical$1(HomeViewModel homeViewModel, SessionInstructorResponse sessionInstructorResponse, Continuation<? super HomeViewModel$initConfigurationPracticalAndExamPractical$1> continuation) {
+    public HomeViewModel$initConfigurationPracticalAndExamPractical$1(HomeViewModel homeViewModel, SessionInstructorResponse sessionInstructorResponse, Continuation continuation) {
         super(2, continuation);
         this.this$0 = homeViewModel;
         this.$sessionInstructorResponse = sessionInstructorResponse;
@@ -66,7 +66,7 @@ public final class HomeViewModel$initConfigurationPracticalAndExamPractical$1 ex
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((HomeViewModel$initConfigurationPracticalAndExamPractical$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

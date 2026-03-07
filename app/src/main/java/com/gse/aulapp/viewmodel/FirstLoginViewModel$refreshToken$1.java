@@ -69,7 +69,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends RefreshTokenResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends RefreshTokenResponse>> flowCollector, Throwable th, Continuation continuation) {
             return invoke2((FlowCollector<? super ApiResult<RefreshTokenResponse>>) flowCollector, th, continuation);
         }
 
@@ -97,13 +97,13 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<RefreshTokenResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<RefreshTokenResponse>> flowCollector, Throwable th, Continuation continuation) {
             return new AnonymousClass1(this.$context, this.$tokenRefreshRequest, this.this$0, continuation).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public FirstLoginViewModel$refreshToken$1(FirstLoginViewModel firstLoginViewModel, RefreshTokenRequest refreshTokenRequest, Context context, Continuation<? super FirstLoginViewModel$refreshToken$1> continuation) {
+    public FirstLoginViewModel$refreshToken$1(FirstLoginViewModel firstLoginViewModel, RefreshTokenRequest refreshTokenRequest, Context context, Continuation continuation) {
         super(2, continuation);
         this.this$0 = firstLoginViewModel;
         this.$tokenRefreshRequest = refreshTokenRequest;
@@ -173,7 +173,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((FirstLoginViewModel$refreshToken$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
@@ -210,7 +210,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object emit(ApiResult<RefreshTokenResponse> apiResult, Continuation<? super Unit> continuation) {
+        public final Object emit(ApiResult<RefreshTokenResponse> apiResult, Continuation continuation) {
             FirstLoginViewModel$refreshToken$1$2$emit$1 firstLoginViewModel$refreshToken$1$2$emit$1;
             int i;
             MutableSharedFlow mutableSharedFlow;

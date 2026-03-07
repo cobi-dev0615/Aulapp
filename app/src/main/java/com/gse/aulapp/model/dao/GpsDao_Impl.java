@@ -71,7 +71,7 @@ public final class GpsDao_Impl implements GpsDao {
     }
 
     @Override // com.gse.aulapp.model.dao.GpsDao
-    public Object deleteGpsTraceBySessionID(final String str, Continuation<? super Unit> continuation) {
+    public Object deleteGpsTraceBySessionID(final String str, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Unit>() { // from class: com.gse.aulapp.model.dao.GpsDao_Impl.4
             @Override // java.util.concurrent.Callable
             public Unit call() {
@@ -118,7 +118,7 @@ public final class GpsDao_Impl implements GpsDao {
     }
 
     @Override // com.gse.aulapp.model.dao.GpsDao
-    public Object getSpeedCustom(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation<? super Double> continuation) {
+    public Object getSpeedCustom(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, false, DBUtil.createCancellationSignal(), new Callable<Double>() { // from class: com.gse.aulapp.model.dao.GpsDao_Impl.7
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -138,7 +138,7 @@ public final class GpsDao_Impl implements GpsDao {
     }
 
     @Override // com.gse.aulapp.model.dao.GpsDao
-    public Object saveGpsTrace(final GpsTraceEntity gpsTraceEntity, Continuation<? super Long> continuation) {
+    public Object saveGpsTrace(final GpsTraceEntity gpsTraceEntity, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Long>() { // from class: com.gse.aulapp.model.dao.GpsDao_Impl.3
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable

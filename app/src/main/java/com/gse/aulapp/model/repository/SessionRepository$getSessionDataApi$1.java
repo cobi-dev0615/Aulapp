@@ -29,7 +29,7 @@ public final class SessionRepository$getSessionDataApi$1 extends SuspendLambda i
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SessionRepository$getSessionDataApi$1(Context context, SessionExamRequest sessionExamRequest, Continuation<? super SessionRepository$getSessionDataApi$1> continuation) {
+    public SessionRepository$getSessionDataApi$1(Context context, SessionExamRequest sessionExamRequest, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$sessionExamRequest = sessionExamRequest;
@@ -43,7 +43,7 @@ public final class SessionRepository$getSessionDataApi$1 extends SuspendLambda i
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionExamResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionExamResponse>> flowCollector, Continuation continuation) {
         return invoke2((FlowCollector<? super ApiResult<SessionExamResponse>>) flowCollector, continuation);
     }
 
@@ -135,7 +135,7 @@ public final class SessionRepository$getSessionDataApi$1 extends SuspendLambda i
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<SessionExamResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<SessionExamResponse>> flowCollector, Continuation continuation) {
         return ((SessionRepository$getSessionDataApi$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

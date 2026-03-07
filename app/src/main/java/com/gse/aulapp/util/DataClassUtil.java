@@ -48,7 +48,7 @@ public abstract class DataClassUtil {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object generateDataClass(String str, GpsRepository gpsRepository, Continuation<? super RealtimeClassDataDto> continuation) {
+        public final Object generateDataClass(String str, GpsRepository gpsRepository, Continuation continuation) {
             DataClassUtil$Companion$generateDataClass$1 dataClassUtil$Companion$generateDataClass$1;
             Object coroutine_suspended;
             int i;
@@ -169,6 +169,7 @@ public abstract class DataClassUtil {
                 return null;
             }
         }
+        return coroutine_suspended;
 
         /* JADX WARN: Code restructure failed: missing block: B:21:0x00a5, code lost:
         
@@ -188,7 +189,7 @@ public abstract class DataClassUtil {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object updateClassValues(DialogExamInfoLayoutBinding dialogExamInfoLayoutBinding, GpsRepository gpsRepository, String str, Continuation<? super Unit> continuation) {
+        public final Object updateClassValues(DialogExamInfoLayoutBinding dialogExamInfoLayoutBinding, GpsRepository gpsRepository, String str, Continuation continuation) {
             DataClassUtil$Companion$updateClassValues$1 dataClassUtil$Companion$updateClassValues$1;
             int i;
             RealtimeClassDataDto realtimeClassDataDto;
@@ -267,7 +268,7 @@ public abstract class DataClassUtil {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object updateClassValues(FragmentPracticeClassBinding fragmentPracticeClassBinding, GpsRepository gpsRepository, String str, Continuation<? super Unit> continuation) {
+        public final Object updateClassValues(FragmentPracticeClassBinding fragmentPracticeClassBinding, GpsRepository gpsRepository, String str, Continuation continuation) {
             DataClassUtil$Companion$updateClassValues$3 dataClassUtil$Companion$updateClassValues$3;
             int i;
             RealtimeClassDataDto realtimeClassDataDto;

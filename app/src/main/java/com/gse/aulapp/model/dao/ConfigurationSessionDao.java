@@ -11,7 +11,7 @@ import kotlin.coroutines.Continuation;
 public interface ConfigurationSessionDao {
     Object getConfiguration(Continuation<? super List<ConfigurationSessionEntity>> continuation);
 
-    Object getConfigurationByType(String str, Continuation<? super ConfigurationSessionEntity> continuation);
+    Object getConfigurationByType(String str, Continuation continuation);
 
     long insert(ConfigurationSessionEntity configuration);
 }

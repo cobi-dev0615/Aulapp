@@ -21,7 +21,7 @@ public final class ClassInCourseViewModel$updateIsPendingSync$1 extends SuspendL
     final /* synthetic */ ClassInCourseViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassInCourseViewModel$updateIsPendingSync$1(ClassInCourseViewModel classInCourseViewModel, String str, Continuation<? super ClassInCourseViewModel$updateIsPendingSync$1> continuation) {
+    public ClassInCourseViewModel$updateIsPendingSync$1(ClassInCourseViewModel classInCourseViewModel, String str, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = classInCourseViewModel;
         this.$sessionID = str;
@@ -61,7 +61,7 @@ public final class ClassInCourseViewModel$updateIsPendingSync$1 extends SuspendL
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassInCourseViewModel$updateIsPendingSync$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

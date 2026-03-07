@@ -22,7 +22,7 @@ public final class PracticeClassViewModel$setDataSessionDetail$1$1$1$1 extends S
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PracticeClassViewModel$setDataSessionDetail$1$1$1$1(LayoutPracticeClassCardBinding layoutPracticeClassCardBinding, EnumClassType enumClassType, Continuation<? super PracticeClassViewModel$setDataSessionDetail$1$1$1$1> continuation) {
+    public PracticeClassViewModel$setDataSessionDetail$1$1$1$1(LayoutPracticeClassCardBinding layoutPracticeClassCardBinding, EnumClassType enumClassType, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$this_run = layoutPracticeClassCardBinding;
         this.$eClassType = enumClassType;
@@ -46,7 +46,7 @@ public final class PracticeClassViewModel$setDataSessionDetail$1$1$1$1 extends S
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((PracticeClassViewModel$setDataSessionDetail$1$1$1$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

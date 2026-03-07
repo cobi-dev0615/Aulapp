@@ -48,7 +48,7 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
             int label;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public C00151(Activity activity, Continuation<? super C00151> continuation) {
+            public C00151(Activity activity, Continuation continuation) {
                 super(2, continuation);
                 this.$context = activity;
             }
@@ -70,7 +70,7 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
             }
 
             @Override // kotlin.jvm.functions.Function2
-            public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+            public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
                 return ((C00151) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
             }
         }
@@ -117,13 +117,13 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PrincipalActivityViewModel$validateShowDialogNetworkUnavailable$1(PrincipalActivityViewModel principalActivityViewModel, Activity activity, boolean z, Continuation<? super PrincipalActivityViewModel$validateShowDialogNetworkUnavailable$1> continuation) {
+    public PrincipalActivityViewModel$validateShowDialogNetworkUnavailable$1(PrincipalActivityViewModel principalActivityViewModel, Activity activity, boolean z, Continuation continuation) {
         super(2, continuation);
         this.this$0 = principalActivityViewModel;
         this.$context = activity;
@@ -162,7 +162,7 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((PrincipalActivityViewModel$validateShowDialogNetworkUnavailable$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

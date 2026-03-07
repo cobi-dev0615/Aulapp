@@ -27,7 +27,7 @@ public final class HomeViewModel$onSwipeRefresh$1 extends SuspendLambda implemen
     final /* synthetic */ HomeViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HomeViewModel$onSwipeRefresh$1(HomeViewModel homeViewModel, Activity activity, FragmentHomeBinding fragmentHomeBinding, Continuation<? super HomeViewModel$onSwipeRefresh$1> continuation) {
+    public HomeViewModel$onSwipeRefresh$1(HomeViewModel homeViewModel, Activity activity, FragmentHomeBinding fragmentHomeBinding, Continuation continuation) {
         super(2, continuation);
         this.this$0 = homeViewModel;
         this.$activity = activity;
@@ -69,7 +69,7 @@ public final class HomeViewModel$onSwipeRefresh$1 extends SuspendLambda implemen
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((HomeViewModel$onSwipeRefresh$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

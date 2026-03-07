@@ -82,7 +82,7 @@ public final class ConfigurationSessionDao_Impl implements ConfigurationSessionD
     }
 
     @Override // com.gse.aulapp.model.dao.ConfigurationSessionDao
-    public Object getConfigurationByType(String str, Continuation<? super ConfigurationSessionEntity> continuation) {
+    public Object getConfigurationByType(String str, Continuation continuation) {
         final RoomSQLiteQuery acquire = RoomSQLiteQuery.acquire("SELECT * FROM configurationSession WHERE typeConfiguration =?", 1);
         if (str == null) {
             acquire.bindNull(1);

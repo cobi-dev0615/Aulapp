@@ -32,7 +32,7 @@ public final class DatetimeRepository$datetime$1 extends SuspendLambda implement
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public DatetimeRepository$datetime$1(Context context, DatetimeRequest datetimeRequest, Continuation<? super DatetimeRepository$datetime$1> continuation) {
+    public DatetimeRepository$datetime$1(Context context, DatetimeRequest datetimeRequest, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = datetimeRequest;
@@ -46,7 +46,7 @@ public final class DatetimeRepository$datetime$1 extends SuspendLambda implement
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends DatetimeResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends DatetimeResponse>> flowCollector, Continuation continuation) {
         return invoke2((FlowCollector<? super ApiResult<DatetimeResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class DatetimeRepository$datetime$1 extends SuspendLambda implement
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<DatetimeResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<DatetimeResponse>> flowCollector, Continuation continuation) {
         return ((DatetimeRepository$datetime$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

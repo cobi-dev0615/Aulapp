@@ -32,7 +32,7 @@ public final class ParameterListRepository$getParameterList$1 extends SuspendLam
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ParameterListRepository$getParameterList$1(Context context, ParameterListRequest parameterListRequest, Continuation<? super ParameterListRepository$getParameterList$1> continuation) {
+    public ParameterListRepository$getParameterList$1(Context context, ParameterListRequest parameterListRequest, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = parameterListRequest;
@@ -46,7 +46,7 @@ public final class ParameterListRepository$getParameterList$1 extends SuspendLam
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends ParameterListResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends ParameterListResponse>> flowCollector, Continuation continuation) {
         return invoke2((FlowCollector<? super ApiResult<ParameterListResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class ParameterListRepository$getParameterList$1 extends SuspendLam
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<ParameterListResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<ParameterListResponse>> flowCollector, Continuation continuation) {
         return ((ParameterListRepository$getParameterList$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

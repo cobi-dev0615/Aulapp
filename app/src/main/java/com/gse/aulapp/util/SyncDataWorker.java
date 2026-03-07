@@ -75,7 +75,7 @@ public final class SyncDataWorker extends CoroutineWorker {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object doWork(Continuation<? super ListenableWorker.Result> continuation) {
+    public Object doWork(Continuation continuation) {
         SyncDataWorker$doWork$1 syncDataWorker$doWork$1;
         int i;
         if (continuation instanceof SyncDataWorker$doWork$1) {

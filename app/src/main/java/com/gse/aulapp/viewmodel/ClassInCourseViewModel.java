@@ -349,7 +349,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object getConfigurationSession(Continuation<? super ConfigurationSessionDto> continuation) {
+    public final Object getConfigurationSession(Continuation continuation) {
         return ConfigurationUtil.INSTANCE.getConfigurationSessionByType(EnumTypeConfiguration.EXAM_CONFIG, continuation);
     }
 
@@ -404,7 +404,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object loadQuestionsFromDB(Context context, String str, String str2, NavController navController, Continuation<? super Unit> continuation) {
+    public final Object loadQuestionsFromDB(Context context, String str, String str2, NavController navController, Continuation continuation) {
         ClassInCourseViewModel$loadQuestionsFromDB$1 classInCourseViewModel$loadQuestionsFromDB$1;
         int i;
         Context context2;
@@ -464,13 +464,13 @@ public final class ClassInCourseViewModel extends ViewModel {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object saveQuestionInDB(String str, List<QuestionsResponse> list, Continuation<? super Unit> continuation) {
+    public final Object saveQuestionInDB(String str, List<QuestionsResponse> list, Continuation continuation) {
         Object withContext = BuildersKt.withContext(Dispatchers.getIO(), new ClassInCourseViewModel$saveQuestionInDB$2(this, str, list, null), continuation);
         return withContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? withContext : Unit.INSTANCE;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object saveTestInDB(String str, String str2, Continuation<? super Unit> continuation) {
+    public final Object saveTestInDB(String str, String str2, Continuation continuation) {
         Object withContext = BuildersKt.withContext(Dispatchers.getIO(), new ClassInCourseViewModel$saveTestInDB$2(this, str, str2, null), continuation);
         return withContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? withContext : Unit.INSTANCE;
     }

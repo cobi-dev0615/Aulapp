@@ -28,7 +28,7 @@ public final class ConfigurationRepository {
         return this.config.getConfiguration(continuation);
     }
 
-    public final Object getConfigurationSessionByType(EnumTypeConfiguration enumTypeConfiguration, Continuation<? super ConfigurationSessionEntity> continuation) {
+    public final Object getConfigurationSessionByType(EnumTypeConfiguration enumTypeConfiguration, Continuation continuation) {
         return this.config.getConfigurationByType(enumTypeConfiguration.name(), continuation);
     }
 }

@@ -21,7 +21,7 @@ public final class PracticeClassViewModel$dialogCloseBeforeTime$1$2 extends Susp
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PracticeClassViewModel$dialogCloseBeforeTime$1$2(StepProcessSessionRepository stepProcessSessionRepository, String str, Continuation<? super PracticeClassViewModel$dialogCloseBeforeTime$1$2> continuation) {
+    public PracticeClassViewModel$dialogCloseBeforeTime$1$2(StepProcessSessionRepository stepProcessSessionRepository, String str, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$stepRepository = stepProcessSessionRepository;
         this.$sessionID = str;
@@ -54,7 +54,7 @@ public final class PracticeClassViewModel$dialogCloseBeforeTime$1$2 extends Susp
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((PracticeClassViewModel$dialogCloseBeforeTime$1$2) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

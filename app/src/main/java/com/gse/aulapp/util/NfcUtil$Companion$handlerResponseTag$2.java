@@ -37,7 +37,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public NfcUtil$Companion$handlerResponseTag$2(Tag tag, Context context, Continuation<? super NfcUtil$Companion$handlerResponseTag$2> continuation) {
+    public NfcUtil$Companion$handlerResponseTag$2(Tag tag, Context context, Continuation continuation) {
         super(2, continuation);
         this.$tag = tag;
         this.$context = context;
@@ -191,7 +191,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super TagDto> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((NfcUtil$Companion$handlerResponseTag$2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

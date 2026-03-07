@@ -36,7 +36,7 @@ public final class ClassInCourseViewModel$loadQuestionsFromDB$2 extends SuspendL
     final /* synthetic */ ClassInCourseViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassInCourseViewModel$loadQuestionsFromDB$2(ClassInCourseViewModel classInCourseViewModel, String str, Context context, String str2, NavController navController, Continuation<? super ClassInCourseViewModel$loadQuestionsFromDB$2> continuation) {
+    public ClassInCourseViewModel$loadQuestionsFromDB$2(ClassInCourseViewModel classInCourseViewModel, String str, Context context, String str2, NavController navController, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = classInCourseViewModel;
         this.$testID = str;
@@ -102,7 +102,7 @@ public final class ClassInCourseViewModel$loadQuestionsFromDB$2 extends SuspendL
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassInCourseViewModel$loadQuestionsFromDB$2) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

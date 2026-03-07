@@ -42,13 +42,13 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Activity activity, Continuation<?> continuation) {
+        public AnonymousClass1(Activity activity, Continuation continuation) {
             super(3, continuation);
             this.$context = activity;
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends ParameterListResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends ParameterListResponse>> flowCollector, Throwable th, Continuation continuation) {
             return invoke2((FlowCollector<? super ApiResult<ParameterListResponse>>) flowCollector, th, continuation);
         }
 
@@ -66,7 +66,7 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<ParameterListResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<ParameterListResponse>> flowCollector, Throwable th, Continuation continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$context, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -74,7 +74,7 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public LoadConfigurationUtil$Companion$saveParameterListOnPreference$1(Activity activity, Continuation<? super LoadConfigurationUtil$Companion$saveParameterListOnPreference$1> continuation) {
+    public LoadConfigurationUtil$Companion$saveParameterListOnPreference$1(Activity activity, Continuation continuation) {
         super(2, continuation);
         this.$context = activity;
     }
@@ -103,7 +103,7 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
                 }
 
                 /* JADX WARN: Multi-variable type inference failed */
-                public final Object emit(ApiResult<ParameterListResponse> apiResult, Continuation<? super Unit> continuation) {
+                public final Object emit(ApiResult<ParameterListResponse> apiResult, Continuation continuation) {
                     ParameterListResponse.Data data;
                     String scheduleExamsURL;
                     ParameterListResponse.Data data2;
@@ -172,7 +172,7 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((LoadConfigurationUtil$Companion$saveParameterListOnPreference$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

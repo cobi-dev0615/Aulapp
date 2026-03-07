@@ -28,7 +28,7 @@ public final class HomeViewModel$getSessionFromDBFilterChip$2 extends SuspendLam
     final /* synthetic */ HomeViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HomeViewModel$getSessionFromDBFilterChip$2(HomeViewModel homeViewModel, Continuation<? super HomeViewModel$getSessionFromDBFilterChip$2> continuation) {
+    public HomeViewModel$getSessionFromDBFilterChip$2(HomeViewModel homeViewModel, Continuation continuation) {
         super(2, continuation);
         this.this$0 = homeViewModel;
     }
@@ -98,7 +98,7 @@ public final class HomeViewModel$getSessionFromDBFilterChip$2 extends SuspendLam
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((HomeViewModel$getSessionFromDBFilterChip$2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -102,7 +102,7 @@ public abstract class ConfigurationUtil {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object getConfigurationSessionByType(EnumTypeConfiguration enumTypeConfiguration, Continuation<? super ConfigurationSessionDto> continuation) {
+        public final Object getConfigurationSessionByType(EnumTypeConfiguration enumTypeConfiguration, Continuation continuation) {
             ConfigurationUtil$Companion$getConfigurationSessionByType$1 configurationUtil$Companion$getConfigurationSessionByType$1;
             int i;
             Companion companion = this;

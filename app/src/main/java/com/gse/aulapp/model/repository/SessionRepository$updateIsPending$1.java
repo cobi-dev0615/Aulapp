@@ -15,8 +15,8 @@ public final class SessionRepository$updateIsPending$1 extends ContinuationImpl 
     final /* synthetic */ SessionRepository this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SessionRepository$updateIsPending$1(SessionRepository sessionRepository, Continuation<? super SessionRepository$updateIsPending$1> continuation) {
-        super((Continuation<Object>) continuation);
+    public SessionRepository$updateIsPending$1(SessionRepository sessionRepository, Continuation continuation) {
+        super((Continuation) continuation);
         this.this$0 = sessionRepository;
     }
 

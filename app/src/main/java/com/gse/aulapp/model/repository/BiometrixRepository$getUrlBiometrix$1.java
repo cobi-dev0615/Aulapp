@@ -33,7 +33,7 @@ public final class BiometrixRepository$getUrlBiometrix$1 extends SuspendLambda i
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public BiometrixRepository$getUrlBiometrix$1(Context context, BiometrixRequest biometrixRequest, Continuation<? super BiometrixRepository$getUrlBiometrix$1> continuation) {
+    public BiometrixRepository$getUrlBiometrix$1(Context context, BiometrixRequest biometrixRequest, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = biometrixRequest;
@@ -47,7 +47,7 @@ public final class BiometrixRepository$getUrlBiometrix$1 extends SuspendLambda i
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends BiometrixUrlActionResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends BiometrixUrlActionResponse>> flowCollector, Continuation continuation) {
         return invoke2((FlowCollector<? super ApiResult<BiometrixUrlActionResponse>>) flowCollector, continuation);
     }
 
@@ -153,7 +153,7 @@ public final class BiometrixRepository$getUrlBiometrix$1 extends SuspendLambda i
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<BiometrixUrlActionResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<BiometrixUrlActionResponse>> flowCollector, Continuation continuation) {
         return ((BiometrixRepository$getUrlBiometrix$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

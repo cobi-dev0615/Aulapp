@@ -98,14 +98,14 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
-    public ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(FragmentActivity fragmentActivity, EnumHandsAulapp enumHandsAulapp, String str, String str2, Function1<? super DataFailure, Unit> function1, Function1<? super FingerPrintResponse, Unit> function12, Continuation<? super ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1> continuation) {
+    public ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(FragmentActivity fragmentActivity, EnumHandsAulapp enumHandsAulapp, String str, String str2, Function1<? super DataFailure, Unit> function1, Function1<? super FingerPrintResponse, Unit> function12, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$fragmentActivity = fragmentActivity;
         this.$hand = enumHandsAulapp;
@@ -142,7 +142,7 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -72,7 +72,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends ChangeCenterResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends ChangeCenterResponse>> flowCollector, Throwable th, Continuation continuation) {
             return invoke2((FlowCollector<? super ApiResult<ChangeCenterResponse>>) flowCollector, th, continuation);
         }
 
@@ -101,7 +101,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<ChangeCenterResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<ChangeCenterResponse>> flowCollector, Throwable th, Continuation continuation) {
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$activity, this.this$0, continuation);
             anonymousClass2.L$0 = th;
             return anonymousClass2.invokeSuspend(Unit.INSTANCE);
@@ -109,7 +109,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public FirstLoginViewModel$refreshTokenCEA$1(FirstLoginViewModel firstLoginViewModel, String str, List<CenterDto> list, String str2, Activity activity, Continuation<? super FirstLoginViewModel$refreshTokenCEA$1> continuation) {
+    public FirstLoginViewModel$refreshTokenCEA$1(FirstLoginViewModel firstLoginViewModel, String str, List<CenterDto> list, String str2, Activity activity, Continuation continuation) {
         super(2, continuation);
         this.this$0 = firstLoginViewModel;
         this.$ceaSelected = str;
@@ -198,7 +198,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
                         return emit((ApiResult<ChangeCenterResponse>) obj2, (Continuation<? super Unit>) continuation);
                     }
 
-                    public final Object emit(ApiResult<ChangeCenterResponse> apiResult, Continuation<? super Unit> continuation) {
+                    public final Object emit(ApiResult<ChangeCenterResponse> apiResult, Continuation continuation) {
                         MutableSharedFlow mutableSharedFlow3;
                         ChangeCenterResponse.Result result;
                         MutableSharedFlow mutableSharedFlow4;
@@ -344,7 +344,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((FirstLoginViewModel$refreshTokenCEA$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

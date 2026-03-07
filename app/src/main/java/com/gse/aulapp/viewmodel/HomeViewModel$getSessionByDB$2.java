@@ -27,7 +27,7 @@ public final class HomeViewModel$getSessionByDB$2 extends SuspendLambda implemen
     final /* synthetic */ HomeViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HomeViewModel$getSessionByDB$2(HomeViewModel homeViewModel, Continuation<? super HomeViewModel$getSessionByDB$2> continuation) {
+    public HomeViewModel$getSessionByDB$2(HomeViewModel homeViewModel, Continuation continuation) {
         super(2, continuation);
         this.this$0 = homeViewModel;
     }
@@ -94,7 +94,7 @@ public final class HomeViewModel$getSessionByDB$2 extends SuspendLambda implemen
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((HomeViewModel$getSessionByDB$2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -15,8 +15,8 @@ public final class SessionRepository$sendSessionSyncPracticalRequest$1 extends C
     final /* synthetic */ SessionRepository this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SessionRepository$sendSessionSyncPracticalRequest$1(SessionRepository sessionRepository, Continuation<? super SessionRepository$sendSessionSyncPracticalRequest$1> continuation) {
-        super((Continuation<Object>) continuation);
+    public SessionRepository$sendSessionSyncPracticalRequest$1(SessionRepository sessionRepository, Continuation continuation) {
+        super((Continuation) continuation);
         this.this$0 = sessionRepository;
     }
 

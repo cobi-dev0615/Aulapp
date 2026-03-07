@@ -90,7 +90,7 @@ public final class SessionRepository {
         return this.sessionDao.getAllSessionCustomSync(new SimpleSQLiteQuery("SELECT * FROM session WHERE isPendingSync = 1 ", null), continuation);
     }
 
-    private final Object getSessionSyncById(String str, Continuation<? super SessionFullSync> continuation) {
+    private final Object getSessionSyncById(String str, Continuation continuation) {
         return this.sessionDao.getSessionCustomSync(new SimpleSQLiteQuery("SELECT * FROM session s where s.id = ?", new Object[]{str}), continuation);
     }
 
@@ -629,7 +629,7 @@ public final class SessionRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object deleteLogOutSession(Continuation<? super Unit> continuation) {
+    public final Object deleteLogOutSession(Continuation continuation) {
         SessionRepository$deleteLogOutSession$1 sessionRepository$deleteLogOutSession$1;
         SessionRepository sessionRepository;
         if (continuation instanceof SessionRepository$deleteLogOutSession$1) {
@@ -807,12 +807,12 @@ public final class SessionRepository {
         return null;
     }
 
-    public final Object deleteSessionById(List<String> list, Continuation<? super Unit> continuation) {
+    public final Object deleteSessionById(List<String> list, Continuation continuation) {
         Object deleteSessionById = this.sessionDao.deleteSessionById(list, (Continuation) continuation);
         return deleteSessionById == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? deleteSessionById : Unit.INSTANCE;
     }
 
-    public final Object deleteSessionsByDate(String str, Continuation<? super Unit> continuation) {
+    public final Object deleteSessionsByDate(String str, Continuation continuation) {
         Object deleteSessionsByDate = this.sessionDao.deleteSessionsByDate(str, (Continuation) continuation);
         return deleteSessionsByDate == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? deleteSessionsByDate : Unit.INSTANCE;
     }
@@ -823,7 +823,7 @@ public final class SessionRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object examRequest(String str, Continuation<? super SessionPracticeExamSyncRequest> continuation) {
+    public final Object examRequest(String str, Continuation continuation) {
         SessionRepository$examRequest$1 sessionRepository$examRequest$1;
         Object coroutine_suspended;
         int i;
@@ -911,7 +911,7 @@ public final class SessionRepository {
         return this.sessionDao.getIdSessionCustom(new SimpleSQLiteQuery("SELECT s.id FROM session s", null), continuation);
     }
 
-    public final Object getEndEntryClass(String str, Continuation<? super Long> continuation) {
+    public final Object getEndEntryClass(String str, Continuation continuation) {
         return this.sessionDao.getEndEntryClassBySessionId(new SimpleSQLiteQuery("SELECT dateEndEntryClass FROM session WHERE id = ?", new Object[]{str}), continuation);
     }
 
@@ -952,7 +952,7 @@ public final class SessionRepository {
         return this.sessionDao.getIdSessionCustom(new SimpleSQLiteQuery("SELECT s.id FROM session s where s.isPendingSync = 1 ", null), continuation);
     }
 
-    public final Object getSessionsIsPending(Continuation<? super Long> continuation) {
+    public final Object getSessionsIsPending(Continuation continuation) {
         return this.sessionDao.getCountSessionIsPending(new SimpleSQLiteQuery("SELECT Count(*) FROM session WHERE isPendingSync = 1", null), continuation);
     }
 
@@ -962,7 +962,7 @@ public final class SessionRepository {
         return FlowKt.flowOn((Flow) FlowKt.flow(new SessionRepository$getSessionsRoute$1(context, sessionInstructorRequest, null)), Dispatchers.getIO());
     }
 
-    public final Object getStartEntryClass(String str, Continuation<? super Long> continuation) {
+    public final Object getStartEntryClass(String str, Continuation continuation) {
         return this.sessionDao.getStartEntryClassBySessionId(new SimpleSQLiteQuery("SELECT dateStartEntryClass FROM session WHERE id = ?", new Object[]{str}), continuation);
     }
 
@@ -1172,7 +1172,7 @@ public final class SessionRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object initSessionSyncPending(Continuation<? super Boolean> continuation) {
+    public final Object initSessionSyncPending(Continuation continuation) {
         SessionRepository$initSessionSyncPending$1 sessionRepository$initSessionSyncPending$1;
         int i = 0;
         Ref.BooleanRef booleanRef;
@@ -1319,20 +1319,20 @@ public final class SessionRepository {
         return null;
     }
 
-    public final Object saveClassRoom(ClassRoomEntity classRoomEntity, Continuation<? super Long> continuation) {
+    public final Object saveClassRoom(ClassRoomEntity classRoomEntity, Continuation continuation) {
         return this.sessionDao.saveClassRoom(classRoomEntity, continuation);
     }
 
-    public final Object saveDateExamEntry(String str, String str2, Continuation<? super Unit> continuation) {
+    public final Object saveDateExamEntry(String str, String str2, Continuation continuation) {
         Object updateDateStartEntry = this.sessionDao.updateDateStartEntry(new SimpleSQLiteQuery("UPDATE session  SET dateStartEntry = ? WHERE id = ?", new Object[]{str, str2}), (Continuation) continuation);
         return updateDateStartEntry == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? updateDateStartEntry : Unit.INSTANCE;
     }
 
-    public final Object saveLesson(LessonEntity lessonEntity, Continuation<? super Long> continuation) {
+    public final Object saveLesson(LessonEntity lessonEntity, Continuation continuation) {
         return this.sessionDao.saveLesson(lessonEntity, continuation);
     }
 
-    public final Object saveSession(SessionEntity sessionEntity, Continuation<? super Long> continuation) {
+    public final Object saveSession(SessionEntity sessionEntity, Continuation continuation) {
         String str;
         String date = sessionEntity.getDate();
         if (date != null) {
@@ -1356,7 +1356,7 @@ public final class SessionRepository {
         return this.sessionDao.saveSession(sessionEntity, continuation);
     }
 
-    public final Object saveVehicle(VehicleEntity vehicleEntity, Continuation<? super Long> continuation) {
+    public final Object saveVehicle(VehicleEntity vehicleEntity, Continuation continuation) {
         return this.sessionDao.saveVehicle(vehicleEntity, continuation);
     }
 
@@ -1501,7 +1501,7 @@ public final class SessionRepository {
         return coroutine_suspended;
     }
 
-    public final Object updateDateEndClass(long j, String str, Continuation<? super Unit> continuation) {
+    public final Object updateDateEndClass(long j, String str, Continuation continuation) {
         Object updateSessionBySessionId = this.sessionDao.updateSessionBySessionId(new SimpleSQLiteQuery("UPDATE session SET dateEndEntryClass = ? WHERE id = ?", new Object[]{Boxing.boxLong(j), str}), (Continuation) continuation);
         return updateSessionBySessionId == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? updateSessionBySessionId : Unit.INSTANCE;
     }
@@ -1513,7 +1513,7 @@ public final class SessionRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object updateDateEntryClass(long j, String str, Continuation<? super Long> continuation) {
+    public final Object updateDateEntryClass(long j, String str, Continuation continuation) {
         SessionRepository$updateDateEntryClass$1 sessionRepository$updateDateEntryClass$1;
         int i;
         if (continuation instanceof SessionRepository$updateDateEntryClass$1) {
@@ -1553,7 +1553,7 @@ public final class SessionRepository {
         return Boxing.boxLong(l2 == null ? l2.longValue() : 0L);
     }
 
-    public final Object updateIsFinished(String str, Continuation<? super Long> continuation) {
+    public final Object updateIsFinished(String str, Continuation continuation) {
         return this.sessionDao.updateSessionBySessionId(new SimpleSQLiteQuery("UPDATE session SET isFinished = 1 WHERE id = ?", new Object[]{str}), continuation);
     }
 
@@ -1564,7 +1564,7 @@ public final class SessionRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object updateIsPending(String str, String str2, Continuation<? super Long> continuation) {
+    public final Object updateIsPending(String str, String str2, Continuation continuation) {
         SessionRepository$updateIsPending$1 sessionRepository$updateIsPending$1;
         int i;
         if (continuation instanceof SessionRepository$updateIsPending$1) {

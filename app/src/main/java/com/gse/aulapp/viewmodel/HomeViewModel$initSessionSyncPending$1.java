@@ -154,13 +154,13 @@ public final class HomeViewModel$initSessionSyncPending$1 extends SuspendLambda 
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HomeViewModel$initSessionSyncPending$1(HomeViewModel homeViewModel, Context context, Menu menu, FragmentHomeBinding fragmentHomeBinding, boolean z, Continuation<? super HomeViewModel$initSessionSyncPending$1> continuation) {
+    public HomeViewModel$initSessionSyncPending$1(HomeViewModel homeViewModel, Context context, Menu menu, FragmentHomeBinding fragmentHomeBinding, boolean z, Continuation continuation) {
         super(2, continuation);
         this.this$0 = homeViewModel;
         this.$context = context;
@@ -196,7 +196,7 @@ public final class HomeViewModel$initSessionSyncPending$1 extends SuspendLambda 
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((HomeViewModel$initSessionSyncPending$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -29,7 +29,7 @@ public final class WebviewFragment$handlerBiometricResult$1 extends SuspendLambd
     final /* synthetic */ WebviewFragment this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public WebviewFragment$handlerBiometricResult$1(BiometrixResult biometrixResult, WebviewFragment webviewFragment, Continuation<? super WebviewFragment$handlerBiometricResult$1> continuation) {
+    public WebviewFragment$handlerBiometricResult$1(BiometrixResult biometrixResult, WebviewFragment webviewFragment, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$data = biometrixResult;
         this.this$0 = webviewFragment;
@@ -76,7 +76,7 @@ public final class WebviewFragment$handlerBiometricResult$1 extends SuspendLambd
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((WebviewFragment$handlerBiometricResult$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

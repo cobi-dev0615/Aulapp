@@ -39,7 +39,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
     final /* synthetic */ ClassInCourseViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassInCourseViewModel$sendPracticeExamSync$1(Context context, ClassInCourseViewModel classInCourseViewModel, String str, NavController navController, Continuation<? super ClassInCourseViewModel$sendPracticeExamSync$1> continuation) {
+    public ClassInCourseViewModel$sendPracticeExamSync$1(Context context, ClassInCourseViewModel classInCourseViewModel, String str, NavController navController, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.this$0 = classInCourseViewModel;
@@ -113,7 +113,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassInCourseViewModel$sendPracticeExamSync$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
@@ -149,7 +149,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation<? super Unit> continuation) {
+        public final Object emit(ApiResult<SessionPracticeExamResponse> apiResult, Continuation continuation) {
             ClassInCourseViewModel$sendPracticeExamSync$1$2$emit$1 classInCourseViewModel$sendPracticeExamSync$1$2$emit$1;
             int i;
             SessionRepository sessionRepository;

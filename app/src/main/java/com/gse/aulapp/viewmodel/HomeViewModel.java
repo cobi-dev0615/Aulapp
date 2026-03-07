@@ -322,7 +322,7 @@ public final class HomeViewModel extends ViewModel {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object getConfigurationSession(Function1<Object, Unit> function1, Continuation<? super Unit> continuation) {
+    public final Object getConfigurationSession(Function1<Object, Unit> function1, Continuation continuation) {
         HomeViewModel$getConfigurationSession$1 homeViewModel$getConfigurationSession$1;
         int i;
         if (continuation instanceof HomeViewModel$getConfigurationSession$1) {
@@ -408,7 +408,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object getSessionByDB(Continuation<? super Unit> continuation) {
+    public final Object getSessionByDB(Continuation continuation) {
         Object withContext = BuildersKt.withContext(Dispatchers.getIO(), new HomeViewModel$getSessionByDB$2(this, null), continuation);
         return withContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? withContext : Unit.INSTANCE;
     }
@@ -479,7 +479,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object getSessionFromDBFilterChip(Continuation<? super Unit> continuation) {
+    public final Object getSessionFromDBFilterChip(Continuation continuation) {
         Object withContext = BuildersKt.withContext(Dispatchers.getIO(), new HomeViewModel$getSessionFromDBFilterChip$2(this, null), continuation);
         return withContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? withContext : Unit.INSTANCE;
     }
@@ -610,7 +610,7 @@ public final class HomeViewModel extends ViewModel {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object saveSessionFull(SessionResponseDto sessionResponseDto, Continuation<? super Unit> continuation) {
+    public final Object saveSessionFull(SessionResponseDto sessionResponseDto, Continuation continuation) {
         HomeViewModel$saveSessionFull$1 homeViewModel$saveSessionFull$1;
         Ref.ObjectRef objectRef;
         Ref.ObjectRef objectRef2;
@@ -1498,7 +1498,7 @@ public final class HomeViewModel extends ViewModel {
         return this.message;
     }
 
-    public final Object getSessionConfigList(Continuation<? super Unit> continuation) {
+    public final Object getSessionConfigList(Continuation continuation) {
         Object configurationSession = getConfigurationSession(new o1(new Ref.ObjectRef(), this, 4), continuation);
         return configurationSession == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? configurationSession : Unit.INSTANCE;
     }

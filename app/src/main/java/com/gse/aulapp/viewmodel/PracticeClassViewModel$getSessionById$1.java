@@ -73,13 +73,13 @@ public final class PracticeClassViewModel$getSessionById$1 extends SuspendLambda
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PracticeClassViewModel$getSessionById$1(PracticeClassViewModel practiceClassViewModel, String str, Continuation<? super PracticeClassViewModel$getSessionById$1> continuation) {
+    public PracticeClassViewModel$getSessionById$1(PracticeClassViewModel practiceClassViewModel, String str, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = practiceClassViewModel;
         this.$sessionID = str;
@@ -112,7 +112,7 @@ public final class PracticeClassViewModel$getSessionById$1 extends SuspendLambda
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((PracticeClassViewModel$getSessionById$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

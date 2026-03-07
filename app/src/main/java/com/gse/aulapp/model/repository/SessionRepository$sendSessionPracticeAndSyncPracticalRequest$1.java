@@ -17,8 +17,8 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest$
     final /* synthetic */ SessionRepository this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SessionRepository$sendSessionPracticeAndSyncPracticalRequest$1(SessionRepository sessionRepository, Continuation<? super SessionRepository$sendSessionPracticeAndSyncPracticalRequest$1> continuation) {
-        super((Continuation<Object>) continuation);
+    public SessionRepository$sendSessionPracticeAndSyncPracticalRequest$1(SessionRepository sessionRepository, Continuation continuation) {
+        super((Continuation) continuation);
         this.this$0 = sessionRepository;
     }
 

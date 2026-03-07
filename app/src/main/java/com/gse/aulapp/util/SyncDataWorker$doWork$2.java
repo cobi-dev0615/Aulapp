@@ -27,7 +27,7 @@ public final class SyncDataWorker$doWork$2 extends SuspendLambda implements Func
     final /* synthetic */ SyncDataWorker this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SyncDataWorker$doWork$2(SyncDataWorker syncDataWorker, Continuation<? super SyncDataWorker$doWork$2> continuation) {
+    public SyncDataWorker$doWork$2(SyncDataWorker syncDataWorker, Continuation continuation) {
         super(2, continuation);
         this.this$0 = syncDataWorker;
     }
@@ -88,7 +88,7 @@ public final class SyncDataWorker$doWork$2 extends SuspendLambda implements Func
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super ListenableWorker.Result> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((SyncDataWorker$doWork$2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -82,7 +82,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionInstructorResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionInstructorResponse>> flowCollector, Throwable th, Continuation continuation) {
             return invoke2((FlowCollector<? super ApiResult<SessionInstructorResponse>>) flowCollector, th, continuation);
         }
 
@@ -102,7 +102,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<SessionInstructorResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<SessionInstructorResponse>> flowCollector, Throwable th, Continuation continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$context, this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -186,7 +186,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
             return emit((ApiResult<SessionInstructorResponse>) obj, (Continuation<? super Unit>) continuation);
         }
 
-        public final Object emit(final ApiResult<SessionInstructorResponse> apiResult, Continuation<? super Unit> continuation) {
+        public final Object emit(final ApiResult<SessionInstructorResponse> apiResult, Continuation continuation) {
             SingleLiveEvent singleLiveEvent;
             SingleLiveEvent singleLiveEvent2;
             List<SessionInstructorObjectResponse> emptyList;
@@ -314,7 +314,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Context context, SessionInstructorRequest sessionInstructorRequest, Activity activity, String str, boolean z, EnumClassType enumClassType, NavController navController, Continuation<? super ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1> continuation) {
+    public ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Context context, SessionInstructorRequest sessionInstructorRequest, Activity activity, String str, boolean z, EnumClassType enumClassType, NavController navController, Continuation continuation) {
         super(2, continuation);
         this.this$0 = classPracticeBeforeViewModel;
         this.$context = context;
@@ -359,7 +359,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

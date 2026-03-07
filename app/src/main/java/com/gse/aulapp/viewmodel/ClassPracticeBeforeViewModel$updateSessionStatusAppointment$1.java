@@ -57,7 +57,7 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends HistoricRecordPermissionsChangeResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends HistoricRecordPermissionsChangeResponse>> flowCollector, Throwable th, Continuation continuation) {
             return invoke2((FlowCollector<? super ApiResult<HistoricRecordPermissionsChangeResponse>>) flowCollector, th, continuation);
         }
 
@@ -77,7 +77,7 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<HistoricRecordPermissionsChangeResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<HistoricRecordPermissionsChangeResponse>> flowCollector, Throwable th, Continuation continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$context, this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -85,7 +85,7 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Context context, String str, String str2, Continuation<? super ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1> continuation) {
+    public ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Context context, String str, String str2, Continuation continuation) {
         super(2, continuation);
         this.this$0 = classPracticeBeforeViewModel;
         this.$context = context;
@@ -116,7 +116,7 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
                     return emit((ApiResult<HistoricRecordPermissionsChangeResponse>) obj2, (Continuation<? super Unit>) continuation);
                 }
 
-                public final Object emit(ApiResult<HistoricRecordPermissionsChangeResponse> apiResult, Continuation<? super Unit> continuation) {
+                public final Object emit(ApiResult<HistoricRecordPermissionsChangeResponse> apiResult, Continuation continuation) {
                     SingleLiveEvent singleLiveEvent;
                     SingleLiveEvent singleLiveEvent2;
                     SingleLiveEvent singleLiveEvent3;
@@ -189,7 +189,7 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

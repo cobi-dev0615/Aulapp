@@ -63,13 +63,13 @@ public final class HomeViewModel$getSessionByFilterChip$1 extends SuspendLambda 
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HomeViewModel$getSessionByFilterChip$1(HomeViewModel homeViewModel, Continuation<? super HomeViewModel$getSessionByFilterChip$1> continuation) {
+    public HomeViewModel$getSessionByFilterChip$1(HomeViewModel homeViewModel, Continuation continuation) {
         super(2, continuation);
         this.this$0 = homeViewModel;
     }
@@ -130,7 +130,7 @@ public final class HomeViewModel$getSessionByFilterChip$1 extends SuspendLambda 
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((HomeViewModel$getSessionByFilterChip$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

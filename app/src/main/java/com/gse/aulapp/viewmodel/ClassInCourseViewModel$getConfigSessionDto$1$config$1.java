@@ -19,7 +19,7 @@ public final class ClassInCourseViewModel$getConfigSessionDto$1$config$1 extends
     final /* synthetic */ ClassInCourseViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassInCourseViewModel$getConfigSessionDto$1$config$1(ClassInCourseViewModel classInCourseViewModel, Continuation<? super ClassInCourseViewModel$getConfigSessionDto$1$config$1> continuation) {
+    public ClassInCourseViewModel$getConfigSessionDto$1$config$1(ClassInCourseViewModel classInCourseViewModel, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = classInCourseViewModel;
     }
@@ -49,7 +49,7 @@ public final class ClassInCourseViewModel$getConfigSessionDto$1$config$1 extends
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super ConfigurationSessionDto> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassInCourseViewModel$getConfigSessionDto$1$config$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

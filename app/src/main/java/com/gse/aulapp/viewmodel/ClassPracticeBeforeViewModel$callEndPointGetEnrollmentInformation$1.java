@@ -57,7 +57,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends GetEnrollmentInformationResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends GetEnrollmentInformationResponse>> flowCollector, Throwable th, Continuation continuation) {
             return invoke2((FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>>) flowCollector, th, continuation);
         }
 
@@ -86,7 +86,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>> flowCollector, Throwable th, Continuation continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$activity, this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -94,7 +94,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInformation$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Activity activity, GetEnrollmentInformationRequest getEnrollmentInformationRequest, UserInfoDto userInfoDto, Continuation<? super ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInformation$1> continuation) {
+    public ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInformation$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Activity activity, GetEnrollmentInformationRequest getEnrollmentInformationRequest, UserInfoDto userInfoDto, Continuation continuation) {
         super(2, continuation);
         this.this$0 = classPracticeBeforeViewModel;
         this.$activity = activity;
@@ -270,7 +270,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
                 }
 
                 @Override // kotlin.jvm.functions.Function2
-                public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+                public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
                     return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
                 }
             }
@@ -280,7 +280,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
                 return emit((ApiResult<GetEnrollmentInformationResponse>) obj2, (Continuation<? super Unit>) continuation);
             }
 
-            public final Object emit(ApiResult<GetEnrollmentInformationResponse> apiResult, Continuation<? super Unit> continuation) {
+            public final Object emit(ApiResult<GetEnrollmentInformationResponse> apiResult, Continuation continuation) {
                 Object withContext = BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass1(apiResult, activity, userInfoDto, classPracticeBeforeViewModel, null), continuation);
                 return withContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? withContext : Unit.INSTANCE;
             }
@@ -289,7 +289,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInformation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

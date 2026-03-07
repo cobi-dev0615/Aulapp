@@ -32,7 +32,7 @@ public final class PasswordRecoveryRepository$passwordRecovery$1 extends Suspend
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PasswordRecoveryRepository$passwordRecovery$1(Context context, PasswordRecoveryRequest passwordRecoveryRequest, Continuation<? super PasswordRecoveryRepository$passwordRecovery$1> continuation) {
+    public PasswordRecoveryRepository$passwordRecovery$1(Context context, PasswordRecoveryRequest passwordRecoveryRequest, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = passwordRecoveryRequest;
@@ -46,7 +46,7 @@ public final class PasswordRecoveryRepository$passwordRecovery$1 extends Suspend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends PasswordRecoveryResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends PasswordRecoveryResponse>> flowCollector, Continuation continuation) {
         return invoke2((FlowCollector<? super ApiResult<PasswordRecoveryResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class PasswordRecoveryRepository$passwordRecovery$1 extends Suspend
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<PasswordRecoveryResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<PasswordRecoveryResponse>> flowCollector, Continuation continuation) {
         return ((PasswordRecoveryRepository$passwordRecovery$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

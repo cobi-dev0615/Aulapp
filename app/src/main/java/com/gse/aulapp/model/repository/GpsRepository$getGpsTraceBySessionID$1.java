@@ -16,8 +16,8 @@ public final class GpsRepository$getGpsTraceBySessionID$1 extends ContinuationIm
     final /* synthetic */ GpsRepository this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public GpsRepository$getGpsTraceBySessionID$1(GpsRepository gpsRepository, Continuation<? super GpsRepository$getGpsTraceBySessionID$1> continuation) {
-        super((Continuation<Object>) continuation);
+    public GpsRepository$getGpsTraceBySessionID$1(GpsRepository gpsRepository, Continuation continuation) {
+        super((Continuation) continuation);
         this.this$0 = gpsRepository;
     }
 

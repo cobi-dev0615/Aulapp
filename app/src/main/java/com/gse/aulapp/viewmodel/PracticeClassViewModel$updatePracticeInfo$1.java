@@ -26,7 +26,7 @@ public final class PracticeClassViewModel$updatePracticeInfo$1 extends SuspendLa
     final /* synthetic */ PracticeClassViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PracticeClassViewModel$updatePracticeInfo$1(PracticeClassViewModel practiceClassViewModel, FragmentPracticeClassBinding fragmentPracticeClassBinding, Continuation<? super PracticeClassViewModel$updatePracticeInfo$1> continuation) {
+    public PracticeClassViewModel$updatePracticeInfo$1(PracticeClassViewModel practiceClassViewModel, FragmentPracticeClassBinding fragmentPracticeClassBinding, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = practiceClassViewModel;
         this.$binding = fragmentPracticeClassBinding;
@@ -97,7 +97,7 @@ public final class PracticeClassViewModel$updatePracticeInfo$1 extends SuspendLa
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((PracticeClassViewModel$updatePracticeInfo$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

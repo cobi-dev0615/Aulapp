@@ -70,7 +70,7 @@ public final class ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1 extend
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Fragment fragment, StepProfile stepProfile, FragmentClassPracticeBeforeBinding fragmentClassPracticeBeforeBinding, boolean z, String str, String str2, String str3, String str4, String str5, Activity activity, Continuation<? super ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1> continuation) {
+    public ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Fragment fragment, StepProfile stepProfile, FragmentClassPracticeBeforeBinding fragmentClassPracticeBeforeBinding, boolean z, String str, String str2, String str3, String str4, String str5, Activity activity, Continuation continuation) {
         super(2, continuation);
         this.this$0 = classPracticeBeforeViewModel;
         this.$context = fragment;
@@ -242,7 +242,7 @@ public final class ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1 extend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -32,7 +32,7 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(Context context, GetEnrollmentInformationRequest getEnrollmentInformationRequest, Continuation<? super GetEnrollmentInformationRepository$getGetEnrollmentInformation$1> continuation) {
+    public GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(Context context, GetEnrollmentInformationRequest getEnrollmentInformationRequest, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = getEnrollmentInformationRequest;
@@ -46,7 +46,7 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends GetEnrollmentInformationResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends GetEnrollmentInformationResponse>> flowCollector, Continuation continuation) {
         return invoke2((FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<GetEnrollmentInformationResponse>> flowCollector, Continuation continuation) {
         return ((GetEnrollmentInformationRepository$getGetEnrollmentInformation$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

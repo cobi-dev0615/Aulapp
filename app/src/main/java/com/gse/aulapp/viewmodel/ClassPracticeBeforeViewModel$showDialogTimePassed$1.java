@@ -105,13 +105,13 @@ public final class ClassPracticeBeforeViewModel$showDialogTimePassed$1 extends S
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassPracticeBeforeViewModel$showDialogTimePassed$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Activity activity, Context context, boolean z, EnumClassType enumClassType, NavController navController, Continuation<? super ClassPracticeBeforeViewModel$showDialogTimePassed$1> continuation) {
+    public ClassPracticeBeforeViewModel$showDialogTimePassed$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Activity activity, Context context, boolean z, EnumClassType enumClassType, NavController navController, Continuation continuation) {
         super(2, continuation);
         this.this$0 = classPracticeBeforeViewModel;
         this.$activity = activity;
@@ -148,7 +148,7 @@ public final class ClassPracticeBeforeViewModel$showDialogTimePassed$1 extends S
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassPracticeBeforeViewModel$showDialogTimePassed$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

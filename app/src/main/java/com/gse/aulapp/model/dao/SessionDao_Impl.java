@@ -637,7 +637,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object deleteSessionById(final List<String> list, Continuation<? super Integer> continuation) {
+    public Object deleteSessionById(final List<String> list, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Integer>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.13
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -669,7 +669,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object deleteSessionCustom(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation<? super Long> continuation) {
+    public Object deleteSessionCustom(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, false, DBUtil.createCancellationSignal(), new Callable<Long>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.16
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -689,7 +689,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object deleteSessionsByDate(final String str, Continuation<? super Integer> continuation) {
+    public Object deleteSessionsByDate(final String str, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Integer>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.10
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -1105,7 +1105,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object getCountSessionIsPending(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation<? super Long> continuation) {
+    public Object getCountSessionIsPending(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, false, DBUtil.createCancellationSignal(), new Callable<Long>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.20
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -1125,7 +1125,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object getEndEntryClassBySessionId(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation<? super Long> continuation) {
+    public Object getEndEntryClassBySessionId(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, false, DBUtil.createCancellationSignal(), new Callable<Long>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.23
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -1164,7 +1164,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object getSessionCustomSync(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation<? super SessionFullSync> continuation) {
+    public Object getSessionCustomSync(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, false, DBUtil.createCancellationSignal(), new Callable<SessionFullSync>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.15
             /* JADX WARN: Can't rename method to resolve collision */
             /* JADX WARN: Removed duplicated region for block: B:106:0x05e4  */
@@ -6174,7 +6174,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object getStartEntryClassBySessionId(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation<? super Long> continuation) {
+    public Object getStartEntryClassBySessionId(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, false, DBUtil.createCancellationSignal(), new Callable<Long>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.22
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -6194,7 +6194,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object saveClassRoom(final ClassRoomEntity classRoomEntity, Continuation<? super Long> continuation) {
+    public Object saveClassRoom(final ClassRoomEntity classRoomEntity, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Long>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.9
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -6212,7 +6212,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object saveLesson(final LessonEntity lessonEntity, Continuation<? super Long> continuation) {
+    public Object saveLesson(final LessonEntity lessonEntity, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Long>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.8
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -6230,7 +6230,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object saveSession(final SessionEntity sessionEntity, Continuation<? super Long> continuation) {
+    public Object saveSession(final SessionEntity sessionEntity, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Long>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.6
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -6248,7 +6248,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object saveVehicle(final VehicleEntity vehicleEntity, Continuation<? super Long> continuation) {
+    public Object saveVehicle(final VehicleEntity vehicleEntity, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Long>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.7
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -6266,7 +6266,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object updateDateStartEntry(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation<? super String> continuation) {
+    public Object updateDateStartEntry(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, false, DBUtil.createCancellationSignal(), new Callable<String>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.24
             @Override // java.util.concurrent.Callable
             public String call() {
@@ -6285,7 +6285,7 @@ public final class SessionDao_Impl implements SessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.SessionDao
-    public Object updateSessionBySessionId(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation<? super Long> continuation) {
+    public Object updateSessionBySessionId(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, false, DBUtil.createCancellationSignal(), new Callable<Long>() { // from class: com.gse.aulapp.model.dao.SessionDao_Impl.19
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable

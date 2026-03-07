@@ -40,7 +40,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
     final /* synthetic */ PrincipalActivityViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PrincipalActivityViewModel$subscribeNetwork$1(PrincipalActivityViewModel principalActivityViewModel, Activity activity, Continuation<? super PrincipalActivityViewModel$subscribeNetwork$1> continuation) {
+    public PrincipalActivityViewModel$subscribeNetwork$1(PrincipalActivityViewModel principalActivityViewModel, Activity activity, Continuation continuation) {
         super(2, continuation);
         this.this$0 = principalActivityViewModel;
         this.$context = activity;
@@ -78,7 +78,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                 public static final class C00131 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                     int label;
 
-                    public C00131(Continuation<? super C00131> continuation) {
+                    public C00131(Continuation continuation) {
                         super(2, continuation);
                     }
 
@@ -99,7 +99,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                     }
 
                     @Override // kotlin.jvm.functions.Function2
-                    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+                    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
                         return ((C00131) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
                     }
                 }
@@ -119,7 +119,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                         int label;
 
                         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-                        public C00141(Activity activity, Continuation<? super C00141> continuation) {
+                        public C00141(Activity activity, Continuation continuation) {
                             super(2, continuation);
                             this.$context = activity;
                         }
@@ -141,7 +141,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                         }
 
                         @Override // kotlin.jvm.functions.Function2
-                        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+                        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
                             return ((C00141) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
                         }
                     }
@@ -185,7 +185,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                     }
 
                     @Override // kotlin.jvm.functions.Function2
-                    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+                    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
                         return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
                     }
                 }
@@ -222,7 +222,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                     return emit((ConnectivityObserver.Status) obj2, (Continuation<? super Unit>) continuation);
                 }
 
-                public final Object emit(ConnectivityObserver.Status status, Continuation<? super Unit> continuation) {
+                public final Object emit(ConnectivityObserver.Status status, Continuation continuation) {
                     String unused;
                     String unused2;
                     unused = PrincipalActivityViewModel.this.TAG;
@@ -262,7 +262,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((PrincipalActivityViewModel$subscribeNetwork$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

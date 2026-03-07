@@ -49,7 +49,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends RefreshTokenResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends RefreshTokenResponse>> flowCollector, Throwable th, Continuation continuation) {
             return invoke2((FlowCollector<? super ApiResult<RefreshTokenResponse>>) flowCollector, th, continuation);
         }
 
@@ -67,7 +67,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<RefreshTokenResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<RefreshTokenResponse>> flowCollector, Throwable th, Continuation continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$context, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -75,7 +75,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public RefreshTokenUtil$Companion$refreshToken$1(Ref.ObjectRef<RefreshTokenRequest> objectRef, Context context, Continuation<? super RefreshTokenUtil$Companion$refreshToken$1> continuation) {
+    public RefreshTokenUtil$Companion$refreshToken$1(Ref.ObjectRef<RefreshTokenRequest> objectRef, Context context, Continuation continuation) {
         super(2, continuation);
         this.$refreshTokenRequest = objectRef;
         this.$context = context;
@@ -106,7 +106,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
                     }
 
                     /* JADX WARN: Multi-variable type inference failed */
-                    public final Object emit(ApiResult<RefreshTokenResponse> apiResult, Continuation<? super Unit> continuation) {
+                    public final Object emit(ApiResult<RefreshTokenResponse> apiResult, Continuation continuation) {
                         RefreshToken data;
                         if (apiResult instanceof ApiResult.Failure) {
                             ApiResult.Failure failure = (ApiResult.Failure) apiResult;
@@ -156,7 +156,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((RefreshTokenUtil$Companion$refreshToken$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

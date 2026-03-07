@@ -49,7 +49,7 @@ public final class PrincipalActivityViewModel$handlerStatusChangeGPS$1 extends S
             int label;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public C00111(Activity activity, Continuation<? super C00111> continuation) {
+            public C00111(Activity activity, Continuation continuation) {
                 super(2, continuation);
                 this.$context = activity;
             }
@@ -71,7 +71,7 @@ public final class PrincipalActivityViewModel$handlerStatusChangeGPS$1 extends S
             }
 
             @Override // kotlin.jvm.functions.Function2
-            public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+            public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
                 return ((C00111) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
             }
         }
@@ -118,13 +118,13 @@ public final class PrincipalActivityViewModel$handlerStatusChangeGPS$1 extends S
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PrincipalActivityViewModel$handlerStatusChangeGPS$1(PrincipalActivityViewModel principalActivityViewModel, boolean z, Activity activity, Continuation<? super PrincipalActivityViewModel$handlerStatusChangeGPS$1> continuation) {
+    public PrincipalActivityViewModel$handlerStatusChangeGPS$1(PrincipalActivityViewModel principalActivityViewModel, boolean z, Activity activity, Continuation continuation) {
         super(2, continuation);
         this.this$0 = principalActivityViewModel;
         this.$isEnabled = z;
@@ -164,7 +164,7 @@ public final class PrincipalActivityViewModel$handlerStatusChangeGPS$1 extends S
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((PrincipalActivityViewModel$handlerStatusChangeGPS$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

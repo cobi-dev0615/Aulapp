@@ -82,7 +82,7 @@ public final class HistoricRecordPermissionsChangeDao_Impl implements HistoricRe
     }
 
     @Override // com.gse.aulapp.model.dao.HistoricRecordPermissionsChangeDao
-    public Object deleteHistoricCustom(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation<? super Long> continuation) {
+    public Object deleteHistoricCustom(final SimpleSQLiteQuery simpleSQLiteQuery, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, false, DBUtil.createCancellationSignal(), new Callable<Long>() { // from class: com.gse.aulapp.model.dao.HistoricRecordPermissionsChangeDao_Impl.4
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
@@ -121,7 +121,7 @@ public final class HistoricRecordPermissionsChangeDao_Impl implements HistoricRe
     }
 
     @Override // com.gse.aulapp.model.dao.HistoricRecordPermissionsChangeDao
-    public Object saveHistoric(final HistoricRecordPermissionsChangeEntity historicRecordPermissionsChangeEntity, Continuation<? super Long> continuation) {
+    public Object saveHistoric(final HistoricRecordPermissionsChangeEntity historicRecordPermissionsChangeEntity, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Long>() { // from class: com.gse.aulapp.model.dao.HistoricRecordPermissionsChangeDao_Impl.2
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable

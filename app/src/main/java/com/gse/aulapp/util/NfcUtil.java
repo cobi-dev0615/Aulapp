@@ -133,7 +133,7 @@ public abstract class NfcUtil {
             }
         }
 
-        public final Object handlerResponseTag(Context context, Tag tag, Continuation<? super TagDto> continuation) {
+        public final Object handlerResponseTag(Context context, Tag tag, Continuation continuation) {
             Object runBlocking$default;
             runBlocking$default = BuildersKt.runBlocking((CoroutineContext) null, new NfcUtil$Companion$handlerResponseTag$2(tag, context, null));
             return runBlocking$default;

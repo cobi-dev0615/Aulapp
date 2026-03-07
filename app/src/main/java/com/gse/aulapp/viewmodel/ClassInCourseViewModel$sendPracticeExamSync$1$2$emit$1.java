@@ -24,8 +24,8 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1$2$emit$1<T> ext
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
-    public ClassInCourseViewModel$sendPracticeExamSync$1$2$emit$1(ClassInCourseViewModel$sendPracticeExamSync$1.AnonymousClass2<? super T> anonymousClass2, Continuation<? super ClassInCourseViewModel$sendPracticeExamSync$1$2$emit$1> continuation) {
-        super((Continuation<Object>) continuation);
+    public ClassInCourseViewModel$sendPracticeExamSync$1$2$emit$1(ClassInCourseViewModel$sendPracticeExamSync$1.AnonymousClass2<? super T> anonymousClass2, Continuation continuation) {
+        super((Continuation) continuation);
         this.this$0 = anonymousClass2;
     }
 

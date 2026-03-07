@@ -22,7 +22,7 @@ public final class PracticeClassViewModel$updateIsPendingState$1 extends Suspend
     final /* synthetic */ PracticeClassViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PracticeClassViewModel$updateIsPendingState$1(PracticeClassViewModel practiceClassViewModel, String str, String str2, Continuation<? super PracticeClassViewModel$updateIsPendingState$1> continuation) {
+    public PracticeClassViewModel$updateIsPendingState$1(PracticeClassViewModel practiceClassViewModel, String str, String str2, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = practiceClassViewModel;
         this.$isPending = str;
@@ -64,7 +64,7 @@ public final class PracticeClassViewModel$updateIsPendingState$1 extends Suspend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((PracticeClassViewModel$updateIsPendingState$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

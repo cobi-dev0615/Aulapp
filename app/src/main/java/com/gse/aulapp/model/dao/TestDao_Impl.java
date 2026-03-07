@@ -57,7 +57,7 @@ public final class TestDao_Impl implements TestDao {
     }
 
     @Override // com.gse.aulapp.model.dao.TestDao
-    public Object getTestBySessionID(String str, Continuation<? super TestEntity> continuation) {
+    public Object getTestBySessionID(String str, Continuation continuation) {
         final RoomSQLiteQuery acquire = RoomSQLiteQuery.acquire("SELECT * FROM test WHERE sessionID = ?", 1);
         if (str == null) {
             acquire.bindNull(1);
@@ -91,7 +91,7 @@ public final class TestDao_Impl implements TestDao {
     }
 
     @Override // com.gse.aulapp.model.dao.TestDao
-    public Object insert(final TestEntity testEntity, Continuation<? super Unit> continuation) {
+    public Object insert(final TestEntity testEntity, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Unit>() { // from class: com.gse.aulapp.model.dao.TestDao_Impl.3
             @Override // java.util.concurrent.Callable
             public Unit call() {

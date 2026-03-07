@@ -15,7 +15,7 @@ public final class SyncDataWorker$doWork$1 extends ContinuationImpl {
     final /* synthetic */ SyncDataWorker this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SyncDataWorker$doWork$1(SyncDataWorker syncDataWorker, Continuation<? super SyncDataWorker$doWork$1> continuation) {
+    public SyncDataWorker$doWork$1(SyncDataWorker syncDataWorker, Continuation continuation) {
         super(continuation);
         this.this$0 = syncDataWorker;
     }

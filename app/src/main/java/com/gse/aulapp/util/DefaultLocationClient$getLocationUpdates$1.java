@@ -36,7 +36,7 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
     final /* synthetic */ DefaultLocationClient this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public DefaultLocationClient$getLocationUpdates$1(DefaultLocationClient defaultLocationClient, long j, Continuation<? super DefaultLocationClient$getLocationUpdates$1> continuation) {
+    public DefaultLocationClient$getLocationUpdates$1(DefaultLocationClient defaultLocationClient, long j, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = defaultLocationClient;
         this.$interval = j;
@@ -148,7 +148,7 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(ProducerScope<? super Location> producerScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(ProducerScope<? super Location> producerScope, Continuation continuation) {
         return ((DefaultLocationClient$getLocationUpdates$1) (Object) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -33,7 +33,7 @@ public final class ClassPracticeBeforeViewModel$validateContinueButton$1 extends
     final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassPracticeBeforeViewModel$validateContinueButton$1(List<StepProcessSessionEntity> list, FragmentClassPracticeBeforeBinding fragmentClassPracticeBeforeBinding, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation<? super ClassPracticeBeforeViewModel$validateContinueButton$1> continuation) {
+    public ClassPracticeBeforeViewModel$validateContinueButton$1(List<StepProcessSessionEntity> list, FragmentClassPracticeBeforeBinding fragmentClassPracticeBeforeBinding, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation continuation) {
         super(2, continuation);
         this.$listStep = list;
         this.$binding = fragmentClassPracticeBeforeBinding;
@@ -91,7 +91,7 @@ public final class ClassPracticeBeforeViewModel$validateContinueButton$1 extends
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassPracticeBeforeViewModel$validateContinueButton$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

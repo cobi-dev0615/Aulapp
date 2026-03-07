@@ -17,8 +17,8 @@ public final class ClassInCourseRepository$saveQuestion$1 extends ContinuationIm
     final /* synthetic */ ClassInCourseRepository this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassInCourseRepository$saveQuestion$1(ClassInCourseRepository classInCourseRepository, Continuation<? super ClassInCourseRepository$saveQuestion$1> continuation) {
-        super((Continuation<Object>) continuation);
+    public ClassInCourseRepository$saveQuestion$1(ClassInCourseRepository classInCourseRepository, Continuation continuation) {
+        super((Continuation) continuation);
         this.this$0 = classInCourseRepository;
     }
 

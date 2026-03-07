@@ -30,7 +30,7 @@ public final class SessionRepository$sendSessionSyncPracticalRequest2$1 extends 
     final /* synthetic */ SessionRepository this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SessionRepository$sendSessionSyncPracticalRequest2$1(Context context, SessionSyncPracticalRequest sessionSyncPracticalRequest, SessionRepository sessionRepository, Continuation<? super SessionRepository$sendSessionSyncPracticalRequest2$1> continuation) {
+    public SessionRepository$sendSessionSyncPracticalRequest2$1(Context context, SessionSyncPracticalRequest sessionSyncPracticalRequest, SessionRepository sessionRepository, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = sessionSyncPracticalRequest;
@@ -45,7 +45,7 @@ public final class SessionRepository$sendSessionSyncPracticalRequest2$1 extends 
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionSyncPracticalResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionSyncPracticalResponse>> flowCollector, Continuation continuation) {
         return invoke2((FlowCollector<? super ApiResult<SessionSyncPracticalResponse>>) flowCollector, continuation);
     }
 
@@ -134,7 +134,7 @@ public final class SessionRepository$sendSessionSyncPracticalRequest2$1 extends 
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<SessionSyncPracticalResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<SessionSyncPracticalResponse>> flowCollector, Continuation continuation) {
         return ((SessionRepository$sendSessionSyncPracticalRequest2$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

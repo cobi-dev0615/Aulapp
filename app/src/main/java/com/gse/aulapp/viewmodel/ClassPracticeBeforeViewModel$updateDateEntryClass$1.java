@@ -24,7 +24,7 @@ public final class ClassPracticeBeforeViewModel$updateDateEntryClass$1 extends S
     final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassPracticeBeforeViewModel$updateDateEntryClass$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, String str, Continuation<? super ClassPracticeBeforeViewModel$updateDateEntryClass$1> continuation) {
+    public ClassPracticeBeforeViewModel$updateDateEntryClass$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, String str, Continuation continuation) {
         super(2, continuation);
         this.this$0 = classPracticeBeforeViewModel;
         this.$sessionID = str;
@@ -91,7 +91,7 @@ public final class ClassPracticeBeforeViewModel$updateDateEntryClass$1 extends S
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassPracticeBeforeViewModel$updateDateEntryClass$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

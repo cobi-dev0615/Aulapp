@@ -16,7 +16,7 @@ public final class SaveDbUtil$Companion$saveGpsTracker$1 extends ContinuationImp
     final /* synthetic */ SaveDbUtil.Companion this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SaveDbUtil$Companion$saveGpsTracker$1(SaveDbUtil.Companion companion, Continuation<? super SaveDbUtil$Companion$saveGpsTracker$1> continuation) {
+    public SaveDbUtil$Companion$saveGpsTracker$1(SaveDbUtil.Companion companion, Continuation continuation) {
         super(continuation);
         this.this$0 = companion;
     }

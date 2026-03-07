@@ -271,7 +271,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object getConfigurationSession(Continuation<? super ConfigurationSessionDto> continuation) {
+    public final Object getConfigurationSession(Continuation continuation) {
         return ConfigurationUtil.INSTANCE.getConfigurationSessionByType(EnumTypeConfiguration.CLASS_PRACTICAL_CONFIG, continuation);
     }
 

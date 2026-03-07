@@ -67,7 +67,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionInstructorResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionInstructorResponse>> flowCollector, Throwable th, Continuation continuation) {
             return invoke2((FlowCollector<? super ApiResult<SessionInstructorResponse>>) flowCollector, th, continuation);
         }
 
@@ -96,7 +96,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<SessionInstructorResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<SessionInstructorResponse>> flowCollector, Throwable th, Continuation continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$context, this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -104,7 +104,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HomeViewModel$getSessionFromApiAndSave$1(HomeViewModel homeViewModel, Context context, SessionInstructorRequest sessionInstructorRequest, boolean z, String str, NavController navController, ClassDateRecyclerAdapter classDateRecyclerAdapter, Activity activity, Continuation<? super HomeViewModel$getSessionFromApiAndSave$1> continuation) {
+    public HomeViewModel$getSessionFromApiAndSave$1(HomeViewModel homeViewModel, Context context, SessionInstructorRequest sessionInstructorRequest, boolean z, String str, NavController navController, ClassDateRecyclerAdapter classDateRecyclerAdapter, Activity activity, Continuation continuation) {
         super(2, continuation);
         this.this$0 = homeViewModel;
         this.$context = context;
@@ -167,7 +167,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((HomeViewModel$getSessionFromApiAndSave$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
@@ -231,7 +231,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public final Object emit(ApiResult<SessionInstructorResponse> apiResult, Continuation<? super Unit> continuation) {
+        public final Object emit(ApiResult<SessionInstructorResponse> apiResult, Continuation continuation) {
             HomeViewModel$getSessionFromApiAndSave$1$2$emit$1 homeViewModel$getSessionFromApiAndSave$1$2$emit$1;
             MutableSharedFlow mutableSharedFlow;
             MutableSharedFlow mutableSharedFlow2;

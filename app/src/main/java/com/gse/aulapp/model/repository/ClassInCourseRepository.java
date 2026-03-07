@@ -42,7 +42,7 @@ public final class ClassInCourseRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object deleteAllQuestionBySessionID(String str, Continuation<? super Unit> continuation) {
+    public final Object deleteAllQuestionBySessionID(String str, Continuation continuation) {
         ClassInCourseRepository$deleteAllQuestionBySessionID$1 classInCourseRepository$deleteAllQuestionBySessionID$1;
         int i;
         ClassInCourseRepository classInCourseRepository;
@@ -107,7 +107,7 @@ public final class ClassInCourseRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object saveQuestion(List<QuestionEntity> list, Continuation<? super Unit> continuation) {
+    public final Object saveQuestion(List<QuestionEntity> list, Continuation continuation) {
         ClassInCourseRepository$saveQuestion$1 classInCourseRepository$saveQuestion$1;
         int i;
         Iterator it = null;
@@ -156,12 +156,12 @@ public final class ClassInCourseRepository {
         return Unit.INSTANCE;
     }
 
-    public final Object saveResolvedQuestion(String str, String str2, String str3, Continuation<? super Unit> continuation) {
+    public final Object saveResolvedQuestion(String str, String str2, String str3, Continuation continuation) {
         Object updateQuestionApproved = this.questionDao.updateQuestionApproved(str2, str, str3, continuation);
         return updateQuestionApproved == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? updateQuestionApproved : Unit.INSTANCE;
     }
 
-    public final Object saveTest(String str, String str2, Continuation<? super Unit> continuation) {
+    public final Object saveTest(String str, String str2, Continuation continuation) {
         Object insert = this.testDao.insert(new TestEntity(str, str2), continuation);
         return insert == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? insert : Unit.INSTANCE;
     }

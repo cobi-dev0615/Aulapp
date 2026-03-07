@@ -54,7 +54,7 @@ public final class ClassPracticeBeforeViewModel$changeStatus$1 extends SuspendLa
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassPracticeBeforeViewModel$changeStatus$1(EnumIdStepperMenu enumIdStepperMenu, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, boolean z, Activity activity, FragmentClassPracticeBeforeBinding fragmentClassPracticeBeforeBinding, Continuation<? super ClassPracticeBeforeViewModel$changeStatus$1> continuation) {
+    public ClassPracticeBeforeViewModel$changeStatus$1(EnumIdStepperMenu enumIdStepperMenu, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, boolean z, Activity activity, FragmentClassPracticeBeforeBinding fragmentClassPracticeBeforeBinding, Continuation continuation) {
         super(2, continuation);
         this.$enumIdStepperMenu = enumIdStepperMenu;
         this.this$0 = classPracticeBeforeViewModel;
@@ -134,7 +134,7 @@ public final class ClassPracticeBeforeViewModel$changeStatus$1 extends SuspendLa
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassPracticeBeforeViewModel$changeStatus$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

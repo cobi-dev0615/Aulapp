@@ -32,7 +32,7 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public LoginRepository$login$1(Context context, LoginRequest loginRequest, Continuation<? super LoginRepository$login$1> continuation) {
+    public LoginRepository$login$1(Context context, LoginRequest loginRequest, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$request = loginRequest;
@@ -46,7 +46,7 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends LoginResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends LoginResponse>> flowCollector, Continuation continuation) {
         return invoke2((FlowCollector<? super ApiResult<LoginResponse>>) flowCollector, continuation);
     }
 
@@ -146,7 +146,7 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<LoginResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<LoginResponse>> flowCollector, Continuation continuation) {
         return ((LoginRepository$login$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -25,7 +25,7 @@ public final class ClassViewModel$validateAndActiveNfc$1$onSuccess$1 extends Sus
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassViewModel$validateAndActiveNfc$1$onSuccess$1(Tag tag, Activity activity, Continuation<? super ClassViewModel$validateAndActiveNfc$1$onSuccess$1> continuation) {
+    public ClassViewModel$validateAndActiveNfc$1$onSuccess$1(Tag tag, Activity activity, Continuation continuation) {
         super(2, continuation);
         this.$tag = tag;
         this.$activity = activity;
@@ -68,7 +68,7 @@ public final class ClassViewModel$validateAndActiveNfc$1$onSuccess$1 extends Sus
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassViewModel$validateAndActiveNfc$1$onSuccess$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

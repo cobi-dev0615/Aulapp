@@ -133,13 +133,13 @@ public final class HomeViewModel$validateAllowNavigate$1$1 extends SuspendLambda
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HomeViewModel$validateAllowNavigate$1$1(SessionDto sessionDto, ConfigurationSessionDto configurationSessionDto, Date date, Date date2, Activity activity, Date date3, boolean z, boolean z2, HomeViewModel homeViewModel, NavController navController, ClassDateRecyclerAdapter classDateRecyclerAdapter, Continuation<? super HomeViewModel$validateAllowNavigate$1$1> continuation) {
+    public HomeViewModel$validateAllowNavigate$1$1(SessionDto sessionDto, ConfigurationSessionDto configurationSessionDto, Date date, Date date2, Activity activity, Date date3, boolean z, boolean z2, HomeViewModel homeViewModel, NavController navController, ClassDateRecyclerAdapter classDateRecyclerAdapter, Continuation continuation) {
         super(2, continuation);
         this.$session = sessionDto;
         this.$configSession = configurationSessionDto;
@@ -181,7 +181,7 @@ public final class HomeViewModel$validateAllowNavigate$1$1 extends SuspendLambda
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((HomeViewModel$validateAllowNavigate$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

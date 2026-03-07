@@ -29,12 +29,12 @@ public final class StepProcessSessionRepository {
         return this.dao.getStepCustom(new SimpleSQLiteQuery("SELECT * FROM stepProcessSession s where s.sessionID = ? and s.isEntry = ?", new Object[]{str, Boxing.boxInt(z ? 1 : 0)}), continuation);
     }
 
-    public final Object removeSessionBySessionID(String str, Continuation<? super Unit> continuation) {
+    public final Object removeSessionBySessionID(String str, Continuation continuation) {
         Object deleteSessionsOfSessionId = this.dao.deleteSessionsOfSessionId(str, continuation);
         return deleteSessionsOfSessionId == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? deleteSessionsOfSessionId : Unit.INSTANCE;
     }
 
-    public final Object saveUpdateStepProcessSession(String str, EnumIdStepperMenu enumIdStepperMenu, EnumStatusStepSession enumStatusStepSession, boolean z, Continuation<? super Unit> continuation) {
+    public final Object saveUpdateStepProcessSession(String str, EnumIdStepperMenu enumIdStepperMenu, EnumStatusStepSession enumStatusStepSession, boolean z, Continuation continuation) {
         Object saveUpdateStep = this.dao.saveUpdateStep(new StepProcessSessionEntity(str, EnumIdStepperMenu.name$default(enumIdStepperMenu, null, 1, null), enumStatusStepSession.name(), z), (Continuation) continuation);
         return saveUpdateStep == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? saveUpdateStep : Unit.INSTANCE;
     }

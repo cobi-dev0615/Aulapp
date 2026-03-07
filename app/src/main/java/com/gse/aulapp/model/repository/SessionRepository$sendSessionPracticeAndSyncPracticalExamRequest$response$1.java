@@ -81,7 +81,7 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalExamRequ
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1(Context context, SessionPracticeExamSyncRequest sessionPracticeExamSyncRequest, Continuation<? super SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1> continuation) {
+    public SessionRepository$sendSessionPracticeAndSyncPracticalExamRequest$response$1(Context context, SessionPracticeExamSyncRequest sessionPracticeExamSyncRequest, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$practiceRequest = sessionPracticeExamSyncRequest;

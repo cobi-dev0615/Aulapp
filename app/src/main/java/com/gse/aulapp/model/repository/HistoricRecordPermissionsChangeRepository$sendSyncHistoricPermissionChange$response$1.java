@@ -81,7 +81,7 @@ public final class HistoricRecordPermissionsChangeRepository$sendSyncHistoricPer
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1(Context context, HistoricRecordPermissionsChangeRequest historicRecordPermissionsChangeRequest, Continuation<? super HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1> continuation) {
+    public HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1(Context context, HistoricRecordPermissionsChangeRequest historicRecordPermissionsChangeRequest, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$context = context;
         this.$historyPermissionChangeRequest = historicRecordPermissionsChangeRequest;

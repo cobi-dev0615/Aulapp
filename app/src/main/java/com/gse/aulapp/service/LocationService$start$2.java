@@ -33,7 +33,7 @@ public final class LocationService$start$2 extends SuspendLambda implements Func
     final /* synthetic */ LocationService this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public LocationService$start$2(LocationService locationService, Ref.ObjectRef<NotificationCompat.Builder> objectRef, NotificationManager notificationManager, Intent intent, int i, int i2, String str, long j, Continuation<? super LocationService$start$2> continuation) {
+    public LocationService$start$2(LocationService locationService, Ref.ObjectRef<NotificationCompat.Builder> objectRef, NotificationManager notificationManager, Intent intent, int i, int i2, String str, long j, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = locationService;
         this.$notification = objectRef;
@@ -79,7 +79,7 @@ public final class LocationService$start$2 extends SuspendLambda implements Func
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(Location location, Continuation<? super Unit> continuation) {
+    public final Object invoke(Location location, Continuation continuation) {
         return ((LocationService$start$2) (Object) create(location, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 

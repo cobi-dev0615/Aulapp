@@ -21,7 +21,7 @@ public final class WebviewViewModel$resetState$1 extends SuspendLambda implement
     final /* synthetic */ WebviewViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public WebviewViewModel$resetState$1(WebviewViewModel webviewViewModel, Continuation<? super WebviewViewModel$resetState$1> continuation) {
+    public WebviewViewModel$resetState$1(WebviewViewModel webviewViewModel, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = webviewViewModel;
     }
@@ -54,7 +54,7 @@ public final class WebviewViewModel$resetState$1 extends SuspendLambda implement
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((WebviewViewModel$resetState$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

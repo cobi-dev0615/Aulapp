@@ -36,7 +36,7 @@ public final class GpsRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object getAverageSpeedBySessionID(String str, Continuation<? super Double> continuation) {
+    public final Object getAverageSpeedBySessionID(String str, Continuation continuation) {
         GpsRepository$getAverageSpeedBySessionID$1 gpsRepository$getAverageSpeedBySessionID$1;
         int i;
         SimpleSQLiteQuery simpleSQLiteQuery;
@@ -160,7 +160,7 @@ public final class GpsRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object getMaxSpeedBySessionID(String str, Continuation<? super Double> continuation) {
+    public final Object getMaxSpeedBySessionID(String str, Continuation continuation) {
         GpsRepository$getMaxSpeedBySessionID$1 gpsRepository$getMaxSpeedBySessionID$1;
         int i;
         SimpleSQLiteQuery simpleSQLiteQuery;
@@ -227,7 +227,7 @@ public final class GpsRepository {
         return null;
     }
 
-    public final Object saveGpsTrace(LocationDto locationDto, Continuation<? super Long> continuation) {
+    public final Object saveGpsTrace(LocationDto locationDto, Continuation continuation) {
         GpsTraceEntity locationDtoToGpsTraceEntity = LocationConverter.INSTANCE.locationDtoToGpsTraceEntity(locationDto);
         locationDtoToGpsTraceEntity.setSpeed(locationDto.getSpeed() * 3.6d);
         return this.gpsDao.saveGpsTrace(locationDtoToGpsTraceEntity, continuation);

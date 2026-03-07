@@ -19,8 +19,8 @@ public final class DataClassUtil$Companion$updateClassValues$1 extends Continuat
     final /* synthetic */ DataClassUtil.Companion this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public DataClassUtil$Companion$updateClassValues$1(DataClassUtil.Companion companion, Continuation<? super DataClassUtil$Companion$updateClassValues$1> continuation) {
-        super((Continuation<Object>) continuation);
+    public DataClassUtil$Companion$updateClassValues$1(DataClassUtil.Companion companion, Continuation continuation) {
+        super((Continuation) continuation);
         this.this$0 = companion;
     }
 

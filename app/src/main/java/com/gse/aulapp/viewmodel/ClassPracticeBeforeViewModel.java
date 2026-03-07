@@ -204,7 +204,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object getConfigurationSession(EnumTypeConfiguration enumTypeConfiguration, Continuation<? super ConfigurationSessionDto> continuation) {
+    public final Object getConfigurationSession(EnumTypeConfiguration enumTypeConfiguration, Continuation continuation) {
         return ConfigurationUtil.INSTANCE.getConfigurationSessionByType(enumTypeConfiguration, continuation);
     }
 

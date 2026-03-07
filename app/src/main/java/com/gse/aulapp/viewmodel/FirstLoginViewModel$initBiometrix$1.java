@@ -53,7 +53,7 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends BiometrixUrlActionResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends BiometrixUrlActionResponse>> flowCollector, Throwable th, Continuation continuation) {
             return invoke2((FlowCollector<? super ApiResult<BiometrixUrlActionResponse>>) flowCollector, th, continuation);
         }
 
@@ -82,7 +82,7 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<BiometrixUrlActionResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<BiometrixUrlActionResponse>> flowCollector, Throwable th, Continuation continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$activity, this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -90,7 +90,7 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public FirstLoginViewModel$initBiometrix$1(FirstLoginViewModel firstLoginViewModel, Activity activity, BiometrixRequest biometrixRequest, Continuation<? super FirstLoginViewModel$initBiometrix$1> continuation) {
+    public FirstLoginViewModel$initBiometrix$1(FirstLoginViewModel firstLoginViewModel, Activity activity, BiometrixRequest biometrixRequest, Continuation continuation) {
         super(2, continuation);
         this.this$0 = firstLoginViewModel;
         this.$activity = activity;
@@ -149,7 +149,7 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
                 return emit((ApiResult<BiometrixUrlActionResponse>) obj2, (Continuation<? super Unit>) continuation);
             }
 
-            public final Object emit(ApiResult<BiometrixUrlActionResponse> apiResult, Continuation<? super Unit> continuation) {
+            public final Object emit(ApiResult<BiometrixUrlActionResponse> apiResult, Continuation continuation) {
                 MutableSharedFlow mutableSharedFlow2;
                 String str;
                 MutableSharedFlow mutableSharedFlow3;
@@ -207,7 +207,7 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((FirstLoginViewModel$initBiometrix$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

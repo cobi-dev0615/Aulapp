@@ -28,7 +28,7 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
     final /* synthetic */ NetworkConnectivityObserver this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public NetworkConnectivityObserver$observe$1(NetworkConnectivityObserver networkConnectivityObserver, Continuation<? super NetworkConnectivityObserver$observe$1> continuation) {
+    public NetworkConnectivityObserver$observe$1(NetworkConnectivityObserver networkConnectivityObserver, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = networkConnectivityObserver;
     }
@@ -105,7 +105,7 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(ProducerScope<? super ConnectivityObserver.Status> producerScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(ProducerScope<? super ConnectivityObserver.Status> producerScope, Continuation continuation) {
         return ((NetworkConnectivityObserver$observe$1) (Object) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

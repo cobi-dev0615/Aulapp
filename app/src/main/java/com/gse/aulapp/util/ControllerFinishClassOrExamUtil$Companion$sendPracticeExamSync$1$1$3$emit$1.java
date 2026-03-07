@@ -24,8 +24,8 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
-    public ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1(ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1.AnonymousClass1.AnonymousClass3<? super T> anonymousClass3, Continuation<? super ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1> continuation) {
-        super((Continuation<Object>) continuation);
+    public ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1$1$3$emit$1(ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1.AnonymousClass1.AnonymousClass3<? super T> anonymousClass3, Continuation continuation) {
+        super((Continuation) continuation);
         this.this$0 = (ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1.AnonymousClass1.AnonymousClass3) anonymousClass3;
     }
 

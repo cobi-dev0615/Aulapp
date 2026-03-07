@@ -17,8 +17,8 @@ public final class ConfigurationUtil$Companion$getConfigurationSessionByType$1 e
     final /* synthetic */ ConfigurationUtil.Companion this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ConfigurationUtil$Companion$getConfigurationSessionByType$1(ConfigurationUtil.Companion companion, Continuation<? super ConfigurationUtil$Companion$getConfigurationSessionByType$1> continuation) {
-        super((Continuation<Object>) continuation);
+    public ConfigurationUtil$Companion$getConfigurationSessionByType$1(ConfigurationUtil.Companion companion, Continuation continuation) {
+        super((Continuation) continuation);
         this.this$0 = companion;
     }
 

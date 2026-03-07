@@ -29,7 +29,7 @@ public final class DialogNormalUtil$updateDialogExamSpeedInfo$1 extends SuspendL
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public DialogNormalUtil$updateDialogExamSpeedInfo$1(ClassInCourseViewModel classInCourseViewModel, Continuation<? super DialogNormalUtil$updateDialogExamSpeedInfo$1> continuation) {
+    public DialogNormalUtil$updateDialogExamSpeedInfo$1(ClassInCourseViewModel classInCourseViewModel, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$viewModel = classInCourseViewModel;
     }
@@ -132,7 +132,7 @@ public final class DialogNormalUtil$updateDialogExamSpeedInfo$1 extends SuspendL
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((DialogNormalUtil$updateDialogExamSpeedInfo$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

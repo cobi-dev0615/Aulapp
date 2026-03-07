@@ -18,7 +18,7 @@ public final class PracticeClassRepository {
         this.gpsDao = gpsDao;
     }
 
-    public final Object deleteAllQuestionBySessionID(String str, Continuation<? super Unit> continuation) {
+    public final Object deleteAllQuestionBySessionID(String str, Continuation continuation) {
         Object deleteGpsTraceBySessionID = this.gpsDao.deleteGpsTraceBySessionID(str, continuation);
         return deleteGpsTraceBySessionID == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? deleteGpsTraceBySessionID : Unit.INSTANCE;
     }

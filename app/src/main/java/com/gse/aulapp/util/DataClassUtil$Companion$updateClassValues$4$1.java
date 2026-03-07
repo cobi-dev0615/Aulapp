@@ -30,7 +30,7 @@ public final class DataClassUtil$Companion$updateClassValues$4$1 extends Suspend
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public DataClassUtil$Companion$updateClassValues$4$1(FragmentPracticeClassBinding fragmentPracticeClassBinding, RealtimeClassDataDto realtimeClassDataDto, String str, String str2, String str3, Continuation<? super DataClassUtil$Companion$updateClassValues$4$1> continuation) {
+    public DataClassUtil$Companion$updateClassValues$4$1(FragmentPracticeClassBinding fragmentPracticeClassBinding, RealtimeClassDataDto realtimeClassDataDto, String str, String str2, String str3, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$binding = fragmentPracticeClassBinding;
         this.$it = realtimeClassDataDto;
@@ -72,7 +72,7 @@ public final class DataClassUtil$Companion$updateClassValues$4$1 extends Suspend
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((DataClassUtil$Companion$updateClassValues$4$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

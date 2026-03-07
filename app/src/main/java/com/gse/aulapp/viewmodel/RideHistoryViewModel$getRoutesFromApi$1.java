@@ -56,7 +56,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
         }
 
         @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionRoutesResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends SessionRoutesResponse>> flowCollector, Throwable th, Continuation continuation) {
             return invoke2((FlowCollector<? super ApiResult<SessionRoutesResponse>>) flowCollector, th, continuation);
         }
 
@@ -74,7 +74,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */
-        public final Object invoke2(FlowCollector<? super ApiResult<SessionRoutesResponse>> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+        public final Object invoke2(FlowCollector<? super ApiResult<SessionRoutesResponse>> flowCollector, Throwable th, Continuation continuation) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$context, this.this$0, continuation);
             anonymousClass1.L$0 = th;
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
@@ -82,7 +82,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public RideHistoryViewModel$getRoutesFromApi$1(Context context, SessionInstructorRequest sessionInstructorRequest, RideHistoryViewModel rideHistoryViewModel, Continuation<? super RideHistoryViewModel$getRoutesFromApi$1> continuation) {
+    public RideHistoryViewModel$getRoutesFromApi$1(Context context, SessionInstructorRequest sessionInstructorRequest, RideHistoryViewModel rideHistoryViewModel, Continuation continuation) {
         super(2, continuation);
         this.$context = context;
         this.$sessionInstructorRequest = sessionInstructorRequest;
@@ -112,7 +112,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
                     return emit((ApiResult<SessionRoutesResponse>) obj2, (Continuation<? super Unit>) continuation);
                 }
 
-                public final Object emit(ApiResult<SessionRoutesResponse> apiResult, Continuation<? super Unit> continuation) {
+                public final Object emit(ApiResult<SessionRoutesResponse> apiResult, Continuation continuation) {
                     List<SessionRoutesDataResponse> emptyList;
                     SessionRoutesResponse.Result result;
                     SessionRoutesResponse.Result result2;
@@ -179,7 +179,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((RideHistoryViewModel$getRoutesFromApi$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

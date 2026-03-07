@@ -97,7 +97,7 @@ public final class QuestionDao_Impl implements QuestionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.QuestionDao
-    public Object deleteAllQuestionOfTestID(final String str, Continuation<? super Unit> continuation) {
+    public Object deleteAllQuestionOfTestID(final String str, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Unit>() { // from class: com.gse.aulapp.model.dao.QuestionDao_Impl.6
             @Override // java.util.concurrent.Callable
             public Unit call() {
@@ -183,7 +183,7 @@ public final class QuestionDao_Impl implements QuestionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.QuestionDao
-    public Object insert(final QuestionEntity questionEntity, Continuation<? super Unit> continuation) {
+    public Object insert(final QuestionEntity questionEntity, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Unit>() { // from class: com.gse.aulapp.model.dao.QuestionDao_Impl.4
             @Override // java.util.concurrent.Callable
             public Unit call() {
@@ -200,7 +200,7 @@ public final class QuestionDao_Impl implements QuestionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.QuestionDao
-    public Object updateQuestionApproved(final String str, final String str2, final String str3, Continuation<? super Unit> continuation) {
+    public Object updateQuestionApproved(final String str, final String str2, final String str3, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Unit>() { // from class: com.gse.aulapp.model.dao.QuestionDao_Impl.5
             @Override // java.util.concurrent.Callable
             public Unit call() {

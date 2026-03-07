@@ -26,7 +26,7 @@ public final class ClassPracticeBeforeViewModel$getConfigSessionDto$1 extends Su
     final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassPracticeBeforeViewModel$getConfigSessionDto$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, EnumTypeConfiguration enumTypeConfiguration, Continuation<? super ClassPracticeBeforeViewModel$getConfigSessionDto$1> continuation) {
+    public ClassPracticeBeforeViewModel$getConfigSessionDto$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, EnumTypeConfiguration enumTypeConfiguration, Continuation continuation) {
         super(2, continuation);
         this.this$0 = classPracticeBeforeViewModel;
         this.$type = enumTypeConfiguration;
@@ -63,7 +63,7 @@ public final class ClassPracticeBeforeViewModel$getConfigSessionDto$1 extends Su
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassPracticeBeforeViewModel$getConfigSessionDto$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

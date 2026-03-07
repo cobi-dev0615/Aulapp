@@ -23,7 +23,7 @@ public final class DefaultLocationClient$getLocationUpdates$1$callback$1$onLocat
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
-    public DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2(ProducerScope<? super Location> producerScope, Location location, Continuation<? super DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2> continuation) {
+    public DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2(ProducerScope<? super Location> producerScope, Location location, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$$this$callbackFlow = (ProducerScope) producerScope;
         this.$filteredLocation = location;
@@ -57,7 +57,7 @@ public final class DefaultLocationClient$getLocationUpdates$1$callback$1$onLocat
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

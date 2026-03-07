@@ -32,7 +32,7 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SessionRepository$sendSessionStatusAppointment$1(String str, EnumStatusAppointment enumStatusAppointment, Context context, Continuation<? super SessionRepository$sendSessionStatusAppointment$1> continuation) {
+    public SessionRepository$sendSessionStatusAppointment$1(String str, EnumStatusAppointment enumStatusAppointment, Context context, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.$sessionID = str;
         this.$sessionStatus = enumStatusAppointment;
@@ -47,7 +47,7 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends HistoricRecordPermissionsChangeResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public /* bridge */ /* synthetic */ Object invoke(FlowCollector<? super ApiResult<? extends HistoricRecordPermissionsChangeResponse>> flowCollector, Continuation continuation) {
         return invoke2((FlowCollector<? super ApiResult<HistoricRecordPermissionsChangeResponse>>) flowCollector, continuation);
     }
 
@@ -143,7 +143,7 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
-    public final Object invoke2(FlowCollector<? super ApiResult<HistoricRecordPermissionsChangeResponse>> flowCollector, Continuation<? super Unit> continuation) {
+    public final Object invoke2(FlowCollector<? super ApiResult<HistoricRecordPermissionsChangeResponse>> flowCollector, Continuation continuation) {
         return ((SessionRepository$sendSessionStatusAppointment$1) (Object) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

@@ -40,7 +40,7 @@ public final class HistoricRecordPermissionsChangeRepository {
         this.dao = dao;
     }
 
-    private final Object deleteAllHistoric(int i, Continuation<? super Long> continuation) {
+    private final Object deleteAllHistoric(int i, Continuation continuation) {
         return this.dao.deleteHistoricCustom(new SimpleSQLiteQuery("DELETE FROM historicRecordPermissionsChange WHERE id = ?", new Object[]{Boxing.boxInt(i)}), continuation);
     }
 
@@ -72,7 +72,7 @@ public final class HistoricRecordPermissionsChangeRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object sendSyncHistoricPermissionChange(Context context, HistoricRecordPermissionsChangeRequest historicRecordPermissionsChangeRequest, Integer num, Continuation<? super Unit> continuation) {
+    public final Object sendSyncHistoricPermissionChange(Context context, HistoricRecordPermissionsChangeRequest historicRecordPermissionsChangeRequest, Integer num, Continuation continuation) {
         HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1 historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$1;
         int i;
         Object obj;
@@ -187,7 +187,7 @@ public final class HistoricRecordPermissionsChangeRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object syncHistoricPermissionChangeRequest(Context context, List<HistoricRecordPermissionsChangeEntity> list, Continuation<? super Unit> continuation) {
+    public final Object syncHistoricPermissionChangeRequest(Context context, List<HistoricRecordPermissionsChangeEntity> list, Continuation continuation) {
         HistoricRecordPermissionsChangeRepository$syncHistoricPermissionChangeRequest$1 historicRecordPermissionsChangeRepository$syncHistoricPermissionChangeRequest$1;
         HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository;
         int i;
@@ -268,7 +268,7 @@ public final class HistoricRecordPermissionsChangeRepository {
         return null;
     }
 
-    public final Object saveHistoricPermissionsChange(String str, String str2, boolean z, EnumPermissionsApp enumPermissionsApp, Continuation<? super Unit> continuation) {
+    public final Object saveHistoricPermissionsChange(String str, String str2, boolean z, EnumPermissionsApp enumPermissionsApp, Continuation continuation) {
         Object saveHistoric = this.dao.saveHistoric(new HistoricRecordPermissionsChangeEntity(null, str, str2, z, enumPermissionsApp.name()), (Continuation) continuation);
         return saveHistoric == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? saveHistoric : Unit.INSTANCE;
     }
@@ -282,7 +282,7 @@ public final class HistoricRecordPermissionsChangeRepository {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object syncHistoricPermissionChange(Context context, Continuation<? super Unit> continuation) {
+    public final Object syncHistoricPermissionChange(Context context, Continuation continuation) {
         HistoricRecordPermissionsChangeRepository$syncHistoricPermissionChange$1 historicRecordPermissionsChangeRepository$syncHistoricPermissionChange$1;
         int i;
         HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository;

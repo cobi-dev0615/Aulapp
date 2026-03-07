@@ -69,7 +69,7 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
                         return emit((BiometricResult) obj2, (Continuation<? super Unit>) continuation);
                     }
 
-                    public final Object emit(BiometricResult biometricResult, Continuation<? super Unit> continuation) {
+                    public final Object emit(BiometricResult biometricResult, Continuation continuation) {
                         String str;
                         boolean z = biometricResult instanceof BiometricResult.Complete;
                         if (z || (biometricResult instanceof BiometricResult.Error)) {
@@ -107,13 +107,13 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public WebviewFragment$collects$1(WebviewFragment webviewFragment, Continuation<? super WebviewFragment$collects$1> continuation) {
+    public WebviewFragment$collects$1(WebviewFragment webviewFragment, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = webviewFragment;
     }
@@ -147,7 +147,7 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((WebviewFragment$collects$1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

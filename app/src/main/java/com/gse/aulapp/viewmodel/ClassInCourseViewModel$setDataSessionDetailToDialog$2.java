@@ -77,13 +77,13 @@ public final class ClassInCourseViewModel$setDataSessionDetailToDialog$2 extends
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
             return ((AnonymousClass1) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ClassInCourseViewModel$setDataSessionDetailToDialog$2(ClassInCourseViewModel classInCourseViewModel, DialogExamInfoLayoutBinding dialogExamInfoLayoutBinding, Continuation<? super ClassInCourseViewModel$setDataSessionDetailToDialog$2> continuation) {
+    public ClassInCourseViewModel$setDataSessionDetailToDialog$2(ClassInCourseViewModel classInCourseViewModel, DialogExamInfoLayoutBinding dialogExamInfoLayoutBinding, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
         this.this$0 = classInCourseViewModel;
         this.$binding = dialogExamInfoLayoutBinding;
@@ -116,7 +116,7 @@ public final class ClassInCourseViewModel$setDataSessionDetailToDialog$2 extends
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
         return ((ClassInCourseViewModel$setDataSessionDetailToDialog$2) (Object) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }

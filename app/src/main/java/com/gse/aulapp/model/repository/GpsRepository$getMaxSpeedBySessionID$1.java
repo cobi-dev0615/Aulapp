@@ -18,8 +18,8 @@ public final class GpsRepository$getMaxSpeedBySessionID$1 extends ContinuationIm
     final /* synthetic */ GpsRepository this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public GpsRepository$getMaxSpeedBySessionID$1(GpsRepository gpsRepository, Continuation<? super GpsRepository$getMaxSpeedBySessionID$1> continuation) {
-        super((Continuation<Object>) continuation);
+    public GpsRepository$getMaxSpeedBySessionID$1(GpsRepository gpsRepository, Continuation continuation) {
+        super((Continuation) continuation);
         this.this$0 = gpsRepository;
     }
 

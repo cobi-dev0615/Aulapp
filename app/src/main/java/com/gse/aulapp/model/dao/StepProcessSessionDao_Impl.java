@@ -83,7 +83,7 @@ public final class StepProcessSessionDao_Impl implements StepProcessSessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.StepProcessSessionDao
-    public Object deleteSessionsOfSessionId(final String str, Continuation<? super Unit> continuation) {
+    public Object deleteSessionsOfSessionId(final String str, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Unit>() { // from class: com.gse.aulapp.model.dao.StepProcessSessionDao_Impl.4
             @Override // java.util.concurrent.Callable
             public Unit call() {
@@ -130,7 +130,7 @@ public final class StepProcessSessionDao_Impl implements StepProcessSessionDao {
     }
 
     @Override // com.gse.aulapp.model.dao.StepProcessSessionDao
-    public Object saveUpdateStep(final StepProcessSessionEntity stepProcessSessionEntity, Continuation<? super Long> continuation) {
+    public Object saveUpdateStep(final StepProcessSessionEntity stepProcessSessionEntity, Continuation continuation) {
         return CoroutinesRoom.execute(this.__db, true, new Callable<Long>() { // from class: com.gse.aulapp.model.dao.StepProcessSessionDao_Impl.3
             /* JADX WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
