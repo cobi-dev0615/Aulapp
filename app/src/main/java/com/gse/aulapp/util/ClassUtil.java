@@ -143,7 +143,8 @@ public final class ClassUtil {
         Intrinsics.checkNotNullParameter(classEndDate, "$classEndDate");
         Intrinsics.checkNotNullParameter(onResult, "$onResult");
         Intrinsics.checkNotNullParameter(dateTime, "dateTime");
-        Date parse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(dateTime);
+        Date parse;
+        try { parse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(dateTime); } catch (java.text.ParseException e) { parse = null; }
         if (parse == null) {
             parse = new Date();
         }
@@ -188,7 +189,7 @@ public final class ClassUtil {
         Intrinsics.checkNotNullParameter(it, "it");
         String start = it.getStart();
         Intrinsics.checkNotNull(start);
-        return timeFormat.parse(start);
+        try { return timeFormat.parse(start); } catch (java.text.ParseException e) { return null; }
     }
 
     private final boolean isToday(Calendar calendar) {
@@ -223,7 +224,7 @@ public final class ClassUtil {
 
     private final List<SessionDto> setConfigSession(List<SessionDto> session, List<ConfigurationSessionDto> configList) {
         ConfigurationSessionDto configurationSessionDto;
-        Object obj;
+        Object obj = null;
         List<SessionDto> mutableList = CollectionsKt.toMutableList((Collection) session);
         for (SessionDto sessionDto : mutableList) {
             EnumTypeConfiguration type = ConfigurationSessionTypeConverter.INSTANCE.getType(sessionDto.getType());
@@ -295,7 +296,8 @@ public final class ClassUtil {
             Intrinsics.checkNotNull(date);
             String substring = date.substring(0, 10);
             Intrinsics.checkNotNullExpressionValue(substring, "substring(...)");
-            Date parse = simpleDateFormat.parse(substring);
+            Date parse;
+            try { parse = simpleDateFormat.parse(substring); } catch (java.text.ParseException e) { parse = null; }
             Object obj2 = linkedHashMap.get(parse);
             if (obj2 == null) {
                 obj2 = new ArrayList();
@@ -337,7 +339,8 @@ public final class ClassUtil {
             Object obj3 = arrayList.get(i);
             i++;
             Date date2 = (Date) obj3;
-            Date parse2 = simpleDateFormat.parse(simpleDateFormat.format(date2));
+            Date parse2;
+            try { parse2 = simpleDateFormat.parse(simpleDateFormat.format(date2)); } catch (java.text.ParseException e) { parse2 = null; }
             if (this.showEmptyClass) {
                 list = (List) linkedHashMap.get(parse2 == null ? date2 : parse2);
                 if (list == null) {
