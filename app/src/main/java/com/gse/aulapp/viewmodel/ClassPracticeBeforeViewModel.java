@@ -96,7 +96,7 @@ import kotlinx.coroutines.flow.SharedFlowKt;
 @SourceDebugExtension({"SMAP\nClassPracticeBeforeViewModel.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClassPracticeBeforeViewModel.kt\ncom/gse/aulapp/viewmodel/ClassPracticeBeforeViewModel\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1278:1\n1863#2,2:1279\n1863#2,2:1281\n*S KotlinDebug\n*F\n+ 1 ClassPracticeBeforeViewModel.kt\ncom/gse/aulapp/viewmodel/ClassPracticeBeforeViewModel\n*L\n779#1:1279,2\n910#1:1281,2\n*E\n"})
 /* loaded from: classes2.dex */
 public final class ClassPracticeBeforeViewModel extends ViewModel {
-    private final String TAG;
+    final String TAG;
     private final SingleLiveEvent<ConfigurationSessionDto> _configSession;
     private final MutableSharedFlow<Status> _message;
     private final MutableSharedFlow<Status> _messageBiometrix;

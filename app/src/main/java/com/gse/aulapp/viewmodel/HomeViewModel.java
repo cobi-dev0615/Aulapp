@@ -124,7 +124,7 @@ import kotlinx.coroutines.flow.SharedFlowKt;
 @SourceDebugExtension({"SMAP\nHomeViewModel.kt\nKotlin\n*S Kotlin\n*F\n+ 1 HomeViewModel.kt\ncom/gse/aulapp/viewmodel/HomeViewModel\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 4 View.kt\nandroidx/core/view/ViewKt\n+ 5 ViewGroup.kt\nandroidx/core/view/ViewGroupKt\n*L\n1#1,1210:1\n1863#2:1211\n1863#2,2:1212\n1864#2:1214\n1863#2:1215\n1863#2,2:1216\n1864#2:1218\n1863#2,2:1219\n1863#2:1221\n1863#2,2:1222\n1864#2:1224\n1863#2:1225\n1863#2,2:1226\n1864#2:1228\n360#2,7:1229\n1755#2,3:1244\n295#2,2:1247\n13409#3,2:1236\n254#4:1238\n254#4:1243\n53#5,4:1239\n*S KotlinDebug\n*F\n+ 1 HomeViewModel.kt\ncom/gse/aulapp/viewmodel/HomeViewModel\n*L\n245#1:1211\n246#1:1212,2\n245#1:1214\n403#1:1215\n404#1:1216,2\n403#1:1218\n409#1:1219,2\n422#1:1221\n423#1:1222,2\n422#1:1224\n437#1:1225\n438#1:1226,2\n437#1:1228\n813#1:1229,7\n963#1:1244,3\n1058#1:1247,2\n856#1:1236,2\n863#1:1238\n954#1:1243\n880#1:1239,4\n*E\n"})
 /* loaded from: classes2.dex */
 public final class HomeViewModel extends ViewModel {
-    private final String TAG;
+    final String TAG;
     private int _action;
     private final SingleLiveEvent<ConfigurationSessionDto> _configSession;
     private final SingleLiveEvent<List<ConfigurationSessionDto>> _listConfigSession;

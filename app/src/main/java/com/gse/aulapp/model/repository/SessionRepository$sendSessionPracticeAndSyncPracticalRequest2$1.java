@@ -139,7 +139,6 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest2
                     this.label = 8;
                     break;
                 }
-                return coroutine_suspended;
             case 3:
                 apiResult = (ApiResult) this.L$1;
                 flowCollector2 = (FlowCollector) this.L$0;
@@ -174,6 +173,7 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest2
             default:
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
+        return coroutine_suspended;
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
