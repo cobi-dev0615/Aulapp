@@ -84,7 +84,7 @@ public final class WebviewViewModel$handlePageFinished$1 extends SuspendLambda i
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new WebviewViewModel$handlePageFinished$1(this.$url, this.this$0, this.$isRegisterFlow, (Continuation) continuation);
     }
 

@@ -55,7 +55,7 @@ public final class PrincipalActivityViewModel$handlerStatusChangeAirplaneMode$1 
             }
 
             @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-            public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+            public final Continuation create(Object obj, Continuation<?> continuation) {
                 return new C00101(this.$context, continuation);
             }
 
@@ -84,7 +84,7 @@ public final class PrincipalActivityViewModel$handlerStatusChangeAirplaneMode$1 
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.$context, this.$isEnabled, continuation);
         }
 
@@ -132,7 +132,7 @@ public final class PrincipalActivityViewModel$handlerStatusChangeAirplaneMode$1 
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new PrincipalActivityViewModel$handlerStatusChangeAirplaneMode$1(this.this$0, this.$isEnabled, this.$context, continuation);
     }
 

@@ -39,7 +39,7 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         LoginRepository$login$1 loginRepository$login$1 = new LoginRepository$login$1(this.$context, this.$request, (Continuation) continuation);
         loginRepository$login$1.L$0 = obj;
         return (Continuation<Unit>) (Object) loginRepository$login$1;

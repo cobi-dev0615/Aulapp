@@ -39,7 +39,7 @@ public final class ChangeCenterRepository$changeCenter$1 extends SuspendLambda i
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         ChangeCenterRepository$changeCenter$1 changeCenterRepository$changeCenter$1 = new ChangeCenterRepository$changeCenter$1(this.$context, this.$request, (Continuation) continuation);
         changeCenterRepository$changeCenter$1.L$0 = obj;
         return (Continuation<Unit>) (Object) changeCenterRepository$changeCenter$1;

@@ -42,7 +42,7 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         NetworkConnectivityObserver$observe$1 networkConnectivityObserver$observe$1 = new NetworkConnectivityObserver$observe$1(this.this$0, (Continuation) continuation);
         networkConnectivityObserver$observe$1.L$0 = obj;
         return (Continuation<Unit>) (Object) networkConnectivityObserver$observe$1;

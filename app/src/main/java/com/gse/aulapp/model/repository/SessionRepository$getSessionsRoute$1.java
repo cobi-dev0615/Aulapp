@@ -39,7 +39,7 @@ public final class SessionRepository$getSessionsRoute$1 extends SuspendLambda im
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         SessionRepository$getSessionsRoute$1 sessionRepository$getSessionsRoute$1 = new SessionRepository$getSessionsRoute$1(this.$context, this.$sessionInstructorRequest, (Continuation) continuation);
         sessionRepository$getSessionsRoute$1.L$0 = obj;
         return (Continuation<Unit>) (Object) sessionRepository$getSessionsRoute$1;

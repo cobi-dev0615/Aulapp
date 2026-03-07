@@ -117,7 +117,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new HomeViewModel$getSessionFromApiAndSave$1(this.this$0, this.$context, this.$sessionInstructorRequest, this.$isValidateSession, this.$sessionId, this.$navController, this.$classRecyclerAdapter, this.$activity, continuation);
     }
 

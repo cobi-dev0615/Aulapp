@@ -98,7 +98,7 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new FirstLoginViewModel$initBiometrix$1(this.this$0, this.$activity, this.$request, continuation);
     }
 

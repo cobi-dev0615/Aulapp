@@ -30,7 +30,7 @@ public final class DefaultLocationClient$getLocationUpdates$1$callback$1$onLocat
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2 instance = new DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2(this.$$this$callbackFlow, this.$filteredLocation, (Continuation) continuation);
         return (Continuation<Unit>) (Object) instance;
     }

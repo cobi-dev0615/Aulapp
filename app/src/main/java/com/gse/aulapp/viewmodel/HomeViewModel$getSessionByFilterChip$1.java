@@ -36,7 +36,7 @@ public final class HomeViewModel$getSessionByFilterChip$1 extends SuspendLambda 
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.this$0, continuation);
         }
 
@@ -75,7 +75,7 @@ public final class HomeViewModel$getSessionByFilterChip$1 extends SuspendLambda 
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new HomeViewModel$getSessionByFilterChip$1(this.this$0, continuation);
     }
 

@@ -45,7 +45,7 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest$
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return (Continuation<Unit>) (Object) new AnonymousClass1(this.$context, this.$practiceRequest, (Continuation) continuation);
         }
 
@@ -88,7 +88,7 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest$
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         SessionRepository$sendSessionPracticeAndSyncPracticalRequest$response$1 sessionRepository$sendSessionPracticeAndSyncPracticalRequest$response$1 = new SessionRepository$sendSessionPracticeAndSyncPracticalRequest$response$1(this.$context, this.$practiceRequest, (Continuation) continuation);
         sessionRepository$sendSessionPracticeAndSyncPracticalRequest$response$1.L$0 = obj;
         return (Continuation<Unit>) (Object) sessionRepository$sendSessionPracticeAndSyncPracticalRequest$response$1;

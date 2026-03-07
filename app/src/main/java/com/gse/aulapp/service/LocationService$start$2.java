@@ -72,7 +72,7 @@ public final class LocationService$start$2 extends SuspendLambda implements Func
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         LocationService$start$2 locationService$start$2 = new LocationService$start$2(this.this$0, this.$notification, this.$notificationManager, this.$intent, this.$flags, this.$startId, this.$sessionId, this.$interval, (Continuation) continuation);
         locationService$start$2.L$0 = obj;
         return (Continuation<Unit>) (Object) locationService$start$2;

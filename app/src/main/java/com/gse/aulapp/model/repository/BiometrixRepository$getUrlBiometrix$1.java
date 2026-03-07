@@ -40,7 +40,7 @@ public final class BiometrixRepository$getUrlBiometrix$1 extends SuspendLambda i
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         BiometrixRepository$getUrlBiometrix$1 biometrixRepository$getUrlBiometrix$1 = new BiometrixRepository$getUrlBiometrix$1(this.$context, this.$request, (Continuation) continuation);
         biometrixRepository$getUrlBiometrix$1.L$0 = obj;
         return (Continuation<Unit>) (Object) biometrixRepository$getUrlBiometrix$1;

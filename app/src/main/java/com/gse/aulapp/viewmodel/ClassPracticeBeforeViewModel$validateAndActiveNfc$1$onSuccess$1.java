@@ -45,7 +45,7 @@ public final class ClassPracticeBeforeViewModel$validateAndActiveNfc$1$onSuccess
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new ClassPracticeBeforeViewModel$validateAndActiveNfc$1$onSuccess$1(this.$tag, this.this$0, this.$activity, this.$binding, this.$isEnter, continuation);
     }
 

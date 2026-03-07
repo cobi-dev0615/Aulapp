@@ -34,7 +34,7 @@ public final class ClassInCourseViewModel$saveQuestionInDB$2 extends SuspendLamb
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ClassInCourseViewModel$saveQuestionInDB$2(this.this$0, this.$testID, this.$questionsResponses, (Continuation) continuation);
     }
 

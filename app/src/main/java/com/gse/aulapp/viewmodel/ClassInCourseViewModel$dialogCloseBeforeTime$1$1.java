@@ -29,7 +29,7 @@ public final class ClassInCourseViewModel$dialogCloseBeforeTime$1$1 extends Susp
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ClassInCourseViewModel$dialogCloseBeforeTime$1$1(this.$stepRepository, this.$sessionID, (Continuation) continuation);
     }
 

@@ -33,7 +33,7 @@ public final class SyncDataWorker$doWork$2 extends SuspendLambda implements Func
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         SyncDataWorker$doWork$2 syncDataWorker$doWork$2 = new SyncDataWorker$doWork$2(this.this$0, continuation);
         syncDataWorker$doWork$2.L$0 = obj;
         return syncDataWorker$doWork$2;

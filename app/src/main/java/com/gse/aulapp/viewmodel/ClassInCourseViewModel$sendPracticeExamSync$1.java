@@ -48,7 +48,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ClassInCourseViewModel$sendPracticeExamSync$1(this.$context, this.this$0, this.$sessionID, this.$findNavController, (Continuation) continuation);
     }
 

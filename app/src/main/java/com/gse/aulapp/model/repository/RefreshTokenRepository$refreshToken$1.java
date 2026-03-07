@@ -39,7 +39,7 @@ public final class RefreshTokenRepository$refreshToken$1 extends SuspendLambda i
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         RefreshTokenRepository$refreshToken$1 refreshTokenRepository$refreshToken$1 = new RefreshTokenRepository$refreshToken$1(this.$context, this.$request, (Continuation) continuation);
         refreshTokenRepository$refreshToken$1.L$0 = obj;
         return (Continuation<Unit>) (Object) refreshTokenRepository$refreshToken$1;

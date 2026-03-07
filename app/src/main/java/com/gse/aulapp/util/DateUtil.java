@@ -63,9 +63,13 @@ public abstract class DateUtil {
 
         public final String dayMonthByMonth(String dateString) {
             Intrinsics.checkNotNullParameter(dateString, "dateString");
-            String format = new SimpleDateFormat("MMMM", Locale.getDefault()).format(new SimpleDateFormat("dd MMMM", Locale.getDefault()).parse(dateString));
-            Intrinsics.checkNotNullExpressionValue(format, "format(...)");
-            return format;
+            try {
+                String format = new SimpleDateFormat("MMMM", Locale.getDefault()).format(new SimpleDateFormat("dd MMMM", Locale.getDefault()).parse(dateString));
+                Intrinsics.checkNotNullExpressionValue(format, "format(...)");
+                return format;
+            } catch (java.text.ParseException e) {
+                return dateString;
+            }
         }
 
         public final String getDateFormatToGeneral(Date date) {
@@ -367,10 +371,14 @@ public abstract class DateUtil {
 
         public final String getDateFromString(String date) {
             Intrinsics.checkNotNullParameter(date, "date");
-            Date parse = new SimpleDateFormat("yyyy-MM-dd").parse(date);
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
-            Intrinsics.checkNotNull(parse, "null cannot be cast to non-null type java.util.Date");
-            return simpleDateFormat.format(parse).toString();
+            try {
+                Date parse = new SimpleDateFormat("yyyy-MM-dd").parse(date);
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                Intrinsics.checkNotNull(parse, "null cannot be cast to non-null type java.util.Date");
+                return simpleDateFormat.format(parse).toString();
+            } catch (java.text.ParseException e) {
+                return date;
+            }
         }
     }
 }

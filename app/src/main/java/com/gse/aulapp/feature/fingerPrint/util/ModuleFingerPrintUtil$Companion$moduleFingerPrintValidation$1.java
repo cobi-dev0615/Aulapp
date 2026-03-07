@@ -58,7 +58,7 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return (Continuation<Unit>) (Object) new AnonymousClass1(this.$fragmentActivity, this.$hand, this.$userId, this.$urlDocument, this.$onErrorCallback, this.$onSuccessCallback, (Continuation) continuation);
         }
 
@@ -116,7 +116,7 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(this.$fragmentActivity, this.$hand, this.$userId, this.$urlDocument, this.$onErrorCallback, this.$onSuccessCallback, (Continuation) continuation);
     }
 

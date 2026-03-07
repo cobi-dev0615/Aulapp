@@ -43,7 +43,7 @@ public final class ClassInCourseViewModel$setDataSessionDetailToDialog$2 extends
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return (Continuation<Unit>) (Object) new AnonymousClass1(this.this$0, this.$binding, (Continuation) continuation);
         }
 
@@ -90,7 +90,7 @@ public final class ClassInCourseViewModel$setDataSessionDetailToDialog$2 extends
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ClassInCourseViewModel$setDataSessionDetailToDialog$2(this.this$0, this.$binding, (Continuation) continuation);
     }
 

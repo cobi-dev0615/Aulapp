@@ -57,7 +57,7 @@ public final class ClassInCourseViewModel$moveToNextQuestion$1$1 extends Suspend
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ClassInCourseViewModel$moveToNextQuestion$1$1(this.$questions, this.this$0, (Continuation) continuation);
     }
 

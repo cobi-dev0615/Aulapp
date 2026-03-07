@@ -30,7 +30,7 @@ public final class ClassInCourseViewModel$getConfigSessionDto$1 extends SuspendL
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ClassInCourseViewModel$getConfigSessionDto$1(this.this$0, (Continuation) continuation);
     }
 

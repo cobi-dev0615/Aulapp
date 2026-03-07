@@ -42,7 +42,7 @@ public final class ControllerEntryOrExamUtil$Companion$saveEntryExam$1 extends S
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return (Continuation<Unit>) (Object) new AnonymousClass1(this.$repository, this.$dateEntryExam, this.$sessionID, (Continuation) continuation);
         }
 
@@ -83,7 +83,7 @@ public final class ControllerEntryOrExamUtil$Companion$saveEntryExam$1 extends S
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ControllerEntryOrExamUtil$Companion$saveEntryExam$1(this.$repository, this.$dateEntryExam, this.$sessionID, (Continuation) continuation);
     }
 

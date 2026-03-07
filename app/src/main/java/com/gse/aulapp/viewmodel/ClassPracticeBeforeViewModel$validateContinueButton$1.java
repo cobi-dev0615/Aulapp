@@ -41,7 +41,7 @@ public final class ClassPracticeBeforeViewModel$validateContinueButton$1 extends
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new ClassPracticeBeforeViewModel$validateContinueButton$1(this.$listStep, this.$binding, this.this$0, continuation);
     }
 

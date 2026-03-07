@@ -44,7 +44,7 @@ public final class ClassPracticeBeforeViewModel$getStepperStatusComplete$1 exten
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.this$0, this.$sessionID, this.$isEntry, continuation);
         }
 
@@ -106,7 +106,7 @@ public final class ClassPracticeBeforeViewModel$getStepperStatusComplete$1 exten
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new ClassPracticeBeforeViewModel$getStepperStatusComplete$1(this.this$0, this.$sessionID, this.$isEntry, continuation);
     }
 

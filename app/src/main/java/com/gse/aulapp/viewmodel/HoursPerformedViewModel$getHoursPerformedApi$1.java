@@ -91,7 +91,7 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new HoursPerformedViewModel$getHoursPerformedApi$1(this.$context, this.$request, this.this$0, continuation);
     }
 

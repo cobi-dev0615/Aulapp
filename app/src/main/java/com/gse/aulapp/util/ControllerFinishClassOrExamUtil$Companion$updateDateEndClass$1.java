@@ -27,7 +27,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ControllerFinishClassOrExamUtil$Companion$updateDateEndClass$1(this.$sessionID, (Continuation) continuation);
     }
 

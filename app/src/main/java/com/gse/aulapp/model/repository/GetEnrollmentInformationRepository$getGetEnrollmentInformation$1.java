@@ -39,7 +39,7 @@ public final class GetEnrollmentInformationRepository$getGetEnrollmentInformatio
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         GetEnrollmentInformationRepository$getGetEnrollmentInformation$1 getEnrollmentInformationRepository$getGetEnrollmentInformation$1 = new GetEnrollmentInformationRepository$getGetEnrollmentInformation$1(this.$context, this.$request, (Continuation) continuation);
         getEnrollmentInformationRepository$getGetEnrollmentInformation$1.L$0 = obj;
         return (Continuation<Unit>) (Object) getEnrollmentInformationRepository$getGetEnrollmentInformation$1;

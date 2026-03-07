@@ -35,7 +35,7 @@ public final class DialogNormalUtil$updateDialogExamSpeedInfo$1 extends SuspendL
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         DialogNormalUtil$updateDialogExamSpeedInfo$1 dialogNormalUtil$updateDialogExamSpeedInfo$1 = new DialogNormalUtil$updateDialogExamSpeedInfo$1(this.$viewModel, (Continuation) continuation);
         dialogNormalUtil$updateDialogExamSpeedInfo$1.L$0 = obj;
         return (Continuation<Unit>) (Object) dialogNormalUtil$updateDialogExamSpeedInfo$1;

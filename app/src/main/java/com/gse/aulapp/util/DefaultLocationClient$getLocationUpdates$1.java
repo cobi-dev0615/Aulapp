@@ -51,7 +51,7 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         DefaultLocationClient$getLocationUpdates$1 defaultLocationClient$getLocationUpdates$1 = new DefaultLocationClient$getLocationUpdates$1(this.this$0, this.$interval, (Continuation) continuation);
         defaultLocationClient$getLocationUpdates$1.L$0 = obj;
         return (Continuation<Unit>) (Object) defaultLocationClient$getLocationUpdates$1;

@@ -45,7 +45,7 @@ public final class HistoricRecordPermissionsChangeRepository$sendSyncHistoricPer
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return (Continuation<Unit>) (Object) new AnonymousClass1(this.$context, this.$historyPermissionChangeRequest, (Continuation) continuation);
         }
 
@@ -88,7 +88,7 @@ public final class HistoricRecordPermissionsChangeRepository$sendSyncHistoricPer
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1 historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1 = new HistoricRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1(this.$context, this.$historyPermissionChangeRequest, (Continuation) continuation);
         historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1.L$0 = obj;
         return (Continuation<Unit>) (Object) historicRecordPermissionsChangeRepository$sendSyncHistoricPermissionChange$response$1;

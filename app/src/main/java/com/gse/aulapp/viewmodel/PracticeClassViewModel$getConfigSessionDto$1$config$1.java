@@ -25,7 +25,7 @@ public final class PracticeClassViewModel$getConfigSessionDto$1$config$1 extends
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new PracticeClassViewModel$getConfigSessionDto$1$config$1(this.this$0, (Continuation) continuation);
     }
 

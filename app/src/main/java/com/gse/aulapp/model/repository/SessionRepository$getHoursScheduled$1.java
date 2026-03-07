@@ -36,7 +36,7 @@ public final class SessionRepository$getHoursScheduled$1 extends SuspendLambda i
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         SessionRepository$getHoursScheduled$1 sessionRepository$getHoursScheduled$1 = new SessionRepository$getHoursScheduled$1(this.$context, this.$request, (Continuation) continuation);
         sessionRepository$getHoursScheduled$1.L$0 = obj;
         return (Continuation<Unit>) (Object) sessionRepository$getHoursScheduled$1;

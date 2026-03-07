@@ -54,7 +54,7 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
             }
 
             @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-            public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+            public final Continuation create(Object obj, Continuation<?> continuation) {
                 return new C00151(this.$context, continuation);
             }
 
@@ -83,7 +83,7 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.$context, this.$isEnabled, continuation);
         }
 
@@ -131,7 +131,7 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new PrincipalActivityViewModel$validateShowDialogNetworkUnavailable$1(this.this$0, this.$context, this.$isEnabled, continuation);
     }
 

@@ -25,7 +25,7 @@ public final class HomeViewModel$loadDefaultList$1 extends SuspendLambda impleme
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new HomeViewModel$loadDefaultList$1(this.this$0, continuation);
     }
 

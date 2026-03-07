@@ -28,7 +28,7 @@ public final class NetworkConnectivityObserver$observe$1$callback$1$onLosing$1 e
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new NetworkConnectivityObserver$observe$1$callback$1$onLosing$1(this.$$this$callbackFlow, (Continuation) continuation);
     }
 

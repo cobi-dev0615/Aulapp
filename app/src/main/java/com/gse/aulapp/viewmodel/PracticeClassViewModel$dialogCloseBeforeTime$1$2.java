@@ -28,7 +28,7 @@ public final class PracticeClassViewModel$dialogCloseBeforeTime$1$2 extends Susp
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new PracticeClassViewModel$dialogCloseBeforeTime$1$2(this.$stepRepository, this.$sessionID, (Continuation) continuation);
     }
 

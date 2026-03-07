@@ -45,7 +45,7 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return (Continuation<Unit>) (Object) new AnonymousClass1(this.this$0, (Continuation) continuation);
         }
 
@@ -119,7 +119,7 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new WebviewFragment$collects$1(this.this$0, (Continuation) continuation);
     }
 

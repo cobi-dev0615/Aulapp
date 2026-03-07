@@ -40,7 +40,7 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         SessionRepository$sendSessionStatusAppointment$1 sessionRepository$sendSessionStatusAppointment$1 = new SessionRepository$sendSessionStatusAppointment$1(this.$sessionID, this.$sessionStatus, this.$context, (Continuation) continuation);
         sessionRepository$sendSessionStatusAppointment$1.L$0 = obj;
         return (Continuation<Unit>) (Object) sessionRepository$sendSessionStatusAppointment$1;

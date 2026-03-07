@@ -33,7 +33,7 @@ public final class PrincipalActivityViewModel$saveHistoricPermission$1 extends S
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new PrincipalActivityViewModel$saveHistoricPermission$1(this.this$0, this.$isEnabled, this.$permission, continuation);
     }
 

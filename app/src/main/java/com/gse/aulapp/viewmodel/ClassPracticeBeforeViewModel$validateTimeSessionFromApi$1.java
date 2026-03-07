@@ -327,7 +327,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1(this.this$0, this.$context, this.$sessionInstructorRequest, this.$activity, this.$sessionId, this.$isEnter, this.$sessionType, this.$findNavController, continuation);
     }
 

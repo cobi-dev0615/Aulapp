@@ -94,7 +94,7 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1(this.this$0, this.$context, this.$sessionID, this.$data, continuation);
     }
 

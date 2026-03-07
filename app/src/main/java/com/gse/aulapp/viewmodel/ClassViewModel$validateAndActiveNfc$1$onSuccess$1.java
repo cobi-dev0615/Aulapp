@@ -32,7 +32,7 @@ public final class ClassViewModel$validateAndActiveNfc$1$onSuccess$1 extends Sus
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new ClassViewModel$validateAndActiveNfc$1$onSuccess$1(this.$tag, this.$activity, continuation);
     }
 

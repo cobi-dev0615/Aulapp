@@ -28,7 +28,7 @@ public final class ClassInCourseViewModel$updateIsPendingSync$1 extends SuspendL
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ClassInCourseViewModel$updateIsPendingSync$1(this.this$0, this.$sessionID, (Continuation) continuation);
     }
 

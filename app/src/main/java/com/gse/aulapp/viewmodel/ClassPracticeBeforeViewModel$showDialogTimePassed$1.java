@@ -76,7 +76,7 @@ public final class ClassPracticeBeforeViewModel$showDialogTimePassed$1 extends S
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.this$0, this.$activity, this.$context, this.$isEnter, this.$sessionType, this.$findNavController, continuation);
         }
 
@@ -122,7 +122,7 @@ public final class ClassPracticeBeforeViewModel$showDialogTimePassed$1 extends S
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new ClassPracticeBeforeViewModel$showDialogTimePassed$1(this.this$0, this.$activity, this.$context, this.$isEnter, this.$sessionType, this.$findNavController, continuation);
     }
 

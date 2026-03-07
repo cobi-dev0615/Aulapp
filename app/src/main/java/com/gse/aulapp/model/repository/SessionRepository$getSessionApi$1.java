@@ -39,7 +39,7 @@ public final class SessionRepository$getSessionApi$1 extends SuspendLambda imple
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         SessionRepository$getSessionApi$1 sessionRepository$getSessionApi$1 = new SessionRepository$getSessionApi$1(this.$context, this.$request, (Continuation) continuation);
         sessionRepository$getSessionApi$1.L$0 = obj;
         return (Continuation<Unit>) (Object) sessionRepository$getSessionApi$1;

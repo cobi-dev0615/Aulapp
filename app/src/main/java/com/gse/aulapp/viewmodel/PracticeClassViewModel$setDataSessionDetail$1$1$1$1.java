@@ -29,7 +29,7 @@ public final class PracticeClassViewModel$setDataSessionDetail$1$1$1$1 extends S
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new PracticeClassViewModel$setDataSessionDetail$1$1$1$1(this.$this_run, this.$eClassType, (Continuation) continuation);
     }
 

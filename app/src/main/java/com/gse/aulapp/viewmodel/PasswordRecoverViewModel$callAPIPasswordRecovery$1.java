@@ -89,7 +89,7 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new PasswordRecoverViewModel$callAPIPasswordRecovery$1(this.this$0, this.$passwordRecoveryRequest, this.$context, this.$binding, continuation);
     }
 

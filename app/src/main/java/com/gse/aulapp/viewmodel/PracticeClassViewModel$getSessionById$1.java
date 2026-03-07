@@ -42,7 +42,7 @@ public final class PracticeClassViewModel$getSessionById$1 extends SuspendLambda
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return (Continuation<Unit>) (Object) new AnonymousClass1(this.this$0, this.$sessionID, (Continuation) continuation);
         }
 
@@ -86,7 +86,7 @@ public final class PracticeClassViewModel$getSessionById$1 extends SuspendLambda
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new PracticeClassViewModel$getSessionById$1(this.this$0, this.$sessionID, (Continuation) continuation);
     }
 

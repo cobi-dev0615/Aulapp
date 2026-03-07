@@ -33,7 +33,7 @@ public final class HomeViewModel$getSessionByDB$2 extends SuspendLambda implemen
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new HomeViewModel$getSessionByDB$2(this.this$0, continuation);
     }
 

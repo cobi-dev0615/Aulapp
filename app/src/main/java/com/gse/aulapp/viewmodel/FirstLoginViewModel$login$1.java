@@ -118,7 +118,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new FirstLoginViewModel$login$1(this.this$0, this.$loginRequest, this.$context, continuation);
     }
 

@@ -26,7 +26,7 @@ public final class SyncDataWorker$doWork$2$asyncSyncHistory$1 extends SuspendLam
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new SyncDataWorker$doWork$2$asyncSyncHistory$1(this.this$0, continuation);
     }
 

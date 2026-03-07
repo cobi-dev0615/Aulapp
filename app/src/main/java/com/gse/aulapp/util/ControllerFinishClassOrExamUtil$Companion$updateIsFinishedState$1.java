@@ -37,7 +37,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$updateIsFinishedSta
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return (Continuation<Unit>) (Object) new AnonymousClass1(this.$sessionID, (Continuation) continuation);
         }
 
@@ -85,7 +85,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$updateIsFinishedSta
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ControllerFinishClassOrExamUtil$Companion$updateIsFinishedState$1(this.$sessionID, (Continuation) continuation);
     }
 

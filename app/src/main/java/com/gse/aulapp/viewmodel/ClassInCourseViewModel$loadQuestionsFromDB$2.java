@@ -46,7 +46,7 @@ public final class ClassInCourseViewModel$loadQuestionsFromDB$2 extends SuspendL
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ClassInCourseViewModel$loadQuestionsFromDB$2(this.this$0, this.$testID, this.$context, this.$sessionID, this.$findNavController, (Continuation) continuation);
     }
 

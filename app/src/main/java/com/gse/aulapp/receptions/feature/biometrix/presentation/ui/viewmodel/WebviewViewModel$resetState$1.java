@@ -27,7 +27,7 @@ public final class WebviewViewModel$resetState$1 extends SuspendLambda implement
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new WebviewViewModel$resetState$1(this.this$0, (Continuation) continuation);
     }
 

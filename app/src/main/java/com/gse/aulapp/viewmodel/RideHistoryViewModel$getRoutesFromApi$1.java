@@ -90,7 +90,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new RideHistoryViewModel$getRoutesFromApi$1(this.$context, this.$sessionInstructorRequest, this.this$0, continuation);
     }
 

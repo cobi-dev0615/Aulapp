@@ -40,7 +40,7 @@ public final class DataClassUtil$Companion$updateClassValues$4$1 extends Suspend
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         DataClassUtil$Companion$updateClassValues$4$1 instance = new DataClassUtil$Companion$updateClassValues$4$1(this.$binding, this.$it, this.$movingTime, this.$stoppedTime, this.$totalDistance, (Continuation) continuation);
         return (Continuation<Unit>) (Object) instance;
     }

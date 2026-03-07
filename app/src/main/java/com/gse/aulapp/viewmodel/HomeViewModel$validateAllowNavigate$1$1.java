@@ -93,7 +93,7 @@ public final class HomeViewModel$validateAllowNavigate$1$1 extends SuspendLambda
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.$session, this.$configSession, this.$dateStart, this.$dateEnd, this.$activity, this.$currentDate, this.$isTimerServiceRunning, this.$isMyTimerService, this.this$0, this.$navController, this.$classRecyclerAdapter, continuation);
         }
 
@@ -155,7 +155,7 @@ public final class HomeViewModel$validateAllowNavigate$1$1 extends SuspendLambda
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new HomeViewModel$validateAllowNavigate$1$1(this.$session, this.$configSession, this.$dateStart, this.$dateEnd, this.$activity, this.$currentDate, this.$isTimerServiceRunning, this.$isMyTimerService, this.this$0, this.$navController, this.$classRecyclerAdapter, continuation);
     }
 

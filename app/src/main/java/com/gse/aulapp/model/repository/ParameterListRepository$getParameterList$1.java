@@ -39,7 +39,7 @@ public final class ParameterListRepository$getParameterList$1 extends SuspendLam
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         ParameterListRepository$getParameterList$1 parameterListRepository$getParameterList$1 = new ParameterListRepository$getParameterList$1(this.$context, this.$request, (Continuation) continuation);
         parameterListRepository$getParameterList$1.L$0 = obj;
         return (Continuation<Unit>) (Object) parameterListRepository$getParameterList$1;

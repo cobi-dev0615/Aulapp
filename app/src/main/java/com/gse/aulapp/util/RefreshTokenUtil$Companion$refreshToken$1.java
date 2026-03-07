@@ -82,7 +82,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new RefreshTokenUtil$Companion$refreshToken$1(this.$refreshTokenRequest, this.$context, continuation);
     }
 

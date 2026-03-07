@@ -43,7 +43,7 @@ public final class HomeViewModel$onSwipeRefresh$1 extends SuspendLambda implemen
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new HomeViewModel$onSwipeRefresh$1(this.this$0, this.$activity, this.$binding, continuation);
     }
 

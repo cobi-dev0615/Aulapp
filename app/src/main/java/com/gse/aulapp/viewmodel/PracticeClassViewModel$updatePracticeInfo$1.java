@@ -33,7 +33,7 @@ public final class PracticeClassViewModel$updatePracticeInfo$1 extends SuspendLa
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         PracticeClassViewModel$updatePracticeInfo$1 practiceClassViewModel$updatePracticeInfo$1 = new PracticeClassViewModel$updatePracticeInfo$1(this.this$0, this.$binding, (Continuation) continuation);
         practiceClassViewModel$updatePracticeInfo$1.L$0 = obj;
         return (Continuation<Unit>) (Object) practiceClassViewModel$updatePracticeInfo$1;

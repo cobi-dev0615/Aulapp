@@ -78,7 +78,7 @@ public final class ClassPracticeBeforeViewModel$navigateToStartClass$1 extends S
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.this$0, this.$sessionID, this.$timeEntry, this.$context, this.$navController, continuation);
         }
 
@@ -157,7 +157,7 @@ public final class ClassPracticeBeforeViewModel$navigateToStartClass$1 extends S
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new ClassPracticeBeforeViewModel$navigateToStartClass$1(this.this$0, this.$sessionID, this.$timeEntry, this.$context, this.$navController, continuation);
     }
 

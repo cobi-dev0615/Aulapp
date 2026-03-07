@@ -51,7 +51,7 @@ public final class NfcUtil$Companion$handlerResponseTag$2 extends SuspendLambda 
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new NfcUtil$Companion$handlerResponseTag$2(this.$tag, this.$context, continuation);
     }
 

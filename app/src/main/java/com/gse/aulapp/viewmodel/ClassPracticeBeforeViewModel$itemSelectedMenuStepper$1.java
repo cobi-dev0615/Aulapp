@@ -86,7 +86,7 @@ public final class ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1 extend
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return new ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1(this.this$0, this.$context, this.$stepProfile, this.$binding, this.$isEnter, this.$userId, this.$apprenticesDocumentNumber, this.$userName, this.$email, this.$apprenticesDocumentType, this.$activity, continuation);
     }
 

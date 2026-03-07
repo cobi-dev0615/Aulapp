@@ -103,7 +103,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             AnonymousClass1 instance = new AnonymousClass1(this.$context, this.$sessionID, this.$repository, this.$findNavController, this.$navDirections, (Continuation) continuation);
             return (Continuation<Unit>) (Object) instance;
         }
@@ -412,7 +412,7 @@ public final class ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSyn
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1 instance = new ControllerFinishClassOrExamUtil$Companion$sendPracticeExamSync$1(this.$context, this.$sessionID, this.$repository, this.$findNavController, this.$navDirections, (Continuation) continuation);
         return (Continuation<Unit>) (Object) instance;
     }

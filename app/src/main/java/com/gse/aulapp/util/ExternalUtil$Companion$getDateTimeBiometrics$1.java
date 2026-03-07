@@ -99,7 +99,7 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
         }
 
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        public final Continuation create(Object obj, Continuation<?> continuation) {
             return (Continuation<Unit>) (Object) new AnonymousClass1(this.$context, (Continuation) continuation);
         }
 
@@ -138,7 +138,7 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new ExternalUtil$Companion$getDateTimeBiometrics$1(this.$context, this.$date, this.$time, this.$enumTime, this.$listener, (Continuation) continuation);
     }
 

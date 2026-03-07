@@ -38,7 +38,7 @@ public final class SessionRepository$sendSessionSyncPracticalRequest2$1 extends 
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         SessionRepository$sendSessionSyncPracticalRequest2$1 sessionRepository$sendSessionSyncPracticalRequest2$1 = new SessionRepository$sendSessionSyncPracticalRequest2$1(this.$context, this.$request, this.this$0, (Continuation) continuation);
         sessionRepository$sendSessionSyncPracticalRequest2$1.L$0 = obj;
         return (Continuation<Unit>) (Object) sessionRepository$sendSessionSyncPracticalRequest2$1;

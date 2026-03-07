@@ -36,7 +36,7 @@ public final class WebviewFragment$handlerBiometricResult$1 extends SuspendLambd
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+    public final Continuation create(Object obj, Continuation<?> continuation) {
         return (Continuation<Unit>) (Object) new WebviewFragment$handlerBiometricResult$1(this.$data, this.this$0, (Continuation) continuation);
     }
 
