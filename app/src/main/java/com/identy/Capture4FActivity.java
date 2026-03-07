@@ -884,9 +884,9 @@ public class Capture4FActivity extends FingerActivity {
                 } catch (Throwable th2) {
                     Throwable cause2 = th2.getCause();
                     if (cause2 == null) {
-                        throw th2;
+                        throw new RuntimeException(th2);
                     }
-                    throw cause2;
+                    throw new RuntimeException(cause2);
                 }
             }
         }
@@ -1129,7 +1129,7 @@ public class Capture4FActivity extends FingerActivity {
                 try {
                 } catch (Throwable th) {
                     if (i2 < 24 || i2 >= 27) {
-                        throw th;
+                        throw new RuntimeException(th);
                     }
                     getdata.PngjPrematureEnding = th;
                     getdata.PngjException(23);
@@ -1197,7 +1197,7 @@ public class Capture4FActivity extends FingerActivity {
                         i2 = i7;
                 }
             }
-            throw th;
+            throw new RuntimeException(th);
         } catch (Throwable th2) {
             Throwable cause = th2.getCause();
 
@@ -1350,7 +1350,7 @@ public class Capture4FActivity extends FingerActivity {
                             b(b8, s2, s3, objArr17);
                             if (!Class.forName((String) objArr17[i7]).isInstance(th2) || i8 < 13 || i8 >= 19) {
                                 if (i8 < 39 || i8 >= 43) {
-                                    throw th2;
+                                    throw new RuntimeException(th2);
                                 }
                                 i8 = 37;
                                 getdata.PngjPrematureEnding = th2;
@@ -1481,9 +1481,9 @@ public class Capture4FActivity extends FingerActivity {
         } catch (Throwable th3) {
             Throwable cause2 = th3.getCause();
             if (cause2 == null) {
-                throw th3;
+                throw new RuntimeException(th3);
             }
-            throw cause2;
+            throw new RuntimeException(cause2);
         }
     }
 }

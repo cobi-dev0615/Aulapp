@@ -897,9 +897,9 @@ final class getL1Score extends getL3Score {
                     } catch (Throwable th2) {
                         Throwable cause2 = th2.getCause();
                         if (cause2 == null) {
-                            throw th2;
+                            throw new RuntimeException(th2);
                         }
-                        throw cause2;
+                        throw new RuntimeException(cause2);
                     }
                     if (context2 != null) {
                         if (context2 instanceof ContextWrapper) {

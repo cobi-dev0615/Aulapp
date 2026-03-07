@@ -713,7 +713,7 @@ final class isFoundMatchingTemplates extends e1 {
                 } catch (Exception e5) {
                     e5.printStackTrace();
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
         }
     }
@@ -863,7 +863,7 @@ final class isFoundMatchingTemplates extends e1 {
             }
             cause = th.getCause();
             if (cause != null) {
-                throw th;
+                throw new RuntimeException(th);
             }
             throw new RuntimeException(cause);
         }
@@ -1508,9 +1508,9 @@ final class isFoundMatchingTemplates extends e1 {
                 } catch (Throwable th2) {
                     Throwable cause2 = th2.getCause();
                     if (cause2 != null) {
-                        throw cause2;
+                        throw new RuntimeException(cause2);
                     }
-                    throw th2;
+                    throw new RuntimeException(th2);
                 }
             }
             int i29 = ((int[]) objArr3[2])[0];

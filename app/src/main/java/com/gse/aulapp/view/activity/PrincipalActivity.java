@@ -170,49 +170,38 @@ public final class PrincipalActivity extends AppCompatActivity {
         findNavController.addOnDestinationChangedListener(new y6(this, 1));
         BroadcastUtil.Companion companion = BroadcastUtil.INSTANCE;
         final int i = 0;
-        companion.startReceiver(this, companion.getFILTER_AIRPLANE(), new Function1(this) { // from class: co.ceduladigital.sdk.v7
-            public final /* synthetic */ PrincipalActivity b;
-
-            {
-                this.b = this;
-            }
+        final PrincipalActivity principalActivityThis = this;
+        companion.startReceiver(this, companion.getFILTER_AIRPLANE(), new Function1() { // from class: co.ceduladigital.sdk.v7
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit onCreate$lambda$2;
-                Unit onCreate$lambda$3;
                 int i2 = i;
                 boolean booleanValue = ((Boolean) obj).booleanValue();
                 switch (i2) {
                     case 0:
-                        onCreate$lambda$2 = PrincipalActivity.onCreate$lambda$2(this.b, booleanValue);
+                        onCreate$lambda$2 = PrincipalActivity.onCreate$lambda$2(principalActivityThis, booleanValue);
                         return onCreate$lambda$2;
                     default:
-                        onCreate$lambda$3 = PrincipalActivity.onCreate$lambda$3(this.b, booleanValue);
+                        Unit onCreate$lambda$3 = PrincipalActivity.onCreate$lambda$3(principalActivityThis, booleanValue);
                         return onCreate$lambda$3;
                 }
             }
         });
         final int i2 = 1;
-        companion.startReceiver(this, companion.getFILTER_GPS(), new Function1(this) { // from class: co.ceduladigital.sdk.v7
-            public final /* synthetic */ PrincipalActivity b;
-
-            {
-                this.b = this;
-            }
+        companion.startReceiver(this, companion.getFILTER_GPS(), new Function1() { // from class: co.ceduladigital.sdk.v7
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit onCreate$lambda$2;
-                Unit onCreate$lambda$3;
                 int i22 = i2;
                 boolean booleanValue = ((Boolean) obj).booleanValue();
                 switch (i22) {
                     case 0:
-                        onCreate$lambda$2 = PrincipalActivity.onCreate$lambda$2(this.b, booleanValue);
+                        onCreate$lambda$2 = PrincipalActivity.onCreate$lambda$2(principalActivityThis, booleanValue);
                         return onCreate$lambda$2;
                     default:
-                        onCreate$lambda$3 = PrincipalActivity.onCreate$lambda$3(this.b, booleanValue);
+                        Unit onCreate$lambda$3 = PrincipalActivity.onCreate$lambda$3(principalActivityThis, booleanValue);
                         return onCreate$lambda$3;
                 }
             }

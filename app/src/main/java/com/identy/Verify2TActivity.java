@@ -387,7 +387,7 @@ public class Verify2TActivity extends FingerActivity {
             }
             cause = th.getCause();
             if (cause != null) {
-                throw th;
+                throw new RuntimeException(th);
             }
             throw new RuntimeException(cause);
         }

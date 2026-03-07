@@ -628,7 +628,7 @@ public class CaptureThumbActivity extends FingerActivity {
                 try {
                 } catch (Throwable th) {
                     if (i2 < 30 || i2 >= 32) {
-                        throw th;
+                        throw new RuntimeException(th);
                     }
                     getqualityscore.PngjPrematureEnding = th;
                     getqualityscore.PngjBadSignature(22);
@@ -700,7 +700,7 @@ public class CaptureThumbActivity extends FingerActivity {
                     default:
                 }
             }
-            throw th;
+            throw new RuntimeException(th);
         } catch (Throwable th2) {
             Throwable cause = th2.getCause();
 
@@ -855,7 +855,7 @@ public class CaptureThumbActivity extends FingerActivity {
                             Object[] objArr17 = new Object[1];
                             b(s2, b4, b5, objArr17);
                             if (!Class.forName((String) objArr17[0]).isInstance(th2) || i5 < 12 || i5 >= 19) {
-                                throw th2;
+                                throw new RuntimeException(th2);
                             }
                         }
                     } else {
@@ -958,9 +958,9 @@ public class CaptureThumbActivity extends FingerActivity {
         } catch (Throwable th3) {
             Throwable cause2 = th3.getCause();
             if (cause2 == null) {
-                throw th3;
+                throw new RuntimeException(th3);
             }
-            throw cause2;
+            throw new RuntimeException(cause2);
         }
     }
 

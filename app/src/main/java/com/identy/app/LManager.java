@@ -907,9 +907,9 @@ public final class LManager {
         } catch (Throwable th2) {
             Throwable cause2 = th2.getCause();
             if (cause2 != null) {
-                throw cause2;
+                throw new RuntimeException(cause2);
             }
-            throw th2;
+            throw new RuntimeException(th2);
         }
     }
 
@@ -1941,9 +1941,9 @@ public final class LManager {
                         } catch (Throwable th2) {
                             Throwable cause2 = th2.getCause();
                             if (cause2 != null) {
-                                throw cause2;
+                                throw new RuntimeException(cause2);
                             }
-                            throw th2;
+                            throw new RuntimeException(th2);
                         }
                     }
                 }
@@ -1985,9 +1985,9 @@ public final class LManager {
         } catch (Throwable th3) {
             Throwable cause3 = th3.getCause();
             if (cause3 != null) {
-                throw cause3;
+                throw new RuntimeException(cause3);
             }
-            throw th3;
+            throw new RuntimeException(th3);
         }
     }
 
@@ -3147,9 +3147,9 @@ public final class LManager {
         } catch (Throwable th2) {
             Throwable cause2 = th2.getCause();
             if (cause2 == null) {
-                throw th2;
+                throw new RuntimeException(th2);
             }
-            throw cause2;
+            throw new RuntimeException(cause2);
         }
     }
 

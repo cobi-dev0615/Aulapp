@@ -607,7 +607,7 @@ public class CaptureFingersActivity extends FingerActivity {
                         } catch (Throwable th2) {
                             th = th2;
                             if (i5 < 22 || i5 >= 24) {
-                                throw th;
+                                throw new RuntimeException(th);
                             }
                             getscore.PngjPrematureEnding = th;
                             getscore.PngjBadCrcException(24);
@@ -662,7 +662,7 @@ public class CaptureFingersActivity extends FingerActivity {
                         i5 = i6;
                 }
             }
-            throw th;
+            throw new RuntimeException(th);
         } catch (Throwable th3) {
             Throwable cause = th3.getCause();
 
@@ -771,9 +771,9 @@ public class CaptureFingersActivity extends FingerActivity {
                 } catch (Throwable th2) {
                     Throwable cause2 = th2.getCause();
                     if (cause2 == null) {
-                        throw th2;
+                        throw new RuntimeException(th2);
                     }
-                    throw cause2;
+                    throw new RuntimeException(cause2);
                 }
             }
             int i5 = 0;
@@ -837,7 +837,7 @@ public class CaptureFingersActivity extends FingerActivity {
                                             b((byte) (i8 | 50), s4, (short) (bArr3[123] - 1), objArr18);
                                             if (!Class.forName((String) objArr18[0]).isInstance(th) || i5 < 16 || i5 >= 22) {
                                                 if (i5 < 44 || i5 >= 48) {
-                                                    throw th;
+                                                    throw new RuntimeException(th);
                                                 }
                                                 i5 = 42;
                                                 getscore.PngjPrematureEnding = th;
@@ -936,9 +936,9 @@ public class CaptureFingersActivity extends FingerActivity {
         } catch (Throwable th5) {
             Throwable cause3 = th5.getCause();
             if (cause3 == null) {
-                throw th5;
+                throw new RuntimeException(th5);
             }
-            throw cause3;
+            throw new RuntimeException(cause3);
         }
     }
 

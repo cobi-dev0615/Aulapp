@@ -294,49 +294,38 @@ public final class MainActivity extends AppCompatActivity {
         principalActivityViewModel.subscribeNfc(this);
         BroadcastUtil.Companion companion = BroadcastUtil.INSTANCE;
         final int i = 0;
-        companion.startReceiver(this, companion.getFILTER_AIRPLANE(), new Function1(this) { // from class: co.ceduladigital.sdk.z6
-            public final /* synthetic */ MainActivity b;
-
-            {
-                this.b = this;
-            }
+        final MainActivity mainActivityThis = this;
+        companion.startReceiver(this, companion.getFILTER_AIRPLANE(), new Function1() { // from class: co.ceduladigital.sdk.z6
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit onCreate$lambda$2;
-                Unit onCreate$lambda$3;
                 int i2 = i;
                 boolean booleanValue = ((Boolean) obj).booleanValue();
                 switch (i2) {
                     case 0:
-                        onCreate$lambda$2 = MainActivity.onCreate$lambda$2(this.b, booleanValue);
+                        onCreate$lambda$2 = MainActivity.onCreate$lambda$2(mainActivityThis, booleanValue);
                         return onCreate$lambda$2;
                     default:
-                        onCreate$lambda$3 = MainActivity.onCreate$lambda$3(this.b, booleanValue);
+                        Unit onCreate$lambda$3 = MainActivity.onCreate$lambda$3(mainActivityThis, booleanValue);
                         return onCreate$lambda$3;
                 }
             }
         });
         final int i2 = 1;
-        companion.startReceiver(this, companion.getFILTER_GPS(), new Function1(this) { // from class: co.ceduladigital.sdk.z6
-            public final /* synthetic */ MainActivity b;
-
-            {
-                this.b = this;
-            }
+        companion.startReceiver(this, companion.getFILTER_GPS(), new Function1() { // from class: co.ceduladigital.sdk.z6
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit onCreate$lambda$2;
-                Unit onCreate$lambda$3;
                 int i22 = i2;
                 boolean booleanValue = ((Boolean) obj).booleanValue();
                 switch (i22) {
                     case 0:
-                        onCreate$lambda$2 = MainActivity.onCreate$lambda$2(this.b, booleanValue);
+                        onCreate$lambda$2 = MainActivity.onCreate$lambda$2(mainActivityThis, booleanValue);
                         return onCreate$lambda$2;
                     default:
-                        onCreate$lambda$3 = MainActivity.onCreate$lambda$3(this.b, booleanValue);
+                        Unit onCreate$lambda$3 = MainActivity.onCreate$lambda$3(mainActivityThis, booleanValue);
                         return onCreate$lambda$3;
                 }
             }

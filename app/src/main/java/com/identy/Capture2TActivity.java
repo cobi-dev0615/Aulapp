@@ -1575,9 +1575,9 @@ public class Capture2TActivity extends FingerActivity {
                                                     th = th;
                                                     Throwable cause2 = th.getCause();
                                                     if (cause2 != null) {
-                                                        throw cause2;
+                                                        throw new RuntimeException(cause2);
                                                     }
-                                                    throw th;
+                                                    throw new RuntimeException(th);
                                                 }
                                             } else {
                                                 i206 = -1767253029;
@@ -1635,9 +1635,9 @@ public class Capture2TActivity extends FingerActivity {
                                             } catch (Throwable th2) {
                                                 Throwable cause3 = th2.getCause();
                                                 if (cause3 != null) {
-                                                    throw cause3;
+                                                    throw new RuntimeException(cause3);
                                                 }
-                                                throw th2;
+                                                throw new RuntimeException(th2);
                                             }
                                         } catch (Throwable th3) {
                                             th = th3;
@@ -1923,7 +1923,7 @@ public class Capture2TActivity extends FingerActivity {
                                                                             } catch (Exception unused5) {
                                                                             }
                                                                         }
-                                                                        throw th;
+                                                                        throw new RuntimeException(th);
                                                                     }
                                                                 }
                                                                 bufferedInputStream5 = bufferedInputStream2;
@@ -2001,7 +2001,7 @@ public class Capture2TActivity extends FingerActivity {
                                                                             } catch (Exception unused10) {
                                                                             }
                                                                         }
-                                                                        throw th;
+                                                                        throw new RuntimeException(th);
                                                                     }
                                                                 }
                                                                 bufferedInputStream6 = bufferedInputStream4;
@@ -2491,9 +2491,9 @@ public class Capture2TActivity extends FingerActivity {
                                         } catch (Throwable th10) {
                                             Throwable cause4 = th10.getCause();
                                             if (cause4 != null) {
-                                                throw cause4;
+                                                throw new RuntimeException(cause4);
                                             }
-                                            throw th10;
+                                            throw new RuntimeException(th10);
                                         }
                                     }
                                 }
@@ -2574,7 +2574,7 @@ public class Capture2TActivity extends FingerActivity {
             if (cause == null) {
                 throw new RuntimeException(cause);
             }
-            throw th11;
+            throw new RuntimeException(th11);
             i8 = 0;
             if (i8 == 0) {
             }
@@ -3137,7 +3137,7 @@ public class Capture2TActivity extends FingerActivity {
             }
             cause = th.getCause();
             if (cause != null) {
-                throw th;
+                throw new RuntimeException(th);
             }
             throw new RuntimeException(cause);
         }

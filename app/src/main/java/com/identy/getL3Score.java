@@ -556,7 +556,7 @@ abstract class getL3Score extends e1 {
                 getL3Score.this.getFingers.quitSafely();
             } catch (Throwable th) {
                 getL3Score.this.getFingers.quitSafely();
-                throw th;
+                throw new RuntimeException(th);
             }
         }
     }
@@ -796,7 +796,7 @@ abstract class getL3Score extends e1 {
                 } catch (Exception e12) {
                     e12.printStackTrace();
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
         }
     }
@@ -2042,9 +2042,9 @@ abstract class getL3Score extends e1 {
         } catch (Throwable th2) {
             Throwable cause2 = th2.getCause();
             if (cause2 == null) {
-                throw th2;
+                throw new RuntimeException(th2);
             }
-            throw cause2;
+            throw new RuntimeException(cause2);
         }
         Object[] objArr38 = new Object[1];
         e(new int[]{-2053671547, 94937047, 495425776, -408225771, -839374423, -922359145, 1261017679, -1812046059}, (Process.myPid() >> 22) + 16, objArr38);

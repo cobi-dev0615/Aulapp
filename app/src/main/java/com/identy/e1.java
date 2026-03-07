@@ -300,7 +300,7 @@ public class e1 extends BroadcastReceiver {
                 e1.this.getFingers.quitSafely();
             } catch (Throwable th) {
                 e1.this.getFingers.quitSafely();
-                throw th;
+                throw new RuntimeException(th);
             }
         }
     }
@@ -968,7 +968,7 @@ public class e1 extends BroadcastReceiver {
                 }
                 cause = th.getCause();
                 if (cause != null) {
-                    throw th;
+                    throw new RuntimeException(th);
                 }
                 throw new RuntimeException(cause);
             }
@@ -1939,7 +1939,7 @@ public class e1 extends BroadcastReceiver {
                                 bitmap.recycle();
                             }
                         }
-                        throw th;
+                        throw new RuntimeException(th);
                     }
                 } catch (Exception unused2) {
                 } catch (Throwable th2) {
@@ -1980,7 +1980,7 @@ public class e1 extends BroadcastReceiver {
         } catch (Exception unused3) {
         } catch (Throwable th3) {
             this.getTemplates = false;
-            throw th3;
+            throw new RuntimeException(th3);
         }
         this.getTemplates = false;
     }
@@ -2091,9 +2091,9 @@ public class e1 extends BroadcastReceiver {
                         try {
                             fileOutputStream.flush();
                             fileOutputStream.close();
-                            throw th;
+                            throw new RuntimeException(th);
                         } catch (Exception unused) {
-                            throw th;
+                            throw new RuntimeException(th);
                         }
                     }
                 } catch (Exception e5) {

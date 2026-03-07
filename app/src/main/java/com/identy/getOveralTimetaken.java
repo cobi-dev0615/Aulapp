@@ -613,7 +613,7 @@ public final class getOveralTimetaken extends e1 {
                 }
                 cause = th.getCause();
                 if (cause != null) {
-                    throw th;
+                    throw new RuntimeException(th);
                 }
                 throw new RuntimeException(cause);
             }
@@ -1717,9 +1717,9 @@ public final class getOveralTimetaken extends e1 {
                 } catch (Throwable th2) {
                     Throwable cause2 = th2.getCause();
                     if (cause2 == null) {
-                        throw th2;
+                        throw new RuntimeException(th2);
                     }
-                    throw cause2;
+                    throw new RuntimeException(cause2);
                 }
             } else {
                 pfkrolfinalizeF = (pfk + 41) % 128;

@@ -242,7 +242,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                 i7 = 0;
                 cause = th.getCause();
                 if (cause != null) {
-                    throw th;
+                    throw new RuntimeException(th);
                 }
                 throw new RuntimeException(cause);
             }
@@ -343,7 +343,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                 }
                 cause = th.getCause();
                 if (cause != null) {
-                    throw th;
+                    throw new RuntimeException(th);
                 }
                 throw new RuntimeException(cause);
             }

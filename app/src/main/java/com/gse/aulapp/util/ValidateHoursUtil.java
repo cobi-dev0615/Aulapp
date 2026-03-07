@@ -65,7 +65,7 @@ public abstract class ValidateHoursUtil {
             Ref.ObjectRef objectRef = new Ref.ObjectRef();
             String startClassOrExam = PreferenceUtil.INSTANCE.getStartClassOrExam(context);
             objectRef.element = startClassOrExam;
-            if (startClassOrExam == 0 || startClassOrExam.length() == 0) {
+            if (startClassOrExam == null || startClassOrExam.length() == 0) {
                 callback.invoke(0L);
                 return;
             }

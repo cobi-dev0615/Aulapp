@@ -388,7 +388,7 @@ public final class PngjInputException {
                 }
                 cause = th.getCause();
                 if (cause != null) {
-                    throw th;
+                    throw new RuntimeException(th);
                 }
                 throw new RuntimeException(cause);
             }

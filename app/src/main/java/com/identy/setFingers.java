@@ -1615,7 +1615,7 @@ final class setFingers extends e1 {
                 }
             } catch (Exception unused3) {
             }
-            throw th;
+            throw new RuntimeException(th);
         }
         return null;
     }

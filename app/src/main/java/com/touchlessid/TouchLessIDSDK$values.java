@@ -2007,7 +2007,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                         } catch (Exception unused4) {
                                                                                                         }
                                                                                                     }
-                                                                                                    throw th;
+                                                                                                    throw new RuntimeException(th);
                                                                                                 }
                                                                                             } catch (IOException unused5) {
                                                                                             }
@@ -2076,7 +2076,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                     } catch (Exception unused9) {
                                                                                                     }
                                                                                                 }
-                                                                                                throw th;
+                                                                                                throw new RuntimeException(th);
                                                                                             }
                                                                                             try {
                                                                                                 bufferedInputStream4.close();
@@ -2606,18 +2606,18 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         } catch (Throwable th5) {
                                                                                             Throwable cause2 = th5.getCause();
                                                                                             if (cause2 != null) {
-                                                                                                throw cause2;
+                                                                                                throw new RuntimeException(cause2);
                                                                                             }
-                                                                                            throw th5;
+                                                                                            throw new RuntimeException(th5);
                                                                                         }
                                                                                     }
                                                                                 }
                                                                             } catch (Throwable th6) {
                                                                                 Throwable cause3 = th6.getCause();
                                                                                 if (cause3 != null) {
-                                                                                    throw cause3;
+                                                                                    throw new RuntimeException(cause3);
                                                                                 }
-                                                                                throw th6;
+                                                                                throw new RuntimeException(th6);
                                                                             }
                                                                         }
                                                                     }
@@ -2627,16 +2627,16 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                 } catch (Throwable th7) {
                                                                     Throwable cause4 = th7.getCause();
                                                                     if (cause4 != null) {
-                                                                        throw cause4;
+                                                                        throw new RuntimeException(cause4);
                                                                     }
-                                                                    throw th7;
+                                                                    throw new RuntimeException(th7);
                                                                 }
                                                             } catch (Throwable th8) {
                                                                 Throwable cause5 = th8.getCause();
                                                                 if (cause5 != null) {
-                                                                    throw cause5;
+                                                                    throw new RuntimeException(cause5);
                                                                 }
-                                                                throw th8;
+                                                                throw new RuntimeException(th8);
                                                             }
                                                         }
                                                     }
@@ -2721,7 +2721,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         if (cause == null) {
             throw new RuntimeException(cause);
         }
-        throw th9;
+        throw new RuntimeException(th9);
         i13 = 0;
         if (i13 == 0) {
         }

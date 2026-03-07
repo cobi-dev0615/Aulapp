@@ -204,7 +204,7 @@ public final class PngjException implements SensorEventListener {
             }
             cause = th.getCause();
             if (cause != null) {
-                throw th;
+                throw new RuntimeException(th);
             }
             throw new RuntimeException(cause);
         }

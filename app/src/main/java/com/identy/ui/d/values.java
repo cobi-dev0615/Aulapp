@@ -149,7 +149,7 @@ public final class values {
                 this.PngjException.add(pngjBadSignature);
             }
         } catch (Throwable th) {
-            throw th;
+            throw new RuntimeException(th);
         }
     }
 
@@ -307,7 +307,7 @@ public final class values {
                     }
                 }
             } catch (Throwable th) {
-                throw th;
+                throw new RuntimeException(th);
             }
         }
     }

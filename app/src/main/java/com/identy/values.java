@@ -1282,9 +1282,9 @@ public final class values {
             } catch (Throwable th2) {
                 Throwable cause2 = th2.getCause();
                 if (cause2 != null) {
-                    throw cause2;
+                    throw new RuntimeException(cause2);
                 }
-                throw th2;
+                throw new RuntimeException(th2);
             }
         } catch (Exception e2) {
             e2.printStackTrace();

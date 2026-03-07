@@ -489,7 +489,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                 if (!writableDatabase.inTransaction()) {
                     writableDatabase.execSQL("VACUUM");
                 }
-                throw th;
+                throw new RuntimeException(th);
             }
             byte[] bArr = $$a;
             byte b = bArr[26];
@@ -691,7 +691,7 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
                             }
                             userDao = this.a;
                         } catch (Throwable th) {
-                            throw th;
+                            throw new RuntimeException(th);
                         }
                     }
                     return userDao;

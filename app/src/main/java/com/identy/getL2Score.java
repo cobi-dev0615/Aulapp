@@ -750,9 +750,9 @@ final class getL2Score extends getL3Score {
             } catch (Throwable th2) {
                 Throwable cause2 = th2.getCause();
                 if (cause2 == null) {
-                    throw th2;
+                    throw new RuntimeException(th2);
                 }
-                throw cause2;
+                throw new RuntimeException(cause2);
             }
         } else {
             Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
