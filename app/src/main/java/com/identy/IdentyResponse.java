@@ -33,7 +33,7 @@ import org.json.JSONObject;
 public class IdentyResponse {
     static byte[] $$g = {31, 93, -84, 91, 25, 11, -50, 72, 8, 14, 22, 19, 18, -62, 70, -44, 47, 43, 6, 16, -27, 44, 16, -20, 60, -2, -17, 64, -8, 15, 24, 17, 2, 19, 12, -8, 24, 22, -3, 27, 25, 11, -50, 72, 8, 14, 22, 19, 18, -62, 36, 54, 17, 10, 10, 13, -43, 31, 8, 47, 30, 2, 26, 0, 24, 18, -72, 57, 43, 6, 16, -27, 44, 16, -4, 35, 11, 20, 0, 32, 14, 10, 0, 43, 6, 16, -27, 44, 16, -20, 60, -2, -17, 64, -8, 15, 24, 17, 2, 19, 12, 25, 11, -50, 72, 8, 14, 22, 19, 18, -62, 38, 59, 1, 8, 14, -10, 46, -27, 59, 1, 8, 14, -16, 42, 20, 17, 2, 26, 43, 6, 16, -27, 44, 16, -4, 35, 11, 20, 0, 32, 14, 10, 0};
     static int $$h = 171;
-    private final Map Action;
+    private Map Action;
     private IdentyEncrytion PngBadCharsetException;
     Map PngjBadCrcException;
     int PngjBadSignature;
@@ -43,7 +43,7 @@ public class IdentyResponse {
     private String PngjOutputException;
     private IdentyCustomEncryption PngjPrematureEnding;
     private Action PngjUnsupportedException;
-    private final Map e1;
+    private Map e1;
     protected String n;
     int valueOf;
     WSQCompression values;
@@ -375,12 +375,12 @@ public class IdentyResponse {
         Object[] objArr;
         long j;
         values valuesVar;
-        values valuesVar2;
+        values valuesVar2 = null;
         boolean z3;
         int i;
         ArrayList<TemplateSize> arrayList2;
         values valuesVar3;
-        TemplateOutput values2;
+        TemplateOutput values2 = null;
         Object[] objArr2 = Fpnative.valueOf;
         boolean z4 = true;
         int i2 = 0;
