@@ -5606,10 +5606,10 @@ public class IdentySdk {
         long j;
         Object PngjBadSignature2;
         long j2;
-        char c;
+        char c = 0;
         char c2;
         Context context = null;
-        char c3;
+        char c3 = 0;
         Object[] objArr2;
         float f;
         Object[] objArr3 = com.identy.Fpnative.valueOf;
@@ -14724,6 +14724,7 @@ public class IdentySdk {
         } else {
             throw null;
         }
+        return false;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
