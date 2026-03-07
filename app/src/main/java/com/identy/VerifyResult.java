@@ -177,7 +177,7 @@ public class VerifyResult {
         int i2;
         float f2;
         String str2 = str;
-        byte[] bArr3 = str2;
+        byte[] bArr3 = null;
         if (str2 != null) {
             bArr3 = str2.getBytes("ISO-8859-1");
         }
@@ -368,8 +368,8 @@ public class VerifyResult {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 4985;
-                Fpnative.valueOf = 0;
+                // ((long[]) $$a[0])[0] = j + 4985;
+                Fpnative.valueOf = null;
                 String str = this.enrollmentTs;
                 PngjException = (PngjBadCrcException + 23) % 128;
                 return str;
@@ -739,8 +739,8 @@ public class VerifyResult {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 5009;
-                Fpnative.valueOf = 0;
+                // ((long[]) $$a[0])[0] = j + 5009;
+                Fpnative.valueOf = null;
                 this.matched = z;
                 return;
             }

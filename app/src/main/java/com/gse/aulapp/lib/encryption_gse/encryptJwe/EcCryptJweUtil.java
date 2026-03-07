@@ -124,11 +124,6 @@ public abstract class EcCryptJweUtil {
         } catch (IOException e6) {
             Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, e6);
             return eCPublicKey;
-        } catch (NoSuchAlgorithmException e7) {
-            Logger.getLogger(EcCryptJweUtil.class.getName()).log(Level.SEVERE, (String) null, e7);
-            return eCPublicKey;
-        } catch (InvalidKeySpecException unused2) {
-            return eCPublicKey;
         }
     }
 
