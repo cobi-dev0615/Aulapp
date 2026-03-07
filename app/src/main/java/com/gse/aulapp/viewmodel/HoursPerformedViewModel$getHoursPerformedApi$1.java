@@ -104,7 +104,7 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
             ResultKt.throwOnFailure(obj);
             LogSendUtil.INSTANCE.setLog(this.$context, "getHoursPerformedApi request: " + this.$request, null, false);
             sessionRepository = this.this$0.sessionRepository;
-            Flow m1541catch = FlowKt.m1541catch(sessionRepository.getHoursScheduled(this.$context, this.$request), new AnonymousClass1(this.$context, this.this$0, null));
+            Flow m1541catch = sessionRepository.getHoursScheduled(this.$context, this.$request);
             final Context context = this.$context;
             final HoursPerformedViewModel hoursPerformedViewModel = this.this$0;
             FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.HoursPerformedViewModel$getHoursPerformedApi$1.2

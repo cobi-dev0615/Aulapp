@@ -106,7 +106,7 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
         if (i == 0) {
             ResultKt.throwOnFailure(obj);
             sessionRepository = this.this$0.repository;
-            Flow m1541catch = FlowKt.m1541catch(sessionRepository.sendSessionStatusAppointment(this.$context, this.$sessionID, EnumStatusAppointment.UNDER_DEVELOPMENT), new AnonymousClass1(this.$context, this.this$0, null));
+            Flow m1541catch = sessionRepository.sendSessionStatusAppointment(this.$context, this.$sessionID, EnumStatusAppointment.UNDER_DEVELOPMENT);
             final Context context = this.$context;
             final ClassPracticeBeforeViewModel classPracticeBeforeViewModel = this.this$0;
             final String str = this.$data;

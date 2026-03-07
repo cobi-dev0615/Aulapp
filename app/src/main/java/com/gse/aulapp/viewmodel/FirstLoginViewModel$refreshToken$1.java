@@ -161,7 +161,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
         if (refreshTokenRequest != null) {
             LogSendUtil.INSTANCE.setLog(this.$context, "refreshToken request: " + refreshTokenRequest, null, false);
             refreshTokenRepository = this.this$0.tokenRefreshRepository;
-            Flow m1541catch = FlowKt.m1541catch(refreshTokenRepository.refreshToken(this.$context, this.$tokenRefreshRequest), new AnonymousClass1(this.$context, this.$tokenRefreshRequest, this.this$0, null));
+            Flow m1541catch = refreshTokenRepository.refreshToken(this.$context, this.$tokenRefreshRequest);
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$context, this.this$0);
             this.label = 2;
         } else {

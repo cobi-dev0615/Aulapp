@@ -114,7 +114,7 @@ public final class FirstLoginViewModel$recoverPassword$1 extends SuspendLambda i
                 passwordRecoveryRepository = this.this$0.passwordRecoveryRepository;
                 Context applicationContext = GeneralApp.INSTANCE.getInstance().getApplicationContext();
                 Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-                Flow m1541catch = FlowKt.m1541catch(passwordRecoveryRepository.passwordRecovery(applicationContext, passwordRecoveryRequest), new AnonymousClass1(this.$context, this.this$0, null));
+                Flow m1541catch = passwordRecoveryRepository.passwordRecovery(applicationContext, passwordRecoveryRequest);
                 final Context context = this.$context;
                 final FirstLoginViewModel firstLoginViewModel = this.this$0;
                 FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.FirstLoginViewModel$recoverPassword$1.2

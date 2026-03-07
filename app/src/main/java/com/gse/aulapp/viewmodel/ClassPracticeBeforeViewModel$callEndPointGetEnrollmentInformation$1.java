@@ -145,7 +145,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
         }
         LogSendUtil.INSTANCE.setLog(this.$activity, "endPointGetEnrollmentInformation Request: " + this.$getEnrollmentInformationRequest, null, false);
         getEnrollmentInformationRepository = this.this$0.enrollmentInformationRepository;
-        Flow m1541catch = FlowKt.m1541catch(getEnrollmentInformationRepository.getGetEnrollmentInformation(this.$activity, this.$getEnrollmentInformationRequest), new AnonymousClass1(this.$activity, this.this$0, null));
+        Flow m1541catch = getEnrollmentInformationRepository.getGetEnrollmentInformation(this.$activity, this.$getEnrollmentInformationRequest);
         final Activity activity = this.$activity;
         final UserInfoDto userInfoDto = this.$userInfo;
         final ClassPracticeBeforeViewModel classPracticeBeforeViewModel = this.this$0;

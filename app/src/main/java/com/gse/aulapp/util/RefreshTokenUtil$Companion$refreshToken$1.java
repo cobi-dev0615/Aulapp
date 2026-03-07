@@ -97,7 +97,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
             if (refreshTokenRequest != null) {
                 LogSendUtil.INSTANCE.setLog(this.$context, "refreshToken request: " + refreshTokenRequest, null, false);
                 refreshTokenRepository = RefreshTokenUtil.RefreshTokenRepository;
-                Flow m1541catch = FlowKt.m1541catch(refreshTokenRepository.refreshToken(this.$context, this.$refreshTokenRequest.element), new AnonymousClass1(this.$context, null));
+                Flow m1541catch = refreshTokenRepository.refreshToken(this.$context, this.$refreshTokenRequest.element);
                 final Context context = this.$context;
                 FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.util.RefreshTokenUtil$Companion$refreshToken$1.2
                     @Override // kotlinx.coroutines.flow.FlowCollector

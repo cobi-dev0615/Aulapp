@@ -110,7 +110,7 @@ public final class LoginViewModel$login$1 extends SuspendLambda implements Funct
             mutableStateFlow.setValue(new Status.Loading(false, 1, null));
             if (this.$loginRequest != null) {
                 loginRepository = this.this$0.loginRepository;
-                Flow m1541catch = FlowKt.m1541catch(loginRepository.login(this.$context, this.$loginRequest), new AnonymousClass1(this.this$0, null));
+                Flow m1541catch = loginRepository.login(this.$context, this.$loginRequest);
                 final LoginRequest loginRequest = this.$loginRequest;
                 final FragmentActivity fragmentActivity = this.$context;
                 final LoginViewModel loginViewModel = this.this$0;

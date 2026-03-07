@@ -163,7 +163,7 @@ public final class ClassPracticeBeforeViewModel$initBiometrix$1 extends SuspendL
         }
         LogSendUtil.INSTANCE.setLog(this.$activity, "request: BiometrixRequest: " + this.$request, "endPointGetUrl", false);
         biometrixRepository = this.this$0.biometrixRepository;
-        Flow m1541catch = FlowKt.m1541catch(biometrixRepository.getUrlBiometrix(this.$activity, this.$request), new AnonymousClass1(this.$activity, this.this$0, null));
+        Flow m1541catch = biometrixRepository.getUrlBiometrix(this.$activity, this.$request);
         final Activity activity = this.$activity;
         final ClassPracticeBeforeViewModel classPracticeBeforeViewModel = this.this$0;
         FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.ClassPracticeBeforeViewModel$initBiometrix$1.2

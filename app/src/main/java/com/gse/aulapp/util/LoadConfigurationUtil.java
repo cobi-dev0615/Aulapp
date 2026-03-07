@@ -20,7 +20,7 @@ public abstract class LoadConfigurationUtil {
 
     /* renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
-    private static ParameterListRepository parameterListRepository = new ParameterListRepository();
+    static ParameterListRepository parameterListRepository = new ParameterListRepository();
 
     @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\n"}, d2 = {"Lcom/gse/aulapp/util/LoadConfigurationUtil$Companion;", BuildConfig.FLAVOR, "<init>", "()V", "parameterListRepository", "Lcom/gse/aulapp/model/repository/ParameterListRepository;", "saveParameterListOnPreference", BuildConfig.FLAVOR, "context", "Landroid/app/Activity;", "app_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
     public static final class Companion {

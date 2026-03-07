@@ -94,7 +94,7 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
             ParameterListRequest parameterListRequest = new ParameterListRequest(null, 1, null);
             LogSendUtil.INSTANCE.setLog(this.$context, "saveParameterListOnPreference request: " + parameterListRequest, null, false);
             parameterListRepository = LoadConfigurationUtil.parameterListRepository;
-            Flow m1541catch = FlowKt.m1541catch(parameterListRepository.getParameterList(this.$context, parameterListRequest), new AnonymousClass1(this.$context, null));
+            Flow m1541catch = parameterListRepository.getParameterList(this.$context, parameterListRequest);
             final Activity activity = this.$context;
             FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.util.LoadConfigurationUtil$Companion$saveParameterListOnPreference$1.2
                 @Override // kotlinx.coroutines.flow.FlowCollector

@@ -69,14 +69,14 @@ public final class DefaultLocationClient$getLocationUpdates$1 extends SuspendLam
             final ProducerScope producerScope = (ProducerScope) this.L$0;
             context = this.this$0.context;
             if (!ContextExtKt.hasLocationPermission(context)) {
-                throw new LocationClient.LocationException("No tiene permiso(s) GPS");
+                throw new RuntimeException(new LocationClient.LocationException("No tiene permiso(s) GPS"));
             }
             context2 = this.this$0.context;
             Object systemService = context2.getSystemService("location");
             Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.location.LocationManager");
             LocationManager locationManager = (LocationManager) systemService;
             if (!locationManager.isProviderEnabled("gps") && !locationManager.isProviderEnabled("network")) {
-                throw new LocationClient.LocationException("GPS está desactivado");
+                throw new RuntimeException(new LocationClient.LocationException("GPS está desactivado"));
             }
             LocationRequest build = new LocationRequest.Builder(this.$interval).setPriority(100).build();
             Intrinsics.checkNotNullExpressionValue(build, "build(...)");

@@ -103,7 +103,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
             ResultKt.throwOnFailure(obj);
             LogSendUtil.INSTANCE.setLog(this.$context, "getRoutesFromApi request: " + this.$sessionInstructorRequest, null, false);
             sessionRepository = this.this$0.sessionRepository;
-            Flow m1541catch = FlowKt.m1541catch(sessionRepository.getSessionsRoute(this.$context, this.$sessionInstructorRequest), new AnonymousClass1(this.$context, this.this$0, null));
+            Flow m1541catch = sessionRepository.getSessionsRoute(this.$context, this.$sessionInstructorRequest);
             final Context context = this.$context;
             final RideHistoryViewModel rideHistoryViewModel = this.this$0;
             FlowCollector flowCollector = new FlowCollector() { // from class: com.gse.aulapp.viewmodel.RideHistoryViewModel$getRoutesFromApi$1.2

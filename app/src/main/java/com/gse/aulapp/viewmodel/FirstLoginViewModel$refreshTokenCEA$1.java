@@ -188,7 +188,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
                 ChangeCenterRequest changeCenterRequest = new ChangeCenterRequest(String.valueOf(centerDto != null ? centerDto.getCenterID() : null), this.$numberDocument);
                 LogSendUtil.INSTANCE.setLog(this.$activity, "refreshTokenCEA request: " + changeCenterRequest, null, false);
                 changeCenterRepository = this.this$0.changeCenterRepository;
-                Flow m1541catch = FlowKt.m1541catch(changeCenterRepository.changeCenter(this.$activity, changeCenterRequest), new AnonymousClass2(this.$activity, this.this$0, null));
+                Flow m1541catch = changeCenterRepository.changeCenter(this.$activity, changeCenterRequest);
                 final Activity activity = this.$activity;
                 final FirstLoginViewModel firstLoginViewModel = this.this$0;
                 final String str3 = this.$numberDocument;

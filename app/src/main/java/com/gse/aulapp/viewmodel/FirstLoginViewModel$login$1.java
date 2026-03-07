@@ -168,7 +168,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
         if (loginRequest != null) {
             LogSendUtil.INSTANCE.setLog(this.$context, q.i("Login request: ", loginRequest.getUsername()), null, false);
             loginRepository = this.this$0.loginRepository;
-            Flow m1541catch = FlowKt.m1541catch(loginRepository.login(this.$context, this.$loginRequest), new AnonymousClass1(this.$context, this.this$0, null));
+            Flow m1541catch = loginRepository.login(this.$context, this.$loginRequest);
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.this$0, this.$context);
             this.label = 2;
         } else {

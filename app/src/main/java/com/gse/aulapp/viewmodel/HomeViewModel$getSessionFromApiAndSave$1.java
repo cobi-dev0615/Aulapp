@@ -161,7 +161,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         }
         LogSendUtil.INSTANCE.setLog(this.$context, "getSessionFromApiAndSave request: " + this.$sessionInstructorRequest, null, false);
         sessionRepository = this.this$0.sessionRepository;
-        Flow m1541catch = FlowKt.m1541catch(sessionRepository.getSessionApi(this.$context, this.$sessionInstructorRequest), new AnonymousClass1(this.$context, this.this$0, null));
+        Flow m1541catch = sessionRepository.getSessionApi(this.$context, this.$sessionInstructorRequest);
         AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$context, this.this$0, this.$isValidateSession, this.$sessionId, this.$navController, this.$classRecyclerAdapter, this.$activity);
         this.label = 2;
     }

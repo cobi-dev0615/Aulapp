@@ -108,7 +108,7 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
                 passwordRecoveryRepository = this.this$0.passwordRecoveryRepository;
                 Context context = this.$context;
                 Intrinsics.checkNotNull(context, "null cannot be cast to non-null type androidx.fragment.app.FragmentActivity");
-                Flow m1541catch = FlowKt.m1541catch(passwordRecoveryRepository.passwordRecovery((FragmentActivity) context, this.$passwordRecoveryRequest), new AnonymousClass1(this.this$0, null));
+                Flow m1541catch = passwordRecoveryRepository.passwordRecovery((FragmentActivity) context, this.$passwordRecoveryRequest);
                 final FragmentPasswordRecoverBinding fragmentPasswordRecoverBinding = this.$binding;
                 final PasswordRecoverViewModel passwordRecoverViewModel = this.this$0;
                 final Context context2 = this.$context;

@@ -343,7 +343,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
             singleLiveEvent.postValue(new Status.Loading(false, 1, null));
             LogSendUtil.INSTANCE.setLog(this.$context, "validateTimeSessionFromApi request: " + this.$sessionInstructorRequest, null, false);
             sessionRepository = this.this$0.repository;
-            Flow m1541catch = FlowKt.m1541catch(sessionRepository.getSessionApi(this.$context, this.$sessionInstructorRequest), new AnonymousClass1(this.$context, this.this$0, null));
+            Flow m1541catch = sessionRepository.getSessionApi(this.$context, this.$sessionInstructorRequest);
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.this$0, this.$context, this.$activity, this.$sessionId, this.$isEnter, this.$sessionType, this.$findNavController);
             this.label = 1;
             if (m1541catch.collect(anonymousClass2, this) == coroutine_suspended) {
