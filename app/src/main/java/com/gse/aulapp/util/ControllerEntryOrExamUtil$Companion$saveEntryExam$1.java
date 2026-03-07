@@ -34,7 +34,7 @@ public final class ControllerEntryOrExamUtil$Companion$saveEntryExam$1 extends S
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(SessionRepository sessionRepository, String str, String str2, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(SessionRepository sessionRepository, String str, String str2, Continuation<?> continuation) {
             super(2, (Continuation<Object>) continuation);
             this.$repository = sessionRepository;
             this.$dateEntryExam = str;

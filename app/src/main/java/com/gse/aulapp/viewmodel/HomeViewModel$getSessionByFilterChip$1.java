@@ -30,7 +30,7 @@ public final class HomeViewModel$getSessionByFilterChip$1 extends SuspendLambda 
         final /* synthetic */ HomeViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(HomeViewModel homeViewModel, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(HomeViewModel homeViewModel, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = homeViewModel;
         }

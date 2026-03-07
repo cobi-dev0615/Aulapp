@@ -43,7 +43,7 @@ public final class RefreshTokenUtil$Companion$refreshToken$1 extends SuspendLamb
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Context context, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Context context, Continuation<?> continuation) {
             super(3, continuation);
             this.$context = context;
         }

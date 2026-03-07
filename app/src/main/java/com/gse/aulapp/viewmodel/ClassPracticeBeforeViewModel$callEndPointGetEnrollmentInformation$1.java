@@ -50,7 +50,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
         final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Activity activity, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Activity activity, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation<?> continuation) {
             super(3, continuation);
             this.$activity = activity;
             this.this$0 = classPracticeBeforeViewModel;
@@ -162,7 +162,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
                 final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
                 /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-                public AnonymousClass1(ApiResult<GetEnrollmentInformationResponse> apiResult, Activity activity, UserInfoDto userInfoDto, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation<? super AnonymousClass1> continuation) {
+                public AnonymousClass1(ApiResult<GetEnrollmentInformationResponse> apiResult, Activity activity, UserInfoDto userInfoDto, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation<?> continuation) {
                     super(2, continuation);
                     this.$apiResponse = apiResult;
                     this.$activity = activity;

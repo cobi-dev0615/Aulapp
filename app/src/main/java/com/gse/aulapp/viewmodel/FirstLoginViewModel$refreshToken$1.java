@@ -61,7 +61,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
         final /* synthetic */ FirstLoginViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Context context, RefreshTokenRequest refreshTokenRequest, FirstLoginViewModel firstLoginViewModel, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Context context, RefreshTokenRequest refreshTokenRequest, FirstLoginViewModel firstLoginViewModel, Continuation<?> continuation) {
             super(3, continuation);
             this.$context = context;
             this.$tokenRefreshRequest = refreshTokenRequest;

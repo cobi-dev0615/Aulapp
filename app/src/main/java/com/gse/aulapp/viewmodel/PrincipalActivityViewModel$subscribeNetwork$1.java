@@ -147,7 +147,7 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                     }
 
                     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-                    public AnonymousClass2(Activity activity, Continuation<? super AnonymousClass2> continuation) {
+                    public AnonymousClass2(Activity activity, Continuation<?> continuation) {
                         super(2, continuation);
                         this.$context = activity;
                     }

@@ -48,7 +48,7 @@ public final class LoginViewModel$login$1 extends SuspendLambda implements Funct
         final /* synthetic */ LoginViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(LoginViewModel loginViewModel, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(LoginViewModel loginViewModel, Continuation<?> continuation) {
             super(3, continuation);
             this.this$0 = loginViewModel;
         }

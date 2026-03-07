@@ -36,7 +36,7 @@ public final class ClassInCourseViewModel$setDataSessionDetailToDialog$2 extends
         final /* synthetic */ ClassInCourseViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(ClassInCourseViewModel classInCourseViewModel, DialogExamInfoLayoutBinding dialogExamInfoLayoutBinding, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(ClassInCourseViewModel classInCourseViewModel, DialogExamInfoLayoutBinding dialogExamInfoLayoutBinding, Continuation<?> continuation) {
             super(2, (Continuation<Object>) continuation);
             this.this$0 = classInCourseViewModel;
             this.$binding = dialogExamInfoLayoutBinding;

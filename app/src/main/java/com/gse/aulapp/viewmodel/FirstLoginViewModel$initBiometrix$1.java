@@ -46,7 +46,7 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
         final /* synthetic */ FirstLoginViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Activity activity, FirstLoginViewModel firstLoginViewModel, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Activity activity, FirstLoginViewModel firstLoginViewModel, Continuation<?> continuation) {
             super(3, continuation);
             this.$activity = activity;
             this.this$0 = firstLoginViewModel;

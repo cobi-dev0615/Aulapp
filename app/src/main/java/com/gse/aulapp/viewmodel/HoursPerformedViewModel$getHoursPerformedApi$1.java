@@ -48,7 +48,7 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
         final /* synthetic */ HoursPerformedViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Context context, HoursPerformedViewModel hoursPerformedViewModel, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Context context, HoursPerformedViewModel hoursPerformedViewModel, Continuation<?> continuation) {
             super(3, continuation);
             this.$context = context;
             this.this$0 = hoursPerformedViewModel;

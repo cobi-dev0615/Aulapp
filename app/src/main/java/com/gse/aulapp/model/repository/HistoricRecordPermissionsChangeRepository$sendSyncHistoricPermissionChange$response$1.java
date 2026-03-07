@@ -38,7 +38,7 @@ public final class HistoricRecordPermissionsChangeRepository$sendSyncHistoricPer
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Context context, HistoricRecordPermissionsChangeRequest historicRecordPermissionsChangeRequest, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Context context, HistoricRecordPermissionsChangeRequest historicRecordPermissionsChangeRequest, Continuation<?> continuation) {
             super(2, (Continuation<Object>) continuation);
             this.$context = context;
             this.$historyPermissionChangeRequest = historicRecordPermissionsChangeRequest;

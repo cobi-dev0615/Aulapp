@@ -35,7 +35,7 @@ public final class ClassInCourseViewModel$getSessionById$1 extends SuspendLambda
         final /* synthetic */ ClassInCourseViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(ClassInCourseViewModel classInCourseViewModel, String str, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(ClassInCourseViewModel classInCourseViewModel, String str, Continuation<?> continuation) {
             super(2, (Continuation<Object>) continuation);
             this.this$0 = classInCourseViewModel;
             this.$sessionID = str;

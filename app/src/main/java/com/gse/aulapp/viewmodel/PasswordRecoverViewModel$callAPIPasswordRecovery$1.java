@@ -47,7 +47,7 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
         final /* synthetic */ PasswordRecoverViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(PasswordRecoverViewModel passwordRecoverViewModel, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(PasswordRecoverViewModel passwordRecoverViewModel, Continuation<?> continuation) {
             super(3, continuation);
             this.this$0 = passwordRecoverViewModel;
         }

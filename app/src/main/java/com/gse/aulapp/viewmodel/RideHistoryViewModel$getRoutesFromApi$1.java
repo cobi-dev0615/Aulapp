@@ -49,7 +49,7 @@ public final class RideHistoryViewModel$getRoutesFromApi$1 extends SuspendLambda
         final /* synthetic */ RideHistoryViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Context context, RideHistoryViewModel rideHistoryViewModel, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Context context, RideHistoryViewModel rideHistoryViewModel, Continuation<?> continuation) {
             super(3, continuation);
             this.$context = context;
             this.this$0 = rideHistoryViewModel;

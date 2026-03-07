@@ -47,7 +47,7 @@ public final class ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         /* JADX WARN: Multi-variable type inference failed */
-        public AnonymousClass1(FragmentActivity fragmentActivity, EnumHandsAulapp enumHandsAulapp, String str, String str2, Function1<? super DataFailure, Unit> function1, Function1<? super FingerPrintResponse, Unit> function12, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(FragmentActivity fragmentActivity, EnumHandsAulapp enumHandsAulapp, String str, String str2, Function1<? super DataFailure, Unit> function1, Function1<? super FingerPrintResponse, Unit> function12, Continuation<?> continuation) {
             super(2, (Continuation<Object>) continuation);
             this.$fragmentActivity = fragmentActivity;
             this.$hand = enumHandsAulapp;

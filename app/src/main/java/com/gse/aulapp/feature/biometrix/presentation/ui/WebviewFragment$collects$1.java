@@ -39,7 +39,7 @@ public final class WebviewFragment$collects$1 extends SuspendLambda implements F
         final /* synthetic */ WebviewFragment this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(WebviewFragment webviewFragment, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(WebviewFragment webviewFragment, Continuation<?> continuation) {
             super(2, (Continuation<Object>) continuation);
             this.this$0 = webviewFragment;
         }

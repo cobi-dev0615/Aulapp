@@ -93,7 +93,7 @@ public final class ExternalUtil$Companion$getDateTimeBiometrics$1 extends Suspen
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Context context, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Context context, Continuation<?> continuation) {
             super(2, (Continuation<Object>) continuation);
             this.$context = context;
         }

@@ -34,7 +34,7 @@ public final class ClassPracticeBeforeViewModel$getSessionById$1 extends Suspend
         final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, String str, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, String str, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = classPracticeBeforeViewModel;
             this.$sessionID = str;

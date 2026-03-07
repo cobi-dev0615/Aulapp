@@ -308,12 +308,12 @@ public abstract class GpsUtil {
             Intrinsics.checkNotNullParameter(context, "context");
             List<Pair<Double, Double>> filterRoutes = filterRoutes(coordinates);
             ArrayList arrayList = new ArrayList(10);
-            Iterator<T> it = filterRoutes.iterator();
+            Iterator<?> it = filterRoutes.iterator();
             while (it.hasNext()) {
                 arrayList.add(Double.valueOf(((Number) ((Pair) it.next()).getFirst()).doubleValue()));
             }
             ArrayList arrayList2 = new ArrayList(10);
-            Iterator<T> it2 = filterRoutes.iterator();
+            Iterator<?> it2 = filterRoutes.iterator();
             while (it2.hasNext()) {
                 arrayList2.add(Double.valueOf(((Number) ((Pair) it2.next()).getSecond()).doubleValue()));
             }
@@ -324,7 +324,7 @@ public abstract class GpsUtil {
             drop = CollectionsKt.drop(arrayList, 1);
             drop2 = CollectionsKt.drop(arrayList2, 1);
             zip = CollectionsKt.zip(drop, drop2);
-            joinedString = CollectionsKt.joinedString(zip, "|", null, null, 0, null, null, 62, null);
+            joinedString = CollectionsKt.joinToString(zip, (CharSequence) "|", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, null);
             Intent intent = new Intent("android.intent.action.VIEW", Uri.parse("https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=" + first + "," + first2 + "&destination=" + last + "," + last2 + "&waypoints=" + joinedString));
             intent.setPackage("com.google.android.apps.maps");
             Intent createChooser = Intent.createChooser(new Intent(), "Mostrar ruta con...");

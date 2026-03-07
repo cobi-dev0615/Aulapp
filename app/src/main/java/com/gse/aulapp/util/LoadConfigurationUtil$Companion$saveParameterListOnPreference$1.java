@@ -42,7 +42,7 @@ public final class LoadConfigurationUtil$Companion$saveParameterListOnPreference
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Activity activity, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Activity activity, Continuation<?> continuation) {
             super(3, continuation);
             this.$context = activity;
         }

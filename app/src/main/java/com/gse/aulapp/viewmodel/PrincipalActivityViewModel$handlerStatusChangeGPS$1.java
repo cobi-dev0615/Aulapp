@@ -77,7 +77,7 @@ public final class PrincipalActivityViewModel$handlerStatusChangeGPS$1 extends S
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Activity activity, boolean z, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Activity activity, boolean z, Continuation<?> continuation) {
             super(2, continuation);
             this.$context = activity;
             this.$isEnabled = z;

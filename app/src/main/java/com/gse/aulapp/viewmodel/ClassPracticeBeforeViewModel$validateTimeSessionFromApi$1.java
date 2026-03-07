@@ -75,7 +75,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
         final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public AnonymousClass1(Context context, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation<? super AnonymousClass1> continuation) {
+        public AnonymousClass1(Context context, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation<?> continuation) {
             super(3, continuation);
             this.$context = context;
             this.this$0 = classPracticeBeforeViewModel;

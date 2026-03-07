@@ -105,7 +105,7 @@ public abstract class ConfigurationUtil {
         public final Object getConfigurationSessionByType(EnumTypeConfiguration enumTypeConfiguration, Continuation<? super ConfigurationSessionDto> continuation) {
             ConfigurationUtil$Companion$getConfigurationSessionByType$1 configurationUtil$Companion$getConfigurationSessionByType$1;
             int i;
-            Companion companion;
+            Companion companion = this;
             if (continuation instanceof ConfigurationUtil$Companion$getConfigurationSessionByType$1) {
                 configurationUtil$Companion$getConfigurationSessionByType$1 = (ConfigurationUtil$Companion$getConfigurationSessionByType$1) continuation;
                 int i2 = configurationUtil$Companion$getConfigurationSessionByType$1.label;
