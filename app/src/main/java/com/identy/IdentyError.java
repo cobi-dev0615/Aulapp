@@ -136,7 +136,7 @@ public final class IdentyError extends IdentyResponse {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private static void b(short s, short s2, byte b, Object[] objArr) {
-        int i;
+        int i = 0;
         int i2;
         int i3 = 19 - (s2 * 6);
         int i4 = 118 - (b * 38);
@@ -177,7 +177,7 @@ public final class IdentyError extends IdentyResponse {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void c(int i, boolean z, String str, int i2, int i3, Object[] objArr) {
+    private static void c(int i, boolean z, String str, int i2, int i3, Object[] objArr) throws Exception {
         int i4;
         Throwable cause;
         int i5;
@@ -404,7 +404,6 @@ public final class IdentyError extends IdentyResponse {
             }
             throw new RuntimeException(th);
         }
-        PngjExceptionInternal = (PngjUnsupportedException + 9) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:0x0131  */
@@ -424,12 +423,12 @@ public final class IdentyError extends IdentyResponse {
         long j;
         Object PngjBadSignature;
         long j2;
-        int i;
+        int i = 0;
         Object PngjBadSignature2;
         char c;
-        char c2;
+        char c2 = 0;
         char c3;
-        Object[] objArr2;
+        Object[] objArr2 = null;
         Object PngjBadSignature3;
         Object PngjBadSignature4;
         int i2;
@@ -662,10 +661,11 @@ public final class IdentyError extends IdentyResponse {
         } catch (Throwable th2) {
             Throwable cause2 = th2.getCause();
             if (cause2 != null) {
-                throw cause2;
+                throw new RuntimeException(cause2);
             }
-            throw th2;
+            throw new RuntimeException(th2);
         }
+        return null;
     }
 
     public IdentyError(ERRORS errors, Pair[] pairArr, Action action, int i, WSQCompression wSQCompression, IdentyEncrytion identyEncrytion, String str, IdentyCustomEncryption identyCustomEncryption, Activity activity, Map map) {
