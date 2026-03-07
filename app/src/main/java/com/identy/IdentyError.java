@@ -635,7 +635,6 @@ public final class IdentyError extends IdentyResponse {
             }
             throw new RuntimeException(th2);
         }
-        return null;
     }
 
     public IdentyError(ERRORS errors, Pair[] pairArr, Action action, int i, WSQCompression wSQCompression, IdentyEncrytion identyEncrytion, String str, IdentyCustomEncryption identyCustomEncryption, Activity activity, Map map) {

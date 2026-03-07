@@ -31,7 +31,7 @@ public final class SyncDataWorker extends CoroutineWorker {
     private final Context appContext;
     private final HistoricRecordPermissionsChangeDao historicRecordPermissionsChangeDao;
     final HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository;
-    private final NotificationManager notificationManager;
+    final NotificationManager notificationManager;
     private final WorkerParameters params;
     private final SessionDao sessionDao;
     final SessionRepository sessionRepository;

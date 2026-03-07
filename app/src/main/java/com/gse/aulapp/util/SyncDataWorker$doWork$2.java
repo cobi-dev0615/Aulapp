@@ -88,7 +88,7 @@ public final class SyncDataWorker$doWork$2 extends SuspendLambda implements Func
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super ListenableWorker.Result> continuation) {
         return ((SyncDataWorker$doWork$2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }
