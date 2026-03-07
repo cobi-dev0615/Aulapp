@@ -66,7 +66,7 @@ public class UtilCrypto {
         return encodeBase64ByteArray(this.keyECCrypt);
     }
 
-    public String getDeriveP() {
+    public String getDeriveP() throws Exception {
         return this.keyStoreCustom.getDeriveP();
     }
 

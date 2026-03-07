@@ -130,11 +130,11 @@ public class KeyStoreCustom {
         }
     }
 
-    public byte[] getDerive() {
+    public byte[] getDerive() throws Exception {
         return this.keyDeriv.derive(this.password, getSalt());
     }
 
-    public String getDeriveP() {
+    public String getDeriveP() throws Exception {
         return UtilCrypto.encodeBase64ByteArray(getDerive());
     }
 
@@ -159,7 +159,7 @@ public class KeyStoreCustom {
         this.password = str;
     }
 
-    public byte[] getDerive(String str) {
+    public byte[] getDerive(String str) throws Exception {
         byte[] salt = getSalt();
         Base64.encodeToString(salt, 2);
         return this.keyDeriv.derive(str, salt);
