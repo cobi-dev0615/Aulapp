@@ -5,7 +5,7 @@ import javax.crypto.spec.PBEKeySpec;
 
 /* loaded from: classes.dex */
 public class KeyDeriv {
-    public byte[] derive(String str, byte[] bArr) {
+    public byte[] derive(String str, byte[] bArr) throws Exception {
         return SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256").generateSecret(new PBEKeySpec(str.toCharArray(), bArr, 12000, 256)).getEncoded();
     }
 }
