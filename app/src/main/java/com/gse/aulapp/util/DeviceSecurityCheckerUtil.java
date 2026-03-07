@@ -86,10 +86,11 @@ public final class DeviceSecurityCheckerUtil {
             }
         }
         try {
+            return new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(new String[]{"/system/xbin/which", "su"}).getInputStream())).readLine() != null;
         } catch (Exception e) {
             e.getMessage();
         }
-        return new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(new String[]{"/system/xbin/which", "su"}).getInputStream())).readLine() != null;
+        return false;
     }
 
     public final Map<String, Boolean> validateDeviceSecurityChecker() {

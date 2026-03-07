@@ -17,7 +17,7 @@ import kotlinx.coroutines.channels.ProducerScope;
 @DebugMetadata(c = "com.gse.aulapp.util.DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2", f = "DefaultLocationClient.kt", i = {}, l = {101}, m = "invokeSuspend", n = {}, s = {})
 /* loaded from: classes.dex */
 public final class DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ ProducerScope<Location> $$this$callbackFlow;
+    final /* synthetic */ ProducerScope<? super Location> $$this$callbackFlow;
     final /* synthetic */ Location $filteredLocation;
     int label;
 
@@ -25,7 +25,7 @@ public final class DefaultLocationClient$getLocationUpdates$1$callback$1$onLocat
     /* JADX WARN: Multi-variable type inference failed */
     public DefaultLocationClient$getLocationUpdates$1$callback$1$onLocationResult$2(ProducerScope<? super Location> producerScope, Location location, Continuation continuation) {
         super(2, (Continuation<Object>) continuation);
-        this.$$this$callbackFlow = (ProducerScope) producerScope;
+        this.$$this$callbackFlow = producerScope;
         this.$filteredLocation = location;
     }
 
@@ -41,7 +41,7 @@ public final class DefaultLocationClient$getLocationUpdates$1$callback$1$onLocat
         int i = this.label;
         if (i == 0) {
             ResultKt.throwOnFailure(obj);
-            ProducerScope<Location> producerScope = this.$$this$callbackFlow;
+            ProducerScope<? super Location> producerScope = this.$$this$callbackFlow;
             Location location = this.$filteredLocation;
             this.label = 1;
             if (producerScope.send(location, this) == coroutine_suspended) {

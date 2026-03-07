@@ -17,7 +17,7 @@ import kotlinx.coroutines.channels.ProducerScope;
 @DebugMetadata(c = "com.gse.aulapp.util.NetworkConnectivityObserver$observe$1$callback$1$onLosing$1", f = "NetworkConnectivityObserver.kt", i = {}, l = {31}, m = "invokeSuspend", n = {}, s = {})
 /* loaded from: classes.dex */
 public final class NetworkConnectivityObserver$observe$1$callback$1$onLosing$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ ProducerScope<ConnectivityObserver.Status> $$this$callbackFlow;
+    final /* synthetic */ ProducerScope<? super ConnectivityObserver.Status> $$this$callbackFlow;
     int label;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -38,7 +38,7 @@ public final class NetworkConnectivityObserver$observe$1$callback$1$onLosing$1 e
         int i = this.label;
         if (i == 0) {
             ResultKt.throwOnFailure(obj);
-            ProducerScope<ConnectivityObserver.Status> producerScope = this.$$this$callbackFlow;
+            ProducerScope<? super ConnectivityObserver.Status> producerScope = this.$$this$callbackFlow;
             ConnectivityObserver.Status status = ConnectivityObserver.Status.Losing;
             this.label = 1;
             if (producerScope.send(status, this) == coroutine_suspended) {

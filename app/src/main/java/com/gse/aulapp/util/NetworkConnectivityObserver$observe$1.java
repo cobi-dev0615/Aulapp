@@ -61,7 +61,7 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
                 public void onAvailable(Network network) {
                     Intrinsics.checkNotNullParameter(network, "network");
                     super.onAvailable(network);
-                    ProducerScope<ConnectivityObserver.Status> producerScope2 = producerScope;
+                    ProducerScope producerScope2 = producerScope;
                     BuildersKt.launch(producerScope2, (CoroutineContext) null, (CoroutineStart) null, new NetworkConnectivityObserver$observe$1$callback$1$onAvailable$1(producerScope2, null));
                 }
 
@@ -69,7 +69,7 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
                 public void onLosing(Network network, int maxMsToLive) {
                     Intrinsics.checkNotNullParameter(network, "network");
                     super.onLosing(network, maxMsToLive);
-                    ProducerScope<ConnectivityObserver.Status> producerScope2 = producerScope;
+                    ProducerScope producerScope2 = producerScope;
                     BuildersKt.launch(producerScope2, (CoroutineContext) null, (CoroutineStart) null, new NetworkConnectivityObserver$observe$1$callback$1$onLosing$1(producerScope2, null));
                 }
 
@@ -77,14 +77,14 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
                 public void onLost(Network network) {
                     Intrinsics.checkNotNullParameter(network, "network");
                     super.onLost(network);
-                    ProducerScope<ConnectivityObserver.Status> producerScope2 = producerScope;
+                    ProducerScope producerScope2 = producerScope;
                     BuildersKt.launch(producerScope2, (CoroutineContext) null, (CoroutineStart) null, new NetworkConnectivityObserver$observe$1$callback$1$onLost$1(producerScope2, null));
                 }
 
                 @Override // android.net.ConnectivityManager.NetworkCallback
                 public void onUnavailable() {
                     super.onUnavailable();
-                    ProducerScope<ConnectivityObserver.Status> producerScope2 = producerScope;
+                    ProducerScope producerScope2 = producerScope;
                     BuildersKt.launch(producerScope2, (CoroutineContext) null, (CoroutineStart) null, new NetworkConnectivityObserver$observe$1$callback$1$onUnavailable$1(producerScope2, null));
                 }
             };
