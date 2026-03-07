@@ -161,7 +161,7 @@ public final class Position {
         } else {
             i2 = 0;
             bArr2[i2] = (byte) i3;
-            i6 = i2 + 1;
+            int i6 = i2 + 1;
             if (i2 == i5) {
             }
         }
@@ -363,7 +363,7 @@ public final class Position {
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 5025;
                     Fpnative.valueOf = objArr;
-                    return (Position) Enum.valueOf(Position.class, str);
+                    return Position.valueOf(str);
                 }
             }
             byte[] bArr = $$a;
@@ -378,7 +378,7 @@ public final class Position {
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5025;
             Fpnative.valueOf = objArr;
-            return (Position) Enum.valueOf(Position.class, str);
+            return Position.valueOf(str);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

@@ -117,7 +117,9 @@ public final class BiometrixRepository$getUrlBiometrix$1 extends SuspendLambda i
                     }
                     Gson gson = new Gson();
                     ResponseBody errorBody = response.errorBody();
-                    ErrorResponse errorResponse = (ErrorResponse) gson.fromJson(errorBody != null ? errorBody.string() : null, ErrorResponse.class);
+                    String errorStr = null;
+                    try { errorStr = errorBody != null ? errorBody.string() : null; } catch (java.io.IOException ignored) {}
+                    ErrorResponse errorResponse = (ErrorResponse) gson.fromJson(errorStr, ErrorResponse.class);
                     ResponseBody errorBody2 = response.errorBody();
                     if (errorBody2 != null) {
                         errorBody2.close();
@@ -147,6 +149,7 @@ public final class BiometrixRepository$getUrlBiometrix$1 extends SuspendLambda i
         response = (Response) obj;
         if (response != null) {
         }
+        return Unit.INSTANCE;
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */
