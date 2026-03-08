@@ -152,7 +152,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
                     public final Object invoke(Object obj) {
                         Unit emit$lambda$11$lambda$10$lambda$9$lambda$8$lambda$7;
                         boolean booleanValue = ((Boolean) obj).booleanValue();
-                        emit$lambda$11$lambda$10$lambda$9$lambda$8$lambda$7 = ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1.AnonymousClass2.emit$lambda$11$lambda$10$lambda$9$lambda$8$lambda$7(ClassPracticeBeforeViewModel.this, str, apiResult, activity, context, z, enumClassType, navController, booleanValue);
+                        emit$lambda$11$lambda$10$lambda$9$lambda$8$lambda$7 = ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1.AnonymousClass2.emit$lambda$11$lambda$10$lambda$9$lambda$8$lambda$7(classPracticeBeforeViewModel, str, apiResult, activity, context, z, enumClassType, navController, booleanValue);
                         return emit$lambda$11$lambda$10$lambda$9$lambda$8$lambda$7;
                     }
                 });
@@ -200,7 +200,6 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
             SingleLiveEvent singleLiveEvent6;
             SessionInstructorResponse.Result result2;
             String unused;
-            r5 = null;
             Date date2 = null;
             if (apiResult.getStatus() == EnumApiStatus.SUCCESS) {
                 SessionInstructorResponse data = apiResult.getData();
@@ -281,7 +280,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
                                     ApiResult apiResult2 = apiResult;
                                     boolean z2 = z;
                                     EnumClassType enumClassType2 = enumClassType;
-                                    emit$lambda$11$lambda$10 = ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1.AnonymousClass2.emit$lambda$11$lambda$10(ClassPracticeBeforeViewModel.this, date, date5, context3, sessionDto, apiResult2, activity, z2, enumClassType2, navController, (String) obj);
+                                    emit$lambda$11$lambda$10 = ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1.AnonymousClass2.emit$lambda$11$lambda$10(classPracticeBeforeViewModel, date, date5, context3, sessionDto, apiResult2, activity, z2, enumClassType2, navController, (String) obj);
                                     return emit$lambda$11$lambda$10;
                                 }
                             });

@@ -86,6 +86,10 @@ public final class ClassPracticeBeforeViewModel$getSessionById$1 extends Suspend
             mutableSharedFlow = this.this$0._message;
             Status.Success success = new Status.Success((List) obj);
             this.label = 2;
+            if (mutableSharedFlow.emit(success, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
 
         @Override // kotlin.jvm.functions.Function2

@@ -145,11 +145,12 @@ public final class ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1
                             ClassPracticeBeforeViewModel classPracticeBeforeViewModel2 = classPracticeBeforeViewModel;
                             HistoricRecordPermissionsChangeResponse data6 = apiResult.getData();
                             String message = (data6 == null || (result2 = data6.getResult()) == null) ? null : result2.getMessage();
+                            String code = null;
                             HistoricRecordPermissionsChangeResponse data7 = apiResult.getData();
                             if (data7 != null && (result = data7.getResult()) != null) {
-                                r7 = result.getCode();
+                                code = result.getCode();
                             }
-                            ErrorResponse errorEndpoint = classPracticeBeforeViewModel2.getErrorEndpoint(message, r7);
+                            ErrorResponse errorEndpoint = classPracticeBeforeViewModel2.getErrorEndpoint(message, code);
                             singleLiveEvent3 = classPracticeBeforeViewModel._statusClass;
                             singleLiveEvent3.postValue(new Status.Exception(errorEndpoint));
                         }
