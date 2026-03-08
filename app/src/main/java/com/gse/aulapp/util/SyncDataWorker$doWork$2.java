@@ -82,6 +82,7 @@ public final class SyncDataWorker$doWork$2 extends SuspendLambda implements Func
                 ResultKt.throwOnFailure(obj);
             }
             this.label = 2;
+            return coroutine_suspended;
         } catch (Exception unused) {
             return ListenableWorker.Result.failure();
         }

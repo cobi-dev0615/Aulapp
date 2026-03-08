@@ -36,8 +36,9 @@ public final class ClassPracticeBeforeViewModel$getStepperStatusComplete$1 exten
         final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, String str, boolean z, Continuation<?> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.this$0 = classPracticeBeforeViewModel;
             this.$sessionID = str;
             this.$isEntry = z;

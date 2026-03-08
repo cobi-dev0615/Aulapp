@@ -46,8 +46,9 @@ public final class ClassPracticeBeforeViewModel$initBiometrix$1 extends SuspendL
         final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(Activity activity, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation<?> continuation) {
-            super(3, continuation);
+            super(3, (Continuation<Object>) continuation);
             this.$activity = activity;
             this.this$0 = classPracticeBeforeViewModel;
         }

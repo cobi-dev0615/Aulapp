@@ -51,8 +51,9 @@ public final class ClassPracticeBeforeViewModel$showDialogTimePassed$1 extends S
         final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Activity activity, Context context, boolean z, EnumClassType enumClassType, NavController navController, Continuation<?> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.this$0 = classPracticeBeforeViewModel;
             this.$activity = activity;
             this.$context = context;

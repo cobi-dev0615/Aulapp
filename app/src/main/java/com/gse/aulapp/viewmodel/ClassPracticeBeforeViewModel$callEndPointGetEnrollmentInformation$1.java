@@ -50,8 +50,9 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
         final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(Activity activity, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation<?> continuation) {
-            super(3, continuation);
+            super(3, (Continuation<Object>) continuation);
             this.$activity = activity;
             this.this$0 = classPracticeBeforeViewModel;
         }
@@ -94,8 +95,9 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    @SuppressWarnings("unchecked")
     public ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInformation$1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Activity activity, GetEnrollmentInformationRequest getEnrollmentInformationRequest, UserInfoDto userInfoDto, Continuation continuation) {
-        super(2, continuation);
+        super(2, (Continuation<Object>) continuation);
         this.this$0 = classPracticeBeforeViewModel;
         this.$activity = activity;
         this.$getEnrollmentInformationRequest = getEnrollmentInformationRequest;
@@ -162,8 +164,9 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
                 final /* synthetic */ ClassPracticeBeforeViewModel this$0;
 
                 /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                @SuppressWarnings("unchecked")
                 public AnonymousClass1(ApiResult<GetEnrollmentInformationResponse> apiResult, Activity activity, UserInfoDto userInfoDto, ClassPracticeBeforeViewModel classPracticeBeforeViewModel, Continuation<?> continuation) {
-                    super(2, continuation);
+                    super(2, (Continuation<Object>) continuation);
                     this.$apiResponse = apiResult;
                     this.$activity = activity;
                     this.$userInfo = userInfoDto;
@@ -286,6 +289,7 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
             }
         };
         this.label = 2;
+        return coroutine_suspended;
     }
 
     @Override // kotlin.jvm.functions.Function2

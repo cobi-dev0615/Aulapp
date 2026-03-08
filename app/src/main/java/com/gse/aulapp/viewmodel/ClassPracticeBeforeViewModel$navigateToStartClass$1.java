@@ -68,8 +68,9 @@ public final class ClassPracticeBeforeViewModel$navigateToStartClass$1 extends S
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(ClassPracticeBeforeViewModel classPracticeBeforeViewModel, String str, String str2, Context context, NavController navController, Continuation<?> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.this$0 = classPracticeBeforeViewModel;
             this.$sessionID = str;
             this.$timeEntry = str2;
