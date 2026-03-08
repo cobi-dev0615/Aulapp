@@ -136,10 +136,10 @@ public final class ClassInCourseViewModel$getSessionDataApi$1 extends SuspendLam
         public final Object emit(ApiResult<SessionExamResponse> apiResult, Continuation continuation) {
             ClassInCourseViewModel$getSessionDataApi$1$1$emit$1 classInCourseViewModel$getSessionDataApi$1$1$emit$1;
             int i;
-            List questions;
+            List questions = null;
             Object saveTestInDB;
-            AnonymousClass1<T> anonymousClass1;
-            TestResponse testResponse;
+            AnonymousClass1<T> anonymousClass1 = null;
+            TestResponse testResponse = null;
             SessionExamResponse.Result result;
             SessionExamDataResponse data;
             TestDataResponse testData;
@@ -275,6 +275,7 @@ public final class ClassInCourseViewModel$getSessionDataApi$1 extends SuspendLam
             classInCourseViewModel$getSessionDataApi$1$1$emit$122.L$2 = null;
             classInCourseViewModel$getSessionDataApi$1$1$emit$122.label = 3;
             loadQuestionsFromDB = classInCourseViewModel222.loadQuestionsFromDB(context322, str222, testID222, navController22, classInCourseViewModel$getSessionDataApi$1$1$emit$122);
+            return loadQuestionsFromDB == coroutine_suspended2 ? coroutine_suspended2 : Unit.INSTANCE;
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector

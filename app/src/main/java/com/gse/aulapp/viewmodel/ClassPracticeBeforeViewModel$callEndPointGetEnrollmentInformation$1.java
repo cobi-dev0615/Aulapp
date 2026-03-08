@@ -238,11 +238,12 @@ public final class ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInforma
                                     ClassPracticeBeforeViewModel classPracticeBeforeViewModel = this.this$0;
                                     GetEnrollmentInformationResponse data4 = this.$apiResponse.getData();
                                     String message = (data4 == null || (result2 = data4.getResult()) == null) ? null : result2.getMessage();
+                                    String code = null;
                                     GetEnrollmentInformationResponse data5 = this.$apiResponse.getData();
                                     if (data5 != null && (result = data5.getResult()) != null) {
-                                        r9 = result.getCode();
+                                        code = result.getCode();
                                     }
-                                    ErrorResponse errorEndpoint = classPracticeBeforeViewModel.getErrorEndpoint(message, r9);
+                                    ErrorResponse errorEndpoint = classPracticeBeforeViewModel.getErrorEndpoint(message, code);
                                     mutableSharedFlow3 = this.this$0._messageGetEnrollmentInformation;
                                     Status.Exception exception = new Status.Exception(errorEndpoint);
                                     this.label = 2;
