@@ -124,15 +124,19 @@ public class VerifyResult {
     }
 
     public static /* synthetic */ void PngjBadSignature() {
-        PngjBadCrcException = (PngjException + 93) % 128;
-        Member[] memberArr = com.d.e.a.values.valueOf;
-        Object[] objArr = new Object[1];
-        b(new int[]{0, 22, 60, 0}, "\u0001\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0000\u0001", true, objArr);
-        Class<?> cls = Class.forName((String) objArr[0]);
-        Object[] objArr2 = new Object[1];
-        b(new int[]{22, 15, 88, 5}, "\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001", true, objArr2);
-        memberArr[0] = cls.getDeclaredMethod((String) objArr2[0], null);
-        PngjBadCrcException = (PngjException + 83) % 128;
+        try {
+            PngjBadCrcException = (PngjException + 93) % 128;
+            Member[] memberArr = com.d.e.a.values.valueOf;
+            Object[] objArr = new Object[1];
+            b(new int[]{0, 22, 60, 0}, "\u0001\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0000\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0000\u0001", true, objArr);
+            Class<?> cls = Class.forName((String) objArr[0]);
+            Object[] objArr2 = new Object[1];
+            b(new int[]{22, 15, 88, 5}, "\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001", true, objArr2);
+            memberArr[0] = cls.getDeclaredMethod((String) objArr2[0], null);
+            PngjBadCrcException = (PngjException + 83) % 128;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0022  */
@@ -180,6 +184,7 @@ public class VerifyResult {
         byte[] bArr2;
         int i2;
         float f2;
+      try {
         String str2 = str;
         byte[] bArr3 = null;
         if (str2 != null) {
@@ -328,6 +333,9 @@ public class VerifyResult {
             }
         }
         objArr[0] = new String(cArr3);
+      } catch (Exception e) {
+          throw new RuntimeException(e);
+      }
     }
 
     public static void init$0() {
