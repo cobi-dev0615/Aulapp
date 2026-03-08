@@ -616,7 +616,6 @@ public final class LManager {
             }
             throw new RuntimeException(th);
         }
-        return BuildConfig.FLAVOR;
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(11:0|1|(6:(2:3|(10:5|6|7|8|9|10|11|12|13|14))|10|11|12|13|14)|55|56|57|6|7|8|9|(2:(0)|(0))) */
@@ -893,7 +892,6 @@ public final class LManager {
             }
             throw new RuntimeException(th2);
         }
-        return null;
     }
 
     public static byte[] hmac(String str, byte[] bArr, byte[] bArr2) {
@@ -1291,16 +1289,6 @@ public final class LManager {
                 e.printStackTrace();
                 return null;
             }
-            byte b = $$d[113];
-            Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), $$a[111], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            a($$a[63], $$a[117], $$a[55], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1930179136);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4986;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -1308,6 +1296,7 @@ public final class LManager {
             }
             throw new RuntimeException(th);
         }
+        return null;
     }
 
     public final native byte[] decryptTemplatev4(long j, byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4, boolean z);
@@ -1338,17 +1327,6 @@ public final class LManager {
                 e.printStackTrace();
                 return null;
             }
-            byte[] bArr2 = $$d;
-            Object[] objArr3 = new Object[1];
-            a(bArr2[113], bArr2[3], (byte) (-bArr2[1]), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b = bArr2[63];
-            Object[] objArr4 = new Object[1];
-            a(b, b, bArr2[53], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -729129890);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4871;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -1356,6 +1334,7 @@ public final class LManager {
             }
             throw new RuntimeException(th);
         }
+        return null;
     }
 
     public final void destroy() {
@@ -1928,17 +1907,6 @@ public final class LManager {
                 e.printStackTrace();
                 return null;
             }
-            byte[] bArr3 = $$d;
-            Object[] objArr5 = new Object[1];
-            a(bArr3[113], bArr3[3], (byte) (-bArr3[1]), objArr5);
-            Class<?> cls = Class.forName((String) objArr5[0]);
-            byte b = bArr3[63];
-            Object[] objArr6 = new Object[1];
-            a(b, b, bArr3[53], objArr6);
-            objArr = (Object[]) cls.getMethod((String) objArr6[0], Integer.TYPE).invoke(null, 1090412018);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 5024;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th3) {
             Throwable cause3 = th3.getCause();
             if (cause3 != null) {
@@ -1946,6 +1914,7 @@ public final class LManager {
             }
             throw new RuntimeException(th3);
         }
+        return null;
     }
 
     public final void encryptTemplate(String str, String str2) {
@@ -1993,28 +1962,11 @@ public final class LManager {
                 e.printStackTrace();
                 return;
             }
-            byte[] bArr3 = $$d;
-            byte b = bArr3[113];
-            Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 124), bArr3[62], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b2 = bArr3[32];
-            Object[] objArr4 = new Object[1];
-            a(b2, (byte) (b2 | 92), bArr3[63], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1874909962);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4922;
-            Fpnative.valueOf = objArr;
-            Calendar.getInstance().getTimeInMillis();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
-
             if (cause == null) {
-
                 throw new RuntimeException(th);
-
             }
-
             throw new RuntimeException(cause);
         }
     }
@@ -2054,26 +2006,11 @@ public final class LManager {
                 e.printStackTrace();
                 return;
             }
-            byte b = $$d[113];
-            Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 88), $$a[111], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            a($$a[63], $$a[117], $$a[55], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1518827033);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4910;
-            Fpnative.valueOf = objArr;
-            Calendar.getInstance().getTimeInMillis();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
-
             if (cause == null) {
-
                 throw new RuntimeException(th);
-
             }
-
             throw new RuntimeException(cause);
         }
     }
@@ -3086,21 +3023,6 @@ public final class LManager {
 
                 throw new RuntimeException(cause);
             }
-            byte b3 = $$d[113];
-            Object[] objArr5 = new Object[1];
-            a(b3, (byte) (b3 | 88), $$a[111], objArr5);
-            Class<?> cls2 = Class.forName((String) objArr5[0]);
-            Object[] objArr6 = new Object[1];
-            a($$a[63], $$a[117], $$a[55], objArr6);
-            objArr = (Object[]) cls2.getMethod((String) objArr6[0], cls).invoke(null, -818561606);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4969;
-            Fpnative.valueOf = objArr;
-            this.PngjException = "https://bancolicensemgr.identy.io/nverify/v1";
-            this.appSignature = BuildConfig.FLAVOR;
-            this.values = BuildConfig.FLAVOR;
-            this.PngjUnsupportedException = false;
-            this.valueOf = 10;
         } catch (Throwable th2) {
             Throwable cause2 = th2.getCause();
             if (cause2 == null) {
