@@ -819,7 +819,7 @@ public final class LManager {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static Key getSecureRandomKey() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
         KeyGenerator keyGenerator = null;
@@ -1563,8 +1563,8 @@ public final class LManager {
         boolean z;
         KeyPair keyPair;
         String[] transactions;
-        StringBuilder sb;
-        StringBuilder sb2;
+        StringBuilder sb = null;
+        StringBuilder sb2 = null;
         char c;
         String str2;
         Object[] objArr2 = Fpnative.valueOf;
@@ -3123,6 +3123,5 @@ public final class LManager {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 }
