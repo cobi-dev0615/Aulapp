@@ -272,14 +272,13 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
                             classInCourseViewModel$sendPracticeExamSync$1$2$emit$1.I$1 = intValue2;
                             classInCourseViewModel$sendPracticeExamSync$1$2$emit$1.label = 2;
                         } catch (Exception e3) {
-                            e = e3;
                             apiResult3 = apiResult2;
                             anonymousClass23 = anonymousClass2;
                             i2 = intValue;
                             i3 = intValue2;
-                            LogSendUtil.INSTANCE.setLog(anonymousClass23.$context, q.i("sendPracticeExamSync exception ", e.getMessage()), "sendPracticeExamSync", true);
+                            LogSendUtil.INSTANCE.setLog(anonymousClass23.$context, q.i("sendPracticeExamSync exception ", e3.getMessage()), "sendPracticeExamSync", true);
                             unused = anonymousClass23.this$0.TAG;
-                            e.getMessage();
+                            e3.getMessage();
                             int i522 = i3;
                             int i622 = i2;
                             SessionPracticeExamResponse data522 = apiResult3.getData();

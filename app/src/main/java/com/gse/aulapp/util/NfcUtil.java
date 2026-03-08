@@ -135,7 +135,11 @@ public abstract class NfcUtil {
 
         public final Object handlerResponseTag(Context context, Tag tag, Continuation continuation) {
             Object runBlocking$default;
-            runBlocking$default = BuildersKt.runBlocking((CoroutineContext) null, new NfcUtil$Companion$handlerResponseTag$2(tag, context, null));
+            try {
+                runBlocking$default = BuildersKt.runBlocking((CoroutineContext) null, new NfcUtil$Companion$handlerResponseTag$2(tag, context, null));
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             return runBlocking$default;
         }
 
