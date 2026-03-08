@@ -46,8 +46,9 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
         final /* synthetic */ FirstLoginViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(Activity activity, FirstLoginViewModel firstLoginViewModel, Continuation<?> continuation) {
-            super(3, continuation);
+            super(3, (Continuation<Object>) continuation);
             this.$activity = activity;
             this.this$0 = firstLoginViewModel;
         }
@@ -204,6 +205,10 @@ public final class FirstLoginViewModel$initBiometrix$1 extends SuspendLambda imp
             }
         };
         this.label = 2;
+        if (m1541catch.collect(flowCollector, this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2

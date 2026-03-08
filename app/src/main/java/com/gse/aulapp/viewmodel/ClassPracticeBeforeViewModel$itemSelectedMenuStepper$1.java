@@ -239,6 +239,10 @@ public final class ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1 extend
         mutableSharedFlow2 = this.this$0._message;
         Status.Success success2 = new Status.Success(Boxing.boxBoolean(true));
         this.label = 2;
+        if (mutableSharedFlow2.emit(success2, this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2

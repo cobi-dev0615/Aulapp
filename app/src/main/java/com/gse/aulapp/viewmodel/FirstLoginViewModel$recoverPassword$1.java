@@ -50,8 +50,9 @@ public final class FirstLoginViewModel$recoverPassword$1 extends SuspendLambda i
         final /* synthetic */ FirstLoginViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(Context context, FirstLoginViewModel firstLoginViewModel, Continuation<?> continuation) {
-            super(3, continuation);
+            super(3, (Continuation<Object>) continuation);
             this.$context = context;
             this.this$0 = firstLoginViewModel;
         }
