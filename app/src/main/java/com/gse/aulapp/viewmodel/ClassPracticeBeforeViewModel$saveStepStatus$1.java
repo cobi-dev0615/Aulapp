@@ -105,6 +105,10 @@ public final class ClassPracticeBeforeViewModel$saveStepStatus$1 extends Suspend
             mutableSharedFlow = anonymousClass1.this$0._message;
             Status.Success success = new Status.Success(Boxing.boxBoolean(true));
             anonymousClass1.label = 2;
+            if (mutableSharedFlow.emit(success, anonymousClass1) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
 
         @Override // kotlin.jvm.functions.Function2
@@ -174,6 +178,7 @@ public final class ClassPracticeBeforeViewModel$saveStepStatus$1 extends Suspend
         CoroutineDispatcher io2 = Dispatchers.getIO();
         AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.this$0, this.$enumIdStepperMenu, this.$isEntry, null);
         this.label = 2;
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2

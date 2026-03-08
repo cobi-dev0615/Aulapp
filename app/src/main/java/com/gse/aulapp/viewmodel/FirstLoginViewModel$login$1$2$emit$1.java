@@ -22,7 +22,8 @@ public final class FirstLoginViewModel$login$1$2$emit$1<T> extends ContinuationI
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
-    public FirstLoginViewModel$login$1$2$emit$1(FirstLoginViewModel$login$1.AnonymousClass2<? super T> anonymousClass2, Continuation continuation) {
+    @SuppressWarnings("unchecked")
+    public FirstLoginViewModel$login$1$2$emit$1(FirstLoginViewModel$login$1.AnonymousClass2 anonymousClass2, Continuation continuation) {
         super(continuation);
         this.this$0 = anonymousClass2;
     }

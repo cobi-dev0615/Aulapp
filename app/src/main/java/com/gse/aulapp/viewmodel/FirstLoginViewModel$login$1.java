@@ -372,7 +372,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                                         LoginResponse.Result result20 = apiResult2.getData().getResult();
                                         List<CenterDto> centerList = result20 != null ? result20.getCenterList() : null;
                                         if (centerList != null) {
-                                            Iterator<T> it = centerList.iterator();
+                                            Iterator it = centerList.iterator();
                                             while (it.hasNext()) {
                                                 CenterDto r7 = (CenterDto) it.next();
                                                 equalsResult = r7.getCenterID() != null ? r7.getCenterID().equals(centerID) : centerID == null;
