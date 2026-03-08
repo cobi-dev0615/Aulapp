@@ -315,10 +315,9 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
                             classInCourseViewModel$sendPracticeExamSync$1$2$emit$1.L$1 = null;
                             classInCourseViewModel$sendPracticeExamSync$1$2$emit$1.label = 3;
                         } catch (Exception e4) {
-                            e = e4;
                             anonymousClass22 = anonymousClass2;
                             str2 = anonymousClass22.this$0.TAG;
-                            Boxing.boxInt(Log.e(str2, "Exception updateIsPending " + e.getMessage()));
+                            Boxing.boxInt(Log.e(str2, "Exception updateIsPending " + e4.getMessage()));
                             return Unit.INSTANCE;
                         }
                     }

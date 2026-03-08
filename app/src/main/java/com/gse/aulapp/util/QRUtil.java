@@ -32,6 +32,7 @@ public abstract class QRUtil {
         }
 
         public final void generateQR(ImageView imageView, String textQR, int i, int i2, int i3) {
+          try {
             Intrinsics.checkNotNullParameter(imageView, "<this>");
             Intrinsics.checkNotNullParameter(textQR, "textQR");
             EnumMap enumMap = new EnumMap(EncodeHintType.class);
@@ -57,6 +58,9 @@ public abstract class QRUtil {
             Intrinsics.checkNotNullExpressionValue(createBitmap, "createBitmap(...)");
             createBitmap.setPixels(iArr, 0, width, 0, 0, width, height);
             imageView.setImageBitmap(createBitmap);
+          } catch (Exception e) {
+              throw new RuntimeException(e);
+          }
         }
 
         private Companion() {
