@@ -164,7 +164,9 @@ public class IdentyUser {
             ((long[]) objArr[0])[0] = j + 5047;
             Fpnative.valueOf = objArr;
             if (this.uid == 0) {
+                return false;
             }
+            return false;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
