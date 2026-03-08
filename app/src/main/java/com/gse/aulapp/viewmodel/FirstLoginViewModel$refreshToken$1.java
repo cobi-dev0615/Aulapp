@@ -147,6 +147,9 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
             mutableSharedFlow = this.this$0._messageRefreshToken;
             Status.Loading loading = new Status.Loading(false, 1, null);
             this.label = 1;
+            if (mutableSharedFlow.emit(loading, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         } else {
             if (i != 1) {
                 if (i != 2 && i != 3) {
@@ -165,12 +168,19 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
             Flow m1541catch = refreshTokenRepository.refreshToken(this.$context, this.$tokenRefreshRequest);
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$context, this.this$0);
             this.label = 2;
+            if (m1541catch.collect(anonymousClass2, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         } else {
             LogSendUtil.INSTANCE.setLog(this.$context, "refreshToken error: User or pass is null", null, false);
             mutableSharedFlow2 = this.this$0._messageRefreshToken;
             Status.Failure failure = new Status.Failure(new Exception("User or pass is null"));
             this.label = 3;
+            if (mutableSharedFlow2.emit(failure, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2

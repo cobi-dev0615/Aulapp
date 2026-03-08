@@ -90,11 +90,18 @@ public final class HomeViewModel$getSessionFromDBFilterChip$2 extends SuspendLam
             mutableSharedFlow = this.this$0._message;
             Status.Empty empty = Status.Empty.INSTANCE;
             this.label = 3;
+            if (mutableSharedFlow.emit(empty, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         } else {
             mutableSharedFlow2 = this.this$0._message;
             Status.Success success = new Status.Success(groupClassDetailsByFilterType$app_release);
             this.label = 2;
+            if (mutableSharedFlow2.emit(success, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2

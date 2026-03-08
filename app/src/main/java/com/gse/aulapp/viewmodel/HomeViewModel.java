@@ -127,9 +127,9 @@ public final class HomeViewModel extends ViewModel {
     final String TAG;
     private int _action;
     private final SingleLiveEvent<ConfigurationSessionDto> _configSession;
-    private final SingleLiveEvent<List<ConfigurationSessionDto>> _listConfigSession;
+    final SingleLiveEvent<List<ConfigurationSessionDto>> _listConfigSession;
     private final MutableLiveData<Menu> _menuLiveData;
-    private final MutableSharedFlow<Status> _message;
+    final MutableSharedFlow<Status> _message;
     public Chip chipAll;
     private final SingleLiveEvent<ConfigurationSessionDto> configSession;
     private Date dateSelect;
@@ -137,11 +137,11 @@ public final class HomeViewModel extends ViewModel {
     private final GpsRepository gpsRepository;
     private Gson gson;
     private boolean isSwipeRefresh;
-    private List<String> listClasType;
+    List<String> listClasType;
     private final LiveData<Menu> menuLiveData;
     private final SharedFlow<Status> message;
-    private final HistoricRecordPermissionsChangeRepository sessionHistoricRecordPermissionsChangeRepository;
-    private final SessionRepository sessionRepository;
+    final HistoricRecordPermissionsChangeRepository sessionHistoricRecordPermissionsChangeRepository;
+    final SessionRepository sessionRepository;
     public SwipeRefreshLayout swrHome;
     private final List<Integer> unSelectedChips;
     private List<User> userList;

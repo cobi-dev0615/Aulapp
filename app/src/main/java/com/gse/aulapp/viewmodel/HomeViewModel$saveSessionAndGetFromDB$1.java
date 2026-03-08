@@ -126,6 +126,10 @@ public final class HomeViewModel$saveSessionAndGetFromDB$1 extends SuspendLambda
             mutableSharedFlow = this.this$0._message;
             Status.Failure failure = new Status.Failure(new Exception(e.getMessage()));
             this.label = 3;
+            if (mutableSharedFlow.emit(failure, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
         if (i == 0) {
             ResultKt.throwOnFailure(obj);
@@ -154,6 +158,10 @@ public final class HomeViewModel$saveSessionAndGetFromDB$1 extends SuspendLambda
         CoroutineDispatcher io2 = Dispatchers.getIO();
         AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.this$0, this.$sessionInstructorObjectResponseList, null);
         this.label = 2;
+        if (kotlinx.coroutines.BuildersKt.withContext(io2, anonymousClass1, this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2

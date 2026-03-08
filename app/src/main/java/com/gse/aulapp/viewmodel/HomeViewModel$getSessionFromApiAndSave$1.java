@@ -148,6 +148,9 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                 mutableSharedFlow = this.this$0._message;
                 Status.Loading loading = new Status.Loading(false, 1, null);
                 this.label = 1;
+                if (mutableSharedFlow.emit(loading, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
             }
         } else {
             if (i != 1) {
@@ -164,6 +167,10 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
         Flow m1541catch = sessionRepository.getSessionApi(this.$context, this.$sessionInstructorRequest);
         AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$context, this.this$0, this.$isValidateSession, this.$sessionId, this.$navController, this.$classRecyclerAdapter, this.$activity);
         this.label = 2;
+        if (m1541catch.collect(anonymousClass2, this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -403,8 +410,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
             Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
             String str2 = null;
             str2 = null;
-            switch (homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label) {
-            }
+            return this.emit(apiResult, homeViewModel$getSessionFromApiAndSave$1$2$emit$1);
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector

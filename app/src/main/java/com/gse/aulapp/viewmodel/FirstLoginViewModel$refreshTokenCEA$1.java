@@ -159,6 +159,9 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
             mutableSharedFlow = this.this$0._messageRefreshTokenCEA;
             Status.Loading loading = new Status.Loading(false, 1, null);
             this.label = 1;
+            if (mutableSharedFlow.emit(loading, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         } else {
             if (i != 1) {
                 if (i != 2 && i != 3) {
@@ -176,7 +179,7 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
             objectRef.element = new CenterDto(null, null, null, null, 15, null);
             List<CenterDto> list = this.$centerListCEA;
             String str2 = this.$ceaSelected;
-            Iterator<T> it = list.iterator();
+            Iterator it = list.iterator();
             while (it.hasNext()) {
                 CenterDto r4 = (CenterDto) it.next();
                 equalsResult = r4.getName() != null ? r4.getName().equals(str2) : str2 == null;
@@ -335,6 +338,9 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
                     }
                 };
                 this.label = 2;
+                if (m1541catch.collect(flowCollector, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
             }
             return Unit.INSTANCE;
         }
@@ -342,6 +348,10 @@ public final class FirstLoginViewModel$refreshTokenCEA$1 extends SuspendLambda i
         mutableSharedFlow2 = this.this$0._messageRefreshTokenCEA;
         Status.Failure failure = new Status.Failure(new Exception("\nSeleccione un CEA"));
         this.label = 3;
+        if (mutableSharedFlow2.emit(failure, this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2

@@ -154,6 +154,9 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
             mutableSharedFlow = this.this$0._message;
             Status.Loading loading = new Status.Loading(false, 1, null);
             this.label = 1;
+            if (mutableSharedFlow.emit(loading, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         } else {
             if (i != 1) {
                 if (i != 2 && i != 3) {
@@ -172,12 +175,19 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
             Flow m1541catch = loginRepository.login(this.$context, this.$loginRequest);
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.this$0, this.$context);
             this.label = 2;
+            if (m1541catch.collect(anonymousClass2, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         } else {
             LogSendUtil.INSTANCE.setLog(this.$context, "Login Exception: User or pass is null", "login", true);
             mutableSharedFlow2 = this.this$0._message;
             Status.Failure failure = new Status.Failure(new Exception("Ha ocurrido un error interno en la aplicación, estamos trabajando para solucionarlo."));
             this.label = 3;
+            if (mutableSharedFlow2.emit(failure, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -464,8 +474,7 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
             firstLoginViewModel$login$1$2$emit$1 = new FirstLoginViewModel$login$1$2$emit$1(this, continuation);
             Object obj2 = firstLoginViewModel$login$1$2$emit$1.result;
             Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-            switch (firstLoginViewModel$login$1$2$emit$1.label) {
-            }
+            return this.emit(apiResult, firstLoginViewModel$login$1$2$emit$1);
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector

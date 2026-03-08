@@ -87,10 +87,21 @@ public final class HomeViewModel$getSessionByDB$2 extends SuspendLambda implemen
             mutableSharedFlow = this.this$0._message;
             Status.Success success = new Status.Success(new ClassUtil().groupClassDetailsByFilterType$app_release(listSessionDtoFromListSessionFull, filterType, list));
             this.label = 3;
+            if (mutableSharedFlow.emit(success, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            if (this.this$0.getIsSwipeRefresh()) {
+                this.this$0.getSwrHome().setRefreshing(false);
+            }
+            return Unit.INSTANCE;
         }
         HomeViewModel homeViewModel2 = this.this$0;
         this.label = 2;
         obj = homeViewModel2.getSessionFromDB(this);
+        if (obj == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2

@@ -110,6 +110,10 @@ public final class HomeViewModel$onClickLogOut$1 extends SuspendLambda implement
         TemplatesUtil.INSTANCE.removeTemplates(this.$activity);
         sessionRepository2 = this.this$0.sessionRepository;
         this.label = 2;
+        if (sessionRepository2.deleteLogOutSession(this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2
