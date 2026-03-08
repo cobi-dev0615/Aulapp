@@ -51,8 +51,9 @@ public final class HomeViewModel$initSessionSyncPending$1 extends SuspendLambda 
         final /* synthetic */ HomeViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(HomeViewModel homeViewModel, Context context, Menu menu, FragmentHomeBinding fragmentHomeBinding, boolean z, Continuation<?> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.this$0 = homeViewModel;
             this.$context = context;
             this.$item = menu;

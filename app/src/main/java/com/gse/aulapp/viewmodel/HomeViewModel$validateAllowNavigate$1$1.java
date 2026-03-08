@@ -59,8 +59,9 @@ public final class HomeViewModel$validateAllowNavigate$1$1 extends SuspendLambda
         final /* synthetic */ HomeViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(SessionDto sessionDto, ConfigurationSessionDto configurationSessionDto, Date date, Date date2, Activity activity, Date date3, boolean z, boolean z2, HomeViewModel homeViewModel, NavController navController, ClassDateRecyclerAdapter classDateRecyclerAdapter, Continuation<?> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.$session = sessionDto;
             this.$configSession = configurationSessionDto;
             this.$dateStart = date;

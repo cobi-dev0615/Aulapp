@@ -225,25 +225,25 @@ public final class PrincipalActivityViewModel$subscribeNetwork$1 extends Suspend
                 public final Object emit(ConnectivityObserver.Status status, Continuation continuation) {
                     String unused;
                     String unused2;
-                    unused = PrincipalActivityViewModel.this.TAG;
+                    unused = principalActivityViewModel2.TAG;
                     Objects.toString(status);
                     ActivityUtil.Companion companion = ActivityUtil.INSTANCE;
                     Activity activity2 = activity;
                     Intrinsics.checkNotNull(activity2, "null cannot be cast to non-null type androidx.fragment.app.FragmentActivity");
                     Fragment currentFragmentFromActivity = companion.getCurrentFragmentFromActivity((FragmentActivity) activity2);
-                    unused2 = PrincipalActivityViewModel.this.TAG;
+                    unused2 = principalActivityViewModel2.TAG;
                     Objects.toString(status);
                     Objects.toString(currentFragmentFromActivity);
                     int i2 = WhenMappings.$EnumSwitchMapping$0[status.ordinal()];
                     if (i2 == 1) {
-                        PrincipalActivityViewModel.this.saveHistoricPermission(EnumPermissionsApp.CONNECTION, true);
+                        principalActivityViewModel2.saveHistoricPermission(EnumPermissionsApp.CONNECTION, true);
                         Object withContext = BuildersKt.withContext(Dispatchers.getIO(), new C00131(null), continuation);
                         return withContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? withContext : Unit.INSTANCE;
                     }
                     if (i2 != 2 && i2 != 3 && i2 != 4) {
                         throw new NoWhenBranchMatchedException();
                     }
-                    PrincipalActivityViewModel.this.saveHistoricPermission(EnumPermissionsApp.CONNECTION, false);
+                    principalActivityViewModel2.saveHistoricPermission(EnumPermissionsApp.CONNECTION, false);
                     Object withContext2 = BuildersKt.withContext(Dispatchers.getIO(), new AnonymousClass2(activity, null), continuation);
                     return withContext2 == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? withContext2 : Unit.INSTANCE;
                 }

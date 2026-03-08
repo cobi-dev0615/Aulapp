@@ -43,7 +43,7 @@ import kotlinx.coroutines.CoroutineStart;
 /* loaded from: classes2.dex */
 public final class PrincipalActivityViewModel extends ViewModel {
     final String TAG;
-    private ConnectivityObserver connectivityObserver;
+    ConnectivityObserver connectivityObserver;
     private final HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository;
 
     public PrincipalActivityViewModel(HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository) {

@@ -61,7 +61,7 @@ public final class HomeViewModel$onSwipeRefresh$1 extends SuspendLambda implemen
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj2) {
                 Unit invokeSuspend$lambda$0;
-                invokeSuspend$lambda$0 = HomeViewModel$onSwipeRefresh$1.invokeSuspend$lambda$0(HomeViewModel.this, fragmentHomeBinding, activity, (SessionInstructorRequest) obj2);
+                invokeSuspend$lambda$0 = HomeViewModel$onSwipeRefresh$1.invokeSuspend$lambda$0(homeViewModel, fragmentHomeBinding, activity, (SessionInstructorRequest) obj2);
                 return invokeSuspend$lambda$0;
             }
         });
