@@ -470,7 +470,7 @@ public class VerifyResult {
             }
             throw new RuntimeException(th);
         }
-        PngjBadCrcException = (PngjException + 27) % 128;
+        return 0;
     }
 
     public FingerMatchSecLevel getMatched_true_up_to_security_level() {
@@ -571,7 +571,6 @@ public class VerifyResult {
             }
             throw new RuntimeException(th);
         }
-        PngjBadCrcException = (PngjException + 71) % 128;
     }
 
     public boolean isMatched() {
@@ -613,7 +612,6 @@ public class VerifyResult {
             }
             throw new RuntimeException(th);
         }
-        PngjException = (PngjBadCrcException + 17) % 128;
     }
 
     public boolean isPositionMismatched() {
@@ -661,7 +659,6 @@ public class VerifyResult {
             }
             throw new RuntimeException(th);
         }
-        PngjBadCrcException = (PngjException + 19) % 128;
     }
 
     public void setEnrollmentTs(String str) {
@@ -712,7 +709,6 @@ public class VerifyResult {
 
             throw new RuntimeException(cause);
         }
-        PngjException = (PngjBadCrcException + 117) % 128;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x004c, code lost:
@@ -780,7 +776,6 @@ public class VerifyResult {
 
             throw new RuntimeException(cause);
         }
-        PngjException = (PngjBadCrcException + 45) % 128;
     }
 
     public void setMatched_true_up_to_security_level(FingerMatchSecLevel fingerMatchSecLevel) {
@@ -880,7 +875,6 @@ public class VerifyResult {
 
             throw new RuntimeException(cause);
         }
-        PngjBadCrcException = (PngjException + 45) % 128;
     }
 
     public VerifyResult(String str) {
