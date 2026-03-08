@@ -553,7 +553,7 @@ public final class LManager {
     }
 
     public static String generateHashWithHmac256(byte[] bArr, byte[] bArr2) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object[] objArr2 = Fpnative.valueOf;
         try {
@@ -698,7 +698,7 @@ public final class LManager {
     public static byte[] getFileDataFromFile(AssetManager assetManager, String str) {
         Object[] objArr;
         long j;
-        BufferedInputStream bufferedInputStream;
+        BufferedInputStream bufferedInputStream = null;
         Object[] objArr2 = Fpnative.valueOf;
         int r3 = -1774109310;
         BufferedInputStream bufferedInputStream2 = null;
@@ -1296,7 +1296,6 @@ public final class LManager {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     public final native byte[] decryptTemplatev4(long j, byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4, boolean z);
@@ -1334,7 +1333,6 @@ public final class LManager {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     public final void destroy() {
@@ -3118,18 +3116,6 @@ public final class LManager {
                 e.printStackTrace();
                 return null;
             }
-            byte[] bArr2 = $$d;
-            byte b = bArr2[113];
-            Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 124), bArr2[62], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b2 = bArr2[32];
-            Object[] objArr4 = new Object[1];
-            a(b2, (byte) (b2 | 92), bArr2[63], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -816574437);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4936;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -3137,5 +3123,6 @@ public final class LManager {
             }
             throw new RuntimeException(th);
         }
+        return null;
     }
 }
