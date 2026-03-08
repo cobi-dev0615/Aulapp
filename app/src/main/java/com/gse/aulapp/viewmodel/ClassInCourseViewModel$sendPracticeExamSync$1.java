@@ -110,6 +110,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
         Flow<ApiResult<SessionPracticeExamResponse>> sendSessionPracticeAndSyncPracticalRequest22 = sessionRepository.sendSessionPracticeAndSyncPracticalRequest2(this.$context, this.$sessionID);
         AnonymousClass2 anonymousClass22 = new AnonymousClass2(this.this$0, this.$sessionID, this.$context, this.$findNavController);
         this.label = 2;
+        return coroutine_suspended;
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -153,8 +154,8 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
             ClassInCourseViewModel$sendPracticeExamSync$1$2$emit$1 classInCourseViewModel$sendPracticeExamSync$1$2$emit$1;
             int i;
             SessionRepository sessionRepository;
-            ApiResult<SessionPracticeExamResponse> apiResult2;
-            AnonymousClass2<T> anonymousClass2;
+            ApiResult<SessionPracticeExamResponse> apiResult2 = null;
+            AnonymousClass2<T> anonymousClass2 = null;
             AnonymousClass2<T> anonymousClass22;
             SessionRepository sessionRepository2;
             SessionPracticeExamResponse data;
@@ -167,7 +168,7 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
             String str;
             SessionPracticeExamResponse data3;
             SessionPracticeExamResponse data4;
-            String examResult;
+            String examResult = null;
             int hashCode;
             SessionPracticeExamResponse.Result result;
             String str2;
