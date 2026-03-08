@@ -17,9 +17,10 @@ public final class RideHistoryViewModelFactory implements ViewModelProvider.Fact
         this.sessionRepository = sessionRepository;
     }
 
+    @SuppressWarnings("unchecked")
     @Override // androidx.lifecycle.ViewModelProvider.Factory
     public <T extends ViewModel> T create(Class<T> modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return new RideHistoryViewModel(this.sessionRepository);
+        return (T) new RideHistoryViewModel(this.sessionRepository);
     }
 }

@@ -17,9 +17,10 @@ public final class LoginViewModelFactory implements ViewModelProvider.Factory {
         this.loginRepository = loginRepository;
     }
 
+    @SuppressWarnings("unchecked")
     @Override // androidx.lifecycle.ViewModelProvider.Factory
     public <T extends ViewModel> T create(Class<T> modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return new LoginViewModel(this.loginRepository);
+        return (T) new LoginViewModel(this.loginRepository);
     }
 }

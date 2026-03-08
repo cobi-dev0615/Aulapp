@@ -103,6 +103,10 @@ public final class ClassPracticeBeforeViewModel$initBiometrix$1 extends SuspendL
             Status.Failure failure = new Status.Failure(th);
             this.L$0 = null;
             this.label = 2;
+            if (mutableSharedFlow2.emit(failure, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
 
         /* renamed from: invoke, reason: avoid collision after fix types in other method */

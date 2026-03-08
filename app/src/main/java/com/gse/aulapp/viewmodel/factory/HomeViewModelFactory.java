@@ -21,9 +21,10 @@ public final class HomeViewModelFactory implements ViewModelProvider.Factory {
         this.sessionHistoricRecordPermissionsChangeRepository = sessionHistoricRecordPermissionsChangeRepository;
     }
 
+    @SuppressWarnings("unchecked")
     @Override // androidx.lifecycle.ViewModelProvider.Factory
     public <T extends ViewModel> T create(Class<T> modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return new HomeViewModel(this.sessionRepository, this.sessionHistoricRecordPermissionsChangeRepository);
+        return (T) new HomeViewModel(this.sessionRepository, this.sessionHistoricRecordPermissionsChangeRepository);
     }
 }

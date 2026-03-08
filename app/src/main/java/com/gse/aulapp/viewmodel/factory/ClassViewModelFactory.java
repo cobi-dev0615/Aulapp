@@ -17,9 +17,10 @@ public final class ClassViewModelFactory implements ViewModelProvider.Factory {
         this.repository = repository;
     }
 
+    @SuppressWarnings("unchecked")
     @Override // androidx.lifecycle.ViewModelProvider.Factory
     public <T extends ViewModel> T create(Class<T> modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return new ClassViewModel(this.repository);
+        return (T) new ClassViewModel(this.repository);
     }
 }

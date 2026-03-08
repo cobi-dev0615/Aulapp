@@ -17,9 +17,10 @@ public final class PrincipalActivityViewModelFactory implements ViewModelProvide
         this.historicRecordPermissionsChangeRepository = historicRecordPermissionsChangeRepository;
     }
 
+    @SuppressWarnings("unchecked")
     @Override // androidx.lifecycle.ViewModelProvider.Factory
     public <T extends ViewModel> T create(Class<T> modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return new PrincipalActivityViewModel(this.historicRecordPermissionsChangeRepository);
+        return (T) new PrincipalActivityViewModel(this.historicRecordPermissionsChangeRepository);
     }
 }

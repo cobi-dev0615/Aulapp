@@ -17,9 +17,10 @@ public final class HoursPerformedViewModelFactory implements ViewModelProvider.F
         this.sessionRepository = sessionRepository;
     }
 
+    @SuppressWarnings("unchecked")
     @Override // androidx.lifecycle.ViewModelProvider.Factory
     public <T extends ViewModel> T create(Class<T> modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return new HoursPerformedViewModel(this.sessionRepository);
+        return (T) new HoursPerformedViewModel(this.sessionRepository);
     }
 }

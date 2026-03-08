@@ -17,9 +17,10 @@ public final class PasswordRecoveryViewModelFactory implements ViewModelProvider
         this.passwordRecoveryRepository = passwordRecoveryRepository;
     }
 
+    @SuppressWarnings("unchecked")
     @Override // androidx.lifecycle.ViewModelProvider.Factory
     public <T extends ViewModel> T create(Class<T> modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return new PasswordRecoverViewModel(this.passwordRecoveryRepository);
+        return (T) new PasswordRecoverViewModel(this.passwordRecoveryRepository);
     }
 }

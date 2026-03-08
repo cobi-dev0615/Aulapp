@@ -25,9 +25,10 @@ public final class PracticeClassViewModelFactory implements ViewModelProvider.Fa
         this.gpsRepository = gpsRepository;
     }
 
+    @SuppressWarnings("unchecked")
     @Override // androidx.lifecycle.ViewModelProvider.Factory
     public <T extends ViewModel> T create(Class<T> modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return new PracticeClassViewModel(this.practiceClassRepository, this.sessionRepository, this.gpsRepository);
+        return (T) new PracticeClassViewModel(this.practiceClassRepository, this.sessionRepository, this.gpsRepository);
     }
 }

@@ -25,9 +25,10 @@ public final class ClassPracticeBeforeViewModelFactory implements ViewModelProvi
         this.biometrixRepository = biometrixRepository;
     }
 
+    @SuppressWarnings("unchecked")
     @Override // androidx.lifecycle.ViewModelProvider.Factory
     public <T extends ViewModel> T create(Class<T> modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return new ClassPracticeBeforeViewModel(this.repository, this.enrollmentInformationRepository, this.biometrixRepository);
+        return (T) new ClassPracticeBeforeViewModel(this.repository, this.enrollmentInformationRepository, this.biometrixRepository);
     }
 }

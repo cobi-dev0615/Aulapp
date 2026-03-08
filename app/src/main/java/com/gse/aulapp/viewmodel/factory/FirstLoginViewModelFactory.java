@@ -37,9 +37,10 @@ public final class FirstLoginViewModelFactory implements ViewModelProvider.Facto
         this.sessionRepository = sessionRepository;
     }
 
+    @SuppressWarnings("unchecked")
     @Override // androidx.lifecycle.ViewModelProvider.Factory
     public <T extends ViewModel> T create(Class<T> modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return new FirstLoginViewModel(this.loginRepository, this.tokenRefreshRepository, this.passwordRecoveryRepository, this.changeCenterRepository, this.biometrixRepository, this.sessionRepository);
+        return (T) new FirstLoginViewModel(this.loginRepository, this.tokenRefreshRepository, this.passwordRecoveryRepository, this.changeCenterRepository, this.biometrixRepository, this.sessionRepository);
     }
 }
