@@ -105,7 +105,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
     final SingleLiveEvent<Status> _statusClass;
     final BiometrixRepository biometrixRepository;
     private final SingleLiveEvent<ConfigurationSessionDto> configSession;
-    private AlertDialog dialog;
+    AlertDialog dialog;
     final GetEnrollmentInformationRepository enrollmentInformationRepository;
     private String entryTime;
     private Gson gson;
@@ -114,10 +114,10 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
     private final SharedFlow<Status> messageGetEnrollmentInformation;
     private final SingleLiveEvent<Status> messageValidation;
     final SessionRepository repository;
-    private SessionDto sessionReceived;
+    SessionDto sessionReceived;
     private final SingleLiveEvent<Status> statusClass;
     public List<StepProfile> stepList;
-    private final StepProcessSessionRepository stepRepository;
+    final StepProcessSessionRepository stepRepository;
 
     @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
     public /* synthetic */ class WhenMappings {

@@ -215,17 +215,19 @@ public final class ClassPracticeBeforeViewModel$initBiometrix$1 extends SuspendL
                 ClassPracticeBeforeViewModel classPracticeBeforeViewModel2 = classPracticeBeforeViewModel;
                 BiometrixUrlActionResponse data7 = apiResult.getData();
                 String message = (data7 == null || (result2 = data7.getResult()) == null) ? null : result2.getMessage();
+                String code = null;
                 BiometrixUrlActionResponse data8 = apiResult.getData();
                 if (data8 != null && (result = data8.getResult()) != null) {
-                    r3 = result.getCode();
+                    code = result.getCode();
                 }
-                ErrorResponse errorEndpoint = classPracticeBeforeViewModel2.getErrorEndpoint(message, r3);
+                ErrorResponse errorEndpoint = classPracticeBeforeViewModel2.getErrorEndpoint(message, code);
                 mutableSharedFlow3 = classPracticeBeforeViewModel._messageBiometrix;
                 Object emit3 = mutableSharedFlow3.emit(new Status.Exception(errorEndpoint), continuation);
                 return emit3 == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? emit3 : Unit.INSTANCE;
             }
         };
         this.label = 2;
+        return coroutine_suspended;
     }
 
     @Override // kotlin.jvm.functions.Function2

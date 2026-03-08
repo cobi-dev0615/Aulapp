@@ -53,7 +53,7 @@ public final class ClassPracticeBeforeViewModel$getConfigSessionDto$1$config$1 e
     }
 
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super ConfigurationSessionDto> continuation) {
         return ((ClassPracticeBeforeViewModel$getConfigSessionDto$1$config$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 }
