@@ -239,7 +239,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
                     final boolean z = this.$isEnter;
                     final EnumClassType enumClassType = this.$sessionType;
                     final NavController navController = this.$findNavController;
-                    Iterator<T> it = emptyList.iterator();
+                    Iterator it = emptyList.iterator();
                     SessionResponse sessionResponse = null;
                     while (it.hasNext()) {
                         List<SessionResponse> sessions = ((SessionInstructorObjectResponse) it.next()).getSessions();
@@ -280,7 +280,7 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
                                     ApiResult apiResult2 = apiResult;
                                     boolean z2 = z;
                                     EnumClassType enumClassType2 = enumClassType;
-                                    emit$lambda$11$lambda$10 = ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1.AnonymousClass2.emit$lambda$11$lambda$10(classPracticeBeforeViewModel, date, date5, context3, sessionDto, apiResult2, activity, z2, enumClassType2, navController, (String) obj);
+                                    emit$lambda$11$lambda$10 = ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1.AnonymousClass2.emit$lambda$11$lambda$10(classPracticeBeforeViewModel2, date, date5, context3, sessionDto, apiResult2, activity, z2, enumClassType2, navController, (String) obj);
                                     return emit$lambda$11$lambda$10;
                                 }
                             });
