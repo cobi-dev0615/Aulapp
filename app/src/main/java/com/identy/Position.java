@@ -337,6 +337,7 @@ public final class Position {
             }
             throw new RuntimeException(th);
         }
+        return null;
     }
 
     public static void init$0() {

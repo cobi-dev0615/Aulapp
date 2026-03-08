@@ -24,9 +24,10 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1$2$emit$1<T> ext
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Multi-variable type inference failed */
+    @SuppressWarnings("unchecked")
     public ClassInCourseViewModel$sendPracticeExamSync$1$2$emit$1(ClassInCourseViewModel$sendPracticeExamSync$1.AnonymousClass2<? super T> anonymousClass2, Continuation continuation) {
         super((Continuation) continuation);
-        this.this$0 = anonymousClass2;
+        this.this$0 = (ClassInCourseViewModel$sendPracticeExamSync$1.AnonymousClass2<T>) anonymousClass2;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl

@@ -217,10 +217,9 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
                         try {
                             ResultKt.throwOnFailure(obj);
                         } catch (Exception e2) {
-                            e = e2;
-                            LogSendUtil.INSTANCE.setLog(anonymousClass23.$context, q.i("sendPracticeExamSync exception ", e.getMessage()), "sendPracticeExamSync", true);
+                            LogSendUtil.INSTANCE.setLog(anonymousClass23.$context, q.i("sendPracticeExamSync exception ", e2.getMessage()), "sendPracticeExamSync", true);
                             unused = anonymousClass23.this$0.TAG;
-                            e.getMessage();
+                            e2.getMessage();
                             int i5 = i3;
                             int i6 = i2;
                             SessionPracticeExamResponse data5 = apiResult3.getData();
