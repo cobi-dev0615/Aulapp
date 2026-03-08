@@ -138,7 +138,12 @@ public final class ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1 ext
             SingleLiveEvent singleLiveEvent2;
             String unused;
             unused = classPracticeBeforeViewModel.TAG;
-            Date parse = new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).parse(str);
+            Date parse;
+            try {
+                parse = new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).parse(str);
+            } catch (java.text.ParseException e) {
+                parse = null;
+            }
             if (date != null && parse != null) {
                 ClassUtil classUtil = new ClassUtil();
                 Intrinsics.checkNotNull(date2);

@@ -241,6 +241,7 @@ public final class FirstLoginViewModel$refreshToken$1 extends SuspendLambda impl
             String fullName;
             RefreshToken data10;
             RefreshTokenResponse.Result result2;
+            String r4 = null;
             if (continuation instanceof FirstLoginViewModel$refreshToken$1$2$emit$1) {
                 firstLoginViewModel$refreshToken$1$2$emit$1 = (FirstLoginViewModel$refreshToken$1$2$emit$1) continuation;
                 int i2 = firstLoginViewModel$refreshToken$1$2$emit$1.label;
