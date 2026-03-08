@@ -545,7 +545,11 @@ public final class LManager {
                 if (PngjBadSignature3 == null) {
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) View.resolveSizeAndState(0, 0, 0), 40 - (ViewConfiguration.getKeyRepeatDelay() >> 16), ExpandableListView.getPackedPositionGroup(0L) + 190, 794744863, false, "j", new Class[]{Object.class, Object.class});
                 }
-                ((Method) PngjBadSignature3).invoke(null, objArr4);
+                try {
+                    ((Method) PngjBadSignature3).invoke(null, objArr4);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
             }
             cArr = cArr3;
         }
@@ -1560,7 +1564,7 @@ public final class LManager {
         long j2;
         String obj;
         KeyPair PngjBadCrcException;
-        boolean z;
+        boolean z = false;
         KeyPair keyPair;
         String[] transactions;
         StringBuilder sb = null;
@@ -1795,7 +1799,7 @@ public final class LManager {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final byte[] encryptAES2(byte[] bArr, Key key, String str) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         int i;
         int i2;
@@ -2151,7 +2155,7 @@ public final class LManager {
         Object[] objArr;
         long j;
         byte[] digest;
-        int i;
+        int i = 0;
         Object[] objArr2 = Fpnative.valueOf;
         String str = null;
         try {
@@ -2905,7 +2909,7 @@ public final class LManager {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public LManager(Activity activity, byte[] bArr, PngjBadCrcException pngjBadCrcException, String str, String str2, boolean z) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
         Object PngjBadSignature;
         Object[] objArr2 = Fpnative.valueOf;

@@ -263,7 +263,7 @@ public final class PrincipalActivity extends AppCompatActivity {
     @Override // androidx.appcompat.app.AppCompatActivity
     public boolean onSupportNavigateUp() {
         NavController findNavController = ActivityKt.findNavController(this, R.id.nav_host_fragment_content_main);
-        if (getOnBackPressedDispatcher().getHasEnabledCallbacks()) {
+        if (getOnBackPressedDispatcher().hasEnabledCallbacks()) {
             getOnBackPressedDispatcher().onBackPressed();
             return true;
         }
