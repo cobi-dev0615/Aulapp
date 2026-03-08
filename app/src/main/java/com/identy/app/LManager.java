@@ -234,6 +234,7 @@ public final class LManager {
             if (i == i5) {
             }
         }
+        return null;
     }
 
     static {
@@ -456,8 +457,8 @@ public final class LManager {
             int i132 = ((i122 >> 21) - 4095) / 2048;
             int i142 = ((i132 | 1) << 1) - (i132 ^ 1);
             char[] cArr2 = new char[(20544 / (((-((i142 ^ 1) + ((i142 & 1) << 1))) & i122) * 1712)) * length2];
-            while (false) {
-            }
+            /* while (false) {
+            } */
             return new String(cArr2);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -608,16 +609,6 @@ public final class LManager {
                 e.printStackTrace();
                 return BuildConfig.FLAVOR;
             }
-            byte b2 = $$d[113];
-            Object[] objArr3 = new Object[1];
-            a(b2, (byte) (b2 | 88), $$a[111], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            a($$a[63], $$a[117], $$a[55], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 2031826682);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 5047;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -625,6 +616,7 @@ public final class LManager {
             }
             throw new RuntimeException(th);
         }
+        return BuildConfig.FLAVOR;
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(11:0|1|(6:(2:3|(10:5|6|7|8|9|10|11|12|13|14))|10|11|12|13|14)|55|56|57|6|7|8|9|(2:(0)|(0))) */
@@ -812,6 +804,7 @@ public final class LManager {
 
             throw new RuntimeException(th3);
         }
+        return null;
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(11:(2:3|(8:5|6|7|8|10|11|12|13))|23|24|25|6|7|8|10|11|12|13) */
@@ -893,17 +886,6 @@ public final class LManager {
                 }
                 throw new RuntimeException(th);
             }
-            byte[] bArr = $$d;
-            Object[] objArr4 = new Object[1];
-            a(bArr[113], bArr[3], (byte) (-bArr[1]), objArr4);
-            Class<?> cls = Class.forName((String) objArr4[0]);
-            byte b = bArr[63];
-            Object[] objArr5 = new Object[1];
-            a(b, b, bArr[53], objArr5);
-            objArr = (Object[]) cls.getMethod((String) objArr5[0], Integer.TYPE).invoke(null, 1920019168);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4939;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th2) {
             Throwable cause2 = th2.getCause();
             if (cause2 != null) {
@@ -911,6 +893,7 @@ public final class LManager {
             }
             throw new RuntimeException(th2);
         }
+        return null;
     }
 
     public static byte[] hmac(String str, byte[] bArr, byte[] bArr2) {
@@ -1156,6 +1139,7 @@ public final class LManager {
             }
             throw new RuntimeException(th);
         }
+        return false;
     }
 
     public final native long create(AssetManager assetManager, Context context, byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4, byte[] bArr5, byte[] bArr6, boolean z);
@@ -1214,18 +1198,6 @@ public final class LManager {
                 e.printStackTrace();
                 return null;
             }
-            byte[] bArr6 = $$d;
-            byte b = bArr6[113];
-            Object[] objArr3 = new Object[1];
-            a(b, (byte) (b | 124), bArr6[62], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b2 = bArr6[32];
-            Object[] objArr4 = new Object[1];
-            a(b2, (byte) (b2 | 92), bArr6[63], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1620582236);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 5000;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -1280,26 +1252,11 @@ public final class LManager {
                 e.printStackTrace();
                 return;
             }
-            byte[] bArr3 = $$d;
-            Object[] objArr3 = new Object[1];
-            a(bArr3[113], bArr3[3], (byte) (-bArr3[1]), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b = bArr3[63];
-            Object[] objArr4 = new Object[1];
-            a(b, b, bArr3[53], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1388326072);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4897;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
-
             if (cause == null) {
-
                 throw new RuntimeException(th);
-
             }
-
             throw new RuntimeException(cause);
         }
     }
