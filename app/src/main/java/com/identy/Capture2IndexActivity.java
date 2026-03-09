@@ -445,7 +445,7 @@ public class Capture2IndexActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getJumpTapTimeout() >> 16), 24 - (ViewConfiguration.getScrollBarFadeDuration() >> 16), 745 - AndroidCharacter.getMirror('0'), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadCrcException$52c725b = CaptureRolledThumbActivity.PngjBadSignature.PngjBadCrcException$52c725b(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr11));
+            PngjBadCrcException$52c725b = null; /* CaptureRolledThumbActivity.PngjBadSignature.PngjBadCrcException$52c725b - boolean field shadows inner class */
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature5 == null) {
                 char bitsPerPixel = (char) (ImageFormat.getBitsPerPixel(0) + 14831);

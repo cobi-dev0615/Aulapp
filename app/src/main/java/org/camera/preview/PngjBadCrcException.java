@@ -1,5 +1,6 @@
 package org.camera.preview;
 
+import android.app.Activity;
 import android.graphics.RectF;
 import android.view.ViewGroup;
 import java.util.Map;
@@ -23,15 +24,17 @@ public class PngjBadCrcException {
     public int getScore;
     public getQualityScore getNfiq1Score;
     public valueOf valueOf;
+    public PngjBadCrcException PngjBadCrcException;
 
     public PngjBadCrcException() {}
     public PngjBadCrcException(Object pngjUnsupportedException, ViewGroup viewGroup, Object activity, int cameraId, boolean rolled, boolean kids) {}
 
     public String PngjBadSignature() { return null; }
-    public void PngjException() {}
+    public Activity PngjException() { return null; }
     public void PngjException(RectF rectF, Object obj) {}
     public void PngjOutputException() {}
     public void valueOf() {}
+    public void values(org.camera.valueOf v, String s) {}
 
     public static class PngjBadSignature {
         public static final PngjBadSignature HIGH = new PngjBadSignature();

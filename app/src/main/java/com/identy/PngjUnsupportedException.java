@@ -354,16 +354,16 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final int Action() {
-        if (valueOf.Standard == valueOf.DRO) {
+        if (com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.DRO) {
             return 100;
         }
-        valueOf valueof = valueOf.Standard;
+        com.identy.PngjUnsupportedException.valueOf valueof = com.identy.PngjUnsupportedException.valueOf.Standard;
         return 100;
     }
 
     @Override // org.camera.preview.ApplicationInterface
     public final boolean Attempt() {
-        return valueOf.Standard == valueOf.NoiseReduction;
+        return com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.NoiseReduction;
     }
 
     @Override // org.camera.preview.ApplicationInterface
@@ -451,12 +451,12 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final boolean getData() {
-        return valueOf.Standard == valueOf.DRO;
+        return com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.DRO;
     }
 
     @Override // org.camera.preview.ApplicationInterface
     public final int getFingerPrintQualityScore() {
-        if (valueOf.Standard == valueOf.HDR) {
+        if (com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.HDR) {
             return 3;
         }
         try {
@@ -468,7 +468,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final void getL1Score() {
-        if (valueOf.Standard == valueOf.NoiseReduction) {
+        if (com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.NoiseReduction) {
             getL2Score();
         }
         org.camera.a.PngjBadSignature pngjBadSignature = this.PngjInputException;
@@ -491,7 +491,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final void getNfiq1Score() {
-        if (e1.valueOf == PngjBadCrcException.PngjBadSignature.LOW) {
+        if (com.identy.e1.valueOf == org.camera.preview.PngjBadCrcException.PngjBadSignature.LOW) {
             org.camera.preview.PngjBadCrcException PngjInputException = this.values.PngjInputException();
             PngjInputException.values((org.camera.valueOf) null, PngjInputException.PngjBadCrcException.PngjException().getResources().getString(R.string.camera_error));
             SharedPreferences.Editor edit = PreferenceManager.getDefaultSharedPreferences(this.values).edit();
@@ -504,7 +504,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final void getOveralTimetaken() {
-        if (e1.valueOf == PngjBadCrcException.PngjBadSignature.LOW) {
+        if (com.identy.e1.valueOf == org.camera.preview.PngjBadCrcException.PngjBadSignature.LOW) {
             org.camera.preview.PngjBadCrcException PngjInputException = this.values.PngjInputException();
             PngjInputException.values((org.camera.valueOf) null, PngjInputException.PngjBadCrcException.PngjException().getResources().getString(R.string.failed_to_start_camera_preview));
         }
@@ -513,8 +513,8 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final boolean getPadSub1() {
-        valueOf valueof = valueOf.Standard;
-        return valueof == valueOf.HDR || valueof == valueOf.ExpoBracketing;
+        com.identy.PngjUnsupportedException.valueOf valueof = com.identy.PngjUnsupportedException.valueOf.Standard;
+        return valueof == com.identy.PngjUnsupportedException.valueOf.HDR || valueof == com.identy.PngjUnsupportedException.valueOf.ExpoBracketing;
     }
 
     @Override // org.camera.preview.ApplicationInterface
@@ -545,7 +545,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final double getQualityScore() {
-        if (valueOf.Standard == valueOf.HDR) {
+        if (com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.HDR) {
             return 2.0d;
         }
         try {
@@ -570,7 +570,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final boolean isAuthSucess() {
-        valueOf valueof = valueOf.Standard;
+        com.identy.PngjUnsupportedException.valueOf valueof = com.identy.PngjUnsupportedException.valueOf.Standard;
         return false;
     }
 
@@ -1013,7 +1013,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
                     pngjBadSignature3.getPadSub1.setTextSize((pngjBadSignature3.getAsHighestSecurityLevelReached * 14.0f) + 0.5f);
                     pngjBadSignature3.getPadSub1.setTextAlign(Paint.Align.CENTER);
                     if (PngjInputException2.getCaptureTime) {
-                        PngjBadCrcException.getPadSub2 getpadsub2 = PngjBadCrcException.getPadSub2.CAMERAOPENSTATE_CLOSED;
+                        org.camera.preview.PngjBadCrcException.getPadSub2 getpadsub2 = null; /* PngjBadCrcException.getPadSub2.CAMERAOPENSTATE_CLOSED - field shadows class */
                     }
                 }
             } else {
@@ -1028,7 +1028,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
                         pngjBadSignature3.getPadSub1.setTextSize((pngjBadSignature3.getAsHighestSecurityLevelReached * 42.0f) + 0.5f);
                         pngjBadSignature3.getPadSub1.setTextAlign(Paint.Align.CENTER);
                         i5 = 21;
-                        pngjBadSignature3.valueOf.values(canvas, pngjBadSignature3.getPadSub1, j2 < 60 ? String.valueOf(j2) : org.camera.a.PngjBadSignature.valueOf(j2), Color.rgb(244, 67, 54), -16777216, canvas.getWidth() / 2, canvas.getHeight() / 2, values.ALIGNMENT_BOTTOM, true, null);
+                        pngjBadSignature3.valueOf.values(canvas, pngjBadSignature3.getPadSub1, j2 < 60 ? String.valueOf(j2) : org.camera.a.PngjBadSignature.valueOf(j2), Color.rgb(244, 67, 54), -16777216, canvas.getWidth() / 2, canvas.getHeight() / 2, com.identy.PngjUnsupportedException.values.ALIGNMENT_BOTTOM, true, null);
                         canvas2 = canvas;
                     }
                 }
@@ -1188,13 +1188,13 @@ public final class PngjUnsupportedException implements ApplicationInterface {
         rect3.right = i3 + i5 + rect3.right;
         int i6 = rect3.top;
         int i7 = ((-i6) + i5) - 1;
-        if (valuesVar == values.ALIGNMENT_TOP) {
+        if (valuesVar == com.identy.PngjUnsupportedException.values.ALIGNMENT_TOP) {
             int i8 = (rect3.bottom - i6) + (i5 << 1);
             int i9 = i4 - 1;
             rect3.top = i9;
             rect3.bottom = i9 + i8;
             i4 += i7;
-        } else if (valuesVar == values.ALIGNMENT_CENTRE) {
+        } else if (valuesVar == com.identy.PngjUnsupportedException.values.ALIGNMENT_CENTRE) {
             int i10 = (rect3.bottom - i6) + (i5 << 1);
             int i11 = (int) ((((i6 + i4) - i5) + (i4 - 1)) * 0.5d);
             rect3.top = i11;
