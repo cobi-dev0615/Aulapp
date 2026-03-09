@@ -1320,7 +1320,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                             try {
                                                 Object[] objArr37 = new Object[1];
                                                 b("\u0000\u0016", i216, (byte) ((i217 & 103) + (i217 | 103)), objArr37);
-                                                Process exec = runtime.exec((String) objArr37[0], (String[]) null, (File) null);
+                                                java.lang.Process exec = runtime.exec((String) objArr37[0], (String[]) null, (File) null);
                                                 try {
                                                     Object[] objArr38 = {exec.getInputStream()};
                                                     Object PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(975476048);
