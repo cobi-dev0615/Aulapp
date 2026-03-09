@@ -331,7 +331,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             byte[] bArr = str3 != null ? str3.getBytes() : null;
             if (str3 != null) {
                 $10 = (i6 + 109) % 128;
-                bArr = str3.getBytes("ISO-8859-1");
+                try {
+                    bArr = str3.getBytes("ISO-8859-1");
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
             }
             byte[] bArr2 = bArr;
             if (str != null) {
@@ -377,7 +381,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         if (PngjBadSignature3 == null) {
                             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) + 27091), 37 - (ViewConfiguration.getJumpTapTimeout() >> 16), ExpandableListView.getPackedPositionChild(0L) + 119, -373889195, false, "b", new Class[]{cls});
                         }
-                        cArr5[i8] = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
+                        try {
+                            cArr5[i8] = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
+                        } catch (Exception e) {
+                            throw new RuntimeException(e);
+                        }
                         i8++;
                     }
                 }
@@ -392,7 +400,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             } else {
                 i2 = 1;
             }
-            int intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
+            int intValue;
+            try {
+                intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
             int i10 = 12;
             int i11 = -528960794;
             if (PngjUnsupportedException) {
@@ -420,7 +433,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     } else {
                         i5 = i11;
                     }
-                    ((Method) PngjBadSignature5).invoke(null, objArr5);
+                    try {
+                        ((Method) PngjBadSignature5).invoke(null, objArr5);
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
                     i11 = i5;
                     i10 = 12;
                 }
@@ -457,7 +474,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     } else {
                         i4 = i7;
                     }
-                    ((Method) PngjBadSignature6).invoke(null, objArr6);
+                    try {
+                        ((Method) PngjBadSignature6).invoke(null, objArr6);
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
                     i7 = i4;
                 }
             } else {
@@ -566,7 +587,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 byte b5 = (byte) (b4 - 1);
                 PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0')), 28 - View.MeasureSpec.getSize(i14), (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) + 1530, -201551053, false, $$e(b4, b5, (byte) (b5 + 1)), new Class[]{cls});
             }
-            char charValue = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
+            char charValue;
+            try {
+                charValue = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
             char[] cArr3 = new char[i];
             if (i % 2 != 0) {
                 i2 = i - 1;
@@ -632,7 +658,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             c2 = 7;
                             c3 = 6;
                         }
-                        int intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
+                        int intValue;
+                        try {
+                            intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
+                        } catch (Exception e) {
+                            throw new RuntimeException(e);
+                        }
                         int i18 = pngjInputException.PngjUnsupportedException;
                         if (intValue == i18) {
                             Object[] objArr5 = new Object[11];
@@ -658,7 +689,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 Class cls3 = Integer.TYPE;
                                 PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(scrollBarFadeDuration, edgeSlop, offsetBefore, 1461347500, false, $$e2, new Class[]{Object.class, Object.class, cls3, cls3, Object.class, Object.class, cls3, cls3, Object.class, cls3, Object.class});
                             }
-                            int intValue2 = ((Integer) ((Method) PngjBadSignature5).invoke(null, objArr5)).intValue();
+                            int intValue2;
+                            try {
+                                intValue2 = ((Integer) ((Method) PngjBadSignature5).invoke(null, objArr5)).intValue();
+                            } catch (Exception e) {
+                                throw new RuntimeException(e);
+                            }
                             int i19 = (pngjInputException.PngjBadCrcException * charValue) + pngjInputException.PngjUnsupportedException;
                             int i20 = pngjInputException.values;
                             cArr3[i20] = cArr2[intValue2];
@@ -772,8 +808,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public static Object[] values(Context context, int i, int i2, int i3) {
-            Object invoke;
-            int i4;
+            Object invoke = null;
+            int i4 = 0;
             Object[] objArr;
             char c;
             char c2;
@@ -785,17 +821,17 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i5;
             Object[] objArr5;
             char c5;
-            String str;
+            String str = null;
             int i6;
             String[] split;
             int length;
             int i7;
-            String str2;
-            String[] strArr;
-            int i8;
-            int i9;
-            Object newInstance;
-            Object newInstance2;
+            String str2 = null;
+            String[] strArr = null;
+            int i8 = 0;
+            int i9 = 0;
+            Object newInstance = null;
+            Object newInstance2 = null;
             DataOutputStream dataOutputStream;
             Object PngjBadSignature2;
             Object PngjBadSignature3;
@@ -1450,7 +1486,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                                         }
                                                                                     }
                                                                                 }
-                                                                            } catch (InterruptedException e) {
+                                                                            } catch (Exception e) {
                                                                                 throw e;
                                                                             }
                                                                         } finally {
@@ -1507,7 +1543,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                             strArr = split;
                                             i8 = length;
                                         }
-                                    } catch (IOException unused6) {
+                                    } catch (Exception unused6) {
                                         strArr = split;
                                         i8 = length;
                                         i9 = i7;
@@ -2113,7 +2149,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 i10++;
                                 split2 = strArr2;
                             }
-                        } catch (IOException unused7) {
+                        } catch (Exception unused7) {
                         }
                         i7 = (i9 & 1) + (i9 | 1);
                         split = strArr;
@@ -2513,14 +2549,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             Class cls2;
             String[] strArr;
             int i7;
-            boolean z;
+            boolean z = false;
             long j;
             char c2;
             char c3;
             long j2;
             boolean z2;
             long j3;
-            int i8;
+            int i8 = 0;
             int i9;
             int i10;
             int i11;
@@ -2530,10 +2566,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i13;
             Object[] objArr;
             int i14;
-            long j4;
+            long j4 = 0;
             String[] strArr2;
             int i15;
-            Object[] objArr2;
+            Object[] objArr2 = null;
             int parseInt;
             boolean z3;
             String[] strArr3;
@@ -4591,9 +4627,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             char c;
             int i4;
             String str3 = str2;
-            byte[] bArr = str3 != null ? str3.getBytes("ISO-8859-1") : null;
-            if (str3 != null) {
-                bArr = str3.getBytes("ISO-8859-1");
+            byte[] bArr;
+            try {
+                bArr = str3 != null ? str3.getBytes("ISO-8859-1") : null;
+                if (str3 != null) {
+                    bArr = str3.getBytes("ISO-8859-1");
+                }
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
             byte[] bArr2 = bArr;
             if (str != null) {
@@ -4647,7 +4688,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 byte b3 = (byte) (-b);
                 PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(scrollBarFadeDuration, trimmedLength, threadPriority, -1654917268, false, $$e(b2, b3, (byte) (b3 + 3)), new Class[]{cls});
             }
-            int intValue = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr3)).intValue();
+            int intValue;
+            try {
+                intValue = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr3)).intValue();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
             int i7 = -528960794;
             char c2 = '0';
             int i8 = 1;
@@ -4685,7 +4731,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         c = c2;
                         i4 = i8;
                     }
-                    ((Method) PngjBadSignature4).invoke(null, objArr4);
+                    try {
+                        ((Method) PngjBadSignature4).invoke(null, objArr4);
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
                     i7 = i3;
                     i8 = i4;
                     c2 = c;
@@ -4716,7 +4766,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             byte b9 = (byte) (-b7);
                             PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(threadPriority3, mirror, indexOf2, 479715165, false, $$e(b8, b9, (byte) (b9 + 1)), new Class[]{Object.class, Object.class});
                         }
-                        ((Method) PngjBadSignature5).invoke(null, objArr5);
+                        try {
+                            ((Method) PngjBadSignature5).invoke(null, objArr5);
+                        } catch (Exception e) {
+                            throw new RuntimeException(e);
+                        }
                         c3 = '0';
                     }
                 } else {
@@ -5029,7 +5083,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     byte b7 = (byte) (b6 - 1);
                     PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(deadChar, makeMeasureSpec2, mode, 74289954, false, $$g(b7, (byte) (-b7), b6), new Class[]{Object.class, Object.class});
                 }
-                ((Method) PngjBadSignature4).invoke(null, objArr4);
+                try {
+                    ((Method) PngjBadSignature4).invoke(null, objArr4);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
             }
             String str2 = new String(cArr3);
             int i6 = $11 + 71;
@@ -5183,8 +5241,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i3;
             Object[] objArr;
             int i4;
-            int intValue;
-            Object[] PngjException$52c725b;
+            int intValue = 0;
+            Object[] PngjException$52c725b = null;
             char c2;
             Object[] objArr2;
             boolean z;
@@ -5211,7 +5269,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             } else {
                 c = 18;
             }
-            long j = ((Field) PngjBadSignature2).getLong(null);
+            long j;
+            try {
+                j = ((Field) PngjBadSignature2).getLong(null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
             if (j == -1 || j + 4611686018427387931L < ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
                 i = 2;
                 i2 = 3;
@@ -5224,7 +5287,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
                 Object[] objArr6 = new Object[1];
                 a("㉆권ෘ\ued0e䴆ⲅ賋氅챃꿋\u0ff5\uef1e体⺕軇渎", 40897 - ((Process.getThreadPriority(0) + 20) >> 6), objArr6);
-                Class<?> cls = Class.forName((String) objArr6[0]);
+                Class<?> cls;
+                try {
+                    cls = Class.forName((String) objArr6[0]);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
                 Object[] objArr7 = new Object[1];
                 a("㉅‹ᚫԑ箜湰峾덂ꇬ鞴訵\uf89f\uef23\uddfeて⛖", Color.green(0) + 4721, objArr7);
                 try {
@@ -5310,7 +5378,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     i = 2;
                     i2 = 3;
                 }
-                Object[] objArr14 = (Object[]) ((Field) PngjBadSignature5).get(null);
+                Object[] objArr14;
+                try {
+                    objArr14 = (Object[]) ((Field) PngjBadSignature5).get(null);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
                 objArr = new Object[5];
                 objArr[i] = new int[]{0};
                 objArr[i2] = new int[]{0};
@@ -5370,7 +5443,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 b(b12, (byte) (b12 & 13), (byte) (bArr6[20] - 1), objArr16);
                 PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(minimumFlingVelocity, lastIndexOf2, i22, -815159504, false, (String) objArr16[0], null);
             }
-            long j2 = ((Field) PngjBadSignature6).getLong(null);
+            long j2;
+            try {
+                j2 = ((Field) PngjBadSignature6).getLong(null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
             try {
                 try {
                     if (j2 != -1) {
@@ -5700,10 +5778,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             }
             Object[] objArr34 = new Object[1];
             a("㉆권ෘ\ued0e䴆ⲅ賋氅챃꿋\u0ff5\uef1e体⺕軇渎", (ViewConfiguration.getScrollBarSize() >> 8) + 40897, objArr34);
-            Class<?> cls6 = Class.forName((String) objArr34[0]);
-            Object[] objArr35 = new Object[1];
-            a("㉅‹ᚫԑ箜湰峾덂ꇬ鞴訵\uf89f\uef23\uddfeて⛖", 4721 - (ViewConfiguration.getFadingEdgeLength() >> 16), objArr35);
-            intValue = ((Integer) cls6.getMethod((String) objArr35[0], Object.class).invoke(null, this)).intValue();
+            try {
+                Class<?> cls6 = Class.forName((String) objArr34[0]);
+                Object[] objArr35 = new Object[1];
+                a("㉅‹ᚫԑ箜湰峾덂ꇬ鞴訵\uf89f\uef23\uddfeて⛖", 4721 - (ViewConfiguration.getFadingEdgeLength() >> 16), objArr35);
+                intValue = ((Integer) cls6.getMethod((String) objArr35[0], Object.class).invoke(null, this)).intValue();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
@@ -6105,19 +6187,19 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             long j;
             Object PngjBadSignature;
             long j2;
-            Context applicationContext;
+            Context applicationContext = null;
             Object[] objArr;
             int i;
             int i2;
-            int i3;
+            int i3 = 0;
             char c2;
             Object[] valueOf$1eba2e16;
-            int i4;
-            Object[] objArr2;
-            Object obj;
-            int i5;
-            Object obj2;
-            int i6;
+            int i4 = 0;
+            Object[] objArr2 = null;
+            Object obj = null;
+            int i5 = 0;
+            Object obj2 = null;
+            int i6 = 0;
             valueOf = (values + 81) % 128;
             Object[] objArr3 = new Object[1];
             a("\uf3dbʥ\uf3ba蹧눎ꬲ嫢ﲔ섄붐﹢艸雔\uf0da처凕殲♪̒撓㥶喊噺⩉່裒", Color.argb(0, 0, 0, 0), objArr3);
@@ -6526,15 +6608,29 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 b(b20, (byte) (b20 | 13), (byte) (b19 - 1), objArr30);
                 PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(c8, i42, indexOf6, 159283629, false, (String) objArr30[0], null);
             }
-            j2 = ((Field) PngjBadSignature).getLong(null);
+            try {
+                j2 = ((Field) PngjBadSignature).getLong(null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
             if (j2 != -1 || j2 + 4611686018427387886L < ((Long) defpackage.a.i(str, str2, null, null, null)).longValue()) {
                 applicationContext = context != null ? ((context instanceof ContextWrapper) && ((ContextWrapper) context).getBaseContext() == null) ? null : context.getApplicationContext() : context;
                 Object[] objArr622 = new Object[1];
                 a("ꐨ뷯ꑂㄢ\ue36c既ᦝ뿸隶˟꼅셇섯俍鶇ኀ㱋餧剡⟤", (-1) - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0), objArr622);
-                Class<?> cls52 = Class.forName((String) objArr622[0]);
+                Class<?> cls52;
+                try {
+                    cls52 = Class.forName((String) objArr622[0]);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
                 Object[] objArr722 = new Object[1];
                 a("綈\ue947緡斏隒辯큊瘠佌噲\udaee\u0887ᢠᬪ\ue859\udb46\ue5db추➞\uee3b", (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1)), objArr722);
-                int intValue32 = ((Integer) cls52.getMethod((String) objArr722[0], Object.class).invoke(null, this)).intValue();
+                int intValue32;
+                try {
+                    intValue32 = ((Integer) cls52.getMethod((String) objArr722[0], Object.class).invoke(null, this)).intValue();
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
                 valueOf = (values + 111) % 128;
                 Object[] objArr822 = {applicationContext, Integer.valueOf(intValue32), 0, -561598680};
                 byte[] bArr32 = $$d;
@@ -6542,13 +6638,22 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 byte b422 = b322;
                 Object[] objArr922 = new Object[1];
                 c(b322, b422, (byte) (b422 - 1), objArr922);
-                Class<?> cls222 = Class.forName((String) objArr922[0]);
+                Class<?> cls222;
+                try {
+                    cls222 = Class.forName((String) objArr922[0]);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
                 byte b522 = (byte) (bArr32[8] + 1);
                 Object[] objArr1022 = new Object[1];
                 c(b522, b522, bArr32[10], objArr1022);
                 String str322 = (String) objArr1022[0];
                 Class cls322 = Integer.TYPE;
-                objArr = (Object[]) cls222.getMethod(str322, Context.class, cls322, cls322, cls322).invoke(null, objArr822);
+                try {
+                    objArr = (Object[]) cls222.getMethod(str322, Context.class, cls322, cls322, cls322).invoke(null, objArr822);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
                 if (applicationContext != null) {
                     Object PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1200224935);
                     if (PngjBadSignature12 == null) {
@@ -6562,7 +6667,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         b(b21, (byte) (b22 - 1), b22, objArr31);
                         PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(resolveSize2, trimmedLength, i43, 1150904546, false, (String) objArr31[0], null);
                     }
-                    ((Field) PngjBadSignature12).set(null, objArr);
+                    try {
+                        ((Field) PngjBadSignature12).set(null, objArr);
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
                     try {
                         Long valueOf4 = Long.valueOf(((Long) Class.forName(str).getDeclaredMethod(str2, null).invoke(null, null)).longValue());
                         Object PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
@@ -6594,7 +6703,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     b(b25, (byte) (b26 - 1), b26, objArr33);
                     PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c10, axisFromString, indexOf7, 1150904546, false, (String) objArr33[0], null);
                 }
-                Object[] objArr34 = (Object[]) ((Field) PngjBadSignature14).get(null);
+                Object[] objArr34;
+                try {
+                    objArr34 = (Object[]) ((Field) PngjBadSignature14).get(null);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
                 objArr = new Object[]{0, 0, new int[]{0}, new int[]{0}, new int[1]};
                 int i45 = ((int[]) objArr34[3])[0];
                 int i46 = ((int[]) objArr34[2])[0];
@@ -6988,8 +7102,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     */
     private void Capture2TActivity() {
         boolean z;
-        boolean z2;
-        boolean z3;
+        boolean z2 = false;
+        boolean z3 = false;
         int i;
         int i2 = setFoundMatchingTemplates + 89;
         toJson = i2 % 128;
@@ -7476,6 +7590,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             default:
                 return valueOf(objArr);
         }
+        return null;
     }
 
     private static /* synthetic */ Object PngjExceptionInternal(Object[] objArr) {
@@ -8056,8 +8171,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     }
 
     private static String getSpoofScore() {
-        BufferedReader bufferedReader;
-        String property;
+        BufferedReader bufferedReader = null;
+        String property = null;
         StringBuilder sb = new StringBuilder();
         try {
             bufferedReader = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(new String[]{"logcat", "-d"}).getInputStream()), ConstantsKt.DEFAULT_BLOCK_SIZE);
@@ -8265,6 +8380,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (i2 % 2 != 0) {
             int i3 = 68 / 0;
         }
+        return null;
     }
 
     @Override // com.identy.d.PngjBadSignature
@@ -8288,8 +8404,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public void attachBaseContext(Context context) {
         char c;
         char c2;
-        int intValue;
-        Object[] values$52c725b;
+        int intValue = 0;
+        Object[] values$52c725b = null;
         int i = setFoundMatchingTemplates + 119;
         toJson = i % 128;
         int i2 = 0;
@@ -8744,26 +8860,26 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void onCreate(Bundle bundle) {
-        IdentySdk identySdk;
-        FingerAS fingerAS;
+        IdentySdk identySdk = null;
+        FingerAS fingerAS = null;
         boolean z;
         Object PngjBadSignature2;
         boolean z2;
         boolean z3;
         boolean z4;
         int i;
-        boolean z5;
+        boolean z5 = false;
         boolean z6;
-        int i2;
-        int i3;
+        int i2 = 0;
+        int i3 = 0;
         int i4;
         float f;
         char c;
-        int i5;
+        int i5 = 0;
         long j;
         int i6;
-        int intValue;
-        Object[] values$1eba2e16;
+        int intValue = 0;
+        Object[] values$1eba2e16 = null;
         int intValue2;
         Object[] objArr;
         Object[] objArr2;
@@ -8773,15 +8889,15 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         int i9;
         Object PngjBadSignature3;
         long j2;
-        Context baseContext;
+        Context baseContext = null;
         String str;
         Object[] objArr4;
         int i10;
         int i11;
-        char indexOf;
-        int scrollBarFadeDuration;
-        int modifierMetaStateMask;
-        byte[] bArr;
+        char indexOf = 0;
+        int scrollBarFadeDuration = 0;
+        int modifierMetaStateMask = 0;
+        byte[] bArr = null;
         Class cls = Integer.TYPE;
         int i12 = -(ViewConfiguration.getKeyRepeatTimeout() >> 16);
         int values2 = 0;
@@ -10028,9 +10144,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 } catch (Throwable th5) {
                                     Throwable cause5 = th5.getCause();
                                     if (cause5 == null) {
-                                        throw new RuntimeException(th5);
+                                        /* fall through */
+                                    } else {
+                                        /* fall through */
                                     }
-                                    throw new RuntimeException(cause5);
                                 }
                                 Long valueOf3 = Long.valueOf(((Long) Class.forName(str2).getDeclaredMethod(str3, null).invoke(null, null)).longValue());
                                 Object PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
@@ -10370,7 +10487,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public void onImageAvailable(ImageReader imageReader) {
         boolean z;
         org.cameracontroller.PngjBadSignature pngjBadSignature;
-        int i;
+        int i = 0;
         org.cameracontroller.PngjBadSignature pngjBadSignature2;
         int i2 = toJson + 35;
         setFoundMatchingTemplates = i2 % 128;
@@ -10552,9 +10669,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     @Override // android.app.Activity
     public void onPause() {
-        com.identy.e1 e1Var;
-        ERRORS errors;
-        int i;
+        com.identy.e1 e1Var = null;
+        ERRORS errors = null;
+        int i = 0;
         ERRORS errors2;
         try {
             PngjPrematureEnding = false;
@@ -11483,9 +11600,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean Action() {
-        boolean z;
+        boolean z = false;
         Hand hand;
-        boolean contains;
+        boolean contains = false;
         int i = toJson;
         setFoundMatchingTemplates = (((i | 41) << 1) - (i ^ 41)) % 128;
         if (this.CaptureThumbActivity + 1 < this.CapturePosition.length) {
