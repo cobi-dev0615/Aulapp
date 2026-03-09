@@ -42,7 +42,7 @@ public final class values extends AsyncTask<IdentyA, Integer, IdentyA> {
 
     @Override // android.os.AsyncTask
     public final /* synthetic */ void onPostExecute(IdentyA aVar) {
-        Intent intent = new Intent(PngjBadSignature.values);
+        Intent intent = new Intent(com.identy.PngjBadSignature.values);
         intent.putExtra("mid", aVar.values());
         intent.setPackage(((Activity) this.PngjBadCrcException.get()).getPackageName());
         ((Activity) this.PngjBadCrcException.get()).sendBroadcast(intent);

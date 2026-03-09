@@ -43,7 +43,7 @@ public final class PngjExceptionInternal {
             sb.append(identyUser.uid);
             obj = sb.toString();
         }
-        String obj2 = PngjBadCrcException.values(activity, obj).toString();
+        String obj2 = com.identy.PngjBadCrcException.values(activity, obj).toString();
         StringBuilder sb2 = new StringBuilder();
         sb2.append(values());
         sb2.append(".isocryptv2");
