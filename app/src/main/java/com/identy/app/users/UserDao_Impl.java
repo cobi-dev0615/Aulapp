@@ -185,27 +185,11 @@ public final class UserDao_Impl implements UserDao {
             } finally {
                 this.a.endTransaction();
             }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            d((byte) (-bArr[16]), bArr[99], (byte) (-bArr[14]), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b2 = bArr[42];
-            Object[] objArr4 = new Object[1];
-            d(b2, b2, (byte) (-bArr[98]), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 829082499);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4851;
-            Fpnative.valueOf = objArr;
-            this.a.beginTransaction();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
-
             if (cause == null) {
-
                 throw new RuntimeException(th);
-
             }
-
             throw new RuntimeException(cause);
         }
     }
@@ -305,21 +289,6 @@ public final class UserDao_Impl implements UserDao {
                 query.close();
                 acquire.release();
             }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            d((byte) (-bArr[16]), (byte) 122, (byte) 23, objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b2 = bArr[42];
-            Object[] objArr4 = new Object[1];
-            d(b2, (byte) (b2 | 94), bArr[19], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 823122063);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 5003;
-            Fpnative.valueOf = objArr;
-            acquire = RoomSQLiteQuery.acquire("SELECT * FROM IdentyUser WHERE email LIKE ? ", 1);
-            if (str != null) {
-            }
-            query = this.a.query(acquire);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -327,6 +296,7 @@ public final class UserDao_Impl implements UserDao {
             }
             throw new RuntimeException(th);
         }
+        return new ArrayList();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:13:0x015b A[Catch: all -> 0x0179, TRY_LEAVE, TryCatch #1 {all -> 0x0179, blocks: (B:11:0x013d, B:13:0x015b), top: B:10:0x013d }] */
@@ -401,34 +371,6 @@ public final class UserDao_Impl implements UserDao {
                 query.close();
                 acquire.release();
             }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            d((byte) (-bArr[16]), bArr[99], (byte) (-bArr[14]), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b2 = bArr[42];
-            Object[] objArr4 = new Object[1];
-            d(b2, b2, (byte) (-bArr[98]), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1781998909);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4973;
-            Fpnative.valueOf = objArr;
-            acquire = RoomSQLiteQuery.acquire("SELECT * FROM IdentyUser WHERE username LIKE ? ", 1);
-            int i32 = ((int[]) objArr[1])[0];
-            int i42 = i32 * i32;
-            int i52 = -(2093762988 * i32);
-            int i62 = (i42 ^ i52) + ((i42 & i52) << 1);
-            int i72 = -(i32 * 1077787252);
-            int i82 = ((i62 & i72) + (i72 | i62)) - 458997504;
-            int i92 = i82 >> 22;
-            int i102 = (i82 - (~com.identy.IdentyB.a(i92 ^ (-2047), (i92 & (-2047)) << 1, 1024, -1))) - 1;
-            int i112 = i82 >> 15;
-            int i122 = (((i112 | (-262143)) << 1) - (i112 ^ (-262143))) / 131072;
-            int i132 = (-(i102 ^ ((i122 ^ 1) + ((i122 & 1) << 1)))) + 6;
-            int e2 = com.identy.IdentyB.e(i132 >> 21, 4095, 2048, -1);
-            int i142 = 1356 / ((i132 & (-((e2 & 1) + (1 | e2)))) * 226);
-            if (str != null) {
-            }
-            query = this.a.query(acquire);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -436,6 +378,7 @@ public final class UserDao_Impl implements UserDao {
             }
             throw new RuntimeException(th);
         }
+        return null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:0x0158 A[Catch: all -> 0x0179, LOOP:0: B:9:0x0152->B:11:0x0158, LOOP_END, TRY_LEAVE, TryCatch #1 {all -> 0x0179, blocks: (B:8:0x0131, B:9:0x0152, B:11:0x0158), top: B:7:0x0131 }] */
@@ -507,33 +450,6 @@ public final class UserDao_Impl implements UserDao {
                 query.close();
                 acquire.release();
             }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            d((byte) (-bArr[16]), (byte) 122, (byte) 23, objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b2 = bArr[42];
-            Object[] objArr4 = new Object[1];
-            d(b2, (byte) (b2 | 94), bArr[19], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 656643256);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 5035;
-            Fpnative.valueOf = objArr;
-            int i32 = ((int[]) objArr[1])[0];
-            int i42 = i32 * i32;
-            int i52 = -(38458705 * i32);
-            int i62 = ((i42 | i52) << 1) - (i42 ^ i52);
-            int i72 = -(i32 * (-2055086465));
-            int i82 = (((i62 | i72) << 1) - (i72 ^ i62)) - (-477307456);
-            int e2 = com.identy.IdentyB.e(i82 >> 21, 4095, 2048, -1);
-            int i92 = (i82 ^ e2) + ((e2 & i82) << 1);
-            int i102 = i82 >> 23;
-            int i112 = ((i102 & (-1023)) + (i102 | (-1023))) / ConstantsKt.MINIMUM_BLOCK_SIZE;
-            int i122 = -(((i112 ^ 1) + ((i112 & 1) << 1)) ^ i92);
-            int i132 = (i122 ^ 9) + ((i122 & 9) << 1);
-            int i142 = i132 >> 25;
-            int i152 = (((i142 | (-255)) << 1) - (i142 ^ (-255))) / 128;
-            acquire = RoomSQLiteQuery.acquire("SELECT * FROM IdentyUser", 0 / (((-(((i152 ^ 1) + ((i152 & 1) << 1)) - (-1))) & i132) * 543));
-            query = this.a.query(acquire);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -541,6 +457,7 @@ public final class UserDao_Impl implements UserDao {
             }
             throw new RuntimeException(th);
         }
+        return new ArrayList();
     }
 
     @Override // com.identy.app.users.UserDao
@@ -576,27 +493,11 @@ public final class UserDao_Impl implements UserDao {
             } finally {
                 this.a.endTransaction();
             }
-            byte[] bArr = $$a;
-            byte b3 = (byte) (-bArr[16]);
-            Object[] objArr3 = new Object[1];
-            d(b3, (byte) (b3 | 78), (byte) (-bArr[31]), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            d(bArr[68], (byte) ($$b & 112), bArr[42], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1193818105);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4964;
-            Fpnative.valueOf = objArr;
-            this.a.beginTransaction();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
-
             if (cause == null) {
-
                 throw new RuntimeException(th);
-
             }
-
             throw new RuntimeException(cause);
         }
     }
@@ -688,27 +589,6 @@ public final class UserDao_Impl implements UserDao {
                 query.close();
                 acquire.release();
             }
-            byte[] bArr = $$a;
-            byte b2 = (byte) (-bArr[16]);
-            Object[] objArr3 = new Object[1];
-            d(b2, (byte) (b2 | 78), (byte) (-bArr[31]), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            d(bArr[68], (byte) ($$b & 112), bArr[42], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -387833701);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4885;
-            Fpnative.valueOf = objArr;
-            StringBuilder newStringBuilder2 = StringUtil.newStringBuilder();
-            newStringBuilder2.append("SELECT * FROM IdentyUser WHERE uid IN (");
-            int length2 = iArr.length;
-            StringUtil.appendPlaceholders(newStringBuilder2, length2);
-            newStringBuilder2.append(")");
-            acquire = RoomSQLiteQuery.acquire(newStringBuilder2.toString(), length2);
-            int i32 = 1;
-            while (0 < 0) {
-            }
-            query = this.a.query(acquire);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -716,5 +596,6 @@ public final class UserDao_Impl implements UserDao {
             }
             throw new RuntimeException(th);
         }
+        return new ArrayList();
     }
 }
