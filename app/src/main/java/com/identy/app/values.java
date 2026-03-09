@@ -10,7 +10,7 @@ import java.util.Arrays;
 /* loaded from: classes2.dex */
 public final class values {
 
-    public class PngjBadCrcException extends AsyncTask {
+    public class PngjBadCrcException extends AsyncTask<byte[], Void, String> {
         private String PngjBadCrcException;
         private String PngjBadSignature;
         private String PngjException;
@@ -28,7 +28,7 @@ public final class values {
         public String doInBackground(byte[]... bArr) {
             byte[] bArr2 = bArr[0];
             StringBuilder sb = new StringBuilder();
-            sb.append(PngjBadSignature.PngjBadCrcException(this.PngjException, this.PngjBadSignature));
+            sb.append(com.identy.app.PngjBadSignature.PngjBadCrcException(this.PngjException, this.PngjBadSignature));
             sb.append("/");
             File file = new File(sb.toString());
             if (!file.exists()) {
@@ -62,7 +62,7 @@ public final class values {
         }
 
         @Override // android.os.AsyncTask
-        public final /* bridge */ /* synthetic */ void onPostExecute(Object obj) {
+        public final /* bridge */ /* synthetic */ void onPostExecute(String obj) {
         }
 
         @Override // android.os.AsyncTask
@@ -70,7 +70,7 @@ public final class values {
         }
 
         @Override // android.os.AsyncTask
-        public final /* bridge */ /* synthetic */ void onProgressUpdate(Object[] objArr) {
+        public final /* bridge */ /* synthetic */ void onProgressUpdate(Void... objArr) {
         }
     }
 

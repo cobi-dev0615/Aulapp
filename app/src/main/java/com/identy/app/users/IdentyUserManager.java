@@ -253,6 +253,7 @@ public class IdentyUserManager {
             }
             throw new RuntimeException(th);
         }
+        return null;
     }
 
     public IdentyUser deleteUser(IdentyUser identyUser) {
@@ -636,5 +637,6 @@ public class IdentyUserManager {
             }
             throw new RuntimeException(th);
         }
+        return null;
     }
 }

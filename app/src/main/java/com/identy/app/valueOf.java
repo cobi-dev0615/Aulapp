@@ -32,9 +32,9 @@ public final class valueOf implements Response.ErrorListener {
         byte[] bArr = $$a;
         byte[] bArr2 = new byte[i4 + 6];
         int i6 = i4 + 5;
+        int i8 = 0;
         if (bArr == null) {
             int i7 = i3;
-            int i8 = 0;
             int i9 = i5;
             int i10 = (i5 + i7) - 8;
             int i11 = i9;
