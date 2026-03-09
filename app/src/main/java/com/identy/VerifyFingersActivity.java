@@ -518,7 +518,7 @@ public class VerifyFingersActivity extends FingerActivity {
     }
 
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
-    public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
+    public void PngjException(HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
         FingerMatchSecLevel fingerMatchSecLevel;
         long j;
         super.PngjException(hashMap, hashMap2, bitmap, z, z2);

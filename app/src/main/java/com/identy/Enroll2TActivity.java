@@ -470,7 +470,7 @@ public class Enroll2TActivity extends FingerActivity {
     }
 
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
-    public final void PngjBadSignature(List<HashMap<Pair<Hand, Finger>, a>> list, boolean z, boolean z2, HashMap<Pair<Hand, Finger>, Float> hashMap) {
+    public final void PngjBadSignature(List<HashMap<Pair<Hand, Finger>, com.identy.IdentyA>> list, boolean z, boolean z2, HashMap<Pair<Hand, Finger>, Float> hashMap) {
         getOveralTimetaken = (getScore + 53) % 128;
         this.valueOf = 0;
         if (!z) {
@@ -557,7 +557,7 @@ public class Enroll2TActivity extends FingerActivity {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
+    public void PngjException(HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
         throw new UnsupportedOperationException("Method not decompiled");
     }
 

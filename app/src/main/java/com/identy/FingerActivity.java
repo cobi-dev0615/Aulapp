@@ -10167,7 +10167,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (PngjBadSignature18 == null) {
                 PngjBadSignature18 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (Process.getElapsedCpuTime() > 0L ? 1 : (Process.getElapsedCpuTime() == 0L ? 0 : -1))), 24 - TextUtils.getTrimmedLength(BuildConfig.FLAVOR), 697 - View.getDefaultSize(0, 0), 1457201313, false, null, new Class[]{cls});
             }
-            values$1eba2e16 = org.cameracontroller.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature18).newInstance(objArr45), -1154446754);
+            values$1eba2e16 = (Object[]) org.cameracontroller.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature18).newInstance(objArr45), -1154446754);
             Object PngjBadSignature19 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature19 == null) {
                 char keyCodeFromString3 = (char) (14830 - KeyEvent.keyCodeFromString(BuildConfig.FLAVOR));

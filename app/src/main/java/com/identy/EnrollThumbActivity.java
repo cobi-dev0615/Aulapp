@@ -407,7 +407,7 @@ public class EnrollThumbActivity extends FingerActivity {
     }
 
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
-    public final void PngjBadSignature(List<HashMap<Pair<Hand, Finger>, a>> list, boolean z, boolean z2, HashMap<Pair<Hand, Finger>, Float> hashMap) {
+    public final void PngjBadSignature(List<HashMap<Pair<Hand, Finger>, com.identy.IdentyA>> list, boolean z, boolean z2, HashMap<Pair<Hand, Finger>, Float> hashMap) {
         int i = valueOf + 25;
         getFingerPrintQualityScore = i % 128;
         int i2 = i % 2;
@@ -419,8 +419,8 @@ public class EnrollThumbActivity extends FingerActivity {
     }
 
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
-    public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
-        HashMap<Pair<Hand, Finger>, a> hashMap3;
+    public void PngjException(HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
+        HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap3;
         EnrollThumbActivity enrollThumbActivity;
         int i = valueOf + 65;
         getFingerPrintQualityScore = i % 128;

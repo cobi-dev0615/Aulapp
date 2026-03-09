@@ -253,7 +253,7 @@ public class Capture2IndexActivity extends FingerActivity {
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:31:0x0100 -> B:13:0x0108). Please report as a decompilation issue!!! */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:34:0x0105 -> B:13:0x0108). Please report as a decompilation issue!!! */
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
-    public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
+    public void PngjException(HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
         PngjBadCrcException = (getFingerPrintQualityScore + 99) % 128;
         super.PngjException(hashMap, hashMap2, bitmap, z, z2);
         if (z && this.getAsHighestSecurityLevelReached) {

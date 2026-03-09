@@ -276,7 +276,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
     }
 
     @Override // com.identy.FingerActivity, com.identy.d.PngjBadSignature
-    public void PngjException(HashMap<Pair<Hand, Finger>, a> hashMap, HashMap<Pair<Hand, Finger>, a> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
+    public void PngjException(HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
         int i = PngjBadCrcException + 109;
         valueOf = i % 128;
         if (i % 2 == 0) {
