@@ -138,9 +138,9 @@ public class RollS3Meta {
     }
 
     public JSONObject toJson() {
-        Object[] objArr;
+        Object[] objArr = new Object[]{new long[1], new int[1]};
         long j;
-        JSONObject jSONObject;
+        JSONObject jSONObject = new JSONObject();
         Object[] objArr2 = Fpnative.valueOf;
         try {
             try {

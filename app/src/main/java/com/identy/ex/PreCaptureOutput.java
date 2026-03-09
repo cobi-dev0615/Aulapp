@@ -130,9 +130,10 @@ public class PreCaptureOutput {
         byte[] bArr = $$a;
         byte[] bArr2 = new byte[44 - b];
         int i6 = 43 - b;
+        int i7 = 0;
         if (bArr == null) {
             byte[] bArr3 = bArr;
-            int i7 = 0;
+            i7 = 0;
             int i8 = i4;
             int i9 = i6;
             i5 = (i9 + (-i5)) - 13;
@@ -169,9 +170,9 @@ public class PreCaptureOutput {
     }
 
     public JSONObject a(RectF rectF) {
-        Object[] objArr;
+        Object[] objArr = new Object[]{new long[1], new int[1]};
         long j;
-        JSONObject jSONObject;
+        JSONObject jSONObject = new JSONObject();
         Object[] objArr2 = Fpnative.valueOf;
         try {
             try {
@@ -310,7 +311,7 @@ public class PreCaptureOutput {
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
+                j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
