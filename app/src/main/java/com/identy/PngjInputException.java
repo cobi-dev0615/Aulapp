@@ -1918,15 +1918,13 @@ public final class PngjInputException {
             jSONObject = new JSONObject(hashMap);
             getPadSub2.PngjException("TAG", "? ?".concat(String.valueOf(jSONObject)));
         } catch (Exception e) {
-            e = e;
         }
         try {
             PngjBadSignature pngjBadSignature = new PngjBadSignature(str, new PngjException(pngjPrematureEnding), new PngjBadCrcException(pngjPrematureEnding), jSONObject);
             pngjBadSignature.setRetryPolicy(new values());
             Volley.newRequestQueue(context, new com.identy.app.PngjInputException(context)).add(pngjBadSignature);
         } catch (Exception e2) {
-            e = e2;
-            e.printStackTrace();
+            e2.printStackTrace();
         }
     }
 }

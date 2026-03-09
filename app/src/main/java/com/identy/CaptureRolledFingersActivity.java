@@ -589,13 +589,11 @@ public class CaptureRolledFingersActivity extends FingerActivity {
         try {
             fingerDetectionMode = this.PngjExceptionInternal;
         } catch (Exception e) {
-            e = e;
         }
         try {
             this.onErrorResponse = new getL2Score(this, this, fingerDetectionMode, new Finger[]{fingerDetectionMode.getFinger()}, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
         } catch (Exception e2) {
-            e = e2;
-            Exception exc = e;
+            Exception exc = e2;
             try {
                 if (LibSettings.isSaveCaptured()) {
                     exc.getMessage();

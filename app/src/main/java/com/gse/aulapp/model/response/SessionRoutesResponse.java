@@ -138,6 +138,10 @@ public final /* data */ class SessionRoutesResponse extends GeneralResponseDecry
             return this.data;
         }
 
+        public final List<SessionRoutesDataResponse> getData() {
+            return this.data;
+        }
+
         /* renamed from: component4, reason: from getter */
         public final String getCode() {
             return this.code;

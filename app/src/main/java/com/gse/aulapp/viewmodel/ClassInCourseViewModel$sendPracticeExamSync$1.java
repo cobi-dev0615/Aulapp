@@ -204,7 +204,6 @@ public final class ClassInCourseViewModel$sendPracticeExamSync$1 extends Suspend
                             try {
                                 ResultKt.throwOnFailure(obj);
                             } catch (Exception e) {
-                                e = e;
                                 str2 = anonymousClass22.this$0.TAG;
                                 Boxing.boxInt(Log.e(str2, "Exception updateIsPending " + e.getMessage()));
                                 return Unit.INSTANCE;

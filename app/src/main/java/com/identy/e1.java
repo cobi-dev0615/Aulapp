@@ -2177,7 +2177,6 @@ public class e1 extends BroadcastReceiver {
                 objArr2[0] = values2;
                 getfingerprintqualityscore.executeOnExecutor(executor, objArr2);
             } catch (Exception e) {
-                e = e;
                 e.printStackTrace();
                 com.identy.d.PngjBadSignature pngjBadSignature = e1Var.Attempt;
                 if (pngjBadSignature != null) {
@@ -2185,7 +2184,6 @@ public class e1 extends BroadcastReceiver {
                 }
             }
         } catch (Exception e2) {
-            e = e2;
             e1Var = this;
         }
     }

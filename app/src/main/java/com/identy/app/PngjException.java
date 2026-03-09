@@ -84,16 +84,13 @@ public final class PngjException {
             e.printStackTrace();
             return null;
         } catch (KeyStoreException e2) {
-            e = e2;
-            e.printStackTrace();
+            e2.printStackTrace();
             return null;
         } catch (NoSuchAlgorithmException e3) {
-            e = e3;
-            e.printStackTrace();
+            e3.printStackTrace();
             return null;
         } catch (UnrecoverableEntryException e4) {
-            e = e4;
-            e.printStackTrace();
+            e4.printStackTrace();
             return null;
         } catch (CertificateException e5) {
             e5.printStackTrace();
@@ -144,24 +141,19 @@ public final class PngjException {
             keyStore.getEntry(str, null);
             return keyStore.getCertificate(str).getPublicKey();
         } catch (IOException e) {
-            e = e;
             e.printStackTrace();
             return null;
         } catch (KeyStoreException e2) {
-            e = e2;
-            e.printStackTrace();
+            e2.printStackTrace();
             return null;
         } catch (NoSuchAlgorithmException e3) {
-            e = e3;
-            e.printStackTrace();
+            e3.printStackTrace();
             return null;
         } catch (UnrecoverableEntryException e4) {
-            e = e4;
-            e.printStackTrace();
+            e4.printStackTrace();
             return null;
         } catch (CertificateException e5) {
-            e = e5;
-            e.printStackTrace();
+            e5.printStackTrace();
             return null;
         }
     }

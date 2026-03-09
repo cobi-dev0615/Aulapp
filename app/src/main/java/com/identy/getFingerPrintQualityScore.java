@@ -147,8 +147,7 @@ public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, Ar
                     sb3.append("_captured");
                     e1Var.PngjBadSignature(cvtmat2ba, sb3.toString(), "CAPTURED", BuildConfig.FLAVOR);
                 } catch (Exception e2) {
-                    e = e2;
-                    e.printStackTrace();
+                    e2.printStackTrace();
                     return arrayList;
                 }
             } else {
@@ -226,9 +225,8 @@ public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, Ar
             this.PngjBadSignature.clear();
             return arrayList4;
         } catch (Exception e3) {
-            e = e3;
             arrayList = null;
-            e.printStackTrace();
+            e3.printStackTrace();
             return arrayList;
         }
     }

@@ -6123,12 +6123,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 b(b2, (byte) (b2 | 13), (byte) (b - 1), objArr5);
                                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(deadChar, myPid, myTid, -815159504, false, (String) objArr5[0], null);
                             } catch (Exception e) {
-                                e = e;
                             }
                         } catch (Exception e2) {
-                            e = e2;
                             c = 18;
-                            e.printStackTrace();
+                            e2.printStackTrace();
                             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
                             if (PngjBadSignature == null) {
                             }
@@ -6177,7 +6175,6 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             }
                         }
                     } catch (Exception e3) {
-                        e = e3;
                         c = 18;
                         j = 0;
                     }
@@ -6215,8 +6212,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 b(b6, (byte) (b6 + 4), (byte) (bArr2[c] - 1), objArr14);
                                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(lastIndexOf, doubleTapTimeout, indexOf, -779023007, false, (String) objArr14[0], null);
                             } catch (Exception e4) {
-                                e = e4;
-                                e.printStackTrace();
+                                e4.printStackTrace();
                                 PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(-175041514);
                                 if (PngjBadSignature == null) {
                                 }
@@ -6472,7 +6468,6 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 obj2 = objArr2[1];
                 i6 = ((int[]) obj2)[0];
             } catch (Exception e5) {
-                e = e5;
                 c = 18;
                 j = 0;
             }
@@ -8802,10 +8797,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 bArr = $$d;
                                 i3 = 11;
                             } catch (Exception e) {
-                                e = e;
                             }
                         } catch (Exception e2) {
-                            e = e2;
                         }
                         try {
                             i4 = 0;
@@ -8815,9 +8808,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             f((byte) (bArr[11] - 1), b, (byte) (b | 13), objArr7);
                             PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf, scrollBarFadeDuration, modifierMetaStateMask, -815159504, false, (String) objArr7[0], null);
                         } catch (Exception e3) {
-                            e = e3;
                             identySdk = null;
-                            e.printStackTrace();
+                            e3.printStackTrace();
                             fingerAS = null;
                             com.identy.getPadSub2.PngjException("START_UP", " onCreate start");
                             if (identySdk != null) {
@@ -8949,9 +8941,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     }
                     j = ((Field) PngjBadSignature4).getLong(null);
                 } catch (Exception e16) {
-                    e = e16;
                     identySdk = null;
-                    e.printStackTrace();
+                    e16.printStackTrace();
                     fingerAS = null;
                     com.identy.getPadSub2.PngjException("START_UP", " onCreate start");
                     if (identySdk != null) {
@@ -9016,9 +9007,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     toJson = ((i26 ^ 79) + ((i26 & 79) << 1)) % 128;
                     try {
                     } catch (Exception e17) {
-                        e = e17;
                         identySdk = null;
-                        e.printStackTrace();
+                        e17.printStackTrace();
                         fingerAS = null;
                         com.identy.getPadSub2.PngjException("START_UP", " onCreate start");
                         if (identySdk != null) {
@@ -9830,9 +9820,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         z5 = z2;
                                                     }
                                                 } catch (Exception e24) {
-                                                    e = e24;
                                                     z3 = z2;
-                                                    e.printStackTrace();
+                                                    e24.printStackTrace();
                                                     try {
                                                         if (LibSettings.isSaveCaptured()) {
                                                         }
@@ -9863,9 +9852,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                     return;
                                                 }
                                             } catch (Exception e26) {
-                                                e = e26;
                                                 z3 = false;
-                                                e.printStackTrace();
+                                                e26.printStackTrace();
                                                 if (LibSettings.isSaveCaptured()) {
                                                     toJson = (setFoundMatchingTemplates + 97) % 128;
                                                 }
@@ -11947,7 +11935,6 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             try {
                 i2 = IdentySdk.getInstance().getAllowedAttempts();
             } catch (Exception e3) {
-                e = e3;
                 i2 = 0;
             }
             try {
@@ -11993,8 +11980,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 int i34 = toJson;
                 setFoundMatchingTemplates = ((i34 & 25) + (i34 | 25)) % 128;
             } catch (Exception e4) {
-                e = e4;
-                e.printStackTrace();
+                e4.printStackTrace();
                 com.identy.e1 e1Var4 = this.onErrorResponse;
                 i3 = e1Var4.getEncryptedTemplates + 1;
                 e1Var4.getEncryptedTemplates = i3;

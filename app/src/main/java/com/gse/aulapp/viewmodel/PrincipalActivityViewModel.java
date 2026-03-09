@@ -44,7 +44,7 @@ import kotlinx.coroutines.CoroutineStart;
 public final class PrincipalActivityViewModel extends ViewModel {
     final String TAG;
     ConnectivityObserver connectivityObserver;
-    private final HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository;
+    final HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository;
 
     public PrincipalActivityViewModel(HistoricRecordPermissionsChangeRepository historicRecordPermissionsChangeRepository) {
         Intrinsics.checkNotNullParameter(historicRecordPermissionsChangeRepository, "historicRecordPermissionsChangeRepository");
