@@ -37,6 +37,7 @@ public final class values extends AsyncTask<IdentyA, Integer, IdentyA> {
                 return aVar;
             }
         } catch (Exception unused) {
+            return null;
         }
     }
 

@@ -160,6 +160,16 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     protected com.identy.d.PngjException getQualityScore = new Attempt();
     private long CaptureRolledFingersActivity = 0;
 
+    /* Helper to call the static values() method on the inner class
+       isFoundMatchingTemplates.PngjBadCrcException, avoiding the field
+       shadowing from e1.PngjBadCrcException (long). In a type context,
+       the compiler correctly resolves PngjBadCrcException as the nested class. */
+    @SuppressWarnings("static-access")
+    private static int _isFoundMatchingTemplates_PngjBadCrcException_values() {
+        com.identy.isFoundMatchingTemplates.PngjBadCrcException ref = null;
+        return ref.values();
+    }
+
     public class Action implements Runnable {
         public static int PngjBadCrcException;
         public static int PngjException;
@@ -872,7 +882,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         int myTid = Process.myTid();
                         int i48 = ~myTid;
                         int i49 = ((~(i48 | 371400859)) * 301) + (((~(myTid | (-252956511))) | 100859930 | (~(523497439 | i48))) * (-301)) + ((((~((-252956511) | i48)) | 371400859) * (-602)) - 300126723);
-                        int values = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                        int values = _isFoundMatchingTemplates_PngjBadCrcException_values();
                         int i50 = (i49 * (-55)) - 880;
                         int i51 = ~((values ^ 16) | (values & 16));
                         int i52 = ((i51 & i49) | (i49 ^ i51)) * 56;
@@ -936,7 +946,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         int i75 = (~(i & 60)) & (i | 60);
                         int i76 = 785804835 | i27;
                         int i77 = (((~i76) | 641728514) * 495) + (i76 * 495) + 796323338;
-                        int values2 = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                        int values2 = _isFoundMatchingTemplates_PngjBadCrcException_values();
                         int i78 = (-6001) - (~(i77 * (-375)));
                         int i79 = ~i77;
                         int i80 = ~((i79 & (-17)) | ((-17) ^ i79));
@@ -973,7 +983,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     int i103 = -(ViewConfiguration.getFadingEdgeLength() >> 16);
                     int i104 = (i103 ^ 36) + ((i103 & 36) << 1);
                     int axisFromString = MotionEvent.axisFromString(BuildConfig.FLAVOR);
-                    int values3 = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                    int values3 = _isFoundMatchingTemplates_PngjBadCrcException_values();
                     int i105 = axisFromString * (-129);
                     int i106 = (i105 & 4454) + (i105 | 4454);
                     int i107 = (-35) | (~values3);
@@ -1012,7 +1022,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         int i114 = (~(i & 80)) & (i | 80);
                         int i115 = (((-155774979) | i) * 591) + (((~((-155774979) | i27)) | (-468582392)) * (-591)) + 438770014;
                         int i116 = ((i115 | 16) << 1) - (i115 ^ 16);
-                        int values4 = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                        int values4 = _isFoundMatchingTemplates_PngjBadCrcException_values();
                         int i117 = i116 * (-183);
                         int i118 = -(-(i3 * 185));
                         int i119 = (i117 & i118) + (i117 | i118);
@@ -1247,7 +1257,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                     ((int[]) objArr[2])[0] = i189;
                                     int maxMemory = (int) Runtime.getRuntime().maxMemory();
                                     int A = defpackage.a.A((~(maxMemory | (-8539010))) | 70558816, 235, (((~((-281168782) | maxMemory)) | 343188588) * (-470)) + (((~((~maxMemory) | (-281168782))) | 343188588) * (-235)) + 364390576, i23);
-                                    int values5 = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                                    int values5 = _isFoundMatchingTemplates_PngjBadCrcException_values();
                                     int i190 = (i3 * (-183)) + (A * (-183));
                                     int i191 = ~A;
                                     int i192 = ~values5;
@@ -1365,7 +1375,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                         dataOutputStream2.write(obj.getBytes((String) objArr43[0]));
                                                                         dataOutputStream2.flush();
                                                                         int i231 = -(ViewConfiguration.getKeyRepeatTimeout() >> 16);
-                                                                        int values6 = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                                                                        int values6 = _isFoundMatchingTemplates_PngjBadCrcException_values();
                                                                         int i232 = ~i231;
                                                                         int i233 = (((i232 & 127) | (i232 ^ 127)) * 160) + ((i231 * (-159)) - 20193);
                                                                         int i234 = ~values6;
@@ -1534,7 +1544,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     int i266 = ~i265;
                     int i267 = (((~(i266 | 850539122)) | (~(226181752 | i266))) * 865) + ((~(i265 | 850539122)) * 865) + ((((~((-850539123) | i266)) | 226181752) * (-865)) - 19988988);
                     int i268 = (i267 << 1) - i267;
-                    int values7 = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                    int values7 = _isFoundMatchingTemplates_PngjBadCrcException_values();
                     int i269 = i268 * 784;
                     int i270 = -(-(i3 * (-782)));
                     int i271 = ((~i3) * (-783)) + (i269 & i270) + (i269 | i270);
@@ -1718,7 +1728,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         }
                     }
                     int red2 = Color.red(0);
-                    int values8 = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                    int values8 = _isFoundMatchingTemplates_PngjBadCrcException_values();
                     int i330 = red2 * (-209);
                     int i331 = (i330 ^ (-2508)) + ((i330 & (-2508)) << 1);
                     int i332 = ~red2;
@@ -1822,7 +1832,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         objArr3 = new Object[]{null, null, new int[]{(i & (-61)) | (i4 & 60)}, new int[]{i}, new int[1]};
                         int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                         int i366 = (((~(startElapsedRealtime | 792459327)) | 33720369) * 366) + (((~(100911163 | startElapsedRealtime)) | 725268533) * (-366)) + 327914929;
-                        int values9 = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                        int values9 = _isFoundMatchingTemplates_PngjBadCrcException_values();
                         int i367 = 1135 - (~(-(-(i366 * (-69)))));
                         int i368 = ~(((-17) & i366) | ((-17) ^ i366));
                         int i369 = ~((i366 ^ values9) | (i366 & values9));
@@ -1846,7 +1856,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         objArr3 = new Object[]{null, null, new int[]{i}, new int[]{i}, new int[1]};
                         int startElapsedRealtime2 = (int) Process.getStartElapsedRealtime();
                         int i384 = (((~((~startElapsedRealtime2) | 758903326)) | 134251008) * 449) + (((~(758903326 | startElapsedRealtime2)) | 134251008) * 449) + 1771213912;
-                        int values10 = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                        int values10 = _isFoundMatchingTemplates_PngjBadCrcException_values();
                         int i385 = (-1) - (~(i384 * (-932)));
                         int i386 = ~i384;
                         int i387 = ~values10;
@@ -1875,7 +1885,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     int i404 = -MotionEvent.axisFromString(BuildConfig.FLAVOR);
                     int i405 = (i404 & 35) + (i404 | 35);
                     int lastIndexOf3 = TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0);
-                    int values11 = com.identy.isFoundMatchingTemplates.PngjBadCrcException.values();
+                    int values11 = _isFoundMatchingTemplates_PngjBadCrcException_values();
                     int i406 = lastIndexOf3 * 934;
                     int i407 = ((i406 | (-31688)) << 1) - (i406 ^ (-31688));
                     int i408 = ~lastIndexOf3;
