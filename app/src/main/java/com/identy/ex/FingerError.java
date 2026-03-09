@@ -71,6 +71,24 @@ public final class FingerError {
         return new FingerError[]{NO_BOXES, LESS_BOXES, INCORRECT_DIAGNOSIS, MOVE_FAR, MOVE_CLOSE, BE_INSIDE_GUIDE, BACKHAND, UNSTABLE, SHOW_LOCATION_ERROR, CORRECT, QC_ERROR};
     }
 
+    private static FingerError valueOfManual(String name) {
+        if (name == null) return null;
+        switch (name) {
+            case "NO_BOXES": return NO_BOXES;
+            case "LESS_BOXES": return LESS_BOXES;
+            case "INCORRECT_DIAGNOSIS": return INCORRECT_DIAGNOSIS;
+            case "MOVE_FAR": return MOVE_FAR;
+            case "MOVE_CLOSE": return MOVE_CLOSE;
+            case "BE_INSIDE_GUIDE": return BE_INSIDE_GUIDE;
+            case "BACKHAND": return BACKHAND;
+            case "UNSTABLE": return UNSTABLE;
+            case "SHOW_LOCATION_ERROR": return SHOW_LOCATION_ERROR;
+            case "CORRECT": return CORRECT;
+            case "QC_ERROR": return QC_ERROR;
+            default: return null;
+        }
+    }
+
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0022  */
     /* JADX WARN: Removed duplicated region for block: B:7:0x001a  */
@@ -137,13 +155,13 @@ public final class FingerError {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startUptimeMillis = (int) Process.getStartUptimeMillis();
                     int i = ~startUptimeMillis;
-                    int c = a.c(startUptimeMillis | (-507802177), 397, (((~(i | (-21955729))) | ((~((-520845009) | i)) | 17499280)) * (-397)) - 1409829796, 1517693813);
+                    int c = defpackage.a.c(startUptimeMillis | (-507802177), 397, (((~(i | (-21955729))) | ((~((-520845009) | i)) | 17499280)) * (-397)) - 1409829796, 1517693813);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
                     ((long[]) objArr[0])[0] = j + 5040;
                     Fpnative.valueOf = objArr;
-                    return (FingerError) Enum.valueOf(FingerError.class, str);
+                    return valueOfManual(str);
                 }
             }
             byte[] bArr = $$a;
@@ -158,7 +176,7 @@ public final class FingerError {
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 5040;
             Fpnative.valueOf = objArr;
-            return (FingerError) Enum.valueOf(FingerError.class, str);
+            return valueOfManual(str);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -182,7 +200,7 @@ public final class FingerError {
                     int i = (((~((-284665206) | uptimeMillis)) | 271786293 | (~(214224074 | uptimeMillis))) * (-754)) + 2071894501;
                     int i2 = ~((-271786294) | uptimeMillis);
                     int i3 = ~uptimeMillis;
-                    int c = a.c(i3 | (-284665206), 754, ((i2 | (~(486010367 | i3))) * (-754)) + i, 1529738362);
+                    int c = defpackage.a.c(i3 | (-284665206), 754, ((i2 | (~(486010367 | i3))) * (-754)) + i, 1529738362);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -224,7 +242,7 @@ public final class FingerError {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~Process.myPid();
-                    int c = a.c((~((-715375810) | i)) | 570459200 | (~(216486529 | i)), 184, (((~(i | 786945729)) | (~((-144916610) | i))) * (-184)) - 1102424841, 1434009438);
+                    int c = defpackage.a.c((~((-715375810) | i)) | 570459200 | (~(216486529 | i)), 184, (((~(i | 786945729)) | (~((-144916610) | i))) * (-184)) - 1102424841, 1434009438);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -265,7 +283,7 @@ public final class FingerError {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~System.identityHashCode(this)) | (-69304598))) | (-669381462), 241, (((~((-618787670) | 0)) | 549483072) * (-241)) - 2107501451, -1088125361);
+                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | (-69304598))) | (-669381462), 241, (((~((-618787670) | 0)) | 549483072) * (-241)) - 2107501451, -1088125361);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -307,7 +325,7 @@ public final class FingerError {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedRealtime = (int) SystemClock.elapsedRealtime();
-                    int c = a.c((~((~elapsedRealtime) | 422102634)) | 76786645, 56, (((~(elapsedRealtime | 76786645)) | 422102634) * 56) + 497022071, -1581486748);
+                    int c = defpackage.a.c((~((~elapsedRealtime) | 422102634)) | 76786645, 56, (((~(elapsedRealtime | 76786645)) | 422102634) * 56) + 497022071, -1581486748);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
