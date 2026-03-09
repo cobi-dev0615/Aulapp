@@ -93,7 +93,7 @@ public class ASResult {
                     int i17 = i16 >> 19;
                     int i18 = (((i17 | (-16383)) << 1) - (i17 ^ (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE;
                     int i19 = (i18 ^ 1) + ((i18 & 1) << 1);
-                    this.l2Pass = 8025 / (((-((i19 ^ 1) + ((i19 & 1) << 1))) & i16) * 1605);
+                    this.l2Pass = (8025 / (((-((i19 ^ 1) + ((i19 & 1) << 1))) & i16) * 1605)) != 0;
                 }
             }
             byte[] bArr = $$a;
@@ -143,7 +143,7 @@ public class ASResult {
             int i172 = i162 >> 19;
             int i182 = (((i172 | (-16383)) << 1) - (i172 ^ (-16383))) / ConstantsKt.DEFAULT_BUFFER_SIZE;
             int i192 = (i182 ^ 1) + ((i182 & 1) << 1);
-            this.l2Pass = 8025 / (((-((i192 ^ 1) + ((i192 & 1) << 1))) & i162) * 1605);
+            this.l2Pass = (8025 / (((-((i192 ^ 1) + ((i192 & 1) << 1))) & i162) * 1605)) != 0;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
 

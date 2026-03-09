@@ -69,7 +69,7 @@ public class PreCaptureOutput {
                     int i16 = ((i15 | 7) << 1) - (i15 ^ 7);
                     int i17 = i16 >> 29;
                     int a = IdentyB.a(i17 ^ (-15), (i17 & (-15)) << 1, 8, -1);
-                    this.gotAllFingers = 0 / (((-((a & 1) + (a | 1))) & i16) * 561);
+                    this.gotAllFingers = (0 / (((-((a & 1) + (a | 1))) & i16) * 561)) != 0;
                     this.streakCount = 0;
                 }
             }
@@ -102,7 +102,7 @@ public class PreCaptureOutput {
             int i162 = ((i152 | 7) << 1) - (i152 ^ 7);
             int i172 = i162 >> 29;
             int a2 = IdentyB.a(i172 ^ (-15), (i172 & (-15)) << 1, 8, -1);
-            this.gotAllFingers = 0 / (((-((a2 & 1) + (a2 | 1))) & i162) * 561);
+            this.gotAllFingers = (0 / (((-((a2 & 1) + (a2 | 1))) & i162) * 561)) != 0;
             this.streakCount = 0;
         } catch (Throwable th) {
             Throwable cause = th.getCause();

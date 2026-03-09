@@ -56,7 +56,7 @@ public class RResult {
                     int i16 = i15 >> 18;
                     int i17 = ((i16 & (-32767)) + (i16 | (-32767))) / 16384;
                     int i18 = (i17 & 1) + (i17 | 1);
-                    this.done = 0 / (((-((i18 & 1) + (i18 | 1))) & i15) * 1478);
+                    this.done = (0 / (((-((i18 & 1) + (i18 | 1))) & i15) * 1478)) != 0;
                     this.readyForCapture = false;
                 }
             }
@@ -89,7 +89,7 @@ public class RResult {
             int i162 = i152 >> 18;
             int i172 = ((i162 & (-32767)) + (i162 | (-32767))) / 16384;
             int i182 = (i172 & 1) + (i172 | 1);
-            this.done = 0 / (((-((i182 & 1) + (i182 | 1))) & i152) * 1478);
+            this.done = (0 / (((-((i182 & 1) + (i182 | 1))) & i152) * 1478)) != 0;
             this.readyForCapture = false;
         } catch (Throwable th) {
             Throwable cause = th.getCause();

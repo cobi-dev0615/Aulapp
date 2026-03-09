@@ -138,9 +138,9 @@ public class ActionS3Meta {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public JSONObject toJson() {
-        Object[] objArr;
+        Object[] objArr = new Object[]{new long[1], new int[1]};
         long j;
-        JSONObject jSONObject;
+        JSONObject jSONObject = new JSONObject();
         List<PngjBadSignature.PngjExceptionInternal> list;
         Object[] objArr2 = Fpnative.valueOf;
         try {

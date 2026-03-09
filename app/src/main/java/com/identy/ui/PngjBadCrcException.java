@@ -197,7 +197,7 @@ public class PngjBadCrcException extends View {
                     int i13 = ((i12 | 5) << 1) - (i12 ^ 5);
                     int i14 = i13 >> 18;
                     int e = IdentyB.e((i14 | (-32767)) << 1, i14 ^ (-32767), 16384, -1);
-                    this.values = 0 / (((-((e ^ 1) + ((e & 1) << 1))) & i13) * 555);
+                    this.values = (0 / (((-((e ^ 1) + ((e & 1) << 1))) & i13) * 555)) != 0;
                     this.PngjBadCrcException = false;
                     this.PngjBadSignature = true;
                     this.PngjInputException = 8.0d;
@@ -231,7 +231,7 @@ public class PngjBadCrcException extends View {
             int i132 = ((i122 | 5) << 1) - (i122 ^ 5);
             int i142 = i132 >> 18;
             int e2 = IdentyB.e((i142 | (-32767)) << 1, i142 ^ (-32767), 16384, -1);
-            this.values = 0 / (((-((e2 ^ 1) + ((e2 & 1) << 1))) & i132) * 555);
+            this.values = (0 / (((-((e2 ^ 1) + ((e2 & 1) << 1))) & i132) * 555)) != 0;
             this.PngjBadCrcException = false;
             this.PngjBadSignature = true;
             this.PngjInputException = 8.0d;
@@ -276,7 +276,7 @@ public class PngjBadCrcException extends View {
                     int i10 = (i9 ^ 1) + ((i9 & 1) << 1);
                     int i11 = i10 >> 16;
                     int i12 = (((i11 | (-131071)) << 1) - (i11 ^ (-131071))) / 65536;
-                    this.values = 0 / (((-((((i12 | 1) << 1) - (i12 ^ 1)) - (-1))) & i10) * 661);
+                    this.values = (0 / (((-((((i12 | 1) << 1) - (i12 ^ 1)) - (-1))) & i10) * 661)) != 0;
                     this.PngjBadCrcException = false;
                     this.PngjBadSignature = true;
                     this.PngjInputException = 8.0d;
@@ -304,7 +304,7 @@ public class PngjBadCrcException extends View {
             int i102 = (i92 ^ 1) + ((i92 & 1) << 1);
             int i112 = i102 >> 16;
             int i122 = (((i112 | (-131071)) << 1) - (i112 ^ (-131071))) / 65536;
-            this.values = 0 / (((-((((i122 | 1) << 1) - (i122 ^ 1)) - (-1))) & i102) * 661);
+            this.values = (0 / (((-((((i122 | 1) << 1) - (i122 ^ 1)) - (-1))) & i102) * 661)) != 0;
             this.PngjBadCrcException = false;
             this.PngjBadSignature = true;
             this.PngjInputException = 8.0d;
