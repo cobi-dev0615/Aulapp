@@ -24,6 +24,7 @@ public class PngjBadSignature {
     }
 
     public interface values {
+        void PngjException(boolean z);
     }
 
     public static Object values$1eba2e16(int i, Object obj, int i2) { return null; }
