@@ -235,7 +235,11 @@ public class Capture2IndexActivity extends FingerActivity {
                 byte b6 = b5;
                 PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (35511 - (ViewConfiguration.getWindowTouchSlop() >> 8)), 42 - (ViewConfiguration.getKeyRepeatTimeout() >> 16), 507 - (ExpandableListView.getPackedPositionForGroup(0) > 0L ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == 0L ? 0 : -1)), 74289954, false, $$i(b5, b6, b6), new Class[]{Object.class, Object.class});
             }
-            ((Method) PngjBadSignature3).invoke(null, objArr4);
+            try {
+                ((Method) PngjBadSignature3).invoke(null, objArr4);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
@@ -317,9 +321,9 @@ public class Capture2IndexActivity extends FingerActivity {
     public void attachBaseContext(Context context) {
         int i;
         int intValue;
-        Object[] PngjBadCrcException$52c725b;
-        char c;
-        int i2;
+        Object[] PngjBadCrcException$52c725b = null;
+        char c = 0;
+        int i2 = 0;
         int i3;
         int i4;
         super.attachBaseContext(context);
@@ -335,8 +339,8 @@ public class Capture2IndexActivity extends FingerActivity {
             b(b2, b3, (byte) (b3 - 1), objArr);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(tapTimeout, alpha, red, -815159504, false, (String) objArr[0], null);
         }
-        long j = ((Field) PngjBadSignature).getLong(null);
         try {
+            long j = ((Field) PngjBadSignature).getLong(null);
             try {
                 if (j != -1) {
                     long j2 = j + 4611686018427387930L;
@@ -474,12 +478,17 @@ public class Capture2IndexActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
+        try {
         Object[] objArr13 = new Object[1];
         c("豔隖맚\udc04\ue734ি⳩㜯娑紁螷ꫤ촡큿瘟ᶔ", (ViewConfiguration.getKeyRepeatDelay() >> 16) + 6857, objArr13);
         Class<?> cls3 = Class.forName((String) objArr13[0]);
         Object[] objArr14 = new Object[1];
         c("豗羛毙圓䍎互㫌☀ቾᶖে\uf51d\ue171\uec9c\ud8d4쐔", (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 62401, objArr14);
-        intValue = ((Integer) cls3.getMethod((String) objArr14[0], Object.class).invoke(null, this)).intValue();
+
+            intValue = ((Integer) cls3.getMethod((String) objArr14[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity

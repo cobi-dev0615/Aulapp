@@ -2,7 +2,12 @@ package org.camera.preview;
 
 import android.app.Activity;
 import android.graphics.RectF;
+import android.util.Pair;
 import android.view.ViewGroup;
+import com.identy.enums.Finger;
+import com.identy.enums.Hand;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class PngjBadCrcException {
@@ -17,14 +22,40 @@ public class PngjBadCrcException {
     public boolean getPadSub2;
     public boolean getPadSub1;
     public boolean Attempt;
-    public Map e1;
+    public HashMap<Pair<Hand, Finger>, RectF> e1;
     public int getAsHighestSecurityLevelReached;
     public String Enroll4FActivity;
-    public String CaptureRolledFingersActivity;
-    public int getScore;
+    public List CaptureRolledFingersActivity;
     public getQualityScore getNfiq1Score;
     public valueOf valueOf;
     public PngjBadCrcException PngjBadCrcException;
+
+    // Additional fields from decompiled source
+    public boolean PngjException;
+    public volatile int PngjInputException;
+    public volatile int PngjUnsupportedException;
+    public boolean a;
+    public float[] PngjOutputException = new float[3];
+    public boolean getCaptureTime;
+    public volatile int getProcessingTime;
+    public long getL3Score;
+    public int Enroll2IndexActivity;
+    public long toString;
+    public boolean setFoundMatchingTemplates;
+    public int ERRORS;
+    public int Enroll2TActivity;
+    public boolean PngjExceptionInternal;
+    public float CapturePosition;
+    public float CaptureRolledThumbActivity;
+    public float setFingers;
+    public double isQualityFailed;
+    public int toJson;
+    public int getScore;
+    public boolean getShortform;
+    public int getSpoofScore;
+    public boolean getL1Score;
+    public Long onErrorResponse;
+    public ApplicationInterface values_field;
 
     public PngjBadCrcException() {}
     public PngjBadCrcException(Object pngjUnsupportedException, ViewGroup viewGroup, Object activity, int cameraId, boolean rolled, boolean kids) {}
@@ -50,6 +81,7 @@ public class PngjBadCrcException {
 
     public static class getPadSub2 {
         public static int CAMERAOPENSTATE_CLOSING = 0;
+        public static int CAMERAOPENSTATE_CLOSED = 0;
     }
 
     public static class getQualityScore {}
