@@ -368,7 +368,7 @@ public class Verify4FActivity extends FingerActivity {
             bArr = str3.getBytes("ISO-8859-1");
         }
         byte[] bArr2 = bArr;
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.PngjExceptionInternal pngjExceptionInternal = new com.d.e.PngjExceptionInternal();
         char[] cArr = valueOf;
         Class cls = Integer.TYPE;

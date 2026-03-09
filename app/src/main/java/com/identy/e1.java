@@ -713,7 +713,7 @@ public class e1 extends BroadcastReceiver {
             char c3;
             int i4;
             int i5;
-            char[] charArray = str != null ? str.toCharArray() : str;
+            char[] charArray = str != null ? str.toCharArray() : null;
             com.d.e.PngjInputException pngjInputException = new com.d.e.PngjInputException();
             char[] cArr = PngjBadSignature;
             Class cls = Integer.TYPE;
@@ -903,7 +903,7 @@ public class e1 extends BroadcastReceiver {
             Throwable cause;
             char c;
             long j;
-            char[] charArray = str != null ? str.toCharArray() : str;
+            char[] charArray = str != null ? str.toCharArray() : null;
             com.d.e.PngjUnsupportedException pngjUnsupportedException = new com.d.e.PngjUnsupportedException();
             pngjUnsupportedException.PngjBadCrcException = i;
             int length = charArray.length;
@@ -1421,7 +1421,7 @@ public class e1 extends BroadcastReceiver {
         int i3;
         char c5;
         int i4;
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.PngjInputException pngjInputException = new com.d.e.PngjInputException();
         char[] cArr2 = isIntroShownG;
         Class cls = Integer.TYPE;

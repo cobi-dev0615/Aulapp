@@ -32,10 +32,11 @@ public final class PngjExceptionInternal implements Response.Listener<JSONObject
         int i6 = 99 - (s * 19);
         byte[] bArr2 = new byte[29 - i4];
         int i7 = 28 - i4;
+        int i10 = 0;
         if (bArr == null) {
             int i8 = i7;
             int i9 = i5;
-            int i10 = 0;
+            i10 = 0;
             int i11 = i5 + 1;
             i = (i9 + (-i8)) - 8;
             i2 = i11;

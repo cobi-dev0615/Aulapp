@@ -1020,7 +1020,7 @@ public final class values {
         char c4;
         char c5;
         int i3;
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.PngjInputException pngjInputException = new com.d.e.PngjInputException();
         char[] cArr = PngjBadSignature;
         Class cls = Integer.TYPE;

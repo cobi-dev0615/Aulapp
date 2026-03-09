@@ -76,7 +76,7 @@ public final class PracticeClassViewModel$updatePracticeInfo$1 extends SuspendLa
             sessionDto = this.this$0.sessionReceived;
             String r1;
             if (sessionDto == null || (r1 = sessionDto.getId()) == null) {
-                CoroutineScopeKt.cancel(coroutineScope, new kotlinx.coroutines.CancellationException("cancelled"));
+                CoroutineScopeKt.cancel(coroutineScope, new java.util.concurrent.CancellationException("cancelled"));
             } else {
                 FragmentPracticeClassBinding fragmentPracticeClassBinding = this.$binding;
                 PracticeClassViewModel practiceClassViewModel = this.this$0;

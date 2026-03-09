@@ -115,7 +115,7 @@ public class Capture4FActivity extends FingerActivity {
             if (i4 % 2 == 0) {
                 throw null;
             }
-            char[] charArray = str != null ? str.toCharArray() : str;
+            char[] charArray = str != null ? str.toCharArray() : null;
             com.d.e.PngjOutputException pngjOutputException = new com.d.e.PngjOutputException();
             char[] cArr = new char[charArray.length];
             int i5 = 0;

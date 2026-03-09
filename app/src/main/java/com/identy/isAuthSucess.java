@@ -460,7 +460,7 @@ public final class isAuthSucess extends e1 {
                     int i5;
                     char c;
                     long j;
-                    char[] charArray = str != null ? str.toCharArray() : str;
+                    char[] charArray = str != null ? str.toCharArray() : null;
                     com.d.e.Action action = new com.d.e.Action();
                     char[] cArr = new char[i];
                     int i6 = 0;
@@ -1159,7 +1159,7 @@ public final class isAuthSucess extends e1 {
     }
 
     private static void e(String str, int i, java.lang.Object[] objArr) {
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.PngjOutputException pngjOutputException = new com.d.e.PngjOutputException();
         char[] cArr = new char[charArray.length];
         int i2 = 0;

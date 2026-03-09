@@ -361,7 +361,7 @@ public class VerifyThumbActivity extends FingerActivity {
         if (i7 % 2 == 0) {
             throw null;
         }
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.PngjInputException pngjInputException = new com.d.e.PngjInputException();
         char[] cArr = valueOf;
         Class cls = Integer.TYPE;

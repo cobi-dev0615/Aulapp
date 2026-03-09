@@ -335,7 +335,7 @@ public class Verify2TActivity extends FingerActivity {
         Throwable cause;
         int i5;
         char c;
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.Action action = new com.d.e.Action();
         char[] cArr2 = new char[i];
         int i6 = 0;

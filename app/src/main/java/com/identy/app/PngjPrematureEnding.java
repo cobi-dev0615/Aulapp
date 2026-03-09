@@ -99,7 +99,7 @@ public final class PngjPrematureEnding implements PngjUnsupportedException {
         int i3 = -1;
         byte b = 0;
         if (bArr == null) {
-            b = i2 + 0;
+            b = (byte) (i2 + 0);
             i2 = i2;
             bArr = bArr;
             i3 = -1;
@@ -112,7 +112,7 @@ public final class PngjPrematureEnding implements PngjUnsupportedException {
                 return new String(bArr2, 0);
             }
             byte[] bArr3 = bArr;
-            b = bArr[i5] + b;
+            b = (byte) (bArr[i5] + b);
             i2 = i5;
             bArr = bArr3;
             i3 = i4;
@@ -145,7 +145,7 @@ public final class PngjPrematureEnding implements PngjUnsupportedException {
     }
 
     private static void a(String str, int i, Object[] objArr) {
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.PngjOutputException pngjOutputException = new com.d.e.PngjOutputException();
         char[] cArr = new char[charArray.length];
         pngjOutputException.values = 0;

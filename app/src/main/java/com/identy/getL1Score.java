@@ -220,7 +220,7 @@ final class getL1Score extends getL3Score {
         char c4;
         int i4;
         $10 = ($11 + 87) % 128;
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.PngjInputException pngjInputException = new com.d.e.PngjInputException();
         char[] cArr = pfkrolGetQuality;
         Class cls = Integer.TYPE;

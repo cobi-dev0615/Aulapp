@@ -983,7 +983,7 @@ public final class getOveralTimetaken extends e1 {
         if (i2 % 2 != 0) {
             throw null;
         }
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.ComDeA aVar = new com.d.e.ComDeA();
         char[] values2 = com.d.e.ComDeA.values(resetAttempt ^ 8332534422373704609L, charArray, i);
         aVar.PngjBadSignature = 4;

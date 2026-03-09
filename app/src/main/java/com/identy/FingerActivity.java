@@ -484,7 +484,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             char c4;
             int i5;
             int i6;
-            char[] charArray = str != null ? str.toCharArray() : str;
+            char[] charArray = str != null ? str.toCharArray() : null;
             com.d.e.PngjInputException pngjInputException = new com.d.e.PngjInputException();
             char[] cArr2 = valueOf;
             Class cls = Integer.TYPE;
@@ -4733,7 +4733,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
         private static void c(String str, int i, Object[] objArr) {
             $11 = ($10 + 87) % 128;
-            char[] charArray = str != null ? str.toCharArray() : str;
+            char[] charArray = str != null ? str.toCharArray() : null;
             com.d.e.ComDeA aVar = new com.d.e.ComDeA();
             char[] values2 = com.d.e.ComDeA.values(PngjInputException ^ 8332534422373704609L, charArray, i);
             aVar.PngjBadSignature = 4;

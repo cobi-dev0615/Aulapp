@@ -204,7 +204,7 @@ public final class PngjInputException {
                 bArr = str3.getBytes("ISO-8859-1");
             }
             byte[] bArr2 = bArr;
-            char[] charArray = str != null ? str.toCharArray() : str;
+            char[] charArray = str != null ? str.toCharArray() : null;
             com.d.e.PngjExceptionInternal pngjExceptionInternal = new com.d.e.PngjExceptionInternal();
             char[] cArr = PngjBadSignature;
             Class cls = Integer.TYPE;
@@ -344,7 +344,7 @@ public final class PngjInputException {
             int i2;
             int i3;
             $11 = ($10 + 35) % 128;
-            char[] charArray = str != null ? str.toCharArray() : str;
+            char[] charArray = str != null ? str.toCharArray() : null;
             com.d.e.PngjUnsupportedException pngjUnsupportedException = new com.d.e.PngjUnsupportedException();
             pngjUnsupportedException.PngjBadCrcException = i;
             int length = charArray.length;
@@ -1767,7 +1767,7 @@ public final class PngjInputException {
                 cArr = str2;
             }
             char[] cArr3 = cArr;
-            char[] charArray2 = str != null ? str.toCharArray() : str;
+            char[] charArray2 = str != null ? str.toCharArray() : null;
             com.d.e.getPadSub2 getpadsub2 = new com.d.e.getPadSub2();
             int length = charArray2.length;
             char[] cArr4 = new char[length];

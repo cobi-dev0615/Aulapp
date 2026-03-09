@@ -256,7 +256,7 @@ public class EnrollFingersActivity extends FingerActivity {
         if (i3 % 2 == 0) {
             throw null;
         }
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         com.d.e.PngjInputException pngjInputException = new com.d.e.PngjInputException();
         char[] cArr = values;
         char c7 = '0';

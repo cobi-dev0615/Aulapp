@@ -146,7 +146,7 @@ public class PngjException {
         char c3;
         int i3;
         int i4;
-        char[] charArray = str != null ? str.toCharArray() : str;
+        char[] charArray = str != null ? str.toCharArray() : null;
         PngjInputException pngjInputException = new PngjInputException();
         char[] cArr = Action;
         Class cls = Integer.TYPE;
