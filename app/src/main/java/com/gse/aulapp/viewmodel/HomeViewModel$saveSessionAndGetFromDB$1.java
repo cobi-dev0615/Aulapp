@@ -72,6 +72,9 @@ public final class HomeViewModel$saveSessionAndGetFromDB$1 extends SuspendLambda
                 SessionResponseDto sessionResponseDto = this.$sessionInstructorObjectResponseList;
                 this.label = 1;
                 saveSessionFull = homeViewModel.saveSessionFull(sessionResponseDto, this);
+                if (saveSessionFull == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
             } else {
                 if (i != 1) {
                     if (i != 2) {
@@ -85,6 +88,10 @@ public final class HomeViewModel$saveSessionAndGetFromDB$1 extends SuspendLambda
             HomeViewModel homeViewModel2 = this.this$0;
             this.label = 2;
             sessionByDB = homeViewModel2.getSessionByDB(this);
+            if (sessionByDB == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
 
         @Override // kotlin.jvm.functions.Function2

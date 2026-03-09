@@ -74,6 +74,7 @@ public final class PracticeClassViewModel$updatePracticeInfo$1 extends SuspendLa
             ResultKt.throwOnFailure(obj);
             coroutineScope = coroutineScope2;
             sessionDto = this.this$0.sessionReceived;
+            String r1;
             if (sessionDto == null || (r1 = sessionDto.getId()) == null) {
                 CoroutineScopeKt.cancel(coroutineScope);
             } else {
@@ -94,6 +95,10 @@ public final class PracticeClassViewModel$updatePracticeInfo$1 extends SuspendLa
         }
         this.L$0 = coroutineScope;
         this.label = 1;
+        if (kotlinx.coroutines.DelayKt.delay(10000, this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     @Override // kotlin.jvm.functions.Function2
