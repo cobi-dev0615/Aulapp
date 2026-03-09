@@ -48,8 +48,9 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
         final /* synthetic */ HoursPerformedViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(Context context, HoursPerformedViewModel hoursPerformedViewModel, Continuation<?> continuation) {
-            super(3, continuation);
+            super(3, (Continuation<Object>) continuation);
             this.$context = context;
             this.this$0 = hoursPerformedViewModel;
         }
@@ -122,7 +123,7 @@ public final class HoursPerformedViewModel$getHoursPerformedApi$1 extends Suspen
                     HoursScheduledResponse.Result result;
                     HoursScheduledResponse.Result result2;
                     HoursScheduledResponse.Result result3;
-                    r2 = null;
+                    String r2 = null;
                     Integer num = null;
                     if (apiResult.getStatus() == EnumApiStatus.SUCCESS) {
                         LogSendUtil.Companion companion = LogSendUtil.INSTANCE;

@@ -76,8 +76,9 @@ public final class PrincipalActivityViewModel$validateShowDialogNetworkUnavailab
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(Activity activity, boolean z, Continuation<?> continuation) {
-            super(2, continuation);
+            super(2, (Continuation<Object>) continuation);
             this.$context = activity;
             this.$isEnabled = z;
         }

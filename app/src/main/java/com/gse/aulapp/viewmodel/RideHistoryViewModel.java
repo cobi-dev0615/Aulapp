@@ -44,7 +44,7 @@ public final class RideHistoryViewModel extends ViewModel {
     private int currentYear;
     private Date dateSelect;
     private final StateFlow<Status> message;
-    private final SessionRepository sessionRepository;
+    final SessionRepository sessionRepository;
 
     public RideHistoryViewModel(SessionRepository sessionRepository) {
         Intrinsics.checkNotNullParameter(sessionRepository, "sessionRepository");

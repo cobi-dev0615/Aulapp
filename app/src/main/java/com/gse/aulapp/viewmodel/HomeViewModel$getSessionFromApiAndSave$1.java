@@ -337,16 +337,6 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                                     homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label = 1;
                                     break;
                                 }
-                                SessionResponseDto sessionResponseDto2 = sessionResponseDto;
-                                data = apiResult.getData();
-                                if (((data != null || (result10 = data.getResult()) == null) ? null : result10.getExamPracticalConfiguration()) != null) {
-                                    SessionInstructorResponse.Result result13 = apiResult.getData().getResult();
-                                    if ((result13 != null ? result13.getPracticalConfiguration() : null) != null) {
-                                        anonymousClass2.this$0.initConfigurationPracticalAndExamPractical(apiResult.getData());
-                                    }
-                                }
-                                anonymousClass2.this$0.validateEnableStart(anonymousClass2.$isValidateSession, sessionResponseDto2, anonymousClass2.$sessionId, anonymousClass2.$navController, anonymousClass2.$classRecyclerAdapter, anonymousClass2.$activity);
-                                return Unit.INSTANCE;
                             }
                             SessionInstructorResponse data13 = apiResult.getData();
                             if (data13 != null && (result3 = data13.getResult()) != null) {
@@ -371,7 +361,6 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                                 homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label = 3;
                                 break;
                             }
-                            return coroutine_suspended;
                         case 1:
                         case 2:
                             SessionResponseDto sessionResponseDto3 = (SessionResponseDto) homeViewModel$getSessionFromApiAndSave$1$2$emit$1.L$2;

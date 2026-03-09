@@ -47,8 +47,9 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
         final /* synthetic */ PasswordRecoverViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(PasswordRecoverViewModel passwordRecoverViewModel, Continuation<?> continuation) {
-            super(3, continuation);
+            super(3, (Continuation<Object>) continuation);
             this.this$0 = passwordRecoverViewModel;
         }
 
@@ -119,15 +120,15 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
                     }
 
                     public final Object emit(ApiResult<PasswordRecoveryResponse> apiResult, Continuation continuation) {
-                        FragmentPasswordRecoverBinding.this.mtvInformationRecovery.setText(BuildConfig.FLAVOR);
-                        FragmentPasswordRecoverBinding.this.mtvInformationRecovery.setVisibility(4);
+                        fragmentPasswordRecoverBinding.mtvInformationRecovery.setText(BuildConfig.FLAVOR);
+                        fragmentPasswordRecoverBinding.mtvInformationRecovery.setVisibility(4);
                         if (apiResult.getStatus() == EnumApiStatus.SUCCESS) {
                             passwordRecoverViewModel.callDialog(true, context2);
                         } else if (apiResult.getStatus() == EnumApiStatus.ERROR) {
                             JSONObject jSONObject = new JSONObject(String.valueOf(apiResult.getMessage()));
                             if (Intrinsics.areEqual(jSONObject.get("status"), Boxing.boxInt(400))) {
-                                FragmentPasswordRecoverBinding.this.mtvInformationRecovery.setText((CharSequence) jSONObject.get("message"));
-                                FragmentPasswordRecoverBinding.this.mtvInformationRecovery.setVisibility(0);
+                                fragmentPasswordRecoverBinding.mtvInformationRecovery.setText((CharSequence) jSONObject.get("message"));
+                                fragmentPasswordRecoverBinding.mtvInformationRecovery.setVisibility(0);
                             } else {
                                 passwordRecoverViewModel.callDialog(false, context2);
                             }

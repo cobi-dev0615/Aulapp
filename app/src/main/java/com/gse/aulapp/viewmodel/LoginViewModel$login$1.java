@@ -48,8 +48,9 @@ public final class LoginViewModel$login$1 extends SuspendLambda implements Funct
         final /* synthetic */ LoginViewModel this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        @SuppressWarnings("unchecked")
         public AnonymousClass1(LoginViewModel loginViewModel, Continuation<?> continuation) {
-            super(3, continuation);
+            super(3, (Continuation<Object>) continuation);
             this.this$0 = loginViewModel;
         }
 
@@ -138,7 +139,7 @@ public final class LoginViewModel$login$1 extends SuspendLambda implements Funct
                                 Intrinsics.checkNotNull(token);
                                 LoginResponse.Result result3 = apiResult.getData().getResult();
                                 String id = (result3 == null || (data2 = result3.getData()) == null) ? null : data2.getId();
-                                String username = LoginRequest.this.getUsername();
+                                String username = loginRequest.getUsername();
                                 PreferenceUtil.Companion companion = PreferenceUtil.INSTANCE;
                                 companion.saveUserId(fragmentActivity, id);
                                 FragmentActivity fragmentActivity2 = fragmentActivity;

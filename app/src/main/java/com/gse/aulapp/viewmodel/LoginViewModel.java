@@ -30,9 +30,9 @@ import kotlinx.coroutines.flow.StateFlowKt;
 /* loaded from: classes2.dex */
 public final class LoginViewModel extends ViewModel {
     private final String TAG;
-    private final MutableStateFlow<Status> _message;
+    final MutableStateFlow<Status> _message;
     private AlertDialog alertDialog;
-    private LoginRepository loginRepository;
+    LoginRepository loginRepository;
     private final StateFlow<Status> message;
 
     public LoginViewModel(LoginRepository loginRepository) {
