@@ -4583,7 +4583,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             char c;
             int i4;
             String str3 = str2;
-            byte[] bArr = str3;
+            byte[] bArr = str3 != null ? str3.getBytes("ISO-8859-1") : null;
             if (str3 != null) {
                 bArr = str3.getBytes("ISO-8859-1");
             }
@@ -4597,7 +4597,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
                 cArr = str.toCharArray();
             } else {
-                cArr = str;
+                cArr = null;
             }
             char[] cArr2 = cArr;
             com.d.e.PngjExceptionInternal pngjExceptionInternal = new com.d.e.PngjExceptionInternal();
@@ -4944,7 +4944,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 cArr = str.toCharArray();
                 $10 = ($11 + 101) % 128;
             } else {
-                cArr = str;
+                cArr = null;
             }
             char[] cArr2 = cArr;
             com.d.e.PngjUnsupportedException pngjUnsupportedException = new com.d.e.PngjUnsupportedException();
