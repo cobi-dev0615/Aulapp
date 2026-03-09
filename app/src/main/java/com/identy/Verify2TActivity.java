@@ -129,7 +129,7 @@ public class Verify2TActivity extends FingerActivity {
                     identySdk = IdentySdk.getInstance();
                     Verify2TActivity verify2TActivity2 = Verify2TActivity.this;
                     fingerDetectionMode = verify2TActivity2.PngjExceptionInternal;
-                    e1 e1Var2 = verify2TActivity2.onErrorResponse;
+                    com.identy.e1 e1Var2 = verify2TActivity2.onErrorResponse;
                     i2 = e1Var2.getEncryptedTemplates;
                     hashMap = this.PngjException;
                     j = e1Var2.toString;
@@ -139,7 +139,7 @@ public class Verify2TActivity extends FingerActivity {
                 try {
                     long timeInMillis = Calendar.getInstance().getTimeInMillis() - this.valueOf;
                     byte[] PngjPrematureEnding = Verify2TActivity.this.onErrorResponse.PngjPrematureEnding();
-                    e1 e1Var3 = Verify2TActivity.this.onErrorResponse;
+                    com.identy.e1 e1Var3 = Verify2TActivity.this.onErrorResponse;
                     identySdk.a(fingerDetectionMode, i2, hashMap, verifyResult2, j, j2, timeInMillis, PngjPrematureEnding, e1Var3.setFoundMatchingTemplates + e1Var3.Enroll2IndexActivity);
                 } catch (Exception unused4) {
                     verifyResult3 = verifyResult;

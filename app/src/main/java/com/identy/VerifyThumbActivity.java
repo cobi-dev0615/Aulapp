@@ -127,11 +127,11 @@ public class VerifyThumbActivity extends FingerActivity {
                         VerifyThumbActivity.this.onErrorResponse.valueOf();
                     } catch (Exception unused2) {
                     }
-                    e1.values(new Object[]{VerifyThumbActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
+                    com.identy.e1.values(new Object[]{VerifyThumbActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                     identySdk = IdentySdk.getInstance();
                     VerifyThumbActivity verifyThumbActivity2 = VerifyThumbActivity.this;
                     fingerDetectionMode = verifyThumbActivity2.PngjExceptionInternal;
-                    e1 e1Var2 = verifyThumbActivity2.onErrorResponse;
+                    com.identy.e1 e1Var2 = verifyThumbActivity2.onErrorResponse;
                     i2 = e1Var2.getEncryptedTemplates;
                     hashMap = this.PngjBadSignature;
                     j = e1Var2.toString;
@@ -141,7 +141,7 @@ public class VerifyThumbActivity extends FingerActivity {
                 try {
                     long timeInMillis = Calendar.getInstance().getTimeInMillis() - this.PngjException;
                     byte[] PngjPrematureEnding = VerifyThumbActivity.this.onErrorResponse.PngjPrematureEnding();
-                    e1 e1Var3 = VerifyThumbActivity.this.onErrorResponse;
+                    com.identy.e1 e1Var3 = VerifyThumbActivity.this.onErrorResponse;
                     identySdk.a(fingerDetectionMode, i2, hashMap, verifyResult2, j, j2, timeInMillis, PngjPrematureEnding, e1Var3.setFoundMatchingTemplates + e1Var3.Enroll2IndexActivity);
                 } catch (Exception unused4) {
                     verifyResult3 = verifyResult;

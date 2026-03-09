@@ -293,15 +293,15 @@ public class CaptureRolledFingersActivity extends FingerActivity {
         }
         if (this.getAsHighestSecurityLevelReached) {
             try {
-                e1.values(new Object[]{this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
+                com.identy.e1.values(new Object[]{this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                 IdentySdk identySdk = IdentySdk.getInstance();
                 FingerDetectionMode fingerDetectionMode = this.PngjExceptionInternal;
-                e1 e1Var = this.onErrorResponse;
+                com.identy.e1 e1Var = this.onErrorResponse;
                 long j = e1Var.toString;
                 long j2 = e1Var.Enroll2IndexActivity;
                 int i3 = e1Var.getEncryptedTemplates;
                 byte[] PngjPrematureEnding = e1Var.PngjPrematureEnding();
-                e1 e1Var2 = this.onErrorResponse;
+                com.identy.e1 e1Var2 = this.onErrorResponse;
                 identySdk.a(fingerDetectionMode, hashMap, j, j2, 0L, i3, PngjPrematureEnding, e1Var2.setFoundMatchingTemplates + e1Var2.Enroll2IndexActivity, e1Var2.closeDialog, e1Var2.getHeight, e1Var2.ERRORS);
             } catch (Exception e) {
                 try {

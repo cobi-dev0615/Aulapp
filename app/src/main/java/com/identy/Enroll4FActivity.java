@@ -477,22 +477,22 @@ public class Enroll4FActivity extends FingerActivity {
         @Override // com.identy.d.PngjBadCrcException
         public final /* synthetic */ void values() {
             try {
-                e1.values(new Object[]{Enroll4FActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
+                com.identy.e1.values(new Object[]{Enroll4FActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                 IdentySdk identySdk = IdentySdk.getInstance();
                 Enroll4FActivity enroll4FActivity = Enroll4FActivity.this;
                 FingerDetectionMode fingerDetectionMode = enroll4FActivity.PngjExceptionInternal;
                 HashMap hashMap = enroll4FActivity.valueOf;
-                e1 e1Var = enroll4FActivity.onErrorResponse;
+                com.identy.e1 e1Var = enroll4FActivity.onErrorResponse;
                 long j = e1Var.toString;
                 long j2 = e1Var.Enroll2IndexActivity;
                 int i = e1Var.getEncryptedTemplates;
                 byte[] PngjPrematureEnding = e1Var.PngjPrematureEnding();
-                e1 e1Var2 = Enroll4FActivity.this.onErrorResponse;
+                com.identy.e1 e1Var2 = Enroll4FActivity.this.onErrorResponse;
                 identySdk.a(fingerDetectionMode, hashMap, j, j2, 0L, i, PngjPrematureEnding, e1Var2.setFoundMatchingTemplates + e1Var2.Enroll2IndexActivity, e1Var2.closeDialog, e1Var2.getHeight, e1Var2.ERRORS);
                 valueOf = (values + 119) % 128;
             } catch (Exception unused) {
             }
-            e1 e1Var3 = Enroll4FActivity.this.onErrorResponse;
+            com.identy.e1 e1Var3 = Enroll4FActivity.this.onErrorResponse;
             if (e1Var3 != null) {
                 e1Var3.valueOf();
                 values = (valueOf + 5) % 128;

@@ -135,11 +135,11 @@ public class VerifyFingersActivity extends FingerActivity {
                     VerifyFingersActivity.this.onErrorResponse.valueOf();
                 } catch (Exception unused2) {
                 }
-                e1.values(new Object[]{VerifyFingersActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
+                com.identy.e1.values(new Object[]{VerifyFingersActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                 identySdk = IdentySdk.getInstance();
                 VerifyFingersActivity verifyFingersActivity2 = VerifyFingersActivity.this;
                 fingerDetectionMode = verifyFingersActivity2.PngjExceptionInternal;
-                e1 e1Var2 = verifyFingersActivity2.onErrorResponse;
+                com.identy.e1 e1Var2 = verifyFingersActivity2.onErrorResponse;
                 i2 = e1Var2.getEncryptedTemplates;
                 hashMap = this.values;
                 j = e1Var2.toString;
@@ -149,7 +149,7 @@ public class VerifyFingersActivity extends FingerActivity {
             try {
                 long timeInMillis = Calendar.getInstance().getTimeInMillis() - this.PngjException;
                 byte[] PngjPrematureEnding = VerifyFingersActivity.this.onErrorResponse.PngjPrematureEnding();
-                e1 e1Var3 = VerifyFingersActivity.this.onErrorResponse;
+                com.identy.e1 e1Var3 = VerifyFingersActivity.this.onErrorResponse;
                 identySdk.a(fingerDetectionMode, i2, hashMap, verifyResult2, j, j2, timeInMillis, PngjPrematureEnding, e1Var3.setFoundMatchingTemplates + e1Var3.Enroll2IndexActivity);
             } catch (Exception unused4) {
                 verifyResult3 = verifyResult;

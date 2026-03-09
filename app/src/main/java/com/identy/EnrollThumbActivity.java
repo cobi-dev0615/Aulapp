@@ -80,17 +80,17 @@ public class EnrollThumbActivity extends FingerActivity {
         @Override // com.identy.d.PngjBadCrcException
         public final /* synthetic */ void values() {
             try {
-                e1.values(new Object[]{EnrollThumbActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
+                com.identy.e1.values(new Object[]{EnrollThumbActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                 IdentySdk identySdk = IdentySdk.getInstance();
                 EnrollThumbActivity enrollThumbActivity = EnrollThumbActivity.this;
                 FingerDetectionMode fingerDetectionMode = enrollThumbActivity.PngjExceptionInternal;
                 HashMap hashMap = enrollThumbActivity.PngjBadCrcException;
-                e1 e1Var = enrollThumbActivity.onErrorResponse;
+                com.identy.e1 e1Var = enrollThumbActivity.onErrorResponse;
                 long j = e1Var.toString;
                 long j2 = e1Var.Enroll2IndexActivity;
                 int i = e1Var.getEncryptedTemplates;
                 byte[] PngjPrematureEnding = e1Var.PngjPrematureEnding();
-                e1 e1Var2 = EnrollThumbActivity.this.onErrorResponse;
+                com.identy.e1 e1Var2 = EnrollThumbActivity.this.onErrorResponse;
                 identySdk.a(fingerDetectionMode, hashMap, j, j2, 0L, i, PngjPrematureEnding, e1Var2.setFoundMatchingTemplates + e1Var2.Enroll2IndexActivity, e1Var2.closeDialog, e1Var2.getHeight, e1Var2.ERRORS);
             } catch (Exception unused) {
             }

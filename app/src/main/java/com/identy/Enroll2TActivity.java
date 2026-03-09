@@ -79,17 +79,17 @@ public class Enroll2TActivity extends FingerActivity {
         @Override // com.identy.d.PngjBadCrcException
         public final /* synthetic */ void values() {
             try {
-                e1.values(new Object[]{Enroll2TActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
+                com.identy.e1.values(new Object[]{Enroll2TActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                 IdentySdk identySdk = IdentySdk.getInstance();
                 Enroll2TActivity enroll2TActivity = Enroll2TActivity.this;
                 FingerDetectionMode fingerDetectionMode = enroll2TActivity.PngjExceptionInternal;
                 HashMap hashMap = this.PngjBadSignature;
-                e1 e1Var = enroll2TActivity.onErrorResponse;
+                com.identy.e1 e1Var = enroll2TActivity.onErrorResponse;
                 long j = e1Var.toString;
                 long j2 = e1Var.Enroll2IndexActivity;
                 int i = e1Var.getEncryptedTemplates;
                 byte[] PngjPrematureEnding = e1Var.PngjPrematureEnding();
-                e1 e1Var2 = Enroll2TActivity.this.onErrorResponse;
+                com.identy.e1 e1Var2 = Enroll2TActivity.this.onErrorResponse;
                 identySdk.a(fingerDetectionMode, hashMap, j, j2, 0L, i, PngjPrematureEnding, e1Var2.setFoundMatchingTemplates + e1Var2.Enroll2IndexActivity, e1Var2.closeDialog, e1Var2.getHeight, e1Var2.ERRORS);
             } catch (Exception unused) {
             }
