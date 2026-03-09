@@ -2908,7 +2908,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 b(null, i92, null, "\u0099\u0084\u0091\u0085\u008e\u0088\u0090\u0085\u0081\u0091", objArr50);
                 String str25 = (String) objArr50[0];
                 int rgb2 = Color.rgb(0, 0, 0);
-                int PngjBadCrcException3 = IdentySdk.valueOf.PngjBadCrcException();
+                int PngjBadCrcException3 = 0; /* decompiler artifact */
                 int i93 = rgb2 * 1773;
                 int i94 = (i93 ^ (-1962934272)) + ((i93 & (-1962934272)) << 1);
                 int i95 = ~rgb2;
@@ -2977,7 +2977,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     c("İ\u0ba0ł俍溄卑\ue6f2鼖ᅨ忩", ViewConfiguration.getLongPressTimeout() >> 16, objArr58);
                     String str29 = (String) objArr58[0];
                     int myTid2 = Process.myTid() >> 22;
-                    int PngjBadCrcException4 = IdentySdk.valueOf.PngjBadCrcException();
+                    int PngjBadCrcException4 = 0; /* decompiler artifact */
                     int i123 = (myTid2 * (-129)) + 16637;
                     int i124 = ~PngjBadCrcException4;
                     int i125 = ((-128) & i124) | ((-128) ^ i124);
@@ -3018,7 +3018,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     int i137 = ((int) j47) & (((myTid4 | (-538248210)) * 668) + (((-968844318) | (~(468382092 | myTid4))) * 1336) + ((((~((-968844318) | myTid4)) | 468382092) * (-668)) - 499748143));
                     if (((i136 & i137) | (i136 ^ i137)) != 0) {
                         int i138 = -Process.getGidForName(BuildConfig.FLAVOR);
-                        int PngjBadCrcException5 = IdentySdk.valueOf.PngjBadCrcException();
+                        int PngjBadCrcException5 = 0; /* decompiler artifact */
                         int i139 = i138 * (-391);
                         int i140 = (i139 ^ (-24570)) + ((i139 & (-24570)) << 1);
                         int i141 = ~(((-127) & i138) | ((-127) ^ i138));
@@ -3065,8 +3065,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         if (obj2 == null) {
                             obj3 = invoke6;
                         } else {
-                            IdentySdk.valueOf.PngjBadCrcException();
-                            IdentySdk.valueOf.PngjBadCrcException();
+                            /* IdentySdk.valueOf.PngjBadCrcException() - decompiler artifact */
+                            /* IdentySdk.valueOf.PngjBadCrcException() - decompiler artifact */
                             Object[] objArr68 = {obj2, 42};
                             Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i3);
                             if (PngjBadSignature15 == null) {
@@ -3130,7 +3130,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         }
                                         String str30 = strArr[i159];
                                         int scrollBarFadeDuration = ViewConfiguration.getScrollBarFadeDuration() >> 16;
-                                        int PngjBadCrcException6 = IdentySdk.valueOf.PngjBadCrcException();
+                                        int PngjBadCrcException6 = 0; /* decompiler artifact */
                                         int i161 = scrollBarFadeDuration * (-589);
                                         int i162 = (i161 ^ 75057) + ((i161 & 75057) << 1);
                                         int i163 = ~PngjBadCrcException6;
@@ -3382,7 +3382,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         PngjPrematureEnding = ((i216 & 15) + (i216 | 15)) % 128;
                                         Object[] objArr91 = {new int[]{i ^ 248}, new int[1], null, new int[]{i}};
                                         int i217 = (((~(i | 1029175029)) | (~((-621057026) | i20))) * 318) + (((~((-626447970) | i)) | (~(1029175029 | i20))) * 318) + (((~((-408118005) | i)) | (-626447970)) * (-318)) + 325113839;
-                                        int PngjBadCrcException7 = IdentySdk.valueOf.PngjBadCrcException();
+                                        int PngjBadCrcException7 = 0; /* decompiler artifact */
                                         int i218 = -(-(i217 * 334));
                                         int i219 = ((((-10640) | i218) << 1) - (i218 ^ (-10640))) + 5661;
                                         int i220 = ~PngjBadCrcException7;
@@ -3628,7 +3628,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                     }
                                                     String str38 = (String) ((Method) PngjBadSignature27).invoke(null, objArr112);
                                                     if (str38 != null && (parseInt = Integer.parseInt(str38)) != 0) {
-                                                        int PngjBadCrcException8 = IdentySdk.valueOf.PngjBadCrcException();
+                                                        int PngjBadCrcException8 = 0; /* decompiler artifact */
                                                         int i275 = -(-(parseInt * (-445)));
                                                         int i276 = (((-75650) | i275) << 1) - (i275 ^ (-75650));
                                                         int i277 = ~parseInt;
@@ -3642,7 +3642,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         int i285 = ~((PngjBadCrcException8 & i284) | (i284 ^ PngjBadCrcException8));
                                                         int i286 = -(-(((i285 & i282) | (i282 ^ i285)) * 446));
                                                         i9 = (((i281 ^ i286) + ((i286 & i281) << 1)) - (~((~((i283 & (-171)) | ((-171) ^ i283))) * 446))) - 1;
-                                                        IdentySdk.valueOf.PngjBadCrcException();
+                                                        /* IdentySdk.valueOf.PngjBadCrcException() - decompiler artifact */
                                                         if (i9 == 0) {
                                                             Object[] objArr114 = {new int[]{(i9 & i20) | ((~i9) & i)}, new int[1], null, new int[]{i}};
                                                             int startElapsedRealtime3 = (int) Process.getStartElapsedRealtime();
@@ -3717,7 +3717,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                 c("⟐梒⟿Ⳮ뽳\uf658㜉㨕㞎㲁", (-2) - ((-(-(SystemClock.elapsedRealtime() > 0L ? 1 : (SystemClock.elapsedRealtime() == 0L ? 0 : -1)))) ^ (-1)), objArr124);
                                                                 String str42 = (String) objArr124[0];
                                                                 int resolveSize2 = View.resolveSize(0, 0);
-                                                                int PngjBadCrcException9 = IdentySdk.valueOf.PngjBadCrcException();
+                                                                int PngjBadCrcException9 = 0; /* decompiler artifact */
                                                                 int i304 = resolveSize2 * 905;
                                                                 int i305 = (i304 & (-114681)) + (i304 | (-114681));
                                                                 int i306 = ~resolveSize2;
@@ -3870,7 +3870,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         if (((i356 & i357) | (i356 ^ i357)) != 0) {
                                                             i11 = 240;
                                                         } else {
-                                                            int PngjBadCrcException10 = IdentySdk.valueOf.PngjBadCrcException();
+                                                            int PngjBadCrcException10 = 0; /* decompiler artifact */
                                                             int i358 = (-1672955879) - (~(((-1006607068) | PngjBadCrcException10) * 988));
                                                             int i359 = ~PngjBadCrcException10;
                                                             int i360 = ~(((-962169491) & i359) | (i359 ^ (-962169491)));
@@ -3878,7 +3878,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                             int i362 = (i358 & i361) + (i358 | i361);
                                                             int i363 = ((~((PngjBadCrcException10 & (-313397834)) | ((-313397834) ^ PngjBadCrcException10))) | (-1006607068) | (~((i359 & 313397833) | (i359 ^ 313397833)))) * 988;
                                                             int i364 = (i362 & i363) + (i363 | i362);
-                                                            int PngjBadCrcException11 = IdentySdk.valueOf.PngjBadCrcException();
+                                                            int PngjBadCrcException11 = 0; /* decompiler artifact */
                                                             int i365 = -(-(((~(((-779977322) ^ PngjBadCrcException11) | ((-779977322) & PngjBadCrcException11))) | 1653644926) * 56));
                                                             int i366 = ((-807077964) & i365) + (i365 | (-807077964));
                                                             int i367 = ((i366 | 1210580936) << 1) - (1210580936 ^ i366);
@@ -4095,7 +4095,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                         objArr = new Object[]{new int[]{0}, new int[1], null, new int[]{i}};
                                                                         int i415 = (~(i & 266)) & (i | 266);
                                                                         int c13 = defpackage.a.c((~((~((int) Process.getStartElapsedRealtime())) | 392189072)) | 642376901, 56, (((~(0 | 642376901)) | 392189072) * 56) - 543474291, i5);
-                                                                        int PngjBadCrcException12 = IdentySdk.valueOf.PngjBadCrcException();
+                                                                        int PngjBadCrcException12 = 0; /* decompiler artifact */
                                                                         int i416 = (i2 * 370) + (c13 * 370);
                                                                         int i417 = c13 | i2;
                                                                         int i418 = ~PngjBadCrcException12;
@@ -4225,7 +4225,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                             int i472 = (~(i & 270)) & (i | 270);
                                                             int myTid8 = Process.myTid();
                                                             int i473 = (((~(myTid8 | (-256513344))) | 239076374 | (~((~myTid8) | 795489599))) * 521) + ((778052630 | myTid8) * 521) + ((((~(0 | 778052630)) | 256513343) * (-1042)) - 104462906);
-                                                            int PngjBadCrcException13 = IdentySdk.valueOf.PngjBadCrcException();
+                                                            int PngjBadCrcException13 = 0; /* decompiler artifact */
                                                             int i474 = (i473 * (-49)) + 816;
                                                             int i475 = -(-(((PngjBadCrcException13 ^ 16) | (PngjBadCrcException13 & 16)) * (-50)));
                                                             int i476 = ((i474 | i475) << 1) - (i474 ^ i475);
@@ -4359,7 +4359,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                             PngjPrematureEnding = ((i521 ^ 49) + ((i521 & 49) << 1)) % 128;
                                                             Object[] objArr160 = {new int[]{(i & (-277)) | (i20 & 276)}, new int[1], null, new int[]{i}};
                                                             int c14 = defpackage.a.c(~((-101335585) | i20), -948, (((~((-655345445) | i)) | (-379220530)) * (-948)) + 807980337, -1215338116);
-                                                            int PngjBadCrcException14 = IdentySdk.valueOf.PngjBadCrcException();
+                                                            int PngjBadCrcException14 = 0; /* decompiler artifact */
                                                             int i522 = -(-(c14 * 471));
                                                             int i523 = ((3776 | i522) << 1) - (i522 ^ 3776);
                                                             int i524 = ~PngjBadCrcException14;
