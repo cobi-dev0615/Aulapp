@@ -4890,7 +4890,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (bArr == null) {
                 int i5 = i3;
                 i3 = i2;
-                int i6 = 0;
+                i6 = 0;
                 i3 += i5;
                 i = i6;
                 bArr2[i] = (byte) i3;
@@ -5092,7 +5092,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i6 = 48 - i5;
             if (bArr == null) {
                 int i7 = i3;
-                int i8 = 0;
+                i8 = 0;
                 int i9 = i4;
                 int i10 = i9 + 1;
                 i3 = (i4 + i7) - 3;
@@ -5639,7 +5639,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                 return;
                             } else {
                                 pngjBadCrcException.getAsHighestSecurityLevelReached = 0;
-                                pngjBadCrcException.PngjException(rectF, pngjBadCrcException.new valueOf(true, false));
+                                pngjBadCrcException.PngjException(rectF, new org.camera.preview.PngjBadCrcException.valueOf(true, false));
                                 return;
                             }
                         }
