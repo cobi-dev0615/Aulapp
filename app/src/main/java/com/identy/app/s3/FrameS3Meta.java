@@ -248,16 +248,6 @@ public class FrameS3Meta {
                 e.printStackTrace();
                 return jSONObject;
             }
-            Object[] objArr3 = new Object[1];
-            m((byte) ($$a[32] - 1), $$a[63], $$a[75], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            m($$a[63], $$a[4], (byte) 78, objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -496217158);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4917;
-            Fpnative.valueOf = objArr;
-            jSONObject = new JSONObject();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

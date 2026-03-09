@@ -238,17 +238,6 @@ public class ActionS3Meta {
                 e.printStackTrace();
                 return jSONObject;
             }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            p((byte) (-bArr[59]), bArr[27], (byte) (-bArr[54]), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            p((byte) (bArr[35] + 1), (byte) (-bArr[77]), (byte) 88, objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 814830826);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 5004;
-            Fpnative.valueOf = objArr;
-            jSONObject = new JSONObject();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

@@ -115,7 +115,7 @@ public final class valueOf implements Response.ErrorListener {
                             int i14 = (-(IdentyB.a(i13 & (-63), i13 | (-63), 32, -1) ^ i12)) + 8;
                             int i15 = i14 >> 26;
                             int a2 = IdentyB.a(i15 ^ (-127), (i15 & (-127)) << 1, 64, -1);
-                            z = 12488 / ((i14 & (-((a2 ^ 1) + ((a2 & 1) << 1)))) * 1561);
+                            z = (12488 / ((i14 & (-((a2 ^ 1) + ((a2 & 1) << 1)))) * 1561)) != 0;
                         }
                         pngjOutputException.values(z);
                         return;
@@ -130,21 +130,6 @@ public final class valueOf implements Response.ErrorListener {
                 e.printStackTrace();
                 return;
             }
-            byte[] bArr = $$a;
-            byte b = bArr[18];
-            byte b2 = b;
-            Object[] objArr3 = new Object[1];
-            a(b2, (byte) (-b2), b, objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b3 = bArr[18];
-            byte b4 = (byte) (b3 - 1);
-            Object[] objArr4 = new Object[1];
-            a(b4, (byte) (b4 | 30), (byte) (b3 - 1), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 106441076);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4857;
-            Fpnative.valueOf = objArr;
-            volleyError.printStackTrace();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
 

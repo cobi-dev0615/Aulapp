@@ -100,20 +100,6 @@ public final class PngjExceptionInternal implements Response.Listener<JSONObject
                 this.PngjException.PngjException(null);
                 return;
             }
-            byte[] bArr = $$a;
-            byte b = bArr[33];
-            byte b2 = (byte) (b + 1);
-            Object[] objArr3 = new Object[1];
-            a(b2, b2, (byte) (-b), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b3 = (byte) (-bArr[33]);
-            byte b4 = b3;
-            Object[] objArr4 = new Object[1];
-            a(b3, b4, (byte) (b4 - 1), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1759822187);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4926;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
 

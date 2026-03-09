@@ -65,18 +65,6 @@ public class UL {
                 e.printStackTrace();
                 return;
             }
-            byte[] bArr = $$a;
-            byte b2 = (byte) (-bArr[34]);
-            byte b3 = bArr[113];
-            Object[] objArr3 = new Object[1];
-            b(b2, (byte) (-b3), b3, objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            b((byte) (-bArr[111]), bArr[25], (byte) (-bArr[60]), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 682253692);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4855;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
 
@@ -210,18 +198,6 @@ public class UL {
             } catch (IOException unused) {
                 return null;
             }
-            byte[] bArr3 = $$a;
-            Object[] objArr3 = new Object[1];
-            b(bArr3[63], (byte) (-bArr3[113]), (byte) (-bArr3[75]), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b = (byte) (-bArr3[4]);
-            byte b2 = bArr3[63];
-            Object[] objArr4 = new Object[1];
-            b(b, b2, (byte) (b2 | 78), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -1357218802);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4860;
-            Fpnative.valueOf = objArr;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

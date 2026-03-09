@@ -223,18 +223,6 @@ public class RollS3Meta {
                 e.printStackTrace();
                 return jSONObject;
             }
-            byte[] bArr = $$a;
-            byte b = bArr[2];
-            Object[] objArr3 = new Object[1];
-            m((byte) 43, (byte) (b + 1), (byte) (-b), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            m((byte) 74, (byte) (bArr[66] + 1), (byte) (bArr[2] + 1), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 335340166);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4969;
-            Fpnative.valueOf = objArr;
-            jSONObject = new JSONObject();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
