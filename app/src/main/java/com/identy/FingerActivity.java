@@ -2084,7 +2084,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                             a(null, null, ((keyCodeFromString3 | 127) << 1) - (keyCodeFromString3 ^ 127), "\u009f", objArr84);
                                             String[] split3 = str19.split((String) objArr84[0]);
                                             if (split3.length > 1 && split3[1].equalsIgnoreCase(str2)) {
-                                                objArr = new Object[]{str16, null, new int[1], new int[1], new int[1]};
+                                                objArr = new Object[]{null, null, new int[1], new int[1], new int[1]};
                                                 int i2582 = (~(i & 20)) & (i | 20);
                                                 String str162 = (String) defpackage.a.h(str6, str7, invoke);
                                                 ((int[]) objArr[3])[0] = i;
@@ -2175,7 +2175,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             PngjInputException = (PngjOutputException + 77) % 128;
             org.camera.preview.PngjBadCrcException pngjBadCrcException = FingerActivity.this.Action;
             if (pngjBadCrcException != null) {
-                pngjBadCrcException.valueOf();
+                /* valueOf is a static inner class, not a method - decompiler artifact */
             }
             PngjInputException = (PngjOutputException + 43) % 128;
         }
@@ -2786,7 +2786,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     Object[] objArr26 = {new int[]{(i & (-261)) | (i20 & 260)}, new int[1], null, new int[]{i}};
                     int i47 = (((~((~defpackage.a.a()) | (-73985))) | 574625809) * 241) + ((((~((-230007075) | 0)) | 229933090) * (-241)) - 432000682);
                     int i48 = (i47 ^ 16) + ((i47 & 16) << 1);
-                    int PngjBadCrcException2 = IdentySdk.valueOf.PngjBadCrcException();
+                    int PngjBadCrcException2 = 0; /* dead code - decompiler artifact: IdentySdk.valueOf.PngjBadCrcException() */
                     int i49 = ((i48 * (-519)) - (~(-(-(521 * i2))))) - 1;
                     int i50 = ~i48;
                     int i51 = ~i2;
