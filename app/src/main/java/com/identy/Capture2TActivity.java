@@ -1640,7 +1640,6 @@ public class Capture2TActivity extends FingerActivity {
                                                 throw new RuntimeException(th2);
                                             }
                                         } catch (Throwable th3) {
-                                            th = th3;
                                         }
                                     } catch (Exception unused) {
                                         i206 = -1767253029;
@@ -1915,7 +1914,6 @@ public class Capture2TActivity extends FingerActivity {
                                                                         }
                                                                     } catch (IOException unused4) {
                                                                     } catch (Throwable th4) {
-                                                                        th = th4;
                                                                         bufferedInputStream = bufferedInputStream2;
                                                                         if (bufferedInputStream != null) {
                                                                             try {
@@ -1930,14 +1928,12 @@ public class Capture2TActivity extends FingerActivity {
                                                             } catch (IOException unused6) {
                                                                 bufferedInputStream2 = bufferedInputStream5;
                                                             } catch (Throwable th5) {
-                                                                th = th5;
                                                                 bufferedInputStream2 = bufferedInputStream5;
                                                             }
                                                         }
                                                     } catch (IOException unused7) {
                                                         bufferedInputStream2 = null;
                                                     } catch (Throwable th6) {
-                                                        th = th6;
                                                         bufferedInputStream = null;
                                                     }
                                                     i9 = i8 == 0 ? 240 : 0;
@@ -1993,7 +1989,6 @@ public class Capture2TActivity extends FingerActivity {
                                                                         }
                                                                     } catch (IOException unused9) {
                                                                     } catch (Throwable th7) {
-                                                                        th = th7;
                                                                         bufferedInputStream3 = bufferedInputStream4;
                                                                         if (bufferedInputStream3 != null) {
                                                                             try {
@@ -2008,14 +2003,12 @@ public class Capture2TActivity extends FingerActivity {
                                                             } catch (IOException unused11) {
                                                                 bufferedInputStream4 = bufferedInputStream6;
                                                             } catch (Throwable th8) {
-                                                                th = th8;
                                                                 bufferedInputStream4 = bufferedInputStream6;
                                                             }
                                                         }
                                                     } catch (IOException unused12) {
                                                         bufferedInputStream4 = null;
                                                     } catch (Throwable th9) {
-                                                        th = th9;
                                                         bufferedInputStream3 = null;
                                                     }
                                                     try {
@@ -2807,7 +2800,7 @@ public class Capture2TActivity extends FingerActivity {
             byte[] bArr2;
             String str2 = str;
             $11 = ($10 + 75) % 128;
-            byte[] bArr3 = str2;
+            byte[] bArr3 = null;
             if (str2 != null) {
                 bArr3 = str2.getBytes("ISO-8859-1");
             }
@@ -3086,7 +3079,7 @@ public class Capture2TActivity extends FingerActivity {
             $11 = ($10 + 23) % 128;
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = null;
         }
         char[] cArr2 = cArr;
         com.d.e.PngjUnsupportedException pngjUnsupportedException = new com.d.e.PngjUnsupportedException();
@@ -3131,15 +3124,18 @@ public class Capture2TActivity extends FingerActivity {
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
                 $11 = ($10 + 117) % 128;
             } catch (Throwable th) {
-                cause = th.getCause();
-                if (cause != null) {
+
+                Throwable cause2 = th.getCause();
+
+                if (cause2 != null) {
+
+                    throw new RuntimeException(cause2);
+
                 }
-            }
-            cause = th.getCause();
-            if (cause != null) {
+
                 throw new RuntimeException(th);
+
             }
-            throw new RuntimeException(cause);
         }
         char[] cArr3 = new char[length];
         pngjUnsupportedException.valueOf = 0;

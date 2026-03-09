@@ -138,7 +138,7 @@ public class PngjBadCrcException {
         char[] cArr2;
         int i3;
         String str3 = str2;
-        byte[] bArr = str3;
+        byte[] bArr = null;
         if (str3 != null) {
             bArr = str3.getBytes("ISO-8859-1");
         }
@@ -147,7 +147,7 @@ public class PngjBadCrcException {
             $10 = ($11 + 27) % 128;
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = null;
         }
         char[] cArr3 = cArr;
         PngjExceptionInternal pngjExceptionInternal = new PngjExceptionInternal();

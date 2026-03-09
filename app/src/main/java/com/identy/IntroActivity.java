@@ -153,7 +153,7 @@ public class IntroActivity extends Activity {
             $10 = ($11 + 41) % 128;
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = null;
         }
         char[] cArr2 = cArr;
         com.d.e.PngjInputException pngjInputException = new com.d.e.PngjInputException();

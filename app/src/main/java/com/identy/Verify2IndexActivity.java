@@ -206,7 +206,7 @@ public class Verify2IndexActivity extends FingerActivity {
         byte[] bArr;
         int i2;
         String str2 = str;
-        byte[] bArr2 = str2;
+        byte[] bArr2 = null;
         if (str2 != null) {
             $11 = ($10 + 81) % 128;
             bArr2 = str2.getBytes("ISO-8859-1");

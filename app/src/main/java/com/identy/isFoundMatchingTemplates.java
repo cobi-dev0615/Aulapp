@@ -386,7 +386,7 @@ final class isFoundMatchingTemplates extends e1 {
                 cArr = str.toCharArray();
                 $10 = ($11 + 47) % 128;
             } else {
-                cArr = str;
+                cArr = null;
             }
             com.d.e.ComDeA aVar = new com.d.e.ComDeA();
             char[] values2 = com.d.e.ComDeA.values(PngjUnsupportedException ^ 8332534422373704609L, cArr, i);
@@ -818,7 +818,7 @@ final class isFoundMatchingTemplates extends e1 {
             $10 = ($11 + 83) % 128;
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = null;
         }
         char[] cArr2 = cArr;
         com.d.e.PngjUnsupportedException pngjUnsupportedException = new com.d.e.PngjUnsupportedException();
@@ -857,15 +857,18 @@ final class isFoundMatchingTemplates extends e1 {
                 }
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
             } catch (Throwable th) {
-                cause = th.getCause();
-                if (cause != null) {
+
+                Throwable cause2 = th.getCause();
+
+                if (cause2 != null) {
+
+                    throw new RuntimeException(cause2);
+
                 }
-            }
-            cause = th.getCause();
-            if (cause != null) {
+
                 throw new RuntimeException(th);
+
             }
-            throw new RuntimeException(cause);
         }
         char[] cArr3 = new char[length];
         pngjUnsupportedException.valueOf = 0;

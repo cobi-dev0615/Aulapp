@@ -634,7 +634,7 @@ public class Enroll4FActivity extends FingerActivity {
             $11 = ($10 + 17) % 128;
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = null;
         }
         com.d.e.ComDeA aVar = new com.d.e.ComDeA();
         char[] values2 = com.d.e.ComDeA.values(PngjBadCrcException ^ 8332534422373704609L, cArr, i);

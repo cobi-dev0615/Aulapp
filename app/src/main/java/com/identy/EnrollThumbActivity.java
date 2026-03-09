@@ -235,7 +235,7 @@ public class EnrollThumbActivity extends FingerActivity {
         String str2 = str;
         int i4 = $11 + 29;
         $10 = i4 % 128;
-        byte[] bArr3 = str2;
+        byte[] bArr3 = null;
         if (i4 % 2 != 0) {
             throw null;
         }

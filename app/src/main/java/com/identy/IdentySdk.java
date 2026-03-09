@@ -718,7 +718,6 @@ public class IdentySdk {
                                 throw null;
                             }
                         } catch (Throwable th4) {
-                            th = th4;
                             if (bufferedInputStream != null) {
                                 int i2 = deduplication + 57;
                                 generateST = i2 % 128;
@@ -734,7 +733,6 @@ public class IdentySdk {
                             throw new RuntimeException(th);
                         }
                     } catch (Throwable th2) {
-                        th = th2;
                         bufferedOutputStream = null;
                         if (bufferedInputStream != null) {
                             bufferedInputStream.close();
@@ -745,7 +743,6 @@ public class IdentySdk {
                         throw new RuntimeException(th);
                     }
                 } catch (Throwable th3) {
-                    th = th3;
                     bufferedInputStream = null;
                     bufferedOutputStream = null;
                     if (bufferedInputStream != null) {
@@ -4352,7 +4349,6 @@ public class IdentySdk {
                                     }
                                     zipInputStream.closeEntry();
                                     c = c3;
-                                    th = th2;
                                 }
                             }
                         }
@@ -4508,7 +4504,6 @@ public class IdentySdk {
                                 }
                                 zipInputStream.closeEntry();
                                 c = c2;
-                                th = th2;
                                 z = z2;
                             }
                         }

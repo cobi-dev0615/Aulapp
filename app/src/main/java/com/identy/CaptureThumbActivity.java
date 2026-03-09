@@ -215,7 +215,7 @@ public class CaptureThumbActivity extends FingerActivity {
             }
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = null;
         }
         char[] cArr2 = cArr;
         com.d.e.PngjOutputException pngjOutputException = new com.d.e.PngjOutputException();

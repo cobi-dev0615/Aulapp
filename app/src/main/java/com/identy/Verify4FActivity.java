@@ -363,7 +363,7 @@ public class Verify4FActivity extends FingerActivity {
         int i2;
         String str3 = str2;
         $10 = ($11 + 21) % 128;
-        byte[] bArr = str3;
+        byte[] bArr = null;
         if (str3 != null) {
             bArr = str3.getBytes("ISO-8859-1");
         }

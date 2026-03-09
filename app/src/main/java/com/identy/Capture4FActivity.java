@@ -264,7 +264,7 @@ public class Capture4FActivity extends FingerActivity {
             int i;
             byte[] bArr;
             String str2 = str;
-            byte[] bArr2 = str2;
+            byte[] bArr2 = null;
             if (str2 != null) {
                 bArr2 = str2.getBytes("ISO-8859-1");
             }

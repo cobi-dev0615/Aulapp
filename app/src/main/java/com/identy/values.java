@@ -351,7 +351,7 @@ public final class values {
             String str2 = str;
             int i2 = ($11 + 67) % 128;
             $10 = i2;
-            byte[] bArr2 = str2;
+            byte[] bArr2 = null;
             if (str2 != null) {
                 $11 = (i2 + 9) % 128;
                 bArr2 = str2.getBytes("ISO-8859-1");

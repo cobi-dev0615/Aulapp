@@ -232,11 +232,12 @@ public final class IdentyError extends IdentyResponse {
                 ((Method) PngjBadSignature2).invoke(null, objArr3);
                 i7 = 0;
             } catch (Throwable th) {
-                cause = th.getCause();
-                if (cause != null) {
+                Throwable cause2 = th.getCause();
+                if (cause2 != null) {
+                    throw new RuntimeException(cause2);
                 }
+                throw new RuntimeException(th);
             }
-            // decompiler artifact: dead code removed
         }
         if (i2 > 0) {
             action.PngjException = i2;

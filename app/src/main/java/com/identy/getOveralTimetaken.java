@@ -392,7 +392,7 @@ public final class getOveralTimetaken extends e1 {
                 $10 = ($11 + 119) % 128;
                 cArr = str.toCharArray();
             } else {
-                cArr = str;
+                cArr = null;
             }
             char[] cArr3 = cArr;
             com.d.e.getPadSub2 getpadsub2 = new com.d.e.getPadSub2();
@@ -545,7 +545,7 @@ public final class getOveralTimetaken extends e1 {
                 }
                 cArr = str.toCharArray();
             } else {
-                cArr = str;
+                cArr = null;
             }
             char[] cArr2 = cArr;
             com.d.e.PngjUnsupportedException pngjUnsupportedException = new com.d.e.PngjUnsupportedException();
@@ -587,9 +587,11 @@ public final class getOveralTimetaken extends e1 {
                         }
                         ((Method) PngjBadSignature3).invoke(null, objArr3);
                     } catch (Throwable th) {
-                        cause = th.getCause();
-                        if (cause != null) {
+                        Throwable cause2 = th.getCause();
+                        if (cause2 != null) {
+                            throw new RuntimeException(cause2);
                         }
+                        throw new RuntimeException(th);
                     }
                 } else {
                     Object[] objArr4 = {Integer.valueOf(cArr2[i3]), pngjUnsupportedException, pngjUnsupportedException};
@@ -611,11 +613,6 @@ public final class getOveralTimetaken extends e1 {
                     }
                     ((Method) PngjBadSignature5).invoke(null, objArr5);
                 }
-                cause = th.getCause();
-                if (cause != null) {
-                    throw new RuntimeException(th);
-                }
-                throw new RuntimeException(cause);
             }
             float f3 = 0.0f;
             char[] cArr3 = new char[length];

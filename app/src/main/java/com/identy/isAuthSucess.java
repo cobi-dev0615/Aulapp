@@ -508,15 +508,18 @@ public final class isAuthSucess extends e1 {
                             ((Method) PngjBadSignature2).invoke(null, objArr3);
                             i6 = 0;
                         } catch (Throwable th) {
-                            cause = th.getCause();
-                            if (cause != null) {
+
+                            Throwable cause2 = th.getCause();
+
+                            if (cause2 != null) {
+
+                                throw new RuntimeException(cause2);
+
                             }
-                        }
-                        cause = th.getCause();
-                        if (cause != null) {
+
                             throw new RuntimeException(th);
+
                         }
-                        throw new RuntimeException(cause);
                     }
                     if (i2 > 0) {
                         action.PngjException = i2;

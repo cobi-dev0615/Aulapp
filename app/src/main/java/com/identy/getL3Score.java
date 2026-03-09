@@ -205,7 +205,7 @@ abstract class getL3Score extends e1 {
                     cArr = str.toCharArray();
                     $11 = ($10 + 117) % 128;
                 } else {
-                    cArr = str;
+                    cArr = null;
                 }
                 com.d.e.ComDeA aVar = new com.d.e.ComDeA();
                 char[] values2 = com.d.e.ComDeA.values(PngjException ^ 8332534422373704609L, cArr, i);

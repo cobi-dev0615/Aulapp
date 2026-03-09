@@ -110,6 +110,7 @@ public class Capture2IndexActivity extends FingerActivity {
     private static void b(int i, int i2, int i3, Object[] objArr) {
         int i4;
         int i5;
+        int i11;
         int i6 = 22 - (i2 * 18);
         int i7 = 80 - (i3 * 4);
         int i8 = i * 6;
@@ -119,7 +120,7 @@ public class Capture2IndexActivity extends FingerActivity {
         if (bArr == null) {
             int i10 = i9;
             i4 = i6;
-            int i11 = 0;
+            i11 = 0;
             i6 = i6 + i10 + 5;
             i4++;
             i5 = i11;
@@ -163,7 +164,7 @@ public class Capture2IndexActivity extends FingerActivity {
             $11 = ($10 + 63) % 128;
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = null;
         }
         char[] cArr2 = cArr;
         com.d.e.PngjUnsupportedException pngjUnsupportedException = new com.d.e.PngjUnsupportedException();
@@ -205,15 +206,18 @@ public class Capture2IndexActivity extends FingerActivity {
                 ((Method) PngjBadSignature2).invoke(null, objArr3);
                 $11 = ($10 + 19) % 128;
             } catch (Throwable th) {
-                cause = th.getCause();
-                if (cause != null) {
+
+                Throwable cause2 = th.getCause();
+
+                if (cause2 != null) {
+
+                    throw new RuntimeException(cause2);
+
                 }
-            }
-            cause = th.getCause();
-            if (cause != null) {
+
                 throw new RuntimeException(th);
+
             }
-            throw new RuntimeException(cause);
         }
         char[] cArr3 = new char[length];
         pngjUnsupportedException.valueOf = 0;

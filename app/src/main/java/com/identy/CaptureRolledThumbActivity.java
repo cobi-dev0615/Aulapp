@@ -212,9 +212,11 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                         }
                         ((Method) PngjBadSignature3).invoke(null, objArr4);
                     } catch (Throwable th) {
-                        cause = th.getCause();
-                        if (cause != null) {
+                        Throwable cause2 = th.getCause();
+                        if (cause2 != null) {
+                            throw new RuntimeException(cause2);
                         }
+                        throw new RuntimeException(th);
                     }
                 } else {
                     Object[] objArr5 = {Integer.valueOf(valueOf[i + i8])};
@@ -240,11 +242,6 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                     ((Method) PngjBadSignature6).invoke(null, objArr7);
                 }
                 i7 = 0;
-                cause = th.getCause();
-                if (cause != null) {
-                    throw new RuntimeException(th);
-                }
-                throw new RuntimeException(cause);
             }
             char[] cArr = new char[i2];
             onerrorresponse.PngjBadSignature = 0;
@@ -292,7 +289,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                     cArr = str.toCharArray();
                 }
             } else {
-                cArr = str;
+                cArr = null;
             }
             char[] cArr2 = cArr;
             com.d.e.Action action = new com.d.e.Action();
@@ -337,15 +334,18 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                     ((Method) PngjBadSignature2).invoke(null, objArr3);
                     $11 = ($10 + 29) % 128;
                 } catch (Throwable th) {
-                    cause = th.getCause();
-                    if (cause != null) {
+
+                    Throwable cause2 = th.getCause();
+
+                    if (cause2 != null) {
+
+                        throw new RuntimeException(cause2);
+
                     }
-                }
-                cause = th.getCause();
-                if (cause != null) {
+
                     throw new RuntimeException(th);
+
                 }
-                throw new RuntimeException(cause);
             }
             if (i2 > 0) {
                 action.PngjException = i2;
@@ -543,7 +543,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
                 cArr = str.toCharArray();
             }
         } else {
-            cArr = str;
+            cArr = null;
         }
         com.d.e.ComDeA aVar = new com.d.e.ComDeA();
         char[] values2 = com.d.e.ComDeA.values(PngjBadCrcException ^ 8332534422373704609L, cArr, i);

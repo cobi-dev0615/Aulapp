@@ -178,7 +178,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
             $11 = (i5 + 89) % 128;
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = null;
         }
         char[] cArr2 = cArr;
         com.d.e.Action action = new com.d.e.Action();
@@ -221,15 +221,18 @@ public class CaptureRolledFingersActivity extends FingerActivity {
                 }
                 ((Method) PngjBadSignature2).invoke(null, objArr3);
             } catch (Throwable th) {
-                cause = th.getCause();
-                if (cause != null) {
+
+                Throwable cause2 = th.getCause();
+
+                if (cause2 != null) {
+
+                    throw new RuntimeException(cause2);
+
                 }
-            }
-            cause = th.getCause();
-            if (cause != null) {
+
                 throw new RuntimeException(th);
+
             }
-            throw new RuntimeException(cause);
         }
         if (i2 > 0) {
             $10 = ($11 + 13) % 128;

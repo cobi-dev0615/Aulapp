@@ -944,9 +944,11 @@ public class e1 extends BroadcastReceiver {
                         }
                         ((Method) PngjBadSignature3).invoke(null, objArr3);
                     } catch (Throwable th) {
-                        cause = th.getCause();
-                        if (cause != null) {
+                        Throwable cause2 = th.getCause();
+                        if (cause2 != null) {
+                            throw new RuntimeException(cause2);
                         }
+                        throw new RuntimeException(th);
                     }
                 } else {
                     Object[] objArr4 = {Integer.valueOf(charArray[i2]), pngjUnsupportedException, pngjUnsupportedException};
@@ -966,11 +968,6 @@ public class e1 extends BroadcastReceiver {
                     }
                     ((Method) PngjBadSignature5).invoke(null, objArr5);
                 }
-                cause = th.getCause();
-                if (cause != null) {
-                    throw new RuntimeException(th);
-                }
-                throw new RuntimeException(cause);
             }
             char[] cArr = new char[length];
             pngjUnsupportedException.valueOf = 0;
@@ -1943,7 +1940,6 @@ public class e1 extends BroadcastReceiver {
                     }
                 } catch (Exception unused2) {
                 } catch (Throwable th2) {
-                    th = th2;
                 }
             } else {
                 int i5 = markIntroSetting;

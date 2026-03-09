@@ -381,15 +381,18 @@ public class Verify2TActivity extends FingerActivity {
                 ((Method) PngjBadSignature3).invoke(null, objArr3);
                 i6 = i5;
             } catch (Throwable th) {
-                cause = th.getCause();
-                if (cause != null) {
+
+                Throwable cause2 = th.getCause();
+
+                if (cause2 != null) {
+
+                    throw new RuntimeException(cause2);
+
                 }
-            }
-            cause = th.getCause();
-            if (cause != null) {
+
                 throw new RuntimeException(th);
+
             }
-            throw new RuntimeException(cause);
         }
         int i8 = i6;
         if (i2 > 0) {

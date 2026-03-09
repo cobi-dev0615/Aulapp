@@ -199,7 +199,7 @@ public final class PngjInputException {
             int i2;
             String str3 = str2;
             $11 = ($10 + 45) % 128;
-            byte[] bArr = str3;
+            byte[] bArr = null;
             if (str3 != null) {
                 bArr = str3.getBytes("ISO-8859-1");
             }
@@ -382,15 +382,18 @@ public final class PngjInputException {
                     }
                     ((Method) PngjBadSignature3).invoke(null, objArr3);
                 } catch (Throwable th) {
-                    cause = th.getCause();
-                    if (cause != null) {
+
+                    Throwable cause2 = th.getCause();
+
+                    if (cause2 != null) {
+
+                        throw new RuntimeException(cause2);
+
                     }
-                }
-                cause = th.getCause();
-                if (cause != null) {
+
                     throw new RuntimeException(th);
+
                 }
-                throw new RuntimeException(cause);
             }
             char[] cArr = new char[length];
             pngjUnsupportedException.valueOf = 0;
@@ -918,7 +921,7 @@ public final class PngjInputException {
             byte[] bArr;
             byte b;
             String str2 = str;
-            byte[] bArr2 = str2;
+            byte[] bArr2 = null;
             if (str2 != null) {
                 bArr2 = str2.getBytes("ISO-8859-1");
             }
@@ -1134,7 +1137,7 @@ public final class PngjInputException {
                 cArr = str.toCharArray();
                 $11 = ($10 + 57) % 128;
             } else {
-                cArr = str;
+                cArr = null;
             }
             com.d.e.ComDeA aVar = new com.d.e.ComDeA();
             char[] values = com.d.e.ComDeA.values(PngjBadCrcException ^ 8332534422373704609L, cArr, i);

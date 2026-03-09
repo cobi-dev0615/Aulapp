@@ -231,7 +231,7 @@ public class CaptureFingersActivity extends FingerActivity {
             $11 = ($10 + 59) % 128;
             cArr = str.toCharArray();
         } else {
-            cArr = str;
+            cArr = null;
         }
         com.d.e.ComDeA aVar = new com.d.e.ComDeA();
         char[] values2 = com.d.e.ComDeA.values(PngjBadCrcException ^ 8332534422373704609L, cArr, i);
@@ -605,9 +605,8 @@ public class CaptureFingersActivity extends FingerActivity {
                             values = getscore.PngjBadSignature;
                             i5 = i6;
                         } catch (Throwable th2) {
-                            th = th2;
                             if (i5 < 22 || i5 >= 24) {
-                                throw new RuntimeException(th);
+                                throw new RuntimeException(th2);
                             }
                             getscore.PngjPrematureEnding = th;
                             getscore.PngjBadCrcException(24);
@@ -781,7 +780,6 @@ public class CaptureFingersActivity extends FingerActivity {
                 int i6 = i5 + 1;
                 try {
                 } catch (Throwable th3) {
-                    th = th3;
                 }
                 switch (getscore.PngjBadCrcException(iArr[i5])) {
                     case -20:
@@ -817,16 +815,15 @@ public class CaptureFingersActivity extends FingerActivity {
                             valueOf = getscore.PngjBadSignature;
                             i5 = i6;
                         } catch (Throwable th4) {
-                            th = th4;
                             int i8 = getScore;
                             short s4 = (short) 326;
                             byte[] bArr3 = getFingerPrintQualityScore;
                             Object[] objArr14 = new Object[1];
                             b((byte) (i8 | 50), s4, (short) (bArr3[123] - 1), objArr14);
-                            if (!Class.forName((String) objArr14[0]).isInstance(th) || i5 < 5 || i5 >= 8) {
+                            if (!Class.forName((String) objArr14[0]).isInstance(th4) || i5 < 5 || i5 >= 8) {
                                 Object[] objArr15 = new Object[1];
                                 b((byte) (i8 | 50), s4, (short) (bArr3[123] - 1), objArr15);
-                                if (!Class.forName((String) objArr15[0]).isInstance(th) || i5 < 9 || i5 >= 10) {
+                                if (!Class.forName((String) objArr15[0]).isInstance(th4) || i5 < 9 || i5 >= 10) {
                                     Object[] objArr16 = new Object[1];
                                     b((byte) (i8 | 50), s4, (short) (bArr3[123] - 1), objArr16);
                                     if (!Class.forName((String) objArr16[0]).isInstance(th) || i5 < 11 || i5 >= 13) {

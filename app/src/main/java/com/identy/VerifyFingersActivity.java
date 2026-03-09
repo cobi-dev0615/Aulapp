@@ -288,6 +288,7 @@ public class VerifyFingersActivity extends FingerActivity {
     */
     private static void b(int i, short s, short s2, Object[] objArr) {
         int i2;
+        int i7;
         int i3 = s * 6;
         byte[] bArr = $$a;
         int i4 = (i * 18) + 4;
@@ -296,7 +297,7 @@ public class VerifyFingersActivity extends FingerActivity {
         int i6 = i3 + 12;
         if (bArr == null) {
             byte[] bArr3 = bArr;
-            int i7 = 0;
+            i7 = 0;
             int i8 = i6;
             i5 = i8 + (-i5) + 5;
             i4++;

@@ -200,7 +200,7 @@ public final class getFingerPrintQualityScore extends Dialog {
             char c;
             String str3 = str2;
             $11 = ($10 + 55) % 128;
-            byte[] bArr = str3;
+            byte[] bArr = null;
             if (str3 != null) {
                 bArr = str3.getBytes("ISO-8859-1");
             }
@@ -215,7 +215,7 @@ public final class getFingerPrintQualityScore extends Dialog {
                 }
                 cArr = str.toCharArray();
             } else {
-                cArr = str;
+                cArr = null;
             }
             char[] cArr2 = cArr;
             com.d.e.PngjExceptionInternal pngjExceptionInternal = new com.d.e.PngjExceptionInternal();
