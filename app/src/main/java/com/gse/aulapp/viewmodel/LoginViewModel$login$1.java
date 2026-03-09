@@ -8,6 +8,8 @@ import com.gse.aulapp.model.dto.DataLoginDto;
 import com.gse.aulapp.model.enumerate.EnumApiStatus;
 import com.gse.aulapp.model.repository.LoginRepository;
 import com.gse.aulapp.model.request.LoginRequest;
+import org.json.JSONException;
+import org.json.JSONObject;
 import com.gse.aulapp.model.response.LoginResponse;
 import com.gse.aulapp.util.PreferenceUtil;
 import com.karumi.dexter.BuildConfig;
@@ -170,7 +172,11 @@ public final class LoginViewModel$login$1 extends SuspendLambda implements Funct
                                 mutableStateFlow3 = loginViewModel._message;
                                 mutableStateFlow3.setValue(new Status.Failure(new Exception(apiResult.getMessage())));
                             }
-                            fragmentLoginBinding.mtvInformationLogin.setText((CharSequence) new JSONObject(String.valueOf(apiResult.getMessage())).get("message"));
+                            try {
+                                fragmentLoginBinding.mtvInformationLogin.setText((CharSequence) new JSONObject(String.valueOf(apiResult.getMessage())).get("message"));
+                            } catch (JSONException e) {
+                                fragmentLoginBinding.mtvInformationLogin.setText(apiResult.getMessage());
+                            }
                             fragmentLoginBinding.mtvInformationLogin.setVisibility(0);
                         }
                         return Unit.INSTANCE;

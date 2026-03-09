@@ -125,11 +125,15 @@ public final class PasswordRecoverViewModel$callAPIPasswordRecovery$1 extends Su
                         if (apiResult.getStatus() == EnumApiStatus.SUCCESS) {
                             passwordRecoverViewModel.callDialog(true, context2);
                         } else if (apiResult.getStatus() == EnumApiStatus.ERROR) {
-                            JSONObject jSONObject = new JSONObject(String.valueOf(apiResult.getMessage()));
-                            if (Intrinsics.areEqual(jSONObject.get("status"), Boxing.boxInt(400))) {
-                                fragmentPasswordRecoverBinding.mtvInformationRecovery.setText((CharSequence) jSONObject.get("message"));
-                                fragmentPasswordRecoverBinding.mtvInformationRecovery.setVisibility(0);
-                            } else {
+                            try {
+                                JSONObject jSONObject = new JSONObject(String.valueOf(apiResult.getMessage()));
+                                if (Intrinsics.areEqual(jSONObject.get("status"), Boxing.boxInt(400))) {
+                                    fragmentPasswordRecoverBinding.mtvInformationRecovery.setText((CharSequence) jSONObject.get("message"));
+                                    fragmentPasswordRecoverBinding.mtvInformationRecovery.setVisibility(0);
+                                } else {
+                                    passwordRecoverViewModel.callDialog(false, context2);
+                                }
+                            } catch (org.json.JSONException e) {
                                 passwordRecoverViewModel.callDialog(false, context2);
                             }
                         }
