@@ -4881,6 +4881,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         */
         private static String $$g(short s, byte b, byte b2) {
             int i;
+            int i6 = 0;
             int i2 = b2 * 2;
             byte[] bArr = $$c;
             int i3 = (b * 5) + com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground;
@@ -4992,15 +4993,12 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     }
                     ((Method) PngjBadSignature3).invoke(null, objArr3);
                 } catch (Throwable th) {
-                    cause = th.getCause();
-                    if (cause != null) {
+                    Throwable cause2 = th.getCause();
+                    if (cause2 != null) {
+                        throw new RuntimeException(cause2);
                     }
-                }
-                cause = th.getCause();
-                if (cause != null) {
                     throw new RuntimeException(th);
                 }
-                throw new RuntimeException(cause);
             }
             char[] cArr3 = new char[length];
             pngjUnsupportedException.valueOf = 0;
@@ -5085,6 +5083,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         */
         private static void c(int i, byte b, byte b2, Object[] objArr) {
             int i2;
+            int i8 = 0;
             int i3 = 111 - (b2 * 31);
             int i4 = 52 - (i * 48);
             int i5 = b * 30;
