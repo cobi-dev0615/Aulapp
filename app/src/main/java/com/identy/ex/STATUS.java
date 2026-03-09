@@ -94,7 +94,7 @@ public enum STATUS {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int uptimeMillis = (int) SystemClock.uptimeMillis();
-                    int c = a.c((~(uptimeMillis | (-973984119))) | 475094838, 318, (((~(973984118 | uptimeMillis)) | (-1046339447)) * (-318)) + ((((~((-571244609) | uptimeMillis)) | (~((~uptimeMillis) | (-72355329)))) * (-318)) - 746718375), 855727932);
+                    int c = defpackage.a.c((~(uptimeMillis | (-973984119))) | 475094838, 318, (((~(973984118 | uptimeMillis)) | (-1046339447)) * (-318)) + ((((~((-571244609) | uptimeMillis)) | (~((~uptimeMillis) | (-72355329)))) * (-318)) - 746718375), 855727932);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -139,7 +139,7 @@ public enum STATUS {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myUid = Process.myUid();
-                    int c = a.c((~((~myUid) | 737077539)) | 238188259, 168, (((~(myUid | 737077539)) | 68163264) * (-168)) + ((((~(238188259 | myUid)) | 567052544) * 336) - 1710130969), 1527135602);
+                    int c = defpackage.a.c((~((~myUid) | 737077539)) | 238188259, 168, (((~(myUid | 737077539)) | 68163264) * (-168)) + ((((~(238188259 | myUid)) | 567052544) * 336) - 1710130969), 1527135602);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -179,7 +179,7 @@ public enum STATUS {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c(identityHashCode | 796262237, 668, ((758243165 | (~(259353885 | identityHashCode))) * 1336) + ((((~(identityHashCode | 758243165)) | 259353885) * (-668)) - 1746960593), 1269694876);
+                    int c = defpackage.a.c(identityHashCode | 796262237, 668, ((758243165 | (~(259353885 | identityHashCode))) * 1336) + ((((~(identityHashCode | 758243165)) | 259353885) * (-668)) - 1746960593), 1269694876);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

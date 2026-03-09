@@ -62,7 +62,7 @@ public class PostCaptureOutPut {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~((int) Process.getStartUptimeMillis());
-                    int c = a.c((~(i | 384609312)) | (-270756416), 494, (((-213536) | i) * 494) + 1108573101, -581597572);
+                    int c = defpackage.a.c((~(i | 384609312)) | (-270756416), 494, (((-213536) | i) * 494) + 1108573101, -581597572);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -86,7 +86,7 @@ public class PostCaptureOutPut {
                     int i17 = i16 >> 19;
                     int i18 = ((i17 ^ (-16383)) + ((i17 & (-16383)) << 1)) / ConstantsKt.DEFAULT_BUFFER_SIZE;
                     int i19 = ((i18 | 1) << 1) - (i18 ^ 1);
-                    this.capturertQualityPass = 13832 / (((-(((i19 | 1) << 1) - (i19 ^ 1))) & i16) * 1976);
+                    this.capturertQualityPass = (13832 / (((-(((i19 | 1) << 1) - (i19 ^ 1))) & i16) * 1976)) != 0;
                     this.rfQualityPass = true;
                     this.framerfQualityPass = true;
                     this.capturerfQualityPass = true;
@@ -202,7 +202,7 @@ public class PostCaptureOutPut {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~((~identityHashCode) | 928906858)) | 286801962, 449, (((~(928906858 | identityHashCode)) | 286801962) * 449) + 1116117142, -1756537460);
+                    int c = defpackage.a.c((~((~identityHashCode) | 928906858)) | 286801962, 449, (((~(928906858 | identityHashCode)) | 286801962) * 449) + 1116117142, -1756537460);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -243,7 +243,7 @@ public class PostCaptureOutPut {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                     int i = ~startElapsedRealtime;
-                    int c = a.c((~(startElapsedRealtime | (-44056577))) | (~(128009648 | i)) | 542945856, 676, (((~(626898928 | i)) | (-670955505)) * 676) + (((670955504 | startElapsedRealtime) * (-676)) - 284020893), 84367867);
+                    int c = defpackage.a.c((~(startElapsedRealtime | (-44056577))) | (~(128009648 | i)) | 542945856, 676, (((~(626898928 | i)) | (-670955505)) * 676) + (((670955504 | startElapsedRealtime) * (-676)) - 284020893), 84367867);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -283,7 +283,7 @@ public class PostCaptureOutPut {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c(identityHashCode | (-5247169), 744, (((~identityHashCode) | 504136448) * 744) + (((((~(1049553664 | identityHashCode)) | 5247168) | (~((-550664385) | identityHashCode))) * (-744)) - 1307546841), 1451327454);
+                    int c = defpackage.a.c(identityHashCode | (-5247169), 744, (((~identityHashCode) | 504136448) * 744) + (((((~(1049553664 | identityHashCode)) | 5247168) | (~((-550664385) | identityHashCode))) * (-744)) - 1307546841), 1451327454);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -324,7 +324,7 @@ public class PostCaptureOutPut {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myUid = Process.myUid();
                     int i = ~myUid;
-                    int c = a.c((~(myUid | 257249633)) | (~(i | (-241639647))) | (~(241639646 | myUid)), 831, ((~((-17846562) | myUid)) * (-1662)) + (((~((-257249634) | i)) | (~(259486207 | myUid))) * (-831)) + 585886588, 1514698944);
+                    int c = defpackage.a.c((~(myUid | 257249633)) | (~(i | (-241639647))) | (~(241639646 | myUid)), 831, ((~((-17846562) | myUid)) * (-1662)) + (((~((-257249634) | i)) | (~(259486207 | myUid))) * (-831)) + 585886588, 1514698944);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -366,7 +366,7 @@ public class PostCaptureOutPut {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = a.c((~((~elapsedCpuTime) | 1071509470)) | 303587358, 576, (((~(438103774 | elapsedCpuTime)) | 633405696) * 576) + 901473407, -1794337714);
+                    int c = defpackage.a.c((~((~elapsedCpuTime) | 1071509470)) | 303587358, 576, (((~(438103774 | elapsedCpuTime)) | 633405696) * 576) + 901473407, -1794337714);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -419,7 +419,7 @@ public class PostCaptureOutPut {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~(System.identityHashCode(this) | 654311374)) | 78864398, 130, ((~((~0) | 654311374)) * 130) - 2002415039, -466829566);
+                    int c = defpackage.a.c((~(System.identityHashCode(this) | 654311374)) | 78864398, 130, ((~((~0) | 654311374)) * 130) - 2002415039, -466829566);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -535,7 +535,7 @@ public class PostCaptureOutPut {
                     int i = ~((-131168438) | identityHashCode);
                     int i2 = ~identityHashCode;
                     int i3 = i | (~(367720842 | i2));
-                    int c = a.c(271221002 | (~(131168437 | i2)), 516, (((~(identityHashCode | (-96499841))) | (~(i2 | (-271221003)))) * 516) + (((i3 | 0) * (-516)) - 1303067413), -639380744);
+                    int c = defpackage.a.c(271221002 | (~(131168437 | i2)), 516, (((~(identityHashCode | (-96499841))) | (~(i2 | (-271221003)))) * 516) + (((i3 | 0) * (-516)) - 1303067413), -639380744);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -585,7 +585,7 @@ public class PostCaptureOutPut {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~(System.identityHashCode(this) | 437414940)) | 27787811, 658, ((431516223 | 0) * (-658)) - 135787977, 541119782);
+                    int c = defpackage.a.c((~(System.identityHashCode(this) | 437414940)) | 27787811, 658, ((431516223 | 0) * (-658)) - 135787977, 541119782);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -626,7 +626,7 @@ public class PostCaptureOutPut {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startUptimeMillis = (int) Process.getStartUptimeMillis();
                     int i = ~startUptimeMillis;
-                    int c = a.c((~(startUptimeMillis | (-1031519353))) | 532630072 | (~(i | 1031519352)), 45, (((~(532630072 | startUptimeMillis)) | 42222080) * (-45)) + (((~(532630072 | i)) | 1031519352) * (-90)) + 1474070354, -2022991983);
+                    int c = defpackage.a.c((~(startUptimeMillis | (-1031519353))) | 532630072 | (~(i | 1031519352)), 45, (((~(532630072 | startUptimeMillis)) | 42222080) * (-45)) + (((~(532630072 | i)) | 1031519352) * (-90)) + 1474070354, -2022991983);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -665,12 +665,12 @@ public class PostCaptureOutPut {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int b = a.b(765839178);
+                    int b = defpackage.a.b(765839178);
                     int i = ~b;
                     int i2 = (((~((-537729089) | i)) | (~((-307291683) | b))) * 520) + 1313698839;
                     int i3 = ~(307291682 | i);
                     int i4 = ~(b | 806180962);
-                    int c = a.c(i4 | (~(i | (-806180963))) | (-845020771), 520, ((i3 | i4) * (-1040)) + i2, 491036741);
+                    int c = defpackage.a.c(i4 | (~(i | (-806180963))) | (-845020771), 520, ((i3 | i4) * (-1040)) + i2, 491036741);
                     int i5 = c ^ (c << 13);
                     int i6 = i5 ^ (i5 >>> 17);
                     ((int[]) objArr[1])[0] = i6 ^ (i6 << 5);
@@ -714,7 +714,7 @@ public class PostCaptureOutPut {
                     int i = ~identityHashCode;
                     int i2 = ~((-158515298) | i);
                     int i3 = ~((-340373983) | identityHashCode);
-                    int c = a.c((~(identityHashCode | (-158515298))) | (~(i | 158515297)), 575, ((i3 | (~(340373982 | i))) * (-575)) + ((i2 | i3) * 1150) + 1400362686, -244655984);
+                    int c = defpackage.a.c((~(identityHashCode | (-158515298))) | (~(i | 158515297)), 575, ((i3 | (~(340373982 | i))) * (-575)) + ((i2 | i3) * 1150) + 1400362686, -244655984);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -780,7 +780,7 @@ public class PostCaptureOutPut {
                 if (j4 > j3) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~((int) Process.getStartUptimeMillis());
-                    int c = a.c((~(i | (-335952401))) | (-834841681), 783, ((~((-268576785) | i)) * (-783)) + 1344896510, -2297401);
+                    int c = defpackage.a.c((~(i | (-335952401))) | (-834841681), 783, ((~((-268576785) | i)) * (-783)) + 1344896510, -2297401);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -867,7 +867,7 @@ public class PostCaptureOutPut {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c(~(((int) Process.getStartElapsedRealtime()) | (-573705499)), -1504, (((~((-1072865179) | 0)) | 499159680) * 1504) - 1003693777, -727272897);
+                    int c = defpackage.a.c(~(((int) Process.getStartElapsedRealtime()) | (-573705499)), -1504, (((~((-1072865179) | 0)) | 499159680) * 1504) - 1003693777, -727272897);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -1017,7 +1017,7 @@ public class PostCaptureOutPut {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
                     int i = ~((-12354625) | identityHashCode);
-                    int c = a.c((~(identityHashCode | (-272777528))) | (~((~identityHashCode) | (-213757129))) | 201402504, 497, ((i | (~(0 | (-272777528)))) * 497) - 790665680, 355881587);
+                    int c = defpackage.a.c((~(identityHashCode | (-272777528))) | (~((~identityHashCode) | (-213757129))) | 201402504, 497, ((i | (~(0 | (-272777528)))) * 497) - 790665680, 355881587);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -1160,7 +1160,7 @@ public class PostCaptureOutPut {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c(identityHashCode | (-1054849989), 54, (((~((~identityHashCode) | 1012669188)) | (~((-1012669189) | identityHashCode)) | (-1054849989)) * 54) + ((((~((-513779909) | 0)) | 471599108) * (-108)) - 997894093), -2022839525);
+                    int c = defpackage.a.c(identityHashCode | (-1054849989), 54, (((~((~identityHashCode) | 1012669188)) | (~((-1012669189) | identityHashCode)) | (-1054849989)) * 54) + ((((~((-513779909) | 0)) | 471599108) * (-108)) - 997894093), -2022839525);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

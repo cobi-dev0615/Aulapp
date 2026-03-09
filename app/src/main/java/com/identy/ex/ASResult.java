@@ -50,7 +50,7 @@ public class ASResult {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int freeMemory = (int) Runtime.getRuntime().freeMemory();
-                    int c = a.c((~(freeMemory | (-1052753791))) | 553864510, 301, (((~(553864510 | freeMemory)) | (~((~freeMemory) | 1052753790))) * (-301)) + (((~((-16793601) | freeMemory)) * (-301)) - 2056882170), -93950597);
+                    int c = defpackage.a.c((~(freeMemory | (-1052753791))) | 553864510, 301, (((~(553864510 | freeMemory)) | (~((~freeMemory) | 1052753790))) * (-301)) + (((~((-16793601) | freeMemory)) * (-301)) - 2056882170), -93950597);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -192,7 +192,7 @@ public class ASResult {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int freeMemory = (int) Runtime.getRuntime().freeMemory();
-                    int c = a.c((~(freeMemory | (-531400875))) | (~(1030290154 | freeMemory)), -1324, (((~freeMemory) | 541094464) * 1324) + 946668373, 894303766);
+                    int c = defpackage.a.c((~(freeMemory | (-531400875))) | (~(1030290154 | freeMemory)), -1324, (((~freeMemory) | 541094464) * 1324) + 946668373, 894303766);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -234,7 +234,7 @@ public class ASResult {
                     int identityHashCode = System.identityHashCode(this);
                     int i = ~identityHashCode;
                     int i2 = (~((-176204598) | i)) | 142616629;
-                    int c = a.c(~(i | (-322684683)), 713, ((~(identityHashCode | (-289096715))) * 1426) + (((i2 | 0) * (-713)) - 862196222), 1073179592);
+                    int c = defpackage.a.c(~(i | (-322684683)), 713, ((~(identityHashCode | (-289096715))) * 1426) + (((i2 | 0) * (-713)) - 862196222), 1073179592);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -277,7 +277,7 @@ public class ASResult {
                     int i = (((~((-789298543) | startElapsedRealtime)) | 771798080 | (~(290409262 | startElapsedRealtime))) * (-880)) + 1434790607;
                     int i2 = (~((-789298543) | (~startElapsedRealtime))) | (-290409263);
                     int i3 = ~(startElapsedRealtime | 789298542);
-                    int c = a.c(i3, 880, ((i2 | i3) * (-880)) + i, -376223536);
+                    int c = defpackage.a.c(i3, 880, ((i2 | i3) * (-880)) + i, -376223536);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -318,7 +318,7 @@ public class ASResult {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = (int) Runtime.getRuntime().totalMemory();
                     int i2 = ~i;
-                    int c = a.c((~(i | (-307903027))) | 37894144 | (~(i2 | 460995135)), 988, (((~((-270008883) | i2)) | (~(460995135 | i))) * 988) + 1430038599, 2110814560);
+                    int c = defpackage.a.c((~(i | (-307903027))) | 37894144 | (~(i2 | 460995135)), 988, (((~((-270008883) | i2)) | (~(460995135 | i))) * 988) + 1430038599, 2110814560);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -362,7 +362,7 @@ public class ASResult {
                 if (j3 > j2) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~((~((int) Process.getStartUptimeMillis())) | 275439776);
-                    int c = a.c(i | 4227200, 970, ((271212576 | i) * (-970)) + 1776666239, 145774005);
+                    int c = defpackage.a.c(i | 4227200, 970, ((271212576 | i) * (-970)) + 1776666239, 145774005);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -410,7 +410,7 @@ public class ASResult {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~System.identityHashCode(this)) | 38091053)) | (-422707264), 381, (((-422707219) | 0) * (-381)) - 1638753682, 864231622);
+                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | 38091053)) | (-422707264), 381, (((-422707219) | 0) * (-381)) - 1638753682, 864231622);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -495,7 +495,7 @@ public class ASResult {
                     int i = (((~((-284469040) | identityHashCode)) | 271590447 | (~(214420240 | identityHashCode))) * (-754)) + 1776076173;
                     int i2 = ~((-271590448) | identityHashCode);
                     int i3 = ~identityHashCode;
-                    int c = a.c(i3 | (-284469040), 754, ((i2 | (~(486010687 | i3))) * (-754)) + i, -292197269);
+                    int c = defpackage.a.c(i3 | (-284469040), 754, ((i2 | (~(486010687 | i3))) * (-754)) + i, -292197269);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);

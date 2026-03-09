@@ -48,7 +48,7 @@ public class PreCaptureOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~Process.myTid();
-                    int c = a.c(i | (-8687617), -828, (((~(i | (-8687617))) | 507576896) * (-828)) + 1262351875, -1594298708);
+                    int c = defpackage.a.c(i | (-8687617), -828, (((~(i | (-8687617))) | 507576896) * (-828)) + 1262351875, -1594298708);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -181,7 +181,7 @@ public class PreCaptureOutput {
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int identityHashCode = System.identityHashCode(this);
-                        int c = a.c((~(identityHashCode | 331497871)) | (~((~identityHashCode) | (-331497872))) | (~((-167391409) | identityHashCode)), 959, ((((~((-167391409) | 0)) | (~((-331497872) | identityHashCode))) | (~(0 | 331497871))) * 959) - 2013489538, 353463146);
+                        int c = defpackage.a.c((~(identityHashCode | 331497871)) | (~((~identityHashCode) | (-331497872))) | (~((-167391409) | identityHashCode)), 959, ((((~((-167391409) | 0)) | (~((-331497872) | identityHashCode))) | (~(0 | 331497871))) * 959) - 2013489538, 353463146);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -269,7 +269,7 @@ public class PreCaptureOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | (-95229732))) | 594119011, 519, (((~((~identityHashCode) | (-19464484))) | (~((-75765249) | identityHashCode))) * (-519)) + ((((~((-594119012) | 0)) | (-95229732)) * 519) - 726608762), 1537818787);
+                    int c = defpackage.a.c((~(identityHashCode | (-95229732))) | 594119011, 519, (((~((~identityHashCode) | (-19464484))) | (~((-75765249) | identityHashCode))) * (-519)) + ((((~((-594119012) | 0)) | (-95229732)) * 519) - 726608762), 1537818787);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -315,7 +315,7 @@ public class PreCaptureOutput {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
                     int i2 = ~elapsedCpuTime;
-                    int c = a.c((~(i2 | 488797651)) | 987686931, 217, (((~(elapsedCpuTime | (-987686932))) | 584878080) * 217) + (((~((-987686932) | i2)) | (~(488797651 | elapsedCpuTime))) * 217) + 34398909, -2012057691);
+                    int c = defpackage.a.c((~(i2 | 488797651)) | 987686931, 217, (((~(elapsedCpuTime | (-987686932))) | 584878080) * 217) + (((~((-987686932) | i2)) | (~(488797651 | elapsedCpuTime))) * 217) + 34398909, -2012057691);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -367,7 +367,7 @@ public class PreCaptureOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c(identityHashCode | (-439802602), 496, (((~((-938691882) | identityHashCode)) | 633406720 | (~((~identityHashCode) | (-134517441)))) * (-496)) + ((0 * 992) - 2137057233), -955806130);
+                    int c = defpackage.a.c(identityHashCode | (-439802602), 496, (((~((-938691882) | identityHashCode)) | 633406720 | (~((~identityHashCode) | (-134517441)))) * (-496)) + ((0 * 992) - 2137057233), -955806130);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -426,7 +426,7 @@ public class PreCaptureOutput {
                     int identityHashCode = System.identityHashCode(this);
                     int i = ~((-584890497) | identityHashCode);
                     int i2 = ~identityHashCode;
-                    int c = a.c((~(identityHashCode | 939327229)) | (~(i2 | (-853326014))) | 268435517, 497, ((i | (~(i2 | 939327229))) * 497) + 291821168, -598930051);
+                    int c = defpackage.a.c((~(identityHashCode | 939327229)) | (~(i2 | (-853326014))) | 268435517, 497, ((i | (~(i2 | 939327229))) * 497) + 291821168, -598930051);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -469,7 +469,7 @@ public class PreCaptureOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = a.c((~(elapsedCpuTime | (-519137810))) | 1018027089, 519, (((~((~elapsedCpuTime) | (-480331794))) | (~((-38806017) | elapsedCpuTime))) * (-519)) + ((((~((-1018027090) | 0)) | (-519137810)) * 519) - 726608762), -13850401);
+                    int c = defpackage.a.c((~(elapsedCpuTime | (-519137810))) | 1018027089, 519, (((~((~elapsedCpuTime) | (-480331794))) | (~((-38806017) | elapsedCpuTime))) * (-519)) + ((((~((-1018027090) | 0)) | (-519137810)) * 519) - 726608762), -13850401);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -514,7 +514,7 @@ public class PreCaptureOutput {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
                     int i = ~identityHashCode;
-                    int c = a.c((~(identityHashCode | 393113599)) | (~(i | (-18892851))) | (~((-105775681) | identityHashCode)), 192, (((~((-124668531) | i)) | 105775680) * (-384)) + ((268445069 | i) * (-192)) + 1796350335, 382391057);
+                    int c = defpackage.a.c((~(identityHashCode | 393113599)) | (~(i | (-18892851))) | (~((-105775681) | identityHashCode)), 192, (((~((-124668531) | i)) | 105775680) * (-384)) + ((268445069 | i) * (-192)) + 1796350335, 382391057);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -557,7 +557,7 @@ public class PreCaptureOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startUptimeMillis = (int) Process.getStartUptimeMillis();
-                    int c = a.c((~(startUptimeMillis | 630891822)) | (-574920641), 70, ((~((-38015681) | startUptimeMillis)) * 70) + ((((~((-132002543) | startUptimeMillis)) | 93986862) * (-140)) - 1933080019), -710355434);
+                    int c = defpackage.a.c((~(startUptimeMillis | 630891822)) | (-574920641), 70, ((~((-38015681) | startUptimeMillis)) * 70) + ((((~((-132002543) | startUptimeMillis)) | 93986862) * (-140)) - 1933080019), -710355434);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -599,7 +599,7 @@ public class PreCaptureOutput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | (-237569))) | (~((~identityHashCode) | 35889448)) | 499126848, 757, ((~(535016296 | identityHashCode)) * 1514) + (((534778728 | 0) * (-757)) - 1296997628), 1107248303);
+                    int c = defpackage.a.c((~(identityHashCode | (-237569))) | (~((~identityHashCode) | 35889448)) | 499126848, 757, ((~(535016296 | identityHashCode)) * 1514) + (((534778728 | 0) * (-757)) - 1296997628), 1107248303);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -669,7 +669,7 @@ public class PreCaptureOutput {
                     int identityHashCode = System.identityHashCode(this);
                     int i = (~(372281036 | identityHashCode)) | 567083264;
                     int i2 = ~((~identityHashCode) | (-68193985));
-                    int c = a.c((~(identityHashCode | 939364300)) | i2, 470, ((i | i2) * (-470)) + 740051007, 940313177);
+                    int c = defpackage.a.c((~(identityHashCode | 939364300)) | i2, 470, ((i | i2) * (-470)) + 740051007, 940313177);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);

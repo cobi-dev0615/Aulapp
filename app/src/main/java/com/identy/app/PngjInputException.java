@@ -20,7 +20,7 @@ public final class PngjInputException extends HurlStack {
     }
 
     @Override // com.android.volley.toolbox.HurlStack
-    public final HttpURLConnection createConnection(URL url) {
+    public final HttpURLConnection createConnection(URL url) throws java.io.IOException {
         Properties properties;
         try {
             InputStream open = this.a.getAssets().open("identylm.properties");

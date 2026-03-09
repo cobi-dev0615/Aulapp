@@ -86,7 +86,7 @@ public enum SIDE {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int freeMemory = (int) Runtime.getRuntime().freeMemory();
-                    int c = a.c((~(freeMemory | (-63803603))) | (~((-562692883) | freeMemory)) | 25690130, -69, (((~((-537002753) | freeMemory)) | (~((-38113473) | freeMemory))) * 69) + 777473784, 739977953);
+                    int c = defpackage.a.c((~(freeMemory | (-63803603))) | (~((-562692883) | freeMemory)) | 25690130, -69, (((~((-537002753) | freeMemory)) | (~((-38113473) | freeMemory))) * 69) + 777473784, 739977953);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -128,7 +128,7 @@ public enum SIDE {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myUid = Process.myUid();
                     int i = ~myUid;
-                    int c = a.c((~(i | 245561929)) | (~((-253327351) | i)), 865, ((~(myUid | 245561929)) * 865) + ((((~((-245561930) | i)) | (-253327351)) * (-865)) - 1923232590), 277978404);
+                    int c = defpackage.a.c((~(i | 245561929)) | (~((-253327351) | i)), 865, ((~(myUid | 245561929)) * 865) + ((((~((-245561930) | i)) | (-253327351)) * (-865)) - 1923232590), 277978404);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -171,7 +171,7 @@ public enum SIDE {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = (int) Runtime.getRuntime().totalMemory();
                     int i2 = ~i;
-                    int c = a.c((~(i | 270060048)) | (~(i2 | (-768949329))) | 269009408, -370, (((~(270060048 | i2)) | (~((-768949329) | i))) * (-370)) + 404328781, 1611634714);
+                    int c = defpackage.a.c((~(i | 270060048)) | (~(i2 | (-768949329))) | 269009408, -370, (((~(270060048 | i2)) | (~((-768949329) | i))) * (-370)) + 404328781, 1611634714);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -213,7 +213,7 @@ public enum SIDE {
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                     int i = (((~((~startElapsedRealtime) | 7587933)) | (-510917342)) * (-245)) - 893020152;
                     int i2 = ~(startElapsedRealtime | 7587933);
-                    int c = a.c(i2 | 506477213, 245, (i2 * (-245)) + i, 1658559858);
+                    int c = defpackage.a.c(i2 | 506477213, 245, (i2 * (-245)) + i, 1658559858);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -252,7 +252,7 @@ public enum SIDE {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~System.identityHashCode(this)) | (-77912071))) | 498287167, 398, (((~((-77912071) | 0)) | 498287167) * 398) - 1120524709, 218961109);
+                    int c = defpackage.a.c((~((~System.identityHashCode(this)) | (-77912071))) | 498287167, 398, (((~((-77912071) | 0)) | 498287167) * 398) - 1120524709, 218961109);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
