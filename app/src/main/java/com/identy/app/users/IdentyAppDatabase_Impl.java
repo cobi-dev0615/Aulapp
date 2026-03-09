@@ -421,9 +421,9 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void clearAllTables() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        SupportSQLiteDatabase writableDatabase;
+        SupportSQLiteDatabase writableDatabase = null;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             try {
@@ -708,7 +708,13 @@ public final class IdentyAppDatabase_Impl extends IdentyAppDatabase {
             ((long[]) objArr[0])[0] = j + 5019;
             Fpnative.valueOf = objArr;
             if (this.a == null) {
+                synchronized (this) {
+                    if (this.a == null) {
+                        this.a = new UserDao_Impl(this);
+                    }
+                }
             }
+            return this.a;
         } catch (Throwable th2) {
             Throwable cause = th2.getCause();
 

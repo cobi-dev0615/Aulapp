@@ -24,7 +24,7 @@ public final class UserDao_Impl implements UserDao {
     private final EntityInsertionAdapter b;
     private final EntityDeletionOrUpdateAdapter c;
 
-    public class a extends EntityInsertionAdapter {
+    public class a extends EntityInsertionAdapter<IdentyUser> {
         public a(RoomDatabase roomDatabase) {
             super(roomDatabase);
         }
@@ -58,7 +58,7 @@ public final class UserDao_Impl implements UserDao {
         }
     }
 
-    public class b extends EntityDeletionOrUpdateAdapter {
+    public class b extends EntityDeletionOrUpdateAdapter<IdentyUser> {
         public b(RoomDatabase roomDatabase) {
             super(roomDatabase);
         }
