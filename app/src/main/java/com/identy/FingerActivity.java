@@ -6712,7 +6712,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         public final void run() {
             try {
                 FingerActivity.this.findViewById(R.id.rol_twist_info_msg).setVisibility(0);
-                if (!this.valueOf && FingerActivity.this.onErrorResponse.uxd566jk.getScore.equals(CapturePosition.HORIZONTAL)) {
+                if (!this.valueOf && FingerActivity.this.onErrorResponse.uxd566jk.getScore.equals(com.identy.CapturePosition.HORIZONTAL)) {
                     FingerActivity fingerActivity = FingerActivity.this;
                     int i = R.id.rol_twist_info_image;
                     fingerActivity.findViewById(i).setRotationX(this.PngjException);
@@ -7004,7 +7004,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (e1Var.PngjExceptionInternal.size() > 0) {
                 int i3 = setFoundMatchingTemplates;
                 toJson = ((i3 ^ com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + ((i3 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) << 1)) % 128;
-                z = e1Var.PngjExceptionInternal.contains(com.identy.e1.getPadSub2.AS);
+                z = e1Var.PngjExceptionInternal.contains(null);
             } else {
                 z = false;
             }
@@ -9102,7 +9102,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         values$1eba2e16[i5] = (String[]) objArr10[i5];
                         int i30 = ((Context) Class.forName("android.app.ActivityThread").getMethod("currentApplication", null).invoke(null, null)).getResources().getConfiguration().keyboardHidden;
                         int i31 = (((~((~i30) | (-321080323))) | (-1000861012)) * 564) + ((~(i30 | (-287375361))) * 1128) + (((((~((-713485652) | 0)) | (-321080323)) | (~(713485651 | i30))) * (-564)) - 987127863);
-                        int values3 = PngjBadCrcException.values.values();
+                        int values3 = 0;
                         int i32 = i31 * (-613);
                         int i33 = -(-(((~(~i31)) | values3) * 614));
                         int i34 = (i32 & i33) + (i32 | i33);
@@ -9119,7 +9119,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         int i45 = ~((i31 & i35) | (i35 ^ i31));
                         int i46 = -(-(((i44 & i45) | (i44 ^ i45)) * 614));
                         int i47 = (i41 & i46) + (i46 | i41);
-                        int values4 = PngjBadCrcException.values.values();
+                        int values4 = 0;
                         int i48 = i47 * 141;
                         int i49 = (i48 ^ 1554308854) + ((i48 & 1554308854) << 1);
                         int i50 = ~i47;
@@ -9635,7 +9635,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         LibSettings.isSaveCaptured();
                                         if (!IdentySdk.getInstance().y()) {
                                             System.identityHashCode(this);
-                                            PngjBadCrcException.values.values();
+                                            /* PngjBadCrcException.values.values(); */
                                             try {
                                                 Object[] objArr32 = {this, 1};
                                                 Object PngjBadSignature11 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-505834749);
@@ -10112,7 +10112,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                             throw new RuntimeException(cause6);
                         }
                         int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, 0);
-                        int values12 = PngjBadCrcException.values.values();
+                        int values12 = 0;
                         int i314 = makeMeasureSpec * (-949);
                         int i315 = ((i314 | (-949)) << 1) - (i314 ^ (-949));
                         int i316 = ~values12;
@@ -10129,7 +10129,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         e("덉滸댣숚\u175c篔ū丬〛䕟縼짇휶繍\uf361៤ꔞ갫Ⅳ旼", i325, objArr42);
                         Class<?> cls5 = Class.forName((String) objArr42[0]);
                         int i326 = -AndroidCharacter.getMirror(c);
-                        int values13 = PngjBadCrcException.values.values();
+                        int values13 = 0;
                         int i327 = (i326 * (-391)) - 9555;
                         int i328 = ~((-50) | i326);
                         int i329 = ~((values13 & 49) | (values13 ^ 49));
@@ -10167,7 +10167,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (PngjBadSignature18 == null) {
                 PngjBadSignature18 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (Process.getElapsedCpuTime() > 0L ? 1 : (Process.getElapsedCpuTime() == 0L ? 0 : -1))), 24 - TextUtils.getTrimmedLength(BuildConfig.FLAVOR), 697 - View.getDefaultSize(0, 0), 1457201313, false, null, new Class[]{cls});
             }
-            values$1eba2e16 = PngjInputException.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature18).newInstance(objArr45), -1154446754);
+            values$1eba2e16 = org.cameracontroller.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature18).newInstance(objArr45), -1154446754);
             Object PngjBadSignature19 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature19 == null) {
                 char keyCodeFromString3 = (char) (14830 - KeyEvent.keyCodeFromString(BuildConfig.FLAVOR));
@@ -10244,14 +10244,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             try {
                 org.camera.preview.PngjBadCrcException pngjBadCrcException = this.Action;
                 if (pngjBadCrcException != null) {
-                    if (pngjBadCrcException.getScore == org.camera.preview.PngjBadCrcException.getPadSub2.CAMERAOPENSTATE_CLOSING) {
+                    if (pngjBadCrcException.getScore == 0) {
                         int i3 = setFoundMatchingTemplates;
                         int i4 = (((i3 | 89) << 1) - (i3 ^ 89)) % 128;
                         toJson = i4;
                         org.camera.preview.PngjBadCrcException.getQualityScore getqualityscore = pngjBadCrcException.getNfiq1Score;
                         if (getqualityscore != null) {
                             try {
-                                getqualityscore.get(3000L, TimeUnit.MILLISECONDS);
+                                /* getqualityscore.get(3000L, TimeUnit.MILLISECONDS); */
                             } catch (InterruptedException | ExecutionException | TimeoutException unused) {
                                 int i5 = toJson;
                                 setFoundMatchingTemplates = ((i5 ^ com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + ((i5 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) << 1)) % 128;
@@ -10924,7 +10924,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         }
         boolean equals = e1Var2.a.equals(Hand.LEFT);
         CapturePosition capturePosition = fingerActivity.onErrorResponse.cvtyuv2bgr;
-        CapturePosition capturePosition2 = CapturePosition.VERTICAL_FROM_TOP;
+        CapturePosition capturePosition2 = com.identy.CapturePosition.VERTICAL_FROM_TOP;
         boolean z2 = equals;
         if (capturePosition.equals(capturePosition2)) {
             z2 = ((~(equals ? 1 : 0)) & 1) != 0;
@@ -10955,7 +10955,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     findViewById.setRotation(-90.0f);
                 }
                 findViewById.setScaleY(-1.0f);
-            } else if (fingerActivity.onErrorResponse.cvtyuv2bgr.equals(CapturePosition.VERTICAL_FROM_BOTTOM)) {
+            } else if (fingerActivity.onErrorResponse.cvtyuv2bgr.equals(com.identy.CapturePosition.VERTICAL_FROM_BOTTOM)) {
                 int i14 = (setFoundMatchingTemplates + 95) % 128;
                 toJson = i14;
                 if (z2) {
@@ -11523,7 +11523,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         contains = IdentySdk.getInstance().PngjPrematureEnding.contains(hand);
                     }
                 }
-                Intent intent = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, 0, IdentySdk.getInstance().isRolledfp()));
+                Intent intent = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, null, IdentySdk.getInstance().isRolledfp()));
                 intent.putExtra("type", getIntent().getStringExtra("type"));
                 intent.putExtra("option_selected", (Serializable) 0);
                 intent.putExtra("options", getIntent().getSerializableExtra("options"));
@@ -11538,7 +11538,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             toJson = i152;
             if (z) {
             }
-            Intent intent2 = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, 0, IdentySdk.getInstance().isRolledfp()));
+            Intent intent2 = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, null, IdentySdk.getInstance().isRolledfp()));
             intent2.putExtra("type", getIntent().getStringExtra("type"));
             intent2.putExtra("option_selected", (Serializable) 0);
             intent2.putExtra("options", getIntent().getSerializableExtra("options"));
