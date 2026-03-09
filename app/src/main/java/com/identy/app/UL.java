@@ -45,11 +45,11 @@ public class UL {
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                        int b = a.b(1033034110);
+                        int b = defpackage.a.b(1033034110);
                         int i = ~b;
                         int i2 = (~((-490727814) | i)) | 3967104;
                         int i3 = ~(b | 494922175);
-                        int c = a.c(i3 | (~(i | (-486760710))), 252, ((i2 | i3) * (-252)) + 1498599487, 682253692);
+                        int c = defpackage.a.c(i3 | (~(i | (-486760710))), 252, ((i2 | i3) * (-252)) + 1498599487, 682253692);
                         int i4 = c ^ (c << 13);
                         int i5 = i4 ^ (i4 >>> 17);
                         ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -179,7 +179,7 @@ public class UL {
                         int i = ~(402260972 | elapsedCpuTime);
                         int i2 = ~elapsedCpuTime;
                         int i3 = i | (~(901150252 | i2));
-                        int c = a.c(363987500 | (~((-402260973) | i2)), 516, (((~(elapsedCpuTime | (-537162753))) | (~(i2 | (-363987501)))) * 516) + (((i3 | 0) * (-516)) - 2046404645), -1357218802);
+                        int c = defpackage.a.c(363987500 | (~((-402260973) | i2)), 516, (((~(elapsedCpuTime | (-537162753))) | (~(i2 | (-363987501)))) * 516) + (((i3 | 0) * (-516)) - 2046404645), -1357218802);
                         int i4 = c ^ (c << 13);
                         int i5 = i4 ^ (i4 >>> 17);
                         ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -218,7 +218,7 @@ public class UL {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~((int) Process.getStartElapsedRealtime());
-                    int c = a.c((~(i | 996495080)) | 651006528, 184, ((1072553704 | i) * 184) + 972772599, -37058986);
+                    int c = defpackage.a.c((~(i | 996495080)) | 651006528, 184, ((1072553704 | i) * 184) + 972772599, -37058986);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -264,7 +264,7 @@ public class UL {
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~(System.identityHashCode(this) | (-58965629))) | 25365564, 490, (((-33600065) | (~0)) * (-490)) - 1810240475, 333024711);
+                    int c = defpackage.a.c((~(System.identityHashCode(this) | (-58965629))) | 25365564, 490, (((-33600065) | (~0)) * (-490)) - 1810240475, 333024711);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

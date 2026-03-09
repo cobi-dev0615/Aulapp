@@ -108,9 +108,10 @@ public class RollS3Meta {
         byte[] bArr = $$a;
         byte[] bArr2 = new byte[32 - i];
         int i5 = 31 - i;
+        int i7 = 0;
         if (bArr == null) {
             int i6 = i5;
-            int i7 = 0;
+            i7 = 0;
             i4++;
             i3 = (i3 + (-i6)) - 8;
             i2 = i7;

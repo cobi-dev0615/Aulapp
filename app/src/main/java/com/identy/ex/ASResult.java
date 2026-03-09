@@ -472,6 +472,7 @@ public class ASResult {
             Fpnative.valueOf = objArr;
             if (LibSettings.isSaveCaptured()) {
             }
+            return new JSONObject();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
