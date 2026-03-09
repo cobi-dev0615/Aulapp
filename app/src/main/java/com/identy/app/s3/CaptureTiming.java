@@ -24,8 +24,8 @@ public class CaptureTiming extends HashMap<String, Long> {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int a = a.a();
-                    int c = a.c((~(a | (-347706556))) | (~((~a) | 151182724)), 333, (((~((-347706556) | 0)) | (~(a | 151182724))) * 333) - 519036671, 2044863978);
+                    int a = defpackage.a.a();
+                    int c = defpackage.a.c((~(a | (-347706556))) | (~((~a) | 151182724)), 333, (((~((-347706556) | 0)) | (~(a | 151182724))) * 333) - 519036671, 2044863978);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -120,7 +120,7 @@ public class CaptureTiming extends HashMap<String, Long> {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~((~identityHashCode) | 173913882)) | 285345829, 191, (((~(identityHashCode | 173913882)) | 324975397) * 191) + 1710911177, 1115072439);
+                    int c = defpackage.a.c((~((~identityHashCode) | 173913882)) | 285345829, 191, (((~(identityHashCode | 173913882)) | 324975397) * 191) + 1710911177, 1115072439);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -163,7 +163,7 @@ public class CaptureTiming extends HashMap<String, Long> {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | 611022683)) | (-112133404), 272, (((~((-611022684) | identityHashCode)) | 69928219) * (-272)) + ((((~((-541094465) | (~identityHashCode))) | (~((-42205185) | identityHashCode))) * (-272)) - 371150673), -329185572);
+                    int c = defpackage.a.c((~(identityHashCode | 611022683)) | (-112133404), 272, (((~((-611022684) | identityHashCode)) | 69928219) * (-272)) + ((((~((-541094465) | (~identityHashCode))) | (~((-42205185) | identityHashCode))) * (-272)) - 371150673), -329185572);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -205,7 +205,7 @@ public class CaptureTiming extends HashMap<String, Long> {
                     int identityHashCode = System.identityHashCode(this);
                     int i = ~identityHashCode;
                     int i2 = (~((-233075419) | i)) | 2097306;
-                    int c = a.c(~(i | (-265813862)), 713, ((~(identityHashCode | (-34835750))) * 1426) + (((i2 | 0) * (-713)) - 1368784100), -935451220);
+                    int c = defpackage.a.c(~(i | (-265813862)), 713, ((~(identityHashCode | (-34835750))) * 1426) + (((i2 | 0) * (-713)) - 1368784100), -935451220);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);

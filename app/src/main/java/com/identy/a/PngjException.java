@@ -7,7 +7,7 @@ import com.identy.enums.valueOf;
 public final class PngjException {
     public static int PngjBadCrcException;
     public static int values;
-    public final valueOf valueOf;
+    public valueOf valueOf;
 
     public static int values() {
         int i = values;

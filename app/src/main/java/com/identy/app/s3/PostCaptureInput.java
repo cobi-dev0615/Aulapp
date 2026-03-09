@@ -31,7 +31,7 @@ public class PostCaptureInput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~((~((int) SystemClock.uptimeMillis())) | (-474015821));
-                    int c = a.c(i | 566039168, 970, (((-1040054989) | i) * (-970)) + 1660685437, 1494832134);
+                    int c = defpackage.a.c(i | 566039168, 970, (((-1040054989) | i) * (-970)) + 1660685437, 1494832134);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -140,7 +140,7 @@ public class PostCaptureInput {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
-                    int c = a.c((~(startElapsedRealtime | (-134883591))) | 305152185, 446, (((~((~startElapsedRealtime) | (-164310343))) | 29426752) * 446) + 1332570237, 857413437);
+                    int c = defpackage.a.c((~(startElapsedRealtime | (-134883591))) | 305152185, 446, (((~((~startElapsedRealtime) | (-164310343))) | 29426752) * 446) + 1332570237, 857413437);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

@@ -34,7 +34,7 @@ public class FingerAccessInfo {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startUptimeMillis = (int) Process.getStartUptimeMillis();
                     int i = ~(563294994 | startUptimeMillis);
-                    int c = a.c((~(startUptimeMillis | (-64405715))) | (~((-563294995) | startUptimeMillis)) | 26345490, 407, ((i | (~((~startUptimeMillis) | 64405714)) | 26345490) * 407) + (((-601355219) | i) * (-814)) + 1094942606, 1720707152);
+                    int c = defpackage.a.c((~(startUptimeMillis | (-64405715))) | (~((-563294995) | startUptimeMillis)) | 26345490, 407, ((i | (~((~startUptimeMillis) | 64405714)) | 26345490) * 407) + (((-601355219) | i) * (-814)) + 1094942606, 1720707152);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -133,7 +133,7 @@ public class FingerAccessInfo {
                     int i = ((identityHashCode | 82335743) * (-50)) + 967868813;
                     int i2 = ~((-12587585) | identityHashCode);
                     int i3 = ~identityHashCode;
-                    int c = a.c((~(i3 | 82335743)) | (~((-416553537) | i3)) | 403965952, 50, ((i2 | (~((-403965953) | i3))) * 50) + i, -125450471);
+                    int c = defpackage.a.c((~(i3 | 82335743)) | (~((-416553537) | i3)) | 403965952, 50, ((i2 | (~((-403965953) | i3))) * 50) + i, -125450471);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -209,7 +209,7 @@ public class FingerAccessInfo {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~System.identityHashCode(this);
-                    int c = a.c((~(i | 1033454261)) | 574984896, 184, ((1071502069 | i) * 184) + 2075850999, 681847724);
+                    int c = defpackage.a.c((~(i | 1033454261)) | 574984896, 184, ((1071502069 | i) * 184) + 2075850999, 681847724);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);

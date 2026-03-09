@@ -39,7 +39,7 @@ public class RollS3Meta {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myPid = Process.myPid();
                     int i5 = ~myPid;
-                    int c = a.c((~(myPid | (-171827975))) | (-327061306) | (~(i5 | 171827974)), 45, (((~((-327061306) | myPid)) | (-461369152)) * (-45)) + (((~((-327061306) | i5)) | 171827974) * (-90)) + 1474070354, -1812854176);
+                    int c = defpackage.a.c((~(myPid | (-171827975))) | (-327061306) | (~(i5 | 171827974)), 45, (((~((-327061306) | myPid)) | (-461369152)) * (-45)) + (((~((-327061306) | i5)) | 171827974) * (-90)) + 1474070354, -1812854176);
                     int i6 = c ^ (c << 13);
                     int i7 = i6 ^ (i6 >>> 17);
                     ((int[]) objArr[1])[0] = i7 ^ (i7 << 5);
@@ -149,7 +149,7 @@ public class RollS3Meta {
                     j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                        int c = a.c((~(System.identityHashCode(this) | 771521474)) | 272632194, 529, (((~((~0) | 771521474)) | 268435456) * 529) - 1876653424, 335340166);
+                        int c = defpackage.a.c((~(System.identityHashCode(this) | 771521474)) | 272632194, 529, (((~((~0) | 771521474)) | 268435456) * 529) - 1876653424, 335340166);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

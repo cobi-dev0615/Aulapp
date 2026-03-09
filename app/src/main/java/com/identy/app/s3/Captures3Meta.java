@@ -38,7 +38,7 @@ public class Captures3Meta {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = a.c((~(elapsedCpuTime | 788398050)) | (~((~elapsedCpuTime) | (-750349795))) | 213412258, 168, ((~((-536937537) | elapsedCpuTime)) * 168) + ((((~(251460514 | 0)) | 536937536) * 168) - 1710130969), 2043399137);
+                    int c = defpackage.a.c((~(elapsedCpuTime | 788398050)) | (~((~elapsedCpuTime) | (-750349795))) | 213412258, 168, ((~((-536937537) | elapsedCpuTime)) * 168) + ((((~(251460514 | 0)) | 536937536) * 168) - 1710130969), 2043399137);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -142,7 +142,7 @@ public class Captures3Meta {
                     j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                     if (j2 > j) {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                        int c = a.c(~(System.identityHashCode(this) | (-136858633)), -1504, (((~((-136990281) | 0)) | 131648) * 1504) - 1003693777, -2129266090);
+                        int c = defpackage.a.c(~(System.identityHashCode(this) | (-136858633)), -1504, (((~((-136990281) | 0)) | 131648) * 1504) - 1003693777, -2129266090);
                         int i = c ^ (c << 13);
                         int i2 = i ^ (i >>> 17);
                         ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

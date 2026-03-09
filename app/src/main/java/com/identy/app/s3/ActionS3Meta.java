@@ -44,7 +44,7 @@ public class ActionS3Meta {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[]{0 ^ (0 << 5)}};
-                    int c = a.c((~((~i) | 595891346)) | 570725504, 374, ((25165842 | 0) * (-374)) - 1676961397, 988157494);
+                    int c = defpackage.a.c((~((~i) | 595891346)) | 570725504, 374, ((25165842 | 0) * (-374)) - 1676961397, 988157494);
                     int i7 = c ^ (c << 13);
                     int i8 = i7 ^ (i7 >>> 17);
                     ((long[]) objArr[0])[0] = j + 4879;
@@ -152,7 +152,7 @@ public class ActionS3Meta {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int identityHashCode = System.identityHashCode(this);
                         int i = ~identityHashCode;
-                        int c = a.c(identityHashCode | (-780009471), 54, (((~(i | 708177726)) | (~((-708177727) | identityHashCode)) | (-780009471)) * 54) + (((~((-209288447) | i)) | 137456702) * (-108)) + 1214096615, 814830826);
+                        int c = defpackage.a.c(identityHashCode | (-780009471), 54, (((~(i | 708177726)) | (~((-708177727) | identityHashCode)) | (-780009471)) * 54) + (((~((-209288447) | i)) | 137456702) * (-108)) + 1214096615, 814830826);
                         int i2 = c ^ (c << 13);
                         int i3 = i2 ^ (i2 >>> 17);
                         ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);

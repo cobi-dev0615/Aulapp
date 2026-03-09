@@ -39,7 +39,7 @@ public class FrameS3Meta {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedRealtime = (int) SystemClock.elapsedRealtime();
-                    int c = a.c((~(elapsedRealtime | (-429419532))) | (~((~elapsedRealtime) | (-69403061))), 210, (((~((-429452876) | 0)) | (~((-69436405) | elapsedRealtime))) * 210) - 1181641967, -2068133335);
+                    int c = defpackage.a.c((~(elapsedRealtime | (-429419532))) | (~((~elapsedRealtime) | (-69403061))), 210, (((~((-429452876) | 0)) | (~((-69436405) | elapsedRealtime))) * 210) - 1181641967, -2068133335);
                     int i5 = c ^ (c << 13);
                     int i6 = i5 ^ (i5 >>> 17);
                     ((int[]) objArr[1])[0] = i6 ^ (i6 << 5);
@@ -170,7 +170,7 @@ public class FrameS3Meta {
                         objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                         int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                         int i = ~startElapsedRealtime;
-                        int c = a.c((~(startElapsedRealtime | (-280051744))) | (~(313639007 | i)) | 151663008, 140, (((~(185250272 | i)) | 280051743) * (-280)) + ((startElapsedRealtime | 185250272) * 140) + 1128208691, -496217158);
+                        int c = defpackage.a.c((~(startElapsedRealtime | (-280051744))) | (~(313639007 | i)) | 151663008, 140, (((~(185250272 | i)) | 280051743) * (-280)) + ((startElapsedRealtime | 185250272) * 140) + 1128208691, -496217158);
                         int i2 = c ^ (c << 13);
                         int i3 = i2 ^ (i2 >>> 17);
                         ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);

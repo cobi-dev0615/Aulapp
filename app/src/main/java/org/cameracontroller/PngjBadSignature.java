@@ -4,8 +4,13 @@ public class PngjBadSignature {
     public int getData;
 
     public static class PngjExceptionInternal {
+        public int values;
+        public int PngjBadCrcException;
         public PngjExceptionInternal() {}
-        public PngjExceptionInternal(int a, int b) {}
+        public PngjExceptionInternal(int a, int b) {
+            this.values = a;
+            this.PngjBadCrcException = b;
+        }
     }
 
     public interface values {
