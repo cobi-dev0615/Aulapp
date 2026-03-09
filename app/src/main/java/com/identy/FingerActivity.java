@@ -101,6 +101,8 @@ import org.identy.nativealgo.NativeAlgoUtils;
 
 /* loaded from: classes2.dex */
 public class FingerActivity extends Activity implements Camera.PreviewCallback, ImageReader.OnImageAvailableListener, com.identy.d.PngjBadSignature, com.identy.d.valueOf {
+    private static  byte[] $$a = null;
+    private static  int $$b = 0;
     private static  byte[] $$d = null;
     private static  int $$e = 0;
     private static  byte[] $$g = null;
@@ -6022,9 +6024,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             byte[] bArr = $$d;
             byte[] bArr2 = new byte[16 - i4];
             int i6 = 15 - i4;
+            int i7 = 0;
             if (bArr == null) {
                 byte[] bArr3 = bArr;
-                int i7 = 0;
+                i7 = 0;
                 int i8 = i5;
                 i3 = (i3 + i5) - 5;
                 i5 = i8;
@@ -7001,7 +7004,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (e1Var.PngjExceptionInternal.size() > 0) {
                 int i3 = setFoundMatchingTemplates;
                 toJson = ((i3 ^ com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + ((i3 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) << 1)) % 128;
-                z = e1Var.PngjExceptionInternal.contains(e1.getPadSub2.AS);
+                z = e1Var.PngjExceptionInternal.contains(com.identy.e1.getPadSub2.AS);
             } else {
                 z = false;
             }
@@ -7339,7 +7342,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             case 2:
                 FingerActivity fingerActivity = (FingerActivity) objArr[0];
                 toJson = (setFoundMatchingTemplates + 89) % 128;
-                super.onBackPressed();
+                fingerActivity.onBackPressed();
                 int i25 = setFoundMatchingTemplates;
                 toJson = ((i25 & 55) + (i25 | 55)) % 128;
                 return null;
@@ -8099,7 +8102,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         int i = toJson + 61;
         setFoundMatchingTemplates = i % 128;
         int i2 = i % 2;
-        super.onBackPressed();
+        fingerActivity.onBackPressed();
         if (i2 == 0) {
             throw null;
         }
@@ -8130,7 +8133,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         FingerActivity fingerActivity = (FingerActivity) objArr[0];
         int i = setFoundMatchingTemplates;
         toJson = ((i & 101) + (i | 101)) % 128;
-        super.onBackPressed();
+        fingerActivity.onBackPressed();
         int i2 = toJson + 75;
         setFoundMatchingTemplates = i2 % 128;
         if (i2 % 2 != 0) {
@@ -8768,7 +8771,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         byte[] bArr;
         Class cls = Integer.TYPE;
         int i12 = -(ViewConfiguration.getKeyRepeatTimeout() >> 16);
-        int values2 = PngjBadCrcException.values.values();
+        int values2 = 0;
         int i13 = i12 * (-432);
         int i14 = (i13 & 434) + (i13 | 434);
         int i15 = ~i12;
@@ -9695,7 +9698,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                             Object[] objArr37 = new Object[1];
                                                             f(b23, b24, (byte) (b24 - 1), objArr37);
                                                             PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature(myTid4, normalizeMetaState, normalizeMetaState2, 1560737410, false, (String) objArr37[0], new Class[]{Context.class, cls, getPadSub3B15685$PngjException.class});
-                                                            z = normalizeMetaState2;
+                                                            z = false;
                                                         }
                                                         ((Method) PngjBadSignature13).invoke(null, objArr36);
                                                         z2 = false;
@@ -9751,8 +9754,6 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                 }
                                                 throw new RuntimeException(cause4);
                                             }
-                                            e6.printStackTrace();
-                                            z2 = z;
                                         }
                                         if (IdentySdk.getInstance().getLocale() != null) {
                                             int i297 = toJson + 33;
@@ -9933,7 +9934,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                         LibSettings.isSaveCaptured();
                                         return;
                                     }
-                                    Object[] objArr222 = {baseContext, Integer.valueOf(((Integer) cls3.getMethod((String) objArr21[0], Object.class).invoke(null, this)).intValue()), 0, -766679971};
+                                    Object[] objArr222 = {baseContext, Integer.valueOf(0), 0, -766679971};
                                     byte[] bArr42 = $$g;
                                     byte b72 = bArr42[19];
                                     byte b82 = b72;
@@ -10243,11 +10244,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             try {
                 org.camera.preview.PngjBadCrcException pngjBadCrcException = this.Action;
                 if (pngjBadCrcException != null) {
-                    if (pngjBadCrcException.getScore == PngjBadCrcException.getPadSub2.CAMERAOPENSTATE_CLOSING) {
+                    if (pngjBadCrcException.getScore == org.camera.preview.PngjBadCrcException.getPadSub2.CAMERAOPENSTATE_CLOSING) {
                         int i3 = setFoundMatchingTemplates;
                         int i4 = (((i3 | 89) << 1) - (i3 ^ 89)) % 128;
                         toJson = i4;
-                        PngjBadCrcException.getQualityScore getqualityscore = pngjBadCrcException.getNfiq1Score;
+                        org.camera.preview.PngjBadCrcException.getQualityScore getqualityscore = pngjBadCrcException.getNfiq1Score;
                         if (getqualityscore != null) {
                             try {
                                 getqualityscore.get(3000L, TimeUnit.MILLISECONDS);
@@ -10638,11 +10639,11 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             com.identy.PngjException pngjException = this.PngBadCharsetException.valueOf;
             if (pngjException.valueOf) {
                 System.identityHashCode(this);
-                PngjBadCrcException.values.values();
+                /* PngjBadCrcException.values.values(); */
                 pngjException.valueOf = false;
                 pngjException.PngjException = 0L;
                 pngjException.PngjBadCrcException.unregisterListener(pngjException);
-                PngjBadCrcException.values.values();
+                /* PngjBadCrcException.values.values(); */
                 com.identy.a.PngjException.values();
             }
             this.Action.PngjException();
@@ -10654,7 +10655,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     public void onPreviewFrame(byte[] bArr, Camera camera) {
         boolean z;
         org.camera.preview.PngjBadCrcException pngjBadCrcException = this.Action;
-        PngjBadSignature.PngjExceptionInternal pngjExceptionInternal = new PngjBadSignature.PngjExceptionInternal(pngjBadCrcException.getFingerPrintQualityScore, pngjBadCrcException.getData);
+        org.cameracontroller.PngjBadSignature.PngjExceptionInternal pngjExceptionInternal = new org.cameracontroller.PngjBadSignature.PngjExceptionInternal(pngjBadCrcException.getFingerPrintQualityScore, pngjBadCrcException.getData);
         this.PngjOutputException = Long.valueOf(SystemClock.elapsedRealtimeNanos() - this.getOveralTimetaken.longValue());
         this.getOveralTimetaken = Long.valueOf(SystemClock.elapsedRealtimeNanos());
         this.DeduplicationIdentyResponse = new isQualityFailed(camera, bArr);
@@ -10926,7 +10927,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         CapturePosition capturePosition2 = CapturePosition.VERTICAL_FROM_TOP;
         boolean z2 = equals;
         if (capturePosition.equals(capturePosition2)) {
-            z2 = (~(equals ? 1 : 0)) & 1;
+            z2 = ((~(equals ? 1 : 0)) & 1) != 0;
         }
         if (z2) {
             findViewById = fingerActivity.findViewById(R.id.left_hand_icon);
@@ -11454,7 +11455,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     /* JADX WARN: Code restructure failed: missing block: B:37:0x0099, code lost:
     
-        if ($$a[0].getFinger().equals(com.identy.enums.Finger.THUMB) != false) goto L16;
+        if (i0[0].getFinger().equals(com.identy.enums.Finger.THUMB) != false) goto L16;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:15:0x00a6  */
@@ -11486,24 +11487,24 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             int i11 = ~(i5 | 1);
             this.CaptureThumbActivity = (((i8 - (~(-(-(((i10 & i11) | (i10 ^ i11)) * 933))))) - 1) - (~(-(-((~((i2 & 1) | (i2 ^ 1))) * 933))))) - 1;
             FingerDetectionMode[] fingerDetectionModeArr = this.CapturePosition;
-            int i0 = (FingerDetectionMode[]) Arrays.copyOfRange(fingerDetectionModeArr, 1, fingerDetectionModeArr.length);
+            FingerDetectionMode[] i0 = (FingerDetectionMode[]) Arrays.copyOfRange(fingerDetectionModeArr, 1, fingerDetectionModeArr.length);
             try {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            if ($$a[0].getFinger() != null) {
+            if (i0[0].getFinger() != null) {
                 int i12 = setFoundMatchingTemplates + 41;
                 toJson = i12 % 128;
                 if (i12 % 2 != 0) {
-                    if ($$a[1].getFinger().equals(Finger.THUMB)) {
+                    if (i0[1].getFinger().equals(Finger.THUMB)) {
                         z = true;
                     }
                 }
-                if ($$a[0].getHand() != null) {
+                if (i0[0].getHand() != null) {
                     toJson = (setFoundMatchingTemplates + 45) % 128;
                     hand = Hand.LEFT;
                 } else {
-                    hand = $$a[0].getHand();
+                    hand = i0[0].getHand();
                     int i13 = toJson;
                     setFoundMatchingTemplates = ((i13 & 33) + (i13 | 33)) % 128;
                 }
@@ -11530,7 +11531,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 return true;
             }
             z = false;
-            if ($$a[0].getHand() != null) {
+            if (i0[0].getHand() != null) {
             }
             int i142 = setFoundMatchingTemplates;
             int i152 = ((i142 ^ 67) + ((i142 & 67) << 1)) % 128;
@@ -11818,14 +11819,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
     public final void PngjBadSignature() {
         setFoundMatchingTemplates = (toJson + 101) % 128;
-        if (com.identy.e1.valueOf.equals(PngjBadCrcException.PngjBadSignature.HIGH)) {
+        if (com.identy.e1.valueOf.equals(org.camera.preview.PngjBadCrcException.PngjBadSignature.HIGH)) {
             int i = toJson;
             setFoundMatchingTemplates = ((i ^ 73) + ((i & 73) << 1)) % 128;
-            com.identy.e1.valueOf = PngjBadCrcException.PngjBadSignature.MEDIUM;
-        } else if (!(!com.identy.e1.valueOf.equals(PngjBadCrcException.PngjBadSignature.MEDIUM))) {
+            com.identy.e1.valueOf = org.camera.preview.PngjBadCrcException.PngjBadSignature.MEDIUM;
+        } else if (!(!com.identy.e1.valueOf.equals(org.camera.preview.PngjBadCrcException.PngjBadSignature.MEDIUM))) {
             int i2 = setFoundMatchingTemplates;
             toJson = ((i2 ^ 65) + ((i2 & 65) << 1)) % 128;
-            com.identy.e1.valueOf = PngjBadCrcException.PngjBadSignature.LOW;
+            com.identy.e1.valueOf = org.camera.preview.PngjBadCrcException.PngjBadSignature.LOW;
         }
         try {
             IdentySdk.getInstance().F();
