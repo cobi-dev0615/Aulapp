@@ -152,46 +152,6 @@ public class CaptureTiming extends HashMap<String, Long> {
     }
 
     @Override // java.util.HashMap, java.util.AbstractMap, java.util.Map
-    public /* synthetic */ Object put(Object obj, Object obj2) {
-        Object[] objArr;
-        long j;
-        Object[] objArr2 = Fpnative.valueOf;
-        try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int identityHashCode = System.identityHashCode(this);
-                    int c = defpackage.a.c((~(identityHashCode | 611022683)) | (-112133404), 272, (((~((-611022684) | identityHashCode)) | 69928219) * (-272)) + ((((~((-541094465) | (~identityHashCode))) | (~((-42205185) | identityHashCode))) * (-272)) - 371150673), -329185572);
-                    int i = c ^ (c << 13);
-                    int i2 = i ^ (i >>> 17);
-                    ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    ((long[]) objArr[0])[0] = j + 5000;
-                    Fpnative.valueOf = objArr;
-                    return put((String) obj, (Long) obj2);
-                }
-            }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            b((byte) 125, (byte) (-bArr[62]), (byte) (-bArr[113]), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            b((byte) 94, bArr[63], bArr[25], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, -329185572);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 5000;
-            Fpnative.valueOf = objArr;
-            return put((String) obj, (Long) obj2);
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause != null) {
-                throw new RuntimeException(cause);
-            }
-            throw new RuntimeException(th);
-        }
-    }
-
     public Long put(String str, Long l) {
         Object[] objArr;
         long j;
@@ -211,7 +171,7 @@ public class CaptureTiming extends HashMap<String, Long> {
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
                     ((long[]) objArr[0])[0] = j + 4867;
                     Fpnative.valueOf = objArr;
-                    return (Long) super.put((CaptureTiming) str, (String) Long.valueOf(Calendar.getInstance().getTimeInMillis() - l.longValue()));
+                    return (Long) super.put(str, Long.valueOf(Calendar.getInstance().getTimeInMillis() - l.longValue()));
                 }
             }
             byte[] bArr = $$a;
@@ -224,7 +184,7 @@ public class CaptureTiming extends HashMap<String, Long> {
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4867;
             Fpnative.valueOf = objArr;
-            return (Long) super.put((CaptureTiming) str, (String) Long.valueOf(Calendar.getInstance().getTimeInMillis() - l.longValue()));
+            return (Long) super.put(str, Long.valueOf(Calendar.getInstance().getTimeInMillis() - l.longValue()));
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

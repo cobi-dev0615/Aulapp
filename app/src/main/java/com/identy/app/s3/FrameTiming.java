@@ -150,47 +150,6 @@ public class FrameTiming extends HashMap<String, Long> {
     }
 
     @Override // java.util.HashMap, java.util.AbstractMap, java.util.Map
-    public /* synthetic */ Object put(Object obj, Object obj2) {
-        Object[] objArr;
-        long j;
-        Object[] objArr2 = Fpnative.valueOf;
-        try {
-            if (objArr2 != null) {
-                long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
-                if (j2 > j) {
-                    objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int elapsedCpuTime = (int) Process.getElapsedCpuTime();
-                    int c = a.c((~(elapsedCpuTime | 443235899)) | 38276608, 49, (((~((~elapsedCpuTime) | (-942125180))) | 443235899 | (~(942125179 | elapsedCpuTime))) * (-49)) + ((((~(443235899 | 0)) | (-980401788)) * 98) - 94171966), 1313004950);
-                    int i = c ^ (c << 13);
-                    int i2 = i ^ (i >>> 17);
-                    ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
-                    ((long[]) objArr[0])[0] = j + 4964;
-                    Fpnative.valueOf = objArr;
-                    return put((String) obj, (Long) obj2);
-                }
-            }
-            byte[] bArr = $$a;
-            Object[] objArr3 = new Object[1];
-            b(bArr[72], (byte) 122, bArr[16], objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            byte b = (byte) (bArr[82] + 1);
-            Object[] objArr4 = new Object[1];
-            b(b, (byte) (b | 66), bArr[42], objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 1313004950);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4964;
-            Fpnative.valueOf = objArr;
-            return put((String) obj, (Long) obj2);
-        } catch (Throwable th) {
-            Throwable cause = th.getCause();
-            if (cause != null) {
-                throw new RuntimeException(cause);
-            }
-            throw new RuntimeException(th);
-        }
-    }
-
     public Long put(String str, Long l) {
         Object[] objArr;
         long j;
@@ -207,7 +166,7 @@ public class FrameTiming extends HashMap<String, Long> {
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
                     ((long[]) objArr[0])[0] = j + 4871;
                     Fpnative.valueOf = objArr;
-                    return (Long) super.put((FrameTiming) str, (String) Long.valueOf(Calendar.getInstance().getTimeInMillis() - l.longValue()));
+                    return (Long) super.put(str, Long.valueOf(Calendar.getInstance().getTimeInMillis() - l.longValue()));
                 }
             }
             byte[] bArr = $$a;
@@ -221,7 +180,7 @@ public class FrameTiming extends HashMap<String, Long> {
             j = ((long[]) objArr[0])[0];
             ((long[]) objArr[0])[0] = j + 4871;
             Fpnative.valueOf = objArr;
-            return (Long) super.put((FrameTiming) str, (String) Long.valueOf(Calendar.getInstance().getTimeInMillis() - l.longValue()));
+            return (Long) super.put(str, Long.valueOf(Calendar.getInstance().getTimeInMillis() - l.longValue()));
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

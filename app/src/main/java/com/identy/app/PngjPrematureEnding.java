@@ -226,7 +226,11 @@ public final class PngjPrematureEnding implements PngjUnsupportedException {
                 byte b2 = (byte) (b + 1);
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0') + 8057), (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1)) + 31, 665 - View.getDefaultSize(0, 0), -199907679, false, $$c(b, b2, b2), new Class[]{Object.class, Object.class});
             }
-            ((Method) PngjBadSignature4).invoke(null, objArr4);
+            try {
+                ((Method) PngjBadSignature4).invoke(null, objArr4);
+            } catch (IllegalAccessException | java.lang.reflect.InvocationTargetException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 

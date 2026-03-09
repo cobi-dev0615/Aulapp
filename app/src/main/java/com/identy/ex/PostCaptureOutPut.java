@@ -121,7 +121,7 @@ public class PostCaptureOutPut {
             int i172 = i162 >> 19;
             int i182 = ((i172 ^ (-16383)) + ((i172 & (-16383)) << 1)) / ConstantsKt.DEFAULT_BUFFER_SIZE;
             int i192 = ((i182 | 1) << 1) - (i182 ^ 1);
-            this.capturertQualityPass = 13832 / (((-(((i192 | 1) << 1) - (i192 ^ 1))) & i162) * 1976);
+            this.capturertQualityPass = (13832 / (((-(((i192 | 1) << 1) - (i192 ^ 1))) & i162) * 1976)) != 0;
             this.rfQualityPass = true;
             this.framerfQualityPass = true;
             this.capturerfQualityPass = true;
@@ -739,7 +739,7 @@ public class PostCaptureOutPut {
                     int i19 = ((i18 | 6) << 1) - (i18 ^ 6);
                     int i20 = ((i19 >> 17) - 65535) / 32768;
                     int i21 = (i20 ^ 1) + ((i20 & 1) << 1);
-                    return 204 / (((-((i21 ^ 1) + ((i21 & 1) << 1))) & i19) * 34);
+                    return (204 / (((-((i21 ^ 1) + ((i21 & 1) << 1))) & i19) * 34)) != 0;
                 }
             }
             byte[] bArr = $$a;
