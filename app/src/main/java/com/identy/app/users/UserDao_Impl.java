@@ -20,9 +20,9 @@ import kotlin.io.ConstantsKt;
 public final class UserDao_Impl implements UserDao {
     private static final byte[] $$a = {73, -60, 64, 55, -25, -11, 50, -72, -8, -14, -22, -19, -18, 62, -38, -59, -1, -8, -14, 10, -46, 27, -59, -1, -8, -14, 16, -42, -20, -17, -2, -26, -43, -6, -16, 27, -44, -16, 4, -35, -11, -20, 0, -32, -14, -10, 0, -25, -11, 50, -72, -8, -14, -22, -19, -18, 62, -70, 44, -47, -43, -6, -16, 27, -44, -16, 20, -60, 2, 17, -64, 8, -15, -24, -17, -2, -19, -12, 8, -24, -22, 3, -27, -25, -11, 50, -72, -8, -14, -22, -19, -18, 62, -36, -54, -17, -10, -10, -13, 43, -31, -8, -47, -30, -2, -26, 0, -24, -18, 72, -57, -43, -6, -16, 27, -44, -16, 4, -35, -11, -20, 0, -32, -14, -10, 0, -43, -6, -16, 27, -44, -16, 20, -60, 2, 17, -64, 8, -15, -24, -17, -2, -19, -12};
     private static final int $$b = 188;
-    private final RoomDatabase a;
-    private final EntityInsertionAdapter b;
-    private final EntityDeletionOrUpdateAdapter c;
+    private RoomDatabase a;
+    private EntityInsertionAdapter b;
+    private EntityDeletionOrUpdateAdapter c;
 
     public class a extends EntityInsertionAdapter<IdentyUser> {
         public a(RoomDatabase roomDatabase) {
@@ -296,7 +296,6 @@ public final class UserDao_Impl implements UserDao {
             }
             throw new RuntimeException(th);
         }
-        return new ArrayList();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:13:0x015b A[Catch: all -> 0x0179, TRY_LEAVE, TryCatch #1 {all -> 0x0179, blocks: (B:11:0x013d, B:13:0x015b), top: B:10:0x013d }] */
@@ -378,7 +377,6 @@ public final class UserDao_Impl implements UserDao {
             }
             throw new RuntimeException(th);
         }
-        return null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:0x0158 A[Catch: all -> 0x0179, LOOP:0: B:9:0x0152->B:11:0x0158, LOOP_END, TRY_LEAVE, TryCatch #1 {all -> 0x0179, blocks: (B:8:0x0131, B:9:0x0152, B:11:0x0158), top: B:7:0x0131 }] */
@@ -457,7 +455,6 @@ public final class UserDao_Impl implements UserDao {
             }
             throw new RuntimeException(th);
         }
-        return new ArrayList();
     }
 
     @Override // com.identy.app.users.UserDao
@@ -596,6 +593,5 @@ public final class UserDao_Impl implements UserDao {
             }
             throw new RuntimeException(th);
         }
-        return new ArrayList();
     }
 }
