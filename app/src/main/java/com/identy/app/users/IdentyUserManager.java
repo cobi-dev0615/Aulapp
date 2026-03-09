@@ -29,7 +29,7 @@ public class IdentyUserManager {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~((int) SystemClock.uptimeMillis())) | (-3672210))) | 402800942, 521, ((~((-3672210) | 0)) * 521) - 820224888, -2122646827);
+                    int c = defpackage.a.c((~((~((int) SystemClock.uptimeMillis())) | (-3672210))) | 402800942, 521, ((~((-3672210) | 0)) * 521) - 820224888, -2122646827);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -146,7 +146,7 @@ public class IdentyUserManager {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int elapsedRealtime = (int) SystemClock.elapsedRealtime();
-                    int c = a.c((~((~elapsedRealtime) | 776444872)) | 2440, 449, (((~(776444872 | elapsedRealtime)) | 2440) * 449) + 1228095160, -1588616472);
+                    int c = defpackage.a.c((~((~elapsedRealtime) | 776444872)) | 2440, 449, (((~(776444872 | elapsedRealtime)) | 2440) * 449) + 1228095160, -1588616472);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -200,7 +200,7 @@ public class IdentyUserManager {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~((~identityHashCode) | (-135950387))) | 304152845, 449, (((~((-135950387) | identityHashCode)) | 304152845) * 449) + 1335360243, -1098774099);
+                    int c = defpackage.a.c((~((~identityHashCode) | (-135950387))) | 304152845, 449, (((~((-135950387) | identityHashCode)) | 304152845) * 449) + 1335360243, -1098774099);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -266,7 +266,7 @@ public class IdentyUserManager {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | 180317621)) | (~(318571658 | identityHashCode)) | (-452947392), -1444, (((~identityHashCode) | (-407005504)) * 1444) + 1078082705, 1546012503);
+                    int c = defpackage.a.c((~(identityHashCode | 180317621)) | (~(318571658 | identityHashCode)) | (-452947392), -1444, (((~identityHashCode) | (-407005504)) * 1444) + 1078082705, 1546012503);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -308,7 +308,7 @@ public class IdentyUserManager {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
-                    int c = a.c((~(identityHashCode | (-68177977))) | 405479431, 366, (((~((-80793913) | identityHashCode)) | 418095367) * (-366)) + 821354559, -1595304382);
+                    int c = defpackage.a.c((~(identityHashCode | (-68177977))) | 405479431, 366, (((~((-80793913) | identityHashCode)) | 418095367) * (-366)) + 821354559, -1595304382);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -348,7 +348,7 @@ public class IdentyUserManager {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int uptimeMillis = (int) SystemClock.uptimeMillis();
-                    int c = a.c((~(uptimeMillis | (-557611552))) | 58722271, 301, (((~(58722271 | uptimeMillis)) | (~((~uptimeMillis) | 557611551))) * (-301)) + (((~((-41944513) | uptimeMillis)) * (-301)) - 333997716), 270119193);
+                    int c = defpackage.a.c((~(uptimeMillis | (-557611552))) | 58722271, 301, (((~(58722271 | uptimeMillis)) | (~((~uptimeMillis) | 557611551))) * (-301)) + (((~((-41944513) | uptimeMillis)) * (-301)) - 333997716), 270119193);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -390,7 +390,7 @@ public class IdentyUserManager {
                     int myUid = Process.myUid();
                     int i = ~((-453482991) | myUid);
                     int i2 = ~myUid;
-                    int c = a.c((~(myUid | (-45406290))) | (~(453482990 | i2)), 406, ((~((-419627439) | i2)) * (-406)) + (((i | (~(465033727 | i2))) * (-406)) - 1325694659), 1718592650);
+                    int c = defpackage.a.c((~(myUid | (-45406290))) | (~(453482990 | i2)), 406, ((~((-419627439) | i2)) * (-406)) + (((i | (~(465033727 | i2))) * (-406)) - 1325694659), 1718592650);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);
@@ -459,11 +459,11 @@ public class IdentyUserManager {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int b2 = a.b(1394247915);
+                    int b2 = defpackage.a.b(1394247915);
                     int i = ~b2;
                     int i2 = (~((-935648689) | i)) | 633640064;
                     int i3 = ~(b2 | (-134750785));
-                    int c = a.c(i3 | (~(i | (-302008625))), 502, ((i2 | i3) * (-502)) + 758621503, 277684984);
+                    int c = defpackage.a.c(i3 | (~(i | (-302008625))), 502, ((i2 | i3) * (-502)) + 758621503, 277684984);
                     int i4 = c ^ (c << 13);
                     int i5 = i4 ^ (i4 >>> 17);
                     ((int[]) objArr[1])[0] = i5 ^ (i5 << 5);
@@ -535,7 +535,7 @@ public class IdentyUserManager {
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
-                    int c = a.c((~(startElapsedRealtime | (-552339777))) | (~((-1051229057) | startElapsedRealtime)) | 547883264, -69, (((~((-503345793) | startElapsedRealtime)) | (~((-4456513) | startElapsedRealtime))) * 69) - 524010940, 862066564);
+                    int c = defpackage.a.c((~(startElapsedRealtime | (-552339777))) | (~((-1051229057) | startElapsedRealtime)) | 547883264, -69, (((~((-503345793) | startElapsedRealtime)) | (~((-4456513) | startElapsedRealtime))) * 69) - 524010940, 862066564);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -581,7 +581,7 @@ public class IdentyUserManager {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int c = a.c((~((~((int) Runtime.getRuntime().freeMemory())) | 913571826)) | 271605810, 449, (((~(913571826 | 0)) | 271605810) * 449) - 713102322, 1871535459);
+                    int c = defpackage.a.c((~((~((int) Runtime.getRuntime().freeMemory())) | 913571826)) | 271605810, 449, (((~(913571826 | 0)) | 271605810) * 449) - 713102322, 1871535459);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

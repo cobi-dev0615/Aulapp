@@ -237,19 +237,6 @@ public class PreCaptureOutput {
                 e.printStackTrace();
                 return jSONObject;
             }
-            byte[] bArr = $$a;
-            byte b = bArr[63];
-            byte b2 = bArr[2];
-            Object[] objArr3 = new Object[1];
-            c(b, b2, (byte) (b2 | 88), objArr3);
-            Class<?> cls = Class.forName((String) objArr3[0]);
-            Object[] objArr4 = new Object[1];
-            c((byte) (-bArr[4]), bArr[25], (byte) (-bArr[117]), objArr4);
-            objArr = (Object[]) cls.getMethod((String) objArr4[0], Integer.TYPE).invoke(null, 353463146);
-            j = ((long[]) objArr[0])[0];
-            ((long[]) objArr[0])[0] = j + 4881;
-            Fpnative.valueOf = objArr;
-            jSONObject = new JSONObject();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {

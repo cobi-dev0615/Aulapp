@@ -36,7 +36,7 @@ public class PlayGifView extends View {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int startElapsedRealtime = (int) Process.getStartElapsedRealtime();
                     int i = ~startElapsedRealtime;
-                    int c = a.c((~(startElapsedRealtime | 498757631)) | (~((-159541227) | i)) | 131648, 676, (((~(339348053 | i)) | 159409578) * 676) + (((-159409579) | startElapsedRealtime) * (-676)) + 1789220043, -1379038954);
+                    int c = defpackage.a.c((~(startElapsedRealtime | 498757631)) | (~((-159541227) | i)) | 131648, 676, (((~(339348053 | i)) | 159409578) * 676) + (((-159409579) | startElapsedRealtime) * (-676)) + 1789220043, -1379038954);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -171,7 +171,7 @@ public class PlayGifView extends View {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int identityHashCode = System.identityHashCode(this);
                     int i = ~identityHashCode;
-                    int c = a.c(identityHashCode | (-776311489), 397, (((~(i | (-164945004))) | (~((-663834284) | i)) | 26233899) * (-397)) + 1281828411, 1410978615);
+                    int c = defpackage.a.c(identityHashCode | (-776311489), 397, (((~(i | (-164945004))) | (~((-663834284) | i)) | 26233899) * (-397)) + 1281828411, 1410978615);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -221,7 +221,7 @@ public class PlayGifView extends View {
                 if (j2 > j) {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i = ~System.identityHashCode(this);
-                    int c = a.c(i | 263975423, -828, (((~(i | 263975423)) | 234913856) * (-828)) + 1262351875, 378218866);
+                    int c = defpackage.a.c(i | 263975423, -828, (((~(i | 263975423)) | 234913856) * (-828)) + 1262351875, 378218866);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
@@ -284,7 +284,7 @@ public class PlayGifView extends View {
                 if (j2 > j) {
                     objArr = new java.lang.Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int i2 = ~System.identityHashCode(this);
-                    int c = a.c((~(i2 | (-295595750))) | 203293530, 160, (((~(i2 | 203293530)) | (-496922624)) * (-160)) + 133454335, 276330771);
+                    int c = defpackage.a.c((~(i2 | (-295595750))) | 203293530, 160, (((~(i2 | 203293530)) | (-496922624)) * (-160)) + 133454335, 276330771);
                     int i3 = c ^ (c << 13);
                     int i4 = i3 ^ (i3 >>> 17);
                     ((int[]) objArr[1])[0] = i4 ^ (i4 << 5);

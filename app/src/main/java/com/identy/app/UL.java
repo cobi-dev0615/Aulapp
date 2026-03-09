@@ -324,6 +324,7 @@ public class UL {
             if (str2 != null) {
                 if (!str.contains("15")) {
                 }
+                int i3 = !str.contains("15") ? 500292 : 1000292;
                 byte[] bArr42 = new byte[i3];
                 System.arraycopy(bArr2, 0, bArr42, 0, i3);
                 int length4 = bArr2.length - i3;
