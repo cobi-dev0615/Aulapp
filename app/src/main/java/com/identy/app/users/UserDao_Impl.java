@@ -202,10 +202,10 @@ public final class UserDao_Impl implements UserDao {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final List<IdentyUser> findByEmail(String str) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        RoomSQLiteQuery acquire;
-        Cursor query;
+        RoomSQLiteQuery acquire = null;
+        Cursor query = null;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             try {
@@ -306,10 +306,10 @@ public final class UserDao_Impl implements UserDao {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final IdentyUser findByName(String str) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        RoomSQLiteQuery acquire;
-        Cursor query;
+        RoomSQLiteQuery acquire = null;
+        Cursor query = null;
         Object[] objArr2 = Fpnative.valueOf;
         IdentyUser identyUser = null;
         try {
@@ -385,10 +385,10 @@ public final class UserDao_Impl implements UserDao {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final List<IdentyUser> getAll() {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        RoomSQLiteQuery acquire;
-        Cursor query;
+        RoomSQLiteQuery acquire = null;
+        Cursor query = null;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             try {
@@ -506,10 +506,10 @@ public final class UserDao_Impl implements UserDao {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final List<IdentyUser> loadAllByIds(int[] iArr) {
-        Object[] objArr;
+        Object[] objArr = null;
         long j;
-        RoomSQLiteQuery acquire;
-        Cursor query;
+        RoomSQLiteQuery acquire = null;
+        Cursor query = null;
         Object[] objArr2 = Fpnative.valueOf;
         try {
             try {
