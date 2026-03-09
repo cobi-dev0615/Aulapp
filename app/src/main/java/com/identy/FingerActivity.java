@@ -1469,15 +1469,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                     throw new RuntimeException(th2);
                                                                 }
                                                             } catch (Throwable th3) {
-                                                                th = th3;
-                                                                Throwable cause3 = th.getCause();
+                                                                Throwable cause3 = th3.getCause();
                                                                 if (cause3 != null) {
                                                                     throw new RuntimeException(cause3);
                                                                 }
-                                                                throw new RuntimeException(th);
+                                                                throw new RuntimeException(th3);
                                                             }
                                                         } catch (Throwable th4) {
-                                                            th = th4;
+                                                            throw new RuntimeException(th4);
                                                         }
                                                     } catch (Throwable th5) {
                                                         Throwable cause4 = th5.getCause();
@@ -3911,8 +3910,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                         } catch (IOException unused2) {
                                                             bufferedInputStream2 = null;
                                                         } catch (Throwable th2) {
-                                                            th = th2;
                                                             bufferedInputStream = null;
+                                                            throw new RuntimeException(th2);
                                                         }
                                                         loop4: while (true) {
                                                             try {
@@ -3949,7 +3948,6 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                 }
                                                             } catch (IOException unused4) {
                                                             } catch (Throwable th3) {
-                                                                th = th3;
                                                                 bufferedInputStream = bufferedInputStream2;
                                                                 if (bufferedInputStream != null) {
                                                                     try {
@@ -3957,7 +3955,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                                                                     } catch (Exception unused5) {
                                                                     }
                                                                 }
-                                                                throw new RuntimeException(th);
+                                                                throw new RuntimeException(th3);
                                                             }
                                                             try {
                                                                 bufferedInputStream2.close();
