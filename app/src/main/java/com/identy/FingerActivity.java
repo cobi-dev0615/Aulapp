@@ -294,8 +294,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 i = 0;
                 bArr2[i] = (byte) i4;
                 if (i == i3) {
+                    return new String(bArr2, 0);
                 }
             }
+            return null;
         }
 
         static {
@@ -2002,7 +2004,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                     if (cause7 != null) {
                         throw new RuntimeException(cause7);
                     }
-                    throw new RuntimeException(th8);
+                    /* fall through */
                 }
                 try {
                     Class<?> cls10 = Class.forName(str);
@@ -2170,6 +2172,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
                 throw new RuntimeException(th11);
             }
+            return null;
         }
 
         @Override // java.lang.Runnable
@@ -2316,8 +2319,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 i2 = 0;
                 bArr2[i] = (byte) i2;
                 if (i == i3) {
+                    return new String(bArr2, 0);
                 }
             }
+            return null;
         }
 
         static {
@@ -4525,6 +4530,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 }
                 throw new RuntimeException(th7);
             }
+            return null;
         }
 
         /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -4913,8 +4919,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 bArr2[i] = (byte) i3;
                 i6 = i + 1;
                 if (i == i2) {
+                    return new String(bArr2, 0);
                 }
             }
+            return null;
         }
 
         static {
@@ -5887,8 +5895,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 i3 = i + 1;
                 bArr2[i] = (byte) i2;
                 if (i3 == i4) {
+                    return new String(bArr2, 0);
                 }
             }
+            return null;
         }
 
         static {
@@ -7552,6 +7562,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (i % 2 != 0) {
             int i3 = fingerActivity.CaptureThumbActivity;
         }
+        return null;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x008d, code lost:
@@ -7705,7 +7716,9 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         i = ((i24222 | 83) << 1) - (i24222 ^ 83);
         toJson = i % 128;
         if (i % 2 != 0) {
+            return null;
         }
+        return null;
     }
 
     private static /* synthetic */ Object PngjUnsupportedException(Object[] objArr) {
@@ -7771,7 +7784,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private static void e(String str, int i, Object[] objArr) {
-        char[] charArray;
+        char[] charArray = str != null ? str.toCharArray() : new char[0];
         int i2 = $10 + 107;
         int i3 = i2 % 128;
         $11 = i3;
@@ -10971,7 +10984,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (fingerActivity.onErrorResponse instanceof setFingers) {
         }
         if (!(!b)) {
+            fingerActivity.findViewById(R.id.change_hand).setVisibility(8);
+            return null;
         }
+        return null;
     }
 
     public final boolean PngjBadCrcException() {
