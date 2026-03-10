@@ -66,7 +66,7 @@ public final class values {
     private static char[] PngjBadSignature;
     private static char valueOf;
 
-    public class PngjBadCrcException extends com.a.e.d.PngjBadCrcException {
+    public static class PngjBadCrcException extends com.a.e.d.PngjBadCrcException {
         public static int PngjBadCrcException;
         public static int PngjException;
         private /* synthetic */ String PngjBadSignature;
@@ -113,7 +113,7 @@ public final class values {
         }
     }
 
-    public class PngjBadSignature implements Response.ErrorListener {
+    public static class PngjBadSignature implements Response.ErrorListener {
         private static  byte[] $$a = null;
         private static  int $$b = 0;
         private static  byte[] $$c = null;
@@ -843,7 +843,7 @@ public final class values {
         }
     }
 
-    public class PngjException implements Response.Listener {
+    public static class PngjException implements Response.Listener {
         public static int PngjBadCrcException;
         public static int PngjException;
         private /* synthetic */ PngjPrematureEnding values;
@@ -877,7 +877,7 @@ public final class values {
     }
 
     /* renamed from: com.identy.values$values, reason: collision with other inner class name */
-    public class C0027values implements RetryPolicy {
+    public static class C0027values implements RetryPolicy {
         @Override // com.android.volley.RetryPolicy
         public final int getCurrentRetryCount() {
             return 3;

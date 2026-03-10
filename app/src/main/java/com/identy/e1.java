@@ -153,7 +153,7 @@ public class e1 extends BroadcastReceiver {
     ProgressDialog getNfiq1Score;
     float[] getOveralTimetaken;
     IdentyUser getPadSub1;
-    int getPadSub2;
+    int getPadSub2_f;
     int getPadSub3;
     int getShortform;
     int getWidth;
@@ -380,7 +380,7 @@ public class e1 extends BroadcastReceiver {
             }
             HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap = null;
             if (!e1.this.FingerActivity.isrtQualityPassed()) {
-                e1.this.PngjExceptionInternal.add(com.identy.e1.getPadSub2.RTQ);
+                e1.this.PngjExceptionInternal.add(getPadSub2.RTQ);
                 Mat.n_release(this.values.PngjException);
                 e1 e1Var6 = e1.this;
                 if (e1Var6.Attempt != null) {
@@ -408,7 +408,7 @@ public class e1 extends BroadcastReceiver {
                 IdentySdk identySdk = e1.this.uxd566jk;
                 if (identySdk.getMatchingTime != null && identySdk.getOveralTimetaken != null && identySdk.PngjBadCrcException()) {
                     if (!e1.this.uxd566jk.getCaptureTime) {
-                        String serverRequest = Fpnative.getServerRequest(com.identy.e1.values, (int) (Calendar.getInstance().getTimeInMillis() / 1000), e1.this.uxd566jk.isGimages());
+                        String serverRequest = com.identy.Fpnative.getServerRequest(0L, (int) (Calendar.getInstance().getTimeInMillis() / 1000), e1.this.uxd566jk.isGimages());
                         ASResult asResult = postCaptureOutPut.getAsResult();
                         asResult.setAsValidatedLocal(false);
                         e1.this.uxd566jk.a(serverRequest);
@@ -429,7 +429,7 @@ public class e1 extends BroadcastReceiver {
                     byte[] bArr = e1.this.uxd566jk.a;
                     values valuesVar = new values(postCaptureOutPut, hashMap);
                     String str2 = e1.this.uxd566jk.PngBadCharsetException;
-                    String serverRequest2 = Fpnative.getServerRequest(com.identy.e1.values, (int) (Calendar.getInstance().getTimeInMillis() / 1000), false);
+                    String serverRequest2 = com.identy.Fpnative.getServerRequest(0L, (int) (Calendar.getInstance().getTimeInMillis() / 1000), false);
                     try {
                         JSONArray jSONArray = new JSONArray();
                         try {
@@ -1955,7 +1955,7 @@ public class e1 extends BroadcastReceiver {
                         Mat.n_release(this.getFingerPrintQualityScore.PngjException);
                     }
                 }
-                this.getFingerPrintQualityScore = valueOf(this.getPadSub3, this.getPadSub2);
+                this.getFingerPrintQualityScore = valueOf(this.getPadSub3, this.getPadSub2_f);
                 new Matrix().postRotate(90.0f);
                 this.isIntroShown.put("Yuv420888ToMat", Long.valueOf(timeInMillis2));
                 timeInMillis = Calendar.getInstance().getTimeInMillis();
@@ -2391,7 +2391,7 @@ public class e1 extends BroadcastReceiver {
                         if (identySdk.isDisplayTransactionAlerts()) {
                             if (this.PngjExceptionInternal.size() > 0) {
                                 markIntroSetting = (getClassForDetection + 89) % 128;
-                                z = this.PngjExceptionInternal.contains(com.identy.e1.getPadSub2.AS);
+                                z = this.PngjExceptionInternal.contains(getPadSub2.AS);
                             } else {
                                 z = false;
                             }
@@ -3311,7 +3311,7 @@ public class e1 extends BroadcastReceiver {
         this.getIdentyQuality = i;
         this.markIntroShown = i2;
         this.getPadSub3 = i;
-        this.getPadSub2 = i2;
+        this.getPadSub2_f = i2;
         if (this.generateID == null) {
             this.generateID = new int[i * i2];
         }
@@ -3591,7 +3591,7 @@ public class e1 extends BroadcastReceiver {
         getClassForDetection = (markIntroSetting + 87) % 128;
         Calendar.getInstance().getTimeInMillis();
         byte[][] bArr = this.getAttempts;
-        Object[] convertYUV420ToNV21 = ImageUtils.convertYUV420ToNV21(bArr[0], bArr[1], bArr[2], this.getPadSub3, this.getPadSub2, this.setScore, this.setSpoofScore, this.uxd565jj, this.Fpnative, this.getWidth, this.addTemplates);
+        Object[] convertYUV420ToNV21 = ImageUtils.convertYUV420ToNV21(bArr[0], bArr[1], bArr[2], this.getPadSub3, this.getPadSub2_f, this.setScore, this.setSpoofScore, this.uxd565jj, this.Fpnative, this.getWidth, this.addTemplates);
         byte[] bArr2 = (byte[]) convertYUV420ToNV21[0];
         if (((Integer) convertYUV420ToNV21[1]).intValue() == 1) {
             int i3 = getClassForDetection + 103;
@@ -3649,10 +3649,10 @@ public class e1 extends BroadcastReceiver {
             boolean isrfQualityPassed = e1Var.FingerActivity.isrfQualityPassed();
             if (!isrfQualityPassed) {
                 getClassForDetection = (markIntroSetting + 39) % 128;
-                e1Var.PngjExceptionInternal.add(com.identy.e1.getPadSub2.RFQ);
+                e1Var.PngjExceptionInternal.add(getPadSub2.RFQ);
             } else if (booleanValue) {
                 getClassForDetection = (markIntroSetting + 63) % 128;
-                e1Var.PngjExceptionInternal.add(com.identy.e1.getPadSub2.AS);
+                e1Var.PngjExceptionInternal.add(getPadSub2.AS);
             }
             e1Var.CaptureFingersActivity = aSResult.spoofScore;
             e1Var.generate = aSResult.l1P;
@@ -3714,7 +3714,7 @@ public class e1 extends BroadcastReceiver {
             if (pfk == null) {
                 return null;
             }
-            pfk.setWidthHeight(this.getPadSub3, this.getPadSub2);
+            pfk.setWidthHeight(this.getPadSub3, this.getPadSub2_f);
             StringBuilder sb = new StringBuilder("pre capture ? ");
             sb.append(pfk.getError());
             sb.append(" --- boxes ?");
