@@ -16,4 +16,6 @@ public class Imgproc {
     public static double threshold(Mat src, Mat dst, double thresh, double maxval, int type) { return 0; }
     public static void adaptiveThreshold(Mat src, Mat dst, double maxValue, int adaptiveMethod, int thresholdType, int blockSize, double C) {}
     public static void equalizeHist(Mat src, Mat dst) {}
+    public static void valueOf(Mat src, Mat dst) {}
+    public static void valueOf(Mat src, Mat dst, Object dsize) {}
 }

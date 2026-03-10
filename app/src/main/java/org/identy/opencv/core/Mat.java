@@ -32,4 +32,7 @@ public class Mat {
     public static int n_cols(long addr) { return 0; }
     public static int n_rows(long addr) { return 0; }
     public static void n_release(long addr) {}
+    public static boolean n_empty(long addr) { return false; }
+    public static double[] n_size(long addr) { return new double[]{0, 0}; }
+    public void PngjBadSignature(byte[] data) {}
 }

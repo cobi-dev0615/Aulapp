@@ -337,7 +337,7 @@ public class e1 extends BroadcastReceiver {
                     asResult.setAsValidatedLocal(false);
                     asResult.setServerValidationTime(longValue);
                     asResult.asPass = !z;
-                    e1.values(new Object[]{e1.this, this.PngjBadSignature, Boolean.valueOf(z), this.values.getAsResult()}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -1059459396, com.identy.i.PngjPrematureEnding.values(), 1059459400, com.identy.i.PngjPrematureEnding.values());
+                    com.identy.e1.values(new Object[]{e1.this, this.PngjBadSignature, Boolean.valueOf(z), this.values.getAsResult()}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -1059459396, com.identy.i.PngjPrematureEnding.values(), 1059459400, com.identy.i.PngjPrematureEnding.values());
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }
@@ -380,11 +380,11 @@ public class e1 extends BroadcastReceiver {
             }
             HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap = null;
             if (!e1.this.FingerActivity.isrtQualityPassed()) {
-                e1.this.PngjExceptionInternal.add(getPadSub2.RTQ);
+                e1.this.PngjExceptionInternal.add(com.identy.e1.getPadSub2.RTQ);
                 Mat.n_release(this.values.PngjException);
                 e1 e1Var6 = e1.this;
                 if (e1Var6.Attempt != null) {
-                    e1.values(new Object[]{e1Var6}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
+                    com.identy.e1.values(new Object[]{e1Var6}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                     e1 e1Var7 = e1.this;
                     e1Var7.Attempt.PngjBadSignature(null, false, true, e1Var7.FingerActivity.getRtQuality());
                     return;
@@ -408,11 +408,11 @@ public class e1 extends BroadcastReceiver {
                 IdentySdk identySdk = e1.this.uxd566jk;
                 if (identySdk.getMatchingTime != null && identySdk.getOveralTimetaken != null && identySdk.PngjBadCrcException()) {
                     if (!e1.this.uxd566jk.getCaptureTime) {
-                        String serverRequest = Fpnative.getServerRequest(e1.values, (int) (Calendar.getInstance().getTimeInMillis() / 1000), e1.this.uxd566jk.isGimages());
+                        String serverRequest = Fpnative.getServerRequest(com.identy.e1.values, (int) (Calendar.getInstance().getTimeInMillis() / 1000), e1.this.uxd566jk.isGimages());
                         ASResult asResult = postCaptureOutPut.getAsResult();
                         asResult.setAsValidatedLocal(false);
                         e1.this.uxd566jk.a(serverRequest);
-                        e1.values(new Object[]{e1.this, hashMap, Boolean.FALSE, asResult}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -1059459396, com.identy.i.PngjPrematureEnding.values(), 1059459400, com.identy.i.PngjPrematureEnding.values());
+                        com.identy.e1.values(new Object[]{e1.this, hashMap, Boolean.FALSE, asResult}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -1059459396, com.identy.i.PngjPrematureEnding.values(), 1059459400, com.identy.i.PngjPrematureEnding.values());
                         return;
                     }
                     try {
@@ -429,7 +429,7 @@ public class e1 extends BroadcastReceiver {
                     byte[] bArr = e1.this.uxd566jk.a;
                     values valuesVar = new values(postCaptureOutPut, hashMap);
                     String str2 = e1.this.uxd566jk.PngBadCharsetException;
-                    String serverRequest2 = Fpnative.getServerRequest(e1.values, (int) (Calendar.getInstance().getTimeInMillis() / 1000), false);
+                    String serverRequest2 = Fpnative.getServerRequest(com.identy.e1.values, (int) (Calendar.getInstance().getTimeInMillis() / 1000), false);
                     try {
                         JSONArray jSONArray = new JSONArray();
                         try {
@@ -438,8 +438,8 @@ public class e1 extends BroadcastReceiver {
                             com.identy.getPadSub2.PngjException("Data", " -- data ".concat(String.valueOf(jSONArray)));
                             com.identy.getPadSub2.PngjException("Data", " -- data ".concat(String.valueOf(values3)));
                             com.identy.getPadSub2.PngjException("TAG", "? ?  server");
-                            values.PngjBadCrcException pngjBadCrcException2 = new values.PngjBadCrcException(str, new values.PngjException(valuesVar), new values.PngjBadSignature(valuesVar), values3, str2);
-                            pngjBadCrcException2.setRetryPolicy(new values.C0027values());
+                            com.identy.values.PngjBadCrcException pngjBadCrcException2 = new com.identy.values.PngjBadCrcException(str, new com.identy.values.PngjException(valuesVar), new com.identy.values.PngjBadSignature(valuesVar), values3, str2);
+                            pngjBadCrcException2.setRetryPolicy(new com.identy.values.C0027values());
                             Volley.newRequestQueue(activity, new com.identy.app.PngjInputException(activity)).add(pngjBadCrcException2);
                             return;
                         } catch (JSONException e3) {
@@ -457,7 +457,7 @@ public class e1 extends BroadcastReceiver {
                 e5.printStackTrace();
             }
             Mat.n_release(this.values.PngjException);
-            e1.values(new Object[]{e1.this, hashMap, Boolean.valueOf(!e1.this.FingerActivity.getAsResult().isAsPass()), e1.this.FingerActivity.getAsResult()}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -1059459396, com.identy.i.PngjPrematureEnding.values(), 1059459400, com.identy.i.PngjPrematureEnding.values());
+            com.identy.e1.values(new Object[]{e1.this, hashMap, Boolean.valueOf(!e1.this.FingerActivity.getAsResult().isAsPass()), e1.this.FingerActivity.getAsResult()}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -1059459396, com.identy.i.PngjPrematureEnding.values(), 1059459400, com.identy.i.PngjPrematureEnding.values());
         }
     }
 
@@ -527,7 +527,7 @@ public class e1 extends BroadcastReceiver {
                     if (e1Var2.Attempt != null) {
                         int values = com.identy.i.PngjPrematureEnding.values();
                         int values2 = com.identy.i.PngjPrematureEnding.values();
-                        e1.values(new Object[]{e1Var2}, com.identy.i.PngjPrematureEnding.values(), values, -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, values2);
+                        com.identy.e1.values(new Object[]{e1Var2}, com.identy.i.PngjPrematureEnding.values(), values, -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, values2);
                         e1 e1Var3 = e1.this;
                         e1Var3.Attempt.PngjBadSignature(null, false, true, e1Var3.FingerActivity.getRtQuality());
                     }
@@ -550,7 +550,7 @@ public class e1 extends BroadcastReceiver {
                 Object[] objArr = {e1.this};
                 int values3 = com.identy.i.PngjPrematureEnding.values();
                 int values4 = com.identy.i.PngjPrematureEnding.values();
-                e1.values(objArr, com.identy.i.PngjPrematureEnding.values(), values3, -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, values4);
+                com.identy.e1.values(objArr, com.identy.i.PngjPrematureEnding.values(), values3, -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, values4);
             }
         }
     }
@@ -583,7 +583,7 @@ public class e1 extends BroadcastReceiver {
                 Object[] objArr = {this.values};
                 int values = com.identy.i.PngjPrematureEnding.values();
                 int values2 = com.identy.i.PngjPrematureEnding.values();
-                e1.values(objArr, com.identy.i.PngjPrematureEnding.values(), values, 84848004, com.identy.i.PngjPrematureEnding.values(), -84848002, values2);
+                com.identy.e1.values(objArr, com.identy.i.PngjPrematureEnding.values(), values, 84848004, com.identy.i.PngjPrematureEnding.values(), -84848002, values2);
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -681,7 +681,7 @@ public class e1 extends BroadcastReceiver {
             } else {
                 i = 0;
                 bArr2[i] = (byte) i2;
-                i6 = i + 1;
+                int i6 = i + 1;
                 if (i == i4) {
                     return new String(bArr2, 0);
                 }
@@ -1243,7 +1243,7 @@ public class e1 extends BroadcastReceiver {
         this.pfkrolChangeMinMaxWidth = null;
         this.generateT = 0;
         this.uxd566jk = null;
-        this.cvtyuv2bgr = CapturePosition.HORIZONTAL;
+        this.cvtyuv2bgr = com.identy.CapturePosition.HORIZONTAL;
         this.Action = activity;
         this.setDConfig = z3;
         if (Build.VERSION.SDK_INT >= 31) {
@@ -1817,7 +1817,7 @@ public class e1 extends BroadcastReceiver {
             Objects.toString(values(activity));
             return null;
         }
-        Object[] uxd565jj = Fpnative.uxd565jj(activity.getAssets(), values, PngjBadCrcException, PngjBadSignature(activity, "identy_data/identy_vfdata15.ort"));
+        Object[] uxd565jj = com.identy.Fpnative.uxd565jj(activity.getAssets(), values, PngjBadCrcException, PngjBadSignature(activity, "identy_data/identy_vfdata15.ort"));
         values = ((Long) uxd565jj[0]).longValue();
         if (((Integer) uxd565jj[1]).intValue() != 0) {
             int i23 = markIntroSetting + 109;
@@ -1847,7 +1847,7 @@ public class e1 extends BroadcastReceiver {
         }
         org.camera.preview.PngjBadCrcException.PngjBadSignature values2 = values(activity);
         " levelx : ".concat(String.valueOf(values2));
-        Fpnative.setDConfig(values, values2.ordinal());
+        com.identy.Fpnative.setDConfig(values, 0);
         return null;
     }
 
@@ -1959,7 +1959,7 @@ public class e1 extends BroadcastReceiver {
                 new Matrix().postRotate(90.0f);
                 this.isIntroShown.put("Yuv420888ToMat", Long.valueOf(timeInMillis2));
                 timeInMillis = Calendar.getInstance().getTimeInMillis();
-                Fpnative.cvtyuv2bgr(this.getFingerPrintQualityScore.PngjException, this.match);
+                com.identy.Fpnative.cvtyuv2bgr(this.getFingerPrintQualityScore.PngjException, this.match);
                 this.isIntroShown.put("cvtyuv2bgr", Long.valueOf(timeInMillis));
             }
             String str = Build.MANUFACTURER;
@@ -2042,20 +2042,20 @@ public class e1 extends BroadcastReceiver {
             }
             String jSONObject2 = jSONObject.toString();
             StringBuilder sb = new StringBuilder();
-            boolean isEmpty = isQualityFailed.PngjBadCrcException.isEmpty();
+            boolean isEmpty = ("".isEmpty());
             String str2 = BuildConfig.FLAVOR;
             if (isEmpty) {
                 obj = BuildConfig.FLAVOR;
             } else {
                 StringBuilder sb2 = new StringBuilder();
-                sb2.append(isQualityFailed.PngjBadCrcException);
+                sb2.append("");
                 sb2.append("_");
                 obj = sb2.toString();
             }
             sb.append(obj);
-            if (!isQualityFailed.PngjException.isEmpty()) {
+            if (!("".isEmpty())) {
                 StringBuilder sb3 = new StringBuilder();
-                sb3.append(isQualityFailed.PngjException);
+                sb3.append("");
                 sb3.append("_");
                 str2 = sb3.toString();
             }
@@ -2171,7 +2171,7 @@ public class e1 extends BroadcastReceiver {
                 b(b, b2, b2, objArr);
                 Object[] objArr2 = (Object[]) Array.newInstance(Class.forName((String) objArr[0]), 1);
                 objArr2[0] = values2;
-                getfingerprintqualityscore.executeOnExecutor(executor, objArr2);
+                getfingerprintqualityscore.executeOnExecutor(executor, (Mat[]) objArr2);
             } catch (Exception e) {
                 e.printStackTrace();
                 com.identy.d.PngjBadSignature pngjBadSignature = e1Var.Attempt;
@@ -2391,7 +2391,7 @@ public class e1 extends BroadcastReceiver {
                         if (identySdk.isDisplayTransactionAlerts()) {
                             if (this.PngjExceptionInternal.size() > 0) {
                                 markIntroSetting = (getClassForDetection + 89) % 128;
-                                z = this.PngjExceptionInternal.contains(getPadSub2.AS);
+                                z = this.PngjExceptionInternal.contains(com.identy.e1.getPadSub2.AS);
                             } else {
                                 z = false;
                             }
@@ -2719,7 +2719,7 @@ public class e1 extends BroadcastReceiver {
                     if (PngjBadSignature2 == null) {
                         PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) KeyEvent.keyCodeFromString(BuildConfig.FLAVOR), TextUtils.getTrimmedLength(BuildConfig.FLAVOR) + 24, 697 - (ViewConfiguration.getLongPressTimeout() >> 16), 1457201313, false, null, new Class[]{Integer.TYPE});
                     }
-                    values$1eba2e16 = values.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature2).newInstance(objArr9), 216186827);
+                    values$1eba2e16 = com.identy.values.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature2).newInstance(objArr9), 216186827);
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                     if (PngjBadSignature3 == null) {
                         char alpha = (char) (Color.alpha(0) + 14830);
@@ -2779,7 +2779,7 @@ public class e1 extends BroadcastReceiver {
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
                 if (PngjBadSignature2 == null) {
                 }
-                values$1eba2e16 = values.PngjBadSignature.values$1eba2e16(intValue2, ((Constructor) PngjBadSignature2).newInstance(objArr92), 216186827);
+                values$1eba2e16 = com.identy.values.PngjBadSignature.values$1eba2e16(intValue2, ((Constructor) PngjBadSignature2).newInstance(objArr92), 216186827);
                 PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                 if (PngjBadSignature3 == null) {
                 }
@@ -2833,7 +2833,7 @@ public class e1 extends BroadcastReceiver {
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
                 if (PngjBadSignature2 == null) {
                 }
-                values$1eba2e16 = values.PngjBadSignature.values$1eba2e16(intValue22, ((Constructor) PngjBadSignature2).newInstance(objArr922), 216186827);
+                values$1eba2e16 = com.identy.values.PngjBadSignature.values$1eba2e16(intValue22, ((Constructor) PngjBadSignature2).newInstance(objArr922), 216186827);
                 PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                 if (PngjBadSignature3 == null) {
                 }
@@ -2861,7 +2861,7 @@ public class e1 extends BroadcastReceiver {
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
                 if (PngjBadSignature2 == null) {
                 }
-                values$1eba2e16 = values.PngjBadSignature.values$1eba2e16(intValue222, ((Constructor) PngjBadSignature2).newInstance(objArr9222), 216186827);
+                values$1eba2e16 = com.identy.values.PngjBadSignature.values$1eba2e16(intValue222, ((Constructor) PngjBadSignature2).newInstance(objArr9222), 216186827);
                 PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                 if (PngjBadSignature3 == null) {
                 }
@@ -2943,7 +2943,7 @@ public class e1 extends BroadcastReceiver {
         this.generateST = 0 / (((-((i38 & 1) + (i38 | 1))) & i36) * 1424);
         this.CaptureMode = 0L;
         this.getCaptureTime = false;
-        Fpnative.resetAttempt(values);
+        com.identy.Fpnative.resetAttempt(values);
         long j4 = this.DeduplicationIdentyResponse;
         Attempt();
         PngjPrematureEnding pngjPrematureEnding = new PngjPrematureEnding(j4);
@@ -2999,7 +2999,7 @@ public class e1 extends BroadcastReceiver {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            Fpnative.resetAttempt(values);
+            com.identy.Fpnative.resetAttempt(values);
             HandlerThread handlerThread = this.getFingers;
             if (handlerThread != null) {
                 handlerThread.quitSafely();
@@ -3077,7 +3077,7 @@ public class e1 extends BroadcastReceiver {
         Activity activity = this.Action;
         if (activity instanceof FingerActivity) {
             FingerActivity fingerActivity = (FingerActivity) activity;
-            byte[] bArr = fingerActivity.Action.Action;
+            byte[] bArr = (byte[]) fingerActivity.Action.Action;
             com.identy.PngjException pngjException = fingerActivity.PngBadCharsetException.valueOf;
             ArrayList arrayList2 = new ArrayList(pngjException.values);
             pngjException.values.clear();
@@ -3229,7 +3229,7 @@ public class e1 extends BroadcastReceiver {
 
     public static void PngjException(int i, int i2) {
         getClassForDetection = (markIntroSetting + 69) % 128;
-        Object[] uxd565jk = Fpnative.uxd565jk(values, i, i2);
+        Object[] uxd565jk = com.identy.Fpnative.uxd565jk(values, i, i2);
         PngjBadSignature = ((Integer) uxd565jk[0]).intValue();
         pfkrol = ((Integer) uxd565jk[1]).intValue();
         PngjPrematureEnding = ((Integer) uxd565jk[2]).intValue();
@@ -3266,7 +3266,7 @@ public class e1 extends BroadcastReceiver {
                     FingerAS fingerAS = this.uxd566jk.Action;
                     org.camera.preview.PngjBadCrcException pngjBadCrcException = fingerActivity.Action;
                     List list = pngjBadCrcException.getFingers;
-                    PngjBadSignature.PngjExceptionInternal pngjExceptionInternal = new PngjBadSignature.PngjExceptionInternal(pngjBadCrcException.getFingerPrintQualityScore, pngjBadCrcException.getData);
+                    org.cameracontroller.PngjBadSignature.PngjExceptionInternal pngjExceptionInternal = new org.cameracontroller.PngjBadSignature.PngjExceptionInternal(pngjBadCrcException.getFingerPrintQualityScore, pngjBadCrcException.getData);
                     IdentySdk identySdk = this.uxd566jk;
                     String jSONObject = new ActionS3Meta(action, attackS, i4, i5, i6, i7, internalTrnsactionID, fingerAS, list, pngjExceptionInternal, identySdk.PngjOutputException, identySdk.PngjUnsupportedException, identySdk.PngjInputException, true, this.setDConfig).toJson().toString();
                     StringBuilder sb3 = new StringBuilder();
@@ -3275,20 +3275,20 @@ public class e1 extends BroadcastReceiver {
                     File file = new File(sb3.toString());
                     file.mkdirs();
                     StringBuilder sb4 = new StringBuilder();
-                    if (isQualityFailed.PngjBadCrcException.isEmpty()) {
+                    if (("".isEmpty())) {
                         obj = BuildConfig.FLAVOR;
                     } else {
                         StringBuilder sb5 = new StringBuilder();
-                        sb5.append(isQualityFailed.PngjBadCrcException);
+                        sb5.append("");
                         sb5.append("_");
                         obj = sb5.toString();
                     }
                     sb4.append(obj);
-                    if (isQualityFailed.PngjException.isEmpty()) {
+                    if (("".isEmpty())) {
                         obj2 = BuildConfig.FLAVOR;
                     } else {
                         StringBuilder sb6 = new StringBuilder();
-                        sb6.append(isQualityFailed.PngjException);
+                        sb6.append("");
                         sb6.append("_");
                         obj2 = sb6.toString();
                     }
@@ -3327,7 +3327,7 @@ public class e1 extends BroadcastReceiver {
                 CaptureMode k = IdentySdk.getInstance().k();
                 boolean contains = Build.MANUFACTURER.toLowerCase(Locale.US).contains("oneplus");
                 boolean startsWith = Build.MODEL.startsWith("EB210");
-                if (k.equals(CaptureMode.L) || (startsWith && contains)) {
+                if (k.equals(com.identy.CaptureMode.L) || (startsWith && contains)) {
                     valueOf = org.camera.preview.PngjBadCrcException.PngjBadSignature.LOW;
                 }
             } catch (Exception e) {
@@ -3417,20 +3417,20 @@ public class e1 extends BroadcastReceiver {
             }
         }
         CapturePosition capturePosition = this.cvtyuv2bgr;
-        CapturePosition capturePosition2 = CapturePosition.HORIZONTAL;
+        CapturePosition capturePosition2 = com.identy.CapturePosition.HORIZONTAL;
         if (capturePosition.equals(capturePosition2)) {
             z = false;
         } else {
-            boolean equals = this.cvtyuv2bgr.equals(CapturePosition.VERTICAL_FROM_TOP);
+            boolean equals = this.cvtyuv2bgr.equals(com.identy.CapturePosition.VERTICAL_FROM_TOP);
             markIntroSetting = (getClassForDetection + 85) % 128;
             z = equals;
         }
         QualityMode n = identySdk.n();
-        boolean PngjException2 = FingerActivity.PngjException(this.Action);
+        boolean PngjException2 = com.identy.FingerActivity.PngjException(this.Action);
         float[] fArr2 = fArr;
         long j = values;
         int ordinal = h.ordinal();
-        int ordinal2 = this.CapturePosition.ordinal();
+        int ordinal2 = 0;
         int ordinal3 = n.ordinal();
         int i5 = this.isQualityFailed;
         int i6 = this.getScore;
@@ -3453,12 +3453,12 @@ public class e1 extends BroadcastReceiver {
             markIntroSetting = (getClassForDetection + 87) % 128;
             if (identySdk2.getOveralTimetaken != null) {
                 z3 = true;
-                Fpnative.configure(j, ordinal, ordinal2, iArr2, iArr, ordinal3, i5, i6, i7, i8, i9, i10, z, fArr2, isElt, 0L, z5, z3, PngjException2);
+                com.identy.Fpnative.configure(j, ordinal, ordinal2, iArr2, iArr, ordinal3, i5, i6, i7, i8, i9, i10, z, fArr2, isElt, 0L, z5, z3, PngjException2);
                 this.isFoundMatchingTemplates = true;
             }
         }
         z3 = z2;
-        Fpnative.configure(j, ordinal, ordinal2, iArr2, iArr, ordinal3, i5, i6, i7, i8, i9, i10, z, fArr2, isElt, 0L, z5, z3, PngjException2);
+        com.identy.Fpnative.configure(j, ordinal, ordinal2, iArr2, iArr, ordinal3, i5, i6, i7, i8, i9, i10, z, fArr2, isElt, 0L, z5, z3, PngjException2);
         this.isFoundMatchingTemplates = true;
     }
 
@@ -3649,10 +3649,10 @@ public class e1 extends BroadcastReceiver {
             boolean isrfQualityPassed = e1Var.FingerActivity.isrfQualityPassed();
             if (!isrfQualityPassed) {
                 getClassForDetection = (markIntroSetting + 39) % 128;
-                e1Var.PngjExceptionInternal.add(getPadSub2.RFQ);
+                e1Var.PngjExceptionInternal.add(com.identy.e1.getPadSub2.RFQ);
             } else if (booleanValue) {
                 getClassForDetection = (markIntroSetting + 63) % 128;
-                e1Var.PngjExceptionInternal.add(getPadSub2.AS);
+                e1Var.PngjExceptionInternal.add(com.identy.e1.getPadSub2.AS);
             }
             e1Var.CaptureFingersActivity = aSResult.spoofScore;
             e1Var.generate = aSResult.l1P;
@@ -3709,7 +3709,7 @@ public class e1 extends BroadcastReceiver {
         preCaptureOutput = null;
         if (!Mat.n_empty(mat.PngjException) && new org.identy.opencv.core.valueOf(Mat.n_size(mat.PngjException)).PngjBadSignature != 0.0d && new org.identy.opencv.core.valueOf(Mat.n_size(mat.PngjException)).values != 0.0d) {
             LibSettings.saveML4FData();
-            PreCaptureOutput pfk = Fpnative.pfk(values, mat.PngjException, this.EnrollFingersActivity ? 1 : 2, LibSettings.saveML4FData());
+            PreCaptureOutput pfk = com.identy.Fpnative.pfk(values, mat.PngjException, this.EnrollFingersActivity ? 1 : 2, LibSettings.saveML4FData());
             this.isIntroShown.put("PROCESS", Long.valueOf(timeInMillis));
             if (pfk == null) {
                 return null;
@@ -3743,20 +3743,20 @@ public class e1 extends BroadcastReceiver {
                 File file = new File(sb3.toString());
                 file.mkdirs();
                 StringBuilder sb4 = new StringBuilder();
-                if (isQualityFailed.PngjBadCrcException.isEmpty()) {
+                if (("".isEmpty())) {
                     obj = BuildConfig.FLAVOR;
                 } else {
                     StringBuilder sb5 = new StringBuilder();
-                    sb5.append(isQualityFailed.PngjBadCrcException);
+                    sb5.append("");
                     sb5.append("_");
                     obj = sb5.toString();
                 }
                 sb4.append(obj);
-                if (isQualityFailed.PngjException.isEmpty()) {
+                if (("".isEmpty())) {
                     obj2 = BuildConfig.FLAVOR;
                 } else {
                     StringBuilder sb6 = new StringBuilder();
-                    sb6.append(isQualityFailed.PngjException);
+                    sb6.append("");
                     sb6.append("_");
                     obj2 = sb6.toString();
                 }
@@ -3779,7 +3779,7 @@ public class e1 extends BroadcastReceiver {
                 this.Capture2IndexActivity.PngjBadCrcException(Integer.valueOf(preCaptureOutput.getBoxes().size()));
             }
             RectF rectF = this.CaptureRolledFingersActivity;
-            this.getSpoofScore = preCaptureOutput.getRecog(new RectF(rectF.left, rectF.top, rectF.right, rectF.bottom), !FingerActivity.PngjException(this.Action));
+            this.getSpoofScore = preCaptureOutput.getRecog(new RectF(rectF.left, rectF.top, rectF.right, rectF.bottom), !com.identy.FingerActivity.PngjException(this.Action));
             if (LibSettings.saveML4FData()) {
                 byte[] img = preCaptureOutput.getImg();
                 StringBuilder sb7 = new StringBuilder("frame_");

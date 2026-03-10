@@ -8,4 +8,5 @@ public class Imgcodecs {
     public static Mat imread(String filename, int flags) { return new Mat(); }
     public static boolean imwrite(String filename, Mat img) { return false; }
     public static Mat imdecode(Mat buf, int flags) { return new Mat(); }
+    public static Mat values(Mat buf) { return new Mat(); }
 }

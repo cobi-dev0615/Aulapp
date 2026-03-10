@@ -53,6 +53,7 @@ public class PngjBadCrcException {
     public int getScore;
     public boolean getShortform;
     public int getSpoofScore;
+    public List getFingers;
     public boolean getL1Score;
     public Long onErrorResponse;
     public ApplicationInterface values_field;
@@ -71,6 +72,7 @@ public class PngjBadCrcException {
         public static final PngjBadSignature HIGH = new PngjBadSignature();
         public static final PngjBadSignature MEDIUM = new PngjBadSignature();
         public static final PngjBadSignature LOW = new PngjBadSignature();
+        public int ordinal() { return 0; }
     }
 
     public static class valueOf {

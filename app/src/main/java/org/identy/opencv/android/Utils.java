@@ -5,4 +5,5 @@ public class Utils {
     public static void matToBitmap(Mat m, Bitmap b) {}
     public static void bitmapToMat(Bitmap b, Mat m) {}
     public static void PngjBadSignature(Mat m, Bitmap b) { matToBitmap(m, b); }
+    public static void PngjException(Bitmap b, Mat m) { bitmapToMat(b, m); }
 }
