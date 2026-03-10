@@ -428,8 +428,8 @@ public class PngjException {
             if (!Arrays.equals(doFinal3, bArr8)) {
                 throw new IOException("Message has been altered or password incorrect");
             }
-        } catch (InvalidKeyException e) {
-            throw new GeneralSecurityException("Please make sure \"Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files\" is installed on your JRE.", e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -455,8 +455,8 @@ public class PngjException {
 
                 throw new RuntimeException(cause);
             }
-        } catch (GeneralSecurityException e) {
-            throw new GeneralSecurityException("Please make sure \"Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files\" is installed on your JRE.", e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -507,8 +507,8 @@ public class PngjException {
                     return;
                 }
             }
-        } catch (InvalidKeyException e) {
-            throw new GeneralSecurityException("Please make sure \"Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files\" is installed on your JRE.", e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 
