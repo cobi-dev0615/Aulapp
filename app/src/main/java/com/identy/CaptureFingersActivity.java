@@ -36,8 +36,8 @@ public class CaptureFingersActivity extends FingerActivity {
     private static int $10;
     private static int $11;
     private static long PngjBadCrcException;
-    private static final byte[] getFingerPrintQualityScore = null;
-    private static final int getScore = 0;
+    private static byte[] getFingerPrintQualityScore = null;
+    private static int getScore = 0;
     private static int valueOf;
     private static int values;
 
@@ -609,7 +609,7 @@ public class CaptureFingersActivity extends FingerActivity {
                             if (i5 < 22 || i5 >= 24) {
                                 throw new RuntimeException(th2);
                             }
-                            getscore.PngjPrematureEnding = th;
+                            getscore.PngjPrematureEnding = th2;
                             getscore.PngjBadCrcException(24);
                             i5 = 20;
                         }
@@ -662,7 +662,6 @@ public class CaptureFingersActivity extends FingerActivity {
                         i5 = i6;
                 }
             }
-            throw new RuntimeException(th);
         } catch (Throwable th3) {
             Throwable cause = th3.getCause();
 
@@ -827,18 +826,18 @@ public class CaptureFingersActivity extends FingerActivity {
                                 if (!Class.forName((String) objArr15[0]).isInstance(th4) || i5 < 9 || i5 >= 10) {
                                     Object[] objArr16 = new Object[1];
                                     b((byte) (i8 | 50), s4, (short) (bArr3[123] - 1), objArr16);
-                                    if (!Class.forName((String) objArr16[0]).isInstance(th) || i5 < 11 || i5 >= 13) {
+                                    if (!Class.forName((String) objArr16[0]).isInstance(th4) || i5 < 11 || i5 >= 13) {
                                         Object[] objArr17 = new Object[1];
                                         b((byte) (i8 | 50), s4, (short) (bArr3[123] - 1), objArr17);
-                                        if (!Class.forName((String) objArr17[0]).isInstance(th) || i5 < 14 || i5 >= 15) {
+                                        if (!Class.forName((String) objArr17[0]).isInstance(th4) || i5 < 14 || i5 >= 15) {
                                             Object[] objArr18 = new Object[1];
                                             b((byte) (i8 | 50), s4, (short) (bArr3[123] - 1), objArr18);
-                                            if (!Class.forName((String) objArr18[0]).isInstance(th) || i5 < 16 || i5 >= 22) {
+                                            if (!Class.forName((String) objArr18[0]).isInstance(th4) || i5 < 16 || i5 >= 22) {
                                                 if (i5 < 44 || i5 >= 48) {
-                                                    throw new RuntimeException(th);
+                                                    throw new RuntimeException(th4);
                                                 }
                                                 i5 = 42;
-                                                getscore.PngjPrematureEnding = th;
+                                                getscore.PngjPrematureEnding = th4;
                                                 getscore.PngjBadCrcException(24);
                                             }
                                         }
@@ -846,7 +845,7 @@ public class CaptureFingersActivity extends FingerActivity {
                                 }
                             }
                             i5 = 22;
-                            getscore.PngjPrematureEnding = th;
+                            getscore.PngjPrematureEnding = th4;
                             getscore.PngjBadCrcException(24);
                         }
                         break;
@@ -866,7 +865,7 @@ public class CaptureFingersActivity extends FingerActivity {
                         getscore.PngjBadCrcException(3);
                         FingerActivity fingerActivity = (FingerActivity) getscore.PngjUnsupportedException;
                         getscore.PngjBadCrcException(3);
-                        fingerActivity.onErrorResponse = (e1) getscore.PngjUnsupportedException;
+                        fingerActivity.onErrorResponse = (com.identy.e1) getscore.PngjUnsupportedException;
                         i5 = i6;
                     case -8:
                         getscore.valueOf = 6;
@@ -882,7 +881,7 @@ public class CaptureFingersActivity extends FingerActivity {
                         getscore.PngjBadCrcException(12);
                         boolean z = getscore.PngjBadSignature != 0;
                         getscore.PngjBadCrcException(12);
-                        getscore.PngjPrematureEnding = new isAuthSucess(activity, pngjBadSignature, fingerDetectionMode, fingerArr, z, getscore.PngjBadSignature != 0);
+                        getscore.PngjPrematureEnding = new com.identy.isAuthSucess(activity, pngjBadSignature, fingerDetectionMode, fingerArr, z, getscore.PngjBadSignature != 0);
                         getscore.PngjBadCrcException(26);
                         i5 = i6;
                     case -7:
