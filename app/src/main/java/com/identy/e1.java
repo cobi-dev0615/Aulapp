@@ -899,7 +899,7 @@ public class e1 extends BroadcastReceiver {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private static void b(String str, int i, Object[] objArr) {
+        private static void b(String str, int i, Object[] objArr) throws Exception {
             Throwable cause;
             char c;
             long j;
