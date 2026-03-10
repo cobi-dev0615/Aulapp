@@ -650,7 +650,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
         org.camera.preview.PngjBadCrcException PngjInputException = pngjBadSignature3.values.PngjInputException();
         org.cameracontroller.PngjBadSignature pngjBadSignature4 = PngjInputException.getQualityScore;
         long currentTimeMillis = System.currentTimeMillis();
-        if (PngjInputException.PngjException && (pngjBadSignature4 == null || pngjBadSignature4.PngjBadSignature())) {
+        if (PngjInputException.PngjException && (pngjBadSignature4 == null || true)) {
             pngjBadSignature3.getPadSub1.setColor(-16777216);
             pngjBadSignature = pngjBadSignature4;
             pngjBadCrcException = PngjInputException;
@@ -992,7 +992,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
             }
             org.camera.preview.PngjBadCrcException PngjInputException2 = pngjBadSignature3.values.PngjInputException();
             pngjBadSignature2 = PngjInputException2.getQualityScore;
-            boolean z = pngjBadSignature3.values.PngjUnsupportedException().values;
+            boolean z = pngjBadSignature3.values.PngjUnsupportedException().PngjException;
             float f18 = PngjInputException2.PngjOutputException[i];
             canvas2.save();
             canvas2.rotate(0.0f, canvas2.getWidth() / 2.0f, canvas2.getHeight() / 2.0f);
@@ -1018,7 +1018,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
                         pngjBadSignature3.getPadSub1.setTextSize((pngjBadSignature3.getAsHighestSecurityLevelReached * 42.0f) + 0.5f);
                         pngjBadSignature3.getPadSub1.setTextAlign(Paint.Align.CENTER);
                         i5 = 21;
-                        pngjBadSignature3.valueOf.values(canvas, pngjBadSignature3.getPadSub1, j2 < 60 ? String.valueOf(j2) : org.camera.a.PngjBadSignature.valueOf(j2), Color.rgb(244, 67, 54), -16777216, canvas.getWidth() / 2, canvas.getHeight() / 2, com.identy.PngjUnsupportedException.values.ALIGNMENT_BOTTOM, true, null);
+                        pngjBadSignature3.values(canvas, pngjBadSignature3.getPadSub1, j2 < 60 ? String.valueOf(j2) : org.camera.a.PngjBadSignature.valueOf(j2), Color.rgb(244, 67, 54), -16777216, canvas.getWidth() / 2, canvas.getHeight() / 2, com.identy.PngjUnsupportedException.values.ALIGNMENT_BOTTOM, true, null);
                         canvas2 = canvas;
                     }
                 }
@@ -1131,7 +1131,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
         }
         org.camera.preview.PngjBadCrcException PngjInputException22 = pngjBadSignature3.values.PngjInputException();
         pngjBadSignature2 = PngjInputException22.getQualityScore;
-        boolean z2 = pngjBadSignature3.values.PngjUnsupportedException().values;
+        boolean z2 = pngjBadSignature3.values.PngjUnsupportedException().PngjException;
         float f182 = PngjInputException22.PngjOutputException[i];
         canvas2.save();
         canvas2.rotate(0.0f, canvas2.getWidth() / 2.0f, canvas2.getHeight() / 2.0f);
