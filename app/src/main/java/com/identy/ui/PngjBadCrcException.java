@@ -24,7 +24,7 @@ public class PngjBadCrcException extends View {
     public boolean PngjBadCrcException;
     public boolean PngjBadSignature;
     public int PngjException;
-    private final Paint PngjExceptionInternal;
+    private Paint PngjExceptionInternal;
     public double PngjInputException;
     private Handler PngjOutputException;
     private Runnable PngjPrematureEnding;

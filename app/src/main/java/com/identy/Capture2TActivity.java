@@ -1921,7 +1921,7 @@ public class Capture2TActivity extends FingerActivity {
                                                                             } catch (Exception unused5) {
                                                                             }
                                                                         }
-                                                                        throw new RuntimeException(th);
+                                                                        throw new RuntimeException(th4);
                                                                     }
                                                                 }
                                                                 bufferedInputStream5 = bufferedInputStream2;
@@ -1996,7 +1996,7 @@ public class Capture2TActivity extends FingerActivity {
                                                                             } catch (Exception unused10) {
                                                                             }
                                                                         }
-                                                                        throw new RuntimeException(th);
+                                                                        throw new RuntimeException(th7);
                                                                     }
                                                                 }
                                                                 bufferedInputStream6 = bufferedInputStream4;

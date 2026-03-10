@@ -215,7 +215,8 @@ public final class values {
                     }
                 }
                 if (this.getMatchingTime && z) {
-                    for (PngjBadSignature pngjBadSignature : this.PngjException) {
+                    for (Object _pngjObj : this.PngjException) {
+                        PngjBadSignature pngjBadSignature = (PngjBadSignature) _pngjObj;
                         RectF rectF3 = new RectF(pngjBadSignature.PngjException);
                         this.valueOf.mapRect(rectF3);
                         int i3 = 8;

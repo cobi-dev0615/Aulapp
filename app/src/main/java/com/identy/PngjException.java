@@ -426,7 +426,7 @@ public final class PngjException implements SensorEventListener {
                 if (PngjBadSignature4 == null) {
                     PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), (ViewConfiguration.getTapTimeout() >> 16) + 24, (ViewConfiguration.getScrollDefaultDelay() >> 16) + 697, 1457201313, false, null, new Class[]{Integer.TYPE});
                 }
-                PngjBadCrcException$1eba2e16 = isFoundMatchingTemplates.PngjBadSignature.PngjBadCrcException$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr11), -2500481);
+                PngjBadCrcException$1eba2e16 = null;
                 Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                 if (PngjBadSignature5 == null) {
                     char indexOf2 = (char) (14830 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR));
