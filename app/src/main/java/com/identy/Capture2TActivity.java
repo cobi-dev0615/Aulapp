@@ -672,9 +672,9 @@ public class Capture2TActivity extends FingerActivity {
             BufferedInputStream bufferedInputStream;
             BufferedInputStream bufferedInputStream2;
             int i8 = 0;
-            int i9;
+            int i9 = 0;
             BufferedInputStream bufferedInputStream3;
-            BufferedInputStream bufferedInputStream4;
+            BufferedInputStream bufferedInputStream4 = null;
             int i10;
             boolean z3;
             int i11;
@@ -1914,7 +1914,7 @@ public class Capture2TActivity extends FingerActivity {
                                                                             } catch (Exception unused3) {
                                                                             }
                                                                         }
-                                                                    } catch (IOException unused4) {
+                                                                    } catch (Exception unused4) {
                                                                     } catch (Throwable th4) {
                                                                         bufferedInputStream = bufferedInputStream2;
                                                                         if (bufferedInputStream != null) {
@@ -1989,7 +1989,7 @@ public class Capture2TActivity extends FingerActivity {
                                                                             } catch (Exception unused8) {
                                                                             }
                                                                         }
-                                                                    } catch (IOException unused9) {
+                                                                    } catch (Exception unused9) {
                                                                     } catch (Throwable th7) {
                                                                         bufferedInputStream3 = bufferedInputStream4;
                                                                         if (bufferedInputStream3 != null) {
@@ -2615,7 +2615,7 @@ public class Capture2TActivity extends FingerActivity {
             }
         }
 
-        private static void b(int[] iArr, int i, Object[] objArr) {
+        private static void b(int[] iArr, int i, Object[] objArr) throws Exception {
             int i2;
             long j;
             char c;
@@ -2794,7 +2794,7 @@ public class Capture2TActivity extends FingerActivity {
             }
         }
 
-        private static void c(String str, boolean z, int[] iArr, Object[] objArr) {
+        private static void c(String str, boolean z, int[] iArr, Object[] objArr) throws Exception {
             byte[] bArr;
             int i;
             byte[] bArr2;
@@ -3071,7 +3071,7 @@ public class Capture2TActivity extends FingerActivity {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void c(String str, int i, Object[] objArr) {
+    private static void c(String str, int i, Object[] objArr) throws Exception {
         char[] cArr;
         Throwable cause;
         char c;
@@ -3252,8 +3252,8 @@ public class Capture2TActivity extends FingerActivity {
         int i;
         char c;
         int intValue;
-        Object[] PngjException$52c725b;
-        float f;
+        Object[] PngjException$52c725b = null;
+        float f = 0.0f;
         int i2;
         int i3;
         super.attachBaseContext(context);
@@ -3405,12 +3405,14 @@ public class Capture2TActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
+        try {
         Object[] objArr13 = new Object[1];
         c("椛引ԍ쬟녋朄ⴎጼ\ud93e轲甐㬿\ue13e흄鵒䍗", (ViewConfiguration.getEdgeSlop() >> 16) + 13829, objArr13);
         Class<?> cls3 = Class.forName((String) objArr13[0]);
         Object[] objArr14 = new Object[1];
         c("椘䭞ⶂ\u0ffe\ue029쉯\ua4c7餅筡嶳㿬ဠ\uf2b6퓑褏歱", (ViewConfiguration.getDoubleTapTimeout() >> 16) + 8779, objArr14);
         intValue = ((Integer) cls3.getMethod((String) objArr14[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception _e) { throw new RuntimeException(_e); }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
