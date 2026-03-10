@@ -1421,7 +1421,7 @@ public class Capture4FActivity extends FingerActivity {
                         getdata.PngjException(3);
                         FingerActivity fingerActivity = (FingerActivity) getdata.PngjInputException;
                         getdata.PngjException(3);
-                        fingerActivity.onErrorResponse = (e1) getdata.PngjInputException;
+                        fingerActivity.onErrorResponse = (com.identy.e1) getdata.PngjInputException;
                         i8 = i9;
                     case -7:
                         getdata.valueOf = 6;
@@ -1433,11 +1433,11 @@ public class Capture4FActivity extends FingerActivity {
                         getdata.PngjException(3);
                         FingerDetectionMode fingerDetectionMode = (FingerDetectionMode) getdata.PngjInputException;
                         getdata.PngjException(13);
-                        boolean z = getdata.PngjException != 0 ? 1 : i7;
+                        boolean z = getdata.PngjException != 0 ? true : (i7 != 0);
                         getdata.PngjException(13);
-                        boolean z2 = getdata.PngjException != 0 ? 1 : i7;
+                        boolean z2 = getdata.PngjException != 0 ? true : (i7 != 0);
                         getdata.PngjException(13);
-                        getdata.PngjPrematureEnding = new getOveralTimetaken(activity, pngjBadSignature, fingerDetectionMode, z, z2, getdata.PngjException != 0 ? 1 : i7);
+                        getdata.PngjPrematureEnding = new com.identy.getOveralTimetaken(activity, pngjBadSignature, fingerDetectionMode, z, z2, getdata.PngjException != 0 ? true : (i7 != 0));
                         getdata.PngjException(26);
                         i8 = i9;
                     case -6:
