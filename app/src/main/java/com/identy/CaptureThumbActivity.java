@@ -42,9 +42,9 @@ public class CaptureThumbActivity extends FingerActivity {
     private static int $10;
     private static int $11;
     private static char PngjBadCrcException;
-    private static final int getCaptureTime = 0;
+    private static int getCaptureTime = 0;
     private static int getFingerPrintQualityScore;
-    private static final byte[] getNfiq1Score = null;
+    private static byte[] getNfiq1Score = null;
     private static int getProcessingTime;
     private static char getScore;
     private static char valueOf;
@@ -315,7 +315,7 @@ public class CaptureThumbActivity extends FingerActivity {
                 byte b2 = b;
                 PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (8056 - Color.argb(0, 0, 0, 0)), ImageFormat.getBitsPerPixel(0) + 33, (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) + 664, -199907679, false, $$i(b, b2, b2), new Class[]{Object.class, Object.class});
             }
-            ((Method) PngjBadSignature3).invoke(null, objArr4);
+            try { ((Method) PngjBadSignature3).invoke(null, objArr4); } catch (Exception _e) { throw new RuntimeException(_e); }
             i3 = i14;
             obj = null;
         }
@@ -710,7 +710,7 @@ public class CaptureThumbActivity extends FingerActivity {
                     default:
                 }
             }
-            throw new RuntimeException(th);
+            throw new RuntimeException();
         } catch (Throwable th2) {
             Throwable cause = th2.getCause();
 
