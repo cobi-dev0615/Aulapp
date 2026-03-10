@@ -354,16 +354,13 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final int Action() {
-        if (com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.DRO) {
-            return 100;
-        }
-        com.identy.PngjUnsupportedException.valueOf valueof = com.identy.PngjUnsupportedException.valueOf.Standard;
+        /* valueOf.Standard == valueOf.DRO is always false */
         return 100;
     }
 
     @Override // org.camera.preview.ApplicationInterface
     public final boolean Attempt() {
-        return com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.NoiseReduction;
+        return false; /* valueOf.Standard != valueOf.NoiseReduction */
     }
 
     @Override // org.camera.preview.ApplicationInterface
@@ -451,14 +448,12 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final boolean getData() {
-        return com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.DRO;
+        return false; /* valueOf.Standard != valueOf.DRO */
     }
 
     @Override // org.camera.preview.ApplicationInterface
     public final int getFingerPrintQualityScore() {
-        if (com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.HDR) {
-            return 3;
-        }
+        /* valueOf.Standard != valueOf.HDR - always falls through */
         try {
             return Integer.parseInt("3");
         } catch (NumberFormatException unused) {
@@ -468,9 +463,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final void getL1Score() {
-        if (com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.NoiseReduction) {
-            getL2Score();
-        }
+        /* valueOf.Standard != valueOf.NoiseReduction - never enters if block */
         org.camera.a.PngjBadSignature pngjBadSignature = this.PngjInputException;
         pngjBadSignature.getFingerPrintQualityScore = false;
         pngjBadSignature.getScore = false;
@@ -513,8 +506,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final boolean getPadSub1() {
-        com.identy.PngjUnsupportedException.valueOf valueof = com.identy.PngjUnsupportedException.valueOf.Standard;
-        return valueof == com.identy.PngjUnsupportedException.valueOf.HDR || valueof == com.identy.PngjUnsupportedException.valueOf.ExpoBracketing;
+        return false; /* valueOf.Standard is neither HDR nor ExpoBracketing */
     }
 
     @Override // org.camera.preview.ApplicationInterface
@@ -545,9 +537,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final double getQualityScore() {
-        if (com.identy.PngjUnsupportedException.valueOf.Standard == com.identy.PngjUnsupportedException.valueOf.HDR) {
-            return 2.0d;
-        }
+        /* valueOf.Standard != valueOf.HDR - always falls through */
         try {
             return Double.parseDouble("2");
         } catch (NumberFormatException unused) {
@@ -570,7 +560,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
 
     @Override // org.camera.preview.ApplicationInterface
     public final boolean isAuthSucess() {
-        com.identy.PngjUnsupportedException.valueOf valueof = com.identy.PngjUnsupportedException.valueOf.Standard;
+        /* valueOf.Standard - always Standard */
         return false;
     }
 

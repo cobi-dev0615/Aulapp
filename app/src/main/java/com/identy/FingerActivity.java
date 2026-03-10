@@ -8380,7 +8380,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         if (i2 % 2 != 0) {
             int i3 = 68 / 0;
         }
-        return null;
+        return false;
     }
 
     @Override // com.identy.d.PngjBadSignature
