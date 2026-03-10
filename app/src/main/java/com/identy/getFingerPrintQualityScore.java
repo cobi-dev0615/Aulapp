@@ -45,6 +45,8 @@ public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, Ar
                 this.values.finish();
             }
         }
+
+        public static Object[] PngjBadSignature$1eba2e16(int i, Object obj, int i2) { return null; }
     }
 
     static {

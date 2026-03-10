@@ -357,8 +357,8 @@ public class CaptureRolledFingersActivity extends FingerActivity {
     public void attachBaseContext(Context context) {
         int i;
         char c;
-        int intValue;
-        Object[] PngjBadSignature$1eba2e16;
+        int intValue = 0;
+        Object[] PngjBadSignature$1eba2e16 = null;
         int i2;
         int i3;
         valueOf = (PngjBadCrcException + 37) % 128;
@@ -374,7 +374,8 @@ public class CaptureRolledFingersActivity extends FingerActivity {
             b(b2, b2, b, objArr);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(combineMeasuredStates, offsetBefore, rgb, -815159504, false, (String) objArr[0], null);
         }
-        long j = ((Field) PngjBadSignature).getLong(null);
+        long j;
+        try { j = ((Field) PngjBadSignature).getLong(null); } catch (Exception _e) { throw new RuntimeException(_e); }
         try {
             try {
                 if (j != -1) {
@@ -490,7 +491,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Color.red(0), 24 - (ViewConfiguration.getScrollDefaultDelay() >> 16), 697 - (ExpandableListView.getPackedPositionForGroup(0) > 0L ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == 0L ? 0 : -1)), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadSignature$1eba2e16 = getFingerPrintQualityScore.PngjBadSignature.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr11), -1024524190);
+            PngjBadSignature$1eba2e16 = com.identy.getFingerPrintQualityScore.PngjBadSignature.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr11), -1024524190);
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature5 == null) {
                 char indexOf2 = (char) (TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0, 0) + 14830);
@@ -514,12 +515,14 @@ public class CaptureRolledFingersActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
+        try {
         Object[] objArr13 = new Object[1];
         c(16 - (ViewConfiguration.getDoubleTapTimeout() >> 16), true, "ￌ\uffff\u0014\uffff\b\u000b\u0003\u0012\u0011\u0017\ufff1ￌ\u0005\f\uffff\n", View.resolveSize(0, 0) + 5, 254 - Color.alpha(0), objArr13);
         Class<?> cls3 = Class.forName((String) objArr13[0]);
         Object[] objArr14 = new Object[1];
         c(16 - View.resolveSize(0, 0), false, "\t\ufffe\uffff\u0003\ufffe\uffff\b\u000e\u0003\u000e\u0013￢\ufffb\r\u0002\uffdd", 2 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)), 257 - ((byte) KeyEvent.getModifierMetaStateMask()), objArr14);
         intValue = ((Integer) cls3.getMethod((String) objArr14[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception _e) { throw new RuntimeException(_e); }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
@@ -594,7 +597,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
         } catch (Exception e) {
         }
         try {
-            this.onErrorResponse = new getL2Score(this, this, fingerDetectionMode, new Finger[]{fingerDetectionMode.getFinger()}, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
+            this.onErrorResponse = new com.identy.getL2Score(this, this, fingerDetectionMode, new Finger[]{fingerDetectionMode.getFinger()}, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
         } catch (Exception e2) {
             Exception exc = e2;
             try {
