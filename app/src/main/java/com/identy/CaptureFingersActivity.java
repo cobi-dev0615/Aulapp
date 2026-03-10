@@ -365,9 +365,9 @@ public class CaptureFingersActivity extends FingerActivity {
     public void attachBaseContext(Context context) {
         int i;
         char c;
-        int intValue;
-        Object[] PngjBadSignature$52c725b;
-        long j;
+        int intValue = 0;
+        Object[] PngjBadSignature$52c725b = null;
+        long j = 0;
         super.attachBaseContext(context);
         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature == null) {
@@ -381,7 +381,8 @@ public class CaptureFingersActivity extends FingerActivity {
             c(b2, b3, b3, objArr);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(scrollBarSize, capsMode, jumpTapTimeout, -815159504, false, (String) objArr[0], null);
         }
-        long j2 = ((Field) PngjBadSignature).getLong(null);
+        long j2;
+        try { j2 = ((Field) PngjBadSignature).getLong(null); } catch (Exception _e) { throw new RuntimeException(_e); }
         try {
             try {
                 if (j2 != -1) {
@@ -506,12 +507,14 @@ public class CaptureFingersActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
+        try {
         Object[] objArr12 = new Object[1];
         d("뤳륙㩣䍇丂ⅿ볾尉䫑摖欁ᩜ獼礠\u001f罟ᙼኖᵝ冷", ExpandableListView.getPackedPositionType(0L) + 1, objArr12);
         Class<?> cls3 = Class.forName((String) objArr12[0]);
         Object[] objArr13 = new Object[1];
         d("灍瀤䉴㭕헄壗✫锭㍶᱄\uf0c1揬먭Ÿ鯪۩\udf32檚蚉⠘", Color.red(0) + 1, objArr13);
         intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception _ignored) { throw new RuntimeException(_ignored); }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
@@ -621,7 +624,6 @@ public class CaptureFingersActivity extends FingerActivity {
                     case -11:
                         getscore.PngjBadCrcException(15);
                         throw ((Throwable) getscore.PngjUnsupportedException);
-                        break;
                     case -10:
                         i5 = 35;
                     case -9:
@@ -796,7 +798,6 @@ public class CaptureFingersActivity extends FingerActivity {
                     case -18:
                         getscore.PngjBadCrcException(15);
                         throw ((Throwable) getscore.PngjUnsupportedException);
-                        break;
                     case -17:
                         i5 = 49;
                     case -16:
