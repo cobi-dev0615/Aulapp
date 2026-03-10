@@ -105,8 +105,10 @@ public class Capture2TActivity extends FingerActivity {
                 i4 = i2 + 1;
                 bArr2[i2] = (byte) i7;
                 if (i4 == i6) {
+                    return new String(bArr2, 0);
                 }
             }
+            return new String(bArr2, 0);
         }
 
         static {
@@ -659,9 +661,9 @@ public class Capture2TActivity extends FingerActivity {
             int i4;
             long j2;
             long j3;
-            boolean z;
+            boolean z = false;
             long j4;
-            boolean z2;
+            boolean z2 = false;
             int i5;
             int i6;
             int i7;
@@ -669,7 +671,7 @@ public class Capture2TActivity extends FingerActivity {
             char c2;
             BufferedInputStream bufferedInputStream;
             BufferedInputStream bufferedInputStream2;
-            int i8;
+            int i8 = 0;
             int i9;
             BufferedInputStream bufferedInputStream3;
             BufferedInputStream bufferedInputStream4;
@@ -681,7 +683,7 @@ public class Capture2TActivity extends FingerActivity {
             char c3;
             char c4;
             int i13;
-            Object invoke;
+            Object invoke = null;
             String[] strArr;
             int i14;
             boolean z4;
@@ -2570,6 +2572,7 @@ public class Capture2TActivity extends FingerActivity {
             }
             if (i9 == 0) {
             }
+            return null;
         }
 
         /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -3020,8 +3023,10 @@ public class Capture2TActivity extends FingerActivity {
             int i922 = i7 + 1;
             bArr2[i3] = (byte) i5;
             if (i4 == i6) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
