@@ -461,6 +461,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
             bArr2[i] = (byte) i4;
             int i72 = i5 + 1;
             if (i2 == i3) {
+                return new String(bArr2, 0);
             }
         } else {
             i = 0;
@@ -468,8 +469,10 @@ public class CaptureRolledThumbActivity extends FingerActivity {
             bArr2[i] = (byte) i4;
             int i722 = i5 + 1;
             if (i2 == i3) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -881,7 +884,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity
     public void values(Bundle bundle) {
-        FingerDetectionMode fingerDetectionMode;
+        FingerDetectionMode fingerDetectionMode = null;
         super.values(bundle);
         try {
             fingerDetectionMode = this.PngjExceptionInternal;

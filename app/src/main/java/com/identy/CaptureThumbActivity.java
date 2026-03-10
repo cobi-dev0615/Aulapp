@@ -138,6 +138,8 @@ public class CaptureThumbActivity extends FingerActivity {
             bArr2[i3] = (byte) i4;
             i3++;
             if (i3 == i5) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         } else {
             i2 = i4;
@@ -146,6 +148,8 @@ public class CaptureThumbActivity extends FingerActivity {
             bArr2[i3] = (byte) i4;
             i3++;
             if (i3 == i5) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         }
     }
@@ -191,12 +195,16 @@ public class CaptureThumbActivity extends FingerActivity {
             bArr2[i] = (byte) i5;
             i2 = i + 1;
             if (i2 == i3) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         } else {
             i = 0;
             bArr2[i] = (byte) i5;
             i2 = i + 1;
             if (i2 == i3) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         }
     }
@@ -535,7 +543,7 @@ public class CaptureThumbActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) - 1), 23 - ExpandableListView.getPackedPositionChild(0L), 697 - (ViewConfiguration.getMaximumFlingVelocity() >> 16), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadSignature$1eba2e16 = FingerActivity.PngjUnsupportedException.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr11), 1795394698);
+            PngjBadSignature$1eba2e16 = arid.chunks.PngBadCharsetException.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr11), 1795394698);
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature5 == null) {
                 char gidForName = (char) (Process.getGidForName(BuildConfig.FLAVOR) + 14831);
