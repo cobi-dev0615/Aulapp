@@ -580,7 +580,7 @@ public class CaptureThumbActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
-        getQualityScore getqualityscore = new getQualityScore(this, bundle);
+        com.identy.getQualityScore getqualityscore = new com.identy.getQualityScore(this, bundle);
         byte[] bArr = getNfiq1Score;
         short s = bArr[104];
         int i = getCaptureTime;
@@ -773,7 +773,7 @@ public class CaptureThumbActivity extends FingerActivity {
     */
     public void values(Bundle bundle) {
         int i;
-        getQualityScore getqualityscore = new getQualityScore(this, bundle);
+        com.identy.getQualityScore getqualityscore = new com.identy.getQualityScore(this, bundle);
         int i2 = getCaptureTime;
         Object[] objArr = new Object[1];
         b((short) 160, (byte) (i2 | 54), (byte) (i2 | 9), objArr);
