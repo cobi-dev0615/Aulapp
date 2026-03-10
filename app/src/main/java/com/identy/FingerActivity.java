@@ -8205,6 +8205,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             setFoundMatchingTemplates = (toJson + 57) % 128;
             return obj;
         }
+        return sb.toString();
     }
 
     public static void init$0() {
@@ -8440,7 +8441,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             f(b3, b4, (byte) (b4 | 13), objArr2);
             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(offsetBefore, resolveOpacity, indexOf2, -815159504, false, (String) objArr2[0], null);
         }
-        long j = ((Field) PngjBadSignature3).getLong(null);
+        long j;
+        try { j = ((Field) PngjBadSignature3).getLong(null); } catch (Exception e) { throw new RuntimeException(e); }
         try {
             try {
                 if (j != -1) {
@@ -8564,12 +8566,14 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
 
             throw new RuntimeException(cause);
         }
-        Object[] objArr13 = new Object[1];
-        e("덉滸댣숚\u175c篔ū丬〛䕟縼짇휶繍\uf361៤ꔞ갫Ⅳ旼", 1 - (ViewConfiguration.getTapTimeout() >> 16), objArr13);
-        Class<?> cls3 = Class.forName((String) objArr13[0]);
-        Object[] objArr14 = new Object[1];
-        e("汳蟨氚⬏惠\ue4ca\ude0b㦃\ud90e㋥\ue12d囁ࠣ霒蓮裤稔䔠囍\ufae5", ExpandableListView.getPackedPositionGroup(0L) + 1, objArr14);
-        intValue = ((Integer) cls3.getMethod((String) objArr14[0], Object.class).invoke(null, this)).intValue();
+        try {
+            Object[] objArr13 = new Object[1];
+            e("덉滸댣숚\u175c篔ū丬〛䕟縼짇휶繍\uf361៤ꔞ갫Ⅳ旼", 1 - (ViewConfiguration.getTapTimeout() >> 16), objArr13);
+            Class<?> cls3 = Class.forName((String) objArr13[0]);
+            Object[] objArr14 = new Object[1];
+            e("汳蟨氚⬏惠\ue4ca\ude0b㦃\ud90e㋥\ue12d囁ࠣ霒蓮裤稔䔠囍\ufae5", ExpandableListView.getPackedPositionGroup(0L) + 1, objArr14);
+            intValue = ((Integer) cls3.getMethod((String) objArr14[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception e) { throw new RuntimeException(e); }
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0018, code lost:
@@ -10319,14 +10323,16 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             throw new RuntimeException(cause7);
         }
         i6 = -1;
-        Object[] objArr47 = new Object[1];
-        e("덉滸댣숚\u175c篔ū丬〛䕟縼짇휶繍\uf361៤ꔞ갫Ⅳ旼", 0 - (~TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0)), objArr47);
-        Class<?> cls6 = Class.forName((String) objArr47[0]);
-        int i335 = -(-(TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)));
-        int i336 = (i335 ^ 1) + ((i335 & 1) << 1);
-        Object[] objArr48 = new Object[1];
-        e("汳蟨氚⬏惠\ue4ca\ude0b㦃\ud90e㋥\ue12d囁ࠣ霒蓮裤稔䔠囍\ufae5", i336, objArr48);
-        intValue = ((Integer) cls6.getMethod((String) objArr48[0], Object.class).invoke(null, this)).intValue();
+        try {
+            Object[] objArr47 = new Object[1];
+            e("덉滸댣숚\u175c篔ū丬〛䕟縼짇휶繍\uf361៤ꔞ갫Ⅳ旼", 0 - (~TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0)), objArr47);
+            Class<?> cls6 = Class.forName((String) objArr47[0]);
+            int i335 = -(-(TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)));
+            int i336 = (i335 ^ 1) + ((i335 & 1) << 1);
+            Object[] objArr48 = new Object[1];
+            e("汳蟨氚⬏惠\ue4ca\ude0b㦃\ud90e㋥\ue12d囁ࠣ霒蓮裤稔䔠囍\ufae5", i336, objArr48);
+            intValue = ((Integer) cls6.getMethod((String) objArr48[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception e) { throw new RuntimeException(e); }
     }
 
     @Override // android.app.Activity
@@ -10383,7 +10389,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         if (getqualityscore != null) {
                             try {
                                 /* getqualityscore.get(3000L, TimeUnit.MILLISECONDS); */
-                            } catch (InterruptedException | ExecutionException | TimeoutException unused) {
+                            } catch (Exception unused) {
                                 int i5 = toJson;
                                 setFoundMatchingTemplates = ((i5 ^ com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) + ((i5 & com.karumi.dexter.R.styleable.AppCompatTheme_tooltipFrameBackground) << 1)) % 128;
                             }
