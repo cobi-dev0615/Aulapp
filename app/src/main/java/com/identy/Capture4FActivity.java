@@ -909,7 +909,6 @@ public class Capture4FActivity extends FingerActivity {
         int i;
         int i2;
         super.attachBaseContext(context);
-        try {
         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature2 == null) {
             char jumpTapTimeout = (char) (14830 - (ViewConfiguration.getJumpTapTimeout() >> 16));
@@ -1067,6 +1066,7 @@ public class Capture4FActivity extends FingerActivity {
         d(new int[]{2016418701, 2027700486, -1230003372, 1203852804, -1231723277, 1008429795, -279051450, 1286702230}, AndroidCharacter.getMirror('0') - ' ', objArr15);
         intValue = ((Integer) cls3.getMethod((String) objArr15[0], Object.class).invoke(null, this)).intValue();
         } catch (Exception _ignored) { throw new RuntimeException(_ignored); }
+        } catch (Exception _e2) { throw new RuntimeException(_e2); }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
