@@ -614,10 +614,10 @@ public final class PngjUnsupportedException implements ApplicationInterface {
         org.cameracontroller.PngjBadSignature pngjBadSignature;
         int i;
         int i2;
-        Canvas canvas2;
-        float f;
-        int i3;
-        int i4;
+        Canvas canvas2 = canvas;
+        float f = 0.0f;
+        int i3 = 0;
+        int i4 = 0;
         org.cameracontroller.PngjBadSignature pngjBadSignature2;
         int i5;
         int i6;
