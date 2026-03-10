@@ -42,7 +42,7 @@ public class Enroll4FActivity extends FingerActivity {
     private static int values;
     HashMap valueOf = new HashMap();
 
-    public class PngjBadSignature implements com.identy.d.PngjBadCrcException {
+    public class PngjBadSignature implements com.identy.d.PngjBadCrcException, com.identy.d.PngjException {
         private static  byte[] $$a = null;
         private static  int $$b = 0;
         private static  byte[] $$c = null;
@@ -55,6 +55,9 @@ public class Enroll4FActivity extends FingerActivity {
         private static int valueOf;
         private static int values;
         final /* synthetic */ HashMap PngjBadCrcException;
+
+        @Override
+        public void PngjBadCrcException() {}
 
         public class valueOf implements Runnable {
             public static int PngjException;
