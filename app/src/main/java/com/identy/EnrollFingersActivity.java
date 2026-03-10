@@ -144,6 +144,7 @@ public class EnrollFingersActivity extends FingerActivity {
     */
     private static String $$i(byte b, int i, short s) {
         int i2;
+        int i7;
         int i3 = b * 4;
         int i4 = (i * 3) + 4;
         byte[] bArr = $$c;
@@ -151,7 +152,7 @@ public class EnrollFingersActivity extends FingerActivity {
         byte[] bArr2 = new byte[i3 + 1];
         if (bArr == null) {
             int i6 = i3;
-            int i7 = 0;
+            i7 = 0;
             i5 += i6;
             i4++;
             i2 = i7;
@@ -167,14 +168,17 @@ public class EnrollFingersActivity extends FingerActivity {
             bArr2[i2] = (byte) i5;
             i7 = i2 + 1;
             if (i2 == i3) {
+                return new String(bArr2, 0);
             }
         } else {
             i2 = 0;
             bArr2[i2] = (byte) i5;
             i7 = i2 + 1;
             if (i2 == i3) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -681,7 +685,7 @@ public class EnrollFingersActivity extends FingerActivity {
             if (PngjBadSignature6 == null) {
                 PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) TextUtils.getTrimmedLength(BuildConfig.FLAVOR), (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)) + 24, 698 - (ViewConfiguration.getZoomControlsTimeout() > j ? 1 : (ViewConfiguration.getZoomControlsTimeout() == j ? 0 : -1)), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjException$1eba2e16 = (Object[]) isAuthSucess.PngjException.AnimationAnimationListenerC0024PngjException.RunnableC0025PngjException.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr12), 805595971);
+            PngjException$1eba2e16 = (Object[]) com.identy.isAuthSucess.PngjException.AnimationAnimationListenerC0024PngjException.RunnableC0025PngjException.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr12), 805595971);
             Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature7 == null) {
                 char packedPositionType = (char) (ExpandableListView.getPackedPositionType(j) + 14830);

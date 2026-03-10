@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import java.util.HashMap;
 
 /* loaded from: classes2.dex */
 public final class getAsHighestSecurityLevelReached extends Dialog {
@@ -55,5 +56,9 @@ public final class getAsHighestSecurityLevelReached extends Dialog {
         getWindow().setBackgroundDrawable(new ColorDrawable(0));
         setContentView(com.identy.R.layout.touchless_spoof_dialog);
         findViewById(com.identy.R.id.spoof_continue).setOnClickListener(new PngjException());
+    }
+
+    public void PngjException(HashMap hashMap, long j) {
+        show();
     }
 }
