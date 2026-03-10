@@ -60,7 +60,7 @@ public class CaptureThumbActivity extends FingerActivity {
         @Override // java.lang.Runnable
         public final void run() {
             if (FingerActivity.PngjPrematureEnding) {
-                CaptureThumbActivity.this.getPadSub1 = new com.identy.ui.c.onErrorResponse(CaptureThumbActivity.this, (a) this.PngjException.get(new Pair(CaptureThumbActivity.this.PngjExceptionInternal.getHand(), Finger.THUMB)), CaptureThumbActivity.this.getQualityScore);
+                CaptureThumbActivity.this.getPadSub1 = new com.identy.ui.c.onErrorResponse(CaptureThumbActivity.this, (com.identy.IdentyA) this.PngjException.get(new Pair(CaptureThumbActivity.this.PngjExceptionInternal.getHand(), Finger.THUMB)), CaptureThumbActivity.this.getQualityScore);
                 WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
                 layoutParams.copyFrom(CaptureThumbActivity.this.getPadSub1.getWindow().getAttributes());
                 ((ViewGroup.LayoutParams) layoutParams).width = -1;
@@ -405,8 +405,8 @@ public class CaptureThumbActivity extends FingerActivity {
     public void attachBaseContext(Context context) {
         int i;
         char c;
-        int intValue;
-        Object[] PngjBadSignature$1eba2e16;
+        int intValue = 0;
+        Object[] PngjBadSignature$1eba2e16 = null;
         int i2;
         int i3;
         super.attachBaseContext(context);
@@ -421,7 +421,8 @@ public class CaptureThumbActivity extends FingerActivity {
             c(b, b2, b2, objArr);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(red, doubleTapTimeout, makeMeasureSpec, -815159504, false, (String) objArr[0], null);
         }
-        long j = ((Field) PngjBadSignature).getLong(null);
+        long j;
+        try { j = ((Field) PngjBadSignature).getLong(null); } catch (Exception _e) { throw new RuntimeException(_e); }
         try {
             try {
                 if (j != -1) {
@@ -559,12 +560,14 @@ public class CaptureThumbActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
+        try {
         Object[] objArr13 = new Object[1];
         d("\uf7d8䃦\uf137숟㼭捩ꑞܶ綇\uffddἥ懥ᎌ搌䓄岡", (ViewConfiguration.getScrollBarSize() >> 8) + 16, objArr13);
         Class<?> cls3 = Class.forName((String) objArr13[0]);
         Object[] objArr14 = new Object[1];
         d("栠淎\udf3a\ue16d鏎☖\uf3e7䖼渇쐅깒\uf24d횏雾貞촲", 15 - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0'), objArr14);
         intValue = ((Integer) cls3.getMethod((String) objArr14[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception _e) { throw new RuntimeException(_e); }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
@@ -649,7 +652,6 @@ public class CaptureThumbActivity extends FingerActivity {
                     case -16:
                         getqualityscore.PngjBadSignature(17);
                         throw ((Throwable) getqualityscore.PngjUnsupportedException);
-                        break;
                     case -15:
                         i2 = 33;
                     case -14:
@@ -899,7 +901,7 @@ public class CaptureThumbActivity extends FingerActivity {
                         getqualityscore.PngjBadSignature(2);
                         FingerActivity fingerActivity = (FingerActivity) getqualityscore.PngjUnsupportedException;
                         getqualityscore.PngjBadSignature(2);
-                        fingerActivity.onErrorResponse = (e1) getqualityscore.PngjUnsupportedException;
+                        fingerActivity.onErrorResponse = (com.identy.e1) getqualityscore.PngjUnsupportedException;
                         i5 = i6;
                     case -7:
                         getqualityscore.PngjException = 5;

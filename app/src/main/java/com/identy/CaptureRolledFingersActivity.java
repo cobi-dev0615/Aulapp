@@ -92,13 +92,16 @@ public class CaptureRolledFingersActivity extends FingerActivity {
             i3 += i7;
             bArr2[i2] = (byte) i3;
             if (i2 == i6) {
+                return new String(bArr2, 0);
             }
         } else {
             i2 = 0;
             bArr2[i2] = (byte) i3;
             if (i2 == i6) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -258,7 +261,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
                 if (PngjBadSignature3 == null) {
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getJumpTapTimeout() >> 16), TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0) + 40, View.MeasureSpec.makeMeasureSpec(0, 0) + 190, 794744863, false, "j", new Class[]{Object.class, Object.class});
                 }
-                ((Method) PngjBadSignature3).invoke(null, objArr4);
+                try { ((Method) PngjBadSignature3).invoke(null, objArr4); } catch (Exception _e) { throw new RuntimeException(_e); }
             }
             cArr3 = cArr5;
         }
@@ -590,7 +593,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity
     public void values(Bundle bundle) {
-        FingerDetectionMode fingerDetectionMode;
+        FingerDetectionMode fingerDetectionMode = null;
         super.values(bundle);
         try {
             fingerDetectionMode = this.PngjExceptionInternal;
