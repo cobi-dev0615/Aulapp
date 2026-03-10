@@ -677,7 +677,7 @@ public class Verify2TActivity extends FingerActivity {
             if (PngjBadSignature6 == null) {
                 PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0), (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)) + 25, (-16776519) - Color.rgb(0, 0, 0), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjException$1eba2e16 = NativeAlgoUtils.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr12), 1549783404);
+            PngjException$1eba2e16 = (Object[]) NativeAlgoUtils.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr12), 1549783404);
             java.lang.Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature7 == null) {
                 char packedPositionGroup = (char) (ExpandableListView.getPackedPositionGroup(0L) + 14830);

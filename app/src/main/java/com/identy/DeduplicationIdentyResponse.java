@@ -303,8 +303,7 @@ public final class DeduplicationIdentyResponse extends IdentyResponse {
             Fpnative.valueOf = objArr;
             JSONObject json2 = super.toJson(context);
             JSONArray jSONArray2 = new JSONArray();
-            while (0 < 0) {
-            }
+            /* while loop removed: condition always false */
             json2.put("fingers", jSONArray2);
             int i32 = ((int[]) objArr[1])[0];
             int i42 = i32 * i32;

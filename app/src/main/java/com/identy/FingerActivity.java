@@ -5769,7 +5769,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 if (PngjBadSignature15 == null) {
                     PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (CdmaCellLocation.convertQuartSecToDecDegrees(0) > 0.0d ? 1 : (CdmaCellLocation.convertQuartSecToDecDegrees(0) == 0.0d ? 0 : -1)), 25 - (SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1)), 697 - (ViewConfiguration.getJumpTapTimeout() >> 16), 1457201313, false, null, new Class[]{Integer.TYPE});
                 }
-                PngjException$52c725b = arid.Action.PngjException$52c725b(intValue, ((Constructor) PngjBadSignature15).newInstance(objArr32));
+                PngjException$52c725b = (Object[]) arid.Action.PngjException$52c725b(intValue, ((Constructor) PngjBadSignature15).newInstance(objArr32));
                 Object PngjBadSignature16 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                 if (PngjBadSignature16 == null) {
                     char gidForName = (char) (14829 - Process.getGidForName(BuildConfig.FLAVOR));
@@ -8565,7 +8565,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             if (PngjBadSignature6 == null) {
                 PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) KeyEvent.normalizeMetaState(0), 24 - (ViewConfiguration.getScrollBarFadeDuration() >> 16), 697 - (ViewConfiguration.getEdgeSlop() >> 16), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            values$52c725b = arid.chunks.PngjInputException.values$52c725b(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr11));
+            values$52c725b = (Object[]) arid.chunks.PngjInputException.values$52c725b(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr11));
             Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature7 == null) {
                 char argb = (char) (Color.argb(0, 0, 0, 0) + 14830);

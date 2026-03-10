@@ -132,6 +132,7 @@ public class Enroll4FActivity extends FingerActivity {
                 i3 = i2 + 1;
                 bArr2[i2] = (byte) i4;
                 if (i3 == i5) {
+                    return new String(bArr2, 0);
                 }
             } else {
                 i2 = 0;
@@ -139,8 +140,10 @@ public class Enroll4FActivity extends FingerActivity {
                 i3 = i2 + 1;
                 bArr2[i2] = (byte) i4;
                 if (i3 == i5) {
+                    return new String(bArr2, 0);
                 }
             }
+            return new String(bArr2, 0);
         }
 
         static {
@@ -582,6 +585,7 @@ public class Enroll4FActivity extends FingerActivity {
             int i72 = i5 + 1;
             bArr2[i] = (byte) i4;
             if (i2 == i3) {
+                return new String(bArr2, 0);
             }
         } else {
             i = 0;
@@ -589,8 +593,10 @@ public class Enroll4FActivity extends FingerActivity {
             int i722 = i5 + 1;
             bArr2[i] = (byte) i4;
             if (i2 == i3) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -725,7 +731,7 @@ public class Enroll4FActivity extends FingerActivity {
             this.valueOf.clear();
             this.valueOf.putAll(hashMap);
             this.onErrorResponse.PngjException(R.string.id_processing);
-            new getAsHighestSecurityLevelReached(this, new PngjBadSignature(hashMap2)).PngjException(this.valueOf, com.identy.e1.PngjInputException);
+            new com.identy.ui.c.getAsHighestSecurityLevelReached(this, new PngjBadSignature(hashMap2)).PngjException(this.valueOf, com.identy.e1.PngjInputException);
         }
     }
 
@@ -854,7 +860,7 @@ public class Enroll4FActivity extends FingerActivity {
             if (PngjBadSignature5 == null) {
                 PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - ExpandableListView.getPackedPositionChild(j)), 24 - (ViewConfiguration.getScrollDefaultDelay() >> 16), View.MeasureSpec.getSize(0) + 697, 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjException$1eba2e16 = arid.a.valueOf.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature5).newInstance(objArr10), -1517060756);
+            PngjException$1eba2e16 = (Object[]) arid.a.valueOf.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature5).newInstance(objArr10), -1517060756);
             Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature6 == null) {
                 char c4 = (char) (14830 - (TypedValue.complexToFloat(0) > 0.0f ? 1 : (TypedValue.complexToFloat(0) == 0.0f ? 0 : -1)));
@@ -957,7 +963,7 @@ public class Enroll4FActivity extends FingerActivity {
         super.values(bundle);
         try {
             try {
-                this.onErrorResponse = new getOveralTimetaken(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException, true);
+                this.onErrorResponse = new com.identy.getOveralTimetaken(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException, true);
                 int i = values + 107;
                 getFingerPrintQualityScore = i % 128;
                 if (i % 2 == 0) {

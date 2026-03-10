@@ -455,7 +455,7 @@ public class PostCaptureOutPut {
                                 Hand hand2 = (Hand) pair.first;
                                 Finger finger2 = (Finger) pair.second;
                                 this.pickedFromCapture.get(entry.getKey());
-                                aVar = new getProcessingTime(i15, hand2, finger2, fingerDetectionMode2);
+                                aVar = new com.identy.getProcessingTime(i15, hand2, finger2, fingerDetectionMode2);
                             }
                             if (this.rfQuality.containsKey(entry.getKey())) {
                                 aVar.PngjUnsupportedException = this.rfQuality.get(entry.getKey()).intValue();

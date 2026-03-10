@@ -500,7 +500,7 @@ public class EnrollFingersActivity extends FingerActivity {
             this.PngjBadCrcException.clear();
             this.PngjBadCrcException.putAll(hashMap);
             this.onErrorResponse.PngjException(R.string.id_processing);
-            new getAsHighestSecurityLevelReached(this, new PngjBadSignature(hashMap, hashMap2)).PngjException(this.PngjBadCrcException, e1.PngjInputException);
+            new com.identy.ui.c.getAsHighestSecurityLevelReached(this, new PngjBadSignature(hashMap, hashMap2)).PngjException(this.PngjBadCrcException, com.identy.e1.PngjInputException);
             getFingerPrintQualityScore = (getScore + 5) % 128;
         }
     }
@@ -678,7 +678,7 @@ public class EnrollFingersActivity extends FingerActivity {
             if (PngjBadSignature6 == null) {
                 PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) TextUtils.getTrimmedLength(BuildConfig.FLAVOR), (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)) + 24, 698 - (ViewConfiguration.getZoomControlsTimeout() > j ? 1 : (ViewConfiguration.getZoomControlsTimeout() == j ? 0 : -1)), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjException$1eba2e16 = isAuthSucess.PngjException.AnimationAnimationListenerC0024PngjException.RunnableC0025PngjException.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr12), 805595971);
+            PngjException$1eba2e16 = (Object[]) isAuthSucess.PngjException.AnimationAnimationListenerC0024PngjException.RunnableC0025PngjException.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr12), 805595971);
             Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature7 == null) {
                 char packedPositionType = (char) (ExpandableListView.getPackedPositionType(j) + 14830);
@@ -765,7 +765,7 @@ public class EnrollFingersActivity extends FingerActivity {
         super.values(bundle);
         try {
             try {
-                this.onErrorResponse = new isAuthSucess(this, this, this.PngjExceptionInternal, this.a, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
+                this.onErrorResponse = new com.identy.isAuthSucess(this, this, this.PngjExceptionInternal, this.a, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
                 int i = getFingerPrintQualityScore + 21;
                 getScore = i % 128;
                 if (i % 2 == 0) {

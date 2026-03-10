@@ -494,7 +494,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Color.red(0), 24 - (ViewConfiguration.getScrollDefaultDelay() >> 16), 697 - (ExpandableListView.getPackedPositionForGroup(0) > 0L ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == 0L ? 0 : -1)), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadSignature$1eba2e16 = com.identy.getFingerPrintQualityScore.PngjBadSignature.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr11), -1024524190);
+            PngjBadSignature$1eba2e16 = (Object[]) com.identy.getFingerPrintQualityScore.PngjBadSignature.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr11), -1024524190);
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature5 == null) {
                 char indexOf2 = (char) (TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0, 0) + 14830);

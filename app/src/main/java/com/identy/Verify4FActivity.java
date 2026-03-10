@@ -791,7 +791,7 @@ public class Verify4FActivity extends FingerActivity {
         super.values(bundle);
         try {
             try {
-                this.onErrorResponse = new getOveralTimetaken(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException, true);
+                this.onErrorResponse = new com.identy.getOveralTimetaken(this, this, this.PngjExceptionInternal, IdentySdk.getInstance().u(), this.PngjUnsupportedException, true);
                 getOveralTimetaken = (getNfiq1Score + 57) % 128;
             } catch (Exception unused) {
             }

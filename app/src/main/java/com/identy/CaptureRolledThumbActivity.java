@@ -812,7 +812,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
             if (PngjBadSignature5 == null) {
                 PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1))), 23 - ImageFormat.getBitsPerPixel(0), View.getDefaultSize(0, 0) + 697, 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadSignature$1eba2e16 = arid.chunks.PngBadCharsetException.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature5).newInstance(objArr11), -1862998883);
+            PngjBadSignature$1eba2e16 = (Object[]) arid.chunks.PngBadCharsetException.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature5).newInstance(objArr11), -1862998883);
             Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature6 == null) {
                 char maxKeyCode = (char) (14830 - (KeyEvent.getMaxKeyCode() >> 16));

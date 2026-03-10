@@ -595,7 +595,7 @@ final class getL2Score extends getL3Score {
             if (PngjBadSignature8 == null) {
                 PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (Process.myPid() >> 22), 24 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 697 - (ViewConfiguration.getJumpTapTimeout() >> 16), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjException$1eba2e16 = arid.a.valueOf.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature8).newInstance(objArr19), -1511602340);
+            PngjException$1eba2e16 = (Object[]) arid.a.valueOf.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature8).newInstance(objArr19), -1511602340);
             Object PngjBadSignature9 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature9 == null) {
                 char blue = (char) (14830 - Color.blue(0));

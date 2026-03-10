@@ -171,14 +171,17 @@ public class Enroll2IndexActivity extends FingerActivity {
             i2 = i + 1;
             bArr2[i] = (byte) i3;
             if (i2 == i5) {
+                return new String(bArr2, 0);
             }
         } else {
             i = 0;
             i2 = i + 1;
             bArr2[i] = (byte) i3;
             if (i2 == i5) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {

@@ -706,7 +706,7 @@ public class Enroll2TActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getMaximumDrawingCacheSize() >> 24), (ViewConfiguration.getEdgeSlop() >> 16) + 24, View.MeasureSpec.getMode(0) + 697, 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadCrcException$52c725b = TouchLessIDSDK$PngjBadCrcException.PngjBadCrcException$52c725b(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr12));
+            PngjBadCrcException$52c725b = (Object[]) TouchLessIDSDK$PngjBadCrcException.PngjBadCrcException$52c725b(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr12));
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature5 == null) {
                 char myPid = (char) (14830 - (Process.myPid() >> 22));

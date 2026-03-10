@@ -1501,7 +1501,7 @@ final class getFingers extends e1 {
                                         if (PngjBadSignature7 == null) {
                                             PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (Process.myPid() >> 22), (-16777192) - Color.rgb(0, 0, 0), 697 - TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0), 1457201313, false, null, new Class[]{Integer.TYPE});
                                         }
-                                        PngjException$1eba2e16 = arid.a.valueOf.PngjException$1eba2e16(intValue2, ((Constructor) PngjBadSignature7).newInstance(objArr18), 1696279871);
+                                        PngjException$1eba2e16 = (Object[]) arid.a.valueOf.PngjException$1eba2e16(intValue2, ((Constructor) PngjBadSignature7).newInstance(objArr18), 1696279871);
                                         Object PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                                         if (PngjBadSignature8 == null) {
                                             char c6 = (char) (14831 - (SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)));

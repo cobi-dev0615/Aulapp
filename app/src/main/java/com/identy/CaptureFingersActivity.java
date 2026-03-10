@@ -480,7 +480,7 @@ public class CaptureFingersActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getSize(0), TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 25, 697 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadSignature$52c725b = arid.PngjInputException.PngjBadSignature$52c725b(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10));
+            PngjBadSignature$52c725b = (Object[]) arid.PngjInputException.PngjBadSignature$52c725b(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10));
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature5 == null) {
                 char minimumFlingVelocity = (char) (14830 - (ViewConfiguration.getMinimumFlingVelocity() >> 16));
@@ -519,7 +519,7 @@ public class CaptureFingersActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
-        getScore getscore = new getScore(this, bundle);
+        com.identy.getScore getscore = new com.identy.getScore(this, bundle);
         byte[] bArr = getFingerPrintQualityScore;
         int i = 136;
         byte b = bArr[136];
@@ -704,7 +704,7 @@ public class CaptureFingersActivity extends FingerActivity {
 
     @Override // com.identy.FingerActivity
     public void values(Bundle bundle) {
-        getScore getscore = new getScore(this, bundle);
+        com.identy.getScore getscore = new com.identy.getScore(this, bundle);
         byte[] bArr = getFingerPrintQualityScore;
         int i = 136;
         byte b = bArr[136];

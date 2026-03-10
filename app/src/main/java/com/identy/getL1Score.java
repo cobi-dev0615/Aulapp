@@ -584,7 +584,7 @@ final class getL1Score extends getL3Score {
                 if (PngjBadSignature3 == null) {
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getMode(0), TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0) + 24, View.resolveSize(0, 0) + 697, 1457201313, false, null, new Class[]{Integer.TYPE});
                 }
-                PngjBadSignature$1eba2e16 = getFingerPrintQualityScore.PngjBadSignature.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature3).newInstance(objArr9), 267851442);
+                PngjBadSignature$1eba2e16 = (Object[]) getFingerPrintQualityScore.PngjBadSignature.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature3).newInstance(objArr9), 267851442);
                 Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                 if (PngjBadSignature4 == null) {
                     char red = (char) (14830 - Color.red(0));

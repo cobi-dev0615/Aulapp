@@ -693,7 +693,7 @@ public class VerifyFingersActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Gravity.getAbsoluteGravity(0, 0), 24 - Color.red(0), KeyEvent.normalizeMetaState(0) + 697, 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadSignature$1eba2e16 = arid.chunks.PngBadCharsetException.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -1209935742);
+            PngjBadSignature$1eba2e16 = (Object[]) arid.chunks.PngBadCharsetException.PngjBadSignature$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -1209935742);
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature5 == null) {
                 char keyRepeatDelay = (char) (14830 - (ViewConfiguration.getKeyRepeatDelay() >> 16));
@@ -799,7 +799,7 @@ public class VerifyFingersActivity extends FingerActivity {
         super.values(bundle);
         try {
             try {
-                this.onErrorResponse = new isAuthSucess(this, this, this.PngjExceptionInternal, this.a, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
+                this.onErrorResponse = new com.identy.isAuthSucess(this, this, this.PngjExceptionInternal, this.a, IdentySdk.getInstance().u(), this.PngjUnsupportedException);
                 getNfiq1Score = (getOveralTimetaken + 99) % 128;
             } catch (Exception unused) {
             }

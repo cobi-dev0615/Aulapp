@@ -447,7 +447,7 @@ public class EnrollThumbActivity extends FingerActivity {
         enrollThumbActivity.PngjBadCrcException.clear();
         enrollThumbActivity.PngjBadCrcException.putAll(hashMap3);
         enrollThumbActivity.onErrorResponse.PngjException(R.string.id_processing);
-        new getAsHighestSecurityLevelReached(this, new valueOf()).PngjException(enrollThumbActivity.PngjBadCrcException, e1.PngjInputException);
+        new com.identy.ui.c.getAsHighestSecurityLevelReached(this, new valueOf()).PngjException(enrollThumbActivity.PngjBadCrcException, com.identy.e1.PngjInputException);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x029e  */
@@ -563,7 +563,7 @@ public class EnrollThumbActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) KeyEvent.normalizeMetaState(0), 24 - View.MeasureSpec.getMode(0), Color.rgb(0, 0, 0) + 16777913, 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjException$1eba2e16 = NativeAlgoUtils.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), 459156405);
+            PngjException$1eba2e16 = (Object[]) NativeAlgoUtils.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), 459156405);
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature5 == null) {
                 char threadPriority = (char) (((Process.getThreadPriority(0) + 20) >> 6) + 14830);
