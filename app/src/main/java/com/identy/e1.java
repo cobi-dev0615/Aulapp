@@ -705,7 +705,7 @@ public class e1 extends BroadcastReceiver {
             this.PngjBadCrcException = runnable;
         }
 
-        private static void a(String str, int i, byte b, Object[] objArr) {
+        private static void a(String str, int i, byte b, Object[] objArr) throws Exception {
             int i2;
             int i3;
             char c;
@@ -1406,7 +1406,7 @@ public class e1 extends BroadcastReceiver {
         }
     }
 
-    private static void d(String str, int i, byte b, Object[] objArr) {
+    private static void d(String str, int i, byte b, Object[] objArr) throws Exception {
         int i2;
         float f;
         char c;
@@ -1636,9 +1636,9 @@ public class e1 extends BroadcastReceiver {
         setPersonSelected = (char) 13510;
     }
 
-    private static String getPadSub3() {
-        BufferedReader bufferedReader;
-        String property;
+    private static String getPadSub3() throws Exception {
+        BufferedReader bufferedReader = null;
+        String property = "";
         StringBuilder sb = new StringBuilder();
         try {
             bufferedReader = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(new String[]{"logcat", "-d"}).getInputStream()), ConstantsKt.DEFAULT_BLOCK_SIZE);
@@ -1647,7 +1647,7 @@ public class e1 extends BroadcastReceiver {
             e.printStackTrace();
         }
         while (true) {
-            String readLine = bufferedReader.readLine();
+            String readLine = bufferedReader != null ? bufferedReader.readLine() : null;
             if (readLine != null) {
                 int i = getClassForDetection + 5;
                 markIntroSetting = i % 128;
@@ -1717,7 +1717,7 @@ public class e1 extends BroadcastReceiver {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private static org.camera.preview.PngjBadCrcException.PngjBadSignature valueOf(Context context) {
-        boolean z;
+        boolean z = false;
         int i;
         ActivityManager activityManager = (ActivityManager) context.getSystemService("activity");
         activityManager.isLowRamDevice();
@@ -1880,7 +1880,7 @@ public class e1 extends BroadcastReceiver {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void PngBadCharsetException() {
-        long timeInMillis;
+        long timeInMillis = 0L;
         this.getTemplates = true;
         long timeInMillis2 = Calendar.getInstance().getTimeInMillis();
         try {
@@ -2036,7 +2036,7 @@ public class e1 extends BroadcastReceiver {
             }
             try {
                 jSONObject = new Captures3Meta(identySdk.getInstallUserID(), identySdk.getInstallationID(), this.getCaptureClass, postCaptureInput, postCaptureOutPut, identySdk.getAction(), identySdk.getAttackS(), identySdk.getInternalTrnsactionID(), this.cvtmat2ba, new JSONArray()).toJson().put("logs", getPadSub3());
-            } catch (JSONException e2) {
+            } catch (Exception e2) {
                 e2.printStackTrace();
                 jSONObject = null;
             }
@@ -2374,9 +2374,9 @@ public class e1 extends BroadcastReceiver {
         int i;
         com.identy.Action action;
         boolean z;
-        boolean z2;
-        boolean z3;
-        boolean z4;
+        boolean z2 = false;
+        boolean z3 = false;
+        boolean z4 = false;
         if (!this.PngBadCharsetException && !this.getCaptureTime) {
             markIntroSetting = (getClassForDetection + 23) % 128;
             if (!this.onErrorResponse && this.DeduplicationIdentyResponse < 110) {
@@ -2629,6 +2629,7 @@ public class e1 extends BroadcastReceiver {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void a() {
+      try {
         char c;
         int i;
         char c2;
@@ -2950,6 +2951,9 @@ public class e1 extends BroadcastReceiver {
         this.pfkrolChangeMinMaxWidth = pngjPrematureEnding;
         pngjPrematureEnding.start();
         getClassForDetection = (markIntroSetting + 91) % 128;
+      } catch (Exception e) {
+          throw new RuntimeException(e);
+      }
     }
 
     public void e1() {
