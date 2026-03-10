@@ -163,6 +163,7 @@ public class Enroll2TActivity extends FingerActivity {
             bArr2[i] = (byte) i3;
             int i102 = i5 + 1;
             if (i2 == i4) {
+                return new String(bArr2, 0);
             }
         } else {
             i = 0;
@@ -170,8 +171,10 @@ public class Enroll2TActivity extends FingerActivity {
             bArr2[i] = (byte) i3;
             int i1022 = i5 + 1;
             if (i2 == i4) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -312,6 +315,7 @@ public class Enroll2TActivity extends FingerActivity {
             }
             cArr2 = cArr;
         }
+        try {
         char c9 = c7;
         char c10 = c8;
         int i9 = i6;
@@ -457,6 +461,13 @@ public class Enroll2TActivity extends FingerActivity {
             }
         }
         objArr[0] = new String(cArr3);
+        } catch (Throwable th) {
+            Throwable cause = th.getCause();
+            if (cause == null) {
+                throw new RuntimeException(th);
+            }
+            throw new RuntimeException(cause);
+        }
     }
 
     public static void init$0() {
@@ -570,13 +581,14 @@ public class Enroll2TActivity extends FingerActivity {
     public void attachBaseContext(Context context) {
         int i;
         char c;
-        int intValue;
-        Object[] PngjBadCrcException$52c725b;
-        char c2;
+        int intValue = 0;
+        Object[] PngjBadCrcException$52c725b = null;
+        char c2 = 0;
         Object[] objArr;
         int i2;
         int i3;
         super.attachBaseContext(context);
+        try {
         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature == null) {
             char c3 = (char) (14829 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)));
@@ -739,6 +751,9 @@ public class Enroll2TActivity extends FingerActivity {
         Object[] objArr15 = new Object[1];
         c("\u0002\u0015\u0007\u0000\u0010\u0002\u0012\u0013\u0017\t\u0006\f\u0004\u0001\u0014\u0007", 15 - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0'), (byte) (TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0) + 43), objArr15);
         intValue = ((Integer) cls3.getMethod((String) objArr15[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
