@@ -1018,7 +1018,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
                         pngjBadSignature3.getPadSub1.setTextSize((pngjBadSignature3.getAsHighestSecurityLevelReached * 42.0f) + 0.5f);
                         pngjBadSignature3.getPadSub1.setTextAlign(Paint.Align.CENTER);
                         i5 = 21;
-                        pngjBadSignature3.values(canvas, pngjBadSignature3.getPadSub1, j2 < 60 ? String.valueOf(j2) : org.camera.a.PngjBadSignature.valueOf(j2), Color.rgb(244, 67, 54), -16777216, canvas.getWidth() / 2, canvas.getHeight() / 2, com.identy.PngjUnsupportedException.values.ALIGNMENT_BOTTOM, true, null);
+                        pngjBadSignature3.values(canvas, pngjBadSignature3.getPadSub1, j2 < 60 ? String.valueOf(j2) : org.camera.a.PngjBadSignature.valueOf(j2), Color.rgb(244, 67, 54), -16777216, canvas.getWidth() / 2, canvas.getHeight() / 2, 2 /* ALIGNMENT_BOTTOM */, true, null);
                         canvas2 = canvas;
                     }
                 }
@@ -1050,7 +1050,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
                     canvas2.drawCircle(width4, height3, f25, pngjBadSignature3.getPadSub1);
                     pngjBadSignature3.getPadSub1.setStyle(Paint.Style.FILL);
                 } else {
-                    pngjBadSignature3.getQualityScore = i;
+                    pngjBadSignature3.getQualityScore = i != 0;
                 }
             }
             org.camera.preview.PngjBadCrcException pngjBadCrcException2 = pngjBadCrcException;
@@ -1153,7 +1153,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
         }
     }
 
-    private int values(Canvas canvas, Paint paint, String str, int i, int i2, int i3, int i4, values valuesVar, boolean z, Rect rect) {
+    private int values(Canvas canvas, Paint paint, String str, int i, int i2, int i3, int i4, int valuesVar, boolean z, Rect rect) {
         float f = this.values.getResources().getDisplayMetrics().density;
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(i2);
@@ -1178,13 +1178,13 @@ public final class PngjUnsupportedException implements ApplicationInterface {
         rect3.right = i3 + i5 + rect3.right;
         int i6 = rect3.top;
         int i7 = ((-i6) + i5) - 1;
-        if (valuesVar == com.identy.PngjUnsupportedException.values.ALIGNMENT_TOP) {
+        if (valuesVar == 0 /* ALIGNMENT_TOP */) {
             int i8 = (rect3.bottom - i6) + (i5 << 1);
             int i9 = i4 - 1;
             rect3.top = i9;
             rect3.bottom = i9 + i8;
             i4 += i7;
-        } else if (valuesVar == com.identy.PngjUnsupportedException.values.ALIGNMENT_CENTRE) {
+        } else if (valuesVar == 1 /* ALIGNMENT_CENTRE */) {
             int i10 = (rect3.bottom - i6) + (i5 << 1);
             int i11 = (int) ((((i6 + i4) - i5) + (i4 - 1)) * 0.5d);
             rect3.top = i11;
