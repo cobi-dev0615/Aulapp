@@ -8183,7 +8183,8 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             e.printStackTrace();
         }
         while (true) {
-            String readLine = bufferedReader.readLine();
+            String readLine;
+            try { readLine = bufferedReader.readLine(); } catch (IOException e2) { break; }
             if (readLine != null) {
                 int i2 = setFoundMatchingTemplates + 11;
                 toJson = i2 % 128;
@@ -8423,7 +8424,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                 f(b, b2, (byte) (b2 | 13), objArr);
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(threadPriority, keyRepeatTimeout, indexOf, -815159504, false, (String) objArr[0], null);
             }
-            ((Field) PngjBadSignature2).getLong(null);
+            try { ((Field) PngjBadSignature2).getLong(null); } catch (Exception e) { throw new RuntimeException(e); }
             throw null;
         }
         super.attachBaseContext(context);
@@ -8880,10 +8881,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         int i6;
         int intValue = 0;
         Object[] values$1eba2e16 = null;
-        int intValue2;
-        Object[] objArr;
-        Object[] objArr2;
-        Object[] objArr3;
+        int intValue2 = 0;
+        Object[] objArr = null;
+        Object[] objArr2 = null;
+        Object[] objArr3 = null;
         int i7;
         int i8;
         int i9;
