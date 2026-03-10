@@ -494,6 +494,7 @@ public class Capture4FActivity extends FingerActivity {
             if (i2 == i3) {
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -901,8 +902,8 @@ public class Capture4FActivity extends FingerActivity {
     public void attachBaseContext(Context context) {
         long j;
         char c;
-        int intValue;
-        Object[] valueOf$1eba2e16;
+        int intValue = 0;
+        Object[] valueOf$1eba2e16 = null;
         Object[] objArr;
         int i;
         int i2;
@@ -1157,7 +1158,6 @@ public class Capture4FActivity extends FingerActivity {
                     case -11:
                         getdata.PngjException(15);
                         throw ((Throwable) getdata.PngjInputException);
-                        break;
                     case -10:
                         i2 = 39;
                     case -9:
@@ -1198,7 +1198,6 @@ public class Capture4FActivity extends FingerActivity {
                         i2 = i7;
                 }
             }
-            throw new RuntimeException();
         } catch (Throwable th2) {
             Throwable cause = th2.getCause();
 
@@ -1388,7 +1387,6 @@ public class Capture4FActivity extends FingerActivity {
                     case -17:
                         getdata.PngjException(15);
                         throw ((Throwable) getdata.PngjInputException);
-                        break;
                     case -16:
                         i8 = 44;
                     case -15:
