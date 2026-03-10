@@ -331,7 +331,7 @@ public class Enroll2IndexActivity extends FingerActivity {
                     cArr = cArr2;
                     j = j2;
                 }
-                iArr6[i13] = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr3)).intValue();
+                try { iArr6[i13] = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr3)).intValue(); } catch (Exception _e) { throw new RuntimeException(_e); }
                 i13++;
                 j2 = j;
                 cArr2 = cArr;
@@ -379,7 +379,7 @@ public class Enroll2IndexActivity extends FingerActivity {
                     byte b6 = b5;
                     PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (2786 - View.combineMeasuredStates(0, 0)), 36 - View.combineMeasuredStates(0, 0), 785 - (TypedValue.complexToFloat(0) > f ? 1 : (TypedValue.complexToFloat(0) == f ? 0 : -1)), 2122029718, false, $$i(b5, b6, (byte) (b6 + 1)), new Class[]{Object.class, cls, Object.class, Object.class});
                 }
-                int intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
+                int intValue; try { intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue(); } catch (Exception _e) { throw new RuntimeException(_e); }
                 pngBadCharsetException.PngjException = pngBadCharsetException.PngjBadCrcException;
                 pngBadCharsetException.PngjBadCrcException = intValue;
                 i16++;
@@ -414,7 +414,7 @@ public class Enroll2IndexActivity extends FingerActivity {
             } else {
                 i3 = 16;
             }
-            ((Method) PngjBadSignature5).invoke(null, objArr5);
+            try { ((Method) PngjBadSignature5).invoke(null, objArr5); } catch (Exception _e) { throw new RuntimeException(_e); }
             i2 = i23;
         }
     }
@@ -510,8 +510,8 @@ public class Enroll2IndexActivity extends FingerActivity {
         char c;
         char c2;
         long j;
-        int intValue;
-        Object[] PngjBadCrcException$52c725b;
+        int intValue = 0;
+        Object[] PngjBadCrcException$52c725b = null;
         Object[] objArr;
         int i2;
         int i3;
@@ -532,7 +532,7 @@ public class Enroll2IndexActivity extends FingerActivity {
         } else {
             i = 864471691;
         }
-        long j2 = ((Field) PngjBadSignature2).getLong(null);
+        long j2; try { j2 = ((Field) PngjBadSignature2).getLong(null); } catch (Exception _e) { throw new RuntimeException(_e); }
         try {
             try {
                 if (j2 != -1) {
@@ -641,7 +641,7 @@ public class Enroll2IndexActivity extends FingerActivity {
             if (PngjBadSignature5 == null) {
                 PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0, 0), Color.red(0) + 24, 696 - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0'), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadCrcException$52c725b = org.c.a.values$values.PngjBadCrcException$52c725b(intValue, ((Constructor) PngjBadSignature5).newInstance(objArr11));
+            PngjBadCrcException$52c725b = (Object[]) org.c.a.values$values.PngjBadCrcException$52c725b(intValue, ((Constructor) PngjBadSignature5).newInstance(objArr11));
             Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature6 == null) {
                 char maxKeyCode = (char) ((KeyEvent.getMaxKeyCode() >> 16) + 14830);
@@ -665,12 +665,14 @@ public class Enroll2IndexActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
+        try {
         Object[] objArr13 = new Object[1];
         c(new int[]{155833484, -766790118, -1804259995, 1196741573, -1100295407, -917697114, -1490213639, 942890872}, ExpandableListView.getPackedPositionGroup(j) + 16, objArr13);
         Class<?> cls3 = Class.forName((String) objArr13[0]);
         Object[] objArr14 = new Object[1];
         c(new int[]{425499607, -1580448679, -1133630788, -2113699779, 2099968855, 1531750131, -217347101, 866688627}, 17 - (SystemClock.elapsedRealtimeNanos() > j ? 1 : (SystemClock.elapsedRealtimeNanos() == j ? 0 : -1)), objArr14);
         intValue = ((Integer) cls3.getMethod((String) objArr14[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception _e) { throw new RuntimeException(_e); }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity

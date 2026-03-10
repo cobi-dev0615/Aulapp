@@ -254,7 +254,7 @@ public class Enroll4FActivity extends FingerActivity {
                             cArr = cArr2;
                             iArr2 = iArr6;
                         }
-                        iArr7[i10] = ((Integer) ((Method) PngjBadSignature2).invoke(null, objArr3)).intValue();
+                        try { iArr7[i10] = ((Integer) ((Method) PngjBadSignature2).invoke(null, objArr3)).intValue(); } catch (Exception _e) { throw new RuntimeException(_e); }
                         i10 %= 1;
                     } else {
                         cArr = cArr2;
@@ -266,7 +266,7 @@ public class Enroll4FActivity extends FingerActivity {
                             byte b6 = b5;
                             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) - 1), 32 - (SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1)), 1381 - View.MeasureSpec.getMode(0), -1667748131, false, $$g(b5, b6, b6), new Class[]{cls});
                         }
-                        iArr7[i10] = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr4)).intValue();
+                        try { iArr7[i10] = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr4)).intValue(); } catch (Exception _e) { throw new RuntimeException(_e); }
                         i10++;
                     }
                     cArr2 = cArr;
@@ -318,7 +318,7 @@ public class Enroll4FActivity extends FingerActivity {
                     } else {
                         c = c5;
                     }
-                    int intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr5)).intValue();
+                    int intValue; try { intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr5)).intValue(); } catch (Exception _e) { throw new RuntimeException(_e); }
                     pngBadCharsetException.PngjException = pngBadCharsetException.PngjBadCrcException;
                     pngBadCharsetException.PngjBadCrcException = intValue;
                     i14++;
@@ -351,7 +351,7 @@ public class Enroll4FActivity extends FingerActivity {
                 if (PngjBadSignature5 == null) {
                     PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) TextUtils.getTrimmedLength(BuildConfig.FLAVOR), 22 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), 29 - (ViewConfiguration.getPressedStateDuration() >> 16), 749318647, false, "E", new Class[]{Object.class, Object.class});
                 }
-                ((Method) PngjBadSignature5).invoke(null, objArr6);
+                try { ((Method) PngjBadSignature5).invoke(null, objArr6); } catch (Exception _e) { throw new RuntimeException(_e); }
                 i8 = i21;
                 c2 = 0;
             }
@@ -367,6 +367,7 @@ public class Enroll4FActivity extends FingerActivity {
             int i2;
             int i3;
             int i4;
+            int i10;
             int i5 = 39 - s;
             int i6 = 118 - (i * 38);
             byte[] bArr = $$a;
@@ -375,7 +376,7 @@ public class Enroll4FActivity extends FingerActivity {
             if (bArr == null) {
                 int i8 = i7;
                 int i9 = i5;
-                int i10 = 0;
+                i10 = 0;
                 int i11 = i9 + (-i8) + 5;
                 i2 = i5 + 1;
                 i3 = i11;
@@ -724,7 +725,7 @@ public class Enroll4FActivity extends FingerActivity {
             this.valueOf.clear();
             this.valueOf.putAll(hashMap);
             this.onErrorResponse.PngjException(R.string.id_processing);
-            new getAsHighestSecurityLevelReached(this, new PngjBadSignature(hashMap2)).PngjException(this.valueOf, e1.PngjInputException);
+            new getAsHighestSecurityLevelReached(this, new PngjBadSignature(hashMap2)).PngjException(this.valueOf, com.identy.e1.PngjInputException);
         }
     }
 
@@ -736,8 +737,8 @@ public class Enroll4FActivity extends FingerActivity {
     */
     public void attachBaseContext(Context context) {
         long j;
-        int intValue;
-        Object[] PngjException$1eba2e16;
+        int intValue = 0;
+        Object[] PngjException$1eba2e16 = null;
         int i;
         int i2;
         super.attachBaseContext(context);
@@ -753,7 +754,7 @@ public class Enroll4FActivity extends FingerActivity {
             b((byte) (b - 1), (byte) (-bArr[6]), b, objArr);
             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c, i4, red, -815159504, false, (String) objArr[0], null);
         }
-        long j2 = ((Field) PngjBadSignature2).getLong(null);
+        long j2; try { j2 = ((Field) PngjBadSignature2).getLong(null); } catch (Exception _e) { throw new RuntimeException(_e); }
         try {
             try {
                 if (j2 != -1) {
@@ -876,12 +877,14 @@ public class Enroll4FActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
+        try {
         Object[] objArr12 = new Object[1];
         c("䮀䠑䯪拓츺鬊⾈倀\ue122鵒撹稛ỿ㞄ㄇ蕸둗戢쾅\u2fe0", (ViewConfiguration.getJumpTapTimeout() >> 16) + 1, objArr12);
         Class<?> cls3 = Class.forName((String) objArr12[0]);
         Object[] objArr13 = new Object[1];
         c("\ue204ꙅ\ue26d貂\ue27f띜甜છ䣼猃䣺ₗ띔\ud99fᵱ\udff2ᷣ豭\ue3d2畳", -((byte) KeyEvent.getModifierMetaStateMask()), objArr13);
         intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception _e) { throw new RuntimeException(_e); }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity

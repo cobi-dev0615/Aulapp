@@ -710,7 +710,6 @@ public class CaptureThumbActivity extends FingerActivity {
                     default:
                 }
             }
-            throw new RuntimeException();
         } catch (Throwable th2) {
             Throwable cause = th2.getCause();
 
