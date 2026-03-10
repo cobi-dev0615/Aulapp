@@ -172,11 +172,11 @@ public class PngjBadCrcException extends View {
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
+                j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int a = a.a();
-                    int c = a.c((~(a | 267287048)) | (~((-231602232) | a)) | 98359, 407, (((~(231602231 | a)) | (~((~a) | (-267287049))) | 98359) * 407) + (((35783176 | 0) * (-814)) - 1930086891), -2068837805);
+                    int a = defpackage.a.a();
+                    int c = defpackage.a.c((~(a | 267287048)) | (~((-231602232) | a)) | 98359, 407, (((~(231602231 | a)) | (~((~a) | (-267287049))) | 98359) * 407) + (((35783176 | 0) * (-814)) - 1930086891), -2068837805);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -255,11 +255,11 @@ public class PngjBadCrcException extends View {
         try {
             if (objArr2 != null) {
                 long j2 = ((long[]) objArr2[0])[0];
-                j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
+                j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
                     int myPid = Process.myPid();
-                    int c = a.c(myPid | (-537692161), 591, (((~((~myPid) | (-537692161))) | 38802880) * (-591)) + 1905042126, 469323715);
+                    int c = defpackage.a.c(myPid | (-537692161), 591, (((~((~myPid) | (-537692161))) | 38802880) * (-591)) + 1905042126, 469323715);
                     int i2 = c ^ (c << 13);
                     int i3 = i2 ^ (i2 >>> 17);
                     ((int[]) objArr[1])[0] = i3 ^ (i3 << 5);
