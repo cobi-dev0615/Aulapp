@@ -43,8 +43,8 @@ public class Capture4FActivity extends FingerActivity {
     private static int $10;
     private static int $11;
     private static int PngjBadCrcException;
-    private static final int getFingerPrintQualityScore = 0;
-    private static final byte[] getScore = null;
+    private static int getFingerPrintQualityScore = 0;
+    private static byte[] getScore = null;
     private static int valueOf;
     private static int[] values;
 
@@ -490,7 +490,7 @@ public class Capture4FActivity extends FingerActivity {
         } else {
             i2 = 0;
             bArr2[i2] = (byte) i5;
-            i6 = i2 + 1;
+            int i6 = i2 + 1;
             if (i2 == i3) {
             }
         }
@@ -918,7 +918,8 @@ public class Capture4FActivity extends FingerActivity {
             c(b, b2, b2, objArr2);
             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(jumpTapTimeout, longPressTimeout, i3, -815159504, false, (String) objArr2[0], null);
         }
-        long j2 = ((Field) PngjBadSignature2).getLong(null);
+        long j2;
+        try { j2 = ((Field) PngjBadSignature2).getLong(null); } catch (Exception _e) { throw new RuntimeException(_e); }
         try {
             try {
                 if (j2 != -1) {
@@ -1197,7 +1198,7 @@ public class Capture4FActivity extends FingerActivity {
                         i2 = i7;
                 }
             }
-            throw new RuntimeException(th);
+            throw new RuntimeException();
         } catch (Throwable th2) {
             Throwable cause = th2.getCause();
 

@@ -2559,15 +2559,12 @@ public class Capture2TActivity extends FingerActivity {
                 long j212 = (j207 * ((j204 ^ (longValue27 | j208)) | j210 | ((j211 | j209) ^ j204))) + ((((j209 | longValue27) ^ j204) | j210 | ((j211 | j208) ^ j204)) * j207) + j206 + 128201948;
                 int i514 = ~((int) Runtime.getRuntime().totalMemory());
             } catch (Throwable th11) {
-                cause = th11.getCause();
-                if (cause == null) {
+                Throwable cause11 = th11.getCause();
+                if (cause11 != null) {
+                    throw new RuntimeException(cause11);
                 }
+                throw new RuntimeException(th11);
             }
-            cause = th11.getCause();
-            if (cause == null) {
-                throw new RuntimeException(cause);
-            }
-            throw new RuntimeException(th11);
             i8 = 0;
             if (i8 == 0) {
             }
@@ -3266,7 +3263,8 @@ public class Capture2TActivity extends FingerActivity {
             b(b, b2, b2, objArr);
             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(keyRepeatDelay, i4, indexOf, -815159504, false, (String) objArr[0], null);
         }
-        long j = ((Field) PngjBadSignature2).getLong(null);
+        long j;
+        try { j = ((Field) PngjBadSignature2).getLong(null); } catch (Exception _e) { throw new RuntimeException(_e); }
         try {
             try {
                 if (j != -1) {
@@ -3374,7 +3372,7 @@ public class Capture2TActivity extends FingerActivity {
             if (PngjBadSignature5 == null) {
                 PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1))), 24 - ((Process.getThreadPriority(0) + 20) >> 6), 696 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjException$52c725b = PngjBadSignature.PngjException$52c725b(intValue, ((Constructor) PngjBadSignature5).newInstance(objArr11));
+            PngjException$52c725b = null;
             Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature6 == null) {
                 char c4 = (char) ((PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 14830);
