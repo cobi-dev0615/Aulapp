@@ -917,7 +917,7 @@ public class Capture4FActivity extends FingerActivity {
             byte b = (byte) ($$a[20] - 1);
             byte b2 = b;
             Object[] objArr2 = new Object[1];
-            c(b, b2, b2, objArr2);
+            try { c(b, b2, b2, objArr2); } catch (Exception _e) { throw new RuntimeException(_e); }
             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(jumpTapTimeout, longPressTimeout, i3, -815159504, false, (String) objArr2[0], null);
         }
         long j2;

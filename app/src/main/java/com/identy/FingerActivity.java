@@ -6819,7 +6819,19 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
     }
 
     public class getScore implements DialogInterface.OnDismissListener {
+        public Object PngjPrematureEnding;
+        public Object PngjUnsupportedException;
+        public int PngjBadSignature;
+        public int valueOf;
+
         public getScore() {
+        }
+
+        public getScore(FingerActivity activity, Bundle bundle) {
+        }
+
+        public int PngjBadCrcException(int i) {
+            return 0;
         }
 
         @Override // android.content.DialogInterface.OnDismissListener

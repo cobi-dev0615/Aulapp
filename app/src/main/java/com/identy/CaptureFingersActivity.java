@@ -94,9 +94,9 @@ public class CaptureFingersActivity extends FingerActivity {
         byte[] bArr = $$c;
         byte[] bArr2 = new byte[1 - i7];
         int i9 = 0 - i7;
+        int i10 = 0;
         if (bArr == null) {
             byte[] bArr3 = bArr;
-            int i10 = 0;
             int i11 = i6;
             int i12 = i8 + i11;
             int i13 = i6;
@@ -134,6 +134,7 @@ public class CaptureFingersActivity extends FingerActivity {
             if (i5 == i9) {
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
