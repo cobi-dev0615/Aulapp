@@ -129,7 +129,7 @@ public final class PngjException implements SensorEventListener {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void b(int i, boolean z, String str, int i2, int i3, Object[] objArr) {
+    private static void b(int i, boolean z, String str, int i2, int i3, Object[] objArr) throws Exception {
         char[] cArr;
         int i4;
         Throwable cause;
@@ -266,14 +266,15 @@ public final class PngjException implements SensorEventListener {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void onSensorChanged(SensorEvent sensorEvent) {
+      try {
         long j;
         int i;
         int i2;
         char c;
         char c2;
         int intValue;
-        Object[] PngjBadCrcException$1eba2e16;
-        int i3;
+        Object[] PngjBadCrcException$1eba2e16 = null;
+        int i3 = 0;
         int i4;
         PngjUnsupportedException = (PngjInputException + 35) % 128;
         if (this.PngjException != 0) {
@@ -462,5 +463,6 @@ public final class PngjException implements SensorEventListener {
         }
         this.PngjException = sensorEvent.timestamp;
         PngjInputException = (PngjUnsupportedException + 77) % 128;
+      } catch (Exception e) { throw new RuntimeException(e); }
     }
 }
