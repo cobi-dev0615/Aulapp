@@ -1018,7 +1018,7 @@ public final class PngjUnsupportedException implements ApplicationInterface {
                         pngjBadSignature3.getPadSub1.setTextSize((pngjBadSignature3.getAsHighestSecurityLevelReached * 42.0f) + 0.5f);
                         pngjBadSignature3.getPadSub1.setTextAlign(Paint.Align.CENTER);
                         i5 = 21;
-                        pngjBadSignature3.values(canvas, pngjBadSignature3.getPadSub1, j2 < 60 ? String.valueOf(j2) : org.camera.a.PngjBadSignature.valueOf(j2), Color.rgb(244, 67, 54), -16777216, canvas.getWidth() / 2, canvas.getHeight() / 2, 2 /* ALIGNMENT_BOTTOM */, true, null);
+                        values(canvas, pngjBadSignature3.getPadSub1, j2 < 60 ? String.valueOf(j2) : org.camera.a.PngjBadSignature.valueOf(j2), Color.rgb(244, 67, 54), -16777216, canvas.getWidth() / 2, canvas.getHeight() / 2, 2 /* ALIGNMENT_BOTTOM */, true, null);
                         canvas2 = canvas;
                     }
                 }

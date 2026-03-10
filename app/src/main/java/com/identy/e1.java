@@ -326,12 +326,12 @@ public class e1 extends BroadcastReceiver {
             @Override // com.identy.PngjPrematureEnding
             public final void valueOf(JSONObject jSONObject) {
                 Mat.n_release(PngjExceptionInternal.this.values.PngjException);
-                FingerAS fingerAS = FingerAS.NONE;
+                com.identy.FingerAS fingerAS = com.identy.FingerAS.NONE;
                 try {
                     boolean z = jSONObject.getBoolean("any_spoof_detected");
                     String[] split = jSONObject.getString("refid").split("-");
                     long longValue = split.length > 1 ? Long.valueOf(split[split.length - 1]).longValue() : 0L;
-                    FingerAS valueOf = FingerAS.valueOf(jSONObject.getJSONArray("data").getJSONObject(0).getString("as_highest_security_level_reached"));
+                    com.identy.FingerAS valueOf = com.identy.FingerAS.valueOf(jSONObject.getJSONArray("data").getJSONObject(0).getString("as_highest_security_level_reached"));
                     ASResult asResult = this.values.getAsResult();
                     asResult.liveness_true_up_to_security_level = valueOf;
                     asResult.setAsValidatedLocal(false);
