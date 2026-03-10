@@ -75,6 +75,10 @@ public final class isAuthSucess extends e1 {
     List pfkrol;
     private List resetAttempt;
 
+    public static Object[] bridgePngjException$1eba2e16(int a, Object b, int c) {
+        return PngjException.AnimationAnimationListenerC0024PngjException.RunnableC0025PngjException.PngjException$1eba2e16(a, b, c);
+    }
+
     public class PngjBadCrcException implements org.c.a.PngjBadCrcException.values {
         public PngjBadCrcException() {
         }

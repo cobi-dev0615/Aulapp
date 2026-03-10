@@ -115,8 +115,8 @@ public class Verify4FActivity extends FingerActivity {
                     verifyResult3.setMatched_true_up_to_security_level(verifyResult.matched_true_up_to_security_level);
                     getProcessingTime getprocessingtime = (getProcessingTime) entry2.getValue();
                     getprocessingtime.PngjBadCrcException(verifyResult.isMatched());
-                    ((a) getprocessingtime).values = Math.round(verifyResult.getFingerScore((Pair) entry2.getKey()));
-                    Verify4FActivity.this.onErrorResponse.Capture2IndexActivity.PngjBadSignature.put((Pair) entry2.getKey(), Integer.valueOf(((a) getprocessingtime).values));
+                    ((com.identy.IdentyA) getprocessingtime).values = Math.round(verifyResult.getFingerScore((Pair) entry2.getKey()));
+                    Verify4FActivity.this.onErrorResponse.Capture2IndexActivity.PngjBadSignature.put((Pair) entry2.getKey(), Integer.valueOf(((com.identy.IdentyA) getprocessingtime).values));
                 }
                 Verify4FActivity.this.onErrorResponse.Capture2IndexActivity.getFingerPrintQualityScore = verifyResult.isMatched() ? 1 : 2;
                 try {
@@ -143,7 +143,7 @@ public class Verify4FActivity extends FingerActivity {
                     i = IdentySdk.getInstance().getAllowedAttempts();
                     e1Var = Verify4FActivity.this.onErrorResponse;
                     e1Var.getEncryptedTemplates++;
-                    if (!((a) this.valueOf.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
+                    if (!((com.identy.IdentyA) this.valueOf.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
                     }
                 }
             } catch (Exception unused4) {
@@ -156,7 +156,7 @@ public class Verify4FActivity extends FingerActivity {
             }
             e1Var = Verify4FActivity.this.onErrorResponse;
             e1Var.getEncryptedTemplates++;
-            if (!((a) this.valueOf.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
+            if (!((com.identy.IdentyA) this.valueOf.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
                 Verify4FActivity verify4FActivity3 = Verify4FActivity.this;
                 if (verify4FActivity3.onErrorResponse.getEncryptedTemplates < i) {
                     verify4FActivity3.e1();

@@ -54,7 +54,10 @@ public class EnrollThumbActivity extends FingerActivity {
         }
     }
 
-    public class valueOf implements com.identy.d.PngjBadCrcException {
+    public class valueOf implements com.identy.d.PngjBadCrcException, com.identy.d.PngjException {
+
+        @Override
+        public void PngjBadCrcException() {}
 
         public class PngjException implements Runnable {
             public PngjException() {
@@ -65,7 +68,7 @@ public class EnrollThumbActivity extends FingerActivity {
                 if (FingerActivity.PngjPrematureEnding) {
                     EnrollThumbActivity enrollThumbActivity = EnrollThumbActivity.this;
                     EnrollThumbActivity enrollThumbActivity2 = EnrollThumbActivity.this;
-                    enrollThumbActivity.getPadSub1 = new com.identy.ui.c.onErrorResponse(enrollThumbActivity2, (a) enrollThumbActivity2.PngjBadCrcException.get(new Pair(EnrollThumbActivity.this.PngjExceptionInternal.getHand(), Finger.THUMB)), EnrollThumbActivity.this.getQualityScore);
+                    enrollThumbActivity.getPadSub1 = new com.identy.ui.c.onErrorResponse(enrollThumbActivity2, (com.identy.IdentyA) enrollThumbActivity2.PngjBadCrcException.get(new Pair(EnrollThumbActivity.this.PngjExceptionInternal.getHand(), Finger.THUMB)), EnrollThumbActivity.this.getQualityScore);
                     WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
                     layoutParams.copyFrom(EnrollThumbActivity.this.getPadSub1.getWindow().getAttributes());
                     ((ViewGroup.LayoutParams) layoutParams).width = -1;

@@ -127,8 +127,8 @@ public class VerifyFingersActivity extends FingerActivity {
                     verifyResult2.setScore((int) Math.round(verifyResult.getScore()));
                     getProcessingTime getprocessingtime = (getProcessingTime) entry2.getValue();
                     getprocessingtime.PngjBadCrcException(verifyResult.isMatched());
-                    ((a) getprocessingtime).values = Math.round(verifyResult.getFingerScore((Pair) entry2.getKey()));
-                    VerifyFingersActivity.this.onErrorResponse.Capture2IndexActivity.PngjBadSignature.put((Pair) entry2.getKey(), Integer.valueOf(((a) getprocessingtime).values));
+                    ((com.identy.IdentyA) getprocessingtime).values = Math.round(verifyResult.getFingerScore((Pair) entry2.getKey()));
+                    VerifyFingersActivity.this.onErrorResponse.Capture2IndexActivity.PngjBadSignature.put((Pair) entry2.getKey(), Integer.valueOf(((com.identy.IdentyA) getprocessingtime).values));
                 }
                 VerifyFingersActivity.this.onErrorResponse.Capture2IndexActivity.getFingerPrintQualityScore = verifyResult.isMatched() ? 1 : 2;
                 try {
@@ -157,7 +157,7 @@ public class VerifyFingersActivity extends FingerActivity {
                 i = IdentySdk.getInstance().getAllowedAttempts();
                 e1Var = VerifyFingersActivity.this.onErrorResponse;
                 e1Var.getEncryptedTemplates++;
-                if (!((a) this.values.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
+                if (!((com.identy.IdentyA) this.values.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
                 }
             }
             try {
@@ -168,7 +168,7 @@ public class VerifyFingersActivity extends FingerActivity {
             }
             e1Var = VerifyFingersActivity.this.onErrorResponse;
             e1Var.getEncryptedTemplates++;
-            if (!((a) this.values.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
+            if (!((com.identy.IdentyA) this.values.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
                 VerifyFingersActivity verifyFingersActivity3 = VerifyFingersActivity.this;
                 if (verifyFingersActivity3.onErrorResponse.getEncryptedTemplates < i) {
                     verifyFingersActivity3.e1();

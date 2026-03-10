@@ -685,7 +685,7 @@ public class EnrollFingersActivity extends FingerActivity {
             if (PngjBadSignature6 == null) {
                 PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) TextUtils.getTrimmedLength(BuildConfig.FLAVOR), (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)) + 24, 698 - (ViewConfiguration.getZoomControlsTimeout() > j ? 1 : (ViewConfiguration.getZoomControlsTimeout() == j ? 0 : -1)), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjException$1eba2e16 = (Object[]) com.identy.isAuthSucess.PngjException.AnimationAnimationListenerC0024PngjException.RunnableC0025PngjException.PngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr12), 805595971);
+            PngjException$1eba2e16 = (Object[]) com.identy.isAuthSucess.bridgePngjException$1eba2e16(intValue, ((Constructor) PngjBadSignature6).newInstance(objArr12), 805595971);
             Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature7 == null) {
                 char packedPositionType = (char) (ExpandableListView.getPackedPositionType(j) + 14830);

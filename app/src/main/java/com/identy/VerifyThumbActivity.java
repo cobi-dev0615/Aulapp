@@ -119,8 +119,8 @@ public class VerifyThumbActivity extends FingerActivity {
                         verifyResult2.setScore((int) Math.round(verifyResult.getScore()));
                         getProcessingTime getprocessingtime = (getProcessingTime) entry2.getValue();
                         getprocessingtime.PngjBadCrcException(verifyResult.isMatched());
-                        ((a) getprocessingtime).values = Math.round(verifyResult.getFingerScore((Pair) entry2.getKey()));
-                        VerifyThumbActivity.this.onErrorResponse.Capture2IndexActivity.PngjBadSignature.put((Pair) entry2.getKey(), Integer.valueOf(((a) getprocessingtime).values));
+                        ((com.identy.IdentyA) getprocessingtime).values = Math.round(verifyResult.getFingerScore((Pair) entry2.getKey()));
+                        VerifyThumbActivity.this.onErrorResponse.Capture2IndexActivity.PngjBadSignature.put((Pair) entry2.getKey(), Integer.valueOf(((com.identy.IdentyA) getprocessingtime).values));
                     }
                     VerifyThumbActivity.this.onErrorResponse.Capture2IndexActivity.getFingerPrintQualityScore = verifyResult.isMatched() ? 1 : 2;
                     try {
@@ -149,7 +149,7 @@ public class VerifyThumbActivity extends FingerActivity {
                     i = IdentySdk.getInstance().getAllowedAttempts();
                     e1Var = VerifyThumbActivity.this.onErrorResponse;
                     e1Var.getEncryptedTemplates++;
-                    if (!((a) this.PngjBadSignature.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
+                    if (!((com.identy.IdentyA) this.PngjBadSignature.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
                     }
                 }
                 try {
@@ -160,7 +160,7 @@ public class VerifyThumbActivity extends FingerActivity {
                 }
                 e1Var = VerifyThumbActivity.this.onErrorResponse;
                 e1Var.getEncryptedTemplates++;
-                if (!((a) this.PngjBadSignature.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
+                if (!((com.identy.IdentyA) this.PngjBadSignature.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
                     VerifyThumbActivity verifyThumbActivity3 = VerifyThumbActivity.this;
                     if (verifyThumbActivity3.onErrorResponse.getEncryptedTemplates < i) {
                         verifyThumbActivity3.e1();
@@ -198,7 +198,7 @@ public class VerifyThumbActivity extends FingerActivity {
                         }
                     }
                     if (IdentySdk.getInstance().isDisplayPrints()) {
-                        VerifyThumbActivity.this.getPadSub1 = new com.identy.ui.c.valueOf(VerifyThumbActivity.this, (a) this.PngjBadSignature.get(new Pair(VerifyThumbActivity.this.PngjExceptionInternal.getHand(), Finger.THUMB)), valueof, VerifyThumbActivity.this.getQualityScore);
+                        VerifyThumbActivity.this.getPadSub1 = new com.identy.ui.c.valueOf(VerifyThumbActivity.this, (com.identy.IdentyA) this.PngjBadSignature.get(new Pair(VerifyThumbActivity.this.PngjExceptionInternal.getHand(), Finger.THUMB)), valueof, VerifyThumbActivity.this.getQualityScore);
                         VerifyThumbActivity.this.getPadSub1.show();
                         return;
                     }

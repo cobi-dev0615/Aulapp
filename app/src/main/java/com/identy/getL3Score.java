@@ -547,7 +547,7 @@ abstract class getL3Score extends e1 {
                     Iterator it = hashMap.entrySet().iterator();
                     while (it.hasNext()) {
                         try {
-                            ((a) ((Map.Entry) it.next()).getValue()).PngjException(templateArr, identySdk2.getWSQCompression(), IdentySdk.getInstance().getAction().equals(Action.ENROLL), pngjException);
+                            ((com.identy.IdentyA) ((Map.Entry) it.next()).getValue()).PngjException(templateArr, identySdk2.getWSQCompression(), IdentySdk.getInstance().getAction().equals(Action.ENROLL), pngjException);
                         } catch (Exception e2) {
                             e2.printStackTrace();
                         }

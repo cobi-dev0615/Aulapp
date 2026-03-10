@@ -79,7 +79,7 @@ public final class getAsHighestSecurityLevelReached {
         valueOf valueof = new valueOf(hashMap);
         Iterator it = hashMap.entrySet().iterator();
         while (it.hasNext()) {
-            new PngjException(this.PngjBadCrcException, valueof, j).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, (a) ((Map.Entry) it.next()).getValue());
+            new PngjException(this.PngjBadCrcException, valueof, j).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, (com.identy.IdentyA) ((Map.Entry) it.next()).getValue());
         }
     }
 }

@@ -117,8 +117,8 @@ public class Verify2TActivity extends FingerActivity {
                         verifyResult2.setScore((int) Math.round(verifyResult.getScore()));
                         getProcessingTime getprocessingtime = (getProcessingTime) entry2.getValue();
                         getprocessingtime.PngjBadCrcException(verifyResult.isMatched());
-                        ((a) getprocessingtime).values = Math.round(verifyResult.getFingerScore((Pair) entry2.getKey()));
-                        Verify2TActivity.this.onErrorResponse.Capture2IndexActivity.PngjBadSignature.put((Pair) entry2.getKey(), Integer.valueOf(((a) getprocessingtime).values));
+                        ((com.identy.IdentyA) getprocessingtime).values = Math.round(verifyResult.getFingerScore((Pair) entry2.getKey()));
+                        Verify2TActivity.this.onErrorResponse.Capture2IndexActivity.PngjBadSignature.put((Pair) entry2.getKey(), Integer.valueOf(((com.identy.IdentyA) getprocessingtime).values));
                     }
                     Verify2TActivity.this.onErrorResponse.Capture2IndexActivity.getFingerPrintQualityScore = verifyResult.isMatched() ? 1 : 2;
                     try {
@@ -147,7 +147,7 @@ public class Verify2TActivity extends FingerActivity {
                     i = IdentySdk.getInstance().getAllowedAttempts();
                     e1Var = Verify2TActivity.this.onErrorResponse;
                     e1Var.getEncryptedTemplates++;
-                    if (!((a) this.PngjException.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
+                    if (!((com.identy.IdentyA) this.PngjException.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
                     }
                 }
                 try {
@@ -158,7 +158,7 @@ public class Verify2TActivity extends FingerActivity {
                 }
                 e1Var = Verify2TActivity.this.onErrorResponse;
                 e1Var.getEncryptedTemplates++;
-                if (!((a) this.PngjException.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
+                if (!((com.identy.IdentyA) this.PngjException.get(e1Var.PngjExceptionInternal()[0])).PngjOutputException()) {
                     Verify2TActivity verify2TActivity3 = Verify2TActivity.this;
                     if (verify2TActivity3.onErrorResponse.getEncryptedTemplates < i) {
                         verify2TActivity3.e1();
