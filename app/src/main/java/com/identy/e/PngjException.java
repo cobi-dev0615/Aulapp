@@ -80,13 +80,16 @@ public class PngjException {
             i2++;
             bArr2[i] = (byte) i4;
             if (i == i5) {
+                return new String(bArr2, 0);
             }
         } else {
             i = 0;
             bArr2[i] = (byte) i4;
             if (i == i5) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -190,6 +193,7 @@ public class PngjException {
         }
         int i8 = i5;
         int i9 = i6;
+        try {
         Object[] objArr3 = {Integer.valueOf(PngBadCharsetException)};
         Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i8);
         long j2 = 0;
@@ -302,6 +306,13 @@ public class PngjException {
             cArr3[i22] = (char) (cArr3[i22] ^ 13722);
         }
         objArr[0] = new String(cArr3);
+        } catch (Throwable th2) {
+            Throwable cause2 = th2.getCause();
+            if (cause2 == null) {
+                throw new RuntimeException(th2);
+            }
+            throw new RuntimeException(cause2);
+        }
     }
 
     public static void init$0() {
