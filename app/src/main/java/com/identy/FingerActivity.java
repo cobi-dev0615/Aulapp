@@ -4933,7 +4933,7 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         private static int $11;
         private static long PngjBadCrcException;
         private static int PngjBadSignature;
-        private static int PngjException;
+        public static int PngjException;
 
         /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
         /* JADX WARN: Removed duplicated region for block: B:7:0x001d  */
@@ -4990,7 +4990,18 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             PngjBadCrcException = -3031056983797730459L;
         }
 
+        public Object PngjPrematureEnding;
+        public Object PngjInputException;
+        public int valueOf;
+
         public getData() {
+        }
+
+        public getData(FingerActivity activity, Bundle bundle) {
+        }
+
+        public int PngjException(int i) {
+            return 0;
         }
 
         /* JADX WARN: Removed duplicated region for block: B:24:0x015d  */

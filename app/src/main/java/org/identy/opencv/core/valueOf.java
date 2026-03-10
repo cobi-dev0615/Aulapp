@@ -13,4 +13,7 @@ public class valueOf {
             this.values = arr[1];
         }
     }
+    public static Object[] valueOf$1eba2e16(int i, Object obj, int i2) {
+        return null;
+    }
 }
