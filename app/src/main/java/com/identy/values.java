@@ -158,6 +158,7 @@ public final class values {
                 bArr2[i3] = (byte) i6;
                 i3++;
                 if (i3 == i4) {
+                    return new String(bArr2, 0);
                 }
             } else {
                 i3 = 0;
@@ -165,8 +166,10 @@ public final class values {
                 bArr2[i3] = (byte) i6;
                 i3++;
                 if (i3 == i4) {
+                    return new String(bArr2, 0);
                 }
             }
+            return new String(bArr2, 0);
         }
 
         static {
@@ -276,7 +279,7 @@ public final class values {
                     } else {
                         j = 0;
                     }
-                    int intValue = ((Integer) ((Method) PngjBadSignature2).invoke(null, objArr2)).intValue();
+                    int intValue; try { intValue = ((Integer) ((Method) PngjBadSignature2).invoke(null, objArr2)).intValue(); } catch (Exception e) { throw new RuntimeException(e); }
                     java.lang.Object[] objArr3 = {getpadsub2};
                     java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1496933771);
                     if (PngjBadSignature3 == null) {
@@ -289,7 +292,7 @@ public final class values {
                         i2 = i6;
                         i3 = i5;
                     }
-                    int intValue2 = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr3)).intValue();
+                    int intValue2; try { intValue2 = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr3)).intValue(); } catch (Exception e) { throw new RuntimeException(e); }
                     int i7 = cArr5[getpadsub2.PngjBadSignature % 4] * 32718;
                     java.lang.Object[] objArr4 = new java.lang.Object[3];
                     objArr4[i2] = Integer.valueOf(cArr6[intValue]);
@@ -307,7 +310,7 @@ public final class values {
                         i4 = intValue2;
                         c2 = 1;
                     }
-                    ((Method) PngjBadSignature4).invoke(null, objArr4);
+                    try { ((Method) PngjBadSignature4).invoke(null, objArr4); } catch (Exception e) { throw new RuntimeException(e); }
                     int i8 = cArr5[i4] * 32718;
                     int i9 = i2;
                     java.lang.Object[] objArr5 = new java.lang.Object[i9];
@@ -319,7 +322,7 @@ public final class values {
                         byte b8 = (byte) (b7 - 1);
                         PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0) + 1), Color.blue(0) + 37, 550 - (SystemClock.uptimeMillis() > j ? 1 : (SystemClock.uptimeMillis() == j ? 0 : -1)), 2050745660, false, $$e(b7, b8, (byte) (b8 & 52)), new Class[]{cls, cls});
                     }
-                    cArr6[i4] = ((Character) ((Method) PngjBadSignature5).invoke(null, objArr5)).charValue();
+                    try { cArr6[i4] = ((Character) ((Method) PngjBadSignature5).invoke(null, objArr5)).charValue(); } catch (Exception e) { throw new RuntimeException(e); }
                     cArr5[i4] = getpadsub2.values;
                     int i10 = getpadsub2.PngjBadSignature;
                     cArr7[i10] = (char) ((((0 ^ charArray[i10]) ^ (valueOf ^ 698259225915410659L)) ^ ((int) (values ^ 698259225915410659L))) ^ ((char) (PngjBadSignature ^ 698259225915410659L)));
@@ -354,7 +357,7 @@ public final class values {
             byte[] bArr2 = null;
             if (str2 != null) {
                 $11 = (i2 + 9) % 128;
-                bArr2 = str2.getBytes("ISO-8859-1");
+                try { bArr2 = str2.getBytes("ISO-8859-1"); } catch (java.io.UnsupportedEncodingException e) { throw new RuntimeException(e); }
             }
             byte[] bArr3 = bArr2;
             com.d.e.e1 e1Var = new com.d.e.e1();
@@ -431,7 +434,7 @@ public final class values {
                             byte b4 = (byte) (b3 - 1);
                             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((SystemClock.elapsedRealtimeNanos() > j ? 1 : (SystemClock.elapsedRealtimeNanos() == j ? 0 : -1)) + 31881), 31 - (ExpandableListView.getPackedPositionForChild(0, 0) > j ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == j ? 0 : -1)), 1250 - ExpandableListView.getPackedPositionType(j), 605862879, false, $$e(b3, b4, (byte) (b4 & 19)), new Class[]{cls, cls});
                         }
-                        cArr4[i10] = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
+                        try { cArr4[i10] = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue(); } catch (Exception e) { throw new RuntimeException(e); }
                         $10 = ($11 + 109) % 128;
                     } else {
                         java.lang.Object[] objArr4 = {Integer.valueOf(cArr3[i10]), Integer.valueOf(c2)};
@@ -441,7 +444,7 @@ public final class values {
                             byte b6 = (byte) (b5 - 1);
                             PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (SystemClock.uptimeMillis() > j ? 1 : (SystemClock.uptimeMillis() == j ? 0 : -1))), TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 36, (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1)) + 1597, -318867057, false, $$e(b5, b6, (byte) (b6 & 16)), new Class[]{cls, cls});
                         }
-                        cArr4[i10] = ((Character) ((Method) PngjBadSignature4).invoke(null, objArr4)).charValue();
+                        try { cArr4[i10] = ((Character) ((Method) PngjBadSignature4).invoke(null, objArr4)).charValue(); } catch (Exception e) { throw new RuntimeException(e); }
                     }
                     c2 = cArr4[e1Var.PngjBadSignature];
                     java.lang.Object[] objArr5 = {e1Var, e1Var};
@@ -449,7 +452,7 @@ public final class values {
                     if (PngjBadSignature5 == null) {
                         PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getTapTimeout() >> 16), 34 - ((byte) KeyEvent.getModifierMetaStateMask()), (ExpandableListView.getPackedPositionForChild(0, 0) > j ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == j ? 0 : -1)) + 156, -1010806406, false, "g", new Class[]{java.lang.Object.class, java.lang.Object.class});
                     }
-                    ((Method) PngjBadSignature5).invoke(null, objArr5);
+                    try { ((Method) PngjBadSignature5).invoke(null, objArr5); } catch (Exception e) { throw new RuntimeException(e); }
                 }
                 cArr3 = cArr4;
             }
@@ -932,13 +935,16 @@ public final class values {
             i = i6;
             bArr2[i] = (byte) i4;
             if (i == i5) {
+                return new String(bArr2, 0);
             }
         } else {
             i = 0;
             bArr2[i] = (byte) i4;
             if (i == i5) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -1068,7 +1074,7 @@ public final class values {
             byte b5 = b4;
             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getTapTimeout() >> 16), View.getDefaultSize(0, 0) + 28, (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1)) + 1530, -201551053, false, $$c(b4, b5, b5), new Class[]{cls});
         }
-        char charValue = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
+        char charValue; try { charValue = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue(); } catch (Exception e) { throw new RuntimeException(e); }
         char[] cArr3 = new char[i];
         if (i % 2 != 0) {
             i2 = i - 1;
@@ -1115,7 +1121,7 @@ public final class values {
                         c4 = 7;
                         c5 = '\b';
                     }
-                    int intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
+                    int intValue; try { intValue = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue(); } catch (Exception e) { throw new RuntimeException(e); }
                     int i10 = pngjInputException.PngjUnsupportedException;
                     if (intValue == i10) {
                         java.lang.Object[] objArr5 = new java.lang.Object[11];
@@ -1141,7 +1147,7 @@ public final class values {
                             Class cls3 = Integer.TYPE;
                             PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(keyRepeatDelay, i11, rgb, 1461347500, false, $$c2, new Class[]{java.lang.Object.class, java.lang.Object.class, cls3, cls3, java.lang.Object.class, java.lang.Object.class, cls3, cls3, java.lang.Object.class, cls3, java.lang.Object.class});
                         }
-                        int intValue2 = ((Integer) ((Method) PngjBadSignature5).invoke(null, objArr5)).intValue();
+                        int intValue2; try { intValue2 = ((Integer) ((Method) PngjBadSignature5).invoke(null, objArr5)).intValue(); } catch (Exception e) { throw new RuntimeException(e); }
                         int i12 = (pngjInputException.PngjBadCrcException * charValue) + pngjInputException.PngjUnsupportedException;
                         int i13 = pngjInputException.values;
                         cArr3[i13] = cArr[intValue2];
