@@ -416,6 +416,7 @@ final class getL2Score extends getL3Score {
         char c5;
         Object[] PngjException$1eba2e16;
         Object[] objArr2;
+        try {
         Context context2 = context;
         Object[] objArr3 = new Object[1];
         h(Color.rgb(0, 0, 0) - 377282099, (short) (11 - TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0)), (byte) ((-127) - View.MeasureSpec.makeMeasureSpec(0, 0)), 5257 - AndroidCharacter.getMirror('0'), (-27) - (ViewConfiguration.getScrollDefaultDelay() >> 16), objArr3);
@@ -824,6 +825,9 @@ final class getL2Score extends getL3Score {
         int i51 = d4 ^ (d4 << 13);
         int i52 = i51 ^ (i51 >>> 17);
         ((int[]) objArr37[4])[0] = i52 ^ (i52 << 5);
+        } catch (Exception e_reflect) {
+            throw new RuntimeException(e_reflect);
+        }
     }
 
     @Override // com.identy.e1
@@ -918,7 +922,7 @@ final class getL2Score extends getL3Score {
         int i6;
         Object PngjBadSignature2;
         byte[] bArr;
-        int i7;
+        int i7 = 0;
         int i8;
         int length;
         byte[] bArr2;
@@ -1065,6 +1069,7 @@ final class getL2Score extends getL3Score {
                                     i26++;
                                 }
                                 bArr7[i26] = (byte) (bArr[i26] ^ j2);
+                                break loop1;
                             }
                             bArr = bArr7;
                         }
