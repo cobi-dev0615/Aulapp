@@ -386,8 +386,8 @@ public final class getOveralTimetaken extends e1 {
             char[] cArr2;
             char c2;
             char c3;
-            char[] charArray = str3 != null ? str3.toCharArray() : str3;
-            char[] charArray2 = str2 != 0 ? str2.toCharArray() : str2;
+            char[] charArray = str3 != null ? str3.toCharArray() : null;
+            char[] charArray2 = str2 != null ? str2.toCharArray() : null;
             if (str != null) {
                 $10 = ($11 + 119) % 128;
                 cArr = str.toCharArray();
@@ -928,7 +928,7 @@ public final class getOveralTimetaken extends e1 {
         int intValue3 = ((Number) objArr[3]).intValue();
         boolean booleanValue = ((Boolean) objArr[4]).booleanValue();
         long timeInMillis = Calendar.getInstance().getTimeInMillis();
-        super.valueOf(intValue, intValue2, intValue3, booleanValue);
+        getoveraltimetaken.valueOf(intValue, intValue2, intValue3, booleanValue);
         if (getoveraltimetaken.getMatchingTime) {
             return null;
         }
@@ -936,10 +936,10 @@ public final class getOveralTimetaken extends e1 {
         try {
             if (getoveraltimetaken.CaptureThumbActivity) {
                 float f = getoveraltimetaken.getPadSub3;
-                float f2 = getoveraltimetaken.getPadSub2;
+                float f2 = getoveraltimetaken.getPadSub2_f;
                 getoveraltimetaken.CaptureRolledFingersActivity = new RectF((int) (f / 7.1f), (int) (f2 / 10.0f), (int) (f - (f2 / 4.1f)), (int) (f2 - (f / 10.0f)));
             } else {
-                float f3 = getoveraltimetaken.getPadSub2;
+                float f3 = getoveraltimetaken.getPadSub2_f;
                 float f4 = getoveraltimetaken.getPadSub3;
                 getoveraltimetaken.CaptureRolledFingersActivity = new RectF((int) (f3 / 7.1f), (int) (f4 / 10.0f), (int) (f3 - (f4 / 4.1f)), (int) (f4 - (f3 / 10.0f)));
             }
@@ -953,13 +953,13 @@ public final class getOveralTimetaken extends e1 {
             getoveraltimetaken.getScore = (int) (getoveraltimetaken.CaptureRolledFingersActivity.width() / 5.7f);
             getoveraltimetaken.isQualityFailed = (int) (getoveraltimetaken.CaptureRolledFingersActivity.width() / 4.2f);
         } else {
-            int i = getoveraltimetaken.getPadSub2;
+            int i = getoveraltimetaken.getPadSub2_f;
             getoveraltimetaken.getScore = Math.round(((i - (i / 5)) / 6) * 0.9f);
             if (booleanValue) {
-                int i2 = getoveraltimetaken.getPadSub2;
+                int i2 = getoveraltimetaken.getPadSub2_f;
                 getoveraltimetaken.isQualityFailed = (int) (((i2 - (i2 / 5)) / 4) * 0.98d);
             } else {
-                int i3 = getoveraltimetaken.getPadSub2;
+                int i3 = getoveraltimetaken.getPadSub2_f;
                 getoveraltimetaken.isQualityFailed = (i3 - (i3 / 5)) / 4;
             }
         }
@@ -1162,7 +1162,7 @@ public final class getOveralTimetaken extends e1 {
         int i = pfkrolfinalizeF + 51;
         pfk = i % 128;
         int i2 = i % 2;
-        super.PngjBadCrcException(bArr, booleanValue, list, list2, floatValue, l);
+        getoveraltimetaken.PngjBadCrcException(bArr, booleanValue, list, list2, floatValue, l);
         if (i2 != 0) {
             throw null;
         }

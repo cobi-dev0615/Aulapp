@@ -1340,7 +1340,7 @@ final class getL2Score extends getL3Score {
     private static /* synthetic */ Object valueOf(Object[] objArr) {
         getL2Score getl2score = (getL2Score) objArr[0];
         try {
-            float f = getl2score.getPadSub2;
+            float f = getl2score.getPadSub2_f;
             float f2 = getl2score.getPadSub3;
             getl2score.CaptureRolledFingersActivity = new RectF((int) (f / 5.0f), (int) (f2 / 6.5f), (int) (f - (f / 3.5f)), (int) (f2 - (f2 / 1.8f)));
             getl2score.getL2Score = new com.identy.ui.d.values(getl2score.Action, 5.0d, 6.5d, 3.5d, 1.7999999523162842d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), getl2score.a.equals(Hand.RIGHT) ? 180 : 0, false, getl2score.a.equals(Hand.LEFT), true, getl2score.uxd565jk, getl2score.cvtyuv2bgr);
