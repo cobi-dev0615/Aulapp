@@ -121,16 +121,16 @@ final class setFingers extends e1 {
         generateNFIQ = i % 128;
         try {
             if (i % 2 != 0) {
-                int valueOf = PngjBadCrcException.getPadSub3.valueOf();
-                int valueOf2 = PngjBadCrcException.getPadSub3.valueOf();
-                int valueOf3 = PngjBadCrcException.getPadSub3.valueOf();
-                PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
+                int valueOf = 0;
+                int valueOf2 = 0;
+                int valueOf3 = 0;
+                PngjBadSignature(0, new java.lang.Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
                 return;
             }
-            int valueOf4 = PngjBadCrcException.getPadSub3.valueOf();
-            int valueOf5 = PngjBadCrcException.getPadSub3.valueOf();
-            int valueOf6 = PngjBadCrcException.getPadSub3.valueOf();
-            PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf6, valueOf5, -1609665347, 1609665349, valueOf4);
+            int valueOf4 = 0;
+            int valueOf5 = 0;
+            int valueOf6 = 0;
+            PngjBadSignature(0, new java.lang.Object[]{this}, valueOf6, valueOf5, -1609665347, 1609665349, valueOf4);
             throw null;
         } catch (Exception unused) {
         }
@@ -190,17 +190,17 @@ final class setFingers extends e1 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void getFingerPrintQualityScore() {
-        int valueOf = PngjBadCrcException.getPadSub3.valueOf();
-        int valueOf2 = PngjBadCrcException.getPadSub3.valueOf();
-        int valueOf3 = PngjBadCrcException.getPadSub3.valueOf();
-        PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf3, valueOf2, -2022270286, 2022270287, valueOf);
+        int valueOf = 0;
+        int valueOf2 = 0;
+        int valueOf3 = 0;
+        PngjBadSignature(0, new java.lang.Object[]{this}, valueOf3, valueOf2, -2022270286, 2022270287, valueOf);
     }
 
     private void getPadSub3() {
-        int valueOf = PngjBadCrcException.getPadSub3.valueOf();
-        int valueOf2 = PngjBadCrcException.getPadSub3.valueOf();
-        int valueOf3 = PngjBadCrcException.getPadSub3.valueOf();
-        PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
+        int valueOf = 0;
+        int valueOf2 = 0;
+        int valueOf3 = 0;
+        PngjBadSignature(0, new java.lang.Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -276,17 +276,17 @@ final class setFingers extends e1 {
         generateNFIQ = i % 128;
         if (i % 2 != 0) {
             this.getL1Score = (com.identy.ui.PngjBadCrcException) this.Action.findViewById(R.id.scanner_overlay);
-            int valueOf = PngjBadCrcException.getPadSub3.valueOf();
-            int valueOf2 = PngjBadCrcException.getPadSub3.valueOf();
-            int valueOf3 = PngjBadCrcException.getPadSub3.valueOf();
-            PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
+            int valueOf = 0;
+            int valueOf2 = 0;
+            int valueOf3 = 0;
+            PngjBadSignature(0, new java.lang.Object[]{this}, valueOf3, valueOf2, -1609665347, 1609665349, valueOf);
             return;
         }
         this.getL1Score = (com.identy.ui.PngjBadCrcException) this.Action.findViewById(R.id.scanner_overlay);
-        int valueOf4 = PngjBadCrcException.getPadSub3.valueOf();
-        int valueOf5 = PngjBadCrcException.getPadSub3.valueOf();
-        int valueOf6 = PngjBadCrcException.getPadSub3.valueOf();
-        PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf6, valueOf5, -1609665347, 1609665349, valueOf4);
+        int valueOf4 = 0;
+        int valueOf5 = 0;
+        int valueOf6 = 0;
+        PngjBadSignature(0, new java.lang.Object[]{this}, valueOf6, valueOf5, -1609665347, 1609665349, valueOf4);
         int i2 = 16 / 0;
     }
 
@@ -323,10 +323,10 @@ final class setFingers extends e1 {
 
     @Override // com.identy.e1
     public final RectF Action() {
-        int valueOf = PngjBadCrcException.getPadSub3.valueOf();
-        int valueOf2 = PngjBadCrcException.getPadSub3.valueOf();
-        int valueOf3 = PngjBadCrcException.getPadSub3.valueOf();
-        return (RectF) PngjBadSignature(PngjBadCrcException.getPadSub3.valueOf(), new java.lang.Object[]{this}, valueOf3, valueOf2, -53535754, 53535754, valueOf);
+        int valueOf = 0;
+        int valueOf2 = 0;
+        int valueOf3 = 0;
+        return (RectF) PngjBadSignature(0, new java.lang.Object[]{this}, valueOf3, valueOf2, -53535754, 53535754, valueOf);
     }
 
     @Override // com.identy.e1

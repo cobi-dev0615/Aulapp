@@ -11686,11 +11686,13 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
                         contains = IdentySdk.getInstance().PngjPrematureEnding.contains(hand);
                     }
                 }
-                Intent intent = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, null, IdentySdk.getInstance().isRolledfp()));
-                intent.putExtra("type", getIntent().getStringExtra("type"));
-                intent.putExtra("option_selected", (Serializable) 0);
-                intent.putExtra("options", getIntent().getSerializableExtra("options"));
-                startActivity(intent);
+                try {
+                    Intent intent = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, null, IdentySdk.getInstance().isRolledfp()));
+                    intent.putExtra("type", getIntent().getStringExtra("type"));
+                    intent.putExtra("option_selected", (Serializable) 0);
+                    intent.putExtra("options", getIntent().getSerializableExtra("options"));
+                    startActivity(intent);
+                } catch (Exception e_gcd) { throw new RuntimeException(e_gcd); }
                 return true;
             }
             z = false;
@@ -11701,11 +11703,13 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
             toJson = i152;
             if (z) {
             }
-            Intent intent2 = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, null, IdentySdk.getInstance().isRolledfp()));
-            intent2.putExtra("type", getIntent().getStringExtra("type"));
-            intent2.putExtra("option_selected", (Serializable) 0);
-            intent2.putExtra("options", getIntent().getSerializableExtra("options"));
-            startActivity(intent2);
+            try {
+                Intent intent2 = new Intent(this, (Class<?>) GuideNoGuideHelper.getClassForDetection(this, getIntent(), contains, null, IdentySdk.getInstance().isRolledfp()));
+                intent2.putExtra("type", getIntent().getStringExtra("type"));
+                intent2.putExtra("option_selected", (Serializable) 0);
+                intent2.putExtra("options", getIntent().getSerializableExtra("options"));
+                startActivity(intent2);
+            } catch (Exception e_gcd2) { throw new RuntimeException(e_gcd2); }
             return true;
         }
         try {

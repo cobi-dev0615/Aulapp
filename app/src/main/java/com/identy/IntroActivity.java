@@ -66,7 +66,9 @@ public class IntroActivity extends Activity {
         public final void onClick(View view) {
             FingerDetectionMode[] fingerDetectionModeArr = (FingerDetectionMode[]) IntroActivity.this.getIntent().getSerializableExtra("option_selected");
             if (((CheckBox) IntroActivity.this.findViewById(R.id.intro_no_repeat)).isChecked()) {
-                GuideNoGuideHelper.markIntroShown(IntroActivity.this, GuideNoGuideHelper.getKey(fingerDetectionModeArr[0], this.PngjBadSignature));
+                try {
+                    GuideNoGuideHelper.markIntroShown(IntroActivity.this, GuideNoGuideHelper.getKey(fingerDetectionModeArr[0], this.PngjBadSignature));
+                } catch (Exception e_key) { throw new RuntimeException(e_key); }
             }
             try {
                 if (fingerDetectionModeArr[0].getFinger() == null || !fingerDetectionModeArr[0].getFinger().equals(Finger.THUMB)) {
