@@ -97,12 +97,12 @@ import org.json.JSONObject;
 
 /* loaded from: classes2.dex */
 public class e1 extends BroadcastReceiver {
-    private static  byte[] $$a = null;
-    private static  int $$b = 0;
-    private static  byte[] $$c = null;
-    private static  int $$f = 0;
-    private static  byte[] $$j = null;
-    private static  int $$k = 0;
+    static  byte[] $$a = null;
+    static  int $$b = 0;
+    static  byte[] $$c = null;
+    static  int $$f = 0;
+    static  byte[] $$j = null;
+    static  int $$k = 0;
     private static int $10 = 0;
     private static int $11 = 0;
     public static long PngjBadCrcException = 0;
