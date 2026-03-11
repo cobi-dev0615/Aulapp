@@ -196,6 +196,7 @@ final class isFoundMatchingTemplates extends e1 {
         */
         private static void a(short s, int i, short s2, java.lang.Object[] objArr) {
             int i2;
+            int i7 = 0;
             int i3 = (s2 * 4) + 97;
             byte[] bArr = $$a;
             int i4 = i + 4;
@@ -203,7 +204,6 @@ final class isFoundMatchingTemplates extends e1 {
             int i5 = 1 - s;
             if (bArr == null) {
                 int i6 = i3;
-                int i7 = 0;
                 int i8 = i4;
                 int i9 = (i4 + i6) - 52;
                 int i10 = i8;
@@ -1153,9 +1153,9 @@ final class isFoundMatchingTemplates extends e1 {
 
     @Override // com.identy.e1, android.content.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
-        int PngjException2 = isQualityFailed.PngjException();
-        int PngjException3 = isQualityFailed.PngjException();
-        PngjException(-796303406, isQualityFailed.PngjException(), PngjException2, 796303406, new java.lang.Object[]{this, context, intent}, PngjException3, isQualityFailed.PngjException());
+        int PngjException2 = com.identy.isQualityFailed.PngjException();
+        int PngjException3 = com.identy.isQualityFailed.PngjException();
+        PngjException(-796303406, com.identy.isQualityFailed.PngjException(), PngjException2, 796303406, new java.lang.Object[]{this, context, intent}, PngjException3, com.identy.isQualityFailed.PngjException());
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0022, code lost:
@@ -1225,9 +1225,9 @@ final class isFoundMatchingTemplates extends e1 {
 
     @Override // com.identy.e1
     public final void PngjBadCrcException() {
-        int PngjException2 = isQualityFailed.PngjException();
-        int PngjException3 = isQualityFailed.PngjException();
-        PngjException(-1418043732, isQualityFailed.PngjException(), PngjException2, 1418043733, new java.lang.Object[]{this}, PngjException3, isQualityFailed.PngjException());
+        int PngjException2 = com.identy.isQualityFailed.PngjException();
+        int PngjException3 = com.identy.isQualityFailed.PngjException();
+        PngjException(-1418043732, com.identy.isQualityFailed.PngjException(), PngjException2, 1418043733, new java.lang.Object[]{this}, PngjException3, com.identy.isQualityFailed.PngjException());
     }
 
     private static /* synthetic */ java.lang.Object valueOf(java.lang.Object[] objArr) {
