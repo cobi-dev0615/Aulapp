@@ -105,7 +105,7 @@ public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, Ar
                 e.printStackTrace();
             }
             long timeInMillis = Calendar.getInstance().getTimeInMillis();
-            PngjBadCrcException.PngjException("SAVE DATA POST CAPTURE", timeInMillis);
+            com.identy.PngjBadCrcException.PngjException("SAVE DATA POST CAPTURE", timeInMillis);
             ArrayList arrayList2 = this.PngjBadSignature;
             if (arrayList2 == null || arrayList2.size() < 2) {
                 return null;
@@ -113,8 +113,8 @@ public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, Ar
             Mat mat2 = (Mat) this.PngjBadSignature.get(0);
             ArrayList arrayList3 = this.PngjBadSignature;
             Mat mat3 = (Mat) arrayList3.get(arrayList3.size() - 1);
-            PngjBadCrcException.PngjException("READY POST CAPTURE", timeInMillis);
-            PngjBadCrcException.PngjException("CONVERT POST CAPTURE", timeInMillis);
+            com.identy.PngjBadCrcException.PngjException("READY POST CAPTURE", timeInMillis);
+            com.identy.PngjBadCrcException.PngjException("CONVERT POST CAPTURE", timeInMillis);
             try {
                 identySdk = IdentySdk.getInstance();
             } catch (Exception unused) {

@@ -37,6 +37,7 @@ public enum SIDE {
     */
     private static void e(byte b, byte b2, int i, Object[] objArr) {
         int i2;
+        int i7 = 0;
         byte[] bArr = $$a;
         int i3 = i + 4;
         int i4 = 118 - (b * 19);
@@ -44,7 +45,7 @@ public enum SIDE {
         int i5 = b2 + 5;
         if (bArr == null) {
             int i6 = i5;
-            int i7 = 0;
+            i7 = 0;
             i4 = (i4 + (-i6)) - 13;
             i2 = i7;
             bArr2[i2] = (byte) i4;
@@ -60,14 +61,19 @@ public enum SIDE {
             bArr2[i2] = (byte) i4;
             i7 = i2 + 1;
             if (i2 == i5) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         } else {
             i2 = 0;
             bArr2[i2] = (byte) i4;
             i7 = i2 + 1;
             if (i2 == i5) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         }
+        objArr[0] = new String(bArr2, 0);
     }
 
     public static void init$0() {

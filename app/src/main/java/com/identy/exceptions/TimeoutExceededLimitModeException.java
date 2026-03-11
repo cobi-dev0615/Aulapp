@@ -104,6 +104,7 @@ public class TimeoutExceededLimitModeException extends Exception {
     */
     private static void a(short s, byte b, short s2, Object[] objArr) {
         int i;
+        int i6 = 0;
         int i2 = (s2 * 19) + 80;
         byte[] bArr = $$a;
         int i3 = s + 4;
@@ -112,7 +113,7 @@ public class TimeoutExceededLimitModeException extends Exception {
         if (bArr == null) {
             int i5 = i3;
             byte[] bArr3 = bArr;
-            int i6 = 0;
+            i6 = 0;
             int i7 = i4;
             int i8 = (i7 + i3) - 13;
             int i9 = i5;
@@ -142,6 +143,8 @@ public class TimeoutExceededLimitModeException extends Exception {
             int i102 = i3 + 1;
             i6 = i + 1;
             if (i == i4) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         } else {
             i = 0;
@@ -149,8 +152,11 @@ public class TimeoutExceededLimitModeException extends Exception {
             int i1022 = i3 + 1;
             i6 = i + 1;
             if (i == i4) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         }
+        objArr[0] = new String(bArr2, 0);
     }
 
     @Override // java.lang.Throwable

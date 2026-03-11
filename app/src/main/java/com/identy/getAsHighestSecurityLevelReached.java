@@ -28,7 +28,7 @@ public final class getAsHighestSecurityLevelReached {
 
         @Override // android.os.AsyncTask
         public final /* synthetic */ Object doInBackground(Object[] objArr) {
-            ((a[]) objArr)[0].PngjBadCrcException(BuildConfig.FLAVOR, this.PngjBadSignature, true, this.PngjBadCrcException);
+            ((com.identy.IdentyA[]) objArr)[0].PngjBadCrcException(BuildConfig.FLAVOR, this.PngjBadSignature, true, this.PngjBadCrcException);
             return null;
         }
 
