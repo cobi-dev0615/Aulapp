@@ -83,6 +83,12 @@ abstract class getL3Score extends e1 {
     boolean resetAttempt;
 
     public class PngjBadCrcException implements Runnable {
+        public static final _OnErrorResponse onErrorResponse = new _OnErrorResponse();
+
+        public static class _OnErrorResponse {
+            public int PngjBadCrcException() { return 0; }
+        }
+
         public PngjBadCrcException() {
         }
 
