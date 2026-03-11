@@ -1508,6 +1508,7 @@ abstract class getL3Score extends e1 {
         int i9;
         int i10;
         char c5;
+        try {
         Object[] objArr3 = new Object[1];
         e(new int[]{351171047, 321601801, 187533674, -905813479, 443996423, -1334465623, -1234450157, 1748484355, -2074254608, 108461050, 1005535775, -1358162383}, 22 - (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), objArr3);
         String str = (String) objArr3[0];
@@ -2052,6 +2053,9 @@ abstract class getL3Score extends e1 {
         Object[] objArr39 = new Object[1];
         e(new int[]{246717870, -1706160973, -857543913, -798526455, 1427215364, -1489066450, -683683737, -1871066575}, (Process.myPid() >> 22) + 16, objArr39);
         intValue = ((Integer) cls6.getMethod((String) objArr39[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception e2) {
+            throw new RuntimeException(e2);
+        }
     }
 
     public final RResult values(Mat mat) {

@@ -1614,6 +1614,7 @@ public final class isAuthSucess extends e1 {
         int i2;
         int i3;
         java.lang.Object[] objArr3;
+        try {
         destroy = (pfkrolfinalize + 29) % 128;
         java.lang.Object[] objArr4 = new java.lang.Object[1];
         e("䑢ಹ㵸Ꙝ钪謏\udccc鵫뽖휱멠狭즏닕ꕦ榊\udf13퀊헶붿뜋⩖", 23 - (SystemClock.elapsedRealtime() > 0L ? 1 : (SystemClock.elapsedRealtime() == 0L ? 0 : -1)), objArr4);
@@ -2049,6 +2050,9 @@ public final class isAuthSucess extends e1 {
         pfkrolfinalize = i59 % 128;
         if (i59 % 2 == 0) {
             throw null;
+        }
+        } catch (Exception e2) {
+            throw new RuntimeException(e2);
         }
     }
 

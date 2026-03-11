@@ -1246,6 +1246,7 @@ final class isFoundMatchingTemplates extends e1 {
         isFoundMatchingTemplates isfoundmatchingtemplates = (isFoundMatchingTemplates) objArr[0];
         Context context2 = (Context) objArr[1];
         Intent intent = (Intent) objArr[2];
+        try {
         getServerRequest = (destroy + 113) % 128;
         java.lang.Object[] objArr5 = new java.lang.Object[1];
         e("䇝펣攺\uf69dࠗ鷠⽾䂅퉛搶笠\u0b34鲉\u2e72䏦핆曁\uf87eਢ龰ㄋ䊒", 37489 - TextUtils.getTrimmedLength(BuildConfig.FLAVOR), objArr5);
@@ -1663,5 +1664,8 @@ final class isFoundMatchingTemplates extends e1 {
             throw new RuntimeException(String.valueOf(i30));
         }
         throw null;
+        } catch (Exception e2) {
+            throw new RuntimeException(e2);
+        }
     }
 }

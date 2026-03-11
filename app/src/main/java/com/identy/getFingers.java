@@ -1342,6 +1342,7 @@ final class getFingers extends e1 {
         Object obj;
         Object[] PngjException$1eba2e16;
         Object[] objArr2;
+        try {
         Object[] objArr3 = new Object[1];
         e(new int[]{-1676244467, -1703071708, 1706719474, 900826739, -1118099777, 470574448, -1526612644, -1582791603, -1105660864, -1366941366, 350366560, 680354268}, 22 - (ViewConfiguration.getDoubleTapTimeout() >> 16), objArr3);
         String str = (String) objArr3[0];
@@ -1810,6 +1811,9 @@ final class getFingers extends e1 {
         }
         i6 = 4;
         if (((int[]) objArr[i4])[0] == ((int[]) objArr[i3])[0]) {
+        }
+        } catch (Exception e2) {
+            throw new RuntimeException(e2);
         }
     }
 

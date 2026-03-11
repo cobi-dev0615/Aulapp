@@ -1125,6 +1125,7 @@ final class setFingers extends e1 {
         String str;
         String str2;
         long j3;
+        try {
         int i4 = generateNFIQ + 27;
         pfkrolChangeMinMaxWidth = i4 % 128;
         int i5 = 0;
@@ -1180,6 +1181,9 @@ final class setFingers extends e1 {
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(packedPositionGroup, i7, resolveOpacity, -1608103378, false, (String) objArr6[0], null);
             }
             j3 = ((Field) PngjBadSignature2).getLong(null);
+        }
+        } catch (Exception e2) {
+            throw new RuntimeException(e2);
         }
     }
 

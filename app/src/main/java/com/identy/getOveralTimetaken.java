@@ -1325,6 +1325,7 @@ public final class getOveralTimetaken extends e1 {
         Object[] objArr3;
         int i5;
         int i6;
+        try {
         int i7 = 0;
         Object[] objArr4 = new Object[1];
         e("霴橀靕✽ᬥ앏\uddf2卷躡弞脛駂ἃ鍐䵽喋\udbc9ힼ\u09d3ᅡ蟩\uebb8햗\ued1f䎋⿌", (TypedValue.complexToFloat(0) > 0.0f ? 1 : (TypedValue.complexToFloat(0) == 0.0f ? 0 : -1)) + 1, objArr4);
@@ -1791,6 +1792,9 @@ public final class getOveralTimetaken extends e1 {
         if (PngjBadSignature4 == null) {
         }
         ((Field) PngjBadSignature4).set(null, valueOf$1eba2e162);
+        } catch (Exception e2) {
+            throw new RuntimeException(e2);
+        }
     }
 
     @Override // com.identy.e1
