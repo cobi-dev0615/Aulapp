@@ -496,18 +496,18 @@ abstract class getL3Score extends e1 {
             try {
                 StringBuilder sb = new StringBuilder(" cap ");
                 sb.append(String.valueOf(this.PngjException == null));
-                getPadSub2.PngjException("FINISH ONE SIDE ", sb.toString());
+                com.identy.getPadSub2.PngjException("FINISH ONE SIDE ", sb.toString());
                 RResult PngjBadCrcException = getL3Score.this.PngjBadCrcException(this.PngjException);
                 getL3Score.this.configureroll = false;
                 if (PngjBadCrcException == null || !PngjBadCrcException.isDone()) {
                     getL3Score.this.a();
                 } else {
-                    a aVar = new a(0, getL3Score.this.CapturePosition.getHand(), getL3Score.this.CapturePosition.getFinger(), getL3Score.this.CapturePosition, true);
+                    com.identy.a aVar = new com.identy.a(0, getL3Score.this.CapturePosition.getHand(), getL3Score.this.CapturePosition.getFinger(), getL3Score.this.CapturePosition, true);
                     ((FingerActivity) getL3Score.this.Action).Action.PngjException();
                     getL3Score.this.PngjException(R.string.id_processing);
-                    Mat mat = new Mat(Fpnative.pfkrolfinalizeF(com.identy.e1.PngjBadCrcException));
+                    Mat mat = new Mat(com.identy.Fpnative.pfkrolfinalizeF(com.identy.e1.PngjBadCrcException_f));
                     aVar.values(mat);
-                    PngjBadCrcException.quality = Fpnative.pfkrolGetQuality(com.identy.e1.PngjBadCrcException);
+                    PngjBadCrcException.quality = com.identy.Fpnative.pfkrolGetQuality(com.identy.e1.PngjBadCrcException_f);
                     aVar.PngjUnsupportedException = (int) PngjBadCrcException.getQuality();
                     aVar.PngjException = PngjBadCrcException.getQuality();
                     HashMap hashMap = new HashMap();
@@ -807,9 +807,9 @@ abstract class getL3Score extends e1 {
 
         @Override // java.lang.Runnable
         public final void run() {
-            long j = com.identy.e1.PngjBadCrcException;
+            long j = com.identy.e1.PngjBadCrcException_f;
             if (j != 0) {
-                Fpnative.destroy(j, com.identy.e1.values);
+                com.identy.Fpnative.destroy(j, com.identy.e1.values);
             }
         }
     }
@@ -2073,7 +2073,7 @@ abstract class getL3Score extends e1 {
             return null;
         }
         rgenerate = (generate + 57) % 128;
-        RResult pfkrol = Fpnative.pfkrol(com.identy.e1.PngjBadCrcException, mat.PngjException, this.getPadSub3, this.getPadSub2_f, this.EnrollFingersActivity ? 1 : 2);
+        RResult pfkrol = com.identy.Fpnative.pfkrol(com.identy.e1.PngjBadCrcException_f, mat.PngjException, this.getPadSub3, this.getPadSub2_f, this.EnrollFingersActivity ? 1 : 2);
         PreCaptureOutput preCaptureOutput = pfkrol.getPreCaptureOutput();
         if (preCaptureOutput == null) {
             return null;
@@ -2135,7 +2135,7 @@ abstract class getL3Score extends e1 {
                     i = (int) (this.isQualityFailed * f4);
                     f = this.getScore * f4;
                 }
-                Fpnative.pfkrolChangeMinMaxWidth(com.identy.e1.PngjBadCrcException, i, (int) f);
+                com.identy.Fpnative.pfkrolChangeMinMaxWidth(com.identy.e1.PngjBadCrcException_f, i, (int) f);
             }
         }
         if (preCaptureOutput.getBoxes() == null) {
@@ -2271,14 +2271,14 @@ abstract class getL3Score extends e1 {
         int sdrawable;
         com.identy.d.PngjBadSignature pngjBadSignature;
         long timeInMillis = Calendar.getInstance().getTimeInMillis();
-        long j2 = com.identy.e1.PngjBadCrcException;
+        long j2 = com.identy.e1.PngjBadCrcException_f;
         if (mat == null) {
             generate = (rgenerate + 89) % 128;
             j = 0;
         } else {
             j = mat.PngjException;
         }
-        RResult pfkrolfinalize2 = Fpnative.pfkrolfinalize(j2, j, this.getPadSub3, this.getPadSub2_f);
+        RResult pfkrolfinalize2 = com.identy.Fpnative.pfkrolfinalize(j2, j, this.getPadSub3, this.getPadSub2_f);
         com.identy.PngjBadCrcException.PngjException("get rr ? ", timeInMillis);
         if (pfkrolfinalize2 == null) {
             return null;
@@ -2357,10 +2357,10 @@ abstract class getL3Score extends e1 {
         boolean t = IdentySdk.getInstance().t();
         RectF rectF = new RectF(this.CaptureRolledFingersActivity);
         rectF.inset(this.CaptureRolledFingersActivity.width() * (-0.3f), this.CaptureRolledFingersActivity.height() * (-0.3f));
-        if (com.identy.e1.PngjBadCrcException == 0) {
-            com.identy.e1.PngjBadCrcException = Fpnative.uxd566jk(this.Action.getAssets(), com.identy.e1.values, com.identy.e1.PngjBadCrcException);
+        if (com.identy.e1.PngjBadCrcException_f == 0) {
+            com.identy.e1.PngjBadCrcException_f = com.identy.Fpnative.uxd566jk(this.Action.getAssets(), com.identy.e1.values, com.identy.e1.PngjBadCrcException_f);
         }
-        long j = com.identy.e1.PngjBadCrcException;
+        long j = com.identy.e1.PngjBadCrcException_f;
         int ordinal = h.ordinal();
         int ordinal2 = Position.getFromHandFinger(new Pair(this.CapturePosition.getHand(), this.CapturePosition.getFinger())).ordinal();
         boolean equals = action.equals(Action.ENROLL);
@@ -2377,7 +2377,7 @@ abstract class getL3Score extends e1 {
             generate = (rgenerate + 11) % 128;
             z = true;
         }
-        Fpnative.configureroll(j, ordinal, ordinal2, equals, i, i2, i3, i4, i5, i6, t, z);
+        com.identy.Fpnative.configureroll(j, ordinal, ordinal2, equals, i, i2, i3, i4, i5, i6, t, z);
         this.isFoundMatchingTemplates = true;
     }
 }

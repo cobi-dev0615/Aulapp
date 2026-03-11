@@ -105,7 +105,7 @@ public class e1 extends BroadcastReceiver {
     static  int $$k = 0;
     private static int $10 = 0;
     private static int $11 = 0;
-    public static long PngjBadCrcException = 0;
+    public static long PngjBadCrcException_f = 0;
     public static int PngjBadSignature = 0;
     public static boolean PngjException = false;
     static long PngjInputException;
@@ -1817,7 +1817,7 @@ public class e1 extends BroadcastReceiver {
             Objects.toString(values(activity));
             return null;
         }
-        Object[] uxd565jj = com.identy.Fpnative.uxd565jj(activity.getAssets(), values, PngjBadCrcException, PngjBadSignature(activity, "identy_data/identy_vfdata15.ort"));
+        Object[] uxd565jj = com.identy.Fpnative.uxd565jj(activity.getAssets(), values, PngjBadCrcException_f, PngjBadSignature(activity, "identy_data/identy_vfdata15.ort"));
         values = ((Long) uxd565jj[0]).longValue();
         if (((Integer) uxd565jj[1]).intValue() != 0) {
             int i23 = markIntroSetting + 109;
