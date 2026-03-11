@@ -144,6 +144,7 @@ final class isFoundMatchingTemplates extends e1 {
                 i4 = i3 + 1;
                 bArr2[i3] = (byte) i;
                 if (i4 == i5) {
+                    return new String(bArr2, 0);
                 }
             } else {
                 i = i7;
@@ -152,8 +153,10 @@ final class isFoundMatchingTemplates extends e1 {
                 i4 = i3 + 1;
                 bArr2[i3] = (byte) i;
                 if (i4 == i5) {
+                    return new String(bArr2, 0);
                 }
             }
+            return new String(bArr2, 0);
         }
 
         static {
@@ -887,7 +890,7 @@ final class isFoundMatchingTemplates extends e1 {
                 byte b6 = b5;
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (Color.alpha(0) + 35511), Color.red(0) + 42, 507 - KeyEvent.getDeadChar(0, 0), 74289954, false, $$n(b5, b6, (byte) (b6 + 1)), new Class[]{java.lang.Object.class, java.lang.Object.class});
             }
-            ((Method) PngjBadSignature4).invoke(null, objArr4);
+            try { ((Method) PngjBadSignature4).invoke(null, objArr4); } catch (Exception e) { throw new RuntimeException(e); }
         }
     }
 
@@ -1069,7 +1072,7 @@ final class isFoundMatchingTemplates extends e1 {
 
     @Override // com.identy.e1
     public final boolean PngjUnsupportedException() {
-        boolean PngjUnsupportedException;
+        boolean PngjUnsupportedException = false;
         destroy = (getServerRequest + 79) % 128;
         try {
             PngjUnsupportedException = super.PngjUnsupportedException();

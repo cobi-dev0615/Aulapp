@@ -1116,7 +1116,7 @@ public final class PngjInputException {
                 byte[] bArr4 = bArr;
                 i3 = i;
                 i = b2;
-                s4 = s3 + 1;
+                s4 = (short) (s3 + 1);
                 bArr3 = bArr4;
                 i2 += i;
                 i = i3 + 1;
@@ -1764,7 +1764,7 @@ public final class PngjInputException {
             int i3;
             char c2;
             $11 = ($10 + 125) % 128;
-            char[] charArray = str3 != 0 ? str3.toCharArray() : str3;
+            char[] charArray = str3 != null ? str3.toCharArray() : new char[0];
             if (str2 != null) {
                 $11 = ($10 + 33) % 128;
                 cArr = str2.toCharArray();
