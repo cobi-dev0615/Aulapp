@@ -250,7 +250,7 @@ public class EnrollFingersActivity extends FingerActivity {
         }
     }
 
-    private static void c(String str, int i, byte b, Object[] objArr) {
+    private static void c(String str, int i, byte b, Object[] objArr) throws Exception {
         int i2;
         char c;
         char c2;
@@ -523,8 +523,8 @@ public class EnrollFingersActivity extends FingerActivity {
         char c2;
         int i;
         long j;
-        int intValue;
-        Object[] PngjException$1eba2e16;
+        int intValue = 0;
+        Object[] PngjException$1eba2e16 = null;
         int i2;
         int i3;
         int i4 = getFingerPrintQualityScore + 107;
@@ -709,12 +709,16 @@ public class EnrollFingersActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
-        Object[] objArr14 = new Object[1];
-        c("\u0000\r\u0005\u000e\u0016\r\r\u000f\b\u0015\u0010\u0016\u0002\u0015\u0005\n", 16 - (Process.myTid() >> 22), (byte) (TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0) + 78), objArr14);
-        Class<?> cls3 = Class.forName((String) objArr14[0]);
-        Object[] objArr15 = new Object[1];
-        c("\u0001\u0011\u0003\u000f\u0002\u0007\u0017\u0016\u0014\u000e\u0004\u000b\b\f\u000f\u0001", (ViewConfiguration.getDoubleTapTimeout() >> 16) + 16, (byte) (85 - KeyEvent.normalizeMetaState(0)), objArr15);
-        intValue = ((Integer) cls3.getMethod((String) objArr15[0], Object.class).invoke(null, this)).intValue();
+        try {
+            Object[] objArr14 = new Object[1];
+            c("\u0000\r\u0005\u000e\u0016\r\r\u000f\b\u0015\u0010\u0016\u0002\u0015\u0005\n", 16 - (Process.myTid() >> 22), (byte) (TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0) + 78), objArr14);
+            Class<?> cls3 = Class.forName((String) objArr14[0]);
+            Object[] objArr15 = new Object[1];
+            c("\u0001\u0011\u0003\u000f\u0002\u0007\u0017\u0016\u0014\u000e\u0004\u000b\b\f\u000f\u0001", (ViewConfiguration.getDoubleTapTimeout() >> 16) + 16, (byte) (85 - KeyEvent.normalizeMetaState(0)), objArr15);
+            intValue = ((Integer) cls3.getMethod((String) objArr15[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
