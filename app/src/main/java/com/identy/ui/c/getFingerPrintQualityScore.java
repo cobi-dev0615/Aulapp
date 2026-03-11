@@ -202,7 +202,7 @@ public final class getFingerPrintQualityScore extends Dialog {
             $11 = ($10 + 55) % 128;
             byte[] bArr = null;
             if (str3 != null) {
-                bArr = str3.getBytes("ISO-8859-1");
+                try { bArr = str3.getBytes("ISO-8859-1"); } catch (java.io.UnsupportedEncodingException e) { throw new RuntimeException(e); }
             }
             byte[] bArr2 = bArr;
             int i3 = 2;
@@ -257,7 +257,8 @@ public final class getFingerPrintQualityScore extends Dialog {
                 byte b = (byte) (length2 - 4);
                 PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(doubleTapTimeout, i6, windowTouchSlop, -1654917268, false, $$e(length2, b, b), new Class[]{cls});
             }
-            int intValue = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr3)).intValue();
+            int intValue;
+            try { intValue = ((Integer) ((Method) PngjBadSignature3).invoke(null, objArr3)).intValue(); } catch (Exception e) { throw new RuntimeException(e); }
             int i7 = -528960794;
             char c2 = 1;
             if (values) {
@@ -290,7 +291,7 @@ public final class getFingerPrintQualityScore extends Dialog {
                         i2 = i7;
                         c = c2;
                     }
-                    ((Method) PngjBadSignature4).invoke(null, objArr4);
+                    try { ((Method) PngjBadSignature4).invoke(null, objArr4); } catch (Exception e) { throw new RuntimeException(e); }
                     i7 = i2;
                     c2 = c;
                     i3 = 2;
@@ -315,7 +316,7 @@ public final class getFingerPrintQualityScore extends Dialog {
                         byte b5 = b4;
                         PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1))), 37 - Color.green(0), 549 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), 479715165, false, $$e(b4, b5, b5), new Class[]{java.lang.Object.class, java.lang.Object.class});
                     }
-                    ((Method) PngjBadSignature5).invoke(null, objArr5);
+                    try { ((Method) PngjBadSignature5).invoke(null, objArr5); } catch (Exception e) { throw new RuntimeException(e); }
                 }
             } else {
                 int length5 = iArr.length;
