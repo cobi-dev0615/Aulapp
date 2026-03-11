@@ -161,6 +161,7 @@ abstract class getL3Score extends e1 {
                     i2 = i102;
                     bArr2[i3] = (byte) i;
                     if (i3 == i7) {
+                        return new String(bArr2);
                     }
                 } else {
                     i = i6;
@@ -168,8 +169,10 @@ abstract class getL3Score extends e1 {
                     i3 = 0;
                     bArr2[i3] = (byte) i;
                     if (i3 == i7) {
+                        return new String(bArr2);
                     }
                 }
+                return new String(bArr2);
             }
 
             static {
@@ -260,6 +263,7 @@ abstract class getL3Score extends e1 {
             }
 
             private static void b(int[] iArr, int i, Object[] objArr) {
+                try {
                 long j;
                 char c;
                 char[] cArr;
@@ -426,6 +430,7 @@ abstract class getL3Score extends e1 {
                     ((Method) PngjBadSignature4).invoke(null, objArr5);
                     i8 = i21;
                 }
+                } catch (Exception e_b) { throw new RuntimeException(e_b); }
             }
 
             private static void c(byte b, int i, int i2, Object[] objArr) {
@@ -858,14 +863,17 @@ abstract class getL3Score extends e1 {
             i3 = i2 + 1;
             bArr2[i2] = (byte) i5;
             if (i3 == i4) {
+                return new String(bArr2);
             }
         } else {
             i2 = 0;
             i3 = i2 + 1;
             bArr2[i2] = (byte) i5;
             if (i3 == i4) {
+                return new String(bArr2);
             }
         }
+        return new String(bArr2);
     }
 
     static {
@@ -956,6 +964,7 @@ abstract class getL3Score extends e1 {
     }
 
     private static void e(int[] iArr, int i, Object[] objArr) {
+        try {
         int i2;
         int i3;
         int i4;
@@ -1164,6 +1173,7 @@ abstract class getL3Score extends e1 {
             i2 = i24;
             c2 = 0;
         }
+        } catch (Exception e_e) { throw new RuntimeException(e_e); }
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -1368,7 +1378,7 @@ abstract class getL3Score extends e1 {
 
     @Override // com.identy.e1
     public final boolean PngjUnsupportedException() {
-        boolean PngjUnsupportedException;
+        boolean PngjUnsupportedException = false;
         try {
             PngjUnsupportedException = super.PngjUnsupportedException();
         } catch (Exception e) {
@@ -1508,7 +1518,7 @@ abstract class getL3Score extends e1 {
         Object PngjBadSignature2;
         long j;
         Object PngjBadSignature3;
-        Object[] objArr2;
+        Object[] objArr2 = null;
         Object PngjBadSignature4;
         Object PngjBadSignature5;
         int i9;
@@ -1980,52 +1990,6 @@ abstract class getL3Score extends e1 {
                 } catch (Exception unused2) {
                     throw new RuntimeException();
                 }
-                Long valueOf5 = Long.valueOf(((Long) Class.forName(str).getDeclaredMethod(str2, null).invoke(null, null)).longValue());
-                Object PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
-                if (PngjBadSignature15 == null) {
-                    char c20 = (char) ((ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) + 14829);
-                    int modifierMetaStateMask = 27 - ((byte) KeyEvent.getModifierMetaStateMask());
-                    c4 = 0;
-                    int combineMeasuredStates4 = View.combineMeasuredStates(0, 0) + 721;
-                    byte[] bArr13 = $$d;
-                    byte b22 = bArr13[c];
-                    byte b23 = bArr13[c2];
-                    c3 = 5;
-                    Object[] objArr35 = new Object[1];
-                    f(b22, (byte) (b23 - 1), b23, objArr35);
-                    PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c20, modifierMetaStateMask, combineMeasuredStates4, -815159504, false, (String) objArr35[0], null);
-                } else {
-                    c3 = 5;
-                    c4 = 0;
-                }
-                ((Field) PngjBadSignature15).set(null, valueOf5);
-                i7 = ((int[]) PngjBadCrcException$1eba2e16[c4])[c4];
-                i8 = ((int[]) PngjBadCrcException$1eba2e16[i5])[c4];
-                if (i8 != i7) {
-                }
-                PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1556686741);
-                if (PngjBadSignature2 == null) {
-                }
-                j = ((Field) PngjBadSignature2).getLong(null);
-                if (j != -1) {
-                }
-                Object[] objArr252 = new Object[1];
-                e(new int[]{-2053671547, 94937047, 495425776, -408225771, -839374423, -922359145, 1261017679, -1812046059}, 16 - Color.red(0), objArr252);
-                Class<?> cls42 = Class.forName((String) objArr252[0]);
-                Object[] objArr262 = new Object[1];
-                e(new int[]{246717870, -1706160973, -857543913, -798526455, 1427215364, -1489066450, -683683737, -1871066575}, (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 16, objArr262);
-                int intValue32 = ((Integer) cls42.getMethod((String) objArr262[0], Object.class).invoke(null, this)).intValue();
-                Object[] objArr272 = new Object[i4];
-                objArr272[1] = -1170519535;
-                objArr272[0] = Integer.valueOf(intValue32);
-                PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1437710995);
-                if (PngjBadSignature3 == null) {
-                }
-                objArr2 = (Object[]) ((Method) PngjBadSignature3).invoke(null, objArr272);
-                PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1434812162);
-                if (PngjBadSignature4 == null) {
-                }
-                ((Field) PngjBadSignature4).set(null, objArr2);
             } catch (Exception unused3) {
                 throw new RuntimeException();
             }
