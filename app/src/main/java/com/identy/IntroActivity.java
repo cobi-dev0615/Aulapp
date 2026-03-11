@@ -482,7 +482,8 @@ public class IntroActivity extends Activity {
             b((byte) (b - 1), (byte) (-bArr[13]), b, objArr);
             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(offsetAfter, rgb, blue, -815159504, false, (String) objArr[0], null);
         }
-        long j = ((Field) PngjBadSignature2).getLong(null);
+        long j;
+        try { j = ((Field) PngjBadSignature2).getLong(null); } catch (IllegalAccessException e_ia) { throw new RuntimeException(e_ia); }
         try {
             try {
                 if (j != -1) {
