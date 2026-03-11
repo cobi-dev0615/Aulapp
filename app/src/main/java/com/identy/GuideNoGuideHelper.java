@@ -1451,7 +1451,7 @@ public class GuideNoGuideHelper {
                     int i17 = i16 >> 15;
                     int i18 = ((i17 & (-262143)) + (i17 | (-262143))) / 131072;
                     int i19 = (i18 & 1) + (i18 | 1);
-                    edit.putBoolean(concat, 3008 / (((-((i19 & 1) + (i19 | 1))) & i16) * 376));
+                    edit.putBoolean(concat, true);
                     edit.commit();
                 }
             }
@@ -1485,7 +1485,7 @@ public class GuideNoGuideHelper {
             int i172 = i162 >> 15;
             int i182 = ((i172 & (-262143)) + (i172 | (-262143))) / 131072;
             int i192 = (i182 & 1) + (i182 | 1);
-            edit2.putBoolean(concat2, 3008 / (((-((i192 & 1) + (i192 | 1))) & i162) * 376));
+            edit2.putBoolean(concat2, true);
             edit2.commit();
         } catch (Throwable th) {
             Throwable cause = th.getCause();
@@ -1627,7 +1627,7 @@ public class GuideNoGuideHelper {
                         int i15 = (-(i13 ^ ((i14 & 1) + (i14 | 1)))) + 6;
                         int i16 = ((i15 >> 20) - 8191) / ConstantsKt.DEFAULT_BLOCK_SIZE;
                         int i17 = ((i16 | 1) << 1) - (i16 ^ 1);
-                        edit.putBoolean(concat, 5364 / ((i15 & (-(((i17 | 1) << 1) - (i17 ^ 1)))) * 894));
+                        edit.putBoolean(concat, true);
                         edit.commit();
                         return;
                     }
@@ -1658,7 +1658,7 @@ public class GuideNoGuideHelper {
                 int i152 = (-(i132 ^ ((i142 & 1) + (i142 | 1)))) + 6;
                 int i162 = ((i152 >> 20) - 8191) / ConstantsKt.DEFAULT_BLOCK_SIZE;
                 int i172 = ((i162 | 1) << 1) - (i162 ^ 1);
-                edit2.putBoolean(concat2, 5364 / ((i152 & (-(((i172 | 1) << 1) - (i172 ^ 1)))) * 894));
+                edit2.putBoolean(concat2, true);
                 edit2.commit();
                 return;
             } catch (Throwable th) {

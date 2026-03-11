@@ -26,7 +26,7 @@ public final /* synthetic */ class IdentyC implements Runnable {
                 ((getL2Score) this.b).getFingerPrintQualityScore();
                 break;
             default:
-                getL2Score.PngjBadSignature.PngjException((ImageView) this.b);
+                ImageView _iv = (ImageView) this.b; _iv.clearAnimation(); _iv.setVisibility(8);
                 break;
         }
     }
