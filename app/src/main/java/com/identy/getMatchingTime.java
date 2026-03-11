@@ -9,7 +9,7 @@ import java.util.Map;
 import org.identy.opencv.core.Mat;
 
 /* loaded from: classes2.dex */
-abstract class getMatchingTime {
+public abstract class getMatchingTime {
     FingerAS Action;
     protected Mat PngjPrematureEnding;
     private int PngjException = -2;
