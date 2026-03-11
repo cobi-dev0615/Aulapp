@@ -1313,8 +1313,8 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                     int startUptimeMillis2 = (int) Process.getStartUptimeMillis();
                                     int i100 = (~((-1504581502) | startUptimeMillis2)) | 1504450093;
                                     int i101 = ((int) (j57 >> 32)) & ((((~(startUptimeMillis2 | (-131409))) | (~((~startUptimeMillis2) | (-67223683)))) * 470) + (((i100 | r13) * (-470)) - 140833720));
-                                    int a = a.a();
-                                    int i102 = ((int) j57) & ((((~(a | (-552736207))) | (-884490204)) * 272) + (((~(552736206 | a)) | 336079377) * (-272)) + ((((~(888815583 | (~a))) | (~((-548410827) | a))) * (-272)) - 1394452443));
+                                    int a2 = a.a();
+                                    int i102 = ((int) j57) & ((((~(a2 | (-552736207))) | (-884490204)) * 272) + (((~(552736206 | a2)) | 336079377) * (-272)) + ((((~(888815583 | (~a2))) | (~((-548410827) | a2))) * (-272)) - 1394452443));
                                     if (((i101 & i102) | (i101 ^ i102)) == 477111747) {
                                         cls2 = cls;
                                         int i103 = 0;

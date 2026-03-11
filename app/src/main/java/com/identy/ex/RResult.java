@@ -213,8 +213,8 @@ public class RResult {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int a = a.a();
-                    int c = a.c((~(a | (-283734264))) | (~((-782623544) | a)) | 10575927, -69, (((~((-772047617) | a)) | (~((-273158337) | a))) * 69) + 1063133930, 549049084);
+                    int a2 = a.a();
+                    int c = a.c((~(a2 | (-283734264))) | (~((-782623544) | a2)) | 10575927, -69, (((~((-772047617) | a2)) | (~((-273158337) | a2))) * 69) + 1063133930, 549049084);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);
@@ -470,8 +470,8 @@ public class RResult {
                 j = ((Long) ((Method) values.valueOf[0]).invoke(null, null)).longValue();
                 if (j2 > j) {
                     objArr = new Object[]{new long[]{((long[]) objArr2[0])[0]}, new int[1]};
-                    int a = a.a();
-                    int c = a.c((~(a | 93782751)) | (~(405106528 | a)) | (-498561024), -1444, (((~a) | (-498232768)) * 1444) + 1078082705, 137770996);
+                    int a2 = a.a();
+                    int c = a.c((~(a2 | 93782751)) | (~(405106528 | a2)) | (-498561024), -1444, (((~a2) | (-498232768)) * 1444) + 1078082705, 137770996);
                     int i = c ^ (c << 13);
                     int i2 = i ^ (i >>> 17);
                     ((int[]) objArr[1])[0] = i2 ^ (i2 << 5);

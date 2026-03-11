@@ -543,7 +543,7 @@ public class EnrollFingersActivity extends FingerActivity {
                 b(b, b2, (byte) (b2 + 1), objArr);
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(blue, mirror, i5, -815159504, false, (String) objArr[0], null);
             }
-            ((Field) PngjBadSignature2).getLong(null);
+            try { ((Field) PngjBadSignature2).getLong(null); } catch (Exception e) { throw new RuntimeException(e); }
             throw null;
         }
         super.attachBaseContext(context);
@@ -562,7 +562,8 @@ public class EnrollFingersActivity extends FingerActivity {
         } else {
             c = 2;
         }
-        long j2 = ((Field) PngjBadSignature3).getLong(null);
+        long j2;
+        try { j2 = ((Field) PngjBadSignature3).getLong(null); } catch (Exception e) { throw new RuntimeException(e); }
         try {
             try {
                 if (j2 != -1) {
