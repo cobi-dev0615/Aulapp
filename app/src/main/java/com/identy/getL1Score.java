@@ -212,6 +212,7 @@ final class getL1Score extends getL3Score {
     }
 
     private static void h(byte b, String str, int i, Object[] objArr) {
+        try {
         int i2;
         char c;
         int i3;
@@ -415,6 +416,7 @@ final class getL1Score extends getL3Score {
             }
         }
         objArr[0] = new String(cArr3);
+        } catch (Exception e_h) { throw new RuntimeException(e_h); }
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0025  */
@@ -536,6 +538,7 @@ final class getL1Score extends getL3Score {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void onReceive(Context context, Intent intent) {
+        try {
         long j;
         char c;
         int i;
@@ -986,6 +989,7 @@ final class getL1Score extends getL3Score {
             PngjBadSignature15 = com.d.e.a.PngjBadCrcException.PngjBadSignature(myTid, minimumFlingVelocity2, keyRepeatTimeout, 1452666181, false, (String) objArr37[0], null);
         }
         ((Field) PngjBadSignature15).set(null, objArr);
+        } catch (Exception e_recv) { throw new RuntimeException(e_recv); }
     }
 
     @Override // com.identy.e1
