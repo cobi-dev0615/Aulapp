@@ -85,7 +85,6 @@ public class Verify2IndexActivity extends FingerActivity {
         /* JADX WARN: Removed duplicated region for block: B:27:0x017d A[Catch: Exception -> 0x0181, TRY_LEAVE, TryCatch #8 {Exception -> 0x0181, blocks: (B:25:0x0177, B:27:0x017d), top: B:24:0x0177 }] */
         /* JADX WARN: Removed duplicated region for block: B:35:0x01b3  */
         /* JADX WARN: Removed duplicated region for block: B:52:0x01f9 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-        @Override // com.identy.b.PngjBadSignature.values
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
@@ -518,7 +517,7 @@ public class Verify2IndexActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getPressedStateDuration() >> 16), 23 - MotionEvent.axisFromString(BuildConfig.FLAVOR), 697 - Color.blue(0), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            values$1eba2e16 = PngjInputException.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -56835873);
+            values$1eba2e16 = com.identy.PngjInputException.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -56835873);
             java.lang.Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i);
             if (PngjBadSignature5 == null) {
                 char c4 = (char) ((ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1)) + 14829);

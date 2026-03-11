@@ -1307,7 +1307,7 @@ public final class values {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        X509EncodedKeySpec x509EncodedKeySpec = new X509EncodedKeySpec(Base64.decode(jSONObject.getString("key"), 1));
+        X509EncodedKeySpec x509EncodedKeySpec; try { x509EncodedKeySpec = new X509EncodedKeySpec(Base64.decode(jSONObject.getString("key"), 1)); } catch (org.json.JSONException e) { throw new RuntimeException(e); }
         PublicKey publicKey = null;
         try {
             keyFactory = KeyFactory.getInstance("RSA");
