@@ -408,7 +408,7 @@ public final class getFingerPrintQualityScore extends Dialog {
     }
 
     public getFingerPrintQualityScore(Context context, com.identy.d.PngjException pngjException, FingerDetectionMode fingerDetectionMode, FingerDetectionMode fingerDetectionMode2) {
-        super(context, R.style.Theme.Translucent.NoTitleBar);
+        super(context, R.style.Theme_Translucent_NoTitleBar);
         this.PngjException = true;
         this.PngjBadSignature = pngjException;
         this.PngjBadCrcException = fingerDetectionMode2;

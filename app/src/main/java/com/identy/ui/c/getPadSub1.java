@@ -39,7 +39,7 @@ public final class getPadSub1 extends Dialog {
     }
 
     public getPadSub1(Context context, com.identy.d.PngjException pngjException) {
-        super(context, R.style.Theme.Black.NoTitleBar);
+        super(context, R.style.Theme_Black_NoTitleBar);
         this.values = pngjException;
         WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
         layoutParams.copyFrom(getWindow().getAttributes());

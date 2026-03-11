@@ -62,7 +62,7 @@ public final class getPadSub2 extends Dialog {
     }
 
     public getPadSub2(Activity activity) {
-        super(activity, android.R.style.Theme.Material.Dialog.Alert);
+        super(activity, android.R.style.Theme_Material_Dialog_Alert);
         this.PngjException = R.string.id_spoof_final_message;
         this.PngjBadCrcException = R.string.id_no;
         this.values = R.string.id_yes;

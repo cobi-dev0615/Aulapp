@@ -27,7 +27,7 @@ public final class a extends Dialog {
     }
 
     public a(Activity activity) {
-        super(activity, R.style.Theme.Material.Dialog.Alert);
+        super(activity, R.style.Theme_Material_Dialog_Alert);
         this.values = null;
         this.PngjBadSignature = com.identy.R.string.id_spoof_final_message;
         this.PngjException = com.identy.R.string.id_done;

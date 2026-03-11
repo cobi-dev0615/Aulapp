@@ -1770,7 +1770,7 @@ public final class PngjInputException {
                 cArr = str2.toCharArray();
                 $10 = ($11 + 63) % 128;
             } else {
-                cArr = str2;
+                cArr = null;
             }
             char[] cArr3 = cArr;
             char[] charArray2 = str != null ? str.toCharArray() : null;

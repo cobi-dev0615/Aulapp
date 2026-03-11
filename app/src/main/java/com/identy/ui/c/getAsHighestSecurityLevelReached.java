@@ -39,7 +39,7 @@ public final class getAsHighestSecurityLevelReached extends Dialog {
     }
 
     public getAsHighestSecurityLevelReached(Context context, com.identy.d.PngjException pngjException) {
-        super(context, R.style.Theme.Black.NoTitleBar);
+        super(context, R.style.Theme_Black_NoTitleBar);
         this.PngjBadCrcException = pngjException;
         WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
         layoutParams.copyFrom(getWindow().getAttributes());
