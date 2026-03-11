@@ -620,9 +620,10 @@ final class getFingers extends e1 {
             int i5 = 7 - i;
             byte[] bArr2 = new byte[13 - s];
             int i6 = 12 - s;
+            int i7 = 0;
             if (bArr == null) {
                 byte[] bArr3 = bArr;
-                int i7 = 0;
+                i7 = 0;
                 int i8 = i6;
                 i5++;
                 i4 = (-i4) + i8;
@@ -781,19 +782,19 @@ final class getFingers extends e1 {
         this.Action = activity;
         this.Attempt = pngjBadSignature;
         this.configure = new Handler(this.Action.getMainLooper());
-        e1.PngjOutputException = 0L;
+        com.identy.e1.PngjOutputException = 0L;
         this.getOveralTimetaken = new float[0];
         this.a = fingerDetectionMode.getHand();
         this.pfkrol = new Pair(fingerDetectionMode.getHand(), fingerDetectionMode.getFinger());
         this.getL3Score = z;
-        this.Capture2IndexActivity = new PngjOutputException(PngjExceptionInternal());
+        this.Capture2IndexActivity = new com.identy.PngjOutputException(PngjExceptionInternal());
         this.getProcessingTime = 1;
         int i = this.a.equals(Hand.LEFT) ? R.string.id_searching_left_thumb : R.string.id_searching_right_thumb;
         com.identy.d.PngjBadSignature pngjBadSignature2 = this.Attempt;
         if (pngjBadSignature2 != null) {
             pngjBadSignature2.PngjBadSignature(i, false);
         }
-        this.cvtyuv2bgr = CapturePosition.VERTICAL_FROM_BOTTOM;
+        this.cvtyuv2bgr = com.identy.CapturePosition.VERTICAL_FROM_BOTTOM;
     }
 
     public static /* synthetic */ Object PngjBadSignature(int i, int i2, Object[] objArr, int i3, int i4, int i5, int i6) {
@@ -1022,10 +1023,11 @@ final class getFingers extends e1 {
         byte[] bArr = $$d;
         byte[] bArr2 = new byte[19 - i];
         int i5 = 18 - i;
+        int i8 = 0;
         if (bArr == null) {
             int i6 = i3;
             int i7 = i5;
-            int i8 = 0;
+            i8 = 0;
             int i9 = i3 + (-i7) + 5;
             int i10 = i6;
             i4 = i9;
