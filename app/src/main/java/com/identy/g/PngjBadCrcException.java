@@ -77,7 +77,7 @@ public class PngjBadCrcException {
     }
 
     public PngjBadCrcException(float f, List<Object[]> list, List<Object[]> list2, int i) {
-        long j;
+        long j = 0;
         long j2;
         char c;
         char c2;
@@ -130,7 +130,7 @@ public class PngjBadCrcException {
         this.PngjBadSignature = arrayList2;
     }
 
-    private static void a(int[] iArr, int i, String str, String str2, Object[] objArr) {
+    private static void a(int[] iArr, int i, String str, String str2, Object[] objArr) throws Exception {
         char[] cArr;
         char c;
         int i2;
