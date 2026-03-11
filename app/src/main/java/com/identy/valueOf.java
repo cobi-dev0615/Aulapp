@@ -40,8 +40,8 @@ public enum valueOf {
             byte b4 = 0;
             i2 = 0;
             i3++;
-            b2 = (b4 + b3) - 13;
-            bArr2[i2] = b2 == true ? (byte) 1 : (byte) 0;
+            b2 = (byte) ((b4 + b3) - 13);
+            bArr2[i2] = b2 == 0 ? (byte) 1 : (byte) 0;
             if (i2 == 0) {
                 objArr[0] = new String(bArr2, 0);
                 return;
@@ -50,14 +50,14 @@ public enum valueOf {
             b3 = bArr[i3];
             b4 = b2;
             i3++;
-            b2 = (b4 + b3) - 13;
-            bArr2[i2] = b2 == true ? (byte) 1 : (byte) 0;
+            b2 = (byte) ((b4 + b3) - 13);
+            bArr2[i2] = b2 == 0 ? (byte) 1 : (byte) 0;
             if (i2 == 0) {
             }
         } else {
             i2 = 0;
             b2 = 0;
-            bArr2[i2] = b2 == true ? (byte) 1 : (byte) 0;
+            bArr2[i2] = b2 == 0 ? (byte) 1 : (byte) 0;
             if (i2 == 0) {
             }
         }

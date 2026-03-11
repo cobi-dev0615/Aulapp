@@ -369,8 +369,8 @@ public final class isAuthSucess extends e1 {
                         i = 0;
                         byte b4 = 0;
                         0++;
-                        b2 = b4 + b3;
-                        bArr2[i] = b2 == true ? (byte) 1 : (byte) 0;
+                        b2 = (byte) (b4 + b3);
+                        bArr2[i] = b2 == 0 ? (byte) 1 : (byte) 0;
                         if (i == i2) {
                             return new String(bArr2, 0);
                         }
@@ -378,14 +378,14 @@ public final class isAuthSucess extends e1 {
                         b3 = bArr[0];
                         b4 = b2;
                         0++;
-                        b2 = b4 + b3;
-                        bArr2[i] = b2 == true ? (byte) 1 : (byte) 0;
+                        b2 = (byte) (b4 + b3);
+                        bArr2[i] = b2 == 0 ? (byte) 1 : (byte) 0;
                         if (i == i2) {
                         }
                     } else {
                         i = 0;
                         b2 = 0;
-                        bArr2[i] = b2 == true ? (byte) 1 : (byte) 0;
+                        bArr2[i] = b2 == 0 ? (byte) 1 : (byte) 0;
                         if (i == i2) {
                         }
                     }

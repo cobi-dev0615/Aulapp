@@ -366,8 +366,8 @@ public class IntroActivity extends Activity {
             i = 0;
             byte b5 = 0;
             i2++;
-            b3 = b5 + b4 + 5;
-            bArr2[i] = b3 == true ? (byte) 1 : (byte) 0;
+            b3 = (byte) (b5 + b4 + 5);
+            bArr2[i] = b3 == 0 ? (byte) 1 : (byte) 0;
             if (i == 0) {
                 objArr[0] = new String(bArr2, 0);
                 return;
@@ -376,14 +376,14 @@ public class IntroActivity extends Activity {
             b4 = bArr[i2];
             b5 = b3;
             i2++;
-            b3 = b5 + b4 + 5;
-            bArr2[i] = b3 == true ? (byte) 1 : (byte) 0;
+            b3 = (byte) (b5 + b4 + 5);
+            bArr2[i] = b3 == 0 ? (byte) 1 : (byte) 0;
             if (i == 0) {
             }
         } else {
             i = 0;
             b3 = 0;
-            bArr2[i] = b3 == true ? (byte) 1 : (byte) 0;
+            bArr2[i] = b3 == 0 ? (byte) 1 : (byte) 0;
             if (i == 0) {
             }
         }
