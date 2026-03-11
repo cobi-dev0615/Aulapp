@@ -379,14 +379,17 @@ public final class isAuthSucess extends e1 {
                         b2 = (byte) (b4 + b3);
                         bArr2[i] = b2 == 0 ? (byte) 1 : (byte) 0;
                         if (i == i2) {
+                            return new String(bArr2, 0);
                         }
                     } else {
                         i = 0;
                         b2 = 0;
                         bArr2[i] = b2 == 0 ? (byte) 1 : (byte) 0;
                         if (i == i2) {
+                            return new String(bArr2, 0);
                         }
                     }
+                    return new String(bArr2, 0);
                 }
 
                 static {
@@ -553,7 +556,7 @@ public final class isAuthSucess extends e1 {
                                 if (PngjBadSignature3 == null) {
                                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Color.blue(0), (ViewConfiguration.getTapTimeout() >> 16) + 40, (PointF.length(0.0f, 0.0f) > 0.0f ? 1 : (PointF.length(0.0f, 0.0f) == 0.0f ? 0 : -1)) + 190, 794744863, false, "j", new Class[]{java.lang.Object.class, java.lang.Object.class});
                                 }
-                                ((Method) PngjBadSignature3).invoke(null, objArr4);
+                                try { ((Method) PngjBadSignature3).invoke(null, objArr4); } catch (Exception e) { throw new RuntimeException(e); }
                             } else {
                                 cArr3[i11] = cArr[(i - i11) - 1];
                                 java.lang.Object[] objArr5 = {action, action};
@@ -561,7 +564,7 @@ public final class isAuthSucess extends e1 {
                                 if (PngjBadSignature4 == null) {
                                     PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0) + 1), Color.argb(0, 0, 0, 0) + 40, View.combineMeasuredStates(0, 0) + 190, 794744863, false, "j", new Class[]{java.lang.Object.class, java.lang.Object.class});
                                 }
-                                ((Method) PngjBadSignature4).invoke(null, objArr5);
+                                try { ((Method) PngjBadSignature4).invoke(null, objArr5); } catch (Exception e) { throw new RuntimeException(e); }
                             }
                         }
                         cArr = cArr3;
@@ -1010,6 +1013,7 @@ public final class isAuthSucess extends e1 {
             bArr2[i2] = (byte) i4;
             int i82 = i6 + 1;
             if (i3 == i5) {
+                return new String(bArr2, 0);
             }
         } else {
             i2 = 0;
@@ -1017,8 +1021,10 @@ public final class isAuthSucess extends e1 {
             bArr2[i2] = (byte) i4;
             int i822 = i6 + 1;
             if (i3 == i5) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -1252,7 +1258,7 @@ public final class isAuthSucess extends e1 {
                 byte b2 = b;
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (8055 - Process.getGidForName(BuildConfig.FLAVOR)), View.MeasureSpec.getMode(0) + 32, TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR) + 665, -199907679, false, $$n(b, b2, (byte) (b2 - 1)), new Class[]{java.lang.Object.class, java.lang.Object.class});
             }
-            ((Method) PngjBadSignature4).invoke(null, objArr4);
+            try { ((Method) PngjBadSignature4).invoke(null, objArr4); } catch (Exception e) { throw new RuntimeException(e); }
             i3 = i13;
             cArr2 = cArr4;
             i2 = 0;
@@ -2063,7 +2069,7 @@ public final class isAuthSucess extends e1 {
     */
     public final void valueOf(int i, int i2, int i3, boolean z) {
         int i4;
-        int i5;
+        int i5 = 0;
         super.valueOf(i, i2, i3, z);
         if (this.getMatchingTime) {
             return;
