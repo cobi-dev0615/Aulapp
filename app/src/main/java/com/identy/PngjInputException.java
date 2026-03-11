@@ -204,7 +204,11 @@ public final class PngjInputException {
             $11 = ($10 + 45) % 128;
             byte[] bArr = null;
             if (str3 != null) {
-                bArr = str3.getBytes("ISO-8859-1");
+                try {
+                    bArr = str3.getBytes("ISO-8859-1");
+                } catch (java.io.UnsupportedEncodingException e) {
+                    throw new RuntimeException(e);
+                }
             }
             byte[] bArr2 = bArr;
             char[] charArray = str != null ? str.toCharArray() : null;
@@ -239,12 +243,16 @@ public final class PngjInputException {
                             throw new RuntimeException(cause);
                         }
                     } else {
-                        java.lang.Object[] objArr3 = {Integer.valueOf(cArr[i4])};
-                        java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(358189806);
-                        if (PngjBadSignature3 == null) {
-                            PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0) + 27092), 37 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 118 - TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0), -373889195, false, "b", new Class[]{cls});
+                        try {
+                            java.lang.Object[] objArr3 = {Integer.valueOf(cArr[i4])};
+                            java.lang.Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(358189806);
+                            if (PngjBadSignature3 == null) {
+                                PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0) + 27092), 37 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR), 118 - TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0), -373889195, false, "b", new Class[]{cls});
+                            }
+                            cArr2[i4] = ((Character) ((java.lang.reflect.Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
+                        } catch (Exception e) {
+                            throw new RuntimeException(e);
                         }
-                        cArr2[i4] = ((Character) ((java.lang.reflect.Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
                         i4++;
                     }
                 }
@@ -256,7 +264,12 @@ public final class PngjInputException {
                 byte b = (byte) 0;
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (61712 - ExpandableListView.getPackedPositionChild(0L)), TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0, 0) + 35, 279 - (SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1)), -1654917268, false, $$e(b, b, (byte) $$c.length), new Class[]{cls});
             }
-            int intValue = ((Integer) ((java.lang.reflect.Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
+            int intValue;
+            try {
+                intValue = ((Integer) ((java.lang.reflect.Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
             char c2 = 1;
             int i6 = -528960794;
             if (!(!PngjExceptionInternal)) {
@@ -865,13 +878,16 @@ public final class PngjInputException {
                 i7 += i9;
                 bArr2[i4] = (byte) i7;
                 if (i4 == i8) {
+                    return new String(bArr2, 0);
                 }
             } else {
                 i4 = 0;
                 bArr2[i4] = (byte) i7;
                 if (i4 == i8) {
+                    return new String(bArr2, 0);
                 }
             }
+            return new String(bArr2, 0);
         }
 
         static {
@@ -926,7 +942,11 @@ public final class PngjInputException {
             String str2 = str;
             byte[] bArr2 = null;
             if (str2 != null) {
-                bArr2 = str2.getBytes("ISO-8859-1");
+                try {
+                    bArr2 = str2.getBytes("ISO-8859-1");
+                } catch (java.io.UnsupportedEncodingException e) {
+                    throw new RuntimeException(e);
+                }
             }
             byte[] bArr3 = bArr2;
             com.d.e.e1 e1Var = new com.d.e.e1();
@@ -1273,6 +1293,7 @@ public final class PngjInputException {
                 i2 = i + 1;
                 bArr2[i] = (byte) i3;
                 if (i2 == i5) {
+                    return new String(bArr2, 0);
                 }
             } else {
                 i = 0;
@@ -1280,8 +1301,10 @@ public final class PngjInputException {
                 i2 = i + 1;
                 bArr2[i] = (byte) i3;
                 if (i2 == i5) {
+                    return new String(bArr2, 0);
                 }
             }
+            return new String(bArr2, 0);
         }
 
         static {
@@ -1917,7 +1940,7 @@ public final class PngjInputException {
     }
 
     public final void PngjBadSignature(Context context, String str, PngjPrematureEnding pngjPrematureEnding) {
-        JSONObject jSONObject;
+        JSONObject jSONObject = null;
         try {
             HashMap hashMap = new HashMap();
             hashMap.put("type", "FINGER");
