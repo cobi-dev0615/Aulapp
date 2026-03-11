@@ -75,9 +75,6 @@ public final class isAuthSucess extends e1 {
     List pfkrol;
     private List resetAttempt;
 
-    public static Object[] bridgePngjException$1eba2e16(int a, Object b, int c) {
-        return com.identy.isAuthSucess.PngjException.AnimationAnimationListenerC0024PngjException.RunnableC0025PngjException.PngjException$1eba2e16(a, b, c);
-    }
 
 
     public class PngjBadCrcException implements org.c.a.PngjBadCrcException.values {
@@ -1956,7 +1953,7 @@ public final class isAuthSucess extends e1 {
             if (PngjBadSignature13 == null) {
                 PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (Process.getGidForName(BuildConfig.FLAVOR) + 1), TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0) + 24, 697 - (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            java.lang.Object[] PngjBadSignature$1eba2e16 = FingerActivity.bridgePngjUnsupportedException$1eba2e16(intValue2, ((Constructor) PngjBadSignature13).newInstance(objArr32), -1978388072);
+            java.lang.Object[] PngjBadSignature$1eba2e16 = InnerClassBridge.callPngjUnsupportedException_PngjBadSignature(intValue2, ((Constructor) PngjBadSignature13).newInstance(objArr32), -1978388072);
             java.lang.Object PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature14 == null) {
                 char doubleTapTimeout = (char) (14830 - (ViewConfiguration.getDoubleTapTimeout() >> 16));
