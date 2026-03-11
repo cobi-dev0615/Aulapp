@@ -31,6 +31,7 @@ public class PngjBadSignature {
     public void values(java.io.File file) {}
 
     public void PngjBadSignature(int i, boolean b) {}
+    public boolean PngjBadSignature(float f) { return false; }
     public void PngjException(String s1, Object o1, Object o2, boolean b1, boolean b2) {}
     public void PngjPrematureEnding(String s) {}
     public Object getData() { return null; }
