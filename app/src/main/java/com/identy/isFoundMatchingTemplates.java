@@ -1645,7 +1645,7 @@ final class isFoundMatchingTemplates extends e1 {
                     int i48 = c14 ^ (c14 << 13);
                     int i49 = i48 ^ (i48 >>> 17);
                     ((int[]) objArr36[1])[0] = i49 ^ (i49 << 5);
-                    super.onReceive(context2, intent);
+                    isfoundmatchingtemplates.onReceive(context2, intent);
                     return null;
                 }
                 ArrayList arrayList = new ArrayList();

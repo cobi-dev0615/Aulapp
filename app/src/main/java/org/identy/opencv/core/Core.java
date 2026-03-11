@@ -8,4 +8,5 @@ public class Core {
     public static void split(Mat m, java.util.List<Mat> mv) {}
     public static double norm(Mat src1, Mat src2, int normType) { return 0; }
     public static void valueOf(Mat src, Mat dst, int flipCode) {}
+    public static void PngjBadCrcException(Mat src, Mat dst, int code) {}
 }
