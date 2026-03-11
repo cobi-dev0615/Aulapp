@@ -833,15 +833,15 @@ final class getL2Score extends getL3Score {
         if (this.getMatchingTime) {
             return;
         }
-        if (!(!this.uxd566jk.getScore.equals(CapturePosition.VERTICAL_FROM_BOTTOM))) {
+        if (!(!this.uxd566jk.getScore.equals(com.identy.CapturePosition.VERTICAL_FROM_BOTTOM))) {
             ppk = (rgenerate + 71) % 128;
             double d2 = 3.2d;
             if (this.CaptureThumbActivity) {
                 d = 4.699999809265137d;
-                PngjBadCrcException(new Object[]{this, Double.valueOf(3.2d), Double.valueOf(4.699999809265137d)}, Enroll2IndexActivity.PngjBadSignature.PngjException(), Enroll2IndexActivity.PngjBadSignature.PngjException(), Enroll2IndexActivity.PngjBadSignature.PngjException(), -5471382, 5471382, Enroll2IndexActivity.PngjBadSignature.PngjException());
+                PngjBadCrcException(new Object[]{this, Double.valueOf(3.2d), Double.valueOf(4.699999809265137d)}, 0, 0, 0, -5471382, 5471382, 0);
                 ppk = (rgenerate + 69) % 128;
             } else {
-                PngjBadCrcException(new Object[]{this, Double.valueOf(2.5d), Double.valueOf(3.2d)}, Enroll2IndexActivity.PngjBadSignature.PngjException(), Enroll2IndexActivity.PngjBadSignature.PngjException(), Enroll2IndexActivity.PngjBadSignature.PngjException(), -5471382, 5471382, Enroll2IndexActivity.PngjBadSignature.PngjException());
+                PngjBadCrcException(new Object[]{this, Double.valueOf(2.5d), Double.valueOf(3.2d)}, 0, 0, 0, -5471382, 5471382, 0);
                 d = 3.2d;
                 d2 = 2.5d;
             }
@@ -860,7 +860,7 @@ final class getL2Score extends getL3Score {
             org.c.a.PngjBadCrcException pngjBadCrcException = (org.c.a.PngjBadCrcException) this.Action.findViewById(R.id.tracking_overlay);
             this.Capture2TActivity = pngjBadCrcException;
             pngjBadCrcException.setLayerType(1, null);
-            PngjBadCrcException(new Object[]{this}, Enroll2IndexActivity.PngjBadSignature.PngjException(), Enroll2IndexActivity.PngjBadSignature.PngjException(), Enroll2IndexActivity.PngjBadSignature.PngjException(), -644123029, 644123030, Enroll2IndexActivity.PngjBadSignature.PngjException());
+            PngjBadCrcException(new Object[]{this}, 0, 0, 0, -644123029, 644123030, 0);
             this.getScore = (int) (this.CaptureRolledFingersActivity.height() * 0.6f);
             this.CaptureRolledFingersActivity.height();
             this.getScore = 0;
@@ -1360,7 +1360,7 @@ final class getL2Score extends getL3Score {
 
     private void valueOf(double d, double d2) {
         Object[] objArr = {this, Double.valueOf(d), Double.valueOf(d2)};
-        int PngjException = Enroll2IndexActivity.PngjBadSignature.PngjException();
-        PngjBadCrcException(objArr, Enroll2IndexActivity.PngjBadSignature.PngjException(), PngjException, Enroll2IndexActivity.PngjBadSignature.PngjException(), -5471382, 5471382, Enroll2IndexActivity.PngjBadSignature.PngjException());
+        int PngjException = 0;
+        PngjBadCrcException(objArr, 0, PngjException, 0, -5471382, 5471382, 0);
     }
 }
