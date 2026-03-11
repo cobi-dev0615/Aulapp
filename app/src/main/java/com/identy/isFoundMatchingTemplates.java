@@ -762,17 +762,17 @@ final class isFoundMatchingTemplates extends e1 {
         this.Action = activity;
         this.Attempt = pngjBadSignature;
         this.pfkrol = new Handler(this.Action.getMainLooper());
-        e1.PngjOutputException = 0L;
+        com.identy.e1.PngjOutputException = 0L;
         this.getOveralTimetaken = new float[0];
         this.a = fingerDetectionMode.getHand();
         this.getL3Score = z;
-        this.Capture2IndexActivity = new PngjOutputException(PngjExceptionInternal());
+        this.Capture2IndexActivity = new com.identy.PngjOutputException(PngjExceptionInternal());
         int i = R.string.id_searching_thumb;
         com.identy.d.PngjBadSignature pngjBadSignature2 = this.Attempt;
         if (pngjBadSignature2 != null) {
             pngjBadSignature2.PngjBadSignature(i, false);
         }
-        this.cvtyuv2bgr = CapturePosition.VERTICAL_FROM_BOTTOM;
+        this.cvtyuv2bgr = com.identy.CapturePosition.VERTICAL_FROM_BOTTOM;
     }
 
     public static /* synthetic */ java.lang.Object PngjException(int i, int i2, int i3, int i4, java.lang.Object[] objArr, int i5, int i6) {

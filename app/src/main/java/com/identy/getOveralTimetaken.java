@@ -901,11 +901,11 @@ public final class getOveralTimetaken extends e1 {
         this.Action = activity;
         this.Attempt = pngjBadSignature;
         this.configure = new Handler(Looper.getMainLooper());
-        e1.PngjOutputException = 0L;
+        com.identy.e1.PngjOutputException = 0L;
         this.getOveralTimetaken = new float[0];
         this.a = fingerDetectionMode.getHand();
         this.getL3Score = z;
-        this.Capture2IndexActivity = new PngjOutputException(PngjExceptionInternal());
+        this.Capture2IndexActivity = new com.identy.PngjOutputException(PngjExceptionInternal());
         try {
             IdentySdk.getInstance().t();
             this.configureroll = false;
@@ -918,7 +918,7 @@ public final class getOveralTimetaken extends e1 {
         if (pngjBadSignature2 != null) {
             pngjBadSignature2.PngjBadSignature(i, false);
         }
-        this.cvtyuv2bgr = CapturePosition.HORIZONTAL;
+        this.cvtyuv2bgr = com.identy.CapturePosition.HORIZONTAL;
     }
 
     private static /* synthetic */ Object PngjException(Object[] objArr) {

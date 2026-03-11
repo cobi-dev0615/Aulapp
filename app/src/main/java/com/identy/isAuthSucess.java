@@ -856,7 +856,7 @@ public final class isAuthSucess extends e1 {
                         InlineGuideOption guideOption = IdentySdk.getInstance().getGuideOption();
                         isAuthSucess isauthsucess = isAuthSucess.this;
                         if (isauthsucess.getProcessingTime != 1) {
-                            if (isauthsucess.cvtyuv2bgr.equals(CapturePosition.HORIZONTAL)) {
+                            if (isauthsucess.cvtyuv2bgr.equals(com.identy.CapturePosition.HORIZONTAL)) {
                                 return;
                             }
                             RelativeLayout.LayoutParams layoutParams5 = new RelativeLayout.LayoutParams(-1, -1);
@@ -865,7 +865,7 @@ public final class isAuthSucess extends e1 {
                             int i5 = R.id.inline_guide;
                             ((ImageView) activity5.findViewById(i5)).setLayoutParams(layoutParams5);
                             ((ImageView) isAuthSucess.this.Action.findViewById(i5)).setImageResource(R.drawable.identy_two_finger_guide);
-                            if (isAuthSucess.this.cvtyuv2bgr.equals(CapturePosition.VERTICAL_FROM_TOP)) {
+                            if (isAuthSucess.this.cvtyuv2bgr.equals(com.identy.CapturePosition.VERTICAL_FROM_TOP)) {
                                 ((ImageView) isAuthSucess.this.Action.findViewById(i5)).setRotation(180.0f);
                             }
                             ImageView imageView = (ImageView) isAuthSucess.this.Action.findViewById(i5);
@@ -888,7 +888,7 @@ public final class isAuthSucess extends e1 {
                         int i6 = R.id.inline_guide;
                         ((ImageView) activity6.findViewById(i6)).setLayoutParams(layoutParams7);
                         CapturePosition capturePosition = isAuthSucess.this.cvtyuv2bgr;
-                        CapturePosition capturePosition2 = CapturePosition.HORIZONTAL;
+                        CapturePosition capturePosition2 = com.identy.CapturePosition.HORIZONTAL;
                         if (capturePosition.equals(capturePosition2)) {
                             Hand hand = isAuthSucess.this.a;
                             if (hand == null || !hand.equals(Hand.LEFT)) {
@@ -904,7 +904,7 @@ public final class isAuthSucess extends e1 {
                             ImageView imageView2 = (ImageView) isAuthSucess.this.Action.findViewById(i6);
                             int i7 = R.drawable.identy_vertical_single_finger_guide;
                             imageView2.setImageResource(i7);
-                            if (isAuthSucess.this.cvtyuv2bgr.equals(CapturePosition.VERTICAL_FROM_TOP)) {
+                            if (isAuthSucess.this.cvtyuv2bgr.equals(com.identy.CapturePosition.VERTICAL_FROM_TOP)) {
                                 ((ImageView) isAuthSucess.this.Action.findViewById(i6)).setRotation(180.0f);
                             } else {
                                 ((ImageView) isAuthSucess.this.Action.findViewById(i6)).setImageResource(i7);
@@ -1046,19 +1046,19 @@ public final class isAuthSucess extends e1 {
         this.Action = activity;
         this.Attempt = pngjBadSignature;
         this.configure = new Handler(this.Action.getMainLooper());
-        e1.PngjOutputException = 0L;
+        com.identy.e1.PngjOutputException = 0L;
         this.getOveralTimetaken = new float[0];
         this.a = fingerDetectionMode.getHand();
         this.resetAttempt = new ArrayList(Arrays.asList(fingerArr));
         this.getL3Score = z;
-        this.Capture2IndexActivity = new PngjOutputException(PngjExceptionInternal());
+        this.Capture2IndexActivity = new com.identy.PngjOutputException(PngjExceptionInternal());
         int Attempt = Attempt();
         com.identy.d.PngjBadSignature pngjBadSignature2 = this.Attempt;
         if (pngjBadSignature2 != null) {
             pngjBadSignature2.PngjBadSignature(Attempt, false);
         }
         CapturePosition capturePosition = this.cvtyuv2bgr;
-        CapturePosition capturePosition2 = CapturePosition.HORIZONTAL;
+        CapturePosition capturePosition2 = com.identy.CapturePosition.HORIZONTAL;
         if (capturePosition.equals(capturePosition2)) {
             return;
         }
@@ -2086,7 +2086,7 @@ public final class isAuthSucess extends e1 {
             } catch (Exception unused) {
             }
             if (i5 == 1) {
-                if (this.cvtyuv2bgr.equals(CapturePosition.HORIZONTAL)) {
+                if (this.cvtyuv2bgr.equals(com.identy.CapturePosition.HORIZONTAL)) {
                     float f3 = this.getPadSub3;
                     float f4 = this.getPadSub2;
                     this.CaptureRolledFingersActivity = new RectF((int) (f3 / 3.5f), (int) (f4 / 3.5f), (int) (f3 - (f3 / 2.0f)), (int) (f4 - (f3 / 3.6f)));
@@ -2116,7 +2116,7 @@ public final class isAuthSucess extends e1 {
                     this.isQualityFailed = (int) (this.CaptureRolledFingersActivity.height() / i2);
                     int i6 = this.getProcessingTime;
                     if (i6 == 1) {
-                        if (this.cvtyuv2bgr.equals(CapturePosition.HORIZONTAL)) {
+                        if (this.cvtyuv2bgr.equals(com.identy.CapturePosition.HORIZONTAL)) {
                             this.getScore = (int) (this.CaptureRolledFingersActivity.height() * 0.65f);
                             this.isQualityFailed = (int) this.CaptureRolledFingersActivity.height();
                         } else {
@@ -2124,7 +2124,7 @@ public final class isAuthSucess extends e1 {
                             this.isQualityFailed = (int) (this.CaptureRolledFingersActivity.height() * 1.1d);
                         }
                     } else if (i6 == 2 && i4 == 1) {
-                        if (this.cvtyuv2bgr.equals(CapturePosition.HORIZONTAL)) {
+                        if (this.cvtyuv2bgr.equals(com.identy.CapturePosition.HORIZONTAL)) {
                             this.getScore = (int) ((this.CaptureRolledFingersActivity.height() / i) * 0.65f);
                             this.isQualityFailed = ((int) this.CaptureRolledFingersActivity.height()) / 2;
                         } else {
@@ -2153,7 +2153,7 @@ public final class isAuthSucess extends e1 {
                 this.Capture2TActivity.valueOf = new PngjBadCrcException();
             }
             if (i5 == 2 && i4 == 1) {
-                if (this.cvtyuv2bgr.equals(CapturePosition.VERTICAL_FROM_TOP)) {
+                if (this.cvtyuv2bgr.equals(com.identy.CapturePosition.VERTICAL_FROM_TOP)) {
                     i = 1073741824;
                     i2 = 1080033280;
                     i3 = 1083808154;
@@ -2172,7 +2172,7 @@ public final class isAuthSucess extends e1 {
                     i = 1073741824;
                     i2 = 1080033280;
                     i3 = 1083808154;
-                    if (this.cvtyuv2bgr.equals(CapturePosition.HORIZONTAL)) {
+                    if (this.cvtyuv2bgr.equals(com.identy.CapturePosition.HORIZONTAL)) {
                         float f7 = Build.MANUFACTURER.toUpperCase().trim().contains("INGENICO") ? 4.0f : 2.6f;
                         float f8 = this.getPadSub2 / 10.0f;
                         float f9 = this.getPadSub3;

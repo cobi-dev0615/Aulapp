@@ -505,9 +505,9 @@ abstract class getL3Score extends e1 {
                     a aVar = new a(0, getL3Score.this.CapturePosition.getHand(), getL3Score.this.CapturePosition.getFinger(), getL3Score.this.CapturePosition, true);
                     ((FingerActivity) getL3Score.this.Action).Action.PngjException();
                     getL3Score.this.PngjException(R.string.id_processing);
-                    Mat mat = new Mat(Fpnative.pfkrolfinalizeF(e1.PngjBadCrcException));
+                    Mat mat = new Mat(Fpnative.pfkrolfinalizeF(com.identy.e1.PngjBadCrcException));
                     aVar.values(mat);
-                    PngjBadCrcException.quality = Fpnative.pfkrolGetQuality(e1.PngjBadCrcException);
+                    PngjBadCrcException.quality = Fpnative.pfkrolGetQuality(com.identy.e1.PngjBadCrcException);
                     aVar.PngjUnsupportedException = (int) PngjBadCrcException.getQuality();
                     aVar.PngjException = PngjBadCrcException.getQuality();
                     HashMap hashMap = new HashMap();
@@ -526,7 +526,7 @@ abstract class getL3Score extends e1 {
                         byte[] byteArray = byteArrayOutputStream.toByteArray();
                         getL3Score getl3score2 = getL3Score.this;
                         StringBuilder sb2 = new StringBuilder();
-                        sb2.append(e1.PngjUnsupportedException);
+                        sb2.append(com.identy.e1.PngjUnsupportedException);
                         sb2.append("_captured");
                         getl3score2.PngjBadSignature(byteArray, sb2.toString(), "CAPTURED", BuildConfig.FLAVOR);
                         createBitmap.recycle();
@@ -807,9 +807,9 @@ abstract class getL3Score extends e1 {
 
         @Override // java.lang.Runnable
         public final void run() {
-            long j = e1.PngjBadCrcException;
+            long j = com.identy.e1.PngjBadCrcException;
             if (j != 0) {
-                Fpnative.destroy(j, e1.values);
+                Fpnative.destroy(j, com.identy.e1.values);
             }
         }
     }
@@ -891,13 +891,13 @@ abstract class getL3Score extends e1 {
         this.Action = activity;
         this.Attempt = pngjBadSignature;
         this.pfkrolGetQuality = new Handler(this.Action.getMainLooper());
-        e1.PngjOutputException = 0L;
+        com.identy.e1.PngjOutputException = 0L;
         this.getOveralTimetaken = new float[0];
         this.a = fingerDetectionMode.getHand();
         this.pfkrolfinalizeF = new ArrayList(Arrays.asList(fingerArr));
         this.getL3Score = z;
         int PngjBadCrcException2 = PngjBadCrcException.onErrorResponse.PngjBadCrcException();
-        this.Capture2IndexActivity = new PngjOutputException((Pair[]) PngjException(PngjBadCrcException.onErrorResponse.PngjBadCrcException(), 1616550217, -1616550216, new Object[]{this}, PngjBadCrcException.onErrorResponse.PngjBadCrcException(), PngjBadCrcException.onErrorResponse.PngjBadCrcException(), PngjBadCrcException2));
+        this.Capture2IndexActivity = new com.identy.PngjOutputException((Pair[]) PngjException(PngjBadCrcException.onErrorResponse.PngjBadCrcException(), 1616550217, -1616550216, new Object[]{this}, PngjBadCrcException.onErrorResponse.PngjBadCrcException(), PngjBadCrcException.onErrorResponse.PngjBadCrcException(), PngjBadCrcException2));
         int Attempt = Attempt();
         com.identy.d.PngjBadSignature pngjBadSignature2 = this.Attempt;
         if (pngjBadSignature2 != null) {
@@ -2069,7 +2069,7 @@ abstract class getL3Score extends e1 {
             return null;
         }
         rgenerate = (generate + 57) % 128;
-        RResult pfkrol = Fpnative.pfkrol(e1.PngjBadCrcException, mat.PngjException, this.getPadSub3, this.getPadSub2, this.EnrollFingersActivity ? 1 : 2);
+        RResult pfkrol = Fpnative.pfkrol(com.identy.e1.PngjBadCrcException, mat.PngjException, this.getPadSub3, this.getPadSub2, this.EnrollFingersActivity ? 1 : 2);
         PreCaptureOutput preCaptureOutput = pfkrol.getPreCaptureOutput();
         if (preCaptureOutput == null) {
             return null;
@@ -2131,7 +2131,7 @@ abstract class getL3Score extends e1 {
                     i = (int) (this.isQualityFailed * f4);
                     f = this.getScore * f4;
                 }
-                Fpnative.pfkrolChangeMinMaxWidth(e1.PngjBadCrcException, i, (int) f);
+                Fpnative.pfkrolChangeMinMaxWidth(com.identy.e1.PngjBadCrcException, i, (int) f);
             }
         }
         if (preCaptureOutput.getBoxes() == null) {
@@ -2267,7 +2267,7 @@ abstract class getL3Score extends e1 {
         int sdrawable;
         com.identy.d.PngjBadSignature pngjBadSignature;
         long timeInMillis = Calendar.getInstance().getTimeInMillis();
-        long j2 = e1.PngjBadCrcException;
+        long j2 = com.identy.e1.PngjBadCrcException;
         if (mat == null) {
             generate = (rgenerate + 89) % 128;
             j = 0;
@@ -2353,10 +2353,10 @@ abstract class getL3Score extends e1 {
         boolean t = IdentySdk.getInstance().t();
         RectF rectF = new RectF(this.CaptureRolledFingersActivity);
         rectF.inset(this.CaptureRolledFingersActivity.width() * (-0.3f), this.CaptureRolledFingersActivity.height() * (-0.3f));
-        if (e1.PngjBadCrcException == 0) {
-            e1.PngjBadCrcException = Fpnative.uxd566jk(this.Action.getAssets(), e1.values, e1.PngjBadCrcException);
+        if (com.identy.e1.PngjBadCrcException == 0) {
+            com.identy.e1.PngjBadCrcException = Fpnative.uxd566jk(this.Action.getAssets(), com.identy.e1.values, com.identy.e1.PngjBadCrcException);
         }
-        long j = e1.PngjBadCrcException;
+        long j = com.identy.e1.PngjBadCrcException;
         int ordinal = h.ordinal();
         int ordinal2 = Position.getFromHandFinger(new Pair(this.CapturePosition.getHand(), this.CapturePosition.getFinger())).ordinal();
         boolean equals = action.equals(Action.ENROLL);
@@ -2366,7 +2366,7 @@ abstract class getL3Score extends e1 {
         int i4 = (int) rectF.left;
         int i5 = (int) rectF.bottom;
         int i6 = (int) rectF.right;
-        if (this.uxd566jk.getScore == CapturePosition.HORIZONTAL) {
+        if (this.uxd566jk.getScore == com.identy.CapturePosition.HORIZONTAL) {
             generate = (rgenerate + 79) % 128;
             z = false;
         } else {

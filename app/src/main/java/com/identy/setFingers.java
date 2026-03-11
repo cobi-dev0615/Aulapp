@@ -102,17 +102,17 @@ final class setFingers extends e1 {
         this.Action = activity;
         this.Attempt = pngjBadSignature;
         this.configureroll = new Handler(this.Action.getMainLooper());
-        e1.PngjOutputException = 0L;
+        com.identy.e1.PngjOutputException = 0L;
         this.getOveralTimetaken = new float[0];
         this.a = fingerDetectionMode.getHand();
         this.getL3Score = z;
-        this.Capture2IndexActivity = new PngjOutputException(PngjExceptionInternal());
+        this.Capture2IndexActivity = new com.identy.PngjOutputException(PngjExceptionInternal());
         int i = R.string.id_searching_index;
         com.identy.d.PngjBadSignature pngjBadSignature2 = this.Attempt;
         if (pngjBadSignature2 != null) {
             pngjBadSignature2.PngjBadSignature(i, false);
         }
-        this.cvtyuv2bgr = CapturePosition.VERTICAL_FROM_BOTTOM;
+        this.cvtyuv2bgr = com.identy.CapturePosition.VERTICAL_FROM_BOTTOM;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
