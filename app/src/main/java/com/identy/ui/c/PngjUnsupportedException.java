@@ -74,7 +74,7 @@ public final class PngjUnsupportedException extends Dialog {
     }
 
     public PngjUnsupportedException(Context context, com.identy.d.PngjException pngjException, FingerDetectionMode fingerDetectionMode, FingerDetectionMode fingerDetectionMode2) {
-        super(context, R.style.Theme.Translucent.NoTitleBar);
+        super(context, R.style.Theme_Translucent_NoTitleBar);
         this.PngjBadSignature = pngjException;
         this.values = fingerDetectionMode2;
         this.PngjBadCrcException = fingerDetectionMode;

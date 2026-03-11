@@ -123,6 +123,7 @@ public class PlayGifView extends View {
     */
     private static void e(byte b, int i, short s, java.lang.Object[] objArr) {
         int i2;
+        int i7 = 0;
         int i3 = b + 4;
         byte[] bArr = $$a;
         int i4 = (s * 19) + 80;
@@ -130,7 +131,6 @@ public class PlayGifView extends View {
         int i5 = 43 - i;
         if (bArr == null) {
             int i6 = i4;
-            int i7 = 0;
             i4 = i5;
             i3++;
             i4 = (i4 + i6) - 13;
@@ -148,14 +148,19 @@ public class PlayGifView extends View {
             bArr2[i2] = (byte) i4;
             i7 = i2 + 1;
             if (i2 == i5) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         } else {
             i2 = 0;
             bArr2[i2] = (byte) i4;
             i7 = i2 + 1;
             if (i2 == i5) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         }
+        objArr[0] = new String(bArr2, 0);
     }
 
     @Override // android.view.View

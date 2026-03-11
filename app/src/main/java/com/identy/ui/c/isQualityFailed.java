@@ -39,7 +39,7 @@ public final class isQualityFailed extends Dialog {
     }
 
     public isQualityFailed(Context context, com.identy.d.PngjException pngjException) {
-        super(context, R.style.Theme.Black.NoTitleBar);
+        super(context, R.style.Theme_Black_NoTitleBar);
         this.values = true;
         this.PngjBadSignature = pngjException;
         WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();

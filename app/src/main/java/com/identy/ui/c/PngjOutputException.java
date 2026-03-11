@@ -74,7 +74,7 @@ public final class PngjOutputException extends Dialog {
     }
 
     public PngjOutputException(Context context, com.identy.d.PngjException pngjException, FingerDetectionMode fingerDetectionMode, FingerDetectionMode fingerDetectionMode2) {
-        super(context, R.style.Theme.Translucent.NoTitleBar);
+        super(context, R.style.Theme_Translucent_NoTitleBar);
         this.PngjException = pngjException;
         this.PngjBadSignature = fingerDetectionMode2;
         this.valueOf = fingerDetectionMode;
@@ -119,6 +119,7 @@ public final class PngjOutputException extends Dialog {
     */
     private static void a(byte b, byte b2, short s, java.lang.Object[] objArr) {
         int i;
+        int i7 = 0;
         int i2 = b * 2;
         byte[] bArr = $$a;
         int i3 = (s * 3) + 118;
@@ -127,7 +128,6 @@ public final class PngjOutputException extends Dialog {
         int i5 = 5 - i2;
         if (bArr == null) {
             int i6 = i3;
-            int i7 = 0;
             i3 = i5;
             i4++;
             i3 = (i3 + i6) - 3;
@@ -145,14 +145,19 @@ public final class PngjOutputException extends Dialog {
             bArr2[i] = (byte) i3;
             i7 = i + 1;
             if (i == i5) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         } else {
             i = 0;
             bArr2[i] = (byte) i3;
             i7 = i + 1;
             if (i == i5) {
+                objArr[0] = new String(bArr2, 0);
+                return;
             }
         }
+        objArr[0] = new String(bArr2, 0);
     }
 
     @Override // android.app.Dialog
