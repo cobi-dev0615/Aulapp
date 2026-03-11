@@ -383,8 +383,8 @@ final class getL2Score extends getL3Score {
     }
 
     private void isQualityFailed() {
-        int PngjException = Enroll2IndexActivity.PngjBadSignature.PngjException();
-        PngjBadCrcException(new Object[]{this}, Enroll2IndexActivity.PngjBadSignature.PngjException(), PngjException, Enroll2IndexActivity.PngjBadSignature.PngjException(), -644123029, 644123030, Enroll2IndexActivity.PngjBadSignature.PngjException());
+        int PngjException = 0;
+        PngjBadCrcException(new Object[]{this}, 0, PngjException, 0, -644123029, 644123030, 0);
     }
 
     private static /* synthetic */ Object values(Object[] objArr) {

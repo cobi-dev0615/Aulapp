@@ -4,6 +4,8 @@ public class PngjBadCrcException extends android.view.View {
     public PngjBadCrcException(android.content.Context context) { super(context); }
     public PngjBadCrcException(android.content.Context context, android.util.AttributeSet attrs) { super(context, attrs); }
 
+    public values valueOf;
+
     public interface values {
         void drawCallback(Canvas canvas);
     }

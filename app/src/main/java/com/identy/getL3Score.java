@@ -1993,23 +1993,6 @@ abstract class getL3Score extends e1 {
             } catch (Exception unused3) {
                 throw new RuntimeException();
             }
-            Object[] objArr36 = {-1536487498};
-            Object PngjBadSignature16 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1439412966);
-            if (PngjBadSignature16 == null) {
-                PngjBadSignature16 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getSize(0), 24 - (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)), TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0) + 698, 1457201313, false, null, new Class[]{Integer.TYPE});
-            }
-            PngjBadCrcException$1eba2e16 = com.identy.PngjInputException.values.PngjBadCrcException$1eba2e16(intValue, ((Constructor) PngjBadSignature16).newInstance(objArr36), 1331820402);
-            Object PngjBadSignature17 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
-            if (PngjBadSignature17 == null) {
-                char pressedStateDuration = (char) ((ViewConfiguration.getPressedStateDuration() >> 16) + 14830);
-                int keyCodeFromString2 = 28 - KeyEvent.keyCodeFromString(BuildConfig.FLAVOR);
-                int i67 = 722 - (ViewConfiguration.getGlobalActionKeyTimeout() > 0L ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == 0L ? 0 : -1));
-                byte[] bArr14 = $$d;
-                Object[] objArr37 = new Object[1];
-                f(bArr14[5], bArr14[21], bArr14[c2], objArr37);
-                PngjBadSignature17 = com.d.e.a.PngjBadCrcException.PngjBadSignature(pressedStateDuration, keyCodeFromString2, i67, -779023007, false, (String) objArr37[0], null);
-            }
-            ((Field) PngjBadSignature17).set(null, PngjBadCrcException$1eba2e16);
         } catch (Throwable th2) {
             Throwable cause2 = th2.getCause();
             if (cause2 == null) {
