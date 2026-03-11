@@ -347,7 +347,7 @@ final class setFingers extends e1 {
 
     @Override // com.identy.e1
     public final boolean PngjUnsupportedException() {
-        boolean PngjUnsupportedException;
+        boolean PngjUnsupportedException = false;
         try {
             PngjUnsupportedException = super.PngjUnsupportedException();
         } catch (Exception unused) {
@@ -1187,7 +1187,7 @@ final class setFingers extends e1 {
         }
     }
 
-    private static void e(int[] iArr, int i, java.lang.Object[] objArr) {
+    private static void e(int[] iArr, int i, java.lang.Object[] objArr) throws Exception {
         long j;
         char[] cArr;
         float f;
