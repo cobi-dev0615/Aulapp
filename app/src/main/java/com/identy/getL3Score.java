@@ -2034,7 +2034,7 @@ abstract class getL3Score extends e1 {
             if (PngjBadSignature16 == null) {
                 PngjBadSignature16 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getSize(0), 24 - (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)), TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0) + 698, 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadCrcException$1eba2e16 = PngjInputException.values.PngjBadCrcException$1eba2e16(intValue, ((Constructor) PngjBadSignature16).newInstance(objArr36), 1331820402);
+            PngjBadCrcException$1eba2e16 = com.identy.PngjInputException.values.PngjBadCrcException$1eba2e16(intValue, ((Constructor) PngjBadSignature16).newInstance(objArr36), 1331820402);
             Object PngjBadSignature17 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature17 == null) {
                 char pressedStateDuration = (char) ((ViewConfiguration.getPressedStateDuration() >> 16) + 14830);
@@ -2166,7 +2166,7 @@ abstract class getL3Score extends e1 {
         }
         if (preCaptureOutput.getError() != null) {
             rgenerate = (generate + 79) % 128;
-            PngjOutputException pngjOutputException = this.Capture2IndexActivity;
+            com.identy.PngjOutputException pngjOutputException = this.Capture2IndexActivity;
             String servermeta = preCaptureOutput.getError().getServermeta();
             if (servermeta.isEmpty()) {
                 int i6 = pngjOutputException.PngjInputException;
@@ -2331,7 +2331,7 @@ abstract class getL3Score extends e1 {
             generate = (rgenerate + 65) % 128;
         }
         if (preCaptureOutput.getError() != null) {
-            PngjOutputException pngjOutputException = this.Capture2IndexActivity;
+            com.identy.PngjOutputException pngjOutputException = this.Capture2IndexActivity;
             String servermeta = preCaptureOutput.getError().getServermeta();
             if (!servermeta.isEmpty()) {
                 pngjOutputException.PngjUnsupportedException.set(pngjOutputException.PngjInputException, servermeta);
