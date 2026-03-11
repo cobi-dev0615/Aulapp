@@ -2241,9 +2241,9 @@ public final class isAuthSucess extends e1 {
         int i = destroy + 79;
         pfkrolfinalize = i % 128;
         if (i % 2 == 0) {
-            super.e1();
+            isauthsucess.e1();
         } else {
-            super.e1();
+            isauthsucess.e1();
         }
         try {
             isauthsucess.isFoundMatchingTemplates = false;
