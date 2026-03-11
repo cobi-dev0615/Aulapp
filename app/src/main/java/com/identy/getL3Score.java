@@ -1379,9 +1379,9 @@ abstract class getL3Score extends e1 {
         }
         this.getQualityScore++;
         if (this.CaptureThumbActivity) {
-            this.getL2Score.values(this.getPadSub3, this.getPadSub2, this.getData.intValue(), this.CaptureRolledFingersActivity);
+            this.getL2Score.values(this.getPadSub3, this.getPadSub2_f, this.getData.intValue(), this.CaptureRolledFingersActivity);
         } else {
-            this.getL2Score.values(this.getPadSub2, this.getPadSub3, this.getData.intValue(), this.CaptureRolledFingersActivity);
+            this.getL2Score.values(this.getPadSub2_f, this.getPadSub3, this.getData.intValue(), this.CaptureRolledFingersActivity);
         }
         if (this.getQualityScore < 1) {
             generate = (rgenerate + 87) % 128;
@@ -2069,12 +2069,12 @@ abstract class getL3Score extends e1 {
             return null;
         }
         rgenerate = (generate + 57) % 128;
-        RResult pfkrol = Fpnative.pfkrol(com.identy.e1.PngjBadCrcException, mat.PngjException, this.getPadSub3, this.getPadSub2, this.EnrollFingersActivity ? 1 : 2);
+        RResult pfkrol = Fpnative.pfkrol(com.identy.e1.PngjBadCrcException, mat.PngjException, this.getPadSub3, this.getPadSub2_f, this.EnrollFingersActivity ? 1 : 2);
         PreCaptureOutput preCaptureOutput = pfkrol.getPreCaptureOutput();
         if (preCaptureOutput == null) {
             return null;
         }
-        preCaptureOutput.setWidthHeight(this.getPadSub3, this.getPadSub2);
+        preCaptureOutput.setWidthHeight(this.getPadSub3, this.getPadSub2_f);
         if (!preCaptureOutput.getBoxes().isEmpty() && preCaptureOutput.getError() != null && !preCaptureOutput.getError().equals(FingerError.BE_INSIDE_GUIDE) && !(!this.resetAttempt)) {
             rgenerate = (generate + 99) % 128;
             this.resetAttempt = false;
@@ -2274,7 +2274,7 @@ abstract class getL3Score extends e1 {
         } else {
             j = mat.PngjException;
         }
-        RResult pfkrolfinalize2 = Fpnative.pfkrolfinalize(j2, j, this.getPadSub3, this.getPadSub2);
+        RResult pfkrolfinalize2 = Fpnative.pfkrolfinalize(j2, j, this.getPadSub3, this.getPadSub2_f);
         com.identy.PngjBadCrcException.PngjException("get rr ? ", timeInMillis);
         if (pfkrolfinalize2 == null) {
             return null;
@@ -2303,7 +2303,7 @@ abstract class getL3Score extends e1 {
             }
             return null;
         }
-        preCaptureOutput.setWidthHeight(this.getPadSub3, this.getPadSub2);
+        preCaptureOutput.setWidthHeight(this.getPadSub3, this.getPadSub2_f);
         String str = this.getPadSub1.username;
         LibSettings.saveML4FData();
         if (preCaptureOutput.getBoxes() == null) {

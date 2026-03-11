@@ -1082,7 +1082,7 @@ final class isFoundMatchingTemplates extends e1 {
                 getServerRequest = (i + 1) % 128;
                 if (PngjUnsupportedException) {
                     this.getQualityScore++;
-                    this.getL2Score.values(this.getPadSub3, this.getPadSub2, this.getData.intValue(), this.CaptureRolledFingersActivity);
+                    this.getL2Score.values(this.getPadSub3, this.getPadSub2_f, this.getData.intValue(), this.CaptureRolledFingersActivity);
                     if (this.getQualityScore < 1) {
                         com.identy.d.PngjBadSignature pngjBadSignature = this.Attempt;
                         if (pngjBadSignature != null) {

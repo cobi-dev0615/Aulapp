@@ -2079,7 +2079,7 @@ public final class isAuthSucess extends e1 {
         }
         if (this.CaptureThumbActivity) {
             float f = this.getPadSub3;
-            float f2 = this.getPadSub2;
+            float f2 = this.getPadSub2_f;
             this.CaptureRolledFingersActivity = new RectF((int) (f / 6.3f), (int) (f2 / 8.0f), (int) (f - (f / 4.8f)), (int) (f2 - (f / 8.0f)));
             try {
                 i5 = this.getProcessingTime;
@@ -2088,7 +2088,7 @@ public final class isAuthSucess extends e1 {
             if (i5 == 1) {
                 if (this.cvtyuv2bgr.equals(com.identy.CapturePosition.HORIZONTAL)) {
                     float f3 = this.getPadSub3;
-                    float f4 = this.getPadSub2;
+                    float f4 = this.getPadSub2_f;
                     this.CaptureRolledFingersActivity = new RectF((int) (f3 / 3.5f), (int) (f4 / 3.5f), (int) (f3 - (f3 / 2.0f)), (int) (f4 - (f3 / 3.6f)));
                     this.getL2Score = new com.identy.ui.d.values(this.Action, 3.5999999046325684d, 3.5d, 3.5d, 2.0d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), this.a.equals(Hand.RIGHT) ? 180 : 0, false, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);
                 } else {
@@ -2097,7 +2097,7 @@ public final class isAuthSucess extends e1 {
                     } catch (Exception unused2) {
                     }
                     double d = this.getPadSub3 / 2.9d;
-                    float f5 = this.getPadSub2;
+                    float f5 = this.getPadSub2_f;
                     RectF rectF = new RectF((int) d, (int) (0 / 3.9000000953674316d), (int) (0 - d), (int) (f5 - (f5 / 2.74f)));
                     this.CaptureRolledFingersActivity = rectF;
                     rectF.width();
@@ -2133,13 +2133,13 @@ public final class isAuthSucess extends e1 {
                         }
                     }
                 } else {
-                    int i7 = this.getPadSub2;
+                    int i7 = this.getPadSub2_f;
                     this.getScore = Math.round(((i7 - (i7 / 5)) / 6) * 0.9f);
                     if (z) {
-                        int i8 = this.getPadSub2;
+                        int i8 = this.getPadSub2_f;
                         this.isQualityFailed = (int) (((i8 - (i8 / 5)) / 4) * 0.98d);
                     } else {
-                        int i9 = this.getPadSub2;
+                        int i9 = this.getPadSub2_f;
                         this.isQualityFailed = (i9 - (i9 / 5)) / 4;
                     }
                     if (this.getProcessingTime == 1) {
@@ -2158,7 +2158,7 @@ public final class isAuthSucess extends e1 {
                     i2 = 1080033280;
                     i3 = 1083808154;
                     float f6 = (int) (this.getPadSub3 / 3.0d);
-                    double d2 = this.getPadSub2 / 5.6d;
+                    double d2 = this.getPadSub2_f / 5.6d;
                     this.CaptureRolledFingersActivity = new RectF(f6, (int) d2, (int) (0 - (0 / 6.0d)), (int) (0 - d2));
                     this.getL2Score = new com.identy.ui.d.values(this.Action, 5.6d, 6.0d, 5.6d, 3.0d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), 90, true, false, false, this.uxd565jk, this.cvtyuv2bgr);
                     this.CaptureRolledFingersActivity.width();
@@ -2174,12 +2174,12 @@ public final class isAuthSucess extends e1 {
                     i3 = 1083808154;
                     if (this.cvtyuv2bgr.equals(com.identy.CapturePosition.HORIZONTAL)) {
                         float f7 = Build.MANUFACTURER.toUpperCase().trim().contains("INGENICO") ? 4.0f : 2.6f;
-                        float f8 = this.getPadSub2 / 10.0f;
+                        float f8 = this.getPadSub2_f / 10.0f;
                         float f9 = this.getPadSub3;
                         this.CaptureRolledFingersActivity = new RectF((int) f8, (int) (f9 / 4.75f), (int) (0 - f8), (int) (f9 - (f9 / f7)));
                         this.getL2Score = new com.identy.ui.d.values(this.Action, 10.0d, 4.75d, 10.0d, f7, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), this.a.equals(Hand.RIGHT) ? 180 : 0, false, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);
                     } else {
-                        double d3 = this.getPadSub2 / 5.6d;
+                        double d3 = this.getPadSub2_f / 5.6d;
                         double d4 = this.getPadSub3;
                         this.CaptureRolledFingersActivity = new RectF((int) d3, (int) (d4 / 6.0d), (int) (0 - d3), (int) (d4 - (d4 / 3.0d)));
                         this.getL2Score = new com.identy.ui.d.values(this.Action, 5.6d, 6.0d, 5.6d, 3.0d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), 90, true, false, false, this.uxd565jk, this.cvtyuv2bgr);
@@ -2207,11 +2207,11 @@ public final class isAuthSucess extends e1 {
             i = 1073741824;
             i2 = 1080033280;
             i3 = 1083808154;
-            float f10 = this.getPadSub2;
+            float f10 = this.getPadSub2_f;
             float f11 = this.getPadSub3;
             this.CaptureRolledFingersActivity = new RectF((int) (f10 / 6.3f), (int) (f11 / 8.0f), (int) (f10 - (f10 / 4.8f)), (int) (f11 - (f10 / 8.0f)));
             if (this.getProcessingTime == 1) {
-                int i10 = this.getPadSub2;
+                int i10 = this.getPadSub2_f;
                 int i11 = this.getPadSub3;
                 this.CaptureRolledFingersActivity = new RectF((int) (i10 / 3.6d), (int) (i11 / 3.5d), i10 - (i10 / 2), i11 - (i11 / 4));
                 this.getL2Score = new com.identy.ui.d.values(this.Action, 3.6d, 3.5d, 4.0d, 2.0d, IdentySdk.getInstance().getFingerPrintDrawable(), IdentySdk.getInstance().isDisableOuterBox(), 0, false, this.a.equals(Hand.LEFT), false, this.uxd565jk, this.cvtyuv2bgr);

@@ -1216,9 +1216,9 @@ final class getFingers extends e1 {
         this.getQualityScore++;
         if (this.CaptureThumbActivity) {
             pfkrolGetQuality = (i + 9) % 128;
-            this.getL2Score.values(this.getPadSub3, this.getPadSub2, this.getData.intValue(), this.CaptureRolledFingersActivity);
+            this.getL2Score.values(this.getPadSub3, this.getPadSub2_f, this.getData.intValue(), this.CaptureRolledFingersActivity);
         } else {
-            this.getL2Score.values(this.getPadSub2, this.getPadSub3, this.getData.intValue(), this.CaptureRolledFingersActivity);
+            this.getL2Score.values(this.getPadSub2_f, this.getPadSub3, this.getData.intValue(), this.CaptureRolledFingersActivity);
         }
         if (this.getQualityScore >= 1) {
             if (this.getCaptureTime) {
@@ -1250,8 +1250,8 @@ final class getFingers extends e1 {
 
     @Override // com.identy.e1
     public final void a() {
-        int values2 = PngjInputException.values();
-        PngjBadSignature(568689751, PngjInputException.values(), new Object[]{this}, PngjInputException.values(), -568689751, values2, PngjInputException.values());
+        int values2 = com.identy.PngjInputException.values();
+        PngjBadSignature(568689751, com.identy.PngjInputException.values(), new Object[]{this}, com.identy.PngjInputException.values(), -568689751, values2, com.identy.PngjInputException.values());
     }
 
     @Override // com.identy.e1
@@ -1809,7 +1809,7 @@ final class getFingers extends e1 {
 
     @Override // com.identy.e1
     public final void PngjBadCrcException(byte[] bArr, boolean z, List list, List list2, float f, Long l) {
-        PngjBadSignature(335695611, PngjInputException.values(), new Object[]{this, bArr, Boolean.valueOf(z), list, list2, Float.valueOf(f), l}, PngjInputException.values(), -335695610, PngjInputException.values(), PngjInputException.values());
+        PngjBadSignature(335695611, com.identy.PngjInputException.values(), new Object[]{this, bArr, Boolean.valueOf(z), list, list2, Float.valueOf(f), l}, com.identy.PngjInputException.values(), -335695610, com.identy.PngjInputException.values(), com.identy.PngjInputException.values());
     }
 
     /* JADX WARN: Multi-variable type inference failed */
