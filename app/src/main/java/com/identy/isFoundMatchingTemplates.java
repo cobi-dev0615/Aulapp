@@ -63,8 +63,8 @@ final class isFoundMatchingTemplates extends e1 {
     Handler pfkrol;
 
     public class PngjBadCrcException implements org.c.a.PngjBadCrcException.values {
-        public int valueOf;
-        public int values;
+        public static int valueOf;
+        public static int values;
 
         public PngjBadCrcException() {
         }

@@ -2283,12 +2283,12 @@ public final class isAuthSucess extends e1 {
         int i = pfkrolfinalize + 109;
         destroy = i % 128;
         if (i % 2 != 0) {
-            super.a();
+            isauthsucess.a();
             Attempt = isauthsucess.Attempt();
             pngjBadSignature = isauthsucess.Attempt;
             int i2 = 96 / 0;
         } else {
-            super.a();
+            isauthsucess.a();
             Attempt = isauthsucess.Attempt();
             pngjBadSignature = isauthsucess.Attempt;
         }
