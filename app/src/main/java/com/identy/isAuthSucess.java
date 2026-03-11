@@ -76,7 +76,7 @@ public final class isAuthSucess extends e1 {
     private List resetAttempt;
 
     public static Object[] bridgePngjException$1eba2e16(int a, Object b, int c) {
-        return isAuthSucess.PngjException.AnimationAnimationListenerC0024PngjException.RunnableC0025PngjException.PngjException$1eba2e16(a, b, c);
+        return com.identy.isAuthSucess.PngjException.AnimationAnimationListenerC0024PngjException.RunnableC0025PngjException.PngjException$1eba2e16(a, b, c);
     }
 
 

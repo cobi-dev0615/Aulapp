@@ -102,7 +102,7 @@ import org.identy.nativealgo.NativeAlgoUtils;
 /* loaded from: classes2.dex */
 public class FingerActivity extends Activity implements Camera.PreviewCallback, ImageReader.OnImageAvailableListener, com.identy.d.PngjBadSignature, com.identy.d.valueOf {
     public static Object[] bridgePngjUnsupportedException$1eba2e16(int a, Object b, int c) {
-        return PngjUnsupportedException.PngjBadSignature$1eba2e16(a, b, c);
+        return com.identy.FingerActivity.PngjUnsupportedException.PngjBadSignature$1eba2e16(a, b, c);
     }
     private static  byte[] $$a = null;
     private static  int $$b = 0;
