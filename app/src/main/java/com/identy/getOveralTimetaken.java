@@ -1323,6 +1323,7 @@ public final class getOveralTimetaken extends e1 {
         Object PngjBadSignature4;
         Object PngjBadSignature5;
         Object[] objArr3;
+        Object[] valueOf$1eba2e16 = null;
         int i5;
         int i6;
         try {
@@ -1618,7 +1619,7 @@ public final class getOveralTimetaken extends e1 {
                                 if (PngjBadSignature3 == null) {
                                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (SystemClock.uptimeMillis() > j ? 1 : (SystemClock.uptimeMillis() == j ? 0 : -1))), 24 - View.MeasureSpec.getMode(0), TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0) + 698, 1457201313, false, null, new Class[]{Integer.TYPE});
                                 }
-                                Object[] valueOf$1eba2e16 = TouchLessIDSDK$values.valueOf$1eba2e16(intValue2, ((Constructor) PngjBadSignature3).newInstance(objArr30), 1025413808);
+                                valueOf$1eba2e16 = TouchLessIDSDK$values.valueOf$1eba2e16(intValue2, ((Constructor) PngjBadSignature3).newInstance(objArr30), 1025413808);
                                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
                                 if (PngjBadSignature4 == null) {
                                     char c11 = (char) ((TypedValue.complexToFloat(0) > 0.0f ? 1 : (TypedValue.complexToFloat(0) == 0.0f ? 0 : -1)) + 14830);

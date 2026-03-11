@@ -663,12 +663,12 @@ public class GuideNoGuideHelper {
                 long j3 = ((long[]) objArr[0])[0];
                 j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
             }
-            ((long[]) $$a[0])[0] = j + 4929;
-            Fpnative.valueOf = 0;
+            /* ((long[]) $$a[0])[0] = j + 4929; */ // decompiler error: $$a is byte[]
+            Fpnative.valueOf = null;
             StringBuilder sb = new StringBuilder();
             sb.append((fingerDetectionMode.getFinger() == null && fingerDetectionMode.getFinger().equals(Finger.THUMB)) ? "thumb" : "4F");
             sb.append((fingerDetectionMode.getHand() == null && fingerDetectionMode.getHand().equals(Hand.LEFT)) ? "_left" : "_right");
-            int i3 = ((int[]) $$a[1])[0];
+            int i3 = 0; /* ((int[]) $$a[1])[0] */ // decompiler error: $$a is byte[]
             int i4 = i3 * i3;
             int i5 = -(620460754 * i3);
             int i6 = (i4 & i5) + (i4 | i5);
@@ -1024,7 +1024,7 @@ public class GuideNoGuideHelper {
                     int i17 = i >> 22;
                     int i18 = ((i17 ^ (-2047)) + ((i17 & (-2047)) << 1)) / 1024;
                     i2 = ((i18 | 1) << 1) - (i18 ^ 1);
-                    if (isIntroShown(activity, getKey(fingerDetectionMode, 0 / (((-(((i2 | 1) << 1) - (i2 ^ 1))) & i) * 1690))) && !z) {
+                    if (isIntroShown(activity, getKey(fingerDetectionMode, false)) && !z) {
                         return IntroActivity.class;
                     }
                     if (!fingerDetectionModeArr[0].equals(FingerDetectionMode.L4F) || fingerDetectionModeArr[0].equals(FingerDetectionMode.R4F)) {
@@ -1333,15 +1333,15 @@ public class GuideNoGuideHelper {
                     long j3 = ((long[]) objArr[0])[0];
                     j = ((Long) ((Method) com.d.e.a.values.valueOf[0]).invoke(null, null)).longValue();
                 }
-                ((long[]) $$a[0])[0] = j + 5008;
-                Fpnative.valueOf = 0;
+                /* ((long[]) $$a[0])[0] = j + 5008; */ // decompiler error: $$a is byte[]
+                Fpnative.valueOf = null;
                 SharedPreferences.Editor edit = PreferenceManager.getDefaultSharedPreferences(activity).edit();
                 StringBuilder sb = new StringBuilder("v1_intro_shown_");
                 sb.append(getKey(FingerDetectionMode.L4F, false));
                 edit.putBoolean(sb.toString(), z);
                 StringBuilder sb2 = new StringBuilder("v1_intro_shown_");
                 FingerDetectionMode fingerDetectionMode = FingerDetectionMode.R4F;
-                int i2 = ((int[]) $$a[1])[0];
+                int i2 = 0; /* ((int[]) $$a[1])[0] */ // decompiler error: $$a is byte[]
                 int i3 = ((((i2 * i2) - (~(-(2012947794 * i2)))) - 1) - (~(-(i2 * 1033728842)))) - 1;
                 int i4 = ((i3 | (-1961990204)) << 1) - ((-1961990204) ^ i3);
                 int i5 = i4 >> 21;
