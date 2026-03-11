@@ -502,7 +502,7 @@ abstract class getL3Score extends e1 {
                 if (PngjBadCrcException == null || !PngjBadCrcException.isDone()) {
                     getL3Score.this.a();
                 } else {
-                    com.identy.a aVar = new com.identy.a(0, getL3Score.this.CapturePosition.getHand(), getL3Score.this.CapturePosition.getFinger(), getL3Score.this.CapturePosition, true);
+                    a_ aVar = new a_(0, getL3Score.this.CapturePosition.getHand(), getL3Score.this.CapturePosition.getFinger(), getL3Score.this.CapturePosition, true);
                     ((FingerActivity) getL3Score.this.Action).Action.PngjException();
                     getL3Score.this.PngjException(R.string.id_processing);
                     Mat mat = new Mat(com.identy.Fpnative.pfkrolfinalizeF(com.identy.e1.PngjBadCrcException_f));

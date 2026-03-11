@@ -22,7 +22,7 @@ import java.util.Map;
 import org.identy.opencv.core.Mat;
 
 /* loaded from: classes2.dex */
-public class a extends getMatchingTime {
+public class a_ extends getMatchingTime {
     FingerDetectionMode PngjBadCrcException;
     Date PngjBadSignature;
     private int e1;
@@ -35,7 +35,7 @@ public class a extends getMatchingTime {
     public int PngjUnsupportedException = 0;
     private final List getPadSub3 = new ArrayList();
 
-    public a(int i, Hand hand, Finger finger, FingerDetectionMode fingerDetectionMode, boolean z) {
+    public a_(int i, Hand hand, Finger finger, FingerDetectionMode fingerDetectionMode, boolean z) {
         this.PngjBadCrcException = FingerDetectionMode.L4F;
         this.e1 = i;
         this.PngjOutputException = hand;
@@ -159,7 +159,7 @@ public class a extends getMatchingTime {
                 sb.append(B.uid);
                 obj = sb.toString();
             }
-            File values = PngjBadCrcException.values(activity, obj);
+            File values = com.identy.PngjBadCrcException.values(activity, obj);
             String obj2 = values.toString();
             StringBuilder sb2 = new StringBuilder();
             sb2.append(valueOf(str));
@@ -226,9 +226,9 @@ public class a extends getMatchingTime {
         sb.append(Arrays.toString(copyOf));
         PngjBadCrcException.PngjException(sb.toString(), timeInMillis);
         if (this.getPadSub2) {
-            generate = Fpnative.rgenerate(e1.PngjBadCrcException, Position.getFromHandFinger(new Pair(this.PngjOutputException, this.PngjExceptionInternal)).ordinal(), copyOf, (float) wSQCompression.getCompression(), z);
+            generate = Fpnative.rgenerate(com.identy.e1.PngjBadCrcException_f, Position.getFromHandFinger(new Pair(this.PngjOutputException, this.PngjExceptionInternal)).ordinal(), copyOf, (float) wSQCompression.getCompression(), z);
         } else {
-            generate = Fpnative.generate(e1.values, Position.getFromHandFinger(new Pair(this.PngjOutputException, this.PngjExceptionInternal)).ordinal(), copyOf, (float) wSQCompression.getCompression(), z);
+            generate = Fpnative.generate(com.identy.e1.values, Position.getFromHandFinger(new Pair(this.PngjOutputException, this.PngjExceptionInternal)).ordinal(), copyOf, (float) wSQCompression.getCompression(), z);
         }
         PngjBadCrcException.PngjException("TEMPLATE GENERATE", timeInMillis);
         for (Map.Entry<Integer, byte[]> entry : generate.entrySet()) {
