@@ -1086,7 +1086,7 @@ public class GuideNoGuideHelper {
             int i172 = i >> 22;
             int i182 = ((i172 ^ (-2047)) + ((i172 & (-2047)) << 1)) / 1024;
             i2 = ((i182 | 1) << 1) - (i182 ^ 1);
-            if (isIntroShown(activity, getKey(fingerDetectionMode, 0 / (((-(((i2 | 1) << 1) - (i2 ^ 1))) & i) * 1690)))) {
+            if (isIntroShown(activity, getKey(fingerDetectionMode, false))) {
             }
             if (fingerDetectionModeArr[0].equals(FingerDetectionMode.L4F)) {
             }
@@ -1250,7 +1250,7 @@ public class GuideNoGuideHelper {
                 i = (i19 & 9) + (i19 | 9);
                 int i20 = i >> 18;
                 i2 = (((i20 | (-32767)) << 1) - (i20 ^ (-32767))) / 16384;
-                if (!defaultSharedPreferences.getBoolean(obj, 0 / (((-((((i2 | 1) << 1) - (i2 ^ 1)) + 1)) & i) * 895))) {
+                if (!defaultSharedPreferences.getBoolean(obj, false)) {
                     StringBuilder sb2 = new StringBuilder("v1_intro_shown_");
                     sb2.append(getKey(FingerDetectionMode.R4F, false));
                     if (!defaultSharedPreferences.getBoolean(sb2.toString(), false)) {
@@ -1292,7 +1292,7 @@ public class GuideNoGuideHelper {
         i = (i192 & 9) + (i192 | 9);
         int i202 = i >> 18;
         i2 = (((i202 | (-32767)) << 1) - (i202 ^ (-32767))) / 16384;
-        if (!defaultSharedPreferences.getBoolean(obj, 0 / (((-((((i2 | 1) << 1) - (i2 ^ 1)) + 1)) & i) * 895))) {
+        if (!defaultSharedPreferences.getBoolean(obj, false)) {
         }
         return true;
     }
@@ -1351,7 +1351,7 @@ public class GuideNoGuideHelper {
                 int i9 = i4 >> 26;
                 int i10 = (-(IdentyB.e((i9 | (-127)) << 1, i9 ^ (-127), 64, -1) ^ i8)) + 7;
                 int i11 = ((i10 >> 24) - 511) / 256;
-                sb2.append(getKey(fingerDetectionMode, 0 / ((i10 & (-(((i11 & 1) + (1 | i11)) - (-1)))) * 356)));
+                sb2.append(getKey(fingerDetectionMode, false));
                 edit.putBoolean(sb2.toString(), z);
                 StringBuilder sb3 = new StringBuilder("v1_intro_shown_");
                 sb3.append(getKey(FingerDetectionMode.LEFT_THUMB, false));
@@ -1389,7 +1389,7 @@ public class GuideNoGuideHelper {
             int i92 = i42 >> 26;
             int i102 = (-(IdentyB.e((i92 | (-127)) << 1, i92 ^ (-127), 64, -1) ^ i82)) + 7;
             int i112 = ((i102 >> 24) - 511) / 256;
-            sb22.append(getKey(fingerDetectionMode2, 0 / ((i102 & (-(((i112 & 1) + (1 | i112)) - (-1)))) * 356)));
+            sb22.append(getKey(fingerDetectionMode2, false));
             edit2.putBoolean(sb22.toString(), z);
             StringBuilder sb32 = new StringBuilder("v1_intro_shown_");
             sb32.append(getKey(FingerDetectionMode.LEFT_THUMB, false));
