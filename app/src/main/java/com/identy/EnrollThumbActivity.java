@@ -162,6 +162,7 @@ public class EnrollThumbActivity extends FingerActivity {
             bArr2[i3] = (byte) i4;
             i3++;
             if (i3 == i6) {
+                return new String(bArr2, 0);
             }
         } else {
             i3 = 0;
@@ -169,8 +170,10 @@ public class EnrollThumbActivity extends FingerActivity {
             bArr2[i3] = (byte) i4;
             i3++;
             if (i3 == i6) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -228,7 +231,7 @@ public class EnrollThumbActivity extends FingerActivity {
         }
     }
 
-    private static void c(int[] iArr, String str, boolean z, Object[] objArr) {
+    private static void c(int[] iArr, String str, boolean z, Object[] objArr) throws Exception {
         byte[] bArr;
         int i;
         long j;
@@ -462,8 +465,8 @@ public class EnrollThumbActivity extends FingerActivity {
     public void attachBaseContext(Context context) {
         char c;
         char c2;
-        int intValue;
-        Object[] PngjException$1eba2e16;
+        int intValue = 0;
+        Object[] PngjException$1eba2e16 = null;
         valueOf = (getFingerPrintQualityScore + 13) % 128;
         super.attachBaseContext(context);
         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
@@ -477,7 +480,8 @@ public class EnrollThumbActivity extends FingerActivity {
             b(b, b2, b2, objArr);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf, pressedStateDuration, indexOf2, -815159504, false, (String) objArr[0], null);
         }
-        long j = ((Field) PngjBadSignature).getLong(null);
+        long j;
+        try { j = ((Field) PngjBadSignature).getLong(null); } catch (Exception e) { throw new RuntimeException(e); }
         try {
             try {
                 if (j != -1) {
@@ -588,12 +592,16 @@ public class EnrollThumbActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
-        Object[] objArr12 = new Object[1];
-        c(new int[]{37, 16, 12, 0}, "\u0000\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0001\u0001\u0000", false, objArr12);
-        Class<?> cls3 = Class.forName((String) objArr12[0]);
-        Object[] objArr13 = new Object[1];
-        c(new int[]{53, 16, 103, 0}, "\u0000\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001", false, objArr13);
-        intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        try {
+            Object[] objArr12 = new Object[1];
+            c(new int[]{37, 16, 12, 0}, "\u0000\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0001\u0001\u0000", false, objArr12);
+            Class<?> cls3 = Class.forName((String) objArr12[0]);
+            Object[] objArr13 = new Object[1];
+            c(new int[]{53, 16, 103, 0}, "\u0000\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001", false, objArr13);
+            intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override // com.identy.FingerActivity, android.app.Activity
