@@ -270,7 +270,12 @@ final class getL1Score extends getL3Score {
             byte b5 = (byte) (b4 + 1);
             PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) KeyEvent.getDeadChar(0, 0), Color.red(0) + 28, (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)) + 1532, -201551053, false, $$u(b4, b5, b5), new Class[]{cls});
         }
-        char charValue = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
+        char charValue;
+        try {
+            charValue = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
+        } catch (Exception e_inv) {
+            throw new RuntimeException(e_inv);
+        }
         char[] cArr3 = new char[i];
         if (i % 2 != 0) {
             i2 = i - 1;
@@ -536,11 +541,11 @@ final class getL1Score extends getL3Score {
         int i;
         int i2;
         Object[] PngjBadSignature$1eba2e16;
-        Object[] objArr;
+        Object[] objArr = null;
         int i3;
         int i4;
-        Class<?> cls;
-        Object[] objArr2;
+        Class<?> cls = null;
+        Object[] objArr2 = null;
         Object[] objArr3;
         int i5;
         int i6;
