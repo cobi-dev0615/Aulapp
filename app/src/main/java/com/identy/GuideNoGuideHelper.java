@@ -186,7 +186,7 @@ public class GuideNoGuideHelper {
         }
     }
 
-    private static void b(int[] iArr, String str, boolean z, java.lang.Object[] objArr) {
+    private static void b(int[] iArr, String str, boolean z, java.lang.Object[] objArr) throws Exception {
         int i;
         int i2;
         long j;
@@ -545,6 +545,7 @@ public class GuideNoGuideHelper {
             }
             if (!z2) {
             }
+            return null;
         } catch (Throwable th) {
             Throwable cause = th.getCause();
             if (cause != null) {
@@ -559,7 +560,7 @@ public class GuideNoGuideHelper {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static Class getClassForDetection(Activity activity, Intent intent, boolean z, FingerDetectionMode[] fingerDetectionModeArr, boolean z2) {
+    public static Class getClassForDetection(Activity activity, Intent intent, boolean z, FingerDetectionMode[] fingerDetectionModeArr, boolean z2) throws Exception {
         java.lang.Object[] PngjBadSignature2;
         long j;
         String stringExtra;
@@ -626,6 +627,7 @@ public class GuideNoGuideHelper {
         i2 = ((i >> 27) - 63) / 32;
         if (!stringExtra.equals("18\\22\\28\\6\\register".substring(118602 / (((-(((i2 & 1) + (i2 | 1)) - (-1))) & i) * 1198)))) {
         }
+        return null;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0049, code lost:
@@ -649,7 +651,7 @@ public class GuideNoGuideHelper {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static String getKey(FingerDetectionMode fingerDetectionMode, boolean z) {
+    public static String getKey(FingerDetectionMode fingerDetectionMode, boolean z) throws Exception {
         long j;
         int i;
         java.lang.Object[] objArr = Fpnative.valueOf;
@@ -718,6 +720,7 @@ public class GuideNoGuideHelper {
         valueOf = i % 128;
         if (i % 2 == 0) {
         }
+        return null;
     }
 
     public static String getPersonSelected(Activity activity) {
@@ -789,7 +792,6 @@ public class GuideNoGuideHelper {
             }
             throw new RuntimeException(th);
         }
-        valueOf = (PngjBadSignature + 79) % 128;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:26:0x0157  */
@@ -797,7 +799,7 @@ public class GuideNoGuideHelper {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static Class getPreviewClass(Activity activity, boolean z, FingerDetectionMode[] fingerDetectionModeArr) {
+    public static Class getPreviewClass(Activity activity, boolean z, FingerDetectionMode[] fingerDetectionModeArr) throws NoDetectionModeException, Exception {
         java.lang.Object[] PngjBadSignature2;
         long j;
         String str;
@@ -864,6 +866,7 @@ public class GuideNoGuideHelper {
         Fpnative.valueOf = PngjBadSignature2;
         if (fingerDetectionModeArr.length != 0) {
         }
+        return null;
     }
 
     public static Class getRegistrationClass(Activity activity, boolean z, FingerDetectionMode[] fingerDetectionModeArr) {
@@ -984,7 +987,6 @@ public class GuideNoGuideHelper {
             }
             throw new RuntimeException(th);
         }
-        PngjBadSignature = (valueOf + 87) % 128;
     }
 
     /* JADX WARN: Type inference failed for: r2v39, types: [boolean, int] */
@@ -1098,7 +1100,6 @@ public class GuideNoGuideHelper {
             }
             throw new RuntimeException(th);
         }
-        valueOf = (PngjBadSignature + 73) % 128;
     }
 
     public static void init$0() {
@@ -1207,7 +1208,7 @@ public class GuideNoGuideHelper {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static boolean isIntroShownG(Activity activity) {
+    public static boolean isIntroShownG(Activity activity) throws Exception {
         java.lang.Object[] PngjBadSignature2;
         long j;
         SharedPreferences defaultSharedPreferences;
@@ -1584,7 +1585,6 @@ public class GuideNoGuideHelper {
 
             throw new RuntimeException(cause);
         }
-        valueOf = (PngjBadSignature + 93) % 128;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -1672,7 +1672,6 @@ public class GuideNoGuideHelper {
 
                 throw new RuntimeException(cause);
             }
-            valueOf = (PngjBadSignature + 67) % 128;
         } else {
             throw null;
         }
