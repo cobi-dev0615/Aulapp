@@ -93,6 +93,10 @@ public class Verify2IndexActivity extends FingerActivity {
             throw new UnsupportedOperationException("Method not decompiled");
         }
 
+        @Override
+        public void PngjException(boolean z) {
+        }
+
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0026  */

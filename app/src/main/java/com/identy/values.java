@@ -239,15 +239,15 @@ public final class values {
                 cArr = str3.toCharArray();
                 $11 = ($10 + 91) % 128;
             } else {
-                cArr = str3;
+                cArr = null;
             }
             char[] cArr3 = cArr;
-            char[] charArray = str2 != 0 ? str2.toCharArray() : str2;
+            char[] charArray = str2 != null ? str2.toCharArray() : null;
             if (str != null) {
                 $10 = ($11 + 31) % 128;
                 cArr2 = str.toCharArray();
             } else {
-                cArr2 = str;
+                cArr2 = null;
             }
             char[] cArr4 = cArr2;
             com.d.e.getPadSub2 getpadsub2 = new com.d.e.getPadSub2();
