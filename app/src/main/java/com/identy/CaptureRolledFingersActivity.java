@@ -170,7 +170,7 @@ public class CaptureRolledFingersActivity extends FingerActivity {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void c(int i, boolean z, String str, int i2, int i3, Object[] objArr) {
+    private static void c(int i, boolean z, String str, int i2, int i3, Object[] objArr) throws Exception {
         char[] cArr;
         Throwable cause;
         char c;

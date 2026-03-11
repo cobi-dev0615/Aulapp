@@ -262,13 +262,16 @@ public class Verify2TActivity extends FingerActivity {
             i4 = i72;
             bArr2[i] = (byte) i2;
             if (i == i3) {
+                return new String(bArr2, 0);
             }
         } else {
             i = 0;
             bArr2[i] = (byte) i2;
             if (i == i3) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -329,7 +332,7 @@ public class Verify2TActivity extends FingerActivity {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static void c(int i, boolean z, String str, int i2, int i3, java.lang.Object[] objArr) {
+    private static void c(int i, boolean z, String str, int i2, int i3, java.lang.Object[] objArr) throws Exception {
         int i4;
         char[] cArr;
         Throwable cause;

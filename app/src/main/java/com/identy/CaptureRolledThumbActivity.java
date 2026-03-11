@@ -276,7 +276,7 @@ public class CaptureRolledThumbActivity extends FingerActivity {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private static void c(int i, int i2, int i3, boolean z, String str, Object[] objArr) {
+        private static void c(int i, int i2, int i3, boolean z, String str, Object[] objArr) throws Exception {
             char[] cArr;
             Throwable cause;
             char c;

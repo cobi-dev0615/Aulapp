@@ -263,14 +263,17 @@ public class VerifyThumbActivity extends FingerActivity {
             i3 = i2 + 1;
             bArr2[i2] = (byte) i6;
             if (i3 == i4) {
+                return new String(bArr2, 0);
             }
         } else {
             i2 = 0;
             i3 = i2 + 1;
             bArr2[i2] = (byte) i6;
             if (i3 == i4) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -340,7 +343,7 @@ public class VerifyThumbActivity extends FingerActivity {
         }
     }
 
-    private static void c(String str, int i, byte b, Object[] objArr) {
+    private static void c(String str, int i, byte b, Object[] objArr) throws Exception {
         char c;
         int i2;
         long j;

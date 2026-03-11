@@ -275,13 +275,16 @@ public class Verify4FActivity extends FingerActivity {
             i = i6;
             bArr2[i] = (byte) i2;
             if (i == i5) {
+                return new String(bArr2, 0);
             }
         } else {
             i = 0;
             bArr2[i] = (byte) i2;
             if (i == i5) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -358,7 +361,7 @@ public class Verify4FActivity extends FingerActivity {
         }
     }
 
-    private static void c(int[] iArr, int i, String str, String str2, Object[] objArr) {
+    private static void c(int[] iArr, int i, String str, String str2, Object[] objArr) throws Exception {
         char c;
         int i2;
         String str3 = str2;

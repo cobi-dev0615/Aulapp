@@ -126,6 +126,7 @@ public class Verify2IndexActivity extends FingerActivity {
             bArr2[i3] = (byte) i4;
             i3++;
             if (i3 == i6) {
+                return new String(bArr2, 0);
             }
         } else {
             i4 = i5;
@@ -134,8 +135,10 @@ public class Verify2IndexActivity extends FingerActivity {
             bArr2[i3] = (byte) i4;
             i3++;
             if (i3 == i6) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {

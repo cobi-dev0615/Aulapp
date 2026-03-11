@@ -124,6 +124,7 @@ public class CaptureFingersActivity extends FingerActivity {
             bArr2[i5] = (byte) i3;
             i10 = i5 + 1;
             if (i5 == i9) {
+                return new String(bArr2, 0);
             }
         } else {
             i3 = i8;
@@ -132,6 +133,7 @@ public class CaptureFingersActivity extends FingerActivity {
             bArr2[i5] = (byte) i3;
             i10 = i5 + 1;
             if (i5 == i9) {
+                return new String(bArr2, 0);
             }
         }
         return new String(bArr2, 0);

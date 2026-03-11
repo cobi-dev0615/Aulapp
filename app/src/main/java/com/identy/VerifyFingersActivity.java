@@ -331,7 +331,7 @@ public class VerifyFingersActivity extends FingerActivity {
         }
     }
 
-    private static void c(short s, int i, int i2, byte b, int i3, Object[] objArr) {
+    private static void c(short s, int i, int i2, byte b, int i3, Object[] objArr) throws Exception {
         int i4;
         int i5;
         long j;

@@ -98,6 +98,7 @@ public class Capture2TActivity extends FingerActivity {
                 i4 = i2 + 1;
                 bArr2[i2] = (byte) i7;
                 if (i4 == i6) {
+                    return new String(bArr2, 0);
                 }
             } else {
                 i2 = 0;
