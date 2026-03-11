@@ -22,7 +22,7 @@ import java.util.Map;
 import org.identy.opencv.core.Mat;
 
 /* loaded from: classes2.dex */
-public class a_ extends IdentyA {
+public class a_ extends getMatchingTime {
     FingerDetectionMode PngjBadCrcException;
     Date PngjBadSignature;
     private int e1;
@@ -44,6 +44,21 @@ public class a_ extends IdentyA {
         this.PngjBadCrcException = fingerDetectionMode;
         this.getAsHighestSecurityLevelReached = BuildConfig.FLAVOR;
         this.getPadSub2 = z;
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ float Action() {
+        return super.Action();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ int Attempt() {
+        return super.Attempt();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ float PngBadCharsetException() {
+        return super.PngBadCharsetException();
     }
 
     public final String PngjBadCrcException() {
@@ -68,6 +83,61 @@ public class a_ extends IdentyA {
         com.identy.enums.valueOf valueof = ((com.identy.a.PngjException) it.next()).valueOf;
         com.identy.enums.valueOf valueof2 = com.identy.enums.valueOf.BOZORTH;
         throw null;
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ Map PngjExceptionInternal() {
+        return super.PngjExceptionInternal();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ float PngjInputException() {
+        return super.PngjInputException();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ boolean PngjOutputException() {
+        return super.PngjOutputException();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ float PngjPrematureEnding() {
+        return super.PngjPrematureEnding();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ FingerAS PngjUnsupportedException() {
+        return super.PngjUnsupportedException();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ float a() {
+        return super.a();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ int e1() {
+        return super.e1();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ void getAsHighestSecurityLevelReached() {
+        super.getAsHighestSecurityLevelReached();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ Mat getPadSub3() {
+        return super.getPadSub3();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ float onErrorResponse() {
+        return super.onErrorResponse();
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ void valueOf(int i) {
+        super.valueOf(i);
     }
 
     public final Hand values() {
@@ -125,6 +195,16 @@ public class a_ extends IdentyA {
         }
     }
 
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ void PngjBadSignature(float f, float f2, float f3, float f4) {
+        super.PngjBadSignature(f, f2, f3, f4);
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ boolean valueOf() {
+        return super.valueOf();
+    }
+
     public final void values(Mat mat) {
         this.PngjPrematureEnding = mat;
         this.PngjBadSignature = new Date();
@@ -156,6 +236,11 @@ public class a_ extends IdentyA {
         }
     }
 
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ void PngjException(boolean z, FingerAS fingerAS) {
+        super.PngjException(z, fingerAS);
+    }
+
     public final void PngjException(Template[] templateArr, WSQCompression wSQCompression, boolean z, com.identy.c.PngjBadCrcException pngjBadCrcException) {
         if (z) {
             PngjBadSignature(new Template[0], wSQCompression, z);
@@ -165,5 +250,10 @@ public class a_ extends IdentyA {
 
     public final boolean PngjException() {
         return this.PngjInputException.values.equals(com.identy.enums.PngjBadSignature.ACCEPTED);
+    }
+
+    @Override // com.identy.getMatchingTime
+    public final /* bridge */ /* synthetic */ void PngjBadCrcException(boolean z) {
+        super.PngjBadCrcException(z);
     }
 }
