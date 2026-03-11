@@ -848,7 +848,7 @@ final class getL2Score extends getL3Score {
             getQualityScore();
             this.getMatchingTime = true;
             this.getData = Integer.valueOf(this.Action.getWindowManager().getDefaultDisplay().getRotation() + i3);
-            double d3 = this.getPadSub2 / d2;
+            double d3 = this.getPadSub2_f / d2;
             double d4 = this.getPadSub3;
             this.CaptureRolledFingersActivity = new RectF((int) d3, (int) (d4 / d), (int) (0 - d3), (int) (d4 - (d4 / 2.5d)));
             this.getScore = 0;
@@ -867,7 +867,7 @@ final class getL2Score extends getL3Score {
             this.isQualityFailed = DurationKt.NANOS_IN_MILLIS;
             StringBuilder sb = new StringBuilder(" allowed ?");
             sb.append(this.CaptureRolledFingersActivity.width());
-            getPadSub2.PngjException("allowed ? ", sb.toString());
+            com.identy.getPadSub2.PngjException("allowed ? ", sb.toString());
             StringBuilder sb2 = new StringBuilder(" allowed ?");
             sb2.append(this.CaptureRolledFingersActivity.width());
             sb2.append(" --- ");
@@ -875,13 +875,13 @@ final class getL2Score extends getL3Score {
             sb2.append(" -- > ");
             sb2.append(this.getPadSub3);
             sb2.append(" -- ");
-            sb2.append(this.getPadSub2);
-            getPadSub2.PngjException("allowed ? ", sb2.toString());
+            sb2.append(this.getPadSub2_f);
+            com.identy.getPadSub2.PngjException("allowed ? ", sb2.toString());
             StringBuilder sb3 = new StringBuilder(" MAX ");
             sb3.append(this.isQualityFailed);
             sb3.append(" MIN_FINGER_WIDTH ");
             sb3.append(this.getScore);
-            getPadSub2.PngjException("allowed ? ", sb3.toString());
+            com.identy.getPadSub2.PngjException("allowed ? ", sb3.toString());
             getData();
             PngjBadSignature(new IdentyC(this, 1));
         }
