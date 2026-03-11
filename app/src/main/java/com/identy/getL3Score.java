@@ -547,7 +547,7 @@ abstract class getL3Score extends e1 {
                     Iterator it = hashMap.entrySet().iterator();
                     while (it.hasNext()) {
                         try {
-                            ((com.identy.IdentyA) ((Map.Entry) it.next()).getValue()).PngjException(templateArr, identySdk2.getWSQCompression(), IdentySdk.getInstance().getAction().equals(Action.ENROLL), pngjException);
+                            ((com.identy.IdentyA) ((Map.Entry) it.next()).getValue()).PngjException(templateArr, identySdk2.getWSQCompression(), IdentySdk.getInstance().getAction().equals(com.identy.Action.ENROLL), pngjException);
                         } catch (Exception e2) {
                             e2.printStackTrace();
                         }
@@ -2363,7 +2363,7 @@ abstract class getL3Score extends e1 {
         long j = com.identy.e1.PngjBadCrcException_f;
         int ordinal = h.ordinal();
         int ordinal2 = Position.getFromHandFinger(new Pair(this.CapturePosition.getHand(), this.CapturePosition.getFinger())).ordinal();
-        boolean equals = action.equals(Action.ENROLL);
+        boolean equals = action.equals(com.identy.Action.ENROLL);
         int i = this.isQualityFailed;
         int i2 = this.getScore;
         int i3 = (int) rectF.top;
