@@ -127,8 +127,10 @@ public class IntroActivity extends Activity {
             i4++;
             bArr2[i] = (byte) i3;
             if (i == i5) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -143,7 +145,7 @@ public class IntroActivity extends Activity {
         valueOf = (char) 13509;
     }
 
-    private static void a(String str, int i, byte b, java.lang.Object[] objArr) {
+    private static void a(String str, int i, byte b, java.lang.Object[] objArr) throws Exception {
         char[] cArr;
         int i2;
         int i3;
@@ -461,10 +463,10 @@ public class IntroActivity extends Activity {
     */
     public void attachBaseContext(Context context) {
         int i;
-        char c;
-        int intValue;
-        java.lang.Object[] valueOf$1eba2e16;
-        char c2;
+        char c = 0;
+        int intValue = 0;
+        java.lang.Object[] valueOf$1eba2e16 = null;
+        char c2 = 0;
         int i2;
         int i3;
         PngjException = (PngjBadCrcException + 15) % 128;
@@ -608,12 +610,14 @@ public class IntroActivity extends Activity {
 
             throw new RuntimeException(cause);
         }
+        try {
         java.lang.Object[] objArr13 = new java.lang.Object[1];
         a("\u0019\u000b\u0001\u000b\u000f\u0016\b\u001f\u000e\u0011\r\u0003\u001e\u0016\u0019\u001c", '@' - AndroidCharacter.getMirror('0'), (byte) (14 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0)), objArr13);
         Class<?> cls3 = Class.forName((String) objArr13[0]);
         java.lang.Object[] objArr14 = new java.lang.Object[1];
         a("\n\"\u001a\u001e\u0016\u0000\u0013\u0000\u001f\u000b\u001e\n\u001c\u0007\u001d\u0019", (TypedValue.complexToFloat(0) > 0.0f ? 1 : (TypedValue.complexToFloat(0) == 0.0f ? 0 : -1)) + 16, (byte) (View.MeasureSpec.makeMeasureSpec(0, 0) + 113), objArr14);
         intValue = ((Integer) cls3.getMethod((String) objArr14[0], java.lang.Object.class).invoke(null, this)).intValue();
+        } catch (Exception e_abc) { throw new RuntimeException(e_abc); }
     }
 
     @Override // android.app.Activity
