@@ -2357,7 +2357,7 @@ abstract class getL3Score extends e1 {
     @Override // com.identy.e1
     public final void values() {
         boolean z;
-        Action action = IdentySdk.getInstance().getAction();
+        com.identy.Action action = IdentySdk.getInstance().getAction();
         FingerAS h = IdentySdk.getInstance().h();
         Objects.toString(this.CaptureRolledFingersActivity);
         boolean t = IdentySdk.getInstance().t();

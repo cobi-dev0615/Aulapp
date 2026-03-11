@@ -83,7 +83,9 @@ final class getL2Score extends getL3Score {
             activity.runOnUiThread(new Runnable() { // from class: com.identy.e
                 @Override // java.lang.Runnable
                 public final void run() {
-                    getL2Score.PngjBadCrcException.PngjBadSignature(imageView, animation2);
+                    imageView.clearAnimation();
+                    imageView.setAnimation(null);
+                    imageView.startAnimation(animation2);
                 }
             });
         }
@@ -187,7 +189,7 @@ final class getL2Score extends getL3Score {
 
     private void PngjBadSignature(Runnable runnable) {
         org.c.a.PngjBadCrcException pngjBadCrcException;
-        d dVar;
+        IdentyD dVar;
         int i = rgenerate + 9;
         ppk = i % 128;
         if (i % 2 == 0) {
