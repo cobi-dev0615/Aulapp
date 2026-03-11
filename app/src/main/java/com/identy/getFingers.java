@@ -376,13 +376,16 @@ final class getFingers extends e1 {
                 i = i7;
                 bArr2[i] = (byte) i3;
                 if (i == i5) {
+                    return new String(bArr2, 0);
                 }
             } else {
                 i = 0;
                 bArr2[i] = (byte) i3;
                 if (i == i5) {
+                    return new String(bArr2, 0);
                 }
             }
+            return new String(bArr2, 0);
         }
 
         static {
@@ -405,7 +408,7 @@ final class getFingers extends e1 {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private static void a(char c, int i, int i2, Object[] objArr) {
+        private static void a(char c, int i, int i2, Object[] objArr) throws Exception {
             Throwable cause;
             long j;
             int i3;
@@ -504,7 +507,7 @@ final class getFingers extends e1 {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private static void b(int i, boolean z, String str, int i2, int i3, Object[] objArr) {
+        private static void b(int i, boolean z, String str, int i2, int i3, Object[] objArr) throws Exception {
             char[] cArr;
             Throwable cause;
             char c;
@@ -753,14 +756,17 @@ final class getFingers extends e1 {
             i4 = i3 + 1;
             bArr2[i3] = (byte) i5;
             if (i4 == i7) {
+                return new String(bArr2, 0);
             }
         } else {
             i3 = 0;
             i4 = i3 + 1;
             bArr2[i3] = (byte) i5;
             if (i4 == i7) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -821,7 +827,7 @@ final class getFingers extends e1 {
         return ((i26 * i26) * (-861863936)) + i19 != 1 ? values(objArr) : valueOf(objArr);
     }
 
-    private static void e(int[] iArr, int i, Object[] objArr) {
+    private static void e(int[] iArr, int i, Object[] objArr) throws Exception {
         char[] cArr;
         char c;
         char[] cArr2;
@@ -1203,7 +1209,7 @@ final class getFingers extends e1 {
 
     @Override // com.identy.e1
     public final boolean PngjUnsupportedException() {
-        boolean PngjUnsupportedException;
+        boolean PngjUnsupportedException = false;
         try {
             PngjUnsupportedException = super.PngjUnsupportedException();
         } catch (Exception unused) {
