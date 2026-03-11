@@ -292,14 +292,17 @@ public final class getOveralTimetaken extends e1 {
                 i2++;
                 bArr2[i] = (byte) i3;
                 if (i == i4) {
+                    return new String(bArr2, 0);
                 }
             } else {
                 i = 0;
                 i2++;
                 bArr2[i] = (byte) i3;
                 if (i == i4) {
+                    return new String(bArr2, 0);
                 }
             }
+            return new String(bArr2, 0);
         }
 
         static {
@@ -529,7 +532,7 @@ public final class getOveralTimetaken extends e1 {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private static void c(String str, int i, java.lang.Object[] objArr) {
+        private static void c(String str, int i, java.lang.Object[] objArr) throws Exception {
             char[] cArr;
             float f;
             Throwable cause;
@@ -871,6 +874,7 @@ public final class getOveralTimetaken extends e1 {
             i4 += -i7;
             bArr2[i3] = (byte) i4;
             if (i3 == i5) {
+                return new String(bArr2, 0);
             }
         } else {
             i2 = i4;
@@ -878,8 +882,10 @@ public final class getOveralTimetaken extends e1 {
             i3 = 0;
             bArr2[i3] = (byte) i4;
             if (i3 == i5) {
+                return new String(bArr2, 0);
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
