@@ -85,7 +85,7 @@ public class Verify4FActivity extends FingerActivity {
         public final void values() {
             VerifyResult verifyResult;
             int i;
-            e1 e1Var;
+            com.identy.e1 e1Var;
             valueOf valueof;
             Verify4FActivity verify4FActivity = Verify4FActivity.this;
             int i2 = verify4FActivity.PngjBadCrcException + 1;
@@ -545,7 +545,7 @@ public class Verify4FActivity extends FingerActivity {
                         fingerMatchSecLevel = fingerMatchSecLevel2;
                         j = timeInMillis;
                         try {
-                            new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
+                            new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
                         } catch (Exception unused2) {
                             try {
                                 this.onErrorResponse.valueOf();

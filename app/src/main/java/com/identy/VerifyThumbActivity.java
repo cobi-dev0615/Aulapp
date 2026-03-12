@@ -85,7 +85,7 @@ public class VerifyThumbActivity extends FingerActivity {
         public final void values() {
             VerifyResult verifyResult;
             int i;
-            e1 e1Var;
+            com.identy.e1 e1Var;
             VerifyResult verifyResult2;
             IdentySdk identySdk;
             FingerDetectionMode fingerDetectionMode;
@@ -620,7 +620,7 @@ public class VerifyThumbActivity extends FingerActivity {
                         fingerMatchSecLevel = fingerMatchSecLevel2;
                         j = timeInMillis;
                         try {
-                            new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis), this, pngjExceptionInternal, value, e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
+                            new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
                             getFingerPrintQualityScore = (getProcessingTime + 61) % 128;
                         } catch (Exception unused2) {
                             try {

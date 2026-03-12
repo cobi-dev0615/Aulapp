@@ -90,7 +90,7 @@ public class VerifyFingersActivity extends FingerActivity {
         public final void values() {
             VerifyResult verifyResult;
             int i;
-            e1 e1Var;
+            com.identy.e1 e1Var;
             valueOf valueof;
             VerifyResult verifyResult2;
             IdentySdk identySdk;
@@ -548,7 +548,7 @@ public class VerifyFingersActivity extends FingerActivity {
                         fingerMatchSecLevel = fingerMatchSecLevel2;
                         j = timeInMillis;
                         try {
-                            new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjBadCrcException(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
+                            new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjBadCrcException(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
                             getNfiq1Score = (getOveralTimetaken + 45) % 128;
                         } catch (Exception unused2) {
                             try {

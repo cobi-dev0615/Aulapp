@@ -83,7 +83,7 @@ public class Verify2TActivity extends FingerActivity {
         public final void values() {
             VerifyResult verifyResult;
             int i;
-            e1 e1Var;
+            com.identy.e1 e1Var;
             VerifyResult verifyResult2;
             IdentySdk identySdk;
             FingerDetectionMode fingerDetectionMode;
@@ -127,7 +127,7 @@ public class Verify2TActivity extends FingerActivity {
                         Verify2TActivity.this.onErrorResponse.valueOf();
                     } catch (Exception unused2) {
                     }
-                    e1.values(new java.lang.Object[]{Verify2TActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
+                    com.identy.e1.values(new java.lang.Object[]{Verify2TActivity.this.onErrorResponse}, com.identy.i.PngjPrematureEnding.values(), com.identy.i.PngjPrematureEnding.values(), -431637600, com.identy.i.PngjPrematureEnding.values(), 431637601, com.identy.i.PngjPrematureEnding.values());
                     identySdk = IdentySdk.getInstance();
                     Verify2TActivity verify2TActivity2 = Verify2TActivity.this;
                     fingerDetectionMode = verify2TActivity2.PngjExceptionInternal;
@@ -500,7 +500,7 @@ public class Verify2TActivity extends FingerActivity {
                         j = timeInMillis;
                     }
                     try {
-                        new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjBadSignature(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
+                        new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjBadSignature(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
                     } catch (Exception unused3) {
                         try {
                             this.onErrorResponse.valueOf();

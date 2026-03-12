@@ -130,7 +130,7 @@ public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, Ar
             ((Activity) this.PngjException.get()).getApplicationContext();
             if (LibSettings.isSaveCaptured()) {
                 StringBuilder sb = new StringBuilder();
-                sb.append(e1.PngjInputException);
+                sb.append(com.identy.e1.PngjInputException);
                 sb.append("_");
                 String obj = sb.toString();
                 if (IdentySdk.getInstance().getAttackS() != null) {
@@ -155,7 +155,7 @@ public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, Ar
             } else {
                 identySdk2 = identySdk;
             }
-            long j = e1.values;
+            long j = com.identy.e1.values;
             long j2 = mat.PngjException;
             long j3 = mat2.PngjException;
             long j4 = mat3.PngjException;
@@ -184,7 +184,7 @@ public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, Ar
                         e1 e1Var2 = this.valueOf;
                         byte[] cvtmat2ba2 = Fpnative.cvtmat2ba(mat4.PngjException);
                         StringBuilder sb4 = new StringBuilder();
-                        sb4.append(e1.PngjInputException);
+                        sb4.append(com.identy.e1.PngjInputException);
                         sb4.append("_");
                         sb4.append(i3);
                         e1Var2.PngjBadSignature(cvtmat2ba2, sb4.toString(), "FRAMES_POST_CAPTURE", BuildConfig.FLAVOR);
@@ -195,7 +195,7 @@ public final class getFingerPrintQualityScore extends AsyncTask<Mat, Integer, Ar
             }
             if (LibSettings.isSaveCaptured()) {
                 StringBuilder sb5 = new StringBuilder();
-                sb5.append(e1.PngjInputException);
+                sb5.append(com.identy.e1.PngjInputException);
                 sb5.append("_");
                 String obj2 = sb5.toString();
                 if (IdentySdk.getInstance().getAttackS() != null) {
