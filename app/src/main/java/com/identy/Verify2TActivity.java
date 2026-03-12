@@ -98,7 +98,8 @@ public class Verify2TActivity extends FingerActivity {
                 VerifyResult verifyResult3 = null;
                 try {
                     HashMap hashMap2 = new HashMap();
-                    for (Map.Entry entry : this.PngjException.entrySet()) {
+                    for (Object _entry : this.PngjException.entrySet()) {
+                        Map.Entry entry = (Map.Entry) _entry;
                         hashMap2.put(Integer.valueOf(Position.getFromHandFinger((Pair) entry.getKey()).ordinal()), ((PngjExceptionInternal) Verify2TActivity.this.values.get(entry.getKey())).PngjBadCrcException());
                     }
                     verifyResult = Fpnative.matchCaptured(e1.values, hashMap2, this.values.ordinal());
@@ -109,7 +110,8 @@ public class Verify2TActivity extends FingerActivity {
                 }
                 try {
                     verifyResult2 = null;
-                    for (Map.Entry entry2 : this.PngjException.entrySet()) {
+                    for (Object _entry2 : this.PngjException.entrySet()) {
+                        Map.Entry entry2 = (Map.Entry) _entry2;
                         verifyResult2 = new VerifyResult(verifyResult.getEnrollmentTs());
                         verifyResult2.setMatched(verifyResult.isMatched());
                         verifyResult2.positionMismatched = verifyResult.positionMismatched;
@@ -432,7 +434,7 @@ public class Verify2TActivity extends FingerActivity {
                 if (PngjBadSignature4 == null) {
                     PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0, 0)), 40 - (ViewConfiguration.getTapTimeout() >> 16), (ViewConfiguration.getScrollBarFadeDuration() >> 16) + 190, 794744863, false, "j", new Class[]{java.lang.Object.class, java.lang.Object.class});
                 }
-                ((Method) PngjBadSignature4).invoke(null, objArr4);
+                try { ((Method) PngjBadSignature4).invoke(null, objArr4); } catch (Exception e) { throw new RuntimeException(e); }
                 $10 = ($11 + 21) % 128;
             }
             cArr2 = cArr;
@@ -526,8 +528,8 @@ public class Verify2TActivity extends FingerActivity {
     public void attachBaseContext(Context context) {
         char c;
         int i;
-        int intValue;
-        java.lang.Object[] PngjException$1eba2e16;
+        int intValue = 0;
+        java.lang.Object[] PngjException$1eba2e16 = null;
         char c2;
         int i2;
         int i3;
@@ -546,7 +548,7 @@ public class Verify2TActivity extends FingerActivity {
                 b(b, b2, b2, objArr);
                 PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(indexOf, i5, i6, -815159504, false, (String) objArr[0], null);
             }
-            ((Field) PngjBadSignature2).getLong(null);
+            try { ((Field) PngjBadSignature2).getLong(null); } catch (Exception e) { throw new RuntimeException(e); }
             throw null;
         }
         super.attachBaseContext(context);
@@ -566,7 +568,7 @@ public class Verify2TActivity extends FingerActivity {
             c = 2;
             i = 864471691;
         }
-        long j = ((Field) PngjBadSignature3).getLong(null);
+        long j; try { j = ((Field) PngjBadSignature3).getLong(null); } catch (Exception e) { throw new RuntimeException(e); }
         try {
             try {
                 if (j != -1) {
@@ -710,10 +712,10 @@ public class Verify2TActivity extends FingerActivity {
         }
         java.lang.Object[] objArr14 = new java.lang.Object[1];
         c((ViewConfiguration.getLongPressTimeout() >> 16) + 16, false, "\u0011\u0012\u0003\u000b\b\uffff\u0014\uffffￌ\n\uffff\f\u0005ￌ\ufff1\u0017", 3 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), 156 - (ViewConfiguration.getJumpTapTimeout() >> 16), objArr14);
-        Class<?> cls3 = Class.forName((String) objArr14[0]);
+        Class<?> cls3; try { cls3 = Class.forName((String) objArr14[0]); } catch (ClassNotFoundException e) { throw new RuntimeException(e); }
         java.lang.Object[] objArr15 = new java.lang.Object[1];
         c(16 - Color.alpha(0), true, "\ufffe\u0003\uffff\ufffe\t\uffdd\u0002\r\ufffb￢\u0013\u000e\u0003\u000e\b\uffff", 1 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)), TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0') + 161, objArr15);
-        intValue = ((Integer) cls3.getMethod((String) objArr15[0], java.lang.Object.class).invoke(null, this)).intValue();
+        try { intValue = ((Integer) cls3.getMethod((String) objArr15[0], java.lang.Object.class).invoke(null, this)).intValue(); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
     @Override // com.identy.FingerActivity

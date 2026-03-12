@@ -108,7 +108,8 @@ public class VerifyFingersActivity extends FingerActivity {
             VerifyResult verifyResult3 = null;
             try {
                 HashMap hashMap2 = new HashMap();
-                for (Map.Entry entry : this.values.entrySet()) {
+                for (Object _entry : this.values.entrySet()) {
+                    Map.Entry entry = (Map.Entry) _entry;
                     hashMap2.put(Integer.valueOf(Position.getFromHandFinger((Pair) entry.getKey()).ordinal()), ((PngjExceptionInternal) VerifyFingersActivity.this.values.get(entry.getKey())).PngjBadCrcException());
                 }
                 verifyResult = Fpnative.matchCaptured(e1.values, hashMap2, this.PngjBadSignature.ordinal());
@@ -119,7 +120,8 @@ public class VerifyFingersActivity extends FingerActivity {
             }
             try {
                 verifyResult2 = null;
-                for (Map.Entry entry2 : this.values.entrySet()) {
+                for (Object _entry2 : this.values.entrySet()) {
+                    Map.Entry entry2 = (Map.Entry) _entry2;
                     verifyResult2 = new VerifyResult(verifyResult.getEnrollmentTs());
                     verifyResult2.setMatched(verifyResult.isMatched());
                     verifyResult2.positionMismatched = verifyResult.positionMismatched;

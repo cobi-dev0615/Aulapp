@@ -2254,6 +2254,10 @@ public class FingerActivity extends Activity implements Camera.PreviewCallback, 
         public final void PngjBadCrcException(int i, int i2) {
             FingerActivity.this.PngjBadCrcException(i, i2);
         }
+
+        public byte[] PngjBadCrcException() {
+            return null;
+        }
     }
 
     public class PngjInputException implements View.OnClickListener {

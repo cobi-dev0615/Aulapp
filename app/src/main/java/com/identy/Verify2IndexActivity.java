@@ -421,7 +421,7 @@ public class Verify2IndexActivity extends FingerActivity {
             b(b, b2, (byte) (b2 - 1), objArr);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(pressedStateDuration, i2, i3, -815159504, false, (String) objArr[0], null);
         }
-        long j2 = ((Field) PngjBadSignature).getLong(null);
+        long j2; try { j2 = ((Field) PngjBadSignature).getLong(null); } catch (Exception e) { throw new RuntimeException(e); }
         try {
             try {
                 if (j2 != -1) {
@@ -546,7 +546,7 @@ public class Verify2IndexActivity extends FingerActivity {
         }
         java.lang.Object[] objArr12 = new java.lang.Object[1];
         c(new int[]{37, 16, 151, 10}, "\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0000", true, objArr12);
-        Class<?> cls3 = Class.forName((String) objArr12[0]);
+        Class<?> cls3; try { cls3 = Class.forName((String) objArr12[0]); } catch (ClassNotFoundException e) { throw new RuntimeException(e); }
         java.lang.Object[] objArr13 = new java.lang.Object[1];
         c(new int[]{53, 16, 0, 12}, "\u0000\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0000\u0001\u0001\u0000", true, objArr13);
         try { intValue = ((Integer) cls3.getMethod((String) objArr13[0], java.lang.Object.class).invoke(null, this)).intValue(); } catch (Exception e) { throw new RuntimeException(e); }

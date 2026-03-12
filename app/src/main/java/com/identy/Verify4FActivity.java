@@ -96,7 +96,8 @@ public class Verify4FActivity extends FingerActivity {
             VerifyResult verifyResult2 = null;
             try {
                 HashMap hashMap = new HashMap();
-                for (Map.Entry entry : this.valueOf.entrySet()) {
+                for (Object _entry : this.valueOf.entrySet()) {
+                    Map.Entry entry = (Map.Entry) _entry;
                     hashMap.put(Integer.valueOf(Position.getFromHandFinger((Pair) entry.getKey()).ordinal()), ((PngjExceptionInternal) Verify4FActivity.this.values.get(entry.getKey())).PngjBadCrcException());
                 }
                 verifyResult = Fpnative.matchCaptured(e1.values, hashMap, this.PngjBadSignature.ordinal());
@@ -107,7 +108,8 @@ public class Verify4FActivity extends FingerActivity {
             }
             try {
                 VerifyResult verifyResult3 = null;
-                for (Map.Entry entry2 : this.valueOf.entrySet()) {
+                for (Object _entry2 : this.valueOf.entrySet()) {
+                    Map.Entry entry2 = (Map.Entry) _entry2;
                     verifyResult3 = new VerifyResult(verifyResult.getEnrollmentTs());
                     verifyResult3.setMatched(verifyResult.isMatched());
                     verifyResult3.setScore(verifyResult.getScore());
