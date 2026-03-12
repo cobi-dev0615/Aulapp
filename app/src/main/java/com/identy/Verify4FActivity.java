@@ -100,7 +100,7 @@ public class Verify4FActivity extends FingerActivity {
                     Map.Entry entry = (Map.Entry) _entry;
                     hashMap.put(Integer.valueOf(Position.getFromHandFinger((Pair) entry.getKey()).ordinal()), ((PngjExceptionInternal) Verify4FActivity.this.values.get(entry.getKey())).PngjBadCrcException());
                 }
-                verifyResult = Fpnative.matchCaptured(e1.values, hashMap, this.PngjBadSignature.ordinal());
+                verifyResult = Fpnative.matchCaptured(com.identy.e1.values, hashMap, this.PngjBadSignature.ordinal());
             } catch (Exception unused) {
             }
             if (verifyResult == null) {
@@ -115,7 +115,7 @@ public class Verify4FActivity extends FingerActivity {
                     verifyResult3.setScore(verifyResult.getScore());
                     verifyResult3.positionMismatched = verifyResult.positionMismatched;
                     verifyResult3.setMatched_true_up_to_security_level(verifyResult.matched_true_up_to_security_level);
-                    getProcessingTime getprocessingtime = (getProcessingTime) entry2.getValue();
+                    com.identy.getProcessingTime getprocessingtime = (com.identy.getProcessingTime) entry2.getValue();
                     getprocessingtime.PngjBadCrcException(verifyResult.isMatched());
                     ((com.identy.IdentyA) getprocessingtime).values = Math.round(verifyResult.getFingerScore((Pair) entry2.getKey()));
                     Verify4FActivity.this.onErrorResponse.Capture2IndexActivity.PngjBadSignature.put((Pair) entry2.getKey(), Integer.valueOf(((com.identy.IdentyA) getprocessingtime).values));
