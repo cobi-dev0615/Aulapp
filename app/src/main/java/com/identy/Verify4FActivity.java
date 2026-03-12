@@ -86,7 +86,7 @@ public class Verify4FActivity extends FingerActivity {
             VerifyResult verifyResult;
             int i;
             com.identy.e1 e1Var;
-            valueOf valueof;
+            com.identy.valueOf valueof;
             Verify4FActivity verify4FActivity = Verify4FActivity.this;
             int i2 = verify4FActivity.PngjBadCrcException + 1;
             verify4FActivity.PngjBadCrcException = i2;
@@ -181,14 +181,14 @@ public class Verify4FActivity extends FingerActivity {
                 }
             }
             try {
-                Object obj = valueOf.UNSUCCESS;
-                valueOf valueof2 = verifyResult.isMatched() ? valueOf.SUCCESS : obj;
+                Object obj = com.identy.valueOf.UNSUCCESS;
+                com.identy.valueOf valueof2 = verifyResult.isMatched() ? com.identy.valueOf.SUCCESS : obj;
                 if (valueof2.equals(obj)) {
-                    valueof2 = valueOf.RETAKE;
+                    valueof2 = com.identy.valueOf.RETAKE;
                 }
-                if (Verify4FActivity.this.onErrorResponse.getEncryptedTemplates >= i && valueof2.equals(valueOf.RETAKE)) {
+                if (Verify4FActivity.this.onErrorResponse.getEncryptedTemplates >= i && valueof2.equals(com.identy.valueOf.RETAKE)) {
                     valueof = obj;
-                    if (!valueof.equals(valueOf.RETAKE)) {
+                    if (!valueof.equals(com.identy.valueOf.RETAKE)) {
                         try {
                             Verify4FActivity.this.Action.PngjException();
                         } catch (Exception unused5) {
@@ -210,11 +210,11 @@ public class Verify4FActivity extends FingerActivity {
                             return;
                         }
                     }
-                    if (valueof.equals(valueOf.RETAKE)) {
+                    if (valueof.equals(com.identy.valueOf.RETAKE)) {
                         Verify4FActivity verify4FActivity7 = Verify4FActivity.this;
                         Verify4FActivity verify4FActivity8 = Verify4FActivity.this;
                         verify4FActivity7.getPadSub1 = new com.identy.ui.c.getScore(verify4FActivity8, verify4FActivity8.getQualityScore);
-                    } else if (valueof.equals(valueOf.UNSUCCESS)) {
+                    } else if (valueof.equals(com.identy.valueOf.UNSUCCESS)) {
                         Verify4FActivity verify4FActivity9 = Verify4FActivity.this;
                         Verify4FActivity verify4FActivity10 = Verify4FActivity.this;
                         verify4FActivity9.getPadSub1 = new com.identy.ui.c.isQualityFailed(verify4FActivity10, verify4FActivity10.getQualityScore);
@@ -227,7 +227,7 @@ public class Verify4FActivity extends FingerActivity {
                     return;
                 }
                 valueof = valueof2;
-                if (!valueof.equals(valueOf.RETAKE)) {
+                if (!valueof.equals(com.identy.valueOf.RETAKE)) {
                 }
                 if (!IdentySdk.getInstance().isDisplayPrints()) {
                 }

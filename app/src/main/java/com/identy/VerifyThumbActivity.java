@@ -185,15 +185,15 @@ public class VerifyThumbActivity extends FingerActivity {
                     }
                 }
                 try {
-                    valueOf valueof = valueOf.UNSUCCESS;
-                    valueOf valueof2 = verifyResult.isMatched() ? valueOf.SUCCESS : valueof;
+                    com.identy.valueOf valueof = com.identy.valueOf.UNSUCCESS;
+                    com.identy.valueOf valueof2 = verifyResult.isMatched() ? com.identy.valueOf.SUCCESS : valueof;
                     if (valueof2.equals(valueof)) {
-                        valueof2 = valueOf.RETAKE;
+                        valueof2 = com.identy.valueOf.RETAKE;
                     }
-                    if (VerifyThumbActivity.this.onErrorResponse.getEncryptedTemplates < i || !valueof2.equals(valueOf.RETAKE)) {
+                    if (VerifyThumbActivity.this.onErrorResponse.getEncryptedTemplates < i || !valueof2.equals(com.identy.valueOf.RETAKE)) {
                         valueof = valueof2;
                     }
-                    if (!valueof.equals(valueOf.RETAKE)) {
+                    if (!valueof.equals(com.identy.valueOf.RETAKE)) {
                         try {
                             VerifyThumbActivity.this.Action.PngjException();
                         } catch (Exception unused5) {
@@ -213,11 +213,11 @@ public class VerifyThumbActivity extends FingerActivity {
                             return;
                         }
                     }
-                    if (valueof.equals(valueOf.RETAKE)) {
+                    if (valueof.equals(com.identy.valueOf.RETAKE)) {
                         VerifyThumbActivity verifyThumbActivity5 = VerifyThumbActivity.this;
                         VerifyThumbActivity verifyThumbActivity6 = VerifyThumbActivity.this;
                         verifyThumbActivity5.getPadSub1 = new com.identy.ui.c.getScore(verifyThumbActivity6, verifyThumbActivity6.getQualityScore);
-                    } else if (valueof.equals(valueOf.UNSUCCESS)) {
+                    } else if (valueof.equals(com.identy.valueOf.UNSUCCESS)) {
                         VerifyThumbActivity verifyThumbActivity7 = VerifyThumbActivity.this;
                         VerifyThumbActivity verifyThumbActivity8 = VerifyThumbActivity.this;
                         verifyThumbActivity7.getPadSub1 = new com.identy.ui.c.isQualityFailed(verifyThumbActivity8, verifyThumbActivity8.getQualityScore);

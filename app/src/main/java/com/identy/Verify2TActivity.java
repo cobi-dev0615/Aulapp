@@ -183,12 +183,12 @@ public class Verify2TActivity extends FingerActivity {
                     }
                 }
                 try {
-                    valueOf valueof = valueOf.UNSUCCESS;
+                    com.identy.valueOf valueof = com.identy.valueOf.UNSUCCESS;
                     if (verifyResult.isMatched()) {
-                        valueof = valueOf.SUCCESS;
+                        valueof = com.identy.valueOf.SUCCESS;
                     }
-                    valueOf valueof2 = valueof;
-                    if (!valueof2.equals(valueOf.RETAKE)) {
+                    com.identy.valueOf valueof2 = valueof;
+                    if (!valueof2.equals(com.identy.valueOf.RETAKE)) {
                         try {
                             Verify2TActivity.this.Action.PngjException();
                         } catch (Exception unused5) {
@@ -210,11 +210,11 @@ public class Verify2TActivity extends FingerActivity {
                             return;
                         }
                     }
-                    if (valueof2.equals(valueOf.RETAKE)) {
+                    if (valueof2.equals(com.identy.valueOf.RETAKE)) {
                         Verify2TActivity verify2TActivity7 = Verify2TActivity.this;
                         Verify2TActivity verify2TActivity8 = Verify2TActivity.this;
                         verify2TActivity7.getPadSub1 = new com.identy.ui.c.getScore(verify2TActivity8, verify2TActivity8.getQualityScore);
-                    } else if (valueof2.equals(valueOf.UNSUCCESS)) {
+                    } else if (valueof2.equals(com.identy.valueOf.UNSUCCESS)) {
                         Verify2TActivity verify2TActivity9 = Verify2TActivity.this;
                         Verify2TActivity verify2TActivity10 = Verify2TActivity.this;
                         verify2TActivity9.getPadSub1 = new com.identy.ui.c.isQualityFailed(verify2TActivity10, verify2TActivity10.getQualityScore);

@@ -91,7 +91,7 @@ public class VerifyFingersActivity extends FingerActivity {
             VerifyResult verifyResult;
             int i;
             com.identy.e1 e1Var;
-            valueOf valueof;
+            com.identy.valueOf valueof;
             VerifyResult verifyResult2;
             IdentySdk identySdk;
             FingerDetectionMode fingerDetectionMode;
@@ -193,14 +193,14 @@ public class VerifyFingersActivity extends FingerActivity {
                 }
             }
             try {
-                Object obj = valueOf.UNSUCCESS;
-                valueOf valueof2 = verifyResult.isMatched() ? valueOf.SUCCESS : obj;
+                Object obj = com.identy.valueOf.UNSUCCESS;
+                com.identy.valueOf valueof2 = verifyResult.isMatched() ? com.identy.valueOf.SUCCESS : obj;
                 if (valueof2.equals(obj)) {
-                    valueof2 = valueOf.RETAKE;
+                    valueof2 = com.identy.valueOf.RETAKE;
                 }
-                if (VerifyFingersActivity.this.onErrorResponse.getEncryptedTemplates >= i && valueof2.equals(valueOf.RETAKE)) {
+                if (VerifyFingersActivity.this.onErrorResponse.getEncryptedTemplates >= i && valueof2.equals(com.identy.valueOf.RETAKE)) {
                     valueof = obj;
-                    if (!valueof.equals(valueOf.RETAKE)) {
+                    if (!valueof.equals(com.identy.valueOf.RETAKE)) {
                         try {
                             VerifyFingersActivity.this.Action.PngjException();
                         } catch (Exception unused5) {
@@ -222,11 +222,11 @@ public class VerifyFingersActivity extends FingerActivity {
                             return;
                         }
                     }
-                    if (valueof.equals(valueOf.RETAKE)) {
+                    if (valueof.equals(com.identy.valueOf.RETAKE)) {
                         VerifyFingersActivity verifyFingersActivity7 = VerifyFingersActivity.this;
                         VerifyFingersActivity verifyFingersActivity8 = VerifyFingersActivity.this;
                         verifyFingersActivity7.getPadSub1 = new com.identy.ui.c.getScore(verifyFingersActivity8, verifyFingersActivity8.getQualityScore);
-                    } else if (valueof.equals(valueOf.UNSUCCESS)) {
+                    } else if (valueof.equals(com.identy.valueOf.UNSUCCESS)) {
                         VerifyFingersActivity verifyFingersActivity9 = VerifyFingersActivity.this;
                         VerifyFingersActivity verifyFingersActivity10 = VerifyFingersActivity.this;
                         verifyFingersActivity9.getPadSub1 = new com.identy.ui.c.isQualityFailed(verifyFingersActivity10, verifyFingersActivity10.getQualityScore);
@@ -239,7 +239,7 @@ public class VerifyFingersActivity extends FingerActivity {
                     return;
                 }
                 valueof = valueof2;
-                if (!valueof.equals(valueOf.RETAKE)) {
+                if (!valueof.equals(com.identy.valueOf.RETAKE)) {
                 }
                 if (!IdentySdk.getInstance().isDisplayPrints()) {
                 }
