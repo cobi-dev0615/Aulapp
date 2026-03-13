@@ -500,7 +500,7 @@ public class Verify2TActivity extends FingerActivity {
                         j = timeInMillis;
                     }
                     try {
-                        new com.identy.PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjBadSignature(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new IdentyA[0]);
+                        new com.identy.b.PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjBadSignature(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new IdentyA[0]);
                     } catch (Exception unused3) {
                         try {
                             this.onErrorResponse.valueOf();

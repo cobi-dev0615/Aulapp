@@ -623,7 +623,7 @@ public class VerifyThumbActivity extends FingerActivity {
                         fingerMatchSecLevel = fingerMatchSecLevel2;
                         j = timeInMillis;
                         try {
-                            new com.identy.PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new IdentyA[0]);
+                            new com.identy.b.PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new IdentyA[0]);
                             getFingerPrintQualityScore = (getProcessingTime + 61) % 128;
                         } catch (Exception unused2) {
                             try {

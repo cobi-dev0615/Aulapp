@@ -184,7 +184,7 @@ public class Verify4FActivity extends FingerActivity {
                 }
             }
             try {
-                Object obj = com.identy.valueOf.UNSUCCESS;
+                com.identy.valueOf obj = com.identy.valueOf.UNSUCCESS;
                 com.identy.valueOf valueof2 = verifyResult.isMatched() ? com.identy.valueOf.SUCCESS : obj;
                 if (valueof2.equals(obj)) {
                     valueof2 = com.identy.valueOf.RETAKE;
@@ -548,7 +548,7 @@ public class Verify4FActivity extends FingerActivity {
                         fingerMatchSecLevel = fingerMatchSecLevel2;
                         j = timeInMillis;
                         try {
-                            new com.identy.PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new IdentyA[0]);
+                            new com.identy.b.PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new IdentyA[0]);
                         } catch (Exception unused2) {
                             try {
                                 this.onErrorResponse.valueOf();
