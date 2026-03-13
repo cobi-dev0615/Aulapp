@@ -114,9 +114,9 @@ abstract class GifViewUtils {
         final int mLoopCount;
 
         public GifViewAttributes(View view, AttributeSet attributeSet, int i, int i2) {
-            TypedArray obtainStyledAttributes = view.getContext().obtainStyledAttributes(attributeSet, R$styleable.GifView, i, i2);
-            this.freezesAnimation = obtainStyledAttributes.getBoolean(R$styleable.GifView_freezesAnimation, false);
-            this.mLoopCount = obtainStyledAttributes.getInt(R$styleable.GifView_loopCount, -1);
+            TypedArray obtainStyledAttributes = view.getContext().obtainStyledAttributes(attributeSet, R.styleable.GifView, i, i2);
+            this.freezesAnimation = obtainStyledAttributes.getBoolean(R.styleable.GifView_freezesAnimation, false);
+            this.mLoopCount = obtainStyledAttributes.getInt(R.styleable.GifView_loopCount, -1);
             obtainStyledAttributes.recycle();
         }
 

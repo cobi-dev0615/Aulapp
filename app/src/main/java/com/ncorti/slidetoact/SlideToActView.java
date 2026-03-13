@@ -854,7 +854,7 @@ public final class SlideToActView extends View {
     }
 
     public /* synthetic */ SlideToActView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
-        this(context, (i2 & 2) != 0 ? null : attributeSet, (i2 & 4) != 0 ? R$attr.slideToActViewStyle : i);
+        this(context, (i2 & 2) != 0 ? null : attributeSet, (i2 & 4) != 0 ? R.attr.slideToActViewStyle : i);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -868,7 +868,7 @@ public final class SlideToActView extends View {
         String str = BuildConfig.FLAVOR;
         this.text = BuildConfig.FLAVOR;
         this.animDuration = 300L;
-        int i2 = R$drawable.slidetoact_ic_arrow;
+        int i2 = R.drawable.slidetoact_ic_arrow;
         this.sliderIcon = i2;
         this.mTextYPosition = -1.0f;
         this.mTextXPosition = -1.0f;
@@ -884,57 +884,57 @@ public final class SlideToActView extends View {
         TextPaint paint = textView.getPaint();
         Intrinsics.checkNotNullExpressionValue(paint, "mTextView.paint");
         this.mTextPaint = paint;
-        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, R$styleable.SlideToActView, i, R$style.SlideToActView);
+        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, R.styleable.SlideToActView, i, R.style.SlideToActView);
         Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "context.theme.obtainStyl….SlideToActView\n        )");
         try {
             this.mDesiredSliderHeight = (int) TypedValue.applyDimension(1, this.mDesiredSliderHeightDp, getResources().getDisplayMetrics());
             this.mDesiredSliderWidth = (int) TypedValue.applyDimension(1, this.mDesiredSliderWidthDp, getResources().getDisplayMetrics());
-            int color = ContextCompat.getColor(getContext(), R$color.slidetoact_defaultAccent);
-            int color2 = ContextCompat.getColor(getContext(), R$color.slidetoact_white);
-            this.mDesiredSliderHeight = obtainStyledAttributes.getDimensionPixelSize(R$styleable.SlideToActView_slider_height, this.mDesiredSliderHeight);
-            this.mBorderRadius = obtainStyledAttributes.getDimensionPixelSize(R$styleable.SlideToActView_border_radius, -1);
-            int i3 = R$styleable.SlideToActView_outer_color;
+            int color = ContextCompat.getColor(getContext(), R.color.slidetoact_defaultAccent);
+            int color2 = ContextCompat.getColor(getContext(), R.color.slidetoact_white);
+            this.mDesiredSliderHeight = obtainStyledAttributes.getDimensionPixelSize(R.styleable.SlideToActView_slider_height, this.mDesiredSliderHeight);
+            this.mBorderRadius = obtainStyledAttributes.getDimensionPixelSize(R.styleable.SlideToActView_border_radius, -1);
+            int i3 = R.styleable.SlideToActView_outer_color;
             int color3 = obtainStyledAttributes.getColor(i3, color);
-            int i4 = R$styleable.SlideToActView_inner_color;
+            int i4 = R.styleable.SlideToActView_inner_color;
             int color4 = obtainStyledAttributes.getColor(i4, color2);
-            int i5 = R$styleable.SlideToActView_text_color;
+            int i5 = R.styleable.SlideToActView_text_color;
             if (obtainStyledAttributes.hasValue(i5)) {
                 color2 = obtainStyledAttributes.getColor(i5, color2);
             } else if (obtainStyledAttributes.hasValue(i4)) {
                 color2 = color4;
             }
-            String string = obtainStyledAttributes.getString(R$styleable.SlideToActView_text);
+            String string = obtainStyledAttributes.getString(R.styleable.SlideToActView_text);
             if (string != null) {
                 Intrinsics.checkNotNullExpressionValue(string, "getString(R.styleable.SlideToActView_text) ?: \"\"");
                 str = string;
             }
             setText(str);
-            setTypeFace(obtainStyledAttributes.getInt(R$styleable.SlideToActView_text_style, 0));
-            setMTextSize(obtainStyledAttributes.getDimensionPixelSize(R$styleable.SlideToActView_text_size, obtainStyledAttributes.getResources().getDimensionPixelSize(R$dimen.slidetoact_default_text_size)));
+            setTypeFace(obtainStyledAttributes.getInt(R.styleable.SlideToActView_text_style, 0));
+            setMTextSize(obtainStyledAttributes.getDimensionPixelSize(R.styleable.SlideToActView_text_size, obtainStyledAttributes.getResources().getDimensionPixelSize(R.dimen.slidetoact_default_text_size)));
             setTextColor(color2);
-            setTextAppearance(obtainStyledAttributes.getResourceId(R$styleable.SlideToActView_text_appearance, 0));
-            this.isLocked = obtainStyledAttributes.getBoolean(R$styleable.SlideToActView_slider_locked, false);
-            setReversed(obtainStyledAttributes.getBoolean(R$styleable.SlideToActView_slider_reversed, false));
-            this.isRotateIcon = obtainStyledAttributes.getBoolean(R$styleable.SlideToActView_rotate_icon, true);
-            this.isAnimateCompletion = obtainStyledAttributes.getBoolean(R$styleable.SlideToActView_animate_completion, true);
-            this.animDuration = obtainStyledAttributes.getInteger(R$styleable.SlideToActView_animation_duration, 300);
-            this.bumpVibration = obtainStyledAttributes.getInt(R$styleable.SlideToActView_bump_vibration, 0);
-            int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(R$styleable.SlideToActView_area_margin, obtainStyledAttributes.getResources().getDimensionPixelSize(R$dimen.slidetoact_default_area_margin));
+            setTextAppearance(obtainStyledAttributes.getResourceId(R.styleable.SlideToActView_text_appearance, 0));
+            this.isLocked = obtainStyledAttributes.getBoolean(R.styleable.SlideToActView_slider_locked, false);
+            setReversed(obtainStyledAttributes.getBoolean(R.styleable.SlideToActView_slider_reversed, false));
+            this.isRotateIcon = obtainStyledAttributes.getBoolean(R.styleable.SlideToActView_rotate_icon, true);
+            this.isAnimateCompletion = obtainStyledAttributes.getBoolean(R.styleable.SlideToActView_animate_completion, true);
+            this.animDuration = obtainStyledAttributes.getInteger(R.styleable.SlideToActView_animation_duration, 300);
+            this.bumpVibration = obtainStyledAttributes.getInt(R.styleable.SlideToActView_bump_vibration, 0);
+            int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(R.styleable.SlideToActView_area_margin, obtainStyledAttributes.getResources().getDimensionPixelSize(R.dimen.slidetoact_default_area_margin));
             this.mOriginAreaMargin = dimensionPixelSize;
             this.mActualAreaMargin = dimensionPixelSize;
-            setSliderIcon(obtainStyledAttributes.getResourceId(R$styleable.SlideToActView_slider_icon, i2));
-            int i6 = R$styleable.SlideToActView_slider_icon_color;
+            setSliderIcon(obtainStyledAttributes.getResourceId(R.styleable.SlideToActView_slider_icon, i2));
+            int i6 = R.styleable.SlideToActView_slider_icon_color;
             if (obtainStyledAttributes.hasValue(i6)) {
                 color = obtainStyledAttributes.getColor(i6, color);
             } else if (obtainStyledAttributes.hasValue(i3)) {
                 color = color3;
             }
-            int resourceId = obtainStyledAttributes.getResourceId(R$styleable.SlideToActView_complete_icon, R$drawable.slidetoact_animated_ic_check);
-            int dimensionPixelSize2 = obtainStyledAttributes.getDimensionPixelSize(R$styleable.SlideToActView_icon_margin, obtainStyledAttributes.getResources().getDimensionPixelSize(R$dimen.slidetoact_default_icon_margin));
+            int resourceId = obtainStyledAttributes.getResourceId(R.styleable.SlideToActView_complete_icon, R.drawable.slidetoact_animated_ic_check);
+            int dimensionPixelSize2 = obtainStyledAttributes.getDimensionPixelSize(R.styleable.SlideToActView_icon_margin, obtainStyledAttributes.getResources().getDimensionPixelSize(R.dimen.slidetoact_default_icon_margin));
             this.mIconMargin = dimensionPixelSize2;
             this.mArrowMargin = dimensionPixelSize2;
             this.mTickMargin = dimensionPixelSize2;
-            this.mIsCompleted = obtainStyledAttributes.getBoolean(R$styleable.SlideToActView_state_complete, false);
+            this.mIsCompleted = obtainStyledAttributes.getBoolean(R.styleable.SlideToActView_state_complete, false);
             obtainStyledAttributes.recycle();
             int i7 = this.mActualAreaMargin;
             int i8 = this.mEffectivePosition;
