@@ -13,9 +13,7 @@ import android.widget.ExpandableListView;
 import com.d.e.PngBadCharsetException;
 import com.d.e.a.PngjBadCrcException;
 import com.d.e.e1;
-import com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor;
 import com.identy.InitializationListener;
-import com.karumi.dexter.BuildConfig;
 import java.lang.reflect.Method;
 
 /* loaded from: classes2.dex */
@@ -161,11 +159,11 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
             while (i6 < length) {
                 try {
                     Object[] objArr2 = {Integer.valueOf(iArr2[i6])};
-                    Object PngjBadSignature2 = PngjBadCrcException.PngjBadSignature(1618428774);
+                    Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1618428774);
                     if (PngjBadSignature2 == null) {
                         byte b = (byte) i4;
                         byte b2 = (byte) i5;
-                        PngjBadSignature2 = PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getPressedStateDuration() >> 16), TextUtils.getOffsetAfter(BuildConfig.FLAVOR, i5) + 31, 1429 - AndroidCharacter.getMirror('0'), -1667748131, false, $$e(b, b2, b2), new Class[]{cls});
+                        PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getPressedStateDuration() >> 16), TextUtils.getOffsetAfter("", i5) + 31, 1429 - AndroidCharacter.getMirror('0'), -1667748131, false, $$e(b, b2, b2), new Class[]{cls});
                     }
                     iArr3[i6] = ((Integer) ((Method) PngjBadSignature2).invoke(null, objArr2)).intValue();
                     i6++;
@@ -202,15 +200,15 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
                 $10 = i9 % 128;
                 if (i9 % 2 != 0) {
                     Object[] objArr3 = {Integer.valueOf(iArr5[i8])};
-                    Object PngjBadSignature3 = PngjBadCrcException.PngjBadSignature(i3);
+                    Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i3);
                     if (PngjBadSignature3 == null) {
                         char c3 = c2;
-                        char lastIndexOf = (char) ((-1) - TextUtils.lastIndexOf(BuildConfig.FLAVOR, c3, 0, 0));
+                        char lastIndexOf = (char) ((-1) - TextUtils.lastIndexOf("", c3, 0, 0));
                         int maxKeyCode = 31 - (KeyEvent.getMaxKeyCode() >> 16);
                         cArr = cArr2;
-                        int indexOf = TextUtils.indexOf(BuildConfig.FLAVOR, c3, 0) + 1382;
+                        int indexOf = TextUtils.indexOf("", c3, 0) + 1382;
                         byte b3 = (byte) 0;
-                        PngjBadSignature3 = PngjBadCrcException.PngjBadSignature(lastIndexOf, maxKeyCode, indexOf, -1667748131, false, $$e((byte) 57, b3, b3), new Class[]{cls});
+                        PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(lastIndexOf, maxKeyCode, indexOf, -1667748131, false, $$e((byte) 57, b3, b3), new Class[]{cls});
                     } else {
                         cArr = cArr2;
                     }
@@ -219,10 +217,10 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
                 } else {
                     cArr = cArr2;
                     Object[] objArr4 = {Integer.valueOf(iArr5[i8])};
-                    Object PngjBadSignature4 = PngjBadCrcException.PngjBadSignature(i3);
+                    Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i3);
                     if (PngjBadSignature4 == null) {
                         byte b4 = (byte) 0;
-                        PngjBadSignature4 = PngjBadCrcException.PngjBadSignature((char) TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), 31 - View.resolveSizeAndState(0, 0, 0), Color.rgb(0, 0, 0) + 16778597, -1667748131, false, $$e((byte) 57, b4, b4), new Class[]{cls});
+                        PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) TextUtils.indexOf("", "", 0), 31 - View.resolveSizeAndState(0, 0, 0), Color.rgb(0, 0, 0) + 16778597, -1667748131, false, $$e((byte) 57, b4, b4), new Class[]{cls});
                     }
                     iArr6[i8] = ((Integer) ((Method) PngjBadSignature4).invoke(null, objArr4)).intValue();
                     i8++;
@@ -265,12 +263,12 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
                 objArr5[i2] = pngBadCharsetException;
                 objArr5[c6] = Integer.valueOf(PngjBadCrcException2);
                 objArr5[0] = pngBadCharsetException;
-                Object PngjBadSignature5 = PngjBadCrcException.PngjBadSignature(-2104166611);
+                Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-2104166611);
                 if (PngjBadSignature5 == null) {
                     byte b5 = (byte) 0;
                     byte b6 = b5;
                     c = c6;
-                    PngjBadSignature5 = PngjBadCrcException.PngjBadSignature((char) ((AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) + 2785), 36 - Color.alpha(0), 785 - KeyEvent.keyCodeFromString(BuildConfig.FLAVOR), 2122029718, false, $$e(b5, b6, b6), new Class[]{Object.class, cls, Object.class, Object.class});
+                    PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) + 2785), 36 - Color.alpha(0), 785 - KeyEvent.keyCodeFromString(""), 2122029718, false, $$e(b5, b6, b6), new Class[]{Object.class, cls, Object.class, Object.class});
                 } else {
                     c = c6;
                 }
@@ -305,9 +303,9 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
             Object[] objArr6 = new Object[i19];
             objArr6[c9] = pngBadCharsetException;
             objArr6[0] = pngBadCharsetException;
-            Object PngjBadSignature6 = PngjBadCrcException.PngjBadSignature(-800662452);
+            Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-800662452);
             if (PngjBadSignature6 == null) {
-                PngjBadSignature6 = PngjBadCrcException.PngjBadSignature((char) (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)), 22 - (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 30, 749318647, false, "E", new Class[]{Object.class, Object.class});
+                PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (TypedValue.complexToFraction(0, 0.0f, 0.0f) > 0.0f ? 1 : (TypedValue.complexToFraction(0, 0.0f, 0.0f) == 0.0f ? 0 : -1)), 22 - (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), TextUtils.indexOf((CharSequence) "", '0', 0) + 30, 749318647, false, "E", new Class[]{Object.class, Object.class});
             }
             ((Method) PngjBadSignature6).invoke(null, objArr6);
             i2 = i19;
@@ -358,11 +356,11 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
                 if (i11 % 2 == 0) {
                     try {
                         Object[] objArr2 = {Integer.valueOf(cArr2[i9])};
-                        Object PngjBadSignature2 = PngjBadCrcException.PngjBadSignature(-259747866);
+                        Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
                         if (PngjBadSignature2 == null) {
                             bArr = bArr3;
                             byte b3 = (byte) i3;
-                            PngjBadSignature2 = PngjBadCrcException.PngjBadSignature((char) ExpandableListView.getPackedPositionType(0L), 35 - (TypedValue.complexToFloat(i3) > 0.0f ? 1 : (TypedValue.complexToFloat(i3) == 0.0f ? 0 : -1)), (SystemClock.elapsedRealtime() > 0L ? 1 : (SystemClock.elapsedRealtime() == 0L ? 0 : -1)) + 1312, 208396893, false, $$e((byte) ($$c[b2] - 1), b3, b3), new Class[]{cls});
+                            PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ExpandableListView.getPackedPositionType(0L), 35 - (TypedValue.complexToFloat(i3) > 0.0f ? 1 : (TypedValue.complexToFloat(i3) == 0.0f ? 0 : -1)), (SystemClock.elapsedRealtime() > 0L ? 1 : (SystemClock.elapsedRealtime() == 0L ? 0 : -1)) + 1312, 208396893, false, $$e((byte) ($$c[b2] - 1), b3, b3), new Class[]{cls});
                         } else {
                             bArr = bArr3;
                         }
@@ -381,10 +379,10 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
                 } else {
                     bArr = bArr3;
                     Object[] objArr3 = {Integer.valueOf(cArr2[i9])};
-                    Object PngjBadSignature3 = PngjBadCrcException.PngjBadSignature(-259747866);
+                    Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
                     if (PngjBadSignature3 == null) {
                         byte b4 = (byte) 0;
-                        PngjBadSignature3 = PngjBadCrcException.PngjBadSignature((char) ((-1) - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1))), (ViewConfiguration.getScrollBarSize() >> 8) + 35, (ViewConfiguration.getMaximumFlingVelocity() >> 16) + 1313, 208396893, false, $$e((byte) ($$c[b2] - 1), b4, b4), new Class[]{cls});
+                        PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1))), (ViewConfiguration.getScrollBarSize() >> 8) + 35, (ViewConfiguration.getMaximumFlingVelocity() >> 16) + 1313, 208396893, false, $$e((byte) ($$c[b2] - 1), b4, b4), new Class[]{cls});
                     }
                     cArr[i9] = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
                     i9++;
@@ -416,26 +414,26 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
                     Object[] objArr4 = new Object[i12];
                     objArr4[b6] = Integer.valueOf(c);
                     objArr4[0] = Integer.valueOf(c2);
-                    Object PngjBadSignature4 = PngjBadCrcException.PngjBadSignature(-655108508);
+                    Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
                     if (PngjBadSignature4 == null) {
                         byte b7 = (byte) 0;
-                        PngjBadSignature4 = PngjBadCrcException.PngjBadSignature((char) (View.combineMeasuredStates(0, 0) + 31882), TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0) + 32, 1250 - TextUtils.getTrimmedLength(BuildConfig.FLAVOR), 605862879, false, $$e((byte) ($$d & 243), b7, b7), new Class[]{cls, cls});
+                        PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (View.combineMeasuredStates(0, 0) + 31882), TextUtils.getOffsetBefore("", 0) + 32, 1250 - TextUtils.getTrimmedLength(""), 605862879, false, $$e((byte) ($$d & 243), b7, b7), new Class[]{cls, cls});
                     }
                     cArr4[i13] = ((Character) ((Method) PngjBadSignature4).invoke(null, objArr4)).charValue();
                 } else {
                     Object[] objArr5 = {Integer.valueOf(cArr3[i13]), Integer.valueOf(c)};
-                    Object PngjBadSignature5 = PngjBadCrcException.PngjBadSignature(269554740);
+                    Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(269554740);
                     if (PngjBadSignature5 == null) {
                         byte b8 = (byte) 0;
-                        PngjBadSignature5 = PngjBadCrcException.PngjBadSignature((char) ((-1) - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0)), 35 - (ViewConfiguration.getEdgeSlop() >> 16), (ViewConfiguration.getKeyRepeatTimeout() >> 16) + 1598, -318867057, false, $$e((byte) ($$c[1] + 1), b8, b8), new Class[]{cls, cls});
+                        PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((-1) - TextUtils.indexOf((CharSequence) "", '0', 0)), 35 - (ViewConfiguration.getEdgeSlop() >> 16), (ViewConfiguration.getKeyRepeatTimeout() >> 16) + 1598, -318867057, false, $$e((byte) ($$c[1] + 1), b8, b8), new Class[]{cls, cls});
                     }
                     cArr4[i13] = ((Character) ((Method) PngjBadSignature5).invoke(null, objArr5)).charValue();
                 }
                 c = cArr4[e1Var.PngjBadSignature];
                 Object[] objArr6 = {e1Var, e1Var};
-                Object PngjBadSignature6 = PngjBadCrcException.PngjBadSignature(1060060353);
+                Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1060060353);
                 if (PngjBadSignature6 == null) {
-                    PngjBadSignature6 = PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getSize(0), 35 - Color.alpha(0), (ViewConfiguration.getTapTimeout() >> 16) + ModuleDescriptor.MODULE_VERSION, -1010806406, false, "g", new Class[]{Object.class, Object.class});
+                    PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getSize(0), 35 - Color.alpha(0), (ViewConfiguration.getTapTimeout() >> 16) + 155, -1010806406, false, "g", new Class[]{Object.class, Object.class});
                 }
                 ((Method) PngjBadSignature6).invoke(null, objArr6);
                 b5 = 1;

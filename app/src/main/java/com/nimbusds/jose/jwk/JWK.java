@@ -56,12 +56,12 @@ public abstract class JWK implements Serializable {
         try {
             this.parsedX5c = X509CertChainUtils.parse(list);
             this.keyStore = keyStore;
-        } catch (ParseException e) {
+        } catch (Exception e) {
             throw new IllegalArgumentException("Invalid X.509 certificate chain \"x5c\": " + e.getMessage(), e);
         }
     }
 
-    public static JWK parse(Map<String, Object> map) {
+    public static JWK parse(Map<String, Object> map) throws ParseException {
         String string = JSONObjectUtils.getString(map, "kty");
         if (string == null) {
             throw new ParseException("Missing key type \"kty\" parameter", 0);
