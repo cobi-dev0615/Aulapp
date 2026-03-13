@@ -17,7 +17,7 @@ public final class KeyUse implements Serializable {
         this.identifier = str;
     }
 
-    public static KeyUse parse(String str) {
+    public static KeyUse parse(String str) throws ParseException {
         if (str == null) {
             return null;
         }
