@@ -511,7 +511,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
      */
     /* JADX WARN: Code restructure failed: missing block: B:293:0x25f7, code lost:
     
-        r0 = org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+        r0 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:294:0x25fb, code lost:
     
@@ -940,7 +940,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                         }
                         Object invoke2 = ((Method) PngjBadSignature6).invoke(null, objArr14);
                         int i37 = -View.resolveSizeAndState(0, 0, 0);
-                        int PngjBadCrcException2 = org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+                        int PngjBadCrcException2 = 0;
                         int i38 = i37 * (-494);
                         int i39 = (i38 ^ (-62738)) + ((i38 & (-62738)) << 1);
                         int i40 = -(-((~(i37 | 127)) * (-495)));
@@ -1346,7 +1346,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                             long j64 = ((502 * (j62 | (((j58 ^ j61) | j63) ^ j61))) + ((j60 * (((j62 | (j63 ^ j61)) | j58) ^ j61)) + (((((j62 | j63) ^ j61) | ((j58 | longValue9) ^ j61)) * j60) + j59))) - 1818400943;
                                             int elapsedCpuTime = (int) Process.getElapsedCpuTime();
                                             int i105 = !(((((int) (j64 >> 32)) & ((((~(elapsedCpuTime | (-38283267))) | 671088960) * 366) + ((((~(1745273289 | elapsedCpuTime)) | (-1112467596)) * (-366)) + 1490555906))) | (((int) j64) & ((((~((-192934024) | i70)) | 19546113) * 859) + ((((~((-1630160434) | i70)) | (~((-173387911) | i))) * 859) + ((((-1630160434) | i) * (-859)) + 187698066))))) == 0) ? 1 : 0;
-                                            int PngjBadCrcException3 = org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+                                            int PngjBadCrcException3 = 0;
                                             int i106 = (i104 * (-667)) + (i105 * (-1335));
                                             int i107 = ~i104;
                                             int i108 = ~((i105 ^ PngjBadCrcException3) | (i105 & PngjBadCrcException3));
@@ -1429,7 +1429,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                             int i145 = ((int) j73) & ((((~((-970147799) | i70)) | 156304768) * 983) + ((((~((-1887593088) | i70)) | (-970147799)) * (-983)) - 638537404));
                                             long j74 = (i144 & i145) | (i144 ^ i145);
                                             int i146 = (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1));
-                                            int PngjBadCrcException4 = org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+                                            int PngjBadCrcException4 = 0;
                                             int i147 = i146 * 868;
                                             int i148 = (i147 & 111104) + (i147 | 111104);
                                             int i149 = ~i146;
@@ -1480,7 +1480,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                             int c6 = ((int) j83) & a.c((~(b48 | 1724880472)) | (~(1132860413 | b48)), -1324, (((~b48) | 1116082776) * 1324) + 818885255, 1814010030);
                                             long j84 = (i167 & c6) | (i167 ^ c6);
                                             if (j74 > 0 && j84 > 0) {
-                                                org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+                                                0;
                                                 if (j84 - 3 < j74) {
                                                     z3 = true;
                                                     if (!z3) {
@@ -1635,7 +1635,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                             if (i10 != 0) {
                                                                 Object[] objArr98 = {new int[]{i10 ^ i}, new int[1], null, new int[]{i}};
                                                                 int c7 = a.c((~(i | (-553650177))) | 407449941, 446, (((~((-590383105) | i70)) | 36732928) * 446) - 820357313, -796983296);
-                                                                int PngjBadCrcException5 = org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+                                                                int PngjBadCrcException5 = 0;
                                                                 int i205 = ~c7;
                                                                 int i206 = ~((i205 & (-17)) | ((-17) ^ i205));
                                                                 int i207 = ~PngjBadCrcException5;
@@ -1756,7 +1756,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         if (i11 == 0) {
                                                                                             Object[] objArr109 = {new int[]{(i11 | i) & (~(i & i11))}, new int[1], null, new int[]{i}};
                                                                                             int i240 = (((~((-483565542) | i)) | (~(i70 | 551000432))) * 333) + (((~((-483565542) | i70)) | (~(i | 551000432))) * 333) + 2015548529;
-                                                                                            int PngjBadCrcException6 = org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+                                                                                            int PngjBadCrcException6 = 0;
                                                                                             int i241 = -(-(i240 * 185));
                                                                                             int i242 = ((-2928) ^ i241) + ((i241 & (-2928)) << 1);
                                                                                             int i243 = -(-(((i240 ^ (-17)) | (i240 & (-17))) * (-368)));
@@ -1944,8 +1944,8 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         }
                                                                                         i12 = 0;
                                                                                         if (i12 != 0) {
-                                                                                            org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
-                                                                                            org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+                                                                                            0;
+                                                                                            0;
                                                                                             Object[] objArr131 = {new int[]{(i12 & i70) | ((~i12) & i)}, new int[1], null, new int[]{i}};
                                                                                             int elapsedRealtime3 = (int) SystemClock.elapsedRealtime();
                                                                                             int i303 = (~(5192366 | elapsedRealtime3)) | 1034961920;
@@ -2288,7 +2288,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                             int i400 = (~(i & 280)) & (i | 280);
                                                                                                             int i401 = (((~((-274707093) | i70)) | 759858881) * 217) + (((~((-759858882) | i)) | 4883072) * 217) + ((((~((-759858882) | i70)) | (~((-274707093) | i))) * 217) - 1808570705);
                                                                                                             int i402 = (i401 & 16) + (i401 | 16);
-                                                                                                            int PngjBadCrcException7 = org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+                                                                                                            int PngjBadCrcException7 = 0;
                                                                                                             int i403 = i402 * (-464);
                                                                                                             int i404 = i2 * (-929);
                                                                                                             int i405 = (i403 ^ i404) + ((i403 & i404) << 1);
@@ -2488,7 +2488,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                             Object[] objArr154 = {new int[]{(i70 & 276) | (i & (-277))}, new int[1], null, new int[]{i}};
                                                                                             int a3 = a.a();
                                                                                             int A3 = a.A((~(a3 | 236838843)) | 797727130, 272, (((~((-236838844) | a3)) | 1148449) * (-272)) + ((((~((-235690395) | (~a3))) | (~(798875579 | a3))) * (-272)) - 1203192731), -16);
-                                                                                            int PngjBadCrcException8 = org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+                                                                                            int PngjBadCrcException8 = 0;
                                                                                             int i473 = A3 * 70;
                                                                                             int i474 = -(-(i2 * (-68)));
                                                                                             int i475 = (i473 ^ i474) + ((i473 & i474) << 1);
@@ -2655,8 +2655,8 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                     obj2 = invoke5;
                                 }
                                 if (obj2 != null) {
-                                    org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
-                                    org.camera.preview.PngjBadCrcException.onErrorResponse.PngjBadCrcException();
+                                    0;
+                                    0;
                                     Object[] objArr163 = {obj2, 42};
                                     Object PngjBadSignature40 = com.d.e.a.PngjBadCrcException.PngjBadSignature(989703296);
                                     if (PngjBadSignature40 == null) {
