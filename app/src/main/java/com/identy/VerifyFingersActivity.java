@@ -92,17 +92,17 @@ public class VerifyFingersActivity extends FingerActivity {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final void values() {
-            VerifyResult verifyResult;
+            VerifyResult verifyResult = null;
             int i;
             com.identy.e1 e1Var;
             com.identy.valueOf valueof;
-            VerifyResult verifyResult2;
-            IdentySdk identySdk;
-            FingerDetectionMode fingerDetectionMode;
-            int i2;
-            HashMap hashMap;
-            long j;
-            long j2;
+            VerifyResult verifyResult2 = null;
+            IdentySdk identySdk = null;
+            FingerDetectionMode fingerDetectionMode = null;
+            int i2 = 0;
+            HashMap hashMap = null;
+            long j = 0;
+            long j2 = 0;
             VerifyFingersActivity verifyFingersActivity = VerifyFingersActivity.this;
             int i3 = verifyFingersActivity.PngjBadCrcException + 1;
             verifyFingersActivity.PngjBadCrcException = i3;
@@ -585,9 +585,9 @@ public class VerifyFingersActivity extends FingerActivity {
     */
     public void attachBaseContext(Context context) {
         int i;
-        char c;
-        int intValue;
-        Object[] PngjBadSignature$1eba2e16;
+        char c = 0;
+        int intValue = 0;
+        Object[] PngjBadSignature$1eba2e16 = null;
         super.attachBaseContext(context);
         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature == null) {
@@ -601,7 +601,12 @@ public class VerifyFingersActivity extends FingerActivity {
             b(b2, b3, (byte) (b3 - 1), objArr);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(c2, indexOf, tapTimeout, -815159504, false, (String) objArr[0], null);
         }
-        long j = ((Field) PngjBadSignature).getLong(null);
+        long j;
+        try {
+            j = ((Field) PngjBadSignature).getLong(null);
+        } catch (Exception _e) {
+            throw new RuntimeException(_e);
+        }
         try {
             try {
                 if (j != -1) {
@@ -723,12 +728,16 @@ public class VerifyFingersActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
-        Object[] objArr12 = new Object[1];
-        c((short) (TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR) + 59), (Process.getElapsedCpuTime() > 0L ? 1 : (Process.getElapsedCpuTime() == 0L ? 0 : -1)) - 1774066382, View.resolveSize(0, 0) + 1801737947, (byte) (54 - (ViewConfiguration.getJumpTapTimeout() >> 16)), (-16) - (ViewConfiguration.getWindowTouchSlop() >> 8), objArr12);
-        Class<?> cls3 = Class.forName((String) objArr12[0]);
-        Object[] objArr13 = new Object[1];
-        c((short) (View.combineMeasuredStates(0, 0) - 98), (ViewConfiguration.getMaximumFlingVelocity() >> 16) - 1774066382, (ViewConfiguration.getKeyRepeatTimeout() >> 16) + 1801737962, (byte) ((-48) - (KeyEvent.getMaxKeyCode() >> 16)), (-16) - (ViewConfiguration.getScrollBarFadeDuration() >> 16), objArr13);
-        intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        try {
+            Object[] objArr12 = new Object[1];
+            c((short) (TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR) + 59), (Process.getElapsedCpuTime() > 0L ? 1 : (Process.getElapsedCpuTime() == 0L ? 0 : -1)) - 1774066382, View.resolveSize(0, 0) + 1801737947, (byte) (54 - (ViewConfiguration.getJumpTapTimeout() >> 16)), (-16) - (ViewConfiguration.getWindowTouchSlop() >> 8), objArr12);
+            Class<?> cls3 = Class.forName((String) objArr12[0]);
+            Object[] objArr13 = new Object[1];
+            c((short) (View.combineMeasuredStates(0, 0) - 98), (ViewConfiguration.getMaximumFlingVelocity() >> 16) - 1774066382, (ViewConfiguration.getKeyRepeatTimeout() >> 16) + 1801737962, (byte) ((-48) - (KeyEvent.getMaxKeyCode() >> 16)), (-16) - (ViewConfiguration.getScrollBarFadeDuration() >> 16), objArr13);
+            intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception _e) {
+            throw new RuntimeException(_e);
+        }
     }
 
     @Override // com.identy.FingerActivity
