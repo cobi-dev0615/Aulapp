@@ -41,7 +41,7 @@ public abstract class Header implements Serializable {
         this.parsedBase64URL = base64URL;
     }
 
-    public static Algorithm parseAlgorithm(Map<String, Object> map) {
+    public static Algorithm parseAlgorithm(Map<String, Object> map) throws ParseException {
         String string = JSONObjectUtils.getString(map, "alg");
         if (string == null) {
             throw new ParseException("Missing \"alg\" in header JSON object", 0);

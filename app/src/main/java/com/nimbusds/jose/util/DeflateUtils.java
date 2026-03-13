@@ -10,76 +10,53 @@ import java.util.zip.InflaterInputStream;
 /* loaded from: classes2.dex */
 public abstract class DeflateUtils {
     public static byte[] compress(byte[] bArr) {
-        Deflater deflater;
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        Deflater deflater = null;
         DeflaterOutputStream deflaterOutputStream = null;
         try {
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             deflater = new Deflater(8, true);
-            try {
-                DeflaterOutputStream deflaterOutputStream2 = new DeflaterOutputStream(byteArrayOutputStream, deflater);
-                try {
-                    deflaterOutputStream2.write(bArr);
-                    deflaterOutputStream2.close();
-                    deflater.end();
-                    return byteArrayOutputStream.toByteArray();
-                } catch (Throwable th) {
-                    th = th;
-                    deflaterOutputStream = deflaterOutputStream2;
-                    if (deflaterOutputStream != null) {
-                        deflaterOutputStream.close();
-                    }
-                    if (deflater != null) {
-                        deflater.end();
-                    }
-                    throw th;
-                }
-            } catch (Throwable th2) {
-                th = th2;
+            deflaterOutputStream = new DeflaterOutputStream(byteArrayOutputStream, deflater);
+            deflaterOutputStream.write(bArr);
+            deflaterOutputStream.close();
+            deflater.end();
+            return byteArrayOutputStream.toByteArray();
+        } catch (Throwable th) {
+            if (deflaterOutputStream != null) {
+                try { deflaterOutputStream.close(); } catch (Exception ignored) {}
             }
-        } catch (Throwable th3) {
-            th = th3;
-            deflater = null;
+            if (deflater != null) {
+                deflater.end();
+            }
+            throw th;
         }
     }
 
     public static byte[] decompress(byte[] bArr) {
-        Inflater inflater;
-        InflaterInputStream inflaterInputStream;
-        InflaterInputStream inflaterInputStream2 = null;
+        Inflater inflater = null;
+        InflaterInputStream inflaterInputStream = null;
         try {
             inflater = new Inflater(true);
-            try {
-                inflaterInputStream = new InflaterInputStream(new ByteArrayInputStream(bArr), inflater);
-            } catch (Throwable th) {
-                th = th;
-            }
-            try {
-                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                byte[] bArr2 = new byte[1024];
-                while (true) {
-                    int read = inflaterInputStream.read(bArr2);
-                    if (read <= 0) {
-                        byte[] byteArray = byteArrayOutputStream.toByteArray();
-                        inflaterInputStream.close();
-                        inflater.end();
-                        return byteArray;
-                    }
-                    byteArrayOutputStream.write(bArr2, 0, read);
-                }
-            } catch (Throwable th2) {
-                th = th2;
-                inflaterInputStream2 = inflaterInputStream;
-                if (inflaterInputStream2 != null) {
-                    inflaterInputStream2.close();
-                }
-                if (inflater != null) {
+            inflaterInputStream = new InflaterInputStream(new ByteArrayInputStream(bArr), inflater);
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            byte[] bArr2 = new byte[1024];
+            while (true) {
+                int read = inflaterInputStream.read(bArr2);
+                if (read <= 0) {
+                    byte[] byteArray = byteArrayOutputStream.toByteArray();
+                    inflaterInputStream.close();
                     inflater.end();
+                    return byteArray;
                 }
-                throw th;
+                byteArrayOutputStream.write(bArr2, 0, read);
             }
-        } catch (Throwable th3) {
-            th = th3;
-            inflater = null;
+        } catch (Throwable th) {
+            if (inflaterInputStream != null) {
+                try { inflaterInputStream.close(); } catch (Exception ignored) {}
+            }
+            if (inflater != null) {
+                inflater.end();
+            }
+            throw th;
         }
     }
 }

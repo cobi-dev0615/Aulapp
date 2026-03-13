@@ -5,6 +5,10 @@ import java.util.Date;
 
 /* loaded from: classes2.dex */
 public abstract class BeansMapper<T> extends JsonReaderI<T> {
+    public BeansMapper() {
+        super(null);
+    }
+
     public static JsonReaderI<Date> MAPPER_DATE = new ArraysMapper<Date>(null) { // from class: com.nimbusds.jose.shaded.json.writer.BeansMapper.1
         @Override // com.nimbusds.jose.shaded.json.writer.JsonReaderI
         public Date convert(Object obj) {

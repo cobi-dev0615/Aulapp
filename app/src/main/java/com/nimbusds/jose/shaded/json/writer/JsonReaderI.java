@@ -13,7 +13,7 @@ public abstract class JsonReaderI<T> {
 
     /* JADX WARN: Multi-variable type inference failed */
     public T convert(Object obj) {
-        return obj;
+        return (T) obj;
     }
 
     public abstract Object createArray();

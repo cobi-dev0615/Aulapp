@@ -214,7 +214,7 @@ public final class JWEHeader extends CommonSEHeader {
         return REGISTERED_PARAMETER_NAMES;
     }
 
-    public static JWEHeader parse(Map<String, Object> map, Base64URL base64URL) {
+    public static JWEHeader parse(Map<String, Object> map, Base64URL base64URL) throws ParseException {
         Algorithm parseAlgorithm = Header.parseAlgorithm(map);
         if (!(parseAlgorithm instanceof JWEAlgorithm)) {
             throw new ParseException("The algorithm \"alg\" header parameter must be for encryption", 0);
