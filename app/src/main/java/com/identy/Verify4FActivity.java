@@ -86,7 +86,7 @@ public class Verify4FActivity extends FingerActivity {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final void values() {
-            VerifyResult verifyResult;
+            VerifyResult verifyResult = null;
             int i;
             com.identy.e1 e1Var;
             com.identy.valueOf valueof;
@@ -579,9 +579,9 @@ public class Verify4FActivity extends FingerActivity {
     */
     public void attachBaseContext(Context context) {
         int i;
-        float f;
-        int intValue;
-        Object[] values$1eba2e16;
+        float f = 0.0f;
+        int intValue = 0;
+        Object[] values$1eba2e16 = null;
         super.attachBaseContext(context);
         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         int i2 = 0;
@@ -595,7 +595,12 @@ public class Verify4FActivity extends FingerActivity {
             b(b2, b2, b, objArr);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(c, myTid, i3, -815159504, false, (String) objArr[0], null);
         }
-        long j = ((Field) PngjBadSignature).getLong(null);
+        long j;
+        try {
+            j = ((Field) PngjBadSignature).getLong(null);
+        } catch (Exception _e) {
+            throw new RuntimeException(_e);
+        }
         try {
             try {
                 if (j != -1) {
@@ -718,12 +723,16 @@ public class Verify4FActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
-        Object[] objArr12 = new Object[1];
-        c(null, 127 - (ViewConfiguration.getMaximumFlingVelocity() >> 16), null, "\u008d\u008c\u008b\u0088\u008a\u0089\u0087\u0096\u0082\u0081\u008f\u0087\u0081\u0095\u0081\u0094", objArr12);
-        Class<?> cls3 = Class.forName((String) objArr12[0]);
-        Object[] objArr13 = new Object[1];
-        c(null, KeyEvent.keyCodeFromString(BuildConfig.FLAVOR) + 127, null, "\u008c\u0083\u0085\u008e\u0098\u0088\u0081\u0097\u008a\u008b\u0086\u008b\u0082\u008c\u0083\u0086", objArr13);
-        intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        try {
+            Object[] objArr12 = new Object[1];
+            c(null, 127 - (ViewConfiguration.getMaximumFlingVelocity() >> 16), null, "\u008d\u008c\u008b\u0088\u008a\u0089\u0087\u0096\u0082\u0081\u008f\u0087\u0081\u0095\u0081\u0094", objArr12);
+            Class<?> cls3 = Class.forName((String) objArr12[0]);
+            Object[] objArr13 = new Object[1];
+            c(null, KeyEvent.keyCodeFromString(BuildConfig.FLAVOR) + 127, null, "\u008c\u0083\u0085\u008e\u0098\u0088\u0081\u0097\u008a\u008b\u0086\u008b\u0082\u008c\u0083\u0086", objArr13);
+            intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception _e) {
+            throw new RuntimeException(_e);
+        }
     }
 
     @Override // com.identy.FingerActivity

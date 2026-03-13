@@ -86,16 +86,16 @@ public class VerifyThumbActivity extends FingerActivity {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final void values() {
-            VerifyResult verifyResult;
+            VerifyResult verifyResult = null;
             int i;
             com.identy.e1 e1Var;
-            VerifyResult verifyResult2;
-            IdentySdk identySdk;
-            FingerDetectionMode fingerDetectionMode;
-            int i2;
-            HashMap hashMap;
-            long j;
-            long j2;
+            VerifyResult verifyResult2 = null;
+            IdentySdk identySdk = null;
+            FingerDetectionMode fingerDetectionMode = null;
+            int i2 = 0;
+            HashMap hashMap = null;
+            long j = 0;
+            long j2 = 0;
             VerifyThumbActivity verifyThumbActivity = VerifyThumbActivity.this;
             int i3 = verifyThumbActivity.PngjBadCrcException + 1;
             verifyThumbActivity.PngjBadCrcException = i3;
@@ -654,11 +654,11 @@ public class VerifyThumbActivity extends FingerActivity {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void attachBaseContext(Context context) {
-        char c;
-        char c2;
+        char c = 0;
+        char c2 = 0;
         int i;
-        int intValue;
-        Object[] PngjBadCrcException$1eba2e16;
+        int intValue = 0;
+        Object[] PngjBadCrcException$1eba2e16 = null;
         super.attachBaseContext(context);
         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature == null) {
@@ -671,7 +671,12 @@ public class VerifyThumbActivity extends FingerActivity {
             b(b, b2, b2, objArr);
             PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(green, tapTimeout, edgeSlop, -815159504, false, (String) objArr[0], null);
         }
-        long j = ((Field) PngjBadSignature).getLong(null);
+        long j;
+        try {
+            j = ((Field) PngjBadSignature).getLong(null);
+        } catch (Exception _e) {
+            throw new RuntimeException(_e);
+        }
         try {
             try {
                 if (j != -1) {
@@ -790,12 +795,16 @@ public class VerifyThumbActivity extends FingerActivity {
 
             throw new RuntimeException(cause);
         }
-        Object[] objArr12 = new Object[1];
-        c("\r\u0016\r\u0003\u0014\u0010\u0003\u0017\u000b\u0017\u0003\u0002\n\u0001\t\u000b", 15 - MotionEvent.axisFromString(BuildConfig.FLAVOR), (byte) (13 - TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0)), objArr12);
-        Class<?> cls3 = Class.forName((String) objArr12[0]);
-        Object[] objArr13 = new Object[1];
-        c("\f\u0005\b\u0010\u0005\u000f\u0001\u0002\b\u0018\f\u0015\u0006\u000f\b\u0007", 16 - (ViewConfiguration.getDoubleTapTimeout() >> 16), (byte) (ExpandableListView.getPackedPositionGroup(0L) + 6), objArr13);
-        intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        try {
+            Object[] objArr12 = new Object[1];
+            c("\r\u0016\r\u0003\u0014\u0010\u0003\u0017\u000b\u0017\u0003\u0002\n\u0001\t\u000b", 15 - MotionEvent.axisFromString(BuildConfig.FLAVOR), (byte) (13 - TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0)), objArr12);
+            Class<?> cls3 = Class.forName((String) objArr12[0]);
+            Object[] objArr13 = new Object[1];
+            c("\f\u0005\b\u0010\u0005\u000f\u0001\u0002\b\u0018\f\u0015\u0006\u000f\b\u0007", 16 - (ViewConfiguration.getDoubleTapTimeout() >> 16), (byte) (ExpandableListView.getPackedPositionGroup(0L) + 6), objArr13);
+            intValue = ((Integer) cls3.getMethod((String) objArr13[0], Object.class).invoke(null, this)).intValue();
+        } catch (Exception _e) {
+            throw new RuntimeException(_e);
+        }
     }
 
     @Override // com.identy.FingerActivity
