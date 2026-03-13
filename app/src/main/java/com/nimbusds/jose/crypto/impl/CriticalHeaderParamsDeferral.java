@@ -10,7 +10,7 @@ import java.util.Set;
 public class CriticalHeaderParamsDeferral {
     private Set<String> deferredParams = Collections.EMPTY_SET;
 
-    public void ensureHeaderPasses(JWEHeader jWEHeader) {
+    public void ensureHeaderPasses(JWEHeader jWEHeader) throws JOSEException {
         if (!headerPasses(jWEHeader)) {
             throw new JOSEException("Unsupported critical header parameter(s)");
         }

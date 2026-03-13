@@ -2386,7 +2386,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                             PngjUnsupportedException = ((i437 & 109) + (i437 | 109)) % 128;
                                                                                             Object[] objArr146 = {new int[]{0}, new int[1], null, new int[]{i}};
                                                                                             int i438 = (272 | i) & (~(i & 272));
-                                                                                            int a2 = a.a();
+                                                                                            a2 = a.a();
                                                                                             int i439 = ~a2;
                                                                                             int c10 = a.c((~(a2 | (-784634741))) | (~(i439 | (-249931234))) | (-786806774), -370, (((~((-784634741) | i439)) | (~((-249931234) | a2))) * (-370)) + 1571886639, 939269748);
                                                                                             int i440 = -(-((c10 ^ 16) + ((c10 & 16) << 1)));
@@ -2692,7 +2692,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 }
             }
             Object[] objArr610 = new Object[i3];
-            objArr610[0] = new int[]{i20};
+            objArr610[0] = new int[]{(~(i & 271)) & (i | 271)};
             objArr610[1] = new int[1];
             objArr610[3] = new int[]{i};
             int i2010 = (~(i & 271)) & (i | 271);
@@ -2706,22 +2706,11 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
             ((int[]) objArr610[1])[0] = i2410 ^ (i2410 << 5);
             return objArr610;
         } catch (Throwable th9) {
-            cause = th9.getCause();
-            if (cause == null) {
+            Throwable cause9 = th9.getCause();
+            if (cause9 != null) {
+                throw new RuntimeException(cause9);
             }
-        }
-        cause = th9.getCause();
-        if (cause == null) {
-            throw new RuntimeException(cause);
-        }
-        throw new RuntimeException(th9);
-        i13 = 0;
-        if (i13 == 0) {
-        }
-        if (i14 == 0) {
-        }
-        i15 = 0;
-        if (!(i15 == 0)) {
+            throw new RuntimeException(th9);
         }
     }
 }
