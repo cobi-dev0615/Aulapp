@@ -21,7 +21,7 @@ public class DirectDecrypter extends DirectCryptoProvider implements JWEDecrypte
     }
 
     @Override // com.nimbusds.jose.JWEDecrypter
-    public byte[] decrypt(JWEHeader jWEHeader, Base64URL base64URL, Base64URL base64URL2, Base64URL base64URL3, Base64URL base64URL4) {
+    public byte[] decrypt(JWEHeader jWEHeader, Base64URL base64URL, Base64URL base64URL2, Base64URL base64URL3, Base64URL base64URL4) throws JOSEException {
         if (!this.promiscuousMode) {
             JWEAlgorithm algorithm = jWEHeader.getAlgorithm();
             if (!algorithm.equals(JWEAlgorithm.DIR)) {
