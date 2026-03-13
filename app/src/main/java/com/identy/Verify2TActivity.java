@@ -488,8 +488,8 @@ public class Verify2TActivity extends FingerActivity {
                 long timeInMillis = Calendar.getInstance().getTimeInMillis();
                 this.PngjBadCrcException = 0;
                 getFingerPrintQualityScore = (getScore + 29) % 128;
-                for (Map.Entry<Pair<Hand, Finger>, a> entry : hashMap.entrySet()) {
-                    a value = entry.getValue();
+                for (Map.Entry<Pair<Hand, Finger>, IdentyA> entry : hashMap.entrySet()) {
+                    IdentyA value = entry.getValue();
                     try {
                         new com.identy.b.PngjBadSignature();
                         pngjExceptionInternal = (PngjExceptionInternal) this.values.get(entry.getKey());
@@ -500,7 +500,7 @@ public class Verify2TActivity extends FingerActivity {
                         j = timeInMillis;
                     }
                     try {
-                        new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjBadSignature(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
+                        new com.identy.PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjBadSignature(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new IdentyA[0]);
                     } catch (Exception unused3) {
                         try {
                             this.onErrorResponse.valueOf();

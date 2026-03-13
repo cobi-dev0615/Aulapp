@@ -76,9 +76,12 @@ public class VerifyThumbActivity extends FingerActivity {
             this.PngjException = j;
         }
 
+        public void PngjException(boolean z) {
+        }
+
         /* JADX WARN: Removed duplicated region for block: B:35:0x0184  */
         /* JADX WARN: Removed duplicated region for block: B:52:0x01ca A[EXC_TOP_SPLITTER, SYNTHETIC] */
-        @Override // com.identy.b.PngjBadSignature.values
+        // @Override // com.identy.b.PngjBadSignature.values
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
@@ -612,15 +615,15 @@ public class VerifyThumbActivity extends FingerActivity {
             long timeInMillis = Calendar.getInstance().getTimeInMillis();
             try {
                 FingerMatchSecLevel fingerMatchSecLevel2 = IdentySdk.getInstance().PngjOutputException;
-                for (Map.Entry<Pair<Hand, Finger>, a> entry : hashMap.entrySet()) {
-                    a value = entry.getValue();
+                for (Map.Entry<Pair<Hand, Finger>, IdentyA> entry : hashMap.entrySet()) {
+                    IdentyA value = entry.getValue();
                     try {
                         new com.identy.b.PngjBadSignature();
                         PngjExceptionInternal pngjExceptionInternal = (PngjExceptionInternal) this.values.get(entry.getKey());
                         fingerMatchSecLevel = fingerMatchSecLevel2;
                         j = timeInMillis;
                         try {
-                            new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
+                            new com.identy.PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new IdentyA[0]);
                             getFingerPrintQualityScore = (getProcessingTime + 61) % 128;
                         } catch (Exception unused2) {
                             try {

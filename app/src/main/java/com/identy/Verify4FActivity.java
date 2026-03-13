@@ -78,7 +78,10 @@ public class Verify4FActivity extends FingerActivity {
         /* JADX WARN: Removed duplicated region for block: B:69:0x0205 A[Catch: Exception -> 0x0284, TryCatch #6 {Exception -> 0x0284, blocks: (B:53:0x01c4, B:55:0x01cc, B:56:0x01d0, B:58:0x01d6, B:59:0x01d8, B:61:0x01e0, B:65:0x01ec, B:67:0x01fb, B:69:0x0205, B:71:0x021e, B:73:0x0228, B:75:0x0230, B:76:0x0267, B:78:0x023e, B:80:0x0246, B:81:0x0254, B:82:0x026f, B:84:0x0279, B:86:0x027f), top: B:52:0x01c4 }] */
         /* JADX WARN: Removed duplicated region for block: B:71:0x021e A[Catch: Exception -> 0x0284, TryCatch #6 {Exception -> 0x0284, blocks: (B:53:0x01c4, B:55:0x01cc, B:56:0x01d0, B:58:0x01d6, B:59:0x01d8, B:61:0x01e0, B:65:0x01ec, B:67:0x01fb, B:69:0x0205, B:71:0x021e, B:73:0x0228, B:75:0x0230, B:76:0x0267, B:78:0x023e, B:80:0x0246, B:81:0x0254, B:82:0x026f, B:84:0x0279, B:86:0x027f), top: B:52:0x01c4 }] */
         /* JADX WARN: Removed duplicated region for block: B:88:0x01f4 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-        @Override // com.identy.b.PngjBadSignature.values
+        @Override // org.cameracontroller.PngjBadSignature.values
+        public void PngjException(boolean z) {
+        }
+
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
@@ -537,15 +540,15 @@ public class Verify4FActivity extends FingerActivity {
                 this.PngjBadCrcException = 0;
                 long timeInMillis = Calendar.getInstance().getTimeInMillis();
                 getNfiq1Score = (getOveralTimetaken + 99) % 128;
-                for (Map.Entry<Pair<Hand, Finger>, a> entry : hashMap.entrySet()) {
-                    a value = entry.getValue();
+                for (Map.Entry<Pair<Hand, Finger>, IdentyA> entry : hashMap.entrySet()) {
+                    IdentyA value = entry.getValue();
                     try {
                         new com.identy.b.PngjBadSignature();
                         PngjExceptionInternal pngjExceptionInternal = (PngjExceptionInternal) this.values.get(entry.getKey());
                         fingerMatchSecLevel = fingerMatchSecLevel2;
                         j = timeInMillis;
                         try {
-                            new PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new a[0]);
+                            new com.identy.PngjBadSignature.AsyncTaskC0018PngjBadSignature(new PngjException(hashMap, fingerMatchSecLevel2, timeInMillis, hashMap2), this, pngjExceptionInternal, value, com.identy.e1.PngjInputException).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new IdentyA[0]);
                         } catch (Exception unused2) {
                             try {
                                 this.onErrorResponse.valueOf();
