@@ -18,10 +18,10 @@ import java.lang.reflect.Method;
 
 /* loaded from: classes2.dex */
 public abstract class TouchLessIDSDK$PngjBadCrcException implements InitializationListener {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$d = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
+    private static byte[] $$c = null;
+    private static int $$d = 0;
     private static int $10;
     private static int $11;
     private static int PngjBadCrcException;
@@ -320,7 +320,7 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
         int i = $10 + 55;
         $11 = i % 128;
         int i2 = 2;
-        byte[] bArr2 = str2;
+        byte[] bArr2 = null;
         if (i % 2 == 0) {
             throw null;
         }

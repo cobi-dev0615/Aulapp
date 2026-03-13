@@ -25,7 +25,7 @@ public enum KeyOperation {
         this.identifier = str;
     }
 
-    public static Set<KeyOperation> parse(List<String> list) {
+    public static Set<KeyOperation> parse(List<String> list) throws ParseException {
         KeyOperation keyOperation;
         if (list == null) {
             return null;

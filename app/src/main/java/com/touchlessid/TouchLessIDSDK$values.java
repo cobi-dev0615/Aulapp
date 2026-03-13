@@ -31,10 +31,10 @@ import java.lang.reflect.Method;
 
 /* loaded from: classes2.dex */
 public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
-    private static final byte[] $$a = null;
-    private static final int $$b = 0;
-    private static final byte[] $$c = null;
-    private static final int $$d = 0;
+    private static byte[] $$a = null;
+    private static int $$b = 0;
+    private static byte[] $$c = null;
+    private static int $$d = 0;
     private static int $10;
     private static int $11;
     private static int PngjBadCrcException;
@@ -161,7 +161,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         int i3;
         char[] cArr2;
         String str3 = str2;
-        byte[] bArr = str3;
+        byte[] bArr = null;
         if (str3 != null) {
             bArr = str3.getBytes("ISO-8859-1");
         }
@@ -339,7 +339,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         String str2 = str;
         int i4 = $11 + 55;
         $10 = i4 % 128;
-        byte[] bArr3 = str2;
+        byte[] bArr3 = null;
         if (i4 % 2 != 0) {
             throw null;
         }
