@@ -2040,8 +2040,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         } catch (IOException unused7) {
                                                                                             bufferedInputStream4 = null;
                                                                                         } catch (Throwable th3) {
-                                                                                            th = th3;
-                                                                                            bufferedInputStream3 = null;
+                                                                                            throw new RuntimeException(th3);
                                                                                         }
                                                                                         loop7: while (true) {
                                                                                             try {
@@ -2064,15 +2063,13 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                 }
                                                                                             } catch (IOException unused8) {
                                                                                             } catch (Throwable th4) {
-                                                                                                th = th4;
-                                                                                                bufferedInputStream3 = bufferedInputStream4;
-                                                                                                if (bufferedInputStream3 != null) {
+                                                                                                if (bufferedInputStream4 != null) {
                                                                                                     try {
-                                                                                                        bufferedInputStream3.close();
+                                                                                                        bufferedInputStream4.close();
                                                                                                     } catch (Exception unused9) {
                                                                                                     }
                                                                                                 }
-                                                                                                throw new RuntimeException(th);
+                                                                                                throw new RuntimeException(th4);
                                                                                             }
                                                                                             try {
                                                                                                 bufferedInputStream4.close();
