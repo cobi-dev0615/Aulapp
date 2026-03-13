@@ -492,7 +492,7 @@ public class Verify2TActivity extends FingerActivity {
                     IdentyA value = entry.getValue();
                     try {
                         new com.identy.b.PngjBadSignature();
-                        pngjExceptionInternal = (PngjExceptionInternal) this.values.get(entry.getKey());
+                        pngjExceptionInternal = (com.identy.PngjExceptionInternal) this.values.get(entry.getKey());
                         fingerMatchSecLevel = fingerMatchSecLevel2;
                         j = timeInMillis;
                     } catch (Exception unused2) {
