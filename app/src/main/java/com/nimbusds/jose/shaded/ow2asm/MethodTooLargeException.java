@@ -1,6 +1,5 @@
 package com.nimbusds.jose.shaded.ow2asm;
 
-import co.ceduladigital.sdk.x5;
 
 /* loaded from: classes2.dex */
 public final class MethodTooLargeException extends IndexOutOfBoundsException {
@@ -14,9 +13,7 @@ public final class MethodTooLargeException extends IndexOutOfBoundsException {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public MethodTooLargeException(String str, String str2, String str3, int i) {
-        super(r0.toString());
-        StringBuilder r = x5.r("Method too large: ", str, ".", str2, " ");
-        r.append(str3);
+        super("Method too large: " + str + "." + str2 + " " + str3);
         this.className = str;
         this.methodName = str2;
         this.descriptor = str3;

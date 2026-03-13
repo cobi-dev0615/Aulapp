@@ -658,7 +658,7 @@ public class VerifyThumbActivity extends FingerActivity {
         char c2 = 0;
         int i;
         int intValue = 0;
-        Object[] PngjBadCrcException$1eba2e16 = null;
+        Object[] pngjResult = null;
         super.attachBaseContext(context);
         Object PngjBadSignature = com.d.e.a.PngjBadCrcException.PngjBadSignature(864471691);
         if (PngjBadSignature == null) {
@@ -703,18 +703,18 @@ public class VerifyThumbActivity extends FingerActivity {
                             PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(scrollBarSize, i2, absoluteGravity, -779023007, false, (String) objArr4[0], null);
                         }
                         Object[] objArr5 = (Object[]) ((Field) PngjBadSignature2).get(null);
-                        PngjBadCrcException$1eba2e16 = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
+                        pngjResult = new Object[]{new int[]{0}, new int[1], 0, new int[]{0}};
                         int i3 = ((int[]) objArr5[3])[0];
                         int i4 = ((int[]) objArr5[0])[0];
                         String[] strArr = (String[]) objArr5[2];
                         int c3 = defpackage.a.c((~(((int) Runtime.getRuntime().totalMemory()) | 1065997548)) | 31431574, 529, (((~((~0) | 1065997548)) | 5638930) * 529) - 1435847140, -1432701858);
                         int i5 = c3 ^ (c3 << 13);
                         int i6 = i5 ^ (i5 >>> 17);
-                        ((int[]) PngjBadCrcException$1eba2e16[1])[0] = i6 ^ (i6 << 5);
+                        ((int[]) pngjResult[1])[0] = i6 ^ (i6 << 5);
                         getFingerPrintQualityScore = (getProcessingTime + 37) % 128;
-                        if (((int[]) PngjBadCrcException$1eba2e16[3])[0] == ((int[]) PngjBadCrcException$1eba2e16[0])[0]) {
+                        if (((int[]) pngjResult[3])[0] == ((int[]) pngjResult[0])[0]) {
                             ArrayList arrayList = new ArrayList();
-                            String[] strArr2 = (String[]) PngjBadCrcException$1eba2e16[2];
+                            String[] strArr2 = (String[]) pngjResult[2];
                             if (strArr2 == null) {
                                 throw null;
                             }
@@ -724,10 +724,10 @@ public class VerifyThumbActivity extends FingerActivity {
                             throw null;
                         }
                         Object[] objArr6 = {new int[]{0}, new int[1], 0, new int[]{0}};
-                        int i7 = ((int[]) PngjBadCrcException$1eba2e16[1])[0];
-                        int i8 = ((int[]) PngjBadCrcException$1eba2e16[3])[0];
-                        int i9 = ((int[]) PngjBadCrcException$1eba2e16[0])[0];
-                        String[] strArr3 = (String[]) PngjBadCrcException$1eba2e16[2];
+                        int i7 = ((int[]) pngjResult[1])[0];
+                        int i8 = ((int[]) pngjResult[3])[0];
+                        int i9 = ((int[]) pngjResult[0])[0];
+                        String[] strArr3 = (String[]) pngjResult[2];
                         int uptimeMillis = (int) SystemClock.uptimeMillis();
                         int i10 = ~uptimeMillis;
                         int i11 = (~((-953366007) | i10)) | 939537568 | (~(81199967 | i10));
@@ -761,7 +761,7 @@ public class VerifyThumbActivity extends FingerActivity {
                     PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(size, pressedStateDuration, modifierMetaStateMask, -815159504, false, (String) objArr9[0], null);
                 }
                 ((Field) PngjBadSignature3).set(null, valueOf2);
-                if (((int[]) PngjBadCrcException$1eba2e16[3])[0] == ((int[]) PngjBadCrcException$1eba2e16[0])[0]) {
+                if (((int[]) pngjResult[3])[0] == ((int[]) pngjResult[0])[0]) {
                 }
             } catch (Exception unused) {
                 throw new RuntimeException();
@@ -771,7 +771,13 @@ public class VerifyThumbActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Color.red(0), Color.blue(0) + 24, KeyEvent.getDeadChar(0, 0) + 697, 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadCrcException$1eba2e16 = com.identy.isFoundMatchingTemplates.PngjBadSignature.PngjBadCrcException$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -1432701858);
+            try {
+                java.lang.reflect.Method m = com.identy.isFoundMatchingTemplates.PngjBadSignature.class.getDeclaredMethod("PngjBadCrcException$1eba2e16", int.class, Object.class, int.class);
+                m.setAccessible(true);
+                pngjResult = (Object[]) m.invoke(null, intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -1432701858);
+            } catch (Exception _reflectEx) {
+                pngjResult = null;
+            }
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i);
             if (PngjBadSignature5 == null) {
                 char red = (char) (Color.red(0) + 14830);
@@ -783,7 +789,7 @@ public class VerifyThumbActivity extends FingerActivity {
                 b(b7, (byte) (b8 - 1), b8, objArr11);
                 PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(red, indexOf, offsetAfter, -779023007, false, (String) objArr11[0], null);
             }
-            ((Field) PngjBadSignature5).set(null, PngjBadCrcException$1eba2e16);
+            ((Field) PngjBadSignature5).set(null, pngjResult);
         } catch (Throwable th) {
             Throwable cause = th.getCause();
 

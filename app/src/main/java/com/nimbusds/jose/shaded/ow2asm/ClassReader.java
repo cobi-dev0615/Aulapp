@@ -1,7 +1,5 @@
 package com.nimbusds.jose.shaded.ow2asm;
 
-import com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor;
-import com.karumi.dexter.R;
 import defpackage.a;
 import kotlin.UByte;
 import kotlin.io.ConstantsKt;
@@ -426,7 +424,7 @@ public class ClassReader {
                 case 112:
                 case 113:
                 case 114:
-                case R.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
+                case 115:
                 case 116:
                 case 117:
                 case 118:
@@ -507,7 +505,7 @@ public class ClassReader {
                     i28 += 3;
                 case 153:
                 case 154:
-                case ModuleDescriptor.MODULE_VERSION /* 155 */:
+                case 155:
                 case 156:
                 case 157:
                 case 158:
@@ -858,7 +856,7 @@ public class ClassReader {
                                         case 112:
                                         case 113:
                                         case 114:
-                                        case R.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
+                                        case 115:
                                         case 116:
                                         case 117:
                                         case 118:
@@ -1333,7 +1331,7 @@ public class ClassReader {
                                             i47 = i15;
                                         case 153:
                                         case 154:
-                                        case ModuleDescriptor.MODULE_VERSION /* 155 */:
+                                        case 155:
                                         case 156:
                                         case 157:
                                         case 158:

@@ -1,6 +1,5 @@
 package com.nimbusds.jose.shaded.ow2asm;
 
-import com.karumi.dexter.R;
 
 /* loaded from: classes2.dex */
 final class AnnotationWriter extends AnnotationVisitor {
@@ -28,7 +27,7 @@ final class AnnotationWriter extends AnnotationVisitor {
     public static int computeParameterAnnotationsSize(String str, AnnotationWriter[] annotationWriterArr, int i) {
         int i2 = (i * 2) + 7;
         for (int i3 = 0; i3 < i; i3++) {
-            i2 += annotationWriterArr[i3] == null ? 0 : r3.computeAnnotationsSize(str) - 8;
+            i2 += annotationWriterArr[i3] == null ? 0 : annotationWriterArr[i3].computeAnnotationsSize(str) - 8;
         }
         return i2;
     }
@@ -42,7 +41,7 @@ final class AnnotationWriter extends AnnotationVisitor {
     public static void putParameterAnnotations(int i, AnnotationWriter[] annotationWriterArr, int i2, ByteVector byteVector) {
         int i3 = (i2 * 2) + 1;
         for (int i4 = 0; i4 < i2; i4++) {
-            i3 += annotationWriterArr[i4] == null ? 0 : r4.computeAnnotationsSize(null) - 8;
+            i3 += annotationWriterArr[i4] == null ? 0 : annotationWriterArr[i4].computeAnnotationsSize(null) - 8;
         }
         byteVector.putShort(i);
         byteVector.putInt(i3);
@@ -102,7 +101,7 @@ final class AnnotationWriter extends AnnotationVisitor {
             this.annotation.putShort(this.symbolTable.addConstantUtf8(str));
         }
         if (obj instanceof String) {
-            this.annotation.put12(R.styleable.AppCompatTheme_tooltipFrameBackground, this.symbolTable.addConstantUtf8((String) obj));
+            this.annotation.put12(115, this.symbolTable.addConstantUtf8((String) obj));
             return;
         }
         if (obj instanceof Byte) {

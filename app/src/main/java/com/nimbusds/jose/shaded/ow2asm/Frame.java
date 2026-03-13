@@ -1,8 +1,5 @@
 package com.nimbusds.jose.shaded.ow2asm;
 
-import com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor;
-import com.karumi.dexter.BuildConfig;
-import com.karumi.dexter.R;
 
 /* loaded from: classes2.dex */
 class Frame {
@@ -38,7 +35,7 @@ class Frame {
     }
 
     public static int getAbstractTypeFromApiFormat(SymbolTable symbolTable, Object obj) {
-        return obj instanceof Integer ? ((Integer) obj).intValue() | 4194304 : obj instanceof String ? getAbstractTypeFromDescriptor(symbolTable, Type.getObjectType((String) obj).getDescriptor(), 0) : symbolTable.addUninitializedType(BuildConfig.FLAVOR, ((Label) obj).bytecodeOffset) | 12582912;
+        return obj instanceof Integer ? ((Integer) obj).intValue() | 4194304 : obj instanceof String ? getAbstractTypeFromDescriptor(symbolTable, Type.getObjectType((String) obj).getDescriptor(), 0) : symbolTable.addUninitializedType("", ((Label) obj).bytecodeOffset) | 12582912;
     }
 
     private static int getAbstractTypeFromDescriptor(SymbolTable symbolTable, String str, int i) {
@@ -543,7 +540,7 @@ class Frame {
                                     case 87:
                                     case 153:
                                     case 154:
-                                    case ModuleDescriptor.MODULE_VERSION /* 155 */:
+                                    case 155:
                                     case 156:
                                     case 157:
                                     case 158:
@@ -666,7 +663,7 @@ class Frame {
                                     case 103:
                                     case 107:
                                     case 111:
-                                    case R.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
+                                    case 115:
                                         pop(4);
                                         push(4194307);
                                         push(4194304);
