@@ -4,6 +4,7 @@ import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.JWEAlgorithm;
 import com.nimbusds.jose.JWEDecrypter;
 import com.nimbusds.jose.JWEHeader;
+import com.nimbusds.jose.KeyLengthException;
 import com.nimbusds.jose.crypto.impl.AlgorithmSupportMessage;
 import com.nimbusds.jose.crypto.impl.ContentCryptoProvider;
 import com.nimbusds.jose.crypto.impl.CriticalHeaderParamsDeferral;
@@ -16,7 +17,7 @@ public class DirectDecrypter extends DirectCryptoProvider implements JWEDecrypte
     private final CriticalHeaderParamsDeferral critPolicy;
     private final boolean promiscuousMode;
 
-    public DirectDecrypter(SecretKey secretKey) {
+    public DirectDecrypter(SecretKey secretKey) throws KeyLengthException {
         this(secretKey, false);
     }
 
@@ -41,7 +42,7 @@ public class DirectDecrypter extends DirectCryptoProvider implements JWEDecrypte
         return ContentCryptoProvider.decrypt(jWEHeader, null, base64URL2, base64URL3, base64URL4, getKey(), getJCAContext());
     }
 
-    public DirectDecrypter(SecretKey secretKey, boolean z) {
+    public DirectDecrypter(SecretKey secretKey, boolean z) throws KeyLengthException {
         super(secretKey);
         this.critPolicy = new CriticalHeaderParamsDeferral();
         this.promiscuousMode = z;

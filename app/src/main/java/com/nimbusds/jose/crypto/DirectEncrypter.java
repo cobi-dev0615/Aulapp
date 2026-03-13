@@ -15,12 +15,12 @@ import javax.crypto.SecretKey;
 
 /* loaded from: classes2.dex */
 public class DirectEncrypter extends DirectCryptoProvider implements JWEEncrypter {
-    public DirectEncrypter(SecretKey secretKey) {
+    public DirectEncrypter(SecretKey secretKey) throws KeyLengthException {
         super(secretKey);
     }
 
     @Override // com.nimbusds.jose.JWEEncrypter
-    public JWECryptoParts encrypt(JWEHeader jWEHeader, byte[] bArr) {
+    public JWECryptoParts encrypt(JWEHeader jWEHeader, byte[] bArr) throws JOSEException {
         JWEAlgorithm algorithm = jWEHeader.getAlgorithm();
         if (!algorithm.equals(JWEAlgorithm.DIR)) {
             throw new JOSEException(AlgorithmSupportMessage.unsupportedJWEAlgorithm(algorithm, DirectCryptoProvider.SUPPORTED_ALGORITHMS));

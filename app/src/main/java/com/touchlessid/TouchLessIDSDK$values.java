@@ -1910,7 +1910,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                     StringBuilder sb = new StringBuilder();
                                                                                                     sb.append(strArr7[i298]);
                                                                                                     Object[] objArr128 = new Object[1];
-                                                                                                    c("\u0001\u0000", i297, new int[]{114, 2, i297, 1}, objArr128);
+                                                                                                    c("\u0001\u0000", i297 != 0, new int[]{114, 2, i297, 1}, objArr128);
                                                                                                     sb.append((String) objArr128[i297]);
                                                                                                     Object[] objArr129 = {sb.toString()};
                                                                                                     Object PngjBadSignature27 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
@@ -1997,15 +1997,13 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                         }
                                                                                                     }
                                                                                                 } catch (Throwable th2) {
-                                                                                                    th = th2;
-                                                                                                    bufferedInputStream = bufferedInputStream2;
-                                                                                                    if (bufferedInputStream != null) {
+                                                                                                    if (bufferedInputStream2 != null) {
                                                                                                         try {
-                                                                                                            bufferedInputStream.close();
+                                                                                                            bufferedInputStream2.close();
                                                                                                         } catch (Exception unused4) {
                                                                                                         }
                                                                                                     }
-                                                                                                    throw new RuntimeException(th);
+                                                                                                    throw new RuntimeException(th2);
                                                                                                 }
                                                                                             } catch (IOException unused5) {
                                                                                             }

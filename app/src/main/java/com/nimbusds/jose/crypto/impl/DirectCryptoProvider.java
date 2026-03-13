@@ -22,12 +22,12 @@ public abstract class DirectCryptoProvider extends BaseJWEProvider {
         SUPPORTED_ALGORITHMS = Collections.unmodifiableSet(linkedHashSet);
     }
 
-    public DirectCryptoProvider(SecretKey secretKey) {
+    public DirectCryptoProvider(SecretKey secretKey) throws KeyLengthException {
         super(SUPPORTED_ALGORITHMS, getCompatibleEncryptionMethods(ByteUtils.bitLength(secretKey.getEncoded())));
         this.cek = secretKey;
     }
 
-    private static Set<EncryptionMethod> getCompatibleEncryptionMethods(int i) {
+    private static Set<EncryptionMethod> getCompatibleEncryptionMethods(int i) throws KeyLengthException {
         Set<EncryptionMethod> set = ContentCryptoProvider.COMPATIBLE_ENCRYPTION_METHODS.get(Integer.valueOf(i));
         if (set != null) {
             return set;
