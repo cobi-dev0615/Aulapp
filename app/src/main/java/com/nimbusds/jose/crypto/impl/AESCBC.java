@@ -17,7 +17,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 /* loaded from: classes2.dex */
 public abstract class AESCBC {
-    private static Cipher createAESCBCCipher(SecretKey secretKey, boolean z, byte[] bArr, Provider provider) {
+    private static Cipher createAESCBCCipher(SecretKey secretKey, boolean z, byte[] bArr, Provider provider) throws JOSEException {
         try {
             Cipher cipherHelper = CipherHelper.getInstance("AES/CBC/PKCS5Padding", provider);
             SecretKeySpec secretKeySpec = new SecretKeySpec(secretKey.getEncoded(), "AES");
@@ -33,7 +33,7 @@ public abstract class AESCBC {
         }
     }
 
-    public static byte[] decrypt(SecretKey secretKey, byte[] bArr, byte[] bArr2, Provider provider) {
+    public static byte[] decrypt(SecretKey secretKey, byte[] bArr, byte[] bArr2, Provider provider) throws JOSEException {
         try {
             return createAESCBCCipher(secretKey, false, bArr, provider).doFinal(bArr2);
         } catch (Exception e) {
@@ -41,7 +41,7 @@ public abstract class AESCBC {
         }
     }
 
-    public static byte[] decryptAuthenticated(SecretKey secretKey, byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4, Provider provider, Provider provider2) {
+    public static byte[] decryptAuthenticated(SecretKey secretKey, byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4, Provider provider, Provider provider2) throws JOSEException {
         CompositeKey compositeKey = new CompositeKey(secretKey);
         byte[] computeLength = AAD.computeLength(bArr3);
         if (ConstantTimeUtils.areEqual(Arrays.copyOf(HMAC.compute(compositeKey.getMACKey(), ByteBuffer.allocate(bArr3.length + bArr.length + bArr2.length + computeLength.length).put(bArr3).put(bArr).put(bArr2).put(computeLength).array(), provider2), compositeKey.getTruncatedMACByteLength()), bArr4)) {
@@ -50,7 +50,7 @@ public abstract class AESCBC {
         throw new JOSEException("MAC check failed");
     }
 
-    public static byte[] decryptWithConcatKDF(JWEHeader jWEHeader, SecretKey secretKey, Base64URL base64URL, Base64URL base64URL2, Base64URL base64URL3, Base64URL base64URL4, Provider provider, Provider provider2) {
+    public static byte[] decryptWithConcatKDF(JWEHeader jWEHeader, SecretKey secretKey, Base64URL base64URL, Base64URL base64URL2, Base64URL base64URL3, Base64URL base64URL4, Provider provider, Provider provider2) throws JOSEException {
         byte[] decode = jWEHeader.getCustomParam("epu") instanceof String ? new Base64URL((String) jWEHeader.getCustomParam("epu")).decode() : null;
         byte[] decode2 = jWEHeader.getCustomParam("epv") instanceof String ? new Base64URL((String) jWEHeader.getCustomParam("epv")).decode() : null;
         if (ConstantTimeUtils.areEqual(base64URL4.decode(), HMAC.compute(LegacyConcatKDF.generateCIK(secretKey, jWEHeader.getEncryptionMethod(), decode, decode2), (jWEHeader.toBase64URL().toString() + "." + base64URL.toString() + "." + base64URL2.toString() + "." + base64URL3.toString()).getBytes(StandardCharset.UTF_8), provider2))) {
@@ -59,7 +59,7 @@ public abstract class AESCBC {
         throw new JOSEException("MAC check failed");
     }
 
-    public static byte[] encrypt(SecretKey secretKey, byte[] bArr, byte[] bArr2, Provider provider) {
+    public static byte[] encrypt(SecretKey secretKey, byte[] bArr, byte[] bArr2, Provider provider) throws JOSEException {
         try {
             return createAESCBCCipher(secretKey, true, bArr, provider).doFinal(bArr2);
         } catch (Exception e) {
@@ -67,14 +67,14 @@ public abstract class AESCBC {
         }
     }
 
-    public static AuthenticatedCipherText encryptAuthenticated(SecretKey secretKey, byte[] bArr, byte[] bArr2, byte[] bArr3, Provider provider, Provider provider2) {
+    public static AuthenticatedCipherText encryptAuthenticated(SecretKey secretKey, byte[] bArr, byte[] bArr2, byte[] bArr3, Provider provider, Provider provider2) throws JOSEException {
         CompositeKey compositeKey = new CompositeKey(secretKey);
         byte[] encrypt = encrypt(compositeKey.getAESKey(), bArr, bArr2, provider);
         byte[] computeLength = AAD.computeLength(bArr3);
         return new AuthenticatedCipherText(encrypt, Arrays.copyOf(HMAC.compute(compositeKey.getMACKey(), ByteBuffer.allocate(bArr3.length + bArr.length + encrypt.length + computeLength.length).put(bArr3).put(bArr).put(encrypt).put(computeLength).array(), provider2), compositeKey.getTruncatedMACByteLength()));
     }
 
-    public static AuthenticatedCipherText encryptWithConcatKDF(JWEHeader jWEHeader, SecretKey secretKey, Base64URL base64URL, byte[] bArr, byte[] bArr2, Provider provider, Provider provider2) {
+    public static AuthenticatedCipherText encryptWithConcatKDF(JWEHeader jWEHeader, SecretKey secretKey, Base64URL base64URL, byte[] bArr, byte[] bArr2, Provider provider, Provider provider2) throws JOSEException {
         byte[] decode = jWEHeader.getCustomParam("epu") instanceof String ? new Base64URL((String) jWEHeader.getCustomParam("epu")).decode() : null;
         byte[] decode2 = jWEHeader.getCustomParam("epv") instanceof String ? new Base64URL((String) jWEHeader.getCustomParam("epv")).decode() : null;
         byte[] encrypt = encrypt(LegacyConcatKDF.generateCEK(secretKey, jWEHeader.getEncryptionMethod(), decode, decode2), bArr, bArr2, provider);

@@ -47,7 +47,7 @@ public abstract /* synthetic */ class a {
     }
 
     public static int e(UInt uInt, int i) {
-        return UInt.m130constructorimpl(uInt.hashCode() + i);
+        return uInt.hashCode() + i;
     }
 
     public static int f(IntRange intRange, int i) {
