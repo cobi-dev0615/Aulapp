@@ -67,7 +67,7 @@ public final class SlideToActIconUtil {
         tickAnimator2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: co.ceduladigital.sdk.o8
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                SlideToActIconUtil.m20createIconAnimator$lambda1(Ref.BooleanRef.this, icon, view, valueAnimator);
+                SlideToActIconUtil.m20createIconAnimator$lambda1(booleanRef, icon, view, valueAnimator);
             }
         });
         Intrinsics.checkNotNullExpressionValue(tickAnimator2, "tickAnimator");

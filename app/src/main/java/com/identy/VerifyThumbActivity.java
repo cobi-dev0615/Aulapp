@@ -766,7 +766,7 @@ public class VerifyThumbActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Color.red(0), Color.blue(0) + 24, KeyEvent.getDeadChar(0, 0) + 697, 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            PngjBadCrcException$1eba2e16 = PngjBadCrcException.valueOf.PngjBadSignature.PngjBadCrcException$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -1432701858);
+            PngjBadCrcException$1eba2e16 = com.identy.isFoundMatchingTemplates.PngjBadSignature.PngjBadCrcException$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -1432701858);
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i);
             if (PngjBadSignature5 == null) {
                 char red = (char) (Color.red(0) + 14830);

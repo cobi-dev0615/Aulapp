@@ -1,7 +1,5 @@
 package com.nimbusds.jose;
 
-import co.ceduladigital.sdk.q;
-import com.karumi.dexter.BuildConfig;
 
 /* loaded from: classes2.dex */
 public class KeyLengthException extends KeyException {
@@ -14,28 +12,22 @@ public class KeyLengthException extends KeyException {
         this.alg = null;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
     public KeyLengthException(int i, Algorithm algorithm) {
-        super(r0.toString());
-        String str;
-        String str2;
-        StringBuilder sb = new StringBuilder();
-        if (i > 0) {
-            str = q.f(i, "The expected key length is ", " bits");
-        } else {
-            str = "Unexpected key length";
-        }
-        sb.append(str);
-        if (algorithm != null) {
-            str2 = " (for " + algorithm + " algorithm)";
-        } else {
-            str2 = BuildConfig.FLAVOR;
-        }
-        sb.append(str2);
+        super(buildMessage(i, algorithm));
         this.expectedLength = i;
         this.alg = algorithm;
+    }
+
+    private static String buildMessage(int i, Algorithm algorithm) {
+        StringBuilder sb = new StringBuilder();
+        if (i > 0) {
+            sb.append("The expected key length is ").append(i).append(" bits");
+        } else {
+            sb.append("Unexpected key length");
+        }
+        if (algorithm != null) {
+            sb.append(" (for ").append(algorithm).append(" algorithm)");
+        }
+        return sb.toString();
     }
 }
