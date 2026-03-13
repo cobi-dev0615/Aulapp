@@ -456,7 +456,7 @@ public class Verify2TActivity extends FingerActivity {
     public void PngjException(HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
         FingerMatchSecLevel fingerMatchSecLevel;
         long j;
-        PngjExceptionInternal pngjExceptionInternal;
+        com.identy.PngjExceptionInternal pngjExceptionInternal;
         int i = getScore + 79;
         getFingerPrintQualityScore = i % 128;
         if (i % 2 != 0) {

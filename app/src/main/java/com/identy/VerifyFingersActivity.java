@@ -548,7 +548,7 @@ public class VerifyFingersActivity extends FingerActivity {
                     IdentyA value = entry.getValue();
                     try {
                         new com.identy.b.PngjBadSignature();
-                        PngjExceptionInternal pngjExceptionInternal = (PngjExceptionInternal) this.values.get(entry.getKey());
+                        com.identy.PngjExceptionInternal pngjExceptionInternal = (com.identy.PngjExceptionInternal) this.values.get(entry.getKey());
                         fingerMatchSecLevel = fingerMatchSecLevel2;
                         j = timeInMillis;
                         try {
