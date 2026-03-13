@@ -1480,7 +1480,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                             int c6 = ((int) j83) & a.c((~(b48 | 1724880472)) | (~(1132860413 | b48)), -1324, (((~b48) | 1116082776) * 1324) + 818885255, 1814010030);
                                             long j84 = (i167 & c6) | (i167 ^ c6);
                                             if (j74 > 0 && j84 > 0) {
-                                                0;
+                                                /* nop */
                                                 if (j84 - 3 < j74) {
                                                     z3 = true;
                                                     if (!z3) {
@@ -1944,8 +1944,8 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         }
                                                                                         i12 = 0;
                                                                                         if (i12 != 0) {
-                                                                                            0;
-                                                                                            0;
+                                                                                            /* nop */
+                                                                                            /* nop */
                                                                                             Object[] objArr131 = {new int[]{(i12 & i70) | ((~i12) & i)}, new int[1], null, new int[]{i}};
                                                                                             int elapsedRealtime3 = (int) SystemClock.elapsedRealtime();
                                                                                             int i303 = (~(5192366 | elapsedRealtime3)) | 1034961920;
@@ -2655,8 +2655,8 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                     obj2 = invoke5;
                                 }
                                 if (obj2 != null) {
-                                    0;
-                                    0;
+                                    /* nop */
+                                    /* nop */
                                     Object[] objArr163 = {obj2, 42};
                                     Object PngjBadSignature40 = com.d.e.a.PngjBadCrcException.PngjBadSignature(989703296);
                                     if (PngjBadSignature40 == null) {
