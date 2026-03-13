@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- SlideToActView theme attribute -->
+    <attr name="slideToActViewStyle" format="reference" />
+
     <!-- SlideToActView custom attributes -->
     <declare-styleable name="SlideToActView">
+        <attr name="animate_completion" format="boolean" />
+        <attr name="animation_duration" format="integer" />
         <attr name="area_margin" format="dimension" />
+        <attr name="border_radius" format="dimension" />
+        <attr name="bump_vibration" format="integer" />
+        <attr name="complete_icon" format="reference" />
+        <attr name="icon_margin" format="dimension" />
         <attr name="inner_color" format="color|reference" />
         <attr name="outer_color" format="color|reference" />
+        <attr name="rotate_icon" format="boolean" />
+        <attr name="slider_height" format="dimension" />
+        <attr name="slider_icon" format="reference" />
+        <attr name="slider_icon_color" format="color|reference" />
         <attr name="slider_locked" format="boolean" />
+        <attr name="slider_reversed" format="boolean" />
+        <attr name="state_complete" format="boolean" />
         <attr name="text" format="string" />
-        <attr name="text_size" format="dimension" />
         <attr name="text_appearance" format="reference" />
         <attr name="text_color" format="color|reference" />
-        <attr name="slider_height" format="dimension" />
-        <attr name="border_radius" format="dimension" />
-        <attr name="text_style" format="string" />
-        <attr name="slider_icon_color" format="color|reference" />
-        <attr name="animation_duration" format="integer" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_style" format="integer" />
+    </declare-styleable>
+
+    <!-- SlideToActView theme styleable -->
+    <declare-styleable name="SlideToActViewTheme">
+        <attr name="slideToActViewStyle" />
+    </declare-styleable>
+
+    <!-- GifView custom attributes -->
+    <declare-styleable name="GifView">
+        <attr name="freezesAnimation" format="boolean" />
+        <attr name="loopCount" format="integer" />
     </declare-styleable>
 
     <!-- Chronometer custom attributes -->
