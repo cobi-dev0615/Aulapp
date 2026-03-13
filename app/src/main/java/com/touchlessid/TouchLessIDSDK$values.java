@@ -20,10 +20,7 @@ import android.widget.ExpandableListView;
 import com.d.e.PngjExceptionInternal;
 import com.d.e.a.PngjBadCrcException;
 import com.d.e.e1;
-import com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor;
 import com.identy.IdentyResponseListener;
-import com.karumi.dexter.BuildConfig;
-import com.karumi.dexter.R;
 import defpackage.a;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -191,9 +188,9 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
             while (i5 < length) {
                 try {
                     Object[] objArr2 = {Integer.valueOf(cArr4[i5])};
-                    Object PngjBadSignature2 = PngjBadCrcException.PngjBadSignature(358189806);
+                    Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(358189806);
                     if (PngjBadSignature2 == null) {
-                        PngjBadSignature2 = PngjBadCrcException.PngjBadSignature((char) (27093 - (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1))), 37 - (ViewConfiguration.getMinimumFlingVelocity() >> 16), TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0') + 119, -373889195, false, "b", new Class[]{cls});
+                        PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (27093 - (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1))), 37 - (ViewConfiguration.getMinimumFlingVelocity() >> 16), TextUtils.indexOf((CharSequence) "", '0') + 119, -373889195, false, "b", new Class[]{cls});
                     }
                     cArr5[i5] = ((Character) ((Method) PngjBadSignature2).invoke(null, objArr2)).charValue();
                     i5++;
@@ -213,12 +210,12 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
             cArr4 = cArr5;
         }
         Object[] objArr3 = {Integer.valueOf(PngjBadCrcException)};
-        Object PngjBadSignature3 = PngjBadCrcException.PngjBadSignature(1639226071);
+        Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1639226071);
         if (PngjBadSignature3 == null) {
             byte b = (byte) 0;
             byte b2 = (byte) (b + 1);
             i2 = 2;
-            PngjBadSignature3 = PngjBadCrcException.PngjBadSignature((char) (KeyEvent.getDeadChar(0, 0) + 61713), (ViewConfiguration.getEdgeSlop() >> 16) + 34, Process.getGidForName(BuildConfig.FLAVOR) + 279, -1654917268, false, $$e(b, b2, (byte) (b2 - 1)), new Class[]{cls});
+            PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (KeyEvent.getDeadChar(0, 0) + 61713), (ViewConfiguration.getEdgeSlop() >> 16) + 34, Process.getGidForName("") + 279, -1654917268, false, $$e(b, b2, (byte) (b2 - 1)), new Class[]{cls});
         } else {
             i2 = 2;
         }
@@ -249,11 +246,11 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 Object[] objArr4 = new Object[i2];
                 objArr4[1] = pngjExceptionInternal;
                 objArr4[0] = pngjExceptionInternal;
-                Object PngjBadSignature4 = PngjBadCrcException.PngjBadSignature(-528960794);
+                Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-528960794);
                 if (PngjBadSignature4 == null) {
                     byte b3 = (byte) 0;
                     byte b4 = (byte) (b3 + 5);
-                    PngjBadSignature4 = PngjBadCrcException.PngjBadSignature((char) (ImageFormat.getBitsPerPixel(0) + 1), (SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)) + 36, 549 - (ExpandableListView.getPackedPositionForGroup(0) > 0L ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == 0L ? 0 : -1)), 479715165, false, $$e(b3, b4, (byte) (b4 - 5)), new Class[]{Object.class, Object.class});
+                    PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ImageFormat.getBitsPerPixel(0) + 1), (SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)) + 36, 549 - (ExpandableListView.getPackedPositionForGroup(0) > 0L ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == 0L ? 0 : -1)), 479715165, false, $$e(b3, b4, (byte) (b4 - 5)), new Class[]{Object.class, Object.class});
                 }
                 ((Method) PngjBadSignature4).invoke(null, objArr4);
                 i2 = 2;
@@ -304,12 +301,12 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 if (i18 % 2 != 0) {
                     cArr7[i16] = (char) (cArr4[cArr3[0] >>> i] % intValue);
                     Object[] objArr5 = {pngjExceptionInternal, pngjExceptionInternal};
-                    Object PngjBadSignature5 = PngjBadCrcException.PngjBadSignature(i6);
+                    Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i6);
                     if (PngjBadSignature5 == null) {
                         byte b5 = (byte) 0;
                         byte b6 = (byte) (b5 + 5);
                         i3 = i6;
-                        PngjBadSignature5 = PngjBadCrcException.PngjBadSignature((char) TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0), 37 - TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0), 549 - (ViewConfiguration.getMinimumFlingVelocity() >> 16), 479715165, false, $$e(b5, b6, (byte) (b6 - 5)), new Class[]{Object.class, Object.class});
+                        PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) TextUtils.indexOf("", "", 0), 37 - TextUtils.getOffsetAfter("", 0), 549 - (ViewConfiguration.getMinimumFlingVelocity() >> 16), 479715165, false, $$e(b5, b6, (byte) (b6 - 5)), new Class[]{Object.class, Object.class});
                     } else {
                         i3 = i6;
                     }
@@ -318,11 +315,11 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     i3 = i6;
                     cArr7[i16] = (char) (cArr4[cArr3[(i17 - 1) - i16] - i] - intValue);
                     Object[] objArr6 = {pngjExceptionInternal, pngjExceptionInternal};
-                    Object PngjBadSignature6 = PngjBadCrcException.PngjBadSignature(i3);
+                    Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i3);
                     if (PngjBadSignature6 == null) {
                         byte b7 = (byte) 0;
                         byte b8 = (byte) (b7 + 5);
-                        PngjBadSignature6 = PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getMode(0), (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1)) + 36, (AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) + 548, 479715165, false, $$e(b7, b8, (byte) (b8 - 5)), new Class[]{Object.class, Object.class});
+                        PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) View.MeasureSpec.getMode(0), (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1)) + 36, (AudioTrack.getMaxVolume() > 0.0f ? 1 : (AudioTrack.getMaxVolume() == 0.0f ? 0 : -1)) + 548, 479715165, false, $$e(b7, b8, (byte) (b8 - 5)), new Class[]{Object.class, Object.class});
                     }
                     ((Method) PngjBadSignature6).invoke(null, objArr6);
                 }
@@ -368,13 +365,13 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 try {
                     byte b3 = b2;
                     Object[] objArr2 = {Integer.valueOf(cArr[i10])};
-                    Object PngjBadSignature2 = PngjBadCrcException.PngjBadSignature(-259747866);
+                    Object PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-259747866);
                     if (PngjBadSignature2 == null) {
                         bArr2 = bArr4;
                         i3 = i10;
                         byte b4 = (byte) 0;
                         byte b5 = (byte) (b4 + 2);
-                        PngjBadSignature2 = PngjBadCrcException.PngjBadSignature((char) (1 - (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1))), TextUtils.getOffsetBefore(BuildConfig.FLAVOR, i5) + 35, ExpandableListView.getPackedPositionType(0L) + 1313, 208396893, false, $$e(b4, b5, (byte) (b5 - 2)), new Class[]{cls});
+                        PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (1 - (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1))), TextUtils.getOffsetBefore("", i5) + 35, ExpandableListView.getPackedPositionType(0L) + 1313, 208396893, false, $$e(b4, b5, (byte) (b5 - 2)), new Class[]{cls});
                     } else {
                         bArr2 = bArr4;
                         i3 = i10;
@@ -422,28 +419,28 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     Object[] objArr3 = new Object[2];
                     objArr3[b6] = Integer.valueOf(c);
                     objArr3[0] = Integer.valueOf(c2);
-                    Object PngjBadSignature3 = PngjBadCrcException.PngjBadSignature(-655108508);
+                    Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-655108508);
                     if (PngjBadSignature3 == null) {
                         byte b7 = (byte) 0;
                         byte b8 = (byte) (b7 + 3);
-                        PngjBadSignature3 = PngjBadCrcException.PngjBadSignature((char) (31881 - ImageFormat.getBitsPerPixel(0)), View.combineMeasuredStates(0, 0) + 32, TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0) + 1250, 605862879, false, $$e(b7, b8, (byte) (b8 - 3)), new Class[]{cls, cls});
+                        PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (31881 - ImageFormat.getBitsPerPixel(0)), View.combineMeasuredStates(0, 0) + 32, TextUtils.indexOf("", "", 0) + 1250, 605862879, false, $$e(b7, b8, (byte) (b8 - 3)), new Class[]{cls, cls});
                     }
                     cArr4[i11] = ((Character) ((Method) PngjBadSignature3).invoke(null, objArr3)).charValue();
                 } else {
                     Object[] objArr4 = {Integer.valueOf(cArr3[i11]), Integer.valueOf(c)};
-                    Object PngjBadSignature4 = PngjBadCrcException.PngjBadSignature(269554740);
+                    Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(269554740);
                     if (PngjBadSignature4 == null) {
                         byte b9 = (byte) 0;
                         byte b10 = b9;
-                        PngjBadSignature4 = PngjBadCrcException.PngjBadSignature((char) ((ViewConfiguration.getGlobalActionKeyTimeout() > j ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == j ? 0 : -1)) - 1), Color.green(0) + 35, (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1)) + 1598, -318867057, false, $$e(b9, b10, b10), new Class[]{cls, cls});
+                        PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) ((ViewConfiguration.getGlobalActionKeyTimeout() > j ? 1 : (ViewConfiguration.getGlobalActionKeyTimeout() == j ? 0 : -1)) - 1), Color.green(0) + 35, (ExpandableListView.getPackedPositionForGroup(0) > j ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == j ? 0 : -1)) + 1598, -318867057, false, $$e(b9, b10, b10), new Class[]{cls, cls});
                     }
                     cArr4[i11] = ((Character) ((Method) PngjBadSignature4).invoke(null, objArr4)).charValue();
                 }
                 c = cArr4[e1Var.PngjBadSignature];
                 Object[] objArr5 = {e1Var, e1Var};
-                Object PngjBadSignature5 = PngjBadCrcException.PngjBadSignature(1060060353);
+                Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1060060353);
                 if (PngjBadSignature5 == null) {
-                    PngjBadSignature5 = PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getPressedStateDuration() >> 16), (ViewConfiguration.getPressedStateDuration() >> 16) + 35, 155 - (ViewConfiguration.getKeyRepeatTimeout() >> 16), -1010806406, false, "g", new Class[]{Object.class, Object.class});
+                    PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getPressedStateDuration() >> 16), (ViewConfiguration.getPressedStateDuration() >> 16) + 35, 155 - (ViewConfiguration.getKeyRepeatTimeout() >> 16), -1010806406, false, "g", new Class[]{Object.class, Object.class});
                 }
                 ((Method) PngjBadSignature5).invoke(null, objArr5);
                 b = 1;
@@ -581,7 +578,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
     
         r3 = (char) android.widget.ExpandableListView.getPackedPositionType(0);
         r47 = (android.view.ViewConfiguration.getTouchSlop() >> 8) + 28;
-        r4 = android.text.TextUtils.getOffsetBefore(com.karumi.dexter.BuildConfig.FLAVOR, 0) + 1447;
+        r4 = android.text.TextUtils.getOffsetBefore(com.karumi.dexter."", 0) + 1447;
         r5 = com.touchlessid.TouchLessIDSDK$values.$$a[4];
         r7 = r5;
         r6 = new java.lang.Object[1];
@@ -779,9 +776,9 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 i4 = 2;
                 f = 0.0f;
                 i5 = 5;
-                Object PngjBadSignature3 = PngjBadCrcException.PngjBadSignature(1085800324);
+                Object PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1085800324);
                 if (PngjBadSignature3 == null) {
-                    char lastIndexOf = (char) (1178 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'));
+                    char lastIndexOf = (char) (1178 - TextUtils.lastIndexOf("", '0'));
                     int keyRepeatDelay = (ViewConfiguration.getKeyRepeatDelay() >> 16) + 44;
                     int size = 1092 - View.MeasureSpec.getSize(0);
                     byte b = $$a[4];
@@ -789,7 +786,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     byte b3 = b;
                     Object[] objArr3 = new Object[1];
                     a(b2, b3, (byte) (b3 + 1), objArr3);
-                    PngjBadSignature3 = PngjBadCrcException.PngjBadSignature(lastIndexOf, keyRepeatDelay, size, -1135046081, false, (String) objArr3[0], new Class[0]);
+                    PngjBadSignature3 = com.d.e.a.PngjBadCrcException.PngjBadSignature(lastIndexOf, keyRepeatDelay, size, -1135046081, false, (String) objArr3[0], new Class[0]);
                 }
                 long longValue = ((Long) ((Method) PngjBadSignature3).invoke(null, null)).longValue();
                 long j3 = 1839113996;
@@ -808,7 +805,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     Object[] objArr4 = new Object[i6];
                     b(null, (-16777090) - (~(-Color.rgb(i7, i7, i7))), null, "\u0088\u0081\u0085\u0087\u0086\u0081\u0085\u0084\u0083\u0082\u0081", objArr4);
                     Object[] objArr5 = {(String) objArr4[i7]};
-                    PngjBadSignature2 = PngjBadCrcException.PngjBadSignature(547370249);
+                    PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(547370249);
                     if (PngjBadSignature2 != null) {
                     }
                     invoke = ((Method) PngjBadSignature2).invoke(null, objArr5);
@@ -835,7 +832,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 ((int[]) objArr6[1])[0] = i24 ^ (i24 << 5);
                 return objArr6;
             }
-            Object PngjBadSignature4 = PngjBadCrcException.PngjBadSignature(1085800324);
+            Object PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1085800324);
             if (PngjBadSignature4 == null) {
                 char c2 = (char) ((SystemClock.uptimeMillis() > 0L ? 1 : (SystemClock.uptimeMillis() == 0L ? 0 : -1)) + 1178);
                 int i25 = 45 - (SystemClock.elapsedRealtime() > 0L ? 1 : (SystemClock.elapsedRealtime() == 0L ? 0 : -1));
@@ -849,7 +846,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 i3 = 4;
                 Object[] objArr7 = new Object[1];
                 a(b5, b6, (byte) (b6 + 1), objArr7);
-                PngjBadSignature4 = PngjBadCrcException.PngjBadSignature(c2, i25, i26, -1135046081, false, (String) objArr7[0], new Class[0]);
+                PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c2, i25, i26, -1135046081, false, (String) objArr7[0], new Class[0]);
             } else {
                 i3 = 4;
                 i4 = 2;
@@ -870,7 +867,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                 Object[] objArr42 = new Object[i6];
                 b(null, (-16777090) - (~(-Color.rgb(i7, i7, i7))), null, "\u0088\u0081\u0085\u0087\u0086\u0081\u0085\u0084\u0083\u0082\u0081", objArr42);
                 Object[] objArr52 = {(String) objArr42[i7]};
-                PngjBadSignature2 = PngjBadCrcException.PngjBadSignature(547370249);
+                PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(547370249);
                 if (PngjBadSignature2 != null) {
                     char packedPositionType = (char) (ExpandableListView.getPackedPositionType(0L) + 8752);
                     int myPid = (Process.myPid() >> 22) + 24;
@@ -881,7 +878,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     i8 = 547370249;
                     Object[] objArr8 = new Object[1];
                     a(b8, b9, (byte) (b9 + 1), objArr8);
-                    PngjBadSignature2 = PngjBadCrcException.PngjBadSignature(packedPositionType, myPid, i29, -598779726, false, (String) objArr8[0], new Class[]{String.class});
+                    PngjBadSignature2 = com.d.e.a.PngjBadCrcException.PngjBadSignature(packedPositionType, myPid, i29, -598779726, false, (String) objArr8[0], new Class[]{String.class});
                 } else {
                     i8 = 547370249;
                 }
@@ -896,7 +893,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                     Object[] objArr11 = new Object[i4];
                     objArr11[1] = strArr2;
                     objArr11[0] = invoke;
-                    Object PngjBadSignature5 = PngjBadCrcException.PngjBadSignature(-344601997);
+                    Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-344601997);
                     if (PngjBadSignature5 == null) {
                         char bitsPerPixel = (char) (ImageFormat.getBitsPerPixel(0) + 26717);
                         int windowTouchSlop = 33 - (ViewConfiguration.getWindowTouchSlop() >> 8);
@@ -906,7 +903,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                         byte b12 = b10;
                         Object[] objArr12 = new Object[1];
                         a(b11, b12, (byte) (b12 + 1), objArr12);
-                        PngjBadSignature5 = PngjBadCrcException.PngjBadSignature(bitsPerPixel, windowTouchSlop, mode, 396011464, false, (String) objArr12[0], new Class[]{String.class, String[].class});
+                        PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(bitsPerPixel, windowTouchSlop, mode, 396011464, false, (String) objArr12[0], new Class[]{String.class, String[].class});
                     }
                     long longValue3 = ((Long) ((Method) PngjBadSignature5).invoke(null, objArr11)).longValue();
                     long j15 = -1066165088;
@@ -927,7 +924,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                         Object[] objArr13 = new Object[1];
                         c("\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0001", true, new int[]{0, 23, 0, i5}, objArr13);
                         Object[] objArr14 = {(String) objArr13[0]};
-                        Object PngjBadSignature6 = PngjBadCrcException.PngjBadSignature(i8);
+                        Object PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i8);
                         if (PngjBadSignature6 == null) {
                             char c3 = (char) (8751 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)));
                             float f2 = f;
@@ -938,7 +935,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                             byte b15 = b13;
                             Object[] objArr15 = new Object[1];
                             a(b14, b15, (byte) (b15 + 1), objArr15);
-                            PngjBadSignature6 = PngjBadCrcException.PngjBadSignature(c3, i35, i36, -598779726, false, (String) objArr15[0], new Class[]{String.class});
+                            PngjBadSignature6 = com.d.e.a.PngjBadCrcException.PngjBadSignature(c3, i35, i36, -598779726, false, (String) objArr15[0], new Class[]{String.class});
                         }
                         Object invoke2 = ((Method) PngjBadSignature6).invoke(null, objArr14);
                         int i37 = -View.resolveSizeAndState(0, 0, 0);
@@ -957,7 +954,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                         Object[] objArr17 = {(String) objArr16[0]};
                         Object PngjBadSignature7 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i8);
                         if (PngjBadSignature7 == null) {
-                            char capsMode = (char) (8752 - TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0));
+                            char capsMode = (char) (8752 - TextUtils.getCapsMode("", 0, 0));
                             int scrollDefaultDelay = (ViewConfiguration.getScrollDefaultDelay() >> 16) + 24;
                             int jumpTapTimeout = (ViewConfiguration.getJumpTapTimeout() >> 16) + 336;
                             byte b16 = $$a[4];
@@ -976,7 +973,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                             Object PngjBadSignature8 = com.d.e.a.PngjBadCrcException.PngjBadSignature(989703296);
                             if (PngjBadSignature8 == null) {
                                 char threadPriority = (char) (((Process.getThreadPriority(0) + 20) >> 6) + 11039);
-                                int offsetBefore = TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0) + 31;
+                                int offsetBefore = TextUtils.getOffsetBefore("", 0) + 31;
                                 int i47 = 1283 - (ViewConfiguration.getZoomControlsTimeout() > 0L ? 1 : (ViewConfiguration.getZoomControlsTimeout() == 0L ? 0 : -1));
                                 byte b19 = $$a[4];
                                 byte b20 = b19;
@@ -1011,7 +1008,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                             if (PngjBadSignature9 == null) {
                                 char threadPriority2 = (char) (11039 - ((Process.getThreadPriority(0) + 20) >> 6));
                                 int bitsPerPixel2 = 30 - ImageFormat.getBitsPerPixel(0);
-                                int indexOf = 1282 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0);
+                                int indexOf = 1282 - TextUtils.indexOf("", "", 0);
                                 byte b21 = $$a[4];
                                 byte b22 = b21;
                                 Object[] objArr22 = new Object[1];
@@ -1036,7 +1033,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                             Object PngjBadSignature10 = com.d.e.a.PngjBadCrcException.PngjBadSignature(989703296);
                             if (PngjBadSignature10 == null) {
                                 char mode2 = (char) (11039 - View.MeasureSpec.getMode(0));
-                                int indexOf2 = TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0') + 32;
+                                int indexOf2 = TextUtils.indexOf((CharSequence) "", '0') + 32;
                                 int scrollBarFadeDuration = 1282 - (ViewConfiguration.getScrollBarFadeDuration() >> 16);
                                 byte b23 = $$a[4];
                                 byte b24 = b23;
@@ -1063,7 +1060,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                             if (PngjBadSignature11 == null) {
                                 char makeMeasureSpec = (char) (11039 - View.MeasureSpec.makeMeasureSpec(0, 0));
                                 int resolveSize = View.resolveSize(0, 0) + 31;
-                                int axisFromString = MotionEvent.axisFromString(BuildConfig.FLAVOR) + 1283;
+                                int axisFromString = MotionEvent.axisFromString("") + 1283;
                                 byte b25 = $$a[4];
                                 byte b26 = b25;
                                 Object[] objArr26 = new Object[1];
@@ -1130,7 +1127,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                         b(null, i77, null, "\u008f\u008d\u008a\u008d\u0086\u008f", objArr32);
                         String str6 = (String) objArr32[0];
                         Object[] objArr33 = new Object[1];
-                        b(null, 126 - (~(-(-KeyEvent.keyCodeFromString(BuildConfig.FLAVOR)))), null, "\u008a\u0081\u0083\u008c\u008b\u0098\u0088\u0086\u0097\u0092\u008f\u0089\u008f", objArr33);
+                        b(null, 126 - (~(-(-KeyEvent.keyCodeFromString("")))), null, "\u008a\u0081\u0083\u008c\u008b\u0098\u0088\u0086\u0097\u0092\u008f\u0089\u008f", objArr33);
                         String str7 = (String) objArr33[0];
                         int scrollDefaultDelay2 = ViewConfiguration.getScrollDefaultDelay() >> 16;
                         int i78 = ((scrollDefaultDelay2 | 127) << 1) - (scrollDefaultDelay2 ^ 127);
@@ -1203,13 +1200,13 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                         c("\u0000\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0001", true, new int[]{132, 9, 0, 1}, objArr51);
                         String str24 = (String) objArr51[0];
                         Object[] objArr53 = new Object[1];
-                        c(null, true, new int[]{141, 10, R.styleable.AppCompatTheme_tooltipFrameBackground, 2}, objArr53);
+                        c(null, true, new int[]{141, 10, 115, 2}, objArr53);
                         String str25 = (String) objArr53[0];
                         Object[] objArr54 = new Object[1];
                         c("\u0000\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0000\u0001\u0000", true, new int[]{151, 11, 150, 0}, objArr54);
                         String str26 = (String) objArr54[0];
                         Object[] objArr55 = new Object[1];
-                        c("\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000", false, new int[]{162, 11, ModuleDescriptor.MODULE_VERSION, 10}, objArr55);
+                        c("\u0001\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000", false, new int[]{162, 11, 155, 10}, objArr55);
                         String str27 = (String) objArr55[0];
                         Object[] objArr56 = new Object[1];
                         c("\u0001\u0001\u0000\u0001\u0000\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u0001", true, new int[]{173, 15, 0, 0}, objArr56);
@@ -1218,7 +1215,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                         c("\u0000\u0000\u0001\u0000\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0000", true, new int[]{188, 14, 5, 8}, objArr57);
                         String[] strArr3 = {str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, str12, str13, str14, str15, str16, str17, str18, str19, str20, str21, str22, str23, str24, str25, str26, str27, str28, (String) objArr57[0]};
                         Object[] objArr58 = new Object[1];
-                        b(null, 125 - (~(-TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0))), null, "\u0088\u0081\u0085\u0087\u0086\u0081\u0085\u0084\u0083\u0082\u0081", objArr58);
+                        b(null, 125 - (~(-TextUtils.lastIndexOf("", '0', 0, 0))), null, "\u0088\u0081\u0085\u0087\u0086\u0081\u0085\u0084\u0083\u0082\u0081", objArr58);
                         Object[] objArr59 = {(String) objArr58[0]};
                         Object PngjBadSignature12 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i8);
                         if (PngjBadSignature12 == null) {
@@ -1258,9 +1255,9 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                 Object[] objArr64 = {(String) objArr63[0]};
                                 Object PngjBadSignature13 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i8);
                                 if (PngjBadSignature13 == null) {
-                                    char lastIndexOf2 = (char) (8751 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'));
+                                    char lastIndexOf2 = (char) (8751 - TextUtils.lastIndexOf("", '0'));
                                     int resolveOpacity = Drawable.resolveOpacity(0, 0) + 24;
-                                    int indexOf3 = TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0, 0) + 337;
+                                    int indexOf3 = TextUtils.indexOf((CharSequence) "", '0', 0, 0) + 337;
                                     byte b30 = $$a[4];
                                     byte b31 = (byte) (b30 + 1);
                                     byte b32 = b30;
@@ -1276,7 +1273,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                 Object[] objArr67 = {(String) objArr66[0]};
                                 Object PngjBadSignature14 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i8);
                                 if (PngjBadSignature14 == null) {
-                                    char capsMode2 = (char) (TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0) + 8752);
+                                    char capsMode2 = (char) (TextUtils.getCapsMode("", 0, 0) + 8752);
                                     int packedPositionChild = ExpandableListView.getPackedPositionChild(0L) + 25;
                                     int scrollDefaultDelay4 = 336 - (ViewConfiguration.getScrollDefaultDelay() >> 16);
                                     byte b33 = $$a[4];
@@ -1293,7 +1290,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                     if (PngjBadSignature15 == null) {
                                         char makeMeasureSpec2 = (char) (11039 - View.MeasureSpec.makeMeasureSpec(0, 0));
                                         int i99 = (Process.getElapsedCpuTime() > 0L ? 1 : (Process.getElapsedCpuTime() == 0L ? 0 : -1)) + 30;
-                                        int offsetBefore2 = 1282 - TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0);
+                                        int offsetBefore2 = 1282 - TextUtils.getOffsetBefore("", 0);
                                         byte b36 = $$a[4];
                                         byte b37 = b36;
                                         Object[] objArr70 = new Object[1];
@@ -1326,7 +1323,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                             Object[] objArr72 = {((String) objArr71[0]).concat(String.valueOf(str31))};
                                             Object PngjBadSignature16 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1142218481);
                                             if (PngjBadSignature16 == null) {
-                                                int gidForName = Process.getGidForName(BuildConfig.FLAVOR) + 29;
+                                                int gidForName = Process.getGidForName("") + 29;
                                                 int green2 = Color.green(0) + 1447;
                                                 byte b38 = $$a[4];
                                                 byte b39 = (byte) (b38 + 1);
@@ -1406,8 +1403,8 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                             Object[] objArr76 = {(String) objArr75[0]};
                                             Object PngjBadSignature17 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-936033973);
                                             if (PngjBadSignature17 == null) {
-                                                char offsetAfter = (char) (TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0) + 29467);
-                                                int indexOf4 = TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0) + 40;
+                                                char offsetAfter = (char) (TextUtils.getOffsetAfter("", 0) + 29467);
+                                                int indexOf4 = TextUtils.indexOf((CharSequence) "", '0', 0) + 40;
                                                 int i143 = 433 - (Process.getElapsedCpuTime() > 0L ? 1 : (Process.getElapsedCpuTime() == 0L ? 0 : -1));
                                                 byte b42 = $$a[4];
                                                 byte b43 = (byte) (b42 + 1);
@@ -1504,7 +1501,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                         return objArr81;
                                                     }
                                                     Object[] objArr82 = new Object[1];
-                                                    b(null, 126 - (~TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0)), null, "\u0088\u008a\u0081\u0082\u008e\u0089\u0088\u0095\u009b\u008b\u0089\u008f\u008d\u0088\u0090\u0095\u0090\u008e\u0095\u0090\u0093\u0090\u0095", objArr82);
+                                                    b(null, 126 - (~TextUtils.indexOf("", "", 0)), null, "\u0088\u008a\u0081\u0082\u008e\u0089\u0088\u0095\u009b\u008b\u0089\u008f\u008d\u0088\u0090\u0095\u0090\u008e\u0095\u0090\u0093\u0090\u0095", objArr82);
                                                     Object[] objArr83 = {(String) objArr82[0]};
                                                     Object PngjBadSignature19 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-936033973);
                                                     if (PngjBadSignature19 == null) {
@@ -1535,7 +1532,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                     if (PngjBadSignature20 == null) {
                                                         char edgeSlop = (char) ((ViewConfiguration.getEdgeSlop() >> 16) + 29467);
                                                         int i184 = (ViewConfiguration.getScrollFriction() > 0.0f ? 1 : (ViewConfiguration.getScrollFriction() == 0.0f ? 0 : -1)) + 38;
-                                                        int capsMode3 = TextUtils.getCapsMode(BuildConfig.FLAVOR, 0, 0) + 432;
+                                                        int capsMode3 = TextUtils.getCapsMode("", 0, 0) + 432;
                                                         byte b52 = $$a[4];
                                                         byte b53 = (byte) (b52 + 1);
                                                         byte b54 = b52;
@@ -1608,7 +1605,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                 Object PngjBadSignature21 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1492900309);
                                                                 if (PngjBadSignature21 == null) {
                                                                     char mirror = (char) ('0' - AndroidCharacter.getMirror('0'));
-                                                                    int indexOf5 = 35 - TextUtils.indexOf(BuildConfig.FLAVOR, BuildConfig.FLAVOR, 0, 0);
+                                                                    int indexOf5 = 35 - TextUtils.indexOf("", "", 0, 0);
                                                                     int makeMeasureSpec4 = 397 - View.MeasureSpec.makeMeasureSpec(0, 0);
                                                                     byte b55 = $$a[4];
                                                                     byte b56 = (byte) (b55 + 1);
@@ -1667,8 +1664,8 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                 Object PngjBadSignature22 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i8);
                                                                 if (PngjBadSignature22 == null) {
                                                                     char maximumFlingVelocity = (char) (8752 - (ViewConfiguration.getMaximumFlingVelocity() >> 16));
-                                                                    int lastIndexOf3 = 23 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0);
-                                                                    int offsetAfter2 = TextUtils.getOffsetAfter(BuildConfig.FLAVOR, 0) + 336;
+                                                                    int lastIndexOf3 = 23 - TextUtils.lastIndexOf("", '0', 0);
+                                                                    int offsetAfter2 = TextUtils.getOffsetAfter("", 0) + 336;
                                                                     byte b58 = $$a[4];
                                                                     byte b59 = (byte) (b58 + 1);
                                                                     byte b60 = b58;
@@ -1678,7 +1675,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                 }
                                                                 String str38 = (String) ((Method) PngjBadSignature22).invoke(null, objArr99);
                                                                 if (str38 != null) {
-                                                                    int indexOf6 = TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0);
+                                                                    int indexOf6 = TextUtils.indexOf((CharSequence) "", '0', 0);
                                                                     int i221 = indexOf6 * (-515);
                                                                     int i222 = ((i221 | 66176) << 1) - (i221 ^ 66176);
                                                                     int i223 = ~(((-129) ^ i) | ((-129) & i));
@@ -1719,7 +1716,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                     Object[] objArr103 = {(String) objArr102[0]};
                                                                     Object PngjBadSignature23 = com.d.e.a.PngjBadCrcException.PngjBadSignature(i8);
                                                                     if (PngjBadSignature23 == null) {
-                                                                        char indexOf7 = (char) (8751 - TextUtils.indexOf((CharSequence) BuildConfig.FLAVOR, '0', 0));
+                                                                        char indexOf7 = (char) (8751 - TextUtils.indexOf((CharSequence) "", '0', 0));
                                                                         int rgb = Color.rgb(0, 0, 0) + 16777240;
                                                                         int combineMeasuredStates = 336 - View.combineMeasuredStates(0, 0);
                                                                         byte b61 = $$a[4];
@@ -1798,7 +1795,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         }
                                                                                         Object invoke7 = ((Method) PngjBadSignature25).invoke(null, objArr111);
                                                                                         if (invoke7 != null) {
-                                                                                            int gidForName2 = Process.getGidForName(BuildConfig.FLAVOR);
+                                                                                            int gidForName2 = Process.getGidForName("");
                                                                                             int i260 = (gidForName2 & 128) + (gidForName2 | 128);
                                                                                             Object[] objArr113 = new Object[1];
                                                                                             b(null, i260, null, "\u0086\u0082\u0094\u0089\u0088\u008c\u0082\u0089\u0085\u0093\u008a", objArr113);
@@ -1806,7 +1803,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                             Object PngjBadSignature26 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-344601997);
                                                                                             if (PngjBadSignature26 == null) {
                                                                                                 char makeMeasureSpec5 = (char) (View.MeasureSpec.makeMeasureSpec(0, 0) + 26716);
-                                                                                                int lastIndexOf4 = TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0') + 34;
+                                                                                                int lastIndexOf4 = TextUtils.lastIndexOf("", '0') + 34;
                                                                                                 int doubleTapTimeout = 1668 - (ViewConfiguration.getDoubleTapTimeout() >> 16);
                                                                                                 byte b70 = $$a[4];
                                                                                                 byte b71 = (byte) (b70 + 1);
@@ -1917,9 +1914,9 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                     Object[] objArr129 = {sb.toString()};
                                                                                                     Object PngjBadSignature27 = com.d.e.a.PngjBadCrcException.PngjBadSignature(1666380462);
                                                                                                     if (PngjBadSignature27 == null) {
-                                                                                                        char capsMode4 = (char) TextUtils.getCapsMode(BuildConfig.FLAVOR, i297, i297);
+                                                                                                        char capsMode4 = (char) TextUtils.getCapsMode("", i297, i297);
                                                                                                         int maxKeyCode = 28 - (KeyEvent.getMaxKeyCode() >> 16);
-                                                                                                        int gidForName3 = Process.getGidForName(BuildConfig.FLAVOR) + 1448;
+                                                                                                        int gidForName3 = Process.getGidForName("") + 1448;
                                                                                                         byte b73 = $$a[4];
                                                                                                         byte b74 = b73;
                                                                                                         Object[] objArr130 = new Object[1];
@@ -2131,7 +2128,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         Object PngjBadSignature28 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1372235840);
                                                                                         if (PngjBadSignature28 == null) {
                                                                                             char threadPriority4 = (char) (((Process.getThreadPriority(0) + 20) >> 6) + 23942);
-                                                                                            int lastIndexOf5 = 23 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0);
+                                                                                            int lastIndexOf5 = 23 - TextUtils.lastIndexOf("", '0', 0);
                                                                                             int bitsPerPixel3 = ImageFormat.getBitsPerPixel(0) + 313;
                                                                                             byte b75 = $$a[4];
                                                                                             byte b76 = b75;
@@ -2173,7 +2170,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                             if (PngjBadSignature29 == null) {
                                                                                                 char c8 = (char) ((ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)) + 1);
                                                                                                 int makeMeasureSpec6 = 28 - View.MeasureSpec.makeMeasureSpec(0, 0);
-                                                                                                int axisFromString2 = MotionEvent.axisFromString(BuildConfig.FLAVOR) + 1856;
+                                                                                                int axisFromString2 = MotionEvent.axisFromString("") + 1856;
                                                                                                 byte b78 = $$a[4];
                                                                                                 byte b79 = (byte) (b78 + 1);
                                                                                                 byte b80 = b78;
@@ -2331,7 +2328,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         Object[] objArr142 = {2};
                                                                                         Object PngjBadSignature33 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-476828914);
                                                                                         if (PngjBadSignature33 == null) {
-                                                                                            char trimmedLength = (char) (TextUtils.getTrimmedLength(BuildConfig.FLAVOR) + 35511);
+                                                                                            char trimmedLength = (char) (TextUtils.getTrimmedLength("") + 35511);
                                                                                             int resolveSizeAndState = View.resolveSizeAndState(0, 0, 0) + 42;
                                                                                             int touchSlop = (ViewConfiguration.getTouchSlop() >> 8) + 507;
                                                                                             byte b90 = $$a[4];
@@ -2424,8 +2421,8 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         Object PngjBadSignature35 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1000971846);
                                                                                         if (PngjBadSignature35 == null) {
                                                                                             char bitsPerPixel4 = (char) ((-1) - ImageFormat.getBitsPerPixel(0));
-                                                                                            int axisFromString3 = 34 - MotionEvent.axisFromString(BuildConfig.FLAVOR);
-                                                                                            int lastIndexOf6 = 1312 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0', 0, 0);
+                                                                                            int axisFromString3 = 34 - MotionEvent.axisFromString("");
+                                                                                            int lastIndexOf6 = 1312 - TextUtils.lastIndexOf("", '0', 0, 0);
                                                                                             byte b94 = $$a[4];
                                                                                             byte b95 = (byte) (b94 + 1);
                                                                                             byte b96 = b94;
@@ -2544,7 +2541,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         }
                                                                                         Object PngjBadSignature38 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-820027826);
                                                                                         if (PngjBadSignature38 == null) {
-                                                                                            char axisFromString4 = (char) (MotionEvent.axisFromString(BuildConfig.FLAVOR) + 13780);
+                                                                                            char axisFromString4 = (char) (MotionEvent.axisFromString("") + 13780);
                                                                                             int i500 = (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)) + 29;
                                                                                             int jumpTapTimeout2 = (ViewConfiguration.getJumpTapTimeout() >> 16) + 1502;
                                                                                             byte b102 = $$a[4];
@@ -2583,7 +2580,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                         Object[] objArr159 = {Integer.valueOf(i), obj, Integer.valueOf(i2), 16777216};
                                                                                         Object PngjBadSignature39 = com.d.e.a.PngjBadCrcException.PngjBadSignature(-1284430186);
                                                                                         if (PngjBadSignature39 == null) {
-                                                                                            PngjBadSignature39 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Color.green(0), TextUtils.getOffsetBefore(BuildConfig.FLAVOR, 0) + 26, ImageFormat.getBitsPerPixel(0) + 1225, 1335773997, false, null, new Class[]{cls5, (Class) com.d.e.a.PngjBadCrcException.values((char) ((SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)) - 1), 25 - Drawable.resolveOpacity(0, 0), 1199 - View.resolveSize(0, 0)), cls5, cls5});
+                                                                                            PngjBadSignature39 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) Color.green(0), TextUtils.getOffsetBefore("", 0) + 26, ImageFormat.getBitsPerPixel(0) + 1225, 1335773997, false, null, new Class[]{cls5, (Class) com.d.e.a.PngjBadCrcException.values((char) ((SystemClock.currentThreadTimeMillis() > (-1L) ? 1 : (SystemClock.currentThreadTimeMillis() == (-1L) ? 0 : -1)) - 1), 25 - Drawable.resolveOpacity(0, 0), 1199 - View.resolveSize(0, 0)), cls5, cls5});
                                                                                         }
                                                                                         Object newInstance = ((Constructor) PngjBadSignature39).newInstance(objArr159);
                                                                                         try {
