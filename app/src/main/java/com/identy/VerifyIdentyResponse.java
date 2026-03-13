@@ -29,9 +29,11 @@ public final class VerifyIdentyResponse extends IdentyResponse {
         this.p = new HashMap();
         this.q = new HashMap();
         this.PngjInputException = z;
-        for (Map.Entry entry : map.entrySet()) {
+        for (Object _entry : map.entrySet()) {
+            Map.Entry entry = (Map.Entry) _entry;
             Hand hand = (Hand) entry.getKey();
-            for (Map.Entry entry2 : ((Map) entry.getValue()).entrySet()) {
+            for (Object _entry2 : ((Map) entry.getValue()).entrySet()) {
+                Map.Entry entry2 = (Map.Entry) _entry2;
                 StringBuilder sb = new StringBuilder();
                 sb.append(hand.toString());
                 sb.append("_4f");

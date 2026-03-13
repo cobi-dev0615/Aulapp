@@ -49,7 +49,7 @@ public class Verify4FActivity extends FingerActivity {
     protected HashMap values = new HashMap();
     int PngjBadCrcException = 0;
 
-    public class PngjException implements org.cameracontroller.PngjBadSignature.values {
+    public class PngjException implements org.cameracontroller.PngjBadSignature.values, com.identy.b.PngjBadSignature.values {
         private /* synthetic */ HashMap PngjBadCrcException;
         private /* synthetic */ FingerMatchSecLevel PngjBadSignature;
         private /* synthetic */ HashMap valueOf;
@@ -694,7 +694,7 @@ public class Verify4FActivity extends FingerActivity {
             if (PngjBadSignature4 == null) {
                 PngjBadSignature4 = com.d.e.a.PngjBadCrcException.PngjBadSignature((char) (ViewConfiguration.getKeyRepeatTimeout() >> 16), 25 - (ViewConfiguration.getScrollFriction() > f ? 1 : (ViewConfiguration.getScrollFriction() == f ? 0 : -1)), 698 - (SystemClock.elapsedRealtimeNanos() > 0L ? 1 : (SystemClock.elapsedRealtimeNanos() == 0L ? 0 : -1)), 1457201313, false, null, new Class[]{Integer.TYPE});
             }
-            values$1eba2e16 = values.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -41775340);
+            values$1eba2e16 = org.cameracontroller.PngjBadSignature.values$1eba2e16(intValue, ((Constructor) PngjBadSignature4).newInstance(objArr10), -41775340);
             Object PngjBadSignature5 = com.d.e.a.PngjBadCrcException.PngjBadSignature(763257050);
             if (PngjBadSignature5 == null) {
                 char rgb = (char) (Color.rgb(0, 0, 0) + 16792046);
