@@ -81,16 +81,16 @@ public class Verify2TActivity extends FingerActivity {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final void values() {
-            VerifyResult verifyResult;
+            VerifyResult verifyResult = null;
             int i;
             com.identy.e1 e1Var;
-            VerifyResult verifyResult2;
-            IdentySdk identySdk;
-            FingerDetectionMode fingerDetectionMode;
-            int i2;
-            HashMap hashMap;
-            long j;
-            long j2;
+            VerifyResult verifyResult2 = null;
+            IdentySdk identySdk = null;
+            FingerDetectionMode fingerDetectionMode = null;
+            int i2 = 0;
+            HashMap hashMap = null;
+            long j = 0;
+            long j2 = 0;
             Verify2TActivity verify2TActivity = Verify2TActivity.this;
             int i3 = verify2TActivity.PngjBadCrcException + 1;
             verify2TActivity.PngjBadCrcException = i3;
@@ -456,7 +456,7 @@ public class Verify2TActivity extends FingerActivity {
     public void PngjException(HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap, HashMap<Pair<Hand, Finger>, com.identy.IdentyA> hashMap2, Bitmap bitmap, boolean z, boolean z2) {
         FingerMatchSecLevel fingerMatchSecLevel;
         long j;
-        com.identy.PngjExceptionInternal pngjExceptionInternal;
+        com.identy.PngjExceptionInternal pngjExceptionInternal = null;
         int i = getScore + 79;
         getFingerPrintQualityScore = i % 128;
         if (i % 2 != 0) {
@@ -530,7 +530,7 @@ public class Verify2TActivity extends FingerActivity {
         int i;
         int intValue = 0;
         java.lang.Object[] PngjException$1eba2e16 = null;
-        char c2;
+        char c2 = 0;
         int i2;
         int i3;
         int i4 = getFingerPrintQualityScore + 25;
@@ -711,10 +711,10 @@ public class Verify2TActivity extends FingerActivity {
             throw new RuntimeException(cause);
         }
         java.lang.Object[] objArr14 = new java.lang.Object[1];
-        c((ViewConfiguration.getLongPressTimeout() >> 16) + 16, false, "\u0011\u0012\u0003\u000b\b\uffff\u0014\uffffￌ\n\uffff\f\u0005ￌ\ufff1\u0017", 3 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), 156 - (ViewConfiguration.getJumpTapTimeout() >> 16), objArr14);
+        try { c((ViewConfiguration.getLongPressTimeout() >> 16) + 16, false, "\u0011\u0012\u0003\u000b\b\uffff\u0014\uffffￌ\n\uffff\f\u0005ￌ\ufff1\u0017", 3 - TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0'), 156 - (ViewConfiguration.getJumpTapTimeout() >> 16), objArr14); } catch (Exception e) { throw new RuntimeException(e); }
         Class<?> cls3; try { cls3 = Class.forName((String) objArr14[0]); } catch (ClassNotFoundException e) { throw new RuntimeException(e); }
         java.lang.Object[] objArr15 = new java.lang.Object[1];
-        c(16 - Color.alpha(0), true, "\ufffe\u0003\uffff\ufffe\t\uffdd\u0002\r\ufffb￢\u0013\u000e\u0003\u000e\b\uffff", 1 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)), TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0') + 161, objArr15);
+        try { c(16 - Color.alpha(0), true, "\ufffe\u0003\uffff\ufffe\t\uffdd\u0002\r\ufffb￢\u0013\u000e\u0003\u000e\b\uffff", 1 - (ExpandableListView.getPackedPositionForChild(0, 0) > 0L ? 1 : (ExpandableListView.getPackedPositionForChild(0, 0) == 0L ? 0 : -1)), TextUtils.lastIndexOf(BuildConfig.FLAVOR, '0') + 161, objArr15); } catch (Exception e) { throw new RuntimeException(e); }
         try { intValue = ((Integer) cls3.getMethod((String) objArr15[0], java.lang.Object.class).invoke(null, this)).intValue(); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
