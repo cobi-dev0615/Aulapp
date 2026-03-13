@@ -8,6 +8,7 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
+import com.gse.aulapp.R;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;

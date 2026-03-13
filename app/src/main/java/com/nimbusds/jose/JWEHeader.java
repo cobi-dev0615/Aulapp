@@ -347,11 +347,11 @@ public final class JWEHeader extends CommonSEHeader {
         this.tag = base64URL7;
     }
 
-    public static JWEHeader parse(String str, Base64URL base64URL) {
+    public static JWEHeader parse(String str, Base64URL base64URL) throws ParseException {
         return parse(JSONObjectUtils.parse(str, ModuleDescriptor.MODULE_VERSION), base64URL);
     }
 
-    public static JWEHeader parse(Base64URL base64URL) {
+    public static JWEHeader parse(Base64URL base64URL) throws ParseException {
         return parse(base64URL.decodeToString(), base64URL);
     }
 }
