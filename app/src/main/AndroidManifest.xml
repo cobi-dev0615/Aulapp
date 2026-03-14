@@ -107,10 +107,19 @@
         <activity android:name="com.identy.CaptureRolledThumbActivity" android:configChanges="orientation" android:resizeableActivity="false" />
         <activity android:name="com.identy.IntroActivity" android:hardwareAccelerated="false" android:resizeableActivity="false" />
 
-        <!-- Firebase Crashlytics -->
+        <!-- Disable Firebase auto-init (no valid API key available) -->
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_deactivated"
             android:value="true" />
+
+        <!-- Disable FirebaseInitProvider to prevent crash with placeholder API key -->
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="${applicationId}.firebaseinitprovider"
+            tools:node="remove" />
 
         <meta-data
             android:name="preloaded_fonts"
