@@ -41,7 +41,7 @@ final class GifInfoHandle {
 
     private static native int getNativeErrorCode(long j);
 
-    private static int getNativeFileDescriptor(FileDescriptor fileDescriptor, boolean z) {
+    private static int getNativeFileDescriptor(FileDescriptor fileDescriptor, boolean z) throws Exception {
         try {
             int createTempNativeFileDescriptor = createTempNativeFileDescriptor();
             Os.dup2(fileDescriptor, createTempNativeFileDescriptor);
@@ -63,7 +63,7 @@ final class GifInfoHandle {
 
     public static native long openFile(String str);
 
-    private static long openFileDescriptor(FileDescriptor fileDescriptor, long j, boolean z) {
+    private static long openFileDescriptor(FileDescriptor fileDescriptor, long j, boolean z) throws IOException {
         int nativeFileDescriptor;
         if (Build.VERSION.SDK_INT > 27) {
             try {
@@ -79,7 +79,7 @@ final class GifInfoHandle {
 
     public static native long openNativeFileDescriptor(int i, long j);
 
-    public static GifInfoHandle openUri(ContentResolver contentResolver, Uri uri) {
+    public static GifInfoHandle openUri(ContentResolver contentResolver, Uri uri) throws IOException {
         if ("file".equals(uri.getScheme())) {
             return new GifInfoHandle(uri.getPath());
         }
@@ -104,7 +104,7 @@ final class GifInfoHandle {
 
     private static native void setLoopCount(long j, char c);
 
-    public void finalize() {
+    public void finalize() throws Throwable {
         try {
             recycle();
         } finally {
