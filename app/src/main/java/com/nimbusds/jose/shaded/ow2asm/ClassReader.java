@@ -3198,6 +3198,7 @@ public class ClassReader {
                             case 68:
                             case 69:
                             case 70:
+                                i2 = i3 + 3;
                                 break;
                             case 71:
                             case 72:
