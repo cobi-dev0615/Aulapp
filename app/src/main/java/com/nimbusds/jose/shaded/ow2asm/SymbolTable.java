@@ -153,6 +153,8 @@ final class SymbolTable {
                         i2 += 2;
                         hashCode ^= classReader.readConst(readUnsignedShort4, cArr).hashCode();
                         readUnsignedShort3 = i5;
+                    } else {
+                        break;
                     }
                 }
                 add(new Entry(i3, 64, i4, hashCode & IntCompanionObject.MAX_VALUE));
