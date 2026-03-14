@@ -13,11 +13,11 @@ import java.util.Set;
 
 /* loaded from: classes2.dex */
 abstract class JWKMetadata {
-    public static Algorithm parseAlgorithm(Map<String, Object> map) {
+    public static Algorithm parseAlgorithm(Map<String, Object> map) throws ParseException {
         return Algorithm.parse(JSONObjectUtils.getString(map, "alg"));
     }
 
-    public static String parseKeyID(Map<String, Object> map) {
+    public static String parseKeyID(Map<String, Object> map) throws ParseException {
         return JSONObjectUtils.getString(map, "kid");
     }
 
@@ -37,7 +37,7 @@ abstract class JWKMetadata {
         return KeyUse.parse(JSONObjectUtils.getString(map, "use"));
     }
 
-    public static List<Base64> parseX509CertChain(Map<String, Object> map) {
+    public static List<Base64> parseX509CertChain(Map<String, Object> map) throws ParseException {
         List<Base64> base64List = X509CertChainUtils.toBase64List(JSONObjectUtils.getJSONArray(map, "x5c"));
         if (base64List == null || !base64List.isEmpty()) {
             return base64List;
@@ -45,15 +45,15 @@ abstract class JWKMetadata {
         return null;
     }
 
-    public static Base64URL parseX509CertSHA256Thumbprint(Map<String, Object> map) {
+    public static Base64URL parseX509CertSHA256Thumbprint(Map<String, Object> map) throws ParseException {
         return JSONObjectUtils.getBase64URL(map, "x5t#S256");
     }
 
-    public static Base64URL parseX509CertThumbprint(Map<String, Object> map) {
+    public static Base64URL parseX509CertThumbprint(Map<String, Object> map) throws ParseException {
         return JSONObjectUtils.getBase64URL(map, "x5t");
     }
 
-    public static URI parseX509CertURL(Map<String, Object> map) {
+    public static URI parseX509CertURL(Map<String, Object> map) throws ParseException {
         return JSONObjectUtils.getURI(map, "x5u");
     }
 }
