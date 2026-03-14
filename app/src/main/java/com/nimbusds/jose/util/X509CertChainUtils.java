@@ -9,7 +9,7 @@ import java.util.List;
 
 /* loaded from: classes2.dex */
 public abstract class X509CertChainUtils {
-    public static List<X509Certificate> parse(List<Base64> list) {
+    public static List<X509Certificate> parse(List<Base64> list) throws ParseException {
         if (list == null) {
             return null;
         }
@@ -26,7 +26,7 @@ public abstract class X509CertChainUtils {
         return linkedList;
     }
 
-    public static List<Base64> toBase64List(List<Object> list) {
+    public static List<Base64> toBase64List(List<Object> list) throws ParseException {
         if (list == null) {
             return null;
         }
