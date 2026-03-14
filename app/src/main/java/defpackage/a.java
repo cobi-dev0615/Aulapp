@@ -58,12 +58,20 @@ public abstract /* synthetic */ class a {
         return (Boolean.hashCode(z) + i) * i2;
     }
 
-    public static Object h(String str, String str2, Object obj) throws Exception {
-        return Class.forName(str).getField(str2).get(obj);
+    public static Object h(String str, String str2, Object obj) {
+        try {
+            return Class.forName(str).getField(str2).get(obj);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    public static Object i(String str, String str2, Class[] clsArr, Object obj, Object[] objArr) throws Exception {
-        return Class.forName(str).getDeclaredMethod(str2, clsArr).invoke(obj, objArr);
+    public static Object i(String str, String str2, Class[] clsArr, Object obj, Object[] objArr) {
+        try {
+            return Class.forName(str).getDeclaredMethod(str2, clsArr).invoke(obj, objArr);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static String j(String str, int i) {
