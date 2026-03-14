@@ -111,7 +111,7 @@ public final class RSAKey extends JWK {
         this.privateKey = privateKey;
     }
 
-    public static RSAKey parse(Map<String, Object> map) {
+    public static RSAKey parse(Map<String, Object> map) throws ParseException {
         ArrayList arrayList;
         List<Object> jSONArray;
         if (!KeyType.RSA.equals(JWKMetadata.parseKeyType(map))) {
