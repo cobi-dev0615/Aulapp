@@ -53,7 +53,7 @@ class JSONParserString extends JSONParserMemory {
     }
 
     @Override // com.nimbusds.jose.shaded.json.parser.JSONParserBase
-    public void readNoEnd() {
+    public void readNoEnd() throws ParseException {
         int i = this.pos + 1;
         this.pos = i;
         if (i < this.len) {

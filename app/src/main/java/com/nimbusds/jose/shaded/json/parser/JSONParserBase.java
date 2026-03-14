@@ -520,7 +520,7 @@ abstract class JSONParserBase {
 
     public abstract void readNQString(boolean[] zArr);
 
-    public abstract void readNoEnd();
+    public abstract void readNoEnd() throws ParseException;
 
     public abstract Object readNumber(boolean[] zArr);
 
