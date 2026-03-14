@@ -127,7 +127,7 @@ public abstract class EcCryptJweUtil {
         }
     }
 
-    public static String getJwe(SecretKey secretKey, String str) throws com.nimbusds.jose.KeyLengthException {
+    public static String getJwe(SecretKey secretKey, String str) throws com.nimbusds.jose.JOSEException {
         JWEObject jWEObject = new JWEObject(new JWEHeader(JWEAlgorithm.DIR, EncryptionMethod.A256GCM), new Payload(str));
         jWEObject.encrypt(new DirectEncrypter(secretKey));
         return jWEObject.serialize();

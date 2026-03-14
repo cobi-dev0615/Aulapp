@@ -24,7 +24,8 @@ class GifViewSavedState extends View.BaseSavedState {
         if (this.mStates[i] == null || !(drawable instanceof GifDrawable)) {
             return;
         }
-        ((GifDrawable) drawable).startAnimation(r3.mNativeInfoHandle.restoreSavedState(r4, r3.mBuffer));
+        GifDrawable gifDrawable = (GifDrawable) drawable;
+        gifDrawable.startAnimation(gifDrawable.mNativeInfoHandle.restoreSavedState(this.mStates[i], gifDrawable.mBuffer));
     }
 
     @Override // android.view.View.BaseSavedState, android.view.AbsSavedState, android.os.Parcelable
