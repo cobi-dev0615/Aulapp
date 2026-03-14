@@ -9,7 +9,7 @@ public abstract class JOSEObject implements Serializable {
     private Payload payload = null;
     private Base64URL[] parsedParts = null;
 
-    public static Base64URL[] split(String str) {
+    public static Base64URL[] split(String str) throws ParseException {
         String trim = str.trim();
         int indexOf = trim.indexOf(".");
         if (indexOf == -1) {

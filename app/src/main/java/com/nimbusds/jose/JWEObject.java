@@ -61,7 +61,7 @@ public class JWEObject extends JOSEObject {
         }
     }
 
-    public static JWEObject parse(String str) {
+    public static JWEObject parse(String str) throws ParseException {
         Base64URL[] split = JOSEObject.split(str);
         if (split.length == 5) {
             return new JWEObject(split[0], split[1], split[2], split[3], split[4]);
