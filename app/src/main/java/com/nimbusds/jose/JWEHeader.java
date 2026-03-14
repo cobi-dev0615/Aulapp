@@ -266,7 +266,7 @@ public final class JWEHeader extends CommonSEHeader {
         return parsedBase64URL.build();
     }
 
-    private static EncryptionMethod parseEncryptionMethod(Map<String, Object> map) {
+    private static EncryptionMethod parseEncryptionMethod(Map<String, Object> map) throws ParseException {
         return EncryptionMethod.parse(JSONObjectUtils.getString(map, "enc"));
     }
 
