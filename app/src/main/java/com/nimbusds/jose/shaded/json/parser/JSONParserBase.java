@@ -106,7 +106,7 @@ abstract class JSONParserBase {
         this.unrestictBigDigit = (i & 2048) > 0;
     }
 
-    public void checkControleChar() {
+    public void checkControleChar() throws ParseException {
         if (this.ignoreControlChar) {
             return;
         }
@@ -124,7 +124,7 @@ abstract class JSONParserBase {
         }
     }
 
-    public void checkLeadinZero() {
+    public void checkLeadinZero() throws ParseException {
         int length = this.xs.length();
         if (length == 1) {
             return;
@@ -149,7 +149,7 @@ abstract class JSONParserBase {
         }
     }
 
-    public Number extractFloat() {
+    public Number extractFloat() throws ParseException {
         if (!this.acceptLeadinZero) {
             checkLeadinZero();
         }
@@ -171,7 +171,7 @@ abstract class JSONParserBase {
         }
     }
 
-    public <T> T parse(JsonReaderI<T> jsonReaderI) {
+    public <T> T parse(JsonReaderI<T> jsonReaderI) throws ParseException {
         this.pos = -1;
         try {
             read();
@@ -187,12 +187,13 @@ abstract class JSONParserBase {
             this.xs = null;
             this.xo = null;
             return t;
-        } catch (IOException e) {
+        } catch (Exception e) {
+            if (e instanceof ParseException) throw (ParseException) e;
             throw new ParseException(this.pos, e);
         }
     }
 
-    public Number parseNumber(String str) {
+    public Number parseNumber(String str) throws ParseException {
         int i;
         int i2;
         int length = str.length();
@@ -281,7 +282,7 @@ abstract class JSONParserBase {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public <T> T readArray(JsonReaderI<T> jsonReaderI) {
+    public <T> T readArray(JsonReaderI<T> jsonReaderI) throws ParseException {
         Object createArray = jsonReaderI.createArray();
         if (this.c != '[') {
             throw new RuntimeException("Internal Error");
@@ -331,7 +332,7 @@ abstract class JSONParserBase {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public <T> T readFirst(JsonReaderI<T> jsonReaderI) {
+    public <T> T readFirst(JsonReaderI<T> jsonReaderI) throws ParseException {
         while (true) {
             char c = this.c;
             if (c != '\t' && c != '\n') {
@@ -430,7 +431,7 @@ abstract class JSONParserBase {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object readMain(JsonReaderI<?> jsonReaderI, boolean[] zArr) {
+    public Object readMain(JsonReaderI<?> jsonReaderI, boolean[] zArr) throws ParseException {
         while (true) {
             char c = this.c;
             if (c != '\t' && c != '\n') {
@@ -531,7 +532,7 @@ abstract class JSONParserBase {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public <T> T readObject(JsonReaderI<T> jsonReaderI) {
+    public <T> T readObject(JsonReaderI<T> jsonReaderI) throws ParseException {
         if (this.c != '{') {
             throw new RuntimeException("Internal Error");
         }
@@ -591,13 +592,14 @@ abstract class JSONParserBase {
                 z = true;
             }
         }
+        throw new ParseException(this.pos, 0, Character.valueOf(this.c));
     }
 
     public abstract void readS();
 
     public abstract void readString() throws ParseException;
 
-    public void readString2() {
+    public void readString2() throws ParseException {
         char c = this.c;
         while (true) {
             read();
@@ -687,7 +689,7 @@ abstract class JSONParserBase {
         }
     }
 
-    public char readUnicode(int i) {
+    public char readUnicode(int i) throws ParseException {
         int i2;
         int i3 = 0;
         for (int i4 = 0; i4 < i; i4++) {
