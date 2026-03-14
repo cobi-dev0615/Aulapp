@@ -22,7 +22,7 @@ abstract class JSONParserMemory extends JSONParserBase {
     }
 
     @Override // com.nimbusds.jose.shaded.json.parser.JSONParserBase
-    public Object readNumber(boolean[] zArr) {
+    public Object readNumber(boolean[] zArr) throws ParseException {
         int i = this.pos;
         read();
         skipDigits();
@@ -92,7 +92,7 @@ abstract class JSONParserMemory extends JSONParserBase {
     }
 
     @Override // com.nimbusds.jose.shaded.json.parser.JSONParserBase
-    public void readString() {
+    public void readString() throws ParseException {
         if (!this.acceptSimpleQuote && this.c == '\'') {
             if (!this.acceptNonQuote) {
                 throw new ParseException(this.pos, 0, Character.valueOf(this.c));

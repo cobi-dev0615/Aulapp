@@ -522,7 +522,7 @@ abstract class JSONParserBase {
 
     public abstract void readNoEnd() throws ParseException;
 
-    public abstract Object readNumber(boolean[] zArr);
+    public abstract Object readNumber(boolean[] zArr) throws ParseException;
 
     /* JADX WARN: Code restructure failed: missing block: B:72:0x00e7, code lost:
     
@@ -595,7 +595,7 @@ abstract class JSONParserBase {
 
     public abstract void readS();
 
-    public abstract void readString();
+    public abstract void readString() throws ParseException;
 
     public void readString2() {
         char c = this.c;
