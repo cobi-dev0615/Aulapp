@@ -145,14 +145,14 @@ class Frame {
                 int i7 = i4 & 1048575;
                 if (i6 == 16777216) {
                     i2 = this.inputLocals[i7];
+                } else if (i6 == 20971520) {
+                    int[] iArr = this.inputStack;
+                    i2 = iArr[iArr.length - i7];
                 } else {
-                    if (i6 == 20971520) {
-                        int[] iArr = this.inputStack;
-                        i2 = iArr[iArr.length - i7];
-                    }
                     if (i != i4) {
                         return (i == 4194310 ? symbolTable.addType(symbolTable.getClassName()) : symbolTable.addType(symbolTable.getType(i & 1048575).value)) | 8388608;
                     }
+                    continue;
                 }
                 i4 = i2 + i5;
                 if (i != i4) {
