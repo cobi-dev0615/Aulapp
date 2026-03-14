@@ -8,13 +8,14 @@ import com.google.firebase.crashlytics.internal.model.CrashlyticsReport;
 
 /* loaded from: classes.dex */
 public final /* synthetic */ class t3 implements Runnable {
-    public final /* synthetic */ int a = 0;
+    public final /* synthetic */ int a;
     public final /* synthetic */ boolean b;
     public final /* synthetic */ Object c;
     public final /* synthetic */ Object d;
     public final /* synthetic */ Object e;
 
     public /* synthetic */ t3(SpecialEffectsController.Operation operation, SpecialEffectsController.Operation operation2, boolean z, ArrayMap arrayMap) {
+        this.a = 0;
         this.c = operation;
         this.d = operation2;
         this.b = z;
@@ -33,6 +34,7 @@ public final /* synthetic */ class t3 implements Runnable {
     }
 
     public /* synthetic */ t3(SessionReportingCoordinator sessionReportingCoordinator, CrashlyticsReport.Session.Event event, Object eventMetadata, boolean z) {
+        this.a = 1;
         this.c = sessionReportingCoordinator;
         this.d = event;
         this.e = eventMetadata;

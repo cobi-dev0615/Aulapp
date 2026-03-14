@@ -8,11 +8,12 @@ import kotlin.jvm.internal.Intrinsics;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class k0 implements Observer, FunctionAdapter {
-    public final /* synthetic */ int a = 0;
+    public final /* synthetic */ int a;
     public final /* synthetic */ Function1 b;
 
     public k0(c0 function) {
         Intrinsics.checkNotNullParameter(function, "function");
+        this.a = 0;
         this.b = function;
     }
 
@@ -76,11 +77,13 @@ public final /* synthetic */ class k0 implements Observer, FunctionAdapter {
 
     public k0(z0 function) {
         Intrinsics.checkNotNullParameter(function, "function");
+        this.a = 1;
         this.b = function;
     }
 
     public k0(s4 function) {
         Intrinsics.checkNotNullParameter(function, "function");
+        this.a = 2;
         this.b = function;
     }
 }

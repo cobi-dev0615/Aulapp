@@ -14,11 +14,12 @@ import kotlin.jvm.internal.Intrinsics;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class p0 implements Function1 {
-    public final /* synthetic */ int a = 0;
+    public final /* synthetic */ int a;
     public final /* synthetic */ ClassInCourseFragment b;
     public final /* synthetic */ FragmentClassInCourseBinding c;
 
     public /* synthetic */ p0(FragmentClassInCourseBinding fragmentClassInCourseBinding, ClassInCourseFragment classInCourseFragment) {
+        this.a = 0;
         this.c = fragmentClassInCourseBinding;
         this.b = classInCourseFragment;
     }
@@ -103,6 +104,7 @@ public final /* synthetic */ class p0 implements Function1 {
     }
 
     public /* synthetic */ p0(ClassInCourseFragment classInCourseFragment, FragmentClassInCourseBinding fragmentClassInCourseBinding) {
+        this.a = 1;
         this.b = classInCourseFragment;
         this.c = fragmentClassInCourseBinding;
     }

@@ -9,12 +9,13 @@ import com.gse.aulapp.viewmodel.HomeViewModel$setupOnScrollListener$1;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class m6 implements View.OnClickListener {
-    public final /* synthetic */ int a = 0;
+    public final /* synthetic */ int a;
     public final /* synthetic */ int b;
     public final /* synthetic */ Object c;
     public final /* synthetic */ Object d;
 
     public /* synthetic */ m6(int i, RecyclerView recyclerView, HomeViewModel homeViewModel) {
+        this.a = 0;
         this.b = i;
         this.c = recyclerView;
         this.d = homeViewModel;
@@ -33,6 +34,7 @@ public final /* synthetic */ class m6 implements View.OnClickListener {
     }
 
     public /* synthetic */ m6(QuestionDto questionDto, QuestionStatusAdapter questionStatusAdapter, int i) {
+        this.a = 1;
         this.c = questionDto;
         this.d = questionStatusAdapter;
         this.b = i;

@@ -6,13 +6,14 @@ import com.gse.aulapp.viewmodel.ClassInCourseViewModel;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class e1 implements Runnable {
-    public final /* synthetic */ int a = 0;
+    public final /* synthetic */ int a;
     public final /* synthetic */ ClassInCourseViewModel b;
     public final /* synthetic */ Context c;
     public final /* synthetic */ String d;
     public final /* synthetic */ NavController e;
 
     public /* synthetic */ e1(ClassInCourseViewModel classInCourseViewModel, Context context, NavController navController, String str) {
+        this.a = 0;
         this.b = classInCourseViewModel;
         this.c = context;
         this.e = navController;
@@ -32,6 +33,7 @@ public final /* synthetic */ class e1 implements Runnable {
     }
 
     public /* synthetic */ e1(ClassInCourseViewModel classInCourseViewModel, Context context, String str, NavController navController) {
+        this.a = 1;
         this.b = classInCourseViewModel;
         this.c = context;
         this.d = str;

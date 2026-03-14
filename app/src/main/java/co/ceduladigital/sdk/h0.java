@@ -11,13 +11,14 @@ import kotlin.jvm.functions.Function1;
 
 /* loaded from: classes.dex */
 public final /* synthetic */ class h0 implements Function1 {
-    public final /* synthetic */ int a = 0;
+    public final /* synthetic */ int a;
     public final /* synthetic */ Context b;
     public final /* synthetic */ Object c;
     public final /* synthetic */ Object d;
     public final /* synthetic */ Object e;
 
     public /* synthetic */ h0(Context context, ClassDetailRecyclerAdapter.ClassDetailViewHolder classDetailViewHolder, String str, Function1 function1) {
+        this.a = 0;
         this.b = context;
         this.c = classDetailViewHolder;
         this.d = str;
@@ -39,6 +40,7 @@ public final /* synthetic */ class h0 implements Function1 {
     }
 
     public /* synthetic */ h0(HomeViewModel homeViewModel, Context context, Activity activity, FragmentHomeBinding fragmentHomeBinding) {
+        this.a = 1;
         this.c = homeViewModel;
         this.b = context;
         this.d = activity;
