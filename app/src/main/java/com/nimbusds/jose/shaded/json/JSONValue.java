@@ -3,6 +3,7 @@ package com.nimbusds.jose.shaded.json;
 import com.nimbusds.jose.shaded.json.reader.JsonWriter;
 import com.nimbusds.jose.shaded.json.reader.JsonWriterI;
 import com.nimbusds.jose.shaded.json.writer.JsonReader;
+import java.io.IOException;
 
 /* loaded from: classes2.dex */
 public abstract class JSONValue {
@@ -17,7 +18,7 @@ public abstract class JSONValue {
         jSONStyle.escape(str, appendable);
     }
 
-    public static void writeJSONString(Object obj, Appendable appendable, JSONStyle jSONStyle) {
+    public static void writeJSONString(Object obj, Appendable appendable, JSONStyle jSONStyle) throws IOException {
         if (obj == null) {
             appendable.append("null");
             return;
