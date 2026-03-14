@@ -42,7 +42,7 @@ public class OctetKeyPair extends JWK {
         this.decodedD = null;
     }
 
-    public static OctetKeyPair parse(Map<String, Object> map) {
+    public static OctetKeyPair parse(Map<String, Object> map) throws ParseException {
         if (!KeyType.OKP.equals(JWKMetadata.parseKeyType(map))) {
             throw new ParseException("The key type \"kty\" must be OKP", 0);
         }
