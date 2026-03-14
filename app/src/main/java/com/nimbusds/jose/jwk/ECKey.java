@@ -64,7 +64,7 @@ public final class ECKey extends JWK {
         throw new IllegalArgumentException("Invalid EC JWK: The 'x' and 'y' public coordinates are not on the " + curve + " curve");
     }
 
-    public static ECKey parse(Map<String, Object> map) {
+    public static ECKey parse(Map<String, Object> map) throws ParseException {
         if (!KeyType.EC.equals(JWKMetadata.parseKeyType(map))) {
             throw new ParseException("The key type \"kty\" must be EC", 0);
         }
