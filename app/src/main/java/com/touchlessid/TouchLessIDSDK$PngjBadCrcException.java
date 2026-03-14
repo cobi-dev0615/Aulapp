@@ -313,7 +313,7 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
         }
     }
 
-    private static void c(String str, boolean z, int[] iArr, Object[] objArr) {
+    private static void c(String str, boolean z, int[] iArr, Object[] objArr) throws Exception {
         int length;
         char[] cArr;
         byte[] bArr;
