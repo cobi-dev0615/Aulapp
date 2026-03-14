@@ -2319,6 +2319,8 @@ public class ClassReader {
             if (readUnsignedShort2 <= 0) {
                 break;
             }
+            i4 = i6;
+            i3 = 0;
             int i12 = i7;
             String readUTF83 = readUTF8(i5, cArr);
             int readInt = readInt(i5 + 2);
@@ -2464,9 +2466,9 @@ public class ClassReader {
         int i2;
         char[] cArr;
         int i3;
-        int i4;
-        int i5;
-        char[] cArr2;
+        int i4 = 0;
+        int i5 = 0;
+        char[] cArr2 = null;
         ClassReader classReader = this;
         char[] cArr3 = context.charBuffer;
         context.currentMethodAccessFlags = classReader.readUnsignedShort(i);
@@ -2494,6 +2496,9 @@ public class ClassReader {
             if (readUnsignedShort <= 0) {
                 break;
             }
+            i4 = i10;
+            i5 = 0;
+            cArr2 = cArr3;
             int i20 = i8;
             String readUTF8 = classReader.readUTF8(i7, cArr3);
             int readInt = classReader.readInt(i7 + 2);
@@ -2867,6 +2872,9 @@ public class ClassReader {
                     i2 = i7;
                 } else if ("RuntimeVisibleTypeAnnotations".equals(readUTF83)) {
                     i2 = i10;
+                    attribute = attribute2;
+                    i3 = readInt;
+                    i10 = i5;
                 } else if ("RuntimeInvisibleAnnotations".equals(readUTF83)) {
                     i8 = i10;
                     attribute = attribute2;
