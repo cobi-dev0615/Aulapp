@@ -150,7 +150,7 @@ public class JWEObject extends JOSEObject {
         return sb.toString();
     }
 
-    public JWEObject(Base64URL base64URL, Base64URL base64URL2, Base64URL base64URL3, Base64URL base64URL4, Base64URL base64URL5) {
+    public JWEObject(Base64URL base64URL, Base64URL base64URL2, Base64URL base64URL3, Base64URL base64URL4, Base64URL base64URL5) throws ParseException {
         if (base64URL != null) {
             try {
                 this.header = JWEHeader.parse(base64URL);
