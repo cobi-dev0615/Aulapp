@@ -27,7 +27,7 @@ class DynamicClassLoader extends ClassLoader {
     }
 
     @Override // java.lang.ClassLoader
-    public synchronized Class<?> loadClass(String str, boolean z) {
+    public synchronized Class<?> loadClass(String str, boolean z) throws ClassNotFoundException {
         if (str.equals(BEAN_AC)) {
             return BeansAccess.class;
         }
