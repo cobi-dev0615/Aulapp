@@ -11,7 +11,7 @@ public class BeansWriter implements JsonWriterI<Object> {
     @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
     public <E> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) throws IOException {
         Method method;
-        Object invoke;
+        Object invoke = null;
         Class<?> type;
         try {
             jSONStyle.objectStart(appendable);
