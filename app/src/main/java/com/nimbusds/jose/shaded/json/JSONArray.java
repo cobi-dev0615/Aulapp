@@ -16,7 +16,7 @@ public class JSONArray extends ArrayList<Object> implements List<Object>, JSONAw
         return sb.toString();
     }
 
-    public static void writeJSONString(Iterable<? extends Object> iterable, Appendable appendable, JSONStyle jSONStyle) {
+    public static void writeJSONString(Iterable<? extends Object> iterable, Appendable appendable, JSONStyle jSONStyle) throws IOException {
         if (iterable == null) {
             appendable.append("null");
         } else {
@@ -31,7 +31,10 @@ public class JSONArray extends ArrayList<Object> implements List<Object>, JSONAw
 
     @Override // com.nimbusds.jose.shaded.json.JSONStreamAware
     public void writeJSONString(Appendable appendable) {
-        writeJSONString(this, appendable, JSONValue.COMPRESSION);
+        try {
+            writeJSONString(this, appendable, JSONValue.COMPRESSION);
+        } catch (IOException unused) {
+        }
     }
 
     @Override // com.nimbusds.jose.shaded.json.JSONAware
@@ -41,7 +44,10 @@ public class JSONArray extends ArrayList<Object> implements List<Object>, JSONAw
 
     @Override // com.nimbusds.jose.shaded.json.JSONStreamAwareEx
     public void writeJSONString(Appendable appendable, JSONStyle jSONStyle) {
-        writeJSONString(this, appendable, jSONStyle);
+        try {
+            writeJSONString(this, appendable, jSONStyle);
+        } catch (IOException unused) {
+        }
     }
 
     @Override // com.nimbusds.jose.shaded.json.JSONAwareEx
