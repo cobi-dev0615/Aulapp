@@ -18,61 +18,24 @@ public final /* synthetic */ class k0 implements Observer, FunctionAdapter {
     }
 
     public final boolean equals(Object obj) {
-        switch (this.a) {
-            case 0:
-                if ((obj instanceof Observer) && (obj instanceof FunctionAdapter)) {
-                    return Intrinsics.areEqual((c0) this.b, ((FunctionAdapter) obj).getFunctionDelegate());
-                }
-                return false;
-            case 1:
-                if ((obj instanceof Observer) && (obj instanceof FunctionAdapter)) {
-                    return Intrinsics.areEqual((z0) this.b, ((FunctionAdapter) obj).getFunctionDelegate());
-                }
-                return false;
-            default:
-                if ((obj instanceof Observer) && (obj instanceof FunctionAdapter)) {
-                    return Intrinsics.areEqual((s4) this.b, ((FunctionAdapter) obj).getFunctionDelegate());
-                }
-                return false;
+        if ((obj instanceof Observer) && (obj instanceof FunctionAdapter)) {
+            return Intrinsics.areEqual(this.b, ((FunctionAdapter) obj).getFunctionDelegate());
         }
+        return false;
     }
 
     @Override // kotlin.jvm.internal.FunctionAdapter
     public final Function getFunctionDelegate() {
-        switch (this.a) {
-            case 0:
-                return (c0) this.b;
-            case 1:
-                return (z0) this.b;
-            default:
-                return (s4) this.b;
-        }
+        return this.b;
     }
 
     public final int hashCode() {
-        switch (this.a) {
-            case 0:
-                return ((c0) this.b).hashCode();
-            case 1:
-                return ((z0) this.b).hashCode();
-            default:
-                return ((s4) this.b).hashCode();
-        }
+        return this.b.hashCode();
     }
 
     @Override // androidx.lifecycle.Observer
     public final /* synthetic */ void onChanged(Object obj) {
-        switch (this.a) {
-            case 0:
-                ((c0) this.b).invoke(obj);
-                break;
-            case 1:
-                ((z0) this.b).invoke(obj);
-                break;
-            default:
-                ((s4) this.b).invoke(obj);
-                break;
-        }
+        this.b.invoke(obj);
     }
 
     public k0(z0 function) {

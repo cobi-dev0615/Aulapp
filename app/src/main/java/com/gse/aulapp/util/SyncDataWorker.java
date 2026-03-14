@@ -78,40 +78,34 @@ public final class SyncDataWorker extends CoroutineWorker {
     public Object doWork(Continuation continuation) {
         SyncDataWorker$doWork$1 syncDataWorker$doWork$1;
         int i;
+        Object obj;
         if (continuation instanceof SyncDataWorker$doWork$1) {
             syncDataWorker$doWork$1 = (SyncDataWorker$doWork$1) continuation;
             int i2 = syncDataWorker$doWork$1.label;
             if ((i2 & IntCompanionObject.MIN_VALUE) != 0) {
                 syncDataWorker$doWork$1.label = i2 - IntCompanionObject.MIN_VALUE;
-                Object obj = syncDataWorker$doWork$1.result;
-                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-                i = syncDataWorker$doWork$1.label;
-                if (i != 0) {
-                    ResultKt.throwOnFailure(obj);
-                    CoroutineDispatcher io2 = Dispatchers.getIO();
-                    SyncDataWorker$doWork$2 syncDataWorker$doWork$2 = new SyncDataWorker$doWork$2(this, null);
-                    syncDataWorker$doWork$1.label = 1;
-                    obj = BuildersKt.withContext(io2, syncDataWorker$doWork$2, syncDataWorker$doWork$1);
-                    if (obj == coroutine_suspended) {
-                        return coroutine_suspended;
-                    }
-                } else {
-                    if (i != 1) {
-                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                    }
-                    ResultKt.throwOnFailure(obj);
-                }
-                Intrinsics.checkNotNullExpressionValue(obj, "withContext(...)");
-                return obj;
             }
+        } else {
+            syncDataWorker$doWork$1 = new SyncDataWorker$doWork$1(this, continuation);
         }
-        syncDataWorker$doWork$1 = new SyncDataWorker$doWork$1(this, continuation);
-        Object obj2 = syncDataWorker$doWork$1.result;
-        Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        obj = syncDataWorker$doWork$1.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = syncDataWorker$doWork$1.label;
-        if (i != 0) {
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            CoroutineDispatcher io2 = Dispatchers.getIO();
+            SyncDataWorker$doWork$2 syncDataWorker$doWork$2 = new SyncDataWorker$doWork$2(this, null);
+            syncDataWorker$doWork$1.label = 1;
+            obj = BuildersKt.withContext(io2, syncDataWorker$doWork$2, syncDataWorker$doWork$1);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (i == 1) {
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        Intrinsics.checkNotNullExpressionValue(obj2, "withContext(...)");
-        return obj2;
+        Intrinsics.checkNotNullExpressionValue(obj, "withContext(...)");
+        return obj;
     }
 }
