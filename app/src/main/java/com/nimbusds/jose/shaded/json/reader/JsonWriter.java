@@ -6,6 +6,7 @@ import com.nimbusds.jose.shaded.json.JSONStreamAware;
 import com.nimbusds.jose.shaded.json.JSONStreamAwareEx;
 import com.nimbusds.jose.shaded.json.JSONStyle;
 import com.nimbusds.jose.shaded.json.JSONValue;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
@@ -21,31 +22,31 @@ public class JsonWriter {
     private LinkedList<WriterByInterface> writerInterfaces = new LinkedList<>();
     public static final JsonWriterI<JSONStreamAwareEx> JSONStreamAwareWriter = new JsonWriterI<JSONStreamAwareEx>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.1
         @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-        public <E extends JSONStreamAwareEx> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) {
+        public <E extends JSONStreamAwareEx> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) throws IOException {
             e.writeJSONString(appendable);
         }
     };
     public static final JsonWriterI<JSONStreamAwareEx> JSONStreamAwareExWriter = new JsonWriterI<JSONStreamAwareEx>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.2
         @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-        public <E extends JSONStreamAwareEx> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) {
+        public <E extends JSONStreamAwareEx> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) throws IOException {
             e.writeJSONString(appendable, jSONStyle);
         }
     };
     public static final JsonWriterI<JSONAwareEx> JSONJSONAwareExWriter = new JsonWriterI<JSONAwareEx>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.3
         @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-        public <E extends JSONAwareEx> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) {
+        public <E extends JSONAwareEx> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) throws IOException {
             appendable.append(e.toJSONString(jSONStyle));
         }
     };
     public static final JsonWriterI<JSONAware> JSONJSONAwareWriter = new JsonWriterI<JSONAware>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.4
         @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-        public <E extends JSONAware> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) {
+        public <E extends JSONAware> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) throws IOException {
             appendable.append(e.toJSONString());
         }
     };
     public static final JsonWriterI<Iterable<? extends Object>> JSONIterableWriter = new JsonWriterI<Iterable<? extends Object>>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.5
         @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-        public <E extends Iterable<? extends Object>> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) {
+        public <E extends Iterable<? extends Object>> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) throws IOException {
             jSONStyle.arrayStart(appendable);
             boolean z = true;
             for (Object obj : e) {
@@ -67,13 +68,13 @@ public class JsonWriter {
     };
     public static final JsonWriterI<Enum<?>> EnumWriter = new JsonWriterI<Enum<?>>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.6
         @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-        public <E extends Enum<?>> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) {
+        public <E extends Enum<?>> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) throws IOException {
             jSONStyle.writeString(appendable, e.name());
         }
     };
     public static final JsonWriterI<Map<String, ? extends Object>> JSONMapWriter = new JsonWriterI<Map<String, ? extends Object>>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.7
         @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-        public <E extends Map<String, ? extends Object>> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) {
+        public <E extends Map<String, ? extends Object>> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) throws IOException {
             jSONStyle.objectStart(appendable);
             boolean z = true;
             for (Map.Entry entry : e.entrySet()) {
@@ -96,7 +97,7 @@ public class JsonWriter {
     public static final JsonWriterI<Object> arrayWriter = new ArrayWriter();
     public static final JsonWriterI<Object> toStringWriter = new JsonWriterI<Object>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.8
         @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-        public void writeJSONString(Object obj, Appendable appendable, JSONStyle jSONStyle) {
+        public void writeJSONString(Object obj, Appendable appendable, JSONStyle jSONStyle) throws IOException {
             appendable.append(obj.toString());
         }
     };
@@ -115,7 +116,7 @@ public class JsonWriter {
         init();
     }
 
-    public static void writeJSONKV(String str, Object obj, Appendable appendable, JSONStyle jSONStyle) {
+    public static void writeJSONKV(String str, Object obj, Appendable appendable, JSONStyle jSONStyle) throws IOException {
         if (str == null) {
             appendable.append("null");
         } else if (jSONStyle.mustProtectKey(str)) {
@@ -152,13 +153,13 @@ public class JsonWriter {
     public void init() {
         registerWriter(new JsonWriterI<String>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.9
             @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-            public void writeJSONString(String str, Appendable appendable, JSONStyle jSONStyle) {
+            public void writeJSONString(String str, Appendable appendable, JSONStyle jSONStyle) throws IOException {
                 jSONStyle.writeString(appendable, str);
             }
         }, String.class);
         registerWriter(new JsonWriterI<Double>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.10
             @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-            public void writeJSONString(Double d, Appendable appendable, JSONStyle jSONStyle) {
+            public void writeJSONString(Double d, Appendable appendable, JSONStyle jSONStyle) throws IOException {
                 if (d.isInfinite()) {
                     appendable.append("null");
                 } else {
@@ -168,7 +169,7 @@ public class JsonWriter {
         }, Double.class);
         registerWriter(new JsonWriterI<Date>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.11
             @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-            public void writeJSONString(Date date, Appendable appendable, JSONStyle jSONStyle) {
+            public void writeJSONString(Date date, Appendable appendable, JSONStyle jSONStyle) throws IOException {
                 appendable.append(Typography.quote);
                 JSONValue.escape(date.toString(), appendable, jSONStyle);
                 appendable.append(Typography.quote);
@@ -176,7 +177,7 @@ public class JsonWriter {
         }, Date.class);
         registerWriter(new JsonWriterI<Float>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.12
             @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-            public void writeJSONString(Float f, Appendable appendable, JSONStyle jSONStyle) {
+            public void writeJSONString(Float f, Appendable appendable, JSONStyle jSONStyle) throws IOException {
                 if (f.isInfinite()) {
                     appendable.append("null");
                 } else {
@@ -189,7 +190,7 @@ public class JsonWriter {
         registerWriter(jsonWriterI, Boolean.class);
         registerWriter(new JsonWriterI<int[]>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.13
             @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-            public void writeJSONString(int[] iArr, Appendable appendable, JSONStyle jSONStyle) {
+            public void writeJSONString(int[] iArr, Appendable appendable, JSONStyle jSONStyle) throws IOException {
                 jSONStyle.arrayStart(appendable);
                 boolean z = false;
                 for (int i : iArr) {
@@ -205,7 +206,7 @@ public class JsonWriter {
         }, int[].class);
         registerWriter(new JsonWriterI<short[]>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.14
             @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-            public void writeJSONString(short[] sArr, Appendable appendable, JSONStyle jSONStyle) {
+            public void writeJSONString(short[] sArr, Appendable appendable, JSONStyle jSONStyle) throws IOException {
                 jSONStyle.arrayStart(appendable);
                 boolean z = false;
                 for (short s : sArr) {
@@ -221,7 +222,7 @@ public class JsonWriter {
         }, short[].class);
         registerWriter(new JsonWriterI<long[]>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.15
             @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-            public void writeJSONString(long[] jArr, Appendable appendable, JSONStyle jSONStyle) {
+            public void writeJSONString(long[] jArr, Appendable appendable, JSONStyle jSONStyle) throws IOException {
                 jSONStyle.arrayStart(appendable);
                 boolean z = false;
                 for (long j : jArr) {
@@ -237,7 +238,7 @@ public class JsonWriter {
         }, long[].class);
         registerWriter(new JsonWriterI<float[]>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.16
             @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-            public void writeJSONString(float[] fArr, Appendable appendable, JSONStyle jSONStyle) {
+            public void writeJSONString(float[] fArr, Appendable appendable, JSONStyle jSONStyle) throws IOException {
                 jSONStyle.arrayStart(appendable);
                 boolean z = false;
                 for (float f : fArr) {
@@ -253,7 +254,7 @@ public class JsonWriter {
         }, float[].class);
         registerWriter(new JsonWriterI<double[]>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.17
             @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-            public void writeJSONString(double[] dArr, Appendable appendable, JSONStyle jSONStyle) {
+            public void writeJSONString(double[] dArr, Appendable appendable, JSONStyle jSONStyle) throws IOException {
                 jSONStyle.arrayStart(appendable);
                 boolean z = false;
                 for (double d : dArr) {
@@ -269,7 +270,7 @@ public class JsonWriter {
         }, double[].class);
         registerWriter(new JsonWriterI<boolean[]>() { // from class: com.nimbusds.jose.shaded.json.reader.JsonWriter.18
             @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-            public void writeJSONString(boolean[] zArr, Appendable appendable, JSONStyle jSONStyle) {
+            public void writeJSONString(boolean[] zArr, Appendable appendable, JSONStyle jSONStyle) throws IOException {
                 jSONStyle.arrayStart(appendable);
                 boolean z = false;
                 for (boolean z2 : zArr) {

@@ -2,13 +2,14 @@ package com.nimbusds.jose.shaded.json.reader;
 
 import com.nimbusds.jose.shaded.json.JSONStyle;
 import com.nimbusds.jose.shaded.json.JSONUtil;
+import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /* loaded from: classes2.dex */
 public class BeansWriter implements JsonWriterI<Object> {
     @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-    public <E> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) {
+    public <E> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) throws IOException {
         Method method;
         Object invoke;
         Class<?> type;

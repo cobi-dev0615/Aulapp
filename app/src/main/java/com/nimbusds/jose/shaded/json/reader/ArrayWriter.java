@@ -2,12 +2,13 @@ package com.nimbusds.jose.shaded.json.reader;
 
 import com.nimbusds.jose.shaded.json.JSONStyle;
 import com.nimbusds.jose.shaded.json.JSONValue;
+import java.io.IOException;
 
 /* loaded from: classes2.dex */
 public class ArrayWriter implements JsonWriterI<Object> {
     /* JADX WARN: Multi-variable type inference failed */
     @Override // com.nimbusds.jose.shaded.json.reader.JsonWriterI
-    public <E> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) {
+    public <E> void writeJSONString(E e, Appendable appendable, JSONStyle jSONStyle) throws IOException {
         jSONStyle.arrayStart(appendable);
         boolean z = false;
         for (Object obj : (Object[]) e) {
