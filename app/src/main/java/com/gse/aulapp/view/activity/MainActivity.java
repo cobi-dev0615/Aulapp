@@ -330,9 +330,11 @@ public final class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        /* Device security check disabled for development
         if (new DeviceSecurityCheckerUtil(this).validateMapDeviceSecurity()) {
             NavigationUtil.INSTANCE.dialogEmulator(this);
         }
+        */
         startWorkerSync();
     }
 
