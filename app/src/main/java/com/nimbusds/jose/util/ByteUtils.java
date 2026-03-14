@@ -27,7 +27,7 @@ public abstract class ByteUtils {
         }
     }
 
-    public static int safeBitLength(int i) {
+    public static int safeBitLength(int i) throws IntegerOverflowException {
         long j = i * 8;
         int i2 = (int) j;
         if (i2 == j) {
@@ -49,7 +49,7 @@ public abstract class ByteUtils {
         return bitLength(bArr.length);
     }
 
-    public static int safeBitLength(byte[] bArr) {
+    public static int safeBitLength(byte[] bArr) throws IntegerOverflowException {
         if (bArr == null) {
             return 0;
         }
