@@ -87,6 +87,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
             if (i2 == i6) {
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -156,7 +157,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         }
     }
 
-    private static void b(int[] iArr, int i, String str, String str2, Object[] objArr) {
+    private static void b(int[] iArr, int i, String str, String str2, Object[] objArr) throws Exception {
         char[] cArr;
         int i2;
         int i3;
@@ -329,7 +330,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         }
     }
 
-    private static void c(String str, boolean z, int[] iArr, Object[] objArr) {
+    private static void c(String str, boolean z, int[] iArr, Object[] objArr) throws Exception {
         byte[] bArr;
         byte b;
         long j;
@@ -747,20 +748,20 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
         int i11;
         int i12;
         BufferedInputStream bufferedInputStream;
-        BufferedInputStream bufferedInputStream2;
-        int i13;
+        BufferedInputStream bufferedInputStream2 = null;
+        int i13 = 0;
         int i14;
         BufferedInputStream bufferedInputStream3;
-        BufferedInputStream bufferedInputStream4;
-        int i15;
+        BufferedInputStream bufferedInputStream4 = null;
+        int i15 = 0;
         boolean z5;
         Object[] objArr;
         char c;
         Class cls3;
-        long j;
-        long j2;
+        long j = 0;
+        long j2 = 0;
         Class cls4;
-        Object[] objArr2;
+        Object[] objArr2 = null;
         boolean z6;
         boolean z7;
         Object obj2;
@@ -2005,7 +2006,7 @@ public abstract class TouchLessIDSDK$values implements IdentyResponseListener {
                                                                                                     }
                                                                                                     throw new RuntimeException(th2);
                                                                                                 }
-                                                                                            } catch (IOException unused5) {
+                                                                                            } catch (Exception unused5) {
                                                                                             }
                                                                                             try {
                                                                                                 bufferedInputStream2.close();
