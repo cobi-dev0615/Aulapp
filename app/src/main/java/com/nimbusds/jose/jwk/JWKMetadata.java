@@ -21,11 +21,11 @@ abstract class JWKMetadata {
         return JSONObjectUtils.getString(map, "kid");
     }
 
-    public static Set<KeyOperation> parseKeyOperations(Map<String, Object> map) {
+    public static Set<KeyOperation> parseKeyOperations(Map<String, Object> map) throws ParseException {
         return KeyOperation.parse(JSONObjectUtils.getStringList(map, "key_ops"));
     }
 
-    public static KeyType parseKeyType(Map<String, Object> map) {
+    public static KeyType parseKeyType(Map<String, Object> map) throws ParseException {
         try {
             return KeyType.parse(JSONObjectUtils.getString(map, "kty"));
         } catch (IllegalArgumentException e) {
@@ -33,7 +33,7 @@ abstract class JWKMetadata {
         }
     }
 
-    public static KeyUse parseKeyUse(Map<String, Object> map) {
+    public static KeyUse parseKeyUse(Map<String, Object> map) throws ParseException {
         return KeyUse.parse(JSONObjectUtils.getString(map, "use"));
     }
 
