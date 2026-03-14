@@ -51,7 +51,6 @@ abstract class JStylerObj {
                                     appendable.append("0123456789ABCDEF".charAt(charAt & 15));
                                     break;
                                 }
-                                break;
                         }
                     } else {
                         appendable.append("\\\\");
