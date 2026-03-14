@@ -134,15 +134,21 @@ public class ClassReader {
             } else if (charAt != 'L') {
                 if (charAt != 'S' && charAt != 'I') {
                     if (charAt == 'J') {
-                        i = i2 + 1;
                         objArr[i2] = Opcodes.LONG;
+                        i2++;
+                        i3 = i4;
+                        continue;
                     } else if (charAt != 'Z') {
                         if (charAt != '[') {
                             switch (charAt) {
                                 case 'D':
-                                    i = i2 + 1;
                                     objArr[i2] = Opcodes.DOUBLE;
-                                    break;
+                                    i2++;
+                                    i3 = i4;
+                                    continue;
+                                default:
+                                    context.currentFrameLocalCount = i2;
+                                    return;
                             }
                         } else {
                             while (str.charAt(i4) == '[') {
@@ -157,6 +163,7 @@ public class ClassReader {
                             objArr[i2] = str.substring(i3, i5);
                             i3 = i5;
                             i2++;
+                            continue;
                         }
                     }
                 }
@@ -170,6 +177,7 @@ public class ClassReader {
                 objArr[i2] = str.substring(i4, i6);
                 i2++;
                 i3 = i6 + 1;
+                continue;
             }
             i2 = i;
             i3 = i4;
@@ -998,6 +1006,7 @@ public class ClassReader {
                                             i11 = i46;
                                             i12 = i50;
                                             z10 = z2;
+                                            i19 = i10;
                                             while (iArr13 != null) {
                                                 if (i11 != i53) {
                                                 }
@@ -2005,6 +2014,7 @@ public class ClassReader {
                                     readUnsignedShort12 = i97;
                                 } else {
                                     i40 = i95;
+                                    break;
                                 }
                             }
                         }
@@ -2018,11 +2028,19 @@ public class ClassReader {
                             b2 = b3;
                         } else if ("RuntimeInvisibleTypeAnnotations".equals(readUTF88)) {
                             iArr7 = classReader2.readTypeAnnotations(methodVisitor3, context, i95, false);
+                            classReader = classReader2;
+                            labelArr2 = labelArr3;
+                            b2 = b3;
+                            iArr5 = iArr6;
                         } else if ("StackMapTable".equals(readUTF88)) {
                             if ((context.parsingOptions & 4) == 0) {
                                 i38 = i37 + 8;
                                 i39 = i95 + readInt7;
                             }
+                            classReader = classReader2;
+                            labelArr2 = labelArr3;
+                            b2 = b3;
+                            iArr5 = iArr6;
                         } else if (!"StackMap".equals(readUTF88)) {
                             int[] iArr18 = iArr6;
                             b2 = b3;
@@ -2040,6 +2058,11 @@ public class ClassReader {
                             z7 = false;
                             classReader = classReader2;
                             labelArr2 = labelArr3;
+                        } else {
+                            classReader = classReader2;
+                            labelArr2 = labelArr3;
+                            b2 = b3;
+                            iArr5 = iArr6;
                         }
                         labelArr3 = labelArr2;
                         classReader2 = classReader;
@@ -3597,6 +3620,8 @@ public class ClassReader {
                 if (readUnsignedShort3 > 0) {
                     i2 += readInt(i2 + 2) + 6;
                     readUnsignedShort3 = i4;
+                } else {
+                    break;
                 }
             }
             readUnsignedShort2 = i3;
@@ -3615,6 +3640,8 @@ public class ClassReader {
                 if (readUnsignedShort5 > 0) {
                     i5 += readInt(i5 + 2) + 6;
                     readUnsignedShort5 = i7;
+                } else {
+                    break;
                 }
             }
             readUnsignedShort4 = i6;
