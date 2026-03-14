@@ -21,7 +21,7 @@ public class JSONParser {
         return this.pString;
     }
 
-    public Object parse(String str) {
+    public Object parse(String str) throws ParseException {
         return getPString().parse(str);
     }
 }
