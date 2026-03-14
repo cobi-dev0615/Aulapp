@@ -14,7 +14,7 @@ import java.util.Map;
 
 /* loaded from: classes2.dex */
 public abstract class JSONObjectUtils {
-    public static Base64URL getBase64URL(Map<String, Object> map, String str) {
+    public static Base64URL getBase64URL(Map<String, Object> map, String str) throws ParseException {
         String string = getString(map, str);
         if (string == null) {
             return null;
@@ -22,7 +22,7 @@ public abstract class JSONObjectUtils {
         return new Base64URL(string);
     }
 
-    private static <T> T getGeneric(Map<String, Object> map, String str, Class<T> cls) {
+    private static <T> T getGeneric(Map<String, Object> map, String str, Class<T> cls) throws ParseException {
         if (map.get(str) == null) {
             return null;
         }
@@ -33,7 +33,7 @@ public abstract class JSONObjectUtils {
         throw new ParseException(a.m("Unexpected type of JSON object member with key \"", str, "\""), 0);
     }
 
-    public static int getInt(Map<String, Object> map, String str) {
+    public static int getInt(Map<String, Object> map, String str) throws ParseException {
         Number number = (Number) getGeneric(map, str, Number.class);
         if (number != null) {
             return number.intValue();
@@ -41,19 +41,19 @@ public abstract class JSONObjectUtils {
         throw new ParseException(a.m("JSON object member with key \"", str, "\" is missing or null"), 0);
     }
 
-    public static List<Object> getJSONArray(Map<String, Object> map, String str) {
+    public static List<Object> getJSONArray(Map<String, Object> map, String str) throws ParseException {
         return (List) getGeneric(map, str, List.class);
     }
 
-    public static Map<String, Object> getJSONObject(Map<String, Object> map, String str) {
+    public static Map<String, Object> getJSONObject(Map<String, Object> map, String str) throws ParseException {
         return (Map) getGeneric(map, str, JSONObject.class);
     }
 
-    public static String getString(Map<String, Object> map, String str) {
+    public static String getString(Map<String, Object> map, String str) throws ParseException {
         return (String) getGeneric(map, str, String.class);
     }
 
-    public static String[] getStringArray(Map<String, Object> map, String str) {
+    public static String[] getStringArray(Map<String, Object> map, String str) throws ParseException {
         List<Object> jSONArray = getJSONArray(map, str);
         if (jSONArray == null) {
             return null;
@@ -65,7 +65,7 @@ public abstract class JSONObjectUtils {
         }
     }
 
-    public static List<String> getStringList(Map<String, Object> map, String str) {
+    public static List<String> getStringList(Map<String, Object> map, String str) throws ParseException {
         String[] stringArray = getStringArray(map, str);
         if (stringArray == null) {
             return null;
@@ -73,7 +73,7 @@ public abstract class JSONObjectUtils {
         return Arrays.asList(stringArray);
     }
 
-    public static URI getURI(Map<String, Object> map, String str) {
+    public static URI getURI(Map<String, Object> map, String str) throws ParseException {
         String string = getString(map, str);
         if (string == null) {
             return null;
@@ -89,7 +89,7 @@ public abstract class JSONObjectUtils {
         return new HashMap();
     }
 
-    public static Map<String, Object> parse(String str, int i) {
+    public static Map<String, Object> parse(String str, int i) throws ParseException {
         if (i >= 0 && str.length() > i) {
             throw new ParseException(q.f(i, "The parsed string is longer than the max accepted size of ", " characters"), 0);
         }
