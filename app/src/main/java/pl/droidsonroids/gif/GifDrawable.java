@@ -16,6 +16,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.SystemClock;
 import android.widget.MediaController;
+import java.io.IOException;
 import java.util.Locale;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ScheduledFuture;
@@ -355,7 +356,7 @@ public class GifDrawable extends Drawable implements Animatable, MediaController
         this(new GifInfoHandle(assetFileDescriptor), null, null, true);
     }
 
-    public GifDrawable(ContentResolver contentResolver, Uri uri) {
+    public GifDrawable(ContentResolver contentResolver, Uri uri) throws IOException {
         this(GifInfoHandle.openUri(contentResolver, uri), null, null, true);
     }
 
