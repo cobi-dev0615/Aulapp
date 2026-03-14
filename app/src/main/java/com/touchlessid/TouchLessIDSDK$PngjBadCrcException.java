@@ -64,6 +64,7 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
             if (i2 == i5) {
             }
         }
+        return new String(bArr2, 0);
     }
 
     static {
@@ -138,7 +139,7 @@ public abstract class TouchLessIDSDK$PngjBadCrcException implements Initializati
         }
     }
 
-    private static void b(int[] iArr, int i, Object[] objArr) {
+    private static void b(int[] iArr, int i, Object[] objArr) throws Exception {
         int i2;
         int i3;
         char c;
