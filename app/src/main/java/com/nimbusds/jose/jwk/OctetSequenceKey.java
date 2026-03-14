@@ -24,7 +24,7 @@ public final class OctetSequenceKey extends JWK {
         this.k = base64URL;
     }
 
-    public static OctetSequenceKey parse(Map<String, Object> map) {
+    public static OctetSequenceKey parse(Map<String, Object> map) throws ParseException {
         if (!KeyType.OCT.equals(JWKMetadata.parseKeyType(map))) {
             throw new ParseException("The key type \"kty\" must be oct", 0);
         }
