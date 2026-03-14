@@ -45,7 +45,7 @@ public class JWEObject extends JOSEObject {
         }
     }
 
-    private void ensureJWEEncrypterSupport(JWEEncrypter jWEEncrypter) {
+    private void ensureJWEEncrypterSupport(JWEEncrypter jWEEncrypter) throws JOSEException {
         if (!jWEEncrypter.supportedJWEAlgorithms().contains(getHeader().getAlgorithm())) {
             throw new JOSEException("The \"" + getHeader().getAlgorithm() + "\" algorithm is not supported by the JWE encrypter: Supported algorithms: " + jWEEncrypter.supportedJWEAlgorithms());
         }
@@ -69,7 +69,7 @@ public class JWEObject extends JOSEObject {
         throw new ParseException("Unexpected number of Base64URL parts, must be five", 0);
     }
 
-    public synchronized void decrypt(JWEDecrypter jWEDecrypter) {
+    public synchronized void decrypt(JWEDecrypter jWEDecrypter) throws JOSEException {
         ensureEncryptedState();
         try {
             setPayload(new Payload(jWEDecrypter.decrypt(getHeader(), getEncryptedKey(), getIV(), getCipherText(), getAuthTag())));
@@ -81,7 +81,7 @@ public class JWEObject extends JOSEObject {
         }
     }
 
-    public synchronized void encrypt(JWEEncrypter jWEEncrypter) {
+    public synchronized void encrypt(JWEEncrypter jWEEncrypter) throws JOSEException {
         try {
             ensureUnencryptedState();
             ensureJWEEncrypterSupport(jWEEncrypter);

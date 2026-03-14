@@ -8,7 +8,7 @@ import com.nimbusds.jose.util.DeflateUtils;
 
 /* loaded from: classes2.dex */
 public abstract class DeflateHelper {
-    public static byte[] applyCompression(JWEHeader jWEHeader, byte[] bArr) {
+    public static byte[] applyCompression(JWEHeader jWEHeader, byte[] bArr) throws JOSEException {
         CompressionAlgorithm compressionAlgorithm = jWEHeader.getCompressionAlgorithm();
         if (compressionAlgorithm == null) {
             return bArr;
@@ -23,7 +23,7 @@ public abstract class DeflateHelper {
         throw new JOSEException("Unsupported compression algorithm: " + compressionAlgorithm);
     }
 
-    public static byte[] applyDecompression(JWEHeader jWEHeader, byte[] bArr) {
+    public static byte[] applyDecompression(JWEHeader jWEHeader, byte[] bArr) throws JOSEException {
         CompressionAlgorithm compressionAlgorithm = jWEHeader.getCompressionAlgorithm();
         if (compressionAlgorithm == null) {
             return bArr;

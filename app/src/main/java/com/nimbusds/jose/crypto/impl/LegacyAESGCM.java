@@ -22,7 +22,7 @@ public abstract class LegacyAESGCM {
         return gCMBlockCipher;
     }
 
-    public static byte[] decrypt(SecretKey secretKey, byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4) {
+    public static byte[] decrypt(SecretKey secretKey, byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4) throws JOSEException {
         GCMBlockCipher createAESGCMCipher = createAESGCMCipher(secretKey, false, bArr, bArr3);
         int length = bArr2.length + bArr4.length;
         byte[] bArr5 = new byte[length];
@@ -37,7 +37,7 @@ public abstract class LegacyAESGCM {
         }
     }
 
-    public static AuthenticatedCipherText encrypt(SecretKey secretKey, byte[] bArr, byte[] bArr2, byte[] bArr3) {
+    public static AuthenticatedCipherText encrypt(SecretKey secretKey, byte[] bArr, byte[] bArr2, byte[] bArr3) throws JOSEException {
         GCMBlockCipher createAESGCMCipher = createAESGCMCipher(secretKey, true, bArr, bArr3);
         byte[] bArr4 = new byte[createAESGCMCipher.getOutputSize(bArr2.length)];
         int processBytes = createAESGCMCipher.processBytes(bArr2, 0, bArr2.length, bArr4, 0);

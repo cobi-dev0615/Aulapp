@@ -1,5 +1,6 @@
 package com.nimbusds.jose.crypto.impl;
 
+import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.KeyLengthException;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
@@ -11,7 +12,7 @@ public final class CompositeKey {
     private final SecretKey macKey;
     private final int truncatedMacLength;
 
-    public CompositeKey(SecretKey secretKey) {
+    public CompositeKey(SecretKey secretKey) throws JOSEException {
         this.inputKey = secretKey;
         byte[] encoded = secretKey.getEncoded();
         if (encoded.length == 32) {

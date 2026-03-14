@@ -9,13 +9,13 @@ import javax.crypto.SecretKey;
 
 /* loaded from: classes2.dex */
 public abstract class HMAC {
-    public static byte[] compute(SecretKey secretKey, byte[] bArr, Provider provider) {
+    public static byte[] compute(SecretKey secretKey, byte[] bArr, Provider provider) throws JOSEException {
         Mac initMac = getInitMac(secretKey, provider);
         initMac.update(bArr);
         return initMac.doFinal();
     }
 
-    public static Mac getInitMac(SecretKey secretKey, Provider provider) {
+    public static Mac getInitMac(SecretKey secretKey, Provider provider) throws JOSEException {
         try {
             Mac mac = provider != null ? Mac.getInstance(secretKey.getAlgorithm(), provider) : Mac.getInstance(secretKey.getAlgorithm());
             mac.init(secretKey);

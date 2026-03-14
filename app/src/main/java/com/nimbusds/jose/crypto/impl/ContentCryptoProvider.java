@@ -65,7 +65,7 @@ public abstract class ContentCryptoProvider {
         COMPATIBLE_ENCRYPTION_METHODS = Collections.unmodifiableMap(hashMap);
     }
 
-    private static void checkCEKLength(SecretKey secretKey, EncryptionMethod encryptionMethod) {
+    private static void checkCEKLength(SecretKey secretKey, EncryptionMethod encryptionMethod) throws JOSEException {
         try {
             if (encryptionMethod.cekBitLength() == ByteUtils.safeBitLength(secretKey.getEncoded())) {
                 return;
@@ -76,7 +76,7 @@ public abstract class ContentCryptoProvider {
         }
     }
 
-    public static byte[] decrypt(JWEHeader jWEHeader, Base64URL base64URL, Base64URL base64URL2, Base64URL base64URL3, Base64URL base64URL4, SecretKey secretKey, JWEJCAContext jWEJCAContext) {
+    public static byte[] decrypt(JWEHeader jWEHeader, Base64URL base64URL, Base64URL base64URL2, Base64URL base64URL3, Base64URL base64URL4, SecretKey secretKey, JWEJCAContext jWEJCAContext) throws JOSEException {
         JWEHeader jWEHeader2;
         byte[] decryptAuthenticated;
         checkCEKLength(secretKey, jWEHeader.getEncryptionMethod());
@@ -97,7 +97,7 @@ public abstract class ContentCryptoProvider {
         return DeflateHelper.applyDecompression(jWEHeader2, decryptAuthenticated);
     }
 
-    public static JWECryptoParts encrypt(JWEHeader jWEHeader, byte[] bArr, SecretKey secretKey, Base64URL base64URL, JWEJCAContext jWEJCAContext) {
+    public static JWECryptoParts encrypt(JWEHeader jWEHeader, byte[] bArr, SecretKey secretKey, Base64URL base64URL, JWEJCAContext jWEJCAContext) throws JOSEException {
         JWEHeader jWEHeader2;
         Base64URL base64URL2;
         AuthenticatedCipherText encryptAuthenticated;

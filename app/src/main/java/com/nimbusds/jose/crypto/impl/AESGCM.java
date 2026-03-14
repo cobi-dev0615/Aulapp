@@ -20,14 +20,14 @@ import javax.crypto.spec.GCMParameterSpec;
 
 /* loaded from: classes2.dex */
 public abstract class AESGCM {
-    private static byte[] actualIVOf(Cipher cipher) {
+    private static byte[] actualIVOf(Cipher cipher) throws JOSEException {
         GCMParameterSpec actualParamsOf = actualParamsOf(cipher);
         byte[] iv = actualParamsOf.getIV();
         validate(iv, actualParamsOf.getTLen());
         return iv;
     }
 
-    private static GCMParameterSpec actualParamsOf(Cipher cipher) {
+    private static GCMParameterSpec actualParamsOf(Cipher cipher) throws JOSEException {
         AlgorithmParameters parameters = cipher.getParameters();
         if (parameters == null) {
             throw new JOSEException("AES GCM ciphers are expected to make use of algorithm parameters");
@@ -39,7 +39,7 @@ public abstract class AESGCM {
         }
     }
 
-    public static byte[] decrypt(SecretKey secretKey, byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4, Provider provider) {
+    public static byte[] decrypt(SecretKey secretKey, byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4, Provider provider) throws JOSEException {
         SecretKey aESKey = KeyUtils.toAESKey(secretKey);
         try {
             Cipher cipher = provider != null ? Cipher.getInstance("AES/GCM/NoPadding", provider) : Cipher.getInstance("AES/GCM/NoPadding");
@@ -57,7 +57,7 @@ public abstract class AESGCM {
         }
     }
 
-    public static AuthenticatedCipherText encrypt(SecretKey secretKey, Container<byte[]> container, byte[] bArr, byte[] bArr2, Provider provider) {
+    public static AuthenticatedCipherText encrypt(SecretKey secretKey, Container<byte[]> container, byte[] bArr, byte[] bArr2, Provider provider) throws JOSEException {
         SecretKey aESKey = KeyUtils.toAESKey(secretKey);
         byte[] bArr3 = container.get();
         try {
@@ -87,7 +87,7 @@ public abstract class AESGCM {
         return bArr;
     }
 
-    private static void validate(byte[] bArr, int i) {
+    private static void validate(byte[] bArr, int i) throws JOSEException {
         if (ByteUtils.safeBitLength(bArr) != 96) {
             throw new JOSEException(String.format("IV length of %d bits is required, got %d", 96, Integer.valueOf(ByteUtils.safeBitLength(bArr))));
         }
