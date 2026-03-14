@@ -44,7 +44,7 @@ public class GifDrawable extends Drawable implements Animatable, MediaController
     private PorterDuffColorFilter mTintFilter;
     private PorterDuff.Mode mTintMode;
 
-    public GifDrawable(Resources resources, int i) {
+    public GifDrawable(Resources resources, int i) throws IOException {
         this(resources.openRawResourceFd(i));
         float densityScale = GifViewUtils.getDensityScale(resources, i);
         this.mScaledHeight = (int) (this.mNativeInfoHandle.getHeight() * densityScale);
@@ -352,7 +352,7 @@ public class GifDrawable extends Drawable implements Animatable, MediaController
         return "GIF: size: " + this.mNativeInfoHandle.getWidth() + "x" + this.mNativeInfoHandle.getHeight() + ", frames: " + this.mNativeInfoHandle.getNumberOfFrames() + ", error: " + this.mNativeInfoHandle.getNativeErrorCode();
     }
 
-    public GifDrawable(AssetFileDescriptor assetFileDescriptor) {
+    public GifDrawable(AssetFileDescriptor assetFileDescriptor) throws IOException {
         this(new GifInfoHandle(assetFileDescriptor), null, null, true);
     }
 

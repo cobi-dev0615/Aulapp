@@ -198,7 +198,7 @@ final class GifInfoHandle {
         }
     }
 
-    public GifInfoHandle(AssetFileDescriptor assetFileDescriptor) {
+    public GifInfoHandle(AssetFileDescriptor assetFileDescriptor) throws IOException {
         try {
             this.gifInfoPtr = openFileDescriptor(assetFileDescriptor.getFileDescriptor(), assetFileDescriptor.getStartOffset(), false);
         } finally {
