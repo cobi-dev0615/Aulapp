@@ -11,7 +11,7 @@ public class JSONObject extends HashMap<String, Object> implements JSONAwareEx, 
         return toJSONString(map, JSONValue.COMPRESSION);
     }
 
-    public static void writeJSON(Map<String, ? extends Object> map, Appendable appendable, JSONStyle jSONStyle) {
+    public static void writeJSON(Map<String, ? extends Object> map, Appendable appendable, JSONStyle jSONStyle) throws IOException {
         if (map == null) {
             appendable.append("null");
         } else {
@@ -26,7 +26,10 @@ public class JSONObject extends HashMap<String, Object> implements JSONAwareEx, 
 
     @Override // com.nimbusds.jose.shaded.json.JSONStreamAware
     public void writeJSONString(Appendable appendable) {
-        writeJSON(this, appendable, JSONValue.COMPRESSION);
+        try {
+            writeJSON(this, appendable, JSONValue.COMPRESSION);
+        } catch (IOException unused) {
+        }
     }
 
     public static String toJSONString(Map<String, ? extends Object> map, JSONStyle jSONStyle) {
@@ -40,7 +43,10 @@ public class JSONObject extends HashMap<String, Object> implements JSONAwareEx, 
 
     @Override // com.nimbusds.jose.shaded.json.JSONStreamAwareEx
     public void writeJSONString(Appendable appendable, JSONStyle jSONStyle) {
-        writeJSON(this, appendable, jSONStyle);
+        try {
+            writeJSON(this, appendable, jSONStyle);
+        } catch (IOException unused) {
+        }
     }
 
     @Override // com.nimbusds.jose.shaded.json.JSONAware
