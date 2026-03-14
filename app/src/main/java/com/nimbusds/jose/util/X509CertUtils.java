@@ -19,7 +19,7 @@ public abstract class X509CertUtils {
         }
     }
 
-    public static X509Certificate parseWithException(byte[] bArr) {
+    public static X509Certificate parseWithException(byte[] bArr) throws CertificateException {
         if (bArr == null || bArr.length == 0) {
             return null;
         }
