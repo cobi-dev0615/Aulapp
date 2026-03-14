@@ -11,6 +11,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.GlobalScope;
@@ -35,7 +36,7 @@ public abstract class ModuleFingerPrintUtil {
             Intrinsics.checkNotNullParameter(urlDocument, "urlDocument");
             Intrinsics.checkNotNullParameter(onErrorCallback, "onErrorCallback");
             Intrinsics.checkNotNullParameter(onSuccessCallback, "onSuccessCallback");
-            BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(fragmentActivity, hand, userId, urlDocument, onErrorCallback, onSuccessCallback, null));
+            BuildersKt.launch(GlobalScope.INSTANCE, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ModuleFingerPrintUtil$Companion$moduleFingerPrintValidation$1(fragmentActivity, hand, userId, urlDocument, onErrorCallback, onSuccessCallback, null));
         }
 
         private Companion() {

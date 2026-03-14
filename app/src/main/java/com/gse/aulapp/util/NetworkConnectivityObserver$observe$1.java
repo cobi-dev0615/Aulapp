@@ -14,6 +14,7 @@ import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.channels.ProduceKt;
@@ -62,7 +63,7 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
                     Intrinsics.checkNotNullParameter(network, "network");
                     super.onAvailable(network);
                     ProducerScope producerScope2 = producerScope;
-                    BuildersKt.launch(producerScope2, (CoroutineContext) null, (CoroutineStart) null, new NetworkConnectivityObserver$observe$1$callback$1$onAvailable$1(producerScope2, null));
+                    BuildersKt.launch(producerScope2, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new NetworkConnectivityObserver$observe$1$callback$1$onAvailable$1(producerScope2, null));
                 }
 
                 @Override // android.net.ConnectivityManager.NetworkCallback
@@ -70,7 +71,7 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
                     Intrinsics.checkNotNullParameter(network, "network");
                     super.onLosing(network, maxMsToLive);
                     ProducerScope producerScope2 = producerScope;
-                    BuildersKt.launch(producerScope2, (CoroutineContext) null, (CoroutineStart) null, new NetworkConnectivityObserver$observe$1$callback$1$onLosing$1(producerScope2, null));
+                    BuildersKt.launch(producerScope2, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new NetworkConnectivityObserver$observe$1$callback$1$onLosing$1(producerScope2, null));
                 }
 
                 @Override // android.net.ConnectivityManager.NetworkCallback
@@ -78,14 +79,14 @@ public final class NetworkConnectivityObserver$observe$1 extends SuspendLambda i
                     Intrinsics.checkNotNullParameter(network, "network");
                     super.onLost(network);
                     ProducerScope producerScope2 = producerScope;
-                    BuildersKt.launch(producerScope2, (CoroutineContext) null, (CoroutineStart) null, new NetworkConnectivityObserver$observe$1$callback$1$onLost$1(producerScope2, null));
+                    BuildersKt.launch(producerScope2, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new NetworkConnectivityObserver$observe$1$callback$1$onLost$1(producerScope2, null));
                 }
 
                 @Override // android.net.ConnectivityManager.NetworkCallback
                 public void onUnavailable() {
                     super.onUnavailable();
                     ProducerScope producerScope2 = producerScope;
-                    BuildersKt.launch(producerScope2, (CoroutineContext) null, (CoroutineStart) null, new NetworkConnectivityObserver$observe$1$callback$1$onUnavailable$1(producerScope2, null));
+                    BuildersKt.launch(producerScope2, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new NetworkConnectivityObserver$observe$1$callback$1$onUnavailable$1(producerScope2, null));
                 }
             };
             connectivityManager = this.this$0.connectivityManager;

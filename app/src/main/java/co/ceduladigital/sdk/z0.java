@@ -37,6 +37,7 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 
@@ -209,7 +210,7 @@ public final /* synthetic */ class z0 extends FunctionReferenceImpl implements F
                             classInCourseViewModel10.getTimeElapsedInServiceSlider().observe(classInCourseFragment4.getViewLifecycleOwner(), new x0(0, new p0(classInCourseFragment4, fragmentClassInCourseBinding10)));
                             LifecycleOwner viewLifecycleOwner = classInCourseFragment4.getViewLifecycleOwner();
                             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-                            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), (CoroutineContext) null, (CoroutineStart) null, new t0(classInCourseFragment4, null));
+                            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new t0(classInCourseFragment4, null));
                             LifecycleOwner viewLifecycleOwner2 = classInCourseFragment4.getViewLifecycleOwner();
                             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner2, "getViewLifecycleOwner(...)");
                             LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner2).launchWhenStarted(new v0(classInCourseFragment4, fragmentClassInCourseBinding10, null));
@@ -282,7 +283,7 @@ public final /* synthetic */ class z0 extends FunctionReferenceImpl implements F
                 p05.toString();
                 LifecycleOwner viewLifecycleOwner3 = classPracticeBeforeFragment.getViewLifecycleOwner();
                 Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner3, "getViewLifecycleOwner(...)");
-                BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner3), (CoroutineContext) null, (CoroutineStart) null, new j2(p05, classPracticeBeforeFragment, null));
+                BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner3), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new j2(p05, classPracticeBeforeFragment, null));
                 return Unit.INSTANCE;
             case 7:
                 com.gse.aulapp.model.data.statusControl.Status p06 = (com.gse.aulapp.model.data.statusControl.Status) obj;
@@ -290,7 +291,7 @@ public final /* synthetic */ class z0 extends FunctionReferenceImpl implements F
                 ClassPracticeBeforeFragment classPracticeBeforeFragment2 = (ClassPracticeBeforeFragment) this.receiver;
                 LifecycleOwner viewLifecycleOwner4 = classPracticeBeforeFragment2.getViewLifecycleOwner();
                 Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner4, "getViewLifecycleOwner(...)");
-                BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner4), (CoroutineContext) null, (CoroutineStart) null, new f2(p06, classPracticeBeforeFragment2, null));
+                BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner4), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new f2(p06, classPracticeBeforeFragment2, null));
                 return Unit.INSTANCE;
             case 8:
                 StatusFingerPrint p07 = (StatusFingerPrint) obj;

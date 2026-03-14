@@ -46,6 +46,7 @@ import kotlin.properties.Delegates;
 import kotlin.properties.ReadWriteProperty;
 import kotlin.reflect.KProperty;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 
@@ -128,7 +129,7 @@ public final class WebviewFragment extends Fragment {
     private final void collects() {
         LifecycleOwner viewLifecycleOwner = getViewLifecycleOwner();
         Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-        BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), (CoroutineContext) null, (CoroutineStart) null, new WebviewFragment$collects$1(this, null));
+        BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new WebviewFragment$collects$1(this, null));
     }
 
     private final FragmentWebviewBinding getBinding() {
@@ -139,7 +140,7 @@ public final class WebviewFragment extends Fragment {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void handlerBiometricResult(BiometrixResult data) {
-        BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(this), (CoroutineContext) null, (CoroutineStart) null, new WebviewFragment$handlerBiometricResult$1(data, this, null));
+        BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new WebviewFragment$handlerBiometricResult$1(data, this, null));
     }
 
     private final void initUI() {

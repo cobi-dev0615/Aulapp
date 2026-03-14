@@ -28,6 +28,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.GlobalScope;
@@ -115,7 +116,7 @@ public abstract class ExternalUtil {
                 context2 = context;
             }
             try {
-                BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new ExternalUtil$Companion$getDateTimeBiometrics$1(context2, objectRef, objectRef2, enumTime, listener, null));
+                BuildersKt.launch(GlobalScope.INSTANCE, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ExternalUtil$Companion$getDateTimeBiometrics$1(context2, objectRef, objectRef2, enumTime, listener, null));
             } catch (Exception e2) {
                 LogSendUtil.INSTANCE.setLog(context2, q.i("datetime exception: ", e2.getMessage()), "datetime", true);
                 DialogUtil.Companion companion = DialogUtil.INSTANCE;

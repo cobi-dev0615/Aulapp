@@ -11,6 +11,7 @@ import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.AwaitKt;
 import kotlin.coroutines.CoroutineContext;
 import kotlinx.coroutines.BuildersKt;
@@ -62,8 +63,8 @@ public final class SyncDataWorker$doWork$2 extends SuspendLambda implements Func
                 createNotification = this.this$0.createNotification();
                 notificationManager = this.this$0.notificationManager;
                 notificationManager.notify(100, createNotification);
-                async$default = BuildersKt.async(coroutineScope, (CoroutineContext) null, (CoroutineStart) null, new SyncDataWorker$doWork$2$asyncSyncSession$1(this.this$0, null));
-                async$default2 = BuildersKt.async(coroutineScope, (CoroutineContext) null, (CoroutineStart) null, new SyncDataWorker$doWork$2$asyncSyncHistory$1(this.this$0, null));
+                async$default = BuildersKt.async(coroutineScope, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new SyncDataWorker$doWork$2$asyncSyncSession$1(this.this$0, null));
+                async$default2 = BuildersKt.async(coroutineScope, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new SyncDataWorker$doWork$2$asyncSyncHistory$1(this.this$0, null));
                 Deferred[] deferredArr = {async$default, async$default2};
                 this.label = 1;
                 if (AwaitKt.awaitAll(deferredArr, this) == coroutine_suspended) {

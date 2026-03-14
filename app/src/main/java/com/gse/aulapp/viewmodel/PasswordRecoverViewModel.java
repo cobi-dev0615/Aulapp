@@ -20,6 +20,7 @@ import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.flow.MutableStateFlow;
@@ -40,7 +41,7 @@ public final class PasswordRecoverViewModel extends ViewModel {
     }
 
     private final void callAPIPasswordRecovery(Context context, FragmentPasswordRecoverBinding binding, NavController navController) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PasswordRecoverViewModel$callAPIPasswordRecovery$1(this, new PasswordRecoveryRequest(String.valueOf(binding.tietTextInputUserRecovery.getText())), context, binding, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PasswordRecoverViewModel$callAPIPasswordRecovery$1(this, new PasswordRecoveryRequest(String.valueOf(binding.tietTextInputUserRecovery.getText())), context, binding, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */

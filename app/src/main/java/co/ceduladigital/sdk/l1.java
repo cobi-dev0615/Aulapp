@@ -28,6 +28,7 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 
@@ -277,7 +278,7 @@ public final /* synthetic */ class l1 implements Function1 {
                         }));
                         LifecycleOwner viewLifecycleOwner = this$02.getViewLifecycleOwner();
                         Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-                        BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), (CoroutineContext) null, (CoroutineStart) null, new o7(this$02, null));
+                        BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new o7(this$02, null));
                         PracticeClassViewModel practiceClassViewModel6 = this$02.b;
                         if (practiceClassViewModel6 == null) {
                             Intrinsics.throwUninitializedPropertyAccessException("viewModel");

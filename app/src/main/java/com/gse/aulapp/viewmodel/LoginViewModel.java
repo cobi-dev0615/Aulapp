@@ -19,6 +19,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Job;
@@ -46,7 +47,7 @@ public final class LoginViewModel extends ViewModel {
 
     private final Job login(FragmentActivity context, LoginRequest loginRequest, FragmentLoginBinding binding, NavController findNavController) {
         Job launch$default;
-        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new LoginViewModel$login$1(this, loginRequest, context, binding, null));
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new LoginViewModel$login$1(this, loginRequest, context, binding, null));
         return launch$default;
     }
 

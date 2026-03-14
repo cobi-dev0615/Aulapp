@@ -41,6 +41,7 @@ import kotlin.NoWhenBranchMatchedException;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Job;
@@ -121,19 +122,19 @@ public final class FirstLoginViewModel extends ViewModel {
 
     private final Job login(Context context, LoginRequest loginRequest) {
         Job launch$default;
-        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new FirstLoginViewModel$login$1(this, loginRequest, context, null));
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new FirstLoginViewModel$login$1(this, loginRequest, context, null));
         return launch$default;
     }
 
     private final Job refreshToken(Context context, RefreshTokenRequest tokenRefreshRequest) {
         Job launch$default;
-        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new FirstLoginViewModel$refreshToken$1(this, tokenRefreshRequest, context, null));
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new FirstLoginViewModel$refreshToken$1(this, tokenRefreshRequest, context, null));
         return launch$default;
     }
 
     private final Job refreshTokenCEA(String ceaSelected, List<CenterDto> centerListCEA, String numberDocument, Activity activity) {
         Job launch$default;
-        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new FirstLoginViewModel$refreshTokenCEA$1(this, ceaSelected, centerListCEA, numberDocument, activity, null));
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new FirstLoginViewModel$refreshTokenCEA$1(this, ceaSelected, centerListCEA, numberDocument, activity, null));
         return launch$default;
     }
 
@@ -249,14 +250,14 @@ public final class FirstLoginViewModel extends ViewModel {
     public final void initBiometrix(Activity activity, BiometrixRequest request) {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(request, "request");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new FirstLoginViewModel$initBiometrix$1(this, activity, request, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new FirstLoginViewModel$initBiometrix$1(this, activity, request, null));
     }
 
     public final Job recoverPassword(Context context, String email) {
         Job launch$default;
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(email, "email");
-        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new FirstLoginViewModel$recoverPassword$1(this, email, context, null));
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new FirstLoginViewModel$recoverPassword$1(this, email, context, null));
         return launch$default;
     }
 

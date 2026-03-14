@@ -7,6 +7,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.GlobalScope;
@@ -30,7 +31,7 @@ public abstract class ControllerEntryOrExamUtil {
             Intrinsics.checkNotNullParameter(sessionID, "sessionID");
             Intrinsics.checkNotNullParameter(repository, "repository");
             try {
-                BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new ControllerEntryOrExamUtil$Companion$saveEntryExam$1(repository, dateEntryExam, sessionID, null));
+                BuildersKt.launch(GlobalScope.INSTANCE, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ControllerEntryOrExamUtil$Companion$saveEntryExam$1(repository, dateEntryExam, sessionID, null));
             } catch (Exception e) {
                 String unused = ControllerEntryOrExamUtil.TAG;
                 e.toString();

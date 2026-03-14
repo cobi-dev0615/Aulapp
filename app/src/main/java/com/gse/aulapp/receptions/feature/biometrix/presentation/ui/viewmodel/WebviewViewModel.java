@@ -10,6 +10,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.flow.FlowKt;
@@ -46,11 +47,11 @@ public final class WebviewViewModel extends ViewModel {
     }
 
     public final void handlePageFinished(boolean isRegisterFlow, String url) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new WebviewViewModel$handlePageFinished$1(url, this, isRegisterFlow, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new WebviewViewModel$handlePageFinished$1(url, this, isRegisterFlow, null));
     }
 
     public final void resetState() {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new WebviewViewModel$resetState$1(this, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new WebviewViewModel$resetState$1(this, null));
     }
 
     public final void setLoadingFinished(boolean z) {

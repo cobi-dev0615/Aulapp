@@ -52,6 +52,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 
@@ -285,7 +286,7 @@ public final class ClassInCourseFragment extends Fragment {
             classInCourseViewModel8.getMessage().observe(getViewLifecycleOwner(), new x0(0, new z0(1, this, ClassInCourseFragment.class, "observerMessage", "observerMessage(Lcom/gse/aulapp/model/data/statusControl/Status;)V", 0, 5)));
             LifecycleOwner viewLifecycleOwner = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), (CoroutineContext) null, (CoroutineStart) null, new w0(this, null));
+            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new w0(this, null));
             FragmentClassInCourseBinding fragmentClassInCourseBinding3 = this.a;
             Intrinsics.checkNotNull(fragmentClassInCourseBinding3);
             fragmentClassInCourseBinding3.includeQuestionCard.nextButtonSwipe.setOnSlideCompleteListener(new y0(this));

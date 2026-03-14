@@ -10,6 +10,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.GlobalScope;
@@ -31,7 +32,7 @@ public abstract class LoadConfigurationUtil {
         public final void saveParameterListOnPreference(Activity context) {
             Intrinsics.checkNotNullParameter(context, "context");
             try {
-                BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new LoadConfigurationUtil$Companion$saveParameterListOnPreference$1(context, null));
+                BuildersKt.launch(GlobalScope.INSTANCE, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new LoadConfigurationUtil$Companion$saveParameterListOnPreference$1(context, null));
             } catch (Exception e) {
                 LogSendUtil.INSTANCE.setLog(context, q.i("saveParameterListOnPreference Exception: ", e.getMessage()), "saveParameterListOnPreference", true);
                 DialogUtil.Companion.showErrorDialog$default(DialogUtil.INSTANCE, context, EnumDialogType.DIALOG_TYPE_GENERAL_ERROR, null, null, e.getMessage(), false, null, 12, null);

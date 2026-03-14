@@ -82,6 +82,7 @@ import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.CoroutineStart;
@@ -190,7 +191,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
     }
 
     private final void callEndPointGetEnrollmentInformation(GetEnrollmentInformationRequest getEnrollmentInformationRequest, Activity activity, UserInfoDto userInfo) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInformation$1(this, activity, getEnrollmentInformationRequest, userInfo, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$callEndPointGetEnrollmentInformation$1(this, activity, getEnrollmentInformationRequest, userInfo, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -299,7 +300,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void saveStepStatus(EnumIdStepperMenu enumIdStepperMenu, boolean isEntry) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$saveStepStatus$1(this, enumIdStepperMenu, isEntry, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$saveStepStatus$1(this, enumIdStepperMenu, isEntry, null));
     }
 
     private final void setDataSessionDetail(SessionDto session, FragmentClassPracticeBeforeBinding binding) {
@@ -378,7 +379,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
     /* JADX INFO: Access modifiers changed from: private */
     public final Job showDialogTimePassed(Activity activity, Context context, boolean isEnter, EnumClassType sessionType, NavController findNavController) {
         Job launch$default;
-        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$showDialogTimePassed$1(this, activity, context, isEnter, sessionType, findNavController, null));
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$showDialogTimePassed$1(this, activity, context, isEnter, sessionType, findNavController, null));
         return launch$default;
     }
 
@@ -462,7 +463,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(enumIdStepperMenu, "enumIdStepperMenu");
         Intrinsics.checkNotNullParameter(binding, "binding");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$changeStatus$1(enumIdStepperMenu, this, isEntry, activity, binding, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$changeStatus$1(enumIdStepperMenu, this, isEntry, activity, binding, null));
     }
 
     public final void disableNfc(Activity activity) {
@@ -481,7 +482,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
 
     public final void getConfigSessionDto(EnumTypeConfiguration type) {
         Intrinsics.checkNotNullParameter(type, "type");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$getConfigSessionDto$1(this, type, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$getConfigSessionDto$1(this, type, null));
     }
 
     public final ErrorResponse getErrorEndpoint(String message, String code) {
@@ -525,7 +526,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
 
     public final void getSessionById(String sessionID) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$getSessionById$1(this, sessionID, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$getSessionById$1(this, sessionID, null));
     }
 
     public final SingleLiveEvent<Status> getStatusClass() {
@@ -543,13 +544,13 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
 
     public final void getStepperStatusComplete(String sessionID, boolean isEntry) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$getStepperStatusComplete$1(this, sessionID, isEntry, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$getStepperStatusComplete$1(this, sessionID, isEntry, null));
     }
 
     public final void initBiometrix(Activity activity, BiometrixRequest request) {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(request, "request");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$initBiometrix$1(this, activity, request, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$initBiometrix$1(this, activity, request, null));
     }
 
     public final void initNfcStatus(Activity activity) {
@@ -572,7 +573,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(userId, "userId");
         Intrinsics.checkNotNullParameter(apprenticesDocumentType, "apprenticesDocumentType");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1(this, context, stepProfile, binding, isEnter, userId, apprenticesDocumentNumber, userName, email, apprenticesDocumentType, activity, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$itemSelectedMenuStepper$1(this, context, stepProfile, binding, isEnter, userId, apprenticesDocumentNumber, userName, email, apprenticesDocumentType, activity, null));
     }
 
     public final void navigateTo(Context context, NavController navController, NavDirections action) {
@@ -587,7 +588,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(navController, "navController");
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         Intrinsics.checkNotNullParameter(timeEntry, "timeEntry");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$navigateToStartClass$1(this, sessionID, timeEntry, context, navController, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$navigateToStartClass$1(this, sessionID, timeEntry, context, navController, null));
     }
 
     public final EnumHandsAulapp reportHand(EnumHandsAulapp handValidate) {
@@ -631,7 +632,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
 
     public final void updateDateEntryClass(String sessionID) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$updateDateEntryClass$1(this, sessionID, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$updateDateEntryClass$1(this, sessionID, null));
     }
 
     public final void updateSessionStatusAppointment(Context context, String sessionID, String data) {
@@ -641,7 +642,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         try {
             CoroutineScope viewModelScope = ViewModelKt.getViewModelScope(this);
             ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1 block = new ClassPracticeBeforeViewModel$updateSessionStatusAppointment$1(this, context, sessionID, data, null);
-            BuildersKt.launch(viewModelScope, (CoroutineContext) null, (CoroutineStart) null, block);
+            BuildersKt.launch(viewModelScope, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, block);
         } catch (Exception exc) {
             LogSendUtil.INSTANCE.setLog(context, q.i("updateSessionStatusAppointment exception: ", exc.getMessage()), "updateSessionStatusAppointment", true);
             this._statusClass.postValue(new Status.Failure(exc));
@@ -675,7 +676,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
     public final void validateContinueButton(List<StepProcessSessionEntity> listStep, FragmentClassPracticeBeforeBinding binding) {
         Intrinsics.checkNotNullParameter(listStep, "listStep");
         Intrinsics.checkNotNullParameter(binding, "binding");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$validateContinueButton$1(listStep, binding, this, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$validateContinueButton$1(listStep, binding, this, null));
     }
 
     public final void validateNfcStatus(Activity activity, FragmentClassPracticeBeforeBinding binding, boolean isEnter) {
@@ -718,7 +719,7 @@ public final class ClassPracticeBeforeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(sessionType, "sessionType");
         Intrinsics.checkNotNullParameter(findNavController, "findNavController");
         try {
-            BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1(this, context, sessionInstructorRequest, activity, sessionId, isEnter, sessionType, findNavController, null));
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassPracticeBeforeViewModel$validateTimeSessionFromApi$1(this, context, sessionInstructorRequest, activity, sessionId, isEnter, sessionType, findNavController, null));
         } catch (Exception e) {
             LogSendUtil.INSTANCE.setLog(context, q.i("validateTimeSessionFromApi exception: ", e.getMessage()), "validateTimeSessionFromApi", true);
             this._messageValidation.setValue(new Status.Failure(new Exception(e.getMessage())));

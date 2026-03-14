@@ -11,6 +11,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.GlobalScope;
@@ -37,7 +38,7 @@ public abstract class RefreshTokenUtil {
                 Ref.ObjectRef objectRef = new Ref.ObjectRef();
                 String email = PreferenceUtil.INSTANCE.getEmail(context);
                 objectRef.element = email != null ? new RefreshTokenRequest(email) : 0;
-                BuildersKt.launch(GlobalScope.INSTANCE, (CoroutineContext) null, (CoroutineStart) null, new RefreshTokenUtil$Companion$refreshToken$1(objectRef, context, null));
+                BuildersKt.launch(GlobalScope.INSTANCE, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new RefreshTokenUtil$Companion$refreshToken$1(objectRef, context, null));
             } catch (Exception e) {
                 LogSendUtil.INSTANCE.setLog(context, q.i("refreshToken exception: ", e.getMessage()), "refreshToken", true);
             }

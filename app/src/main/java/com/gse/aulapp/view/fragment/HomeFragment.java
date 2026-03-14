@@ -46,6 +46,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 
@@ -257,7 +258,7 @@ public final class HomeFragment extends Fragment {
             homeViewModel4.buildChips(requireContext, fragmentHomeBinding5);
             LifecycleOwner viewLifecycleOwner = getViewLifecycleOwner();
             Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), (CoroutineContext) null, (CoroutineStart) null, new f6(this, null));
+            BuildersKt.launch(LifecycleOwnerKt.getLifecycleScope(viewLifecycleOwner), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new f6(this, null));
             FragmentHomeBinding fragmentHomeBinding6 = this.c;
             Intrinsics.checkNotNull(fragmentHomeBinding6);
             fragmentHomeBinding6.containerButtons.actionFilter.setOnClickListener(new r2(this, 3));

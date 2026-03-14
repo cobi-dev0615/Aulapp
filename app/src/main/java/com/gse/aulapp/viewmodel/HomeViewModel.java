@@ -111,6 +111,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Dispatchers;
@@ -414,7 +415,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     private final void getSessionByFilterChip() {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$getSessionByFilterChip$1(this, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new HomeViewModel$getSessionByFilterChip$1(this, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -504,12 +505,12 @@ public final class HomeViewModel extends ViewModel {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void initConfigurationPracticalAndExamPractical(SessionInstructorResponse sessionInstructorResponse) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), (CoroutineStart) null, new HomeViewModel$initConfigurationPracticalAndExamPractical$1(this, sessionInstructorResponse, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), CoroutineStart.DEFAULT, new HomeViewModel$initConfigurationPracticalAndExamPractical$1(this, sessionInstructorResponse, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void loadDefaultList() {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$loadDefaultList$1(this, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new HomeViewModel$loadDefaultList$1(this, null));
     }
 
     private final void onClickChip(Chip chip, FragmentHomeBinding binding) {
@@ -531,7 +532,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     private final void onClickLogOut(Activity activity, FragmentHomeBinding binding, Menu item) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$onClickLogOut$1(this, activity, binding, item, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new HomeViewModel$onClickLogOut$1(this, activity, binding, item, null));
     }
 
     private final void onSelectOkDate(Context context, Activity activity) {
@@ -1405,7 +1406,7 @@ public final class HomeViewModel extends ViewModel {
             e.printStackTrace();
         }
         if (date != null && parse != null && date2 != null) {
-            BuildersKt.launch(ViewModelKt.getViewModelScope(this$0), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$validateAllowNavigate$1$1(session, configSession, date, date2, activity, parse, z, z2, this$0, navController, classRecyclerAdapter, null));
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this$0), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new HomeViewModel$validateAllowNavigate$1$1(session, configSession, date, date2, activity, parse, z, z2, this$0, navController, classRecyclerAdapter, null));
         }
         return Unit.INSTANCE;
     }
@@ -1508,7 +1509,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(sessionInstructorRequest, "sessionInstructorRequest");
         try {
-            BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$getSessionFromApiAndSave$1(this, context, sessionInstructorRequest, isValidateSession, sessionId, navController, classRecyclerAdapter, activity, null));
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new HomeViewModel$getSessionFromApiAndSave$1(this, context, sessionInstructorRequest, isValidateSession, sessionId, navController, classRecyclerAdapter, activity, null));
         } catch (Exception e) {
             LogSendUtil.INSTANCE.setLog(context, q.i("getSessionFromApiAndSave exception: ", e.getMessage()), "getSessionFromApiAndSave", true);
         }
@@ -1533,7 +1534,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(item, "item");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$initSessionSyncPending$1(this, context, item, binding, toast, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new HomeViewModel$initSessionSyncPending$1(this, context, item, binding, toast, null));
     }
 
     /* renamed from: isSwipeRefresh, reason: from getter */
@@ -1567,7 +1568,7 @@ public final class HomeViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(activity, "activity");
         Intrinsics.checkNotNullParameter(binding, "binding");
         this.dateSelect = null;
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$onSwipeRefresh$1(this, activity, binding, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new HomeViewModel$onSwipeRefresh$1(this, activity, binding, null));
         getSwrHome().setRefreshing(false);
         ChipGroup chipGroup = binding.chipGroup;
         Intrinsics.checkNotNullExpressionValue(chipGroup, "chipGroup");
@@ -1578,7 +1579,7 @@ public final class HomeViewModel extends ViewModel {
     }
 
     public final void saveSessionAndGetFromDB(SessionResponseDto sessionInstructorObjectResponseList) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new HomeViewModel$saveSessionAndGetFromDB$1(this, sessionInstructorObjectResponseList, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new HomeViewModel$saveSessionAndGetFromDB$1(this, sessionInstructorObjectResponseList, null));
     }
 
     public final void setChipAll(Chip chip) {

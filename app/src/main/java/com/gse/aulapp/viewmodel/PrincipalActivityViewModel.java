@@ -36,6 +36,7 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 
@@ -83,7 +84,7 @@ public final class PrincipalActivityViewModel extends ViewModel {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void saveHistoricPermission(EnumPermissionsApp permission, boolean isEnabled) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$saveHistoricPermission$1(this, isEnabled, permission, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PrincipalActivityViewModel$saveHistoricPermission$1(this, isEnabled, permission, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -187,17 +188,17 @@ public final class PrincipalActivityViewModel extends ViewModel {
 
     public final void handlerStatusChangeAirplaneMode(Activity context, boolean isEnabled) {
         Intrinsics.checkNotNullParameter(context, "context");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$handlerStatusChangeAirplaneMode$1(this, isEnabled, context, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PrincipalActivityViewModel$handlerStatusChangeAirplaneMode$1(this, isEnabled, context, null));
     }
 
     public final void handlerStatusChangeGPS(Activity context, boolean isEnabled) {
         Intrinsics.checkNotNullParameter(context, "context");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$handlerStatusChangeGPS$1(this, isEnabled, context, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PrincipalActivityViewModel$handlerStatusChangeGPS$1(this, isEnabled, context, null));
     }
 
     public final void handlerStatusChangeNfc(Activity context, boolean isEnabled) {
         Intrinsics.checkNotNullParameter(context, "context");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$handlerStatusChangeNfc$1(this, isEnabled, context, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PrincipalActivityViewModel$handlerStatusChangeNfc$1(this, isEnabled, context, null));
     }
 
     public final void setDrawerMenuData(Activity activity, NavigationView navView, DrawerLayout drawerLayout, NavController navController) {
@@ -248,7 +249,7 @@ public final class PrincipalActivityViewModel extends ViewModel {
 
     public final void subscribeNetwork(Activity context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$subscribeNetwork$1(this, context, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PrincipalActivityViewModel$subscribeNetwork$1(this, context, null));
     }
 
     public final void subscribeNfc(Activity activity) {
@@ -259,6 +260,6 @@ public final class PrincipalActivityViewModel extends ViewModel {
 
     public final void validateShowDialogNetworkUnavailable(Activity context, boolean isEnabled) {
         Intrinsics.checkNotNullParameter(context, "context");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PrincipalActivityViewModel$validateShowDialogNetworkUnavailable$1(this, context, isEnabled, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PrincipalActivityViewModel$validateShowDialogNetworkUnavailable$1(this, context, isEnabled, null));
     }
 }

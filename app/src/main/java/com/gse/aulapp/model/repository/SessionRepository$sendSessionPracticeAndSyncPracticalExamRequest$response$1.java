@@ -14,6 +14,7 @@ import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.CoroutineStart;
@@ -107,7 +108,7 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalExamRequ
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         ResultKt.throwOnFailure(obj);
-        async$default = BuildersKt.async((CoroutineScope) this.L$0, (CoroutineContext) null, (CoroutineStart) null, new AnonymousClass1(this.$context, this.$practiceRequest, null));
+        async$default = BuildersKt.async((CoroutineScope) this.L$0, EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new AnonymousClass1(this.$context, this.$practiceRequest, null));
         return async$default;
     }
 

@@ -92,6 +92,7 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.text.StringsKt;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineStart;
@@ -182,7 +183,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     }
 
     private final void deleteAllQuestionBySessionID(String sessionID) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), (CoroutineStart) null, new ClassInCourseViewModel$deleteAllQuestionBySessionID$1(this, sessionID, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), CoroutineStart.DEFAULT, new ClassInCourseViewModel$deleteAllQuestionBySessionID$1(this, sessionID, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -193,7 +194,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         this$0.stopServices(context);
         this$0.prepareToExit(findNavController);
         this$0.selectTypeClassOrExam(context, sessionID, findNavController);
-        try { BuildersKt.runBlocking((CoroutineContext) null, new ClassInCourseViewModel$dialogCloseBeforeTime$1$1(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null)); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+        try { BuildersKt.runBlocking(EmptyCoroutineContext.INSTANCE, new ClassInCourseViewModel$dialogCloseBeforeTime$1$1(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null)); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
         Dialog dialog = this$0.dialog;
         if (dialog != null) {
             dialog.dismiss();
@@ -674,19 +675,19 @@ public final class ClassInCourseViewModel extends ViewModel {
     }
 
     private final void updateDateEndClass(String sessionID) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$updateDateEndClass$1(this, sessionID, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassInCourseViewModel$updateDateEndClass$1(this, sessionID, null));
     }
 
     private final void updateIsFinishedState(String sessionID) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$updateIsFinishedState$1(this, sessionID, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassInCourseViewModel$updateIsFinishedState$1(this, sessionID, null));
     }
 
     private final void updateIsPendingState(String isPending, String sessionID) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$updateIsPendingState$1(this, isPending, sessionID, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassInCourseViewModel$updateIsPendingState$1(this, isPending, sessionID, null));
     }
 
     private final void updateIsPendingSync(String sessionID) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$updateIsPendingSync$1(this, sessionID, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassInCourseViewModel$updateIsPendingSync$1(this, sessionID, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -935,7 +936,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     }
 
     public final void getConfigSessionDto() {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$getConfigSessionDto$1(this, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassInCourseViewModel$getConfigSessionDto$1(this, null));
     }
 
     public final int getCurrentIndex() {
@@ -983,14 +984,14 @@ public final class ClassInCourseViewModel extends ViewModel {
 
     public final void getSessionById(String sessionID) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$getSessionById$1(this, sessionID, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassInCourseViewModel$getSessionById$1(this, sessionID, null));
     }
 
     public final void getSessionDataApi(Context context, String sessionID, boolean startChronometer, NavController findNavController) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         Intrinsics.checkNotNullParameter(findNavController, "findNavController");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$getSessionDataApi$1(context, sessionID, this, startChronometer, findNavController, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassInCourseViewModel$getSessionDataApi$1(context, sessionID, this, startChronometer, findNavController, null));
     }
 
     /* renamed from: getSessionReceived$app_release, reason: from getter */
@@ -1046,7 +1047,7 @@ public final class ClassInCourseViewModel extends ViewModel {
     public final void moveToNextQuestion() {
         List<QuestionDto> value = this._questions.getValue();
         if (value != null) {
-            BuildersKt.launch(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), (CoroutineStart) null, new ClassInCourseViewModel$moveToNextQuestion$1$1(value, this, null));
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), CoroutineStart.DEFAULT, new ClassInCourseViewModel$moveToNextQuestion$1$1(value, this, null));
         }
     }
 
@@ -1090,7 +1091,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         Intrinsics.checkNotNullParameter(findNavController, "findNavController");
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$sendPracticeExamSync$1(context, this, sessionID, findNavController, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassInCourseViewModel$sendPracticeExamSync$1(context, this, sessionID, findNavController, null));
     }
 
     public final void setCurrentIndex(int i) {
@@ -1191,7 +1192,7 @@ public final class ClassInCourseViewModel extends ViewModel {
         binding.includeLayoutPracticeClassCard.includePracticeClassTime.classProgressDescription.setText(parseDateToString12H2 + " - " + parseDateToString12H3 + " (" + duration + "h) ");
         binding.includeLayoutPracticeClassCard.includePracticeClassStartTime.classProgressTitle.setText(binding.getRoot().getContext().getText(R.string.txt_card_practice_class_start_hour));
         binding.includeLayoutPracticeClassCard.includePracticeClassStartTime.classProgressDescription.setText(parseDateToString12H);
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new ClassInCourseViewModel$setDataSessionDetailToDialog$2(this, binding, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new ClassInCourseViewModel$setDataSessionDetailToDialog$2(this, binding, null));
         binding.includeLayoutPracticeClassCard.includePracticeClassTopSpeed.classProgressTitle.setText(binding.getRoot().getContext().getText(R.string.txt_card_practice_class_top_velocity));
         binding.includeLayoutPracticeClassCard.includePracticeClassTopSpeed.classProgressDescription.setText("0,000 km/h");
         binding.includeLayoutPracticeClassCard.includePracticeClassAverageSpeed.classProgressTitle.setText(binding.getRoot().getContext().getText(R.string.txt_card_practice_class_max_average));

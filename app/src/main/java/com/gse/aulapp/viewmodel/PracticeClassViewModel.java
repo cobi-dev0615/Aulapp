@@ -79,6 +79,7 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.text.StringsKt;
 import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineStart;
 import kotlinx.coroutines.Job;
@@ -146,7 +147,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     private final void deleteGpsTraceBySessionID(String sessionID) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$deleteGpsTraceBySessionID$1(this, sessionID, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PracticeClassViewModel$deleteGpsTraceBySessionID$1(this, sessionID, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -162,7 +163,7 @@ public final class PracticeClassViewModel extends ViewModel {
         }
         this$0.stopServices(context);
         try {
-            BuildersKt.runBlocking((CoroutineContext) null, new PracticeClassViewModel$dialogCloseBeforeTime$1$2(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null));
+            BuildersKt.runBlocking(EmptyCoroutineContext.INSTANCE, new PracticeClassViewModel$dialogCloseBeforeTime$1$2(new StepProcessSessionRepository(GeneralApp.INSTANCE.getDatabase().StepProcessSessionDao()), sessionID, null));
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
@@ -330,7 +331,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     private final void setDataSessionDetail(SessionDto session, FragmentPracticeClassBinding binding, String timeSession) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$setDataSessionDetail$1(session, timeSession, binding, this, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PracticeClassViewModel$setDataSessionDetail$1(session, timeSession, binding, this, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -437,7 +438,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     private final void updateIsPendingState(String isPending, String sessionID) {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$updateIsPendingState$1(this, isPending, sessionID, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PracticeClassViewModel$updateIsPendingState$1(this, isPending, sessionID, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -447,7 +448,7 @@ public final class PracticeClassViewModel extends ViewModel {
         if (job != null) {
             job.cancel(null);
         }
-        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$updatePracticeInfo$1(this, binding, null));
+        launch$default = BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PracticeClassViewModel$updatePracticeInfo$1(this, binding, null));
         this.updatePracticeInfoJob = launch$default;
     }
 
@@ -606,7 +607,7 @@ public final class PracticeClassViewModel extends ViewModel {
     }
 
     public final void getConfigSessionDto() {
-        BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$getConfigSessionDto$1(this, null));
+        BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PracticeClassViewModel$getConfigSessionDto$1(this, null));
     }
 
     public final Dialog getDialog() {
@@ -620,7 +621,7 @@ public final class PracticeClassViewModel extends ViewModel {
     public final void getSessionById(String sessionID) {
         Intrinsics.checkNotNullParameter(sessionID, "sessionID");
         try {
-            BuildersKt.launch(ViewModelKt.getViewModelScope(this), (CoroutineContext) null, (CoroutineStart) null, new PracticeClassViewModel$getSessionById$1(this, sessionID, null));
+            BuildersKt.launch(ViewModelKt.getViewModelScope(this), EmptyCoroutineContext.INSTANCE, CoroutineStart.DEFAULT, new PracticeClassViewModel$getSessionById$1(this, sessionID, null));
         } catch (Exception e) {
             this._message.postValue(new Status.Failure(new Exception(e.getMessage())));
         }
