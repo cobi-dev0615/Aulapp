@@ -75,7 +75,7 @@ class JSONParserString extends JSONParserMemory {
         }
     }
 
-    public <T> T parse(String str, JsonReaderI<T> jsonReaderI) {
+    public <T> T parse(String str, JsonReaderI<T> jsonReaderI) throws ParseException {
         this.base = jsonReaderI.base;
         this.in = str;
         this.len = str.length();
