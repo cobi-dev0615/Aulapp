@@ -5,11 +5,12 @@ import java.io.ByteArrayOutputStream;
 import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.Inflater;
+import java.io.IOException;
 import java.util.zip.InflaterInputStream;
 
 /* loaded from: classes2.dex */
 public abstract class DeflateUtils {
-    public static byte[] compress(byte[] bArr) {
+    public static byte[] compress(byte[] bArr) throws IOException {
         Deflater deflater = null;
         DeflaterOutputStream deflaterOutputStream = null;
         try {
@@ -31,7 +32,7 @@ public abstract class DeflateUtils {
         }
     }
 
-    public static byte[] decompress(byte[] bArr) {
+    public static byte[] decompress(byte[] bArr) throws IOException {
         Inflater inflater = null;
         InflaterInputStream inflaterInputStream = null;
         try {
