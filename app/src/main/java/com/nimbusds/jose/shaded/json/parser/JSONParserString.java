@@ -37,7 +37,7 @@ class JSONParserString extends JSONParserMemory {
         return this.in.indexOf(c, i);
     }
 
-    public Object parse(String str) {
+    public Object parse(String str) throws ParseException {
         return parse(str, JSONValue.defaultReader.DEFAULT);
     }
 
