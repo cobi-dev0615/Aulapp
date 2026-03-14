@@ -1,6 +1,7 @@
 package com.nimbusds.jose.shaded.json;
 
 import com.nimbusds.jose.shaded.json.JStylerObj;
+import java.io.IOException;
 import kotlin.text.Typography;
 
 /* loaded from: classes2.dex */
@@ -42,18 +43,18 @@ public class JSONStyle {
         }
     }
 
-    public void arrayNextElm(Appendable appendable) {
+    public void arrayNextElm(Appendable appendable) throws IOException {
         appendable.append(',');
     }
 
     public void arrayObjectEnd(Appendable appendable) {
     }
 
-    public void arrayStart(Appendable appendable) {
+    public void arrayStart(Appendable appendable) throws IOException {
         appendable.append('[');
     }
 
-    public void arrayStop(Appendable appendable) {
+    public void arrayStop(Appendable appendable) throws IOException {
         appendable.append(']');
     }
 
@@ -79,26 +80,26 @@ public class JSONStyle {
     public void objectElmStop(Appendable appendable) {
     }
 
-    public void objectEndOfKey(Appendable appendable) {
+    public void objectEndOfKey(Appendable appendable) throws IOException {
         appendable.append(':');
     }
 
     public void objectFirstStart(Appendable appendable) {
     }
 
-    public void objectNext(Appendable appendable) {
+    public void objectNext(Appendable appendable) throws IOException {
         appendable.append(',');
     }
 
-    public void objectStart(Appendable appendable) {
+    public void objectStart(Appendable appendable) throws IOException {
         appendable.append('{');
     }
 
-    public void objectStop(Appendable appendable) {
+    public void objectStop(Appendable appendable) throws IOException {
         appendable.append('}');
     }
 
-    public void writeString(Appendable appendable, String str) {
+    public void writeString(Appendable appendable, String str) throws IOException {
         if (!mustProtectValue(str)) {
             appendable.append(str);
             return;
