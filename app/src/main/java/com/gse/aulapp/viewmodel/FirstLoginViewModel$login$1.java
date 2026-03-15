@@ -172,11 +172,21 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
         if (loginRequest != null) {
             LogSendUtil.INSTANCE.setLog(this.$context, q.i("Login request: ", loginRequest.getUsername()), null, false);
             loginRepository = this.this$0.loginRepository;
-            Flow m1541catch = loginRepository.login(this.$context, this.$loginRequest);
-            AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.this$0, this.$context);
-            this.label = 2;
-            if (m1541catch.collect(anonymousClass2, this) == coroutine_suspended) {
-                return coroutine_suspended;
+            try {
+                Flow m1541catch = loginRepository.login(this.$context, this.$loginRequest);
+                AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.this$0, this.$context);
+                this.label = 2;
+                if (m1541catch.collect(anonymousClass2, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } catch (Exception e) {
+                LogSendUtil.INSTANCE.setLog(this.$context, "Login Result Exception: " + e, "login", true);
+                MutableSharedFlow mutableSharedFlowErr = this.this$0._message;
+                Status.Failure failureErr = new Status.Failure(new Exception(this.$context.getString(R.string.dialog_text_fail_error_app)));
+                this.label = 3;
+                if (mutableSharedFlowErr.emit(failureErr, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
             }
         } else {
             LogSendUtil.INSTANCE.setLog(this.$context, "Login Exception: User or pass is null", "login", true);
