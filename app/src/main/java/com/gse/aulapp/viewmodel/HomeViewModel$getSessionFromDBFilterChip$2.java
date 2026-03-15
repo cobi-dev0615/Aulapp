@@ -70,15 +70,16 @@ public final class HomeViewModel$getSessionFromDBFilterChip$2 extends SuspendLam
             HomeViewModel homeViewModel = this.this$0;
             this.label = 1;
             obj = homeViewModel.getSessionByType(this);
-        } else {
-            if (i != 1) {
-                if (i != 2 && i != 3) {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-                ResultKt.throwOnFailure(obj);
-                return Unit.INSTANCE;
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
             }
+        } else if (i == 1) {
             ResultKt.throwOnFailure(obj);
+        } else if (i == 2 || i == 3) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         List<SessionDto> listSessionDtoFromListSessionFull = SessionDataConverter.INSTANCE.getListSessionDtoFromListSessionFull((List) obj);
         singleLiveEvent = this.this$0._listConfigSession;

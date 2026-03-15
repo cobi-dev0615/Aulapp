@@ -66,19 +66,13 @@ public final class HomeViewModel$getSessionByDB$2 extends SuspendLambda implemen
             ResultKt.throwOnFailure(obj);
             HomeViewModel homeViewModel = this.this$0;
             this.label = 1;
+            obj = homeViewModel.getSessionConfigList(this);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
         } else if (i == 1) {
             ResultKt.throwOnFailure(obj);
-        } else {
-            if (i != 2) {
-                if (i != 3) {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-                ResultKt.throwOnFailure(obj);
-                if (this.this$0.getIsSwipeRefresh()) {
-                    this.this$0.getSwrHome().setRefreshing(false);
-                }
-                return Unit.INSTANCE;
-            }
+        } else if (i == 2) {
             ResultKt.throwOnFailure(obj);
             List<SessionDto> listSessionDtoFromListSessionFull = SessionDataConverter.INSTANCE.getListSessionDtoFromListSessionFull((List) obj);
             singleLiveEvent = this.this$0._listConfigSession;
@@ -94,12 +88,36 @@ public final class HomeViewModel$getSessionByDB$2 extends SuspendLambda implemen
                 this.this$0.getSwrHome().setRefreshing(false);
             }
             return Unit.INSTANCE;
+        } else if (i == 3) {
+            ResultKt.throwOnFailure(obj);
+            if (this.this$0.getIsSwipeRefresh()) {
+                this.this$0.getSwrHome().setRefreshing(false);
+            }
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
+        // After case 0 (config list loaded) or case 1 (resumed from config list):
+        // Now load sessions from DB
         HomeViewModel homeViewModel2 = this.this$0;
         this.label = 2;
         obj = homeViewModel2.getSessionFromDB(this);
         if (obj == coroutine_suspended) {
             return coroutine_suspended;
+        }
+        // getSessionFromDB returned immediately — process result
+        List<SessionDto> listSessionDtoFromListSessionFull2 = SessionDataConverter.INSTANCE.getListSessionDtoFromListSessionFull((List) obj);
+        singleLiveEvent = this.this$0._listConfigSession;
+        List<ConfigurationSessionDto> list2 = (List) singleLiveEvent.getValue();
+        ClassUtil.FilterType filterType2 = this.this$0.getDateSelect() != null ? ClassUtil.FilterType.DATE : ClassUtil.FilterType.DEFAULT;
+        mutableSharedFlow = this.this$0._message;
+        Status.Success success2 = new Status.Success(new ClassUtil().groupClassDetailsByFilterType$app_release(listSessionDtoFromListSessionFull2, filterType2, list2));
+        this.label = 3;
+        if (mutableSharedFlow.emit(success2, this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        if (this.this$0.getIsSwipeRefresh()) {
+            this.this$0.getSwrHome().setRefreshing(false);
         }
         return Unit.INSTANCE;
     }

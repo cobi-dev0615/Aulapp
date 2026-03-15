@@ -84,7 +84,6 @@ public final class HomeViewModel$initSessionSyncPending$1 extends SuspendLambda 
             Pair pair;
             MenuItem findItem;
             Drawable drawable;
-            String unused;
             Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
             int i = this.label;
             if (i == 0) {
@@ -93,65 +92,81 @@ public final class HomeViewModel$initSessionSyncPending$1 extends SuspendLambda 
                 Context context = this.$context;
                 this.label = 1;
                 obj = sessionRepository.initAllSessionSyncPending(context, this);
-            } else {
-                if (i != 1) {
-                    if (i != 2) {
-                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                    }
-                    pair = (Pair) this.L$0;
-                    ResultKt.throwOnFailure(obj);
-                    findItem = this.$item.findItem(R.id.action_sync);
-                    HomeViewModel homeViewModel = this.this$0;
-                    Context context2 = this.$context;
-                    Intrinsics.checkNotNull(context2, "null cannot be cast to non-null type android.app.Activity");
-                    homeViewModel.onSwipeRefresh((Activity) context2, this.$binding);
-                    if (((Boolean) pair.getFirst()).booleanValue()) {
-                        LogSendUtil.INSTANCE.setLog(this.$context, "initSessionSyncPending response: Sincronización Exitosa", null, false);
-                        unused = this.this$0.TAG;
-                    }
-                    if (((Boolean) pair.getFirst()).booleanValue()) {
-                        drawable = ((Activity) this.$context).getResources().getDrawable(R.drawable.ic_cloud_sync_fail);
-                        boolean z = this.$toast;
-                        Context context3 = this.$context;
-                        if (z) {
-                            DialogUtil.Companion companion = DialogUtil.INSTANCE;
-                            Intrinsics.checkNotNull(context3, "null cannot be cast to non-null type android.app.Activity");
-                            Activity activity = (Activity) context3;
-                            String string = context3.getString(R.string.txt_detail_toast_sync_fail);
-                            Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
-                            companion.showToastAlert(activity, string, 1640);
-                        }
-                    } else {
-                        drawable = ((Activity) this.$context).getResources().getDrawable(R.drawable.ic_cloud_green);
-                    }
-                    if (findItem != null) {
-                        findItem.setIcon(drawable);
-                    }
-                    return Unit.INSTANCE;
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
                 }
+            } else if (i == 1) {
                 ResultKt.throwOnFailure(obj);
+            } else if (i == 2) {
+                pair = (Pair) this.L$0;
+                ResultKt.throwOnFailure(obj);
+                // Process sync result
+                findItem = this.$item.findItem(R.id.action_sync);
+                HomeViewModel homeViewModel = this.this$0;
+                Context context2 = this.$context;
+                Intrinsics.checkNotNull(context2, "null cannot be cast to non-null type android.app.Activity");
+                homeViewModel.onSwipeRefresh((Activity) context2, this.$binding);
+                if (((Boolean) pair.getFirst()).booleanValue()) {
+                    LogSendUtil.INSTANCE.setLog(this.$context, "initSessionSyncPending response: Sincronización Exitosa", null, false);
+                }
+                if (((Boolean) pair.getFirst()).booleanValue()) {
+                    drawable = ((Activity) this.$context).getResources().getDrawable(R.drawable.ic_cloud_sync_fail);
+                    if (this.$toast) {
+                        DialogUtil.Companion companion = DialogUtil.INSTANCE;
+                        Context context3 = this.$context;
+                        Intrinsics.checkNotNull(context3, "null cannot be cast to non-null type android.app.Activity");
+                        Activity activity = (Activity) context3;
+                        String string = context3.getString(R.string.txt_detail_toast_sync_fail);
+                        Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
+                        companion.showToastAlert(activity, string, 1640);
+                    }
+                } else {
+                    drawable = ((Activity) this.$context).getResources().getDrawable(R.drawable.ic_cloud_green);
+                }
+                if (findItem != null) {
+                    findItem.setIcon(drawable);
+                }
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
+            // After case 0 (immediate) or case 1 (resumed): process initAllSessionSyncPending result
             Pair pair2 = (Pair) obj;
             historicRecordPermissionsChangeRepository = this.this$0.sessionHistoricRecordPermissionsChangeRepository;
             Context context4 = this.$context;
             this.L$0 = pair2;
             this.label = 2;
-            if (historicRecordPermissionsChangeRepository.syncHistoricPermissionChange(context4, this) != coroutine_suspended) {
-                pair = pair2;
-                findItem = this.$item.findItem(R.id.action_sync);
-                HomeViewModel homeViewModel2 = this.this$0;
-                Context context22 = this.$context;
-                Intrinsics.checkNotNull(context22, "null cannot be cast to non-null type android.app.Activity");
-                homeViewModel2.onSwipeRefresh((Activity) context22, this.$binding);
-                if (((Boolean) pair.getFirst()).booleanValue()) {
-                }
-                if (((Boolean) pair.getFirst()).booleanValue()) {
-                }
-                if (findItem != null) {
-                }
-                return Unit.INSTANCE;
+            if (historicRecordPermissionsChangeRepository.syncHistoricPermissionChange(context4, this) == coroutine_suspended) {
+                return coroutine_suspended;
             }
-            return coroutine_suspended;
+            // syncHistoricPermissionChange returned immediately — process result
+            pair = pair2;
+            findItem = this.$item.findItem(R.id.action_sync);
+            HomeViewModel homeViewModel2 = this.this$0;
+            Context context5 = this.$context;
+            Intrinsics.checkNotNull(context5, "null cannot be cast to non-null type android.app.Activity");
+            homeViewModel2.onSwipeRefresh((Activity) context5, this.$binding);
+            if (((Boolean) pair.getFirst()).booleanValue()) {
+                LogSendUtil.INSTANCE.setLog(this.$context, "initSessionSyncPending response: Sincronización Exitosa", null, false);
+            }
+            if (((Boolean) pair.getFirst()).booleanValue()) {
+                drawable = ((Activity) this.$context).getResources().getDrawable(R.drawable.ic_cloud_sync_fail);
+                if (this.$toast) {
+                    DialogUtil.Companion companion2 = DialogUtil.INSTANCE;
+                    Context context6 = this.$context;
+                    Intrinsics.checkNotNull(context6, "null cannot be cast to non-null type android.app.Activity");
+                    Activity activity2 = (Activity) context6;
+                    String string2 = context6.getString(R.string.txt_detail_toast_sync_fail);
+                    Intrinsics.checkNotNullExpressionValue(string2, "getString(...)");
+                    companion2.showToastAlert(activity2, string2, 1640);
+                }
+            } else {
+                drawable = ((Activity) this.$context).getResources().getDrawable(R.drawable.ic_cloud_green);
+            }
+            if (findItem != null) {
+                findItem.setIcon(drawable);
+            }
+            return Unit.INSTANCE;
         }
 
         @Override // kotlin.jvm.functions.Function2

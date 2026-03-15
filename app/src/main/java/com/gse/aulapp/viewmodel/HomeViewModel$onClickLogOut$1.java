@@ -87,19 +87,20 @@ public final class HomeViewModel$onClickLogOut$1 extends SuspendLambda implement
             sessionRepository = this.this$0.sessionRepository;
             this.label = 1;
             obj = sessionRepository.getSessionsIsPending(this);
-        } else {
-            if (i != 1) {
-                if (i != 2) {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-                ResultKt.throwOnFailure(obj);
-                DialogUtil.INSTANCE.showDialogProgressGlobal(this.$activity, true, true, true);
-                buildCallTypeParametersMap = this.this$0.buildCallTypeParametersMap();
-                ActivityUtil.INSTANCE.navigateToActivity(this.$activity, MainActivity.class, true, buildCallTypeParametersMap);
-                new ActionOnlyNavDirections(R.id.action_homeFragment_to_firstLoginFragment);
-                return Unit.INSTANCE;
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
             }
+        } else if (i == 1) {
             ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            ResultKt.throwOnFailure(obj);
+            DialogUtil.INSTANCE.showDialogProgressGlobal(this.$activity, true, true, true);
+            buildCallTypeParametersMap = this.this$0.buildCallTypeParametersMap();
+            ActivityUtil.INSTANCE.navigateToActivity(this.$activity, MainActivity.class, true, buildCallTypeParametersMap);
+            new ActionOnlyNavDirections(R.id.action_homeFragment_to_firstLoginFragment);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         if (((Number) obj).longValue() != 0) {
             DialogNormalUtil.Companion companion = DialogNormalUtil.INSTANCE;
@@ -113,6 +114,9 @@ public final class HomeViewModel$onClickLogOut$1 extends SuspendLambda implement
         if (sessionRepository2.deleteLogOutSession(this) == coroutine_suspended) {
             return coroutine_suspended;
         }
+        DialogUtil.INSTANCE.showDialogProgressGlobal(this.$activity, true, true, true);
+        buildCallTypeParametersMap = this.this$0.buildCallTypeParametersMap();
+        ActivityUtil.INSTANCE.navigateToActivity(this.$activity, MainActivity.class, true, buildCallTypeParametersMap);
         return Unit.INSTANCE;
     }
 

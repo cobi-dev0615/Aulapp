@@ -325,42 +325,34 @@ public final class HomeViewModel extends ViewModel {
     */
     public final Object getConfigurationSession(Function1<Object, Unit> function1, Continuation continuation) {
         HomeViewModel$getConfigurationSession$1 homeViewModel$getConfigurationSession$1;
-        int i;
         if (continuation instanceof HomeViewModel$getConfigurationSession$1) {
             homeViewModel$getConfigurationSession$1 = (HomeViewModel$getConfigurationSession$1) continuation;
             int i2 = homeViewModel$getConfigurationSession$1.label;
             if ((i2 & IntCompanionObject.MIN_VALUE) != 0) {
                 homeViewModel$getConfigurationSession$1.label = i2 - IntCompanionObject.MIN_VALUE;
-                Object obj = homeViewModel$getConfigurationSession$1.result;
-                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-                i = homeViewModel$getConfigurationSession$1.label;
-                if (i != 0) {
-                    ResultKt.throwOnFailure(obj);
-                    ConfigurationUtil.Companion companion = ConfigurationUtil.INSTANCE;
-                    homeViewModel$getConfigurationSession$1.L$0 = function1;
-                    homeViewModel$getConfigurationSession$1.label = 1;
-                    obj = companion.getConfigurationSession(homeViewModel$getConfigurationSession$1);
-                    if (obj == coroutine_suspended) {
-                        return coroutine_suspended;
-                    }
-                } else {
-                    if (i != 1) {
-                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                    }
-                    function1 = (Function1) homeViewModel$getConfigurationSession$1.L$0;
-                    ResultKt.throwOnFailure(obj);
-                }
-                function1.invoke(obj);
-                return Unit.INSTANCE;
             }
+        } else {
+            homeViewModel$getConfigurationSession$1 = new HomeViewModel$getConfigurationSession$1(this, (Continuation) continuation);
         }
-        homeViewModel$getConfigurationSession$1 = new HomeViewModel$getConfigurationSession$1(this, (Continuation) continuation);
-        Object obj2 = homeViewModel$getConfigurationSession$1.result;
-        Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-        i = homeViewModel$getConfigurationSession$1.label;
-        if (i != 0) {
+        Object obj = homeViewModel$getConfigurationSession$1.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = homeViewModel$getConfigurationSession$1.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            ConfigurationUtil.Companion companion = ConfigurationUtil.INSTANCE;
+            homeViewModel$getConfigurationSession$1.L$0 = function1;
+            homeViewModel$getConfigurationSession$1.label = 1;
+            obj = companion.getConfigurationSession(homeViewModel$getConfigurationSession$1);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (i == 1) {
+            function1 = (Function1) homeViewModel$getConfigurationSession$1.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        function1.invoke(obj2);
+        function1.invoke(obj);
         return Unit.INSTANCE;
     }
 
@@ -431,25 +423,22 @@ public final class HomeViewModel extends ViewModel {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final ConfigurationSessionDto getSessionConfig(EnumTypeConfiguration type) {
-        ConfigurationSessionDto configurationSessionDto;
-        Object obj = null;
+        ConfigurationSessionDto configurationSessionDto = null;
         List<ConfigurationSessionDto> value = this._listConfigSession.getValue();
         if (value != null) {
             Iterator it = value.iterator();
-            while (true) {
-                if (!it.hasNext()) {
-                    break;
-                }
+            while (it.hasNext()) {
                 Object next = it.next();
                 ConfigurationSessionDto configurationSessionDto2 = (ConfigurationSessionDto) next;
                 if (Intrinsics.areEqual(configurationSessionDto2 != null ? configurationSessionDto2.getType() : null, type.name())) {
-                    obj = next;
+                    configurationSessionDto = (ConfigurationSessionDto) next;
                     break;
                 }
             }
-            configurationSessionDto = (ConfigurationSessionDto) obj;
         }
-        configurationSessionDto = new ConfigurationSessionDto(null, 0, 0, 0, 0, 0, 0, 0, 0, 511, null);
+        if (configurationSessionDto == null) {
+            configurationSessionDto = new ConfigurationSessionDto(null, 0, 0, 0, 0, 0, 0, 0, 0, 511, null);
+        }
         this._configSession.postValue(configurationSessionDto);
         return configurationSessionDto;
     }
