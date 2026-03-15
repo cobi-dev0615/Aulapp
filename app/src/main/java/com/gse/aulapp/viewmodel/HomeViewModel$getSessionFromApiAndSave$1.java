@@ -1,5 +1,6 @@
 package com.gse.aulapp.viewmodel;
 
+/* HomeViewModel getSessionFromApiAndSave coroutine */
 import android.app.Activity;
 import android.content.Context;
 import androidx.navigation.NavController;
