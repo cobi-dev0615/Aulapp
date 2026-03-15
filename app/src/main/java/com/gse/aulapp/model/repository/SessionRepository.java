@@ -1178,6 +1178,7 @@ public final class SessionRepository {
         if (!it.hasNext()) {
             return objectRef.element;
         }
+        return objectRef.element;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x008b  */
