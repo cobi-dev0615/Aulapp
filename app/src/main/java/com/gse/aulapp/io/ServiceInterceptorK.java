@@ -202,10 +202,66 @@ public final class ServiceInterceptorK implements Interceptor {
         return getUpdateResponseBody(response);
     }
 
+    /**
+     * For non-encrypted endpoints (KEY_PRIVATE_CONFIDENTIAL), the API returns a flat JSON response.
+     * The app models expect the data wrapped in {"statusCode":...,"result":{...}}.
+     * This method wraps the flat response into the expected format.
+     */
+    private final Response wrapFlatResponse(Response response) {
+        String str = null;
+        MediaType contentType = null;
+        try {
+            ResponseBody body = response.body();
+            if (body == null) {
+                return response;
+            }
+            contentType = body.contentType();
+            str = body.string();
+            if (str == null || str.isEmpty()) {
+                return response.newBuilder().body(ResponseBody.create(str != null ? str : "", contentType)).build();
+            }
+            // Wrap the flat response: {"statusCode": <code>, "result": <original_body>}
+            String wrapped = "{\"statusCode\":" + response.code() + ",\"result\":" + str + "}";
+            Log.d("ServiceInterceptorK", "Wrapped flat response for non-encrypted endpoint");
+            return response.newBuilder().body(ResponseBody.create(wrapped, contentType)).build();
+        } catch (Exception e) {
+            Log.e("ServiceInterceptorK", "Error wrapping response: " + e.getMessage(), e);
+            if (str != null) {
+                return response.newBuilder().body(ResponseBody.create(str, contentType)).build();
+            }
+            return response;
+        }
+    }
+
+    /**
+     * For non-encrypted endpoints (KEY_PRIVATE_CONFIDENTIAL), rewrite the URL
+     * from /api/v2/ to /api/ since the v2 endpoints require server-side encryption.
+     */
+    private final Request rewriteUrlForPlainEndpoint(Request request) {
+        String url = request.url().toString();
+        String newUrl = url.replace("/api/v2/", "/api/");
+        if (!url.equals(newUrl)) {
+            Log.d("ServiceInterceptorK", "Rewriting URL: " + url + " -> " + newUrl);
+            return request.newBuilder().url(newUrl).build();
+        }
+        return request;
+    }
+
     @Override // okhttp3.Interceptor
     public Response intercept(Interceptor.Chain chain) throws IOException {
         Intrinsics.checkNotNullParameter(chain, "chain");
         Request validateHeaders = validateHeaders(chain.request());
-        return validateHeaders.header("KEY_PRIVATE_CONFIDENTIAL") == null ? validateResponse(validateRequest(chain, validateHeaders)) : chain.proceed(validateHeaders);
+        if (validateHeaders.header("KEY_PRIVATE_CONFIDENTIAL") == null) {
+            return validateResponse(validateRequest(chain, validateHeaders));
+        } else {
+            // Non-encrypted endpoint: rewrite URL to /api/ (skip v2 encryption middleware),
+            // skip client-side encryption/decryption, and wrap successful responses
+            Request rewritten = rewriteUrlForPlainEndpoint(validateHeaders);
+            Response response = chain.proceed(rewritten);
+            if (response.isSuccessful()) {
+                return wrapFlatResponse(response);
+            }
+            return response;
+        }
     }
 }
