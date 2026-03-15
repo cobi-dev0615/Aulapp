@@ -1006,7 +1006,7 @@ public final class SessionRepository {
                 Object obj = sessionRepository$initAllSessionSyncPending$1.result;
                 Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
                 i = sessionRepository$initAllSessionSyncPending$1.label;
-                if (i != 0) {
+                if (i == 0) {
                     ResultKt.throwOnFailure(obj);
                     objectRef = new Ref.ObjectRef();
                     objectRef.element = new Pair(Boxing.boxBoolean(true), null);
@@ -1015,12 +1015,11 @@ public final class SessionRepository {
                     sessionRepository$initAllSessionSyncPending$1.L$2 = objectRef;
                     sessionRepository$initAllSessionSyncPending$1.label = 1;
                     allSessionPendingSync = getAllSessionPendingSync(sessionRepository$initAllSessionSyncPending$1);
-                    if (allSessionPendingSync != coroutine_suspended) {
-                        sessionRepository = this;
+                    if (allSessionPendingSync == coroutine_suspended) {
+                        return coroutine_suspended;
                     }
-                    return coroutine_suspended;
-                }
-                if (i == 1) {
+                    sessionRepository = this;
+                } else if (i == 1) {
                     Ref.ObjectRef objectRef3 = (Ref.ObjectRef) sessionRepository$initAllSessionSyncPending$1.L$2;
                     Context context3 = (Context) sessionRepository$initAllSessionSyncPending$1.L$1;
                     sessionRepository = (SessionRepository) sessionRepository$initAllSessionSyncPending$1.L$0;
@@ -1143,8 +1142,12 @@ public final class SessionRepository {
                     if (!it.hasNext()) {
                     }
                 }
+                if (allSessionPendingSync == null) {
+                    return objectRef.element;
+                }
                 it = ((Iterable) allSessionPendingSync).iterator();
                 if (!it.hasNext()) {
+                    return objectRef.element;
                 }
             }
         }
@@ -1152,12 +1155,29 @@ public final class SessionRepository {
         Object obj2 = sessionRepository$initAllSessionSyncPending$1.result;
         Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         i = sessionRepository$initAllSessionSyncPending$1.label;
-        if (i != 0) {
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj2);
+            objectRef = new Ref.ObjectRef();
+            objectRef.element = new Pair(Boxing.boxBoolean(true), null);
+            sessionRepository$initAllSessionSyncPending$1.L$0 = this;
+            sessionRepository$initAllSessionSyncPending$1.L$1 = context;
+            sessionRepository$initAllSessionSyncPending$1.L$2 = objectRef;
+            sessionRepository$initAllSessionSyncPending$1.label = 1;
+            allSessionPendingSync = getAllSessionPendingSync(sessionRepository$initAllSessionSyncPending$1);
+            if (allSessionPendingSync == coroutine_suspended2) {
+                return coroutine_suspended2;
+            }
+            sessionRepository = this;
+        } else {
+            return coroutine_suspended2;
+        }
+        if (allSessionPendingSync == null) {
+            return objectRef.element;
         }
         it = ((Iterable) allSessionPendingSync).iterator();
         if (!it.hasNext()) {
+            return objectRef.element;
         }
-        return null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x008b  */
