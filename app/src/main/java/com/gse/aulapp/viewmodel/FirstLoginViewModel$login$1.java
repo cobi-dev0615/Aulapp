@@ -302,7 +302,11 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                             if (statusCode == null || statusCode.intValue() != 401) {
                                 mutableSharedFlow = this.this$0._message;
                                 LoginResponse data10 = apiResult.getData();
-                                Status.Failure failure = new Status.Failure(new Exception((data10 == null || (result = data10.getResult()) == null) ? null : result.getMessage()));
+                                String errorMsg = (data10 == null || (result = data10.getResult()) == null) ? null : result.getMessage();
+                                if (errorMsg == null) {
+                                    errorMsg = apiResult.getMessage();
+                                }
+                                Status.Failure failure = new Status.Failure(new Exception(errorMsg));
                                 firstLoginViewModel$login$1$2$emit$1.label = 6;
                                 if (mutableSharedFlow.emit(failure, firstLoginViewModel$login$1$2$emit$1) == coroutine_suspended) {
                                     return coroutine_suspended;
@@ -312,6 +316,9 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                                 mutableSharedFlow2 = this.this$0._message;
                                 LoginResponse data11 = apiResult.getData();
                                 if (data11 == null || (result2 = data11.getResult()) == null || (str = result2.getMessage()) == null) {
+                                    str = apiResult.getMessage();
+                                }
+                                if (str == null) {
                                     str = "Ha ocurrido un error interno en la aplicación, estamos trabajando para solucionarlo.";
                                 }
                                 Status.Failure failure2 = new Status.Failure(new Exception(str));
