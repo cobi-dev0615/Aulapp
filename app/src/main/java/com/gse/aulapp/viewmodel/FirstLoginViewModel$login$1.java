@@ -271,210 +271,330 @@ public final class FirstLoginViewModel$login$1 extends SuspendLambda implements 
                 int i = firstLoginViewModel$login$1$2$emit$1.label;
                 if ((i & IntCompanionObject.MIN_VALUE) != 0) {
                     firstLoginViewModel$login$1$2$emit$1.label = i - IntCompanionObject.MIN_VALUE;
-                    Object obj = firstLoginViewModel$login$1$2$emit$1.result;
-                    Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-                    switch (firstLoginViewModel$login$1$2$emit$1.label) {
-                        case 0:
-                            ResultKt.throwOnFailure(obj);
-                            if (apiResult.getStatus() != EnumApiStatus.SUCCESS) {
-                                if (apiResult.getStatus() == EnumApiStatus.ERROR) {
-                                    LogSendUtil.Companion companion = LogSendUtil.INSTANCE;
-                                    Context context = this.$context;
-                                    LoginResponse data8 = apiResult.getData();
-                                    LoginResponse.Result result6 = data8 != null ? data8.getResult() : null;
-                                    LoginResponse data9 = apiResult.getData();
-                                    companion.setLog(context, "Login Error:  " + result6 + ",  url: " + (data9 != null ? data9.getUrl() : null), null, false);
-                                    Integer statusCode = apiResult.getStatusCode();
-                                    if (statusCode == null || statusCode.intValue() != 401) {
-                                        mutableSharedFlow = this.this$0._message;
-                                        LoginResponse data10 = apiResult.getData();
-                                        Status.Failure failure = new Status.Failure(new Exception((data10 == null || (result = data10.getResult()) == null) ? null : result.getMessage()));
-                                        firstLoginViewModel$login$1$2$emit$1.label = 6;
-                                        break;
-                                    } else {
-                                        mutableSharedFlow2 = this.this$0._message;
-                                        LoginResponse data11 = apiResult.getData();
-                                        if (data11 == null || (result2 = data11.getResult()) == null || (str = result2.getMessage()) == null) {
-                                            str = "Ha ocurrido un error interno en la aplicación, estamos trabajando para solucionarlo.";
-                                        }
-                                        Status.Failure failure2 = new Status.Failure(new Exception(str));
-                                        firstLoginViewModel$login$1$2$emit$1.label = 5;
-                                        break;
-                                    }
+                }
+            } else {
+                firstLoginViewModel$login$1$2$emit$1 = new FirstLoginViewModel$login$1$2$emit$1(this, continuation);
+            }
+            Object obj = firstLoginViewModel$login$1$2$emit$1.result;
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            switch (firstLoginViewModel$login$1$2$emit$1.label) {
+                case 0:
+                    ResultKt.throwOnFailure(obj);
+                    if (apiResult.getStatus() != EnumApiStatus.SUCCESS) {
+                        if (apiResult.getStatus() == EnumApiStatus.ERROR) {
+                            LogSendUtil.Companion companion = LogSendUtil.INSTANCE;
+                            Context context = this.$context;
+                            LoginResponse data8 = apiResult.getData();
+                            LoginResponse.Result result6 = data8 != null ? data8.getResult() : null;
+                            LoginResponse data9 = apiResult.getData();
+                            companion.setLog(context, "Login Error:  " + result6 + ",  url: " + (data9 != null ? data9.getUrl() : null), null, false);
+                            Integer statusCode = apiResult.getStatusCode();
+                            if (statusCode == null || statusCode.intValue() != 401) {
+                                mutableSharedFlow = this.this$0._message;
+                                LoginResponse data10 = apiResult.getData();
+                                Status.Failure failure = new Status.Failure(new Exception((data10 == null || (result = data10.getResult()) == null) ? null : result.getMessage()));
+                                firstLoginViewModel$login$1$2$emit$1.label = 6;
+                                if (mutableSharedFlow.emit(failure, firstLoginViewModel$login$1$2$emit$1) == coroutine_suspended) {
+                                    return coroutine_suspended;
+                                }
+                                return Unit.INSTANCE;
+                            } else {
+                                mutableSharedFlow2 = this.this$0._message;
+                                LoginResponse data11 = apiResult.getData();
+                                if (data11 == null || (result2 = data11.getResult()) == null || (str = result2.getMessage()) == null) {
+                                    str = "Ha ocurrido un error interno en la aplicación, estamos trabajando para solucionarlo.";
+                                }
+                                Status.Failure failure2 = new Status.Failure(new Exception(str));
+                                firstLoginViewModel$login$1$2$emit$1.label = 5;
+                                if (mutableSharedFlow2.emit(failure2, firstLoginViewModel$login$1$2$emit$1) == coroutine_suspended) {
+                                    return coroutine_suspended;
                                 }
                                 return Unit.INSTANCE;
                             }
-                            sessionRepository = this.this$0.sessionRepository;
-                            firstLoginViewModel$login$1$2$emit$1.L$0 = this;
-                            apiResult2 = apiResult;
-                            firstLoginViewModel$login$1$2$emit$1.L$1 = apiResult2;
-                            firstLoginViewModel$login$1$2$emit$1.label = 1;
-                            if (sessionRepository.deleteLogOutSession(firstLoginViewModel$login$1$2$emit$1) != coroutine_suspended) {
-                                anonymousClass2 = this;
-                                data = apiResult2.getData();
-                                if (((data != null || (result5 = data.getResult()) == null) ? null : result5.getToken()) != null) {
-                                    LogSendUtil.Companion companion2 = LogSendUtil.INSTANCE;
-                                    Context context2 = anonymousClass2.$context;
-                                    LoginResponse data12 = apiResult2.getData();
-                                    LoginResponse.Result result7 = data12 != null ? data12.getResult() : null;
-                                    LoginResponse data13 = apiResult2.getData();
-                                    companion2.setLog(context2, "Login: Token is null error: " + result7 + ", url: " + (data13 != null ? data13.getUrl() : null), null, false);
-                                    mutableSharedFlow3 = anonymousClass2.this$0._message;
-                                    LoginResponse data14 = apiResult2.getData();
-                                    Status.Failure failure3 = new Status.Failure(new Exception((data14 == null || (result3 = data14.getResult()) == null) ? null : result3.getMessage()));
-                                    firstLoginViewModel$login$1$2$emit$1.L$0 = null;
-                                    firstLoginViewModel$login$1$2$emit$1.L$1 = null;
-                                    firstLoginViewModel$login$1$2$emit$1.label = 4;
-                                    break;
-                                } else {
-                                    LoginResponse.Result result8 = apiResult2.getData().getResult();
-                                    Boolean fullEnrollment = result8 != null ? result8.getFullEnrollment() : null;
-                                    if (Intrinsics.areEqual(fullEnrollment, Boxing.boxBoolean(false)) && (result4 = apiResult2.getData().getResult()) != null && (data7 = result4.getData()) != null && !data7.getDemoUser()) {
-                                        mutableSharedFlow5 = anonymousClass2.this$0._message;
-                                        Status.Failure failure4 = new Status.Failure(new Exception("\nUsuario sin enrolamiento"));
-                                        firstLoginViewModel$login$1$2$emit$1.L$0 = null;
-                                        firstLoginViewModel$login$1$2$emit$1.L$1 = null;
-                                        firstLoginViewModel$login$1$2$emit$1.label = 2;
-                                        break;
-                                    } else {
-                                        LoginResponse.Result result9 = apiResult2.getData().getResult();
-                                        String token = result9 != null ? result9.getToken() : null;
-                                        Intrinsics.checkNotNull(token);
-                                        LoginResponse.Result result10 = apiResult2.getData().getResult();
-                                        if (result10 != null) {
-                                            result10.getUserEmail();
-                                        }
-                                        LoginResponse.Result result11 = apiResult2.getData().getResult();
-                                        if (result11 != null) {
-                                            result11.getDocumentNumber();
-                                        }
-                                        LoginResponse.Result result12 = apiResult2.getData().getResult();
-                                        if (result12 != null) {
-                                            result12.getDate();
-                                        }
-                                        LoginResponse.Result result13 = apiResult2.getData().getResult();
-                                        if (result13 != null) {
-                                            result13.getFraudInformationID();
-                                        }
-                                        LoginResponse.Result result14 = apiResult2.getData().getResult();
-                                        if (result14 != null) {
-                                            result14.getBiometrixInformationID();
-                                        }
-                                        LoginResponse.Result result15 = apiResult2.getData().getResult();
-                                        FourFingersIdenty fourFingersIdentyID = result15 != null ? result15.getFourFingersIdentyID() : null;
-                                        LoginResponse.Result result16 = apiResult2.getData().getResult();
-                                        String userID = result16 != null ? result16.getUserID() : null;
-                                        LoginResponse.Result result17 = apiResult2.getData().getResult();
-                                        boolean booleanValue = (result17 == null || (data6 = result17.getData()) == null || (biometricException = data6.getBiometricException()) == null) ? false : biometricException.booleanValue();
-                                        PreferenceUtil.Companion companion3 = PreferenceUtil.INSTANCE;
-                                        companion3.saveToken(anonymousClass2.$context, token);
-                                        companion3.saveUserId(anonymousClass2.$context, userID);
-                                        Context context3 = anonymousClass2.$context;
-                                        LoginResponse.Result result18 = apiResult2.getData().getResult();
-                                        companion3.saveUserDemo(context3, (result18 == null || (data5 = result18.getData()) == null || !data5.getDemoUser()) ? false : true);
-                                        companion3.saveBiometricException(anonymousClass2.$context, booleanValue);
-                                        FingerToHandConverter.Companion companion4 = FingerToHandConverter.INSTANCE;
-                                        Map<EnumHandsAulapp, Map<EnumFinger, String>> handsAndFingers = companion4.getHandsAndFingers(fourFingersIdentyID, EnumHandsAulapp.RIGHT);
-                                        Map<EnumHandsAulapp, Map<EnumFinger, String>> handsAndFingers2 = companion4.getHandsAndFingers(fourFingersIdentyID, EnumHandsAulapp.LEFT);
-                                        LoginResponse.Result result19 = apiResult2.getData().getResult();
-                                        String centerID = result19 != null ? result19.getCenterID() : null;
-                                        Ref.ObjectRef objectRef = new Ref.ObjectRef();
-                                        LoginResponse.Result result20 = apiResult2.getData().getResult();
-                                        List<CenterDto> centerList = result20 != null ? result20.getCenterList() : null;
-                                        if (centerList != null) {
-                                            Iterator it = centerList.iterator();
-                                            while (it.hasNext()) {
-                                                CenterDto r7 = (CenterDto) it.next();
-                                                equalsResult = r7.getCenterID() != null ? r7.getCenterID().equals(centerID) : centerID == null;
-                                                if (equalsResult) {
-                                                    objectRef.element = r7;
-                                                }
-                                            }
-                                        }
-                                        LoginResponse.Result result21 = apiResult2.getData().getResult();
-                                        String userEmail = result21 != null ? result21.getUserEmail() : null;
-                                        LoginResponse.Result result22 = apiResult2.getData().getResult();
-                                        String documentNumber = result22 != null ? result22.getDocumentNumber() : null;
-                                        LoginResponse.Result result23 = apiResult2.getData().getResult();
-                                        String date = result23 != null ? result23.getDate() : null;
-                                        LoginResponse.Result result24 = apiResult2.getData().getResult();
-                                        String fraudInformationID = result24 != null ? result24.getFraudInformationID() : null;
-                                        String str2 = userEmail;
-                                        String str3 = documentNumber;
-                                        String str4 = date;
-                                        callSaveTemplate = anonymousClass2.this$0.callSaveTemplate(anonymousClass2.$context, userID, handsAndFingers, EnumHandsAulapp.RIGHT);
-                                        if (callSaveTemplate == null) {
-                                            callSaveTemplate = BuildConfig.FLAVOR;
-                                        }
-                                        LoginResponse.Result result25 = apiResult2.getData().getResult();
-                                        String fullName = (result25 == null || (data4 = result25.getData()) == null) ? null : data4.getFullName();
-                                        String str5 = callSaveTemplate;
-                                        callSaveTemplate2 = anonymousClass2.this$0.callSaveTemplate(anonymousClass2.$context, userID, handsAndFingers2, EnumHandsAulapp.LEFT);
-                                        String str6 = callSaveTemplate2 == null ? BuildConfig.FLAVOR : callSaveTemplate2;
-                                        String str7 = userID;
-                                        EnumUserProfile enumUserProfile = EnumUserProfile.INSTRUCTOR;
-                                        LoginResponse.Result result26 = apiResult2.getData().getResult();
-                                        String docType = (result26 == null || (data3 = result26.getData()) == null) ? null : data3.getDocType();
-                                        LoginResponse.Result result27 = apiResult2.getData().getResult();
-                                        List<CenterDto> centerList2 = result27 != null ? result27.getCenterList() : null;
-                                        CenterDto centerDto = (CenterDto) objectRef.element;
-                                        LoginResponse.Result result28 = apiResult2.getData().getResult();
-                                        boolean z = (result28 == null || (data2 = result28.getData()) == null || !data2.getDemoUser()) ? false : true;
-                                        LoginResponse.Result result29 = apiResult2.getData().getResult();
-                                        LoginObject loginObject = new LoginObject(token, str2, str3, fullEnrollment, str4, fraudInformationID, str7, str5, str6, fullName, enumUserProfile, docType, centerList2, centerDto, Boxing.boxBoolean(z), null, result29 != null ? result29.getBiometrixInformationID() : null, 32768, null);
-                                        mutableSharedFlow4 = anonymousClass2.this$0._message;
-                                        Status.Success success = new Status.Success(loginObject);
-                                        firstLoginViewModel$login$1$2$emit$1.L$0 = anonymousClass2;
-                                        firstLoginViewModel$login$1$2$emit$1.L$1 = apiResult2;
-                                        firstLoginViewModel$login$1$2$emit$1.label = 3;
-                                        if (mutableSharedFlow4.emit(success, firstLoginViewModel$login$1$2$emit$1) != coroutine_suspended) {
-                                            apiResult3 = apiResult2;
-                                            anonymousClass22 = anonymousClass2;
-                                            LogSendUtil.INSTANCE.setLog(anonymousClass22.$context, "Login Result Success:  " + apiResult3.getData().getResult() + ", url: " + apiResult3.getData().getUrl(), null, false);
-                                            return Unit.INSTANCE;
-                                        }
+                        }
+                        return Unit.INSTANCE;
+                    }
+                    sessionRepository = this.this$0.sessionRepository;
+                    firstLoginViewModel$login$1$2$emit$1.L$0 = this;
+                    apiResult2 = apiResult;
+                    firstLoginViewModel$login$1$2$emit$1.L$1 = apiResult2;
+                    firstLoginViewModel$login$1$2$emit$1.label = 1;
+                    if (sessionRepository.deleteLogOutSession(firstLoginViewModel$login$1$2$emit$1) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    anonymousClass2 = this;
+                    data = apiResult2.getData();
+                    if (data == null || data.getResult() == null || data.getResult().getToken() == null) {
+                        LogSendUtil.Companion companion2 = LogSendUtil.INSTANCE;
+                        Context context2 = anonymousClass2.$context;
+                        LoginResponse data12 = apiResult2.getData();
+                        LoginResponse.Result result7 = data12 != null ? data12.getResult() : null;
+                        LoginResponse data13 = apiResult2.getData();
+                        companion2.setLog(context2, "Login: Token is null error: " + result7 + ", url: " + (data13 != null ? data13.getUrl() : null), null, false);
+                        mutableSharedFlow3 = anonymousClass2.this$0._message;
+                        LoginResponse data14 = apiResult2.getData();
+                        Status.Failure failure3 = new Status.Failure(new Exception((data14 == null || (result3 = data14.getResult()) == null) ? null : result3.getMessage()));
+                        firstLoginViewModel$login$1$2$emit$1.L$0 = null;
+                        firstLoginViewModel$login$1$2$emit$1.L$1 = null;
+                        firstLoginViewModel$login$1$2$emit$1.label = 4;
+                        if (mutableSharedFlow3.emit(failure3, firstLoginViewModel$login$1$2$emit$1) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    } else {
+                        LoginResponse.Result result8 = apiResult2.getData().getResult();
+                        Boolean fullEnrollment = result8 != null ? result8.getFullEnrollment() : null;
+                        if (Intrinsics.areEqual(fullEnrollment, Boxing.boxBoolean(false)) && (result4 = apiResult2.getData().getResult()) != null && (data7 = result4.getData()) != null && !data7.getDemoUser()) {
+                            mutableSharedFlow5 = anonymousClass2.this$0._message;
+                            Status.Failure failure4 = new Status.Failure(new Exception("\nUsuario sin enrolamiento"));
+                            firstLoginViewModel$login$1$2$emit$1.L$0 = null;
+                            firstLoginViewModel$login$1$2$emit$1.L$1 = null;
+                            firstLoginViewModel$login$1$2$emit$1.label = 2;
+                            if (mutableSharedFlow5.emit(failure4, firstLoginViewModel$login$1$2$emit$1) == coroutine_suspended) {
+                                return coroutine_suspended;
+                            }
+                            return Unit.INSTANCE;
+                        } else {
+                            LoginResponse.Result result9 = apiResult2.getData().getResult();
+                            String token = result9 != null ? result9.getToken() : null;
+                            Intrinsics.checkNotNull(token);
+                            LoginResponse.Result result10 = apiResult2.getData().getResult();
+                            if (result10 != null) {
+                                result10.getUserEmail();
+                            }
+                            LoginResponse.Result result11 = apiResult2.getData().getResult();
+                            if (result11 != null) {
+                                result11.getDocumentNumber();
+                            }
+                            LoginResponse.Result result12 = apiResult2.getData().getResult();
+                            if (result12 != null) {
+                                result12.getDate();
+                            }
+                            LoginResponse.Result result13 = apiResult2.getData().getResult();
+                            if (result13 != null) {
+                                result13.getFraudInformationID();
+                            }
+                            LoginResponse.Result result14 = apiResult2.getData().getResult();
+                            if (result14 != null) {
+                                result14.getBiometrixInformationID();
+                            }
+                            LoginResponse.Result result15 = apiResult2.getData().getResult();
+                            FourFingersIdenty fourFingersIdentyID = result15 != null ? result15.getFourFingersIdentyID() : null;
+                            LoginResponse.Result result16 = apiResult2.getData().getResult();
+                            String userID = result16 != null ? result16.getUserID() : null;
+                            LoginResponse.Result result17 = apiResult2.getData().getResult();
+                            boolean booleanValue = (result17 == null || (data6 = result17.getData()) == null || (biometricException = data6.getBiometricException()) == null) ? false : biometricException.booleanValue();
+                            PreferenceUtil.Companion companion3 = PreferenceUtil.INSTANCE;
+                            companion3.saveToken(anonymousClass2.$context, token);
+                            companion3.saveUserId(anonymousClass2.$context, userID);
+                            Context context3 = anonymousClass2.$context;
+                            LoginResponse.Result result18 = apiResult2.getData().getResult();
+                            companion3.saveUserDemo(context3, (result18 == null || (data5 = result18.getData()) == null || !data5.getDemoUser()) ? false : true);
+                            companion3.saveBiometricException(anonymousClass2.$context, booleanValue);
+                            FingerToHandConverter.Companion companion4 = FingerToHandConverter.INSTANCE;
+                            Map<EnumHandsAulapp, Map<EnumFinger, String>> handsAndFingers = companion4.getHandsAndFingers(fourFingersIdentyID, EnumHandsAulapp.RIGHT);
+                            Map<EnumHandsAulapp, Map<EnumFinger, String>> handsAndFingers2 = companion4.getHandsAndFingers(fourFingersIdentyID, EnumHandsAulapp.LEFT);
+                            LoginResponse.Result result19 = apiResult2.getData().getResult();
+                            String centerID = result19 != null ? result19.getCenterID() : null;
+                            Ref.ObjectRef objectRef = new Ref.ObjectRef();
+                            LoginResponse.Result result20 = apiResult2.getData().getResult();
+                            List<CenterDto> centerList = result20 != null ? result20.getCenterList() : null;
+                            if (centerList != null) {
+                                Iterator it = centerList.iterator();
+                                while (it.hasNext()) {
+                                    CenterDto r7 = (CenterDto) it.next();
+                                    equalsResult = r7.getCenterID() != null ? r7.getCenterID().equals(centerID) : centerID == null;
+                                    if (equalsResult) {
+                                        objectRef.element = r7;
                                     }
                                 }
                             }
-                            return coroutine_suspended;
-                        case 1:
-                            apiResult2 = (ApiResult) firstLoginViewModel$login$1$2$emit$1.L$1;
-                            anonymousClass2 = (AnonymousClass2) firstLoginViewModel$login$1$2$emit$1.L$0;
-                            ResultKt.throwOnFailure(obj);
-                            data = apiResult2.getData();
-                            if (data != null) {
-                                break;
+                            LoginResponse.Result result21 = apiResult2.getData().getResult();
+                            String userEmail = result21 != null ? result21.getUserEmail() : null;
+                            LoginResponse.Result result22 = apiResult2.getData().getResult();
+                            String documentNumber = result22 != null ? result22.getDocumentNumber() : null;
+                            LoginResponse.Result result23 = apiResult2.getData().getResult();
+                            String date = result23 != null ? result23.getDate() : null;
+                            LoginResponse.Result result24 = apiResult2.getData().getResult();
+                            String fraudInformationID = result24 != null ? result24.getFraudInformationID() : null;
+                            String str2 = userEmail;
+                            String str3 = documentNumber;
+                            String str4 = date;
+                            callSaveTemplate = anonymousClass2.this$0.callSaveTemplate(anonymousClass2.$context, userID, handsAndFingers, EnumHandsAulapp.RIGHT);
+                            if (callSaveTemplate == null) {
+                                callSaveTemplate = BuildConfig.FLAVOR;
                             }
-                            if (((data != null || (result5 = data.getResult()) == null) ? null : result5.getToken()) != null) {
+                            LoginResponse.Result result25 = apiResult2.getData().getResult();
+                            String fullName = (result25 == null || (data4 = result25.getData()) == null) ? null : data4.getFullName();
+                            String str5 = callSaveTemplate;
+                            callSaveTemplate2 = anonymousClass2.this$0.callSaveTemplate(anonymousClass2.$context, userID, handsAndFingers2, EnumHandsAulapp.LEFT);
+                            String str6 = callSaveTemplate2 == null ? BuildConfig.FLAVOR : callSaveTemplate2;
+                            String str7 = userID;
+                            EnumUserProfile enumUserProfile = EnumUserProfile.INSTRUCTOR;
+                            LoginResponse.Result result26 = apiResult2.getData().getResult();
+                            String docType = (result26 == null || (data3 = result26.getData()) == null) ? null : data3.getDocType();
+                            LoginResponse.Result result27 = apiResult2.getData().getResult();
+                            List<CenterDto> centerList2 = result27 != null ? result27.getCenterList() : null;
+                            CenterDto centerDto = (CenterDto) objectRef.element;
+                            LoginResponse.Result result28 = apiResult2.getData().getResult();
+                            boolean z = (result28 == null || (data2 = result28.getData()) == null || !data2.getDemoUser()) ? false : true;
+                            LoginResponse.Result result29 = apiResult2.getData().getResult();
+                            LoginObject loginObject = new LoginObject(token, str2, str3, fullEnrollment, str4, fraudInformationID, str7, str5, str6, fullName, enumUserProfile, docType, centerList2, centerDto, Boxing.boxBoolean(z), null, result29 != null ? result29.getBiometrixInformationID() : null, 32768, null);
+                            mutableSharedFlow4 = anonymousClass2.this$0._message;
+                            Status.Success success = new Status.Success(loginObject);
+                            firstLoginViewModel$login$1$2$emit$1.L$0 = anonymousClass2;
+                            firstLoginViewModel$login$1$2$emit$1.L$1 = apiResult2;
+                            firstLoginViewModel$login$1$2$emit$1.label = 3;
+                            if (mutableSharedFlow4.emit(success, firstLoginViewModel$login$1$2$emit$1) != coroutine_suspended) {
+                                apiResult3 = apiResult2;
+                                anonymousClass22 = anonymousClass2;
+                                LogSendUtil.INSTANCE.setLog(anonymousClass22.$context, "Login Result Success:  " + apiResult3.getData().getResult() + ", url: " + apiResult3.getData().getUrl(), null, false);
+                                return Unit.INSTANCE;
                             }
-                            return coroutine_suspended;
-                        case 2:
-                            ResultKt.throwOnFailure(obj);
-                            return Unit.INSTANCE;
-                        case 3:
-                            apiResult3 = (ApiResult) firstLoginViewModel$login$1$2$emit$1.L$1;
-                            anonymousClass22 = (AnonymousClass2) firstLoginViewModel$login$1$2$emit$1.L$0;
-                            ResultKt.throwOnFailure(obj);
-                            LogSendUtil.INSTANCE.setLog(anonymousClass22.$context, "Login Result Success:  " + apiResult3.getData().getResult() + ", url: " + apiResult3.getData().getUrl(), null, false);
-                            return Unit.INSTANCE;
-                        case 4:
-                            ResultKt.throwOnFailure(obj);
-                            return Unit.INSTANCE;
-                        case 5:
-                            ResultKt.throwOnFailure(obj);
-                            return Unit.INSTANCE;
-                        case 6:
-                            ResultKt.throwOnFailure(obj);
-                            return Unit.INSTANCE;
-                        default:
-                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                        }
                     }
-                }
+                    return coroutine_suspended;
+                case 1:
+                    apiResult2 = (ApiResult) firstLoginViewModel$login$1$2$emit$1.L$1;
+                    anonymousClass2 = (AnonymousClass2) firstLoginViewModel$login$1$2$emit$1.L$0;
+                    ResultKt.throwOnFailure(obj);
+                    data = apiResult2.getData();
+                    if (data == null || data.getResult() == null || data.getResult().getToken() == null) {
+                        LogSendUtil.Companion companion2a = LogSendUtil.INSTANCE;
+                        Context context2a = anonymousClass2.$context;
+                        LoginResponse data12a = apiResult2.getData();
+                        LoginResponse.Result result7a = data12a != null ? data12a.getResult() : null;
+                        LoginResponse data13a = apiResult2.getData();
+                        companion2a.setLog(context2a, "Login: Token is null error: " + result7a + ", url: " + (data13a != null ? data13a.getUrl() : null), null, false);
+                        MutableSharedFlow mutableSharedFlow3a = anonymousClass2.this$0._message;
+                        LoginResponse data14a = apiResult2.getData();
+                        LoginResponse.Result result3a = data14a != null ? data14a.getResult() : null;
+                        Status.Failure failure3a = new Status.Failure(new Exception(result3a != null ? result3a.getMessage() : null));
+                        firstLoginViewModel$login$1$2$emit$1.L$0 = null;
+                        firstLoginViewModel$login$1$2$emit$1.L$1 = null;
+                        firstLoginViewModel$login$1$2$emit$1.label = 4;
+                        if (mutableSharedFlow3a.emit(failure3a, firstLoginViewModel$login$1$2$emit$1) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    } else {
+                        LoginResponse.Result result8b = apiResult2.getData().getResult();
+                        Boolean fullEnrollment2 = result8b != null ? result8b.getFullEnrollment() : null;
+                        if (Intrinsics.areEqual(fullEnrollment2, Boxing.boxBoolean(false))) {
+                            LoginResponse.Result result4b = apiResult2.getData().getResult();
+                            if (result4b != null) {
+                                DataLoginDto data7b = result4b.getData();
+                                if (data7b != null && !data7b.getDemoUser()) {
+                                    MutableSharedFlow mutableSharedFlow5b = anonymousClass2.this$0._message;
+                                    Status.Failure failure4b = new Status.Failure(new Exception("\nUsuario sin enrolamiento"));
+                                    firstLoginViewModel$login$1$2$emit$1.L$0 = null;
+                                    firstLoginViewModel$login$1$2$emit$1.L$1 = null;
+                                    firstLoginViewModel$login$1$2$emit$1.label = 2;
+                                    if (mutableSharedFlow5b.emit(failure4b, firstLoginViewModel$login$1$2$emit$1) == coroutine_suspended) {
+                                        return coroutine_suspended;
+                                    }
+                                    return Unit.INSTANCE;
+                                }
+                            }
+                        }
+                        LoginResponse.Result result9b = apiResult2.getData().getResult();
+                        String tokenB = result9b != null ? result9b.getToken() : null;
+                        Intrinsics.checkNotNull(tokenB);
+                        LoginResponse.Result result15b = apiResult2.getData().getResult();
+                        FourFingersIdenty fourFingersIdentyIDb = result15b != null ? result15b.getFourFingersIdentyID() : null;
+                        LoginResponse.Result result16b = apiResult2.getData().getResult();
+                        String userIDb = result16b != null ? result16b.getUserID() : null;
+                        LoginResponse.Result result17b = apiResult2.getData().getResult();
+                        DataLoginDto data6b = result17b != null ? result17b.getData() : null;
+                        Boolean biometricExceptionB = data6b != null ? data6b.getBiometricException() : null;
+                        boolean booleanValueB = biometricExceptionB != null ? biometricExceptionB.booleanValue() : false;
+                        PreferenceUtil.Companion companion3b = PreferenceUtil.INSTANCE;
+                        companion3b.saveToken(anonymousClass2.$context, tokenB);
+                        companion3b.saveUserId(anonymousClass2.$context, userIDb);
+                        Context context3b = anonymousClass2.$context;
+                        LoginResponse.Result result18b = apiResult2.getData().getResult();
+                        DataLoginDto data5b = result18b != null ? result18b.getData() : null;
+                        companion3b.saveUserDemo(context3b, (data5b != null && data5b.getDemoUser()));
+                        companion3b.saveBiometricException(anonymousClass2.$context, booleanValueB);
+                        FingerToHandConverter.Companion companion4b = FingerToHandConverter.INSTANCE;
+                        Map<EnumHandsAulapp, Map<EnumFinger, String>> handsAndFingersB = companion4b.getHandsAndFingers(fourFingersIdentyIDb, EnumHandsAulapp.RIGHT);
+                        Map<EnumHandsAulapp, Map<EnumFinger, String>> handsAndFingers2b = companion4b.getHandsAndFingers(fourFingersIdentyIDb, EnumHandsAulapp.LEFT);
+                        LoginResponse.Result result19b = apiResult2.getData().getResult();
+                        String centerIDb = result19b != null ? result19b.getCenterID() : null;
+                        Ref.ObjectRef objectRefB = new Ref.ObjectRef();
+                        LoginResponse.Result result20b = apiResult2.getData().getResult();
+                        List<CenterDto> centerListB = result20b != null ? result20b.getCenterList() : null;
+                        if (centerListB != null) {
+                            Iterator itB = centerListB.iterator();
+                            while (itB.hasNext()) {
+                                CenterDto r7b = (CenterDto) itB.next();
+                                boolean eqB = r7b.getCenterID() != null ? r7b.getCenterID().equals(centerIDb) : centerIDb == null;
+                                if (eqB) {
+                                    objectRefB.element = r7b;
+                                }
+                            }
+                        }
+                        LoginResponse.Result result21b = apiResult2.getData().getResult();
+                        String userEmailB = result21b != null ? result21b.getUserEmail() : null;
+                        LoginResponse.Result result22b = apiResult2.getData().getResult();
+                        String documentNumberB = result22b != null ? result22b.getDocumentNumber() : null;
+                        LoginResponse.Result result23b = apiResult2.getData().getResult();
+                        String dateB = result23b != null ? result23b.getDate() : null;
+                        LoginResponse.Result result24b = apiResult2.getData().getResult();
+                        String fraudInformationIDb = result24b != null ? result24b.getFraudInformationID() : null;
+                        String callSaveTemplateB = anonymousClass2.this$0.callSaveTemplate(anonymousClass2.$context, userIDb, handsAndFingersB, EnumHandsAulapp.RIGHT);
+                        if (callSaveTemplateB == null) {
+                            callSaveTemplateB = BuildConfig.FLAVOR;
+                        }
+                        LoginResponse.Result result25b = apiResult2.getData().getResult();
+                        DataLoginDto data4b = result25b != null ? result25b.getData() : null;
+                        String fullNameB = data4b != null ? data4b.getFullName() : null;
+                        String callSaveTemplate2b = anonymousClass2.this$0.callSaveTemplate(anonymousClass2.$context, userIDb, handsAndFingers2b, EnumHandsAulapp.LEFT);
+                        String str6b = callSaveTemplate2b == null ? BuildConfig.FLAVOR : callSaveTemplate2b;
+                        EnumUserProfile enumUserProfileB = EnumUserProfile.INSTRUCTOR;
+                        LoginResponse.Result result26b = apiResult2.getData().getResult();
+                        DataLoginDto data3b = result26b != null ? result26b.getData() : null;
+                        String docTypeB = data3b != null ? data3b.getDocType() : null;
+                        LoginResponse.Result result27b = apiResult2.getData().getResult();
+                        List<CenterDto> centerList2b = result27b != null ? result27b.getCenterList() : null;
+                        CenterDto centerDtoB = (CenterDto) objectRefB.element;
+                        LoginResponse.Result result28b = apiResult2.getData().getResult();
+                        DataLoginDto data2b = result28b != null ? result28b.getData() : null;
+                        boolean zB = (data2b != null && data2b.getDemoUser());
+                        LoginResponse.Result result29b = apiResult2.getData().getResult();
+                        LoginObject loginObjectB = new LoginObject(tokenB, userEmailB, documentNumberB, fullEnrollment2, dateB, fraudInformationIDb, userIDb, callSaveTemplateB, str6b, fullNameB, enumUserProfileB, docTypeB, centerList2b, centerDtoB, Boxing.boxBoolean(zB), null, result29b != null ? result29b.getBiometrixInformationID() : null, 32768, null);
+                        MutableSharedFlow mutableSharedFlow4b = anonymousClass2.this$0._message;
+                        Status.Success successB = new Status.Success(loginObjectB);
+                        firstLoginViewModel$login$1$2$emit$1.L$0 = anonymousClass2;
+                        firstLoginViewModel$login$1$2$emit$1.L$1 = apiResult2;
+                        firstLoginViewModel$login$1$2$emit$1.label = 3;
+                        if (mutableSharedFlow4b.emit(successB, firstLoginViewModel$login$1$2$emit$1) != coroutine_suspended) {
+                            LogSendUtil.INSTANCE.setLog(anonymousClass2.$context, "Login Result Success:  " + apiResult2.getData().getResult() + ", url: " + apiResult2.getData().getUrl(), null, false);
+                            return Unit.INSTANCE;
+                        }
+                        return coroutine_suspended;
+                    }
+                case 2:
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                case 3:
+                    apiResult3 = (ApiResult) firstLoginViewModel$login$1$2$emit$1.L$1;
+                    anonymousClass22 = (AnonymousClass2) firstLoginViewModel$login$1$2$emit$1.L$0;
+                    ResultKt.throwOnFailure(obj);
+                    LogSendUtil.INSTANCE.setLog(anonymousClass22.$context, "Login Result Success:  " + apiResult3.getData().getResult() + ", url: " + apiResult3.getData().getUrl(), null, false);
+                    return Unit.INSTANCE;
+                case 4:
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                case 5:
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                case 6:
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                default:
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            firstLoginViewModel$login$1$2$emit$1 = new FirstLoginViewModel$login$1$2$emit$1(this, continuation);
-            Object obj2 = firstLoginViewModel$login$1$2$emit$1.result;
-            Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-            return this.emit(apiResult, firstLoginViewModel$login$1$2$emit$1);
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector

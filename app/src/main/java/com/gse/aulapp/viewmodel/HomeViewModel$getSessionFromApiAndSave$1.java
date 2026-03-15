@@ -265,6 +265,11 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                 int i = homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label;
                 if ((i & IntCompanionObject.MIN_VALUE) != 0) {
                     homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label = i - IntCompanionObject.MIN_VALUE;
+                }
+            } else {
+                homeViewModel$getSessionFromApiAndSave$1$2$emit$1 = new HomeViewModel$getSessionFromApiAndSave$1$2$emit$1(this, continuation);
+            }
+            {
                     Object obj = homeViewModel$getSessionFromApiAndSave$1$2$emit$1.result;
                     Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
                     String str = null;
@@ -393,14 +398,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                         default:
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                }
             }
-            homeViewModel$getSessionFromApiAndSave$1$2$emit$1 = new HomeViewModel$getSessionFromApiAndSave$1$2$emit$1(this, continuation);
-            Object obj2 = homeViewModel$getSessionFromApiAndSave$1$2$emit$1.result;
-            Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-            String str2 = null;
-            str2 = null;
-            return this.emit(apiResult, homeViewModel$getSessionFromApiAndSave$1$2$emit$1);
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
