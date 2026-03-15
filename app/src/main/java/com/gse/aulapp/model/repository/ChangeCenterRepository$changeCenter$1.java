@@ -78,69 +78,93 @@ public final class ChangeCenterRepository$changeCenter$1 extends SuspendLambda i
     */
     public final Object invokeSuspend(Object obj) {
         FlowCollector flowCollector;
-        Response response;
-        ErrorResult result;
         Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         int i = this.label;
-        String str = null;
         if (i == 0) {
             ResultKt.throwOnFailure(obj);
             flowCollector = (FlowCollector) this.L$0;
             ReceptionsApiService apiService = ReceptionsAdapter.INSTANCE.getApiService(this.$context);
-            if (apiService != null) {
-                ChangeCenterRequest changeCenterRequest = this.$request;
-                this.L$0 = flowCollector;
-                this.label = 1;
-                obj = apiService.changeCenter(changeCenterRequest, this);
-            } else {
-                response = null;
-                if (response != null) {
-                    ApiResult.Failure failure = new ApiResult.Failure(500, new Exception("Unknown error"));
-                    this.L$0 = null;
-                    this.label = 4;
-                } else {
-                    if (response.isSuccessful()) {
-                        ChangeCenterResponse changeCenterResponse = (ChangeCenterResponse) response.body();
-                        if (changeCenterResponse != null) {
-                            changeCenterResponse.setUrl(response.raw().request().url().url().toString());
-                            ApiResult.Success success = new ApiResult.Success(response.code(), changeCenterResponse);
-                            this.L$0 = flowCollector;
-                            this.label = 2;
-                        }
-                        return Unit.INSTANCE;
-                    }
-                    Gson gson = new Gson();
-                    ResponseBody errorBody = response.errorBody();
-                    String errorBodyString = null;
-                    try { if (errorBody != null) errorBodyString = errorBody.string(); } catch (java.io.IOException ignored) {}
-                    ErrorResponse errorResponse = (ErrorResponse) gson.fromJson(errorBodyString, ErrorResponse.class);
-                    ResponseBody errorBody2 = response.errorBody();
-                    if (errorBody2 != null) {
-                        errorBody2.close();
-                    }
-                    int code = response.code();
-                    if (errorResponse != null && (result = errorResponse.getResult()) != null) {
-                        str = result.getMessage();
-                    }
-                    ApiResult.Failure failure2 = new ApiResult.Failure(code, new Exception(str));
-                    this.L$0 = flowCollector;
-                    this.label = 3;
+            if (apiService == null) {
+                ApiResult.Failure failure = new ApiResult.Failure(500, new Exception("Unknown error"));
+                this.L$0 = null;
+                this.label = 4;
+                if (flowCollector.emit(failure, this) == coroutine_suspended) {
+                    return coroutine_suspended;
                 }
-            }
-        } else {
-            if (i != 1) {
-                if (i == 2 || i == 3) {
-                } else if (i != 4) {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-                ResultKt.throwOnFailure(obj);
                 return Unit.INSTANCE;
             }
+            ChangeCenterRequest changeCenterRequest = this.$request;
+            this.L$0 = flowCollector;
+            this.label = 1;
+            obj = apiService.changeCenter(changeCenterRequest, this);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (i == 1) {
             flowCollector = (FlowCollector) this.L$0;
             ResultKt.throwOnFailure(obj);
+        } else if (i == 2 || i == 3 || i == 4) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        response = (Response) obj;
-        if (response != null) {
+
+        Response response = (Response) obj;
+        if (response == null) {
+            ApiResult.Failure failure = new ApiResult.Failure(500, new Exception("Unknown error"));
+            this.L$0 = null;
+            this.label = 4;
+            if (flowCollector.emit(failure, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
+        }
+
+        Object emitResult;
+        if (response.isSuccessful()) {
+            ChangeCenterResponse changeCenterResponse = (ChangeCenterResponse) response.body();
+            if (changeCenterResponse != null) {
+                changeCenterResponse.setUrl(response.raw().request().url().url().toString());
+            }
+            ApiResult.Success success = new ApiResult.Success(response.code(), changeCenterResponse);
+            this.L$0 = null;
+            this.label = 2;
+            emitResult = flowCollector.emit(success, this);
+        } else {
+            String str = null;
+            try {
+                Gson gson = new Gson();
+                ResponseBody errorBody = response.errorBody();
+                String errorBodyString = null;
+                try { if (errorBody != null) errorBodyString = errorBody.string(); } catch (java.io.IOException ignored) {}
+                if (errorBodyString != null && !errorBodyString.isEmpty()) {
+                    try {
+                        ErrorResponse errorResponse = gson.fromJson(errorBodyString, ErrorResponse.class);
+                        if (errorResponse != null) {
+                            ErrorResult result = errorResponse.getResult();
+                            if (result != null) { str = result.getMessage(); }
+                        }
+                    } catch (Exception ignored2) {}
+                    if (str == null) {
+                        try {
+                            com.google.gson.JsonObject jsonObj = com.google.gson.JsonParser.parseString(errorBodyString).getAsJsonObject();
+                            if (jsonObj.has("message") && !jsonObj.get("message").isJsonNull()) {
+                                str = jsonObj.get("message").getAsString();
+                            }
+                        } catch (Exception ignored3) {}
+                    }
+                }
+                ResponseBody errorBody2 = response.errorBody();
+                if (errorBody2 != null) { errorBody2.close(); }
+            } catch (Exception ignored) {}
+            ApiResult.Failure failure2 = new ApiResult.Failure(response.code(), new Exception(str));
+            this.L$0 = null;
+            this.label = 3;
+            emitResult = flowCollector.emit(failure2, this);
+        }
+        if (emitResult == coroutine_suspended) {
+            return coroutine_suspended;
         }
         return Unit.INSTANCE;
     }

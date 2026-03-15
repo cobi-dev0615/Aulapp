@@ -90,11 +90,8 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest2
     */
     public final Object invokeSuspend(Object obj) {
         FlowCollector flowCollector;
-        Flow sendSessionPracticeRequest;
         FlowCollector flowCollector2;
         ApiResult apiResult;
-        Flow sendSessionSyncPracticalRequest2;
-        SessionPracticeExamResponse.Result result;
         Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         switch (this.label) {
             case 0:
@@ -105,15 +102,21 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest2
                 this.L$0 = flowCollector;
                 this.label = 1;
                 obj = sessionRepository.examRequest(str, this);
-                break;
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                // fall through
             case 1:
                 flowCollector = (FlowCollector) this.L$0;
                 ResultKt.throwOnFailure(obj);
-                sendSessionPracticeRequest = this.this$0.sendSessionPracticeRequest(this.$context, (SessionPracticeExamSyncRequest) obj);
+                Flow sendSessionPracticeRequest = this.this$0.sendSessionPracticeRequest(this.$context, (SessionPracticeExamSyncRequest) obj);
                 this.L$0 = flowCollector;
                 this.label = 2;
                 obj = FlowKt.firstOrNull(sendSessionPracticeRequest, this);
-                break;
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                // fall through
             case 2:
                 flowCollector = (FlowCollector) this.L$0;
                 ResultKt.throwOnFailure(obj);
@@ -121,47 +124,70 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest2
                 apiResult = (ApiResult) obj;
                 if (apiResult instanceof ApiResult.Success) {
                     SessionPracticeExamResponse sessionPracticeExamResponse = (SessionPracticeExamResponse) ((ApiResult.Success) apiResult).getData();
-                    sendSessionSyncPracticalRequest2 = this.this$0.sendSessionSyncPracticalRequest2(this.$context, new SessionSyncPracticalRequest((sessionPracticeExamResponse == null || (result = sessionPracticeExamResponse.getResult()) == null) ? null : result.getDataID()));
+                    SessionPracticeExamResponse.Result result;
+                    Flow sendSessionSyncPracticalRequest2 = this.this$0.sendSessionSyncPracticalRequest2(this.$context, new SessionSyncPracticalRequest((sessionPracticeExamResponse == null || (result = sessionPracticeExamResponse.getResult()) == null) ? null : result.getDataID()));
                     this.L$0 = flowCollector2;
                     this.L$1 = apiResult;
                     this.label = 3;
                     obj = FlowKt.firstOrNull(sendSessionSyncPracticalRequest2, this);
-                    break;
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
                 } else if (apiResult instanceof ApiResult.Failure) {
                     this.L$0 = null;
                     this.label = 7;
-                    break;
+                    if (flowCollector2.emit(apiResult, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
                 } else {
                     if (apiResult != null) {
                         throw new NoWhenBranchMatchedException();
                     }
+                    ApiResult.Failure nullFailure = new ApiResult.Failure(500, new Exception("Unknown error"));
                     this.L$0 = null;
                     this.label = 8;
-                    break;
+                    if (flowCollector2.emit(nullFailure, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
                 }
+                // fall through to case 3
             case 3:
-                apiResult = (ApiResult) this.L$1;
-                flowCollector2 = (FlowCollector) this.L$0;
-                ResultKt.throwOnFailure(obj);
+                if (this.label == 3) {
+                    apiResult = (ApiResult) this.L$1;
+                    flowCollector2 = (FlowCollector) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                }
                 ApiResult apiResult2 = (ApiResult) obj;
                 if (apiResult2 instanceof ApiResult.Success) {
                     this.L$0 = null;
                     this.L$1 = null;
                     this.label = 4;
-                    break;
+                    if (flowCollector2.emit(apiResult, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
                 } else if (apiResult2 instanceof ApiResult.Failure) {
                     this.L$0 = null;
                     this.L$1 = null;
                     this.label = 5;
-                    break;
+                    if (flowCollector2.emit(apiResult2, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
                 } else {
                     if (apiResult2 != null) {
                         throw new NoWhenBranchMatchedException();
                     }
+                    ApiResult.Failure nullFailure2 = new ApiResult.Failure(500, new Exception("Unknown error"));
                     this.L$0 = null;
                     this.L$1 = null;
                     this.label = 6;
-                    break;
+                    if (flowCollector2.emit(nullFailure2, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
                 }
             case 4:
             case 5:
@@ -173,7 +199,6 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest2
             default:
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return coroutine_suspended;
     }
 
     /* renamed from: invoke, reason: avoid collision after fix types in other method */

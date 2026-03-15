@@ -6,7 +6,10 @@ import com.gse.aulapp.io.ReceptionsApiService;
 import com.gse.aulapp.model.data.statusControl.ApiResult;
 import com.gse.aulapp.model.enumerate.EnumStatusAppointment;
 import com.gse.aulapp.model.request.StatusAppointmentRequest;
+import com.gse.aulapp.model.response.ErrorResponse;
+import com.gse.aulapp.model.response.ErrorResult;
 import com.gse.aulapp.model.response.HistoricRecordPermissionsChangeResponse;
+import com.google.gson.Gson;
 import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.ResultKt;
@@ -67,77 +70,93 @@ public final class SessionRepository$sendSessionStatusAppointment$1 extends Susp
     */
     public final Object invokeSuspend(Object obj) {
         FlowCollector flowCollector;
-        Response response;
         Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-        int r1 = this.label;
-        try {
-        } catch (Exception e) {
-            ApiResult.Failure failure = new ApiResult.Failure(500, new Exception(e.toString()));
-            this.L$0 = null;
-            this.label = 4;
-        }
-        if (r1 == 0) {
+        int i = this.label;
+        if (i == 0) {
             ResultKt.throwOnFailure(obj);
             flowCollector = (FlowCollector) this.L$0;
-            StatusAppointmentRequest statusAppointmentRequest = new StatusAppointmentRequest(this.$sessionID, EnumStatusAppointment.name$default(this.$sessionStatus, null, 1, null));
             ReceptionsApiService apiService = ReceptionsAdapter.INSTANCE.getApiService(this.$context);
             if (apiService == null) {
-                response = null;
-                if (response != null) {
-                    if (response.isSuccessful()) {
-                        Object body = response.body();
-                        Intrinsics.checkNotNull(body);
-                        HistoricRecordPermissionsChangeResponse historicRecordPermissionsChangeResponse = (HistoricRecordPermissionsChangeResponse) body;
-                        if (historicRecordPermissionsChangeResponse != null) {
-                            historicRecordPermissionsChangeResponse.setUrl(response.raw().request().url().url().toString());
-                            ApiResult.Success success = new ApiResult.Success(response.code(), historicRecordPermissionsChangeResponse);
-                            this.L$0 = flowCollector;
-                            this.label = 2;
-                            if (flowCollector.emit(success, this) == coroutine_suspended) {
-                                return coroutine_suspended;
-                            }
-                        }
-                    } else {
-                        ResponseBody errorBody = response.errorBody();
-                        String string = null;
-                    try { if (errorBody != null) string = errorBody.string(); } catch (java.io.IOException ignored) {}
-                        ResponseBody errorBody2 = response.errorBody();
-                        if (errorBody2 != null) {
-                            errorBody2.close();
-                        }
-                        ApiResult.Failure failure2 = new ApiResult.Failure(response.code(), new Exception(string));
-                        this.L$0 = flowCollector;
-                        this.label = 3;
-                    }
+                ApiResult.Failure failure = new ApiResult.Failure(500, new Exception("Unknown error"));
+                this.L$0 = null;
+                this.label = 4;
+                if (flowCollector.emit(failure, this) == coroutine_suspended) {
+                    return coroutine_suspended;
                 }
                 return Unit.INSTANCE;
             }
+            StatusAppointmentRequest statusAppointmentRequest = new StatusAppointmentRequest(this.$sessionID, EnumStatusAppointment.name$default(this.$sessionStatus, null, 1, null));
             this.L$0 = flowCollector;
             this.label = 1;
             obj = apiService.updateStatusAppointment(statusAppointmentRequest, this);
             if (obj == coroutine_suspended) {
                 return coroutine_suspended;
             }
-        } else {
-            if (r1 != 1) {
-                if (r1 == 2) {
-                } else {
-                    if (r1 != 3) {
-                        if (r1 != 4) {
-                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                        }
-                        ResultKt.throwOnFailure(obj);
-                        return Unit.INSTANCE;
-                    }
-                }
-                ResultKt.throwOnFailure(obj);
-                return Unit.INSTANCE;
-            }
+        } else if (i == 1) {
             flowCollector = (FlowCollector) this.L$0;
             ResultKt.throwOnFailure(obj);
+        } else if (i == 2 || i == 3 || i == 4) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        response = (Response) obj;
-        if (response != null) {
+
+        Response response = (Response) obj;
+        if (response == null) {
+            ApiResult.Failure failure = new ApiResult.Failure(500, new Exception("Unknown error"));
+            this.L$0 = null;
+            this.label = 4;
+            if (flowCollector.emit(failure, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
+        }
+
+        Object emitResult;
+        if (response.isSuccessful()) {
+            HistoricRecordPermissionsChangeResponse historicRecordPermissionsChangeResponse = (HistoricRecordPermissionsChangeResponse) response.body();
+            if (historicRecordPermissionsChangeResponse != null) {
+                historicRecordPermissionsChangeResponse.setUrl(response.raw().request().url().url().toString());
+            }
+            ApiResult.Success success = new ApiResult.Success(response.code(), historicRecordPermissionsChangeResponse);
+            this.L$0 = null;
+            this.label = 2;
+            emitResult = flowCollector.emit(success, this);
+        } else {
+            String str = null;
+            try {
+                Gson gson = new Gson();
+                ResponseBody errorBody = response.errorBody();
+                String errorBodyString = null;
+                try { if (errorBody != null) errorBodyString = errorBody.string(); } catch (java.io.IOException ignored) {}
+                if (errorBodyString != null && !errorBodyString.isEmpty()) {
+                    try {
+                        ErrorResponse errorResponse = gson.fromJson(errorBodyString, ErrorResponse.class);
+                        if (errorResponse != null) {
+                            ErrorResult result = errorResponse.getResult();
+                            if (result != null) { str = result.getMessage(); }
+                        }
+                    } catch (Exception ignored2) {}
+                    if (str == null) {
+                        try {
+                            com.google.gson.JsonObject jsonObj = com.google.gson.JsonParser.parseString(errorBodyString).getAsJsonObject();
+                            if (jsonObj.has("message") && !jsonObj.get("message").isJsonNull()) {
+                                str = jsonObj.get("message").getAsString();
+                            }
+                        } catch (Exception ignored3) {}
+                    }
+                }
+                ResponseBody errorBody2 = response.errorBody();
+                if (errorBody2 != null) { errorBody2.close(); }
+            } catch (Exception ignored) {}
+            ApiResult.Failure failure2 = new ApiResult.Failure(response.code(), new Exception(str));
+            this.L$0 = null;
+            this.label = 3;
+            emitResult = flowCollector.emit(failure2, this);
+        }
+        if (emitResult == coroutine_suspended) {
+            return coroutine_suspended;
         }
         return Unit.INSTANCE;
     }

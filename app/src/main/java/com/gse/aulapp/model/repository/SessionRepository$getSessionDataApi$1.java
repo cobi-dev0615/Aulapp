@@ -5,7 +5,10 @@ import com.gse.aulapp.io.ReceptionsAdapter;
 import com.gse.aulapp.io.ReceptionsApiService;
 import com.gse.aulapp.model.data.statusControl.ApiResult;
 import com.gse.aulapp.model.request.SessionExamRequest;
+import com.gse.aulapp.model.response.ErrorResponse;
+import com.gse.aulapp.model.response.ErrorResult;
 import com.gse.aulapp.model.response.SessionExamResponse;
+import com.google.gson.Gson;
 import com.karumi.dexter.BuildConfig;
 import kotlin.Metadata;
 import kotlin.ResultKt;
@@ -47,89 +50,96 @@ public final class SessionRepository$getSessionDataApi$1 extends SuspendLambda i
         return invoke2((FlowCollector<? super ApiResult<SessionExamResponse>>) flowCollector, continuation);
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:22:0x0087, code lost:
-    
-        if (r1.emit(r3, r8) == r0) goto L40;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:23:0x00ce, code lost:
-    
-        return r0;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:31:0x00b3, code lost:
-    
-        if (r1.emit(r2, r8) == r0) goto L40;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:33:0x00cc, code lost:
-    
-        if (r1.emit(r9, r8) == r0) goto L40;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:37:0x004b, code lost:
-    
-        if (r9 == r0) goto L40;
-     */
-    /* JADX WARN: Removed duplicated region for block: B:17:0x0055  */
-    /* JADX WARN: Removed duplicated region for block: B:32:0x00b6  */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
     public final Object invokeSuspend(Object obj) {
         FlowCollector flowCollector;
-        Response response;
         Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         int i = this.label;
         if (i == 0) {
             ResultKt.throwOnFailure(obj);
             flowCollector = (FlowCollector) this.L$0;
             ReceptionsApiService apiService = ReceptionsAdapter.INSTANCE.getApiService(this.$context);
-            if (apiService != null) {
-                SessionExamRequest sessionExamRequest = this.$sessionExamRequest;
-                this.L$0 = flowCollector;
-                this.label = 1;
-                obj = apiService.getSessionData(sessionExamRequest, this);
-            } else {
-                response = null;
-                if (response != null) {
-                    ApiResult.Failure failure = new ApiResult.Failure(500, new Exception("Unknown error"));
-                    this.L$0 = null;
-                    this.label = 4;
-                } else {
-                    if (response.isSuccessful()) {
-                        SessionExamResponse sessionExamResponse = (SessionExamResponse) response.body();
-                        if (sessionExamResponse != null) {
-                            sessionExamResponse.setUrl(response.raw().request().url().url().toString());
-                            ApiResult.Success success = new ApiResult.Success(response.code(), sessionExamResponse);
-                            this.L$0 = flowCollector;
-                            this.label = 2;
-                        }
-                        return Unit.INSTANCE;
-                    }
-                    ResponseBody errorBody = response.errorBody();
-                    String string = null;
-                    try { if (errorBody != null) string = errorBody.string(); } catch (java.io.IOException ignored) {}
-                    ResponseBody errorBody2 = response.errorBody();
-                    if (errorBody2 != null) {
-                        errorBody2.close();
-                    }
-                    ApiResult.Failure failure2 = new ApiResult.Failure(response.code(), new Exception(string));
-                    this.L$0 = flowCollector;
-                    this.label = 3;
+            if (apiService == null) {
+                ApiResult.Failure failure = new ApiResult.Failure(500, new Exception("Unknown error"));
+                this.L$0 = null;
+                this.label = 4;
+                if (flowCollector.emit(failure, this) == coroutine_suspended) {
+                    return coroutine_suspended;
                 }
-            }
-        } else {
-            if (i != 1) {
-                if (i == 2 || i == 3) {
-                } else if (i != 4) {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-                ResultKt.throwOnFailure(obj);
                 return Unit.INSTANCE;
             }
+            SessionExamRequest request = this.$sessionExamRequest;
+            this.L$0 = flowCollector;
+            this.label = 1;
+            obj = apiService.getSessionData(request, this);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (i == 1) {
             flowCollector = (FlowCollector) this.L$0;
             ResultKt.throwOnFailure(obj);
+        } else if (i == 2 || i == 3 || i == 4) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        response = (Response) obj;
-        if (response != null) {
+
+        Response response = (Response) obj;
+        if (response == null) {
+            ApiResult.Failure failure = new ApiResult.Failure(500, new Exception("Unknown error"));
+            this.L$0 = null;
+            this.label = 4;
+            if (flowCollector.emit(failure, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
+        }
+
+        Object emitResult;
+        if (response.isSuccessful()) {
+            SessionExamResponse responseObj = (SessionExamResponse) response.body();
+            if (responseObj != null) {
+                responseObj.setUrl(response.raw().request().url().url().toString());
+            }
+            ApiResult.Success success = new ApiResult.Success(response.code(), responseObj);
+            this.L$0 = null;
+            this.label = 2;
+            emitResult = flowCollector.emit(success, this);
+        } else {
+            String str = null;
+            try {
+                Gson gson = new Gson();
+                ResponseBody errorBody = response.errorBody();
+                String errorBodyString = null;
+                try { if (errorBody != null) errorBodyString = errorBody.string(); } catch (java.io.IOException ignored) {}
+                if (errorBodyString != null && !errorBodyString.isEmpty()) {
+                    try {
+                        ErrorResponse errorResponse = gson.fromJson(errorBodyString, ErrorResponse.class);
+                        if (errorResponse != null) {
+                            ErrorResult result = errorResponse.getResult();
+                            if (result != null) { str = result.getMessage(); }
+                        }
+                    } catch (Exception ignored2) {}
+                    if (str == null) {
+                        try {
+                            com.google.gson.JsonObject jsonObj = com.google.gson.JsonParser.parseString(errorBodyString).getAsJsonObject();
+                            if (jsonObj.has("message") && !jsonObj.get("message").isJsonNull()) {
+                                str = jsonObj.get("message").getAsString();
+                            }
+                        } catch (Exception ignored3) {}
+                    }
+                }
+                ResponseBody errorBody2 = response.errorBody();
+                if (errorBody2 != null) { errorBody2.close(); }
+            } catch (Exception ignored) {}
+            ApiResult.Failure failure2 = new ApiResult.Failure(response.code(), new Exception(str));
+            this.L$0 = null;
+            this.label = 3;
+            emitResult = flowCollector.emit(failure2, this);
+        }
+        if (emitResult == coroutine_suspended) {
+            return coroutine_suspended;
         }
         return Unit.INSTANCE;
     }
