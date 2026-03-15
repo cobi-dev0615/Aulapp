@@ -482,15 +482,9 @@ public final class FirstLoginFragment extends Fragment {
     }
 
     public final void k() {
-        try {
-            PermissionHelper.Companion companion = PermissionHelper.INSTANCE;
-            FragmentActivity requireActivity = requireActivity();
-            Intrinsics.checkNotNullExpressionValue(requireActivity, "requireActivity(...)");
-            companion.requestCameraPermission(requireActivity, 1, new o5(this));
-        } catch (Exception e) {
-            e.getMessage();
-            g(false);
-        }
+        // MODIFIED: Skip camera permission request entirely since we now use gallery
+        // instead of camera-based facial recognition. Go directly to validation flow.
+        j();
     }
 
     @Override // androidx.fragment.app.Fragment

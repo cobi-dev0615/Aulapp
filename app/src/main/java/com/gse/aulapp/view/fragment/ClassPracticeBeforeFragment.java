@@ -321,15 +321,9 @@ public final class ClassPracticeBeforeFragment extends Fragment {
     }
 
     public final void i() {
-        try {
-            PermissionHelper.Companion companion = PermissionHelper.INSTANCE;
-            FragmentActivity requireActivity = requireActivity();
-            Intrinsics.checkNotNullExpressionValue(requireActivity, "requireActivity(...)");
-            companion.requestCameraPermission(requireActivity, 1, new h2(this));
-        } catch (Exception e) {
-            e.getMessage();
-            callGlobalLoading(false);
-        }
+        // MODIFIED: Skip camera permission request entirely since we now use gallery
+        // instead of camera-based facial recognition. Go directly to validation flow.
+        g();
     }
 
     @Override // androidx.fragment.app.Fragment
