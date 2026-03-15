@@ -291,12 +291,18 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                                         mutableSharedFlow = this.this$0._message;
                                         Status.Exception exception = new Status.Exception(errorEndpoint);
                                         homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label = 6;
-                                        break;
+                                        if (mutableSharedFlow.emit(exception, homeViewModel$getSessionFromApiAndSave$1$2$emit$1) == coroutine_suspended) {
+                                            return coroutine_suspended;
+                                        }
+                                        return Unit.INSTANCE;
                                     } else {
                                         mutableSharedFlow2 = this.this$0._message;
                                         Status.Failure failure = new Status.Failure(new Exception("401"));
                                         homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label = 5;
-                                        break;
+                                        if (mutableSharedFlow2.emit(failure, homeViewModel$getSessionFromApiAndSave$1$2$emit$1) == coroutine_suspended) {
+                                            return coroutine_suspended;
+                                        }
+                                        return Unit.INSTANCE;
                                     }
                                 }
                                 return Unit.INSTANCE;
@@ -332,7 +338,9 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                                     homeViewModel$getSessionFromApiAndSave$1$2$emit$1.L$1 = apiResult;
                                     homeViewModel$getSessionFromApiAndSave$1$2$emit$1.L$2 = sessionResponseDto;
                                     homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label = 2;
-                                    break;
+                                    if (mutableSharedFlow5.emit(exception2, homeViewModel$getSessionFromApiAndSave$1$2$emit$1) == coroutine_suspended) {
+                                        return coroutine_suspended;
+                                    }
                                 } else {
                                     mutableSharedFlow6 = this.this$0._message;
                                     Status.Success success = new Status.Success(sessionResponseDto);
@@ -340,7 +348,9 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                                     homeViewModel$getSessionFromApiAndSave$1$2$emit$1.L$1 = apiResult;
                                     homeViewModel$getSessionFromApiAndSave$1$2$emit$1.L$2 = sessionResponseDto;
                                     homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label = 1;
-                                    break;
+                                    if (mutableSharedFlow6.emit(success, homeViewModel$getSessionFromApiAndSave$1$2$emit$1) == coroutine_suspended) {
+                                        return coroutine_suspended;
+                                    }
                                 }
                             }
                             SessionInstructorResponse data13 = apiResult.getData();
@@ -359,12 +369,18 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                                 mutableSharedFlow3 = this.this$0._message;
                                 Status.Exception exception3 = new Status.Exception(errorEndpoint3);
                                 homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label = 4;
-                                break;
+                                if (mutableSharedFlow3.emit(exception3, homeViewModel$getSessionFromApiAndSave$1$2$emit$1) == coroutine_suspended) {
+                                    return coroutine_suspended;
+                                }
+                                return Unit.INSTANCE;
                             } else {
                                 mutableSharedFlow4 = this.this$0._message;
                                 Status.Success success2 = new Status.Success(sessionResponseDto);
                                 homeViewModel$getSessionFromApiAndSave$1$2$emit$1.label = 3;
-                                break;
+                                if (mutableSharedFlow4.emit(success2, homeViewModel$getSessionFromApiAndSave$1$2$emit$1) == coroutine_suspended) {
+                                    return coroutine_suspended;
+                                }
+                                return Unit.INSTANCE;
                             }
                         case 1:
                         case 2:
@@ -376,10 +392,10 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                             apiResult = apiResult2;
                             SessionResponseDto sessionResponseDto22 = sessionResponseDto;
                             data = apiResult.getData();
-                            if (data != null) {
-                                break;
+                            if (data == null) {
+                                return Unit.INSTANCE;
                             }
-                            if (((data != null || (result10 = data.getResult()) == null) ? null : result10.getExamPracticalConfiguration()) != null) {
+                            if (data.getResult() != null && data.getResult().getExamPracticalConfiguration() != null) {
                             }
                             anonymousClass2.this$0.validateEnableStart(anonymousClass2.$isValidateSession, sessionResponseDto22, anonymousClass2.$sessionId, anonymousClass2.$navController, anonymousClass2.$classRecyclerAdapter, anonymousClass2.$activity);
                             return Unit.INSTANCE;
@@ -398,6 +414,7 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                         default:
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
+                    return Unit.INSTANCE;
             }
         }
 
