@@ -122,14 +122,30 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
                 String errorBodyString = null;
                 try { if (errorBody != null) errorBodyString = errorBody.string(); } catch (java.io.IOException ignored) {}
                 Log.d("LoginRepository", "Error response code: " + response.code() + ", errorBody: " + errorBodyString);
-                ErrorResponse errorResponse = (ErrorResponse) gson.fromJson(errorBodyString, ErrorResponse.class);
+                if (errorBodyString != null && !errorBodyString.isEmpty()) {
+                    // Try parsing as ErrorResponse first (old format: {"statusCode":...,"result":{"message":"..."}})
+                    try {
+                        ErrorResponse errorResponse = gson.fromJson(errorBodyString, ErrorResponse.class);
+                        if (errorResponse != null) {
+                            ErrorResult result = errorResponse.getResult();
+                            if (result != null) {
+                                str = result.getMessage();
+                            }
+                        }
+                    } catch (Exception ignored2) {}
+                    // If old format didn't work, try plain format: {"success":false,"message":"..."}
+                    if (str == null) {
+                        try {
+                            com.google.gson.JsonObject jsonObj = com.google.gson.JsonParser.parseString(errorBodyString).getAsJsonObject();
+                            if (jsonObj.has("message") && !jsonObj.get("message").isJsonNull()) {
+                                str = jsonObj.get("message").getAsString();
+                            }
+                        } catch (Exception ignored3) {}
+                    }
+                }
                 ResponseBody errorBody2 = response.errorBody();
                 if (errorBody2 != null) {
                     errorBody2.close();
-                }
-                ErrorResult result;
-                if (errorResponse != null && (result = errorResponse.getResult()) != null) {
-                    str = result.getMessage();
                 }
                 Log.d("LoginRepository", "Error message extracted: " + str);
             } catch (Exception ignored) {

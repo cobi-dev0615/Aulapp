@@ -93,14 +93,14 @@ public interface ReceptionsApiService {
     @POST("instructors/config-history")
     Object historicRecordSyncPermissionChange(@Body HistoricRecordPermissionsChangeRequest historicRecordPermissionsChangeRequest, Continuation<? super Response<HistoricRecordPermissionsChangeResponse>> continuation);
 
-    @Headers({"No-Authentication: true"})
+    @Headers({"No-Authentication: true", "KEY_PRIVATE_CONFIDENTIAL: true"})
     @POST("auth/login")
     Object login(@Body LoginRequest loginRequest, Continuation<? super Response<LoginResponse>> continuation);
 
     @POST("receptions/getEnvironmentVariables")
     Object parameterList(@Body ParameterListRequest parameterListRequest, Continuation<? super Response<ParameterListResponse>> continuation);
 
-    @Headers({"No-Authentication: true"})
+    @Headers({"No-Authentication: true", "KEY_PRIVATE_CONFIDENTIAL: true"})
     @POST("auth/reset-password")
     Object passwordRecovery(@Body PasswordRecoveryRequest passwordRecoveryRequest, Continuation<? super Response<PasswordRecoveryResponse>> continuation);
 
