@@ -12,6 +12,7 @@ import com.gse.aulapp.lib.encryption_gse.encryptJwe.EcCryptKeys;
 import com.gse.aulapp.lib.encryption_gse.encryptJwe.model.ResultEncryptKeys;
 import com.gse.aulapp.util.PreferenceUtil;
 import com.karumi.dexter.BuildConfig;
+import android.util.Log;
 import java.io.IOException;
 import java.util.Objects;
 import kotlin.Metadata;
@@ -74,6 +75,7 @@ public final class ServiceInterceptorK implements Interceptor {
 
     private final String encrypt(Context context, String jsonPayload) {
         try {
+            Log.d("ServiceInterceptorK", "Encrypting payload (first 100 chars): " + jsonPayload.substring(0, Math.min(jsonPayload.length(), 100)));
             EcCryptKeys.Companion companion = EcCryptKeys.INSTANCE;
             companion.initializeKeysByAssetsPath("aulapp_pub.pem");
             ResultEncryptKeys encrypt = companion.encrypt(context, jsonPayload);
@@ -81,7 +83,7 @@ public final class ServiceInterceptorK implements Interceptor {
                 if (!(encrypt instanceof ResultEncryptKeys.Failure)) {
                     throw new NoWhenBranchMatchedException();
                 }
-                Objects.toString(((ResultEncryptKeys.Failure) encrypt).getE());
+                Log.e("ServiceInterceptorK", "Encryption failed: " + Objects.toString(((ResultEncryptKeys.Failure) encrypt).getE()));
                 return null;
             }
             ((ResultEncryptKeys.DataResult) encrypt).getPublicKey();
@@ -107,47 +109,46 @@ public final class ServiceInterceptorK implements Interceptor {
         }
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:11:0x002e A[Catch: Exception -> 0x000d, TRY_LEAVE, TryCatch #0 {Exception -> 0x000d, blocks: (B:2:0x0000, B:4:0x0006, B:7:0x0011, B:11:0x002e), top: B:1:0x0000 }] */
-    /* JADX WARN: Removed duplicated region for block: B:9:0x002d A[RETURN] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
     private final Response getUpdateResponseBody(Response response) {
-        String str;
-        String decryptValue;
+        String str = null;
+        MediaType contentType = null;
         try {
             ResponseBody body = response.body();
-            if (body != null) {
-                str = body.string();
-                if (str == null) {
-                }
-                Gson gson = new Gson();
-                Object fromJson = gson.fromJson(str, GeneralEncryptResponse.class);
-                Intrinsics.checkNotNullExpressionValue(fromJson, "fromJson(...)");
-                GeneralEncryptResponse generalEncryptResponse = (GeneralEncryptResponse) fromJson;
-                decryptValue = decryptValue(generalEncryptResponse.getResult());
-                if (decryptValue == null) {
-                    return response;
-                }
-                generalEncryptResponse.setResult(decryptValue);
-                JsonObject asJsonObject = JsonParser.parseString(decryptValue).getAsJsonObject();
-                Intrinsics.checkNotNullExpressionValue(asJsonObject, "getAsJsonObject(...)");
-                String json = gson.toJson(new GeneralDecrypt(generalEncryptResponse, asJsonObject));
-                Intrinsics.checkNotNullExpressionValue(json, "toJson(...)");
-                return response.newBuilder().body(ResponseBody.create(json, (MediaType) null)).build();
-            }
-            str = BuildConfig.FLAVOR;
-            Gson gson2 = new Gson();
-            Object fromJson2 = gson2.fromJson(str, GeneralEncryptResponse.class);
-            Intrinsics.checkNotNullExpressionValue(fromJson2, "fromJson(...)");
-            GeneralEncryptResponse generalEncryptResponse2 = (GeneralEncryptResponse) fromJson2;
-            decryptValue = decryptValue(generalEncryptResponse2.getResult());
-            if (decryptValue != null) {
+            if (body == null) {
+                Log.d("ServiceInterceptorK", "Response body is null, returning original response");
                 return response;
             }
-            return response;
+            contentType = body.contentType();
+            str = body.string();
+            if (str == null || str.isEmpty()) {
+                Log.d("ServiceInterceptorK", "Response body string is null/empty");
+                return response.newBuilder().body(ResponseBody.create(str != null ? str : "", contentType)).build();
+            }
+            Log.d("ServiceInterceptorK", "Response body (first 200 chars): " + str.substring(0, Math.min(str.length(), 200)));
+            Gson gson = new Gson();
+            GeneralEncryptResponse generalEncryptResponse = gson.fromJson(str, GeneralEncryptResponse.class);
+            if (generalEncryptResponse == null || generalEncryptResponse.getResult() == null) {
+                Log.d("ServiceInterceptorK", "Could not parse as GeneralEncryptResponse or result is null, returning original body");
+                return response.newBuilder().body(ResponseBody.create(str, contentType)).build();
+            }
+            String decryptValue = decryptValue(generalEncryptResponse.getResult());
+            if (decryptValue == null) {
+                Log.d("ServiceInterceptorK", "Decryption returned null, returning original body");
+                return response.newBuilder().body(ResponseBody.create(str, contentType)).build();
+            }
+            Log.d("ServiceInterceptorK", "Decryption successful, decrypted (first 200 chars): " + decryptValue.substring(0, Math.min(decryptValue.length(), 200)));
+            generalEncryptResponse.setResult(decryptValue);
+            JsonObject asJsonObject = JsonParser.parseString(decryptValue).getAsJsonObject();
+            Intrinsics.checkNotNullExpressionValue(asJsonObject, "getAsJsonObject(...)");
+            String json = gson.toJson(new GeneralDecrypt(generalEncryptResponse, asJsonObject));
+            Intrinsics.checkNotNullExpressionValue(json, "toJson(...)");
+            return response.newBuilder().body(ResponseBody.create(json, contentType)).build();
         } catch (Exception e) {
-            e.getMessage();
+            Log.e("ServiceInterceptorK", "Error processing response: " + e.getMessage(), e);
+            // If we consumed the body, rebuild with the string we read
+            if (str != null) {
+                return response.newBuilder().body(ResponseBody.create(str, contentType)).build();
+            }
             return response;
         }
     }

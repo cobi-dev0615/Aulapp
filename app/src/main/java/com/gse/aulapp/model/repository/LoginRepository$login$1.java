@@ -1,6 +1,7 @@
 package com.gse.aulapp.model.repository;
 
 import android.content.Context;
+import android.util.Log;
 import com.google.gson.Gson;
 import com.gse.aulapp.io.ReceptionsAdapter;
 import com.gse.aulapp.io.ReceptionsApiService;
@@ -89,6 +90,7 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
         // Process the API response
         Response response = (Response) obj;
         if (response == null) {
+            Log.e("LoginRepository", "API response is null");
             ApiResult.Failure failure = new ApiResult.Failure(500, new Exception("Unknown error"));
             this.L$0 = null;
             this.label = 4;
@@ -98,11 +100,15 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
             return Unit.INSTANCE;
         }
 
+        Log.d("LoginRepository", "API response code: " + response.code() + ", isSuccessful: " + response.isSuccessful());
+
         Object emitResult;
         if (response.isSuccessful()) {
             LoginResponse loginResponse = (LoginResponse) response.body();
+            Log.d("LoginRepository", "Login response body: " + loginResponse);
             if (loginResponse != null) {
                 loginResponse.setUrl(response.raw().request().url().url().toString());
+                Log.d("LoginRepository", "Login result: " + loginResponse.getResult());
             }
             ApiResult.Success success = new ApiResult.Success(response.code(), loginResponse);
             this.L$0 = null;
@@ -115,6 +121,7 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
                 ResponseBody errorBody = response.errorBody();
                 String errorBodyString = null;
                 try { if (errorBody != null) errorBodyString = errorBody.string(); } catch (java.io.IOException ignored) {}
+                Log.d("LoginRepository", "Error response code: " + response.code() + ", errorBody: " + errorBodyString);
                 ErrorResponse errorResponse = (ErrorResponse) gson.fromJson(errorBodyString, ErrorResponse.class);
                 ResponseBody errorBody2 = response.errorBody();
                 if (errorBody2 != null) {
@@ -124,7 +131,10 @@ public final class LoginRepository$login$1 extends SuspendLambda implements Func
                 if (errorResponse != null && (result = errorResponse.getResult()) != null) {
                     str = result.getMessage();
                 }
-            } catch (Exception ignored) {}
+                Log.d("LoginRepository", "Error message extracted: " + str);
+            } catch (Exception ignored) {
+                Log.e("LoginRepository", "Failed to parse error body", ignored);
+            }
             ApiResult.Failure failure2 = new ApiResult.Failure(response.code(), new Exception(str));
             this.L$0 = null;
             this.label = 3;
