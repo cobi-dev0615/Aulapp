@@ -154,11 +154,9 @@ public final class SessionRepository$sendSessionPracticeAndSyncPracticalRequest2
                 }
                 // fall through to case 3
             case 3:
-                if (this.label == 3) {
-                    apiResult = (ApiResult) this.L$1;
-                    flowCollector2 = (FlowCollector) this.L$0;
-                    ResultKt.throwOnFailure(obj);
-                }
+                apiResult = (ApiResult) this.L$1;
+                flowCollector2 = (FlowCollector) this.L$0;
+                ResultKt.throwOnFailure(obj);
                 ApiResult apiResult2 = (ApiResult) obj;
                 if (apiResult2 instanceof ApiResult.Success) {
                     this.L$0 = null;
