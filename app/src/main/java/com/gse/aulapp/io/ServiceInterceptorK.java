@@ -126,7 +126,7 @@ public final class ServiceInterceptorK implements Interceptor {
                 Intrinsics.checkNotNullExpressionValue(fromJson, "fromJson(...)");
                 GeneralEncryptResponse generalEncryptResponse = (GeneralEncryptResponse) fromJson;
                 decryptValue = decryptValue(generalEncryptResponse.getResult());
-                if (decryptValue != null) {
+                if (decryptValue == null) {
                     return response;
                 }
                 generalEncryptResponse.setResult(decryptValue);
