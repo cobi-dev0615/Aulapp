@@ -414,7 +414,6 @@ public final class HomeViewModel$getSessionFromApiAndSave$1 extends SuspendLambd
                         default:
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    return Unit.INSTANCE;
             }
         }
 
