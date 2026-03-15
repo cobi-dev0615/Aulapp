@@ -46,7 +46,7 @@ public abstract class ReceptionsAdapter {
             builder.readTimeout(5L, timeUnit);
             Headers.Builder builder2 = new Headers.Builder();
             Parameters.Companion companion = Parameters.INSTANCE;
-            Headers build = builder2.add("X-App", companion.getX_APP_VALUE()).add("Client", "2.1.4").build();
+            Headers build = builder2.add("X-App", companion.getX_APP_VALUE()).add("Client", "3.0.63").build();
             if (ReceptionsAdapter.API_SERVICE == null) {
                 Retrofit build2 = new Retrofit.Builder().baseUrl(companion.getPARAMETERS_API_SERVER_BASE_URL()).addConverterFactory(GsonConverterFactory.create()).client(builder.addInterceptor(new ServiceInterceptorK(context, build)).addNetworkInterceptor(httpLoggingInterceptor).authenticator(new TokenAuthenticator()).build()).build();
                 Intrinsics.checkNotNullExpressionValue(build2, "build(...)");
