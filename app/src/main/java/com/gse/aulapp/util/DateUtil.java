@@ -173,7 +173,7 @@ public abstract class DateUtil {
         public final String getDateRequestFormat(String dateNow) {
             Intrinsics.checkNotNullParameter(dateNow, "dateNow");
             try {
-                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/YYYY", Locale.getDefault());
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
                 Date parseDate = parseDate(dateNow, "yyyy-MM-dd hh:mm:ss", null);
                 String format = parseDate != null ? simpleDateFormat.format(parseDate) : null;
                 return format == null ? BuildConfig.FLAVOR : format;
@@ -360,7 +360,7 @@ public abstract class DateUtil {
         public final String getDateRequestFormat(Date dateNow) {
             Intrinsics.checkNotNullParameter(dateNow, "dateNow");
             try {
-                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/YYYY", Locale.getDefault());
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
                 Date parseDate = parseDate(dateNow.toString(), "EEE MMM dd HH:mm:ss zzz yyyy", null);
                 String format = parseDate != null ? simpleDateFormat.format(parseDate) : null;
                 return format == null ? BuildConfig.FLAVOR : format;
