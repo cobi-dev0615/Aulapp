@@ -725,7 +725,7 @@ public final class HomeViewModel extends ViewModel {
                                 sessionResponseDto2 = sessionResponseDto6;
                                 list = list12;
                                 obj2 = allSessionID;
-                                listIdSessionDelete = homeViewModel.getListIdSessionDelete(sessionResponseDto2 == null ? sessionResponseDto2.getSessionInstructorObjectResponse() : null, (List) obj2);
+                                listIdSessionDelete = homeViewModel.getListIdSessionDelete(sessionResponseDto2 != null ? sessionResponseDto2.getSessionInstructorObjectResponse() : null, (List) obj2);
                                 if (sessionResponseDto2 != null && (sessionInstructorObjectResponse2 = sessionResponseDto2.getSessionInstructorObjectResponse()) != null) {
                                     it = sessionInstructorObjectResponse2.iterator();
                                     if (it.hasNext()) {
@@ -795,7 +795,7 @@ public final class HomeViewModel extends ViewModel {
                                                             objectRef6 = objectRef5;
                                                             t = endEntryClass;
                                                             objectRef5.element = t;
-                                                            if (sessionResponse2.getVehicle() == null) {
+                                                            if (sessionResponse2.getVehicle() != null) {
                                                                 VehicleResponse vehicle = sessionResponse2.getVehicle();
                                                                 Intrinsics.checkNotNull(vehicle);
                                                                 str = vehicle.getVehicleID();
@@ -1040,7 +1040,7 @@ public final class HomeViewModel extends ViewModel {
                         homeViewModel = (HomeViewModel) homeViewModel$saveSessionFull$1.L$0;
                         ResultKt.throwOnFailure(obj3);
                         obj2 = obj3;
-                        listIdSessionDelete = homeViewModel.getListIdSessionDelete(sessionResponseDto2 == null ? sessionResponseDto2.getSessionInstructorObjectResponse() : null, (List) obj2);
+                        listIdSessionDelete = homeViewModel.getListIdSessionDelete(sessionResponseDto2 != null ? sessionResponseDto2.getSessionInstructorObjectResponse() : null, (List) obj2);
                         if (sessionResponseDto2 != null) {
                             it = sessionInstructorObjectResponse2.iterator();
                             if (it.hasNext()) {
@@ -1284,11 +1284,11 @@ public final class HomeViewModel extends ViewModel {
             }
         }
         homeViewModel$saveSessionFull$1 = new HomeViewModel$saveSessionFull$1(this, (Continuation) continuation);
-        Object obj32 = homeViewModel$saveSessionFull$1.result;
-        Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-        switch (homeViewModel$saveSessionFull$1.label) {
-        }
-        return null;
+        // Fix: fresh entry was missing case 0 body. Redirect to first copy by
+        // setting up the continuation with MIN_VALUE flag so re-entry path handles case 0.
+        homeViewModel$saveSessionFull$1.result = Unit.INSTANCE;
+        homeViewModel$saveSessionFull$1.label = 0 | IntCompanionObject.MIN_VALUE;
+        return this.saveSessionFull(sessionResponseDto, homeViewModel$saveSessionFull$1);
     }
 
     private final void setupOnScrollListener(MaterialButton buttonTodayClass, RecyclerView recyclerView, ClassDateRecyclerAdapter classDateAdapter, TextView tvSubtitle, int todayItemPosition) {

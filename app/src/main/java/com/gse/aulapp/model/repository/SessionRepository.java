@@ -1327,131 +1327,119 @@ public final class SessionRepository {
     }
 
     /* JADX WARN: Removed duplicated region for block: B:22:0x0091  */
-    /* JADX WARN: Removed duplicated region for block: B:25:0x00a4  */
-    /* JADX WARN: Removed duplicated region for block: B:33:0x00c8  */
-    /* JADX WARN: Removed duplicated region for block: B:40:0x0096  */
-    /* JADX WARN: Removed duplicated region for block: B:44:0x0084  */
-    /* JADX WARN: Removed duplicated region for block: B:45:0x005f  */
-    /* JADX WARN: Removed duplicated region for block: B:8:0x0026  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
     public final Object syncSessionProcess(Context context, String str, Continuation<? super Pair<Boolean, String>> continuation) {
-        SessionRepository$syncSessionProcess$1 sessionRepository$syncSessionProcess$1;
-        Object coroutine_suspended = null;
-        int i = 0;
-        SessionRepository sessionRepository = null;
-        Object sessionSyncById;
-        Context context2;
-        List<QuestionPracticeExam> list;
-        String type = null;
+        SessionRepository$syncSessionProcess$1 cont;
+        Object coroutine_suspended;
+        SessionRepository sessionRepository;
+        Context ctx;
+        List<QuestionPracticeExam> questionList;
+        String type;
+
+        // Set up or restore continuation
         if (continuation instanceof SessionRepository$syncSessionProcess$1) {
-            sessionRepository$syncSessionProcess$1 = (SessionRepository$syncSessionProcess$1) continuation;
-            int i2 = sessionRepository$syncSessionProcess$1.label;
+            cont = (SessionRepository$syncSessionProcess$1) continuation;
+            int i2 = cont.label;
             if ((i2 & IntCompanionObject.MIN_VALUE) != 0) {
-                sessionRepository$syncSessionProcess$1.label = i2 - IntCompanionObject.MIN_VALUE;
-                Object obj = sessionRepository$syncSessionProcess$1.result;
-                coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-                i = sessionRepository$syncSessionProcess$1.label;
-                if (i != 0) {
-                    ResultKt.throwOnFailure(obj);
-                    sessionRepository$syncSessionProcess$1.L$0 = this;
-                    sessionRepository$syncSessionProcess$1.L$1 = context;
-                    sessionRepository$syncSessionProcess$1.L$2 = str;
-                    sessionRepository$syncSessionProcess$1.label = 1;
-                    obj = getAllQuestionSync(str, sessionRepository$syncSessionProcess$1);
-                    if (obj != coroutine_suspended) {
-                        sessionRepository = this;
-                    }
-                    return coroutine_suspended;
-                }
-                if (i != 1) {
-                    if (i != 2) {
-                        if (i == 3) {
-                            ResultKt.throwOnFailure(obj);
-                            return obj;
-                        }
-                        if (i != 4) {
-                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                        }
-                        ResultKt.throwOnFailure(obj);
-                        return obj;
-                    }
-                    list = (List) sessionRepository$syncSessionProcess$1.L$2;
-                    context2 = (Context) sessionRepository$syncSessionProcess$1.L$1;
-                    sessionRepository = (SessionRepository) sessionRepository$syncSessionProcess$1.L$0;
-                    ResultKt.throwOnFailure(obj);
-                    SessionFullSync sessionFullSync = (SessionFullSync) obj;
-                    SessionEntity session = sessionFullSync.getSession();
-                    type = session == null ? session.getType() : null;
-                    if (Intrinsics.areEqual(type, EnumClassType.name$default(EnumClassType.PRACTICE_EXAM, null, 1, null))) {
-                        if (!Intrinsics.areEqual(type, EnumClassType.name$default(EnumClassType.PRACTICE, null, 1, null))) {
-                            return new Pair(Boxing.boxBoolean(false), null);
-                        }
-                        SessionPracticeSyncRequest practiceRequest = sessionRepository.practiceRequest(sessionFullSync);
-                        sessionRepository$syncSessionProcess$1.L$0 = null;
-                        sessionRepository$syncSessionProcess$1.L$1 = null;
-                        sessionRepository$syncSessionProcess$1.L$2 = null;
-                        sessionRepository$syncSessionProcess$1.label = 4;
-                        Object sendSessionPracticeAndSyncPracticalRequest = sessionRepository.sendSessionPracticeAndSyncPracticalRequest(context2, practiceRequest, sessionRepository$syncSessionProcess$1);
-                        if (sendSessionPracticeAndSyncPracticalRequest != coroutine_suspended) {
-                            return sendSessionPracticeAndSyncPracticalRequest;
-                        }
-                    } else {
-                        if (list.isEmpty()) {
-                            return new Pair(Boxing.boxBoolean(false), null);
-                        }
-                        SessionPracticeExamSyncRequest practiceExamRequest = sessionRepository.practiceExamRequest(sessionFullSync, list);
-                        sessionRepository$syncSessionProcess$1.L$0 = null;
-                        sessionRepository$syncSessionProcess$1.L$1 = null;
-                        sessionRepository$syncSessionProcess$1.L$2 = null;
-                        sessionRepository$syncSessionProcess$1.label = 3;
-                        Object sendSessionPracticeAndSyncPracticalExamRequest = sessionRepository.sendSessionPracticeAndSyncPracticalExamRequest(context2, practiceExamRequest, sessionRepository$syncSessionProcess$1);
-                        if (sendSessionPracticeAndSyncPracticalExamRequest != coroutine_suspended) {
-                            return sendSessionPracticeAndSyncPracticalExamRequest;
-                        }
-                    }
-                    return coroutine_suspended;
-                }
-                str = (String) sessionRepository$syncSessionProcess$1.L$2;
-                context = (Context) sessionRepository$syncSessionProcess$1.L$1;
-                sessionRepository = (SessionRepository) sessionRepository$syncSessionProcess$1.L$0;
-                ResultKt.throwOnFailure(obj);
-                List<QuestionPracticeExam> list2 = (List) obj;
-                sessionRepository$syncSessionProcess$1.L$0 = sessionRepository;
-                sessionRepository$syncSessionProcess$1.L$1 = context;
-                sessionRepository$syncSessionProcess$1.L$2 = list2;
-                sessionRepository$syncSessionProcess$1.label = 2;
-                sessionSyncById = sessionRepository.getSessionSyncById(str, sessionRepository$syncSessionProcess$1);
-                if (sessionSyncById != coroutine_suspended) {
-                    context2 = context;
-                    list = list2;
-                    obj = sessionSyncById;
-                    SessionFullSync sessionFullSync2 = (SessionFullSync) obj;
-                    SessionEntity session2 = sessionFullSync2.getSession();
-                    if (session2 == null) {
-                    }
-                    if (Intrinsics.areEqual(type, EnumClassType.name$default(EnumClassType.PRACTICE_EXAM, null, 1, null))) {
-                    }
-                }
+                cont.label = i2 - IntCompanionObject.MIN_VALUE;
+            }
+        } else {
+            cont = new SessionRepository$syncSessionProcess$1(this, (Continuation) continuation);
+        }
+
+        Object obj = cont.result;
+        coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int label = cont.label;
+
+        if (label == 0) {
+            // Fresh call - get all question sync data
+            ResultKt.throwOnFailure(obj);
+            cont.L$0 = this;
+            cont.L$1 = context;
+            cont.L$2 = str;
+            cont.label = 1;
+            obj = getAllQuestionSync(str, cont);
+            if (obj == coroutine_suspended) {
                 return coroutine_suspended;
             }
+            sessionRepository = this;
+            ctx = context;
+        } else if (label == 1) {
+            // Resumed from getAllQuestionSync
+            str = (String) cont.L$2;
+            ctx = (Context) cont.L$1;
+            sessionRepository = (SessionRepository) cont.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (label == 2) {
+            // Resumed from getSessionSyncById
+            questionList = (List) cont.L$2;
+            ctx = (Context) cont.L$1;
+            sessionRepository = (SessionRepository) cont.L$0;
+            ResultKt.throwOnFailure(obj);
+            // Process session sync result
+            return processSyncSession(sessionRepository, ctx, (SessionFullSync) obj, questionList, cont, coroutine_suspended);
+        } else if (label == 3) {
+            // Resumed from sendSessionPracticeAndSyncPracticalExamRequest
+            ResultKt.throwOnFailure(obj);
+            return obj;
+        } else if (label == 4) {
+            // Resumed from sendSessionPracticeAndSyncPracticalRequest
+            ResultKt.throwOnFailure(obj);
+            return obj;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        sessionRepository$syncSessionProcess$1 = new SessionRepository$syncSessionProcess$1(this, (Continuation) continuation);
-        Object obj2 = sessionRepository$syncSessionProcess$1.result;
-        coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-        i = sessionRepository$syncSessionProcess$1.label;
-        if (i != 0) {
+
+        // After case 0 or 1: getAllQuestionSync returned, now get session sync by id
+        List<QuestionPracticeExam> list = (List) obj;
+        cont.L$0 = sessionRepository;
+        cont.L$1 = ctx;
+        cont.L$2 = list;
+        cont.label = 2;
+        Object sessionSyncById = sessionRepository.getSessionSyncById(str, cont);
+        if (sessionSyncById == coroutine_suspended) {
+            return coroutine_suspended;
         }
-        List<QuestionPracticeExam> list22 = (List) obj2;
-        sessionRepository$syncSessionProcess$1.L$0 = sessionRepository;
-        sessionRepository$syncSessionProcess$1.L$1 = context;
-        sessionRepository$syncSessionProcess$1.L$2 = list22;
-        sessionRepository$syncSessionProcess$1.label = 2;
-        sessionSyncById = sessionRepository.getSessionSyncById(str, sessionRepository$syncSessionProcess$1);
-        if (sessionSyncById != coroutine_suspended) {
+        // getSessionSyncById returned immediately
+        return processSyncSession(sessionRepository, ctx, (SessionFullSync) sessionSyncById, list, cont, coroutine_suspended);
+    }
+
+    private Object processSyncSession(SessionRepository sessionRepository, Context context,
+            SessionFullSync sessionFullSync, List questionList,
+            SessionRepository$syncSessionProcess$1 cont, Object coroutine_suspended) {
+        SessionEntity session = sessionFullSync.getSession();
+        String type = (session != null) ? session.getType() : null;
+
+        if (Intrinsics.areEqual(type, EnumClassType.name$default(EnumClassType.PRACTICE_EXAM, null, 1, null))) {
+            // Practice exam type
+            if (questionList == null || questionList.isEmpty()) {
+                return new Pair(Boxing.boxBoolean(false), null);
+            }
+            SessionPracticeExamSyncRequest practiceExamRequest = sessionRepository.practiceExamRequest(sessionFullSync, questionList);
+            cont.L$0 = null;
+            cont.L$1 = null;
+            cont.L$2 = null;
+            cont.label = 3;
+            Object result = sessionRepository.sendSessionPracticeAndSyncPracticalExamRequest(context, practiceExamRequest, cont);
+            if (result == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return result;
+        } else if (Intrinsics.areEqual(type, EnumClassType.name$default(EnumClassType.PRACTICE, null, 1, null))) {
+            // Practice type
+            SessionPracticeSyncRequest practiceRequest = sessionRepository.practiceRequest(sessionFullSync);
+            cont.L$0 = null;
+            cont.L$1 = null;
+            cont.L$2 = null;
+            cont.label = 4;
+            Object result = sessionRepository.sendSessionPracticeAndSyncPracticalRequest(context, practiceRequest, cont);
+            if (result == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return result;
+        } else {
+            // Unknown type - return failure
+            return new Pair(Boxing.boxBoolean(false), null);
         }
-        return coroutine_suspended;
     }
 
     public final Object updateDateEndClass(long j, String str, Continuation continuation) {
@@ -1467,43 +1455,35 @@ public final class SessionRepository {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object updateDateEntryClass(long j, String str, Continuation continuation) {
-        SessionRepository$updateDateEntryClass$1 sessionRepository$updateDateEntryClass$1;
-        int i;
+        SessionRepository$updateDateEntryClass$1 cont;
         if (continuation instanceof SessionRepository$updateDateEntryClass$1) {
-            sessionRepository$updateDateEntryClass$1 = (SessionRepository$updateDateEntryClass$1) continuation;
-            int i2 = sessionRepository$updateDateEntryClass$1.label;
+            cont = (SessionRepository$updateDateEntryClass$1) continuation;
+            int i2 = cont.label;
             if ((i2 & IntCompanionObject.MIN_VALUE) != 0) {
-                sessionRepository$updateDateEntryClass$1.label = i2 - IntCompanionObject.MIN_VALUE;
-                Object obj = sessionRepository$updateDateEntryClass$1.result;
-                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-                i = sessionRepository$updateDateEntryClass$1.label;
-                if (i != 0) {
-                    ResultKt.throwOnFailure(obj);
-                    SimpleSQLiteQuery simpleSQLiteQuery = new SimpleSQLiteQuery("UPDATE session SET dateStartEntryClass = ? WHERE id = ?", new Object[]{Boxing.boxLong(j), str});
-                    SessionDao sessionDao = this.sessionDao;
-                    sessionRepository$updateDateEntryClass$1.label = 1;
-                    obj = sessionDao.updateSessionBySessionId(simpleSQLiteQuery, sessionRepository$updateDateEntryClass$1);
-                    if (obj == coroutine_suspended) {
-                        return coroutine_suspended;
-                    }
-                } else {
-                    if (i != 1) {
-                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                    }
-                    ResultKt.throwOnFailure(obj);
-                }
-                Long l = (Long) obj;
-                return Boxing.boxLong(l == null ? l.longValue() : 0L);
+                cont.label = i2 - IntCompanionObject.MIN_VALUE;
             }
+        } else {
+            cont = new SessionRepository$updateDateEntryClass$1(this, (Continuation) continuation);
         }
-        sessionRepository$updateDateEntryClass$1 = new SessionRepository$updateDateEntryClass$1(this, (Continuation) continuation);
-        Object obj2 = sessionRepository$updateDateEntryClass$1.result;
-        Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-        i = sessionRepository$updateDateEntryClass$1.label;
-        if (i != 0) {
+        Object obj = cont.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int label = cont.label;
+        if (label == 0) {
+            ResultKt.throwOnFailure(obj);
+            SimpleSQLiteQuery simpleSQLiteQuery = new SimpleSQLiteQuery("UPDATE session SET dateStartEntryClass = ? WHERE id = ?", new Object[]{Boxing.boxLong(j), str});
+            SessionDao sessionDao = this.sessionDao;
+            cont.label = 1;
+            obj = sessionDao.updateSessionBySessionId(simpleSQLiteQuery, cont);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (label == 1) {
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        Long l2 = (Long) obj2;
-        return Boxing.boxLong(l2 == null ? l2.longValue() : 0L);
+        Long l = (Long) obj;
+        return Boxing.boxLong(l != null ? l.longValue() : 0L);
     }
 
     public final Object updateIsFinished(String str, Continuation continuation) {
@@ -1518,42 +1498,34 @@ public final class SessionRepository {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object updateIsPending(String str, String str2, Continuation continuation) {
-        SessionRepository$updateIsPending$1 sessionRepository$updateIsPending$1;
-        int i;
+        SessionRepository$updateIsPending$1 cont;
         if (continuation instanceof SessionRepository$updateIsPending$1) {
-            sessionRepository$updateIsPending$1 = (SessionRepository$updateIsPending$1) continuation;
-            int i2 = sessionRepository$updateIsPending$1.label;
+            cont = (SessionRepository$updateIsPending$1) continuation;
+            int i2 = cont.label;
             if ((i2 & IntCompanionObject.MIN_VALUE) != 0) {
-                sessionRepository$updateIsPending$1.label = i2 - IntCompanionObject.MIN_VALUE;
-                Object obj = sessionRepository$updateIsPending$1.result;
-                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-                i = sessionRepository$updateIsPending$1.label;
-                if (i != 0) {
-                    ResultKt.throwOnFailure(obj);
-                    SimpleSQLiteQuery simpleSQLiteQuery = new SimpleSQLiteQuery("UPDATE session SET isPendingSync = ? WHERE id = ?", new Object[]{str, str2});
-                    SessionDao sessionDao = this.sessionDao;
-                    sessionRepository$updateIsPending$1.label = 1;
-                    obj = sessionDao.updateSessionBySessionId(simpleSQLiteQuery, sessionRepository$updateIsPending$1);
-                    if (obj == coroutine_suspended) {
-                        return coroutine_suspended;
-                    }
-                } else {
-                    if (i != 1) {
-                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                    }
-                    ResultKt.throwOnFailure(obj);
-                }
-                Long l = (Long) obj;
-                return Boxing.boxLong(l == null ? l.longValue() : 0L);
+                cont.label = i2 - IntCompanionObject.MIN_VALUE;
             }
+        } else {
+            cont = new SessionRepository$updateIsPending$1(this, (Continuation) continuation);
         }
-        sessionRepository$updateIsPending$1 = new SessionRepository$updateIsPending$1(this, (Continuation) continuation);
-        Object obj2 = sessionRepository$updateIsPending$1.result;
-        Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-        i = sessionRepository$updateIsPending$1.label;
-        if (i != 0) {
+        Object obj = cont.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int label = cont.label;
+        if (label == 0) {
+            ResultKt.throwOnFailure(obj);
+            SimpleSQLiteQuery simpleSQLiteQuery = new SimpleSQLiteQuery("UPDATE session SET isPendingSync = ? WHERE id = ?", new Object[]{str, str2});
+            SessionDao sessionDao = this.sessionDao;
+            cont.label = 1;
+            obj = sessionDao.updateSessionBySessionId(simpleSQLiteQuery, cont);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (label == 1) {
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        Long l2 = (Long) obj2;
-        return Boxing.boxLong(l2 == null ? l2.longValue() : 0L);
+        Long l = (Long) obj;
+        return Boxing.boxLong(l != null ? l.longValue() : 0L);
     }
 }
