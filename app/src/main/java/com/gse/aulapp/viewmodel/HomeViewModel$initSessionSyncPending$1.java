@@ -89,6 +89,7 @@ public final class HomeViewModel$initSessionSyncPending$1 extends SuspendLambda 
             Drawable drawable;
             Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
             int i = this.label;
+            try {
             if (i == 0) {
                 ResultKt.throwOnFailure(obj);
                 sessionRepository = this.this$0.sessionRepository;
@@ -186,6 +187,29 @@ public final class HomeViewModel$initSessionSyncPending$1 extends SuspendLambda 
                     }
                 }
             });
+            } catch (Exception syncException) {
+                // Catch any errors from sync to prevent app crash
+                android.util.Log.e("HomeViewModel", "initSessionSyncPending error: " + syncException.getMessage(), syncException);
+                // Show sync fail UI on main thread
+                final Context errCtx = this.$context;
+                final Menu errItem = this.$item;
+                final HomeViewModel errViewModel = this.this$0;
+                final FragmentHomeBinding errBinding = this.$binding;
+                ((Activity) errCtx).runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            errViewModel.onSwipeRefresh((Activity) errCtx, errBinding);
+                            MenuItem findItem = errItem.findItem(R.id.action_sync);
+                            if (findItem != null) {
+                                findItem.setIcon(((Activity) errCtx).getResources().getDrawable(R.drawable.ic_cloud_sync_fail));
+                            }
+                        } catch (Exception e) {
+                            // ignore UI errors in error handler
+                        }
+                    }
+                });
+            }
             return Unit.INSTANCE;
         }
 

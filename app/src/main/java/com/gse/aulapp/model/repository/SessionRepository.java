@@ -970,374 +970,306 @@ public final class SessionRepository {
         return this.tag;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:19:0x00a9  */
-    /* JADX WARN: Removed duplicated region for block: B:28:0x00eb  */
-    /* JADX WARN: Removed duplicated region for block: B:39:0x0149  */
-    /* JADX WARN: Removed duplicated region for block: B:43:0x0156  */
-    /* JADX WARN: Removed duplicated region for block: B:53:0x0079  */
-    /* JADX WARN: Removed duplicated region for block: B:8:0x0026  */
-    /* JADX WARN: Type inference failed for: r10v0, types: [T, kotlin.Pair] */
-    /* JADX WARN: Type inference failed for: r13v5, types: [T, kotlin.Pair] */
-    /* JADX WARN: Type inference failed for: r2v1, types: [T, kotlin.Pair] */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:31:0x00fa -> B:16:0x012d). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:34:0x0115 -> B:14:0x0119). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:39:0x0149 -> B:16:0x012d). Please report as a decompilation issue!!! */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
+
     public final Object initAllSessionSyncPending(Context context, Continuation<? super Pair<Boolean, String>> continuation) {
-        SessionRepository$initAllSessionSyncPending$1 sessionRepository$initAllSessionSyncPending$1;
-        int i = 0;
+        SessionRepository$initAllSessionSyncPending$1 cont;
         Ref.ObjectRef objectRef;
-        Object allSessionPendingSync = null;
         SessionRepository sessionRepository;
+        Context ctx;
         Iterator it;
-        SessionFullSync sessionFullSync;
-        SessionRepository sessionRepository2;
-        Context context2;
-        Ref.ObjectRef objectRef2;
-        boolean booleanValue;
+        Object coroutine_suspended;
         String str;
+
+        // Set up or restore continuation
         if (continuation instanceof SessionRepository$initAllSessionSyncPending$1) {
-            sessionRepository$initAllSessionSyncPending$1 = (SessionRepository$initAllSessionSyncPending$1) continuation;
-            int i2 = sessionRepository$initAllSessionSyncPending$1.label;
+            cont = (SessionRepository$initAllSessionSyncPending$1) continuation;
+            int i2 = cont.label;
             if ((i2 & IntCompanionObject.MIN_VALUE) != 0) {
-                sessionRepository$initAllSessionSyncPending$1.label = i2 - IntCompanionObject.MIN_VALUE;
-                Object obj = sessionRepository$initAllSessionSyncPending$1.result;
-                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-                i = sessionRepository$initAllSessionSyncPending$1.label;
-                if (i == 0) {
-                    ResultKt.throwOnFailure(obj);
-                    objectRef = new Ref.ObjectRef();
-                    objectRef.element = new Pair(Boxing.boxBoolean(true), null);
-                    sessionRepository$initAllSessionSyncPending$1.L$0 = this;
-                    sessionRepository$initAllSessionSyncPending$1.L$1 = context;
-                    sessionRepository$initAllSessionSyncPending$1.L$2 = objectRef;
-                    sessionRepository$initAllSessionSyncPending$1.label = 1;
-                    allSessionPendingSync = getAllSessionPendingSync(sessionRepository$initAllSessionSyncPending$1);
-                    if (allSessionPendingSync == coroutine_suspended) {
-                        return coroutine_suspended;
-                    }
-                    sessionRepository = this;
-                } else if (i == 1) {
-                    Ref.ObjectRef objectRef3 = (Ref.ObjectRef) sessionRepository$initAllSessionSyncPending$1.L$2;
-                    Context context3 = (Context) sessionRepository$initAllSessionSyncPending$1.L$1;
-                    sessionRepository = (SessionRepository) sessionRepository$initAllSessionSyncPending$1.L$0;
-                    ResultKt.throwOnFailure(obj);
-                    objectRef = objectRef3;
-                    context = context3;
-                    allSessionPendingSync = obj;
-                } else {
-                    if (i != 2) {
-                        if (i != 3) {
-                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                        }
-                        Iterator it2 = (Iterator) sessionRepository$initAllSessionSyncPending$1.L$3;
-                        Ref.ObjectRef objectRef4 = (Ref.ObjectRef) sessionRepository$initAllSessionSyncPending$1.L$2;
-                        Context context4 = (Context) sessionRepository$initAllSessionSyncPending$1.L$1;
-                        SessionRepository sessionRepository3 = (SessionRepository) sessionRepository$initAllSessionSyncPending$1.L$0;
-                        try {
-                            ResultKt.throwOnFailure(obj);
-                        } catch (Exception e) {
-                            Boxing.boxInt(Log.e("Exception updateIsNotPending", String.valueOf(e.getMessage())));
-                            objectRef = objectRef4;
-                            it = it2;
-                            context = context4;
-                            sessionRepository = sessionRepository3;
-                        }
-                        Boxing.boxLong(((Number) obj).longValue());
-                        sessionRepository2 = sessionRepository3;
-                        context2 = context4;
-                        objectRef2 = objectRef4;
-                        it = it2;
-                        objectRef = objectRef2;
-                        context = context2;
-                        sessionRepository = sessionRepository2;
-                        if (!it.hasNext()) {
-                            return objectRef.element;
-                        }
-                        SessionFullSync sessionFullSync2 = (SessionFullSync) it.next();
-                        SessionEntity session = sessionFullSync2.getSession();
-                        if (session == null || (str = session.getId()) == null) {
-                            str = BuildConfig.FLAVOR;
-                        }
-                        sessionRepository$initAllSessionSyncPending$1.L$0 = sessionRepository;
-                        sessionRepository$initAllSessionSyncPending$1.L$1 = context;
-                        sessionRepository$initAllSessionSyncPending$1.L$2 = objectRef;
-                        sessionRepository$initAllSessionSyncPending$1.L$3 = it;
-                        sessionRepository$initAllSessionSyncPending$1.L$4 = sessionFullSync2;
-                        sessionRepository$initAllSessionSyncPending$1.label = 2;
-                        Object syncSessionProcess = sessionRepository.syncSessionProcess(context, str, sessionRepository$initAllSessionSyncPending$1);
-                        if (syncSessionProcess != coroutine_suspended) {
-                            context2 = context;
-                            sessionFullSync = sessionFullSync2;
-                            SessionRepository sessionRepository4 = sessionRepository;
-                            objectRef2 = objectRef;
-                            obj = syncSessionProcess;
-                            sessionRepository2 = sessionRepository4;
-                            Pair pair = (Pair) obj;
-                            booleanValue = ((Boolean) pair.component1()).booleanValue();
-                            String str2 = (String) pair.component2();
-                            if (booleanValue) {
-                                objectRef2.element = new Pair(Boxing.boxBoolean(false), null);
-                            } else {
-                                objectRef2.element = new Pair(Boxing.boxBoolean(booleanValue), str2);
-                                try {
-                                } catch (Exception e2) {
-                                    Iterator it3 = it;
-                                    Ref.ObjectRef objectRef5 = objectRef2;
-                                    Context context5 = context2;
-                                    SessionRepository sessionRepository5 = sessionRepository2;
-                                    Boxing.boxInt(Log.e("Exception updateIsNotPending", String.valueOf(e2.getMessage())));
-                                    objectRef = objectRef5;
-                                    it = it3;
-                                    context = context5;
-                                    sessionRepository = sessionRepository5;
-                                }
-                                SessionEntity session2 = sessionFullSync.getSession();
-                                if (session2 != null) {
-                                    String id = session2.getId();
-                                    sessionRepository$initAllSessionSyncPending$1.L$0 = sessionRepository2;
-                                    sessionRepository$initAllSessionSyncPending$1.L$1 = context2;
-                                    sessionRepository$initAllSessionSyncPending$1.L$2 = objectRef2;
-                                    sessionRepository$initAllSessionSyncPending$1.L$3 = it;
-                                    sessionRepository$initAllSessionSyncPending$1.L$4 = null;
-                                    sessionRepository$initAllSessionSyncPending$1.label = 3;
-                                    obj = sessionRepository2.updateIsPending("0", id, sessionRepository$initAllSessionSyncPending$1);
-                                    if (obj != coroutine_suspended) {
-                                        it2 = it;
-                                        objectRef4 = objectRef2;
-                                        context4 = context2;
-                                        sessionRepository3 = sessionRepository2;
-                                        Boxing.boxLong(((Number) obj).longValue());
-                                        sessionRepository2 = sessionRepository3;
-                                        context2 = context4;
-                                        objectRef2 = objectRef4;
-                                        it = it2;
-                                    }
-                                }
-                            }
-                            objectRef = objectRef2;
-                            context = context2;
-                            sessionRepository = sessionRepository2;
-                            if (!it.hasNext()) {
-                            }
-                        }
-                        return coroutine_suspended;
-                    }
-                    sessionFullSync = (SessionFullSync) sessionRepository$initAllSessionSyncPending$1.L$4;
-                    it = (Iterator) sessionRepository$initAllSessionSyncPending$1.L$3;
-                    objectRef2 = (Ref.ObjectRef) sessionRepository$initAllSessionSyncPending$1.L$2;
-                    context2 = (Context) sessionRepository$initAllSessionSyncPending$1.L$1;
-                    sessionRepository2 = (SessionRepository) sessionRepository$initAllSessionSyncPending$1.L$0;
-                    ResultKt.throwOnFailure(obj);
-                    Pair pair2 = (Pair) obj;
-                    booleanValue = ((Boolean) pair2.component1()).booleanValue();
-                    String str22 = (String) pair2.component2();
-                    if (booleanValue) {
-                    }
-                    objectRef = objectRef2;
-                    context = context2;
-                    sessionRepository = sessionRepository2;
-                    if (!it.hasNext()) {
-                    }
-                }
-                if (allSessionPendingSync == null) {
-                    return objectRef.element;
-                }
-                it = ((Iterable) allSessionPendingSync).iterator();
-                if (!it.hasNext()) {
-                    return objectRef.element;
-                }
+                cont.label = i2 - IntCompanionObject.MIN_VALUE;
             }
+        } else {
+            cont = new SessionRepository$initAllSessionSyncPending$1(this, (Continuation) continuation);
         }
-        sessionRepository$initAllSessionSyncPending$1 = new SessionRepository$initAllSessionSyncPending$1(this, (Continuation) continuation);
-        Object obj2 = sessionRepository$initAllSessionSyncPending$1.result;
-        Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-        i = sessionRepository$initAllSessionSyncPending$1.label;
-        if (i == 0) {
-            ResultKt.throwOnFailure(obj2);
+
+        Object obj = cont.result;
+        coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int label = cont.label;
+
+        if (label == 0) {
+            // Fresh call - start by getting all pending sessions
+            ResultKt.throwOnFailure(obj);
             objectRef = new Ref.ObjectRef();
-            objectRef.element = new Pair(Boxing.boxBoolean(true), null);
-            sessionRepository$initAllSessionSyncPending$1.L$0 = this;
-            sessionRepository$initAllSessionSyncPending$1.L$1 = context;
-            sessionRepository$initAllSessionSyncPending$1.L$2 = objectRef;
-            sessionRepository$initAllSessionSyncPending$1.label = 1;
-            allSessionPendingSync = getAllSessionPendingSync(sessionRepository$initAllSessionSyncPending$1);
-            if (allSessionPendingSync == coroutine_suspended2) {
-                return coroutine_suspended2;
+            objectRef.element = new Pair(Boxing.boxBoolean(false), null);
+            cont.L$0 = this;
+            cont.L$1 = context;
+            cont.L$2 = objectRef;
+            cont.label = 1;
+            obj = getAllSessionPendingSync(cont);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
             }
             sessionRepository = this;
+            ctx = context;
+        } else if (label == 1) {
+            // Resumed from getAllSessionPendingSync
+            objectRef = (Ref.ObjectRef) cont.L$2;
+            ctx = (Context) cont.L$1;
+            sessionRepository = (SessionRepository) cont.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (label == 2) {
+            // Resumed from syncSessionProcess
+            SessionFullSync sf = (SessionFullSync) cont.L$4;
+            it = (Iterator) cont.L$3;
+            objectRef = (Ref.ObjectRef) cont.L$2;
+            ctx = (Context) cont.L$1;
+            sessionRepository = (SessionRepository) cont.L$0;
+            ResultKt.throwOnFailure(obj);
+            // Process sync result
+            Pair pair = (Pair) obj;
+            boolean syncOk = ((Boolean) pair.component1()).booleanValue();
+            String syncMsg = (String) pair.component2();
+            if (syncOk) {
+                objectRef.element = new Pair(Boxing.boxBoolean(false), null);
+            } else {
+                objectRef.element = new Pair(Boxing.boxBoolean(syncOk), syncMsg);
+                try {
+                    SessionEntity session2 = sf.getSession();
+                    if (session2 != null) {
+                        String id = session2.getId();
+                        cont.L$0 = sessionRepository;
+                        cont.L$1 = ctx;
+                        cont.L$2 = objectRef;
+                        cont.L$3 = it;
+                        cont.L$4 = null;
+                        cont.label = 3;
+                        Object updateResult = sessionRepository.updateIsPending("0", id, cont);
+                        if (updateResult == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        Boxing.boxLong(((Number) updateResult).longValue());
+                    }
+                } catch (Exception e) {
+                    Boxing.boxInt(Log.e("Exception updateIsNotPending", String.valueOf(e.getMessage())));
+                }
+            }
+            // Continue loop after processing sync result
+            return continueSessionSyncLoop(it, sessionRepository, ctx, objectRef, cont, coroutine_suspended);
+        } else if (label == 3) {
+            // Resumed from updateIsPending
+            it = (Iterator) cont.L$3;
+            objectRef = (Ref.ObjectRef) cont.L$2;
+            ctx = (Context) cont.L$1;
+            sessionRepository = (SessionRepository) cont.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                Boxing.boxLong(((Number) obj).longValue());
+            } catch (Exception e) {
+                Boxing.boxInt(Log.e("Exception updateIsNotPending", String.valueOf(e.getMessage())));
+            }
+            // Continue loop after processing update result
+            return continueSessionSyncLoop(it, sessionRepository, ctx, objectRef, cont, coroutine_suspended);
         } else {
-            return coroutine_suspended2;
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        if (allSessionPendingSync == null) {
+
+        // After cases 0 or 1: process getAllSessionPendingSync result
+        Object allPending = obj;
+        if (allPending == null) {
             return objectRef.element;
         }
-        it = ((Iterable) allSessionPendingSync).iterator();
-        if (!it.hasNext()) {
-            return objectRef.element;
+        it = ((Iterable) allPending).iterator();
+        return continueSessionSyncLoop(it, sessionRepository, ctx, objectRef, cont, coroutine_suspended);
+    }
+
+    private Object continueSessionSyncLoop(Iterator it, SessionRepository sessionRepository, Context ctx,
+            Ref.ObjectRef objectRef, SessionRepository$initAllSessionSyncPending$1 cont, Object coroutine_suspended) {
+        while (it.hasNext()) {
+            SessionFullSync sessionFullSync = (SessionFullSync) it.next();
+            SessionEntity session = sessionFullSync.getSession();
+            String str = (session != null) ? session.getId() : null;
+            if (str == null) {
+                str = BuildConfig.FLAVOR;
+            }
+            cont.L$0 = sessionRepository;
+            cont.L$1 = ctx;
+            cont.L$2 = objectRef;
+            cont.L$3 = it;
+            cont.L$4 = sessionFullSync;
+            cont.label = 2;
+            Object syncResult = sessionRepository.syncSessionProcess(ctx, str, cont);
+            if (syncResult == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            // syncSessionProcess returned immediately - process result
+            Pair pair = (Pair) syncResult;
+            boolean syncOk = ((Boolean) pair.component1()).booleanValue();
+            String syncMsg = (String) pair.component2();
+            if (syncOk) {
+                objectRef.element = new Pair(Boxing.boxBoolean(false), null);
+            } else {
+                objectRef.element = new Pair(Boxing.boxBoolean(syncOk), syncMsg);
+                try {
+                    SessionEntity session2 = sessionFullSync.getSession();
+                    if (session2 != null) {
+                        String id = session2.getId();
+                        cont.L$0 = sessionRepository;
+                        cont.L$1 = ctx;
+                        cont.L$2 = objectRef;
+                        cont.L$3 = it;
+                        cont.L$4 = null;
+                        cont.label = 3;
+                        Object updateResult = sessionRepository.updateIsPending("0", id, cont);
+                        if (updateResult == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        Boxing.boxLong(((Number) updateResult).longValue());
+                    }
+                } catch (Exception e) {
+                    Boxing.boxInt(Log.e("Exception updateIsNotPending", String.valueOf(e.getMessage())));
+                }
+            }
         }
         return objectRef.element;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:19:0x008b  */
-    /* JADX WARN: Removed duplicated region for block: B:24:0x010a  */
-    /* JADX WARN: Removed duplicated region for block: B:25:0x00bd A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Removed duplicated region for block: B:37:0x010e  */
-    /* JADX WARN: Removed duplicated region for block: B:47:0x0067  */
-    /* JADX WARN: Removed duplicated region for block: B:8:0x0025  */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:24:0x010a -> B:16:0x00f0). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:27:0x00c1 -> B:16:0x00f0). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:30:0x00db -> B:14:0x00de). Please report as a decompilation issue!!! */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
+
     public final Object initSessionSyncPending(Continuation continuation) {
-        SessionRepository$initSessionSyncPending$1 sessionRepository$initSessionSyncPending$1;
-        int i = 0;
+        SessionRepository$initSessionSyncPending$1 cont;
         Ref.BooleanRef booleanRef;
         SessionRepository sessionRepository;
         Iterator it;
-        SessionRepository sessionRepository2;
-        Ref.BooleanRef booleanRef2;
-        Iterator it2;
-        SessionFullSync sessionFullSync;
+        Object coroutine_suspended;
+
+        // Set up or restore continuation
         if (continuation instanceof SessionRepository$initSessionSyncPending$1) {
-            sessionRepository$initSessionSyncPending$1 = (SessionRepository$initSessionSyncPending$1) continuation;
-            int i2 = sessionRepository$initSessionSyncPending$1.label;
+            cont = (SessionRepository$initSessionSyncPending$1) continuation;
+            int i2 = cont.label;
             if ((i2 & IntCompanionObject.MIN_VALUE) != 0) {
-                sessionRepository$initSessionSyncPending$1.label = i2 - IntCompanionObject.MIN_VALUE;
-                Object obj = sessionRepository$initSessionSyncPending$1.result;
-                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-                i = sessionRepository$initSessionSyncPending$1.label;
-                if (i != 0) {
-                    ResultKt.throwOnFailure(obj);
-                    booleanRef = new Ref.BooleanRef();
-                    booleanRef.element = true;
-                    sessionRepository$initSessionSyncPending$1.L$0 = this;
-                    sessionRepository$initSessionSyncPending$1.L$1 = booleanRef;
-                    sessionRepository$initSessionSyncPending$1.label = 1;
-                    obj = getAllSessionPendingSync(sessionRepository$initSessionSyncPending$1);
-                    if (obj != coroutine_suspended) {
-                        sessionRepository = this;
-                    }
-                    return coroutine_suspended;
-                }
-                if (i == 1) {
-                    booleanRef = (Ref.BooleanRef) sessionRepository$initSessionSyncPending$1.L$1;
-                    sessionRepository = (SessionRepository) sessionRepository$initSessionSyncPending$1.L$0;
-                    ResultKt.throwOnFailure(obj);
-                } else if (i == 2) {
-                    sessionFullSync = (SessionFullSync) sessionRepository$initSessionSyncPending$1.L$3;
-                    it2 = (Iterator) sessionRepository$initSessionSyncPending$1.L$2;
-                    booleanRef2 = (Ref.BooleanRef) sessionRepository$initSessionSyncPending$1.L$1;
-                    sessionRepository2 = (SessionRepository) sessionRepository$initSessionSyncPending$1.L$0;
-                    ResultKt.throwOnFailure(obj);
-                    if (((Boolean) ((Pair) obj).getFirst()).booleanValue()) {
-                    }
-                    it = it2;
-                    booleanRef = booleanRef2;
-                    sessionRepository = sessionRepository2;
-                    if (it.hasNext()) {
-                    }
-                } else {
-                    if (i != 3) {
-                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                    }
-                    Iterator it3 = (Iterator) sessionRepository$initSessionSyncPending$1.L$2;
-                    Ref.BooleanRef booleanRef3 = (Ref.BooleanRef) sessionRepository$initSessionSyncPending$1.L$1;
-                    SessionRepository sessionRepository3 = (SessionRepository) sessionRepository$initSessionSyncPending$1.L$0;
-                    try {
-                        ResultKt.throwOnFailure(obj);
-                    } catch (Exception e) {
-                        Boxing.boxInt(Log.e("Exception updateIsNotPending", String.valueOf(e.getMessage())));
-                        it = it3;
-                        booleanRef = booleanRef3;
-                        sessionRepository = sessionRepository3;
-                    }
-                    Boxing.boxLong(((Number) obj).longValue());
-                    sessionRepository2 = sessionRepository3;
-                    booleanRef2 = booleanRef3;
-                    it2 = it3;
-                    it = it2;
-                    booleanRef = booleanRef2;
-                    sessionRepository = sessionRepository2;
-                    if (it.hasNext()) {
-                        SessionFullSync sessionFullSync2 = (SessionFullSync) it.next();
-                        SessionPracticeSyncRequest practiceRequest = sessionRepository.practiceRequest(sessionFullSync2);
-                        Context context = sessionRepository.context;
-                        sessionRepository$initSessionSyncPending$1.L$0 = sessionRepository;
-                        sessionRepository$initSessionSyncPending$1.L$1 = booleanRef;
-                        sessionRepository$initSessionSyncPending$1.L$2 = it;
-                        sessionRepository$initSessionSyncPending$1.L$3 = sessionFullSync2;
-                        sessionRepository$initSessionSyncPending$1.label = 2;
-                        Object sendSessionPracticeAndSyncPracticalRequest = sessionRepository.sendSessionPracticeAndSyncPracticalRequest(context, practiceRequest, sessionRepository$initSessionSyncPending$1);
-                        if (sendSessionPracticeAndSyncPracticalRequest != coroutine_suspended) {
-                            SessionRepository sessionRepository4 = sessionRepository;
-                            it2 = it;
-                            obj = sendSessionPracticeAndSyncPracticalRequest;
-                            sessionRepository2 = sessionRepository4;
-                            booleanRef2 = booleanRef;
-                            sessionFullSync = sessionFullSync2;
-                            if (((Boolean) ((Pair) obj).getFirst()).booleanValue()) {
-                                booleanRef2.element = false;
-                            } else {
-                                try {
-                                } catch (Exception e2) {
-                                    Iterator it4 = it2;
-                                    Ref.BooleanRef booleanRef4 = booleanRef2;
-                                    SessionRepository sessionRepository5 = sessionRepository2;
-                                    Boxing.boxInt(Log.e("Exception updateIsNotPending", String.valueOf(e2.getMessage())));
-                                    it = it4;
-                                    booleanRef = booleanRef4;
-                                    sessionRepository = sessionRepository5;
-                                }
-                                SessionEntity session = sessionFullSync.getSession();
-                                if (session != null) {
-                                    String id = session.getId();
-                                    sessionRepository$initSessionSyncPending$1.L$0 = sessionRepository2;
-                                    sessionRepository$initSessionSyncPending$1.L$1 = booleanRef2;
-                                    sessionRepository$initSessionSyncPending$1.L$2 = it2;
-                                    sessionRepository$initSessionSyncPending$1.L$3 = null;
-                                    sessionRepository$initSessionSyncPending$1.label = 3;
-                                    obj = sessionRepository2.updateIsPending("0", id, sessionRepository$initSessionSyncPending$1);
-                                    if (obj != coroutine_suspended) {
-                                        it3 = it2;
-                                        booleanRef3 = booleanRef2;
-                                        sessionRepository3 = sessionRepository2;
-                                        Boxing.boxLong(((Number) obj).longValue());
-                                        sessionRepository2 = sessionRepository3;
-                                        booleanRef2 = booleanRef3;
-                                        it2 = it3;
-                                    }
-                                }
-                            }
-                            it = it2;
-                            booleanRef = booleanRef2;
-                            sessionRepository = sessionRepository2;
-                            if (it.hasNext()) {
-                                return Boxing.boxBoolean(booleanRef.element);
-                            }
+                cont.label = i2 - IntCompanionObject.MIN_VALUE;
+            }
+        } else {
+            cont = new SessionRepository$initSessionSyncPending$1(this, (Continuation) continuation);
+        }
+
+        Object obj = cont.result;
+        coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int label = cont.label;
+
+        if (label == 0) {
+            // Fresh call
+            ResultKt.throwOnFailure(obj);
+            booleanRef = new Ref.BooleanRef();
+            booleanRef.element = true;
+            cont.L$0 = this;
+            cont.L$1 = booleanRef;
+            cont.label = 1;
+            obj = getAllSessionPendingSync(cont);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            sessionRepository = this;
+        } else if (label == 1) {
+            // Resumed from getAllSessionPendingSync
+            booleanRef = (Ref.BooleanRef) cont.L$1;
+            sessionRepository = (SessionRepository) cont.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (label == 2) {
+            // Resumed from sendSessionPracticeAndSyncPracticalRequest
+            SessionFullSync sf = (SessionFullSync) cont.L$3;
+            it = (Iterator) cont.L$2;
+            booleanRef = (Ref.BooleanRef) cont.L$1;
+            sessionRepository = (SessionRepository) cont.L$0;
+            ResultKt.throwOnFailure(obj);
+            // Process result
+            if (((Boolean) ((Pair) obj).getFirst()).booleanValue()) {
+                booleanRef.element = false;
+            } else {
+                try {
+                    SessionEntity session = sf.getSession();
+                    if (session != null) {
+                        String id = session.getId();
+                        cont.L$0 = sessionRepository;
+                        cont.L$1 = booleanRef;
+                        cont.L$2 = it;
+                        cont.L$3 = null;
+                        cont.label = 3;
+                        Object updateResult = sessionRepository.updateIsPending("0", id, cont);
+                        if (updateResult == coroutine_suspended) {
+                            return coroutine_suspended;
                         }
-                        return coroutine_suspended;
+                        Boxing.boxLong(((Number) updateResult).longValue());
                     }
+                } catch (Exception e) {
+                    Boxing.boxInt(Log.e("Exception updateIsNotPending", String.valueOf(e.getMessage())));
                 }
-                it = ((Iterable) obj).iterator();
-                if (it.hasNext()) {
+            }
+            // Continue loop
+            return continueSessionPendingLoop(it, sessionRepository, booleanRef, cont, coroutine_suspended);
+        } else if (label == 3) {
+            // Resumed from updateIsPending
+            it = (Iterator) cont.L$2;
+            booleanRef = (Ref.BooleanRef) cont.L$1;
+            sessionRepository = (SessionRepository) cont.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                Boxing.boxLong(((Number) obj).longValue());
+            } catch (Exception e) {
+                Boxing.boxInt(Log.e("Exception updateIsNotPending", String.valueOf(e.getMessage())));
+            }
+            // Continue loop
+            return continueSessionPendingLoop(it, sessionRepository, booleanRef, cont, coroutine_suspended);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        // After cases 0 or 1: process getAllSessionPendingSync result
+        if (obj == null) {
+            return Boxing.boxBoolean(booleanRef.element);
+        }
+        it = ((Iterable) obj).iterator();
+        return continueSessionPendingLoop(it, sessionRepository, booleanRef, cont, coroutine_suspended);
+    }
+
+    private Object continueSessionPendingLoop(Iterator it, SessionRepository sessionRepository,
+            Ref.BooleanRef booleanRef, SessionRepository$initSessionSyncPending$1 cont, Object coroutine_suspended) {
+        while (it.hasNext()) {
+            SessionFullSync sessionFullSync = (SessionFullSync) it.next();
+            SessionPracticeSyncRequest practiceRequest = sessionRepository.practiceRequest(sessionFullSync);
+            Context context = sessionRepository.context;
+            cont.L$0 = sessionRepository;
+            cont.L$1 = booleanRef;
+            cont.L$2 = it;
+            cont.L$3 = sessionFullSync;
+            cont.label = 2;
+            Object syncResult = sessionRepository.sendSessionPracticeAndSyncPracticalRequest(context, practiceRequest, cont);
+            if (syncResult == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            // Process immediate result
+            if (((Boolean) ((Pair) syncResult).getFirst()).booleanValue()) {
+                booleanRef.element = false;
+            } else {
+                try {
+                    SessionEntity session = sessionFullSync.getSession();
+                    if (session != null) {
+                        String id = session.getId();
+                        cont.L$0 = sessionRepository;
+                        cont.L$1 = booleanRef;
+                        cont.L$2 = it;
+                        cont.L$3 = null;
+                        cont.label = 3;
+                        Object updateResult = sessionRepository.updateIsPending("0", id, cont);
+                        if (updateResult == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        Boxing.boxLong(((Number) updateResult).longValue());
+                    }
+                } catch (Exception e) {
+                    Boxing.boxInt(Log.e("Exception updateIsNotPending", String.valueOf(e.getMessage())));
                 }
             }
         }
-        sessionRepository$initSessionSyncPending$1 = new SessionRepository$initSessionSyncPending$1(this, (Continuation) continuation);
-        Object obj2 = sessionRepository$initSessionSyncPending$1.result;
-        Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-        i = sessionRepository$initSessionSyncPending$1.label;
-        if (i != 0) {
-        }
-        it = ((Iterable) obj2).iterator();
-        if (it.hasNext()) {
-        }
-        return null;
+        return Boxing.boxBoolean(booleanRef.element);
     }
 
     public final Object saveClassRoom(ClassRoomEntity classRoomEntity, Continuation continuation) {
