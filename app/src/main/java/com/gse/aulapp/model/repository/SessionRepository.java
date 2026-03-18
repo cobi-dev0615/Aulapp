@@ -904,6 +904,7 @@ public final class SessionRepository {
         } else {
             simpleSQLiteQuery = new SimpleSQLiteQuery("SELECT * FROM session s where s.dateClass  = ? ", new Object[]{l});
         }
+        android.util.Log.d("SessionRepo", "getAllSession query=" + (simpleSQLiteQuery != null ? simpleSQLiteQuery.getSql() : "NULL - returning empty"));
         return simpleSQLiteQuery != null ? this.sessionDao.getAllSessionCustom(simpleSQLiteQuery, continuation) : CollectionsKt.emptyList();
     }
 

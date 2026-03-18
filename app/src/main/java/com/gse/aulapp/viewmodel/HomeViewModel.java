@@ -631,6 +631,13 @@ public final class HomeViewModel extends ViewModel {
         switch (label) {
             case 0:
                 ResultKt.throwOnFailure(obj);
+                android.util.Log.d("SaveSessionFull", "ENTER saveSessionFull, dto=" + (sessionResponseDto != null ? "has data" : "NULL"));
+                if (sessionResponseDto != null && sessionResponseDto.getSessionInstructorObjectResponse() != null) {
+                    android.util.Log.d("SaveSessionFull", "instrObjList size=" + sessionResponseDto.getSessionInstructorObjectResponse().size());
+                    for (SessionInstructorObjectResponse sio : sessionResponseDto.getSessionInstructorObjectResponse()) {
+                        android.util.Log.d("SaveSessionFull", "  date=" + sio.getDate() + " sessions=" + (sio.getSessions() != null ? sio.getSessions().size() : 0));
+                    }
+                }
                 // Step 1: Get pending sync IDs
                 cont.L$0 = this;
                 cont.L$1 = sessionResponseDto;
@@ -895,9 +902,11 @@ public final class HomeViewModel extends ViewModel {
             }
 
             SessionResponse session = (SessionResponse) innerIt.next();
+            android.util.Log.d("SaveSessionFull", "Processing session id=" + session.getId() + " type=" + session.getType());
 
             // Skip sessions that are pending sync
             if (pendingSyncIds.contains(session.getId())) {
+                android.util.Log.d("SaveSessionFull", "  SKIPPED (pending sync)");
                 continue;
             }
 
@@ -976,11 +985,13 @@ public final class HomeViewModel extends ViewModel {
             );
             cont.L$8 = innerIt;
             cont.label = 8;
+            android.util.Log.d("SaveSessionFull", "  SAVING session id=" + session.getId() + " dateEndClass=" + sessionEntity.getDateEndClass());
             result = viewModel.sessionRepository.saveSession(sessionEntity, cont);
             if (result == coroutine_suspended) return coroutine_suspended;
         }
 
         // After processing all sessions, handle deletions
+        android.util.Log.d("SaveSessionFull", "Loop DONE. deleteIds size=" + deleteIds.size());
         if (!deleteIds.isEmpty()) {
             String nowStr = java.time.LocalDateTime.now().toString();
             cont.L$0 = null;
