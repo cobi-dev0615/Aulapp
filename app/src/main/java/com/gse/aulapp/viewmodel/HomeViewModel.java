@@ -597,698 +597,410 @@ public final class HomeViewModel extends ViewModel {
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:50:0x045d -> B:18:0x0461). Please report as a decompilation issue!!! */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:60:0x0260 -> B:56:0x0471). Please report as a decompilation issue!!! */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:61:0x0262 -> B:20:0x026e). Please report as a decompilation issue!!! */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
     public final Object saveSessionFull(SessionResponseDto sessionResponseDto, Continuation continuation) {
-        HomeViewModel$saveSessionFull$1 homeViewModel$saveSessionFull$1;
-        Ref.ObjectRef objectRef;
-        Ref.ObjectRef objectRef2;
-        Object obj;
-        HomeViewModel homeViewModel;
-        List<SessionInstructorObjectResponse> sessionInstructorObjectResponse;
-        Object allSessionID;
-        SessionResponseDto sessionResponseDto2;
-        List list;
-        Object obj2;
-        List<String> listIdSessionDelete;
-        List<SessionInstructorObjectResponse> sessionInstructorObjectResponse2 = null;
-        Iterator it;
-        Ref.ObjectRef objectRef3;
-        Ref.ObjectRef objectRef4;
-        SessionResponseDto sessionResponseDto3;
-        HomeViewModel homeViewModel2;
-        SessionResponse sessionResponse;
-        List list2;
-        List<String> list3;
-        Iterator it2;
-        SessionInstructorObjectResponse sessionInstructorObjectResponse3;
-        Iterator it3;
-        Ref.ObjectRef objectRef5;
-        SessionResponse sessionResponse2;
-        Iterator it4;
-        SessionInstructorObjectResponse sessionInstructorObjectResponse4;
-        Iterator it5;
-        List<String> list4;
-        List list5;
-        Ref.ObjectRef objectRef6;
-        String str = null;
-        String str2;
-        String str3;
-        SessionResponse sessionResponse3;
-        Iterator it6;
-        SessionInstructorObjectResponse sessionInstructorObjectResponse5;
-        Iterator it7;
-        List<String> list6;
-        List list7;
-        Ref.ObjectRef objectRef7;
-        Ref.ObjectRef objectRef8;
-        SessionResponseDto sessionResponseDto4;
-        HomeViewModel homeViewModel3;
-        String str4;
-        String str5;
-        SessionResponse sessionResponse4;
-        Iterator it8;
-        SessionInstructorObjectResponse sessionInstructorObjectResponse6;
-        Iterator it9;
-        List<String> list8;
-        List list9;
-        Ref.ObjectRef objectRef9;
-        Ref.ObjectRef objectRef10;
-        SessionResponseDto sessionResponseDto5;
-        HomeViewModel homeViewModel4;
-        String str6;
-        List<SessionInstructorObjectResponse> sessionInstructorObjectResponse7;
-        Iterator it10;
-        SessionInstructorObjectResponse sessionInstructorObjectResponse8;
-        List list10;
-        List<String> list11;
-        Iterator it11;
-        String str7;
-        Iterator it12;
-        SessionInstructorObjectResponse sessionInstructorObjectResponse9;
-        Ref.ObjectRef objectRef11;
-        Ref.ObjectRef objectRef12;
-        Object t;
-        Object t2;
-        Object endEntryClass;
-        SessionResponseDto sessionResponseDto6 = sessionResponseDto;
+        HomeViewModel$saveSessionFull$1 cont;
         if (continuation instanceof HomeViewModel$saveSessionFull$1) {
-            homeViewModel$saveSessionFull$1 = (HomeViewModel$saveSessionFull$1) continuation;
-            int i = homeViewModel$saveSessionFull$1.label;
+            cont = (HomeViewModel$saveSessionFull$1) continuation;
+            int i = cont.label;
             if ((i & IntCompanionObject.MIN_VALUE) != 0) {
-                homeViewModel$saveSessionFull$1.label = i - IntCompanionObject.MIN_VALUE;
-                Object obj3 = homeViewModel$saveSessionFull$1.result;
-                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
-                switch (homeViewModel$saveSessionFull$1.label) {
-                    case 0:
-                        ResultKt.throwOnFailure(obj3);
-                        Ref.ObjectRef objectRef13 = new Ref.ObjectRef();
-                        objectRef13.element = new ArrayList();
-                        if (sessionResponseDto6 != null && (sessionInstructorObjectResponse = sessionResponseDto6.getSessionInstructorObjectResponse()) != null) {
-                            Iterator it13 = sessionInstructorObjectResponse.iterator();
-                            while (it13.hasNext()) {
-                                List<SessionResponse> sessions = ((SessionInstructorObjectResponse) it13.next()).getSessions();
-                                if (sessions != null) {
-                                    Iterator it14 = sessions.iterator();
-                                    while (it14.hasNext()) {
-                                        ((List) objectRef13.element).add(((SessionResponse) it14.next()).getId());
-                                    }
-                                    Unit unit = Unit.INSTANCE;
-                                }
-                            }
-                            Unit unit2 = Unit.INSTANCE;
-                        }
-                        Ref.ObjectRef objectRef14 = new Ref.ObjectRef();
-                        objectRef = new Ref.ObjectRef();
-                        SessionRepository sessionRepository = this.sessionRepository;
-                        homeViewModel$saveSessionFull$1.L$0 = this;
-                        homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto6;
-                        homeViewModel$saveSessionFull$1.L$2 = objectRef14;
-                        homeViewModel$saveSessionFull$1.L$3 = objectRef;
-                        homeViewModel$saveSessionFull$1.label = 1;
-                        Object sessionIdPendingSync = sessionRepository.getSessionIdPendingSync(homeViewModel$saveSessionFull$1);
-                        if (sessionIdPendingSync != coroutine_suspended) {
-                            objectRef2 = objectRef14;
-                            obj = sessionIdPendingSync;
-                            homeViewModel = this;
-                            List list12 = (List) obj;
-                            SessionRepository sessionRepository2 = homeViewModel.sessionRepository;
-                            homeViewModel$saveSessionFull$1.L$0 = homeViewModel;
-                            homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto6;
-                            homeViewModel$saveSessionFull$1.L$2 = objectRef2;
-                            homeViewModel$saveSessionFull$1.L$3 = objectRef;
-                            homeViewModel$saveSessionFull$1.L$4 = list12;
-                            homeViewModel$saveSessionFull$1.label = 2;
-                            allSessionID = sessionRepository2.getAllSessionID(homeViewModel$saveSessionFull$1);
-                            if (allSessionID != coroutine_suspended) {
-                                sessionResponseDto2 = sessionResponseDto6;
-                                list = list12;
-                                obj2 = allSessionID;
-                                listIdSessionDelete = homeViewModel.getListIdSessionDelete(sessionResponseDto2 != null ? sessionResponseDto2.getSessionInstructorObjectResponse() : null, (List) obj2);
-                                if (sessionResponseDto2 != null && (sessionInstructorObjectResponse2 = sessionResponseDto2.getSessionInstructorObjectResponse()) != null) {
-                                    it = sessionInstructorObjectResponse2.iterator();
-                                    if (it.hasNext()) {
-                                        SessionInstructorObjectResponse sessionInstructorObjectResponse10 = (SessionInstructorObjectResponse) it.next();
-                                        List<SessionResponse> sessions2 = sessionInstructorObjectResponse10.getSessions();
-                                        if (sessions2 != null) {
-                                            sessionResponseDto3 = sessionResponseDto2;
-                                            homeViewModel2 = homeViewModel;
-                                            it10 = it;
-                                            sessionInstructorObjectResponse8 = sessionInstructorObjectResponse10;
-                                            list10 = list;
-                                            list11 = listIdSessionDelete;
-                                            objectRef3 = objectRef2;
-                                            it11 = sessions2.iterator();
-                                            if (it11.hasNext()) {
-                                                SessionResponse sessionResponse5 = (SessionResponse) it11.next();
-                                                if (!list10.contains(sessionResponse5.getId())) {
-                                                    SessionRepository sessionRepository3 = homeViewModel2.sessionRepository;
-                                                    String id = sessionResponse5.getId();
-                                                    homeViewModel$saveSessionFull$1.L$0 = homeViewModel2;
-                                                    homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto3;
-                                                    homeViewModel$saveSessionFull$1.L$2 = objectRef3;
-                                                    homeViewModel$saveSessionFull$1.L$3 = objectRef;
-                                                    homeViewModel$saveSessionFull$1.L$4 = list10;
-                                                    homeViewModel$saveSessionFull$1.L$5 = list11;
-                                                    homeViewModel$saveSessionFull$1.L$6 = it10;
-                                                    homeViewModel$saveSessionFull$1.L$7 = sessionInstructorObjectResponse8;
-                                                    homeViewModel$saveSessionFull$1.L$8 = it11;
-                                                    homeViewModel$saveSessionFull$1.L$9 = sessionResponse5;
-                                                    homeViewModel$saveSessionFull$1.L$10 = objectRef3;
-                                                    homeViewModel$saveSessionFull$1.label = 3;
-                                                    Object startEntryClass = sessionRepository3.getStartEntryClass(id, homeViewModel$saveSessionFull$1);
-                                                    if (startEntryClass != coroutine_suspended) {
-                                                        Iterator it15 = it11;
-                                                        sessionResponse = sessionResponse5;
-                                                        t2 = startEntryClass;
-                                                        list2 = list10;
-                                                        list3 = list11;
-                                                        it2 = it10;
-                                                        sessionInstructorObjectResponse3 = sessionInstructorObjectResponse8;
-                                                        it3 = it15;
-                                                        objectRef4 = objectRef3;
-                                                        objectRef3.element = t2;
-                                                        SessionRepository sessionRepository4 = homeViewModel2.sessionRepository;
-                                                        String id2 = sessionResponse.getId();
-                                                        homeViewModel$saveSessionFull$1.L$0 = homeViewModel2;
-                                                        homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto3;
-                                                        homeViewModel$saveSessionFull$1.L$2 = objectRef4;
-                                                        homeViewModel$saveSessionFull$1.L$3 = objectRef;
-                                                        homeViewModel$saveSessionFull$1.L$4 = list2;
-                                                        homeViewModel$saveSessionFull$1.L$5 = list3;
-                                                        homeViewModel$saveSessionFull$1.L$6 = it2;
-                                                        homeViewModel$saveSessionFull$1.L$7 = sessionInstructorObjectResponse3;
-                                                        homeViewModel$saveSessionFull$1.L$8 = it3;
-                                                        homeViewModel$saveSessionFull$1.L$9 = sessionResponse;
-                                                        homeViewModel$saveSessionFull$1.L$10 = objectRef;
-                                                        homeViewModel$saveSessionFull$1.label = 4;
-                                                        endEntryClass = sessionRepository4.getEndEntryClass(id2, homeViewModel$saveSessionFull$1);
-                                                        if (endEntryClass != coroutine_suspended) {
-                                                            objectRef5 = objectRef;
-                                                            sessionResponse2 = sessionResponse;
-                                                            it4 = it3;
-                                                            sessionInstructorObjectResponse4 = sessionInstructorObjectResponse3;
-                                                            it5 = it2;
-                                                            list4 = list3;
-                                                            list5 = list2;
-                                                            objectRef6 = objectRef5;
-                                                            t = endEntryClass;
-                                                            objectRef5.element = t;
-                                                            if (sessionResponse2.getVehicle() != null) {
-                                                                VehicleResponse vehicle = sessionResponse2.getVehicle();
-                                                                Intrinsics.checkNotNull(vehicle);
-                                                                str = vehicle.getVehicleID();
-                                                                SessionRepository sessionRepository5 = homeViewModel2.sessionRepository;
-                                                                SessionDataConverter.Companion companion = SessionDataConverter.INSTANCE;
-                                                                VehicleResponse vehicle2 = sessionResponse2.getVehicle();
-                                                                Intrinsics.checkNotNull(vehicle2);
-                                                                VehicleEntity vehicleEntityFromVehicleResponse = companion.getVehicleEntityFromVehicleResponse(vehicle2);
-                                                                homeViewModel$saveSessionFull$1.L$0 = homeViewModel2;
-                                                                homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto3;
-                                                                homeViewModel$saveSessionFull$1.L$2 = objectRef4;
-                                                                homeViewModel$saveSessionFull$1.L$3 = objectRef6;
-                                                                homeViewModel$saveSessionFull$1.L$4 = list5;
-                                                                homeViewModel$saveSessionFull$1.L$5 = list4;
-                                                                homeViewModel$saveSessionFull$1.L$6 = it5;
-                                                                homeViewModel$saveSessionFull$1.L$7 = sessionInstructorObjectResponse4;
-                                                                homeViewModel$saveSessionFull$1.L$8 = it4;
-                                                                homeViewModel$saveSessionFull$1.L$9 = sessionResponse2;
-                                                                homeViewModel$saveSessionFull$1.L$10 = str;
-                                                                homeViewModel$saveSessionFull$1.label = 5;
-                                                                break;
-                                                            } else {
-                                                                str = null;
-                                                            }
-                                                            homeViewModel3 = homeViewModel2;
-                                                            sessionResponseDto4 = sessionResponseDto3;
-                                                            objectRef8 = objectRef4;
-                                                            objectRef7 = objectRef6;
-                                                            list7 = list5;
-                                                            list6 = list4;
-                                                            it7 = it5;
-                                                            sessionInstructorObjectResponse5 = sessionInstructorObjectResponse4;
-                                                            it6 = it4;
-                                                            sessionResponse3 = sessionResponse2;
-                                                            if (sessionResponse3.getLesson() != null) {
-                                                                LessonResponse lesson = sessionResponse3.getLesson();
-                                                                Intrinsics.checkNotNull(lesson);
-                                                                if (lesson.getLessonID() != null) {
-                                                                    LessonResponse lesson2 = sessionResponse3.getLesson();
-                                                                    Intrinsics.checkNotNull(lesson2);
-                                                                    String lessonID = lesson2.getLessonID();
-                                                                    SessionRepository sessionRepository6 = homeViewModel3.sessionRepository;
-                                                                    SessionDataConverter.Companion companion2 = SessionDataConverter.INSTANCE;
-                                                                    Object obj4 = coroutine_suspended;
-                                                                    LessonResponse lesson3 = sessionResponse3.getLesson();
-                                                                    Intrinsics.checkNotNull(lesson3);
-                                                                    LessonEntity lessonEntityFromLessonResponse = companion2.getLessonEntityFromLessonResponse(lesson3);
-                                                                    homeViewModel$saveSessionFull$1.L$0 = homeViewModel3;
-                                                                    homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto4;
-                                                                    homeViewModel$saveSessionFull$1.L$2 = objectRef8;
-                                                                    homeViewModel$saveSessionFull$1.L$3 = objectRef7;
-                                                                    homeViewModel$saveSessionFull$1.L$4 = list7;
-                                                                    homeViewModel$saveSessionFull$1.L$5 = list6;
-                                                                    homeViewModel$saveSessionFull$1.L$6 = it7;
-                                                                    homeViewModel$saveSessionFull$1.L$7 = sessionInstructorObjectResponse5;
-                                                                    homeViewModel$saveSessionFull$1.L$8 = it6;
-                                                                    homeViewModel$saveSessionFull$1.L$9 = sessionResponse3;
-                                                                    homeViewModel$saveSessionFull$1.L$10 = str;
-                                                                    homeViewModel$saveSessionFull$1.L$11 = lessonID;
-                                                                    homeViewModel$saveSessionFull$1.label = 6;
-                                                                    Object saveLesson = sessionRepository6.saveLesson(lessonEntityFromLessonResponse, homeViewModel$saveSessionFull$1);
-                                                                    coroutine_suspended = obj4;
-                                                                    if (saveLesson != coroutine_suspended) {
-                                                                        str3 = str;
-                                                                        str2 = lessonID;
-                                                                        List<String> list13 = list6;
-                                                                        it8 = it6;
-                                                                        objectRef10 = objectRef8;
-                                                                        list8 = list13;
-                                                                        str6 = str2;
-                                                                        homeViewModel4 = homeViewModel3;
-                                                                        objectRef9 = objectRef7;
-                                                                        it9 = it7;
-                                                                        sessionResponse4 = sessionResponse3;
-                                                                        sessionResponseDto5 = sessionResponseDto4;
-                                                                        list9 = list7;
-                                                                        sessionInstructorObjectResponse6 = sessionInstructorObjectResponse5;
-                                                                        str5 = str3;
-                                                                        if (sessionResponse4.getClassroom() == null) {
-                                                                            List list14 = list9;
-                                                                            homeViewModel2 = homeViewModel4;
-                                                                            it12 = it8;
-                                                                            list10 = list14;
-                                                                            str7 = null;
-                                                                            String str8 = str6;
-                                                                            String str9 = str5;
-                                                                            SessionResponse sessionResponse6 = sessionResponse4;
-                                                                            sessionInstructorObjectResponse9 = sessionInstructorObjectResponse6;
-                                                                            it10 = it9;
-                                                                            list11 = list8;
-                                                                            objectRef11 = objectRef9;
-                                                                            sessionResponseDto3 = sessionResponseDto5;
-                                                                            objectRef12 = objectRef10;
-                                                                            EnumTypeConfiguration type = ConfigurationSessionTypeConverter.INSTANCE.getType(sessionResponse6.getType());
-                                                                            int configMinAfter = homeViewModel2.getConfigMinAfter(type, sessionResponseDto3);
-                                                                            int configMinBefore = homeViewModel2.getConfigMinBefore(type, sessionResponseDto3);
-                                                                            SessionRepository sessionRepository7 = homeViewModel2.sessionRepository;
-                                                                            SessionEntity sessionEntityFromSessionResponse = SessionDataConverter.INSTANCE.getSessionEntityFromSessionResponse(sessionResponse6, str7, str9, str8, sessionInstructorObjectResponse9.getDate(), (Long) objectRef12.element, (Long) objectRef11.element, configMinBefore, configMinAfter);
-                                                                            homeViewModel$saveSessionFull$1.L$0 = homeViewModel2;
-                                                                            homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto3;
-                                                                            homeViewModel$saveSessionFull$1.L$2 = objectRef12;
-                                                                            homeViewModel$saveSessionFull$1.L$3 = objectRef11;
-                                                                            homeViewModel$saveSessionFull$1.L$4 = list10;
-                                                                            homeViewModel$saveSessionFull$1.L$5 = list11;
-                                                                            homeViewModel$saveSessionFull$1.L$6 = it10;
-                                                                            homeViewModel$saveSessionFull$1.L$7 = sessionInstructorObjectResponse9;
-                                                                            homeViewModel$saveSessionFull$1.L$8 = it12;
-                                                                            homeViewModel$saveSessionFull$1.L$9 = null;
-                                                                            homeViewModel$saveSessionFull$1.L$10 = null;
-                                                                            homeViewModel$saveSessionFull$1.L$11 = null;
-                                                                            homeViewModel$saveSessionFull$1.L$12 = null;
-                                                                            homeViewModel$saveSessionFull$1.label = 8;
-                                                                            break;
-                                                                        } else {
-                                                                            ClassRoomResponse classroom = sessionResponse4.getClassroom();
-                                                                            Intrinsics.checkNotNull(classroom);
-                                                                            str4 = classroom.getClassroomID();
-                                                                            SessionRepository sessionRepository8 = homeViewModel4.sessionRepository;
-                                                                            Object obj5 = coroutine_suspended;
-                                                                            SessionDataConverter.Companion companion3 = SessionDataConverter.INSTANCE;
-                                                                            ClassRoomResponse classroom2 = sessionResponse4.getClassroom();
-                                                                            Intrinsics.checkNotNull(classroom2);
-                                                                            ClassRoomEntity classRoomEntityFormClassRoomResponse = companion3.getClassRoomEntityFormClassRoomResponse(classroom2);
-                                                                            homeViewModel$saveSessionFull$1.L$0 = homeViewModel4;
-                                                                            homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto5;
-                                                                            homeViewModel$saveSessionFull$1.L$2 = objectRef10;
-                                                                            homeViewModel$saveSessionFull$1.L$3 = objectRef9;
-                                                                            homeViewModel$saveSessionFull$1.L$4 = list9;
-                                                                            homeViewModel$saveSessionFull$1.L$5 = list8;
-                                                                            homeViewModel$saveSessionFull$1.L$6 = it9;
-                                                                            homeViewModel$saveSessionFull$1.L$7 = sessionInstructorObjectResponse6;
-                                                                            homeViewModel$saveSessionFull$1.L$8 = it8;
-                                                                            homeViewModel$saveSessionFull$1.L$9 = sessionResponse4;
-                                                                            homeViewModel$saveSessionFull$1.L$10 = str5;
-                                                                            homeViewModel$saveSessionFull$1.L$11 = str4;
-                                                                            homeViewModel$saveSessionFull$1.L$12 = str6;
-                                                                            homeViewModel$saveSessionFull$1.label = 7;
-                                                                            coroutine_suspended = obj5;
-                                                                            break;
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                            str5 = str;
-                                                            homeViewModel4 = homeViewModel3;
-                                                            objectRef9 = objectRef7;
-                                                            it9 = it7;
-                                                            sessionResponse4 = sessionResponse3;
-                                                            sessionResponseDto5 = sessionResponseDto4;
-                                                            list9 = list7;
-                                                            sessionInstructorObjectResponse6 = sessionInstructorObjectResponse5;
-                                                            it8 = it6;
-                                                            objectRef10 = objectRef8;
-                                                            list8 = list6;
-                                                            str6 = null;
-                                                            if (sessionResponse4.getClassroom() == null) {
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                                if (it11.hasNext()) {
-                                                    Unit unit3 = Unit.INSTANCE;
-                                                    objectRef2 = objectRef3;
-                                                    listIdSessionDelete = list11;
-                                                    list = list10;
-                                                    sessionResponseDto2 = sessionResponseDto3;
-                                                    it = it10;
-                                                    homeViewModel = homeViewModel2;
-                                                }
-                                            }
-                                        }
-                                        if (it.hasNext()) {
-                                        }
-                                    } else {
-                                        Unit unit4 = Unit.INSTANCE;
-                                    }
-                                }
-                                if (!listIdSessionDelete.isEmpty()) {
-                                    if (sessionResponseDto2 != null && (sessionInstructorObjectResponse7 = sessionResponseDto2.getSessionInstructorObjectResponse()) != null && sessionInstructorObjectResponse7.isEmpty()) {
-                                        SessionRepository sessionRepository9 = homeViewModel.sessionRepository;
-                                        String localDateTime = LocalDateTime.now().toString();
-                                        Intrinsics.checkNotNullExpressionValue(localDateTime, "toString(...)");
-                                        homeViewModel$saveSessionFull$1.L$0 = null;
-                                        homeViewModel$saveSessionFull$1.L$1 = null;
-                                        homeViewModel$saveSessionFull$1.L$2 = null;
-                                        homeViewModel$saveSessionFull$1.L$3 = null;
-                                        homeViewModel$saveSessionFull$1.L$4 = null;
-                                        homeViewModel$saveSessionFull$1.L$5 = null;
-                                        homeViewModel$saveSessionFull$1.L$6 = null;
-                                        homeViewModel$saveSessionFull$1.L$7 = null;
-                                        homeViewModel$saveSessionFull$1.L$8 = null;
-                                        homeViewModel$saveSessionFull$1.label = 10;
-                                        break;
-                                    } else {
-                                        return Unit.INSTANCE;
-                                    }
-                                } else {
-                                    SessionRepository sessionRepository10 = homeViewModel.sessionRepository;
-                                    homeViewModel$saveSessionFull$1.L$0 = null;
-                                    homeViewModel$saveSessionFull$1.L$1 = null;
-                                    homeViewModel$saveSessionFull$1.L$2 = null;
-                                    homeViewModel$saveSessionFull$1.L$3 = null;
-                                    homeViewModel$saveSessionFull$1.L$4 = null;
-                                    homeViewModel$saveSessionFull$1.L$5 = null;
-                                    homeViewModel$saveSessionFull$1.L$6 = null;
-                                    homeViewModel$saveSessionFull$1.L$7 = null;
-                                    homeViewModel$saveSessionFull$1.L$8 = null;
-                                    homeViewModel$saveSessionFull$1.label = 9;
-                                    break;
-                                }
-                            }
-                        }
-                        return coroutine_suspended;
-                    case 1:
-                        Ref.ObjectRef objectRef15 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$3;
-                        Ref.ObjectRef objectRef16 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$2;
-                        SessionResponseDto sessionResponseDto7 = (SessionResponseDto) homeViewModel$saveSessionFull$1.L$1;
-                        HomeViewModel homeViewModel5 = (HomeViewModel) homeViewModel$saveSessionFull$1.L$0;
-                        ResultKt.throwOnFailure(obj3);
-                        objectRef = objectRef15;
-                        sessionResponseDto6 = sessionResponseDto7;
-                        objectRef2 = objectRef16;
-                        homeViewModel = homeViewModel5;
-                        obj = obj3;
-                        List list122 = (List) obj;
-                        SessionRepository sessionRepository22 = homeViewModel.sessionRepository;
-                        homeViewModel$saveSessionFull$1.L$0 = homeViewModel;
-                        homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto6;
-                        homeViewModel$saveSessionFull$1.L$2 = objectRef2;
-                        homeViewModel$saveSessionFull$1.L$3 = objectRef;
-                        homeViewModel$saveSessionFull$1.L$4 = list122;
-                        homeViewModel$saveSessionFull$1.label = 2;
-                        allSessionID = sessionRepository22.getAllSessionID(homeViewModel$saveSessionFull$1);
-                        if (allSessionID != coroutine_suspended) {
-                        }
-                        return coroutine_suspended;
-                    case 2:
-                        list = (List) homeViewModel$saveSessionFull$1.L$4;
-                        objectRef = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$3;
-                        objectRef2 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$2;
-                        sessionResponseDto2 = (SessionResponseDto) homeViewModel$saveSessionFull$1.L$1;
-                        homeViewModel = (HomeViewModel) homeViewModel$saveSessionFull$1.L$0;
-                        ResultKt.throwOnFailure(obj3);
-                        obj2 = obj3;
-                        listIdSessionDelete = homeViewModel.getListIdSessionDelete(sessionResponseDto2 != null ? sessionResponseDto2.getSessionInstructorObjectResponse() : null, (List) obj2);
-                        if (sessionResponseDto2 != null) {
-                            it = sessionInstructorObjectResponse2.iterator();
-                            if (it.hasNext()) {
-                            }
-                            break;
-                        }
-                        if (!listIdSessionDelete.isEmpty()) {
-                        }
-                        return coroutine_suspended;
-                    case 3:
-                        objectRef3 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$10;
-                        SessionResponse sessionResponse7 = (SessionResponse) homeViewModel$saveSessionFull$1.L$9;
-                        Iterator it16 = (Iterator) homeViewModel$saveSessionFull$1.L$8;
-                        SessionInstructorObjectResponse sessionInstructorObjectResponse11 = (SessionInstructorObjectResponse) homeViewModel$saveSessionFull$1.L$7;
-                        Iterator it17 = (Iterator) homeViewModel$saveSessionFull$1.L$6;
-                        List<String> list15 = (List) homeViewModel$saveSessionFull$1.L$5;
-                        List list16 = (List) homeViewModel$saveSessionFull$1.L$4;
-                        Ref.ObjectRef objectRef17 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$3;
-                        objectRef4 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$2;
-                        sessionResponseDto3 = (SessionResponseDto) homeViewModel$saveSessionFull$1.L$1;
-                        homeViewModel2 = (HomeViewModel) homeViewModel$saveSessionFull$1.L$0;
-                        ResultKt.throwOnFailure(obj3);
-                        sessionResponse = sessionResponse7;
-                        objectRef = objectRef17;
-                        list2 = list16;
-                        list3 = list15;
-                        it2 = it17;
-                        sessionInstructorObjectResponse3 = sessionInstructorObjectResponse11;
-                        it3 = it16;
-                        t2 = obj3;
-                        objectRef3.element = t2;
-                        SessionRepository sessionRepository42 = homeViewModel2.sessionRepository;
-                        String id22 = sessionResponse.getId();
-                        homeViewModel$saveSessionFull$1.L$0 = homeViewModel2;
-                        homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto3;
-                        homeViewModel$saveSessionFull$1.L$2 = objectRef4;
-                        homeViewModel$saveSessionFull$1.L$3 = objectRef;
-                        homeViewModel$saveSessionFull$1.L$4 = list2;
-                        homeViewModel$saveSessionFull$1.L$5 = list3;
-                        homeViewModel$saveSessionFull$1.L$6 = it2;
-                        homeViewModel$saveSessionFull$1.L$7 = sessionInstructorObjectResponse3;
-                        homeViewModel$saveSessionFull$1.L$8 = it3;
-                        homeViewModel$saveSessionFull$1.L$9 = sessionResponse;
-                        homeViewModel$saveSessionFull$1.L$10 = objectRef;
-                        homeViewModel$saveSessionFull$1.label = 4;
-                        endEntryClass = sessionRepository42.getEndEntryClass(id22, homeViewModel$saveSessionFull$1);
-                        if (endEntryClass != coroutine_suspended) {
-                        }
-                        return coroutine_suspended;
-                    case 4:
-                        objectRef5 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$10;
-                        sessionResponse2 = (SessionResponse) homeViewModel$saveSessionFull$1.L$9;
-                        it4 = (Iterator) homeViewModel$saveSessionFull$1.L$8;
-                        sessionInstructorObjectResponse4 = (SessionInstructorObjectResponse) homeViewModel$saveSessionFull$1.L$7;
-                        it5 = (Iterator) homeViewModel$saveSessionFull$1.L$6;
-                        list4 = (List) homeViewModel$saveSessionFull$1.L$5;
-                        list5 = (List) homeViewModel$saveSessionFull$1.L$4;
-                        objectRef6 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$3;
-                        objectRef4 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$2;
-                        sessionResponseDto3 = (SessionResponseDto) homeViewModel$saveSessionFull$1.L$1;
-                        homeViewModel2 = (HomeViewModel) homeViewModel$saveSessionFull$1.L$0;
-                        ResultKt.throwOnFailure(obj3);
-                        t = obj3;
-                        objectRef5.element = t;
-                        if (sessionResponse2.getVehicle() == null) {
-                        }
-                        homeViewModel3 = homeViewModel2;
-                        sessionResponseDto4 = sessionResponseDto3;
-                        objectRef8 = objectRef4;
-                        objectRef7 = objectRef6;
-                        list7 = list5;
-                        list6 = list4;
-                        it7 = it5;
-                        sessionInstructorObjectResponse5 = sessionInstructorObjectResponse4;
-                        it6 = it4;
-                        sessionResponse3 = sessionResponse2;
-                        if (sessionResponse3.getLesson() != null) {
-                        }
-                        str5 = str;
-                        homeViewModel4 = homeViewModel3;
-                        objectRef9 = objectRef7;
-                        it9 = it7;
-                        sessionResponse4 = sessionResponse3;
-                        sessionResponseDto5 = sessionResponseDto4;
-                        list9 = list7;
-                        sessionInstructorObjectResponse6 = sessionInstructorObjectResponse5;
-                        it8 = it6;
-                        objectRef10 = objectRef8;
-                        list8 = list6;
-                        str6 = null;
-                        if (sessionResponse4.getClassroom() == null) {
-                        }
-                        break;
-                    case 5:
-                        str = (String) homeViewModel$saveSessionFull$1.L$10;
-                        sessionResponse2 = (SessionResponse) homeViewModel$saveSessionFull$1.L$9;
-                        it4 = (Iterator) homeViewModel$saveSessionFull$1.L$8;
-                        sessionInstructorObjectResponse4 = (SessionInstructorObjectResponse) homeViewModel$saveSessionFull$1.L$7;
-                        it5 = (Iterator) homeViewModel$saveSessionFull$1.L$6;
-                        list4 = (List) homeViewModel$saveSessionFull$1.L$5;
-                        list5 = (List) homeViewModel$saveSessionFull$1.L$4;
-                        objectRef6 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$3;
-                        objectRef4 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$2;
-                        sessionResponseDto3 = (SessionResponseDto) homeViewModel$saveSessionFull$1.L$1;
-                        homeViewModel2 = (HomeViewModel) homeViewModel$saveSessionFull$1.L$0;
-                        ResultKt.throwOnFailure(obj3);
-                        homeViewModel3 = homeViewModel2;
-                        sessionResponseDto4 = sessionResponseDto3;
-                        objectRef8 = objectRef4;
-                        objectRef7 = objectRef6;
-                        list7 = list5;
-                        list6 = list4;
-                        it7 = it5;
-                        sessionInstructorObjectResponse5 = sessionInstructorObjectResponse4;
-                        it6 = it4;
-                        sessionResponse3 = sessionResponse2;
-                        if (sessionResponse3.getLesson() != null) {
-                        }
-                        str5 = str;
-                        homeViewModel4 = homeViewModel3;
-                        objectRef9 = objectRef7;
-                        it9 = it7;
-                        sessionResponse4 = sessionResponse3;
-                        sessionResponseDto5 = sessionResponseDto4;
-                        list9 = list7;
-                        sessionInstructorObjectResponse6 = sessionInstructorObjectResponse5;
-                        it8 = it6;
-                        objectRef10 = objectRef8;
-                        list8 = list6;
-                        str6 = null;
-                        if (sessionResponse4.getClassroom() == null) {
-                        }
-                        break;
-                    case 6:
-                        str2 = (String) homeViewModel$saveSessionFull$1.L$11;
-                        str3 = (String) homeViewModel$saveSessionFull$1.L$10;
-                        sessionResponse3 = (SessionResponse) homeViewModel$saveSessionFull$1.L$9;
-                        it6 = (Iterator) homeViewModel$saveSessionFull$1.L$8;
-                        sessionInstructorObjectResponse5 = (SessionInstructorObjectResponse) homeViewModel$saveSessionFull$1.L$7;
-                        it7 = (Iterator) homeViewModel$saveSessionFull$1.L$6;
-                        list6 = (List) homeViewModel$saveSessionFull$1.L$5;
-                        list7 = (List) homeViewModel$saveSessionFull$1.L$4;
-                        objectRef7 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$3;
-                        objectRef8 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$2;
-                        sessionResponseDto4 = (SessionResponseDto) homeViewModel$saveSessionFull$1.L$1;
-                        homeViewModel3 = (HomeViewModel) homeViewModel$saveSessionFull$1.L$0;
-                        ResultKt.throwOnFailure(obj3);
-                        List<String> list132 = list6;
-                        it8 = it6;
-                        objectRef10 = objectRef8;
-                        list8 = list132;
-                        str6 = str2;
-                        homeViewModel4 = homeViewModel3;
-                        objectRef9 = objectRef7;
-                        it9 = it7;
-                        sessionResponse4 = sessionResponse3;
-                        sessionResponseDto5 = sessionResponseDto4;
-                        list9 = list7;
-                        sessionInstructorObjectResponse6 = sessionInstructorObjectResponse5;
-                        str5 = str3;
-                        if (sessionResponse4.getClassroom() == null) {
-                        }
-                        break;
-                    case 7:
-                        String str10 = (String) homeViewModel$saveSessionFull$1.L$12;
-                        str4 = (String) homeViewModel$saveSessionFull$1.L$11;
-                        str5 = (String) homeViewModel$saveSessionFull$1.L$10;
-                        sessionResponse4 = (SessionResponse) homeViewModel$saveSessionFull$1.L$9;
-                        it8 = (Iterator) homeViewModel$saveSessionFull$1.L$8;
-                        sessionInstructorObjectResponse6 = (SessionInstructorObjectResponse) homeViewModel$saveSessionFull$1.L$7;
-                        it9 = (Iterator) homeViewModel$saveSessionFull$1.L$6;
-                        list8 = (List) homeViewModel$saveSessionFull$1.L$5;
-                        list9 = (List) homeViewModel$saveSessionFull$1.L$4;
-                        objectRef9 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$3;
-                        objectRef10 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$2;
-                        sessionResponseDto5 = (SessionResponseDto) homeViewModel$saveSessionFull$1.L$1;
-                        homeViewModel4 = (HomeViewModel) homeViewModel$saveSessionFull$1.L$0;
-                        ResultKt.throwOnFailure(obj3);
-                        str6 = str10;
-                        List list17 = list9;
-                        homeViewModel2 = homeViewModel4;
-                        it12 = it8;
-                        list10 = list17;
-                        str7 = str4;
-                        String str82 = str6;
-                        String str92 = str5;
-                        SessionResponse sessionResponse62 = sessionResponse4;
-                        sessionInstructorObjectResponse9 = sessionInstructorObjectResponse6;
-                        it10 = it9;
-                        list11 = list8;
-                        objectRef11 = objectRef9;
-                        sessionResponseDto3 = sessionResponseDto5;
-                        objectRef12 = objectRef10;
-                        EnumTypeConfiguration type2 = ConfigurationSessionTypeConverter.INSTANCE.getType(sessionResponse62.getType());
-                        int configMinAfter2 = homeViewModel2.getConfigMinAfter(type2, sessionResponseDto3);
-                        int configMinBefore2 = homeViewModel2.getConfigMinBefore(type2, sessionResponseDto3);
-                        SessionRepository sessionRepository72 = homeViewModel2.sessionRepository;
-                        SessionEntity sessionEntityFromSessionResponse2 = SessionDataConverter.INSTANCE.getSessionEntityFromSessionResponse(sessionResponse62, str7, str92, str82, sessionInstructorObjectResponse9.getDate(), (Long) objectRef12.element, (Long) objectRef11.element, configMinBefore2, configMinAfter2);
-                        homeViewModel$saveSessionFull$1.L$0 = homeViewModel2;
-                        homeViewModel$saveSessionFull$1.L$1 = sessionResponseDto3;
-                        homeViewModel$saveSessionFull$1.L$2 = objectRef12;
-                        homeViewModel$saveSessionFull$1.L$3 = objectRef11;
-                        homeViewModel$saveSessionFull$1.L$4 = list10;
-                        homeViewModel$saveSessionFull$1.L$5 = list11;
-                        homeViewModel$saveSessionFull$1.L$6 = it10;
-                        homeViewModel$saveSessionFull$1.L$7 = sessionInstructorObjectResponse9;
-                        homeViewModel$saveSessionFull$1.L$8 = it12;
-                        homeViewModel$saveSessionFull$1.L$9 = null;
-                        homeViewModel$saveSessionFull$1.L$10 = null;
-                        homeViewModel$saveSessionFull$1.L$11 = null;
-                        homeViewModel$saveSessionFull$1.L$12 = null;
-                        homeViewModel$saveSessionFull$1.label = 8;
-                        break;
-                    case 8:
-                        it12 = (Iterator) homeViewModel$saveSessionFull$1.L$8;
-                        sessionInstructorObjectResponse9 = (SessionInstructorObjectResponse) homeViewModel$saveSessionFull$1.L$7;
-                        it10 = (Iterator) homeViewModel$saveSessionFull$1.L$6;
-                        list11 = (List) homeViewModel$saveSessionFull$1.L$5;
-                        list10 = (List) homeViewModel$saveSessionFull$1.L$4;
-                        objectRef11 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$3;
-                        objectRef12 = (Ref.ObjectRef) homeViewModel$saveSessionFull$1.L$2;
-                        sessionResponseDto3 = (SessionResponseDto) homeViewModel$saveSessionFull$1.L$1;
-                        homeViewModel2 = (HomeViewModel) homeViewModel$saveSessionFull$1.L$0;
-                        ResultKt.throwOnFailure(obj3);
-                        it11 = it12;
-                        sessionInstructorObjectResponse8 = sessionInstructorObjectResponse9;
-                        objectRef = objectRef11;
-                        objectRef3 = objectRef12;
-                        if (it11.hasNext()) {
-                        }
-                        break;
-                    case 9:
-                        ResultKt.throwOnFailure(obj3);
-                        return Unit.INSTANCE;
-                    case 10:
-                        ResultKt.throwOnFailure(obj3);
-                        return Unit.INSTANCE;
-                    default:
-                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                cont.label = i - IntCompanionObject.MIN_VALUE;
+            }
+        } else {
+            cont = new HomeViewModel$saveSessionFull$1(this, (Continuation) continuation);
+        }
+
+        Object obj = cont.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int label = cont.label;
+
+        // Variables that persist across suspend points
+        HomeViewModel viewModel;
+        SessionResponseDto dto;
+        Ref.ObjectRef startEntryRef;  // L$2 - stores startEntryClass result
+        Ref.ObjectRef endEntryRef;    // L$3 - stores endEntryClass result
+        List pendingSyncIds;          // L$4
+        List<String> deleteIds;       // L$5
+        Iterator outerIt;             // L$6 - iterates SessionInstructorObjectResponse
+        SessionInstructorObjectResponse currentInstructorObj; // L$7
+        Iterator innerIt;             // L$8 - iterates SessionResponse
+        SessionResponse currentSession; // L$9
+        String vehicleId;             // L$10
+        String lessonId;              // L$11
+        String classroomId;           // L$12
+
+        switch (label) {
+            case 0:
+                ResultKt.throwOnFailure(obj);
+                // Step 1: Get pending sync IDs
+                cont.L$0 = this;
+                cont.L$1 = sessionResponseDto;
+                cont.label = 1;
+                obj = this.sessionRepository.getSessionIdPendingSync(cont);
+                if (obj == coroutine_suspended) return coroutine_suspended;
+                // fall through
+
+            case 1:
+                if (label == 1) {
+                    dto = (SessionResponseDto) cont.L$1;
+                    viewModel = (HomeViewModel) cont.L$0;
+                    ResultKt.throwOnFailure(obj);
+                } else {
+                    viewModel = this;
+                    dto = sessionResponseDto;
                 }
+                pendingSyncIds = (List) obj;
+                // Step 2: Get all existing session IDs
+                cont.L$0 = viewModel;
+                cont.L$1 = dto;
+                cont.L$4 = pendingSyncIds;
+                cont.label = 2;
+                obj = viewModel.sessionRepository.getAllSessionID(cont);
+                if (obj == coroutine_suspended) return coroutine_suspended;
+                // fall through
+
+            case 2:
+                if (label == 2) {
+                    pendingSyncIds = (List) cont.L$4;
+                    dto = (SessionResponseDto) cont.L$1;
+                    viewModel = (HomeViewModel) cont.L$0;
+                    ResultKt.throwOnFailure(obj);
+                } else {
+                    // values already set from case 1 fall-through
+                }
+                List allSessionIds = (List) obj;
+                List<SessionInstructorObjectResponse> instrObjList = (dto != null) ? dto.getSessionInstructorObjectResponse() : null;
+                deleteIds = viewModel.getListIdSessionDelete(instrObjList, allSessionIds);
+
+                // Step 3: Iterate sessions and save each one
+                if (instrObjList != null) {
+                    outerIt = instrObjList.iterator();
+                } else {
+                    outerIt = java.util.Collections.emptyIterator();
+                }
+                // Initialize loop state
+                cont.L$0 = viewModel;
+                cont.L$1 = dto;
+                cont.L$4 = pendingSyncIds;
+                cont.L$5 = deleteIds;
+                cont.L$6 = outerIt;
+                // Enter the session processing loop
+                return processSessionLoop(viewModel, dto, pendingSyncIds, deleteIds, outerIt, null, null, null, cont, coroutine_suspended);
+
+            case 3:
+                // Resumed from getStartEntryClass
+                viewModel = (HomeViewModel) cont.L$0;
+                dto = (SessionResponseDto) cont.L$1;
+                startEntryRef = (Ref.ObjectRef) cont.L$2;
+                pendingSyncIds = (List) cont.L$4;
+                deleteIds = (List) cont.L$5;
+                outerIt = (Iterator) cont.L$6;
+                currentInstructorObj = (SessionInstructorObjectResponse) cont.L$7;
+                innerIt = (Iterator) cont.L$8;
+                currentSession = (SessionResponse) cont.L$9;
+                ResultKt.throwOnFailure(obj);
+                startEntryRef.element = obj;
+                // Continue to getEndEntryClass
+                cont.L$2 = startEntryRef;
+                endEntryRef = new Ref.ObjectRef();
+                cont.L$3 = endEntryRef;
+                cont.label = 4;
+                obj = viewModel.sessionRepository.getEndEntryClass(currentSession.getId(), cont);
+                if (obj == coroutine_suspended) return coroutine_suspended;
+                // fall through
+
+            case 4:
+                if (label == 4) {
+                    viewModel = (HomeViewModel) cont.L$0;
+                    dto = (SessionResponseDto) cont.L$1;
+                    startEntryRef = (Ref.ObjectRef) cont.L$2;
+                    endEntryRef = (Ref.ObjectRef) cont.L$3;
+                    pendingSyncIds = (List) cont.L$4;
+                    deleteIds = (List) cont.L$5;
+                    outerIt = (Iterator) cont.L$6;
+                    currentInstructorObj = (SessionInstructorObjectResponse) cont.L$7;
+                    innerIt = (Iterator) cont.L$8;
+                    currentSession = (SessionResponse) cont.L$9;
+                    ResultKt.throwOnFailure(obj);
+                } else {
+                    // values from case 3 fall-through
+                    endEntryRef = (Ref.ObjectRef) cont.L$3;
+                    currentInstructorObj = (SessionInstructorObjectResponse) cont.L$7;
+                    currentSession = (SessionResponse) cont.L$9;
+                }
+                endEntryRef.element = obj;
+
+                // Check and save vehicle
+                vehicleId = null;
+                if (currentSession.getVehicle() != null) {
+                    vehicleId = currentSession.getVehicle().getVehicleID();
+                    VehicleEntity vehicleEntity = SessionDataConverter.INSTANCE.getVehicleEntityFromVehicleResponse(currentSession.getVehicle());
+                    cont.L$10 = vehicleId;
+                    cont.label = 5;
+                    obj = viewModel.sessionRepository.saveVehicle(vehicleEntity, cont);
+                    if (obj == coroutine_suspended) return coroutine_suspended;
+                }
+                // fall through
+
+            case 5:
+                if (label == 5) {
+                    viewModel = (HomeViewModel) cont.L$0;
+                    dto = (SessionResponseDto) cont.L$1;
+                    startEntryRef = (Ref.ObjectRef) cont.L$2;
+                    endEntryRef = (Ref.ObjectRef) cont.L$3;
+                    pendingSyncIds = (List) cont.L$4;
+                    deleteIds = (List) cont.L$5;
+                    outerIt = (Iterator) cont.L$6;
+                    currentInstructorObj = (SessionInstructorObjectResponse) cont.L$7;
+                    innerIt = (Iterator) cont.L$8;
+                    currentSession = (SessionResponse) cont.L$9;
+                    vehicleId = (String) cont.L$10;
+                    ResultKt.throwOnFailure(obj);
+                } else {
+                    // values from case 4 fall-through
+                }
+
+                // Check and save lesson
+                lessonId = null;
+                if (currentSession.getLesson() != null && currentSession.getLesson().getLessonID() != null) {
+                    lessonId = currentSession.getLesson().getLessonID();
+                    LessonEntity lessonEntity = SessionDataConverter.INSTANCE.getLessonEntityFromLessonResponse(currentSession.getLesson());
+                    cont.L$10 = vehicleId;
+                    cont.L$11 = lessonId;
+                    cont.label = 6;
+                    obj = viewModel.sessionRepository.saveLesson(lessonEntity, cont);
+                    if (obj == coroutine_suspended) return coroutine_suspended;
+                }
+                // fall through
+
+            case 6:
+                if (label == 6) {
+                    viewModel = (HomeViewModel) cont.L$0;
+                    dto = (SessionResponseDto) cont.L$1;
+                    startEntryRef = (Ref.ObjectRef) cont.L$2;
+                    endEntryRef = (Ref.ObjectRef) cont.L$3;
+                    pendingSyncIds = (List) cont.L$4;
+                    deleteIds = (List) cont.L$5;
+                    outerIt = (Iterator) cont.L$6;
+                    currentInstructorObj = (SessionInstructorObjectResponse) cont.L$7;
+                    innerIt = (Iterator) cont.L$8;
+                    currentSession = (SessionResponse) cont.L$9;
+                    vehicleId = (String) cont.L$10;
+                    lessonId = (String) cont.L$11;
+                    ResultKt.throwOnFailure(obj);
+                } else {
+                    // values from case 5 fall-through
+                }
+
+                // Check and save classroom
+                classroomId = null;
+                if (currentSession.getClassroom() != null) {
+                    classroomId = currentSession.getClassroom().getClassroomID();
+                    ClassRoomEntity classRoomEntity = SessionDataConverter.INSTANCE.getClassRoomEntityFormClassRoomResponse(currentSession.getClassroom());
+                    cont.L$10 = vehicleId;
+                    cont.L$11 = classroomId;
+                    cont.L$12 = lessonId;
+                    cont.label = 7;
+                    obj = viewModel.sessionRepository.saveClassRoom(classRoomEntity, cont);
+                    if (obj == coroutine_suspended) return coroutine_suspended;
+                }
+                // fall through
+
+            case 7:
+                if (label == 7) {
+                    viewModel = (HomeViewModel) cont.L$0;
+                    dto = (SessionResponseDto) cont.L$1;
+                    startEntryRef = (Ref.ObjectRef) cont.L$2;
+                    endEntryRef = (Ref.ObjectRef) cont.L$3;
+                    pendingSyncIds = (List) cont.L$4;
+                    deleteIds = (List) cont.L$5;
+                    outerIt = (Iterator) cont.L$6;
+                    currentInstructorObj = (SessionInstructorObjectResponse) cont.L$7;
+                    innerIt = (Iterator) cont.L$8;
+                    currentSession = (SessionResponse) cont.L$9;
+                    vehicleId = (String) cont.L$10;
+                    classroomId = (String) cont.L$11;
+                    lessonId = (String) cont.L$12;
+                    ResultKt.throwOnFailure(obj);
+                } else {
+                    // values from case 6 fall-through
+                }
+
+                // Save the session entity
+                EnumTypeConfiguration type = ConfigurationSessionTypeConverter.INSTANCE.getType(currentSession.getType());
+                int configMinAfter = viewModel.getConfigMinAfter(type, dto);
+                int configMinBefore = viewModel.getConfigMinBefore(type, dto);
+                SessionEntity sessionEntity = SessionDataConverter.INSTANCE.getSessionEntityFromSessionResponse(
+                    currentSession, classroomId, vehicleId, lessonId,
+                    currentInstructorObj.getDate(),
+                    (Long) startEntryRef.element, (Long) endEntryRef.element,
+                    configMinBefore, configMinAfter
+                );
+                cont.label = 8;
+                obj = viewModel.sessionRepository.saveSession(sessionEntity, cont);
+                if (obj == coroutine_suspended) return coroutine_suspended;
+                // fall through
+
+            case 8:
+                if (label == 8) {
+                    viewModel = (HomeViewModel) cont.L$0;
+                    dto = (SessionResponseDto) cont.L$1;
+                    pendingSyncIds = (List) cont.L$4;
+                    deleteIds = (List) cont.L$5;
+                    outerIt = (Iterator) cont.L$6;
+                    currentInstructorObj = (SessionInstructorObjectResponse) cont.L$7;
+                    innerIt = (Iterator) cont.L$8;
+                    ResultKt.throwOnFailure(obj);
+                } else {
+                    // values from case 7 fall-through
+                    innerIt = (Iterator) cont.L$8;
+                }
+                // Continue the loop - process next session
+                return processSessionLoop(viewModel, dto, pendingSyncIds, deleteIds, outerIt, currentInstructorObj, innerIt, null, cont, coroutine_suspended);
+
+            case 9:
+                // Resumed from deleteSession
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+
+            case 10:
+                // Resumed from deleteAllSessionNotPending
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+
+            default:
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        // Should not reach here
+        return Unit.INSTANCE;
+    }
+
+    private Object processSessionLoop(HomeViewModel viewModel, SessionResponseDto dto,
+            List pendingSyncIds, List<String> deleteIds, Iterator outerIt,
+            SessionInstructorObjectResponse currentInstructorObj, Iterator innerIt,
+            SessionResponse skipToSession,
+            HomeViewModel$saveSessionFull$1 cont, Object coroutine_suspended) {
+
+        // Continue iterating through sessions
+        while (true) {
+            // If we need to advance to next inner item
+            if (innerIt == null || !innerIt.hasNext()) {
+                // Move to next SessionInstructorObjectResponse
+                if (!outerIt.hasNext()) {
+                    // Done iterating - handle deletions
+                    break;
+                }
+                currentInstructorObj = (SessionInstructorObjectResponse) outerIt.next();
+                List sessions = currentInstructorObj.getSessions();
+                if (sessions == null) continue;
+                innerIt = sessions.iterator();
+                if (!innerIt.hasNext()) continue;
+            }
+
+            SessionResponse session = (SessionResponse) innerIt.next();
+
+            // Skip sessions that are pending sync
+            if (pendingSyncIds.contains(session.getId())) {
+                continue;
+            }
+
+            // Save state and call getStartEntryClass
+            Ref.ObjectRef startEntryRef = new Ref.ObjectRef();
+            cont.L$0 = viewModel;
+            cont.L$1 = dto;
+            cont.L$2 = startEntryRef;
+            cont.L$4 = pendingSyncIds;
+            cont.L$5 = deleteIds;
+            cont.L$6 = outerIt;
+            cont.L$7 = currentInstructorObj;
+            cont.L$8 = innerIt;
+            cont.L$9 = session;
+            cont.label = 3;
+            Object result = viewModel.sessionRepository.getStartEntryClass(session.getId(), cont);
+            if (result == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            // getStartEntryClass returned immediately
+            startEntryRef.element = result;
+
+            // getEndEntryClass
+            Ref.ObjectRef endEntryRef = new Ref.ObjectRef();
+            cont.L$3 = endEntryRef;
+            cont.label = 4;
+            result = viewModel.sessionRepository.getEndEntryClass(session.getId(), cont);
+            if (result == coroutine_suspended) return coroutine_suspended;
+            endEntryRef.element = result;
+
+            // Save vehicle if present
+            String vehicleId = null;
+            if (session.getVehicle() != null) {
+                vehicleId = session.getVehicle().getVehicleID();
+                VehicleEntity vehicleEntity = SessionDataConverter.INSTANCE.getVehicleEntityFromVehicleResponse(session.getVehicle());
+                cont.L$10 = vehicleId;
+                cont.label = 5;
+                result = viewModel.sessionRepository.saveVehicle(vehicleEntity, cont);
+                if (result == coroutine_suspended) return coroutine_suspended;
+            }
+
+            // Save lesson if present
+            String lessonId = null;
+            if (session.getLesson() != null && session.getLesson().getLessonID() != null) {
+                lessonId = session.getLesson().getLessonID();
+                LessonEntity lessonEntity = SessionDataConverter.INSTANCE.getLessonEntityFromLessonResponse(session.getLesson());
+                cont.L$10 = vehicleId;
+                cont.L$11 = lessonId;
+                cont.label = 6;
+                result = viewModel.sessionRepository.saveLesson(lessonEntity, cont);
+                if (result == coroutine_suspended) return coroutine_suspended;
+            }
+
+            // Save classroom if present
+            String classroomId = null;
+            if (session.getClassroom() != null) {
+                classroomId = session.getClassroom().getClassroomID();
+                ClassRoomEntity classRoomEntity = SessionDataConverter.INSTANCE.getClassRoomEntityFormClassRoomResponse(session.getClassroom());
+                cont.L$10 = vehicleId;
+                cont.L$11 = classroomId;
+                cont.L$12 = lessonId;
+                cont.label = 7;
+                result = viewModel.sessionRepository.saveClassRoom(classRoomEntity, cont);
+                if (result == coroutine_suspended) return coroutine_suspended;
+            }
+
+            // Save the session entity
+            EnumTypeConfiguration type = ConfigurationSessionTypeConverter.INSTANCE.getType(session.getType());
+            int configMinAfter = viewModel.getConfigMinAfter(type, dto);
+            int configMinBefore = viewModel.getConfigMinBefore(type, dto);
+            SessionEntity sessionEntity = SessionDataConverter.INSTANCE.getSessionEntityFromSessionResponse(
+                session, classroomId, vehicleId, lessonId,
+                currentInstructorObj.getDate(),
+                (Long) startEntryRef.element, (Long) endEntryRef.element,
+                configMinBefore, configMinAfter
+            );
+            cont.L$8 = innerIt;
+            cont.label = 8;
+            result = viewModel.sessionRepository.saveSession(sessionEntity, cont);
+            if (result == coroutine_suspended) return coroutine_suspended;
+        }
+
+        // After processing all sessions, handle deletions
+        if (!deleteIds.isEmpty()) {
+            String nowStr = java.time.LocalDateTime.now().toString();
+            cont.L$0 = null;
+            cont.label = 9;
+            Object result = viewModel.sessionRepository.deleteSessionById(deleteIds, cont);
+            if (result == coroutine_suspended) return coroutine_suspended;
+        } else {
+            List instrList = (dto != null) ? dto.getSessionInstructorObjectResponse() : null;
+            if (instrList != null && instrList.isEmpty()) {
+                String nowStr = java.time.LocalDateTime.now().toString();
+                cont.L$0 = null;
+                cont.label = 10;
+                Object result = viewModel.sessionRepository.deleteSessionsByDate(nowStr, cont);
+                if (result == coroutine_suspended) return coroutine_suspended;
             }
         }
-        homeViewModel$saveSessionFull$1 = new HomeViewModel$saveSessionFull$1(this, (Continuation) continuation);
-        // Fix: fresh entry was missing case 0 body. Redirect to first copy by
-        // setting up the continuation with MIN_VALUE flag so re-entry path handles case 0.
-        homeViewModel$saveSessionFull$1.result = Unit.INSTANCE;
-        homeViewModel$saveSessionFull$1.label = 0 | IntCompanionObject.MIN_VALUE;
-        return this.saveSessionFull(sessionResponseDto, homeViewModel$saveSessionFull$1);
+
+        return Unit.INSTANCE;
     }
 
     private final void setupOnScrollListener(MaterialButton buttonTodayClass, RecyclerView recyclerView, ClassDateRecyclerAdapter classDateAdapter, TextView tvSubtitle, int todayItemPosition) {
