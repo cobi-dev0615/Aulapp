@@ -613,20 +613,20 @@ public final class HomeViewModel extends ViewModel {
         Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         int label = cont.label;
 
-        // Variables that persist across suspend points
-        HomeViewModel viewModel;
-        SessionResponseDto dto;
-        Ref.ObjectRef startEntryRef;  // L$2 - stores startEntryClass result
-        Ref.ObjectRef endEntryRef;    // L$3 - stores endEntryClass result
-        List pendingSyncIds;          // L$4
-        List<String> deleteIds;       // L$5
-        Iterator outerIt;             // L$6 - iterates SessionInstructorObjectResponse
-        SessionInstructorObjectResponse currentInstructorObj; // L$7
-        Iterator innerIt;             // L$8 - iterates SessionResponse
-        SessionResponse currentSession; // L$9
-        String vehicleId;             // L$10
-        String lessonId;              // L$11
-        String classroomId;           // L$12
+        // Variables that persist across suspend points - initialized to null for compiler
+        HomeViewModel viewModel = null;
+        SessionResponseDto dto = null;
+        Ref.ObjectRef startEntryRef = null;
+        Ref.ObjectRef endEntryRef = null;
+        List pendingSyncIds = null;
+        List<String> deleteIds = null;
+        Iterator outerIt = null;
+        SessionInstructorObjectResponse currentInstructorObj = null;
+        Iterator innerIt = null;
+        SessionResponse currentSession = null;
+        String vehicleId = null;
+        String lessonId = null;
+        String classroomId = null;
 
         switch (label) {
             case 0:
@@ -870,8 +870,6 @@ public final class HomeViewModel extends ViewModel {
             default:
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        // Should not reach here
-        return Unit.INSTANCE;
     }
 
     private Object processSessionLoop(HomeViewModel viewModel, SessionResponseDto dto,
